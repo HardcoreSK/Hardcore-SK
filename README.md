@@ -1,4 +1,4 @@
-# Rimworld Hardcore SK v.1.5
+# Rimworld Hardcore SK v.1.6 (WIP)
 
 [![Logo](https://i.imgur.com/WP7w2sM.png)](https://github.com/skyarkhangel/Hardcore-SK)
 <!-- you cant center markdown images -->
