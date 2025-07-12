@@ -44,7 +44,7 @@
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <coversFloor>true</coversFloor>
-    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <drawStyleCategory>Walls</drawStyleCategory>
     <tickerType>Never</tickerType>
     <rotatable>false</rotatable>
     <selectable>true</selectable>
@@ -64,6 +64,7 @@
 		</costList>
     <building>
       <isInert>true</isInert>
+      <supportsWallAttachments>true</supportsWallAttachments>
       <blueprintGraphicData>
         <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
       </blueprintGraphicData>
@@ -109,6 +110,7 @@
     </comps>
     <rotatable>false</rotatable>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <constructEffect>ConstructMetal</constructEffect>
   </ThingDef>
 
   <ThingDef ParentName="BaseSarc"   Class="Rimatomics.RimatomicsThingDef">

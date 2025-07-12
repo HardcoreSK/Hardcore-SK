@@ -660,7 +660,7 @@
 			<li>RadarDish</li>
 		</Bilderbergs>
 		<constructionSkillPrerequisite>17</constructionSkillPrerequisite>
-		<specialDisplayRadius>86</specialDisplayRadius>
+		<specialDisplayRadius>26</specialDisplayRadius>
 	</ThingDef>
 
 
@@ -726,7 +726,7 @@
 		<EnergyWep>
 			<minRange>9.8</minRange>
 			<range>400</range>
-			<WorldRange>50</WorldRange>
+			<WorldRange>30</WorldRange>
 			<PulseSize>1000</PulseSize>
 			<turretSpeed>40</turretSpeed>
 			<TurretAimSnapAngle>1.5</TurretAimSnapAngle>
@@ -944,7 +944,7 @@
 		</costList>
 		<uiIconPath>Rimatomics/UI/Marauder</uiIconPath>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-		<specialDisplayRadius>90</specialDisplayRadius>
+		<specialDisplayRadius>55</specialDisplayRadius>
 		<Bilderbergs>
 			<li>PPC</li>
 			<li>RadarDish</li>
@@ -981,7 +981,7 @@
 				<requireLineOfSight>true</requireLineOfSight>
 				<ai_AvoidFriendlyFireRadius>20</ai_AvoidFriendlyFireRadius>
 				<minRange>10.9</minRange>
-				<range>90</range>
+				<range>55</range>
 				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
 				<burstShotCount>20</burstShotCount>
 				<soundCast>MarauderPulse</soundCast>
@@ -997,7 +997,7 @@
 		</verbs>
 		<EnergyWep>
 			<minRange>10.9</minRange>
-			<range>90</range>
+			<range>55</range>
 			<PulseSize>400</PulseSize>
 			<turretSpeed>40</turretSpeed>
 			<TurretAimSnapAngle>2</TurretAimSnapAngle>
@@ -1026,7 +1026,7 @@
 		<projectile>
 			<damageDef>Bomb_PlasmaToroid</damageDef>
 			<damageAmountBase>50</damageAmountBase>
-			<speed>800</speed>
+			<speed>200</speed>
 			<stoppingPower>1.5</stoppingPower>
 			<explosionRadius>2.7</explosionRadius>
 			<flyOverhead>false</flyOverhead>
@@ -1037,9 +1037,9 @@
 	<DamageDef ParentName="Bomb">
 		<defName>Bomb_PlasmaToroid</defName>
 		<workerClass>Rimatomics.GibbingWorker</workerClass>
-		<defaultDamage>70</defaultDamage>
+		<defaultDamage>63</defaultDamage>
 		<defaultStoppingPower>0.91</defaultStoppingPower>
-		<defaultArmorPenetration>80</defaultArmorPenetration>
+		<defaultArmorPenetration>0.72</defaultArmorPenetration>
 	</DamageDef>
 
 	<ThingDef ParentName="BasedWeapon" Class="Rimatomics.RimatomicsThingDef" RimatomicsDLC="true">

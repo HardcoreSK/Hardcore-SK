@@ -50,11 +50,8 @@
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>250</basePowerConsumption>
         <shortCircuitInRain>true</shortCircuitInRain>
+        <idlePowerDraw>50</idlePowerDraw>
       </li>
-	  <li Class="SK.CompProperties_LowIdleDraw">
-		 <compClass>SK.CompPowerLowIdleDraw</compClass>
-		 <idlePowerFactor>0.2</idlePowerFactor>
-	  </li>
       <li Class="CompProperties_Breakdownable"/>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_AffectedByFacilities">
@@ -66,7 +63,7 @@
       </li>
       <li Class="CompProperties_ReportWorkSpeed">
 				<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
-			</li>
+      </li>
     </comps>
     <fillPercent>0.5</fillPercent>
     <interactionCellIcon>DiningChair</interactionCellIcon>
@@ -141,11 +138,8 @@
         <compClass>CompPowerTrader</compClass>
         <shortCircuitInRain>true</shortCircuitInRain>
         <basePowerConsumption>500</basePowerConsumption>
+        <idlePowerDraw>100</idlePowerDraw>
       </li>
-	  <li Class="SK.CompProperties_LowIdleDraw">
-		 <compClass>SK.CompPowerLowIdleDraw</compClass>
-		 <idlePowerFactor>0.2</idlePowerFactor>
-	  </li>	  
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Glower">
         <glowRadius>5</glowRadius>
@@ -161,6 +155,7 @@
 				<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
 			</li>
     </comps>
+		<constructEffect>ConstructMetal</constructEffect>
     <designationHotKey>Misc7</designationHotKey>
     <placeWorkers>
       <li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -232,6 +227,7 @@
     <rotatable>false</rotatable>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<constructEffect>ConstructMetal</constructEffect>
     <placeWorkers>
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
@@ -295,6 +291,7 @@
     </comps>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<constructEffect>ConstructMetal</constructEffect>
     <placeWorkers>
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
