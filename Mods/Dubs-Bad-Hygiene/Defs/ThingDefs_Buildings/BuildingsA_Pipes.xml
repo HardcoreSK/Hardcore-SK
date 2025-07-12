@@ -33,7 +33,7 @@
       <WorkToBuild>250</WorkToBuild>
       <Flammability>1.0</Flammability>
     </statBases>
-    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <drawStyleCategory>Default1D</drawStyleCategory>
     <rotatable>false</rotatable>
     <neverMultiSelect>true</neverMultiSelect>
     <clearBuildingArea>false</clearBuildingArea>
@@ -48,7 +48,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="DubsDirtyPipeBase" DBHLite="true">
+  <ThingDef ParentName="DubsDirtyPipeBase" Name="SewagePipeStuff" DBHLite="true">
     <defName>sewagePipeStuff</defName>
     <label>plumbing</label>
     <description>Plumbing for connecting plumbed things.</description>
@@ -69,6 +69,29 @@
     <researchPrerequisites>
 		<li MayRequire="dbhlitemode">Hygiene_13</li>
     </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="SewagePipeStuff" DBHLite="true">
+    <defName>sewagePipeHidden</defName>
+    <label>plumbing (hidden)</label>
+    <description>Plumbing for connecting plumbed things (hidden).</description>
+    <uiIconPath>DBH/UI/PlumbingHidden</uiIconPath>
+    <graphicData>
+      <color>(0,0,0,0)</color>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>290</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+    </statBases>
+    <building>
+      <ai_neverTrashThis>true</ai_neverTrashThis>
+      <isTargetable>false</isTargetable>
+      <expandHomeArea>false</expandHomeArea>
+      <canBeDamagedByAttacks>false</canBeDamagedByAttacks>
+    </building>
   </ThingDef>
 
   <ThingDef ParentName="BasedHygieneMom" DBHLite="true">
@@ -127,7 +150,7 @@
     </researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="DubsDirtyPipeBase" DBHLite="true">
+  <ThingDef ParentName="DubsDirtyPipeBase" Name="airPipe" DBHLite="true">
 	  <defName>airPipe</defName>
     <label>air-con pipe</label>
     <description>Pipe for connecting air-conditioning units.</description>
@@ -156,6 +179,29 @@
 		<li MayRequire="dbhlitemode">Temperature_control_C2</li>
     </researchPrerequisites>
 	<designationCategory>Hygiene</designationCategory>
+  </ThingDef>
+  
+   <ThingDef ParentName="airPipe" DBHLite="true">
+    <defName>airPipeHidden</defName>
+    <label>air-con pipe (hidden)</label>
+    <description>Pipe for connecting air-conditioning units. (hidden)</description>
+    <uiIconPath>DBH/UI/coolingPipeHidden</uiIconPath>
+    <graphicData>
+      <color>(0,0,0,0)</color>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>290</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+    </statBases>
+    <building>
+      <ai_neverTrashThis>true</ai_neverTrashThis>
+      <isTargetable>false</isTargetable>
+      <expandHomeArea>false</expandHomeArea>
+      <canBeDamagedByAttacks>false</canBeDamagedByAttacks>
+    </building>
   </ThingDef>
   
 </Defs>

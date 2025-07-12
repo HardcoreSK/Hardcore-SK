@@ -473,6 +473,7 @@
 						<li>FecalSludge</li>
 					</thingDefs>
 				</fuelFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="SK.CompProperties_HeatPusherAdvanced">
 				<compClass>SK.CompHeatPusherAdvanced</compClass>
@@ -703,13 +704,10 @@
 			<Comfort>0.78</Comfort>
 		</statBases>
 		<comps>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
-			</li>		
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>75</basePowerConsumption>
+				<idlePowerDraw>7.5</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 		</comps>
@@ -959,14 +957,11 @@
 			<Comfort>1.2</Comfort>
 			<WorkToBuild>3000</WorkToBuild>
 		</statBases>
-		<comps>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
-			</li>		
+		<comps>	
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>75</basePowerConsumption>
+				<idlePowerDraw>7.5</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 		</comps>

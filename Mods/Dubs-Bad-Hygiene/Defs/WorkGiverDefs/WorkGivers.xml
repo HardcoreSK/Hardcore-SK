@@ -106,6 +106,20 @@
 		</requiredCapacities>
 	</WorkGiverDef>
 
+	<WorkGiverDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>washChild</defName>
+		<label>wash child</label>
+		<giverClass>DubsBadHygiene.WorkGiver_washChild</giverClass>
+		<workType>Childcare</workType>
+		<verb>wash</verb>
+		<gerund>washing</gerund>
+		<priorityInType>52</priorityInType>
+		<requiredCapacities>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+
 	<WorkGiverDef>
 		<defName>DocCleanBedpan</defName>
 		<label>clean bed pan</label>

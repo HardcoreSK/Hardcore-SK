@@ -22,11 +22,21 @@
 		<graphicData>
 			<texPath>DBH/Things/Building/Heating/thermostat</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
+			<drawOffsetNorth>(0,0,0.7)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,-0.5)</drawOffsetSouth>
+			<drawOffsetWest>(-0.5,0,0)</drawOffsetWest>
+			<drawOffsetEast>(0.5,0,0)</drawOffsetEast>
+			<drawSize>(1,1)</drawSize>
 			<damageData>
 				<rect>(0.05,0.05,0.95,0.95)</rect>
 			</damageData>
 		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<terrainAffordanceNeeded IsNull="True"/>
+		<building>
+		    <isEdifice>false</isEdifice>
+		    <isAttachment>true</isAttachment>
+		</building>
 		<tickerType>Rare</tickerType>
 		<uiIconPath>DBH/UI/Thermostat</uiIconPath>
 		<blockWind>false</blockWind>
@@ -63,6 +73,9 @@
 		<researchPrerequisites>
 			<li MayRequire="dbhlitemode">AirConditioning</li>
 		</researchPrerequisites>
+		<placeWorkers>
+			<li>Placeworker_AttachedToWall</li>
+		</placeWorkers>
 	</ThingDef>
 
 	<ThingDef ParentName="BasedHeating" DBHLite="true">
@@ -470,15 +483,6 @@
 
 
 	<ThingDef Name="BaseRadiator" ParentName="BasedHeating" Abstract="True">
-		<!--<thingClass>DubsBadHygiene.Building_Radiator</thingClass>-->
-		<graphicData>
-			<texPath>DBH/Things/Building/Heating/radiator</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
-			<damageData>
-				<rect>(0.05,0.05,0.95,0.95)</rect>
-			</damageData>
-		</graphicData>
 		<description>Heats rooms using hot water from boilers. Requires 100 heating units.</description>
 		<passability>Standable</passability>
 		<blockWind>false</blockWind>
@@ -516,7 +520,13 @@
 		</researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_Heater</li>
+			<li>Placeworker_AttachedToWall</li>
 		</placeWorkers>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<building>
+			<isEdifice>false</isEdifice>
+			<isAttachment>true</isAttachment>
+		</building>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 	</ThingDef>
 
@@ -541,6 +551,24 @@
 				<HeatingRate>250</HeatingRate>
 			</li>
 		</comps>
+		<graphicData>
+		    <texPath>DBH/Things/Building/Heating/radiator</texPath>
+		    <graphicClass>Graphic_Multi</graphicClass>
+		    <drawOffsetNorth>(0,0,0.5)</drawOffsetNorth>
+		    <drawOffsetSouth>(0,0,-0.5)</drawOffsetSouth>
+		    <drawOffsetWest>(-0.5,0,0)</drawOffsetWest>
+		    <drawOffsetEast>(0.5,0,0)</drawOffsetEast>
+		    <drawSize>(2,2)</drawSize>
+		    <damageData>
+		        <rect>(0.05,0.05,0.95,0.95)</rect>
+		    </damageData>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<terrainAffordanceNeeded IsNull="True"/>
+		<building>
+		    <isEdifice>false</isEdifice>
+		    <isAttachment>true</isAttachment>
+		</building>
 		<researchPrerequisites Inherit="False">
 			<li>AirConditioning</li>
 		</researchPrerequisites>		
@@ -550,14 +578,6 @@
 		<defName>RadiatorLarge</defName>
 		<label>large radiator</label>
 		<uiIconPath>DBH/UI/radiator</uiIconPath>
-		<graphicData>
-			<texPath>DBH/Things/Building/Heating/radiatorLarge</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3,2)</drawSize>
-			<damageData>
-				<rect>(0.05,0.05,0.95,0.95)</rect>
-			</damageData>
-		</graphicData>
 		<description>Three times the output of a standard radiator. Useful for larger rooms. Requires 300 heating units.</description>
 		<size>(2,1)</size>
 		<costList>
@@ -577,6 +597,24 @@
 				<HeatingRate>250</HeatingRate>
 			</li>
 		</comps>
+		<graphicData>
+		    <texPath>DBH/Things/Building/Heating/radiatorLarge</texPath>
+		    <graphicClass>Graphic_Multi</graphicClass>
+		    <drawOffsetNorth>(0,0,0.5)</drawOffsetNorth>
+		    <drawOffsetSouth>(0,0,-0.5)</drawOffsetSouth>
+		    <drawOffsetWest>(-0.5,0,0)</drawOffsetWest>
+		    <drawOffsetEast>(0.5,0,0)</drawOffsetEast>
+		    <drawSize>(3,2)</drawSize>
+		    <damageData>
+		        <rect>(0.05,0.05,0.95,0.95)</rect>
+		    </damageData>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<terrainAffordanceNeeded IsNull="True"/>
+		<building>
+		    <isEdifice>false</isEdifice>
+		    <isAttachment>true</isAttachment>
+		</building>
 		<researchPrerequisites Inherit="False">
 			<li>Temperature_control_C3</li>
 		</researchPrerequisites>		
@@ -589,14 +627,6 @@
 		<label>Towel Rail</label>
 		<description>Impressive bathroom towel rail.</description>
 		<uiIconPath>DBH/UI/TowelRail</uiIconPath>
-		<graphicData>
-			<texPath>DBH/Things/Building/Heating/TowelRail</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
-			<damageData>
-				<rect>(0.05,0.05,0.95,0.95)</rect>
-			</damageData>
-		</graphicData>
 		<costList>
 			<Mechanism>1</Mechanism>
 			<ComponentIndustrial>1</ComponentIndustrial>
@@ -617,6 +647,24 @@
 		<statBases>
 			<Beauty>6</Beauty>
 		</statBases>
+		<graphicData>
+		    <texPath>DBH/Things/Building/Heating/TowelRail</texPath>
+		    <graphicClass>Graphic_Multi</graphicClass>
+		    <drawOffsetNorth>(0,0,0.5)</drawOffsetNorth>
+		    <drawOffsetSouth>(0,0,-0.5)</drawOffsetSouth>
+		    <drawOffsetWest>(-0.5,0,0)</drawOffsetWest>
+		    <drawOffsetEast>(0.5,0,0)</drawOffsetEast>
+		    <drawSize>(2,2)</drawSize>
+		    <damageData>
+		        <rect>(0.05,0.05,0.95,0.95)</rect>
+		    </damageData>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<terrainAffordanceNeeded IsNull="True"/>
+		<building>
+		    <isEdifice>false</isEdifice>
+		    <isAttachment>true</isAttachment>
+		</building>
 		<researchPrerequisites Inherit="False">
 			<li>Temperature_control_C3</li>
 		</researchPrerequisites>		
@@ -633,7 +681,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded IsNull="True"/>
 		<altitudeLayer>Weather</altitudeLayer>
 		<clearBuildingArea>false</clearBuildingArea>
 		<passability>Standable</passability>
@@ -661,6 +709,12 @@
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>50</basePowerConsumption>
+				<powerUpgrades>
+				    <li>
+				        <researchProject>ColoredLights</researchProject>
+				        <factor>0.25</factor>
+				    </li>
+				</powerUpgrades>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 		</comps>
@@ -682,7 +736,8 @@
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>9</glowRadius>
-				<glowColor>(217,217,208,0)</glowColor>
+				<glowColor>(214,148,94,0)</glowColor>
+				<colorPickerEnabled>true</colorPickerEnabled>
 				<darklightToggle>true</darklightToggle>
 			</li>
 		</comps>
@@ -705,7 +760,8 @@
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>9</glowRadius>
-				<glowColor>(217,217,208,0)</glowColor>
+				<glowColor>(214,148,94,0)</glowColor>
+				<colorPickerEnabled>true</colorPickerEnabled>
 				<darklightToggle>true</darklightToggle>
 			</li>
 		</comps>
@@ -719,6 +775,7 @@
 			<Mechanism>1</Mechanism>
 		</costList>			
 	</ThingDef>
+
 
 	<ThingDef ParentName="BasedHeating" DBHLite="true">
 		<defName>AirConOutdoorUnit</defName>
@@ -815,14 +872,6 @@
 			<ElectronicComponents>2</ElectronicComponents>
 			<Mechanism>1</Mechanism>
 		</costList>
-		<graphicData>
-			<texPath>DBH/Things/Building/Heating/centralAirVent</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
-			<damageData>
-				<rect>(0.05,0.05,0.95,0.95)</rect>
-			</damageData>
-		</graphicData>
 		<uiIconPath>DBH/UI/centralAirVent</uiIconPath>
 		<statBases>
 			<WorkToBuild>400</WorkToBuild>
@@ -851,7 +900,26 @@
 		</comps>
 		<placeWorkers>
 			<li>DubsBadHygiene.PlaceWorker_Aircon</li>
+			<li>Placeworker_AttachedToWall</li>
 		</placeWorkers>
+		<graphicData>
+		    <texPath>DBH/Things/Building/Heating/centralAirVent</texPath>
+		    <graphicClass>Graphic_Multi</graphicClass>
+		    <drawOffsetNorth>(0,0,0.7)</drawOffsetNorth>
+		    <drawOffsetSouth>(0,0,-0.5)</drawOffsetSouth>
+		    <drawOffsetWest>(-0.5,0,0)</drawOffsetWest>
+		    <drawOffsetEast>(0.5,0,0)</drawOffsetEast>
+		    <drawSize>(1,1)</drawSize>
+		    <damageData>
+		        <rect>(0.05,0.05,0.95,0.95)</rect>
+		    </damageData>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<terrainAffordanceNeeded IsNull="True"/>
+		<building>
+		    <isEdifice>false</isEdifice>
+		    <isAttachment>true</isAttachment>
+		</building>
 		<researchPrerequisites Inherit="False">
 			<li>Temperature_control_C2</li>
 		</researchPrerequisites>		

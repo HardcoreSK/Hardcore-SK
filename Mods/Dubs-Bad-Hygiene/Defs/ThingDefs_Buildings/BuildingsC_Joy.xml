@@ -76,7 +76,7 @@
 	<TerrainDef>
 		<fertility>0</fertility>
 		<avoidWander>true</avoidWander>
-		<holdSnow>false</holdSnow>
+		<holdSnowOrSand>false</holdSnowOrSand>
 		<takeSplashes>true</takeSplashes>
 		<extinguishesFire>true</extinguishesFire>
 		<filthAcceptanceMask>
@@ -96,6 +96,7 @@
 				<cooldownTime>1.5</cooldownTime>
 			</li>
 		</tools>
+		<waterBodyType>Freshwater</waterBodyType>
 		<texturePath>Terrain/Surfaces/WaterChestDeepRamp</texturePath>
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<affordances>
@@ -251,6 +252,7 @@
 
 
 	<ThingDef ParentName="BasedFixture" Name="DubsHotTubBase">
+		<designationCategory>Joy</designationCategory>
 		<description>Hot tub used for hydrotherapy, relaxation, or pleasure. Filled with water from water towers on first use. Self-heated and does not require a sewage outlet.</description>
 		<thingClass>DubsBadHygiene.Building_HotTub</thingClass>
 		<castEdgeShadows>True</castEdgeShadows>
@@ -413,7 +415,7 @@
 
 
 	<ThingDef ParentName="BasedHeating">
-		<designationCategory>Hygiene</designationCategory>
+		<designationCategory>Joy</designationCategory>
 		<defName>DBHSaunaHeaterLog</defName>
 		<label>Fueled Sauna Heater</label>
 		<description>A heater designed specifically for creating a sauna room, using a sauna regularly reduces the risk of heart attacks, heats a room to 60c.</description>
@@ -489,7 +491,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BasedHeating">
-		<designationCategory>Hygiene</designationCategory>
+		<designationCategory>Joy</designationCategory>
 		<defName>DBHSaunaHeaterElec</defName>
 		<label>Electric Sauna Heater</label>
 		<description>A heater designed specifically for creating a sauna room, using a sauna regularly reduces the risk of heart attacks, heats a room to 60c.</description>
@@ -562,7 +564,7 @@
 
 
 	<ThingDef ParentName="FurnitureWithQualityBase">
-		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<drawStyleCategory>Default1D</drawStyleCategory>
 		<defName>DBHSaunaSeating</defName>
 		<label>Sauna seating</label>
 		<description>Slatted seating for sauna rooms</description> 

@@ -298,6 +298,7 @@
 		</graphicData>
 		<castEdgeShadows>false</castEdgeShadows>
 		<size>(3,2)</size>
+		<fillPercent>1.0</fillPercent>
 		<rotatable>true</rotatable>
 		<costList>
 			<ComponentIndustrial>10</ComponentIndustrial>	
@@ -621,9 +622,12 @@
 				<capacity>10000</capacity>
 				<priority>2</priority>
 			</li>
+			<li Class="CompProperties_AmbientSound">
+				<sound>sewage_Ambience</sound>
+				<disabledOnUnpowered>true</disabledOnUnpowered>
+			</li>
 		</comps>
 		<building>
-			<soundAmbient>sewage_Ambience</soundAmbient>
 			<ai_chillDestination>false</ai_chillDestination>
 			<paintable>true</paintable>
 		</building>
