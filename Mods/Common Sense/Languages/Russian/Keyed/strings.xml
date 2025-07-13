@@ -15,7 +15,7 @@
 	<meal_stacking_label>Пешки будут избегать смешивать негативные мысли при складывании обедов</meal_stacking_label>
 	<meal_stacking_note>Таким образом отвратительные блюда никогда не перемешаются с простыми</meal_stacking_note>
 	<dont_count_odd_label>Считать странное мясо (напр.: насекомых) нормальным, позволяя складывать его с обычными блюдами</dont_count_odd_label>
-	<dont_count_odd_note>Меся насекомых не на столько уж и плохое...</dont_count_odd_note>
+	<dont_count_odd_note>Мясо насекомых не на столько уж и плохое...</dont_count_odd_note>
 	<gen_ingredients_head>Генерация блюд</gen_ingredients_head>
 	<gen_ingredients_label>Добавлять случайные ингредиенты в случайно сгенерированные обеды</gen_ingredients_label>
 	<gen_ingredients_note>Прим.: подаренные рассказчиком, проданные торговцем, взятые с трупа. Используются только нейтральные ингредиенты. После включения этой опции, игра никогда не станет прежней</gen_ingredients_note>
@@ -79,4 +79,7 @@
 	<meditation_economy_note>Если пешкам не требуется медитировать по расписанию, они будут прерывать медитацию когда псифокус заполнен и медитация не выглядит привлекательным источником радости (т. е. удовлетворено или наскучило)</meditation_economy_note>
 	<advanced_respect_capacity_label>-- пешки не будут превышать вместимость инвентаря</advanced_respect_capacity_label>
 	<advanced_respect_capacity_note>Из-за иммерсии или типа того</advanced_respect_capacity_note>
+	<optimal_patching_label>Оптимальный патчинг</optimal_patching_label>
+	<optimal_patching_note>Когда эта опция включена, все опции активируются сразу же после включения, ценой постоянного присутствия в коде, возможно влияя на производительность даже если опция выключена. Если эта опция выключена, опции будут требовать перезагрузки игры, но патчи нужные для этих опций не будут происходить, убирая воздействие на производительность при запуске игры когда опция выключены</optimal_patching_note>
+	<optimal_patching_attention_label>ВНИМАНИЕ: оптимальный патчинг не применяется корректно без перезагрузки игры!</optimal_patching_attention_label>
 </LanguageData>
