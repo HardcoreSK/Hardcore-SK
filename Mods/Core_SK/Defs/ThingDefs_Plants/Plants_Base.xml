@@ -102,7 +102,7 @@
 			<Beauty>1</Beauty>
 			<Nutrition>0.3</Nutrition>	
 		</statBases>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<selectable>true</selectable>
 		<pathCost>10</pathCost>
 		<plant>
@@ -130,7 +130,7 @@
 			<Beauty>10</Beauty>
 			<Nutrition>0.25</Nutrition>	
 		</statBases>
-		<hideAtSnowDepth>0.3</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.3</hideAtSnowOrSandDepth>
 		<pathCost>3</pathCost>
 		<plant>
 			<sowTags>
@@ -173,7 +173,7 @@
 			<MaxHitPoints>120</MaxHitPoints>
 			<Nutrition>0.3</Nutrition>	
 		</statBases>
-		<hideAtSnowDepth>3.0</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>3.0</hideAtSnowOrSandDepth>
 		<selectable>true</selectable>
 		<fillPercent>0.08</fillPercent>
 		<pathCost>30</pathCost>
@@ -237,7 +237,7 @@
 				<offset>(0,0,-0.42)</offset>
 			</shadowData>
 		</graphicData>
-		<hideAtSnowDepth>99999</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>99999</hideAtSnowOrSandDepth>
 		<passability>PassThroughOnly</passability>
 		<pathCost>130</pathCost>
 		<blockWind>true</blockWind>
@@ -289,7 +289,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<selectable>true</selectable>
 		<fillPercent>0.25</fillPercent>
-		<hideAtSnowDepth>99999</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>99999</hideAtSnowOrSandDepth>
 		<graphicData>
 			<shadowData>
 				<volume>(0.2, 0.35, 0.13)</volume>
