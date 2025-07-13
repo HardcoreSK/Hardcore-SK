@@ -63,7 +63,7 @@
             <armorPenetrationSharp>0</armorPenetrationSharp>
             <armorPenetrationBlunt>0</armorPenetrationBlunt>
             <ai_IsIncendiary>true</ai_IsIncendiary>
-            <bulletChanceToStartFire>0.4</bulletChanceToStartFire>
+            
         </projectile>
     </ThingDef>
     <ThingDef Class="CombatExtended.AmmoDef" ParentName="TripleRocketGrenade">
@@ -78,7 +78,7 @@
             <damageDef>Bomb</damageDef>
             <damageAmountBase>80</damageAmountBase>
             <explosionRadius>1.5</explosionRadius>
-            <bulletChanceToStartFire>0.6</bulletChanceToStartFire>
+            
         </projectile>
         <comps>
             <li Class="CombatExtended.CompProperties_Fragments">

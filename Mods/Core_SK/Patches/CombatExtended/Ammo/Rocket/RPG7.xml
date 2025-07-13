@@ -90,7 +90,7 @@ Defs/ThingDef[defName="Ammo_RPG7Grenade_Frag"]/detonateProjectile</xpath>
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Bullet_RPG7Grenade_Thermobaric"]/projectile</xpath>
 		<value>
-			<bulletChanceToStartFire>0.4</bulletChanceToStartFire>
+			
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">

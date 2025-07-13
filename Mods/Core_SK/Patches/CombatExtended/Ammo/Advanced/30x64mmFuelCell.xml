@@ -70,7 +70,7 @@
 			<preExplosionSpawnChance>0.15</preExplosionSpawnChance>
 			<damageAmountBase>0</damageAmountBase>
 			<explosionRadius>3.5</explosionRadius>
-			<bulletChanceToStartFire>0.6</bulletChanceToStartFire>
+			
 		</value>
 	</Operation>
 	<Operation Class="SK.PatchOperationReplaceExtended">
@@ -90,7 +90,7 @@
 		<xpath>Defs/ThingDef[defName="Bullet_30x64mmFuel_Thermobaric"]/projectile</xpath>
 		<value>
 			<damageAmountBase>60</damageAmountBase>
-			<bulletChanceToStartFire>0.4</bulletChanceToStartFire>
+			
 			<explosionRadius>5</explosionRadius>
 		</value>
 	</Operation>
