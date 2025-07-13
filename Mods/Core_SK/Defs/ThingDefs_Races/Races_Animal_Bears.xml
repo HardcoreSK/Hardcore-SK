@@ -99,7 +99,7 @@
 			<leatherDef>Leather_Heavy</leatherDef>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<gestationPeriodDays>10</gestationPeriodDays>
-			<wildness>0.80</wildness>
+			<petness>0.2</petness>
 			<lifeExpectancy>22</lifeExpectancy>
 			<trainability>Advanced</trainability>
 			<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
@@ -152,7 +152,7 @@
 		<description>Huge omnivorous mammals adapted for cold climates. Their thick blubber and fur keep them warm in winter.\n\nWhile their usual diet consists of fish, berries, honey, and scavenged meat, the grizzly is capable of using its massive strength and deadly claws to kill live prey. They are startlingly quick for such lumbering creatures.</description>
 		<race>
 			<packAnimal>true</packAnimal>
-			<wildness>0.80</wildness>
+			<petness>0.2</petness>
 		</race>
 	</ThingDef>
 
@@ -242,7 +242,7 @@
 		</statBases>
 		<race>
 			<packAnimal>true</packAnimal>
-			<wildness>0.85</wildness>
+			<petness>0.15</petness>
 		</race>
 	</ThingDef>
 
@@ -316,7 +316,7 @@
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<foodType>VegetarianRoughAnimal, OmnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>0.30</wildness>
+			<petness>0.7</petness>
 		</race>
 		<modExtensions>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
