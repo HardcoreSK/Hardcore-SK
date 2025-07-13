@@ -3,7 +3,7 @@
 
     <Operation Class="PatchOperationSequence">
     <operations>
-        <li Class="PatchOperationReplace">
+        <li Class="PatchOperationAdd">
             <xpath>Defs/ThingDef[defName="TrapIED_Smoke"]</xpath>
             <value>
                 <researchPrerequisites>
