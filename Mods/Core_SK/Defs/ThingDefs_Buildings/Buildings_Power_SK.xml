@@ -50,7 +50,7 @@
 			<Flammability>1.0</Flammability>
 			<Beauty>-2</Beauty>
 		</statBases>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<drawStyleCategory>Default1D</drawStyleCategory>
 		<costList>
 			<Wire>1</Wire>
 		</costList>
@@ -117,7 +117,7 @@
 			<Flammability>1.0</Flammability>
 			<Beauty>-2</Beauty>
 		</statBases>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<drawStyleCategory>Default1D</drawStyleCategory>
 		<costList>
 			<Wire>2</Wire>
 		</costList>
@@ -183,7 +183,7 @@
 			<Beauty>-4</Beauty>
 		</statBases>
 		<description>A set of heavy electrical cables for moving power around. They are very strong and non-flammable.</description>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<drawStyleCategory>Default1D</drawStyleCategory>
 		<costList>
 			<Wire>1</Wire>
 			<MagneticMaterial>1</MagneticMaterial>
@@ -252,7 +252,7 @@
 			<Beauty>0</Beauty>
 		</statBases>
 		<description>A set of electrical cables for moving power around. This one is hidden in the ground.</description>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<drawStyleCategory>Default1D</drawStyleCategory>
 		<costList>
 			<Wire>1</Wire>
 			<ConcreteResource>1</ConcreteResource>
@@ -315,7 +315,7 @@
 			<Beauty>-2</Beauty>
 			<Mass>30</Mass>
 		</statBases>
-		<placingDraggableDimensions>0</placingDraggableDimensions>
+		<!-- <placingDraggableDimensions>0</placingDraggableDimensions> -->
 		<costList>
 			<Wire>3</Wire>
 			<ComponentIndustrial>2</ComponentIndustrial>
@@ -373,7 +373,7 @@
 			<Beauty>-2</Beauty>
 			<Mass>30</Mass>
 		</statBases>
-		<placingDraggableDimensions>0</placingDraggableDimensions>
+		<!-- <placingDraggableDimensions>0</placingDraggableDimensions> -->
 		<costList>
 			<ComponentIndustrial>3</ComponentIndustrial>
 			<ElectronicComponents>1</ElectronicComponents>
@@ -429,7 +429,7 @@
 			<Mass>30</Mass>
 		</statBases>
 		<canOverlapZones>false</canOverlapZones>
-		<placingDraggableDimensions>0</placingDraggableDimensions>
+		<!-- <placingDraggableDimensions>0</placingDraggableDimensions> -->
 		<costList>
 			<Plastic>10</Plastic>
 			<ComponentIndustrial>5</ComponentIndustrial>

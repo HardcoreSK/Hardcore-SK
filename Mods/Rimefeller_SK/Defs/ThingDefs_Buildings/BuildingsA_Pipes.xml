@@ -30,7 +30,7 @@
 			<WorkToBuild>160</WorkToBuild>
 			<Flammability>1.0</Flammability>
 		</statBases>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<drawStyleCategory>Default1D</drawStyleCategory>
 		<rotatable>false</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>
 		<clearBuildingArea>false</clearBuildingArea>
@@ -94,7 +94,7 @@
 		</graphicData>
 		<description>A trail of napalm.</description>
 		<thingClass>Rimefeller.NapalmTrail</thingClass>
-		<placingDraggableDimensions>2</placingDraggableDimensions>
+		<drawStyleCategory>Default2D</drawStyleCategory>
 		<building>
 			<blueprintGraphicData>
 				<texPath>Rimefeller/UI/NapalmSpill_bp</texPath>
