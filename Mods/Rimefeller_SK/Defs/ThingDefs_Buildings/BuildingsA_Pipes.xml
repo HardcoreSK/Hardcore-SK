@@ -21,13 +21,14 @@
 			</blueprintGraphicData>
 			<isInert>true</isInert>
 			<isEdifice>false</isEdifice>
+      <ai_chillDestination>false</ai_chillDestination>
 		</building>
 		<altitudeLayer>Conduits</altitudeLayer>
 		<passability>Standable</passability>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>    
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
-			<WorkToBuild>160</WorkToBuild>
+      <WorkToBuild>260</WorkToBuild>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<drawStyleCategory>Default1D</drawStyleCategory>
@@ -39,6 +40,8 @@
 		</placeWorkers>
     <tickerType>Never</tickerType>
     <drawerType>MapMeshOnly</drawerType>
+    <noRightClickDraftAttack>true</noRightClickDraftAttack>
+    <coversFloor>false</coversFloor>
 	</ThingDef>
 
 	<ThingDef ParentName="BasedRimefellerMom">
@@ -65,7 +68,7 @@
 				<useLabel>Ignite</useLabel>
 			</li>
 		</comps>
-		<designationCategory/>
+    <designationCategory></designationCategory>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
 		<passability>Standable</passability>
 		<filthLeaving>Filth_Ash</filthLeaving>
@@ -94,7 +97,7 @@
 		</graphicData>
 		<description>A trail of napalm.</description>
 		<thingClass>Rimefeller.NapalmTrail</thingClass>
-		<drawStyleCategory>Default2D</drawStyleCategory>
+    <drawStyleCategory>Fill2D</drawStyleCategory>
 		<building>
 			<blueprintGraphicData>
 				<texPath>Rimefeller/UI/NapalmSpill_bp</texPath>
@@ -291,7 +294,7 @@
 		</costList>
 		<rotatable>false</rotatable>
 		<selectable>true</selectable>
-    <!-- <constructEffect>ConstructMetal</constructEffect> --> <!-- madeFromStuff isn't compatible with constructEffect -->
+    <constructEffect>ConstructMetal</constructEffect>
 		<researchPrerequisites>
 			<li>Oil_Industry_C1</li>
 		</researchPrerequisites>
