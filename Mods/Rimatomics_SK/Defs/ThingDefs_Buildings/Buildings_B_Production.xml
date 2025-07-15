@@ -198,16 +198,16 @@
     <tickerType>Normal</tickerType>    
     <canOverlapZones>false</canOverlapZones>
     <size>(4,4)</size>
-		<stuffCategories>
-			<li>SolidMetallic</li>
-		</stuffCategories>
-		<costStuffCount>300</costStuffCount>
-		<costList>
-			<ReinforcedConcrete>300</ReinforcedConcrete>
-			<Plastic>120</Plastic>
-			<Mechanism>20</Mechanism>
-			<ComponentIndustrial>15</ComponentIndustrial>
-		</costList>
+	<stuffCategories>
+		<li>SolidMetallic</li>
+	</stuffCategories>
+	<costStuffCount>300</costStuffCount>
+	<costList>
+		<ReinforcedConcrete>300</ReinforcedConcrete>
+		<Plastic>120</Plastic>
+		<Mechanism>20</Mechanism>
+		<ComponentIndustrial>15</ComponentIndustrial>
+	</costList>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -227,7 +227,6 @@
     <rotatable>false</rotatable>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<constructEffect>ConstructMetal</constructEffect>
     <placeWorkers>
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
@@ -263,16 +262,16 @@
     </statBases>
     <tickerType>Normal</tickerType>   
     <size>(4,3)</size>
-		<stuffCategories>
-			<li>StrongMetallic</li>
-		</stuffCategories>
-		<costStuffCount>240</costStuffCount>
-		<costList>
-			<Plastic>90</Plastic>
-			<AdvMechanism>8</AdvMechanism>
-			<ComponentSpacer>10</ComponentSpacer>
-			<Microchips>2</Microchips>
-		</costList>
+	<stuffCategories>
+		<li>StrongMetallic</li>
+	</stuffCategories>
+	<costStuffCount>240</costStuffCount>
+	<costList>
+		<Plastic>90</Plastic>
+		<AdvMechanism>8</AdvMechanism>
+		<ComponentSpacer>10</ComponentSpacer>
+		<Microchips>2</Microchips>
+	</costList>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -291,12 +290,10 @@
     </comps>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<constructEffect>ConstructMetal</constructEffect>
     <placeWorkers>
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
     <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
-
   </ThingDef>
 
 

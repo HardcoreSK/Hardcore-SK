@@ -14,7 +14,7 @@
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
-		<defaultFactionType>OutlanderCivil</defaultFactionType>
+		<defaultFactionDef>OutlanderCivil</defaultFactionDef>
 		<itemQuality>Poor</itemQuality>
 		<backstoryCryptosleepCommonality>0.10</backstoryCryptosleepCommonality>
 		<isFighter>false</isFighter>
@@ -81,6 +81,8 @@
 		<labelMale>man in black</labelMale>
 		<labelFemale>woman in black</labelFemale>
 		<labelPlural>strangers in black</labelPlural>
+		<defaultFactionDef>OutlanderCivil</defaultFactionDef>
+		<combatPower>55</combatPower>
 		<minGenerationAge>20</minGenerationAge>
 		<maxGenerationAge>55</maxGenerationAge>
 		<combatPower>100</combatPower>
@@ -89,15 +91,12 @@
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>		
 		<defaultFactionType>OutlanderCivil</defaultFactionType>
-		<itemQuality>Good</itemQuality>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
 		<techHediffsMoney>200~300</techHediffsMoney>
 		<techHediffsTags>
 			<li>Simple</li>
 		</techHediffsTags>
 		<techHediffsChance>0.001</techHediffsChance>
-		<invNutrition>3</invNutrition>
-		<invFoodDef>RoastedMeat</invFoodDef>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -111,6 +110,16 @@
 			<li>Violent</li>
 			<li>Caring</li>
 		</requiredWorkTags>
+		<invNutrition>3</invNutrition>
+		<invFoodDef>RoastedMeat</invFoodDef>
+		<inventoryOptions>
+		  <subOptionsChooseOne>
+		    <li>
+		      <thingDef>MedicineIndustrial</thingDef>
+		      <countRange>5</countRange>
+		    </li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
 		<gearHealthRange>
 			<min>1</min>
 			<max>1</max>
@@ -119,18 +128,7 @@
 			<min>4700</min>
 			<max>7500</max>
 		</apparelMoney>
-		<apparelRequired>
-			<li>Apparello_XcomOne</li>
-			<li>Apparello_Shadess</li>
-		</apparelRequired>
-		<apparelTags>
-			<li>BanditsLight</li>
-			<li>BrotherhoodMedium</li>
-		</apparelTags>
-		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-		<apparelColor>(58,58,58)</apparelColor>
-		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
-		<favoriteColor>(58,58,58)</favoriteColor>
+		<itemQuality>Good</itemQuality>
 		<weaponMoney>
 			<min>1500</min>
 			<max>3500</max>
@@ -139,15 +137,27 @@
 			<li>MG2</li>
 			<li>RF3</li>
 		</weaponTags>
+		<apparelTags>
+			<li>BanditsLight</li>
+			<li>BrotherhoodMedium</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparello_XcomOne</li>
+			<li>Apparello_Shadess</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelColor>(0.2, 0.2, 0.2)</apparelColor> <!-- Matches favoriteColor -->
+		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+		<favoriteColor MayRequire="Ludeon.RimWorld.Ideology">Black</favoriteColor>
+		<initialWillRange>0~0</initialWillRange>
+		<initialResistanceRange>0~2</initialResistanceRange>
+		<humanPregnancyChance>0</humanPregnancyChance>
 		<skills>
 			<li>
 				<skill>Shooting</skill>
 				<range>10~20</range>
 			</li>
 		</skills>
-		<initialWillRange>0~0</initialWillRange>
-		<initialResistanceRange>0~2</initialResistanceRange>
-		<humanPregnancyChance>0</humanPregnancyChance>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>

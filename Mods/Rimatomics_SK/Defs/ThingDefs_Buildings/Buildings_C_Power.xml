@@ -140,7 +140,6 @@
     <rotatable>false</rotatable>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <constructEffect>ConstructMetal</constructEffect>
     <placeWorkers>
       <li>Rimatomics.PlaceWorker_ResearchStage</li>
     </placeWorkers>
@@ -164,16 +163,16 @@
       <Flammability>1.0</Flammability>
       <Beauty>-40</Beauty>
     </statBases>
-		<stuffCategories>
-			<li>SolidMetallic</li>
-		</stuffCategories>
-		<costStuffCount>380</costStuffCount>
-		<costList>
-			<ReinforcedConcrete>300</ReinforcedConcrete>
-			<Plastic>120</Plastic>
-			<Mechanism>24</Mechanism>
-			<ComponentIndustrial>18</ComponentIndustrial>
-		</costList>
+	<stuffCategories>
+		<li>SolidMetallic</li>
+	</stuffCategories>
+	<costStuffCount>380</costStuffCount>
+	<costList>
+		<ReinforcedConcrete>300</ReinforcedConcrete>
+		<Plastic>120</Plastic>
+		<Mechanism>24</Mechanism>
+		<ComponentIndustrial>18</ComponentIndustrial>
+	</costList>
     <constructionSkillPrerequisite>13</constructionSkillPrerequisite>
   </ThingDef>
 
@@ -195,16 +194,16 @@
       <Flammability>1.0</Flammability>
       <Beauty>-40</Beauty>
     </statBases>
-		<stuffCategories>
-			<li>SolidMetallic</li>
-		</stuffCategories>
-		<costStuffCount>470</costStuffCount>
-		<costList>
-			<ReinforcedConcrete>350</ReinforcedConcrete>
-			<SyntheticFibers>75</SyntheticFibers>
-			<AdvMechanism>20</AdvMechanism>
-			<ComponentSpacer>20</ComponentSpacer>
-		</costList>
+	<stuffCategories>
+		<li>SolidMetallic</li>
+	</stuffCategories>
+	<costStuffCount>470</costStuffCount>
+	<costList>
+		<ReinforcedConcrete>350</ReinforcedConcrete>
+		<SyntheticFibers>75</SyntheticFibers>
+		<AdvMechanism>20</AdvMechanism>
+		<ComponentSpacer>20</ComponentSpacer>
+	</costList>
     <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
   </ThingDef>
 
@@ -226,16 +225,16 @@
       <Flammability>1.0</Flammability>
       <Beauty>-40</Beauty>
     </statBases>
-		<stuffCategories>
-			<li>SolidMetallic</li>
-		</stuffCategories>
-		<costStuffCount>700</costStuffCount>
-		<costList>
-			<ReinforcedConcrete>500</ReinforcedConcrete>
-			<MagneticMaterial>40</MagneticMaterial>
-			<AdvMechanism>30</AdvMechanism>
-			<Microchips>5</Microchips>
-		</costList>
+	<stuffCategories>
+		<li>SolidMetallic</li>
+	</stuffCategories>
+	<costStuffCount>700</costStuffCount>
+	<costList>
+		<ReinforcedConcrete>500</ReinforcedConcrete>
+		<MagneticMaterial>40</MagneticMaterial>
+		<AdvMechanism>30</AdvMechanism>
+		<Microchips>5</Microchips>
+	</costList>
     <drawOffscreen>false</drawOffscreen>
     <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
   </ThingDef>
@@ -276,16 +275,16 @@
     </statBases>
     <tickerType>Normal</tickerType>
     <size>(4,7)</size>
-		<stuffCategories>
-			<li>RuggedMetallic</li>
-		</stuffCategories>
-		<costStuffCount>300</costStuffCount>
-		<costList>
-			<turbineBlade>100</turbineBlade>
-			<Mechanism>25</Mechanism>
-			<ComponentIndustrial>15</ComponentIndustrial>
-			<Electronics>7</Electronics>
-		</costList>
+	<stuffCategories>
+		<li>RuggedMetallic</li>
+	</stuffCategories>
+	<costStuffCount>300</costStuffCount>
+	<costList>
+		<turbineBlade>100</turbineBlade>
+		<Mechanism>25</Mechanism>
+		<ComponentIndustrial>15</ComponentIndustrial>
+		<Electronics>7</Electronics>
+	</costList>
     <comps>
       <li>
         <compClass>CompColorable</compClass>
@@ -313,7 +312,6 @@
     <rotatable>true</rotatable>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <constructEffect>ConstructMetal</constructEffect>
     <placeWorkers>
       <li>Rimatomics.PlaceWorker_ResearchStage</li>
     </placeWorkers>
@@ -353,16 +351,16 @@
     </statBases>
     <tickerType>Normal</tickerType>
     <size>(6,10)</size>
-		<stuffCategories>
-			<li>SolidMetallic</li>
-		</stuffCategories>
-		<costStuffCount>500</costStuffCount>
-		<costList>
-			<turbineBlade>400</turbineBlade>
-			<AdvMechanism>25</AdvMechanism>
-			<ComponentSpacer>20</ComponentSpacer>
-			<Microchips>4</Microchips>
-		</costList>
+	<stuffCategories>
+		<li>SolidMetallic</li>
+	</stuffCategories>
+	<costStuffCount>500</costStuffCount>
+	<costList>
+		<turbineBlade>400</turbineBlade>
+		<AdvMechanism>25</AdvMechanism>
+		<ComponentSpacer>20</ComponentSpacer>
+		<Microchips>4</Microchips>
+	</costList>
     <comps>
       <li>
         <compClass>CompColorable</compClass>
@@ -390,7 +388,6 @@
     <rotatable>true</rotatable>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <constructEffect>ConstructMetal</constructEffect>
     <placeWorkers>
       <li>Rimatomics.PlaceWorker_ResearchStage</li>
     </placeWorkers>

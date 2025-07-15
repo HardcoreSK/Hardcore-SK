@@ -98,10 +98,10 @@
     </statBases>
     <tickerType>Normal</tickerType>
     <size>(5,5)</size>
-		<stuffCategories>
-			<li>StrongMetallic</li>
-		</stuffCategories>
-		<costStuffCount>50</costStuffCount>
+	<stuffCategories>
+		<li>StrongMetallic</li>
+	</stuffCategories>
+	<costStuffCount>50</costStuffCount>
     <comps>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusher</compClass>
@@ -110,7 +110,6 @@
     </comps>
     <rotatable>false</rotatable>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <constructEffect>ConstructMetal</constructEffect>
   </ThingDef>
 
   <ThingDef ParentName="BaseSarc"   Class="Rimatomics.RimatomicsThingDef">
