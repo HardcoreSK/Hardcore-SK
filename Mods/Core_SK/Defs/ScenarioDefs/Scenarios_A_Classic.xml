@@ -1,7 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ScenarioDef>
+	<ScenarioDef Name="ScenarioBase" Abstract="True">
+		<scenario>
+		  <playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>PlayerColony</factionDef>
+		  </playerFaction>
+		  <surfaceLayer>
+			<def>SurfaceLayerFixed</def>
+			<tag>Surface</tag>
+			<layer>Surface</layer>
+			<settingsDef>Surface</settingsDef>
+			<hide>true</hide>
+			<connections>
+			  <Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+				<zoomMode>ZoomOut</zoomMode>
+			  </Orbit>
+			</connections>
+		  </surfaceLayer>
+		  <parts>
+			
+			<!-- Layers -->
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="ScenPart_PlanetLayer">
+			  <def>PlanetLayer</def>
+			  <tag>Orbit</tag>
+			  <layer>Orbit</layer>
+			  <settingsDef>Orbit</settingsDef>
+			  <hide>true</hide>
+			  <connections>
+				<Surface>
+				  <zoomMode>ZoomIn</zoomMode>
+				</Surface>
+			  </connections>
+			</li>
+			
+		  </parts>
+		</scenario>
+	</ScenarioDef>
+
+	<ScenarioDef ParentName="ScenarioBase">
 		<defName>Classic</defName>
 		<label>Classic</label>
 		<description>The three of you awake in your cryptosleep sarcophagi. Some time later, you land on this unknown rimworld.</description>
