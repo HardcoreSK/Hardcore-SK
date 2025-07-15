@@ -1767,6 +1767,7 @@
 				<basePowerConsumption>700</basePowerConsumption>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
+				<soundAmbientProducingPower>GeothermalPlant_Ambience</soundAmbientProducingPower>
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>7</glowRadius>
@@ -1794,7 +1795,6 @@
 		</placeWorkers>
 		<building>
 			<heatPerTickWhileWorking>0.7</heatPerTickWhileWorking>
-			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
 		</building>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
@@ -1893,6 +1893,7 @@
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>-1</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
+				<soundAmbientProducingPower>GeothermalPlant_Ambience</soundAmbientProducingPower>
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>4</glowRadius>
@@ -1917,7 +1918,6 @@
 			<Mechanism>15</Mechanism>
 		</costList>
 		<building>
-			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
 		</building>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
@@ -2889,6 +2889,7 @@
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
+				<soundAmbientProducingPower>MatterFab</soundAmbientProducingPower>
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>3</glowRadius>
@@ -2908,7 +2909,6 @@
 		</comps>
 		<building>
 			<heatPerTickWhileWorking>1.5</heatPerTickWhileWorking>
-			<soundAmbient>MatterFab</soundAmbient>
 		</building>
 		<researchPrerequisites>
 			<li>Super_matter_E2</li>
@@ -2969,6 +2969,7 @@
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>1</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
+				<soundAmbientProducingPower>MatterFab</soundAmbientProducingPower>
 			</li>
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
@@ -2978,7 +2979,6 @@
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<building>
-			<soundAmbient>MatterFab</soundAmbient>
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
 		</building>
 		<researchPrerequisites>

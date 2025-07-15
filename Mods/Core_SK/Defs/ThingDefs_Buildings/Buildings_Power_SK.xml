@@ -1371,6 +1371,7 @@
 				<compClass>CompPowerPlantSteam</compClass>
 				<basePowerConsumption>-2500</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
+				<soundAmbientProducingPower>GeothermalPlant_Ambience</soundAmbientProducingPower>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Stunnable">
@@ -1389,7 +1390,6 @@
 		</placeWorkers>
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>
-			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
 			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
 		</building>
 		<canOverlapZones>false</canOverlapZones>
@@ -1519,6 +1519,7 @@
 				<compClass>CompPowerPlant</compClass>
 				<basePowerConsumption>-1</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
+				<soundAmbientProducingPower>GeothermalPlant_Ambience</soundAmbientProducingPower>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Flickable" />
@@ -1545,7 +1546,6 @@
 			<li>SK.PlaceWorker_OnlyOnThing</li>
 		</placeWorkers>
 		<building>
-			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
 			<canPlaceOverWall>true</canPlaceOverWall>
 			<isEdifice>false</isEdifice>
 		</building>
@@ -1804,6 +1804,7 @@
 				<compClass>CompPowerPlant</compClass>
 				<basePowerConsumption>1</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
+				<soundAmbientProducingPower>XITurbine</soundAmbientProducingPower>
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>5</glowRadius>
@@ -1820,9 +1821,6 @@
 		<canOverlapZones>false</canOverlapZones>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Power</designationCategory>
-		<building>
-			<soundAmbient>XITurbine</soundAmbient>
-		</building>
 		<researchPrerequisites>
 			<li>Renewable_energy_D3</li>
 		</researchPrerequisites>
@@ -1872,6 +1870,7 @@
 				<compClass>SK.CompPowerPlantFueled</compClass>
 				<basePowerConsumption>-20000</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
+				<soundAmbientProducingPower>PlasmaTurbine</soundAmbientProducingPower>
 			</li>
 			<li Class="SK.CompFueled_Properties">
 				<canAutoBurn>true</canAutoBurn>
@@ -1922,9 +1921,6 @@
 			<li>SK.PlaceWorker_OnlyOnThing</li>
 			<li>SK.PlaceWorker_NoNearPlasmaGeothermalPlant</li>
 		</placeWorkers>
-		<building>
-			<soundAmbient>PlasmaTurbine</soundAmbient>
-		</building>
 		<researchPrerequisites>
 			<li>Generators_D1</li>
 		</researchPrerequisites>
@@ -1970,6 +1966,7 @@
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>1</basePowerConsumption>
 				<shortCircuitInRain>true</shortCircuitInRain>
+				<soundAmbientProducingPower>PlasmaTurbine</soundAmbientProducingPower>
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>3</glowRadius>
@@ -1992,9 +1989,6 @@
 		<canOverlapZones>false</canOverlapZones>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Power</designationCategory>
-		<building>
-			<soundAmbient>PlasmaTurbine</soundAmbient>
-		</building>
 		<placeWorkers>
 			<li>SK.PlaceWorker_PGNearPlasmaGeothermalPlant</li>
 		</placeWorkers>
@@ -2044,6 +2038,7 @@
 				<compClass>CompPowerPlant</compClass>
 				<basePowerConsumption>-1</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
+				<soundAmbientProducingPower>XITurbine</soundAmbientProducingPower>
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>4</glowRadius>
@@ -2075,9 +2070,6 @@
 		<canOverlapZones>false</canOverlapZones>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Power</designationCategory>
-		<building>
-			<soundAmbient>XITurbine</soundAmbient>
-		</building>
 		<researchPrerequisites>
 			<li>Generators_D2</li>
 		</researchPrerequisites>
@@ -2125,6 +2117,7 @@
 				<compClass>SK.CompPowerPlantFueled</compClass>
 				<basePowerConsumption>-38000</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
+				<soundAmbientProducingPower>PlasmaTurbine</soundAmbientProducingPower>
 			</li>
 			<li Class="SK.CompFueled_Properties">
 				<canAutoBurn>true</canAutoBurn>
@@ -2161,9 +2154,6 @@
 			</li>
 		</comps>
 		<designationCategory>Power</designationCategory>
-		<building>
-			<soundAmbient>PlasmaTurbine</soundAmbient>
-		</building>
 		<researchPrerequisites>
 			<li>Generators_E1</li>
 		</researchPrerequisites>

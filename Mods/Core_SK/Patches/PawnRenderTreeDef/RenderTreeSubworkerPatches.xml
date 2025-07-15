@@ -20,7 +20,7 @@
 	</Operation> -->
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/PawnRenderTreeDef[defName="Animal"]/root/children/li[nodeClass="PawnRenderNode_AnimalPart"]/nodeClass</xpath>
+		<xpath>Defs/PawnRenderTreeDef[defName="Animal"]/root/children/li[nodeClass="PawnRenderNode_AnimalPart_Body"]/nodeClass</xpath>
 		<value>
 			<nodeClass>SK.PawnRenderNode_AnimalPartDynamic</nodeClass>
 		</value>
