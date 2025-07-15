@@ -7,6 +7,124 @@
 		<value>SK.SK_MechanoidThingBaseDummy</value>
 	</Operation>
 -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BogHound"]/race</xpath>
+		<value>
+			<useMeatFrom>Elephant</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MonitorLizard"]/race</xpath>
+		<value>
+			<useMeatFrom>Muffalo</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="PrairieDog"]/race</xpath>
+		<value>
+			<useMeatFrom>Elephant</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Porcupine"]/race</xpath>
+		<value>
+			<useMeatFrom>Elephant</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Mastodon"]/race</xpath>
+		<value>
+			<useMeatFrom>Muffalo</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Cat_Scimitar"]/race</xpath>
+		<value>
+			<useMeatFrom>Muffalo</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Wolverine"]/race</xpath>
+		<value>
+			<useMeatFrom>Elephant</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Moose"]/race</xpath>
+		<value>
+			<useMeatFrom>Muffalo</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AlphaThrumbo"]/race</xpath>
+		<value>
+			<useMeatFrom>Muffalo</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Muskox"]/race</xpath>
+		<value>
+			<useMeatFrom>Elephant</useMeatFrom>
+		</value>
+	</Operation>
+<!--
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="Tiger"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK_BigCatThingBase</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Tiger"]/race</xpath>
+		<value>
+			<useMeatFrom>Muffalo</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/PawnKindDef[defName="Tiger"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK_BigCatKindBase</value>
+	</Operation>
+-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Mink"]/race</xpath>
+		<value>
+			<useMeatFrom>Elephant</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gorilla"]/race</xpath>
+		<value>
+			<useMeatFrom>Elephant</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Badger"]/race</xpath>
+		<value>
+			<useMeatFrom>Elephant</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Panda"]/race</xpath>
+		<value>
+			<useMeatFrom>Muffalo</useMeatFrom>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Panda"]/race/leatherDef</xpath>
 		<value>
@@ -14,5 +132,53 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Hippo"]/race</xpath>
+		<value>
+			<useMeatFrom>Elephant</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Megavole"]/race</xpath>
+		<value>
+			<useMeatFrom>Elephant</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Armadillo"]/race</xpath>
+		<value>
+			<useMeatFrom>Elephant</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Alligator"]/race</xpath>
+		<value>
+			<useMeatFrom>Muffalo</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Bullfrog"]/race</xpath>
+		<value>
+			<useMeatFrom>Megaspider</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ColossusToad"]/race</xpath>
+		<value>
+			<useMeatFrom>Megaspider</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LavaSnail"]/race</xpath>
+		<value>
+			<useMeatFrom>Megaspider</useMeatFrom>
+		</value>
+	</Operation>
 
 </Patch>

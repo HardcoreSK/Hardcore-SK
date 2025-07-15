@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<!--
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="Tiger"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK_AnimalKindBase</value>
+	</Operation>
+-->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Walrus"]/race</xpath>
+		<value>
+			<useMeatFrom>Elephant</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="SeaLion"]/race</xpath>
+		<value>
+			<useMeatFrom>Elephant</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Seal"]/race</xpath>
+		<value>
+			<useMeatFrom>Elephant</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="HermitCrab"]/race</xpath>
+		<value>
+			<useMeatFrom>ThingDefFishSduiggles</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="StoneCrab"]/race</xpath>
+		<value>
+			<useMeatFrom>ThingDefFishSduiggles</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="SeaTurtle"]/race</xpath>
+		<value>
+			<useMeatFrom>ThingDefFishSduiggles</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Otter"]/race</xpath>
+		<value>
+			<useMeatFrom>Elephant</useMeatFrom>
+		</value>
+	</Operation>
+
+</Patch>

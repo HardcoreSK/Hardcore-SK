@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<!--
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[@Name="HeavyMechanoid"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_MechanoidThingBaseDummy</value>
+	</Operation>
+-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_ChargeLance_Unique"]/tradeability</xpath>
+		<value>
+			<tradeability>None</tradeability>
+		</value>
+	</Operation>
+
+</Patch>
