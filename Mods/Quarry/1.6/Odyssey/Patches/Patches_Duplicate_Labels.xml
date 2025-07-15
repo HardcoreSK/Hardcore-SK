@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- To avoid duplicate labels with "Obsidian" -->
+<!-- Doesnt work currently, needs investigating what Quarry means
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MineableObsidian"]/label</xpath>
+		<value>
+			<label>Hewn Obsidian</label>
+		</value>
+	</Operation>
+	-->
+</Patch>

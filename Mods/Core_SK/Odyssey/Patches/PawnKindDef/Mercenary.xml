@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Mercenary_Sniper" or defName="Mercenary_Sniper_Acidifier"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>750~940</weaponMoney>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Scavenger"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>
+				<min>750</min>
+				<max>900</max>
+			</weaponMoney>
+		</value>
+	</Operation>
+
+</Patch>

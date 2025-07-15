@@ -21,4 +21,18 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="MiscBirdBase"]/race/useMeatFrom</xpath>
+		<value>
+			<useMeatFrom>Elephant</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Penguin"]/race/useMeatFrom</xpath>
+		<value>
+			<useMeatFrom>Elephant</useMeatFrom>
+		</value>
+	</Operation>
+
 </Patch>
