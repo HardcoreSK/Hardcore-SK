@@ -34,7 +34,7 @@
     </randomColorsTwo>
     <uiIconPath>Things/Mineral/QuartzCrystal/QuartzCrystalA</uiIconPath>
     <fillPercent>0.2</fillPercent>
-    <hideAtSnowDepth>2</hideAtSnowDepth>
+    <hideAtSnowOrSandDepth>2</hideAtSnowOrSandDepth>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>2</spawnRadius>
@@ -561,7 +561,7 @@
     </graphicData>
     <uiIconPath>Things/Mineral/SaltCrystal/SaltCrystalA</uiIconPath>
     <fillPercent>0.01</fillPercent>
-    <hideAtSnowDepth>0.4</hideAtSnowDepth>
+    <hideAtSnowOrSandDepth>0.4</hideAtSnowOrSandDepth>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>1</spawnRadius>

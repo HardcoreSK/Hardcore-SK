@@ -21,7 +21,7 @@
     <blockLight>true</blockLight>
     <blockWind>true</blockWind>
     <mineable>true</mineable>
-    <hideAtSnowDepth>2</hideAtSnowDepth>
+    <hideAtSnowOrSandDepth>2</hideAtSnowOrSandDepth>
     <statBases>
       <Flammability>0</Flammability>
     </statBases>
@@ -238,7 +238,7 @@
 
   <ThingDef Name="SmallRockBase" ParentName="PassableRockBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
     <fillPercent>0.2</fillPercent>
-    <hideAtSnowDepth>1.1</hideAtSnowDepth>
+    <hideAtSnowOrSandDepth>1.1</hideAtSnowOrSandDepth>
     <blockWind>false</blockWind>
     <pathCost>20</pathCost>
     <!-- If smaller than 1, it looks smaller in water -->
@@ -256,7 +256,7 @@
   
   <ThingDef Name="BoulderRockBase" ParentName="PassableRockBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
     <fillPercent>0.6</fillPercent>
-    <hideAtSnowDepth>2</hideAtSnowDepth>
+    <hideAtSnowOrSandDepth>2</hideAtSnowOrSandDepth>
     <passability>PassThroughOnly</passability>
     <blockWind>true</blockWind>
     <pathCost>100</pathCost>
