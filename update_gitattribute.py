@@ -8,7 +8,9 @@ so they won't be included in the exported zip file (or when using download zip).
 from dataclasses import dataclass, field
 import os
 import xml.etree.ElementTree as ET
+import re
 
+cur_version: str = '1.5'
 
 @dataclass
 class Mod:
@@ -71,15 +73,21 @@ def output(enabled: list[str], mod_dict: dict[str, Mod]) -> None:
     with open(".gitattributes", "w", encoding='utf-8') as f:
         for k, v in mod_dict.items():
             #print(f"{k} {v}")
-            if k not in enabled and '1.5' not in v.supported_versions:
-                f.write(f"\"{v.path.removeprefix('./')}\" export-ignore\n")
+            if k not in enabled and cur_version not in v.supported_versions:
+                f.write(f"\"{v.path.removeprefix('./').replace('/','\\')}\" export-ignore\n")
 
 
 def main() -> None:
     enabled = get_modsconfig()
-    print(enabled)
+    #print(enabled)
     output(enabled, build_dict())
 
 
 if __name__ == "__main__":
+    with open('version_hsk.txt', 'r', encoding='utf-8') as f:
+        version = f.readline().strip()
+        match = re.search(r'(\d\.\d)\.', version)
+        if match:
+            cur_version = match.group(1)
+    print(f"Current version: {cur_version}")
     main()
