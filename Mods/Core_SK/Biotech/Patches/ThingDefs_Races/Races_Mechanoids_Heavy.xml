@@ -40,7 +40,7 @@
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[@Name="HeavyMechanoid"]/butcherProducts</xpath>
 		<value>
-			<TitaniumBar>8</TitaniumBar>
+			<Plasteel>8</Plasteel>
 			<DepletedUranium>9</DepletedUranium>
 			<CarbonAlloy>6</CarbonAlloy>
 		</value>
@@ -57,7 +57,7 @@
 				<RegenValue>5</RegenValue>
 				<Repairable>true</Repairable>
 				<RepairIngredients>
-					<TitaniumBar>10</TitaniumBar>
+					<Plasteel>10</Plasteel>
 					<CarbonAlloy>10</CarbonAlloy>
 				</RepairIngredients>
 				<RepairTime>300</RepairTime>

@@ -176,7 +176,7 @@
 		<tickerType>Normal</tickerType>
 		<canOverlapZones>true</canOverlapZones>
 		<killedLeavings>
-			<Plasteel>50</Plasteel>
+			<Steel>50</Steel>
 			<Uranium>50</Uranium>
 			<Wire>40</Wire>
 			<ElectronicComponents>5</ElectronicComponents>
@@ -229,7 +229,7 @@
 		</statBases>
 		<comps Inherit="False"/>
 		<killedLeavings Inherit="False">
-			<Plasteel>7</Plasteel>
+			<Steel>7</Steel>
 			<Wire>18</Wire>
 			<ElectronicComponents>3</ElectronicComponents>
 			<Mechanism>2</Mechanism>
@@ -237,8 +237,8 @@
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</killedLeavings>
 		<costList>
-			<Steel>40</Steel>
-			<Plasteel>70</Plasteel>
+			<Iron>40</Iron>
+			<Steel>70</Steel>
 			<ComponentIndustrial>10</ComponentIndustrial>
 		</costList>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
@@ -294,7 +294,7 @@
 		<size>(2,2)</size>
 		<rotatable>false</rotatable>
 		<costList>
-			<Plasteel>20</Plasteel>
+			<Steel>20</Steel>
 			<Wire>12</Wire>
 			<ElectronicComponents>3</ElectronicComponents>
 			<ComponentSpacer>2</ComponentSpacer>
@@ -336,7 +336,7 @@
 		<rotatable>false</rotatable>
 		<size>(4,2)</size>
 		<costList>
-			<Plasteel>200</Plasteel>
+			<Steel>200</Steel>
 			<Wire>55</Wire>
 			<ElectronicComponents>8</ElectronicComponents>
 			<ComponentIndustrial>20</ComponentIndustrial>
@@ -361,7 +361,7 @@
 		<rotatable>false</rotatable>
 		<size>(4,2)</size>
 		<costList>
-			<Plasteel>200</Plasteel>
+			<Steel>200</Steel>
 			<Wire>55</Wire>
 			<ElectronicComponents>8</ElectronicComponents>
 			<ComponentIndustrial>20</ComponentIndustrial>
@@ -393,7 +393,7 @@
 			<ChunkSlagSteel>3</ChunkSlagSteel>
 		</killedLeavings>
 		<costList>
-			<Plasteel>35</Plasteel>
+			<Steel>35</Steel>
 			<Wire>15</Wire>
 			<ComponentIndustrial>15</ComponentIndustrial>
 			<ComponentSpacer>3</ComponentSpacer>
@@ -633,7 +633,7 @@
 		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
 		<rotatable>false</rotatable>
 		<costList>
-			<Plasteel>12</Plasteel>
+			<Steel>12</Steel>
 		</costList>
 		<building>
 			<isInert>true</isInert>
@@ -665,7 +665,7 @@
 		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
 		<rotatable>false</rotatable>
 		<costList>
-			<Plasteel>20</Plasteel>
+			<Steel>20</Steel>
 			<Uranium>5</Uranium>
 		</costList>
 		<building>
@@ -717,7 +717,7 @@
 		</killedLeavings>
 		<costList>
 			<ComponentIndustrial>10</ComponentIndustrial>
-			<Plasteel>140</Plasteel>
+			<Steel>140</Steel>
 			<Wire>65</Wire>
 			<ElectronicComponents>12</ElectronicComponents>
 			<Mechanism>15</Mechanism>

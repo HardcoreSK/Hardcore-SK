@@ -24,7 +24,7 @@
 				<mechWeightClass>UltraHeavy</mechWeightClass>
 			</race>
 			<butcherProducts Inherit="False">
-				<TitaniumBar>25</TitaniumBar>
+				<Plasteel>25</Plasteel>
 				<DepletedUranium>18</DepletedUranium>
 				<CarbonAlloy>12</CarbonAlloy>
 			</butcherProducts>
@@ -34,7 +34,7 @@
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Mech_Warqueen"]/comps/li[@Class="CompProperties_MechCarrier"]</xpath>
 		<value>
-			<fixedIngredient>TitaniumBar</fixedIngredient>
+			<fixedIngredient>Plasteel</fixedIngredient>
 			<!-- <startingIngredientCount>0</startingIngredientCount> --> <!-- Cannot set it to 0, otherwise enemy warqueens also won't carry any ingredient -->
 			<costPerPawn>15</costPerPawn>
 		</value>

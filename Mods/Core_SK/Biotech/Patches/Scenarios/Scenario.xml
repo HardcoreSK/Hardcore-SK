@@ -18,7 +18,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ScenarioDef[defName="Mechanitor"]/scenario/parts/li[thingDef = "SubcoreBasic"]</xpath>
 		<value>
-			<stuff>Plasteel</stuff>
+			<stuff>Steel</stuff>
 		</value>
 	</Operation>
 
@@ -100,7 +100,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ScenarioDef[defName="Sanguophage"]/scenario/parts/li/stuff[text() = "Steel"]</xpath>
 		<value>
-			<stuff>Plasteel</stuff>
+			<stuff>Steel</stuff>
 		</value>
 	</Operation>
 
