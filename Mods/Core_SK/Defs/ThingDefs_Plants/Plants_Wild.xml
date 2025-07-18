@@ -26,10 +26,7 @@
 			<pollutedGraphicPath>Things/Plant/Moss_Polluted</pollutedGraphicPath>
 			<harvestWork>60</harvestWork>
 			<maxMeshCount>9</maxMeshCount>
-			<visualSizeRange>
-				<min>0.4</min>
-				<max>0.6</max>
-			</visualSizeRange>
+			<visualSizeRange>0.4~0.6</visualSizeRange>
 			<topWindExposure>0.0</topWindExposure>
 			<wildOrder>1</wildOrder>
 			<pollution>Any</pollution>
@@ -54,10 +51,7 @@
 		<pathCost>20</pathCost>
 		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<plant>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>0.9</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~0.9</visualSizeRange>
 			<fertilityMin>0.4</fertilityMin>
 			<fertilitySensitivity>0.7</fertilitySensitivity>
 			<growDays>3.1</growDays>
@@ -95,10 +89,7 @@
 			<maxMeshCount>9</maxMeshCount>
 			<leaflessGraphicPath>Things/Plant/PlantChokevine_Leafless</leaflessGraphicPath>
 			<pollutedGraphicPath>Things/Plant/Chokevine_Polluted</pollutedGraphicPath>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>0.8</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~0.8</visualSizeRange>
 			<topWindExposure>0.15</topWindExposure>
 			<wildClusterRadius>6</wildClusterRadius>
 			<wildClusterWeight>100</wildClusterWeight>
@@ -132,10 +123,7 @@
 			<maxMeshCount>9</maxMeshCount>
 			<leaflessGraphicPath>Things/Plant/PlantBrambles_Leafless</leaflessGraphicPath>
 			<pollutedGraphicPath>Things/Plant/Brambles_Polluted</pollutedGraphicPath>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>0.7</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~0.7</visualSizeRange>
 			<topWindExposure>0.15</topWindExposure>
 			<wildClusterWeight>35</wildClusterWeight>
 			<wildClusterRadius>4</wildClusterRadius>
@@ -168,10 +156,7 @@
 			<growDays>3</growDays>
 			<harvestWork>60</harvestWork>
 			<maxMeshCount>9</maxMeshCount>
-			<visualSizeRange>
-				<min>0.7</min>
-				<max>1.2</max>
-			</visualSizeRange>
+			<visualSizeRange>0.7~1.2</visualSizeRange>
 			<topWindExposure>0.25</topWindExposure>
 			<wildClusterWeight>34</wildClusterWeight>
 			<wildClusterRadius>3</wildClusterRadius>
@@ -202,10 +187,7 @@
 		</graphicData>
 		<plant>
 			<maxMeshCount>4</maxMeshCount>
-			<visualSizeRange>
-				<min>0.1</min>
-				<max>0.6</max>
-			</visualSizeRange>
+			<visualSizeRange>0.1~0.6</visualSizeRange>
 			<fertilityMin>0.1</fertilityMin>
 			<wildClusterWeight>5</wildClusterWeight>
 			<wildClusterRadius>7</wildClusterRadius>
@@ -238,10 +220,7 @@
 		</graphicData>
 		<plant>
 			<maxMeshCount>16</maxMeshCount>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>0.6</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~0.6</visualSizeRange>
 			<wildClusterWeight>7</wildClusterWeight>
 			<wildClusterRadius>3</wildClusterRadius>
 			<fertilityMin>0.48</fertilityMin>
@@ -277,10 +256,7 @@
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>Hay</harvestedThingDef>
 			<harvestYield>3</harvestYield>
-			<visualSizeRange>
-				<min>0.15</min>
-				<max>0.5</max>
-			</visualSizeRange>
+			<visualSizeRange>0.15~0.5</visualSizeRange>
 			<growDays>2.3</growDays>
 			<topWindExposure>0.4</topWindExposure>
 			<fertilitySensitivity>0.30</fertilitySensitivity>
@@ -313,10 +289,7 @@
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>Hay</harvestedThingDef>
 			<harvestYield>6</harvestYield>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>0.8</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~0.8</visualSizeRange>
 			<growDays>2.8</growDays>
 			<topWindExposure>0.4</topWindExposure>
 			<fertilitySensitivity>0.7</fertilitySensitivity>
@@ -364,10 +337,7 @@
 			<growDays>2.5</growDays>
 			<fertilityMin>0.08</fertilityMin>
 			<fertilitySensitivity>0.7</fertilitySensitivity>
-			<visualSizeRange>
-				<min>0.25</min>
-				<max>0.8</max>
-			</visualSizeRange>
+			<visualSizeRange>0.25~0.8</visualSizeRange>
 			<wildOrder>1</wildOrder>
 			<purpose>Food</purpose>
 		</plant>
@@ -404,10 +374,7 @@
 			<growDays>8</growDays>
 			<fertilityMin>1.2</fertilityMin>
 			<fertilitySensitivity>1.3</fertilitySensitivity>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>1.05</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~1.05</visualSizeRange>
 			<wildOrder>1</wildOrder>
 		</plant>
 	</ThingDef>
@@ -443,10 +410,7 @@
 			<growDays>6</growDays>
 			<fertilityMin>1.3</fertilityMin>
 			<fertilitySensitivity>1.25</fertilitySensitivity>
-			<visualSizeRange>
-				<min>0.2</min>
-				<max>0.8</max>
-			</visualSizeRange>
+			<visualSizeRange>0.2~0.8</visualSizeRange>
 			<wildClusterWeight>7</wildClusterWeight>
 			<wildClusterRadius>3</wildClusterRadius>
 			<wildOrder>1</wildOrder>
@@ -485,10 +449,7 @@
 			<growDays>6.5</growDays>
 			<fertilityMin>1.35</fertilityMin>
 			<fertilitySensitivity>1.3</fertilitySensitivity>
-			<visualSizeRange>
-				<min>0.15</min>
-				<max>0.8</max>
-			</visualSizeRange>
+			<visualSizeRange>0.15~0.8</visualSizeRange>
 			<wildOrder>1</wildOrder>
 		</plant>
 	</ThingDef>
@@ -524,10 +485,7 @@
 			<growDays>4.5</growDays>
 			<fertilityMin>1.2</fertilityMin>
 			<fertilitySensitivity>1.35</fertilitySensitivity>
-			<visualSizeRange>
-				<min>0.1</min>
-				<max>0.70</max>
-			</visualSizeRange>
+			<visualSizeRange>0.1~0.70</visualSizeRange>
 			<wildOrder>1</wildOrder>
 		</plant>
 	</ThingDef>

@@ -30,10 +30,7 @@
 			<growDays>5.6</growDays>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.5</fertilityMin>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>1.05</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~1.05</visualSizeRange>
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
@@ -106,10 +103,7 @@
 			<fertilitySensitivity>0.4</fertilitySensitivity>
 			<pollution>Any</pollution>
 			<fertilityMin>1.1</fertilityMin>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>1.0</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~1.0</visualSizeRange>
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
@@ -140,10 +134,7 @@
 			<growDays>5.4</growDays>
 			<fertilitySensitivity>0.6</fertilitySensitivity>
 			<fertilityMin>0.3</fertilityMin>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>1.05</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~1.05</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<sowResearchPrerequisites>
 				<li>Food_Plants_A2</li>
@@ -180,10 +171,7 @@
 			<growDays>5</growDays>
 			<fertilitySensitivity>1.1</fertilitySensitivity>
 			<fertilityMin>0.1</fertilityMin>
-			<visualSizeRange>
-				<min>0.25</min>
-				<max>1.00</max>
-			</visualSizeRange>
+			<visualSizeRange>0.25~1.00</visualSizeRange>
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
@@ -217,10 +205,7 @@
 			<topWindExposure>0.1</topWindExposure>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.15</fertilityMin>
-			<visualSizeRange>
-				<min>0.2</min>
-				<max>0.8</max>
-			</visualSizeRange>
+			<visualSizeRange>0.2~0.8</visualSizeRange>
 			<wildClusterRadius>5</wildClusterRadius>
 			<wildClusterWeight>22</wildClusterWeight>
 			<wildOrder>2</wildOrder>
@@ -259,10 +244,7 @@
 			<growDays>5.2</growDays>
 			<fertilitySensitivity>1.4</fertilitySensitivity>
 			<fertilityMin>0.6</fertilityMin>
-			<visualSizeRange>
-				<min>0.25</min>
-				<max>1.10</max>
-			</visualSizeRange>
+			<visualSizeRange>0.25~1.10</visualSizeRange>
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
@@ -302,10 +284,7 @@
 			<harvestYield>4</harvestYield>
 			<drugForHarvestPurposes>True</drugForHarvestPurposes>
 			<growDays>10.8</growDays>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>1</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~1</visualSizeRange>
 			<topWindExposure>0.3</topWindExposure>
 			<fertilityMin>0.2</fertilityMin>
 			<fertilitySensitivity>1.5</fertilitySensitivity>
@@ -346,10 +325,7 @@
 			<immatureGraphicPath>Things/Plant/PlantPsychoid</immatureGraphicPath>
 			<topWindExposure>0.1</topWindExposure>
 			<maxMeshCount>4</maxMeshCount>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>1.0</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~1.0</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<pollution>Any</pollution>
 			<fertilityMin>0.50</fertilityMin>
@@ -391,10 +367,7 @@
 			<drugForHarvestPurposes>True</drugForHarvestPurposes>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
-			<visualSizeRange>
-				<min>0.2</min>
-				<max>0.9</max>
-			</visualSizeRange>
+			<visualSizeRange>0.2~0.9</visualSizeRange>
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
@@ -434,10 +407,7 @@
 			<growDays>8</growDays>
 			<fertilitySensitivity>1.3</fertilitySensitivity>
 			<fertilityMin>1.25</fertilityMin>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>1.35</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~1.35</visualSizeRange>
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
@@ -471,10 +441,7 @@
 			<growDays>7</growDays>
 			<fertilitySensitivity>1.2</fertilitySensitivity>
 			<fertilityMin>1.1</fertilityMin>
-			<visualSizeRange>
-				<min>0.25</min>
-				<max>0.9</max>
-			</visualSizeRange>
+			<visualSizeRange>0.25~0.9</visualSizeRange>
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
@@ -519,10 +486,7 @@
 			<harvestYield>20</harvestYield>
 			<harvestMinGrowth>0.40</harvestMinGrowth>
 			<blockAdjacentSow>true</blockAdjacentSow>
-			<visualSizeRange>
-				<min>1.5</min>
-				<max>3.0</max>
-			</visualSizeRange>
+			<visualSizeRange>1.5~3.0</visualSizeRange>
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
