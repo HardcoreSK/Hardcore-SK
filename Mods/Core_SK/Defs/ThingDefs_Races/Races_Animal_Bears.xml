@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 	<ThingDef Abstract="True" ParentName="SK_AnimalThingBase" Name="SK_BearThingBase">
 		<devNote>warg-1</devNote>
@@ -14,6 +14,7 @@
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 			<ArmorRating_Blunt>2</ArmorRating_Blunt>
 			<FilthRate>5</FilthRate>
+			<Wildness>0.80</Wildness>
 		</statBases>
 		<uiIconScale>1.15</uiIconScale>
 		<tools>
@@ -99,7 +100,6 @@
 			<leatherDef>Leather_Heavy</leatherDef>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<gestationPeriodDays>10</gestationPeriodDays>
-			<petness>0.2</petness>
 			<lifeExpectancy>22</lifeExpectancy>
 			<trainability>Advanced</trainability>
 			<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
@@ -152,8 +152,10 @@
 		<description>Huge omnivorous mammals adapted for cold climates. Their thick blubber and fur keep them warm in winter.\n\nWhile their usual diet consists of fish, berries, honey, and scavenged meat, the grizzly is capable of using its massive strength and deadly claws to kill live prey. They are startlingly quick for such lumbering creatures.</description>
 		<race>
 			<packAnimal>true</packAnimal>
-			<petness>0.2</petness>
 		</race>
+		<statBases>
+			<Wildness>0.80</Wildness>
+		</statBases>
 	</ThingDef>
 
 	<PawnKindDef ParentName="SK_BearKindBase">
@@ -225,7 +227,7 @@
 					<!-- Near Black -->
 				</colors>
 				<shaderType>Cutout</shaderType>
-			</li>			
+			</li>
 		</modExtensions>
 	</PawnKindDef>
 
@@ -239,10 +241,10 @@
 			<MeleeDodgeChance>0.09</MeleeDodgeChance>
 			<MeleeCritChance>0.18</MeleeCritChance>
 			<MoveSpeed>5.2</MoveSpeed>
+			<Wildness>0.85</Wildness>
 		</statBases>
 		<race>
 			<packAnimal>true</packAnimal>
-			<petness>0.15</petness>
 		</race>
 	</ThingDef>
 
@@ -309,6 +311,7 @@
 			<MarketValue>500</MarketValue>
 			<MeleeDodgeChance>0.2</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
+			<Wildness>0.30</Wildness>
 		</statBases>
 		<race>
 			<predator>false</predator>
@@ -316,7 +319,6 @@
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<foodType>VegetarianRoughAnimal, OmnivoreAnimal, OvivoreAnimal</foodType>
-			<petness>0.7</petness>
 		</race>
 		<modExtensions>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">

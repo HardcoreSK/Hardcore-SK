@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 	<ThingDef ParentName="SK_AnimalThingBase" Name="AnimalDogBase" Abstract="True">
 		<devNote>cat-1</devNote>
@@ -12,6 +12,7 @@
 			<GermResistance>0.18</GermResistance>
 			<GermContainment>0.06</GermContainment>
 			<FilthRate>1</FilthRate>
+			<Wildness>0.2</Wildness>
 		</statBases>
 		<race>
 			<animalType>Canine</animalType>
@@ -30,7 +31,6 @@
 			<nameOnTameChance>1</nameOnTameChance>
 			<manhunterOnDamageChance>0.5</manhunterOnDamageChance>
 			<trainability>Advanced</trainability>
-			<petness>0.8</petness>
 			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<litterSizeCurve>
 				<points>
@@ -85,6 +85,7 @@
 			<MeleeDodgeChance>0.1</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>0</FilthRate>
+			<Wildness>0</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -120,7 +121,6 @@
 			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
-			<petness>1.0</petness>
 			<lifeExpectancy>15</lifeExpectancy>
 			<soundEating>PredatorSmall_Eat</soundEating>
 		</race>

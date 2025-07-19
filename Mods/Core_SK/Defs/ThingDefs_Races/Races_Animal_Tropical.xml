@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 	<!-- ========================== Tropical ============================ -->
 	<ThingDef ParentName="SK_AnimalThingBase">
@@ -18,6 +18,7 @@
 			<GermResistance>0.27</GermResistance>
 			<GermContainment>0.09</GermContainment>
 			<FilthRate>1</FilthRate>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -76,7 +77,6 @@
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Lizard</leatherDef>
-			<petness>0.25</petness>
 			<trainability>Intermediate</trainability>
 			<petness>0.05</petness>
 			<manhunterOnTameFailChance>0.33</manhunterOnTameFailChance>
@@ -188,6 +188,7 @@
 			<ImmunityGainSpeed>1.1</ImmunityGainSpeed>
 			<MeleeDodgeChance>0.23</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
+			<Wildness>0.50</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -218,7 +219,7 @@
 				<cooldownTime>1.45</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.5</chanceFactor>
-				<armorPenetrationSharp>1.1</armorPenetrationSharp>					
+				<armorPenetrationSharp>1.1</armorPenetrationSharp>
 				<armorPenetrationBlunt>0.7</armorPenetrationBlunt>
 			</li>
 			<li Class="CombatExtended.ToolCE">
@@ -245,7 +246,6 @@
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Light</leatherDef>
 			<trainability>Advanced</trainability>
-			<petness>0.5</petness>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<nuzzleMtbHours>42</nuzzleMtbHours>
 			<gestationPeriodDays>6.66</gestationPeriodDays>
@@ -348,6 +348,7 @@
 			<MeleeParryChance>0.12</MeleeParryChance>
 			<FilthRate>16</FilthRate>
 			<ToxicResistance>0.9</ToxicResistance>
+			<Wildness>0.6</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -420,7 +421,6 @@
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Boomanimal</leatherDef>
 			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
-			<petness>0.4</petness>
 			<trainability>Intermediate</trainability>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<roamMtbDays>5</roamMtbDays>
@@ -546,6 +546,7 @@
 			<GermResistance>0.33</GermResistance>
 			<GermContainment>0.17</GermContainment>
 			<ToxicResistance>0.95</ToxicResistance>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -623,7 +624,6 @@
 			<foodType>CarnivoreAnimal, Corpse, AnimalProduct, OvivoreAnimal</foodType>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<leatherDef>Leather_Lizard</leatherDef>
-			<petness>0.25</petness>
 			<trainability>Intermediate</trainability>
 			<manhunterOnDamageChance>0.3</manhunterOnDamageChance>
 			<gestationPeriodDays>15</gestationPeriodDays>
@@ -734,6 +734,7 @@
 			<MarketValue>480</MarketValue>
 			<MeleeDodgeChance>0.12</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
+			<Wildness>0.72</Wildness>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Milkable">
@@ -795,7 +796,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Plain</leatherDef>
-			<petness>0.28</petness>
 			<nuzzleMtbHours>60</nuzzleMtbHours>
 			<gestationPeriodDays>6.66</gestationPeriodDays>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>

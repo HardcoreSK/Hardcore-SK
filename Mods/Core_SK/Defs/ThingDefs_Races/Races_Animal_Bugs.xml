@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 
 	<ThingDef ParentName="SK_AnimalThingBase">
@@ -20,6 +20,7 @@
 			<GermResistance>0.55</GermResistance>
 			<GermContainment>0.01</GermContainment>
 			<ToxicResistance>0.8</ToxicResistance>
+			<Wildness>0.99</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -57,7 +58,6 @@
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<petness>0</petness>
-			<petness>0.01</petness>
 			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<lifeExpectancy>3</lifeExpectancy>
@@ -88,8 +88,7 @@
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>QuadrupedLow</bodyShape>
 			</li>
-			<li Class="SK.DestroyCorpseExtension">
-			</li>
+			<li Class="SK.DestroyCorpseExtension" />
 			<li Class="SK.AnimalExtension">
 				<hediffDef>Malaria</hediffDef>
 			</li>
@@ -159,6 +158,7 @@
 			<GermContainment>0.02</GermContainment>
 			<FilthRate>3</FilthRate>
 			<ToxicResistance>0.9</ToxicResistance>
+			<Wildness>0.85</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -209,7 +209,6 @@
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<petness>0</petness>
-			<petness>0.15</petness>
 			<manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<lifeExpectancy>6</lifeExpectancy>
@@ -240,7 +239,7 @@
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>QuadrupedLow</bodyShape>
 			</li>
-			<li Class="SK.DestroyCorpseExtension"/>
+			<li Class="SK.DestroyCorpseExtension" />
 			<li Class="SK.DevourerAnimalExtension">
 				<things>
 					<li>weapon</li>
@@ -312,6 +311,7 @@
 			<GermResistance>0.55</GermResistance>
 			<GermContainment>0.01</GermContainment>
 			<ToxicResistance>0.8</ToxicResistance>
+			<Wildness>0.99</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -349,7 +349,6 @@
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<petness>0.01</petness>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>1.00</manhunterOnTameFailChance>
 			<lifeExpectancy>3</lifeExpectancy>
@@ -380,8 +379,7 @@
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>QuadrupedLow</bodyShape>
 			</li>
-			<li Class="SK.DestroyCorpseExtension">
-			</li>
+			<li Class="SK.DestroyCorpseExtension" />
 			<li Class="SK.AnimalExtension">
 				<hediffDef>Malaria</hediffDef>
 			</li>
@@ -449,6 +447,7 @@
 			<GermResistance>0.45</GermResistance>
 			<GermContainment>0.01</GermContainment>
 			<ToxicResistance>0.95</ToxicResistance>
+			<Wildness>0.99</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -487,7 +486,6 @@
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<petness>0.01</petness>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<lifeExpectancy>3</lifeExpectancy>
 			<lifeStageAges>
@@ -517,8 +515,7 @@
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>QuadrupedLow</bodyShape>
 			</li>
-			<li Class="SK.DestroyCorpseExtension">
-			</li>
+			<li Class="SK.DestroyCorpseExtension" />
 			<li Class="SK.AnimalExtension">
 				<hediffDef>Plague</hediffDef>
 			</li>
@@ -586,6 +583,7 @@
 			<GermContainment>0.01</GermContainment>
 			<FilthRate>4</FilthRate>
 			<ToxicResistance>0.95</ToxicResistance>
+			<Wildness>0.85</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -625,7 +623,6 @@
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<petness>0</petness>
-			<petness>0.15</petness>
 			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<lifeExpectancy>3</lifeExpectancy>
@@ -656,7 +653,7 @@
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>QuadrupedLow</bodyShape>
 			</li>
-			<li Class="SK.DestroyCorpseExtension"/>
+			<li Class="SK.DestroyCorpseExtension" />
 			<li Class="SK.DevourerAnimalExtension">
 				<things>
 					<li>food</li>
@@ -706,7 +703,7 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-	
+
 
 	<ThingDef ParentName="SK_AnimalThingBase">
 		<defName>CropEaterInsect</defName>
@@ -731,6 +728,7 @@
 			<GermContainment>0.02</GermContainment>
 			<FilthRate>4</FilthRate>
 			<ToxicResistance>0.95</ToxicResistance>
+			<Wildness>0.99</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -762,7 +760,6 @@
 			<baseHungerRate>2.5</baseHungerRate>
 			<baseHealthScale>0.2</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<petness>0.01</petness>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
@@ -802,7 +799,7 @@
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>Serpentine</bodyShape>
 			</li>
-			<li Class="SK.DestroyCorpseExtension"/>
+			<li Class="SK.DestroyCorpseExtension" />
 			<li Class="SK.DevourerAnimalExtension">
 				<things>
 					<li>plant</li>

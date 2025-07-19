@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 	<!-- ====================================================== -->
 	<ThingDef ParentName="SK_AnimalThingBase" Name="InstectoidBase" Abstract="True">
@@ -53,6 +53,7 @@
 			<MeleeDodgeChance>0.13</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<MeleeParryChance>0.11</MeleeParryChance>
+			<Wildness>0.9</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -150,7 +151,6 @@
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
-			<petness>0.1</petness>
 			<manhunterOnTameFailChance>0.4</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.3</manhunterOnDamageChance>
 			<lifeExpectancy>12</lifeExpectancy>
@@ -180,7 +180,7 @@
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>Quadruped</bodyShape>
 			</li>
-			<li Class="SK.InsectoidExtension"/>
+			<li Class="SK.InsectoidExtension" />
 		</modExtensions>
 	</ThingDef>
 
@@ -256,6 +256,7 @@
 			<MeleeDodgeChance>0.1</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<MeleeParryChance>0.08</MeleeParryChance>
+			<Wildness>0.9</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -337,7 +338,6 @@
 			<gestationPeriodDays>12</gestationPeriodDays>
 			<trainability>Advanced</trainability>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<petness>0.1</petness>
 			<manhunterOnTameFailChance>0.4</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.3</manhunterOnDamageChance>
 			<lifeExpectancy>12</lifeExpectancy>
@@ -367,7 +367,7 @@
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>Quadruped</bodyShape>
 			</li>
-			<li Class="SK.InsectoidExtension"/>
+			<li Class="SK.InsectoidExtension" />
 		</modExtensions>
 	</ThingDef>
 

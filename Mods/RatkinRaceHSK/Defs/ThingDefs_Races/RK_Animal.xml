@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 
 	<ThingDef ParentName="AnimalThingBase">
@@ -17,6 +17,7 @@
 			<GermResistance>0.15</GermResistance>
 			<GermContainment>0.1</GermContainment>
 			<FilthRate>12</FilthRate>
+			<Wildness>0</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -74,7 +75,6 @@
 			<leatherDef>Leather_Plain</leatherDef>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<gestationPeriodDays>8</gestationPeriodDays>
-			<petness>1.0</petness>
 			<trainability>Intermediate</trainability>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>13</lifeExpectancy>
@@ -104,7 +104,7 @@
 			<li>AnimalRatkin</li>
 		</tradeTags>
 	</ThingDef>
-	
+
 	<PawnKindDef Name="KingHamster" ParentName="AnimalKindBase">
 		<defName>Ratkin_KingHamster</defName>
 		<label>대왕 햄스터</label>

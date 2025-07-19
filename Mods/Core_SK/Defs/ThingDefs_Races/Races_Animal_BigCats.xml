@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 	<!-- ========================== BigCats ============================ -->
 	<ThingDef ParentName="SK_AnimalThingBase" Name="SK_BigCatThingBase" Abstract="True">
@@ -12,6 +12,7 @@
 			<MeleeParryChance>0.06</MeleeParryChance>
 			<MeleeCritChance>0.12</MeleeCritChance>
 			<FilthRate>3</FilthRate>
+			<Wildness>0.80</Wildness>
 		</statBases>
 		<uiIconScale>1.15</uiIconScale>
 		<tools>
@@ -95,7 +96,6 @@
 			<baseHealthScale>1.8</baseHealthScale>
 			<foodType>CarnivoreAnimal,  CarnivoreAnimalStrict, OvivoreAnimal</foodType>
 			<nuzzleMtbHours>36</nuzzleMtbHours>
-			<petness>0.2</petness>
 			<leatherDef>Leather_Panthera</leatherDef>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<trainability>Advanced</trainability>
@@ -285,6 +285,7 @@
 			<MeleeDodgeChance>0.21</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>2</FilthRate>
+			<Wildness>0.80</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -369,7 +370,6 @@
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<leatherDef>Leather_Panthera</leatherDef>
-			<petness>0.2</petness>
 			<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.60</manhunterOnDamageChance>
 			<gestationPeriodDays>10</gestationPeriodDays>
@@ -475,6 +475,7 @@
 			<MeleeDodgeChance>0.15</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>2</FilthRate>
+			<Wildness>0.85</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -558,8 +559,7 @@
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<leatherDef>Leather_Panthera</leatherDef>
-			<gestationPeriodDays>12</gestationPeriodDays>			
-			<petness>0.15</petness>
+			<gestationPeriodDays>12</gestationPeriodDays>
 			<manhunterOnDamageChance>0.8</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
 			<nuzzleMtbHours>24</nuzzleMtbHours>
@@ -670,6 +670,7 @@
 			<MeleeDodgeChance>0.15</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>2</FilthRate>
+			<Wildness>0.85</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -753,8 +754,7 @@
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<leatherDef>Leather_Panthera</leatherDef>
-			<gestationPeriodDays>12</gestationPeriodDays>			
-			<petness>0.15</petness>
+			<gestationPeriodDays>12</gestationPeriodDays>
 			<manhunterOnDamageChance>0.9</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
 			<nuzzleMtbHours>24</nuzzleMtbHours>

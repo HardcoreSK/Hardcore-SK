@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 	<ThingDef ParentName="SK_AnimalThingBase" Name="SK_BigBirdThingBase" Abstract="True">
 		<devNote>chicken-1</devNote>
@@ -10,10 +10,10 @@
 				<li>
 					<def>AnimalBaby</def>
 					<minAge>0</minAge>
-					  <soundWounded>Pawn_Chick_Call</soundWounded>
-					  <soundDeath>Pawn_Chick_Call</soundDeath>
-					  <soundCall>Pawn_Chick_Call</soundCall>
-					  <soundAngry>Pawn_Chick_Call</soundAngry>
+					<soundWounded>Pawn_Chick_Call</soundWounded>
+					<soundDeath>Pawn_Chick_Call</soundDeath>
+					<soundCall>Pawn_Chick_Call</soundCall>
+					<soundAngry>Pawn_Chick_Call</soundAngry>
 				</li>
 				<li>
 					<def>AnimalJuvenile</def>
@@ -58,6 +58,7 @@
 			<MeleeDodgeChance>0.20</MeleeDodgeChance>
 			<MeleeCritChance>0.12</MeleeCritChance>
 			<FilthRate>8</FilthRate>
+			<Wildness>0.9</Wildness>
 		</statBases>
 		<race>
 			<herdAnimal>false</herdAnimal>
@@ -65,9 +66,8 @@
 			<baseHungerRate>0.4</baseHungerRate>
 			<baseHealthScale>1.3</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<petness>0.1</petness>
 			<roamMtbDays>3</roamMtbDays>
-			<lifeExpectancy>45</lifeExpectancy>			
+			<lifeExpectancy>45</lifeExpectancy>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
@@ -202,7 +202,7 @@
 	</PawnKindDef>
 
 	<!--===============================================-->
-	
+
 	<ThingDef ParentName="SK_BigBirdThingBase">
 		<defName>Emu</defName>
 		<label>emu</label>
@@ -216,6 +216,7 @@
 			<MeleeDodgeChance>0.2</MeleeDodgeChance>
 			<MeleeCritChance>0.06</MeleeCritChance>
 			<FilthRate>7</FilthRate>
+			<Wildness>0.90</Wildness>
 		</statBases>
 		<race>
 			<herdAnimal>false</herdAnimal>
@@ -223,7 +224,6 @@
 			<baseHungerRate>0.5</baseHungerRate>
 			<baseHealthScale>1.0</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<petness>0.1</petness>
 			<roamMtbDays>3</roamMtbDays>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<lifeExpectancy>45</lifeExpectancy>
@@ -285,7 +285,7 @@
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
-				<armorPenetrationSharp>1.9</armorPenetrationSharp>					
+				<armorPenetrationSharp>1.9</armorPenetrationSharp>
 				<armorPenetrationBlunt>1.7</armorPenetrationBlunt>
 			</li>
 			<li Class="CombatExtended.ToolCE">
@@ -367,6 +367,7 @@
 			<MeleeDodgeChance>0.22</MeleeDodgeChance>
 			<MeleeCritChance>0.09</MeleeCritChance>
 			<FilthRate>8</FilthRate>
+			<Wildness>0.80</Wildness>
 		</statBases>
 		<race>
 			<herdAnimal>false</herdAnimal>
@@ -374,7 +375,6 @@
 			<baseHungerRate>0.4</baseHungerRate>
 			<baseHealthScale>0.9</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<petness>0.2</petness>
 			<roamMtbDays>3</roamMtbDays>
 			<lifeExpectancy>45</lifeExpectancy>
 			<useMeatFrom>Elephant</useMeatFrom>

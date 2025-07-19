@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 	<!-- ========================== Insects ============================ -->
 	<ThingDef Abstract="True" ParentName="SK_AnimalThingBase" Name="SK_InsectThingBase">
@@ -55,6 +55,7 @@
 			<ImmunityGainSpeed>2.5</ImmunityGainSpeed>
 			<MeleeDodgeChance>0</MeleeDodgeChance>
 			<MeleeCritChance>0.02</MeleeCritChance>
+			<Wildness>0.82</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -98,7 +99,6 @@
 			<baseHungerRate>0.4</baseHungerRate>
 			<baseHealthScale>0.75</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<petness>0.18</petness>
 			<trainability>Intermediate</trainability>
 			<lifeExpectancy>10</lifeExpectancy>
 			<lifeStageAges>
@@ -192,7 +192,7 @@
 		</lifeStages>
 		<modExtensions>
 			<li Class="SK.PawnGraphicExtension">
-				<colors>				
+				<colors>
 					<li>(165,155,140)</li>
 					<!-- light beige -->
 					<li>(70,60,50)</li>
@@ -223,6 +223,7 @@
 			<ArmorRating_Sharp>1.5</ArmorRating_Sharp>
 			<MeleeDodgeChance>0</MeleeDodgeChance>
 			<MeleeCritChance>0.12</MeleeCritChance>
+			<Wildness>0.82</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -267,7 +268,6 @@
 			<baseHealthScale>2.25</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<gestationPeriodDays>12</gestationPeriodDays>
-			<petness>0.18</petness>
 			<trainability>Intermediate</trainability>
 			<lifeExpectancy>6</lifeExpectancy>
 			<lifeStageAges>
@@ -358,7 +358,7 @@
 		</lifeStages>
 		<modExtensions>
 			<li Class="SK.PawnGraphicExtension">
-				<colors>				
+				<colors>
 					<li>(165,155,140)</li>
 					<!-- light beige -->
 					<li>(70,60,50)</li>
@@ -389,6 +389,7 @@
 			<ArmorRating_Sharp>1.8</ArmorRating_Sharp>
 			<MeleeDodgeChance>0</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
+			<Wildness>0.9</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -443,7 +444,6 @@
 			<baseHealthScale>3.4</baseHealthScale>
 			<gestationPeriodDays>7</gestationPeriodDays>
 			<meatLabel>insect meat</meatLabel>
-			<petness>0.1</petness>
 			<lifeExpectancy>6</lifeExpectancy>
 			<trainability>Intermediate</trainability>
 			<lifeStageAges>
@@ -534,7 +534,7 @@
 		</lifeStages>
 		<modExtensions>
 			<li Class="SK.PawnGraphicExtension">
-				<colors>				
+				<colors>
 					<li>(165,155,140)</li>
 					<!-- light beige -->
 					<li>(70,60,50)</li>
@@ -569,6 +569,7 @@
 			<MeatAmount>75</MeatAmount>
 			<MeleeDodgeChance>0</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
+			<Wildness>0.9</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -617,7 +618,6 @@
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<petness>0.1</petness>
 			<trainability>Intermediate</trainability>
 			<gestationPeriodDays>14</gestationPeriodDays>
 			<manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>

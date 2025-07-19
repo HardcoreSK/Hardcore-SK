@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 
 	<!-- Waste rat -->
@@ -18,6 +18,7 @@
 			<MeleeCritChance>0.05</MeleeCritChance>
 			<FilthRate>2</FilthRate>
 			<ToxicResistance>1</ToxicResistance>
+			<Wildness>0.64</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -76,7 +77,6 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Light</leatherDef>
-			<petness>0.36</petness>
 			<trainability>None</trainability>
 			<petness>0.15</petness>
 			<lifeExpectancy>6</lifeExpectancy>
@@ -191,6 +191,7 @@
 			<MeleeDodgeChance>0.05</MeleeDodgeChance>
 			<MeleeCritChance>0.07</MeleeCritChance>
 			<MeleeParryChance>0.16</MeleeParryChance>
+			<Wildness>0.65</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -254,7 +255,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Plain</leatherDef>
-			<petness>0.35</petness>
 			<roamMtbDays>2</roamMtbDays>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<gestationPeriodDays>6.66</gestationPeriodDays>
@@ -289,7 +289,7 @@
 				<li>(0.0, 0, -0.165)</li>
 				<li>(-0.38, 0, 0.01)</li>
 			</headPosPerRotation>
-		</race><!--
+		</race> <!--
 		<comps>
 			<li Class="SK.CompProperties_ShearableRenameable">
 				<growthLabel>Chemical fullness</growthLabel>

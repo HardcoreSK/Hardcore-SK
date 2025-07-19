@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 
-	<Verse.ThingDef Name="BaseVoid" Abstract="True">
+	<ThingDef Name="BaseVoid" Abstract="True">
 		<thingClass>Pawn</thingClass>
 		<category>Pawn</category>
 		<selectable>true</selectable>
@@ -19,10 +19,10 @@
 			</li>
 		</comps>
 		<drawGUIOverlay>true</drawGUIOverlay>
-	</Verse.ThingDef>
+	</ThingDef>
 
 	<!-- ====== Void ===== -->
-	<Verse.ThingDef ParentName="BaseVoid">
+	<ThingDef ParentName="BaseVoid">
 		<thingClass>SK.Events.Pawn_Void</thingClass>
 		<defName>Void</defName>
 		<label>Shadow</label>
@@ -40,6 +40,7 @@
 			<ComfyTemperatureMax>3000</ComfyTemperatureMax>
 			<MeleeDodgeChance>0.8</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
+			<Wildness>0.99</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -69,7 +70,6 @@
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<fleshType>Void</fleshType>
 			<trainability>None</trainability>
-			<petness>0.01</petness>
 			<lifeStageAges>
 				<li>
 					<def>MechanoidFullyFormed</def>
@@ -92,6 +92,6 @@
 				<bodyShape>Humanoid</bodyShape>
 			</li>
 		</modExtensions>
-	</Verse.ThingDef>
+	</ThingDef>
 
 </Defs>

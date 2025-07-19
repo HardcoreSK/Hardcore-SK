@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 	<!-- ========================== Horses ============================ -->
 	<ThingDef Abstract="True" ParentName="SK_AnimalThingBase" Name="BaseHorses">
@@ -13,7 +13,6 @@
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Plain</leatherDef>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<petness>0.7</petness>
 			<roamMtbDays>2</roamMtbDays>
 			<trainability>None</trainability>
 			<manhunterOnDamageChance>0.3</manhunterOnDamageChance>
@@ -104,6 +103,9 @@
 				<bodyShape>Quadruped</bodyShape>
 			</li>
 		</modExtensions>
+		<statBases>
+			<Wildness>0.3</Wildness>
+		</statBases>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHorses">
@@ -123,7 +125,7 @@
 			<FilthRate>16</FilthRate>
 			<CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
 		</statBases>
-		 <uiIconScale>1.1</uiIconScale>
+		<uiIconScale>1.1</uiIconScale>
 		<race>
 			<baseBodySize>1.3</baseBodySize>
 			<baseHungerRate>1</baseHungerRate>

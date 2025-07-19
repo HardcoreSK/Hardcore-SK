@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 	<!-- Feenix -->
 	<ThingDef ParentName="SK_AnimalThingBase">
@@ -24,6 +24,7 @@
 			<FilthRate>26</FilthRate>
 			<NightVisionEfficiency>0.6</NightVisionEfficiency>
 			<ToxicResistance>0.8</ToxicResistance>
+			<Wildness>0.72</Wildness>
 		</statBases>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -147,7 +148,6 @@
 			<leatherDef>Leather_FireDragonskin</leatherDef>
 			<trainability>Advanced</trainability>
 			<gestationPeriodDays>24</gestationPeriodDays>
-			<petness>0.28</petness>
 			<manhunterOnTameFailChance>0.4</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<lifeExpectancy>150</lifeExpectancy>
@@ -178,7 +178,7 @@
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>Quadruped</bodyShape>
 			</li>
-			<li Class="SK.FireAnimalExtension"/>
+			<li Class="SK.FireAnimalExtension" />
 		</modExtensions>
 	</ThingDef>
 
@@ -267,6 +267,7 @@
 			<FilthRate>24</FilthRate>
 			<NightVisionEfficiency>0.5</NightVisionEfficiency>
 			<ToxicResistance>0.8</ToxicResistance>
+			<Wildness>0.7</Wildness>
 		</statBases>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -383,7 +384,6 @@
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<gestationPeriodDays>23</gestationPeriodDays>
 			<trainability>Advanced</trainability>
-			<petness>0.3</petness>
 			<manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<lifeExpectancy>130</lifeExpectancy>
@@ -506,6 +506,7 @@
 			<FilthRate>28</FilthRate>
 			<NightVisionEfficiency>1</NightVisionEfficiency>
 			<ToxicResistance>0.8</ToxicResistance>
+			<Wildness>0.71</Wildness>
 		</statBases>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -611,7 +612,6 @@
 			<leatherDef>Leather_KirinHide</leatherDef>
 			<gestationPeriodDays>22</gestationPeriodDays>
 			<trainability>Advanced</trainability>
-			<petness>0.29</petness>
 			<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.6</manhunterOnDamageChance>
 			<lifeExpectancy>160</lifeExpectancy>
@@ -728,6 +728,7 @@
 			<FilthRate>25</FilthRate>
 			<NightVisionEfficiency>0.6</NightVisionEfficiency>
 			<ToxicResistance>0.8</ToxicResistance>
+			<Wildness>0.85</Wildness>
 		</statBases>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -880,7 +881,6 @@
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<leatherDef>Leather_Thrumbo</leatherDef>
 			<gestationPeriodDays>25</gestationPeriodDays>
-			<petness>0.15</petness>
 			<trainability>Advanced</trainability>
 			<petness>0</petness>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
@@ -930,7 +930,7 @@
 				<IceSheet>0.001</IceSheet>
 				<SeaIce>0.001</SeaIce>
 			</wildBiomes>
-			
+
 		</race>
 		<modExtensions>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
@@ -1013,6 +1013,7 @@
 			<GermContainment>0.2</GermContainment>
 			<FilthRate>18</FilthRate>
 			<ToxicResistance>0.8</ToxicResistance>
+			<Wildness>0.9</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -1146,7 +1147,6 @@
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<leatherDef>Leather_FeatheredRaptorLeather</leatherDef>
 			<gestationPeriodDays>14</gestationPeriodDays>
-			<petness>0.1</petness>
 			<trainability>Advanced</trainability>
 			<petness>0</petness>
 			<manhunterOnDamageChance>0.75</manhunterOnDamageChance>
@@ -1298,6 +1298,7 @@
 			<FilthRate>48</FilthRate>
 			<NightVisionEfficiency>1</NightVisionEfficiency>
 			<ToxicResistance>0.95</ToxicResistance>
+			<Wildness>0.95</Wildness>
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<tools>
@@ -1371,7 +1372,6 @@
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_BarghestFur</leatherDef>
 			<gestationPeriodDays>11</gestationPeriodDays>
-			<petness>0.05</petness>
 			<manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<nuzzleMtbHours>60</nuzzleMtbHours>

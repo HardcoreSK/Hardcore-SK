@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 
 	<!-- ======================= Chicken =============================== -->
@@ -17,6 +17,7 @@
 			<MeleeDodgeChance>0.15</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>2</FilthRate>
+			<Wildness>0</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -71,7 +72,6 @@
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Bird</leatherDef>
 			<trainability>None</trainability>
-			<petness>1.0</petness>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<roamMtbDays>7</roamMtbDays>
@@ -83,7 +83,7 @@
 					<li>(1, 1)</li>
 					<li>(1.01, 0)</li>
 				</points>
-			</litterSizeCurve>			
+			</litterSizeCurve>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBabyTiny</def>
@@ -217,6 +217,7 @@
 			<MeatAmount>160</MeatAmount>
 			<Mass>4.4</Mass>
 			<FilthRate>2.5</FilthRate>
+			<Wildness>0</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -271,7 +272,6 @@
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Bird</leatherDef>
 			<trainability>None</trainability>
-			<petness>1.0</petness>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<roamMtbDays>7</roamMtbDays>
@@ -394,6 +394,7 @@
 			<MeleeDodgeChance>0.2</MeleeDodgeChance>
 			<MeleeCritChance>0.03</MeleeCritChance>
 			<FilthRate>3</FilthRate>
+			<Wildness>0.45</Wildness>
 		</statBases>
 		<race>
 			<herdAnimal>false</herdAnimal>
@@ -401,7 +402,6 @@
 			<baseHungerRate>0.3</baseHungerRate>
 			<baseHealthScale>0.7</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<petness>0.55</petness>
 			<roamMtbDays>7</roamMtbDays>
 			<trainability>None</trainability>
 			<lifeExpectancy>9</lifeExpectancy>
@@ -439,7 +439,7 @@
 				<power>3</power>
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
-				<armorPenetrationSharp>1.5</armorPenetrationSharp>					
+				<armorPenetrationSharp>1.5</armorPenetrationSharp>
 				<armorPenetrationBlunt>1</armorPenetrationBlunt>
 			</li>
 			<li Class="CombatExtended.ToolCE">
@@ -536,6 +536,7 @@
 			<Mass>6.25</Mass>
 			<MeatAmount>120</MeatAmount>
 			<FilthRate>4</FilthRate>
+			<Wildness>0.6</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -590,7 +591,6 @@
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Bird</leatherDef>
 			<trainability>Advanced</trainability>
-			<petness>0.4</petness>
 			<roamMtbDays>7</roamMtbDays>
 			<mateMtbHours>8</mateMtbHours>
 			<lifeExpectancy>8</lifeExpectancy>

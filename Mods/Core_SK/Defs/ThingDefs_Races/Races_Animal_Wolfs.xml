@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 	<!-- ========================== Wolves ================================= -->
 	<ThingDef Name="SK_WolfThingBase" ParentName="SK_AnimalThingBase" Abstract="True">
@@ -14,6 +14,7 @@
 			<GermResistance>0.15</GermResistance>
 			<GermContainment>0.06</GermContainment>
 			<FilthRate>2</FilthRate>
+			<Wildness>0.7</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -86,7 +87,6 @@
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Advanced</trainability>
-			<petness>0.3</petness>
 			<nuzzleMtbHours>36</nuzzleMtbHours>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>

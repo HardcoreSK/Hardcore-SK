@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 	<ThingDef ParentName="SK_AnimalThingBase" Name="MartinThingBase" Abstract="True">
 		<statBases>
@@ -7,6 +7,7 @@
 			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
 			<MarketValue>600</MarketValue>
 			<FilthRate>3</FilthRate>
+			<Wildness>0.80</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -74,7 +75,6 @@
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Light</leatherDef>
-			<petness>0.2</petness>
 			<trainability>Advanced</trainability>
 			<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.3</manhunterOnDamageChance>
@@ -141,9 +141,9 @@
 			<LeatherAmount>15</LeatherAmount>
 			<MeleeDodgeChance>0.25</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
+			<Wildness>0.70</Wildness>
 		</statBases>
 		<race>
-			<petness>0.3</petness>
 			<lifeExpectancy>8</lifeExpectancy>
 			<maxPreyBodySize>0.8</maxPreyBodySize>
 		</race>
@@ -223,9 +223,9 @@
 			<LeatherAmount>7</LeatherAmount>
 			<MeleeDodgeChance>0.23</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
+			<Wildness>0.5</Wildness>
 		</statBases>
 		<race>
-			<petness>0.5</petness>
 			<lifeExpectancy>8</lifeExpectancy>
 			<maxPreyBodySize>0.5</maxPreyBodySize>
 		</race>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 
 	<ThingDef ParentName="SK_AnimalThingBase">
@@ -17,6 +17,7 @@
 			<GermContainment>0.09</GermContainment>
 			<FilthRate>14</FilthRate>
 			<ToxicResistance>0.7</ToxicResistance>
+			<Wildness>0.55</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -52,7 +53,6 @@
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Heavy</leatherDef>
 			<gestationPeriodDays>8</gestationPeriodDays>
-			<petness>0.45</petness>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<nuzzleMtbHours>60</nuzzleMtbHours>
 			<lifeExpectancy>15</lifeExpectancy>
@@ -155,6 +155,7 @@
 			<GermContainment>0.05</GermContainment>
 			<FilthRate>28</FilthRate>
 			<ToxicResistance>0.8</ToxicResistance>
+			<Wildness>0.92</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -204,7 +205,6 @@
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<petness>0.08</petness>
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.8</manhunterOnDamageChance>

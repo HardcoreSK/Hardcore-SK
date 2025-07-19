@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 	<!-- ========================== Rodentlike ============================ -->
 	<ThingDef ParentName="SK_AnimalThingBase">
@@ -15,6 +15,7 @@
 			<MeleeDodgeChance>0.23</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>1</FilthRate>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -74,7 +75,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Light</leatherDef>
-			<petness>0.25</petness>
 			<trainability>None</trainability>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<gestationPeriodDays>5.661</gestationPeriodDays>
@@ -175,6 +175,7 @@
 			<MeleeDodgeChance>0.12</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>8</FilthRate>
+			<Wildness>0.72</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -232,7 +233,6 @@
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Light</leatherDef>
 			<foodType>DendrovoreAnimal</foodType>
-			<petness>0.28</petness>
 			<trainability>Intermediate</trainability>
 			<gestationPeriodDays>8.5</gestationPeriodDays>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
@@ -348,6 +348,7 @@
 			<MeleeDodgeChance>0.11</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>8</FilthRate>
+			<Wildness>0.55</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -405,7 +406,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Light</leatherDef>
-			<petness>0.45</petness>
 			<roamMtbDays>2</roamMtbDays>
 			<petness>0.08</petness>
 			<trainability>Intermediate</trainability>
@@ -556,6 +556,7 @@
 			<MeleeDodgeChance>0.23</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>1</FilthRate>
+			<Wildness>0.50</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -612,7 +613,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Chinchilla</leatherDef>
-			<petness>0.5</petness>
 			<roamMtbDays>2</roamMtbDays>
 			<trainability>None</trainability>
 			<mateMtbHours>8</mateMtbHours>
@@ -724,6 +724,7 @@
 			<MeleeDodgeChance>0.18</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>3</FilthRate>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -792,7 +793,6 @@
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Boomanimal</leatherDef>
 			<executionRange>4</executionRange>
-			<petness>0.25</petness>
 			<trainability>Intermediate</trainability>
 			<petness>0.20</petness>
 			<mateMtbHours>8</mateMtbHours>
@@ -915,6 +915,7 @@
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>4</FilthRate>
 			<ToxicResistance>0.8</ToxicResistance>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -971,7 +972,6 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Light</leatherDef>
-			<petness>0.25</petness>
 			<mateMtbHours>8</mateMtbHours>
 			<gestationPeriodDays>5.661</gestationPeriodDays>
 			<litterSizeCurve>
@@ -1100,6 +1100,7 @@
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>1</FilthRate>
 			<ToxicResistance>0.9</ToxicResistance>
+			<Wildness>0.50</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -1158,7 +1159,6 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Light</leatherDef>
-			<petness>0.5</petness>
 			<trainability>None</trainability>
 			<petness>0.15</petness>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
@@ -1265,6 +1265,7 @@
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>1</FilthRate>
 			<ToxicResistance>0.8</ToxicResistance>
+			<Wildness>0.50</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -1321,7 +1322,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Light</leatherDef>
-			<petness>0.5</petness>
 			<petness>0.15</petness>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>

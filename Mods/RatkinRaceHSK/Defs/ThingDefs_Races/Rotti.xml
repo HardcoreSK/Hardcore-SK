@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 
 	<ThingDef ParentName="AnimalThingBase">
@@ -14,6 +14,7 @@
 			<GermResistance>0.1</GermResistance>
 			<GermContainment>0.15</GermContainment>
 			<ToxicResistance>0.5</ToxicResistance>
+			<Wildness>0.55</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -66,7 +67,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>Leather_Light</leatherDef>
 			<useMeatFrom>Elephant</useMeatFrom>
-			<petness>0.45</petness>
 			<petness>1</petness>
 			<nuzzleMtbHours>120</nuzzleMtbHours>
 			<gestationPeriodDays>20</gestationPeriodDays>

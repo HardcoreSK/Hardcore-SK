@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 	<!--========================== Fox base ========================-->
 	<ThingDef Name="SK_ThingFoxBase" ParentName="SK_AnimalThingBase" Abstract="True">
@@ -11,6 +11,7 @@
 			<MeleeDodgeChance>0.28</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>2</FilthRate>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -84,7 +85,6 @@
 			<trainability>Advanced</trainability>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Fox</leatherDef>
-			<petness>0.25</petness>
 			<nuzzleMtbHours>36</nuzzleMtbHours>
 			<manhunterOnDamageChance>0.85</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>

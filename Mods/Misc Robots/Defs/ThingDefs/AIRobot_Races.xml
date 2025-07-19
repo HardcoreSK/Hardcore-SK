@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 
 	<ThingDef Class="AIRobot.X2_ThingDef_AIRobot" Name="Base_X2_AIRobot" Abstract="True">
@@ -26,6 +26,7 @@
 			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
 			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
 			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">2</VacuumSpeedMultiplier>
+			<Wildness>0.1</Wildness>
 		</statBases>
 		<receivesSignals>false</receivesSignals>
 		<inspectorTabs>
@@ -48,7 +49,6 @@
 			<intelligence>ToolUser</intelligence>
 			<makesFootprints>false</makesFootprints>
 			<nameCategory>HumanStandard</nameCategory>
-			<petness>0.9</petness>
 			<mateMtbHours>0</mateMtbHours>
 			<ageGenerationCurve>
 				<points>
@@ -139,8 +139,7 @@
 				<li>BiotechHauling</li>
 			</mechEnabledWorkTypes>
 		</race>
-		<recipes>
-		</recipes>
+		<recipes />
 		<robotWorkTypes>
 			<li>
 				<workTypeDef>Hauling</workTypeDef>
@@ -182,8 +181,7 @@
 				<li>Cleaning</li>
 			</mechEnabledWorkTypes>
 		</race>
-		<recipes>
-		</recipes>
+		<recipes />
 		<robotWorkTypes>
 			<li>
 				<workTypeDef>Cleaning</workTypeDef>
