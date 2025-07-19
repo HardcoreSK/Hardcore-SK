@@ -1,4 +1,31 @@
 
+v1.12.20
+
+- Fixed compatibility with Vanilla Events Expanded
+- Fixed compatibility with some Alpha Biomes map features
+- Fixed preview error when clicking gravship in orbit
+- Added debouncing to Map Designer auto-preview integration
+
+v1.12.19
+
+- Fixed compatibility with Dubs Bad Hygiene
+- Fixed compatibility with ReBuild Doors & Corners
+- Fixed an error that randomly caused previews to fail
+- Fixed some of the new DLC map features not being affected by seed rerolls
+
+v1.12.18
+
+- Support for RimWorld 1.6
+
+v1.12.17
+
+- Fixed texture loading error during startup that occured in some cases
+
+v1.12.16
+
+- Added option to disable preview completion animation
+- Added Spanish translation (thanks to @Ferchu for submitting)
+
 v1.12.15
 
 - Fixed compatibility patch for recently updated mod Vehicle Framework

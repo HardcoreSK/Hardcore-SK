@@ -1,3 +1,27 @@
+4.1.revamp.7.1
+- fixed some rare error that would happen when a list of items changed at the same time as it's trying to be displayed.
+
+4.1.revamp.7
+- 1.6. Can't vouch for CE comp patch.
+
+other
+- fixed inventory of pack animals not showing.
+
+4.1.revamp.6.5
+- all the CE compatibility fixes again, damn you CE community:
+- changed how the tab is shown to non-humanlikes so it uses "show list" mode instead of reverting to vanilla, because vanilla tab doesn't get CE patches applied otherwise;
+- changed how weight and bulk stats are displayed. They're now hidden if stat defs are set to be hidden (individually).
+
+other
+- hotfix for CE;
+
+4.1.revamp.6.4
+- made so mod handles unsupported raceprops a bit more aggressively. By that I mean by default non-humanline raceprops are reverted to basic (vanilla) tab view;
+- shuffled some code around to possibly save a fps or two;
+- added dev tool button (from vanilla);
+- made some tiny little GUI alignment adjustments;
+Hope it doesn't break nothing, have a nice day you all.
+
 4.1.revamp.6.3
 - minor fix for cases when "health background" is used and for some reason apparel hp is higher than max hp;
 
