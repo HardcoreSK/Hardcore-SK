@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<ScenarioDef>
@@ -11,6 +11,18 @@
 				<def>PlayerFaction</def>
 				<factionDef>AsariPlayerColony</factionDef>
 			</playerFaction>
+			<surfaceLayer>
+				<def>SurfaceLayerFixed</def>
+				<tag>Surface</tag>
+				<layer>Surface</layer>
+				<settingsDef>Surface</settingsDef>
+				<hide>true</hide>
+				<connections>
+					<Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+						<zoomMode>ZoomOut</zoomMode>
+					</Orbit>
+				</connections>
+			</surfaceLayer>
 			<parts>
 
 				<!-- Game start dialog -->
@@ -28,16 +40,16 @@
 				</li>-->
 
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
-				  <def>ConfigurePawnsKindDefs</def>
-				  <pawnChoiceCount>8</pawnChoiceCount>
-				  <leftBehindPawnKind>AsariPawn</leftBehindPawnKind>
-				  <kindCounts>
-					<li>
-					  <kindDef>AsariPawn</kindDef>
-					  <count>3</count>
-					  <requiredAtStart>true</requiredAtStart>
-					</li>
-				  </kindCounts>
+					<def>ConfigurePawnsKindDefs</def>
+					<pawnChoiceCount>8</pawnChoiceCount>
+					<leftBehindPawnKind>AsariPawn</leftBehindPawnKind>
+					<kindCounts>
+						<li>
+							<kindDef>AsariPawn</kindDef>
+							<count>3</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+					</kindCounts>
 				</li>
 
 				<!-- Player starting stuff spawn method-->
