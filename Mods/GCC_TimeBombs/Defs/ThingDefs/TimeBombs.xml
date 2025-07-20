@@ -41,7 +41,9 @@
         <useLabel>Install</useLabel>
         <useDuration>500</useDuration>
       </li>
-      <li Class="CompProperties_UseEffectDestroySelf" />
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_DestroySelf</compClass>
+      </li>
       <li Class="CompProperties_Targetable">
         <compClass>TimeBombs.CompTargetable_Explosive</compClass>
         <fleckConnecting>PsycastPsychicLine</fleckConnecting>
@@ -96,7 +98,9 @@
         <useLabel>Install</useLabel>
         <useDuration>1000</useDuration>
       </li>
-      <li Class="CompProperties_UseEffectDestroySelf" />
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_DestroySelf</compClass>
+      </li>
       <li Class="CompProperties_Targetable">
         <compClass>TimeBombs.CompTargetable_Explosive</compClass>
         <fleckConnecting>PsycastPsychicLine</fleckConnecting>
