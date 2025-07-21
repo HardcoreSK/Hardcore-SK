@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>SK.Designator_ZoneAdd_GrowingSame</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>SK.Designator_VeinMiner</li>
+			<li>SK.DesognatorMineBrush</li>
+			<li>SK.StripMiner</li>
+			<li>SK.Designator_PlantsHarvestEdibles</li>
+			<li>SK.Designator_PlantsChopWood</li>
+			<li>SK.Designator_HaulPriority</li>
+			<li>SK.Designator_HaulPriorityHighPriorityOverride</li>
+		</value>
+	</Operation>
+</Patch>
