@@ -7,6 +7,7 @@
 			<li>Light</li>
 			<li>Medium</li>
 			<li>Heavy</li>
+			<li>Walkable</li>
 		</affordances>
 		<tags>
 			<li>Floor</li>
@@ -220,7 +221,7 @@
 		<researchPrerequisites>
 			<li>Stone_floor_B2</li>
 		</researchPrerequisites>
-	</TerrainDef> 
+	</TerrainDef>
 
 	<TerrainDef ParentName="SK_TileStoneBase">
 		<defName>ClayBrickTile</defName>
@@ -236,7 +237,7 @@
 		<researchPrerequisites>
 			<li>Stone_floor_B2</li>
 		</researchPrerequisites>
-	</TerrainDef> 
+	</TerrainDef>
 
 	<TerrainDef ParentName="SK_TileStoneBase">
 		<defName>TileCeramics</defName>
@@ -327,7 +328,7 @@
 
 	<!-- ============ Rough Sandstone ============ -->
 
-	<TerrainDef  ParentName="SK_FloorBase">
+	<TerrainDef ParentName="SK_FloorBase">
 		<defName>RoughSandstoneFloor</defName>
 		<label>Rough Sandstone</label>
 		<renderPrecedence>190</renderPrecedence>
@@ -356,7 +357,7 @@
 	</TerrainDef>
 
 	<!-- ============= Rough Granite ============ -->
-	<TerrainDef  ParentName="SK_FloorBase">
+	<TerrainDef ParentName="SK_FloorBase">
 		<defName>RoughGraniteFloor</defName>
 		<label>Rough Granite</label>
 		<renderPrecedence>191</renderPrecedence>
@@ -385,7 +386,7 @@
 	</TerrainDef>
 
 	<!-- ============ Rough Limestone ============ -->
-	<TerrainDef  ParentName="SK_FloorBase">
+	<TerrainDef ParentName="SK_FloorBase">
 		<defName>RoughLimestoneFloor</defName>
 		<label>Rough Limestone</label>
 		<renderPrecedence>192</renderPrecedence>
@@ -414,7 +415,7 @@
 	</TerrainDef>
 
 	<!-- ============ Rough Slate ============ -->
-	<TerrainDef  ParentName="SK_FloorBase">
+	<TerrainDef ParentName="SK_FloorBase">
 		<defName>RoughSlateFloor</defName>
 		<label>Rough Slate</label>
 		<renderPrecedence>193</renderPrecedence>
@@ -443,7 +444,7 @@
 	</TerrainDef>
 
 	<!-- =========== Rough Marble ============= -->
-	<TerrainDef  ParentName="SK_FloorBase">
+	<TerrainDef ParentName="SK_FloorBase">
 		<defName>RoughMarbleFloor</defName>
 		<label>Rough Marble</label>
 		<renderPrecedence>194</renderPrecedence>
@@ -471,8 +472,8 @@
 		<designationCategory>NaturalFloors</designationCategory>
 	</TerrainDef>
 
-	<!-- =========== Rough Ceramics ============= -->	
-	<TerrainDef  ParentName="SK_FloorBase">
+	<!-- =========== Rough Ceramics ============= -->
+	<TerrainDef ParentName="SK_FloorBase">
 		<defName>RoughCeramicsFloor</defName>
 		<label>Rough Ceramics</label>
 		<renderPrecedence>194</renderPrecedence>

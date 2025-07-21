@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<TerrainDef ParentName="NaturalTerrainBase">
@@ -21,6 +21,7 @@
 			<li>Medium</li>
 			<li>Heavy</li>
 			<li>Diggable</li>
+			<li>Walkable</li>
 		</affordances>
 		<generatedFilth>Filth_Dirt</generatedFilth>
 		<fertility>0.00</fertility>
@@ -30,7 +31,7 @@
 		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionIce</pollutionOverlayTexturePath>
 		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
 		<pollutionCloudColor>(1, 1, 1, 0.66)</pollutionCloudColor>
-	</TerrainDef>  
+	</TerrainDef>
 
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>IceShallow</defName>
