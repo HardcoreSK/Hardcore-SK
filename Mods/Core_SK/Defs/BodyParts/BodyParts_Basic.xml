@@ -42,7 +42,7 @@
 		<priceImpact>true</priceImpact>
 	</HediffDef>
 
-
+<!-- DefOverwrite
 	<RecipeDef Name="SurgeryInstallWoodenPartBase" ParentName="SK_SurgeryInstallBodyPartArtificialBase" Abstract="True">
 		<workAmount>1500</workAmount>
 		<skillRequirements>
@@ -66,7 +66,7 @@
 		</fixedIngredientFilter>
         <researchPrerequisite>Prosthetics</researchPrerequisite>
 	</RecipeDef>
-
+-->
 	<!-- basic parts -->
 
 	<ThingDef ParentName="BodyPartBase_Basic">
@@ -302,7 +302,7 @@
 			<researchPrerequisite>Prosthesis_making_B1</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<HediffDef ParentName="HediffBodyPartBase_Basic">
 		<defName>Denture</defName>
 		<label>denture</label>
@@ -311,12 +311,6 @@
 		<descriptionHyperlinks>
 			<ThingDef>Denture</ThingDef>
 		</descriptionHyperlinks>
-		<!--<hediffClass>Hediff_AddedPartNoRemoveSubparts</hediffClass>
-		<comps>
-			<li Class="HediffCompProperties_RestoreSubPart">
-				<partToRestore>Tongue</partToRestore>
-			</li>
-		</comps>-->
 		<addedPartProps>
 			<partEfficiency>1.0</partEfficiency>
 		</addedPartProps>
@@ -502,16 +496,6 @@
 		<addedPartProps>
 			<partEfficiency>0.65</partEfficiency>
 		</addedPartProps>
-<!-- 		<stages>
-			<li>
-				<capMods>
-					<li>
-						<capacity>Hearing</capacity>
-						<offset>-0.5</offset>
-					</li>
-				</capMods>
-			</li>	 
-		</stages> -->
 	</HediffDef>
 
 	<RecipeDef ParentName="SK_SurgeryFlesh">
@@ -655,5 +639,5 @@
 		</skillRequirements>
 		<researchPrerequisite>Prosthesis_install_C1</researchPrerequisite>
 	</RecipeDef>
-
+-->
 </Defs>
