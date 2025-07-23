@@ -236,7 +236,7 @@
 		</skillRequirements>
 		<researchPrerequisite>Prosthesis_install_C3</researchPrerequisite>
 	</RecipeDef>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="BodyPartBase_NaturalMakeable">
 		<defName>Heart</defName>
 		<label>Heart</label>
@@ -252,7 +252,7 @@
 			<Mass>2</Mass>
 		</statBases>
 	</ThingDef>
-
+-->
 	<HediffDef ParentName="HediffBodyPartBase_Natural">
 		<defName>Heart</defName>
 		<label>heart</label>
@@ -263,7 +263,7 @@
 		</addedPartProps>
 		<spawnThingOnRemoved>Heart</spawnThingOnRemoved>
 	</HediffDef>
-
+<!-- DefOverwrite
 	<RecipeDef ParentName="SurgeryNatural">
 		<defName>InstallNaturalHeart</defName>
 		<label>Install Heart</label>
@@ -482,7 +482,7 @@
 		</skillRequirements>
 		<researchPrerequisite>Prosthesis_install_C3</researchPrerequisite>
 	</RecipeDef>
-
+-->
 
 	<ThingDef ParentName="BodyPartBase_NaturalMakeable">
 		<defName>Stomach</defName>

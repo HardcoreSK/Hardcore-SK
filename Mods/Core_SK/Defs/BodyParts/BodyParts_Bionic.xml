@@ -271,7 +271,7 @@
 		<researchPrerequisite>Prosthesis_install_D3</researchPrerequisite>
 	</RecipeDef>
 
-
+<!-- DefOverwrite
 	<ThingDef ParentName="BodyPartBase_Bionic">
 		<defName>BionicEar</defName>
 		<label>bionic ear implant</label>
@@ -414,12 +414,6 @@
 		<descriptionHyperlinks>
 			<ThingDef>BionicJaw</ThingDef>
 		</descriptionHyperlinks>
-		<!--<hediffClass>Hediff_AddedPartNoRemoveSubparts</hediffClass>
-		<comps>
-			<li Class="HediffCompProperties_RestoreSubPart">
-				<partToRestore>Tongue</partToRestore>
-			</li>
-		</comps>-->
 		<addedPartProps>
 			<partEfficiency>1.1</partEfficiency>
 		</addedPartProps>
@@ -482,8 +476,6 @@
 		</skillRequirements>
 		<researchPrerequisite>Prosthesis_install_D3</researchPrerequisite>
 	</RecipeDef>
-
-
 
 	<ThingDef ParentName="BodyPartBase_Bionic">
 		<defName>BionicSpine</defName>
@@ -633,8 +625,6 @@
 		<descriptionHyperlinks>
 			<ThingDef>BionicEye</ThingDef>
 		</descriptionHyperlinks>
-		<!-- <woundAnchorRange>0</woundAnchorRange> -->
-		<!-- <displayWound>true</displayWound> -->
 		<spawnThingOnRemoved>BionicEye</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -1152,7 +1142,7 @@
 		</skillRequirements>
 		<researchPrerequisite>Prosthesis_install_D2</researchPrerequisite>
 	</RecipeDef>
-
+-->
 	<ThingDef ParentName="BodyPartBase_Bionic">
 		<defName>BrainStimulator</defName>
 		<label>brain stimulator</label>

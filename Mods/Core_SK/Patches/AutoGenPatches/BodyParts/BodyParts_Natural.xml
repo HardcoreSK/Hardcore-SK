@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Heart"]</xpath>
+    <value>
+      <label>Heart</label>
+      <description>Supplies blood and oxygen to all parts of the body. Ready to find a new owner.</description>
+      <graphicData>
+        <texPath>Things/Item/BodyPart/Heart</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>0.80</drawSize>
+      </graphicData>
+      <statBases>
+        <MarketValue>650</MarketValue>
+        <Mass>2</Mass>
+      </statBases>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="InstallNaturalHeart"]</xpath>
+    <value>
+      <label>Install Heart</label>
+      <description>Installs a naturally grown Heart.</description>
+      <jobString>Installing Heart.</jobString>
+      <workAmount>3800</workAmount>
+      <surgerySuccessChanceFactor>0.8</surgerySuccessChanceFactor>
+      <deathOnFailedSurgeryChance>0.15</deathOnFailedSurgeryChance>
+      <ingredients>
+        <li>
+          <filter>
+            <categories>
+              <li>Medicine</li>
+            </categories>
+          </filter>
+          <count>1</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>Heart</li>
+            </thingDefs>
+          </filter>
+          <count>1</count>
+        </li>
+      </ingredients>
+      <fixedIngredientFilter>
+        <categories>
+          <li>Medicine</li>
+        </categories>
+        <thingDefs>
+          <li>Heart</li>
+        </thingDefs>
+      </fixedIngredientFilter>
+      <skillRequirements>
+        <Medicine>13</Medicine>
+      </skillRequirements>
+      <researchPrerequisite>Prosthesis_install_C3</researchPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Lung"]</xpath>
+    <value>
+      <label>Lung</label>
+      <description>An essential part of the respiratory system.</description>
+      <graphicData>
+        <texPath>Things/Item/BodyPart/Lungs</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>0.80</drawSize>
+      </graphicData>
+      <statBases>
+        <MarketValue>500</MarketValue>
+        <Mass>2</Mass>
+      </statBases>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="InstallNaturalLung"]</xpath>
+    <value>
+      <label>Install Lung</label>
+      <description>Installs a natural Lung.</description>
+      <jobString>Installing Lung.</jobString>
+      <workAmount>3200</workAmount>
+      <ingredients>
+        <li>
+          <filter>
+            <categories>
+              <li>Medicine</li>
+            </categories>
+          </filter>
+          <count>1</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>Lung</li>
+            </thingDefs>
+          </filter>
+          <count>1</count>
+        </li>
+      </ingredients>
+      <fixedIngredientFilter>
+        <categories>
+          <li>Medicine</li>
+        </categories>
+        <thingDefs>
+          <li>Lung</li>
+        </thingDefs>
+      </fixedIngredientFilter>
+      <skillRequirements>
+        <Medicine>11</Medicine>
+      </skillRequirements>
+      <researchPrerequisite>Prosthesis_install_C3</researchPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Liver"]</xpath>
+    <value>
+      <label>Liver</label>
+      <description>Plays an important role in metabolism.</description>
+      <graphicData>
+        <texPath>Things/Item/BodyPart/Liver</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>0.80</drawSize>
+      </graphicData>
+      <statBases>
+        <MarketValue>504</MarketValue>
+        <Mass>2</Mass>
+      </statBases>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="InstallNaturalLiver"]</xpath>
+    <value>
+      <label>Install Liver</label>
+      <description>Installs a natural Liver.</description>
+      <jobString>Installing Liver.</jobString>
+      <workAmount>3200</workAmount>
+      <ingredients>
+        <li>
+          <filter>
+            <categories>
+              <li>Medicine</li>
+            </categories>
+          </filter>
+          <count>1</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>Liver</li>
+            </thingDefs>
+          </filter>
+          <count>1</count>
+        </li>
+      </ingredients>
+      <fixedIngredientFilter>
+        <categories>
+          <li>Medicine</li>
+        </categories>
+        <thingDefs>
+          <li>Liver</li>
+        </thingDefs>
+      </fixedIngredientFilter>
+      <skillRequirements>
+        <Medicine>11</Medicine>
+      </skillRequirements>
+      <researchPrerequisite>Prosthesis_install_C3</researchPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Kidney"]</xpath>
+    <value>
+      <label>Kidney</label>
+      <description>Filters and removes waste products from the blood.</description>
+      <graphicData>
+        <texPath>Things/Item/BodyPart/Kidney</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>0.80</drawSize>
+      </graphicData>
+      <statBases>
+        <MarketValue>420</MarketValue>
+        <Mass>2</Mass>
+      </statBases>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="InstallNaturalKidney"]</xpath>
+    <value>
+      <label>Install Kidney</label>
+      <description>Installs a natural Kidney.</description>
+      <jobString>Installing Kidney.</jobString>
+      <workAmount>3200</workAmount>
+      <ingredients>
+        <li>
+          <filter>
+            <categories>
+              <li>Medicine</li>
+            </categories>
+          </filter>
+          <count>1</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>Kidney</li>
+            </thingDefs>
+          </filter>
+          <count>1</count>
+        </li>
+      </ingredients>
+      <fixedIngredientFilter>
+        <categories>
+          <li>Medicine</li>
+        </categories>
+        <thingDefs>
+          <li>Kidney</li>
+        </thingDefs>
+      </fixedIngredientFilter>
+      <skillRequirements>
+        <Medicine>11</Medicine>
+      </skillRequirements>
+      <researchPrerequisite>Prosthesis_install_C3</researchPrerequisite>
+    </value>
+  </Operation>
+
+</Patch>

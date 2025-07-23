@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="BionicEar"]</xpath>
+    <value>
+      <label>bionic ear implant</label>
+      <description>An advanced device that expands upon the basic functions of the ear drum.</description>
+      <graphicData>
+        <texPath>Things/Item/BodyPart/BionicEar</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>0.80</drawSize>
+      </graphicData>
+      <statBases>
+        <Mass>0.2</Mass>
+      </statBases>
+      <costList>
+        <Biomatter>25</Biomatter>
+        <SyntheticFibers>7</SyntheticFibers>
+        <Paraffins>13</Paraffins>
+        <Microchips>1</Microchips>
+      </costList>
+      <recipeMaker>
+        <productCount>1</productCount>
+        <skillRequirements>
+          <Crafting>13</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>Bionics</researchPrerequisite>
+      </recipeMaker>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/HediffDef[defName="BionicEar"]</xpath>
+    <value>
+      <description>An installed advanced device that expands upon the basic functions of the ear drum.</description>
+      <addedPartProps>
+        <partEfficiency>1.1</partEfficiency>
+      </addedPartProps>
+      <stages>
+        <li>
+          <capMods>
+            <li>
+              <capacity>Hearing</capacity>
+              <offset>0.1</offset>
+            </li>
+          </capMods>
+        </li>
+      </stages>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="InstallBionicEar"]</xpath>
+    <value>
+      <label>Install Bionic Ear Implant</label>
+      <description>Installs a Bionic Ear Implant.</description>
+      <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+      <jobString>Installing a Bionic Ear Implant.</jobString>
+      <workAmount>2200</workAmount>
+      <descriptionHyperlinks>
+        <ThingDef>BionicEar</ThingDef>
+      </descriptionHyperlinks>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <ingredients>
+        <li>
+          <filter>
+            <categories>
+              <li>Medicine</li>
+            </categories>
+          </filter>
+          <count>1</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>BionicEar</li>
+            </thingDefs>
+          </filter>
+          <count>1</count>
+        </li>
+      </ingredients>
+      <fixedIngredientFilter>
+        <categories>
+          <li>Medicine</li>
+        </categories>
+        <thingDefs>
+          <li>BionicEar</li>
+        </thingDefs>
+      </fixedIngredientFilter>
+      <workSkill>Medicine</workSkill>
+      <skillRequirements>
+        <Medicine>12</Medicine>
+      </skillRequirements>
+      <researchPrerequisite>Prosthesis_install_D3</researchPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="BionicJaw"]</xpath>
+    <value>
+      <label>bionic jaw implant</label>
+      <description>Aside from a strong set of teeth, this also comes with a voice modulator.</description>
+      <graphicData>
+        <texPath>Things/Item/BodyPart/BionicJaw</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>0.80</drawSize>
+      </graphicData>
+      <statBases>
+        <Mass>0.5</Mass>
+      </statBases>
+      <costList>
+        <ComponentAdvanced>6</ComponentAdvanced>
+        <Biomatter>25</Biomatter>
+        <SyntheticFibers>6</SyntheticFibers>
+        <ArtificialBone>1</ArtificialBone>
+        <Microchips>1</Microchips>
+      </costList>
+      <recipeMaker>
+        <productCount>1</productCount>
+        <skillRequirements>
+          <Crafting>13</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>Bionics</researchPrerequisite>
+      </recipeMaker>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/HediffDef[defName="BionicJaw"]</xpath>
+    <value>
+      <label>bionic jaw implant</label>
+      <description>An installed strong set of teeth, this also comes with a voice modulator.</description>
+      <labelNoun>a bionic jaw implant</labelNoun>
+      <addedPartProps>
+        <partEfficiency>1.1</partEfficiency>
+      </addedPartProps>
+      <stages>
+        <li>
+          <capMods>
+            <li>
+              <capacity>Talking</capacity>
+              <offset>0.12</offset>
+            </li>
+          </capMods>
+        </li>
+      </stages>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="InstallBionicJaw"]</xpath>
+    <value>
+      <label>Install Bionic Jaw Implant</label>
+      <description>Installs a Bionic Jaw Implant.</description>
+      <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+      <jobString>Installing a Bionic Jaw Implant.</jobString>
+      <workAmount>2200</workAmount>
+      <descriptionHyperlinks>
+        <ThingDef>BionicJaw</ThingDef>
+      </descriptionHyperlinks>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <ingredients>
+        <li>
+          <filter>
+            <categories>
+              <li>Medicine</li>
+            </categories>
+          </filter>
+          <count>1</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>BionicJaw</li>
+            </thingDefs>
+          </filter>
+          <count>1</count>
+        </li>
+      </ingredients>
+      <fixedIngredientFilter>
+        <categories>
+          <li>Medicine</li>
+        </categories>
+        <thingDefs>
+          <li>BionicJaw</li>
+        </thingDefs>
+      </fixedIngredientFilter>
+      <skillRequirements>
+        <Medicine>10</Medicine>
+      </skillRequirements>
+      <researchPrerequisite>Prosthesis_install_D3</researchPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="BionicSpine"]</xpath>
+    <value>
+      <description>This light and impressing device can replace a damaged spine.</description>
+      <graphicData>
+        <texPath>Things/Item/BodyPart/BionicSpine</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>0.80</drawSize>
+      </graphicData>
+      <statBases>
+        <Mass>4</Mass>
+        <MaxHitPoints>125</MaxHitPoints>
+      </statBases>
+      <costList>
+        <ComponentAdvanced>6</ComponentAdvanced>
+        <Biomatter>45</Biomatter>
+        <SyntheticFibers>25</SyntheticFibers>
+        <ArtificialBone>4</ArtificialBone>
+        <Microchips>1</Microchips>
+      </costList>
+      <recipeMaker>
+        <productCount>1</productCount>
+        <skillRequirements>
+          <Crafting>14</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>Bionics</researchPrerequisite>
+      </recipeMaker>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/HediffDef[defName="BionicSpine"]</xpath>
+    <value>
+      <description>An installed light and impressing bionic spine.</description>
+      <addedPartProps>
+        <partEfficiency>1.1</partEfficiency>
+      </addedPartProps>
+      <stages>
+        <li>
+          <capMods>
+            <li>
+              <capacity>Manipulation</capacity>
+              <offset>0.10</offset>
+            </li>
+            <li>
+              <capacity>Moving</capacity>
+              <offset>0.07</offset>
+            </li>
+          </capMods>
+        </li>
+      </stages>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="InstallBionicSpine"]</xpath>
+    <value>
+      <label>Install Bionic Spine</label>
+      <description>Installs a Bionic Spine.</description>
+      <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+      <jobString>Installing a Bionic Spine.</jobString>
+      <workAmount>3900</workAmount>
+      <descriptionHyperlinks>
+        <ThingDef>BionicSpine</ThingDef>
+      </descriptionHyperlinks>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <ingredients>
+        <li>
+          <filter>
+            <categories>
+              <li>Medicine</li>
+            </categories>
+          </filter>
+          <count>1</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>BionicSpine</li>
+            </thingDefs>
+          </filter>
+          <count>1</count>
+        </li>
+      </ingredients>
+      <fixedIngredientFilter>
+        <categories>
+          <li>Medicine</li>
+        </categories>
+        <thingDefs>
+          <li>BionicSpine</li>
+        </thingDefs>
+      </fixedIngredientFilter>
+      <skillRequirements>
+        <Medicine>13</Medicine>
+      </skillRequirements>
+      <researchPrerequisite>Prosthesis_install_D4</researchPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="BionicEye"]</xpath>
+    <value>
+      <description>Advanced piece of technology made not only to fully replace natural eye, but also to give supernatural vision abilities.</description>
+      <graphicData>
+        <texPath>Things/Item/BodyPart/BionicEye</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>0.80</drawSize>
+      </graphicData>
+      <statBases>
+        <Mass>0.3</Mass>
+        <NightVisionEfficiency_Implant>0.3</NightVisionEfficiency_Implant>
+      </statBases>
+      <costList>
+        <Biomatter>20</Biomatter>
+        <SyntheticFibers>6</SyntheticFibers>
+        <Paraffins>15</Paraffins>
+        <ReinforcedGlass>10</ReinforcedGlass>
+        <Microchips>1</Microchips>
+      </costList>
+      <recipeMaker>
+        <productCount>1</productCount>
+        <skillRequirements>
+          <Crafting>13</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>Bionics</researchPrerequisite>
+      </recipeMaker>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/HediffDef[defName="BionicEye"]</xpath>
+    <value>
+      <description>An installed bionic eye. Advanced piece of technology made not only to fully replace natural eye, but also to give supernatural vision abilities.</description>
+      <addedPartProps>
+        <solid>true</solid>
+        <partEfficiency>1.2</partEfficiency>
+        <betterThanNatural>true</betterThanNatural>
+      </addedPartProps>
+      <stages>
+        <li>
+          <statOffsets>
+            <NightVisionEfficiency_Implant>0.3</NightVisionEfficiency_Implant>
+          </statOffsets>
+        </li>
+      </stages>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="InstallBionicEye"]</xpath>
+    <value>
+      <label>Install Bionic Eye</label>
+      <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+      <workAmount>2300</workAmount>
+      <descriptionHyperlinks>
+        <ThingDef>BionicEye</ThingDef>
+      </descriptionHyperlinks>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <ingredients>
+        <li>
+          <filter>
+            <categories>
+              <li>Medicine</li>
+            </categories>
+          </filter>
+          <count>1</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>BionicEye</li>
+            </thingDefs>
+          </filter>
+          <count>1</count>
+        </li>
+      </ingredients>
+      <fixedIngredientFilter>
+        <categories>
+          <li>Medicine</li>
+        </categories>
+        <thingDefs>
+          <li>BionicEye</li>
+        </thingDefs>
+      </fixedIngredientFilter>
+      <workSkill>Medicine</workSkill>
+      <skillRequirements>
+        <Medicine>12</Medicine>
+      </skillRequirements>
+      <researchPrerequisite>Prosthesis_install_D3</researchPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="BionicArm"]</xpath>
+    <value>
+      <description>One of the most sophisticated arm replacements. It gives extreme strength to its user.</description>
+      <graphicData>
+        <texPath>Things/Item/BodyPart/BionicArm</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>0.80</drawSize>
+      </graphicData>
+      <statBases>
+        <Mass>5</Mass>
+        <MaxHitPoints>150</MaxHitPoints>
+      </statBases>
+      <costList>
+        <ComponentAdvanced>5</ComponentAdvanced>
+        <Biomatter>30</Biomatter>
+        <SyntheticFibers>15</SyntheticFibers>
+        <ArtificialBone>5</ArtificialBone>
+        <Microchips>1</Microchips>
+      </costList>
+      <recipeMaker>
+        <productCount>1</productCount>
+        <skillRequirements>
+          <Crafting>15</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>Bionics</researchPrerequisite>
+      </recipeMaker>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/HediffDef[defName="BionicArm"]</xpath>
+    <value>
+      <description>An installed bionic arm. One of the most sophisticated arm replacements. It gives extreme strength to its user.</description>
+      <comps>
+        <li Class="HediffCompProperties_VerbGiver">
+          <tools>
+            <li Class="CombatExtended.ToolCE">
+              <label>fist</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>5</power>
+              <cooldownTime>1.11</cooldownTime>
+              <armorPenetrationBlunt>1.688</armorPenetrationBlunt>
+              <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+              <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+            </li>
+          </tools>
+        </li>
+      </comps>
+      <stages>
+        <li>
+          <capMods>
+            <li>
+              <capacity>Manipulation</capacity>
+              <offset>0.2</offset>
+            </li>
+          </capMods>
+        </li>
+      </stages>
+      <addedPartProps>
+        <solid>true</solid>
+        <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="InstallBionicArm"]</xpath>
+    <value>
+      <label>Install Bionic Arm</label>
+      <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+      <workAmount>3200</workAmount>
+      <descriptionHyperlinks>
+        <ThingDef>BionicArm</ThingDef>
+      </descriptionHyperlinks>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <ingredients>
+        <li>
+          <filter>
+            <categories>
+              <li>Medicine</li>
+            </categories>
+          </filter>
+          <count>1</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>BionicArm</li>
+            </thingDefs>
+          </filter>
+          <count>1</count>
+        </li>
+      </ingredients>
+      <fixedIngredientFilter>
+        <categories>
+          <li>Medicine</li>
+        </categories>
+        <thingDefs>
+          <li>BionicArm</li>
+        </thingDefs>
+      </fixedIngredientFilter>
+      <skillRequirements>
+        <Medicine>12</Medicine>
+      </skillRequirements>
+      <researchPrerequisite>Prosthesis_install_D3</researchPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="BionicTongue"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/HealthItem</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>0.80</drawSize>
+      </graphicData>
+      <statBases>
+        <Mass>5</Mass>
+        <MaxHitPoints>150</MaxHitPoints>
+      </statBases>
+      <costList>
+        <ComponentAdvanced>3</ComponentAdvanced>
+        <Biomatter>20</Biomatter>
+        <SyntheticFibers>10</SyntheticFibers>
+        <Microchips>1</Microchips>
+      </costList>
+      <recipeMaker>
+        <productCount>1</productCount>
+        <skillRequirements>
+          <Crafting>15</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>Bionics</researchPrerequisite>
+      </recipeMaker>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/HediffDef[defName="BionicTongue"]</xpath>
+    <value>
+      <description>An installed bionic tongue.</description>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="InstallBionicTongue"]</xpath>
+    <value>
+      <label>Install Bionic Tongue</label>
+      <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+      <workAmount>3200</workAmount>
+      <descriptionHyperlinks>
+        <ThingDef>BionicTongue</ThingDef>
+      </descriptionHyperlinks>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <ingredients>
+        <li>
+          <filter>
+            <categories>
+              <li>Medicine</li>
+            </categories>
+          </filter>
+          <count>1</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>BionicTongue</li>
+            </thingDefs>
+          </filter>
+          <count>1</count>
+        </li>
+      </ingredients>
+      <fixedIngredientFilter>
+        <categories>
+          <li>Medicine</li>
+        </categories>
+        <thingDefs>
+          <li>BionicTongue</li>
+        </thingDefs>
+      </fixedIngredientFilter>
+      <skillRequirements>
+        <Medicine>12</Medicine>
+      </skillRequirements>
+      <researchPrerequisite>Prosthesis_install_D3</researchPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="BionicLeg"]</xpath>
+    <value>
+      <description>A Bionic Leg uses cutting-edge technology to give its owner extreme walking comfort and strength.</description>
+      <graphicData>
+        <texPath>Things/Item/BodyPart/BionicLeg</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>0.80</drawSize>
+      </graphicData>
+      <statBases>
+        <Mass>6</Mass>
+        <MaxHitPoints>150</MaxHitPoints>
+      </statBases>
+      <costList>
+        <ComponentAdvanced>6</ComponentAdvanced>
+        <Biomatter>40</Biomatter>
+        <SyntheticFibers>20</SyntheticFibers>
+        <ArtificialBone>5</ArtificialBone>
+        <Microchips>1</Microchips>
+      </costList>
+      <recipeMaker>
+        <productCount>1</productCount>
+        <skillRequirements>
+          <Crafting>15</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>Bionics</researchPrerequisite>
+      </recipeMaker>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/HediffDef[defName="BionicLeg"]</xpath>
+    <value>
+      <description>An installed bionic leg. Uses cutting-edge technology to give its owner extreme walking comfort and strength.</description>
+      <addedPartProps>
+        <solid>true</solid>
+        <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+        <li>
+          <capMods>
+            <li>
+              <capacity>Moving</capacity>
+              <offset>0.2</offset>
+            </li>
+          </capMods>
+        </li>
+      </stages>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="InstallBionicLeg"]</xpath>
+    <value>
+      <label>Install Bionic Leg</label>
+      <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+      <workAmount>3200</workAmount>
+      <descriptionHyperlinks>
+        <ThingDef>BionicLeg</ThingDef>
+      </descriptionHyperlinks>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <ingredients>
+        <li>
+          <filter>
+            <categories>
+              <li>Medicine</li>
+            </categories>
+          </filter>
+          <count>1</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>BionicLeg</li>
+            </thingDefs>
+          </filter>
+          <count>1</count>
+        </li>
+      </ingredients>
+      <fixedIngredientFilter>
+        <categories>
+          <li>Medicine</li>
+        </categories>
+        <thingDefs>
+          <li>BionicLeg</li>
+        </thingDefs>
+      </fixedIngredientFilter>
+      <skillRequirements>
+        <Medicine>12</Medicine>
+      </skillRequirements>
+      <researchPrerequisite>Prosthesis_install_D3</researchPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="PowerClaw"]</xpath>
+    <value>
+      <description>Powerful hand replacement consisting of three deadly claws.</description>
+      <graphicData>
+        <texPath>Things/Item/BodyPart/PowerClaw</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>0.80</drawSize>
+      </graphicData>
+      <statBases>
+        <Mass>4</Mass>
+        <MaxHitPoints>150</MaxHitPoints>
+        <MarketValue>6000</MarketValue>
+      </statBases>
+      <costList>
+        <ComponentAdvanced>7</ComponentAdvanced>
+        <Biomatter>35</Biomatter>
+        <SyntheticFibers>11</SyntheticFibers>
+        <ScytherBlade>2</ScytherBlade>
+        <Microchips>1</Microchips>
+      </costList>
+      <recipeMaker>
+        <productCount>1</productCount>
+        <skillRequirements>
+          <Crafting>15</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>Bionics</researchPrerequisite>
+      </recipeMaker>
+      <techHediffsTags>
+        <li>AdvancedWeapon</li>
+      </techHediffsTags>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/HediffDef[defName="PowerClaw"]</xpath>
+    <value>
+      <description>An installed powerful hand replacement consisting of three deadly claws.</description>
+      <comps>
+        <li Class="HediffCompProperties_VerbGiver">
+          <tools>
+            <li Class="CombatExtended.ToolCE">
+              <label>claw</label>
+              <capacities>
+                <li>Scratch</li>
+              </capacities>
+              <power>21</power>
+              <cooldownTime>0.89</cooldownTime>
+              <armorPenetrationSharp>0.8</armorPenetrationSharp>
+              <armorPenetrationBlunt>4</armorPenetrationBlunt>
+              <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+              <soundMeleeHit>Pawn_Melee_PowerClaw_Hit</soundMeleeHit>
+              <soundMeleeMiss>Pawn_Melee_PowerClaw_Miss</soundMeleeMiss>
+            </li>
+          </tools>
+        </li>
+      </comps>
+      <addedPartProps>
+        <isGoodWeapon>true</isGoodWeapon>
+        <solid>true</solid>
+        <partEfficiency>0.92</partEfficiency>
+      </addedPartProps>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="InstallPowerClaw"]</xpath>
+    <value>
+      <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+      <workAmount>3100</workAmount>
+      <descriptionHyperlinks>
+        <ThingDef>PowerClaw</ThingDef>
+      </descriptionHyperlinks>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <ingredients>
+        <li>
+          <filter>
+            <categories>
+              <li>Medicine</li>
+            </categories>
+          </filter>
+          <count>1</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>PowerClaw</li>
+            </thingDefs>
+          </filter>
+          <count>1</count>
+        </li>
+      </ingredients>
+      <fixedIngredientFilter>
+        <categories>
+          <li>Medicine</li>
+        </categories>
+        <thingDefs>
+          <li>PowerClaw</li>
+        </thingDefs>
+      </fixedIngredientFilter>
+      <skillRequirements>
+        <Medicine>11</Medicine>
+      </skillRequirements>
+      <researchPrerequisite>Prosthesis_install_D2</researchPrerequisite>
+    </value>
+  </Operation>
+
+</Patch>
