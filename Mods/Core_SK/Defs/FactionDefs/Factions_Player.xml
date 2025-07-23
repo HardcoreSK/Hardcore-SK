@@ -1,13 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+<!-- DefOverwrite
 	<FactionDef ParentName="SK_FactionBase" Abstract="True" Name="SK_PlayerFactionBase">
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<colorSpectrum>
 			<li>(0, 0.737, 0.847)</li>
 		</colorSpectrum>
-		<!-- NOTE: Player factions lack a xenotype set. Player pawns have their xenotypes set by the player/scenario. -->
 	</FactionDef>
 
 	<FactionDef ParentName="SK_PlayerFactionBase">
@@ -48,8 +47,8 @@
 			</thingDefs>
 		</apparelStuffFilter>
 	</FactionDef>
-
-	<FactionDef ParentName="SK_PlayerFactionBase">
+-->
+	<FactionDef ParentName="PlayerFactionBase">
 		<defName>PlayerNova</defName>
 		<label>New Arrivals</label>
 		<description>A colony of recently-arrived off-worlders.</description>
@@ -89,7 +88,7 @@
 		</apparelStuffFilter>
 	</FactionDef>
 
-	<FactionDef ParentName="SK_PlayerFactionBase">
+	<FactionDef ParentName="PlayerFactionBase">
 		<defName>PlayerExiled</defName>
 		<label>New Arrivals</label>
 		<description>A colony of recently-arrived off-worlders.</description>
@@ -127,7 +126,7 @@
 			</thingDefs>
 		</apparelStuffFilter>
 	</FactionDef>
-
+<!-- DefOverwrite
 	<FactionDef ParentName="SK_PlayerFactionBase">
 		<defName>PlayerTribe</defName>
 		<label>New Tribe</label>
@@ -183,8 +182,8 @@
 			<li>Tribal</li>
 		</recipePrerequisiteTags>
 	</FactionDef>
-
-	<FactionDef ParentName="SK_PlayerFactionBase">
+-->
+	<FactionDef ParentName="PlayerFactionBase">
 		<defName>PlayerNorbal</defName>
 		<label>New soveingard</label>
 		<description>Are small group of norbals.</description>
@@ -239,7 +238,7 @@
 		</apparelStuffFilter>
 	</FactionDef>
 
-	<FactionDef ParentName="SK_PlayerFactionBase">
+	<FactionDef ParentName="PlayerFactionBase">
 		<defName>PlayerSurvivor</defName>
 		<label>New Survivors</label>
 		<description>A colony of recently-arrived off-worlders.</description>
@@ -279,7 +278,7 @@
 		</apparelStuffFilter>
 	</FactionDef>
 
-	<FactionDef ParentName="SK_PlayerFactionBase">
+	<FactionDef ParentName="PlayerFactionBase">
 		<defName>OrassanPlayerColony</defName>
 		<label>Orassan Enclaves</label>
 		<description>A colony of recently-arrived off-worlders.</description>
@@ -327,7 +326,7 @@
 		</apparelStuffFilter>
 	</FactionDef>
 
-	<FactionDef ParentName="SK_PlayerFactionBase">
+	<FactionDef ParentName="PlayerFactionBase">
 		<defName>NuclearColonySurvivor</defName>
 		<label>New Arrivals</label>
 		<description>A colony of recently-arrived off-worlders.</description>
