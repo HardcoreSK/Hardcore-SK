@@ -77,14 +77,16 @@
 		<allowUnderground>false</allowUnderground>
 	</GameConditionDef>
 
-	<GameConditionDef>
-		<defName>Drought</defName>
+	<GameConditionDef> <!-- Odyssey has a Dought Event -->
+		<defName>AcidicSoil</defName>
 		<conditionClass>SK.Events.GameCondition_Drought</conditionClass>
-		<label>Drought</label>
-		<description>An unusual drought has set in.
+		<label>Acidic Soil</label>
+		<description>An unusually high acidity has appeared in the soil.
 
-Drought is devastating for plant life and will quickly destroy all the crops not planted in the hydroponics. Be sure to quickly harvest any plants you can.</description>
-		<endMessage>The drought is ending.</endMessage>
+Acidic soil is devastating for plant life and will quickly destroy all the crops not planted in the hydroponics. Be sure to quickly harvest any plants you can.
+
+Many things can cause this, excess rainfall, decay of organic matter, the use of certain fertilizers, or the harvest of crops.</description>
+		<endMessage>The acidity of the soil has returned to normal levels.</endMessage>
 		<canBePermanent>false</canBePermanent>
 		<allowUnderground>false</allowUnderground>
 	</GameConditionDef>
@@ -228,7 +230,7 @@ It will last anywhere between a season to several years.</description>
 		</silencedByConditions>
 	</GameConditionDef>
 
-	<!-- Fix vanilla light sky -->
+	<!-- Fix vanilla light sky - DefOverwrite - code needs reviewing to see if necessary
 	<GameConditionDef>
 		<defName>Eclipse</defName>
 		<conditionClass>SK.Events.GameCondition_Eclipse</conditionClass>
@@ -243,8 +245,8 @@ It will last anywhere between a season to several years.</description>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">UnnaturalDarkness</li>
 		</silencedByConditions>
 	</GameConditionDef>
-
-	<!-- New staged coldsnap gamecondition -->
+-->
+	<!-- New staged coldsnap gamecondition - DefOverwrite
 	<GameConditionDef>
 		<defName>ColdSnap</defName>
 		<conditionClass>SK.GameCondition_ColdSnap</conditionClass>
@@ -259,8 +261,8 @@ It will last anywhere between a season to several years.</description>
 		</exclusiveConditions>
 		<allowUnderground>false</allowUnderground>
 	</GameConditionDef>
-
-	<!-- New staged heatwave gamecondition -->
+-->
+	<!-- New staged heatwave gamecondition - DefOverwrite
 	<GameConditionDef>
 		<defName>HeatWave</defName>
 		<conditionClass>SK.GameCondition_HeatWave</conditionClass>
@@ -280,7 +282,7 @@ It will last anywhere between a season to several years.</description>
 		</letterHyperlinks>
 		<allowUnderground>false</allowUnderground>
 	</GameConditionDef>
-
+-->
 	<GameConditionDef>
 		<defName>StorytellerFrenzy</defName>
 		<label>storyteller frenzy</label>

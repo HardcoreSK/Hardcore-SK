@@ -374,18 +374,20 @@ It will last anywhere between a season to several years.</letterText>
 	</IncidentDef>
 
 	<IncidentDef>
-		<defName>Drought</defName>
-		<label>drought</label>
+		<defName>AcidicSoil</defName>
+		<label>Acidic Soil</label>
 		<category>Misc</category>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
 		<workerClass>SK.Events.IncidentWorker_MakeGameConditionCC</workerClass>
-		<gameCondition>Drought</gameCondition>
-		<letterLabel>Drought</letterLabel>
-		<letterText>An unusual drought has set in.
+		<gameCondition>AcidicSoil</gameCondition>
+		<letterLabel>Acidic Soil</letterLabel>
+		<letterText>An unusual acidity has appeared in the soil.
 
-Drought is devastating for plant life and will quickly destroy all the crops not planted in the hydroponics. Be sure to quickly harvest any plants you can.</letterText>
+Acidic soil is devastating for plant life and will quickly destroy all the crops not planted in the hydroponics. Be sure to quickly harvest any plants you can.
+
+Many things can cause this, excess rainfall, decay of organic matter, the use of certain fertilizers, or the harvest of crops.</letterText>
 		<letterDef>PurpleEvent</letterDef>
 		<baseChance>0.6</baseChance>
 		<minRefireDays>50</minRefireDays>
