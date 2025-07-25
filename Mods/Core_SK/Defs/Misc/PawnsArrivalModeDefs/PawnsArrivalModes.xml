@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+<!-- DefOverwrite
 	<PawnsArrivalModeDef>
 		<defName>EdgeDropGroups</defName>
 		<workerClass>PawnsArrivalModeWorker_EdgeDropGroups</workerClass>
@@ -49,7 +49,7 @@
 		<defName>RandomDrop</defName>
 		<workerClass>PawnsArrivalModeWorker_RandomDrop</workerClass>
 		<selectionWeightCurve>
-			<!-- not usable in many strategies, so this gets boosted -->
+			--><!-- not usable in many strategies, so this gets boosted --><!--
 			<points>
 				<li>(300, 0)</li>
 				<li>(700, 1.5)</li>
@@ -67,7 +67,7 @@
 		<textFriendly>A group of friendly {0} from {1} have arrived in transport pods. Their pods went haywire and are landing scattered all over the area!</textFriendly>
 		<textWillArrive>{0_pawnsPluralDef} will arrive in transport pods.</textWillArrive>
 	</PawnsArrivalModeDef>
-
+-->
 	<PawnsArrivalModeDef>
 		<defName>DropNear</defName>
 		<workerClass>SK.PawnsArrivalModeWorker_DropNear</workerClass>
