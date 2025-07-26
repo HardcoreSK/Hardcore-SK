@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- Player Bases -->
+	<!-- Player Bases - DefOverwrite
 	<PawnKindDef Abstract="True" Name="SK_BasePlayerPawnKind">
 		<race>Human</race>
 		<combatPower>80</combatPower>
@@ -19,8 +19,8 @@
 			<li>ImplantEmpireCommon</li>
 		</techHediffsTags>
 	</PawnKindDef>
-
-	<!-- Colonist -->
+-->
+	<!-- Colonist 
 	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
 		<defName>Colonist</defName>
 		<label>colonist</label>
@@ -35,8 +35,8 @@
 		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
 		<initialResistanceRange>13~21</initialResistanceRange>
 	</PawnKindDef>
-
-	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
+-->
+	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>DovaColonist</defName>
 		<label>colonist</label>
 		<race>Alien_Dova</race>
@@ -63,7 +63,7 @@
 	</PawnKindDef>
 
 	<!-- Exiled -->
-	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
+	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>ColonistExiled</defName>
 		<label>colonist</label>
 		<defaultFactionType>PlayerExiled</defaultFactionType>
@@ -91,7 +91,7 @@
 	</PawnKindDef>
 
 	<!-- Nova -->
-	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
+	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>NovaColonist</defName>
 		<label>colonist</label>
 		<race>Alien_Nova</race>
@@ -118,7 +118,7 @@
 		</xenotypeSet>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
+	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>Nova</defName>
 		<label>colonist</label>
 		<race>Alien_Nova</race>
@@ -176,7 +176,7 @@
 	</PawnKindDef>
 
 	<!-- Survivor -->
-	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
+	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>Survivor</defName>
 		<label>colonist</label>
 		<defaultFactionType>PlayerSurvivor</defaultFactionType>
@@ -243,7 +243,7 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<!-- Tribal -->
+	<!-- Tribal - DefOverwrite
 	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
 		<defName>Tribesperson</defName>
 		<label>member</label>
@@ -266,9 +266,9 @@
 		</techHediffsDisallowTags>
 		<initialResistanceRange>9~15</initialResistanceRange>
 	</PawnKindDef>
-
+-->
 	<!-- Norbal -->
-	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
+	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>Norbalperson</defName>
 		<label>member</label>
 		<race>Norbal</race>
@@ -428,7 +428,7 @@
 	</PawnKindDef>
 
 	<!-- Nuclear Survivor -->
-	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
+	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>NuclearSurvivor</defName>
 		<label>colonist</label>
 		<defaultFactionType>PlayerColony</defaultFactionType>

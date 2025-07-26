@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/PawnKindDef[defName="Tribal_Berserker_Neanderthal"]</xpath>
+    <value>
+      <race>Human</race>
+      <itemQuality>Normal</itemQuality>
+      <gearHealthRange>0.5~1.8</gearHealthRange>
+      <apparelRequired>
+        <li>Apparel_TribalA</li>
+      </apparelRequired>
+      <apparelMoney>250~430</apparelMoney>
+      <apparelTags>
+        <li>Tribal</li>
+      </apparelTags>
+      <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+      <weaponTags>
+        <li>NeolithicMeleeBasic2H</li>
+      </weaponTags>
+      <initialWillRange>2~4</initialWillRange>
+      <initialResistanceRange>13~20</initialResistanceRange>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/PawnKindDef[defName="Tribal_HeavyArcher_Neanderthal"]</xpath>
+    <value>
+      <race>Human</race>
+      <backstoryFiltersOverride>
+        <li>
+          <categoriesChildhood>
+            <li>Tribal</li>
+          </categoriesChildhood>
+          <categoriesAdulthood>
+            <li>TribalHunter</li>
+          </categoriesAdulthood>
+        </li>
+      </backstoryFiltersOverride>
+      <initialWillRange>2~4</initialWillRange>
+      <initialResistanceRange>14~22</initialResistanceRange>
+      <maxGenerationAge>40</maxGenerationAge>
+      <gearHealthRange>0.5~1.8</gearHealthRange>
+      <apparelMoney>180~350</apparelMoney>
+      <apparelRequired>
+        <li>Apparel_TribalA</li>
+      </apparelRequired>
+      <apparelTags>
+        <li>Tribal</li>
+      </apparelTags>
+      <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+      <weaponMoney>450~500</weaponMoney>
+      <weaponTags>
+        <li>NeolithicRangedBasic</li>
+      </weaponTags>
+      <modExtensions>
+        <li Class="CombatExtended.LoadoutPropertiesExtension">
+          <primaryMagazineCount>
+            <min>20</min>
+            <max>40</max>
+          </primaryMagazineCount>
+          <shieldMoney>
+            <min>100</min>
+            <max>160</max>
+          </shieldMoney>
+          <shieldTags>
+            <li>TribalShield</li>
+          </shieldTags>
+          <shieldChance>0.6</shieldChance>
+          <sidearms>
+            <li>
+              <sidearmMoney>
+                <min>80</min>
+                <max>300</max>
+              </sidearmMoney>
+              <weaponTags>
+                <li>CE_Sidearm_Tribal</li>
+              </weaponTags>
+            </li>
+          </sidearms>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+</Patch>

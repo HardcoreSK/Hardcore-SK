@@ -193,6 +193,12 @@
 					<apparelMoney>370~900</apparelMoney>
 				</value>
 			</li>
+			<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/PawnKindDef[defName="Miner"]</xpath>
+				<value>
+					<backstoryFiltersOverride IsNull="True" />
+				</value>
+			</li>
 		</operations>
 	</Operation>
 
@@ -254,6 +260,12 @@
 					<apparelMoney>370~900</apparelMoney>
 				</value>
 			</li>
+			<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/PawnKindDef[defName="Logger"]</xpath>
+				<value>
+					<backstoryFiltersOverride IsNull="True" />
+				</value>
+			</li>
 		</operations>
 	</Operation>
 
@@ -313,6 +325,12 @@
 					<apparelMoney>370~900</apparelMoney>
 				</value>
 			</li>
+			<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/PawnKindDef[defName="Farmer"]</xpath>
+				<value>
+					<backstoryFiltersOverride IsNull="True" />
+				</value>
+			</li>
 		</operations>
 	</Operation>
 
@@ -359,7 +377,12 @@
 					<apparelMoney>670~1200</apparelMoney>
 				</value>
 			</li>
-
+			<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/PawnKindDef[defName="Hunter"]</xpath>
+				<value>
+					<backstoryFiltersOverride IsNull="True" />
+				</value>
+			</li>
 		</operations>
 	</Operation>
 

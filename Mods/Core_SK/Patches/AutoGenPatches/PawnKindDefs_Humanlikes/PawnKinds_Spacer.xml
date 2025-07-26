@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/PawnKindDef[@Name="SpaceRefugeeBase"]</xpath>
+    <value>
+      <combatPower>25</combatPower>
+      <defaultFactionType>Ancients</defaultFactionType>
+      <apparelTags>
+        <li>CryptosleepSpacer</li>
+      </apparelTags>
+      <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+      <techHediffsChance>0.35</techHediffsChance>
+      <minGenerationAge>18</minGenerationAge>
+      <techHediffsMaxAmount>5</techHediffsMaxAmount>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/PawnKindDef[defName="SpaceRefugee_Clothed"]</xpath>
+    <value>
+      <apparelMoney>1500~3000</apparelMoney>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier"]</xpath>
+    <value>
+      <combatPower>170</combatPower>
+      <defaultFactionType>AncientsHostile</defaultFactionType>
+      <itemQuality>Normal</itemQuality>
+      <apparelMoney>
+        <min>3000</min>
+        <max>4000</max>
+      </apparelMoney>
+      <apparelTags>
+        <li>BrotherhoodMedium</li>
+      </apparelTags>
+      <weaponMoney>
+        <min>500</min>
+        <max>800</max>
+      </weaponMoney>
+      <weaponTags>
+        <li>HitechMelee2H</li>
+      </weaponTags>
+      <apparelRequired>
+        <li>Apparel_ShieldBelt</li>
+      </apparelRequired>
+      <techHediffsMoney>4000~6000</techHediffsMoney>
+      <techHediffsTags>
+        <li>Advanced</li>
+      </techHediffsTags>
+      <initialResistanceRange>0~1</initialResistanceRange>
+    </value>
+  </Operation>
+
+</Patch>

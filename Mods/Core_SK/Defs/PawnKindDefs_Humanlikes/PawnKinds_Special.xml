@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+<!-- DefOverwrite
 	<PawnKindDef Name="SlaveBase">
 		<defName>Slave</defName>
 		<label>slave</label>
@@ -14,7 +15,7 @@
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
-		<defaultFactionDef>OutlanderCivil</defaultFactionDef>
+    <defaultFactionDef>OutlanderCivil</defaultFactionDef>
 		<itemQuality>Poor</itemQuality>
 		<backstoryCryptosleepCommonality>0.10</backstoryCryptosleepCommonality>
 		<isFighter>false</isFighter>
@@ -146,7 +147,7 @@
 			<li>Apparello_Shadess</li>
 		</apparelRequired>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-		<apparelColor>(0.2, 0.2, 0.2)</apparelColor> <!-- Matches favoriteColor -->
+		<apparelColor>(0.2, 0.2, 0.2)</apparelColor> --><!-- Matches favoriteColor --><!--
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
 		<favoriteColor MayRequire="Ludeon.RimWorld.Ideology">Black</favoriteColor>
 		<initialWillRange>0~0</initialWillRange>
@@ -198,7 +199,7 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
+-->
 	<PawnKindDef>
 		<defName>SpaceSlaverDead</defName>
 		<label>Space slaver</label>

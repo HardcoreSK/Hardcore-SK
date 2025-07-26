@@ -13,14 +13,11 @@
 		<combatPower>110</combatPower>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="TribalBeserkerBase">
+	<PawnKindDef ParentName="TribalBase">
 		<defName>Tribal_Berserker_Neanderthal</defName>
 		<label>Berserker neanderthal</label>
 		<combatPower>130</combatPower>
-		<weaponMoney>
-			<min>180</min>
-			<max>240</max>
-		</weaponMoney>
+		<weaponMoney>180~240</weaponMoney>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="TribalArcherBase">
@@ -35,7 +32,7 @@
 		<combatPower>135</combatPower>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="TribalHeavyArcherBase">
+	<PawnKindDef ParentName="TribalBase">
 		<defName>Tribal_HeavyArcher_Neanderthal</defName>
 		<label>Heavy archer neanderthal</label>
 		<combatPower>140</combatPower>
@@ -47,7 +44,7 @@
 		<combatPower>170</combatPower>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="SK_TribalChiefBase" Name="TribalChiefBaseNeanderthal" Abstract="True">
+	<PawnKindDef ParentName="TribalChiefBase" Name="TribalChiefBaseNeanderthal" Abstract="True">
 		<combatPower>190</combatPower>
 	</PawnKindDef>
 
@@ -63,10 +60,7 @@
 	<PawnKindDef ParentName="TribalChiefBaseNeanderthal">
 		<defName>Tribal_ChiefRanged_Neanderthal</defName>
 		<label>archer chief</label>
-		<weaponMoney>
-			<min>120</min>
-			<max>200</max>
-		</weaponMoney>
+		<weaponMoney>120~200</weaponMoney>
 		<weaponTags>
 			<li>NeolithicRangedBasic</li>
 		</weaponTags>

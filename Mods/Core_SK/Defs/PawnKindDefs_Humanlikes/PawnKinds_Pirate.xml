@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- Pirate Bases -->
+	<!-- Pirate Bases - DefOverwrite
 	<PawnKindDef Name="SK_PirateBase" Abstract="True">
 		<race>Human</race>
 		<defaultFactionType>Pirate</defaultFactionType>
@@ -26,7 +26,8 @@
 		<biocodeWeaponChance>0.1</biocodeWeaponChance>
 		<initialWillRange>1~3</initialWillRange>
 	</PawnKindDef>
-	<!-- Drifter -->
+	-->
+	<!-- Drifter 
 	<PawnKindDef ParentName="SK_PirateBase">
 		<defName>Drifter</defName>
 		<label>drifter</label>
@@ -71,8 +72,8 @@
 			</subOptionsChooseOne>
 		</inventoryOptions>
 	</PawnKindDef>
-
-	<!-- Thrasher -->
+-->
+	<!-- Thrasher 
 	<PawnKindDef ParentName="SK_PirateBase">
 		<defName>Thrasher</defName>
 		<label>thrasher</label>
@@ -125,9 +126,9 @@
 			</subOptionsChooseOne>
 		</inventoryOptions>
 	</PawnKindDef>
-
+-->
 	<!-- Crunchesher -->
-	<PawnKindDef ParentName="SK_PirateBase">
+	<PawnKindDef ParentName="PirateBase">
 		<defName>Crunchesher</defName>
 		<label>crunchesher</label>
 		<race>Human</race>
@@ -160,7 +161,7 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<!-- Scavenger -->
+	<!-- Scavenger - DefOverwrite
 	<PawnKindDef ParentName="SK_PirateBase">
 		<defName>Scavenger</defName>
 		<label>scavenger</label>
@@ -227,8 +228,8 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
-	<!-- Pirate -->
+-->
+	<!-- Pirate 
 	<PawnKindDef ParentName="SK_PirateBase">
 		<defName>Pirate</defName>
 		<label>pirate gunner</label>
@@ -294,8 +295,9 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
+	-->
 	<!-- Pirate -->
-	<PawnKindDef ParentName="SK_PirateBase">
+	<PawnKindDef ParentName="PirateBase">
 		<defName>PirateBomb</defName>
 		<label>pirate bomber</label>
 		<race>Human</race>

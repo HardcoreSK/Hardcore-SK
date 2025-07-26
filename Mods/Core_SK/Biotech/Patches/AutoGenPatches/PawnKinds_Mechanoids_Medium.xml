@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/PawnKindDef[defName="Mech_Legionary"]</xpath>
+    <value>
+		<combatPower>300</combatPower>
+		<weaponMoney>8000~8000</weaponMoney>
+		<weaponTags>
+			<li>MechanoidGunIndirect</li>
+		</weaponTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>6000~6000</techHediffsMoney>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>4</min>
+					<max>6</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/PawnKindDef[defName="Mech_Tesseron"]</xpath>
+    <value>
+		<combatPower>300</combatPower>
+		<weaponTags>
+			<li>BeamGraserGun</li>
+		</weaponTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>6000~6000</techHediffsMoney>
+		<aiAvoidCover>false</aiAvoidCover>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/PawnKindDef[defName="Mech_Scorcher"]</xpath>
+    <value>
+		<combatPower>270</combatPower>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>6</min>
+					<max>9</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+    </value>
+  </Operation>
+
+</Patch>

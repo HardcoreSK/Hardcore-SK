@@ -80,7 +80,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<PawnKindDef ParentName="SK_BaseMechanoidKind">
 		<defName>Mech_Legionary</defName>
 		<label>legionary</label>
@@ -121,7 +121,7 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
+-->
 	<!-- Tesseron -->
 	<ThingDef ParentName="LancerMechanoidWalker">
 		<defName>Mech_Tesseron</defName>
@@ -155,7 +155,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<PawnKindDef ParentName="SK_BaseMechanoidKind">
 		<defName>Mech_Tesseron</defName>
 		<label>tesseron</label>
@@ -189,7 +189,7 @@
 		<techHediffsMoney>6000~6000</techHediffsMoney>
 		<aiAvoidCover>false</aiAvoidCover>
 	</PawnKindDef>
-
+-->
 	<!-- Scorcher -->
 	<ThingDef ParentName="SK_BaseMechanoidWalker">
 		<defName>Mech_Scorcher</defName>
@@ -264,7 +264,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<PawnKindDef ParentName="SK_BaseMechanoidKind">
 		<defName>Mech_Scorcher</defName>
 		<label>scorcher</label>
@@ -306,7 +306,7 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
+-->
 	<!-- Apocriton -->
 	<ThingDef ParentName="SK_BaseMechanoidWalker">
 		<defName>Mech_Apocriton</defName>
@@ -376,7 +376,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<PawnKindDef ParentName="SK_BaseMechanoidKind">
 		<defName>Mech_Apocriton</defName>
 		<label>apocriton</label>
@@ -424,6 +424,6 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
+-->
 
 </Defs>

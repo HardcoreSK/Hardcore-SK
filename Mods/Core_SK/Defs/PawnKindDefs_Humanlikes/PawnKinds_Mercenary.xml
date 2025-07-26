@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- Mercenary Bases -->
+	<!-- Mercenary Bases - DefOverwrite
 	<PawnKindDef Name="SK_MercenaryBase" Abstract="True">
 		<race>Human</race>
 		<defaultFactionType>Pirate</defaultFactionType>
@@ -33,9 +33,9 @@
 		<biocodeWeaponChance>0.1</biocodeWeaponChance>
 		<initialWillRange>1~3</initialWillRange>
 	</PawnKindDef>
+-->
 
-
-	<!-- Gunner -->
+	<!-- Gunner 
 	<PawnKindDef ParentName="SK_MercenaryBase" Name="MercenaryGunnerBase" Abstract="True">
 		<label>Mercenary Gunner</label>
 		<race>Human</race>
@@ -104,6 +104,7 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
+
 	<PawnKindDef ParentName="MercenaryGunnerBase">
 		<defName>Mercenary_Gunner</defName>
 	</PawnKindDef>
@@ -113,9 +114,9 @@
 			<li>DeathAcidifier</li>
 		</techHediffsRequired>
 	</PawnKindDef>
+	-->
 
-
-	<!-- Fusilier -->
+	<!-- Fusilier 
 	<PawnKindDef ParentName="SK_MercenaryBase" Name="MercenarySniperBase" Abstract="True">
 		<label>Mercenary fusilier</label>
 		<race>Human</race>
@@ -173,7 +174,7 @@
 							<li>CE_Sidearm_Melee</li>
 						</weaponTags>
 					</li>
-					<!-- 		
+					--><!-- 		
 					<li>
 						<generateChance>0.1</generateChance>
 						<sidearmMoney>
@@ -188,7 +189,7 @@
 							<max>2</max>
 						</magazineCount>
 					</li>
-					-->
+					--><!--
 				</sidearms>
 			</li>
 		</modExtensions>
@@ -216,8 +217,8 @@
 			<li>DeathAcidifier</li>
 		</techHediffsRequired>
 	</PawnKindDef>
-
-	<!-- Grenadier Base -->
+-->
+	<!-- Grenadier Base - DefOverwrite
 	<PawnKindDef ParentName="SK_MercenaryBase" Name="GrenadierBase" Abstract="True">
 		<race>Human</race>
 		<combatPower>170</combatPower>
@@ -260,7 +261,7 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
+-->
 	<!-- Grenadier -->
 	<PawnKindDef ParentName="GrenadierBase" Name="GrenadierDestructiveBase" Abstract="True">
 		<label>Grenadier</label>
@@ -293,7 +294,7 @@
 	</PawnKindDef>
 
 
-	<!-- Grenadier EMP -->
+	<!-- Grenadier EMP - DefOverwrite
 	<PawnKindDef ParentName="GrenadierDestructiveBase">
 		<defName>Grenadier_EMP</defName>
 		<label>Advanced grenadier</label>
@@ -301,8 +302,8 @@
 			<li>GrenadeTierThree</li>
 		</weaponTags>
 	</PawnKindDef>
-
-	<!-- Grenadier Smoke -->
+-->
+	<!-- Grenadier Smoke  - DefOverwrite
 	<PawnKindDef ParentName="GrenadierDestructiveBase">
 		<defName>Grenadier_Smoke</defName>
 		<label>Smoke grenadier</label>
@@ -311,9 +312,9 @@
 		</weaponTags>
 		<weaponMoney>450~500</weaponMoney>
 	</PawnKindDef>
-
-	<!-- Slasher -->
-	<PawnKindDef ParentName="SK_MercenaryBase" Name="MercenarySlasherBase" Abstract="True">
+-->
+	<!-- Slasher - DefOverwrite
+	<PawnKindDef ParentName="MercenaryBase" Name="MercenarySlasherBase" Abstract="True">
 		<label>Mercenary Slasher</label>
 		<combatPower>170</combatPower>
 		<race>Human</race>
@@ -362,9 +363,9 @@
 			<li>DeathAcidifier</li>
 		</techHediffsRequired>
 	</PawnKindDef>
-
-	<!-- Heavy Mercenary -->
-	<PawnKindDef ParentName="SK_MercenaryBase" Name="MercenaryHeavyBase" Abstract="True">
+-->
+	<!-- Heavy Mercenary - DefOverwrite
+	<PawnKindDef ParentName="MercenaryBase" Name="MercenaryHeavyBase" Abstract="True">
 		<label>Heavy Mercenary</label>
 		<labelPlural>heavy mercenaries</labelPlural>
 		<combatPower>190</combatPower>
@@ -424,7 +425,7 @@
 	<PawnKindDef ParentName="MercenaryHeavyBase">
 		<defName>Mercenary_Heavy</defName>
 	</PawnKindDef>
-
+-->
 	<PawnKindDef ParentName="MercenaryHeavyBase">
 		<defName>Mercenary_Heavy_Acidifier</defName>
 		<techHediffsRequired>
@@ -432,8 +433,8 @@
 		</techHediffsRequired>
 	</PawnKindDef>
 
-	<!-- Elite Base -->
-	<PawnKindDef Abstract="True" Name="EliteBase" ParentName="SK_MercenaryBase">
+	<!-- Elite Base - DefOverwrite
+	<PawnKindDef Abstract="True" Name="EliteBase" ParentName="MercenaryBase">
 		<race>Human</race>
 		<backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>
 		<gearHealthRange>1~1</gearHealthRange>
@@ -471,8 +472,8 @@
 			</li>
 		</skills>
 	</PawnKindDef>
-
-	<!-- Boss -->
+-->
+	<!-- Boss - DefOverwrite
 	<PawnKindDef ParentName="EliteBase">
 		<defName>PirateBoss</defName>
 		<label>Boss</label>
@@ -523,8 +524,8 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
-	<!-- Elite -->
+-->
+	<!-- Elite - DefOverwrite
 	<PawnKindDef ParentName="EliteBase" Name="MercenaryEliteBase" Abstract="True">  
 		<label>elite mercenary</label>
 		<labelPlural>elite mercenaries</labelPlural>
@@ -584,5 +585,5 @@
 		</techHediffsRequired>
 		<initialResistanceRange>12~20</initialResistanceRange>
 	</PawnKindDef>
-
+ -->
 </Defs>
