@@ -29,7 +29,7 @@
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/RecipeDef[defName = "Make_StoneBlocksLavaRock"]</xpath>
 			<value>
-				<RecipeDef ParentName="SK_MakeStoneBlocksBase">
+				<RecipeDef ParentName="MakeStoneBlocksBase">
 					<defName>Make_StoneBlocksLavaRock</defName>
 					<label>make basalt blocks</label>
 					<description>Cuts basalt chunks into usable blocks.</description>

@@ -1724,6 +1724,7 @@
 	</RecipeDef>
  -->
 	<!--___________________BiofuelRefinery_____________________-->
+	<!-- DefOverwrite
 	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
 		<defName>Make_ChemfuelFromWood</defName>
 		<label>make chemfuel from wood</label>
@@ -1750,7 +1751,7 @@
 			<li>BiofuelRefinery</li>
 		</recipeUsers>
 
-		<!-- RecipeDef_UF fields -->
+		--><!-- RecipeDef_UF fields --><!--
 		<ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>5</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
 		<usesTemperature>false</usesTemperature>
 		<processDays>1.5</processDays>
@@ -1813,10 +1814,10 @@
 			<li>BiofuelRefinery</li>
 		</recipeUsers>
 
-		<!-- RecipeDef_UF fields -->
+		--><!-- RecipeDef_UF fields --><!--
 		<ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>5</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
 		<usesTemperature>false</usesTemperature>
 		<processDays>1.5</processDays>
 	</RecipeDef>
-
+-->
 </Defs>
