@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-  <Operation Class="SK.PatchOperationReplaceExtended" Debug="true">
+  <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/RecipeDef[defName="Make_Wort"]</xpath>
     <value>
       <label>Brew wort</label>
