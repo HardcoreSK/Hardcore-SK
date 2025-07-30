@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="PsychiteTea"]</xpath>
+    <value Merge="true">
+      <ingestible>
+        <outcomeDoers>
+          <li Class="IngestionOutcomeDoer_GiveHediff">
+            <hediffDef>PsychiteTeaHigh</hediffDef>
+            <severity>0.75</severity>
+            <toleranceChemical>Psychite</toleranceChemical>
+          </li>
+          <li Class="IngestionOutcomeDoer_OffsetNeed">
+            <need>Rest</need>
+            <offset>0.1</offset>
+            <toleranceChemical>Psychite</toleranceChemical>
+          </li>
+          <li Class="IngestionOutcomeDoer_GiveHediff">
+            <hediffDef>PsychiteTolerance</hediffDef>
+            <severity>0.03</severity>
+            <divideByBodySize>true</divideByBodySize>
+          </li>
+        </outcomeDoers>
+      </ingestible>
+      <recipeMaker>
+        <researchPrerequisite>Food_00</researchPrerequisite><!--
+        <recipeUsers>
+          <li>Campfire</li>
+          <li>FueledStove</li>
+          <li>ElectricStove</li>
+        </recipeUsers>
+        <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+        <workSkill>Cooking</workSkill>
+        <skillRequirements>
+          <Cooking>2</Cooking>
+        </skillRequirements>
+        <requiredGiverWorkType>Cooking</requiredGiverWorkType>-->
+      </recipeMaker>
+    </value>
+  </Operation>
+
+</Patch>

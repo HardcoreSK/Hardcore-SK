@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs</xpath>
-    <value>
-		<RecipeDef Name="Redirect.GlitterpediaModExtBase" ParentName="GlitterpediaModExtBase" Abstract="True" />
-    </value>
-  </Operation>
-
   <Operation Class="PatchOperationAttributeSet">
 	  <xpath>Defs/RecipeDef[defName="Make_ChemfuelFromWood"]</xpath>
 	  <attribute>ParentName</attribute>
