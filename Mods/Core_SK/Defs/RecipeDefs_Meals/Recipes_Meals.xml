@@ -228,7 +228,7 @@
 		<researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
 	</RecipeDef>
 
-
+<!-- DefOverwrite
 	<RecipeDef>
 		<defName>CookMealSimple</defName>
 		<label>cook fruit salad</label>
@@ -346,7 +346,7 @@
 		</recipeUsers>
 		<researchPrerequisite>Food_B1</researchPrerequisite>
 	</RecipeDef>
-
+-->
 	<RecipeDef Name="CookRoastedMeat">
 		<defName>CookRoastedMeat</defName>
 		<label>cook roasted meat</label>
@@ -459,7 +459,7 @@
 		<researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
 	</RecipeDef>
 
-
+<!-- DefOverwrite
 	<RecipeDef Name="CookMealFineBase" Abstract="True">
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
@@ -478,7 +478,7 @@
 		</recipeUsers>
 		<researchPrerequisite>Food_B4</researchPrerequisite>
 	</RecipeDef>
-
+ --> <!-- DefOverwrite
 	<RecipeDef ParentName="CookMealFineBase">
 		<defName>CookMealFine</defName>
 		<label>cook fine meal (x2)</label>
@@ -548,7 +548,7 @@
 			</disallowedCategories>
 		</defaultIngredientFilter>
 	</RecipeDef>
-
+--> <!-- DefOverwrite
 	<RecipeDef Name="CookMealFineBulkBase" Abstract="True">
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
@@ -566,7 +566,7 @@
 		</recipeUsers>
 		<researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
 	</RecipeDef>
-
+--><!-- DefOverwrite
 	<RecipeDef ParentName="CookMealFineBulkBase">
 		<defName>CookMealFineBulk</defName>
 		<label>cook fine meal (x8)</label>
@@ -636,8 +636,8 @@
 			</disallowedCategories>
 		</defaultIngredientFilter>
 	</RecipeDef>
-
-
+-->
+<!-- DefOverwrite
 	<RecipeDef Name="CookMealLavishBase" Abstract="True">
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
@@ -655,7 +655,7 @@
 		</recipeUsers>
 		<researchPrerequisite>Food_C1</researchPrerequisite>
 	</RecipeDef>
-
+--><!-- DefOverwrite
 	<RecipeDef ParentName="CookMealLavishBase">
 		<defName>CookMealLavish</defName>
 		<label>cook lavish meal (x2)</label>
@@ -749,8 +749,8 @@
 			</disallowedCategories>
 		</defaultIngredientFilter>
 	</RecipeDef>
-
-
+-->
+<!-- DefOverwrite
 	<RecipeDef Name="CookMealLavishBulkBase" Abstract="True">
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
@@ -768,7 +768,8 @@
 		</recipeUsers>
 		<researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
 	</RecipeDef>
-
+-->
+<!-- DefOverwrite
 	<RecipeDef ParentName="CookMealLavishBulkBase">
 		<defName>CookMealLavishBulk</defName>
 		<label>cook lavish meal (x8)</label>
@@ -863,7 +864,7 @@
 			</disallowedCategories>
 		</defaultIngredientFilter>
 	</RecipeDef>
-
+-->
 
 	<!--<RecipeDef>
 		<defName>CookMealLuxury</defName>
@@ -1068,7 +1069,7 @@
 			<li>ElectricStove_Pro</li>
 		</recipeUsers>
 	</RecipeDef> -->
-
+<!-- DefOverwrite
 	<RecipeDef>
 		<defName>CookMealSurvival</defName>
 		<label>cook packaged survival meal</label>
@@ -1162,7 +1163,7 @@
 		</recipeUsers>
 		<researchPrerequisite>Food_C7</researchPrerequisite>
 	</RecipeDef>
-
+--> <!-- DefOverwrite
 	<RecipeDef>
 		<defName>CookMealSurvivalBulk</defName>
 		<label>cook packaged survival meal (x4)</label>
@@ -1255,7 +1256,7 @@
 		</recipeUsers>
 		<researchPrerequisite>Food_C7</researchPrerequisite>
 	</RecipeDef>
-
+--><!-- DefOverwrite
 	<RecipeDef>
 		<defName>Make_Pemmican</defName>
 		<label>make pemmican</label>
@@ -1320,7 +1321,7 @@
 		</recipeUsers>
 		<researchPrerequisite>Food_0</researchPrerequisite>
 	</RecipeDef>
-
+--><!-- DefOverwrite
 	<RecipeDef>
 		<defName>Make_PemmicanBulk</defName>
 		<label>make pemmican x4</label>
@@ -1385,5 +1386,5 @@
 		</recipeUsers>
 		<researchPrerequisite>Pemmican</researchPrerequisite>
 	</RecipeDef>
-
+-->
 </Defs>
