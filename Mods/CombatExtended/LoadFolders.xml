@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <loadFolders>
 	<v1.6>
 		<!-- Core Files -->
@@ -135,6 +135,7 @@
 		<li IfModActive="Pal5k.DeployableTurret">ModPatches/Deployable Turret</li>
 		<li IfModActive="DetVisor.EnergyWeapons">ModPatches/Det's Energy Weapons</li>
 		<li IfModActive="det.boglegs">ModPatches/Det's Xenotypes - Boglegs</li>
+		<li IfModActive="det.halffoot">ModPatches/Det's Xenotypes - Half-foot</li>
 		<li IfModActive="det.keshig">ModPatches/Det's Xenotypes - Keshig</li>
 		<li IfModActive="det.venators">ModPatches/Det's Xenotypes - Venators</li>
 		<li IfModActive="ATK.DevilstrandAnimals">ModPatches/Devilstrand Animals</li>
@@ -171,6 +172,7 @@
 		<li IfModActive="Erin.Azaphrae">ModPatches/Erin's Azaphrae</li>
 		<li IfModActive="Erin.Chocobos">ModPatches/Erin's Chocobos</li>
 		<li IfModActive="Erin.FFRaces">ModPatches/Erin's Final Fantasy Races</li>
+		<li IfModActive="Erin.FluffyFauna">ModPatches/Erin's Fluffy Fauna</li>		
 		<li IfModActive="Erin.Foxsquirrel">ModPatches/Erin's Fox Squirrel</li>
 		<li IfModActive="Erin.Ferret">ModPatches/Erin's Friendly Ferrets</li>
 		<li IfModActive="Erin.LizzardDoggo">ModPatches/Erin's Lizard Doggo</li>
@@ -325,6 +327,7 @@
 		<li IfModActive="MSE2.Core">ModPatches/Medical System Expansion 2</li>
 		<li IfModActive="Mlie.MedicalSupplements">ModPatches/Medicine Supplements (Continued)</li>
 		<li IfModActive="Arisher.Medieval.Bowyer">ModPatches/Medieval Bowyer</li>
+		<li IfModActive="Gerrymon.MCO">ModPatches/Medieval Coastal Outfits</li>		
 		<li IfModActive="JoeDaly.MedMeds.MO">ModPatches/Medieval Medicines 1.4 Medieval Overhaul Edition</li>
 		<li IfModActive="DankPyon.Medieval.Overhaul">ModPatches/Medieval Overhaul</li>
 		<li IfModActive="Turkler.MedievalOverhaul.ArcaneArchaeologists">ModPatches/Medieval Overhaul Arcane Archaeologists</li>
@@ -345,6 +348,7 @@
 		<li IfModActive="Haplo.Miscellaneous.MAI">ModPatches/Misc MAI</li>
 		<li IfModActive="Haplo.Miscellaneous.Robots">ModPatches/MiscRobots</li>
 		<li IfModActive="Haplo.Miscellaneous.TurretBaseAndObjects">ModPatches/MiscTurrets</li>
+		<li IfModActive="misstall.nisstallsoutfitszzz">ModPatches/Misstall's Armor and Uniforms</li>
 		<li IfModActive="dninemfive.moa">ModPatches/Moa</li>
 		<li IfModActive="Moonjelly.Race.Mod, zal.moonjelly">ModPatches/Moonjelly Race</li>
 		<li IfModActive="Taranchuk.MoreArchotechGarbageContinued">ModPatches/More Archotech Garbage Continued</li>
@@ -594,8 +598,11 @@
 		<li IfModActive="BLG.VWP">ModPatches/Valorant Weapon Pack</li>
 		<li IfModActive="RedMattis.Undead">ModPatches/Vampire, Demons, and the Undead</li>
 		<li IfModActive="VanillaExpanded.VanillaAnimalsExpanded">ModPatches/Vanilla Animals Expanded</li>
+		<li IfModActive="VanillaExpanded.VanillaAnimalsExpanded" IfModNotActive="Ludeon.Rimworld.Odyssey">ModPatches/Vanilla Animals Expanded/NotOdyssey</li>
 		<li IfModActive="VanillaExpanded.VAEEndAndExt">ModPatches/Vanilla Animals Expanded - Endangered</li>
+		<li IfModActive="VanillaExpanded.VAEEndAndExt" IfModNotActive="Ludeon.Rimworld.Odyssey">ModPatches/Vanilla Animals Expanded - Endangered/NotOdyssey</li>
 		<li IfModActive="VanillaExpanded.VAERoy">ModPatches/Vanilla Animals Expanded - Royal Animals</li>
+		<li IfModActive="VanillaExpanded.VAERoy" IfModNotActive="Ludeon.Rimworld.Odyssey">ModPatches/Vanilla Animals Expanded - Royal Animals/NotOdyssey</li>
 		<li IfModActive="VanillaExpanded.VAEWaste">ModPatches/Vanilla Animals Expanded - Waste Animals</li>
 		<li IfModActive="VanillaExpanded.VAPPE">ModPatches/Vanilla Apparel Expanded</li>
 		<li IfModActive="VanillaExpanded.VAEAccessories">ModPatches/Vanilla Apparel Expanded - Accessories</li>
@@ -674,6 +681,7 @@
 		<li IfModActive="Phonicmas.40kGenes">ModPatches/Warhammer 40k Genes</li>
 		<li IfModActive="Phonicmas.40kFactions">ModPatches/Warhammer 40k Factions</li>
 		<li IfModActive="Thek.WTB">ModPatches/Waster Toxic Breather</li>
+		<li IfModActive="DimonSever000.WeaponProficiency">ModPatches/Weapon Proficiency</li>
 		<li IfModActive="Kyrrisayo.WeaponsPlus">ModPatches/Weapons+</li>
 		<li IfModActive="Owlchemist.Windows">ModPatches/Windows</li>
 		<li IfModActive="forestfey.SpiritWolf">ModPatches/Xen's Spirit Wolf</li>
