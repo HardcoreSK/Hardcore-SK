@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="AncientBarrierLong" or defName="AncientMilitaryBarrier"]</xpath>
+		<value>
+			<costList>
+				<ReinforcedConcrete>10</ReinforcedConcrete>
+				<ConcreteResource>20</ConcreteResource>
+			</costList>
+		</value>
+	</Operation>
+</Patch>

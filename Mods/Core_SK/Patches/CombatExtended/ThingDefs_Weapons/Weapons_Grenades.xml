@@ -2,10 +2,10 @@
 <Patch>
 
 	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ThingDef[defName="Proj_GrenadeFirefoam" or
-								defName="Proj_GrenadeSmoke" or
-								defName="Proj_GrenadeStickBomb" or
-								defName="Proj_GrenadeFlashbang"]</xpath>
+		<xpath>Defs/ThingDef[defName="CE_Proj_GrenadeFirefoam" or
+								defName="CE_Proj_GrenadeSmoke" or
+								defName="CE_Proj_GrenadeStickBomb" or
+								defName="CE_Proj_GrenadeFlashbang"]</xpath>
 		<attribute>ParentName</attribute>
 		<value>SK.SK_BaseGrenadeProjectileDummy</value>
 	</Operation>
@@ -13,12 +13,12 @@
 	<!-- Config error in Weapon_GrenadeConcussion: verb 0: has incorrect forcedMiss settings; explosive projectiles and only explosive projectiles should have forced miss enabled -->
 	<!-- But WHYYYYY??? -->
 	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[defName="Proj_GrenadeConcussion" or
-								defName="Weapon_GrenadeConcussion"]</xpath>
+		<xpath>Defs/ThingDef[defName="CE_Proj_GrenadeConcussion" or
+								defName="CE_Weapon_GrenadeConcussion"]</xpath>
 	</Operation>
 
 	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="Proj_GrenadeFlashbang"]/projectile</xpath>
+		<xpath>Defs/ThingDef[defName="CE_Proj_GrenadeFlashbang"]/projectile</xpath>
 		<value>
 			<explosionRadius>4</explosionRadius>
 			<damageDef>Stun</damageDef>
@@ -37,7 +37,7 @@
 	</Operation>
 
 	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="Weapon_GrenadeFlashbang"]</xpath>
+		<xpath>Defs/ThingDef[defName="CE_Weapon_GrenadeFlashbang"]</xpath>
 		<value>
 			<smeltable>true</smeltable>
 			<comps>
@@ -57,7 +57,7 @@
 	</Operation>
 
 	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="Proj_GrenadeStickBomb"]/projectile</xpath>
+		<xpath>Defs/ThingDef[defName="CE_Proj_GrenadeStickBomb"]/projectile</xpath>
 		<value>
 			<explosionRadius>2</explosionRadius>
 			<damageDef>Bomb</damageDef>
@@ -73,7 +73,7 @@
 	</Operation>
 
 	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="Weapon_GrenadeStickBomb"]</xpath>
+		<xpath>Defs/ThingDef[defName="CE_Weapon_GrenadeStickBomb"]</xpath>
 		<value>
 			<smeltable>true</smeltable>
 			<weaponTags>
@@ -92,7 +92,7 @@
 	</Operation>
 
 	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="Weapon_GrenadeStickBomb"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]</xpath>
+		<xpath>Defs/ThingDef[defName="CE_Weapon_GrenadeStickBomb"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]</xpath>
 		<value>
 			<label>throw stick bomb</label>
 			<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
@@ -107,7 +107,7 @@
 			<targetParams>
 				<canTargetLocations>true</canTargetLocations>
 			</targetParams>
-			<defaultProjectile>Proj_GrenadeStickBomb</defaultProjectile>
+			<defaultProjectile>CE_Proj_GrenadeStickBomb</defaultProjectile>
 			<onlyManualCast>true</onlyManualCast>
 			<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
 			<ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
@@ -115,7 +115,7 @@
 	</Operation>
 
 	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="Proj_GrenadeSmoke"]/projectile</xpath>
+		<xpath>Defs/ThingDef[defName="CE_Proj_GrenadeSmoke"]/projectile</xpath>
 		<value>
 			<explosionRadius>4</explosionRadius>
 			<damageDef>Smoke</damageDef>
@@ -133,7 +133,7 @@
 	</Operation>
 
 	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="Weapon_GrenadeFirefoam"]</xpath>
+		<xpath>Defs/ThingDef[defName="CE_Weapon_GrenadeFirefoam"]</xpath>
 		<value>
 			<smeltable>true</smeltable>
 			<smeltProducts>
@@ -145,7 +145,7 @@
 	</Operation>
 
 	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="Weapon_GrenadeFirefoam"]</xpath>
+		<xpath>Defs/ThingDef[defName="CE_Weapon_GrenadeFirefoam"]</xpath>
 		<value>
 			<smeltProducts>
 				<Steel>4</Steel>
