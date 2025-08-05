@@ -49,6 +49,10 @@
 		<biomesWithExtraGeneration/>
 		<extraGeneration>0</extraGeneration>
 		<allowedBiomes/>
+		<forbiddenBiomes>
+			<li>Space</li>
+			<li>Orbit</li>
+		</forbiddenBiomes>
 		<findCellsOutsideColony>false</findCellsOutsideColony>
 		<OnlyOnPlayerHomeMap>true</OnlyOnPlayerHomeMap>
 	</SK.ObjectSpawnsDef>
