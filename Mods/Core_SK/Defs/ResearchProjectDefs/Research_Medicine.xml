@@ -81,10 +81,10 @@
 			<li>ClassicStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
 		<defName>Prosthetics</defName>
-		<!-- Prosthesis_install_B1 -->
+		--><!-- Prosthesis_install_B1 --><!--
 		<label>Prosthesis install I</label>
 		<description>description</description>
 		<baseCost>400</baseCost>
@@ -96,7 +96,7 @@
 		<researchViewY>64.00</researchViewY>
 		<tab>Medicine_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="MedievalBase">
 		<defName>Prosthesis_making_B1</defName>
 		<label>Prosthesis making I</label>
@@ -124,10 +124,10 @@
 		<researchViewY>67.00</researchViewY>
 		<tab>Medicine_SK</tab>
 	</ResearchProjectDef>
-
+<!--
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>MedicineProduction</defName>
-		<!-- Medicine_C1 -->
+		--><!-- Medicine_C1 --><!--
 		<label>Medical supplies V</label>
 		<description>description</description>
 		<baseCost>1000</baseCost>
@@ -139,7 +139,7 @@
 		<researchViewY>62.00</researchViewY>
 		<tab>Medicine_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="MedievalBase">
 		<defName>Clinical_C1</defName>
 		<label>Medical equipment II</label>
@@ -153,10 +153,10 @@
 		<researchViewY>63.00</researchViewY>
 		<tab>Medicine_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>HospitalBed</defName>
-		<!-- Clinical_C2 -->
+		--><!-- Clinical_C2 --><!--
 		<label>Medical equipment III</label>
 		<description>description</description>
 		<baseCost>1300</baseCost>
@@ -169,10 +169,10 @@
 		<researchViewY>63.00</researchViewY>
 		<tab>Medicine_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
 		<defName>VitalsMonitor</defName>
-		<!-- Clinical_C3 -->
+		--><!-- Clinical_C3 --><!--
 		<label>Medical equipment IV</label>
 		<description>description</description>
 		<baseCost>1200</baseCost>
@@ -187,7 +187,7 @@
 			<li>AsariStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>Prosthesis_install_C1</defName>
 		<label>Prosthesis install II</label>
@@ -481,10 +481,10 @@
 		<researchViewY>65.00</researchViewY>
 		<tab>Medicine_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechMultiBase">
 		<defName>Bionics</defName>
-		<!-- Prosthesis_making_D5 -->
+		--><!-- Prosthesis_making_D5 --><!--
 		<label>Prosthesis making VIII</label>
 		<description>description</description>
 		<baseCost>1500</baseCost>
@@ -496,7 +496,7 @@
 		<researchViewY>65.00</researchViewY>
 		<tab>Medicine_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="HitechMultiBase">
 		<defName>BrainWiring</defName>
 		<label>Brain wiring</label>
@@ -516,7 +516,7 @@
 			<li>Empire</li>
 		</heldByFactionCategoryTags>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="HitechMultiBase">
 		<defName>SpecializedLimbs</defName>
 		<label>Specialized limbs</label>
@@ -536,7 +536,7 @@
 			<li>Empire</li>
 		</heldByFactionCategoryTags>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="HitechMultiBase">
 		<defName>CompactWeaponry</defName>
 		<label>Compact weaponry</label>
@@ -556,7 +556,7 @@
 			<li>Empire</li>
 		</heldByFactionCategoryTags>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="HitechMultiBase">
 		<defName>VenomSynthesis</defName>
 		<label>Poison synthesis</label>
@@ -576,7 +576,7 @@
 			<li>Empire</li>
 		</heldByFactionCategoryTags>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="HitechMultiBase">
 		<defName>ArtificialMetabolism</defName>
 		<label>Artificial metabolism</label>
@@ -596,7 +596,7 @@
 			<li>Empire</li>
 		</heldByFactionCategoryTags>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="HitechMultiBase">
 		<defName>NeuralComputation</defName>
 		<label>Neural computation</label>
@@ -616,7 +616,7 @@
 			<li>Empire</li>
 		</heldByFactionCategoryTags>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="HitechMultiBase">
 		<defName>SkinHardening</defName>
 		<label>Skin hardening</label>
@@ -636,7 +636,7 @@
 			<li>Empire</li>
 		</heldByFactionCategoryTags>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="HitechMultiBase">
 		<defName>HealingFactors</defName>
 		<label>Healing factors</label>
@@ -656,7 +656,7 @@
 			<li>Empire</li>
 		</heldByFactionCategoryTags>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="HitechMultiBase">
 		<defName>MolecularAnalysis</defName>
 		<label>Molecular analysis</label>
@@ -676,7 +676,7 @@
 			<li>Empire</li>
 		</heldByFactionCategoryTags>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="HitechMultiBase">
 		<defName>CircadianInfluence</defName>
 		<label>Circadian influence</label>
@@ -696,7 +696,7 @@
 			<li>Empire</li>
 		</heldByFactionCategoryTags>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="HitechMultiBase">
 		<defName>FleshShaping</defName>
 		<label>Flesh Shaping</label>
@@ -716,7 +716,7 @@
 			<li>Empire</li>
 		</heldByFactionCategoryTags>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="HitechMultiBase">
 		<defName>Heal_disease_D1</defName>
 		<label>Treatment of diseases II</label>
@@ -885,10 +885,10 @@
 		<researchViewY>61.00</researchViewY>
 		<tab>Medicine_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="PrimitiveBase">
 		<defName>PsychoidBrewing</defName>
-		<!-- Drugs_A2 -->
+		--><!-- Drugs_A2 --><!--
 		<label>Drugs II</label>
 		<description>description</description>
 		<baseCost>100</baseCost>
@@ -901,7 +901,7 @@
 		<tab>Medicine_SK</tab>
 		<tags IsNull="true" Inherit="false"/>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="PrimitiveBase">
 		<defName>Drugs_B1</defName>
 		<label>Drugs III</label>
@@ -916,10 +916,10 @@
 		<tab>Medicine_SK</tab>
 		<tags IsNull="true" Inherit="false"/>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>DrugProduction</defName>
-		<!-- Drugs_C1 -->
+		--><!-- Drugs_C1 --><!--
 		<label>Drugs IV</label>
 		<description>description</description>
 		<baseCost>1300</baseCost>
@@ -934,7 +934,7 @@
 			<li>NovaStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>Drugs_C2</defName>
 		<label>Penoxycyline Production</label>
@@ -964,10 +964,10 @@
 		<researchViewY>61.00</researchViewY>
 		<tab>Medicine_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
 		<defName>PenoxycylineProduction</defName>
-		<!-- Drugs_C4 -->
+		--><!-- Drugs_C4 --><!--
 		<label>Drugs V</label>
 		<description>description</description>
 		<baseCost>1000</baseCost>
@@ -979,7 +979,7 @@
 		<researchViewY>59.00</researchViewY>
 		<tab>Medicine_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
 		<defName>WakeUpProduction</defName>
 		<label>Wake-up Production</label>
@@ -993,7 +993,7 @@
 		<researchViewY>60.00</researchViewY>
 		<tab>Medicine_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
 		<defName>PsychiteRefining</defName>
 		<label>Psychite Refining</label>
@@ -1007,7 +1007,7 @@
 		<researchViewY>61.00</researchViewY>
 		<tab>Medicine_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
 		<defName>GoJuiceProduction</defName>
 		<label>Go-juice Production</label>
@@ -1022,7 +1022,7 @@
 		<researchViewY>61.00</researchViewY>
 		<tab>Medicine_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="HitechBase">
 		<defName>SynchronisityRefining</defName>
 		<label>synchronite refining</label>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="SterileMaterials"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="SterileMaterials"]</xpath>
+    <value>
+      <label>Medicine floor</label>
+      <description>description</description>
+      <baseCost>900</baseCost>
+      <techLevel>Spacer</techLevel>
+      <prerequisites>
+        <li>Plastic_floor_C4</li>
+      </prerequisites>
+      <researchViewX>17.00</researchViewX>
+      <researchViewY>4.00</researchViewY>
+      <tab>Floors_SK</tab>
+      <tags>
+        <li>NovaStart</li>
+      </tags>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="CarpetMaking"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.MedievalBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="CarpetMaking"]</xpath>
+    <value>
+      <label>Carpets VI</label>
+      <description>description</description>
+      <baseCost>200</baseCost>
+      <prerequisites>
+        <li>Carpets_B1</li>
+      </prerequisites>
+      <researchViewX>6.00</researchViewX>
+      <researchViewY>2.00</researchViewY>
+      <tab>Floors_SK</tab>
+    </value>
+  </Operation>
+
+</Patch>

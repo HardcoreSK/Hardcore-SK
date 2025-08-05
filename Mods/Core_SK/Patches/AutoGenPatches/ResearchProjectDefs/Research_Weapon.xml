@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="Smithing"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.PrimitiveBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="Smithing"]</xpath>
+    <value>
+      <label>Melee I</label>
+      <description>A lil' of the ol' chop-chop</description>
+      <baseCost>400</baseCost>
+      <prerequisites>
+        <li>Craft_B1</li>
+      </prerequisites>
+      <researchViewX>4.00</researchViewX>
+      <researchViewY>29.00</researchViewY>
+      <tab>Weapon_SK</tab>
+      <tags>
+        <li>NorbalStart</li>
+        <li MayRequire="Solaris.RatkinRaceMod">RatkinStart</li>
+      </tags>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="LongBlades"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.MedievalBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="LongBlades"]</xpath>
+    <value>
+      <label>Melee II</label>
+      <description>Get me something big and sharp</description>
+      <researchViewX>5.00</researchViewX>
+      <researchViewY>29.00</researchViewY>
+      <tab>Weapon_SK</tab>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="RecurveBow"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.PrimitiveBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="RecurveBow"]</xpath>
+    <value>
+      <label>Bows II</label>
+      <description>But good bow is better</description>
+      <baseCost>250</baseCost>
+      <prerequisites>
+        <li>Bow_A1</li>
+      </prerequisites>
+      <researchViewX>2.00</researchViewX>
+      <researchViewY>30.00</researchViewY>
+      <tab>Weapon_SK</tab>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="Greatbow"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.MedievalBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="Greatbow"]</xpath>
+    <value>
+      <label>Crossbows I</label>
+      <description>Not as good as real gun, but silent and cheap</description>
+      <baseCost>500</baseCost>
+      <prerequisites>
+        <li>RecurveBow</li>
+        <li>Craft_B1</li>
+      </prerequisites>
+      <researchViewX>4.00</researchViewX>
+      <researchViewY>30.00</researchViewY>
+      <tab>Weapon_SK</tab>
+      <tags>
+        <li MayRequire="Solaris.RatkinRaceMod">RatkinStart</li>
+      </tags>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="Machining"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.MedievalBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="Machining"]</xpath>
+    <value>
+      <label>Guns I</label>
+      <description>Good gun is a bad gun, if it dont have ammo</description>
+      <baseCost>1600</baseCost>
+      <prerequisites>
+        <li>Bow_B2</li>
+        <li>Metals_C1</li>
+      </prerequisites>
+      <researchViewX>8.00</researchViewX>
+      <researchViewY>30.00</researchViewY>
+      <tab>Weapon_SK</tab>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.IndustrialBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]</xpath>
+    <value>
+      <label>Pistols I</label>
+      <description>Pew-pew</description>
+      <baseCost>700</baseCost>
+      <researchViewX>9.00</researchViewX>
+      <researchViewY>31.00</researchViewY>
+      <tab>Weapon_SK</tab>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="GasOperation"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.IndustrialBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="GasOperation"]</xpath>
+    <value>
+      <label>Shotgun I</label>
+      <description>Very heavy pew</description>
+      <baseCost>800</baseCost>
+      <prerequisites>
+        <li>Machining</li>
+      </prerequisites>
+      <researchViewY>32.00</researchViewY>
+      <tab>Weapon_SK</tab>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.IndustrialBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]</xpath>
+    <value>
+      <label>SMG I</label>
+      <description>Be like Big Al</description>
+      <baseCost>800</baseCost>
+      <researchViewX>10.00</researchViewX>
+      <researchViewY>33.00</researchViewY>
+      <tab>Weapon_SK</tab>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]</xpath>
+    <value>
+      <label>Sniper rifles II</label>
+      <description>Boom. Headshot.</description>
+      <baseCost>1200</baseCost>
+      <prerequisites>
+        <li>Rifles_C2</li>
+        <li>Sniper_rifles_C1</li>
+      </prerequisites>
+      <researchViewX>14.00</researchViewX>
+      <researchViewY>32.00</researchViewY>
+      <tab>Weapon_SK</tab>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]</xpath>
+    <value>
+      <label>Heavy weapons I</label>
+      <description>Some people think they can outsmart me</description>
+      <baseCost>1400</baseCost>
+      <prerequisites>
+        <li>Range_C2</li>
+      </prerequisites>
+      <researchViewY>33.00</researchViewY>
+      <tab>Weapon_SK</tab>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="MultibarrelWeapons"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="MultibarrelWeapons"]</xpath>
+    <value>
+      <label>Heavy weapons II</label>
+      <description>I've yet to meet one that can outsmart bullet</description>
+      <baseCost>1200</baseCost>
+      <prerequisites>
+        <li>HeavyTurrets</li>
+      </prerequisites>
+      <researchViewX>14.00</researchViewX>
+      <researchViewY>33.00</researchViewY>
+      <tab>Weapon_SK</tab>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechMultiBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="ChargedShot"]</xpath>
+    <value>
+      <label>Directed-energy weapon</label>
+      <description>Phased plasma rifle in the 40-watt range</description>
+      <baseCost>2500</baseCost>
+      <prerequisites>
+        <li>Rifles_C3</li>
+        <li>Components_D1</li>
+      </prerequisites>
+      <researchViewY>30.00</researchViewY>
+      <tab>Weapon_SK</tab>
+      <tags>
+        <li>AsariStart</li>
+      </tags>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="SniperTurret"]</xpath>
+    <value>
+      <label>Heavy turrets I</label>
+      <description>The answer...</description>
+      <baseCost>1100</baseCost>
+      <prerequisites>
+        <li>Turrets_31</li>
+      </prerequisites>
+      <researchViewY>35.00</researchViewY>
+      <tab>Weapon_SK</tab>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="Mortars"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="Mortars"]</xpath>
+    <value>
+      <label>Artillery I</label>
+      <description>To the guns!</description>
+      <baseCost>1400</baseCost>
+      <prerequisites>
+        <li>Turrets_31</li>
+        <li>Grenade_launchers_C1</li>
+      </prerequisites>
+      <researchViewX>15.00</researchViewX>
+      <researchViewY>36.00</researchViewY>
+      <tab>Weapon_SK</tab>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechMultiBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="GunTurrets"]</xpath>
+    <value>
+      <label>Autoturrets I</label>
+      <description>...use a gun.</description>
+      <baseCost>1800</baseCost>
+      <techLevel>Spacer</techLevel>
+      <prerequisites>
+        <li>Turrets_31</li>
+        <li>Electronics_D1</li>
+      </prerequisites>
+      <researchViewX>18.00</researchViewX>
+      <researchViewY>36.00</researchViewY>
+      <tab>Weapon_SK</tab>
+    </value>
+  </Operation>
+
+</Patch>

@@ -44,9 +44,9 @@
 		<researchViewY>39.00</researchViewY>
 		<tab>Apparel_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>ComplexClothing</defName>		<!-- Apparel_B2 -->
+		<defName>ComplexClothing</defName>		--><!-- Apparel_B2 --><!--
 		<label>Advanced sewing II</label>
 		<description>description</description>
 		<baseCost>300</baseCost>
@@ -58,7 +58,7 @@
 		<researchViewY>40.00</researchViewY>
 		<tab>Apparel_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="MedievalBase">
 		<defName>Apparel_B3</defName>
 		<label>Advanced sewing III</label>
@@ -72,9 +72,9 @@
 		<researchViewY>40.00</researchViewY>
 		<tab>Apparel_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>RoyalApparel</defName>		<!-- Apparel_B4 -->
+		<defName>RoyalApparel</defName>		--><!-- Apparel_B4 --><!--
 		<label>royal apparel</label>
 		<description>Tailor royal apparel of the highest tier, like royal robes and crowns.</description>
 		<baseCost>200</baseCost>
@@ -86,9 +86,9 @@
 		<researchViewY>41.00</researchViewY>
 		<tab>Apparel_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>NobleApparel</defName>		<!-- Apparel_B5 -->
+		<defName>NobleApparel</defName>		--><!-- Apparel_B5 --><!--
 		<label>noble apparel</label>
 		<description>Tailor noble-specific apparel like formal shirts and royal robes.</description>
 		<baseCost>200</baseCost>
@@ -100,9 +100,9 @@
 		<researchViewY>41.00</researchViewY>
 		<tab>Apparel_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>PlateArmor</defName>		<!-- Armor_B1 -->
+		<defName>PlateArmor</defName>		--><!-- Armor_B1 --><!--
 		<label>Armor I</label>
 		<description>description</description>
 		<baseCost>400</baseCost>
@@ -117,7 +117,7 @@
 			<li>NorbalStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="MedievalBase">
 		<defName>Armor_B2</defName>
 		<label>Armor II</label>
@@ -131,9 +131,9 @@
 		<researchViewY>42.00</researchViewY>
 		<tab>Apparel_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="IndustrialBase">
-		<defName>Fabrication</defName>		<!-- Apparel_C1 -->
+		<defName>Fabrication</defName>		--><!-- Apparel_C1 --><!--
 		<label>Apparel production III</label>
 		<description>description</description>
 		<baseCost>1200</baseCost>
@@ -146,7 +146,7 @@
 		<researchViewY>39.00</researchViewY>
 		<tab>Apparel_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>Apparel_C2</defName>
 		<label>Advanced sewing IV</label>
@@ -194,9 +194,9 @@
 		<researchViewY>41.00</researchViewY>
 		<tab>Apparel_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
-		<defName>AdvancedFabrication</defName>		<!-- Apparel_C4 -->
+		<defName>AdvancedFabrication</defName>		--><!-- Apparel_C4 --><!--
 		<label>Apparel production IV</label>
 		<description>description</description>
 		<baseCost>1200</baseCost>
@@ -209,7 +209,7 @@
 		<researchViewY>39.00</researchViewY>
 		<tab>Apparel_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="HitechBase">
 		<defName>Apparel_C5</defName>
 		<label>Advanced sewing V</label>
@@ -223,9 +223,9 @@
 		<researchViewY>40.00</researchViewY>
 		<tab>Apparel_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
-		<defName>FlakArmor</defName>		<!-- Armor_C2 -->
+		<defName>FlakArmor</defName>		--><!-- Armor_C2 --><!--
 		<label>Armor IV</label>
 		<description>description</description>
 		<baseCost>1000</baseCost>
@@ -238,9 +238,9 @@
 		<researchViewY>41.00</researchViewY>
 		<tab>Apparel_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
-		<defName>SmokepopBelt</defName>		<!-- Belts_C1 -->
+		<defName>SmokepopBelt</defName>		--><!-- Belts_C1 --><!--
 		<label>smokepop belts</label>
 		<description>description</description>
 		<baseCost>700</baseCost>
@@ -252,9 +252,9 @@
 		<researchViewY>42.00</researchViewY>
 		<tab>Apparel_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
-		<defName>ShieldBelt</defName>		<!-- Belts_D1 -->
+		<defName>ShieldBelt</defName>		--><!-- Belts_D1 --><!--
 		<label>shield belts</label>
 		<description>description</description>
 		<baseCost>1600</baseCost>
@@ -266,7 +266,7 @@
 		<researchViewY>42.00</researchViewY>
 		<tab>Apparel_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="HitechMultiBase">
 		<defName>Apparel_D1</defName>
 		<label>Apparel production V</label>
@@ -298,9 +298,9 @@
 		<researchViewY>40.00</researchViewY>
 		<tab>Apparel_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechLabStationBase">
-		<defName>ReconArmor</defName>		<!-- Armor_E1 -->
+		<defName>ReconArmor</defName>		--><!-- Armor_E1 --><!--
 		<label>Armor VI</label>
 		<description>description</description>
 		<baseCost>2300</baseCost>
@@ -313,9 +313,9 @@
 		<researchViewY>39.00</researchViewY>
 		<tab>Apparel_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechLabStationBase">
-		<defName>PoweredArmor</defName>		<!-- Armor_E2 -->
+		<defName>PoweredArmor</defName>		--><!-- Armor_E2 --><!--
 		<label>Armor VII</label>
 		<description>description</description>
 		<baseCost>2500</baseCost>
@@ -327,7 +327,7 @@
 		<researchViewY>39.00</researchViewY>
 		<tab>Apparel_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="HitechLabStationBase">
 		<defName>Armor_E3</defName>
 		<label>Armor VIII</label>
@@ -341,7 +341,7 @@
 		<researchViewY>39.00</researchViewY>
 		<tab>Apparel_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="HitechLabStationBase">
 		<defName>CataphractArmor</defName>
 		<label>cataphract armor</label>
@@ -361,7 +361,7 @@
 			<li>Empire</li>
 		</heldByFactionCategoryTags>
 	</ResearchProjectDef>
-
+--> <!-- DefOverwrite
 	<ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="HitechLabStationBase">
 		<defName>JumpPack</defName>
 		<label>jump packs</label>
@@ -382,7 +382,7 @@
 			<li>Outlander</li>
 		</heldByFactionCategoryTags>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="HitechLabStationBase">
 		<defName>Gunlink</defName>
 		<label>gunlink</label>
@@ -396,5 +396,5 @@
 		<researchViewY>41.00</researchViewY>
 		<tab>Apparel_SK</tab>
 	</ResearchProjectDef>
-
+-->
 </Defs>

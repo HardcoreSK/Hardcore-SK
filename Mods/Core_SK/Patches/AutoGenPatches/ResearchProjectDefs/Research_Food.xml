@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="Pemmican"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.PrimitiveBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="Pemmican"]</xpath>
+    <value>
+      <label>Food I</label>
+      <description>description</description>
+      <baseCost>150</baseCost>
+      <prerequisites>
+        <li>Food_0</li>
+      </prerequisites>
+      <researchViewX>2.00</researchViewX>
+      <researchViewY>46.00</researchViewY>
+      <tab>Food_SK</tab>
+      <tags>
+        <li>NorbalStart</li>
+      </tags>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="PackagedSurvivalMeal"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="PackagedSurvivalMeal"]</xpath>
+    <value>
+      <label>Cooking IV</label>
+      <description>description</description>
+      <baseCost>1200</baseCost>
+      <prerequisites>
+        <li>Food_C1</li>
+        <li>Electronics_C2</li>
+      </prerequisites>
+      <researchViewX>12.00</researchViewX>
+      <researchViewY>45.00</researchViewY>
+      <tab>Food_SK</tab>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="NutrientPaste"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="NutrientPaste"]</xpath>
+    <value>
+      <label>Soylent technology</label>
+      <description>Allows you to build the Soylent Green Machine to make Soylent Green from Humanlike corpses.</description>
+      <baseCost>1400</baseCost>
+      <techLevel>Spacer</techLevel>
+      <prerequisites>
+        <li>Food_C7</li>
+      </prerequisites>
+      <researchViewX>17.00</researchViewX>
+      <researchViewY>45.00</researchViewY>
+      <tab>Food_SK</tab>
+      <tags>
+        <li>NovaStart</li>
+        <li>AsariStart</li>
+      </tags>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="Brewing"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.MedievalBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="Brewing"]</xpath>
+    <value>
+      <label>Alcohol production I</label>
+      <description>description</description>
+      <baseCost>300</baseCost>
+      <techLevel>Medieval</techLevel>
+      <prerequisites>
+        <li>Pemmican</li>
+      </prerequisites>
+      <researchViewX>3.00</researchViewX>
+      <researchViewY>48.00</researchViewY>
+      <tab>Food_SK</tab>
+      <tags>
+        <li MayRequire="Solaris.RatkinRaceMod">RatkinStart</li>
+      </tags>
+    </value>
+  </Operation>
+
+</Patch>

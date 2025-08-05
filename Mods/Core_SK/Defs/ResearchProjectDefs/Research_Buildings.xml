@@ -62,9 +62,9 @@
 			<li MayRequire="Solaris.RatkinRaceMod">RatkinStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>Harp</defName>		<!-- Enjoyment_B1 -->
+		<defName>Harp</defName>		--><!-- Enjoyment_B1 --><!--
 		<label>Enjoyment III</label>
 		<description>description</description>
 		<baseCost>300</baseCost>
@@ -77,9 +77,9 @@
 		<researchViewY>6.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>Harpsichord</defName>		<!-- Enjoyment_B2 -->
+		<defName>Harpsichord</defName>		--><!-- Enjoyment_B2 --><!--
 		<label>Enjoyment IV</label>
 		<description>description</description>
 		<baseCost>400</baseCost>
@@ -91,9 +91,9 @@
 		<researchViewY>6.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>Piano</defName>		<!-- Enjoyment_B3 -->
+		<defName>Piano</defName>		--><!-- Enjoyment_B3 --><!--
 		<label>Enjoyment V</label>
 		<description>description</description>
 		<baseCost>400</baseCost>
@@ -105,9 +105,9 @@
 		<researchViewY>6.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="IndustrialBase">
-		<defName>TubeTelevision</defName>		<!-- Enjoyment_C1 -->
+		<defName>TubeTelevision</defName>		--><!-- Enjoyment_C1 --><!--
 		<label>Enjoyment VI</label>
 		<description>description</description>
 		<baseCost>800</baseCost>
@@ -119,9 +119,9 @@
 		<researchViewY>6.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+--> <!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
-		<defName>FlatscreenTelevision</defName>		<!-- Enjoyment_C2 -->
+		<defName>FlatscreenTelevision</defName>		--><!-- Enjoyment_C2 --><!--
 		<label>Enjoyment VII</label>
 		<description>description</description>
 		<baseCost>1000</baseCost>
@@ -134,7 +134,7 @@
 		<researchViewY>6.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="HitechBase">
 		<defName>Enjoyment_D1</defName>
 		<label>Enjoyment VIII</label>
@@ -148,9 +148,9 @@
 		<researchViewY>6.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="PrimitiveBase">
-		<defName>ComplexFurniture</defName>		<!-- Tables_B1 -->
+		<defName>ComplexFurniture</defName>		--><!-- Tables_B1 --><!--
 		<label>Furniture I</label>
 		<description>description</description>
 		<baseCost>250</baseCost>
@@ -162,7 +162,7 @@
 			<li MayRequire="Solaris.RatkinRaceMod">RatkinStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="MedievalBase">
 		<defName>Tables_B2</defName>
 		<label>Furniture II</label>
@@ -284,9 +284,9 @@
 		<researchViewY>8.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechMultiBase">
-		<defName>Cryptosleep</defName>		<!-- Beds_D1 -->
+		<defName>Cryptosleep</defName>		--><!-- Beds_D1 --><!--
 		<label>Beds VI</label>
 		<description>description</description>
 		<baseCost>1500</baseCost>
@@ -299,7 +299,7 @@
 		<researchViewY>8.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="HitechLabStationBase">
 		<defName>Beds_E1</defName>
 		<label>Beds VII</label>
@@ -423,9 +423,9 @@
 		<researchViewY>9.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="PrimitiveBase">
-		<defName>PassiveCooler</defName>		<!-- Temperature_control_A1 -->
+		<defName>PassiveCooler</defName>		--><!-- Temperature_control_A1 --><!--
 		<label>Temperature control I</label>
 		<description>description</description>
 		<baseCost>150</baseCost>
@@ -434,7 +434,7 @@
 		<researchViewY>11.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="PrimitiveBase">
 		<defName>Temperature_control_B1</defName>
 		<label>Temperature control II</label>
@@ -453,9 +453,9 @@
 			<li MayRequire="Solaris.RatkinRaceMod">RatkinStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="IndustrialBase">
-		<defName>AirConditioning</defName>		<!-- Temperature_control_C1 -->
+		<defName>AirConditioning</defName>		--><!-- Temperature_control_C1 --><!--
 		<label>Temperature control III</label>
 		<description>description</description>
 		<baseCost>1000</baseCost>
@@ -471,7 +471,7 @@
 			<li>NovaStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>Temperature_control_C2</defName>
 		<label>Temperature control IV</label>
@@ -695,9 +695,9 @@
 			<li>AsariStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>IEDs</defName>		<!-- Fortification_C1 -->
+		<defName>IEDs</defName>		--><!-- Fortification_C1 --><!--
 		<label>Fortification IV</label>
 		<description>description</description>
 		<baseCost>1500</baseCost>
@@ -709,7 +709,7 @@
 		<researchViewY>14.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>Fortification_C2</defName>
 		<label>Fortification V</label>
@@ -809,9 +809,9 @@
 		<researchViewY>13.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>Firefoam</defName>		<!-- Construction_C1 -->
+		<defName>Firefoam</defName>		--><!-- Construction_C1 --><!--
 		<label>Construction IV</label>
 		<description>description</description>
 		<baseCost>600</baseCost>
@@ -823,9 +823,9 @@
 		<researchViewY>13.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="IndustrialBase">
-		<defName>Autodoors</defName>		<!-- Construction_C2 -->
+		<defName>Autodoors</defName>		--><!-- Construction_C2 --><!--
 		<label>Construction V</label>
 		<description>description</description>
 		<baseCost>1000</baseCost>
@@ -838,9 +838,9 @@
 		<researchViewY>13.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>Electricity</defName>		<!-- Generators_C1 -->
+		<defName>Electricity</defName>		--><!-- Generators_C1 --><!--
 		<label>Power engineering I</label>
 		<description>description</description>
 		<baseCost>1500</baseCost>
@@ -854,7 +854,7 @@
 			<li>ClassicStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>Generators_C2</defName>
 		<label>Power engineering II</label>
@@ -956,9 +956,9 @@
 		<researchViewY>15.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+<!--
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>WatermillGenerator</defName>		<!-- Renewable_energy_C1 -->
+		<defName>WatermillGenerator</defName>		--><!-- Renewable_energy_C1 --><!--
 		<label>Renewable energy I</label>
 		<description>description</description>
 		<baseCost>800</baseCost>
@@ -970,7 +970,7 @@
 		<researchViewY>16.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>Renewable_energy_C2</defName>
 		<label>Renewable energy II</label>
@@ -984,9 +984,9 @@
 		<researchViewY>16.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="IndustrialBase">
-		<defName>SolarPanels</defName>		<!-- Renewable_energy_C3 -->
+		<defName>SolarPanels</defName>		--><!-- Renewable_energy_C3 --><!--
 		<label>Renewable energy III</label>
 		<description>description</description>
 		<baseCost>1200</baseCost>
@@ -1002,7 +1002,7 @@
 			<li>AsariStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>Renewable_energy_C4</defName>
 		<label>Renewable energy IV</label>
@@ -1017,9 +1017,9 @@
 		<researchViewY>16.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="IndustrialBase">
-		<defName>GeothermalPower</defName>		<!-- Renewable_energy_C5 -->
+		<defName>GeothermalPower</defName>		--><!-- Renewable_energy_C5 --><!--
 		<label>Renewable energy V</label>
 		<description>description</description>
 		<baseCost>800</baseCost>
@@ -1031,7 +1031,7 @@
 		<researchViewY>16.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="HitechMultiBase">
 		<defName>Renewable_energy_D1</defName>
 		<label>Renewable energy VI</label>
@@ -1074,9 +1074,9 @@
 		<researchViewY>16.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="IndustrialBase">
-		<defName>Batteries</defName>		<!-- Electrical_engineering_C1 -->
+		<defName>Batteries</defName>		--><!-- Electrical_engineering_C1 --><!--
 		<label>Electrical networks I</label>
 		<description>description</description>
 		<baseCost>1500</baseCost>
@@ -1088,7 +1088,7 @@
 		<researchViewY>17.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>Electrical_engineering_C2</defName>
 		<label>Electrical networks II</label>
@@ -1162,9 +1162,9 @@
 			<li>NovaStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechMultiBase">
-		<defName>TransportPod</defName>		<!-- Transport_pods_D1 -->
+		<defName>TransportPod</defName>		--><!-- Transport_pods_D1 --><!--
 		<label>Transport pods</label>
 		<description>description</description>
 		<baseCost>1600</baseCost>
@@ -1176,7 +1176,7 @@
 		<researchViewY>13.00</researchViewY>
 		<tab>Craft_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="HitechLabStationBase">
 		<defName>Stargate_F1</defName>
 		<label>Stargate</label>

@@ -66,9 +66,9 @@
 			<li>NovaStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
-		<defName>MultiAnalyzer</defName>		<!-- Research_table_D1 -->
+		<defName>MultiAnalyzer</defName>		--><!-- Research_table_D1 --><!--
 		<label>Research technologies V</label>
 		<description>description</description>
 		<baseCost>2700</baseCost>
@@ -80,7 +80,7 @@
 		<researchViewY>19.00</researchViewY>
 		<tab>Craft_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="HitechMultiBase">
 		<defName>Research_table_D2</defName>
 		<label>Research technologies VI</label>
@@ -122,9 +122,9 @@
 		<researchViewY>24.00</researchViewY>
 		<tab>Craft_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="IndustrialBase">
-		<defName>DeepDrilling</defName>		<!-- Mining_C2 -->
+		<defName>DeepDrilling</defName>		--><!-- Mining_C2 --><!--
 		<label>Mining III</label>
 		<description>description</description>
 		<baseCost>1400</baseCost>
@@ -136,9 +136,9 @@
 		<researchViewY>24.00</researchViewY>
 		<tab>Craft_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
-		<defName>GroundPenetratingScanner</defName>		<!-- Mining_C3 -->
+		<defName>GroundPenetratingScanner</defName>		--><!-- Mining_C3 --><!--
 		<label>Mining IV</label>
 		<description>description</description>
 		<baseCost>1100</baseCost>
@@ -151,7 +151,7 @@
 		<researchViewY>24.00</researchViewY>
 		<tab>Craft_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>ResearchMobileMineralSonarEnhancedScan</defName>		<!-- Mining_C4 -->
 		<label>Mining V</label>
@@ -169,9 +169,9 @@
 			<li Class="SK.ResearchMod_MobileMineralSonar"/>
 		</researchMods>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
-		<defName>LongRangeMineralScanner</defName>		<!-- Mining_C5 -->
+		<defName>LongRangeMineralScanner</defName>		--><!-- Mining_C5 --><!--
 		<label>Mining VI</label>
 		<description>description</description>
 		<baseCost>1000</baseCost>
@@ -183,7 +183,7 @@
 		<researchViewY>24.00</researchViewY>
 		<tab>Craft_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>Oil_Industry_C1</defName>
 		<label>Oil production I</label>
@@ -295,9 +295,9 @@
 		<researchViewY>26.00</researchViewY>
 		<tab>Craft_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="IndustrialBase">
-		<defName>BiofuelRefining</defName>		<!-- Chemistry_C1 -->
+		<defName>BiofuelRefining</defName>		--><!-- Chemistry_C1 --><!--
 		<label>Chemistry I</label>
 		<description>description</description>
 		<baseCost>1000</baseCost>
@@ -309,7 +309,7 @@
 		<researchViewY>27.00</researchViewY>
 		<tab>Craft_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>Chemistry_C2</defName>
 		<label>Chemistry II</label>
@@ -371,9 +371,9 @@
 		<researchViewY>26.00</researchViewY>
 		<tab>Craft_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>MicroelectronicsBasics</defName>		<!-- Electronics_C1 -->
+		<defName>MicroelectronicsBasics</defName>		--><!-- Electronics_C1 --><!--
 		<label>Electronics I</label>
 		<description>description</description>
 		<baseCost>1600</baseCost>
@@ -382,7 +382,7 @@
 		<researchViewY>21.00</researchViewY>
 		<tab>Craft_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>Electronics_C2</defName>
 		<label>Electronics II</label>
@@ -638,9 +638,9 @@
 		<researchViewY>22.00</researchViewY>
 		<tab>Craft_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>Stonecutting</defName>		<!-- Stones_B1 -->
+		<defName>Stonecutting</defName>		--><!-- Stones_B1 --><!--
 		<label>Stone processing I</label>
 		<description>description</description>
 		<baseCost>300</baseCost>
@@ -652,7 +652,7 @@
 		<researchViewY>23.00</researchViewY>
 		<tab>Craft_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>Stones_C1</defName>
 		<label>Stone processing II</label>
@@ -881,7 +881,7 @@
 		<researchViewY>28.00</researchViewY>
 		<tab>Craft_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechLabStationBase">
 		<defName>ShipBasics</defName>
 		<label>Starflight basics</label>
@@ -899,7 +899,7 @@
 			<li>ShipRelated</li>
 		</tags>
 	</ResearchProjectDef>
-
+--> <!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechLabStationBase">
 		<defName>ShipCryptosleep</defName>
 		<label>Vacuum cryptosleep casket</label>
@@ -916,7 +916,7 @@
 			<li>ShipRelated</li>
 		</tags>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechLabStationBase">
 		<defName>ShipReactor</defName>
 		<label>Starship reactor</label>
@@ -933,7 +933,7 @@
 			<li>ShipRelated</li>
 		</tags>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechLabStationBase">
 		<defName>ShipEngine</defName>
 		<label>Johnson-Tanaka drive</label>
@@ -950,7 +950,7 @@
 			<li>ShipRelated</li>
 		</tags>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechLabStationBase">
 		<defName>ShipComputerCore</defName>
 		<label>Machine persuasion</label>
@@ -967,7 +967,7 @@
 			<li>ShipRelated</li>
 		</tags>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechLabStationBase">
 		<defName>ShipSensorCluster</defName>
 		<label>Starflight sensors</label>
@@ -984,5 +984,5 @@
 			<li>ShipRelated</li>
 		</tags>
 	</ResearchProjectDef>
-
+-->
 </Defs>

@@ -45,9 +45,9 @@
 		<researchViewY>55.00</researchViewY>
 		<tab>Plants_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>Cocoa</defName>		<!-- Fruit_Plants_B2 -->
+		<defName>Cocoa</defName>		--><!-- Fruit_Plants_B2 --><!--
 		<label>Fruit Plants II</label>
 		<description>description</description>
 		<baseCost>300</baseCost>
@@ -59,7 +59,7 @@
 		<researchViewY>55.00</researchViewY>
 		<tab>Plants_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="PrimitiveBase">
 		<defName>Fungiponics_A1</defName>
 		<label>Fungiponics I</label>
@@ -113,9 +113,9 @@
 			<li MayRequire="Solaris.RatkinRaceMod">RatkinStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>TreeSowing</defName>		<!-- Trees_B1 -->
+		<defName>TreeSowing</defName>		--><!-- Trees_B1 --><!--
 		<label>Trees I</label>
 		<description>description</description>
 		<baseCost>150</baseCost>
@@ -127,7 +127,7 @@
 		<researchViewY>57.00</researchViewY>
 		<tab>Plants_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="MedievalBase">
 		<defName>Trees_B2</defName>
 		<label>Trees II</label>
@@ -271,9 +271,9 @@
 			<li MayRequire="Solaris.RatkinRaceMod">RatkinStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="IndustrialBase">
-		<defName>Devilstrand</defName>		<!-- Fabric_Plants_C1 -->
+		<defName>Devilstrand</defName>		--><!-- Fabric_Plants_C1 --><!--
 		<label>Fabric Plants IV</label>
 		<description>description</description>
 		<baseCost>1000</baseCost>
@@ -288,7 +288,7 @@
 			<li>AsariStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="PrimitiveBase">
 		<defName>SewageSludgeComposting</defName> 		<!-- Compost_A1 --><!-- defname given for compatibility with DubsBadHygiene, "work" is associated with "research" in dll -->
 		<label>Agriculture I</label>
@@ -317,9 +317,9 @@
 		<researchViewY>52.00</researchViewY>
 		<tab>Plants_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="IndustrialBase">
-		<defName>Hydroponics</defName>		<!-- Cultivation_C2 -->
+		<defName>Hydroponics</defName>		--><!-- Cultivation_C2 --><!--
 		<label>Agriculture III</label>
 		<description>description</description>
 		<baseCost>1200</baseCost>
@@ -331,7 +331,7 @@
 		<researchViewY>52.00</researchViewY>
 		<tab>Plants_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="HitechBase">
 		<defName>Cultivation_C3</defName>
 		<label>Agriculture IV</label>

@@ -292,9 +292,9 @@
 		<researchViewY>4.00</researchViewY>
 		<tab>Floors_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
-		<defName>SterileMaterials</defName>		<!-- Medicine_floor_D1 -->
+		<defName>SterileMaterials</defName>		--><!-- Medicine_floor_D1 --><!--
 		<label>Medicine floor</label>
 		<description>description</description>
 		<baseCost>900</baseCost>
@@ -309,7 +309,7 @@
 			<li>NovaStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="PrimitiveBase">
 		<defName>Carpets_A1</defName>
 		<label>Carpets I</label>
@@ -385,9 +385,9 @@
 		<researchViewY>1.00</researchViewY>
 		<tab>Floors_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>CarpetMaking</defName>		<!-- Carpets_B4 -->
+		<defName>CarpetMaking</defName>		--><!-- Carpets_B4 --><!--
 		<label>Carpets VI</label>
 		<description>description</description>
 		<baseCost>200</baseCost>
@@ -399,5 +399,5 @@
 		<researchViewY>2.00</researchViewY>
 		<tab>Floors_SK</tab>
 	</ResearchProjectDef>
-
+-->
 </Defs>

@@ -2,8 +2,9 @@
 <Defs>
 
 <!-- Melee -->
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="PrimitiveBase">
-		<defName>Smithing</defName>		<!-- Melee_B1 -->
+		<defName>Smithing</defName>		--><!-- Melee_B1 --><!--
 		<label>Melee I</label>
 		<description>A lil' of the ol' chop-chop</description>
 		<baseCost>400</baseCost>
@@ -19,9 +20,9 @@
 			<li MayRequire="Solaris.RatkinRaceMod">RatkinStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>LongBlades</defName>		<!-- Melee_B2 -->
+		<defName>LongBlades</defName>		--><!-- Melee_B2 --><!--
 		<label>Melee II</label>
 		<description>Get me something big and sharp</description>
 		<baseCost>400</baseCost>
@@ -33,7 +34,7 @@
 		<researchViewY>29.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>Melee_C1</defName>
 		<label>Melee III</label>
@@ -109,9 +110,9 @@
 			<li>NorbalStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="PrimitiveBase">
-		<defName>RecurveBow</defName>		<!-- Bow_A2 -->
+		<defName>RecurveBow</defName>		--><!-- Bow_A2 --><!--
 		<label>Bows II</label>
 		<description>But good bow is better</description>
 		<baseCost>250</baseCost>
@@ -123,9 +124,9 @@
 		<researchViewY>30.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>Greatbow</defName>		<!-- Bow_B1 -->
+		<defName>Greatbow</defName>		--><!-- Bow_B1 --><!--
 		<label>Crossbows I</label>
 		<description>Not as good as real gun, but silent and cheap</description>
 		<baseCost>500</baseCost>
@@ -141,7 +142,7 @@
 			<li MayRequire="Solaris.RatkinRaceMod">RatkinStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="MedievalBase">
 		<defName>Bow_B2</defName>
 		<label>Crossbows II</label>
@@ -155,9 +156,9 @@
 		<researchViewY>30.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>Machining</defName>		<!-- Range_C1 -->
+		<defName>Machining</defName>		--><!-- Range_C1 --><!--
 		<label>Guns I</label>
 		<description>Good gun is a bad gun, if it dont have ammo</description>
 		<baseCost>1600</baseCost>
@@ -170,9 +171,9 @@
 		<researchViewY>30.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="IndustrialBase">
-		<defName>Gunsmithing</defName>		<!-- Pistols_C1 -->
+		<defName>Gunsmithing</defName>		--><!-- Pistols_C1 --><!--
 		<label>Pistols I</label>
 		<description>Pew-pew</description>
 		<baseCost>700</baseCost>
@@ -184,7 +185,7 @@
 		<researchViewY>31.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>Pistols_C2</defName>
 		<label>Pistols II</label>
@@ -198,9 +199,9 @@
 		<researchViewY>31.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="IndustrialBase">
-		<defName>GasOperation</defName>		<!-- Shotgun_C1 -->
+		<defName>GasOperation</defName>		--><!-- Shotgun_C1 --><!--
 		<label>Shotgun I</label>
 		<description>Very heavy pew</description>
 		<baseCost>800</baseCost>
@@ -212,9 +213,9 @@
 		<researchViewY>32.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="IndustrialBase">
-		<defName>BlowbackOperation</defName>		<!-- SMG_C1 -->
+		<defName>BlowbackOperation</defName>		--><!-- SMG_C1 --><!--
 		<label>SMG I</label>
 		<description>Be like Big Al</description>
 		<baseCost>800</baseCost>
@@ -226,7 +227,7 @@
 		<researchViewY>33.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>SMG_C2</defName>
 		<label>SMG II</label>
@@ -374,9 +375,9 @@
 		<researchViewY>31.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
-		<defName>PrecisionRifling</defName>		<!-- Sniper_rifles_C2 -->
+		<defName>PrecisionRifling</defName>		--><!-- Sniper_rifles_C2 --><!--
 		<label>Sniper rifles II</label>
 		<description>Boom. Headshot.</description>
 		<baseCost>1200</baseCost>
@@ -389,9 +390,9 @@
 		<researchViewY>32.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
-		<defName>HeavyTurrets</defName>		<!-- Heavy_C1 -->
+		<defName>HeavyTurrets</defName>		--><!-- Heavy_C1 --><!--
 		<label>Heavy weapons I</label>
 		<description>Some people think they can outsmart me</description>
 		<baseCost>1400</baseCost>
@@ -403,9 +404,9 @@
 		<researchViewY>33.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
-
+--><!-- DefOverwrite	
 	<ResearchProjectDef ParentName="HitechBase">
-		<defName>MultibarrelWeapons</defName>		<!-- Heavy_C2 -->
+		<defName>MultibarrelWeapons</defName>		--><!-- Heavy_C2 --><!--
 		<label>Heavy weapons II</label>
 		<description>I've yet to meet one that can outsmart bullet</description>
 		<baseCost>1200</baseCost>
@@ -417,7 +418,7 @@
 		<researchViewY>33.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="HitechBase">
 		<defName>Heavy_C3</defName>
 		<label>Heavy weapons III</label>
@@ -488,9 +489,9 @@
 		<researchViewY>32.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechMultiBase">
-		<defName>ChargedShot</defName>		<!-- Range_D1 -->
+		<defName>ChargedShot</defName>		--><!-- Range_D1 --><!--
 		<label>Directed-energy weapon</label>
 		<description>Phased plasma rifle in the 40-watt range</description>
 		<baseCost>2500</baseCost>
@@ -506,7 +507,7 @@
 			<li>AsariStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="HitechMultiBase">
 		<defName>Laser_weapons_D</defName> 
 		<label>Laser weapons I</label>
@@ -628,9 +629,9 @@
 		<researchViewY>36.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
-		<defName>SniperTurret</defName>		<!-- Heavy_turrets_C1 -->
+		<defName>SniperTurret</defName>		--><!-- Heavy_turrets_C1 --><!--
 		<label>Heavy turrets I</label>
 		<description>The answer...</description>
 		<baseCost>1100</baseCost>
@@ -642,7 +643,7 @@
 		<researchViewY>35.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="HitechBase">
 		<defName>Heavy_turrets_C2</defName>
 		<label>Heavy turrets II</label>
@@ -670,9 +671,9 @@
 		<researchViewY>35.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
-		<defName>Mortars</defName>		<!-- Artillery_C1 -->
+		<defName>Mortars</defName>		--><!-- Artillery_C1 --><!--
 		<label>Artillery I</label>
 		<description>To the guns!</description>
 		<baseCost>1400</baseCost>
@@ -685,7 +686,7 @@
 		<researchViewY>36.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="HitechBase">
 		<defName>Artillery_C2</defName>
 		<label>Artillery II</label>
@@ -701,9 +702,9 @@
 		<researchViewY>36.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechMultiBase">
-		<defName>GunTurrets</defName>		<!-- Autoturrets_D1 -->
+		<defName>GunTurrets</defName>		--><!-- Autoturrets_D1 --><!--
 		<label>Autoturrets I</label>
 		<description>...use a gun.</description>
 		<baseCost>1800</baseCost>
@@ -716,7 +717,7 @@
 		<researchViewY>36.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="HitechMultiBase">
 		<defName>Autoturrets_D2</defName>
 		<label>Autoturrets II</label>
