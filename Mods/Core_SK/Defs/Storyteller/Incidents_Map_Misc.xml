@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- =========================== Good ============================-->
-
+<!-- DefOverwrite
 	<IncidentDef>
 		<defName>ResourcePodCrash</defName>
 		<label>resource pod crash</label>
@@ -14,7 +14,7 @@
 		<baseChance>3</baseChance>
 		<minRefireDays>12</minRefireDays>
 	</IncidentDef>
-
+--><!-- DefOverwrite
 	<IncidentDef>
 		<defName>PsychicSoothe</defName>
 		<label>psychic soothe</label>
@@ -27,7 +27,7 @@
 		<minRefireDays>13</minRefireDays>
 		<durationDays>1.5~3.0</durationDays>
 	</IncidentDef>
-
+--><!-- DefOverwrite
 	<IncidentDef>
 		<defName>SelfTame</defName>
 		<label>self-tame</label>
@@ -39,7 +39,7 @@
 		<baseChance>1</baseChance>
 		<requireColonistsPresent>true</requireColonistsPresent>
 	</IncidentDef>
-
+--><!-- DefOverwrite
 	<IncidentDef>
 		<defName>AmbrosiaSprout</defName>
 		<label>ambrosia sprout</label>
@@ -74,11 +74,10 @@
 		<modExtensions>
 			<li Class="SK.ExtendedIncident">
 				<allowedTemperatureRange>0~999</allowedTemperatureRange>
-				<!-- current map temperature-->
 			</li>
 		</modExtensions>
 	</IncidentDef>
-
+--><!-- DefOverwrite
 	<IncidentDef>
 		<defName>FarmAnimalsWanderIn</defName>
 		<label>farm animals wander in</label>
@@ -89,7 +88,7 @@
 		<workerClass>IncidentWorker_FarmAnimalsWanderIn</workerClass>
 		<baseChance>0.9</baseChance>
 	</IncidentDef>
-
+--><!-- DefOverwrite
 	<IncidentDef>
 		<defName>WandererJoin</defName>
 		<label>wanderer join</label>
@@ -104,7 +103,7 @@
 		<pawnKind>Villager</pawnKind>
 		<populationEffect>IncreaseEasy</populationEffect>
 	</IncidentDef>
-
+--><!-- DefOverwrite
 	<IncidentDef>
 		<defName>RefugeePodCrash</defName>
 		<label>transport pod crash</label>
@@ -118,7 +117,7 @@
 		<populationEffect>IncreaseMedium</populationEffect>
 		<requireColonistsPresent>True</requireColonistsPresent>
 	</IncidentDef>
-
+-->
 	<!-- =========================== Neutral ============================-->
 
 	<IncidentDef>
@@ -146,7 +145,7 @@
 		<baseChance>0.7</baseChance>
 		<minRefireDays>13</minRefireDays>
 	</IncidentDef>
-
+<!-- DefOverwrite
 	<IncidentDef>
 		<defName>RansomDemand</defName>
 		<label>ransom demand</label>
@@ -161,7 +160,7 @@
 		<letterLabel>Ransom demand</letterLabel>
 		<letterDef>RansomDemand</letterDef>
 	</IncidentDef>
-
+--><!-- DefOverwrite
 	<IncidentDef>
 		<defName>MeteoriteImpact</defName>
 		<label>meteorite impact</label>
@@ -176,7 +175,7 @@
 		<letterText>A large meteorite has struck ground in the area. It has left behind a lump of {0}.</letterText>
 		<tale>MeteoriteImpact</tale>
 	</IncidentDef>
-
+--><!-- DefOverwrite
 	<IncidentDef>
 		<defName>HerdMigration</defName>
 		<label>herd migration</label>
@@ -190,7 +189,7 @@
 		<letterText>A group of {0} is passing through the area.\n\nThey won't attack unless provoked.</letterText>
 		<letterDef>NeutralEvent</letterDef>
 	</IncidentDef>
-
+--><!-- DefOverwrite
 	<IncidentDef>
 		<defName>WildManWandersIn</defName>
 		<label>wild man wanders in</label>
@@ -205,9 +204,9 @@
 		<letterText>A {1} living among wild animals has wandered into the area. {PAWN_pronoun}'s called {0}.\n\nYou can attempt to tame {PAWN_objective}.</letterText>
 		<letterDef>NeutralEvent</letterDef>
 	</IncidentDef>
-
+-->
 	<!--========================== Bad ===============================-->
-
+<!-- DefOverwrite
 	<IncidentDef>
 		<defName>PsychicDrone</defName>
 		<label>psychic drone</label>
@@ -222,7 +221,7 @@
 		<minRefireDays>15</minRefireDays>
 		<durationDays>0.75~1.75</durationDays>
 	</IncidentDef>
-
+--><!-- DefOverwrite
 	<IncidentDef>
 		<defName>ToxicFallout</defName>
 		<label>toxic fallout</label>
@@ -244,7 +243,7 @@
 		<tale>ToxicFallout</tale>
 		<minThreatPoints>4000</minThreatPoints>
 	</IncidentDef>
-
+--><!-- DefOverwrite
 	<IncidentDef>
 		<defName>VolcanicWinter</defName>
 		<label>volcanic winter</label>
@@ -266,7 +265,7 @@
 		<tale>VolcanicWinter</tale>
 		<minThreatPoints>5500</minThreatPoints>
 	</IncidentDef>
-
+--><!-- DefOverwrite
 	<IncidentDef>
 		<defName>HeatWave</defName>
 		<label>heat wave</label>
@@ -285,11 +284,10 @@
 		<modExtensions>
 			<li Class="SK.ExtendedIncident">
 				<allowedTemperatureRange>0~35</allowedTemperatureRange>
-				<!-- current map temperature-->
 			</li>
 		</modExtensions>
 	</IncidentDef>
-
+--><!-- DefOverwrite
 	<IncidentDef>
 		<defName>ColdSnap</defName>
 		<label>cold snap</label>
@@ -308,11 +306,10 @@
 		<modExtensions>
 			<li Class="SK.ExtendedIncident">
 				<allowedTemperatureRange>-25~15</allowedTemperatureRange>
-				<!-- current map temperature-->
 			</li>
 		</modExtensions>
 	</IncidentDef>
-
+--><!-- DefOverwrite
 	<IncidentDef>
 		<defName>Flashstorm</defName>
 		<label>flashstorm</label>
@@ -331,13 +328,11 @@
 		<modExtensions>
 			<li Class="SK.ExtendedIncident">
 				<allowedTemperatureRange>0~999</allowedTemperatureRange>
-				<!-- current map temperature-->
 				<allowedAverageBiomeTemperature>-10~999</allowedAverageBiomeTemperature>
-				<!-- Average biome temperature stat -->
 			</li>
 		</modExtensions>
 	</IncidentDef>
-
+--><!-- DefOverwrite
 	<IncidentDef>
 		<defName>ShortCircuit</defName>
 		<label>short circuit</label>
@@ -350,7 +345,7 @@
 		<baseChance>1.1</baseChance>
 		<minRefireDays>12</minRefireDays>
 	</IncidentDef>
-
+-->
 	<IncidentDef>
 		<defName>CropEaters</defName>
 		<label>crop eaters</label>
@@ -369,7 +364,7 @@
 			</li>
 		</modExtensions>
 	</IncidentDef>
-
+<!-- DefOverwrite
 	<IncidentDef>
 		<defName>Alphabeavers</defName>
 		<label>alphabeavers</label>
@@ -401,9 +396,8 @@
 		<modExtensions>
 			<li Class="SK.ExtendedIncident">
 				<allowedTemperatureRange>-35~999</allowedTemperatureRange>
-				<!-- current map temperature-->
 			</li>
 		</modExtensions>
 	</IncidentDef>
-
+-->
 </Defs>

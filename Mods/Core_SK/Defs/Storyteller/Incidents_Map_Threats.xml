@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- ============================== Big threats ==============================-->
-
+<!-- DefOverwrite
 	<IncidentDef>
 		<defName>RaidEnemy</defName>
 		<label>enemy raid</label>
@@ -16,7 +16,7 @@
 		<tale>Raid</tale>
 		<ignoreRecentSelectionWeighting>true</ignoreRecentSelectionWeighting>
 	</IncidentDef>
-
+-->
 	<IncidentDef>
 		<defName>RaidEnemyDesperate</defName>
 		<label>enemy raid</label>
@@ -32,6 +32,7 @@
 	</IncidentDef>
 
 	<!-- More hivePointMultiplier = less total hive count -->
+	<!-- DefOverwrite
 	<IncidentDef>
 		<defName>Infestation</defName>
 		<label>infestation</label>
@@ -55,7 +56,7 @@
 			</li>
 		</modExtensions>
 	</IncidentDef>
-
+--><!-- DefOverwrite
 	<IncidentDef>
 		<defName>DeepDrillInfestation</defName>
 		<label>deep drill infestation</label>
@@ -75,7 +76,7 @@
 		<pointsScaleable>true</pointsScaleable>
 		<tale>Infestation</tale>
 	</IncidentDef>
-
+--><!-- DefOverwrite
 	<IncidentDef>
 		<defName>ManhunterPack</defName>
 		<label>manhunter pack</label>
@@ -83,7 +84,6 @@
 			<li>Map_PlayerHome</li>
 		</targetTags>
 		<workerClass>SK.Events.IncidentWorker_ManhunterPack</workerClass>
-		<!-- <workerClass>IncidentWorker_AggressiveAnimals</workerClass> -->
 		<baseChance>0</baseChance>
 		<minRefireDays>8</minRefireDays>
 		<category>ThreatBig</category>
@@ -103,7 +103,6 @@
 			<li>Map_PlayerHome</li>
 		</targetTags>
 		<workerClass>SK.Events.IncidentWorker_ManhunterPack</workerClass>
-		<!-- <workerClass>IncidentWorker_AggressiveAnimals</workerClass> -->
 		<baseChance>1.0</baseChance>
 		<minRefireDays>8</minRefireDays>
 		<category>ThreatBig</category>
@@ -119,7 +118,8 @@
 			</li>
 		</modExtensions>
 	</IncidentDef>
-
+-->
+<!-- DefOverwrite
 	<IncidentDef>
 		<defName>DefoliatorShipPartCrash</defName>
 		<label>ship part crash (defoliator)</label>
@@ -146,7 +146,7 @@
 		<mechClusterBuilding>DefoliatorShipPart</mechClusterBuilding>
 		<tale>ShipPartCrash</tale>
 	</IncidentDef>
-
+--><!-- DefOverwrite
 	<IncidentDef>
 		<defName>AnimalInsanityMass</defName>
 		<label>mass animal insanity</label>
@@ -160,7 +160,7 @@
 		<category>ThreatBig</category>
 		<pointsScaleable>true</pointsScaleable>
 	</IncidentDef>
-
+-->
 	<!--<IncidentDef> removed in 1.5?
 		<defName>MechCluster</defName>
 		<label>mech cluster</label>
@@ -181,7 +181,7 @@
 	</IncidentDef> -->
 
 	<!-- ============================== Small threats ==============================-->
-
+<!-- DefOverwrite
 	<IncidentDef>
 		<defName>AnimalInsanitySingle</defName>
 		<label>single animal insanity</label>
@@ -193,5 +193,5 @@
 		<minRefireDays>2</minRefireDays>
 		<category>ThreatSmall</category>
 	</IncidentDef>
-
+-->
 </Defs>

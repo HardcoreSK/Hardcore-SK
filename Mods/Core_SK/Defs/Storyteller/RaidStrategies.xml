@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+<!-- DefOverwrite
 	<RaidStrategyDef Name="ImmediateAttack">
 		<defName>ImmediateAttack</defName>
 		<workerClass>RaidStrategyWorker_ImmediateAttack</workerClass>
@@ -10,16 +10,6 @@
 				<li>(700,1.15)</li>
 			</points>
 		</selectionWeightPerPointsCurve>
-		<!-- <selectionWeightCurvesPerFaction>
-			<li>
-				<faction>Mechanoid</faction>
-				<selectionWeightPerPointsCurve>
-					<points>
-						<li>(0, 0)</li>
-					</points>
-				</selectionWeightPerPointsCurve>
-			</li>
-		</selectionWeightCurvesPerFaction> -->
 		<pointsFactorCurve>
 			<points>
 				<li>0, 0.95</li>
@@ -41,13 +31,13 @@
 		<letterLabelFriendly>Friendlies</letterLabelFriendly>
 		<arrivalTextFriendly>They are moving in to help you immediately.</arrivalTextFriendly>
 	</RaidStrategyDef>
-
+--><!-- DefOverwrite
 	<RaidStrategyDef ParentName="ImmediateAttack">
 		<defName>ImmediateAttackFriendly</defName>
 		<workerClass>RaidStrategyWorker_ImmediateAttackFriendly</workerClass>
 		<pawnsCanBringFood>True</pawnsCanBringFood>
 	</RaidStrategyDef>
-
+--><!-- DefOverwrite
 	<RaidStrategyDef>
 		<defName>ImmediateAttackSmart</defName>
 		<workerClass>RaidStrategyWorker_ImmediateAttackSmart</workerClass>
@@ -76,7 +66,7 @@
 		<letterLabelFriendly>Friendlies</letterLabelFriendly>
 		<arrivalTextFriendly>They are moving in to help you immediately.</arrivalTextFriendly>
 	</RaidStrategyDef>
-
+--><!-- DefOverwrite
 	<RaidStrategyDef>
 		<defName>StageThenAttack</defName>
 		<workerClass>RaidStrategyWorker_StageThenAttack</workerClass>
@@ -86,16 +76,6 @@
 				<li>(700,0.8)</li>
 			</points>
 		</selectionWeightPerPointsCurve>
-		<!--<selectionWeightCurvesPerFaction>
-			<li>
-				<faction>Mechanoid</faction>
-				<selectionWeightPerPointsCurve>
-					<points>
-						<li>(0, 1)</li>
-					</points>
-				</selectionWeightPerPointsCurve>
-			</li>
-		 </selectionWeightCurvesPerFaction> -->
 		<pointsFactorCurve>
 			<points>
 				<li>0, 1</li>
@@ -114,7 +94,7 @@
 		<letterLabelFriendly>Friendlies</letterLabelFriendly>
 		<arrivalTextFriendly>They will prepare for a while before moving in to help you.</arrivalTextFriendly>
 	</RaidStrategyDef>
-
+--><!-- DefOverwrite
 	<RaidStrategyDef>
 		<defName>ImmediateAttackSappers</defName>
 		<workerClass>RaidStrategyWorker_ImmediateAttackSappers</workerClass>
@@ -143,7 +123,7 @@
 		<letterLabelEnemy>Raid</letterLabelEnemy>
 		<arrivalTextEnemy>It looks like they want to use sappers to tunnel around your defenses.</arrivalTextEnemy>
 	</RaidStrategyDef>
-
+-->
 	<RaidStrategyDef Abstract="True" Name="SiegeBase">
 		<pointsFactorCurve>
 			<points>
@@ -201,7 +181,7 @@
 		<letterLabelEnemy>Mechanoid Siege</letterLabelEnemy>
 		<arrivalTextEnemy>Rather than attack directly, the mechanoids are setting up a mech cluster near the colony. You must attack it to finally remove the threat.\n\nThe cluster will be initially dormant, so you can take time to decide how to attack it.\n\nIt may remain dormant until disturbed, or it may have a timer or proximity activators.\n\nEven dormant mech clusters aren't harmless. A dormant cluster may assemble mechanoid attackers from time to time, or have some broader negative effect that must be dealt with eventually.</arrivalTextEnemy>
 	</RaidStrategyDef>
-
+<!-- DefOverwrite
 	<RaidStrategyDef Abstract="True" Name="BreachingBase">
 		<pointsFactorCurve>
 			<points>
@@ -209,7 +189,6 @@
 			</points>
 		</pointsFactorCurve>
 		<selectionWeightPerPointsCurve>
-			<!-- Note both breach strats use this, so it's in some sense doubled -->
 			<points>
 				<li>(0, 0)</li>
 			</points>
@@ -233,7 +212,8 @@
 		<workerClass>RaidStrategyWorker_ImmediateAttackBreachingSmart</workerClass>
 		<arrivalTextEnemy>They are attacking immediately.\n\nThese raiders intend to breach your walls. They'll determine their own path into your colony and destroy anything in their way.\n\nWatch out - they appear to be unusually clever with their tactics. They'll avoid your turrets' fields of fire and notice some of your traps.</arrivalTextEnemy>
 	</RaidStrategyDef>
-
+-->
+<!-- DefOverwrite
 	<RaidStrategyDef>
 		<defName>EmergeFromWater</defName>
 		<workerClass>RaidStrategyWorker_ImmediateAttack</workerClass>
@@ -268,5 +248,5 @@
 		<letterLabelFriendly>Friendlies</letterLabelFriendly>
 		<arrivalTextFriendly>They are moving in to help you immediately.</arrivalTextFriendly>
 	</RaidStrategyDef>
-
+-->
 </Defs>

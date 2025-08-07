@@ -49,6 +49,9 @@
 			
 			<RecipeDef Name="SK.GlitterpediaModExtBaseDummy" ParentName="GlitterpediaModExtBase" Abstract="True" />
 
+			<RaidStrategyDef Name="SK.SiegeBaseDummy" ParentName="SiegeBase" Abstract="True" />
+			<RaidStrategyDef Name="SK.BreachingBaseDummy" ParentName="BreachingBase" Abstract="True" />
+
 			<ResearchProjectDef ParentName="PrimitiveBase" Name="SK.PrimitiveBaseDummy" Abstract="True" />
 			<ResearchProjectDef ParentName="MedievalBase" Name="SK.MedievalBaseDummy" Abstract="True" />
 			<ResearchProjectDef ParentName="IndustrialBase" Name="SK.IndustrialBaseDummy" Abstract="True" />

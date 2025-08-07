@@ -15,7 +15,7 @@
 	</IncidentDef>
 
 	<!--=============== OrbitalVisitor =============-->
-
+<!-- DefOverwrite
 	<IncidentDef>
 		<defName>OrbitalTraderArrival</defName>
 		<label>orbital trader arrival</label>
@@ -27,7 +27,7 @@
 		<baseChance>4</baseChance>
 		<requireColonistsPresent>True</requireColonistsPresent>
 	</IncidentDef>
-
+-->
 	<!--=============== OrbitalVisitor =============-->
 
 	<IncidentDef>
@@ -42,7 +42,7 @@
 	</IncidentDef>
 
 	<!--================= AllyArrival ================-->
-
+<!-- DefOverwrite
 	<IncidentDef>
 		<defName>TraderCaravanArrival</defName>
 		<label>trader caravan arrival</label>
@@ -54,7 +54,7 @@
 		<baseChance>5</baseChance>
 		<requireColonistsPresent>True</requireColonistsPresent>
 	</IncidentDef>	
-
+-->
 	<IncidentDef>
 		<defName>VisitorGroup</defName>
 		<label>visitor group</label>
@@ -98,7 +98,7 @@
 	</IncidentDef>
 
 	<!-- =========================== Good - special ============================-->
-
+<!-- DefOverwrite
 	<IncidentDef>
 		<defName>StrangerInBlackJoin</defName>
 		<label>man in black</label>
@@ -116,7 +116,7 @@
 		<pawnFixedGender>Male</pawnFixedGender>
 		<pawnMustBeCapableOfViolence>true</pawnMustBeCapableOfViolence>
 	</IncidentDef>
-
+-->
 	<IncidentTargetTagDef>
 		<defName>Map_Dummy</defName>
 	</IncidentTargetTagDef>

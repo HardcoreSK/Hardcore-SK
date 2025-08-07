@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RaidStrategyDef[defName="ImmediateAttack"]</xpath>
+    <value>
+      <selectionWeightPerPointsCurve>
+        <points>
+          <li>(300,1.5)</li>
+          <li>(700,1.15)</li>
+        </points>
+      </selectionWeightPerPointsCurve>
+      <pointsFactorCurve>
+        <points>
+          <li>0, 0.95</li>
+          <li>8000, 0.9</li>
+          <li>15000, 0.85</li>
+        </points>
+      </pointsFactorCurve>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RaidStrategyDef[defName="ImmediateAttackSmart"]</xpath>
+    <value>
+      <selectionWeightPerPointsCurve>
+        <points>
+          <li>(300,0)</li>
+          <li>(700,1.25)</li>
+        </points>
+      </selectionWeightPerPointsCurve>
+      <pointsFactorCurve>
+        <points>
+          <li>0, 0.9</li>
+          <li>8000, 0.85</li>
+          <li>15000, 0.8</li>
+        </points>
+      </pointsFactorCurve><!-- Gonna try with CenterDrop included
+      <arriveModes>
+        <li>EdgeDrop</li>
+        <li>EdgeWalkIn</li>
+        <li>RandomDrop</li>
+        <li>EdgeDropGroups</li>
+        <li>EdgeWalkInGroups</li>
+      </arriveModes>-->
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RaidStrategyDef[defName="StageThenAttack"]</xpath>
+    <value>
+      <selectionWeightPerPointsCurve>
+        <points>
+          <li>(300,1.75)</li>
+          <li>(700,0.8)</li>
+        </points>
+      </selectionWeightPerPointsCurve>
+      <pointsFactorCurve>
+        <points>
+          <li>0, 1</li>
+          <li>8000, 0.95</li>
+          <li>15000, 0.9</li>
+        </points>
+      </pointsFactorCurve>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RaidStrategyDef[defName="ImmediateAttackSappers"]</xpath>
+    <value>
+      <minPawns>6</minPawns>
+      <pointsFactorCurve>
+        <points>
+          <li>0, 0.9</li>
+          <li>5000, 0.85</li>
+          <li>15000, 0.8</li>
+        </points>
+      </pointsFactorCurve>
+      <selectionWeightPerPointsCurve>
+        <points>
+          <li>(300,  0.00)</li>
+          <li>(800,  0.75)</li>
+          <li>(1500, 1.25)</li>
+          <li>(3000, 1.8)</li>
+        </points>
+      </selectionWeightPerPointsCurve>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RaidStrategyDef[defName="Siege"]</xpath>
+    <value>
+      <selectionWeightPerPointsCurve>
+        <points>
+          <li>(300,  0.00)</li>
+          <li>(800,  1.50)</li>
+          <li>(1500, 2.25)</li>
+          <li>(3000, 3.00)</li>
+        </points>
+      </selectionWeightPerPointsCurve>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RaidStrategyDef[@Name="BreachingBase"]</xpath>
+    <value>
+      <pointsFactorCurve>
+        <points>
+          <li>0, 0</li>
+        </points>
+      </pointsFactorCurve>
+      <selectionWeightPerPointsCurve>
+        <points>
+          <li>(0, 0)</li>
+        </points>
+      </selectionWeightPerPointsCurve>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RaidStrategyDef[defName="EmergeFromWater"]</xpath>
+    <value>
+      <pointsFactorCurve>
+        <points>
+          <li>0, 0.9</li>
+          <li>8000, 0.85</li>
+          <li>15000, 0.8</li>
+        </points>
+      </pointsFactorCurve>
+    </value>
+  </Operation>
+
+</Patch>
