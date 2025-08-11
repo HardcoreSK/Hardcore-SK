@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/RaidStrategyDef[defName="WoodPlankFloor"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.WoodSK_FloorBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/TerrainDef[defName="WoodPlankFloor"]</xpath>
+    <value>
+      <label>oak planks</label>
+      <description>Unfinished oak. Long horizontal planks with a light coloring.</description>
+      <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+      <statBases>
+        <Beauty>2</Beauty>
+      </statBases>
+      <costList>
+        <WoodPlank>3</WoodPlank>
+      </costList>
+      <researchPrerequisites>
+        <li>Wooden_floor_A1</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+
+</Patch>

@@ -3,7 +3,7 @@
 
 	<!-- ================= Wood Tile ================= -->
 
-	<TerrainDef Abstract="True" ParentName="SK_FloorBase" Name="WoodSK_FloorBase">
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="WoodSK_FloorBase">
 		<pathCost>0</pathCost>
 		<statBases>
 			<WorkToBuild>310</WorkToBuild>
@@ -11,7 +11,6 @@
 			<Flammability>0.22</Flammability>
 			<CleaningTimeFactor>1</CleaningTimeFactor>
 		</statBases>
-		<fertility>0</fertility>
 		<constructEffect>ConstructWood</constructEffect>
 		<burnedDef>BurnedWoodPlankFloor</burnedDef>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
@@ -40,7 +39,7 @@
 			<li>Wooden_floor_A2</li>
 		</researchPrerequisites>
 	</TerrainDef>
-
+<!-- DefOverwrite
 	<TerrainDef  ParentName="WoodSK_FloorBase">
 		<defName>WoodPlankFloor</defName>
 		<label>oak planks</label>
@@ -57,7 +56,7 @@
 			<li>Wooden_floor_A1</li>
 		</researchPrerequisites>
 	</TerrainDef>
-
+-->
 
 	<TerrainDef  ParentName="WoodSK_FloorBase">
 		<defName>WoodPlankFloorTwo</defName>

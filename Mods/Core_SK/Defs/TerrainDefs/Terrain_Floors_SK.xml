@@ -27,7 +27,7 @@
 		<pollutionOverlayScale>(0.75, 0.75)</pollutionOverlayScale>
 	</TerrainDef>
 
-	<TerrainDef Abstract="True" ParentName="SK_FloorBase" Name="SK_TileStoneBase">
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="SK_TileStoneBase">
 		<renderPrecedence>220</renderPrecedence>
 		<description>Solid stone tiles for a castle feeling.</description>
 		<texturePath>Terrain/Surfaces/TileStone</texturePath>
@@ -50,8 +50,8 @@
 
 
 	<!-- ================= Outside Tile ================= -->
-
-	<TerrainDef ParentName="SK_FloorBase">
+<!-- DefOverwrite
+	<TerrainDef ParentName="FloorBase">
 		<defName>Concrete</defName>
 		<label>Concrete</label>
 		<description>Quick-poured concrete in a flat, grey surface. You'll need to be able to dig out the ground to pour this.</description>
@@ -73,8 +73,8 @@
 		</researchPrerequisites>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 	</TerrainDef>
-
-	<TerrainDef ParentName="SK_FloorBase">
+-->
+	<TerrainDef ParentName="FloorBase">
 		<defName>DarkConcrete</defName>
 		<label>Dark Concrete</label>
 		<description>Dark concrete in a honeycomb pattern. You'll need to be able to dig out the ground to pour this.</description>
@@ -97,7 +97,7 @@
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 	</TerrainDef>
 
-	<TerrainDef ParentName="SK_FloorBase">
+	<TerrainDef ParentName="FloorBase">
 		<defName>CeramicTile</defName>
 		<label>Ceramic Tile</label>
 		<renderPrecedence>230</renderPrecedence>
@@ -120,8 +120,8 @@
 			<li>FineFloor</li>
 		</tags>
 	</TerrainDef>
-
-	<TerrainDef ParentName="SK_FloorBase">
+<!-- DefOverwrite
+	<TerrainDef ParentName="FloorBase">
 		<defName>PavedTile</defName>
 		<label>Paved Tile</label>
 		<renderPrecedence>230</renderPrecedence>
@@ -140,10 +140,10 @@
 		</researchPrerequisites>
 		<designationCategory>OutsideFloors</designationCategory>
 	</TerrainDef>
-
+-->
 	<!-- ============ Tile stone ============ -->
-
-	<TerrainDef ParentName="SK_TileStoneBase">
+<!-- DefOverwrite
+	<TerrainDef ParentName="TileStoneBase">
 		<defName>TileSandstone</defName>
 		<label>Sandstone Tile</label>
 		<color>(126,104,94)</color>
@@ -159,7 +159,7 @@
 		</researchPrerequisites>
 	</TerrainDef>
 
-	<TerrainDef ParentName="SK_TileStoneBase">
+	<TerrainDef ParentName="TileStoneBase">
 		<defName>TileGranite</defName>
 		<label>Granite Tile</label>
 		<color>(105,95,97)</color>
@@ -175,7 +175,7 @@
 		</researchPrerequisites>
 	</TerrainDef>
 
-	<TerrainDef ParentName="SK_TileStoneBase">
+	<TerrainDef ParentName="TileStoneBase">
 		<defName>TileLimestone</defName>
 		<label>Limestone Tile</label>
 		<color>(158,153,135)</color>
@@ -191,7 +191,7 @@
 		</researchPrerequisites>
 	</TerrainDef>
 
-	<TerrainDef ParentName="SK_TileStoneBase">
+	<TerrainDef ParentName="TileStoneBase">
 		<defName>TileSlate</defName>
 		<label>Slate Tile</label>
 		<color>(70,70,70)</color>
@@ -207,7 +207,7 @@
 		</researchPrerequisites>
 	</TerrainDef>
 
-	<TerrainDef ParentName="SK_TileStoneBase">
+	<TerrainDef ParentName="TileStoneBase">
 		<defName>TileMarble</defName>
 		<label>Marble Tile</label>
 		<color>(132,135,132)</color>
@@ -222,8 +222,8 @@
 			<li>Stone_floor_B2</li>
 		</researchPrerequisites>
 	</TerrainDef>
-
-	<TerrainDef ParentName="SK_TileStoneBase">
+-->
+	<TerrainDef ParentName="TileStoneBase">
 		<defName>ClayBrickTile</defName>
 		<label>Clay tile</label>
 		<color>(163,109,64)</color>
@@ -239,7 +239,7 @@
 		</researchPrerequisites>
 	</TerrainDef>
 
-	<TerrainDef ParentName="SK_TileStoneBase">
+	<TerrainDef ParentName="TileStoneBase">
 		<defName>TileCeramics</defName>
 		<label>Ceramics Tile</label>
 		<color>(255,255,255)</color>
@@ -256,8 +256,8 @@
 	</TerrainDef>
 
 	<!-- ============ Flagstone ============ -->
-
-	<TerrainDef Abstract="True" ParentName="SK_FloorBase" Name="SK_FlagstoneBase">
+<!-- DefOverwrite
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="SK_FlagstoneBase">
 		<renderPrecedence>220</renderPrecedence>
 		<description>Roughly-cut stone tiles. Not super pretty, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources.</description>
 		<texturePath>Terrain/Surfaces/Flagstone</texturePath>
@@ -271,7 +271,6 @@
 			<Beauty>1</Beauty>
 			<CleaningTimeFactor>0.9</CleaningTimeFactor>
 		</statBases>
-		<!--<designatorDropdown>Floor_Flagstone</designatorDropdown>-->
 		<tags>
 			<li>Road</li>
 		</tags>
@@ -281,7 +280,7 @@
 		<designationCategory>NaturalFloors</designationCategory>
 	</TerrainDef>
 
-	<TerrainDef ParentName="SK_FlagstoneBase">
+	<TerrainDef ParentName="FlagstoneBase">
 		<defName>FlagstoneSandstone</defName>
 		<label>sandstone flagstone</label>
 		<color>(126,104,94)</color>
@@ -290,7 +289,7 @@
 		</costList>
 	</TerrainDef>
 
-	<TerrainDef ParentName="SK_FlagstoneBase">
+	<TerrainDef ParentName="FlagstoneBase">
 		<defName>FlagstoneGranite</defName>
 		<label>granite flagstone</label>
 		<color>(105,95,97)</color>
@@ -299,7 +298,7 @@
 		</costList>
 	</TerrainDef>
 
-	<TerrainDef ParentName="SK_FlagstoneBase">
+	<TerrainDef ParentName="FlagstoneBase">
 		<defName>FlagstoneLimestone</defName>
 		<label>limestone flagstone</label>
 		<color>(158,153,135)</color>
@@ -308,7 +307,7 @@
 		</costList>
 	</TerrainDef>
 
-	<TerrainDef ParentName="SK_FlagstoneBase">
+	<TerrainDef ParentName="FlagstoneBase">
 		<defName>FlagstoneSlate</defName>
 		<label>slate flagstone</label>
 		<color>(105,105,105)</color>
@@ -317,7 +316,7 @@
 		</costList>
 	</TerrainDef>
 
-	<TerrainDef ParentName="SK_FlagstoneBase">
+	<TerrainDef ParentName="FlagstoneBase">
 		<defName>FlagstoneMarble</defName>
 		<label>marble flagstone</label>
 		<color>(132,135,132)</color>
@@ -325,10 +324,10 @@
 			<BlocksMarble>2</BlocksMarble>
 		</costList>
 	</TerrainDef>
-
+-->
 	<!-- ============ Rough Sandstone ============ -->
 
-	<TerrainDef ParentName="SK_FloorBase">
+	<TerrainDef ParentName="FloorBase">
 		<defName>RoughSandstoneFloor</defName>
 		<label>Rough Sandstone</label>
 		<renderPrecedence>190</renderPrecedence>
@@ -357,7 +356,7 @@
 	</TerrainDef>
 
 	<!-- ============= Rough Granite ============ -->
-	<TerrainDef ParentName="SK_FloorBase">
+	<TerrainDef ParentName="FloorBase">
 		<defName>RoughGraniteFloor</defName>
 		<label>Rough Granite</label>
 		<renderPrecedence>191</renderPrecedence>
@@ -386,7 +385,7 @@
 	</TerrainDef>
 
 	<!-- ============ Rough Limestone ============ -->
-	<TerrainDef ParentName="SK_FloorBase">
+	<TerrainDef ParentName="FloorBase">
 		<defName>RoughLimestoneFloor</defName>
 		<label>Rough Limestone</label>
 		<renderPrecedence>192</renderPrecedence>
@@ -415,7 +414,7 @@
 	</TerrainDef>
 
 	<!-- ============ Rough Slate ============ -->
-	<TerrainDef ParentName="SK_FloorBase">
+	<TerrainDef ParentName="FloorBase">
 		<defName>RoughSlateFloor</defName>
 		<label>Rough Slate</label>
 		<renderPrecedence>193</renderPrecedence>
@@ -444,7 +443,7 @@
 	</TerrainDef>
 
 	<!-- =========== Rough Marble ============= -->
-	<TerrainDef ParentName="SK_FloorBase">
+	<TerrainDef ParentName="FloorBase">
 		<defName>RoughMarbleFloor</defName>
 		<label>Rough Marble</label>
 		<renderPrecedence>194</renderPrecedence>
@@ -473,7 +472,7 @@
 	</TerrainDef>
 
 	<!-- =========== Rough Ceramics ============= -->
-	<TerrainDef ParentName="SK_FloorBase">
+	<TerrainDef ParentName="FloorBase">
 		<defName>RoughCeramicsFloor</defName>
 		<label>Rough Ceramics</label>
 		<renderPrecedence>194</renderPrecedence>
