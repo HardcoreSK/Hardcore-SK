@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
+<!-- May not need 
 	<TerrainDef Name="MetalTileBase" ParentName="SK_FloorBase" Abstract="True">
 		<statBases>
 			<WorkToBuild>760</WorkToBuild>
@@ -14,9 +14,9 @@
 		<tags>
 			<li>Floor</li>
 		</tags>
-	</TerrainDef>
-
-	<TerrainDef ParentName="MetalTileBase">
+	</TerrainDef>-->
+<!-- DefOverwrite
+	<TerrainDef ParentName="TileMetalBase">
 		<defName>SilverTile</defName>
 		<label>silver tile</label>
 		<renderPrecedence>241</renderPrecedence>
@@ -39,8 +39,8 @@
 			<li>Metal_floor_C2</li>
 		</researchPrerequisites>
 	</TerrainDef>
-
-	<TerrainDef ParentName="MetalTileBase">
+--><!-- DefOverwrite
+	<TerrainDef ParentName="TileMetalBase">
 		<defName>SterileTile</defName>
 		<label>sterile tile</label>
 		<renderPrecedence>243</renderPrecedence>
@@ -62,8 +62,8 @@
 			<li>SterileMaterials</li>
 		</researchPrerequisites>
 	</TerrainDef>
-
-	<TerrainDef ParentName="MetalTileBase">
+-->
+	<TerrainDef ParentName="TileMetalBase">
 		<defName>TinTile</defName>
 		<label>white tin tile</label>
 		<renderPrecedence>240</renderPrecedence>
@@ -77,12 +77,12 @@
 		<costList>
 			<TinBar>3</TinBar>
 		</costList>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="false">
 			<li>Metal_floor_B1</li>
 		</researchPrerequisites>
 	</TerrainDef>
 
-	<TerrainDef ParentName="MetalTileBase">
+	<TerrainDef ParentName="TileMetalBase">
 		<defName>CopperTile</defName>
 		<label>simple copper tile</label>
 		<renderPrecedence>240</renderPrecedence>
@@ -96,12 +96,12 @@
 		<costList>
 			<CopperBar>3</CopperBar>
 		</costList>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="false">
 			<li>Metal_floor_B1</li>
 		</researchPrerequisites>
 	</TerrainDef>
-
-	<TerrainDef ParentName="MetalTileBase">
+<!-- DefOverwrite
+	<TerrainDef ParentName="TileMetalBase">
 		<defName>MetalTile</defName>
 		<label>grey metal tile</label>
 		<renderPrecedence>240</renderPrecedence>
@@ -118,8 +118,8 @@
 			<li>Metal_floor_B1</li>
 		</researchPrerequisites>
 	</TerrainDef>
-
-	<TerrainDef  ParentName="MetalTileBase">
+-->
+	<TerrainDef  ParentName="TileMetalBase">
 		<defName>MetalTileTwo</defName>
 		<label>black metal tile</label>
 		<renderPrecedence>240</renderPrecedence>
@@ -131,12 +131,12 @@
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="false">
 			<li>Metal_floor_B2</li>
 		</researchPrerequisites>
 	</TerrainDef>
 
-	<TerrainDef  ParentName="MetalTileBase">
+	<TerrainDef  ParentName="TileMetalBase">
 		<defName>MetalTileThree</defName>
 		<label>grey metal tile</label>
 		<renderPrecedence>240</renderPrecedence>
@@ -148,12 +148,12 @@
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="false">
 			<li>Metal_floor_B2</li>
 		</researchPrerequisites>
 	</TerrainDef>
 
-	<TerrainDef  ParentName="MetalTileBase">
+	<TerrainDef  ParentName="TileMetalBase">
 		<defName>MetalTileFour</defName>
 		<label>patterned metal tile</label>
 		<renderPrecedence>240</renderPrecedence>
@@ -165,14 +165,14 @@
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="false">
 			<li>Metal_floor_B2</li>
 		</researchPrerequisites>
 	</TerrainDef>
 
 	<!-- ============ Aluminium Tile ============ -->
 
-	<TerrainDef ParentName="MetalTileBase">
+	<TerrainDef ParentName="TileMetalBase">
 		<defName>AluminiumTile</defName>
 		<label>simple aluminium tile</label>
 		<renderPrecedence>240</renderPrecedence>
@@ -189,7 +189,7 @@
 		<costList>
 			<AluminiumBar>4</AluminiumBar>
 		</costList>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="false">
 			<li>Metal_floor_C1</li>
 		</researchPrerequisites>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
@@ -197,7 +197,7 @@
 
 	<!-- ============ Cupronickel (melchior) Tile ============ -->
 
-	<TerrainDef ParentName="MetalTileBase">
+	<TerrainDef ParentName="TileMetalBase">
 		<defName>CupronickelTile</defName>
 		<label>simple melchior tile</label>
 		<renderPrecedence>240</renderPrecedence>
@@ -214,14 +214,14 @@
 		<costList>
 			<CupronickelAlloy>4</CupronickelAlloy>
 		</costList>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="false">
 			<li>Metal_floor_C1</li>
 		</researchPrerequisites>
 	</TerrainDef>
 
 	<!-- ============ Stein Tile ============ -->
 
-	<TerrainDef ParentName="MetalTileBase">
+	<TerrainDef ParentName="TileMetalBase">
 		<defName>SteinTile</defName>
 		<label>simple stein tile</label>
 		<renderPrecedence>240</renderPrecedence>
@@ -238,14 +238,14 @@
 		<costList>
 			<SteelBar>4</SteelBar>
 		</costList>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="false">
 			<li>Metal_floor_C1</li>
 		</researchPrerequisites>
 	</TerrainDef>
 
 	<!-- ============ Titanium Tile ============ -->
 
-	<TerrainDef ParentName="MetalTileBase">
+	<TerrainDef ParentName="TileMetalBase">
 		<defName>TitaniumTile</defName>
 		<label>simple titanium tile</label>
 		<renderPrecedence>240</renderPrecedence>
@@ -262,14 +262,14 @@
 		<costList>
 			<Titanium>4</Titanium>
 		</costList>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="false">
 			<li>Metal_floor_D1</li>
 		</researchPrerequisites>
 	</TerrainDef>
 
 	<!-- ============ Beta Poly Tile ============ -->
 
-	<TerrainDef ParentName="MetalTileBase">
+	<TerrainDef ParentName="TileMetalBase">
 		<defName>BetaPolyTile</defName>
 		<label>simple beta poly tile</label>
 		<renderPrecedence>240</renderPrecedence>
@@ -286,7 +286,7 @@
 		<costList>
 			<BetaPoly>4</BetaPoly>
 		</costList>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="false">
 			<li>Metal_floor_D1</li>
 		</researchPrerequisites>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
@@ -294,7 +294,7 @@
 
 	<!-- ============ Gold Tile ============ -->
 
-	<TerrainDef  ParentName="MetalTileBase">
+	<TerrainDef  ParentName="TileMetalBase">
 		<defName>GoldTile</defName>
 		<label>gold tile</label>
 		<renderPrecedence>240</renderPrecedence>
@@ -311,7 +311,7 @@
 		<tags>
 			<li>FineFloor</li>
 		</tags>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="false">
 			<li>Metal_floor_C2</li>
 		</researchPrerequisites>
 	</TerrainDef>
@@ -336,16 +336,13 @@
 	</TerrainDef>
 
 
-	<TerrainDef Name="MetalPlateBase" ParentName="MetalTileBase" Abstract="True">
+	<TerrainDef Name="MetalPlateBase" ParentName="TileMetalBase" Abstract="True">
 		<renderPrecedence>222</renderPrecedence>
 		<description>Metal plates complete with rivets for an industrial look. Time-consuming to make, but easy to keep clean.</description>
 		<texturePath>Terrain/Surfaces/MetalPlate</texturePath>
 		<statBases>
 			<WorkToBuild>760</WorkToBuild>
 		</statBases>
-		<researchPrerequisites>
-			<li>Metal_floor_B1</li>
-		</researchPrerequisites>
 	</TerrainDef>
 
 	<TerrainDef ParentName="MetalPlateBase">

@@ -60,7 +60,7 @@
 
 
 	<!-- ================== Projectiles ================== -->
-
+<!-- DefOverwrite
 	<ThingDef Class="SK.ThingDef_LaserProjectileCR" ParentName="SK_BaseBullet">
 		<defName>Bullet_ChargeLance</defName>
 		<thingClass>SK.Projectile_LaserCE</thingClass>
@@ -73,7 +73,6 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>32</damageAmountBase>
 			<speed>270</speed>
-			<!-- <armorPenetrationBase>1.1</armorPenetrationBase> -->
 			<armorPenetrationSharp>80</armorPenetrationSharp>
 			<armorPenetrationBlunt>240</armorPenetrationBlunt>
 		</projectile>
@@ -84,7 +83,7 @@
 		<preFiringDuration>6</preFiringDuration>
 		<postFiringDuration>3</postFiringDuration>
 	</ThingDef>
-
+-->
 	<!-- ==================== Recipes ========================== -->
 
 	<RecipeDef ParentName="AmmoRecipeBase">

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/TerrainDef[@Name="TileMetalBase"]</xpath>
+    <value>
+		<designatorDropdown IsNull="true"/>
+		<statBases>
+			<WorkToBuild>760</WorkToBuild>
+			<Cleanliness>0.2</Cleanliness>
+			<Beauty>2</Beauty>
+			<CleaningTimeFactor>0.6</CleaningTimeFactor>
+		</statBases>
+		<designationCategory>OutsideFloors</designationCategory>
+		<researchPrerequisites>
+		  <li>Metal_floor_B1</li>
+		</researchPrerequisites>
+		<tags>
+			<li>Floor</li>
+		</tags>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/TerrainDef[defName="SilverTile"]</xpath>
+    <value>
+      <description>Expensive and slow to build. Soft grey tiles with a grey bordering.</description>
+      <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+      <color>(0.71, 0.68, 0.59)</color>
+      <statBases>
+        <Beauty>8</Beauty>
+        <Cleanliness>0.4</Cleanliness>
+        <WorkToBuild>840</WorkToBuild>
+        <CleaningTimeFactor>0.6</CleaningTimeFactor>
+      </statBases>
+      <costList>
+        <SilverBar>5</SilverBar>
+      </costList>
+      <researchPrerequisites Inherit="false">
+        <li>Metal_floor_C2</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/TerrainDef[defName="SterileTile"]</xpath>
+    <value>
+      <description>Sterile tiles are clean, light grey squares. Very useful in hospitals to help prevent infections. Quite slow to build.</description>
+      <statBases>
+        <Beauty>1</Beauty>
+        <Cleanliness>0.6</Cleanliness>
+        <WorkToBuild>900</WorkToBuild>
+        <CleaningTimeFactor>0.6</CleaningTimeFactor>
+      </statBases>
+      <costList>
+        <Ceramics>1</Ceramics>
+        <SilverBar>5</SilverBar>
+      </costList>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/TerrainDef[defName="MetalTile"]</xpath>
+    <value>
+      <label>grey metal tile</label>
+      <description>Grey metal square tiles, for that spaceship look.</description>
+      <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+      <color>(0.54, 0.52, 0.53)</color>
+      <statBases Merge="true">
+        <Beauty>4</Beauty>
+      </statBases>
+      <costList>
+        <ComponentIndustrial>1</ComponentIndustrial>
+      </costList>
+      <researchPrerequisites Inherit="false">
+        <li>Metal_floor_B1</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/TerrainDef[defName="GoldTile"]</xpath>
+    <value>
+      <renderPrecedence>240</renderPrecedence>
+      <description>Gold tiles, because you're worth it.</description>
+      <texturePath>Terrain/Surfaces/GoldTile</texturePath>
+      <statBases Merge="true">
+        <Beauty>12</Beauty>
+        <WorkToBuild>1500</WorkToBuild>
+      </statBases>
+      <costList>
+        <GoldBar>5</GoldBar>
+      </costList>
+      <researchPrerequisites Inherit="false">
+        <li>Metal_floor_C2</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+
+</Patch>
