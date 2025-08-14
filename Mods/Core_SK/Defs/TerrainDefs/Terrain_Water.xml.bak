@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- Deep -->
-
+<!-- DefOverwrite
 	<TerrainDef ParentName="WaterDeepBase">
 		<defName>WaterDeep</defName>
 		<label>deep water</label>
@@ -12,7 +12,7 @@
 		</affordances>
 		<pollutedTexturePath>Terrain/Surfaces/WaterDeepRampPolluted</pollutedTexturePath>
 	</TerrainDef>
-
+--><!-- DefOverwrite
 	<TerrainDef ParentName="WaterDeepBase">
 		<defName>WaterOceanDeep</defName>
 		<label>deep ocean water</label>
@@ -24,7 +24,7 @@
 			<li>Ocean</li>
 		</tags>
 	</TerrainDef>
-
+--><!-- DefOverwrite
 	<TerrainDef ParentName="WaterChestDeepBase">
 		<defName>WaterMovingChestDeep</defName>
 		<label>chest-deep moving water</label>
@@ -41,7 +41,7 @@
 			<_UseWaterOffset>1</_UseWaterOffset>
 		</waterDepthShaderParameters>
 	</TerrainDef>
-
+--><!-- DefOverwrite
 	<TerrainDef ParentName="WaterShallowBase">
 		<defName>Marsh</defName>
 		<label>marsh</label>
@@ -80,5 +80,5 @@
 			</li>
 		</tools>
 	</TerrainDef>
-
+-->
 </Defs>

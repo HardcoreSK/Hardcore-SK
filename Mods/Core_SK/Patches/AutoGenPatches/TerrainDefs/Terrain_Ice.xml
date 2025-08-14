@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/TerrainDef[defName="Ice"]</xpath>
+    <value>
+      <pathCost>25</pathCost>
+      <statBases Merge="true">
+        <Beauty>-1</Beauty>
+      </statBases>
+      <holdSnowOrSand>true</holdSnowOrSand>
+    </value>
+  </Operation>
+
+</Patch>

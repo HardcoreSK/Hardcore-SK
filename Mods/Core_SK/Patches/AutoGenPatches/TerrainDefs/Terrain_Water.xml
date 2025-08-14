@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/TerrainDef[defName="WaterDeep"]</xpath>
+    <value>
+      <affordances>
+        <li>DeepWater</li>
+      </affordances>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/TerrainDef[defName="WaterOceanDeep"]</xpath>
+    <value>
+      <affordances>
+        <li>DeepWater</li>
+      </affordances>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/TerrainDef[defName="WaterMovingChestDeep"]</xpath>
+    <value>
+      <affordances>
+        <li>MovingFluid</li>
+        <li>DeepWater</li>
+      </affordances>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/TerrainDef[defName="Marsh"]</xpath>
+    <value>
+      <pathCost>55</pathCost>
+      <statBases Merge="true">
+        <Cleanliness>-3</Cleanliness>
+      </statBases>
+      <fertility>0.02</fertility>
+      <affordances>
+        <li>Diggable</li>
+      </affordances>
+    </value>
+  </Operation>
+
+</Patch>
