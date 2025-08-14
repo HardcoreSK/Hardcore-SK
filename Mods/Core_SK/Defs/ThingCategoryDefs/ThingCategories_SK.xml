@@ -9,6 +9,7 @@
 		<label>Resources</label>
 		<parent>Root</parent>
 	</ThingCategoryDef>
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>Foods</defName>
 		<label>Foods</label>
@@ -16,6 +17,7 @@
 		<resourceReadoutRoot>true</resourceReadoutRoot>
 		<iconPath>UI/Icons/ThingCategories/Foods</iconPath>
 	</ThingCategoryDef>
+	--><!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>FoodMeals</defName>
 		<label>Meals</label>
@@ -23,6 +25,7 @@
 		<resourceReadoutRoot>true</resourceReadoutRoot>
 		<iconPath>UI/Icons/ThingCategories/FoodMeals</iconPath>
 	</ThingCategoryDef>
+	--><!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>FoodRaw</defName>
 		<label>Raw Food</label>
@@ -30,6 +33,7 @@
 		<resourceReadoutRoot>true</resourceReadoutRoot>
 		<iconPath>UI/Icons/ThingCategories/FoodRaw</iconPath>
 	</ThingCategoryDef>
+	--><!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>AnimalProductRaw</defName>
 		<label>Animal products</label>
@@ -49,6 +53,7 @@
 		<parent>AnimalProductRaw</parent>
 		<iconPath>UI/Icons/ThingCategories/EggsFertilized</iconPath>
 	</ThingCategoryDef>
+	-->
 	<!-- ============= HARDCORE SK CATEGORIES start =================-->
 	<ThingCategoryDef>
 		<defName>CookingSupplies</defName>
@@ -107,6 +112,7 @@
 		<iconPath>UI/Icons/ThingCategories/Energy</iconPath>
 	</ThingCategoryDef>
 	<!--Tag-->
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>Drugs</defName>
 		<label>Drugs</label>
@@ -114,6 +120,7 @@
 		<resourceReadoutRoot>true</resourceReadoutRoot>
 		<iconPath>UI/Icons/ThingCategories/Drugs</iconPath>
 	</ThingCategoryDef>
+	-->
 	<ThingCategoryDef>
 		<defName>MedicalDrugs</defName>
 		<label>Medical Drugs</label>
@@ -138,12 +145,14 @@
 				  </ThingCategoryDef>
 				-->
 	<!-- ============= HARDCORE SK CATEGORIES end =================-->
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>MeatRaw</defName>
 		<label>Meat</label>
 		<parent>FoodRaw</parent>
 		<iconPath>UI/Icons/ThingCategories/MeatRaw</iconPath>
 	</ThingCategoryDef>
+	-->
 	<ThingCategoryDef>
 		<defName>MeatSubRaw</defName>
 		<label>Meat Substitute</label>
@@ -156,13 +165,13 @@
 		<parent>MeatRaw</parent>
 		<resourceReadoutRoot>true</resourceReadoutRoot>
 		<iconPath>UI/Icons/ThingCategories/FreshFish</iconPath>
-	</ThingCategoryDef>
+	</ThingCategoryDef><!--
 	<ThingCategoryDef>
 		<defName>PlantFoodRaw</defName>
 		<label>Vegetarian</label>
 		<parent>FoodRaw</parent>
 		<iconPath>UI/Icons/ThingCategories/PlantFoodRaw</iconPath>
-	</ThingCategoryDef>
+	</ThingCategoryDef>-->
 	<!-- ============= HARDCORE SK CATEGORIES start =================-->
 	<ThingCategoryDef>
 		<defName>BasicPlantFoodRaw</defName>
@@ -193,6 +202,7 @@
 		<iconPath>UI/Icons/ThingCategories/FruitFoodRaw</iconPath>
 	</ThingCategoryDef>
 	<!-- ============= HARDCORE SK CATEGORIES end =================-->
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>Manufactured</defName>
 		<label>Manufactured</label>
@@ -200,6 +210,7 @@
 		<resourceReadoutRoot>true</resourceReadoutRoot>
 		<iconPath>UI/Icons/ThingCategories/Manufactured</iconPath>
 	</ThingCategoryDef>
+	-->
 	<!-- ============= HARDCORE SK CATEGORIES start =================-->
 	<ThingCategoryDef>
 		<defName>Metallic</defName>
@@ -280,12 +291,14 @@
 		<parent>Manufactured</parent>
 	</ThingCategoryDef>
 	<!-- ============= HARDCORE SK CATEGORIES end =================-->
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>Textiles</defName>
 		<label>Textiles</label>
 		<parent>Manufactured</parent>
 		<iconPath>UI/Icons/ThingCategories/Textiles</iconPath>
 	</ThingCategoryDef>
+	-->
 	<ThingCategoryDef>
 		<defName>BTextiles</defName>
 		<label>Basic</label>
@@ -304,24 +317,28 @@
 		<parent>Textiles</parent>
 		<iconPath>UI/Icons/ThingCategories/Textiles</iconPath>
 	</ThingCategoryDef>
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>Leathers</defName>
 		<label>Leathers</label>
 		<parent>Textiles</parent>
 		<iconPath>UI/Icons/ThingCategories/Leathers</iconPath>
 	</ThingCategoryDef>
+	-->
 	<ThingCategoryDef>
 		<defName>Wools</defName>
 		<label>wools</label>
 		<parent>Textiles</parent>
 		<iconPath>UI/Icons/ThingCategories/Wools</iconPath>
 	</ThingCategoryDef>
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>Medicine</defName>
 		<label>Medicine</label>
 		<parent>Manufactured</parent>
 		<iconPath>UI/Icons/ThingCategories/Medicine</iconPath>
 	</ThingCategoryDef>
+	-->
 	<!-- ============= HARDCORE SK CATEGORIES start =================-->
 	<ThingCategoryDef>
 		<defName>Canware</defName>
@@ -372,6 +389,7 @@
 		<parent>Manufactured</parent>
 	</ThingCategoryDef>
 	<!-- ============= HARDCORE SK CATEGORIES end =================-->
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>ResourcesRaw</defName>
 		<label>Raw Resources</label>
@@ -379,6 +397,7 @@
 		<resourceReadoutRoot>true</resourceReadoutRoot>
 		<iconPath>UI/Icons/ThingCategories/ResourcesRaw</iconPath>
 	</ThingCategoryDef>
+	-->
 	<!--tag-->
 	<ThingCategoryDef>
 		<defName>PlantMatter</defName>
@@ -406,6 +425,7 @@
 		<label>waste</label>
 		<parent>ResourcesRaw</parent>
 	</ThingCategoryDef>
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>StoneBlocks</defName>
 		<label>Stone Blocks</label>
@@ -413,6 +433,7 @@
 		<resourceReadoutRoot>true</resourceReadoutRoot>
 		<iconPath>UI/Icons/ThingCategories/StoneBlocks</iconPath>
 	</ThingCategoryDef>
+	-->
 	<ThingCategoryDef>
 		<defName>Metals</defName>
 		<label>Metal Ore</label>
@@ -481,16 +502,19 @@
 		<parent>ResourcesRaw</parent>
 	</ThingCategoryDef>
 	<!-- ============= HARDCORE SK CATEGORIES end =================-->
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>Items</defName>
 		<label>Items</label>
 		<parent>Root</parent>
 	</ThingCategoryDef>
+	--><!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>Unfinished</defName>
 		<label>Unfinished</label>
 		<parent>Items</parent>
 	</ThingCategoryDef>
+	-->
 	<ThingCategoryDef>
 		<defName>Books</defName>
 		<label>books</label>
@@ -526,17 +550,21 @@
 		<label>misc</label>
 		<parent>Items</parent>
 	</ThingCategoryDef>
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>Weapons</defName>
 		<label>Weapons</label>
 		<parent>Root</parent>
 	</ThingCategoryDef>
+	-->
 	<!-- ============= HARDCORE SK CATEGORIES start =================-->
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>WeaponsMelee</defName>
 		<label>Melee Weapons</label>
 		<parent>Weapons</parent>
 	</ThingCategoryDef>
+	-->
 	<ThingCategoryDef>
 		<defName>AgileMelee</defName>
 		<label>Agile</label>
@@ -562,11 +590,13 @@
 		<label>Special</label>
 		<parent>WeaponsMelee</parent>
 	</ThingCategoryDef>
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>WeaponsRanged</defName>
 		<label>Ranged Weapons</label>
 		<parent>Weapons</parent>
 	</ThingCategoryDef>
+	-->
 	<ThingCategoryDef>
 		<defName>BowRanged</defName>
 		<label>Bows</label>
@@ -633,11 +663,13 @@
 		<parent>WeaponsRanged</parent>
 	</ThingCategoryDef>
 	<!-- ============= HARDCORE SK CATEGORIES end =================-->
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>Grenades</defName>
 		<label>Grenades</label>
 		<parent>WeaponsRanged</parent>
 	</ThingCategoryDef>
+	-->
 	<!-- ============= HARDCORE SK CATEGORIES start =================-->
 	<ThingCategoryDef>
 		<defName>SurvivalTools</defName>
@@ -665,6 +697,7 @@
 		<parent>Weapons</parent>
 	</ThingCategoryDef>
 	<!-- ============= HARDCORE SK CATEGORIES end =================-->
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>Apparel</defName>
 		<label>Apparel</label>
@@ -675,6 +708,7 @@
 		<label>Headgear</label>
 		<parent>Apparel</parent>
 	</ThingCategoryDef>
+	-->
 	<ThingCategoryDef>
 		<defName>AnimalHeaddressCat</defName>
 		<label>Animal Headdress</label>
@@ -690,11 +724,13 @@
 		<label>Special Headdress</label>
 		<parent>Headgear</parent>
 	</ThingCategoryDef>
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>HeadgearNoble</defName>
 		<label>Noble Headress</label>
 		<parent>Headgear</parent>
 	</ThingCategoryDef>
+	-->
 	<ThingCategoryDef>
 		<defName>MilitaryHeaddressCat</defName>
 		<label>Military Headdress</label>
@@ -740,11 +776,13 @@
 		<label>Upper Dress</label>
 		<parent>Apparel</parent>
 	</ThingCategoryDef>
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>ApparelNoble</defName>
 		<label>Noble Dress</label>
 		<parent>Apparel</parent>
 	</ThingCategoryDef>
+	-->
 	<ThingCategoryDef>
 		<defName>UpperOverdressCat</defName>
 		<label>Upper Overdress</label>
@@ -1022,16 +1060,20 @@
 		<label>special</label>
 		<parent>Buildings</parent>
 	</ThingCategoryDef>
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>BodyParts</defName>
 		<label>Body Parts</label>
 		<parent>Root</parent>
 	</ThingCategoryDef>
+	-->
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>BodyPartsNatural</defName>
 		<label>Natural</label>
 		<parent>BodyParts</parent>
 	</ThingCategoryDef>
+	-->
 	<ThingCategoryDef>
 		<defName>BodyPartsArtificial</defName>
 		<label>Artificial</label>
@@ -1048,11 +1090,13 @@
 		<label>Simple Prostheses</label>
 		<parent>BodyParts</parent>
 	</ThingCategoryDef>
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>BodyPartsBionic</defName>
 		<label>Bionics</label>
 		<parent>BodyParts</parent>
 	</ThingCategoryDef>
+	-->
 	<ThingCategoryDef>
 		<defName>CyberneticProstheses</defName>
 		<label>Cybernetic Bionics</label>
@@ -1070,11 +1114,13 @@
 	</ThingCategoryDef>
 
 	<!-- ============= HARDCORE SK CATEGORIES end =================-->
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>Chunks</defName>
 		<label>Chunks</label>
 		<parent>Root</parent>
 	</ThingCategoryDef>
+	--><!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>StoneChunks</defName>
 		<label>Stone Chunks</label>
@@ -1082,6 +1128,7 @@
 		<resourceReadoutRoot>true</resourceReadoutRoot>
 		<iconPath>UI/Icons/ThingCategories/StoneChunks</iconPath>
 	</ThingCategoryDef>	
+	-->
 	<ThingCategoryDef>
 		<defName>Animals</defName>
 		<label>animals</label>
@@ -1097,32 +1144,38 @@
 		<label>stumps</label>
 		<parent>Plants</parent>
 	</ThingCategoryDef>
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>Corpses</defName>
 		<label>Corpses</label>
 		<parent>Root</parent>
 	</ThingCategoryDef>
+	--><!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>CorpsesHumanlike</defName>
 		<label>Humanlike Corpses</label>
 		<parent>Corpses</parent>
 	</ThingCategoryDef>
+	--><!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>CorpsesAnimal</defName>
 		<label>Animal Corpses</label>
 		<parent>Corpses</parent>
 	</ThingCategoryDef>
+	-->
 	<!--tag-->
 	<ThingCategoryDef>
 		<defName>CorpsesInsect</defName>
 		<label>insect corpses</label>
 		<parent>CorpsesAnimal</parent>
 	</ThingCategoryDef>
+	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>CorpsesMechanoid</defName>
 		<label>Mechanoid Corpses</label>
 		<parent>Corpses</parent>
 	</ThingCategoryDef>
+	-->
 	<!-- Book Effects -->
 	<ThingCategoryDef>
 		<defName>BookEffects</defName>
