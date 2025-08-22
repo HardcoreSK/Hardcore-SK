@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="Prosthetics"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.MedievalBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="Prosthetics"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.MedievalBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="Prosthetics"]</xpath>
@@ -23,11 +23,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="MedicineProduction"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.IndustrialBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="MedicineProduction"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.IndustrialBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="MedicineProduction"]</xpath>
@@ -44,11 +44,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="HospitalBed"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.IndustrialBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="HospitalBed"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.IndustrialBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="HospitalBed"]</xpath>
@@ -66,11 +66,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="VitalsMonitor"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="VitalsMonitor"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="VitalsMonitor"]</xpath>
@@ -81,6 +81,7 @@
       <prerequisites>
         <li>HospitalBed</li>
       </prerequisites>
+      <requiredResearchFacilities/>
       <researchViewX>9.00</researchViewX>
       <researchViewY>63.00</researchViewY>
       <tab>Medicine_SK</tab>
@@ -90,11 +91,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="Bionics"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechMultiBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="Bionics"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechMultiBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="Bionics"]</xpath>
@@ -111,320 +112,320 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationFindMod">
-	<mods>
-		<li>Royalty</li>
-	</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-	
-				<li Class="PatchOperationAttributeSet">
-					<xpath>Defs/ResearchProjectDef[defName="BrainWiring"]</xpath>
-					<attribute>ParentName</attribute>
-					<value>SK.HitechMultiBaseDummy</value>
-				</li>
-	
-			  <li Class="SK.PatchOperationReplaceExtended">
-				<xpath>Defs/ResearchProjectDef[defName="BrainWiring"]</xpath>
-				<value>
-				  <label>Brain wiring</label>
-				  <baseCost>700</baseCost>
-				  <techLevel>Spacer</techLevel>
-				  <prerequisites>
-					<li>Bionics</li>
-				  </prerequisites>
-				  <researchViewX>20.00</researchViewX>
-				  <researchViewY>53.00</researchViewY>
-				  <tab>Medicine_SK</tab>
-				  <techprintCount>1</techprintCount>
-				  <techprintCommonality>1</techprintCommonality>
-				  <techprintMarketValue>2000</techprintMarketValue>
-				  <heldByFactionCategoryTags>
-					<li>Empire</li>
-				  </heldByFactionCategoryTags>
-				</value>
-			  </li>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Royalty</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
 
-				<li Class="PatchOperationAttributeSet">
-					<xpath>Defs/ResearchProjectDef[defName="SpecializedLimbs"]</xpath>
-					<attribute>ParentName</attribute>
-					<value>SK.HitechMultiBaseDummy</value>
-				</li>
+        <li Class="PatchOperationAttributeSet">
+          <xpath>Defs/ResearchProjectDef[defName="BrainWiring"]</xpath>
+          <attribute>ParentName</attribute>
+          <value>SK.HitechMultiBaseDummy</value>
+        </li>
 
-			  <li Class="SK.PatchOperationReplaceExtended">
-				<xpath>Defs/ResearchProjectDef[defName="SpecializedLimbs"]</xpath>
-				<value>
-				  <label>Specialized limbs</label>
-				  <baseCost>700</baseCost>
-				  <techLevel>Spacer</techLevel>
-				  <prerequisites>
-					<li>Bionics</li>
-				  </prerequisites>
-				  <researchViewX>20.00</researchViewX>
-				  <researchViewY>54.00</researchViewY>
-				  <tab>Medicine_SK</tab>
-				  <techprintCount>1</techprintCount>
-				  <techprintCommonality>1</techprintCommonality>
-				  <techprintMarketValue>2000</techprintMarketValue>
-				  <heldByFactionCategoryTags>
-					<li>Empire</li>
-				  </heldByFactionCategoryTags>
-				</value>
-			  </li>
+        <li Class="SK.PatchOperationReplaceExtended">
+          <xpath>Defs/ResearchProjectDef[defName="BrainWiring"]</xpath>
+          <value>
+            <label>Brain wiring</label>
+            <baseCost>700</baseCost>
+            <techLevel>Spacer</techLevel>
+            <prerequisites>
+              <li>Bionics</li>
+            </prerequisites>
+            <researchViewX>20.00</researchViewX>
+            <researchViewY>53.00</researchViewY>
+            <tab>Medicine_SK</tab>
+            <techprintCount>1</techprintCount>
+            <techprintCommonality>1</techprintCommonality>
+            <techprintMarketValue>2000</techprintMarketValue>
+            <heldByFactionCategoryTags>
+              <li>Empire</li>
+            </heldByFactionCategoryTags>
+          </value>
+        </li>
 
-				<li Class="PatchOperationAttributeSet">
-					<xpath>Defs/ResearchProjectDef[defName="CompactWeaponry"]</xpath>
-					<attribute>ParentName</attribute>
-					<value>SK.HitechMultiBaseDummy</value>
-				</li>
+        <li Class="PatchOperationAttributeSet">
+          <xpath>Defs/ResearchProjectDef[defName="SpecializedLimbs"]</xpath>
+          <attribute>ParentName</attribute>
+          <value>SK.HitechMultiBaseDummy</value>
+        </li>
 
-			  <li Class="SK.PatchOperationReplaceExtended">
-				<xpath>Defs/ResearchProjectDef[defName="CompactWeaponry"]</xpath>
-				<value>
-				  <label>Compact weaponry</label>
-				  <baseCost>700</baseCost>
-				  <techLevel>Spacer</techLevel>
-				  <prerequisites>
-					<li>Bionics</li>
-				  </prerequisites>
-				  <researchViewX>20.00</researchViewX>
-				  <researchViewY>55.00</researchViewY>
-				  <tab>Medicine_SK</tab>
-				  <techprintCount>1</techprintCount>
-				  <techprintCommonality>1</techprintCommonality>
-				  <techprintMarketValue>2000</techprintMarketValue>
-				  <heldByFactionCategoryTags>
-					<li>Empire</li>
-				  </heldByFactionCategoryTags>
-				</value>
-			  </li>
+        <li Class="SK.PatchOperationReplaceExtended">
+          <xpath>Defs/ResearchProjectDef[defName="SpecializedLimbs"]</xpath>
+          <value>
+            <label>Specialized limbs</label>
+            <baseCost>700</baseCost>
+            <techLevel>Spacer</techLevel>
+            <prerequisites>
+              <li>Bionics</li>
+            </prerequisites>
+            <researchViewX>20.00</researchViewX>
+            <researchViewY>54.00</researchViewY>
+            <tab>Medicine_SK</tab>
+            <techprintCount>1</techprintCount>
+            <techprintCommonality>1</techprintCommonality>
+            <techprintMarketValue>2000</techprintMarketValue>
+            <heldByFactionCategoryTags>
+              <li>Empire</li>
+            </heldByFactionCategoryTags>
+          </value>
+        </li>
 
-				<li Class="PatchOperationAttributeSet">
-					<xpath>Defs/ResearchProjectDef[defName="VenomSynthesis"]</xpath>
-					<attribute>ParentName</attribute>
-					<value>SK.HitechMultiBaseDummy</value>
-				</li>
+        <li Class="PatchOperationAttributeSet">
+          <xpath>Defs/ResearchProjectDef[defName="CompactWeaponry"]</xpath>
+          <attribute>ParentName</attribute>
+          <value>SK.HitechMultiBaseDummy</value>
+        </li>
 
-			  <li Class="SK.PatchOperationReplaceExtended">
-				<xpath>Defs/ResearchProjectDef[defName="VenomSynthesis"]</xpath>
-				<value>
-				  <label>Poison synthesis</label>
-				  <baseCost>700</baseCost>
-				  <techLevel>Spacer</techLevel>
-				  <prerequisites>
-					<li>Bionics</li>
-				  </prerequisites>
-				  <researchViewX>20.00</researchViewX>
-				  <researchViewY>61.00</researchViewY>
-				  <tab>Medicine_SK</tab>
-				  <techprintCount>1</techprintCount>
-				  <techprintCommonality>1</techprintCommonality>
-				  <techprintMarketValue>2000</techprintMarketValue>
-				  <heldByFactionCategoryTags>
-					<li>Empire</li>
-				  </heldByFactionCategoryTags>
-				</value>
-			  </li>
+        <li Class="SK.PatchOperationReplaceExtended">
+          <xpath>Defs/ResearchProjectDef[defName="CompactWeaponry"]</xpath>
+          <value>
+            <label>Compact weaponry</label>
+            <baseCost>700</baseCost>
+            <techLevel>Spacer</techLevel>
+            <prerequisites>
+              <li>Bionics</li>
+            </prerequisites>
+            <researchViewX>20.00</researchViewX>
+            <researchViewY>55.00</researchViewY>
+            <tab>Medicine_SK</tab>
+            <techprintCount>1</techprintCount>
+            <techprintCommonality>1</techprintCommonality>
+            <techprintMarketValue>2000</techprintMarketValue>
+            <heldByFactionCategoryTags>
+              <li>Empire</li>
+            </heldByFactionCategoryTags>
+          </value>
+        </li>
 
-				<li Class="PatchOperationAttributeSet">
-					<xpath>Defs/ResearchProjectDef[defName="ArtificialMetabolism"]</xpath>
-					<attribute>ParentName</attribute>
-					<value>SK.HitechMultiBaseDummy</value>
-				</li>
+        <li Class="PatchOperationAttributeSet">
+          <xpath>Defs/ResearchProjectDef[defName="VenomSynthesis"]</xpath>
+          <attribute>ParentName</attribute>
+          <value>SK.HitechMultiBaseDummy</value>
+        </li>
 
-			  <li Class="SK.PatchOperationReplaceExtended">
-				<xpath>Defs/ResearchProjectDef[defName="ArtificialMetabolism"]</xpath>
-				<value>
-				  <label>Artificial metabolism</label>
-				  <baseCost>700</baseCost>
-				  <techLevel>Spacer</techLevel>
-				  <prerequisites>
-					<li>Bionics</li>
-				  </prerequisites>
-				  <researchViewX>20.00</researchViewX>
-				  <researchViewY>60.00</researchViewY>
-				  <tab>Medicine_SK</tab>
-				  <techprintCount>1</techprintCount>
-				  <techprintCommonality>1</techprintCommonality>
-				  <techprintMarketValue>4000</techprintMarketValue>
-				  <heldByFactionCategoryTags>
-					<li>Empire</li>
-				  </heldByFactionCategoryTags>
-				</value>
-			  </li>
+        <li Class="SK.PatchOperationReplaceExtended">
+          <xpath>Defs/ResearchProjectDef[defName="VenomSynthesis"]</xpath>
+          <value>
+            <label>Poison synthesis</label>
+            <baseCost>700</baseCost>
+            <techLevel>Spacer</techLevel>
+            <prerequisites>
+              <li>Bionics</li>
+            </prerequisites>
+            <researchViewX>20.00</researchViewX>
+            <researchViewY>61.00</researchViewY>
+            <tab>Medicine_SK</tab>
+            <techprintCount>1</techprintCount>
+            <techprintCommonality>1</techprintCommonality>
+            <techprintMarketValue>2000</techprintMarketValue>
+            <heldByFactionCategoryTags>
+              <li>Empire</li>
+            </heldByFactionCategoryTags>
+          </value>
+        </li>
 
-				<li Class="PatchOperationAttributeSet">
-					<xpath>Defs/ResearchProjectDef[defName="NeuralComputation"]</xpath>
-					<attribute>ParentName</attribute>
-					<value>SK.HitechMultiBaseDummy</value>
-				</li>
+        <li Class="PatchOperationAttributeSet">
+          <xpath>Defs/ResearchProjectDef[defName="ArtificialMetabolism"]</xpath>
+          <attribute>ParentName</attribute>
+          <value>SK.HitechMultiBaseDummy</value>
+        </li>
 
-			  <li Class="SK.PatchOperationReplaceExtended">
-				<xpath>Defs/ResearchProjectDef[defName="NeuralComputation"]</xpath>
-				<value>
-				  <label>Neural computation</label>
-				  <baseCost>700</baseCost>
-				  <techLevel>Spacer</techLevel>
-				  <prerequisites>
-					<li>Bionics</li>
-				  </prerequisites>
-				  <researchViewX>20.00</researchViewX>
-				  <researchViewY>59.00</researchViewY>
-				  <tab>Medicine_SK</tab>
-				  <techprintCount>1</techprintCount>
-				  <techprintCommonality>1</techprintCommonality>
-				  <techprintMarketValue>4000</techprintMarketValue>
-				  <heldByFactionCategoryTags>
-					<li>Empire</li>
-				  </heldByFactionCategoryTags>
-				</value>
-			  </li>
+        <li Class="SK.PatchOperationReplaceExtended">
+          <xpath>Defs/ResearchProjectDef[defName="ArtificialMetabolism"]</xpath>
+          <value>
+            <label>Artificial metabolism</label>
+            <baseCost>700</baseCost>
+            <techLevel>Spacer</techLevel>
+            <prerequisites>
+              <li>Bionics</li>
+            </prerequisites>
+            <researchViewX>20.00</researchViewX>
+            <researchViewY>60.00</researchViewY>
+            <tab>Medicine_SK</tab>
+            <techprintCount>1</techprintCount>
+            <techprintCommonality>1</techprintCommonality>
+            <techprintMarketValue>4000</techprintMarketValue>
+            <heldByFactionCategoryTags>
+              <li>Empire</li>
+            </heldByFactionCategoryTags>
+          </value>
+        </li>
 
-				<li Class="PatchOperationAttributeSet">
-					<xpath>Defs/ResearchProjectDef[defName="SkinHardening"]</xpath>
-					<attribute>ParentName</attribute>
-					<value>SK.HitechMultiBaseDummy</value>
-				</li>
+        <li Class="PatchOperationAttributeSet">
+          <xpath>Defs/ResearchProjectDef[defName="NeuralComputation"]</xpath>
+          <attribute>ParentName</attribute>
+          <value>SK.HitechMultiBaseDummy</value>
+        </li>
 
-			  <li Class="SK.PatchOperationReplaceExtended">
-				<xpath>Defs/ResearchProjectDef[defName="SkinHardening"]</xpath>
-				<value>
-				  <label>Skin hardening</label>
-				  <baseCost>700</baseCost>
-				  <techLevel>Spacer</techLevel>
-				  <prerequisites>
-					<li>Bionics</li>
-				  </prerequisites>
-				  <researchViewX>20.00</researchViewX>
-				  <researchViewY>58.00</researchViewY>
-				  <tab>Medicine_SK</tab>
-				  <techprintCount>1</techprintCount>
-				  <techprintCommonality>1</techprintCommonality>
-				  <techprintMarketValue>4000</techprintMarketValue>
-				  <heldByFactionCategoryTags>
-					<li>Empire</li>
-				  </heldByFactionCategoryTags>
-				</value>
-			  </li>
+        <li Class="SK.PatchOperationReplaceExtended">
+          <xpath>Defs/ResearchProjectDef[defName="NeuralComputation"]</xpath>
+          <value>
+            <label>Neural computation</label>
+            <baseCost>700</baseCost>
+            <techLevel>Spacer</techLevel>
+            <prerequisites>
+              <li>Bionics</li>
+            </prerequisites>
+            <researchViewX>20.00</researchViewX>
+            <researchViewY>59.00</researchViewY>
+            <tab>Medicine_SK</tab>
+            <techprintCount>1</techprintCount>
+            <techprintCommonality>1</techprintCommonality>
+            <techprintMarketValue>4000</techprintMarketValue>
+            <heldByFactionCategoryTags>
+              <li>Empire</li>
+            </heldByFactionCategoryTags>
+          </value>
+        </li>
 
-				<li Class="PatchOperationAttributeSet">
-					<xpath>Defs/ResearchProjectDef[defName="HealingFactors"]</xpath>
-					<attribute>ParentName</attribute>
-					<value>SK.HitechMultiBaseDummy</value>
-				</li>
+        <li Class="PatchOperationAttributeSet">
+          <xpath>Defs/ResearchProjectDef[defName="SkinHardening"]</xpath>
+          <attribute>ParentName</attribute>
+          <value>SK.HitechMultiBaseDummy</value>
+        </li>
 
-			  <li Class="SK.PatchOperationReplaceExtended">
-				<xpath>Defs/ResearchProjectDef[defName="HealingFactors"]</xpath>
-				<value>
-				  <label>Healing factors</label>
-				  <baseCost>700</baseCost>
-				  <techLevel>Spacer</techLevel>
-				  <prerequisites>
-					<li>Bionics</li>
-				  </prerequisites>
-				  <researchViewX>20.00</researchViewX>
-				  <researchViewY>57.00</researchViewY>
-				  <tab>Medicine_SK</tab>
-				  <techprintCount>1</techprintCount>
-				  <techprintCommonality>1</techprintCommonality>
-				  <techprintMarketValue>4000</techprintMarketValue>
-				  <heldByFactionCategoryTags>
-					<li>Empire</li>
-				  </heldByFactionCategoryTags>
-				</value>
-			  </li>
+        <li Class="SK.PatchOperationReplaceExtended">
+          <xpath>Defs/ResearchProjectDef[defName="SkinHardening"]</xpath>
+          <value>
+            <label>Skin hardening</label>
+            <baseCost>700</baseCost>
+            <techLevel>Spacer</techLevel>
+            <prerequisites>
+              <li>Bionics</li>
+            </prerequisites>
+            <researchViewX>20.00</researchViewX>
+            <researchViewY>58.00</researchViewY>
+            <tab>Medicine_SK</tab>
+            <techprintCount>1</techprintCount>
+            <techprintCommonality>1</techprintCommonality>
+            <techprintMarketValue>4000</techprintMarketValue>
+            <heldByFactionCategoryTags>
+              <li>Empire</li>
+            </heldByFactionCategoryTags>
+          </value>
+        </li>
 
-				<li Class="PatchOperationAttributeSet">
-					<xpath>Defs/ResearchProjectDef[defName="MolecularAnalysis"]</xpath>
-					<attribute>ParentName</attribute>
-					<value>SK.HitechMultiBaseDummy</value>
-				</li>
+        <li Class="PatchOperationAttributeSet">
+          <xpath>Defs/ResearchProjectDef[defName="HealingFactors"]</xpath>
+          <attribute>ParentName</attribute>
+          <value>SK.HitechMultiBaseDummy</value>
+        </li>
 
-			  <li Class="SK.PatchOperationReplaceExtended">
-				<xpath>Defs/ResearchProjectDef[defName="MolecularAnalysis"]</xpath>
-				<value>
-				  <label>Molecular analysis</label>
-				  <baseCost>700</baseCost>
-				  <techLevel>Spacer</techLevel>
-				  <prerequisites>
-					<li>Bionics</li>
-				  </prerequisites>
-				  <researchViewX>20.00</researchViewX>
-				  <researchViewY>52.00</researchViewY>
-				  <tab>Medicine_SK</tab>
-				  <techprintCount>1</techprintCount>
-				  <techprintCommonality>1</techprintCommonality>
-				  <techprintMarketValue>4000</techprintMarketValue>
-				  <heldByFactionCategoryTags>
-					<li>Empire</li>
-				  </heldByFactionCategoryTags>
-				</value>
-			  </li>
+        <li Class="SK.PatchOperationReplaceExtended">
+          <xpath>Defs/ResearchProjectDef[defName="HealingFactors"]</xpath>
+          <value>
+            <label>Healing factors</label>
+            <baseCost>700</baseCost>
+            <techLevel>Spacer</techLevel>
+            <prerequisites>
+              <li>Bionics</li>
+            </prerequisites>
+            <researchViewX>20.00</researchViewX>
+            <researchViewY>57.00</researchViewY>
+            <tab>Medicine_SK</tab>
+            <techprintCount>1</techprintCount>
+            <techprintCommonality>1</techprintCommonality>
+            <techprintMarketValue>4000</techprintMarketValue>
+            <heldByFactionCategoryTags>
+              <li>Empire</li>
+            </heldByFactionCategoryTags>
+          </value>
+        </li>
 
-				<li Class="PatchOperationAttributeSet">
-					<xpath>Defs/ResearchProjectDef[defName="CircadianInfluence"]</xpath>
-					<attribute>ParentName</attribute>
-					<value>SK.HitechMultiBaseDummy</value>
-				</li>
+        <li Class="PatchOperationAttributeSet">
+          <xpath>Defs/ResearchProjectDef[defName="MolecularAnalysis"]</xpath>
+          <attribute>ParentName</attribute>
+          <value>SK.HitechMultiBaseDummy</value>
+        </li>
 
-			  <li Class="SK.PatchOperationReplaceExtended">
-				<xpath>Defs/ResearchProjectDef[defName="CircadianInfluence"]</xpath>
-				<value>
-				  <label>Circadian influence</label>
-				  <baseCost>700</baseCost>
-				  <techLevel>Spacer</techLevel>
-				  <prerequisites>
-					<li>Bionics</li>
-				  </prerequisites>
-				  <researchViewX>20.00</researchViewX>
-				  <researchViewY>56.00</researchViewY>
-				  <tab>Medicine_SK</tab>
-				  <techprintCount>1</techprintCount>
-				  <techprintCommonality>1</techprintCommonality>
-				  <techprintMarketValue>4000</techprintMarketValue>
-				  <heldByFactionCategoryTags>
-					<li>Empire</li>
-				  </heldByFactionCategoryTags>
-				</value>
-			  </li>
+        <li Class="SK.PatchOperationReplaceExtended">
+          <xpath>Defs/ResearchProjectDef[defName="MolecularAnalysis"]</xpath>
+          <value>
+            <label>Molecular analysis</label>
+            <baseCost>700</baseCost>
+            <techLevel>Spacer</techLevel>
+            <prerequisites>
+              <li>Bionics</li>
+            </prerequisites>
+            <researchViewX>20.00</researchViewX>
+            <researchViewY>52.00</researchViewY>
+            <tab>Medicine_SK</tab>
+            <techprintCount>1</techprintCount>
+            <techprintCommonality>1</techprintCommonality>
+            <techprintMarketValue>4000</techprintMarketValue>
+            <heldByFactionCategoryTags>
+              <li>Empire</li>
+            </heldByFactionCategoryTags>
+          </value>
+        </li>
 
-				<li Class="PatchOperationAttributeSet">
-					<xpath>Defs/ResearchProjectDef[defName="FleshShaping"]</xpath>
-					<attribute>ParentName</attribute>
-					<value>SK.HitechMultiBaseDummy</value>
-				</li>
+        <li Class="PatchOperationAttributeSet">
+          <xpath>Defs/ResearchProjectDef[defName="CircadianInfluence"]</xpath>
+          <attribute>ParentName</attribute>
+          <value>SK.HitechMultiBaseDummy</value>
+        </li>
 
-			  <li Class="SK.PatchOperationReplaceExtended">
-				<xpath>Defs/ResearchProjectDef[defName="FleshShaping"]</xpath>
-				<value>
-				  <label>Flesh Shaping</label>
-				  <description>Craft bionics which induce the reshaping or natural flesh, usually for the purposes of aesthetic enhancement or personal pleasure.</description>
-				  <baseCost>700</baseCost>
-				  <techLevel>Spacer</techLevel>
-				  <prerequisites>
-					<li>Bionics</li>
-				  </prerequisites>
-				  <researchViewX>20.00</researchViewX>
-				  <researchViewY>51.00</researchViewY>
-				  <tab>Medicine_SK</tab>
-				  <techprintCount>1</techprintCount>
-				  <techprintCommonality>1</techprintCommonality>
-				  <techprintMarketValue>4000</techprintMarketValue>
-				  <heldByFactionCategoryTags>
-					<li>Empire</li>
-				  </heldByFactionCategoryTags>
-				</value>
-			  </li>
-	
-			</operations>
-		</match>
-	</Operation>
+        <li Class="SK.PatchOperationReplaceExtended">
+          <xpath>Defs/ResearchProjectDef[defName="CircadianInfluence"]</xpath>
+          <value>
+            <label>Circadian influence</label>
+            <baseCost>700</baseCost>
+            <techLevel>Spacer</techLevel>
+            <prerequisites>
+              <li>Bionics</li>
+            </prerequisites>
+            <researchViewX>20.00</researchViewX>
+            <researchViewY>56.00</researchViewY>
+            <tab>Medicine_SK</tab>
+            <techprintCount>1</techprintCount>
+            <techprintCommonality>1</techprintCommonality>
+            <techprintMarketValue>4000</techprintMarketValue>
+            <heldByFactionCategoryTags>
+              <li>Empire</li>
+            </heldByFactionCategoryTags>
+          </value>
+        </li>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="PsychoidBrewing"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.PrimitiveBaseDummy</value>
-	</Operation>
+        <li Class="PatchOperationAttributeSet">
+          <xpath>Defs/ResearchProjectDef[defName="FleshShaping"]</xpath>
+          <attribute>ParentName</attribute>
+          <value>SK.HitechMultiBaseDummy</value>
+        </li>
+
+        <li Class="SK.PatchOperationReplaceExtended">
+          <xpath>Defs/ResearchProjectDef[defName="FleshShaping"]</xpath>
+          <value>
+            <label>Flesh Shaping</label>
+            <description>Craft bionics which induce the reshaping or natural flesh, usually for the purposes of aesthetic enhancement or personal pleasure.</description>
+            <baseCost>700</baseCost>
+            <techLevel>Spacer</techLevel>
+            <prerequisites>
+              <li>Bionics</li>
+            </prerequisites>
+            <researchViewX>20.00</researchViewX>
+            <researchViewY>51.00</researchViewY>
+            <tab>Medicine_SK</tab>
+            <techprintCount>1</techprintCount>
+            <techprintCommonality>1</techprintCommonality>
+            <techprintMarketValue>4000</techprintMarketValue>
+            <heldByFactionCategoryTags>
+              <li>Empire</li>
+            </heldByFactionCategoryTags>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="PsychoidBrewing"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.PrimitiveBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="PsychoidBrewing"]</xpath>
@@ -437,15 +438,15 @@
       </prerequisites>
       <researchViewY>61.00</researchViewY>
       <tab>Medicine_SK</tab>
-      <tags IsNull="true" Inherit="false"/>
+      <tags IsNull="true" Inherit="false" />
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="DrugProduction"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.IndustrialBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="DrugProduction"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.IndustrialBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="DrugProduction"]</xpath>
@@ -465,11 +466,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="PenoxycylineProduction"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="PenoxycylineProduction"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="PenoxycylineProduction"]</xpath>
@@ -486,11 +487,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="WakeUpProduction"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="WakeUpProduction"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="WakeUpProduction"]</xpath>
@@ -506,11 +507,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="PsychiteRefining"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="PsychiteRefining"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="PsychiteRefining"]</xpath>
@@ -526,11 +527,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="GoJuiceProduction"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="GoJuiceProduction"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="GoJuiceProduction"]</xpath>

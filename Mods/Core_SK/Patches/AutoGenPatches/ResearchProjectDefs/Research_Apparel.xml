@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.MedievalBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.MedievalBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]</xpath>
@@ -22,11 +22,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="RoyalApparel"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.MedievalBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="RoyalApparel"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.MedievalBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="RoyalApparel"]</xpath>
@@ -38,11 +38,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="NobleApparel"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.MedievalBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="NobleApparel"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.MedievalBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="NobleApparel"]</xpath>
@@ -58,11 +58,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="PlateArmor"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.MedievalBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="PlateArmor"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.MedievalBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="PlateArmor"]</xpath>
@@ -82,11 +82,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="Fabrication"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.IndustrialBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="Fabrication"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.IndustrialBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="Fabrication"]</xpath>
@@ -104,11 +104,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="AdvancedFabrication"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="AdvancedFabrication"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="AdvancedFabrication"]</xpath>
@@ -120,17 +120,18 @@
         <li>Fabrication</li>
         <li>Oil_Industry_C6</li>
       </prerequisites>
+      <requiredResearchFacilities />
       <researchViewX>12.00</researchViewX>
       <researchViewY>39.00</researchViewY>
       <tab>Apparel_SK</tab>
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="FlakArmor"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="FlakArmor"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="FlakArmor"]</xpath>
@@ -148,11 +149,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="SmokepopBelt"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="SmokepopBelt"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="SmokepopBelt"]</xpath>
@@ -169,11 +170,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="ShieldBelt"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="ShieldBelt"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="ShieldBelt"]</xpath>
@@ -190,11 +191,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="ReconArmor"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechLabStationBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="ReconArmor"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechLabStationBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="ReconArmor"]</xpath>
@@ -213,11 +214,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="PoweredArmor"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechLabStationBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="PoweredArmor"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechLabStationBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="PoweredArmor"]</xpath>
@@ -232,77 +233,77 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationFindMod">
-	<mods>
-		<li>Royalty</li>
-	</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-	
-				<li Class="PatchOperationAttributeSet">
-					<xpath>Defs/ResearchProjectDef[defName="CataphractArmor"]</xpath>
-					<attribute>ParentName</attribute>
-					<value>SK.HitechLabStationBaseDummy</value>
-				</li>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Royalty</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
 
-			  <li Class="SK.PatchOperationReplaceExtended">
-				<xpath>Defs/ResearchProjectDef[defName="CataphractArmor"]</xpath>
-				<value>
-				  <baseCost>2500</baseCost>
-				  <techLevel>Ultra</techLevel>
-				  <prerequisites>
-					<li>Armor_E3</li>
-				  </prerequisites>
-				  <researchViewX>24.00</researchViewX>
-				  <researchViewY>39.00</researchViewY>
-				  <tab>Apparel_SK</tab>
-				  <techprintMarketValue>6000</techprintMarketValue>
-				</value>
-			  </li>
+        <li Class="PatchOperationAttributeSet">
+          <xpath>Defs/ResearchProjectDef[defName="CataphractArmor"]</xpath>
+          <attribute>ParentName</attribute>
+          <value>SK.HitechLabStationBaseDummy</value>
+        </li>
 
-				<li Class="PatchOperationAttributeSet">
-					<xpath>Defs/ResearchProjectDef[defName="JumpPack"]</xpath>
-					<attribute>ParentName</attribute>
-					<value>SK.HitechLabStationBaseDummy</value>
-				</li>
+        <li Class="SK.PatchOperationReplaceExtended">
+          <xpath>Defs/ResearchProjectDef[defName="CataphractArmor"]</xpath>
+          <value>
+            <baseCost>2500</baseCost>
+            <techLevel>Ultra</techLevel>
+            <prerequisites>
+              <li>Armor_E3</li>
+            </prerequisites>
+            <researchViewX>24.00</researchViewX>
+            <researchViewY>39.00</researchViewY>
+            <tab>Apparel_SK</tab>
+            <techprintMarketValue>6000</techprintMarketValue>
+          </value>
+        </li>
 
-			  <li Class="SK.PatchOperationReplaceExtended">
-				<xpath>Defs/ResearchProjectDef[defName="JumpPack"]</xpath>
-				<value>
-				  <baseCost>2500</baseCost>
-				  <techLevel>Ultra</techLevel>
-				  <prerequisites>
-					<li>Armor_E3</li>
-				  </prerequisites>
-				  <researchViewX>24.00</researchViewX>
-				  <researchViewY>40.00</researchViewY>
-				  <tab>Apparel_SK</tab>
-				  <techprintMarketValue>4000</techprintMarketValue>
-				</value>
-			  </li>
+        <li Class="PatchOperationAttributeSet">
+          <xpath>Defs/ResearchProjectDef[defName="JumpPack"]</xpath>
+          <attribute>ParentName</attribute>
+          <value>SK.HitechLabStationBaseDummy</value>
+        </li>
 
-				<li Class="PatchOperationAttributeSet">
-					<xpath>Defs/ResearchProjectDef[defName="Gunlink"]</xpath>
-					<attribute>ParentName</attribute>
-					<value>SK.HitechLabStationBaseDummy</value>
-				</li>
+        <li Class="SK.PatchOperationReplaceExtended">
+          <xpath>Defs/ResearchProjectDef[defName="JumpPack"]</xpath>
+          <value>
+            <baseCost>2500</baseCost>
+            <techLevel>Ultra</techLevel>
+            <prerequisites>
+              <li>Armor_E3</li>
+            </prerequisites>
+            <researchViewX>24.00</researchViewX>
+            <researchViewY>40.00</researchViewY>
+            <tab>Apparel_SK</tab>
+            <techprintMarketValue>4000</techprintMarketValue>
+          </value>
+        </li>
 
-			  <li Class="SK.PatchOperationReplaceExtended">
-				<xpath>Defs/ResearchProjectDef[defName="Gunlink"]</xpath>
-				<value>
-				  <baseCost>2500</baseCost>
-				  <techLevel>Ultra</techLevel>
-				  <prerequisites>
-					<li>Armor_E3</li>
-				  </prerequisites>
-				  <researchViewX>24.00</researchViewX>
-				  <researchViewY>41.00</researchViewY>
-				  <tab>Apparel_SK</tab>
-				</value>
-			  </li>
-	
-			</operations>
-		</match>
-	</Operation>
+        <li Class="PatchOperationAttributeSet">
+          <xpath>Defs/ResearchProjectDef[defName="Gunlink"]</xpath>
+          <attribute>ParentName</attribute>
+          <value>SK.HitechLabStationBaseDummy</value>
+        </li>
+
+        <li Class="SK.PatchOperationReplaceExtended">
+          <xpath>Defs/ResearchProjectDef[defName="Gunlink"]</xpath>
+          <value>
+            <baseCost>2500</baseCost>
+            <techLevel>Ultra</techLevel>
+            <prerequisites>
+              <li>Armor_E3</li>
+            </prerequisites>
+            <researchViewX>24.00</researchViewX>
+            <researchViewY>41.00</researchViewY>
+            <tab>Apparel_SK</tab>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
 
 </Patch>

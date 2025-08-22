@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="Smithing"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.PrimitiveBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="Smithing"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.PrimitiveBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="Smithing"]</xpath>
@@ -26,11 +26,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="LongBlades"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.MedievalBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="LongBlades"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.MedievalBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="LongBlades"]</xpath>
@@ -43,11 +43,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="RecurveBow"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.PrimitiveBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="RecurveBow"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.PrimitiveBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="RecurveBow"]</xpath>
@@ -64,11 +64,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="Greatbow"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.MedievalBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="Greatbow"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.MedievalBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="Greatbow"]</xpath>
@@ -89,11 +89,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="Machining"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.MedievalBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="Machining"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.MedievalBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="Machining"]</xpath>
@@ -111,11 +111,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.IndustrialBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.IndustrialBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]</xpath>
@@ -129,11 +129,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="GasOperation"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.IndustrialBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="GasOperation"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.IndustrialBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="GasOperation"]</xpath>
@@ -149,11 +149,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.IndustrialBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.IndustrialBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]</xpath>
@@ -167,11 +167,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]</xpath>
@@ -189,11 +189,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]</xpath>
@@ -204,16 +204,17 @@
       <prerequisites>
         <li>Range_C2</li>
       </prerequisites>
+      <hiddenPrerequisites />
       <researchViewY>33.00</researchViewY>
       <tab>Weapon_SK</tab>
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="MultibarrelWeapons"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="MultibarrelWeapons"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="MultibarrelWeapons"]</xpath>
@@ -230,11 +231,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechMultiBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="ChargedShot"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechMultiBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="ChargedShot"]</xpath>
@@ -254,11 +255,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="SniperTurret"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="SniperTurret"]</xpath>
@@ -269,16 +270,17 @@
       <prerequisites>
         <li>Turrets_31</li>
       </prerequisites>
+      <hiddenPrerequisites />
       <researchViewY>35.00</researchViewY>
       <tab>Weapon_SK</tab>
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="Mortars"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="Mortars"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="Mortars"]</xpath>
@@ -296,11 +298,11 @@
     </value>
   </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechMultiBaseDummy</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="GunTurrets"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechMultiBaseDummy</value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="GunTurrets"]</xpath>
