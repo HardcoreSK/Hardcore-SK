@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 
@@ -18,7 +18,7 @@
 	<ThingDef ParentName="BuildingFueled">
 		<defName>Campfire</defName>
 		<label>campfire</label>
-		<description>A campfire that can cook meals and produce heat, but it will burn out after a few days. As with all heat sources, it must be placed indoors so it has a closed space to heat.</description>    
+		<description>A campfire that can cook meals and produce heat, but it will burn out after a few days. As with all heat sources, it must be placed indoors so it has a closed space to heat.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<texPath>Things/Building/Misc/Campfire</texPath>
@@ -86,7 +86,7 @@
 					<categories>
 						<li>Wooden</li>
 						<li>Woody</li>
-					</categories>  
+					</categories>
 				</fuelFilter>
 			</li>
 			<li Class="CompProperties_MeditationFocus">
@@ -153,7 +153,7 @@
 			</damageData>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<uiIconPath>Things/Building/Temperature/WoodStoveFurnace_ico</uiIconPath>	
+		<uiIconPath>Things/Building/Temperature/WoodStoveFurnace_ico</uiIconPath>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>70</pathCost>
@@ -174,7 +174,7 @@
 		</stuffCategories>
 		<costStuffCount>120</costStuffCount>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="SK.CompProperties_HeatPusherAdvanced">
 				<compClass>SK.CompHeatPusherAdvanced</compClass>
 				<heatPerSecond>40</heatPerSecond>
@@ -256,8 +256,8 @@
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
@@ -335,11 +335,11 @@
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
 				<basePowerConsumption>170</basePowerConsumption>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_TempControl">
 				<energyPerSecond>22</energyPerSecond>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 			<li Class="CompProperties_Glower">
 				<glowRadius>3</glowRadius>
 				<glowColor>(255,150,100,0)</glowColor>
@@ -396,11 +396,11 @@
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
 				<basePowerConsumption>250</basePowerConsumption>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_TempControl">
 				<energyPerSecond>36</energyPerSecond>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 			<li Class="CompProperties_Glower">
 				<glowRadius>3</glowRadius>
 				<glowColor>(255,150,100,0)</glowColor>
@@ -425,7 +425,7 @@
 			<li>Temperature_control_C2</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
-	</ThingDef>	
+	</ThingDef>
 
 	<ThingDef ParentName="SK_BuildingBase">
 		<defName>RedistHeat_IndustrialHeater</defName>
@@ -471,11 +471,11 @@
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
 				<basePowerConsumption>800</basePowerConsumption>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_TempControl">
 				<energyPerSecond>85</energyPerSecond>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 			<li Class="CompProperties_Glower">
 				<glowRadius>3</glowRadius>
 				<glowColor>(255,150,100,0)</glowColor>
@@ -538,13 +538,13 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="SK.CompProperties_HeatPusherAdvanced">
 				<compClass>SK.CompHeatPusherAdvanced</compClass>
 				<heatPerSecond>40</heatPerSecond>
 				<heatPushMaxTemperature>25</heatPushMaxTemperature>
-			</li>		      
-			<li Class="CompProperties_Breakdownable"/>
+			</li>
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<designationCategory>Temperature</designationCategory>
 		<placeWorkers>
@@ -618,7 +618,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 		</comps>
-		<designationCategory>Temperature</designationCategory>	
+		<designationCategory>Temperature</designationCategory>
 		<researchPrerequisites>
 			<li>PassiveCooler</li>
 		</researchPrerequisites>
@@ -687,7 +687,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 		</comps>
-		<designationCategory>Temperature</designationCategory>	
+		<designationCategory>Temperature</designationCategory>
 		<researchPrerequisites>
 			<li>PassiveCooler</li>
 		</researchPrerequisites>
@@ -750,7 +750,7 @@
 				<ColdPerSecond>-30</ColdPerSecond>
 				<ColdPushMinTemperature>-3</ColdPushMinTemperature>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<placeWorkers>
 			<li>SK.PlaceWorker_ColdstoneBattery</li>
@@ -768,6 +768,9 @@
 		<label>Small cooler</label>
 		<description>An electrical device that fits into a wall and pushes cold air into a room. Its exhaust port generates a lot of heat. Can be used to cool down rooms or to create a walk-in freezer.</description>
 		<thingClass>Building_Cooler</thingClass>
+		<blocksAltitudes>
+			<li>BuildingOnTop</li>
+		</blocksAltitudes>
 		<graphicData>
 			<texPath>Things/Building/Temperature/Cooler/SmallCooler</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -814,6 +817,7 @@
 					<li>Wall</li>
 					<li>ClutterSilverWall</li>
 					<li>ClutterUWallLight</li>
+					<li MayRequire="ludeon.rimworld.odyssey">GravshipHull</li>
 				</thingDefs>
 			</li>
 			<li Class="CompProperties_Power">
@@ -826,8 +830,8 @@
 				<compClass>CompTempControl</compClass>
 				<energyPerSecond>-23</energyPerSecond>
 			</li>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<designationCategory>Temperature</designationCategory>
 		<researchPrerequisites>
@@ -841,6 +845,9 @@
 		<label>cooler</label>
 		<description>An electrical device that fits into a wall and pushes cold air into a room. Its exhaust port generates a lot of heat. Can be used to cool down rooms during the summer months, or to create a walk-in freezer.</description>
 		<thingClass>Building_Cooler</thingClass>
+		<blocksAltitudes>
+			<li>BuildingOnTop</li>
+		</blocksAltitudes>
 		<graphicData>
 			<texPath>Things/Building/Temperature/Cooler/CoolerB</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -892,6 +899,7 @@
 					<li>Wall</li>
 					<li>ClutterSilverWall</li>
 					<li>ClutterUWallLight</li>
+					<li MayRequire="ludeon.rimworld.odyssey">GravshipHull</li>
 				</thingDefs>
 			</li>
 			<li Class="CompProperties_Power">
@@ -904,8 +912,8 @@
 				<compClass>CompTempControl</compClass>
 				<energyPerSecond>-36</energyPerSecond>
 			</li>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<designationCategory>Temperature</designationCategory>
 		<researchPrerequisites>
@@ -955,8 +963,8 @@
 				<compClass>CompTempControl</compClass>
 				<energyPerSecond>-95</energyPerSecond>
 			</li>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_Cooler</li>
