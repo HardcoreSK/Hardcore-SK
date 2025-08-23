@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<ThingDef Name="SK_BuildingNaturalBase" ParentName="SK_BuildingBase" Abstract="True">
@@ -169,96 +169,6 @@
 		</building>
 	</ThingDef>
 
-
-	<!--============================ Resource rocks ===============================-->
-
-	<!-- 	<ThingDef ParentName="SK_BuildingNaturalBase">
-		<defName>MineralDeposits</defName>
-		<label>Deposits of Minerals</label>
-		<thingClass>Thing</thingClass>
-		<graphicData>
-			<texPath>Terrain/RD</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-			<shaderType>Transparent</shaderType>
-			<drawSize>(3,3)</drawSize>
-		</graphicData>
-		<altitudeLayer>Floor</altitudeLayer>
-		<destroyable>true</destroyable>
-		<useHitPoints>false</useHitPoints>
-		<description>Underground deposits of minerals. A Mine Extractor can be placed here to extract ores.</description>
-		<size>(3,3)</size>
-		<neverOverlapFloors>true</neverOverlapFloors>
-		<blockPlants>true</blockPlants>
-		<building>
-			<isEdifice>false</isEdifice>
-			<claimable>false</claimable>
-			<deconstructible>false</deconstructible>
-		</building>
-		<modExtensions>
-			<li Class="SK.ThingGround">
-			</li>
-		</modExtensions>
-	</ThingDef> 
-
-	<ThingDef ParentName="SK_BuildingNaturalBase">
-		<defName>RareMineralDeposits</defName>
-		<label>Deposits of Rare Minerals</label>
-		<thingClass>Thing</thingClass>
-		<graphicData>
-			<texPath>Terrain/RRD</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-			<shaderType>Transparent</shaderType>
-			<drawSize>(3,3)</drawSize>
-		</graphicData>
-		<altitudeLayer>Floor</altitudeLayer>
-		<destroyable>true</destroyable>
-		<useHitPoints>false</useHitPoints>
-		<description>Underground deposits of rare minerals. An Advanced Mine Extractor can be placed here to extract rare ores.</description>
-		<size>(3,3)</size>
-		<neverOverlapFloors>true</neverOverlapFloors>
-		<blockPlants>true</blockPlants>
-		<building>
-			<isEdifice>false</isEdifice>
-			<claimable>false</claimable>
-			<deconstructible>false</deconstructible>
-		</building>
-		<modExtensions>
-			<li Class="SK.ThingGround">
-			</li>
-		</modExtensions>
-	</ThingDef> 
-
-	<ThingDef ParentName="SK_BuildingNaturalBase">
-		<defName>Oilfield</defName>
-		<label>Deposits of Crude Oil</label>
-		<thingClass>SK.OilGusher</thingClass>
-		<graphicData>
-			<texPath>Terrain/OilField</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-			<shaderType>Transparent</shaderType>
-			<drawSize>(3,3)</drawSize>
-		</graphicData>
-		<altitudeLayer>Floor</altitudeLayer>
-		<destroyable>true</destroyable>
-		<useHitPoints>false</useHitPoints>
-		<tickerType>Normal</tickerType>
-		<description>Rich underground deposits of Crude Oil. A Drilling Rig can drill an oil fissure here. An Oil Extractor can then be placed to extract Crude Oil.</description>
-		<size>(3,3)</size>
-		<neverOverlapFloors>true</neverOverlapFloors>
-		<blockPlants>true</blockPlants>
-		<building>
-			<isEdifice>false</isEdifice>
-			<claimable>false</claimable>
-			<deconstructible>false</deconstructible>
-		</building>
-		<modExtensions>
-			<li Class="SK.ThingGround">
-			</li>
-		</modExtensions>
-	</ThingDef> -->
-
-
-
 	<!--============================ Resource rocks ===============================-->
 
 	<ThingDef ParentName="SK_RockBase">
@@ -370,32 +280,6 @@
 		</building>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_RockBase">
-		<defName>MineableLead</defName>
-		<label>Anglesite Deposits</label>
-		<graphicData>
-			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<color>(89,74,68)</color>
-			<colorTwo>(134,148,63)</colorTwo>
-		</graphicData>
-		<statBases>
-			<MaxHitPoints>6000</MaxHitPoints>
-		</statBases>
-		<description>Deposits of Anglesite. Anglesite is the ore form of Lead. It is a heavy metal that is denser than most common materials. Lead is soft and malleable, and has a relatively low melting point.</description>
-		<building>
-			<isResourceRock>true</isResourceRock>
-			<mineableThing>Anglesite</mineableThing>
-			<mineableYield>75</mineableYield>
-			<mineableScatterCommonality>0.8</mineableScatterCommonality>
-			<mineableScatterLumpSizeRange>
-				<min>6</min>
-				<max>13</max>
-			</mineableScatterLumpSizeRange>
-			<veinMineable>true</veinMineable>
-		</building>
-	</ThingDef>
 
 	<ThingDef ParentName="SK_RockBase">
 		<defName>MineableCoal</defName>
@@ -425,7 +309,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_RockBase">
+	<!-- <ThingDef ParentName="SK_RockBase">
 		<defName>MineablePlasteel</defName>
 		<label>Nickel Ore Deposits</label>
 		<graphicData>
@@ -449,7 +333,7 @@
 			</mineableScatterLumpSizeRange>
 			<veinMineable>true</veinMineable>
 		</building>
-	</ThingDef>
+	</ThingDef> -->
 
 
 	<ThingDef ParentName="SK_RockBase">
@@ -614,6 +498,58 @@
 		</building>
 	</ThingDef>
 
+	<ThingDef ParentName="SK_RockBase">
+		<defName>MineableNickel</defName>
+		<label>Nickel Ore Deposits</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(88,115,175)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>10000</MaxHitPoints>
+		</statBases>
+		<description>Lateritic nickel ore deposits are surficial, weathered rinds formed on ultramafic rocks. Nickel Ore contains Nickel and small amounts of Cobalt.</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Nickel</mineableThing>
+			<mineableYield>50</mineableYield>
+			<mineableScatterCommonality>0.4</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>5</min>
+				<max>10</max>
+			</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="SK_RockBase">
+		<defName>MineableLead</defName>
+		<label>Anglesite Deposits</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(89,74,68)</color>
+			<colorTwo>(134,148,63)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>6000</MaxHitPoints>
+		</statBases>
+		<description>Deposits of Anglesite. Anglesite is the ore form of Lead. It is a heavy metal that is denser than most common materials. Lead is soft and malleable, and has a relatively low melting point.</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Anglesite</mineableThing>
+			<mineableYield>75</mineableYield>
+			<mineableScatterCommonality>0.8</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>6</min>
+				<max>13</max>
+			</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
+		</building>
+	</ThingDef>
 
 	<ThingDef ParentName="SK_BuildingNaturalBase">
 		<defName>SteamGeyser</defName>
@@ -649,8 +585,7 @@
 			<alwaysShowRelatedBuildCommands>true</alwaysShowRelatedBuildCommands>
 		</building>
 		<modExtensions>
-			<li Class="SK.ThingGround">
-			</li>
+			<li Class="SK.ThingGround" />
 		</modExtensions>
 	</ThingDef>
 
