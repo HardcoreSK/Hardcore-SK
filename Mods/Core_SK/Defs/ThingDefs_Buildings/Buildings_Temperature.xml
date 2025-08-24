@@ -357,6 +357,9 @@
 		<thingClass>SK.Building_WallHeater</thingClass>
 		<label>Medium heater</label>
 		<description>A wall mounted heater which is more efficient at heating large rooms and bases. It can automatically turn itself on or off to reach a specific target temperature.</description>
+		<blocksAltitudes>
+			<li>BuildingOnTop</li>
+		</blocksAltitudes>
 		<graphicData>
 			<texPath>Things/Building/Temperature/Heater/MediumHeater</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -387,6 +390,7 @@
 					<li>Wall</li>
 					<li>ClutterSilverWall</li>
 					<li>ClutterUWallLight</li>
+					<li MayRequire="ludeon.rimworld.odyssey">GravshipHull</li>
 				</thingDefs>
 			</li>
 			<li Class="CompProperties_Power">
