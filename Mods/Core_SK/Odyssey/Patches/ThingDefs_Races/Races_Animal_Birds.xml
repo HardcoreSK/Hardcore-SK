@@ -7,6 +7,15 @@
 		<value>SK_AnimalKindBase</value>
 	</Operation>
 -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[@Name="SmallBirdThingBase"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<Mass>1</Mass>
+			</statBases>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[@Name="SmallBirdThingBase"]/race/useMeatFrom</xpath>
 		<value>

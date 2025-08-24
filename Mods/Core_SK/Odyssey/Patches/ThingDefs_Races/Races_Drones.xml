@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[@Name="BaseDrone"]</xpath>
+		<value>
+			<tools Replace="True">
+				<li Class="CombatExtended.ToolCE">
+					<label>shell spike</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>6</power>
+					<cooldownTime>2.6</cooldownTime>
+					<armorPenetrationBlunt>3.1</armorPenetrationBlunt>
+					<armorPenetrationSharp>5.5</armorPenetrationSharp>
+					<linkedBodyPartsGroup>SpikedShellAttackTool</linkedBodyPartsGroup>
+					<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+</Patch>
