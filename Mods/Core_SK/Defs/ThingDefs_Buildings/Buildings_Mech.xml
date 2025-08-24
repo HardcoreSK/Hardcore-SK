@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- Base -->
-	<ThingDef ParentName="SK_BuildingBase" Name="SK_MechBuildingBase" Abstract="True">
+	<ThingDef ParentName="BuildingBase" Name="SK_MechBuildingBase" Abstract="True">
 		<altitudeLayer>Building</altitudeLayer>
 		<pathCost>50</pathCost>
 		<blockWind>true</blockWind>

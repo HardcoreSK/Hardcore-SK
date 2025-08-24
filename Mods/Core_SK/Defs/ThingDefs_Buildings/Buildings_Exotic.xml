@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef Abstract="True" Name="CrashedShipPartBase" ParentName="SK_BuildingBase">
+	<ThingDef Abstract="True" Name="CrashedShipPartBase" ParentName="BuildingBase">
 		<altitudeLayer>Building</altitudeLayer>
 		<pathCost>150</pathCost>
 		<blockWind>true</blockWind>
@@ -147,7 +147,7 @@
 
 	<!-- ========================= Shuttle ========================= -->
 
-	<ThingDef Name="ShuttleBase" ParentName="SK_BuildingBase">
+	<ThingDef Name="ShuttleBase" ParentName="BuildingBase">
 		<defName>Shuttle</defName>
 		<label>shuttle</label>
 		<description>A spacer-tech shuttle designed for transit between surface and orbit, or between moons of a planetary system.</description>
@@ -251,7 +251,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_BuildingBase" Name="ShipParts" Abstract="True">
+	<ThingDef ParentName="BuildingBase" Name="ShipParts" Abstract="True">
 		<altitudeLayer>Building</altitudeLayer>
 		<pathCost>35</pathCost>
 		<blockWind>true</blockWind>
@@ -403,7 +403,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_BuildingBase" Name="GenstepBuilding" Abstract="True">
+	<ThingDef ParentName="BuildingBase" Name="GenstepBuilding" Abstract="True">
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -733,7 +733,7 @@
 
 	<!--========================= Landed Skyfallers =============================-->
 
-	<ThingDef Name="ShipPartsLanded" ParentName="SK_BuildingBase" Abstract="True">
+	<ThingDef Name="ShipPartsLanded" ParentName="BuildingBase" Abstract="True">
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
 		<tickerType>Normal</tickerType>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- <ThingDef Name="TurretBase" ParentName="SK_BuildingBase" Abstract="True">
+	<!-- <ThingDef Name="TurretBase" ParentName="BuildingBase" Abstract="True">
 		<destroyOnDrop>True</destroyOnDrop>
 		<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
@@ -506,7 +506,7 @@
 
 	<!--=============== 81mm mortar ===============-->
 
-	<ThingDef Name="MortarBase" ParentName="SK_BuildingBase" Abstract="True">
+	<ThingDef Name="MortarBase" ParentName="BuildingBase" Abstract="True">
 		<label>81mm artillery mortar</label>
 		<description>A mortar that launches explosive shells. Must be manned.</description>
 		<thingClass>CombatExtended.Building_TurretGunCE</thingClass>

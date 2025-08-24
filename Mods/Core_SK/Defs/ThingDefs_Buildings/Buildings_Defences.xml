@@ -2,7 +2,7 @@
 <Defs>
 
 	<!--========================= Vanilla Sandbags for Siege =============================-->
-	<!-- <ThingDef ParentName="SK_BuildingBase">
+	<!-- <ThingDef ParentName="BuildingBase">
 		<defName>Sandbags</defName>
 		<label>sandbags</label>
 		<description>Bags of locally-sourced dirt or sand held in place by steel rods. Sandbags are ugly, but provide excellent cover from ranged attacks.</description>
@@ -71,7 +71,7 @@
 	</ThingDef> -->
 
 	<!--
-  <ThingDef ParentName="SK_BuildingBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>StampedEarthWall</defName>
     <label>Stamped Earth Wall</label>
     <thingClass>Building</thingClass>
@@ -118,7 +118,7 @@
 -->
 
 
-	<!-- <ThingDef ParentName="SK_BuildingBase">
+	<!-- <ThingDef ParentName="BuildingBase">
 		<defName>Barricade</defName>
 		<label>barricade</label>
 		<description>A waist-high barrier for use as cover from incoming shots. Barricades are ugly, but provide better cover than other low objects. Barricades will block certain kinds of animals the same way that fences do.</description>
@@ -184,7 +184,7 @@
 	<!--========================= Cheval de frise =============================-->
 
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>chevalDeFrise</defName>
 		<label>cheval de frise</label>
 		<graphicData>
@@ -241,7 +241,7 @@
 	<!--========================= Embrasures =============================-->
 
 
-	<!-- <ThingDef ParentName="SK_BuildingBase">
+	<!-- <ThingDef ParentName="BuildingBase">
 		<defName>Embrasure</defName>
 		<label>embrasure</label>
 		<thingClass>SK.Building_Embrasure</thingClass>
@@ -320,7 +320,7 @@
 	<!--========================= Barbed Wire =============================-->
 
 
-	<!-- <ThingDef ParentName="SK_BuildingBase">
+	<!-- <ThingDef ParentName="BuildingBase">
 		<defName>WallWire</defName>
 		<label>barbed wire</label>
 		<thingClass>Building_TrapDamager</thingClass>
@@ -392,7 +392,7 @@
 	<!--========================= Moat =============================-->
 
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>Moat</defName>
 		<thingClass>Building</thingClass>
 		<label>shallow moat</label>
@@ -444,7 +444,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_BuildingBase" Name="NanoShieldBase" Abstract="True">
+	<ThingDef ParentName="BuildingBase" Name="NanoShieldBase" Abstract="True">
 		<altitudeLayer>Building</altitudeLayer>
 		<blockLight>true</blockLight>
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>

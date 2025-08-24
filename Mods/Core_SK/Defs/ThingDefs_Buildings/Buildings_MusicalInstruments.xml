@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef Name="MusicalInstrumentBase" ParentName="SK_BuildingBase" Abstract="True">
+	<ThingDef Name="MusicalInstrumentBase" ParentName="BuildingBase" Abstract="True">
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
 		<minifiedDef>MinifiedThing</minifiedDef>

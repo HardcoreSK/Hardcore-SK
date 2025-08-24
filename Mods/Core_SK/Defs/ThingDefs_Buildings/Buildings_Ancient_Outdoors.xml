@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- Large impassable and non-deconstructible buildings -->
-	<ThingDef Abstract="True" Name="NonDeconstructibleAncientBuildingBase" ParentName="SK_BuildingBase">
+	<ThingDef Abstract="True" Name="NonDeconstructibleAncientBuildingBase" ParentName="BuildingBase">
 		<building>
 			<deconstructible>false</deconstructible>
 			<claimable>false</claimable>

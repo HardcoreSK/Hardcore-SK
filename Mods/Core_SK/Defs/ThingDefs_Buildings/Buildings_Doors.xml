@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="SK_BuildingBase" Name="SK_DoorBase" Abstract="True">
+	<ThingDef ParentName="BuildingBase" Name="SK_DoorBase" Abstract="True">
 		<!-- <thingClass>SK.LockableDoors</thingClass> -->
 		<thingClass>Building_Door</thingClass>
 		<altitudeLayer>DoorMoveable</altitudeLayer>
@@ -379,7 +379,7 @@
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>OpenBlastDoor</defName>
 		<label>large armor gate (open)</label>
 		<description>A very large gate that provides protection against hostile outside entities. It requires power, and must be manually opened and closed. The gate is currently open.</description>
@@ -422,7 +422,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>ClosedBlastDoor</defName>
 		<label>large armor gate (closed)</label>
 		<description>A very large gate that provides protection against hostile outside entities. It requires power, and must be manually opened and closed. The gate is currently closed.</description>
@@ -476,7 +476,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>JammedBlastDoor</defName>
 		<label>large armor gate (jammed)</label>
 		<description>A very large gate that provides protection against hostile outside entities. It requires power, and must be manually opened and closed. The gate is jammed.</description>

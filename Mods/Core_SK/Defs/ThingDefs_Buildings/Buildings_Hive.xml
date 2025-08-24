@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="SK_BuildingNaturalBase">
+	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>Hive</defName>
 		<label>hive</label>
 		<description>A hive of giant insects. If activated, it will spawn additional insects and hives over time, as well as valuable insect jelly.</description>
@@ -95,7 +95,7 @@
 		</damageMultipliers>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingNaturalBase">
+	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>GlowPod</defName>
 		<label>glow pod</label>
 		<description>A bioluminescent pod produced by giant insects. Glows under its own light for a long time, then dies.</description>

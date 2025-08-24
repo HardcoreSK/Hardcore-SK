@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef Abstract="True" Name="RFF_TerraformBase" ParentName="SK_BuildingBase">
+	<ThingDef Abstract="True" Name="RFF_TerraformBase" ParentName="BuildingBase">
 		<thingClass>FertileFields.Building_Terraform</thingClass>
 		<placeWorkers>
 			<li>FertileFields.PlaceWorker_Dynamic</li>

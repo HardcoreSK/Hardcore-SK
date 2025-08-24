@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<ThingDef Name="SK_BuildingNaturalBase" ParentName="SK_BuildingBase" Abstract="True">
+<!-- DefOverwrite
+	<ThingDef Name="BuildingNaturalBase" ParentName="BuildingBase" Abstract="True">
 		<drawerType>MapMeshOnly</drawerType>
 		<filthLeaving>Filth_RubbleRock</filthLeaving>
 		<scatterableOnMapGen>false</scatterableOnMapGen>
@@ -10,8 +10,8 @@
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 		</building>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_BuildingNaturalBase">
+-->
+	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>NuclearHive</defName>
 		<label>ancient reactor hive</label>
 		<description>Old nuclear reactor, still deadly toxic to animals and people, infested by giant insects. When activated, it will spawn insects and smaller hives over time, as well as valuable insect jelly.</description>
@@ -100,8 +100,8 @@
 			</li>
 		</comps>
 	</ThingDef>
-
-	<ThingDef Name="SK_RockBase" ParentName="SK_BuildingNaturalBase" Abstract="True">
+<!-- DefOverwrite
+	<ThingDef Name="SK_RockBase" ParentName="BuildingNaturalBase" Abstract="True">
 		<thingClass>Mineable</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Linked/Rock_Atlas</texPath>
@@ -145,11 +145,11 @@
 			</li>
 		</damageMultipliers>
 	</ThingDef>
-
+-->
 
 	<!--============================ Simple mineables ===============================-->
 
-	<ThingDef ParentName="SK_RockBase">
+	<ThingDef ParentName="RockBase">
 		<defName>CollapsedRocks</defName>
 		<label>Collapsed Rocks</label>
 		<graphicData>
@@ -171,7 +171,7 @@
 
 	<!--============================ Resource rocks ===============================-->
 
-	<ThingDef ParentName="SK_RockBase">
+	<ThingDef ParentName="RockBase">
 		<defName>MineableSteel</defName>
 		<label>Iron Ore Deposits</label>
 		<graphicData>
@@ -198,7 +198,7 @@
 		</building>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_RockBase">
+	<ThingDef ParentName="RockBase">
 		<defName>MineableSilver</defName>
 		<label>Silver Ore Deposits</label>
 		<graphicData>
@@ -226,7 +226,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_RockBase">
+	<ThingDef ParentName="RockBase">
 		<defName>MineableGold</defName>
 		<label>Gold Ore Deposits</label>
 		<graphicData>
@@ -253,7 +253,7 @@
 		</building>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_RockBase">
+	<ThingDef ParentName="RockBase">
 		<defName>MineableNitre</defName>
 		<label>Nitre Deposits</label>
 		<graphicData>
@@ -281,7 +281,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_RockBase">
+	<ThingDef ParentName="RockBase">
 		<defName>MineableCoal</defName>
 		<label>Coal Ore Deposits</label>
 		<graphicData>
@@ -309,7 +309,7 @@
 	</ThingDef>
 
 
-	<!-- <ThingDef ParentName="SK_RockBase">
+	<!--<ThingDef ParentName="RockBase">
 		<defName>MineablePlasteel</defName>
 		<label>Nickel Ore Deposits</label>
 		<graphicData>
@@ -333,10 +333,9 @@
 			</mineableScatterLumpSizeRange>
 			<veinMineable>true</veinMineable>
 		</building>
-	</ThingDef> -->
+	</ThingDef>-->
 
-
-	<ThingDef ParentName="SK_RockBase">
+	<ThingDef ParentName="RockBase">
 		<defName>MineableTin</defName>
 		<label>Tin Ore Deposits</label>
 		<graphicData>
@@ -363,7 +362,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_RockBase">
+	<ThingDef ParentName="RockBase">
 		<defName>MineableCopper</defName>
 		<label>Copper Ore Deposits</label>
 		<graphicData>
@@ -390,7 +389,7 @@
 		</building>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_RockBase">
+	<ThingDef ParentName="RockBase">
 		<defName>MineableAluminium</defName>
 		<label>Bauxite Ore Deposits</label>
 		<graphicData>
@@ -418,7 +417,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_RockBase">
+	<ThingDef ParentName="RockBase">
 		<defName>MineableJade</defName>
 		<label>Jade</label>
 		<graphicData>
@@ -446,7 +445,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_RockBase">
+	<ThingDef ParentName="RockBase">
 		<defName>MineableTitanium</defName>
 		<label>Ilmenite Ore Deposits</label>
 		<graphicData>
@@ -472,7 +471,7 @@
 		</building>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_RockBase">
+	<ThingDef ParentName="RockBase">
 		<defName>MineableTungsten</defName>
 		<label>Wolframite Ore Deposits</label>
 		<graphicData>
@@ -498,7 +497,7 @@
 		</building>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_RockBase">
+	<ThingDef ParentName="RockBase">
 		<defName>MineableNickel</defName>
 		<label>Nickel Ore Deposits</label>
 		<graphicData>
@@ -524,7 +523,7 @@
 		</building>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_RockBase">
+	<ThingDef ParentName="RockBase">
 		<defName>MineableLead</defName>
 		<label>Anglesite Deposits</label>
 		<graphicData>
@@ -551,7 +550,7 @@
 		</building>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingNaturalBase">
+	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>SteamGeyser</defName>
 		<thingClass>Building_SteamGeyser</thingClass>
 		<label>steam geyser</label>
@@ -589,7 +588,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_RockBase">
+	<ThingDef ParentName="RockBase">
 		<defName>MineableGlowstone</defName>
 		<label>Glowstone Deposit</label>
 		<graphicData>
@@ -623,7 +622,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_RockBase">
+	<ThingDef ParentName="RockBase">
 		<defName>MineableSalt</defName>
 		<label>Compacted salt</label>
 		<graphicData>
@@ -650,7 +649,7 @@
 		</building>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_RockBase">
+	<ThingDef ParentName="RockBase">
 		<defName>MineableColdstone</defName>
 		<label>Coldstone Deposit</label>
 		<graphicData>
@@ -689,7 +688,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_RockBase">
+	<ThingDef ParentName="RockBase">
 		<defName>MineableComponentsIndustrial</defName>
 		<label>compacted machinery</label>
 		<description>Ancient machinery, compacted over time. Can be mined for useful components.</description>

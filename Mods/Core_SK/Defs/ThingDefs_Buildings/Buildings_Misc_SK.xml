@@ -13,7 +13,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>MarriageSpot</defName>
 		<label>marriage spot</label>
 		<description>Designates a spot where marriage ceremonies will take place. Spectators can watch from either side.</description>
@@ -50,7 +50,7 @@
 		<drawPlaceWorkersWhileSelected>True</drawPlaceWorkersWhileSelected>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>PartySpot</defName>
 		<label>party spot</label>
 		<description>Designates a spot where parties will be centered. Parties use an area around the spot.</description>
@@ -81,7 +81,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>CaravanPackingSpot</defName>
 		<label>caravan packing spot</label>
 		<description>Designates a spot where caravans will be formed.</description>
@@ -112,7 +112,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>TradingSpot</defName>
 		<label>trading spot</label>
 		<description>Designates a spot where traders will stop when visiting your colony.</description>
@@ -1528,7 +1528,7 @@
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>Grave</defName>
 		<label>grave</label>
 		<description>Place the deceased in graves to give them a decent final resting place. Can only be dug in dirt.</description>
@@ -1630,7 +1630,7 @@
 		</ritualFocus>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>Sarcophagus</defName>
 		<label>sarcophagus</label>
 		<description>An ornamental burial receptacle for the honored dead.</description>
@@ -1763,7 +1763,7 @@
 	</ThingDef>
 
 	<!-- Cryptosleep casket -->
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>CryptosleepCasket</defName>
 		<label>cryptosleep casket</label>
 		<description>A self-powered sarcophagus designed to keep a person in a state of suspended animation for many years.</description>
@@ -1832,7 +1832,7 @@
 		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase" Name="AncientCryptosleepCasket">
+	<ThingDef ParentName="BuildingBase" Name="AncientCryptosleepCasket">
 		<defName>AncientCryptosleepCasket</defName>
 		<label>ancient cryptosleep casket</label>
 		<description>This cryptosleep casket looks like it has been here for a very long time. Who knows what it might contain?</description>
@@ -2346,7 +2346,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>MiningHelmetGlower</defName>
 		<label>mining light</label>
 		<description>Mining light.</description>
@@ -2493,7 +2493,7 @@
 		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>LightningRod</defName>
 		<label>lightning rod</label>
 		<description>A lightning rod with an ion beam emitter for map-wide protection from lightning strikes.\n\nRequires power, but discharges power for a short while after it gets hit. Can get overwhelmed.\n\nThese rods were called by many Zeon Resistance agents as "Rapiers", due to the structure looking like a sword protruding into the sky, and is also a symbol Zeon's eventual downfall at the mercy of this lightning rod.</description>
@@ -2570,7 +2570,7 @@
 		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<!-- 	<ThingDef ParentName="SK_BuildingBase">
+	<!-- 	<ThingDef ParentName="BuildingBase">
 		<defName>TacticalComputer</defName>
 		<label>Tactical Computer</label>
 		<description>This computer provides various informations and options.</description>
@@ -2648,7 +2648,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>TacticalComputerExtension</defName>
 		<label>Computer Terminal</label>
 		<description>This computer terminal provides remote access to some options of the tactical computer.\nNote: A Tactical Computer is needed!</description>
@@ -2852,7 +2852,7 @@
 		</statBases>
 	</ThingDef>
 
-	<ThingDef Class="SK.StargateThingDef" ParentName="SK_BuildingBase">
+	<ThingDef Class="SK.StargateThingDef" ParentName="BuildingBase">
 		<defName>Stargate</defName>
 		<label>stargate</label>
 		<description>A Stargate allows transferring of colonists and items between colonies. You can send things through in Colony A's Stargate and load them in Colony B's Stargate. To use it place items or colonists near the Stargate and use the "add resource" or "add colonist" buttons, then use the "dial out" button. The colonists or items are now ready to be "recalled" in a different colony.</description>
@@ -2906,7 +2906,7 @@
 		<designationCategory>Misc</designationCategory>
 	</ThingDef>
 
-	<ThingDef Class="SK.StargateThingDef" ParentName="SK_BuildingBase">
+	<ThingDef Class="SK.StargateThingDef" ParentName="BuildingBase">
 		<defName>AncientStargate</defName>
 		<label>an ancient unknown building</label>
 		<description>According to rumors, this is the ancient gate through which our ancestors traveled or maybe the ancients..</description>
@@ -2943,7 +2943,7 @@
 
 	<!--============================== Steles ==============================-->
 
-	<ThingDef Name="SteleBase" ParentName="SK_BuildingBase" Abstract="True">
+	<ThingDef Name="SteleBase" ParentName="BuildingBase" Abstract="True">
 		<designationCategory>Misc</designationCategory>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -3131,7 +3131,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>PenMarker</defName>
 		<label>pen marker</label>
 		<description>A post with a sign designating an animal pen. It must be placed in an area enclosed by fences, barricades, walls, and doors. You can assign each pen marker a set of animals to accept, and handlers will bring animals to an appropriate pen.</description>

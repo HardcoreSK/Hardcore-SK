@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-
+<!--
 	<Operation Class="PatchOperationAttributeSet">
 		<xpath>Defs/ThingDef[	defName="Sandbags" or
 								defName="Barricade"]</xpath>
 		<attribute>ParentName</attribute>
 		<value>SK.SK_BuildingBaseDummy</value>
 	</Operation>
-
+-->
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Sandbags"]</xpath>
 		<value>

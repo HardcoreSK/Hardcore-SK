@@ -15,7 +15,7 @@
 		</inspectorTabs>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>PowerConduit</defName>
 		<label>power conduit</label>
 		<description>A bundle of electrical cables for moving power around. Can be placed under walls and other buildings.</description>
@@ -81,7 +81,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>WaterproofConduit</defName>
 		<label>waterproof conduit</label>
 		<description>Insulated electrical cables for transmitting power under shallow water.</description>
@@ -148,7 +148,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>HeavyPowerConduit</defName>
 		<label>heavy power conduit</label>
 		<graphicData>
@@ -214,7 +214,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>HiddenConduit</defName>
 		<label>hidden power conduit</label>
 		<thingClass>Building</thingClass>
@@ -283,7 +283,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>PowerSwitch</defName>
 		<label>power switch</label>
 		<thingClass>SK.Building_PowerSwitchMod</thingClass>
@@ -339,7 +339,7 @@
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>PowerSwitchFlicker</defName>
 		<label>power switch flicker</label>
 		<thingClass>Building_PowerSwitch</thingClass>
@@ -398,7 +398,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>TimerSwitch</defName>
 		<label>scheduled switch</label>
 		<thingClass>SK.TimeOfDaySwitch</thingClass>
@@ -453,7 +453,7 @@
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>Battery</defName>
 		<label>battery</label>
 		<thingClass>SK.Building_Battery</thingClass>
@@ -908,7 +908,7 @@
 	</ThingDef>
 
 	<!-- 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>TidalGenerator</defName>
     <thingClass>BiomeOcean.Building_TidalGenerator</thingClass>
 		<label>Hydro power plant</label>
@@ -1400,7 +1400,7 @@
 		<constructionSkillPrerequisite>13</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>WatermillGenerator</defName>
 		<label>watermill generator</label>
 		<description>Produces electricity from a river. Must be placed with its wheel in moving water. If watermills are placed too close together, the turbulence they generate will interfere and reduce power generation.</description>

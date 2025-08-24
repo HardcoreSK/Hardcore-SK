@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 <!--
-	<ThingDef ParentName="SK_BuildingBase" Name ="FishingPierSpawnerBase">
+	<ThingDef ParentName="BuildingBase" Name ="FishingPierSpawnerBase">
 		<defName>FishingPierSpawner</defName>
 		<label>fishing pier</label>
 		<description>A simple and solid fishing pier. Keeps your feet dry while fishing.</description>
@@ -62,7 +62,7 @@
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>FishingPier</defName>
 		<label>Fishing pier</label>
 		<description>A simple and solid fishing pier. Keeps your feet dry when fishing.</description>
@@ -109,7 +109,7 @@
 	</ThingDef>
 -->
 
-	<ThingDef ParentName="SK_BuildingBase" Name ="FishingPierSpawnerBase">
+	<ThingDef ParentName="BuildingBase" Name ="FishingPierSpawnerBase">
 		<defName>HSK_FishingSpotSpawner</defName>
 		<label>fishing spot</label>
 		<description>A simple fishing spot. Make a bridge for better fish.</description>
@@ -156,7 +156,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>HSK_FishingSpot</defName>
 		<label>fishing spot</label>
 		<description>A simple fishing spot. Make a bridge for better fish.</description>

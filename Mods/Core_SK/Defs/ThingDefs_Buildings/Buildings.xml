@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+<!-- DefOverwrite
 	<ThingDef Name="SK_BuildingBase" Abstract = "True">
 		<category>Building</category>
 		<thingClass>Building</thingClass>
@@ -53,8 +53,8 @@
 			</li>
 		</damageMultipliers>
 	</ThingDef>
-
-	<ThingDef Name="BenchBaseNoShadows" ParentName="SK_BuildingBase" Abstract="True">
+-->
+	<ThingDef Name="BenchBaseNoShadows" ParentName="BuildingBase" Abstract="True">
 		<castEdgeShadows>false</castEdgeShadows>
 		<canOverlapZones>false</canOverlapZones>
 		<building>
@@ -69,7 +69,7 @@
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
 	</ThingDef>
 
-	<ThingDef Name="StandartBuilding" ParentName="SK_BuildingBase" Abstract="True">
+	<ThingDef Name="StandartBuilding" ParentName="BuildingBase" Abstract="True">
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>80</pathCost>

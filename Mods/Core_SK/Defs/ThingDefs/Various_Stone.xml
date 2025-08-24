@@ -3,7 +3,7 @@
 
 
 	<!-- =========== bases =========== -->
-
+<!-- DefOverwrite
 	<ThingDef Name="SK_ChunkBase" Abstract="True">
 		<category>Item</category>
 		<thingClass>Thing</thingClass>
@@ -76,7 +76,7 @@
 			</li>
 		</damageMultipliers>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_ChunkBase" Name="SK_ChunkRockBase" Abstract="True">
 		<description>A chunk of rock. Can be cut into usable stone blocks.</description>
 		<statBases>
@@ -91,7 +91,7 @@
 			<li>StoneChunks</li>
 		</thingCategories>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_ResourceBase" Name="SK_StoneBlocksBase" Abstract="True">
 		<description>Blocks of stone. Mostly useful for building long-lasting, simple structures.</description>
 		<graphicData>
@@ -121,7 +121,6 @@
 				<li>Stony</li>
 			</categories>
 			<commonality>0.20</commonality>
-			<!-- because there are so many stone types -->
 			<appearance>Bricks</appearance>
 			<statOffsets>
 				<WorkToMake>120</WorkToMake>
@@ -144,7 +143,7 @@
 		</stuffProps>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef Name="SK_UglyRockBase" ParentName="SK_RockBase" Abstract="True" >
 		<statBases>
 			<Flammability>0</Flammability>
@@ -154,7 +153,7 @@
 			<mineableYieldWasteable>false</mineableYieldWasteable>
 		</building>
 	</ThingDef>
-
+-->
 	<!-- =========== Misc chunks =========== -->
 
 	<!-- <ThingDef ParentName="SK_RockBase">
@@ -180,7 +179,7 @@
 		</building>
 	</ThingDef>  -->
 
-	<ThingDef ParentName="SK_ChunkRockBase">
+	<ThingDef ParentName="ChunkRockBase">
 		<defName>CollapsedReinforcedConcrete</defName>
 		<label>Reinforced concrete chunk</label>
 		<description>This is a large chunk of reinforced concrete that can be processed to useful materials.</description>
@@ -199,7 +198,7 @@
 		</butcherProducts>
 	</ThingDef>
 
-	<ThingDef Name="SK_MetalChunkBase" ParentName="SK_ChunkBase" Abstract="True" >
+	<ThingDef Name="SK_MetalChunkBase" ParentName="ChunkBase" Abstract="True" >
 		<description>A rough glob of metal that has been melted from extreme temperatures. It can be smelted into alloy at an electric smelter.</description>
 		<graphicData>
 			<texPath>Things/Item/Chunk/Slag</texPath>
@@ -211,12 +210,9 @@
 			<Flammability>0.2</Flammability>
 			<Mass>5</Mass>
 		</statBases>
-		<thingCategories>
-			<li>Chunks</li>
-		</thingCategories>
 		<smeltable>true</smeltable>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef Name="ChunkSlagSteel" ParentName="SK_MetalChunkBase">
 		<defName>ChunkSlagSteel</defName>
 		<label>Slag Chunk</label>
@@ -226,10 +222,10 @@
 			<CopperBar>3</CopperBar>
 		</smeltProducts>
 	</ThingDef>
-
+-->
 	<!-- =========== Stone solids, chunks, and blocks =========== -->
-
-	<ThingDef ParentName="SK_UglyRockBase" Name="SK_SandstoneBase">
+<!-- DefOverwrite
+	<ThingDef ParentName="UglyRockBase" Name="SK_SandstoneBase">
 		<defName>Sandstone</defName>
 		<label>Sandstone Deposit</label>
 		<description>Sandstone is a sedimentary rock that is composed of sand particles that have been compressed together.</description>
@@ -245,7 +241,7 @@
 			<smoothedThing>SmoothedSandstone</smoothedThing>
 		</building>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_SandstoneBase">
 		<defName>SmoothedSandstone</defName>
 		<label>smoothed sandstone</label>
@@ -268,8 +264,8 @@
 		<saveCompressible>false</saveCompressible>
 		<repairEffect>Repair</repairEffect>
 	</ThingDef>  
-
-	<ThingDef ParentName="SK_ChunkRockBase">
+--><!-- DefOverwrite
+	<ThingDef ParentName="ChunkRockBase">
 		<defName>ChunkSandstone</defName>
 		<label>Sandstone Chunk</label>
 		<description>Sandstone is a sedimentary rock that is composed of sand particles that have been compressed together. This is a large chunk of rock that can be cut into blocks.</description>
@@ -288,7 +284,7 @@
 			<SandResource>20</SandResource>
 		</butcherProducts>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_StoneBlocksBase">
 		<defName>BlocksSandstone</defName>
 		<label>sandstone blocks</label>
@@ -319,7 +315,7 @@
 			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
 		</stuffProps>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<RecipeDef ParentName="MakeStoneBlocksBase">
 		<defName>Make_StoneBlocksSandstone</defName>
 		<label>Make Sandstone Blocks</label>
@@ -343,8 +339,8 @@
 			<BlocksSandstone>20</BlocksSandstone>
 		</products>
 	</RecipeDef>
-
-	<ThingDef ParentName="SK_UglyRockBase" Name="SK_GraniteBase">
+--><!-- DefOverwrite
+	<ThingDef ParentName="UglyRockBase" Name="SK_GraniteBase">
 		<defName>Granite</defName>
 		<label>Granite Deposit</label>
 		<description>Granite is a very hard igneous rock.</description>
@@ -360,7 +356,7 @@
 			<smoothedThing>SmoothedGranite</smoothedThing>
 		</building>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_GraniteBase">
 		<defName>SmoothedGranite</defName>
 		<label>smoothed granite</label>
@@ -383,9 +379,9 @@
 		<saveCompressible>false</saveCompressible>
 		<repairEffect>Repair</repairEffect>
 	</ThingDef>
-
-
-	<ThingDef ParentName="SK_ChunkRockBase">
+-->
+<!-- DefOverwrite
+	<ThingDef ParentName="ChunkRockBase">
 		<defName>ChunkGranite</defName>
 		<label>Granite Chunk</label>
 		<description>Granite is a very hard igneous rock. This is a large chunk of rock that can be cut into blocks.</description>
@@ -404,7 +400,7 @@
 			<SandResource>20</SandResource>	  
 		</butcherProducts>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_StoneBlocksBase">
 		<defName>BlocksGranite</defName>
 		<label>granite blocks</label>
@@ -431,7 +427,7 @@
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<RecipeDef ParentName="MakeStoneBlocksBase">
 		<defName>Make_StoneBlocksGranite</defName>
 		<label>Make Granite Blocks</label>
@@ -455,8 +451,8 @@
 			<BlocksGranite>20</BlocksGranite>
 		</products>
 	</RecipeDef>
-
-	<ThingDef ParentName="SK_UglyRockBase" Name="SK_LimestoneBase">
+--><!-- DefOverwrite
+	<ThingDef ParentName="UglyRockBase" Name="SK_LimestoneBase">
 		<defName>Limestone</defName>
 		<label>Limestone Deposit</label>
 		<description>Limestone is a sedimentary rock formed from the compacted remains of ancient seashells.</description>
@@ -472,7 +468,7 @@
 			<smoothedThing>SmoothedLimestone</smoothedThing>
 		</building>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_LimestoneBase">
 		<defName>SmoothedLimestone</defName>
 		<label>smoothed limestone</label>
@@ -495,8 +491,8 @@
 		<saveCompressible>false</saveCompressible>
 		<repairEffect>Repair</repairEffect>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_ChunkRockBase">
+--><!-- DefOverwrite
+	<ThingDef ParentName="ChunkRockBase">
 		<defName>ChunkLimestone</defName>
 		<label>Limestone Chunk</label>
 		<description>Limestone is a sedimentary rock formed from the compacted remains of ancient seashells. This is a large chunk of rock that can be cut into blocks.</description>
@@ -515,8 +511,8 @@
 			<SandResource>20</SandResource>
 		</butcherProducts>
 	</ThingDef>
-
-
+-->
+<!-- DefOverwrite
 	<ThingDef ParentName="SK_StoneBlocksBase">
 		<defName>BlocksLimestone</defName>
 		<label>limestone blocks</label>
@@ -542,7 +538,7 @@
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<RecipeDef ParentName="MakeStoneBlocksBase">
 		<defName>Make_StoneBlocksLimestone</defName>
 		<label>Make Limestone Blocks</label>
@@ -566,8 +562,8 @@
 			<BlocksLimestone>20</BlocksLimestone>
 		</products>
 	</RecipeDef>
-
-	<ThingDef ParentName="SK_UglyRockBase" Name="SK_SlateBase">
+--><!-- DefOverwrite
+	<ThingDef ParentName="UglyRockBase" Name="SK_SlateBase">
 		<defName>Slate</defName>
 		<label>Slate Deposit</label>
 		<description>Slate is a dark-colored metamorphic rock. Its fine layers are emblematic of slaty cleavage.</description>
@@ -583,7 +579,7 @@
 			<smoothedThing>SmoothedSlate</smoothedThing>
 		</building>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_SlateBase">
 		<defName>SmoothedSlate</defName>
 		<label>smoothed slate</label>
@@ -606,8 +602,8 @@
 		<saveCompressible>false</saveCompressible>
 		<repairEffect>Repair</repairEffect>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_ChunkRockBase">
+--><!-- DefOverwrite
+	<ThingDef ParentName="ChunkRockBase">
 		<defName>ChunkSlate</defName>
 		<label>Slate Chunk</label>
 		<description>Slate is a dark-colored metamorphic rock. Its fine layers are emblematic of slaty cleavage. This is a large chunk of rock that can be cut into blocks.</description>
@@ -626,7 +622,7 @@
 			<SandResource>20</SandResource>
 		</butcherProducts>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_StoneBlocksBase">
 		<defName>BlocksSlate</defName>
 		<label>slate blocks</label>
@@ -653,7 +649,7 @@
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<RecipeDef ParentName="MakeStoneBlocksBase">
 		<defName>Make_StoneBlocksSlate</defName>
 		<label>Make Slate Blocks</label>
@@ -677,8 +673,8 @@
 			<BlocksSlate>20</BlocksSlate>
 		</products>
 	</RecipeDef>
-
-	<ThingDef ParentName="SK_UglyRockBase" Name="SK_MarbleBase">
+--><!-- DefOverwrite
+	<ThingDef ParentName="UglyRockBase" Name="SK_MarbleBase">
 		<defName>Marble</defName>
 		<label>Marble Deposit</label>
 		<description>Marble is a soft metamorphic rock composed of recrystallized carbonate minerals. It is commonly used in sculptures.</description>
@@ -695,7 +691,7 @@
 			<smoothedThing>SmoothedMarble</smoothedThing>
 		</building>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_MarbleBase">
 		<defName>SmoothedMarble</defName>
 		<label>smoothed marble</label>
@@ -718,8 +714,8 @@
 		<saveCompressible>false</saveCompressible>
 		<repairEffect>Repair</repairEffect>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_ChunkRockBase">
+--><!-- DefOverwrite
+	<ThingDef ParentName="ChunkRockBase">
 		<defName>ChunkMarble</defName>
 		<label>Marble Chunk</label>
 		<description>Marble is a soft metamorphic rock composed of recrystallized carbonate minerals. It is commonly used in sculptures. This is a large chunk of rock that can be cut into blocks.</description>
@@ -738,7 +734,7 @@
 			<SandResource>20</SandResource>
 		</butcherProducts>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_StoneBlocksBase">
 		<defName>BlocksMarble</defName>
 		<label>marble blocks</label>
@@ -767,7 +763,7 @@
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<RecipeDef ParentName="MakeStoneBlocksBase">
 		<defName>Make_StoneBlocksMarble</defName>
 		<label>Make Marble Blocks</label>
@@ -791,5 +787,5 @@
 			<BlocksMarble>20</BlocksMarble>
 		</products>
 	</RecipeDef>
-
+-->
 </Defs>

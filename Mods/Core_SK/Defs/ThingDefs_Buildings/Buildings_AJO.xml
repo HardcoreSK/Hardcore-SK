@@ -2,7 +2,7 @@
 <Defs>
 
 <!--
-	<ThingDef ParentName="SK_BuildingBase" Name="PaintingBase" Abstract="True">
+	<ThingDef ParentName="BuildingBase" Name="PaintingBase" Abstract="True">
 		<thingClass>Building_Art</thingClass>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -36,7 +36,7 @@
 	</ThingDef>
 -->
 
-	<ThingDef ParentName="SK_BuildingBase" Name="JoyBase" Abstract="True">
+	<ThingDef ParentName="BuildingBase" Name="JoyBase" Abstract="True">
 		<statBases>
 			<Bulk>20</Bulk>
 			<Mass>10</Mass>

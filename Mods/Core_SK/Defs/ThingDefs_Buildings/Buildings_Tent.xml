@@ -2,7 +2,7 @@
 <Defs>
 
 
-	<ThingDef ParentName="SK_BuildingBase" Name="DoorBase2" Abstract="True">
+	<ThingDef ParentName="BuildingBase" Name="DoorBase2" Abstract="True">
 		<thingClass>Building_Door</thingClass>
 		<altitudeLayer>DoorMoveable</altitudeLayer>
 		<fillPercent>1</fillPercent>
@@ -64,7 +64,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>TentWall</defName>
 		<label>tent wall</label>
 		<description>A fragile yet practical wall.</description>

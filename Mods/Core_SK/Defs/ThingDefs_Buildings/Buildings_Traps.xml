@@ -3,7 +3,7 @@
 
 	<!--==================== Traps ======================== -->
 
-	<ThingDef Name="TrapMechanicBase" ParentName="SK_BuildingBase" Abstract="True">
+	<ThingDef Name="TrapMechanicBase" ParentName="BuildingBase" Abstract="True">
 		<thingClass>Building_TrapDamager</thingClass>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -45,7 +45,7 @@
 	</ThingDef>
 
 
-	<ThingDef Name="SK_TrapIEDBase" ParentName="SK_BuildingBase" Abstract="True">
+	<ThingDef Name="SK_TrapIEDBase" ParentName="BuildingBase" Abstract="True">
 		<thingClass>Building_TrapExplosive</thingClass>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>

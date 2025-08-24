@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-
+<!--
 	<Operation Class="PatchOperationAttributeSet">
 		<xpath>Defs/ThingDef[	defName="CE_BarbedWire" or
 								defName="CE_Embrasure"]</xpath>
 		<attribute>ParentName</attribute>
 		<value>SK.SK_BuildingBaseDummy</value>
-	</Operation>
+	</Operation>-->
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="CE_BarbedWire"]</xpath>
 		<value>
@@ -101,7 +101,7 @@
 				</damageData>
 			</graphicData>
 			<uiIconPath>Things/Building/Embrasure/EmbrasureSmooth_MenuIcon</uiIconPath>
-			<uiIconPathsStuff>
+			<uiIconPathsStuff Inherit="false">
 				<li>
 					<appearance>Planks</appearance>
 					<iconPath>Things/Building/Embrasure/EmbrasurePlanks_MenuIcon</iconPath>
@@ -141,6 +141,8 @@
 				<buildingTags>
 					<li>ForceBuildDuringSiege</li>
 				</buildingTags>
+				<isAirtight>false</isAirtight>
+				<isStuffableAirtight>false</isStuffableAirtight>
 			</building>
 			<description>A waist-high stone wall built for defense.</description>
 			<drawStyleCategory>Default1D</drawStyleCategory>

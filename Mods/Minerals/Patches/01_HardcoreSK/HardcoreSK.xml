@@ -28,7 +28,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[@Name="ZF_StoneBlocksBase"]</xpath>
       <value>
-        <ThingDef Name="ZF_StoneBlocksBase" ParentName="SK_StoneBlocksBase"  Abstract="True">
+        <ThingDef Name="ZF_StoneBlocksBase" ParentName="StoneBlocksBase"  Abstract="True">
         </ThingDef>
       </value>
     </match>
@@ -41,7 +41,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[@Name="ZF_UglyRockBase"]</xpath>
       <value>
-        <ThingDef Name="ZF_UglyRockBase" ParentName="SK_UglyRockBase"  Abstract="True">
+        <ThingDef Name="ZF_UglyRockBase" ParentName="UglyRockBase"  Abstract="True">
         </ThingDef>
       </value>
     </match>
