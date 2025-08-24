@@ -18,7 +18,7 @@
 		<statBases>
 			<SellPriceFactor>0.70</SellPriceFactor>
 		</statBases>
-    </ThingDef>
+	</ThingDef>
 
 
 	<ThingDef Name="BasedFixture" Abstract="True" ParentName="BasedHygieneMom">
@@ -34,11 +34,11 @@
 			<li>
 				<compClass>CompColorable</compClass>
 			</li>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="DubsBadHygiene.CompProperties_Pipe">
 				<mode>Sewage</mode>
 			</li>
-			<li Class="DubsBadHygiene.CompProperties_Blockage"/>
+			<li Class="DubsBadHygiene.CompProperties_Blockage" />
 		</comps>
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>
@@ -104,7 +104,7 @@
 			<paintable>true</paintable>
 		</building>
 		<comps>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_DoorLearnOpeningSpeed</li>
@@ -138,14 +138,14 @@
 		</statBases>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<fillPercent>0.15</fillPercent>
-    <stuffCategories>
-      <li>Metallic</li>
-      <li>Precious</li>
-      <li>Woody</li>
-      <li>Stony</li>
-      <li>Bricks</li>
-    </stuffCategories>
-    <costStuffCount>15</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Bricks</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 		<pathCost>8</pathCost>
 		<rotatable>true</rotatable>
@@ -175,16 +175,16 @@
 		<pathCost>60</pathCost>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<defaultStuff>BlocksGranite</defaultStuff>
-    <stuffCategories>
-      <li>Woody</li>
-      <li>Stony</li>
-	  <li>Ceramic</li>
-	  <li>Bricks</li>
-    </stuffCategories>
-    <costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Ceramic</li>
+			<li>Bricks</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
 		<costList>
 			<ComponentMedieval>1</ComponentMedieval>
-		</costList>	
+		</costList>
 		<placeWorkers>
 			<li>DubsBadHygiene.PlaceWorker_WaterGrid</li>
 			<li>DubsBadHygiene.PlaceWorker_SewageGrid</li>
@@ -194,12 +194,12 @@
 				<compClass>DubsBadHygiene.CompBaseWell</compClass>
 				<Radius>7.9</Radius>
 			</li>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 		</comps>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 		<rotatable>false</rotatable>
 		<building>
-		  <paintable>true</paintable>
+			<paintable>true</paintable>
 		</building>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -228,11 +228,11 @@
 		</thingCategories>
 		<altitudeLayer>Building</altitudeLayer>
 		<building>
-		  <paintable>true</paintable>
+			<paintable>true</paintable>
 		</building>
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
-			<WorkToBuild>250</WorkToBuild> 
+			<WorkToBuild>250</WorkToBuild>
 			<Flammability>1.0</Flammability>
 			<Beauty>-5</Beauty>
 			<Cleanliness>-5</Cleanliness>
@@ -255,7 +255,7 @@
 			<li>
 				<compClass>CompColorable</compClass>
 			</li>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 		</comps>
 	</ThingDef>
 
@@ -296,7 +296,7 @@
 			<Mass>5</Mass>
 		</statBases>
 		<building>
-		  <paintable>true</paintable>
+			<paintable>true</paintable>
 		</building>
 		<tickerType>Rare</tickerType>
 		<fillPercent>0.15</fillPercent>
@@ -308,11 +308,10 @@
 			<li Class="DubsBadHygiene.CompProperties_Pipe">
 				<mode>Sewage</mode>
 			</li>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 		</comps>
 		<castEdgeShadows>True</castEdgeShadows>
 	</ThingDef>
-
 
 
 	<ThingDef ParentName="BasedHygieneMom" DBHThirst="true">
@@ -336,7 +335,7 @@
 			<li>Metallic</li>
 			<li>Woody</li>
 			<li>Stony</li>
-			</stuffCategories>
+		</stuffCategories>
 		<costStuffCount>15</costStuffCount>
 		<statBases>
 			<MaxHitPoints>55</MaxHitPoints>
@@ -346,7 +345,7 @@
 			<Mass>1</Mass>
 		</statBases>
 		<building>
-		  <paintable>true</paintable>
+			<paintable>true</paintable>
 		</building>
 		<tickerType>Rare</tickerType>
 		<fillPercent>0.05</fillPercent>
@@ -355,10 +354,9 @@
 		<pathCost>4</pathCost>
 		<rotatable>false</rotatable>
 		<comps>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 		</comps>
 	</ThingDef>
-
 
 
 	<ThingDef ParentName="BasedHygieneMom" DBHPetBladder="true">
@@ -388,7 +386,7 @@
 			<Mass>5</Mass>
 		</statBases>
 		<building>
-		  <paintable>true</paintable>
+			<paintable>true</paintable>
 		</building>
 		<fillPercent>0.15</fillPercent>
 		<stuffCategories>
@@ -407,7 +405,7 @@
 			<li>
 				<compClass>CompColorable</compClass>
 			</li>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 		</comps>
 		<castEdgeShadows>True</castEdgeShadows>
 	</ThingDef>
@@ -441,13 +439,13 @@
 		<selectable>true</selectable>
 		<costList>
 			<SandResource>30</SandResource>
-		</costList>		
-    <stuffCategories>
-      <li>Stony</li>
-	  <li>Ceramic</li>
-	  <li>Bricks</li>
-    </stuffCategories>
-    <costStuffCount>50</costStuffCount>
+		</costList>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Ceramic</li>
+			<li>Bricks</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
 		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
@@ -508,7 +506,6 @@
 	</ThingDef>
 
 
-
 	<!--                Basins                      -->
 
 	<ThingDef ParentName="BasedFixture" Name="DubsDirtyBasinBase" Abstract="True">
@@ -533,7 +530,7 @@
 			<Mass>5</Mass>
 		</statBases>
 		<building>
-		  <paintable>true</paintable>
+			<paintable>true</paintable>
 		</building>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<hasInteractionCell>true</hasInteractionCell>
@@ -551,7 +548,7 @@
 		<defName>BasinStuff</defName>
 		<label>basin</label>
 		<costList>
-		    <Mechanism>1</Mechanism>
+			<Mechanism>1</Mechanism>
 			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<stuffCategories>
@@ -567,7 +564,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	
+
 	<ThingDef ParentName="DubsDirtyBasinBase" DBHThirstAddon="true">
 		<defName>Fountain</defName>
 		<label>fountain</label>
@@ -579,7 +576,7 @@
 		</graphicData>
 		<hasInteractionCell>false</hasInteractionCell>
 		<costList>
-	    	<Mechanism>1</Mechanism>
+			<Mechanism>1</Mechanism>
 			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<stuffCategories>
@@ -673,7 +670,7 @@
 		<defName>ToiletStuff</defName>
 		<label>toilet</label>
 		<costList>
-		    <Mechanism>1</Mechanism>
+			<Mechanism>1</Mechanism>
 			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<defaultStuff>Ceramics</defaultStuff>
@@ -685,9 +682,9 @@
 			<li>Ceramic</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
-    <researchPrerequisites Inherit="False">
-        <li>CentralHeating</li>
-    </researchPrerequisites>
+		<researchPrerequisites Inherit="False">
+			<li>CentralHeating</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="DubsDirtyTerletBase" Name="AdvTerletBase" Abstract="True">
@@ -709,7 +706,7 @@
 				<basePowerConsumption>75</basePowerConsumption>
 				<idlePowerDraw>7.5</idlePowerDraw>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 		</comps>
 		<researchPrerequisites>
 			<li MayRequire="dbhlitemode">AdvancedToilets</li>
@@ -735,9 +732,40 @@
 			<li>Ceramic</li>
 		</stuffCategories>
 		<costStuffCount>100</costStuffCount>
-    <researchPrerequisites Inherit="False">
-        <li>Hygiene_31</li>
-    </researchPrerequisites>
+	</ThingDef>
+
+	<!-- Spacer Toilet (base) -->
+	<ThingDef ParentName="DubsDirtyTerletBase">
+		<defName>ToiletSpacer</defName>
+		<thingClass>DubsBadHygiene.Building_SpacerToilet</thingClass>
+		<description>Vacuum toilet that doesn't require water and jettisons all waste into space via sewage dump ports.</description>
+		<label>vacuumtoilet</label>
+		<costList>
+			<Plasteel>30</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<graphicData>
+			<texPath>DBH/Things/Building/Spacer/toilet</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToBuild>2500</WorkToBuild>
+			<Beauty>4</Beauty>
+			<Comfort>0.65</Comfort>
+			<Mass>35</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>120</basePowerConsumption>
+				</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<researchPrerequisites>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">OrbitalTech</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 
@@ -766,7 +794,7 @@
 			<WorkToBuild>800</WorkToBuild>
 		</statBases>
 		<building>
-		  <paintable>true</paintable>
+			<paintable>true</paintable>
 		</building>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<passability>Standable</passability>
@@ -793,7 +821,6 @@
 	</ThingDef>
 
 
-
 	<ThingDef ParentName="BasedFixture" Name="DubsDirtyBathtubBase" Abstract="True">
 		<description>Slow to use, but very comfortable. Can be heated by placing an adjacent campfire or log boiler, or via plumbed hot water tanks. Does not require a sewage outlet.\n190L per wash</description>
 		<thingClass>DubsBadHygiene.Building_bath</thingClass>
@@ -814,12 +841,12 @@
 			<Mass>50</Mass>
 		</statBases>
 		<building>
-		  <paintable>true</paintable>
+			<paintable>true</paintable>
 		</building>
 		<fillPercent>0.15</fillPercent>
 		<size>(1, 2)</size>
 		<passability>PassThroughOnly</passability>
-		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled> 
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 		<pathCost>8</pathCost>
 		<rotatable>true</rotatable>
 		<tickerType>Normal</tickerType>
@@ -850,9 +877,9 @@
 			<li>Ceramic</li>
 		</stuffCategories>
 		<costStuffCount>75</costStuffCount>
-    <researchPrerequisites Inherit="False">
-        <li>Hygiene_13</li>
-    </researchPrerequisites>
+		<researchPrerequisites Inherit="False">
+			<li>Hygiene_13</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 
@@ -876,7 +903,7 @@
 			<Mass>20</Mass>
 		</statBases>
 		<building>
-		  <paintable>true</paintable>
+			<paintable>true</paintable>
 		</building>
 		<fillPercent>0.15</fillPercent>
 		<passability>PassThroughOnly</passability>
@@ -902,12 +929,12 @@
 			<li>Stony</li>
 			<li>Plastic</li>
 			<li>Ceramic</li>
-	   	    <li>Bricks</li>
+			<li>Bricks</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
-    <researchPrerequisites Inherit="False">
-        <li>CentralHeating</li>
-    </researchPrerequisites>
+		<researchPrerequisites Inherit="False">
+			<li>CentralHeating</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="DubsDirtyShowerBase">
@@ -932,12 +959,12 @@
 			<li>Stony</li>
 			<li>Plastic</li>
 			<li>Ceramic</li>
-	        <li>Bricks</li>			
+			<li>Bricks</li>
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
-	 <researchPrerequisites Inherit="False">
-        <li>LogBoilers</li>
-    </researchPrerequisites>
+		<researchPrerequisites Inherit="False">
+			<li>LogBoilers</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 
@@ -957,13 +984,13 @@
 			<Comfort>1.2</Comfort>
 			<WorkToBuild>3000</WorkToBuild>
 		</statBases>
-		<comps>	
+		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>75</basePowerConsumption>
 				<idlePowerDraw>7.5</idlePowerDraw>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 		</comps>
 		<costList>
 			<ElectronicComponents>2</ElectronicComponents>
@@ -976,7 +1003,7 @@
 			<li>Stony</li>
 			<li>Plastic</li>
 			<li>Ceramic</li>
-	        <li>Bricks</li>			
+			<li>Bricks</li>
 		</stuffCategories>
 		<costStuffCount>100</costStuffCount>
 		<researchPrerequisites>
