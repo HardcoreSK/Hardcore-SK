@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<!-- Example of general patches that need adding to mod that is at the end of load order -->
+<!-- Can also use XML Extensions to toggle patches (as it will increase load time) -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[@ParentName="ArmorMachineableBase" and thingCategories/li[text()="ApparelArmor"]]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAttributeSet">
+					<xpath>Defs/ThingDef[@ParentName="ArmorMachineableBase" and thingCategories/li[text()="ApparelArmor"]]</xpath>
+					<attribute>ParentName</attribute>
+					<value>SK.ApparelIndustrialBaseDummy</value>
+				</li>
+			
+				<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/ThingDef[@ParentName="ArmorMachineableBase" and thingCategories/li[text()="ApparelArmor"]]</xpath>
+					<value>
+						<apparel Merge="true">
+							<tags>
+								<li>IndustrialMilitaryBasic</li>
+								<li>BrotherhoodLight</li>
+								<li>SectarianLight</li>
+								<li>SectarianMedium</li>
+							</tags>
+						</apparel>
+						<thingCategories>
+							<li>MediumUpperArmorCat</li>
+							<li>Setmarinearmor</li>
+						</thingCategories>
+						<recipeMaker> <!-- Should add another conditional to check this ThingDef has costList/costStuffCount though this may not matter as if it only has the research the recipe wont show up -->
+							<researchPrerequisite>Armor_C1</researchPrerequisite>
+						</recipeMaker>
+					</value>
+				</li>
+			
+			</operations>
+		</match>
+	</Operation>
+<!-- Other patches such as changing costList materials to HSK types E.G [label[Contains(text(), "industrial") or Contains(text(), "mechanic")] and costList/ComponentIndustrial > 2 and 6 > costList/ComponentIndustrial]
+Then do PatchOperationReplace to replace it with 2 ComponentIndustrial +  1/2 Mechanisms
+You can do this for other things like such as checking for the power comp and swapping them out with IndustrialComponents + ElectronicComponents
+-->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[@ParentName="ApparelMakeableBase" and thingCategories/li[text()="ApparelMisc"] and not apparel/tags/li[text()="IndustrialAdvanced"] and apparel/tags/li[text()="MedievalMilitary"] or apparel/tags/li[text()="IndustrialBasic"]]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAttributeSet">
+					<xpath>Defs/ThingDef[@ParentName="ApparelMakeableBase" and thingCategories/li[text()="ApparelMisc" and not apparel/tags/li[text()="IndustrialAdvanced"] and apparel/tags/li[text()="MedievalMilitary"] or apparel/tags/li[text()="IndustrialBasic"]]</xpath>
+					<attribute>ParentName</attribute>
+					<value>SK.ApparelMedievalBaseDummy</value>
+				</li>
+			
+				<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/ThingDef[@ParentName="ApparelMakeableBase" and thingCategories/li[text()="ApparelMisc" and not apparel/tags/li[text()="IndustrialAdvanced"] and apparel/tags/li[text()="MedievalMilitary"] or apparel/tags/li[text()="IndustrialBasic"]]]</xpath>
+					<value>
+						<apparel Merge="true">
+							<tags>
+								<li>Colonist</li>
+								<li>Outlander</li>
+								<li>RenegadesLight</li>
+								<li>PredatorsLight</li>
+								<li>PredatorsScout</li>
+								<li>EmpireLight</li>
+								<li>EmpireMedium</li>
+							</tags>
+						</apparel>
+						<thingCategories>
+							<li>UpperOverdressCat</li>
+							<li>SetBandit</li>
+						</thingCategories>
+					</value>
+				</li>
+			
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[@ParentName="ApparelMakeableBase" and thingCategories/li[text()="ApparelMisc"] and apparel/tags/li[text()="IndustrialAdvanced"]]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAttributeSet">
+					<xpath>Defs/ThingDef[@ParentName="ApparelMakeableBase" and thingCategories/li[text()="ApparelMisc" and apparel/tags/li[text()="IndustrialAdvanced"]]</xpath>
+					<attribute>ParentName</attribute>
+					<value>SK.ApparelIndustrialBaseDummy</value>
+				</li>
+			
+				<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/ThingDef[@ParentName="ApparelMakeableBase" and thingCategories/li[text()="ApparelMisc" and apparel/tags/li[text()="IndustrialAdvanced"]]]</xpath>
+					<value>
+						<apparel Merge="true">
+							<tags>
+								<li>Colonist</li>
+								<li>Outlander</li>
+								<li>RenegadesLight</li>
+								<li>PredatorsLight</li>
+								<li>PredatorsScout</li>
+								<li>EmpireLight</li>
+								<li>EmpireMedium</li>
+							</tags>
+						</apparel>
+						<thingCategories>
+							<li>UpperOverdressCat</li>
+							<li>SetBandit</li>
+						</thingCategories>
+					</value>
+				</li>
+			
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Apparel_FlakVest"]</xpath>
+    <value>
+      <description>Padded vest made from bullet-resistant materials. Provides limited protection against shrapnel and gunfire at relatively low weight.</description>
+      <graphicData>
+        <texPath>Things/Apparel/MedievalTimes/Bodywear_Armor/Combat/MedTimes_Combat</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <stuffCategories>
+        <li>HF</li>
+      </stuffCategories>
+      <costStuffCount>65</costStuffCount>
+      <costList>
+        <ComponentIndustrial>5</ComponentIndustrial>
+        <Compaste>11</Compaste>
+      </costList>
+      <statBases>
+        <WorkToMake>5500</WorkToMake>
+        <MaxHitPoints>130</MaxHitPoints>
+        <Flammability>1.2</Flammability>
+        <Mass>4</Mass>
+        <Bulk>10</Bulk>
+        <WornBulk>3</WornBulk>
+        <EquipDelay>5.2</EquipDelay>
+        <Insulation_Heat>-2.5</Insulation_Heat>
+        <Insulation_Cold>2.5</Insulation_Cold>
+        <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+        <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+        <StuffEffectMultiplierArmor>3.90</StuffEffectMultiplierArmor>
+        <ArmorRating_Sharp>6.81</ArmorRating_Sharp>
+        <ArmorRating_Blunt>14.968</ArmorRating_Blunt>
+        <ArmorRating_Heat>0</ArmorRating_Heat>
+      </statBases>
+      <equippedStatOffsets>
+        <CarryBulk>18</CarryBulk>
+        <MoveSpeed>-0.18</MoveSpeed>
+        <WorkSpeedGlobal>-0.13</WorkSpeedGlobal>
+        <MentalBreakThreshold>-0.03</MentalBreakThreshold>
+        <ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
+        <AimingDelayFactor>0.1</AimingDelayFactor>
+        <MeleeHitChance>-0.1</MeleeHitChance>
+        <MeleeWeapon_CooldownMultiplier>0.1</MeleeWeapon_CooldownMultiplier>
+        <Suppressability>-0.1</Suppressability>
+        <GermResistance>0.03</GermResistance>
+        <GermContainment>0.02</GermContainment>
+      </equippedStatOffsets>
+      <generateCommonality>0.4</generateCommonality>
+      <apparel>
+        <bodyPartGroups>
+          <li>Torso</li>
+          <li>Neck</li>
+          <li>Shoulders</li>
+        </bodyPartGroups>
+        <wornGraphicPath>Things/Apparel/FlakVest/FlakVest</wornGraphicPath>
+        <layers>
+          <li>Middle</li>
+        </layers>
+        <tags>
+          <li>IndustrialMilitaryBasic</li>
+          <li>Outlander</li>
+          <li>Military</li>
+        </tags>
+        <defaultOutfitTags>
+          <li>Soldier</li>
+        </defaultOutfitTags>
+      </apparel>
+      <thingCategories>
+        <li>VestsCat</li>
+      </thingCategories>
+      <generateAllowChance>0.8</generateAllowChance>
+      <recipeMaker>
+        <researchPrerequisite>Armor_C1</researchPrerequisite>
+      </recipeMaker>
+    </value>
+  </Operation>
+
+</Patch>

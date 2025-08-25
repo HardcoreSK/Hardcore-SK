@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Apparel_PsychicFoilHelmet"]</xpath>
+    <value>
+      <label>Psychic Foil Helmet</label>
+      <description>A thin helmet containing finely-tuned sheets of psychically-absorptive foil. Reduces the impact of psychic events.</description>
+      <graphicData>
+        <texPath>Things/Apparel/Vanilla/PsychicFoilHelmet</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <stuffCategories>
+        <li>StrongMetallic</li>
+      </stuffCategories>
+      <costStuffCount>35</costStuffCount>
+      <costList>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Compaste>15</Compaste>
+        <MagneticMaterial>3</MagneticMaterial>
+      </costList>
+      <statBases>
+        <WorkToMake>10500</WorkToMake>
+        <Flammability>1.1</Flammability>
+        <MaxHitPoints>50</MaxHitPoints>
+        <Mass>0.2</Mass>
+        <Bulk>3</Bulk>
+        <WornBulk>0</WornBulk>
+        <EquipDelay>0.9</EquipDelay>
+        <Insulation_Heat>5</Insulation_Heat>
+        <Insulation_Cold>5</Insulation_Cold>
+        <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+        <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+        <StuffEffectMultiplierArmor>0.72</StuffEffectMultiplierArmor>
+        <ArmorRating_Sharp>0</ArmorRating_Sharp>
+        <ArmorRating_Blunt>0</ArmorRating_Blunt>
+        <ArmorRating_Heat>0.1</ArmorRating_Heat>
+      </statBases>
+      <equippedStatOffsets>
+        <MoveSpeed>-0.03</MoveSpeed>
+        <WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+        <SocialImpact>0.05</SocialImpact>
+        <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+        <PsychicSensitivity>-0.9</PsychicSensitivity>
+        <GlobalLearningFactor>0.15</GlobalLearningFactor>
+        <ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+      </equippedStatOffsets>
+      <generateCommonality>0.5</generateCommonality>
+      <apparel>
+        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+        <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+        <bodyPartGroups>
+          <li>UpperHead</li>
+        </bodyPartGroups>
+        <wornGraphicPath>Things/Apparel/Vanilla/PsychicFoilHelmet</wornGraphicPath>
+        <layers>
+          <li>Overhead</li>
+        </layers>
+        <tags>
+          <li>Military</li>
+          <li>IndustrialMilitaryBasic</li>
+          <li>IndustrialMilitaryAdvanced</li>
+          <li>SpacerMilitary</li>
+        </tags>
+        <defaultOutfitTags>
+          <li>Worker</li>
+        </defaultOutfitTags>
+        <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        <parentTagDef>ApparelHead</parentTagDef>
+      </apparel>
+      <thingCategories>
+        <li>SpecialHelmetsCat</li>
+      </thingCategories>
+      <recipeMaker>
+        <researchPrerequisite>Apparel_D1</researchPrerequisite>
+      </recipeMaker>
+    </value>
+  </Operation>
+
+</Patch>
