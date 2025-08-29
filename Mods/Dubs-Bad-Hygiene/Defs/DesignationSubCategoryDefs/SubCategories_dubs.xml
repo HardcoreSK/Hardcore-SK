@@ -13,7 +13,7 @@
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
 	</ArchitectSense.DesignationSubCategoryDef>
-	
+
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Airconditon</defName>
 		<label>AC and Freezing</label>
@@ -25,14 +25,14 @@
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
 	</ArchitectSense.DesignationSubCategoryDef>
-	
+
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_CeilingFan</defName>
 		<label>Ceiling Fans</label>
 		<description>Fans.</description>
 		<defNames>
 			<li>CeilingFanS</li>
-			<li>CeilingFan</li>		
+			<li>CeilingFan</li>
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
 	</ArchitectSense.DesignationSubCategoryDef>
@@ -47,8 +47,8 @@
 			<li>RadiatorTowelRail</li>
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
-	</ArchitectSense.DesignationSubCategoryDef>	
-	
+	</ArchitectSense.DesignationSubCategoryDef>
+
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Watertanks</defName>
 		<label>Water Tanks</label>
@@ -57,7 +57,8 @@
 			<li>HotWaterTank</li>
 			<li>WaterButt</li>
 			<li>WaterTowerS</li>
-			<li>WaterTowerL</li>			
+			<li>WaterTowerL</li>
+			<li MayRequire="ludeon.rimworld.odyssey">WaterTankSmall</li>
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
 	</ArchitectSense.DesignationSubCategoryDef>
@@ -85,9 +86,11 @@
 			<li>sewagePipeStuff</li>
 			<li>airPipe</li>
 			<li>plumbingValve</li>
+			<li>sewagePipeHidden</li>
+			<li>airPipeHidden</li>
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
-	</ArchitectSense.DesignationSubCategoryDef>	
+	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_WaterWells</defName>
@@ -97,10 +100,12 @@
 			<li>PrimitiveWell</li>
 			<li>WaterWellInlet</li>
 			<li>DeepWaterWellInlet</li>
+			<li MayRequire="ludeon.rimworld.odyssey">CryogenicExtractionNode</li>
+			<li MayRequire="ludeon.rimworld.odyssey">SpacerWaterRecoverySystem</li>
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
-	</ArchitectSense.DesignationSubCategoryDef>		
-	
+	</ArchitectSense.DesignationSubCategoryDef>
+
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_HygienePumps</defName>
 		<label>Water Pumps</label>
@@ -108,10 +113,10 @@
 		<defNames>
 			<li>WindPump</li>
 			<li>ElectricPump</li>
-			<li>PumpingStation</li>			
+			<li>PumpingStation</li>
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
-	</ArchitectSense.DesignationSubCategoryDef>	
+	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Sewage</defName>
@@ -121,10 +126,11 @@
 			<li>SewageOutlet</li>
 			<li>SewageSepticTank</li>
 			<li>SewageTreatment</li>
-            <li>WaterTreatment</li>			
+			<li>WaterTreatment</li>
+			<li MayRequire="ludeon.rimworld.odyssey">SewageDumpPort</li>
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
-	</ArchitectSense.DesignationSubCategoryDef>	
+	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Pools</defName>
@@ -147,7 +153,7 @@
 			<li>DBHSaunaSeating</li>
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
-	</ArchitectSense.DesignationSubCategoryDef>	
+	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Toilets</defName>
@@ -158,10 +164,11 @@
 			<li>LitterBox</li>
 			<li>ToiletStuff</li>
 			<li>ToiletAdvStuff</li>
+			<li MayRequire="ludeon.rimworld.odyssey">ToiletSpacer</li>
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
-	</ArchitectSense.DesignationSubCategoryDef>	
-	
+	</ArchitectSense.DesignationSubCategoryDef>
+
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_HygieneMisc</defName>
 		<label>Misc</label>
@@ -176,7 +183,7 @@
 			<li>PetWaterBowl</li>
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
-	</ArchitectSense.DesignationSubCategoryDef>	
+	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Tubs</defName>
@@ -186,7 +193,7 @@
 			<li>WashBucket</li>
 			<li>Fountain</li>
 			<li>BasinStuff</li>
-            <li>BathtubStuff</li>			
+			<li>BathtubStuff</li>
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
 	</ArchitectSense.DesignationSubCategoryDef>
@@ -202,7 +209,7 @@
 			<li>BathMat</li>
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
-	</ArchitectSense.DesignationSubCategoryDef>	
+	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_DBHfloors</defName>
@@ -217,9 +224,6 @@
 			<li>DBHMosaicMarble</li>
 		</defNames>
 		<designationCategory>Floors</designationCategory>
-	</ArchitectSense.DesignationSubCategoryDef>		
+	</ArchitectSense.DesignationSubCategoryDef>
 
 </Defs>
-
-
-
