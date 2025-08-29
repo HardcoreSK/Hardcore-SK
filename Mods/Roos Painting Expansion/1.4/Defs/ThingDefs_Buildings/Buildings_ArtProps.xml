@@ -79,7 +79,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 	<!-- Paintings -->
-	<ThingDef ParentName="SK_BuildingBase" Name="PaintingBase" Abstract="True">
+	<ThingDef ParentName="BuildingBase" Name="PaintingBase" Abstract="True">
 		<thingClass>Building_Art</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -535,7 +535,7 @@
     </researchPrerequisites>
 	</ThingDef>-->
 		<!-- Gallery Barrier -->
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>RBPGalleryBarrier</defName>
 		<label>gallery barrier</label>
 		<description>A fence comprised of bollards connected by a fancy rope.</description>
