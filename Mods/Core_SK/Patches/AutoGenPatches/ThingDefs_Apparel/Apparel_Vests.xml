@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Apparel_FlakVest"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.ArmorIndustrialBaseDummy</value>
+  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Apparel_FlakVest"]</xpath>
     <value>
@@ -73,6 +79,8 @@
       <generateAllowChance>0.8</generateAllowChance>
       <recipeMaker>
         <researchPrerequisite>Armor_C1</researchPrerequisite>
+        <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+        <displayPriority>220</displayPriority>
       </recipeMaker>
     </value>
   </Operation>

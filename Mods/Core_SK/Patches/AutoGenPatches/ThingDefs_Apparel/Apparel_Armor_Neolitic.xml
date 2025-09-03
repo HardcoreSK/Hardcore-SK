@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Apparel_TribalA"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.ApparelNeoliticBaseDummy</value>
+  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Apparel_TribalA"]</xpath>
     <value>
       <label>Tribal Wear</label>
-      <description>A garment crafted without machines using neolithic tools.</description>
       <stuffCategories>
         <li>Leathery</li>
       </stuffCategories>
@@ -59,22 +64,6 @@
           <li>Tribal</li>
         </ideoDesireAllowedFactionCategoryTags>
       </apparel>
-      <colorGenerator Class="ColorGenerator_Options">
-        <options>
-          <li>
-            <weight>10</weight>
-            <only>(0.4,0.3,0.15,1)</only>
-          </li>
-          <li>
-            <weight>15</weight>
-            <only>(0.6,0.45,0.18,1)</only>
-          </li>
-          <li>
-            <weight>20</weight>
-            <only>(0.8,0.6,0.23,1)</only>
-          </li>
-        </options>
-      </colorGenerator>
       <thingCategories>
         <li>UrbanPantsCat</li>
       </thingCategories>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
+<!-- DefOverwrite
 	<ThingDef ParentName="ArmorSpacerBase">
 		<defName>Apparel_PowerArmor</defName>
 		<label>Power Armor</label>
@@ -100,7 +100,7 @@
 			<researchPrerequisite>ReconArmor</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="ArmorSpacerSimpleBase">
 		<defName>Apparel_PhaseArmor</defName>
 		<label>Phase Armor</label>
@@ -215,7 +215,7 @@
 			<researchPrerequisite>ReconArmor</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef Name="ApparelArmorReconBase" ParentName="ArmorSpacerBase" Abstract="True">
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/ReconArmor/ReconArmor</texPath>
@@ -320,7 +320,7 @@
 			<researchPrerequisite>Armor_D1</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="ApparelArmorReconBase">
 		<defName>Apparel_ArmorRecon</defName>
 		<label>recon armor</label>
@@ -347,7 +347,7 @@
 			<GermContainment>0.04</GermContainment>
 		</equippedStatOffsets>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="ArmorSpacerSimpleBase">
 		<defName>Apparello_HA</defName>
 		<label>Hive Armor</label>

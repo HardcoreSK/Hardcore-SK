@@ -326,7 +326,7 @@
 		</recipeMaker>
 	</ThingDef>
 
-
+<!-- DefOverwrite
 	<ThingDef ParentName="ApparelNeoliticBase">
 		<defName>Apparel_WarVeil</defName>
 		<label>Chitin Head Garment</label>
@@ -415,8 +415,8 @@
 			<researchPrerequisite>Apparel_A2</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
-
+-->
+<!-- DefOverwrite
 	<ThingDef ParentName="ApparelNeoliticSimpleBase">
 		<defName>Apparel_TribalHeaddress</defName>
 		<label>Feathered Headdress</label>
@@ -462,7 +462,7 @@
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
-			<!-- <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace> -->
+			<hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
@@ -494,7 +494,7 @@
 			<researchPrerequisite>Apparel_A1</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
+-->
 
 	<ThingDef ParentName="ArmorNeoliticBase">
 		<defName>Apparello_ohlala</defName>

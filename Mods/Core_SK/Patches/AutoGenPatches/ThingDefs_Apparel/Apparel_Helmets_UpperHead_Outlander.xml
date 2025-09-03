@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Apparel_Tuque"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.ApparelIndustrialSimpleBaseDummy</value>
+  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Apparel_Tuque"]</xpath>
     <value>
@@ -66,7 +72,7 @@
           <li>Soldier</li>
         </defaultOutfitTags>
         <parentTagDef>ApparelHead</parentTagDef>
-      </apparel>
+      </apparel><!-- Vanilla has more colour options
       <colorGenerator Class="ColorGenerator_Options">
         <options>
           <li>
@@ -74,15 +80,22 @@
             <only>(1,1,1,1)</only>
           </li>
         </options>
-      </colorGenerator>
+      </colorGenerator>-->
       <thingCategories>
         <li>MilitaryHeaddressCat</li>
         <li>SetBandit</li>
       </thingCategories>
       <recipeMaker>
         <researchPrerequisite>Apparel_C2</researchPrerequisite>
+        <displayPriority>105</displayPriority>
       </recipeMaker>
     </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Apparel_CowboyHat"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.ApparelIndustrialBaseDummy</value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
@@ -123,6 +136,7 @@
       <equippedStatOffsets>
         <MoveSpeed>-0.02</MoveSpeed>
         <SocialImpact>0.15</SocialImpact>
+        <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
         <GlobalLearningFactor>0.02</GlobalLearningFactor>
         <NegotiationAbility>0.1</NegotiationAbility>
         <TradePriceImprovement>0.1</TradePriceImprovement>
@@ -145,12 +159,13 @@
         <tags>
           <li>Outlander</li>
           <li>EmpireLight</li>
+		  <li>Western</li>
         </tags>
         <defaultOutfitTags>
           <li>Worker</li>
         </defaultOutfitTags>
         <parentTagDef>ApparelHead</parentTagDef>
-      </apparel>
+      </apparel><!-- Vanilla has more colour options
       <colorGenerator Class="ColorGenerator_Options">
         <options>
           <li>
@@ -158,15 +173,22 @@
             <only>(1,1,1,1)</only>
           </li>
         </options>
-      </colorGenerator>
+      </colorGenerator>-->
       <thingCategories>
         <li>HeaddressCat</li>
         <li>SetBandit</li>
       </thingCategories>
       <recipeMaker>
         <researchPrerequisite>Fabrication</researchPrerequisite>
+        <displayPriority>100</displayPriority>
       </recipeMaker>
     </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Apparel_BowlerHat"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.ApparelIndustrialSimpleBaseDummy</value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">

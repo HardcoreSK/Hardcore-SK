@@ -68,24 +68,6 @@
         </wornGraphicData>
         <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
       </apparel>
-      <verbs>
-        <li>
-          <verbClass>Verb_CastTargetEffectLances</verbClass>
-          <label>psychic shock lance</label>
-          <hasStandardCommand>true</hasStandardCommand>
-          <targetable>true</targetable>
-          <onlyManualCast>True</onlyManualCast>
-          <range>41.9</range>
-          <warmupTime>1.8</warmupTime>
-          <invalidTargetPawn>psychic shock immune</invalidTargetPawn>
-          <targetParams>
-            <canTargetBuildings>false</canTargetBuildings>
-            <neverTargetIncapacitated>true</neverTargetIncapacitated>
-          </targetParams>
-          <soundCast>PsychicShockLanceCast</soundCast>
-          <soundAiming>PsychicArtifactWarmupSustained</soundAiming>
-        </li>
-      </verbs>
     </value>
   </Operation>
 
@@ -156,24 +138,6 @@
         </wornGraphicData>
         <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
       </apparel>
-      <verbs>
-        <li>
-          <verbClass>Verb_CastTargetEffectLances</verbClass>
-          <label>psychic insanity lance</label>
-          <hasStandardCommand>true</hasStandardCommand>
-          <targetable>true</targetable>
-          <onlyManualCast>True</onlyManualCast>
-          <range>41.9</range>
-          <warmupTime>1.8</warmupTime>
-          <invalidTargetPawn>psychic insanity immune</invalidTargetPawn>
-          <targetParams>
-            <canTargetBuildings>false</canTargetBuildings>
-            <neverTargetIncapacitated>true</neverTargetIncapacitated>
-          </targetParams>
-          <soundCast>PsychicInsanityLanceCast</soundCast>
-          <soundAiming>PsychicArtifactWarmupSustained</soundAiming>
-        </li>
-      </verbs>
     </value>
   </Operation>
 

@@ -2,6 +2,41 @@
 <Patch>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorHelmetPowerBase"]</xpath>
+    <value>
+		<equippedStatOffsets Merge="true">
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
+			<Suppressability>-0.09</Suppressability>
+			<ArmorRating_Toxin>0.2</ArmorRating_Toxin>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+			<SmokeSensitivity>-1</SmokeSensitivity>
+			<Radiation>-0.25</Radiation>
+			<GermResistance>0.70</GermResistance>
+			<GermContainment>0.80</GermContainment>
+		</equippedStatOffsets>
+		<apparel Merge="true">
+			<tags>
+				<li>SpacerMilitary</li>
+				<li>AsariPowerArmor</li>
+				<li>SyndicateMedium</li>
+				<li>OrionMedium</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>HeavyHelmetsCat</li>
+			<li>Setpowerarmor</li>
+		</thingCategories>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.ArmorSpacerBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]</xpath>
     <value>
       <label>Power Armor Helmet</label>
@@ -85,15 +120,48 @@
         <li>RewardStandardHighFreq</li>
       </thingSetMakerTags>
       <comps>
-		</comps>
+        <li Class="CompProperties_Biocodable"/>
+      </comps>
       <thingCategories>
         <li>HeavyHelmetsCat</li>
         <li>Setpowerarmor</li>
       </thingCategories>
-      <recipeMaker>
+      <recipeMaker Merge="true">
         <researchPrerequisite>PoweredArmor</researchPrerequisite>
       </recipeMaker>
     </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorHelmetReconBase"]</xpath>
+    <value>
+		<equippedStatOffsets Merge="true">
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.65</VacuumResistance>
+			<Suppressability>-0.06</Suppressability>
+			<ArmorRating_Toxin>0.2</ArmorRating_Toxin>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+			<SmokeSensitivity>-1</SmokeSensitivity>
+			<Radiation>-0.30</Radiation>
+			<GermResistance>0.70</GermResistance>
+			<GermContainment>0.80</GermContainment>
+		</equippedStatOffsets>
+		<apparel Merge="true">
+			<tags>
+				<li>SpacerMilitary</li>
+				<li>OrassanTacticalCommander</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>LightHelmetsCat</li>
+		</thingCategories>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Apparel_ArmorHelmetRecon"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.ArmorSpacerBaseDummy</value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
@@ -166,6 +234,11 @@
           <li>SpacerMilitary</li>
           <li>OrassanTacticalCommander</li>
         </tags>
+        <forceEyesVisibleForRotations>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </forceEyesVisibleForRotations>
         <defaultOutfitTags>
           <li>Worker</li>
           <li>Soldier</li>
@@ -202,7 +275,7 @@
       <thingCategories>
         <li>LightHelmetsCat</li>
       </thingCategories>
-      <recipeMaker>
+      <recipeMaker Merge="true">
         <researchPrerequisite>Armor_D1</researchPrerequisite>
       </recipeMaker>
     </value>

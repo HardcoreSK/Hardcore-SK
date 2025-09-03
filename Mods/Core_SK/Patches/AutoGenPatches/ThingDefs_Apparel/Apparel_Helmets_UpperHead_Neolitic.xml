@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Apparel_WarVeil"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.ApparelNeoliticBaseDummy</value>
+  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Apparel_WarVeil"]</xpath>
     <value>
@@ -48,7 +54,7 @@
         <GermContainment>0.01</GermContainment>
         <PainShockThreshold>0.05</PainShockThreshold>
         <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
-        <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.35</ToxicEnvironmentResistance>
+        <ToxicEnvironmentResistance>0.35</ToxicEnvironmentResistance>
       </equippedStatOffsets>
       <generateCommonality>1</generateCommonality>
       <apparel>
@@ -73,6 +79,11 @@
           <li>Soldier</li>
         </defaultOutfitTags>
         <parentTagDef>ApparelHead</parentTagDef>
+        <forceEyesVisibleForRotations>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </forceEyesVisibleForRotations>
       </apparel>
       <colorGenerator Class="ColorGenerator_Options">
         <options>
@@ -88,8 +99,15 @@
       </thingCategories>
       <recipeMaker>
         <researchPrerequisite>Apparel_A2</researchPrerequisite>
+        <displayPriority>160</displayPriority>
       </recipeMaker>
     </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Apparel_TribalHeaddress"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.ApparelNeoliticSimpleBaseDummy</value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
@@ -133,6 +151,7 @@
         <TameAnimalChance>0.07</TameAnimalChance>
         <GermResistance>0.01</GermResistance>
         <GermContainment>0.01</GermContainment>
+        <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
       </equippedStatOffsets>
       <generateCommonality>1.5</generateCommonality>
       <apparel>
@@ -142,6 +161,9 @@
           <li>UpperHead</li>
         </bodyPartGroups>
         <wornGraphicPath>Things/Apparel/Tribalhats/Tribal</wornGraphicPath>
+        <ideoDesireAllowedFactionCategoryTags>
+          <li>Tribal</li>
+        </ideoDesireAllowedFactionCategoryTags>
         <layers>
           <li>Overhead</li>
         </layers>

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Apparel_SimpleHelmet"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.ArmorIndustrialBaseDummy</value>
+  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Apparel_SimpleHelmet"]</xpath>
     <value>
@@ -66,8 +72,15 @@
       </thingCategories>
       <recipeMaker>
         <researchPrerequisite>Armor_C1</researchPrerequisite>
+		<displayPriority>200</displayPriority>
       </recipeMaker>
     </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Apparel_AdvancedHelmet"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.ArmorIndustrialBaseDummy</value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
@@ -136,6 +149,8 @@
       </thingCategories>
       <recipeMaker>
         <researchPrerequisite>FlakArmor</researchPrerequisite>
+        <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+        <displayPriority>205</displayPriority>
       </recipeMaker>
     </value>
   </Operation>

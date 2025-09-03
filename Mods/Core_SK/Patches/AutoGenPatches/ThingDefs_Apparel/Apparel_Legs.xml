@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Apparel_Pants"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.ApparelIndustrialBaseDummy</value>
+  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Apparel_Pants"]</xpath>
     <value>
@@ -63,13 +69,21 @@
           <li>Soldier</li>
         </defaultOutfitTags>
       </apparel>
+	  <colorGenerator Class="ColorGenerator_StandardApparel" />
       <thingCategories>
         <li>UrbanPantsCat</li>
       </thingCategories>
       <recipeMaker>
         <researchPrerequisite>Fabrication</researchPrerequisite>
+        <displayPriority>265</displayPriority>
       </recipeMaker>
     </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Apparel_FlakPants"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.ApparelIndustrialBaseDummy</value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">

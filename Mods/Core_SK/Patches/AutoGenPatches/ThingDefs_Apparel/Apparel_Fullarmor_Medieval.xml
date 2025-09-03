@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Apparel_Cape"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.ApparelMedievalBaseDummy</value>
+  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Apparel_Cape"]</xpath>
     <value>
@@ -30,22 +36,7 @@
         <GermContainment>0.03</GermContainment>
       </equippedStatOffsets>
       <generateCommonality>2.4</generateCommonality>
-      <apparel>
-        <bodyPartGroups>
-          <li>Torso</li>
-          <li>Neck</li>
-          <li>Shoulders</li>
-          <li>Arms</li>
-          <li>Legs</li>
-        </bodyPartGroups>
-        <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Cape/Cape</wornGraphicPath>
-        <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
-        <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
-        <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
-        <shellRenderedBehindHead>true</shellRenderedBehindHead>
-        <layers>
-          <li>Shell</li>
-        </layers>
+      <apparel Merge="true">
         <tags>
           <li>NorbalKingly</li>
           <li>NorbalSage</li>
@@ -92,6 +83,12 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Apparel_Robe"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.ApparelMedievalBaseDummy</value>
+  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Apparel_Robe"]</xpath>
     <value>
@@ -119,18 +116,7 @@
         <GermContainment>0.03</GermContainment>
       </equippedStatOffsets>
       <generateCommonality>2</generateCommonality>
-      <apparel>
-        <bodyPartGroups>
-          <li>Torso</li>
-          <li>Neck</li>
-          <li>Shoulders</li>
-          <li>Arms</li>
-          <li>Legs</li>
-        </bodyPartGroups>
-        <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Robe/Robe</wornGraphicPath>
-        <layers>
-          <li>Shell</li>
-        </layers>
+      <apparel Merge="true">
         <tags>
           <li>Outlander</li>
           <li>BanditsLight</li>
@@ -141,26 +127,27 @@
           <li>PredatorsMedium</li>
           <li>Robe</li>
         </tags>
-        <defaultOutfitTags>
-          <li>Worker</li>
-        </defaultOutfitTags>
-        <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
-        <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
       </apparel>
       <thingCategories>
         <li>ApparelNoble</li>
         <li>SetNoble</li>
       </thingCategories>
-      <recipeMaker>
+      <recipeMaker Merge="true">
         <researchPrerequisite>Apparel_B1</researchPrerequisite>
       </recipeMaker>
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Apparel_PlateArmor"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.ArmorMedievalBaseDummy</value>
+  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Apparel_PlateArmor"]</xpath>
     <value>
-      <label>Plate armor</label>
+      <label>Plate Armor</label>
       <stuffCategories>
         <li>StrongMetallic</li>
       </stuffCategories>
@@ -200,25 +187,14 @@
         <li>HeavyFullArmorCat</li>
         <li>SetMedieval</li>
       </thingCategories>
-      <apparel>
-        <bodyPartGroups>
-          <li>Torso</li>
-          <li>Neck</li>
-          <li>Shoulders</li>
-          <li>Arms</li>
-          <li>Legs</li>
-        </bodyPartGroups>
-        <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PlateArmor/PlateArmor</wornGraphicPath>
-        <layers>
+      <apparel Merge="true">
+        <layers DeepReplace="true">
           <li>Shell</li>
         </layers>
         <tags>
           <li>MedievalMilitary</li>
           <li>Medieval</li>
         </tags>
-        <defaultOutfitTags>
-          <li>Soldier</li>
-        </defaultOutfitTags>
         <useDeflectMetalEffect>true</useDeflectMetalEffect>
       </apparel>
       <recipeMaker>

@@ -49,7 +49,7 @@ You can do this for other things like such as checking for the power comp and sw
 			<operations>
 			
 				<li Class="PatchOperationAttributeSet">
-					<xpath>Defs/ThingDef[@ParentName="ApparelMakeableBase" and thingCategories/li[text()="ApparelMisc" and not apparel/tags/li[text()="IndustrialAdvanced"] and apparel/tags/li[text()="MedievalMilitary"] or apparel/tags/li[text()="IndustrialBasic"]]</xpath>
+					<xpath>Defs/ThingDef[@ParentName="ApparelMakeableBase" and thingCategories/li[text()="ApparelMisc" and not apparel/tags/li[text()="IndustrialAdvanced"] and apparel/tags/li[text()="MedievalMilitary"] or apparel/tags/li[text()="IndustrialBasic"]]]</xpath>
 					<attribute>ParentName</attribute>
 					<value>SK.ApparelMedievalBaseDummy</value>
 				</li>
@@ -85,7 +85,7 @@ You can do this for other things like such as checking for the power comp and sw
 			<operations>
 			
 				<li Class="PatchOperationAttributeSet">
-					<xpath>Defs/ThingDef[@ParentName="ApparelMakeableBase" and thingCategories/li[text()="ApparelMisc" and apparel/tags/li[text()="IndustrialAdvanced"]]</xpath>
+					<xpath>Defs/ThingDef[@ParentName="ApparelMakeableBase" and thingCategories/li[text()="ApparelMisc" and apparel/tags/li[text()="IndustrialAdvanced"]]]</xpath>
 					<attribute>ParentName</attribute>
 					<value>SK.ApparelIndustrialBaseDummy</value>
 				</li>
@@ -107,6 +107,112 @@ You can do this for other things like such as checking for the power comp and sw
 						<thingCategories>
 							<li>UpperOverdressCat</li>
 							<li>SetBandit</li>
+						</thingCategories>
+					</value>
+				</li>
+			
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[@ParentName="ArmorSmithableBase" and thingCategories/li[text()="ApparelArmor"] and apparel/tags/li[text()="MedievalMilitary"]]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAttributeSet">
+					<xpath>Defs/ThingDef[@ParentName="ArmorSmithableBase" and thingCategories/li[text()="ApparelArmor" and apparel/tags/li[text()="MedievalMilitary"]]]</xpath>
+					<attribute>ParentName</attribute>
+					<value>SK.ArmorMedievalBaseDummy</value>
+				</li>
+			
+				<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/ThingDef[@ParentName="ArmorSmithableBase" and thingCategories/li[text()="ApparelArmor" and apparel/tags/li[text()="MedievalMilitary"]]]</xpath>
+					<value>
+						<apparel Merge="true">
+							<tags>
+								<li>Medieval</li>
+							</tags>
+						</apparel>
+						<thingCategories>
+							<li>HeavyFullArmorCat</li>
+							<li>SetMedieval</li>
+						</thingCategories>
+					</value>
+				</li>
+			
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[@ParentName="HatMakeableBase" and recipeMaker/factionPrerequisiteTags/li[text()="Tribal"] and apparel/ideoDesireAllowedFactionCategoryTags/li[text()="Tribal"]]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAttributeSet">
+					<xpath>Defs/ThingDef[@ParentName="HatMakeableBase" and recipeMaker/factionPrerequisiteTags/li[text()="Tribal"] and apparel/ideoDesireAllowedFactionCategoryTags/li[text()="Tribal"]]</xpath>
+					<attribute>ParentName</attribute>
+					<value>SK.ArmorMedievalBaseDummy</value>
+				</li>
+			
+				<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/ThingDef[@ParentName="HatMakeableBase" and recipeMaker/factionPrerequisiteTags/li[text()="Tribal"] and apparel/ideoDesireAllowedFactionCategoryTags/li[text()="Tribal"]]</xpath>
+					<value>
+						<apparel Merge="true">
+							<countsAsClothingForNudity>false</countsAsClothingForNudity>
+							<tags>
+							  <li>Animal</li>
+							  <li>Tribal</li>
+							  <li>PredatorsLight</li>
+							  <li>PredatorsMedium</li>
+							  <li>PredatorsScout</li>
+							</tags>
+						</apparel>
+						<thingCategories>
+							<li>AnimalHeaddressCat</li>
+							<li>SetBandit</li>
+						</thingCategories>
+					</value>
+				</li>
+			
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[@ParentName="ArmorMachineableBase" and thingCategories/li[text()="ApparelArmor"] and apparel/tags/li[text()="IndustrialMilitaryBasic"]]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAttributeSet">
+					<xpath>Defs/ThingDef[@ParentName="ArmorMachineableBase" and thingCategories/li[text()="ApparelArmor" and apparel/tags/li[text()="IndustrialMilitaryBasic"]]]</xpath>
+					<attribute>ParentName</attribute>
+					<value>SK.ArmorMedievalBaseDummy</value>
+				</li>
+			
+				<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/ThingDef[@ParentName="ArmorMachineableBase" and thingCategories/li[text()="ApparelArmor" and apparel/tags/li[text()="IndustrialMilitaryBasic"]]]</xpath>
+					<value>
+						<apparel Merge="true">
+							<tags>
+								<li>IndustrialMilitaryBasic</li>
+								<li>IndustrialMilitaryAdvanced</li>
+								<li>Outlander</li>
+								<li>RenegadesMedium</li>
+								<li>PredatorsMedium</li>
+								<li>EmpireMedium</li>
+								<li>SectarianMedium</li>
+							</tags>
+						</apparel>
+					</value>
+				</li>
+			
+				<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/ThingDef[@ParentName="ArmorMachineableBase" and thingCategories/li[text()="ApparelArmor" and apparel/tags/li[text()="IndustrialMilitaryBasic"]] and not apparel/bodyPartGroups/li[1]and and apparel/bodyPartGroups/li[text()="Legs"]]</xpath>
+					<value>
+						<thingCategories>
+							<li>MilitaryPantsCat</li>
 						</thingCategories>
 					</value>
 				</li>

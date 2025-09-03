@@ -174,7 +174,7 @@
 			<researchPrerequisite>Apparel_B3</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="ApparelMedievalBase" MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
 		<defName>Apparel_Cape</defName>
 		<label>cape</label>
@@ -276,7 +276,7 @@
 			<displayPriority>235</displayPriority>
 		</recipeMaker>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>Apparel_FSFurCoat</defName>
 		<label>Long coat</label>
@@ -359,7 +359,7 @@
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>Apparel_Robe</defName>
 		<label>robe</label>
@@ -433,7 +433,7 @@
 			<researchPrerequisite>Apparel_B1</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>Apparel_FSDesertRobe</defName>
 		<label>Desert robe</label>
@@ -897,7 +897,7 @@
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="ArmorMedievalBase">
 		<defName>Apparel_PlateArmor</defName>
 		<label>Plate armor</label>
@@ -987,5 +987,5 @@
 			<researchPrerequisite>Armor_B2</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
+-->
 </Defs>

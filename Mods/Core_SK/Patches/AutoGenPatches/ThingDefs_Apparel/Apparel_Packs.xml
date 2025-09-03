@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Apparel_SmokepopBelt"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.ApparelShieldBaseDummy</value>
+  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Apparel_SmokepopBelt"]</xpath>
     <value>
@@ -54,6 +60,7 @@
         </recipeUsers>
         <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
         <researchPrerequisite>SmokepopBelt</researchPrerequisite>
+        <displayPriority>310</displayPriority>
       </recipeMaker>
       <generateAllowChance>0.3</generateAllowChance>
       <thingCategories>
@@ -61,6 +68,12 @@
         <li>ApparelUtility</li>
       </thingCategories>
     </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Apparel_FirefoampopPack"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.ApparelNoQualityShieldBaseDummy</value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">

@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Apparel_WarMask"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.ApparelNeoliticBaseDummy</value>
+  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Apparel_WarMask"]</xpath>
     <value>
-      <label>War mask</label>
+      <label>War Mask</label>
       <description>A partial mask crafted out of a human's skull. There is something very unsettling about it.</description>
       <graphicData>
         <texPath>Things/Apparel/Apparello/Hats/Animalhats/Skull</texPath>
@@ -29,7 +35,7 @@
         <ArmorRating_Blunt>0</ArmorRating_Blunt>
         <ArmorRating_Heat>0</ArmorRating_Heat>
       </statBases>
-      <equippedStatOffsets>
+      <equippedStatOffsets Merge="true">
         <MoveSpeed>-0.03</MoveSpeed>
         <WorkSpeedGlobal>-0.02</WorkSpeedGlobal>
         <SocialImpact>-0.4</SocialImpact>

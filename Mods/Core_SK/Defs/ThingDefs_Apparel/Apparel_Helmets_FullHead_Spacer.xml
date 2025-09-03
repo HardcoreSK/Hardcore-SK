@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="ArmorSpacerBase">
 		<defName>Apparel_PowerArmorHelmet</defName>
 		<label>Power Armor Helmet</label>
@@ -85,7 +85,7 @@
 			<li>RewardStandardHighFreq</li>
 		</thingSetMakerTags>
 		<comps>
-			<!-- <li Class="CompProperties_BiocodableApparel"/> -->
+			<li Class="CompProperties_BiocodableApparel"/>
 		</comps>
 		<thingCategories>
 			<li>HeavyHelmetsCat</li>
@@ -95,7 +95,7 @@
 			<researchPrerequisite>PoweredArmor</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="ArmorSpacerSimpleBase">
 		<defName>SiegearmorHelmet</defName>
 		<label>Siege Armor Helmet</label>
