@@ -1,4 +1,36 @@
 Changelog:
+3.1.2
+- Apply lock component on Ancient Blast Door
+- Mod will try to recreate Locks Component if somehow component wasn't created
+3.1.1
+- Fix for faction mutants
+3.1.0
+- Add gizmo for hard reset door locks
+- Changed how Locks data are stored, which should preserve door settings for gravships
+- Vac Barrier should respect doors now
+3.0.4
+- Fix for prisoners of player faction match guest status
+3.0.3
+- Added French translation (Erazil)
+- Child lock is disabled by default (will work on new doors, existing settings should not be affected)
+- Hospitality guest should use doors with allied mode correctly
+3.0.2
+- Fix for unlocked door and mechs
+- Fix for edit button not clickable when copy is clicked
+- Fix wildman not respecting locks
+- Fix Allies not using allied mode doors
+- Added more protection against null references
+- Fix incorrect labels on paste settings
+3.0.1
+- Fixes for references in clipboard
+- Fixes for changing description on door
+3.0.0
+- Update for Rimworld 1.6, new feature only available for Rimworld 1.6+
+- Doors that should be considered as fence gate can be added to new def `Locks.FenceDoorsDef`
+- Added copy/paste gizmos for doors
+- New ui for locks setting
+- New option for mechs
+- New gizmo on doors that allow to debug all lock option
 2.9.3
 - Save Our Ship 2 fix (https://github.com/ThisIsSP4RTAN)
 2.9.2
