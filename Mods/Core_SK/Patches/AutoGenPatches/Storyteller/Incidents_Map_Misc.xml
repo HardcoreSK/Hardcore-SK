@@ -74,6 +74,12 @@
     </value>
   </Operation>
 
+  <!-- Placeholder since they are identical-->
+  <!-- <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/IncidentDef[defName="ThrumboPasses"]</xpath>
+    <value/>
+  </Operation> -->
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/IncidentDef[defName="RansomDemand"]</xpath>
     <value>

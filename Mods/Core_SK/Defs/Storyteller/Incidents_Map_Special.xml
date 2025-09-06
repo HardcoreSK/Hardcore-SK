@@ -3,7 +3,7 @@
 
 	<!--=============== ShipChunkDrop =============-->
 
-	<IncidentDef>
+<!-- 	<IncidentDef>
 		<defName>ShipChunkDrop</defName>
 		<label>ship chunk drop</label>
 		<targetTags>
@@ -12,7 +12,7 @@
 		<workerClass>IncidentWorker_ShipChunkDrop</workerClass>
 		<category>ShipChunkDrop</category>
 		<baseChance>3</baseChance>
-	</IncidentDef>
+	</IncidentDef> -->
 
 	<!--=============== OrbitalVisitor =============-->
 <!-- DefOverwrite
@@ -55,7 +55,7 @@
 		<requireColonistsPresent>True</requireColonistsPresent>
 	</IncidentDef>	
 -->
-	<IncidentDef>
+<!-- 	<IncidentDef>
 		<defName>VisitorGroup</defName>
 		<label>visitor group</label>
 		<targetTags>
@@ -66,9 +66,9 @@
 		<baseChance>4</baseChance>
 		<pointsScaleable>true</pointsScaleable>
 		<requireColonistsPresent>True</requireColonistsPresent>
-	</IncidentDef>
+	</IncidentDef> -->
 
-	<IncidentDef>
+<!-- 	<IncidentDef>
 		<defName>TravelerGroup</defName>
 		<label>traveler group</label>
 		<targetTags>
@@ -79,11 +79,11 @@
 		<baseChance>4</baseChance>
 		<pointsScaleable>true</pointsScaleable>
 		<requireColonistsPresent>True</requireColonistsPresent>
-	</IncidentDef>
+	</IncidentDef> -->
 
 	<!--================= AllyAssistance ================-->
 
-	<IncidentDef>
+<!-- 	<IncidentDef>
 		<defName>RaidFriendly</defName>
 		<label>friendly raid</label>
 		<category>AllyAssistance</category>
@@ -95,7 +95,7 @@
 		<workerClass>IncidentWorker_RaidFriendly</workerClass>
 		<baseChance>3.0</baseChance>
 		<pointsScaleable>true</pointsScaleable>
-	</IncidentDef>
+	</IncidentDef> -->
 
 	<!-- =========================== Good - special ============================-->
 <!-- DefOverwrite

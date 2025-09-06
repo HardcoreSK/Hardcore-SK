@@ -135,7 +135,7 @@
 		<raidLootValueFactor>0</raidLootValueFactor>
 	</RaidStrategyDef>
 
-	<RaidStrategyDef ParentName="SiegeBase">
+	<!-- <RaidStrategyDef ParentName="SiegeBase">
 		<defName>Siege</defName>
 		<workerClass>RaidStrategyWorker_Siege</workerClass>
 		<minPawns>4</minPawns>
@@ -155,8 +155,9 @@
 		<arrivalTextEnemy>It looks like they want to besiege the colony and pound you with mortars from a distance. You can try to wait them out - or go get them.</arrivalTextEnemy>
 		<letterLabelFriendly>Friendlies</letterLabelFriendly>
 		<arrivalTextFriendly>It looks like they want to use siege tactics to help you.</arrivalTextFriendly>
-	</RaidStrategyDef>
+	</RaidStrategyDef> -->
 
+	<!-- Nothing uses it currently-->
 	<RaidStrategyDef>
 		<defName>SiegeMechanoid</defName>
 		<workerClass>RaidStrategyWorker_SiegeMechanoid</workerClass>

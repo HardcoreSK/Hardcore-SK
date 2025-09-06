@@ -2,6 +2,24 @@
 <Patch>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RaidStrategyDef[defName="Siege"]</xpath>
+    <value>
+      <selectionWeightPerPointsCurve>
+        <points>
+          <li>(300,  0.00)</li>
+          <li>(800,  1.50)</li>
+          <li>(1500, 2.25)</li>
+          <li>(3000, 3.00)</li>
+        </points>
+      </selectionWeightPerPointsCurve>
+      <letterLabelEnemy>Siege</letterLabelEnemy>
+      <arrivalTextEnemy>It looks like they want to besiege the colony and pound you with mortars from a distance. You can try to wait them out - or go get them.</arrivalTextEnemy>
+      <letterLabelFriendly>Friendlies</letterLabelFriendly>
+      <arrivalTextFriendly>It looks like they want to use siege tactics to help you.</arrivalTextFriendly>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/RaidStrategyDef[defName="ImmediateAttack"]</xpath>
     <value>
       <selectionWeightPerPointsCurve>
@@ -35,7 +53,7 @@
           <li>8000, 0.85</li>
           <li>15000, 0.8</li>
         </points>
-      </pointsFactorCurve><!-- Gonna try with CenterDrop included
+      </pointsFactorCurve> <!-- Gonna try with CenterDrop included
       <arriveModes>
         <li>EdgeDrop</li>
         <li>EdgeWalkIn</li>
@@ -88,9 +106,9 @@
   </Operation>
 
   <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/RaidStrategyDef[defName="Siege"]</xpath>
-	  <attribute>ParentName</attribute>
-	  <value>SK.SiegeBaseDummy</value>
+    <xpath>Defs/RaidStrategyDef[defName="Siege"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.SiegeBaseDummy</value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
