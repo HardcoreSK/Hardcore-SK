@@ -80,6 +80,7 @@
 			<MarketValue>0.66</MarketValue>
 		</statBases>
 		<ammoClass>IncendiaryAP</ammoClass>
+		<generateAllowChance>0.65</generateAllowChance> <!-- Make advanced ammo types less common. -->
 		<cookOffProjectile>Bullet_50BMG_Incendiary</cookOffProjectile>
 	</ThingDef>
 
@@ -94,6 +95,7 @@
 			<MarketValue>0.89</MarketValue>
 		</statBases>
 		<ammoClass>ExplosiveAP</ammoClass>
+		<generateAllowChance>0.65</generateAllowChance> <!-- Make advanced ammo types less common. -->
 		<cookOffProjectile>Bullet_50BMG_HE</cookOffProjectile>
 	</ThingDef>
 
@@ -109,6 +111,7 @@
 			<Mass>0.099</Mass>
 		</statBases>
 		<ammoClass>Sabot</ammoClass>
+		<generateAllowChance>0.65</generateAllowChance> <!-- Make advanced ammo types less common. -->
 		<cookOffProjectile>Bullet_50BMG_Sabot</cookOffProjectile>
 	</ThingDef>
 
