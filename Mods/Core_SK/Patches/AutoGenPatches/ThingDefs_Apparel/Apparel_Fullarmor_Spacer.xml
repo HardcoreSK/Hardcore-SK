@@ -273,6 +273,11 @@
     </value>
   </Operation>
 
+  <!-- It already inherit one from ArmorSpacerSimpleBase-->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorReconBase"]/comps/li[@Class="CompProperties_Biocodable"]</xpath>
+  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Apparel_ArmorRecon"]</xpath>
     <value>
