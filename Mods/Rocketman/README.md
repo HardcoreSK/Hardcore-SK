@@ -1,8 +1,16 @@
 # <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2479389928&searchtext=">RimWorld-RocketMan</a>
 
-[![Build](https://github.com/kbatbouta/RimWorld-RocketMan/actions/workflows/main.yml/badge.svg)](https://github.com/kbatbouta/RimWorld-RocketMan/actions/workflows/main.yml) ![Version](https://img.shields.io/badge/Rimworld-1.2-brightgreen.svg)
+[![Build](https://github.com/kbatbouta/RimWorld-RocketMan/actions/workflows/main.yml/badge.svg)](https://github.com/kbatbouta/RimWorld-RocketMan/actions/workflows/main.yml) ![Version](https://img.shields.io/badge/Rimworld-1.6-brightgreen.svg)
 
 ![Alt text](https://github.com/kbatbouta/RimWorld-RocketMan/blob/master/Textures/RocketMan/UI/rocketman_main.png?raw=true)
+
+
+## DISCLAIMER: 
+TL;DR 1.6 introduced VTR which virtually makes the Soyuz Time dilation irrelevant. I've updated references to Soyuz to use the new VTR methods but I'm planning on stripping that out eventually. Whenever I have time I'll see if there's any salvageable code or ideas that isn't in native 1.6 and reimplement those in the least invasive way possible. 
+
+Gagarin and Cosmodrome, for the most part still work. I fixed and rewrote parts of Gagarin's def-caching mechanism to match 1.6, but I haven't been able to test load speed with large modpacks albeit I can confirm the caches are being written correctly. 
+
+As for Proton, it's been stripped out for a while now, so I've left it as is. 
 
 
 ## Description:
