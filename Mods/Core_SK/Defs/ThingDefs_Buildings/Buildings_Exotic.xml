@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef Abstract="True" Name="CrashedShipPartBase" ParentName="BuildingBase">
+<!-- 	<ThingDef Abstract="True" Name="CrashedShipPartBase" ParentName="BuildingBase">
 		<altitudeLayer>Building</altitudeLayer>
 		<pathCost>150</pathCost>
 		<blockWind>true</blockWind>
@@ -39,25 +39,16 @@
 		<comps>
 			<li Class="CompProperties_WakeUpDormant" />
 		</comps>
-	</ThingDef>
+	</ThingDef> -->
 
 	<!-- ========================= Psychic droner ========================= -->
 	<!-- Note this is a ConditionCauser -->
 
 
-	<ThingDef ParentName="CrashedShipPartBase">
+<!-- 	<ThingDef ParentName="CrashedShipPartBase">
 		<defName>PsychicDronerShipPart</defName>
 		<label>ship part (psychic droner)</label>
 		<description>An ancient ship part, torn off of a craft of unknown origin. It might be thousands of years old.\n\nThis one contains a psychic disturbance device. Using incomprehensible archotechnologies, it generates a psychic signal that drives people and animals mad within a wide radius around itself.</description>
-		<!-- 		<graphicData>
-			<texPath>Things/Building/Genstep/MechanoidShipIncoming</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(6,6)</drawSize>
-			<shadowData>
-				<volume>(3.5, 2, 3.5)</volume>
-			</shadowData>
-		</graphicData> -->
 		<graphicData>
 			<texPath>Things/Building/Exotic/CrashedShipPart</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -89,11 +80,11 @@
 				<sound>CrashedShipPart_Ambience</sound>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef> -->
 
 	<!-- =============================== Defoliator ship part ============================ -->
 
-	<ThingDef ParentName="CrashedShipPartBase">
+<!-- 	<ThingDef ParentName="CrashedShipPartBase">
 		<defName>DefoliatorShipPart</defName>
 		<label>ship part (defoliator)</label>
 		<description>An ancient ship part, torn off of a craft of unknown origin. It might be thousands of years old.\n\nThis one contains a device which annihilates plant life near itself without directly affecting flesh creatures. These kinds of weapons are sometimes scattered across farmlands or forests during land, to remove the enemy's food supply and hiding places without permanently ruining the territory. They're usually associated with orbital-drop mechanoid armies.</description>
@@ -101,15 +92,6 @@
 		<placeWorkers>
 			<li>PlaceWorker_ShowPlantHarmRadius</li>
 		</placeWorkers>
-		<!-- 		<graphicData>
-			<texPath>Things/Building/Genstep/MechanoidShipIncoming</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(6,6)</drawSize>
-			<shadowData>
-				<volume>(3.5, 2, 3.5)</volume>
-			</shadowData>
-		</graphicData> -->
 		<graphicData>
 			<texPath>Things/Building/Exotic/CrashedPoisonShipPart</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -142,12 +124,12 @@
 				<cellsToPollutePerDay>6</cellsToPollutePerDay>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef> -->
 
 
 	<!-- ========================= Shuttle ========================= -->
 
-	<ThingDef Name="ShuttleBase" ParentName="BuildingBase">
+<!-- 	<ThingDef Name="ShuttleBase" ParentName="BuildingBase">
 		<defName>Shuttle</defName>
 		<label>shuttle</label>
 		<description>A spacer-tech shuttle designed for transit between surface and orbit, or between moons of a planetary system.</description>
@@ -214,9 +196,9 @@
 				<sound>ShuttleIdle_Ambience</sound>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="ShuttleBase" Name="ShuttleCrashedBase">
+	<!-- <ThingDef ParentName="ShuttleBase" Name="ShuttleCrashedBase">
 		<defName>ShuttleCrashed</defName>
 		<label>crashed shuttle</label>
 		<graphicData>
@@ -248,7 +230,7 @@
 			<claimable>false</claimable>
 			<alwaysDeconstructible>true</alwaysDeconstructible>
 		</building>
-	</ThingDef>
+	</ThingDef> -->
 
 
 	<ThingDef ParentName="BuildingBase" Name="ShipParts" Abstract="True">
