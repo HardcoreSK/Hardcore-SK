@@ -3,7 +3,7 @@
 
 	<!--============================ Spots =============================-->
 
-	<ThingDef Abstract="True" Name="MiscBuildingBase" ParentName="StandartBuilding">
+	<ThingDef Abstract="True" Name="MiscBuildingBase" ParentName="StandardBuilding">
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<building>
 			<uninstallWork>800</uninstallWork>
@@ -486,7 +486,7 @@
 		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>CommsConsole</defName>
 		<label>comms console</label>
 		<description>Allows radio contact with other factions and orbital traders.</description>
@@ -576,7 +576,7 @@
 		<!-- used by call bossgroup -->
 	</ThingDef>
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>Buildings_SubspaceBurstTransponder</defName>
 		<label>subspace burst transponder</label>
 		<description>Contacts Ships at a distance and guides them to your colony.</description>
@@ -1450,7 +1450,7 @@
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>FertilizerPump</defName>
 		<label>terraforming pump</label>
 		<description>A single use pump that slowly expands a field of growable soil around itself. Requires power. Requires water and compost in order to function.</description>
@@ -1993,7 +1993,7 @@
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>GroundPenetratingScanner</defName>
 		<label>ground-penetrating scanner</label>
 		<description>A sensor unit used by researchers to search for buried resources. The chance to find a resource depends on the operator's research ability. It consumes a lot of electricity. If you find a buried resource, you'll need to use deep drills to extract it. It doesn't work under a roof.</description>
@@ -2070,7 +2070,7 @@
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>LongRangeMineralScanner</defName>
 		<label>long-range mineral scanner</label>
 		<description>A lateral sensor unit used by researchers to detect a specific type of mineral across the planet. The chance to find a resource depends on the operator's research ability. This sensor can be tuned to target a specific resource type. It consumes a lot of electricity. If you find a resource, you'll need to travel to collect it.</description>
@@ -2148,7 +2148,7 @@
 
 	<!--========================== Transport pods ============================-->
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>PodLauncher</defName>
 		<label>pod launcher</label>
 		<description>A fueling port for launching one transport pod. Pod launchers can launch as a group - but the launchers must be placed adjacent to each other.</description>
@@ -2217,7 +2217,7 @@
 		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>TransportPod</defName>
 		<label>transport pod</label>
 		<description>A launchable suborbital-travel cargo pod capable of carrying people, items, or animals. Can be used for transport, surprise attacks, or reinforcing battles.</description>
@@ -2369,7 +2369,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>DermalRegenerator</defName>
 		<thingClass>SK.Building_DermalRegeneratorNew</thingClass>
 		<label>dermal regenerator</label>

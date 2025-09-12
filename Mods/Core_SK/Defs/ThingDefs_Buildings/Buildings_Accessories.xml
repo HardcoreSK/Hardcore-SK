@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef Name="AccessoriesBase" ParentName="StandartBuilding" Abstract="True">
+	<ThingDef Name="AccessoriesBase" ParentName="StandardBuilding" Abstract="True">
 		<fillPercent>0.6</fillPercent>
 		<pathCost>50</pathCost>
 		<drawGUIOverlay>false</drawGUIOverlay>
@@ -23,7 +23,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<ThingDef Name="SK_LampBase" ParentName="StandartBuilding" Abstract="True">
+	<ThingDef Name="SK_LampBase" ParentName="StandardBuilding" Abstract="True">
 		<pathCost>0</pathCost>
 		<drawGUIOverlay>false</drawGUIOverlay>
 		<statBases>
@@ -48,7 +48,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef Name="LampBaseNoCat" ParentName="StandartBuilding" Abstract="True">
+	<ThingDef Name="LampBaseNoCat" ParentName="StandardBuilding" Abstract="True">
 		<pathCost>0</pathCost>
 		<drawGUIOverlay>false</drawGUIOverlay>
 		<statBases>

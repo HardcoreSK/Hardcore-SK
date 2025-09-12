@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- SATURATED SOIL -->
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>PrimitiveHydroponic</defName>
 		<label>saturated soil</label>
 		<thingClass>SK.Building_PlantGrowerLinked</thingClass>
@@ -44,7 +44,7 @@
 	</ThingDef>
 	
 	<!-- BASIC BASIN -->
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>HydroponicsBasin</defName>
 		<label>hydroponic basin</label>
 		<thingClass>SK.Building_PlantGrowerLinked</thingClass>
@@ -105,7 +105,7 @@
 	</ThingDef>
 	
 	<!-- ADVANCED HYDROPONICS -->
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>NewHydroponicsBasin</defName>
 		<label>advanced hydroponic basin</label>
 		<thingClass>SK.Building_PlantGrowerLinked</thingClass>
@@ -183,7 +183,7 @@
 	</ThingDef>
 	
 	<!-- POT -->
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>ClutterAlloyHydroponicsBasinVS</defName>
 		<label>hydroponic pot</label>
 		<thingClass>SK.Building_PlantGrowerLinked</thingClass>
@@ -242,7 +242,7 @@
 	</ThingDef>
 	
 	<!-- BOX -->
-	<ThingDef Name="Agrarian" ParentName="StandartBuilding">
+	<ThingDef Name="Agrarian" ParentName="StandardBuilding">
 		<defName>Agrarian</defName>
 		<label>hydroponic box</label>
 		<description>A small self-watering wooden wood box with earth in it for growing plants. Requires power. 120 fertility</description>

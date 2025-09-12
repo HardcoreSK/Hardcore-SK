@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef Name="PowerFueled" ParentName="StandartBuilding" Abstract="True">
+	<ThingDef Name="PowerFueled" ParentName="StandardBuilding" Abstract="True">
 		<thingClass>Building</thingClass>
 		<passability>PassThroughOnly</passability>
 		<tickerType>Normal</tickerType>
@@ -526,7 +526,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>FissionBattery</defName>
 		<label>fission battery</label>
 		<thingClass>SK.Building_Battery</thingClass>
@@ -607,7 +607,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>SolarGenerator</defName>
 		<label>solar generator</label>
 		<thingClass>SK.Building_SolarGenerator</thingClass>
@@ -675,7 +675,7 @@
 		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>AdvancedSolarGenerator</defName>
 		<label>advanced solar generator</label>
 		<thingClass>SK.Building_AdvSolarGenerator</thingClass>
@@ -747,7 +747,7 @@
 		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>WindTurbine</defName>
 		<thingClass>Building</thingClass>
 		<label>wind turbine</label>
@@ -829,7 +829,7 @@
 		</inspectorTabs>
 	</ThingDef>
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>AdvancedWindTurbine</defName>
 		<thingClass>Building</thingClass>
 		<label>advanced wind turbine</label>
@@ -1328,7 +1328,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>GeothermalGenerator</defName>
 		<label>geothermal generator</label>
 		<thingClass>SK.Building_GeothermalPlant</thingClass>
@@ -1478,7 +1478,7 @@
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>ThermoelectricGenerator</defName>
 		<label>thermoelectric generator</label>
 		<thingClass>SK.Building_ThermoelectricGenerator</thingClass>
@@ -1646,7 +1646,7 @@
 		<DamageApplySelfCounter>600</DamageApplySelfCounter>
 	</ThingDef>
 
-	<ThingDef Class="SK.ThingDef_ItemRAD" ParentName="StandartBuilding">
+	<ThingDef Class="SK.ThingDef_ItemRAD" ParentName="StandardBuilding">
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<constructEffect>ConstructMetal</constructEffect>
 		<defName>NPPD</defName>
@@ -1690,7 +1690,7 @@
 	</ThingDef> -->
 
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>GauseWindTurbine</defName>
 		<label>Gause Wind Turbine</label>
 		<thingClass>Building</thingClass>
@@ -1764,7 +1764,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>TeslaLightningPower</defName>
 		<label>tesla lightning generator</label>
 		<thingClass>SK.TeslaLightningPower</thingClass>
@@ -1927,7 +1927,7 @@
 		<constructionSkillPrerequisite>17</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>PlasmaGen</defName>
 		<label>plasma generator</label>
 		<thingClass>SK.Building_PlasmaGenerator</thingClass>
@@ -1998,7 +1998,7 @@
 		<constructionSkillPrerequisite>17</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>XenonIonTurbine</defName>
 		<label>xenon-ion turbine</label>
 		<thingClass>SK.Building_XenonIonTurbine</thingClass>

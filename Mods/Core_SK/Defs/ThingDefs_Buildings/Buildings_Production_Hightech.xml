@@ -1235,7 +1235,7 @@
 		<constructionSkillPrerequisite>11</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>DeepDrill</defName>
 		<label>deep drill</label>
 		<description>A deep-crust drilling rig for extracting minerals from deep under the surface. Use a ground-penetrating scanner to detect the resources. This drill will yield stone chunks if no resources are present. Can be repositioned freely.</description>
@@ -1314,7 +1314,7 @@
 		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>Extractor</defName>
 		<label>mine extractor</label>
 		<description>The mine extractor digs deep into the ground to extract metal ores and rocks. Use a ground-penetrating scanner to detect the resources, drill will yield stone chunks if no resources are present. Requires power.</description>
@@ -1400,7 +1400,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>RareExtractor</defName>
 		<label>advanced mine extractor</label>
 		<description>The advanced mine extractor digs deep into the ground to extract metal ores. Works faster than regular extractor. However Deep Drill manned by experienced Miner can still be faster.</description>
@@ -1478,7 +1478,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<!-- 	<ThingDef ParentName="StandartBuilding">
+	<!-- 	<ThingDef ParentName="StandardBuilding">
 		<defName>OilExtractor</defName>
 		<label>oil extractor</label>
 		<description>The oil extractor digs deep into the ground and extracts crude oil. Must be placed on an oil fissure created by a drilling rig. Requires power.</description>
@@ -1575,7 +1575,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>FissureGenerator</defName>
 		<label>drilling rig</label>
 		<description>A powerful machine designed to create a deep fissure. Must be placed on a Deposit of Crude Oil. Requires power.</description>
@@ -1713,7 +1713,7 @@
 	</ThingDef>
 
 	<!--
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>OilRefinery</defName>
 		<label>Oil Refinery</label>
 		<thingClass>SK.Building_OilRefinery</thingClass>
@@ -1853,7 +1853,7 @@
 	</ThingDef> -->
 
 	<!--
- 	<ThingDef ParentName="StandartBuilding">
+ 	<ThingDef ParentName="StandardBuilding">
 		<defName>GC</defName>
 		<label>gas centrifuge</label>
 		<description>A thermal diffusion gas centrifuge is a device that performs isotope separation of gases. A centrifuge relies on the principles of centrifugal force accelerating molecules so that particles of different masses are physically separated in a gradient along the radius of a rotating container. A prominent use of gas centrifuges is for the separation uranium-235 from natural uranium-237.</description>
@@ -2918,7 +2918,7 @@
 
 
 	<!-- ========================= Hadron Collider ==========================-->
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>HadronCollider</defName>
 		<label>hadron collider</label>
 		<thingClass>SK.Building_HadronCollider</thingClass>

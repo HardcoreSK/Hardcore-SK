@@ -69,7 +69,7 @@
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
 	</ThingDef>
 
-	<ThingDef Name="StandartBuilding" ParentName="BuildingBase" Abstract="True">
+	<ThingDef Name="StandardBuilding" ParentName="BuildingBase" Abstract="True">
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>80</pathCost>
@@ -84,7 +84,7 @@
 	</ThingDef>
 
 	<!-- Base Worktable -->
-	<ThingDef Name="WorkTable" ParentName="StandartBuilding" Abstract="True">
+	<ThingDef Name="WorkTable" ParentName="StandardBuilding" Abstract="True">
 		<thingClass>SK.SK_Building_WorkTable</thingClass>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -143,7 +143,7 @@
 	</ThingDef>
 
 	<!-- Base Hopper -->
-	<ThingDef Name="HopperBase" ParentName="StandartBuilding" Abstract="True">
+	<ThingDef Name="HopperBase" ParentName="StandardBuilding" Abstract="True">
 		<thingClass>Building_Storage</thingClass>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -177,7 +177,7 @@
 		</placeWorkers>
 	</ThingDef>
 
-	<ThingDef Name="ResearchBase" ParentName="StandartBuilding" Abstract="True">
+	<ThingDef Name="ResearchBase" ParentName="StandardBuilding" Abstract="True">
 		<canOverlapZones>false</canOverlapZones>
 		<surfaceType>Item</surfaceType>
 		<hasInteractionCell>true</hasInteractionCell>
@@ -198,7 +198,7 @@
 		</placeWorkers>
 	</ThingDef>
 
-	<ThingDef Name="SK_FurnitureBase" ParentName="StandartBuilding" Abstract="True">
+	<ThingDef Name="SK_FurnitureBase" ParentName="StandardBuilding" Abstract="True">
 		<fillPercent>0.6</fillPercent>
 		<tradeTags>
 			<li>Furniture</li>
@@ -250,7 +250,7 @@
 		</inspectorTabs>
 	</ThingDef>
 
-	<ThingDef Name="UniversalFermenterBase" ParentName="StandartBuilding" Abstract="True">
+	<ThingDef Name="UniversalFermenterBase" ParentName="StandardBuilding" Abstract="True">
 		<thingClass>UniversalFermenterSK.Building_UF</thingClass>
 		<tickerType>Normal</tickerType>
 		<graphicData>

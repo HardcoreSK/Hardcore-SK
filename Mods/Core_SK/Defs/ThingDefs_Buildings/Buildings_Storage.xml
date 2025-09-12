@@ -135,7 +135,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 </ThingDef>
   -->
 
-	<ThingDef Name="LWM_DeepStorage" ParentName="StandartBuilding" Abstract="true">
+	<ThingDef Name="LWM_DeepStorage" ParentName="StandardBuilding" Abstract="true">
 		<thingClass>Building_Storage</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -177,7 +177,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<designationCategory>LWM_DS_Storage</designationCategory>
 	</ThingDef>
 
-	<ThingDef Name="LWM_DeepStorage_nomini" ParentName="StandartBuilding" Abstract="true">
+	<ThingDef Name="LWM_DeepStorage_nomini" ParentName="StandardBuilding" Abstract="true">
 		<defName>LWM_DeepStorage</defName>
 		<thingClass>Building_Storage</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
