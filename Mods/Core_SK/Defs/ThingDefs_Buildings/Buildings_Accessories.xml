@@ -188,7 +188,7 @@
 			<li>Accessory_A1</li>
 		</researchPrerequisites>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="PlantGrowerBase">
 		<defName>PlantPot</defName>
 		<label>plant pot</label>
@@ -241,7 +241,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="PlantGrowerBase">
 		<defName>DecoratedPot</defName>
 		<label>decorated pot</label>
@@ -350,7 +350,7 @@
 	</ThingDef>
 
 	<!-- ======================== Vanilla Lighting ======================= -->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="SK_LampBase">
 		<defName>StandingLamp</defName>
 		<label>standing lamp</label>
@@ -414,6 +414,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 	</ThingDef>
+	-->
 	<!--
 	<ThingDef ParentName="LampBaseNoCat">
 		<defName>StandingLamp_Red</defName>
@@ -789,7 +790,7 @@
 -->
 
 	<!--======================================WallLights======================================-->
-
+<!-- DefOverwrite
 	<ThingDef Name="TorchLamp" ParentName="SK_LampBase">
 		<defName>TorchLamp</defName>
 		<label>torch lamp</label>
@@ -897,7 +898,7 @@
 		<designationHotKey>Misc10</designationHotKey>
 		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
 	</ThingDef>
-
+-->
 
 	<ThingDef ParentName="SK_LampBase">
 		<defName>BowlLamp</defName>
@@ -1381,7 +1382,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="SK_LampBase">
 		<defName>WallLamp</defName>
 		<label>wall lamp</label>
@@ -1433,10 +1434,6 @@
 				<colorPickerEnabled>true</colorPickerEnabled>
 				<darklightToggle>true</darklightToggle>
 			</li>
-			<!--
-			<li Class="SK.CompProperties_ColoredLight">
-				<compClass>SK.CompColoredLight</compClass>
-			</li>-->
 			<li Class="SK.CompProperties_RestrictedPlacement">
 				<compClass>SK.CompRestrictedPlacement</compClass>
 			</li>
@@ -1461,7 +1458,7 @@
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 	</ThingDef>
-
+-->
 
 	<ThingDef ParentName="SK_LampBase">
 		<defName>Lighting_WallLight</defName>
