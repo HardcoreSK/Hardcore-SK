@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Obsidian"]/stuffProps</xpath>
+		<value>
+			<categories Merge="True">
+				<li>Glass</li>
+			</categories>
+			<statFactors Merge="True">
+				<MeleePenetrationFactor>1.5</MeleePenetrationFactor>
+				<MaxHitPoints>0.6</MaxHitPoints>
+			</statFactors>
+		</value>
+	</Operation>
+</Patch>
