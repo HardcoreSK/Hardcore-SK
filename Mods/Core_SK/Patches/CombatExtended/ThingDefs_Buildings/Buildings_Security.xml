@@ -208,6 +208,17 @@
 	</Operation>
 
 	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[@Name="AutocannonTurret"]/comps</xpath>
+		<value>
+			<li Class="CompProperties_Stunnable">
+				<affectedDamageDefs>
+					<li>EMP</li>
+				</affectedDamageDefs>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Turret_Sniper"]</xpath>
 		<value>
 			<label>sentry laserbeam turret</label>
@@ -242,11 +253,6 @@
 				</li>
 				<li Class="CompProperties_Flickable" />
 				<li Class="CompProperties_Breakdownable" />
-				<li Class="CompProperties_Stunnable">
-					<affectedDamageDefs>
-						<li>EMP</li>
-					</affectedDamageDefs>
-				</li>
 			</comps>
 			<description>An AI-controlled highly calibrated gun turret with advanced optics. This allows it to deliver a single but precise laserbeam at fairly long distances. Requires 1,500 W to function.\nCaliber: Charged laser beam</description>
 			<size>(1,1)</size>

@@ -1,61 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-		<defName>Gun_TacticalTurret</defName>
-		<statBases>
-			<Mass>6.3</Mass>
-			<SightsEfficiency>1.00</SightsEfficiency>
-			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
-			<ShotSpread>0.3</ShotSpread>
-			<SwayFactor>1</SwayFactor>
-		</statBases>
-		<Properties>
-			<recoilAmount>1.15</recoilAmount>
-			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
-			<hasStandardCommand>false</hasStandardCommand>
-			<defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
-			<warmupTime>1.1</warmupTime>
-			<range>5</range>
-			<burstShotCount>3</burstShotCount>
-			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-			<soundCast>Shot_Shotgun_NoRack</soundCast>
-			<soundCastTail>GunTail_Medium</soundCastTail>
-			<muzzleFlashScale>6</muzzleFlashScale>
-		</Properties>
-		<!-- <AmmoUser>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Gun_TacticalTurret"]</xpath>
+		<value>
+			<statBases>
+				<Mass>6.3</Mass>
+				<SightsEfficiency>1.00</SightsEfficiency>
+				<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+				<ShotSpread>0.3</ShotSpread>
+				<SwayFactor>1</SwayFactor>
+			</statBases>
+			<verbs>
+				<li Class="CombatExtended.VerbPropertiesCE">
+					<recoilAmount>1.15</recoilAmount>
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<hasStandardCommand>false</hasStandardCommand>
+					<defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+					<warmupTime>1.1</warmupTime>
+					<range>5</range>
+					<burstShotCount>3</burstShotCount>
+					<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+					<soundCast>Shot_Shotgun_NoRack</soundCast>
+					<soundCastTail>GunTail_Medium</soundCastTail>
+					<muzzleFlashScale>6</muzzleFlashScale>
+				</li>
+			</verbs>
+			<comps>
+				<li Class="CombatExtended.CompProperties_FireModes">
+					<aiUseBurstMode>TRUE</aiUseBurstMode>
+					<aiAimMode>AimedShot</aiAimMode>
+					<aimedBurstShotCount>3</aimedBurstShotCount>
+				</li>
+			</comps>
+			<!-- <AmmoUser>
 			<magazineSize>30</magazineSize>
 			<reloadTime>4</reloadTime>
 			<ammoSet>AmmoSet_545x39mmSoviet</ammoSet>
 		</AmmoUser> -->
-		<!-- Battery Powered & AmmoUser? I'm not sure if it's a good idea -->
-		<FireModes>
-			<aiUseBurstMode>TRUE</aiUseBurstMode>
-			<aiAimMode>AimedShot</aiAimMode>
-			<aimedBurstShotCount>3</aimedBurstShotCount>
-		</FireModes>
-		<!-- <weaponTags>
-			<li>IndustrialGunAdvanced</li>
-			<li>AssaultRifle</li>		
-			<li>CE_AI_Rifle</li>
-		</weaponTags> -->
+			<!-- Battery Powered & AmmoUser? I'm not sure if it's a good idea -->
+		</value>
 	</Operation>
 
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="HoldingSpot"]</xpath>
 		<value>
-            <statBases>
-                <MaxHitPoints>200</MaxHitPoints>
-                <WorkToBuild>800</WorkToBuild>
-            </statBases>
+			<statBases>
+				<MaxHitPoints>200</MaxHitPoints>
+				<WorkToBuild>800</WorkToBuild>
+			</statBases>
 			<stuffCategories>
-                <li>Fabric</li>
-                <li>Leathery</li>
+				<li>Fabric</li>
+				<li>Leathery</li>
 			</stuffCategories>
 			<costStuffCount>20</costStuffCount>
 			<costList>
-			    <ComponentMedieval>2</ComponentMedieval>
-			    <WoodLog>40</WoodLog>
+				<ComponentMedieval>2</ComponentMedieval>
+				<WoodLog>40</WoodLog>
 			</costList>
 		</value>
 	</Operation>
@@ -69,9 +70,9 @@
 			</stuffCategories>
 			<costStuffCount>20</costStuffCount>
 			<costList>
-			    <ComponentIndustrial>8</ComponentIndustrial>
-			    <Mechanism>2</Mechanism>
-			    <ReinforcedConcrete>40</ReinforcedConcrete>
+				<ComponentIndustrial>8</ComponentIndustrial>
+				<Mechanism>2</Mechanism>
+				<ReinforcedConcrete>40</ReinforcedConcrete>
 				<BioferriteAlloy>20</BioferriteAlloy>
 			</costList>
 		</value>
@@ -119,7 +120,7 @@
 			</stuffCategories>
 			<costStuffCount>15</costStuffCount>
 			<costList>
-			    <Plastic>5</Plastic>
+				<Plastic>5</Plastic>
 				<BioferriteAlloy>5</BioferriteAlloy>
 				<Glass>5</Glass>
 				<ElectronicComponents>1</ElectronicComponents>
@@ -198,12 +199,12 @@
 		</value>
 	</Operation>
 
-    <Operation Class="PatchOperationInsert">
-        <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Traps"]/defNames/li[text()="TrapIED_Firefoam"]</xpath>
-        <order>Append</order>
-        <value>
-            <li>TrapIED_Deadlife</li>
-        </value>
-    </Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Traps"]/defNames/li[text()="TrapIED_Firefoam"]</xpath>
+		<order>Append</order>
+		<value>
+			<li>TrapIED_Deadlife</li>
+		</value>
+	</Operation>
 
 </Patch>

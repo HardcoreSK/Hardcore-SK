@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
 	<!-- ========== Tools ========== -->
@@ -58,10 +58,10 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Gun_BeamGraser"]/verbs/li/range</xpath>
 		<value>
-      <range>40</range>
+			<range>40</range>
 		</value>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Gun_BeamGraser"]/verbs/li/burstShotCount</xpath>
 		<value>
@@ -78,39 +78,45 @@
 
 	<!-- ========== Toxic Needle Gun ========== -->
 
-	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-		<defName>Gun_ToxicNeedle</defName>
-		<statBases>
-      <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
-      <SightsEfficiency>1</SightsEfficiency>
-			<ShotSpread>0.01</ShotSpread>
-      <SwayFactor>0.81</SwayFactor>
-      <Bulk>15.00</Bulk>
-		</statBases>
-		<Properties>
-			<recoilAmount>1.80</recoilAmount>
-			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
-			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Bullet_5x50mmCaseless_Toxic</defaultProjectile>
-      <warmupTime>1.3</warmupTime>
-      <range>75</range>
-			<burstShotCount>1</burstShotCount>
-			<soundCast>Shot_ToxicNeedleGun</soundCast>
-			<soundCastTail>GunTail_Heavy</soundCastTail>
-			<muzzleFlashScale>9</muzzleFlashScale>
-		</Properties>
-		<AmmoUser>
-			<magazineSize>10</magazineSize>
-			<reloadTime>4</reloadTime>
-			<ammoSet>AmmoSet_5x50mmCaselessToxic</ammoSet>
-		</AmmoUser>
-		<FireModes>
-			<aiAimMode>AimedShot</aiAimMode>
-		</FireModes>
-		<weaponTags>
-			<li>CE_AI_Rifle</li>
-			<li>NoSwitch</li>
-		</weaponTags>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Gun_ToxicNeedle"]</xpath>
+		<value>
+			<statBases>
+				<RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+				<SightsEfficiency>1</SightsEfficiency>
+				<ShotSpread>0.01</ShotSpread>
+				<SwayFactor>0.81</SwayFactor>
+				<Bulk>15.00</Bulk>
+			</statBases>
+			<verbs>
+				<li Class="CombatExtended.VerbPropertiesCE">
+					<recoilAmount>1.80</recoilAmount>
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_5x50mmCaseless_Toxic</defaultProjectile>
+					<warmupTime>1.3</warmupTime>
+					<range>75</range>
+					<burstShotCount>1</burstShotCount>
+					<soundCast>Shot_ToxicNeedleGun</soundCast>
+					<soundCastTail>GunTail_Heavy</soundCastTail>
+					<muzzleFlashScale>9</muzzleFlashScale>
+				</li>
+			</verbs>
+			<comps>
+				<li Class="CombatExtended.CompProperties_AmmoUser">
+					<magazineSize>10</magazineSize>
+					<reloadTime>4</reloadTime>
+					<ammoSet>AmmoSet_5x50mmCaselessToxic</ammoSet>
+				</li>
+				<li Class="CombatExtended.CompProperties_FireModes">
+					<aiAimMode>AimedShot</aiAimMode>
+				</li>
+			</comps>
+			<weaponTags Merge="True">
+				<li>CE_AI_Rifle</li>
+				<li>NoSwitch</li>
+			</weaponTags>
+		</value>
 	</Operation>
 
 </Patch>
