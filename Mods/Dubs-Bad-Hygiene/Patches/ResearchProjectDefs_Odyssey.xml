@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ResearchProjectDef[defName="OrbitalTech"]/researchMods</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="OrbitalTech"]/researchMods</xpath>
+				<value>
+					<li Class="SK.ResearchMod_ReduceWaterCost">
+						<factor>0.5</factor>
+						<targets>
+							<li>HydroponicsBasin</li>
+							<li>NewHydroponicsBasin</li>
+						</targets>
+					</li>
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="OrbitalTech"]</xpath>
+				<value>
+					<researchMods>
+						<li Class="SK.ResearchMod_ReduceWaterCost">
+							<factor>0.5</factor>
+							<targets>
+								<li>HydroponicsBasin</li>
+								<li>NewHydroponicsBasin</li>
+							</targets>
+						</li>
+					</researchMods>
+				</value>
+			</nomatch>
+		</match>
+	</Operation>
+
+</Patch>
