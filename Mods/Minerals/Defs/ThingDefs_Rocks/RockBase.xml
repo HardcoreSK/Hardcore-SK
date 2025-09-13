@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <ThingDef Name="ZF_UglyRockBase" ParentName="UglyRockBase"  Abstract="True">
-  </ThingDef>
-  
-  
+  <ThingDef Name="ZF_UglyRockBase" ParentName="UglyRockBase" Abstract="True" />
+
+
   <ThingDef Name="ImpassableRockBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
     <drawerType>MapMeshOnly</drawerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
@@ -39,28 +38,28 @@
       <isEdifice>true</isEdifice>
     </building>
     <!-- The terrains this can appear on. The default is rocky terrains-->
-		<allowedTerrains>
-  		<li>Ice</li>
-  		<li>IceShallow</li>
-  		<li>Soil</li>
-  		<li>MossyTerrain</li>
-  		<li>MarshyTerrain</li>
-  		<li>SoilRich</li>
-  		<li>Gravel</li>
-  		<li>Sand</li>
-  		<li>SoftSand</li>
-  		<li>Mud</li>
-  		<li>Marsh</li>
-  		<li>SavannaSoil</li>
-  		<li>RockySoil</li>
-  		<li>PoorSoil</li>
-  		<li>MarginalSoil</li>
-  		<li>DustySoil</li>
+    <allowedTerrains>
+      <li>Ice</li>
+      <li>IceShallow</li>
+      <li>Soil</li>
+      <li>MossyTerrain</li>
+      <li>MarshyTerrain</li>
+      <li>SoilRich</li>
+      <li>Gravel</li>
+      <li>Sand</li>
+      <li>SoftSand</li>
+      <li>Mud</li>
+      <li>Marsh</li>
+      <li>SavannaSoil</li>
+      <li>RockySoil</li>
+      <li>PoorSoil</li>
+      <li>MarginalSoil</li>
+      <li>DustySoil</li>
       <li>WaterDeep</li>
       <li>WaterOceanDeep</li>
       <li>WaterMovingChestDeep</li>
       <li>Crashland_Wasteland</li>
-		</allowedTerrains>
+    </allowedTerrains>
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
@@ -69,8 +68,8 @@
     <!-- at what snow depth the snow texture is used, if it exists -->
     <snowTextureThreshold>0.9</snowTextureThreshold>
   </ThingDef>
-  
-  
+
+
   <ThingDef Name="WeatheredRockBase" ParentName="ImpassableRockBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
     <graphicData>
       <shaderType>CutoutComplex</shaderType>
@@ -97,8 +96,8 @@
     <!-- How much to change the vertical position of the texture. Positive is up -->
     <verticalOffset>0.2</verticalOffset>
   </ThingDef>
-  
-  
+
+
   <ThingDef Name="SolidRockBase" ParentName="ImpassableRockBase" Class="Minerals.ThingDef_SolidRock" Abstract="True">
     <thingClass>Minerals.SolidRock</thingClass>
     <graphicData>
@@ -126,28 +125,28 @@
     <!-- How much to change the vertical position of the texture. Positive is up -->
     <verticalOffset>0.2</verticalOffset>
   </ThingDef>
-  
-  
+
+
   <ThingDef Name="HewnRockBase" ParentName="ImpassableRockBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
     <graphicData>
       <shaderType>CutoutComplex</shaderType>
-			<graphicClass>Graphic_Random</graphicClass>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
+      <graphicClass>Graphic_Random</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
         <li>Rock</li>
         <li>MapEdge</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
     </graphicData>
     <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
     <!--How far away it can spawn from an existing location-->
@@ -194,9 +193,10 @@
     <mustBeUnroofed>false</mustBeUnroofed>
     <mustBeNotUnderThickRoof>false</mustBeNotUnderThickRoof>
   </ThingDef>
-  
+
 
   <ThingDef Name="PassableRockBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
+    <preventGravshipLandingOn>false</preventGravshipLandingOn>
     <graphicData>
       <shaderType>CutoutComplex</shaderType>
       <graphicClass>Graphic_Random</graphicClass>
@@ -206,9 +206,10 @@
     <building>
       <mineableYield>1</mineableYield>
       <ai_neverTrashThis>true</ai_neverTrashThis>
+      <canLandGravshipOn>true</canLandGravshipOn>
     </building>
     <!-- The terrains this can appear on. The default is rocky terrains-->
-		<allowedTerrains>
+    <allowedTerrains>
       <li>Limestone_Rough</li>
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
@@ -217,24 +218,24 @@
       <li>ZF_ClaystoneBase_Rough</li>
       <li>ZF_MudstoneBase_Rough</li>
       <li>Granite_Rough</li>
-  		<li>IceShallow</li>
-  		<li>Soil</li>
-  		<li>MossyTerrain</li>
-  		<li>MarshyTerrain</li>
-  		<li>Gravel</li>
-  		<li>Sand</li>
-  		<li>SoftSand</li>
-  		<li>Mud</li>
-  		<li>Marsh</li>
-  		<li>SavannaSoil</li>
-  		<li>RockySoil</li>
-  		<li>PoorSoil</li>
-  		<li>MarginalSoil</li>
-  		<li>DustySoil</li>
+      <li>IceShallow</li>
+      <li>Soil</li>
+      <li>MossyTerrain</li>
+      <li>MarshyTerrain</li>
+      <li>Gravel</li>
+      <li>Sand</li>
+      <li>SoftSand</li>
+      <li>Mud</li>
+      <li>Marsh</li>
+      <li>SavannaSoil</li>
+      <li>RockySoil</li>
+      <li>PoorSoil</li>
+      <li>MarginalSoil</li>
+      <li>DustySoil</li>
       <li>Crashland_Wasteland</li>
-		</allowedTerrains>
+    </allowedTerrains>
   </ThingDef>
-  
+
 
   <ThingDef Name="SmallRockBase" ParentName="PassableRockBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
     <fillPercent>0.2</fillPercent>
@@ -252,8 +253,8 @@
     <!-- at what snow depth the snow texture is used, if it exists -->
     <snowTextureThreshold>0.7</snowTextureThreshold>
   </ThingDef>
-  
-  
+
+
   <ThingDef Name="BoulderRockBase" ParentName="PassableRockBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
     <fillPercent>0.6</fillPercent>
     <hideAtSnowOrSandDepth>2</hideAtSnowOrSandDepth>
@@ -274,6 +275,6 @@
     <!-- If textures overlapping walls above them should be printed on top -->
     <printOverWalls>true</printOverWalls>
   </ThingDef>
-  
-  
+
+
 </Defs>
