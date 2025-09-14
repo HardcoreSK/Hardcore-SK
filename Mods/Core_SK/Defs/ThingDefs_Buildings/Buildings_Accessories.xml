@@ -40,6 +40,7 @@
 			<li>BuildingsAccessories</li>
 		</thingCategories>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<drawPlaceWorkersWhileInstallBlueprintSelected>true</drawPlaceWorkersWhileInstallBlueprintSelected>
 		<placeWorkers>
 			<li>PlaceWorker_GlowRadius</li>
 		</placeWorkers>
@@ -51,6 +52,8 @@
 	<ThingDef Name="LampBaseNoCat" ParentName="StandardBuilding" Abstract="True">
 		<pathCost>0</pathCost>
 		<drawGUIOverlay>false</drawGUIOverlay>
+		<drawPlaceWorkersWhileInstallBlueprintSelected>true</drawPlaceWorkersWhileInstallBlueprintSelected>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<statBases>
 			<Flammability>1.0</Flammability>
 		</statBases>
