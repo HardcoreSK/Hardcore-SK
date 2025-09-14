@@ -70,6 +70,8 @@
 			<ResearchProjectDef ParentName="HitechBase" Name="SK.HitechBaseDummy" Abstract="True" />
 			<ResearchProjectDef ParentName="HitechMultiBase" Name="SK.HitechMultiBaseDummy" Abstract="True" />
 			<ResearchProjectDef ParentName="HitechLabStationBase" Name="SK.HitechLabStationBaseDummy" Abstract="True" />
+
+			<WorkGiverDef Name="SK.WorkGiverPrioritizeSustainsDummy" ParentName="WorkGiverPrioritizeSustains" Abstract="True" />
 		</value>
 	</Operation>
 

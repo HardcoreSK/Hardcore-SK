@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<WorkGiverDef Name="WorkGiver" Abstract="True">
@@ -30,7 +30,7 @@
 
 	<!-- =============  Hauling ============= -->
 
-	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
+	<!-- 	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
 		<defName>DoBillsCremate</defName>
 		<label>do cremation bills</label>
 		<workType>Hauling</workType>
@@ -40,7 +40,7 @@
 		</fixedBillGiverDefs>
 		<verb>cremate</verb>
 		<gerund>cremating at</gerund>
-	</WorkGiverDef>
+	</WorkGiverDef> -->
 
 	<!-- =============  Hauling: Deliver resources ============= -->
 
@@ -145,7 +145,7 @@
 
 	<!-- =============  Firefighter ============= -->
 
-<!-- 	<WorkGiverDef>
+	<!-- 	<WorkGiverDef>
 		<defName>FightFiresWithTool</defName>
 		<label>fight fires</label>
 		<giverClass>SK.WorkGiver_FightFiresWithTool</giverClass>
@@ -161,7 +161,7 @@
 
 	<!-- ============= Cooking ============= -->
 
-	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
+<!-- 	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
 		<defName>DoBillsButcherFlesh</defName>
 		<label>butcher creatures</label>
 		<workType>Cooking</workType>
@@ -173,7 +173,7 @@
 		</fixedBillGiverDefs>
 		<verb>butcher</verb>
 		<gerund>butchering at</gerund>
-	</WorkGiverDef>
+	</WorkGiverDef> -->
 
 	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
 		<defName>DoBillsKitchenTable</defName>
@@ -187,7 +187,7 @@
 		<gerund>preparing</gerund>
 	</WorkGiverDef>
 
-	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
+	<!-- 	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
 		<defName>DoBillsCook</defName>
 		<label>cook meals</label>
 		<workType>Cooking</workType>
@@ -205,9 +205,9 @@
 		</fixedBillGiverDefs>
 		<verb>cook</verb>
 		<gerund>cooking at</gerund>
-	</WorkGiverDef>
+	</WorkGiverDef> -->
 
-	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
+	<!-- 	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
 		<defName>DoBillsCookCampfire</defName>
 		<label>cook meals at campfire</label>
 		<workType>Cooking</workType>
@@ -217,7 +217,7 @@
 		</fixedBillGiverDefs>
 		<verb>cook</verb>
 		<gerund>cooking at</gerund>
-	</WorkGiverDef>
+	</WorkGiverDef> -->
 
 	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
 		<defName>DoBillsBake</defName>
@@ -247,7 +247,7 @@
 
 	<!-- ============= Smithing ============= -->
 
-	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
+	<!-- 	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
 		<defName>DoBillsMakeWeapons</defName>
 		<label>smithing</label>
 		<workType>Smithing</workType>
@@ -258,10 +258,10 @@
 		</fixedBillGiverDefs>
 		<verb>smith</verb>
 		<gerund>smithing at</gerund>
-	</WorkGiverDef>
+	</WorkGiverDef> -->
 
 
-	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
+	<!-- 	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
 		<defName>DoBillsBrew</defName>
 		<label>brew liquors</label>
 		<workType>Cooking</workType>
@@ -274,8 +274,8 @@
 		<gerund>brewing at</gerund>
 		<canBeDoneByMechs>false</canBeDoneByMechs>
 	</WorkGiverDef>
-
-	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
+ -->
+	<!-- 	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
 		<defName>DoBillsFabricationBench</defName>
 		<label>do assembling craft</label>
 		<workType>Smithing</workType>
@@ -287,12 +287,12 @@
 		</fixedBillGiverDefs>
 		<verb>produce components</verb>
 		<gerund>producing components at</gerund>
-	</WorkGiverDef>
+	</WorkGiverDef> -->
 
 
 	<!-- ============= Crafting - apparel ============= -->
 
-	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
+<!-- 	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
 		<defName>DoBillsMakeApparel</defName>
 		<label>tailor apparel</label>
 		<workType>Tailoring</workType>
@@ -305,7 +305,7 @@
 		</fixedBillGiverDefs>
 		<verb>tailor</verb>
 		<gerund>tailoring at</gerund>
-	</WorkGiverDef>
+	</WorkGiverDef> -->
 
 
 	<!-- ============= Crafting - Misc ============= -->
@@ -373,7 +373,7 @@
 		<gerund>making cloth</gerund>
 	</WorkGiverDef>
 
-	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
+<!-- 	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
 		<defName>DoBillsStonecut</defName>
 		<label>cut stone</label>
 		<workType>Crafting</workType>
@@ -384,9 +384,9 @@
 		</fixedBillGiverDefs>
 		<verb>stonecut</verb>
 		<gerund>stonecutting at</gerund>
-	</WorkGiverDef>
+	</WorkGiverDef> -->
 
-	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
+<!-- 	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
 		<defName>DoBillsUseCraftingSpot</defName>
 		<label>do bills at neolitic craft</label>
 		<workType>Crafting</workType>
@@ -396,7 +396,7 @@
 		</fixedBillGiverDefs>
 		<verb>craft</verb>
 		<gerund>crafting at</gerund>
-	</WorkGiverDef>
+	</WorkGiverDef> -->
 
 	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
 		<defName>DoBillsMatterfab</defName>
@@ -472,7 +472,7 @@
 			<li>WeaponCraftingWorkTable</li>
 			<li>AdvWeaponCraftingWorkTable</li>
 			<li>MechWeaponCraftingWorkTable</li>
-			<li>HeavyArmsBench</li>		
+			<li>HeavyArmsBench</li>
 		</fixedBillGiverDefs>
 		<verb>Weapon craft</verb>
 		<gerund>Crafting weapon</gerund>
@@ -537,8 +537,8 @@
 		<workType>Doctor</workType>
 		<priorityInType>45</priorityInType>
 		<fixedBillGiverDefs>
-	<!--	<li>BioRefinery</li>	-->
-	<!--	<li>TableOrganvat</li>	-->
+			<!--	<li>BioRefinery</li>	-->
+			<!--	<li>TableOrganvat</li>	-->
 			<li>meditable</li>
 		</fixedBillGiverDefs>
 		<verb>extract</verb>
@@ -573,7 +573,6 @@
 
 
 	<!-- ============= Research ============= -->
-
 
 
 </Defs>
