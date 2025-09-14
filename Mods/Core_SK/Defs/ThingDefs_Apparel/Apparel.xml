@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-<!-- DefOverwrite
+	<!-- DefOverwrite
 	<ThingDef Name="SK_ApparelNoQualityBase" Abstract="True">
 		<thingClass>Apparel</thingClass>
 		<category>Item</category>
@@ -34,7 +34,8 @@
 			</li>
 		</comps>
 	</ThingDef>
---><!-- DefOverwrite
+-->
+	<!-- DefOverwrite
 	<ThingDef Name="SK_ApparelBase" ParentName="SK_ApparelNoQualityBase" Abstract="True">
 		<comps>
 			<li>
@@ -263,7 +264,7 @@
 		</thingSetMakerTags>
 		<techLevel>Spacer</techLevel>
 		<comps>
-			<li Class="CompProperties_Biocodable"/>
+			<li Class="CompProperties_Biocodable" />
 		</comps>
 	</ThingDef>
 
@@ -300,7 +301,7 @@
 		</thingSetMakerTags>
 		<techLevel>Spacer</techLevel>
 		<comps>
-			<li Class="CompProperties_Biocodable"/>
+			<li Class="CompProperties_Biocodable" />
 		</comps>
 	</ThingDef>
 
@@ -343,6 +344,10 @@
 
 
 	<ThingDef Name="ArmorSpacerBase" ParentName="ArmorSpacerSimpleBase" Abstract="True">
+		<equippedStatOffsets>
+			<Insulation_Heat>10</Insulation_Heat>
+			<Insulation_Cold>20</Insulation_Cold>
+		</equippedStatOffsets>
 		<recipeMaker>
 			<workSpeedStat>SmithingSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
