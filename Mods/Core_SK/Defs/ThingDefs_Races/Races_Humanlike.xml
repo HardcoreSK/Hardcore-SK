@@ -349,6 +349,7 @@
             <li MayRequire="Ludeon.RimWorld.Anomaly">SurgicalInspection</li>
             <li MayRequire="Ludeon.RimWorld.Anomaly">BlissLobotomy</li>
             <li MayRequire="Ludeon.RimWorld.Anomaly">GhoulInfusion</li>
+            <li MayRequire="Ludeon.RimWorld.Odyssey">RemovePorcupineQuill</li>
         </recipes>
         <ingredient>
             <mergeCompatibilityTags>
@@ -466,7 +467,7 @@
             <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
             <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
         </race>
-        <comps/> <!-- Empty node for Facial Animations' patch -->
+        <comps /> <!-- Empty node for Facial Animations' patch -->
         <modExtensions>
             <li Class="CombatExtended.RacePropertiesExtensionCE">
                 <bodyShape>Humanoid</bodyShape>
@@ -1881,7 +1882,7 @@
                                         <li>FullHead</li>
                                     </hiddenUnderApparelFor>
                                 </Apparel>
-                               <Posture>
+                                <Posture>
                                     <drawnStanding>true</drawnStanding>
                                     <drawnLaying>true</drawnLaying>
                                     <drawnInBed>true</drawnInBed>
@@ -1976,7 +1977,7 @@
                                         <li>FullHead</li>
                                     </hiddenUnderApparelFor>
                                 </Apparel>
-								<Posture>
+                                <Posture>
                                     <drawnStanding>true</drawnStanding>
                                     <drawnLaying>true</drawnLaying>
                                     <drawnInBed>true</drawnInBed>
