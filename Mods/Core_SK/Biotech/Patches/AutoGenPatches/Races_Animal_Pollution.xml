@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/PawnKindDef[defName="WasteRat" or defName="Toxalope"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_AnimalKindBaseDummy</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/PawnKindDef[defName="WasteRat"]</xpath>
+		<value>
+			<combatPower>42</combatPower>
+			<canArriveManhunter>true</canArriveManhunter>
+		</value>
+	</Operation>
+
+		<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/PawnKindDef[defName="Toxalope"]</xpath>
+		<value>
+			<combatPower>90</combatPower>
+			<ecoSystemWeight>1.1</ecoSystemWeight>
+			<wildGroupSize>3~6</wildGroupSize>
+		</value>
+	</Operation>
+
+
+</Patch>

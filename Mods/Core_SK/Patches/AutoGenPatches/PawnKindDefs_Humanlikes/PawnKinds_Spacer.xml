@@ -16,6 +16,11 @@
     </value>
   </Operation>
 
+  <!--
+    Placeholder for future SpaceRefugee configuration.
+    Uncomment and update values as needed when implementing SpaceRefugee patch.
+  -->
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/PawnKindDef[defName="SpaceRefugee_Clothed"]</xpath>
     <value>
