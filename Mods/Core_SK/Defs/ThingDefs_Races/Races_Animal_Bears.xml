@@ -158,7 +158,7 @@
 		</statBases>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_BearKindBase">
+	<!-- <PawnKindDef ParentName="SK_BearKindBase">
 		<defName>Bear_Grizzly</defName>
 		<label>grizzly bear</label>
 		<race>Bear_Grizzly</race>
@@ -216,21 +216,16 @@
 			<li Class="SK.PawnGraphicExtension">
 				<colors>
 					<li>(140,110,65)</li>
-					<!-- Tan -->
 					<li>(140,90,35)</li>
-					<!-- Medium Brown -->
 					<li>(100,45,5)</li>
-					<!-- Dark Brown -->
 					<li>(80,50,40)</li>
-					<!-- Very Dark Brown -->
 					<li>(25,25,25)</li>
-					<!-- Near Black -->
 				</colors>
 				<shaderType>Cutout</shaderType>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
+ -->
 	<ThingDef ParentName="SK_BearThingBase">
 		<defName>Bear_Polar</defName>
 		<label>polar bear</label>
@@ -248,7 +243,7 @@
 		</race>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_BearKindBase">
+<!-- 	<PawnKindDef ParentName="SK_BearKindBase">
 		<defName>Bear_Polar</defName>
 		<label>polar bear</label>
 		<race>Bear_Polar</race>
@@ -300,7 +295,7 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
+ -->
 	<ThingDef ParentName="SK_BearThingBase">
 		<defName>PandaBear</defName>
 		<label>panda bear</label>

@@ -147,7 +147,7 @@
 		</race>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
 		<defName>Cat</defName>
 		<label>cat</label>
 		<race>Cat</race>
@@ -201,35 +201,23 @@
 			<li Class="SK.PawnGraphicExtension">
 				<colors>
 					<li>(225,225,225)</li>
-					<!-- White -->
 					<li>(215,215,215)</li>
-					<!-- Light Grey -->
 					<li>(125,125,125)</li>
-					<!-- Medium Grey -->
 					<li>(155,155,175)</li>
-					<!-- Light Blue Grey -->
 					<li>(90,95,105)</li>
-					<!-- Dark Blue Grey -->
 					<li>(210,145,95)</li>
-					<!-- Orange -->
 					<li>(225,215,180)</li>
-					<!-- Blonde -->
 					<li>(140,110,65)</li>
-					<!-- Tan -->
 					<li>(140,90,35)</li>
-					<!-- Medium Brown -->
 					<li>(100,45,5)</li>
-					<!-- Dark Brown -->
 					<li>(80,50,40)</li>
-					<!-- Very Dark Brown -->
 					<li>(25,25,25)</li>
-					<!-- Near Black -->
 				</colors>
 				<shaderType>Cutout</shaderType>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
+ -->
 	<PawnKindDef ParentName="SK_AnimalKindBase">
 		<defName>MiniMaineCoon</defName>
 		<label>miniature maine coon</label>

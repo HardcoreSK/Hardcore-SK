@@ -106,7 +106,7 @@
 		<description>This small, solitary herbivore can swiftly hop away from danger.</description>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_HareKindBase">
+<!-- 	<PawnKindDef ParentName="SK_HareKindBase">
 		<defName>Hare</defName>
 		<label>hare</label>
 		<race>Hare</race>
@@ -159,27 +159,19 @@
 			<li Class="SK.PawnGraphicExtension">
 				<colors>
 					<li>(225,225,225)</li>
-					<!-- White -->
 					<li>(215,215,215)</li>
-					<!-- Light Grey -->
 					<li>(125,125,125)</li>
-					<!-- Medium Grey -->
 					<li>(140,110,65)</li>
-					<!-- Tan -->
 					<li>(140,90,35)</li>
-					<!-- Medium Brown -->
 					<li>(100,45,5)</li>
-					<!-- Dark Brown -->
 					<li>(128,92,39)</li>
-					<!-- Lighter Dark Brown -->
 					<li>(147,100,31)</li>
-					<!-- Light Brown -->
 				</colors>
 				<shaderType>Cutout</shaderType>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
+ -->
 	<ThingDef ParentName="SK_HareThingBase">
 		<defName>Snowhare</defName>
 		<label>snow hare</label>
@@ -189,7 +181,7 @@
 		</statBases>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_HareKindBase">
+<!-- 	<PawnKindDef ParentName="SK_HareKindBase">
 		<defName>Snowhare</defName>
 		<label>snow hare</label>
 		<race>Snowhare</race>
@@ -239,17 +231,13 @@
 			<li Class="SK.PawnGraphicExtension">
 				<colors>
 					<li>(225,225,225)</li>
-					<!-- White -->
 					<li>(215,215,215)</li>
-					<!-- Lightest Grey -->
 					<li>(205,205,205)</li>
-					<!-- Light Grey -->
 					<li>(200,200,200)</li>
-					<!-- Less Light Grey -->
 				</colors>
 				<shaderType>Cutout</shaderType>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
+ -->
 </Defs>
