@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ScenarioDef Name="ScenarioBase" Abstract="True">
+	<!-- <ScenarioDef Name="ScenarioBase" Abstract="True">
 		<scenario>
 		  <playerFaction>
 			<def>PlayerFaction</def>
@@ -21,7 +21,7 @@
 		  </surfaceLayer>
 		  <parts>
 			
-			<!-- Layers -->
+			
 			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="ScenPart_PlanetLayer">
 			  <def>PlanetLayer</def>
 			  <tag>Orbit</tag>
@@ -37,7 +37,7 @@
 			
 		  </parts>
 		</scenario>
-	</ScenarioDef>
+	</ScenarioDef> -->
 
 	<ScenarioDef ParentName="ScenarioBase">
 		<defName>Classic</defName>
