@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="BionicEar" or 
+                          defName="BionicJaw" or
+                          defName="BionicSpine" or
+                          defName="BionicEye" or
+                          defName="BionicArm" or
+                          defName="BionicTongue" or
+                          defName="BionicLeg" or
+                          defName="PowerClaw"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.BodyPartBase_BionicDummy</value>
+  </Operation>
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="BionicEar"]</xpath>
     <value>

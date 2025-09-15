@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="ArchotechEye" or 
+                          defName="ArchotechArm" or
+                          defName="ArchotechLeg"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.BodyPartBase_CyberneticDummy</value>
+  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="ArchotechEye"]</xpath>
     <value>
