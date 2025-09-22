@@ -1143,6 +1143,8 @@
 			<li>CE_Embrasure</li>
 			<li>CE_BarbedWire</li>
 			<li>Moat</li>
+			<li MayRequire="ViTech.MedievalOverhaul">StakeWall</li>
+			<li MayRequire="ViTech.MedievalOverhaul">Valli</li>
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
@@ -1185,6 +1187,7 @@
 			<li>Turret_KPV</li>
 			<li>Turret_M2Browning</li>
 			<li>Turret_Minigun</li>
+			<li MayRequire="ArpoMo6.HMC.USSRWP">Turret_NSV_HMC</li>
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
@@ -1222,7 +1225,7 @@
 		<description>Various types of grenade launchers.</description>
 		<defNames>
 			<li>Turret_AGSThirty</li>
-			<li>Turret_AGS30GrenadeLauncher</li>
+			<li>Turret_AGLGrenadeLauncher</li>
 			<li>Turret_Mortar</li>
 		</defNames>
 		<designationCategory>Security</designationCategory>
