@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[@Name="BaseMechanoidWalker"]</xpath>
+		<value>
+			<butcherProducts>
+				<Plasteel>8</Plasteel>
+				<DepletedUranium>9</DepletedUranium>
+				<CarbonAlloy>6</CarbonAlloy>
+			</butcherProducts>
+		</value>
+	</Operation>
+</Patch>

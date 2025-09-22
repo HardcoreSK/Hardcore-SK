@@ -4,11 +4,11 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs</xpath>
 		<value>
-			<ThingDef Name="SK.SK_MechanoidThingBaseDummy" ParentName="SK_MechanoidThingBase" Abstract="True"/>
-			<PawnKindDef Name="SK.SK_BaseMechanoidKindDummy" ParentName="BaseMechanoidKind" Abstract="True"/>
+			<ThingDef Name="SK.SK_BaseMechanoidDummy" ParentName="SK_BaseMechanoid" Abstract="True" />
+			<ThingDef Name="SK.SK_BaseMechanoidWalkerDummy" ParentName="SK_BaseMechanoidWalker" Abstract="True" />
+			<PawnKindDef Name="SK.SK_BaseMechanoidKindDummy" ParentName="BaseMechanoidKind" Abstract="True" />
 		</value>
 	</Operation>
-	
-	
+
 
 </Patch>

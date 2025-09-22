@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- Large impassable and non-deconstructible buildings -->
-	<ThingDef Abstract="True" Name="NonDeconstructibleAncientBuildingBase" ParentName="BuildingBase">
+<!-- 	<ThingDef Abstract="True" Name="NonDeconstructibleAncientBuildingBase" ParentName="BuildingBase">
 		<building>
 			<deconstructible>false</deconstructible>
 			<claimable>false</claimable>
@@ -12,8 +12,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<Flammability>0</Flammability>
-			<!-- Non-deconstructible things need to be non-flammable for story-logical and gameplay reasons -->
 		</statBases>
 	</ThingDef>
-
+ -->
 </Defs>

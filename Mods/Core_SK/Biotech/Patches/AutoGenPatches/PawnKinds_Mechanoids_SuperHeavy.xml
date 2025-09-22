@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/PawnKindDef[defName="Mech_Apocriton"]</xpath>
-    <value>
-		<combatPower>900</combatPower>
-		<aiAvoidCover>false</aiAvoidCover>
-		<modExtensions>
-			<li Class="CombatExtended.LoadoutPropertiesExtension">
-				<primaryMagazineCount>
-					<min>9</min>
-					<max>10</max>
-				</primaryMagazineCount>
-			</li>
-		</modExtensions>
-    </value>
-  </Operation>
 
 </Patch>

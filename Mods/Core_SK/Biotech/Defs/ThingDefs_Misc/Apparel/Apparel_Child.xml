@@ -3,7 +3,7 @@
 
   <!-- Kid clothing -->
 
-  <ThingDef MayRequire="Ludeon.RimWorld.Biotech" Name="ApparelChildNeoliticBase" ParentName="ApparelNeoliticBase" Abstract="True">
+  <ThingDef Name="ApparelChildNeoliticBase" ParentName="ApparelNeoliticBase" Abstract="True">
     <thingCategories>
       <li>ApparelMisc</li>
     </thingCategories>
@@ -27,7 +27,7 @@
 	</recipeMaker>
   </ThingDef>
 
-  <ThingDef MayRequire="Ludeon.RimWorld.Biotech" Name="ApparelChildMedievalBase" ParentName="ApparelMedievalBase" Abstract="True">
+  <ThingDef Name="ApparelChildMedievalBase" ParentName="ApparelMedievalBase" Abstract="True">
     <thingCategories>
       <li>ApparelMisc</li>
     </thingCategories>
@@ -50,7 +50,7 @@
 	</recipeMaker>
   </ThingDef>
 
-  <ThingDef MayRequire="Ludeon.RimWorld.Biotech" Name="ApparelChildIndustrialBase" ParentName="ApparelIndustrialBase" Abstract="True">
+  <ThingDef Name="ApparelChildIndustrialBase" ParentName="ApparelIndustrialBase" Abstract="True">
     <thingCategories>
       <li>ApparelMisc</li>
     </thingCategories>
@@ -68,7 +68,7 @@
     <smeltable>false</smeltable>
   </ThingDef>
 
-  <ThingDef MayRequire="Ludeon.RimWorld.Biotech" Name="ApparelChildSpacerBase" ParentName="ApparelSpacerBase" Abstract="True">
+  <ThingDef Name="ApparelChildSpacerBase" ParentName="ApparelSpacerBase" Abstract="True">
     <thingCategories>
       <li>ApparelMisc</li>
     </thingCategories>
