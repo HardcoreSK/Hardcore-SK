@@ -6,11 +6,11 @@
 		<xpath>Defs/ThingDef[defName="UnfinishedSteeledTechArmor"]</xpath>
 	</Operation>
 	
-	<Operation Class="PatchOperationAttributeSet">
+<!-- 	<Operation Class="PatchOperationAttributeSet">
 		<xpath>Defs/ThingDef[defName="UnfinishedTurretGun"]</xpath>
 		<attribute>ParentName</attribute>
 		<value>SK.SK_UnfinishedBaseDummy</value>
-	</Operation>
+	</Operation> -->
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="UnfinishedTurretGun"]</xpath>
 		<value>
@@ -54,11 +54,11 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
+<!-- 	<Operation Class="PatchOperationAttributeSet">
 		<xpath>Defs/ThingDef[defName="UnfinishedShield"]</xpath>
 		<attribute>ParentName</attribute>
 		<value>SK.SK_UnfinishedBaseDummy</value>
-	</Operation>
+	</Operation> -->
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="UnfinishedShield"]</xpath>
 		<value>

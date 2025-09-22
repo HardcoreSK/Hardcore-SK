@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef Name="MusicalInstrumentBase" ParentName="BuildingBase" Abstract="True">
+<!-- 	<ThingDef Name="MusicalInstrumentBase" ParentName="BuildingBase" Abstract="True">
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -48,9 +48,9 @@
 		<placeWorkers>
 			<li>PlaceWorker_ShowInstrumentAoE</li>
 		</placeWorkers>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="SK_UnfinishedBase">
+<!-- 	<ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedMusicalInstrument</defName>
 		<label>unfinished musical instrument</label>
 		<description>An unfinished musical instrument.</description>
@@ -61,6 +61,6 @@
 			<texPath>Things/Item/Unfinished/UnfinishedMusicalInstrument</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-	</ThingDef>
+	</ThingDef> -->
 
 </Defs>

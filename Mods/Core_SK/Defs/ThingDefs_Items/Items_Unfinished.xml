@@ -2,7 +2,7 @@
 <Defs>
 
 
-	<ThingDef Name="SK_UnfinishedBase" Abstract="True">
+	<!-- <ThingDef Name="UnfinishedBase" Abstract="True">
 		<thingClass>UnfinishedThing</thingClass>
 		<category>Item</category>
 		<label>unfinished thing</label>
@@ -17,13 +17,11 @@
 		<selectable>true</selectable>
 		<tradeability>None</tradeability>
 		<drawerType>MapMeshOnly</drawerType>
-		<!-- For CompForbiddable -->
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<DeteriorationRate>2.0</DeteriorationRate>
 			<Beauty>-4</Beauty>
 			<Mass>1</Mass>
-			<!-- ingredients are added to this value -->
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Forbiddable" />
@@ -40,9 +38,9 @@
 			<li>Woody</li>
 			<li>Stony</li>
 		</stuffCategories>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="SK_UnfinishedBase">
+	<ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedTurretMedieval</defName>
 		<label>Unfinished medieval turret</label>
 		<description>An unfinished medieval turret.</description>
@@ -53,7 +51,7 @@
 		<stuffCategories Inherit="false" />
 	</ThingDef>
 
-	<ThingDef ParentName="SK_UnfinishedBase">
+	<ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedTurretHiTech</defName>
 		<label>Unfinished HiTech turret</label>
 		<description>An unfinished HiTech turret.</description>
@@ -64,7 +62,7 @@
 		<stuffCategories Inherit="false" />
 	</ThingDef>
 
-	<ThingDef ParentName="SK_UnfinishedBase">
+	<ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedBalls</defName>
 		<label>Unfinished stone ball</label>
 		<description>An unfinished stone ball.</description>
@@ -75,7 +73,7 @@
 		<stuffCategories Inherit="false" />
 	</ThingDef>
 
-	<ThingDef ParentName="SK_UnfinishedBase">
+	<!-- ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedSculpture</defName>
 		<label>Unfinished sculpture</label>
 		<description>An unfinished sculpture.</description>
@@ -91,7 +89,7 @@
 		</stuffCategories>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_UnfinishedBase">
+	<ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedGun</defName>
 		<label>unfinished gun</label>
 		<description>An unfinished gun of some kind.</description>
@@ -105,7 +103,7 @@
 		<stuffCategories Inherit="false" />
 	</ThingDef>
 
-	<ThingDef ParentName="SK_UnfinishedBase">
+	<ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedWeapon</defName>
 		<label>Unfinished weapon</label>
 		<description>An unfinished weapon.</description>
@@ -120,7 +118,7 @@
 		</stuffCategories>
 	</ThingDef>
 
-	<ThingDef Name="SK_UnfinishedTechArmor" ParentName="SK_UnfinishedBase">
+	<ThingDef Name="SK_UnfinishedTechArmor" ParentName="UnfinishedBase">
 		<defName>UnfinishedTechArmor</defName>
 		<label>unfinished hitech armor</label>
 		<description>An unfinished piece of armor.</description>
@@ -129,9 +127,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories Inherit="false" />
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="SK_UnfinishedTechArmor">
+	<ThingDef ParentName="UnfinishedTechArmor">
 		<defName>UnfinishedMetallicTechArmor</defName>
 		<description>An unfinished piece of armor.</description>
 		<stuffCategories>
@@ -139,7 +137,7 @@
 		</stuffCategories>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_UnfinishedBase">
+	<!-- <ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedArmor</defName>
 		<label>Unfinished armor</label>
 		<description>An unfinished piece of armor.</description>
@@ -158,9 +156,9 @@
 				<compClass>CompColorable</compClass>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="SK_UnfinishedBase">
+	<ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedMetallicApparel</defName>
 		<label>Unfinished mettalic apparel</label>
 		<description>An unfinished piece of armor.</description>
@@ -178,7 +176,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_UnfinishedBase">
+	<!-- <ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedApparel</defName>
 		<label>unfinished apparel</label>
 		<description>An unfinished piece of armor.</description>
@@ -199,7 +197,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_UnfinishedBase">
+	<ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedBelt</defName>
 		<label>unfinished belt</label>
 		<description>An unfinished piece of a belt.</description>
@@ -210,7 +208,7 @@
 		<stuffCategories Inherit="false" />
 	</ThingDef>
 
-	<ThingDef ParentName="SK_UnfinishedBase">
+	<ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedPack</defName>
 		<label>unfinished pack</label>
 		<description>An unfinished piece of a pack.</description>
@@ -224,7 +222,7 @@
 		<stuffCategories Inherit="false" />
 	</ThingDef>
 
-	<ThingDef ParentName="SK_UnfinishedBase">
+	<ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedComponent</defName>
 		<label>unfinished component</label>
 		<description>An unfinished component.</description>
@@ -235,7 +233,7 @@
 		<stuffCategories Inherit="false" />
 	</ThingDef>
 
-	<ThingDef ParentName="SK_UnfinishedBase">
+	<ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedHealthItemProsthetic</defName>
 		<label>unfinished prosthetic</label>
 		<description>An unfinished prosthetic.</description>
@@ -247,7 +245,7 @@
 		<stuffCategories Inherit="false" />
 	</ThingDef>
 
-	<ThingDef ParentName="SK_UnfinishedBase">
+	<ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedHealthItemBionic</defName>
 		<label>unfinished bionic</label>
 		<description>An unfinished bionic.</description>
@@ -257,9 +255,9 @@
 			<color>(189,169,118)</color>
 		</graphicData>
 		<stuffCategories Inherit="false" />
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="SK_UnfinishedBase">
+	<ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedHealthItemCybernetic</defName>
 		<label>unfinished cybernetic</label>
 		<description>An unfinished cybernetic.</description>
@@ -271,7 +269,7 @@
 		<stuffCategories Inherit="false" />
 	</ThingDef>
 
-	<ThingDef ParentName="SK_UnfinishedBase">
+<!-- 	<ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedMask</defName>
 		<label>unfinished mask</label>
 		<description>An unfinished mask.</description>
@@ -280,6 +278,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories Inherit="false" />
-	</ThingDef>
+	</ThingDef> -->
 
 </Defs>
