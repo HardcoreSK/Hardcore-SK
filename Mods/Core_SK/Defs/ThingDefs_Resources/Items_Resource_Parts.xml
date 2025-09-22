@@ -165,6 +165,9 @@
 			<li>Canware</li>
 		</thingCategories>
 		<stackLimit>200</stackLimit>
+		<modExtensions>
+			<li Class="SK.ModExt_ExcludeFromIngredient"/>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="CropsBase">
