@@ -45,7 +45,7 @@
 	</ThingDef>
 
 
-	<ThingDef Name="SK_TrapIEDBase" ParentName="BuildingBase" Abstract="True">
+	<!-- <ThingDef Name="SK_TrapIEDBase" ParentName="BuildingBase" Abstract="True">
 		<thingClass>Building_TrapExplosive</thingClass>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -84,9 +84,9 @@
 		<placeWorkers>
 			<li>PlaceWorker_NeverAdjacentTrap</li>
 		</placeWorkers>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="TrapMechanicBase">
+	<!-- <ThingDef ParentName="TrapMechanicBase">
 		<defName>TrapSpike</defName>
 		<label>spike trap</label>
 		<description>Five spikes under tension, connected to a touch-activated trigger. When the victim disturbs the trigger, the spikes spring forthm and strike the victim. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
@@ -117,10 +117,10 @@
 				<shaderType>Cutout</shaderType>
 			</trapUnarmedGraphicData>
 		</building>
-	</ThingDef>
+	</ThingDef> -->
 
 
-	<ThingDef ParentName="SK_TrapIEDBase">
+	<!-- <ThingDef ParentName="SK_TrapIEDBase">
 		<defName>TrapIED_HighExplosive</defName>
 		<label>IED trap</label>
 		<graphicData>
@@ -157,10 +157,10 @@
 		<researchPrerequisites>
 			<li>IED_C1</li>
 		</researchPrerequisites>
-	</ThingDef>
+	</ThingDef> -->
 
 
-	<ThingDef ParentName="SK_TrapIEDBase">
+	<!-- <ThingDef ParentName="SK_TrapIEDBase">
 		<defName>TrapIED_Incendiary</defName>
 		<label>IED incendiary trap</label>
 		<thingClass>Building_TrapExplosive</thingClass>
@@ -193,9 +193,9 @@
 			<li>IED_C1</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="SK_TrapIEDBase">
+	<!-- <ThingDef ParentName="SK_TrapIEDBase">
 		<defName>TrapIED_EMP</defName>
 		<label>IED EMP trap</label>
 		<description>A simple trap consisting of an EMP shell and a homemade trigger. The explosion can paralyze mechanical creatures for a few seconds. Can be triggered even by those who are unaffacted by EMP explosions.</description>
@@ -226,9 +226,9 @@
 			<li>IED_C1</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="TrapIEDBase">
+	<!-- <ThingDef ParentName="TrapIEDBase">
 		<defName>TrapIED_Smoke</defName>
 		<label>IED Smoke trap</label>
 		<description>A pair of smoke shells connected to a trigger which detonates on touch or bullet impact. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
@@ -257,9 +257,9 @@
 			</li>
 		</comps>
 		<specialDisplayRadius>8.6</specialDisplayRadius>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="SK_TrapIEDBase">
+	<!-- <ThingDef ParentName="SK_TrapIEDBase">
 		<defName>TrapIED_Firefoam</defName>
 		<label>IED firefoam trap</label>
 		<description>When someone touches the trigger, the trap explodes and sprays a fire-extinguishing foam around itself.</description>
@@ -295,9 +295,9 @@
 			<li>IED_C1</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="SK_TrapIEDBase">
+	<!-- <ThingDef ParentName="SK_TrapIEDBase">
 		<defName>TrapIED_AntigrainWarhead</defName>
 		<label>IED antigrain warhead trap</label>
 		<description>A tiny warhead connected to a homemade trigger. Creates a huge explosion and starts fires around itself when disturbed.</description>
@@ -331,6 +331,6 @@
 			<li>IED_C1</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
-	</ThingDef>
+	</ThingDef> -->
 
 </Defs>

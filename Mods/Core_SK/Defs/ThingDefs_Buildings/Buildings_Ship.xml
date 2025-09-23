@@ -1,9 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!-- Beam -->
 
 	<ThingDef Name="ShipBase" ParentName="BuildingBase" Abstract="True">
+		<category>Building</category>
 		<canOverlapZones>false</canOverlapZones>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
@@ -15,16 +16,17 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
 			<shipPart>true</shipPart>
+			<isEdifice>true</isEdifice>
 		</building>
 		<comps>
-			<li Class="CompProperties_ShipPart"/>
+			<li Class="CompProperties_ShipPart" />
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
 	</ThingDef>
 
-	<ThingDef ParentName="ShipBase">
+	<!-- <ThingDef ParentName="ShipBase">
 		<defName>Ship_Beam</defName>
 		<label>ship structural beam</label>
 		<description>A structural beam around which a starship can be constructed. Includes all the necessary conduits and transit pipes for communications, power, and materials transport.</description>
@@ -75,11 +77,11 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
 	</ThingDef>
-
+ -->
 
 	<!-- Cryptosleep casket -->
 
-	<ThingDef ParentName="ShipBase">
+	<!-- 	<ThingDef ParentName="ShipBase">
 		<defName>Ship_CryptosleepCasket</defName>
 		<label>ship cryptosleep casket</label>
 		<description>A cryptosleep casket hardened against the dangers of space. Capable of maintaining a person in cryptosleep for centuries and surviving atmospheric re-entry.</description>
@@ -138,11 +140,11 @@
 		</costList>
 		<constructionSkillPrerequisite>16</constructionSkillPrerequisite>
 	</ThingDef>
-
+ -->
 
 	<!-- Computer core -->
 
-	<ThingDef ParentName="ShipBase">
+	<!-- 	<ThingDef ParentName="ShipBase">
 		<defName>Ship_ComputerCore</defName>
 		<label>ship computer core</label>
 		<thingClass>Building_ShipComputerCore</thingClass>
@@ -188,10 +190,10 @@
 		</building>
 		<constructionSkillPrerequisite>19</constructionSkillPrerequisite>
 	</ThingDef>
-
+ -->
 
 	<!-- Reactor -->
-	<ThingDef ParentName="ShipBase">
+	<!-- <ThingDef ParentName="ShipBase">
 		<defName>Ship_Reactor</defName>
 		<label>ship reactor</label>
 		<description>Powers a ship on its journey between stars. Takeoff requires a long powerup process that is likely to attract raiders.</description>
@@ -249,10 +251,10 @@
 		<defaultPlacingRot>East</defaultPlacingRot>
 		<constructionSkillPrerequisite>19</constructionSkillPrerequisite>
 	</ThingDef>
-
+ -->
 
 	<!-- Engine -->
-	<ThingDef ParentName="ShipBase">
+	<!-- 	<ThingDef ParentName="ShipBase">
 		<defName>Ship_Engine</defName>
 		<label>ship engine</label>
 		<description>A reactionless Johnson-Tanaka drive capable of launching a ship into orbit, and crawling across the vast expanses between stars.</description>
@@ -297,9 +299,9 @@
 		</building>
 		<constructionSkillPrerequisite>18</constructionSkillPrerequisite>
 	</ThingDef>
-
+ -->
 	<!-- Sensor cluster -->
-	<ThingDef ParentName="ShipBase">
+	<!-- 	<ThingDef ParentName="ShipBase">
 		<defName>Ship_SensorCluster</defName>
 		<label>sensor cluster</label>
 		<description>A multi-function sensor module. Can scan and signal across the void for communications, threat detection, deception, jamming, and other purposes.</description>
@@ -337,5 +339,5 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>19</constructionSkillPrerequisite>
 	</ThingDef>
-
+ -->
 </Defs>

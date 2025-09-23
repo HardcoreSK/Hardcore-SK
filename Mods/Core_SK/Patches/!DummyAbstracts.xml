@@ -42,7 +42,7 @@
 			<ThingDef Name="SK.BodyPartBase_BionicDummy" ParentName="BodyPartBase_Bionic" Abstract="True" />
 			<ThingDef Name="SK.BodyPartBase_CyberneticDummy" ParentName="BodyPartBase_Cybernetic" Abstract="True" />
 			<ThingDef Name="SK.BodyPartBaseDummy" ParentName="BodyPartBase" Abstract="True" />
-			
+
 
 			<ThingDef Name="SK.SK_BaseGunDummy" ParentName="SK_BaseGun" Abstract="True" />
 			<ThingDef Name="SK.BaseGun_TurretDummy" ParentName="BaseGun_Turret" Abstract="True" />
@@ -56,6 +56,12 @@
 			<ThingDef Name="SK.SK_MetalChunkBaseDummy" ParentName="SK_MetalChunkBase" Abstract="True" />
 
 			<ThingDef Name="SK.SK_MoteBaseDummy" ParentName="SK_MoteBase" Abstract="True" />
+
+			<ThingDef Name="SK.ShipBaseDummy" ParentName="ShipBase" Abstract="True" />
+
+			<ThingDef Name="SK.TrapMechanicBaseDummy" ParentName="TrapMechanicBase" Abstract="True" />
+			<!-- <ThingDef Name="SK.SK_TrapIEDBaseDummy" ParentName="SK_TrapIEDBase" Abstract="True" /> -->
+			<!-- <ThingDef Name="SK.TrapIEDBaseDummy" ParentName="TrapIEDBase" Abstract="True" /> -->
 
 			<ThingDef Name="SK.VG_MakeableDrugBaseDummy" ParentName="VG_MakeableDrugBase" Abstract="True" />
 			<PawnKindDef Name="SK.SK_AnimalKindBaseDummy" ParentName="SK_AnimalKindBase" Abstract="True" />

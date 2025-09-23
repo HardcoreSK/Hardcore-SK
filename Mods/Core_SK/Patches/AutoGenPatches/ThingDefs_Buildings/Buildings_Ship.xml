@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Patch>
+
+<!-- 	<Operation Class="PatchOpeationAdd">
+		<xpath>Defs</xpath>
+		<value>
+			<ThingDef Name="ShipBase" ParentName="BuildingBase" Abstract="True">
+				<category>Building</category>
+				<canOverlapZones>false</canOverlapZones>
+				<altitudeLayer>Building</altitudeLayer>
+				<passability>Impassable</passability>
+				<fillPercent>1</fillPercent>
+				<pathCost>70</pathCost>
+				<blockLight>true</blockLight>
+				<tickerType>Normal</tickerType>
+				<designationCategory>Ship</designationCategory>
+				<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+				<building>
+					<shipPart>true</shipPart>
+					<isEdifice>true</isEdifice>
+				</building>
+				<comps>
+					<li Class="CompProperties_ShipPart" />
+				</comps>
+				<placeWorkers>
+					<li>PlaceWorker_NotUnderRoof</li>
+				</placeWorkers>
+			</ThingDef>
+		</value>
+	</Operation> -->
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="Ship_Beam" or defName="Ship_CryptosleepCasket" or defName="Ship_ComputerCore" or defName="Ship_Reactor" or defName="Ship_Engine" or defName="Ship_SensorCluster" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.ShipBaseDummy</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Ship_Beam"]</xpath>
+		<value>
+			<blockWind>true</blockWind>
+			<statBases Merge="True">
+				<WorkToBuild>15000</WorkToBuild>
+				<Flammability>1.0</Flammability>
+			</statBases>
+			<comps>
+				<li Class="CompProperties_Power">
+					<compClass>CompPowerTransmitter</compClass>
+					<transmitsPower>true</transmitsPower>
+				</li>
+			</comps>
+			<stuffCategories>
+				<li>SolidMetallic</li>
+			</stuffCategories>
+			<costStuffCount>150</costStuffCount>
+			<costList>
+				<BiosyntheticMaterial>15</BiosyntheticMaterial>
+				<MagneticMaterial>15</MagneticMaterial>
+				<ComponentUltra>15</ComponentUltra>
+				<AdvMechanism>5</AdvMechanism>
+			</costList>
+			<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Ship_CryptosleepCasket"]</xpath>
+		<value>
+			<drawerType>MapMeshAndRealTime</drawerType>
+			<pathCost>70</pathCost>
+			<fillPercent>0.5</fillPercent>
+			<statBases Merge="True">
+				<WorkToBuild>11000</WorkToBuild>
+			</statBases>
+			<comps>
+				<li Class="CompProperties_Power">
+					<compClass>CompPowerTransmitter</compClass>
+					<transmitsPower>true</transmitsPower>
+				</li>
+				<li Class="CompProperties_Explosive">
+					<explosiveRadius>2.66</explosiveRadius>
+					<explosiveDamageType>Flame</explosiveDamageType>
+				</li>
+			</comps>
+			<placeWorkers>
+				<li>PlaceWorker_HeadOnShipBeam</li>
+			</placeWorkers>
+			<stuffCategories>
+				<li>SolidMetallic</li>
+			</stuffCategories>
+			<costStuffCount>60</costStuffCount>
+			<costList>
+				<Glass>25</Glass>
+				<BiosyntheticMaterial>20</BiosyntheticMaterial>
+				<ComponentUltra>8</ComponentUltra>
+				<Microchips>2</Microchips>
+			</costList>
+			<constructionSkillPrerequisite>16</constructionSkillPrerequisite>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Ship_ComputerCore"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<WorkToBuild>21000</WorkToBuild>
+				<Flammability>1.0</Flammability>
+			</statBases>
+			<comps>
+				<li Class="CompProperties_Power">
+					<compClass>CompPowerTransmitter</compClass>
+					<transmitsPower>true</transmitsPower>
+				</li>
+			</comps>
+			<stuffCategories>
+				<li>RareMetallic</li>
+			</stuffCategories>
+			<costStuffCount>50</costStuffCount>
+			<costList>
+				<MagneticMaterial>20</MagneticMaterial>
+				<ComponentUltra>7</ComponentUltra>
+				<BioMicrochips>2</BioMicrochips>
+				<AIPersonaCore>1</AIPersonaCore>
+			</costList>
+			<constructionSkillPrerequisite>19</constructionSkillPrerequisite>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Ship_Reactor"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<WorkToBuild>30000</WorkToBuild>
+				<Flammability>1.0</Flammability>
+			</statBases>
+			<stuffCategories>
+				<li>SolidMetallic</li>
+			</stuffCategories>
+			<costStuffCount>120</costStuffCount>
+			<costList>
+				<MagneticMaterial>30</MagneticMaterial>
+				<BiosyntheticMaterial>20</BiosyntheticMaterial>
+				<ComponentUltra>6</ComponentUltra>
+				<AdvMechanism>8</AdvMechanism>
+				<Microchips>5</Microchips>
+			</costList>
+			<comps>
+				<li Class="CompProperties_Power">
+					<compClass>CompPowerTrader</compClass>
+					<basePowerConsumption>-1000</basePowerConsumption>
+					<transmitsPower>true</transmitsPower>
+				</li>
+				<li Class="CompProperties_Hibernatable">
+					<incidentTargetWhileStarting>Map_RaidBeacon</incidentTargetWhileStarting>
+					<sustainerActive>ShipReactor_Ambience</sustainerActive>
+				</li>
+			</comps>
+			<constructionSkillPrerequisite>19</constructionSkillPrerequisite>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Ship_Engine"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<WorkToBuild>27000</WorkToBuild>
+				<Flammability>1.0</Flammability>
+			</statBases>
+			<comps>
+				<li Class="CompProperties_Power">
+					<compClass>CompPowerTransmitter</compClass>
+					<transmitsPower>true</transmitsPower>
+				</li>
+			</comps>
+			<stuffCategories>
+				<li>SolidMetallic</li>
+			</stuffCategories>
+			<costStuffCount>100</costStuffCount>
+			<costList>
+				<MagneticMaterial>20</MagneticMaterial>
+				<ComponentUltra>8</ComponentUltra>
+				<BiosyntheticMaterial>15</BiosyntheticMaterial>
+				<AdvMechanism>15</AdvMechanism>
+			</costList>
+			<constructionSkillPrerequisite>18</constructionSkillPrerequisite>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Ship_SensorCluster"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<WorkToBuild>25000</WorkToBuild>
+				<Flammability>1.0</Flammability>
+			</statBases>
+			<comps>
+				<li Class="CompProperties_Power">
+					<compClass>CompPowerTransmitter</compClass>
+					<transmitsPower>true</transmitsPower>
+				</li>
+			</comps>
+			<costList>
+				<MagneticMaterial>15</MagneticMaterial>
+				<ComponentUltra>6</ComponentUltra>
+				<Microchips>4</Microchips>
+			</costList>
+			<constructionSkillPrerequisite>19</constructionSkillPrerequisite>
+		</value>
+	</Operation>
+
+</Patch>
