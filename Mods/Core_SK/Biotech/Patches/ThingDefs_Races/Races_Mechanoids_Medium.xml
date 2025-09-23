@@ -2,13 +2,24 @@
 <Patch>
 
 	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ThingDef[defName="Mech_Legionary" or defName="Mech_Tesseron" or defName="Mech_Apocriton"]</xpath>
+		<xpath>Defs/ThingDef[defName="Mech_Apocriton"]</xpath>
 		<attribute>ParentName</attribute>
 		<value>SK.SK_BaseMechanoidWalkerDummy</value>
 	</Operation>
 
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[@Name="BaseMechanoidWalker"]</xpath>
+		<value>
+			<butcherProducts>
+				<Plasteel>8</Plasteel>
+				<DepletedUranium>9</DepletedUranium>
+				<CarbonAlloy>6</CarbonAlloy>
+			</butcherProducts>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Mech_Legionary" or defName="Mech_Tesseron"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName="Mech_Tesseron"]/comps</xpath>
 		<value>
 			<li Class="CombatExtended.CompProperties_ArmorDurability">
 				<Durability>1000</Durability>

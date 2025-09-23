@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-<!-- 
+	<!-- 
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[@Name="MechCentipede"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -72,7 +72,7 @@
 			</comps>
 		</value>
 	</Operation>-->
-<!-- 
+	<!-- 
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="Mech_Scyther"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -108,7 +108,7 @@
 			</li>
 		</value>
 	</Operation>
-<!-- 
+	<!-- 
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="Mech_Lancer"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -119,6 +119,116 @@
 		</nomatch>
 	</Operation>
  -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Mech_Lancer"]</xpath>
+		<value>
+			<description>Lancer are agile, lanky, human-sized combat Mechanoids. They usually carry one primary ranged weapon, and their bodies are adorned with two articulated blades to make them deadly in melee combat. They don't use cover. Best handled by concentrated, overwhelming force.</description>
+			<statBases>
+				<Mass>90</Mass>
+				<MoveSpeed>5.3</MoveSpeed>
+				<ArmorRating_Blunt>6</ArmorRating_Blunt>
+				<ArmorRating_Sharp>4</ArmorRating_Sharp>
+				<MeatAmount>0</MeatAmount>
+				<CarryWeight>120</CarryWeight>
+				<CarryBulk>60</CarryBulk>
+				<MaxHitPoints>200</MaxHitPoints>
+				<AimingAccuracy>1.0</AimingAccuracy>
+				<ShootingAccuracyPawn>2.6</ShootingAccuracyPawn>
+				<MeleeDodgeChance>0.1</MeleeDodgeChance>
+				<MeleeCritChance>0.15</MeleeCritChance>
+				<MeleeParryChance>0.22</MeleeParryChance>
+				<NightVisionEfficiency>0.9</NightVisionEfficiency>
+				<BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>
+			</statBases>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>left fist</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>12</power>
+					<cooldownTime>1.21</cooldownTime>
+					<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+					<armorPenetrationSharp>11</armorPenetrationSharp>
+					<armorPenetrationBlunt>8.688</armorPenetrationBlunt>
+					<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right fist</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>12</power>
+					<cooldownTime>1.21</cooldownTime>
+					<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+					<armorPenetrationSharp>11</armorPenetrationSharp>
+					<armorPenetrationBlunt>8.688</armorPenetrationBlunt>
+					<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>11</power>
+					<cooldownTime>1.85</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationSharp>0</armorPenetrationSharp>
+					<armorPenetrationBlunt>9.625</armorPenetrationBlunt>
+				</li>
+			</tools>
+			<race>
+				<intelligence>ToolUser</intelligence>
+				<thinkTreeMain>Mechanoid</thinkTreeMain>
+				<body>Lancer</body>
+				<baseBodySize>1.0</baseBodySize>
+				<baseHealthScale>2.8</baseHealthScale>
+				<lifeStageAges Inherit="False">
+					<li>
+						<def>MechanoidFullyFormed</def>
+						<minAge>0</minAge>
+						<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+						<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+						<soundCall>Pawn_Mech_Scyther_Call</soundCall>
+					</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
+						<def>MechanoidFullyFormed</def>
+						<minAge>100</minAge>
+						<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+						<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+						<soundCall>Pawn_Mech_Scyther_Call</soundCall>
+					</li>
+				</lifeStageAges>
+				<soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+				<soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+				<soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+				<detritusLeavings>
+					<li>
+						<def>ChunkMechanoidSlag</def>
+						<texOverrideIndex>11</texOverrideIndex>
+						<spawnChance>0.1</spawnChance>
+					</li>
+					<li>
+						<def>ChunkMechanoidSlag</def>
+						<texOverrideIndex>12</texOverrideIndex>
+						<spawnChance>0.1</spawnChance>
+					</li>
+				</detritusLeavings>
+			</race>
+			<butcherProducts>
+				<Plasteel>4</Plasteel>
+				<DepletedUranium>5</DepletedUranium>
+				<CarbonAlloy>3</CarbonAlloy>
+			</butcherProducts>
+			<modExtensions>
+				<li Class="CombatExtended.RacePropertiesExtensionCE">
+					<bodyShape>Humanoid</bodyShape>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Mech_Lancer"]/comps/li[@Class="CombatExtended.CompProperties_ArmorDurability"]</xpath>
 		<value>
@@ -144,7 +254,7 @@
 			</li>
 		</value>
 	</Operation>
-<!-- 
+	<!-- 
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="Mech_Pikeman"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -256,7 +366,7 @@
 			</tools>
 		</value>
 	</Operation>
-<!-- 
+	<!-- 
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="Mech_Termite"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
