@@ -910,6 +910,9 @@ Many things can cause this, excess rainfall, decay of organic matter, the use of
 		<defName>RageVirus</defName>
 		<label>rage virus</label>
 		<workerClass>SK.Events.IncidentWorker_RageVirus</workerClass>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
 		<pointsScaleable>true</pointsScaleable>
 		<category>ThreatSmall</category>
 		<minRefireDays>80</minRefireDays>
