@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<IncidentDef>
@@ -73,7 +73,7 @@
 			</li>
 		</modExtensions>
 	</IncidentDef>
-	
+
 	<IncidentDef>
 		<defName>IceVortex</defName>
 		<label>Ice vortex</label>
@@ -469,7 +469,7 @@ Many things can cause this, excess rainfall, decay of organic matter, the use of
 		</targetTags>
 		<workerClass>SK.Events.IncidentWorker_Malaria</workerClass>
 		<gameCondition>Epidemic</gameCondition>
-		<letterText/>
+		<letterText />
 		<letterDef>PurpleEvent</letterDef>
 		<baseChance>1.1</baseChance>
 		<earliestDay>30</earliestDay>
@@ -525,7 +525,7 @@ Many things can cause this, excess rainfall, decay of organic matter, the use of
 		</targetTags>
 		<workerClass>SK.Events.IncidentWorker_StorytellerFrenzyEvent</workerClass>
 		<gameCondition>StorytellerFrenzyRandom</gameCondition>
-		<letterText/>
+		<letterText />
 		<letterDef>PurpleEvent</letterDef>
 		<baseChance>1.3</baseChance>
 		<earliestDay>70</earliestDay>
@@ -552,7 +552,7 @@ Many things can cause this, excess rainfall, decay of organic matter, the use of
 		<disabledWhen>
 			<extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
 		</disabledWhen>
-	</IncidentDef> 
+	</IncidentDef>
 
 	<IncidentDef>
 		<defName>SkyFall</defName>
@@ -681,7 +681,7 @@ Many things can cause this, excess rainfall, decay of organic matter, the use of
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<workerClass>SK.IncidentWorker_IcicatPasses</workerClass>    
+		<workerClass>SK.IncidentWorker_IcicatPasses</workerClass>
 		<gameCondition>KirinColdsnap</gameCondition>
 		<category>Misc</category>
 		<letterLabel>Cold Snap</letterLabel>
@@ -907,6 +907,17 @@ Many things can cause this, excess rainfall, decay of organic matter, the use of
 	</IncidentDef>
 
 	<IncidentDef>
+		<defName>RageVirus</defName>
+		<label>rage virus</label>
+		<workerClass>SK.Events.IncidentWorker_RageVirus</workerClass>
+		<pointsScaleable>true</pointsScaleable>
+		<category>ThreatSmall</category>
+		<minRefireDays>80</minRefireDays>
+		<baseChance>0.8</baseChance>
+		<earliestDay>125</earliestDay>
+	</IncidentDef>
+
+	<IncidentDef>
 		<defName>ColonistStash</defName>
 		<label>colonist stash</label>
 		<targetTags>
@@ -1007,7 +1018,7 @@ Many things can cause this, excess rainfall, decay of organic matter, the use of
 		<baseChance>0</baseChance>
 		<populationEffect>IncreaseEasy</populationEffect>
 	</IncidentDef>
-<!--
+	<!--
 	<IncidentDef>
 		<defName>TraitChange</defName>
 		<label>trait change</label>
