@@ -18,9 +18,9 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Mech_Tesseron"]/comps</xpath>
-		<value>
+		<value Merge="True">
 			<li Class="CombatExtended.CompProperties_ArmorDurability">
 				<Durability>1000</Durability>
 				<Regenerates>true</Regenerates>
@@ -37,7 +37,6 @@
 				<MaxOverHeal>100</MaxOverHeal>
 				<MinArmorPct>0.75</MinArmorPct>
 			</li>
-
 		</value>
 	</Operation>
 
