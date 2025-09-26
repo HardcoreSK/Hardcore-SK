@@ -1,0 +1,643 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Nudist"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Bloodlust"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Kind"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>2</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Psychopath"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Cannibal"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>2</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="TooSmart"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>3</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Brawler"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>-1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Masochist"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>2</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="NightOwl"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Greedy"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>-2</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Jealous"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>-3</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Ascetic"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Gay"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Bisexual"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Asexual"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="AnnoyingVoice"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>-1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="CreepyBreathing"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>-1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Pyromaniac"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>-2</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Wimp"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>-1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="FastLearner"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="SlowLearner"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>-1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Undergrounder"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>-1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Transhumanist"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="BodyPurist"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="DislikesMen"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="DislikesWomen"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="GreatMemory"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>2</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Tough"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>2</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="TorturedArtist"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Gourmand"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="QuickSleeper"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>2</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="SpeedOffset"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>-1</li>
+          <li>1</li>
+          <li>2</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="DrugDesire"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>-2</li>
+          <li>-1</li>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="NaturalMood"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>2</li>
+          <li>1</li>
+          <li>-1</li>
+          <li>-2</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Nerves"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>2</li>
+          <li>1</li>
+          <li>-1</li>
+          <li>-2</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Industriousness"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>2</li>
+          <li>2</li>
+          <li>-2</li>
+          <li>-3</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="PsychicSensitivity"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>1</li>
+          <li>1</li>
+          <li>0</li>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="ShootingAccuracy"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>0</li>
+          <li>0</li>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Beauty"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>2</li>
+          <li>1</li>
+          <li>-1</li>
+          <li>-2</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Immunity"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>2</li>
+          <li>-1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="PerfectMemory"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>3</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Bravery"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>0</li>
+          <li>1</li>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Reaver"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Weak"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>-1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Fanatic"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Paranoid"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>-1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Pragmatist"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Fragile"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>-1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="BrownThumb"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>-1</li>
+          <li>1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Butcher"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Chemist"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Claustrophobic"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>-1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="ColdLover"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="DeepSleeper"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Gourmet"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="HeatLover"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="PainThreshold"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>0</li>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Eyesight"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>-2</li>
+          <li>1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Nyctophobe"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>-1</li>
+          <li>1</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Perfectionist"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>0</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/TraitDef[defName="Medic"]</xpath>
+    <value>
+      <li Class="SK.ModExt_TraitDegreeScore">
+        <Scores>
+          <li>-2</li>
+          <li>1</li>
+          <li>2</li>
+        </Scores>
+      </li>
+    </value>
+  </Operation>
+</Patch>
