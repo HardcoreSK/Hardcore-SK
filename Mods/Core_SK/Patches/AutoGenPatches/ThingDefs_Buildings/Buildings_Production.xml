@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="NutrientPasteDispenser" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.StandardBuildingDummy</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="NutrientPasteDispenser"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Building/Production/FoodStuff/dispenser</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>CutoutComplex</shaderType>
+				<drawSize>(3.1,1.8)</drawSize>
+				<shadowData>
+					<volume>(1.7, 0.5, 0.7)</volume>
+					<offset>(0,0,0)</offset>
+				</shadowData>
+				<damageData>
+					<rect>(0.02,0.25,2.96,2.85)</rect>
+					<cornerTL>Damage/Corner</cornerTL>
+					<cornerTR>Damage/Corner</cornerTR>
+				</damageData>
+			</graphicData>
+			<minifiedDef>MinifiedThing</minifiedDef>
+			<thingCategories Merge="True">
+				<li>BuildingsProduction</li>
+			</thingCategories>
+			<statBases Merge="True">
+				<WorkToBuild>4150</WorkToBuild>
+				<MaxHitPoints>210</MaxHitPoints>
+				<Flammability>1.0</Flammability>
+				<Mass>500</Mass>
+			</statBases>
+			<description>Synthesizes nutrient paste from organic ingredients. It consumes less ingredients and time than any other meal production method, but nobody likes eating nutrient paste. Requires power.</description>
+			<building Merge="True">
+				<uninstallWork>350</uninstallWork>
+				<isMealSource>true</isMealSource>
+				<wantsHopperAdjacent>true</wantsHopperAdjacent>
+				<nutritionCostPerDispense>0.8</nutritionCostPerDispense>
+			</building>
+			<comps>
+				<li Class="CompProperties_Power">
+					<compClass>CompPowerTrader</compClass>
+					<shortCircuitInRain>true</shortCircuitInRain>
+					<basePowerConsumption>350</basePowerConsumption>
+				</li>
+				<li Class="CompProperties_Flickable" />
+				<li Class="CompProperties_Breakdownable" />
+			</comps>
+			<size>(2,1)</size>
+			<stuffCategories>
+				<li>StrongMetallic</li>
+			</stuffCategories>
+			<costStuffCount>125</costStuffCount>
+			<constructEffect IsNull="True"/>
+			<costList>
+				<Glass>50</Glass>
+				<ElectronicComponents>5</ElectronicComponents>
+				<Mechanism>5</Mechanism>
+			</costList>
+			<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+			<researchPrerequisites>
+				<li>Food_C3</li>
+			</researchPrerequisites>
+			<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+		</value>
+	</Operation>
+</Patch>
