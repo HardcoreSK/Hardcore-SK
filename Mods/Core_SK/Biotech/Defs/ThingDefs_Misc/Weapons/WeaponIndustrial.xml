@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+	<!-- <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
 		<defName>Weapon_GrenadeTox</defName>
 		<label>tox grenade</label>
 		<description>Grenades loaded with liquified tox gas. Upon landing, they stick to the ground and release tox gas for several seconds.\n\nTox gas burns the lungs and eyes, causing a temporary shortness of breath and reduction in sight. Continued exposure to tox gas results in toxic buildup which can be lethal.</description>
@@ -66,7 +66,7 @@
 			<Chemfuel>2</Chemfuel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</smeltProducts>
-	</ThingDef>
+	</ThingDef> -->
 
 	<ThingDef ParentName="SK_BaseGrenadeProjectile">
 		<defName>Proj_GrenadeTox</defName>

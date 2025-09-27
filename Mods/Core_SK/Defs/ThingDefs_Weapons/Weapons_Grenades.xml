@@ -180,7 +180,7 @@
 	<!-- Tier 2 – Early industrial grenades -->
 
 	<!-- MOLOTOV -->
-	<ThingDef ParentName="SK_BaseGrenadeProjectile">
+	<!-- <ThingDef ParentName="SK_BaseGrenadeProjectile">
 		<defName>Proj_GrenadeMolotov</defName>
 		<label>molotov cocktail</label>
 		<thingClass>CombatExtended.Projectile_FireTrail</thingClass>
@@ -201,8 +201,8 @@
 			<dangerFactor>1.5</dangerFactor>
 			<airborneSuppressionFactor>0.2</airborneSuppressionFactor>
 		</projectile>
-	</ThingDef>
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+	</ThingDef> -->
+	<!-- <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
 		<defName>Weapon_GrenadeMolotov</defName>
 		<equipmentType>Primary</equipmentType>
 		<label>molotov cocktail</label>
@@ -265,7 +265,7 @@
 			<Napalm>1</Napalm>
 		</smeltProducts>
 		<rotateInShelves>false</rotateInShelves>
-	</ThingDef>
+	</ThingDef> -->
 
 	<!-- High explosive -->
 	<ThingDef ParentName="SK_BaseGrenadeProjectile">
@@ -359,7 +359,7 @@
 	<!-- Tier 3 – Late industrial grenades -->
 
 	<!-- FRAG -->
-	<ThingDef ParentName="SK_BaseGrenadeProjectile">
+	<!-- <ThingDef ParentName="SK_BaseGrenadeProjectile">
 		<defName>Proj_GrenadeFrag</defName>
 		<label>frag grenade</label>
 		<graphicData>
@@ -387,8 +387,8 @@
 				</fragments>
 			</li>
 		</comps>
-	</ThingDef>
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+	</ThingDef> -->
+	<!-- <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
 		<defName>Weapon_GrenadeFrag</defName>
 		<equipmentType>Primary</equipmentType>
 		<label>Frag Grenade</label>
@@ -445,10 +445,10 @@
 			<Powder>2</Powder>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</smeltProducts>
-	</ThingDef>
+	</ThingDef> -->
 
 	<!-- EMP -->
-	<ThingDef ParentName="SK_BaseGrenadeProjectile">
+	<!-- <ThingDef ParentName="SK_BaseGrenadeProjectile">
 		<defName>Proj_GrenadeEMP</defName>
 		<label>EMP Grenade</label>
 		<graphicData>
@@ -467,8 +467,8 @@
 			<dangerFactor>1.2</dangerFactor>
 			<airborneSuppressionFactor>0.15</airborneSuppressionFactor>
 		</projectile>
-	</ThingDef>
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+	</ThingDef> -->
+	<!-- <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
 		<defName>Weapon_GrenadeEMP</defName>
 		<equipmentType>Primary</equipmentType>
 		<label>EMP grenade</label>
@@ -526,7 +526,7 @@
 			<ComponentIndustrial>2</ComponentIndustrial>
 			<ElectronicComponents>1</ElectronicComponents>
 		</smeltProducts>
-	</ThingDef>
+	</ThingDef> -->
 
 	<!-- INCENDIARY -->
 	<ThingDef ParentName="SK_BaseGrenadeProjectile">
