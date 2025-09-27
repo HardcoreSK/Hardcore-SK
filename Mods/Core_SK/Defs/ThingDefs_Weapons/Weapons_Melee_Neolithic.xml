@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- =========================== Neolithic ================================ -->
-	<ThingDef ParentName="WeaponNeoliticBase">
+	<!-- <ThingDef ParentName="WeaponNeoliticBase">
 		<defName>MeleeWeapon_Ikwa</defName>
 		<label>Short Spear</label>
 		<description>A short one-handed primitive spear, designed to be driven into vital organs with a quick thrust.</description>
@@ -37,7 +37,6 @@
 		</equippedStatOffsets>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
-				<!--<id>shaftblunt</id>-->
 				<label>shaft</label>
 				<capacities>
 					<li>Blunt</li>
@@ -68,10 +67,10 @@
 		<thingCategories>
 			<li>SharpMelee</li>
 		</thingCategories>
-	</ThingDef>
+	</ThingDef> -->
 
 
-	<ThingDef ParentName="WeaponNeoliticBase">
+	<!-- <ThingDef ParentName="WeaponNeoliticBase">
 		<defName>MeleeWeapon_Spear</defName>
 		<label>Spear</label>
 		<description>A two-handed polearm tipped with a sharp point for stabbing opponents in melee combat.</description>
@@ -83,7 +82,7 @@
 			<li>Neolithic</li>
 			<li>NeolithicMeleeBasic2H</li>
 		</weaponTags>
-		<tradeability>Sellable</tradeability>			
+		<tradeability>Sellable</tradeability>
 		<stuffCategories>
 			<li>StrongMetallic</li>
 		</stuffCategories>
@@ -105,7 +104,6 @@
 		</equippedStatOffsets>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
-				<!--<id>shaftblunt</id>-->
 				<label>shaft</label>
 				<capacities>
 					<li>Blunt</li>
@@ -141,10 +139,10 @@
 		<thingCategories>
 			<li>SharpMelee</li>
 		</thingCategories>
-	</ThingDef>
+	</ThingDef> -->
 
 
-	<ThingDef ParentName="WeaponNeoliticBase">
+	<!-- <ThingDef ParentName="WeaponNeoliticBase">
 		<defName>MeleeWeapon_Mace</defName>
 		<label>Mace</label>
 		<description>A one-handed mace, engineered for efficient swinging and deadly impacts.</description>
@@ -157,7 +155,7 @@
 			<li>NeolithicMeleeBasic</li>
 			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
-		<tradeability>Sellable</tradeability>			
+		<tradeability>Sellable</tradeability>
 		<stuffCategories>
 			<li>StrongMetallic</li>
 		</stuffCategories>
@@ -198,8 +196,8 @@
 		</thingCategories>
 	</ThingDef>
 
-
-	<ThingDef ParentName="WeaponNeoliticBase">
+ -->
+	<!-- <ThingDef ParentName="WeaponNeoliticBase">
 		<defName>MeleeWeapon_Club</defName>
 		<label>Club</label>
 		<description>A club is the oldest human weapon. It is a one-handed blunt weapon for bashing enemies to death. Primitive but effective.</description>
@@ -213,7 +211,7 @@
 			<li>CE_Sidearm_Tribal</li>
 			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
-		<tradeability>Sellable</tradeability>			
+		<tradeability>Sellable</tradeability>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -228,7 +226,7 @@
 		<equippedAngleOffset>-65</equippedAngleOffset>
 		<equippedStatOffsets>
 			<MeleeCritChance>1.1</MeleeCritChance>
-			<MeleeDodgeChance>0.2</MeleeDodgeChance>	
+			<MeleeDodgeChance>0.2</MeleeDodgeChance>
 		</equippedStatOffsets>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -252,7 +250,7 @@
 		</thingCategories>
 	</ThingDef>
 
-
+ -->
 	<ThingDef ParentName="WeaponNeoliticBase">
 		<defName>MeleeWeapon_Schiv</defName>
 		<label>Shiv</label>
@@ -262,7 +260,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>InteractMelee</soundInteract>
-		<tradeability>Sellable</tradeability>			
+		<tradeability>Sellable</tradeability>
 		<stuffCategories>
 			<li>RuggedMetallic</li>
 			<li>Glass</li>
@@ -322,17 +320,17 @@
 		</thingCategories>
 	</ThingDef>
 
-	<ThingDef ParentName="WeaponNeoliticBase">
+	<!-- <ThingDef ParentName="WeaponNeoliticBase">
 		<defName>MeleeWeapon_BreachAxe</defName>
 		<label>breach axe</label>
 		<description>A combined blade and tool-head attached to a sturdy haft. While slightly less effective than other weapons against human enemies, it excels at tearing down walls, doors, and other structures thanks to its integrated tool-head.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/BreachAxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>	
-		<soundInteract>InteractMelee</soundInteract>		
+		</graphicData>
+		<soundInteract>InteractMelee</soundInteract>
 		<techLevel>Neolithic</techLevel>
-		<tradeability>Sellable</tradeability>	
+		<tradeability>Sellable</tradeability>
 		<weaponTags>
 			<li>NeolithicMeleeDestructive</li>
 		</weaponTags>
@@ -342,7 +340,7 @@
 			<Bulk>1.35</Bulk>
 			<Mass>1.25</Mass>
 			<MeleeCounterParryBonus>1.0</MeleeCounterParryBonus>
-		</statBases>		
+		</statBases>
 		<stuffCategories>
 			<li>RuggedMetallic</li>
 		</stuffCategories>
@@ -388,4 +386,5 @@
 		</thingCategories>
 	</ThingDef>
 
+ -->
 </Defs>
