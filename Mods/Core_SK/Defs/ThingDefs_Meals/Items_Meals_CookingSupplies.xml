@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef ParentName="SweetMealBase">
 		<defName>IceCream</defName>
@@ -106,7 +106,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="SweetMealBase">
+	<!-- <ThingDef ParentName="SweetMealBase">
 		<defName>Chocolate</defName>
 		<label>Chocolate</label>
 		<description>A delicious preparation of cocoa seeds ground together with sugar and vanilla. Very pleasurable to eat, but not very nutritious.</description>
@@ -141,6 +141,7 @@
 		</comps>
 	</ThingDef>
 
+ -->
 	<ThingDef ParentName="SK_MealBase">
 		<defName>Cheese</defName>
 		<label>cheese</label>
@@ -151,10 +152,10 @@
 		</graphicData>
 		<statBases>
 			<DeteriorationRate>10</DeteriorationRate>
-			<MarketValue>15</MarketValue>        
+			<MarketValue>15</MarketValue>
 			<Bulk>0.3</Bulk>
-			<Mass>0.2</Mass>	
-			<Nutrition>0.2</Nutrition>			
+			<Mass>0.2</Mass>
+			<Nutrition>0.2</Nutrition>
 		</statBases>
 		<ingestible>
 			<foodType>Meal, Processed</foodType>
@@ -168,7 +169,7 @@
 				<daysToRotStart>30</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
-		</comps> 
+		</comps>
 		<stackLimit>75</stackLimit>
 	</ThingDef>
 
@@ -182,10 +183,10 @@
 		</graphicData>
 		<statBases>
 			<DeteriorationRate>10</DeteriorationRate>
-			<MarketValue>30</MarketValue>        
+			<MarketValue>30</MarketValue>
 			<Bulk>0.3</Bulk>
-			<Mass>0.2</Mass>	
-			<Nutrition>0.2</Nutrition>			
+			<Mass>0.2</Mass>
+			<Nutrition>0.2</Nutrition>
 		</statBases>
 		<ingestible>
 			<specialThoughtDirect>AteAgedCheese</specialThoughtDirect>
@@ -203,7 +204,7 @@
 				<daysToRotStart>60</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
-		</comps> 
+		</comps>
 		<stackLimit>75</stackLimit>
 	</ThingDef>
 

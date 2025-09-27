@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!-- =========== REALISTIC PRODUCTION SK MOD =========== -->
@@ -14,7 +14,7 @@
 		<altitudeLayer>Item</altitudeLayer>
 		<stackLimit>75</stackLimit>
 		<comps>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 		</comps>
 		<statBases>
 			<Mass>0.1</Mass>
@@ -121,12 +121,11 @@
 		</ingestible>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_OrganicProductBase">
+	<!-- <ThingDef ParentName="SK_OrganicProductBase">
 		<defName>Kibble</defName>
 		<label>Kibble</label>
 		<thingCategories>
 			<li>Animalfood</li>
-			<!--<li>FoodMeals</li>-->
 		</thingCategories>
 		<description>Kibble animal feed made from mixed meat and plant sources. Humans can eat it, but they really, really don't like it.</description>
 		<graphicData>
@@ -158,6 +157,7 @@
 		<stackLimit>150</stackLimit>
 	</ThingDef>
 
+ -->
 	<ThingDef ParentName="SK_RoughPlantBase">
 		<defName>Hay</defName>
 		<label>Hay</label>
@@ -379,7 +379,7 @@
 		<thingCategories>
 			<li>PlantMatter</li>
 		</thingCategories>
-		<tickerType>Rare</tickerType>   
+		<tickerType>Rare</tickerType>
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>25</daysToRotStart>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<ThingDef Name="CannedBase" Abstract="True">
@@ -98,7 +98,7 @@
 		</statBases>
 		<ingestible>
 			<preferability>RawTasty</preferability>
-			<tasteThought/>
+			<tasteThought />
 			<foodType>VegetableOrFruit</foodType>
 			<maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
 		</ingestible>
@@ -135,7 +135,7 @@
 			<maxNumToIngestAtOnce>10</maxNumToIngestAtOnce>
 		</ingestible>
 		<comps>
-			<li Class="CompProperties_Rottable">  
+			<li Class="CompProperties_Rottable">
 				<daysToRotStart>150</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
@@ -315,7 +315,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_MealBaseIngredientless">
+	<!-- <ThingDef ParentName="SK_MealBaseIngredientless">
 		<defName>Pemmican</defName>
 		<label>Pemmican</label>
 		<description>A preserved mashed mixture of fat and plant food. Tastes bland, but not offensive. It lasts a very long time without refrigeration. Great for traveling.</description>
@@ -358,4 +358,5 @@
 		</thingSetMakerTags>
 	</ThingDef>
 
+ -->
 </Defs>

@@ -90,7 +90,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_MealBase">
+<!-- 	<ThingDef ParentName="SK_MealBase">
 		<defName>MealSurvivalPack</defName>
 		<label>Packaged Survival Meal</label>
 		<description>A high-quality packaged meal, manufactured for use in survival situations.</description>
@@ -117,7 +117,7 @@
 		<thingSetMakerTags>
 			<li>HSKhumanitarianSuppliesTierThree</li>
 		</thingSetMakerTags>
-	</ThingDef>
+	</ThingDef> -->
 
 	<!--<ThingDef ParentName="SK_MealBase">
 		<defName>MealSimple</defName>
@@ -171,7 +171,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_MealFineBase">
+	<!-- <ThingDef ParentName="SK_MealFineBase">
 		<defName>MealFine</defName>
 		<label>Fine Meal</label>
 		<description>A complex dish assembled with care from a wide selection of ingredients.</description>
@@ -184,7 +184,7 @@
 				<splitTransferableFoodKind>true</splitTransferableFoodKind>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef> -->
 
 	<ThingDef Name="SK_MealLavishBase" ParentName="SK_MealBaseIngredientless" Abstract="True">
 		<description>A masterpiece of the culinary arts, this meal nourishes the body, mind, and soul.</description>
@@ -210,7 +210,7 @@
 		</comps>
 	</ThingDef>  
 
-	<ThingDef ParentName="SK_MealLavishBase">
+	<!-- <ThingDef ParentName="SK_MealLavishBase">
 		<defName>MealLavish</defName>
 		<label>Lavish Meal</label>
 		<description>An elborate concoction of food skillfully prepared into a succulent meal.</description>
@@ -223,7 +223,7 @@
 				<splitTransferableFoodKind>true</splitTransferableFoodKind>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef> -->
 
 	<!-- <ThingDef ParentName="SK_MealBase">
 		<defName>MealLuxury</defName>
@@ -255,7 +255,7 @@
 		</comps>
 	</ThingDef> -->
 
-	<ThingDef ParentName="SK_MealBase">
+<!-- 	<ThingDef ParentName="SK_MealBase">
 		<defName>MealSimple</defName>
 		<label>Fruit Salad</label>
 		<description>A fruit salad made from gathered fruit.</description>
@@ -282,7 +282,7 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef> -->
 
 	<ThingDef ParentName="SK_MealBase">
 		<defName>RoastedMeat</defName>
