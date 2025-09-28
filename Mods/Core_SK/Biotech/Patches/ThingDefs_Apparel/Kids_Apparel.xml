@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Patch>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Apparel_KidParka" or defName="Apparel_KidTribal" ]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.ApparelChildNeoliticBaseDummy</value>
+  </Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Apparel_KidRomper" or defName="Apparel_KidShirt" or defName="Apparel_KidPants" or defName="Apparel_KidHelmet" ]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.ApparelChildIndustrialBaseDummy</value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Apparel_KidParka"]</xpath>
+    <value>
+      <recipeMaker>
+        <displayPriority>280</displayPriority>
+        <researchPrerequisite Inherit="False" IsNull="True" />
+        <recipeUsers>
+          <li>HandTailoringBench</li>
+          <li>ElectricTailoringBench</li>
+          <li>HyperTailoringBench</li>
+        </recipeUsers>
+      </recipeMaker>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Apparel_KidTribal"]</xpath>
+    <value>
+      <statBases Merge="True">
+        <StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+      </statBases>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Apparel_KidHelmet"]</xpath>
+    <value>
+      <recipeMaker>
+        <researchPrerequisite>Armor_C1</researchPrerequisite>
+        <recipeUsers>
+          <li>ElectricSmithy</li>
+          <li>FueledSmithy</li>
+        </recipeUsers>
+        <displayPriority>210</displayPriority>
+      </recipeMaker>
+    </value>
+  </Operation>
+</Patch>
