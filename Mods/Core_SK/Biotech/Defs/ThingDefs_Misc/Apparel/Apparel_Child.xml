@@ -19,12 +19,12 @@
       <li>Leathery</li>
     </stuffCategories>
     <smeltable>false</smeltable>
-	<recipeMaker>
-		<recipeUsers>
-			<li>ElectricTailoringBench</li>
-			<li>HandTailoringBench</li>
-		</recipeUsers>
-	</recipeMaker>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
   </ThingDef>
 
   <ThingDef Name="ApparelChildMedievalBase" ParentName="ApparelMedievalBase" Abstract="True">
@@ -43,11 +43,11 @@
       <li>Leathery</li>
     </stuffCategories>
     <smeltable>false</smeltable>
-	<recipeMaker>
-		<recipeUsers>
-			<li>ElectricTailoringBench</li>
-		</recipeUsers>
-	</recipeMaker>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
   </ThingDef>
 
   <ThingDef Name="ApparelChildIndustrialBase" ParentName="ApparelIndustrialBase" Abstract="True">
@@ -86,7 +86,7 @@
     <smeltable>false</smeltable>
   </ThingDef>
 
-  <ThingDef ParentName="ApparelChildIndustrialBase">
+  <!--  <ThingDef ParentName="ApparelChildIndustrialBase">
     <defName>Apparel_KidRomper</defName>
     <label>kid romper</label>
     <description>A combined t-shirt and pants sized for kids, with a snuggly built-in undergarment. Little ones love it!</description>
@@ -122,9 +122,9 @@
     <recipeMaker>
       <displayPriority>270</displayPriority>
     </recipeMaker>
-  </ThingDef>
+  </ThingDef> -->
 
-  <ThingDef ParentName="ApparelChildIndustrialBase">
+  <!-- <ThingDef ParentName="ApparelChildIndustrialBase">
     <defName>Apparel_KidShirt</defName>
     <label>kid shirt</label>
     <description>A small, simple t-shirt sized to fit children.</description>
@@ -159,7 +159,8 @@
     </recipeMaker>
   </ThingDef>
 
-  <ThingDef ParentName="ApparelChildIndustrialBase">
+ -->
+  <!-- <ThingDef ParentName="ApparelChildIndustrialBase">
     <defName>Apparel_KidPants</defName>
     <label>kid pants</label>
     <description>A small set of pants sized to fit children.</description>
@@ -192,7 +193,8 @@
     </recipeMaker>
   </ThingDef>
 
-  <ThingDef ParentName="ApparelChildNeoliticBase">
+ -->
+  <!-- <ThingDef ParentName="ApparelChildNeoliticBase">
     <defName>Apparel_KidParka</defName>
     <label>kid parka</label>
     <description>A heavy jacket for keeping a child warm in cold temperatures.</description>
@@ -242,7 +244,8 @@
     </recipeMaker>
   </ThingDef>
 
-  <ThingDef ParentName="ApparelChildNeoliticBase">
+ -->
+  <!-- <ThingDef ParentName="ApparelChildNeoliticBase">
     <defName>Apparel_KidTribal</defName>
     <label>kid tribalwear</label>
     <description>A one-piece garment sized for kids, crafted using neolithic tools. It provides effective insulation against the elements.</description>
@@ -256,7 +259,6 @@
       <MaxHitPoints>60</MaxHitPoints>
       <WorkToMake>1400</WorkToMake>
       <Mass>0.5</Mass>
-      <!-- <Bulk>0.75</Bulk> --> <!-- Use CE's patch -->
       <StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
@@ -305,8 +307,9 @@
     </tradeTags>
   </ThingDef>
 
+ -->
   <!-- Kid armour -->
-  <ThingDef ParentName="ApparelChildIndustrialBase">
+  <!-- <ThingDef ParentName="ApparelChildIndustrialBase">
     <defName>Apparel_KidHelmet</defName>
     <label>kid helmet</label>
     <description>A simple helmet sized for children. It gives moderate protection against sharp attacks. Not effective against blunt weapons. That said, if this is being used in combat something has already gone very wrong.</description>
@@ -361,4 +364,5 @@
     </tradeTags>
   </ThingDef>
 
+ -->
 </Defs>
