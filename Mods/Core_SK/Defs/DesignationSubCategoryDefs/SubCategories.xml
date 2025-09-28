@@ -174,12 +174,19 @@
 		<defNames>
 			<li>SleepingSpot</li>
 			<li>DoubleSleepingSpot</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">SlabDoubleBed</li>
 			<li>BagBed</li>
 			<li>GuestBed</li>
 			<li>prison_single_bed_RT</li>
 			<li>prison_single_bed_LB</li>
+			<li MayRequire="ludeon.rimworld.biotech">BabySleepingSpot</li>
+			<li MayRequire="ludeon.rimworld.biotech">Crib</li>
+			<li MayRequire="ludeon.rimworld.biotech">Nej_TribalCrib</li>
+			<!-- These two are unlocked by certain meme 
+					Which makes them unrecognizable by architect sense
+					Will uncomment once there's a decent solution
+			-->
+			<!-- <li MayRequire="ludeon.rimworld.ideology">SlabBed</li>
+			<li MayRequire="ludeon.rimworld.ideology">SlabDoubleBed</li> -->
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
@@ -290,6 +297,7 @@
 			<li>Armchair</li>
 			<li>SimplePillow</li>
 			<li>Couch</li>
+			<li>RusticCouch</li>
 			<li>MilleniumCouch</li>
 			<li>EggArmchair</li>
 			<li>PodChair</li>
@@ -335,6 +343,8 @@
 			<li>Table2x2c</li>
 			<li>Table2x4c</li>
 			<li>Table3x3c</li>
+			<li MayRequire="ludeon.rimworld.biotech">SchoolDesk</li>
+			<li MayRequire="ludeon.rimworld.biotech">SchoolDeskTribal</li>
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
@@ -1052,6 +1062,8 @@
 			<!--		<li>BioRefinery</li>	-->
 			<li>TableMending</li>
 			<li>RockCrusher</li>
+			<li>SK_Windmill</li>
+			<li MayRequire="dubwise.rimatomics">GasCentrifuge</li>
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
@@ -1161,6 +1173,10 @@
 			<li>TrapIED_EMP</li>
 			<li>TrapIED_Firefoam</li>
 			<li>TrapIED_AntigrainWarhead</li>
+			<li>TrapIED_Smoke</li>
+			<li MayRequire="ludeon.rimworld.biotech">TrapIED_ToxGas</li>
+			<li MayRequire="ludeon.rimworld.anomaly">TrapIED_Deadlife</li>
+			<li MayRequire="ludeon.rimworld.odyssey">HunterDroneTrap</li>
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
@@ -1272,6 +1288,8 @@
 			<li>MarriageSpot</li>
 			<li>PartySpot</li>
 			<li>CaravanPackingSpot</li>
+			<li MayRequire="ludeon.rimworld.ideology">RitualSpot</li>
+			<li MayRequire="ludeon.rimworld.royalty">MeditationSpot</li>
 		</defNames>
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>

@@ -41,15 +41,6 @@
 					</costList>
 				</value>
 			</li>
-
-			<li Class="PatchOperationInsert">
-				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Tables"]/defNames/li[text()="Table1x2c"]</xpath>
-				<value>
-					<li>SchoolDesk</li>
-					<li>SchoolDeskTribal</li>
-				</value>
-			</li>
-
 			<!-- BabyDecoration patches -->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="BabyDecoration"]</xpath>
@@ -73,14 +64,6 @@
 				<xpath>Defs/ThingDef[defName="BabyDecoration"]/designationCategory</xpath>
 				<value>
 					<designationCategory>Joy</designationCategory>
-				</value>
-			</li>
-
-			<!-- BabySleepingSpot patches -->
-			<li Class="PatchOperationInsert">
-				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_SpecialBeds"]/defNames/li[text()="SleepingSpot"]</xpath>
-				<value>
-					<li>BabySleepingSpot</li>
 				</value>
 			</li>
 
@@ -117,12 +100,6 @@
 				<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]</xpath>
 			</li>
 -->
-			<li Class="PatchOperationInsert">
-				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_SpecialBeds"]/defNames/li[text()="BagBed"]</xpath>
-				<value>
-					<li>Crib</li>
-				</value>
-			</li>
 
 			<!-- Blackboard patches -->
 			<li Class="PatchOperationAdd">
@@ -141,14 +118,6 @@
 					<researchPrerequisites>
 						<li>Tables_B2</li>
 					</researchPrerequisites>
-				</value>
-			</li>
-
-			<!-- tribal crib patches -->	
-			<li Class="PatchOperationInsert">
-				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_SpecialBeds"]/defNames/li[text()="BagBed"]</xpath>
-				<value>
-					<li>Nej_TribalCrib</li>
 				</value>
 			</li>
 

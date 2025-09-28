@@ -199,12 +199,6 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationInsert">
-		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Traps"]/defNames/li[text()="TrapIED_Firefoam"]</xpath>
-		<order>Append</order>
-		<value>
-			<li>TrapIED_Deadlife</li>
-		</value>
-	</Operation>
+
 
 </Patch>
