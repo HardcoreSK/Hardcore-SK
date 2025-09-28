@@ -3,7 +3,7 @@
 
 	<!-- Waste rat -->
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<!-- <ThingDef ParentName="SK_AnimalThingBase">
 		<defName>WasteRat</defName>
 		<label>waste rat</label>
 		<devNote>squirrel-1</devNote>
@@ -128,7 +128,7 @@
 				<bodyShape>QuadrupedLow</bodyShape>
 			</li>
 		</modExtensions>
-	</ThingDef>
+	</ThingDef> -->
 
 	<!-- <PawnKindDef ParentName="SK_AnimalKindBase">
 		<defName>WasteRat</defName>
@@ -177,7 +177,7 @@
 
 	<!-- Toxalope -->
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<!-- <ThingDef ParentName="SK_AnimalThingBase">
 		<defName>Toxalope</defName>
 		<label>toxalope</label>
 		<devNote>cow-1</devNote>
@@ -289,15 +289,7 @@
 				<li>(0.0, 0, -0.165)</li>
 				<li>(-0.38, 0, 0.01)</li>
 			</headPosPerRotation>
-		</race> <!--
-		<comps>
-			<li Class="SK.CompProperties_ShearableRenameable">
-				<growthLabel>Chemical fullness</growthLabel>
-				<shearIntervalDays>4</shearIntervalDays>
-				<woolAmount>4</woolAmount>
-				<woolDef>FSX</woolDef>
-			</li>
-		</comps>-->
+		</race> 
 		<tradeTags Inherit="False">
 			<li>AnimalFighter</li>
 			<li>CE_AnimalBoom</li>
@@ -307,7 +299,7 @@
 				<bodyShape>Quadruped</bodyShape>
 			</li>
 		</modExtensions>
-	</ThingDef>
+	</ThingDef> -->
 
 	<!-- <PawnKindDef ParentName="SK_AnimalKindBase">
 		<defName>Toxalope</defName>
