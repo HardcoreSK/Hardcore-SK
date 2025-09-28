@@ -2,6 +2,24 @@
 <Patch>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[@Name="BodyPartNaturalBase"]</xpath>
+    <value>
+      <comps>
+        <li Class="CompProperties_Rottable">
+          <daysToRotStart>1</daysToRotStart>
+          <rotDestroys>true</rotDestroys>
+        </li>
+      </comps>
+    </value>
+  </Operation>
+
+<!--   <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Heart" or defName="Lung" or defName="Liver" or defName="Kidney"]</xpath> 
+    <attribute>ParentName</attribute>
+    <value></value>
+  </Operation> -->
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Heart"]</xpath>
     <value>
       <label>Heart</label>
