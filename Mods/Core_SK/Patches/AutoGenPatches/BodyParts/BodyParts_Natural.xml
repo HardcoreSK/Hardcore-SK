@@ -4,6 +4,7 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[@Name="BodyPartNaturalBase"]</xpath>
     <value>
+      <tickerType>Rare</tickerType>
       <comps>
         <li Class="CompProperties_Rottable">
           <daysToRotStart>1</daysToRotStart>
@@ -22,6 +23,7 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Heart"]</xpath>
     <value>
+      <tickerType>Rare</tickerType>
       <label>Heart</label>
       <description>Supplies blood and oxygen to all parts of the body. Ready to find a new owner.</description>
       <graphicData>
@@ -81,6 +83,7 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Lung"]</xpath>
     <value>
+      <tickerType>Rare</tickerType>
       <label>Lung</label>
       <description>An essential part of the respiratory system.</description>
       <graphicData>
@@ -138,6 +141,7 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Liver"]</xpath>
     <value>
+      <tickerType>Rare</tickerType>
       <label>Liver</label>
       <description>Plays an important role in metabolism.</description>
       <graphicData>
@@ -195,6 +199,7 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Kidney"]</xpath>
     <value>
+      <tickerType>Rare</tickerType>
       <label>Kidney</label>
       <description>Filters and removes waste products from the blood.</description>
       <graphicData>
