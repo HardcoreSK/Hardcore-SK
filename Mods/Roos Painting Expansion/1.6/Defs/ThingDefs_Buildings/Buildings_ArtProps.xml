@@ -74,9 +74,9 @@
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<uiIconScale>1.3</uiIconScale>
-		<researchPrerequisites>
+						    <researchPrerequisites>
 		  <li>Art_B1</li>
-		</researchPrerequisites>
+    </researchPrerequisites>
 	</ThingDef>
 	<!-- Paintings -->
 	<ThingDef ParentName="BuildingBase" Name="PaintingBase" Abstract="True">
@@ -184,18 +184,18 @@
 			<recipeUsers>
 				<li>RBPEaselPainting</li>
 			</recipeUsers>
-			<defaultIngredientFilter>
-				<categories>
+			      <defaultIngredientFilter>
+        <categories>
 				<li>Metallic</li>
 				<li>Woody</li>
-				</categories>
-				<disallowedThingDefs>
-				<li>Gold</li>
-				<li>Silver</li>
-				<li>Jade</li>
-				<li>Uranium</li>
-				</disallowedThingDefs>
-			</defaultIngredientFilter>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
 			<researchPrerequisite>Art_B1</researchPrerequisite>
 		</recipeMaker>
 		<ideoBuildingNamerBase MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoSculpture</ideoBuildingNamerBase>
@@ -233,7 +233,7 @@
 			<Cloth>10</Cloth>
 			<PaintingSupplies>1</PaintingSupplies>
 		</costList>
-		<stuffCategories>
+				<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
 			<li>Stony</li>
@@ -265,7 +265,7 @@
 			<Cloth>10</Cloth>
 			<PaintingSupplies>1</PaintingSupplies>
 		</costList>
-		<stuffCategories>
+				<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
 			<li>Stony</li>
@@ -327,10 +327,10 @@
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
-		<researchPrerequisites>
+						    <researchPrerequisites>
 		  <li>Art_B1</li>
-		</researchPrerequisites>
-		<building>
+    </researchPrerequisites>
+			<building>
 			<paintable>true</paintable>
 		</building>
 	</ThingDef><!--
@@ -552,11 +552,11 @@
 			<ComponentMedieval>3</ComponentMedieval>
 		</costList>
 		<costStuffCount>15</costStuffCount>
-		<stuffCategories>
-			<li>Metallic</li>
-			<li>Woody</li>
-			<li>Stony</li>
-		</stuffCategories>
+			<stuffCategories>
+		<li>Metallic</li>
+		<li>Woody</li>
+		<li>Stony</li>
+	</stuffCategories>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
 		<size>(3,1)</size>
@@ -578,9 +578,9 @@
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<uiIconScale>1</uiIconScale>
-		<researchPrerequisites>
+		    <researchPrerequisites>
 		  <li>Art_C1</li>
-		</researchPrerequisites>
+    </researchPrerequisites>
 	</ThingDef>
 	<!-- Unfinished Painting -->
 	<ThingDef ParentName="UnfinishedBase">
