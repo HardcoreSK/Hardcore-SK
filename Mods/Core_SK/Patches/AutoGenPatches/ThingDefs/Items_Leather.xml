@@ -1,0 +1,668 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Patch>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[@Name="ResourceBase"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<Beauty>-2</Beauty>
+			</statBases>
+			<pathCost>15</pathCost>
+		</value>
+	</Operation>
+	
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[@Name="LeatherBase"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<DeteriorationRate>0</DeteriorationRate>
+				<Mass>0.1</Mass>
+				<StuffPower_Armor_Heat>0.1</StuffPower_Armor_Heat>
+			</statBases>
+		</value>
+	</Operation>
+	<!-- Integrate into vanilla Leather Base-->
+<!-- 	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="Leather_Plain" or defName="Leather_Dog" or defName="Leather_Wolf" or defName="Leather_Panthera" or defName="Leather_Camel" or defName="Leather_Bluefur" or defName="Leather_Human" or defName="Leather_Pig" or defName="Leather_Light" or defName="Leather_Bird" or defName="Leather_GuineaPig" or defName="Leather_Chinchilla" or defName="Leather_Fox" or defName="Leather_Lizard" or defName="Leather_Elephant" or defName="Leather_Heavy" or defName="Leather_Rhinoceros" or defName="Leather_Thrumbo" or defName="Leather_Patch" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_LeatherBaseDummy</value>
+	</Operation> -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Leather_Plain"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>3</MarketValue>
+				<StuffPower_Armor_Sharp>0.91</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Blunt>0.64</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Heat>0.07</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
+				<Mass>0.1</Mass>
+				<Bulk>0.1</Bulk>
+			</statBases>
+			<stuffProps Merge="True">
+				<color>(162,106,57)</color>
+				<commonality>0.2</commonality>
+				<statFactors>
+					<MaxHitPoints>1</MaxHitPoints>
+					<Beauty>1.2</Beauty>
+					<MoveSpeed>1</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>1</WorkToMake>
+					<WorkToBuild>1</WorkToBuild>
+					<BedRestEffectiveness>1.2</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>0.96</ImmunityGainSpeedFactor>
+					<Mass>0.4</Mass>
+				</statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Leather_Dog"]</xpath>
+		<value>
+			<graphicData>
+				<color>(181,146,33)</color>
+			</graphicData>
+			<statBases Merge="True">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>1</MarketValue>
+				<StuffPower_Armor_Sharp>0.71</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Blunt>0.64</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Heat>0.07</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>13</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+				<Mass>0.1</Mass>
+				<Bulk>0.1</Bulk>
+			</statBases>
+			<stuffProps Merge="True">
+				<color>(181,146,33)</color>
+				<commonality>0.075</commonality>
+				<statFactors>
+					<MaxHitPoints>1</MaxHitPoints>
+					<Beauty>0.9</Beauty>
+					<MoveSpeed>1</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>0.9</WorkToMake>
+					<WorkToBuild>0.9</WorkToBuild>
+					<BedRestEffectiveness>0.8</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>0.92</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Leather_Wolf"]</xpath>
+		<value>
+			<label>wolf fur pelt</label>
+			<statBases Merge="True">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>2</MarketValue>
+				<StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Blunt>0.85</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Heat>0.06</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>21</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>-3</StuffPower_Insulation_Heat>
+				<Mass>0.1</Mass>
+				<Bulk>0.1</Bulk>
+			</statBases>
+			<stuffProps Merge="True">
+				<statFactors>
+					<MaxHitPoints>1</MaxHitPoints>
+					<Beauty>1.5</Beauty>
+					<MoveSpeed>1</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>1.2</WorkToMake>
+					<WorkToBuild>1.2</WorkToBuild>
+					<BedRestEffectiveness>0.75</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>0.84</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Leather_Panthera"]</xpath>
+		<value>
+			<label>big cat fur pelt</label>
+			<statBases Merge="True">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>2</MarketValue>
+				<StuffPower_Armor_Sharp>0.95</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Blunt>0.85</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Heat>0.07</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>-3</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
+				<Mass>0.1</Mass>
+				<Bulk>0.1</Bulk>
+			</statBases>
+			<stuffProps Merge="True">
+				<color>(60,60,60)</color>
+				<commonality>0.075</commonality>
+				<statFactors>
+					<MaxHitPoints>1</MaxHitPoints>
+					<Beauty>1.35</Beauty>
+					<MoveSpeed>1</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>1.1</WorkToMake>
+					<WorkToBuild>1.1</WorkToBuild>
+					<BedRestEffectiveness>1.1</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>0.92</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Leather_Camel"]</xpath>
+		<value>
+			<label>camel leather</label>
+			<statBases Merge="True">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>1.5</MarketValue>
+				<StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Blunt>0.9</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Heat>0.09</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>25</StuffPower_Insulation_Heat>
+				<Mass>0.1</Mass>
+				<Bulk>0.1</Bulk>
+				<BedRestEffectiveness>1</BedRestEffectiveness>
+				<ImmunityGainSpeedFactor>1</ImmunityGainSpeedFactor>
+				<WorkToMake>1</WorkToMake>
+				<MoveSpeed>1</MoveSpeed>
+				<Beauty>0.8</Beauty>
+			</statBases>
+			<stuffProps Merge="True">
+				<color>(204,180,150)</color>
+				<commonality>0.05</commonality>
+				<statFactors>
+					<MaxHitPoints>1</MaxHitPoints>
+					<Beauty>0.8</Beauty>
+					<MoveSpeed>1</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>1</WorkToMake>
+					<WorkToBuild>1</WorkToBuild>
+					<BedRestEffectiveness>1</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>1</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Leather_Bluefur"]</xpath>
+		<value>
+			<label>blue fur pelt</label>
+			<statBases Merge="True">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>2</MarketValue>
+				<StuffPower_Armor_Sharp>0.75</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Heat>0.067</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>28</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>-8</StuffPower_Insulation_Heat>
+				<Mass>0.1</Mass>
+				<Bulk>0.1</Bulk>
+			</statBases>
+			<stuffProps Merge="True">
+				<color>(152,170,174)</color>
+				<commonality>0.025</commonality>
+				<statFactors>
+					<MaxHitPoints>1</MaxHitPoints>
+					<Beauty>1</Beauty>
+					<MoveSpeed>0.85</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>1</WorkToMake>
+					<WorkToBuild>1</WorkToBuild>
+					<BedRestEffectiveness>1.2</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>0.96</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Leather_Human"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>2.8</MarketValue>
+				<StuffPower_Armor_Sharp>0.74</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Blunt>0.61</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Heat>0.07</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
+				<Mass>0.1</Mass>
+				<Bulk>0.1</Bulk>
+			</statBases>
+			<stuffProps Merge="True">
+				<color>(211,194,143)</color>
+				<commonality>0.0025</commonality>
+				<statFactors>
+					<MaxHitPoints>1</MaxHitPoints>
+					<Beauty>0.1</Beauty>
+					<MoveSpeed>1</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>1.5</WorkToMake>
+					<WorkToBuild>1.5</WorkToBuild>
+					<BedRestEffectiveness>1.0</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>0.92</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Leather_Pig"]</xpath>
+		<value>
+			<label>pig leather</label>
+			<statBases Merge="True">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>2</MarketValue>
+				<StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Blunt>0.65</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Heat>0.078</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+				<Mass>0.1</Mass>
+				<Bulk>0.1</Bulk>
+				<BedRestEffectiveness>1</BedRestEffectiveness>
+				<ImmunityGainSpeedFactor>1</ImmunityGainSpeedFactor>
+				<WorkToMake>1</WorkToMake>
+				<MoveSpeed>1</MoveSpeed>
+				<Beauty>1.1</Beauty>
+			</statBases>
+			<stuffProps Merge="True">
+				<color>(174,150,126)</color>
+				<commonality>0.05</commonality>
+				<statFactors>
+					<MaxHitPoints>1</MaxHitPoints>
+					<Beauty>1.1</Beauty>
+					<MoveSpeed>1</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>1</WorkToMake>
+					<WorkToBuild>1</WorkToBuild>
+					<BedRestEffectiveness>1</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>1</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Leather_Light"]</xpath>
+		<value>
+			<label>light leather</label>
+			<graphicData>
+				<color>(115,64,19)</color>
+			</graphicData>
+			<statBases Merge="True">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>1.5</MarketValue>
+				<StuffPower_Armor_Sharp>0.75</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Heat>0.077</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+				<Mass>0.1</Mass>
+				<Bulk>0.1</Bulk>
+				<BedRestEffectiveness>1.2</BedRestEffectiveness>
+				<ImmunityGainSpeedFactor>0.8</ImmunityGainSpeedFactor>
+				<WorkToMake>0.9</WorkToMake>
+				<MoveSpeed>1.5</MoveSpeed>
+				<Beauty>0.5</Beauty>
+			</statBases>
+			<stuffProps Merge="True">
+				<color>(115,64,19)</color>
+				<commonality>0.25</commonality>
+				<statFactors>
+					<MaxHitPoints>1</MaxHitPoints>
+					<Beauty>0.5</Beauty>
+					<MoveSpeed>1.5</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>0.9</WorkToMake>
+					<WorkToBuild>0.9</WorkToBuild>
+					<BedRestEffectiveness>1.2</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>0.84</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Leather_Bird"]</xpath>
+		<value>
+			<label>bird leather</label>
+			<graphicData>
+				<color>(90,97,112)</color>
+			</graphicData>
+			<statBases Merge="True">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>1.5</MarketValue>
+				<StuffPower_Armor_Sharp>0.73</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Blunt>0.62</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Heat>0.05</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>7</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat>
+				<Mass>0.1</Mass>
+				<Bulk>0.1</Bulk>
+			</statBases>
+			<stuffProps Merge="True">
+				<color>(90,97,112)</color>
+				<commonality>0.1</commonality>
+				<statFactors>
+					<MaxHitPoints>1</MaxHitPoints>
+					<Beauty>1</Beauty>
+					<MoveSpeed>1.2</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>1</WorkToMake>
+					<WorkToBuild>1</WorkToBuild>
+					<BedRestEffectiveness>0.9</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>0.92</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Leather_GuineaPig"]</xpath>
+		<value>
+			<graphicData>
+				<color>(178,170,158)</color>
+			</graphicData>
+			<statBases Merge="True">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>6.5</MarketValue>
+				<StuffPower_Armor_Sharp>0.7</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Blunt>0.75</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Heat>0.06</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>29</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>-7</StuffPower_Insulation_Heat>
+				<Mass>0.1</Mass>
+				<Bulk>0.1</Bulk>
+			</statBases>
+			<stuffProps Merge="True">
+				<color>(178,170,158)</color>
+				<commonality>0.025</commonality>
+				<statFactors>
+					<MaxHitPoints>1</MaxHitPoints>
+					<Beauty>5</Beauty>
+					<MoveSpeed>1</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>1.2</WorkToMake>
+					<WorkToBuild>1.2</WorkToBuild>
+					<BedRestEffectiveness>1.4</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Leather_Chinchilla"]</xpath>
+		<value>
+			<label>chinchilla fur pelt</label>
+			<statBases Merge="True">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>6.5</MarketValue>
+				<StuffPower_Armor_Sharp>0.75</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Heat>0.06</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>29</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>-7</StuffPower_Insulation_Heat>
+				<Mass>0.1</Mass>
+				<Bulk>0.1</Bulk>
+			</statBases>
+			<stuffProps Merge="True">
+				<color>(178,170,158)</color>
+				<commonality>0.025</commonality>
+				<statFactors>
+					<MaxHitPoints>1</MaxHitPoints>
+					<Beauty>5</Beauty>
+					<MoveSpeed>1</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>1.2</WorkToMake>
+					<WorkToBuild>1.2</WorkToBuild>
+					<BedRestEffectiveness>1.4</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Leather_Fox"]</xpath>
+		<value>
+			<label>fox fur pelt</label>
+			<graphicData>
+				<color>(189,88,2)</color>
+			</graphicData>
+			<statBases Merge="True">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>4</MarketValue>
+				<StuffPower_Armor_Sharp>0.75</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Blunt>0.85</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Heat>0.07</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>27</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>-6</StuffPower_Insulation_Heat>
+				<Mass>0.1</Mass>
+				<Bulk>0.1</Bulk>
+			</statBases>
+			<stuffProps Merge="True">
+				<color>(189,88,2)</color>
+				<commonality>0.075</commonality>
+				<statFactors>
+					<MaxHitPoints>1</MaxHitPoints>
+					<Beauty>4</Beauty>
+					<MoveSpeed>1</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>1.2</WorkToMake>
+					<WorkToBuild>1.2</WorkToBuild>
+					<BedRestEffectiveness>1.4</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Leather_Lizard"]</xpath>
+		<value>
+			<label>lizard leather</label>
+			<description>The tanned skin of a cold-blooded reptile. Lizard leather is reasonably tough, but does not insulate well at all.</description>
+			<statBases Merge="True">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>3</MarketValue>
+				<StuffPower_Armor_Sharp>1.35</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Heat>0.11</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>7</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
+				<Mass>0.1</Mass>
+				<Bulk>0.1</Bulk>
+			</statBases>
+			<tickerType>Rare</tickerType>
+			<stackLimit>300</stackLimit>
+			<graphicData>
+				<color>(114,124,60)</color>
+			</graphicData>
+			<stuffProps Merge="True">
+				<color>(114,124,60)</color>
+				<commonality>0.075</commonality>
+				<statFactors>
+					<MaxHitPoints>1</MaxHitPoints>
+					<Beauty>3</Beauty>
+					<MoveSpeed>1</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>1.1</WorkToMake>
+					<WorkToBuild>1.1</WorkToBuild>
+					<BedRestEffectiveness>0.9</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>1.31</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Leather_Elephant"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>3</MarketValue>
+				<StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Blunt>0.85</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Heat>0.11</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>11</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat>
+				<Mass>0.1</Mass>
+				<Bulk>0.1</Bulk>
+			</statBases>
+			<stuffProps Merge="True">
+				<color>(130,126,119)</color>
+				<commonality>0.025</commonality>
+				<statFactors>
+					<MaxHitPoints>1.5</MaxHitPoints>
+					<Beauty>0.9</Beauty>
+					<MoveSpeed>1</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>1.8</WorkToMake>
+					<WorkToBuild>1.8</WorkToBuild>
+					<BedRestEffectiveness>0.7</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>0.92</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Leather_Heavy"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>2</MarketValue>
+				<StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Blunt>1.1</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Heat>0.08</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>19</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>-5</StuffPower_Insulation_Heat>
+				<Mass>0.1</Mass>
+				<Bulk>0.1</Bulk>
+			</statBases>
+			<stuffProps Merge="True">
+				<color>(189,161,116)</color>
+				<commonality>0.025</commonality>
+				<statFactors>
+					<MaxHitPoints>1.5</MaxHitPoints>
+					<Beauty>1.5</Beauty>
+					<MoveSpeed>1</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>1.8</WorkToMake>
+					<WorkToBuild>1.8</WorkToBuild>
+					<BedRestEffectiveness>0.85</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>1.17</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Leather_Rhinoceros"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>2.5</MarketValue>
+				<StuffPower_Armor_Sharp>1.35</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Blunt>1.1</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Heat>0.11</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>7</StuffPower_Insulation_Heat>
+				<Mass>0.1</Mass>
+				<Bulk>0.1</Bulk>
+			</statBases>
+			<stuffProps Merge="True">
+				<color>(150,150,150)</color>
+				<commonality>0.025</commonality>
+				<statFactors>
+					<MaxHitPoints>1.5</MaxHitPoints>
+					<Beauty>1</Beauty>
+					<MoveSpeed>1</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>1.7</WorkToMake>
+					<WorkToBuild>1.7</WorkToBuild>
+					<BedRestEffectiveness>0.8</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>1</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Leather_Thrumbo"]</xpath>
+		<value>
+			<label>magic fur</label>
+			<description>Luxurious and extraordinarily durable. Used for the highest-quality crafts for its insulation and strength.</description>
+			<graphicData>
+				<color>(223,203,231)</color>
+			</graphicData>
+			<statBases Merge="True">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>8</MarketValue>
+				<StuffPower_Armor_Sharp>1.4</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Blunt>1.3</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Heat>0.135</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>9</StuffPower_Insulation_Heat>
+				<Mass>0.1</Mass>
+				<Bulk>0.1</Bulk>
+			</statBases>
+			<stuffProps Merge="True">
+				<color>(223,203,231)</color>
+				<commonality>0.0075</commonality>
+				<statFactors>
+					<MaxHitPoints>2</MaxHitPoints>
+					<Beauty>6</Beauty>
+					<MoveSpeed>1</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>1.9</WorkToMake>
+					<WorkToBuild>1.9</WorkToBuild>
+					<BedRestEffectiveness>0.8</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>1.24</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Leather_Patch"]</xpath>
+		<value>
+			<label>patch leather</label>
+			<statBases Merge="True">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>0.5</MarketValue>
+				<StuffPower_Armor_Sharp>0.7</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Blunt>0.65</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Heat>0.067</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>11</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat>
+				<Mass>0.1</Mass>
+				<Bulk>0.1</Bulk>
+			</statBases>
+			<stuffProps Merge="True">
+				<color>(90,75,60)</color>
+				<commonality>0.075</commonality>
+				<statFactors>
+					<MaxHitPoints>1</MaxHitPoints>
+					<Beauty>0.5</Beauty>
+					<MoveSpeed>1</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>2</WorkToMake>
+					<WorkToBuild>2</WorkToBuild>
+					<BedRestEffectiveness>0.7</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>0.84</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+</Patch>
