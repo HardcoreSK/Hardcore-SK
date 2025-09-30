@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+
+
+	<!-- 	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="RawFungus" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.MushroomBaseDummy</value>
+	</Operation>
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="RawBerries" or defName="RawAgave" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SmallFruitFoodRawBaseDummy</value>
+	</Operation> -->
+	<!-- 	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="RawCorn" or defName="RawRice" or defName="RawPotatoes" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_PlantFoodRawBaseDummy</value>
+	</Operation> -->
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RawHops"]</xpath>
+		<value>
+			<description>Hops are flowers and seed cones of a Hops Plant. They are necessary as a flavoring and preserving agent for brewing Wort.</description>
+			<graphicData>
+				<texPath>Things/Veg/Hops</texPath>
+			</graphicData>
+			<statBases>
+				<MarketValue>2.0</MarketValue>
+			</statBases>
+			<comps>
+				<li Class="CompProperties_Rottable">
+					<daysToRotStart>25</daysToRotStart>
+					<rotDestroys>true</rotDestroys>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RawCorn"]</xpath>
+		<value>
+			<description>Corn comes from the Corn Plant. The leafy stalk of the plant produces ears which contain the grain that can be ground into flour, recycled into fuel or used in recipes for a variety of dishes.</description>
+			<graphicData>
+				<texPath>Things/Veg/Corn</texPath>
+			</graphicData>
+			<statBases Merge="True">
+				<MarketValue>2.1</MarketValue>
+				<Nutrition>0.04</Nutrition>
+			</statBases>
+			<thingCategories>
+				<li>BasicPlantFoodRaw</li>
+			</thingCategories>
+			<stackLimit>300</stackLimit>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RawRice"]</xpath>
+		<value>
+			<description>Rice are the small edible seeds of the Rice Plant. Not enjoyable when eaten raw, as the seeds are hard and numerous. It is a quick growing food source that can also be used for Ethanol Fuel or the alcoholic drink called Sake.</description>
+			<graphicData>
+				<texPath>Things/Veg/Rice</texPath>
+			</graphicData>
+			<thingCategories>
+				<li>BasicPlantFoodRaw</li>
+			</thingCategories>
+			<statBases Merge="True">
+				<MarketValue>1.9</MarketValue>
+				<Nutrition>0.05</Nutrition>
+			</statBases>
+			<stackLimit>300</stackLimit>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RawBerries"]</xpath>
+		<value>
+			<label>Strawberries</label>
+			<description>Strawberries are small, red, soft fruits of a Strawberry Plant. They are good when eaten raw.</description>
+			<possessionCount>10</possessionCount>
+			<graphicData>
+				<texPath>Things/Fruits/Berries</texPath>
+			</graphicData>
+			<statBases Merge="True">
+				<MarketValue>6</MarketValue>
+				<Nutrition>0.15</Nutrition>
+				<Mass>0.16</Mass>
+				<Bulk>0.2</Bulk>
+			</statBases>
+			<thingCategories>
+				<li>FruitFoodRaw</li>
+			</thingCategories>
+			<comps>
+				<li Class="CompProperties_Rottable">
+					<daysToRotStart>6</daysToRotStart>
+					<rotDestroys>true</rotDestroys>
+				</li>
+			</comps>
+			<ingestible Merge="True">
+				<joy>0.05</joy>
+			</ingestible>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RawAgave"]</xpath>
+		<value>
+			<description>The Agave Fruit is edible stalks and flowers of a wild Agave Plant. Agave Plants are native to deserts. The fruits are foul when eaten raw.</description>
+			<possessionCount>10</possessionCount>
+			<graphicData>
+				<texPath>Things/Fruits/AgaveFruit</texPath>
+			</graphicData>
+			<statBases Merge="True">
+				<MarketValue>6</MarketValue>
+				<Nutrition>0.15</Nutrition>
+				<Mass>0.16</Mass>
+				<Bulk>0.2</Bulk>
+			</statBases>
+			<thingCategories>
+				<li>FruitFoodRaw</li>
+			</thingCategories>
+			<ingestible Merge="True">
+				<joy>0.03</joy>
+			</ingestible>
+			<comps>
+				<li Class="CompProperties_Rottable">
+					<daysToRotStart>7</daysToRotStart>
+					<rotDestroys>true</rotDestroys>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RawFungus"]</xpath>
+		<value>
+			<description>Fungi are microorganisms that combine features of both plants and animals. They feed by absorbing nutrients from the environment.</description>
+			<possessionCount>10</possessionCount>
+			<graphicData>
+				<texPath>Things/Item/Resource/PlantFoodRaw/RawFungus</texPath>
+			</graphicData>
+			<comps>
+				<li Class="CompProperties_Rottable">
+					<daysToRotStart>12</daysToRotStart>
+					<rotDestroys>true</rotDestroys>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RawPotatoes"]</xpath>
+		<value>
+			<description>Potatoes are a starchy, tuberous crop of a Potato Plant. They are not very tasty when eaten raw but they do grow quickly.</description>
+			<graphicData>
+				<texPath>Things/Veg/Potato</texPath>
+			</graphicData>
+			<statBases Merge="True">
+				<MarketValue>1.9</MarketValue>
+				<Nutrition>0.07</Nutrition>
+			</statBases>
+			<thingCategories>
+				<li>BasicPlantFoodRaw</li>
+			</thingCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Hay"]</xpath>
+		<value>
+			<stackLimit>300</stackLimit>
+			<statBases Merge="True">
+				<Mass>0.03</Mass>
+				<DeteriorationRate>.5</DeteriorationRate>
+				<Nutrition>0.05</Nutrition>
+			</statBases>
+			<stuffProps>
+				<statFactors>
+					<Flammability>1.5</Flammability>
+				</statFactors>
+				<color>(200,170,40)</color>
+				<commonality>1.4</commonality>
+				<allowColorGenerators>true</allowColorGenerators>
+			</stuffProps>
+			<colorGeneratorInTraderStock Class="ColorGenerator_Options">
+				<options>
+					<li>
+						<weight>5</weight>
+						<only>(0.85,0.75,0.2,1)</only>
+					</li>
+				</options>
+			</colorGeneratorInTraderStock>
+			<comps>
+				<li Class="CompProperties_Rottable">
+					<daysToRotStart>90</daysToRotStart>
+				</li>
+				<li>
+					<compClass>CompColorable</compClass>
+				</li>
+			</comps>
+			<thingCategories>
+				<li>Animalfood</li>
+			</thingCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="PsychoidLeaves"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<MarketValue>2.1</MarketValue>
+			</statBases>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="SmokeleafLeaves"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<MarketValue>4</MarketValue>
+			</statBases>
+		</value>
+	</Operation>
+</Patch>

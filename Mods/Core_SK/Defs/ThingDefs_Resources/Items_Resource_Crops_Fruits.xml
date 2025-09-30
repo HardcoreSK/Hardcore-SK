@@ -21,7 +21,7 @@
 		</statBases>
 	</ThingDef>
 
-	<ThingDef ParentName="SmallFruitFoodRawBase">
+	<!-- <ThingDef ParentName="SmallFruitFoodRawBase">
 		<defName>RawBerries</defName>
 		<label>Strawberries</label>
 		<description>Strawberries are small, red, soft fruits of a Strawberry Plant. They are good when eaten raw.</description>
@@ -46,7 +46,7 @@
 		<ingestible>
 			<joy>0.05</joy>
 		</ingestible>
-	</ThingDef>
+	</ThingDef> -->
 
 	<ThingDef ParentName="SmallFruitFoodRawBase">
 		<defName>RawWatermelon</defName>
@@ -75,7 +75,7 @@
 		</ingestible>
 	</ThingDef>
 	
-	<ThingDef ParentName="SmallFruitFoodRawBase">
+	<!-- <ThingDef ParentName="SmallFruitFoodRawBase">
 		<defName>RawAgave</defName>
 		<label>Agave Fruit</label>
 		<description>The Agave Fruit is edible stalks and flowers of a wild Agave Plant. Agave Plants are native to deserts. The fruits are foul when eaten raw.</description>
@@ -100,7 +100,7 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef> -->
 
 	<ThingDef ParentName="FruitFoodRawBase">
 		<defName>Rawapple</defName>
