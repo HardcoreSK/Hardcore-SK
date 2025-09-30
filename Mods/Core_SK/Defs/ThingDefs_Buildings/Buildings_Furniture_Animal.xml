@@ -28,7 +28,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="AnimalBedBase">
+	<!-- <ThingDef ParentName="AnimalBedBase">
 		<defName>AnimalSleepingSpot</defName>
 		<label>animal sleeping spot</label>
 		<description>Designates a spot on the ground where animals should sleep.</description>
@@ -59,9 +59,9 @@
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 		</building>
 		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="AnimalBedBase">
+	<!-- <ThingDef ParentName="AnimalBedBase">
 		<defName>AnimalSleepingBox</defName>
 		<label>animal hay sleeping spot</label>
 		<description>A small box for animals to sleep in. Fits small animals like chickens, cats, or small dogs. Max animal body size: 0.7</description>
@@ -107,7 +107,7 @@
 			<Mass>8</Mass>
 		</statBases>
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
-	</ThingDef>
+	</ThingDef> -->
 
 	<ThingDef ParentName="AnimalBedBase">
 		<defName>Chickennest</defName>
@@ -196,7 +196,7 @@
 		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="AnimalBedBase">
+	<!-- <ThingDef ParentName="AnimalBedBase">
 		<defName>AnimalBed</defName>
 		<label>animal bed</label>
 		<description>A soft bed for animals to sleep on. Fits any animal.</description>
@@ -239,7 +239,7 @@
 			<li>Animal_C1</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-	</ThingDef>
+	</ThingDef> -->
 
 	<ThingDef ParentName="AnimalBedBase">
 		<defName>AnimalPillow</defName>
