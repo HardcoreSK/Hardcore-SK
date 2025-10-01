@@ -53,7 +53,7 @@
 				<Powder>1</Powder>
 				<ComponentIndustrial>1</ComponentIndustrial>
 			</smeltProducts>
-			<statBases>
+			<statBases Merge="True">
 				<MarketValue>1.6</MarketValue>
 			</statBases>
 		</value>
@@ -91,7 +91,7 @@
 				<ComponentMedieval>2</ComponentMedieval>
 				<FSX>1</FSX>
 			</smeltProducts>
-			<statBases>
+			<statBases Merge="True">
 				<MarketValue>2.4</MarketValue>
 			</statBases>
 		</value>
@@ -139,9 +139,9 @@
 	</Operation>
 
 	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="Weapon_GrenadeSmoke"]</xpath>
+		<xpath>Defs/ThingDef[defName="CE_Weapon_GrenadeSmoke"]</xpath>
 		<value>
-			<statBases>
+			<statBases Merge="True">
 				<MarketValue>1.7</MarketValue>
 			</statBases>
 		</value>

@@ -25,20 +25,6 @@
     </value>
   </Operation>
   <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="Apparel_KidTribal"]</xpath>
-    <value Merge="True">
-      <statBases>
-        <MaxHitPoints>60</MaxHitPoints>
-        <WorkToMake>1400</WorkToMake>
-        <Mass>0.5</Mass>
-        <StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
-        <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
-        <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
-        <EquipDelay>1.5</EquipDelay>
-      </statBases>
-    </value>
-  </Operation>
-  <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Apparel_KidHelmet"]</xpath>
     <value>
       <recipeMaker>
