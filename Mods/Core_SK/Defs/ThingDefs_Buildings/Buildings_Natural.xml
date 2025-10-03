@@ -148,7 +148,7 @@
 -->
 
 	<!--============================ Simple mineables ===============================-->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="RockBase">
 		<defName>CollapsedRocks</defName>
 		<label>Collapsed Rocks</label>
@@ -168,9 +168,9 @@
 			<claimable>false</claimable>
 		</building>
 	</ThingDef>
-
+-->
 	<!--============================ Resource rocks ===============================-->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="RockBase">
 		<defName>MineableSteel</defName>
 		<label>Iron Ore Deposits</label>
@@ -197,7 +197,7 @@
 			<veinMineable>true</veinMineable>
 		</building>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="RockBase">
 		<defName>MineableSilver</defName>
 		<label>Silver Ore Deposits</label>
@@ -224,8 +224,8 @@
 			<veinMineable>true</veinMineable>
 		</building>
 	</ThingDef>
-
-
+-->
+<!-- DefOverwrite
 	<ThingDef ParentName="RockBase">
 		<defName>MineableGold</defName>
 		<label>Gold Ore Deposits</label>
@@ -252,7 +252,7 @@
 			<veinMineable>true</veinMineable>
 		</building>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="RockBase">
 		<defName>MineableNitre</defName>
 		<label>Nitre Deposits</label>
@@ -308,8 +308,8 @@
 		</building>
 	</ThingDef>
 
-
-	<!--<ThingDef ParentName="RockBase">
+<!-- DefOverwrite
+	<ThingDef ParentName="RockBase">
 		<defName>MineablePlasteel</defName>
 		<label>Nickel Ore Deposits</label>
 		<graphicData>
@@ -416,7 +416,7 @@
 		</building>
 	</ThingDef>
 
-
+<!-- DefOverwrite
 	<ThingDef ParentName="RockBase">
 		<defName>MineableJade</defName>
 		<label>Jade</label>
@@ -443,7 +443,7 @@
 			<veinMineable>true</veinMineable>
 		</building>
 	</ThingDef>
-
+-->
 
 	<ThingDef ParentName="RockBase">
 		<defName>MineableTitanium</defName>
@@ -549,7 +549,7 @@
 			<veinMineable>true</veinMineable>
 		</building>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>SteamGeyser</defName>
 		<thingClass>Building_SteamGeyser</thingClass>
@@ -587,7 +587,7 @@
 			<li Class="SK.ThingGround" />
 		</modExtensions>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="RockBase">
 		<defName>MineableGlowstone</defName>
 		<label>Glowstone Deposit</label>

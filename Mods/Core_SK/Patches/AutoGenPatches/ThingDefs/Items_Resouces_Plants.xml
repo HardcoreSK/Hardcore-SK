@@ -6,12 +6,12 @@
 		<xpath>Defs/ThingDef[defName="RawFungus" ]</xpath>
 		<attribute>ParentName</attribute>
 		<value>SK.MushroomBaseDummy</value>
-	</Operation>
+	</Operation>-->
 	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ThingDef[defName="RawBerries" or defName="RawAgave" ]</xpath>
+		<xpath>Defs/ThingDef[defName="RawBerries" or defName="RawAgave"]</xpath>
 		<attribute>ParentName</attribute>
 		<value>SK.SmallFruitFoodRawBaseDummy</value>
-	</Operation> -->
+	</Operation>
 	<!-- 	<Operation Class="PatchOperationAttributeSet">
 		<xpath>Defs/ThingDef[defName="RawCorn" or defName="RawRice" or defName="RawPotatoes" ]</xpath>
 		<attribute>ParentName</attribute>

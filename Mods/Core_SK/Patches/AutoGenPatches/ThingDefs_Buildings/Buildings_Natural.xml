@@ -7,7 +7,7 @@
 	  <value>BuildingBase</value>
   </Operation>
 	
-<!-- TODO
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="CollapsedRocks"]</xpath>
     <value>
@@ -15,10 +15,6 @@
       <statBases>
         <MaxHitPoints>1200</MaxHitPoints>
       </statBases>
-      <building>
-        <isNaturalRock>false</isNaturalRock>
-        <claimable>false</claimable>
-      </building>
     </value>
   </Operation>
 
@@ -32,13 +28,10 @@
       <description>Deposits of Iron Ore. Iron Ore has a variety of uses as an economic metal, being abundant and easy to process. It can be strengthened by being mixed with other metals into alloys.</description>
       <building>
         <isResourceRock>true</isResourceRock>
-        <mineableThing>Steel</mineableThing>
+        <mineableThing>Iron</mineableThing>
         <mineableYield>35</mineableYield>
         <mineableScatterCommonality>1.1</mineableScatterCommonality>
-        <mineableScatterLumpSizeRange>
-          <min>20</min>
-          <max>40</max>
-        </mineableScatterLumpSizeRange>
+		<mineableScatterLumpSizeRange>20~40</mineableScatterLumpSizeRange>
         <veinMineable>true</veinMineable>
       </building>
     </value>
@@ -57,10 +50,7 @@
         <mineableThing>Silver</mineableThing>
         <mineableYield>250</mineableYield>
         <mineableScatterCommonality>0.25</mineableScatterCommonality>
-        <mineableScatterLumpSizeRange>
-          <min>7</min>
-          <max>15</max>
-        </mineableScatterLumpSizeRange>
+		<mineableScatterLumpSizeRange>7~15</mineableScatterLumpSizeRange>
         <veinMineable>true</veinMineable>
       </building>
     </value>
@@ -79,10 +69,7 @@
         <mineableThing>Gold</mineableThing>
         <mineableYield>50</mineableYield>
         <mineableScatterCommonality>0.15</mineableScatterCommonality>
-        <mineableScatterLumpSizeRange>
-          <min>3</min>
-          <max>9</max>
-        </mineableScatterLumpSizeRange>
+		<mineableScatterLumpSizeRange>3~9</mineableScatterLumpSizeRange>
         <veinMineable>true</veinMineable>
       </building>
     </value>
@@ -91,28 +78,17 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="MineablePlasteel"]</xpath>
     <value>
-      <label>Nickel Ore Deposits</label>
-      <graphicData>
+      <label>Compacted Ferrotitanium</label>
+      <graphicData DeepReplace="true">
         <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>CutoutComplex</shaderType>
-        <color>(88,115,175)</color>
+        <color>(160,178,181)</color>
       </graphicData>
       <statBases>
         <MaxHitPoints>10000</MaxHitPoints>
       </statBases>
-      <description>Lateritic nickel ore deposits are surficial, weathered rinds formed on ultramafic rocks. Nickel Ore contains Nickel and small amounts of Cobalt.</description>
-      <building>
-        <isResourceRock>true</isResourceRock>
-        <mineableThing>Nickel</mineableThing>
-        <mineableYield>50</mineableYield>
-        <mineableScatterCommonality>0.4</mineableScatterCommonality>
-        <mineableScatterLumpSizeRange>
-          <min>5</min>
-          <max>10</max>
-        </mineableScatterLumpSizeRange>
-        <veinMineable>true</veinMineable>
-      </building>
+      <description>Ancient compacted rubble rich in Ferrotitanium.</description>
     </value>
   </Operation>
 
@@ -128,10 +104,7 @@
         <mineableThing>Jade</mineableThing>
         <mineableYield>75</mineableYield>
         <mineableScatterCommonality>0.25</mineableScatterCommonality>
-        <mineableScatterLumpSizeRange>
-          <min>7</min>
-          <max>12</max>
-        </mineableScatterLumpSizeRange>
+		<mineableScatterLumpSizeRange>7~12</mineableScatterLumpSizeRange>
         <veinMineable>true</veinMineable>
       </building>
     </value>
@@ -160,7 +133,7 @@
       </modExtensions>
     </value>
   </Operation>
-
+<!-- Exact same 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="MineableComponentsIndustrial"]</xpath>
     <value>

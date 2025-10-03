@@ -86,8 +86,8 @@
 			<BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">2</BirthRitualQualityOffset>
 		</statBases>
 	</ThingDef>
-
-	<!-- <ThingDef ParentName="SK_BedBase">
+<!-- DefOverwrite
+	<ThingDef ParentName="SK_BedBase">
 		<defName>SleepingSpot</defName>
 		<label>sleeping spot</label>
 		<description>Designates a spot on the ground where people should sleep. Neither comfortable, nor healthy.</description>
@@ -125,9 +125,9 @@
 			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 		</building>
-	</ThingDef> -->
-
-	<!-- <ThingDef ParentName="SK_BedBase">
+	</ThingDef>
+--> <!-- DefOverwrite
+	<ThingDef ParentName="SK_BedBase">
 		<defName>DoubleSleepingSpot</defName>
 		<label>double sleeping spot</label>
 		<description>Designates a spot on the ground where two people should sleep together. Not comfortable.</description>
@@ -166,8 +166,8 @@
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 		</building>
 		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
-	</ThingDef> -->
-
+	</ThingDef>
+-->
 	<ThingDef ParentName="SK_BedWithQualityBase">
 		<defName>BagBed</defName>
 		<label>sleeping bag</label>
@@ -381,7 +381,7 @@
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</ThingDef> -->
 
-	<!-- <ThingDef ParentName="SK_BedWithQualityBase">
+	<ThingDef ParentName="SK_BedWithQualityBase">
 		<defName>Bedroll</defName>
 		<label>mattress bed</label>
 		<description>Sleeping on a platform of logs is as well and good, but a bit of padding goes a long way for a good night's sleep.</description>
@@ -426,9 +426,9 @@
 			<li>Beds_A1</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
-	</ThingDef>  -->
+	</ThingDef> 
 
-	<!-- <ThingDef ParentName="SK_BedWithQualityBase">
+	<ThingDef ParentName="SK_BedWithQualityBase">
 		<defName>BedrollDouble</defName>
 		<label>mattress double bed</label>
 		<description>Sleeping on a platform of logs is as well and good, but a bit of padding goes a long way for a good night's sleep. Just big enough for accommodate two.</description>
@@ -473,9 +473,9 @@
 			<li>Beds_A1</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
-	</ThingDef> -->
+	</ThingDef>
 
-	<!-- <ThingDef ParentName="SK_SansComfortBedBase">
+	<ThingDef ParentName="SK_SansComfortBedBase">
 		<defName>Bed</defName>
 		<label>simple bed</label>
 		<description>A cozy mattress with sheets on a metal frame for resting.</description>
@@ -518,9 +518,9 @@
 			<li>Beds_B1</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-	</ThingDef> -->
+	</ThingDef>
 
-	<!-- <ThingDef ParentName="SK_SansComfortBedBase">
+	<ThingDef ParentName="SK_SansComfortBedBase">
 		<defName>DoubleBed</defName>
 		<label>double bed</label>
 		<description>A simple double-wide bed that fits two people.</description>
@@ -563,7 +563,7 @@
 			<li>Beds_B1</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-	</ThingDef> -->
+	</ThingDef>
 
 	<ThingDef ParentName="SK_SansComfortBedBase">
 		<defName>industrial_single_bed</defName>
@@ -847,7 +847,7 @@
 
 	<!--================================ heart double bed ======================================-->
 
-	<!-- <ThingDef ParentName="SK_SansComfortBedBase">
+	<ThingDef ParentName="SK_SansComfortBedBase">
 		<defName>RoyalBed</defName>
 		<label>lover's double bed</label>
 		<description>A comfy bed for your lovers. Fits two. The Model "heart-3000" is very popular in the more develpoed Rimworlds. It's mostly bought by couples and owners of certain establishments. Due to the Rimworlds not being the safest place and in the face of a possible sudden death the delieveries to the colonies in the Rimworlds have doubled over the years. Followed by a "mysterious" increase in population on these planets.</description>
@@ -895,7 +895,7 @@
 			<li>Beds_C2</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
-	</ThingDef> -->
+	</ThingDef>
 
 	<!--================================ pod beds ======================================-->
 
@@ -1101,7 +1101,7 @@
 
 	<!--================================ hospital beds ======================================-->
 
-	<!-- <ThingDef ParentName="SK_BedWithQualityBase">
+	<ThingDef ParentName="SK_BedWithQualityBase">
 		<defName>HospitalBed</defName>
 		<label>hospital bed</label>
 		<description>A bed specially designed for injured people. Improves the chance of successful medical work.</description>
@@ -1150,7 +1150,7 @@
 			<li>HospitalBed</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-	</ThingDef> -->
+	</ThingDef>
 
 	<ThingDef ParentName="SK_BedWithQualityBase">
 		<defName>AdvHospitalBed</defName>

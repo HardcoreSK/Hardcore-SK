@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[@Name="DoorBase"]</xpath>
+    <value>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Door"]</xpath>
+    <value>
+      <label>rustic door</label>
+      <statBases>
+        <MaxHitPoints>180</MaxHitPoints>
+        <WorkToBuild>400</WorkToBuild>
+      </statBases>
+      <stuffCategories Inherit="false">
+        <li>Woody</li>
+      </stuffCategories>
+      <costStuffCount>10</costStuffCount>
+      <costList>
+        <ComponentMedieval>1</ComponentMedieval>
+      </costList>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Autodoor"]</xpath>
+    <value>
+      <statBases>
+        <MaxHitPoints>250</MaxHitPoints>
+        <WorkToBuild>800</WorkToBuild>
+      </statBases>
+      <stuffCategories Inherit="false">
+        <li>RuggedMetallic</li>
+      </stuffCategories>
+      <costStuffCount>50</costStuffCount>
+      <costList>
+        <ComponentIndustrial>2</ComponentIndustrial>
+        <ElectronicComponents>2</ElectronicComponents>
+      </costList>
+      <comps>
+        <li Class="CompProperties_Power">
+          <compClass>CompPowerTrader</compClass>
+          <basePowerConsumption>100</basePowerConsumption>
+        </li>
+        <li Class="CompProperties_Breakdownable"/>
+        <li Class="SK.CompProperties_LowIdleDraw">
+          <compClass>SK.CompPowerLowIdleDraw</compClass>
+          <idlePowerFactor>0.1</idlePowerFactor>
+          <operationalMode>WhenNear</operationalMode>
+        </li>
+        <li Class="CompProperties_Styleable"/>
+      </comps>
+      <designationHotKey>Misc3</designationHotKey>
+      <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="FenceGate"]</xpath>
+    <value>
+      <stuffCategories Inherit="false">
+        <li>Metallic</li>
+        <li>Woody</li>
+      </stuffCategories>
+      <costStuffCount>15</costStuffCount>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="AnimalFlap"]</xpath>
+    <value>
+      <costStuffCount>40</costStuffCount>
+      <costList>
+        <ComponentMedieval>3</ComponentMedieval>
+      </costList>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="OrnateDoor"]</xpath>
+    <value>
+      <statBases>
+        <WorkToBuild>8000</WorkToBuild>
+        <MaxHitPoints>250</MaxHitPoints>
+        <Beauty>30</Beauty>
+      </statBases>
+      <stuffCategories Inherit="false">
+      	<li>RuggedMetallic</li>
+      </stuffCategories>
+      <costStuffCount>75</costStuffCount>
+      <costList>
+      	<Gold>50</Gold>
+      	<ComponentMedieval>2</ComponentMedieval>
+      </costList>
+      <researchPrerequisites>
+        <li>Construction_B1</li>
+      </researchPrerequisites>
+      <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    </value>
+  </Operation>
+
+</Patch>
