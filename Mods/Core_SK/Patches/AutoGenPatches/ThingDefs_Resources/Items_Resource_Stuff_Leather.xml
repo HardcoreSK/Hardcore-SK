@@ -2,7 +2,6 @@
 <Patch>
 
 	<Operation Class="SK.PatchOperationReplaceExtended">
-	<debug>true</debug>
 		<xpath>Defs/ThingDef[@Name="LeatherBase"]</xpath>
 		<value>
 			<statBases Merge="True">

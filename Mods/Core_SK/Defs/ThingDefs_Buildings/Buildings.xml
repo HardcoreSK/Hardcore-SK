@@ -197,7 +197,7 @@
 			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
 		</placeWorkers>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef Name="SK_FurnitureBase" ParentName="StandardBuilding" Abstract="True">
 		<fillPercent>0.6</fillPercent>
 		<tradeTags>
@@ -216,7 +216,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<ThingDef Name="SK_FurnitureWithQualityBase" ParentName="SK_FurnitureBase" Abstract="True">
+	<ThingDef Name="SK_FurnitureWithQualityBase" ParentName="FurnitureBase" Abstract="True">
 		<comps>
 			<li>
 				<compClass>CompQuality</compClass>
@@ -224,7 +224,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef Name="SK_ArtableFurnitureBase" ParentName="SK_FurnitureWithQualityBase" Abstract="True">
+	<ThingDef Name="SK_ArtableFurnitureBase" ParentName="FurnitureWithQualityBase" Abstract="True">
 		<comps>
 			<li Class="CompProperties_Art">
 				<nameMaker>NamerArtSculpture</nameMaker>
@@ -237,7 +237,7 @@
 		</inspectorTabs>
 	</ThingDef>
 
-	<ThingDef Name="SK_ArtableFurnitureRegardlessOfQualityBase" ParentName="SK_FurnitureWithQualityBase" Abstract="True">
+	<ThingDef Name="SK_ArtableFurnitureRegardlessOfQualityBase" ParentName="FurnitureWithQualityBase" Abstract="True">
 		<comps>
 			<li Class="CompProperties_Art">
 				<nameMaker>NamerArtFurniture</nameMaker>
@@ -249,7 +249,7 @@
 			<li>ITab_Art</li>
 		</inspectorTabs>
 	</ThingDef>
-
+-->
 	<ThingDef Name="UniversalFermenterBase" ParentName="StandardBuilding" Abstract="True">
 		<thingClass>UniversalFermenterSK.Building_UF</thingClass>
 		<tickerType>Normal</tickerType>

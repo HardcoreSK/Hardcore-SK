@@ -4,7 +4,7 @@
 	<!--======================= Basic domestic furniture ==============================-->
 
 
-	<ThingDef ParentName="SK_FurnitureBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>PrimitiveStoolStone</defName>
 		<label>stone stool</label>
 		<graphicData>
@@ -57,7 +57,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_FurnitureBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>PrimitiveStoolWood</defName>
 		<label>wooden stool</label>
 		<graphicData>
@@ -106,8 +106,8 @@
 		</comps>
 	</ThingDef>
 
-
-	<ThingDef ParentName="SK_FurnitureBase">
+<!-- DefOverwrite
+	<ThingDef ParentName="FurnitureBase">
 		<defName>Stool</defName>
 		<label>backless stool</label>
 		<graphicData>
@@ -168,8 +168,8 @@
 			<li Class="CompProperties_Styleable" />
 		</comps>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_FurnitureBase">
+-->
+	<ThingDef ParentName="FurnitureBase">
 		<defName>SimplePillow</defName>
 		<label>pillow</label>
 		<graphicData>
@@ -220,7 +220,7 @@
 		</comps>
 	</ThingDef>  
 
-	<ThingDef ParentName="SK_FurnitureBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>SlabChair</defName>
 		<label>stone armchair</label>
 		<graphicData>
@@ -266,7 +266,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_FurnitureBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>FoldingStool</defName>
 		<label>folding stool</label>
 		<graphicData>
@@ -327,7 +327,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_FurnitureBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>Bench</defName>
 		<label>bench</label>
 		<graphicData>
@@ -389,8 +389,8 @@
 			<li Class="CompProperties_Styleable" />
 		</comps>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_ArtableFurnitureBase">
+<!-- DefOverwrite
+	<ThingDef ParentName="ArtableFurnitureBase">
 		<defName>DiningChair</defName>
 		<label>dining chair</label>
 		<graphicData>
@@ -446,8 +446,8 @@
 			<li Class="CompProperties_Styleable" />
 		</comps>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_FurnitureBase">
+-->
+	<ThingDef ParentName="FurnitureBase">
 		<defName>MilleniumChair</defName>
 		<label>millenium chair</label>
 		<graphicData>
@@ -509,7 +509,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_FurnitureBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>EggArmchair</defName>
 		<label>egg armchair</label>
 		<graphicData>
@@ -569,8 +569,8 @@
 		</comps>
 	</ThingDef>
 
-
-	<ThingDef ParentName="SK_FurnitureBase">
+<!-- DefOverwrite
+	<ThingDef ParentName="FurnitureBase">
 		<defName>Armchair</defName>
 		<label>armchair</label>
 		<graphicData>
@@ -627,11 +627,11 @@
 			<li Class="CompProperties_Styleable" />
 		</comps>
 	</ThingDef>
-
+-->
 
 	<!--================ Seats ================-->
 
-	<ThingDef ParentName="SK_ArtableFurnitureBase">
+	<ThingDef ParentName="ArtableFurnitureBase">
 		<defName>RusticCouch</defName>
 		<label>rustic couch</label>
 		<socialPropernessMatters>true</socialPropernessMatters>
@@ -693,7 +693,7 @@
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ArtableFurnitureBase">
+	<ThingDef ParentName="ArtableFurnitureBase">
 		<defName>MilleniumCouch</defName>
 		<label>millenium couch</label>
 		<socialPropernessMatters>true</socialPropernessMatters>
@@ -756,7 +756,7 @@
 		<constructionSkillPrerequisite>13</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ArtableFurnitureBase">
+	<ThingDef ParentName="ArtableFurnitureBase">
 		<defName>PodChair</defName>
 		<label>pod chair</label>
 		<graphicData>
@@ -830,7 +830,8 @@
 	</ThingDef>
 
 	<!-- Table base -->
-	<ThingDef ParentName="SK_FurnitureBase" Name="SK_TableBase" Abstract="True">
+	<!-- DefOverwrite
+	<ThingDef ParentName="FurnitureBase" Name="TableBase" Abstract="True">
 		<description>People eat off tables when chairs are placed facing them.</description>
 		<pathCost>60</pathCost>
 		<fillPercent>0.3</fillPercent>
@@ -847,9 +848,9 @@
 				<compClass>CompQuality</compClass>
 			</li>
 		</comps>
-	</ThingDef>
-
-	<ThingDef ParentName="SK_TableBase" Name="SK_TableGatherSpotBase" Abstract="True" >
+	</ThingDef>-->
+<!-- DefOverwrite
+	<ThingDef ParentName="TableBase" Name="SK_TableGatherSpotBase" Abstract="True" >
 		<thingClass>SK.Building_Table</thingClass>
 		<comps>
 			<li>
@@ -867,8 +868,8 @@
 			<li>PlaceWorker_RitualFocus</li>
 		</placeWorkers>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_TableBase">
+-->
+	<ThingDef ParentName="TableBase">
 		<defName>PrimitiveTableStone</defName>
 		<label>small stone table</label>
 		<graphicData>
@@ -905,7 +906,7 @@
 		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_TableGatherSpotBase">
+	<ThingDef ParentName="TableGatherSpotBase">
 		<defName>TableStone</defName>
 		<label>stone table</label>
 		<graphicData>
@@ -942,7 +943,7 @@
 		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_TableGatherSpotBase">
+	<ThingDef ParentName="TableGatherSpotBase">
 		<defName>PrimitiveTableWood</defName>
 		<label>primitive wood table</label>
 		<graphicData>
@@ -978,7 +979,7 @@
 		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_TableGatherSpotBase">
+	<ThingDef ParentName="TableGatherSpotBase">
 		<defName>Table1x1c</defName>
 		<label>table (1x1)</label>
 		<graphicData>
@@ -1019,8 +1020,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_TableGatherSpotBase">
+<!-- DefOverwrite
+	<ThingDef ParentName="TableGatherSpotBase">
 		<defName>Table1x2c</defName>
 		<label>table (1x2)</label>
 		<graphicData>
@@ -1064,8 +1065,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_TableGatherSpotBase">
+-->
+	<ThingDef ParentName="TableGatherSpotBase">
 		<defName>Table1x3c</defName>
 		<label>table (1x3)</label>
 		<graphicData>
@@ -1105,8 +1106,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_TableGatherSpotBase">
+<!-- DefOverwrite
+	<ThingDef ParentName="TableGatherSpotBase">
 		<defName>Table2x2c</defName>
 		<label>table (2x2)</label>
 		<tickerType>Normal</tickerType>
@@ -1153,8 +1154,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_TableGatherSpotBase">
+-->
+	<ThingDef ParentName="TableGatherSpotBase">
 		<defName>Table2x4c</defName>
 		<label>table (2x3)</label>
 		<description>Colonists will eat off of tables when a chair is facing it. This long table is suitable for 8 at once.</description>
@@ -1199,7 +1200,7 @@
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_TableGatherSpotBase">
+	<ThingDef ParentName="TableGatherSpotBase">
 		<defName>Table3x3c</defName>
 		<label>table (3x3)</label>
 		<description>Colonists will eat off of tables when a chair is facing it. This long table is suitable for 8 at once.</description>
@@ -1246,7 +1247,7 @@
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_TableBase">
+	<ThingDef ParentName="TableBase">
 		<defName>TeaTable</defName>
 		<label>tea table</label>
 		<description>Colonists will eat off of tables when a chair is facing it. This tiny glass table is suitable for 1.</description>
@@ -1295,7 +1296,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_TableBase">
+	<ThingDef ParentName="TableBase">
 		<defName>MilleniumTableSmall</defName>
 		<label>millenium table  (1x1)</label>
 		<description>This splendidly designed table is the perfect center-piece for any dining room!</description>
@@ -1337,7 +1338,7 @@
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_TableGatherSpotBase">
+	<ThingDef ParentName="TableGatherSpotBase">
 		<defName>MilleniumTable1x2c</defName>
 		<label>millenium table (1x2)</label>
 		<description>This splendidly designed table is the perfect center-piece for any dining room!</description>
@@ -1378,7 +1379,7 @@
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_TableGatherSpotBase">
+	<ThingDef ParentName="TableGatherSpotBase">
 		<defName>MilleniumTable1x3c</defName>
 		<label>millenium table (1x3)</label>
 		<description>This splendidly designed table is the perfect center-piece for any dining room!</description>
@@ -1419,7 +1420,7 @@
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_TableGatherSpotBase">
+	<ThingDef ParentName="TableGatherSpotBase">
 		<defName>MilleniumTable</defName>
 		<label>millenium table (2x2)</label>
 		<description>This splendidly designed table is the perfect center-piece for any dining room!</description>
@@ -1462,7 +1463,7 @@
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_TableGatherSpotBase">
+	<ThingDef ParentName="TableGatherSpotBase">
 		<defName>MilleniumTable2x3c</defName>
 		<label>millenium table (2x3)</label>
 		<description>This splendidly designed table is the perfect center-piece for any dining room!</description>
@@ -1503,7 +1504,7 @@
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_FurnitureBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>ClutterLocker</defName>
 		<label>locker</label>
 		<thingClass>SK.ClothLocker</thingClass>
@@ -1637,7 +1638,7 @@
 
 	<!--================ Dresser ================-->
 
-	<ThingDef ParentName="SK_FurnitureBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>Dresser</defName>
 		<label>dressing table</label>
 		<thingClass>SK.Dresser</thingClass>
@@ -1773,7 +1774,7 @@
 	</ThingDef> -->
 
 
-	<ThingDef Abstract="True" Name="BookcaseBase" ParentName="SK_FurnitureBase">
+	<ThingDef Abstract="True" Name="BookcaseBase" ParentName="FurnitureBase">
 		<thingClass>Building_Bookcase</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -1915,7 +1916,7 @@
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_TableBase">
+	<ThingDef ParentName="TableBase">
 		<defName>EndTableSimple</defName>
 		<label>end table</label>
 		<thingClass>SK.ClothLocker</thingClass>
@@ -1982,7 +1983,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_TableBase">
+	<ThingDef ParentName="TableBase">
 		<defName>EndTable</defName>
 		<label>end table with lamp</label>
 		<description>A small table with a lamp and a drawer. It would be a nice addition beside a bed. Uses 20 W to light a small area.</description>
@@ -2067,7 +2068,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_TableBase">
+	<ThingDef ParentName="TableBase">
 		<defName>JournalTable</defName>
 		<label>journal table</label>
 		<thingClass>Building</thingClass>
@@ -2131,7 +2132,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_TableBase">
+	<ThingDef ParentName="TableBase">
 		<defName>HolographicCell</defName>
 		<label>holographic cell</label>
 		<thingClass>Building</thingClass>

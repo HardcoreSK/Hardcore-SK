@@ -3,7 +3,7 @@
 
 	<!--=========================== Animal beds ===============================-->
 
-	<ThingDef Abstract="True" ParentName="SK_FurnitureBase" Name="AnimalBedBase">
+	<ThingDef Abstract="True" ParentName="FurnitureBase" Name="AnimalBedBase">
 		<thingClass>Building_Bed</thingClass>
 		<designationCategory>Furniture</designationCategory>	
 		<altitudeLayer>Building</altitudeLayer>
@@ -288,7 +288,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_FurnitureBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>ScratchingPole</defName>
 		<label>scratching post</label>
 		<thingClass>Building</thingClass>
