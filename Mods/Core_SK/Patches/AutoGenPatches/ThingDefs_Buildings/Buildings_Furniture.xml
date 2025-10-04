@@ -305,11 +305,11 @@
       <statBases>
         <MaxHitPoints>150</MaxHitPoints>
         <WorkToBuild>1400</WorkToBuild>
+        <Mass>17</Mass>
+        <Bulk>90</Bulk>
         <Flammability>1.0</Flammability>
         <Beauty>6</Beauty>
-        <Bulk>90</Bulk>
-        <Mass>17</Mass>
-        <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">18</StyleDominance>
+        <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
       </statBases>
       <stuffCategories>
         <li>Metallic</li>
@@ -330,7 +330,7 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Table3x3c"]</xpath>
     <value>
-      <description>Colonists will eat off of tables when a chair is facing it. This long table is suitable for 8 at once.</description>
+      <description>Colonists will eat off of tables when a chair is facing it. This big table is suitable for 12 at once.</description>
       <graphicData>
         <texPath>Things/Building/Furniture/Tables/table3x3</texPath>
         <graphicClass>Graphic_Single</graphicClass>
@@ -349,10 +349,10 @@
       <statBases>
         <MaxHitPoints>150</MaxHitPoints>
         <WorkToBuild>1600</WorkToBuild>
+        <Mass>42</Mass>
+        <Bulk>53</Bulk>
         <Flammability>1.0</Flammability>
         <Beauty>7</Beauty>
-        <Bulk>53</Bulk>
-        <Mass>42</Mass>
         <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">27</StyleDominance>
       </statBases>
       <stuffCategories>
@@ -374,7 +374,6 @@
     <xpath>Defs/ThingDef[defName="Dresser"]</xpath>
     <value>
       <label>dressing table</label>
-      <thingClass>SK.Dresser</thingClass>
       <graphicData>
         <texPath>Things/Building/Furniture/Tables/toilettable</texPath>
         <graphicClass>Graphic_Multi</graphicClass>
@@ -390,19 +389,16 @@
           <cornerBR>Damage/Corner</cornerBR>
         </damageData>
       </graphicData>
-      <hasInteractionCell>True</hasInteractionCell>
-      <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	  <staticSunShadowHeight>0</staticSunShadowHeight>
       <rotatable>true</rotatable>
       <statBases>
         <MaxHitPoints>120</MaxHitPoints>
-        <WorkToBuild>5000</WorkToBuild>
+        <WorkToBuild>4000</WorkToBuild>
         <Flammability>1.0</Flammability>
-        <Beauty>10</Beauty>
-        <Cleanliness>-2</Cleanliness>
+        <Beauty>6</Beauty>
         <Bulk>75</Bulk>
         <Mass>25</Mass>
       </statBases>
-      <description>A Dresser to make Pawns look more snappy.</description>
       <size>2,1</size>
       <fillPercent>0.5</fillPercent>
       <stuffCategories>
@@ -427,54 +423,12 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[@Name="BookcaseBase"]</xpath>
     <value>
-      <altitudeLayer>Building</altitudeLayer>
-      <passability>PassThroughOnly</passability>
-      <fillPercent>0.4</fillPercent>
-      <castEdgeShadows>true</castEdgeShadows>
-      <staticSunShadowHeight>0.5</staticSunShadowHeight>
-      <canOverlapZones>false</canOverlapZones>
-      <pathCost>50</pathCost>
       <stuffCategories>
         <li>Metallic</li>
         <li>Woody</li>
         <li>Stony</li>
         <li>Plastic</li>
       </stuffCategories>
-      <defaultPlacingRot>South</defaultPlacingRot>
-      <statBases>
-        <Flammability>1.0</Flammability>
-        <Beauty>0.5</Beauty>
-      </statBases>
-      <building>
-        <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
-        <paintable>true</paintable>
-        <storageGroupTag>Bookcase</storageGroupTag>
-        <maxItemsInCell>5</maxItemsInCell>
-        <blueprintClass>Blueprint_StorageWithRoomHighlight</blueprintClass>
-        <ignoreStoredThingsBeauty>false</ignoreStoredThingsBeauty>
-        <fixedStorageSettings>
-          <filter>
-            <categories Inherit="False">
-              <li>Books</li>
-            </categories>
-          </filter>
-        </fixedStorageSettings>
-        <defaultStorageSettings>
-          <priority>Important</priority>
-          <filter>
-            <categories>
-              <li>Books</li>
-            </categories>
-          </filter>
-        </defaultStorageSettings>
-      </building>
-      <inspectorTabs>
-        <li>ITab_Storage</li>
-        <li>ITab_ContentsBooks</li>
-      </inspectorTabs>
-      <comps>
-        <li Class="CompProperties_Styleable"/>
-      </comps>
     </value>
   </Operation>
 
@@ -508,7 +462,7 @@
         <Bulk>55</Bulk>
         <Mass>20</Mass>
         <WorkToBuild>350</WorkToBuild>
-        <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2</StyleDominance>
+        <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
       </statBases>
       <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     </value>
@@ -532,15 +486,14 @@
           <rect>(0.15,0.15,1.7,1.7)</rect>
         </damageData>
       </graphicData>
-      <altitudeLayer>Building</altitudeLayer>
       <socialPropernessMatters>true</socialPropernessMatters>
       <statBases>
         <MaxHitPoints>100</MaxHitPoints>
         <WorkToBuild>1100</WorkToBuild>
+        <Mass>23</Mass>
+        <Bulk>75</Bulk>
         <Flammability>1.0</Flammability>
         <Beauty>10</Beauty>
-        <Bulk>75</Bulk>
-        <Mass>23</Mass>
       </statBases>
       <size>(1,1)</size>
       <stuffCategories>
@@ -559,9 +512,6 @@
       <passability>PassThroughOnly</passability>
       <rotatable>true</rotatable>
       <tickerType>Rare</tickerType>
-      <building>
-        <paintable>true</paintable>
-      </building>
       <comps>
         <li Class="CompProperties_Flickable"/>
         <li Class="CompProperties_Power">
@@ -569,13 +519,18 @@
           <basePowerConsumption>20</basePowerConsumption>
           <soundPowerOn>Power_OnSmall</soundPowerOn>
           <soundPowerOff>Power_OffSmall</soundPowerOff>
+          <powerUpgrades>
+            <li>
+              <researchProject>ColoredLights</researchProject>
+              <factor>0.5</factor>
+            </li>
+          </powerUpgrades>
         </li>
         <li Class="CompProperties_Glower">
           <glowRadius>4</glowRadius>
           <glowColor>(217,217,208,0)</glowColor>
-        </li>
-        <li Class="SK.CompProperties_ColoredLight">
-          <compClass>SK.CompColoredLight</compClass>
+          <colorPickerEnabled>true</colorPickerEnabled>
+          <darklightToggle>true</darklightToggle>
         </li>
         <li Class="CompProperties_Facility">
           <statOffsets>
@@ -587,7 +542,6 @@
           <mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
         </li>
       </comps>
-      <designationCategory>Furniture</designationCategory>
       <filthLeaving>Filth_BrokenGlass</filthLeaving>
       <researchPrerequisites>
         <li>Beds_C2</li>

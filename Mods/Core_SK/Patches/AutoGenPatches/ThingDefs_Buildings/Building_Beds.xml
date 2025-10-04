@@ -14,12 +14,12 @@
 		<xpath>Defs/ThingDef[defName="SleepingSpot" or defName="DoubleSleepingSpot" ]</xpath>
 		<attribute>ParentName</attribute>
 		<value>SK.SK_BedBaseDummy</value>
-	</Operation> -->
+	</Operation> 
 	<Operation Class="PatchOperationAttributeSet">
 		<xpath>Defs/ThingDef[defName="AnimalSleepingSpot" or defName="AnimalSleepingBox" or defName="AnimalBed" ]</xpath>
 		<attribute>ParentName</attribute>
 		<value>SK.AnimalBedBaseDummy</value>
-	</Operation>
+	</Operation>-->
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[@Name="BasicBedBase"]</xpath>
 		<value>

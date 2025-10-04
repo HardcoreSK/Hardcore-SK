@@ -55,7 +55,7 @@
 		<casualInterruptible>false</casualInterruptible>
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
-
+<!-- Obsolete
 	<JobDef>
 		<defName>ColorChanger</defName>
 		<driverClass>SK.Dresser_Job</driverClass>
@@ -69,7 +69,7 @@
 		<reportString>Going styling station.</reportString>
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
-
+-->
 	<JobDef>
 		<defName>BeatFireWithTool</defName>
 		<driverClass>SK.JobDriver_BeatFireWithTool</driverClass>

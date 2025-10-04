@@ -2,7 +2,7 @@
 <Defs>
 
 	<!--=========================== Animal beds ===============================-->
-
+<!-- DefOverwrite
 	<ThingDef Abstract="True" ParentName="FurnitureBase" Name="AnimalBedBase">
 		<thingClass>Building_Bed</thingClass>
 		<designationCategory>Furniture</designationCategory>	
@@ -27,7 +27,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="AnimalBedBase">
 		<defName>AnimalSleepingSpot</defName>
 		<label>animal sleeping spot</label>
@@ -60,7 +60,7 @@
 		</building>
 		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="AnimalBedBase">
 		<defName>AnimalSleepingBox</defName>
 		<label>animal hay sleeping spot</label>
@@ -108,8 +108,8 @@
 		</statBases>
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="AnimalBedBase">
+-->
+	<ThingDef ParentName="AnimalBedFurnitureBase">
 		<defName>Chickennest</defName>
 		<label>chicken nest</label>
 		<description>A small nest for animals to sleep in. Fits smaller animals like chickens, cats, or small dogs. Max animal body size: 0.55</description>
@@ -151,7 +151,7 @@
 		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="AnimalBedBase">
+	<ThingDef ParentName="AnimalBedFurnitureBase">
 		<defName>AnimalSleepingHayLeather</defName>
 		<label>animal sleeping place</label>
 		<description>A small box for animals to sleep in. Fits smaller animals like chickens, cats or small dogs. Max animal body size: 1.0</description>
@@ -195,7 +195,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="AnimalBedBase">
 		<defName>AnimalBed</defName>
 		<label>animal bed</label>
@@ -240,8 +240,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="AnimalBedBase">
+-->
+	<ThingDef ParentName="AnimalBedFurnitureBase">
 		<defName>AnimalPillow</defName>
 		<label>animal pillow</label>
 		<description>Millenium Line animal bed. Rest and treat your furry friends comfortably on the pillow. Pet hair repellent and easy to clean. Max animal body size: 0.7</description>

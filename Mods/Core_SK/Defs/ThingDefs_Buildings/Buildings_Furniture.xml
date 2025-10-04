@@ -1154,7 +1154,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
--->
+--><!-- DefOverwrite
 	<ThingDef ParentName="TableGatherSpotBase">
 		<defName>Table2x4c</defName>
 		<label>table (2x3)</label>
@@ -1199,7 +1199,7 @@
 		</building>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="TableGatherSpotBase">
 		<defName>Table3x3c</defName>
 		<label>table (3x3)</label>
@@ -1246,7 +1246,7 @@
 		</building>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="TableBase">
 		<defName>TeaTable</defName>
 		<label>tea table</label>
@@ -1581,63 +1581,8 @@
 		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>ClutterStylist</defName>
-		<label>barber bench</label>
-		<thingClass>SK.HS</thingClass>
-		<description>Place where hair go wild!</description>
-		<graphicData>
-			<shaderType>CutoutComplex</shaderType>
-			<texPath>Things/Building/Production/StylingBench</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,1)</drawSize>
-			<shadowData>
-				<volume>(1.8, 0.6, 0.8)</volume>
-			</shadowData>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-			</damageData>
-		</graphicData>
-		<stuffCategories>
-			<li>Metallic</li>
-			<li>Woody</li>
-			<li>Plastic</li>
-		</stuffCategories>
-		<costStuffCount>85</costStuffCount>
-		<costList>
-			<Cloth>40</Cloth>
-			<Glass>15</Glass>
-			<ComponentIndustrial>5</ComponentIndustrial>
-		</costList>
-		<altitudeLayer>Building</altitudeLayer>
-		<fillPercent>0.5</fillPercent>
-		<useHitPoints>True</useHitPoints>
-		<statBases>
-			<WorkToBuild>4700</WorkToBuild>
-			<MaxHitPoints>180</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-			<Cleanliness>-10</Cleanliness>
-			<Bulk>78</Bulk>
-			<Mass>22</Mass>
-		</statBases>
-		<building>
-			<paintable>true</paintable>
-		</building>
-		<size>(2,1)</size>
-		<designationCategory/>
-		<passability>PassThroughOnly</passability>
-		<pathCost>60</pathCost>
-		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,1)</interactionCellOffset>
-		<surfaceType>Item</surfaceType>
-		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-	</ThingDef>
-
 	<!--================ Dresser ================-->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="FurnitureBase">
 		<defName>Dresser</defName>
 		<label>dressing table</label>
@@ -1706,7 +1651,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
-
+-->
 	<!-- 	<ThingDef ParentName="ContainerBase">
 		<defName>Bookcase</defName>
 		<label>bookcase</label>
@@ -1773,7 +1718,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef> -->
 
-
+<!-- DefOverwrite
 	<ThingDef Abstract="True" Name="BookcaseBase" ParentName="FurnitureBase">
 		<thingClass>Building_Bookcase</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
@@ -1832,7 +1777,7 @@
 			<li Class="CompProperties_Styleable" />
 		</comps>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="BookcaseBase">
 		<defName>Bookcase</defName>
 		<label>bookcase</label>
@@ -1873,7 +1818,7 @@
 		</building>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="BookcaseBase">
 		<defName>BookcaseSmall</defName>
 		<label>small bookcase</label>
@@ -1915,7 +1860,7 @@
 		</building>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="TableBase">
 		<defName>EndTableSimple</defName>
 		<label>end table</label>
@@ -1982,7 +1927,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 
-
+<!-- DefOverwrite
 	<ThingDef ParentName="TableBase">
 		<defName>EndTable</defName>
 		<label>end table with lamp</label>
@@ -2066,7 +2011,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
 	</ThingDef>
-
+-->
 
 	<ThingDef ParentName="TableBase">
 		<defName>JournalTable</defName>
