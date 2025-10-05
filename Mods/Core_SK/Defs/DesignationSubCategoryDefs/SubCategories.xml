@@ -190,10 +190,11 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
+		<order>1</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_StandartBeds</defName>
+		<defName>SubCategory_StandardBeds</defName>
 		<label>standard beds</label>
 		<description>A simple bed for one pawn.</description>
 		<defNames>
@@ -206,6 +207,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
+		<order>2</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -223,6 +225,22 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
+		<order>3</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_AdvancedBeds</defName>
+		<label>advanced beds</label>
+		<description>A futuristic beds with high rest effectiveness.</description>
+		<defNames>
+			<li>PodBed</li>
+			<li>space_double_bed</li>
+			<li>cryo_single_bed</li>
+			<li>cryo_double_bed</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>true</debug>
+		<order>4</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -235,22 +253,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_AdvancedBeds</defName>
-		<label>advanced beds</label>
-		<description>A futuristic beds with high rest effectiveness.</description>
-		<defNames>
-			<li>ClutterBedA</li>
-			<li>ClutterEkieBed</li>
-			<li>PodBed</li>
-			<li>space_double_bed</li>
-			<li>cryo_single_bed</li>
-			<li>cryo_double_bed</li>
-		</defNames>
-		<designationCategory>Furniture</designationCategory>
-		<debug>false</debug>
+		<order>5</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -268,6 +271,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
+		<order>6</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -286,6 +290,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
+		<order>7</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -304,6 +309,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
+		<order>8</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Ludeon.RimWorld.Royalty">
@@ -317,6 +323,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
+		<order>9</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -330,6 +337,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
+		<order>10</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -348,6 +356,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
+		<order>11</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -363,6 +372,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
+		<order>12</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -376,6 +386,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
+		<order>13</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -390,6 +401,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
+		<order>14</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -403,6 +415,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
+		<order>15</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<!-- Accessories -->

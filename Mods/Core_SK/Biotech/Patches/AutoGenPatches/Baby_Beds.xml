@@ -1,10 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Patch>
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ThingDef[defName="Crib" or defName="BabySleepingSpot" ]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.SK_SansComfortBedBaseDummy</value>
-	</Operation>
+
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Crib"]</xpath>
 		<value>
@@ -29,27 +25,11 @@
 				<graphicClass>Graphic_Multi</graphicClass>
 				<drawSize>(1.5,1.5)</drawSize>
 			</graphicData>
-			<altitudeLayer>FloorEmplacement</altitudeLayer>
 			<statBases>
-				<MaxHitPoints>0</MaxHitPoints>
 				<WorkToBuild>60</WorkToBuild>
-				<Comfort>0.25</Comfort>
-				<Flammability>0</Flammability>
-				<BedRestEffectiveness>0.75</BedRestEffectiveness>
-				<ImmunityGainSpeedFactor>1.0</ImmunityGainSpeedFactor>
-				<SurgerySuccessChanceFactor>0.70</SurgerySuccessChanceFactor>
-				<Bulk>8</Bulk>
-				<Mass>3</Mass>
 			</statBases>
-			<scatterableOnMapGen>false</scatterableOnMapGen>
-			<drawGUIOverlay>True</drawGUIOverlay>
-			<defaultPlacingRot>South</defaultPlacingRot>
-			<useHitPoints>false</useHitPoints>
-			<passability>Standable</passability>
 			<building Merge="True">
-				<bed_showSleeperBody>True</bed_showSleeperBody>
 				<bed_emptyCountsForBarracks>false</bed_emptyCountsForBarracks>
-				<bed_crib>True</bed_crib>
 				<bed_pawnDrawOffset>-0.08</bed_pawnDrawOffset>
 			</building>
 		</value>
