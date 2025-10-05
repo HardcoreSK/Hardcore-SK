@@ -89,16 +89,11 @@ Other mods which are not included in this project are not recommended.
 
 ## Credits
 
-A big thank you to the Patreons! (<https://www.patreon.com/skyarkhangel>, in no particular order.)
-
-Szara Kryik, Sonsalt, Makzilla, Schio, GuiltyHollow, ErdTod, Sol, Tie, Zachary F, Fsempri, Andrey, Dudok22, Hoouin K, PuffTheMagicDragon,
-PatchDotExe, Cawi, XLegionX007, НечтоХрустящее, Kristijan, sKeptr, White Sonja, Esterior, Igor Barbarossa, Kiko20, Ky6000, 
-NiciusB, plenumolog, томαѕz, Dan Rowan, dissolvedz, Erilaz, Fsempri, GuardianDll, Kage No Ryuu, Titan399, zaartix, Zag, Нея, CADUCTO, 
-JailBot, Dibbura, donnie, ignorer, korovyev, NiciusB, Nightray, Vuursteen and Егор Х!
+A big thank you to all those that help donate to those on the project!
 
 ### SK Team
 
-* **Lead developers** - Skyarkhangel, TheLoneTec
+* **Lead developers** - TheLoneTec
 * **Coordinators** - Zakhad, Sidfu, Dzeniba, A.Ziemens(Duotian)
 * **Discord moderators** - Ziemens, MightyGooga, GG, Szara Kryik, Ashardalon, Xx-Nelson-xX, AndreiAvinov (Kiri), GuardianDll, Pacas
 * **Artists** - Cattleya (<https://www.patreon.com/cattleya>), Vile Heathen
