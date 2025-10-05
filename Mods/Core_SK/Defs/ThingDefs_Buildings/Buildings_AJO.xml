@@ -85,6 +85,8 @@
 		</stuffCategories>
 		<building>
 			<joyKind>Gaming_Cerebral</joyKind>
+			<buildingSizeCategory>Small</buildingSizeCategory>
+			<paintable>true</paintable>
 		</building>
 		<costStuffCount>75</costStuffCount>
 		<costList>
@@ -130,8 +132,13 @@
 			<li>Glass</li>
 			<li>Precious</li>
 		</stuffCategories>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
 		<building>
 			<joyKind>Gaming_Cerebral</joyKind>
+			<buildingSizeCategory>Small</buildingSizeCategory>
+			<paintable>true</paintable>
 		</building>
 		<costStuffCount>90</costStuffCount>
 		<pathCost>70</pathCost>
@@ -177,10 +184,13 @@
 		<costStuffCount>90</costStuffCount>
 		<costList>
 			<Cloth>30</Cloth>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<pathCost>70</pathCost>
 		<building>
 			<joyKind>Gaming_Cerebral</joyKind>
+			<buildingSizeCategory>Small</buildingSizeCategory>
+			<paintable>true</paintable>
 		</building>
 		<passability>PassThroughOnly</passability>
 		<designationCategory>Joy</designationCategory>
@@ -217,12 +227,17 @@
 		<pathCost>70</pathCost>
 		<building>
 			<joyKind>Social</joyKind>
+			<buildingSizeCategory>Small</buildingSizeCategory>
+			<paintable>true</paintable>
 		</building>
 		<passability>PassThroughOnly</passability>
 		<tradeTags>
 			<li>Exotic</li>
 			<li>Joy</li>
 		</tradeTags>
+		<researchPrerequisites>
+		  <li>Harp</li>
+		</researchPrerequisites>
 		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 	</ThingDef>
 
@@ -397,16 +412,15 @@
 		</tradeTags>
 		<building>
 			<joyKind>Gaming_Cerebral</joyKind>
+			<buildingSizeCategory>Small</buildingSizeCategory>
+			<paintable>true</paintable>
 		</building>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>25</idlePowerDraw>
 			</li>
 		</comps>
 	</ThingDef>
@@ -445,16 +459,15 @@
 		<tickerType>Normal</tickerType>
 		<building>
 			<joyKind>Gaming_Cerebral</joyKind>
+			<buildingSizeCategory>Small</buildingSizeCategory>
+			<paintable>true</paintable>
 		</building>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>25</idlePowerDraw>
 			</li>
 		</comps>
 	</ThingDef>
@@ -493,16 +506,15 @@
 		</tradeTags>
 		<building>
 			<joyKind>Gaming_Dexterity</joyKind>
+			<buildingSizeCategory>Small</buildingSizeCategory>
+			<paintable>true</paintable>
 		</building>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>25</idlePowerDraw>
 			</li>
 		</comps>
 	</ThingDef>
@@ -541,16 +553,15 @@
 		</tradeTags>
 		<building>
 			<joyKind>Gaming_Dexterity</joyKind>
+			<buildingSizeCategory>Small</buildingSizeCategory>
+			<paintable>true</paintable>
 		</building>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>25</idlePowerDraw>
 			</li>
 		</comps>
 	</ThingDef>
@@ -589,16 +600,15 @@
 		</tradeTags>
 		<building>
 			<joyKind>Gaming_Cerebral</joyKind>
+			<buildingSizeCategory>Small</buildingSizeCategory>
+			<paintable>true</paintable>
 		</building>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>25</idlePowerDraw>
 			</li>
 		</comps>
 	</ThingDef>
@@ -637,16 +647,15 @@
 		</tradeTags>
 		<building>
 			<joyKind>Gaming_Cerebral</joyKind>
+			<buildingSizeCategory>Small</buildingSizeCategory>
+			<paintable>true</paintable>
 		</building>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>25</idlePowerDraw>
 			</li>
 		</comps>
 	</ThingDef>
@@ -685,16 +694,15 @@
 		</tradeTags>
 		<building>
 			<joyKind>Gaming_Dexterity</joyKind>
+			<buildingSizeCategory>Small</buildingSizeCategory>
+			<paintable>true</paintable>
 		</building>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>25</idlePowerDraw>
 			</li>
 		</comps>
 	</ThingDef>
@@ -733,16 +741,15 @@
 		</tradeTags>
 		<building>
 			<joyKind>Gaming_Cerebral</joyKind>
+			<buildingSizeCategory>Small</buildingSizeCategory>
+			<paintable>true</paintable>
 		</building>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>25</idlePowerDraw>
 			</li>
 		</comps>
 	</ThingDef>
@@ -781,16 +788,15 @@
 		</tradeTags>
 		<building>
 			<joyKind>Gaming_Dexterity</joyKind>
+			<buildingSizeCategory>Small</buildingSizeCategory>
+			<paintable>true</paintable>
 		</building>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>25</idlePowerDraw>
 			</li>
 		</comps>
 	</ThingDef>
@@ -829,16 +835,15 @@
 		</tradeTags>
 		<building>
 			<joyKind>Social</joyKind>
+			<buildingSizeCategory>Small</buildingSizeCategory>
+			<paintable>true</paintable>
 		</building>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>25</idlePowerDraw>
 			</li>
 		</comps>
 	</ThingDef>
@@ -877,16 +882,15 @@
 		</tradeTags>
 		<building>
 			<joyKind>Gaming_Dexterity</joyKind>
+			<buildingSizeCategory>Small</buildingSizeCategory>
+			<paintable>true</paintable>
 		</building>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>25</idlePowerDraw>
 			</li>
 		</comps>
 	</ThingDef>

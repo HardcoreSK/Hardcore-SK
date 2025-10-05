@@ -663,10 +663,7 @@
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>400</basePowerConsumption>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>40</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
@@ -747,10 +744,7 @@
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>25</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
@@ -1209,10 +1203,7 @@
 				<basePowerConsumption>240</basePowerConsumption>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>24</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -1513,10 +1504,7 @@
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>800</basePowerConsumption>
 				<shortCircuitInRain>true</shortCircuitInRain>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>80</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
@@ -1752,10 +1740,7 @@
 				<basePowerConsumption>250</basePowerConsumption>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>25</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
@@ -2088,14 +2073,11 @@
 				<basePowerConsumption>400</basePowerConsumption>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
+				<idlePowerDraw>40</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(217,112,33,0)</glowColor>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
 			</li>
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
@@ -2304,6 +2286,7 @@
 				<basePowerConsumption>600</basePowerConsumption>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
+				<idlePowerDraw>60</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -2311,10 +2294,6 @@
 					<li>Small_ToolCabinet</li>
 					<li>PodChair</li>
 				</linkableFacilities>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
 			</li>
 		</comps>
 		<designationHotKey>Misc6</designationHotKey>
@@ -2391,10 +2370,7 @@
 				<basePowerConsumption>300</basePowerConsumption>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>30</idlePowerDraw>
 			</li>
 		</comps>
 		<researchPrerequisites>
@@ -2537,6 +2513,7 @@
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>550</basePowerConsumption>
+				<idlePowerDraw>55</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>10.0</fuelConsumptionRate>
@@ -2558,10 +2535,6 @@
 				</linkableFacilities>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
-			</li>
 		</comps>
 		<designationHotKey>Misc2</designationHotKey>
 		<placeWorkers>
@@ -2620,10 +2593,7 @@
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>300</basePowerConsumption>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>30</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -3190,10 +3160,7 @@
 				<basePowerConsumption>500</basePowerConsumption>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>50</idlePowerDraw>
 			</li>
 		</comps>
 		<building>
@@ -3267,10 +3234,7 @@
 				<basePowerConsumption>500</basePowerConsumption>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>50</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
@@ -3333,10 +3297,7 @@
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>800</basePowerConsumption>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>80</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -3479,10 +3440,7 @@
 				<basePowerConsumption>350</basePowerConsumption>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>35</idlePowerDraw>
 			</li>
 		</comps>
 		<placeWorkers>

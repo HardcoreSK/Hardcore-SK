@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>Hive</defName>
 		<label>hive</label>
@@ -48,7 +48,6 @@
 			</li>
 			<li Class="CompProperties_SelfhealHitpoints">
 				<ticksPerHeal>6000</ticksPerHeal>
-				<!-- 60k ticks = 1 day, 10 hp per day -->
 			</li>
 			<li Class="CompProperties_SpawnerHives" />
 			<li Class="CompProperties_Spawner">
@@ -94,7 +93,7 @@
 			</li>
 		</damageMultipliers>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>GlowPod</defName>
 		<label>glow pod</label>
@@ -143,5 +142,5 @@
 			</damageData>
 		</graphicData>
 	</ThingDef>
-
+-->
 </Defs>

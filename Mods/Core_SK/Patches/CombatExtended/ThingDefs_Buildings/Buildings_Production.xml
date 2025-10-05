@@ -65,10 +65,7 @@
 					<compClass>CompPowerTrader</compClass>
 					<shortCircuitInRain>true</shortCircuitInRain>
 					<basePowerConsumption>500</basePowerConsumption>
-				</li>
-				<li Class="SK.CompProperties_LowIdleDraw">
-					<compClass>SK.CompPowerLowIdleDraw</compClass>
-					<idlePowerFactor>0.1</idlePowerFactor>
+					<idlePowerDraw>50</idlePowerDraw>
 				</li>
 				<li Class="CompProperties_AffectedByFacilities">
 					<linkableFacilities>

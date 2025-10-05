@@ -2,6 +2,7 @@
 <Defs>
 
 	<!-- Base -->
+	<!-- DefOverwrite
 	<ThingDef ParentName="BuildingBase" Name="SK_MechBuildingBase" Abstract="True">
 		<altitudeLayer>Building</altitudeLayer>
 		<pathCost>50</pathCost>
@@ -36,9 +37,10 @@
 			</li>
 		</damageMultipliers>
 	</ThingDef>
-
+-->
 	<!-- Burning power cell -->
-	<ThingDef ParentName="SK_MechBuildingBase">
+	<!-- DefOverwrite
+	<ThingDef ParentName="MechBuildingBase">
 		<defName>BurningPowerCell</defName>
 		<label>burning power cell</label>
 		<description>A damaged mechanoid power generation unit. The cell has been destabilized by the death of the mechanoid, and is burning down in seconds. When critically damaged, this cell will explode.</description>
@@ -63,7 +65,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<drawOffset>(0, 0.1, 0)</drawOffset>
-			<!-- draw just above corpses -->
 		</graphicData>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<placeWorkers>
@@ -103,5 +104,5 @@
 			</li>
 		</comps>
 	</ThingDef>
-
+-->
 </Defs>

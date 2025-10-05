@@ -49,12 +49,8 @@
 				<basePowerConsumption>1000</basePowerConsumption>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<soundAmbientProducingPower>GeothermalPlant_Ambience</soundAmbientProducingPower>
+				<idlePowerDraw>100</idlePowerDraw>
 			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
-			</li>
-
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>

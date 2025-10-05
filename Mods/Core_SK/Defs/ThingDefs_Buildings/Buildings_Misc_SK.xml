@@ -327,10 +327,7 @@
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>700</basePowerConsumption>
 				<shortCircuitInRain>true</shortCircuitInRain>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>70</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -543,10 +540,7 @@
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>300</basePowerConsumption>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>30</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_Usable" MayRequire="Ludeon.RimWorld.Biotech">
 				<useJob>TriggerObject</useJob>
@@ -939,6 +933,7 @@
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>150</basePowerConsumption>
+				<idlePowerDraw>0</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
@@ -948,10 +943,6 @@
 				<maxSimultaneous>1</maxSimultaneous>
 				<mustBePlacedAdjacent>true</mustBePlacedAdjacent>
 				<canLinkToMedBedsOnly>true</canLinkToMedBedsOnly>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<!-- 0 watts when not in use -->
 			</li>
 		</comps>
 		<tickerType>Normal</tickerType>
@@ -1011,6 +1002,7 @@
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>280</basePowerConsumption>
+				<idlePowerDraw>0</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
@@ -1020,10 +1012,6 @@
 				<maxSimultaneous>1</maxSimultaneous>
 				<mustBePlacedAdjacent>true</mustBePlacedAdjacent>
 				<canLinkToMedBedsOnly>true</canLinkToMedBedsOnly>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<!-- 0 watts when not in use -->
 			</li>
 		</comps>
 		<tickerType>Normal</tickerType>
@@ -2025,10 +2013,7 @@
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>1500</basePowerConsumption>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>150</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Flickable"/>
@@ -2101,10 +2086,7 @@
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>2200</basePowerConsumption>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>220</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Flickable"/>
@@ -2421,10 +2403,7 @@
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>2000</basePowerConsumption>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
+				<idlePowerDraw>200</idlePowerDraw>
 			</li>
 		</comps>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
