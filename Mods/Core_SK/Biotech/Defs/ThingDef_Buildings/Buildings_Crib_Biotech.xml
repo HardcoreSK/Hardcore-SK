@@ -92,6 +92,17 @@
 			<destroySound>BuildingDestroyed_Soft_Small</destroySound>
 			<paintable>true</paintable>
 		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>VitalsMonitor</li>
+					<li>AdvancedVitalsMonitor</li>
+					<li>medieval_surg_washpan</li>  
+					<li>medieval_surg_instruments</li>
+					<li>medieval_surg_lamp</li>
+				</linkableFacilities>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<!-- 	<ThingDef ParentName="SansComfortBedBase">

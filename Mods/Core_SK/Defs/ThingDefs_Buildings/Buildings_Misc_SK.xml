@@ -12,7 +12,7 @@
 			<li>BuildingsMisc</li>
 		</thingCategories>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="BuildingBase">
 		<defName>MarriageSpot</defName>
 		<label>marriage spot</label>
@@ -49,7 +49,7 @@
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>True</drawPlaceWorkersWhileSelected>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="BuildingBase">
 		<defName>PartySpot</defName>
 		<label>party spot</label>
@@ -79,8 +79,8 @@
 		</building>
 		<designationHotKey>Misc11</designationHotKey>
 	</ThingDef>
-
-
+-->
+<!-- DefOverwrite
 	<ThingDef ParentName="BuildingBase">
 		<defName>CaravanPackingSpot</defName>
 		<label>caravan packing spot</label>
@@ -111,7 +111,7 @@
 			<li Class="CompProperties_HitchingSpot"/>
 		</comps>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>TradingSpot</defName>
 		<label>trading spot</label>
@@ -217,7 +217,7 @@
 		<designationCategory>Misc</designationCategory>
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="ResearchBase">
 		<defName>SimpleResearchBench</defName>
 		<label>research bench</label>
@@ -281,7 +281,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="ResearchBase">
 		<defName>HiTechResearchBench</defName>
 		<label>hi-tech research bench</label>
@@ -355,7 +355,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="MiscBuildingBase">
 		<defName>SunLamp</defName>
 		<label>sun lamp</label>
@@ -405,7 +405,6 @@
 				<basePowerConsumption>2000</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Schedule">
-				<!-- Match plant growing times -->
 				<startTime>0.25</startTime>
 				<endTime>0.8</endTime>
 				<offMessage>Off for plant resting period</offMessage>
@@ -416,9 +415,6 @@
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
 		</comps>
-		<!-- Determined by trial and error
-    This value isn't perfect because these radii use different algorithms
-    but it matches in this case-->
 		<specialDisplayRadius>5.8</specialDisplayRadius>
 		<designationCategory>Misc</designationCategory>
 		<rotatable>false</rotatable>
@@ -428,7 +424,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>13</constructionSkillPrerequisite>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="MiscBuildingBase">
 		<defName>OrbitalTradeBeacon</defName>
 		<label>orbital trade beacon</label>
@@ -482,7 +478,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="StandardBuilding">
 		<defName>CommsConsole</defName>
 		<label>comms console</label>
@@ -567,9 +563,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
 		<tickerType MayRequire="Ludeon.RimWorld.Biotech">Normal</tickerType>
-		<!-- used by call bossgroup -->
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="StandardBuilding">
 		<defName>Buildings_SubspaceBurstTransponder</defName>
 		<label>subspace burst transponder</label>
@@ -638,6 +633,7 @@
 	</ThingDef>
 
 	<!-- Facilities -->
+	<!-- DefOverwrite
 	<ThingDef ParentName="FacilitiesBase">
 		<defName>MultiAnalyzer</defName>
 		<thingClass>SK.Building_Lamp</thingClass>
@@ -706,7 +702,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="MiscBuildingBase">
 		<defName>CounterTopModular</defName>
 		<label>laboratory counter</label>
@@ -880,7 +876,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="FacilitiesBase">
 		<defName>VitalsMonitor</defName>
 		<label>vitals monitor</label>
@@ -955,7 +951,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="FacilitiesBase">
 		<defName>AdvancedVitalsMonitor</defName>
 		<label>advanced vitals monitor</label>
@@ -1133,7 +1129,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="FacilitiesBase">
 		<defName>ToolCabinet</defName>
 		<label>large tool cabinet</label>
@@ -1194,7 +1190,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="FacilitiesBase">
 		<defName>Small_ToolCabinet</defName>
 		<label>small tool cabinet</label>
@@ -1304,7 +1300,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 
-
+<!-- DefOverwrite
 	<ThingDef ParentName="FacilitiesBase">
 		<defName>FirefoamPopper</defName>
 		<label>firefoam popper</label>
@@ -1375,8 +1371,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
-
-
+-->
+<!-- DefOverwrite
 	<ThingDef ParentName="MiscBuildingBase">
 		<defName>MoisturePump</defName>
 		<label>moisture pump</label>
@@ -1437,7 +1433,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="StandardBuilding">
 		<defName>FertilizerPump</defName>
 		<label>terraforming pump</label>
@@ -1515,7 +1511,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="BuildingBase">
 		<defName>Grave</defName>
 		<label>grave</label>
@@ -1617,7 +1613,7 @@
 			<allowedSpectateSides>Vertical</allowedSpectateSides>
 		</ritualFocus>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="BuildingBase">
 		<defName>Sarcophagus</defName>
 		<label>sarcophagus</label>
@@ -1749,8 +1745,9 @@
 			<allowedSpectateSides>Vertical</allowedSpectateSides>
 		</ritualFocus>
 	</ThingDef>
-
+-->
 	<!-- Cryptosleep casket -->
+	<!-- DefOverwrite
 	<ThingDef ParentName="BuildingBase">
 		<defName>CryptosleepCasket</defName>
 		<label>cryptosleep casket</label>
@@ -1800,14 +1797,7 @@
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>2.66</explosiveRadius>
 				<explosiveDamageType>Flame</explosiveDamageType>
-			</li>			
-			<!-- <li Class="CompProperties_EmptyStateGraphic">
-				<graphicData>
-					<texPath>Things/Building/Ship/ShipCryptosleepCasketOpenDoor</texPath>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(1, 2)</drawSize>
-				</graphicData>
-			</li> -->			
+			</li>				
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
@@ -1819,7 +1809,7 @@
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>
 		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="BuildingBase" Name="AncientCryptosleepCasket">
 		<defName>AncientCryptosleepCasket</defName>
 		<label>ancient cryptosleep casket</label>
@@ -1865,13 +1855,6 @@
 				<explosiveRadius>2.66</explosiveRadius>
 				<explosiveDamageType>Flame</explosiveDamageType>
 			</li>
-			<!-- <li Class="CompProperties_EmptyStateGraphic">
-				<graphicData>
-					<texPath>Things/Building/Ship/ShipCryptosleepCasketOpenDoor</texPath>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(1, 2)</drawSize>
-				</graphicData>
-			</li> -->
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
@@ -1880,8 +1863,8 @@
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<staticSunShadowHeight>0.4</staticSunShadowHeight>
 	</ThingDef>
-
-	<ThingDef ParentName="MiscBuildingBase">
+-->
+	<ThingDef ParentName="BuildingBase">
 		<defName>Holodeck</defName>
 		<label>holosuite</label>
 		<thingClass>SK.Building_Holodeck</thingClass>
@@ -1980,7 +1963,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="StandardBuilding">
 		<defName>GroundPenetratingScanner</defName>
 		<label>ground-penetrating scanner</label>
@@ -2054,7 +2037,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="StandardBuilding">
 		<defName>LongRangeMineralScanner</defName>
 		<label>long-range mineral scanner</label>
@@ -2127,9 +2110,9 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>13</constructionSkillPrerequisite>
 	</ThingDef>
-
+-->
 	<!--========================== Transport pods ============================-->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="StandardBuilding">
 		<defName>PodLauncher</defName>
 		<label>pod launcher</label>
@@ -2175,7 +2158,6 @@
 				<initialConfigurableTargetFuelLevel>75</initialConfigurableTargetFuelLevel>
 				<fuelFilter>
 					<thingDefs>
-						<!--	<li>BioDiesel</li>	-->
 						<li>Chemfuel</li>
 					</thingDefs>
 				</fuelFilter>
@@ -2198,7 +2180,7 @@
 		<uiIconScale>0.9</uiIconScale>
 		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="StandardBuilding">
 		<defName>TransportPod</defName>
 		<label>transport pod</label>
@@ -2255,7 +2237,7 @@
 		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
 		<uiIconScale>0.65</uiIconScale>
 	</ThingDef>	
-
+-->
 	<ThingDef ParentName="MiscBuildingBase" Class="SK.ThingDef_MobileMineralSonar">
 		<defName>MobileMineralSonar</defName>
 		<label>mobile mineral sonar</label>
@@ -2921,7 +2903,7 @@
 	</ThingDef>
 
 	<!--============================== Steles ==============================-->
-
+<!-- DefOverwrite
 	<ThingDef Name="SteleBase" ParentName="BuildingBase" Abstract="True">
 		<designationCategory>Misc</designationCategory>
 		<altitudeLayer>Building</altitudeLayer>
@@ -2951,7 +2933,7 @@
 			<li>ITab_Art</li>
 		</inspectorTabs>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SteleBase">
 		<defName>SteleLarge</defName>
 		<label>large stele</label>
@@ -2992,7 +2974,7 @@
 			<li>Construction_B1</li>
 		</researchPrerequisites>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SteleBase">
 		<defName>SteleGrand</defName>
 		<label>grand stele</label>
@@ -3033,7 +3015,7 @@
 			<li>Construction_B2</li>
 		</researchPrerequisites>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="SteleBase">
 		<defName>GlowstoneMonument</defName>
 		<label>glowstone monument</label>

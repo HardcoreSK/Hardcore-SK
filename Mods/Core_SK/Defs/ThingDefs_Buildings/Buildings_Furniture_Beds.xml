@@ -211,6 +211,26 @@
 			<li>Beds_C1</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>VitalsMonitor</li>
+					<li>AdvancedVitalsMonitor</li>
+					<li>Dresser</li>
+					<li>EndTable</li>
+					<li>EndTableSimple</li>
+					<li>JournalTable</li>
+					<li>HolographicCell</li>
+					<li>medieval_surg_washpan</li>  
+					<li>medieval_surg_instruments</li>
+					<li>medieval_surg_lamp</li>
+					<li>industrial_surg_instruments</li>
+					<li>industrial_surg_lamp</li>
+					<li>space_surg_instruments</li>
+					<li>space_surg_lamp</li>
+				</linkableFacilities>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="BasicBedBase">
@@ -561,7 +581,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 -->
-	<ThingDef ParentName="SansComfortBedBase">
+	<ThingDef ParentName="BasicBedBase">
 		<defName>industrial_single_bed</defName>
 		<label>industrial bed</label>
 		<description>A comfy bed. Fits one. The boom of industrial production led to the need of more qualified workers on the more developed Rimworlds. The constraints of space drove the development of more advanced furniture. As a result this quite simple bed design emerged.</description>
@@ -607,7 +627,7 @@
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SansComfortBedBase">
+	<ThingDef ParentName="BasicBedBase">
 		<defName>industrial_double_bed</defName>
 		<label>industrial double bed</label>
 		<description>A comfy bed. Fits two. The boom of industrial production led to the need of more qualified workers on the more developed Rimworlds. The constraints of space drove the development of more advanced furniture. As a result this quite simple bed design emerged.</description>
@@ -747,7 +767,7 @@
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SansComfortBedBase">
+	<ThingDef ParentName="BasicBedBase">
 		<defName>MilleniumBed</defName>
 		<label>millenium bed</label>
 		<description>Millenium Line Bed.</description>
@@ -796,7 +816,7 @@
 		<constructionSkillPrerequisite>13</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SansComfortBedBase">
+	<ThingDef ParentName="BasicBedBase">
 		<defName>MilleniumDoubleBed</defName>
 		<label>millenium double bed</label>
 		<description>Millenium Line Double bed.</description>
@@ -897,7 +917,7 @@
 -->
 	<!--================================ pod beds ======================================-->
 
-	<ThingDef ParentName="SansComfortBedBase">
+	<ThingDef ParentName="BasicBedBase">
 		<defName>PodBed</defName>
 		<label>pod bed</label>
 		<description>A futuristic bed with high rest effectiveness.</description>
@@ -949,7 +969,7 @@
 		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SansComfortBedBase">
+	<ThingDef ParentName="BasicBedBase">
 		<defName>space_double_bed</defName>
 		<label>double pod bed</label>
 		<description>A comfy bed. Fits two. On the task of "going to space" this bed was literally first developed as a small spacecraft. After this fatal first mistake the possibility to sleep inside and a bit more comfort was added. This didn't prevent the advertising agency from using the terms "fly in your sleep" and "sleeping on clouds". After several lawsuits from customers with strange injuries the advertisment changed to a more down-to-earth direction.</description>
@@ -1003,7 +1023,7 @@
 
 	<!--================================ cryo beds ======================================-->
 
-	<ThingDef ParentName="SansComfortBedBase">
+	<ThingDef ParentName="BasicBedBase">
 		<defName>cryo_single_bed</defName>
 		<label>futuristic single bed</label>
 		<description>A comfy futuristic bed. Fits one. During the research of cryptosleep the possibilty of a short sleeping cycle based on this technology emerged. However most people still refuse to use these beds in fear of never waking up or losing several years by accident. This lead to several Rimworld legends although all exposed by scientists as fictional storys many people fear the device.</description>
@@ -1052,7 +1072,7 @@
 		<constructionSkillPrerequisite>17</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SansComfortBedBase">
+	<ThingDef ParentName="BasicBedBase">
 		<defName>cryo_double_bed</defName>
 		<label>futuristic double bed</label>
 		<description>A comfy futuristic bed. Fits two. During the research of cryptosleep the possibilty of a short sleeping cycle based on this technology emerged. However most people still refuse to use these beds in fear of never waking up or losing several years by accident. This lead to several Rimworld legends although all exposed by scientists as fictional storys many people fear the device.</description>

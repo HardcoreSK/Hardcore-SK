@@ -48,14 +48,34 @@
       <constructionSkillPrerequisite>1</constructionSkillPrerequisite>
     </value>
   </Operation>
-
+<!--
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[@Name="BedBase"]</xpath>
 		<value>
-		<!-- Even though vanilla has this in BasicBedBase,  
-			This abstract has PlaceWorker_ShowFacilitiesConnections,
-			meaning errors occur without it here.
-		-->
+
+		</value>
+	</Operation>
+-->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[@Name="SansComfortBedBase"]</xpath>
+		<value>
+			<fillPercent>0.3</fillPercent>
+			<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+			<!-- Make the default for beds match HSK, so other mod beds inherit -->
+			<costList>
+				<ComponentIndustrial>4</ComponentIndustrial> <!-- average ingredient cost -->
+			</costList>
+			<stuffCategories Inherit="false">
+				<li>Leathery</li>
+				<li>Fabric</li>
+				<li>HF</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[@Name="BasicBedBase"]</xpath>
+		<value>
 			<comps Merge="true">
 				<li Class="CompProperties_AffectedByFacilities">
 					<linkableFacilities>
@@ -81,29 +101,6 @@
 					</linkableFacilities>
 				</li>
 			</comps>
-		</value>
-	</Operation>
-
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[@Name="SansComfortBedBase"]</xpath>
-		<value>
-			<fillPercent>0.3</fillPercent>
-			<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
-			<!-- Make the default for beds match HSK, so other mod beds inherit -->
-			<costList>
-				<ComponentIndustrial>4</ComponentIndustrial> <!-- average ingredient cost -->
-			</costList>
-			<stuffCategories Inherit="false">
-				<li>Leathery</li>
-				<li>Fabric</li>
-				<li>HF</li>
-			</stuffCategories>
-		</value>
-	</Operation>
-
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[@Name="BasicBedBase"]</xpath>
-		<value>
 			<staticSunShadowHeight>0</staticSunShadowHeight>
 			<statBases Merge="true">
 				<MaxHitPoints>80</MaxHitPoints>
