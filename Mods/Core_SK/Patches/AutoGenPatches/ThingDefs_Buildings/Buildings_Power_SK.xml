@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="PowerConduit"]</xpath>
+    <value>
+      <statBases>
+        <MaxHitPoints>80</MaxHitPoints>
+        <WorkToBuild>25</WorkToBuild>
+        <Flammability>1.0</Flammability>
+        <Beauty>-2</Beauty>
+      </statBases>
+      <costList>
+        <Wire>1</Wire>
+      </costList>
+      <blockWind>false</blockWind>
+      <modExtensions>
+        <li Class="SK.Events.EarthquakeExtension">
+          <immunityToDamage>true</immunityToDamage>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="WaterproofConduit"]</xpath>
+    <value>
+      <costList>
+        <Wire>2</Wire>
+      </costList>
+      <blockWind>false</blockWind>
+      <researchPrerequisites>
+        <li>Electrical_engineering_C2</li>
+      </researchPrerequisites>
+      <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+      <modExtensions>
+        <li Class="SK.Events.EarthquakeExtension">
+          <immunityToDamage>true</immunityToDamage>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="HiddenConduit"]</xpath>
+    <value>
+      <label>hidden power conduit</label>
+      <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+      <statBases Merge="true">
+        <MaxHitPoints>160</MaxHitPoints>
+      </statBases>
+      <costList>
+        <Wire>1</Wire>
+        <ConcreteResource>1</ConcreteResource>
+      </costList>
+      <researchPrerequisites>
+        <li>Electrical_engineering_C2</li>
+      </researchPrerequisites>
+      <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+      <modExtensions>
+        <li Class="SK.Events.EarthquakeExtension">
+          <immunityToDamage>true</immunityToDamage>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="PowerSwitch"]</xpath>
+    <value>
+      <thingClass>SK.Building_PowerSwitchMod</thingClass>
+      <building Merge="true">
+        <uninstallWork>150</uninstallWork>
+        <allowWireConnection>false</allowWireConnection>
+      </building>
+      <canOverlapZones>false</canOverlapZones>
+      <minifiedDef>MinifiedThing</minifiedDef>
+      <thingCategories>
+        <li>BuildingsPower</li>
+      </thingCategories>
+      <statBases>
+        <MaxHitPoints>120</MaxHitPoints>
+        <WorkToBuild>120</WorkToBuild>
+        <Flammability>0.4</Flammability>
+        <Beauty>-2</Beauty>
+        <Mass>30</Mass>
+      </statBases>
+      <costList>
+        <Wire>3</Wire>
+        <ComponentIndustrial>2</ComponentIndustrial>
+        <ElectronicComponents>1</ElectronicComponents>
+      </costList>
+      <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Battery"]</xpath>
+    <value>
+      <thingClass>SK.Building_Battery</thingClass>
+      <graphicData>
+        <texPath>Things/Building/Power/Battery</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(2,3)</drawSize>
+        <shadowData>
+          <volume>(0.8, 0.4, 1.8)</volume>
+          <offset>(0,0,0)</offset>
+        </shadowData>
+        <damageData>
+          <cornerTL>Damage/Corner</cornerTL>
+          <cornerTR>Damage/Corner</cornerTR>
+          <cornerBL>Damage/Corner</cornerBL>
+          <cornerBR>Damage/Corner</cornerBR>
+        </damageData>
+      </graphicData>
+      <fillPercent>0.7</fillPercent>
+      <statBases>
+        <MaxHitPoints>180</MaxHitPoints>
+        <WorkToBuild>1450</WorkToBuild>
+        <Flammability>1.0</Flammability>
+        <Beauty>-15</Beauty>
+        <Mass>150</Mass>
+      </statBases>
+      <description>Stores electricity when there is excess power and yields it when there is not. Warning - charged batteries tend to explode when heated or wet. Holds up to 1,000 W.</description>
+      <building>
+        <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+        <uninstallWork>450</uninstallWork>
+      </building>
+      <stuffCategories>
+        <li>HeavyMetallic</li>
+      </stuffCategories>
+      <costStuffCount>35</costStuffCount>
+      <costList>
+        <ComponentIndustrial>5</ComponentIndustrial>
+        <ElectronicComponents>3</ElectronicComponents>
+      </costList>
+	  <constructEffect IsNull="true"/>
+      <comps>
+        <li Class="CompProperties_Battery">
+          <storedEnergyMax>1000</storedEnergyMax>
+          <efficiency>0.5</efficiency>
+          <shortCircuitInRain>true</shortCircuitInRain>
+          <transmitsPower>true</transmitsPower>
+        </li>
+        <li Class="CompProperties_Breakdownable"/>
+        <li Class="CompProperties_Stunnable">
+          <useLargeEMPEffecter>true</useLargeEMPEffecter>
+          <affectedDamageDefs>
+            <li>EMP</li>
+          </affectedDamageDefs>
+        </li>
+      </comps>
+	  <staticSunShadowHeight>0</staticSunShadowHeight>
+      <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+      <designationHotKey>Misc2</designationHotKey>
+      <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="SolarGenerator"]</xpath>
+    <value>
+      <thingClass>SK.Building_SolarGenerator</thingClass>
+      <graphicData>
+        <texPath>Things/Building/Power/SolarCollector/SolarCollector</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(4,4)</drawSize>
+        <shadowData>
+          <volume>(3.8, 0.7, 3.8)</volume>
+          <offset>(0,0,0)</offset>
+        </shadowData>
+      </graphicData>
+      <statBases>
+        <MaxHitPoints>250</MaxHitPoints>
+        <WorkToBuild>3500</WorkToBuild>
+        <Flammability>1.0</Flammability>
+        <Mass>700</Mass>
+      </statBases>
+      <description>Produces electricity from sunlight. Does not work in the dark.</description>
+      <stuffCategories>
+        <li>StrongMetallic</li>
+      </stuffCategories>
+      <costStuffCount>70</costStuffCount>
+      <costList>
+        <Glass>85</Glass>
+        <ReinforcedConcrete>8</ReinforcedConcrete>
+        <ComponentIndustrial>6</ComponentIndustrial>
+        <ElectronicComponents>8</ElectronicComponents>
+      </costList>
+	  <constructEffect IsNull="true"/>
+      <placeWorkers>
+        <li>PlaceWorker_NotUnderRoof</li>
+      </placeWorkers>
+      <comps>
+        <li Class="CompProperties_Power">
+          <compClass>SK.CompPowerPlantSolar</compClass>
+          <basePowerConsumption>-1</basePowerConsumption>
+          <transmitsPower>true</transmitsPower>
+        </li>
+        <li Class="CompProperties_Glower">
+          <glowRadius>4</glowRadius>
+          <glowColor>(1,213,238,0)</glowColor>
+        </li>
+        <li Class="CompProperties_Breakdownable"/>
+        <li Class="CompProperties_Stunnable">
+          <useLargeEMPEffecter>true</useLargeEMPEffecter>
+          <empChancePerTick>0.03</empChancePerTick>
+          <affectedDamageDefs>
+            <li>EMP</li>
+          </affectedDamageDefs>
+        </li>
+      </comps>
+      <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+      <designationHotKey>Misc3</designationHotKey>
+      <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="WindTurbine"]</xpath>
+    <value>
+      <statBases>
+        <MaxHitPoints>250</MaxHitPoints>
+        <WorkToBuild>3300</WorkToBuild>
+        <Flammability>0.4</Flammability>
+        <Beauty>-12</Beauty>
+      </statBases>
+      <stuffCategories>
+        <li>StrongMetallic</li>
+      </stuffCategories>
+      <costStuffCount>110</costStuffCount>
+      <costList>
+        <ComponentIndustrial>8</ComponentIndustrial>
+        <ElectronicComponents>4</ElectronicComponents>
+        <Mechanism>3</Mechanism>
+      </costList>
+	  <constructEffect IsNull="true"/>
+      <comps>
+        <li Class="CompProperties_Power">
+          <compClass>CompPowerPlantWind</compClass>
+          <basePowerConsumption>-700</basePowerConsumption>
+          <transmitsPower>true</transmitsPower>
+        </li>
+        <li Class="CompProperties_Breakdownable"/>
+        <li>
+          <compClass>CompAutoCutWindTurbine</compClass>
+        </li>
+        <li Class="CompProperties_Stunnable">
+          <useLargeEMPEffecter>true</useLargeEMPEffecter>
+          <empEffecterDimensions>(1.8,0,0.5)</empEffecterDimensions>
+          <empEffecterOffset>(0,0,-0.5)</empEffecterOffset>
+          <empChancePerTick>0.3</empChancePerTick>
+          <affectedDamageDefs>
+            <li>EMP</li>
+          </affectedDamageDefs>
+        </li>
+      </comps>
+      <researchPrerequisites>
+        <li>Renewable_energy_C2</li>
+      </researchPrerequisites>
+      <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="WoodFiredGenerator"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.PowerFueledDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="WoodFiredGenerator"]</xpath>
+    <value>
+      <label>steam generator</label>
+      <thingClass>SK.Building_SteamGenerator</thingClass>
+      <graphicData>
+        <texPath>Things/Building/Power/SteamGenerator/heatgenerator</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(2,2)</drawSize>
+        <shadowData>
+          <volume>(1.8, 0.8, 1.8)</volume>
+          <offset>(0,0,0)</offset>
+        </shadowData>
+      </graphicData>
+      <statBases>
+        <MaxHitPoints>350</MaxHitPoints>
+        <WorkToBuild>2100</WorkToBuild>
+        <Flammability>1.0</Flammability>
+      </statBases>
+      <description>The basic Steam Generator that produces electricity. Can be fueled with Charcoal, Kindling and wooden stuff.\nMax. power output: 2,250 W.</description>
+      <stuffCategories>
+        <li>RuggedMetallic</li>
+      </stuffCategories>
+      <costStuffCount>110</costStuffCount>
+      <costList>
+        <ComponentIndustrial>10</ComponentIndustrial>
+        <Mechanism>2</Mechanism>
+      </costList>
+	  <constructEffect IsNull="true"/>
+      <comps>
+        <li Class="CompProperties_Flickable"/>
+        <li Class="CompProperties_Breakdownable"/>
+        <li Class="CompProperties_Power">
+          <compClass>SK.CompPowerPlantFueled</compClass>
+          <basePowerConsumption>-750</basePowerConsumption>
+          <transmitsPower>true</transmitsPower>
+          <soundAmbientProducingPower>WoodFiredGenerator_Ambience</soundAmbientProducingPower>
+        </li>
+        <li Class="CompProperties_Glower">
+          <glowRadius>3</glowRadius>
+          <glowColor>(217,112,33,0)</glowColor>
+        </li>
+        <li Class="SK.CompProperties_HeatPusherAdvanced">
+          <compClass>SK.CompHeatPusherAdvanced</compClass>
+          <heatPerSecond>30</heatPerSecond>
+          <heatPushMaxTemperature>75</heatPushMaxTemperature>
+        </li>
+        <li Class="SK.CompFueled_Properties">
+          <operatingTemp>500</operatingTemp>
+          <drawfirefuel>false</drawfirefuel>
+          <canAutoBurn>true</canAutoBurn>
+          <smokeDrawOffset>(0,0,0.1)</smokeDrawOffset>
+          <smokesize>1.7</smokesize>
+          <smokespeeddelay>100</smokespeeddelay>
+          <fuelCapacity>40</fuelCapacity>
+          <burnFuelMultiplier>0.9</burnFuelMultiplier>
+          <smokeDensity>3</smokeDensity>
+          <fuelFilter>
+            <thingDefs>
+              <li>Kindling</li>
+            </thingDefs>
+            <categories>
+              <li>Wooden</li>
+              <li>Coal</li>
+            </categories>
+          </fuelFilter>
+        </li>
+        <li Class="CompProperties_Stunnable">
+          <useLargeEMPEffecter>true</useLargeEMPEffecter>
+          <affectedDamageDefs>
+            <li>EMP</li>
+          </affectedDamageDefs>
+        </li>
+      </comps>
+      <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+      <modExtensions>
+        <li Class="SK.Events.AccidentalExplosionExtension">
+			</li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Dubs Bad Hygiene</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="WoodFiredGenerator"]/comps</xpath>
+          <value>
+            <li Class="DubsBadHygiene.CompProperties_Pipe">
+              <mode>Sewage</mode>
+            </li>
+            <li Class="CompProperties_Refuelable">
+              <consumeFuelOnlyWhenPowered>false</consumeFuelOnlyWhenPowered>
+              <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+              <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+              <fuelLabel>Water</fuelLabel>
+			  <fuelGizmoLabel>Water</fuelGizmoLabel>
+              <fuelCapacity>100</fuelCapacity>
+              <fuelConsumptionRate>300</fuelConsumptionRate>
+              <fuelMultiplier>3</fuelMultiplier>
+              <fuelFilter />
+            </li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="WoodFiredGenerator"]/description</xpath>
+          <value>
+			<description>The basic Steam Generator that produces electricity. Can be fueled with Charcoal, Kindling and wooden stuff. Must be provided water via pipes, a well and a pump.\nMax. power output: 2,250 W.</description>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="ChemfuelPoweredGenerator"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.PowerFueledDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="ChemfuelPoweredGenerator"]</xpath>
+    <value>
+      <label>fuel power plant</label>
+      <thingClass>SK.Building_FueledPowerPlant</thingClass>
+      <graphicData>
+        <texPath>Things/Building/Power/FueledPowerPlant/Fuelpowerplant</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(3,2)</drawSize>
+        <shadowData>
+          <volume>(2.8, 0.8, 1.8)</volume>
+          <offset>(0,0,0)</offset>
+        </shadowData>
+      </graphicData>
+      <statBases>
+        <MaxHitPoints>400</MaxHitPoints>
+        <WorkToBuild>6500</WorkToBuild>
+        <Flammability>1.0</Flammability>
+        <Beauty>-60</Beauty>
+      </statBases>
+      <description>A Fuel Power Plant that produces electricity. Can be fueled with Chemfuel, Prometheum or FSX.\nMax. power output: 3,938 W</description>
+      <size>(3,2)</size>
+      <stuffCategories>
+        <li>RuggedMetallic</li>
+      </stuffCategories>
+      <costStuffCount>310</costStuffCount>
+      <costList>
+        <Rubber>40</Rubber>
+        <ReinforcedConcrete>20</ReinforcedConcrete>
+        <ComponentIndustrial>10</ComponentIndustrial>
+        <Mechanism>6</Mechanism>
+      </costList>
+	  <constructEffect IsNull="true"/>
+      <comps>
+        <li Class="CompProperties_Flickable"/>
+        <li Class="CompProperties_Breakdownable"/>
+        <li Class="CompProperties_Power">
+          <compClass>SK.CompPowerPlantFueled</compClass>
+          <basePowerConsumption>-3500</basePowerConsumption>
+          <transmitsPower>true</transmitsPower>
+          <soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
+        </li>
+        <li Class="CompProperties_Glower">
+          <glowRadius>3</glowRadius>
+          <glowColor>(217,112,33,0)</glowColor>
+        </li>
+        <li Class="SK.CompProperties_HeatPusherAdvanced">
+          <compClass>SK.CompHeatPusherAdvanced</compClass>
+          <heatPerSecond>40</heatPerSecond>
+          <heatPushMaxTemperature>75</heatPushMaxTemperature>
+        </li>
+        <li Class="SK.CompFueled_Properties">
+          <canAutoBurn>true</canAutoBurn>
+          <operatingTemp>1600</operatingTemp>
+          <drawfirefuel>false</drawfirefuel>
+          <smokeDrawOffset>(0.2,1.5,0.5)</smokeDrawOffset>
+          <smokesize>1.4</smokesize>
+          <fuelCapacity>80</fuelCapacity>
+          <burnFuelMultiplier>0.6</burnFuelMultiplier>
+          <smokeDensity>4</smokeDensity>
+          <fuelFilter>
+            <thingDefs>
+              <li>Chemfuel</li>
+              <li>Prometheum</li>
+              <li>FSX</li>
+            </thingDefs>
+          </fuelFilter>
+        </li>
+        <li Class="CompProperties_Stunnable">
+          <useLargeEMPEffecter>true</useLargeEMPEffecter>
+          <affectedDamageDefs>
+            <li>EMP</li>
+          </affectedDamageDefs>
+        </li>
+      </comps>
+      <researchPrerequisites>
+        <li>Generators_C3</li>
+      </researchPrerequisites>
+      <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+      <modExtensions>
+        <li Class="SK.Events.AccidentalExplosionExtension">
+			</li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="GeothermalGenerator"]</xpath>
+    <value>
+      <thingClass>SK.Building_GeothermalPlant</thingClass>
+      <graphicData>
+        <texPath>Things/Building/Power/GeothermalPlant/GeothermalPlant_off</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(6,6)</drawSize>
+        <shadowData>
+          <volume>(5.7, 2, 5.7)</volume>
+        </shadowData>
+        <damageData>
+          <rect>(0.3,0,5.4,6)</rect>
+        </damageData>
+      </graphicData>
+      <statBases>
+        <MaxHitPoints>400</MaxHitPoints>
+        <WorkToBuild>7000</WorkToBuild>
+        <Flammability>1.0</Flammability>
+        <Beauty>-40</Beauty>
+      </statBases>
+      <description>Produces electricity from geothermal steam geysers. Must be placed on a steam geyser.\nMax. power output: 2,500 W.</description>
+      <stuffCategories>
+        <li>RuggedMetallic</li>
+      </stuffCategories>
+      <costStuffCount>330</costStuffCount>
+      <costList>
+        <ReinforcedConcrete>60</ReinforcedConcrete>
+        <Rubber>40</Rubber>
+        <Electronics>12</Electronics>
+        <Mechanism>8</Mechanism>
+      </costList>
+	  <constructEffect IsNull="true"/>
+      <comps>
+        <li Class="CompProperties_Power">
+          <compClass>CompPowerPlantSteam</compClass>
+          <basePowerConsumption>-2500</basePowerConsumption>
+          <transmitsPower>true</transmitsPower>
+          <soundAmbientProducingPower>GeothermalPlant_Ambience</soundAmbientProducingPower>
+        </li>
+        <li Class="CompProperties_Breakdownable"/>
+        <li Class="CompProperties_Stunnable">
+          <useLargeEMPEffecter>true</useLargeEMPEffecter>
+		  <empChancePerTick>0.7</empChancePerTick>
+          <affectedDamageDefs>
+            <li>EMP</li>
+          </affectedDamageDefs>
+        </li>
+      </comps>
+      <placeWorkers Merge="true">
+        <li>PlaceWorker_OnSteamGeyser</li>
+        <li>SK.PlaceWorker_NoNearGeothermalGenerator</li>
+      </placeWorkers>
+      <designationHotKey>Misc5</designationHotKey>
+      <constructionSkillPrerequisite>13</constructionSkillPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="WatermillGenerator"]</xpath>
+    <value>
+      <statBases>
+        <MaxHitPoints>400</MaxHitPoints>
+        <WorkToBuild>9000</WorkToBuild>
+        <Flammability>1.0</Flammability>
+        <Beauty>-20</Beauty>
+      </statBases>
+      <stuffCategories>
+        <li>StrongMetallic</li>
+      </stuffCategories>
+      <costStuffCount>150</costStuffCount>
+      <costList>
+        <ComponentIndustrial>8</ComponentIndustrial>
+        <Mechanism>4</Mechanism>
+      </costList>
+	  <constructEffect IsNull="true"/>
+      <comps>
+        <li Class="CompProperties_Power">
+          <compClass>CompPowerPlantWater</compClass>
+          <basePowerConsumption>-1000</basePowerConsumption>
+          <transmitsPower>true</transmitsPower>
+          <soundAmbientProducingPower>WaterMill_Ambience</soundAmbientProducingPower>
+        </li>
+        <li Class="CompProperties_Breakdownable"/>
+        <li Class="CompProperties_Stunnable">
+          <useLargeEMPEffecter>true</useLargeEMPEffecter>
+          <empEffecterDimensions>(2.0,0,1.6)</empEffecterDimensions>
+          <empChancePerTick>0.5</empChancePerTick>
+          <affectedDamageDefs>
+            <li>EMP</li>
+          </affectedDamageDefs>
+        </li>
+      </comps>
+      <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    </value>
+  </Operation>
+
+</Patch>
