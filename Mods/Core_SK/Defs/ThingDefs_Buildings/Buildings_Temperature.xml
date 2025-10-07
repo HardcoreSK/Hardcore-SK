@@ -14,8 +14,8 @@
 			<li>SK.ITab_Fuel</li>
 		</inspectorTabs>
 	</ThingDef>
-
-	<ThingDef ParentName="BuildingFueled">
+<!-- DefOverwrite
+	<ThingDef ParentName="BuildingBase">
 		<defName>Campfire</defName>
 		<label>campfire</label>
 		<description>A campfire that can cook meals and produce heat, but it will burn out after a few days. As with all heat sources, it must be placed indoors so it has a closed space to heat.</description>    
@@ -28,9 +28,6 @@
 			<damageData>
 				<rect>(0.2,0,0.6,0.1)</rect>
 			</damageData>
-			<!--<shadowData>
-				<volume>(0.5, 0.5, 0.5)</volume>
-			</shadowData>-->
 		</graphicData>
 		<fillPercent>0.1</fillPercent>
 		<statBases>
@@ -139,8 +136,11 @@
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
 		</building>
+		<inspectorTabs>
+			<li>SK.ITab_Fuel</li>
+		</inspectorTabs>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="BurnerFueled">
 		<defName>Building_Heater</defName>
 		<label>stove heater</label>

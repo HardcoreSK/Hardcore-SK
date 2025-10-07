@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="WorkTableFueled">
+	<ThingDef ParentName="BenchBase">
 		<defName>TableGrill</defName>
 		<label>simple grill</label>
 		<description>A small grill used to cook meat into simple jerky or roasts. Can be fueled by Kindling, Coal, Charcoal and wooden stuff.</description>
@@ -39,10 +39,8 @@
 		<size>(1,1)</size>
 		<fillPercent>0.3</fillPercent>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<designationCategory>Production</designationCategory>
+		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_AffectedByFacilities">
@@ -99,7 +97,7 @@
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
 
-
+<!-- DefOverwrite
 	<ThingDef ParentName="WorkTable">
 		<defName>ButcherSpot</defName>
 		<label>butchering spot</label>
@@ -164,7 +162,7 @@
 			<li>Food_0</li>
 		</researchPrerequisites>
 	</ThingDef>	
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="WorkTable">
 		<defName>TableButcher</defName>
 		<label>butcher table</label>
@@ -233,8 +231,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="WorkTable">
+-->
+	<ThingDef ParentName="BenchBase">
 		<defName>TableKitchen</defName>
 		<label>Kitchen Table</label>
 		<description>A heavy table for meal prep.</description>
@@ -265,9 +263,6 @@
 		</costList>
 		<fillPercent>0.5</fillPercent>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>800</WorkToBuild>
 			<MaxHitPoints>140</MaxHitPoints>
@@ -313,7 +308,7 @@
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
 
-
+<!-- DefOverwrite
 	<ThingDef ParentName="WorkTableFueled">
 		<defName>FueledStove</defName>
 		<label>fueled stove</label>
@@ -418,8 +413,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="WorkTableFueled">
+-->
+	<ThingDef ParentName="BenchBase">
 		<defName>TableOven</defName>
 		<label>oven</label>
 		<description>A fueled oven for baking candies and tasty treats. Can be fueled by Kindling, Coal, Charcoal and wooden stuff.</description>
@@ -460,6 +455,7 @@
 		<size>(2,2)</size>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(1,0,-1)</interactionCellOffset>
+		<tickerType>Normal</tickerType>
 		<recipes>
 			<li>MeltSugar</li>
 			<li>RoastingCoffeeBeans</li>
@@ -602,7 +598,7 @@
 		</placeWorkers>
 	</ThingDef>
 
-	<ThingDef ParentName="WorkTable">
+	<ThingDef ParentName="BenchBase">
 		<defName>ElectricOven</defName>
 		<label>electric oven</label>
 		<thingClass>SK.Building_WorkTable_HeatPushAdvanced</thingClass>
@@ -643,9 +639,6 @@
 		</statBases>
 		<size>(1,1)</size>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<designationCategory>Production</designationCategory>
 		<recipes>
 			<li>MeltSugar</li>
@@ -692,7 +685,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="WorkTable">
+	<ThingDef ParentName="BenchBase">
 		<defName>CandyTable</defName>
 		<label>candy table</label>
 		<description>A candy-making table used to make chocolate, caramel and taffy. Requires power.</description>
@@ -721,9 +714,6 @@
 			<ElectronicComponents>5</ElectronicComponents>
 		</costList>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>3100</WorkToBuild>
 			<MaxHitPoints>220</MaxHitPoints>
@@ -772,7 +762,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="WorkTable">
+	<ThingDef ParentName="BenchBase">
 		<defName>GrindStone</defName>
 		<label>milling stone</label>
 		<description>A small muscle-powered grinding stone for quickly grinding raw plants.</description>
@@ -799,9 +789,6 @@
 		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>300</WorkToBuild>
 			<MaxHitPoints>210</MaxHitPoints>
@@ -837,7 +824,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<ThingDef ParentName="WorkTable">
+	<ThingDef ParentName="BenchBase">
 		<defName>MillElectric</defName>
 		<label>Electric Mill</label>
 		<description>The electric grinding mechanism is driven by a powerful electric motor, which allows an excellent grinding throughput.</description>
@@ -870,9 +857,6 @@
 			<Mechanism>5</Mechanism>
 		</costList>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>500</WorkToBuild>
 			<MaxHitPoints>210</MaxHitPoints>
@@ -914,8 +898,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
 	</ThingDef>
-
-<!-- 	<ThingDef ParentName="StandardBuilding">
+<!-- DefOverwrite
+ 	<ThingDef ParentName="StandardBuilding">
 		<defName>NutrientPasteDispenser</defName>
 		<label>nutrient paste dispenser</label>
 		<thingClass>Building_NutrientPasteDispenser</thingClass>
@@ -988,7 +972,7 @@
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 	</ThingDef>
  -->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="HopperBase">
 		<defName>Hopper</defName>
 		<label>hopper</label>
@@ -1045,9 +1029,10 @@
 		<designationHotKey>Misc3</designationHotKey>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
-
+-->
 	<!-- Brewery -->
-	<ThingDef ParentName="WorkTableFueled">
+	<!-- DefOverwrite
+	<ThingDef ParentName="BenchBase">
 		<defName>Brewery</defName>
 		<label>brewery</label>
 		<description>A work station with all the equipment needed to brew Wort. Can be fueled by Kindling, Coal, Charcoal and wooden stuff.</description>
@@ -1077,9 +1062,6 @@
 			<WoodLog>50</WoodLog>
 		</costList>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>1300</WorkToBuild>
 			<MaxHitPoints>180</MaxHitPoints>
@@ -1144,9 +1126,9 @@
 			<li>Brewing</li>
 		</researchPrerequisites>
 	</ThingDef>
-
+-->
 	<!-- Electric Brewery -->
-	<ThingDef ParentName="WorkTable">
+	<ThingDef ParentName="BenchBase">
 		<defName>ElectricBrewery</defName>
 		<label>electric brewery</label>
 		<thingClass>SK.Building_WorkTable_HeatPushAdvanced</thingClass>
@@ -1178,9 +1160,6 @@
 			<Mechanism>8</Mechanism>
 		</costList>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>1750</WorkToBuild>
 			<MaxHitPoints>160</MaxHitPoints>
@@ -1619,8 +1598,8 @@
 		<barScale>(1.0, 1.0)</barScale>
 		<slotsCount>10</slotsCount>
 	</ThingDef>
-
-	<ThingDef ParentName="WorkTable">
+<!-- DefOverwrite
+	<ThingDef ParentName="BenchBase">
 		<defName>DrugLab</defName>
 		<label>drug lab</label>
 		<description>A work bench equipped with various containers, heaters, and measurement equipment for producing a variety of drugs.</description>
@@ -1653,9 +1632,6 @@
 			<Mechanism>5</Mechanism>
 		</costList>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>1700</WorkToBuild>
 			<MaxHitPoints>150</MaxHitPoints>
@@ -1687,8 +1663,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="WorkTable">
+-->
+	<ThingDef ParentName="BenchBase">
 		<defName>TableCoffee</defName>
 		<label>coffee machine</label>
 		<description>A machine for the preparation of coffee. It can also produce tea. Requires power.</description>
@@ -1721,9 +1697,6 @@
 		</costList>
 		<tickerType>Normal</tickerType>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>1400</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -1758,7 +1731,7 @@
 		<constructionSkillPrerequisite>11</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="WorkTable">
+	<ThingDef ParentName="BenchBase">
 		<defName>TableSawmillHand</defName>
 		<label>hand sawmill</label>
 		<description>A small muscle-powered hand saw for cutting logs into planks and kindling.</description>
@@ -1777,9 +1750,6 @@
 		</stuffCategories>
 		<costStuffCount>120</costStuffCount>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>700</WorkToBuild>
 			<MaxHitPoints>170</MaxHitPoints>
@@ -1814,7 +1784,7 @@
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingFueled">
+	<ThingDef ParentName="BenchBase">
 		<defName>TableFurnace</defName>
 		<label>furnace</label>
 		<description>A furnace used for smelting basic metal ores into metal alloys. Can make metal cans and produce charcoal from logs. Can be fueled by Kindling, Coal, Charcoal, Peat and wooden stuff.</description>
@@ -1852,6 +1822,7 @@
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
 		<fillPercent>0.7</fillPercent>
+		<tickerType>Normal</tickerType>
 		<recipes>
 			<li>MakeCharcoal_Hand</li>
 			<li>MakeTinBars_Hand</li>
@@ -1912,7 +1883,7 @@
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingFueled">
+	<ThingDef ParentName="BenchBase">
 		<defName>Kiln</defName>
 		<label>kiln</label>
 		<description>An improvised kiln used to produce clay bricks, burning apparel and used as crematorium. Can be fueled by Kindling, Coal, Charcoal, Peat and wooden stuff. After researching chemistry it allow to make rubber from raw caoutchouc.</description>
@@ -1944,6 +1915,7 @@
 		<fillPercent>0.9</fillPercent>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<tickerType>Normal</tickerType>
 		<recipes>
 			<li>SmeltWeapon</li>
 			<li>MakeCharcoal_Hand</li>
@@ -2006,7 +1978,7 @@
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef Class="SK.ThingDef_AnimatedWorktable" ParentName="WorkTable">
+	<ThingDef Class="SK.ThingDef_AnimatedWorktable" ParentName="BenchBase">
 		<defName>GlassworkTable</defName>
 		<label>glassworks table</label>
 		<description>A table with all the tools you need to make glass. Requires power.</description>
@@ -2039,9 +2011,6 @@
 			<Mechanism>8</Mechanism>
 		</costList>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>1600</WorkToBuild>
 			<MaxHitPoints>180</MaxHitPoints>
@@ -2099,7 +2068,7 @@
 		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="WorkTable">
+	<ThingDef ParentName="BenchBase">
 		<defName>LeatherworkerTable</defName>
 		<label>leatherworker table</label>
 		<description>A worktable for crafting leather clothing from raw hides.</description>
@@ -2125,9 +2094,6 @@
 		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>1250</WorkToBuild>
 			<MaxHitPoints>170</MaxHitPoints>
@@ -2160,8 +2126,8 @@
 		</placeWorkers>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="WorkTable">
+<!-- DefOverwrite
+	<ThingDef ParentName="BenchBase">
 		<defName>HandTailoringBench</defName>
 		<label>tailor's bench</label>
 		<description>A workbench equipped for tailoring basic clothing from textiles.</description>
@@ -2190,9 +2156,6 @@
 			<Mechanism>5</Mechanism>
 		</costList>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>2150</WorkToBuild>
 			<MaxHitPoints>150</MaxHitPoints>
@@ -2226,8 +2189,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="WorkTable">
+--><!-- DefOverwrite
+	<ThingDef ParentName="BenchBase">
 		<defName>ElectricTailoringBench</defName>
 		<label>electric tailoring bench</label>
 		<description>A workbench with a sewing machine for rapid tailoring of clothes. Can work without electricity at 40% of normal speed.</description>
@@ -2257,9 +2220,6 @@
 			<Mechanism>5</Mechanism>
 		</costList>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>6250</WorkToBuild>
 			<MaxHitPoints>210</MaxHitPoints>
@@ -2306,8 +2266,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="WorkTable">
+-->
+	<ThingDef ParentName="BenchBase">
 		<defName>TableLoom</defName>
 		<label>tailor's loom</label>
 		<description>A tailor's loom that is used to spin raw materials into usable textiles. Requires power.</description>
@@ -2338,9 +2298,6 @@
 			<Mechanism>6</Mechanism>
 		</costList>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>3850</WorkToBuild>
 			<MaxHitPoints>170</MaxHitPoints>
@@ -2383,7 +2340,7 @@
 		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="WorkTable">
+	<ThingDef ParentName="BenchBase">
 		<defName>HandMendingWorkbench</defName>
 		<label>hand mending workbench</label>
 		<description>A workbench equipped with all the tools required to mend and repair damaged medieval apparel, armor and weapons. Keep it stocked with mending kits.</description>
@@ -2415,9 +2372,6 @@
 			<Mechanism>2</Mechanism>
 		</costList>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>1800</WorkToBuild>
 			<MaxHitPoints>200</MaxHitPoints>
@@ -2460,7 +2414,7 @@
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="WorkTable">
+	<ThingDef ParentName="BenchBase">
 		<defName>TableMending</defName>
 		<label>mending workbench</label>
 		<description>A workbench equipped with all the tools required to mend and repair damaged items. Requires power and consumes mending kits.</description>
@@ -2491,9 +2445,6 @@
 		</stuffCategories>
 		<costStuffCount>135</costStuffCount>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>4500</WorkToBuild>
 			<MaxHitPoints>220</MaxHitPoints>
@@ -2546,8 +2497,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="WorkTable">
+<!-- DefOverwrite
+	<ThingDef ParentName="BenchBase">
 		<defName>FabricationBench</defName>
 		<label>hand assembling workbench</label>
 		<description>A table for the assembling of components, wires, and mechanisms. Further research will allow advanced mechanisms to be built here as well. Power needed: 300 W. Can work without electricity, but work speed will be reduced by 30%.</description>
@@ -2574,9 +2525,6 @@
 		</stuffCategories>
 		<costStuffCount>145</costStuffCount>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>2800</WorkToBuild>
 			<MaxHitPoints>200</MaxHitPoints>
@@ -2612,8 +2560,8 @@
 		</placeWorkers>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="WorkTableFueled">
+--><!-- DefOverwrite
+	<ThingDef ParentName="BenchBase">
 		<defName>FueledSmithy</defName>
 		<label>blacksmith</label>
 		<description>This blacksmithing setup has all the tools needed to build metal armor, work tools, melee weapons, advanced bows and crossbows, as well as simple ammunition such as arrows. It requires some fuel that burns at a high temperature such as coal or peat.</description>
@@ -2712,8 +2660,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="WorkTable">
+-->
+	<ThingDef ParentName="BenchBase">
 		<defName>TableStonecutterNeolithic</defName>
 		<label>stonecutter's bench</label>
 		<description>A work table equipped to cut rough stone into small stone cobbles.</description>
@@ -2740,9 +2688,6 @@
 		</stuffCategories>
 		<costStuffCount>60</costStuffCount>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>1100</WorkToBuild>
 			<MaxHitPoints>210</MaxHitPoints>
@@ -2763,8 +2708,8 @@
 		</placeWorkers>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="WorkTable">
+<!-- DefOverwrite
+	<ThingDef ParentName="BenchBase">
 		<defName>TableStonecutter</defName>
 		<label>hand machining table</label>
 		<thingClass>Building_WorkTable</thingClass>
@@ -2798,9 +2743,6 @@
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>1500</WorkToBuild>
 			<MaxHitPoints>210</MaxHitPoints>
@@ -2844,8 +2786,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="WorkTable">
+--><!-- DefOverwrite
+	<ThingDef ParentName="BenchBase">
 		<defName>TableSculpting</defName>
 		<label>sculptor's table</label>
 		<description>A workbench equipped for artistic sculpting.</description>
@@ -2879,9 +2821,6 @@
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 			<paintable>true</paintable>
 		</building>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>2800</WorkToBuild>
 			<MaxHitPoints>210</MaxHitPoints>
@@ -2910,8 +2849,8 @@
 		</placeWorkers>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="WorkTable">
+-->
+	<ThingDef ParentName="BenchBase">
 		<defName>ConcreteMixer</defName>
 		<label>hand concrete mixer</label>
 		<description>A muscle-powered concrete mixer. Concrete is mixed from rubble and sand.</description>
@@ -2939,9 +2878,6 @@
 			<Mechanism>5</Mechanism>
 		</costList>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>1600</WorkToBuild>
 			<MaxHitPoints>180</MaxHitPoints>
@@ -3034,8 +2970,8 @@
 		<barScale>(1.0, 1.0)</barScale>
 		<slotsCount>10</slotsCount>
 	</ThingDef>
-
-	<ThingDef ParentName="WorkTable">
+<!-- DefOverwrite
+	<ThingDef ParentName="BenchBase">
 		<defName>CraftingSpot</defName>
 		<label>craftsman table</label>
 		<description>A place for crafting simple things like shivs or bows.</description>
@@ -3056,9 +2992,6 @@
 			</damageData>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>1250</WorkToBuild>
 			<MaxHitPoints>160</MaxHitPoints>
@@ -3099,8 +3032,8 @@
 			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
 		</placeWorkers>
 	</ThingDef>
-
-	<ThingDef ParentName="WorkTable">
+-->
+	<ThingDef ParentName="BenchBase">
 		<defName>WeaponCraftingWorkTable</defName>
 		<label>weapon crafting workbench</label>
 		<description>A workbench that produces ranged weapons like pistols and rifles. Can smelt weapons down into metal. Requires power.</description>
@@ -3131,9 +3064,6 @@
 			<Mechanism>6</Mechanism>
 		</costList>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>4000</WorkToBuild>
 			<MaxHitPoints>210</MaxHitPoints>
@@ -3176,7 +3106,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="WorkTable">
+	<ThingDef ParentName="BenchBase">
 		<defName>AdvWeaponCraftingWorkTable</defName>
 		<label>advanced weapon crafting workbench</label>
 		<description>A workbench that produces advanced ranged weapons like military assault rifles, missile launchers and heavy machine guns. Requires power.</description>
@@ -3207,9 +3137,6 @@
 			<Electronics>5</Electronics>
 		</costList>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>6500</WorkToBuild>
 			<MaxHitPoints>250</MaxHitPoints>
@@ -3253,7 +3180,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="WorkTable">
+	<ThingDef ParentName="BenchBase">
 		<defName>HeavyArmsBench</defName>
 		<label>heavy arms lathe</label>
 		<description>A crafting table that produces ammunition for use with turrets. Can also produce sulfur from iron ore. Requires power.</description>
@@ -3322,7 +3249,7 @@
 	</ThingDef>
 
 	<!-- ========================= EPOE ==========================-->
-	<ThingDef ParentName="WorkTable">
+	<ThingDef ParentName="BenchBase">
 		<defName>TablePrimitiveProsthetic</defName>
 		<label>primitive prosthetics bench</label>
 		<description>A workbench equipped for production of basic prosthetics.</description>
@@ -3349,9 +3276,6 @@
 		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>3700</WorkToBuild>
 			<MaxHitPoints>130</MaxHitPoints>
@@ -3374,7 +3298,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<ThingDef ParentName="WorkTable">
+	<ThingDef ParentName="BenchBase">
 		<defName>TableBasicProsthetic</defName>
 		<label>prosthetics workbench</label>
 		<description>A workbench equipped for production of very simple prosthetics. Requires power.</description>
@@ -3404,9 +3328,6 @@
 			<Mechanism>8</Mechanism>
 		</costList>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>3700</WorkToBuild>
 			<MaxHitPoints>140</MaxHitPoints>
@@ -3451,7 +3372,7 @@
 	</ThingDef>
 
 	<!--============================ Resource rocks ===============================-->
-	<ThingDef ParentName="WorkTable">
+	<ThingDef ParentName="BuildingBase">
 		<defName>VG_SaltMine</defName>
 		<label>salt mine</label>
 		<description>Place on rough stone for digging up salt.</description>

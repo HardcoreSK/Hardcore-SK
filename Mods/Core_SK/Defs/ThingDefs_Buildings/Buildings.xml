@@ -79,6 +79,7 @@
 	</ThingDef>
 
 	<!-- Base Worktable -->
+	<!-- Unneeded Abstracts, thingClasses dont do anything
 	<ThingDef Name="WorkTable" ParentName="StandardBuilding" Abstract="True">
 		<thingClass>SK.SK_Building_WorkTable</thingClass>
 		<graphicData>
@@ -115,9 +116,6 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<!-- 		<comps>
-			<li Class="CompProperties_Flickable"/>
-		</comps> -->
 		<inspectorTabs>
 			<li>SK.ITab_Fuel</li>
 		</inspectorTabs>
@@ -129,15 +127,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<!-- 		<comps>
-			<li Class="CompProperties_Flickable"/>
-		</comps> -->
 		<inspectorTabs>
 			<li>SK.ITab_Fuel</li>
 		</inspectorTabs>
 	</ThingDef>
-
+-->
 	<!-- Base Hopper -->
+	<!-- Unneeded
 	<ThingDef Name="HopperBase" ParentName="StandardBuilding" Abstract="True">
 		<thingClass>Building_Storage</thingClass>
 		<graphicData>
@@ -171,7 +167,7 @@
 			<li>PlaceWorker_NextToHopperAccepter</li>
 		</placeWorkers>
 	</ThingDef>
-
+-->
 	<ThingDef Name="ResearchBase" ParentName="StandardBuilding" Abstract="True">
 		<canOverlapZones>false</canOverlapZones>
 		<surfaceType>Item</surfaceType>
