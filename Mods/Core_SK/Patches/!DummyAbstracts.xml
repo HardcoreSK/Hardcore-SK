@@ -35,7 +35,9 @@
 
 			<ThingDef Name="SK.SK_LampBaseDummy" ParentName="SK_LampBase" Abstract="True" />
 			<!--<ThingDef Name="SK.SK_BuildingBaseDummy" ParentName="SK_BuildingBase" Abstract="True" />-->
-			<!--<ThingDef Name="SK.WorkTableDummy" ParentName="WorkTable" Abstract="True" />-->
+			<ThingDef Name="SK.SK_WorkTableDummy" ParentName="SK_WorkTable" Abstract="True" />
+			<ThingDef Name="SK.SK_WorkTableFueledDummy" ParentName="SK_WorkTableFueled" Abstract="True" />
+			<ThingDef Name="SK.UniversalFermenterBaseDummy" ParentName="UniversalFermenterBase" Abstract="True" />
 			<ThingDef Name="SK.PlantGrowerBaseDummy" ParentName="PlantGrowerBase" Abstract="True" />
 			<ThingDef Name="SK.SK_MealBaseDummy" ParentName="SK_MealBase" Abstract="True" />
 			<ThingDef Name="SK.SK_MealFineBaseDummy" ParentName="SK_MealFineBase" Abstract="True" />

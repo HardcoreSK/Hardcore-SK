@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="ButcherSpot"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_WorkTableDummy</value>
+	</Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="ButcherSpot"]</xpath>
     <value>
@@ -26,6 +32,13 @@
       <building Merge="true">
         <uninstallWork>150</uninstallWork>
       </building>
+    <comps><!-- Remove Duplicate ReportWorkSpeed -->
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
       <recipes Merge="true">
         <li>ButcherCorpseFlesh</li>
         <li>MakeHerbMedicine</li>
@@ -37,6 +50,12 @@
       </researchPrerequisites>
     </value>
   </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="TableButcher"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_WorkTableDummy</value>
+	</Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="TableButcher"]</xpath>
@@ -101,6 +120,12 @@
       <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
     </value>
   </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="FueledStove"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_WorkTableFueledDummy</value>
+	</Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="FueledStove"]</xpath>
@@ -295,6 +320,12 @@
     </value>
   </Operation>
 
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="Brewery"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_WorkTableDummy</value>
+	</Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Brewery"]</xpath>
     <value>
@@ -386,6 +417,12 @@
     </value>
   </Operation>
 
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="DrugLab"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_WorkTableDummy</value>
+	</Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="DrugLab"]</xpath>
     <value>
@@ -446,6 +483,12 @@
     </value>
   </Operation>
 
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="HandTailoringBench"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_WorkTableDummy</value>
+	</Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="HandTailoringBench"]</xpath>
     <value>
@@ -502,6 +545,12 @@
       <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     </value>
   </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="ElectricTailoringBench"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_WorkTableDummy</value>
+	</Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="ElectricTailoringBench"]</xpath>
@@ -575,6 +624,12 @@
     </value>
   </Operation>
 
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="FabricationBench"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_WorkTableDummy</value>
+	</Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="FabricationBench"]</xpath>
     <value>
@@ -604,9 +659,7 @@
       </stuffCategories>
       <costStuffCount>145</costStuffCount>
       <minifiedDef>MinifiedThing</minifiedDef>
-      <thingCategories>
-        <li>BuildingsProduction</li>
-      </thingCategories>
+	  <thingCategories/>
       <statBases Merge="true">
         <WorkToBuild>2800</WorkToBuild>
         <MaxHitPoints>200</MaxHitPoints>
@@ -637,6 +690,12 @@
       <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     </value>
   </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="FueledSmithy"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_WorkTableFueledDummy</value>
+	</Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="FueledSmithy"]</xpath>
@@ -736,6 +795,12 @@
     </value>
   </Operation>
 
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="TableStonecutter"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_WorkTableDummy</value>
+	</Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="TableStonecutter"]</xpath>
     <value>
@@ -798,6 +863,12 @@
     </value>
   </Operation>
 
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="TableSculpting"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_WorkTableDummy</value>
+	</Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="TableSculpting"]</xpath>
     <value>
@@ -854,6 +925,12 @@
     </value>
   </Operation>
 
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="CraftingSpot"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_WorkTableDummy</value>
+	</Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="CraftingSpot"]</xpath>
     <value>
@@ -876,9 +953,7 @@
         </damageData>
       </graphicData>
       <minifiedDef>MinifiedThing</minifiedDef>
-      <thingCategories>
-        <li>BuildingsProduction</li>
-      </thingCategories>
+	  <passability>PassThroughOnly</passability>
       <statBases Merge="true">
         <WorkToBuild>1250</WorkToBuild>
         <MaxHitPoints>160</MaxHitPoints>

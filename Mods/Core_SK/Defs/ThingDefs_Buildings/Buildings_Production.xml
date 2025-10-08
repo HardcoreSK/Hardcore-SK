@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTableFueled">
 		<defName>TableGrill</defName>
 		<label>simple grill</label>
 		<description>A small grill used to cook meat into simple jerky or roasts. Can be fueled by Kindling, Coal, Charcoal and wooden stuff.</description>
@@ -84,6 +84,9 @@
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
 		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<isMealSource>true</isMealSource>
 			<uninstallWork>350</uninstallWork>
@@ -232,7 +235,7 @@
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</ThingDef>
 -->
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>TableKitchen</defName>
 		<label>Kitchen Table</label>
 		<description>A heavy table for meal prep.</description>
@@ -274,6 +277,9 @@
 		<designationCategory>Production</designationCategory>
 		<pathCost>60</pathCost>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<uninstallWork>1150</uninstallWork>
 		</building>
@@ -300,7 +306,7 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>Food_B1</li>
@@ -414,7 +420,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 -->
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTableFueled">
 		<defName>TableOven</defName>
 		<label>oven</label>
 		<description>A fueled oven for baking candies and tasty treats. Can be fueled by Kindling, Coal, Charcoal and wooden stuff.</description>
@@ -505,8 +511,11 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<isMealSource>true</isMealSource>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
@@ -598,7 +607,7 @@
 		</placeWorkers>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTableFueled">
 		<defName>ElectricOven</defName>
 		<label>electric oven</label>
 		<thingClass>SK.Building_WorkTable_HeatPushAdvanced</thingClass>
@@ -675,6 +684,9 @@
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
 		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<isMealSource>true</isMealSource>
 			<heatPerTickWhileWorking>0.65</heatPerTickWhileWorking>
@@ -685,7 +697,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>CandyTable</defName>
 		<label>candy table</label>
 		<description>A candy-making table used to make chocolate, caramel and taffy. Requires power.</description>
@@ -749,8 +761,11 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<heatPerTickWhileWorking>0.3</heatPerTickWhileWorking>
 			<uninstallWork>1150</uninstallWork>
@@ -762,7 +777,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>GrindStone</defName>
 		<label>milling stone</label>
 		<description>A small muscle-powered grinding stone for quickly grinding raw plants.</description>
@@ -804,6 +819,9 @@
 			<li>GrindingCoffeeBeans</li>
 		</recipes>
 		<designationCategory>Production</designationCategory>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<uninstallWork>750</uninstallWork>
 		</building>
@@ -816,7 +834,7 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 		<researchPrerequisites>
@@ -824,7 +842,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>MillElectric</defName>
 		<label>Electric Mill</label>
 		<description>The electric grinding mechanism is driven by a powerful electric motor, which allows an excellent grinding throughput.</description>
@@ -872,6 +890,9 @@
 			<li>GrindingCoffeeBeans</li>
 		</recipes>
 		<designationCategory>Production</designationCategory>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<uninstallWork>750</uninstallWork>
 		</building>
@@ -891,7 +912,7 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>Bakery_C1</li>
@@ -1128,7 +1149,7 @@
 	</ThingDef>
 -->
 	<!-- Electric Brewery -->
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>ElectricBrewery</defName>
 		<label>electric brewery</label>
 		<thingClass>SK.Building_WorkTable_HeatPushAdvanced</thingClass>
@@ -1170,6 +1191,9 @@
 		<size>(2,1)</size>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<uninstallWork>750</uninstallWork>
 			<heatPerTickWhileWorking>0.5</heatPerTickWhileWorking>
@@ -1194,7 +1218,7 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>Food_C3</li>
@@ -1664,7 +1688,7 @@
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
 -->
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>TableCoffee</defName>
 		<label>coffee machine</label>
 		<description>A machine for the preparation of coffee. It can also produce tea. Requires power.</description>
@@ -1718,6 +1742,9 @@
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<heatPerTickWhileWorking>0.1</heatPerTickWhileWorking>
 			<uninstallWork>250</uninstallWork>
@@ -1726,12 +1753,12 @@
 			<li>Food_C3</li>
 		</researchPrerequisites>
 		<placeWorkers>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>11</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>TableSawmillHand</defName>
 		<label>hand sawmill</label>
 		<description>A small muscle-powered hand saw for cutting logs into planks and kindling.</description>
@@ -1760,6 +1787,9 @@
 		<size>(2,1)</size>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<uninstallWork>1250</uninstallWork>
 		</building>
@@ -1779,12 +1809,12 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTableFueled">
 		<defName>TableFurnace</defName>
 		<label>furnace</label>
 		<description>A furnace used for smelting basic metal ores into metal alloys. Can make metal cans and produce charcoal from logs. Can be fueled by Kindling, Coal, Charcoal, Peat and wooden stuff.</description>
@@ -1823,6 +1853,9 @@
 		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
 		<fillPercent>0.7</fillPercent>
 		<tickerType>Normal</tickerType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<recipes>
 			<li>MakeCharcoal_Hand</li>
 			<li>MakeTinBars_Hand</li>
@@ -1875,7 +1908,7 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>Craft_B1</li>
@@ -1883,7 +1916,7 @@
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTableFueled">
 		<defName>Kiln</defName>
 		<label>kiln</label>
 		<description>An improvised kiln used to produce clay bricks, burning apparel and used as crematorium. Can be fueled by Kindling, Coal, Charcoal, Peat and wooden stuff. After researching chemistry it allow to make rubber from raw caoutchouc.</description>
@@ -1926,6 +1959,9 @@
 			<li>BurnThings</li>
 			<li>VulcanizeRubber</li>
 		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<uninstallWork>1850</uninstallWork>
 		</building>
@@ -1970,7 +2006,7 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>Craft_B1</li>
@@ -1978,7 +2014,7 @@
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef Class="SK.ThingDef_AnimatedWorktable" ParentName="BenchBase">
+	<ThingDef Class="SK.ThingDef_AnimatedWorktable" ParentName="SK_WorkTable">
 		<defName>GlassworkTable</defName>
 		<label>glassworks table</label>
 		<description>A table with all the tools you need to make glass. Requires power.</description>
@@ -2054,13 +2090,16 @@
 				<heatPushMaxTemperature>45</heatPushMaxTemperature>
 			</li>
 		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<uninstallWork>1450</uninstallWork>
 			<heatPerTickWhileWorking>0.9</heatPerTickWhileWorking>
 		</building>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>Glass_C1</li>
@@ -2068,7 +2107,7 @@
 		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>LeatherworkerTable</defName>
 		<label>leatherworker table</label>
 		<description>A worktable for crafting leather clothing from raw hides.</description>
@@ -2106,6 +2145,9 @@
 		<size>(3,1)</size>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<uninstallWork>1450</uninstallWork>
 		</building>
@@ -2122,7 +2164,7 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</ThingDef>
@@ -2267,7 +2309,7 @@
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
 -->
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>TableLoom</defName>
 		<label>tailor's loom</label>
 		<description>A tailor's loom that is used to spin raw materials into usable textiles. Requires power.</description>
@@ -2308,6 +2350,9 @@
 		<size>(2,1)</size>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<uninstallWork>1450</uninstallWork>
 			<unpoweredWorkTableWorkSpeedFactor>0.6</unpoweredWorkTableWorkSpeedFactor>
@@ -2335,12 +2380,12 @@
 		</researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>HandMendingWorkbench</defName>
 		<label>hand mending workbench</label>
 		<description>A workbench equipped with all the tools required to mend and repair damaged medieval apparel, armor and weapons. Keep it stocked with mending kits.</description>
@@ -2383,6 +2428,9 @@
 		<size>(2,1)</size>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<uninstallWork>1250</uninstallWork>
 		</building>
@@ -2406,7 +2454,7 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>Repair_table_B1</li>
@@ -2414,7 +2462,7 @@
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>TableMending</defName>
 		<label>mending workbench</label>
 		<description>A workbench equipped with all the tools required to mend and repair damaged items. Requires power and consumes mending kits.</description>
@@ -2455,6 +2503,9 @@
 		<size>(3,1)</size>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<uninstallWork>1250</uninstallWork>
 			<unpoweredWorkTableWorkSpeedFactor>0.6</unpoweredWorkTableWorkSpeedFactor>
@@ -2490,7 +2541,7 @@
 		<designationHotKey>Misc2</designationHotKey>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>Repair_table_C1</li>
@@ -2661,7 +2712,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 -->
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>TableStonecutterNeolithic</defName>
 		<label>stonecutter's bench</label>
 		<description>A work table equipped to cut rough stone into small stone cobbles.</description>
@@ -2700,11 +2751,14 @@
 		<size>(2,1)</size>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<uninstallWork>1450</uninstallWork>
 		</building>
 		<placeWorkers>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</ThingDef>
@@ -2850,7 +2904,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 -->
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>ConcreteMixer</defName>
 		<label>hand concrete mixer</label>
 		<description>A muscle-powered concrete mixer. Concrete is mixed from rubble and sand.</description>
@@ -2893,6 +2947,9 @@
 		<recipes>
 			<li>MixConcrete</li>
 		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<uninstallWork>950</uninstallWork>
 		</building>
@@ -2906,7 +2963,7 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>Concrete_C1</li>
@@ -3033,7 +3090,7 @@
 		</placeWorkers>
 	</ThingDef>
 -->
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>WeaponCraftingWorkTable</defName>
 		<label>weapon crafting workbench</label>
 		<description>A workbench that produces ranged weapons like pistols and rifles. Can smelt weapons down into metal. Requires power.</description>
@@ -3093,6 +3150,9 @@
 				<idlePowerDraw>50</idlePowerDraw>
 			</li>
 		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<uninstallWork>1450</uninstallWork>
 		</building>
@@ -3101,12 +3161,12 @@
 		</researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>AdvWeaponCraftingWorkTable</defName>
 		<label>advanced weapon crafting workbench</label>
 		<description>A workbench that produces advanced ranged weapons like military assault rifles, missile launchers and heavy machine guns. Requires power.</description>
@@ -3166,6 +3226,9 @@
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<uninstallWork>1450</uninstallWork>
 		</building>
@@ -3174,13 +3237,13 @@
 		</researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
 
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>HeavyArmsBench</defName>
 		<label>heavy arms lathe</label>
 		<description>A crafting table that produces ammunition for use with turrets. Can also produce sulfur from iron ore. Requires power.</description>
@@ -3235,6 +3298,9 @@
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Flickable"/>
 		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<uninstallWork>1450</uninstallWork>
 		</building>
@@ -3243,13 +3309,13 @@
 		</researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
 	</ThingDef>
 
 	<!-- ========================= EPOE ==========================-->
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>TablePrimitiveProsthetic</defName>
 		<label>primitive prosthetics bench</label>
 		<description>A workbench equipped for production of basic prosthetics.</description>
@@ -3286,11 +3352,14 @@
 		<size>(3,1)</size>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<uninstallWork>1450</uninstallWork>
 		</building>
 		<placeWorkers>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 		<researchPrerequisites>
@@ -3298,7 +3367,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>TableBasicProsthetic</defName>
 		<label>prosthetics workbench</label>
 		<description>A workbench equipped for production of very simple prosthetics. Requires power.</description>
@@ -3338,6 +3407,9 @@
 		<size>(2,1)</size>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<uninstallWork>850</uninstallWork>
 			<unpoweredWorkTableWorkSpeedFactor>0.6</unpoweredWorkTableWorkSpeedFactor>
@@ -3366,7 +3438,7 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
@@ -3400,9 +3472,15 @@
 		<terrainAffordanceNeeded>SmoothableStone</terrainAffordanceNeeded>
 		<passability>Standable</passability>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
 		</building>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
 	</ThingDef>
 
 </Defs>

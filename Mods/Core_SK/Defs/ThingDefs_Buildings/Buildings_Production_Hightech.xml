@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="BenchBase">
 		<defName>ElectricStove</defName>
 		<label>electric stove</label>
@@ -83,8 +83,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="BenchBase">
+-->
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>ElectricStove_Pro</defName>
 		<label>professional cook stove</label>
 		<thingClass>SK.Building_WorkTable_HeatPushAdvanced</thingClass>
@@ -124,9 +124,6 @@
 		</statBases>
 		<size>(4,1)</size>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<tickerType>Normal</tickerType>
@@ -154,13 +151,16 @@
 			<li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFood</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFoodBulk</li>
 		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<isMealSource>true</isMealSource>
 			<heatPerTickWhileWorking>0.8</heatPerTickWhileWorking>
 		</building>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>PackagedSurvivalMeal</li>
@@ -168,7 +168,7 @@
 		<constructionSkillPrerequisite>11</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>Canningstove</defName>
 		<label>electric pressure cooker</label>
 		<thingClass>SK.Building_WorkTable_HeatPushAdvanced</thingClass>
@@ -206,9 +206,6 @@
 		</statBases>
 		<size>(1,1)</size>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<recipes>
@@ -242,8 +239,11 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<isMealSource>true</isMealSource>
 			<heatPerTickWhileWorking>0.55</heatPerTickWhileWorking>
@@ -254,7 +254,7 @@
 		<constructionSkillPrerequisite>11</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>soylenttable</defName>
 		<label>soylent machine</label>
 		<description>A machine to produce Soylent Green from humanlike corpses. Requires power.</description>
@@ -292,12 +292,12 @@
 		</statBases>
 		<size>(2,1)</size>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(1,0,-1)</interactionCellOffset>
 		<tickerType>Normal</tickerType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -326,7 +326,7 @@
 		</recipes>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>NutrientPaste</li>
@@ -334,7 +334,7 @@
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>TableSawmillElectric</defName>
 		<label>electric sawmill</label>
 		<description>An electric saw for cutting logs into planks and kindling. Requires power.</description>
@@ -371,9 +371,6 @@
 		</statBases>
 		<size>(3,1)</size>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<recipes>
@@ -382,6 +379,9 @@
 			<li>MakeBambooPlanks_Electric</li>
 			<li>MakeKindling_Electric</li>
 		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<heatPerTickWhileWorking>0.25</heatPerTickWhileWorking>
 		</building>
@@ -412,14 +412,14 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>Metals_C1</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef Class="SK.ThingDef_AnimatedWorktable" ParentName="BenchBase">
 		<defName>ElectricSmelter</defName>
 		<label>electric smelting furnace</label>
@@ -516,7 +516,7 @@
 		<designationHotKey>Misc4</designationHotKey>
 		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="BenchBase">
 		<defName>TableMachining</defName>
 		<label>electric machining table</label>
@@ -601,8 +601,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>11</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="BenchBase">
+-->
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>TableElectronics</defName>
 		<label>electronics table</label>
 		<description>A table with tools for crafting electronic chips, robot parts, and the mobile mineral sonar. Requires power.</description>
@@ -639,12 +639,12 @@
 		</statBases>
 		<size>(3,1)</size>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<tickerType>Normal</tickerType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -665,7 +665,7 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>MicroelectronicsBasics</li>
@@ -673,7 +673,7 @@
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>HyperTailoringBench</defName>
 		<label>hyper tailoring bench</label>
 		<description>A sophisticated workbench equipped for tailoring and smithing advanced combat clothing, power armor, enhanced gloves and battle helmets. Requires power.</description>
@@ -712,12 +712,12 @@
 		</statBases>
 		<size>(3,1)</size>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<tickerType>Normal</tickerType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -742,12 +742,12 @@
 		</researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>16</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef Class="SK.ThingDef_AnimatedWorktable" ParentName="BenchBase">
+	<ThingDef Class="SK.ThingDef_AnimatedWorktable" ParentName="SK_WorkTable">
 		<defName>MatterConverter</defName>
 		<label>inorganic matter converter</label>
 		<thingClass>SK.Building_AnimatedWorktable</thingClass>
@@ -793,6 +793,9 @@
 		<size>(3,3)</size>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<recipes>
 			<!-- Into matter -->
 			<li>ConvertResourcesRaw</li>
@@ -840,7 +843,7 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>Super_matter_D1</li>
@@ -849,7 +852,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>AdvToolBench</defName>
 		<label>electric assembling bench</label>
 		<description>An electric table for the assembling of components, wires, mechanisms, and advanced mechanisms. Requires power.</description>
@@ -889,12 +892,12 @@
 		</statBases>
 		<size>(3,1)</size>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<tickerType>Normal</tickerType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -923,11 +926,11 @@
 		</researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>13</constructionSkillPrerequisite>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef Class="SK.ThingDef_AnimatedWorktable" ParentName="BenchBase">
 		<defName>ElectricSmithy</defName>
 		<label>electric smithy</label>
@@ -1008,8 +1011,8 @@
 		</placeWorkers>
 		<constructionSkillPrerequisite>11</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef Class="SK.ThingDef_AnimatedWorktable" ParentName="BenchBase">
+-->
+	<ThingDef Class="SK.ThingDef_AnimatedWorktable" ParentName="SK_WorkTable">
 		<defName>EAF</defName>
 		<label>electric arc furnace</label>
 		<thingClass>SK.Building_AnimatedWorktable</thingClass>
@@ -1105,8 +1108,11 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<heatPerTickWhileWorking>2</heatPerTickWhileWorking>
 		</building>
@@ -1116,7 +1122,7 @@
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>EConcreteMixer</defName>
 		<label>electric concrete mixer</label>
 		<description>An electric concrete mixer. Concrete is mixed from rubble and sand. Requires power.</description>
@@ -1157,11 +1163,11 @@
 		</statBases>
 		<size>(2,1)</size>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<recipes>
 			<li>MixConcreteElectric</li>
 		</recipes>
@@ -1185,14 +1191,14 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>Concrete_C2</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>11</constructionSkillPrerequisite>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="StandardBuilding">
 		<defName>DeepDrill</defName>
 		<label>deep drill</label>
@@ -1268,7 +1274,7 @@
 		</comps>
 		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="StandardBuilding">
 		<defName>Extractor</defName>
 		<label>mine extractor</label>
@@ -1602,7 +1608,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef> -->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="UniversalFermenterBase" Class="UniversalFermenterSK.ThingDef_UF">
 		<defName>BiofuelRefinery</defName>
 		<label>bio refinery</label>
@@ -1656,14 +1662,13 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 
-		<!-- ThingDef_UF fields -->
 		<showProductIcon>true</showProductIcon>
 		<barOffset>(0.0, 0.25)</barOffset>
 		<barScale>(1.0, 1.0)</barScale>
 		<slotsCount>10</slotsCount>
 		<insulation>0.5</insulation>
 	</ThingDef>
-
+-->
 	<!--
 	<ThingDef ParentName="StandardBuilding">
 		<defName>OilRefinery</defName>
@@ -1929,7 +1934,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
 	</ThingDef> -->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="BenchBase">
 		<defName>ElectricCrematorium</defName>
 		<label>crematorium</label>
@@ -2018,8 +2023,8 @@
 		<designationHotKey>Misc8</designationHotKey>
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="BenchBase">
+-->
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>meditable</defName>
 		<label>medical table</label>
 		<description>A table that is used to craft medicine and life support devices. Requires power.</description>
@@ -2058,11 +2063,11 @@
 		</statBases>
 		<size>(3,1)</size>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<recipes>
 			<li>MakeHerbMedicine</li>
 			<li>makemedicine</li>
@@ -2091,12 +2096,12 @@
 		</researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>TableChemlab</defName>
 		<label>Petrochemical Laboratory</label>
 		<description>A Petrochemical Laboratory where you can make byproducts of crude oil. Requires power.</description>
@@ -2136,6 +2141,9 @@
 		<designationCategory>Production</designationCategory>
 		<pathCost>90</pathCost>
 		<interactionCellOffset>(0,0,3)</interactionCellOffset>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<recipes>
 			<li>MakePlastic</li>
 			<li>MakePlasticSulphate</li>
@@ -2175,7 +2183,7 @@
 		</researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
@@ -2375,7 +2383,7 @@
 		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
 	</ThingDef>	-->
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>MechWeaponCraftingWorkTable</defName>
 		<label>futuristic weapon workbench</label>
 		<description>A workbench that produces futuristic Mechanoid weapons, such as laser beam rifles. Requires power.</description>
@@ -2413,12 +2421,12 @@
 		</statBases>
 		<size>(3,1)</size>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<tickerType>Normal</tickerType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -2443,12 +2451,12 @@
 		</researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>18</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>TableSynthetics</defName>
 		<label>synthetic organ assembler</label>
 		<description>A workstation fully equipped with an extremely powerful nano-printer capable of producing synthetic organs and AI chips. Requires power.</description>
@@ -2482,9 +2490,6 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<size>(3,1)</size>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>5500</WorkToBuild>
 			<MaxHitPoints>230</MaxHitPoints>
@@ -2499,6 +2504,9 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
 		<tickerType>Normal</tickerType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -2520,7 +2528,7 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>Prosthesis_making_D3</li>
@@ -2528,7 +2536,7 @@
 		<constructionSkillPrerequisite>16</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>TableBionics</defName>
 		<label>bionics workbench</label>
 		<description>A workbench equipped for production of high-tech bionic prosthetics. Requires power.</description>
@@ -2560,9 +2568,6 @@
 		</costList>
 		<size>(3,1)</size>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<statBases>
 			<WorkToBuild>8500</WorkToBuild>
 			<MaxHitPoints>240</MaxHitPoints>
@@ -2571,6 +2576,9 @@
 			<Mass>500</Mass>
 		</statBases>
 		<tickerType>Normal</tickerType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -2596,12 +2604,12 @@
 		</researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>17</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>UpgradingStation</defName>
 		<label>cybernetics workbench</label>
 		<description>A workbench equipped for production of cybernetic implants. Requires power.</description>
@@ -2640,10 +2648,10 @@
 		</statBases>
 		<size>(3,1)</size>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<tickerType>Normal</tickerType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -2667,7 +2675,7 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>Prosthesis_making_E1</li>
@@ -2676,7 +2684,7 @@
 	</ThingDef>
 
 	<!-- ========================= Robotic assembler ==========================-->
-	<ThingDef Class="SK.ThingDef_AnimatedWorktable" ParentName="BenchBase">
+	<ThingDef Class="SK.ThingDef_AnimatedWorktable" ParentName="SK_WorkTable">
 		<defName>RobAssem</defName>
 		<label>robotic assembler</label>
 		<thingClass>SK.Building_AnimatedWorktable</thingClass>
@@ -2723,12 +2731,12 @@
 		</statBases>
 		<size>(1,1)</size>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<tickerType>Normal</tickerType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -2745,6 +2753,9 @@
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
 		<building>
 			<heatPerTickWhileWorking>0.5</heatPerTickWhileWorking>
 		</building>
@@ -2757,7 +2768,7 @@
 
 	<!-- ========================= Matter fabricator ==========================-->
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="SK_WorkTable">
 		<defName>Matterfab</defName>
 		<label>quantum fabricator</label>
 		<thingClass>Building_WorkTable</thingClass>
@@ -2823,6 +2834,12 @@
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>	
+		<inspectorTabs>
+		  <li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<heatPerTickWhileWorking>1.5</heatPerTickWhileWorking>
 		</building>

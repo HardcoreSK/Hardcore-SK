@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="AmmoBench"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_WorkTableDummy</value>
+	</Operation>
+
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AmmoBench"]</xpath>
 		<value>

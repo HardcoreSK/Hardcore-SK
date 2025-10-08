@@ -79,59 +79,31 @@
 	</ThingDef>
 
 	<!-- Base Worktable -->
-	<!-- Unneeded Abstracts, thingClasses dont do anything
-	<ThingDef Name="WorkTable" ParentName="StandardBuilding" Abstract="True">
+
+	<ThingDef Name="SK_WorkTable" ParentName="BenchBase" Abstract="True">
 		<thingClass>SK.SK_Building_WorkTable</thingClass>
+		<tickerType>Normal</tickerType>
 		<graphicData>
-			<graphicClass>Graphic_Multi</graphicClass>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<building>
-			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-			<buildingTags>
-				<li>Production</li>
-			</buildingTags>
-		</building>
+		<passability>PassThroughOnly</passability>
 		<surfaceType>Item</surfaceType>
-		<size>(1,1)</size>
 		<canOverlapZones>false</canOverlapZones>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
-		<inspectorTabs>
-			<li>ITab_Bills</li>
-		</inspectorTabs>
-		<placeWorkers>
-			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
-		</placeWorkers>
-		<comps>
-			<li Class="CompProperties_ReportWorkSpeed">
-				<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
-			</li>
-		</comps>
 		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+		<building>
+		  <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+		</building>
 	</ThingDef>
 
-	<ThingDef Name="BuildingFueled" ParentName="WorkTable" Abstract="True">
-		<thingClass>SK.WorkTableFueled</thingClass>
-		<tickerType>Normal</tickerType>
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
+	<ThingDef Name="SK_WorkTableFueled" ParentName="SK_WorkTable" Abstract="True">
+		<thingClass>SK.Building_WorkTable_HeatPushAdvanced</thingClass>
 		<inspectorTabs>
 			<li>SK.ITab_Fuel</li>
 		</inspectorTabs>
 	</ThingDef>
 
-	<ThingDef Name="WorkTableFueled" ParentName="WorkTable" Abstract="True">
-		<thingClass>SK.WorkTableFueled</thingClass>
-		<tickerType>Normal</tickerType>
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<inspectorTabs>
-			<li>SK.ITab_Fuel</li>
-		</inspectorTabs>
-	</ThingDef>
--->
 	<!-- Base Hopper -->
 	<!-- Unneeded
 	<ThingDef Name="HopperBase" ParentName="StandardBuilding" Abstract="True">
