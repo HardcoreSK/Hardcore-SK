@@ -170,7 +170,7 @@
 
 
 	<!-- =====AI manned turrets===== -->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="TurretBase">
 		<defName>Turret_MiniTurret</defName>
 		<label>sentry light turret</label>
@@ -227,7 +227,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
-
+-->
 	<!-- <ThingDef ParentName="TurretBase">
 		<defName>Turret_Blaster</defName>
 		<label>sentry blaster turret</label>
@@ -505,7 +505,7 @@
 	</ThingDef>
 
 	<!--=============== 81mm mortar ===============-->
-
+<!--
 	<ThingDef Name="MortarBase" ParentName="BuildingBase" Abstract="True">
 		<label>81mm artillery mortar</label>
 		<description>A mortar that launches explosive shells. Must be manned.</description>
@@ -526,7 +526,6 @@
 		</graphicData>
 		<techLevel>Industrial</techLevel>
 		<castEdgeShadows>false</castEdgeShadows>
-		<!--<stealable>false</stealable>-->
 		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<altitudeLayer>Building</altitudeLayer>
 		<hasInteractionCell>True</hasInteractionCell>
@@ -583,8 +582,8 @@
 			<li>Mortars</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
-	</ThingDef>
-
+	</ThingDef>-->
+<!-- DefOverwrite
 	<ThingDef ParentName="MortarBase">
 		<defName>Turret_Mortar</defName>
 		<building>
@@ -598,7 +597,7 @@
 		<designationHotKey>Misc3</designationHotKey>
 		<designationCategory>Security</designationCategory>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="MinifiedTurretBase">
 		<defName>MinifiedTurret_81mmMortar</defName>
 		<label>Undeployed 81mm Mortar</label>
@@ -607,7 +606,7 @@
 			<Bulk>38</Bulk>
 		</statBases>
 	</ThingDef>
-
+<!--
 	<ThingDef ParentName="BaseGun_Turret">
 		<defName>Artillery_Mortar</defName>
 		<label>81mm mortar</label>
@@ -627,7 +626,6 @@
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
 				<reloadTime>7.2</reloadTime>
-				<!-- <spawnUnloaded>true</spawnUnloaded> -->
 				<ammoSet>AmmoSet_81mmMortarShell</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_Charges">
@@ -643,14 +641,12 @@
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
 				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-				<!--<forcedMissRadius>6</forcedMissRadius>-->
 				<circularError>1</circularError>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_81mmMortarShell_HE</defaultProjectile>
 				<warmupTime>3.00</warmupTime>
 				<minRange>32</minRange>
 				<range>280</range>
-				<!--<requireLineOfSight>false</requireLineOfSight>-->
 				<burstShotCount>1</burstShotCount>
 				<soundCast>Mortar_LaunchA</soundCast>
 				<muzzleFlashScale>16</muzzleFlashScale>
@@ -661,7 +657,7 @@
 			</li>
 		</verbs>
 	</ThingDef>
-
+-->
 	<!--=============== M240B ===============-->
 
 	<!-- <ThingDef ParentName="TurretMannedBase">

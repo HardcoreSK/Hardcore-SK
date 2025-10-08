@@ -44,6 +44,7 @@
 	</ThingDef>
 	
 	<!-- BASIC BASIN -->
+	<!-- DefOverwrite
 	<ThingDef ParentName="StandardBuilding">
 		<defName>HydroponicsBasin</defName>
 		<label>hydroponic basin</label>
@@ -103,7 +104,7 @@
 		<designationCategory>Production</designationCategory>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
-	
+	-->
 	<!-- ADVANCED HYDROPONICS -->
 	<ThingDef ParentName="StandardBuilding">
 		<defName>NewHydroponicsBasin</defName>
