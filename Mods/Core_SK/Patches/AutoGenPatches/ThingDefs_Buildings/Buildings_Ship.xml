@@ -1,54 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Patch>
 
-<!-- 	<Operation Class="PatchOpeationAdd">
-		<xpath>Defs</xpath>
-		<value>
-			<ThingDef Name="ShipBase" ParentName="BuildingBase" Abstract="True">
-				<category>Building</category>
-				<canOverlapZones>false</canOverlapZones>
-				<altitudeLayer>Building</altitudeLayer>
-				<passability>Impassable</passability>
-				<fillPercent>1</fillPercent>
-				<pathCost>70</pathCost>
-				<blockLight>true</blockLight>
-				<tickerType>Normal</tickerType>
-				<designationCategory>Ship</designationCategory>
-				<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-				<building>
-					<shipPart>true</shipPart>
-					<isEdifice>true</isEdifice>
-				</building>
-				<comps>
-					<li Class="CompProperties_ShipPart" />
-				</comps>
-				<placeWorkers>
-					<li>PlaceWorker_NotUnderRoof</li>
-				</placeWorkers>
-			</ThingDef>
-		</value>
-	</Operation> -->
-
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ThingDef[defName="Ship_Beam" or defName="Ship_CryptosleepCasket" or defName="Ship_ComputerCore" or defName="Ship_Reactor" or defName="Ship_Engine" or defName="Ship_SensorCluster" ]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.ShipBaseDummy</value>
-	</Operation>
-
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Ship_Beam"]</xpath>
 		<value>
-			<blockWind>true</blockWind>
 			<statBases Merge="True">
 				<WorkToBuild>15000</WorkToBuild>
 				<Flammability>1.0</Flammability>
 			</statBases>
-			<comps>
-				<li Class="CompProperties_Power">
-					<compClass>CompPowerTransmitter</compClass>
-					<transmitsPower>true</transmitsPower>
-				</li>
-			</comps>
 			<stuffCategories>
 				<li>SolidMetallic</li>
 			</stuffCategories>
@@ -66,9 +25,7 @@
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Ship_CryptosleepCasket"]</xpath>
 		<value>
-			<drawerType>MapMeshAndRealTime</drawerType>
 			<pathCost>70</pathCost>
-			<fillPercent>0.5</fillPercent>
 			<statBases Merge="True">
 				<WorkToBuild>11000</WorkToBuild>
 			</statBases>
@@ -77,14 +34,20 @@
 					<compClass>CompPowerTransmitter</compClass>
 					<transmitsPower>true</transmitsPower>
 				</li>
+				<li Class="CompProperties_ShipPart"/>
 				<li Class="CompProperties_Explosive">
 					<explosiveRadius>2.66</explosiveRadius>
 					<explosiveDamageType>Flame</explosiveDamageType>
-				</li>
+				</li><!-- Once we have the texture, this entire <comps> will be gone
+				<li Class="CompProperties_EmptyStateGraphic">
+					<graphicData>
+					  <texPath>Things/Building/Ship/ShipCryptosleepCasketOpenDoor</texPath>
+					  <graphicClass>Graphic_Multi</graphicClass>
+					  <drawSize>(1, 2)</drawSize>
+					</graphicData>
+					<alwaysDrawParent>true</alwaysDrawParent>
+				</li>-->
 			</comps>
-			<placeWorkers>
-				<li>PlaceWorker_HeadOnShipBeam</li>
-			</placeWorkers>
 			<stuffCategories>
 				<li>SolidMetallic</li>
 			</stuffCategories>
@@ -106,12 +69,6 @@
 				<WorkToBuild>21000</WorkToBuild>
 				<Flammability>1.0</Flammability>
 			</statBases>
-			<comps>
-				<li Class="CompProperties_Power">
-					<compClass>CompPowerTransmitter</compClass>
-					<transmitsPower>true</transmitsPower>
-				</li>
-			</comps>
 			<stuffCategories>
 				<li>RareMetallic</li>
 			</stuffCategories>
@@ -144,17 +101,6 @@
 				<AdvMechanism>8</AdvMechanism>
 				<Microchips>5</Microchips>
 			</costList>
-			<comps>
-				<li Class="CompProperties_Power">
-					<compClass>CompPowerTrader</compClass>
-					<basePowerConsumption>-1000</basePowerConsumption>
-					<transmitsPower>true</transmitsPower>
-				</li>
-				<li Class="CompProperties_Hibernatable">
-					<incidentTargetWhileStarting>Map_RaidBeacon</incidentTargetWhileStarting>
-					<sustainerActive>ShipReactor_Ambience</sustainerActive>
-				</li>
-			</comps>
 			<constructionSkillPrerequisite>19</constructionSkillPrerequisite>
 		</value>
 	</Operation>
@@ -166,12 +112,6 @@
 				<WorkToBuild>27000</WorkToBuild>
 				<Flammability>1.0</Flammability>
 			</statBases>
-			<comps>
-				<li Class="CompProperties_Power">
-					<compClass>CompPowerTransmitter</compClass>
-					<transmitsPower>true</transmitsPower>
-				</li>
-			</comps>
 			<stuffCategories>
 				<li>SolidMetallic</li>
 			</stuffCategories>
@@ -193,12 +133,6 @@
 				<WorkToBuild>25000</WorkToBuild>
 				<Flammability>1.0</Flammability>
 			</statBases>
-			<comps>
-				<li Class="CompProperties_Power">
-					<compClass>CompPowerTransmitter</compClass>
-					<transmitsPower>true</transmitsPower>
-				</li>
-			</comps>
 			<costList>
 				<MagneticMaterial>15</MagneticMaterial>
 				<ComponentUltra>6</ComponentUltra>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="PsychicEmanator"]</xpath>
+    <value>
+      <costList>
+        <BiosyntheticMaterial>10</BiosyntheticMaterial>
+        <ComponentSpacer>2</ComponentSpacer>
+        <BioMicrochips>1</BioMicrochips>
+      </costList>
+      <statBases Merge="true">
+        <MarketValue>2500</MarketValue>
+        <Flammability>1.0</Flammability>
+        <Beauty>-4</Beauty>
+        <WorkToBuild>11000</WorkToBuild>
+      </statBases>
+      <thingSetMakerTags>
+        <li>RewardStandardHighFreq</li> <!-- Vanilla is RewardStandardCore, HSK Review? -->
+      </thingSetMakerTags>
+      <pathCost>25</pathCost>
+      <building Merge="true">
+        <uninstallWork>450</uninstallWork>
+      </building>
+      <specialDisplayRadius>15</specialDisplayRadius>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="VanometricPowerCell"]</xpath>
+    <value>
+      <pathCost>70</pathCost>
+      <statBases Merge="true">
+        <MarketValue>15000</MarketValue>
+      </statBases>
+      <costList>
+        <MagneticMaterial>17</MagneticMaterial>
+        <ComponentSpacer>4</ComponentSpacer>
+        <BioMicrochips>2</BioMicrochips>
+      </costList>
+      <comps Merge="true">
+        <li Class="CompProperties_Power">
+          <compClass>CompPowerPlant</compClass>
+          <basePowerConsumption>-1400</basePowerConsumption>
+          <transmitsPower>true</transmitsPower>
+        </li>
+      </comps>
+      <thingSetMakerTags>
+        <li>RewardStandardHighFreq</li> <!-- Vanilla is RewardStandardCore, HSK Review? -->
+      </thingSetMakerTags>
+      <building>
+        <uninstallWork>350</uninstallWork>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="InfiniteChemreactor"]</xpath>
+    <value>
+      <costList>
+        <Glass>30</Glass>
+        <BiosyntheticMaterial>15</BiosyntheticMaterial>
+        <ComponentSpacer>3</ComponentSpacer>
+        <BioMicrochips>1</BioMicrochips>
+      </costList>
+      <statBases Merge="true">
+        <MarketValue>4000</MarketValue>
+        <WorkToBuild>11000</WorkToBuild>
+      </statBases>
+      <thingSetMakerTags>
+        <li>RewardStandardHighFreq</li> <!-- Vanilla is RewardStandardCore, HSK Review? -->
+      </thingSetMakerTags>
+      <building Merge="true">
+        <uninstallWork>450</uninstallWork>
+      </building>
+    </value>
+  </Operation>
+
+</Patch>

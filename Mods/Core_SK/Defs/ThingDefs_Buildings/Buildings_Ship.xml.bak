@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!-- Beam -->
+	<!-- Beam 
 
 	<ThingDef Name="ShipBase" ParentName="BuildingBase" Abstract="True">
 		<category>Building</category>
@@ -25,8 +25,8 @@
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
 	</ThingDef>
-
-	<!-- <ThingDef ParentName="ShipBase">
+--><!--  DefOverwrite
+	<ThingDef ParentName="ShipBase">
 		<defName>Ship_Beam</defName>
 		<label>ship structural beam</label>
 		<description>A structural beam around which a starship can be constructed. Includes all the necessary conduits and transit pipes for communications, power, and materials transport.</description>
