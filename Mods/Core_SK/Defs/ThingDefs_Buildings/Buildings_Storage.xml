@@ -1597,11 +1597,11 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
         <graphics>
             <li>
                 <graphicData>
-                    <texPath>Things/Building/Storage/StorageRackVile</texPath>
+                    <texPath>Things/Building/Storage/Shelf</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.7,1.8)</drawSize>
 					<drawRotated>false</drawRotated>
-                </graphicData>
+                </graphicData><!--
 				<graphicDatas>
 					<li>
 						<texPath>Things/Building/Storage/StorageRackVile_Top</texPath>
@@ -1613,7 +1613,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 						<altitudeLayer>ItemImportant</altitudeLayer>
 						<drawOffset>(0,1.2,0)</drawOffset>
 					</li>
-				</graphicDatas>
+				</graphicData>-->
             </li>
         </graphics>
 		<showContainedItems>true</showContainedItems>
@@ -1623,11 +1623,48 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 					<rows>
 						<r0>
 							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.5,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.5)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.5)</stackOffsetWest>
+							<drawOffset>(0.25,0,0.4)</drawOffset>
+							<drawOffsetEast>(-0.15,0.1,0.45)</drawOffsetEast>
+							<drawOffsetWest>(-0.15,0.1,0.45)</drawOffsetWest>
+							<drawScale>0.9</drawScale>
+							<rotation>0</rotation>
+						</r0>					
+					</rows>
+				</c0>
+				<c1>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.5,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.5)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.5)</stackOffsetWest>
+							<drawOffset>(-0.55,0.05,0.05)</drawOffset>
+							<drawOffsetEast>(0.15,0.1,-0.8)</drawOffsetEast>
+							<drawOffsetWest>(0.15,0.1,-0.8)</drawOffsetWest>
+							<drawScale>0.9</drawScale>
+							<rotation>0</rotation>
+						</r0>
+					</rows>
+				</c1>
+			</columns>
+		</itemGraphics>
+		<!--<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast> (distance between horizontal,?,distance between vertical) -->
+		<!--<drawOffsetEast>(-0.15,2.05,0.45)</drawOffsetEast> (x -left & right, y - layer, z - up & down) -->
+		<!-- For double layer shelf
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
 							<stackOffset>(0.233,0,0)</stackOffset>
-							<stackOffsetEast>(0,-0.02,0.185)</stackOffsetEast>
+							<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast>
 							<stackOffsetWest>(0,-0.02,0.185)</stackOffsetWest>
 							<drawOffset>(0.09,2.05,0.45)</drawOffset>
-							<drawOffsetEast>(0,2.05,0.65)</drawOffsetEast>
+							<drawOffsetEast>(-0.15,2.05,0.45)</drawOffsetEast>
 							<drawOffsetWest>(0,2.05,0.65)</drawOffsetWest>
 							<drawScale>0.9</drawScale>
 							<rotation>0</rotation>
@@ -1639,10 +1676,10 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 						<r0>
 							<stackBehaviour>Stack</stackBehaviour>
 							<stackOffset>(0.233,0,0)</stackOffset>
-							<stackOffsetEast>(0,-0.02,0.185)</stackOffsetEast>
+							<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast>
 							<stackOffsetWest>(0,-0.02,0.185)</stackOffsetWest>
 							<drawOffset>(-0.91,0,-0.10)</drawOffset>
-							<drawOffsetEast>(0,0.1,-0.95)</drawOffsetEast>
+							<drawOffsetEast>(0.1,0.1,-0.95)</drawOffsetEast>
 							<drawOffsetWest>(0,0.1,-0.95)</drawOffsetWest>
 							<drawScale>0.9</drawScale>
 							<rotation>0</rotation>
@@ -1650,7 +1687,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 					</rows>
 				</c1>
 			</columns>
-		</itemGraphics>
+		</itemGraphics>-->
 	</AdaptiveStorage.GraphicsDef>
 	
 	<!--Clothing Rack-->
