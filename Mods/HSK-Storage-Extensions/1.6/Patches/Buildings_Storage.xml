@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Shelf"]</xpath>
+		<value>
+			<li Class="HSK_Storage_Extensions.StorageDefExtension">
+				<stowingProperties>
+					<baseStowTicks>25</baseStowTicks> <!-- Default: 0 -->
+					<minimumStowTicks>25</minimumStowTicks> <!-- Default: 0 -->
+					<additionalTicksPerStoredStack>20</additionalTicksPerStoredStack> <!-- Default: 0 -->
+					<additionalTicksPerStoredDef>40</additionalTicksPerStoredDef> <!-- Default: 0 -->
+					<quickToStowItems>
+						<categories>
+						  <li>Manufactured</li>
+						  <li>ResourcesRaw</li>
+						</categories>
+						<thingDefs>
+						  <li>Steel</li>
+						  <li>ComponentIndustrial</li>
+						</thingDefs>
+						<specialFiltersToAllow/>
+						<disallowedThingDefs>
+						  <li>SandResource</li>
+						  <li>CrushedStone</li>
+						</disallowedThingDefs>
+						<disallowedSpecialFilters/>
+					</quickToStowItems>
+					<slowToStowItems>
+						<categories>
+						  <li>FoodRaw</li>
+						</categories>
+						<thingDefs>
+						  <li>SandResource</li>
+						  <li>CrushedStone</li>
+						</thingDefs>
+						<specialFiltersToAllow/>
+						<disallowedThingDefs/>
+						<disallowedSpecialFilters/>
+					</slowToStowItems>
+					<slowStowDurationFactor>1.5</slowStowDurationFactor> <!-- Default: 1.5 -->
+					<quickStowDurationFactor>0.05</quickStowDurationFactor> <!-- Default: 0.05 -->
+				</stowingProperties>
+				<retrievalProperties/> <!-- Not Yet Implemented -->
+			</li>
+		</value>
+	</Operation>
+	
+</Patch>
