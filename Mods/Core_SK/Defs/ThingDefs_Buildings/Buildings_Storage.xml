@@ -174,7 +174,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 				</filter>
 			</defaultStorageSettings>
 		</building>
-		<designationCategory>LWM_DS_Storage</designationCategory>
+		<designationCategory>ASFstorage</designationCategory>
 	</ThingDef>
 
 	<ThingDef Name="LWM_DeepStorage_nomini" ParentName="StandardBuilding" Abstract="true">
@@ -210,14 +210,14 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 				</filter>
 			</defaultStorageSettings>
 		</building>
-		<designationCategory>LWM_DS_Storage</designationCategory>
+		<designationCategory>ASFstorage</designationCategory>
 	</ThingDef>
 
 	<!-- GENERAL STORAGE - Deteriorates/Indoors -->
 
 	<!--Pallet-->
-	<ThingDef Name="LWM_Pallet" ParentName="LWM_DeepStorage">
-		<defName>LWM_Pallet</defName>
+	<ThingDef Name="ASF_Pallet" ParentName="AdaptiveStorageMinifiableBase">
+		<defName>SK_Pallet</defName>
 		<label>Pallet</label>
 		<description>A cheap, flat pallet for packing things. Does not protect against the weather. Difficult to manage if storing a variety of items.</description>
 		<graphicData>
@@ -248,6 +248,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			<ComponentMedieval>3</ComponentMedieval>
 		</costList>
 		<building>
+			<maxItemsInCell>6</maxItemsInCell>
 			<preventDeteriorationOnTop>false</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>false</ignoreStoredThingsBeauty>
 			<defaultStorageSettings>
@@ -274,26 +275,126 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 					</disallowedCategories>
 				</filter>
 			</fixedStorageSettings>
-		</building>
+		</building><!--
 		<comps>
 			<li Class="LWM.DeepStorage.Properties" >
 				<maxNumberStacks>6</maxNumberStacks>
 				<minTimeStoringTakes>25</minTimeStoringTakes>
 				<additionalTimeEachStack>22</additionalTimeEachStack>
 				<additionalTimeEachDef>20</additionalTimeEachDef>
-				<!--<timeStoringTakes>800</timeStoringTakes>-->
 				<overlayType>SumOfAllItems</overlayType>
 				<showContents>true</showContents>
 			</li>
-		</comps>
+		</comps>-->
 		<researchPrerequisites>
 			<li>Storage_B1</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 	</ThingDef>
 	
+    <AdaptiveStorage.GraphicsDef>
+		<defName>SK_PalletASF</defName>
+		<targetDef>SK_Pallet</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/Pallet2x1</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2.4,2.3)</drawSize>
+					<shadowData>
+						<volume>(1.8, 0.2, 0.7)</volume>
+					</shadowData>
+                </graphicData><!--
+				<graphicDatas>
+					<li>
+						<texPath>Things/Building/Storage/StorageRackVile_Top</texPath>
+						<graphicClass>Graphic_Multi</graphicClass>
+						<shaderType>CutoutComplex</shaderType>
+						<drawSize>(2.7,1.8)</drawSize>
+						<drawRotated>false</drawRotated>
+						<renderQueue>2950</renderQueue>
+						<altitudeLayer>ItemImportant</altitudeLayer>
+						<drawOffset>(0,1.2,0)</drawOffset>
+					</li>
+				</graphicData>-->
+            </li>
+        </graphics>
+		<showContainedItems>true</showContainedItems>
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.25,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.25)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.25)</stackOffsetWest>
+							<drawOffset>(0,0,0.35)</drawOffset>
+							<drawOffsetEast>(-0.15,0.1,0.05)</drawOffsetEast>
+							<drawOffsetWest>(-0.15,0.1,0.05)</drawOffsetWest>
+							<drawScale>0.9</drawScale>
+							<rotation>0</rotation>
+						</r0>					
+					</rows>
+				</c0>
+				<c1>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.25,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.25)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.25)</stackOffsetWest>
+							<drawOffset>(-0.9,0.05,0.0)</drawOffset>
+							<drawOffsetEast>(0.15,0.1,-1.05)</drawOffsetEast>
+							<drawOffsetWest>(0.15,0.1,-1.05)</drawOffsetWest>
+							<drawScale>0.9</drawScale>
+							<rotation>0</rotation>
+						</r0>
+					</rows>
+				</c1>
+			</columns>
+		</itemGraphics>
+		<!--<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast> (distance between horizontal,?,distance between vertical) -->
+		<!--<drawOffsetEast>(-0.15,2.05,0.45)</drawOffsetEast> (x -left & right, y - layer, z - up & down) -->
+		<!-- For double layer shelf
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.233,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.185)</stackOffsetWest>
+							<drawOffset>(0.09,2.05,0.45)</drawOffset>
+							<drawOffsetEast>(-0.15,2.05,0.45)</drawOffsetEast>
+							<drawOffsetWest>(0,2.05,0.65)</drawOffsetWest>
+							<drawScale>0.9</drawScale>
+							<rotation>0</rotation>
+						</r0>					
+					</rows>
+				</c0>
+				<c1>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.233,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.185)</stackOffsetWest>
+							<drawOffset>(-0.91,0,-0.10)</drawOffset>
+							<drawOffsetEast>(0.1,0.1,-0.95)</drawOffsetEast>
+							<drawOffsetWest>(0,0.1,-0.95)</drawOffsetWest>
+							<drawScale>0.9</drawScale>
+							<rotation>0</rotation>
+						</r0>
+					</rows>
+				</c1>
+			</columns>
+		</itemGraphics>-->
+	</AdaptiveStorage.GraphicsDef>
+	
 	<!--Small Pallet-->
-	<ThingDef ParentName="LWM_DeepStorage">
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<defName>PalletSmall</defName>
 		<label>Small Pallet</label>
 		<description>A cheap, flat pallet for packing things. Does not protect against the weather. Difficult to manage if storing a variety of items.</description>
@@ -324,6 +425,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			<ComponentMedieval>2</ComponentMedieval>
 		</costList>
 		<building>
+			<maxItemsInCell>6</maxItemsInCell>
 			<defaultStorageSettings>
 				<priority>Preferred</priority>
 			</defaultStorageSettings>
@@ -351,23 +453,56 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 					</disallowedCategories>
 				</filter>
 			</fixedStorageSettings>
-		</building>
+		</building><!--
 		<comps>
 			<li Class="LWM.DeepStorage.Properties" >
 				<maxNumberStacks>6</maxNumberStacks>
 				<minTimeStoringTakes>25</minTimeStoringTakes>
 				<additionalTimeEachStack>22</additionalTimeEachStack>
 				<additionalTimeEachDef>20</additionalTimeEachDef>
-				<!--<timeStoringTakes>800</timeStoringTakes>-->
 				<overlayType>SumOfAllItems</overlayType>
 				<showContents>true</showContents>
 			</li>
-		</comps>
+		</comps>-->
 		<researchPrerequisites>
 			<li>Storage_B1</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 	</ThingDef>
+	
+    <AdaptiveStorage.GraphicsDef>
+		<defName>PalletSmallASF</defName>
+		<targetDef>PalletSmall</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/PalletSmall</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.5,1.5)</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.2, 0.7)</volume>
+					</shadowData>
+                </graphicData>
+            </li>
+        </graphics>
+		<showContainedItems>true</showContainedItems>
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.2,0,0)</stackOffset>
+							<drawOffset>(-0.15,0,0.1)</drawOffset>
+							<drawOffsetWest>(-0.1,0,0.1)</drawOffsetWest>
+							<drawScale>0.9</drawScale>
+							<stackOffsetFactor>0.5</stackOffsetFactor>
+						</r0>					
+					</rows>
+				</c0>
+			</columns>
+		</itemGraphics>
+	</AdaptiveStorage.GraphicsDef>
 	
 	<!--Pallet Rack-->
 	<ThingDef ParentName="LWM_DeepStorage">
@@ -1432,7 +1567,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			<li>Animal_A2</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
-		<designationCategory>LWM_DS_Storage</designationCategory>
+		<designationCategory>ASFstorage</designationCategory>
 	</ThingDef>
 	
 	<!--Hamper-->

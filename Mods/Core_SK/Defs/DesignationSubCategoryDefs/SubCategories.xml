@@ -441,12 +441,12 @@
 		<description>Uncategorized industrial storage which doesn't protect contents from the elements.</description>
 		<defNames>
 			<li>PalletSmall</li>
-			<li>LWM_Pallet</li>
-			<li>LWM_DeepStorage_Skip</li>
-			<li>LWM_VeryBigShelf</li>
+			<li>SK_Pallet</li>
+			<li>SK_DeepStorage_Skip</li>
+			<li>SK_VeryBigShelf</li>
 			<li>PalletRack</li>
 		</defNames>
-		<designationCategory>LWM_DS_Storage</designationCategory>
+		<designationCategory>ASFstorage</designationCategory>
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
 
@@ -455,11 +455,13 @@
 		<label>Uncovered Storage</label>
 		<description>General indoor storage.</description>
 		<defNames>
-			<li>LWM_BigShelf</li> <!-- Wall shelf -->
+			<li>Shelf</li>
+			<li>ShelfSmall</li>
+			<li>SK_BigShelf</li> <!-- Wall shelf -->
 			<li>DisplayCase</li>
 			<li>BinRack</li>
 		</defNames>
-		<designationCategory>LWM_DS_Storage</designationCategory>
+		<designationCategory>ASFstorage</designationCategory>
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
 
@@ -470,13 +472,13 @@
 		<defNames>
 			<li>Pot</li>
 			<li>RootCellar</li>
-			<li>LWM_Meat_Hook</li>
+			<li>SK_Meat_Hook</li>
 			<li>TrayRackSingle</li>
 			<li>BarShelf</li>
-			<li>LWM_Medicine_Cabinet</li>
+			<li>SK_Medicine_Cabinet</li>
 			<li>FoodDisplayCounter</li>
 		</defNames>
-		<designationCategory>LWM_DS_Storage</designationCategory>
+		<designationCategory>ASFstorage</designationCategory>
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
 
@@ -486,11 +488,9 @@
 		<description>Haulers carry apparel here for storage.</description>
 		<defNames>
 			<li>Commode</li>
-			<li>ShelfSmall</li>
-			<li>Shelf</li> <!-- Clothing Rack -->
 			<li>TextileRack</li>
 		</defNames>
-		<designationCategory>LWM_DS_Storage</designationCategory>
+		<designationCategory>ASFstorage</designationCategory>
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
 
@@ -499,13 +499,13 @@
 		<label>arsenal</label>
 		<description>Stores and safeguard weapons and ammo.</description>
 		<defNames>
-			<li>LWM_WeaponsCabinet</li>
+			<li>SK_WeaponsCabinet</li>
 			<li>Storage_HazMatContainer</li>
 			<li>Storage_ExplosiveContainer</li>
-			<li>LWM_WeaponsLocker</li>
+			<li>SK_WeaponsLocker</li>
 			<li>ClutterLockerA</li>
 		</defNames>
-		<designationCategory>LWM_DS_Storage</designationCategory>
+		<designationCategory>ASFstorage</designationCategory>
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
 
@@ -516,9 +516,9 @@
 		<defNames>
 			<li>FabricHamperSingle</li>
 			<li>FeedingBowl</li>
-			<li>LWM_Hayloft</li>
+			<li>SK_Hayloft</li>
 		</defNames>
-		<designationCategory>LWM_DS_Storage</designationCategory>
+		<designationCategory>ASFstorage</designationCategory>
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
 
@@ -534,7 +534,7 @@
 			<li>IndustrialChest</li>
 			<li>Shed</li>
 		</defNames>
-		<designationCategory>LWM_DS_Storage</designationCategory>
+		<designationCategory>ASFstorage</designationCategory>
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
 
@@ -549,7 +549,7 @@
 			<li>RimFridge_SingleWallRefrigerator</li>
 			<li>RimFridge_QuadRefrigerator</li>
 		</defNames>
-		<designationCategory>LWM_DS_Storage</designationCategory>
+		<designationCategory>ASFstorage</designationCategory>
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
 
