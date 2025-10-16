@@ -272,11 +272,13 @@
 			<deconstructible>true</deconstructible>
 		</building>
 		<comps>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>150</basePowerConsumption>
 			</li>
+			<li Class="CompProperties_Flickable" />
 		</comps>
 		<uiIconPath>Things/Building/AgrarianIcon</uiIconPath>
 		<graphicData>
