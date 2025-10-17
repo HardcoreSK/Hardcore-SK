@@ -280,6 +280,11 @@
 			</li>
 			<li Class="CompProperties_Flickable" />
 		</comps>
+        <modExtensions>
+            <li Class="SK.Events.EarthquakeExtension">
+                <immunityToDamage>true</immunityToDamage>
+            </li>
+        </modExtensions>
 		<uiIconPath>Things/Building/AgrarianIcon</uiIconPath>
 		<graphicData>
 			<texPath>Things/Building/AgrarianAtlas</texPath>
