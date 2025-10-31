@@ -166,4 +166,29 @@
 			</modExtensions>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="TrapIED_HighExplosive"]/costList</xpath>
+		<value>
+			<costList>
+				<FSX>6</FSX>
+				<ElectronicComponents>3</ElectronicComponents>
+				<ComponentIndustrial>2</ComponentIndustrial>
+				<Mechanism>2</Mechanism>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="TrapIED_Incendiary"]/costList</xpath>
+		<value>
+			<costList>
+				<Napalm>10</Napalm>
+				<Powder>3</Powder>
+				<ElectronicComponents>3</ElectronicComponents>
+				<Mechanism>1</Mechanism>
+			</costList>
+		</value>
+	</Operation>
+	
 </Patch>
