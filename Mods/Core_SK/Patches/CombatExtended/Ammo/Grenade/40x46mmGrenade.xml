@@ -476,11 +476,11 @@
 				</li>
 				<li>
 					<filter>
-						<categories>
-							<li>Chemical</li>
-						</categories>
+						<thingDefs>
+							<li>Wastepack</li>
+						</thingDefs>
 					</filter>
-					<count>6</count>
+					<count>30</count>
 				</li>
 				<li>
 					<filter>
@@ -521,6 +521,7 @@
 		<value>
 			<li>FSX</li>
 			<li>Powder</li>
+			<li>Wastepack</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
@@ -533,7 +534,6 @@
 				<li>SLDBar</li>
 				<li>USLDBar</li>
 				<li>HeavyBar</li>
-				<li>Chemical</li>
 			</categories>
 		</value>
 	</Operation>

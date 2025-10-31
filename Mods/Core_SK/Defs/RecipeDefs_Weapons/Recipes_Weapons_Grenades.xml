@@ -234,6 +234,75 @@
         <researchPrerequisite>Grenade_C1</researchPrerequisite>
     </RecipeDef>
 
+	<RecipeDef ParentName="GrenadeRecipeBase" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>MakeToxGrenade</defName>
+		<label>make tox grenades x5</label>
+		<description>Craft 5 tox grenades.</description>
+		<jobString>Making tox grenades.</jobString>
+		<researchPrerequisite>ToxGas</researchPrerequisite>
+		<workAmount>3200</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			  </categories>
+			</filter>
+			<count>12</count>
+		  </li>
+		  <li>
+			<filter>
+			  <categories>
+				<li>HeavyBar</li>
+			  </categories>
+			</filter>
+			<count>4</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Wastepack</li>
+			  </thingDefs>
+			</filter>
+			<count>15</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+			  </thingDefs>
+			</filter>
+			<count>3</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentIndustrial</li>
+			  </thingDefs>
+			</filter>
+			<count>2</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>ComponentIndustrial</li>
+			<li>FSX</li>
+			<li>Powder</li>
+			<li>Wastepack</li>
+		  </thingDefs>
+		  <categories>
+			<li>SLDBar</li>
+			<li>USLDBar</li>
+			<li>HeavyBar</li>
+		  </categories>
+		</fixedIngredientFilter>
+		<products>
+			<Weapon_GrenadeTox>5</Weapon_GrenadeTox>
+		</products>
+	</RecipeDef>
+
     <RecipeDef ParentName="RangedWeaponRecipeBase">
         <defName>MakeFlashbangGrenades</defName>
         <label>make shock grenades</label>
