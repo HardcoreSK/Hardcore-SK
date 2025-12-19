@@ -11,18 +11,24 @@
 	  </value>
 	</Operation>	
 -->
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Plant_Nutrifungus"]/plant/cavePlantWeight</xpath>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Plant_Timbershroom"]/plant</xpath>
 		<value>
 			<wildClusterRadius>3</wildClusterRadius>
 			<wildClusterWeight>3</wildClusterWeight>
 			<cavePlantWeight>0.6</cavePlantWeight>
+			<sowTags Merge="true">
+				<li>Fungiponics</li>
+			</sowTags>
 		</value>
 	</Operation>
 
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Plant_Timbershroom"]/plant</xpath>
 		<value>
+			<harvestedThingDef>WoodLog</harvestedThingDef>
+			<blockAdjacentSow>true</blockAdjacentSow>
 			<sowResearchPrerequisites>
 				<li>Fungiponics_A1</li>
 			</sowResearchPrerequisites>
