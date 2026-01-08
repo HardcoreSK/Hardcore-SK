@@ -5,7 +5,7 @@
 		<xpath>Defs/ThingDef[defName="Pila" and @Class="CombatExtended.AmmoDef"]</xpath>
 		<value>
 			<stackLimit>75</stackLimit>
-			<thingCategories>
+			<thingCategories Inherit="False">
 				<li>ThrownRanged</li>
 			</thingCategories>
 			<weaponClasses>
