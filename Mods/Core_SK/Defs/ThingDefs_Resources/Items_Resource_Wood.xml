@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="SK_ResourceVerbBase">
+	<ThingDef ParentName="SK_ResourceBase">
 		<defName>WoodLog</defName>
 		<label>wood log</label>
 		<description>Wood from trees or other fibrous plants. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch. It can be processed into planks or kindling.</description>
@@ -9,7 +9,6 @@
 			<texPath>Things/Item/WoodLogStacked</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		<equippedAngleOffset>-20</equippedAngleOffset>
 		<soundInteract>Wood_Drop</soundInteract>
 		<soundDrop>Wood_Drop</soundDrop>
 		<tickerType>Rare</tickerType>
@@ -74,27 +73,10 @@
 		<techHediffsTags>
 			<li>Poor</li>
 		</techHediffsTags>
-		<weaponClasses>
-			<li>Melee</li>
-			<li>MeleeBlunt</li>
-			<li>Neolithic</li>
-		</weaponClasses>
-		<tools>
-			<li Class="CombatExtended.ToolCE">
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2.1</cooldownTime>
-				<chanceFactor>1.33</chanceFactor>
-				<armorPenetrationBlunt>0.738</armorPenetrationBlunt>
-				<linkedBodyPartsGroup>Base</linkedBodyPartsGroup>
-			</li>
-		</tools>
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_ResourceVerbBase">
+	<ThingDef ParentName="SK_ResourceBase">
 		<defName>RedWoodLog</defName>
 		<label>redwood</label>
 		<description>Wood from redwood and sequoia trees or other fibrous plants. Red, valuable and more fireproof than regular wood. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch.</description>
@@ -103,7 +85,6 @@
 			<color>(102,41,20)</color>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		<equippedAngleOffset>-20</equippedAngleOffset>
 		<soundInteract>Wood_Drop</soundInteract>
 		<soundDrop>Wood_Drop</soundDrop>
 		<tickerType>Rare</tickerType>
@@ -169,23 +150,6 @@
 		<techHediffsTags>
 			<li>Poor</li>
 		</techHediffsTags>
-		<weaponClasses>
-			<li>Melee</li>
-			<li>MeleeBlunt</li>
-			<li>Neolithic</li>
-		</weaponClasses>
-		<tools>
-			<li Class="CombatExtended.ToolCE">
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2.1</cooldownTime>
-				<chanceFactor>1.33</chanceFactor>
-				<armorPenetrationBlunt>0.738</armorPenetrationBlunt>
-				<linkedBodyPartsGroup>Base</linkedBodyPartsGroup>
-			</li>			
-		</tools>
 	</ThingDef>
 
 	<ThingDef ParentName="SK_ResourceBase">
@@ -258,7 +222,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_ResourceVerbBase">
+	<ThingDef ParentName="SK_ResourceBase">
 		<defName>Bamboo</defName>
 		<label>bamboo log</label>
 		<description>Bamboo Logs are a type of wood-like grass. It is a fast growing wood alternative that is useful for construction.</description>
@@ -319,23 +283,6 @@
 			</statFactors>
 		</stuffProps>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<weaponClasses>
-			<li>Melee</li>
-			<li>MeleeBlunt</li>
-			<li>Neolithic</li>
-		</weaponClasses>
-		<tools>
-			<li Class="CombatExtended.ToolCE">
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>6</power>
-				<cooldownTime>1.6</cooldownTime>
-				<chanceFactor>1.33</chanceFactor>
-				<armorPenetrationBlunt>0.738</armorPenetrationBlunt>
-				<linkedBodyPartsGroup>Base</linkedBodyPartsGroup>
-			</li>
-		</tools>
 	</ThingDef>
 
 
