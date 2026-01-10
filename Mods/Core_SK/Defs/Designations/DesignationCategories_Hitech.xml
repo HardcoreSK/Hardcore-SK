@@ -73,10 +73,11 @@
 	<DesignationCategoryDef>
 		<defName>OutsideFloors</defName>
 		<label>Special Floors</label>
-		<order>340</order>
+		<order>295</order>
 		<specialDesignatorClasses>
 			<li>Designator_Cancel</li>
 			<li>Designator_RemoveFloor</li>
+            <li>Designator_RemoveFoundation</li>
 			<li>Designator_SmoothFloors</li>
 			<li>Designator_PaintFloor</li>
 			<li>Designator_RemoveFloorPaint</li>
@@ -100,6 +101,7 @@
 		<specialDesignatorClasses>
 			<li>Designator_Cancel</li>
 			<li>Designator_RemoveFloor</li>
+            <li>Designator_RemoveFoundation</li>
 			<li>Designator_SmoothFloors</li>
 			<li>Designator_PaintFloor</li>
 			<li>Designator_RemoveFloorPaint</li>
