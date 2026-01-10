@@ -18,45 +18,29 @@
 			<wildClusterRadius>3</wildClusterRadius>
 			<wildClusterWeight>3</wildClusterWeight>
 			<cavePlantWeight>0.6</cavePlantWeight>
-			<sowTags Merge="true">
+			<sowTags Inherit="False">
 				<li>Fungiponics</li>
 			</sowTags>
-		</value>
-	</Operation>
-
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="Plant_Timbershroom"]/plant</xpath>
-		<value>
 			<harvestedThingDef>WoodLog</harvestedThingDef>
 			<blockAdjacentSow>true</blockAdjacentSow>
 			<sowResearchPrerequisites>
 				<li>Fungiponics_A1</li>
 			</sowResearchPrerequisites>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Plant_Timbershroom"]/plant</xpath>
-		<value>
 			<sowWork>750</sowWork>
 			<harvestWork>300</harvestWork>
-			<harvestedThingDef>WoodLog</harvestedThingDef>
 			<harvestTag>Wood</harvestTag>
 			<harvestMinGrowth>0.40</harvestMinGrowth>
 			<harvestFailable>false</harvestFailable>
-			<sowTags Inherit="False">
-				<li>Fungiponics</li>
-			</sowTags>
-			<blockAdjacentSow>true</blockAdjacentSow>
 			<mustBeWildToSow>false</mustBeWildToSow>
 			<interferesWithRoof>false</interferesWithRoof>
+			<harvestYield>60</harvestYield>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Plant_Timbershroom"]/plant/harvestYield</xpath>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Plant_Fibercorn"]/plant</xpath>
 		<value>
-			<harvestYield>60</harvestYield>
+            <visualSizeRange>0.5~0.75</visualSizeRange>
 		</value>
 	</Operation>
 
@@ -65,19 +49,6 @@
 		<value>
 			<selectable>true</selectable>
 		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Plant_Timbershroom"]/plant/wildClusterWeight</xpath>
-		<value>
-			<wildClusterRadius>3</wildClusterRadius>
-			<wildClusterWeight>3</wildClusterWeight>
-			<cavePlantWeight>0.5</cavePlantWeight>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[defName="Plant_Timbershroom"]/plant/wildClusterWeight</xpath>
 	</Operation>
 
 	<Operation Class="PatchOperationRemove">
