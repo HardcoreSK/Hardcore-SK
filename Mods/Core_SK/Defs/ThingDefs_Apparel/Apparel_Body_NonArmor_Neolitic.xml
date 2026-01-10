@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--
+    DefOverwrite list:
+    Apparel_TribalA
+    -->
+
+	<ThingDef ParentName="ApparelNeoliticSimpleBase">
+		<defName>Apparel_TribalShoulderpads</defName>
+		<label>Tribal shoulderpads</label>
+		<description>Ceremonial shoulderguard.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Clothes/TribalShoulderpads/TribalShoulderpads</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<MaxHitPoints>70</MaxHitPoints>
+			<Flammability>1.8</Flammability>
+			<Mass>1.6</Mass>
+			<Bulk>8</Bulk>
+			<WornBulk>6</WornBulk>
+			<EquipDelay>2.2</EquipDelay>
+			<Insulation_Cold>2.5</Insulation_Cold>			
+			<StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.48</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.96</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.9152</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk>12</CarryBulk>
+			<MoveSpeed>-0.07</MoveSpeed>
+			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+			<ShootingAccuracyPawn>-0.02</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.02</AimingDelayFactor>
+			<MeleeHitChance>-0.02</MeleeHitChance>
+			<MeleeWeapon_CooldownMultiplier>0.02</MeleeWeapon_CooldownMultiplier>
+			<GermResistance>0.02</GermResistance>
+			<GermContainment>0.01</GermContainment>
+		</equippedStatOffsets>
+		<generateCommonality>1.5</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Clothes/TribalShoulderpads/Apron</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Tribal</li>
+				<li>Tribal_TraderTag</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<thingCategories>
+			<li>UpperOverdressCat</li>
+		</thingCategories>
+        <recipeMaker>
+            <researchPrerequisite>Apparel_A1</researchPrerequisite>
+        </recipeMaker>
+	</ThingDef>
+
+</Defs>

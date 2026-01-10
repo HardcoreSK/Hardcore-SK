@@ -1,81 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="ApparelIndustrialBase">
-		<defName>Gloves_ChefGloves</defName>
-		<label>Oven Mitts</label>
-		<description>A pair of heat resistant oven mitts for cooks.</description>
-		<graphicData>
-			<texPath>Things/Apparel/Gloves/Gloves_ChefGloves</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<stuffCategories>
-			<li>HF</li>
-			<li>Fabric</li>
-		</stuffCategories>
-		<costStuffCount>20</costStuffCount>
-		<costList>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<Compaste>8</Compaste>
-		</costList>
-		<statBases>
-			<WorkToMake>4000</WorkToMake>
-			<MaxHitPoints>50</MaxHitPoints>
-			<Flammability>1</Flammability>
-			<Mass>0.3</Mass>
-			<Bulk>0.7</Bulk>
-			<WornBulk>0.2</WornBulk>
-			<EquipDelay>0.6</EquipDelay>
-            <Insulation_Heat>-5</Insulation_Heat>
-            <Insulation_Cold>10</Insulation_Cold>
-			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
-			<StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
-			<ArmorRating_Sharp>0</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0</ArmorRating_Blunt>
-			<ArmorRating_Heat>0</ArmorRating_Heat>
-		</statBases>
-		<equippedStatOffsets>
-			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
-			<SocialImpact>0.03</SocialImpact>
-			<MentalBreakThreshold>-0.02</MentalBreakThreshold>
-			<CookSpeed>0.2</CookSpeed>
-			<FoodPoisonChance>-0.5</FoodPoisonChance>
-			<DrugCookingSpeed>0.2</DrugCookingSpeed>
-			<GermResistance>0.07</GermResistance>
-			<GermContainment>0.12</GermContainment>
-		</equippedStatOffsets>
-		<generateCommonality>1</generateCommonality>
-		<apparel>
-		<countsAsClothingForNudity>false</countsAsClothingForNudity>
-			<bodyPartGroups>
-				<li>Hands</li>
-			</bodyPartGroups>
-			<layers>
-				<li>OnSkin</li>
-			</layers>
-			<tags>
-				<li>Outlander</li>
-				<li>BanditsLight</li>
-				<li>PredatorsMedium</li>
-				<li>BrotherhoodMedium</li>
-				<li>SectarianLight</li>
-				<li>SectarianScout</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Worker</li>
-			</defaultOutfitTags>
-			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
-		</apparel>
-		<thingCategories>
-			<li>GlovesCat</li>
-			<li>SetCookie</li>
-		</thingCategories>
-        <recipeMaker>
-            <researchPrerequisite>Apparel_C2</researchPrerequisite>
-        </recipeMaker>
-	</ThingDef>
-
+    <!--Medieval-->
+    
 	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>Gloves_WorkGloves</defName>
 		<label>Leather Gloves</label>
@@ -151,7 +78,7 @@
             <researchPrerequisite>Apparel_B3</researchPrerequisite>
         </recipeMaker>
 	</ThingDef>
-
+    
 	<ThingDef ParentName="ArmorMedievalBase">
 		<defName>Gloves_Plated</defName>
 		<label>Plated Gloves</label>
@@ -300,6 +227,83 @@
 		</thingCategories>
         <recipeMaker>
             <researchPrerequisite>Armor_B2</researchPrerequisite>
+        </recipeMaker>
+	</ThingDef>
+
+    <!--Industrial-->
+    
+	<ThingDef ParentName="ApparelIndustrialBase">
+		<defName>Gloves_ChefGloves</defName>
+		<label>Oven Mitts</label>
+		<description>A pair of heat resistant oven mitts for cooks.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Gloves/Gloves_ChefGloves</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>HF</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Compaste>8</Compaste>
+		</costList>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<Mass>0.3</Mass>
+			<Bulk>0.7</Bulk>
+			<WornBulk>0.2</WornBulk>
+			<EquipDelay>0.6</EquipDelay>
+            <Insulation_Heat>-5</Insulation_Heat>
+            <Insulation_Cold>10</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+			<SocialImpact>0.03</SocialImpact>
+			<MentalBreakThreshold>-0.02</MentalBreakThreshold>
+			<CookSpeed>0.2</CookSpeed>
+			<FoodPoisonChance>-0.5</FoodPoisonChance>
+			<DrugCookingSpeed>0.2</DrugCookingSpeed>
+			<GermResistance>0.07</GermResistance>
+			<GermContainment>0.12</GermContainment>
+		</equippedStatOffsets>
+		<generateCommonality>1</generateCommonality>
+		<apparel>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Outlander</li>
+				<li>BanditsLight</li>
+				<li>PredatorsMedium</li>
+				<li>BrotherhoodMedium</li>
+				<li>SectarianLight</li>
+				<li>SectarianScout</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<thingCategories>
+			<li>GlovesCat</li>
+			<li>SetCookie</li>
+		</thingCategories>
+        <recipeMaker>
+            <researchPrerequisite>Apparel_C2</researchPrerequisite>
         </recipeMaker>
 	</ThingDef>
 
@@ -526,6 +530,8 @@
             <researchPrerequisite>Armor_C1</researchPrerequisite>
         </recipeMaker>
 	</ThingDef>
+    
+    <!--Spacer-->
 
 	<ThingDef ParentName="ApparelSpacerSimpleBase">
 		<defName>Gloves_SniperGloves</defName>
