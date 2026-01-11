@@ -4,7 +4,7 @@
     <!--Medieval-->
     
 	<ThingDef ParentName="ApparelMedievalBase">
-		<defName>Gloves_WorkGloves</defName>
+		<defName>Gloves_Worker</defName>
 		<label>Leather Gloves</label>
 		<description>A pair of hardened leather gloves, commonly used by most craftsmen.</description>
 		<graphicData>
@@ -233,7 +233,7 @@
     <!--Industrial-->
     
 	<ThingDef ParentName="ApparelIndustrialBase">
-		<defName>Gloves_ChefGloves</defName>
+		<defName>Gloves_Chef</defName>
 		<label>Oven Mitts</label>
 		<description>A pair of heat resistant oven mitts for cooks.</description>
 		<graphicData>
@@ -308,7 +308,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ArmorIndustrialBase">
-		<defName>Gloves_ReinforcedGlove</defName>
+		<defName>Gloves_Reinforced</defName>
 		<label>Reinforced Gloves</label>
 		<description>Tyke Bison allegedly hid one of these under his boxing glove during a match. Luckily not a single blow was exchanged before Tyke had already bitten his opponent's nose off. The hit with the powered glove could of killed the poor man.</description>
 		<graphicData>
@@ -534,7 +534,7 @@
     <!--Spacer-->
 
 	<ThingDef ParentName="ApparelSpacerSimpleBase">
-		<defName>Gloves_SniperGloves</defName>
+		<defName>Gloves_Sniper</defName>
 		<label>Stabilizer Gloves</label>
 		<description>The antiswerve-adjustor installed in these gloves has made it a particular favorite of snipers.</description>
 		<graphicData>
@@ -692,7 +692,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelSpacerSimpleBase">
-		<defName>Gloves_DocGloves</defName>
+		<defName>Gloves_DocCutters</defName>
 		<label>Doctor's Cutters</label>
 		<description>Rubbery and clinical. It has very sharp scissors strapped on it. What could possibly go wrong?</description>
 		<graphicData>
@@ -766,7 +766,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelSpacerSimpleBase">
-		<defName>Gloves_DocGlovedTwo</defName>
+		<defName>Gloves_DocPincers</defName>
 		<label>Doctor's Pincers</label>
 		<description>Rubbery and clinical. It has very claspy pincers strapped on it.</description>
 		<graphicData>
@@ -841,7 +841,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelSpacerSimpleBase">
-		<defName>Gloves_SniperGlovesTwo</defName>
+		<defName>Gloves_SniperTwo</defName>
 		<label>Discharger Gloves</label>
 		<description>The microscopic exoskeleton in the gloves gives the wearer a quick and steady grip when squeezing the trigger.</description>
 		<graphicData>
@@ -1000,11 +1000,11 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelSpacerBase">
-		<defName>Gloves_Gauntlets_Techno</defName>
+		<defName>Gloves_TechnoGauntlets</defName>
 		<label>Techno Gauntlets</label>
 		<description>Custom made by Interstellar Industries, these high end combat gauntlets are made almost entirely of Nanite recursive synthetics and metal plating. These little alpha's come with Omega-weave electric stranding, thermo-dynamic assist functions and even nano-tactile receivers to ensure a good no-slip grip. Even with all that they found room for MilCo's patented Aim-Assist+.  Nano-stretch materials and contouring hyper-foam ensure a comfortable fit for any hand type. These gloves are a favourite of any soldier lucky or rich enough that they can get their hands in them. Rarely seen outside of the most luxurious of glitter-worlds. These gloves are truly a godsend for either hand to hand or ranged combat</description>
 		<graphicData>
-			<texPath>Things/Apparel/Gloves/Gloves_Gauntlets_Techno</texPath>
+			<texPath>Things/Apparel/Gloves/Gloves_TechnoGauntlets</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories>

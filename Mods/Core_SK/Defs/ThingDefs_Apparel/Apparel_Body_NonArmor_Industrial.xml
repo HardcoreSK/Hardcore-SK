@@ -2,7 +2,7 @@
 <Defs>
 
     <!--
-    DefOverwrite list (names):
+    DefsOverwrite list:
     Apparel_FlakJacket
     -->
     
@@ -237,6 +237,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>		
 		<stuffCategories>
+			<li>Fabric</li>
 			<li>HF</li>
 		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
@@ -299,6 +300,77 @@
 		</thingCategories>
         <recipeMaker>
             <researchPrerequisite>FlakArmor</researchPrerequisite>
+        </recipeMaker>
+	</ThingDef>
+
+    <ThingDef ParentName="ArmorIndustrialBase">
+		<defName>Apparel_VicScullery</defName>
+		<label>scullery maid uniform</label>
+		<description>A design from an era of humanity's first industrial revolution. A scullery maid is the lowest-ranked of female servants responsible for washing dishes and doing other menial household chores.\n\nThe male equivalent is called a hall boy, whose duties were often among the most disagreeable in the house, such as emptying chamber pots for the higher-ranking servants, and cleaning the boots.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Clothes/Scullery/Scullery</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>HF</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>9500</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Flammability>2</Flammability>
+			<Mass>1</Mass>
+			<Bulk>10</Bulk>
+			<WornBulk>5</WornBulk>
+			<EquipDelay>6.5</EquipDelay>			
+			<Insulation_Heat>2.5</Insulation_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.37</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk>13</CarryBulk>
+			<MarketValue>-0.1</MarketValue>
+			<MoveSpeed>-0.02</MoveSpeed>
+			<WorkSpeedGlobal>0.07</WorkSpeedGlobal>
+			<MentalBreakThreshold>-0.08</MentalBreakThreshold>
+			<GermResistance>0.04</GermResistance>
+			<GermContainment>0.04</GermContainment>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Clothes/Scullery/Scullery</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>Slaver</li>
+			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<thingCategories>
+			<li>FullBodySuitsCat</li>
+			<li>SetSlaver</li>
+		</thingCategories>
+        <recipeMaker>
+            <researchPrerequisite>Apparel_C5</researchPrerequisite>
         </recipeMaker>
 	</ThingDef>
 

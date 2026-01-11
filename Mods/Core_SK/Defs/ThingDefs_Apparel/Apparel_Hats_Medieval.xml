@@ -77,4 +77,76 @@
 		</recipeMaker>
 	</ThingDef>
 
+	<ThingDef ParentName="ApparelMedievalBase">
+		<defName>Apparel_Bonnet</defName>
+		<label>bonnet</label>
+		<graphicData>
+			<texPath>Things/Apparel/Hats/Bonnet/Bonnet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<statBases>
+			<WorkToMake>3500</WorkToMake>
+			<MaxHitPoints>40</MaxHitPoints>
+			<Flammability>1.7</Flammability>
+			<Mass>0.3</Mass>
+			<Bulk>2</Bulk>
+			<WornBulk>0</WornBulk>
+			<EquipDelay>0.9</EquipDelay>			
+			<Insulation_Heat>5</Insulation_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.24</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.012</MoveSpeed>
+			<MarketValue>-0.3</MarketValue>
+			<SocialImpact>-0.05</SocialImpact>
+			<GermResistance>0.02</GermResistance>
+			<GermContainment>0.02</GermContainment>
+		</equippedStatOffsets>
+		<generateCommonality>0.4</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Hats/Bonnet/Bonnet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>Outlander</li>
+				<li>Slaver</li>
+			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<parentTagDef>ApparelHead</parentTagDef>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>4</weight>
+					<only>(1,1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingCategories>
+			<li>HeaddressCat</li>
+			<li>SetSlaver</li>
+		</thingCategories>
+        <recipeMaker>
+            <researchPrerequisite>Apparel_B3</researchPrerequisite>
+        </recipeMaker>
+	</ThingDef>
+
 </Defs>

@@ -640,11 +640,11 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelMedievalBase">
-		<defName>Apparello_PonPon</defName>
+		<defName>Apparel_Poncho</defName>
 		<label>Poncho</label>
 		<description>A gunslinger's second best friend, right after the six shooter and Ten-Gallon Stetson! No, wait make that the third best friend.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Apparello/Apparel/Poncho/Ponpon</texPath>
+			<texPath>Things/Apparel/Clothes/Poncho/Ponpon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>		
 		<stuffCategories>
@@ -681,7 +681,7 @@
 		</equippedStatOffsets>
 		<generateCommonality>1.8</generateCommonality>
 		<apparel>
-			<wornGraphicPath>Things/Apparel/Apparello/Apparel/Poncho/Ponpon</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Clothes/Poncho/Ponpon</wornGraphicPath>
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Neck</li>
@@ -738,6 +738,227 @@
 		</thingCategories>
         <recipeMaker>
             <researchPrerequisite>Fabrication</researchPrerequisite>
+        </recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelMedievalBase">
+		<defName>Apparel_SimpleDress</defName>
+		<description>A simple servant outfit made from cloth. Decrease social standing, but improving work speed and mental threshold.</description>
+		<label>simple dress</label>
+		<graphicData>
+			<texPath>Things/Apparel/Clothes/SimpleDress/SimpleDress</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<WorkToMake>1800</WorkToMake>
+			<MaxHitPoints>75</MaxHitPoints>
+			<Flammability>2</Flammability>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Mass>1</Mass>
+			<Bulk>7</Bulk>
+			<WornBulk>4</WornBulk>
+			<EquipDelay>4.4</EquipDelay>			
+			<StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.27</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk>8</CarryBulk>
+			<MarketValue>-0.3</MarketValue>
+			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+			<MoveSpeed>-0.065</MoveSpeed>
+			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+			<GermResistance>0.02</GermResistance>
+			<GermContainment>0.02</GermContainment>
+		</equippedStatOffsets>
+		<generateCommonality>0.7</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Clothes/SimpleDress/SimpleDress</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Tribal</li>
+				<li>Outlander</li>
+				<li>Slaver</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<thingCategories>
+			<li>BodySuitsCat</li>
+			<li>SetSlaver</li>
+		</thingCategories>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+        </recipeMaker>
+	</ThingDef>
+
+    <ThingDef ParentName="ApparelMedievalBase">
+		<defName>Apparel_TunicPoor</defName>
+		<description>A single piece apparel commonly used by peasants that only consist of leather belt and poorly made tunic. It offer a bit of protection from the cold.</description>
+		<label>poor tunic</label>
+		<graphicData>
+			<texPath>Things/Apparel/Clothes/TunicPoor/Tunic_Poor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+		<costList>
+			<ComponentMedieval>2</ComponentMedieval>
+		</costList>
+		<statBases>
+			<WorkToMake>7500</WorkToMake>
+			<MaxHitPoints>70</MaxHitPoints>
+			<Flammability>2</Flammability>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Mass>1.6</Mass>
+			<Bulk>10</Bulk>
+			<WornBulk>5</WornBulk>
+			<EquipDelay>7.2</EquipDelay>			
+			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.34</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk>12</CarryBulk>
+			<MarketValue>-0.3</MarketValue>
+			<MoveSpeed>-0.025</MoveSpeed>
+			<WorkSpeedGlobal>0.06</WorkSpeedGlobal>
+			<GermResistance>0.03</GermResistance>
+			<GermContainment>0.02</GermContainment>
+		</equippedStatOffsets>
+		<generateCommonality>0.6</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Clothes/TunicPoor/Tunic_Poor</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>BanditsLight</li>
+				<li>PredatorsLight</li>
+				<li>RenegadesLight</li>
+				<li>NorbalKingly</li>
+				<li>Norbal</li>
+				<li>NorbalArcher</li>
+				<li>NorbalWarrior</li>
+				<li>Medieval</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<thingCategories>
+			<li>FullBodySuitsCat</li>
+			<li>SetSlaver</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelMedievalBase">
+		<defName>Apparel_TunicFine</defName>
+		<description>A single piece apparel commonly wore by peasant that consist of finely made tunic and leather belt. Offer moderate protection against cold.</description>
+		<label>fine tunic</label>
+		<graphicData>
+			<texPath>Things/Apparel/Clothes/TunicFine/Tunic_Fine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<costList>
+			<ComponentMedieval>3</ComponentMedieval>
+		</costList>
+		<statBases>
+			<WorkToMake>8500</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Flammability>2</Flammability>
+			<Mass>1</Mass>
+			<Bulk>10</Bulk>
+			<WornBulk>5</WornBulk>
+			<EquipDelay>6.8</EquipDelay>			
+			<Insulation_Heat>2.5</Insulation_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.37</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk>12</CarryBulk>
+			<MarketValue>-0.3</MarketValue>
+			<MoveSpeed>-0.02</MoveSpeed>
+			<WorkSpeedGlobal>0.07</WorkSpeedGlobal>
+			<MentalBreakThreshold>-0.08</MentalBreakThreshold>
+			<GermResistance>0.03</GermResistance>
+			<GermContainment>0.03</GermContainment>
+		</equippedStatOffsets>
+		<generateCommonality>0.65</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Clothes/TunicFine/Tunic_Fine</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>BanditsLight</li>
+				<li>PredatorsLight</li>
+				<li>RenegadesLight</li>
+				<li>NorbalKingly</li>
+				<li>Norbal</li>
+				<li>NorbalArcher</li>
+				<li>NorbalWarrior</li>
+				<li>Medieval</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<thingCategories>
+			<li>FullBodySuitsCat</li>
+			<li>SetSlaver</li>
+		</thingCategories>
+        <recipeMaker>
+            <researchPrerequisite>Apparel_B3</researchPrerequisite>
         </recipeMaker>
 	</ThingDef>
 

@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
 <Defs>
 
 	<ThingDef ParentName="ArmorIndustrialBase">
-		<defName>Marine_Armor</defName>
+		<defName>Armor_MarineArmor</defName>
 		<label>Marine Personal Armor</label>
 		<description>Standard issue military body armor for Colonial Marines.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Marines/Armor/CombatArmor</texPath>
+			<texPath>Things/Apparel/Armor/MarineCombatArmor/CombatArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>		
+		</graphicData>
 		<stuffCategories>
 			<li>StrongMetallic</li>
 		</stuffCategories>
@@ -60,7 +59,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Marines/Armor/Combat</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Armor/MarineCombatArmor/Combat</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
