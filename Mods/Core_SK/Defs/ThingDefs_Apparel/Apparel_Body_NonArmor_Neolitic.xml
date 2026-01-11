@@ -6,7 +6,7 @@
     Apparel_TribalA
     -->
 
-	<ThingDef ParentName="ApparelNeoliticSimpleBase">
+	<ThingDef ParentName="ApparelNeolithicSimpleBase">
 		<defName>Apparel_TribalShoulderpads</defName>
 		<label>Tribal shoulderpads</label>
 		<description>Ceremonial shoulderguard.</description>
@@ -75,15 +75,14 @@
         </recipeMaker>
 	</ThingDef>
     
-    <ThingDef ParentName="ApparelNeoliticBase">
+    <ThingDef ParentName="ApparelNeolithicBase">
 		<defName>Apparel_RagDress</defName>
-		<label>ragged dress</label>
+		<label>Ragged Dress</label>
 		<description>A very basic outfit made from cloth and can be crafted anywhere. Decrease social standing, but improving work speed and mental threshold.</description>
 		<graphicData>
             <texPath>Things/Apparel/Clothes/RagDress/RagDress</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Neolithic</techLevel>
 		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -95,9 +94,10 @@
 			<MaxHitPoints>70</MaxHitPoints>
 			<Flammability>2</Flammability>
 			<Mass>0.3</Mass>
-			<Bulk>0.4</Bulk>
-			<WornBulk>0</WornBulk>
-			<EquipDelay>2.4</EquipDelay>			
+			<Bulk>3</Bulk>
+			<WornBulk>1</WornBulk>
+			<EquipDelay>2.4</EquipDelay>
+			<Insulation_Heat>5</Insulation_Heat>	
 			<Insulation_Cold>5</Insulation_Cold>
 			<StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
@@ -107,13 +107,13 @@
 			<ArmorRating_Heat>0</ArmorRating_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryBulk>6</CarryBulk>
-			<MarketValue>-0.3</MarketValue>
+			<CarryBulk>2</CarryBulk>
+			<SocialImpact>-0.1</SocialImpact>
 			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
-			<MoveSpeed>-0.055</MoveSpeed>
+			<MoveSpeed>-0.05</MoveSpeed>
 			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
-			<GermResistance>0.02</GermResistance>
-			<GermContainment>0.01</GermContainment>
+			<GermResistance>-0.02</GermResistance>
+			<GermContainment>-0.01</GermContainment>
 		</equippedStatOffsets>
 		<generateCommonality>0.6</generateCommonality>
 		<apparel>
@@ -140,6 +140,83 @@
 		<thingCategories>
 			<li>BodySuitsCat</li>
 			<li>SetSlaver</li>
+		</thingCategories>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+        </recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelNeolithicBase">
+		<defName>Apparel_RagTunic</defName>
+		<label>Ragged Tunic</label>
+		<description>Somehow crafted full body tunic capable of protecting the wearer from the weather.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Clothes/RagTunic/RagTunic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>		
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<costList>
+			<ComponentMedieval>2</ComponentMedieval>
+		</costList>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Flammability>2</Flammability>
+			<Mass>0.1</Mass>
+			<Bulk>4</Bulk>
+			<WornBulk>1</WornBulk>
+			<EquipDelay>3.5</EquipDelay>
+			<Insulation_Heat>5</Insulation_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.38</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk>8</CarryBulk>
+			<SocialImpact>-0.1</SocialImpact>
+			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+			<GermResistance>0.03</GermResistance>
+			<GermContainment>0.03</GermContainment>
+		</equippedStatOffsets>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Arms</li>	
+				<li>Shoulders</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Clothes/RagTunic/RagTunic</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Tribal</li>
+				<li>Outlander</li>
+				<li>BanditsLight</li>
+				<li>RenegadesLight</li>
+				<li>EmpireLight</li>
+				<li>PredatorsLight</li>
+				<li>PredatorsMedium</li>
+				<li>PredatorsScout</li>
+				<li>EmpireMedium</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<thingCategories>
+			<li>FullBodySuitsCat</li>
+			<li>SetBandit</li>
 		</thingCategories>
         <recipeMaker>
             <researchPrerequisite>ComplexClothing</researchPrerequisite>

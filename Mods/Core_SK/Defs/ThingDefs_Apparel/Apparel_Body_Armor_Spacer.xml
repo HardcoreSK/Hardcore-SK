@@ -430,7 +430,7 @@
 		<label>Phase Armor</label>
 		<description>Reinforced medium armor for uncommon operations.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Phase/Phase_Armor</texPath>
+			<texPath>Things/Apparel/Armor/Phase/Phase_Armor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingClass>SK.OpticEvasionArmor</thingClass>
@@ -491,7 +491,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Phase/Phase_Armor</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Armor/Phase/Phase_Armor</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
@@ -542,11 +542,11 @@
 	</ThingDef>
     
 	<ThingDef ParentName="ArmorSpacerSimpleBase">
-		<defName>Apparello_HA</defName>
+		<defName>Armor_Hive</defName>
 		<label>Hive Armor</label>
 		<description>Armor that is fashioned after the centipede body structure. This extremely bulky armor is nigh indestructable. The sheer weight of this piece of armor drastically hinders mobility.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Apparello/Apparel/HA/ha</texPath>
+			<texPath>Things/Apparel/Armor/Hive/HiveArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>		
 		<stuffCategories>
@@ -604,7 +604,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Apparello/Apparel/HA/ha</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Armor/Hive/HiveArmor</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
@@ -645,13 +645,11 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ArmorSpacerBase">
-		<defName>Apparello_Steamhull</defName>
+		<defName>Armor_Steamhull</defName>
 		<label>Steamhull</label>
-		<description>A combination of mobility enhancing components of the Scyther frame and heavy plating of the Hive armor.
-	The increased energy consumption from the added scyther frame servos have forced the shock dampeners to work on lesser capacity,
-	thus rendering the wearer more vulnerable to injuries but the higher mobility under combat situations is well worth it. It generates absurd amounts of heat though.</description>
+		<description>A combination of mobility enhancing components of the Scyther frame and heavy plating of the Hive armor.\nThe increased energy consumption from the added scyther frame servos have forced the shock dampeners to work on lesser capacity,	thus rendering the wearer more vulnerable to injuries but the higher mobility under combat situations is well worth it. It generates absurd amounts of heat though.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Apparello/Apparel/Steamhull/Steamhull</texPath>
+			<texPath>Things/Apparel/Armor/Steamhull/Steamhull</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>		
 		<stuffCategories>
@@ -708,7 +706,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Apparello/Apparel/Steamhull/Steamhull</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Armor/Steamhull/Steamhull</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
@@ -747,13 +745,12 @@
 		</recipeMaker>
 	</ThingDef>
 
-
 	<ThingDef ParentName="ArmorSpacerSimpleBase">
 		<defName>Apparel_HellPowerArmor</defName>
-		<label>Hell Armor MK2</label>
-		<description>An advanced suit of armor powered by uranium. It is usually used by assault troops from advanced glitterworld planets.</description>
+		<label>Hell Armor</label>
+		<description>An advanced power armor. It is usually used by assault troops from advanced glitterworld planets.</description>
 		<graphicData>
-			<texPath>Things/Apparel/PowerArmor/MK2</texPath>
+			<texPath>Things/Apparel/Armor/PowerArmorHell/X01</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingClass>SK.Apparel_PowerArmorShield</thingClass>
@@ -816,7 +813,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/PowerArmor/MK2</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Armor/PowerArmorHell/X01</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
@@ -867,13 +864,12 @@
 		</recipeMaker>
 	</ThingDef>
 
-
 	<ThingDef ParentName="ApparelSpacerSimpleBase">
-		<defName>Rimarsenal_InteractorCloak</defName>
+		<defName>Armor_InteractorCloak</defName>
 		<label>Interactor Cloak</label>
 		<description>A special interactor cloak. Provides good insulation from heat and cold.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Rimarsenal/Interactor</texPath>
+			<texPath>Things/Apparel/Armor/InteractorCloak/Interactor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingClass>SK.OpticEvasionArmor</thingClass>
@@ -937,7 +933,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Rimarsenal/Interactor</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Armor/InteractorCloak/Interactor</wornGraphicPath>
 			<layers>
 				<li>Shell</li>
 			</layers>
@@ -978,13 +974,12 @@
 		</recipeMaker>
 	</ThingDef>
 
-
 	<ThingDef ParentName="ArmorSpacerSimpleBase">
-		<defName>Siegearmor</defName>
+		<defName>Armor_Siege</defName>
 		<label>Siege Armor</label>
-		<description>This is a set of JE-342A7 "Dvergr (Dwarf)" siege armor, minus the helmet. Like many other fort-world corporation products, Dvergr siege armor has a single main purpose. In this case, the main purpose is the survival of the wearer at any cost.</description>
+		<description>This is a set of JE-342A7 «Dvergr» (Dwarf) siege armor, minus the helmet. Like many other fort-world corporation products, Dvergr siege armor has a single main purpose. In this case, the main purpose is the survival of the wearer at any cost.</description>
 		<graphicData> 
-			<texPath>Things/Apparel/Rimarsenal/Dvergr</texPath>
+			<texPath>Things/Apparel/Armor/Dvergr/Dvergr</texPath>
 			<graphicClass>Graphic_Single</graphicClass> 
 		</graphicData>		
 		<stuffCategories>
@@ -1042,7 +1037,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Rimarsenal/Dvergr</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Armor/Dvergr/Dvergr</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
@@ -1088,13 +1083,12 @@
 		</recipeMaker>
 	</ThingDef>
 
-
 	<ThingDef ParentName="ArmorSpacerSimpleBase">
-		<defName>CCArmor</defName>
-		<label>Close Combat Armor</label>
-		<description>The JE-257A1 "Einherjar" close combat armor is a modified version of "Dvergr" siege armor. Some of the thick armor plates have been removed so that high powered actuators and fast recharging shields could be installed.</description>
+		<defName>Armor_CQC</defName>
+		<label>Close Quarters Combat Armor</label>
+		<description>The JE-257A1 «Einherjar» close combat armor is a modified version of «Dvergr» siege armor. Some of the thick armor plates have been removed so that high powered actuators and fast recharging shields could be installed.</description>
 		<graphicData> 
-			<texPath>Things/Apparel/Rimarsenal/Einherjar</texPath>
+			<texPath>Things/Apparel/Armor/Einherjar/Einherjar</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingClass>SK.OpticEvasionArmor</thingClass>
@@ -1156,7 +1150,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Rimarsenal/Einherjar</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Armor/Einherjar/Einherjar</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>

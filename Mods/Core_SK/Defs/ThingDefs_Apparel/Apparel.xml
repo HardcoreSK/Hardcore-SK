@@ -3,8 +3,8 @@
 
     <!--
     DefOverwrite list (names):
-    ApparelNoQualityBase
     ApparelBase
+    ApparelNoQualityBase
     ApparelArmorReconBase
     -->
 
@@ -56,7 +56,7 @@
 
     <!--Apparel-->
     
-	<ThingDef Name="ApparelNeoliticSimpleBase" ParentName="ApparelBase" Abstract="True">
+	<ThingDef Name="ApparelNeolithicSimpleBase" ParentName="ApparelBase" Abstract="True">
 		<equippedStatOffsets>
 			<Suppressability>-0.03</Suppressability>
 		</equippedStatOffsets>
@@ -71,7 +71,7 @@
 		<techLevel>Neolithic</techLevel>
 	</ThingDef>
 
-	<ThingDef Name="ApparelNeoliticBase" ParentName="ApparelNeoliticSimpleBase" Abstract="True">
+	<ThingDef Name="ApparelNeolithicBase" ParentName="ApparelNeolithicSimpleBase" Abstract="True">
 		<recipeMaker>
 			<workSpeedStat>TailoringSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -197,7 +197,7 @@
     
     <!--Armor-->
 
-	<ThingDef Name="ArmorNeoliticSimpleBase" ParentName="ApparelBase" Abstract="True">
+	<ThingDef Name="ArmorNeolithicSimpleBase" ParentName="ApparelBase" Abstract="True">
 		<equippedStatOffsets>
 			<Suppressability>-0.06</Suppressability>
 		</equippedStatOffsets>
@@ -212,7 +212,7 @@
 		<techLevel>Neolithic</techLevel>
 	</ThingDef>
 
-	<ThingDef Name="ArmorNeoliticBase" ParentName="ArmorNeoliticSimpleBase" Abstract="True">
+	<ThingDef Name="ArmorNeolithicBase" ParentName="ArmorNeolithicSimpleBase" Abstract="True">
 		<recipeMaker>
 			<workSpeedStat>SmithingSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -420,6 +420,52 @@
 			</li>
 			<li Class="CompProperties_Styleable" />
 		</comps>
+	</ThingDef>
+    
+	<ThingDef Name="Shield_Base" Abstract="True">
+		<thingClass>CombatExtended.Apparel_Shield</thingClass>
+		<category>Item</category>
+		<selectable>True</selectable>
+		<pathCost>10</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<SellPriceFactor>0.6</SellPriceFactor>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Normal</tickerType>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>LeftShoulder</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shield</li>
+			</layers>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+		<smeltable>true</smeltable>
+		<storedConceptLearnOpportunity>CE_Shields</storedConceptLearnOpportunity>
 	</ThingDef>
 
 </Defs>
