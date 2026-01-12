@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- unfinished, do not use -->
+	<!-- ThingDef Name="AdaptiveStorageMinifiedBase" ParentName="MinifiedThing">
+		<defName>AdaptiveStorageMinified</defName>
+		<label>minified storage</label>
+		<thingClass>AdaptiveStorage.Minified</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Minified/CrateFront</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.16</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<statBases>
+			<Mass>0.44</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef Name="AdaptiveStoragePackableMinifiedBase" ParentName="AdaptiveStorageMinifiedBase">
+		<defName>AdaptiveStoragePackableMinified</defName>
+		<modExtensions>
+			<li Class="AdaptiveStorage.MinifiedExtension">
+				<packContents>true</packContents>
+			</li>
+		</modExtensions>
+	</ThingDef -->
+</Defs>
