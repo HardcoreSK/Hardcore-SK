@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+    <!--
+    DefOverwrite list (names):
+    ApparelBase
+    ApparelNoQualityBase
+    ApparelArmorReconBase
+    -->
+
 	<!-- DefOverwrite
 	<ThingDef Name="SK_ApparelNoQualityBase" Abstract="True">
 		<thingClass>Apparel</thingClass>
@@ -45,7 +53,10 @@
 		</comps>
 	</ThingDef>
 -->
-	<ThingDef Name="ApparelNeoliticSimpleBase" ParentName="ApparelBase" Abstract="True">
+
+    <!--Apparel-->
+    
+	<ThingDef Name="ApparelNeolithicSimpleBase" ParentName="ApparelBase" Abstract="True">
 		<equippedStatOffsets>
 			<Suppressability>-0.03</Suppressability>
 		</equippedStatOffsets>
@@ -60,7 +71,7 @@
 		<techLevel>Neolithic</techLevel>
 	</ThingDef>
 
-	<ThingDef Name="ApparelNeoliticBase" ParentName="ApparelNeoliticSimpleBase" Abstract="True">
+	<ThingDef Name="ApparelNeolithicBase" ParentName="ApparelNeolithicSimpleBase" Abstract="True">
 		<recipeMaker>
 			<workSpeedStat>TailoringSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -77,41 +88,6 @@
 		<techLevel>Neolithic</techLevel>
 		<tradeTags>
 			<li>Clothing</li>
-		</tradeTags>
-	</ThingDef>
-
-	<ThingDef Name="ArmorNeoliticSimpleBase" ParentName="ApparelBase" Abstract="True">
-		<equippedStatOffsets>
-			<Suppressability>-0.06</Suppressability>
-		</equippedStatOffsets>
-		<apparel>
-			<tags>
-				<li>UniqueNeolitic</li>
-			</tags>
-			<ideoDesireAllowedFactionCategoryTags>
-				<li>Tribal</li>
-			</ideoDesireAllowedFactionCategoryTags>
-		</apparel>
-		<techLevel>Neolithic</techLevel>
-	</ThingDef>
-
-	<ThingDef Name="ArmorNeoliticBase" ParentName="ArmorNeoliticSimpleBase" Abstract="True">
-		<recipeMaker>
-			<workSpeedStat>SmithingSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<effectWorking>Smith</effectWorking>
-			<soundWorking>Recipe_Machining</soundWorking>
-			<recipeUsers>
-				<li>LeatherworkerTable</li>
-			</recipeUsers>
-			<skillRequirements>
-				<Crafting>2</Crafting>
-			</skillRequirements>
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
-		</recipeMaker>
-		<techLevel>Neolithic</techLevel>
-		<tradeTags>
-			<li>Armor</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -147,6 +123,112 @@
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
 			<li>Clothing</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef Name="ApparelIndustrialSimpleBase" ParentName="ApparelBase" Abstract="True">
+		<equippedStatOffsets>
+			<Suppressability>-0.06</Suppressability>
+		</equippedStatOffsets>
+		<apparel>
+			<tags>
+				<li>UniqueIndustrial</li>
+			</tags>
+		</apparel>
+		<techLevel>Industrial</techLevel>
+	</ThingDef>
+
+	<ThingDef Name="ApparelIndustrialBase" ParentName="ApparelIndustrialSimpleBase" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>TailoringSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		</recipeMaker>
+		<techLevel>Industrial</techLevel>
+		<tradeTags>
+			<li>Clothing</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef Name="ApparelSpacerSimpleBase" ParentName="ApparelBase" Abstract="True">
+		<equippedStatOffsets>
+			<Suppressability>-0.09</Suppressability>
+		</equippedStatOffsets>
+		<apparel>
+			<tags>
+				<li>UniqueSpacer</li>
+			</tags>
+		</apparel>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<techLevel>Spacer</techLevel>
+		<comps>
+			<li Class="CompProperties_Biocodable" />
+		</comps>
+	</ThingDef>
+
+	<ThingDef Name="ApparelSpacerBase" ParentName="ApparelSpacerSimpleBase" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>TailoringSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>HyperTailoringBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>15</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		</recipeMaker>
+		<tradeTags>
+			<li>Clothing</li>
+		</tradeTags>
+	</ThingDef>
+    
+    <!--Armor-->
+
+	<ThingDef Name="ArmorNeolithicSimpleBase" ParentName="ApparelBase" Abstract="True">
+		<equippedStatOffsets>
+			<Suppressability>-0.06</Suppressability>
+		</equippedStatOffsets>
+		<apparel>
+			<tags>
+				<li>UniqueNeolitic</li>
+			</tags>
+			<ideoDesireAllowedFactionCategoryTags>
+				<li>Tribal</li>
+			</ideoDesireAllowedFactionCategoryTags>
+		</apparel>
+		<techLevel>Neolithic</techLevel>
+	</ThingDef>
+
+	<ThingDef Name="ArmorNeolithicBase" ParentName="ArmorNeolithicSimpleBase" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>LeatherworkerTable</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		</recipeMaker>
+		<techLevel>Neolithic</techLevel>
+		<tradeTags>
+			<li>Armor</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -186,38 +268,6 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef Name="ApparelIndustrialSimpleBase" ParentName="ApparelBase" Abstract="True">
-		<equippedStatOffsets>
-			<Suppressability>-0.06</Suppressability>
-		</equippedStatOffsets>
-		<apparel>
-			<tags>
-				<li>UniqueIndustrial</li>
-			</tags>
-		</apparel>
-		<techLevel>Industrial</techLevel>
-	</ThingDef>
-
-	<ThingDef Name="ApparelIndustrialBase" ParentName="ApparelIndustrialSimpleBase" Abstract="True">
-		<recipeMaker>
-			<workSpeedStat>TailoringSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<effectWorking>Tailor</effectWorking>
-			<soundWorking>Recipe_Tailor</soundWorking>
-			<recipeUsers>
-				<li>ElectricTailoringBench</li>
-			</recipeUsers>
-			<skillRequirements>
-				<Crafting>9</Crafting>
-			</skillRequirements>
-			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-		</recipeMaker>
-		<techLevel>Industrial</techLevel>
-		<tradeTags>
-			<li>Clothing</li>
-		</tradeTags>
-	</ThingDef>
-
 	<ThingDef Name="ArmorIndustrialSimpleBase" ParentName="ApparelBase" Abstract="True">
 		<equippedStatOffsets>
 			<Suppressability>-0.07</Suppressability>
@@ -247,43 +297,6 @@
 		<techLevel>Industrial</techLevel>
 		<tradeTags>
 			<li>Armor</li>
-		</tradeTags>
-	</ThingDef>
-
-	<ThingDef Name="ApparelSpacerSimpleBase" ParentName="ApparelBase" Abstract="True">
-		<equippedStatOffsets>
-			<Suppressability>-0.09</Suppressability>
-		</equippedStatOffsets>
-		<apparel>
-			<tags>
-				<li>UniqueSpacer</li>
-			</tags>
-		</apparel>
-		<thingSetMakerTags>
-			<li>RewardStandardHighFreq</li>
-		</thingSetMakerTags>
-		<techLevel>Spacer</techLevel>
-		<comps>
-			<li Class="CompProperties_Biocodable" />
-		</comps>
-	</ThingDef>
-
-	<ThingDef Name="ApparelSpacerBase" ParentName="ApparelSpacerSimpleBase" Abstract="True">
-		<recipeMaker>
-			<workSpeedStat>TailoringSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<effectWorking>Tailor</effectWorking>
-			<soundWorking>Recipe_Tailor</soundWorking>
-			<recipeUsers>
-				<li>HyperTailoringBench</li>
-			</recipeUsers>
-			<skillRequirements>
-				<Crafting>15</Crafting>
-			</skillRequirements>
-			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-		</recipeMaker>
-		<tradeTags>
-			<li>Clothing</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -364,6 +377,95 @@
 		<tradeTags>
 			<li>Armor</li>
 		</tradeTags>
+	</ThingDef>
+    
+    <!--Shields (belts) -->
+
+	<ThingDef Name="ApparelNoQualityShieldBase" Abstract="True">
+		<thingClass>Apparel</thingClass>
+		<category>Item</category>
+		<selectable>True</selectable>
+		<pathCost>10</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>3</DeteriorationRate>
+			<SellPriceFactor>0.6</SellPriceFactor>
+		</statBases>
+		<equippedStatOffsets>
+			<Suppressability>-0.10</Suppressability>
+		</equippedStatOffsets>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<burnableByRecipe>true</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Name="ApparelShieldBase" ParentName="ApparelNoQualityShieldBase" Abstract="True">
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Styleable" />
+		</comps>
+	</ThingDef>
+    
+	<ThingDef Name="Shield_Base" Abstract="True">
+		<thingClass>CombatExtended.Apparel_Shield</thingClass>
+		<category>Item</category>
+		<selectable>True</selectable>
+		<pathCost>10</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<SellPriceFactor>0.6</SellPriceFactor>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Normal</tickerType>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>LeftShoulder</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shield</li>
+			</layers>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+		<smeltable>true</smeltable>
+		<storedConceptLearnOpportunity>CE_Shields</storedConceptLearnOpportunity>
 	</ThingDef>
 
 </Defs>

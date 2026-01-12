@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/TerrainTemplateDef[defName="Carpet"]</xpath>
+        <value>
+            <costList>
+                <Cloth>15</Cloth>
+            </costList>
+            <statBases>
+                <WorkToBuild>170</WorkToBuild>
+                <Beauty>4</Beauty>
+                <Flammability>0.6</Flammability>
+                <CleaningTimeFactor>2</CleaningTimeFactor>
+            </statBases>
+        </value>
+    </Operation>
+
+</Patch>

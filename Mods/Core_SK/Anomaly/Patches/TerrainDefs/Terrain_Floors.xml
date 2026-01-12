@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/TerrainDef[defName="BioferritePlate"]</xpath>
+        <value>
+            <costList>
+                <BioferriteAlloy>3</BioferriteAlloy>
+            </costList>
+            <designationCategory>OutsideFloors</designationCategory>
+        </value>
+    </Operation>
+</Patch>

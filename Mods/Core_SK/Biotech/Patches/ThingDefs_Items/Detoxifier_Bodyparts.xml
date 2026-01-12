@@ -1,61 +1,68 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="DetoxifierLung" or defName="DetoxifierKidney"]/recipeMaker/recipeUsers</xpath>
-				<value>
-					<recipeUsers Inherit="False">
-						<li>TableBionics</li>
-					</recipeUsers>
-				</value>
-			</li>
-
-			<!-- DetoxifierLung patches -->
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="DetoxifierLung"]/costList</xpath>
-				<value>
-					<stuffCategories>
-						<li>Metallic</li>
-					</stuffCategories>
-					<costStuffCount>25</costStuffCount>
-					<costList>
-						<Biomatter>20</Biomatter>
-						<CarbonAlloy>5</CarbonAlloy>
-						<SyntheticFibers>8</SyntheticFibers>
-						<Microchips>2</Microchips>
-						<ComponentSpacer>2</ComponentSpacer>
-					</costList>
-				</value>
-			</li>
-
-			<!-- DetoxifierKidney patches -->
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="DetoxifierKidney"]/costList</xpath>
-				<value>
-					<stuffCategories>
-						<li>Metallic</li>
-					</stuffCategories>
-					<costStuffCount>20</costStuffCount>
-					<costList>
-						<Biomatter>15</Biomatter>
-						<CarbonAlloy>5</CarbonAlloy>
-						<SyntheticFibers>6</SyntheticFibers>
-						<Microchips>2</Microchips>
-						<ComponentSpacer>1</ComponentSpacer>
-					</costList>
-				</value>
-			</li>
-
-			<li Class="SK.PatchOperationReplaceExtended">
-				<xpath>Defs/RecipeDef[defName="InstallDetoxifierLung" or defName="InstallDetoxifierKidney"]</xpath>
-				<value>
-					<researchPrerequisite>ToxFiltration</researchPrerequisite>
-				</value>
-			</li>
-
-		</operations>
-	</Operation>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="SK.PatchOperationReplaceExtended">
+                <xpath>Defs/RecipeDef[defName="InstallDetoxifierLung" or defName="InstallDetoxifierKidney"]</xpath>
+                <value>
+                    <researchPrerequisite>ToxFiltration</researchPrerequisite>
+                </value>
+            </li>
+            
+            <li Class="PatchOperationAttributeSet">
+                <xpath>Defs/ThingDef[defName="DetoxifierLung" or defName="DetoxifierKidney"]</xpath>
+                <attribute>ParentName</attribute>
+                <value>SK.BodyPartBase_SyntheticDummy</value>
+            </li>
+            
+            <li Class="SK.PatchOperationReplaceExtended">
+                <xpath>Defs/ThingDef[defName="DetoxifierLung"]</xpath>
+                <value>
+                    <statBases>
+                        <Mass>2</Mass>
+                        <MaxHitPoints>75</MaxHitPoints>
+                    </statBases>
+                    <costList DeepReplace="True">
+                        <Biomatter>20</Biomatter>
+                        <CarbonAlloy>5</CarbonAlloy>
+                        <SyntheticFibers>8</SyntheticFibers>
+                        <Microchips>2</Microchips>
+                        <ComponentSpacer>2</ComponentSpacer>
+                    </costList>
+                    <recipeMaker DeepReplace="True">
+                        <productCount>1</productCount>
+                        <skillRequirements>
+                            <Crafting>10</Crafting>
+                        </skillRequirements>
+                        <researchPrerequisite>ToxFiltration</researchPrerequisite>
+                    </recipeMaker>
+                </value>
+            </li>
+            <li Class="SK.PatchOperationReplaceExtended">
+                <xpath>Defs/ThingDef[defName="DetoxifierKidney"]</xpath>
+                <value>
+                    <statBases>
+                        <Mass>1</Mass>
+                        <MaxHitPoints>75</MaxHitPoints>
+                    </statBases>
+                    <costList DeepReplace="True">
+                        <Biomatter>15</Biomatter>
+                        <CarbonAlloy>5</CarbonAlloy>
+                        <SyntheticFibers>6</SyntheticFibers>
+                        <Microchips>2</Microchips>
+                        <ComponentSpacer>1</ComponentSpacer>
+                    </costList>
+                    <recipeMaker DeepReplace="True">
+                        <productCount>1</productCount>
+                        <skillRequirements>
+                            <Crafting>10</Crafting>
+                        </skillRequirements>
+                        <researchPrerequisite>ToxFiltration</researchPrerequisite>
+                    </recipeMaker>
+                </value>
+            </li>
+        </operations>
+    </Operation>
 
 </Patch>

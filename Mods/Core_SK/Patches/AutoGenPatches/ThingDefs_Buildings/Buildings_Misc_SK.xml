@@ -1,957 +1,978 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="MarriageSpot"]</xpath>
-    <value>
-      <graphicData>
-        <texPath>Things/Building/Misc/WeddingPlace</texPath>
-        <graphicClass>Graphic_Multi</graphicClass>
-        <drawSize>(2,1)</drawSize>
-      </graphicData>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="MarriageSpot"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Building/Misc/WeddingPlace</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>(2,1)</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="PartySpot"]</xpath>
-    <value>
-      <graphicData>
-        <texPath>Things/Building/Misc/PartyPlace</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-      </graphicData>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="PartySpot"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Building/Misc/PartyPlace</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+            </graphicData>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="CaravanPackingSpot"]</xpath>
-    <value>
-      <graphicData>
-        <texPath>Things/Building/Misc/CaravanPlace</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <drawSize>(1,1)</drawSize>
-      </graphicData>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="CaravanPackingSpot"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Building/Misc/CaravanPlace</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>(1,1)</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
 
-  <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="SimpleResearchBench"]</xpath>
-	  <attribute>ParentName</attribute>
-	  <value>SK.ResearchBaseDummy</value>
-  </Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="SimpleResearchBench"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.ResearchBaseDummy</value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="SimpleResearchBench"]</xpath>
-    <value>
-      <label>research bench</label>
-      <description>A simple bench with writing implements and low-tech scientific tools. Researchers work here to discover new things.</description>
-      <graphicData>
-        <texPath>Things/Building/Research/sciencetable</texPath>
-        <graphicClass>Graphic_Multi</graphicClass>
-        <shaderType>CutoutComplex</shaderType>
-        <drawSize>(3,1)</drawSize>
-        <shadowData>
-          <volume>(2.8, 1.0, 0.85)</volume>
-          <offset>(0,0,0)</offset>
-        </shadowData>
-        <damageData>
-          <cornerTL>Damage/Corner</cornerTL>
-          <cornerTR>Damage/Corner</cornerTR>
-          <cornerBL>Damage/Corner</cornerBL>
-          <cornerBR>Damage/Corner</cornerBR>
-        </damageData>
-      </graphicData>
-	  <staticSunShadowHeight>0</staticSunShadowHeight>
-      <statBases>
-        <MaxHitPoints>120</MaxHitPoints>
-        <WorkToBuild>1900</WorkToBuild>
-        <Flammability>1.0</Flammability>
-        <ResearchSpeedFactor>0.7</ResearchSpeedFactor>
-      </statBases>
-      <size>(3,1)</size>
-      <stuffCategories>
-        <li>StrongMetallic</li>
-        <li>Woody</li>
-        <li>Plastic</li>
-      </stuffCategories>
-      <costStuffCount>150</costStuffCount>
-      <costList>
-        <ComponentMedieval>8</ComponentMedieval>
-        <Mechanism>2</Mechanism>
-      </costList>
-      <comps>
-        <li Class="CompProperties_AffectedByFacilities">
-          <linkableFacilities>
-            <li>FileCabinet</li>
-            <li>LabTerminal</li>
-          </linkableFacilities>
-        </li>
-      </comps>
-      <minifiedDef>MinifiedThing</minifiedDef>
-      <building Merge="true">
-        <uninstallWork>360</uninstallWork>
-      </building>
-      <placeWorkers>
-        <li>PlaceWorker_ShowFacilitiesConnections</li>
-        <li>PlaceWorker_DrawLinesToBookcasesInRoom</li>
-      </placeWorkers>
-      <interactionCellOffset>(0,0,1)</interactionCellOffset>
-      <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-      <designationCategory>Misc</designationCategory>
-      <researchPrerequisites>
-        <li>Research_table_B1</li>
-      </researchPrerequisites>
-      <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SimpleResearchBench"]</xpath>
+        <value>
+            <label>research bench</label>
+            <description>A simple bench with writing implements and low-tech scientific tools. Researchers work here to discover new things.</description>
+            <graphicData>
+                <texPath>Things/Building/Research/sciencetable</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+                <drawSize>(3,1)</drawSize>
+                <shadowData>
+                    <volume>(2.8, 1.0, 0.85)</volume>
+                    <offset>(0,0,0)</offset>
+                </shadowData>
+                <damageData>
+                    <cornerTL>Damage/Corner</cornerTL>
+                    <cornerTR>Damage/Corner</cornerTR>
+                    <cornerBL>Damage/Corner</cornerBL>
+                    <cornerBR>Damage/Corner</cornerBR>
+                </damageData>
+            </graphicData>
+            <staticSunShadowHeight>0</staticSunShadowHeight>
+            <statBases>
+                <MaxHitPoints>120</MaxHitPoints>
+                <WorkToBuild>1900</WorkToBuild>
+                <Flammability>1.0</Flammability>
+                <ResearchSpeedFactor>0.7</ResearchSpeedFactor>
+            </statBases>
+            <size>(3,1)</size>
+            <stuffCategories>
+                <li>StrongMetallic</li>
+                <li>Woody</li>
+                <li>Plastic</li>
+            </stuffCategories>
+            <costStuffCount>150</costStuffCount>
+            <costList>
+                <ComponentMedieval>8</ComponentMedieval>
+                <Mechanism>2</Mechanism>
+            </costList>
+            <comps>
+                <li Class="CompProperties_AffectedByFacilities">
+                    <linkableFacilities>
+                        <li>FileCabinet</li>
+                        <li>LabTerminal</li>
+                    </linkableFacilities>
+                </li>
+            </comps>
+            <minifiedDef>MinifiedThing</minifiedDef>
+            <building Merge="true">
+                <uninstallWork>360</uninstallWork>
+            </building>
+            <placeWorkers>
+                <li>PlaceWorker_ShowFacilitiesConnections</li>
+                <li>PlaceWorker_DrawLinesToBookcasesInRoom</li>
+            </placeWorkers>
+            <interactionCellOffset>(0,0,1)</interactionCellOffset>
+            <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+            <designationCategory>Misc</designationCategory>
+            <researchPrerequisites>
+                <li>Research_table_B1</li>
+            </researchPrerequisites>
+            <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        </value>
+    </Operation>
 
-  <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="HiTechResearchBench"]</xpath>
-	  <attribute>ParentName</attribute>
-	  <value>SK.ResearchBaseDummy</value>
-  </Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="HiTechResearchBench"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.ResearchBaseDummy</value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="HiTechResearchBench"]</xpath>
-    <value>
-      <description>A high-tech bench with computers and electronic measurement equipment. Research is speed up by the high-tech tools. Requires power.</description>
-      <thingClass>SK.Building_ResearchBenchGraphicOn</thingClass>
-      <graphicData>
-        <texPath>Things/Building/Research/newsciencetable</texPath>
-        <graphicClass>Graphic_Multi</graphicClass>
-        <shaderType>CutoutComplex</shaderType>
-        <drawSize>(3,2.5)</drawSize>
-        <shadowData>
-          <volume>(2.8, 1.0, 0.85)</volume>
-          <offset>(0,0,0)</offset>
-        </shadowData>
-        <damageData>
-          <cornerTL>Damage/Corner</cornerTL>
-          <cornerTR>Damage/Corner</cornerTR>
-          <cornerBL>Damage/Corner</cornerBL>
-          <cornerBR>Damage/Corner</cornerBR>
-        </damageData>
-      </graphicData>
-	  <staticSunShadowHeight>0</staticSunShadowHeight>
-      <size>(3,1)</size>
-      <stuffCategories>
-        <li>StrongMetallic</li>
-      </stuffCategories>
-      <costStuffCount>180</costStuffCount>
-      <costList>
-        <Plastic>80</Plastic>
-        <Rubber>50</Rubber>
-        <ComponentIndustrial>15</ComponentIndustrial>
-        <Electronics>5</Electronics>
-      </costList>
-      <statBases>
-        <MaxHitPoints>250</MaxHitPoints>
-        <WorkToBuild>8000</WorkToBuild>
-        <Flammability>1.0</Flammability>
-        <ResearchSpeedFactor>1.0</ResearchSpeedFactor>
-      </statBases>
-      <tickerType>Normal</tickerType>
-      <comps>
-        <li Class="CompProperties_Flickable"/>
-        <li Class="CompProperties_Power">
-          <compClass>CompPowerTrader</compClass>
-          <basePowerConsumption>700</basePowerConsumption>
-          <shortCircuitInRain>true</shortCircuitInRain>
-		  <idlePowerDraw>70</idlePowerDraw>
-        </li>
-        <li Class="CompProperties_AffectedByFacilities">
-          <linkableFacilities>
-            <li>MultiAnalyzer</li>
-            <li>LabStation</li>
-            <li>LabTerminal</li>
-          </linkableFacilities>
-        </li>
-      </comps>
-      <minifiedDef>MinifiedThing</minifiedDef>
-	  <thingCategories/>
-      <building Merge="true">
-        <uninstallWork>360</uninstallWork>
-      </building>
-      <interactionCellOffset>(0,0,1)</interactionCellOffset>
-      <designationCategory>Misc</designationCategory>
-      <designationHotKey>Misc9</designationHotKey>
-      <researchPrerequisites>
-        <li>Research_table_C2</li>
-      </researchPrerequisites>
-      <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="HiTechResearchBench"]</xpath>
+        <value>
+            <description>A high-tech bench with computers and electronic measurement equipment. Research is speed up by the high-tech tools. Requires power.</description>
+            <thingClass>SK.Building_ResearchBenchGraphicOn</thingClass>
+            <graphicData>
+                <texPath>Things/Building/Research/newsciencetable</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+                <drawSize>(3,2.5)</drawSize>
+                <shadowData>
+                    <volume>(2.8, 1.0, 0.85)</volume>
+                    <offset>(0,0,0)</offset>
+                </shadowData>
+                <damageData>
+                    <cornerTL>Damage/Corner</cornerTL>
+                    <cornerTR>Damage/Corner</cornerTR>
+                    <cornerBL>Damage/Corner</cornerBL>
+                    <cornerBR>Damage/Corner</cornerBR>
+                </damageData>
+            </graphicData>
+            <staticSunShadowHeight>0</staticSunShadowHeight>
+            <size>(3,1)</size>
+            <stuffCategories>
+                <li>StrongMetallic</li>
+            </stuffCategories>
+            <costStuffCount>180</costStuffCount>
+            <costList>
+                <Plastic>80</Plastic>
+                <Rubber>50</Rubber>
+                <ComponentIndustrial>15</ComponentIndustrial>
+                <Electronics>5</Electronics>
+            </costList>
+            <statBases>
+                <MaxHitPoints>250</MaxHitPoints>
+                <WorkToBuild>8000</WorkToBuild>
+                <Flammability>1.0</Flammability>
+                <ResearchSpeedFactor>1.0</ResearchSpeedFactor>
+            </statBases>
+            <tickerType>Normal</tickerType>
+            <comps>
+                <li Class="CompProperties_Flickable"/>
+                <li Class="CompProperties_Power">
+                    <compClass>CompPowerTrader</compClass>
+                    <basePowerConsumption>700</basePowerConsumption>
+                    <shortCircuitInRain>true</shortCircuitInRain>
+                    <idlePowerDraw>70</idlePowerDraw>
+                </li>
+                <li Class="CompProperties_AffectedByFacilities">
+                    <linkableFacilities>
+                        <li>MultiAnalyzer</li>
+                        <li>LabStation</li>
+                        <li>LabTerminal</li>
+                    </linkableFacilities>
+                </li>
+            </comps>
+            <minifiedDef>MinifiedThing</minifiedDef>
+            <thingCategories/>
+            <building Merge="true">
+                <uninstallWork>360</uninstallWork>
+            </building>
+            <interactionCellOffset>(0,0,1)</interactionCellOffset>
+            <designationCategory>Misc</designationCategory>
+            <designationHotKey>Misc9</designationHotKey>
+            <researchPrerequisites>
+                <li>Research_table_C2</li>
+            </researchPrerequisites>
+            <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="SunLamp"]</xpath>
-    <value>
-      <thingClass>SK.Building_SunLamp</thingClass>
-      <graphicData>
-        <texPath>Things/Building/Misc/SunLamp/HeatingSunLamp</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <drawSize>(1,2)</drawSize>
-        <shadowData>
-          <volume>(0.2, 0.4, 0.2)</volume>
-          <offset>(0,0,-0.1)</offset>
-        </shadowData>
-        <damageData>
-          <rect>(0.2,0.2,0.6,0.6)</rect>
-        </damageData>
-      </graphicData>
-      <size>(1,1)</size>
-      <pathCost>40</pathCost>
-      <fillPercent>0.15</fillPercent>
-      <statBases>
-        <MaxHitPoints>50</MaxHitPoints>
-        <WorkToBuild>1130</WorkToBuild>
-        <Flammability>1.0</Flammability>
-        <Bulk>15</Bulk>
-        <Mass>5</Mass>
-      </statBases>
-      <costList>
-        <ComponentIndustrial>8</ComponentIndustrial>
-        <Glass>6</Glass>
-        <ElectronicComponents>7</ElectronicComponents>
-      </costList>
-      <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
-      <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-      <comps>
-        <li Class="CompProperties_Glower">
-          <overlightRadius>7.0</overlightRadius>
-          <glowRadius>14</glowRadius>
-          <glowColor>(370,370,370,0)</glowColor>
-        </li>
-        <li Class="CompProperties_Power">
-          <compClass>CompPowerTrader</compClass>
-          <shortCircuitInRain>true</shortCircuitInRain>
-          <soundPowerOn>Power_OnSmall</soundPowerOn>
-          <soundPowerOff>Power_OffSmall</soundPowerOff>
-          <basePowerConsumption>2000</basePowerConsumption>
-        </li>
-        <li Class="CompProperties_Schedule">
-          <startTime>0.25</startTime>
-          <endTime>0.8</endTime>
-          <offMessage>Off for plant resting period</offMessage>
-        </li>
-        <li Class="SK.CompProperties_HeatPusherAdvanced">
-          <compClass>SK.CompHeatPusherAdvanced</compClass>
-          <heatPerSecond>3</heatPerSecond>
-          <heatPushMaxTemperature>23</heatPushMaxTemperature>
-        </li>
-      </comps>
-      <building>
-      	<uninstallWork>800</uninstallWork>
-      </building>
-      <thingCategories>
-      	<li>BuildingsMisc</li>
-      </thingCategories>
-      <designationCategory>Misc</designationCategory>
-      <rotatable>false</rotatable>
-      <designationHotKey>Misc1</designationHotKey>
-      <researchPrerequisites>
-        <li>Cultivation_C1</li>
-      </researchPrerequisites>
-      <constructionSkillPrerequisite>13</constructionSkillPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SunLamp"]</xpath>
+        <value>
+            <thingClass>SK.Building_SunLamp</thingClass>
+            <graphicData>
+                <texPath>Things/Building/Misc/SunLamp/HeatingSunLamp</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>(1,2)</drawSize>
+                <shadowData>
+                    <volume>(0.2, 0.4, 0.2)</volume>
+                    <offset>(0,0,-0.1)</offset>
+                </shadowData>
+                <damageData>
+                    <rect>(0.2,0.2,0.6,0.6)</rect>
+                </damageData>
+            </graphicData>
+            <size>(1,1)</size>
+            <pathCost>40</pathCost>
+            <fillPercent>0.15</fillPercent>
+            <statBases>
+                <MaxHitPoints>50</MaxHitPoints>
+                <WorkToBuild>1130</WorkToBuild>
+                <Flammability>1.0</Flammability>
+                <Bulk>15</Bulk>
+                <Mass>5</Mass>
+            </statBases>
+            <costList>
+                <ComponentIndustrial>8</ComponentIndustrial>
+                <Glass>6</Glass>
+                <ElectronicComponents>7</ElectronicComponents>
+            </costList>
+            <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+            <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+            <comps>
+                <li Class="CompProperties_Glower">
+                    <overlightRadius>7.0</overlightRadius>
+                    <glowRadius>14</glowRadius>
+                    <glowColor>(370,370,370,0)</glowColor>
+                </li>
+                <li Class="CompProperties_Power">
+                    <compClass>CompPowerTrader</compClass>
+                    <shortCircuitInRain>true</shortCircuitInRain>
+                    <soundPowerOn>Power_OnSmall</soundPowerOn>
+                    <soundPowerOff>Power_OffSmall</soundPowerOff>
+                    <basePowerConsumption>2000</basePowerConsumption>
+                </li>
+                <li Class="CompProperties_Schedule">
+                    <startTime>0.25</startTime>
+                    <endTime>0.8</endTime>
+                    <offMessage>Off for plant resting period</offMessage>
+                </li>
+                <li Class="SK.CompProperties_HeatPusherAdvanced">
+                    <compClass>SK.CompHeatPusherAdvanced</compClass>
+                    <heatPerSecond>3</heatPerSecond>
+                    <heatPushMaxTemperature>23</heatPushMaxTemperature>
+                </li>
+            </comps>
+            <building>
+                <uninstallWork>800</uninstallWork>
+            </building>
+            <thingCategories>
+                <li>BuildingsMisc</li>
+            </thingCategories>
+            <designationCategory>Misc</designationCategory>
+            <rotatable>false</rotatable>
+            <designationHotKey>Misc1</designationHotKey>
+            <researchPrerequisites>
+                <li>Cultivation_C1</li>
+            </researchPrerequisites>
+            <constructionSkillPrerequisite>13</constructionSkillPrerequisite>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="OrbitalTradeBeacon"]</xpath>
-    <value>
-      <statBases>
-        <MaxHitPoints>75</MaxHitPoints>
-        <WorkToBuild>1100</WorkToBuild>
-        <Flammability>1.0</Flammability>
-        <Bulk>23</Bulk>
-        <Mass>11</Mass>
-      </statBases>
-      <specialDisplayRadius>7.9</specialDisplayRadius>
-      <costList>
-        <ComponentIndustrial>8</ComponentIndustrial>
-        <Mechanism>3</Mechanism>
-      </costList>
-      <comps>
-        <li Class="CompProperties_Flickable"/>
-        <li Class="CompProperties_Breakdownable"/>
-        <li Class="CompProperties_Power">
-          <compClass>CompPowerTrader</compClass>
-          <basePowerConsumption>60</basePowerConsumption>
-        </li>
-      </comps>
-      <building Merge="true">
-      	<uninstallWork>800</uninstallWork>
-      </building>
-      <pathCost>20</pathCost>
-      <researchPrerequisites>
-        <li>Telecommunications_C1</li>
-      </researchPrerequisites>
-      <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="OrbitalTradeBeacon"]</xpath>
+        <value>
+            <statBases>
+                <MaxHitPoints>75</MaxHitPoints>
+                <WorkToBuild>1100</WorkToBuild>
+                <Flammability>1.0</Flammability>
+                <Bulk>23</Bulk>
+                <Mass>11</Mass>
+            </statBases>
+            <specialDisplayRadius>7.9</specialDisplayRadius>
+            <costList>
+                <ComponentIndustrial>8</ComponentIndustrial>
+                <Mechanism>3</Mechanism>
+            </costList>
+            <comps>
+                <li Class="CompProperties_Flickable"/>
+                <li Class="CompProperties_Breakdownable"/>
+                <li Class="CompProperties_Power">
+                    <compClass>CompPowerTrader</compClass>
+                    <basePowerConsumption>60</basePowerConsumption>
+                </li>
+            </comps>
+            <building Merge="true">
+                <uninstallWork>800</uninstallWork>
+            </building>
+            <pathCost>20</pathCost>
+            <researchPrerequisites>
+                <li>Telecommunications_C1</li>
+            </researchPrerequisites>
+            <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="CommsConsole"]</xpath>
-    <value>
-      <thingClass>SK.Building_CommsConsoleGraphicOn</thingClass>
-      <graphicData>
-        <texPath>Things/Building/Misc/Console/console</texPath>
-        <graphicClass>Graphic_Multi</graphicClass>
-        <shaderType>CutoutComplex</shaderType>
-        <drawSize>(2.2,1.2)</drawSize>
-        <shadowData>
-          <volume>(1.8, 1.0, 0.85)</volume>
-          <offset>(0,0,0)</offset>
-        </shadowData>
-        <damageData>
-          <cornerTL>Damage/Corner</cornerTL>
-          <cornerTR>Damage/Corner</cornerTR>
-          <cornerBL>Damage/Corner</cornerBL>
-          <cornerBR>Damage/Corner</cornerBR>
-        </damageData>
-      </graphicData>
-      <fillPercent>0.6</fillPercent>
-      <rotatable>true</rotatable>
-      <statBases>
-        <MaxHitPoints>180</MaxHitPoints>
-        <WorkToBuild>3550</WorkToBuild>
-        <Flammability>1.0</Flammability>
-        <Mass>200</Mass>
-      </statBases>
-      <size>(2,1)</size>
-      <minifiedDef>MinifiedThing</minifiedDef>
-      <thingCategories>
-        <li>BuildingsMisc</li>
-      </thingCategories>
-      <stuffCategories>
-        <li>StrongMetallic</li>
-      </stuffCategories>
-      <costStuffCount>60</costStuffCount>
-      <costList>
-        <Glass>15</Glass>
-        <Electronics>5</Electronics>
-        <ComponentIndustrial>5</ComponentIndustrial>
-      </costList>
-      <interactionCellOffset>(0,0,1)</interactionCellOffset>
-      <comps>
-        <li Class="CompProperties_Flickable"/>
-        <li Class="CompProperties_Breakdownable"/>
-        <li Class="CompProperties_Power">
-          <compClass>CompPowerTrader</compClass>
-          <shortCircuitInRain>true</shortCircuitInRain>
-          <basePowerConsumption>300</basePowerConsumption>
-		  <idlePowerDraw>30</idlePowerDraw>
-        </li>
-        <li Class="CompProperties_Usable" MayRequire="Ludeon.RimWorld.Biotech">
-          <useJob>TriggerObject</useJob>
-          <useLabel>Summon diabolus threat</useLabel>
-          <useDuration>900</useDuration>
-          <floatMenuOptionPriority>SummonThreat</floatMenuOptionPriority>
-          <floatMenuFactionIcon>Mechanoid</floatMenuFactionIcon>
-          <ignoreOtherReservations>true</ignoreOtherReservations>
-        </li>
-        <li Class="CompProperties_Useable_CallBossgroup" MayRequire="Ludeon.RimWorld.Biotech">
-          <bossgroupDef>Diabolus</bossgroupDef>
-          <spawnLetterLabelKey>LetterLabelCommsConsoleSpawned</spawnLetterLabelKey>
-          <spawnLetterTextKey>LetterCommsConsoleSpawned</spawnLetterTextKey>
-          <effecterDef>CommsConsoleBossgroupSummoned</effecterDef>
-          <delayTicks>120</delayTicks>
-        </li>
-      </comps>
-      <researchPrerequisites>
-        <li>Telecommunications_C1</li>
-      </researchPrerequisites>
-      <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="CommsConsole"]</xpath>
+        <value>
+            <thingClass>SK.Building_CommsConsoleGraphicOn</thingClass>
+            <graphicData>
+                <texPath>Things/Building/Misc/Console/console</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+                <drawSize>(2.2,1.2)</drawSize>
+                <shadowData>
+                    <volume>(1.8, 1.0, 0.85)</volume>
+                    <offset>(0,0,0)</offset>
+                </shadowData>
+                <damageData>
+                    <cornerTL>Damage/Corner</cornerTL>
+                    <cornerTR>Damage/Corner</cornerTR>
+                    <cornerBL>Damage/Corner</cornerBL>
+                    <cornerBR>Damage/Corner</cornerBR>
+                </damageData>
+            </graphicData>
+            <fillPercent>0.6</fillPercent>
+            <rotatable>true</rotatable>
+            <statBases>
+                <MaxHitPoints>180</MaxHitPoints>
+                <WorkToBuild>3550</WorkToBuild>
+                <Flammability>1.0</Flammability>
+                <Mass>200</Mass>
+            </statBases>
+            <size>(2,1)</size>
+            <minifiedDef>MinifiedThing</minifiedDef>
+            <thingCategories>
+                <li>BuildingsMisc</li>
+            </thingCategories>
+            <stuffCategories>
+                <li>StrongMetallic</li>
+            </stuffCategories>
+            <costStuffCount>60</costStuffCount>
+            <costList>
+                <Glass>15</Glass>
+                <Electronics>5</Electronics>
+                <ComponentIndustrial>5</ComponentIndustrial>
+            </costList>
+            <interactionCellOffset>(0,0,1)</interactionCellOffset>
+            <comps>
+                <li Class="CompProperties_Flickable"/>
+                <li Class="CompProperties_Breakdownable"/>
+                <li Class="CompProperties_Power">
+                    <compClass>CompPowerTrader</compClass>
+                    <shortCircuitInRain>true</shortCircuitInRain>
+                    <basePowerConsumption>300</basePowerConsumption>
+                    <idlePowerDraw>30</idlePowerDraw>
+                </li>
+                <li Class="CompProperties_Usable" MayRequire="Ludeon.RimWorld.Biotech">
+                    <useJob>TriggerObject</useJob>
+                    <useLabel>Summon diabolus threat</useLabel>
+                    <useDuration>900</useDuration>
+                    <floatMenuOptionPriority>SummonThreat</floatMenuOptionPriority>
+                    <floatMenuFactionIcon>Mechanoid</floatMenuFactionIcon>
+                    <ignoreOtherReservations>true</ignoreOtherReservations>
+                </li>
+                <li Class="CompProperties_Useable_CallBossgroup" MayRequire="Ludeon.RimWorld.Biotech">
+                    <bossgroupDef>Diabolus</bossgroupDef>
+                    <spawnLetterLabelKey>LetterLabelCommsConsoleSpawned</spawnLetterLabelKey>
+                    <spawnLetterTextKey>LetterCommsConsoleSpawned</spawnLetterTextKey>
+                    <effecterDef>CommsConsoleBossgroupSummoned</effecterDef>
+                    <delayTicks>120</delayTicks>
+                </li>
+            </comps>
+            <researchPrerequisites>
+                <li>Telecommunications_C1</li>
+            </researchPrerequisites>
+            <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+        </value>
+    </Operation>
 
-  <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="MultiAnalyzer"]</xpath>
-	  <attribute>ParentName</attribute>
-	  <value>SK.FacilitiesBaseDummy</value>
-  </Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="MultiAnalyzer"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.FacilitiesBaseDummy</value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="MultiAnalyzer"]</xpath>
-    <value>
-      <thingClass>SK.Building_Lamp</thingClass>
-      <graphicData>
-        <texPath>Things/Building/Research/MultiAnalyzer</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <shaderType>CutoutComplex</shaderType>
-        <drawSize>(2,2)</drawSize>
-        <shadowData>
-          <volume>(1.8, 0.7, 1.8)</volume>
-          <offset>(0,0,0)</offset>
-        </shadowData>
-        <damageData>
-          <rect>(0.15,0.15,1.7,1.7)</rect>
-        </damageData>
-      </graphicData>
-      <fillPercent>0.4</fillPercent>
-	  <thingCategories/>
-      <statBases>
-        <MaxHitPoints>200</MaxHitPoints>
-        <WorkToBuild>5500</WorkToBuild>
-        <Flammability>1.0</Flammability>
-        <Bulk>85</Bulk>
-        <Mass>40</Mass>
-      </statBases>
-      <stuffCategories>
-        <li>StrongMetallic</li>
-      </stuffCategories>
-      <costStuffCount>60</costStuffCount>
-      <costList>
-        <Plastic>15</Plastic>
-        <Glass>10</Glass>
-        <Electronics>5</Electronics>
-        <ComponentIndustrial>5</ComponentIndustrial>
-      </costList>
-      <comps>
-        <li Class="CompProperties_Flickable"/>
-        <li Class="CompProperties_Breakdownable"/>
-        <li Class="CompProperties_Power">
-          <compClass>CompPowerTrader</compClass>
-          <shortCircuitInRain>true</shortCircuitInRain>
-          <basePowerConsumption>350</basePowerConsumption>
-        </li>
-        <li Class="CompProperties_Facility">
-          <statOffsets>
-            <ResearchSpeedFactor>0.12</ResearchSpeedFactor>
-          </statOffsets>
-          <maxSimultaneous>1</maxSimultaneous>
-        </li>
-      </comps>
-      <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="MultiAnalyzer"]</xpath>
+        <value>
+            <thingClass>SK.Building_Lamp</thingClass>
+            <graphicData>
+                <texPath>Things/Building/Research/MultiAnalyzer</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+                <drawSize>(2,2)</drawSize>
+                <shadowData>
+                    <volume>(1.8, 0.7, 1.8)</volume>
+                    <offset>(0,0,0)</offset>
+                </shadowData>
+                <damageData>
+                    <rect>(0.15,0.15,1.7,1.7)</rect>
+                </damageData>
+            </graphicData>
+            <fillPercent>0.4</fillPercent>
+            <thingCategories/>
+            <statBases>
+                <MaxHitPoints>200</MaxHitPoints>
+                <WorkToBuild>5500</WorkToBuild>
+                <Flammability>1.0</Flammability>
+                <Bulk>85</Bulk>
+                <Mass>40</Mass>
+            </statBases>
+            <stuffCategories>
+                <li>StrongMetallic</li>
+            </stuffCategories>
+            <costStuffCount>60</costStuffCount>
+            <costList>
+                <Plastic>15</Plastic>
+                <Glass>10</Glass>
+                <Electronics>5</Electronics>
+                <ComponentIndustrial>5</ComponentIndustrial>
+            </costList>
+            <comps>
+                <li Class="CompProperties_Flickable"/>
+                <li Class="CompProperties_Breakdownable"/>
+                <li Class="CompProperties_Power">
+                    <compClass>CompPowerTrader</compClass>
+                    <shortCircuitInRain>true</shortCircuitInRain>
+                    <basePowerConsumption>350</basePowerConsumption>
+                </li>
+                <li Class="CompProperties_Facility">
+                    <statOffsets>
+                        <ResearchSpeedFactor>0.12</ResearchSpeedFactor>
+                    </statOffsets>
+                    <maxSimultaneous>1</maxSimultaneous>
+                </li>
+            </comps>
+            <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+        </value>
+    </Operation>
 
-  <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="VitalsMonitor"]</xpath>
-	  <attribute>ParentName</attribute>
-	  <value>SK.FacilitiesBaseDummy</value>
-  </Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="VitalsMonitor"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.FacilitiesBaseDummy</value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="VitalsMonitor"]</xpath>
-    <value>
-      <thingClass>SK.Building_Lamp</thingClass>
-      <graphicData>
-        <texPath>Things/Building/Facilities/VitalMonitors/tomograph</texPath>
-        <graphicClass>Graphic_Multi</graphicClass>
-        <shaderType>CutoutComplex</shaderType>
-        <shadowData>
-          <volume>(0.85, 1.0, 0.85)</volume>
-          <offset>(0,0,0)</offset>
-        </shadowData>
-        <damageData>
-			<rectN>(0.078125,0.46875,0.859375,0.53125)</rectN>
-			<rectS>(0.078125,0.46875,0.859375,0.53125)</rectS>
-			<rectE>(0.125,0.46875,0.625,0.296875)</rectE>
-			<rectW>(0.25,0.46875,0.625,0.296875)</rectW>
-			<cornerTR>Damage/Corner</cornerTR>
-        </damageData>
-      </graphicData>
-      <canOverlapZones>false</canOverlapZones>
-      <fillPercent>0.4</fillPercent>
-      <statBases>
-        <MaxHitPoints>130</MaxHitPoints>
-        <WorkToBuild>4000</WorkToBuild>
-        <Flammability>1.0</Flammability>
-        <Bulk>35</Bulk>
-        <Mass>20</Mass>
-      </statBases>
-      <stuffCategories>
-        <li>StrongMetallic</li>
-      </stuffCategories>
-      <costStuffCount>50</costStuffCount>
-      <costList>
-        <Plastic>30</Plastic>
-        <Glass>30</Glass>
-        <ComponentIndustrial>5</ComponentIndustrial>
-        <Electronics>3</Electronics>
-      </costList>
-      <comps>
-        <li Class="CompProperties_Flickable"/>
-        <li Class="CompProperties_Breakdownable"/>
-        <li Class="CompProperties_Power">
-          <compClass>CompPowerTrader</compClass>
-          <shortCircuitInRain>true</shortCircuitInRain>
-          <basePowerConsumption>150</basePowerConsumption>
-		  <idlePowerDraw>0</idlePowerDraw>
-        </li>
-        <li Class="CompProperties_Facility">
-          <statOffsets>
-            <MedicalTendQualityOffset>0.08</MedicalTendQualityOffset>
-            <ImmunityGainSpeedFactor>0.021</ImmunityGainSpeedFactor>
-            <SurgerySuccessChanceFactor>0.05</SurgerySuccessChanceFactor>
-          </statOffsets>
-          <maxSimultaneous>1</maxSimultaneous>
-          <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
-          <canLinkToMedBedsOnly>true</canLinkToMedBedsOnly>
-        </li>
-      </comps>
-      <!--<tickerType>Normal</tickerType>-->
-      <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="VitalsMonitor"]</xpath>
+        <value>
+            <thingClass>SK.Building_Lamp</thingClass>
+            <graphicData>
+                <texPath>Things/Building/Facilities/VitalMonitors/tomograph</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+                <shadowData>
+                    <volume>(0.85, 1.0, 0.85)</volume>
+                    <offset>(0,0,0)</offset>
+                </shadowData>
+                <damageData>
+                    <rectN>(0.078125,0.46875,0.859375,0.53125)</rectN>
+                    <rectS>(0.078125,0.46875,0.859375,0.53125)</rectS>
+                    <rectE>(0.125,0.46875,0.625,0.296875)</rectE>
+                    <rectW>(0.25,0.46875,0.625,0.296875)</rectW>
+                    <cornerTR>Damage/Corner</cornerTR>
+                </damageData>
+            </graphicData>
+            <canOverlapZones>false</canOverlapZones>
+            <fillPercent>0.4</fillPercent>
+            <statBases>
+                <MaxHitPoints>130</MaxHitPoints>
+                <WorkToBuild>4000</WorkToBuild>
+                <Flammability>1.0</Flammability>
+                <Bulk>35</Bulk>
+                <Mass>20</Mass>
+            </statBases>
+            <stuffCategories>
+                <li>StrongMetallic</li>
+            </stuffCategories>
+            <costStuffCount>50</costStuffCount>
+            <costList>
+                <Plastic>30</Plastic>
+                <Glass>30</Glass>
+                <ComponentIndustrial>5</ComponentIndustrial>
+                <Electronics>3</Electronics>
+            </costList>
+            <comps>
+                <li Class="CompProperties_Flickable"/>
+                <li Class="CompProperties_Breakdownable"/>
+                <li Class="CompProperties_Power">
+                    <compClass>CompPowerTrader</compClass>
+                    <shortCircuitInRain>true</shortCircuitInRain>
+                    <basePowerConsumption>150</basePowerConsumption>
+                    <idlePowerDraw>0</idlePowerDraw>
+                </li>
+                <li Class="CompProperties_Facility">
+                    <statOffsets>
+                        <MedicalTendQualityOffset>0.08</MedicalTendQualityOffset>
+                        <ImmunityGainSpeedFactor>0.021</ImmunityGainSpeedFactor>
+                        <SurgerySuccessChanceFactor>0.05</SurgerySuccessChanceFactor>
+                    </statOffsets>
+                    <maxSimultaneous>1</maxSimultaneous>
+                    <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+                    <canLinkToMedBedsOnly>true</canLinkToMedBedsOnly>
+                </li>
+            </comps>
+            <!--<tickerType>Normal</tickerType>-->
+            <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+        </value>
+    </Operation>
 
-  <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="ToolCabinet"]</xpath>
-	  <attribute>ParentName</attribute>
-	  <value>SK.FacilitiesBaseDummy</value>
-  </Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="ToolCabinet"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.FacilitiesBaseDummy</value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="ToolCabinet"]</xpath>
-    <value>
-      <label>large tool cabinet</label>
-      <graphicData>
-        <texPath>Things/Building/Furniture/Tools/ToolCabinet</texPath>
-        <graphicClass>Graphic_Multi</graphicClass>
-        <drawSize>(2,1)</drawSize>
-        <shaderType>CutoutComplex</shaderType>
-        <shadowData>
-          <volume>(1.8, 1.0, 0.85)</volume>
-          <offset>(0,0,0)</offset>
-        </shadowData>
-        <damageData>
-          <cornerTL>Damage/Corner</cornerTL>
-          <cornerTR>Damage/Corner</cornerTR>
-          <cornerBL>Damage/Corner</cornerBL>
-          <cornerBR>Damage/Corner</cornerBR>
-        </damageData>
-      </graphicData>
-	  <staticSunShadowHeight>0</staticSunShadowHeight>
-      <fillPercent>0.3</fillPercent>
-      <statBases>
-        <MaxHitPoints>100</MaxHitPoints>
-        <WorkToBuild>1100</WorkToBuild>
-        <Flammability>1.0</Flammability>
-        <Bulk>65</Bulk>
-        <Mass>35</Mass>
-      </statBases>
-      <stuffCategories>
-        <li>StrongMetallic</li>
-      </stuffCategories>
-      <costStuffCount>70</costStuffCount>
-      <costList>
-        <Rubber>20</Rubber>
-        <ComponentIndustrial>8</ComponentIndustrial>
-        <Electronics>6</Electronics>
-        <Mechanism>5</Mechanism>
-      </costList>
-      <comps>
-        <li Class="CompProperties_Facility">
-          <statOffsets>
-            <WorkTableWorkSpeedFactor>0.20</WorkTableWorkSpeedFactor>
-          </statOffsets>
-          <maxSimultaneous>2</maxSimultaneous>
-        </li>
-      </comps>
-      <researchPrerequisites>
-        <li>Ergonomics_C2</li>
-      </researchPrerequisites>
-      <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="ToolCabinet"]</xpath>
+        <value>
+            <label>large tool cabinet</label>
+            <graphicData>
+                <texPath>Things/Building/Furniture/Tools/ToolCabinet</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>(2,1)</drawSize>
+                <shaderType>CutoutComplex</shaderType>
+                <shadowData>
+                    <volume>(1.8, 1.0, 0.85)</volume>
+                    <offset>(0,0,0)</offset>
+                </shadowData>
+                <damageData>
+                    <cornerTL>Damage/Corner</cornerTL>
+                    <cornerTR>Damage/Corner</cornerTR>
+                    <cornerBL>Damage/Corner</cornerBL>
+                    <cornerBR>Damage/Corner</cornerBR>
+                </damageData>
+            </graphicData>
+            <staticSunShadowHeight>0</staticSunShadowHeight>
+            <fillPercent>0.3</fillPercent>
+            <statBases>
+                <MaxHitPoints>100</MaxHitPoints>
+                <WorkToBuild>1100</WorkToBuild>
+                <Flammability>1.0</Flammability>
+                <Bulk>65</Bulk>
+                <Mass>35</Mass>
+            </statBases>
+            <stuffCategories>
+                <li>StrongMetallic</li>
+            </stuffCategories>
+            <costStuffCount>70</costStuffCount>
+            <costList>
+                <Rubber>20</Rubber>
+                <ComponentIndustrial>8</ComponentIndustrial>
+                <Electronics>6</Electronics>
+                <Mechanism>5</Mechanism>
+            </costList>
+            <comps>
+                <li Class="CompProperties_Facility">
+                    <statOffsets>
+                        <WorkTableWorkSpeedFactor>0.20</WorkTableWorkSpeedFactor>
+                    </statOffsets>
+                    <maxSimultaneous>2</maxSimultaneous>
+                </li>
+            </comps>
+            <researchPrerequisites>
+                <li>Ergonomics_C2</li>
+            </researchPrerequisites>
+            <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+        </value>
+    </Operation>
 
-  <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="FirefoamPopper"]</xpath>
-	  <attribute>ParentName</attribute>
-	  <value>SK.FacilitiesBaseDummy</value>
-  </Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="FirefoamPopper"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.FacilitiesBaseDummy</value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="FirefoamPopper"]</xpath>
-    <value>
-      <graphicData>
-        <texPath>Things/Building/Misc/fireplug</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <shadowData>
-          <volume>(0.25, 0.5, 0.25)</volume>
-          <offset>(0,0,-0.1)</offset>
-        </shadowData>
-        <damageData>
-          <rect>(0.2,0.2,0.6,0.6)</rect>
-        </damageData>
-      </graphicData>
-      <statBases>
-        <MaxHitPoints>50</MaxHitPoints>
-        <WorkToBuild>800</WorkToBuild>
-        <Flammability>1.0</Flammability>
-        <Beauty>-8</Beauty>
-        <Bulk>32</Bulk>
-        <Mass>18</Mass>
-      </statBases>
-      <fillPercent>0.15</fillPercent>
-      <costList>
-        <ComponentIndustrial>5</ComponentIndustrial>
-        <Surfactant>25</Surfactant>
-        <ElectronicComponents>1</ElectronicComponents>
-        <Mechanism>1</Mechanism>
-      </costList>
-      <pathCost>25</pathCost>
-      <designationHotKey>Misc6</designationHotKey>
-      <researchPrerequisites>
-        <li>IED_C1</li>
-      </researchPrerequisites>
-      <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="FirefoamPopper"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Building/Misc/fireplug</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shadowData>
+                    <volume>(0.25, 0.5, 0.25)</volume>
+                    <offset>(0,0,-0.1)</offset>
+                </shadowData>
+                <damageData>
+                    <rect>(0.2,0.2,0.6,0.6)</rect>
+                </damageData>
+            </graphicData>
+            <statBases>
+                <MaxHitPoints>50</MaxHitPoints>
+                <WorkToBuild>800</WorkToBuild>
+                <Flammability>1.0</Flammability>
+                <Beauty>-8</Beauty>
+                <Bulk>32</Bulk>
+                <Mass>18</Mass>
+            </statBases>
+            <fillPercent>0.15</fillPercent>
+            <costList>
+                <ComponentIndustrial>5</ComponentIndustrial>
+                <Surfactant>25</Surfactant>
+                <ElectronicComponents>1</ElectronicComponents>
+                <Mechanism>1</Mechanism>
+            </costList>
+            <pathCost>25</pathCost>
+            <designationHotKey>Misc6</designationHotKey>
+            <researchPrerequisites>
+                <li>IED_C1</li>
+            </researchPrerequisites>
+            <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="MoisturePump"]</xpath>
-    <value>
-      <description>Very slowly removes moisture from nearby terrain, converting marshes or shallow water into dry ground. Does not affect deep water.</description>
-      <graphicData>
-        <texPath>Things/Building/Misc/FertilizerPump</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <drawRotated>false</drawRotated>
-        <shadowData>
-          <volume>(0.6, 0.5, 0.6)</volume>
-          <offset>(0,0,0)</offset>
-        </shadowData>
-        <damageData>
-          <rect>(0.2,0.2,0.6,0.6)</rect>
-        </damageData>
-      </graphicData>
-      <comps>
-        <li Class="CompProperties_Forbiddable"/>
-        <li Class="CompProperties_Power">
-          <compClass>CompPowerTrader</compClass>
-          <shortCircuitInRain>true</shortCircuitInRain>
-          <basePowerConsumption>300</basePowerConsumption>
-        </li>
-        <li Class="CompProperties_TerrainPumpDry">
-          <soundWorking>MoisturePump_Ambience</soundWorking>
-          <radius>6.9</radius>
-          <daysToRadius>60</daysToRadius>
-        </li>
-      </comps>
-      <statBases>
-        <MaxHitPoints>180</MaxHitPoints>
-        <WorkToBuild>800</WorkToBuild>
-        <Flammability>1.0</Flammability>
-        <Beauty>-8</Beauty>
-        <Bulk>70</Bulk>
-        <Mass>32</Mass>
-      </statBases>
-      <building Merge="true">
-      	<uninstallWork>800</uninstallWork>
-      </building>
-      <thingCategories>
-      	<li>BuildingsMisc</li>
-      </thingCategories>
-      <costList>
-        <ComponentIndustrial>8</ComponentIndustrial>
-        <Rubber>35</Rubber>
-        <ElectronicComponents>2</ElectronicComponents>
-        <Mechanism>2</Mechanism>
-      </costList>
-      <minifiedDef>MinifiedThing</minifiedDef>
-      <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-      <pathCost>25</pathCost>
-      <designationCategory>SK_category_terraform</designationCategory>
-      <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="MoisturePump"]</xpath>
+        <value>
+            <description>Very slowly removes moisture from nearby terrain, converting marshes or shallow water into dry ground. Does not affect deep water.</description>
+            <graphicData>
+                <texPath>Things/Building/Misc/FertilizerPump</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawRotated>false</drawRotated>
+                <shadowData>
+                    <volume>(0.6, 0.5, 0.6)</volume>
+                    <offset>(0,0,0)</offset>
+                </shadowData>
+                <damageData>
+                    <rect>(0.2,0.2,0.6,0.6)</rect>
+                </damageData>
+            </graphicData>
+            <comps>
+                <li Class="CompProperties_Forbiddable"/>
+                <li Class="CompProperties_Power">
+                    <compClass>CompPowerTrader</compClass>
+                    <shortCircuitInRain>true</shortCircuitInRain>
+                    <basePowerConsumption>300</basePowerConsumption>
+                </li>
+                <li Class="CompProperties_TerrainPumpDry">
+                    <soundWorking>MoisturePump_Ambience</soundWorking>
+                    <radius>6.9</radius>
+                    <daysToRadius>60</daysToRadius>
+                </li>
+            </comps>
+            <statBases>
+                <MaxHitPoints>180</MaxHitPoints>
+                <WorkToBuild>800</WorkToBuild>
+                <Flammability>1.0</Flammability>
+                <Beauty>-8</Beauty>
+                <Bulk>70</Bulk>
+                <Mass>32</Mass>
+            </statBases>
+            <building Merge="true">
+                <uninstallWork>800</uninstallWork>
+            </building>
+            <thingCategories>
+                <li>BuildingsMisc</li>
+            </thingCategories>
+            <costList>
+                <ComponentIndustrial>8</ComponentIndustrial>
+                <Rubber>35</Rubber>
+                <ElectronicComponents>2</ElectronicComponents>
+                <Mechanism>2</Mechanism>
+            </costList>
+            <minifiedDef>MinifiedThing</minifiedDef>
+            <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+            <pathCost>25</pathCost>
+            <designationCategory>SK_category_terraform</designationCategory>
+            <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="Grave"]</xpath>
-    <value>
-      <statBases>
-        <WorkToBuild>1150</WorkToBuild>
-        <MeditationFocusStrength>0.07</MeditationFocusStrength>
-      </statBases>
-      <pathCost>30</pathCost>
-      <building Inherit="true">
-        <preventDeteriorationInside>false</preventDeteriorationInside>
-      </building>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Grave"]</xpath>
+        <value>
+            <statBases>
+                <WorkToBuild>1150</WorkToBuild>
+                <MeditationFocusStrength>0.07</MeditationFocusStrength>
+            </statBases>
+            <pathCost>30</pathCost>
+            <building Inherit="true">
+                <preventDeteriorationInside>false</preventDeteriorationInside>
+            </building>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="Sarcophagus"]</xpath>
-    <value>
-      <graphicData>
-        <texPath>Things/Building/Misc/Sarcophagus</texPath>
-        <graphicClass>Graphic_Multi</graphicClass>
-        <drawSize>(1,2)</drawSize>
-        <damageData>
-          <cornerTL>Damage/Corner</cornerTL>
-          <cornerTR>Damage/Corner</cornerTR>
-          <cornerBL>Damage/Corner</cornerBL>
-          <cornerBR>Damage/Corner</cornerBR>
-        </damageData>
-      </graphicData>
-      <building Merge="true">
-        <preventDeteriorationInside>false</preventDeteriorationInside>
-        <fullGraveGraphicData>
-          <texPath>Things/Building/Misc/SarcophagusFull</texPath>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>(1,2)</drawSize>
-        </fullGraveGraphicData>
-      </building>
-      <statBases>
-        <WorkToBuild>2100</WorkToBuild>
-        <MaxHitPoints>250</MaxHitPoints>
-        <Flammability>1.0</Flammability>
-        <MeditationFocusStrength>0.12</MeditationFocusStrength>
-      </statBases>
-      <stuffCategories>
-        <li>Woody</li>
-        <li>Metallic</li>
-        <li>Stony</li>
-        <li>Bricks</li>
-        <li>Ceramic</li>
-      </stuffCategories>
-      <costStuffCount>80</costStuffCount>
-      <defaultPlacingRot>South</defaultPlacingRot>
-      <pathCost>50</pathCost>
-      <researchPrerequisites>
-        <li>Construction_B1</li>
-      </researchPrerequisites>
-      <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Sarcophagus"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Building/Misc/Sarcophagus</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>(1,2)</drawSize>
+                <damageData>
+                    <cornerTL>Damage/Corner</cornerTL>
+                    <cornerTR>Damage/Corner</cornerTR>
+                    <cornerBL>Damage/Corner</cornerBL>
+                    <cornerBR>Damage/Corner</cornerBR>
+                </damageData>
+            </graphicData>
+            <building Merge="true">
+                <preventDeteriorationInside>false</preventDeteriorationInside>
+                <fullGraveGraphicData>
+                    <texPath>Things/Building/Misc/SarcophagusFull</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(1,2)</drawSize>
+                </fullGraveGraphicData>
+            </building>
+            <statBases>
+                <WorkToBuild>2100</WorkToBuild>
+                <MaxHitPoints>250</MaxHitPoints>
+                <Flammability>1.0</Flammability>
+                <MeditationFocusStrength>0.12</MeditationFocusStrength>
+            </statBases>
+            <stuffCategories>
+                <li>Woody</li>
+                <li>Metallic</li>
+                <li>Stony</li>
+                <li>Bricks</li>
+                <li>Ceramic</li>
+            </stuffCategories>
+            <costStuffCount>80</costStuffCount>
+            <defaultPlacingRot>South</defaultPlacingRot>
+            <pathCost>50</pathCost>
+            <researchPrerequisites>
+                <li>Construction_B1</li>
+            </researchPrerequisites>
+            <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="CryptosleepCasket"]</xpath>
-    <value>
-      <drawerType>MapMeshAndRealTime</drawerType>
-      <graphicData>
-        <texPath>Things/Building/Ship/ShipCryptosleepCasket</texPath>
-        <graphicClass>Graphic_Multi</graphicClass>
-        <drawSize>(1,2)</drawSize>
-      </graphicData>
-      <pathCost>70</pathCost>
-      <castEdgeShadows>true</castEdgeShadows>
-      <statBases>
-        <WorkToBuild>2300</WorkToBuild>
-        <MaxHitPoints>250</MaxHitPoints>
-        <Flammability>1.0</Flammability>
-      </statBases>
-      <stuffCategories>
-        <li>RuggedMetallic</li>
-      </stuffCategories>
-      <costStuffCount>60</costStuffCount>
-      <costList>
-        <Glass>15</Glass>
-        <ComponentSpacer>4</ComponentSpacer>
-        <Electronics>4</Electronics>
-      </costList>
-      <comps>
-        <li Class="CompProperties_Explosive">
-          <explosiveRadius>2.66</explosiveRadius>
-          <explosiveDamageType>Flame</explosiveDamageType>
-        </li><!-- Need Open Texture
-        <li Class="CompProperties_EmptyStateGraphic">
-          <graphicData>
-            <texPath>Things/Building/Ship/ShipCryptosleepCasketOpenDoor</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(1, 2)</drawSize>
-          </graphicData>
-          <alwaysDrawParent>true</alwaysDrawParent>
-        </li>-->
-      </comps>
-      <staticSunShadowHeight>1.0</staticSunShadowHeight>
-      <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="CryptosleepCasket"]</xpath>
+        <value>
+            <drawerType>MapMeshAndRealTime</drawerType>
+            <graphicData>
+                <texPath>Things/Building/Ship/ShipCryptosleepCasket</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+                <drawSize>(1.5,3)</drawSize>
+                <shadowData>
+                    <volume>(0.83, 0.3, 1.7)</volume>
+                </shadowData>
+            </graphicData>
+            <pathCost>70</pathCost>
+            <castEdgeShadows>true</castEdgeShadows>
+            <statBases>
+                <WorkToBuild>2300</WorkToBuild>
+                <MaxHitPoints>250</MaxHitPoints>
+                <Flammability>1.0</Flammability>
+            </statBases>
+            <stuffCategories>
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <costStuffCount>60</costStuffCount>
+            <costList>
+                <Glass>15</Glass>
+                <ComponentSpacer>4</ComponentSpacer>
+                <Electronics>4</Electronics>
+            </costList>
+            <comps>
+                <li Class="CompProperties_Explosive">
+                    <explosiveRadius>2.66</explosiveRadius>
+                    <explosiveDamageType>Flame</explosiveDamageType>
+                </li>
+                <li Class="CompProperties_EmptyStateGraphic">
+                    <graphicData>
+                        <texPath>Things/Building/Ship/ShipCryptosleepCasketEmpty</texPath>
+                        <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>CutoutComplex</shaderType>
+                        <drawSize>(1.5,3)</drawSize>
+                        <shadowData>
+                            <volume>(0.83, 0.3, 1.7)</volume>
+                        </shadowData>
+                    </graphicData>
+                  <alwaysDrawParent>false</alwaysDrawParent>
+                </li>
+            </comps>
+            <!--<staticSunShadowHeight>1.0</staticSunShadowHeight>-->
+            <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="AncientCryptosleepCasket"]</xpath>
-    <value>
-      <drawerType>MapMeshAndRealTime</drawerType>
-      <pathCost>70</pathCost>
-      <castEdgeShadows>true</castEdgeShadows>
-      <costList>
-        <Glass>10</Glass>
-        <ComponentSpacer>4</ComponentSpacer>
-        <Electronics>4</Electronics>
-        <Uranium>3</Uranium>
-      </costList>
-      <killedLeavings>
-        <ChunkSlagSteel>1</ChunkSlagSteel>
-      </killedLeavings>
-      <comps>
-        <li Class="CompProperties_Explosive">
-          <explosiveRadius>2.66</explosiveRadius>
-          <explosiveDamageType>Flame</explosiveDamageType>
-        </li><!-- Need Open Texture
-        <li Class="CompProperties_EmptyStateGraphic">
-          <graphicData>
-            <texPath>Things/Building/Ship/ShipCryptosleepCasketOpenDoor</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(1, 2)</drawSize>
-          </graphicData>
-          <alwaysDrawParent>true</alwaysDrawParent>
-        </li>-->
-      </comps>
-      <!--<staticSunShadowHeight>0.4</staticSunShadowHeight>-->
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="AncientCryptosleepCasket"]</xpath>
+        <value>
+            <drawerType>MapMeshAndRealTime</drawerType>
+            <graphicData>
+                <texPath>Things/Building/Ship/ShipCryptosleepCasket</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+                <drawSize>(1.5,3)</drawSize>
+                <shadowData>
+                    <volume>(0.83, 0.3, 1.7)</volume>
+                </shadowData>
+            </graphicData>
+            <pathCost>70</pathCost>
+            <castEdgeShadows>true</castEdgeShadows>
+            <costList>
+                <Glass>10</Glass>
+                <ComponentSpacer>4</ComponentSpacer>
+                <Electronics>4</Electronics>
+                <Uranium>3</Uranium>
+            </costList>
+            <killedLeavings>
+                <ChunkSlagSteel>1</ChunkSlagSteel>
+            </killedLeavings>
+            <comps>
+                <li Class="CompProperties_Explosive">
+                    <explosiveRadius>2.66</explosiveRadius>
+                    <explosiveDamageType>Flame</explosiveDamageType>
+                </li>
+                <li Class="CompProperties_EmptyStateGraphic">
+                    <graphicData>
+                        <texPath>Things/Building/Ship/ShipCryptosleepCasketEmpty</texPath>
+                        <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>CutoutComplex</shaderType>
+                        <drawSize>(1.5,3)</drawSize>
+                        <shadowData>
+                            <volume>(0.83, 0.3, 1.7)</volume>
+                        </shadowData>
+                    </graphicData>
+                  <alwaysDrawParent>false</alwaysDrawParent>
+                </li>
+            </comps>
+            <!--<staticSunShadowHeight>0.4</staticSunShadowHeight>-->
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="GroundPenetratingScanner"]</xpath>
-    <value>
-      <stuffCategories>
-        <li>RuggedMetallic</li>
-      </stuffCategories>
-      <costStuffCount>240</costStuffCount>
-      <costList>
-        <Mechanism>10</Mechanism>
-        <ComponentIndustrial>16</ComponentIndustrial>
-        <ElectronicComponents>5</ElectronicComponents>
-      </costList>
-      <comps Merge="true">
-        <li Class="CompProperties_Power">
-          <compClass>CompPowerTrader</compClass>
-          <basePowerConsumption>1500</basePowerConsumption>
-		  <idlePowerDraw>150</idlePowerDraw>
-        </li>
-      </comps>
-      <statBases>
-        <MaxHitPoints>250</MaxHitPoints>
-        <WorkToBuild>8500</WorkToBuild>
-        <Flammability>1.0</Flammability>
-        <Beauty>-8</Beauty>
-      </statBases>
-      <tickerType>Rare</tickerType>
-      <pathCost>25</pathCost>
-      <researchPrerequisites>
-        <li>Mining_C1</li>
-      </researchPrerequisites>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GroundPenetratingScanner"]</xpath>
+        <value>
+            <stuffCategories>
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <costStuffCount>240</costStuffCount>
+            <costList>
+                <Mechanism>10</Mechanism>
+                <ComponentIndustrial>16</ComponentIndustrial>
+                <ElectronicComponents>5</ElectronicComponents>
+            </costList>
+            <comps Merge="true">
+                <li Class="CompProperties_Power">
+                    <compClass>CompPowerTrader</compClass>
+                    <basePowerConsumption>1500</basePowerConsumption>
+                    <idlePowerDraw>150</idlePowerDraw>
+                </li>
+            </comps>
+            <statBases>
+                <MaxHitPoints>250</MaxHitPoints>
+                <WorkToBuild>8500</WorkToBuild>
+                <Flammability>1.0</Flammability>
+                <Beauty>-8</Beauty>
+            </statBases>
+            <tickerType>Rare</tickerType>
+            <pathCost>25</pathCost>
+            <researchPrerequisites>
+                <li>Mining_C1</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="LongRangeMineralScanner"]</xpath>
-    <value>
-      <stuffCategories>
-        <li>RuggedMetallic</li>
-      </stuffCategories>
-      <costStuffCount>220</costStuffCount>
-      <costList>
-        <Plastic>75</Plastic>
-        <Mechanism>10</Mechanism>
-        <ComponentIndustrial>18</ComponentIndustrial>
-        <Electronics>5</Electronics>
-      </costList>
-      <comps Merge="true">
-        <li Class="CompProperties_Power">
-          <compClass>CompPowerTrader</compClass>
-          <basePowerConsumption>2200</basePowerConsumption>
-		  <idlePowerDraw>220</idlePowerDraw>
-        </li>
-      </comps>
-      <placeWorkers>
-        <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-      </placeWorkers>
-      <statBases Merge="true">
-        <WorkToBuild>12000</WorkToBuild>
-      </statBases>
-      <tickerType>Rare</tickerType>
-      <pathCost>25</pathCost>
-      <constructionSkillPrerequisite>13</constructionSkillPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="LongRangeMineralScanner"]</xpath>
+        <value>
+            <stuffCategories>
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <costStuffCount>220</costStuffCount>
+            <costList>
+                <Plastic>75</Plastic>
+                <Mechanism>10</Mechanism>
+                <ComponentIndustrial>18</ComponentIndustrial>
+                <Electronics>5</Electronics>
+            </costList>
+            <comps Merge="true">
+                <li Class="CompProperties_Power">
+                    <compClass>CompPowerTrader</compClass>
+                    <basePowerConsumption>2200</basePowerConsumption>
+                    <idlePowerDraw>220</idlePowerDraw>
+                </li>
+            </comps>
+            <placeWorkers>
+                <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+            </placeWorkers>
+            <statBases Merge="true">
+                <WorkToBuild>12000</WorkToBuild>
+            </statBases>
+            <tickerType>Rare</tickerType>
+            <pathCost>25</pathCost>
+            <constructionSkillPrerequisite>13</constructionSkillPrerequisite>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="PodLauncher"]</xpath>
-    <value>
-      <graphicData>
-        <texPath>Things/Building/Misc/PodLauncher</texPath>
-        <graphicClass>Graphic_Multi</graphicClass>
-        <drawSize>(2,3)</drawSize>
-        <shadowData>
-          <volume>(0.8,1,1.8)</volume>
-        </shadowData>
-      </graphicData>
-      <statBases>
-        <MaxHitPoints>150</MaxHitPoints>
-        <WorkToBuild>15000</WorkToBuild>
-        <Flammability>0.5</Flammability>
-      </statBases>
-      <stuffCategories>
-        <li>RuggedMetallic</li>
-      </stuffCategories>
-      <costStuffCount>120</costStuffCount>
-      <costList>
-        <Plastic>80</Plastic>
-        <Mechanism>12</Mechanism>
-        <ComponentIndustrial>15</ComponentIndustrial>
-        <Electronics>5</Electronics>
-      </costList>
-      <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="PodLauncher"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Building/Misc/PodLauncher</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>(2,3)</drawSize>
+                <shadowData>
+                    <volume>(0.8,1,1.8)</volume>
+                </shadowData>
+            </graphicData>
+            <statBases>
+                <MaxHitPoints>150</MaxHitPoints>
+                <WorkToBuild>15000</WorkToBuild>
+                <Flammability>0.5</Flammability>
+            </statBases>
+            <stuffCategories>
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <costStuffCount>120</costStuffCount>
+            <costList>
+                <Plastic>80</Plastic>
+                <Mechanism>12</Mechanism>
+                <ComponentIndustrial>15</ComponentIndustrial>
+                <Electronics>5</Electronics>
+            </costList>
+            <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="TransportPod"]</xpath>
-    <value>
-      <graphicData>
-        <texPath>Things/Special/DropPod</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <drawSize>(2,2)</drawSize>
-        <shadowData>
-          <volume>(0.7,1,0.7)</volume>
-        </shadowData>
-      </graphicData>
-      <canOverlapZones>false</canOverlapZones>
-      <statBases Merge="true">
-        <WorkToBuild>5000</WorkToBuild>
-      </statBases>
-      <stuffCategories>
-        <li>RuggedMetallic</li>
-      </stuffCategories>
-      <costStuffCount>60</costStuffCount>
-      <costList>
-        <Glass>15</Glass>
-        <Plastic>15</Plastic>
-        <ComponentIndustrial>5</ComponentIndustrial>
-      </costList>
-      <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="TransportPod"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Special/DropPod</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>(2,2)</drawSize>
+                <shadowData>
+                    <volume>(0.7,1,0.7)</volume>
+                </shadowData>
+            </graphicData>
+            <canOverlapZones>false</canOverlapZones>
+            <statBases Merge="true">
+                <WorkToBuild>5000</WorkToBuild>
+            </statBases>
+            <stuffCategories>
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <costStuffCount>60</costStuffCount>
+            <costList>
+                <Glass>15</Glass>
+                <Plastic>15</Plastic>
+                <ComponentIndustrial>5</ComponentIndustrial>
+            </costList>
+            <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[@Name="SteleBase"]</xpath>
-    <value>
-      <comps>
-        <li Class="CompProperties_Art">
-          <nameMaker>NamerArtFurniture</nameMaker>
-          <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
-          <minQualityForArtistic>Awful</minQualityForArtistic>
-        </li>
-        <li>
-          <compClass>CompQuality</compClass>
-        </li>
-      </comps>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[@Name="SteleBase"]</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Art">
+                    <nameMaker>NamerArtFurniture</nameMaker>
+                    <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+                    <minQualityForArtistic>Awful</minQualityForArtistic>
+                </li>
+                <li>
+                    <compClass>CompQuality</compClass>
+                </li>
+            </comps>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="SteleLarge"]</xpath>
-    <value>
-      <statBases Merge="true">
-        <WorkToBuild>6000</WorkToBuild>
-      </statBases>
-      <researchPrerequisites>
-        <li>Construction_B1</li>
-      </researchPrerequisites>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SteleLarge"]</xpath>
+        <value>
+            <statBases Merge="true">
+                <WorkToBuild>6000</WorkToBuild>
+            </statBases>
+            <researchPrerequisites>
+                <li>Construction_B1</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="SteleGrand"]</xpath>
-    <value>
-      <statBases Merge="true">
-        <WorkToBuild>12000</WorkToBuild>
-      </statBases>
-      <researchPrerequisites>
-        <li>Construction_B2</li>
-      </researchPrerequisites>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SteleGrand"]</xpath>
+        <value>
+            <statBases Merge="true">
+                <WorkToBuild>12000</WorkToBuild>
+            </statBases>
+            <researchPrerequisites>
+                <li>Construction_B2</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
 
 </Patch>

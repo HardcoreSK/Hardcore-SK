@@ -11,7 +11,13 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Apparel_GasMask" or defName="CE_Apparel_GasMask" or defName="CE_Apparel_ImprovGasMask" or defName="CE_Apparel_SimpleNightVision" or defName="CE_Apparel_AdvancedNightVision"]/apparel/layers</xpath>
+		<xpath>Defs/ThingDef[
+            defName="Apparel_GasMask" 
+            or defName="CE_Apparel_GasMask" 
+            or defName="CE_Apparel_ImprovGasMask" 
+            or defName="CE_Apparel_SimpleNightVision" 
+            or defName="CE_Apparel_AdvancedNightVision"
+        ]/apparel/layers</xpath>
 		<value>
 			<layers>
 				<li>EyeCover</li>
@@ -26,68 +32,22 @@
 			<li>Nose</li>
         </value>
 	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Apparel_Psymask"]/apparel/layers</xpath>
-        <value>
+    
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+            defName="Apparel_Psymask" 
+            or defName="Apparello_Gas" 
+            or defName="Apparello_ViperGas" 
+            or defName="Apparello_Cyninja" 
+            or defName="Apparel_TacticalMask"
+            or defName="WeldingHelmet"
+            or defName="Apparel_Respirator"
+        ]/apparel/layers</xpath>
+		<value>
 			<layers>
 				<li>StrappedHead</li>
-			</layers>
-        </value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Apparello_Gas"]/apparel/layers</xpath>
-        <value>
-			<layers>
-				<li>StrappedHead</li>
-			</layers>
-        </value>
-	</Operation>
-  
-	<Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Apparello_ViperGas"]/apparel/layers</xpath>
-        <value>
-			<layers>
-				<li>StrappedHead</li>
-			</layers>
-        </value>
-	</Operation>
-  
-	<Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Apparello_Cyninja"]/apparel/layers</xpath>
-        <value>
-			<layers>
-				<li>StrappedHead</li>
-			</layers>
-        </value>
-	</Operation>
-  
-	<Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Marine_TacticalMask"]/apparel/layers</xpath>
-        <value>
-			<layers>
-				<li>StrappedHead</li>
-			</layers>
-        </value>
-	</Operation>
-  
-	<Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="WeldingHelmet"]/apparel/layers</xpath>
-        <value>
-			<layers>
-				<li>StrappedHead</li>
-			</layers>
-        </value>
-	</Operation>
-  
-	<Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Apparel_Respirator"]/apparel/layers</xpath>
-        <value>
-			<layers>
-				<li>StrappedHead</li>
-			</layers>
-        </value>
+			</layers>  
+		</value>
 	</Operation>
 
 </Patch>

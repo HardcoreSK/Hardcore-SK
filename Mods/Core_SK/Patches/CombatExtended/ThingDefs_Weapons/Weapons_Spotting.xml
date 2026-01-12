@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Gun_BinocularsRadio"]</xpath>
+        <value>
+            <thingCategories Inherit="False">
+                <li>Specialranged</li>
+            </thingCategories>
+        </value>
+    </Operation>
+</Patch>

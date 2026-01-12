@@ -84,6 +84,7 @@
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
 -->
+
 	<ThingDef ParentName="SK_WorkTable">
 		<defName>ElectricStove_Pro</defName>
 		<label>professional cook stove</label>
@@ -419,6 +420,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 	</ThingDef>
+
 <!-- DefOverwrite
 	<ThingDef Class="SK.ThingDef_AnimatedWorktable" ParentName="BenchBase">
 		<defName>ElectricSmelter</defName>
@@ -516,7 +518,9 @@
 		<designationHotKey>Misc4</designationHotKey>
 		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
 	</ThingDef>
---><!-- DefOverwrite
+-->
+
+<!-- DefOverwrite
 	<ThingDef ParentName="BenchBase">
 		<defName>TableMachining</defName>
 		<label>electric machining table</label>
@@ -602,14 +606,16 @@
 		<constructionSkillPrerequisite>11</constructionSkillPrerequisite>
 	</ThingDef>
 -->
+
 	<ThingDef ParentName="SK_WorkTable">
 		<defName>TableElectronics</defName>
 		<label>electronics table</label>
 		<description>A table with tools for crafting electronic chips, robot parts, and the mobile mineral sonar. Requires power.</description>
 		<graphicData>
-			<texPath>Things/Building/Production/TableElectronics</texPath>
+			<texPath>Things/Building/Production/TableElectronics/TableElectronics</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3,1)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>(3,3)</drawSize>
 			<shadowData>
 				<volume>(2.7, 1.0, 0.85)</volume>
 				<offset>(0,0,0)</offset>
@@ -678,7 +684,7 @@
 		<label>hyper tailoring bench</label>
 		<description>A sophisticated workbench equipped for tailoring and smithing advanced combat clothing, power armor, enhanced gloves and battle helmets. Requires power.</description>
 		<graphicData>
-			<texPath>Things/Building/Production/Tinkerer</texPath>
+			<texPath>Things/Building/Production/HyperTailoringBench/HyperTailoringBench</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -851,16 +857,15 @@
 		<constructionSkillPrerequisite>18</constructionSkillPrerequisite>
 	</ThingDef>
 
-
 	<ThingDef ParentName="SK_WorkTable">
 		<defName>AdvToolBench</defName>
 		<label>electric assembling bench</label>
 		<description>An electric table for the assembling of components, wires, mechanisms, and advanced mechanisms. Requires power.</description>
 		<graphicData>
-			<texPath>Things/Building/Production/FabricationBench</texPath>
+			<texPath>Things/Building/Production/FabricationBench/FabricationBench</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(3.5,2)</drawSize>
+			<drawSize>(3,3)</drawSize>
 			<shadowData>
 				<volume>(2.7, 1.0, 0.85)</volume>
 				<offset>(0,0,0)</offset>
@@ -930,6 +935,7 @@
 		</placeWorkers>
 		<constructionSkillPrerequisite>13</constructionSkillPrerequisite>
 	</ThingDef>
+
 <!-- DefOverwrite
 	<ThingDef Class="SK.ThingDef_AnimatedWorktable" ParentName="BenchBase">
 		<defName>ElectricSmithy</defName>
@@ -1012,6 +1018,7 @@
 		<constructionSkillPrerequisite>11</constructionSkillPrerequisite>
 	</ThingDef>
 -->
+
 	<ThingDef Class="SK.ThingDef_AnimatedWorktable" ParentName="SK_WorkTable">
 		<defName>EAF</defName>
 		<label>electric arc furnace</label>
@@ -1198,6 +1205,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>11</constructionSkillPrerequisite>
 	</ThingDef>
+
 <!-- DefOverwrite
 	<ThingDef ParentName="StandardBuilding">
 		<defName>DeepDrill</defName>
@@ -1275,6 +1283,7 @@
 		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 	</ThingDef>
 -->
+
 	<ThingDef ParentName="StandardBuilding">
 		<defName>Extractor</defName>
 		<label>mine extractor</label>
@@ -1360,7 +1369,6 @@
 		</modExtensions>
 	</ThingDef>
 
-
 	<ThingDef ParentName="StandardBuilding">
 		<defName>RareExtractor</defName>
 		<label>advanced mine extractor</label>
@@ -1439,7 +1447,8 @@
 		</modExtensions>
 	</ThingDef>
 
-	<!-- 	<ThingDef ParentName="StandardBuilding">
+<!-- Obsolete	
+    <ThingDef ParentName="StandardBuilding">
 		<defName>OilExtractor</defName>
 		<label>oil extractor</label>
 		<description>The oil extractor digs deep into the ground and extracts crude oil. Must be placed on an oil fissure created by a drilling rig. Requires power.</description>
@@ -1608,6 +1617,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef> -->
+
 <!-- DefOverwrite
 	<ThingDef ParentName="UniversalFermenterBase" Class="UniversalFermenterSK.ThingDef_UF">
 		<defName>BiofuelRefinery</defName>
@@ -1669,7 +1679,8 @@
 		<insulation>0.5</insulation>
 	</ThingDef>
 -->
-	<!--
+
+<!-- Obsolete
 	<ThingDef ParentName="StandardBuilding">
 		<defName>OilRefinery</defName>
 		<label>Oil Refinery</label>
@@ -1807,9 +1818,8 @@
 			<li>SK_Petrochemistry</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
-	</ThingDef> -->
-
-	<!--
+	</ThingDef> 
+    
  	<ThingDef ParentName="StandardBuilding">
 		<defName>GC</defName>
 		<label>gas centrifuge</label>
@@ -1934,6 +1944,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
 	</ThingDef> -->
+
 <!-- DefOverwrite
 	<ThingDef ParentName="BenchBase">
 		<defName>ElectricCrematorium</defName>
@@ -2024,14 +2035,15 @@
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
 -->
+
 	<ThingDef ParentName="SK_WorkTable">
 		<defName>meditable</defName>
 		<label>medical table</label>
 		<description>A table that is used to craft medicine and life support devices. Requires power.</description>
 		<graphicData>
-			<texPath>Things/Building/Production/Meditable</texPath>
+			<texPath>Things/Building/Production/Meditable/Meditable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3,1)</drawSize>
+			<drawSize>(3,3)</drawSize>
 			<shadowData>
 				<volume>(2.7, 1.0, 0.85)</volume>
 				<offset>(0,0,0)</offset>
@@ -2323,7 +2335,8 @@
 		<barScale>(1.0, 1.0)</barScale>
 		<slotsCount>10</slotsCount>
 	</ThingDef>
-	<!--
+
+<!-- Obsolete
 	<ThingDef ParentName="BenchBase">
 		<defName>BioRefinery</defName>
 		<label>bio-refinery</label>
@@ -2388,9 +2401,10 @@
 		<label>futuristic weapon workbench</label>
 		<description>A workbench that produces futuristic Mechanoid weapons, such as laser beam rifles. Requires power.</description>
 		<graphicData>
-			<texPath>Things/Building/Production/TableWeapon3</texPath>
+			<texPath>Things/Building/Production/TableWeaponMech/TableWeaponMech</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3.5,1.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>(3,3)</drawSize>
 			<shadowData>
 				<volume>(2.7, 1.0, 0.85)</volume>
 				<offset>(0,0,0)</offset>
@@ -2461,7 +2475,7 @@
 		<label>synthetic organ assembler</label>
 		<description>A workstation fully equipped with an extremely powerful nano-printer capable of producing synthetic organs and AI chips. Requires power.</description>
 		<graphicData>
-			<texPath>Things/Building/Production/EPOE/TableSynthetics</texPath>
+			<texPath>Things/Building/Production/TableSynthetics/TableSynthetics</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3.5,1.5)</drawSize>
@@ -2541,7 +2555,7 @@
 		<label>bionics workbench</label>
 		<description>A workbench equipped for production of high-tech bionic prosthetics. Requires power.</description>
 		<graphicData>
-			<texPath>Things/Building/Production/EPOE/TableBionics</texPath>
+			<texPath>Things/Building/Production/TableBionics/TableBionics</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3.5,1.5)</drawSize>
@@ -2614,7 +2628,7 @@
 		<label>cybernetics workbench</label>
 		<description>A workbench equipped for production of cybernetic implants. Requires power.</description>
 		<graphicData>
-			<texPath>Things/Building/Production/EPOE/TableAdvancedProsthetics</texPath>
+			<texPath>Things/Building/Production/TableAdvancedProsthetics/TableAdvancedProsthetics</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3.5,1.5)</drawSize>

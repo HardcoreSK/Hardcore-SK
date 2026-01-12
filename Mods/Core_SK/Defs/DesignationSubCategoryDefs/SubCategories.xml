@@ -1658,7 +1658,7 @@
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_ConcreteSurface</defName>
-		<label>Concrete surface</label>
+		<label>Concrete surfaces</label>
 		<description>Concrete based surface tiles.</description>
 		<defNames>
 			<li>Concrete</li>
@@ -1671,7 +1671,7 @@
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_MetalTiles</defName>
-		<label>metal tile</label>
+		<label>metal tiles</label>
 		<description>Metal square tiles, for that spaceship look.</description>
 		<defNames>
 			<li>MetalTile</li>
@@ -1688,7 +1688,7 @@
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_PlateMetalTiles</defName>
-		<label>plate metal tile</label>
+		<label>plate metal tiles</label>
 		<description>Metal plates complete with rivets for an industrial look. Time-consuming to make, but easy to keep clean.</description>
 		<defNames>
 			<li>PlateCopperBar</li>
@@ -1704,7 +1704,7 @@
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_PreciousMetalTiles</defName>
-		<label>precious metal tile</label>
+		<label>precious metal tiles</label>
 		<description>Expensive and slow to build precious metal tiles.</description>
 		<defNames>
 			<li>CopperTile</li>
@@ -1715,10 +1715,25 @@
 			<li>SilverTile</li>
 			<li>GoldTile</li>
 			<li>GoldSolid</li>
-			<!--			<li>FloorAmber</li>
-			<li>FloorJade</li>-->
+			<!--
+            <li>FloorAmber</li>
+			<li>FloorJade</li>
+            -->
 			<li>TitaniumTile</li>
 			<li>BetaPolyTile</li>
+		</defNames>
+		<designationCategory>OutsideFloors</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_OtherTiles</defName>
+		<label>other tiles</label>
+		<description>Various types of tiles that do not fit into other categories.</description>
+		<defNames>
+			<li>CeramicTile</li>
+			<li>SterileTile</li>
+			<li MayRequire="ludeon.rimworld.anomaly">BioferritePlate</li>
 		</defNames>
 		<designationCategory>OutsideFloors</designationCategory>
 		<debug>false</debug>
@@ -1726,7 +1741,7 @@
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_SmallBrickTile</defName>
-		<label>Small brick tile</label>
+		<label>Small brick tiles</label>
 		<description>Smaller bricks laid in an interlocking pattern. Takes slightly longer to make than the regular variety.</description>
 		<defNames>
 			<li>SBrickSandstone</li>
@@ -1744,7 +1759,7 @@
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_MediumBrickTile</defName>
-		<label>Medium brick tile</label>
+		<label>Medium brick tiles</label>
 		<description>Bricks laid in an interlocking pattern.</description>
 		<defNames>
 			<li>MBrickSandstone</li>
@@ -1884,7 +1899,7 @@
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
 
-	<ArchitectSense.DesignationSubCategoryDef>
+	<!--<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_SoftCarpet</defName>
 		<label>Soft carpet</label>
 		<description>Stunning carpet that is soft and relaxing.</description>
@@ -1933,7 +1948,7 @@
 		</defNames>
 		<designationCategory>Floors</designationCategory>
 		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
+	</ArchitectSense.DesignationSubCategoryDef>-->
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_VanillaFloor</defName>
@@ -1948,6 +1963,7 @@
 			<li>ClayBrickTile</li>
 			<li>TileBasalt</li>
 			<li>TileCeramics</li>
+			<li MayRequire="ludeon.rimworld.anomaly">TileVacstone</li>
 		</defNames>
 		<designationCategory>NaturalFloors</designationCategory>
 		<debug>false</debug>
@@ -1964,6 +1980,7 @@
 			<li>FlagstoneSlate</li>
 			<li>FlagstoneMarble</li>
 			<li>FlagstoneBasalt</li>
+			<li MayRequire="ludeon.rimworld.anomaly">FlagstoneVacstone</li>
 		</defNames>
 		<designationCategory>NaturalFloors</designationCategory>
 		<debug>false</debug>
@@ -2219,7 +2236,7 @@
 		<defNames>
 			<li>WaterShallow-Sand</li>
 			<li>WaterShallow-Marsh</li>
-			<li>WaterShallow-WaterDeep</li>
+			<!--<li>WaterShallow-WaterDeep</li>-->
 			<li>RiverDeposit-Marsh</li>
 		</defNames>
 		<designationCategory>SK_category_terraform</designationCategory>
