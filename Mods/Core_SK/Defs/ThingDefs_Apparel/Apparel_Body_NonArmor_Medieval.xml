@@ -450,7 +450,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelMedievalBase">
-		<defName>Apparel_ParkaB</defName>
+		<defName>Apparel_QuiltedJacket</defName>
 		<label>Quilted Jacket</label>
 		<description>A quilted jacket for staying warm in the coldest of temperatures.</description>
 		<graphicData>
@@ -1035,7 +1035,7 @@
 	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>Apparel_Gambeson</defName>
 		<label>Gambeson</label>
-		<description>Also known as an aketon, padded jack, or arming doublet, this padded jacket is required to wear any decent medieval armor. This design is meant to be paired with a mail hauberk or plate armor.</description>
+		<description>Also known as an aketon, padded jack, or arming doublet, this jacket is required to wear any decent medieval armor. This design is meant to be paired with a mail hauberk or plate armor.</description>
 		<graphicData>
 			<texPath>Things/Apparel/Clothes/Gambeson/Gambeson</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1051,13 +1051,12 @@
 		<statBases>
 			<WorkToMake>5500</WorkToMake>
 			<MaxHitPoints>90</MaxHitPoints>
-			<Flammability>1</Flammability>
 			<Mass>3</Mass>
-			<Bulk>10</Bulk>
-			<WornBulk>5</WornBulk>
+			<Bulk>8</Bulk>
+			<WornBulk>4</WornBulk>
 			<EquipDelay>4.7</EquipDelay>			
-			<Insulation_Heat>-10</Insulation_Heat>
-			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>-6</Insulation_Heat>
+			<Insulation_Cold>6</Insulation_Cold>
 			<StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
 			<StuffEffectMultiplierArmor>1.2</StuffEffectMultiplierArmor>
@@ -1066,18 +1065,26 @@
 			<ArmorRating_Heat>0</ArmorRating_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryBulk>10</CarryBulk>
-			<MoveSpeed>-0.03</MoveSpeed>
+			<CarryBulk>12</CarryBulk>
+			<MoveSpeed>-0.1</MoveSpeed>
+			<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+			<SocialImpact>0.05</SocialImpact>
+			<ShootingAccuracyPawn>-0.04</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.05</AimingDelayFactor>
+			<MeleeHitChance>-0.04</MeleeHitChance>
+			<MeleeWeapon_CooldownMultiplier>0.05</MeleeWeapon_CooldownMultiplier>
+			<Suppressability>-0.10</Suppressability>
 			<GermResistance>0.03</GermResistance>
-			<GermContainment>0.02</GermContainment>
+			<GermContainment>0.03</GermContainment>
 		</equippedStatOffsets>
-		<generateCommonality>2.5</generateCommonality>
+		<generateCommonality>2</generateCommonality>
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
+				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/Clothes/Gambeson/Gambeson</wornGraphicPath>
 			<layers>
@@ -1098,7 +1105,78 @@
 			<li>SetMedieval</li>
 		</thingCategories>
         <recipeMaker>
-            <researchPrerequisite>PlateArmor</researchPrerequisite>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+        </recipeMaker>
+	</ThingDef>
+    
+	<ThingDef ParentName="ApparelMedievalSimpleBase">
+		<defName>Apparel_GambesonPadded</defName>
+		<label>Padded Gambeson</label>
+		<description>Also known as an aketon, padded jack, or arming doublet, this padded jacket is required to wear any decent medieval armor. This design is meant to be paired with a mail hauberk or plate armor.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Clothes/GambesonPadded/Padded</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>		
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<statBases>
+			<WorkToMake>6500</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>3</Mass>
+			<Bulk>8</Bulk>
+			<WornBulk>4</WornBulk>
+			<EquipDelay>5.5</EquipDelay>
+			<Insulation_Heat>-10</Insulation_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>1.4</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk>12</CarryBulk>
+			<MoveSpeed>-0.12</MoveSpeed>
+			<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+			<SocialImpact>0.05</SocialImpact>
+			<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.07</AimingDelayFactor>
+			<MeleeHitChance>-0.05</MeleeHitChance>
+			<MeleeWeapon_CooldownMultiplier>0.05</MeleeWeapon_CooldownMultiplier>
+			<Suppressability>-0.10</Suppressability>
+			<GermResistance>0.03</GermResistance>
+			<GermContainment>0.03</GermContainment>
+		</equippedStatOffsets>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Clothes/GambesonPadded/Padded</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>Norbal</li>
+				<li>NorbalKingly</li>
+				<li>NorbalWarrior</li>
+				<li>Medieval</li>
+			</tags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<thingCategories>
+			<li>BodySuitsCat</li>
+			<li>SetMedieval</li>
+		</thingCategories>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
         </recipeMaker>
 	</ThingDef>
 
@@ -1169,195 +1247,76 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelMedievalBase">
-		<defName>Apparel_UrbanShirt</defName>
-		<label>Urban Shirt</label>
-		<description>All the punks felt lucky wearing these.</description>
+		<defName>Apparel_BrocadeVest</defName>
+		<label>Brocade Vest</label>
+		<description>To always keep calm and collected, wear a brocade vest. The definite go to piece of apparel for any gentleguy or gal.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Clothes/UrbanShirt/UrbanShirt</texPath>
+			<texPath>Things/Apparel/Clothes/BrocadeVest/BrocadeVest</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>		
 		<stuffCategories>
-			<li>HF</li>
 			<li>Fabric</li>
 		</stuffCategories>
-		<costStuffCount>80</costStuffCount>
+		<costStuffCount>75</costStuffCount>
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<statBases>
 			<WorkToMake>5000</WorkToMake>
-			<MaxHitPoints>80</MaxHitPoints>
+			<MaxHitPoints>115</MaxHitPoints>
 			<Flammability>2</Flammability>
-			<Mass>0.5</Mass>
+			<Mass>4</Mass>
 			<Bulk>10</Bulk>
-			<WornBulk>5</WornBulk>
-			<EquipDelay>2.5</EquipDelay>			
-			<Insulation_Cold>5</Insulation_Cold>
-			<StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
-			<StuffEffectMultiplierArmor>0.23</StuffEffectMultiplierArmor>
+			<WornBulk>6</WornBulk>
+			<EquipDelay>4.7</EquipDelay>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>	
+			<StuffEffectMultiplierArmor>1.68</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>0</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0</ArmorRating_Blunt>
 			<ArmorRating_Heat>0</ArmorRating_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryBulk>10</CarryBulk>
-			<MoveSpeed>-0.01</MoveSpeed>
+			<CarryBulk>14</CarryBulk>
+			<MoveSpeed>-0.2</MoveSpeed>
+			<WorkSpeedGlobal>-0.09</WorkSpeedGlobal>
+			<SocialImpact>0.13</SocialImpact>
+			<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.06</AimingDelayFactor>
+			<MeleeHitChance>-0.05</MeleeHitChance>
+			<MeleeWeapon_CooldownMultiplier>0.05</MeleeWeapon_CooldownMultiplier>
+			<Suppressability>-0.07</Suppressability>
 			<GermResistance>0.02</GermResistance>
 			<GermContainment>0.02</GermContainment>
 		</equippedStatOffsets>
-		<generateCommonality>2</generateCommonality>
+		<generateCommonality>1</generateCommonality>
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
-				<li>Neck</li>
 				<li>Shoulders</li>
-				<li>Arms</li>
+				<li>Neck</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Clothes/UrbanShirt/UrbanShirt</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Clothes/BrocadeVest/BrocadeVest</wornGraphicPath>
 			<layers>
-				<li>OnSkin</li>
+				<li>Middle</li>
 			</layers>
 			<tags>
 				<li>Outlander</li>
-				<li>BanditsLight</li>
-				<li>PredatorsLight</li>
-				<li>RenegadesLight</li>
 				<li>RenegadesMedium</li>
-				<li>PredatorsScout</li>
+				<li>PredatorsLight</li>
 				<li>PredatorsMedium</li>
-				<li>PredatorsScout</li>
-				<li>EmpireLight</li>
-				<li>EmpireScout</li>
 				<li>EmpireMedium</li>
-				<li>BrotherhoodLight</li>
-				<li>BrotherhoodMedium</li>
-				<li>BrotherhoodScout</li>
-				<li>SectarianLight</li>
-				<li>SectarianMedium</li>
-				<li>SectarianScout</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
 			</defaultOutfitTags>
 		</apparel>		
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<li>
-					<weight>10</weight>
-					<only>(0,0.70,1,1)</only>
-				</li>
-				<li>
-					<weight>10</weight>
-					<only>(0.60,0,0.60,1)</only>
-				</li>
-				<li>
-					<weight>10</weight>
-					<only>(0.50,1,0,1)</only>
-				</li>
-				<li>
-					<weight>5</weight>
-					<max>(1,1,1,1)</max>
-					<min>(0.30,0.30,0.30,1)</min>
-				</li>	
-				<li>
-					<weight>20</weight>
-					<only>(0.33,0.33,0.33,1)</only>
-				</li>
-				<li>
-					<weight>20</weight>
-					<only>(0.65,0.65,0.65,1)</only>
-				</li>
-				<li>
-					<weight>20</weight>
-					<only>(0.9,0.9,0.9,1)</only>
-				</li>	
-				<li>
-					<weight>20</weight>
-					<only>(0,0.6,1,1)</only>
-				</li>		
-			</options>
-		</colorGenerator>
 		<thingCategories>
-			<li>BodySuitsCat</li>
+			<li>VestsCat</li>
 			<li>SetBandit</li>
 		</thingCategories>
         <recipeMaker>
-            <researchPrerequisite>Fabrication</researchPrerequisite>
-        </recipeMaker>
-	</ThingDef>
-
-	<ThingDef ParentName="ApparelMedievalSimpleBase">
-		<defName>Apparel_MarineShirt</defName>
-		<label>Marine Shirt</label>
-		<description>A basic military T-shirt intended for marines.</description>
-		<graphicData>
-			<texPath>Things/Apparel/Clothes/MarineShirt/TShirt</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>		
-		<stuffCategories>
-			<li>HF</li>
-			<li>Fabric</li>
-		</stuffCategories>
-		<costStuffCount>70</costStuffCount>
-		<costList>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<SyntheticFibers>10</SyntheticFibers>
-		</costList>
-		<statBases>
-			<WorkToMake>6000</WorkToMake>
-			<MaxHitPoints>80</MaxHitPoints>
-			<Flammability>2</Flammability>
-			<Mass>0.3</Mass>
-			<Bulk>10</Bulk>
-			<WornBulk>5</WornBulk>
-			<EquipDelay>2.5</EquipDelay>			
-			<Insulation_Heat>5</Insulation_Heat>
-			<Insulation_Cold>5</Insulation_Cold>
-			<StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
-			<StuffEffectMultiplierArmor>0.26</StuffEffectMultiplierArmor>
-			<ArmorRating_Sharp>0</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.06</ArmorRating_Heat>
-		</statBases>
-		<equippedStatOffsets>
-			<CarryBulk>10</CarryBulk>
-			<MoveSpeed>-0.015</MoveSpeed>
-			<GermResistance>0.03</GermResistance>
-			<GermContainment>0.03</GermContainment>
-		</equippedStatOffsets>
-		<generateCommonality>2.1</generateCommonality>
-		<apparel>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Neck</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Clothes/MarineShirt/TShirt</wornGraphicPath>
-			<layers>
-				<li>OnSkin</li>
-			</layers>
-			<tags>
-				<li>Outlander</li>
-				<li>BrotherhoodLight</li>
-				<li>BrotherhoodMedium</li>
-				<li>SectarianLight</li>
-				<li>SectarianMedium</li>
-				<li>BrotherhoodScout</li>
-				<li>SectarianScout</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
-		</apparel>
-		<thingCategories>
-			<li>BodySuitsCat</li>
-			<li>Setmarinearmor</li>
-		</thingCategories>
-        <recipeMaker>
-            <researchPrerequisite>FlakArmor</researchPrerequisite>
+            <researchPrerequisite>Apparel_B3</researchPrerequisite>
         </recipeMaker>
 	</ThingDef>
 

@@ -1191,5 +1191,121 @@
 			<researchPrerequisite>ReconArmor</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
+    
+	<ThingDef ParentName="ArmorSpacerBase">
+		<defName>Armor_AlloyVest</defName>
+		<label>Alloy Vest</label>
+		<description>Standard issue protective vest on the glitterworlds. Made of multiple layers of extremely light but strong alloy.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Armor/AlloyVest/AlloyVest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>		
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>42</costStuffCount>
+		<costList>
+			<ComponentSpacer>3</ComponentSpacer>
+			<Compaste>13</Compaste>
+			<Carbon>6</Carbon>
+			<Kevlar>22</Kevlar>
+			<BiosyntheticMaterial>3</BiosyntheticMaterial>
+		</costList>
+		<statBases>
+			<WorkToMake>10500</WorkToMake>
+			<MaxHitPoints>160</MaxHitPoints>
+			<Flammability>1.1</Flammability>
+			<Mass>2.5</Mass>
+			<Bulk>12</Bulk>
+			<WornBulk>4</WornBulk>
+			<EquipDelay>6</EquipDelay>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>5.45</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>10.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>30.775</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk>16</CarryBulk>
+			<MoveSpeed>-0.25</MoveSpeed>
+			<WorkSpeedGlobal>-0.16</WorkSpeedGlobal>
+			<MentalBreakThreshold>-0.04</MentalBreakThreshold>
+			<PsychicSensitivity>-0.05</PsychicSensitivity>
+			<ShootingAccuracyPawn>-0.13</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.12</AimingDelayFactor>
+			<MeleeHitChance>-0.14</MeleeHitChance>
+			<MeleeWeapon_CooldownMultiplier>0.12</MeleeWeapon_CooldownMultiplier>
+			<Suppressability>-0.15</Suppressability>
+			<GermResistance>0.03</GermResistance>
+			<GermContainment>0.03</GermContainment>
+			<VacuumResistance MayRequire="ludeon.rimworld.odyssey">0.33</VacuumResistance>
+		</equippedStatOffsets>
+		<generateCommonality>1</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Armor/AlloyVest/AlloyVest</wornGraphicPath>
+			<layers>
+				<li>Middle</li>			
+			</layers>
+			<tags>
+				<li>SpacerMilitary</li>
+				<li>SyndicateMedium</li>
+				<li>SyndicateLight</li>
+				<li>OrionMedium</li>
+				<li>OrionLight</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0,0.70,1,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.60,0,0.60,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.50,1,0,1)</only>
+				</li>
+				<li>
+					<weight>5</weight>
+					<max>(1,1,1,1)</max>
+					<min>(0.30,0.30,0.30,1)</min>
+				</li>	
+				<li>
+					<weight>20</weight>
+					<only>(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>(0.65,0.65,0.65,1)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>(0.9,0.9,0.9,1)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>(0,0.6,1,1)</only>
+				</li>		
+			</options>
+		</colorGenerator>
+		<thingCategories>
+			<li>VestsCat</li>
+		</thingCategories>
+        <recipeMaker>
+            <researchPrerequisite>Armor_D1</researchPrerequisite>
+        </recipeMaker>
+	</ThingDef>
 
 </Defs>
