@@ -18,13 +18,13 @@
 	<Operation Class="PatchOperationSequence">
 	<operations>
 		<li Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="Apparel_HSH"]</xpath>
+			<xpath>Defs/ThingDef[defName="Apparel_HazardHelmet"]</xpath>
 			<value>
 				<thingClass>Rimatomics.Apparel_RadSuit</thingClass>
 			</value>
 		</li>
 		<li Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="Apparel_HSH"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName="Apparel_HazardHelmet"]/recipeMaker</xpath>
 			<value>
 				<recipeUsers>
 					<li>TableRimatomicsMachining</li>
@@ -35,7 +35,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ThingDef[defName="Apparel_HSH"]</xpath>
+		<xpath>Defs/ThingDef[defName="Apparel_HazardHelmet"]</xpath>
 		<attribute>Class</attribute>
 		<value>Rimatomics.RimatomicsThingDef</value>
 	</Operation>
@@ -43,13 +43,13 @@
 	<Operation Class="PatchOperationSequence">
 	<operations>
 		<li Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="Apparel_HS"]</xpath>
+			<xpath>Defs/ThingDef[defName="Apparel_HazardVest"]</xpath>
 			<value>
 				<thingClass>Rimatomics.Apparel_RadSuit</thingClass>
 			</value>
 		</li>
 		<li Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="Apparel_HS"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName="Apparel_HazardVest"]/recipeMaker</xpath>
 			<value>
 				<recipeUsers>
 					<li>TableRimatomicsMachining</li>
@@ -60,7 +60,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ThingDef[defName="Apparel_HS"]</xpath>
+		<xpath>Defs/ThingDef[defName="Apparel_HazardVest"]</xpath>
 		<attribute>Class</attribute>
 		<value>Rimatomics.RimatomicsThingDef</value>
 	</Operation>

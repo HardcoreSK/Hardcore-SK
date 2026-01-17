@@ -6,7 +6,7 @@
 		<category>Item</category>
 		<description>A single-person directional energy shield device. It will attempt to stop any rapidly-moving projectile or energy attack that comes from a distance. It does nothing against melee attacks or shots from point-blank range. It does not prevent firing out, unlike the common personal shield.</description>
 		<graphicData>
-			<texPath>Things/techShield</texPath>
+			<texPath>Things/Apparel/Special/TechShield</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
 		</graphicData>
@@ -102,7 +102,7 @@
 		<description>A miner's best friend. This hard hat will help protect you when the roof comes crashing down. The built in light is also reassuring when alone in dark caves.</description>
 		<tickerType>Normal</tickerType>
 		<graphicData>
-			<texPath>Things/Apparel/Mining/MiningHelmet</texPath>
+			<texPath>Things/Apparel/Special/MiningHelmet/MiningHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
 		</graphicData>
@@ -146,7 +146,7 @@
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Mining/MiningHelmet</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Special/MiningHelmet/MiningHelmet</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -164,11 +164,88 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelIndustrialBase">
-		<defName>Apparel_HSH</defName>
+		<defName>Apparel_MiningVest</defName>
+		<label>mining vest</label>
+		<description>A working apparel designed for mining operations. Embeds a personal light.</description>
+		<!-- <thingClass>SK.ApparelWithMiningLight</thingClass> -->
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Apparel/Special/MiningVest/MiningVest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>			
+		<stuffCategories>
+			<li>HF</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<Rubber>12</Rubber>
+		</costList>
+		<statBases>
+			<WorkToMake>14000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>2</Mass>
+			<Bulk>7</Bulk>
+			<WornBulk>1</WornBulk>
+			<EquipDelay>10</EquipDelay>
+			<Insulation_Heat>2.5</Insulation_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>1.36</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.06</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk>15</CarryBulk>
+			<MoveSpeed>-0.2</MoveSpeed>
+			<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+			<MiningSpeed>0.25</MiningSpeed>
+			<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.05</AimingDelayFactor>
+			<MeleeHitChance>-0.05</MeleeHitChance>
+			<MeleeWeapon_CooldownMultiplier>0.07</MeleeWeapon_CooldownMultiplier>
+			<GermResistance>0.04</GermResistance>
+			<GermContainment>0.04</GermContainment>
+		</equippedStatOffsets>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<generateCommonality>0.8</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Special/MiningVest/MiningVest</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Miner</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<thingCategories>
+			<li>SpecialApparelCat</li>
+			<li>SetMiner</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelIndustrialBase">
+		<defName>Apparel_HazardHelmet</defName>
 		<label>Chemical Protection Helmet</label>
 		<description>A part of a Chemical Protection Suit (also known as a hazmat suit). It helps to protect people from hazardous materials or substances including chemicals, biological agents, or radioactive materials.</description>
 		<graphicData>
-			<texPath>Things/Item/HSH/HSH</texPath>
+			<texPath>Things/Apparel/Special/HazardHelmet/HazardHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>			
 		<stuffCategories>
@@ -221,7 +298,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Item/HSH/HSH</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Special/HazardHelmet/HazardHelmet</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -251,11 +328,11 @@
 
 
 	<ThingDef ParentName="ApparelIndustrialBase">
-		<defName>Apparel_HS</defName>
+		<defName>Apparel_HazardVest</defName>
 		<label>Chemical Protection Suit</label>
 		<description>A Chemical Protection Suit (also known as a hazmat suit) can protect people from hazardous materials or substances including chemicals, biological agents, or radioactive materials.</description>
 		<graphicData>
-			<texPath>Things/Item/HS/HS</texPath>
+			<texPath>Things/Apparel/Special/HazardVest/HazardVest</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>			
 		<stuffCategories>
@@ -312,7 +389,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Item/HS/HS</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Special/HazardVest/HazardVest</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
@@ -330,78 +407,64 @@
 			<researchPrerequisite>Apparel_C5</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
+    
 	<ThingDef ParentName="ApparelIndustrialBase">
-		<defName>Apparel_MiningVest</defName>
-		<label>mining vest</label>
-		<description>A working apparel designed for mining operations. Embeds a personal light.</description>
-		<!-- <thingClass>SK.ApparelWithMiningLight</thingClass> -->
-		<tickerType>Normal</tickerType>
+		<defName>Apparel_Respirator</defName>
+		<label>respirator</label>
+		<description>Respirators filter the air and prevent the user from touching their mouth and nose.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Mining/MiningVest</texPath>
+			<texPath>Things/Apparel/Special/Respirator/Respirator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>			
-		<stuffCategories>
-			<li>HF</li>
-		</stuffCategories>
-		<costStuffCount>60</costStuffCount>
-		<costList>
-			<ComponentIndustrial>8</ComponentIndustrial>
-			<Rubber>12</Rubber>
-		</costList>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
 		<statBases>
-			<WorkToMake>14000</WorkToMake>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Flammability>0</Flammability>
-			<Mass>2</Mass>
-			<Bulk>7</Bulk>
-			<WornBulk>1</WornBulk>
-			<EquipDelay>10</EquipDelay>
-			<Insulation_Heat>2.5</Insulation_Heat>
-			<Insulation_Cold>5</Insulation_Cold>
-			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
-			<StuffEffectMultiplierArmor>1.36</StuffEffectMultiplierArmor>
-			<ArmorRating_Sharp>0</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.06</ArmorRating_Heat>
+			<WorkToMake>2000</WorkToMake>
+			<MaxHitPoints>40</MaxHitPoints>
+			<Mass>0.10</Mass>
+			<Bulk>0.15</Bulk>
+			<WornBulk>0.05</WornBulk>
+			<EquipDelay>1.5</EquipDelay>
+			<StuffEffectMultiplierArmor>0.08</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryBulk>15</CarryBulk>
-			<MoveSpeed>-0.2</MoveSpeed>
-			<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
-			<MiningSpeed>0.25</MiningSpeed>
-			<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
-			<AimingDelayFactor>0.05</AimingDelayFactor>
-			<MeleeHitChance>-0.05</MeleeHitChance>
-			<MeleeWeapon_CooldownMultiplier>0.07</MeleeWeapon_CooldownMultiplier>
-			<GermResistance>0.04</GermResistance>
-			<GermContainment>0.04</GermContainment>
+			<ToxicEnvironmentResistance>0.6</ToxicEnvironmentResistance>
+			<SocialImpact>-0.10</SocialImpact>
+			<GermResistance>0.50</GermResistance>
+			<GermContainment>0.70</GermContainment>
 		</equippedStatOffsets>
-		<comps>
-			<li Class="CompProperties_Forbiddable"/>
-		</comps>
-		<generateCommonality>0.8</generateCommonality>
+		<costList>
+			<Cloth>15</Cloth>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<MedicineIndustrial>1</MedicineIndustrial>
+		</costList>
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Neck</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-				<li>Legs</li>
+				<li>Teeth</li>
+				<li>Nose</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Mining/MiningVest</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Accessories/Respirator/Respirator</wornGraphicPath>
 			<layers>
-				<li>Shell</li>
+				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Miner</li>
-			</defaultOutfitTags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<parentTagDef>ApparelHead</parentTagDef>
 		</apparel>
+		<modExtensions>
+			<li Class="CombatExtended.ApparelHediffExtension">
+				<hediff>WearingGasMask</hediff>
+			</li>
+			<li Class="CombatExtended.ApperalRenderingExtension">
+				<HideHair>false</HideHair>
+				<HideBeard>true</HideBeard>
+			</li>
+		</modExtensions>
 		<thingCategories>
+			<li>SetGasMask</li>
 			<li>SpecialApparelCat</li>
-			<li>SetMiner</li>
 		</thingCategories>
 		<recipeMaker>
 			<researchPrerequisite>Fabrication</researchPrerequisite>
