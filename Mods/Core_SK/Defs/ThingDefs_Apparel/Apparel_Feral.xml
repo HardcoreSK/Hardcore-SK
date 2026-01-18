@@ -3,11 +3,11 @@
 
 
 	<ThingDef ParentName="ApparelMedievalSimpleBase">
-		<defName>Apparel_HuskerHood</defName>
+		<defName>Helmet_FeralHusker</defName>
 		<label>Husker Hood</label>
 		<description>A crude but rugged hood of the ferals.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Feral/HuskerHood</texPath>
+			<texPath>Things/Apparel/Helmets/Feral/HuskerHood</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costStuffCount>50</costStuffCount>
@@ -44,7 +44,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Feral/HuskerHood</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Helmets/Feral/HuskerHood</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -81,11 +81,11 @@
 
 
 	<ThingDef ParentName="ApparelMedievalSimpleBase">
-		<defName>Apparel_SkulkerHood</defName>
+		<defName>Helmet_FeralSkulker</defName>
 		<label>Skulker Hood</label>
 		<description>A crude but rugged hood of the ferals.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Feral/SkulkerHood</texPath>
+			<texPath>Things/Apparel/Helmets/Feral/SkulkerHood</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costStuffCount>50</costStuffCount>
@@ -121,7 +121,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Feral/SkulkerHood</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Helmets/Feral/SkulkerHood</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -158,11 +158,11 @@
 
 
 	<ThingDef ParentName="ApparelMedievalSimpleBase">
-		<defName>Apparel_ThumperHood</defName>
+		<defName>Helmet_FeralThumper</defName>
 		<label>Thumper Hood</label>
 		<description>A crude but rugged hood of the ferals.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Feral/ThumperHood</texPath>
+			<texPath>Things/Apparel/Helmets/Feral/ThumperHood</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costStuffCount>50</costStuffCount>
@@ -198,7 +198,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Feral/ThumperHood</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Helmets/Feral/ThumperHood</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -235,12 +235,12 @@
 
 
 	<ThingDef ParentName="ArmorMedievalSimpleBase">
-		<defName>Apparel_GrinderHelmet</defName>
+		<defName>Helmet_FeralGrinder</defName>
 		<label>Grinder Helmet</label>
 		<description>A odd looking rusty bucket helmet.</description>
 		<techLevel>Industrial</techLevel>
 		<graphicData>
-			<texPath>Things/Apparel/Feral/GrinderHelmet</texPath>
+			<texPath>Things/Apparel/Helmets/Feral/GrinderHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costStuffCount>50</costStuffCount>
@@ -279,7 +279,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Feral/GrinderHelmet</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Helmets/Feral/GrinderHelmet</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -301,12 +301,12 @@
 
 
 	<ThingDef ParentName="ApparelMedievalSimpleBase">
-		<defName>Apparel_ScorcherHelmet</defName>
+		<defName>Helmet_FeralScorcher</defName>
 		<label>Feral Gas Mask</label>
 		<description>A odd looking gas mask.</description>
 		<techLevel>Industrial</techLevel>
 		<graphicData>
-			<texPath>Things/Apparel/Feral/ScorcherHelmet</texPath>
+			<texPath>Things/Apparel/Helmets/Feral/ScorcherHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -347,7 +347,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Feral/ScorcherHelmet</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Helmets/Feral/ScorcherHelmet</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -375,11 +375,11 @@
         </recipeMaker>
 	</ThingDef>
 
-	<!-- ============ Slag_Plate_Crude ============ -->
+	<!-- ============ Armor ============ -->
 
 	<ThingDef ParentName="ArmorMedievalSimpleBase">
-		<defName>Slag_Plate_Crude</defName>
-		<label>Feral Plate Armour</label>
+		<defName>Armor_FeralPlateCrude</defName>
+		<label>Feral Plate Armor</label>
 		<description>Constructed of recycled slag, this plate armour is encumbering but effective against bludgeoning. The gaps in the plates render it almost useless against animals, bullets, or fire. It's made of metal, so don't get electrocuted while wearing this.</description>
 		<stuffCategories>
 			<li>StrongMetallic</li>
@@ -389,7 +389,7 @@
 			<ComponentMedieval>6</ComponentMedieval>
 		</costList>
 		<graphicData>
-			<texPath>Things/Apparel/Plate_Crude/Plate_Crude</texPath>
+			<texPath>Things/Apparel/Armor/Feral/PlateCrude/Plate_Crude</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -421,7 +421,7 @@
 		</equippedStatOffsets>
 		<generateCommonality>1.1</generateCommonality>
 		<apparel>
-			<wornGraphicPath>Things/Apparel/Plate_Crude/Plate_Crude</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Armor/Feral/Plate_Crude/Plate_Crude</wornGraphicPath>
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Neck</li>
@@ -449,11 +449,9 @@
         </recipeMaker>
 	</ThingDef>
 
-	<!-- ============ Slag_Plate_Improved ============ -->
-
 	<ThingDef ParentName="ArmorMedievalBase">
-		<defName>Slag_Plate_Improved</defName>
-		<label>Spiked Feral Plate Armour</label>
+		<defName>Armor_FeralPlateImproved</defName>
+		<label>Spiked Feral Plate Armor</label>
 		<description>An improvement of the crude slag plate armour, it's very effective in gunfights. Flexible joints allow reduced encumbrance. Spikes and paint increase the wearer's badassitude by a factor of +2!</description>
 		<stuffCategories>
 			<li>StrongMetallic</li>
@@ -463,7 +461,7 @@
 			<ComponentMedieval>8</ComponentMedieval>
 		</costList>
 		<graphicData>
-			<texPath>Things/Apparel/Plate_Improved/Plate_Improved</texPath>
+			<texPath>Things/Apparel/Armor/Feral/PlateImproved/Plate_Improved</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -495,7 +493,7 @@
 		</equippedStatOffsets>
 		<generateCommonality>1.2</generateCommonality>
 		<apparel>
-			<wornGraphicPath>Things/Apparel/Plate_Improved/Plate_Improved</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Armor/Feral/PlateImproved/Plate_Improved</wornGraphicPath>
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Neck</li>
