@@ -1199,6 +1199,7 @@
 		<graphicData>
 			<texPath>Things/Apparel/Armor/AlloyVest/AlloyVest</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
 		</graphicData>		
 		<stuffCategories>
 			<li>StrongMetallic</li>
@@ -1248,6 +1249,7 @@
 				<li>Neck</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/Armor/AlloyVest/AlloyVest</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>			
 			</layers>

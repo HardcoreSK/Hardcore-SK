@@ -582,4 +582,74 @@
         </recipeMaker>
     </ThingDef>
 
+    <ThingDef ParentName="ApparelSpacerBase">
+        <defName>Apparel_ThermoCoat</defName>
+        <label>Thermocoat</label>
+        <description>Made using advanced technologies, this coat provides decent protection from extreme temperatures, scanning the temperature indicators of the wearer and turning on additional heating or removing excess heat from the body if necessary.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Clothes/ThermoCoat/ThermoCoat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <stuffCategories>
+            <li>HF</li>
+        </stuffCategories>
+        <costStuffCount>100</costStuffCount>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <BiosyntheticMaterial>1</BiosyntheticMaterial>
+            <Hexcell>3</Hexcell>
+            <SyntheticFibers>35</SyntheticFibers>
+        </costList>
+        <statBases>
+            <WorkToMake>18000</WorkToMake>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>0.5</Flammability>
+            <Mass>3</Mass>
+            <Bulk>12</Bulk>
+            <WornBulk>8</WornBulk>
+            <EquipDelay>4.5</EquipDelay>
+            <Insulation_Heat>18</Insulation_Heat>
+            <Insulation_Cold>18</Insulation_Cold>
+            <StuffEffectMultiplierInsulation_Cold>1.25</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>1.25</StuffEffectMultiplierInsulation_Heat>
+            <StuffEffectMultiplierArmor>1.2</StuffEffectMultiplierArmor>
+            <ArmorRating_Sharp>0</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <CarryBulk>3</CarryBulk>
+            <MoveSpeed>-0.05</MoveSpeed>
+            <WorkSpeedGlobal>0.01</WorkSpeedGlobal>
+            <GermResistance>0.1</GermResistance>
+            <GermContainment>0.1</GermContainment>
+        </equippedStatOffsets>
+        <generateCommonality>0.3</generateCommonality>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/Clothes/ThermoCoat/ThermoCoat</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+				<li>OrionLight</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+        </apparel>
+        <thingCategories>
+			<li>UpperOverdressCat</li>
+        </thingCategories>
+        <recipeMaker>
+            <researchPrerequisite>Armor_D1</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
 </Defs>
