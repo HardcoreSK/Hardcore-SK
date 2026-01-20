@@ -2,11 +2,11 @@
 <Defs>
 
 	<ThingDef ParentName="ArmorSpacerSimpleBase">
-		<defName>Apparel_CommandoArmor</defName>
-		<label>Asari Armor</label>
+		<defName>Armor_Commando</defName>
+		<label>Commando Armor</label>
 		<description>The standard armor worn by Asari Commandos in the field. Light to wear, yet it offers good protection on the battlefield.</description>
 		<graphicData>
-			<texPath>Things/Apparel/HellEffect/Commando_armor</texPath>
+			<texPath>Things/Apparel/Armor/Commando/Commando</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingClass>SK.OpticEvasionArmor</thingClass>
@@ -68,7 +68,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/HellEffect/Commando_armor</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Armor/Commando/Commando</wornGraphicPath>
 			<layers>
 				<li>Shell</li>
 			</layers>
@@ -106,11 +106,11 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="ApparelSpacerSimpleBase">
-		<defName>InterstellarArmor</defName>
+		<defName>Armor_Interstellar</defName>
 		<label>Interstellar Armor</label>
 		<description>A special interstellar armor.</description>
 		<graphicData>
-			<texPath>Things/Apparel/HellEffect/Interstellar</texPath>
+			<texPath>Things/Apparel/Armor/Interstellar/Interstellar</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingClass>SK.OpticEvasionArmor</thingClass>
@@ -172,7 +172,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/HellEffect/Interstellar</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Armor/Interstellar/Interstellar</wornGraphicPath>
 			<layers>
 				<li>Shell</li>
 			</layers>
