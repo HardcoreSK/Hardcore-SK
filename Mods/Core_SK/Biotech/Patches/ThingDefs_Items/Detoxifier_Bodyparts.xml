@@ -19,11 +19,16 @@
             <li Class="SK.PatchOperationReplaceExtended">
                 <xpath>Defs/ThingDef[defName="DetoxifierLung"]</xpath>
                 <value>
-                    <statBases>
+                    <graphicData>
+                        <texPath>Things/Item/BodyPart/DetoxifierLungs</texPath>
+                        <graphicClass>Graphic_Single</graphicClass>
+                        <drawSize>0.80</drawSize>
+                    </graphicData>
+                    <statBases Merge="True">
                         <Mass>2</Mass>
                         <MaxHitPoints>75</MaxHitPoints>
                     </statBases>
-                    <costList DeepReplace="True">
+                    <costList>
                         <Biomatter>20</Biomatter>
                         <CarbonAlloy>5</CarbonAlloy>
                         <SyntheticFibers>8</SyntheticFibers>
@@ -42,11 +47,16 @@
             <li Class="SK.PatchOperationReplaceExtended">
                 <xpath>Defs/ThingDef[defName="DetoxifierKidney"]</xpath>
                 <value>
-                    <statBases>
+                    <graphicData>
+                        <texPath>Things/Item/BodyPart/DetoxifierKidney</texPath>
+                        <graphicClass>Graphic_Single</graphicClass>
+                        <drawSize>0.80</drawSize>
+                    </graphicData>
+                    <statBases Merge="True">
                         <Mass>1</Mass>
                         <MaxHitPoints>75</MaxHitPoints>
                     </statBases>
-                    <costList DeepReplace="True">
+                    <costList>
                         <Biomatter>15</Biomatter>
                         <CarbonAlloy>5</CarbonAlloy>
                         <SyntheticFibers>6</SyntheticFibers>

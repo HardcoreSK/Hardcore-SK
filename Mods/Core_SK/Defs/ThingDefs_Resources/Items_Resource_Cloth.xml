@@ -698,15 +698,15 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>0.05</Flammability>
 			<DeteriorationRate>0</DeteriorationRate>
-			<StuffPower_Armor_Blunt>1.72</StuffPower_Armor_Blunt>
+			<!--<StuffPower_Armor_Blunt>1.72</StuffPower_Armor_Blunt>
 			<StuffPower_Armor_Sharp>1.9</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Heat>0.157</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
-			<StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+			<StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>-->
 			<Mass>0.1</Mass>
 			<Bulk>0.1</Bulk>
 		</statBases>
-		<stuffProps>
+		<!--<stuffProps>
 			<constructEffect>ConstructMetal</constructEffect>
 			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
 			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
@@ -728,16 +728,17 @@
 				<ImmunityGainSpeedFactor>0.9</ImmunityGainSpeedFactor>
 				<Mass>0.8</Mass>
 			</statFactors>
-		</stuffProps>
+		</stuffProps>-->
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<thingCategories>
-			<li>HTextiles</li>
+			<!--<li>HTextiles</li>-->
+			<li>CTextiles</li>
 		</thingCategories>
-		<comps>
+		<!--<comps>
 			<li>
 				<compClass>CompColorable</compClass>
 			</li>
-		</comps>
+		</comps>-->
 		<stackLimit>150</stackLimit>
 	</ThingDef>
 

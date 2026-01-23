@@ -31,4 +31,11 @@
 			</stuffCategories>
 		</value>
 	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="GravcorePowerCell"]</xpath>
+		<value>
+            <designationCategory>Odyssey</designationCategory>
+		</value>
+	</Operation>
 </Patch>

@@ -123,7 +123,6 @@
   <ThingDef ParentName="ValveBase"  Class="Rimatomics.RimatomicsThingDef">
     <defName>coolantValve</defName>
     <label>Coolant valve</label>
-    <designatorDropdown>RimatomicsValves</designatorDropdown>
     <pathCost>75</pathCost>
     <description>Opens or closes connections between coolant pipes.</description>
     <graphicData>
@@ -167,7 +166,6 @@
   <ThingDef ParentName="ValveBase"  Class="Rimatomics.RimatomicsThingDef">
     <defName>steamValve</defName>
     <label>Steam valve</label>
-    <designatorDropdown>RimatomicsValves</designatorDropdown>
     <description>Opens or closes connections between steam pipes.</description>
     <graphicData>
       <texPath>Rimatomics/Things/RimatomicsBuildings/SteamValve</texPath>
@@ -209,7 +207,6 @@
   <ThingDef ParentName="ValveBase"  Class="Rimatomics.RimatomicsThingDef">
     <defName>waterValve</defName>
     <label>Cold water valve</label>
-    <designatorDropdown>RimatomicsValves</designatorDropdown>
     <description>Opens or closes connections between cold water pipes.</description>
     <graphicData>
       <texPath>Rimatomics/Things/RimatomicsBuildings/WaterValve</texPath>

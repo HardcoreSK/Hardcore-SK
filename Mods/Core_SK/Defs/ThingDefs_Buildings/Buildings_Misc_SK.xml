@@ -2241,9 +2241,7 @@
 	<ThingDef ParentName="MiscBuildingBase" Class="SK.ThingDef_MobileMineralSonar">
 		<defName>MobileMineralSonar</defName>
 		<label>mobile mineral sonar</label>
-		<description>The mobile mineral sonar is used to detect hidden minerals.
-- It will scan the surrounding rocks autonomously with the embedded energy packs.
-- Supplying some additional power will hasten the scan rate.</description>
+		<description>The mobile mineral sonar is used to detect hidden minerals.\n- It will scan the surrounding rocks autonomously with the embedded energy packs.\n- Supplying some additional power will hasten the scan rate.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Building/MobileMineralSonar</texPath>
@@ -3092,7 +3090,8 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+<!-- DefOverwrite
+    <ThingDef ParentName="BuildingBase">
 		<defName>PenMarker</defName>
 		<label>pen marker</label>
 		<description>A post with a sign designating an animal pen. It must be placed in an area enclosed by fences, barricades, walls, and doors. You can assign each pen marker a set of animals to accept, and handlers will bring animals to an appropriate pen.</description>
@@ -3157,5 +3156,6 @@
 			<li>PlaceWorker_AnimalPenMarker</li>
 		</placeWorkers>
 	</ThingDef>
+-->
 
 </Defs>

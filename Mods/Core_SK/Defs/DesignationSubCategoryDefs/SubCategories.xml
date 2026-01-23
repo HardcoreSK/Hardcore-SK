@@ -125,6 +125,7 @@
 			<li>TidalGenerator</li>
 			<li>SteamGenerator</li>
 			<li>WatermillGenerator</li>
+			<li MayRequire="ludeon.rimworld.biotech">ToxifierGenerator</li>
 			<li>TKKN_SteamGenerator</li>
 			<li>GeothermalGenerator</li>
 			<li>AdvancedWindTurbine</li>
@@ -143,10 +144,11 @@
 		<defNames>
 			<li>WoodFiredGenerator</li>
 			<li>CoalPowerPlant</li>
+			<li MayRequire="ludeon.rimworld.anomaly">BioferriteGenerator</li>
 			<li>ChemfuelPoweredGenerator</li>
 			<li>FuelPowerplant</li>
 			<li>LargeFuelPowerplant</li>
-			<li MayRequire="ludeon.rimworld.anomaly">BioferriteGenerator</li>
+			<li>AntimatterReactor</li>
 		</defNames>
 		<designationCategory>Power</designationCategory>
 	</ArchitectSense.DesignationSubCategoryDef>
@@ -430,6 +432,7 @@
 			<li>PentaPlantPot</li>
 			<li>DecoratedPot</li>
 			<li>ElectricTreePot</li>
+			<li MayRequire="ludeon.rimworld.ideology">PlantPot_Bonsai</li>
 		</defNames>
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
@@ -1152,13 +1155,15 @@
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_TableGames</defName>
-		<label>table games</label>
+		<label>board games</label>
 		<description>A table specially made for playing games.</description>
 		<defNames>
 			<li>GoTable</li>
 			<li>ChessTable</li>
 			<li>ReversiTable</li>
 			<li>CardTable</li>
+			<li>GameOfUrBoard</li>
+			<li>PokerTable</li>
 		</defNames>
 		<designationCategory>Joy</designationCategory>
 		<debug>false</debug>
@@ -1613,12 +1618,71 @@
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_AtomicPipes</defName>
-		<label>pipes</label>
-		<description>Various pipes.</description>
+		<label>pipes and cables</label>
+		<description>Various pipes and cables.</description>
 		<defNames>
 			<li>coolingPipe</li>
+			<li>coolantValve</li>
 			<li>steamPipe</li>
+			<li>steamValve</li>
 			<li>waterPipe</li>
+			<li>waterValve</li>
+			<li>HighVoltage</li>
+			<li>controllerLoom</li>
+		</defNames>
+		<designationCategory>Rimatomics</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_AtomicCooling</defName>
+		<label>reactor cooling structures</label>
+		<description>Various cooling structures.</description>
+		<defNames>
+			<li>CoolingRadiator</li>
+			<li>CoolingWater</li>
+			<li>CoolingTower</li>
+		</defNames>
+		<designationCategory>Rimatomics</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_AtomicTurbines</defName>
+		<label>turbines</label>
+		<description>All this time it was just for boiling water?</description>
+		<defNames>
+			<li>Turbine</li>
+			<li>BigTurbine</li>
+		</defNames>
+		<designationCategory>Rimatomics</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_AtomicUtilities</defName>
+		<label>operating structures</label>
+		<description>Various structures to operate and use reactors.</description>
+		<defNames>
+			<li>ReactorControl</li>
+			<li>Transformer</li>
+			<li>storagePool</li>
+			<li>RadiationDetector</li>
+		</defNames>
+		<designationCategory>Rimatomics</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_AtomicCraft</defName>
+		<label>research and production</label>
+		<description>You can build anything without knowledge and a bit of silver.</description>
+		<defNames>
+			<li>NuclearResearchBench</li>
+			<li>TableRimatomicsMachining</li>
+			<li>WeaponsBench</li>
+			<li>ResearchReactor</li>
+			<li>PlutoniumProcessor</li>
 		</defNames>
 		<designationCategory>Rimatomics</designationCategory>
 		<debug>false</debug>
@@ -1638,7 +1702,6 @@
 		<designationCategory>Rimatomics</designationCategory>
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
-
 
 	<!-- SK_category_terraform -->
 
@@ -1898,57 +1961,6 @@
 		<designationCategory>Floors</designationCategory>
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
-
-	<!--<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_SoftCarpet</defName>
-		<label>Soft carpet</label>
-		<description>Stunning carpet that is soft and relaxing.</description>
-		<defNames>
-			<li>CarpetBeige</li>
-			<li>CarpetRed</li>
-			<li>CarpetGreen</li>
-			<li>CarpetBlue</li>
-			<li>CarpetCream</li>
-			<li>CarpetDark</li>
-		</defNames>
-		<designationCategory>Floors</designationCategory>
-		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_SoftCarpetAdditional</defName>
-		<label>Soft carpet</label>
-		<description>Stunning carpet that is soft and relaxing.</description>
-		<defNames>
-			<li>CarpetOrange</li>
-			<li>CarpetYellow</li>
-			<li>CarpetTurquoise</li>
-			<li>CarpetPurple</li>
-			<li>CarpetWhite</li>
-			<li>CarpetBlack</li>
-		</defNames>
-		<designationCategory>Floors</designationCategory>
-		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_CheckeredCarpet</defName>
-		<label>Checkered carpet</label>
-		<description>Checker board pattern carpets.</description>
-		<defNames>
-			<li>CheckCarpetRed</li>
-			<li>CheckCarpetOrange</li>
-			<li>CheckCarpetYellow</li>
-			<li>CheckCarpetGreen</li>
-			<li>CheckCarpetTurquoise</li>
-			<li>CheckCarpetBlue</li>
-			<li>CheckCarpetPurple</li>
-			<li>CheckCarpetWhite</li>
-			<li>CheckCarpetBlack</li>
-		</defNames>
-		<designationCategory>Floors</designationCategory>
-		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>-->
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_VanillaFloor</defName>
@@ -2291,6 +2303,79 @@
 			<li>SoftClay-SoilRich</li>
 		</defNames>
 		<designationCategory>SK_category_terraform</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <!--DLC categories-->
+    <!--Biotech-->
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_MechRechargers</defName>
+		<label>Mechanoid recharger</label>
+		<description>Maintain stable power supply with these devices!</description>
+		<defNames>
+			<li>BasicRecharger</li>
+			<li>StandardRecharger</li>
+		</defNames>
+		<designationCategory>Biotech</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_MechGestators</defName>
+		<label>Mechanoid gestators</label>
+		<description>Create new mechanoids with these devices!</description>
+		<defNames>
+			<li>MechGestator</li>
+			<li>LargeMechGestator</li>
+		</defNames>
+		<designationCategory>Biotech</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_MechSubcores</defName>
+		<label>Subcores stations</label>
+		<description>Make new subcores for your mechanoids with these devices!</description>
+		<defNames>
+			<li>SubcoreEncoder</li>
+			<li>SubcoreSoftscanner</li>
+			<li>SubcoreRipscanner</li>
+		</defNames>
+		<designationCategory>Biotech</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_GenesStations</defName>
+		<label>Genetics</label>
+		<description>Devices for gene modification, storage and extraction.</description>
+		<defNames>
+			<li>GeneAssembler</li>
+            <li>GeneExtractor</li>
+            <li MayRequire="RedMattis.GeneExtractor">GET_GeneExtractor_II</li>
+            <li MayRequire="RedMattis.GeneExtractor">GET_GeneExtractor_III</li>
+            <li MayRequire="RedMattis.GeneExtractor">GET_GeneExtractor_IV</li>
+			<li>GeneProcessor</li>
+			<li>GeneBank</li>
+		</defNames>
+		<designationCategory>Biotech</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_GemoStations</defName>
+		<label>Deathrest</label>
+		<description>Deathrest services.</description>
+		<defNames>
+			<li>DeathrestCasket</li>
+            <li>Hemopump</li>
+			<li>HemogenAmplifier</li>
+			<li>GlucosoidPump</li>
+			<li>PsychofluidPump</li>
+			<li>DeathrestAccelerator</li>
+		</defNames>
+		<designationCategory>Biotech</designationCategory>
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
 

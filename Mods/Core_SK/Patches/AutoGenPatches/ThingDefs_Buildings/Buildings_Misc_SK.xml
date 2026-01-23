@@ -975,4 +975,11 @@
         </value>
     </Operation>
 
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="PenMarker"]</xpath>
+        <value>
+            <designationCategory>Structure</designationCategory>
+        </value>
+    </Operation>
+
 </Patch>

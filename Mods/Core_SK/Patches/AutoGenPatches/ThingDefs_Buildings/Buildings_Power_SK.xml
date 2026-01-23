@@ -499,9 +499,9 @@
         <MaxHitPoints>400</MaxHitPoints>
         <WorkToBuild>7000</WorkToBuild>
         <Flammability>1.0</Flammability>
-        <Beauty>-40</Beauty>
+        <Beauty>-10</Beauty>
       </statBases>
-      <description>Produces electricity from geothermal steam geysers. Must be placed on a steam geyser.\nMax. power output: 2,500 W.</description>
+      <description>Produces electricity from geothermal steam geysers. Must be placed on a steam geyser.\nMax. power output: 5,000 W.</description>
       <stuffCategories>
         <li>RuggedMetallic</li>
       </stuffCategories>
@@ -516,7 +516,7 @@
       <comps>
         <li Class="CompProperties_Power">
           <compClass>CompPowerPlantSteam</compClass>
-          <basePowerConsumption>-2500</basePowerConsumption>
+          <basePowerConsumption>-5000</basePowerConsumption>
           <transmitsPower>true</transmitsPower>
           <soundAmbientProducingPower>GeothermalPlant_Ambience</soundAmbientProducingPower>
         </li>

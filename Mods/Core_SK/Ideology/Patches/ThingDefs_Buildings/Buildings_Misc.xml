@@ -110,6 +110,23 @@
 					<ElectronicComponents>1</ElectronicComponents>
 				</value>
 			</li>
+            <!--Pot Bonsai patches-->
+			<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/ThingDef[defName="PlantPot_Bonsai"]</xpath>
+				<value>
+                    <graphicData>
+                        <texPath>Things/Building/Furniture/Pots/circleflowerbed</texPath>
+                        <graphicClass>Graphic_Single</graphicClass>
+                    </graphicData>
+                    <designationCategory>Accessories</designationCategory>
+                    <costList>
+                      <Fertilizer>7</Fertilizer>
+                    </costList>
+                    <researchPrerequisites>
+                      <li>Accessory_B1</li>
+                    </researchPrerequisites>
+				</value>
+			</li>
 		</operations>
 	</Operation>
 

@@ -426,62 +426,91 @@
 
 	<!-- Terraform -->
 
-	<SubCategory_RockDirt.label>Скалистая грязь в ...</SubCategory_RockDirt.label>
+	<SubCategory_RockDirt.label>скалистая грязь в ...</SubCategory_RockDirt.label>
 	<SubCategory_RockDirt.description>Терраформирование скалистой грязи в другие типы поверхности</SubCategory_RockDirt.description>
 
-	<SubCategory_Sand.label>Песок в ...</SubCategory_Sand.label>
+	<SubCategory_Sand.label>песок в ...</SubCategory_Sand.label>
 	<SubCategory_Sand.description>Терраформирование песка в другие типы поверхности</SubCategory_Sand.description>
 
-	<SubCategory_Gravel.label>Гравий в ...</SubCategory_Gravel.label>
+	<SubCategory_Gravel.label>гравий в ...</SubCategory_Gravel.label>
 	<SubCategory_Gravel.description>Терраформирование гравия в другие типы поверхности</SubCategory_Gravel.description>
 
-	<SubCategory_Soil.label>Почва в ...</SubCategory_Soil.label>
+	<SubCategory_Soil.label>почва в ...</SubCategory_Soil.label>
 	<SubCategory_Soil.description>Терраформирование почвы в другие типы поверхности</SubCategory_Soil.description>
 
-	<SubCategory_SoilMarshy.label>Заболоченное место в ...</SubCategory_SoilMarshy.label>
+	<SubCategory_SoilMarshy.label>заболоченное место в ...</SubCategory_SoilMarshy.label>
 	<SubCategory_SoilMarshy.description>Терраформирование заболоченного места в другие типы поверхности</SubCategory_SoilMarshy.description>
 
-	<SubCategory_Marsh.label>Болото в ...</SubCategory_Marsh.label>
+	<SubCategory_Marsh.label>болото в ...</SubCategory_Marsh.label>
 	<SubCategory_Marsh.description>Терраформирование болота в другие типы поверхности</SubCategory_Marsh.description>
 
-	<SubCategory_WaterShallow.label>Мелководье в ...</SubCategory_WaterShallow.label>
+	<SubCategory_WaterShallow.label>мелководье в ...</SubCategory_WaterShallow.label>
 	<SubCategory_WaterShallow.description>Терраформирование мелководья в другие типы поверхности</SubCategory_WaterShallow.description>
 
-	<SubCategory_Cultivate.label>Культивация</SubCategory_Cultivate.label>
+	<SubCategory_Cultivate.label>культивация</SubCategory_Cultivate.label>
 	<SubCategory_Cultivate.description>Обогащение поверхностей с затратой ресурсов</SubCategory_Cultivate.description>
 
-	<SubCategory_Gather.label>Сбор ресурсов</SubCategory_Gather.label>
+	<SubCategory_Gather.label>сбор ресурсов</SubCategory_Gather.label>
 	<SubCategory_Gather.description>Сбор ресурсов с обеднением поверхностей</SubCategory_Gather.description>
 
-	<SubCategory_Misc.label>Разное</SubCategory_Misc.label>
+	<SubCategory_Misc.label>разное</SubCategory_Misc.label>
 	<SubCategory_Misc.description>Терраформирование специфических поверностей</SubCategory_Misc.description>
 
 	
 	<!-- Rimefeller -->
 	
-	<SubCategory_Refinery.label>Переработчики</SubCategory_Refinery.label> 
+	<SubCategory_Refinery.label>переработчики</SubCategory_Refinery.label> 
 	<SubCategory_Refinery.description>Процесс переработки топлива в другие продукты.</SubCategory_Refinery.description>
 	
-	<SubCategory_OilWells.label>Нефтяные скважины</SubCategory_OilWells.label> 
+	<SubCategory_OilWells.label>нефтяные скважины</SubCategory_OilWells.label> 
 	<SubCategory_OilWells.description>Добывает нефть из подземных резервуаров.</SubCategory_OilWells.description>
 
-	<SubCategory_FuelStorages.label>Цистерны</SubCategory_FuelStorages.label> 
+	<SubCategory_FuelStorages.label>цистерны</SubCategory_FuelStorages.label> 
 	<SubCategory_FuelStorages.description>Сохраняйте запасы топлива.</SubCategory_FuelStorages.description>
 
-	<SubCategory_Pumps.label>Помпы</SubCategory_Pumps.label> 
+	<SubCategory_Pumps.label>помпы</SubCategory_Pumps.label> 
 	<SubCategory_Pumps.description>Закачивайте и выкачивайте топливо по необходимости.</SubCategory_Pumps.description>
 	
 	
 	<!-- Rimatomics -->
 	
-	<SubCategory_Reactors.label>Реакторы</SubCategory_Reactors.label> 
+	<SubCategory_Reactors.label>реакторы</SubCategory_Reactors.label> 
 	<SubCategory_Reactors.description>Несколько видов ядерных реакторов.</SubCategory_Reactors.description>
 	
-	<SubCategory_AtomicPipes.label>Трубы</SubCategory_AtomicPipes.label> 
-	<SubCategory_AtomicPipes.description>Различные трубы для охлаждения и для работы ядерного реактора.</SubCategory_AtomicPipes.description>
+	<SubCategory_AtomicPipes.label>трубы и кабеля</SubCategory_AtomicPipes.label> 
+	<SubCategory_AtomicPipes.description>Различные трубы для охлаждения и кабеля для работы ядерного реактора.</SubCategory_AtomicPipes.description>
 
-	<SubCategory_EnergyWeapons.label>Энергетическое оружие</SubCategory_EnergyWeapons.label> 
+	<SubCategory_AtomicCooling.label>охлаждение реакторов</SubCategory_AtomicCooling.label> 
+	<SubCategory_AtomicCooling.description>Различные строения для охлаждения реакторов.</SubCategory_AtomicCooling.description>
+
+	<SubCategory_AtomicTurbines.label>турбины</SubCategory_AtomicTurbines.label> 
+	<SubCategory_AtomicTurbines.description>Всё это время это было просто для кипячения воды?</SubCategory_AtomicTurbines.description>
+
+	<SubCategory_AtomicUtilities.label>управление реактором</SubCategory_AtomicUtilities.label> 
+	<SubCategory_AtomicUtilities.description>Различные строения для управления и контроля.</SubCategory_AtomicUtilities.description>
+
+	<SubCategory_AtomicCraft.label>исследования и производство</SubCategory_AtomicCraft.label> 
+	<SubCategory_AtomicCraft.description>Нельзя ничего построить без знаний и небольшого количества серебра.</SubCategory_AtomicCraft.description>
+
+	<SubCategory_EnergyWeapons.label>энергетическое оружие</SubCategory_EnergyWeapons.label> 
 	<SubCategory_EnergyWeapons.description>Различное энергетическое оружие.</SubCategory_EnergyWeapons.description>
+    
+    <!-- DLCs -->
+
+    <SubCategory_MechRechargers.label>зарядные станции</SubCategory_MechRechargers.label>
+    <SubCategory_MechRechargers.description>Поддерживайте стабильное электропитание механоидов с помощью этих устройств!</SubCategory_MechRechargers.description>
+
+    <SubCategory_MechGestators.label>гестаторы механоидов</SubCategory_MechGestators.label>
+    <SubCategory_MechGestators.description>Создавайте новых механоидов с помощью этих устройств!</SubCategory_MechGestators.description>
+    
+    <SubCategory_MechSubcores.label>станции субъядер</SubCategory_MechSubcores.label>
+    <SubCategory_MechSubcores.description>Создавайте новые ядра для механоидов с помощью этих устройств!</SubCategory_MechSubcores.description>
+    
+    <SubCategory_GenesStations.label>генетика</SubCategory_GenesStations.label>
+    <SubCategory_GenesStations.description>Устройства для модификации, хранения и извлечения генов.</SubCategory_GenesStations.description>
+    
+    <SubCategory_GemoStations.label>торпор</SubCategory_GemoStations.label>
+    <SubCategory_GemoStations.description>Устройства для гемофагов.</SubCategory_GemoStations.description>
 
 
 </LanguageData>
