@@ -1,4 +1,4 @@
-# Rimworld Hardcore SK v.1.6 (WIP)
+<img width="5120" height="1440" alt="image" src="https://github.com/user-attachments/assets/7559b363-0cf1-4639-a37d-3061cb5feddc" /># Rimworld Hardcore SK v.1.6 (WIP)
 
 [![Logo](https://i.imgur.com/WP7w2sM.png)](https://github.com/skyarkhangel/Hardcore-SK)
 <!-- you cant center markdown images -->
@@ -98,7 +98,7 @@ A big thank you to all those that help donate to those on the project!
 * **Discord moderators** - Ziemens, MightyGooga, GG, Szara Kryik, Ashardalon, Xx-Nelson-xX, AndreiAvinov (Kiri), GuardianDll, Pacas
 * **Artists** - Cattleya (<https://www.patreon.com/cattleya>), Vile Heathen
 * **Coders** - Jeremy(PirateBY), TGC, Void, Dusty Breeches, Glucocorticoid, qwerty19106, AndreiAvinov (Kiri), MasakiTenchi 
-* **XML modders** - Sidfu, ArpoMo6, GuardianDll, Spaniard829, Vile Heathen, Pacas, Xx-Nelson-xX
+* **XML modders** - Sidfu, ArpoMo6, GuardianDll, Spaniard829, Vile Heathen, Pacas, Xx-Nelson-xX, Elldar
 
 ### Special thanks to
 
