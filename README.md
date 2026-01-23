@@ -1,4 +1,4 @@
-<img width="5120" height="1440" alt="image" src="https://github.com/user-attachments/assets/7559b363-0cf1-4639-a37d-3061cb5feddc" /># Rimworld Hardcore SK v.1.6 (WIP)
+# Rimworld Hardcore SK v.1.6 (WIP)
 
 [![Logo](https://i.imgur.com/WP7w2sM.png)](https://github.com/skyarkhangel/Hardcore-SK)
 <!-- you cant center markdown images -->
