@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <!-- BASE -->
+    <!-- BASES -->
     <ThingDef Name="SK_BaseGun" Abstract="True">
         <category>Item</category>
         <drawerType>MapMeshOnly</drawerType>
@@ -161,7 +161,6 @@
         </tools>
     </ThingDef>
 
-
     <ThingDef ParentName="BaseGunCR_Extended" Name="BaseGun_LongBarreled" Abstract="True">
         <equippedStatOffsets>
             <Suppressability>-0.35</Suppressability>
@@ -206,7 +205,6 @@
         </tools>
     </ThingDef>
 
-
     <ThingDef ParentName="BaseGunCR_Extended" Name="BaseGun_Heavy" Abstract="True">
         <equippedStatOffsets>
             <Suppressability>-0.45</Suppressability>
@@ -228,7 +226,6 @@
             </li>
         </tools>
     </ThingDef>
-
 
     <ThingDef ParentName="BaseGunCR" Name="BaseGun_Other" Abstract="True">
         <tools>

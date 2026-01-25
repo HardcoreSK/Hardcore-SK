@@ -3,9 +3,9 @@
 
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildSniperRifle</defName>
-		<label>Build M21 Sniper Rifle</label>
+		<label>Build M24 Sniper Rifle</label>
 		<description>Builds an ancient pattern military sniper rifle. Bolt action, long range, great accuracy and power.\nCaliber: 7.62x51mm NATO</description>
-		<jobString>Building M21 Sniper Rifle.</jobString>
+		<jobString>Building M24 Sniper Rifle.</jobString>
 		<workAmount>16600</workAmount>
 		<skillRequirements>
 			<Crafting>13</Crafting>
@@ -82,12 +82,11 @@
 	    <researchPrerequisite>Sniper_rifles_C1</researchPrerequisite>
 	</RecipeDef>
 
-
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildM42A_USCM</defName>
-		<label>Build M42A Scope Rifle</label>
-		<description>The M42A Scope Rifle is an American-made semi-automatic sniper rifle.\nCaliber: 7.62x51mm NATO</description>
-		<jobString>Building M42A Scope Rifle.</jobString>
+		<label>Build VC32 Scope Rifle</label>
+		<description>The VC32 Scope Rifle is an American-made semi-automatic sniper rifle.\nCaliber: 7.62x51mm NATO</description>
+		<jobString>Building VC32 Scope Rifle.</jobString>
 		<workAmount>16900</workAmount>
 		<skillRequirements>
 			<Crafting>13</Crafting>
@@ -326,7 +325,6 @@
 		<researchPrerequisite>Sniper_rifles_D1</researchPrerequisite>
 	</RecipeDef>
 
-
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildTAMSR</defName>
 		<label>Build SRS99 AM Sniper Rifle</label>
@@ -407,7 +405,6 @@
 		</recipeUsers>
 		<researchPrerequisite>Sniper_rifles_D1</researchPrerequisite>
 	</RecipeDef>
-
 
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildARFifty</defName>
@@ -573,9 +570,9 @@
 
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildATR</defName>
-		<label>Build PTRD-41 Rifle</label>
-		<description>Builds the PTRD-41 Rifle, which is an anti-tank rifle with special armor piercing penetration rounds.\nCaliber: 14.5x114mm</description>
-		<jobString>Building PTRD-41 Rifle.</jobString>
+		<label>Build M205A2 Rifle</label>
+		<description>Builds M205A2 ATR, which is an anti-tank rifle with special armor piercing penetration rounds.\nCaliber: 14.5x114mm</description>
+		<jobString>Building M205A2 Rifle.</jobString>
 		<workAmount>21000</workAmount>
 		<skillRequirements>
 			<Crafting>15</Crafting>
@@ -640,7 +637,7 @@
 		<recipeUsers>
 			<li>AdvWeaponCraftingWorkTable</li>
 		</recipeUsers>
-	    <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+	    <researchPrerequisite>Sniper_rifles_D1</researchPrerequisite>
 	</RecipeDef>
 
 </Defs>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Gun_BinocularsRadio"]/graphicData</xpath>
+                <value>
+                    <drawSize>(0.75,0.75)</drawSize>
+                </value>
+            </li>
+            <!--<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Gun_InfernoCannon"]/graphicData</xpath>
+                <value>
+                    <drawSize>(1.15,1.15)</drawSize>
+                </value>
+            </li>-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Gun_Minigun"]/graphicData</xpath>
+                <value>
+                    <drawSize>(1.35,1.35)</drawSize>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

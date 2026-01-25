@@ -7,7 +7,7 @@
         <label>M24 Sniper Rifle</label>
         <description>Ancient pattern military sniper rifle. Bolt action. Long range, great accuracy and power.</description>
         <graphicData>
-            <texPath>Things/Weapons/SniperRifles/SniperRifle</texPath>
+            <texPath>Things/Weapons/SniperRifles/M24</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -59,14 +59,15 @@
         </smeltProducts>
     </ThingDef>
 	
-    <!-- M42A -->
+    <!-- VC32 -->
     <ThingDef ParentName="BaseGun_LongBarreled">
         <defName>Gun_M42A_USCM</defName>
         <label>VC32 Sniper Rifle</label>
         <description>The VC32 Sniper Rifle is an American-made semi-automatic sniper rifle chambered for 7.62x51mm NATO ammunition. It is employed as the primary sniper weapon of the United States Colonial Marine Corps.</description>
         <graphicData>
-            <texPath>Things/Weapons/SniperRifles/M42A</texPath>
+            <texPath>Things/Weapons/SniperRifles/VC32</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.35,1.35)</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -125,6 +126,7 @@
         <graphicData>
             <texPath>Things/Weapons/SniperRifles/WA2K</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.15,1.15)</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <tradeTags>
