@@ -160,6 +160,21 @@
 			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
 		</placeWorkers>
 	</ThingDef>
+
+	<ThingDef Name="JoyBase" ParentName="StandardBuilding" Abstract="True">
+		<statBases>
+			<Bulk>20</Bulk>
+			<Mass>10</Mass>
+		</statBases>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsJoy</li>
+		</thingCategories>
+		<building>
+			<uninstallWork>800</uninstallWork>
+		</building>
+	</ThingDef>
+    
 <!-- DefOverwrite
 	<ThingDef Name="SK_FurnitureBase" ParentName="StandardBuilding" Abstract="True">
 		<fillPercent>0.6</fillPercent>
