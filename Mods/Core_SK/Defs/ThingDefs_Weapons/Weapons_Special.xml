@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="BaseMeleeStun">
+        <defName>MeleeWeapon_Shocker</defName>
+        <label>Taser</label>
+        <description>A shocker that can stun the victim.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Special/StunGun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <stuffCategories>
+            <li>StrongMetallic</li>
+        </stuffCategories>
+        <costStuffCount>30</costStuffCount>
+        <costList>
+            <ComponentAdvanced>3</ComponentAdvanced>
+            <Weapon_Parts>12</Weapon_Parts>
+            <Electronics>5</Electronics>
+            <Plastic>35</Plastic>
+        </costList>
+        <weaponTags>
+            <li>HitechMelee</li>
+            <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+        <soundInteract>InteractMelee</soundInteract>
+        <statBases>
+            <WorkToMake>11500</WorkToMake>
+            <Flammability>1</Flammability>
+            <Bulk>1.20</Bulk>
+            <Mass>1.10</Mass>
+            <MeleeCounterParryBonus>1.2</MeleeCounterParryBonus>
+        </statBases>
+        <equippedStatOffsets>
+            <MeleeDodgeChance>0.4</MeleeDodgeChance>
+            <MeleeParryChance>0.15</MeleeParryChance>
+        </equippedStatOffsets>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>handle</label>
+                <capacities>
+                    <li>ElectricShock</li>
+                </capacities>
+                <power>2</power>
+                <cooldownTime>2.3</cooldownTime>
+                <chanceFactor>100</chanceFactor>
+                <armorPenetrationSharp>4</armorPenetrationSharp>
+                <armorPenetrationBlunt>4</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <thingCategories>
+            <li>SpecialMelee</li>
+        </thingCategories>
+        <recipeMaker>
+            <researchPrerequisite>Melee_C2</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseMeleeStun">
+        <defName>MeleeWeapon_ElectricBaton</defName>
+        <label>Electric Baton</label>
+        <weaponTags>
+            <li>HitechMelee</li>
+            <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+        <description>An electrified Melee Weapon, perfect for incapacitating.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Special/ElectricBaton</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractMelee</soundInteract>
+        <statBases>
+            <WorkToMake>15000</WorkToMake>
+            <Flammability>1</Flammability>
+            <Bulk>1.70</Bulk>
+            <Mass>2.20</Mass>
+            <MeleeCounterParryBonus>0.45</MeleeCounterParryBonus>
+        </statBases>
+        <stuffCategories>
+            <li>StrongMetallic</li>
+        </stuffCategories>
+        <costStuffCount>50</costStuffCount>
+        <costList>
+            <ComponentAdvanced>5</ComponentAdvanced>
+            <Weapon_Parts>12</Weapon_Parts>
+            <Electronics>7</Electronics>
+            <Plastic>25</Plastic>
+        </costList>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <equippedStatOffsets>
+            <MeleeParryChance>0.3</MeleeParryChance>
+            <MeleeDodgeChance>0.35</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>handle</label>
+                <capacities>
+                    <li>ElectricShock</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2.65</cooldownTime>
+                <chanceFactor>100</chanceFactor>
+                <armorPenetrationSharp>6</armorPenetrationSharp>
+                <armorPenetrationBlunt>6</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <thingCategories>
+            <li>SpecialMelee</li>
+        </thingCategories>
+        <recipeMaker>
+            <researchPrerequisite>Melee_C2</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+    <!-- FIRE EXTINGUISHER -->
+
+    <ThingDef Name="SK_BaseBulletanilla" Abstract="True">
+        <category>Projectile</category>
+        <tickerType>Normal</tickerType>
+        <altitudeLayer>Projectile</altitudeLayer>
+        <thingClass>CombatExtended.BulletCE</thingClass>
+        <label>bullet</label>
+        <useHitPoints>False</useHitPoints>
+        <neverMultiSelect>True</neverMultiSelect>
+        <graphicData>
+            <shaderType>Transparent</shaderType>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="SK_BaseBulletanilla">
+        <defName>Bullet_FireExtinguisher</defName>
+        <thingClass>CombatExtended.BulletCE</thingClass>
+        <label>foam</label>
+        <graphicData>
+            <texPath>Things/Projectile/Foam</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <flyOverhead>false</flyOverhead>
+            <damageDef>Extinguish</damageDef>
+            <suppressionFactor>0.0</suppressionFactor>
+            <dangerFactor>0.0</dangerFactor>
+            <explosionRadius>2</explosionRadius>
+            <soundExplode>Explosion_EMP</soundExplode>
+            <postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
+            <postExplosionSpawnChance>1</postExplosionSpawnChance>
+            <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+            <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+            <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        </projectile>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_BaseGun">
+        <defName>Gun_FireExtinguisher</defName>
+        <label>Fire Extinguisher</label>
+        <description>A gun loaded with expanding foam, used to extinguish fires.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Special/FireExtinguisher</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <SightsEfficiency>0.9</SightsEfficiency>
+            <ShotSpread>0.15</ShotSpread>
+            <SwayFactor>1.4</SwayFactor>
+            <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+            <Bulk>12.00</Bulk>
+            <Mass>6.00</Mass>
+        </statBases>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <defaultProjectile>Bullet_FireExtinguisher</defaultProjectile>
+                <hasStandardCommand>true</hasStandardCommand>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                    <canTargetFires>true</canTargetFires>
+                    <canTargetPlants>true</canTargetPlants>
+                </targetParams>
+                <warmupTime>0.15</warmupTime>
+                <burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+                <range>8</range>
+                <!--<soundCast>FoamSpray_Resolve</soundCast>-->
+                <soundCastTail>GunTail_Medium</soundCastTail>
+            </li>
+        </verbs>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>2</power>
+                <chanceFactor>0.33</chanceFactor>
+                <cooldownTime>1.59</cooldownTime>
+                <armorPenetrationBlunt>0.425</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>tank</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>1.68</cooldownTime>
+                <armorPenetrationBlunt>2.375</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+                <noSingleShot>true</noSingleShot>
+                <noSnapshot>true</noSnapshot>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>60</magazineSize>
+                <reloadTime>5</reloadTime>
+                <ammoSet>AmmoSet_FirefoamFuel</ammoSet>
+            </li>
+        </comps>
+        <weaponTags>
+            <li>Utility</li>
+            <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>SpecialWeapons</li>
+        </thingCategories>
+        <smeltProducts>
+            <Weapon_Parts>3</Weapon_Parts>
+            <ComponentIndustrial>5</ComponentIndustrial>
+        </smeltProducts>
+    </ThingDef>
+
+    <ThingCategoryDef>
+        <defName>AmmoFirefoamFuel</defName>
+        <label>firefoam Fuel</label>
+        <parent>AmmoAdvanced</parent>
+        <iconPath>UI/Icons/ThingCategories/CaliberFuel</iconPath>
+    </ThingCategoryDef>
+
+    <CombatExtended.AmmoSetDef>
+        <defName>AmmoSet_FirefoamFuel</defName>
+        <label>Firefoam Fuel</label>
+        <ammoTypes>
+            <Surfactant>Bullet_FireExtinguisher</Surfactant>
+        </ammoTypes>
+    </CombatExtended.AmmoSetDef>
+
+    <ThingDef Class="CombatExtended.AmmoDef" Name="FirefoamFuelBase" ParentName="AmmoBase" Abstract="True">
+        <description>Container holding fuel for firefoam weapons/utilities.</description>
+        <statBases>
+            <Mass>0.2</Mass>
+            <Bulk>0.25</Bulk>
+        </statBases>
+        <tradeTags>
+            <li>CE_AutoEnableTrade</li>
+            <li>Exotic</li>
+        </tradeTags>
+        <thingCategories>
+            <li>AmmoFirefoamFuel</li>
+            <li>Chemical</li>
+        </thingCategories>
+        <stackLimit>150</stackLimit>
+    </ThingDef>
+
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="FirefoamFuelBase">
+        <defName>Surfactant</defName>
+        <label>Surfactant Fuel</label>
+        <description>Surfactants are a product of Salt, Sulfur and Alcohol or various other methods. Effective foam base for fighting fires.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/SurfactantFuel</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(255,255,255)</color>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <tickerType>Rare</tickerType>
+        <techLevel>Industrial</techLevel>
+        <statBases>
+            <MarketValue>0.4</MarketValue>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Flammability>3</Flammability>
+            <Mass>0.06</Mass>
+            <Bulk>0.06</Bulk>
+        </statBases>
+        <ammoClass>FoamFuel</ammoClass>
+        <generateAllowChance>0</generateAllowChance>
+    </ThingDef>
+
+</Defs>

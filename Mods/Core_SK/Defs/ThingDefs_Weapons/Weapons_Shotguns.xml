@@ -7,7 +7,7 @@
         <label>M37A2 Pumpshotgun</label>
         <description>The M37A2 Pump Shotgun, also known as the M37A2 Combat Shotgun, is a pump-action combat shotgun manufactured by Armat Battlefield Systems. The M37A2 is a simple and effective pump-action shotgun; its "classic" pump-action allows extremely powerful shells to be fired reliably. The M37A2 is employed by the United States Colonial Marine Corps and Weyland-Yutani PMCs.</description>
         <graphicData>
-            <texPath>Things/Weapons/M37A2</texPath>
+            <texPath>Things/Weapons/Shotguns/M37A2</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -66,7 +66,7 @@
         <label>Striker shotgun</label>
         <description>A cheap-looking semi-automatic shotgun. Has a higher fire rate and high damage output, but low range.</description>
         <graphicData>
-            <texPath>Things/Weapons/Striker</texPath>
+            <texPath>Things/Weapons/Shotguns/Striker</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Shotgun</soundInteract>
@@ -130,7 +130,7 @@
         <label>M45 Tactical Shotgun</label>
         <description>The M45 Tactical Shotgun is a shotgun used by the United Nations Space Command Army.</description>
         <graphicData>
-            <texPath>Things/Weapons/M45</texPath>
+            <texPath>Things/Weapons/Shotguns/M45</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -196,7 +196,7 @@
         <label>Atchisson Assault AA-12</label>
         <description>An automatic shotgun with almost no recoil. Burstfires, moderately accurate just under rifle range, and has high damage output.</description>
         <graphicData>
-            <texPath>Things/Weapons/AA12</texPath>
+            <texPath>Things/Weapons/Shotguns/AA12</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Shotgun</soundInteract>
@@ -258,13 +258,13 @@
         </smeltProducts>
     </ThingDef>
 	
-    <!-- M-90 CAWS -->
+    <!-- Trident F7 -->
     <ThingDef ParentName="BaseGun_LongBarreled">
         <defName>Gun_TacticalAutoShotgun</defName>
-        <label>M90 CAWS</label>
-        <description>The M90 Close Assault Weapon System (M90 CAWS) is the UNSC's primary shotgun and is one of the most effective close range infantry weapons used by front line forces.</description>
+        <label>Trident F7</label>
+        <description>The Trident F7 is the glitterworld marines primary shotgun and is one of the most effective close range infantry weapons used by front line forces.</description>
         <graphicData>
-            <texPath>Things/Weapons/M90</texPath>
+            <texPath>Things/Weapons/Shotguns/Trident</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>

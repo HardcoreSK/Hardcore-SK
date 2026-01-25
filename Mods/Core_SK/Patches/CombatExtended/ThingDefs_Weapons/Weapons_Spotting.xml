@@ -3,6 +3,12 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="Gun_BinocularsRadio"]</xpath>
         <value>
+            <graphicData>
+                <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+                <texPath>Things/Weapons/Special/BinocularsRadio</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>(0.87,0.87)</drawSize>
+            </graphicData>
             <thingCategories Inherit="False">
                 <li>Specialranged</li>
             </thingCategories>

@@ -6,7 +6,7 @@
         <label>M16 Rifle</label>
         <description>A general-purpose military weapon for field or urban combat. It fires a three-round burst. Good range, low power, high rate of fire.</description>
         <graphicData>
-            <texPath>Things/Weapons/Assault_Carbine</texPath>
+            <texPath>Things/Weapons/Rifles/M16</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -68,7 +68,7 @@
         <label>HK XM8 Military Rifle</label>
         <description>Ancient pattern military weapon. Three-round burst. Good range, low power, high rate of fire.</description>
         <graphicData>
-            <texPath>Things/Weapons/XM8</texPath>
+            <texPath>Things/Weapons/Rifles/XM8</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -129,7 +129,7 @@
         <label>FAMAS G2</label>
         <description>The FAMAS is a bullpup-styled assault rifle designed and manufactured in France by MAS located in Saint-Étienne, which is now a member of the French government-owned Nexter group. It is the service rifle of the French military. Average damage and range, good rate of fire and accurracy.</description>
         <graphicData>
-            <texPath>Things/Weapons/Gun_FAMAS</texPath>
+            <texPath>Things/Weapons/Rifles/FAMAS</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -189,7 +189,7 @@
         <label>AK-47</label>
         <description>The AK-47 is a selective-fire, gas-operated 7.62×39mm assault rifle, first developed in the Soviet Union by Mikhail Kalashnikov. It is officially known as Avtomat Kalashnikova (Russian: Автомат Калашникова). Good damage, average range and rate of fire, poor accuracy.</description>
         <graphicData>
-            <texPath>Things/Weapons/Gun_AK47</texPath>
+            <texPath>Things/Weapons/Rifles/AK47</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -249,10 +249,10 @@
 	<!-- TAVOR TAR-21 -->
     <ThingDef ParentName="BaseGun_LongBarreled">
         <defName>Gun_MarineSturmRifle</defName>
-        <label>Tavor TAR-21</label>
+        <label>Morita II</label>
         <description>The Marine sturm rifle is the standard firearm for all combat personnel in the Colonial Marine Corps.</description>
         <graphicData>
-            <texPath>Things/Weapons/MarineSturmRifle</texPath>
+            <texPath>Things/Weapons/Rifles/MarineSturmRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -313,7 +313,7 @@
         <label>MA5 ICWS</label>
         <description>The MA5 Individual Combat Weapon System (MA5 ICWS or MA5 Assault rifle) is a standard-issue service rifle of the UNSC Marines.</description>
         <graphicData>
-            <texPath>Things/Weapons/BR55</texPath>
+            <texPath>Things/Weapons/Rifles/BR55</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -377,7 +377,7 @@
         <label>SIG SG553</label>
         <description>The SG553, a slightly improved version of the SG552, is the SBR (Short Barrel Rifle) version of the SIG SG550. It fires the 5.56x45mm NATO round. Average damage and range, good rate of fire and accurracy.</description>
         <graphicData>
-            <texPath>Things/Weapons/Gun_SG553</texPath>
+            <texPath>Things/Weapons/Rifles/SG553</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -438,7 +438,7 @@
         <label>Steyr AUG</label>
         <description>The Steyr AUG is an Austrian bullpup 5.56×45mm NATO assault rifle, designed in the 1960s by Steyr Mannlicher GmbH. Average damage, good range and accuracy, low rate of fire.</description>
         <graphicData>
-            <texPath>Things/Weapons/Gun_AUG</texPath>
+            <texPath>Things/Weapons/Rifles/AUG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -500,7 +500,7 @@
         <label>FN SCAR-H</label>
         <description>The Special Operations Forces Combat Assault Rifle (SCAR) is a gas-operated self-loading rifle with a rotating bolt. The rifle was developed by FN Herstal (FNH) for the United States Special Operations Command (SOCOM) to satisfy the requirements of the SCAR competition. Good damage, good range and accuracy, low rate of fire.</description>
         <graphicData>
-            <texPath>Things/Weapons/Gun_SCAR_H</texPath>
+            <texPath>Things/Weapons/Rifles/SCAR_H</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>

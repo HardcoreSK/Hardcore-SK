@@ -6,7 +6,7 @@
 		<label>Mech. Light Blaster</label>
 		<description>Mechanoid light blaster.</description>
 		<graphicData>
-			<texPath>Things/Weapons/Extraterrestrial</texPath>
+			<texPath>Things/Weapons/Mechanoid/Extraterrestrial</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>InteractPrecision</soundInteract>
@@ -69,7 +69,7 @@
 		<label>Mech. Heavy Charge Blaster</label>
 		<description>Charged-shot blaster for area suppressive fire. Mechanoid-built.</description>
 		<graphicData>
-			<texPath>Things/Weapons/MechGun</texPath>
+			<texPath>Things/Weapons/Mechanoid/MechGun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>InteractPrecision</soundInteract>
@@ -199,7 +199,7 @@
 		<label>Mechanoid Laser Pulser</label>
 		<description>A mechanoid laser pulser.</description>
 		<graphicData>
-			<texPath>Things/Weapons/nchargerifl</texPath>
+			<texPath>Things/Weapons/Mechanoid/TeslaRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
@@ -262,7 +262,7 @@
 		<label>Mech. Heavy Laser Pulser</label>
 		<description>Mechanoid heavy laser pulser.</description>
 		<graphicData>
-			<texPath>Things/Weapons/nchargerifl</texPath>
+			<texPath>Things/Weapons/Mechanoid/TeslaRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
@@ -381,14 +381,13 @@
 		</comps>
 	</ThingDef>
 
-
 	<!-- Charged Diffuser -->
 	<ThingDef ParentName="BaseGun_Other">
 		<defName>Gun_MechPlasma</defName>
 		<label>Mech. charged diffuser</label>
 		<description>Mechanoid-built charged diffuser.</description>
 		<graphicData>
-			<texPath>Things/Weapons/MechPlasmaBlaster</texPath>
+			<texPath>Things/Weapons/Mechanoid/MechPlasmaBlaster</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>InteractPrecision</soundInteract>
@@ -451,7 +450,7 @@
 		<label>Extraterrestrial Railgun</label>
 		<description>Charged-shot rail-assisted lance weapon. Fires a single charged shot at high velocity.</description>
 		<graphicData>
-			<texPath>Things/Weapons/Extraterrestrial</texPath>
+			<texPath>Things/Weapons/Mechanoid/Extraterrestrial</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!-- RPK-74 -->
+    <!-- Galil ACE -->
     <ThingDef ParentName="BaseGun_Heavy">
         <defName>RF_Gun_Galil</defName>
         <label>Galil ACE Heavy</label>
         <description>Ancient pattern military weapon. Good range, high power, low rate of fire.</description>
         <graphicData>
-            <texPath>Things/Weapons/Galil</texPath>
+            <texPath>Things/Weapons/Heavy/Galil</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -72,7 +72,7 @@
         <label>L-15 LMG</label>
         <description>A light machine gun.</description>
         <graphicData>
-            <texPath>Things/Weapons/Gun_LMG</texPath>
+            <texPath>Things/Weapons/Heavy/L15</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -140,7 +140,7 @@
         <label>MA39X ICWS</label>
         <description>The MA39X Individual Combat Weapon System (MA39X ICWS or MA39X Assault rifle) is a close combat service rifle of the UNSC.</description>
         <graphicData>
-            <texPath>Things/Weapons/MA39X</texPath>
+            <texPath>Things/Weapons/Heavy/MA39X</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -210,7 +210,7 @@
         <label>M249 LMG SAW MG</label>
         <description>M249 LMG SAW MG, a heavy machinegun. It has a 120 round magazine and fires in 20 round bursts. Not very accurate but good at providing suppressing fire.</description>
         <graphicData>
-            <texPath>Things/Weapons/MHMG</texPath>
+            <texPath>Things/Weapons/Heavy/MHMG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -276,7 +276,7 @@
         <label>XM214 Microgun</label>
         <description>A multi-barrel machine gun with an extremely high rate of fire. Mechanoid-built.</description>
         <graphicData>
-            <texPath>Things/Weapons/Microgun</texPath>
+            <texPath>Things/Weapons/Heavy/XM214Microgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>InteractPTUR</soundInteract>
@@ -346,7 +346,7 @@
         <label>M56 Smart Gun</label>
         <description>The M56 Smartgun is a man-portable heavy machine gun with automatic targeting capabilities chambered for heavy ammunition. It is notably employed by the United States Colonial Marine Corps. It hurts like hell.</description>
         <graphicData>
-            <texPath>Things/Weapons/M56</texPath>
+            <texPath>Things/Weapons/Heavy/M56</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>InteractPTUR</soundInteract>
@@ -407,14 +407,13 @@
 			<Plastic>4</Plastic>
         </smeltProducts>
     </ThingDef>
-
     <!-- M60E4 -->
     <ThingDef ParentName="BaseGun_Heavy">
         <defName>Gun_M60GPMG</defName>
         <label>M60E4 GPMG</label>
         <description>A general purpose machine gun. It has a 100 round magazine and fires in 12 round bursts. Received the nickname "The Pig" due to its bulky size and appetite for ammunition.\nCaliber: 7.62x51mm</description>
         <graphicData>
-            <texPath>Things/Weapons/M60</texPath>
+            <texPath>Things/Weapons/Heavy/M60</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>

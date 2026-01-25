@@ -6,7 +6,7 @@
         <label>TEC-9</label>
         <description>A lightweight semi-automatic pistol with a quick draw, low damage and very high firerate. Operates at a short range.</description>
         <graphicData>
-            <texPath>Things/Weapons/Tec9</texPath>
+            <texPath>Things/Weapons/SMGs/Tec9</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_SMG</soundInteract>
@@ -71,7 +71,7 @@
         <label>M3A1 Greasegun</label>
         <description>A very simplistic submachinegun design for todays standards. Low damage, high firerate, short range.</description>
         <graphicData>
-            <texPath>Things/Weapons/GreaseGun</texPath>
+            <texPath>Things/Weapons/SMGs/GreaseGun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_SMG</soundInteract>
@@ -136,7 +136,7 @@
         <label>Uzi</label>
         <description>A basic submachine gun. Short range, low power, high rate of fire. Very quick to aim and fire.</description>
         <graphicData>
-            <texPath>Things/Weapons/Uzi</texPath>
+            <texPath>Things/Weapons/SMGs/Uzi</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_SMG</soundInteract>
@@ -201,7 +201,7 @@
         <label>Silenced TMP</label>
         <description>A big machinepistol or small submachinegun. Somewhat accurate long range, fast burstfire with low stopping power.</description>
         <graphicData>
-            <texPath>Things/Weapons/TMP</texPath>
+            <texPath>Things/Weapons/SMGs/TMP</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_SMG</soundInteract>
@@ -260,13 +260,13 @@
             <Weapon_Parts>3</Weapon_Parts>
         </smeltProducts>
     </ThingDef>
-    <!-- EVO 3 -->
+    <!-- Skorpion -->
     <ThingDef ParentName="BaseGun_LongBarreled">
         <defName>RF_Gun_Skorpion</defName>
-        <label>HK MP5K</label>
-        <description>A light SMG with no stock. Fires weak ammunition in quick five shot-bursts at pistol range.</description>
+        <label>Skorpion</label>
+        <description>A light SMG with folded stock. Fires weak ammunition in quick five shot-bursts at pistol range.</description>
         <graphicData>
-            <texPath>Things/Weapons/MachinePistol</texPath>
+            <texPath>Things/Weapons/SMGs/Skorpion</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_SMG</soundInteract>
@@ -332,7 +332,7 @@
         <label>Kriss Vector SMG</label>
         <description>A submachinegun that fires in medium length bursts. Its substantially reduced knockback causes it to be accurate up to medium range, but its bullet drop limits maximal range by a lot.</description>
         <graphicData>
-            <texPath>Things/Weapons/Vector</texPath>
+            <texPath>Things/Weapons/SMGs/Vector</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_SMG</soundInteract>
@@ -399,7 +399,7 @@
         <label>HK MP5A3</label>
         <description>The Heckler Koch MP5 is a 9mm submachine gun of German design, developed in the 1960s by a team of engineers from the German small arms manufacturer Heckler Koch GmbH of Oberndorf am Neckar. Low damage and short range, very high rate of fire.</description>
         <graphicData>
-            <texPath>Things/Weapons/Gun_MP5</texPath>
+            <texPath>Things/Weapons/SMGs/MP5</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_SMG</soundInteract>
@@ -466,7 +466,7 @@
         <label>HK UMP45</label>
         <description>The UMP45 is a submachine gun developed and manufactured by Heckler Koch. The UMP45 has been adopted by various agencies such as the U.S. Customs and Border Protection. Heckler Koch developed the UMP45 as a successor to the MP5. Average damage, low range and high rate of fire.</description>
         <graphicData>
-            <texPath>Things/Weapons/Gun_UMP45</texPath>
+            <texPath>Things/Weapons/SMGs/UMP45</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_SMG</soundInteract>
@@ -530,13 +530,13 @@
 			<li>HSKCombatSuppliesTierTwo</li>
 		</thingSetMakerTags>
     </ThingDef>
-    <!-- LUGER M4 -->
+    <!-- Spectre M4 -->
     <ThingDef ParentName="BaseGun_LongBarreled">
         <defName>Gun_HeavySMG</defName>
         <label>Spectre M4</label>
         <description>A compact, wide-caliber slug-thrower. Very short range, but it packs a punch and handles quite well.</description>
         <graphicData>
-            <texPath>Things/Weapons/HeavySMG</texPath>
+            <texPath>Things/Weapons/SMGs/SpectreM4</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_SMG</soundInteract>

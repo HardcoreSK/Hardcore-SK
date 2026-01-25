@@ -7,7 +7,7 @@
         <label>M24 Sniper Rifle</label>
         <description>Ancient pattern military sniper rifle. Bolt action. Long range, great accuracy and power.</description>
         <graphicData>
-            <texPath>Things/Weapons/SniperRifle</texPath>
+            <texPath>Things/Weapons/SniperRifles/SniperRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -62,10 +62,10 @@
     <!-- M42A -->
     <ThingDef ParentName="BaseGun_LongBarreled">
         <defName>Gun_M42A_USCM</defName>
-        <label>M42A Scope Rifle</label>
-        <description>The M42A Scope Rifle is an American-made semi-automatic sniper rifle chambered for 7.62x51mm NATO ammunition. It is employed as the primary sniper weapon of the United States Colonial Marine Corps.</description>
+        <label>VC32 Sniper Rifle</label>
+        <description>The VC32 Sniper Rifle is an American-made semi-automatic sniper rifle chambered for 7.62x51mm NATO ammunition. It is employed as the primary sniper weapon of the United States Colonial Marine Corps.</description>
         <graphicData>
-            <texPath>Things/Weapons/M42A</texPath>
+            <texPath>Things/Weapons/SniperRifles/M42A</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -123,7 +123,7 @@
         <label>Walther WA 2000 Rifle</label>
         <description>Limited edition olden days sniper rifle. Great range, exceptional accuracy, very high damage and very low fire rate.</description>
         <graphicData>
-            <texPath>Things/Weapons/WA2K</texPath>
+            <texPath>Things/Weapons/SniperRifles/WA2K</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
