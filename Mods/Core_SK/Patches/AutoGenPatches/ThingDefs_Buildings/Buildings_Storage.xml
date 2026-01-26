@@ -75,4 +75,16 @@
     </value>
   </Operation>
 
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="EggBox"]</xpath>
+    <value>
+        <useHitPoints>True</useHitPoints>
+        <researchPrerequisites>
+          <li>Storage_B1</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+        <designationCategory>ASFstorage</designationCategory>
+    </value>
+  </Operation>
+
 </Patch>

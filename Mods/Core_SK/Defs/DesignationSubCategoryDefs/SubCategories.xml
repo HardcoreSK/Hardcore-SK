@@ -12,6 +12,7 @@
 			<li>Window</li>
 			<li>ClutterSilverWall</li>
 			<li>ClutterUWallLight</li>
+			<li MayRequire="Dubwise.Rimatomics">RadiationShielding</li>
 		</defNames>
 		<designationCategory>Structure</designationCategory>
 		<debug>false</debug>
@@ -41,6 +42,7 @@
 			<li>Blastdoor</li>
 			<li>AutoDoorGlass</li>
 			<li MayRequire="ludeon.rimworld.anomaly">SecurityDoor</li>
+			<li MayRequire="Dubwise.Rimatomics">DU_Blastdoor</li>
 		</defNames>
 		<designationCategory>Structure</designationCategory>
 		<debug>false</debug>
@@ -1183,6 +1185,35 @@
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
 
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Monuments</defName>
+		<label>monuments</label>
+		<description>Sometimes rocks are just beautiful.</description>
+		<defNames>
+			<!--<li>Cairn</li>-->
+			<li>GlowstoneMonument</li>
+			<!--<li MayRequire="Ludeon.RimWorld.Royalty">NatureShrine_Small</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">NatureShrine_Large</li>-->
+			<li>SteleLarge</li>
+			<li>SteleGrand</li>
+		</defNames>
+		<designationCategory>Joy</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>SubCategory_KidsToys</defName>
+		<label>toys</label>
+		<description>Every child deserve a toy to play.</description>
+		<defNames>
+			<li>ToyBoxTribal</li>
+			<li>ToyBox</li>
+			<li>BabyDecoration</li>
+		</defNames>
+		<designationCategory>Joy</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
 	<!-- Security -->
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1603,7 +1634,23 @@
 
 	<!-- Rimatomics -->
 
-	<ArchitectSense.DesignationSubCategoryDef>
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimatomics">
+		<defName>SubCategory_AtomicCraft</defName>
+		<label>research and production</label>
+		<description>You can build anything without knowledge and a bit of silver.</description>
+		<defNames>
+			<li>NuclearResearchBench</li>
+			<li>TableRimatomicsMachining</li>
+			<li>WeaponsBench</li>
+			<li>ResearchReactor</li>
+			<li>PlutoniumProcessor</li>
+		</defNames>
+		<designationCategory>Rimatomics</designationCategory>
+		<debug>false</debug>
+		<order>1</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimatomics">
 		<defName>SubCategory_Reactors</defName>
 		<label>reactors</label>
 		<description>Nuclear reactors.</description>
@@ -1614,9 +1661,52 @@
 		</defNames>
 		<designationCategory>Rimatomics</designationCategory>
 		<debug>false</debug>
+		<order>2</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
-	<ArchitectSense.DesignationSubCategoryDef>
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimatomics">
+		<defName>SubCategory_AtomicTurbines</defName>
+		<label>turbines</label>
+		<description>All this time it was just for boiling water?</description>
+		<defNames>
+			<li>Turbine</li>
+			<li>BigTurbine</li>
+		</defNames>
+		<designationCategory>Rimatomics</designationCategory>
+		<debug>false</debug>
+		<order>3</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimatomics">
+		<defName>SubCategory_AtomicUtilities</defName>
+		<label>operating structures</label>
+		<description>Various structures to operate and use reactors.</description>
+		<defNames>
+			<li>ReactorControl</li>
+			<li>Transformer</li>
+			<li>storagePool</li>
+			<li>RadiationDetector</li>
+		</defNames>
+		<designationCategory>Rimatomics</designationCategory>
+		<debug>false</debug>
+		<order>4</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimatomics">
+		<defName>SubCategory_AtomicCooling</defName>
+		<label>reactor cooling structures</label>
+		<description>Various cooling structures.</description>
+		<defNames>
+			<li>CoolingRadiator</li>
+			<li>CoolingWater</li>
+			<li>CoolingTower</li>
+		</defNames>
+		<designationCategory>Rimatomics</designationCategory>
+		<debug>false</debug>
+		<order>5</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimatomics">
 		<defName>SubCategory_AtomicPipes</defName>
 		<label>pipes and cables</label>
 		<description>Various pipes and cables.</description>
@@ -1632,75 +1722,54 @@
 		</defNames>
 		<designationCategory>Rimatomics</designationCategory>
 		<debug>false</debug>
+		<order>6</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_AtomicCooling</defName>
-		<label>reactor cooling structures</label>
-		<description>Various cooling structures.</description>
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimatomics">
+		<defName>SubCategory_Sarcophagus</defName>
+		<label>sarcophagi</label>
+		<description>Various sarcophagi.</description>
 		<defNames>
-			<li>CoolingRadiator</li>
-			<li>CoolingWater</li>
-			<li>CoolingTower</li>
+			<li>ReactorSacrophagus</li>
+			<li>ReactorSacrophagusB</li>
+			<li>ReactorSacrophagusC</li>
 		</defNames>
 		<designationCategory>Rimatomics</designationCategory>
 		<debug>false</debug>
+		<order>7</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_AtomicTurbines</defName>
-		<label>turbines</label>
-		<description>All this time it was just for boiling water?</description>
-		<defNames>
-			<li>Turbine</li>
-			<li>BigTurbine</li>
-		</defNames>
-		<designationCategory>Rimatomics</designationCategory>
-		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_AtomicUtilities</defName>
-		<label>operating structures</label>
-		<description>Various structures to operate and use reactors.</description>
-		<defNames>
-			<li>ReactorControl</li>
-			<li>Transformer</li>
-			<li>storagePool</li>
-			<li>RadiationDetector</li>
-		</defNames>
-		<designationCategory>Rimatomics</designationCategory>
-		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_AtomicCraft</defName>
-		<label>research and production</label>
-		<description>You can build anything without knowledge and a bit of silver.</description>
-		<defNames>
-			<li>NuclearResearchBench</li>
-			<li>TableRimatomicsMachining</li>
-			<li>WeaponsBench</li>
-			<li>ResearchReactor</li>
-			<li>PlutoniumProcessor</li>
-		</defNames>
-		<designationCategory>Rimatomics</designationCategory>
-		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimatomics">
 		<defName>SubCategory_EnergyWeapons</defName>
-		<label>energy weapons</label>
-		<description>Various energy weapons.</description>
+		<label>advanced weapons</label>
+		<description>Various advanced weapons.</description>
 		<defNames>
 			<li>PPCTeslaCoil</li>
 			<li>PPCHEL</li>
 			<li>PPCRailgun</li>
 			<li>PPCObelisk</li>
 			<li>PPCMarauder</li>
+			<li>MissileSilo</li>
 		</defNames>
 		<designationCategory>Rimatomics</designationCategory>
 		<debug>false</debug>
+		<order>8</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimatomics">
+		<defName>SubCategory_WeaponsUtilities</defName>
+		<label>support structures</label>
+		<description>Various support structures.</description>
+		<defNames>
+			<li>PPCWeaponsConsole</li>
+			<li>RimatomicsShieldGenerator</li>
+			<li>PPCADS</li>
+			<li>PPC</li>
+			<li>RadarDish</li>
+		</defNames>
+		<designationCategory>Rimatomics</designationCategory>
+		<debug>false</debug>
+		<order>9</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<!-- SK_category_terraform -->
