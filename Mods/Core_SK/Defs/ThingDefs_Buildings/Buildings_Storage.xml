@@ -316,7 +316,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 						<altitudeLayer>ItemImportant</altitudeLayer>
 						<drawOffset>(0,1.2,0)</drawOffset>
 					</li>
-				</graphicData>-->
+				</graphicDatas>-->
             </li>
         </graphics>
 		<showContainedItems>true</showContainedItems>
@@ -963,7 +963,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 	</AdaptiveStorage.GraphicsDef>
 	
 	<!--Utility Racks - organized-->
-	<ThingDef ParentName="LWM_DeepStorage">
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<defName>SK_VeryBigShelf</defName>
 		<label>Utility Racks</label>
 		<description>A fairly sturdy set of wire racks for storing things. More organized than pallets.</description>
@@ -996,6 +996,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<size>(2,1)</size>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<building>
+			<maxItemsInCell>7</maxItemsInCell>
 			<preventDeteriorationOnTop>False</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>False</ignoreStoredThingsBeauty>
 			<defaultStorageSettings>
@@ -1015,7 +1016,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			</fixedStorageSettings>
 		</building>
 		<staticSunShadowHeight>1</staticSunShadowHeight>
-		<tickerType>Rare</tickerType>
+		<tickerType>Rare</tickerType><!--
 		<comps>
 			<li Class="LWM.DeepStorage.Properties">
 				<maxNumberStacks>7</maxNumberStacks>
@@ -1028,17 +1029,113 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 				<graphicData>
 					<texPath>Things/Building/Storage/WireRacksTop</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<!--<shaderType>Transparent</shaderType>-->
 					<drawSize>(3,3)</drawSize>
 				</graphicData>
 				<altitudeLayer>Projectile</altitudeLayer>
 			</li>
-		</comps>
+		</comps>-->
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<researchPrerequisites>
 			<li>Storage_C2</li>
 		</researchPrerequisites>
 	</ThingDef>
+	
+    <AdaptiveStorage.GraphicsDef>
+		<defName>SK_VeryBigShelfASF</defName>
+		<targetDef>SK_VeryBigShelf</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/WireRacks</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(3,3)</drawSize>
+                </graphicData>
+				<graphicDatas>
+					<li>
+						<texPath>Things/Building/Storage/WireRacksTop</texPath>
+						<graphicClass>Graphic_Multi</graphicClass>
+						<drawSize>(3,3)</drawSize>
+						<drawRotated>false</drawRotated>
+						<renderQueue>2950</renderQueue>
+						<altitudeLayer>ItemImportant</altitudeLayer>
+						<drawOffset>(0,1.2,0)</drawOffset>
+					</li>
+				</graphicDatas>
+            </li>
+        </graphics>
+		<showContainedItems>true</showContainedItems>
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.25,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.25)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.25)</stackOffsetWest>
+							<drawOffset>(-0.05,0,0)</drawOffset>
+							<drawOffsetEast>(0.15,0.1,-0.1)</drawOffsetEast>
+							<drawOffsetWest>(-0.15,0.1,-0.1)</drawOffsetWest>
+							<drawScale>0.9</drawScale>
+							<rotation>0</rotation>
+						</r0>					
+					</rows>
+				</c0>
+				<c1>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.25,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.25)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.25)</stackOffsetWest>
+							<drawOffset>(-1.05,2.05,0.65)</drawOffset>
+							<drawOffsetEast>(-0.15,2.05,-0.7)</drawOffsetEast>
+							<drawOffsetWest>(0.15,2.05,-0.7)</drawOffsetWest>
+							<drawScale>0.9</drawScale>
+							<rotation>0</rotation>
+						</r0>
+					</rows>
+				</c1>
+			</columns>
+		</itemGraphics>
+		<!--<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast> (distance between horizontal,?,distance between vertical) -->
+		<!--<drawOffsetEast>(-0.15,2.05,0.45)</drawOffsetEast> (x -left & right, y - layer, z - up & down) -->
+		<!-- For double layer shelf
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.233,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.185)</stackOffsetWest>
+							<drawOffset>(0.09,2.05,0.45)</drawOffset>
+							<drawOffsetEast>(-0.15,2.05,0.45)</drawOffsetEast>
+							<drawOffsetWest>(0,2.05,0.65)</drawOffsetWest>
+							<drawScale>0.9</drawScale>
+							<rotation>0</rotation>
+						</r0>					
+					</rows>
+				</c0>
+				<c1>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.233,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.185)</stackOffsetWest>
+							<drawOffset>(-0.91,0,-0.10)</drawOffset>
+							<drawOffsetEast>(0.1,0.1,-0.95)</drawOffsetEast>
+							<drawOffsetWest>(0,0.1,-0.95)</drawOffsetWest>
+							<drawScale>0.9</drawScale>
+							<rotation>0</rotation>
+						</r0>
+					</rows>
+				</c1>
+			</columns>
+		</itemGraphics>-->
+	</AdaptiveStorage.GraphicsDef>
 	
 	<!--Display Case - beauty-->
 	<ThingDef ParentName="LWM_DeepStorage">
