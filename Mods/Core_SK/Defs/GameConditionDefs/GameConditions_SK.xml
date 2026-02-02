@@ -28,6 +28,7 @@
 		<canBePermanent>false</canBePermanent>
 		<endMessage>Hopefully, the inferno accident has finished.</endMessage>
 		<allowUnderground>false</allowUnderground>
+		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
 	</GameConditionDef>
 
 	<GameConditionDef>
@@ -85,11 +86,7 @@
 		<defName>AcidicSoil</defName>
 		<conditionClass>SK.Events.GameCondition_Drought</conditionClass>
 		<label>Acidic Soil</label>
-		<description>An unusually high acidity has appeared in the soil.
-
-Acidic soil is devastating for plant life and will quickly destroy all the crops not planted in the hydroponics. Be sure to quickly harvest any plants you can.
-
-Many things can cause this, excess rainfall, decay of organic matter, the use of certain fertilizers, or the harvest of crops.</description>
+		<description>An unusually high acidity has appeared in the soil.\n\nAcidic soil is devastating for plant life and will quickly destroy all the crops not planted in the hydroponics. Be sure to quickly harvest any plants you can.\n\nMany things can cause this, excess rainfall, decay of organic matter, the use of certain fertilizers, or the harvest of crops.</description>
 		<endMessage>The acidity of the soil has returned to normal levels.</endMessage>
 		<canBePermanent>false</canBePermanent>
 		<allowUnderground>false</allowUnderground>
@@ -99,11 +96,7 @@ Many things can cause this, excess rainfall, decay of organic matter, the use of
 		<defName>IceAge</defName>
 		<conditionClass>SK.Events.GameCondition_IceAge</conditionClass>
 		<label>Ice Age</label>
-		<description>Atmospheric composition of the planet drastically changed resulting in a significant drop in temperature.
-
-Flora and Fauna is suffering from these changes as biomes shift into their colder counterparts. Resources become scarce, forcing factions into conflict.
-
-It will last anywhere between a season to several years.</description>
+		<description>Atmospheric composition of the planet drastically changed resulting in a significant drop in temperature.\n\nFlora and Fauna is suffering from these changes as biomes shift into their colder counterparts. Resources become scarce, forcing factions into conflict.\n\nIt will last anywhere between a season to several years.</description>
 		<endMessage>The ice age is ending</endMessage>
 		<canBePermanent>false</canBePermanent>
 		<exclusiveConditions>
@@ -119,11 +112,7 @@ It will last anywhere between a season to several years.</description>
 		<defName>GlobalWarming</defName>
 		<conditionClass>SK.Events.GameCondition_GlobalWarming</conditionClass>
 		<label>Global Warming</label>
-		<description>Global temperatures have suddenly risen to dangerous levels.
-
-Flora and Fauna is suffering from these changes as biomes shift into their warmer counterparts. Resources become scarce, forcing factions into conflict.
-
-It will last anywhere between a season to several years.</description>
+		<description>Global temperatures have suddenly risen to dangerous levels.\n\nFlora and Fauna is suffering from these changes as biomes shift into their warmer counterparts. Resources become scarce, forcing factions into conflict.\n\nIt will last anywhere between a season to several years.</description>
 		<endMessage>The global warming is ending</endMessage>
 		<canBePermanent>false</canBePermanent>
 		<exclusiveConditions>
@@ -139,11 +128,7 @@ It will last anywhere between a season to several years.</description>
 		<defName>PsychicRain</defName>
 		<conditionClass>SK.Events.GameCondition_PsychicRain</conditionClass>
 		<label>Psychic Rain</label>
-		<description>A dangerous psychic entity caused disturbance on subatomic levels, resonating across all particles of the atmosphere.
-
-A seemingly endless supernatural rain has begun, altering the very composition of time. Any person or creature not under the roof will age significantly faster.
-
-It will last anywhere between a season to several years.</description>
+		<description>A dangerous psychic entity caused disturbance on subatomic levels, resonating across all particles of the atmosphere.\n\nA seemingly endless supernatural rain has begun, altering the very composition of time. Any person or creature not under the roof will age significantly faster.\n\nIt will last anywhere between a season to several years.</description>
 		<endMessage>The psychic rain is ending</endMessage>
 		<canBePermanent>true</canBePermanent>
 		<exclusiveConditions>
@@ -159,11 +144,7 @@ It will last anywhere between a season to several years.</description>
 		<defName>LongNight</defName>
 		<conditionClass>SK.Events.GameCondition_LongNight</conditionClass>
 		<label>Long Night</label>
-		<description>A space entity of unimaginable size has covered a local star, resulting in a long lasting eclipse.
-
-Terrified of this supernatural phenomenon, other factions will use this time to wage war and conflict across the surface.
-
-It will last anywhere between a season to several years.</description>
+		<description>A space entity of unimaginable size has covered a local star, resulting in a long lasting eclipse.\n\nTerrified of this supernatural phenomenon, other factions will use this time to wage war and conflict across the surface.\n\nIt will last anywhere between a season to several years.</description>
 		<endMessage>The long night is ending</endMessage>
 		<canBePermanent>true</canBePermanent>
 		<exclusiveConditions>
@@ -191,7 +172,6 @@ It will last anywhere between a season to several years.</description>
 			<li>ExtremeHot</li>
 		</exclusiveConditions>
 		<allowUnderground>false</allowUnderground>
-		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
 	</GameConditionDef>
 
 	<GameConditionDef>
@@ -320,7 +300,6 @@ It will last anywhere between a season to several years.</description>
 		<description>Enemy faction are not pleased with you.. so they will bomb you to hell.</description>
 		<endMessage>The bombardment threat is over.</endMessage>
 		<!-- <allowUnderground>false</allowUnderground> -->
-		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
 	</GameConditionDef>
 
 	<GameConditionDef>
