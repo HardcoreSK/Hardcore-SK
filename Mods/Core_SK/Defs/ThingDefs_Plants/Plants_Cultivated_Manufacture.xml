@@ -15,7 +15,7 @@
 		</statBases>
 		<plant>
 			<maxMeshCount>4</maxMeshCount>
-			<sowMinSkill>5</sowMinSkill>
+			<sowMinSkill>4</sowMinSkill>
 			<sowResearchPrerequisites>
 				<li>Fabric_Plants_A2</li>
 			</sowResearchPrerequisites>
@@ -88,18 +88,19 @@
 		<plant>
 			<neverBlightable>true</neverBlightable>
 			<maxMeshCount>4</maxMeshCount>
-			<sowMinSkill>10</sowMinSkill>
+			<sowMinSkill>7</sowMinSkill>
 			<sowResearchPrerequisites>
 				<li>Devilstrand</li>
 			</sowResearchPrerequisites>
 			<sowTags>
 				<li>Hydroponic</li>
+				<li>Fungiponics</li>
 			</sowTags>
 			<immatureGraphicPath>Things/Plant/PlantDevilstrand</immatureGraphicPath>
 			<harvestedThingDef>RawDevilstrand</harvestedThingDef>
-			<harvestYield>8</harvestYield>
+			<harvestYield>10</harvestYield>
 			<topWindExposure>0.1</topWindExposure>
-			<growDays>15</growDays>
+			<growDays>10</growDays>
 			<fertilitySensitivity>0.4</fertilitySensitivity>
 			<pollution>Any</pollution>
 			<fertilityMin>1.1</fertilityMin>
@@ -191,7 +192,7 @@
 		</statBases>
 		<plant>
 			<maxMeshCount>25</maxMeshCount>
-			<sowMinSkill>2</sowMinSkill>
+			<sowMinSkill>1</sowMinSkill>
 			<sowResearchPrerequisites>
 				<li>TreeSowing</li>
 			</sowResearchPrerequisites>
@@ -270,7 +271,7 @@
 		</ingestible>
 		<plant>
 			<maxMeshCount>4</maxMeshCount>
-			<sowMinSkill>6</sowMinSkill>
+			<sowMinSkill>7</sowMinSkill>
 			<sowResearchPrerequisites>
 				<li>Drug_plants_A1</li>
 			</sowResearchPrerequisites>
@@ -317,7 +318,7 @@
 			<harvestedThingDef>PsychoidLeaves</harvestedThingDef>
 			<harvestYield>10</harvestYield>
 			<drugForHarvestPurposes>True</drugForHarvestPurposes>
-			<sowMinSkill>6</sowMinSkill>
+			<sowMinSkill>7</sowMinSkill>
 			<sowTags>
 				<li>Ground</li>
 				<li>Hydroponic</li>
@@ -351,7 +352,7 @@
 		</ingestible>
 		<plant>
 			<maxMeshCount>4</maxMeshCount>
-			<sowMinSkill>3</sowMinSkill>
+			<sowMinSkill>4</sowMinSkill>
 			<sowResearchPrerequisites>
 				<li>Drug_plants_A1</li>
 			</sowResearchPrerequisites>
@@ -392,7 +393,7 @@
 		</ingestible>
 		<plant>
 			<maxMeshCount>4</maxMeshCount>
-			<sowMinSkill>14</sowMinSkill>
+			<sowMinSkill>12</sowMinSkill>
 			<sowResearchPrerequisites>
 				<li>Cocoa</li>
 			</sowResearchPrerequisites>
@@ -426,7 +427,7 @@
 		</statBases>
 		<plant>
 			<maxMeshCount>4</maxMeshCount>
-			<sowMinSkill>7</sowMinSkill>
+			<sowMinSkill>8</sowMinSkill>
 			<sowResearchPrerequisites>
 				<li>Cocoa</li>
 			</sowResearchPrerequisites>
@@ -468,7 +469,7 @@
 			<foodType>Plant</foodType>
 		</ingestible>
 		<plant>
-			<sowMinSkill>10</sowMinSkill>
+			<sowMinSkill>8</sowMinSkill>
 			<sowResearchPrerequisites>
 				<li>Fabric_Plants_B1</li>
 			</sowResearchPrerequisites>
