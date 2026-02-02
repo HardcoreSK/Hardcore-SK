@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Gun_Revolver_Unique"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]</xpath>
+		<value>
+			<ammoSet>AmmoSet_45ACP</ammoSet>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Gun_ChargeLance_Unique"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]</xpath>
+		<value>
+			<ammoSet>AmmoSet_12x64mmCharged</ammoSet>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_BeamRepeater"]</xpath>
+		<value>
+			<ammoTypes>
+				<Ammo_ChargedLaser>Bullet_Laser_BeamRepeater</Ammo_ChargedLaser>
+				<Ammo_ChargedLaser_Electromagnetic>Bullet_Laser_BeamRepeater_Mech</Ammo_ChargedLaser_Electromagnetic>
+			</ammoTypes>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Bow_Great_Unique"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]</xpath>
+		<value>
+			<ammoSet>AmmoSet_Arrow</ammoSet>
+		</value>
+	</Operation>
+</Patch>

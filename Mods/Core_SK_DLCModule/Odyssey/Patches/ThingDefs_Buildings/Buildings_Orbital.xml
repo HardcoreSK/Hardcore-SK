@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="VacBarrier"]</xpath>
+		<value>
+			<costList>
+				<ComponentIndustrial>2</ComponentIndustrial>
+				<GravlitePanel>2</GravlitePanel>
+				<ElectronicComponents>2</ElectronicComponents>
+			</costList>
+			<costStuffCount>20</costStuffCount>
+			<stuffCategories Inherit="False">
+				<li>Metallic</li>
+				<li>RuggedMetallic</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="OxygenPump"]</xpath>
+		<value>
+			<costList>
+				<ComponentIndustrial>2</ComponentIndustrial>
+				<ElectronicComponents>4</ElectronicComponents>
+			</costList>
+			<costStuffCount>50</costStuffCount>
+			<stuffCategories Inherit="False">
+				<li>Metallic</li>
+				<li>RuggedMetallic</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="GravcorePowerCell"]</xpath>
+		<value>
+            <designationCategory>Odyssey</designationCategory>
+		</value>
+	</Operation>
+</Patch>

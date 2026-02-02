@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Crib"]</xpath>
+		<value>
+			<stuffCategories Inherit="False">
+				<li>Fabric</li>
+				<li>Leathery</li>
+			</stuffCategories>
+			<costList>
+				<ComponentMedieval>4</ComponentMedieval>
+			</costList>
+			<costStuffCount>25</costStuffCount>
+			<researchPrerequisites Inherit="False">
+				<li>Beds_B1</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="BabySleepingSpot"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Building/Childcare/BabySleepSpot</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>(1.5,1.5)</drawSize>
+			</graphicData>
+			<statBases>
+				<WorkToBuild>60</WorkToBuild>
+			</statBases>
+			<building Merge="True">
+				<bed_emptyCountsForBarracks>false</bed_emptyCountsForBarracks>
+				<bed_pawnDrawOffset>-0.08</bed_pawnDrawOffset>
+			</building>
+		</value>
+	</Operation>
+</Patch>
