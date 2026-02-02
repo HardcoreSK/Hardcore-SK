@@ -242,4 +242,45 @@
 		<takeDelay>200</takeDelay>
 	</ThingDef>
 
+	<ThingDef Name="TrapMechanicBase" ParentName="BuildingBase" Abstract="True">
+		<thingClass>Building_TrapDamager</thingClass>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<rect>(0,0,1,0.15)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<stealable>false</stealable>
+		<holdsRoof>false</holdsRoof>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<Cleanliness>-15</Cleanliness>
+			<WorkToBuild>1200</WorkToBuild>
+			<Beauty>-4</Beauty>
+			<TrapSpringChance>0.8</TrapSpringChance>
+			<Mass>13</Mass>
+		</statBases>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<isTrap>true</isTrap>
+			<trapDestroyOnSpring>true</trapDestroyOnSpring>
+			<trapDamageCategory>Sharp</trapDamageCategory>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+			<uninstallWork>350</uninstallWork>
+		</building>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<placeWorkers>
+			<li>PlaceWorker_NeverAdjacentTrap</li>
+		</placeWorkers>
+	</ThingDef>
+
 </Defs>
