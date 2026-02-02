@@ -10,35 +10,65 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs</xpath>
 		<value>
+            <!--Pawns-->
 			<ThingDef Name="SK.SK_BasePawnDummy" ParentName="SK_BasePawn" Abstract="True" />
 			<ThingDef Name="SK.SK_HumanDummy" ParentName="SK_Human" Abstract="True" />
+			<ThingDef Name="SK.SK_AnimalThingBaseDummy" ParentName="SK_AnimalThingBase" Abstract="True" />
+			<ThingDef Name="SK.SK_BaseMechanoidDummy" ParentName="SK_BaseMechanoid" Abstract="True" />
+			<ThingDef Name="SK.SK_BaseMechanoidWalkerDummy" ParentName="SK_BaseMechanoidWalker" Abstract="True" />
+            
+			<PawnKindDef Name="SK.SK_BaseMechanoidKindDummy" ParentName="BaseMechanoidKind" Abstract="True" />
+			<PawnKindDef Name="SK.SK_AnimalKindBaseDummy" ParentName="SK_AnimalKindBase" Abstract="True" />
+			<PawnKindDef Name="SK.GrenadierDestructiveBaseDummy" ParentName="GrenadierDestructiveBase" Abstract="True" />
+			<PawnKindDef Name="SK.SpaceRefugeeBaseDummy" ParentName="SpaceRefugeeBase" Abstract="True" />
+			<PawnKindDef Name="SK.SK_BearKindBaseDummy" ParentName="SK_BearKindBase" Abstract="True" />
+			<PawnKindDef Name="SK.SK_BigCatKindBaseDummy" ParentName="SK_BigCatKindBase" Abstract="True" />
+			<PawnKindDef Name="SK.SK_BigBirdKindBaseDummy" ParentName="SK_BigBirdKindBase" Abstract="True" />
+			<PawnKindDef Name="SK.SK_AnimalFoxKindBaseDummy" ParentName="SK_AnimalFoxKindBase" Abstract="True" />
+			<PawnKindDef Name="SK.SK_HareKindBaseDummy" ParentName="SK_HareKindBase" Abstract="True" />
+			<PawnKindDef Name="SK.SK_WolfKindBaseDummy" ParentName="SK_WolfKindBase" Abstract="True" />
 
+            <!--Apparel-->
 			<ThingDef Name="SK.ApparelShieldBaseDummy" ParentName="ApparelShieldBase" Abstract="True" />
 			<ThingDef Name="SK.ApparelNoQualityShieldBaseDummy" ParentName="ApparelNoQualityShieldBase" Abstract="True" />
-			<ThingDef Name="SK.Shield_BaseDummy" ParentName="Shield_Base" Abstract="True" />
 			<ThingDef Name="SK.ApparelNeolithicBaseDummy" ParentName="ApparelNeolithicBase" Abstract="True" />
 			<ThingDef Name="SK.ApparelNeolithicSimpleBaseDummy" ParentName="ApparelNeolithicSimpleBase" Abstract="True" />
 			<ThingDef Name="SK.ApparelMedievalBaseDummy" ParentName="ApparelMedievalBase" Abstract="True" />
 			<ThingDef Name="SK.ApparelIndustrialBaseDummy" ParentName="ApparelIndustrialBase" Abstract="True" />
 			<ThingDef Name="SK.ApparelIndustrialSimpleBaseDummy" ParentName="ApparelIndustrialSimpleBase" Abstract="True" />
 			<ThingDef Name="SK.ApparelSpacerBaseDummy" ParentName="ApparelSpacerBase" Abstract="True" />
-
+			<ThingDef Name="SK.ApparelChildIndustrialBaseDummy" ParentName="ApparelChildIndustrialBase" Abstract="True" />
+			<ThingDef Name="SK.ApparelChildNeolithicBaseDummy" ParentName="ApparelChildNeolithicBase" Abstract="True" />
+            
+            <!--Armor-->
 			<ThingDef Name="SK.ArmorMedievalBaseDummy" ParentName="ArmorMedievalBase" Abstract="True" />
 			<ThingDef Name="SK.ArmorIndustrialBaseDummy" ParentName="ArmorIndustrialBase" Abstract="True" />
 			<ThingDef Name="SK.ArmorSpacerBaseDummy" ParentName="ArmorSpacerBase" Abstract="True" />
+			<ThingDef Name="SK.Shield_BaseDummy" ParentName="Shield_Base" Abstract="True" />
 
+            <!--Ammo and Projectiles-->
 			<ThingDef Name="SK.AmmoBoltBaseDummy" ParentName="AmmoBoltBase" Abstract="True" />
 			<ThingDef Name="SK.BaseBoltProjectileDummy" ParentName="BaseBoltProjectile" Abstract="True" />
 			<ThingDef Name="SK.SK_BaseGrenadeProjectileDummy" ParentName="SK_BaseGrenadeProjectile" Abstract="True" />
 			<ThingDef Name="SK.SK_BaseBulletDummy" ParentName="SK_BaseBullet" Abstract="True" />
 			<ThingDef Name="SK.BasePilumProjectileDummy" ParentName="BasePilumProjectile" Abstract="True" />
 
+            <!--Buildings-->
+			<ThingDef Name="SK.StandardBuildingDummy" ParentName="StandardBuilding" Abstract="True" />
+			<ThingDef Name="SK.ResearchBaseDummy" ParentName="ResearchBase" Abstract="True" />
+			<ThingDef Name="SK.FacilitiesBaseDummy" ParentName="FacilitiesBase" Abstract="True" />
+			<ThingDef Name="SK.PowerFueledDummy" ParentName="PowerFueled" Abstract="True" />
 			<ThingDef Name="SK.SK_LampBaseDummy" ParentName="SK_LampBase" Abstract="True" />
-			<!--<ThingDef Name="SK.SK_BuildingBaseDummy" ParentName="SK_BuildingBase" Abstract="True" />-->
 			<ThingDef Name="SK.SK_WorkTableDummy" ParentName="SK_WorkTable" Abstract="True" />
 			<ThingDef Name="SK.SK_WorkTableFueledDummy" ParentName="SK_WorkTableFueled" Abstract="True" />
 			<ThingDef Name="SK.UniversalFermenterBaseDummy" ParentName="UniversalFermenterBase" Abstract="True" />
 			<ThingDef Name="SK.PlantGrowerBaseDummy" ParentName="PlantGrowerBase" Abstract="True" />
+			<ThingDef Name="SK.TrapMechanicBaseDummy" ParentName="TrapMechanicBase" Abstract="True" />
+			<!-- <ThingDef Name="SK.SK_TrapIEDBaseDummy" ParentName="SK_TrapIEDBase" Abstract="True" /> -->
+			<!-- <ThingDef Name="SK.TrapIEDBaseDummy" ParentName="TrapIEDBase" Abstract="True" /> -->
+			<!--<ThingDef Name="SK.SK_BuildingBaseDummy" ParentName="SK_BuildingBase" Abstract="True" />-->
+            
+            <!--Food-->
 			<ThingDef Name="SK.SK_MealBaseDummy" ParentName="SK_MealBase" Abstract="True" />
 			<ThingDef Name="SK.SK_MealFineBaseDummy" ParentName="SK_MealFineBase" Abstract="True" />
 			<ThingDef Name="SK.SK_MealLavishBaseDummy" ParentName="SK_MealLavishBase" Abstract="True" />
@@ -47,13 +77,15 @@
 			<ThingDef Name="SK.SK_OrganicProductBaseDummy" ParentName="SK_OrganicProductBase" Abstract="True" />
 			<ThingDef Name="SK.CropsBaseDummy" ParentName="CropsBase" Abstract="True" />
 			<ThingDef Name="SK.SmallFruitFoodRawBaseDummy" ParentName="SmallFruitFoodRawBase" Abstract="True" />
+			<ThingDef Name="SK.SK_PlantFoodRawBaseDummy" ParentName="SK_PlantFoodRawBase" Abstract="True" />
 
+            <!--Bodyparts-->
 			<ThingDef Name="SK.BodyPartBase_BionicDummy" ParentName="BodyPartBase_Bionic" Abstract="True" />
 			<ThingDef Name="SK.BodyPartBase_CyberneticDummy" ParentName="BodyPartBase_Cybernetic" Abstract="True" />
+            <ThingDef Name="SK.BodyPartBase_SyntheticDummy" ParentName="BodyPartBase_Synthetic" Abstract="True"/>
 			<ThingDef Name="SK.BodyPartBaseDummy" ParentName="BodyPartBase" Abstract="True" />
 
-			<ThingDef Name="SK.ShipPartsSmokeDummy" ParentName="ShipPartsSmoke" Abstract="True" />
-
+            <!--Guns and Melee-->
 			<ThingDef Name="SK.SK_BaseGunDummy" ParentName="SK_BaseGun" Abstract="True" />
 			<ThingDef Name="SK.BaseGun_TurretDummy" ParentName="BaseGun_Turret" Abstract="True" />
 			<ThingDef Name="SK.BaseGun_OtherDummy" ParentName="BaseGun_Other" Abstract="True" />
@@ -65,41 +97,13 @@
 			<ThingDef Name="SK.WeaponIndustrialBaseDummy" ParentName="WeaponIndustrialBase" Abstract="True" />
 			<ThingDef Name="SK.WeaponNeoliticBaseDummy" ParentName="WeaponNeoliticBase" Abstract="True" />
 
+            <!--Resources-->
 			<ThingDef Name="SK.SK_ResourceBaseDummy" ParentName="SK_ResourceBase" Abstract="True" />
-			<!-- <ThingDef Name="SK.SK_UnfinishedBaseDummy" ParentName="SK_UnfinishedBase" Abstract="True" /> -->
 			<ThingDef Name="SK.SK_MetalChunkBaseDummy" ParentName="SK_MetalChunkBase" Abstract="True" />
-
-			<ThingDef Name="SK.SK_MoteBaseDummy" ParentName="SK_MoteBase" Abstract="True" />
-
-			<ThingDef Name="SK.StandardBuildingDummy" ParentName="StandardBuilding" Abstract="True" />
-			<ThingDef Name="SK.ResearchBaseDummy" ParentName="ResearchBase" Abstract="True" />
-			<ThingDef Name="SK.FacilitiesBaseDummy" ParentName="FacilitiesBase" Abstract="True" />
-			<ThingDef Name="SK.PowerFueledDummy" ParentName="PowerFueled" Abstract="True" />
-
-			<ThingDef Name="SK.TrapMechanicBaseDummy" ParentName="TrapMechanicBase" Abstract="True" />
-			<!-- <ThingDef Name="SK.SK_TrapIEDBaseDummy" ParentName="SK_TrapIEDBase" Abstract="True" /> -->
-			<!-- <ThingDef Name="SK.TrapIEDBaseDummy" ParentName="TrapIEDBase" Abstract="True" /> -->
-
 			<ThingDef Name="SK.VG_MakeableDrugBaseDummy" ParentName="VG_MakeableDrugBase" Abstract="True" />
-			<ThingDef Name="SK.SK_AnimalThingBaseDummy" ParentName="SK_AnimalThingBase" Abstract="True" />
+			<!-- <ThingDef Name="SK.SK_UnfinishedBaseDummy" ParentName="SK_UnfinishedBase" Abstract="True" /> -->
 
-			<PawnKindDef Name="SK.SK_AnimalKindBaseDummy" ParentName="SK_AnimalKindBase" Abstract="True" />
-			<PawnKindDef Name="SK.GrenadierDestructiveBaseDummy" ParentName="GrenadierDestructiveBase" Abstract="True" />
-			<PawnKindDef Name="SK.SpaceRefugeeBaseDummy" ParentName="SpaceRefugeeBase" Abstract="True" />
-			<PawnKindDef Name="SK.SK_BearKindBaseDummy" ParentName="SK_BearKindBase" Abstract="True" />
-			<PawnKindDef Name="SK.SK_BigCatKindBaseDummy" ParentName="SK_BigCatKindBase" Abstract="True" />
-			<PawnKindDef Name="SK.SK_BigBirdKindBaseDummy" ParentName="SK_BigBirdKindBase" Abstract="True" />
-			<PawnKindDef Name="SK.SK_AnimalFoxKindBaseDummy" ParentName="SK_AnimalFoxKindBase" Abstract="True" />
-			<PawnKindDef Name="SK.SK_HareKindBaseDummy" ParentName="SK_HareKindBase" Abstract="True" />
-			<PawnKindDef Name="SK.SK_WolfKindBaseDummy" ParentName="SK_WolfKindBase" Abstract="True" />
-
-			<RecipeDef Name="SK.GlitterpediaModExtBaseDummy" ParentName="GlitterpediaModExtBase" Abstract="True" />
-
-			<TerrainDef Name="SK.WoodSK_FloorBaseDummy" ParentName="WoodSK_FloorBase" Abstract="True" />
-
-			<RaidStrategyDef Name="SK.SiegeBaseDummy" ParentName="SiegeBase" Abstract="True" />
-			<RaidStrategyDef Name="SK.BreachingBaseDummy" ParentName="BreachingBase" Abstract="True" />
-
+            <!--Research-->
 			<ResearchProjectDef ParentName="PrimitiveBase" Name="SK.PrimitiveBaseDummy" Abstract="True" />
 			<ResearchProjectDef ParentName="MedievalBase" Name="SK.MedievalBaseDummy" Abstract="True" />
 			<ResearchProjectDef ParentName="IndustrialBase" Name="SK.IndustrialBaseDummy" Abstract="True" />
@@ -107,7 +111,18 @@
 			<ResearchProjectDef ParentName="HitechMultiBase" Name="SK.HitechMultiBaseDummy" Abstract="True" />
 			<ResearchProjectDef ParentName="HitechLabStationBase" Name="SK.HitechLabStationBaseDummy" Abstract="True" />
 
+            <!--Other-->
+			<ThingDef Name="SK.SK_MoteBaseDummy" ParentName="SK_MoteBase" Abstract="True" />
+			<ThingDef Name="SK.ShipPartsSmokeDummy" ParentName="ShipPartsSmoke" Abstract="True" />
+
+			<RecipeDef Name="SK.GlitterpediaModExtBaseDummy" ParentName="GlitterpediaModExtBase" Abstract="True" />
+
+			<TerrainDef Name="SK.WoodSK_FloorBaseDummy" ParentName="WoodSK_FloorBase" Abstract="True" />
+
 			<WorkGiverDef Name="SK.WorkGiverPrioritizeSustainsDummy" ParentName="WorkGiverPrioritizeSustains" Abstract="True" />
+
+			<RaidStrategyDef Name="SK.SiegeBaseDummy" ParentName="SiegeBase" Abstract="True" />
+			<RaidStrategyDef Name="SK.BreachingBaseDummy" ParentName="BreachingBase" Abstract="True" />
 		</value>
 	</Operation>
 
