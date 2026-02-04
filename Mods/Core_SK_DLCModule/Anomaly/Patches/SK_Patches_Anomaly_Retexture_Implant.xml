@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!--======================= Источник имплантов DLC Anomaly ================================-->
+
+    <!-- Позвонки ревенанта -->
+    <Operation Class="Verse.PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="RevenantVertebrae"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/Anomaly/RevenantVertebrae</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+                <color>(1,1,1)</color>
+            </graphicData>
+        </value>
+    </Operation>
+  
+    <!-- Разъедаюзее сердце -->
+    <Operation Class="Verse.PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="CorrosiveHeart"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/Anomaly/CorrosiveHeart</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+                <color>(1,1,1)</color>
+            </graphicData>
+        </value>
+    </Operation>
+  
+    <!-- Шип упыря -->
+    <Operation Class="Verse.PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="GhoulBarbs"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/Anomaly/GhoulBarbs</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+                <color>(1,1,1)</color>
+            </graphicData>
+        </value>
+    </Operation>
+  
+    <!-- Пластины упыря -->
+    <Operation Class="Verse.PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="GhoulPlating"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/Anomaly/GhoulPlating</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+                <color>(1,1,1)</color>
+            </graphicData>
+        </value>
+    </Operation>
+  
+    <!-- Сердце с железной кровью -->
+    <Operation Class="Verse.PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="MetalbloodHeart"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/Anomaly/MetalbloodHeart</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+                <color>(1,1,1)</color>
+            </graphicData>
+        </value>
+    </Operation>
+  
+    <!-- Адреналиновое сердце -->
+    <Operation Class="Verse.PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="AdrenalHeart"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/Anomaly/AdrenalHeart</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+                <color>(1,1,1)</color>
+            </graphicData>
+        </value>
+    </Operation>
+
+</Patch>

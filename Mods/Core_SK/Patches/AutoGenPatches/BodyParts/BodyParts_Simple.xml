@@ -1,196 +1,198 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="SimpleProstheticLeg"]</xpath>
-    <value>
-      <label>Simple Prosthetic Leg</label>
-      <description>Simple prosthesis made to replace missing leg. Not very comfortable but quite efficient.</description>
-      <graphicData>
-        <texPath>Things/Item/BodyPart/SimpleProstheticLeg</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <drawSize>0.80</drawSize>
-      </graphicData>
-      <statBases>
-        <Mass>8</Mass>
-        <MaxHitPoints>90</MaxHitPoints>
-      </statBases>
-      <costList>
-        <ComponentIndustrial>12</ComponentIndustrial>
-        <Plastic>15</Plastic>
-        <Mechanism>4</Mechanism>
-        <Rubber>12</Rubber>
-      </costList>
-      <recipeMaker>
-        <productCount>1</productCount>
-        <skillRequirements>
-          <Crafting>5</Crafting>
-        </skillRequirements>
-        <researchPrerequisite>Prosthesis_making_C2</researchPrerequisite>
-      </recipeMaker>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SimpleProstheticLeg"]</xpath>
+        <value>
+            <label>Simple Prosthetic Leg</label>
+            <description>Simple prosthesis made to replace missing leg. Not very comfortable but quite efficient.</description>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/Core/SimpleProstheticLeg</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.80</drawSize>
+                <color>(1,1,1)</color>
+            </graphicData>
+            <statBases>
+                <Mass>8</Mass>
+                <MaxHitPoints>90</MaxHitPoints>
+            </statBases>
+            <costList>
+                <ComponentIndustrial>12</ComponentIndustrial>
+                <Plastic>15</Plastic>
+                <Mechanism>4</Mechanism>
+                <Rubber>12</Rubber>
+            </costList>
+            <recipeMaker>
+                <productCount>1</productCount>
+                <skillRequirements>
+                    <Crafting>5</Crafting>
+                </skillRequirements>
+                <researchPrerequisite>Prosthesis_making_C2</researchPrerequisite>
+            </recipeMaker>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/HediffDef[defName="SimpleProstheticLeg"]</xpath>
-    <value>
-      <label>simple prosthetic leg</label>
-      <description>An installed prosthetic leg. Not very comfortable but quite efficient.</description>
-      <labelNoun>a simple prosthetic leg</labelNoun>
-      <addedPartProps>
-        <partEfficiency>0.8</partEfficiency>
-      </addedPartProps>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/HediffDef[defName="SimpleProstheticLeg"]</xpath>
+        <value>
+            <label>simple prosthetic leg</label>
+            <description>An installed prosthetic leg. Not very comfortable but quite efficient.</description>
+            <labelNoun>a simple prosthetic leg</labelNoun>
+            <addedPartProps>
+                <partEfficiency>0.8</partEfficiency>
+            </addedPartProps>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/RecipeDef[defName="InstallSimpleProstheticLeg"]</xpath>
-    <value>
-      <label>Install Simple Prosthetic Leg</label>
-      <description>Installs a Simple Prosthetic Leg.</description>
-      <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-      <jobString>Installing Simple Prosthetic Leg.</jobString>
-      <workAmount>2600</workAmount>
-      <surgerySuccessChanceFactor>1.20</surgerySuccessChanceFactor>
-      <descriptionHyperlinks>
-        <ThingDef>SimpleProstheticLeg</ThingDef>
-      </descriptionHyperlinks>
-      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
-      <ingredients>
-        <li>
-          <filter>
-            <categories>
-              <li>Medicine</li>
-            </categories>
-          </filter>
-          <count>1</count>
-        </li>
-        <li>
-          <filter>
-            <thingDefs>
-              <li>SimpleProstheticLeg</li>
-            </thingDefs>
-          </filter>
-          <count>1</count>
-        </li>
-      </ingredients>
-      <fixedIngredientFilter>
-        <categories>
-          <li>Medicine</li>
-        </categories>
-        <thingDefs>
-          <li>SimpleProstheticLeg</li>
-        </thingDefs>
-      </fixedIngredientFilter>
-      <skillRequirements>
-        <Medicine>3</Medicine>
-      </skillRequirements>
-      <researchPrerequisite>Prosthesis_install_C2</researchPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/RecipeDef[defName="InstallSimpleProstheticLeg"]</xpath>
+        <value>
+            <label>Install Simple Prosthetic Leg</label>
+            <description>Installs a Simple Prosthetic Leg.</description>
+            <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+            <jobString>Installing Simple Prosthetic Leg.</jobString>
+            <workAmount>2600</workAmount>
+            <surgerySuccessChanceFactor>1.20</surgerySuccessChanceFactor>
+            <descriptionHyperlinks>
+                <ThingDef>SimpleProstheticLeg</ThingDef>
+            </descriptionHyperlinks>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <ingredients>
+                <li>
+                    <filter>
+                        <categories>
+                            <li>Medicine</li>
+                        </categories>
+                    </filter>
+                    <count>1</count>
+                </li>
+                <li>
+                    <filter>
+                        <thingDefs>
+                            <li>SimpleProstheticLeg</li>
+                        </thingDefs>
+                    </filter>
+                    <count>1</count>
+                </li>
+            </ingredients>
+            <fixedIngredientFilter>
+                <categories>
+                    <li>Medicine</li>
+                </categories>
+                <thingDefs>
+                    <li>SimpleProstheticLeg</li>
+                </thingDefs>
+            </fixedIngredientFilter>
+            <skillRequirements>
+                <Medicine>3</Medicine>
+            </skillRequirements>
+            <researchPrerequisite>Prosthesis_install_C2</researchPrerequisite>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="SimpleProstheticArm"]</xpath>
-    <value>
-      <label>Simple Prosthetic Arm</label>
-      <description>A simple but durable arm prosthesis.</description>
-      <graphicData>
-        <texPath>Things/Item/BodyPart/SimpleProstheticArm</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <drawSize>0.80</drawSize>
-      </graphicData>
-      <statBases>
-        <Mass>2</Mass>
-        <MaxHitPoints>90</MaxHitPoints>
-      </statBases>
-      <costList>
-        <ComponentIndustrial>10</ComponentIndustrial>
-        <Plastic>11</Plastic>
-        <Mechanism>4</Mechanism>
-        <Rubber>11</Rubber>
-      </costList>
-      <recipeMaker>
-        <productCount>1</productCount>
-        <skillRequirements>
-          <Crafting>5</Crafting>
-        </skillRequirements>
-        <researchPrerequisite>Prosthesis_making_C2</researchPrerequisite>
-      </recipeMaker>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SimpleProstheticArm"]</xpath>
+        <value>
+            <label>Simple Prosthetic Arm</label>
+            <description>A simple but durable arm prosthesis.</description>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/Core/SimpleProstheticArm</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.80</drawSize>
+                <color>(1,1,1)</color>
+            </graphicData>
+            <statBases>
+                <Mass>2</Mass>
+                <MaxHitPoints>90</MaxHitPoints>
+            </statBases>
+            <costList>
+                <ComponentIndustrial>10</ComponentIndustrial>
+                <Plastic>11</Plastic>
+                <Mechanism>4</Mechanism>
+                <Rubber>11</Rubber>
+            </costList>
+            <recipeMaker>
+                <productCount>1</productCount>
+                <skillRequirements>
+                    <Crafting>5</Crafting>
+                </skillRequirements>
+                <researchPrerequisite>Prosthesis_making_C2</researchPrerequisite>
+            </recipeMaker>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/HediffDef[defName="SimpleProstheticArm"]</xpath>
-    <value>
-      <label>simple prosthetic arm</label>
-      <description>An installed prosthetic arm. Simple but durable arm prosthesis.</description>
-      <labelNoun>a simple prosthetic arm</labelNoun>
-      <addedPartProps>
-        <partEfficiency>0.7</partEfficiency>
-      </addedPartProps>
-      <comps>
-        <li Class="HediffCompProperties_VerbGiver">
-          <tools>
-            <li Class="CombatExtended.ToolCE">
-              <label>fist</label>
-              <capacities>
-                <li>Blunt</li>
-              </capacities>
-              <power>1</power>
-              <cooldownTime>1.26</cooldownTime>
-              <armorPenetrationBlunt>0.250</armorPenetrationBlunt>
-            </li>
-          </tools>
-        </li>
-      </comps>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/HediffDef[defName="SimpleProstheticArm"]</xpath>
+        <value>
+            <label>simple prosthetic arm</label>
+            <description>An installed prosthetic arm. Simple but durable arm prosthesis.</description>
+            <labelNoun>a simple prosthetic arm</labelNoun>
+            <addedPartProps>
+                <partEfficiency>0.7</partEfficiency>
+            </addedPartProps>
+            <comps>
+                <li Class="HediffCompProperties_VerbGiver">
+                    <tools>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>fist</label>
+                            <capacities>
+                                <li>Blunt</li>
+                            </capacities>
+                            <power>1</power>
+                            <cooldownTime>1.26</cooldownTime>
+                            <armorPenetrationBlunt>0.250</armorPenetrationBlunt>
+                        </li>
+                    </tools>
+                </li>
+            </comps>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/RecipeDef[defName="InstallSimpleProstheticArm"]</xpath>
-    <value>
-      <label>Install Simple Prosthetic Arm</label>
-      <description>Installs a Simple Prosthetic Arm.</description>
-      <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-      <jobString>Installing Simple Prosthetic Arm.</jobString>
-      <workAmount>2600</workAmount>
-      <surgerySuccessChanceFactor>1.20</surgerySuccessChanceFactor>
-      <descriptionHyperlinks>
-        <ThingDef>SimpleProstheticArm</ThingDef>
-      </descriptionHyperlinks>
-      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
-      <ingredients>
-        <li>
-          <filter>
-            <categories>
-              <li>Medicine</li>
-            </categories>
-          </filter>
-          <count>1</count>
-        </li>
-        <li>
-          <filter>
-            <thingDefs>
-              <li>SimpleProstheticArm</li>
-            </thingDefs>
-          </filter>
-          <count>1</count>
-        </li>
-      </ingredients>
-      <fixedIngredientFilter>
-        <categories>
-          <li>Medicine</li>
-        </categories>
-        <thingDefs>
-          <li>SimpleProstheticArm</li>
-        </thingDefs>
-      </fixedIngredientFilter>
-      <workSkill>Medicine</workSkill>
-      <skillRequirements>
-        <Medicine>3</Medicine>
-      </skillRequirements>
-      <researchPrerequisite>Prosthesis_install_C2</researchPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/RecipeDef[defName="InstallSimpleProstheticArm"]</xpath>
+        <value>
+            <label>Install Simple Prosthetic Arm</label>
+            <description>Installs a Simple Prosthetic Arm.</description>
+            <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+            <jobString>Installing Simple Prosthetic Arm.</jobString>
+            <workAmount>2600</workAmount>
+            <surgerySuccessChanceFactor>1.20</surgerySuccessChanceFactor>
+            <descriptionHyperlinks>
+                <ThingDef>SimpleProstheticArm</ThingDef>
+            </descriptionHyperlinks>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <ingredients>
+                <li>
+                    <filter>
+                        <categories>
+                            <li>Medicine</li>
+                        </categories>
+                    </filter>
+                    <count>1</count>
+                </li>
+                <li>
+                    <filter>
+                        <thingDefs>
+                            <li>SimpleProstheticArm</li>
+                        </thingDefs>
+                    </filter>
+                    <count>1</count>
+                </li>
+            </ingredients>
+            <fixedIngredientFilter>
+                <categories>
+                    <li>Medicine</li>
+                </categories>
+                <thingDefs>
+                    <li>SimpleProstheticArm</li>
+                </thingDefs>
+            </fixedIngredientFilter>
+            <workSkill>Medicine</workSkill>
+            <skillRequirements>
+                <Medicine>3</Medicine>
+            </skillRequirements>
+            <researchPrerequisite>Prosthesis_install_C2</researchPrerequisite>
+        </value>
+    </Operation>
 
 </Patch>

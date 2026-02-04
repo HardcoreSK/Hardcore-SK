@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!--========================= DBH ===================================-->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Dubs Bad Hygiene</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!-- Средство для повышения гигиены -->
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName="HygieneEnhancer"]</xpath>
+                    <value>
+                        <graphicData>
+                            <texPath>Things/Item/BodyPart/Mods/HygieneEnhancer</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>0.80</drawSize>
+                            <color>(1,1,1)</color>
+                        </graphicData>
+                    </value>
+                </li>
+            
+                <!-- Бионический мочевой пузырь  -->
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName="BionicBladder"]</xpath>
+                    <value>
+                        <graphicData>
+                            <texPath>Things/Item/BodyPart/Mods/BionicBladder</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>0.80</drawSize>
+                            <color>(1,1,1)</color>
+                        </graphicData>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <!--========================= Раткины ===================================-->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>NewRatkinPlus</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!-- Накладное ухо  -->
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName="RK_FakeEar"]</xpath>
+                    <value>
+                        <graphicData>
+                            <texPath>Things/Item/BodyPart/Mods/RK_FakeEar</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>0.80</drawSize>
+                            <color>(1,1,1)</color>
+                        </graphicData>
+                    </value>
+                </li>
+
+                <!-- Бионический хвост раткинов -->
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName="RK_BionicTail"]/graphicData</xpath>
+                    <value>
+                        <graphicData>
+                            <texPath>Things/Item/BodyPart/Mods/RK_BionicTail</texPath>
+                            <color>(1,1,1)</color>
+                        </graphicData>
+                    </value>
+                </li>
+            
+                <!-- Тряпичный хвост раткинов -->
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName="RK_FakeTail"]</xpath>
+                    <value>
+                        <graphicData>
+                            <texPath>Things/Item/BodyPart/Mods/RK_FakeTail</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>0.80</drawSize>
+                            <color>(1,1,1)</color>
+                        </graphicData>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+	
+</Patch>

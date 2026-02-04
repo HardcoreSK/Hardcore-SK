@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!--===================================== Редакт. крафта имплантов ==============================================-->
+    <!--======================= Повязка на глаз (HSK) ================================-->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="EyePatch"]/stuffCategories</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="EyePatch"]/costStuffCount</xpath>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="EyePatch"]</xpath>
+        <value>
+            <costList>
+                <Cloth>20</Cloth>
+            </costList>
+        </value>
+    </Operation>
+    <!--======================= Тряпичный хвост (HSK) ================================-->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="OClothTail"]/stuffCategories</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="OClothTail"]/costStuffCount</xpath>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OClothTail"]</xpath>
+        <value>
+            <costList>
+                <Cloth>40</Cloth>
+            </costList>
+        </value>
+    </Operation>
+    <!--======================= Кохлеарный имплант (Core) ================================-->
+    <!--<Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="CochlearImplant"]/stuffCategories</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="CochlearImplant"]/costStuffCount</xpath>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="CochlearImplant"]/costList</xpath>
+        <value>
+            <Plastic>10</Plastic>
+        </value>
+    </Operation>-->
+</Patch>

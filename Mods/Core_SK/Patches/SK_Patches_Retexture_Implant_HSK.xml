@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!--======================= Источник имплантов HSK ================================-->
+    <!--====================== Органика ==============================================-->
+    <!--Нога-->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Leg"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/Leg</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!--Рука-->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Arm"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/Arm</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!--Рука-->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Foot"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/Foot</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!--Кисть-->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Hand"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/Hand</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!--Глаз-->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Eye"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/Eye</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!--Нос-->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Nose"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/Nose</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!--Желудок-->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Stomach"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/Stomach</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!--Ухо-->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Ear"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/Ear</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!--Челюсть-->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Jaw"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/Jaw</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!--Когти-->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="OClaws"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/Claws</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!--Хвост-->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="OTail"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/Tail</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!--========================== Примитивные T.I ===================================-->
+    <!--Деревяный крюк-->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="HookHand"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/HookHand</texPath>
+        </value>
+    </Operation>
+    <!-- Повязка на глаз -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="EyePatch"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/EyePatch</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.80</drawSize>
+                <color>(1,1,1)</color>
+            </graphicData>
+        </value>
+    </Operation>
+    <!-- Стекляный глаз -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GlassEye"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/GlassEye</texPath>
+        </value>
+    </Operation>
+    <!-- Тряпичный хвост -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="OClothTail"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/OClothTail</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.80</drawSize>
+                <color>(1,1,1)</color>
+            </graphicData>
+        </value>
+    </Operation>
+    <!--========================== Примитивные T.II ===================================-->
+    <!-- Простой протез кисти -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SimpleProstheticHand"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/SimpleProstheticHand</texPath>
+        </value>
+    </Operation>
+    <!-- Простой протез ступни -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SimpleProstheticFoot"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/SimpleProstheticFoot</texPath>
+        </value>
+    </Operation>
+    <!-- Искуственный таз -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="ArtificialPelvis"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/ArtificialPelvis</texPath>
+        </value>
+    </Operation>
+    <!-- Искуственный нос -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="ArtificialNose"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/ArtificialNose</texPath>
+        </value>
+    </Operation>
+    <!--========================== ИИшки ===================================-->
+    <!--Чип ИИ-->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="AIChip"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/AIChip</texPath>
+        </value>
+    </Operation>
+    <!--Чип ИИ:Боец -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="AuxiliaryAI_Brawler"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/AuxiliaryAI_Brawler</texPath>
+        </value>
+    </Operation>
+    <!--Чип ИИ:Командос -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="AuxiliaryAI_Commando"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/AuxiliaryAI_Commando</texPath>
+        </value>
+    </Operation>
+    <!--Чип ИИ:Стрелок -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="AuxiliaryAI_Sharpshooter"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/AuxiliaryAI_Sharpshooter</texPath>
+        </value>
+    </Operation>
+    <!--Чип ИИ:Строительство -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="ConstructorCore"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/ConstructorCore</texPath>
+        </value>
+    </Operation>
+    <!--Чип ИИ:Дипломатия -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="DiplomatCore"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/DiplomatCore</texPath>
+        </value>
+    </Operation>
+    <!--Чип ИИ:Медецина -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="DoctorCore"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/DoctorCore</texPath>
+        </value>
+    </Operation>
+    <!--Чип ИИ:Растеневодство -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="FarmerCore"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/FarmerCore</texPath>
+        </value>
+    </Operation>
+    <!--Чип ИИ:Горное дело -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="MinerCore"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/MinerCore</texPath>
+        </value>
+    </Operation>
+    <!--========================== Бионика ===================================-->
+    <!-- Бионическая кисть -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="BionicHand"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/BionicHand</texPath>
+        </value>
+    </Operation>
+    <!-- Бионическая стопа -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="BionicFoot"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/BionicFoot</texPath>
+        </value>
+    </Operation>
+    <!-- Бионическая шея -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="BionicNeck"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/BionicNeck</texPath>
+        </value>
+    </Operation>
+    <!-- Экзоскелет -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="ExoskeletonSuit"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/ExoskeletonSuit</texPath>
+        </value>
+    </Operation>
+    <!-- Сенексиевый чип -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SenexiumImplant"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/SenexiumImplant</texPath>
+        </value>
+    </Operation>
+    <!-- Стимулятор мозга -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="BrainStimulator"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/BrainStimulator</texPath>
+        </value>
+    </Operation>
+    <!-- Продвинутые когти -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="PlasteelClaws"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/PlasteelClaws</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!-- Бионический хвост -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="OBionicTail"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/OBionicTail</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!-- Тактический глаз роговицы -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="TacticalCorneaImplant"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/TacticalCorneaImplant</texPath>
+        </value>
+    </Operation>
+    <!--============================ Кибернетика ===================================-->
+    <!-- Кибернитический позвоночник -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GTSpine"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/GTSpine</texPath>
+        </value>
+    </Operation>
+    <!-- Кибернетическое хвост -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="CyberneticTail"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/CyberneticTail</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!-- Кибернетическое лёгкое  -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GTLung"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/GTLung</texPath>
+        </value>
+    </Operation>
+    <!-- Кибернетическая кисть  -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GTHand"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/GTHand</texPath>
+        </value>
+    </Operation>
+    <!-- Кибернетическая стопа  -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GTFoot"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/GTFoot</texPath>
+        </value>
+    </Operation>
+    <!-- Кибернетическая челюсть  -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GTDentures"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/GTDentures</texPath>
+        </value>
+    </Operation>
+    <!-- Кибернетическая шея  -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GTNeck"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/GTNeck</texPath>
+        </value>
+    </Operation>
+    <!-- Защитный экзоскелет  -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="ProtectiveExoskeleton"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/ProtectiveExoskeleton</texPath>
+        </value>
+    </Operation>
+    <!-- Кибернетическое ухо  -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GTEar"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/GTEar</texPath>
+        </value>
+    </Operation>
+    <!-- Кибернетическое сердце  -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GTHeart"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/GTHeart</texPath>
+        </value>
+    </Operation>
+    <!-- Кибернетическая почка  -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GTKidney"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/GTKidney</texPath>
+        </value>
+    </Operation>
+    <!-- Кибернетическая печень  -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GTLiver"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/GTLiver</texPath>
+        </value>
+    </Operation>
+    <!-- Кибернетический желудок  -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GTstomach"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/GTstomach</texPath>
+        </value>
+    </Operation>
+    <!--======================= Синтетика ================================-->
+    <!-- ОО Наноботы -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="OrganicOptimizingNanobots"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/OrganicOptimizingNanobots</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!-- ОИ Наноботы -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="InstinctOptimizingNanobots"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/InstinctOptimizingNanobots</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.8</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!-- Нервно-мышечный каркас  -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="NeuromuscularFramework"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/NeuromuscularFramework</texPath>
+        </value>
+    </Operation>
+    <!-- Неврологический каркас  -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="NeurocureFramework"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/NeurocureFramework</texPath>
+        </value>
+    </Operation>
+    <!-- Стимулятор мышц  -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="MuscleStimulator"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/MuscleStimulator</texPath>
+        </value>
+    </Operation>
+    <!-- Синтетическая кожа  -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SyntheticSkin"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/SyntheticSkin</texPath>
+        </value>
+    </Operation>
+    <!-- Синтетическое легкое -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="BionicLung"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/SyntheticLung</texPath>
+        </value>
+    </Operation>
+    <!-- Синтетическая печень -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="BionicLiver"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/SyntheticLiver</texPath>
+        </value>
+    </Operation>
+    <!-- Синтетическая почка -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="BionicKidney"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/HSK/SyntheticKidney</texPath>
+        </value>
+    </Operation>
+    <!--======================= Ребра ================================-->
+    <!-- Адреналиновое ребро -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="AdrenalineRib"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/AdrenalineRib</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.80</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!-- Охлаждающие ребро -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="CoolerRib"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/CoolerRib</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.80</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!-- Гемокоагуляторное ребро -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="CoagulatorRib"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/CoagulatorRib</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.80</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!-- Медецинское ребро -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="MedicalRib"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/MedicalRib</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.80</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!-- Стимулирующие ребро -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="DruggedRib"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/DruggedRib</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.80</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!-- Нагревательное ребро -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="HeaterRib"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/HeaterRib</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.80</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+    <!-- Обезбаливающие ребро -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="PainkillerRib"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/HSK/PainkillerRib</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.80</drawSize>
+            </graphicData>
+        </value>
+    </Operation>
+</Patch>

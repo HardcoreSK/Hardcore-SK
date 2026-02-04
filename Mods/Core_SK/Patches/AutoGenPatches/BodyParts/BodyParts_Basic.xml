@@ -1,301 +1,311 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/RecipeDef[@Name="SurgeryInstallWoodenPartBase"]</xpath>
-    <value>
-      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
-      <researchPrerequisite>Prosthetics</researchPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/RecipeDef[@Name="SurgeryInstallWoodenPartBase"]</xpath>
+        <value>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <researchPrerequisite>Prosthetics</researchPrerequisite>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Denture"]/graphicData</xpath>
+        <value>
+            <texPath>Things/Item/BodyPart/Core/Denture</texPath>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/HediffDef[defName="Denture"]</xpath>
-    <value>
-      <description>An installed wooden teeth. Smells a bit.</description>
-      <descriptionHyperlinks>
-        <ThingDef>Denture</ThingDef>
-      </descriptionHyperlinks>
-      <addedPartProps>
-        <partEfficiency>1.0</partEfficiency>
-      </addedPartProps>
-      <stages>
-        <li>
-          <capMods>
-            <li>
-              <capacity>Talking</capacity>
-              <offset>-0.4</offset>
-            </li>
-            <li>
-              <capacity>Eating</capacity>
-              <offset>-0.3</offset>
-            </li>
-          </capMods>
-        </li>
-      </stages>
-      <spawnThingOnRemoved>Denture</spawnThingOnRemoved>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/HediffDef[defName="Denture"]</xpath>
+        <value>
+            <description>An installed wooden teeth. Smells a bit.</description>
+            <descriptionHyperlinks>
+                <ThingDef>Denture</ThingDef>
+            </descriptionHyperlinks>
+            <addedPartProps>
+                <partEfficiency>1.0</partEfficiency>
+            </addedPartProps>
+            <stages>
+                <li>
+                    <capMods>
+                        <li>
+                            <capacity>Talking</capacity>
+                            <offset>-0.4</offset>
+                        </li>
+                        <li>
+                            <capacity>Eating</capacity>
+                            <offset>-0.3</offset>
+                        </li>
+                    </capMods>
+                </li>
+            </stages>
+            <spawnThingOnRemoved>Denture</spawnThingOnRemoved>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/RecipeDef[defName="InstallDenture"]</xpath>
-    <value>
-      <label>Install Denture</label>
-      <description>Installs a simple Denture.</description>
-      <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-      <jobString>Installing Denture.</jobString>
-      <workAmount>1350</workAmount>
-      <surgerySuccessChanceFactor>1.40</surgerySuccessChanceFactor>
-      <descriptionHyperlinks>
-        <ThingDef>Denture</ThingDef>
-      </descriptionHyperlinks>
-      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
-      <ingredients>
-        <li>
-          <filter>
-            <categories>
-              <li>Medicine</li>
-            </categories>
-          </filter>
-          <count>1</count>
-        </li>
-        <li>
-          <filter>
-            <thingDefs>
-              <li>Denture</li>
-            </thingDefs>
-          </filter>
-          <count>1</count>
-        </li>
-      </ingredients>
-      <fixedIngredientFilter>
-        <categories>
-          <li>Medicine</li>
-        </categories>
-        <thingDefs>
-          <li>Denture</li>
-        </thingDefs>
-      </fixedIngredientFilter>
-      <skillRequirements>
-        <Medicine>2</Medicine>
-      </skillRequirements>
-      <researchPrerequisite>Prosthetics</researchPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/RecipeDef[defName="InstallDenture"]</xpath>
+        <value>
+            <label>Install Denture</label>
+            <description>Installs a simple Denture.</description>
+            <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+            <jobString>Installing Denture.</jobString>
+            <workAmount>1350</workAmount>
+            <surgerySuccessChanceFactor>1.40</surgerySuccessChanceFactor>
+            <descriptionHyperlinks>
+                <ThingDef>Denture</ThingDef>
+            </descriptionHyperlinks>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <ingredients>
+                <li>
+                    <filter>
+                        <categories>
+                            <li>Medicine</li>
+                        </categories>
+                    </filter>
+                    <count>1</count>
+                </li>
+                <li>
+                    <filter>
+                        <thingDefs>
+                            <li>Denture</li>
+                        </thingDefs>
+                    </filter>
+                    <count>1</count>
+                </li>
+            </ingredients>
+            <fixedIngredientFilter>
+                <categories>
+                    <li>Medicine</li>
+                </categories>
+                <thingDefs>
+                    <li>Denture</li>
+                </thingDefs>
+            </fixedIngredientFilter>
+            <skillRequirements>
+                <Medicine>2</Medicine>
+            </skillRequirements>
+            <researchPrerequisite>Prosthetics</researchPrerequisite>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/HediffDef[defName="PegLeg"]</xpath>
-    <value>
-      <description>An installed peg leg. Out of fashion but it does its job pretty well.</description>
-      <addedPartProps>
-        <partEfficiency>0.60</partEfficiency>
-      </addedPartProps>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/HediffDef[defName="PegLeg"]</xpath>
+        <value>
+            <description>An installed peg leg. Out of fashion but it does its job pretty well.</description>
+            <addedPartProps>
+                <partEfficiency>0.60</partEfficiency>
+            </addedPartProps>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/RecipeDef[defName="InstallPegLeg"]</xpath>
-    <value>
-      <label>Install Peg Leg</label>
-      <description>Installs a Peg Leg.</description>
-      <jobString>Installing Peg Leg.</jobString>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/RecipeDef[defName="InstallPegLeg"]</xpath>
+        <value>
+            <label>Install Peg Leg</label>
+            <description>Installs a Peg Leg.</description>
+            <jobString>Installing Peg Leg.</jobString>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/HediffDef[defName="WoodenHand"]</xpath>
-    <value>
-      <description>An installed wooden hand.</description>
-      <addedPartProps>
-        <partEfficiency>0.7</partEfficiency>
-      </addedPartProps>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/HediffDef[defName="WoodenHand"]</xpath>
+        <value>
+            <description>An installed wooden hand.</description>
+            <addedPartProps>
+                <partEfficiency>0.7</partEfficiency>
+            </addedPartProps>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/HediffDef[defName="WoodenFoot"]</xpath>
-    <value>
-      <description>An installed wooden foot. At least it's more comfortable than hopping around.</description>
-      <addedPartProps>
-        <partEfficiency>0.7</partEfficiency>
-      </addedPartProps>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/HediffDef[defName="WoodenFoot"]</xpath>
+        <value>
+            <description>An installed wooden foot. At least it's more comfortable than hopping around.</description>
+            <addedPartProps>
+                <partEfficiency>0.7</partEfficiency>
+            </addedPartProps>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/RecipeDef[defName="InstallWoodenFoot"]</xpath>
-    <value>
-      <label>Install Wooden Foot</label>
-      <description>Installs a Wooden Foot.</description>
-      <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-      <jobString>Installing Wooden Foot.</jobString>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/RecipeDef[defName="InstallWoodenFoot"]</xpath>
+        <value>
+            <label>Install Wooden Foot</label>
+            <description>Installs a Wooden Foot.</description>
+            <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+            <jobString>Installing Wooden Foot.</jobString>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="CochlearImplant"]</xpath>
-    <value>
-      <graphicData>
-        <texPath>Things/Item/BodyPart/CochlearImplant</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <drawSize>0.80</drawSize>
-      </graphicData>
-      <statBases>
-        <MarketValue>60</MarketValue>
-        <Mass>0.2</Mass>
-        <MaxHitPoints>25</MaxHitPoints>
-      </statBases>
-      <techHediffsTags>
-        <li>Common</li>
-      </techHediffsTags>
-      <stuffCategories>
-        <li>Fabric</li>
-      </stuffCategories>
-      <costStuffCount>10</costStuffCount>
-      <costList>
-        <ElectronicComponents>1</ElectronicComponents>
-        <Wire>2</Wire>
-        <ComponentMedieval>1</ComponentMedieval>
-      </costList>
-      <recipeMaker>
-        <productCount>1</productCount>
-        <skillRequirements>
-          <Crafting>3</Crafting>
-        </skillRequirements>
-        <researchPrerequisite>Prosthesis_making_B1</researchPrerequisite>
-      </recipeMaker>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="CochlearImplant"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/Core/CochlearImplant</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.80</drawSize>
+                <color>(1,1,1)</color>
+            </graphicData>
+            <statBases>
+                <MarketValue>60</MarketValue>
+                <Mass>0.2</Mass>
+                <MaxHitPoints>25</MaxHitPoints>
+            </statBases>
+            <techHediffsTags>
+                <li>Common</li>
+            </techHediffsTags>
+            <!--<stuffCategories>
+                <li>Fabric</li>
+            </stuffCategories>
+            <costStuffCount>10</costStuffCount>-->
+            <costList>
+                <Cloth>20</Cloth>
+                <ElectronicComponents>1</ElectronicComponents>
+                <Wire>2</Wire>
+                <ComponentMedieval>1</ComponentMedieval>
+            </costList>
+            <recipeMaker>
+                <productCount>1</productCount>
+                <skillRequirements>
+                    <Crafting>3</Crafting>
+                </skillRequirements>
+                <researchPrerequisite>Prosthesis_making_B1</researchPrerequisite>
+            </recipeMaker>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/HediffDef[defName="CochlearImplant"]</xpath>
-    <value>
-      <description>An installed implant which replaces normal hearing. An external microphone transmits a sound signal to electrodes wrapped around the inner ear's auditory sensing nerves. The electrodes stimulate the nerves according to the sound, creating a sensation of hearing. It's not as good as a natural ear, but it's a lot better than being deaf.</description>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/HediffDef[defName="CochlearImplant"]</xpath>
+        <value>
+            <description>An installed implant which replaces normal hearing. An external microphone transmits a sound signal to electrodes wrapped around the inner ear's auditory sensing nerves. The electrodes stimulate the nerves according to the sound, creating a sensation of hearing. It's not as good as a natural ear, but it's a lot better than being deaf.</description>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/RecipeDef[defName="InstallCochlearImplant"]</xpath>
-    <value>
-      <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-      <workAmount>1550</workAmount>
-      <surgerySuccessChanceFactor>1.40</surgerySuccessChanceFactor>
-      <descriptionHyperlinks>
-        <ThingDef>CochlearImplant</ThingDef>
-      </descriptionHyperlinks>
-      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
-      <ingredients>
-        <li>
-          <filter>
-            <categories>
-              <li>Medicine</li>
-            </categories>
-          </filter>
-          <count>1</count>
-        </li>
-        <li>
-          <filter>
-            <thingDefs>
-              <li>CochlearImplant</li>
-            </thingDefs>
-          </filter>
-          <count>1</count>
-        </li>
-      </ingredients>
-      <fixedIngredientFilter>
-        <categories>
-          <li>Medicine</li>
-        </categories>
-        <thingDefs>
-          <li>CochlearImplant</li>
-        </thingDefs>
-      </fixedIngredientFilter>
-      <skillRequirements>
-        <Medicine>2</Medicine>
-      </skillRequirements>
-      <researchPrerequisite>Prosthetics</researchPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/RecipeDef[defName="InstallCochlearImplant"]</xpath>
+        <value>
+            <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+            <workAmount>1550</workAmount>
+            <surgerySuccessChanceFactor>1.40</surgerySuccessChanceFactor>
+            <descriptionHyperlinks>
+                <ThingDef>CochlearImplant</ThingDef>
+            </descriptionHyperlinks>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <ingredients>
+                <li>
+                    <filter>
+                        <categories>
+                            <li>Medicine</li>
+                        </categories>
+                    </filter>
+                    <count>1</count>
+                </li>
+                <li>
+                    <filter>
+                        <thingDefs>
+                            <li>CochlearImplant</li>
+                        </thingDefs>
+                    </filter>
+                    <count>1</count>
+                </li>
+            </ingredients>
+            <fixedIngredientFilter>
+                <categories>
+                    <li>Medicine</li>
+                </categories>
+                <thingDefs>
+                    <li>CochlearImplant</li>
+                </thingDefs>
+            </fixedIngredientFilter>
+            <skillRequirements>
+                <Medicine>2</Medicine>
+            </skillRequirements>
+            <researchPrerequisite>Prosthetics</researchPrerequisite>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="SimpleProstheticHeart"]</xpath>
-    <value>
-      <graphicData>
-        <texPath>Things/Item/BodyPart/SimpleProstheticHeart</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <drawSize>0.80</drawSize>
-      </graphicData>
-      <statBases>
-        <Mass>2</Mass>
-        <MaxHitPoints>30</MaxHitPoints>
-      </statBases>
-      <costList>
-        <ComponentIndustrial>6</ComponentIndustrial>
-        <ComponentMedieval>3</ComponentMedieval>
-        <Mechanism>4</Mechanism>
-      </costList>
-      <recipeMaker>
-        <productCount>1</productCount>
-        <skillRequirements>
-          <Crafting>6</Crafting>
-        </skillRequirements>
-        <researchPrerequisite>Prosthesis_making_C2</researchPrerequisite>
-      </recipeMaker>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SimpleProstheticHeart"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/Core/SimpleProstheticHeart</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.80</drawSize>
+                <color>(1,1,1)</color>
+            </graphicData>
+            <statBases>
+                <Mass>2</Mass>
+                <MaxHitPoints>30</MaxHitPoints>
+            </statBases>
+            <costList>
+                <ComponentIndustrial>6</ComponentIndustrial>
+                <ComponentMedieval>3</ComponentMedieval>
+                <Mechanism>4</Mechanism>
+            </costList>
+            <recipeMaker>
+                <productCount>1</productCount>
+                <skillRequirements>
+                    <Crafting>6</Crafting>
+                </skillRequirements>
+                <researchPrerequisite>Prosthesis_making_C2</researchPrerequisite>
+            </recipeMaker>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/HediffDef[defName="SimpleProstheticHeart"]</xpath>
-    <value>
-      <description>An installed prosthetic heart, which contains an electric motor that pumps blood smoothly around the body. Users often report feeling tired, but it's better than the alternative.</description>
-      <addedPartProps>
-        <solid>true</solid>
-        <partEfficiency>0.75</partEfficiency>
-      </addedPartProps>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/HediffDef[defName="SimpleProstheticHeart"]</xpath>
+        <value>
+            <description>An installed prosthetic heart, which contains an electric motor that pumps blood smoothly around the body. Users often report feeling tired, but it's better than the alternative.</description>
+            <addedPartProps>
+                <solid>true</solid>
+                <partEfficiency>0.75</partEfficiency>
+            </addedPartProps>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/RecipeDef[defName="InstallSimpleProstheticHeart"]</xpath>
-    <value>
-      <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-      <workAmount>2800</workAmount>
-      <descriptionHyperlinks>
-        <ThingDef>SimpleProstheticHeart</ThingDef>
-      </descriptionHyperlinks>
-      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
-      <ingredients>
-        <li>
-          <filter>
-            <categories>
-              <li>Medicine</li>
-            </categories>
-          </filter>
-          <count>1</count>
-        </li>
-        <li>
-          <filter>
-            <thingDefs>
-              <li>SimpleProstheticHeart</li>
-            </thingDefs>
-          </filter>
-          <count>1</count>
-        </li>
-      </ingredients>
-      <fixedIngredientFilter>
-        <categories>
-          <li>Medicine</li>
-        </categories>
-        <thingDefs>
-          <li>SimpleProstheticHeart</li>
-        </thingDefs>
-      </fixedIngredientFilter>
-      <workSkill>Medicine</workSkill>
-      <skillRequirements>
-        <Medicine>9</Medicine>
-      </skillRequirements>
-      <researchPrerequisite>Prosthesis_install_C1</researchPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/RecipeDef[defName="InstallSimpleProstheticHeart"]</xpath>
+        <value>
+            <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+            <workAmount>2800</workAmount>
+            <descriptionHyperlinks>
+                <ThingDef>SimpleProstheticHeart</ThingDef>
+            </descriptionHyperlinks>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <ingredients>
+                <li>
+                    <filter>
+                        <categories>
+                            <li>Medicine</li>
+                        </categories>
+                    </filter>
+                    <count>1</count>
+                </li>
+                <li>
+                    <filter>
+                        <thingDefs>
+                            <li>SimpleProstheticHeart</li>
+                        </thingDefs>
+                    </filter>
+                    <count>1</count>
+                </li>
+            </ingredients>
+            <fixedIngredientFilter>
+                <categories>
+                    <li>Medicine</li>
+                </categories>
+                <thingDefs>
+                    <li>SimpleProstheticHeart</li>
+                </thingDefs>
+            </fixedIngredientFilter>
+            <workSkill>Medicine</workSkill>
+            <skillRequirements>
+                <Medicine>9</Medicine>
+            </skillRequirements>
+            <researchPrerequisite>Prosthesis_install_C1</researchPrerequisite>
+        </value>
+    </Operation>
 
 </Patch>

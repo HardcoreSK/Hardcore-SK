@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!--======================= Источник имплантов DLC Biotech ================================-->
+
+<!--======================= Детокс ================================-->
+
+	<!-- Детоксицирующиее легкое -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DetoxifierLung"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Biotech/DetoxifierLung</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Детоксицирующая почка -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DetoxifierKidney"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Biotech/DetoxifierKidney</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+
+<!--======================= Механитор ================================-->
+
+	<!-- Мехлинк -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Mechlink"]/graphicData</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Biotech/Mechlink</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Гестационный процессор -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MechFormfeeder"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Biotech/MechFormfeeder</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Ремонтный зонд -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RepairProbe"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Biotech/RepairProbe</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Диспетчерский сублинк(Базовый) -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ControlSublink"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Biotech/ControlSublink</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Диспетчерский сублинк(Улучшенный) -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ControlSublinkHigh"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Biotech/ControlSublinkHigh</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Модуль дистанционного ремонта -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RemoteRepairer"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Biotech/RemoteRepairer</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Модуль дистанционного щита -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RemoteShielder"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Biotech/RemoteShielder</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+</Patch>
