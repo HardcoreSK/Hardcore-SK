@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
+
 	<IceCream.label>Мороженое</IceCream.label>
 	<IceCream.description>Холодная вкуснятина, которая помогает справиться с тепловым ударом.</IceCream.description>
 
@@ -89,41 +90,15 @@
 
 	<BakedPotato.label>Печёный картофель</BakedPotato.label>
 	<BakedPotato.description>Печёный картофель. Ммм... Вы чувствуете этот запах?</BakedPotato.description>
-
-	<MushroomTincture.label>Лечебная грибная настойка</MushroomTincture.label>
-	<MushroomTincture.description>Мы научились готовить настойку из грибов, которая обладает волшебными целебными свойствами, а еще от нее начинает сносить крышу!</MushroomTincture.description>
-
-	<MedicalDrink.label>Иммунобустер</MedicalDrink.label>
-	<MedicalDrink.description>Концентрированный экстракт из лечебного корня и хмеля. Вкус ужасный, но укрепляет иммунную систему.</MedicalDrink.description>
-
-	<Bandagekit.label>Бинты</Bandagekit.label>
-	<Bandagekit.description>Комплект бинтов, сделанных из ткани. Не медицинская аптечка, но лучше чем ничего.</Bandagekit.description>
-
-	<Bandagekitcrude.label>Самодельные бинты</Bandagekitcrude.label>
-	<Bandagekitcrude.description>Самодельные бинты. Выглядят ужасно, верный способ заработать инфекцию. Сгодятся для остановки кровотечения, но не более.</Bandagekitcrude.description>
-
-	<Herbmedicine.label>Простая аптечка</Herbmedicine.label>
-	<Herbmedicine.description>Смесь лечебных трав в комплекте с бинтами. Менее эффективна, чем индустриальные медикаменты.</Herbmedicine.description>
-
-	<HealrootTincture.label>Лечебная настойка из трав</HealrootTincture.label>
-	<HealrootTincture.description>Концентрированный экстракт из лечебных трав. Хороший, натуральный медицинский препарат. Применяется как антибиотик.</HealrootTincture.description>
 	
-	<!-- EN: Cup of Tea -->
 	<Cuptea.label>Чай</Cuptea.label>
-	<!-- EN: A drink made from brewing tea leaves. -->
 	<Cuptea.description>Напиток, изготовленный путём заварки листьев чайного дерева.</Cuptea.description>
-	<!-- EN: Drink {0} -->
 	<Cuptea.ingestible.ingestCommandString>Выпить {0}</Cuptea.ingestible.ingestCommandString>
-	<!-- EN: Drinking {0}. -->
 	<Cuptea.ingestible.ingestReportString>Пьёт {0}</Cuptea.ingestible.ingestReportString>
 
-	<!-- EN: Cup of Coffee -->
 	<CupCoffee.label>Кофе</CupCoffee.label>
-	<!-- EN: A cup of coffee. -->
 	<CupCoffee.description>Бодрящий ароматный напиток.</CupCoffee.description>
-	<!-- EN: Drink {0} -->
 	<CupCoffee.ingestible.ingestCommandString>Выпить {0}</CupCoffee.ingestible.ingestCommandString>
-	<!-- EN: Drinking {0}. -->
 	<CupCoffee.ingestible.ingestReportString>Пьёт {0}</CupCoffee.ingestible.ingestReportString>
 
 	<FruitDrink.label>Фруктовый напиток</FruitDrink.label>
@@ -176,133 +151,5 @@
 
 	<Cornbreadmuffin.label>Кукурузная булочка</Cornbreadmuffin.label>
 	<Cornbreadmuffin.description>Хрустящая булочка из кукурузной муки.\n\nУлучшает движение</Cornbreadmuffin.description> -->
-
-	<cider.label>Бутылка сидра</cider.label>
-	<cider.description>Сладкий алкогольный яблочный напиток.</cider.description>
-	<cider.ingestible.ingestCommandString>Выпить сидра</cider.ingestible.ingestCommandString>
-	<cider.ingestible.ingestReportString>Пьёт сидр</cider.ingestible.ingestReportString>
-
-	<rum.label>Бутылка рома</rum.label>
-	<rum.description>Общеизвестный, довольно крепкий и распространенный алкогольный напиток из сахарного тростника.</rum.description>
-	<rum.ingestible.ingestCommandString>Выпить рома</rum.ingestible.ingestCommandString>
-	<rum.ingestible.ingestReportString>Пьёт ром</rum.ingestible.ingestReportString>
-
-	<Wine.label>Бутылка вина</Wine.label>
-	<Wine.description>Полусладкое вино, изготовленного из винограда.</Wine.description>
-	<Wine.ingestible.ingestCommandString>Выпить вина</Wine.ingestible.ingestCommandString>
-	<Wine.ingestible.ingestReportString>Пьёт вино</Wine.ingestible.ingestReportString>
-
-	<strawberrywine.label>Бутылка столового вина</strawberrywine.label>
-	<strawberrywine.description>Сладкое, нежно-розовое вино из ягод.</strawberrywine.description>
-	<strawberrywine.ingestible.ingestCommandString>Выпить столового вина</strawberrywine.ingestible.ingestCommandString>
-	<strawberrywine.ingestible.ingestReportString>Пьёт столовое вино</strawberrywine.ingestible.ingestReportString>
-
-	<saki.label>Бутылка саке</saki.label>
-	<saki.description>Пьянящий, освежающий рисовый напиток.</saki.description>
-	<saki.ingestible.ingestCommandString>Выпить саке</saki.ingestible.ingestCommandString>
-	<saki.ingestible.ingestReportString>Пьёт саке</saki.ingestible.ingestReportString>
-
-	<vodka.label>Бутылка водки</vodka.label>
-	<vodka.description>Чистый и крепкий алкоголь из картофеля.</vodka.description>
-	<vodka.ingestible.ingestCommandString>Выпить водки</vodka.ingestible.ingestCommandString>
-	<vodka.ingestible.ingestReportString>Пьёт водку</vodka.ingestible.ingestReportString>
-
-	<tequila.label>Бутылка текилы</tequila.label>
-	<tequila.description>Легендарный алкогольный напиток из агавы.</tequila.description>
-	<tequila.ingestible.ingestCommandString>Выпить текилы</tequila.ingestible.ingestCommandString>
-	<tequila.ingestible.ingestReportString>Пьёт текилу</tequila.ingestible.ingestReportString>
-
-	<whisky.label>Бутылка виски</whisky.label>
-	<whisky.description>Популярный в прошлом, кукурузный алкоголь медного цвета.</whisky.description>
-	<whisky.ingestible.ingestCommandString>Выпить виски</whisky.ingestible.ingestCommandString>
-	<whisky.ingestible.ingestReportString>Пьёт виски</whisky.ingestible.ingestReportString>
-
-	<Moonshine.label>Бутылка самогона</Moonshine.label>
-	<Moonshine.description>Самый обычный самогон, тройной перегонки.</Moonshine.description>
-	<Moonshine.ingestible.ingestCommandString>Выпить самогона</Moonshine.ingestible.ingestCommandString>
-	<Moonshine.ingestible.ingestReportString>Пьёт самогон</Moonshine.ingestible.ingestReportString>
-
-	<Gin.label>Бутылка джина</Gin.label>
-	<Gin.description>Из зернового спирта, с пряным ароматом.</Gin.description>
-	<Gin.ingestible.ingestCommandString>Выпить джина</Gin.ingestible.ingestCommandString>
-	<Gin.ingestible.ingestReportString>Пьёт джин</Gin.ingestible.ingestReportString>
-
-	<Brandy.label>Бутылка бренди</Brandy.label>
-	<Brandy.description>Крепкий алкогольный напиток на основе вина, принято пить из красивого бокала.</Brandy.description>
-	<Brandy.ingestible.ingestCommandString>Выпить бренди</Brandy.ingestible.ingestCommandString>
-	<Brandy.ingestible.ingestReportString>Пьёт бренди</Brandy.ingestible.ingestReportString>
-
-	<Cognac.label>Бутылка коньяка</Cognac.label>
-	<Cognac.description>Коньяк особая разновидность бренди, для истинных ценителей.</Cognac.description>
-	<Cognac.ingestible.ingestCommandString>Выпить коньяка</Cognac.ingestible.ingestCommandString>
-	<Cognac.ingestible.ingestReportString>Пьёт коньяк</Cognac.ingestible.ingestReportString>
-
-	<Kahlua.label>Бутылка ликёра калуа</Kahlua.label>
-	<Kahlua.description>Кофейный ликёр на основе рома с добавлением кукурузного сиропа и ванили.</Kahlua.description>
-	<Kahlua.ingestible.ingestCommandString>Выпить калуа</Kahlua.ingestible.ingestCommandString>
-	<Kahlua.ingestible.ingestReportString>Пьёт каула</Kahlua.ingestible.ingestReportString>
-
-	<Arak.label>Бутылка арака</Arak.label>
-	<Arak.description>Произведённый на анисе и им ароматизированный алкоголь.</Arak.description>
-	<Arak.ingestible.ingestCommandString>Выпить арака</Arak.ingestible.ingestCommandString>
-	<Arak.ingestible.ingestReportString>Пьёт арак</Arak.ingestible.ingestReportString>
-
-	<Applejack.label>Бутылка яблочного бренди</Applejack.label>
-	<Applejack.description>Кальвадос, бывает ещё и грушевый...</Applejack.description>
-	<Applejack.ingestible.ingestCommandString>Выпить яблочного бренди</Applejack.ingestible.ingestCommandString>
-	<Applejack.ingestible.ingestReportString>Пьёт яблочный бренди</Applejack.ingestible.ingestReportString>
-
-	<Patreonbrew.label>Бутылка с алкоголем</Patreonbrew.label>
-	<Patreonbrew.description>Очаровательный напиток от наших сторонников</Patreonbrew.description>
-	<Patreonbrew.ingestible.ingestCommandString>Пить алкоголь</Patreonbrew.ingestible.ingestCommandString>
-	<Patreonbrew.ingestible.ingestReportString>Пьёт алкоголь</Patreonbrew.ingestible.ingestReportString>
-
-	<cider_Crate.label>Ящик яблочного сидра</cider_Crate.label>
-	<cider_Crate.description>75 бутылок вкуснейшего яблочного сидра, бережно упакованных в ящик. Можно распаковать в пивоварне.</cider_Crate.description>
-
-	<rum_Crate.label>Ящик рома</rum_Crate.label>
-	<rum_Crate.description>75 бутылок вкуснейшего рома, бережно упакованных в ящик. Можно распаковать в пивоварне.</rum_Crate.description>
-
-	<Wine_Crate.label>Ящик вина</Wine_Crate.label>
-	<Wine_Crate.description>75 бутылок вкуснейшего вина, бережно упакованных в ящик. Можно распаковать в пивоварне.</Wine_Crate.description>
-
-	<strawberrywine_Crate.label>Ящик столового вина</strawberrywine_Crate.label>
-	<strawberrywine_Crate.description>75 бутылок вкуснейшего столового вина, бережно упакованных в ящик. Можно распаковать в пивоварне.</strawberrywine_Crate.description>
-
-	<saki_Crate.label>Ящик саке</saki_Crate.label>
-	<saki_Crate.description>75 бутылок вкуснейшего саке, бережно упакованных в ящик. Можно распаковать в пивоварне.</saki_Crate.description>
-
-	<vodka_Crate.label>Ящик водки</vodka_Crate.label>
-	<vodka_Crate.description>75 бутылок вкуснейшей водки, бережно упакованных в ящик. Можно распаковать в пивоварне.</vodka_Crate.description>
-
-	<tequila_Crate.label>Ящик текилы</tequila_Crate.label>
-	<tequila_Crate.description>75 бутылок вкуснейшей текилы, бережно упакованных в ящик. Можно распаковать в пивоварне.</tequila_Crate.description>
-
-	<Whiskey_Crate.label>Ящик виски</Whiskey_Crate.label>
-	<Whiskey_Crate.description>75 бутылок вкуснейшего виски, бережно упакованных в ящик. Можно распаковать в пивоварне.</Whiskey_Crate.description>
-
-	<Moonshine_Crate.label>Ящик самогона</Moonshine_Crate.label>
-	<Moonshine_Crate.description>75 бутылок вкуснейшего самогона, бережно упакованных в ящик. Можно распаковать в пивоварне.</Moonshine_Crate.description>
-
-	<Gin_Crate.label>Ящик джина</Gin_Crate.label>
-	<Gin_Crate.description>75 бутылок вкуснейшего джина, бережно упакованных в ящик. Можно распаковать в пивоварне.</Gin_Crate.description>
-
-	<Brandy_Crate.label>Ящик бренди</Brandy_Crate.label>
-	<Brandy_Crate.description>75 бутылок вкуснейшего бренди, бережно упакованных в ящик. Можно распаковать в пивоварне.</Brandy_Crate.description>
-
-	<Cognac_Crate.label>Ящик коньяка</Cognac_Crate.label>
-	<Cognac_Crate.description>75 бутылок вкуснейшего коньяка, бережно упакованных в ящик. Можно распаковать в пивоварне.</Cognac_Crate.description>
-
-	<Kahlua_Crate.label>Ящик ликёра калуа</Kahlua_Crate.label>
-	<Kahlua_Crate.description>75 бутылок вкуснейшего ликёра калуа, бережно упакованных в ящик. Можно распаковать в пивоварне.</Kahlua_Crate.description>
-
-	<Arak_Crate.label>Ящик арака</Arak_Crate.label>
-	<Arak_Crate.description>75 бутылок вкуснейшего арака, бережно упакованных в ящик. Можно распаковать в пивоварне.</Arak_Crate.description>
-
-	<Applejack_Crate.label>Ящик яблочного бренди</Applejack_Crate.label>
-	<Applejack_Crate.description>75 бутылок вкуснейшего яблочного бренди, бережно упакованных в ящик. Можно распаковать в пивоварне.</Applejack_Crate.description>
-
-	<Patreonbrew_Crate.label>Ящик спиртного напитка</Patreonbrew_Crate.label>
-	<Patreonbrew_Crate.description>75 бутылок спиртного напитка, бережно упакованных в ящик. Можно распаковать в пивоварне.</Patreonbrew_Crate.description>
 
 </LanguageData>

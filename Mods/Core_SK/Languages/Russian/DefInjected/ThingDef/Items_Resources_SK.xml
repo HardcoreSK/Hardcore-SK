@@ -159,6 +159,10 @@
 	<BambooPlank.description>Обработанные стебли бамбука, скреплённые вместе для удобного хранения и применения в строительстве.</BambooPlank.description>
 	<BambooPlank.stuffProps.stuffAdjective>бамбука</BambooPlank.stuffProps.stuffAdjective>
 
+	<RedWoodLog.label>красное дерево</RedWoodLog.label>
+	<RedWoodLog.description>Древесина из красного дерева и секвойи или других волокнистых растений. Красная, ценная и более огнестойкая, чем обычная древесина. Полезна для строительства конструкций, оружия и даже простого протезирования. Сырые палки дерева можно использовать в качестве оружия в крайнем случае.</RedWoodLog.description>
+	<RedWoodLog.stuffProps.stuffAdjective>красное дерево</RedWoodLog.stuffProps.stuffAdjective>
+
 	<RedWoodPlank.label>Доски из красного дерева</RedWoodPlank.label>
 	<RedWoodPlank.description>Доски, сделанные из красного дерева. Используются для постройки структур, создания оружия и простых протезов.</RedWoodPlank.description>
 	<RedWoodPlank.stuffProps.stuffAdjective>досок красного дерева</RedWoodPlank.stuffProps.stuffAdjective>
@@ -194,11 +198,6 @@
 	<Flaxcloth.label>Льняная ткань</Flaxcloth.label>
 	<Flaxcloth.description>Мягкая, лёгкая и прочная ткань для изготовления одежды.</Flaxcloth.description>
 	<Flaxcloth.stuffProps.stuffAdjective>льняной ткани</Flaxcloth.stuffProps.stuffAdjective>
-
-	<!--=============== Medicine ====================-->
-
-	<HerbMedicine.label>Полевые медикаменты</HerbMedicine.label>
-	<HerbMedicine.description>Обыкновенные полевые медикаменты, сделанные из хельгериума.</HerbMedicine.description>
 
 	<!--=============== Glass ====================-->
 
@@ -251,18 +250,6 @@
 	<Chemfuel.label>Химическое топливо</Chemfuel.label>
 	<Chemfuel.description>Жидкое горючее химическое соединение. Используется в качестве топлива для ракет, сырья для изготовления пороха и напалма.</Chemfuel.description>
 
-	<ElectronicComponents.label>Электронные компоненты</ElectronicComponents.label>
-	<ElectronicComponents.description>Электронные компоненты используются для крафта продвинутых электронных приспособлений.</ElectronicComponents.description>
-
-	<Electronics.label>Набор интегральных микросхем</Electronics.label>
-	<Electronics.description>Интегральные микросхемы, сделанные из электронных компонентов. Используются для постройки наиболее продвинутых структур.</Electronics.description>
-
-	<Microchips.label>Набор микрочипов</Microchips.label>
-	<Microchips.description>Микрочипы, сделанные из электронных компонентов. Используются для постройки наиболее продвинутых структур.</Microchips.description>
-
-	<BioMicrochips.label>Био микрочипы</BioMicrochips.label>
-	<BioMicrochips.description>Биологические микрочипы или, как их чаще называют DNA microarrays, это один из новейших инструментов. Это организованное размещение молекул ДНК на специальном носителе. Чипы биологические близки к чипам электронным, которые и базируются на кремниевых пластинах. Микроскопический размер биочипа позволяет размещать на небольшой площади огромное количество разных молекул ДНК и считывать с этой площади информация с помощью флуоресцентного микроскопа или специального лазерного устройства для чтения.</BioMicrochips.description>
-
 	<Biomatter.label>Биоматерия</Biomatter.label>
 	<Biomatter.description>Биоматерия, полученная из человеческих тел. Используется для выращивания органов.</Biomatter.description>
 
@@ -297,6 +284,10 @@
 	<ConcreteResource.label>Бетон</ConcreteResource.label>
 	<ConcreteResource.description>Широко используется в строительстве.</ConcreteResource.description>
 	<ConcreteResource.stuffProps.stuffAdjective>бетона</ConcreteResource.stuffProps.stuffAdjective>
+
+	<ReinforcedConcrete.label>железобетонные блоки</ReinforcedConcrete.label>
+	<ReinforcedConcrete.description>Бетон на палочке - специальные арматурные штыри, залитые бетоном в определённой форме.</ReinforcedConcrete.description>
+	<ReinforcedConcrete.stuffProps.stuffAdjective>железобетонных блоков</ReinforcedConcrete.stuffProps.stuffAdjective>
 
 	<Peat.label>Торф</Peat.label>
 	<Peat.description>Горючее полезное ископаемое и агроруда; образовано скоплением остатков мхов, подвергшихся неполному разложению в условиях болот. Для болота характерно отложение на поверхности почвы неполно разложившегося органического вещества, превращающегося в дальнейшем в торф.</Peat.description>
@@ -411,12 +402,5 @@
 	<Ceramics.label>Керамика</Ceramics.label>
 	<Ceramics.description>Глазурированная керамика, созданная с помощью высоких температур печи. Гладкий, красивый, но хрупкий материал.</Ceramics.description>
 	<Ceramics.stuffProps.stuffAdjective>керамики</Ceramics.stuffProps.stuffAdjective>
-
-	<RedWoodLog.label>красное дерево</RedWoodLog.label>
-	<RedWoodLog.description>Древесина из красного дерева и секвойи или других волокнистых растений. Красная, ценная и более огнестойкая, чем обычная древесина. Полезна для строительства конструкций, оружия и даже простого протезирования. Сырые палки дерева можно использовать в качестве оружия в крайнем случае.</RedWoodLog.description>
-	<RedWoodLog.stuffProps.stuffAdjective>красное дерево</RedWoodLog.stuffProps.stuffAdjective>
-
-	<FishingBait.label>Приманка для рыбалки</FishingBait.label>
-	<FishingBait.description>Приманки для рыбной ловли улучшают результаты промысла.</FishingBait.description>
 
 </LanguageData>
