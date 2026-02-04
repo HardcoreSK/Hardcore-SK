@@ -77,8 +77,9 @@
     <xpath>Defs/ThingDef[@Name="StoneBlocksBase"]</xpath>
     <value>
 		<graphicData>
-			<texPath>Things/Item/Resource/Blocks/Blocks</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Resource/Blocks</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>(1.2,1.2)</drawSize>
 		</graphicData>
 		<statBases Merge="true">
 			<MarketValue>1.9</MarketValue>
