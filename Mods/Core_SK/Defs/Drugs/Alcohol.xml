@@ -10,7 +10,7 @@
 			<HediffDef>Cirrhosis</HediffDef>
 			<HediffDef>ChemicalDamageModerate</HediffDef>
 		</descriptionHyperlinks>
-		<equippedAngleOffset>-150</equippedAngleOffset>
+		<!--<equippedAngleOffset>-150</equippedAngleOffset>-->
 		<rotatable>false</rotatable>
 		<stackLimit>25</stackLimit>
 		<statBases>
@@ -57,7 +57,7 @@
 				</li> -->
 			</outcomeDoers>
 		</ingestible>
-		<equipmentType>Primary</equipmentType>
+		<!--<equipmentType>Primary</equipmentType>-->
 		<techLevel>Neolithic</techLevel>
 		<comps>
 			<li Class="CompProperties_Drug">
@@ -68,14 +68,14 @@
 				<needLevelOffset>1</needLevelOffset>
 				<listOrder>10</listOrder>
 			</li>
-			<li>
+			<!--<li>
 				<compClass>CompEquippable</compClass>
 			</li>
 			<li>
 				<compClass>CompQuality</compClass>
-			</li>
+			</li>-->
 		</comps>
-		<tools>
+		<!--<tools>
 			<li Class="CombatExtended.ToolCE">
 				<capacities>
 					<li>Blunt</li>
@@ -86,8 +86,8 @@
 				<armorPenetrationBlunt>0.338</armorPenetrationBlunt>
 				<linkedBodyPartsGroup>Base</linkedBodyPartsGroup>
 			</li>
-		</tools>
-		<allowedArchonexusCount>40</allowedArchonexusCount>
+		</tools>-->
+		<allowedArchonexusCount>75</allowedArchonexusCount>
 		<!-- <modExtensions>
 			<li Class="UniversalFermenterSK.HediffByQuality">
 				<qualityHediffs>
@@ -101,14 +101,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="LiquorCloset">
-		<defName>cider</defName>
+		<defName>Alcohol_Cider</defName>
 		<label>Apple cider</label>
 		<thingCategories>
 			<li>Alcohol_Bottles</li>
 		</thingCategories>
 		<description>A bottle of sweet alcohol made from apples.</description>
 		<graphicData>
-			<texPath>Things/Item/cider</texPath>
+			<texPath>Things/Item/Drug/Alcohol/Cider</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -117,14 +117,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="LiquorCloset">
-		<defName>rum</defName>
+		<defName>Alcohol_Rum</defName>
 		<label>Rum</label>
 		<thingCategories>
 			<li>Alcohol_Bottles</li>
 		</thingCategories>
 		<description>A bottle filled with alcoholic rum. Why is the rum gone?</description>
 		<graphicData>
-			<texPath>Things/Item/rum</texPath>
+			<texPath>Things/Item/Drug/Alcohol/Rum</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -133,14 +133,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="LiquorCloset">
-		<defName>Wine</defName>
+		<defName>Alcohol_Wine</defName>
 		<label>Wine</label>
 		<thingCategories>
 			<li>Alcohol_Bottles</li>
 		</thingCategories>
 		<description>A sweet alcohol from grapes. From private Reserves often stolen and smuggled.</description>
 		<graphicData>
-			<texPath>Things/Item/Wine</texPath>
+			<texPath>Things/Item/Drug/Alcohol/Wine</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -149,14 +149,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="LiquorCloset">
-		<defName>strawberrywine</defName>
+		<defName>Alcohol_BerryWine</defName>
 		<label>Berry Wine</label>
 		<thingCategories>
 			<li>Alcohol_Bottles</li>
 		</thingCategories>
 		<description>A bottle of sweet, pinkish alcohol made from strawberries.</description>
 		<graphicData>
-			<texPath>Things/Item/StrawberryWine</texPath>
+			<texPath>Things/Item/Drug/Alcohol/BerryWine</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -165,14 +165,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="LiquorCloset">
-		<defName>saki</defName>
+		<defName>Alcohol_Sake</defName>
 		<label>Sake</label>
 		<thingCategories>
 			<li>Alcohol_Bottles</li>
 		</thingCategories>
 		<description>A bottle of crisp, refreshing alcohol made from rice.</description>
 		<graphicData>
-			<texPath>Things/Item/Sake</texPath>
+			<texPath>Things/Item/Drug/Alcohol/Sake</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -181,14 +181,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="LiquorCloset">
-		<defName>vodka</defName>
+		<defName>Alcohol_Vodka</defName>
 		<label>Vodka</label>
 		<thingCategories>
 			<li>Alcohol_Bottles</li>
 		</thingCategories>
 		<description>A bottle of clear, potato-based alcohol.</description>
 		<graphicData>
-			<texPath>Things/Item/vodka</texPath>
+			<texPath>Things/Item/Drug/Alcohol/Vodka</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -197,14 +197,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="LiquorCloset">
-		<defName>tequila</defName>
+		<defName>Alcohol_Tequila</defName>
 		<label>Tequila</label>
 		<thingCategories>
 			<li>Alcohol_Bottles</li>
 		</thingCategories>
 		<description>A potent liquor made of agave. It has a picture of what looks like a naked and inebriated female cat person on the bottle. Once discovered by a certain Orassan, she quickly perfected the recipe and it became a very popular drink on Orassia and developed an even more storied reputation.</description>
 		<graphicData>
-			<texPath>Things/Item/Tequila</texPath>
+			<texPath>Things/Item/Drug/Alcohol/Tequila</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -213,14 +213,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="LiquorCloset">
-		<defName>whisky</defName>
+		<defName>Alcohol_Whisky</defName>
 		<label>Whiskey</label>
 		<thingCategories>
 			<li>Alcohol_Bottles</li>
 		</thingCategories>
 		<description>A bottle of golden, corn-based alcohol.</description>
 		<graphicData>
-			<texPath>Things/Item/whiskey</texPath>
+			<texPath>Things/Item/Drug/Alcohol/Whiskey</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -229,14 +229,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="LiquorCloset">
-		<defName>Moonshine</defName>
+		<defName>Alcohol_Moonshine</defName>
 		<label>Moonshine</label>
 		<thingCategories>
 			<li>Alcohol_Bottles</li>
 		</thingCategories>
 		<description>A bottle of alcohol</description>
 		<graphicData>
-			<texPath>Things/Item/whiskey</texPath>
+			<texPath>Things/Item/Drug/Alcohol/Whiskey</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -245,14 +245,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="LiquorCloset">
-		<defName>Gin</defName>
+		<defName>Alcohol_Gin</defName>
 		<label>Gin</label>
 		<thingCategories>
 			<li>Alcohol_Bottles</li>
 		</thingCategories>
 		<description>A bottle of alcohol</description>
 		<graphicData>
-			<texPath>Things/Item/whiskey</texPath>
+			<texPath>Things/Item/Drug/Alcohol/Whiskey</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -261,14 +261,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="LiquorCloset">
-		<defName>Brandy</defName>
+		<defName>Alcohol_Brandy</defName>
 		<label>Brandy</label>
 		<thingCategories>
 			<li>Alcohol_Bottles</li>
 		</thingCategories>
 		<description>A bottle of alcohol</description>
 		<graphicData>
-			<texPath>Things/Item/whiskey</texPath>
+			<texPath>Things/Item/Drug/Alcohol/Whiskey</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -277,14 +277,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="LiquorCloset">
-		<defName>Cognac</defName>
+		<defName>Alcohol_Cognac</defName>
 		<label>Cognac</label>
 		<thingCategories>
 			<li>Alcohol_Bottles</li>
 		</thingCategories>
 		<description>A bottle of alcohol</description>
 		<graphicData>
-			<texPath>Things/Item/whiskey</texPath>
+			<texPath>Things/Item/Drug/Alcohol/Whiskey</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -293,14 +293,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="LiquorCloset">
-		<defName>Kahlua</defName>
+		<defName>Alcohol_Kahlua</defName>
 		<label>Kahlua</label>
 		<thingCategories>
 			<li>Alcohol_Bottles</li>
 		</thingCategories>
 		<description>A bottle of alcohol</description>
 		<graphicData>
-			<texPath>Things/Item/whiskey</texPath>
+			<texPath>Things/Item/Drug/Alcohol/Whiskey</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -309,14 +309,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="LiquorCloset">
-		<defName>Arak</defName>
+		<defName>Alcohol_Arak</defName>
 		<label>Arak</label>
 		<thingCategories>
 			<li>Alcohol_Bottles</li>
 		</thingCategories>
 		<description>A bottle of alcohol</description>
 		<graphicData>
-			<texPath>Things/Item/whiskey</texPath>
+			<texPath>Things/Item/Drug/Alcohol/Whiskey</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -325,30 +325,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="LiquorCloset">
-		<defName>Applejack</defName>
+		<defName>Alcohol_Applejack</defName>
 		<label>Applejack</label>
 		<thingCategories>
 			<li>Alcohol_Bottles</li>
 		</thingCategories>
 		<description>A bottle of alcohol</description>
 		<graphicData>
-			<texPath>Things/Item/whiskey</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>9</MarketValue>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="LiquorCloset">
-		<defName>Patreonbrew</defName>
-		<label>Patreonbrew</label>
-		<thingCategories>
-			<li>Alcohol_Bottles</li>
-		</thingCategories>
-		<description>A bottle of charming, supporter-based alcohol.</description>
-		<graphicData>
-			<texPath>Things/Item/Wine</texPath>
+			<texPath>Things/Item/Drug/Alcohol/Whiskey</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>

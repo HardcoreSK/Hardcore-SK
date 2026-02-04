@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="AlcoholCrateBase" ParentName="SK_ResourceBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>First</resourceReadoutPriority>
+		<statBases>
+			<Beauty>-1</Beauty>
+			<MaxHitPoints>75</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<MarketValue>650</MarketValue>
+		 	<Mass>25</Mass>
+		</statBases>
+		<stackLimit>5</stackLimit>
+		<thingCategories>
+			<li>Alcohol_Crates</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="AlcoholCrateBase">
+		<defName>Crate_Cider</defName>
+		<label>crate of apple cider</label>
+		<description>A crate containing 75 bottles of apple cider. The packaging bears the manufacturer's logo - GG.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Crate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="AlcoholCrateBase">
+		<defName>Crate_Rum</defName>
+		<label>crate of rum</label>
+		<description>A crate containing 75 bottles of rum. The packaging bears the manufacturer's logo - GuiltyHollow.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Crate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="AlcoholCrateBase">
+		<defName>Crate_Wine</defName>
+		<label>crate of wine</label>
+		<description>A crate containing 75 bottles of wine. The packaging bears the manufacturer's logo - Sidfu.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Crate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="AlcoholCrateBase">
+		<defName>Crate_BerryWine</defName>
+		<label>crate of berry wine</label>
+		<description>A crate containing 75 bottles of berry wine. The packaging bears the manufacturer's logo - Laurens.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Crate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="AlcoholCrateBase">
+		<defName>Crate_Sake</defName>
+		<label>crate of sake</label>
+		<description>A crate containing 75 bottles of sake. The packaging bears the manufacturer's logo - Owlchemist.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Crate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="AlcoholCrateBase">
+		<defName>Crate_Vodka</defName>
+		<label>crate of vodka</label>
+		<description>A crate containing 75 bottles of vodka. The packaging bears the manufacturer's logo - Skyarkhangel.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Crate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="AlcoholCrateBase">
+		<defName>Crate_Tequila</defName>
+		<label>crate of tequila</label>
+		<description>A crate containing 75 bottles of tequila. The packaging bears the manufacturer's logo - Szara Kryik.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Crate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="AlcoholCrateBase">
+		<defName>Crate_Whiskey</defName>
+		<label>crate of whiskey</label>
+		<description>A crate containing 75 bottles of whiskey. The packaging bears the manufacturer's logo - Adenia.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Crate</texPath>
+		</graphicData>
+	</ThingDef>
+    
+    <!--Patreon stuff-->
+
+	<ThingDef ParentName="AlcoholCrateBase">
+		<defName>Crate_Moonshine</defName>
+		<label>crate of moonshine</label>
+		<description>A crate containing 75 bottles of moonshine. The packaging bears the manufacturer's logo - Ky6000.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Crate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="AlcoholCrateBase">
+		<defName>Crate_Gin</defName>
+		<label>crate of gin</label>
+		<description>A crate containing 75 bottles of gin. The packaging bears the manufacturer's logo - NiciusB.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Crate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="AlcoholCrateBase">
+		<defName>Crate_Brandy</defName>
+		<label>crate of brandy</label>
+		<description>A crate containing 75 bottles of brandy. The packaging bears the manufacturer's logo - Puffamagicdragon.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Crate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="AlcoholCrateBase">
+		<defName>Crate_Cognac</defName>
+		<label>crate of cognac</label>
+		<description>A crate containing 75 bottles of cognac. The packaging bears the manufacturer's logo - Kiko20.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Crate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="AlcoholCrateBase">
+		<defName>Crate_Kahlua</defName>
+		<label>crate of kahlua</label>
+		<description>A crate containing 75 bottles of kahlua. The packaging bears the manufacturer's logo - Fsempri.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Crate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="AlcoholCrateBase">
+		<defName>Crate_Arak</defName>
+		<label>crate of arak</label>
+		<description>A crate containing 75 bottles of arak. The packaging bears the manufacturer's logo - sKeptr.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Crate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="AlcoholCrateBase">
+		<defName>Crate_Applejack</defName>
+		<label>crate of applejack</label>
+		<description>A crate containing 75 bottles of applejack. The packaging bears the manufacturer's logo - Lore.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Crate</texPath>
+		</graphicData>
+	</ThingDef>
+
+</Defs>
