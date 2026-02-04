@@ -2,10 +2,16 @@
 <loadFolders>
     <default>
         <li>/</li>
+        
         <li IfModActive="Ludeon.Rimworld.Royalty">Royalty</li>
+        
         <li IfModActive="Ludeon.RimWorld.Ideology">Ideology</li>
+        
         <li IfModActive="Ludeon.Rimworld.Biotech">Biotech</li>
+        <li IfModNotActive="Ludeon.Rimworld.Biotech">BiotechDisabled</li>
+        
         <li IfModActive="Ludeon.Rimworld.Anomaly">Anomaly</li>
+        
         <li IfModActive="Ludeon.Rimworld.Odyssey">Odyssey</li>
     </default>
 </loadFolders>

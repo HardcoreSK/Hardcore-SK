@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[
+            defName="Gun_EmpLauncher" or 
+            defName="Bullet_EMPLauncher" or 
+            defName="Gun_SmokeLauncher" or 
+            defName="Bullet_SmokeLauncher" or
+            defName="Turret_FoamTurret" or
+            defName="Gun_TurretFoam" or
+            defName="Turret_RocketswarmLauncher" or
+            defName="Proj_Rocket" or
+            defName="Gun_RocketswarmLauncher"
+        ]</xpath>
+	</Operation>
+
+</Patch>
