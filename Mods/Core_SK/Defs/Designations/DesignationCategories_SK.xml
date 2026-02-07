@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<DesignationCategoryDef>
+		<defName>FoodProduction</defName>
+		<label>Cooking</label>
+		<order>511</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>Accessories</defName>
+		<label>Accessories</label>
+		<order>460</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>OutsideFloors</defName>
+		<label>Special Floors</label>
+		<order>295</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_RemoveFloor</li>
+			<li>Designator_SmoothFloors</li>
+			<li>Designator_PaintFloor</li>
+			<li>Designator_RemoveFloorPaint</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>NaturalFloors</defName>
+		<label>Natural Floors</label>
+		<order>290</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_RemoveFloor</li>
+			<li>Designator_SmoothFloors</li>
+			<li>Designator_PaintFloor</li>
+			<li>Designator_RemoveFloorPaint</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
+    <DesignationCategoryDef>
+        <defName>SK_category_terraform</defName>
+        <label>Terraform</label>
+        <order>187</order>
+        <specialDesignatorClasses>
+            <li>Designator_Cancel</li>
+            <li>Designator_RemoveFloor</li>
+            <li>Designator_SmoothSurface</li>
+            <li>SK.Designator_CollectSand</li>
+            <li>SK.Designator_CollectClay</li>
+            <li>SK.Designator_CollectPeat</li>
+            <li>SK.Designator_CollectCrushedstone</li>
+        </specialDesignatorClasses>
+    </DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>ASFstorage</defName>
+		<label>Storage</label>
+		<order>503</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>LWM_DS_Storage</defName>
+		<label>(Old) Storage</label>
+		<order>1</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+</Defs>

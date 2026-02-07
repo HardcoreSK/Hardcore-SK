@@ -4,21 +4,6 @@
 	<!-- Structure -->
 
 	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Walls</defName>
-		<label>Walls</label>
-		<description>Strong walls that protect your buildings from invasion and surrounding threats.</description>
-		<defNames>
-			<li>Wall</li>
-			<li>Window</li>
-			<li>ClutterSilverWall</li>
-			<li>ClutterUWallLight</li>
-			<li MayRequire="Dubwise.Rimatomics">RadiationShielding</li>
-		</defNames>
-		<designationCategory>Structure</designationCategory>
-		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Doors</defName>
 		<label>Doors</label>
 		<description>Simple doors that allow you to control access between different parts of your colony.</description>
@@ -31,6 +16,7 @@
 		</defNames>
 		<designationCategory>Structure</designationCategory>
 		<debug>false</debug>
+		<order>10</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -46,6 +32,23 @@
 		</defNames>
 		<designationCategory>Structure</designationCategory>
 		<debug>false</debug>
+		<order>11</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Walls</defName>
+		<label>Walls</label>
+		<description>Strong walls that protect your buildings from invasion and surrounding threats.</description>
+		<defNames>
+			<li>Wall</li>
+			<li>Window</li>
+			<li>ClutterSilverWall</li>
+			<li>ClutterUWallLight</li>
+			<li MayRequire="Dubwise.Rimatomics">RadiationShielding</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -57,6 +60,7 @@
 		</defNames>
 		<designationCategory>Structure</designationCategory>
 		<debug>false</debug>
+		<order>30</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -64,21 +68,17 @@
 		<label>bridges</label>
 		<description>Water crossing bridges.</description>
 		<defNames>
-			<li>Boardwalk</li>
 			<li>Bridge</li>
-			<li>DeepBridge</li>
-			<li>Boardwalk_Stone</li>
-			<li>Bridge_Stone</li>
-			<li>DeepBridge_Stone</li>
+			<li MayRequire="ludeon.rimworld.odyssey">HeavyBridge</li>
 		</defNames>
 		<designationCategory>Structure</designationCategory>
 		<debug>false</debug>
+		<order>40</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<!-- Power -->
 
 	<ArchitectSense.DesignationSubCategoryDef>
-		<debug>false</debug>
 		<defName>SubCategory_PowerConduit</defName>
 		<label>power conduits</label>
 		<description>A set of electrical cables for moving power around.</description>
@@ -89,10 +89,11 @@
 			<li>HiddenConduit</li>
 		</defNames>
 		<designationCategory>Power</designationCategory>
+		<debug>false</debug>
+		<order>10</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
-		<debug>false</debug>
 		<defName>SubCategory_Switchers</defName>
 		<label>switchers</label>
 		<description>Switches power on/off.</description>
@@ -102,10 +103,11 @@
 			<li>TimerSwitch</li>
 		</defNames>
 		<designationCategory>Power</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
-		<debug>false</debug>
 		<defName>SubCategory_Battery</defName>
 		<label>batteries</label>
 		<description>Stores electricity when there is excess power and yields it when there is not.</description>
@@ -114,10 +116,11 @@
 			<li>FissionBattery</li>
 		</defNames>
 		<designationCategory>Power</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
-		<debug>false</debug>
 		<defName>SubCategory_RenewablePower</defName>
 		<label>renewable power</label>
 		<description>Use power from renewable resourses.</description>
@@ -136,10 +139,11 @@
 			<li>ThermoelectricGenerator</li>
 		</defNames>
 		<designationCategory>Power</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
-		<debug>false</debug>
 		<defName>SubCategory_ConvectionalPower</defName>
 		<label>convectional power</label>
 		<description>Use power generation from Convectional resources of this planet.</description>
@@ -153,10 +157,11 @@
 			<li>AntimatterReactor</li>
 		</defNames>
 		<designationCategory>Power</designationCategory>
+		<debug>false</debug>
+		<order>50</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
-		<debug>false</debug>
 		<defName>SubCategory_PlasmaPower</defName>
 		<label>plasma power</label>
 		<description>Build eco-friendy plasma power plants.</description>
@@ -167,6 +172,8 @@
 			<li>XenonIonTurbine</li>
 		</defNames>
 		<designationCategory>Power</designationCategory>
+		<debug>false</debug>
+		<order>60</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<!-- Furniture -->
@@ -194,7 +201,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
-		<order>1</order>
+		<order>10</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -211,7 +218,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
-		<order>2</order>
+		<order>20</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -229,7 +236,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
-		<order>3</order>
+		<order>30</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -244,7 +251,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
-		<order>4</order>
+		<order>40</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -257,7 +264,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
-		<order>5</order>
+		<order>50</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -275,7 +282,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
-		<order>6</order>
+		<order>60</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -294,7 +301,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
-		<order>7</order>
+		<order>70</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -313,7 +320,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
-		<order>8</order>
+		<order>80</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Ludeon.RimWorld.Royalty">
@@ -327,7 +334,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
-		<order>9</order>
+		<order>90</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -341,7 +348,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
-		<order>10</order>
+		<order>100</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -355,12 +362,10 @@
 			<li>Table2x2c</li>
 			<li>Table2x4c</li>
 			<li>Table3x3c</li>
-			<li MayRequire="ludeon.rimworld.biotech">SchoolDesk</li>
-			<li MayRequire="ludeon.rimworld.biotech">SchoolDeskTribal</li>
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
-		<order>11</order>
+		<order>110</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -376,7 +381,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
-		<order>12</order>
+		<order>120</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -390,7 +395,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
-		<order>13</order>
+		<order>130</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -405,7 +410,7 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
-		<order>14</order>
+		<order>140</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -419,41 +424,25 @@
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
-		<order>15</order>
+		<order>150</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
-	<!-- Accessories -->
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_PlantPots</defName>
-		<label>Plant pots</label>
-		<description>A plant pot can hold decorative flowers to improve the mood of people nearby.</description>
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>SubCategory_SchoolStuff</defName>
+		<label>School Inventory</label>
+		<description>Teaching is the only way to preserve knowledge (except direct knowledge injections to the brain).</description>
 		<defNames>
-			<li>TuskPot</li>
-			<li>PlantPot</li>
-			<li>PentaPlantPot</li>
-			<li>DecoratedPot</li>
-			<li>ElectricTreePot</li>
-			<li MayRequire="ludeon.rimworld.ideology">PlantPot_Bonsai</li>
+			<li>BlackboardTribal</li>
+			<li>SchoolDeskTribal</li>
+			<li>Blackboard</li>
+			<li>SchoolDesk</li>
 		</defNames>
-		<designationCategory>Accessories</designationCategory>
+		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
+		<order>160</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Pallets</defName>
-		<label>Warehouse Storage</label>
-		<description>Uncategorized industrial storage which doesn't protect contents from the elements.</description>
-		<defNames>
-			<li>PalletSmall</li>
-			<li>SK_Pallet</li>
-			<li>SK_DeepStorage_Skip</li>
-			<li>SK_VeryBigShelf</li>
-			<li>PalletRack</li>
-		</defNames>
-		<designationCategory>ASFstorage</designationCategory>
-		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
+	<!-- Storage -->
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Containers</defName>
@@ -468,63 +457,7 @@
 		</defNames>
 		<designationCategory>ASFstorage</designationCategory>
 		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_FoodContainers</defName>
-		<label>Food/drug Storage</label>
-		<description>Stores or preserves food and drugs.</description>
-		<defNames>
-			<li>Pot</li>
-			<li>RootCellar</li>
-			<li>SK_Meat_Hook</li>
-			<li>TrayRackSingle</li>
-			<li>BarShelf</li>
-			<li>SK_Medicine_Cabinet</li>
-			<li>FoodDisplayCounter</li>
-		</defNames>
-		<designationCategory>ASFstorage</designationCategory>
-		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_ApparelStorage</defName>
-		<label>Apparel and textiles</label>
-		<description>Haulers carry apparel here for storage.</description>
-		<defNames>
-			<li>Commode</li>
-			<li>TextileRack</li>
-		</defNames>
-		<designationCategory>ASFstorage</designationCategory>
-		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_AmmoContainers</defName>
-		<label>arsenal</label>
-		<description>Stores and safeguard weapons and ammo.</description>
-		<defNames>
-			<li>SK_WeaponsCabinet</li>
-			<li>Storage_HazMatContainer</li>
-			<li>Storage_ExplosiveContainer</li>
-			<li>SK_WeaponsLocker</li>
-			<li>ClutterLockerA</li>
-		</defNames>
-		<designationCategory>ASFstorage</designationCategory>
-		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Shelfs</defName>
-		<label>Barn/animal Storage</label>
-		<description>Stores everything from seeds to feed.</description>
-		<defNames>
-			<li>FabricHamperSingle</li>
-			<li>FeedingBowl</li>
-			<li>SK_Hayloft</li>
-		</defNames>
-		<designationCategory>ASFstorage</designationCategory>
-		<debug>false</debug>
+		<order>10</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -541,11 +474,90 @@
 		</defNames>
 		<designationCategory>ASFstorage</designationCategory>
 		<debug>false</debug>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Pallets</defName>
+		<label>Warehouse Storage</label>
+		<description>Uncategorized industrial storage which doesn't protect contents from the elements.</description>
+		<defNames>
+			<li>PalletSmall</li>
+			<li>SK_Pallet</li>
+			<li>SK_DeepStorage_Skip</li>
+			<li>SK_VeryBigShelf</li>
+			<li>PalletRack</li>
+		</defNames>
+		<designationCategory>ASFstorage</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ApparelStorage</defName>
+		<label>Apparel and textiles</label>
+		<description>Haulers carry apparel here for storage.</description>
+		<defNames>
+			<li>Commode</li>
+			<li>TextileRack</li>
+		</defNames>
+		<designationCategory>ASFstorage</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_AmmoContainers</defName>
+		<label>Arsenal</label>
+		<description>Stores and safeguard weapons and ammo.</description>
+		<defNames>
+			<li>SK_WeaponsCabinet</li>
+			<li>Storage_HazMatContainer</li>
+			<li>Storage_ExplosiveContainer</li>
+			<li>SK_WeaponsLocker</li>
+			<li>ClutterLockerA</li>
+		</defNames>
+		<designationCategory>ASFstorage</designationCategory>
+		<debug>false</debug>
+		<order>50</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_FoodContainers</defName>
+		<label>Food Storage</label>
+		<description>Stores or preserves food and drugs.</description>
+		<defNames>
+			<li>Pot</li>
+			<li>RootCellar</li>
+			<li>SK_Meat_Hook</li>
+			<li>TrayRackSingle</li>
+			<li>BarShelf</li>
+			<li>SK_Medicine_Cabinet</li>
+			<li>FoodDisplayCounter</li>
+		</defNames>
+		<designationCategory>ASFstorage</designationCategory>
+		<debug>false</debug>
+		<order>60</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Shelfs</defName>
+		<label>Barn Storage</label>
+		<description>Stores everything from seeds to feed.</description>
+		<defNames>
+			<li>FabricHamperSingle</li>
+			<li>EggBox</li>
+			<li>FeedingBowl</li>
+			<li>SK_Hayloft</li>
+		</defNames>
+		<designationCategory>ASFstorage</designationCategory>
+		<debug>false</debug>
+		<order>70</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Refrigerators</defName>
-		<label>refrigerators</label>
+		<label>Refrigerators</label>
 		<description>Uses electricity to preserve food.</description>
 		<defNames>
 			<li>RimFridge_Refrigerator</li>
@@ -556,8 +568,10 @@
 		</defNames>
 		<designationCategory>ASFstorage</designationCategory>
 		<debug>false</debug>
+		<order>80</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
+	<!-- Accessories -->
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Lights</defName>
@@ -575,8 +589,23 @@
 		</defNames>
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
+		<order>10</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>SubCategory_DarkLamps</defName>
+		<label>dark lamps</label>
+		<description>Lamp that lights an area with dark light.</description>
+		<defNames>
+			<li>Darktorch</li>
+			<li>DarktorchFungus</li>
+			<li>Darktorch</li>
+			<li>DarklightBrazier</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>11</order>
+	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Lamps</defName>
@@ -592,20 +621,7 @@
 		</defNames>
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
-		<defName>SubCategory_DarkLamps</defName>
-		<label>dark lamps</label>
-		<description>Lamp that lights an area with dark light.</description>
-		<defNames>
-			<li>Darktorch</li>
-			<li>DarktorchFungus</li>
-			<li>Darktorch</li>
-			<li>DarklightBrazier</li>
-		</defNames>
-		<designationCategory>Accessories</designationCategory>
-		<debug>false</debug>
+		<order>20</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -621,6 +637,7 @@
 		</defNames>
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
+		<order>21</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -632,6 +649,7 @@
 		</defNames>
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
+		<order>30</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<!--
@@ -650,7 +668,6 @@
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
-	-->
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_QuantumRelay</defName>
@@ -687,7 +704,21 @@
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
+	-->
 
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_DoorMats</defName>
+		<label>Door mats</label>
+		<description>A doormat to clean your feet.</description>
+		<defNames>
+			<li>DoorMat</li>
+			<li>LT_DoorMatRed</li>
+			<li>LT_DoorMatBigRed</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
+	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_AncientRugs</defName>
@@ -701,36 +732,24 @@
 		</defNames>
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
+		<order>50</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_DoorMats</defName>
-		<label>Door mats</label>
-		<description>A doormat to clean your feet.</description>
+		<defName>SubCategory_ModernRugs</defName>
+		<label>Modern mats</label>
+		<description>A modern mats gives the room a modern style.</description>
 		<defNames>
-			<li>DoorMat</li>
-			<li>LT_DoorMatRed</li>
-			<li>LT_DoorMatBigRed</li>
+			<li>FutstentRug</li>
+			<li>StepRug</li>
+			<li>SquareCozyRug</li>
+			<li>SquareCozyRugB</li>
+			<li>RoundCozyRug</li>
+			<li>RoundCozyRugB</li>
 		</defNames>
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_SquareRugs</defName>
-		<label>Square rugs</label>
-		<description>A small square area rug.</description>
-		<defNames>
-			<li>OneOneSquareRug</li>
-			<li>TwoTwoSquareRug</li>
-			<li>ThreeThreeSquareRug</li>
-			<li>FourFourSquareRug</li>
-			<li>FiveFiveSquareRug</li>
-			<li>SixSixSquareRug</li>
-			<li>SevenSevenSquareRug</li>
-		</defNames>
-		<designationCategory>Accessories</designationCategory>
-		<debug>false</debug>
+		<order>60</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -748,6 +767,25 @@
 		</defNames>
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
+		<order>70</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_SquareRugs</defName>
+		<label>Square rugs</label>
+		<description>A small square area rug.</description>
+		<defNames>
+			<li>OneOneSquareRug</li>
+			<li>TwoTwoSquareRug</li>
+			<li>ThreeThreeSquareRug</li>
+			<li>FourFourSquareRug</li>
+			<li>FiveFiveSquareRug</li>
+			<li>SixSixSquareRug</li>
+			<li>SevenSevenSquareRug</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>80</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -766,6 +804,7 @@
 		</defNames>
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
+		<order>90</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -782,25 +821,27 @@
 		</defNames>
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
+		<order>100</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_ModernRugs</defName>
-		<label>Modern mats</label>
-		<description>A modern mats gives the room a modern style.</description>
+		<defName>SubCategory_PlantPots</defName>
+		<label>Plant pots</label>
+		<description>A plant pot can hold decorative flowers to improve the mood of people nearby.</description>
 		<defNames>
-			<li>FutstentRug</li>
-			<li>StepRug</li>
-			<li>SquareCozyRug</li>
-			<li>SquareCozyRugB</li>
-			<li>RoundCozyRug</li>
-			<li>RoundCozyRugB</li>
+			<li>TuskPot</li>
+			<li>PlantPot</li>
+			<li>PentaPlantPot</li>
+			<li>DecoratedPot</li>
+			<li>ElectricTreePot</li>
+			<li MayRequire="ludeon.rimworld.ideology">PlantPot_Bonsai</li>
 		</defNames>
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
+		<order>110</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
-	<!-- Production -->
+	<!-- Food Production -->
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_ButcherTable</defName>
@@ -811,43 +852,54 @@
 			<li>TableButcher</li>
 			<li>TableKitchen</li>
 		</defNames>
-		<designationCategory>Production</designationCategory>
+		<designationCategory>FoodProduction</designationCategory>
 		<debug>false</debug>
-		<order>1</order>
+		<order>10</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Stove</defName>
-		<label>prepare food</label>
-		<description>Stuff for preparing foods.</description>
+		<label>stoves</label>
+		<description>Stoves for preparing foods.</description>
 		<defNames>
-			<li>TableOven</li>
-			<li>ElectricOven</li>
-			<li>FueledStove</li>
 			<li>TableGrill</li>
+			<li>FueledStove</li>
 			<li>ElectricStove</li>
 			<li>ElectricStove_Pro</li>
+		</defNames>
+		<designationCategory>FoodProduction</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_FoodProcessing</defName>
+		<label>food processing</label>
+		<description>Various tables for processing food for further preparation or storage.</description>
+		<defNames>
+			<li>Canningstove</li>
 			<li>GrindStone</li>
 			<li>MillElectric</li>
+			<li>SK_Windmill</li>
 		</defNames>
-		<designationCategory>Production</designationCategory>
+		<designationCategory>FoodProduction</designationCategory>
 		<debug>false</debug>
-		<order>2</order>
+		<order>30</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_CookingStuff</defName>
-		<label>cooking stuff</label>
-		<description>Various stuff for prepare candy, canning, coffee, tobacco etc.</description>
+		<label>culinary</label>
+		<description>Various stuff for prepare other common types of food and drinks.</description>
 		<defNames>
-			<li>Canningstove</li>
+			<li>TableOven</li>
+			<li>ElectricOven</li>
 			<li>CandyTable</li>
 			<li>TableCoffee</li>
-			<li>DrugLab</li>
 		</defNames>
-		<designationCategory>Production</designationCategory>
+		<designationCategory>FoodProduction</designationCategory>
 		<debug>false</debug>
-		<order>3</order>
+		<order>30</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -855,14 +907,15 @@
 		<label>special foods</label>
 		<description>Some special foods.</description>
 		<defNames>
-			<li>VG_SaltMine</li>
-			<li>Beehive</li>
-			<li>NutrientPasteDispenser</li>
+			<!--<li>Beehive</li>-->
 			<li>soylenttable</li>
+			<li>NutrientPasteDispenser</li>
+			<li>Hopper</li>
+			<li>VG_SaltMine</li>
 		</defNames>
-		<designationCategory>Production</designationCategory>
+		<designationCategory>FoodProduction</designationCategory>
 		<debug>false</debug>
-		<order>4</order>
+		<order>40</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -870,13 +923,13 @@
 		<label>brewery</label>
 		<description>A work station with all the equipment needed to brew alcogol drinks.</description>
 		<defNames>
-			<li>UniversalFermenter</li>
 			<li>Brewery</li>
 			<li>ElectricBrewery</li>
+			<li>UniversalFermenter</li>
 		</defNames>
-		<designationCategory>Production</designationCategory>
+		<designationCategory>FoodProduction</designationCategory>
 		<debug>false</debug>
-		<order>5</order>
+		<order>50</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -889,23 +942,99 @@
 			<li>CheeseBasin</li>
 			<li>CheeseVat</li>
 		</defNames>
-		<designationCategory>Production</designationCategory>
+		<designationCategory>FoodProduction</designationCategory>
 		<debug>false</debug>
-		<order>6</order>
+		<order>60</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Fishing</defName>
-		<label>Fishing</label>
+		<label>fishing</label>
 		<description>Fish industry buildings.</description>
 		<defNames>
 			<li>HSK_FishingSpotSpawner</li>
 			<li>HSK_FishTrap</li>
 			<li>AquacultureBasin</li>
 		</defNames>
+		<designationCategory>FoodProduction</designationCategory>
+		<debug>false</debug>
+		<order>70</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Hydroponics</defName>
+		<label>hydroponics</label>
+		<description>A hydroponic basin can grow plants quickly.</description>
+		<defNames>
+			<li>PrimitiveHydroponic</li>
+			<li>HydroponicsBasin</li>
+			<li>Agrarian</li>
+			<li>FungiponicsBasin</li>
+			<li>NewHydroponicsBasin</li>
+			<li>ClutterAlloyHydroponicsBasinVS</li>
+		</defNames>
+		<designationCategory>FoodProduction</designationCategory>
+		<debug>false</debug>
+		<order>80</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<!-- Production -->
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Sawmills</defName>
+		<label>sawmill</label>
+		<description>Workbench with saw for cutting logs into planks and kindling..</description>
+		<defNames>
+			<li>TableSawmillHand</li>
+			<li>TableSawmillElectric</li>
+		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>7</order>
+		<order>10</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Furnaces</defName>
+		<label>furnace</label>
+		<description>Previously furnace used for smelting.</description>
+		<defNames>
+			<li>Kiln</li>
+			<li>TableFurnace</li>
+			<li>ElectricSmelter</li>
+			<li>EAF</li>
+			<li>GlassworkTable</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Machining</defName>
+		<label>stonecutting</label>
+		<description>Worktable primarily used with the rocks, stone chunks, rubble or sand.</description>
+		<defNames>
+			<li>TableStonecutterNeolithic</li>
+			<li>TableStonecutter</li>
+			<li>TableMachining</li>
+			<li>TableSculpting</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Smithy</defName>
+		<label>smithy</label>
+		<description>Used to craft various weapons, apparel and devices.</description>
+		<defNames>
+			<li>FueledSmithy</li>
+			<li>ElectricSmithy</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -920,63 +1049,24 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>8</order>
+		<order>50</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Sawmills</defName>
-		<label>sawmill</label>
-		<description>Workbench with saw for cutting logs into planks and kindling..</description>
+		<defName>SubCategory_Conversion</defName>
+		<label>processing</label>
+		<description>Special building for processing things.</description>
 		<defNames>
-			<li>TableSawmillHand</li>
-			<li>TableSawmillElectric</li>
+			<li>ElectricCrematorium</li>
+			<li>Saltpeter_pit</li>
+			<li>SilagePile</li>
+			<li>CompostBarrel</li>
+			<li>BiofuelRefinery</li>
+			<li>RockCrusher</li>
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>9</order>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Furnaces</defName>
-		<label>furnace</label>
-		<description>Previously furnace used for smelting.</description>
-		<defNames>
-			<li>TableFurnace</li>
-			<li>ElectricSmelter</li>
-			<li>EAF</li>
-			<li>GlassworkTable</li>
-		</defNames>
-		<designationCategory>Production</designationCategory>
-		<debug>false</debug>
-		<order>10</order>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Machining</defName>
-		<label>machining</label>
-		<description>Worktable primarily used with the rocks, stone chunks, rubble or sand.</description>
-		<defNames>
-			<li>TableStonecutterNeolithic</li>
-			<li>TableStonecutter</li>
-			<li>TableMachining</li>
-			<li>TableSculpting</li>
-		</defNames>
-		<designationCategory>Production</designationCategory>
-		<debug>false</debug>
-		<order>11</order>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Smithy</defName>
-		<label>smithy</label>
-		<description>Used to craft various weapons, apparel and devices.</description>
-		<defNames>
-			<li>FueledSmithy</li>
-			<li>ElectricSmithy</li>
-		</defNames>
-		<designationCategory>Production</designationCategory>
-		<debug>false</debug>
-		<order>12</order>
+		<order>60</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -984,9 +1074,9 @@
 		<label>mining</label>
 		<description>Accessories for mineral product mining.</description>
 		<defNames>
-			<li MayRequire="ogliss.thewhitecrayon.quarry">QRY_Quarry</li>
-			<li MayRequire="ogliss.thewhitecrayon.quarry">QRY_MediQuarry</li>
 			<li MayRequire="ogliss.thewhitecrayon.quarry">QRY_MiniQuarry</li>
+			<li MayRequire="ogliss.thewhitecrayon.quarry">QRY_MediQuarry</li>
+			<li MayRequire="ogliss.thewhitecrayon.quarry">QRY_Quarry</li>
 			<li MayRequire="ogliss.thewhitecrayon.quarry">QRY_Platform</li>
 			<li>DeepDrill</li>
 			<li>Extractor</li>
@@ -994,7 +1084,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>13</order>
+		<order>70</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1010,20 +1100,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>14</order>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_ConcreteMixers</defName>
-		<label>concrete mixers</label>
-		<description>Concrete is mixed from rubble and sand.</description>
-		<defNames>
-			<li>ConcreteMixer</li>
-			<li>EConcreteMixer</li>
-		</defNames>
-		<designationCategory>Production</designationCategory>
-		<debug>false</debug>
-		<order>15</order>
+		<order>80</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1040,7 +1117,33 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>16</order>
+		<order>90</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Repair</defName>
+		<label>repairing</label>
+		<description>A workbenches for repairing your old weapons and apparel.</description>
+		<defNames>
+			<li>HandMendingWorkbench</li>
+			<li>TableMending</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+		<order>100</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ConcreteMixers</defName>
+		<label>concrete mixers</label>
+		<description>Concrete is mixed from rubble and sand.</description>
+		<defNames>
+			<li>ConcreteMixer</li>
+			<li>EConcreteMixer</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+		<order>110</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1049,11 +1152,12 @@
 		<description>Tables that is used to craft various medicine and other devices.</description>
 		<defNames>
 			<li>meditable</li>
+			<li>DrugLab</li>
 			<li>TableOrganvat</li>
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>17</order>
+		<order>120</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1070,79 +1174,16 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>18</order>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Composters</defName>
-		<label>composter</label>
-		<description>Special compost devices.</description>
-		<defNames>
-			<li>CompostBarrel</li>
-		</defNames>
-		<designationCategory>Production</designationCategory>
-		<debug>false</debug>
-		<order>19</order>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Conversion</defName>
-		<label>conversion</label>
-		<description>Special building for converting.</description>
-		<defNames>
-			<li>Kiln</li>
-			<li>ElectricCrematorium</li>
-			<li>Saltpeter_pit</li>
-			<li>SilagePile</li>
-			<li>BiofuelRefinery</li>
-			<li>HandMendingWorkbench</li>
-			<!--		<li>BioRefinery</li>	-->
-			<li>TableMending</li>
-			<li>RockCrusher</li>
-			<li>SK_Windmill</li>
-			<li MayRequire="dubwise.rimatomics">GasCentrifuge</li>
-		</defNames>
-		<designationCategory>Production</designationCategory>
-		<debug>false</debug>
-		<order>20</order>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Hydroponics</defName>
-		<label>hydroponics</label>
-		<description>A hydroponic basin can grow plants quickly.</description>
-		<defNames>
-			<li>PrimitiveHydroponic</li>
-			<li>HydroponicsBasin</li>
-			<li>Agrarian</li>
-			<li>FungiponicsBasin</li>
-			<li>NewHydroponicsBasin</li>
-			<li>ClutterAlloyHydroponicsBasinVS</li>
-		</defNames>
-		<designationCategory>Production</designationCategory>
-		<debug>false</debug>
-		<order>21</order>
+		<order>130</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Hightech</defName>
-		<label>hightech</label>
-		<description>To build petrochemical plant and gas centrifuge.</description>
+		<label>hightech devices</label>
+		<description>To build better worlds.</description>
 		<defNames>
 			<li>TableChemlab</li>
-			<li>GC</li>
-			<li>CentrifugeFeeder</li>
-		</defNames>
-		<designationCategory>Production</designationCategory>
-		<debug>false</debug>
-		<order>22</order>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_FuturisticDevices</defName>
-		<label>futuristic devices</label>
-		<description>To build matter fab or hadron collider.</description>
-		<defNames>
+			<li MayRequire="dubwise.rimatomics">GasCentrifuge</li>
 			<li>MatterConverter</li>
 			<li>Matterfab</li>
 			<li>HadronCollider</li>
@@ -1150,7 +1191,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>23</order>
+		<order>140</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<!-- Joy -->
@@ -1169,6 +1210,7 @@
 		</defNames>
 		<designationCategory>Joy</designationCategory>
 		<debug>false</debug>
+		<order>10</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1183,6 +1225,7 @@
 		</defNames>
 		<designationCategory>Joy</designationCategory>
 		<debug>false</debug>
+		<order>20</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1199,6 +1242,20 @@
 		</defNames>
 		<designationCategory>Joy</designationCategory>
 		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Rooboid.Paintings.Ex">
+		<defName>SubCategory_Painting</defName>
+		<label>Painting</label>
+		<description>There are no mistakes, only happy accidents.</description>
+		<defNames>
+			<li>RBPEaselPainting</li>
+			<li>RBPArtCabinet</li>
+			<li>RBPGalleryBarrier</li>
+		</defNames>
+		<designationCategory>Joy</designationCategory>
+		<order>40</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Ludeon.RimWorld.Biotech">
@@ -1212,6 +1269,7 @@
 		</defNames>
 		<designationCategory>Joy</designationCategory>
 		<debug>false</debug>
+		<order>50</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<!-- Security -->
@@ -1232,6 +1290,7 @@
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
+		<order>10</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1252,6 +1311,7 @@
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
+		<order>20</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1264,6 +1324,7 @@
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
+		<order>30</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1279,32 +1340,7 @@
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_ACannons</defName>
-		<label>autocannons</label>
-		<description>Various types of automatic cannon weapons.</description>
-		<defNames>
-			<li>Turret_Oerlikonautocannon</li>
-			<li>Turret_VulcanCannon</li>
-			<li>AvengerTurretGun</li>
-		</defNames>
-		<designationCategory>Security</designationCategory>
-		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Cannons</defName>
-		<label>heavy cannons</label>
-		<description>Various types of cannon weapons.</description>
-		<defNames>
-			<li>Turret_Flak</li>
-			<li>Turret_Cannon</li>
-			<li>HowitzerTurretGun</li>
-		</defNames>
-		<designationCategory>Security</designationCategory>
-		<debug>false</debug>
+		<order>40</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1318,6 +1354,21 @@
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
+		<order>50</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Cannons</defName>
+		<label>artillery</label>
+		<description>Various types of cannon weapons.</description>
+		<defNames>
+			<li>Turret_Flak</li>
+			<li>Turret_Cannon</li>
+			<li>HowitzerTurretGun</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+		<order>60</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1332,6 +1383,7 @@
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
+		<order>70</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1348,6 +1400,21 @@
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
+		<order>80</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ACannons</defName>
+		<label>sentry cannons</label>
+		<description>Various types of automatic cannon weapons.</description>
+		<defNames>
+			<li>Turret_Oerlikonautocannon</li>
+			<li>Turret_VulcanCannon</li>
+			<li>AvengerTurretGun</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+		<order>90</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<!-- Misc -->
@@ -1365,12 +1432,12 @@
 		</defNames>
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
-		<order>1</order>
+		<order>10</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Graves</defName>
-		<label>Grave</label>
+		<label>Graves</label>
 		<description>Place the deceased in graves to give them a decent final resting place.</description>
 		<defNames>
 			<li>Grave</li>
@@ -1381,12 +1448,12 @@
 		</defNames>
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
-		<order>2</order>
+		<order>20</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_ResearchBenches</defName>
-		<label>research benches</label>
+		<label>Research benches</label>
 		<description>Researchers work here to discover new things.</description>
 		<defNames>
 			<li>PrimitiveResearchBench</li>
@@ -1400,7 +1467,7 @@
 		</defNames>
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
-		<order>3</order>
+		<order>30</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1415,12 +1482,12 @@
 		</defNames>
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
-		<order>4</order>
+		<order>40</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Scanners</defName>
-		<label>scanners</label>
+		<label>Scanners</label>
 		<description>Special scanners to detect hidden minerals.</description>
 		<defNames>
 			<li>GroundPenetratingScanner</li>
@@ -1430,7 +1497,7 @@
 		</defNames>
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
-		<order>5</order>
+		<order>50</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1443,7 +1510,7 @@
 		</defNames>
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
-		<order>6</order>
+		<order>60</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1458,7 +1525,7 @@
 		</defNames>
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
-		<order>7</order>
+		<order>70</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1478,12 +1545,12 @@
 		</defNames>
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
-		<order>8</order>
+		<order>80</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_TrainingFacilities</defName>
-		<label>train facilities</label>
+		<label>Train facilities</label>
 		<description>A special buildings that can be linked to another buildings to increase its effectiveness.</description>
 		<defNames>
 			<li>MartialArtsTarget</li>
@@ -1493,47 +1560,7 @@
 		</defNames>
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
-		<order>9</order>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Computers</defName>
-		<label>Computers</label>
-		<defNames>
-			<li>TacticalComputer</li>
-			<li>TacticalComputerExtension</li>
-		</defNames>
-		<designationCategory>Misc</designationCategory>
-		<debug>false</debug>
-		<order>10</order>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_ManagerDesks</defName>
-		<label>Manager desks</label>
-		<description>A special building required to allow a manager to do his work.</description>
-		<defNames>
-			<li>FM_BasicManagerStation</li>
-			<li>FM_ManagerStation</li>
-			<li>FM_AIManager</li>
-		</defNames>
-		<designationCategory>Misc</designationCategory>
-		<debug>false</debug>
-		<order>11</order>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_NanoDevices</defName>
-		<label>Nano devices</label>
-		<description>A special buildings for storage and copying.</description>
-		<defNames>
-			<li>NanoStorage</li>
-			<li>NanoPrinter</li>
-			<li>NanoScanner</li>
-		</defNames>
-		<designationCategory>Misc</designationCategory>
-		<debug>false</debug>
-		<order>12</order>
+		<order>90</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1548,8 +1575,45 @@
 		</defNames>
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
-		<order>13</order>
+		<order>100</order>
 	</ArchitectSense.DesignationSubCategoryDef>
+
+	<!--<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Computers</defName>
+		<label>Computers</label>
+		<defNames>
+			<li>TacticalComputer</li>
+			<li>TacticalComputerExtension</li>
+		</defNames>
+		<designationCategory>Misc</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ManagerDesks</defName>
+		<label>Manager desks</label>
+		<description>A special building required to allow a manager to do his work.</description>
+		<defNames>
+			<li>FM_BasicManagerStation</li>
+			<li>FM_ManagerStation</li>
+			<li>FM_AIManager</li>
+		</defNames>
+		<designationCategory>Misc</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_NanoDevices</defName>
+		<label>Nano devices</label>
+		<description>A special buildings for storage and copying.</description>
+		<defNames>
+			<li>NanoStorage</li>
+			<li>NanoPrinter</li>
+			<li>NanoScanner</li>
+		</defNames>
+		<designationCategory>Misc</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>-->
 
 	<!-- Temperature -->
 
@@ -1564,6 +1628,21 @@
 		</defNames>
 		<designationCategory>Temperature</designationCategory>
 		<debug>false</debug>
+		<order>10</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_FueledHeaters</defName>
+		<label>fueled heaters</label>
+		<description>An fueled devices that converts matter into heat.</description>
+		<defNames>
+			<li>Campfire</li>
+			<li>Building_Heater</li>
+			<li>GH</li>
+		</defNames>
+		<designationCategory>Temperature</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1572,11 +1651,27 @@
 		<description>An electrical devices that converts electricity into heat.</description>
 		<defNames>
 			<li>Heater</li>
+			<li>EHeatedFloor</li>
 			<li>RH_MediumHeater</li>
 			<li>RedistHeat_IndustrialHeater</li>
 		</defNames>
 		<designationCategory>Temperature</designationCategory>
 		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_PassiveCoolers</defName>
+		<label>passive coolers</label>
+		<description>Coolers using evaporation to cool the area a small ammount.</description>
+		<defNames>
+			<li>PassiveCooler</li>
+			<li>ColdstonePassiveCooler</li>
+			<li>ColdstoneBattery</li>
+		</defNames>
+		<designationCategory>Temperature</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -1591,21 +1686,10 @@
 		</defNames>
 		<designationCategory>Temperature</designationCategory>
 		<debug>false</debug>
+		<order>50</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_PassiveCoolers</defName>
-		<label>passive coolers</label>
-		<description>Coolers using evaporation to cool the area a small ammount.</description>
-		<defNames>
-			<li>PassiveCooler</li>
-			<li>ColdstonePassiveCooler</li>
-		</defNames>
-		<designationCategory>Temperature</designationCategory>
-		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
+	<!--<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_DuckPipes</defName>
 		<label>pipe components</label>
 		<description>A pipe for moving air around.</description>
@@ -1630,7 +1714,215 @@
 		</defNames>
 		<designationCategory>Temperature</designationCategory>
 		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
+	</ArchitectSense.DesignationSubCategoryDef>-->
+
+
+    <!-- Rimefeller -->
+
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
+        <defName>SubCategory_Refinery</defName>
+        <label>refineries</label>
+        <description>Processes chemfuel to another products.</description>
+        <defNames>
+            <li>PolymerRefiner</li>
+            <li>SulphateRefiner</li>
+            <li>NapalmRefiner</li>
+            <li>ParaffinRefiner</li>
+            <li>NeutroamineRefiner</li>
+            <li>SyntheticAmmoniaRefiner</li>
+            <li>SynthreadRefiner</li>
+            <li>HyperweaveRefiner</li>
+        </defNames>
+        <designationCategory>Rimefeller</designationCategory>
+        <debug>false</debug>
+    </ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
+        <defName>SubCategory_OilWells</defName>
+        <label>pipe components</label>
+        <description>Extracts oil from underground reservoirs.</description>
+        <defNames>
+            <li>OilWell</li>
+            <li>DeepOilWell</li>
+        </defNames>
+        <designationCategory>Rimefeller</designationCategory>
+        <debug>false</debug>
+    </ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
+        <defName>SubCategory_FuelStorages</defName>
+        <label>fuel storages</label>
+        <description>Stores fuel.</description>
+        <defNames>
+            <li>OilStorage</li>
+            <li>FuelStorage</li>
+        </defNames>
+        <designationCategory>Rimefeller</designationCategory>
+        <debug>false</debug>
+    </ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
+        <defName>SubCategory_Napalm</defName>
+        <label>napalm</label>
+        <description>Napalm, son. Nothing else in the world smells like that.\nI love the smell of napalm in the morning. You know, one time we had a hill bombed, for 12 hours. When it was all over, I walked up. We didn’t find one of 'em, not one stinkin' dink body. The smell, you know that gasoline smell, the whole hill. Smelled like… victory.\nSomeday this war’s gonna end…</description>
+        <defNames>
+            <li>NapalmBomb</li>
+            <li>Filth_NapalmTrail</li>
+            <li>SparkGrid</li>
+        </defNames>
+        <designationCategory>Rimefeller</designationCategory>
+        <debug>false</debug>
+    </ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
+        <defName>SubCategory_Pumps</defName>
+        <label>pumps and hoppers</label>
+        <description>Fuel and items pumps.</description>
+        <defNames>
+            <li>RefineryLoadingBay</li>
+            <li>ChemfuelHopper</li>
+            <li>ChemfuelSiphon</li>
+        </defNames>
+        <designationCategory>Rimefeller</designationCategory>
+        <debug>false</debug>
+    </ArchitectSense.DesignationSubCategoryDef>
+    
+    <!--Floors-->
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
+        <defName>SubCategory_Lino_Misc</defName>
+        <label>Lino Misc</label>
+        <description>Fake plastic flooring.</description>
+        <defNames>
+            <li>Lino_TilesDiagonal</li>
+            <li>Lino_TilesDiamond</li>
+            <li>Lino_TactileTile</li>
+            <li>Lino_SterileTile</li>
+        </defNames>
+        <designationCategory>Floors</designationCategory>
+        <debug>false</debug>
+    </ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
+        <defName>SubCategory_Lino_Colour</defName>
+        <label>Lino Colour</label>
+        <description>Fake plastic flooring.</description>
+        <defNames>
+            <li>Lino_Red</li>
+            <li>Lino_Green</li>
+            <li>Lino_Blue</li>
+            <li>Lino_White</li>
+            <li>Lino_Dark</li>
+            <li>Lino_Gold</li>
+        </defNames>
+        <designationCategory>Floors</designationCategory>
+        <debug>false</debug>
+    </ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
+        <defName>SubCategory_Lino_ColourTiles</defName>
+        <label>Lino Colour Tiles</label>
+        <description>Fake plastic flooring.</description>
+        <defNames>
+            <li>Lino_ColourTilesRed</li>
+            <li>Lino_ColourTilesGreen</li>
+            <li>Lino_ColourTilesBlue</li>
+            <li>Lino_ColourTilesWhite</li>
+            <li>Lino_ColourTilesDark</li>
+            <li>Lino_ColourTilesGold</li>
+        </defNames>
+        <designationCategory>Floors</designationCategory>
+        <debug>false</debug>
+    </ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
+        <defName>SubCategory_Lino_Wood</defName>
+        <label>Lino Wood</label>
+        <description>Fake plastic flooring.</description>
+        <defNames>
+            <li>Lino_WoodPlankFloor</li>
+            <li>Lino_Wood_ParquetHerring</li>
+            <li>Lino_Wood_ParquetVersailles</li>
+        </defNames>
+        <designationCategory>Floors</designationCategory>
+        <debug>false</debug>
+    </ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
+        <defName>SubCategory_Lino_Mosaic</defName>
+        <label>Lino Mosaic</label>
+        <description>Fake plastic flooring.</description>
+        <defNames>
+            <li>Lino_MosaicRed</li>
+            <li>Lino_MosaicGreen</li>
+            <li>Lino_MosaicBlue</li>
+            <li>Lino_MosaicCream</li>
+            <li>Lino_MosaicDark</li>
+            <li>Lino_MosaicGold</li>
+        </defNames>
+        <designationCategory>Floors</designationCategory>
+        <debug>false</debug>
+    </ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
+        <defName>SubCategory_Lino_PavementStone</defName>
+        <label>Lino Pavement Stone</label>
+        <description>Fake plastic flooring.</description>
+        <defNames>
+            <li>Lino_PavementSandstone</li>
+            <li>Lino_PavementGranite</li>
+            <li>Lino_PavementLimestone</li>
+            <li>Lino_PavementSlate</li>
+            <li>Lino_PavementMarble</li>
+            <li>Lino_PavementGold</li>
+        </defNames>
+        <designationCategory>Floors</designationCategory>
+        <debug>false</debug>
+    </ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
+        <defName>SubCategory_Lino_Herringbone</defName>
+        <label>Lino Herringbone</label>
+        <description>Fake plastic flooring.</description>
+        <defNames>
+            <li>Lino_HerringboneSandstone</li>
+            <li>Lino_HerringboneGranite</li>
+            <li>Lino_HerringboneLimestone</li>
+            <li>Lino_HerringboneSlate</li>
+            <li>Lino_HerringboneMarble</li>
+        </defNames>
+        <designationCategory>Floors</designationCategory>
+        <debug>false</debug>
+    </ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
+        <defName>SubCategory_Lino_StoneTile</defName>
+        <label>Lino StoneTile</label>
+        <description>Fake plastic flooring.</description>
+        <defNames>
+            <li>Lino_TileSandstone</li>
+            <li>Lino_TileGranite</li>
+            <li>Lino_TileLimestone</li>
+            <li>Lino_TileSlate</li>
+            <li>Lino_TileMarble</li>
+        </defNames>
+        <designationCategory>Floors</designationCategory>
+        <debug>false</debug>
+    </ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
+        <defName>SubCategory_Lino_Flagstone</defName>
+        <label>Lino Flagstone</label>
+        <description>Fake plastic flooring.</description>
+        <defNames>
+            <li>Lino_FlagstoneSandstone</li>
+            <li>Lino_FlagstoneGranite</li>
+            <li>Lino_FlagstoneLimestone</li>
+            <li>Lino_FlagstoneSlate</li>
+            <li>Lino_FlagstoneMarble</li>
+        </defNames>
+        <designationCategory>Floors</designationCategory>
+        <debug>false</debug>
+    </ArchitectSense.DesignationSubCategoryDef>
 
 	<!-- Rimatomics -->
 
@@ -1770,20 +2062,6 @@
 		<designationCategory>Rimatomics</designationCategory>
 		<debug>false</debug>
 		<order>9</order>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<!-- SK_category_terraform -->
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Terraforming</defName>
-		<label>Terraforming</label>
-		<description>Special devices for terraforming territory.</description>
-		<defNames>
-			<li>MoisturePump</li>
-			<li>FertilizerPump</li>
-		</defNames>
-		<designationCategory>SK_category_terraform</designationCategory>
-		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<!-- Floors -->
@@ -2223,11 +2501,25 @@
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<!-- Terraform -->
+    
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Terraforming</defName>
+		<label>Terraforming</label>
+		<description>Special devices for terraforming territory.</description>
+		<defNames>
+			<li>MoisturePump</li>
+			<li>FertilizerPump</li>
+		</defNames>
+		<designationCategory>SK_category_terraform</designationCategory>
+		<debug>false</debug>
+		<order>1</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_RockDirt</defName>
 		<label>Rock dirt to...</label>
 		<description>Terraform the rock dirt tile into another type.</description>
-		<order>10</order>
+		<order>2</order>
 		<defNames>
 			<li>RockyDirt-Sand</li>
 			<li>RockyDirt-Gravel</li>
@@ -2241,7 +2533,7 @@
 		<defName>SubCategory_Sand</defName>
 		<label>Sand to...</label>
 		<description>Terraform the sand tile into another type.</description>
-		<order>9</order>
+		<order>3</order>
 		<defNames>
 			<li>Sand-SoilF</li>
 			<li>Sand-Gravel</li>
@@ -2256,7 +2548,7 @@
 		<defName>SubCategory_Gravel</defName>
 		<label>Gravel to...</label>
 		<description>Terraform the gravel tile into another type.</description>
-		<order>8</order>
+		<order>4</order>
 		<defNames>
 			<li>Gravel-SoilF</li>
 			<li>Gravel-Sand</li>
@@ -2270,7 +2562,7 @@
 		<defName>SubCategory_Soil</defName>
 		<label>Soil to...</label>
 		<description>Gather resources from the soil tile by terraforming.</description>
-		<order>7</order>
+		<order>5</order>
 		<defNames>
 			<li>SoilF-RockyDirt</li>
 			<li>SoilF-Sand</li>
@@ -2300,7 +2592,7 @@
 		<defName>SubCategory_Marsh</defName>
 		<label>Marsh to...</label>
 		<description>Gather resources from the soil tile by terraforming.</description>
-		<order>5</order>
+		<order>7</order>
 		<defNames>
 			<li>Marsh-SoilMarshy</li>
 			<li>Marsh-WaterShallow</li>
@@ -2313,7 +2605,7 @@
 		<defName>SubCategory_WaterShallow</defName>
 		<label>Shallow water to...</label>
 		<description>Gather resources from the soil tile by terraforming.</description>
-		<order>4</order>
+		<order>8</order>
 		<defNames>
 			<li>WaterShallow-Sand</li>
 			<li>WaterShallow-Marsh</li>
@@ -2328,7 +2620,7 @@
 		<defName>SubCategory_Cultivate</defName>
 		<label>Cultivate</label>
 		<description>Gather resources from the soil tile by terraforming.</description>
-		<order>3</order>
+		<order>9</order>
 		<defNames>
 			<li>Stone-Topsoil</li>
 			<li>PoorSoil-MarginalSoil</li>
@@ -2347,7 +2639,7 @@
 		<defName>SubCategory_Misc</defName>
 		<label>Misc</label>
 		<description>Terraform special tiles</description>
-		<order>2</order>
+		<order>10</order>
 		<defNames>
 			<li>Salt-RockyDirt</li>
 			<li>Stone-RockyDirt</li>
@@ -2363,7 +2655,7 @@
 		<defName>SubCategory_Gather</defName>
 		<label>Gather</label>
 		<description>Gather resources from tiles</description>
-		<order>1</order>
+		<order>11</order>
 		<defNames>
 			<li>Peat-WaterShallow</li>
 			<li>Peat-SoilRich</li>
