@@ -53,11 +53,12 @@
     </value>
   </Operation>
 
+    <!--Right after Odyssey-->
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/DesignationCategoryDef[defName="Ship"]</xpath>
     <value>
       <label>Ship</label>
-      <order>280</order>
+      <order>9</order>
     </value>
   </Operation>
 

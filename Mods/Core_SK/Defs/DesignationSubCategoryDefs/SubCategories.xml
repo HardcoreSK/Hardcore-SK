@@ -1031,6 +1031,7 @@
 		<defNames>
 			<li>FueledSmithy</li>
 			<li>ElectricSmithy</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">BioferriteShaper</li>
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
@@ -1060,7 +1061,9 @@
 			<li>ElectricCrematorium</li>
 			<li>Saltpeter_pit</li>
 			<li>SilagePile</li>
+			<li MayRequire="Dubwise.DubsBadHygiene">BurnPit</li>
 			<li>CompostBarrel</li>
+			<li MayRequire="Dubwise.DubsBadHygiene">BiosolidsComposter</li>
 			<li>BiofuelRefinery</li>
 			<li>RockCrusher</li>
 		</defNames>
@@ -1153,6 +1156,7 @@
 		<defNames>
 			<li>meditable</li>
 			<li>DrugLab</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">SerumCentrifuge</li>
 			<li>TableOrganvat</li>
 		</defNames>
 		<designationCategory>Production</designationCategory>
@@ -1235,8 +1239,8 @@
 		<defNames>
 			<!--<li>Cairn</li>-->
 			<li>GlowstoneMonument</li>
-			<!--<li MayRequire="Ludeon.RimWorld.Royalty">NatureShrine_Small</li>
-			<li MayRequire="Ludeon.RimWorld.Royalty">NatureShrine_Large</li>-->
+			<li MayRequire="Ludeon.RimWorld.Royalty">NatureShrine_Small</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">NatureShrine_Large</li>
 			<li>SteleLarge</li>
 			<li>SteleGrand</li>
 		</defNames>
@@ -1563,15 +1567,15 @@
 		<order>90</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
-	<ArchitectSense.DesignationSubCategoryDef>
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="haplo.miscellaneous.robots">
 		<defName>SubCategory_Robots</defName>
 		<label>Robots</label>
 		<description>This stations with a specialized robot.</description>
 		<defNames>
 			<li>AIRobot_RechargeStation_Hauler</li>
 			<li>AIRobot_RechargeStation_Cleaner</li>
-			<li>AIRobot_RechargeStation_GardenerBot</li>
-			<li>AIRobot_RechargeStation_CookingBot</li>
+			<!--<li>AIRobot_RechargeStation_GardenerBot</li>
+			<li>AIRobot_RechargeStation_CookingBot</li>-->
 		</defNames>
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
@@ -1720,6 +1724,45 @@
     <!-- Rimefeller -->
 
     <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
+        <defName>SubCategory_PipesRimfeller</defName>
+        <label>pipes</label>
+        <description>Fuel and oil pipes.</description>
+        <defNames>
+            <li>OilPipeline</li>
+            <li>pipelineValve</li>
+        </defNames>
+        <designationCategory>Rimefeller</designationCategory>
+        <debug>false</debug>
+		<order>10</order>
+    </ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
+        <defName>SubCategory_OilWells</defName>
+        <label>pipe components</label>
+        <description>Extracts oil from underground reservoirs.</description>
+        <defNames>
+            <li>OilWell</li>
+            <li>DeepOilWell</li>
+        </defNames>
+        <designationCategory>Rimefeller</designationCategory>
+        <debug>false</debug>
+		<order>20</order>
+    </ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
+        <defName>SubCategory_FuelStorages</defName>
+        <label>fuel storages</label>
+        <description>Stores fuel.</description>
+        <defNames>
+            <li>OilStorage</li>
+            <li>FuelStorage</li>
+        </defNames>
+        <designationCategory>Rimefeller</designationCategory>
+        <debug>false</debug>
+		<order>30</order>
+    </ArchitectSense.DesignationSubCategoryDef>
+    
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
         <defName>SubCategory_Refinery</defName>
         <label>refineries</label>
         <description>Processes chemfuel to another products.</description>
@@ -1735,43 +1778,7 @@
         </defNames>
         <designationCategory>Rimefeller</designationCategory>
         <debug>false</debug>
-    </ArchitectSense.DesignationSubCategoryDef>
-
-    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
-        <defName>SubCategory_OilWells</defName>
-        <label>pipe components</label>
-        <description>Extracts oil from underground reservoirs.</description>
-        <defNames>
-            <li>OilWell</li>
-            <li>DeepOilWell</li>
-        </defNames>
-        <designationCategory>Rimefeller</designationCategory>
-        <debug>false</debug>
-    </ArchitectSense.DesignationSubCategoryDef>
-
-    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
-        <defName>SubCategory_FuelStorages</defName>
-        <label>fuel storages</label>
-        <description>Stores fuel.</description>
-        <defNames>
-            <li>OilStorage</li>
-            <li>FuelStorage</li>
-        </defNames>
-        <designationCategory>Rimefeller</designationCategory>
-        <debug>false</debug>
-    </ArchitectSense.DesignationSubCategoryDef>
-
-    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
-        <defName>SubCategory_Napalm</defName>
-        <label>napalm</label>
-        <description>Napalm, son. Nothing else in the world smells like that.\nI love the smell of napalm in the morning. You know, one time we had a hill bombed, for 12 hours. When it was all over, I walked up. We didn’t find one of 'em, not one stinkin' dink body. The smell, you know that gasoline smell, the whole hill. Smelled like… victory.\nSomeday this war’s gonna end…</description>
-        <defNames>
-            <li>NapalmBomb</li>
-            <li>Filth_NapalmTrail</li>
-            <li>SparkGrid</li>
-        </defNames>
-        <designationCategory>Rimefeller</designationCategory>
-        <debug>false</debug>
+		<order>40</order>
     </ArchitectSense.DesignationSubCategoryDef>
 
     <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
@@ -1785,9 +1792,25 @@
         </defNames>
         <designationCategory>Rimefeller</designationCategory>
         <debug>false</debug>
+		<order>50</order>
+    </ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
+        <defName>SubCategory_Napalm</defName>
+        <label>napalm</label>
+        <description>Napalm, son. Nothing else in the world smells like that.\nI love the smell of napalm in the morning. You know, one time we had a hill bombed, for 12 hours. When it was all over, I walked up. We didn’t find one of 'em, not one stinkin' dink body. The smell, you know that gasoline smell, the whole hill. Smelled like… victory.\nSomeday this war’s gonna end…</description>
+        <defNames>
+            <li>NapalmBomb</li>
+            <li>Filth_NapalmTrail</li>
+            <li>SparkGrid</li>
+        </defNames>
+        <designationCategory>Rimefeller</designationCategory>
+        <debug>false</debug>
+		<order>60</order>
     </ArchitectSense.DesignationSubCategoryDef>
     
-    <!--Floors-->
+    <!--Rimefeller Floors-->
+    
     <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
         <defName>SubCategory_Lino_Misc</defName>
         <label>Lino Misc</label>
@@ -2062,6 +2085,286 @@
 		<designationCategory>Rimatomics</designationCategory>
 		<debug>false</debug>
 		<order>9</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<!-- Hygiene -->
+	<!-- Water related -->
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_PipesWater</defName>
+		<label>Water Pipes</label>
+		<description>Pipes to move water.</description>
+		<defNames>
+			<li>sewagePipeStuff</li>
+			<li>sewagePipeHidden</li>
+			<li>plumbingValve</li>
+		</defNames>
+		<designationCategory>Hygiene</designationCategory>
+		<order>1</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_Sprinkler</defName>
+		<label>Sprinklers</label>
+		<description>Sprinklers.</description>
+		<defNames>
+			<li>IrrigationSprinkler</li>
+			<li>FireSprinkler</li>
+		</defNames>
+		<designationCategory>Hygiene</designationCategory>
+		<order>2</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_Watertanks</defName>
+		<label>Water Tanks</label>
+		<description>Tanks that store water.</description>
+		<defNames>
+			<li>HotWaterTank</li>
+			<li>WaterButt</li>
+			<li>WaterTowerS</li>
+			<li>WaterTowerL</li>
+			<li MayRequire="ludeon.rimworld.odyssey">WaterTankSmall</li>
+		</defNames>
+		<designationCategory>Hygiene</designationCategory>
+		<order>3</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_Waterheaters</defName>
+		<label>Water Heaters</label>
+		<description>Buildings to heat water.</description>
+		<defNames>
+			<li>SolarHeater</li>
+			<li>ElectricBoiler</li>
+			<li>GasBoiler</li>
+			<li>LogBoiler</li>
+			<li>Thermostat</li>
+			<li>GeothermHeater</li>
+		</defNames>
+		<designationCategory>Hygiene</designationCategory>
+		<order>4</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_WaterWells</defName>
+		<label>Water wells</label>
+		<description>Wells give access to groundwater.</description>
+		<defNames>
+			<li>PrimitiveWell</li>
+			<li>WaterWellInlet</li>
+			<li>DeepWaterWellInlet</li>
+			<li MayRequire="ludeon.rimworld.odyssey">CryogenicExtractionNode</li>
+			<li MayRequire="ludeon.rimworld.odyssey">SpacerWaterRecoverySystem</li>
+		</defNames>
+		<designationCategory>Hygiene</designationCategory>
+		<order>5</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_HygienePumps</defName>
+		<label>Water Pumps</label>
+		<description>Pumps.</description>
+		<defNames>
+			<li>WindPump</li>
+			<li>ElectricPump</li>
+			<li>PumpingStation</li>
+		</defNames>
+		<designationCategory>Hygiene</designationCategory>
+		<order>6</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_Sewage</defName>
+		<label>Sewage</label>
+		<description>Storage and treatment of sewage and water.</description>
+		<defNames>
+			<li>SewageOutlet</li>
+			<li>SewageSepticTank</li>
+			<li>SewageTreatment</li>
+			<li>WaterTreatment</li>
+			<li MayRequire="ludeon.rimworld.odyssey">SewageDumpPort</li>
+		</defNames>
+		<designationCategory>Hygiene</designationCategory>
+		<order>7</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_PetsWater</defName>
+		<label>Water for pets</label>
+		<description>Thirst is universal for all living being.</description>
+		<defNames>
+			<li>WaterTrough</li>
+			<li>PetWaterBowl</li>
+		</defNames>
+		<designationCategory>Hygiene</designationCategory>
+		<order>8</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_Basins</defName>
+		<label>Basins</label>
+		<description>Varous basins to wash hands and drink water.</description>
+		<defNames>
+			<li>BasinStuff</li>
+			<li>Fountain</li>
+		</defNames>
+		<designationCategory>Hygiene</designationCategory>
+		<order>9</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_Toilets</defName>
+		<label>Toilets</label>
+		<description>Toilets.</description>
+		<defNames>
+			<li>PitLatrine</li>
+			<li>LitterBox</li>
+			<li>ToiletStuff</li>
+			<li>ToiletAdvStuff</li>
+			<li MayRequire="ludeon.rimworld.odyssey">ToiletSpacer</li>
+		</defNames>
+		<designationCategory>Hygiene</designationCategory>
+		<order>10</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_Showers</defName>
+		<label>Showers</label>
+		<description>Showers which clean faster than a tub.</description>
+		<defNames>
+			<li>ShowerSimple</li>
+			<li>ShowerStuff</li>
+			<li>ShowerAdvStuff</li>
+			<li>BathMat</li>
+		</defNames>
+		<designationCategory>Hygiene</designationCategory>
+		<order>11</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_Tubs</defName>
+		<label>Tubs</label>
+		<description>Varous tubs to bath and wash in.</description>
+		<defNames>
+			<li>WashBucket</li>
+			<li>BathtubStuff</li>
+		</defNames>
+		<designationCategory>Hygiene</designationCategory>
+		<order>12</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_Pools</defName>
+		<label>Pools</label>
+		<description>Pools and hotubs.</description>
+		<defNames>
+			<li>DBHSwimmingPool</li>
+			<li>HotTub</li>
+		</defNames>
+		<designationCategory>Hygiene</designationCategory>
+		<order>13</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_Sauna</defName>
+		<label>Saunas</label>
+		<description>Sauna.</description>
+		<defNames>
+			<li>DBHSaunaHeaterLog</li>
+			<li>DBHSaunaHeaterElec</li>
+			<li>DBHSaunaSeating</li>
+		</defNames>
+		<designationCategory>Hygiene</designationCategory>
+		<order>14</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_ApparelWashing</defName>
+		<label>Apparel Washing</label>
+		<description>Its not tainted, its just require some water!</description>
+		<defNames>
+			<li>HolyBasin</li>
+			<li>WashingMachine</li>
+		</defNames>
+		<designationCategory>Hygiene</designationCategory>
+		<order>15</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<!--<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_HygieneMisc</defName>
+		<label>Misc</label>
+		<description>Buildings that dont fit other areas.</description>
+		<defNames>
+			<li>WaterTrough</li>
+			<li>PetWaterBowl</li>
+		</defNames>
+		<designationCategory>Hygiene</designationCategory>
+	</ArchitectSense.DesignationSubCategoryDef>-->
+    
+	<!-- Not water related -->
+	<!-- Temperature -->
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_PipesAir</defName>
+		<label>Air Pipes</label>
+		<description>Pipes to move air.</description>
+		<defNames>
+			<li>airPipe</li>
+			<li>airPipeHidden</li>
+		</defNames>
+		<designationCategory>Temperature</designationCategory>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_Airconditon</defName>
+		<label>AC and Freezing</label>
+		<description>Air Conditon and freezers.</description>
+		<defNames>
+			<li>AirconIndoorUnit</li>
+			<li>FreezerUnit</li>
+			<li>AirConOutdoorUnit</li>
+		</defNames>
+		<designationCategory>Temperature</designationCategory>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_CeilingFan</defName>
+		<label>Ceiling Fans</label>
+		<description>Fans.</description>
+		<defNames>
+			<li>CeilingFanS</li>
+			<li>CeilingFan</li>
+		</defNames>
+		<designationCategory>Temperature</designationCategory>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_radiator</defName>
+		<label>radiators</label>
+		<description>radiators.</description>
+		<defNames>
+			<li>RadiatorLarge</li>
+			<li>RadiatorStuffed</li>
+			<li>RadiatorTowelRail</li>
+		</defNames>
+		<designationCategory>Temperature</designationCategory>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+	<!-- Floors -->
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_DBHfloors</defName>
+		<label>Kitchen n Bath tiles.</label>
+		<description>Tiles for your kitchen and bathroom.</description>
+		<defNames>
+			<li>DBHMosaicTile</li>
+			<li>DBHMosaicSandstone</li>
+			<li>DBHMosaicGranite</li>
+			<li>DBHMosaicLimestone</li>
+			<li>DBHMosaicSlate</li>
+			<li>DBHMosaicMarble</li>
+		</defNames>
+		<designationCategory>Floors</designationCategory>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<!-- Floors -->
@@ -2671,43 +2974,6 @@
     <!--Biotech-->
 
     <ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_MechRechargers</defName>
-		<label>Mechanoid recharger</label>
-		<description>Maintain stable power supply with these devices!</description>
-		<defNames>
-			<li>BasicRecharger</li>
-			<li>StandardRecharger</li>
-		</defNames>
-		<designationCategory>Biotech</designationCategory>
-		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-    <ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_MechGestators</defName>
-		<label>Mechanoid gestators</label>
-		<description>Create new mechanoids with these devices!</description>
-		<defNames>
-			<li>MechGestator</li>
-			<li>LargeMechGestator</li>
-		</defNames>
-		<designationCategory>Biotech</designationCategory>
-		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-    <ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_MechSubcores</defName>
-		<label>Subcores stations</label>
-		<description>Make new subcores for your mechanoids with these devices!</description>
-		<defNames>
-			<li>SubcoreEncoder</li>
-			<li>SubcoreSoftscanner</li>
-			<li>SubcoreRipscanner</li>
-		</defNames>
-		<designationCategory>Biotech</designationCategory>
-		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
-    
-    <ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_GenesStations</defName>
 		<label>Genetics</label>
 		<description>Devices for gene modification, storage and extraction.</description>
@@ -2722,8 +2988,9 @@
 		</defNames>
 		<designationCategory>Biotech</designationCategory>
 		<debug>false</debug>
+		<order>10</order>
 	</ArchitectSense.DesignationSubCategoryDef>
-    
+
     <ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_GemoStations</defName>
 		<label>Deathrest</label>
@@ -2738,6 +3005,150 @@
 		</defNames>
 		<designationCategory>Biotech</designationCategory>
 		<debug>false</debug>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef> 
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_MechRechargers</defName>
+		<label>Mechanoid recharger</label>
+		<description>Maintain stable power supply with these devices!</description>
+		<defNames>
+			<li>BasicRecharger</li>
+			<li>StandardRecharger</li>
+		</defNames>
+		<designationCategory>Biotech</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_MechGestators</defName>
+		<label>Mechanoid gestators</label>
+		<description>Create new mechanoids with these devices!</description>
+		<defNames>
+			<li>MechGestator</li>
+			<li>LargeMechGestator</li>
+		</defNames>
+		<designationCategory>Biotech</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_MechSubcores</defName>
+		<label>Subcores stations</label>
+		<description>Make new subcores for your mechanoids with these devices!</description>
+		<defNames>
+			<li>SubcoreEncoder</li>
+			<li>SubcoreSoftscanner</li>
+			<li>SubcoreRipscanner</li>
+		</defNames>
+		<designationCategory>Biotech</designationCategory>
+		<debug>false</debug>
+		<order>50</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <!--Anomaly-->
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_HoldingDevices</defName>
+		<label>Holding Devices</label>
+		<description>Secure. Contain. Protect.</description>
+		<defNames>
+			<li>HoldingSpot</li>
+            <li>HoldingPlatform</li>
+			<li>BioferriteHarvester</li>
+			<li>ElectricInhibitor</li>
+			<li>ShardInhibitor</li>
+			<li>Electroharvester</li>
+		</defNames>
+		<designationCategory>Anomaly</designationCategory>
+		<debug>false</debug>
+		<order>10</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_DarkRituals</defName>
+		<label>Dark Rutuals</label>
+		<description>A summoning of horrors beyond our comprehension, what could go wrong?</description>
+		<defNames>
+			<li>PsychicRitualSpot</li>
+            <li>ShardBeacon</li>
+		</defNames>
+		<designationCategory>Anomaly</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_EffectProjectors</defName>
+		<label>Effect Projectors</label>
+		<description>If you constantly whisper something directly into the colonists' heads, they will certainly be happy.</description>
+		<defNames>
+			<li>SleepSuppressor</li>
+            <li>FrenzyInducer</li>
+		</defNames>
+		<designationCategory>Anomaly</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <!--Odyssey-->
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_GravStructures</defName>
+		<label>Gravship Structures</label>
+		<description>Everything starts with a wall.</description>
+		<defNames>
+			<li>Substructure</li>
+			<li>GravshipHull</li>
+			<li>VacBarrier</li>
+		</defNames>
+		<designationCategory>Odyssey</designationCategory>
+		<debug>false</debug>
+		<order>10</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_GravSystems</defName>
+		<label>Gravship Systems</label>
+		<description>Dont forget to turn oxygen on!</description>
+		<defNames>
+			<li>PilotConsole</li>
+			<li>GravcorePowerCell</li>
+			<li>OxygenPump</li>
+			<li>SignalJammer</li>
+			<li>GravFieldExtender</li>
+		</defNames>
+		<designationCategory>Odyssey</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_GravFuelTanks</defName>
+		<label>Fuel Tanks</label>
+		<description>Always carry a bt more than enough.</description>
+		<defNames>
+			<li>ChemfuelTank</li>
+			<li>LargeChemfuelTank</li>
+		</defNames>
+		<designationCategory>Odyssey</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_GravThrusters</defName>
+		<label>Thrusters</label>
+		<description>I am the speed.</description>
+		<defNames>
+			<li>SmallThruster</li>
+			<li>LargeThruster</li>
+		</defNames>
+		<designationCategory>Odyssey</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 </Defs>

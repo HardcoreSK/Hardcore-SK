@@ -132,6 +132,7 @@
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AtmosphericHeater"]</xpath>
 		<value>
+            <designationCategory>Temperature</designationCategory>
 			<stuffCategories>
 				<li>Metallic</li>
 				<li>RuggedMetallic</li>
