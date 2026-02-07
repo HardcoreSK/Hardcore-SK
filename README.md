@@ -91,14 +91,23 @@ Other mods which are not included in this project are not recommended.
 
 A big thank you to all those that help donate to those on the project!
 
-### SK Team
+### Active members of SK Team
 
 * **Lead developers** - TheLoneTec
-* **Coordinators** - Zakhad, Sidfu, Dzeniba, A.Ziemens(Duotian)
-* **Discord moderators** - Ziemens, MightyGooga, GG, Szara Kryik, Ashardalon, Xx-Nelson-xX, AndreiAvinov (Kiri), GuardianDll, Pacas
-* **Artists** - Cattleya (<https://www.patreon.com/cattleya>), Vile Heathen
-* **Coders** - Jeremy(PirateBY), TGC, Void, Dusty Breeches, Glucocorticoid, qwerty19106, AndreiAvinov (Kiri), MasakiTenchi 
-* **XML modders** - Sidfu, ArpoMo6, GuardianDll, Spaniard829, Vile Heathen, Pacas, Xx-Nelson-xX, Elldar
+* **Coordinators** - Zakhad, Sidfu, A.Ziemens(Duotian)
+* **Discord moderators** - Ziemens, Xx-Nelson-xX, AndreiAvinov (Kiri), Pacas
+* **Artists** - Vile Heathen, ABAHrAPD
+* **Coders** - AndreiAvinov (Kiri), MasakiTenchi, Lightwave 
+* **XML modders** - ArpoMo6, Vile Heathen, Pacas, Xx-Nelson-xX, Elldar, Watcher 011
+
+### Previous members of SK Team
+
+* **Lead developers** - Skyarchangel
+* **Coordinators** - Dzeniba
+* **Discord moderators** - MightyGooga, GG, Szara Kryik, Ashardalon, GuardianDll
+* **Artists** - Cattleya (<https://www.patreon.com/cattleya>)
+* **Coders** - Jeremy(PirateBY), TGC, Void, Dusty Breeches, Glucocorticoid, qwerty19106
+* **XML modders** - GuardianDll, Spaniard829
 
 ### Special thanks to
 
