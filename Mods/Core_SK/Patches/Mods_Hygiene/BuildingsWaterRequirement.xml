@@ -19,13 +19,13 @@
                             <mode>Sewage</mode>
                         </li>
                         <li Class="CompProperties_Refuelable">
-                            <consumeFuelOnlyWhenPowered>false</consumeFuelOnlyWhenPowered>
+                            <consumeFuelOnlyWhenPowered>true</consumeFuelOnlyWhenPowered>
                             <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
                             <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
                             <fuelLabel>Water</fuelLabel>
-                            <fuelCapacity>4</fuelCapacity>
-                            <fuelConsumptionRate>8</fuelConsumptionRate>
-                            <fuelMultiplier>0.02</fuelMultiplier>
+                            <fuelCapacity>20</fuelCapacity>
+                            <fuelConsumptionRate>0.1</fuelConsumptionRate>
+                            <fuelMultiplier>200</fuelMultiplier>
                             <fuelFilter/>
                         </li>
                     </value>
@@ -37,13 +37,13 @@
                             <mode>Sewage</mode>
                         </li>
                         <li Class="CompProperties_Refuelable">
-                            <consumeFuelOnlyWhenPowered>false</consumeFuelOnlyWhenPowered>
+                            <consumeFuelOnlyWhenPowered>true</consumeFuelOnlyWhenPowered>
                             <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
                             <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
                             <fuelLabel>Water</fuelLabel>
-                            <fuelCapacity>2</fuelCapacity>
-                            <fuelConsumptionRate>3</fuelConsumptionRate>
-                            <fuelMultiplier>0.02</fuelMultiplier>
+                            <fuelCapacity>5</fuelCapacity>
+                            <fuelConsumptionRate>0.025</fuelConsumptionRate>
+                            <fuelMultiplier>200</fuelMultiplier>
                             <fuelFilter/>
                         </li>
                     </value>
@@ -60,7 +60,7 @@
                             <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
                             <fuelLabel>Water</fuelLabel>
                             <fuelCapacity>100.0</fuelCapacity>
-                            <fuelConsumptionRate>3000</fuelConsumptionRate>
+                            <fuelConsumptionRate>2000</fuelConsumptionRate>
                             <!-- fuelConsumptionRate / 60,000 = fuel consumed per tick -->
                             <fuelMultiplier>0.002</fuelMultiplier>
                             <!-- fuelConsumptionRate * fuelMultiplier = Total Stored Water required to add to fuel from pipe network -->
