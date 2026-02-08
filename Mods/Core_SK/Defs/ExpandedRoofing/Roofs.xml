@@ -42,7 +42,8 @@
 		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
 		<!-- CollapsedRocks -->
 		<soundPunchThrough>Roof_Collapse</soundPunchThrough>
-		<collapseLeavingThingDef>CollapsedReinforcedConcrete</collapseLeavingThingDef>
+		<!--Scales? with amount of roof cells in cluster and creates hundreds of chunks for 4 block collapse-->
+		<!--<collapseLeavingThingDef>CollapsedReinforcedConcrete</collapseLeavingThingDef>-->
 		<modExtensions>
 			<li Class="ExpandedRoofing.RoofExtension">
 				<spawnerDef>ThickStoneRoofFraming</spawnerDef>
@@ -155,7 +156,7 @@
 		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
 		<!-- CollapsedRocks -->
 		<soundPunchThrough>Roof_Collapse</soundPunchThrough>
-		<collapseLeavingThingDef>CollapsedReinforcedConcrete</collapseLeavingThingDef>
+		<!--<collapseLeavingThingDef>CollapsedReinforcedConcrete</collapseLeavingThingDef>-->
 		<modExtensions>
 			<li Class="ExpandedRoofing.RoofExtension">
 				<spawnerDef>BunkerRoofFraming</spawnerDef>
@@ -167,7 +168,7 @@
 		<defName>ReinforcedConcreteBunkerRoof</defName>
 		<label>reinforced concrete bunker roof</label>
 		<description>reinforced concrete bunker roof</description>
-		<collapseLeavingThingDef>CollapsedReinforcedConcrete</collapseLeavingThingDef>
+		<!--<collapseLeavingThingDef>CollapsedReinforcedConcrete</collapseLeavingThingDef>-->
 	</RoofDef>
 
 </Defs>
