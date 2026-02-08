@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Joy -->
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_TableGames</defName>
+		<label>board games</label>
+		<description>A table specially made for playing games.</description>
+		<defNames>
+			<li>GoTable</li>
+			<li>ChessTable</li>
+			<li>ReversiTable</li>
+			<li>CardTable</li>
+			<li>GameOfUrBoard</li>
+			<li>PokerTable</li>
+		</defNames>
+		<designationCategory>Joy</designationCategory>
+		<debug>false</debug>
+		<order>10</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_TV</defName>
+		<label>television</label>
+		<description>Colonist needs to watch old movies.</description>
+		<defNames>
+			<li>TubeTelevision</li>
+			<li>FlatscreenTelevision</li>
+			<li>MegascreenTelevision</li>
+			<li>GlassMonitorLarge</li>
+		</defNames>
+		<designationCategory>Joy</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Monuments</defName>
+		<label>monuments</label>
+		<description>Sometimes rocks are just beautiful.</description>
+		<defNames>
+			<!--<li>Cairn</li>-->
+			<li>GlowstoneMonument</li>
+			<!-- These two are unlocked by certain meme 
+					Which makes them unrecognizable by architect sense
+					Will uncomment once there's a decent solution
+			-->
+			<!--<li MayRequire="Ludeon.RimWorld.Royalty">NatureShrine_Small</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">NatureShrine_Large</li>-->
+			<li>SteleLarge</li>
+			<li>SteleGrand</li>
+		</defNames>
+		<designationCategory>Joy</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Rooboid.Paintings.Ex">
+		<defName>SubCategory_Painting</defName>
+		<label>Painting</label>
+		<description>There are no mistakes, only happy accidents.</description>
+		<defNames>
+			<li>RBPEaselPainting</li>
+			<li>RBPArtCabinet</li>
+			<li>RBPGalleryBarrier</li>
+		</defNames>
+		<designationCategory>Joy</designationCategory>
+		<order>40</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>SubCategory_KidsToys</defName>
+		<label>toys</label>
+		<description>Every child deserve a toy to play.</description>
+		<defNames>
+			<li>ToyBoxTribal</li>
+			<li>ToyBox</li>
+			<li>BabyDecoration</li>
+		</defNames>
+		<designationCategory>Joy</designationCategory>
+		<debug>false</debug>
+		<order>50</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>

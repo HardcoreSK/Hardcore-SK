@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Temperature -->
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Vents</defName>
+		<label>Ventilation</label>
+		<description>Control rooms temperature with more precision.</description>
+		<defNames>
+			<li>Vent</li>
+			<li MayRequire="Dubwise.DubsBadHygiene">CeilingFanS</li>
+			<li MayRequire="Dubwise.DubsBadHygiene">CeilingFan</li>
+		</defNames>
+		<designationCategory>Temperature</designationCategory>
+		<debug>false</debug>
+		<order>10</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_PipesAir</defName>
+		<label>Air Pipes</label>
+		<description>Pipes to move air.</description>
+		<defNames>
+			<li>airPipe</li>
+			<li>airPipeHidden</li>
+		</defNames>
+		<designationCategory>Temperature</designationCategory>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_FueledHeaters</defName>
+		<label>Fueled Heaters</label>
+		<description>An fueled devices that converts matter into heat.</description>
+		<defNames>
+			<li>Campfire</li>
+			<li>Building_Heater</li>
+			<li>GH</li>
+		</defNames>
+		<designationCategory>Temperature</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_radiator</defName>
+		<label>Radiators</label>
+		<description>radiators.</description>
+		<defNames>
+			<li>RadiatorLarge</li>
+			<li>RadiatorStuffed</li>
+			<li>RadiatorTowelRail</li>
+		</defNames>
+		<designationCategory>Temperature</designationCategory>
+		<order>40</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Heaters</defName>
+		<label>Heaters</label>
+		<description>An electrical devices that converts electricity into heat.</description>
+		<defNames>
+			<li>Heater</li>
+			<li>EHeatedFloor</li>
+			<li>RH_MediumHeater</li>
+			<li>RedistHeat_IndustrialHeater</li>
+		</defNames>
+		<designationCategory>Temperature</designationCategory>
+		<debug>false</debug>
+		<order>50</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_PassiveCoolers</defName>
+		<label>Passive Coolers</label>
+		<description>Coolers using evaporation to cool the area a small ammount.</description>
+		<defNames>
+			<li>PassiveCooler</li>
+			<li>ColdstonePassiveCooler</li>
+			<li>ColdstoneBattery</li>
+		</defNames>
+		<designationCategory>Temperature</designationCategory>
+		<debug>false</debug>
+		<order>60</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Coolers</defName>
+		<label>Coolers</label>
+		<description>An electrical device that fits into a wall and pushes cold air into a room.</description>
+		<defNames>
+			<li>Cooler</li>
+			<li>RH_SmallCooler</li>
+			<li>MediumCooler</li>
+			<li>RedistHeat_IndustrialCooler</li>
+		</defNames>
+		<designationCategory>Temperature</designationCategory>
+		<debug>false</debug>
+		<order>70</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_Airconditon</defName>
+		<label>Cooling Systems</label>
+		<description>Air Conditon and freezers.</description>
+		<defNames>
+			<li>AirconIndoorUnit</li>
+			<li>FreezerUnit</li>
+			<li>AirConOutdoorUnit</li>
+		</defNames>
+		<designationCategory>Temperature</designationCategory>
+		<order>80</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>

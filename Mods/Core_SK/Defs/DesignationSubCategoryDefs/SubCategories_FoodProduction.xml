@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Food Production -->
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ButcherTable</defName>
+		<label>butchering</label>
+		<description>A table for butchering dead creatures into pieces of raw meat.</description>
+		<defNames>
+			<li>ButcherSpot</li>
+			<li>TableButcher</li>
+			<li>TableKitchen</li>
+		</defNames>
+		<designationCategory>FoodProduction</designationCategory>
+		<debug>false</debug>
+		<order>10</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Stove</defName>
+		<label>stoves</label>
+		<description>Stoves for preparing foods.</description>
+		<defNames>
+			<li>TableGrill</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>ElectricStove_Pro</li>
+		</defNames>
+		<designationCategory>FoodProduction</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_FoodProcessing</defName>
+		<label>food processing</label>
+		<description>Various tables for processing food for further preparation or storage.</description>
+		<defNames>
+			<li>Canningstove</li>
+			<li>GrindStone</li>
+			<li>MillElectric</li>
+			<li>SK_Windmill</li>
+		</defNames>
+		<designationCategory>FoodProduction</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_CookingStuff</defName>
+		<label>culinary</label>
+		<description>Various stuff for prepare other common types of food and drinks.</description>
+		<defNames>
+			<li>TableOven</li>
+			<li>ElectricOven</li>
+			<li>CandyTable</li>
+			<li>TableCoffee</li>
+		</defNames>
+		<designationCategory>FoodProduction</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_SpecialFoods</defName>
+		<label>special foods</label>
+		<description>Some special foods.</description>
+		<defNames>
+			<!--<li>Beehive</li>-->
+			<li>soylenttable</li>
+			<li>NutrientPasteDispenser</li>
+			<li>Hopper</li>
+			<li>VG_SaltMine</li>
+		</defNames>
+		<designationCategory>FoodProduction</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Brewery</defName>
+		<label>brewery</label>
+		<description>A work station with all the equipment needed to brew alcogol drinks.</description>
+		<defNames>
+			<li>Brewery</li>
+			<li>ElectricBrewery</li>
+			<li>UniversalFermenter</li>
+		</defNames>
+		<designationCategory>FoodProduction</designationCategory>
+		<debug>false</debug>
+		<order>50</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_DryingRack</defName>
+		<label>drying racks</label>
+		<description>Drying rack used for drying meat or leaves.</description>
+		<defNames>
+			<li>JerkyRack</li>
+			<li>DryingRack</li>
+			<li>CheeseBasin</li>
+			<li>CheeseVat</li>
+		</defNames>
+		<designationCategory>FoodProduction</designationCategory>
+		<debug>false</debug>
+		<order>60</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Fishing</defName>
+		<label>fishing</label>
+		<description>Fish industry buildings.</description>
+		<defNames>
+			<li>HSK_FishingSpotSpawner</li>
+			<li>HSK_FishTrap</li>
+			<li>AquacultureBasin</li>
+		</defNames>
+		<designationCategory>FoodProduction</designationCategory>
+		<debug>false</debug>
+		<order>70</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Hydroponics</defName>
+		<label>hydroponics</label>
+		<description>A hydroponic basin can grow plants quickly.</description>
+		<defNames>
+			<li>PrimitiveHydroponic</li>
+			<li>HydroponicsBasin</li>
+			<li>Agrarian</li>
+			<li>FungiponicsBasin</li>
+			<li>NewHydroponicsBasin</li>
+			<li>ClutterAlloyHydroponicsBasinVS</li>
+		</defNames>
+		<designationCategory>FoodProduction</designationCategory>
+		<debug>false</debug>
+		<order>80</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>

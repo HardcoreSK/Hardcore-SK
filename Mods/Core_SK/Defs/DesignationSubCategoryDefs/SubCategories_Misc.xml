@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Misc -->
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Spots</defName>
+		<label>Spots</label>
+		<description>Designates a various spots.</description>
+		<defNames>
+			<li>MarriageSpot</li>
+			<li>PartySpot</li>
+			<li>CaravanPackingSpot</li>
+			<li MayRequire="ludeon.rimworld.ideology">RitualSpot</li>
+			<li MayRequire="ludeon.rimworld.royalty">MeditationSpot</li>
+		</defNames>
+		<designationCategory>Misc</designationCategory>
+		<debug>false</debug>
+		<order>10</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Graves</defName>
+		<label>Graves</label>
+		<description>Place the deceased in graves to give them a decent final resting place.</description>
+		<defNames>
+			<li>Grave</li>
+			<li>MassGrave</li>
+			<!--<li>MassGraveAlt</li>-->
+			<li>Sarcophagus</li>
+			<li>CryptosleepCasket</li>
+		</defNames>
+		<designationCategory>Misc</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ResearchBenches</defName>
+		<label>Research benches</label>
+		<description>Researchers work here to discover new things.</description>
+		<defNames>
+			<li>PrimitiveResearchBench</li>
+			<li>SimpleResearchBench</li>
+			<li>HiTechResearchBench</li>
+			<li>FileCabinet</li>
+			<li>MultiAnalyzer</li>
+			<!--<li>CounterTopModular</li>-->
+			<li>LabStation</li>
+			<li>LabTerminal</li>
+		</defNames>
+		<designationCategory>Misc</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Trade</defName>
+		<label>Trade</label>
+		<description>Facilities used for trade and communication.</description>
+		<defNames>
+			<li>TradingSpot</li>
+			<li>OrbitalTradeBeacon</li>
+			<li>CommsConsole</li>
+			<li>Buildings_SubspaceBurstTransponder</li>
+		</defNames>
+		<designationCategory>Misc</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Scanners</defName>
+		<label>Scanners</label>
+		<description>Special scanners to detect hidden minerals.</description>
+		<defNames>
+			<li>GroundPenetratingScanner</li>
+			<li>LongRangeMineralScanner</li>
+			<li>MobileMineralSonar</li>
+			<li MayRequire="skyarkhangel.mineralscanner">GroundPenetratingScannerAdvanced</li>
+		</defNames>
+		<designationCategory>Misc</designationCategory>
+		<debug>false</debug>
+		<order>50</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Transportation</defName>
+		<label>Transportation</label>
+		<description>Arrange transportation between colonies.</description>
+		<defNames>
+			<li>PodLauncher</li>
+			<li>TransportPod</li>
+		</defNames>
+		<designationCategory>Misc</designationCategory>
+		<debug>false</debug>
+		<order>60</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Facilities</defName>
+		<label>Facilities</label>
+		<description>A special buildings that can be linked to another buildings to increase its effectiveness.</description>
+		<defNames>
+			<li>CookingTools</li>
+			<li>Small_ToolCabinet</li>
+			<li>ToolCabinet</li>
+			<li>Patterner</li>
+		</defNames>
+		<designationCategory>Misc</designationCategory>
+		<debug>false</debug>
+		<order>70</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_MFacilities</defName>
+		<label>Medical facilities</label>
+		<description>A special buildings that can be linked to another buildings to increase its effectiveness.</description>
+		<defNames>
+			<li>medieval_surg_washpan</li>
+			<li>medieval_surg_instruments</li>
+			<li>medieval_surg_lamp</li>
+			<li>industrial_surg_instruments</li>
+			<li>industrial_surg_lamp</li>
+			<li>VitalsMonitor</li>
+			<li>space_surg_instruments</li>
+			<li>space_surg_lamp</li>
+			<li>AdvancedVitalsMonitor</li>
+		</defNames>
+		<designationCategory>Misc</designationCategory>
+		<debug>false</debug>
+		<order>80</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_TrainingFacilities</defName>
+		<label>Train facilities</label>
+		<description>A special buildings that can be linked to another buildings to increase its effectiveness.</description>
+		<defNames>
+			<li>MartialArtsTarget</li>
+			<li>ShootingRangeTarget</li>
+			<li>PunchingBag</li>
+			<li>Holodeck</li>
+		</defNames>
+		<designationCategory>Misc</designationCategory>
+		<debug>false</debug>
+		<order>90</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="haplo.miscellaneous.robots">
+		<defName>SubCategory_Robots</defName>
+		<label>Robots</label>
+		<description>This stations with a specialized robot.</description>
+		<defNames>
+			<li>AIRobot_RechargeStation_Hauler</li>
+			<li>AIRobot_RechargeStation_Cleaner</li>
+			<!--<li>AIRobot_RechargeStation_GardenerBot</li>
+			<li>AIRobot_RechargeStation_CookingBot</li>-->
+		</defNames>
+		<designationCategory>Misc</designationCategory>
+		<debug>false</debug>
+		<order>100</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>

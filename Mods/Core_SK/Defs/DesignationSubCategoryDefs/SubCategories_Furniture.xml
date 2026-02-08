@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Furniture -->
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_SpecialBeds</defName>
+		<label>special beds</label>
+		<description>A special beds for some various needs.</description>
+		<defNames>
+			<li>SleepingSpot</li>
+			<li>DoubleSleepingSpot</li>
+			<li>BagBed</li>
+			<li>GuestBed</li>
+			<li>prison_single_bed_RT</li>
+			<li>prison_single_bed_LB</li>
+			<!-- These two are unlocked by certain meme 
+					Which makes them unrecognizable by architect sense
+					Will uncomment once there's a decent solution
+			-->
+			<!-- <li MayRequire="ludeon.rimworld.ideology">SlabBed</li>
+			<li MayRequire="ludeon.rimworld.ideology">SlabDoubleBed</li> -->
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+		<order>10</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="ludeon.rimworld.biotech">
+		<defName>SubCategory_KidsBeds</defName>
+		<label>kids beds</label>
+		<description>A special beds for kids.</description>
+		<defNames>
+			<li>BabySleepingSpot</li>
+			<li>TribalCrib</li>
+			<li>Crib</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+		<order>15</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_StandardBeds</defName>
+		<label>standard beds</label>
+		<description>A simple bed for one pawn.</description>
+		<defNames>
+			<li>HayBed</li>
+			<li>HideBed</li>
+			<li>Bedroll</li>
+			<li>Bed</li>
+			<li>industrial_single_bed</li>
+			<li>MilleniumBed</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_DoubleBeds</defName>
+		<label>double beds</label>
+		<description>Double-wide bed that fits two people.</description>
+		<defNames>
+			<li>HayBedDouble</li>
+			<li>HideBedDouble</li>
+			<li>BedrollDouble</li>
+			<li>DoubleBed</li>
+			<li>industrial_double_bed</li>
+			<li>RoyalBed</li>
+			<li>MilleniumDoubleBed</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_AdvancedBeds</defName>
+		<label>advanced beds</label>
+		<description>A futuristic beds with high rest effectiveness.</description>
+		<defNames>
+			<li>PodBed</li>
+			<li>space_double_bed</li>
+			<li>cryo_single_bed</li>
+			<li>cryo_double_bed</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_HospitalBeds</defName>
+		<label>hospital beds</label>
+		<description>A beds specially designed for injured people.</description>
+		<defNames>
+			<li>HospitalBed</li>
+			<li>AdvHospitalBed</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+		<order>50</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_AnimalFurniture</defName>
+		<label>animal furniture</label>
+		<description>Beds and sleeping places for animals.</description>
+		<defNames>
+			<li>AnimalSleepingSpot</li>
+			<li>AnimalSleepingBox</li>
+			<li>Chickennest</li>
+			<li>AnimalSleepingHayLeather</li>
+			<li>AnimalBed</li>
+			<li>AnimalPillow</li>
+			<li>ScratchingPole</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+		<order>60</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Seats</defName>
+		<label>seats</label>
+		<description>Stools and benches for every taste.</description>
+		<defNames>
+			<li>PrimitiveStoolWood</li>
+			<li>PrimitiveStoolStone</li>
+			<li>BacklessStool</li>
+			<li>Stool</li>
+			<li>FoldingStool</li>
+			<li>DiningChair</li>
+			<li>MilleniumChair</li>
+			<li>Bench</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+		<order>70</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ComfortableSeats</defName>
+		<label>comfortable seats</label>
+		<description>Chairs, sofas, couch for great relaxation.</description>
+		<defNames>
+			<li>SlabChair</li>
+			<li>Armchair</li>
+			<li>SimplePillow</li>
+			<li>Couch</li>
+			<li>RusticCouch</li>
+			<li>MilleniumCouch</li>
+			<li>EggArmchair</li>
+			<li>PodChair</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+		<order>80</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>SubCategory_RoyaltyStuff</defName>
+		<label>royalty stuff</label>
+		<description>Drapes, thrones for royalty person.</description>
+		<defNames>
+			<li>Throne</li>
+			<li>GrandThrone</li>
+			<li>Drape</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+		<order>90</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_TablesN</defName>
+		<label>neolitic tables</label>
+		<description>Dining tables, side tables and coffee tables.</description>
+		<defNames>
+			<li>PrimitiveTableWood</li>
+			<li>PrimitiveTableStone</li>
+			<li>TableStone</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+		<order>100</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Tables</defName>
+		<label>modern tables</label>
+		<description>Dining tables, side tables and coffee tables.</description>
+		<defNames>
+			<li>Table1x1c</li>
+			<li>Table1x2c</li>
+			<li>Table1x3c</li>
+			<li>Table2x2c</li>
+			<li>Table2x4c</li>
+			<li>Table3x3c</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+		<order>110</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_TablesM</defName>
+		<label>millenium tables</label>
+		<description>Dining tables, side tables and coffee tables.</description>
+		<defNames>
+			<li>MilleniumTableSmall</li>
+			<li>MilleniumTable1x2c</li>
+			<li>MilleniumTable1x3c</li>
+			<li>MilleniumTable</li>
+			<li>MilleniumTable2x3c</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+		<order>120</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_SpTables</defName>
+		<label>Specific tables</label>
+		<description>Specific tables.</description>
+		<defNames>
+			<li>TeaTable</li>
+			<li>JournalTable</li>
+			<li>HolographicCell</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+		<order>130</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ClothLockers</defName>
+		<label>cloth lockers</label>
+		<description>A locker that can store a set clothing for easy outfit swapping.</description>
+		<defNames>
+			<li>ClutterLocker</li>
+			<li>EndTableSimple</li>
+			<li>EndTable</li>
+			<li>Dresser</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+		<order>140</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Books</defName>
+		<label>Books</label>
+		<description>Furniture for the placement and use books.</description>
+		<defNames>
+			<li>Bookcase</li>
+			<li>BookcaseSmall</li>
+			<!-- <li>ClutterBookShelf</li> -->
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+		<order>150</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>SubCategory_SchoolStuff</defName>
+		<label>School Inventory</label>
+		<description>Teaching is the only way to preserve knowledge (except direct knowledge injections to the brain).</description>
+		<defNames>
+			<li>BlackboardTribal</li>
+			<li>SchoolDeskTribal</li>
+			<li>Blackboard</li>
+			<li>SchoolDesk</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+		<order>160</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Accessories -->
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Lights</defName>
+		<label>fueled lights</label>
+		<description>Fueled lights that need fuel for work.</description>
+		<defNames>
+			<li>TorchLamp</li>
+			<li>BowlLamp</li>
+			<li>TorchWallLamp</li>
+			<li>Candle</li>
+			<li>GlowstoneLamp</li>
+			<li>OutdoorGroundLamp</li>
+			<li>Lighting_PathLamp</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>10</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>SubCategory_DarkLamps</defName>
+		<label>dark lamps</label>
+		<description>Lamp that lights an area with dark light.</description>
+		<defNames>
+			<li>Darktorch</li>
+			<li>DarktorchFungus</li>
+			<li>Darktorch</li>
+			<li>DarklightBrazier</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>11</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Lamps</defName>
+		<label>electric lamps</label>
+		<description>Lamp that lights an area.</description>
+		<defNames>
+			<li>StandingLamp</li>
+			<li>ClutterFloorLampA</li>
+			<li>CeilingLamp</li>
+			<li>WallLamp</li>
+			<li>Lighting_WallLight</li>
+			<li>FloodLight</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_LEDLamps</defName>
+		<label>electric LED lamps</label>
+		<description>LED lamp that lights an area.</description>
+		<defNames>
+			<li>RopeLight</li>
+			<li>StandingLampLEDsmall</li>
+			<li>StandingLampLEDnormal</li>
+			<li>StandingLampLEDlarge</li>
+			<li>CeilingLEDLamp</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>21</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_FloorLight</defName>
+		<label>floor lights</label>
+		<description>A square floor light integrated into the ground.</description>
+		<defNames>
+			<li>FloorLightSquare</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_DoorMats</defName>
+		<label>Door mats</label>
+		<description>A doormat to clean your feet.</description>
+		<defNames>
+			<li>DoorMat</li>
+			<li>LT_DoorMatRed</li>
+			<li>LT_DoorMatBigRed</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_AncientRugs</defName>
+		<label>Ancient mats</label>
+		<description>An ancient rugs to make home warmer.</description>
+		<defNames>
+			<li>PatchworkRug</li>
+			<li>HayRug</li>
+			<li>CharmingRug</li>
+			<li>TribeRug</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>50</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ModernRugs</defName>
+		<label>Modern mats</label>
+		<description>A modern mats gives the room a modern style.</description>
+		<defNames>
+			<li>FutstentRug</li>
+			<li>StepRug</li>
+			<li>SquareCozyRug</li>
+			<li>SquareCozyRugB</li>
+			<li>RoundCozyRug</li>
+			<li>RoundCozyRugB</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>60</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_RoundRugs</defName>
+		<label>Round rugs</label>
+		<description>A round area rug.</description>
+		<defNames>
+			<li>OneOneRoundRug</li>
+			<li>TwoTwoRoundRug</li>
+			<li>ThreeThreeRoundRug</li>
+			<li>FourFourRoundRug</li>
+			<li>FiveFiveRoundRug</li>
+			<li>SixSixRoundRug</li>
+			<li>SevenSevenRoundRug</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>70</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_SquareRugs</defName>
+		<label>Square rugs</label>
+		<description>A small square area rug.</description>
+		<defNames>
+			<li>OneOneSquareRug</li>
+			<li>TwoTwoSquareRug</li>
+			<li>ThreeThreeSquareRug</li>
+			<li>FourFourSquareRug</li>
+			<li>FiveFiveSquareRug</li>
+			<li>SixSixSquareRug</li>
+			<li>SevenSevenSquareRug</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>80</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_RectangleRugs</defName>
+		<label>Rectangle rugs</label>
+		<description>A rectangular area rug.</description>
+		<defNames>
+			<li>ThoThreeRectangleRug</li>
+			<li>TwoFourRectangleRug</li>
+			<li>ThreeFourRectangleRug</li>
+			<li>ThreeFiveRectangleRug</li>
+			<li>FourFiveRectangleRug</li>
+			<li>FourSixRectangleRug</li>
+			<li>FourSevenRectangleRug</li>
+			<li>FiveSevenRectangleRug</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>90</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_RunnerRugs</defName>
+		<label>Runner rugs</label>
+		<description>A thin hallway rug.</description>
+		<defNames>
+			<li>OneTwoRunner</li>
+			<li>OneThreeRunner</li>
+			<li>OneFourRunner</li>
+			<li>OneFiveRunner</li>
+			<li>OneSixRunner</li>
+			<li>OneSevenRunner</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>100</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_PlantPots</defName>
+		<label>Plant pots</label>
+		<description>A plant pot can hold decorative flowers to improve the mood of people nearby.</description>
+		<defNames>
+			<li>TuskPot</li>
+			<li>PlantPot</li>
+			<li>PentaPlantPot</li>
+			<li>DecoratedPot</li>
+			<li>ElectricTreePot</li>
+			<li MayRequire="ludeon.rimworld.ideology">PlantPot_Bonsai</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>110</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>

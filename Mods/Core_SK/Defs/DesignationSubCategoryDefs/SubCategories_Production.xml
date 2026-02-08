@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Production -->
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Sawmills</defName>
+		<label>sawmill</label>
+		<description>Workbench with saw for cutting logs into planks and kindling..</description>
+		<defNames>
+			<li>TableSawmillHand</li>
+			<li>TableSawmillElectric</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+		<order>10</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Furnaces</defName>
+		<label>furnace</label>
+		<description>Previously furnace used for smelting.</description>
+		<defNames>
+			<li>Kiln</li>
+			<li>TableFurnace</li>
+			<li>ElectricSmelter</li>
+			<li>EAF</li>
+			<li>GlassworkTable</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Machining</defName>
+		<label>stonecutting</label>
+		<description>Worktable primarily used with the rocks, stone chunks, rubble or sand.</description>
+		<defNames>
+			<li>TableStonecutterNeolithic</li>
+			<li>TableStonecutter</li>
+			<li>TableMachining</li>
+			<li>TableSculpting</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Smithy</defName>
+		<label>smithy</label>
+		<description>Used to craft various weapons, apparel and devices.</description>
+		<defNames>
+			<li>FueledSmithy</li>
+			<li>ElectricSmithy</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">BioferriteShaper</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_AssemblyBench</defName>
+		<label>assembling benches</label>
+		<description>A table for the assembling of components, wires, mechanisms and advanced mechanisms.</description>
+		<defNames>
+			<li>FabricationBench</li>
+			<li>AdvToolBench</li>
+			<li>RobAssem</li>
+			<li>TableElectronics</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+		<order>50</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Conversion</defName>
+		<label>processing</label>
+		<description>Special building for processing things.</description>
+		<defNames>
+			<li>ElectricCrematorium</li>
+			<li>Saltpeter_pit</li>
+			<li>SilagePile</li>
+			<li MayRequire="Dubwise.DubsBadHygiene">BurnPit</li>
+			<li>CompostBarrel</li>
+			<li MayRequire="Dubwise.DubsBadHygiene">BiosolidsComposter</li>
+			<li>BiofuelRefinery</li>
+			<li>RockCrusher</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+		<order>60</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Mining</defName>
+		<label>mining</label>
+		<description>Accessories for mineral product mining.</description>
+		<defNames>
+			<li MayRequire="ogliss.thewhitecrayon.quarry">QRY_MiniQuarry</li>
+			<li MayRequire="ogliss.thewhitecrayon.quarry">QRY_MediQuarry</li>
+			<li MayRequire="ogliss.thewhitecrayon.quarry">QRY_Quarry</li>
+			<li MayRequire="ogliss.thewhitecrayon.quarry">QRY_Platform</li>
+			<li>DeepDrill</li>
+			<li>Extractor</li>
+			<li>RareExtractor</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+		<order>70</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Sewing</defName>
+		<label>sewing</label>
+		<description>Worktables for crafting various apparel stuff.</description>
+		<defNames>
+			<li>LeatherworkerTable</li>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+			<li>HyperTailoringBench</li>
+			<li>TableLoom</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+		<order>80</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_CraftWeapons</defName>
+		<label>weapon crafts</label>
+		<description>A workbenches with crafting weapons and ammo.</description>
+		<defNames>
+			<li>CraftingSpot</li>
+			<li>WeaponCraftingWorkTable</li>
+			<li>AdvWeaponCraftingWorkTable</li>
+			<li>HeavyArmsBench</li>
+			<li>MechWeaponCraftingWorkTable</li>
+			<li>AmmoBench</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+		<order>90</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Repair</defName>
+		<label>repairing</label>
+		<description>A workbenches for repairing your old weapons and apparel.</description>
+		<defNames>
+			<li>HandMendingWorkbench</li>
+			<li>TableMending</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+		<order>100</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ConcreteMixers</defName>
+		<label>concrete mixers</label>
+		<description>Concrete is mixed from rubble and sand.</description>
+		<defNames>
+			<li>ConcreteMixer</li>
+			<li>EConcreteMixer</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+		<order>110</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Medicine</defName>
+		<label>medicine</label>
+		<description>Tables that is used to craft various medicine and other devices.</description>
+		<defNames>
+			<li>meditable</li>
+			<li>DrugLab</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">SerumCentrifuge</li>
+			<li>TableOrganvat</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+		<order>120</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Prosthetics</defName>
+		<label>prosthetics bench</label>
+		<description>A workbench equipped for production of various prosthetics.</description>
+		<defNames>
+			<li>TablePrimitiveProsthetic</li>
+			<li>TableBasicProsthetic</li>
+			<li>TableSynthetics</li>
+			<li>TableBionics</li>
+			<li>UpgradingStation</li>
+			<li MayRequire="spoonshortage.ADogSaidAnimalProsthetics">TableAnimalProsthetics</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+		<order>130</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Hightech</defName>
+		<label>hightech devices</label>
+		<description>To build better worlds.</description>
+		<defNames>
+			<li>TableChemlab</li>
+			<li MayRequire="dubwise.rimatomics">GasCentrifuge</li>
+			<li>MatterConverter</li>
+			<li>Matterfab</li>
+			<li>HadronCollider</li>
+			<li>HadronColliderFeeder</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+		<order>140</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>

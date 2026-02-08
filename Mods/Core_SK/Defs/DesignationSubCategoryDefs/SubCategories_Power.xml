@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Power -->
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_PowerConduit</defName>
+		<label>power conduits</label>
+		<description>A set of electrical cables for moving power around.</description>
+		<defNames>
+			<li>PowerConduit</li>
+			<li>WaterproofConduit</li>
+			<li>HeavyPowerConduit</li>
+			<li>HiddenConduit</li>
+		</defNames>
+		<designationCategory>Power</designationCategory>
+		<debug>false</debug>
+		<order>10</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Switchers</defName>
+		<label>switchers</label>
+		<description>Switches power on/off.</description>
+		<defNames>
+			<li>PowerSwitch</li>
+			<li>PowerSwitchFlicker</li>
+			<li>TimerSwitch</li>
+		</defNames>
+		<designationCategory>Power</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Battery</defName>
+		<label>batteries</label>
+		<description>Stores electricity when there is excess power and yields it when there is not.</description>
+		<defNames>
+			<li>Battery</li>
+			<li>FissionBattery</li>
+		</defNames>
+		<designationCategory>Power</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_RenewablePower</defName>
+		<label>renewable power</label>
+		<description>Use power from renewable resourses.</description>
+		<defNames>
+			<li>WindTurbine</li>
+			<li>SolarGenerator</li>
+			<li>TidalGenerator</li>
+			<li>SteamGenerator</li>
+			<li>WatermillGenerator</li>
+			<li MayRequire="ludeon.rimworld.biotech">ToxifierGenerator</li>
+			<li>TKKN_SteamGenerator</li>
+			<li>GeothermalGenerator</li>
+			<li>AdvancedWindTurbine</li>
+			<li>AdvancedSolarGenerator</li>
+			<li>GauseWindTurbine</li>
+			<li>ThermoelectricGenerator</li>
+		</defNames>
+		<designationCategory>Power</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ConvectionalPower</defName>
+		<label>convectional power</label>
+		<description>Use power generation from Convectional resources of this planet.</description>
+		<defNames>
+			<li>WoodFiredGenerator</li>
+			<li>CoalPowerPlant</li>
+			<li MayRequire="ludeon.rimworld.anomaly">BioferriteGenerator</li>
+			<li>ChemfuelPoweredGenerator</li>
+			<li>FuelPowerplant</li>
+			<li>LargeFuelPowerplant</li>
+			<li>AntimatterReactor</li>
+		</defNames>
+		<designationCategory>Power</designationCategory>
+		<debug>false</debug>
+		<order>50</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_PlasmaPower</defName>
+		<label>plasma power</label>
+		<description>Build eco-friendy plasma power plants.</description>
+		<defNames>
+			<li>TeslaLightningPower</li>
+			<li>PlasmaGen</li>
+			<li>PlasmaGeothermalPlant</li>
+			<li>XenonIonTurbine</li>
+		</defNames>
+		<designationCategory>Power</designationCategory>
+		<debug>false</debug>
+		<order>60</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>

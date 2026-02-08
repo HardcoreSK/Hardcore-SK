@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Terraform -->
+    
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Terraforming</defName>
+		<label>Terraforming</label>
+		<description>Special devices for terraforming territory.</description>
+		<defNames>
+			<li>MoisturePump</li>
+			<li>FertilizerPump</li>
+		</defNames>
+		<designationCategory>SK_category_terraform</designationCategory>
+		<debug>false</debug>
+		<order>1</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_RockDirt</defName>
+		<label>Rock dirt to...</label>
+		<description>Terraform the rock dirt tile into another type.</description>
+		<order>2</order>
+		<defNames>
+			<li>RockyDirt-Sand</li>
+			<li>RockyDirt-Gravel</li>
+			<li>RockyDirt-Stone</li>
+		</defNames>
+		<designationCategory>SK_category_terraform</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Sand</defName>
+		<label>Sand to...</label>
+		<description>Terraform the sand tile into another type.</description>
+		<order>3</order>
+		<defNames>
+			<li>Sand-SoilF</li>
+			<li>Sand-Gravel</li>
+			<li>Sand-RockyDirt</li>
+			<li>Sand-WaterShallow</li>
+		</defNames>
+		<designationCategory>SK_category_terraform</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Gravel</defName>
+		<label>Gravel to...</label>
+		<description>Terraform the gravel tile into another type.</description>
+		<order>4</order>
+		<defNames>
+			<li>Gravel-SoilF</li>
+			<li>Gravel-Sand</li>
+			<li>Gravel-RockyDirt</li>
+		</defNames>
+		<designationCategory>SK_category_terraform</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Soil</defName>
+		<label>Soil to...</label>
+		<description>Gather resources from the soil tile by terraforming.</description>
+		<order>5</order>
+		<defNames>
+			<li>SoilF-RockyDirt</li>
+			<li>SoilF-Sand</li>
+			<li>SoilF-Gravel</li>
+			<li>SoilF-Marsh</li>
+			<li>SoilF-PackedDirt</li>
+		</defNames>
+		<designationCategory>SK_category_terraform</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_SoilMarshy</defName>
+		<label>Marshy soil to...</label>
+		<description>Gather resources from the soil tile by terraforming.</description>
+		<order>6</order>
+		<defNames>
+			<li>SoilMarshy-SoilF</li>
+			<li>SoilMarshy-RockyDirt</li>
+			<li>SoilMarshy-Marsh</li>
+		</defNames>
+		<designationCategory>SK_category_terraform</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Marsh</defName>
+		<label>Marsh to...</label>
+		<description>Gather resources from the soil tile by terraforming.</description>
+		<order>7</order>
+		<defNames>
+			<li>Marsh-SoilMarshy</li>
+			<li>Marsh-WaterShallow</li>
+		</defNames>
+		<designationCategory>SK_category_terraform</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_WaterShallow</defName>
+		<label>Shallow water to...</label>
+		<description>Gather resources from the soil tile by terraforming.</description>
+		<order>8</order>
+		<defNames>
+			<li>WaterShallow-Sand</li>
+			<li>WaterShallow-Marsh</li>
+			<!--<li>WaterShallow-WaterDeep</li>-->
+			<li>RiverDeposit-Marsh</li>
+		</defNames>
+		<designationCategory>SK_category_terraform</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Cultivate</defName>
+		<label>Cultivate</label>
+		<description>Gather resources from the soil tile by terraforming.</description>
+		<order>9</order>
+		<defNames>
+			<li>Stone-Topsoil</li>
+			<li>PoorSoil-MarginalSoil</li>
+			<li>MarginalSoil-Soil</li>
+			<li>LichenCoveredDirt-Soil</li>
+			<li>PackedDirt-SoilF</li>
+			<li>SoilF-SoilRich</li>
+			<li>Topsoil-DirtFert</li>
+			<li>SoilRich-SoilTilled</li>
+		</defNames>
+		<designationCategory>SK_category_terraform</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Misc</defName>
+		<label>Misc</label>
+		<description>Terraform special tiles</description>
+		<order>10</order>
+		<defNames>
+			<li>Salt-RockyDirt</li>
+			<li>Stone-RockyDirt</li>
+			<li>WaterDeep-WaterShallow</li>
+			<li>Ice-WaterShallow</li>
+			<li>Wasteland-Gravel</li>
+		</defNames>
+		<designationCategory>SK_category_terraform</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Gather</defName>
+		<label>Gather</label>
+		<description>Gather resources from tiles</description>
+		<order>11</order>
+		<defNames>
+			<li>Peat-WaterShallow</li>
+			<li>Peat-SoilRich</li>
+			<li>Peat-SavannaSoil</li>
+			<li>SoftClay-WaterShallow</li>
+			<li>SoftClay-SoilRich</li>
+		</defNames>
+		<designationCategory>SK_category_terraform</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>

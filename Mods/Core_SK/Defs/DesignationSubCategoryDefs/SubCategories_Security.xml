@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Security -->
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Fortifications</defName>
+		<label>fortifications</label>
+		<description>Manned medieval siege weapons.</description>
+		<defNames>
+			<li>chevalDeFrise</li>
+			<li>Sandbags</li>
+			<li>Barricade</li>
+			<li>CE_Embrasure</li>
+			<li>CE_BarbedWire</li>
+			<li>Moat</li>
+			<li MayRequire="ViTech.MedievalOverhaul">StakeWall</li>
+			<li MayRequire="ViTech.MedievalOverhaul">Valli</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+		<order>10</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Traps</defName>
+		<label>traps and bombs</label>
+		<description>Special traps for defend.</description>
+		<defNames>
+			<li>TrapSpike</li>
+			<li>TrapIED_HighExplosive</li>
+			<li>TrapIED_Incendiary</li>
+			<li>TrapIED_EMP</li>
+			<li>TrapIED_Firefoam</li>
+			<li>TrapIED_AntigrainWarhead</li>
+			<li>TrapIED_Smoke</li>
+			<li MayRequire="ludeon.rimworld.biotech">TrapIED_ToxGas</li>
+			<li MayRequire="ludeon.rimworld.anomaly">TrapIED_Deadlife</li>
+			<li MayRequire="ludeon.rimworld.odyssey">HunterDroneTrap</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
+        <defName>SubCategory_Napalm</defName>
+        <label>napalm</label>
+        <description>Napalm, son. Nothing else in the world smells like that.\nI love the smell of napalm in the morning. You know, one time we had a hill bombed, for 12 hours. When it was all over, I walked up. We didn’t find one of 'em, not one stinkin' dink body. The smell, you know that gasoline smell, the whole hill. Smelled like… victory.\nSomeday this war’s gonna end…</description>
+        <defNames>
+            <li>NapalmBomb</li>
+            <li>Filth_NapalmTrail</li>
+            <li>SparkGrid</li>
+        </defNames>
+        <designationCategory>Security</designationCategory>
+        <debug>false</debug>
+		<order>30</order>
+    </ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_MedievalTurrets</defName>
+		<label>medieval weapons</label>
+		<description>Manned medieval siege weapons.</description>
+		<defNames>
+			<li>MedievalTimes_Ballista</li>
+			<li>Medieval_Catapult</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Machineguns</defName>
+		<label>machineguns</label>
+		<description>Various types of mounted machineguns.</description>
+		<defNames>
+			<li>Turret_M240B</li>
+			<li>Turret_KPV</li>
+			<li>Turret_M2Browning</li>
+			<li>Turret_Minigun</li>
+			<li MayRequire="ArpoMo6.HMC.USSRWP">Turret_NSV_HMC</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+		<order>50</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Mortars</defName>
+		<label>mortars</label>
+		<description>Various types of grenade launchers.</description>
+		<defNames>
+			<li>Turret_AGSThirty</li>
+			<li>Turret_AGLGrenadeLauncher</li>
+			<li>Turret_Mortar</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+		<order>60</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Cannons</defName>
+		<label>artillery</label>
+		<description>Various types of cannon weapons.</description>
+		<defNames>
+			<li>Turret_Flak</li>
+			<li>Turret_Cannon</li>
+			<li>HowitzerTurretGun</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+		<order>70</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_RocketLaunchers</defName>
+		<label>rocket launchers</label>
+		<description>A huge power missile systems.</description>
+		<defNames>
+			<li>Turret_TOWLauncher</li>
+			<li>LightMissileSystem</li>
+			<li>MediumMissileSystem</li>
+			<li>RLGun</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+		<order>80</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_SentryTurrets</defName>
+		<label>sentry turrets</label>
+		<description>An AI-controlled turret that automatically fires at nearby enemies.</description>
+		<defNames>
+			<li>Turret_MiniTurret</li>
+			<li>Turret_Autocannon</li>
+			<li>Turret_Blaster</li>
+			<li>Turret_Sniper</li>
+			<li>NavalGunTurretGun</li>
+			<li>Turret_SentryRocketLauncher</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+		<order>90</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ACannons</defName>
+		<label>sentry cannons</label>
+		<description>Various types of automatic cannon weapons.</description>
+		<defNames>
+			<li>Turret_Oerlikonautocannon</li>
+			<li>Turret_VulcanCannon</li>
+			<li>AvengerTurretGun</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+		<order>100</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimatomics">
+		<defName>SubCategory_EnergyWeapons</defName>
+		<label>advanced sentry weapons</label>
+		<description>Various advanced weapons.</description>
+		<defNames>
+			<li>PPCTeslaCoil</li>
+			<li>PPCHEL</li>
+			<li>PPCRailgun</li>
+			<li>PPCObelisk</li>
+			<li>PPCMarauder</li>
+			<li>MissileSilo</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+		<order>110</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimatomics">
+		<defName>SubCategory_WeaponsUtilities</defName>
+		<label>support systems</label>
+		<description>Various support systems.</description>
+		<defNames>
+			<li>PPCWeaponsConsole</li>
+			<li>RimatomicsShieldGenerator</li>
+			<li>PPCADS</li>
+			<li>PPC</li>
+			<li>RadarDish</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+		<order>120</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>

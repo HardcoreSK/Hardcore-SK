@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--DLC categories-->
+    <!--Biotech-->
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_GenesStations</defName>
+		<label>Genetics</label>
+		<description>Devices for gene modification, storage and extraction.</description>
+		<defNames>
+			<li>GeneAssembler</li>
+            <li>GeneExtractor</li>
+            <li MayRequire="RedMattis.GeneExtractor">GET_GeneExtractor_II</li>
+            <li MayRequire="RedMattis.GeneExtractor">GET_GeneExtractor_III</li>
+            <li MayRequire="RedMattis.GeneExtractor">GET_GeneExtractor_IV</li>
+			<li>GeneProcessor</li>
+			<li>GeneBank</li>
+		</defNames>
+		<designationCategory>Biotech</designationCategory>
+		<debug>false</debug>
+		<order>10</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_GemoStations</defName>
+		<label>Deathrest</label>
+		<description>Deathrest services.</description>
+		<defNames>
+			<li>DeathrestCasket</li>
+            <li>Hemopump</li>
+			<li>HemogenAmplifier</li>
+			<li>GlucosoidPump</li>
+			<li>PsychofluidPump</li>
+			<li>DeathrestAccelerator</li>
+		</defNames>
+		<designationCategory>Biotech</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef> 
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_MechRechargers</defName>
+		<label>Mechanoid recharger</label>
+		<description>Maintain stable power supply with these devices!</description>
+		<defNames>
+			<li>BasicRecharger</li>
+			<li>StandardRecharger</li>
+		</defNames>
+		<designationCategory>Biotech</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_MechGestators</defName>
+		<label>Mechanoid gestators</label>
+		<description>Create new mechanoids with these devices!</description>
+		<defNames>
+			<li>MechGestator</li>
+			<li>LargeMechGestator</li>
+		</defNames>
+		<designationCategory>Biotech</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_MechSubcores</defName>
+		<label>Subcores stations</label>
+		<description>Make new subcores for your mechanoids with these devices!</description>
+		<defNames>
+			<li>SubcoreEncoder</li>
+			<li>SubcoreSoftscanner</li>
+			<li>SubcoreRipscanner</li>
+		</defNames>
+		<designationCategory>Biotech</designationCategory>
+		<debug>false</debug>
+		<order>50</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <!--Anomaly-->
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_HoldingDevices</defName>
+		<label>Holding Devices</label>
+		<description>Secure. Contain. Protect.</description>
+		<defNames>
+			<li>HoldingSpot</li>
+            <li>HoldingPlatform</li>
+			<li>BioferriteHarvester</li>
+			<li>ElectricInhibitor</li>
+			<li>ShardInhibitor</li>
+			<li>Electroharvester</li>
+		</defNames>
+		<designationCategory>Anomaly</designationCategory>
+		<debug>false</debug>
+		<order>10</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_DarkRituals</defName>
+		<label>Dark Rutuals</label>
+		<description>A summoning of horrors beyond our comprehension, what could go wrong?</description>
+		<defNames>
+			<li>PsychicRitualSpot</li>
+            <li>ShardBeacon</li>
+		</defNames>
+		<designationCategory>Anomaly</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_EffectProjectors</defName>
+		<label>Effect Projectors</label>
+		<description>If you constantly whisper something directly into the colonists' heads, they will certainly be happy.</description>
+		<defNames>
+			<li>SleepSuppressor</li>
+            <li>FrenzyInducer</li>
+		</defNames>
+		<designationCategory>Anomaly</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <!--Odyssey-->
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_GravStructures</defName>
+		<label>Gravship Structures</label>
+		<description>Everything starts with a wall.</description>
+		<defNames>
+			<li>Substructure</li>
+			<li>GravshipHull</li>
+			<li>VacBarrier</li>
+		</defNames>
+		<designationCategory>Odyssey</designationCategory>
+		<debug>false</debug>
+		<order>10</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_GravSystems</defName>
+		<label>Gravship Systems</label>
+		<description>Dont forget to turn oxygen on!</description>
+		<defNames>
+			<li>PilotConsole</li>
+			<li>GravcorePowerCell</li>
+			<li>OxygenPump</li>
+			<li>SignalJammer</li>
+			<li>GravFieldExtender</li>
+		</defNames>
+		<designationCategory>Odyssey</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_GravFuelTanks</defName>
+		<label>Fuel Tanks</label>
+		<description>Always carry a bt more than enough.</description>
+		<defNames>
+			<li>ChemfuelTank</li>
+			<li>LargeChemfuelTank</li>
+		</defNames>
+		<designationCategory>Odyssey</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_GravThrusters</defName>
+		<label>Thrusters</label>
+		<description>I am the speed.</description>
+		<defNames>
+			<li>SmallThruster</li>
+			<li>LargeThruster</li>
+		</defNames>
+		<designationCategory>Odyssey</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>

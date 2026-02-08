@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Storage -->
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Containers</defName>
+		<label>Uncovered Storage</label>
+		<description>General indoor storage.</description>
+		<defNames>
+			<li>Shelf</li>
+			<li>ShelfSmall</li>
+			<li>SK_BigShelf</li> <!-- Wall shelf -->
+			<li>DisplayCase</li>
+			<li>BinRack</li>
+		</defNames>
+		<designationCategory>ASFstorage</designationCategory>
+		<debug>false</debug>
+		<order>10</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_OutdoorStorage</defName>
+		<label>Covered Storage</label>
+		<description>General storage which protects from the elements.</description>
+		<defNames>
+			<li>Basket</li>
+			<li>Sack</li>
+			<li>Barrel</li>
+			<li>Chest</li>
+			<li>IndustrialChest</li>
+			<li>Shed</li>
+		</defNames>
+		<designationCategory>ASFstorage</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Pallets</defName>
+		<label>Warehouse Storage</label>
+		<description>Uncategorized industrial storage which doesn't protect contents from the elements.</description>
+		<defNames>
+			<li>PalletSmall</li>
+			<li>SK_Pallet</li>
+			<li>SK_DeepStorage_Skip</li>
+			<li>SK_VeryBigShelf</li>
+			<li>PalletRack</li>
+		</defNames>
+		<designationCategory>ASFstorage</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ApparelStorage</defName>
+		<label>Apparel and textiles</label>
+		<description>Haulers carry apparel here for storage.</description>
+		<defNames>
+			<li>Commode</li>
+			<li>TextileRack</li>
+		</defNames>
+		<designationCategory>ASFstorage</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_AmmoContainers</defName>
+		<label>Arsenal</label>
+		<description>Stores and safeguard weapons and ammo.</description>
+		<defNames>
+			<li>SK_WeaponsCabinet</li>
+			<li>Storage_HazMatContainer</li>
+			<li>Storage_ExplosiveContainer</li>
+			<li>SK_WeaponsLocker</li>
+			<li>ClutterLockerA</li>
+		</defNames>
+		<designationCategory>ASFstorage</designationCategory>
+		<debug>false</debug>
+		<order>50</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_FoodContainers</defName>
+		<label>Food Storage</label>
+		<description>Stores or preserves food and drugs.</description>
+		<defNames>
+			<li>Pot</li>
+			<li>RootCellar</li>
+			<li>SK_Meat_Hook</li>
+			<li>TrayRackSingle</li>
+			<li>BarShelf</li>
+			<li>SK_Medicine_Cabinet</li>
+			<li>FoodDisplayCounter</li>
+		</defNames>
+		<designationCategory>ASFstorage</designationCategory>
+		<debug>false</debug>
+		<order>60</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Shelfs</defName>
+		<label>Barn Storage</label>
+		<description>Stores everything from seeds to feed.</description>
+		<defNames>
+			<li>FabricHamperSingle</li>
+			<li>EggBox</li>
+			<li>FeedingBowl</li>
+			<li>SK_Hayloft</li>
+		</defNames>
+		<designationCategory>ASFstorage</designationCategory>
+		<debug>false</debug>
+		<order>70</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Refrigerators</defName>
+		<label>Refrigerators</label>
+		<description>Uses electricity to preserve food.</description>
+		<defNames>
+			<li>RimFridge_Refrigerator</li>
+			<li>RimFridge_WallRefrigerator</li>
+			<li>RimFridge_SingleRefrigerator</li>
+			<li>RimFridge_SingleWallRefrigerator</li>
+			<li>RimFridge_QuadRefrigerator</li>
+		</defNames>
+		<designationCategory>ASFstorage</designationCategory>
+		<debug>false</debug>
+		<order>80</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>
