@@ -15,21 +15,6 @@
 		<statBases>
 			<DeteriorationRate>1.0</DeteriorationRate>
 		</statBases>
-		<recipeMaker>
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-			<workSkillLearnPerTick>0.8</workSkillLearnPerTick>	  
-			<workSkill>Crafting</workSkill>
-			<workAmount>3000</workAmount>
-			<effectWorking>Smith</effectWorking>
-			<soundWorking>EPOEAssembling</soundWorking>
-			<unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
-			<skillRequirements>
-				<Crafting>3</Crafting>
-			</skillRequirements>
-			<recipeUsers>
-				<li>TableBasicProsthetic</li>
-			</recipeUsers>
-		</recipeMaker>
 	</ThingDef>
 
 	<HediffDef Name="HediffBodyPartBase_Simple" ParentName="ImplantHediffBase" Abstract="True">
@@ -69,6 +54,15 @@
 			<Glass>10</Glass>
 		</costList>
 		<recipeMaker>
+			<workSpeedStat>SmithingSpeed</workSpeedStat> 
+			<workSkill>Crafting</workSkill>
+			<workAmount>3000</workAmount>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>EPOEAssembling</soundWorking>
+			<unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+			<recipeUsers>
+				<li>TableBasicProsthetic</li>
+			</recipeUsers>
 			<productCount>1</productCount>
 			<skillRequirements>
 				<Crafting>5</Crafting>
@@ -165,17 +159,6 @@
 			<Mass>0.3</Mass>
 			<MaxHitPoints>35</MaxHitPoints>
 		</statBases>
-		<costList>
-			<ComponentIndustrial>6</ComponentIndustrial>
-			<Plastic>7</Plastic>
-		</costList>
-		<recipeMaker>
-			<productCount>1</productCount>
-			<skillRequirements>
-				<Crafting>7</Crafting>
-			</skillRequirements>
-			<researchPrerequisite>Prosthesis_making_C2</researchPrerequisite>
-		</recipeMaker>
 	</ThingDef>
 
 	<HediffDef ParentName="HediffBodyPartBase_Simple">
@@ -255,19 +238,6 @@
 			<Mass>2</Mass>
 			<MaxHitPoints>60</MaxHitPoints>
 		</statBases>
-		<costList>
-			<ComponentIndustrial>6</ComponentIndustrial>
-			<Plastic>10</Plastic>
-			<Mechanism>2</Mechanism>
-			<Rubber>9</Rubber>
-		</costList>
-		<recipeMaker>
-			<productCount>1</productCount>
-			<skillRequirements>
-				<Crafting>5</Crafting>
-			</skillRequirements>
-			<researchPrerequisite>Prosthesis_making_C2</researchPrerequisite>
-		</recipeMaker>
 	</ThingDef>
 
 	<HediffDef ParentName="HediffBodyPartBase_Simple">
@@ -348,19 +318,6 @@
 			<Mass>2</Mass>
 			<MaxHitPoints>75</MaxHitPoints>
 		</statBases>
-		<costList>
-			<ComponentIndustrial>6</ComponentIndustrial>
-			<Plastic>12</Plastic>
-			<Mechanism>2</Mechanism>
-			<Rubber>12</Rubber>
-		</costList>
-		<recipeMaker>
-			<productCount>1</productCount>
-			<skillRequirements>
-				<Crafting>5</Crafting>
-			</skillRequirements>
-			<researchPrerequisite>Prosthesis_making_C2</researchPrerequisite>
-		</recipeMaker>
 	</ThingDef>
 
 	<HediffDef ParentName="HediffBodyPartBase_Simple">
@@ -645,19 +602,6 @@
 			<Mass>2</Mass>
 			<MaxHitPoints>75</MaxHitPoints>
 		</statBases>
-		<costList>
-			<ComponentIndustrial>8</ComponentIndustrial>
-			<Plastic>10</Plastic>
-			<Mechanism>3</Mechanism>
-			<Rubber>8</Rubber>
-		</costList>
-		<recipeMaker>
-			<productCount>1</productCount>
-			<skillRequirements>
-				<Crafting>5</Crafting>
-			</skillRequirements>
-			<researchPrerequisite>Prosthesis_making_C2</researchPrerequisite>
-		</recipeMaker>
 	</ThingDef>	
 
 	<HediffDef ParentName="HediffBodyPartBase_Simple">

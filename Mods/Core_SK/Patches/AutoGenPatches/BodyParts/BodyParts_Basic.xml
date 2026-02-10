@@ -156,23 +156,8 @@
             <techHediffsTags>
                 <li>Common</li>
             </techHediffsTags>
-            <!--<stuffCategories>
-                <li>Fabric</li>
-            </stuffCategories>
-            <costStuffCount>10</costStuffCount>-->
-            <costList>
-                <Cloth>20</Cloth>
-                <ElectronicComponents>1</ElectronicComponents>
-                <Wire>2</Wire>
-                <ComponentMedieval>1</ComponentMedieval>
-            </costList>
-            <recipeMaker>
-                <productCount>1</productCount>
-                <skillRequirements>
-                    <Crafting>3</Crafting>
-                </skillRequirements>
-                <researchPrerequisite>Prosthesis_making_B1</researchPrerequisite>
-            </recipeMaker>
+            <costList Inherit="False" IsNull="True"/>
+            <recipeMaker Inherit="False" IsNull="True"/>
         </value>
     </Operation>
 
@@ -239,18 +224,8 @@
                 <Mass>2</Mass>
                 <MaxHitPoints>30</MaxHitPoints>
             </statBases>
-            <costList>
-                <ComponentIndustrial>6</ComponentIndustrial>
-                <ComponentMedieval>3</ComponentMedieval>
-                <Mechanism>4</Mechanism>
-            </costList>
-            <recipeMaker>
-                <productCount>1</productCount>
-                <skillRequirements>
-                    <Crafting>6</Crafting>
-                </skillRequirements>
-                <researchPrerequisite>Prosthesis_making_C2</researchPrerequisite>
-            </recipeMaker>
+            <costList Inherit="False" IsNull="True"/>
+            <recipeMaker Inherit="False" IsNull="True"/>
         </value>
     </Operation>
 

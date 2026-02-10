@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef Name="MakeSimpleImplantBase" Abstract="True">
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <!--<workSkillLearnPerTick>0.8</workSkillLearnPerTick>-->
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>EPOEAssembling</soundWorking>
+        <unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <recipeUsers>
+            <li>TableBasicProsthetic</li>
+        </recipeUsers>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="MakeSimpleImplantBase">
+        <defName>CreateArtificialNose</defName>
+        <label>make Artificial Nose</label>
+        <description>Replaces missing hands. Way more comfortable and less frightening than the hook hand.</description>
+        <jobString>making artificial nose</jobString>
+        <researchPrerequisite>Prosthesis_making_B1</researchPrerequisite>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentMedieval</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SilverBar</li>
+                        <li>TinBar</li>
+                        <li>GoldBar</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+					<categories>
+						<li>Wooden</li>
+					</categories>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+					<categories>
+						<li>Leathers</li>
+					</categories>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <products>
+            <ArtificialNose>1</ArtificialNose>
+        </products>
+        <skillRequirements>
+            <Crafting>4</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+
+    <RecipeDef ParentName="MakeSimpleImplantBase">
+        <defName>CreateSimpleProstheticHand</defName>
+        <label>make Simple Prosthetic Hand</label>
+        <description>Replaces missing hands. Way more comfortable and less frightening than the hook hand.</description>
+        <jobString>making simple prosthetic hand</jobString>
+        <researchPrerequisite>Prosthesis_making_B1</researchPrerequisite>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentMedieval</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Mechanism</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>SLDBar</li>
+                        <li>USLDBar</li>
+                    </categories>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+					<categories>
+						<li>Wooden</li>
+					</categories>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <products>
+            <SimpleProstheticHand>1</SimpleProstheticHand>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="MakeSimpleImplantBase">
+        <defName>CreateSimpleProstheticArm</defName>
+        <label>make Simple Prosthetic Arm</label>
+        <description>A simple but durable arm prosthesis.</description>
+        <jobString>making simple prosthetic arm</jobString>
+        <researchPrerequisite>Prosthesis_making_B1</researchPrerequisite>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentMedieval</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Mechanism</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>SLDBar</li>
+                        <li>USLDBar</li>
+                    </categories>
+                </filter>
+                <count>30</count>
+            </li>
+            <li>
+                <filter>
+					<categories>
+						<li>Wooden</li>
+					</categories>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <products>
+            <SimpleProstheticArm>1</SimpleProstheticArm>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="MakeSimpleImplantBase">
+        <defName>CreateSimpleProstheticFoot</defName>
+        <label>make Simple Prosthetic Foot</label>
+        <description>Replaces missing feet. Not as cheap as a wood log.</description>
+        <jobString>making simple prosthetic foot</jobString>
+        <researchPrerequisite>Prosthesis_making_B1</researchPrerequisite>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentMedieval</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Mechanism</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>SLDBar</li>
+                        <li>USLDBar</li>
+                    </categories>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+					<categories>
+						<li>Wooden</li>
+					</categories>
+                </filter>
+                <count>15</count>
+            </li>
+        </ingredients>
+        <products>
+            <SimpleProstheticFoot>1</SimpleProstheticFoot>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="MakeSimpleImplantBase">
+        <defName>CreateSimpleProstheticLeg</defName>
+        <label>make Simple Prosthetic Leg</label>
+        <description>Simple prosthesis made to replace missing leg. Not very comfortable but quite efficient.</description>
+        <jobString>making simple prosthetic leg</jobString>
+        <researchPrerequisite>Prosthesis_making_B1</researchPrerequisite>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentMedieval</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Mechanism</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>SLDBar</li>
+                        <li>USLDBar</li>
+                    </categories>
+                </filter>
+                <count>40</count>
+            </li>
+            <li>
+                <filter>
+					<categories>
+						<li>Wooden</li>
+					</categories>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <products>
+            <SimpleProstheticLeg>1</SimpleProstheticLeg>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="MakeSimpleImplantBase">
+        <defName>CreateArtificialPelvis</defName>
+        <label>make Artificial Pelvis</label>
+        <description>Replaces a missing pelvis. Pretty useful if crawling is not your favourite kind of moving around.</description>
+        <jobString>making artificial pelvis</jobString>
+        <researchPrerequisite>Prosthesis_making_C1</researchPrerequisite>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>6</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Mechanism</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>SLDBar</li>
+                        <li>USLDBar</li>
+                    </categories>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <products>
+            <ArtificialPelvis>1</ArtificialPelvis>
+        </products>
+        <skillRequirements>
+            <Crafting>7</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+
+    <RecipeDef ParentName="MakeSimpleImplantBase">
+        <defName>CreateCochlearImplant</defName>
+        <label>make Cochlear Implant</label>
+        <description>An implant which replaces normal hearing. An external microphone transmits a sound signal to electrodes wrapped around the inner ear's auditory sensing nerves. The electrodes stimulate the nerves according to the sound, creating a sensation of hearing. It's not as good as a natural ear, but it's a lot better than being deaf.</description>
+        <jobString>making cochlear implant</jobString>
+        <researchPrerequisite>Prosthesis_making_C2</researchPrerequisite>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Wire</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ElectronicComponents</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Textiles</li>
+                    </categories>
+                </filter>
+                <count>15</count>
+            </li>
+        </ingredients>
+        <products>
+            <CochlearImplant>1</CochlearImplant>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="MakeSimpleImplantBase">
+        <defName>CreateSimpleProstheticHeart</defName>
+        <label>make Simple Prosthetic Heart</label>
+        <description>A heart prosthesis. It contains an electric motor that pumps blood smoothly around the body. Users often report feeling tired, but it's better than the alternative.</description>
+        <jobString>making simple prosthetic heart</jobString>
+        <researchPrerequisite>Prosthesis_making_C2</researchPrerequisite>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Wire</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ElectronicComponents</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>SLDBar</li>
+                        <li>USLDBar</li>
+                    </categories>
+                </filter>
+                <count>15</count>
+            </li>
+        </ingredients>
+        <products>
+            <SimpleProstheticHeart>1</SimpleProstheticHeart>
+        </products>
+        <skillRequirements>
+            <Crafting>7</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+</Defs>

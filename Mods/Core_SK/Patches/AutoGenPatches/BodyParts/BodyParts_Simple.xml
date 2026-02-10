@@ -16,19 +16,8 @@
                 <Mass>8</Mass>
                 <MaxHitPoints>90</MaxHitPoints>
             </statBases>
-            <costList>
-                <ComponentIndustrial>12</ComponentIndustrial>
-                <Plastic>15</Plastic>
-                <Mechanism>4</Mechanism>
-                <Rubber>12</Rubber>
-            </costList>
-            <recipeMaker>
-                <productCount>1</productCount>
-                <skillRequirements>
-                    <Crafting>5</Crafting>
-                </skillRequirements>
-                <researchPrerequisite>Prosthesis_making_C2</researchPrerequisite>
-            </recipeMaker>
+            <costList Inherit="False" IsNull="True"/>
+            <recipeMaker Inherit="False" IsNull="True"/>
         </value>
     </Operation>
 
@@ -105,19 +94,8 @@
                 <Mass>2</Mass>
                 <MaxHitPoints>90</MaxHitPoints>
             </statBases>
-            <costList>
-                <ComponentIndustrial>10</ComponentIndustrial>
-                <Plastic>11</Plastic>
-                <Mechanism>4</Mechanism>
-                <Rubber>11</Rubber>
-            </costList>
-            <recipeMaker>
-                <productCount>1</productCount>
-                <skillRequirements>
-                    <Crafting>5</Crafting>
-                </skillRequirements>
-                <researchPrerequisite>Prosthesis_making_C2</researchPrerequisite>
-            </recipeMaker>
+            <costList Inherit="False" IsNull="True"/>
+            <recipeMaker Inherit="False" IsNull="True"/>
         </value>
     </Operation>
 
