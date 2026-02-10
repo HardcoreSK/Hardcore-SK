@@ -3,7 +3,7 @@
 
     <!--======================= Источник имплантов DLC Odyssey ================================-->
 
-    <Operation Class="Verse.PatchOperationAdd">
+    <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="BloodWarmer"]</xpath>
         <value>
             <graphicData>
@@ -15,7 +15,7 @@
         </value>
     </Operation>
   
-    <Operation Class="Verse.PatchOperationAdd">
+    <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="PilotAssistant"]</xpath>
         <value>
             <graphicData>
@@ -27,7 +27,7 @@
         </value>
     </Operation>
   
-    <Operation Class="Verse.PatchOperationAdd">
+    <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="VacskinGland"]</xpath>
         <value>
             <graphicData>

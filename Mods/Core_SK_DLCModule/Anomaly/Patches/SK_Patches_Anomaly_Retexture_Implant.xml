@@ -4,7 +4,7 @@
     <!--======================= Источник имплантов DLC Anomaly ================================-->
 
     <!-- Позвонки ревенанта -->
-    <Operation Class="Verse.PatchOperationAdd">
+    <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="RevenantVertebrae"]</xpath>
         <value>
             <graphicData>
@@ -17,7 +17,7 @@
     </Operation>
   
     <!-- Разъедаюзее сердце -->
-    <Operation Class="Verse.PatchOperationAdd">
+    <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="CorrosiveHeart"]</xpath>
         <value>
             <graphicData>
@@ -30,7 +30,7 @@
     </Operation>
   
     <!-- Шип упыря -->
-    <Operation Class="Verse.PatchOperationAdd">
+    <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="GhoulBarbs"]</xpath>
         <value>
             <graphicData>
@@ -43,7 +43,7 @@
     </Operation>
   
     <!-- Пластины упыря -->
-    <Operation Class="Verse.PatchOperationAdd">
+    <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="GhoulPlating"]</xpath>
         <value>
             <graphicData>
@@ -56,7 +56,7 @@
     </Operation>
   
     <!-- Сердце с железной кровью -->
-    <Operation Class="Verse.PatchOperationAdd">
+    <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="MetalbloodHeart"]</xpath>
         <value>
             <graphicData>
@@ -69,7 +69,7 @@
     </Operation>
   
     <!-- Адреналиновое сердце -->
-    <Operation Class="Verse.PatchOperationAdd">
+    <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="AdrenalHeart"]</xpath>
         <value>
             <graphicData>
