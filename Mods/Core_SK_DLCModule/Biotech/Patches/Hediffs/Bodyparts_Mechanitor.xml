@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="SK.PatchOperationReplaceExtended">
+                <xpath>Defs/ThingDef[@Name="MechanitorImplantCraftableBase"]</xpath>
+                <value>
+                    <recipeMaker DeepReplace="True">
+                        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+                        <recipeUsers>
+                            <li>TableSynthetics</li>
+                        </recipeUsers>
+                        <useIngredientsForColor>false</useIngredientsForColor>
+                        <workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+                        <workSkill>Crafting</workSkill>
+                        <effectWorking>Smith</effectWorking>
+                        <soundWorking>EPOEAssembling</soundWorking>
+                        <skillRequirements>
+                            <Crafting>11</Crafting>
+                        </skillRequirements>
+                    </recipeMaker>
+                </value>
+            </li>
+            <li Class="SK.PatchOperationReplaceExtended">
+                <xpath>Defs/ThingDef[defName="ControlSublink"]</xpath>
+                <value>
+                    <costList DeepReplace="True">
+                        <SignalChip>1</SignalChip>
+                        <ComponentIndustrial>4</ComponentIndustrial>
+                        <Electronics>2</Electronics>
+                    </costList>
+                </value>
+            </li>
+            <li Class="SK.PatchOperationReplaceExtended">
+                <xpath>Defs/ThingDef[defName="ControlSublinkHigh"]</xpath>
+                <value>
+                    <costList DeepReplace="True">
+                        <SignalChip>1</SignalChip>
+                        <ComponentAdvanced>4</ComponentAdvanced>
+                        <Microchips>2</Microchips>
+                    </costList>
+                </value>
+            </li>
+            <li Class="SK.PatchOperationReplaceExtended">
+                <xpath>Defs/ThingDef[defName="RemoteRepairer"]</xpath>
+                <value>
+                    <costList DeepReplace="True">
+                        <PowerfocusChip>1</PowerfocusChip>
+                        <ComponentIndustrial>5</ComponentIndustrial>
+                        <ElectronicComponents>3</ElectronicComponents>
+                        <Electronics>2</Electronics>
+                    </costList>
+                </value>
+            </li>
+            <li Class="SK.PatchOperationReplaceExtended">
+                <xpath>Defs/ThingDef[defName="MechFormfeeder"]</xpath>
+                <value>
+                    <costList DeepReplace="True">
+                        <SignalChip>1</SignalChip>
+                        <ComponentIndustrial>1</ComponentIndustrial>
+                        <ElectronicComponents>1</ElectronicComponents>
+                        <Electronics>1</Electronics>
+                    </costList>
+                </value>
+            </li>
+            <li Class="SK.PatchOperationReplaceExtended">
+                <xpath>Defs/ThingDef[defName="RemoteShielder"]</xpath>
+                <value>
+                    <costList DeepReplace="True">
+                        <PowerfocusChip>1</PowerfocusChip>
+                        <ComponentAdvanced>5</ComponentAdvanced>
+                        <Electronics>3</Electronics>
+                        <Microchips>3</Microchips>
+                    </costList>
+                </value>
+            </li>
+            <li Class="SK.PatchOperationReplaceExtended">
+                <xpath>Defs/ThingDef[defName="RepairProbe"]</xpath>
+                <value>
+                    <costList DeepReplace="True">
+                        <NanostructuringChip>1</NanostructuringChip>
+                        <ComponentSpacer>3</ComponentSpacer>
+                        <Microchips>3</Microchips>
+                    </costList>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

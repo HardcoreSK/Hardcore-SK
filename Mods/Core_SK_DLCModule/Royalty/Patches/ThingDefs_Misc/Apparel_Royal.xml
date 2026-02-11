@@ -1,4 +1,5 @@
-﻿<Patch>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="ApparelShirtRoyalTier2Base" or @Name="ApparelVestRoyalTier5Base" or @Name="ApparelHatRoyalTier2Fabric" or defName= "Apparel_RobeRoyal" or defName= "Apparel_Cape" or defName= "Apparel_Beret"]/stuffCategories</xpath>

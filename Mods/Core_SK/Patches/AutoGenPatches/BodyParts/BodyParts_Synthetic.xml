@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="BionicHeart" or
+                            defName="BionicStomach"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.BodyPartBase_SyntheticDummy</value>
+    </Operation>
+
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="BionicStomach"]</xpath>
         <value>

@@ -47,6 +47,20 @@
 				<GermResistance>0.55</GermResistance>
 				<GermContainment>0.65</GermContainment>
 			</equippedStatOffsets>
+            <recipeMaker DeepReplace="True" Inherit="False">
+                <workSpeedStat>TailoringSpeed</workSpeedStat>
+                <workSkill>Crafting</workSkill>
+                <effectWorking>Smith</effectWorking>
+                <soundWorking>Recipe_Machining</soundWorking>
+                <unfinishedThingDef>UnfinishedMask</unfinishedThingDef>
+                <researchPrerequisite>Fabrication</researchPrerequisite>
+                <skillRequirements>
+                    <Crafting>9</Crafting>
+                </skillRequirements>
+                <recipeUsers>
+                    <li>ElectricTailoringBench</li>
+                </recipeUsers>
+            </recipeMaker>
 			<apparel>
 				<countsAsClothingForNudity>false</countsAsClothingForNudity>
 				<developmentalStageFilter>Child, Adult</developmentalStageFilter>

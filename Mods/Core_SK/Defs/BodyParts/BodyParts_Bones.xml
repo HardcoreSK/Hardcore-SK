@@ -30,40 +30,82 @@
 		<tradeTags>
 			<li>Exotic</li>
 		</tradeTags>
-		<costList>
-			<Biomatter>5</Biomatter>
-			<ComponentAdvanced>4</ComponentAdvanced>
-			<Paraffins>2</Paraffins>
-			<Plastic>10</Plastic>
-		</costList>
-		<recipeMaker>
-			<workSpeedStat>SmithingSpeed</workSpeedStat>
-			<workSkillLearnPerTick>0.8</workSkillLearnPerTick>	  
-			<workSkill>Crafting</workSkill>
-			<workAmount>750</workAmount>
-			<effectWorking>Smith</effectWorking>
-			<soundWorking>EPOEAssembling</soundWorking>
-			<unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
-			<skillRequirements>
-				<Crafting>8</Crafting>
-			</skillRequirements>
-			<researchPrerequisite>Prosthesis_making_D3</researchPrerequisite>
-			<recipeUsers>
-				<li>TableSynthetics</li>
-			</recipeUsers>
-			<productCount>1</productCount>
-		</recipeMaker>
 	</ThingDef>
 
     <RecipeDef>
-		<defName>Make_ArtificialBonex4x</defName>
-		<label>Make artificial bones (x4)</label>
-		<description>Make artificial bones. produce: 4pcs.</description>
+		<defName>Make_ArtificialBone</defName>
+		<label>Make artificial bones</label>
+		<description>Make artificial bones.</description>
 		<jobString>Creation of bones.</jobString>
-		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-		<workSkill>Medicine</workSkill>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<workAmount>200</workAmount>
+		<soundWorking>EPOEAssembling</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Biomatter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentAdvanced</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Paraffins</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Biomatter</li>
+				<li>ComponentAdvanced</li>
+				<li>Paraffins</li>
+				<li>Plastic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ArtificialBone>1</ArtificialBone>
+		</products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>	
+		<recipeUsers>
+			<li>TableSynthetics</li>
+		</recipeUsers>
+		<researchPrerequisite>Prosthesis_making_D3</researchPrerequisite>
+	</RecipeDef>
+
+    <RecipeDef>
+		<defName>Make_ArtificialBoneBulk</defName>
+		<label>Make artificial bones (x4)</label>
+		<description>Make artificial bones x4.</description>
+		<jobString>Creation of bones.</jobString>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
 		<workAmount>720</workAmount>
-		<soundWorking>Recipe_Drug</soundWorking>
+		<soundWorking>EPOEAssembling</soundWorking>
 		<ingredients>
 			<li>
 				<filter>
@@ -115,9 +157,8 @@
 		<recipeUsers>
 			<li>TableSynthetics</li>
 		</recipeUsers>
-			<researchPrerequisite>Prosthesis_making_D3</researchPrerequisite>
+		<researchPrerequisite>Prosthesis_making_D3</researchPrerequisite>
 	</RecipeDef>
-
 
 	<RecipeDef ParentName="SK_SurgeryFlesh">
 		<defName>InstallArtificialBone_Small</defName>

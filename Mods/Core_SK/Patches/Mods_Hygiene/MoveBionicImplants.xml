@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Dubs Bad Hygiene</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName="HygieneEnhancer" or defName="BionicBladder"]</xpath>
+                    <value>
+                        <recipeMaker DeepReplace="True" Inherit="False">
+                            <workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>  
+                            <workSkill>Crafting</workSkill>
+                            <workAmount>8000</workAmount>
+                            <effectWorking>Smith</effectWorking>
+                            <soundWorking>EPOEAssembling</soundWorking>
+                            <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <recipeUsers>
+                                <li>TableBionics</li>
+                            </recipeUsers>
+                            <productCount>1</productCount>
+                            <researchPrerequisite>Bionics</researchPrerequisite>
+                        </recipeMaker>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

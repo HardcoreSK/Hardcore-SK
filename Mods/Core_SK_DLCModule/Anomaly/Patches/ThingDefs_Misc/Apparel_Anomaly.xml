@@ -23,11 +23,26 @@
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Apparel_PackTurret"]</xpath>
 		<value>
+            <recipeMaker DeepReplace="True" Inherit="False">
+                <workSpeedStat>SmithingSpeed</workSpeedStat>
+                <workSkill>Crafting</workSkill>
+                <effectWorking>Smith</effectWorking>
+                <soundWorking>Recipe_Machining</soundWorking>
+                <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+                <researchPrerequisite>TurretPack</researchPrerequisite>
+                <skillRequirements>
+                    <Crafting>8</Crafting>
+                </skillRequirements>
+                <recipeUsers>
+                    <li>TableElectronics</li>
+                </recipeUsers>
+            </recipeMaker>
 			<stuffCategories>
 				<li>StrongMetallic</li>
 			</stuffCategories>
 			<costStuffCount>150</costStuffCount>
 			<costList>
+				<Weapon_Parts>5</Weapon_Parts>
 				<Electronics>5</Electronics>
 				<ComponentIndustrial>4</ComponentIndustrial>
 				<Mechanism>3</Mechanism>
