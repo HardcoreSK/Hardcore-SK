@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/WorkGiverDef[defName="DoBillsAmmoBench"]/fixedBillGiverDefs</xpath>
+				<value>
+                    <li>TableHeavyAmmunition</li>
+				</value>
+			</li>
+
+			<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/RecipeDef[@Name="GrenadeRecipeBase" or @ParentName="GrenadeRecipeBase"]</xpath>
+				<value>
+                    <recipeUsers>
+                        <li>TableHeavyAmmunition</li>
+                    </recipeUsers>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="30x64mmFuelBase"]/tradeTags/li[text()="CE_AutoEnableCrafting"]</xpath>
+				<value>
+                    <li>CE_AutoEnableCrafting_TableHeavyAmmunition</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="80x256mmFuelBase"]/tradeTags</xpath>
+				<value>
+                    <tradeTags Inherit="False">
+                        <li>CE_AmmoInjector</li>
+                        <li>CE_MediumAmmo</li>
+                        <li>CE_AutoEnableTrade_Sellable</li>
+                    </tradeTags>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="30x29mmGrenadeBase" or 
+                                    @Name="40x46mmGrenadeBase" or
+                                    @Name="155mmHowitzerShellBase" or
+                                    @Name="120mmCannonShellBase" or
+                                    @Name="120mmMortarShellBase" or
+                                    @Name="90mmCannonShellBase" or
+                                    @Name="81mmMortarShellBaseCraftableBase" or
+                                    @Name="BaseRPG7Grenade" or
+                                    @Name="SPG9RocketBase"
+                ]/tradeTags/li[text()="CE_AutoEnableCrafting_TableMachining"]</xpath>
+				<value>
+                    <li>CE_AutoEnableCrafting_TableHeavyAmmunition</li>
+				</value>
+			</li>
+
+			<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/ThingDef[defName="Ammo_RPG7Grenade_HEAT" or
+                                    defName="Ammo_RPG7Grenade_Thermobaric" or
+                                    defName="Ammo_RPG7Grenade_Frag"
+                                    ]</xpath>
+				<value>
+                    <tradeTags DeepReplace="True" Inherit="False">
+                        <li>CE_AmmoInjector</li>
+                        <li>CE_MediumAmmo</li>
+                        <li>CE_AutoEnableTrade</li>
+                        <li>CE_AutoEnableCrafting_TableHeavyAmmunition</li>
+                    </tradeTags>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

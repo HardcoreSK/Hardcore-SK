@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="SK_WorkTable">
+        <defName>WeaponCraftingWorkTable</defName>
+        <label>weapon crafting workbench</label>
+        <description>A workbench that produces ranged weapons like pistols and rifles. Can smelt weapons down into metal. Requires power.</description>
+        <graphicData>
+            <texPath>Things/Building/Production/WeaponCraftingTable/WeaponCraftingTable</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(3,3)</drawSize>
+            <shadowData>
+                <volume>(2.7, 1.0, 0.85)</volume>
+                <offset>(0,0,0)</offset>
+            </shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <stuffCategories>
+            <li>RuggedMetallic</li>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>140</costStuffCount>
+        <costList>
+            <ComponentIndustrial>15</ComponentIndustrial>
+            <ElectronicComponents>6</ElectronicComponents>
+            <Mechanism>6</Mechanism>
+        </costList>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <statBases>
+            <WorkToBuild>4000</WorkToBuild>
+            <MaxHitPoints>210</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Cleanliness>-8</Cleanliness>
+            <Mass>500</Mass>
+        </statBases>
+        <size>(3,1)</size>
+        <designationCategory>Production</designationCategory>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <tickerType>Normal</tickerType>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>Small_ToolCabinet</li>
+                    <li>PodChair</li>
+                </linkableFacilities>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>500</basePowerConsumption>
+                <soundPowerOn>Power_OnSmall</soundPowerOn>
+                <soundPowerOff>Power_OffSmall</soundPowerOff>
+                <idlePowerDraw>50</idlePowerDraw>
+            </li>
+        </comps>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <building>
+            <uninstallWork>1450</uninstallWork>
+        </building>
+        <researchPrerequisites>
+            <li>Machining</li>
+        </researchPrerequisites>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_WorkTable">
+        <defName>AdvWeaponCraftingWorkTable</defName>
+        <label>advanced weapon crafting workbench</label>
+        <description>A workbench that produces advanced ranged weapons like military assault rifles, missile launchers and heavy machine guns. Requires power.</description>
+        <graphicData>
+            <texPath>Things/Building/Production/WeaponCraftingMachine/WeaponCraftingMachine</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+            <shadowData>
+                <volume>(2.7, 1.0, 0.85)</volume>
+                <offset>(0,0,0)</offset>
+            </shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <stuffCategories>
+            <li>RuggedMetallic</li>
+        </stuffCategories>
+        <costStuffCount>160</costStuffCount>
+        <costList>
+            <Rubber>55</Rubber>
+            <ComponentIndustrial>15</ComponentIndustrial>
+            <Mechanism>8</Mechanism>
+            <Electronics>5</Electronics>
+        </costList>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <statBases>
+            <WorkToBuild>6500</WorkToBuild>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Cleanliness>-7</Cleanliness>
+            <Mass>500</Mass>
+        </statBases>
+        <size>(3,1)</size>
+        <designationCategory>Production</designationCategory>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <tickerType>Normal</tickerType>
+        <comps>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>Small_ToolCabinet</li>
+                    <li>PodChair</li>
+                </linkableFacilities>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>500</basePowerConsumption>
+                <soundPowerOn>Power_OnSmall</soundPowerOn>
+                <soundPowerOff>Power_OffSmall</soundPowerOff>
+                <idlePowerDraw>50</idlePowerDraw>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+        </comps>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <building>
+            <uninstallWork>1450</uninstallWork>
+        </building>
+        <researchPrerequisites>
+            <li>Range_C2</li>
+        </researchPrerequisites>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_WorkTable">
+        <defName>HeavyArmsBench</defName>
+        <label>heavy arms lathe</label>
+        <description>A crafting table that produces ammunition for use with turrets. Can also produce sulfur from iron ore. Requires power.</description>
+        <graphicData>
+            <texPath>Things/Building/Production/HeavyArmsBench/HeavyArmsBench</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(3,3)</drawSize>
+            <shadowData>
+                <volume>(2.7, 1.0, 1.8)</volume>
+                <offset>(0,0,0)</offset>
+            </shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <stuffCategories>
+            <li>RuggedMetallic</li>
+        </stuffCategories>
+        <costStuffCount>170</costStuffCount>
+        <costList>
+            <ComponentIndustrial>15</ComponentIndustrial>
+            <Mechanism>15</Mechanism>
+        </costList>
+        <statBases>
+            <WorkToBuild>5500</WorkToBuild>
+            <MaxHitPoints>220</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Cleanliness>-6</Cleanliness>
+            <Mass>500</Mass>
+        </statBases>
+        <size>(3,2)</size>
+        <designationCategory>Production</designationCategory>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <tickerType>Normal</tickerType>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>800</basePowerConsumption>
+                <idlePowerDraw>80</idlePowerDraw>
+            </li>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>Small_ToolCabinet</li>
+                    <li>PodChair</li>
+                </linkableFacilities>
+            </li>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="CompProperties_Flickable"/>
+        </comps>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <building>
+            <uninstallWork>1450</uninstallWork>
+        </building>
+        <researchPrerequisites>
+            <li>Turrets_31</li>
+        </researchPrerequisites>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_WorkTable">
+        <defName>MechWeaponCraftingWorkTable</defName>
+        <label>futuristic weapon workbench</label>
+        <description>A workbench that produces futuristic Mechanoid weapons, such as laser beam rifles. Requires power.</description>
+        <graphicData>
+            <texPath>Things/Building/Production/TableWeaponMech/TableWeaponMech</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(3,3)</drawSize>
+            <shadowData>
+                <volume>(2.7, 1.0, 0.85)</volume>
+                <offset>(0,0,0)</offset>
+            </shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <stuffCategories>
+            <li>SolidMetallic</li>
+        </stuffCategories>
+        <costStuffCount>190</costStuffCount>
+        <costList>
+            <MagneticMaterial>20</MagneticMaterial>
+            <ComponentSpacer>12</ComponentSpacer>
+            <AdvMechanism>5</AdvMechanism>
+            <BioMicrochips>2</BioMicrochips>
+        </costList>
+        <statBases>
+            <WorkToBuild>11000</WorkToBuild>
+            <MaxHitPoints>260</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Cleanliness>-3</Cleanliness>
+            <Mass>500</Mass>
+        </statBases>
+        <size>(3,1)</size>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <designationCategory>Production</designationCategory>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <tickerType>Normal</tickerType>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <comps>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+
+                    <li>Small_ToolCabinet</li>
+                    <li>PodChair</li>
+                </linkableFacilities>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>1800</basePowerConsumption>
+                <soundPowerOn>Power_OnSmall</soundPowerOn>
+                <soundPowerOff>Power_OffSmall</soundPowerOff>
+                <idlePowerDraw>180</idlePowerDraw>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+        </comps>
+        <researchPrerequisites>
+            <li>ChargedShot</li>
+        </researchPrerequisites>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <constructionSkillPrerequisite>18</constructionSkillPrerequisite>
+    </ThingDef>
+    
+    <ThingDef ParentName="SK_WorkTable">
+        <defName>TableHeavyAmmunition</defName>
+        <label>heavy ammunition bench</label>
+        <thingClass>Building_WorkTable</thingClass>
+        <description>A workstation for handloading ammo.</description>
+        <graphicData>
+            <texPath>Things/Building/Production/TableHeavyAmmunition/TableHeavyAmmunition</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(3,3)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.20</staticSunShadowHeight>
+        <statBases>
+            <WorkToBuild>6500</WorkToBuild>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Flammability>0.5</Flammability>
+            <Cleanliness>-10</Cleanliness>
+            <Mass>500</Mass>
+        </statBases>
+        <stuffCategories>
+            <li>RuggedMetallic</li>
+        </stuffCategories>
+        <costStuffCount>210</costStuffCount>
+        <costList>
+            <ComponentIndustrial>10</ComponentIndustrial>
+            <ElectronicComponents>5</ElectronicComponents>
+            <Mechanism>10</Mechanism>
+        </costList>
+        <inspectorTabs Inherit="False">
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <size>(3,1)</size>
+        <designationCategory>Production</designationCategory>
+        <passability>PassThroughOnly</passability>
+        <pathCost>70</pathCost>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>500</basePowerConsumption>
+                <idlePowerDraw>50</idlePowerDraw>
+            </li>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>ToolCabinet</li>
+                </linkableFacilities>
+            </li>
+        </comps>
+        <building>
+            <paintable>true</paintable>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            <forceShowRoomStats>true</forceShowRoomStats>
+        </building>
+        <researchPrerequisites>
+            <li>Grenade_C1</li>
+        </researchPrerequisites>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+        <recipes>
+            <li>MakeSulfur</li>
+            <li>MakePowder</li>
+            <li>MakeNapalm</li>
+        </recipes>
+        <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    </ThingDef>
+
+</Defs>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Class="SK.ThingDef_AnimatedWorktable" ParentName="SK_WorkTable">
+		<defName>MatterConverter</defName>
+		<label>inorganic matter converter</label>
+		<thingClass>SK.Building_AnimatedWorktable</thingClass>
+		<description>A converter to turn resources into inorganic matter. Inorganic matter can be used to make other resources. Requires power.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Production/MatterConverter/MC_off</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(2.4, 0.6, 2.4)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>280</costStuffCount>
+		<costList>
+			<SyntheticFibers>50</SyntheticFibers>
+			<ComponentSpacer>12</ComponentSpacer>
+			<AdvMechanism>6</AdvMechanism>
+			<Microchips>4</Microchips>
+		</costList>
+		<statBases>
+			<WorkToBuild>9000</WorkToBuild>
+			<MaxHitPoints>280</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-5</Cleanliness>
+		</statBases>
+		<size>(3,3)</size>
+		<designationCategory>Production</designationCategory>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<recipes>
+			<!-- Into matter -->
+			<li>ConvertResourcesRaw</li>
+			<!-- from matter -->
+			<li>ConvertToSteel</li>
+			<li>ConvertToPolymers</li>
+			<li>ConvertToParaffins</li>
+			<li>ConvertToSulphates</li>
+			<li>ConvertToCopper</li>
+			<li>ConvertToTin</li>
+			<li>ConvertToAluminium</li>
+			<li>ConvertToGold</li>
+			<li>ConvertToSilver</li>
+			<li>ConvertToNickel</li>
+			<li>ConvertToUranium</li>
+			<li>ConvertToTitanium</li>
+		</recipes>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+					<li>PodChair</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>2500</basePowerConsumption>
+				<soundPowerOn>Power_OnSmall</soundPowerOn>
+				<soundPowerOff>Power_OffSmall</soundPowerOff>
+				<idlePowerDraw>250</idlePowerDraw>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(0,0,217,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>22</heatPerSecond>
+				<heatPushMaxTemperature>55</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>Super_matter_D1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>18</constructionSkillPrerequisite>
+        <!--Animation part-->
+		<FramePath>Things/Building/Production/MatterConverter/MC_anim</FramePath>
+		<AnimationType>revert</AnimationType>
+		<FrameCount>4</FrameCount>
+		<multispeed>12</multispeed>
+	</ThingDef>
+
+	<ThingDef ParentName="SK_WorkTable">
+		<defName>Matterfab</defName>
+		<label>quantum fabricator</label>
+		<thingClass>Building_WorkTable</thingClass>
+		<description>The quantum fabricator is the forefront of quantum thermodynamics and plasma spectrometry. This machine disassembles elements into base subatomic particles and re-assembles them into powerful artificial elements. Requires power.</description>
+		<graphicData>
+			<texPath>Things/Building/Production/MatterFab</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+			<shadowData>
+				<volume>(2.7, 1.0, 1.8)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<stuffCategories>
+			<li>SolidMetallic</li>
+		</stuffCategories>
+		<costStuffCount>240</costStuffCount>
+		<costList>
+			<MagneticMaterial>25</MagneticMaterial>
+			<ComponentSpacer>10</ComponentSpacer>
+			<AdvMechanism>10</AdvMechanism>
+			<Microchips>2</Microchips>
+		</costList>
+		<statBases>
+			<WorkToBuild>10000</WorkToBuild>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-5</Cleanliness>
+		</statBases>
+		<size>(3,2)</size>
+		<designationCategory>Production</designationCategory>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<recipes>
+			<li>ProduceAPoly</li>
+			<li>ProduceBPoly</li>
+		</recipes>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>20000</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<soundPowerOn>Power_OnSmall</soundPowerOn>
+				<soundPowerOff>Power_OffSmall</soundPowerOff>
+				<soundAmbientProducingPower>MatterFab</soundAmbientProducingPower>
+				<idlePowerDraw>2000</idlePowerDraw>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(0,217,217,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>85</heatPerSecond>
+				<heatPushMaxTemperature>1500</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>	
+		<inspectorTabs>
+		  <li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<heatPerTickWhileWorking>1.5</heatPerTickWhileWorking>
+		</building>
+		<researchPrerequisites>
+			<li>Super_matter_E2</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>16</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="StandardBuilding">
+		<defName>HadronCollider</defName>
+		<label>hadron collider</label>
+		<thingClass>SK.Building_HadronCollider</thingClass>
+		<description>An apparatus for accelerating subatomic particles to high velocities by means of electric or electromagnetic fields. The accelerated particles are generally made to collide with other particles, either as a research technique or for the generation of high-energy X-rays and gamma rays.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Production/HadronCollider/HadronCollider</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(7,2)</drawSize>
+			<shadowData>
+				<volume>(6.5, 1.0, 1.8)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<stuffCategories>
+			<li>SolidMetallic</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<costList>
+			<ReinforcedConcrete>150</ReinforcedConcrete>
+			<MagneticMaterial>20</MagneticMaterial>
+			<BiosyntheticMaterial>15</BiosyntheticMaterial>
+			<AdvMechanism>12</AdvMechanism>
+			<Microchips>3</Microchips>
+		</costList>
+		<fillPercent>0.8</fillPercent>
+		<statBases>
+			<WorkToBuild>12000</WorkToBuild>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<size>(7,2)</size>
+		<designationCategory>Production</designationCategory>
+		<pathCost>90</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>1</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+				<soundAmbientProducingPower>MatterFab</soundAmbientProducingPower>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>90</heatPerSecond>
+				<heatPushMaxTemperature>1500</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+		</building>
+		<researchPrerequisites>
+			<li>Super_matter_E1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>18</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>HadronColliderFeeder</defName>
+		<label>hadron collider hopper</label>
+		<description>Holds inorganic matter for the hadron collider.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/hopper</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToBuild>550</WorkToBuild>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Mass>30</Mass>
+		</statBases>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<tickerType>Never</tickerType>
+		<neverMultiSelect>true</neverMultiSelect>
+		<surfaceType>Item</surfaceType>
+		<size>(1,1)</size>
+		<canOverlapZones>false</canOverlapZones>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<building>
+			<uninstallWork>700</uninstallWork>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>Matter</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>Matter</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationCategory>Production</designationCategory>
+		<placeWorkers>
+			<li>PlaceWorker_NextToHopperAccepter</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>Super_matter_E1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>18</constructionSkillPrerequisite>
+	</ThingDef>
+
+</Defs>

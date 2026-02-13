@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--
+    DefOverwrite list:
+    FabricationBench
+    TableMachining
+    -->
+
+	<ThingDef ParentName="SK_WorkTable">
+		<defName>TableElectronics</defName>
+		<label>electronics table</label>
+		<description>A table with tools for crafting electronic chips, robot parts, and the mobile mineral sonar. Requires power.</description>
+		<graphicData>
+			<texPath>Things/Building/Production/TableElectronics/TableElectronics</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(2.7, 1.0, 0.85)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>140</costStuffCount>
+		<costList>
+			<CopperBar>40</CopperBar>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<Mechanism>10</Mechanism>
+		</costList>
+		<statBases>
+			<WorkToBuild>2750</WorkToBuild>
+			<MaxHitPoints>220</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-1</Cleanliness>
+			<Mass>500</Mass>
+		</statBases>
+		<size>(3,1)</size>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Production</designationCategory>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<tickerType>Normal</tickerType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>Small_ToolCabinet</li>
+					<li>PodChair</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>600</basePowerConsumption>
+				<soundPowerOn>Power_OnSmall</soundPowerOn>
+				<soundPowerOff>Power_OffSmall</soundPowerOff>
+				<idlePowerDraw>60</idlePowerDraw>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>MicroelectronicsBasics</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="SK_WorkTable">
+		<defName>AdvToolBench</defName>
+		<label>electric assembling bench</label>
+		<description>An electric table for the assembling of components, wires, mechanisms, and advanced mechanisms. Requires power.</description>
+		<graphicData>
+			<texPath>Things/Building/Production/FabricationBench/FabricationBench</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(2.7, 1.0, 0.85)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>220</costStuffCount>
+		<costList>
+			<SyntheticFibers>45</SyntheticFibers>
+			<Electronics>10</Electronics>
+			<ComponentIndustrial>15</ComponentIndustrial>
+			<Mechanism>10</Mechanism>
+		</costList>
+		<statBases>
+			<WorkToBuild>5500</WorkToBuild>
+			<MaxHitPoints>210</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-2</Cleanliness>
+			<WorkTableWorkSpeedFactor>1.5</WorkTableWorkSpeedFactor>
+			<Mass>500</Mass>
+		</statBases>
+		<size>(3,1)</size>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Production</designationCategory>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<tickerType>Normal</tickerType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>750</basePowerConsumption>
+				<soundPowerOn>Power_OnSmall</soundPowerOn>
+				<soundPowerOff>Power_OffSmall</soundPowerOff>
+				<idlePowerDraw>75</idlePowerDraw>
+			</li>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+
+					<li>Small_ToolCabinet</li>
+					<li>PodChair</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(73,123,138,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<researchPrerequisites>
+			<li>Components_D1</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<constructionSkillPrerequisite>13</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef Class="SK.ThingDef_AnimatedWorktable" ParentName="SK_WorkTable">
+		<defName>RobAssem</defName>
+		<label>robotic assembler</label>
+		<thingClass>SK.Building_AnimatedWorktable</thingClass>
+		<description>A machine that applies state of the art robotics to construct machine components too intricate for simple human hands. Requires 5000W power when active.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Production/RoboticAssembler/AssemblerBench</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<shadowData>
+				<volume>(0.7, 0.7, 0.7)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+
+		<FramePath>Things/Building/Production/RoboticAssembler/Assembler_anim</FramePath>
+		<AnimationType>revert</AnimationType>
+		<FrameCount>26</FrameCount>
+		<multispeed>5</multispeed>
+
+		<uiIconPath>Things/Building/Production/RoboticAssembler/AssemblerBench_ico</uiIconPath>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<costList>
+			<SyntheticFibers>45</SyntheticFibers>
+			<ComponentSpacer>10</ComponentSpacer>
+			<AdvMechanism>10</AdvMechanism>
+			<Microchips>5</Microchips>
+		</costList>
+		<statBases>
+			<WorkToBuild>9000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-4</Cleanliness>
+			<Mass>100</Mass>
+		</statBases>
+		<size>(1,1)</size>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Production</designationCategory>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<tickerType>Normal</tickerType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>5000</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<soundPowerOn>Power_OnSmall</soundPowerOn>
+				<soundPowerOff>Power_OffSmall</soundPowerOff>
+				<idlePowerDraw>500</idlePowerDraw>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(255,0,0,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<building>
+			<heatPerTickWhileWorking>0.5</heatPerTickWhileWorking>
+		</building>
+		<researchPrerequisites>
+			<li>Components_D2</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+	</ThingDef>
+
+</Defs>
