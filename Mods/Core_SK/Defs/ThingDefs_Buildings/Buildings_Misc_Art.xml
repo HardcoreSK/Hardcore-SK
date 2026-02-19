@@ -337,48 +337,6 @@
 		</thingSetMakerTags>
 	</ThingDef>
 
-
-	<!--================================ Snowman ======================================-->
-
-	<ThingDef ParentName="BuildingBase">
-		<defName>Snowman</defName>
-		<label>snowman</label>
-		<description>A set of large snowballs piled and shaped to resemble a person.</description>
-		<thingClass>Building</thingClass>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<pathCost>25</pathCost>
-		<pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
-		<useHitPoints>true</useHitPoints>
-		<graphicData>
-			<graphicClass>Graphic_Random</graphicClass>
-			<texPath>Things/Building/Art/Snowman</texPath>
-		</graphicData>
-		<fillPercent>0.35</fillPercent>
-		<rotatable>false</rotatable>
-		<tickerType>Rare</tickerType>
-		<drawDamagedOverlay>false</drawDamagedOverlay>
-		<statBases>
-			<MaxHitPoints>50</MaxHitPoints>
-			<Beauty>4</Beauty>
-			<WorkToBuild>600</WorkToBuild>
-			<MarketValue>0</MarketValue>
-		</statBases>
-		<comps>
-			<li>
-				<compClass>CompMelter</compClass>
-			</li>
-		</comps>
-		<forceDebugSpawnable>true</forceDebugSpawnable>
-		<building>
-			<expandHomeArea>false</expandHomeArea>
-			<repairable>false</repairable>
-			<isInert>true</isInert>
-			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-		</building>
-	</ThingDef>
-
-
 	<ThingDef ParentName="SculptureBase">
 		<defName>CatArt</defName>
 		<label>cat sculpture</label>
@@ -408,7 +366,6 @@
 		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
 	</ThingDef>
-
 
 	<ThingDef ParentName="SculptureBase">
 		<defName>GlowstoneArt</defName>
@@ -456,6 +413,122 @@
 		<recipeMaker>
 			<researchPrerequisite>Art_B2</researchPrerequisite>
 		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="SteleBase">
+		<defName>GlowstoneMonument</defName>
+		<label>glowstone monument</label>
+		<uiIconPath>Things/Building/Art/GlowstoneMonument</uiIconPath>
+		<description>This stunning statue is made from beautifully cut glowstone, it is perfectly crystal shaped and it emits a bright light.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(0, 0, 0)</volume>
+			</shadowData>
+			<texPath>Things/Building/Art/GlowstoneMonument</texPath>
+			<drawSize>(4)</drawSize>
+		</graphicData>
+		<fillPercent>0.6</fillPercent>
+		<rotatable>false</rotatable>
+		<comps>
+			<li Class="CompProperties_MeditationFocus" MayRequire="Ludeon.RimWorld.Royalty">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Artistic</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_ArtificialBuildings">
+						<radius>9.9</radius>
+						<curve>
+							<points>
+								<li>(0,   0.0)</li>
+								<li>(5,  -0.08)</li>
+								<li>(10, -0.15)</li>
+								<li>(50, -0.3)</li>
+							</points>
+						</curve>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefs">
+						<defs>
+							<GlowstoneLamp>0.01</GlowstoneLamp>
+							<GlowstoneArt>0.03</GlowstoneArt>
+							<GlowstoneMonument>0.06</GlowstoneMonument>
+						</defs>
+						<radius>9.9</radius>
+						<maxBuildings>10</maxBuildings>
+						<explanationKey>MeditationFocusPerAnimusStoneAndShrine</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerAnimusStoneAndShrineAbstract</explanationKeyAbstract>
+					</li>
+				</offsets>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>13</glowRadius>
+				<glowColor>(180,197,215,0)</glowColor>
+			</li>
+		</comps>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Beauty>110</Beauty>
+			<WorkToBuild>89000</WorkToBuild>
+			<Bulk>200</Bulk>
+			<Mass>120</Mass>
+		</statBases>
+		<size>(2,3)</size>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>Precious</li>
+			<li>Stony</li>
+			<li>Bricks</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<costList>
+			<Glowstone>300</Glowstone>
+		</costList>
+		<researchPrerequisites>
+			<li>Art_C1</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--================================ Snowman ======================================-->
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Snowman</defName>
+		<label>snowman</label>
+		<description>A set of large snowballs piled and shaped to resemble a person.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>25</pathCost>
+		<pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
+		<useHitPoints>true</useHitPoints>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Building/Art/Snowman</texPath>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<rotatable>false</rotatable>
+		<tickerType>Rare</tickerType>
+		<drawDamagedOverlay>false</drawDamagedOverlay>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Beauty>4</Beauty>
+			<WorkToBuild>600</WorkToBuild>
+			<MarketValue>0</MarketValue>
+		</statBases>
+		<comps>
+			<li>
+				<compClass>CompMelter</compClass>
+			</li>
+		</comps>
+		<forceDebugSpawnable>true</forceDebugSpawnable>
+		<building>
+			<expandHomeArea>false</expandHomeArea>
+			<repairable>false</repairable>
+			<isInert>true</isInert>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
 	</ThingDef>
 
 </Defs>

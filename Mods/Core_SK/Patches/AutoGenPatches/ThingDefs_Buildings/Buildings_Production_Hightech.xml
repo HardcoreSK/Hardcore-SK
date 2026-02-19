@@ -224,6 +224,17 @@
       <minifiedDef>MinifiedThing</minifiedDef>
       <tickerType>Normal</tickerType>
       <comps>
+        <li Class="CompProperties_Refuelable">
+            <fuelConsumptionRate>16.0</fuelConsumptionRate>
+            <fuelCapacity>8.0</fuelCapacity>
+            <fuelFilter>
+                <thingDefs>
+                    <li>Chemfuel</li>
+                </thingDefs>
+            </fuelFilter>
+            <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+            <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        </li>
         <li Class="CompProperties_Power">
           <compClass>CompPowerTrader</compClass>
           <shortCircuitInRain>true</shortCircuitInRain>

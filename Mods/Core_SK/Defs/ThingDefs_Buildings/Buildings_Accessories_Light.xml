@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--
+    DefOverwrite list:
+    StandingLamp
+    TorchLamp
+    WallTorch
+    WallLamp
+    -->
+
+    <!--===================== Standing Lamps ==============================-->
+
+    <ThingDef ParentName="SK_LampBase">
+        <defName>ClutterFloorLampA</defName>
+        <label>floor lamp</label>
+        <thingClass>SK.Building_Lamp</thingClass>
+        <description>People need light to move and work at full speed. Requires 80 W.</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Lights/FloorLamp</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.0,1.0)</drawSize>
+            <drawRotated>true</drawRotated>
+            <allowFlip>true</allowFlip>
+        </graphicData>
+        <uiIconPath>Things/Building/Furniture/Lights/FloorLamp_ui</uiIconPath>
+        <fillPercent>0.2</fillPercent>
+        <drawerType>RealtimeOnly</drawerType>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>320</WorkToBuild>
+            <Beauty>15</Beauty>
+            <Bulk>13</Bulk>
+            <Mass>3</Mass>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">4</StyleDominance>
+        </statBases>
+        <size>(1,1)</size>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Plastic>6</Plastic>
+            <Glass>4</Glass>
+            <ElectronicComponents>1</ElectronicComponents>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>80</basePowerConsumption>
+                <shortCircuitInRain>false</shortCircuitInRain>
+                <soundPowerOn>Power_OnSmall</soundPowerOn>
+                <soundPowerOff>Power_OffSmall</soundPowerOff>
+                <powerUpgrades>
+                    <li>
+                        <researchProject>ColoredLights</researchProject>
+                        <factor>0.5</factor>
+                    </li>
+                </powerUpgrades>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>12</glowRadius>
+                <glowColor>(217,217,217,0)</glowColor>
+                <colorPickerEnabled>true</colorPickerEnabled>
+                <darklightToggle>true</darklightToggle>
+            </li>
+            <!--
+			<li Class="SK.CompProperties_ColoredLight">
+				<compClass>SK.CompColoredLight</compClass>
+			</li>-->
+        </comps>
+        <building>
+            <uninstallWork>300</uninstallWork>
+        </building>
+        <tickerType>Rare</tickerType>
+        <rotatable>true</rotatable>
+        <filthLeaving>Filth_BrokenGlass</filthLeaving>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <researchPrerequisites>
+            <li>Light_C2</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_LampBase">
+        <defName>GlowstoneLamp</defName>
+        <label>glowstone lamp</label>
+        <description>A beautiful lamp topped with glowstone, emitting reflected light from dozen of glowstones. People need light to move and work at full speed. Free source of light.</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Lights/GlowstoneLamp</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(1,1)</drawSize>
+            <shadowData>
+                <volume>(0.2, 0.1, 0.2)</volume>
+                <offset>(0,0,0)</offset>
+            </shadowData>
+        </graphicData>
+        <fillPercent>0</fillPercent>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <rotatable>false</rotatable>
+        <pathCost>10</pathCost>
+        <tickerType>Normal</tickerType>
+        <stuffCategories>
+            <li>Woody</li>
+            <li>Metallic</li>
+            <li>Precious</li>
+            <li>Ceramic</li>
+        </stuffCategories>
+        <costStuffCount>30</costStuffCount>
+        <costList>
+            <Glowstone>15</Glowstone>
+        </costList>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <statBases>
+            <Beauty>9</Beauty>
+            <WorkToBuild>350</WorkToBuild>
+            <Bulk>12</Bulk>
+            <Mass>4</Mass>
+            <Cleanliness>0</Cleanliness>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
+        </statBases>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>6</glowRadius>
+                <glowColor>(180,197,215,0)</glowColor>
+            </li>
+        </comps>
+        <building>
+            <uninstallWork>300</uninstallWork>
+        </building>
+        <researchPrerequisites>
+            <li>Light_B1</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <!--===================== Ceiling Lamps ==============================-->
+
+    <ThingDef ParentName="SK_LampBase">
+        <defName>CeilingLamp</defName>
+        <label>ceiling lamp</label>
+        <thingClass>SK.Building_Lamp</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Lights/CeilingLamp</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.2, 0.2, 0.2)</volume>
+                <offset>(0,0,0)</offset>
+            </shadowData>
+            <shaderType>Transparent</shaderType>
+        </graphicData>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <statBases>
+            <MaxHitPoints>35</MaxHitPoints>
+            <WorkToBuild>320</WorkToBuild>
+            <Beauty>10</Beauty>
+            <Bulk>8</Bulk>
+            <Mass>2</Mass>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
+        </statBases>
+        <tickerType>Rare</tickerType>
+        <description>A ceiling lamp that lights an area. People need light to move and work at full speed. Must be placed under a roof. Requires 80 W.</description>
+        <costList>
+            <Glass>5</Glass>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <ElectronicComponents>1</ElectronicComponents>
+        </costList>
+        <building>
+            <uninstallWork>800</uninstallWork>
+            <isEdifice>false</isEdifice>
+            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+        </building>
+        <clearBuildingArea>false</clearBuildingArea>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>80</basePowerConsumption>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <soundPowerOn>Power_OnSmall</soundPowerOn>
+                <soundPowerOff>Power_OffSmall</soundPowerOff>
+                <powerUpgrades>
+                    <li>
+                        <researchProject>ColoredLights</researchProject>
+                        <factor>0.5</factor>
+                    </li>
+                </powerUpgrades>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>9</glowRadius>
+                <glowColor>(217,217,208,0)</glowColor>
+                <colorPickerEnabled>true</colorPickerEnabled>
+                <darklightToggle>true</darklightToggle>
+            </li>
+            <!--
+			<li Class="SK.CompProperties_ColoredLight">
+				<compClass>SK.CompColoredLight</compClass>
+			</li>-->
+            <li Class="SK.CompProperties_RestrictedPlacement">
+                <compClass>SK.CompRestrictedPlacement</compClass>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>SK.PlaceWorker_OnlyUnderRoof</li>
+        </placeWorkers>
+        <filthLeaving>Filth_BrokenGlass</filthLeaving>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <rotatable>false</rotatable>
+        <researchPrerequisites>
+            <li>Light_C2</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <!--===================== Wall Lamps ==============================-->
+
+    <ThingDef ParentName="SK_LampBase">
+        <defName>Lighting_WallLight</defName>
+        <label>wall light</label>
+        <thingClass>SK.Building_Lamp</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Lights/walllantern</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(1.0,2.0)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/Furniture/Lights/walllantern_ui</uiIconPath>
+        <altitudeLayer>PawnUnused</altitudeLayer>
+        <fillPercent>0.2</fillPercent>
+        <drawerType>RealtimeOnly</drawerType>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <statBases>
+            <MaxHitPoints>75</MaxHitPoints>
+            <WorkToBuild>360</WorkToBuild>
+            <Beauty>12</Beauty>
+            <Bulk>3</Bulk>
+            <Mass>1</Mass>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">4</StyleDominance>
+        </statBases>
+        <description>A small light that must be placed on a supporting wall. People need light to move and work at full speed. Requires 70 W.</description>
+        <size>(1,1)</size>
+        <costList>
+            <Glass>5</Glass>
+            <Plastic>2</Plastic>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <ElectronicComponents>1</ElectronicComponents>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>70</basePowerConsumption>
+                <soundPowerOn>Power_OnSmall</soundPowerOn>
+                <soundPowerOff>Power_OffSmall</soundPowerOff>
+                <powerUpgrades>
+                    <li>
+                        <researchProject>ColoredLights</researchProject>
+                        <factor>0.5</factor>
+                    </li>
+                </powerUpgrades>
+            </li>
+            <li Class="CompProperties_Glower">
+                <overlightRadius>0.0</overlightRadius>
+                <glowRadius>8</glowRadius>
+                <glowColor>(217,217,208,0)</glowColor>
+                <colorPickerEnabled>true</colorPickerEnabled>
+                <darklightToggle>true</darklightToggle>
+            </li>
+            <!--
+			<li Class="SK.CompProperties_ColoredLight">
+				<compClass>SK.CompColoredLight</compClass>
+			</li>-->
+            <li Class="SK.CompProperties_RestrictedPlacement">
+                <compClass>SK.CompRestrictedPlacement</compClass>
+            </li>
+        </comps>
+        <tickerType>Rare</tickerType>
+        <placeWorkers>
+            <li>SK.PlaceWorker_NotOnWall</li>
+            <li>SK.PlaceWorker_WallAttachment</li>
+        </placeWorkers>
+        <staticSunShadowHeight>0.10</staticSunShadowHeight>
+        <rotatable>true</rotatable>
+        <building>
+            <uninstallWork>600</uninstallWork>
+            <isEdifice>false</isEdifice>
+            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+        </building>
+        <clearBuildingArea>false</clearBuildingArea>
+        <researchPrerequisites>
+            <li>Light_C2</li>
+        </researchPrerequisites>
+        <filthLeaving>Filth_BrokenGlass</filthLeaving>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    </ThingDef>
+    
+    <!--===================== Fueled Lamps ==============================-->
+    
+    <ThingDef ParentName="SK_LampBase">
+        <defName>BowlLamp</defName>
+        <label>bowl lamp</label>
+        <description>A bright and warm little fire, perfectly contained in a bowl. People need light to move and work at full speed.</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Lights/stonetorch</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawRotated>false</drawRotated>
+            <shadowData>
+                <volume>(0.4, 0.2, 0.4)</volume>
+                <offset>(0,0,0)</offset>
+            </shadowData>
+            <damageData>
+                <rect>(0.35,0.35,0.3,0.3)</rect>
+            </damageData>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <pathCost>8</pathCost>
+        <tickerType>Normal</tickerType>
+        <drawerType>RealtimeOnly</drawerType>
+        <fillPercent>0.15</fillPercent>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <WorkToBuild>130</WorkToBuild>
+            <Flammability>0</Flammability>
+            <Bulk>15</Bulk>
+            <Mass>5</Mass>
+            <MeditationFocusStrength>0.0</MeditationFocusStrength>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
+        </statBases>
+        <stuffCategories>
+            <li>Stony</li>
+            <li>Metallic</li>
+            <li>Ceramic</li>
+            <li>Precious</li>
+        </stuffCategories>
+        <costStuffCount>25</costStuffCount>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+        <placeWorkers>
+            <li>PlaceWorker_Heater</li>
+            <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+        </placeWorkers>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="SK.CompFueled_Properties">
+                <factorByDifficulty>false</factorByDifficulty>
+                <operatingTemp>300</operatingTemp>
+                <fireDrawOffset>(0,0,0)</fireDrawOffset>
+                <fireDrawScale>0.4</fireDrawScale>
+                <fuelDrawOffset>(0,0.1,0.01)</fuelDrawOffset>
+                <fuelDrawScale>0.7</fuelDrawScale>
+                <fuelCapacity>20</fuelCapacity>
+                <burnFuelMultiplier>8.6</burnFuelMultiplier>
+                <canAutoBurn>true</canAutoBurn>
+                <smokeEnabled>false</smokeEnabled>
+                <effectOnWeather>true</effectOnWeather>
+                <smokeDensity>0</smokeDensity>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Kindling</li>
+                    </thingDefs>
+                    <categories>
+                        <li>Wooden</li>
+                        <li>Woody</li>
+                    </categories>
+                </fuelFilter>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>8</glowRadius>
+                <glowColor>(217,177,113,0)</glowColor>
+            </li>
+            <li Class="SK.CompProperties_HeatPusherAdvanced">
+                <compClass>SK.CompHeatPusherAdvanced</compClass>
+                <heatPerSecond>3.5</heatPerSecond>
+                <heatPushMaxTemperature>23</heatPushMaxTemperature>
+            </li>
+            <li Class="SK.CompProperties_FireOverlayMod">
+                <fireSize>0.4</fireSize>
+                <offset>(0,0,0.36)</offset>
+            </li>
+            <li Class="CompProperties_MeditationFocus">
+                <statDef>MeditationFocusStrength</statDef>
+                <focusTypes>
+                    <li>Flame</li>
+                </focusTypes>
+                <offsets>
+                    <li Class="FocusStrengthOffset_Lit">
+                        <offset>0.1</offset>
+                    </li>
+                    <li Class="FocusStrengthOffset_BuildingDefsLit">
+                        <defs>
+                            <li>Campfire</li>
+                            <li>BowlLamp</li>
+                            <li>Candle</li>
+                            <li>TorchLamp</li>
+                            <li>TorchWallLamp</li>
+                            <li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+                            <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+                            <li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+                            <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+                        </defs>
+                        <radius>9.9</radius>
+                        <maxBuildings>8</maxBuildings>
+                        <offsetPerBuilding>0.01</offsetPerBuilding>
+                        <explanationKey>MeditationFocusPerFlame</explanationKey>
+                        <explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+                    </li>
+                </offsets>
+            </li>
+        </comps>
+        <inspectorTabs>
+            <li>SK.ITab_Fuel</li>
+        </inspectorTabs>
+        <building>
+            <uninstallWork>150</uninstallWork>
+        </building>
+        <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_LampBase">
+        <defName>Candle</defName>
+        <label>candle</label>
+        <description>People need light to move and work at full speed. Can be refueled with tallow or paraffin. Not a good source of heat.</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Lights/Candle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawRotated>false</drawRotated>
+            <damageData>
+                <rect>(0.35,0.35,0.3,0.3)</rect>
+            </damageData>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <pathCost>0</pathCost>
+        <tickerType>Normal</tickerType>
+        <drawerType>RealtimeOnly</drawerType>
+        <fillPercent>0.05</fillPercent>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <statBases>
+            <MaxHitPoints>20</MaxHitPoints>
+            <WorkToBuild>130</WorkToBuild>
+            <Beauty>3</Beauty>
+            <Bulk>3</Bulk>
+            <Mass>1</Mass>
+            <MeditationFocusStrength>0.0</MeditationFocusStrength>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
+        </statBases>
+        <stuffCategories>
+            <li>Woody</li>
+            <li>Metallic</li>
+            <li>Ceramic</li>
+            <li>Precious</li>
+        </stuffCategories>
+        <costStuffCount>15</costStuffCount>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+        <placeWorkers>
+            <li>PlaceWorker_Heater</li>
+            <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+        </placeWorkers>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>2.0</fuelConsumptionRate>
+                <fuelCapacity>6.0</fuelCapacity>
+                <fuelConsumptionPerTickInRain>0.045</fuelConsumptionPerTickInRain>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Tallow</li>
+                        <li>Paraffins</li>
+                    </thingDefs>
+                </fuelFilter>
+                <destroyOnNoFuel>false</destroyOnNoFuel>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>6</glowRadius>
+                <glowColor>(252,187,113,0)</glowColor>
+            </li>
+            <li Class="SK.CompProperties_HeatPusherAdvanced">
+                <compClass>SK.CompHeatPusherAdvanced</compClass>
+                <heatPerSecond>2</heatPerSecond>
+                <heatPushMaxTemperature>20</heatPushMaxTemperature>
+            </li>
+            <li Class="SK.CompProperties_CandleFireOverlayMod">
+                <fireSize>0.2</fireSize>
+                <offset>(0,0,0.4)</offset>
+            </li>
+            <li Class="CompProperties_MeditationFocus">
+                <statDef>MeditationFocusStrength</statDef>
+                <focusTypes>
+                    <li>Flame</li>
+                </focusTypes>
+                <offsets>
+                    <li Class="FocusStrengthOffset_Lit">
+                        <offset>0.1</offset>
+                    </li>
+                    <li Class="FocusStrengthOffset_BuildingDefsLit">
+                        <defs>
+                            <li>Campfire</li>
+                            <li>BowlLamp</li>
+                            <li>Candle</li>
+                            <li>TorchLamp</li>
+                            <li>TorchWallLamp</li>
+                            <li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+                            <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+                            <li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+                            <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+                        </defs>
+                        <radius>9.9</radius>
+                        <maxBuildings>8</maxBuildings>
+                        <offsetPerBuilding>0.01</offsetPerBuilding>
+                        <explanationKey>MeditationFocusPerFlame</explanationKey>
+                        <explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+                    </li>
+                </offsets>
+            </li>
+        </comps>
+        <building>
+            <uninstallWork>150</uninstallWork>
+        </building>
+        <researchPrerequisites>
+            <li>Light_B2</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <!--===================== Outdoor Lamps ==============================-->
+
+    <ThingDef ParentName="SK_LampBase">
+        <defName>OutdoorGroundLamp</defName>
+        <label>outdoor lamp</label>
+        <thingClass>SK.Building_PL</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Misc/SunLamp/SunLamp</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,2)</drawSize>
+            <shadowData>
+                <volume>(0.2, 0.4, 0.2)</volume>
+                <offset>(0,0,-0.1)</offset>
+            </shadowData>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+        </graphicData>
+        <size>(1,1)</size>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <statBases>
+            <MaxHitPoints>60</MaxHitPoints>
+            <WorkToBuild>450</WorkToBuild>
+            <Beauty>5</Beauty>
+            <Bulk>13</Bulk>
+            <Mass>3</Mass>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">4</StyleDominance>
+        </statBases>
+        <description>A small ground lamp that is powered by the sun. People need light to move and work at full speed. It lights a small area outdoors.</description>
+        <costList>
+            <Glass>5</Glass>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <ElectronicComponents>1</ElectronicComponents>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>6</glowRadius>
+                <glowColor>(217,217,208,0)</glowColor>
+            </li>
+        </comps>
+        <tickerType>Rare</tickerType>
+        <placeWorkers>
+            <li>PlaceWorker_NotUnderRoof</li>
+        </placeWorkers>
+        <building>
+            <uninstallWork>300</uninstallWork>
+        </building>
+        <rotatable>true</rotatable>
+        <designationHotKey>Misc2</designationHotKey>
+        <filthLeaving>Filth_BrokenGlass</filthLeaving>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <researchPrerequisites>
+            <li>Light_C3</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_LampBase">
+        <defName>Lighting_PathLamp</defName>
+        <label>path light</label>
+        <thingClass>SK.Building_PL</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Lights/solarlamp</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.2, 0.1, 0.2)</volume>
+                <offset>(0,0,0)</offset>
+            </shadowData>
+        </graphicData>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <WorkToBuild>320</WorkToBuild>
+            <Beauty>5</Beauty>
+            <Bulk>9</Bulk>
+            <Mass>3</Mass>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
+        </statBases>
+        <description>Small light with built in solar panel that lights an area. People need light to move and work at full speed.</description>
+        <size>(1,1)</size>
+        <costList>
+            <Glass>3</Glass>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <ElectronicComponents>1</ElectronicComponents>
+        </costList>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>4</glowRadius>
+                <glowColor>(217,217,208,0)</glowColor>
+                <colorPickerEnabled>true</colorPickerEnabled>
+                <darklightToggle>true</darklightToggle>
+            </li>
+        </comps>
+        <rotatable>false</rotatable>
+        <placeWorkers>
+            <li>PlaceWorker_NotUnderRoof</li>
+        </placeWorkers>
+        <building>
+            <uninstallWork>200</uninstallWork>
+        </building>
+        <tickerType>Rare</tickerType>
+        <filthLeaving>Filth_BrokenGlass</filthLeaving>
+        <researchPrerequisites>
+            <li>Light_C3</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <!-- SQUARE FLOOR LIGHTS -->
+    <!--<ThingDef Name="FloorLightSquare" ParentName="SK_LampBase" Abstract="True">
+        <thingClass>SK.Building_Lamp</thingClass>
+        <altitudeLayer>Floor</altitudeLayer>
+        <statBases>
+            <MaxHitPoints>75</MaxHitPoints>
+            <WorkToBuild>310</WorkToBuild>
+            <Beauty>4</Beauty>
+            <Bulk>5</Bulk>
+            <Mass>2</Mass>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2</StyleDominance>
+        </statBases>
+        <size>(1,1)</size>
+        <costList>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <Plastic>6</Plastic>
+            <Rubber>2</Rubber>
+            <ElectronicComponents>1</ElectronicComponents>
+        </costList>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.3, 0.1, 0.3)</volume>
+                <offset>(0,0,-0.1)</offset>
+            </shadowData>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <building>
+            <isEdifice>false</isEdifice>
+        </building>
+        <designationHotKey>Misc4</designationHotKey>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <ThingDef ParentName="FloorLightSquare">
+        <defName>FloorLightSquare</defName>
+        <label>square floor light</label>
+        <description>A square floor light integrated into the ground. People need light to move and work at full speed. Waterproof and quite pretty. Requires 30 W.</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Lights/lucentflor_white</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>30</basePowerConsumption>
+                <shortCircuitInRain>false</shortCircuitInRain>
+                <soundPowerOn>Power_OnSmall</soundPowerOn>
+                <soundPowerOff>Power_OffSmall</soundPowerOff>
+                <powerUpgrades>
+                    <li>
+                        <researchProject>ColoredLights</researchProject>
+                        <factor>0.3</factor>
+                    </li>
+                </powerUpgrades>
+            </li>
+            <!{1}**
+			<li Class="SK.CompProperties_ColoredLight">
+				<compClass>SK.CompColoredLight</compClass>
+			</li>**{1}>
+            <li Class="CompProperties_Glower">
+                <glowRadius>4</glowRadius>
+                <glowColor>(217,217,208,0)</glowColor>
+                <colorPickerEnabled>true</colorPickerEnabled>
+                <darklightToggle>true</darklightToggle>
+            </li>
+        </comps>
+        <researchPrerequisites>
+            <li>Light_C3</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    </ThingDef>-->
+
+</Defs>

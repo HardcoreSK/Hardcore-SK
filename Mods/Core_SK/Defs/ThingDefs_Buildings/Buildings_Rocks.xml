@@ -1,258 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<!-- DefOverwrite
-	<ThingDef Name="BuildingNaturalBase" ParentName="BuildingBase" Abstract="True">
-		<drawerType>MapMeshOnly</drawerType>
-		<filthLeaving>Filth_RubbleRock</filthLeaving>
-		<scatterableOnMapGen>false</scatterableOnMapGen>
-		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
-		<building>
-			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-		</building>
-	</ThingDef>
--->
-	<ThingDef ParentName="BuildingNaturalBase">
-		<defName>NuclearHive</defName>
-		<label>ancient reactor hive</label>
-		<description>Old nuclear reactor, still deadly toxic to animals and people, infested by giant insects. When activated, it will spawn insects and smaller hives over time, as well as valuable insect jelly.</description>
-		<thingClass>Hive</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Genstep/Ruins/NuclearHive</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(5,5)</drawSize>
-		</graphicData>
-		<size>(5,5)</size>
-		<uiIconScale>0.85</uiIconScale>
-		<altitudeLayer>Building</altitudeLayer>
-		<rotatable>false</rotatable>
-		<fillPercent>0.5</fillPercent>
-		<statBases>
-			<MaxHitPoints>6000</MaxHitPoints>
-			<Flammability>0.5</Flammability>
-			<Beauty>-40</Beauty>
-		</statBases>
-		<pathCost>500</pathCost>
-		<receivesSignals>true</receivesSignals>
-		<blockWind>true</blockWind>
-		<tickerType>Normal</tickerType>
-		<passability>PassThroughOnly</passability>
-		<killedLeavings>
-			<InsectJelly>350</InsectJelly>
-			<Steel>155</Steel>
-			<Wire>75</Wire>
-			<ComponentIndustrial>35</ComponentIndustrial>
-			<Mechanism>20</Mechanism>
-			<Uranium>95</Uranium>
-		</killedLeavings>
-		<comps>
-			<li Class="CompProperties_CanBeDormant">
-				<startsDormant>true</startsDormant>
-				<canWakeUpFogged>false</canWakeUpFogged>
-			</li>
-			<li Class="CompProperties_WakeUpDormant" />
-			<li Class="CompProperties_SpawnerPawn">
-				<spawnablePawnKinds>
-					<li>Megascarab</li>
-					<li>Spelopede</li>
-					<li>Megaspider</li>
-				</spawnablePawnKinds>
-				<lordJob>LordJob_DefendAndExpandHive</lordJob>
-				<spawnSound>Hive_Spawn</spawnSound>
-				<initialPawnsPoints>500</initialPawnsPoints>
-				<maxSpawnedPawnsPoints>2000</maxSpawnedPawnsPoints>
-			</li>
-			<li Class="CompProperties_SpawnerHives" />
-			<li Class="CompProperties_Spawner">
-				<thingToSpawn>InsectJelly</thingToSpawn>
-				<spawnCount>50</spawnCount>
-				<spawnIntervalRange>26000~30000</spawnIntervalRange>
-				<spawnMaxAdjacent>280</spawnMaxAdjacent>
-				<spawnForbidden>true</spawnForbidden>
-				<saveKeysPrefix>jelly</saveKeysPrefix>
-			</li>
-			<li Class="CompProperties_Spawner">
-				<thingToSpawn>GlowPod</thingToSpawn>
-				<spawnCount>1</spawnCount>
-				<spawnIntervalRange>15000~30000</spawnIntervalRange>
-				<spawnMaxAdjacent>3</spawnMaxAdjacent>
-				<saveKeysPrefix>pod</saveKeysPrefix>
-				<inheritFaction>true</inheritFaction>
-			</li>
-			<li Class="CompProperties_SpawnerFilth">
-				<filthDef>Filth_Slime</filthDef>
-				<spawnCountOnSpawn>10</spawnCountOnSpawn>
-				<spawnMtbHours>8</spawnMtbHours>
-				<spawnRadius>15</spawnRadius>
-			</li>
-			<li Class="CompProperties_Maintainable">
-				<ticksHealthy>120000</ticksHealthy>
-				<ticksNeedsMaintenance>120000</ticksNeedsMaintenance>
-				<damagePerTickRare>25</damagePerTickRare>
-			</li>
-			<li Class="CompProperties_Glower">
-				<glowRadius>5</glowRadius>
-				<glowColor>(71,128,70,0)</glowColor>
-			</li>
-			<li Class="SK.CompProperties_ApplyHediffAround">
-				<hediff>ToxicBuildup</hediff>
-				<radius>10</radius>
-				<severityToAdd>0.30</severityToAdd>
-			</li>
-		</comps>
-	</ThingDef>
-<!-- DefOverwrite
-	<ThingDef Name="SK_RockBase" ParentName="BuildingNaturalBase" Abstract="True">
-		<thingClass>Mineable</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Linked/Rock_Atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Rock</li>
-				<li>MapEdge</li>
-			</linkFlags>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>Impassable</passability>
-		<blockWind>true</blockWind>
-		<castEdgeShadows>true</castEdgeShadows>
-		<fillPercent>1</fillPercent>
-		<coversFloor>true</coversFloor>
-		<neverMultiSelect>true</neverMultiSelect>
-		<rotatable>false</rotatable>
-		<saveCompressible>true</saveCompressible>
-		<holdsRoof>true</holdsRoof>
-		<staticSunShadowHeight>1.0</staticSunShadowHeight>
-		<blockLight>true</blockLight>
-		<mineable>true</mineable>
-		<fertility>0</fertility>
-		<canOverlapZones>false</canOverlapZones>
-		<statBases>
-			<Flammability>0</Flammability>
-		</statBases>
-		<building>
-			<isInert>true</isInert>
-			<isNaturalRock>true</isNaturalRock>
-			<canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-			<deconstructible>false</deconstructible>
-			<destroyShakeAmount>0</destroyShakeAmount>
-			<supportsWallAttachments>true</supportsWallAttachments>
-		</building>
-		<damageMultipliers>
-			<li>
-				<damageDef>Thump</damageDef>
-				<multiplier>4</multiplier>
-			</li>
-		</damageMultipliers>
-	</ThingDef>
--->
 
-	<!--============================ Simple mineables ===============================-->
-<!-- DefOverwrite
-	<ThingDef ParentName="RockBase">
-		<defName>CollapsedRocks</defName>
-		<label>Collapsed Rocks</label>
-		<graphicData>
-			<texPath>Things/Building/Natural/CollapsedRocks</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<linkType>None</linkType>
-			<drawSize>(3,3)</drawSize>
-		</graphicData>
-		<statBases>
-			<MaxHitPoints>1200</MaxHitPoints>
-		</statBases>
-		<description>Collapsed rocks, packed tightly enough to hold up a roof.</description>
-		<rotatable>true</rotatable>
-		<building>
-			<isNaturalRock>false</isNaturalRock>
-			<claimable>false</claimable>
-		</building>
-	</ThingDef>
--->
+    <!--
+    DefOverwrite list:
+    CollapsedRocks
+    MineableSteel
+    MineableGold
+    MineableSilver
+    MineablePlasteel
+    MineableJade
+    -->
+
 	<!--============================ Resource rocks ===============================-->
-<!-- DefOverwrite
-	<ThingDef ParentName="RockBase">
-		<defName>MineableSteel</defName>
-		<label>Iron Ore Deposits</label>
-		<graphicData>
-			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<color>(114,92,83)</color>
-			<colorTwo>(155,133,107)</colorTwo>
-		</graphicData>
-		<statBases>
-			<MaxHitPoints>2800</MaxHitPoints>
-		</statBases>
-		<description>Deposits of Iron Ore. Iron Ore has a variety of uses as an economic metal, being abundant and easy to process. It can be strengthened by being mixed with other metals into alloys.</description>
-		<building>
-			<isResourceRock>true</isResourceRock>
-			<mineableThing>Steel</mineableThing>
-			<mineableYield>35</mineableYield>
-			<mineableScatterCommonality>1.1</mineableScatterCommonality>
-			<mineableScatterLumpSizeRange>
-				<min>20</min>
-				<max>40</max>
-			</mineableScatterLumpSizeRange>
-			<veinMineable>true</veinMineable>
-		</building>
-	</ThingDef>
---><!-- DefOverwrite
-	<ThingDef ParentName="RockBase">
-		<defName>MineableSilver</defName>
-		<label>Silver Ore Deposits</label>
-		<graphicData>
-			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<color>(89,83,68)</color>
-			<colorTwo>(147,144,134)</colorTwo>
-		</graphicData>
-		<statBases>
-			<MaxHitPoints>3500</MaxHitPoints>
-		</statBases>
-		<description>Deposits of Silver Ore. Silver Ore is useful as the primary currency for trading.</description>
-		<building>
-			<isResourceRock>true</isResourceRock>
-			<mineableThing>Silver</mineableThing>
-			<mineableYield>250</mineableYield>
-			<mineableScatterCommonality>0.25</mineableScatterCommonality>
-			<mineableScatterLumpSizeRange>
-				<min>7</min>
-				<max>15</max>
-			</mineableScatterLumpSizeRange>
-			<veinMineable>true</veinMineable>
-		</building>
-	</ThingDef>
--->
-<!-- DefOverwrite
-	<ThingDef ParentName="RockBase">
-		<defName>MineableGold</defName>
-		<label>Gold Ore Deposits</label>
-		<graphicData>
-			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<color>(89,83,68)</color>
-			<colorTwo>(187,173,25)</colorTwo>
-		</graphicData>
-		<statBases>
-			<MaxHitPoints>4500</MaxHitPoints>
-		</statBases>
-		<description>Deposits of Gold Ore. Gold Ore is a very valuable and precious metal. The allure of this rare beautiful metal is known to bring out terrible greed in people.</description>
-		<building>
-			<isResourceRock>true</isResourceRock>
-			<mineableThing>Gold</mineableThing>
-			<mineableYield>50</mineableYield>
-			<mineableScatterCommonality>0.15</mineableScatterCommonality>
-			<mineableScatterLumpSizeRange>
-				<min>3</min>
-				<max>9</max>
-			</mineableScatterLumpSizeRange>
-			<veinMineable>true</veinMineable>
-		</building>
-	</ThingDef>
--->
+
 	<ThingDef ParentName="RockBase">
 		<defName>MineableNitre</defName>
 		<label>Nitre Deposits</label>
@@ -279,7 +39,6 @@
 			<veinMineable>true</veinMineable>
 		</building>
 	</ThingDef>
-
 
 	<ThingDef ParentName="RockBase">
 		<defName>MineableCoal</defName>
@@ -308,33 +67,6 @@
 		</building>
 	</ThingDef>
 
-<!-- DefOverwrite
-	<ThingDef ParentName="RockBase">
-		<defName>MineablePlasteel</defName>
-		<label>Nickel Ore Deposits</label>
-		<graphicData>
-			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<color>(88,115,175)</color>
-		</graphicData>
-		<statBases>
-			<MaxHitPoints>10000</MaxHitPoints>
-		</statBases>
-		<description>Lateritic nickel ore deposits are surficial, weathered rinds formed on ultramafic rocks. Nickel Ore contains Nickel and small amounts of Cobalt.</description>
-		<building>
-			<isResourceRock>true</isResourceRock>
-			<mineableThing>Nickel</mineableThing>
-			<mineableYield>50</mineableYield>
-			<mineableScatterCommonality>0.4</mineableScatterCommonality>
-			<mineableScatterLumpSizeRange>
-				<min>5</min>
-				<max>10</max>
-			</mineableScatterLumpSizeRange>
-			<veinMineable>true</veinMineable>
-		</building>
-	</ThingDef>-->
-
 	<ThingDef ParentName="RockBase">
 		<defName>MineableTin</defName>
 		<label>Tin Ore Deposits</label>
@@ -360,7 +92,6 @@
 			<veinMineable>true</veinMineable>
 		</building>
 	</ThingDef>
-
 
 	<ThingDef ParentName="RockBase">
 		<defName>MineableCopper</defName>
@@ -415,35 +146,6 @@
 			<veinMineable>true</veinMineable>
 		</building>
 	</ThingDef>
-
-<!-- DefOverwrite
-	<ThingDef ParentName="RockBase">
-		<defName>MineableJade</defName>
-		<label>Jade</label>
-		<graphicData>
-			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<color>(68,83,68)</color>
-			<colorTwo>(30,173,25)</colorTwo>
-		</graphicData>
-		<statBases>
-			<MaxHitPoints>6000</MaxHitPoints>
-		</statBases>
-		<description>Rock containing bits of jade.</description>
-		<building>
-			<isResourceRock>true</isResourceRock>
-			<mineableThing>Jade</mineableThing>
-			<mineableYield>75</mineableYield>
-			<mineableScatterCommonality>0.25</mineableScatterCommonality>
-			<mineableScatterLumpSizeRange>
-				<min>7</min>
-				<max>12</max>
-			</mineableScatterLumpSizeRange>
-			<veinMineable>true</veinMineable>
-		</building>
-	</ThingDef>
--->
 
 	<ThingDef ParentName="RockBase">
 		<defName>MineableTitanium</defName>
@@ -549,45 +251,7 @@
 			<veinMineable>true</veinMineable>
 		</building>
 	</ThingDef>
-<!-- DefOverwrite
-	<ThingDef ParentName="BuildingNaturalBase">
-		<defName>SteamGeyser</defName>
-		<thingClass>Building_SteamGeyser</thingClass>
-		<label>steam geyser</label>
-		<description>A natural source of high-pressure steam. Geothermal generators can harness the steam power. Rooms built over this will rapidly cook.</description>
-		<graphicData>
-			<texPath>Things/Building/Natural/SteamGeyser</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>Transparent</shaderType>
-			<drawSize>(4,4)</drawSize>
-		</graphicData>
-		<altitudeLayer>Floor</altitudeLayer>
-		<rotatable>false</rotatable>
-		<destroyable>true</destroyable>
-		<useHitPoints>false</useHitPoints>
-		<tickerType>Normal</tickerType>
-		<selectable>true</selectable>
-		<size>(2,2)</size>
-		<neverOverlapFloors>true</neverOverlapFloors>
-		<blockPlants>true</blockPlants>
-		<statBases>
-			<WorkToMake>2500</WorkToMake>
-		</statBases>
-		<building>
-			<isEdifice>false</isEdifice>
-			<claimable>false</claimable>
-			<deconstructible>true</deconstructible>
-			<alwaysDeconstructible>true</alwaysDeconstructible>
-			<relatedBuildCommands>
-				<li>GeothermalGenerator</li>
-			</relatedBuildCommands>
-			<alwaysShowRelatedBuildCommands>true</alwaysShowRelatedBuildCommands>
-		</building>
-		<modExtensions>
-			<li Class="SK.ThingGround" />
-		</modExtensions>
-	</ThingDef>
--->
+
 	<ThingDef ParentName="RockBase">
 		<defName>MineableGlowstone</defName>
 		<label>Glowstone Deposit</label>

@@ -6,6 +6,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>chevalDeFrise</defName>
 		<label>cheval de frise</label>
+		<description>A defensive barrier made of sharpened sticks. It is weak but slow to climb over.</description>
 		<graphicData>
 			<texPath>Things/Building/Security/ChevalDeFrise</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -38,7 +39,6 @@
 				<li>ForceBuildDuringSiege</li>
 			</buildingTags>
 		</building>
-		<description>A defensive barrier made of sharpened sticks. It is weak but slow to climb over.</description>
 		<costList>
 			<WoodLog>10</WoodLog>
 		</costList>
@@ -62,6 +62,7 @@
 		<defName>Moat</defName>
 		<thingClass>Building</thingClass>
 		<label>shallow moat</label>
+		<description>A light perimeter defense to slow down your enemy.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Building/Walls/MoatAtlas</texPath>
@@ -91,9 +92,7 @@
 		<costList>
 			<SoftClay>10</SoftClay>
 			<SandResource>10</SandResource>
-			<Polymers>2</Polymers>
 		</costList>
-		<description>A light perimeter defense to slow down your enemy.</description>
 		<drawStyleCategory>Default1D</drawStyleCategory>
 		<blockLight>false</blockLight>
 		<holdsRoof>false</holdsRoof>
@@ -107,33 +106,6 @@
 		<researchPrerequisites>
 			<li>Fortification_A1</li>
 		</researchPrerequisites>
-	</ThingDef>
-
-
-	<ThingDef ParentName="BuildingBase" Name="NanoShieldBase" Abstract="True">
-		<altitudeLayer>Building</altitudeLayer>
-		<blockLight>true</blockLight>
-		<fillPercent>1</fillPercent>
-		<size>(1,1)</size>
-		<rotatable>false</rotatable>
-		<designationCategory>Security</designationCategory>
-		<holdsRoof>false</holdsRoof>
-		<specialDisplayRadius>8</specialDisplayRadius>
-		<statBases>
-			<MaxHitPoints>500</MaxHitPoints>
-			<WorkToBuild>1200</WorkToBuild>
-			<Flammability>1.0</Flammability>
-			<Beauty>25</Beauty>
-		</statBases>
-		<costList>
-			<MagneticMaterial>25</MagneticMaterial>
-			<BiosyntheticMaterial>15</BiosyntheticMaterial>
-			<ComponentSpacer>6</ComponentSpacer>
-			<AdvMechanism>8</AdvMechanism>
-			<Microchips>6</Microchips>
-		</costList>
-		<passability>Impassable</passability>
-		<tickerType>Normal</tickerType>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -199,7 +171,7 @@
 		<constructionSkillPrerequisite>19</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="NanoShieldBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>Building_NaniteShieldStation</defName>
 		<label>nanite shield station</label>
 		<description>Supplies and recharges Nanite Shield Modulators on colonists to protect them from injury.</description>
@@ -215,7 +187,28 @@
 			</shadowData>
 		</graphicData>
 		<uiIconPath>Things/Building/Defences/NaniteShieldStation</uiIconPath>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockLight>true</blockLight>
+		<fillPercent>1</fillPercent>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+		<holdsRoof>false</holdsRoof>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>1200</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>25</Beauty>
+		</statBases>
+		<costList>
+			<MagneticMaterial>25</MagneticMaterial>
+			<BiosyntheticMaterial>15</BiosyntheticMaterial>
+			<ComponentSpacer>6</ComponentSpacer>
+			<AdvMechanism>8</AdvMechanism>
+			<Microchips>6</Microchips>
+		</costList>
 		<specialDisplayRadius>2</specialDisplayRadius>
+		<passability>Impassable</passability>
+		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>

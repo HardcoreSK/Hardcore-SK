@@ -384,4 +384,62 @@
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 	</ThingDef>
 
+	<ThingDef ParentName="BuildingBase">
+		<defName>HolyBasin</defName>
+		<label>Holy Metal Basin</label>
+		<thingClass>Building_WorkTable</thingClass>
+		<description>Old metal basin where you wash your clothes to remove a worn by corpse effect from Apparel.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/HolyWasher/basin</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+		<costList>
+			<ComponentMedieval>3</ComponentMedieval>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>			
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<Cleanliness>0</Cleanliness>
+			<WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
+			<Mass>2.5</Mass>
+		</statBases>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>True</useHitPoints>
+		<designationCategory>Accessories</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<rotatable>true</rotatable>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<recipes>
+			<li>BasinWashApparel</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+		<comps>
+		</comps>
+		<researchPrerequisites>
+			<li>Construction_B1</li>
+		</researchPrerequisites>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	</ThingDef>
+
 </Defs>
