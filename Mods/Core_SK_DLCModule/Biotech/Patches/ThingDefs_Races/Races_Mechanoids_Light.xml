@@ -1,60 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ThingDef[@Name="LightMechanoid"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.SK_BaseMechanoidDummy</value>
-	</Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[@Name="LightMechanoid"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.SK_BaseMechanoidDummy</value>
+    </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/PawnKindDef[@Name="LightMechanoidKind"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.SK_BaseMechanoidKindDummy</value>
-	</Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/PawnKindDef[@Name="LightMechanoidKind"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.SK_BaseMechanoidKindDummy</value>
+    </Operation>
 
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[@Name="LightMechanoid"]</xpath>
-		<value>
-			<butcherProducts>
-				<Plasteel>2</Plasteel>
-				<DepletedUranium>3</DepletedUranium>
-				<CarbonAlloy>2</CarbonAlloy>
-			</butcherProducts>
-			<statBases>
-				<WorkSpeedGlobal>1</WorkSpeedGlobal>
-			</statBases>
-		</value>
-	</Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[@Name="LightMechanoid"]</xpath>
+        <value>
+            <butcherProducts>
+                <Plasteel>2</Plasteel>
+                <DepletedUranium>3</DepletedUranium>
+                <CarbonAlloy>2</CarbonAlloy>
+            </butcherProducts>
+            <statBases>
+                <WorkSpeedGlobal>1</WorkSpeedGlobal>
+            </statBases>
+        </value>
+    </Operation>
 
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[	defName="Mech_Lifter" or 
-								defName="Mech_Constructoid" or 
-								defName="Mech_Fabricor" or 
-								defName="Mech_Agrihand" or 
-								defName="Mech_Paramedic"
-								]/comps/li[@Class="CombatExtended.CompProperties_ArmorDurability"]</xpath>
-		<value>
-			<Durability>700</Durability>
-			<Repairable>true</Repairable>
-			<RepairIngredients>
-				<ComponentIndustrial>2</ComponentIndustrial>
-				<Steel>10</Steel>
-			</RepairIngredients>
-			<RepairTime>300</RepairTime>
-			<RepairValue>200</RepairValue>
-			<CanOverHeal>true</CanOverHeal>
-			<MaxOverHeal>70</MaxOverHeal>
-			<MinArmorPct>0.75</MinArmorPct>
-		</value>
-	</Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Mech_Lifter" or 
+                            defName="Mech_Constructoid" or 
+                            defName="Mech_Fabricor" or 
+                            defName="Mech_Agrihand" or 
+                            defName="Mech_Paramedic"
+        ]/comps/li[@Class="CombatExtended.CompProperties_ArmorDurability"]</xpath>
+        <value>
+            <Durability>700</Durability>
+            <Repairable>true</Repairable>
+            <RepairIngredients>
+                <ComponentIndustrial>2</ComponentIndustrial>
+                <Steel>10</Steel>
+            </RepairIngredients>
+            <RepairTime>300</RepairTime>
+            <RepairValue>200</RepairValue>
+            <CanOverHeal>true</CanOverHeal>
+            <MaxOverHeal>70</MaxOverHeal>
+            <MinArmorPct>0.75</MinArmorPct>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Mech_Constructoid"]/statBases</xpath>
+        <value>
+            <MoveSpeed>3.4</MoveSpeed>
+            <ConstructionSpeed>1.2</ConstructionSpeed>
+            <SmoothingSpeed>1.2</SmoothingSpeed>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Mech_Lifter"]/statBases</xpath>
+        <value>
+            <MoveSpeed>4.4</MoveSpeed>
+            <CarryWeight>100</CarryWeight>
+            <CarryBulk>50</CarryBulk>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Mech_Fabricor"]/statBases</xpath>
+        <value>
+            <MoveSpeed>3.6</MoveSpeed>
+            <WorkSpeedGlobal>1.2</WorkSpeedGlobal>
+            <SmeltingSpeed>1</SmeltingSpeed>
+            <GeneralLaborSpeed>1</GeneralLaborSpeed>
+            <CookSpeed>1</CookSpeed>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Mech_Agrihand"]/statBases</xpath>
+        <value>
+            <MoveSpeed>4</MoveSpeed>
+            <PlantWorkSpeed>1.2</PlantWorkSpeed>
+            <PlantHarvestYield>1</PlantHarvestYield>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Mech_Cleansweeper"]/statBases</xpath>
+        <value>
+            <MoveSpeed>4</MoveSpeed>
+            <CleaningSpeed>1.2</CleaningSpeed>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Mech_Paramedic"]/statBases</xpath>
+        <value>
+            <MoveSpeed>5.2</MoveSpeed>
+            <WorkSpeedGlobal>1</WorkSpeedGlobal>
+            <MedicalTendSpeed>1.2</MedicalTendSpeed>
+            <MedicalTendQuality>1</MedicalTendQuality>
+            <MedicalOperationSpeed>1</MedicalOperationSpeed>
+        </value>
+    </Operation>
 
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="Mech_WarUrchin"]/statBases</xpath>
-		<value>
-			<ArmorRating_Sharp>5</ArmorRating_Sharp>
-			<ArmorRating_Blunt>8</ArmorRating_Blunt>
-		</value>
-	</Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Mech_WarUrchin"]/statBases</xpath>
+        <value>
+            <ArmorRating_Sharp>5</ArmorRating_Sharp>
+            <ArmorRating_Blunt>8</ArmorRating_Blunt>
+        </value>
+    </Operation>
 
 </Patch>

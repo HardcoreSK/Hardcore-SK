@@ -45,28 +45,15 @@
 			<CarbonAlloy>6</CarbonAlloy>
 		</value>
 	</Operation>
-
-
-	<!-- <Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Mech_Tunneler"]/comps</xpath>
-		<value>
-			<li Class="CombatExtended.CompProperties_ArmorDurability">
-				<Durability>2500</Durability>
-				<Regenerates>true</Regenerates>
-				<RegenInterval>1250</RegenInterval>
-				<RegenValue>5</RegenValue>
-				<Repairable>true</Repairable>
-				<RepairIngredients>
-					<Plasteel>10</Plasteel>
-					<CarbonAlloy>10</CarbonAlloy>
-				</RepairIngredients>
-				<RepairTime>300</RepairTime>
-				<RepairValue>200</RepairValue>
-				<CanOverHeal>true</CanOverHeal>
-				<MaxOverHeal>250</MaxOverHeal>
-				<MinArmorPct>0.75</MinArmorPct>
-			</li>
-		</value>
-	</Operation> -->
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Mech_Tunneler"]/statBases</xpath>
+        <value>
+            <WorkSpeedGlobal>1</WorkSpeedGlobal>
+            <MoveSpeed>3.1</MoveSpeed>
+            <MiningSpeed>1.25</MiningSpeed>
+            <MiningYield>1</MiningYield>
+        </value>
+    </Operation>
 
 </Patch>
