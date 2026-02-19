@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef Name="MakeSimpleImplantBase" Abstract="True">
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>EPOEAssembling</soundWorking>
+        <unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <recipeUsers>
+            <li>TableBasicProsthetic</li>
+        </recipeUsers>
+    </RecipeDef>
+
+</Defs>

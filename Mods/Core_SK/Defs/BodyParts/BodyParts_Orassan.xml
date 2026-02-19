@@ -81,7 +81,7 @@
 
 	<ThingDef ParentName="BodyPartBase_Basic">
 		<defName>OClothTail</defName>
-		<label>Cloth tail</label>
+		<label>cloth tail</label>
 		<description>A very poor tail replacement. Looks bad, feels bad, is bad.</description>
 		<graphicData>
 			<texPath>Things/Item/BodyPart/BasicProsthesis</texPath>
@@ -92,17 +92,7 @@
 			<Bulk>2</Bulk>
 			<Mass>1</Mass>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
-		<costStuffCount>20</costStuffCount>
-		<recipeMaker>
-			<productCount>1</productCount>
-			<skillRequirements>
-				<Crafting>4</Crafting>
-			</skillRequirements>
-			<researchPrerequisite>Prosthesis_making_B1</researchPrerequisite>
-		</recipeMaker>
+        <recipeMaker IsNull="True" Inherit="False"/>
 	</ThingDef>	
 
 	<HediffDef ParentName="HediffBodyPartBase_Basic">

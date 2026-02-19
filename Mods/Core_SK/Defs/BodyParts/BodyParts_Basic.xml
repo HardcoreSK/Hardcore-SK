@@ -89,18 +89,7 @@
 		<techHediffsTags>
 			<li>Common</li>
 		</techHediffsTags>
-		<stuffCategories>
-			<li>Fabric</li>
-			<li>Leathery</li>
-		</stuffCategories>
-		<costStuffCount>10</costStuffCount>
-		<recipeMaker>
-			<productCount>1</productCount>
-			<skillRequirements>
-				<Crafting>4</Crafting>
-			</skillRequirements>
-			<researchPrerequisite>Prosthesis_making_B1</researchPrerequisite>
-		</recipeMaker>
+        <recipeMaker IsNull="True" Inherit="False"/>
 	</ThingDef>
 
 	<HediffDef ParentName="HediffBodyPartBase_Basic">
@@ -132,14 +121,6 @@
 		<ingredients>
 			<li>
 				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
 					<thingDefs>
 						<li>EyePatch</li>
 					</thingDefs>
@@ -148,9 +129,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>EyePatch</li>
 			</thingDefs>
@@ -159,10 +137,6 @@
 			<li>Eye</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>EyePatch</addsHediff>
-		<skillRequirements>
-			<Medicine>1</Medicine>
-		</skillRequirements>
-		<researchPrerequisite>Prosthetics</researchPrerequisite>
 	</RecipeDef>
 
 
