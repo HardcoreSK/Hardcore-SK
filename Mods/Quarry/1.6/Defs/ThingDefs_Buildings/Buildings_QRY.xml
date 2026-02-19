@@ -82,12 +82,7 @@
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>170</costStuffCount>
-		<comps>
-			<li Class="CompProperties_AssignableToPawn">
-				<drawAssignmentOverlay>true</drawAssignmentOverlay>
-				<!-- <compClass>CompAssignableToPawn_Bed</compClass> -->
-			</li>
-		</comps>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 	</ThingDef>
 
 	<ThingDef ParentName="QRY_QuarryBase">
