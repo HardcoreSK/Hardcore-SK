@@ -1174,6 +1174,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<size>(2,1)</size>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<building>
+			<maxItemsInCell>4</maxItemsInCell>
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>False</ignoreStoredThingsBeauty>
 			<defaultStorageSettings>
@@ -1193,13 +1194,12 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 				</filter>
 			</fixedStorageSettings>
 		</building>
-		<staticSunShadowHeight>1</staticSunShadowHeight>
+		<staticSunShadowHeight>1</staticSunShadowHeight><!--
 		<comps>
 			<li Class="RimFridge.CompProperties_SecondLayer">
 				<graphicData>
 					<texPath>Things/Building/Storage/DisplayCaseTop</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<!--<shaderType>Transparent</shaderType>-->
 					<drawSize>(2.9,2.9)</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 				</graphicData>
@@ -1212,12 +1212,110 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 				<overlayType>SumOfItemsPerCell</overlayType>
 				<showContents>true</showContents>
 			</li>
-		</comps>
+		</comps>-->
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 		<researchPrerequisites>
 			<li>Storage_C2</li>
 		</researchPrerequisites>
 	</ThingDef>
+
+    <AdaptiveStorage.GraphicsDef>
+		<defName>DisplayCaseASF</defName>
+		<targetDef>DisplayCase</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/DisplayCase</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2.9,2.9)</drawSize>
+                </graphicData>
+				<graphicDatas>
+					<li>
+						<texPath>Things/Building/Storage/DisplayCaseTop</texPath>
+						<graphicClass>Graphic_Multi</graphicClass>
+						<drawSize>(2.9,2.9)</drawSize>
+						<shaderType>CutoutComplex</shaderType>
+						<drawRotated>false</drawRotated>
+						<renderQueue>2950</renderQueue>
+						<altitudeLayer>ItemImportant</altitudeLayer>
+						<drawOffset>(0,1.2,0)</drawOffset>
+					</li>
+				</graphicDatas>
+            </li>
+        </graphics>
+		<showContainedItems>true</showContainedItems>
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.35,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.35)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.35)</stackOffsetWest>
+							<drawOffset>(0.15,0,0.2)</drawOffset>
+							<drawOffsetEast>(-0.15,0.1,0.25)</drawOffsetEast>
+							<drawOffsetWest>(-0.15,0.1,0.25)</drawOffsetWest>
+							<drawScale>0.9</drawScale>
+							<rotation>0</rotation>
+						</r0>					
+					</rows>
+				</c0>
+				<c1>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.35,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.35)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.35)</stackOffsetWest>
+							<drawOffset>(-0.7,0.05,-0.15)</drawOffset>
+							<drawOffsetEast>(0.15,0.1,-1)</drawOffsetEast>
+							<drawOffsetWest>(0.15,0.1,-1)</drawOffsetWest>
+							<drawScale>0.9</drawScale>
+							<rotation>0</rotation>
+						</r0>
+					</rows>
+				</c1>
+			</columns>
+		</itemGraphics>
+		<!--<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast> (distance between horizontal,?,distance between vertical) -->
+		<!--<drawOffsetEast>(-0.15,2.05,0.45)</drawOffsetEast> (x -left & right, y - layer, z - up & down) -->
+		<!-- For double layer shelf
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.233,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.185)</stackOffsetWest>
+							<drawOffset>(0.09,2.05,0.45)</drawOffset>
+							<drawOffsetEast>(-0.15,2.05,0.45)</drawOffsetEast>
+							<drawOffsetWest>(0,2.05,0.65)</drawOffsetWest>
+							<drawScale>0.9</drawScale>
+							<rotation>0</rotation>
+						</r0>					
+					</rows>
+				</c0>
+				<c1>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.233,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.185)</stackOffsetWest>
+							<drawOffset>(-0.91,0,-0.10)</drawOffset>
+							<drawOffsetEast>(0.1,0.1,-0.95)</drawOffsetEast>
+							<drawOffsetWest>(0,0.1,-0.95)</drawOffsetWest>
+							<drawScale>0.9</drawScale>
+							<rotation>0</rotation>
+						</r0>
+					</rows>
+				</c1>
+			</columns>
+		</itemGraphics>-->
+	</AdaptiveStorage.GraphicsDef>
 
 	<!-- GENERAL STORAGE - Protected/Outdoors -->
 	<!--Wicker Basket- also helps preserve fruits, veggies-->
@@ -1255,6 +1353,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			<ComponentMedieval>2</ComponentMedieval>
 		</costList>
 		<building>
+			<maxItemsInCell>4</maxItemsInCell>
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
 			<fixedStorageSettings>
@@ -1277,7 +1376,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<comps>
 			<li Class="SK.CompProperties_RotModified">
 				<rotmodifier>0.7</rotmodifier>
-			</li>
+			</li><!--
 			<li Class="LWM.DeepStorage.Properties" >
 				<maxNumberStacks>4</maxNumberStacks>
 				<minTimeStoringTakes>15</minTimeStoringTakes>
@@ -1285,7 +1384,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 				<additionalTimeEachDef>15</additionalTimeEachDef>
 				<showContents>false</showContents>
 				<overlayType>SumOfItemsPerCell</overlayType>
-			</li>
+			</li>-->
 		</comps>
 		<!--<researchPrerequisites Inherit="false"/>-->
 		<researchPrerequisites>
@@ -1293,6 +1392,74 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 	</ThingDef>
+	
+    <AdaptiveStorage.GraphicsDef>
+		<defName>BasketASF</defName>
+		<targetDef>Basket</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/Basket_Empty</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawRotated>false</drawRotated>
+					<drawSize>(1.2,1.2)</drawSize>
+					<shadowData>
+						<volume>(0.55, 0.3, 0.18)</volume>
+						<offset>(0, 0, 0.24)</offset>
+					</shadowData>
+                </graphicData>
+				<graphicDatas>
+					<li>
+						<texPath>Things/Building/Storage/Basket_Top</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+						<shaderType>CutoutComplex</shaderType>
+						<drawRotated>false</drawRotated>
+						<drawSize>(1.2,1.2)</drawSize>
+						<renderQueue>2950</renderQueue>
+						<altitudeLayer>ItemImportant</altitudeLayer>
+						<drawOffset>(0,1.2,0)</drawOffset>
+					</li>
+				</graphicDatas>
+            </li>
+			<li>
+				<graphicData>
+					<texPath>Things/Building/Storage/Basket</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawRotated>false</drawRotated>
+					<drawSize>(1.2,1.2)</drawSize>
+					<shadowData>
+						<volume>(0.55, 0.3, 0.18)</volume>
+						<offset>(0, 0, 0.24)</offset>
+					</shadowData>
+				</graphicData>
+				<minimumStackCount>4</minimumStackCount>
+				<showContainedItems>false</showContainedItems>
+			</li>
+        </graphics>
+		<showContainedItems>true</showContainedItems>
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Circle</stackBehaviour>
+							<stackOffset>(0,0,0.4)</stackOffset>
+							<drawOffset>(0,0,-0.1)</drawOffset>
+							<drawOffsetEast>(0,0,-0.1)</drawOffsetEast>
+							<drawOffsetWest>(0,0,-0.1)</drawOffsetWest>
+							<!--<drawScale>0.9</drawScale>-->
+							<stackOffsetFactor>0.2</stackOffsetFactor>
+							<drawScale>0.6</drawScale>
+						</r0>					
+					</rows>
+				</c0>
+			</columns>
+		</itemGraphics>
+		<!--<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast> (distance between horizontal,?,distance between vertical) -->
+		<!--<drawOffsetEast>(-0.15,2.05,0.45)</drawOffsetEast> (x -left & right, y - layer, z - up & down) -->
+	</AdaptiveStorage.GraphicsDef>
 	
 	<!--Barrel-->
 	<ThingDef ParentName="LWM_DeepStorage">

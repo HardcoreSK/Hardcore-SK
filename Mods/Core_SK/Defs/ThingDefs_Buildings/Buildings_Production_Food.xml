@@ -53,7 +53,7 @@
 			<Cleanliness>-10</Cleanliness>
 		</statBases>
 		<size>(3,1)</size>
-		<designationCategory>FoodProduction</designationCategory>
+		<designationCategory>Production</designationCategory>
 		<pathCost>60</pathCost>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<inspectorTabs>
@@ -133,7 +133,7 @@
 		<size>(1,1)</size>
 		<fillPercent>0.3</fillPercent>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<designationCategory>FoodProduction</designationCategory>
+		<designationCategory>Production</designationCategory>
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Flickable"/>
@@ -407,7 +407,7 @@
 			<li>MakeSugar</li>
 			<li>GrindingCoffeeBeans</li>
 		</recipes>
-		<designationCategory>FoodProduction</designationCategory>
+		<designationCategory>Production</designationCategory>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
 		</inspectorTabs>
@@ -478,7 +478,7 @@
 			<li>MakeSugar</li>
 			<li>GrindingCoffeeBeans</li>
 		</recipes>
-		<designationCategory>FoodProduction</designationCategory>
+		<designationCategory>Production</designationCategory>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
 		</inspectorTabs>
@@ -558,7 +558,7 @@
 		</costList>
 		<defaultPlacingRot>North</defaultPlacingRot>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-		<designationCategory>FoodProduction</designationCategory>
+		<designationCategory>Production</designationCategory>
 		<!-- custom -->
 		<resourcesFractionWhenDeconstructed>0.2</resourcesFractionWhenDeconstructed>
 		<fillPercent>0.5</fillPercent>
@@ -628,7 +628,7 @@
 			<Cleanliness>-8</Cleanliness>
 		</statBases>
 		<size>(2,2)</size>
-		<designationCategory>FoodProduction</designationCategory>
+		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(1,0,-1)</interactionCellOffset>
 		<tickerType>Normal</tickerType>
 		<recipes>
@@ -737,7 +737,7 @@
 		</statBases>
 		<size>(1,1)</size>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<designationCategory>FoodProduction</designationCategory>
+		<designationCategory>Production</designationCategory>
 		<recipes>
 			<li>MeltSugar</li>
 			<li>RoastingCoffeeBeans</li>
@@ -823,7 +823,7 @@
 			<Cleanliness>-6</Cleanliness>
 		</statBases>
 		<size>(2,1)</size>
-		<designationCategory>FoodProduction</designationCategory>
+		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<tickerType>Normal</tickerType>
 		<comps>
@@ -905,7 +905,7 @@
 			<Mass>20</Mass>
 		</statBases>
 		<size>(1,1)</size>
-		<designationCategory>FoodProduction</designationCategory>
+		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<comps>
 			<li Class="CompProperties_Power">
@@ -1059,7 +1059,7 @@
 			<Cleanliness>-4</Cleanliness>
 		</statBases>
 		<size>(2,1)</size>
-		<designationCategory>FoodProduction</designationCategory>
+		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
@@ -1136,7 +1136,7 @@
 		</costList>
 		<size>(1,1)</size>
 		<rotatable>true</rotatable>
-		<designationCategory>FoodProduction</designationCategory>
+		<designationCategory>Production</designationCategory>
 		<tickerType>Rare</tickerType>
 		<building>
 			<uninstallWork>150</uninstallWork>
@@ -1198,7 +1198,7 @@
 		</costList>
 		<size>(2,1)</size>
 		<rotatable>true</rotatable>
-		<designationCategory>FoodProduction</designationCategory>
+		<designationCategory>Production</designationCategory>
 		<tickerType>Rare</tickerType>
 		<building>
 			<uninstallWork>350</uninstallWork>
@@ -1264,7 +1264,7 @@
 		</comps>
 		<tickerType>Rare</tickerType>
 		<rotatable>true</rotatable>
-		<designationCategory>FoodProduction</designationCategory>
+		<designationCategory>Production</designationCategory>
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 
 		<!-- ThingDef_UF fields -->
@@ -1320,7 +1320,7 @@
 		</comps>
 		<tickerType>Rare</tickerType>
 		<rotatable>true</rotatable>
-		<designationCategory>FoodProduction</designationCategory>
+		<designationCategory>Production</designationCategory>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 		<researchPrerequisites>
 			<li>Food_B1</li>
@@ -1380,7 +1380,7 @@
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<rotatable>false</rotatable>
-		<designationCategory>FoodProduction</designationCategory>
+		<designationCategory>Production</designationCategory>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
 		<researchPrerequisites>
