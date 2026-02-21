@@ -1138,7 +1138,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 	</AdaptiveStorage.GraphicsDef>
 	
 	<!--Display Case - beauty-->
-	<ThingDef ParentName="LWM_DeepStorage">
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<defName>DisplayCase</defName>
 		<label>display case</label>
 		<description>A glass case for showing off your wares to guests.</description>
@@ -1319,7 +1319,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 
 	<!-- GENERAL STORAGE - Protected/Outdoors -->
 	<!--Wicker Basket- also helps preserve fruits, veggies-->
-	<ThingDef ParentName="LWM_DeepStorage">
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<defName>Basket</defName>
 		<label>Wicker basket</label>
 		<description>A woven container made typically of plant matierals, but may also be fashioned with synthetic ingredients. Can store just about anything, protects from the elements, and does well keeping fruits and veggies fresh by reducing spoilage by 30%.</description>
@@ -1445,13 +1445,13 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 					<rows>
 						<r0>
 							<stackBehaviour>Circle</stackBehaviour>
-							<stackOffset>(0,0,0.4)</stackOffset>
-							<drawOffset>(0,0,-0.1)</drawOffset>
-							<drawOffsetEast>(0,0,-0.1)</drawOffsetEast>
-							<drawOffsetWest>(0,0,-0.1)</drawOffsetWest>
+							<stackOffset>(0,0,0.5)</stackOffset>
+							<drawOffset>(0,0,-0.08)</drawOffset>
+							<drawOffsetEast>(0,0,-0.08)</drawOffsetEast>
+							<drawOffsetWest>(0,0,-0.08)</drawOffsetWest>
 							<!--<drawScale>0.9</drawScale>-->
-							<stackOffsetFactor>0.2</stackOffsetFactor>
-							<drawScale>0.6</drawScale>
+							<stackOffsetFactor>0.3</stackOffsetFactor>
+							<drawScale>0.5</drawScale>
 						</r0>					
 					</rows>
 				</c0>
@@ -1462,7 +1462,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 	</AdaptiveStorage.GraphicsDef>
 	
 	<!--Barrel-->
-	<ThingDef ParentName="LWM_DeepStorage">
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<defName>Barrel</defName>
 		<label>barrel</label>
 		<description>A barrel made of wood or metal. Used to store various things inside, though easier to manage when it's all that same type of thing. Up to 5 items.</description>
@@ -1496,6 +1496,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<size>(1,1)</size>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<building>
+			<maxItemsInCell>5</maxItemsInCell>
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
 			<fixedStorageSettings>
@@ -1511,7 +1512,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 					</disallowedCategories>
 				</filter>
 			</fixedStorageSettings>
-		</building>
+		</building><!--
 		<comps>
 			<li Class="LWM.DeepStorage.Properties">
 				<maxNumberStacks>5</maxNumberStacks>
@@ -1521,12 +1522,81 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 				<showContents>false</showContents>
 				<overlayType>SumOfItemsPerCell</overlayType>
 			</li>
-		</comps>
+		</comps>-->
 		<researchPrerequisites>
 			<li>Storage_B1</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</ThingDef>
+	
+    <AdaptiveStorage.GraphicsDef>
+		<defName>BarrelASF</defName>
+		<targetDef>Barrel</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/barrel_Empty</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawRotated>false</drawRotated>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.55, 0.3, 0.24)</volume>
+						<offset>(0, 0, 0.3)</offset>
+					</shadowData>
+                </graphicData>
+				<graphicDatas>
+					<li>
+						<texPath>Things/Building/Storage/barrel_Top</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+						<drawRotated>false</drawRotated>
+						<shaderType>CutoutComplex</shaderType>
+						<shadowData>
+							<volume>(0.55, 0.3, 0.24)</volume>
+							<offset>(0, 0, 0.3)</offset>
+						</shadowData>
+						<renderQueue>2950</renderQueue>
+						<altitudeLayer>ItemImportant</altitudeLayer>
+						<drawOffset>(0,1.2,0)</drawOffset>
+					</li>
+				</graphicDatas>
+            </li>
+			<li>
+				<graphicData>
+					<texPath>Things/Building/Storage/barrel</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawRotated>false</drawRotated>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.55, 0.3, 0.24)</volume>
+						<offset>(0, 0, 0.3)</offset>
+					</shadowData>
+				</graphicData>
+				<minimumStackCount>5</minimumStackCount>
+				<showContainedItems>false</showContainedItems>
+			</li>
+        </graphics>
+		<showContainedItems>true</showContainedItems>
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Circle</stackBehaviour>
+							<stackOffset>(0,0,0.5)</stackOffset>
+							<drawOffset>(0,0,0.05)</drawOffset>
+							<drawOffsetEast>(0,0,0.05)</drawOffsetEast>
+							<drawOffsetWest>(0,0,0.05)</drawOffsetWest>
+							<!--<drawScale>0.9</drawScale>-->
+							<stackOffsetFactor>0.4</stackOffsetFactor>
+							<drawScale>0.6</drawScale>
+						</r0>					
+					</rows>
+				</c0>
+			</columns>
+		</itemGraphics>
+		<!--<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast> (distance between horizontal,?,distance between vertical) -->
+		<!--<drawOffsetEast>(-0.15,2.05,0.45)</drawOffsetEast> (x -left & right, y - layer, z - up & down) -->
+	</AdaptiveStorage.GraphicsDef>
 	
 	<!--Chest-->
 	<ThingDef ParentName="LWM_DeepStorage">
