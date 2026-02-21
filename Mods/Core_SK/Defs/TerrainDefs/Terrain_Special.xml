@@ -1,53 +1,71 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    
+    <TerrainDef Name="GlowingStoneFloorBase" ParentName="FloorBase" Abstract="True">
+        <renderPrecedence>220</renderPrecedence>
+        <isPaintable>false</isPaintable>
+        <color>(1,1,1)</color>
+        <designationCategory>OutsideFloors</designationCategory>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <researchPrerequisites>
+            <li>Stone_floor_B2</li>
+            <li>Light_B1</li>
+        </researchPrerequisites>
+    </TerrainDef>
+    
+    <TerrainDef Name="GlowstoneStoneFloorBase" ParentName="GlowingStoneFloorBase" Abstract="True">
+        <description>Glowstone tiles, which emit natural light. Quite beautiful, but hard to build and clean.</description>
+        <glowRadius>3</glowRadius>
+        <glowColor>(180,197,215,0)</glowColor>
+        <statBases>
+            <WorkToBuild>1500</WorkToBuild>
+            <Beauty>6</Beauty>
+            <CleaningTimeFactor>1.3</CleaningTimeFactor>
+        </statBases>
+        <costList>
+            <Glowstone>3</Glowstone>
+            <ConcreteResource>2</ConcreteResource>
+        </costList>
+    </TerrainDef>
+    
+    <TerrainDef Name="ColdstoneFloorBase" ParentName="GlowingStoneFloorBase" Abstract="True">
+        <description>Coldstone tiles, which emit natural light. Quite beautiful, but hard to build and clean.</description>
+        <glowRadius>3</glowRadius>
+        <glowColor>(132,175,217,0)</glowColor>
+        <statBases>
+            <WorkToBuild>1500</WorkToBuild>
+            <Beauty>6</Beauty>
+            <CleaningTimeFactor>1.3</CleaningTimeFactor>
+        </statBases>
+        <costList>
+            <Glowstone>1</Glowstone>
+            <Coldstone>2</Coldstone>
+            <ConcreteResource>2</ConcreteResource>
+        </costList>
+    </TerrainDef>
+    
+    <TerrainDef ParentName="GlowstoneStoneFloorBase">
+        <defName>TileGlowstoneSolid</defName>
+        <label>Solid Glowstone Tile</label>
+        <texturePath>Terrain/Surfaces/Lighting/GlowstoneTileSolid</texturePath>
+    </TerrainDef>
+    
+    <TerrainDef ParentName="GlowstoneStoneFloorBase">
+        <defName>TileGlowstoneDotted</defName>
+        <label>Dotted Glowstone Tile</label>
+        <texturePath>Terrain/Surfaces/Lighting/GlowstoneTileDotted</texturePath>
+    </TerrainDef>
+    
+    <TerrainDef ParentName="ColdstoneFloorBase">
+        <defName>TileColdstoneSolid</defName>
+        <label>Solid Coldstone Tile</label>
+        <texturePath>Terrain/Surfaces/Lighting/ColdstoneTileSolid</texturePath>
+    </TerrainDef>
+    
+    <TerrainDef ParentName="ColdstoneFloorBase">
+        <defName>TileColdstoneDotted</defName>
+        <label>Dotted Coldstone Tile</label>
+        <texturePath>Terrain/Surfaces/Lighting/ColdstoneTileDotted</texturePath>
+    </TerrainDef>
 
-<!-- 	<TerrainDef>
-		<defName>Underwall</defName>
-		<label>underwall</label>
-		<texturePath>Terrain/Surfaces/Underwall</texturePath>
-		<edgeType>Hard</edgeType>
-		<renderPrecedence>0</renderPrecedence>
-		<fertility>0</fertility>
-	</TerrainDef> -->
-<!-- DefOverwrite
-	<TerrainDef>
-		<defName>Bridge</defName>
-		<label>bridge</label>
-		<description>A flat wooden surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
-		<texturePath>Terrain/Surfaces/WoodFloor</texturePath>
-		<color>(108,78,55)</color>
-		<uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
-		<layerable>true</layerable>
-		<bridge>true</bridge>
-		<affordances>
-			<li>Light</li>
-			<li>Walkable</li>
-		</affordances>
-		<designationCategory>Structure</designationCategory>
-		<fertility>0</fertility>
-		<constructEffect>ConstructWood</constructEffect>
-		<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
-		<edgeType>Hard</edgeType>
-		<renderPrecedence>400</renderPrecedence>
-		<autoRebuildable>true</autoRebuildable>
-		<statBases>
-			<WorkToBuild>2000</WorkToBuild>
-			<Flammability>0.8</Flammability>
-		</statBases>
-		<costList>
-			<WoodLog>12</WoodLog>
-		</costList>
-		<tags>
-			<li>Floor</li>
-		</tags>
-		<designationHotKey>Misc4</designationHotKey>
-		<destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
-		<destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
-		<destroyEffect>Bridge_Collapse</destroyEffect>
-		<destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
-		<researchPrerequisites>
-			<li>Construction_B2</li>
-		</researchPrerequisites>
-	</TerrainDef>
--->
 </Defs>

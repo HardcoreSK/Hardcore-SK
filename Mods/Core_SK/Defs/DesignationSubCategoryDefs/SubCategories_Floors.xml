@@ -73,6 +73,20 @@
 	</ArchitectSense.DesignationSubCategoryDef>
     
 	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_GlowingTiles</defName>
+		<label>glowing tiles</label>
+		<description>Beautiful glowing tiles. Without electricity!</description>
+		<defNames>
+			<li>TileGlowstoneSolid</li>
+			<li>TileColdstoneSolid</li>
+			<li>TileGlowstoneDotted</li>
+			<li>TileColdstoneDotted</li>
+		</defNames>
+		<designationCategory>OutsideFloors</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_OtherTiles</defName>
 		<label>other tiles</label>
 		<description>Various types of tiles that do not fit into other categories.</description>
