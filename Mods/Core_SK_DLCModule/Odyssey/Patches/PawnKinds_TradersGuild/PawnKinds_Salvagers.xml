@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Salvager_Pirate"]</xpath>
+        <value>
+            <combatPower>230</combatPower>
+			<weaponMoney>500~2100</weaponMoney>
+			<weaponTags Inherit="False">
+				<li>RF1</li>
+				<li>RF2</li>
+				<li>RF3</li>
+				<li>SMG1</li>
+				<li>SMG2</li>
+			</weaponTags>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Salvager_Elite"]</xpath>
+        <value>
+            <combatPower>300</combatPower>
+			<weaponMoney>2000~2000</weaponMoney>
+			<weaponTags Inherit="False">
+				<li>RF4</li>
+				<li>SMG3</li>
+			</weaponTags>
+        </value>
+    </Operation>
+
+</Patch>

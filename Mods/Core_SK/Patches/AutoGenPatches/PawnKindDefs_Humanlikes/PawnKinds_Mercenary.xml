@@ -226,23 +226,39 @@
     </value>
   </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/PawnKindDef[defName="Grenadier_EMP"]</xpath>
-    <value>
-      <label>Advanced grenadier</label>
-      <weaponTags Inherit="False">
-        <li>GrenadeTierThree</li>
-      </weaponTags>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Grenadier_EMP"]</xpath>
+        <value>
+            <label>Advanced grenadier</label>
+            <combatPower>250</combatPower>
+            <weaponTags Inherit="False">
+                <li>GrenadeTierThree</li>
+            </weaponTags>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/PawnKindDef[defName="Grenadier_Smoke"]</xpath>
-    <value>
-      <label>Smoke grenadier</label>
-      <weaponMoney>450~500</weaponMoney>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Grenadier_Destructive"]</xpath>
+        <value>
+            <combatPower>200</combatPower>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Grenadier_Destructive_Acidifier"]</xpath>
+        <value>
+            <combatPower>200</combatPower>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Grenadier_Smoke"]</xpath>
+        <value>
+            <label>Smoke grenadier</label>
+            <combatPower>70</combatPower>
+            <weaponMoney>450~500</weaponMoney>
+        </value>
+    </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/PawnKindDef[@Name="MercenarySlasherBase"]</xpath>

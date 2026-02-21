@@ -547,11 +547,13 @@
 	<PawnKindDef ParentName="FeralEliteBase">
 		<defName>FeralLeader</defName>
 		<label>Leader</label>
-		<combatPower>290</combatPower>
+		<combatPower>300</combatPower>
 		<factionLeader>true</factionLeader>
 		<canBeSapper>true</canBeSapper>
+		<itemQuality>Good</itemQuality>
 		<weaponTags>
 			<li>RF3</li>
+			<li>RF4</li>
 		</weaponTags>
 		<initialWillRange>3~4</initialWillRange>
 		<initialResistanceRange>19~29</initialResistanceRange>

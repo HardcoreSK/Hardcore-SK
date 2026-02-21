@@ -1,29 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/PawnKindDef[defName="Horaxian_Gunner"]</xpath>
-		<value>
-			<weaponMoney>400~1700</weaponMoney>
-			<combatPower>320</combatPower>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Horaxian_Gunner"]</xpath>
+        <value>
+            <itemQuality>Poor</itemQuality>
+            <weaponMoney>500~2200</weaponMoney>
+            <!-- DeathRefusal + endgame  = overbloat of enemies -->
+            <combatPower>450</combatPower>
             <weaponTags Inherit="False">
-                <li>RF1</li>
                 <li>RF2</li>
+                <li>RF3</li>
                 <li>SMG1</li>
                 <li>SMG2</li>
-                <li>PT1</li>
                 <li>PT2</li>
                 <li>ST1</li>
+                <li>ST2</li>
             </weaponTags>
-		</value>
-	</Operation>
+        </value>
+    </Operation>
 
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/PawnKindDef[defName="Horaxian_Highthrall"]</xpath>
-		<value>
-			<combatPower>250</combatPower>
-			<weaponMoney>1000~2000</weaponMoney>
-		</value>
-	</Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Horaxian_Highthrall"]</xpath>
+        <value>
+            <itemQuality>Normal</itemQuality>
+            <combatPower>280</combatPower>
+            <weaponMoney>1000~2000</weaponMoney>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Horaxian_Underthrall"]</xpath>
+        <value>
+            <itemQuality>Awful</itemQuality>
+            <combatPower>70</combatPower>
+        </value>
+    </Operation>
+
 
 </Patch>

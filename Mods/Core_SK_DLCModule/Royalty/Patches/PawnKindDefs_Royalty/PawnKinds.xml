@@ -1,550 +1,526 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/apparelRequired/li[text()="CE_Apparel_PlateHelmet"]</xpath>
-	</Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[@Name="EmpireCommonerBase"]</xpath>
+        <value>
+            <itemQuality>Poor</itemQuality>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/PawnKindDef[@Name="EmpireCommonerBase"]</xpath>
-		<value>
-			<itemQuality>Poor</itemQuality>
-		</value>
-	</Operation>
+    <!-- ========== Imperial civilians ========== -->
 
-	<!-- ========== Imperial civilians ========== -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Empire_Common_Lodger"]</xpath>
+        <value>
+            <apparelRequired>
+                <li>Apparel_MedievalTunic</li>
+            </apparelRequired>
+            <apparelMoney>1800~3500</apparelMoney>
+            <techHediffsMoney>1500~3500</techHediffsMoney>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]</xpath>
+        <value>
+            <weaponMoney>2500~2800</weaponMoney>
+            <apparelRequired>
+                <li>Apparel_MedievalTunic</li>
+            </apparelRequired>
+            <apparelMoney>8600~10000</apparelMoney>
+            <techHediffsMoney>3500~4500</techHediffsMoney>
+            <weaponTags>
+                <li>ADP2</li>
+                <li>ADP1</li>
+            </weaponTags>
+            <apparelTags Merge="True">
+                <li>TraderTag</li>
+            </apparelTags>
+        </value>
+    </Operation>
 
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/PawnKindDef[defName="Empire_Common_Lodger"]</xpath>
-		<value>
-			<apparelRequired>
-				<li>Apparel_MedievalTunic</li>
-			</apparelRequired>
-			<apparelMoney>1800~3500</apparelMoney>
-			<techHediffsMoney>1500~3500</techHediffsMoney>
-		</value>
-	</Operation>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]</xpath>
+        <value>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>2</min>
+                    <max>3</max>
+                </primaryMagazineCount>
+                <sidearms>
+                    <li>
+                        <generateChance>0.3</generateChance>
+                        <sidearmMoney>
+                            <min>20</min>
+                            <max>140</max>
+                        </sidearmMoney>
+                        <weaponTags>
+                            <li>CE_Sidearm_Melee</li>
+                        </weaponTags>
+                    </li>
+                </sidearms>
+            </li>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="SK.PatchOperationReplaceExtended">
-				<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]</xpath>
-				<value>
-					<weaponMoney>2500~2800</weaponMoney>
-					<apparelRequired>
-						<li>Apparel_MedievalTunic</li>
-					</apparelRequired>
-					<apparelMoney>8600~10000</apparelMoney>
-					<techHediffsMoney>3500~4500</techHediffsMoney>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/weaponTags</xpath>
-				<value>
-					<li>ADP2</li>
-					<li>ADP1</li>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/apparelTags</xpath>
-				<value>
-					<li>TraderTag</li>
-				</value>
-			</li>
-		</operations>
-	</Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]</xpath>
+        <value>
+            <apparelRequired>
+                <li>Apparel_MedievalTunic</li>
+            </apparelRequired>
+            <apparelMoney>1750~3500</apparelMoney>
+            <techHediffsMoney>1000~2500</techHediffsMoney>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]</xpath>
-		<value>
-			<li Class="CombatExtended.LoadoutPropertiesExtension">
-				<primaryMagazineCount>
-					<min>2</min>
-					<max>3</max>
-				</primaryMagazineCount>
-				<sidearms>
-					<li>
-						<generateChance>0.3</generateChance>
-						<sidearmMoney>
-							<min>20</min>
-							<max>140</max>
-						</sidearmMoney>
-						<weaponTags>
-							<li>CE_Sidearm_Melee</li>
-						</weaponTags>
-					</li>
-				</sidearms>
-			</li>
-		</value>
-	</Operation>
+    <!-- ========== Fighters ========== -->
 
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]</xpath>
-		<value>
-			<apparelRequired>
-				<li>Apparel_MedievalTunic</li>
-			</apparelRequired>
-			<apparelMoney>1750~3500</apparelMoney>
-			<techHediffsMoney>1000~2500</techHediffsMoney>
-		</value>
-	</Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]</xpath>
+        <value>
+            <combatPower>300</combatPower>
+            <itemQuality>Normal</itemQuality>
+            <weaponMoney>2800~3600</weaponMoney>
+            <apparelMoney>4500~7000</apparelMoney>
+            <apparelRequired>
+                <li>Apparel_OverallsModified</li>
+            </apparelRequired>
+            <apparelTags>
+                <li>IndustrialAdvanced</li>
+                <li>IndustrialMilitaryBasic</li>
+                <li>IndustrialMilitaryAdvanced</li>
+                <li>OrionMedium</li>
+                <li>OrionScout</li>
+                <li>SyndicateLight</li>
+                <li>SyndicateMedium</li>
+                <li>SyndicateScout</li>
+            </apparelTags>
+            <techHediffsMoney>3500~4500</techHediffsMoney>
+            <specificApparelRequirements DeepReplace="True" Inherit="False">
+                <li>
+                    <bodyPartGroup>Torso</bodyPartGroup>
+                    <apparelLayer>OnSkin</apparelLayer>
+                    <stuff>Synthread</stuff>
+                </li>
+                <li>
+                    <bodyPartGroup>Legs</bodyPartGroup>
+                    <apparelLayer>OnSkin</apparelLayer>
+                    <stuff>Synthread</stuff>
+                </li>
+                <li>
+                    <bodyPartGroup>Shoulders</bodyPartGroup>
+                    <apparelLayer>Backpack</apparelLayer>
+                    <stuff>Synthread</stuff>
+                </li>
+            </specificApparelRequirements>
+        </value>
+    </Operation>
 
-	<!-- ========== Fighters ========== -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[@Name="ImperialTrooperBase"]</xpath>
+        <value>
+            <itemQuality>Good</itemQuality>
+            <combatPower>350</combatPower>
+            <weaponMoney>2800~3600</weaponMoney>
+            <apparelMoney>9500~12000</apparelMoney>
+            <weaponTags>
+                <li>ADS1</li>
+                <li>ADR2</li>
+                <li>ADS2</li>
+            </weaponTags>
+            <apparelRequired Inherit="False">
+                <li>Apparel_FlakPants</li>
+                <li>Apparel_UrbanShirt</li>
+                <li>Apparel_FlakJacket</li>
+                <li>Apparel_FlakVest</li>
+            </apparelRequired>
+            <apparelTags>
+                <li>SyndicateMedium</li>
+                <li>SyndicateUnique</li>
+                <li>UniqueSpacer</li>
+            </apparelTags>
+            <techHediffsMoney>12500~15500</techHediffsMoney>
+            <specificApparelRequirements DeepReplace="True" Inherit="False">
+                <li>
+                    <bodyPartGroup>Torso</bodyPartGroup>
+                    <apparelLayer>OnSkin</apparelLayer>
+                    <stuff>Synthread</stuff>
+                </li>
+                <li>
+                    <bodyPartGroup>Legs</bodyPartGroup>
+                    <apparelLayer>OnSkin</apparelLayer>
+                    <stuff>Synthread</stuff>
+                </li>
+                <li>
+                    <bodyPartGroup>Shoulders</bodyPartGroup>
+                    <apparelLayer>Backpack</apparelLayer>
+                    <stuff>Synthread</stuff>
+                </li>
+            </specificApparelRequirements>
+        </value>
+    </Operation>
 
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]</xpath>
-		<value>
-			<itemQuality>Poor</itemQuality>
-			<weaponMoney>2800~3600</weaponMoney>
-			<apparelMoney>4500~7000</apparelMoney>
-			<apparelRequired>
-				<li>Apparel_OverallsModified</li>
-			</apparelRequired>
-			<apparelTags>
-				<li>IndustrialAdvanced</li>
-				<li>IndustrialMilitaryBasic</li>
-				<li>IndustrialMilitaryAdvanced</li>
-				<li>OrionMedium</li>
-				<li>OrionScout</li>
-				<li>SyndicateLight</li>
-				<li>SyndicateMedium</li>
-				<li>SyndicateScout</li>
-			</apparelTags>
-			<techHediffsMoney>3500~4500</techHediffsMoney>
-			<combatPower>320</combatPower>
-		</value>
-	</Operation>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Trooper"]</xpath>
+        <value>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>4</min>
+                    <max>8</max>
+                </primaryMagazineCount>
+                <sidearms>
+                    <li>
+                        <generateChance>0.5</generateChance>
+                        <sidearmMoney>
+                            <min>150</min>
+                            <max>350</max>
+                        </sidearmMoney>
+                        <weaponTags>
+                            <li>CE_Sidearm_Melee</li>
+                        </weaponTags>
+                    </li>
+                </sidearms>
+            </li>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/specificApparelRequirements</xpath>
-		<value>
-			<li>
-				<bodyPartGroup>Shoulders</bodyPartGroup>
-				<apparelLayer>Backpack</apparelLayer>
-				<stuff>Cloth</stuff>
-			</li>
-		</value>
-	</Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]</xpath>
+        <value>
+            <itemQuality>Good</itemQuality>
+            <combatPower>450</combatPower>
+            <weaponMoney>3800~5200</weaponMoney>
+            <apparelMoney>8500~11000</apparelMoney>
+            <weaponTags>
+                <li>GunHeavy</li>
+            </weaponTags>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/modExtensions/li[@Class="CombatExtended.LoadoutPropertiesExtension"]</xpath>
+        <value>
+            <sidearms>
+                <li>
+                    <generateChance>0.5</generateChance>
+                    <sidearmMoney>
+                        <min>300</min>
+                        <max>500</max>
+                    </sidearmMoney>
+                    <weaponTags>
+                        <li>CE_Sidearm_Melee</li>
+                    </weaponTags>
+                </li>
+                <li>
+                    <generateChance>0.1</generateChance>
+                    <sidearmMoney>
+                        <min>10</min>
+                        <max>100</max>
+                    </sidearmMoney>
+                    <weaponTags>
+                        <li>GrenadeSmoke</li>
+                    </weaponTags>
+                    <magazineCount>
+                        <min>1</min>
+                        <max>2</max>
+                    </magazineCount>
+                </li>
+                <li>
+                    <generateChance>0.1</generateChance>
+                    <sidearmMoney>
+                        <min>10</min>
+                        <max>100</max>
+                    </sidearmMoney>
+                    <weaponTags>
+                        <li>CE_FlareLauncher</li>
+                    </weaponTags>
+                    <magazineCount>
+                        <min>1</min>
+                        <max>3</max>
+                    </magazineCount>
+                </li>
+            </sidearms>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="SK.PatchOperationReplaceExtended">
-				<xpath>Defs/PawnKindDef[@Name="ImperialTrooperBase"]</xpath>
-				<value>
-					<combatPower>400</combatPower>
-					<weaponMoney>2800~3600</weaponMoney>
-					<apparelMoney>9500~12000</apparelMoney>
-					<weaponTags>
-						<li>SpacerGun</li>
-						<li>ADS1</li>
-						<li>ADR2</li>
-						<li>ADS2</li>
-						<li>RKT3</li>
-					</weaponTags>
-					<apparelRequired Inherit="False">
-						<li>Apparel_FlakPants</li>
-						<li>Apparel_UrbanShirt</li>
-						<li>Apparel_FlakJacket</li>
-						<li>Apparel_FlakVest</li>
-					</apparelRequired>
-					<techHediffsMoney>12500~15500</techHediffsMoney>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/PawnKindDef[@Name="ImperialTrooperBase"]</xpath>
-				<value>
-					<apparelTags>
-						<li>SyndicateMedium</li>
-						<li>SyndicateUnique</li>
-						<li>UniqueSpacer</li>
-					</apparelTags>
-				</value>
-			</li>
-		</operations>
-	</Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[@Name="JanissaryBase"]</xpath>
+        <value>
+            <itemQuality>Excellent</itemQuality>
+            <combatPower>450</combatPower>
+            <weaponMoney>3200~4300</weaponMoney>
+            <weaponTags>
+                <li>SNIP4</li>
+                <li>ASN2</li>
+                <li>ADR3</li>
+                <li>ASN3</li>
+            </weaponTags>
+            <apparelMoney>11500~15000</apparelMoney>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Trooper"]/specificApparelRequirements</xpath>
-		<value>
-			<specificApparelRequirements>
-				<li>
-					<bodyPartGroup>Legs</bodyPartGroup>
-					<apparelLayer>OnSkin</apparelLayer>
-				</li>
-				<li>
-					<bodyPartGroup>Torso</bodyPartGroup>
-					<apparelLayer>OnSkin</apparelLayer>
-				</li>
-				<li>
-					<bodyPartGroup>Torso</bodyPartGroup>
-					<apparelLayer>Shell</apparelLayer>
-				</li>
-			</specificApparelRequirements>
-		</value>
-	</Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]</xpath>
+        <value>
+            <itemQuality>Excellent</itemQuality>
+            <weaponMoney>3000~5000</weaponMoney>
+            <combatPower>550</combatPower>
+            <weaponTags Inherit="False">
+                <li>ASN2</li>
+                <li>ADR3</li>
+                <li>ASN3</li>
+                <li>Minigun</li>
+            </weaponTags>
+            <!--removed gunlink added Backpack-->
+            <specificApparelRequirements DeepReplace="True" Inherit="False">
+                <li>
+                    <bodyPartGroup>Legs</bodyPartGroup>
+                    <apparelLayer>OnSkin</apparelLayer>
+                    <stuff>Synthread</stuff>
+                </li>
+                <li>
+                    <bodyPartGroup>Shoulders</bodyPartGroup>
+                    <apparelLayer>Backpack</apparelLayer>
+                    <stuff>Synthread</stuff>
+                </li>
+            </specificApparelRequirements>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Trooper"]</xpath>
-		<value>
-			<li Class="CombatExtended.LoadoutPropertiesExtension">
-				<primaryMagazineCount>
-					<min>4</min>
-					<max>8</max>
-				</primaryMagazineCount>
-				<sidearms>
-					<li>
-						<generateChance>0.5</generateChance>
-						<sidearmMoney>
-							<min>150</min>
-							<max>350</max>
-						</sidearmMoney>
-						<weaponTags>
-							<li>CE_Sidearm_Melee</li>
-						</weaponTags>
-					</li>
-				</sidearms>
-			</li>
-		</value>
-	</Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]</xpath>
+        <value>
+            <itemQuality>Excellent</itemQuality>
+            <apparelMoney>11500~15000</apparelMoney>
+            <combatPower>450</combatPower>
+            <apparelRequired>
+                <li>Apparel_PlateArmor</li>
+                <li>Apparel_ShieldBelt</li>
+            </apparelRequired>
+            <weaponTags>
+                <li>MedievalMeleeAdvanced</li>
+                <li>UltratechMelee</li>
+                <li>SyndicateMelee</li>
+            </weaponTags>
+            <specificApparelRequirements>
+                <li>
+                    <bodyPartGroup>Torso</bodyPartGroup>
+                    <apparelLayer>Shell</apparelLayer>
+                    <stuff>Plasteel</stuff>
+                </li>
+                <li>
+                    <bodyPartGroup>FullHead</bodyPartGroup>
+                    <apparelLayer>Overhead</apparelLayer>
+                    <stuff>Plasteel</stuff>
+                </li>
+            </specificApparelRequirements>
+        </value>
+    </Operation>
 
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]</xpath>
-		<value>
-			<combatPower>460</combatPower>
-			<weaponMoney>3800~5200</weaponMoney>
-			<apparelMoney>8500~11000</apparelMoney>
-			<weaponTags>
-				<li>GunHeavy</li>
-			</weaponTags>
-		</value>
-	</Operation>
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/modExtensions/li[@Class="CombatExtended.LoadoutPropertiesExtension"]</xpath>
-		<value>
-			<sidearms>
-				<li>
-					<generateChance>0.5</generateChance>
-					<sidearmMoney>
-						<min>300</min>
-						<max>500</max>
-					</sidearmMoney>
-					<weaponTags>
-						<li>CE_Sidearm_Melee</li>
-					</weaponTags>
-				</li>
-				<li>
-					<generateChance>0.1</generateChance>
-					<sidearmMoney>
-						<min>10</min>
-						<max>100</max>
-					</sidearmMoney>
-					<weaponTags>
-						<li>GrenadeSmoke</li>
-					</weaponTags>
-					<magazineCount>
-						<min>1</min>
-						<max>2</max>
-					</magazineCount>
-				</li>
-				<li>
-					<generateChance>0.1</generateChance>
-					<sidearmMoney>
-						<min>10</min>
-						<max>100</max>
-					</sidearmMoney>
-					<weaponTags>
-						<li>CE_FlareLauncher</li>
-					</weaponTags>
-					<magazineCount>
-						<min>1</min>
-						<max>3</max>
-					</magazineCount>
-				</li>
-			</sidearms>
-		</value>
-	</Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/modExtensions/li[@Class="CombatExtended.LoadoutPropertiesExtension"]</xpath>
+        <value>
+            <shieldMoney>
+                <min>300</min>
+                <max>1000</max>
+            </shieldMoney>
+            <shieldTags>
+                <li>OutlanderShield</li>
+            </shieldTags>
+            <shieldChance>0.75</shieldChance>
+        </value>
+    </Operation>
 
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/PawnKindDef[@Name="JanissaryBase"]</xpath>
-		<value>
-			<itemQuality>Normal</itemQuality>
-			<combatPower>460</combatPower>
-			<weaponMoney>3200~4300</weaponMoney>
-			<weaponTags>
-				<li>SNIP4</li>
-				<li>ASN2</li>
-				<li>ADR3</li>
-				<li>ASN3</li>
-			</weaponTags>
-			<apparelMoney>11500~15000</apparelMoney>
-		</value>
-	</Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[@Name="CataphractBase"]</xpath>
+        <value>
+            <itemQuality>Excellent</itemQuality>
+            <apparelMoney>13000~16500</apparelMoney>
+            <techHediffsMoney>15500~19500</techHediffsMoney>
+        </value>
+    </Operation>
 
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]</xpath>
-		<value>
-			<itemQuality>Normal</itemQuality>
-			<apparelMoney>11500~15000</apparelMoney>
-			<combatPower>400</combatPower>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/weaponTags</xpath>
-		<value>
-			<li>SyndicateMelee</li>
-		</value>
-	</Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]</xpath>
+        <value>
+            <itemQuality>Excellent</itemQuality>
+            <weaponMoney>3000~5000</weaponMoney>
+            <combatPower>550</combatPower>
+            <weaponTags Inherit="False">
+                <li>ASN2</li>
+                <li>ADR3</li>
+                <li>ASN3</li>
+                <li>Minigun</li>
+            </weaponTags>
+            <!--removed gunlink added Backpack-->
+            <specificApparelRequirements DeepReplace="True" Inherit="False">
+                <li>
+                    <bodyPartGroup>Legs</bodyPartGroup>
+                    <apparelLayer>OnSkin</apparelLayer>
+                    <stuff>Synthread</stuff>
+                </li>
+                <li>
+                    <bodyPartGroup>Shoulders</bodyPartGroup>
+                    <apparelLayer>Backpack</apparelLayer>
+                    <stuff>Synthread</stuff>
+                </li>
+            </specificApparelRequirements>
+        </value>
+    </Operation>
 
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/modExtensions/li[@Class="CombatExtended.LoadoutPropertiesExtension"]</xpath>
-		<value>
-			<shieldMoney>
-				<min>300</min>
-				<max>1000</max>
-			</shieldMoney>
-			<shieldTags>
-				<li>OutlanderShield</li>
-			</shieldTags>
-			<shieldChance>0.75</shieldChance>
-		</value>
-	</Operation>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]</xpath>
+        <value>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>4</min>
+                    <max>6</max>
+                </primaryMagazineCount>
+                <sidearms>
+                    <li>
+                        <generateChance>0.5</generateChance>
+                        <sidearmMoney>
+                            <min>300</min>
+                            <max>500</max>
+                        </sidearmMoney>
+                        <weaponTags>
+                            <li>CE_Sidearm_Melee</li>
+                        </weaponTags>
+                    </li>
+                    <li>
+                        <generateChance>0.1</generateChance>
+                        <sidearmMoney>
+                            <min>10</min>
+                            <max>100</max>
+                        </sidearmMoney>
+                        <weaponTags>
+                            <li>GrenadeSmoke</li>
+                        </weaponTags>
+                        <magazineCount>
+                            <min>1</min>
+                            <max>2</max>
+                        </magazineCount>
+                    </li>
+                    <li>
+                        <generateChance>0.1</generateChance>
+                        <sidearmMoney>
+                            <min>10</min>
+                            <max>100</max>
+                        </sidearmMoney>
+                        <weaponTags>
+                            <li>CE_FlareLauncher</li>
+                        </weaponTags>
+                        <magazineCount>
+                            <min>1</min>
+                            <max>3</max>
+                        </magazineCount>
+                    </li>
+                </sidearms>
+            </li>
+        </value>
+    </Operation>
 
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]</xpath>
-		<value>
-			<specificApparelRequirements>
-				<li>
-					<bodyPartGroup>Torso</bodyPartGroup>
-					<apparelLayer>Shell</apparelLayer>
-					<stuff>Steel</stuff>
-				</li>
-				<li>
-					<bodyPartGroup>FullHead</bodyPartGroup>
-					<apparelLayer>Overhead</apparelLayer>
-					<stuff>Steel</stuff>
-				</li>
-			</specificApparelRequirements>
-		</value>
-	</Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]</xpath>
+        <value>
+            <itemQuality>Masterwork</itemQuality>
+            <combatPower>600</combatPower>
+            <weaponMoney>3500~6000</weaponMoney>
+            <apparelMoney>17000~20000</apparelMoney>
+            <techHediffsMoney>21500~26500</techHediffsMoney>
+            <weaponTags>
+                <li>ASN2</li>
+                <li>ADR3</li>
+                <li>ASN3</li>
+            </weaponTags>
+            <specificApparelRequirements DeepReplace="True" Inherit="False">
+                <li>
+                    <bodyPartGroup>Legs</bodyPartGroup>
+                    <apparelLayer>OnSkin</apparelLayer>
+                    <stuff>Synthread</stuff>
+                </li>
+                <li>
+                    <bodyPartGroup>Shoulders</bodyPartGroup>
+                    <apparelLayer>Backpack</apparelLayer>
+                    <stuff>Synthread</stuff>
+                </li>
+            </specificApparelRequirements>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]</xpath>
+        <value>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>4</min>
+                    <max>6</max>
+                </primaryMagazineCount>
+                <sidearms>
+                    <li>
+                        <generateChance>0.5</generateChance>
+                        <sidearmMoney>
+                            <min>400</min>
+                            <max>600</max>
+                        </sidearmMoney>
+                        <weaponTags>
+                            <li>CE_Sidearm_Melee</li>
+                        </weaponTags>
+                    </li>
+                </sidearms>
+            </li>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]/weaponTags</xpath>
-		<value>
-			<li>Minigun</li>
-		</value>
-	</Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]</xpath>
+        <value>
+            <weaponMoney>18110~20000</weaponMoney>
+        </value>
+    </Operation>
 
-	<!--removed gunlink-->
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]/specificApparelRequirements/li[1]</xpath>
-	</Operation>
+    <!-- ========== Royalty ========== -->
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]/specificApparelRequirements</xpath>
-		<value>
-			<li>
-				<bodyPartGroup>Shoulders</bodyPartGroup>
-				<apparelLayer>Backpack</apparelLayer>
-				<stuff>Synthread</stuff>
-			</li>
-		</value>
-	</Operation>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="SK.PatchOperationReplaceExtended">
+                <xpath>Defs/PawnKindDef[@Name="RoyalBase"]</xpath>
+                <value>
+                    <itemQuality>Good</itemQuality>
+                    <combatPower>350</combatPower>
+                    <weaponMoney>11000~15000</weaponMoney>
+                    <apparelMoney>16500~18000</apparelMoney>
+                    <techHediffsMoney>21500~26500</techHediffsMoney>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/PawnKindDef[@Name="RoyalBase"]/weaponTags</xpath>
+                <value>
+                    <li>SyndicateMelee</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
 
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/PawnKindDef[@Name="CataphractBase"]</xpath>
-		<value>
-			<itemQuality>Normal</itemQuality>
-			<apparelMoney>13000~16500</apparelMoney>
-			<techHediffsMoney>15500~19500</techHediffsMoney>
-		</value>
-	</Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Royal_NobleWimp" or defName="Empire_Royal_Knight" or defName="Empire_Royal_Count" or defName="Empire_Royal_Praetor" or defName="Empire_Royal_Duke" or defName="Empire_Royal_Consul" or defName="Empire_Royal_Stellarch"]</xpath>
+        <value>
+            <apparelRequired>
+                <li>Apparel_ShirtRuffle</li>
+                <li>Apparel_FlakPants</li>
+            </apparelRequired>
+        </value>
+    </Operation>
 
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]</xpath>
-		<value>
-			<combatPower>460</combatPower>
-			<weaponTags>
-				<li>SpacerGun</li>
-				<li>ASN2</li>
-				<li>ADR3</li>
-				<li>ASN3</li>
-			</weaponTags>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]</xpath>
-		<value>
-			<li Class="CombatExtended.LoadoutPropertiesExtension">
-				<primaryMagazineCount>
-					<min>4</min>
-					<max>6</max>
-				</primaryMagazineCount>
-				<sidearms>
-					<li>
-						<generateChance>0.5</generateChance>
-						<sidearmMoney>
-							<min>300</min>
-							<max>500</max>
-						</sidearmMoney>
-						<weaponTags>
-							<li>CE_Sidearm_Melee</li>
-						</weaponTags>
-					</li>
-					<li>
-						<generateChance>0.1</generateChance>
-						<sidearmMoney>
-							<min>10</min>
-							<max>100</max>
-						</sidearmMoney>
-						<weaponTags>
-							<li>GrenadeSmoke</li>
-						</weaponTags>
-						<magazineCount>
-							<min>1</min>
-							<max>2</max>
-						</magazineCount>
-					</li>
-					<li>
-						<generateChance>0.1</generateChance>
-						<sidearmMoney>
-							<min>10</min>
-							<max>100</max>
-						</sidearmMoney>
-						<weaponTags>
-							<li>CE_FlareLauncher</li>
-						</weaponTags>
-						<magazineCount>
-							<min>1</min>
-							<max>3</max>
-						</magazineCount>
-					</li>
-				</sidearms>
-			</li>
-		</value>
-	</Operation>
-
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]</xpath>
-		<value>
-			<itemQuality>Good</itemQuality>
-			<combatPower>500</combatPower>
-			<weaponMoney>3500~5000</weaponMoney>
-			<apparelMoney>17000~20000</apparelMoney>
-			<techHediffsMoney>21500~26500</techHediffsMoney>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/specificApparelRequirements</xpath>
-		<value>
-			<li>
-				<bodyPartGroup>Shoulders</bodyPartGroup>
-				<apparelLayer>Backpack</apparelLayer>
-				<stuff>Hyperweave</stuff>
-			</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]/weaponTags</xpath>
-		<value>
-			<weaponTags>
-				<li>SpacerGun</li>
-				<li>ASN2</li>
-				<li>ADR3</li>
-				<li>ASN3</li>
-			</weaponTags>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]</xpath>
-		<value>
-			<li Class="CombatExtended.LoadoutPropertiesExtension">
-				<primaryMagazineCount>
-					<min>4</min>
-					<max>6</max>
-				</primaryMagazineCount>
-				<sidearms>
-					<li>
-						<generateChance>0.5</generateChance>
-						<sidearmMoney>
-							<min>400</min>
-							<max>600</max>
-						</sidearmMoney>
-						<weaponTags>
-							<li>CE_Sidearm_Melee</li>
-						</weaponTags>
-					</li>
-				</sidearms>
-			</li>
-		</value>
-	</Operation>
-
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]</xpath>
-		<value>
-			<weaponMoney>18110~20000</weaponMoney>
-		</value>
-	</Operation>
-<!-- Already Added in CE
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]</xpath>
-		<value>
-			<li Class="CombatExtended.LoadoutPropertiesExtension">
-				<shieldMoney>
-					<min>400</min>
-					<max>1000</max>
-				</shieldMoney>
-				<shieldTags>
-					<li>OutlanderShield</li>
-				</shieldTags>
-				<shieldChance>0.5</shieldChance>
-			</li>
-		</value>
-	</Operation>
--->
-	<!-- ========== Royalty ========== -->
-
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="SK.PatchOperationReplaceExtended">
-				<xpath>Defs/PawnKindDef[@Name="RoyalBase"]</xpath>
-				<value>
-					<itemQuality>Good</itemQuality>
-					<combatPower>350</combatPower>
-					<weaponMoney>11000~15000</weaponMoney>
-					<apparelMoney>16500~18000</apparelMoney>
-					<techHediffsMoney>21500~26500</techHediffsMoney>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/PawnKindDef[@Name="RoyalBase"]/weaponTags</xpath>
-				<value>
-					<li>SyndicateMelee</li>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/PawnKindDef[defName="Empire_Royal_NobleWimp" or defName="Empire_Royal_Knight" or defName="Empire_Royal_Count" or defName="Empire_Royal_Praetor" or defName="Empire_Royal_Duke" or defName="Empire_Royal_Consul" or defName="Empire_Royal_Stellarch"]</xpath>
-		<value>
-			<apparelRequired>
-				<li>Apparel_ShirtRuffle</li>
-				<li>Apparel_FlakPants</li>
-			</apparelRequired>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/PawnKindDef[defName="Empire_Royal_Bestower" or defName="Empire_Royal_Baron" or defName="Empire_Royal_Acolyte" or defName="Empire_Royal_Yeoman"]</xpath>
-		<value>
-			<apparelRequired>
-				<li>Bottoms_WorkTrousers</li>
-				<li>Apparel_ShirtRuffle</li>
-			</apparelRequired>
-		</value>
-	</Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Royal_Bestower" or defName="Empire_Royal_Baron" or defName="Empire_Royal_Acolyte" or defName="Empire_Royal_Yeoman"]</xpath>
+        <value>
+            <apparelRequired>
+                <li>Bottoms_WorkTrousers</li>
+                <li>Apparel_ShirtRuffle</li>
+            </apparelRequired>
+        </value>
+    </Operation>
 </Patch>

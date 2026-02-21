@@ -281,15 +281,24 @@
 			</li>
 		</value>
 	</Operation>
-	
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/PawnKindDef[defName = "Mercenary_Gunner_Pig"]/weaponTags</xpath>
-		<value>	
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Mercenary_Gunner_Pig"]</xpath>
+        <value>
 			<weaponTags Inherit="False">
-				<li>Gun</li>
+				<li>RF1</li>
+				<li>RF2</li>
+				<li>SMG1</li>
+				<li>SMG2</li>
 			</weaponTags>
-		</value>
-	</Operation>
+			<apparelTags Inherit="False">
+			  <li>IndustrialBasic</li>
+			  <li>IndustrialMilitaryBasic</li>
+			  <li>Outlander</li>
+			  <li>BanditsLight</li>
+			</apparelTags>
+        </value>
+    </Operation>
 
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/PawnKindDef[defName="Mercenary_Gunner_Pig"]</xpath>
@@ -316,14 +325,24 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/PawnKindDef[defName = "Mercenary_Elite_Pig"]/weaponTags</xpath>
-		<value>	
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Mercenary_Elite_Pig"]</xpath>
+        <value>
 			<weaponTags Inherit="False">
-				<li>Gun</li>
+				<li>RF1</li>
+				<li>RF2</li>
+				<li>RF3</li>
+				<li>SMG1</li>
+				<li>SMG2</li>
 			</weaponTags>
-		</value>
-	</Operation>
+			<apparelTags Inherit="False">
+			  <li>IndustrialBasic</li>
+			  <li>IndustrialMilitaryBasic</li>
+			  <li>Outlander</li>
+			  <li>BanditsLight</li>
+			</apparelTags>
+        </value>
+    </Operation>
 
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/PawnKindDef[defName="Mercenary_Elite_Pig"]</xpath>
@@ -347,30 +366,6 @@
 				</li>
 				</sidearms>
 			</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/PawnKindDef[defName = "Mercenary_Gunner_Pig"]</xpath>
-		<value>	
-			<apparelTags Inherit="False">
-			  <li>IndustrialBasic</li>
-			  <li>IndustrialMilitaryBasic</li>
-			  <li>Outlander</li>
-			  <li>BanditsLight</li>
-			</apparelTags>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/PawnKindDef[defName = "Mercenary_Elite_Pig"]</xpath>
-		<value>	
-			<apparelTags Inherit="False">
-			  <li>IndustrialAdvanced</li>
-			  <li>IndustrialMilitaryAdvanced</li>
-			  <li>Outlander</li>
-			  <li>BanditsLight</li>
-			</apparelTags>
 		</value>
 	</Operation>
 

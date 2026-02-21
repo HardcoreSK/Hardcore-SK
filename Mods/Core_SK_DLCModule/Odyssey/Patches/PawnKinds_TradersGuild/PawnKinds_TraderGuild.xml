@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="TradersGuild_Citizen"]</xpath>
+        <value>
+            <combatPower>100</combatPower>
+			<weaponMoney>300~700</weaponMoney>
+			<weaponTags Inherit="False">
+				<li>PT1</li>
+				<li>PT2</li>
+				<li>SMG1</li>
+			</weaponTags>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="TradersGuild_Gunner"]</xpath>
+        <value>
+            <combatPower>230</combatPower>
+			<weaponMoney>500~2100</weaponMoney>
+			<weaponTags Inherit="False">
+				<li>RF1</li>
+				<li>RF2</li>
+				<li>RF3</li>
+				<li>SMG1</li>
+				<li>SMG2</li>
+			</weaponTags>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="TradersGuild_Heavy"]</xpath>
+        <value>
+            <combatPower>320</combatPower>
+			<weaponMoney>2000~2900</weaponMoney>
+			<weaponTags Inherit="False">
+				<li>RF4</li>
+				<li>SMG3</li>
+				<li>MG1</li>
+				<li>MG2</li>
+			</weaponTags>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="TradersGuild_Magister"]</xpath>
+        <value>
+            <combatPower>350</combatPower>
+			<weaponMoney>2000~4000</weaponMoney>
+			<weaponTags Inherit="False">
+				<li>RF4</li>
+				<li>SMG3</li>
+				<li>MG2</li>
+			</weaponTags>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="TradersGuild_Elite"]</xpath>
+        <value>
+            <combatPower>350</combatPower>
+			<weaponMoney>2000~4000</weaponMoney>
+			<weaponTags Inherit="False">
+				<li>RF4</li>
+				<li>SMG3</li>
+				<li>MG2</li>
+			</weaponTags>
+        </value>
+    </Operation>
+
+</Patch>
