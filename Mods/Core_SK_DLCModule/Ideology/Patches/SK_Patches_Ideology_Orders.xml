@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses</xpath>
+
+    <Operation Class="PatchOperationInsert">
+        <xpath>Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses/li[text()="Designator_Strip"]</xpath>
         <value>
             <li>Designator_ExtractSkull</li>
         </value>
     </Operation>
+
 </Patch>
