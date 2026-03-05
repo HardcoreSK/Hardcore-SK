@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-  <!-- ========== Archer Fire ========== -->
+  <!-- ========== Tribal Fire ========== -->
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/PawnKindDef[defName = "Tribal_Archer_Fire"]</xpath>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/PawnKindDef[defName="Tribal_Archer_Fire"]</xpath>
 		<value>
+			<combatPower>160</combatPower>
+			<weaponMoney>450~500</weaponMoney>
+			<weaponTags Inherit="False">
+				<li>NeolithicRangedFlame</li>
+				<li>NeolithicRangedBasic</li>
+			</weaponTags>
 			<modExtensions Inherit="false">
 				<li Class="CombatExtended.LoadoutPropertiesExtension" >
 					<primaryMagazineCount>
@@ -14,34 +20,30 @@
 					</primaryMagazineCount>
 					<forcedAmmoCategory>FlameArrow</forcedAmmoCategory>
 					<sidearms>
-					<li>
-						<sidearmMoney>
-						<min>80</min>
-						<max>160</max>
-						</sidearmMoney>
-						<weaponTags>
-						<li>CE_Sidearm_Tribal</li>
-						</weaponTags>
-					</li>
-					</sidearms>				
+						<li>
+							<sidearmMoney>
+								<min>80</min>
+								<max>160</max>
+							</sidearmMoney>
+							<weaponTags>
+								<li>CE_Sidearm_Tribal</li>
+							</weaponTags>
+						</li>
+					</sidearms>
 				</li>
 			</modExtensions>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/PawnKindDef[defName = "Tribal_Archer_Fire"]/weaponTags</xpath>
-		<value>
-			<li>NeolithicRangedBasic</li>
-			<li>NeolithicRangedDecent</li>
-		</value>
-	</Operation>
-	
-	  <!-- ========== Hunter Fire ========== -->
-
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/PawnKindDef[defName = "Tribal_Hunter_Fire"]</xpath>
 		<value>
+			<combatPower>120</combatPower>
+			<weaponMoney>450~500</weaponMoney>
+			<weaponTags Inherit="False">
+				<li>NeolithicRangedFlame</li>
+				<li>NeolithicRangedBasic</li>
+			</weaponTags>
 			<modExtensions Inherit="false">
 				<li Class="CombatExtended.LoadoutPropertiesExtension" >
 					<primaryMagazineCount>
@@ -65,22 +67,41 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/PawnKindDef[defName = "Tribal_Hunter_Fire"]/weaponTags</xpath>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/PawnKindDef[defName = "Tribal_Penitent_Fire"]</xpath>
 		<value>
-			<li>NeolithicRangedDecent</li>
-			<li>NeolithicRangedHeavy</li>			
+			<combatPower>90</combatPower>
+			<weaponMoney>120~300</weaponMoney>
+			<weaponTags Inherit="False">
+				<li>GrenadeFlameNeolithic</li>
+				<li>NeolithicMeleeBasic</li>
+			</weaponTags>
 		</value>
 	</Operation>
-	
-	
-	  <!-- ========== Heavy Waster Mercenary ========== -->
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/PawnKindDef[defName="Mercenary_HeavyTox"]/weaponTags</xpath>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/PawnKindDef[defName = "Tribal_Warrior_Fire"]</xpath>
 		<value>
+			<combatPower>100</combatPower>
+			<weaponMoney>120~300</weaponMoney>
+			<weaponTags Inherit="False">
+				<li>GrenadeFlameNeolithic</li>
+				<li>NeolithicMeleeBasic</li>
+			</weaponTags>
+		</value>
+	</Operation>
+
+	<!-- ========== Tox ========== -->
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/PawnKindDef[defName="Mercenary_HeavyTox"]</xpath>
+		<value>
+			<combatPower>210</combatPower>
+			<apparelMoney>2000~3000</apparelMoney>
+			<weaponMoney>1800~2200</weaponMoney>
 			<weaponTags>
-			<li>GunGrenadeLauncher</li>
+				<li>GunGrenadeLauncher</li>
+				<li>GLT1</li>
 			</weaponTags>
 		</value>
 	</Operation>
@@ -98,7 +119,12 @@
 		</value>
 	</Operation>
 
-  <!-- ========== Tox Grenadier ========== -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/PawnKindDef[defName="Grenadier_Tox"]</xpath>
+		<value>
+			<combatPower>200</combatPower>
+		</value>
+	</Operation>
 
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/PawnKindDef[defName="Grenadier_Tox"]</xpath>
@@ -110,110 +136,98 @@
 				</primaryMagazineCount>
 			</li>
 		</value>
-	</Operation>	
-	
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/PawnKindDef[defName="Grenadier_Tox"]/combatPower</xpath>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/PawnKindDef[defName="PirateBossTox"]</xpath>
 		<value>
-			<combatPower>150</combatPower>
+			<combatPower>280</combatPower>
+			<weaponTags Inherit="False">
+				<li>RF4</li>
+				<li>SMG3</li>
+				<li>ST3</li>
+				<li>SNIP2</li>
+			</weaponTags>
+			<weaponMoney>2300~4000</weaponMoney>
 		</value>
-	</Operation>	
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/PawnKindDef[defName="Mercenary_EliteTox"]</xpath>
+		<value>
+			<weaponMoney>2300~3600</weaponMoney>
+		</value>
+	</Operation>
+
+	<!-- ========== Sanguophage ========== -->
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/PawnKindDef[defName="Sanguophage" or defName="SanguophageThrall"]</xpath>
+		<value>
+			<combatPower>200</combatPower>
+			<weaponMoney>800~1500</weaponMoney>
+			<apparelMoney>1250~2500</apparelMoney>
+			<weaponTags Inherit="False">
+				<li>MedievalMeleeDecent</li>
+				<li>PT2</li>
+				<li>SMG1</li>
+				<li>SMG2</li>
+			</weaponTags>
+		</value>
+	</Operation>
+
+	<!-- ========== Yttakin ========== -->
 	
 	<Operation Class="PatchOperationSequence">
 		<operations>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/PawnKindDef[defName="Tribal_Archer_Fire"]</xpath>
-				<value>
-					<weaponMoney>150~500</weaponMoney>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/PawnKindDef[defName="Tribal_Penitent_Fire"]</xpath>
-				<value>
-					<weaponMoney>150~500</weaponMoney>
-				</value>
-			</li>
-
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/PawnKindDef[defName="Tribal_Warrior_Fire"]/weaponTags/li[text()="GrenadeFlame"]</xpath>
-				<value>
-					<li>GrenadeFlameNeolithic</li>
-				</value>
-			</li>
-
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/PawnKindDef[defName="Tribal_Penitent_Fire"]/weaponTags/li[text()="GrenadeFlame"]</xpath>
-				<value>
-					<li>GrenadeFlameNeolithic</li>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/PawnKindDef[defName="Mercenary_EliteTox"]</xpath>
-				<value>
-					<weaponMoney>2300~3600</weaponMoney>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/PawnKindDef[defName="PirateBossTox"]</xpath>
-				<value>
-					<weaponMoney>2300~4000</weaponMoney>
-				</value>
-			</li>
-			
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef[defName="Drifter_Yttakin"]</xpath>
 				<value>
 					<weaponMoney>100~500</weaponMoney>
 				</value>
 			</li>
-			<!--
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/PawnKindDef[defName="MercenaryMachineGunner"]/weaponMoney</xpath>
-				<value>
-					<weaponMoney>2000~3000</weaponMoney>
-				</value>
-			</li>
-			-->
+
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef[defName="Mercenary_Heavy_Yttakin"]</xpath>
 				<value>
-					<weaponMoney>2000~3000</weaponMoney>
+					<weaponMoney>1800~2200</weaponMoney>
 				</value>
 			</li>
 
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef[defName="Mercenary_Sniper_Yttakin"]</xpath>
 				<value>
-					<weaponMoney>1000~2500</weaponMoney>
+					<weaponMoney>1200~1800</weaponMoney>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef[defName="Mercenary_Elite_Yttakin"]</xpath>
 				<value>
-					<weaponMoney>1500~3500</weaponMoney>
+					<weaponMoney>2300~3600</weaponMoney>
 				</value>
 			</li>
 
 		</operations>
 	</Operation>
 
-	<!-- Pigskin -->
-	
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/PawnKindDef[defName = "Villager_Pig"]/weaponTags/li[text()="MedievalMeleeBasic"]</xpath>
+	<!-- ========== Pigskin ========== -->
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/PawnKindDef[defName="Villager_Pig" or defName="Town_Councilman_Pig" or defName="Town_Trader_Pig"]</xpath>
 		<value>
-			<li>MedievalMelee</li>			
+			<weaponTags Inherit="False">
+				<li>MedievalMelee</li>
+			</weaponTags>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/PawnKindDef[defName = "Town_Guard_Pig"]/weaponTags/li[text()="MedievalMeleeBasic"]</xpath>
-		<value>	
-			<li>MedievalMelee</li>			
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/PawnKindDef[defName="Town_Guard_Pig"]</xpath>
+		<value>
+			<weaponTags Inherit="False">
+				<li>MedievalMelee2H</li>
+			</weaponTags>
 		</value>
 	</Operation>
 
@@ -239,20 +253,6 @@
 				</li>
 				</sidearms>
 			</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/PawnKindDef[defName = "Town_Councilman_Pig"]/weaponTags/li[text()="MedievalMeleeBasic"]</xpath>
-		<value>		
-			<li>MedievalMelee</li>			
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/PawnKindDef[defName = "Town_Trader_Pig"]/weaponTags</xpath>
-		<value>	
-			<li>CE_AI_Nonlethal</li>	
 		</value>
 	</Operation>
 	
@@ -282,12 +282,13 @@
 		</value>
 	</Operation>
 
-    <Operation Class="SK.PatchOperationReplaceExtended">
+    <!--<Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/PawnKindDef[defName="Mercenary_Gunner_Pig"]</xpath>
         <value>
 			<weaponTags Inherit="False">
 				<li>RF1</li>
-				<li>RF2</li>
+				<li>PT1</li>
+				<li>PT2</li>
 				<li>SMG1</li>
 				<li>SMG2</li>
 			</weaponTags>
@@ -298,7 +299,7 @@
 			  <li>BanditsLight</li>
 			</apparelTags>
         </value>
-    </Operation>
+    </Operation>-->
 
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/PawnKindDef[defName="Mercenary_Gunner_Pig"]</xpath>

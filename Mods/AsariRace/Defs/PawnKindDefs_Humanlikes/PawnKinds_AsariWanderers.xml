@@ -20,7 +20,7 @@
 		<forcedHair>Asari</forcedHair>
 		<techHediffsChance>0</techHediffsChance>
 		<chemicalAddictionChance>0.1</chemicalAddictionChance>
-		<itemQuality>Poor</itemQuality>
+		<itemQuality>Normal</itemQuality>
 		<invNutrition>2</invNutrition>
 		<invFoodDef>MealNutrientPaste</invFoodDef>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
@@ -48,7 +48,7 @@
 	<!-- Villager Base -->
 	<PawnKindDef Name="AsariVillager" ParentName="AsariVillagerBase">
 		<defName>AsariVillager</defName>
-		<combatPower>310</combatPower>
+		<combatPower>180</combatPower>
 		<apparelRequired>
 			<li>Apparel_MundaneShirt</li>
 		</apparelRequired>
@@ -83,7 +83,7 @@
 	<PawnKindDef ParentName="AsariVillagerBase">
 		<defName>AsariRefugee</defName>
 		<isFighter>false</isFighter>
-		<combatPower>220</combatPower>
+		<combatPower>160</combatPower>
 		<defaultFactionType />
 		<apparelRequired>
 			<li>Apparel_MundaneShirt</li>
@@ -125,8 +125,8 @@
 	<PawnKindDef ParentName="AsariVillager">
 		<defName>AsariOvermaster</defName>
 		<label>Asari Overmaster</label>
-		<combatPower>490</combatPower>
-		<itemQuality>Normal</itemQuality>
+		<combatPower>280</combatPower>
+		<itemQuality>Good</itemQuality>
 		<factionLeader>true</factionLeader>
 		<canBeSapper>true</canBeSapper>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
@@ -139,7 +139,7 @@
 	<PawnKindDef ParentName="AsariVillager">
 		<defName>AsariEnslaver</defName>
 		<label>Asari Enslaver</label>
-		<combatPower>370</combatPower>
+		<combatPower>250</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<minGenerationAge>100</minGenerationAge>
 		<maxGenerationAge>700</maxGenerationAge>
@@ -151,7 +151,7 @@
 		<defName>AsariHunter</defName>
 		<label>Asari Hunter</label>
 		<isFighter>true</isFighter>
-		<combatPower>380</combatPower>
+		<combatPower>350</combatPower>
 		<gearHealthRange>
 			<min>0.5</min>
 			<max>1.8</max>

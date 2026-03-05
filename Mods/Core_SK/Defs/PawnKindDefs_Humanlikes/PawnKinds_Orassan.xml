@@ -80,7 +80,7 @@
 	<!-- Villager -->
 	<PawnKindDef Name="OrassanVillager" ParentName="OrassanVillagerBase">
 		<defName>OrassanVillager</defName>
-		<label>orassan villager</label>
+		<label>villager</label>
 		<combatPower>70</combatPower>
 		<isFighter>true</isFighter>
 		<apparelMoney>
@@ -113,8 +113,8 @@
 	<!-- Windrunner -->
 	<PawnKindDef Name="OrassanWindrunner" ParentName="OrassanVillagerBase">
 		<defName>OrassanWindrunner</defName>
-		<label>Orassan windrunner</label>
-		<combatPower>180</combatPower>
+		<label>windrunner</label>
+		<combatPower>160</combatPower>
 		<itemQuality>Poor</itemQuality>
 		<isFighter>true</isFighter>
 		<apparelMoney>
@@ -132,6 +132,7 @@
 			<max>2550</max>
 		</weaponMoney>
 		<weaponTags>
+			<li>PT2</li>
 			<li>RF2</li>
 			<li>SMG2</li>
 		</weaponTags>
@@ -170,11 +171,15 @@
 	<!-- Elder -->
 	<PawnKindDef ParentName="OrassanWindrunner">
 		<defName>OrassanElder</defName>
-		<label>Orassan elder</label>
+		<label>elder</label>
 		<factionLeader>true</factionLeader>
-		<combatPower>300</combatPower>
+		<combatPower>250</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<defaultFactionType>Orassan</defaultFactionType>
+		<weaponTags>
+			<li>RF4</li>
+			<li>SMG3</li>
+		</weaponTags>
 		<minGenerationAge>40</minGenerationAge>
 		<maxGenerationAge>100</maxGenerationAge>
 		<initialWillRange>3~4</initialWillRange>
@@ -183,7 +188,7 @@
 	<!-- Trader -->
 	<PawnKindDef ParentName="OrassanVillager">
 		<defName>OrassanTrader</defName>
-		<label>Orassan trader</label>
+		<label>trader</label>
 		<defaultFactionType>Orassan</defaultFactionType>
 		<trader>true</trader>
 		<combatPower>50</combatPower>
@@ -201,8 +206,8 @@
 	<!-- Adventurer -->
 	<PawnKindDef ParentName="OrassanVillagerBase">
 		<defName>OrassanAdventurer</defName>
-		<label>Orassan adventurer</label>
-		<combatPower>190</combatPower>
+		<label>adventurer</label>
+		<combatPower>180</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<isFighter>true</isFighter>
 		<isGoodBreacher>true</isGoodBreacher>
@@ -240,8 +245,8 @@
 	<!-- Hunter -->
 	<PawnKindDef ParentName="OrassanVillagerBase">
 		<defName>OrassanHunter</defName>
-		<label>Orassan hunter</label>
-		<combatPower>205</combatPower>
+		<label>hunter</label>
+		<combatPower>175</combatPower>
 		<maxGenerationAge>40</maxGenerationAge>
 		<isFighter>true</isFighter>
 		<apparelTags>
@@ -260,6 +265,7 @@
 		<weaponTags>
 			<li>RF2</li>
 			<li>SMG1</li>
+			<li>SMG2</li>
 		</weaponTags>
 		<disallowedTraits>
 			<li>Brawler</li>
@@ -295,15 +301,15 @@
 	<!-- Predator -->
 	<PawnKindDef ParentName="OrassanVillagerBase">
 		<defName>OrassanPredator</defName>
-		<label>Orassan predator</label>
-		<combatPower>170</combatPower>
+		<label>predator</label>
+		<combatPower>160</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<isFighter>true</isFighter>
 		<maxGenerationAge>30</maxGenerationAge>
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
 		<apparelMoney>
-			<min>1360</min>
-			<max>1820</max>
+			<min>1260</min>
+			<max>1620</max>
 		</apparelMoney>
 		<apparelTags>
 			<li>PredatorsLight</li>
@@ -345,7 +351,6 @@
 
 	<!-- Tier 2 pawns -->
 	<PawnKindDef Name="OrassanTacticalBase" ParentName="OrassanVillagerBase" Abstract="True">
-		<combatPower>325</combatPower>
 		<invFoodDef>MealNutrientPaste</invFoodDef>
 		<itemQuality>Normal</itemQuality>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
@@ -372,6 +377,7 @@
 	<PawnKindDef ParentName="OrassanTacticalBase">
 		<defName>OrassanTacticalEngineer</defName>
 		<label>tactical engineer</label>
+		<combatPower>250</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>true</canBeSapper>
 		<apparelTags>
@@ -379,8 +385,8 @@
 			<li>OrassanTacticalEngineer</li>
 		</apparelTags>
 		<apparelMoney>
-			<min>6400</min>
-			<max>8550</max>
+			<min>4400</min>
+			<max>6550</max>
 		</apparelMoney>
 		<weaponMoney>
 			<min>1500</min>
@@ -419,6 +425,7 @@
 	<PawnKindDef ParentName="OrassanTacticalBase">
 		<defName>OrassanTacticalSniper</defName>
 		<label>tactical sniper</label>
+		<combatPower>280</combatPower>
 		<isFighter>true</isFighter>
 		<apparelTags>
 			<li>OrassanTacticalSuit</li>
@@ -463,6 +470,7 @@
 	<PawnKindDef ParentName="OrassanTacticalBase">
 		<defName>OrassanTacticalDemolisher</defName>
 		<label>tactical demolisher</label>
+		<combatPower>280</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>true</canBeSapper>
 		<isGoodBreacher>true</isGoodBreacher>

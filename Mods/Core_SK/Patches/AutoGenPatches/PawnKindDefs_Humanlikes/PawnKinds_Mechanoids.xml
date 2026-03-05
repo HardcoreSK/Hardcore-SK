@@ -45,7 +45,8 @@
     <xpath>Defs/PawnKindDef[defName="Mech_CentipedeBurner"]</xpath>
     <value>
       <label>Centipede burner</label>
-      <combatPower>840</combatPower>
+      <!--inferno cannon is way more powerful than other variants with giant range-->
+      <combatPower>1200</combatPower>
       <weaponMoney>8000~8000</weaponMoney>
       <weaponTags>
         <li>INF</li>
@@ -53,7 +54,7 @@
       <modExtensions>
         <li Class="CombatExtended.LoadoutPropertiesExtension">
           <primaryMagazineCount>
-            <min>9</min>
+            <min>5</min>
             <max>10</max>
           </primaryMagazineCount>
         </li>

@@ -28,7 +28,7 @@
   <PawnKindDef ParentName="BaseOgrePawn">
         <defName>Ogre</defName>
         <label>Ogre</label>
-        <combatPower>375</combatPower>
+        <combatPower>400</combatPower>
         <weaponMoney>
             <min>270</min>
             <max>330</max>
@@ -54,7 +54,7 @@
             <li Class="CombatExtended.LoadoutPropertiesExtension">
                 <primaryMagazineCount>
                     <min>4</min>
-                    <max>5</max>
+                    <max>6</max>
                 </primaryMagazineCount>
             </li>
         </modExtensions>
@@ -65,7 +65,7 @@
   <PawnKindDef ParentName="BaseOgrePawn">
         <defName>OgreDEV</defName>
         <label>Ogre devastator</label>
-        <combatPower>820</combatPower>
+        <combatPower>1000</combatPower>
         <weaponMoney>
             <min>2650</min>
             <max>2700</max>

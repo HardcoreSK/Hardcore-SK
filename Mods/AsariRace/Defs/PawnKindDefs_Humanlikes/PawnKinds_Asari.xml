@@ -15,7 +15,7 @@
 		<forcedHair>Asari</forcedHair>
 		<techHediffsChance>0</techHediffsChance>
 		<chemicalAddictionChance>0.03</chemicalAddictionChance>
-		<itemQuality>Poor</itemQuality>
+		<itemQuality>Good</itemQuality>
 		<invNutrition>2</invNutrition>
 		<invFoodDef>MealNutrientPaste</invFoodDef>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
@@ -36,8 +36,8 @@
 	
 	<PawnKindDef ParentName="AsariBase">
 		<defName>AsariCrewMember</defName>
-		<label>Crew member</label>
-		<combatPower>450</combatPower>
+		<label>crew member</label>
+		<combatPower>420</combatPower>
 		<apparelMoney>
 			<min>5000</min>
 			<max>8000</max>
@@ -106,9 +106,9 @@
 	<!-- Supreme Admiral -->
 	<PawnKindDef ParentName="AsariBase">
 		<defName>AsariSupremeAdmiral</defName>
-		<label>Supreme admiral</label>
+		<label>supreme admiral</label>
 		<race>Alien_Asari</race>
-		<combatPower>570</combatPower>
+		<combatPower>540</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<itemQuality>Masterwork</itemQuality>
 		<factionLeader>true</factionLeader>
@@ -188,9 +188,9 @@
 	<!-- Wall Destroyer -->
 	<PawnKindDef ParentName="AsariBase">
 		<defName>AsariWallDestroyer</defName>
-		<label>Wall Destroyer</label>
+		<label>wall destroyer</label>
 		<race>Alien_Asari</race>
-		<combatPower>520</combatPower>
+		<combatPower>500</combatPower>
 		<gearHealthRange>
 			<min>0.5</min>
 			<max>1.8</max>
@@ -269,9 +269,9 @@
 	<!-- Commando -->
 	<PawnKindDef ParentName="AsariBase">
 		<defName>AsariCommando</defName>
-		<label>Commando</label>
+		<label>commando</label>
 		<race>Alien_Asari</race>
-		<combatPower>490</combatPower>
+		<combatPower>450</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<itemQuality>Good</itemQuality>
 		<apparelMoney>
@@ -335,9 +335,9 @@
 	<!-- Vanguard -->
 	<PawnKindDef ParentName="AsariBase">
 		<defName>AsariVanguard</defName>
-		<label>Vanguard</label>
+		<label>vanguard</label>
 		<race>Alien_Asari</race>
-		<combatPower>480</combatPower>
+		<combatPower>440</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<gearHealthRange>
 			<min>0.5</min>
@@ -404,9 +404,9 @@
 	<!-- Infiltrator -->
 	<PawnKindDef ParentName="AsariBase">
 		<defName>AsariInfiltrator</defName>
-		<label>Infiltrator</label>
+		<label>infiltrator</label>
 		<race>Alien_Asari</race>
-		<combatPower>470</combatPower>
+		<combatPower>440</combatPower>
 		<gearHealthRange>
 			<min>0.5</min>
 			<max>1.8</max>

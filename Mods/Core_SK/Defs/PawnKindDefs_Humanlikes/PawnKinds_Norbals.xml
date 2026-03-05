@@ -37,7 +37,7 @@
 	<!-- Warrior -->
 	<PawnKindDef Name="NorbalWarrior" ParentName="NorbalBase">
 		<defName>NorbalWarrior</defName>
-		<label>Warmonger</label>
+		<label>warmonger</label>
 		<combatPower>100</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>true</canBeSapper>
@@ -67,14 +67,14 @@
 	<!-- Trader -->
 	<PawnKindDef ParentName="NorbalWarrior">
 		<defName>NorbalTrader</defName>
-		<label>Norbal trader</label>
+		<label>norbal trader</label>
 		<combatPower>50</combatPower>
 		<trader>true</trader>
 	</PawnKindDef>
 	<!-- Rager -->
 	<PawnKindDef ParentName="NorbalBase">
 		<defName>NorbalRager</defName>
-		<label>Berserker</label>
+		<label>berserker</label>
 		<combatPower>125</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<apparelMoney>
@@ -102,7 +102,7 @@
 	<!-- Destroyer -->
 	<PawnKindDef ParentName="NorbalBase">
 		<defName>NorbalDestroyer</defName>
-		<label>Thunderer</label>
+		<label>thunderer</label>
 		<combatPower>125</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<isGoodBreacher>true</isGoodBreacher>
@@ -145,7 +145,7 @@
 	<!-- Skirmisher -->
 	<PawnKindDef ParentName="NorbalBase">
 		<defName>NorbalArcher</defName>
-		<label>Skirmisher</label>
+		<label>skirmisher</label>
 		<combatPower>130</combatPower>
 		<apparelMoney>
 			<min>760</min>
@@ -200,7 +200,7 @@
 	<!-- Sage -->
 	<PawnKindDef ParentName="NorbalBase">
 		<defName>NorbalSage</defName>
-		<label>Sage</label>
+		<label>sage</label>
 		<combatPower>120</combatPower>
 		<itemQuality>Normal</itemQuality>
 		<isFighter>false</isFighter>
@@ -262,7 +262,7 @@
 	<!-- Konungr -->
 	<PawnKindDef ParentName="NorbalBase">
 		<defName>NorbalGrandSage</defName>
-		<label>Konungr</label>
+		<label>konungr</label>
 		<combatPower>200</combatPower>
 		<factionLeader>true</factionLeader>
 		<itemQuality>Masterwork</itemQuality>
@@ -301,7 +301,7 @@
 	<!-- Hersir -->
 	<PawnKindDef ParentName="NorbalBase">
 		<defName>NorbalHero</defName>
-		<label>Hersir</label>
+		<label>hersir</label>
 		<combatPower>190</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<itemQuality>Good</itemQuality>
@@ -332,7 +332,7 @@
 	<!-- Jarl -->
 	<PawnKindDef ParentName="NorbalBase">
 		<defName>NorbalThane</defName>
-		<label>Jarl</label>
+		<label>jarl</label>
 		<combatPower>170</combatPower>
 		<itemQuality>Excellent</itemQuality>
 		<apparelTags>
@@ -388,7 +388,7 @@
 	<!-- Thrall -->
 	<PawnKindDef ParentName="NorbalBase">
 		<defName>NorbalSnorb</defName>
-		<label>Thrall</label>
+		<label>thrall</label>
 		<race>Human</race>
 		<combatPower>120</combatPower>
 		<canBeSapper>true</canBeSapper>
@@ -417,7 +417,7 @@
 	<!-- Karl -->
 	<PawnKindDef ParentName="NorbalBase">
 		<defName>NorbalKarl</defName>
-		<label>Karl</label>
+		<label>karl</label>
 		<combatPower>110</combatPower>
 		<isFighter>false</isFighter>
 		<apparelTags>

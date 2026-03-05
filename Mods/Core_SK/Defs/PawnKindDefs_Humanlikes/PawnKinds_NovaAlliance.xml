@@ -79,8 +79,8 @@
 	<!-- Soldier -->
 	<PawnKindDef ParentName="NovaAllianceBase">
 		<defName>NovaAllianceSoldier</defName>
-		<label>Nova Corps Soldier</label>
-		<combatPower>195</combatPower>
+		<label>Nova Corps soldier</label>
+		<combatPower>200</combatPower>
 		<maxGenerationAge>38</maxGenerationAge>
 		<itemQuality>Normal</itemQuality>
 		<apparelTags>
@@ -97,6 +97,9 @@
 		</weaponMoney>
 		<weaponTags>
 			<li>PT2</li>
+			<li>SMG1</li>
+			<li>SMG2</li>
+			<li>ST1</li>
 		</weaponTags>
 		<disallowedTraits>
 			<li>Brawler</li>
@@ -181,11 +184,12 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
+	<!-- Assault -->
 	<PawnKindDef ParentName="NovaAllianceBase">
 		<defName>NovaAllianceAssault</defName>
-		<label>Nova Corps Assault</label>
-		<combatPower>215</combatPower>
-		<maxGenerationAge>38</maxGenerationAge>
+		<label>Nova Corps assault trooper</label>
+		<combatPower>250</combatPower>
+		<maxGenerationAge>45</maxGenerationAge>
 		<itemQuality>Normal</itemQuality>
 		<apparelRequired>
 			<li>Apparel_OverallsModified</li>
@@ -204,8 +208,10 @@
 		</weaponMoney>
 		<weaponTags>
 			<li>RF3</li>
+			<li>RF4</li>
 			<li>PT3</li>
 			<li>SMG2</li>
+			<li>SMG3</li>
 		</weaponTags>
 		<disallowedTraits>
 			<li>Brawler</li>
@@ -255,8 +261,8 @@
 	<!-- Sapper -->
 	<PawnKindDef ParentName="NovaAllianceBase">
 		<defName>NovaAllianceSapper</defName>
-		<label>Nova Corps Sapper</label>
-		<combatPower>220</combatPower>
+		<label>Nova Corps sapper</label>
+		<combatPower>230</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<isGoodBreacher>true</isGoodBreacher>
 		<maxGenerationAge>38</maxGenerationAge>
@@ -295,7 +301,7 @@
 	<!-- Commander -->
 	<PawnKindDef ParentName="NovaAllianceBase">
 		<defName>NovaCommander</defName>
-		<label>Nova commander</label>
+		<label>Nova Corps commander</label>
 		<factionLeader>true</factionLeader>
 		<itemQuality>Masterwork</itemQuality>
 		<canBeSapper>true</canBeSapper>
@@ -323,7 +329,9 @@
 		</weaponMoney>
 		<weaponTags>
 			<li>RF4</li>
-			<li>SNIP1</li>
+			<li>MG4</li>
+			<li>SNIP2</li>
+			<li>SNIP3</li>
 		</weaponTags>
 		<disallowedTraits>
 			<li>Brawler</li>
@@ -342,7 +350,7 @@
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
 					<min>4</min>
-					<max>5</max>
+					<max>6</max>
 				</primaryMagazineCount>
 				<sidearms>
 					<li>

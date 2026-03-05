@@ -50,7 +50,7 @@
 	<!-- Soldier -->
 	<PawnKindDef Name="SectarianSoldier" ParentName="SectarianBase">
 		<defName>SectarianSoldier</defName>
-		<label>Sectarian Soldier</label>
+		<label>Sectarian soldier</label>
 		<combatPower>210</combatPower>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<gearHealthRange>
@@ -122,7 +122,7 @@
 	<!-- Striker -->
 	<PawnKindDef ParentName="SectarianBase">
 		<defName>SectarianStriker</defName>
-		<label>Sectarian Striker</label>
+		<label>Sectarian striker</label>
 		<combatPower>215</combatPower>
 		<gearHealthRange>
 			<min>0.4</min>
@@ -189,8 +189,8 @@
 	<!-- Hunter -->
 	<PawnKindDef ParentName="SectarianBase">
 		<defName>SectarianHunter</defName>
-		<label>Sectarian Hunter</label>
-		<combatPower>220</combatPower>
+		<label>Sectarian hunter</label>
+		<combatPower>225</combatPower>
 		<gearHealthRange>
 			<min>0.4</min>
 			<max>1.6</max>
@@ -260,7 +260,7 @@
 	<PawnKindDef ParentName="SectarianBase">
 		<defName>SectarianDemolisher</defName>
 		<label>Sectarian Demolisher</label>
-		<combatPower>230</combatPower>
+		<combatPower>270</combatPower>
 		<gearHealthRange>
 			<min>0.4</min>
 			<max>1.6</max>
@@ -327,8 +327,8 @@
 	<!-- EagleEye -->
 	<PawnKindDef ParentName="SectarianBase">
 		<defName>SectarianEagleEye</defName>
-		<label>Sectarian Eagle Eye</label>
-		<combatPower>240</combatPower>
+		<label>Sectarian eagle eye</label>
+		<combatPower>250</combatPower>
 		<gearHealthRange>
 			<min>0.4</min>
 			<max>1.6</max>
@@ -397,7 +397,7 @@
 	<!-- Destroyer -->
 	<PawnKindDef Name="SectarianDestroyer" ParentName="SectarianBase">
 		<defName>SectarianDestroyer</defName>
-		<label>Sectarian Destroyer</label>
+		<label>Sectarian destroyer</label>
 		<combatPower>250</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<isGoodBreacher>true</isGoodBreacher>
@@ -455,7 +455,7 @@
 	<!-- Sentinel -->
 	<PawnKindDef ParentName="SectarianBase">
 		<defName>SectarianSentinel</defName>
-		<label>Sectarian Sentinel</label>
+		<label>Sectarian sentinel</label>
 		<combatPower>430</combatPower>
 		<itemQuality>Excellent</itemQuality>
 		<factionLeader>true</factionLeader>
