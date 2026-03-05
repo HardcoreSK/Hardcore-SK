@@ -90,18 +90,4 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ScenarioDef[defName="Sanguophage"]/scenario/parts/li/thingDef[text() = "Steel"]</xpath>
-		<value>
-			<thingDef>Plasteel</thingDef>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ScenarioDef[defName="Sanguophage"]/scenario/parts/li/stuff[text() = "Steel"]</xpath>
-		<value>
-			<stuff>Steel</stuff>
-		</value>
-	</Operation>
-
 </Patch>

@@ -10,7 +10,7 @@
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Gun_InfernoCannon"]</xpath>
 		<value>
-			<label>Mech. Inferno Cannon</label>
+			<label>Mechanoid Inferno Cannon</label>
 			<description>Incendiary-shot mini-artillery device. Mechanoid-built.</description>
 			<graphicData>
 				<texPath>Things/Item/Equipment/WeaponRanged/InfernoCannon</texPath>
@@ -48,11 +48,11 @@
 					<hasStandardCommand>true</hasStandardCommand>
 					<defaultProjectile>Bullet_80x256mmFuel_Thermobaric</defaultProjectile>
 					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-					<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+					<ai_AvoidFriendlyFireRadius>4</ai_AvoidFriendlyFireRadius>
 					<warmupTime>3.5</warmupTime>
 					<!--<forcedMissRadius>5</forcedMissRadius>-->
-					<circularError>1.5</circularError>
-					<range>75</range>
+					<circularError>2</circularError>
+					<range>70</range>
 					<burstShotCount>1</burstShotCount>
 					<recoilAmount>1.01</recoilAmount>
 					<soundCast>InfernoCannon_Fire</soundCast>
