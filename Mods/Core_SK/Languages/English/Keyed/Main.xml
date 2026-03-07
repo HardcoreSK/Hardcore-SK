@@ -82,10 +82,15 @@
 	<NeedHadronColliderFeeder>Need Hadron Collider Hopper</NeedHadronColliderFeeder>
 	<NeedHadronColliderFeederDesc>You have a Hadron Collider with no hopper next to it.\n\nTo work, the Hadron Collider must draw from an adjacent hopper filled with Inorganic Matter.\n\nBuild a Hadron Collider Hopper adjacent to the Hadron Collider.</NeedHadronColliderFeederDesc>
 
-
 	<!-- TradingSpot -->
-	<OneTradingSpotMessage>Only one trading spot allowed per map.  Removing old spot.</OneTradingSpotMessage>
-
+	<OneTradingSpotMessage>Only one trading spot allowed per map. Removing old spot.</OneTradingSpotMessage>
+    
+	<!-- SatelliteTower -->
+	<CommandDecreaseSatelliteTowerRadius>Decrease tower radius</CommandDecreaseSatelliteTowerRadius>
+	<CommandDecreaseSatelliteTowerRadiusDesc>Decrease tower radius by {0}</CommandDecreaseSatelliteTowerRadiusDesc>
+	<CommandIncreaseSatelliteTowerRadius>Increase tower radius</CommandIncreaseSatelliteTowerRadius>
+	<CommandIncreaseSatelliteTowerRadiusDesc>Increase tower range by {0}</CommandIncreaseSatelliteTowerRadiusDesc>
+	<TowerTradeRange>Trade range: {0}</TowerTradeRange>
 
 	<!-- PowerSwitch -->
 	<PowerSwitch_SwitchOnOff>Switch: On/Off.</PowerSwitch_SwitchOnOff>
@@ -967,15 +972,11 @@
 	<ADJLetter>The animal you rescued isn't joining the colony</ADJLetter>
 	<!-- Traitor -->
 	<TraitorLabel>Traitor!</TraitorLabel>
-	<Traitor>A colonist named {PAWN_nameDef}, which you have accepted into your ranks, turns out to be an enemy agent from {PAWN_factionName}.
-
-You can capture him for recruitment or slavery purposes.</Traitor>
+	<Traitor>A colonist named {PAWN_nameDef}, which you have accepted into your ranks, turns out to be an enemy agent from {PAWN_factionName}.\n\nYou can capture him for recruitment or slavery purposes.</Traitor>
 
 	<!-- Caravan animals wander in -->
 	<CAWILabel>Caravan animals wander in</CAWILabel>
-	<CAWI>A group of {PAWN_kind}, abandoned or lost, wanders in.
-
-They seem to have belonged to some caravan, as they still carry packs with valuable items. You can collect these items if you tame them or kill them. Otherwise, they will leave the area in a couple of days.</CAWI>
+	<CAWI>A group of {PAWN_kind}, abandoned or lost, wanders in.\n\nThey seem to have belonged to some caravan, as they still carry packs with valuable items. You can collect these items if you tame them or kill them. Otherwise, they will leave the area in a couple of days.</CAWI>
 
 	<!-- Crop sprout -->
 	<CSLabel>Crop sprout</CSLabel>
@@ -984,9 +985,7 @@ They seem to have belonged to some caravan, as they still carry packs with valua
 
 	<!-- Battle animals wander in -->
 	<BAWILabel>Battle animals wander in</BAWILabel>
-	<BAWI>A group of {0}, abandoned or lost, wanders in.
-
-They seem accustomed to human contact and are joining the colony.</BAWI>
+	<BAWI>A group of {0}, abandoned or lost, wanders in.\n\nThey seem accustomed to human contact and are joining the colony.</BAWI>
 
 	<!-- wild men wander in -->
 	<WMWILabel>Wild men wander in</WMWILabel>
@@ -1014,9 +1013,7 @@ They seem accustomed to human contact and are joining the colony.</BAWI>
 	<AncientStargate_Report1> has finished the study of the strange artifact. </AncientStargate_Report1>
 	<AncientStargate_Report2> report is really fanstastic!\n\n\n### Study references ###\n\nDate: </AncientStargate_Report2>
 	<AncientStargate_StudyReport>### Study report ###\n\nStudy subject: Interdimensional ancient artifact.\n\n- Artifact location: </AncientStargate_StudyReport>
-	<AncientStargate_Observation>\n- Observations:\n  1. It is a few rings measuring 3.14 meters in diameter.\n  2. Made from exotic material, previously unknown, built by some ancient civilization.\n  3. When the inner ring is rotated, a stable one-way wormhole is created between the calling ring and the called ring, and it looks like you can instantly move any objects into the wormhole ...\n\n- Выводы:
-\n  1. We will call this building - Stargate.\n  2. It seems that something is missing in its device and the artifact is able to work only in one direction, as a "receiver".
-\n- Recommendations:\n  1. Proceed with *extreme* caution when attempting anything on the artifact!\n  2. Perhaps we will be able to study its device in more detail and use it in the future to move in interdimensional space.\n  3. On the other hand, it may be useful to us for the materials of which it consists, having at first glance, incredible strength.\n</AncientStargate_Observation>
+	<AncientStargate_Observation>\n- Observations:\n  1. It is a few rings measuring 3.14 meters in diameter.\n  2. Made from exotic material, previously unknown, built by some ancient civilization.\n  3. When the inner ring is rotated, a stable one-way wormhole is created between the calling ring and the called ring, and it looks like you can instantly move any objects into the wormhole ...\n\n- Conclusions:\n  1. We will call this building - Stargate.\n  2. It seems that something is missing in its device and the artifact is able to work only in one direction, as a "receiver".\n- Recommendations:\n  1. Proceed with *extreme* caution when attempting anything on the artifact!\n  2. Perhaps we will be able to study its device in more detail and use it in the future to move in interdimensional space.\n  3. On the other hand, it may be useful to us for the materials of which it consists, having at first glance, incredible strength.\n</AncientStargate_Observation>
 
 	<AutoSort_Reject>AutoSort Disabled. Link to HSK load order guide, copied to clipboard</AutoSort_Reject>
 
@@ -1027,4 +1024,5 @@ They seem accustomed to human contact and are joining the colony.</BAWI>
 	<SyncFuelFilter>Sync Fuel Filter</SyncFuelFilter>
 	<SyncFuelFilterDesc>Sync fuel filters among the same buildings.</SyncFuelFilterDesc>
 	<NoIdenticalBuildings>No identical building exist</NoIdenticalBuildings>
+
 </LanguageData>

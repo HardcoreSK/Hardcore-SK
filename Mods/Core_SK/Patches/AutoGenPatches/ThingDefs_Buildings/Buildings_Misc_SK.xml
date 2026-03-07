@@ -257,6 +257,7 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="OrbitalTradeBeacon"]</xpath>
         <value>
+            <description>One of the facilities for orbital trading. You can only sell goods to orbital traders if they're near an orbital trade beacon. Can be placed indoors.</description>
             <statBases>
                 <MaxHitPoints>75</MaxHitPoints>
                 <WorkToBuild>1100</WorkToBuild>

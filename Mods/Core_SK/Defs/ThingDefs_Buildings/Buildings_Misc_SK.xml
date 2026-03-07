@@ -150,30 +150,30 @@
 		<defName>SatelliteTower</defName>
 		<label>orbital trade tower</label>
 		<description>One of the facilities for orbital trading. Acts as large range orbital trade beacon with configurable radius. You can only sell goods to orbital traders if they're near an orbital trade tower. Cannot be placed indoors.</description>
-		<thingClass>SatelliteTowerSK.Building_SatelliteTower</thingClass>
-		<uiIconPath>Things/Building/SatelliteTower/SatelliteTowerUI</uiIconPath>
+		<thingClass>SK.Building_SatelliteTower</thingClass>
 		<graphicData>
-			<texPath>Things/Building/SatelliteTower/SatelliteTower</texPath>
+			<texPath>Things/Building/Misc/SatelliteTower/SatelliteTower</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(6.2,10)</drawSize>
-			<drawOffset>(0,0,3.3)</drawOffset>
+			<!--<drawSize>(3.5,9)</drawSize> for other texture-->
+			<drawSize>(6,6)</drawSize>
+            <drawOffset>(0.1,0,2.2)</drawOffset>
 			<shadowData>
-				<volume>(1.4,1.4,0.3)</volume>
+				<volume>(1,1.9,0.5)</volume>
 				<offset>(0,0,0)</offset>
 			</shadowData>
 			<damageData>
 				<rect>(0.2,0.2,0.6,0.6)</rect>
 			</damageData>
 		</graphicData>
-		<size>(2,2)</size>
+		<uiIconPath>Things/Building/Misc/SatelliteTower/SatelliteTowerUI</uiIconPath>
 		<statBases>
-			<MaxHitPoints>2500</MaxHitPoints>
-			<WorkToBuild>1200</WorkToBuild>
-			<Flammability>0.5</Flammability>
+			<MaxHitPoints>900</MaxHitPoints>
+			<WorkToBuild>9000</WorkToBuild>
+			<Flammability>0.2</Flammability>
 			<Mass>3000</Mass>
 			<Bulk>2300</Bulk>
 		</statBases>
+		<size>(2,2)</size>
 		<fillPercent>1</fillPercent>
 		<stuffCategories>
 			<li>StrongMetallic</li>
@@ -203,8 +203,9 @@
 				<MaxCount>1</MaxCount>
 			</li>
 		</comps>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<placeWorkers>
-			<li>SatelliteTowerSK.PlaceWorker_ShowSatelliteTowerRadius</li>
+			<li>SK.PlaceWorker_ShowSatelliteTowerRadius</li>
 		</placeWorkers>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 		<pathCost>80</pathCost>
@@ -633,7 +634,7 @@
 		<graphicData>
 			<texPath>Things/Building/Misc/DermalRegenerator/SkinRegen</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>3,3</drawSize>
+			<drawSize>(3,3)</drawSize>
 			<shadowData>
 				<volume>(2.7,1,2.7)</volume>
 			</shadowData>
