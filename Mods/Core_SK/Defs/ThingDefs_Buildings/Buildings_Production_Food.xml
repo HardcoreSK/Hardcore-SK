@@ -19,7 +19,7 @@
 		<label>Kitchen Table</label>
 		<description>A heavy table for meal prep.</description>
 		<graphicData>
-			<texPath>Things/Building/Production/ButcherStuff/CuttingBench</texPath>
+			<texPath>Things/Building/ProductionFood/CuttingBench/CuttingBench</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,1)</drawSize>
@@ -101,7 +101,7 @@
 		<description>A small grill used to cook meat into simple jerky or roasts. Can be fueled by Kindling, Coal, Charcoal and wooden stuff.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Building/Production/FoodStuff/grill</texPath>
+			<texPath>Things/Building/ProductionFood/Grill/Grill</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1,1)</drawSize>
@@ -200,7 +200,7 @@
 		<thingClass>SK.Building_WorkTable_HeatPushAdvanced</thingClass>
 		<description>A professional-quality stove and attached countertop for preparing meals in bulk. Requires power.</description>
 		<graphicData>
-			<texPath>Things/Building/Production/FoodStuff/ElectricAdvStove</texPath>
+			<texPath>Things/Building/ProductionFood/ElectricAdvStove/ElectricAdvStove</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,1)</drawSize>
@@ -286,7 +286,7 @@
 		<thingClass>SK.Building_WorkTable_HeatPushAdvanced</thingClass>
 		<description>A stove for canning foods, drying fruit, and making tofu. Requires power.</description>
 		<graphicData>
-			<texPath>Things/Building/Production/FoodStuff/canner</texPath>
+			<texPath>Things/Building/ProductionFood/Canner/Canner</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1,1)</drawSize>
@@ -371,7 +371,7 @@
 		<label>milling stone</label>
 		<description>A small muscle-powered grinding stone for quickly grinding raw plants.</description>
 		<graphicData>
-			<texPath>Things/Building/Production/FoodStuff/Millstone</texPath>
+			<texPath>Things/Building/ProductionFood/Millstone/Millstone</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<drawRotated>false</drawRotated>
@@ -436,7 +436,7 @@
 		<label>Electric Mill</label>
 		<description>The electric grinding mechanism is driven by a powerful electric motor, which allows an excellent grinding throughput.</description>
 		<graphicData>
-			<texPath>Things/Building/Production/FoodStuff/MillElectric</texPath>
+			<texPath>Things/Building/ProductionFood/MillElectric/MillElectric</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<drawRotated>false</drawRotated>
@@ -522,7 +522,7 @@
 		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Building/Production/Windmill/Windmill_Tower</texPath>
+			<texPath>Things/Building/ProductionFood/Windmill/Windmill_Tower</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(5,5)</drawSize>
@@ -577,7 +577,7 @@
 		<slotsCount>4</slotsCount>
 		<comps>
 			<li Class="SK.CompProperties_WindMill">
-				<windMillFanTexPath>Things/Building/Production/Windmill/Windmill_Wing</windMillFanTexPath>
+				<windMillFanTexPath>Things/Building/ProductionFood/Windmill/Windmill_Wing</windMillFanTexPath>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
@@ -595,7 +595,7 @@
 		<description>A fueled oven for baking candies and tasty treats. Can be fueled by Kindling, Coal, Charcoal and wooden stuff.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Building/Production/FoodStuff/oven</texPath>
+			<texPath>Things/Building/ProductionFood/Oven/Oven</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -703,7 +703,7 @@
 		<description>An electric powered oven for baking things. Requires power.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Building/Production/FoodStuff/ElectricOven</texPath>
+			<texPath>Things/Building/ProductionFood/ElectricOven/ElectricOven</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1,1)</drawSize>
@@ -791,7 +791,7 @@
 		<label>candy table</label>
 		<description>A candy-making table used to make chocolate, caramel and taffy. Requires power.</description>
 		<graphicData>
-			<texPath>Things/Building/Production/FoodStuff/confectionery</texPath>
+			<texPath>Things/Building/ProductionFood/CandyTable/CandyTable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3.1,1.9)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -870,7 +870,7 @@
 		<label>coffee machine</label>
 		<description>A machine for the preparation of coffee. It can also produce tea. Requires power.</description>
 		<graphicData>
-			<texPath>Things/Building/Production/FoodStuff/coffeeMaker</texPath>
+			<texPath>Things/Building/ProductionFood/CoffeeMachine/CoffeeMachine</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1,1)</drawSize>
@@ -942,7 +942,7 @@
 		<label>soylent machine</label>
 		<description>A machine to produce Soylent Green from humanlike corpses. Requires power.</description>
 		<graphicData>
-			<texPath>Things/Building/Production/FoodStuff/Silentconverter</texPath>
+			<texPath>Things/Building/ProductionFood/SoylentMachine/SoylentMachine</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2.8,1.6)</drawSize>
@@ -1026,7 +1026,7 @@
 		<description>A work station with all the equipment needed to brew alocholic drinks and ethanol fuel. Requires power.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Building/Production/DrugStuff/Brewery</texPath>
+			<texPath>Things/Building/ProductionFood/Brewery/Brewery</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3.1,1.7)</drawSize>
@@ -1103,7 +1103,7 @@
 		<description>A barrel for fermenting various things into other products.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Building/Production/DrugStuff/barrel</texPath>
+			<texPath>Things/Building/ProductionFood/AlcoholBarrel/AlcoholBarrel</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1.0,1.0)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -1164,7 +1164,7 @@
 		<description>A rack with meat prepared for drying into jerky.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Building/Production/JerkyRack</texPath>
+			<texPath>Things/Building/ProductionFood/JerkyRack/JerkyRack</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,1)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -1220,7 +1220,7 @@
 		<label>drying rack</label>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Building/Production/LeafDryingRack</texPath>
+			<texPath>Things/Building/ProductionFood/LeafDryingRack/LeafDryingRack</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,1)</drawSize>
 			<shadowData>
@@ -1279,7 +1279,7 @@
 		<label>cheesemaking basin</label>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Building/CheeseBin</texPath>
+			<texPath>Things/Building/ProductionFood/CheeseBin/CheeseBin</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,0.9)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -1338,7 +1338,7 @@
 		<label>cheesemaking vat</label>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Building/CheeseVat/CheeseVat_Industrial</texPath>
+			<texPath>Things/Building/ProductionFood/CheeseVat/CheeseVat_Industrial</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2.5,2.5)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -1402,7 +1402,7 @@
         <description>Derived from the hydroponics basins, the fungiponics basin is designed to grow cave plants. Does only require some initial organic matter to start growing. Sowing mushrooms is difficult and those plants grow at their own pace!</description>
         <thingClass>SK.Building_FungiponicsBasin</thingClass>
         <graphicData>
-            <texPath>Things/Building/Production/FungiponicsBasin</texPath>
+            <texPath>Things/Building/ProductionFood/FungiponicsBasin</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(3,3)</drawSize>
         </graphicData>
@@ -1453,7 +1453,7 @@
 		<description>Place on rough stone for digging up salt.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Things/Building/SaltMine</texPath>
+			<texPath>Things/Building/ProductionFood/SaltMine</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<damageData>

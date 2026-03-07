@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+    <!--
+    DefOverwrite list:
+    HydroponicsBasin
+    -->
+
 	<!-- SATURATED SOIL -->
 	<ThingDef ParentName="StandardBuilding">
 		<defName>PrimitiveHydroponic</defName>
@@ -7,7 +13,7 @@
 		<thingClass>SK.Building_PlantGrowerLinked</thingClass>
 		<graphicData>
 			<shaderType>CutoutComplex</shaderType>
-			<texPath>Things/Building/Production/pghydro</texPath>
+			<texPath>Things/Building/ProductionFood/PrimitiveHydroponic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -42,76 +48,15 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
 	</ThingDef>
-	
-	<!-- BASIC BASIN -->
-	<!-- DefOverwrite
-	<ThingDef ParentName="StandardBuilding">
-		<defName>HydroponicsBasin</defName>
-		<label>hydroponic basin</label>
-		<thingClass>SK.Building_PlantGrowerLinked</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Production/HydroponicsBasin</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1,4)</drawSize>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-			</damageData>
-		</graphicData>
-		<altitudeLayer>LowPlant</altitudeLayer>
-		<statBases>
-			<WorkToBuild>1800</WorkToBuild>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-			<Cleanliness>-3</Cleanliness>
-		</statBases>
-		<description>A hydroponic basin can grow several plants quickly. The basin requires power to work and plants will die if the power is cut.150 fertility</description>
-		<size>(1,4)</size>
-		<stuffCategories>
-			<li>StrongMetallic</li>
-			<li>Woody</li>
-		</stuffCategories>
-		<costStuffCount>60</costStuffCount>
-		<costList>
-			<Fertilizer>30</Fertilizer>
-			<ComponentIndustrial>5</ComponentIndustrial>
-		</costList>
-		<fertility>1.5</fertility>
-		<building>
-			<defaultPlantToGrow>Plant_Potato</defaultPlantToGrow>
-			<sowTag>Hydroponic</sowTag>
-		</building>
-		<tickerType>Rare</tickerType>
-		<comps>
-			<li Class="CompProperties_Forbiddable" />
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>70</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Flickable" />
-		</comps>
-        <modExtensions>
-            <li Class="SK.Events.EarthquakeExtension">
-                <immunityToDamage>true</immunityToDamage>
-            </li>
-        </modExtensions>
-		<researchPrerequisites>
-			<li>Hydroponics</li>
-		</researchPrerequisites>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<designationCategory>Production</designationCategory>
-		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-	</ThingDef>
-	-->
+
 	<!-- ADVANCED HYDROPONICS -->
 	<ThingDef ParentName="StandardBuilding">
 		<defName>NewHydroponicsBasin</defName>
 		<label>advanced hydroponic basin</label>
+		<description>Advanced hydroponic basins grow plants quicker and provide their own light source. The basin requires power to work. 300 fertility</description>
 		<thingClass>SK.Building_PlantGrowerLinked</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Production/Hydrophonic/Hydroponics</texPath>
+			<texPath>Things/Building/ProductionFood/Hydrophonic/Hydroponics</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>Basic</linkType>
 			<linkFlags>
@@ -119,7 +64,7 @@
 			</linkFlags>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Things/Building/Production/Hydrophonic/Hydroponics_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/ProductionFood/Hydrophonic/Hydroponics_MenuIcon</uiIconPath>
 		<altitudeLayer>LowPlant</altitudeLayer>
 		<statBases>
 			<WorkToBuild>1500</WorkToBuild>
@@ -127,7 +72,6 @@
 			<Flammability>1.0</Flammability>
 			<Cleanliness>-1</Cleanliness>
 		</statBases>
-		<description>Advanced hydroponic basins grow plants quicker and provide their own light source. The basin requires power to work. 300 fertility</description>
 		<stuffCategories>
 			<li>StrongMetallic</li>
 			<li>Plastic</li>
@@ -187,14 +131,14 @@
 	<ThingDef ParentName="StandardBuilding">
 		<defName>ClutterAlloyHydroponicsBasinVS</defName>
 		<label>hydroponic pot</label>
+		<description>A hydroponic pot planted into the ground. Requires power. 300 fertility</description>
 		<thingClass>SK.Building_PlantGrowerLinked</thingClass>
 		<graphicData>
 			<shaderType>CutoutComplex</shaderType>
-			<texPath>Things/Building/Production/Hydrophonic/Pot</texPath>
+			<texPath>Things/Building/ProductionFood/HydroponicsPot</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<altitudeLayer>LowPlant</altitudeLayer>
-		<description>A hydroponic pot planted into the ground. Requires power. 300 fertility</description>
 		<size>(1,1)</size>
 		<statBases>
 			<WorkToBuild>1400</WorkToBuild>
@@ -248,6 +192,12 @@
 		<label>hydroponic box</label>
 		<description>A small self-watering wooden wood box with earth in it for growing plants. Requires power. 120 fertility</description>
 		<thingClass>SK.Building_PlantGrowerLinked</thingClass>
+		<uiIconPath>Things/Building/ProductionFood/HydroponicsBox/HydroponicsBoxIcon</uiIconPath>
+		<graphicData>
+			<texPath>Things/Building/ProductionFood/HydroponicsBox/HydroponicsBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
 		<designationCategory>Production</designationCategory>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
@@ -285,12 +235,6 @@
                 <immunityToDamage>true</immunityToDamage>
             </li>
         </modExtensions>
-		<uiIconPath>Things/Building/AgrarianIcon</uiIconPath>
-		<graphicData>
-			<texPath>Things/Building/AgrarianAtlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(3,3)</drawSize>
-		</graphicData>
 		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
 		<altitudeLayer>LowPlant</altitudeLayer>
 		<tickerType>Rare</tickerType>

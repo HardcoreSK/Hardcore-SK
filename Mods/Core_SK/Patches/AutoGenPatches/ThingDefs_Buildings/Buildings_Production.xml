@@ -11,7 +11,7 @@
         <xpath>Defs/ThingDef[defName="ButcherSpot"]</xpath>
         <value>
             <graphicData>
-                <texPath>Things/Building/Production/ButcherStuff/CuttingPlace</texPath>
+                <texPath>Things/Building/ProductionFood/CuttingPlace</texPath>
                 <graphicClass>Graphic_Single</graphicClass>
                 <drawSize>(1,1)</drawSize>
                 <damageData>
@@ -61,7 +61,7 @@
         <xpath>Defs/ThingDef[defName="TableButcher"]</xpath>
         <value>
             <graphicData>
-                <texPath>Things/Building/Production/ButcherStuff/CuttingTable</texPath>
+                <texPath>Things/Building/ProductionFood/CuttingTable/CuttingTable</texPath>
                 <graphicClass>Graphic_Multi</graphicClass>
                 <shaderType>CutoutComplex</shaderType>
                 <drawSize>(1,1)</drawSize>
@@ -132,7 +132,7 @@
         <value>
             <description>A simple wood-fueled stove with an attached countertop for preparing meals. Can be fueled by Kindling, Coal, Charcoal and wooden stuff.</description>
             <graphicData>
-                <texPath>Things/Building/Production/FoodStuff/Stove</texPath>
+                <texPath>Things/Building/ProductionFood/Stove/Stove</texPath>
                 <graphicClass>Graphic_Multi</graphicClass>
                 <drawSize>(2,1)</drawSize>
                 <shaderType>CutoutComplex</shaderType>
@@ -233,7 +233,7 @@
         <value>
             <drawerType>MapMeshAndRealTime</drawerType>
             <graphicData>
-                <texPath>Things/Building/Production/FoodStuff/dispenser</texPath>
+                <texPath>Things/Building/ProductionFood/PasteDispenser/PasteDispenser</texPath>
                 <graphicClass>Graphic_Multi</graphicClass>
                 <shaderType>CutoutComplex</shaderType>
                 <drawSize>(3.1,1.8)</drawSize>
@@ -331,7 +331,7 @@
         <value>
             <drawerType>MapMeshAndRealTime</drawerType>
             <graphicData>
-                <texPath>Things/Building/Production/DrugStuff/AncientBrewery</texPath>
+                <texPath>Things/Building/ProductionFood/AncientBrewery/AncientBrewery</texPath>
                 <graphicClass>Graphic_Multi</graphicClass>
                 <shaderType>CutoutComplex</shaderType>
                 <drawSize>(2.9,1.6)</drawSize>
@@ -428,7 +428,7 @@
         <value>
             <drawerType>MapMeshAndRealTime</drawerType>
             <graphicData>
-                <texPath>Things/Building/Production/DrugStuff/narcobaratorium</texPath>
+                <texPath>Things/Building/Production/DrugLab/DrugLab</texPath>
                 <graphicClass>Graphic_Multi</graphicClass>
                 <shaderType>CutoutComplex</shaderType>
                 <drawSize>(3.0,1.9)</drawSize>
@@ -559,7 +559,7 @@
             <label>electric tailoring bench</label>
             <description>A workbench with a sewing machine for rapid tailoring of clothes. Can work without electricity at 40% of normal speed.</description>
             <graphicData>
-                <texPath>Things/Building/Production/SOtable</texPath>
+                <texPath>Things/Building/Production/ElectricTailoringBench/ElectricTailoringBench</texPath>
                 <graphicClass>Graphic_Multi</graphicClass>
                 <drawSize>(2.33,1.5)</drawSize>
                 <shaderType>CutoutComplex</shaderType>

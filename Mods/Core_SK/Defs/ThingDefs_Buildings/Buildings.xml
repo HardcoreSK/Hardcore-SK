@@ -245,4 +245,17 @@
 		</comps>
 	</ThingDef>
 
+	<ThingDef Name="BurnerFueled" ParentName="BuildingBase" Abstract="True">
+		<thingClass>Building</thingClass>
+		<passability>PassThroughOnly</passability>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<fillPercent>0.6</fillPercent>
+		<inspectorTabs>
+			<li>SK.ITab_Fuel</li>
+		</inspectorTabs>
+	</ThingDef>
+
 </Defs>

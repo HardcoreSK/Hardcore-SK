@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ThingDef[defName="HydroponicsBasin"]</xpath>
-    <value>
-      <label>hydroponic basin</label>
-      <thingClass>SK.Building_PlantGrowerLinked</thingClass>
-      <graphicData>
-        <texPath>Things/Building/Production/HydroponicsBasin</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <drawSize>(1,4)</drawSize>
-        <damageData>
-          <cornerTL>Damage/Corner</cornerTL>
-          <cornerTR>Damage/Corner</cornerTR>
-          <cornerBL>Damage/Corner</cornerBL>
-          <cornerBR>Damage/Corner</cornerBR>
-        </damageData>
-      </graphicData>
-      <statBases Merge="true">
-        <WorkToBuild>1800</WorkToBuild>
-        <MaxHitPoints>100</MaxHitPoints>
-        <Flammability>1.0</Flammability>
-        <Cleanliness>-3</Cleanliness>
-      </statBases>
-      <description>A hydroponic basin can grow several plants quickly. The basin requires power to work and plants will die if the power is cut.150 fertility</description>
-      <stuffCategories>
-        <li>StrongMetallic</li>
-        <li>Woody</li>
-      </stuffCategories>
-      <costStuffCount>60</costStuffCount>
-      <costList>
-        <Fertilizer>30</Fertilizer>
-        <ComponentIndustrial>5</ComponentIndustrial>
-      </costList>
-      <fertility>1.5</fertility>
-	  <constructEffect IsNull="true"/>
-      <modExtensions>
-        <li Class="SK.Events.EarthquakeExtension">
-          <immunityToDamage>true</immunityToDamage>
-        </li>
-      </modExtensions>
-      <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-      <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="HydroponicsBasin"]</xpath>
+        <value>
+            <label>hydroponic basin</label>
+            <thingClass>SK.Building_PlantGrowerLinked</thingClass>
+            <graphicData>
+                <texPath>Things/Building/ProductionFood/HydroponicsBasin</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>(1,4)</drawSize>
+                <damageData>
+                    <cornerTL>Damage/Corner</cornerTL>
+                    <cornerTR>Damage/Corner</cornerTR>
+                    <cornerBL>Damage/Corner</cornerBL>
+                    <cornerBR>Damage/Corner</cornerBR>
+                </damageData>
+            </graphicData>
+            <statBases Merge="true">
+                <WorkToBuild>1800</WorkToBuild>
+                <MaxHitPoints>100</MaxHitPoints>
+                <Flammability>1.0</Flammability>
+                <Cleanliness>-3</Cleanliness>
+            </statBases>
+            <description>A hydroponic basin can grow several plants quickly. The basin requires power to work and plants will die if the power is cut.150 fertility</description>
+            <stuffCategories>
+                <li>StrongMetallic</li>
+                <li>Woody</li>
+            </stuffCategories>
+            <costStuffCount>60</costStuffCount>
+            <costList>
+                <Fertilizer>30</Fertilizer>
+                <ComponentIndustrial>5</ComponentIndustrial>
+            </costList>
+            <fertility>1.5</fertility>
+            <constructEffect IsNull="true"/>
+            <modExtensions>
+                <li Class="SK.Events.EarthquakeExtension">
+                    <immunityToDamage>true</immunityToDamage>
+                </li>
+            </modExtensions>
+            <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+            <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        </value>
+    </Operation>
 
 </Patch>

@@ -347,6 +347,79 @@
 		</modExtensions>
 	</ThingDef>
 
+	<ThingDef ParentName="BuildingBase" Name="Window">
+		<defName>Window</defName>
+		<label>window</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<description>It's like a wall, but it lets light through.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/Wall</texPath>
+			<graphicClass>Graphic_Appearances</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<uiIconPath>Things/Building/Walls/Window</uiIconPath>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<MarketValue>15.2</MarketValue>
+			<WorkToBuild>150</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+		<costStuffCount>15</costStuffCount>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>true</blockWind>
+		<passability>Impassable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<drawStyleCategory>Default1D</drawStyleCategory>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<designationCategory>Structure</designationCategory>
+		<staticSunShadowHeight>9.0</staticSunShadowHeight>
+		<blockLight>false</blockLight>
+		<!--Important-->
+		<canOverlapZones>false</canOverlapZones>
+		<stuffCategories>
+			<li>Glass</li>
+		</stuffCategories>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<building>
+			<isInert>true</isInert>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<researchPrerequisites>
+			<li>Construction_B3</li>
+		</researchPrerequisites>
+	</ThingDef>
+
 	<ThingDef ParentName="BuildingBase" Name="Column">
 		<defName>Column</defName>
 		<label>column</label>

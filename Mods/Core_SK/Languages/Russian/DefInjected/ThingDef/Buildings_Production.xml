@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-	<MillElectric.label>Электрический измельчитель</MillElectric.label>
-	<MillElectric.description>Электрический кухонный измельчитель с мощным мотором для наилучшего измельчения.\n\nНужна энергия.\nПотребляемая мощность: 300 W</MillElectric.description>
 
 	<NutrientPasteDispenser.label>Дозатор пасты</NutrientPasteDispenser.label>
 	<NutrientPasteDispenser.description>Аппарат для синтеза питательной пасты из органического сырья, помещённого в примыкающие воронки. Требует меньше ингредиентов и времени, чем приготовление пищи, но пасту никто не любит.\n\nНужна энергия.\nПотребляемая мощность: 350 W</NutrientPasteDispenser.description>
@@ -96,8 +94,8 @@
 	<ElectricSmelter.label>Электроплавильня</ElectricSmelter.label>
 	<ElectricSmelter.description>Печь для переплавки металлических руд, металлолома и песка в сплавы на основе металла или кремния. Так же может производить жестяные банки и получать древесный уголь из поленьев.\n\nНужна энергия.\nПотребляемая мощность:\nВ простое: 95 W\nПри работе: 950 W</ElectricSmelter.description>
 
-	<TableMachining.label>Камнерезный верстак</TableMachining.label>
-	<TableMachining.description>Стол для обработки булыжников в блоки, песок или щебень. Так же может производить буровые головки, изготавливать железобетон и разбирать механоидов.\n\nНужна энергия и немного химтоплива.\nПотребляемая мощность:\nВ простое: 70 W\nПри работе: 700 W</TableMachining.description>
+	<TableMachining.label>Стол резчика</TableMachining.label>
+	<TableMachining.description>Стол для обработки камня и резки металла. А также того, что требует этих действий одновременно.\n\nНужна энергия и химтопливо.\nПотребляемая мощность:\nВ простое: 70 W\nПри работе: 700 W</TableMachining.description>
 
 	<TableFurnace.label>Кузнечная печь</TableFurnace.label>
 	<TableFurnace.description>Кузнечная печь для выплавки различных слитков, получения древесного угля, а также изготовления посуды.</TableFurnace.description>
@@ -108,8 +106,8 @@
 	<TableElectronics.label>Мастерская электроники</TableElectronics.label>
 	<TableElectronics.description>Верстак для создания нелетального оружия, электронных компонентов и приборов (телевизор, мобильный насос, сонар минералов). Также на нём можно изготавливать и разбирать силовые щиты.\n\nНужна энергия.\nПотребляемая мощность:\nВ простое: 60 W\nПри работе: 600 W</TableElectronics.description>
 
-	<HyperTailoringBench.label>Гипер-портняжный стол</HyperTailoringBench.label>
-	<HyperTailoringBench.description>Верстак, оборудованный для создания гипер-современной одежды и брони.\n\nНужна энергия.\nПотребляемая мощность:\nВ простое: 150 W\nПри работе: 1500 W</HyperTailoringBench.description>
+	<HyperTailoringBench.label>Современная портняжная установка</HyperTailoringBench.label>
+	<HyperTailoringBench.description>Верстак, оборудованный для создания современной одежды и брони.\n\nНужна энергия.\nПотребляемая мощность:\nВ простое: 150 W\nПри работе: 1500 W</HyperTailoringBench.description>
 
 	<TableLoom.label>Ткацкий станок</TableLoom.label>
 	<TableLoom.description>Станок, используемый для обработки сырья в ткань. Может использоваться без электроэнергии с эффективностью в 60% от обычной.\n\nПотребляемая мощность:\nВ простое: 30 W\nПри работе: 300 W</TableLoom.description>
@@ -144,13 +142,13 @@
 	<ExtractorDebris.label>Истощённая шахта</ExtractorDebris.label>
 	<ExtractorDebris.description>Эта шахта истощилась. Разберите её и постройте новую.</ExtractorDebris.description>
 
-	<RareExtractor.label>Улучш. добывающая установка</RareExtractor.label>
+	<RareExtractor.label>Улучшенная добывающая установка</RareExtractor.label>
 	<RareExtractor.description>С помощью этой установки можно добывать различные полезные ресурсы, хранящиеся в недрах земли.\n\nНужна энергия.\nПотребляемая мощность: 1100 W</RareExtractor.description>
 
 	<ExtractorDebrisRare.label>Истощённая шахта</ExtractorDebrisRare.label>
 	<ExtractorDebrisRare.description>Эта шахта истощилась. Разберите её и постройте новую.</ExtractorDebrisRare.description>
 
-	<OilExtractor.label>Нефтекачалка</OilExtractor.label>
+	<OilExtractor.label>Нефтяная буровая установка</OilExtractor.label>
 	<OilExtractor.description>Требуется для извлечения сырой нефти из нефтяного месторождения.\n\nНужна энергия.\nПотребляемая мощность: 2500 W</OilExtractor.description>
 
 	<Fissure.label>Скважина</Fissure.label>
@@ -201,19 +199,19 @@
 	<AdvWeaponCraftingWorkTable.label>Улучшенный оружейный станок</AdvWeaponCraftingWorkTable.label>
 	<AdvWeaponCraftingWorkTable.description>Улучшенный оружейный станок, который позволит делать лучшее оружие, а также разбирать его на исходные материалы.\n\nНужна энергия.\nПотребляемая мощность:\nВ простое: 50 W\nПри работе: 500 W</AdvWeaponCraftingWorkTable.description>
 
-	<MechWeaponCraftingWorkTable.label>Оружейный стол механоидов</MechWeaponCraftingWorkTable.label>
+	<MechWeaponCraftingWorkTable.label>Продвинутый оружейный стол</MechWeaponCraftingWorkTable.label>
 	<MechWeaponCraftingWorkTable.description>Специально оборудованный стол, на котором у вас появляется возможность создавать оружие будущего.\n\nНужна энергия.\nПотребляемая мощность:\nВ простое: 180 W\nПри работе: 1800 W</MechWeaponCraftingWorkTable.description>
 
 	<AmmoBench.label>Верстак боеприпасов</AmmoBench.label>
 	<AmmoBench.description>Верстак для создания боеприпасов. Можно также производить серу из железной руды, порох и напалм. За ним можно работать без подключения к электричеству (40%), но с подключением к сети скорость работы значительно повышается.\nПотребляемая мощность:\nВ простое: 50 W\nПри работе: 500 W</AmmoBench.description>
     
-	<TableHeavyAmmunition.label>Верстак тяжелой аммуниции</TableHeavyAmmunition.label>
+	<TableHeavyAmmunition.label>Верстак тяжелой амуниции</TableHeavyAmmunition.label>
 	<TableHeavyAmmunition.description>Верстак для создания тяжелых боеприпасов и гранат. Можно также производить серу из железной руды, порох и напалм. За ним можно работать без подключения к электричеству (40%), но с подключением к сети скорость работы значительно повышается.\nПотребляемая мощность:\nВ простое: 50 W\nПри работе: 500 W</TableHeavyAmmunition.description>
 
 	<TableBasicProsthetic.label>Станок для изготовления протезов</TableBasicProsthetic.label>
 	<TableBasicProsthetic.description>Станок для изготовления самых обычных протезов. Может использоваться без электроэнергии с эффективностью в 60% от обычной.\n\nПотребляемая мощность:\nВ простое: 35 W\nПри работе: 350 W</TableBasicProsthetic.description>
 
-	<TableSynthetics.label>Стол для синтез. органов</TableSynthetics.label>
+	<TableSynthetics.label>Верстак синтетических органов</TableSynthetics.label>
 	<TableSynthetics.description>Стол, оборудованный с помощью нанотехнологий для изготовления усовершенствованных синтетических органов.\n\nНужна энергия.\nПотребляемая мощность:\nВ простое: 85 W\nПри работе: 850 W</TableSynthetics.description>
 
 	<TableBionics.label>Верстак бионики</TableBionics.label>
@@ -234,8 +232,8 @@
 	<HadronColliderFeeder.label>Приёмник коллайдера</HadronColliderFeeder.label>
 	<HadronColliderFeeder.description>Требуется для работы адронного коллайдера.</HadronColliderFeeder.description>
 
-	<PrimitiveHydroponic.label>Плодородная насыпь</PrimitiveHydroponic.label>
-	<PrimitiveHydroponic.description>Плодородная насыпь для выращивания еды. Плодородность 80%.</PrimitiveHydroponic.description>
+	<PrimitiveHydroponic.label>Удобренная насыпь</PrimitiveHydroponic.label>
+	<PrimitiveHydroponic.description>Удобренная насыпь для выращивания еды. Плодородность 80%.</PrimitiveHydroponic.description>
 
 	<HydroponicsBasin.label>Гидропонная ферма</HydroponicsBasin.label>
 	<HydroponicsBasin.description>Позволяет быстро выращивать растения в искусственной питательной среде. Требует электроэнергию; растения погибнут, если её не будет. Плодородность 150%.</HydroponicsBasin.description>
@@ -251,23 +249,17 @@
 	<Agrarian.label>Клумба с гидропоникой</Agrarian.label>
 	<Agrarian.description>Небольшой деревянный ящик с землёй предназначенный для выращивания в нём растений. Трубы поставляют землю с необходимой водой. Плодородность 120%.\n\n\nНужна энергия.\nПотребляемая мощность: 150 W</Agrarian.description>
 
-	<QRY_Quarry.label>Большой карьер</QRY_Quarry.label>
-	<QRY_Quarry.description>Большая яма для добычи полезных ископаемых. В карьере могут работать до четырёх поселенцев одновременно.</QRY_Quarry.description>
-
-	<QRY_MiniQuarry.label>Карьер</QRY_MiniQuarry.label>
-	<QRY_MiniQuarry.description>Яма для добычи полезных ископаемых. В карьере могут работать до четырёх поселенцев одновременно.</QRY_MiniQuarry.description>
-
-	<QRY_Platform.label>Карьерная платформа</QRY_Platform.label>
-	<QRY_Platform.description>Место, куда рабочие будут носить добытые в карьере ресурсы. Необходимо размещать рядом с карьером, желательно неподалёку от лестниц. У одного карьера может быть не более двух платформ.</QRY_Platform.description>
-
 	<ButcherSpot.label>Место разделки</ButcherSpot.label>
 	<ButcherSpot.description>Импровизированное место для разделки туш мёртвых животных на куски сырого мяса.</ButcherSpot.description>
 
 	<TableButcher.label>Разделочный стол</TableButcher.label>
 	<TableButcher.description>Тяжёлый стол для разделки мёртвых существ на куски сырого мяса и кожу.</TableButcher.description>
 
-	<GrindStone.label>Каменная молотилка</GrindStone.label>
+	<GrindStone.label>Каменные жернова</GrindStone.label>
 	<GrindStone.description>Устройство с двумя отшлифованными каменными дисками, предназначенное для измельчения зёрен пшеницы, кукурузы и сахарного тростника.</GrindStone.description>
+
+	<MillElectric.label>Электрический измельчитель</MillElectric.label>
+	<MillElectric.description>Электрический кухонный измельчитель с мощным мотором для наилучшего измельчения.\n\nНужна энергия.\nПотребляемая мощность: 300 W</MillElectric.description>
 
 	<JerkyRack.label>Сушилка для мяса</JerkyRack.label>
 	<JerkyRack.description>Стойка, предназначенная для изготовления вяленого мяса из сырого мяса.\nМясо должно находиться на доступном складе.</JerkyRack.description>
@@ -293,37 +285,13 @@
 	<CraftingSpot.label>Рабочий стол</CraftingSpot.label>
 	<CraftingSpot.description>Стол для создания простых вещей, таких как ножи и луки.</CraftingSpot.description>
 
-	<VG_SaltMine.label>Соляная шахта</VG_SaltMine.label>
+	<VG_SaltMine.label>Соляная яма</VG_SaltMine.label>
 	<VG_SaltMine.description>Место в грубом камне, предназначенное для добычи соли.</VG_SaltMine.description>
 
-	<HandMendingWorkbench.label>ручной ремонтный станок</HandMendingWorkbench.label>
+	<HandMendingWorkbench.label>Ручной ремонтный станок</HandMendingWorkbench.label>
 	<HandMendingWorkbench.description>Рабочее место со всеми необходимыми инструментами для починки примитивного снаряжения. Не забудьте принести пару ремонтных наборов!</HandMendingWorkbench.description>
 
 	<SK_Windmill.label>Ветряная мельница</SK_Windmill.label>
 	<SK_Windmill.description>Высокая башня, на вершине которой установлено колесо с лопастями. Используется для перемалывания злаков в муку.</SK_Windmill.description>
-
-	<!--<cider_Barrel.label>Бочка сидра</cider_Barrel.label>
-	<cider_Barrel.Description>Бочка для производства сидра. Производит ящик сидра.</cider_Barrel.Description>
-
-	<rum_Barrel.label>Бочка рома</rum_Barrel.label>
-	<rum_Barrel.Description>Бочка для производства рома. Производит ящик рома.</rum_Barrel.Description>
-
-	<Wine_Barrel.label>Бочка вина</Wine_Barrel.label>
-	<Wine_Barrel.Description>Бочка для производства вина. Производит ящик вина.</Wine_Barrel.Description>
-
-	<strawberrywine_Barrel.label>Бочка столового вина</strawberrywine_Barrel.label>
-	<strawberrywine_Barrel.Description>Бочка для производства столового вина. Производит ящик столового вина.</strawberrywine_Barrel.Description>
-
-	<saki_Barrel.label>Бочка саке</saki_Barrel.label>
-	<saki_Barrel.Description>Бочка для производства саке. Производит ящик саке.</saki_Barrel.Description>
-
-	<vodka_Barrel.label>Бочка водки</vodka_Barrel.label>
-	<vodka_Barrel.Description>Бочка для производства водки. Производит ящик водки.</vodka_Barrel.Description>
-
-	<tequila_Barrel.label>Бочка текилы</tequila_Barrel.label>
-	<tequila_Barrel.Description>Бочка для производства текилы. Производит ящик текилы.</tequila_Barrel.Description>
-
-	<Whiskey_Barrel.label>Бочка виски</Whiskey_Barrel.label>
-	<Whiskey_Barrel.Description>Бочка для производства виски. Производит ящик виски.</Whiskey_Barrel.Description> -->
 
 </LanguageData>

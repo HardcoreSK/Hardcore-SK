@@ -34,16 +34,15 @@
 		<description>Designates a spot where traders will stop when visiting your colony.</description>
 		<thingClass>SK.TradingSpot</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Misc/TradingPost/tradetent</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/Misc/TradingPost/TradingPost</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
-			<drawRotated>false</drawRotated>
 			<shaderType>CutoutComplex</shaderType>
 			<shadowData>
-				<volume>(2.7, 2.3, 2.7)</volume>
+				<volume>(1.7, 1.4, 1.7)</volume>
 			</shadowData>
 		</graphicData>
-		<size>(3,3)</size>
+		<size>(2,2)</size>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -61,7 +60,6 @@
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<passability>Standable</passability>
-		<rotatable>false</rotatable>
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="SK.CompProperties_RestrictedPlacement">
@@ -150,8 +148,8 @@
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>SatelliteTower</defName>
-		<label>satellite tower</label>
-		<description>Required for orbital trading. Acts as large range orbital trade beacon with configurable radius.</description>
+		<label>orbital trade tower</label>
+		<description>One of the facilities for orbital trading. Acts as large range orbital trade beacon with configurable radius. You can only sell goods to orbital traders if they're near an orbital trade tower. Cannot be placed indoors.</description>
 		<thingClass>SatelliteTowerSK.Building_SatelliteTower</thingClass>
 		<uiIconPath>Things/Building/SatelliteTower/SatelliteTowerUI</uiIconPath>
 		<graphicData>
@@ -973,4 +971,3 @@
 	</ThingDef>
 
 </Defs>
-
