@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <JobDef>
+    <defName>AAFC_WalkPet</defName>
+    <driverClass>AnimalsAreFunContinued.JobDrivers.WalkPet</driverClass>
+    <reportString>walking a pet.</reportString>
+    <joyDuration>8000</joyDuration>
+    <joyKind>Social</joyKind>
+    <joySkill>Animals</joySkill>
+    <joyXpPerTick>0.004</joyXpPerTick>
+  </JobDef>
+
+  <JobDef>
+    <defName>AAFC_PlayFetch</defName>
+    <driverClass>AnimalsAreFunContinued.JobDrivers.PlayFetch</driverClass>
+    <reportString>playing fetch.</reportString>
+    <joyDuration>6000</joyDuration>
+    <joyKind>Gaming_Dexterity</joyKind>
+    <joySkill>Animals</joySkill>
+    <joyXpPerTick>0.002</joyXpPerTick>
+  </JobDef>
+
+  <JobDef>
+    <defName>AAFC_FetchItem</defName>
+    <driverClass>AnimalsAreFunContinued.JobDrivers.FetchItem</driverClass>
+    <reportString>playing fetch.</reportString>
+  </JobDef>
+
+  <JobDef>
+    <defName>AAFC_WaitForPawn</defName>
+    <driverClass>AnimalsAreFunContinued.JobDrivers.WaitForPawn</driverClass>
+    <reportString>waiting.</reportString>
+  </JobDef>
+  
+</Defs>

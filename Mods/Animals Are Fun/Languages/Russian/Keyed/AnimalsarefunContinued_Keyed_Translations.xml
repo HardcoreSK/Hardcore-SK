@@ -1,0 +1,64 @@
+<LanguageData>
+<!-- Allow cross faction -->
+	<AllowCrossFaction>Разрешить межфракционные действия</AllowCrossFaction>
+	<!-- This settings will allow colonists to play with animals of other factions. -->
+	<AllowCrossFactionTooltip>Эта настройка позволит поселенцам играть с животными других фракций.</AllowCrossFactionTooltip>
+	<!-- Allow exotic pets -->
+	<AllowExoticPets>Разрешить экзотических питомцев</AllowExoticPets>
+	<!-- Have a mod that allows you to have an insectoid, mechanoid or a fleshbeast monstrocity as a pet? Who am I to judge!? This setting allows these pets to be interacted with. -->
+	<AllowExoticPetsTooltip>Установлен мод, позволяющий завести в качестве питомца насекомое, механоида или плотоядного монстра? Кто я такой, чтобы осуждать!? Этот параметр позволяет взаимодействовать с такими питомцами.</AllowExoticPetsTooltip>
+	<!-- Allow human like -->
+	<AllowHumanLike>Разрешить гуманоидов</AllowHumanLike>
+	<!-- Have a mod that introduces human like pets? This allows mods whose animals are set as human like to be interacted with. -->
+	<AllowHumanLikeTooltip>Установлен мод, добавляющий гуманоидных питомцев? Эта настройка позволяет взаимодействовать с животными, помеченными как гуманоидные.</AllowHumanLikeTooltip>
+	<!-- Allow non-colonist -->
+	<AllowNonColonist>Разрешить не-поселенцев</AllowNonColonist>
+	<!-- Allows visitors from other factions to interact with your animals. -->
+	<AllowNonColonistTooltip>озволяет гостям из других фракций взаимодействовать с вашими животными.</AllowNonColonistTooltip>
+	<!-- Animals are fun! (Continued) -->
+	<Animals_are_fun_Continued>Animals are fun! (Continued)</Animals_are_fun_Continued>
+	<!--  EN: Bonded Animals Must Be Cute  -->
+<BondedAnimalsMustBeCute>Животные должны быть милыми</BondedAnimalsMustBeCute>
+<!--  EN: When enabled and a pawn prefers to play with a bonded animal, only cute animals will be considered.  -->
+<BondedAnimalsMustBeCuteTooltip>Если включено, и поселенец предпочитает играть с животным, к которому он привязан, будут учитываться только милые животные.</BondedAnimalsMustBeCuteTooltip>
+<!--  EN: Bonded Animals Preference  -->
+<BondedAnimalsPreference>Предпочтение питомцев</BondedAnimalsPreference>
+<!--  EN: This is the chance that a pawn will prefer to play with a bonded animal before choosing a non-bonded animal.  -->
+<BondedAnimalsPreferenceTooltip>Шанс того, что поселенец предпочтет играть с животным, к которому он привязан, прежде чем выбрать животное без привязанности.</BondedAnimalsPreferenceTooltip>
+<!--  EN: Cache Expiration Timeout ({0} ticks)  -->
+<CacheExpirationTimeout>Время жизни кэша ({0} тиков)</CacheExpirationTimeout>
+<!--  EN: How long before the cache expires and is recalculated. Too low of a value may cause performance problems on slower computers. Higher values will cause a delay before pawns are able to play with animals that have recently entered the map.  -->
+<CacheExpirationTimeoutTooltip>Через какой промежуток времени кэш устаревает и пересчитывается. Слишком маленькое значение может вызвать проблемы с производительностью на медленных компьютерах. Слишком большое значение приведёт к задержке, прежде чем поселенцы смогут играть с животными, недавно появившимися на карте.</CacheExpirationTimeoutTooltip>
+	<!-- Debugging: -->
+	<DebuggingCategory>Отладка:</DebuggingCategory>
+	<!--  EN: Don't Care  -->
+<DontCare>Всё равно</DontCare>
+	<!-- Experimental: -->
+	<ExperimentalCategory>Экспериментально:</ExperimentalCategory>
+	<!--  EN: Maximum Animal Distance ({0} tiles)  -->
+<MaximumAnimalDistance>Макс. расстояние до животного ({0} клеток)</MaximumAnimalDistance>
+<!--  EN: This is the maximum radius that a pawn will use while searching for an animal.  -->
+<MaximumAnimalDistanceTooltip>Это максимальный радиус, в пределах которого поселенец будет искать животное.</MaximumAnimalDistanceTooltip>
+	<!-- Max. body size ({0}cm) -->
+	<MaxBodySize>Макс. размер тела ({0}см)</MaxBodySize>
+	<!-- Max. wildness ({0}%) -->
+	<MaxWildness>Макс. дикость ({0}%)</MaxWildness>
+	<!-- Min. consciousness ({0}%) -->
+	<MinConsciousness>Мин. сознание ({0}%)</MinConsciousness>
+	<!-- Min. moving ({0}%) -->
+	<MinMoving>Мин. подвижность ({0}%)</MinMoving>
+	<!-- Must be cute -->
+	<MustBeCute>Должен быть милым</MustBeCute>
+	<!-- EN: Only play with or walk nuzzling animals. WARNING: Do not turn this off unless your have a very large penned in area or you have a mod that allows you teach zoning rules to any animal. -->
+	<MustBeCuteTooltip>Играть или гулять только с ласковыми животными. ВНИМАНИЕ: не отключайте эту опцию, если у вас нет очень большого огороженного пространства или мода, позволяющего задавать правила зонирования для любых животных.</MustBeCuteTooltip>
+	<!--  EN: Only Bonded  -->
+<OnlyBonded>Только привязанность</OnlyBonded>
+	<!-- Requirements: -->
+	<RequirementsCategory>Требования:</RequirementsCategory>
+	<!-- Reset To Defaults -->
+	<ResetToDefaults>Сбросить до настроек по умолчанию</ResetToDefaults>
+	<!--  EN: Reset  -->
+	<Reset>Сбросить</Reset>
+	<!-- Show debug messages -->
+	<ShowDebugMessages>Показать отладочные сообщения</ShowDebugMessages>
+</LanguageData>
