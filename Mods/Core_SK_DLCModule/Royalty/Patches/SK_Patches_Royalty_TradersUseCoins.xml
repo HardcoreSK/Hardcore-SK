@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!--Orbital: Rich-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[
+            defName="Orbital_CombatSupplier" or
+            defName="Orbital_Exotic" or
+            defName="Orbital_Empire" or
+            defName="Orbital_BulkGoods" or
+            defName="CraftedGoodsTrader"
+            ]/stockGenerators</xpath>
+        <value>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>SilverCoin</thingDef>
+                <countRange>20~90</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>GoldCoin</thingDef>
+                <countRange>5~11</countRange>
+            </li>
+        </value>
+    </Operation>
+    <!--Orbital: Mid-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[defName="AnimalTrader" or defName="SlaveTrader"]/stockGenerators</xpath>
+        <value>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>SilverCoin</thingDef>
+                <countRange>12~70</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>GoldCoin</thingDef>
+                <countRange>4~9</countRange>
+            </li>
+        </value>
+    </Operation>
+    <!--Orbital: Poor-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[
+            defName="FoodTrader" or
+            defName="ManufacturedGoodsTrader" or
+            defName="Orbital_PirateMerchant"
+            ]/stockGenerators</xpath>
+        <value>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>SilverCoin</thingDef>
+                <countRange>8~50</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>GoldCoin</thingDef>
+                <countRange>2~6</countRange>
+            </li>
+        </value>
+    </Operation>
+
+    <!--Ground: Rich-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[
+            defName="Caravan_AnimalTrader" or
+            defName="Caravan_Outlander_Exotic" or
+            defName="Empire_Caravan_TraderGeneral" or
+            defName="Caravan_Outlander_CombatSupplier" or
+            defName="Base_Empire_Standard"
+            ]/stockGenerators</xpath>
+        <value>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>SilverCoin</thingDef>
+                <countRange>10~25</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>GoldCoin</thingDef>
+                <countRange>1~3</countRange>
+            </li>
+        </value>
+    </Operation>
+    <!--Ground: Mid-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[
+            defName="Caravan_Outlander_PirateMerchant" or
+            defName="Caravan_Neolithic_Slaver" or
+            defName="Base_Outlander_Standard"
+            ]/stockGenerators</xpath>
+        <value>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>SilverCoin</thingDef>
+                <countRange>7~20</countRange>
+            </li>
+        </value>
+    </Operation>
+    <!--Ground: Poor-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[
+            defName="Caravan_Neolithic_WarMerchant" or
+            defName="Caravan_Neolithic_ShamanMerchant" or
+            defName="Caravan_Neolithic_BulkGoods" or
+            defName="Caravan_Outlander_BulkGoods" or
+            defName="Base_Neolithic_Standard"
+            ]/stockGenerators</xpath>
+        <value>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>SilverCoin</thingDef>
+                <countRange>3~10</countRange>
+            </li>
+        </value>
+    </Operation>
+</Patch>
