@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Turret_Autocannon"]</xpath>
 		<value>
 			<label>sentry heavy turret</label>
 			<graphicData>
 				<texPath>Things/Building/Security/SentryHeavyTurret_Base</texPath>
+                <drawSize>(4,4)</drawSize>
 				<shadowData>
 					<volume>(0.3, 0.6, 0.3)</volume>
 				</shadowData>

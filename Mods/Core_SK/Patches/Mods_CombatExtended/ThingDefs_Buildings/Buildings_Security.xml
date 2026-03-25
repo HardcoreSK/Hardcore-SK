@@ -94,6 +94,20 @@
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Turret_AGSThirty"]</xpath>
 		<value>
+            <label>AGS-17 Grenade Launcher</label>
+            <graphicData>
+                <graphicClass>Graphic_Single</graphicClass>
+                <damageData>
+                    <rect>(0.2,0.2,0.6,0.6)</rect>
+                </damageData>
+                <drawSize>(2,2)</drawSize>
+                <texPath>Things/Building/Security/AGS17_Base</texPath>
+                <shadowData>
+                    <volume>(0.27,0.25,0.35)</volume>
+                    <offset>(0,0,0)</offset>
+                </shadowData>
+            </graphicData>
+            <uiIconPath>Things/Building/Security/AGS17_ico</uiIconPath>
 			<stuffCategories>
 				<li>RuggedMetallic</li>
 			</stuffCategories>
@@ -215,7 +229,7 @@
 			<graphicData>
 				<texPath>Things/Building/Security/PrecisionTurretBase</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
-				<drawSize>(2,2)</drawSize>
+				<drawSize>(3,3)</drawSize>
 				<shadowData>
 					<volume>(0.3, 0.6, 0.3)</volume>
 				</shadowData>
