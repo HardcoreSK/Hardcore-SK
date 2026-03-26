@@ -35,6 +35,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>HeavyPowerConduit</defName>
 		<label>heavy power conduit</label>
+		<description>A set of heavy electrical cables for moving power around. They are very strong and non-flammable.</description>
 		<graphicData>
 			<texPath>Things/Building/Linked/PowerConduit_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -66,7 +67,7 @@
 			<Flammability>0</Flammability>
 			<Beauty>-4</Beauty>
 		</statBases>
-		<description>A set of heavy electrical cables for moving power around. They are very strong and non-flammable.</description>
+        <noRightClickDraftAttack>true</noRightClickDraftAttack>
 		<drawStyleCategory>Default1D</drawStyleCategory>
 		<costList>
 			<Wire>1</Wire>

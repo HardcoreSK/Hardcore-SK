@@ -183,13 +183,16 @@
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="SecurityDoor"]</xpath>
 		<value>
+            <statBases Merge="True">
+                <MaxHitPoints>900</MaxHitPoints>
+            </statBases>
 			<stuffCategories>
 				<li>StrongMetallic</li>
 				<li>RuggedMetallic</li>
 			</stuffCategories>
 			<costStuffCount>150</costStuffCount>
 			<costList>
-				<ReinforcedConcrete>10</ReinforcedConcrete>
+				<ReinforcedConcrete>30</ReinforcedConcrete>
 				<ComponentIndustrial>5</ComponentIndustrial>
 				<ElectronicComponents>2</ElectronicComponents>
 			</costList>

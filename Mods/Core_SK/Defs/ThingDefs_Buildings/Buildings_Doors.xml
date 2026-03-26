@@ -108,18 +108,18 @@
 
 	<ThingDef ParentName="DoorBase">
 		<defName>Blastdoor</defName>
-		<label>blast autodoor</label>
+		<label>reinforced autodoor</label>
 		<description>A powered, reinforced door that allows people to move through the door without slowing down.</description>
 		<statBases>
-			<MaxHitPoints>375</MaxHitPoints>
+			<MaxHitPoints>450</MaxHitPoints>
 			<WorkToBuild>1400</WorkToBuild>
 		</statBases>
 		<stuffCategories>
 			<li>RuggedMetallic</li>
 		</stuffCategories>
-		<costStuffCount>90</costStuffCount>
+		<costStuffCount>60</costStuffCount>
 		<costList>
-			<ReinforcedConcrete>6</ReinforcedConcrete>
+			<ReinforcedConcrete>5</ReinforcedConcrete>
 			<ComponentIndustrial>3</ComponentIndustrial>
 			<ElectronicComponents>1</ElectronicComponents>
 		</costList>
@@ -137,7 +137,7 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>100</basePowerConsumption>
+				<basePowerConsumption>150</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="SK.CompProperties_LowIdleDraw">
@@ -225,7 +225,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<!-- Blast Door -->
+	<!-- Blast Door (big one) -->
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>OpenBlastDoor</defName>

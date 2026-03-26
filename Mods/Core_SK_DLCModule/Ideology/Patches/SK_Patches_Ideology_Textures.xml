@@ -20,20 +20,6 @@
                     <size>(1,1)</size>
                 </value>
             </li>
-            <li Class="SK.PatchOperationReplaceExtended">
-                <xpath>Defs/ThingDef[defName="PrimitiveWell"]</xpath>
-                <value>
-                    <graphicData>
-                        <texPath>Things/Building/Misc/PrimitiveWell/PrimitiveWell</texPath>
-                        <graphicClass>Graphic_Multi</graphicClass>
-                        <drawSize>(3,3)</drawSize>
-                        <shaderType>CutoutComplex</shaderType>
-                        <drawRotated>true</drawRotated>
-                    </graphicData>
-                    <size>(2,2)</size>
-                    <rotatable>true</rotatable>
-                </value>
-            </li>
         </operations>
     </Operation>
 </Patch>

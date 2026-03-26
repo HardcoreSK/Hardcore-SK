@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="SK.PatchOperationReplaceExtended">
+                <xpath>Defs/ThingDef[defName="OrnateDoor"]</xpath>
+                <value>
+                    <building Merge="True">
+                        <doorSupportGraphic>
+                            <shaderType>CutoutComplex</shaderType>
+                            <drawSize>(3,2)</drawSize>
+                        </doorSupportGraphic>
+                        <doorTopGraphic>
+                            <shaderType>CutoutComplex</shaderType>
+                            <drawSize>(3,2)</drawSize>
+                        </doorTopGraphic>
+                    </building>
+                    <uiOrder>2014</uiOrder>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
