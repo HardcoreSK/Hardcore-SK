@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="TrapIED_Deadlife"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Building/Traps/IED_Deadlife</texPath>
+                <drawSize>(2,2)</drawSize>
+			</graphicData>
+			<costList>
+				<Powder>2</Powder>
+				<Bioferrite>25</Bioferrite>
+				<Mechanism>2</Mechanism>
+			</costList>
+		</value>
+	</Operation>
+
+</Patch>
