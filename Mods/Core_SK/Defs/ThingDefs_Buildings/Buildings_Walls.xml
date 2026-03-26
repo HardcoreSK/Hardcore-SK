@@ -216,7 +216,7 @@
 		<description>A reinforced wall with thick panels attached to strengthen it further.</description>
 		<graphicData>
 			<shaderType>CutoutComplex</shaderType>
-			<texPath>Things/Building/Walls/SilverWall</texPath>
+			<texPath>Things/Building/Walls/ReinforcedWallAtlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
@@ -233,24 +233,23 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Walls/SilverWallIco</uiIconPath>
+		<uiIconPath>Things/Building/Walls/ReinforcedWallIco</uiIconPath>
 		<building>
 			<blueprintGraphicData>
 				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands>
-				<li>Door</li>
 				<li>MDoor</li>
 				<li>Autodoor</li>
-				<li>CellDoor</li>
+				<li>Blastdoor</li>
 				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
 			</relatedBuildCommands>
 			<paintable>true</paintable>
 		</building>
 		<statBases>
-			<MaxHitPoints>750</MaxHitPoints>
+			<MaxHitPoints>800</MaxHitPoints>
 			<WorkToBuild>900</WorkToBuild>
-			<Flammability>0.1</Flammability>
+			<Flammability>0</Flammability>
 		</statBases>
 		<tickerType>Never</tickerType>
 		<stuffCategories>
@@ -267,13 +266,12 @@
 		<constructionSkillPrerequisite>13</constructionSkillPrerequisite>
 	</ThingDef>
 
-
 	<ThingDef ParentName="WallBase">
-		<defName>ClutterUWallLight</defName>
-		<label>utility wall with lights</label>
-		<description>Upgraded version of basic walls, with the ability to easily attach things, like centuries old dust! This version comes with lights to show off your beautiful dust collection.</description>
+		<defName>UtilityWall</defName>
+		<label>utility wall</label>
+		<description>Upgraded version of basic walls, with the ability to easily attach things, like centuries old dust! This version comes with built-in wires to hide them from cats.</description>
 		<graphicData>
-			<texPath>Things/Building/Walls/UWallYellow</texPath>
+			<texPath>Things/Building/Walls/UtilityWallAtlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
@@ -303,17 +301,89 @@
 			</relatedBuildCommands>
 			<paintable>true</paintable>
 		</building>
-		<uiIconPath>Things/Building/Walls/UWallIco</uiIconPath>
+		<uiIconPath>Things/Building/Walls/UtilityWallIco</uiIconPath>
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
-			<WorkToBuild>655</WorkToBuild>
-			<Flammability>1.0</Flammability>
+			<WorkToBuild>540</WorkToBuild>
+			<Flammability>0</Flammability>
 			<Beauty>1</Beauty>
 		</statBases>
 		<stuffCategories>
 			<li>StrongMetallic</li>
 		</stuffCategories>
-		<costStuffCount>12</costStuffCount>
+		<costStuffCount>6</costStuffCount>
+		<costList>
+			<Wire>3</Wire>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<compClass>CompGlower</compClass>
+				<glowRadius>5</glowRadius>
+				<glowColor>(217,217,217,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<researchPrerequisites>
+			<li>Autodoors</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+		<modExtensions>
+			<li Class="SK.Events.EarthquakeExtension">
+				<immunityToDamage>true</immunityToDamage>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="WallBase">
+		<defName>ClutterUWallLight</defName>
+		<label>utility wall with lights</label>
+		<description>Upgraded version of basic walls, with the ability to easily attach things, like centuries old dust! This version comes with lights to show off your beautiful dust collection.</description>
+		<graphicData>
+			<texPath>Things/Building/Walls/UtilityWallLightsAtlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+			<relatedBuildCommands>
+				<li>Door</li>
+				<li>MDoor</li>
+				<li>Autodoor</li>
+				<li>CellDoor</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+			</relatedBuildCommands>
+			<paintable>true</paintable>
+		</building>
+		<uiIconPath>Things/Building/Walls/UtilityWallLightsIco</uiIconPath>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>655</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>6</costStuffCount>
 		<costList>
 			<Wire>3</Wire>
 			<Glass>5</Glass>
