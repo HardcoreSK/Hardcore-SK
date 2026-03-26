@@ -155,15 +155,11 @@
 			<texPath>Things/Building/Misc/SatelliteTower/SatelliteTower</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<!--<drawSize>(3.5,9)</drawSize> for other texture-->
-			<drawSize>(6,6)</drawSize>
-            <drawOffset>(0.1,0,2.2)</drawOffset>
+			<drawSize>(5,5)</drawSize>
+            <drawOffset>(0,0,1.7)</drawOffset>
 			<shadowData>
-				<volume>(1,2.2,0.8)</volume>
-				<offset>(0,0,0)</offset>
+				<volume>(1.6,5.8,1.6)</volume>
 			</shadowData>
-			<damageData>
-				<rect>(0.2,0.2,0.6,0.6)</rect>
-			</damageData>
 		</graphicData>
 		<uiIconPath>Things/Building/Misc/SatelliteTower/SatelliteTowerUI</uiIconPath>
 		<statBases>
