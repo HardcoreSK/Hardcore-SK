@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Ensure CrewMember pawnkind generates with vacsuits equipped -->
+	<!-- HSK patches to BasePlayerPawnKind may break inherited vacsuit generation -->
+	<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Odyssey">
+		<xpath>Defs/PawnKindDef[defName="CrewMember"]/apparelTags</xpath>
+		<value>
+			<apparelTags>
+				<li>Vacsuit</li>
+			</apparelTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Odyssey">
+		<xpath>Defs/PawnKindDef[defName="CrewMember"]/specificApparelRequirements</xpath>
+		<value>
+			<specificApparelRequirements>
+				<li>
+					<bodyPartGroup>FullHead</bodyPartGroup>
+					<requiredTag>Vacsuit</requiredTag>
+				</li>
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<requiredTag>Vacsuit</requiredTag>
+				</li>
+			</specificApparelRequirements>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Odyssey">
+		<xpath>Defs/PawnKindDef[defName="CrewMember"]/ignoreApparelAllowChance</xpath>
+		<value>
+			<ignoreApparelAllowChance>true</ignoreApparelAllowChance>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Odyssey">
+		<xpath>Defs/PawnKindDef[defName="CrewMember"]/apparelAllowHeadgearChance</xpath>
+		<value>
+			<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Odyssey">
+		<xpath>Defs/PawnKindDef[defName="CrewMember"]/apparelMoney</xpath>
+		<value>
+			<apparelMoney>2500~4000</apparelMoney>
+		</value>
+	</Operation>
+
+</Patch>
