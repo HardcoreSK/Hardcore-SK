@@ -162,35 +162,4 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_LampBase">
-		<defName>FloorAddonA</defName>
-		<label>Zone marker</label>
-		<graphicData>
-			<texPath>Things/Building/Side_Floor_Addon</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<altitudeLayer>Filth</altitudeLayer>
-		<statBases>
-			<MaxHitPoints>150</MaxHitPoints>
-			<WorkToBuild>70</WorkToBuild>
-			<Beauty>2</Beauty>
-			<Bulk>8</Bulk>
-			<Mass>3</Mass>
-			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2</StyleDominance>
-		</statBases>
-		<pathCost>0</pathCost>
-		<castEdgeShadows>false</castEdgeShadows>
-		<description>Simple slab of steel with some paint on it.</description>
-		<costList>
-			<ComponentIndustrial>2</ComponentIndustrial>
-		</costList>
-		<rotatable>true</rotatable>
-		<neverMultiSelect>true</neverMultiSelect>
-		<researchPrerequisites>
-			<li>Firefoam</li>
-		</researchPrerequisites>
-		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
-	</ThingDef>
-
 </Defs>

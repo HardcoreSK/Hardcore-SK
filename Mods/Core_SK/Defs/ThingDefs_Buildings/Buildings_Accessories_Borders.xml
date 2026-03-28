@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="SK_LampBase">
+		<defName>FloorAddonA</defName>
+		<label>Zone marker</label>
+		<description>Simple slab of steel with some paint on it.</description>
+		<graphicData>
+			<texPath>Things/Building/Side_Floor_Addon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<altitudeLayer>Filth</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>70</WorkToBuild>
+			<Beauty>2</Beauty>
+			<Bulk>8</Bulk>
+			<Mass>3</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2</StyleDominance>
+		</statBases>
+		<pathCost>0</pathCost>
+		<castEdgeShadows>false</castEdgeShadows>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<researchPrerequisites>
+			<li>Firefoam</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
+	</ThingDef>
+    
+    <ThingDef ParentName="SK_BorderBase">
+        <defName>WarningRibbonCorner</defName>
+        <label>warning border</label>
+        <description>Simple slab with some paint on it.</description>
+        <graphicData>
+            <graphicClass>SK.Graphic_SingleNoColor</graphicClass>
+            <texPath>Things/Building/Structures/Borders/WarningRibbonCorner</texPath>
+        </graphicData>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+		<researchPrerequisites>
+			<li>Firefoam</li>
+		</researchPrerequisites>
+    </ThingDef>
+    <ThingDef ParentName="SK_BorderBase">
+        <defName>WarningRibbonLine</defName>
+        <label>warning border</label>
+        <description>Simple slab with some paint on it.</description>
+        <drawStyleCategory>Default1D</drawStyleCategory>
+        <graphicData>
+            <graphicClass>SK.Graphic_SingleNoColor</graphicClass>
+            <texPath>Things/Building/Structures/Borders/WarningRibbonLine</texPath>
+        </graphicData>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+		<researchPrerequisites>
+			<li>Firefoam</li>
+		</researchPrerequisites>
+    </ThingDef>
+    
+    <ThingDef ParentName="SK_BorderBase">
+        <defName>StoneBlocksCorner</defName>
+        <label>blocks border</label>
+        <description>Several blocks pressed tightly against each other.</description>
+        <graphicData>
+            <texPath>Things/Building/Structures/Borders/StoneBlockCorner</texPath>
+        </graphicData>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+    </ThingDef>
+    <ThingDef ParentName="SK_BorderBase">
+        <defName>StoneBlocksLine</defName>
+        <label>blocks border</label>
+        <description>Several blocks pressed tightly against each other.</description>
+        <drawStyleCategory>Default1D</drawStyleCategory>
+        <graphicData>
+            <texPath>Things/Building/Structures/Borders/StoneBlockLine</texPath>
+        </graphicData>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+    </ThingDef>
+
+</Defs>
