@@ -493,34 +493,30 @@
 	<ThingDef ParentName="BuildingBase" Name="Column">
 		<defName>Column</defName>
 		<label>column</label>
-		<description>A structural column capable of holding up a roof. It does not impede movement or provide cover.</description>
+		<description>A structural column capable of holding up a roof. It does not impede movement.</description>
 		<graphicData>
-			<drawSize>(1,1.25)</drawSize>
-			<drawOffset>(0,0,0.2)</drawOffset>
-			<texPath>Things/Building/Furniture/Column</texPath>
+			<drawSize>(3,3)</drawSize>
+			<texPath>Things/Building/Structures/Columns/Column</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shadowData>
 				<volume>(0.3, 0.5, 0.3)</volume>
-				<offset>(0,0,-0.23)</offset>
 			</shadowData>
-			<damageData>
-				<rect>(0.2,0.2,0.6,0.6)</rect>
-			</damageData>
 		</graphicData>
+		<uiIconPath>Things/Building/Structures/Columns/Column_Icon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
 			<WorkToBuild>550</WorkToBuild>
 			<Flammability>0.2</Flammability>
 			<Beauty>5</Beauty>
-			<Mass>10</Mass>
-			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+			<Mass>50</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
 		<stuffCategories>
 			<li>StrongMetallic</li>
 			<li>Stony</li>
 			<li>Bricks</li>
 		</stuffCategories>
-		<costStuffCount>35</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.25</fillPercent>
@@ -541,9 +537,62 @@
 			<paintable>true</paintable>
 		</building>
 		<researchPrerequisites>
+			<li>Construction_B2</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<comps>
+			<li Class="CompProperties_Styleable" />
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>ColumnPrimitive</defName>
+		<label>wooden column</label>
+		<description>A structural column capable of holding up a roof. It does not impede movement.</description>
+		<graphicData>
+			<drawSize>(3,3)</drawSize>
+			<texPath>Things/Building/Structures/Columns/ColumnPrimitive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.5, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Structures/Columns/ColumnPrimitive_Icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>450</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>5</Beauty>
+			<Mass>20</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.25</fillPercent>
+		<pathCost>0</pathCost>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<fertility>0</fertility>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<canOverlapZones>false</canOverlapZones>
+		<designationCategory>Structure</designationCategory>
+		<blockLight>false</blockLight>
+		<specialDisplayRadius>6.9</specialDisplayRadius>
+		<!-- must be kept in sync with roof hold-up radius -->
+		<building>
+			<isInert>true</isInert>
+			<ai_chillDestination>false</ai_chillDestination>
+			<paintable>true</paintable>
+		</building>
+		<researchPrerequisites>
 			<li>Construction_B1</li>
 		</researchPrerequisites>
-		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 		<comps>
 			<li Class="CompProperties_Styleable" />
 		</comps>
