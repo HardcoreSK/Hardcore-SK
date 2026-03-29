@@ -60,6 +60,7 @@
 	<ThingDef ParentName="FurnitureBase">
 		<defName>PrimitiveStoolWood</defName>
 		<label>wooden stool</label>
+		<description>Is an authentic stool, fashioned after those found in the ruins of the Red Tree People on Xentis Ham.</description>
 		<graphicData>
 			<texPath>Things/Building/Furniture/Chairs/woodchair</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -87,7 +88,6 @@
 			<Mass>3</Mass>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">1</StyleDominance>
 		</statBases>
-		<description>Is an authentic stool, fashioned after those found in the ruins of the Red Tree People on Xentis Ham.</description>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<stuffCategories>
 			<li>Woody</li>
@@ -169,6 +169,62 @@
 		</comps>
 	</ThingDef>
 -->
+
+	<ThingDef ParentName="FurnitureBase">
+		<defName>StoolBackrest</defName>
+		<label>stool with backrest</label>
+		<description>A transitional element between an ordinary stool and luxurious armchairs. Considered by many to be the best invention of chair making.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Chairs/StoolWithBack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+			<drawRotated>false</drawRotated>
+			<damageData>
+				<rectN>(0,0,1,0.703125)</rectN>
+				<rectS>(0.09375,0,0.84375,1)</rectS>
+				<rectE>(0,0,0.84375,0.625)</rectE>
+				<rectW>(0.15625,0,0.84375,0.625)</rectW>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Standable</passability>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Comfort>0.4</Comfort>
+			<Bulk>10</Bulk>
+			<Mass>3</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">1</StyleDominance>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<ComponentMedieval>2</ComponentMedieval>
+		</costList>
+		<pathCost>30</pathCost>
+		<designationCategory>Furniture</designationCategory>
+		<fillPercent>0.35</fillPercent>
+		<building>
+			<isSittable>true</isSittable>
+			<paintable>true</paintable>
+		</building>
+		<researchPrerequisites>
+			<li>Tables_B2</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<comps>
+			<li Class="CompProperties_Styleable" />
+		</comps>
+	</ThingDef>
+
 	<ThingDef ParentName="FurnitureBase">
 		<defName>SimplePillow</defName>
 		<label>pillow</label>
@@ -325,7 +381,6 @@
 			<li Class="CompProperties_Styleable" />
 		</comps>
 	</ThingDef>
-
 
 	<ThingDef ParentName="FurnitureBase">
 		<defName>Bench</defName>
