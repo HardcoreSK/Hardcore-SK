@@ -32,7 +32,7 @@
     
     <ThingDef ParentName="SK_BorderBase">
         <defName>WarningRibbonCorner</defName>
-        <label>warning border</label>
+        <label>warning corner</label>
         <description>Simple slab with some paint on it.</description>
         <graphicData>
             <graphicClass>SK.Graphic_SingleNoColor</graphicClass>
@@ -64,7 +64,7 @@
     
     <ThingDef ParentName="SK_BorderBase">
         <defName>StoneBlocksCorner</defName>
-        <label>blocks border</label>
+        <label>blocks corner</label>
         <description>Several blocks pressed tightly against each other.</description>
         <graphicData>
             <texPath>Things/Building/Structures/Borders/StoneBlockCorner</texPath>
@@ -80,6 +80,30 @@
         <drawStyleCategory>Default1D</drawStyleCategory>
         <graphicData>
             <texPath>Things/Building/Structures/Borders/StoneBlockLine</texPath>
+        </graphicData>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+    </ThingDef>
+    
+    <ThingDef ParentName="SK_BorderBase">
+        <defName>PebblesCorner</defName>
+        <label>pebbles corner</label>
+        <description>Several pebbles grouped loosely next to each other.</description>
+        <graphicData>
+            <texPath>Things/Building/Structures/Borders/PebblesCorner</texPath>
+        </graphicData>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+    </ThingDef>
+    <ThingDef ParentName="SK_BorderBase">
+        <defName>PebblesLine</defName>
+        <label>pebbles border</label>
+        <description>Several pebbles grouped loosely next to each other.</description>
+        <drawStyleCategory>Default1D</drawStyleCategory>
+        <graphicData>
+            <texPath>Things/Building/Structures/Borders/PebblesLine</texPath>
         </graphicData>
         <stuffCategories>
             <li>Stony</li>
