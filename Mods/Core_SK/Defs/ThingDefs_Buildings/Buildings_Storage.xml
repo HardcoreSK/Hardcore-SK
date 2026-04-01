@@ -828,7 +828,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			<texPath>Things/Building/Storage/WallShelvesClean</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
-			<shaderType>CutoutComplex</shaderType>
+			<!--<shaderType>CutoutComplex</shaderType>-->
 		</graphicData>
 		<uiIconPath>Things/Building/Storage/WallShelvesClean_ico</uiIconPath>
 		<altitudeLayer>Projectile</altitudeLayer>
@@ -905,14 +905,14 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 					<texPath>Things/Building/Storage/WallShelvesClean</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(3,3)</drawSize>
-					<shaderType>CutoutComplex</shaderType>
+					<!--<shaderType>CutoutComplex</shaderType>-->
                 </graphicData>
 				<graphicDatas>
 					<li>
 						<texPath>Things/Building/Storage/WallShelvesClean_Top</texPath>
 						<graphicClass>Graphic_Multi</graphicClass>
 						<drawSize>(3,3)</drawSize>
-						<shaderType>CutoutComplex</shaderType>
+						<!--<shaderType>CutoutComplex</shaderType>-->
 						<drawRotated>false</drawRotated>
 						<renderQueue>2950</renderQueue>
 						<altitudeLayer>ItemImportant</altitudeLayer>
@@ -1599,7 +1599,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 	</AdaptiveStorage.GraphicsDef>
 	
 	<!--Chest-->
-	<ThingDef ParentName="LWM_DeepStorage">
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<defName>Chest</defName>
 		<label>chest</label>
 		<description>A chest with compartments for quicker organization. Up to 6 items.</description>
@@ -1636,6 +1636,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<size>(1,1)</size>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<building>
+			<maxItemsInCell>6</maxItemsInCell>
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
 			<fixedStorageSettings>
@@ -1652,7 +1653,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 				</filter>
 			</fixedStorageSettings>
 		</building>
-		<comps>
+		<comps><!--
 			<li Class="LWM.DeepStorage.Properties">
 				<maxNumberStacks>6</maxNumberStacks>
 				<minTimeStoringTakes>35</minTimeStoringTakes>
@@ -1660,7 +1661,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 				<additionalTimeEachDef>0</additionalTimeEachDef>
 				<showContents>false</showContents>
 				<overlayType>SumOfItemsPerCell</overlayType>
-			</li>
+			</li>-->
 			<li Class="SK.CompProperties_ContainerBase"/>
 		</comps>
 		<researchPrerequisites>
@@ -1669,8 +1670,27 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
 	
+    <AdaptiveStorage.GraphicsDef>
+		<defName>ChestASF</defName>
+		<targetDef>Chest</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/chestVile</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawRotated>true</drawRotated>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.7, 0.3, 0.7)</volume>
+					</shadowData>
+                </graphicData>
+            </li>
+        </graphics>
+		<showContainedItems>false</showContainedItems>
+	</AdaptiveStorage.GraphicsDef>
+	
 	<!--Armored Chest-->
-	<ThingDef ParentName="LWM_DeepStorage">
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<defName>IndustrialChest</defName>
 		<label>armored chest</label>
 		<description>An armored chest made of metal. Used to store various things inside. Up to 6 items.</description>
@@ -1707,6 +1727,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<size>(1,1)</size>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<building>
+			<maxItemsInCell>7</maxItemsInCell>
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
 			<fixedStorageSettings>
@@ -1723,7 +1744,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 				</filter>
 			</fixedStorageSettings>
 		</building>
-		<comps>
+		<comps><!--
 			<li Class="LWM.DeepStorage.Properties">
 				<maxNumberStacks>7</maxNumberStacks>
 				<minTimeStoringTakes>40</minTimeStoringTakes>
@@ -1731,7 +1752,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 				<additionalTimeEachDef>15</additionalTimeEachDef>
 				<showContents>false</showContents>
 				<overlayType>SumOfItemsPerCell</overlayType>
-			</li>
+			</li>-->
 			<li Class="SK.CompProperties_ContainerBase">
 			</li>
 		</comps>
@@ -1741,8 +1762,27 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
 	</ThingDef>
 	
+    <AdaptiveStorage.GraphicsDef>
+		<defName>IndustrialChestASF</defName>
+		<targetDef>IndustrialChest</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/ArmoredChest</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawRotated>true</drawRotated>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.7, 0.3, 0.7)</volume>
+					</shadowData>
+                </graphicData>
+            </li>
+        </graphics>
+		<showContainedItems>false</showContainedItems>
+	</AdaptiveStorage.GraphicsDef>
+	
 	<!--Bin Rack - quick and organized-->
-	<ThingDef ParentName="LWM_DeepStorage">
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<defName>BinRack</defName>
 		<label>Bin rack</label>
 		<description>A cabinet of bins with lids. They slide out and open with ease and are labelled for optimum organization. Lightning fast.</description>
@@ -1779,6 +1819,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<size>(1,1)</size>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<building>
+			<maxItemsInCell>7</maxItemsInCell>
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
 			<fixedStorageSettings>
@@ -1795,13 +1836,13 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 				</filter>
 			</fixedStorageSettings>
 		</building>
-		<comps>
+		<comps><!--
 			<li Class="LWM.DeepStorage.Properties">
 				<maxNumberStacks>7</maxNumberStacks>
 				<minTimeStoringTakes>10</minTimeStoringTakes>
 				<showContents>true</showContents>
 				<overlayType>SumOfItemsPerCell</overlayType>
-			</li>
+			</li>-->
 			<li Class="SK.CompProperties_ContainerBase">
 			</li>
 		</comps>
@@ -1810,6 +1851,42 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
+	
+    <AdaptiveStorage.GraphicsDef>
+		<defName>BinRackASF</defName>
+		<targetDef>BinRack</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/ShelfBins</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.4,1.4)</drawSize>
+					<drawRotated>true</drawRotated>
+					<!--<shaderType>CutoutComplex</shaderType>-->
+					<shadowData>
+						<volume>(0.7, 0.3, 0.7)</volume>
+					</shadowData>
+                </graphicData>
+            </li>
+        </graphics>
+		<showContainedItems>true</showContainedItems>
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0,0,0.2)</stackOffset>
+							<drawOffset>(0,0,0.1)</drawOffset>
+							<!--<drawOffsetWest>(-0.1,0,0.1)</drawOffsetWest>-->
+							<drawScale>0.9</drawScale>
+							<stackOffsetFactor>0.5</stackOffsetFactor>
+						</r0>					
+					</rows>
+				</c0>
+			</columns>
+		</itemGraphics>
+	</AdaptiveStorage.GraphicsDef>
 	
 	<!--Shed - food, bodies-->
 	<ThingDef ParentName="LWM_DeepStorage">
