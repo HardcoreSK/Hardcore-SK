@@ -510,7 +510,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<label>Pallet Rack</label>
 		<description>A large warehouse shelving unit complete with pallets which allows you to stack stacks of things. More organized and easier to use than plain old pallets and it's the only feasible way of stacking large items like stone chunks and even other buildings.</description>
 		<graphicData>
-			<texPath>Things/Building/Storage/PalletRack</texPath>
+			<texPath>Things/Building/Storage/PalletRack/PalletRack</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5.4,5.2)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -519,7 +519,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			</shadowData>
 		</graphicData>
 		<drawerType>MapMeshAndRealTime</drawerType>
-		<uiIconPath>Things/Building/Storage/PalletRack_ico</uiIconPath>
+		<uiIconPath>Things/Building/Storage/PalletRack/PalletRack_ico</uiIconPath>
 		<size>(3,1)</size>
 		<statBases>
 			<MarketValue>400</MarketValue>
@@ -599,7 +599,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
         <graphics>
             <li>
                 <graphicData>
-					<texPath>Things/Building/Storage/PalletRack</texPath>
+					<texPath>Things/Building/Storage/PalletRack/PalletRack</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(5.4,5.2)</drawSize>
 					<shaderType>CutoutComplex</shaderType>
@@ -609,7 +609,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
                 </graphicData>
 				<graphicDatas>
 					<li>
-						<texPath>Things/Building/Storage/PalletRackTop</texPath>
+						<texPath>Things/Building/Storage/PalletRack/PalletRackTop</texPath>
 						<graphicClass>Graphic_Multi</graphicClass>
 						<drawSize>(5.4,5.2)</drawSize>
 						<drawRotated>false</drawRotated>
@@ -825,12 +825,12 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<description>Shelves attached to a wall for storing things. Looks nice and doesn't impede traffic.</description>
 		<thingClass>Building_Storage</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Storage/WallShelvesClean</texPath>
+			<texPath>Things/Building/Storage/WallShelvesClean/WallShelvesClean</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 			<!--<shaderType>CutoutComplex</shaderType>-->
 		</graphicData>
-		<uiIconPath>Things/Building/Storage/WallShelvesClean_ico</uiIconPath>
+		<uiIconPath>Things/Building/Storage/WallShelvesClean/WallShelvesClean_ico</uiIconPath>
 		<altitudeLayer>Projectile</altitudeLayer>
 		<fillPercent>0</fillPercent>
 		<castEdgeShadows>true</castEdgeShadows>
@@ -902,14 +902,14 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
         <graphics>
             <li>
                 <graphicData>
-					<texPath>Things/Building/Storage/WallShelvesClean</texPath>
+					<texPath>Things/Building/Storage/WallShelvesClean/WallShelvesClean</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(3,3)</drawSize>
 					<!--<shaderType>CutoutComplex</shaderType>-->
                 </graphicData>
 				<graphicDatas>
 					<li>
-						<texPath>Things/Building/Storage/WallShelvesClean_Top</texPath>
+						<texPath>Things/Building/Storage/WallShelvesClean/WallShelvesClean_Top</texPath>
 						<graphicClass>Graphic_Multi</graphicClass>
 						<drawSize>(3,3)</drawSize>
 						<!--<shaderType>CutoutComplex</shaderType>-->
@@ -969,12 +969,12 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<description>A fairly sturdy set of wire racks for storing things. More organized than pallets.</description>
 		<thingClass>Building_Storage</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Storage/WireRacks</texPath>
+			<texPath>Things/Building/Storage/WireRack/WireRacks</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<drawerType>MapMeshAndRealTime</drawerType>
-		<uiIconPath>Things/Building/Storage/WireRacks_ico</uiIconPath>
+		<uiIconPath>Things/Building/Storage/WireRack/WireRacks_ico</uiIconPath>
 		<fillPercent>0.8</fillPercent>
 		<castEdgeShadows>true</castEdgeShadows>
 		<stuffCategories>
@@ -1046,13 +1046,13 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
         <graphics>
             <li>
                 <graphicData>
-					<texPath>Things/Building/Storage/WireRacks</texPath>
+					<texPath>Things/Building/Storage/WireRack/WireRacks</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(3,3)</drawSize>
                 </graphicData>
 				<graphicDatas>
 					<li>
-						<texPath>Things/Building/Storage/WireRacksTop</texPath>
+						<texPath>Things/Building/Storage/WireRack/WireRacksTop</texPath>
 						<graphicClass>Graphic_Multi</graphicClass>
 						<drawSize>(3,3)</drawSize>
 						<drawRotated>false</drawRotated>
@@ -1144,11 +1144,11 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<description>A glass case for showing off your wares to guests.</description>
 		<thingClass>Building_Storage</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Storage/DisplayCase</texPath>
+			<texPath>Things/Building/Storage/DisplayCase/DisplayCase</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.9,2.9)</drawSize>
 		</graphicData>
-		<uiIconPath>Things/Building/Storage/DisplayCase_ico</uiIconPath>
+		<uiIconPath>Things/Building/Storage/DisplayCase/DisplayCase_ico</uiIconPath>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<tickerType>Rare</tickerType>
 		<fillPercent>0.8</fillPercent>
@@ -1225,13 +1225,13 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
         <graphics>
             <li>
                 <graphicData>
-					<texPath>Things/Building/Storage/DisplayCase</texPath>
+					<texPath>Things/Building/Storage/DisplayCase/DisplayCase</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.9,2.9)</drawSize>
                 </graphicData>
 				<graphicDatas>
 					<li>
-						<texPath>Things/Building/Storage/DisplayCaseTop</texPath>
+						<texPath>Things/Building/Storage/DisplayCase/DisplayCaseTop</texPath>
 						<graphicClass>Graphic_Multi</graphicClass>
 						<drawSize>(2.9,2.9)</drawSize>
 						<shaderType>CutoutComplex</shaderType>
@@ -1324,7 +1324,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<label>Wicker basket</label>
 		<description>A woven container made typically of plant matierals, but may also be fashioned with synthetic ingredients. Can store just about anything, protects from the elements, and does well keeping fruits and veggies fresh by reducing spoilage by 30%.</description>
 		<graphicData>
-			<texPath>Things/Building/Storage/Basket</texPath>
+			<texPath>Things/Building/Storage/Basket/Basket</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawRotated>false</drawRotated>
@@ -1399,7 +1399,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
         <graphics>
             <li>
                 <graphicData>
-					<texPath>Things/Building/Storage/Basket_Empty</texPath>
+					<texPath>Things/Building/Storage/Basket/Basket_Empty</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
 					<drawRotated>false</drawRotated>
@@ -1411,7 +1411,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
                 </graphicData>
 				<graphicDatas>
 					<li>
-						<texPath>Things/Building/Storage/Basket_Top</texPath>
+						<texPath>Things/Building/Storage/Basket/Basket_Top</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<shaderType>CutoutComplex</shaderType>
 						<drawRotated>false</drawRotated>
@@ -1424,7 +1424,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
             </li>
 			<li>
 				<graphicData>
-					<texPath>Things/Building/Storage/Basket</texPath>
+					<texPath>Things/Building/Storage/Basket/Basket</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
 					<drawRotated>false</drawRotated>
@@ -1467,7 +1467,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<label>barrel</label>
 		<description>A barrel made of wood or metal. Used to store various things inside, though easier to manage when it's all that same type of thing. Up to 5 items.</description>
 		<graphicData>
-			<texPath>Things/Building/Storage/barrel</texPath>
+			<texPath>Things/Building/Storage/Barrel/barrel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawRotated>false</drawRotated>
 			<shaderType>CutoutComplex</shaderType>
@@ -1535,7 +1535,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
         <graphics>
             <li>
                 <graphicData>
-					<texPath>Things/Building/Storage/barrel_Empty</texPath>
+					<texPath>Things/Building/Storage/Barrel/barrel_Empty</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawRotated>false</drawRotated>
 					<shaderType>CutoutComplex</shaderType>
@@ -1546,7 +1546,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
                 </graphicData>
 				<graphicDatas>
 					<li>
-						<texPath>Things/Building/Storage/barrel_Top</texPath>
+						<texPath>Things/Building/Storage/Barrel/barrel_Top</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<drawRotated>false</drawRotated>
 						<shaderType>CutoutComplex</shaderType>
@@ -1562,7 +1562,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
             </li>
 			<li>
 				<graphicData>
-					<texPath>Things/Building/Storage/barrel</texPath>
+					<texPath>Things/Building/Storage/Barrel/barrel</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawRotated>false</drawRotated>
 					<shaderType>CutoutComplex</shaderType>
@@ -1604,7 +1604,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<label>chest</label>
 		<description>A chest with compartments for quicker organization. Up to 6 items.</description>
 		<graphicData>
-			<texPath>Things/Building/Storage/chestVile</texPath>
+			<texPath>Things/Building/Storage/ChestVile/chestVile</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<drawRotated>true</drawRotated>
@@ -1676,7 +1676,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
         <graphics>
             <li>
                 <graphicData>
-					<texPath>Things/Building/Storage/chestVile</texPath>
+					<texPath>Things/Building/Storage/ChestVile/chestVile</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawRotated>true</drawRotated>
 					<shaderType>CutoutComplex</shaderType>
@@ -1695,7 +1695,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<label>armored chest</label>
 		<description>An armored chest made of metal. Used to store various things inside. Up to 6 items.</description>
 		<graphicData>
-			<texPath>Things/Building/Storage/ArmoredChest</texPath>
+			<texPath>Things/Building/Storage/ArmoredChest/ArmoredChest</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawRotated>true</drawRotated>
 			<drawSize>(1,1)</drawSize>
@@ -1768,7 +1768,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
         <graphics>
             <li>
                 <graphicData>
-					<texPath>Things/Building/Storage/ArmoredChest</texPath>
+					<texPath>Things/Building/Storage/ArmoredChest/ArmoredChest</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawRotated>true</drawRotated>
 					<shaderType>CutoutComplex</shaderType>
@@ -1889,12 +1889,12 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 	</AdaptiveStorage.GraphicsDef>
 	
 	<!--Shed - food, bodies-->
-	<ThingDef ParentName="LWM_DeepStorage">
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<defName>Shed</defName>
 		<label>shed</label>
 		<description>An all purpose shed. You can store your tools, use it as a pantry, or hide the bodies. Has shelves and hangers for better organization. Slows spoilage by 25%.</description>
 		<graphicData>
-			<texPath>Things/Building/Storage/Shed</texPath>
+			<texPath>Things/Building/Storage/Shed/Shed</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawRotated>true</drawRotated>
 			<shaderType>CutoutComplex</shaderType>
@@ -1924,6 +1924,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<size>(2,1)</size>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<building>
+			<maxItemsInCell>7</maxItemsInCell>
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
 			<fixedStorageSettings>
@@ -1941,13 +1942,13 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		</building>
 		<tickerType>Rare</tickerType>
 		<!-- need this for rotModified comp -->
-		<comps>
+		<comps><!--
 			<li Class="LWM.DeepStorage.Properties">
 				<maxNumberStacks>7</maxNumberStacks>
 				<minTimeStoringTakes>75</minTimeStoringTakes>
 				<showContents>false</showContents>
 				<overlayType>SumOfItemsPerCell</overlayType>
-			</li>
+			</li>-->
 			<li Class="SK.CompProperties_RotModified">
 				<rotmodifier>0.75</rotmodifier>
 			</li>
@@ -1960,19 +1961,39 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
 
+    <AdaptiveStorage.GraphicsDef>
+		<defName>ShedASF</defName>
+		<targetDef>Shed</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/Shed/Shed</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawRotated>true</drawRotated>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>(2.8,2.8)</drawSize>
+					<shadowData>
+						<volume>(1.7, 0.3, 0.7)</volume>
+					</shadowData>
+                </graphicData>
+            </li>
+        </graphics>
+		<showContainedItems>false</showContainedItems>
+	</AdaptiveStorage.GraphicsDef>
+
 	<!-- SPECIALIZED STORAGE - Deteriorates/Indoors -->
 	<!--Pot-->
-	<ThingDef ParentName="LWM_DeepStorage">
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<defName>Pot</defName>
 		<label>pot</label>
 		<description>A big pot made of wood, metal or ceramics; used to preserve food. Slows rotting process by 40%.</description>
 		<graphicData>
-			<texPath>Things/Building/Storage/Pot</texPath>
+			<texPath>Things/Building/Storage/Pot/Pot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawRotated>false</drawRotated>
-			<drawSize>(1.8,1.8)</drawSize>
 			<shadowData>
-				<volume>(0.7, 0.3, 0.7)</volume>
+				<volume>(0.3, 0.3, 0.4)</volume>
+				<offset>(0, 0, 0.24)</offset>
 			</shadowData>
 		</graphicData>
 		<size>(1,1)</size>
@@ -1996,6 +2017,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			<Mass>2</Mass>
 		</statBases>
 		<building>
+			<maxItemsInCell>5</maxItemsInCell>
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
 			<fixedStorageSettings>
@@ -2010,19 +2032,82 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<comps>
 			<li Class="SK.CompProperties_RotModified">
 				<rotmodifier>0.6</rotmodifier>
-			</li>
+			</li><!--
 			<li Class="LWM.DeepStorage.Properties" >
 				<maxNumberStacks>5</maxNumberStacks>
 				<timeStoringTakes>25</timeStoringTakes>
 				<showContents>false</showContents>
 				<overlayType>SumOfItemsPerCell</overlayType>
-			</li>
+			</li>-->
 		</comps>
 		<!--<researchPrerequisites>
 			<li>Storage_B1</li>
 		</researchPrerequisites>-->
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 	</ThingDef>
+	
+    <AdaptiveStorage.GraphicsDef>
+		<defName>PotASF</defName>
+		<targetDef>Pot</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/Pot/Pot</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawRotated>false</drawRotated>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.4)</volume>
+						<offset>(0, 0, 0.24)</offset>
+					</shadowData>
+                </graphicData>
+				<graphicDatas>
+					<li>
+						<texPath>Things/Building/Storage/Pot/Pot_Top</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+						<drawRotated>false</drawRotated>
+						<shadowData>
+							<volume>(0.3, 0.3, 0.4)</volume>
+							<offset>(0, 0, 0.24)</offset>
+						</shadowData>
+						<renderQueue>2950</renderQueue>
+						<altitudeLayer>ItemImportant</altitudeLayer>
+						<drawOffset>(0,1.2,0)</drawOffset>
+					</li>
+				</graphicDatas>
+            </li>
+			<li>
+				<graphicData>
+					<texPath>Things/Building/Storage/Pot/Pot_Full</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawRotated>false</drawRotated>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.4)</volume>
+						<offset>(0, 0, 0.24)</offset>
+					</shadowData>
+				</graphicData>
+				<minimumStackCount>5</minimumStackCount>
+				<showContainedItems>false</showContainedItems>
+			</li>
+        </graphics>
+		<showContainedItems>true</showContainedItems>
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Circle</stackBehaviour>
+							<stackOffset>(0,0,0.5)</stackOffset>
+							<drawOffset>(0,0,0.05)</drawOffset>
+							<stackOffsetFactor>0.4</stackOffsetFactor>
+							<drawScale>0.6</drawScale>
+						</r0>					
+					</rows>
+				</c0>
+			</columns>
+		</itemGraphics>
+		<!--<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast> (distance between horizontal,?,distance between vertical) -->
+		<!--<drawOffsetEast>(-0.15,2.05,0.45)</drawOffsetEast> (x -left & right, y - layer, z - up & down) -->
+	</AdaptiveStorage.GraphicsDef>
 	
 	<!--Meat Hook-->
 	<ThingDef ParentName="LWM_DeepStorage">
@@ -2032,7 +2117,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 
 			Note that you can only fit so many giant corpses into one space, even if you stack them.  The frame will only hold so much weight.</description>
 		<graphicData>
-			<texPath>Things/Building/Storage/MeatHook</texPath>
+			<texPath>Things/Building/Storage/Meathook/MeatHook</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3.3,2.2)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -2091,7 +2176,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<comps>
 			<li Class="RimFridge.CompProperties_SecondLayer">
 				<graphicData>
-					<texPath>Things/Building/Storage/MeatHook_Overlay</texPath>
+					<texPath>Things/Building/Storage/Meathook/MeatHook_Overlay</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
 					<drawSize>(3.3,2.2)</drawSize>
@@ -2269,12 +2354,12 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<description>This structure can be used to store hay, silage, and various other plant materials to keep it dry and protect it from the weather.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<texPath>Things/Building/Storage/HayLoft_Top</texPath>
+			<texPath>Things/Building/Storage/Hayloft/HayLoft_Top</texPath>
 			<drawSize>(4,2)</drawSize>
-			<maskPath>Things/Building/Storage/HayLoft_Top_south</maskPath>
+			<maskPath>Things/Building/Storage/Hayloft/HayLoft_Top_south</maskPath>
 		</graphicData>
 		<drawerType>MapMeshAndRealTime</drawerType>
-		<uiIconPath>Things/Building/Storage/HayLoft_ico</uiIconPath>
+		<uiIconPath>Things/Building/Storage/Hayloft/HayLoft_ico</uiIconPath>
 		<staticSunShadowHeight>1</staticSunShadowHeight>
 		<size>(2,1)</size>
 		<statBases>
@@ -2332,7 +2417,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			</li>
 			<li Class="RimFridge.CompProperties_SecondLayer">
 				<graphicData>
-					<texPath>Things/Building/Storage/HayLoft_Top</texPath>
+					<texPath>Things/Building/Storage/Hayloft/HayLoft_Top</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
 					<drawSize>(4,2)</drawSize>
