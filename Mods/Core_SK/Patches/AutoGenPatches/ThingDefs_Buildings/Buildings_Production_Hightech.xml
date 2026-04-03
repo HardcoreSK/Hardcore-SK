@@ -184,16 +184,16 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="TableMachining"]</xpath>
         <value>
-            <label>electric machining table</label>
+            <label>electric cutting table</label>
             <thingClass>SK.Building_WorkTable_HeatPushAdvanced</thingClass>
-            <description>An electric table that can process stone chunks into blocks, rubble or sand. Can also make drill heads, create reinforced concrete and disassemble mechanoids. Requires power.</description>
+            <description>An electric table that can process stone chunks into blocks, rubble or sand. Requires power.</description>
             <graphicData>
                 <texPath>Things/Building/Production/TableMachining/TableMachining</texPath>
                 <graphicClass>Graphic_Multi</graphicClass>
                 <drawSize>(3,3)</drawSize>
                 <shaderType>CutoutComplex</shaderType>
                 <shadowData>
-                    <volume>(2.7, 1.0, 0.85)</volume>
+                    <volume>(0.85, 1.0, 1.7)</volume>
                     <offset>(0,0,0)</offset>
                 </shadowData>
                 <damageData>
@@ -208,6 +208,7 @@
             <stuffCategories>
                 <li>RuggedMetallic</li>
             </stuffCategories>
+            <size>(1,2)</size>
             <costStuffCount>160</costStuffCount>
             <costList>
                 <ComponentIndustrial>10</ComponentIndustrial>
@@ -224,17 +225,6 @@
             <minifiedDef>MinifiedThing</minifiedDef>
             <tickerType>Normal</tickerType>
             <comps>
-                <li Class="CompProperties_Refuelable">
-                    <fuelConsumptionRate>16.0</fuelConsumptionRate>
-                    <fuelCapacity>8.0</fuelCapacity>
-                    <fuelFilter>
-                        <thingDefs>
-                            <li>Chemfuel</li>
-                        </thingDefs>
-                    </fuelFilter>
-                    <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-                    <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
-                </li>
                 <li Class="CompProperties_Power">
                     <compClass>CompPowerTrader</compClass>
                     <shortCircuitInRain>true</shortCircuitInRain>

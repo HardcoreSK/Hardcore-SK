@@ -326,7 +326,7 @@
 		<stuffCategories>
 			<li>RuggedMetallic</li>
 		</stuffCategories>
-		<costStuffCount>135</costStuffCount>
+		<costStuffCount>100</costStuffCount>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<statBases>
 			<WorkToBuild>4500</WorkToBuild>
@@ -374,6 +374,95 @@
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<designationHotKey>Misc2</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>Repair_table_C1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="SK_WorkTable">
+		<defName>TableRecycling</defName>
+		<label>recycling station</label>
+		<description>A workbench equipped with all the tools required to tear apart any armor, weapon or apparel. Requires power and consumes chemfuel.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Production/TableRecycling/TableRecycling</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(2.7, 1.0, 0.85)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<costList>
+			<ComponentIndustrial>12</ComponentIndustrial>
+			<ElectronicComponents>3</ElectronicComponents>
+			<Mechanism>5</Mechanism>
+		</costList>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<statBases>
+			<WorkToBuild>4500</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-5</Cleanliness>
+			<Mass>500</Mass>
+		</statBases>
+		<size>(3,1)</size>
+		<designationCategory>Production</designationCategory>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<recipes>
+			<li>SmeltWeapon</li>
+			<li>DissasembleFirearms</li>
+		</recipes>
+		<building>
+			<uninstallWork>1250</uninstallWork>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>500</basePowerConsumption>
+				<idlePowerDraw>50</idlePowerDraw>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>20.0</fuelConsumptionRate>
+				<fuelCapacity>20.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>Small_ToolCabinet</li>
+					<li>PodChair</li>
+					<li>Patterner</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
