@@ -50,6 +50,8 @@
 			<MarketValue>2</MarketValue>
 		</statBases>
 		<ammoClass>StoneBall</ammoClass>
+        <generateAllowChance>1</generateAllowChance>
+        <spawnAsSiegeAmmo>true</spawnAsSiegeAmmo>
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="ExplosiveBallBase">
@@ -63,7 +65,6 @@
 			<MarketValue>20</MarketValue>
 		</statBases>
 		<ammoClass>ExplosiveBall</ammoClass>
-		<generateAllowChance>0.25</generateAllowChance>
 		<comps>
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>1.8</explosiveRadius>
@@ -76,6 +77,8 @@
 				</wickTicks>
 			</li>
 		</comps>
+		<generateAllowChance>0.25</generateAllowChance>
+        <spawnAsSiegeAmmo>true</spawnAsSiegeAmmo>
 	</ThingDef>
 
 	<!-- ================== Projectiles ================== -->

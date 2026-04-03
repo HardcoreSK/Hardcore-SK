@@ -29,13 +29,16 @@
 			<cookOffSpeed>0.2</cookOffSpeed>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Ammo_155mmHowitzerShell_HE"]</xpath>
 		<value>
 			<description>155 mm (6.1") is a standard artillery calibre.</description>
+			<spawnAsSiegeAmmo>true</spawnAsSiegeAmmo>
+			<generateAllowChance>1</generateAllowChance>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Ammo_155mmHowitzerShell_EMP"]</xpath>
 		<value>
 			<description>155 mm (6.1") is standard artillery calibre.</description>

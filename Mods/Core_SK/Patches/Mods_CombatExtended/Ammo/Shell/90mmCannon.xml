@@ -19,15 +19,18 @@
 			<MarketValue>78</MarketValue>
 		</value>
 	</Operation>
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Ammo_90mmCannonShell_HEAT"]/graphicData/texPath</xpath>
 		<value>
 			<texPath>Things/Ammo/Cannon/Flak/HEAT</texPath>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Ammo_90mmCannonShell_HEAT"]</xpath>
 		<value>
+			<spawnAsSiegeAmmo>true</spawnAsSiegeAmmo>
+			<generateAllowChance>1</generateAllowChance>
 			<comps>
 				<li Class="CombatExtended.CompProperties_ExplosiveCE">
 					<damageAmountBase>258</damageAmountBase>
@@ -38,15 +41,18 @@
 			</comps>
 		</value>
 	</Operation>
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Ammo_90mmCannonShell_HE"]/graphicData/texPath</xpath>
 		<value>
 			<texPath>Things/Ammo/Cannon/Flak/HE</texPath>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Ammo_90mmCannonShell_HE"]</xpath>
 		<value>
+			<spawnAsSiegeAmmo>true</spawnAsSiegeAmmo>
+			<generateAllowChance>1</generateAllowChance>
 			<comps>
 				<li Class="CombatExtended.CompProperties_ExplosiveCE">
 					<damageAmountBase>285</damageAmountBase>
@@ -69,15 +75,10 @@
 			<texPath>Things/Ammo/Cannon/Flak/HE</texPath>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Ammo_90mmCannonShell_HE_TFuzed"]/label</xpath>
-		<value>
-			<label>90mm cannon shell (HE Time Fuzed)</label>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Ammo_90mmCannonShell_HE_TFuzed"]</xpath>
 		<value>
+			<label>90mm cannon shell (HE Time Fuzed)</label>
 			<comps>
 				<li Class="CombatExtended.CompProperties_ExplosiveCE">
 					<damageAmountBase>285</damageAmountBase>
@@ -100,7 +101,7 @@
 			<texPath>Things/Ammo/Cannon/Flak/EMP</texPath>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Ammo_90mmCannonShell_EMP"]</xpath>
 		<value>
 			<comps>

@@ -110,12 +110,14 @@
 			</recipeUsers>
 		</value>
 	</Operation>
+    
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/RecipeDef[@Name="GrenadeRecipeBase"]</xpath>
 		<value>
 			<targetCountAdjustment>10</targetCountAdjustment>
 		</value>
 	</Operation>
+    
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/RecipeDef[@Name="AdvancedAmmoRecipeBase"]/skillRequirements/Crafting</xpath>
 		<value>

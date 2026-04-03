@@ -43,42 +43,33 @@
 			</comps>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Ammo_120mmCannonShell_HEAT"]/graphicData/graphicClass</xpath>
-		<value>
-			<graphicClass>Graphic_Single</graphicClass>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Ammo_120mmCannonShell_HEAT"]/graphicData/texPath</xpath>
-		<value>
-			<texPath>Things/Ammo/Cannon/120mmTank/HEAT</texPath>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
+    
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Ammo_120mmCannonShell_HEAT"]</xpath>
 		<value>
 			<description>The 120mm ammunition system equips the MlE1 (Abrams) tank with a 120mm main armament.</description>
+            <graphicData>
+                <texPath>Things/Ammo/Cannon/120mmTank/HEAT</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+            </graphicData>
+			<spawnAsSiegeAmmo>true</spawnAsSiegeAmmo>
+			<generateAllowChance>1</generateAllowChance>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Ammo_120mmCannonShell_HE"]/graphicData/graphicClass</xpath>
-		<value>
-			<graphicClass>Graphic_Single</graphicClass>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Ammo_120mmCannonShell_HE"]/graphicData/texPath</xpath>
-		<value>
-			<texPath>Things/Ammo/Cannon/120mmTank/HE</texPath>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
+    
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Ammo_120mmCannonShell_HE"]</xpath>
 		<value>
 			<description>The 120mm ammunition system equips the MlE1 (Abrams) tank with a 120mm main armament.</description>
+            <graphicData>
+                <texPath>Things/Ammo/Cannon/120mmTank/HE</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+            </graphicData>
+			<spawnAsSiegeAmmo>true</spawnAsSiegeAmmo>
+			<generateAllowChance>1</generateAllowChance>
 		</value>
 	</Operation>
+    
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="Base120mmCannonShell"]/projectile</xpath>
 		<value>
