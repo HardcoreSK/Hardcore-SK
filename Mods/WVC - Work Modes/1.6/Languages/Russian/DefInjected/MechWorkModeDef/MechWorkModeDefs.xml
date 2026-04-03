@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- SPECIAL -->
+
+<WVC_DefendYourself.label>Защита себя</WVC_DefendYourself.label>-->
+<WVC_DefendYourself.description>Механоиды, независимо от типа, будут атаковать врагов, подошедших слишком близко. В случае повреждения они постараются по возможности отойти в безопасную зону.
+
+&lt;color=#f5ffa2&gt;Тип:&lt;/color&gt; Безопасный
+&lt;color=#f5ffa2&gt;Поиск врагов:&lt;/color&gt; Нет
+&lt;color=#f5ffa2&gt;Режим сна:&lt;/color&gt; Если поврежден
+&lt;color=#f5ffa2&gt;Умная подзарядка:&lt;/color&gt; Нет</WVC_DefendYourself.description>
+
+<WVC_HiveMindResearching.label>Коллективное исследование</WVC_HiveMindResearching.label>
+<WVC_HiveMindResearching.description>Механоиды, независимо от их типа, будут генерировать очки исследования в зависимости от их нагрузки на сеть. Скорость и эффективность исследования напрямую зависит от количества задействованных в нем механоидов.
+
+При наличии на карте врага или в случае повреждения механоиды направятся в безопасную зону.
+
+&lt;color=#f5ffa2&gt;Тип:&lt;/color&gt; Безопасный
+&lt;color=#f5ffa2&gt;Поиск врагов:&lt;/color&gt; Нет
+&lt;color=#f5ffa2&gt;Режим сна:&lt;/color&gt; Если поврежден
+&lt;color=#f5ffa2&gt;Умная подзарядка:&lt;/color&gt; Да</WVC_HiveMindResearching.description>
+
+ <WVC_Scavenging.label>Собирательство</WVC_Scavenging.label>
+ <WVC_Scavenging.description>Механоиды, независимо от типа, будут искать полезные ресурсы в зонах "Собирательства".
+
+При наличии на карте врага или в случае повреждения механоиды направятся в безопасную зону.
+
+&lt;color=#f5ffa2&gt;Тип:&lt;/color&gt; Безопасный
+&lt;color=#f5ffa2&gt;Поиск врагов:&lt;/color&gt; Нет
+&lt;color=#f5ffa2&gt;Режим сна:&lt;/color&gt; Если поврежден
+&lt;color=#f5ffa2&gt;Умная подзарядка:&lt;/color&gt; Да</WVC_Scavenging.description>-->
+
+
+  <!-- COMBAT -->
+
+ <WVC_FindAndDestroy.label>Найти и уничтожить</WVC_FindAndDestroy.label>-->
+ <WVC_FindAndDestroy.description>Механоиды, независимо от их типа, будут искать врагов и пытаться их уничтожить.
+
+&lt;color=#f5ffa2&gt;Тип:&lt;/color&gt; Боевой
+&lt;color=#f5ffa2&gt;Поиск врагов:&lt;/color&gt; Да
+&lt;color=#f5ffa2&gt;Режим сна:&lt;/color&gt; Нет
+&lt;color=#f5ffa2&gt;Умная подзарядка:&lt;/color&gt; Да</WVC_FindAndDestroy.description>-->
+
+ <WVC_WaitEnemy.label>Ожидание врага</WVC_WaitEnemy.label>-->
+ <WVC_WaitEnemy.description>Механоид выключится и будет ожидать врагов, а когда они появятся, он проснется и направится к цели.
+
+&lt;color=#f5ffa2&gt;Тип:&lt;/color&gt; Боевой
+&lt;color=#f5ffa2&gt;Поиск врагов:&lt;/color&gt; Да
+&lt;color=#f5ffa2&gt;Режим сна:&lt;/color&gt; Да
+&lt;color=#f5ffa2&gt;Умная подзарядка:&lt;/color&gt; Нет</WVC_WaitEnemy.description>-->
+
+ <WVC_WorkAndWaitEnemy.label>Работа и ожидание</WVC_WorkAndWaitEnemy.label>-->
+ <WVC_WorkAndWaitEnemy.description>Механоиды, в зависимости от их типа, будут работать, и когда появляются враги, они бросят все и пойдут их уничтожать. Если у них нет задачи, они просто отключатся.
+
+&lt;color=#f5ffa2&gt;Тип:&lt;/color&gt; Боевой
+&lt;color=#f5ffa2&gt;Поиск врагов:&lt;/color&gt; Да
+&lt;color=#f5ffa2&gt;Режим сна:&lt;/color&gt; Да
+&lt;color=#f5ffa2&gt;Умная подзарядка:&lt;/color&gt; Да</WVC_WorkAndWaitEnemy.description>-->
+
+ <WVC_Ambush.label>Засада</WVC_Ambush.label>-->
+ <WVC_Ambush.description>Механоид выключается и ждет, пока враги подойдут ближе, затем атакует.
+
+&lt;color=#f5ffa2&gt;Тип:&lt;/color&gt; Засада
+&lt;color=#f5ffa2&gt;Поиск врагов:&lt;/color&gt; Нет
+&lt;color=#f5ffa2&gt;Режим сна:&lt;/color&gt; Да
+&lt;color=#f5ffa2&gt;Умная подзарядка:&lt;/color&gt; Нет</WVC_Ambush.description>-->
+
+
+  <!-- WORK -->
+
+ <WVC_WorkAndRecharge.label>Работа и подзарядка</WVC_WorkAndRecharge.label>-->
+ <WVC_WorkAndRecharge.description>Механоиды работают автономно в зависимости от его типа. Если механоид не может работать или выполнил всю работу, он выключается.
+
+&lt;color=#f5ffa2&gt;Тип:&lt;/color&gt; Работа
+&lt;color=#f5ffa2&gt;Поиск врагов:&lt;/color&gt; Нет
+&lt;color=#f5ffa2&gt;Режим сна:&lt;/color&gt; Нет
+&lt;color=#f5ffa2&gt;Умная подзарядка:&lt;/color&gt; Да</WVC_WorkAndRecharge.description>-->
+
+ <WVC_SafeWorkAndRecharge.label>Работа, если безопасно</WVC_SafeWorkAndRecharge.label>-->
+ <WVC_SafeWorkAndRecharge.description>Механоиды будут работать, но только до тех пор, пока на карте нет врагов. В случае опасности они будут пытаться уйти в &lt;color=#f5ffa2&gt;безопасное место&lt;/color&gt;.
+
+&lt;color=#f5ffa2&gt;Тип:&lt;/color&gt; Безопасный, работа
+&lt;color=#f5ffa2&gt;Поиск врагов:&lt;/color&gt; Да
+&lt;color=#f5ffa2&gt;Режим сна:&lt;/color&gt; Да
+&lt;color=#f5ffa2&gt;Умная подзарядка:&lt;/color&gt; Да</WVC_SafeWorkAndRecharge.description>-->
+
+
+  <!-- ESCORT -->
+
+ <WVC_WorkRechargeEscort.label>Работа, подзарядка и сопровождение</WVC_WorkRechargeEscort.label>-->
+ <WVC_WorkRechargeEscort.description>Механоиды будет сопровождать попечителя, если у него нет задания, а также будет заряжаться при необходимости.
+
+&lt;color=#f5ffa2&gt;Тип:&lt;/color&gt; Боевой
+&lt;color=#f5ffa2&gt;Поиск врагов:&lt;/color&gt; Нет
+&lt;color=#f5ffa2&gt;Режим сна:&lt;/color&gt; Нет
+&lt;color=#f5ffa2&gt;Умная подзарядка:&lt;/color&gt; Нет</WVC_WorkRechargeEscort.description>-->
+
+ <WVC_EscortIfEnemyWorkAndRecharge.label>Сопровождение, если есть враги, работа и подзарядка</WVC_EscortIfEnemyWorkAndRecharge.label>-->
+ <WVC_EscortIfEnemyWorkAndRecharge.description>Механоиды, независимо от их типа, будут сопровождать попечителя, когда в их зоне действия появляются враги. В противном случае, они будут работать.
+
+&lt;color=#f5ffa2&gt;Тип:&lt;/color&gt; Боевой
+&lt;color=#f5ffa2&gt;Поиск врагов:&lt;/color&gt; Да
+&lt;color=#f5ffa2&gt;Режим сна:&lt;/color&gt; Да
+&lt;color=#f5ffa2&gt;Умная подзарядка:&lt;/color&gt; Да</WVC_EscortIfEnemyWorkAndRecharge.description>-->
+
+ <WVC_EscortIfDraftedOrDowned.label>Сопровождение, если в боевом режиме или сражен</WVC_EscortIfDraftedOrDowned.label>-->
+ <WVC_EscortIfDraftedOrDowned.description>Механоиды, независимо от их типа, будут сопровождать попечителя, если он в боевом режиме или сражен.
+
+&lt;color=#f5ffa2&gt;Тип:&lt;/color&gt; Боевой
+&lt;color=#f5ffa2&gt;Поиск врагов:&lt;/color&gt; Да
+&lt;color=#f5ffa2&gt;Режим сна:&lt;/color&gt; Да	
+&lt;color=#f5ffa2&gt;Умная подзарядка:&lt;/color&gt; Да</WVC_EscortIfDraftedOrDowned.description>-->
+
+ <WVC_EscortIfEnemyOnMap.label>Сопровождение, если есть враги</WVC_EscortIfEnemyOnMap.label>-->
+ <WVC_EscortIfEnemyOnMap.description>Механоиды, независимо от их типа, будут сопровождать попечителя, но только если на карте есть враги. Когда врагов нет, механоиды выключаются.
+
+&lt;color=#f5ffa2&gt;Тип:&lt;/color&gt; Боевой
+&lt;color=#f5ffa2&gt;Поиск врагов:&lt;/color&gt; Да
+&lt;color=#f5ffa2&gt;Режим сна:&lt;/color&gt; Да	
+&lt;color=#f5ffa2&gt;Умная подзарядка:&lt;/color&gt; Да</WVC_EscortIfEnemyOnMap.description>-->
+
+ <WVC_EscaortAndRecharge.label>Сопровождение и подзарядка</WVC_EscaortAndRecharge.label>-->
+ <WVC_EscaortAndRecharge.description>Механоиды, независимо от их типа, будет сопровождать попечителя и, при необходимости, идти заряжаться.
+
+&lt;color=#f5ffa2&gt;Тип:&lt;/color&gt; Боевой
+&lt;color=#f5ffa2&gt;Поиск врагов:&lt;/color&gt; Нет
+&lt;color=#f5ffa2&gt;Режим сна:&lt;/color&gt; Нет
+&lt;color=#f5ffa2&gt;Умная подзарядка:&lt;/color&gt; Нет</WVC_EscaortAndRecharge.description>-->
+
+
+</LanguageData>

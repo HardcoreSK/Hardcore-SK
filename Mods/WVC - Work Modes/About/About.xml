@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<ModMetaData>
+	<name>WVC - Work Modes</name>
+	<author>Sergkart</author>
+	<url>https://steamcommunity.com/profiles/76561198019114858/myworkshopfiles/?appid=294100</url>
+	<modVersion>1.1.7</modVersion>
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>wvc.sergkart.biotech.MoreMechanoidsWorkModes</packageId>
+	<description>Warning: If you have the Odyssey DLC, the Harmony mod is required!
+
+Adds 10 new work mods for mechanoids:
+
+Find and destroy - Mechanoids, regardless of their type, will look for enemies and try to destroy them.
+
+Work and recharge - Work autonomously according to mechanoid type. If the mechanoid cannot work or it has done all the work it shuts down.
+
+Escort and recharge - The mechanoid, regardless of its type, will accompany the overseer and, if necessary, go to charge.
+
+Work, recharge and escort - The mechanoid will accompany the overseer if it does not have a job, and will also be charged if necessary.
+
+Wait enemy - The mechanoid will shutdown and wait for the enemy, and when it appears, it will wake up and head towards the target.
+
+Work and wait - Mechanoids, depending on the type, will work, and when an enemy appears, they will drop everything and go to destroy him. If they don't have a job, they'll just shutdown.
+
+Ambush - The mechanoid shutdown and waits for the enemy to approach it, then attacks.
+
+Defend yourself - Mechanoid, regardless of type, will attack enemies that get too close.
+
+Escort if enemy - Mechanoids, regardless of type, will accompany the overseer, but only if there is an enemy on the map. When there is no enemy, mechanoids shutdown.
+
+Work if safe - Mechanoids will work, but only as long as there are no enemies on the map. In case of danger, they will try to get to the safe spot.</description>
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+		</li>
+	</modDependencies>
+	<modDependenciesByVersion>
+		<v1.6>
+			<li>
+				<packageId>brrainz.harmony</packageId>
+				<displayName>Harmony</displayName>
+				<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+				<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+			</li>
+			<li>
+				<packageId>Ludeon.RimWorld.Biotech</packageId>
+				<displayName>Biotech</displayName>
+			</li>
+		</v1.6>
+	</modDependenciesByVersion>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+	</loadAfter>
+	<loadBefore>
+		<li>krkr.rocketman</li>
+	</loadBefore>
+	<incompatibleWith>
+		<li>wvc.sergkart.biotech.mechanoididleoptimization</li>
+	</incompatibleWith>
+</ModMetaData>
