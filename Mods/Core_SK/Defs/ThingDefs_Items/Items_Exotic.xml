@@ -1,239 +1,264 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="SK_ResourceVerbBase">
-		<defName>ThrumboHorn</defName>
-		<label>thrumbo horn</label>
-		<description>The horn from a previously living thrumbo. It's razor-sharp, very hard and priceless in most markets. This is a true trophy.</description>
-		<graphicData>
-			<texPath>Things/Item/Special/ThrumboHorn</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<equippedAngleOffset>-20</equippedAngleOffset>
-		<statBases>
-			<MarketValue>900</MarketValue>
-			<MaxHitPoints>150</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-			<DeteriorationRate>0.2</DeteriorationRate>
-			<Mass>50</Mass>
-			<Bulk>25</Bulk>
-		</statBases>
-		<techLevel>Neolithic</techLevel>
-		<resourceReadoutPriority>Middle</resourceReadoutPriority>
-		<stackLimit>25</stackLimit>
-		<thingCategories>
-			<li>ItemsMisc</li>
-		</thingCategories>
-		<tradeTags>
-			<li>Exotic</li>
-			<li>ExoticMisc</li>
-		</tradeTags>
-		<thingSetMakerTags>
-			<li>AnimalPart</li>
-		</thingSetMakerTags>
-		<relicChance>3</relicChance>	
-		<comps>
-			<li Class="CompProperties_Styleable"/>
-		</comps>
-		<weaponClasses>
-			<li>Melee</li>
-			<li>MeleePiercer</li>
-		</weaponClasses>
-		<tools>
-			<li Class="CombatExtended.ToolCE">
-				<label>handle</label>
-				<capacities>
-					<li>Poke</li>
-				</capacities>
-				<power>6</power>
-				<cooldownTime>1.4</cooldownTime>
-				<chanceFactor>0.3</chanceFactor>
-				<armorPenetrationBlunt>4.50</armorPenetrationBlunt>
-				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<label>point</label>
-				<capacities>
-					<li>Stab</li>
-				</capacities>
-				<power>15</power>
-				<cooldownTime>1.45</cooldownTime>
-				<chanceFactor>1.33</chanceFactor>
-				<armorPenetrationBlunt>8.37</armorPenetrationBlunt>
-				<armorPenetrationSharp>5.0</armorPenetrationSharp>
-				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
-			</li>
-		</tools>
-	</ThingDef>
+    <ThingDef ParentName="SK_ResourceVerbBase">
+        <defName>ThrumboHorn</defName>
+        <label>thrumbo horn</label>
+        <description>The horn from a previously living thrumbo. It's razor-sharp, very hard and priceless in most markets. This is a true trophy.</description>
+        <graphicData>
+            <texPath>Things/Item/Special/ThrumboHorn</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-20</equippedAngleOffset>
+        <statBases>
+            <MarketValue>900</MarketValue>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <DeteriorationRate>0.2</DeteriorationRate>
+            <Mass>50</Mass>
+            <Bulk>25</Bulk>
+        </statBases>
+        <techLevel>Neolithic</techLevel>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>25</stackLimit>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <tradeTags>
+            <li>Exotic</li>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>AnimalPart</li>
+        </thingSetMakerTags>
+        <relicChance>3</relicChance>
+        <comps>
+            <li Class="CompProperties_Styleable"/>
+        </comps>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleePiercer</li>
+        </weaponClasses>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>1.4</cooldownTime>
+                <chanceFactor>0.3</chanceFactor>
+                <armorPenetrationBlunt>4.50</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>15</power>
+                <cooldownTime>1.45</cooldownTime>
+                <chanceFactor>1.33</chanceFactor>
+                <armorPenetrationBlunt>8.37</armorPenetrationBlunt>
+                <armorPenetrationSharp>5.0</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+            </li>
+        </tools>
+    </ThingDef>
 
-	<ThingDef ParentName="SK_ResourceVerbBase">
-		<defName>ElephantTusk</defName>
-		<label>elephant tusk</label>
-		<description>An elephant's tusk. Very durable and valuable. Deadly but somewhat unwieldy as a weapon.</description>
-		<possessionCount>1</possessionCount>
-		<graphicData>
-			<texPath>Things/Item/Special/ElephantTusk</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<equippedAngleOffset>-20</equippedAngleOffset>
-		<statBases>
-			<MarketValue>450</MarketValue>
-			<MaxHitPoints>150</MaxHitPoints>
-			<Mass>40</Mass>
-			<Bulk>20</Bulk>
-			<Flammability>1.0</Flammability>
-			<DeteriorationRate>0.5</DeteriorationRate>
-		</statBases>
-		<generateCommonality>0.4</generateCommonality>
-		<resourceReadoutPriority>Middle</resourceReadoutPriority>
-		<stackLimit>25</stackLimit>
-		<thingCategories>
-			<li>ItemsMisc</li>
-		</thingCategories>
-		<tradeTags>
-			<li>Exotic</li>
-			<li>ExoticMisc</li>
-		</tradeTags>
-		<thingSetMakerTags>
-			<li>AnimalPart</li>
-		</thingSetMakerTags>
-		<relicChance>2</relicChance>	
-		<comps>
-			<li Class="CompProperties_Styleable"/>
-		</comps>
-		<weaponClasses>
-			<li>Melee</li>
-			<li>MeleePiercer</li>
-		</weaponClasses>
-		<tools>
-			<li Class="CombatExtended.ToolCE">
-				<label>handle</label>
-				<capacities>
-					<li>Poke</li>
-				</capacities>
-				<power>5</power>
-				<cooldownTime>1.4</cooldownTime>
-				<chanceFactor>0.3</chanceFactor>
-				<armorPenetrationBlunt>4.0</armorPenetrationBlunt>
-				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<label>point</label>
-				<capacities>
-					<li>Stab</li>
-				</capacities>
-				<power>14</power>
-				<cooldownTime>1.5</cooldownTime>
-				<chanceFactor>1.33</chanceFactor>
-				<armorPenetrationBlunt>7.43</armorPenetrationBlunt>
-				<armorPenetrationSharp>4.5</armorPenetrationSharp>
-				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
-			</li>
-		</tools>
-	</ThingDef>
+    <ThingDef ParentName="SK_ResourceVerbBase">
+        <defName>ElephantTusk</defName>
+        <label>elephant tusk</label>
+        <description>An elephant's tusk. Very durable and valuable. Deadly but somewhat unwieldy as a weapon.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Things/Item/Special/ElephantTusk</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-20</equippedAngleOffset>
+        <statBases>
+            <MarketValue>450</MarketValue>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>40</Mass>
+            <Bulk>20</Bulk>
+            <Flammability>1.0</Flammability>
+            <DeteriorationRate>0.5</DeteriorationRate>
+        </statBases>
+        <generateCommonality>0.4</generateCommonality>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>25</stackLimit>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <tradeTags>
+            <li>Exotic</li>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>AnimalPart</li>
+        </thingSetMakerTags>
+        <relicChance>2</relicChance>
+        <comps>
+            <li Class="CompProperties_Styleable"/>
+        </comps>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleePiercer</li>
+        </weaponClasses>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>1.4</cooldownTime>
+                <chanceFactor>0.3</chanceFactor>
+                <armorPenetrationBlunt>4.0</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>1.5</cooldownTime>
+                <chanceFactor>1.33</chanceFactor>
+                <armorPenetrationBlunt>7.43</armorPenetrationBlunt>
+                <armorPenetrationSharp>4.5</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+            </li>
+        </tools>
+    </ThingDef>
 
-	<ThingDef>
-		<defName>LivingFrost</defName>
-		<label>Living Frost</label>
-		<description>The frigid, throbbing heart of a thawed Kirin. It radiates frost and will gradually lower temperatures if kept in a room. It is prized by traders for its supposed medicinal values and uses in alchemy.</description>
-		<thingClass>ThingWithComps</thingClass>
-		<comps>
-			<li Class="SK.CompPropertiesSnow">
-				<compClass>SK.CompSnow</compClass>
-				<heatSuckMinTemperature>-10</heatSuckMinTemperature>
-				<ColdPerSecond>100</ColdPerSecond>
-				<snowRadius>2</snowRadius>
-				<snowDepth>.01</snowDepth>
-			</li>     
-			<li Class="CompProperties_Forbiddable"/>
+    <ThingDef>
+        <defName>LivingFrost</defName>
+        <label>Living Frost</label>
+        <description>The frigid, throbbing heart of a thawed Kirin. It radiates frost and will gradually lower temperatures if kept in a room. It is prized by traders for its supposed medicinal values and uses in alchemy.</description>
+        <thingClass>ThingWithComps</thingClass>
+        <comps>
+            <li Class="SK.CompPropertiesSnow">
+                <compClass>SK.CompSnow</compClass>
+                <heatSuckMinTemperature>-10</heatSuckMinTemperature>
+                <ColdPerSecond>100</ColdPerSecond>
+                <snowRadius>2</snowRadius>
+                <snowDepth>.01</snowDepth>
+            </li>
+            <li Class="CompProperties_Forbiddable"/>
 
-			<li Class="CompProperties_Glower">
-				<glowRadius>2</glowRadius>
-				<glowColor>(175,238,238,0)</glowColor>
-			</li>
-			<li Class="CompProperties_Lifespan">
-				<lifespanTicks>1000000</lifespanTicks>
-			</li>
-		</comps>
-		<tickerType>Normal</tickerType>
-		<category>Item</category>
-		<tradeTags>
-			<li>Exotic</li>
-		</tradeTags>
-		<thingCategories>
-			<li>BodyParts</li>
-		</thingCategories>
-		<resourceReadoutPriority>Middle</resourceReadoutPriority>
-		<useHitPoints>true</useHitPoints>
-		<selectable>true</selectable>
-		<altitudeLayer>Item</altitudeLayer>
-		<stackLimit>1</stackLimit>
-		<alwaysHaulable>true</alwaysHaulable>
-		<drawGUIOverlay>true</drawGUIOverlay>
-		<rotatable>false</rotatable>
-		<pathCost>15</pathCost>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Flammability>1</Flammability>
-			<DeteriorationRate>1</DeteriorationRate>
-			<MarketValue>1500</MarketValue>
-			<Bulk>7</Bulk>
-			<Mass>4</Mass>
-		</statBases>
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/LivingFrost</texPath>
-		</graphicData>
-	</ThingDef>
+            <li Class="CompProperties_Glower">
+                <glowRadius>2</glowRadius>
+                <glowColor>(175,238,238,0)</glowColor>
+            </li>
+            <li Class="CompProperties_Lifespan">
+                <lifespanTicks>1000000</lifespanTicks>
+            </li>
+        </comps>
+        <tickerType>Normal</tickerType>
+        <category>Item</category>
+        <tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <thingCategories>
+            <li>BodyParts</li>
+        </thingCategories>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <useHitPoints>true</useHitPoints>
+        <selectable>true</selectable>
+        <altitudeLayer>Item</altitudeLayer>
+        <stackLimit>1</stackLimit>
+        <alwaysHaulable>true</alwaysHaulable>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <rotatable>false</rotatable>
+        <pathCost>15</pathCost>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>1</Flammability>
+            <DeteriorationRate>1</DeteriorationRate>
+            <MarketValue>1500</MarketValue>
+            <Bulk>7</Bulk>
+            <Mass>4</Mass>
+        </statBases>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Item/LivingFrost</texPath>
+        </graphicData>
+    </ThingDef>
 
-	<ThingDef>
-		<defName>LivingFire</defName>
-		<label>Living Fire</label>
-		<description>The scorching, vibrating heart of an extinguished Feenix. It pulses with heat and will gradually raise temperatures if kept in a room. It is prized by traders for its supposed medicinal values and uses in alchemy.</description>
-		<thingClass>ThingWithComps</thingClass>
-		<comps>
-			<li Class="SK.CompProperties_HeatPusherFenix">
-				<heatPushMaxTemperature>100</heatPushMaxTemperature>
-				<heatPerSecond>50</heatPerSecond>
-			</li>
-			<li Class="CompProperties_Forbiddable"/>
-			<li Class="CompProperties_Glower">
-				<glowRadius>2</glowRadius>
-				<glowColor>(255,150,100,0)</glowColor>
-			</li>
-			<li Class="CompProperties_Lifespan">
-				<lifespanTicks>1000000</lifespanTicks>
-			</li>
-		</comps>
-		<tickerType>Normal</tickerType>
-		<category>Item</category>
-		<tradeTags>
-			<li>Exotic</li>
-		</tradeTags>
-		<thingCategories>
-			<li>BodyParts</li>
-		</thingCategories>
-		<resourceReadoutPriority>Middle</resourceReadoutPriority>
-		<useHitPoints>true</useHitPoints>
-		<selectable>true</selectable>
-		<altitudeLayer>Item</altitudeLayer>
-		<stackLimit>1</stackLimit>
-		<alwaysHaulable>true</alwaysHaulable>
-		<drawGUIOverlay>true</drawGUIOverlay>
-		<rotatable>false</rotatable>
-		<pathCost>15</pathCost>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Flammability>0</Flammability>
-			<DeteriorationRate>1</DeteriorationRate>
-			<MarketValue>1500</MarketValue>
-			<Bulk>7</Bulk>
-			<Mass>4</Mass>
-		</statBases>
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/LivingFire</texPath>
-		</graphicData>
-	</ThingDef>
+    <ThingDef>
+        <defName>LivingFire</defName>
+        <label>Living Fire</label>
+        <description>The scorching, vibrating heart of an extinguished Feenix. It pulses with heat and will gradually raise temperatures if kept in a room. It is prized by traders for its supposed medicinal values and uses in alchemy.</description>
+        <thingClass>ThingWithComps</thingClass>
+        <comps>
+            <li Class="SK.CompProperties_HeatPusherFenix">
+                <heatPushMaxTemperature>100</heatPushMaxTemperature>
+                <heatPerSecond>50</heatPerSecond>
+            </li>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>2</glowRadius>
+                <glowColor>(255,150,100,0)</glowColor>
+            </li>
+            <li Class="CompProperties_Lifespan">
+                <lifespanTicks>1000000</lifespanTicks>
+            </li>
+        </comps>
+        <tickerType>Normal</tickerType>
+        <category>Item</category>
+        <tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <thingCategories>
+            <li>BodyParts</li>
+        </thingCategories>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <useHitPoints>true</useHitPoints>
+        <selectable>true</selectable>
+        <altitudeLayer>Item</altitudeLayer>
+        <stackLimit>1</stackLimit>
+        <alwaysHaulable>true</alwaysHaulable>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <rotatable>false</rotatable>
+        <pathCost>15</pathCost>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1</DeteriorationRate>
+            <MarketValue>1500</MarketValue>
+            <Bulk>7</Bulk>
+            <Mass>4</Mass>
+        </statBases>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Item/LivingFire</texPath>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>WeatherControllerCore</defName>
+        <label>Weather controller core</label>
+        <description>An advanced device designed to controller the local weather. This is a jewel of technology for farming planets and a feared weapon on contested ones.</description>
+        <graphicData>
+            <texPath>Things/Item/Special/WeatherControllerCore</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>1</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>5000</MarketValue>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Mass>0.2</Mass>
+        </statBases>
+        <thingCategories>
+            <li>Items</li>
+        </thingCategories>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <tradeability>Sellable</tradeability>
+    </ThingDef>
 
 </Defs>

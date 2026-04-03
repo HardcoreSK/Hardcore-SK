@@ -174,6 +174,19 @@
 		</graphicData>
 	</ThingDef>
 
+    <ThingDef ParentName="StrikeIncomingBase">
+        <defName>MechanoidTerraformerIncoming</defName>
+        <label>Mechanoid terraformer (incoming)</label>
+        <thingClass>SK.Events.MechanoidTerraformerIncoming</thingClass>
+        <graphicData>
+            <texPath>Things/Special/MechanoidTerraformerIncoming</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <shaderType>CutoutFlying</shaderType>
+        </graphicData>
+        <size>(3,3)</size>
+        <altitudeLayer>MetaOverlays</altitudeLayer>
+    </ThingDef>
 
 	<ThingDef>
 		<defName>Thing_RazorSpawner</defName>
