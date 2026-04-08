@@ -812,9 +812,9 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="TableStonecutter"]</xpath>
         <value>
-            <label>hand cutting table</label>
+            <label>hand machining table</label>
             <thingClass>Building_WorkTable</thingClass>
-            <description>An unpowered work table equipped to process stone chunks into blocks, rubble or sand.</description>
+            <description>An unpowered work table equipped to process stone chunks into blocks, rubble or sand. Reinforced concrete is prepared here as well.</description>
             <graphicData>
                 <texPath>Things/Building/Production/StoneWorkBench/StoneWorkBench</texPath>
                 <graphicClass>Graphic_Multi</graphicClass>

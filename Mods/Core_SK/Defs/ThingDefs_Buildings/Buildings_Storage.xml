@@ -2110,7 +2110,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 	</AdaptiveStorage.GraphicsDef>
 	
 	<!--Meat Hook-->
-	<ThingDef ParentName="LWM_DeepStorage">
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<defName>SK_Meat_Hook</defName>
 		<label>Meat Hook</label>	
 		<description>A tall metal frame with several hooks hanging from chains.  A simple crank allows hoisting several hanging things into the air.  A way to store the dead bodies of fellow animals you have killed, before cutting them up and consuming their flesh.  You monster.
@@ -2148,6 +2148,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<building>
+			<maxItemsInCell>5</maxItemsInCell>
 			<preventDeteriorationOnTop>false</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>false</ignoreStoredThingsBeauty>
 			<fixedStorageSettings>
@@ -2172,7 +2173,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			</defaultStorageSettings>
 		</building>
 		<drawerType>MapMeshAndRealTime</drawerType>
-		<tickerType>Rare</tickerType>
+		<tickerType>Rare</tickerType><!--
 		<comps>
 			<li Class="RimFridge.CompProperties_SecondLayer">
 				<graphicData>
@@ -2185,27 +2186,121 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			</li>
 			<li Class="LWM.DeepStorage.Properties" >
 				<minNumberStacks>2</minNumberStacks>
-				<!-- minimum one in the air, one on the ground -->
+
 				<maxNumberStacks>10</maxNumberStacks>
-				<!-- todo? -->
 				<minTimeStoringTakes>5</minTimeStoringTakes>
 				<additionalTimeEachStack>4</additionalTimeEachStack>
-				<!-- More things on the hooks means more effort to get an empty hook -->
-				<!--<maxTotalMass>560</maxTotalMass>-->
-				<!-- <maxTotalMass>1120</maxTotalMass> -->
-				<!-- does it make sense to double it since it's 2x1 now?-->
-				<!-- Two Megatheria -->
-				<!--Fun fact: giant sloths apparently dug ancient caves. Giant caves.  As burrows.-->
-				<!--We only recently realized what these weird caves were.-->
 				<overlayType>CountOfStacksPerCell</overlayType>
 			</li>
-			<!--TOOD: <li><compClass>CompQuality</compClass></li> make this add storage capacity-->
-		</comps>
+		</comps>-->
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 		<researchPrerequisites Inherit="false">
 			<li>Storage_B3</li>
 		</researchPrerequisites>
 	</ThingDef>
+	
+    <AdaptiveStorage.GraphicsDef>
+		<defName>SK_Meat_HookASF</defName>
+		<targetDef>SK_Meat_Hook</targetDef>
+        <graphics>
+            <li>
+				<graphicData>
+					<texPath>Things/Building/Storage/Meathook/MeatHook</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(3.3,2.2)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0,0,0)</volume>
+					</shadowData>
+					<drawRotated>true</drawRotated>
+				</graphicData>
+				<graphicDatas>
+					<li>
+						<texPath>Things/Building/Storage/Meathook/MeatHook_Overlay</texPath>
+						<graphicClass>Graphic_Multi</graphicClass>
+						<shaderType>CutoutComplex</shaderType>
+						<drawSize>(3.3,2.2)</drawSize>
+						<drawRotated>true</drawRotated>
+						<renderQueue>2950</renderQueue>
+						<altitudeLayer>ItemImportant</altitudeLayer>
+						<drawOffset>(0,1.2,0)</drawOffset>
+					</li>
+				</graphicDatas>
+            </li>
+        </graphics>
+		<showContainedItems>true</showContainedItems>
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.35,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.3)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.3)</stackOffsetWest>
+							<drawOffset>(0.1,0,0.1)</drawOffset>
+							<drawOffsetEast>(-0.1,0.1,0.25)</drawOffsetEast>
+							<drawOffsetWest>(-0.1,0.1,0.25)</drawOffsetWest>
+							<drawScale>0.8</drawScale>
+							<rotation>90</rotation>
+						</r0>					
+					</rows>
+				</c0>
+				<c1>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.35,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.3)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.3)</stackOffsetWest>
+							<drawOffset>(-0.8,1.4,-0.15)</drawOffset>
+							<drawOffsetEast>(0.1,0.1,-0.8)</drawOffsetEast>
+							<drawOffsetWest>(0.1,0.1,-0.8)</drawOffsetWest>
+							<drawScale>0.8</drawScale>
+							<rotation>90</rotation>
+						</r0>
+					</rows>
+				</c1>
+			</columns>
+		</itemGraphics>
+		<!--<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast> (distance between horizontal,?,distance between vertical) -->
+		<!--<drawOffsetEast>(-0.15,2.05,0.45)</drawOffsetEast> (x -left & right, y - layer, z - up & down) -->
+		<!-- For double layer shelf
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.233,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.185)</stackOffsetWest>
+							<drawOffset>(0.09,2.05,0.45)</drawOffset>
+							<drawOffsetEast>(-0.15,2.05,0.45)</drawOffsetEast>
+							<drawOffsetWest>(0,2.05,0.65)</drawOffsetWest>
+							<drawScale>0.9</drawScale>
+							<rotation>0</rotation>
+						</r0>					
+					</rows>
+				</c0>
+				<c1>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.233,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.185)</stackOffsetWest>
+							<drawOffset>(-0.91,0,-0.10)</drawOffset>
+							<drawOffsetEast>(0.1,0.1,-0.95)</drawOffsetEast>
+							<drawOffsetWest>(0,0.1,-0.95)</drawOffsetWest>
+							<drawScale>0.9</drawScale>
+							<rotation>0</rotation>
+						</r0>
+					</rows>
+				</c1>
+			</columns>
+		</itemGraphics>-->
+	</AdaptiveStorage.GraphicsDef>
 	
 	<!--Feeding Bowl -->
 	<ThingDef ParentName="FurnitureBase">
