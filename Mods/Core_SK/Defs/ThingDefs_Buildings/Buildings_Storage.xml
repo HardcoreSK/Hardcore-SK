@@ -1787,7 +1787,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<label>Bin rack</label>
 		<description>A cabinet of bins with lids. They slide out and open with ease and are labelled for optimum organization. Lightning fast.</description>
 		<graphicData>
-			<texPath>Things/Building/Storage/ShelfBins</texPath>
+			<texPath>Things/Building/Storage/ShelfBins/ShelfBins</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1.4,1.4)</drawSize>
 			<drawRotated>true</drawRotated>
@@ -1858,7 +1858,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
         <graphics>
             <li>
                 <graphicData>
-					<texPath>Things/Building/Storage/ShelfBins</texPath>
+					<texPath>Things/Building/Storage/ShelfBins/ShelfBins</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(1.4,1.4)</drawSize>
 					<drawRotated>true</drawRotated>
@@ -2450,18 +2450,21 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 	</AdaptiveStorage.GraphicsDef>
 	
 	<!--Hamper-->
-	<ThingDef ParentName="LWM_DeepStorage">
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<defName>FabricHamperSingle</defName>
 		<label>Hamper</label>
 		<description>This is a smaller hamper made out of fabric with a lid for protecting the contents. On the glitterworlds, it's used for collecting dirty laundry, but out here on the Rim, it's more commonly used by farmers and gatherers to drop off their harvests.</description>
 		<graphicData>
-			<texPath>Things/Building/Storage/Hamper</texPath>
+			<texPath>Things/Building/Storage/Hamper/Hamper_Full</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawRotated>false</drawRotated>
-			<drawSize>(1.6,1.6)</drawSize>
+			<drawSize>(1.2,1.2)</drawSize>
+			<shadowData>
+				<volume>(0.7, 0.3, 0.7)</volume>
+				<offset>(0, 0, -0.24)</offset>
+			</shadowData>
 		</graphicData>
 		<size>(1,1)</size>
-		<castEdgeShadows>true</castEdgeShadows>
 		<statBases>
 			<MaxHitPoints>30</MaxHitPoints>
 			<WorkToBuild>200</WorkToBuild>
@@ -2480,6 +2483,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		</costList>
 		<!--Wish I could do steel OR wood-->
 		<building>
+			<maxItemsInCell>6</maxItemsInCell>
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
 			<fixedStorageSettings>
 				<filter>
@@ -2504,7 +2508,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 					</thingDefs>
 				</filter>
 			</fixedStorageSettings>
-		</building>
+		</building><!--
 		<comps>
 			<li Class="LWM.DeepStorage.Properties">
 				<maxNumberStacks>6</maxNumberStacks>
@@ -2513,12 +2517,79 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 				<showContents>false</showContents>
 				<overlayType>SumOfItemsPerCell</overlayType>
 			</li>
-		</comps>
+		</comps>-->
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 		<researchPrerequisites>
 			<li>Storage_B3</li>
 		</researchPrerequisites>
 	</ThingDef>
+	
+    <AdaptiveStorage.GraphicsDef>
+		<defName>FabricHamperSingleASF</defName>
+		<targetDef>FabricHamperSingle</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/Hamper/Hamper_Empty</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawRotated>false</drawRotated>
+					<drawSize>(1.2,1.2)</drawSize>
+					<shadowData>
+						<volume>(0.7, 0.3, 0.7)</volume>
+						<offset>(0, 0, -0.24)</offset>
+					</shadowData>
+                </graphicData>
+				<graphicDatas>
+					<li>
+						<texPath>Things/Building/Storage/Hamper/Hamper_Top</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+						<drawRotated>false</drawRotated>
+						<drawSize>(1.2,1.2)</drawSize>
+						<renderQueue>2950</renderQueue>
+						<altitudeLayer>ItemImportant</altitudeLayer>
+						<drawOffset>(0,1.2,0)</drawOffset>
+						<shadowData>
+							<volume>(0.7, 0.3, 0.7)</volume>
+							<offset>(0, 0, -0.24)</offset>
+						</shadowData>
+					</li>
+				</graphicDatas>
+            </li>
+			<li>
+				<graphicData>
+					<texPath>Things/Building/Storage/Hamper/Hamper_Full</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawRotated>false</drawRotated>
+					<drawSize>(1.2,1.2)</drawSize>
+					<shadowData>
+						<volume>(0.7, 0.3, 0.7)</volume>
+						<offset>(0, 0, -0.24)</offset>
+					</shadowData>
+				</graphicData>
+				<minimumStackCount>6</minimumStackCount>
+				<showContainedItems>false</showContainedItems>
+			</li>
+        </graphics>
+		<showContainedItems>true</showContainedItems>
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Circle</stackBehaviour>
+							<stackOffset>(0,0,0.5)</stackOffset>
+							<drawOffset>(0,0,-0.02)</drawOffset>
+							<!--<drawScale>0.9</drawScale>-->
+							<stackOffsetFactor>0.3</stackOffsetFactor>
+							<drawScale>0.7</drawScale>
+						</r0>					
+					</rows>
+				</c0>
+			</columns>
+		</itemGraphics>
+		<!--<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast> (distance between horizontal,?,distance between vertical) -->
+		<!--<drawOffsetEast>(-0.15,2.05,0.45)</drawOffsetEast> (x -left & right, y - layer, z - up & down) -->
+	</AdaptiveStorage.GraphicsDef>
 	
 	<!--Hayloft-->
 	<ThingDef ParentName="LWM_DeepStorage">
