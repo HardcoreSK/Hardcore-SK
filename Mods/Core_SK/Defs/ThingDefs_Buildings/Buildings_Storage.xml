@@ -2968,15 +2968,16 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 	</AdaptiveStorage.GraphicsDef>
 
 	<!--Small Clothing Rack-->
-	<!-- DefOverwrite
-	<ThingDef ParentName="LWM_DeepStorage">
-		<defName>ShelfSmall</defName>
-		<label>Small Clothing Rack</label>
-		<description>A rack for storing clothing for easy, quick access and a tidy room. Is not protected from the elements. Hold considerably less than the larger version, but good for displaying.</description>
+<!--
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
+		<defName>ClothingRack_Small</defName>
+		<label>Clothing Drawer</label>
+		<description>A rack for storing clothing for easy, quick access and a tidy room. Is protected from the elements. Hold considerably less than the larger version, but good for hiding contents.</description>
 		<graphicData>
-			<texPath>Things/Building/Storage/ClothingRack1x1</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.8,1.8)</drawSize>
+			<texPath>Things/Building/Storage/Dresser/dresser</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.2,2.2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
 		<castEdgeShadows>true</castEdgeShadows>
@@ -3000,6 +3001,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<building>
+			<maxItemsInCell>6</maxItemsInCell>
 			<fixedStorageSettings>
 				<filter>
 					<categories>
@@ -3015,23 +3017,40 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 				</filter>
 			</defaultStorageSettings>
 		</building>
-		<comps>
-			<li Class="LWM.DeepStorage.Properties">
-				<maxNumberStacks>6</maxNumberStacks>
-				<minNumberStacks>4</minNumberStacks>
-				<minTimeStoringTakes>35</minTimeStoringTakes>
-				<additionalTimeEachStack>10</additionalTimeEachStack>
-				<overlayType>CountOfStacksPerCell</overlayType>
-			</li>
-		</comps>
 		<researchPrerequisites>
 			<li>Storage_B4</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
-	-->
+
+    <AdaptiveStorage.GraphicsDef>
+		<defName>ClothingRack_SmallASF</defName>
+		<targetDef>ClothingRack_Small</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/Dresser/dresser</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>(2.2,2.2)</drawSize>
+					<drawRotated>false</drawRotated>
+					<shadowData>
+						<volume>(0.7, 0.5, 0.7)</volume>
+					</shadowData>
+					<damageData>
+						<cornerTL>Damage/Corner</cornerTL>
+						<cornerTR>Damage/Corner</cornerTR>
+						<cornerBL>Damage/Corner</cornerBL>
+						<cornerBR>Damage/Corner</cornerBR>
+					</damageData>
+                </graphicData>
+            </li>
+        </graphics>
+		<showContainedItems>false</showContainedItems>
+	</AdaptiveStorage.GraphicsDef>
+-->
 	<!--Root Cellar- outdoors only, diggable terrain-->
-	<ThingDef ParentName="LWM_DeepStorage_nomini">
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<defName>RootCellar</defName>
 		<label>root cellar</label>
 		<description>A cellar dug into the ground to keep produce cool and dry. Reduces spoilage by 40%. Slow to store and retrieve items, since it takes a bit of time to "root" around in there. Can store up to 27 items but takes of 3x3 space.</description>
@@ -3065,6 +3084,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			<Mass>20</Mass>
 		</statBases>
 		<building>
+			<maxItemsInCell>3</maxItemsInCell>
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
 			<fixedStorageSettings>
@@ -3079,14 +3099,14 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<comps>
 			<li Class="SK.CompProperties_RotModified">
 				<rotmodifier>0.6</rotmodifier>
-			</li>
+			</li><!--
 			<li Class="LWM.DeepStorage.Properties" >
 				<maxNumberStacks>3</maxNumberStacks>
 				<minTimeStoringTakes>60</minTimeStoringTakes>
 				<additionalTimeEachStack>30</additionalTimeEachStack>
 				<overlayType>SumOfItemsPerCell</overlayType>
 				<showContents>false</showContents>
-			</li>
+			</li>-->
 			<li Class="SK.CompProperties_ContainerBase"/>
 		</comps>
 		<terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
@@ -3095,6 +3115,23 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			<li>Storage_B2</li>
 		</researchPrerequisites>
 	</ThingDef>
+	
+    <AdaptiveStorage.GraphicsDef>
+		<defName>RootCellarASF</defName>
+		<targetDef>RootCellar</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/RootCellar</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawRotated>false</drawRotated>
+					<drawSize>(3,3)</drawSize>
+                </graphicData>
+            </li>
+        </graphics>
+		<showContainedItems>false</showContainedItems>
+	</AdaptiveStorage.GraphicsDef>
 	
 	<!--Bar Shelf-->
 	<ThingDef ParentName="LWM_DeepStorage">
@@ -3931,14 +3968,14 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 	</ThingDef>
 	
 	<!--Commode / Wardrobe-->
-	<ThingDef ParentName="LWM_DeepStorage">
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<defName>Commode</defName>
 		<label>wardrobe</label>
 		<description>A dresser for colonists to store and organize their clothes.</description>
 		<graphicData>
-			<texPath>Things/Building/Storage/dresser</texPath>
+			<texPath>Things/Building/Storage/Dresser/dresser</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2.8,2.8)</drawSize>
+			<drawSize>(3.2,3.2)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 			<shadowData>
 				<volume>(1.7, 0.5, 0.7)</volume>
@@ -3974,6 +4011,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<size>(2,1)</size>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<building>
+			<maxItemsInCell>8</maxItemsInCell>
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
 			<fixedStorageSettings>
@@ -3983,14 +4021,14 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 					</categories>
 				</filter>
 			</fixedStorageSettings>
-		</building>
+		</building><!--
 		<comps>
 			<li Class="LWM.DeepStorage.Properties">
 				<maxNumberStacks>8</maxNumberStacks>
 				<minTimeStoringTakes>60</minTimeStoringTakes>
 				<showContents>false</showContents>
 				<overlayType>SumOfItemsPerCell</overlayType>
-			</li>
+			</li>-->
 			<!-- There are already 5 other nightstand type buildings-->
 			<!--<li Class="SK.CompProperties_ContainerBase">
 			</li>
@@ -4000,8 +4038,8 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 					<Comfort>0.1</Comfort>
 				</statOffsets>
 				<maxSimultaneous>1</maxSimultaneous>
-			</li>-->
-		</comps>
+			</li>
+		</comps>-->
 		<!--<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>-->
@@ -4010,5 +4048,30 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
+
+    <AdaptiveStorage.GraphicsDef>
+		<defName>CommodeASF</defName>
+		<targetDef>Commode</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/dresser</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(3.2,3.2)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(1.7, 0.5, 0.7)</volume>
+					</shadowData>
+					<damageData>
+						<cornerTL>Damage/Corner</cornerTL>
+						<cornerTR>Damage/Corner</cornerTR>
+						<cornerBL>Damage/Corner</cornerBL>
+						<cornerBR>Damage/Corner</cornerBR>
+					</damageData>
+                </graphicData>
+            </li>
+        </graphics>
+		<showContainedItems>false</showContainedItems>
+	</AdaptiveStorage.GraphicsDef>
 
 </Defs>
