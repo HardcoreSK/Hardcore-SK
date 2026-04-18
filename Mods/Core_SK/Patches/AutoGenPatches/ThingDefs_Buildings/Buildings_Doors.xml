@@ -18,7 +18,7 @@
         <value>
             <label>rustic door</label>
             <graphicData>
-                <texPath>Things/Building/Doors/DoorRustic/DoorRustic</texPath>
+                <texPath>Things/Building/Doors/DoorRustic/DoorRustic_Mover</texPath>
                 <graphicClass>Graphic_Single</graphicClass>
                 <shaderType>Cutout</shaderType>
             </graphicData>
@@ -40,6 +40,12 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="Autodoor"]</xpath>
         <value>
+            <graphicData>
+                <texPath>Things/Building/Doors/AutoDoor/AutoDoor_Mover</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>Cutout</shaderType>
+            </graphicData>
+            <uiIconPath>Things/Building/Doors/AutoDoor/AutoDoor_MenuIcon</uiIconPath>
             <statBases>
                 <MaxHitPoints>250</MaxHitPoints>
                 <WorkToBuild>800</WorkToBuild>
@@ -84,6 +90,12 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="AnimalFlap"]</xpath>
         <value>
+            <graphicData>
+                <texPath>Things/Building/Doors/AnimalFlap/AnimalFlap_Mover</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>Cutout</shaderType>
+            </graphicData>
+            <uiIconPath>Things/Building/Doors/AnimalFlap/AnimalFlap_MenuIcon</uiIconPath>
             <costStuffCount>40</costStuffCount>
             <costList>
                 <ComponentMedieval>3</ComponentMedieval>

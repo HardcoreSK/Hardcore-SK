@@ -14,6 +14,13 @@
 	<!-- Bases -->
 
 	<ThingDef ParentName="DoorBase" Name="DoorGlassBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Building/Doors/DoorGlass/DoorGlass_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+			<!--<shaderType>Transparent</shaderType>-->
+		</graphicData>
+		<uiIconPath>Things/Building/Doors/DoorGlass/DoorGlass_MenuIcon</uiIconPath>
 		<stuffCategories Inherit="False">
 			<li>Glass</li>
 		</stuffCategories>
@@ -21,15 +28,16 @@
 			<MaxHitPoints>150</MaxHitPoints>
 			<Flammability>0</Flammability>
 		</statBases>
+		<blockLight>false</blockLight>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Structure</designationCategory>
 		<holdsRoof>true</holdsRoof>
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>
-		<blockLight>false</blockLight>
 		<building>
 			<paintable>false</paintable>
 		</building>
+		<!--filthLeaving>BrokenGlass</filthLeaving-->
 	</ThingDef>
 	
 	<!-- Ordinary Doors -->
@@ -43,15 +51,16 @@
 			<WorkToBuild>800</WorkToBuild>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Building/Door/DoorSimple_Mover</texPath>
+			<texPath>Things/Building/Doors/DoorMetal/DoorMetal_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
 			<damageData>
 				<!--  no damage marks because they don't move with the door
-        <rect>(0,0.12,1,0.76)</rect>-->
+                <rect>(0,0.12,1,0.76)</rect>-->
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Door/DoorSimple_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Doors/DoorMetal/DoorMetal_MenuIcon</uiIconPath>
 		<stuffCategories Inherit="false">
 			<li>Metallic</li>
 		</stuffCategories>
@@ -126,9 +135,10 @@
 		<graphicData>
 			<texPath>Things/Building/Doors/DoorBlast/DoorBlast_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
 			<damageData>
 				<!--  no damage marks because they don't move with the door
-        <rect>(0,0.12,1,0.76)</rect>-->
+                <rect>(0,0.12,1,0.76)</rect>-->
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
@@ -157,13 +167,6 @@
 		<defName>DoorGlass</defName>
 		<label>glass door</label>
 		<description>Divides rooms. Allows light to pass through.</description>
-		<blockLight>false</blockLight>
-		<graphicData>
-			<texPath>Things/Building/Doors/DoorGlass/DoorGlass_Mover</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>Transparent</shaderType>
-		</graphicData>
-		<uiIconPath>Things/Building/Doors/DoorGlass/DoorGlass_Icon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>320</MaxHitPoints>
 			<MarketValue>10</MarketValue>
@@ -171,14 +174,10 @@
 			<Flammability>0</Flammability>
 			<Beauty>1</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Glass</li>
-		</stuffCategories>
 		<costStuffCount>15</costStuffCount>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
-		<!--filthLeaving>BrokenGlass</filthLeaving-->
 		<researchPrerequisites>
 			<li>Construction_B3</li>
 		</researchPrerequisites>
@@ -188,13 +187,6 @@
 		<defName>AutoDoorGlass</defName>
 		<label>glass autodoor</label>
 		<description>Divides rooms. Powered operation allows people to move through the door without slowing down. Allows light to pass through.</description>
-		<blockLight>false</blockLight>
-		<graphicData>
-			<texPath>Things/Building/Doors/DoorGlass/DoorGlass_Mover</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>Transparent</shaderType>
-		</graphicData>
-		<uiIconPath>Things/Building/Doors/DoorGlass/DoorGlass_Icon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>320</MaxHitPoints>
 			<MarketValue>10</MarketValue>
@@ -202,9 +194,6 @@
 			<Flammability>0</Flammability>
 			<Beauty>1</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Glass</li>
-		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
@@ -218,7 +207,6 @@
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
-		<!--filthLeaving>BrokenGlass</filthLeaving-->
 		<researchPrerequisites>
 			<li>Autodoors</li>
 		</researchPrerequisites>

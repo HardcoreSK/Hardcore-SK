@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+    <!-- CE не отключаем, не проверяем -->
     <Operation Class="PatchOperationSequence">
         <operations>
-            <!-- CE -->
             <li Class="SK.PatchOperationReplaceExtended">
                 <xpath>Defs/ThingDef[defName="AmmoBench"]</xpath>
                 <value>

@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-    <Operation Class="PatchOperationSequence">
-        <operations>
-            <li Class="SK.PatchOperationReplaceExtended">
-                <xpath>Defs/ThingDef[defName="PrimitiveWell"]</xpath>
-                <value>
-                    <graphicData>
-                        <texPath>Things/Building/Misc/PrimitiveWell/PrimitiveWell</texPath>
-                        <graphicClass>Graphic_Multi</graphicClass>
-                        <drawSize>(3,3)</drawSize>
-                        <shaderType>CutoutComplex</shaderType>
-                        <drawRotated>true</drawRotated>
-                    </graphicData>
-                    <size>(2,2)</size>
-                    <rotatable>true</rotatable>
-                </value>
-            </li>
-        </operations>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Dubs Bad Hygiene</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName="PrimitiveWell"]</xpath>
+                    <value>
+                        <graphicData>
+                            <texPath>Things/Building/Misc/PrimitiveWell/PrimitiveWell</texPath>
+                            <graphicClass>Graphic_Multi</graphicClass>
+                            <drawSize>(3,3)</drawSize>
+                            <shaderType>CutoutComplex</shaderType>
+                            <drawRotated>true</drawRotated>
+                        </graphicData>
+                        <size>(2,2)</size>
+                        <rotatable>true</rotatable>
+                    </value>
+                </li>
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName="ToiletStallDoor"]</xpath>
+                    <value>
+                        <graphicData>
+                            <texPath>Things/Building/Doors/StallDoor/StallDoor_Mover</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <shaderType>Cutout</shaderType>
+                        </graphicData>
+                        <uiIconPath>Things/Building/Doors/StallDoor/StallDoor_MenuIcon</uiIconPath>
+                    </value>
+                </li>
+            </operations>
+        </match>
     </Operation>
 </Patch>
