@@ -25,6 +25,10 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="WaterproofConduit"]</xpath>
         <value>
+            <graphicData Merge="True">
+                <texPath>Things/Building/Linked/WaterproofConduit_Atlas</texPath>
+            </graphicData>
+            <uiIconPath>Things/Building/Linked/WaterproofConduit_MenuIcon</uiIconPath>
             <costList>
                 <Wire>2</Wire>
             </costList>

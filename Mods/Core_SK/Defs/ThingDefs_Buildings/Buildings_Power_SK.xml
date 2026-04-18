@@ -37,7 +37,7 @@
 		<label>heavy power conduit</label>
 		<description>A set of heavy electrical cables for moving power around. They are very strong and non-flammable.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/PowerConduit_Atlas</texPath>
+			<texPath>Things/Building/Linked/HeavyPowerConduit_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>Transmitter</linkType>
 			<linkFlags>
@@ -47,7 +47,7 @@
 				<rect>(0,0.35,1,0.3)</rect>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Linked/PowerConduit_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Linked/HeavyPowerConduit_MenuIcon</uiIconPath>
 		<building>
 			<isPowerConduit>true</isPowerConduit>
 			<ai_chillDestination>false</ai_chillDestination>
