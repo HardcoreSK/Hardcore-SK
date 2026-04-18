@@ -75,11 +75,12 @@
 		<description>A tailor's loom that is used to spin raw materials into usable textiles. Requires power.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Building/Production/Loom</texPath>
+			<texPath>Things/Building/Production/Loom/Loom</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2.33,1.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>(3,3)</drawSize>
 			<shadowData>
-				<volume>(1.7, 0.5, 0.7)</volume>
+				<volume>(1.7, 0.4, 1.7)</volume>
 				<offset>(0,0,0)</offset>
 			</shadowData>
 			<damageData>
@@ -107,7 +108,7 @@
 			<Cleanliness>-3</Cleanliness>
 			<Mass>100</Mass>
 		</statBases>
-		<size>(2,1)</size>
+        <size>(2,2)</size>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<inspectorTabs>
