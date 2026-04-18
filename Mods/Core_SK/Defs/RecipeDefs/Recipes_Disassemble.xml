@@ -105,6 +105,9 @@
         <workSkillLearnFactor>0.8</workSkillLearnFactor>
         <researchPrerequisite>Machining</researchPrerequisite>
         <defaultIngredientFilter>
+            <specialFiltersToDisallow MayRequire="xeonovadan.rimworldfavourites">
+                <li>RimworldFavourites_AllowFavourited</li>
+            </specialFiltersToDisallow>
             <categories>
                 <li>WeaponsRanged</li>
             </categories>
