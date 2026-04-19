@@ -17,7 +17,7 @@
 		<graphicData>
 			<texPath>Things/Building/Doors/DoorGlass/DoorGlass_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
 			<!--<shaderType>Transparent</shaderType>-->
 		</graphicData>
 		<uiIconPath>Things/Building/Doors/DoorGlass/DoorGlass_MenuIcon</uiIconPath>
@@ -41,6 +41,37 @@
 	</ThingDef>
 	
 	<!-- Ordinary Doors -->
+    
+    <ThingDef ParentName="DoorBase">
+		<defName>PrimitiveDoor</defName>
+		<label>primitive door</label>
+		<description>Divides rooms. Simple doors must be manually opened, which slows people down. Fast to open, but very fragile and a bit ugly.</description>
+		<statBases>
+			<MaxHitPoints>35</MaxHitPoints>
+			<WorkToBuild>150</WorkToBuild>
+            <DoorOpenSpeed>1.2</DoorOpenSpeed>
+            <Beauty>-3</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Building/Doors/DoorPrimitive/DoorPrimitive_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<!--  no damage marks because they don't move with the door
+                <rect>(0,0.12,1,0.76)</rect>-->
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Doors/DoorPrimitive/DoorPrimitive_MenuIcon</uiIconPath>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+        <holdsRoof>false</holdsRoof>
+		<stuffCategories IsNull="True" />
+		<costList>
+			<Kindling>10</Kindling>
+			<Hay>10</Hay>
+		</costList>
+        <constructionSkillPrerequisite IsNull="True" />
+	</ThingDef>
 
 	<ThingDef ParentName="DoorBase">
 		<defName>MDoor</defName>
@@ -53,7 +84,7 @@
 		<graphicData>
 			<texPath>Things/Building/Doors/DoorMetal/DoorMetal_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<!--  no damage marks because they don't move with the door
                 <rect>(0,0.12,1,0.76)</rect>-->
@@ -123,7 +154,7 @@
 			<MaxHitPoints>450</MaxHitPoints>
 			<WorkToBuild>1400</WorkToBuild>
 		</statBases>
-		<stuffCategories>
+		<stuffCategories Inherit="False">
 			<li>RuggedMetallic</li>
 		</stuffCategories>
 		<costStuffCount>60</costStuffCount>
@@ -135,7 +166,7 @@
 		<graphicData>
 			<texPath>Things/Building/Doors/DoorBlast/DoorBlast_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<!--  no damage marks because they don't move with the door
                 <rect>(0,0.12,1,0.76)</rect>-->

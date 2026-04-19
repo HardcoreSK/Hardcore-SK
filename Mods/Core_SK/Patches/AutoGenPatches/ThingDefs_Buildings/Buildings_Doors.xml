@@ -20,7 +20,7 @@
             <graphicData>
                 <texPath>Things/Building/Doors/DoorRustic/DoorRustic_Mover</texPath>
                 <graphicClass>Graphic_Single</graphicClass>
-                <shaderType>Cutout</shaderType>
+                <shaderType>CutoutComplex</shaderType>
             </graphicData>
             <uiIconPath>Things/Building/Doors/DoorRustic/DoorRustic_MenuIcon</uiIconPath>
             <statBases>
@@ -43,7 +43,7 @@
             <graphicData>
                 <texPath>Things/Building/Doors/AutoDoor/AutoDoor_Mover</texPath>
                 <graphicClass>Graphic_Single</graphicClass>
-                <shaderType>Cutout</shaderType>
+                <shaderType>CutoutComplex</shaderType>
             </graphicData>
             <uiIconPath>Things/Building/Doors/AutoDoor/AutoDoor_MenuIcon</uiIconPath>
             <statBases>
@@ -93,7 +93,7 @@
             <graphicData>
                 <texPath>Things/Building/Doors/AnimalFlap/AnimalFlap_Mover</texPath>
                 <graphicClass>Graphic_Single</graphicClass>
-                <shaderType>Cutout</shaderType>
+                <shaderType>CutoutComplex</shaderType>
             </graphicData>
             <uiIconPath>Things/Building/Doors/AnimalFlap/AnimalFlap_MenuIcon</uiIconPath>
             <costStuffCount>40</costStuffCount>
@@ -119,6 +119,17 @@
                 <Gold>25</Gold>
                 <ComponentMedieval>4</ComponentMedieval>
             </costList>
+            <building Merge="True">
+                <doorSupportGraphic>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>(3,2)</drawSize>
+                </doorSupportGraphic>
+                <doorTopGraphic>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>(3,2)</drawSize>
+                </doorTopGraphic>
+            </building>
+            <uiOrder>2014</uiOrder>
             <researchPrerequisites>
                 <li>Construction_B1</li>
             </researchPrerequisites>
