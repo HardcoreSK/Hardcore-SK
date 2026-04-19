@@ -6,7 +6,7 @@
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Sawmills</defName>
 		<label>sawmill</label>
-		<description>Workbench with saw for cutting logs into planks and kindling..</description>
+		<description>Workbench with saw for cutting logs into planks and kindling.</description>
 		<defNames>
 			<li>TableSawmillHand</li>
 			<li>TableSawmillElectric</li>
@@ -36,6 +36,11 @@
 		<defName>SubCategory_Machining</defName>
 		<label>stonecutting</label>
 		<description>Worktable primarily used with the rocks, stone chunks, rubble or sand.</description>
+        <graphicData>
+            <texPath>Things/Building/Production/StoneWorkBench/StoneWorkBench_north</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(138,133,135)</color>
+        </graphicData>
 		<defNames>
 			<li>TableStonecutterNeolithic</li>
 			<li>TableStonecutter</li>
@@ -99,6 +104,11 @@
 		<defName>SubCategory_Mining</defName>
 		<label>mining</label>
 		<description>Accessories for mineral product mining.</description>
+        <graphicData>
+            <texPath>Things/Building/Production/MinerExtractor/mining_off</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(138,133,135)</color>
+        </graphicData>
 		<defNames>
 			<li MayRequire="ogliss.thewhitecrayon.quarry">QRY_MiniQuarry</li>
 			<li MayRequire="ogliss.thewhitecrayon.quarry">QRY_MediQuarry</li>
@@ -117,6 +127,11 @@
 		<defName>SubCategory_Sewing</defName>
 		<label>sewing</label>
 		<description>Worktables for crafting various apparel stuff.</description>
+        <graphicData>
+            <texPath>Things/Building/Production/TableTailorHand/TableTailorHand_north</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(138,133,135)</color>
+        </graphicData>
 		<defNames>
 			<li>LeatherworkerTable</li>
 			<li>HandTailoringBench</li>
@@ -133,6 +148,11 @@
 		<defName>SubCategory_CraftWeapons</defName>
 		<label>weapon crafts</label>
 		<description>A workbenches with crafting weapons and ammo.</description>
+        <graphicData>
+            <texPath>Things/Building/Production/WeaponCraftingTable/WeaponCraftingTable_north</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(138,133,135)</color>
+        </graphicData>
 		<defNames>
 			<li>CraftingSpot</li>
 			<li>WeaponCraftingWorkTable</li>

@@ -7,6 +7,11 @@
 		<defName>SubCategory_ButcherTable</defName>
 		<label>butchering</label>
 		<description>A table for butchering dead creatures into pieces of raw meat.</description>
+        <graphicData>
+            <texPath>Things/Building/ProductionFood/CuttingTable/CuttingTable_MenuIcon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(133,97,67)</color>
+        </graphicData>
 		<defNames>
 			<li>ButcherSpot</li>
 			<li>TableButcher</li>
@@ -24,6 +29,11 @@
 		<defName>SubCategory_Stove</defName>
 		<label>stoves</label>
 		<description>Stoves for preparing foods.</description>
+        <graphicData>
+            <texPath>Things/Building/ProductionFood/Grill/Grill_north</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(138,133,135)</color>
+        </graphicData>
 		<defNames>
 			<li>OpenHearth</li>
 			<li>TableGrill</li>
@@ -44,10 +54,10 @@
 		<label>food processing</label>
 		<description>Various tables for processing food for further preparation or storage.</description>
 		<defNames>
-			<li>Canningstove</li>
 			<li>GrindStone</li>
-			<li>MillElectric</li>
 			<li>SK_Windmill</li>
+			<li>MillElectric</li>
+			<li>Canningstove</li>
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
@@ -150,6 +160,11 @@
 		<defName>SubCategory_Hydroponics</defName>
 		<label>hydroponics</label>
 		<description>A hydroponic basin can grow plants quickly.</description>
+        <graphicData>
+            <texPath>Things/Building/ProductionFood/HydroponicsBox/HydroponicsBoxIcon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(133,97,67)</color>
+        </graphicData>
 		<defNames>
 			<li>PrimitiveHydroponic</li>
 			<li>HydroponicsBasin</li>

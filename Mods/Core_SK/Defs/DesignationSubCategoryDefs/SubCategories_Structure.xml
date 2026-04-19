@@ -7,11 +7,17 @@
 		<defName>SubCategory_Doors</defName>
 		<label>Doors</label>
 		<description>Simple doors that allow you to control access between different parts of your colony.</description>
+        <graphicData>
+            <texPath>Things/Building/Doors/DoorRustic/DoorRustic_MenuIcon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(133,97,67)</color>
+        </graphicData>
 		<defNames>
+			<li>PrimitiveDoor</li>
 			<li>Door</li>
+			<li>AnimalFlap</li>
 			<li>MDoor</li>
 			<li>DoorGlass</li>
-			<li>AnimalFlap</li>
 			<li>OrnateDoor</li>
 		</defNames>
 		<designationCategory>Structure</designationCategory>
