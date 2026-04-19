@@ -113,6 +113,7 @@
                 <volume>(0.5, 0.5, 0.5)</volume>
             </shadowData>
         </graphicData>
+        <uiIconScale>0.7</uiIconScale>
         <stuffCategories>
             <li>Stony</li>
             <li>Bricks</li>
@@ -1256,7 +1257,7 @@
         <graphicData>
             <texPath>Things/Building/ProductionFood/AlcoholBarrel/AlcoholBarrel</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(1.0,1.0)</drawSize>
+            <drawSize>(3,3)</drawSize>
             <shaderType>CutoutComplex</shaderType>
             <shadowData>
                 <volume>(0.8, 0.5, 0.8)</volume>
@@ -1266,6 +1267,7 @@
                 <rect>(0.05,0.1,0.9,0.9)</rect>
             </damageData>
         </graphicData>
+        <uiIconScale>0.7</uiIconScale>
         <minifiedDef>MinifiedThing</minifiedDef>
         <thingCategories>
             <li>BuildingsProduction</li>
