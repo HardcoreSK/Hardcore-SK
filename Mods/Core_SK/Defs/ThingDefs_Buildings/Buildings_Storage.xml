@@ -833,7 +833,6 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<uiIconPath>Things/Building/Storage/WallShelvesClean/WallShelvesClean_ico</uiIconPath>
 		<altitudeLayer>Projectile</altitudeLayer>
 		<fillPercent>0</fillPercent>
-		<castEdgeShadows>true</castEdgeShadows>
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
@@ -873,7 +872,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 				</filter>
 			</fixedStorageSettings>
 		</building>
-		<staticSunShadowHeight>0.9</staticSunShadowHeight><!--
+		<!--<staticSunShadowHeight>0.9</staticSunShadowHeight>
 		<comps>
 			<li Class="LWM.DeepStorage.Properties">
 				<maxNumberStacks>4</maxNumberStacks>
@@ -3134,21 +3133,19 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 	</AdaptiveStorage.GraphicsDef>
 	
 	<!--Bar Shelf-->
-	<ThingDef ParentName="LWM_DeepStorage">
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<defName>BarShelf</defName>
 		<label>Mounted Bar Shelf</label>
 		<description>Shelves attached to a wall for storing bottles and jars. Perfect for that crampt space behind a bar.</description>
 		<thingClass>Building_Storage</thingClass>
 		<altitudeLayer>Projectile</altitudeLayer>
 		<graphicData>
-			<texPath>Things/Building/Storage/LicquorShelves</texPath>
+			<texPath>Things/Building/Storage/BarShelvesClean/BarShelvesClean</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(2.1,2.1)</drawSize>
+			<drawSize>(1.8,1.8)</drawSize>
 		</graphicData>
-		<uiIconPath>Things/Building/Storage/LicquorShelves_ico</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarShelvesClean/BarShelvesClean_ico</uiIconPath>
 		<fillPercent>0</fillPercent>
-		<castEdgeShadows>true</castEdgeShadows>
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
@@ -3169,6 +3166,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<size>(1,1)</size>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<building>
+			<maxItemsInCell>6</maxItemsInCell>
 			<preventDeteriorationOnTop>false</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>false</ignoreStoredThingsBeauty>
 			<defaultStorageSettings>
@@ -3188,10 +3186,13 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 						<li>HealrootTincture</li>
 						<li>Beer</li>
 					</thingDefs>
+					<disallowedCategories>
+						<li>Alcohol_Crates</li>
+					</disallowedCategories>
 				</filter>
 			</fixedStorageSettings>
 		</building>
-		<staticSunShadowHeight>0.9</staticSunShadowHeight>
+		<!--<staticSunShadowHeight>0.9</staticSunShadowHeight>
 		<comps>
 			<li Class="LWM.DeepStorage.Properties">
 				<maxNumberStacks>6</maxNumberStacks>
@@ -3200,8 +3201,9 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 				<overlayType>SumOfItemsPerCell</overlayType>
 				<showContents>false</showContents>
 			</li>
-		</comps>
+		</comps>-->
 		<pathCost>0</pathCost>
+		<passability>Standable</passability>
 		<!-- Pawns can walk past it without it being in the way-->
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 		<researchPrerequisites>
@@ -3211,6 +3213,54 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			<li>SK.PlaceWorker_WallAttachment</li>
 		</placeWorkers>
 	</ThingDef>
+
+    <AdaptiveStorage.GraphicsDef>
+		<defName>BarShelfASF</defName>
+		<targetDef>BarShelf</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/BarShelvesClean/BarShelvesClean</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.8,1.8)</drawSize>
+                </graphicData>
+				<graphicDatas>
+					<li>
+						<texPath>Things/Building/Storage/BarShelvesClean/BarShelvesClean_Top</texPath>
+						<graphicClass>Graphic_Multi</graphicClass>
+						<drawSize>(1.8,1.8)</drawSize>
+						<renderQueue>2950</renderQueue>
+						<altitudeLayer>ItemImportant</altitudeLayer>
+						<drawOffset>(0,1.25,0)</drawOffset>
+						<drawOffsetSouth>(0,1.45,0)</drawOffsetSouth>
+					</li>
+				</graphicDatas>
+            </li>
+        </graphics>
+		<showContainedItems>true</showContainedItems>
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.13,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.1)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.1)</stackOffsetWest>
+							<drawOffsetNorth>(-0.23,1.6,-0.37)</drawOffsetNorth>
+							<drawOffsetSouth>(-0.23,1.7,0.72)</drawOffsetSouth>
+							<drawOffsetEast>(-0.52,1.6,-0.06)</drawOffsetEast>
+							<drawOffsetWest>(0.52,1.6,-0.06)</drawOffsetWest>
+							<drawScale>0.3</drawScale>
+							<rotation>0</rotation>
+						</r0>					
+					</rows>
+				</c0>
+			</columns>
+		</itemGraphics>
+		<!--<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast> (distance between horizontal,?,distance between vertical) -->
+		<!--<drawOffsetEast>(-0.15,2.05,0.45)</drawOffsetEast> (x -left & right, y - layer, z - up & down) -->
+	</AdaptiveStorage.GraphicsDef>
 
 	<!-- SPECIALIZED STORAGE - Protected/Outdoors -->
 	<!--Sack-->
