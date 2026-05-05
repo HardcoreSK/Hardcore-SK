@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--___________________ElectricDryingRack_____________________-->
+    <RecipeDef ParentName="GlitterpediaModExtBase" Name="UFDryingIndustrialBase" Abstract="True">
+		<recipeUsers>
+			<li>ElectricDryingRack</li>
+		</recipeUsers>
+        <graphicSuffix>_on</graphicSuffix>
+		<!-- RecipeDef_UF fields -->
+		<speedBelowSafe>1</speedBelowSafe>
+		<speedAboveSafe>1</speedAboveSafe>
+		<sunFactor>
+			<min>1</min>
+			<max>1</max>
+		</sunFactor>
+		<rainFactor>
+			<min>1</min>
+			<max>1</max>
+		</rainFactor>
+		<snowFactor>
+			<min>1</min>
+			<max>1</max>
+		</snowFactor>
+		<windFactor>
+			<min>1</min>
+			<max>1</max>
+		</windFactor>
+	</RecipeDef>
+    
+	<RecipeDef ParentName="UFDryingIndustrialBase" Name="Make_JerkyIndustrialBase" Abstract="True">
+		<fixedIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>SaltedMeat</li>
+				<li>Tofu</li>
+				<li>soylentgreen</li>
+			</disallowedThingDefs>
+		</fixedIngredientFilter>
+		<processDays>1</processDays>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_JerkyIndustrialBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_JerkyIndustrial_x1</defName>
+		<label>make jerky</label>
+		<description>Make jerky meat. Takes 1 day to make.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealJerky>10</MealJerky>
+		</products>
+		<slotsRequired>1</slotsRequired>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_JerkyIndustrialBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_JerkyIndustrial_x5</defName>
+		<label>make jerky x5</label>
+		<description>Make jerky meat x5. Takes 1 day to make.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealJerky>50</MealJerky>
+		</products>
+		<slotsRequired>5</slotsRequired>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_JerkyIndustrialBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_JerkyIndustrial_x10</defName>
+		<label>make jerky x10</label>
+		<description>Make jerky meat x10. Takes 1 day to make.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealJerky>100</MealJerky>
+		</products>
+		<slotsRequired>10</slotsRequired>
+	</RecipeDef>
+
+
+	<!-- ### Tobacco ### -->
+	<RecipeDef ParentName="UFDryingIndustrialBase" Name="Make_TobaccoIndustrialBase" Abstract="True">
+		<processDays>1</processDays>
+		<!--<graphicSuffix>_tobacco</graphicSuffix>-->
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_TobaccoIndustrialBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_TobaccoIndustrial_x1</defName>
+		<label>make dried tobacco</label>
+		<description>Make dried tobacco . Takes 1 day to make.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawTobacco</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<DriedLeavesTobacco>5</DriedLeavesTobacco>
+		</products>
+		<slotsRequired>1</slotsRequired>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_TobaccoIndustrialBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_TobaccoIndustrial_x5</defName>
+		<label>make dried tobacco x5</label>
+		<description>Make dried tobacco x5. Takes 1 day to make.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawTobacco</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<products>
+			<DriedLeavesTobacco>25</DriedLeavesTobacco>
+		</products>
+		<slotsRequired>5</slotsRequired>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_TobaccoIndustrialBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_TobaccoIndustrial_x10</defName>
+		<label>make dried tobacco x10</label>
+		<description>Make dried tobacco x10. Takes 1 day to make.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawTobacco</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<products>
+			<DriedLeavesTobacco>50</DriedLeavesTobacco>
+		</products>
+		<slotsRequired>10</slotsRequired>
+	</RecipeDef>
+
+	<!-- ### Smokeleaf ### -->
+	<RecipeDef ParentName="UFDryingIndustrialBase" Name="Make_SmokeleafIndustrialBase" Abstract="True">
+		<processDays>2</processDays>
+		<!--<graphicSuffix>_smokeleaf</graphicSuffix>-->
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_SmokeleafIndustrialBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_SmokeleafIndustrial_x1</defName>
+		<label>make dried smokeleaf</label>
+		<description>Make dried smokeleaf. Takes 2 days to make.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<DriedLeavesSmokeleaf>5</DriedLeavesSmokeleaf>
+		</products>
+		<slotsRequired>1</slotsRequired>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_SmokeleafIndustrialBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_SmokeleafIndustrial_x5</defName>
+		<label>make dried smokeleaf x5</label>
+		<description>Make dried smokeleaf x5. Takes 2 days to make.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<products>
+			<DriedLeavesSmokeleaf>25</DriedLeavesSmokeleaf>
+		</products>
+		<slotsRequired>5</slotsRequired>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_SmokeleafIndustrialBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_SmokeleafIndustrial_x10</defName>
+		<label>make dried smokeleaf x10</label>
+		<description>Make dried smokeleaf x10. Takes 2 days to make.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<products>
+			<DriedLeavesSmokeleaf>50</DriedLeavesSmokeleaf>
+		</products>
+		<slotsRequired>10</slotsRequired>
+	</RecipeDef>
+
+	<!-- ### DriedFruit ### -->
+	<RecipeDef ParentName="UFDryingIndustrialBase" Name="Make_DriedFruitIndustrialBase" Abstract="True">
+		<fixedIngredientFilter>
+			<categories>
+				<li>FruitFoodRaw</li>
+			</categories>
+		</fixedIngredientFilter>
+		<processDays>1</processDays>
+		<!--<graphicSuffix>_driedfruit</graphicSuffix>-->
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_DriedFruitIndustrialBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_DriedFruitIndustrial_x1</defName>
+		<label>make dried fruit</label>
+		<description>Make dried fruit. Takes 1 day to make.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FruitFoodRaw</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<driedfruit>5</driedfruit>
+		</products>
+		<slotsRequired>1</slotsRequired>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_DriedFruitIndustrialBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_DriedFruitIndustrial_x5</defName>
+		<label>make dried fruit x5</label>
+		<description>Make dried fruit x5. Takes 1 day to make.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FruitFoodRaw</li>
+					</categories>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<products>
+			<driedfruit>25</driedfruit>
+		</products>
+		<slotsRequired>5</slotsRequired>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_DriedFruitIndustrialBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_DriedFruitIndustrial_x10</defName>
+		<label>make dried fruit x10</label>
+		<description>Make dried fruit x10. Takes 1 day to make.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FruitFoodRaw</li>
+					</categories>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<products>
+			<driedfruit>50</driedfruit>
+		</products>
+		<slotsRequired>10</slotsRequired>
+	</RecipeDef>
+
+	<!-- ### Coffee beans ### -->
+	<RecipeDef ParentName="UFDryingIndustrialBase" Name="Make_CoffeeBeansIndustrialBase" Abstract="True">
+		<processDays>3</processDays>
+		<!--<graphicSuffix>_coffeebeans</graphicSuffix>-->
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_CoffeeBeansIndustrialBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_CoffeeBeansIndustrial_x1</defName>
+		<label>process coffee beans</label>
+		<description>process coffee beans from berries. Pulp, ferment and dry. Takes 3 days to make.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCoffee</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<CoffeeBeans>5</CoffeeBeans>
+		</products>
+		<slotsRequired>1</slotsRequired>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_CoffeeBeansIndustrialBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_CoffeeBeansIndustrial_x5</defName>
+		<label>process coffee beans x5</label>
+		<description>process coffee beans x5 from berries. Pulp, ferment and dry. Takes 3 days to make.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCoffee</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<products>
+			<CoffeeBeans>25</CoffeeBeans>
+		</products>
+		<slotsRequired>5</slotsRequired>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_CoffeeBeansIndustrialBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_CoffeeBeansIndustrial_x10</defName>
+		<label>process coffee beans x10</label>
+		<description>process coffee beans x10 from berries. Pulp, ferment and dry. Takes 3 days to make.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCoffee</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<products>
+			<CoffeeBeans>50</CoffeeBeans>
+		</products>
+		<slotsRequired>10</slotsRequired>
+	</RecipeDef>
+
+</Defs>

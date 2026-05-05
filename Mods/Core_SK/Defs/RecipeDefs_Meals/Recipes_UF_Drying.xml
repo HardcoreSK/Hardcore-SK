@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--___________________JerkyRack_____________________-->
+	<RecipeDef ParentName="GlitterpediaModExtBase" Name="Make_JerkyBase" Abstract="True">
+		<fixedIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>SaltedMeat</li>
+				<li>Tofu</li>
+				<li>soylentgreen</li>
+			</disallowedThingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>JerkyRack</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<temperatureSafe>
+			<min>10</min>
+			<max>55</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>25</min>
+			<max>40</max>
+		</temperatureIdeal>
+		<processDays>2</processDays>
+		<speedBelowSafe>0.6</speedBelowSafe>
+		<speedAboveSafe>1</speedAboveSafe>
+		<sunFactor>
+			<min>0.75</min>
+			<max>1.2</max>
+		</sunFactor>
+		<rainFactor>
+			<min>1</min>
+			<max>0</max>
+		</rainFactor>
+		<snowFactor>
+			<min>1</min>
+			<max>0</max>
+		</snowFactor>
+		<windFactor>
+			<min>1</min>
+			<max>1.2</max>
+		</windFactor>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_JerkyBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Jerky</defName>
+		<label>make jerky</label>
+		<description>Make jerky meat. Takes 2 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealJerky>10</MealJerky>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_JerkyBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Jerky_x5</defName>
+		<label>make jerky x5</label>
+		<description>Make jerky meat x5. Takes 2 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealJerky>50</MealJerky>
+		</products>
+
+		<!-- RecipeDef_UF fields -->
+		<slotsRequired>5</slotsRequired>
+	</RecipeDef>
+
+	<!--___________________DryingRack_____________________-->
+	<!-- ### Tobacco ### -->
+	<RecipeDef ParentName="GlitterpediaModExtBase" Name="Make_TobaccoBase" Abstract="True">
+		<recipeUsers>
+			<li>DryingRack</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<slotsRequired>2</slotsRequired>
+		<temperatureSafe>
+			<min>0</min>
+			<max>65</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>30</min>
+			<max>50</max>
+		</temperatureIdeal>
+		<processDays>3</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.8</speedAboveSafe>
+		<sunFactor>
+			<min>0.75</min>
+			<max>1.2</max>
+		</sunFactor>
+		<rainFactor>
+			<min>1</min>
+			<max>0</max>
+		</rainFactor>
+		<snowFactor>
+			<min>1</min>
+			<max>0</max>
+		</snowFactor>
+		<windFactor>
+			<min>1</min>
+			<max>1.2</max>
+		</windFactor>
+		<graphicSuffix>_tobacco</graphicSuffix>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_TobaccoBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Tobacco</defName>
+		<label>make dried tobacco</label>
+		<description>Make dried tobacco. Takes 3 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawTobacco</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<DriedLeavesTobacco>5</DriedLeavesTobacco>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_TobaccoBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Tobacco_x5</defName>
+		<label>make dried tobacco x5</label>
+		<description>Make dried tobacco x5. Takes 3 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawTobacco</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<products>
+			<DriedLeavesTobacco>25</DriedLeavesTobacco>
+		</products>
+
+		<!-- RecipeDef_UF fields -->
+		<slotsRequired>5</slotsRequired>
+	</RecipeDef>
+
+	<!-- ### Smokeleaf ### -->
+	<RecipeDef ParentName="GlitterpediaModExtBase" Name="Make_SmokeleafBase" Abstract="True">
+		<recipeUsers>
+			<li>DryingRack</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<slotsRequired>2</slotsRequired>
+		<temperatureSafe>
+			<min>0</min>
+			<max>65</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>30</min>
+			<max>50</max>
+		</temperatureIdeal>
+		<processDays>4</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.8</speedAboveSafe>
+		<sunFactor>
+			<min>0.75</min>
+			<max>1.2</max>
+		</sunFactor>
+		<rainFactor>
+			<min>1</min>
+			<max>0</max>
+		</rainFactor>
+		<snowFactor>
+			<min>1</min>
+			<max>0</max>
+		</snowFactor>
+		<windFactor>
+			<min>1</min>
+			<max>1.2</max>
+		</windFactor>
+		<graphicSuffix>_smokeleaf</graphicSuffix>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_SmokeleafBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Smokeleaf</defName>
+		<label>make dried smokeleaf</label>
+		<description>Make dried smokeleaf. Takes 4 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<DriedLeavesSmokeleaf>5</DriedLeavesSmokeleaf>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_SmokeleafBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Smokeleaf_x5</defName>
+		<label>make dried smokeleaf x5</label>
+		<description>Make dried smokeleaf x5. Takes 4 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<products>
+			<DriedLeavesSmokeleaf>25</DriedLeavesSmokeleaf>
+		</products>
+
+		<!-- RecipeDef_UF fields -->
+		<slotsRequired>5</slotsRequired>
+	</RecipeDef>
+
+	<!-- ### DriedFruit ### -->
+	<RecipeDef ParentName="GlitterpediaModExtBase" Name="Make_DriedFruitBase" Abstract="True">
+		<fixedIngredientFilter>
+			<categories>
+				<li>FruitFoodRaw</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>DryingRack</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<temperatureSafe>
+			<min>5</min>
+			<max>80</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>18</min>
+			<max>50</max>
+		</temperatureIdeal>
+		<processDays>2</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.8</speedAboveSafe>
+		<sunFactor>
+			<min>0.75</min>
+			<max>1.2</max>
+		</sunFactor>
+		<rainFactor>
+			<min>1</min>
+			<max>0</max>
+		</rainFactor>
+		<snowFactor>
+			<min>1</min>
+			<max>0</max>
+		</snowFactor>
+		<windFactor>
+			<min>1</min>
+			<max>1.2</max>
+		</windFactor>
+		<graphicSuffix>_smokeleaf</graphicSuffix>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_DriedFruitBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_DriedFruit</defName>
+		<label>make dried fruit</label>
+		<description>Make dried fruit. Takes 2 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FruitFoodRaw</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<driedfruit>5</driedfruit>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_DriedFruitBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_DriedFruit_x5</defName>
+		<label>make dried fruit x5</label>
+		<description>Make dried fruit x5. Takes 2 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FruitFoodRaw</li>
+					</categories>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<products>
+			<driedfruit>25</driedfruit>
+		</products>
+
+		<!-- RecipeDef_UF fields -->
+		<slotsRequired>5</slotsRequired>
+	</RecipeDef>
+
+	<!-- ### Coffee beans ### -->
+	<RecipeDef ParentName="GlitterpediaModExtBase" Name="Make_CoffeeBeansBase" Abstract="True">
+		<recipeUsers>
+			<li>DryingRack</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<slotsRequired>2</slotsRequired>
+		<temperatureSafe>
+			<min>15</min>
+			<max>65</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>25</min>
+			<max>50</max>
+		</temperatureIdeal>
+		<processDays>5</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.8</speedAboveSafe>
+		<sunFactor>
+			<min>0.75</min>
+			<max>1.2</max>
+		</sunFactor>
+		<rainFactor>
+			<min>1</min>
+			<max>0</max>
+		</rainFactor>
+		<snowFactor>
+			<min>1</min>
+			<max>0</max>
+		</snowFactor>
+		<windFactor>
+			<min>1</min>
+			<max>1.2</max>
+		</windFactor>
+		<graphicSuffix>_CoffeeBeans</graphicSuffix>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_CoffeeBeansBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_CoffeeBeans</defName>
+		<label>process coffee beans</label>
+		<description>process coffee beans from berries. Pulp, ferment and dry. Takes 5 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCoffee</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<CoffeeBeans>5</CoffeeBeans>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_CoffeeBeansBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_CoffeeBeans_x5</defName>
+		<label>process coffee beans x5</label>
+		<description>process coffee beans x5 from berries. Pulp, ferment and dry. Takes 5 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCoffee</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<products>
+			<CoffeeBeans>25</CoffeeBeans>
+		</products>
+
+		<!-- RecipeDef_UF fields -->
+		<slotsRequired>5</slotsRequired>
+	</RecipeDef>
+
+</Defs>
