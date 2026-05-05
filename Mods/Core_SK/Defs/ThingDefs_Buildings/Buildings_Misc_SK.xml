@@ -741,66 +741,6 @@
 	</ThingDef>
 
 	<ThingDef>
-		<defName>Building_Shield</defName>
-		<label>orbital power shield</label>
-		<description>Automatically switches on to protect from the orbital bombardment; tremendous power drain and considerable heating when operational.</description>
-		<tickerType>Normal</tickerType>
-		<category>Building</category>
-		<thingClass>SK.Events.OrbitalPowerShield</thingClass>
-		<graphicData>
-			<texPath>Things/Building/OrbitalShield/Shield</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(8,8)</drawSize>
-		</graphicData>
-		<drawerType>MapMeshAndRealTime</drawerType>
-		<repairEffect>Repair</repairEffect>
-		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
-		<castEdgeShadows>false</castEdgeShadows>
-		<size>(8,8)</size>
-		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>Impassable</passability>
-		<selectable>True</selectable>
-		<rotatable>False</rotatable>
-		<fillPercent>0.30</fillPercent>
-		<pathCost>50</pathCost>
-		<statBases>
-			<MaxHitPoints>500</MaxHitPoints>
-			<WorkToBuild>35000</WorkToBuild>
-			<Flammability>1.0</Flammability>
-			<Beauty>-30</Beauty>
-		</statBases>
-		<stuffCategories>
-			<li>SolidMetallic</li>
-		</stuffCategories>
-		<costStuffCount>700</costStuffCount>
-		<costList>
-			<ComponentSpacer>40</ComponentSpacer>
-			<MagneticMaterial>30</MagneticMaterial>
-			<AdvMechanism>15</AdvMechanism>
-			<Microchips>5</Microchips>
-		</costList>
-		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>15000</basePowerConsumption>
-				<shortCircuitInRain>false</shortCircuitInRain>
-				<transmitsPower>true</transmitsPower>
-			</li>
-			<li Class="CompProperties_Flickable" />
-			<li Class="SK.Events.CompProperties_Shield"/>
-			<li Class="CompProperties_Breakdownable"/>
-		</comps>
-		<researchPrerequisites>
-			<li>Fortification_E2</li>
-		</researchPrerequisites>
-		<designationCategory>Security</designationCategory>
-		<constructionSkillPrerequisite>19</constructionSkillPrerequisite>
-	</ThingDef>
-
-	<ThingDef>
 		<defName>BombardmentBeacon</defName>
 		<label>bombardment beacon</label>
 		<description>A beacon. When a battleship receives this signal, it will destroy the nearest enemy base.\n\nTo use this item you need to infiltrate an enemy base and place beacon near buildings. After a short delay a bombardment will begin and settlement will be destroyed once you leave the map. Can't be used on home map.</description>
