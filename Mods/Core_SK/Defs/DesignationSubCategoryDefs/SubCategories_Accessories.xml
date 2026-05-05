@@ -20,6 +20,9 @@
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
 		<order>10</order>
+		<types>
+			<li>Lights</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
@@ -35,6 +38,9 @@
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
 		<order>11</order>
+		<types>
+			<li>Lights</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -52,6 +58,9 @@
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
 		<order>20</order>
+		<types>
+			<li>Lights</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -68,6 +77,9 @@
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
 		<order>30</order>
+		<types>
+			<li>Lights</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<!--<ArchitectSense.DesignationSubCategoryDef>
@@ -94,6 +106,9 @@
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
 		<order>40</order>
+		<types>
+			<li>Rugs</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -109,6 +124,9 @@
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
 		<order>50</order>
+		<types>
+			<li>Rugs</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -126,6 +144,9 @@
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
 		<order>60</order>
+		<types>
+			<li>Rugs</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -144,6 +165,9 @@
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
 		<order>70</order>
+		<types>
+			<li>Rugs</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -162,6 +186,9 @@
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
 		<order>80</order>
+		<types>
+			<li>Rugs</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -181,6 +208,9 @@
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
 		<order>90</order>
+		<types>
+			<li>Rugs</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -198,6 +228,9 @@
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
 		<order>100</order>
+		<types>
+			<li>Rugs</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -215,6 +248,57 @@
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
 		<order>110</order>
+		<types>
+			<li>Decorations</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_BordersWarningRibbon</defName>
+		<label>Warning border</label>
+		<description>Warning border.</description>
+		<defNames>
+			<li>WarningRibbonLine</li>
+			<li>WarningRibbonCorner</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>120</order>
+		<types>
+			<li>Decorations</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_BordersStoneBlocks</defName>
+		<label>Stone blocks border</label>
+		<description>Stone blocks border.</description>
+		<defNames>
+			<li>StoneBlocksLine</li>
+			<li>StoneBlocksCorner</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>130</order>
+		<types>
+			<li>Decorations</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_BordersPebbles</defName>
+		<label>Pebbles border</label>
+		<description>Pebbles border.</description>
+		<defNames>
+			<li>PebblesLine</li>
+			<li>PebblesCorner</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>140</order>
+		<types>
+			<li>Decorations</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 </Defs>

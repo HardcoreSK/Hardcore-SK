@@ -15,6 +15,10 @@
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
 		<order>1</order>
+		<types>
+			<li>Bathroom</li>
+			<li>Water Supply</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
@@ -42,6 +46,9 @@
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
 		<order>3</order>
+		<types>
+			<li>Water Supply</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
@@ -58,6 +65,9 @@
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
 		<order>4</order>
+		<types>
+			<li>Water Supply</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
@@ -73,6 +83,9 @@
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
 		<order>5</order>
+		<types>
+			<li>Water Supply</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
@@ -86,6 +99,9 @@
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
 		<order>6</order>
+		<types>
+			<li>Water Supply</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
@@ -101,6 +117,9 @@
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
 		<order>7</order>
+		<types>
+			<li>Water Supply</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
@@ -125,6 +144,9 @@
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
 		<order>9</order>
+		<types>
+			<li>Bathroom</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
@@ -140,6 +162,9 @@
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
 		<order>10</order>
+		<types>
+			<li>Bathroom</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
@@ -154,6 +179,9 @@
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
 		<order>11</order>
+		<types>
+			<li>Bathroom</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
@@ -166,6 +194,9 @@
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
 		<order>12</order>
+		<types>
+			<li>Bathroom</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
@@ -178,6 +209,9 @@
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
 		<order>13</order>
+		<types>
+			<li>Relax</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
@@ -191,6 +225,9 @@
 		</defNames>
 		<designationCategory>Hygiene</designationCategory>
 		<order>14</order>
+		<types>
+			<li>Relax</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
@@ -204,16 +241,5 @@
 		<designationCategory>Hygiene</designationCategory>
 		<order>15</order>
 	</ArchitectSense.DesignationSubCategoryDef>
-
-	<!--<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
-		<defName>SubCategory_HygieneMisc</defName>
-		<label>Misc</label>
-		<description>Buildings that dont fit other areas.</description>
-		<defNames>
-			<li>WaterTrough</li>
-			<li>PetWaterBowl</li>
-		</defNames>
-		<designationCategory>Hygiene</designationCategory>
-	</ArchitectSense.DesignationSubCategoryDef>-->
 
 </Defs>

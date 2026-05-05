@@ -41,6 +41,9 @@
 		<designationCategory>Temperature</designationCategory>
 		<debug>false</debug>
 		<order>30</order>
+		<types>
+			<li>Heaters</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
@@ -54,6 +57,9 @@
 		</defNames>
 		<designationCategory>Temperature</designationCategory>
 		<order>40</order>
+		<types>
+			<li>Heaters</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -69,6 +75,9 @@
 		<designationCategory>Temperature</designationCategory>
 		<debug>false</debug>
 		<order>50</order>
+		<types>
+			<li>Heaters</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -83,6 +92,9 @@
 		<designationCategory>Temperature</designationCategory>
 		<debug>false</debug>
 		<order>60</order>
+		<types>
+			<li>Coolers</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -98,12 +110,15 @@
 		<designationCategory>Temperature</designationCategory>
 		<debug>false</debug>
 		<order>70</order>
+		<types>
+			<li>Coolers</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
     
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
 		<defName>SubCategory_Airconditon</defName>
 		<label>Cooling Systems</label>
-		<description>Air Conditon and freezers.</description>
+		<description>Air conditioners and freezers.</description>
 		<defNames>
 			<li>AirconIndoorUnit</li>
 			<li>FreezerUnit</li>
@@ -111,6 +126,24 @@
 		</defNames>
 		<designationCategory>Temperature</designationCategory>
 		<order>80</order>
+		<types>
+			<li>Coolers</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_TemperatureDevices</defName>
+		<label>Special devices</label>
+		<description>Special devices.</description>
+		<defNames>
+			<li>TemperatureGauge</li>
+			<li MayRequire="ludeon.rimworld.anomaly">AtmosphericHeater</li>
+		</defNames>
+		<designationCategory>Temperature</designationCategory>
+		<order>90</order>
+		<types>
+			<li>Coolers</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 </Defs>

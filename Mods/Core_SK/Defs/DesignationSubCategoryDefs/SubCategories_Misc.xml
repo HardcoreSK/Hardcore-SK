@@ -37,12 +37,26 @@
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_ResearchBenches</defName>
-		<label>Research benches</label>
+		<label>Research stands</label>
 		<description>Researchers work here to discover new things.</description>
 		<defNames>
 			<li>PrimitiveResearchBench</li>
 			<li>SimpleResearchBench</li>
 			<li>HiTechResearchBench</li>
+		</defNames>
+		<designationCategory>Misc</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+		<types>
+			<li>Research</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ResearchStations</defName>
+		<label>Research stations</label>
+		<description>Researchers use these stations to improve their research stands.</description>
+		<defNames>
 			<li>FileCabinet</li>
 			<li>MultiAnalyzer</li>
 			<!--<li>CounterTopModular</li>-->
@@ -51,7 +65,10 @@
 		</defNames>
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
-		<order>30</order>
+		<order>35</order>
+		<types>
+			<li>Research</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -100,7 +117,7 @@
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Facilities</defName>
-		<label>Facilities</label>
+		<label>Production facilities</label>
 		<description>A special buildings that can be linked to another buildings to increase its effectiveness.</description>
 		<defNames>
 			<li>CookingTools</li>
@@ -111,6 +128,9 @@
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
 		<order>70</order>
+		<types>
+			<li>Facilities</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -131,6 +151,9 @@
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
 		<order>80</order>
+		<types>
+			<li>Facilities</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -146,6 +169,9 @@
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
 		<order>90</order>
+		<types>
+			<li>Facilities</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="haplo.miscellaneous.robots">

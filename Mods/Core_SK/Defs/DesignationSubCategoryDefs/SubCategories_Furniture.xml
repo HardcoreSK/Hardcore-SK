@@ -24,6 +24,10 @@
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
 		<order>10</order>
+		<types>
+			<li>Beds</li>
+			<li>Bedroom</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="ludeon.rimworld.biotech">
@@ -38,6 +42,10 @@
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
 		<order>15</order>
+		<types>
+			<li>Beds</li>
+			<li>Bedroom</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -55,6 +63,10 @@
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
 		<order>20</order>
+		<types>
+			<li>Beds</li>
+			<li>Bedroom</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -73,6 +85,10 @@
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
 		<order>30</order>
+		<types>
+			<li>Beds</li>
+			<li>Bedroom</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -88,6 +104,10 @@
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
 		<order>40</order>
+		<types>
+			<li>Beds</li>
+			<li>Bedroom</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -101,6 +121,9 @@
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
 		<order>50</order>
+		<types>
+			<li>Special Beds</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -119,6 +142,9 @@
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
 		<order>60</order>
+		<types>
+			<li>Special Beds</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -139,6 +165,9 @@
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
 		<order>70</order>
+		<types>
+			<li>Seats</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -158,20 +187,26 @@
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
 		<order>80</order>
+		<types>
+			<li>Seats</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Ludeon.RimWorld.Royalty">
 		<defName>SubCategory_RoyaltyStuff</defName>
-		<label>royalty stuff</label>
-		<description>Drapes, thrones for royalty person.</description>
+		<label>thrones</label>
+		<description>Thrones for royalty person.</description>
 		<defNames>
 			<li>Throne</li>
 			<li>GrandThrone</li>
-			<li>Drape</li>
+			<li>Drape</li> <!--todo move to accesories-->
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
 		<order>90</order>
+		<types>
+			<li>Seats</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -186,6 +221,9 @@
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
 		<order>100</order>
+		<types>
+			<li>Tables</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -203,6 +241,9 @@
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
 		<order>110</order>
+		<types>
+			<li>Tables</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -219,6 +260,9 @@
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
 		<order>120</order>
+		<types>
+			<li>Tables</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -233,6 +277,9 @@
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
 		<order>130</order>
+		<types>
+			<li>Bedroom</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -240,14 +287,17 @@
 		<label>cloth lockers</label>
 		<description>A locker that can store a set clothing for easy outfit swapping.</description>
 		<defNames>
-			<li>ClutterLocker</li>
 			<li>EndTableSimple</li>
 			<li>EndTable</li>
 			<li>Dresser</li>
+			<li>ClutterLocker</li>
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
 		<order>140</order>
+		<types>
+			<li>Bedroom</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -262,6 +312,9 @@
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
 		<order>150</order>
+		<types>
+			<li>School</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Ludeon.RimWorld.Biotech">
@@ -277,6 +330,9 @@
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
 		<order>160</order>
+		<types>
+			<li>School</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 </Defs>

@@ -20,6 +20,9 @@
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
 		<order>10</order>
+		<types>
+			<li>Fortifications</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -41,6 +44,9 @@
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
 		<order>20</order>
+		<types>
+			<li>Fortifications</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
     <ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimefeller">
@@ -55,6 +61,9 @@
         <designationCategory>Security</designationCategory>
         <debug>false</debug>
 		<order>30</order>
+		<types>
+			<li>Fortifications</li>
+		</types>
     </ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -68,6 +77,9 @@
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
 		<order>40</order>
+		<types>
+			<li>Manned Weaponry</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -84,6 +96,9 @@
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
 		<order>50</order>
+		<types>
+			<li>Manned Weaponry</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -98,6 +113,9 @@
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
 		<order>60</order>
+		<types>
+			<li>Manned Weaponry</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -112,6 +130,9 @@
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
 		<order>70</order>
+		<types>
+			<li>Manned Weaponry</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -127,6 +148,9 @@
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
 		<order>80</order>
+		<types>
+			<li>Manned Weaponry</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -144,6 +168,9 @@
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
 		<order>90</order>
+		<types>
+			<li>Auto Weaponry</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -158,6 +185,9 @@
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
 		<order>100</order>
+		<types>
+			<li>Auto Weaponry</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimatomics">
@@ -175,6 +205,43 @@
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
 		<order>110</order>
+		<types>
+			<li>Auto Weaponry</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Autoloaders</defName>
+		<label>autoloaders</label>
+		<description>Autoloaders for infinite bullet hell.</description>
+		<defNames>
+			<li>Turret_Autoloader_556x45mmNATO</li>
+			<li>Turret_Autoloader_145x114mm</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+		<order>120</order>
+		<types>
+			<li>Special</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_SpecialDefences</defName>
+		<label>special defence systems</label>
+		<description>Various special defence systems.</description>
+		<defNames>
+			<li>Building_NaniteShieldStation</li>
+			<li>IonSatelliteBroadcaster</li>
+			<li>SkywrathController</li>
+			<li>Building_Shield</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+		<order>130</order>
+		<types>
+			<li>Special</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimatomics">
@@ -190,7 +257,10 @@
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
-		<order>120</order>
+		<order>140</order>
+		<types>
+			<li>Special</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 </Defs>
