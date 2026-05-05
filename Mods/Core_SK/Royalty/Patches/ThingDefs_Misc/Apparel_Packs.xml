@@ -27,6 +27,13 @@
 			</li>
 		</operations>
 	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BroadshieldCore"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>2500</MarketValue>
+		</value>
+	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Apparel_PackJump"]/statBases/JumpRange</xpath>
@@ -34,5 +41,67 @@
 			<JumpRange>30</JumpRange>
 		</value>
 	</Operation>
+	
+	 <Operation Class="PatchOperationReplace"> <!-- Increase max charges EXPERIMENTAL -->
+		<xpath>Defs/ThingDef[defName="Apparel_PackBroadshield"]/comps/li[@Class="CompProperties_ApparelReloadable"]/maxCharges</xpath>
+		<value>
+			<maxCharges>3</maxCharges>
+		</value>
+	</Operation>
 
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_PackBroadshield"]/costList</xpath>
+		<value>
+			<costList>
+				<BroadshieldCore>1</BroadshieldCore>
+				<Electronics>4</Electronics>
+				<Hexcell>6</Hexcell>
+				<ComponentIndustrial>2</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_PackBroadshield"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+				<li>RuggedMetallic</li>
+			</stuffCategories>
+			<costStuffCount>40</costStuffCount>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_PackJump"]/costList</xpath>
+		<value>
+			<costList>
+				<ElectronicComponents>2</ElectronicComponents>
+				<ComponentIndustrial>4</ComponentIndustrial>
+				<AdvMechanism>2</AdvMechanism>
+				<Chemfuel>125</Chemfuel>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_PackJump"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+				<li>RuggedMetallic</li>
+			</stuffCategories>
+			<costStuffCount>60</costStuffCount>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_PackBroadshield" or defName="Apparel_PackJump"]/recipeMaker/skillRequirements</xpath>
+		<value>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		</value>
+	</Operation>
+	
 </Patch>

@@ -23,7 +23,7 @@
   </ThingDef>
 
   <ThingDef Name="MakeableSabotBase" ParentName="SabotBase" Abstract="True">
-    <recipeMaker>
+    <!-- <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <effectWorking>ConstructMetal</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>
@@ -36,7 +36,7 @@
       <skillRequirements>
         <Crafting>10</Crafting>
       </skillRequirements>
-    </recipeMaker>
+    </recipeMaker> -->
   </ThingDef>
 
   <!-- STANDARD -->
@@ -49,11 +49,14 @@
       <texPath>Rimatomics/Things/Resources/sabot</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
+	<statBases>
+	<MarketValue>30</MarketValue>
+	</statBases>
     <projectileWhenLoaded>Bullet_Sabot</projectileWhenLoaded>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>StrongMetallic</li>
 		</stuffCategories>
-		<costStuffCount>20</costStuffCount>
+		<costStuffCount>20</costStuffCount> -->
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -97,16 +100,16 @@
     </graphicData>
     <tradeability>Sellable</tradeability>
     <statBases>
-      <MarketValue>50</MarketValue>
+      <MarketValue>45</MarketValue>
     </statBases>
     <projectileWhenLoaded>Bullet_Sabot_DU</projectileWhenLoaded>
-	<stuffCategories>
+	<!-- <stuffCategories>
 		<li>StrongMetallic</li>
 	</stuffCategories>
 		<costStuffCount>20</costStuffCount>
     <costList>
       <DepletedUraniumPellets>10</DepletedUraniumPellets>
-    </costList>
+    </costList> -->
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">

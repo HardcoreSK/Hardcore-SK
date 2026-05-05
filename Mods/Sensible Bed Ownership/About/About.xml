@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Sensible Bed Ownership</name>
+	<author>1trickPwnyta</author>
+	<packageId>sensiblebedownership.1trickPwnyta</packageId>
+	<modVersion>1.2.8</modVersion>
+	<supportedVersions>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+	<description>
+Makes the bed ownership/assignment mechanic sensible. Specifically:
+- Everyone can have a bed assigned per map (with special rules for gravships - see 08/26/2025 update below), so beds don't get unassigned while caravaning.
+- Adds the ability to select a colonist or animal and right-click on a bed to assign. Multiple selected pawns can be assigned to a double bed at once.
+- Adds a search bar to the bed assignment dialog.
+- When assigning a second member to a double bed, brings the first member's love partners to the top of the list.
+- Adds an unassignment gizmo when you click on a bed.
+- Also applies these features to other colonist-assigned buildings, such as thrones and deathrest caskets.
+- Allows pawns to find a chair to sleep in instead of resorting to the ground when no bed is available because chairs still provide comfort when sleeping (can be turned off in settings).
+
+=== Updates ===
+11/23/2025: Fix bugs with right-click assigning animals to beds and being able to assign humans to animal beds
+10/09/2025: Add compatibility with Reverse Commands
+09/03/2025: Add additional logging in dev mode
+08/26/2025: Support for gravships by allowing one bed per pawn per map on substructure and one not on substructure. Pawns will prefer the non-gravship bed by default but this can be overriden by setting the gravship bed to their preferred bed via bed gizmo.
+08/11/2025: Fix broken save files from previous bug, add additional safeguard to prevent broken saves
+08/10/2025: Fix potential bug that causes errors when bed cache isn't properly cleared between loading saved games
+08/08/2025: Improve performance and fix some minor UI bugs
+06/12/2025: Fix error when right-clicking out of bounds with a pawn selected in certain situations
+06/11/2025: Updated to 1.6, allow multiple selected pawns to be right-click assigned at once
+04/18/2025: Fix bed assignment dialog incompatibility with Steam Deck
+04/09/2025: Add chair-sleeping feature, prevent double bed reservations by the same pawn, use "main bed" for bed calculations instead of just whatever bed is on the current map (for lovers sharing beds or royalty bedroom requirements)
+10/02/2024: Immediately unassign babies from cribs when they become children
+
+=== Credits ===
+Bed ownership permanence original idea: Hultis
+Bed assignment features original idea: The Village Guy
+Mod icon: twitter.com/mouse_draws
+
+Additionally, this mod was inspired by and includes many of the same features of the following mods:
+Keep Bed Ownership - by Hultis
+Better Bed Assignment - by The Village Guy, with code written by legodude17
+If any of the above creators prefer I remove this mod for any reason, please feel free to contact me and I will promptly remove it.
+	</description>
+	<url>https://github.com/1trickPwnyta/SensibleBedOwnership</url>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+	</modDependencies>
+</ModMetaData>

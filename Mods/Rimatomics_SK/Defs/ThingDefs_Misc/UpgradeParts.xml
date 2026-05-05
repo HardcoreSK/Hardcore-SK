@@ -35,7 +35,7 @@
       <li>RimatomicsProduct</li>
     </thingCategories>
     <intricate>true</intricate>
-    <recipeMaker>
+    <!-- <recipeMaker>
       <productCount>1</productCount>
       <workAmount>11000</workAmount>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -43,18 +43,21 @@
       <effectWorking>Smith</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>
       <unfinishedThingDef>UnfinishedRimatomics</unfinishedThingDef>
-    </recipeMaker>
+    </recipeMaker> -->
   </ThingDef>
 
 
   <ThingDef ParentName="UpgradePart">
     <defName>ControlRodActuator</defName>
     <label>Control Rod Actuator</label>
-    <description>Upgrade parts for the Rimatomics nuclear reactor</description>
+    <description>Upgrade parts for the Rimatomics nuclear reactor. Increase the speed of the control rods, this increases the responsiveness of flux level changes, and increases the shutdown speed.</description>
     <graphicData>
       <texPath>Rimatomics/Things/Resources/rodMechanism</texPath>
     </graphicData>
-    <recipeMaker>
+	<statBases>
+	<MarketValue>2000</MarketValue>
+	</statBases>
+   <!-- <recipeMaker>
       <workAmount>10000</workAmount>
       <recipeUsers>
         <li>TableRimatomicsMachining</li>
@@ -63,18 +66,21 @@
 		<stuffCategories>
 			<li>StrongMetallic</li>
 		</stuffCategories>
-		<costStuffCount>135</costStuffCount>
+		<costStuffCount>135</costStuffCount> -->
   </ThingDef>
 
 
   <ThingDef ParentName="UpgradePart">
     <defName>ATOM</defName>
     <label>ATOM</label>
-    <description>Upgrade module for TACS</description>
+    <description>The Advanced Threat Detection module (ATOM) is an upgrade module for the TACS, when installed it it significantly increases the power usage increasing its range and scanning power, and making it possible to detect threats at much greater distances, acting as an early warning system for potential attacks. Airborne attacks will leave little room for warning, and smaller groups of ground units will be hard to detect, but large ground based fighting forces will be easily detected. False positives may be possible when using the system.</description>
     <graphicData>
       <texPath>Rimatomics/Things/Resources/GenericModule</texPath>
     </graphicData>
-    <recipeMaker>
+	<statBases>
+	<MarketValue>6000</MarketValue>
+	</statBases>
+   <!-- <recipeMaker>
       <workAmount>10000</workAmount>
       <recipeUsers>
         <li>TableRimatomicsMachining</li>
@@ -90,7 +96,7 @@
 			<Wire>200</Wire>
 			<AdvMechanism>12</AdvMechanism>
 			<Microchips>1</Microchips>
-		</costList>
+		</costList> -->
   </ThingDef>
   
   
@@ -98,16 +104,19 @@
   <ThingDef ParentName="UpgradePart">
     <defName>SCAD</defName>
     <label>SCAD</label>
-    <description>Upgrade parts for Rimatomics energy weapons</description>
+    <description>The SuperCapacitor Arc Defense system (SCAD) is an additional armour layer which is applied to Rimatomics energy weapons, Comprised of structural composite supercapacitors, the armour protects the weapon by charging with the plating and then releasing an electromagnetic arc discharge which deflects or vaporises incoming projectiles, reducing total damage received by up to 90%. The SCAD is a consumable system with limited uses and will need replacing.</description>
     <graphicData>
       <texPath>Rimatomics/Things/Resources/SCAD</texPath>
     </graphicData>
-    <recipeMaker>
+	<statBases>
+	<MarketValue>4000</MarketValue>
+	</statBases>
+    <!-- <recipeMaker>
       <workAmount>20000</workAmount>
       <recipeUsers>
         <li>TableRimatomicsMachining</li>
       </recipeUsers>
-    </recipeMaker>
+     </recipeMaker>
 		<stuffCategories>
 			<li>SolidMetallic</li>
 		</stuffCategories>
@@ -116,17 +125,20 @@
 			<ReinforcedConcrete>20</ReinforcedConcrete>
 			<AdvMechanism>5</AdvMechanism>
 			<Microchips>1</Microchips>
-		</costList>
+		</costList> -->
   </ThingDef>
 
   <ThingDef ParentName="UpgradePart">
     <defName>MEPS</defName>
     <label>MEPS</label>
-    <description>Upgrade parts for Rimatomics energy weapons</description>
+    <description>The Modular Electric Power System (MEPS) is an ultra-capacitor that can interface with the power delivery system of any Rimatomics energy weapon to boost its maximum power, the extra power may be handled differently by each energy weapon.</description>
     <graphicData>
       <texPath>Rimatomics/Things/Resources/MEPS</texPath>
     </graphicData>
-    <recipeMaker>
+	<statBases>
+	<MarketValue>4000</MarketValue>
+	</statBases>
+    <!-- <recipeMaker>
       <workAmount>10000</workAmount>
       <recipeUsers>
         <li>TableRimatomicsMachining</li>
@@ -142,17 +154,20 @@
 			<BiosyntheticMaterial>1</BiosyntheticMaterial>
 			<AdvMechanism>5</AdvMechanism>
 			<Microchips>1</Microchips>
-		</costList>
+		</costList> -->
   </ThingDef>
 
   <ThingDef ParentName="UpgradePart">
     <defName>ALC</defName>
     <label>ALC</label>
-    <description>Upgrade parts for Rimatomics energy weapons</description>
+    <description>The Advanced Liquid Cooler (ALC) is a universal cooling system designed to work with all Rimatomics energy weapons, by increasing the cooling capacity of the weapon and its power deliver systems, cooldown times can be reduced.</description>
     <graphicData>
       <texPath>Rimatomics/Things/Resources/heatsink</texPath>
     </graphicData>
-    <recipeMaker>
+	<statBases>
+	<MarketValue>3500</MarketValue>
+	</statBases>
+    <!-- <recipeMaker>
       <workAmount>10000</workAmount>
       <recipeUsers>
         <li>TableRimatomicsMachining</li>
@@ -166,7 +181,7 @@
 			<ReinforcedConcrete>20</ReinforcedConcrete>
 			<AdvMechanism>5</AdvMechanism>
 			<Microchips>1</Microchips>
-		</costList>
+		</costList> -->
   </ThingDef>
 
 
@@ -174,11 +189,14 @@
   <ThingDef ParentName="UpgradePart">
     <defName>ERS</defName>
     <label>ERS</label>
-    <description>Upgrade parts for Rimatomics energy weapons</description>
+    <description>The Energy Recovery System (ERS) uses a combination of energy recovery techniques to harvest waste kinetic and heat energy and return it to PPC's after a weapon has been fired.</description>
     <graphicData>
       <texPath>Rimatomics/Things/Resources/ERS</texPath>
     </graphicData>
-    <recipeMaker>
+	<statBases>
+	<MarketValue>3500</MarketValue>
+	</statBases>
+    <!-- <recipeMaker>
       <workAmount>10000</workAmount>
       <recipeUsers>
         <li>TableRimatomicsMachining</li>
@@ -192,18 +210,21 @@
 			<MagneticMaterial>2</MagneticMaterial>
 			<AdvMechanism>12</AdvMechanism>
 			<Microchips>1</Microchips>
-		</costList>
+		</costList> -->
   </ThingDef>
 
 
   <ThingDef ParentName="UpgradePart">
     <defName>DriveActuator</defName>
     <label>Drive Actuator</label>
-    <description>Upgrade parts for Rimatomics energy weapons</description>
+    <description>Improves stabilization accuracy and slew rates for turret based Rimatomics energy weapons. This high torque motor eliminates the need for a gearbox between the motor and load and provides low drive inertia for superior stabilization performance and high stiffness with a backlash free coupling.</description>
     <graphicData>
       <texPath>Rimatomics/Things/Resources/actuator</texPath>
     </graphicData>
-    <recipeMaker>
+	<statBases>
+	<MarketValue>2000</MarketValue>
+	</statBases>
+    <!-- <recipeMaker>
       <workAmount>7000</workAmount>
       <recipeUsers>
         <li>TableRimatomicsMachining</li>
@@ -217,7 +238,7 @@
 			<ReinforcedConcrete>20</ReinforcedConcrete>
 			<AdvMechanism>1</AdvMechanism>
              <Wire>50</Wire>
-		</costList>
+		</costList> -->
   </ThingDef>
 
 
@@ -225,11 +246,14 @@
   <ThingDef ParentName="UpgradePart">
     <defName>TargetingChip</defName>
     <label>Targeting Chip</label>
-    <description>Upgrade parts for the Rimatomics Railgun</description>
+    <description>Increases the range and accuracy of the Railgun, Test the system on any targets to gather data for analysis.</description>
     <graphicData>
       <texPath>Rimatomics/Things/Resources/chip</texPath>
     </graphicData>
-    <recipeMaker>
+	<statBases>
+	<MarketValue>4000</MarketValue>
+	</statBases>
+    <!-- <recipeMaker>
       <workAmount>6000</workAmount>
       <recipeUsers>
         <li>TableRimatomicsMachining</li>
@@ -243,7 +267,7 @@
 			<MagneticMaterial>1</MagneticMaterial>
 			<AdvMechanism>3</AdvMechanism>
 			<Microchips>2</Microchips>
-		</costList>
+		</costList> -->
   </ThingDef>
 
 
@@ -251,11 +275,14 @@
   <ThingDef ParentName="UpgradePart">
     <defName>BeamSplitter</defName>
     <label>Beam Splitter</label>
-    <description>Upgrade parts for the Rimatomics Obelisk.</description>
+    <description>The Obelisks laser can be split using a beam splitter, the secondary beam is tuned to a particular wavelength and polarization state which disables personal shields, the primary beam is delayed by a fraction of a second and then delivered with full power to the target.</description>
     <graphicData>
       <texPath>Rimatomics/Things/Resources/splitter</texPath>
     </graphicData>
-    <recipeMaker>
+	<statBases>
+	<MarketValue>3250</MarketValue>
+	</statBases>
+    <!-- <recipeMaker>
       <workAmount>15000</workAmount>
       <recipeUsers>
         <li>TableRimatomicsMachining</li>
@@ -263,17 +290,20 @@
     </recipeMaker>
     <costList>
          <ReinforcedGlass>100</ReinforcedGlass>
-    </costList>
+    </costList> -->
   </ThingDef>
 
   <ThingDef ParentName="UpgradePart">
     <defName>LenseModule</defName>
     <label>Lens Module</label>
-    <description>Upgrade parts for the Rimatomics Obelisk.</description>
+    <description>Increases the effective range of the Obelisk by improving the focusing and collimating of the main beam.</description>
     <graphicData>
       <texPath>Rimatomics/Things/Resources/focus</texPath>
     </graphicData>
-    <recipeMaker>
+	<statBases>
+	<MarketValue>3250</MarketValue>
+	</statBases>
+    <!-- <recipeMaker>
       <workAmount>20000</workAmount>
       <recipeUsers>
         <li>TableRimatomicsMachining</li>
@@ -281,7 +311,7 @@
     </recipeMaker>
 		<costList>
 			<ReinforcedGlass>200</ReinforcedGlass>
-		</costList>
+		</costList> -->
   </ThingDef>
 
 </Defs>

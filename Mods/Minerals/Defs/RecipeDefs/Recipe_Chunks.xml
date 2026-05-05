@@ -4,7 +4,7 @@
   <RecipeDef ParentName="SK_MakeStoneBlocksBase">
     <defName>ProcessBlocklessChunks</defName>
     <label>process soft stone chunks</label>
-    <description>Process soft stone chunks.</description>
+    <description>Process soft stone chunks.\n\nClaystone Chunk:\n10 x Clay Bricks\n15 x Crushed Stone\n\nMudstone Chunk:\n25 x Mudstone Blocks</description>
     <jobString>Processing soft stone chunks.</jobString>
 	<workerCounterClass>ImprovedWorkbenches.RecipeWorkerCounter_MultipleButcherProducts</workerCounterClass>
     <recipeUsers Inherit="False">
@@ -25,6 +25,13 @@
     <specialProducts>
       <li>Butchery</li>
     </specialProducts>
+	<descriptionHyperlinks>
+      <ThingDef>ChunkClaystone</ThingDef>
+	  <ThingDef>ClayBrick</ThingDef>
+	  <ThingDef>CrushedStone</ThingDef>
+	  <ThingDef>ZF_ChunkMudstone</ThingDef>
+	  <ThingDef>ZF_BlocksMudstone</ThingDef>
+    </descriptionHyperlinks>
     <fixedIngredientFilter>
       <categories>
         <li>SoftStoneChunks</li>

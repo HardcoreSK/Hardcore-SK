@@ -514,7 +514,7 @@
 			<EquipDelay>1.6</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryingCapacity>15</CarryingCapacity>
+			<CarryWeight>10</CarryWeight>
 			<CarryBulk>20</CarryBulk>
 			<MoveSpeed>-0.06</MoveSpeed>
 			<WorkSpeedGlobal>-0.03</WorkSpeedGlobal>
@@ -577,7 +577,7 @@
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryWeight>20</CarryWeight>
+			<CarryWeight>15</CarryWeight>
 			<CarryBulk>25</CarryBulk>
 			<MoveSpeed>-0.09</MoveSpeed>
 			<WorkSpeedGlobal>-0.06</WorkSpeedGlobal>
@@ -853,7 +853,7 @@
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_ResearchGlasses</wornGraphicPath>
 			<layers>
-				<li>StrappedHead</li>
+				<li>EyeCover</li>
 			</layers>
 			<tags>
 				<li>RK_Doctor</li>
@@ -862,6 +862,7 @@
 				<li>RK_Colonist</li>
 				<li>RoyalTier2</li>
 			</tags>
+			<parentTagDef>ApparelHead</parentTagDef>
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisite>Ratkin_Apparel_C1</researchPrerequisite>
@@ -1311,7 +1312,7 @@
 			<EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryingCapacity>25</CarryingCapacity>
+			<CarryWeight>25</CarryWeight>
 			<CarryBulk>30</CarryBulk>
 			<MoveSpeed>-0.12</MoveSpeed>
 			<WorkSpeedGlobal>-0.09</WorkSpeedGlobal>
@@ -1955,8 +1956,8 @@
 			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryingCapacity>30</CarryingCapacity>
-			<CarryBulk>35</CarryBulk>
+			<CarryWeight>20</CarryWeight>
+			<CarryBulk>25</CarryBulk>
 			<MoveSpeed>-0.16</MoveSpeed>
 			<WorkSpeedGlobal>-0.12</WorkSpeedGlobal>
 			<GermResistance>0.02</GermResistance>
@@ -2625,6 +2626,37 @@
 				<li>RK_LightArmor</li>
 				<li>RK_Thief</li>
 			</tags>
+			<renderNodeProperties>
+				<li>
+					<nodeClass>CombatExtended.PawnRenderNode_Apparel</nodeClass>
+					<workerClass>CombatExtended.PawnRenderNodeWorker_Drafted</workerClass>
+					<texPath>Apparel/RK_WoodenShield</texPath>
+					<shaderTypeDef>CutoutComplex</shaderTypeDef>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<drawData>
+						<scale>0.75</scale>
+						<defaultData>
+							<layer>80</layer>
+						</defaultData>
+						<dataNorth>
+							<layer>-5</layer>
+							<offset>(-0.1, 0, -0.2)</offset>
+						</dataNorth>
+						<dataEast>
+							<layer>-5</layer>
+							<offset>(0, 0, -0.2)</offset>
+							<rotationOffset>30</rotationOffset>
+						</dataEast>
+						<dataSouth>
+							<offset>(0.1, 0.05, -0.2)</offset>
+						</dataSouth>
+						<dataWest>
+							<offset>(0, 0.05, -0.2)</offset>
+							<rotationOffset>-30</rotationOffset>
+						</dataWest>
+					</drawData>
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<thingCategories>
 			<li>ShieldCat</li>
@@ -2665,7 +2697,7 @@
 					<li>Gold</li>
 					<li>Silver</li>
 				</disallowedThingDefs>
-			</defaultIngredientFilter>		
+			</defaultIngredientFilter>
 		</recipeMaker>
 		<costList>
 			<Plasteel>60</Plasteel>
@@ -2720,6 +2752,37 @@
 			<tags>
 				<li>RK_HeavyArmor</li>
 			</tags>
+			<renderNodeProperties>
+				<li>
+					<nodeClass>CombatExtended.PawnRenderNode_Apparel</nodeClass>
+					<workerClass>CombatExtended.PawnRenderNodeWorker_Drafted</workerClass>
+					<texPath>Apparel/RK_HeavyShield</texPath>
+					<shaderTypeDef>CutoutComplex</shaderTypeDef>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<drawData>
+						<scale>0.75</scale>
+						<defaultData>
+							<layer>80</layer>
+						</defaultData>
+						<dataNorth>
+							<layer>-5</layer>
+							<offset>(-0.1, 0, -0.2)</offset>
+						</dataNorth>
+						<dataEast>
+							<layer>-5</layer>
+							<offset>(0, 0, -0.2)</offset>
+							<rotationOffset>30</rotationOffset>
+						</dataEast>
+						<dataSouth>
+							<offset>(0.1, 0.05, -0.2)</offset>
+						</dataSouth>
+						<dataWest>
+							<offset>(0, 0.05, -0.2)</offset>
+							<rotationOffset>-30</rotationOffset>
+						</dataWest>
+					</drawData>
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<thingCategories>
 			<li>ShieldCat</li>
@@ -2911,8 +2974,8 @@
 			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryingCapacity>35</CarryingCapacity>
-			<CarryBulk>40</CarryBulk>
+			<CarryWeight>25</CarryWeight>
+			<CarryBulk>30</CarryBulk>
 			<MoveSpeed>-0.20</MoveSpeed>
 			<WorkSpeedGlobal>-0.16</WorkSpeedGlobal>
 			<GermResistance>0.01</GermResistance>

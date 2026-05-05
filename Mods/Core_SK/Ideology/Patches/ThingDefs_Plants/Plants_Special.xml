@@ -11,21 +11,26 @@
 	  </value>
 	</Operation>	
 -->
-	<Operation Class="PatchOperationReplace">
-	  <xpath>Defs/ThingDef[defName="Plant_Nutrifungus"]/plant/cavePlantWeight</xpath>
-	  <value>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Plant_Nutrifungus"]/plant</xpath>
+		<value>
 			<wildClusterRadius>3</wildClusterRadius>
 			<wildClusterWeight>3</wildClusterWeight>
 			<cavePlantWeight>0.6</cavePlantWeight>
-	  </value>
+			<sowTags Merge="true">
+				<li>Fungiponics</li>
+			</sowTags>
+		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-	  <xpath>Defs/ThingDef[defName="Plant_Timbershroom"]/plant/sowResearchPrerequisites</xpath>
-	  <value>
-		<li>Fungiponics_A1</li>
-	  </value>
-	</Operation>		
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Plant_Timbershroom"]/plant</xpath>
+		<value>
+			<sowResearchPrerequisites>
+				<li>Fungiponics_A1</li>
+			</sowResearchPrerequisites>
+		</value>
+	</Operation>	
 
 	<Operation Class="PatchOperationAdd">
 	  <xpath>Defs/ThingDef[defName="Plant_Timbershroom"]/plant</xpath>
@@ -39,9 +44,10 @@
 		<sowTags Inherit="False">
 			<li>Fungiponics</li>
 		</sowTags>
-		<blockAdjacentSow>true</blockAdjacentSow>
+		<!--<blockAdjacentSow>true</blockAdjacentSow> Already balanced with fungiponics distance -->
 		<mustBeWildToSow>false</mustBeWildToSow>
 		<interferesWithRoof>false</interferesWithRoof>
+		<visualSizeRange>0.5~2.00</visualSizeRange>
 	  </value>
 	</Operation>	
 
@@ -66,10 +72,6 @@
 			<wildClusterWeight>3</wildClusterWeight>
 			<cavePlantWeight>0.5</cavePlantWeight>
 	  </value>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove">
-	  <xpath>Defs/ThingDef[defName="Plant_Timbershroom"]/plant/wildClusterWeight</xpath>
 	</Operation>
 
 	<Operation Class="PatchOperationRemove">

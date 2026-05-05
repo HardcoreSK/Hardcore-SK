@@ -402,7 +402,7 @@ Drought is devastating for plant life and will quickly destroy all the crops not
 				<!-- 0 - weather with no Rain -->
 				<allowedBiomeRainfall>0~3000</allowedBiomeRainfall>
 				<!--300,600 - desert. 800-1200 - arid. 2000-4000 tropic/swamp -->
-				<allowedAverageBiomeTemperature>10~999</allowedAverageBiomeTemperature>
+				<allowedAverageBiomeTemperature>5~999</allowedAverageBiomeTemperature>
 				<!-- Average biome temperature stat -->
 			</li>
 		</modExtensions>
@@ -846,13 +846,17 @@ Drought is devastating for plant life and will quickly destroy all the crops not
 			<li>Map_PlayerHome</li>
 		</targetTags>
 		<workerClass>SK.Events.IncidentWorker_NuclearIncident</workerClass>
-		<gameCondition>NuclearFallout</gameCondition>
+		<gameCondition>NuclearFallout</gameCondition> <!-- Rimefeller one -->
 		<letterDef>PurpleEvent</letterDef>
 		<baseChance>0.1</baseChance>
 		<category>ThreatBig</category>
 		<earliestDay>320</earliestDay>
 		<minRefireDays>80</minRefireDays>
 		<pointsScaleable>false</pointsScaleable>
+		<durationDays>
+			<min>80</min>
+			<max>120</max>
+		</durationDays>
 	</IncidentDef>
 
 	<IncidentDef>
@@ -862,7 +866,7 @@ Drought is devastating for plant life and will quickly destroy all the crops not
 			<li>Map_PlayerHome</li>
 		</targetTags>
 		<workerClass>SK.Events.IncidentWorker_NuclearFallout</workerClass>
-		<gameCondition>NuclearFallout</gameCondition>
+		<gameCondition>NuclearFallout_SK</gameCondition>
 		<baseChance>0.06</baseChance>
 		<letterDef>PurpleEvent</letterDef>
 		<category>ThreatBig</category>

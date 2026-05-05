@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!--
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RecipeDef[@Name="ButcherCorpseMechanoidBase"]/ingredients/li/filter/categories</xpath>
+    <value>
+      <categories>
+        <li>CorpsesMechanoid</li>
+      </categories>
+    </value>
+  </Operation>
+  -->
+
+  <!-- Allow tofu (as meat replacement) in Kibble recipe -->
+  <Operation Class="PatchOperationInsert">
+    <xpath>Defs/RecipeDef[defName="Make_Kibble"]/ingredients/li[filter/customSummary[text()="protein"]]/filter/categories/li</xpath>
+    <value>
+      <li>MeatSubRaw</li>
+    </value>
+  </Operation>
+
+</Patch>

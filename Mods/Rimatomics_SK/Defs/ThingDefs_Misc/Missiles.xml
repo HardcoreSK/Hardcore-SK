@@ -16,14 +16,14 @@
     <drawGUIOverlay>false</drawGUIOverlay>
     <statBases>
       <Flammability>0</Flammability>
-      <MarketValue>40</MarketValue>
+      <MarketValue>600</MarketValue>
       <Mass>24</Mass>
       <DeteriorationRate>2.0</DeteriorationRate>
     </statBases>
     <thingCategories>
       <li>RimatomicsProduct</li>
     </thingCategories>
-    <recipeMaker>
+    <!-- <recipeMaker>
       <productCount>1</productCount>
       <workAmount>11000</workAmount>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -44,7 +44,7 @@
 			<Microchips>1</Microchips>
 			<Wire>50</Wire>
     </costList>
-			<costStuffCount>100</costStuffCount>
+			<costStuffCount>100</costStuffCount> -->
   </ThingDef>
 
   <ThingDef ParentName="RimatomicResourceBase">
@@ -62,14 +62,14 @@
     <drawGUIOverlay>false</drawGUIOverlay>
     <statBases>
       <Flammability>0</Flammability>
-      <MarketValue>40</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>24</Mass>
       <DeteriorationRate>2.0</DeteriorationRate>
     </statBases>
     <thingCategories>
       <li>RimatomicsProduct</li>
     </thingCategories>
-    <recipeMaker>
+    <!-- <recipeMaker>
       <productCount>1</productCount>
       <workAmount>11000</workAmount>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -91,7 +91,7 @@
 			<Microchips>5</Microchips>
 			<Wire>200</Wire>
     </costList>
-			<costStuffCount>300</costStuffCount>
+			<costStuffCount>300</costStuffCount> -->
   </ThingDef>
 
   <ThingDef  Name="BasedWarhead" Abstract="True">
@@ -127,7 +127,7 @@
       <li>RimatomicsProduct</li>
     </thingCategories>
     <alwaysHaulable>true</alwaysHaulable>
-    <recipeMaker>
+    <!-- <recipeMaker>
       <productCount>1</productCount>
       <workAmount>40000</workAmount>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -149,7 +149,7 @@
 			<ElectronicComponents>10</ElectronicComponents>
 			<Wire>125</Wire>
     </costList>
-			<costStuffCount>150</costStuffCount>
+			<costStuffCount>150</costStuffCount> -->
   </ThingDef>
 
   <ThingDef ParentName="BasedWarhead">
@@ -163,7 +163,7 @@
     <statBases>
       <MarketValue>14400</MarketValue>
     </statBases>
-    <recipeMaker>
+    <!-- <recipeMaker>
       <productCount>1</productCount>
       <workAmount>40000</workAmount>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -185,7 +185,7 @@
 			<ElectronicComponents>10</ElectronicComponents>
 			<Wire>125</Wire>
     </costList>
-			<costStuffCount>150</costStuffCount>
+			<costStuffCount>150</costStuffCount> -->
     <thingSetMakerTags>
       <li>RewardSpecial</li>
     </thingSetMakerTags>
