@@ -8,24 +8,7 @@
 		</recipeUsers>
         <graphicSuffix>_on</graphicSuffix>
 		<!-- RecipeDef_UF fields -->
-		<speedBelowSafe>1</speedBelowSafe>
-		<speedAboveSafe>1</speedAboveSafe>
-		<sunFactor>
-			<min>1</min>
-			<max>1</max>
-		</sunFactor>
-		<rainFactor>
-			<min>1</min>
-			<max>1</max>
-		</rainFactor>
-		<snowFactor>
-			<min>1</min>
-			<max>1</max>
-		</snowFactor>
-		<windFactor>
-			<min>1</min>
-			<max>1</max>
-		</windFactor>
+		<usesTemperature>false</usesTemperature>
 	</RecipeDef>
     
 	<RecipeDef ParentName="UFDryingIndustrialBase" Name="Make_JerkyIndustrialBase" Abstract="True">
@@ -39,13 +22,13 @@
 				<li>soylentgreen</li>
 			</disallowedThingDefs>
 		</fixedIngredientFilter>
-		<processDays>1</processDays>
+		<processDays>0.5</processDays>
 	</RecipeDef>
 
 	<RecipeDef ParentName="Make_JerkyIndustrialBase" Class="UniversalFermenterSK.RecipeDef_UF">
 		<defName>Make_JerkyIndustrial_x1</defName>
 		<label>make jerky</label>
-		<description>Make jerky meat. Takes 1 day to make.</description>
+		<description>Make jerky meat. Takes half a day to make.</description>
 		<ingredients>
 			<li>
 				<filter>
@@ -65,7 +48,7 @@
 	<RecipeDef ParentName="Make_JerkyIndustrialBase" Class="UniversalFermenterSK.RecipeDef_UF">
 		<defName>Make_JerkyIndustrial_x5</defName>
 		<label>make jerky x5</label>
-		<description>Make jerky meat x5. Takes 1 day to make.</description>
+		<description>Make jerky meat x5. Takes half a day to make.</description>
 		<ingredients>
 			<li>
 				<filter>
@@ -85,7 +68,7 @@
 	<RecipeDef ParentName="Make_JerkyIndustrialBase" Class="UniversalFermenterSK.RecipeDef_UF">
 		<defName>Make_JerkyIndustrial_x10</defName>
 		<label>make jerky x10</label>
-		<description>Make jerky meat x10. Takes 1 day to make.</description>
+		<description>Make jerky meat x10. Takes half a day to make.</description>
 		<ingredients>
 			<li>
 				<filter>
