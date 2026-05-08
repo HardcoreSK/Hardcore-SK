@@ -3214,6 +3214,10 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		</placeWorkers>
 	</ThingDef>
 
+	<!-- I want to adjust this so it uses the original graphic,
+	but shelves fill with certain number of stacks,
+	think it will look better in Rimworlds renderer,
+	just because its so small -->
     <AdaptiveStorage.GraphicsDef>
 		<defName>BarShelfASF</defName>
 		<targetDef>BarShelf</targetDef>
@@ -3264,7 +3268,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 
 	<!-- SPECIALIZED STORAGE - Protected/Outdoors -->
 	<!--Sack-->
-	<ThingDef ParentName="LWM_DeepStorage">
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<defName>Sack</defName>
 		<label>Tow Sack</label>
 		<description>A woven bag for filling with rice, potatoes, sand, assorted lengths of wire, etc. Quick to use if you only fill it with one kind of thing. Reduces spoilage by 25%.</description>
@@ -3294,6 +3298,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			<li>HF</li>
 		</stuffCategories>
 		<building>
+			<maxItemsInCell>4</maxItemsInCell>
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
 			<fixedStorageSettings>
@@ -3327,15 +3332,14 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<comps>
 			<li Class="SK.CompProperties_RotModified">
 				<rotmodifier>0.75</rotmodifier>
-			</li>
+			</li><!--
 			<li Class="LWM.DeepStorage.Properties" >
 				<maxNumberStacks>4</maxNumberStacks>
 				<minTimeStoringTakes>25</minTimeStoringTakes>
-				<!--<timeStoringTakes>10</timeStoringTakes>-->
 				<additionalTimeEachDef>30</additionalTimeEachDef> 
 				<showContents>false</showContents>
 				<overlayType>SumOfItemsPerCell</overlayType>
-			</li>
+			</li>-->
 		</comps>
 		<researchPrerequisites>
 			<li>Storage_A1</li>
@@ -3343,13 +3347,32 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 	</ThingDef>
 	
+    <AdaptiveStorage.GraphicsDef>
+		<defName>SackASF</defName>
+		<targetDef>Sack</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/Bag</texPath>
+					<graphicClass>Graphic_Random</graphicClass>
+					<drawRotated>false</drawRotated>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.5, 0.2, 0.3)</volume>
+					</shadowData>
+                </graphicData>
+            </li>
+        </graphics>
+		<showContainedItems>false</showContainedItems>
+	</AdaptiveStorage.GraphicsDef>
+	
 	<!--Serving Table-->
-	<ThingDef ParentName="LWM_DeepStorage">
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<defName>TrayRackSingle</defName>
 		<label>serving table</label>
 		<description>A small table for keeping meals fresh, complete with sneeze-guard.</description>
 		<graphicData>
-			<texPath>Things/Building/Storage/servingtable</texPath>
+			<texPath>Things/Building/Storage/Servingtable/servingtable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.15,2.15)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -3379,6 +3402,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<building>
+			<maxItemsInCell>6</maxItemsInCell>
 			<fixedStorageSettings>
 				<filter>
 					<categories>
@@ -3399,19 +3423,18 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			</fixedStorageSettings>
 		</building>
 		<tickerType>Rare</tickerType>
-		<comps>
+		<comps><!--
 			<li Class="LWM.DeepStorage.Properties" >
 				<maxNumberStacks>6</maxNumberStacks>
-				<!--<timeStoringTakes>50</timeStoringTakes>-->
 				<minTimeStoringTakes>30</minTimeStoringTakes>
 				<additionalTimeEachStack>15</additionalTimeEachStack>
 				<additionalTimeEachDef>10</additionalTimeEachDef>
 				<showContents>true</showContents>
 				<overlayType>SumOfAllItems</overlayType>
-			</li>
+			</li>-->
 			<li Class="SK.CompProperties_RotModified">
 				<rotmodifier>0.5</rotmodifier>
-			</li>
+			</li><!--
 			<li Class="RimFridge.CompProperties_SecondLayer">
 				<graphicData>
 					<texPath>Things/Building/Storage/servingtable_Top</texPath>
@@ -3420,7 +3443,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 					<drawSize>(2.3,2.3)</drawSize>
 				</graphicData>
 				<altitudeLayer>Projectile</altitudeLayer>
-			</li>
+			</li>-->
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>			
@@ -3430,6 +3453,56 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
+
+    <AdaptiveStorage.GraphicsDef>
+		<defName>TrayRackSingleASF</defName>
+		<targetDef>TrayRackSingle</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/Servingtable/servingtable</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2.15,2.15)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.7, 0.3, 0.7)</volume>
+					</shadowData>
+                </graphicData>
+				<graphicDatas>
+					<li>
+						<texPath>Things/Building/Storage/Servingtable/servingtable_Top</texPath>
+						<graphicClass>Graphic_Multi</graphicClass>
+						<shaderType>CutoutComplex</shaderType>
+						<drawSize>(2.3,2.3)</drawSize>
+						<renderQueue>2950</renderQueue>
+						<altitudeLayer>ItemImportant</altitudeLayer>
+						<drawOffset>(0,1.2,0)</drawOffset>
+					</li>
+				</graphicDatas>
+            </li>
+        </graphics>
+		<showContainedItems>true</showContainedItems>
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Circle</stackBehaviour>
+							<stackOffset>(0,0,1.8)</stackOffset>
+							<drawOffset>(0,0,0.08)</drawOffset>
+							<drawOffsetEast>(0,0,0.12)</drawOffsetEast>
+							<drawOffsetWest>(0,0,0.12)</drawOffsetWest>
+							<!--<drawScale>0.9</drawScale>-->
+							<stackOffsetFactor>0.3</stackOffsetFactor>
+							<drawScale>0.8</drawScale>
+						</r0>					
+					</rows>
+				</c0>
+			</columns>
+		</itemGraphics>
+		<!--<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast> (distance between horizontal,?,distance between vertical) -->
+		<!--<drawOffsetEast>(-0.15,2.05,0.45)</drawOffsetEast> (x -left & right, y - layer, z - up & down) -->
+	</AdaptiveStorage.GraphicsDef>
 
 	<!--<ThingDef ParentName="FridgeBase">-->
 	<!-- Removed frigeration due to eating-pathfinding issues -->
