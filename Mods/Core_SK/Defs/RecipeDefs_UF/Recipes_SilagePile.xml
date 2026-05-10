@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Silage</defName>
+		<label>make silage</label>
+		<description>Make silage from plants. Takes 20 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hay</li>
+						<li>RawCorn</li>
+						<li>RawRice</li>
+						<li>Rawwheat</li>
+					</thingDefs>
+				</filter>
+				<count>150</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Hay</li>
+				<li>RawCorn</li>
+				<li>RawRice</li>
+				<li>Rawwheat</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Silage>50</Silage>
+		</products>
+		<recipeUsers>
+			<li>SilagePile</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<temperatureSafe>
+			<min>-273</min>
+			<max>1000</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>20</min>
+			<max>50</max>
+		</temperatureIdeal>
+		<sunFactor>
+			<min>0.75</min>
+			<max>1.35</max>
+		</sunFactor>
+		<rainFactor>
+			<min>1</min>
+			<max>0.5</max>
+		</rainFactor>
+		<processDays>20</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.8</speedAboveSafe>
+		<graphicSuffix>_hay</graphicSuffix>
+	</RecipeDef>
+
+</Defs>

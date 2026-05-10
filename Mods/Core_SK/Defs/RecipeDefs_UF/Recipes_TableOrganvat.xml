@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>ExtractBiomatterCorpse</defName>
+        <label>extract biomatter from corpse</label>
+        <description>Extracts BioMatter from a corpse. Produces depend on size of dead body and his wholeness. Takes 1.5 days to make</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Corpses</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Corpses</li>
+            </categories>
+            <disallowedCategories>
+                <li>CorpsesMechanoid</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <thingDefs>
+                <li>Corpse_Human</li>
+            </thingDefs>
+            <specialFiltersToAllow>
+                <li>AllowCorpsesColonist</li>
+                <li>AllowCorpsesStranger</li>
+            </specialFiltersToAllow>
+        </defaultIngredientFilter>
+        <products>
+            <Biomatter>20</Biomatter>
+        </products>
+        <recipeUsers>
+            <li>TableOrganvat</li>
+        </recipeUsers>
+
+        <!-- RecipeDef_UF fields -->
+        <ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>1</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+        <usesTemperature>false</usesTemperature>
+        <scaleToMeatAmount>true</scaleToMeatAmount>
+        <scaleToMeatAmountBase>127</scaleToMeatAmountBase>
+        <processDays>1.5</processDays>
+    </RecipeDef>
+
+    <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Grow_Eye</defName>
+        <label>Grow eye</label>
+        <description>Grow a natural eye. Takes 1.5 days to make</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Biomatter</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+        </ingredients>
+        <products>
+            <Eye>1</Eye>
+        </products>
+        <recipeUsers>
+            <li>TableOrganvat</li>
+        </recipeUsers>
+        <researchPrerequisite>Prosthesis_making_D2</researchPrerequisite>
+
+        <!-- RecipeDef_UF fields -->
+        <ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>1</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+        <usesTemperature>false</usesTemperature>
+        <processDays>1.5</processDays>
+    </RecipeDef>
+
+    <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Grow_Ear</defName>
+        <label>Grow ear</label>
+        <description>Grow a natural ear. Takes 1.5 days to make</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Biomatter</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+        </ingredients>
+        <products>
+            <Ear>1</Ear>
+        </products>
+        <recipeUsers>
+            <li>TableOrganvat</li>
+        </recipeUsers>
+        <researchPrerequisite>Prosthesis_making_D2</researchPrerequisite>
+
+        <!-- RecipeDef_UF fields -->
+        <ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>1</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+        <usesTemperature>false</usesTemperature>
+        <processDays>1.5</processDays>
+    </RecipeDef>
+
+    <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Grow_Nose</defName>
+        <label>Grow nose</label>
+        <description>Grow a natural nose. Takes 1.5 days to make</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Biomatter</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+        </ingredients>
+        <products>
+            <Nose>1</Nose>
+        </products>
+        <recipeUsers>
+            <li>TableOrganvat</li>
+        </recipeUsers>
+        <researchPrerequisite>Prosthesis_making_D2</researchPrerequisite>
+
+        <!-- RecipeDef_UF fields -->
+        <ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>1</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+        <usesTemperature>false</usesTemperature>
+        <processDays>1.5</processDays>
+    </RecipeDef>
+
+    <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Grow_Heart</defName>
+        <label>Grow heart</label>
+        <description>Grow a natural heart. Takes 1.5 days to make</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Biomatter</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+        </ingredients>
+        <products>
+            <Heart>1</Heart>
+        </products>
+        <recipeUsers>
+            <li>TableOrganvat</li>
+        </recipeUsers>
+        <researchPrerequisite>Prosthesis_making_D2</researchPrerequisite>
+
+        <!-- RecipeDef_UF fields -->
+        <ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>1</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+        <usesTemperature>false</usesTemperature>
+        <processDays>1.5</processDays>
+    </RecipeDef>
+
+    <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Grow_Lung</defName>
+        <label>Grow lung</label>
+        <description>Grow a natural lung. Takes 1.5 days to make</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Biomatter</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+        </ingredients>
+        <products>
+            <Lung>1</Lung>
+        </products>
+        <recipeUsers>
+            <li>TableOrganvat</li>
+        </recipeUsers>
+        <researchPrerequisite>Prosthesis_making_D2</researchPrerequisite>
+
+        <!-- RecipeDef_UF fields -->
+        <ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>1</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+        <usesTemperature>false</usesTemperature>
+        <processDays>1.5</processDays>
+    </RecipeDef>
+
+    <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Grow_Liver</defName>
+        <label>Grow liver</label>
+        <description>Grow a natural liver. Takes 1.5 days to make</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Biomatter</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+        </ingredients>
+        <products>
+            <Liver>1</Liver>
+        </products>
+        <recipeUsers>
+            <li>TableOrganvat</li>
+        </recipeUsers>
+        <researchPrerequisite>Prosthesis_making_D2</researchPrerequisite>
+
+        <!-- RecipeDef_UF fields -->
+        <ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>1</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+        <usesTemperature>false</usesTemperature>
+        <processDays>1.5</processDays>
+    </RecipeDef>
+
+    <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Grow_Kidney</defName>
+        <label>Grow kidney</label>
+        <description>Grow a natural kidney. Takes 1.5 days to make</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Biomatter</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+        </ingredients>
+        <products>
+            <Kidney>1</Kidney>
+        </products>
+        <recipeUsers>
+            <li>TableOrganvat</li>
+        </recipeUsers>
+        <researchPrerequisite>Prosthesis_making_D2</researchPrerequisite>
+
+        <!-- RecipeDef_UF fields -->
+        <ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>1</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+        <usesTemperature>false</usesTemperature>
+        <processDays>1.5</processDays>
+    </RecipeDef>
+
+    <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Grow_Stomach</defName>
+        <label>Grow stomach</label>
+        <description>Grow a natural stomach. Takes 1.5 days to make</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Biomatter</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+        </ingredients>
+        <products>
+            <Stomach>1</Stomach>
+        </products>
+        <recipeUsers>
+            <li>TableOrganvat</li>
+        </recipeUsers>
+        <researchPrerequisite>Prosthesis_making_D2</researchPrerequisite>
+
+        <!-- RecipeDef_UF fields -->
+        <ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>1</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+        <usesTemperature>false</usesTemperature>
+        <processDays>1.5</processDays>
+    </RecipeDef>
+
+    <!--
+	<RecipeDef>
+		<defName>Grow_Jaw</defName>
+		<label>Grow jaw</label>
+		<description>Grow a natural jaw. Takes 1.5 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Biomatter</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+		</ingredients>
+		<products>
+			<Jaw>1</Jaw>
+		</products>
+	</RecipeDef>
+
+		<RecipeDef>
+		<defName>Grow_Leg</defName>
+		<label>Grow leg</label>
+		<description>Grow a natural leg. Takes 1.5 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Biomatter</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+		</ingredients>
+		<products>
+			<Leg>1</Leg>
+		</products>
+	</RecipeDef>
+
+		<RecipeDef>
+		<defName>Grow_Arm</defName>
+		<label>Grow arm</label>
+		<description>Grow a natural arm. Takes 1.5 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Biomatter</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+		</ingredients>
+		<products>
+			<Arm>1</Arm>
+		</products>
+	</RecipeDef>
+    -->
+</Defs>
