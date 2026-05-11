@@ -2,6 +2,8 @@
 <Defs>
 
 	<!-- Furniture -->
+    
+    <!--todo change categories to per type basis?-->
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_SpecialBeds</defName>
@@ -12,8 +14,8 @@
 			<li>DoubleSleepingSpot</li>
 			<li>BagBed</li>
 			<li>GuestBed</li>
-			<li>prison_single_bed_RT</li>
-			<li>prison_single_bed_LB</li>
+			<li>Bed_Prison_Single_Right</li>
+			<li>Bed_Prison_Single_Left</li>
 			<!-- These two are unlocked by certain meme 
 					Which makes them unrecognizable by architect sense
 					Will uncomment once there's a decent solution
@@ -47,7 +49,7 @@
 			<li>Bedroom</li>
 		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
-
+    
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_StandardBeds</defName>
 		<label>standard beds</label>
@@ -57,12 +59,30 @@
 			<li>HideBed</li>
 			<li>Bedroll</li>
 			<li>Bed</li>
-			<li>industrial_single_bed</li>
-			<li>MilleniumBed</li>
+			<li>Bed_Industrial_Single</li>
+			<li>Bed_Millenium_Single</li>
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
 		<order>20</order>
+		<types>
+			<li>Beds</li>
+			<li>Bedroom</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_LoftBeds</defName>
+		<label>loft beds</label>
+		<description>A simple bed for one pawn.</description>
+		<defNames>
+			<li>Bed_Normal_Loft</li>
+			<li>Bed_Industrial_Loft</li>
+			<li>Bed_Millenium_Loft</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+		<order>25</order>
 		<types>
 			<li>Beds</li>
 			<li>Bedroom</li>
@@ -78,9 +98,9 @@
 			<li>HideBedDouble</li>
 			<li>BedrollDouble</li>
 			<li>DoubleBed</li>
-			<li>industrial_double_bed</li>
+			<li>Bed_Industrial_Double</li>
 			<li>RoyalBed</li>
-			<li>MilleniumDoubleBed</li>
+			<li>Bed_Millenium_Double</li>
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>
@@ -96,10 +116,10 @@
 		<label>advanced beds</label>
 		<description>A futuristic beds with high rest effectiveness.</description>
 		<defNames>
-			<li>PodBed</li>
-			<li>space_double_bed</li>
-			<li>cryo_single_bed</li>
-			<li>cryo_double_bed</li>
+			<li>Bed_Spacer_Single</li>
+			<li>Bed_Spacer_Double</li>
+			<li>Bed_Cryo_Single</li>
+			<li>Bed_Cryo_Double</li>
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>

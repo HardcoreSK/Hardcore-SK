@@ -581,12 +581,72 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 -->
+    <ThingDef ParentName="BasicBedBase">
+		<defName>Bed_Normal_Loft</defName>
+		<label>industrial loft bed</label>
+		<description>A cozy mattress with sheets on a metal frame for resting. Fits one. Can be built above other beds.</description>
+        <uiIconPath>Things/Building/Furniture/Beds/Normal/loft/normalbed_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Beds/Normal/loft/normalbed</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,3)</drawSize>
+            <damageData>
+                <rect>(0,0.05,1,1.95)</rect>
+            </damageData>
+        </graphicData>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<statBases>
+			<Beauty>7</Beauty>
+			<WorkToBuild>1000</WorkToBuild>
+			<Comfort>0.75</Comfort>
+			<ImmunityGainSpeedFactor>1.03</ImmunityGainSpeedFactor>
+			<BedRestEffectiveness>0.95</BedRestEffectiveness>
+			<SurgerySuccessChanceFactor>0.87</SurgerySuccessChanceFactor>
+			<Bulk>70</Bulk>
+			<Mass>30</Mass>
+		</statBases>
+		<size>(1,2)</size>
+		<stuffCategories Inherit="false">
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+		<costList>
+			<ComponentMedieval>6</ComponentMedieval>
+		</costList>
+		<building>
+			<bed_showSleeperBody>False</bed_showSleeperBody>
+			<bed_healPerDay>7</bed_healPerDay>
+			<paintable>true</paintable>
+		</building>
+        <replaceTags IsNull="true" />
+        <altitudeLayer>PawnRope</altitudeLayer>
+        <clearBuildingArea>false</clearBuildingArea>
+        <canOverlapZones>true</canOverlapZones>
+        <!--<blockLight>true</blockLight>-->
+        <uiIconScale>1.5</uiIconScale>
+        <placeWorkers>
+            <li>SK.PlaceWorker_LoftBed</li>
+        </placeWorkers>
+        <fillPercent>0.20</fillPercent>
+        <comps>
+            <li Class="SK.CompProperties_LoftBed" />
+        </comps>
+		<researchPrerequisites>
+			<li>Beds_B1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<!--================================ industrial beds ======================================-->
+
 	<ThingDef ParentName="BasicBedBase">
-		<defName>industrial_single_bed</defName>
+		<defName>Bed_Industrial_Single</defName>
 		<label>industrial bed</label>
 		<description>A comfy bed. Fits one. The boom of industrial production led to the need of more qualified workers on the more developed Rimworlds. The constraints of space drove the development of more advanced furniture. As a result this quite simple bed design emerged.</description>
 		<graphicData>
-			<texPath>Things/Building/Furniture/Beds/industrial/single/industrialbed</texPath>
+			<texPath>Things/Building/Furniture/Beds/Industrial/single/industrialbed</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1,2)</drawSize>
 			<shadowData>
@@ -628,11 +688,11 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BasicBedBase">
-		<defName>industrial_double_bed</defName>
+		<defName>Bed_Industrial_Double</defName>
 		<label>industrial double bed</label>
 		<description>A comfy bed. Fits two. The boom of industrial production led to the need of more qualified workers on the more developed Rimworlds. The constraints of space drove the development of more advanced furniture. As a result this quite simple bed design emerged.</description>
 		<graphicData>
-			<texPath>Things/Building/Furniture/Beds/industrial/double/industrialbed</texPath>
+			<texPath>Things/Building/Furniture/Beds/Industrial/double/industrialbed</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<shadowData>
@@ -672,11 +732,69 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
+    
+    <ThingDef ParentName="BasicBedBase">
+		<defName>Bed_Industrial_Loft</defName>
+		<label>industrial loft bed</label>
+		<description>A comfy bed. Fits one. Can be built above other beds. The boom of industrial production led to the need of more qualified workers on the more developed Rimworlds. The constraints of space drove the development of more advanced furniture. As a result this quite simple bed design emerged.</description>
+        <uiIconPath>Things/Building/Furniture/Beds/Industrial/loft/industrialbed_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Beds/Industrial/loft/industrialbed</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,3)</drawSize>
+            <damageData>
+                <rect>(0,0.05,1,1.95)</rect>
+            </damageData>
+        </graphicData>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<statBases>
+			<WorkToBuild>1700</WorkToBuild>
+			<Beauty>18</Beauty>
+			<Comfort>0.9</Comfort>
+			<BedRestEffectiveness>1.0</BedRestEffectiveness>
+			<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>0.95</SurgerySuccessChanceFactor>
+			<Bulk>90</Bulk>
+			<Mass>40</Mass>
+		</statBases>
+		<size>(1,2)</size>
+		<stuffCategories Inherit="false">
+			<li>Fabric</li>
+			<li>HF</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+		<costList>
+			<ComponentIndustrial>9</ComponentIndustrial>
+		</costList>
+		<building>
+			<bed_showSleeperBody>False</bed_showSleeperBody>
+			<bed_healPerDay>7</bed_healPerDay>
+			<paintable>true</paintable>
+		</building>
+        <replaceTags IsNull="true" />
+        <altitudeLayer>PawnRope</altitudeLayer>
+        <clearBuildingArea>false</clearBuildingArea>
+        <canOverlapZones>true</canOverlapZones>
+        <!--<blockLight>true</blockLight>-->
+        <uiIconScale>1.5</uiIconScale>
+        <placeWorkers>
+            <li>SK.PlaceWorker_LoftBed</li>
+        </placeWorkers>
+        <fillPercent>0.20</fillPercent>
+        <comps>
+            <li Class="SK.CompProperties_LoftBed" />
+        </comps>
+		<researchPrerequisites>
+			<li>Beds_C1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+	</ThingDef>
 
-	<!--================================ prison bed single right+top ======================================-->
+	<!--================================ prison beds ======================================-->
 
 	<ThingDef ParentName="BasicBedBase">
-		<defName>prison_single_bed_RT</defName>
+		<defName>Bed_Prison_Single_Right</defName>
 		<label>prison bed (R)</label>
 		<description>A bed on a wall for your prisoners. Fits only one. No effort was spared to make this bed look like it came out of the darkest deepest dungeon. The least amount of comfort and a hard surface to sleep will let your prisoners stay alert to finer things of their stay. An art well known among the medieval lords of the Rimworlds.</description>
 		<graphicData>
@@ -720,10 +838,8 @@
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<!--================================ prison bed single left+bottom ======================================-->
-
 	<ThingDef ParentName="BasicBedBase">
-		<defName>prison_single_bed_LB</defName>
+		<defName>Bed_Prison_Single_Left</defName>
 		<label>prison bed (L)</label>
 		<description>A bed on a wall for your prisoners. Fits only one. No effort was spared to make this bed look like it came out of the darkest deepest dungeon. The least amount of comfort and a hard surface to sleep will let your prisoners stay alert to finer things of their stay. An art well known among the medieval lords of the Rimworlds.</description>
 		<graphicData>
@@ -767,10 +883,12 @@
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
 
+	<!--================================ millenium beds ======================================-->
+
 	<ThingDef ParentName="BasicBedBase">
-		<defName>MilleniumBed</defName>
+		<defName>Bed_Millenium_Single</defName>
 		<label>millenium bed</label>
-		<description>Millenium Line Bed.</description>
+		<description>A modern single bed - the height of perfection!</description>
 		<graphicData>
 			<texPath>Things/Building/Furniture/Beds/Modern/single/modernbed</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -817,9 +935,9 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BasicBedBase">
-		<defName>MilleniumDoubleBed</defName>
+		<defName>Bed_Millenium_Double</defName>
 		<label>millenium double bed</label>
-		<description>Millenium Line Double bed.</description>
+		<description>A modern double bed - the height of perfection!</description>
 		<graphicData>
 			<texPath>Things/Building/Furniture/Beds/Modern/double/modernbed</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -862,6 +980,65 @@
 		<constructionSkillPrerequisite>13</constructionSkillPrerequisite>
 	</ThingDef>
 
+    <ThingDef ParentName="BasicBedBase">
+		<defName>Bed_Millenium_Loft</defName>
+		<label>millenium loft bed</label>
+		<description>A modern single bed - the height of perfection!</description>
+        <uiIconPath>Things/Building/Furniture/Beds/Modern/loft/modernbed_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Beds/Modern/loft/modernbed</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,3)</drawSize>
+            <damageData>
+                <rect>(0,0.05,1,1.95)</rect>
+            </damageData>
+        </graphicData>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<statBases>
+			<Beauty>10</Beauty>
+			<WorkToBuild>1900</WorkToBuild>
+			<Comfort>1.07</Comfort>
+			<BedRestEffectiveness>1.05</BedRestEffectiveness>
+			<ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>0.97</SurgerySuccessChanceFactor>
+			<Bulk>60</Bulk>
+			<Mass>25</Mass>
+		</statBases>
+		<size>(1,2)</size>
+		<stuffCategories Inherit="false">
+			<li>Fabric</li>
+			<li>HF</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<Rubber>20</Rubber>
+			<Plastic>25</Plastic>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<building>
+			<bed_showSleeperBody>False</bed_showSleeperBody>
+			<bed_healPerDay>7</bed_healPerDay>
+			<paintable>true</paintable>
+		</building>
+        <replaceTags IsNull="true" />
+        <altitudeLayer>PawnRope</altitudeLayer>
+        <clearBuildingArea>false</clearBuildingArea>
+        <canOverlapZones>true</canOverlapZones>
+        <!--<blockLight>true</blockLight>-->
+        <uiIconScale>1.5</uiIconScale>
+        <placeWorkers>
+            <li>SK.PlaceWorker_LoftBed</li>
+        </placeWorkers>
+        <fillPercent>0.20</fillPercent>
+        <comps>
+            <li Class="SK.CompProperties_LoftBed" />
+        </comps>
+		<researchPrerequisites>
+			<li>Beds_C3</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+	</ThingDef>
 
 	<!--================================ heart double bed ======================================-->
 <!-- DefOverwrite
@@ -918,7 +1095,7 @@
 	<!--================================ pod beds ======================================-->
 
 	<ThingDef ParentName="BasicBedBase">
-		<defName>PodBed</defName>
+		<defName>Bed_Cryo_Single</defName>
 		<label>pod bed</label>
 		<description>A futuristic bed with high rest effectiveness.</description>
 		<graphicData>
@@ -970,7 +1147,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BasicBedBase">
-		<defName>space_double_bed</defName>
+		<defName>Bed_Cryo_Double</defName>
 		<label>double pod bed</label>
 		<description>A comfy bed. Fits two. On the task of "going to space" this bed was literally first developed as a small spacecraft. After this fatal first mistake the possibility to sleep inside and a bit more comfort was added. This didn't prevent the advertising agency from using the terms "fly in your sleep" and "sleeping on clouds". After several lawsuits from customers with strange injuries the advertisment changed to a more down-to-earth direction.</description>
 		<graphicData>
@@ -1024,7 +1201,7 @@
 	<!--================================ cryo beds ======================================-->
 
 	<ThingDef ParentName="BasicBedBase">
-		<defName>cryo_single_bed</defName>
+		<defName>Bed_Spacer_Single</defName>
 		<label>futuristic single bed</label>
 		<description>A comfy futuristic bed. Fits one. During the research of cryptosleep the possibilty of a short sleeping cycle based on this technology emerged. However most people still refuse to use these beds in fear of never waking up or losing several years by accident. This lead to several Rimworld legends although all exposed by scientists as fictional storys many people fear the device.</description>
 		<graphicData>
@@ -1073,7 +1250,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BasicBedBase">
-		<defName>cryo_double_bed</defName>
+		<defName>Bed_Spacer_Double</defName>
 		<label>futuristic double bed</label>
 		<description>A comfy futuristic bed. Fits two. During the research of cryptosleep the possibilty of a short sleeping cycle based on this technology emerged. However most people still refuse to use these beds in fear of never waking up or losing several years by accident. This lead to several Rimworld legends although all exposed by scientists as fictional storys many people fear the device.</description>
 		<graphicData>

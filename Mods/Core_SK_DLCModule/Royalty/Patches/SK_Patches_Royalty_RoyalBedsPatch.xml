@@ -3,10 +3,10 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"]/things[li[text()="DoubleBed" or text()="RoyalBed"]]</xpath>
 		<value>
-			<li>industrial_double_bed</li>
-			<li>MilleniumDoubleBed</li>
-			<li>space_double_bed</li>
-			<li>cryo_double_bed</li>
+			<li>Bed_Industrial_Double</li>
+			<li>Bed_Millenium_Double</li>
+			<li>Bed_Spacer_Double</li>
+			<li>Bed_Cryo_Double</li>
 		</value>
 	</Operation>
 </Patch>
