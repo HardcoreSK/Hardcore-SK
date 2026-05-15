@@ -107,4 +107,16 @@
 		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
 	</JobDef>
 
+    <JobDef>
+        <defName>ChatOnComms</defName>
+        <driverClass>JobDriver_WatchBuilding</driverClass>
+        <reportString>сhatting on сomms</reportString>
+        <joyMaxParticipants>1</joyMaxParticipants>
+        <joyDuration>4000</joyDuration>
+        <joySkill>Social</joySkill>
+		<joyGainRate>1.05</joyGainRate>
+        <joyXpPerTick>0.003</joyXpPerTick>
+        <joyKind>Social</joyKind>
+    </JobDef>
+
 </Defs>

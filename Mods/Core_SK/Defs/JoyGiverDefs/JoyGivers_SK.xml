@@ -1,20 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <JoyGiverDef>
-    <defName>WatchGlassTelevision</defName>
-    <giverClass>JoyGiver_WatchBuilding</giverClass>
-    <baseChance>2</baseChance>
-    <thingDefs>
-      <li>TubeTelevision</li>
-      <li>FlatscreenTelevision</li>
-      <li>MegascreenTelevision</li>
-    </thingDefs>
-    <jobDef>WatchGlassTelevision</jobDef>
-    <requiredCapacities>
-      <li>Sight</li>
-    </requiredCapacities>
-    <joyKind>Television</joyKind>
-  </JoyGiverDef>
+    <JoyGiverDef>
+        <defName>WatchGlassTelevision</defName>
+        <giverClass>JoyGiver_WatchBuilding</giverClass>
+        <baseChance>2</baseChance>
+        <thingDefs>
+            <li>TubeTelevision</li>
+            <li>FlatscreenTelevision</li>
+            <li>MegascreenTelevision</li>
+        </thingDefs>
+        <jobDef>WatchGlassTelevision</jobDef>
+        <requiredCapacities>
+            <li>Sight</li>
+        </requiredCapacities>
+        <joyKind>Television</joyKind>
+    </JoyGiverDef>
+    
+    <JoyGiverDef>
+        <defName>ChatOnComms</defName>
+        <giverClass>JoyGiver_InteractBuildingInteractionCell</giverClass>
+        <baseChance>2</baseChance>
+        <thingDefs>
+            <li>CommsConsole</li>
+        </thingDefs>
+        <jobDef>ChatOnComms</jobDef>
+        <desireSit>false</desireSit>
+        <joyKind>Social</joyKind>
+        <requiredCapacities>
+            <li>Sight</li>
+            <li>Manipulation</li>
+            <li>Hearing</li>
+            <li>Talking</li>
+        </requiredCapacities>
+    </JoyGiverDef>
 
 </Defs>
