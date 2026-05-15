@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <SoundDef>
+        <defName>SK_HorrorScannerAlarm</defName>
+        <context>MapOnly</context>
+		<sustain>True</sustain>
+        <eventNames />
+        <priorityMode>PrioritizeNearest</priorityMode>
+        <sustainStartSound />
+		<sustainStopSound />
+        <sustainFadeoutTime>0.25</sustainFadeoutTime>
+        <subSounds>
+            <li>
+                <muteWhenPaused>True</muteWhenPaused>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>HorrorAlarm</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>100</min>
+                    <max>150</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>0.9541177</min>
+                    <max>1.091765</max>
+                </pitchRange>
+				<sustainLoop>True</sustainLoop>
+                <repeatMode>NeverLastHalf</repeatMode>
+                <sustainLoopDurationRange>
+                    <min>9999</min>
+                    <max>9999</max>
+                </sustainLoopDurationRange>
+                <sustainIntervalRange>
+                    <min>0</min>
+                    <max>0</max>
+                </sustainIntervalRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+</Defs>

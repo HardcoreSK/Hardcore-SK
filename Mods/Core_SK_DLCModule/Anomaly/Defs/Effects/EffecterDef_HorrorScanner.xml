@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <EffecterDef>
+        <defName>HorrorScannerEffect</defName>
+        <children>
+			<li>
+				<subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+				<soundDef>SK_HorrorScannerAlarm</soundDef>
+			</li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+                <rotation>0~0</rotation>
+                <fleckDef>HorrorScannerFleck</fleckDef>
+                <ticksBetweenMotes>60</ticksBetweenMotes>
+                <spawnLocType>OnSource</spawnLocType>
+            </li>
+        </children>
+    </EffecterDef>
+</Defs>
