@@ -1193,7 +1193,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 				</filter>
 			</fixedStorageSettings>
 		</building>
-		<staticSunShadowHeight>1</staticSunShadowHeight><!--
+		<staticSunShadowHeight>0.4</staticSunShadowHeight><!--
 		<comps>
 			<li Class="RimFridge.CompProperties_SecondLayer">
 				<graphicData>
@@ -2606,7 +2606,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		</graphicData>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<uiIconPath>Things/Building/Storage/Hayloft/HayLoft_ico</uiIconPath>
-		<staticSunShadowHeight>1</staticSunShadowHeight>
+		<staticSunShadowHeight>0.4</staticSunShadowHeight>
 		<size>(2,1)</size>
 		<statBases>
 			<MaxHitPoints>110</MaxHitPoints>
@@ -3505,17 +3505,17 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 
 	<!--<ThingDef ParentName="FridgeBase">-->
 	<!-- Removed frigeration due to eating-pathfinding issues -->
-	<ThingDef ParentName="LWM_DeepStorage">	
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">	
 		<defName>FoodDisplayCounter</defName>
 		<label>food display counter</label>
 		<description>A glass case for displaying meals, baked goods, or even drugs, and helps keep them fresh longer.</description>
 		<graphicData>
-			<texPath>Things/Building/Storage/FoodDisplay</texPath>
+			<texPath>Things/Building/Storage/FoodDisplay/FoodDisplay</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<drawerType>MapMeshAndRealTime</drawerType>
-		<uiIconPath>Things/Building/Storage/FoodDisplay_ico</uiIconPath>
+		<uiIconPath>Things/Building/Storage/FoodDisplay/FoodDisplay_ico</uiIconPath>
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Plastic</li>
@@ -3537,6 +3537,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<size>(2,1)</size>
 		<building>
+			<maxItemsInCell>7</maxItemsInCell>
 			<fixedStorageSettings>
 				<filter>
 					<categories>
@@ -3559,7 +3560,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		</building>
 		<tickerType>Rare</tickerType>
 		<!-- need this for rotModified comp -->
-		<comps>
+		<comps><!--
 			<li Class='LWM.DeepStorage.Properties'>
 				<minNumberStacks>4</minNumberStacks>
 				<maxNumberStacks>7</maxNumberStacks>
@@ -3567,10 +3568,10 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 				<additionalTimeEachStack>15</additionalTimeEachStack>
 				<additionalTimeEachDef>2</additionalTimeEachDef>
 				<showContents>true</showContents>
-			</li>
+			</li>-->
 			<li Class="SK.CompProperties_RotModified">
 				<rotmodifier>0.65</rotmodifier>
-			</li>
+			</li><!--
 			<li Class="RimFridge.CompProperties_SecondLayer">
 				<graphicData>
 					<texPath>Things/Building/Storage/FoodDisplayTop</texPath>
@@ -3579,7 +3580,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 					<drawSize>(3,3)</drawSize>
 				</graphicData>
 				<altitudeLayer>Projectile</altitudeLayer>
-			</li>
+			</li>-->
 		</comps>
 		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 		<researchPrerequisites>
@@ -3587,19 +3588,83 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		</researchPrerequisites>
 	</ThingDef>
 
+	
+    <AdaptiveStorage.GraphicsDef>
+		<defName>FoodDisplayCounterASF</defName>
+		<targetDef>FoodDisplayCounter</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/FoodDisplay/FoodDisplay</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(3,3)</drawSize>
+                </graphicData>
+				<graphicDatas>
+					<li>
+						<texPath>Things/Building/Storage/FoodDisplay/FoodDisplayTop</texPath>
+						<graphicClass>Graphic_Multi</graphicClass>
+						<shaderType>CutoutComplex</shaderType>
+						<drawSize>(3,3)</drawSize>
+						<renderQueue>2950</renderQueue>
+						<altitudeLayer>ItemImportant</altitudeLayer>
+						<drawOffset>(0,1.2,0)</drawOffset>
+					</li>
+				</graphicDatas>
+            </li>
+        </graphics>
+		<showContainedItems>true</showContainedItems>
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.23,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.23)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.23)</stackOffsetWest>
+							<drawOffset>(-0.07,0,0.15)</drawOffset>
+							<drawOffsetEast>(-0.18,0.1,0.05)</drawOffsetEast>
+							<drawOffsetWest>(-0.15,0.1,0.05)</drawOffsetWest>
+							<drawScale>0.73</drawScale>
+							<rotation>0</rotation>
+						</r0>					
+					</rows>
+				</c0>
+				<c1>
+					<rows>
+						<r0>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0.23,0,0)</stackOffset>
+							<stackOffsetEast>(0,-0.02,0.23)</stackOffsetEast>
+							<stackOffsetWest>(0,-0.02,0.23)</stackOffsetWest>
+							<drawOffset>(-0.97,0.05,-0.1)</drawOffset>
+							<drawOffsetEast>(0.15,0.1,-1.05)</drawOffsetEast>
+							<drawOffsetWest>(0.22,0.1,-1.05)</drawOffsetWest>
+							<drawScale>0.73</drawScale>
+							<rotation>0</rotation>
+						</r0>
+					</rows>
+				</c1>
+			</columns>
+		</itemGraphics>
+		<!--<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast> (distance between horizontal,?,distance between vertical) -->
+		<!--<drawOffsetEast>(-0.15,2.05,0.45)</drawOffsetEast> (x -left & right, y - layer, z - up & down) -->
+	</AdaptiveStorage.GraphicsDef>
+	
+
 	<!--Medicine Cabinet-->
-	<ThingDef ParentName="LWM_DeepStorage">
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<defName>SK_Medicine_Cabinet</defName>
 		<label>Medical cart</label>
 		<description>A cart for quickly organizing medicine and sanitation materials. Makes it easier to keep exam rooms clean.</description>
 		<pathCost>100</pathCost>
 		<graphicData>
-			<texPath>Things/Building/Storage/MedicalCart</texPath>
+			<texPath>Things/Building/Storage/MedicalCart/MedicalCart</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1.5,1.5)</drawSize>
 			<shadowData>				
-				<volume>(1.7,0.4,.7)</volume>
-				<offset>(.1,0,0)</offset>
+				<volume>(0.7,0.4,0.7)</volume>
+				<offset>(0,0,0)</offset>
 			</shadowData>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -3622,6 +3687,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			<Cleanliness>5</Cleanliness>
 		</statBases>
 		<building>
+			<maxItemsInCell>8</maxItemsInCell>
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
 			<fixedStorageSettings>
 				<filter>
@@ -3649,18 +3715,15 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 			</fixedStorageSettings>
 		</building>
 		<tickerType>Rare</tickerType>
-		<comps>
+		<comps><!--
 			<li Class="LWM.DeepStorage.Properties">
 				<maxNumberStacks>8</maxNumberStacks>
-				<!--<timeStoringTakes>350</timeStoringTakes>-->
 				<minTimeStoringTakes>15</minTimeStoringTakes>
 				<additionalTimeEachStack>5</additionalTimeEachStack>
 				<additionalTimeEachDef>5</additionalTimeEachDef>
-				<!--<additionalTimeStackSize>5</additionalTimeStackSize>-->
 				<overlayType>SumOfAllItems</overlayType>
 				<showContents>false</showContents>
-				<!--TODO: SumOfItemsPerCell?-->
-			</li>
+			</li>-->
 			<li Class="SK.CompProperties_RotModified">
 				<rotmodifier>0.6</rotmodifier>
 			</li>
@@ -3670,6 +3733,26 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
+	
+    <AdaptiveStorage.GraphicsDef>
+		<defName>SK_Medicine_CabinetASF</defName>
+		<targetDef>SK_Medicine_Cabinet</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Storage/MedicalCart/MedicalCart</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.5,1.5)</drawSize>
+					<shadowData>				
+						<volume>(0.7,0.4,0.7)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+					<shaderType>CutoutComplex</shaderType>
+                </graphicData>
+            </li>
+        </graphics>
+		<showContainedItems>false</showContainedItems>
+	</AdaptiveStorage.GraphicsDef>
 	
 	<!--Weapons Cabinet-->
 	<ThingDef ParentName="LWM_DeepStorage">
