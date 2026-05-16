@@ -891,6 +891,7 @@
 		<blockWeather>true</blockWeather>
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<clearBuildingArea>false</clearBuildingArea>
 		<statBases>
 			<WorkToBuild>700</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -928,6 +929,7 @@
 				<thingDefs>
 					<li>Wall</li>
 					<li>ClutterSilverWall</li>
+					<li>UtilityWall</li>
 					<li>ClutterUWallLight</li>
 				</thingDefs>
 			</li>
