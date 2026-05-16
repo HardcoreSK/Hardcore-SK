@@ -3487,11 +3487,10 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 				<c0>
 					<rows>
 						<r0>
-							<stackBehaviour>Circle</stackBehaviour>
-							<stackOffset>(0,0,1.8)</stackOffset>
-							<drawOffset>(0,0,0.08)</drawOffset>
-							<drawOffsetEast>(0,0,0.12)</drawOffsetEast>
-							<drawOffsetWest>(0,0,0.12)</drawOffsetWest>
+							<stackBehaviour>Stack</stackBehaviour>
+							<stackOffset>(0,0,0.2)</stackOffset>
+							<drawOffset>(0,0,0.02)</drawOffset>
+							<!--<drawOffsetWest>(-0.1,0,0.1)</drawOffsetWest>-->
 							<!--<drawScale>0.9</drawScale>-->
 							<stackOffsetFactor>0.3</stackOffsetFactor>
 							<drawScale>0.8</drawScale>
