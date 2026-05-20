@@ -102,6 +102,10 @@
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
+        <building>
+            <workTableRoomRole IsNull="True" />
+            <workTableNotInRoomRoleFactor IsNull="True" />
+        </building>
 		<researchPrerequisites>
 			<li>Craft_B1</li>
 		</researchPrerequisites>
@@ -155,6 +159,7 @@
 			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<building>
+            <workTableNotInRoomRoleFactor>1.0</workTableNotInRoomRoleFactor>
 			<uninstallWork>1850</uninstallWork>
 		</building>
 		<comps>
@@ -308,6 +313,7 @@
 			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<building>
+            <workTableNotInRoomRoleFactor>1.0</workTableNotInRoomRoleFactor>
 			<heatPerTickWhileWorking>2</heatPerTickWhileWorking>
 		</building>
 		<researchPrerequisites>
