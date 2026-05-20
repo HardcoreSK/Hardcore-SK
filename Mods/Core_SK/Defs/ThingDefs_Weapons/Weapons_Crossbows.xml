@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- SCORPION -->
+	<ThingDef ParentName="RangedWeaponMedievalBase">
+		<defName>Norbal_Scorpion</defName>
+		<label>Scorpion Crossbow</label>
+		<description>Fearsome norbal crossbow. Deadly but slow.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Crossbows/NorbalCrossBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Crossbow_I_hold</soundInteract>
+		<stuffCategories>
+			<li>WoodLogs</li>
+		</stuffCategories>
+		<costStuffCount>55</costStuffCount>
+		<costList>
+			<ComponentMedieval>6</ComponentMedieval>
+		</costList>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<SightsEfficiency>1.05</SightsEfficiency>
+			<ShotSpread>0.55</ShotSpread>
+			<SwayFactor>1.17</SwayFactor>
+			<Bulk>4.50</Bulk>
+			<Mass>3.30</Mass>
+			<RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>NorbalRanged</li>
+			<li>NorbalHeroRanged</li>
+			<li>CE_Bow</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<tradeability>Sellable</tradeability>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_MetallicBolt</defaultProjectile>
+				<warmupTime>1.25</warmupTime>
+				<range>40</range>
+				<soundCast>Crossbow_S_hold</soundCast>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>1.05</reloadTime>
+				<ammoSet>AmmoSet_Bolt</ammoSet>
+				<throwMote>false</throwMote>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<noSnapshot>True</noSnapshot>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>Bow_B2</researchPrerequisite>
+		</recipeMaker>
+		<thingCategories>
+			<li>CrossbarRanged</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!-- ARBALEST -->
+	<ThingDef ParentName="RangedWeaponMedievalBase">
+		<defName>Arbalest</defName>
+		<label>Arbalest</label>
+		<description>A large crossbow with a special mechanism for drawing back and releasing the string.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Crossbows/Arbalest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Crossbow_I_hold</soundInteract>
+		<stuffCategories>
+			<li>WoodLogs</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<ComponentMedieval>7</ComponentMedieval>
+		</costList>
+		<statBases>
+			<WorkToMake>7200</WorkToMake>
+			<SightsEfficiency>1.15</SightsEfficiency>
+			<ShotSpread>0.4</ShotSpread>
+			<SwayFactor>1.14</SwayFactor>
+			<Bulk>4.50</Bulk>
+			<Mass>3.30</Mass>
+			<RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>MedievalRanged</li>
+			<li>CE_Bow</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<tradeability>Sellable</tradeability>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_MetallicBolt</defaultProjectile>
+				<warmupTime>1.25</warmupTime>
+				<range>42</range>
+				<soundCast>Crossbow_S_hold</soundCast>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>2.00</reloadTime>
+				<ammoSet>AmmoSet_Bolt</ammoSet>
+				<throwMote>false</throwMote>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<noSnapshot>True</noSnapshot>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>Bow_B2</researchPrerequisite>
+		</recipeMaker>
+		<thingCategories>
+			<li>CrossbarRanged</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!-- CROSSBOW -->
+	<ThingDef ParentName="RangedWeaponMedievalBase">
+		<defName>Crossbow</defName>
+		<label>Crossbow</label>
+		<description>A weapon consisting of a bow fixed crosswise on a wooden stock.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Crossbows/Crossbow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Crossbow_I_hold</soundInteract>
+		<stuffCategories>
+			<li>WoodLogs</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+		<costList>
+			<ComponentMedieval>8</ComponentMedieval>
+		</costList>
+		<statBases>
+			<WorkToMake>6600</WorkToMake>
+			<SightsEfficiency>1.1</SightsEfficiency>
+			<ShotSpread>0.5</ShotSpread>
+			<SwayFactor>1.12</SwayFactor>
+			<Bulk>4.50</Bulk>
+			<Mass>3.30</Mass>
+			<RangedWeapon_Cooldown>1.28</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>MedievalRanged</li>
+			<li>CE_Bow</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<tradeability>Sellable</tradeability>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_MetallicBolt</defaultProjectile>
+				<warmupTime>1.25</warmupTime>
+				<range>36</range>
+				<soundCast>Crossbow_S_hold</soundCast>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>1.30</reloadTime>
+				<ammoSet>AmmoSet_Bolt</ammoSet>
+				<throwMote>false</throwMote>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<noSnapshot>True</noSnapshot>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>Greatbow</researchPrerequisite>
+		</recipeMaker>
+		<thingCategories>
+			<li>CrossbarRanged</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!-- COMPOUND -->
+	<ThingDef ParentName="RangedWeaponIndustrialBase">
+		<defName>Crossbow_Compound</defName>
+		<label>Compound Crossbow</label>
+		<description>A compound crossbow uses a levering system, usually of cables and pulleys, to bend the limbs. The pulley system grants the user a mechanical advantage, and so the limbs of a compound crossbow are much stiffer than those of a classical crossbow.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Crossbows/СrossbowCompound</texPath>
+			<graphicClass>SK.Graphic_SingleNoColor</graphicClass>
+		</graphicData>
+		<soundInteract>Crossbow_I_hold</soundInteract>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<costList>
+			<Carbon>5</Carbon>
+			<Mechanism>4</Mechanism>
+			<ComponentIndustrial>12</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>11200</WorkToMake>
+			<SightsEfficiency>1.25</SightsEfficiency>
+			<ShotSpread>0.2</ShotSpread>
+			<SwayFactor>0.8</SwayFactor>
+			<Bulk>4.50</Bulk>
+			<Mass>4.30</Mass>
+			<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>CE_Bow</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<tradeability>Sellable</tradeability>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_MetallicBolt</defaultProjectile>
+				<warmupTime>1.00</warmupTime>
+				<range>50</range>
+				<soundCast>Crossbow_S_hold</soundCast>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>1.40</reloadTime>
+				<ammoSet>AmmoSet_Bolt</ammoSet>
+				<throwMote>false</throwMote>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<noSnapshot>True</noSnapshot>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>Bow_C1</researchPrerequisite>
+		</recipeMaker>
+		<thingCategories>
+			<li>CrossbarRanged</li>
+		</thingCategories>
+	</ThingDef>
+
+</Defs>

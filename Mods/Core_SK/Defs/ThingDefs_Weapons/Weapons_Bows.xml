@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- SHORT BOW -->
+	<ThingDef ParentName="RangedWeaponNeolithicBase">
+		<defName>Bow_Short</defName>
+		<label>Short Bow</label>
+		<description>A simple short bow. It was made with skill from primitive technology.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Bows/BowShort</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Bow_Small</soundInteract>
+		<stuffCategories>
+			<li>WoodLogs</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<SightsEfficiency>0.85</SightsEfficiency>
+			<ShotSpread>1</ShotSpread>
+			<SwayFactor>2</SwayFactor>
+			<Bulk>3.0</Bulk>
+			<Mass>1.8</Mass>
+			<RangedWeapon_Cooldown>1.15</RangedWeapon_Cooldown>
+		</statBases>
+		<tradeability>Sellable</tradeability>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+			<li>CE_Bow</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Neolithic</li>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<techLevel>Neolithic</techLevel>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_Arrow_Stone</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>30</range>
+				<soundCast>Bow_Small</soundCast>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<ammoSet>AmmoSet_Arrow</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<noSnapshot>True</noSnapshot>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>BowRanged</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!-- GREAT BOW -->
+	<ThingDef ParentName="RangedWeaponNeolithicBase">
+		<defName>Bow_Great</defName>
+		<label>Great Bow</label>
+		<description>A powerful great bow. It fires a heavy arrow over long distances.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Bows/BowGreat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Bow_Large</soundInteract>
+		<tradeability>Sellable</tradeability>
+		<stuffCategories>
+			<li>WoodLogs</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<ComponentMedieval>6</ComponentMedieval>
+		</costList>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<SightsEfficiency>0.95</SightsEfficiency>
+			<ShotSpread>1</ShotSpread>
+			<SwayFactor>2</SwayFactor>
+			<Bulk>5.00</Bulk>
+			<Mass>3.00</Mass>
+			<RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>MedievalRanged</li>
+			<li>NeolithicRangedBasic</li>
+			<li>CE_Bow</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_Arrow_Stone</defaultProjectile>
+				<warmupTime>1.3</warmupTime>
+				<range>38</range>
+				<soundCast>Bow_Large</soundCast>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<ammoSet>AmmoSet_Arrow</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<noSnapshot>True</noSnapshot>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>Bow_A1</researchPrerequisite>
+		</recipeMaker>
+		<thingCategories>
+			<li>BowRanged</li>
+		</thingCategories>
+		<rotateInShelves>false</rotateInShelves>
+	</ThingDef>
+
+	<!-- RECURVE BOW -->
+	<ThingDef ParentName="RangedWeaponMedievalBase">
+		<defName>Bow_Recurve</defName>
+		<label>Recurve Bow</label>
+		<description>A recurve bow stores more energy and delivers energy more efficiently than the equivalent straight-limbed bow.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Bows/BowRecurve</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Bow_Recurve</soundInteract>
+		<stuffCategories>
+			<li>WoodLogs</li>
+		</stuffCategories>
+		<costStuffCount>62</costStuffCount>
+		<statBases>
+			<WorkToMake>7000</WorkToMake>
+			<SightsEfficiency>1.0</SightsEfficiency>
+			<ShotSpread>2</ShotSpread>
+			<SwayFactor>1</SwayFactor>
+			<Bulk>4.5</Bulk>
+			<Mass>2.0</Mass>
+			<RangedWeapon_Cooldown>1.10</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+			<li>CE_Bow</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<tradeability>Sellable</tradeability>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>1.18</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_StreamlinedArrow_Stone</defaultProjectile>
+				<warmupTime>0.85</warmupTime>
+				<range>34</range>
+				<soundCast>Bow_Recurve</soundCast>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<ammoSet>AmmoSet_StreamlinedArrow</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<noSnapshot>True</noSnapshot>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>RecurveBow</researchPrerequisite>
+		</recipeMaker>
+		<thingCategories>
+			<li>BowRanged</li>
+		</thingCategories>
+		<rotateInShelves>false</rotateInShelves>
+	</ThingDef>
+
+	<!-- SCYTHIAN BOW -->
+	<ThingDef ParentName="RangedWeaponMedievalBase">
+		<defName>NorbalBow_Grape</defName>
+		<label>Norbal Bow</label>
+		<description>A powerful Norbal bow. Fires heavy arrows at long distances.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Bows/NorbalBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Bow_Recurve</soundInteract>
+		<stuffCategories>
+			<li>WoodLogs</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<statBases>
+			<WorkToMake>7500</WorkToMake>
+			<SightsEfficiency>1.1</SightsEfficiency>
+			<ShotSpread>2.15</ShotSpread>
+			<SwayFactor>1.15</SwayFactor>
+			<Bulk>5.50</Bulk>
+			<Mass>3.25</Mass>
+			<RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>NorbalRanged</li>
+			<li>CE_Bow</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<tradeability>Sellable</tradeability>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.88</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_Arrow_Stone</defaultProjectile>
+				<warmupTime>0.8</warmupTime>
+				<range>40</range>
+				<soundCast>Bow_Recurve</soundCast>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<ammoSet>AmmoSet_Arrow</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<noSnapshot>True</noSnapshot>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>RecurveBow</researchPrerequisite>
+		</recipeMaker>
+		<thingCategories>
+			<li>BowRanged</li>
+		</thingCategories>
+		<rotateInShelves>false</rotateInShelves>
+	</ThingDef>
+    
+    <!-- COMPOUND BOW -->
+	<ThingDef ParentName="RangedWeaponIndustrialBase">
+		<defName>Bow_Compound</defName>
+		<label>Compound Bow</label>
+		<description>A compound bow uses a levering system, usually of cables and pulleys, to bend the limbs. The pulley system grants the user a mechanical advantage, and so the limbs of a compound bow are much stiffer than those of a recurve bow or longbow.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Bows/BowCompound</texPath>
+			<graphicClass>SK.Graphic_SingleNoColor</graphicClass>
+		</graphicData>
+		<soundInteract>Bow_Recurve</soundInteract>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<SightsEfficiency>1.1</SightsEfficiency>
+			<ShotSpread>0.9</ShotSpread>
+			<SwayFactor>1</SwayFactor>
+			<Bulk>5</Bulk>
+			<Mass>3.0</Mass>
+			<RangedWeapon_Cooldown>0.80</RangedWeapon_Cooldown>
+		</statBases>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<costList>
+			<Carbon>5</Carbon>
+			<Mechanism>2</Mechanism>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<weaponTags>
+			<li>CE_Bow</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<tradeability>Sellable</tradeability>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>1</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_StreamlinedArrow_Steel</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>42</range>
+				<soundCast>Bow_Recurve</soundCast>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<ammoSet>AmmoSet_StreamlinedArrow</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<noSnapshot>True</noSnapshot>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>Bow_C1</researchPrerequisite>
+		</recipeMaker>
+		<thingCategories>
+			<li>BowRanged</li>
+		</thingCategories>
+		<rotateInShelves>false</rotateInShelves>
+	</ThingDef>
+
+    <!-- ARCHOTECH BOW -->
+	<ThingDef ParentName="RangedWeaponIndustrialBase">
+		<defName>Bow_Archotech</defName>
+		<label>Archotech Bow</label>
+		<description>Bow of archotech origin. No one know why or how, but it is here. Endless explosive arrows, small autoaim, endless possibilities.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Bows/BowArchotech</texPath>
+			<graphicClass>SK.Graphic_SingleNoColor</graphicClass>
+		</graphicData>
+		<soundInteract>Bow_Recurve</soundInteract>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MarketValue>30000</MarketValue>
+			<WorkToMake>30000</WorkToMake>
+			<SightsEfficiency>1.5</SightsEfficiency>
+			<ShotSpread>0.2</ShotSpread>
+			<SwayFactor>1</SwayFactor>
+			<Bulk>5</Bulk>
+			<Mass>1.0</Mass>
+			<RangedWeapon_Cooldown>0.70</RangedWeapon_Cooldown>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<costList>
+			<Carbon>5</Carbon>
+			<Mechanism>2</Mechanism>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<weaponTags>
+			<li>CE_Bow</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>ShortShots</li>
+		</weaponClasses>
+        <generateCommonality>0</generateCommonality>
+        <deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
+        <relicChance>0</relicChance>
+		<tradeability>None</tradeability>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>1</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_StreamlinedArrow_ArchoExplosive</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+                <burstShotCount>3</burstShotCount>
+				<range>60</range>
+				<soundCast>Bow_Recurve</soundCast>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<noSnapshot>True</noSnapshot>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>Bow_Archotech</researchPrerequisite>
+		</recipeMaker>
+		<thingCategories>
+			<li>BowRanged</li>
+		</thingCategories>
+		<rotateInShelves>false</rotateInShelves>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+</Defs>

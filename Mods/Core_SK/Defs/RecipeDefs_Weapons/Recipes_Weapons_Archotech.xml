@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>ReverseEngineer_ArchotechBow</defName>
+		<label>Reverse Engineer Archotech Bow</label>
+		<description>You dont know how to make it. Its time to change that.</description>
+		<jobString>Researching Archotech Bow.</jobString>
+		<workAmount>50000</workAmount>
+		<skillRequirements>
+			<Crafting>15</Crafting>
+			<Intellectual>15</Intellectual>
+			<Artistic>5</Artistic>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Bow_Archotech</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Techprint_Bow_Archotech>1</Techprint_Bow_Archotech>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Bow_Archotech</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>MechWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<unfinishedThingDef>UnfinishedResearch</unfinishedThingDef>
+	</RecipeDef>
+
+</Defs>

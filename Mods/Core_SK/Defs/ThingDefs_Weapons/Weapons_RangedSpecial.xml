@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- BLOWGUN -->
+	<ThingDef ParentName="RangedWeaponNeolithicBase">
+		<defName>blowgun</defName>
+		<label>blowgun</label>
+		<description>A blowgun with a set of poison darts.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Special/Blowgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Bow_Small</soundInteract>
+		<stuffCategories>
+			<li>WoodLogs</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+		<costList>
+			<MedicineHerbal>5</MedicineHerbal>
+		</costList>
+		<statBases>
+			<WorkToMake>2500</WorkToMake>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>1.5</ShotSpread>
+			<SwayFactor>1</SwayFactor>
+			<Bulk>0.90</Bulk>
+			<Mass>0.40</Mass>
+			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+		</statBases>
+		<tradeability>Sellable</tradeability>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+			<li>CE_Bow</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>PoisonDart</defaultProjectile>
+				<warmupTime>0.48</warmupTime>
+				<range>20</range>
+				<soundCast>BlowgunFiring</soundCast>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>0.75</reloadTime>
+				<ammoSet>AmmoSet_Darts</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<noSnapshot>True</noSnapshot>
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>BowRanged</li>
+		</thingCategories>
+		<rotateInShelves>false</rotateInShelves>
+	</ThingDef>
+
+</Defs>

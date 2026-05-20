@@ -136,6 +136,20 @@
 			<li>Metallic</li>
 		</stuffCategories>
 	</ThingDef>
+    
+    <ThingDef ParentName="UnfinishedBase">
+		<defName>UnfinishedResearch</defName>
+		<label>unfinished research</label>
+		<description>An unfinished research of some kind.</description>
+		<statBases>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/UnfinishedGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
 
 	<!-- <ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedArmor</defName>
