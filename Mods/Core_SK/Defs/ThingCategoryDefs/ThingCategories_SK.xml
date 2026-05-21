@@ -590,6 +590,11 @@
 		<label>Special</label>
 		<parent>WeaponsMelee</parent>
 	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>ArchotechMelee</defName>
+		<label>Archotech</label>
+		<parent>WeaponsMelee</parent>
+	</ThingCategoryDef>
 	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>WeaponsRanged</defName>
@@ -660,6 +665,11 @@
 	<ThingCategoryDef>
 		<defName>Futuristic</defName>
 		<label>Futuristic</label>
+		<parent>WeaponsRanged</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>ArchotechRanged</defName>
+		<label>Archotech</label>
 		<parent>WeaponsRanged</parent>
 	</ThingCategoryDef>
 	<!-- ============= HARDCORE SK CATEGORIES end =================-->

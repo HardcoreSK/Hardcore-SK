@@ -67,25 +67,6 @@
             </secondaryDamage>
         </projectile>
     </ThingDef>
-    <ThingDef ParentName="BaseStreamlinedArrowProjectile">
-        <defName>Projectile_StreamlinedArrow_ArchoExplosive</defName>
-        <label>streamlined arrow (explosive)</label>
-        <graphicData>
-            <texPath>Things/Projectile/Arrows/Arrow_Flame</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <projectile Class="CombatExtended.ProjectilePropertiesCE">
-            <damageAmountBase>20</damageAmountBase>
-            <armorPenetrationSharp>20</armorPenetrationSharp>
-            <armorPenetrationBlunt>20</armorPenetrationBlunt>
-            <secondaryDamage>
-                <li>
-                    <def>Bomb_Secondary</def>
-                    <amount>30</amount>
-                </li>
-            </secondaryDamage>
-        </projectile>
-    </ThingDef>
     <RecipeDef ParentName="AmmoRecipeNeolithicBase">
         <defName>MakeAmmo_Arrow_Explosive</defName>
         <label>make explosive arrows x50</label>

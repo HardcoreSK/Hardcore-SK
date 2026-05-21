@@ -36,4 +36,74 @@
 		<unfinishedThingDef>UnfinishedResearch</unfinishedThingDef>
 	</RecipeDef>
 
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>ReverseEngineer_ArchotechBlaster</defName>
+		<label>Reverse Engineer Archotech Blaster</label>
+		<description>You dont know how to make it. Its time to change that.</description>
+		<jobString>Researching Archotech Blaster.</jobString>
+		<workAmount>50000</workAmount>
+		<skillRequirements>
+			<Crafting>15</Crafting>
+			<Intellectual>15</Intellectual>
+			<Artistic>5</Artistic>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gun_ArchotechBlaster</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Techprint_Blaster_weapons_Archotech>1</Techprint_Blaster_weapons_Archotech>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Gun_ArchotechBlaster</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>MechWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<unfinishedThingDef>UnfinishedResearch</unfinishedThingDef>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>ReverseEngineer_ArchotechSMG</defName>
+		<label>Reverse Engineer Archotech SMG</label>
+		<description>You dont know how to make it. Its time to change that.</description>
+		<jobString>Researching Archotech SMG.</jobString>
+		<workAmount>50000</workAmount>
+		<skillRequirements>
+			<Crafting>15</Crafting>
+			<Intellectual>15</Intellectual>
+			<Artistic>5</Artistic>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gun_ArchotechSMG</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Techprint_SMG_Archotech>1</Techprint_SMG_Archotech>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Gun_ArchotechSMG</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>MechWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<unfinishedThingDef>UnfinishedResearch</unfinishedThingDef>
+	</RecipeDef>
+
 </Defs>

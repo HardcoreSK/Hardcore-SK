@@ -183,6 +183,31 @@
 		</weaponTags>
 	</ThingDef>
     
+	<ThingDef Name="RangedWeaponArchotechBase" ParentName="RangedWeaponBase" Abstract="True">
+		<techLevel>Archotech</techLevel>
+		<recipeMaker>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_MakeBow</soundWorking>
+			<recipeUsers>
+				<li>MechWeaponCraftingWorkTable</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>20</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+		<burnableByRecipe>False</burnableByRecipe>
+		<weaponTags>
+			<li>RangedArchotech</li>
+			<li>Archotech</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ultratech</li>
+		</weaponClasses>
+	</ThingDef>
+    
     <!--Guns-->
     
     <ThingDef Name="SK_BaseGun" Abstract="True">
