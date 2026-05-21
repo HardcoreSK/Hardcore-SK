@@ -71,6 +71,26 @@
 		<researchViewY>29.00</researchViewY>
 		<tab>Weapon_SK</tab>
 	</ResearchProjectDef>
+ 
+	<ResearchProjectDef ParentName="HitechLabStationBase">
+		<defName>Melee_Archotech</defName>
+		<label>Melee VI</label>
+		<description>Is it a melee if it can shoot?</description>
+		<baseCost>20000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>Melee_E1</li>
+		</prerequisites>
+        <techprintCount>1</techprintCount>
+        <techprintCommonality>0</techprintCommonality>
+        <techprintMarketValue>0</techprintMarketValue>
+        <heldByFactionCategoryTags>
+            <li>Mechanoids</li>
+        </heldByFactionCategoryTags>
+		<researchViewX>25.00</researchViewX>
+		<researchViewY>31.00</researchViewY>
+		<tab>Weapon_SK</tab>
+	</ResearchProjectDef>
 
 
     <!-- Ranged -->

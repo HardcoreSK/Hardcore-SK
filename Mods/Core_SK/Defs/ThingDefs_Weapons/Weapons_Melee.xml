@@ -139,5 +139,32 @@
 			<li Class="CompProperties_Styleable"/>
 		</comps>
 	</ThingDef>
+    
+	<ThingDef Name="WeaponArchotechBase" ParentName="SK_BaseMeleeWeapon" Abstract="True">
+		<techLevel>Archotech</techLevel>
+		<recipeMaker>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>MechWeaponCraftingWorkTable</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>20</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<burnableByRecipe>False</burnableByRecipe>
+		<weaponTags>
+			<li>Archotech</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ultratech</li>
+		</weaponClasses>
+		<comps>
+			<li Class="CompProperties_Styleable"/>
+		</comps>
+	</ThingDef>
 
 </Defs>

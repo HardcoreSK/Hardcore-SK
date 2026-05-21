@@ -106,4 +106,41 @@
 		<unfinishedThingDef>UnfinishedResearch</unfinishedThingDef>
 	</RecipeDef>
 
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>ReverseEngineer_ArchotechSword</defName>
+		<label>Reverse Engineer Archotech Sword</label>
+		<description>You dont know how to make it. Its time to change that.</description>
+		<jobString>Researching Archotech Sword.</jobString>
+		<workAmount>50000</workAmount>
+		<skillRequirements>
+			<Crafting>15</Crafting>
+			<Intellectual>15</Intellectual>
+			<Artistic>5</Artistic>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MeleeWeapon_Archotech1H</li>
+						<li>MeleeWeapon_Archotech2H</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Techprint_Melee_Archotech>1</Techprint_Melee_Archotech>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MeleeWeapon_Archotech1H</li>
+				<li>MeleeWeapon_Archotech2H</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>MechWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<unfinishedThingDef>UnfinishedResearch</unfinishedThingDef>
+	</RecipeDef>
+
 </Defs>
