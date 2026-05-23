@@ -106,10 +106,17 @@
 	</ThingCategoryDef>
 	<ThingCategoryDef>
 		<defName>Energetics</defName>
-		<label>Energy Drinks</label>
+		<label>Drinks</label>
 		<parent>Foods</parent>
 		<resourceReadoutRoot>true</resourceReadoutRoot>
 		<iconPath>UI/Icons/ThingCategories/Energy</iconPath>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>Spoilage</defName>
+		<label>Spoilage</label>
+		<parent>Foods</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>Things/Item/Resource/RottedMush</iconPath>
 	</ThingCategoryDef>
 	<!--Tag-->
 	<!-- DefOverwrite
@@ -122,10 +129,24 @@
 	</ThingCategoryDef>
 	-->
 	<ThingCategoryDef>
+		<defName>MedicineStuff</defName>
+		<label>Medical</label>
+		<parent>Resources</parent>
+		<iconPath>Things/Item/Drug/MedicalDrink</iconPath>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
 		<defName>MedicalDrugs</defName>
 		<label>Medical Drugs</label>
-		<parent>Drugs</parent>
+		<parent>MedicineStuff</parent>
 		<iconPath>Things/Item/Drug/MedicalDrink</iconPath>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>Serums</defName>
+		<label>Serums</label>
+		<parent>MedicineStuff</parent>
+		<iconPath>Things/Item/Special/MechSerumHealer</iconPath>
 		<resourceReadoutRoot>true</resourceReadoutRoot>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
@@ -550,6 +571,21 @@
 		<label>misc</label>
 		<parent>Items</parent>
 	</ThingCategoryDef> -->
+    <ThingCategoryDef>
+		<defName>ExoticHorns</defName>
+		<label>horns</label>
+		<parent>Items</parent>
+	</ThingCategoryDef>
+    <ThingCategoryDef>
+		<defName>HighTechItems</defName>
+		<label>advanced items</label>
+		<parent>Items</parent>
+	</ThingCategoryDef>
+    <ThingCategoryDef>
+		<defName>SpecialTreesSeeds</defName>
+		<label>special seeds</label>
+		<parent>Items</parent>
+	</ThingCategoryDef>
 	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>Weapons</defName>
@@ -583,6 +619,11 @@
 	<ThingCategoryDef>
 		<defName>HeavyMelee</defName>
 		<label>Heavy</label>
+		<parent>WeaponsMelee</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>AdvancedMelee</defName>
+		<label>Advanced</label>
 		<parent>WeaponsMelee</parent>
 	</ThingCategoryDef>
 	<ThingCategoryDef>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HarbingerSeed"]/thingCategories</xpath>
+                <value>
+                    <thingCategories>
+                        <li>SpecialTreesSeeds</li>
+                    </thingCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[@Name="SerumBase" or defName="GhoulResurrectionSerum"]/thingCategories</xpath>
+                <value>
+                    <thingCategories>
+                        <li>Serums</li>
+                    </thingCategories>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

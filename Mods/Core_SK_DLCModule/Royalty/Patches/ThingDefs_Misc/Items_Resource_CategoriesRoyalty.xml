@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="BroadshieldCore"]/thingCategories</xpath>
+                <value>
+                    <thingCategories>
+                        <li>HighTechItems</li>
+                    </thingCategories>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

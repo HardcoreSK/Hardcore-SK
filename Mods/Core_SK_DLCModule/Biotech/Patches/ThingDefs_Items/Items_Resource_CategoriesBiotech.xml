@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[@Name="GeneSetHolderBase" or defName="HumanOvum" or defName="HumanEmbryo"]/thingCategories</xpath>
+                <value>
+                    <thingCategories>
+                        <li>GeneticItems</li>
+                    </thingCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="PoluxSeed"]/thingCategories</xpath>
+                <value>
+                    <thingCategories>
+                        <li>SpecialTreesSeeds</li>
+                    </thingCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ArchiteCapsule" or defName="MechanoidTransponder"]/thingCategories</xpath>
+                <value>
+                    <thingCategories>
+                        <li>HighTechItems</li>
+                    </thingCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="DeathrestCapacitySerum"]/thingCategories</xpath>
+                <value>
+                    <thingCategories>
+                        <li>Serums</li>
+                    </thingCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HemogenPack"]/thingCategories</xpath>
+                <value>
+                    <thingCategories>
+                        <li>MedicalDrugs</li>
+                    </thingCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="BabyFood"]/thingCategories</xpath>
+                <value>
+                    <thingCategories>
+                        <li>FoodMeals</li>
+                    </thingCategories>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

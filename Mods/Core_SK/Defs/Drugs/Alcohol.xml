@@ -20,6 +20,9 @@
 			<Nutrition>0.08</Nutrition>
 			<Flammability>0.5</Flammability>
 		</statBases>
+		<thingCategories Inherit="False">
+			<li>Alcohol_Bottles</li>
+		</thingCategories>
 		<ingestible>
 			<foodType>Fluid, Processed, Liquor</foodType>
 			<joyKind>Chemical</joyKind>
@@ -103,9 +106,6 @@
 	<ThingDef ParentName="LiquorCloset">
 		<defName>Alcohol_Cider</defName>
 		<label>Apple cider</label>
-		<thingCategories>
-			<li>Alcohol_Bottles</li>
-		</thingCategories>
 		<description>A bottle of sweet alcohol made from apples.</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Alcohol/Cider</texPath>
@@ -119,9 +119,6 @@
 	<ThingDef ParentName="LiquorCloset">
 		<defName>Alcohol_Rum</defName>
 		<label>Rum</label>
-		<thingCategories>
-			<li>Alcohol_Bottles</li>
-		</thingCategories>
 		<description>A bottle filled with alcoholic rum. Why is the rum gone?</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Alcohol/Rum</texPath>
@@ -135,9 +132,6 @@
 	<ThingDef ParentName="LiquorCloset">
 		<defName>Alcohol_Wine</defName>
 		<label>Wine</label>
-		<thingCategories>
-			<li>Alcohol_Bottles</li>
-		</thingCategories>
 		<description>A sweet alcohol from grapes. From private Reserves often stolen and smuggled.</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Alcohol/Wine</texPath>
@@ -151,9 +145,6 @@
 	<ThingDef ParentName="LiquorCloset">
 		<defName>Alcohol_BerryWine</defName>
 		<label>Berry Wine</label>
-		<thingCategories>
-			<li>Alcohol_Bottles</li>
-		</thingCategories>
 		<description>A bottle of sweet, pinkish alcohol made from strawberries.</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Alcohol/BerryWine</texPath>
@@ -167,9 +158,6 @@
 	<ThingDef ParentName="LiquorCloset">
 		<defName>Alcohol_Sake</defName>
 		<label>Sake</label>
-		<thingCategories>
-			<li>Alcohol_Bottles</li>
-		</thingCategories>
 		<description>A bottle of crisp, refreshing alcohol made from rice.</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Alcohol/Sake</texPath>
@@ -183,9 +171,6 @@
 	<ThingDef ParentName="LiquorCloset">
 		<defName>Alcohol_Vodka</defName>
 		<label>Vodka</label>
-		<thingCategories>
-			<li>Alcohol_Bottles</li>
-		</thingCategories>
 		<description>A bottle of clear, potato-based alcohol.</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Alcohol/Vodka</texPath>
@@ -199,9 +184,6 @@
 	<ThingDef ParentName="LiquorCloset">
 		<defName>Alcohol_Tequila</defName>
 		<label>Tequila</label>
-		<thingCategories>
-			<li>Alcohol_Bottles</li>
-		</thingCategories>
 		<description>A potent liquor made of agave. It has a picture of what looks like a naked and inebriated female cat person on the bottle. Once discovered by a certain Orassan, she quickly perfected the recipe and it became a very popular drink on Orassia and developed an even more storied reputation.</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Alcohol/Tequila</texPath>
@@ -215,9 +197,6 @@
 	<ThingDef ParentName="LiquorCloset">
 		<defName>Alcohol_Whisky</defName>
 		<label>Whiskey</label>
-		<thingCategories>
-			<li>Alcohol_Bottles</li>
-		</thingCategories>
 		<description>A bottle of golden, corn-based alcohol.</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Alcohol/Whiskey</texPath>
@@ -231,9 +210,6 @@
 	<ThingDef ParentName="LiquorCloset">
 		<defName>Alcohol_Moonshine</defName>
 		<label>Moonshine</label>
-		<thingCategories>
-			<li>Alcohol_Bottles</li>
-		</thingCategories>
 		<description>A bottle of alcohol</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Alcohol/Whiskey</texPath>
@@ -247,9 +223,6 @@
 	<ThingDef ParentName="LiquorCloset">
 		<defName>Alcohol_Gin</defName>
 		<label>Gin</label>
-		<thingCategories>
-			<li>Alcohol_Bottles</li>
-		</thingCategories>
 		<description>A bottle of alcohol</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Alcohol/Whiskey</texPath>
@@ -263,9 +236,6 @@
 	<ThingDef ParentName="LiquorCloset">
 		<defName>Alcohol_Brandy</defName>
 		<label>Brandy</label>
-		<thingCategories>
-			<li>Alcohol_Bottles</li>
-		</thingCategories>
 		<description>A bottle of alcohol</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Alcohol/Whiskey</texPath>
@@ -279,9 +249,6 @@
 	<ThingDef ParentName="LiquorCloset">
 		<defName>Alcohol_Cognac</defName>
 		<label>Cognac</label>
-		<thingCategories>
-			<li>Alcohol_Bottles</li>
-		</thingCategories>
 		<description>A bottle of alcohol</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Alcohol/Whiskey</texPath>
@@ -295,9 +262,6 @@
 	<ThingDef ParentName="LiquorCloset">
 		<defName>Alcohol_Kahlua</defName>
 		<label>Kahlua</label>
-		<thingCategories>
-			<li>Alcohol_Bottles</li>
-		</thingCategories>
 		<description>A bottle of alcohol</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Alcohol/Whiskey</texPath>
@@ -311,9 +275,6 @@
 	<ThingDef ParentName="LiquorCloset">
 		<defName>Alcohol_Arak</defName>
 		<label>Arak</label>
-		<thingCategories>
-			<li>Alcohol_Bottles</li>
-		</thingCategories>
 		<description>A bottle of alcohol</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Alcohol/Whiskey</texPath>
@@ -327,9 +288,6 @@
 	<ThingDef ParentName="LiquorCloset">
 		<defName>Alcohol_Applejack</defName>
 		<label>Applejack</label>
-		<thingCategories>
-			<li>Alcohol_Bottles</li>
-		</thingCategories>
 		<description>A bottle of alcohol</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Alcohol/Whiskey</texPath>
