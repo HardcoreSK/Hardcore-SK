@@ -165,16 +165,17 @@
         </stuffCategories>
         <costStuffCount>10</costStuffCount>
         <costList>
+            <Glass>5</Glass>
             <Glowstone>5</Glowstone>
         </costList>
         <minifiedDef>MinifiedThing</minifiedDef>
         <statBases>
-            <Beauty>9</Beauty>
-            <WorkToBuild>350</WorkToBuild>
-            <Bulk>12</Bulk>
-            <Mass>4</Mass>
+            <Beauty>7</Beauty>
+            <WorkToBuild>300</WorkToBuild>
+            <Bulk>4</Bulk>
+            <Mass>2</Mass>
             <Cleanliness>0.1</Cleanliness>
-            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">4</StyleDominance>
         </statBases>
         <comps>
             <li>
@@ -192,7 +193,7 @@
         </building>
         <clearBuildingArea>false</clearBuildingArea>
         <researchPrerequisites>
-            <li>Light_B1</li>
+            <li>Light_B2</li>
         </researchPrerequisites>
         <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     </ThingDef>
@@ -292,7 +293,7 @@
             <Bulk>5</Bulk>
             <Mass>2</Mass>
             <Cleanliness>0.1</Cleanliness>
-            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">4</StyleDominance>
         </statBases>
         <tickerType>Rare</tickerType>
         <stuffCategories>
@@ -443,7 +444,7 @@
             <Bulk>5</Bulk>
             <Mass>2</Mass>
             <Cleanliness>0.1</Cleanliness>
-            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">4</StyleDominance>
         </statBases>
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
