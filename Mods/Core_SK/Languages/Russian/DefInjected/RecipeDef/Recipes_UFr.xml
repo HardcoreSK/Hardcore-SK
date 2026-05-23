@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
+    <!--Brewery-->
+
 	<Make_Beer.label>сделать пиво</Make_Beer.label>
 	<Make_Beer.description>Сделать пиво из сусла. Процесс занимает 6 дней.</Make_Beer.description>
 
@@ -27,6 +29,8 @@
 
 	<Make_Wine.label>сделать вино</Make_Wine.label>
 	<Make_Wine.description>Сделать вино из сусла. Процесс занимает 5.8 дней.</Make_Wine.description>
+    
+    <!--Drying-->
 
 	<Make_Jerky.label>высушить мясо</Make_Jerky.label>
 	<Make_Jerky.description>Сделать вяленое мясо. Процесс занимает 2 дня.</Make_Jerky.description>
@@ -102,6 +106,8 @@
 
 	<Make_CoffeeBeansIndustrial_x10.label>обработать ягоды кофе (х10)</Make_CoffeeBeansIndustrial_x10.label>
 	<Make_CoffeeBeansIndustrial_x10.description>Извлечь зёрна кофе из ягод и высушить (х10). Процесс занимает 3 дня.</Make_CoffeeBeansIndustrial_x10.description>
+    
+    <!--Cheese making-->
 
 	<Make_Cheese.label>сделать сыр</Make_Cheese.label>
 	<Make_Cheese.description>Сделать сыр. Процесс занимает 4 дня.</Make_Cheese.description>
@@ -120,15 +126,21 @@
 	
 	<Make_AgedCheese_Vat_x10.label>сделать элитный сыр х10</Make_AgedCheese_Vat_x10.label>
 	<Make_AgedCheese_Vat_x10.description>Сделать элитный сыр х10. Процесс занимает 8 дней.</Make_AgedCheese_Vat_x10.description>
+    
+    <!--Silage Pile-->
 
 	<Make_Silage.label>сделать силос</Make_Silage.label>
 	<Make_Silage.description>Сделать силос. Процесс занимает 20 дней.</Make_Silage.description>
+    
+    <!--Compost Barrel-->
 
 	<Make_Fertilizer.label>сделать удобрения</Make_Fertilizer.label>
 	<Make_Fertilizer.description>Сделать удобрения. Процесс занимает 2.8 дня.</Make_Fertilizer.description>
 
 	<Make_Fertilizer_x5.label>сделать удобрения х5</Make_Fertilizer_x5.label>
 	<Make_Fertilizer_x5.description>Сделать удобрения х5. Процесс занимает 2.8 дня.</Make_Fertilizer_x5.description>
+    
+    <!--Nitre Pit-->
 
 	<Make_Nitre_Body.label>извлечь селитру из трупов</Make_Nitre_Body.label>
 	<Make_Nitre_Body.description>Извлечь селитру из трупов. Процесс занимает 10 дней.</Make_Nitre_Body.description>
@@ -138,6 +150,28 @@
 
 	<Make_Nitre_Fecal.label>извлечь селитру из фекалий</Make_Nitre_Fecal.label>
 	<Make_Nitre_Fecal.description>Извлечь селитру из фекалий. Процесс занимает 10 дней.</Make_Nitre_Fecal.description>
+    
+    <!--Charcoal Pit-->
+
+	<MakeCharcoal_Pit_Half.label>Получить древесный уголь (частичная загрузка)</MakeCharcoal_Pit_Half.label>
+	<MakeCharcoal_Pit_Half.description>Сжечь брёвна или бамбук на древесный уголь. Занимает половину вместимости ямы. Производство занимает 1 день.</MakeCharcoal_Pit_Half.description>
+    
+	<MakeCharcoal_Pit_Full.label>Получить древесный уголь (полная загрузка)</MakeCharcoal_Pit_Full.label>
+	<MakeCharcoal_Pit_Full.description>Сжечь брёвна или бамбук на древесный уголь. Производство занимает 1 день.</MakeCharcoal_Pit_Full.description>
+    
+	<MakeAsh_Pit_Half.label>Получить пепел (частичная загрузка)</MakeAsh_Pit_Half.label>
+	<MakeAsh_Pit_Half.description>Сжечь брёвна или бамбук на пепел. Занимает половину вместимости ямы. Производство занимает 1 день.</MakeAsh_Pit_Half.description>
+    
+    <MakeAsh_Pit_Full.label>Получить пепел (полная загрузка)</MakeAsh_Pit_Full.label>
+	<MakeAsh_Pit_Full.description>Сжечь брёвна или бамбук на пепел. Производство занимает 1 день.</MakeAsh_Pit_Full.description>
+    
+	<MakeClayBricks_Pit_Half.label>Изготовить глиняные кирпичи (частичная загрузка)</MakeClayBricks_Pit_Half.label>
+	<MakeClayBricks_Pit_Half.description>Изготовить глиняные кирпичи путём обжига мягкой глины. Занимает половину вместимости ямы. Производство занимает 1 день.</MakeClayBricks_Pit_Half.description>
+    
+	<MakeClayBricks_Pit_Full.label>Изготовить глиняные кирпичи (полная загрузка)</MakeClayBricks_Pit_Full.label>
+	<MakeClayBricks_Pit_Full.description>Изготовить глиняные кирпичи путём обжига мягкой глины. Производство занимает 1 день.</MakeClayBricks_Pit_Full.description>
+    
+    <!--Silfur Extractor-->
 
 	<CollectSulfurGeyser.label>собрать серу</CollectSulfurGeyser.label>
 	<CollectSulfurGeyser.description>Собрать серу из гейзера. Требуется химтопливо для запуска реакции. Процесс занимает 3 дня.</CollectSulfurGeyser.description>
@@ -147,6 +181,8 @@
 
 	<ExtractBiomatterCorpse.label>извлечь биоматерию из трупов</ExtractBiomatterCorpse.label>
 	<ExtractBiomatterCorpse.description>Извлечь биоматерию из трупов, количество получаемой биоматерии зависит от размера и целостности трупа. Процесс занимает 1.5 дня.</ExtractBiomatterCorpse.description>
+    
+    <!--Organ Vat-->
 
 	<Grow_Eye.label>вырастить глаз</Grow_Eye.label>
 	<Grow_Eye.description>Вырастить глаз. Процесс занимает 1.5 дня.</Grow_Eye.description>
@@ -177,12 +213,16 @@
 
 	<Make_ChemfuelFromOrganics.label>сделать химтопливо из органики</Make_ChemfuelFromOrganics.label>
 	<Make_ChemfuelFromOrganics.description>Сделать химтопливо из органики. Процесс занимает 1.5 дня.</Make_ChemfuelFromOrganics.description>
+    
+    <!--Windmill-->
 	
 	<Grind_Flour.label>перемолоть в муку</Grind_Flour.label>
 	<Grind_Flour.description>Перемолоть злаки в муку. Процесс занимает 0.8 дня.</Grind_Flour.description>
 
 	<Grind_Sugar.label>сделать сахар</Grind_Sugar.label>
 	<Grind_Sugar.description>Переработать тростник в сахар. Процесс занимает 0.8 дня.</Grind_Sugar.description>
+    
+    <!--Rock Crusher-->
 	
 	<CrushChunkSand.label>раскрошить обломки в песок</CrushChunkSand.label>
 	<CrushChunkSand.description>Переработать обломки в песок.</CrushChunkSand.description>
