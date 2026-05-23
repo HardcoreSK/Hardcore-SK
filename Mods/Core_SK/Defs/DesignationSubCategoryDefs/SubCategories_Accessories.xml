@@ -12,7 +12,6 @@
 			<li>BowlLamp</li>
 			<li>TorchWallLamp</li>
 			<li>Candle</li>
-			<li>GlowstoneLamp</li>
 			<li>OutdoorGroundLamp</li>
 			<li>Lighting_PathLamp</li>
 			<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
@@ -38,6 +37,24 @@
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
 		<order>11</order>
+		<types>
+			<li>Lights</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_GlowstoneLights</defName>
+		<label>glowstone lights</label>
+		<description>Infinite glowstone lights with high value.</description>
+		<defNames>
+			<li>GlowstoneLamp</li>
+			<li>GlowstoneTableLamp</li>
+			<li>CeilingGlowstoneLamp</li>
+			<li>Lighting_WallGlowstone</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>15</order>
 		<types>
 			<li>Lights</li>
 		</types>

@@ -84,7 +84,7 @@
     <ThingDef ParentName="SK_LampBase">
         <defName>GlowstoneLamp</defName>
         <label>glowstone lamp</label>
-        <description>A beautiful lamp topped with glowstone, emitting reflected light from dozen of glowstones. People need light to move and work at full speed. Free source of light.</description>
+        <description>A beautiful lamp topped with glowstone, emitting reflected light from dozen of glowstones. Free source of light.</description>
         <graphicData>
             <texPath>Things/Building/Furniture/Lights/GlowstoneLamp</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -99,9 +99,10 @@
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <rotatable>false</rotatable>
         <pathCost>10</pathCost>
-        <tickerType>Normal</tickerType>
+        <tickerType>Rare</tickerType>
         <stuffCategories>
             <li>Woody</li>
+            <li>Stony</li>
             <li>Metallic</li>
             <li>Precious</li>
             <li>Ceramic</li>
@@ -116,7 +117,7 @@
             <WorkToBuild>350</WorkToBuild>
             <Bulk>12</Bulk>
             <Mass>4</Mass>
-            <Cleanliness>0</Cleanliness>
+            <Cleanliness>0.1</Cleanliness>
             <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
         </statBases>
         <comps>
@@ -124,13 +125,72 @@
                 <compClass>CompQuality</compClass>
             </li>
             <li Class="CompProperties_Glower">
-                <glowRadius>6</glowRadius>
+                <glowRadius>8</glowRadius>
                 <glowColor>(180,197,215,0)</glowColor>
             </li>
         </comps>
         <building>
             <uninstallWork>300</uninstallWork>
         </building>
+        <researchPrerequisites>
+            <li>Light_B1</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    </ThingDef>
+    
+    <ThingDef ParentName="SK_LampBase">
+        <defName>GlowstoneTableLamp</defName>
+        <label>glowstone table lamp</label>
+        <description>A beautiful small table lamp topped with glowstone, emitting reflected light from dozen of glowstones. Free source of light.</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Lights/GlowstoneTableLamp</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(0.5,0.5)</drawSize>
+            <shadowData>
+                <volume>(0.1, 0.1, 0.1)</volume>
+                <offset>(0,0,0)</offset>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>PawnUnused</altitudeLayer>
+        <fillPercent>0</fillPercent>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <rotatable>false</rotatable>
+        <pathCost>5</pathCost>
+        <tickerType>Rare</tickerType>
+        <stuffCategories>
+            <li>Stony</li>
+            <li>Metallic</li>
+            <li>Precious</li>
+            <li>Ceramic</li>
+        </stuffCategories>
+        <costStuffCount>10</costStuffCount>
+        <costList>
+            <Glowstone>5</Glowstone>
+        </costList>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <statBases>
+            <Beauty>9</Beauty>
+            <WorkToBuild>350</WorkToBuild>
+            <Bulk>12</Bulk>
+            <Mass>4</Mass>
+            <Cleanliness>0.1</Cleanliness>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
+        </statBases>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>4</glowRadius>
+                <glowColor>(180,197,215,0)</glowColor>
+            </li>
+        </comps>
+        <building>
+            <uninstallWork>100</uninstallWork>
+            <isEdifice>false</isEdifice>
+            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+        </building>
+        <clearBuildingArea>false</clearBuildingArea>
         <researchPrerequisites>
             <li>Light_B1</li>
         </researchPrerequisites>
@@ -214,6 +274,68 @@
         </researchPrerequisites>
         <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     </ThingDef>
+    
+    <ThingDef ParentName="SK_LampBase">
+        <defName>CeilingGlowstoneLamp</defName>
+        <label>glowstone сeiling lamp</label>
+        <description>A beautiful сeiling lamp topped with glowstone, emitting reflected light from dozen of glowstones. Free source of light.</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Lights/CeilingGlowstone</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+            <shaderType>Transparent</shaderType>
+        </graphicData>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <statBases>
+            <Beauty>4</Beauty>
+            <WorkToBuild>500</WorkToBuild>
+            <Bulk>5</Bulk>
+            <Mass>2</Mass>
+            <Cleanliness>0.1</Cleanliness>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
+        </statBases>
+        <tickerType>Rare</tickerType>
+        <stuffCategories>
+            <li>Woody</li>
+            <li>Stony</li>
+            <li>Metallic</li>
+            <li>Precious</li>
+            <li>Ceramic</li>
+        </stuffCategories>
+        <costStuffCount>15</costStuffCount>
+        <costList>
+            <Glass>5</Glass>
+            <Glowstone>10</Glowstone>
+        </costList>
+        <building>
+            <uninstallWork>800</uninstallWork>
+            <isEdifice>false</isEdifice>
+            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+        </building>
+        <clearBuildingArea>false</clearBuildingArea>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>7</glowRadius>
+                <glowColor>(180,197,215,0)</glowColor>
+            </li>
+            <li Class="SK.CompProperties_RestrictedPlacement">
+                <compClass>SK.CompRestrictedPlacement</compClass>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>SK.PlaceWorker_OnlyUnderRoof</li>
+        </placeWorkers>
+        <filthLeaving>Filth_BrokenGlass</filthLeaving>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <rotatable>false</rotatable>
+        <researchPrerequisites>
+            <li>Light_B2</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    </ThingDef>
 
     <!--===================== Wall Lamps ==============================-->
 
@@ -228,7 +350,7 @@
         </graphicData>
         <uiIconPath>Things/Building/Furniture/Lights/walllantern_ui</uiIconPath>
         <altitudeLayer>PawnUnused</altitudeLayer>
-        <fillPercent>0.2</fillPercent>
+        <fillPercent>0</fillPercent>
         <drawerType>RealtimeOnly</drawerType>
         <minifiedDef>MinifiedThing</minifiedDef>
         <statBases>
@@ -295,6 +417,76 @@
         <filthLeaving>Filth_BrokenGlass</filthLeaving>
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    </ThingDef>
+    
+    <ThingDef ParentName="SK_LampBase">
+        <defName>Lighting_WallGlowstone</defName>
+        <label>glowstone wall lamp</label>
+        <description>A beautiful wall lamp topped with glowstone, emitting reflected light from dozen of glowstones. Free source of light.</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Lights/WallGlowstone</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(1.0,2.0)</drawSize>
+            <drawRotated>true</drawRotated>
+            <allowFlip>true</allowFlip>
+        </graphicData>
+        <uiIconPath>Things/Building/Furniture/Lights/WallGlowstone_UI</uiIconPath>
+        <altitudeLayer>PawnUnused</altitudeLayer>
+        <fillPercent>0</fillPercent>
+        <tickerType>Rare</tickerType>
+        <drawerType>RealtimeOnly</drawerType>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <statBases>
+            <Beauty>6</Beauty>
+            <WorkToBuild>420</WorkToBuild>
+            <Bulk>5</Bulk>
+            <Mass>2</Mass>
+            <Cleanliness>0.1</Cleanliness>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
+        </statBases>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+        <size>(1,1)</size>
+        <stuffCategories>
+            <li>Woody</li>
+            <li>Stony</li>
+            <li>Metallic</li>
+            <li>Precious</li>
+            <li>Ceramic</li>
+        </stuffCategories>
+        <costStuffCount>15</costStuffCount>
+        <costList>
+            <Glowstone>10</Glowstone>
+        </costList>
+        <surfaceType>Item</surfaceType>
+        <placeWorkers>
+            <li>SK.PlaceWorker_NotOnWall</li>
+            <li>SK.PlaceWorker_WallAttachment</li>
+        </placeWorkers>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <building>
+            <uninstallWork>150</uninstallWork>
+            <isEdifice>false</isEdifice>
+            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+        </building>
+        <clearBuildingArea>false</clearBuildingArea>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>6</glowRadius>
+                <glowColor>(180,197,215,0)</glowColor>
+            </li>
+            <li Class="SK.CompProperties_RestrictedPlacement">
+                <compClass>SK.CompRestrictedPlacement</compClass>
+            </li>
+        </comps>
+        <researchPrerequisites>
+            <li>Light_B1</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
     </ThingDef>
     
     <!--===================== Fueled Lamps ==============================-->
