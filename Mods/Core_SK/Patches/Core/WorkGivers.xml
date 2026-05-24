@@ -71,20 +71,18 @@
     </value>
   </Operation>
 
-  <!--   <Operation Class="SK.PatchOperationReplaceExtended">
+  <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/WorkGiverDef[defName="DoBillsMakeWeapons"]</xpath>
     <value>
       <label>smithing</label>
       <workType>Smithing</workType>
-      <priorityInType>115</priorityInType>
-      <fixedBillGiverDefs>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
+      <fixedBillGiverDefs Merge="True">
+        <li>TableRecycling</li>
       </fixedBillGiverDefs>
       <verb>smith</verb>
       <gerund>smithing at</gerund>
     </value>
-  </Operation> -->
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/WorkGiverDef[defName="DoBillsFabricationBench"]</xpath>
