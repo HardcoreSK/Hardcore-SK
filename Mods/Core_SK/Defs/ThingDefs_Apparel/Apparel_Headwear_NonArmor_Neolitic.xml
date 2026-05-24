@@ -742,5 +742,71 @@
 			<researchPrerequisite>Apparel_A2</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
+    
+    <ThingDef ParentName="ApparelNeolithicBase">
+        <defName>Hat_Straw</defName>
+        <label>straw hat</label>
+        <description>A summer sun shield for farmers and ranchers.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Hats/StrawHat/StrawHat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costList>
+            <Hay>35</Hay>
+        </costList>
+        <statBases>
+            <WorkToMake>900</WorkToMake>
+            <MaxHitPoints>15</MaxHitPoints>
+            <Flammability>2.0</Flammability>
+            <Mass>0.2</Mass>
+            <Bulk>2</Bulk>
+            <WornBulk>0.5</WornBulk>
+            <EquipDelay>0.3</EquipDelay>
+            <Insulation_Heat>5</Insulation_Heat>
+            <Insulation_Cold>0</Insulation_Cold>
+            <StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
+            <ArmorRating_Sharp>0</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0</ArmorRating_Blunt>
+            <ArmorRating_Heat>0</ArmorRating_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.02</MoveSpeed>
+            <SocialImpact>-0.05</SocialImpact>
+            <HuntingStealth>-0.5</HuntingStealth>
+            <TameAnimalChance>0.05</TameAnimalChance>
+            <AnimalGatherSpeed>0.2</AnimalGatherSpeed>
+            <PlantWorkSpeed>0.2</PlantWorkSpeed>
+            <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
+            <AimingDelayFactor>0.22</AimingDelayFactor>
+        </equippedStatOffsets>
+        <generateCommonality>0.12</generateCommonality>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <ideoDesireAllowedFactionCategoryTags>
+                <li>Tribal</li>
+            </ideoDesireAllowedFactionCategoryTags>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/Hats/StrawHat/StrawHat</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>Tribal</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+        </apparel>
+        <thingCategories>
+            <li>HeaddressCat</li>
+        </thingCategories>
+        <recipeMaker>
+            <researchPrerequisite>Apparel_A1</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
 
 </Defs>
