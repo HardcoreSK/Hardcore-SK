@@ -103,8 +103,7 @@
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
         <building>
-            <workTableRoomRole IsNull="True" />
-            <workTableNotInRoomRoleFactor IsNull="True" />
+            <workTableNotInRoomRoleFactor>1.0</workTableNotInRoomRoleFactor>
         </building>
 		<researchPrerequisites>
 			<li>Craft_B1</li>
