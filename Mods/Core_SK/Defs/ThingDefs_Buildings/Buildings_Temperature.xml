@@ -23,6 +23,9 @@
 			<damageData>
 				<rect>(0.2,0,0.6,0.1)</rect>
 			</damageData>
+			<shadowData>
+				<volume>(0.4,0.4,0.7)</volume>
+			</shadowData>
 			<drawSize>(2.5,2.5)</drawSize>
 		</graphicData>
 		<uiIconPath>Things/Building/Temperature/WoodStoveFurnace/WoodStoveFurnace_ico</uiIconPath>	
@@ -83,7 +86,6 @@
 		</comps>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Temperature</designationCategory>
-		<staticSunShadowHeight>0.20</staticSunShadowHeight>
 		<researchPrerequisites>
 			<li>Temperature_control_B1</li>
 		</researchPrerequisites>
