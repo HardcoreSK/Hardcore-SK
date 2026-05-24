@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[
+                    defName="AIPersonaCore" or
+                    defName="TechprofSubpersonaCore"
+                ]/thingCategories</xpath>
+                <value>
+                    <thingCategories>
+                        <li>HighTechItems</li>
+                    </thingCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Chocolate"]/thingCategories</xpath>
+                <value>
+                    <thingCategories Inherit="False">
+                        <li>SweetMeals</li>
+                    </thingCategories>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

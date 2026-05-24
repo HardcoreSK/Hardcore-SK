@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>IonCannonControllerCore</defName>
+        <label>ion satellite controller core</label>
+        <description>A mechanoid device to controller the ion cannon satellite. This is a jewel of technology for farming planets and a feared weapon on contested ones.</description>
+        <graphicData>
+            <texPath>Things/Building/IonController/IonGunController</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>1</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>10000</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Bulk>70</Bulk>
+            <Mass>50</Mass>
+        </statBases>
+        <thingCategories>
+            <li>HighTechItems</li>
+        </thingCategories>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <tradeability>None</tradeability>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>WeatherControllerCore</defName>
+        <label>Weather controller core</label>
+        <description>An advanced device designed to controller the local weather. This is a jewel of technology for farming planets and a feared weapon on contested ones.</description>
+        <graphicData>
+            <texPath>Things/Item/Special/WeatherControllerCore</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>1</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>5000</MarketValue>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Mass>0.2</Mass>
+        </statBases>
+        <thingCategories>
+            <li>HighTechItems</li>
+        </thingCategories>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <tradeability>Sellable</tradeability>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_BaseBullet">
+        <defName>Bullet_FakeSkywrathControllerBullet</defName>
+        <label>Only used to display the area of effect when targeting.</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <texPath>Things/Projectile/Arrow_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>0</damageAmountBase>
+            <explosionRadius>15</explosionRadius>
+            <flyOverhead>true</flyOverhead>
+        </projectile>
+    </ThingDef>
+    
+    <ThingDef ParentName="SK_BaseGun">
+        <defName>Artillery_SkywrathController</defName>
+        <label>Skywrath controller fake turret</label>
+        <graphicData>
+            <texPath>Inv</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <description>This is only used to get the standard target commands.</description>
+        <techLevel>Ultra</techLevel>
+        <destroyOnDrop>True</destroyOnDrop>
+        <!-- <menuHidden>True</menuHidden> -->
+        <tradeability>None</tradeability>
+        <statBases>
+            <Bulk>7</Bulk>
+            <Mass>5</Mass>
+        </statBases>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+                <hasStandardCommand>true</hasStandardCommand>
+                <forcedMissRadius>1.2</forcedMissRadius>
+                <defaultProjectile>Bullet_FakeSkywrathControllerBullet</defaultProjectile>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                    <canTargetPawns>true</canTargetPawns>
+                    <canTargetBuildings>true</canTargetBuildings>
+                </targetParams>
+                <warmupTime>5.00</warmupTime>
+                <minRange>30</minRange>
+                <range>500</range>
+            </li>
+        </verbs>
+    </ThingDef>
+
+</Defs>

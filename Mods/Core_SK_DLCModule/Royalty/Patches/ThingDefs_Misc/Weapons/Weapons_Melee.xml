@@ -51,7 +51,7 @@
 				<MeleeDodgeChance>0.20</MeleeDodgeChance>
 				<PlantWorkSpeed>0.15</PlantWorkSpeed>
 			</equippedStatOffsets>
-			<thingCategories>
+			<thingCategories Inherit="False">
 				<li>SharpMelee</li>
 			</thingCategories>
 		</value>
@@ -120,7 +120,7 @@
 				<MeleeDodgeChance>0.30</MeleeDodgeChance>
 				<ConstructionSpeed>0.40</ConstructionSpeed>
 			</equippedStatOffsets>
-			<thingCategories>
+			<thingCategories Inherit="False">
 				<li>HeavyMelee</li>
 				<li>BluntMelee</li>
 			</thingCategories>
@@ -166,7 +166,8 @@
 			<stuffCategories>
 				<li>SolidMetallic</li>
 			</stuffCategories>
-			<thingCategories>
+			<thingCategories Inherit="False">
+				<li>AdvancedMelee</li>
 				<li>BluntMelee</li>
 			</thingCategories>
 		</value>
@@ -280,7 +281,8 @@
 				<MeleeParryChance>0.40</MeleeParryChance>
 				<MeleeDodgeChance>0.27</MeleeDodgeChance>
 			</equippedStatOffsets>
-			<thingCategories>
+			<thingCategories Inherit="False">
+				<li>AdvancedMelee</li>
 				<li>SharpMelee</li>
 			</thingCategories>
 		</value>
@@ -383,7 +385,8 @@
 				<MeleeParryChance>0.20</MeleeParryChance>
 				<MeleeDodgeChance>0.10</MeleeDodgeChance>
 			</equippedStatOffsets>
-			<thingCategories>
+			<thingCategories Inherit="False">
+				<li>AdvancedMelee</li>
 				<li>HeavyMelee</li>
 				<li>BluntMelee</li>
 			</thingCategories>
@@ -484,7 +487,8 @@
 				<MeleeParryChance>0.50</MeleeParryChance>
 				<MeleeDodgeChance>0.40</MeleeDodgeChance>
 			</equippedStatOffsets>
-			<thingCategories>
+			<thingCategories Inherit="False">
+				<li>AdvancedMelee</li>
 				<li>SharpMelee</li>
 			</thingCategories>
 		</value>

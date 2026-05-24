@@ -15,6 +15,14 @@
         <attribute>ParentName</attribute>
         <value>SK.BaseBoltProjectileDummy</value>
     </Operation>
+    
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="Ammo_NerveSpikerBolt"]/thingCategories</xpath>
+    </Operation>
+    
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingCategoryDef[defName="AmmoNerveSpiker"]</xpath>
+    </Operation>
 
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/RecipeDef[defName="MakeAmmo_NerveSpikerBolt"]</xpath>

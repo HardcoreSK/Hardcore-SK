@@ -120,6 +120,124 @@
 	</RecipeDef>
     
     <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>MakeAsh_Pit_Half</defName>
+		<label>burn wood into ash (half load)</label>
+		<description>Burn wood into ash. Takes 1 day to burn and half of the pit capacity.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Wooden</li>
+					</categories>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Dirt</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Wooden</li>
+			</categories>
+			<thingDefs>
+				<li>Dirt</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Dirt</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Ash>15</Ash>
+			<Dirt>3</Dirt>
+		</products>
+		<recipeUsers>
+			<li>CharcoalPit</li>
+		</recipeUsers>
+		<!-- RecipeDef_UF fields -->
+		<temperatureSafe>
+			<min>-10</min>
+			<max>200</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>0</min>
+			<max>100</max>
+		</temperatureIdeal>
+		<ruinedPerDegreePerHour>0</ruinedPerDegreePerHour>
+		<processDays>1</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.8</speedAboveSafe>
+		<graphicSuffix>_closed</graphicSuffix>
+		<slotsRequired>5</slotsRequired>
+	</RecipeDef>
+    
+    <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>MakeAsh_Pit_Full</defName>
+		<label>burn wood into ash (full load)</label>
+		<description>Burn wood into ash. Takes 1 day to burn.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Wooden</li>
+					</categories>
+				</filter>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Dirt</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Wooden</li>
+			</categories>
+			<thingDefs>
+				<li>Dirt</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Dirt</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Ash>30</Ash>
+			<Dirt>3</Dirt>
+		</products>
+		<recipeUsers>
+			<li>CharcoalPit</li>
+		</recipeUsers>
+		<!-- RecipeDef_UF fields -->
+		<temperatureSafe>
+			<min>-10</min>
+			<max>200</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>0</min>
+			<max>100</max>
+		</temperatureIdeal>
+		<ruinedPerDegreePerHour>0</ruinedPerDegreePerHour>
+		<processDays>1</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.8</speedAboveSafe>
+		<graphicSuffix>_closed</graphicSuffix>
+		<slotsRequired>10</slotsRequired>
+	</RecipeDef>
+    
+    <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
 		<defName>MakeClayBricks_Pit_Half</defName>
 		<label>bake clay bricks (half load)</label>
 		<description>Creates clay bricks by baking soft clay. Takes 1 day to bake.</description>
