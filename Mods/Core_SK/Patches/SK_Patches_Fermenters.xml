@@ -6,14 +6,14 @@
 		<xpath>Defs/ThingDef[defName = "FermentingBarrel"]/designationCategory</xpath>
 	</Operation>
 
-	<!--<Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Beer"]/comps</xpath>
 		<value>
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>
 		</value>
-	</Operation>-->
+	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Beer"]</xpath>
