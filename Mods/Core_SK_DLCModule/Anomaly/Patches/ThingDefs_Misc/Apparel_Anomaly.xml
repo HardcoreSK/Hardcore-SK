@@ -101,4 +101,13 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Apparel_CeremonialCultistMask" or defName="Apparel_CultistMask"]</xpath>
+        <value>
+            <thingCategories Inherit="False">
+                <li>HeaddressCat</li>
+            </thingCategories>
+        </value>
+    </Operation>
+
 </Patch>

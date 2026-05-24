@@ -26,8 +26,7 @@
                         </recipeUsers>
                     </recipeMaker>
                     <thingCategories DeepReplace="True" Inherit="False">
-                        <li>MilitaryHeaddressCat</li>
-                        <li>LightHelmetsCat</li>
+                        <li>HeadgearMechanitor</li>
                     </thingCategories>
                     <stuffCategories DeepReplace="True">
                         <li>RuggedMetallic</li>
@@ -61,7 +60,7 @@
                         </recipeUsers>
                     </recipeMaker>
                     <thingCategories DeepReplace="True" Inherit="False">
-                        <li>MilitaryHeaddressCat</li>
+                        <li>HeadgearMechanitor</li>
                         <li>MediumHelmetsCat</li>
                     </thingCategories>
                     <stuffCategories DeepReplace="True">
@@ -99,8 +98,8 @@
                         </recipeUsers>
                     </recipeMaker>
                     <thingCategories DeepReplace="True" Inherit="False">
-                        <li>MilitaryHeaddressCat</li>
-                        <li>HeavyHelmetsCat</li>
+                        <li>HeadgearMechanitor</li>
+                        <li>MediumHelmetsCat</li>
                     </thingCategories>
                     <stuffCategories DeepReplace="True">
                         <li>RuggedMetallic</li>
@@ -129,8 +128,8 @@
                         <StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
                         <StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
                         <StuffEffectMultiplierArmor>3.47</StuffEffectMultiplierArmor>
-                        <ArmorRating_Sharp>8</ArmorRating_Sharp>
-                        <ArmorRating_Blunt>15.96</ArmorRating_Blunt>
+                        <ArmorRating_Sharp>11.1</ArmorRating_Sharp>
+                        <ArmorRating_Blunt>25.96</ArmorRating_Blunt>
                         <ArmorRating_Heat>0.25</ArmorRating_Heat>
                     </statBases>
                     <equippedStatOffsets DeepReplace="True" Inherit="False">
@@ -282,6 +281,9 @@
                         <ElectronicComponents>2</ElectronicComponents>
                         <Electronics>1</Electronics>
                     </costList>
+                    <thingCategories Inherit="False">
+                        <li>HeadgearMechanitor</li>
+                    </thingCategories>
                 </value>
             </li>
 
@@ -312,6 +314,9 @@
                         <Electronics>2</Electronics>
                         <Microchips>2</Microchips>
                     </costList>
+                    <thingCategories Inherit="False">
+                        <li>HeadgearMechanitor</li>
+                    </thingCategories>
                 </value>
             </li>
         </operations>

@@ -71,7 +71,7 @@
 		</apparel>
 		<thingCategories>
 			<li>SetMedieval</li>
-			<li>SpecialApparelCat</li>
+			<li>GasMasksCat</li>
 		</thingCategories>
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
@@ -214,7 +214,7 @@
 			<parentTagDef>ApparelHead</parentTagDef>
 		</apparel>		
 		<thingCategories>
-			<li>HeaddressCat</li>
+			<li>AnimalHeaddressCat</li>
 		</thingCategories>
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
@@ -440,7 +440,7 @@
 			<parentTagDef>ApparelHead</parentTagDef>
 		</apparel>		
 		<thingCategories>
-			<li>HeaddressCat</li>
+			<li>AnimalHeaddressCat</li>
 		</thingCategories>
 	</ThingDef>
 
@@ -510,7 +510,7 @@
 			<parentTagDef>ApparelHead</parentTagDef>			
 		</apparel>		
 		<thingCategories>
-			<li>HeaddressCat</li>
+			<li>AnimalHeaddressCat</li>
 		</thingCategories>
 		<recipeMaker>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
@@ -615,7 +615,7 @@
 			<Insulation_Cold>5</Insulation_Cold>
 			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
-			<StuffEffectMultiplierArmor>0.16</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>0</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0</ArmorRating_Blunt>
 			<ArmorRating_Heat>0</ArmorRating_Heat>
@@ -661,7 +661,7 @@
 			</options>
 		</colorGenerator>
 		<thingCategories>
-			<li>MilitaryHeaddressCat</li>
+			<li>HeaddressCat</li>
 			<li>SetBandit</li>
 			<li>SetSlaver</li>
 		</thingCategories>

@@ -31,4 +31,22 @@
 		</value>
 	</Operation>
 
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Apparel_VacsuitHelmet"]</xpath>
+		<value>
+            <thingCategories Inherit="False">
+                <li>SpecialHelmetsCat</li>
+            </thingCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Apparel_Vacsuit" or defName="Apparel_VacsuitChildren"]</xpath>
+		<value>
+            <thingCategories Inherit="False">
+                <li>SpecialApparelCat</li>
+            </thingCategories>
+		</value>
+	</Operation>
+
 </Patch>

@@ -1,45 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
-
-	<!-- ========== Strap ========== -->
-
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="Apparel_BodyStrap"]/statBases</xpath>
-		<value>
-			<StuffEffectMultiplierArmor>1.35</StuffEffectMultiplierArmor>
-		</value>
-	</Operation>
-
-
-	<!-- ========== Burka ========== -->
-
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="Apparel_Burka"]/statBases</xpath>
-		<value>
-			<StuffEffectMultiplierArmor>1.2</StuffEffectMultiplierArmor>
-		</value>
-	</Operation>
-
-	<!-- ========== Robe ========== -->
-
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="Apparel_Robe"]/statBases</xpath>
-		<value>
-			<Bulk>5</Bulk>
-			<WornBulk>2</WornBulk>
-			<StuffEffectMultiplierArmor>1.25</StuffEffectMultiplierArmor>
-		</value>
-	</Operation>
-
-	<!-- ========== Blindfold ========== -->
-
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="Apparel_Blindfold"]/statBases</xpath>
-		<value>
-			<StuffEffectMultiplierArmor>1.15</StuffEffectMultiplierArmor>
-		</value>
-	</Operation>
-
-
+    <!-- ========== Strap ========== -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Apparel_BodyStrap"]/statBases</xpath>
+        <value>
+            <StuffEffectMultiplierArmor>1.35</StuffEffectMultiplierArmor>
+        </value>
+    </Operation>
+    <!-- ========== Burka ========== -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Apparel_Burka"]/statBases</xpath>
+        <value>
+            <StuffEffectMultiplierArmor>1.2</StuffEffectMultiplierArmor>
+        </value>
+    </Operation>
+    <!-- ========== Robe ========== -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Apparel_Robe"]/statBases</xpath>
+        <value>
+            <Bulk>5</Bulk>
+            <WornBulk>2</WornBulk>
+            <StuffEffectMultiplierArmor>1.25</StuffEffectMultiplierArmor>
+        </value>
+    </Operation>
+    <!-- ========== Blindfold ========== -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Apparel_Blindfold"]/statBases</xpath>
+        <value>
+            <StuffEffectMultiplierArmor>1.15</StuffEffectMultiplierArmor>
+        </value>
+    </Operation>
 </Patch>

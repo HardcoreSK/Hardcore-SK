@@ -72,13 +72,12 @@
 			</options>
 		</colorGenerator>
 		<thingCategories>
-			<li>HeaddressCat</li>
+			<li>MedievalHelmets</li>
 		</thingCategories>
         <recipeMaker>
             <researchPrerequisite>Apparel_B3</researchPrerequisite>
         </recipeMaker>
 	</ThingDef>
-
 
 	<ThingDef ParentName="ApparelMedievalSimpleBase">
 		<defName>Helmet_FeralSkulker</defName>
@@ -149,13 +148,12 @@
 			</options>
 		</colorGenerator>
 		<thingCategories>
-			<li>HeaddressCat</li>
+			<li>MedievalHelmets</li>
 		</thingCategories>
         <recipeMaker>
             <researchPrerequisite>Apparel_B3</researchPrerequisite>
         </recipeMaker>
 	</ThingDef>
-
 
 	<ThingDef ParentName="ApparelMedievalSimpleBase">
 		<defName>Helmet_FeralThumper</defName>
@@ -226,13 +224,12 @@
 			</options>
 		</colorGenerator>
 		<thingCategories>
-			<li>HeaddressCat</li>
+			<li>MedievalHelmets</li>
 		</thingCategories>
         <recipeMaker>
             <researchPrerequisite>Apparel_B3</researchPrerequisite>
         </recipeMaker>
 	</ThingDef>
-
 
 	<ThingDef ParentName="ArmorMedievalSimpleBase">
 		<defName>Helmet_FeralGrinder</defName>
@@ -292,13 +289,12 @@
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
 		<thingCategories>
-			<li>HeaddressCat</li>
+			<li>MedievalHelmets</li>
 		</thingCategories>
         <recipeMaker>
             <researchPrerequisite>PlateArmor</researchPrerequisite>
         </recipeMaker>
 	</ThingDef>
-
 
 	<ThingDef ParentName="ApparelMedievalSimpleBase">
 		<defName>Helmet_FeralScorcher</defName>
@@ -359,7 +355,7 @@
 			</defaultOutfitTags>
 		</apparel>
 		<thingCategories>
-			<li>HeaddressCat</li>
+			<li>GasMasksCat</li>
 		</thingCategories>
         <modExtensions>
             <li Class="CombatExtended.ApparelHediffExtension">
@@ -442,7 +438,7 @@
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
 		<thingCategories>
-			<li>HeavyFullArmorCat</li>
+			<li>LightFullArmorCat</li>
 		</thingCategories>
         <recipeMaker>
             <researchPrerequisite>PlateArmor</researchPrerequisite>
@@ -523,7 +519,7 @@
 			</options>
 		</colorGenerator>
 		<thingCategories>
-			<li>HeavyFullArmorCat</li>
+			<li>LightFullArmorCat</li>
 		</thingCategories>
         <recipeMaker>
             <researchPrerequisite>PlateArmor</researchPrerequisite>

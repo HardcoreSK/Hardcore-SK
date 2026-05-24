@@ -13,7 +13,7 @@
             <label>Fancy Bandana</label>
             <description>This bandana is little more than a fancy piece of cloth that is worn on the head. It covers your hair.</description>
             <graphicData>
-                <texPath>Things/Apparel/Hats/Woolcap/Woolcap</texPath>
+                <texPath>Things/Apparel/Hats/Bandana/Bandana</texPath>
                 <graphicClass>Graphic_Single</graphicClass>
             </graphicData>
             <stuffCategories>
@@ -58,7 +58,7 @@
                 <bodyPartGroups>
                     <li>UpperHead</li>
                 </bodyPartGroups>
-                <wornGraphicPath>Things/Apparel/Hats/Woolcap/Woolcap</wornGraphicPath>
+                <wornGraphicPath>Things/Apparel/Hats/Bandana/Bandana</wornGraphicPath>
                 <layers>
                     <li>Overhead</li>
                 </layers>
@@ -82,7 +82,7 @@
         </options>
       </colorGenerator>-->
             <thingCategories>
-                <li>MilitaryHeaddressCat</li>
+                <li>HeaddressCat</li>
                 <li>SetBandit</li>
             </thingCategories>
             <recipeMaker>
@@ -101,7 +101,7 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="Apparel_CowboyHat"]</xpath>
         <value>
-            <label>Duellist's Hat</label>
+            <label>Duelist's Hat</label>
             <description>A well decorated, brimmed hat. A cowboy would want this.</description>
             <graphicData>
                 <texPath>Things/Apparel/Hats/CowboyHat/CowboyHat</texPath>
@@ -194,8 +194,8 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="Apparel_BowlerHat"]</xpath>
         <value>
-            <label>Hard Hat</label>
-            <description>Favoured by the construction workers all across the galaxy. These are known to have saved lives of many who fell prey to the infamous falling lunchbox, hammer or brick.</description>
+            <label>Tourist Hat</label>
+            <description>A favorite hat for all swamp travelers. Mosquito net not included.</description>
             <graphicData>
                 <texPath>Things/Apparel/Hats/Hardhat/Hardhat</texPath>
                 <graphicClass>Graphic_Single</graphicClass>
@@ -291,8 +291,8 @@
             </stuffCategories>
             <costList>
                 <ComponentIndustrial>4</ComponentIndustrial>
-                <Compaste>20</Compaste>
-                <SyntheticFibers>7</SyntheticFibers>
+                <Compaste>10</Compaste>
+                <SyntheticFibers>4</SyntheticFibers>
             </costList>
             <statBases>
                 <WorkToMake>10000</WorkToMake>
@@ -306,8 +306,8 @@
                 <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
                 <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
                 <StuffEffectMultiplierArmor>5.13</StuffEffectMultiplierArmor>
-                <ArmorRating_Sharp>10.27</ArmorRating_Sharp>
-                <ArmorRating_Blunt>21.95925</ArmorRating_Blunt>
+                <ArmorRating_Sharp>6.2</ArmorRating_Sharp>
+                <ArmorRating_Blunt>15.9</ArmorRating_Blunt>
                 <ArmorRating_Heat>0</ArmorRating_Heat>
             </statBases>
             <equippedStatOffsets>
@@ -340,7 +340,7 @@
                 <parentTagDef>ApparelHead</parentTagDef>
             </apparel>
             <thingCategories>
-                <li>HeavyHelmetsCat</li>
+                <li>LightHelmetsCat</li>
             </thingCategories>
             <recipeMaker>
                 <researchPrerequisite>Armor_C1</researchPrerequisite>
@@ -386,8 +386,8 @@
                 <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
                 <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
                 <StuffEffectMultiplierArmor>5.44</StuffEffectMultiplierArmor>
-                <ArmorRating_Sharp>10.88</ArmorRating_Sharp>
-                <ArmorRating_Blunt>24.8216</ArmorRating_Blunt>
+                <ArmorRating_Sharp>8.8</ArmorRating_Sharp>
+                <ArmorRating_Blunt>20.8</ArmorRating_Blunt>
                 <ArmorRating_Heat>0.04</ArmorRating_Heat>
             </statBases>
             <equippedStatOffsets>
@@ -417,7 +417,7 @@
                 <parentTagDef>ApparelHead</parentTagDef>
             </apparel>
             <thingCategories>
-                <li>HeavyHelmetsCat</li>
+                <li>MediumHelmetsCat</li>
             </thingCategories>
             <recipeMaker>
                 <researchPrerequisite>FlakArmor</researchPrerequisite>

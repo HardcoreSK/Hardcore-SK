@@ -762,17 +762,17 @@
 	-->
 	<ThingCategoryDef>
 		<defName>AnimalHeaddressCat</defName>
-		<label>Animal Headdress</label>
+		<label>Primitive</label>
 		<parent>Headgear</parent>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
 		<defName>HeaddressCat</defName>
-		<label>Headdress</label>
+		<label>Simple</label>
 		<parent>Headgear</parent>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
-		<defName>SpecialHelmetsCat</defName>
-		<label>Special Headdress</label>
+		<defName>MedievalHelmets</defName>
+		<label>Medieval</label>
 		<parent>Headgear</parent>
 	</ThingCategoryDef>
 	<!-- DefOverwrite
@@ -784,7 +784,7 @@
 	-->
 	<ThingCategoryDef>
 		<defName>MilitaryHeaddressCat</defName>
-		<label>Military Headdress</label>
+		<label>Military</label>
 		<parent>Headgear</parent>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
@@ -800,6 +800,16 @@
 	<ThingCategoryDef>
 		<defName>HeavyHelmetsCat</defName>
 		<label>Heavy Helmets</label>
+		<parent>Headgear</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>SpecialHelmetsCat</defName>
+		<label>Specialized</label>
+		<parent>Headgear</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>GasMasksCat</defName>
+		<label>Gasmasks</label>
 		<parent>Headgear</parent>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
@@ -957,11 +967,6 @@
 	<ThingCategoryDef>
 		<defName>SetChemicalProtectionSuit</defName>
 		<label>Hazmat Suit Set</label>
-		<parent>Sets</parent>
-	</ThingCategoryDef>
-	<ThingCategoryDef>
-		<defName>SetGasMask</defName>
-		<label>Gasmask Set</label>
 		<parent>Sets</parent>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
