@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>ArchoCultist</defName>
+		<label>Archotech Cultist</label>
+		<description>You always knew He had chosen you to carry out His will. You caught every clue in the news and the letters in your cereal. Your friends were simply jealous, and your relatives tried to have you committed to a mental hospital, but you managed to avoid confinement. They will undoubtedly come for you again, but you have a PURPOSE. All those years of clues finally coalesced into a clear message with coordinates on a remote planet in the outer rim of the galaxy, near the front lines of the war with the mechanoids, but it didn't leave you alone. On this distant planet, He waited for you with His gift.</description>
+		<scenario>
+			<summary>A mad archotech cultist and a gift from his patron.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>PlayerColony</factionDef>
+			</playerFaction>
+			<parts>
+				<!-- Config pages -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>1</pawnCount>
+					<pawnChoiceCount>5</pawnChoiceCount>
+				</li>
+
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+					<visible>false</visible>
+				</li>
+
+				<!-- Player pawns Weapons & Tools -->
+				<li Class="SK.ScenPart_StartingThing_Random">
+					<def>StartingThing_Defined</def>
+					<thingDefs>
+                        <li>Bow_Archotech</li>
+                        <li>Gun_ArchotechBlaster</li>
+                        <li>Gun_ArchotechSMG</li>
+                        <li>MeleeWeapon_Archotech2H</li>
+                        <li>MeleeWeapon_Archotech1H</li>
+                    </thingDefs>
+                    <stuff>BetaPoly</stuff>
+                    <quality>Legendary</quality>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>TFJ_Tool_Multitool</thingDef>
+					<stuff>Steel</stuff>
+					<count>1</count>
+				</li>
+
+				<!-- Player starting eat -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>15</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>DeployableTent</thingDef>
+					<stuff>Cloth</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>5</count>
+				</li>
+				
+				<!-- Scatter some things anywhere -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>ShipChunk</thingDef>
+					<count>19</count>
+					<allowRoofed>false</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>ShipMechChunk</thingDef>
+					<count>11</count>
+					<allowRoofed>false</allowRoofed>
+				</li>
+				
+				<!-- Game Start Dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>He has left you. You no longer hear his messages. But his gift is right before you, and the final message, "Wait for me" gives you faith in a bright future. Now it's time to bring his light to the wicked.</text>
+					<textKey>GameStartDialog</textKey>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+
+				<!-- Player pawns Forced Trait -->
+				<li Class="ScenPart_ForcedTrait">
+					<def>ForcedTrait</def>
+					<visible>false</visible>
+					<chance>1</chance>
+					<context>PlayerStarter</context>
+					<trait>Paranoid</trait>
+				</li>
+				<li Class="ScenPart_ForcedTrait">
+					<def>ForcedTrait</def>
+					<visible>false</visible>
+					<chance>1</chance>
+					<context>PlayerStarter</context>
+					<trait>Cultist</trait>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+</Defs>
