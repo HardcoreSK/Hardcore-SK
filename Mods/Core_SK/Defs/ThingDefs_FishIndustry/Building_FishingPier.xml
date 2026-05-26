@@ -200,10 +200,9 @@
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="LWM_DeepStorage">
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<defName>HSK_FishTrap</defName>
 		<label>fish trap</label>
-		<thingClass>SK.Building_FishTrap</thingClass>
 		<description>A trap designed to catch small fish. Catches fish slowly over time, however providing some fish bait will speed it up considerably.\n\nIt is recommended to put multiple fish trap at least 18 cells apart from each other.\nThere are minor penalties for being close.</description>
 		<graphicData>
 		  <texPath>Things/Building/Fishing/ShellfishTrap</texPath>
@@ -246,6 +245,7 @@
 		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<building>
+			<maxItemsInCell>3</maxItemsInCell>
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
 			<repairable>False</repairable>
@@ -279,9 +279,7 @@
 		<thingCategories>
 		  <li>BuildingsProduction</li>
 		</thingCategories>
-		<inspectorTabs Inherit="false">
-			<li>LWM.DeepStorage.ITab_DeepStorage_Inventory</li>
-		</inspectorTabs>
+		<inspectorTabs Inherit="false" />
 		<researchPrerequisites>
 			<li>Fish_A1</li>
 		</researchPrerequisites>
@@ -289,7 +287,7 @@
 			<li Class="SK.CompProperties_RotModified">
 				<compClass>SK.CompRotModified</compClass>
 				<rotmodifier>0.5</rotmodifier>
-			</li>
+			</li><!--
 			<li Class="LWM.DeepStorage.Properties" >
 				<maxNumberStacks>3</maxNumberStacks>
 				<minTimeStoringTakes>15</minTimeStoringTakes>
@@ -297,7 +295,8 @@
 				<additionalTimeEachDef>15</additionalTimeEachDef>
 				<showContents>false</showContents>
 				<overlayType>SumOfItemsPerCell</overlayType>
-			</li>
+			</li>-->
+			<li Class="SK.CompProperties_FishTrap"/>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>5.0</fuelConsumptionRate>
 				<fuelCapacity>5.0</fuelCapacity>
@@ -315,5 +314,21 @@
 			</li>
 		</comps>
 	</ThingDef>
+
+    <AdaptiveStorage.GraphicsDef>
+		<defName>HSK_FishTrapASF</defName>
+		<targetDef>HSK_FishTrap</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+					<texPath>Things/Building/Fishing/ShellfishTrap</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawRotated>false</drawRotated>
+					<drawSize>(1,1)</drawSize>
+                </graphicData>
+            </li>
+        </graphics>
+		<showContainedItems>false</showContainedItems>
+	</AdaptiveStorage.GraphicsDef>
 
 </Defs>

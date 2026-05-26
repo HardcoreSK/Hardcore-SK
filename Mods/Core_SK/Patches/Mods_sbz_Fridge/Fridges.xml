@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[sbz] Fridge</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name='sbzFridgeBase' or defName='sbz_CorpseFridge']/researchPrerequisites</xpath>
+                    <value>
+						<researchPrerequisites>
+							<li>Storage_C3</li>
+						</researchPrerequisites>
+                    </value>
+                </li>
+				
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[@Name='sbzFridgeBase']/building</xpath>
+                    <value>
+						<fixedStorageSettings DeepReplace="True">
+							<filter>
+								<categories>
+									<li>AnimalProductRaw</li>
+									<li>Drugs</li>
+									<li>EggsFertilized</li>
+									<li>EggsUnfertilized</li>
+									<li>Foods</li>
+									<li>Medicine</li>
+									<li>PlantMatter</li>
+									<li>PlantFoodRaw</li>
+									<li>BodyParts</li>
+								</categories>
+								<thingDefs>
+									<li>MintLeaves</li>
+									<li>Hypericum</li>
+									<li>WildRose</li>
+									<li>aloe</li>
+									<li>RawTea</li>
+									<li>RawTobacco</li>
+								</thingDefs>
+								<specialFiltersToDisallow>
+									<li>AllowRotten</li>
+								</specialFiltersToDisallow>
+							</filter>
+						</fixedStorageSettings>
+						<defaultStorageSettings DeepReplace="True">
+							<priority>Important</priority>
+							<filter>
+								<categories>
+									<li>FoodMeals</li>
+								</categories>
+								<disallowedThingDefs>
+									<li>MealSurvivalPack</li>
+								</disallowedThingDefs>
+							</filter>
+						</defaultStorageSettings>
+                    </value>
+                </li>
+				
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName='sbz_Fridge']</xpath>
+                    <value>
+						<stuffCategories>
+							<li>Metallic</li>
+							<li>Plastic</li>
+						</stuffCategories>
+						<costStuffCount>20</costStuffCount>
+						<costList>
+							<Rubber>7</Rubber>
+							<Plastic>5</Plastic>
+							<ComponentIndustrial>2</ComponentIndustrial>
+							<ElectronicComponents>2</ElectronicComponents>
+						</costList>
+						<statBases Merge="true">>
+							<WorkToBuild>350</WorkToBuild>
+						</statBases>
+                    </value>
+                </li>
+				
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName='sbz_SingleChestFridge']</xpath>
+                    <value>
+						<stuffCategories>
+							<li>Metallic</li>
+							<li>Plastic</li>
+						</stuffCategories>
+						<costStuffCount>40</costStuffCount>
+						<costList>
+							<Rubber>15</Rubber>
+							<Plastic>10</Plastic>
+							<ComponentIndustrial>5</ComponentIndustrial>
+							<ElectronicComponents>3</ElectronicComponents>
+						</costList>
+						<statBases Merge="true">>
+							<WorkToBuild>450</WorkToBuild>
+						</statBases>
+                    </value>
+                </li>
+
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName='sbz_SingleWallFridge']</xpath>
+                    <value>
+						<stuffCategories>
+							<li>Metallic</li>
+							<li>Plastic</li>
+						</stuffCategories>
+						<costStuffCount>45</costStuffCount>
+						<costList>
+							<Rubber>15</Rubber>
+							<Plastic>10</Plastic>
+							<ComponentIndustrial>5</ComponentIndustrial>
+							<ElectronicComponents>3</ElectronicComponents>
+						</costList>
+						<statBases Merge="true">>
+							<WorkToBuild>450</WorkToBuild>
+						</statBases>
+                    </value>
+                </li>		
+		
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName='sbz_LargeFridge']</xpath>
+                    <value>
+						<stuffCategories>
+							<li>Metallic</li>
+							<li>Plastic</li>
+						</stuffCategories>
+						<costStuffCount>90</costStuffCount>
+						<costList>
+							<Rubber>30</Rubber>
+							<Plastic>25</Plastic>
+							<ComponentIndustrial>15</ComponentIndustrial>
+							<ElectronicComponents>8</ElectronicComponents>
+						</costList>
+						<statBases Merge="true">>
+							<WorkToBuild>750</WorkToBuild>
+						</statBases>
+                    </value>
+                </li>
+		
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName='sbz_DoubleChestFridge']</xpath>
+                    <value>
+						<stuffCategories>
+							<li>Metallic</li>
+							<li>Plastic</li>
+						</stuffCategories>
+						<costStuffCount>75</costStuffCount>
+						<costList>
+							<Rubber>25</Rubber>
+							<Plastic>20</Plastic>
+							<ComponentIndustrial>10</ComponentIndustrial>
+							<ElectronicComponents>5</ElectronicComponents>
+						</costList>
+						<statBases Merge="true">>
+							<WorkToBuild>650</WorkToBuild>
+						</statBases>
+                    </value>
+                </li>
+		
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName='sbz_DoubleWallFridge']</xpath>
+                    <value>
+						<stuffCategories>
+							<li>Metallic</li>
+							<li>Plastic</li>
+						</stuffCategories>
+						<costStuffCount>60</costStuffCount>
+						<costList>
+							<Rubber>25</Rubber>
+							<Plastic>20</Plastic>
+							<ComponentIndustrial>10</ComponentIndustrial>
+							<ElectronicComponents>5</ElectronicComponents>
+						</costList>
+						<statBases Merge="true">>
+							<WorkToBuild>650</WorkToBuild>
+						</statBases>
+                    </value>
+                </li>	
+		
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName='sbz_CorpseFridge']</xpath>
+                    <value>
+						<stuffCategories>
+							<li>Metallic</li>
+							<li>Plastic</li>
+						</stuffCategories>
+						<costStuffCount>125</costStuffCount>
+						<costList>
+							<Rubber>38</Rubber>
+							<Plastic>30</Plastic>
+							<ComponentIndustrial>15</ComponentIndustrial>
+							<ElectronicComponents>12</ElectronicComponents>
+						</costList>
+						<statBases Merge="true">
+							<WorkToBuild>1500</WorkToBuild>
+						</statBases>
+                    </value>
+                </li>
+		
+            </operations>
+        </match>
+    </Operation>
+</Patch>
