@@ -351,7 +351,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="RockBase">
 		<defName>MineableComponentsIndustrial</defName>
 		<label>compacted machinery</label>
@@ -369,7 +369,6 @@
 			<mineableThing>ComponentIndustrial</mineableThing>
 			<mineableYield>2</mineableYield>
 			<mineableScatterCommonality>1.00</mineableScatterCommonality>
-			<!-- as often as steel, with smaller blotches -->
 			<mineableScatterLumpSizeRange>
 				<min>3</min>
 				<max>6</max>
@@ -401,5 +400,5 @@
 			</li>
 		</comps>
 	</ThingDef>
-
+-->
 </Defs>

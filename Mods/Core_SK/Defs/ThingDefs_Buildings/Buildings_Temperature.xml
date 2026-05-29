@@ -151,13 +151,12 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="BuildingBase">
 		<defName>Heater</defName>
 		<label>heater</label>
 		<thingClass>Building_Heater</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Misc/TempControl/Heater</texPath> <!-- TODO what?-->
 			<graphicClass>Graphic_Single</graphicClass>
 			<shadowData>
 				<volume>(0.25,0.4,0.7)</volume>
@@ -225,7 +224,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RH_MediumHeater</defName>
 		<thingClass>SK.Building_WallHeater</thingClass>
@@ -436,7 +435,7 @@
 	</ThingDef>
 
 	<!-- Coolers -->
-
+<!--
 	<ThingDef ParentName="BuildingBase">
 		<defName>PassiveCooler</defName>
 		<label>passive cooler</label>
@@ -504,7 +503,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 	</ThingDef>
-	
+	-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>ColdstonePassiveCooler</defName>
 		<label>coldstone passive cooler</label>
@@ -718,7 +717,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="BuildingBase">
 		<defName>Cooler</defName>
 		<label>cooler</label>
@@ -800,7 +799,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RedistHeat_IndustrialCooler</defName>
 		<thingClass>Building_Cooler</thingClass>
@@ -869,7 +868,7 @@
 	</ThingDef>
 
 	<!-- Other -->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="BuildingBase">
 		<defName>Vent</defName>
 		<label>closable vent</label>
@@ -942,7 +941,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>TemperatureGauge</defName>
 		<label>thermometer</label>

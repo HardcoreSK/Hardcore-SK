@@ -2,7 +2,7 @@
 <Defs>
 
 	<!--========================= Walls =============================-->
-
+<!--
 	<ThingDef ParentName="BuildingBase" Name="WallBase" Abstract ="True">
 		<graphicData>
 			<linkType>CornerFiller</linkType>
@@ -36,7 +36,6 @@
 		<neverMultiSelect>true</neverMultiSelect>
 		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<!-- Best affordance needed for stone -->
 		<holdsRoof>true</holdsRoof>
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>
 		<blockLight>true</blockLight>
@@ -59,8 +58,8 @@
 			</li>
 		</comps>
 	</ThingDef>
-
-	<ThingDef ParentName="WallBase">
+--><!-- DefOverwrite
+	<ThingDef ParentName="Wall">
 		<defName>Wall</defName>
 		<label>wall</label>
 		<description>An impassable wall. It is capable of holding up a roof.</description>
@@ -120,7 +119,7 @@
 		</stuffCategories>
 		<costStuffCount>6</costStuffCount>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="BuildingBase">
 		<defName>Fence</defName>
 		<label>fence</label>
@@ -209,8 +208,8 @@
 			</blueprintGraphicData>
 		</building>
 	</ThingDef>
-
-	<ThingDef ParentName="WallBase">
+-->
+	<ThingDef ParentName="Wall">
 		<defName>ClutterSilverWall</defName>
 		<label>panel reinforced wall</label>
 		<description>A reinforced wall with thick panels attached to strengthen it further.</description>
@@ -234,29 +233,17 @@
 			</damageData>
 		</graphicData>
 		<uiIconPath>Things/Building/Walls/ReinforcedWallIco</uiIconPath>
-		<building>
-			<blueprintGraphicData>
-				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
-			</blueprintGraphicData>
-			<relatedBuildCommands>
-				<li>MDoor</li>
-				<li>Autodoor</li>
-				<li>Blastdoor</li>
-				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
-			</relatedBuildCommands>
-			<paintable>true</paintable>
-		</building>
 		<statBases>
 			<MaxHitPoints>800</MaxHitPoints>
 			<WorkToBuild>900</WorkToBuild>
 			<Flammability>0</Flammability>
 		</statBases>
 		<tickerType>Never</tickerType>
-		<stuffCategories>
+		<stuffCategories Inherit="false">
 			<li>StrongMetallic</li>
 		</stuffCategories>
 		<costStuffCount>12</costStuffCount>
-		<costList>
+		<costList Inherit="false">
 			<ComponentIndustrial>2</ComponentIndustrial>
 			<ReinforcedConcrete>4</ReinforcedConcrete>
 		</costList>
@@ -266,7 +253,7 @@
 		<constructionSkillPrerequisite>13</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="WallBase">
+	<ThingDef ParentName="Wall">
 		<defName>UtilityWall</defName>
 		<label>utility wall</label>
 		<description>Upgraded version of basic walls, with the ability to easily attach things, like centuries old dust! This version comes with built-in wires to hide them from cats.</description>
@@ -288,19 +275,6 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<building>
-			<blueprintGraphicData>
-				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
-			</blueprintGraphicData>
-			<relatedBuildCommands>
-				<li>Door</li>
-				<li>MDoor</li>
-				<li>Autodoor</li>
-				<li>CellDoor</li>
-				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
-			</relatedBuildCommands>
-			<paintable>true</paintable>
-		</building>
 		<uiIconPath>Things/Building/Walls/UtilityWallIco</uiIconPath>
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
@@ -308,19 +282,14 @@
 			<Flammability>0</Flammability>
 			<Beauty>1</Beauty>
 		</statBases>
-		<stuffCategories>
+		<stuffCategories Inherit="false">
 			<li>StrongMetallic</li>
 		</stuffCategories>
 		<costStuffCount>6</costStuffCount>
-		<costList>
+		<costList Inherit="false">
 			<Wire>3</Wire>
 		</costList>
 		<comps>
-			<li Class="CompProperties_Glower">
-				<compClass>CompGlower</compClass>
-				<glowRadius>5</glowRadius>
-				<glowColor>(217,217,217,0)</glowColor>
-			</li>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTransmitter</compClass>
 				<transmitsPower>true</transmitsPower>
@@ -338,7 +307,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="WallBase">
+	<ThingDef ParentName="Wall">
 		<defName>ClutterUWallLight</defName>
 		<label>utility wall with lights</label>
 		<description>Upgraded version of basic walls, with the ability to easily attach things, like centuries old dust! This version comes with lights to show off your beautiful dust collection.</description>
@@ -360,19 +329,6 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<building>
-			<blueprintGraphicData>
-				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
-			</blueprintGraphicData>
-			<relatedBuildCommands>
-				<li>Door</li>
-				<li>MDoor</li>
-				<li>Autodoor</li>
-				<li>CellDoor</li>
-				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
-			</relatedBuildCommands>
-			<paintable>true</paintable>
-		</building>
 		<uiIconPath>Things/Building/Walls/UtilityWallLightsIco</uiIconPath>
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
@@ -380,11 +336,11 @@
 			<Flammability>0</Flammability>
 			<Beauty>1</Beauty>
 		</statBases>
-		<stuffCategories>
+		<stuffCategories Inherit="false">
 			<li>StrongMetallic</li>
 		</stuffCategories>
 		<costStuffCount>6</costStuffCount>
-		<costList>
+		<costList Inherit="false">
 			<Wire>3</Wire>
 			<Glass>5</Glass>
 			<ElectronicComponents>1</ElectronicComponents>
@@ -489,7 +445,7 @@
 			<li>Construction_B3</li>
 		</researchPrerequisites>
 	</ThingDef>
-
+<!--
 	<ThingDef ParentName="BuildingBase" Name="Column">
 		<defName>Column</defName>
 		<label>column</label>
@@ -530,7 +486,6 @@
 		<designationCategory>Structure</designationCategory>
 		<blockLight>false</blockLight>
 		<specialDisplayRadius>6.9</specialDisplayRadius>
-		<!-- must be kept in sync with roof hold-up radius -->
 		<building>
 			<isInert>true</isInert>
 			<ai_chillDestination>false</ai_chillDestination>
@@ -544,7 +499,7 @@
 			<li Class="CompProperties_Styleable" />
 		</comps>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>ColumnPrimitive</defName>
 		<label>wooden column</label>
