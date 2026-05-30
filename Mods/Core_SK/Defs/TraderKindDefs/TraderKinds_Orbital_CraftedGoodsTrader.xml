@@ -24,11 +24,9 @@
 				<price>Expensive</price>
 				<totalPriceRange>1200~2000</totalPriceRange>
 			</li>
-			<li Class="StockGenerator_Category">
-				<categoryDef>Canware</categoryDef>
-				<thingDefCountRange>1~2</thingDefCountRange>
-				<price>Expensive</price>
-				<totalPriceRange>500~1000</totalPriceRange>
+            <li Class="StockGenerator_SingleDef">
+				<thingDef>MetalCan</thingDef>
+				<countRange>50~300</countRange>
 			</li>
 			<li Class="StockGenerator_Category">
 				<categoryDef>WeaponParts</categoryDef>

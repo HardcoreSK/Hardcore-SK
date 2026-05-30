@@ -136,6 +136,13 @@
 		<resourceReadoutRoot>true</resourceReadoutRoot>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
+		<defName>MedicalMaterials</defName>
+		<label>Materials</label>
+		<parent>MedicineStuff</parent>
+		<iconPath>Things/Item/Drug/MedicalDrink</iconPath>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
 		<defName>MedicalDrugs</defName>
 		<label>Medical Drugs</label>
 		<parent>MedicineStuff</parent>
@@ -361,12 +368,12 @@
 	</ThingCategoryDef>
 	-->
 	<!-- ============= HARDCORE SK CATEGORIES start =================-->
-	<ThingCategoryDef>
+	<!--<ThingCategoryDef>
 		<defName>Canware</defName>
 		<label>Canware</label>
 		<iconPath>UI/Icons/Canware</iconPath>
 		<parent>Manufactured</parent>
-	</ThingCategoryDef>
+	</ThingCategoryDef>-->
 	<ThingCategoryDef>
 		<defName>WeaponCrate</defName>
 		<label>Weapon Crate</label>
@@ -409,6 +416,18 @@
 		<iconPath>UI/Icons/WeaponCrate</iconPath>
 		<parent>Manufactured</parent>
 	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>Tents</defName>
+		<label>Tents</label>
+		<iconPath>Things/Building/CampingStuff/UnfinishedTent</iconPath>
+		<parent>Manufactured</parent>
+	</ThingCategoryDef>
+    <ThingCategoryDef>
+		<defName>MiscManufactured</defName>
+		<label>Misc</label>
+		<iconPath>UI/Icons/Canware</iconPath>
+		<parent>Manufactured</parent>
+	</ThingCategoryDef>
 	<!-- ============= HARDCORE SK CATEGORIES end =================-->
 	<!-- DefOverwrite
 	<ThingCategoryDef>
@@ -431,8 +450,14 @@
 	<ThingCategoryDef>
 		<defName>SeedsCategory</defName>
 		<label>Seeds</label>
-		<parent>PlantMatter</parent>
+		<parent>ResourcesRaw</parent>
 		<iconPath>Ui/Icons/ThingCategories/PlantFoodRaw</iconPath>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>DriedPlantMatter</defName>
+		<label>Dried Materials</label>
+		<parent>ResourcesRaw</parent>
+		<iconPath>Things/Item/Resource/DriedLeavesSmokeleaf</iconPath>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
 		<defName>Extracted</defName>
@@ -443,8 +468,14 @@
 	</ThingCategoryDef>
 	<ThingCategoryDef>
 		<defName>Waste</defName>
-		<label>waste</label>
+		<label>Waste</label>
 		<parent>ResourcesRaw</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>NaturalResources</defName>
+		<label>Natural Resources</label>
+		<parent>ResourcesRaw</parent>
+		<iconPath>Things/Item/Resource/DirtPile</iconPath>
 	</ThingCategoryDef>
 	<!-- DefOverwrite
 	<ThingCategoryDef>
@@ -512,7 +543,7 @@
 	<ThingCategoryDef>
 		<defName>Chemical</defName>
 		<label>Chemical</label>
-		<parent>Hydrocarbons</parent>
+		<parent>Extracted</parent>
 		<iconPath>UI/Icons/Chemical</iconPath>
 	</ThingCategoryDef>
 	<!-- ============= HARDCORE SK CATEGORIES end =================-->
@@ -915,20 +946,17 @@
 		<parent>Apparel</parent>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
-		<defName>MedKitCat</defName>
-		<label>Medical kits</label>
-		<parent>Apparel</parent>
-	</ThingCategoryDef>
-	<ThingCategoryDef>
 		<defName>SpecialApparelCat</defName>
 		<label>Special</label>
 		<parent>Apparel</parent>
-	</ThingCategoryDef><!-- DefOverwrite
+	</ThingCategoryDef>
+    <!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>ApparelMisc</defName>
 		<label>misc</label>
 		<parent>Apparel</parent>
-	</ThingCategoryDef> -->
+	</ThingCategoryDef>
+    -->
 	<ThingCategoryDef>
 		<defName>Sets</defName>
 		<label>Sets</label>

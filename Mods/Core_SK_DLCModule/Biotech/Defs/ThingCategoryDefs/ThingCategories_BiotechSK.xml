@@ -2,12 +2,22 @@
 <Defs>
     <ThingCategoryDef>
 		<defName>GeneticItems</defName>
-		<label>genetics</label>
+		<label>Genetics</label>
+		<parent>Items</parent>
+	</ThingCategoryDef>
+    <ThingCategoryDef>
+		<defName>CoresAndChips</defName>
+		<label>cores and chips</label>
 		<parent>Items</parent>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
 		<defName>HeadgearMechanitor</defName>
 		<label>Mechanitor Headgear</label>
 		<parent>Headgear</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>KidsApparel</defName>
+		<label>Kids</label>
+		<parent>Apparel</parent>
 	</ThingCategoryDef>
 </Defs>

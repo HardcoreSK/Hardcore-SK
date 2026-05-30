@@ -116,54 +116,6 @@
 			<researchPrerequisite>Prosthesis_making_D4</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
-	<ThingDef ParentName="ResourceBase">
-		<defName>MAAI_Chip</defName>
-		<label>MA-AI chip</label>
-		<description>Medical Assistant AI chip. Used as a specialized component in advanced and delicate implants, with an AI system that can handle all the device's complex processes without burdening the user.</description>
-		<techLevel>Spacer</techLevel>
-		<graphicData>
-			<texPath>Things/Item/Resource/EPOEMAAIChip</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-		</graphicData>
-		<soundInteract>Metal_Drop</soundInteract>
-		<soundDrop>Standard_Drop</soundDrop>
-		<stackLimit>50</stackLimit>
-		<healthAffectsPrice>false</healthAffectsPrice>
-		<statBases>
-			<MarketValue>500</MarketValue>
-			<WorkToMake>7500</WorkToMake>
-			<MaxHitPoints>70</MaxHitPoints>
-			<Mass>0.6</Mass>
-			<Flammability>0.6</Flammability>
-			<DeteriorationRate>2.0</DeteriorationRate>
-		</statBases>
-		<thingCategories>
-			<li>Manufactured</li>
-		</thingCategories>
-		<costList>
-			<Gold>10</Gold>
-			<CarbonAlloy>15</CarbonAlloy>
-			<ComponentSpacer>5</ComponentSpacer>
-			<BioMicrochips>2</BioMicrochips>
-		</costList>
-		<recipeMaker>
-			<workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
-			<workSkillLearnPerTick>0.8</workSkillLearnPerTick>	  
-			<workSkill>Crafting</workSkill>
-			<workAmount>10000</workAmount>
-			<effectWorking>Smith</effectWorking>		
-			<soundWorking>EPOEAssembling</soundWorking>
-			<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-			<recipeUsers>
-				<li>RobAssem</li>
-			</recipeUsers>
-			<productCount>5</productCount>
-			<skillRequirements>
-				<Crafting>12</Crafting>
-			</skillRequirements>
-		</recipeMaker>
-	</ThingDef>
 	
 	<ThingDef ParentName="ResourceBase">
 		<defName>ScytherBlade</defName>

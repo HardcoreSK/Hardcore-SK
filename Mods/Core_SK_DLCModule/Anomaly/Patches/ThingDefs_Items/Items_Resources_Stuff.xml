@@ -28,6 +28,15 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Shard"]/thingCategories</xpath>
+		<value>
+            <thingCategories Inherit="False">
+                <li>SuperMaterialCat</li>
+            </thingCategories>
+		</value>
+	</Operation>
+
     <!--<Operation Class="PatchOperationAttributeSet">
         <xpath>Defs/ThingDef[defName="Leather_Dread"]</xpath>
         <attribute>ParentName</attribute>

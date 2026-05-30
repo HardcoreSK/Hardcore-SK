@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="SK_ResourceBase">
+		<defName>DriedLeavesSmokeleaf</defName>
+		<label>dried smokeleaf leaves</label>
+		<description>Dried smokeleaves. Can be used for rolling joints at a crafting spot.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/DriedLeavesSmokeleaf</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<thingCategories>
+			<li>DriedPlantMatter</li>
+		</thingCategories>
+		<statBases>
+			<Mass>0.2</Mass>
+			<MarketValue>2.5</MarketValue>			
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>100</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="SK_ResourceBase">
+		<defName>DriedLeavesTobacco</defName>
+		<label>dried tobacco leaves</label>
+		<description>Dried tobacco leaves. Can be used for rolling cigars or cigarettes at a crafting spot.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/DriedLeavesTobacco</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<thingCategories>
+			<li>DriedPlantMatter</li>
+		</thingCategories>
+		<statBases>
+			<Mass>0.2</Mass>
+			<MarketValue>1.6</MarketValue>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>100</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="SK_ResourceBase">
+		<defName>CoffeeBeans</defName>
+		<label>coffee beans</label>
+		<description>Dried coffee berries.</description>
+		<graphicData>
+			<texPath>Things/Veg/CoffeeBeans</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<stackLimit>100</stackLimit>
+		<thingCategories>
+			<li>DriedPlantMatter</li>
+		</thingCategories>
+		<statBases>
+			<Mass>0.1</Mass>
+			<MarketValue>2.5</MarketValue>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>120</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

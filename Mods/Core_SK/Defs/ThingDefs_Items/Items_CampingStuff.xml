@@ -70,7 +70,6 @@
 		<pathCost>15</pathCost>
 	</ThingDef>
 
-
 	<ThingDef ParentName="ResourceBaseCampingStuff" Name="TentBase" Abstract="True">
 		<thingClass>ThingWithComps</thingClass>
 		<tradeTags>
@@ -82,6 +81,9 @@
 		<recipeMaker>
 			<researchPrerequisite>Apparel_B1</researchPrerequisite>
 		</recipeMaker>
+		<thingCategories>
+			<li>Tents</li>
+		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Usable">
 				<useLabel>Deploy tent at...</useLabel>
@@ -110,9 +112,6 @@
 		</stuffCategories>
 		<costStuffCount>150</costStuffCount>
 		<useHitPoints>true</useHitPoints>
-		<thingCategories>
-			<li>Manufactured</li>
-		</thingCategories>
 		<statBases>
 			<MarketValue>300</MarketValue>
 			<MaxHitPoints>150</MaxHitPoints>
@@ -192,9 +191,6 @@
 		</stuffCategories>
 		<costStuffCount>300</costStuffCount>
 		<useHitPoints>true</useHitPoints>
-		<thingCategories>
-			<li>Manufactured</li>
-		</thingCategories>
 		<statBases>
 			<MarketValue>550</MarketValue>
 			<MaxHitPoints>300</MaxHitPoints>
@@ -273,9 +269,6 @@
 		</stuffCategories>
 		<costStuffCount>400</costStuffCount>
 		<useHitPoints>true</useHitPoints>
-		<thingCategories>
-			<li>Manufactured</li>
-		</thingCategories>
 		<statBases>
 			<MarketValue>750</MarketValue>
 			<MaxHitPoints>400</MaxHitPoints>

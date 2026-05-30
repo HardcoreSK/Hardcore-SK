@@ -21,6 +21,14 @@
                     </thingCategories>
                 </value>
             </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Jade"]/thingCategories</xpath>
+                <value>
+                    <thingCategories Inherit="False">
+                        <li>PRS</li>
+                    </thingCategories>
+                </value>
+            </li>
         </operations>
     </Operation>
 </Patch>

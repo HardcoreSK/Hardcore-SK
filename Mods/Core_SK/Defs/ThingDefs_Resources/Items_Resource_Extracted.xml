@@ -16,7 +16,7 @@
 			<Nutrition>0.01</Nutrition>
 		</statBases>
 		<thingCategories>
-			<li>ResourcesRaw</li>
+			<li>NaturalResources</li>
 		</thingCategories>
 		<stackLimit>600</stackLimit>
 		<deepCommonality>1.8</deepCommonality>
@@ -174,12 +174,11 @@
 			<Bulk>0.15</Bulk>
 		</statBases>
 		<thingCategories>
-			<li>Extracted</li>
+			<li>NaturalResources</li>
 		</thingCategories>
 		<stackLimit>600</stackLimit>
 	</ThingDef>
 
-	<!--Saltpeter-->
 	<ThingDef ParentName="SK_ResourceBase">
 		<defName>Nitre</defName>
 		<label>Nitre</label>
@@ -229,7 +228,6 @@
 		</deepLumpSizeRange>
 	</ThingDef>
 
-
 	<ThingDef ParentName="SK_ResourceBase">
 		<defName>Coal</defName>
 		<label>Coal Ore</label>
@@ -269,7 +267,6 @@
 		</deepLumpSizeRange>
 	</ThingDef>
 
-
 	<ThingDef ParentName="SK_ResourceBase">
 		<defName>Charcoal</defName>
 		<label>Charcoal</label>
@@ -299,5 +296,31 @@
 		</thingCategories>
 		<stackLimit>600</stackLimit>
 	</ThingDef>	
+
+	<ThingDef ParentName="SK_ResourceBase">
+		<defName>Silicon</defName>
+		<label>silicon</label>
+		<description>Silicon is the one of the most common elements in the universe by mass, but very rarely occurs as the pure free element in nature. It can be produced by smelting Sand.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Silicon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Last</resourceReadoutPriority>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<useHitPoints>true</useHitPoints>
+		<resourceReadoutAlwaysShow>false</resourceReadoutAlwaysShow>
+		<statBases>
+			<MarketValue>4</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<Mass>0.1</Mass>
+			<Bulk>0.1</Bulk>
+		</statBases>
+		<thingCategories>
+			<li>Extracted</li>
+		</thingCategories>
+		<stackLimit>300</stackLimit>
+	</ThingDef>
 
 </Defs>

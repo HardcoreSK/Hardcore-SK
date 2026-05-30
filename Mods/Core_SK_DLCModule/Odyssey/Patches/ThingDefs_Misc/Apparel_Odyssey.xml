@@ -41,10 +41,20 @@
 	</Operation>
 
 	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="Apparel_Vacsuit" or defName="Apparel_VacsuitChildren"]</xpath>
+		<xpath>Defs/ThingDef[defName="Apparel_Vacsuit"]</xpath>
 		<value>
             <thingCategories Inherit="False">
                 <li>SpecialApparelCat</li>
+            </thingCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Apparel_VacsuitChildren"]</xpath>
+		<value>
+            <thingCategories Inherit="False">
+                <li>SpecialApparelCat</li>
+                <li>KidsApparel</li>
             </thingCategories>
 		</value>
 	</Operation>

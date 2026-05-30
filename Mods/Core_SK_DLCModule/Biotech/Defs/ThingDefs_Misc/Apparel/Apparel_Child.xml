@@ -1,92 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- Kid clothing -->
+    <!-- Kid clothing -->
 
-  <ThingDef Name="ApparelChildNeolithicBase" ParentName="ApparelNeolithicBase" Abstract="True">
-    <thingCategories>
-      <li>ApparelMisc</li>
-    </thingCategories>
-    <apparel>
-      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
-      <developmentalStageFilter>Child</developmentalStageFilter>
-      <layers>
-        <li>OnSkin</li>
-      </layers>
-    </apparel>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <smeltable>false</smeltable>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricTailoringBench</li>
-        <li>HandTailoringBench</li>
-      </recipeUsers>
-    </recipeMaker>
-  </ThingDef>
+    <ThingDef Name="ApparelChildNeolithicBase" ParentName="ApparelNeolithicBase" Abstract="True">
+        <thingCategories>
+            <li>KidsApparel</li>
+        </thingCategories>
+        <apparel>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+            <developmentalStageFilter>Child</developmentalStageFilter>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+        </apparel>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <smeltable>false</smeltable>
+        <recipeMaker>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
 
-  <ThingDef Name="ApparelChildMedievalBase" ParentName="ApparelMedievalBase" Abstract="True">
-    <thingCategories>
-      <li>ApparelMisc</li>
-    </thingCategories>
-    <apparel>
-      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
-      <developmentalStageFilter>Child</developmentalStageFilter>
-      <layers>
-        <li>OnSkin</li>
-      </layers>
-    </apparel>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <smeltable>false</smeltable>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricTailoringBench</li>
-      </recipeUsers>
-    </recipeMaker>
-  </ThingDef>
+    <ThingDef Name="ApparelChildMedievalBase" ParentName="ApparelMedievalBase" Abstract="True">
+        <thingCategories>
+            <li>KidsApparel</li>
+        </thingCategories>
+        <apparel>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+            <developmentalStageFilter>Child</developmentalStageFilter>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+        </apparel>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <smeltable>false</smeltable>
+        <recipeMaker>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
 
-  <ThingDef Name="ApparelChildIndustrialBase" ParentName="ApparelIndustrialBase" Abstract="True">
-    <thingCategories>
-      <li>ApparelMisc</li>
-    </thingCategories>
-    <apparel>
-      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
-      <developmentalStageFilter>Child</developmentalStageFilter>
-      <layers>
-        <li>OnSkin</li>
-      </layers>
-    </apparel>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <smeltable>false</smeltable>
-  </ThingDef>
+    <ThingDef Name="ApparelChildIndustrialBase" ParentName="ApparelIndustrialBase" Abstract="True">
+        <thingCategories>
+            <li>KidsApparel</li>
+        </thingCategories>
+        <apparel>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+            <developmentalStageFilter>Child</developmentalStageFilter>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+        </apparel>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <smeltable>false</smeltable>
+    </ThingDef>
 
-  <ThingDef Name="ApparelChildSpacerBase" ParentName="ApparelSpacerBase" Abstract="True">
-    <thingCategories>
-      <li>ApparelMisc</li>
-    </thingCategories>
-    <apparel>
-      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
-      <developmentalStageFilter>Child</developmentalStageFilter>
-      <layers>
-        <li>OnSkin</li>
-      </layers>
-    </apparel>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <smeltable>false</smeltable>
-  </ThingDef>
+    <ThingDef Name="ApparelChildSpacerBase" ParentName="ApparelSpacerBase" Abstract="True">
+        <thingCategories>
+            <li>KidsApparel</li>
+        </thingCategories>
+        <apparel>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+            <developmentalStageFilter>Child</developmentalStageFilter>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+        </apparel>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <smeltable>false</smeltable>
+    </ThingDef>
 
-  <!--  <ThingDef ParentName="ApparelChildIndustrialBase">
+    <!--  <ThingDef ParentName="ApparelChildIndustrialBase">
     <defName>Apparel_KidRomper</defName>
     <label>kid romper</label>
     <description>A combined t-shirt and pants sized for kids, with a snuggly built-in undergarment. Little ones love it!</description>
@@ -124,7 +124,7 @@
     </recipeMaker>
   </ThingDef> -->
 
-  <!-- <ThingDef ParentName="ApparelChildIndustrialBase">
+    <!-- <ThingDef ParentName="ApparelChildIndustrialBase">
     <defName>Apparel_KidShirt</defName>
     <label>kid shirt</label>
     <description>A small, simple t-shirt sized to fit children.</description>
@@ -160,7 +160,7 @@
   </ThingDef>
 
  -->
-  <!-- <ThingDef ParentName="ApparelChildIndustrialBase">
+    <!-- <ThingDef ParentName="ApparelChildIndustrialBase">
     <defName>Apparel_KidPants</defName>
     <label>kid pants</label>
     <description>A small set of pants sized to fit children.</description>
@@ -194,7 +194,7 @@
   </ThingDef>
 
  -->
-  <!-- <ThingDef ParentName="ApparelChildNeoliticBase">
+    <!-- <ThingDef ParentName="ApparelChildNeoliticBase">
     <defName>Apparel_KidParka</defName>
     <label>kid parka</label>
     <description>A heavy jacket for keeping a child warm in cold temperatures.</description>
@@ -245,7 +245,7 @@
   </ThingDef>
 
  -->
-  <!-- <ThingDef ParentName="ApparelChildNeoliticBase">
+    <!-- <ThingDef ParentName="ApparelChildNeoliticBase">
     <defName>Apparel_KidTribal</defName>
     <label>kid tribalwear</label>
     <description>A one-piece garment sized for kids, crafted using neolithic tools. It provides effective insulation against the elements.</description>
@@ -308,8 +308,8 @@
   </ThingDef>
 
  -->
-  <!-- Kid armour -->
-  <!-- <ThingDef ParentName="ApparelChildIndustrialBase">
+    <!-- Kid armour -->
+    <!-- <ThingDef ParentName="ApparelChildIndustrialBase">
     <defName>Apparel_KidHelmet</defName>
     <label>kid helmet</label>
     <description>A simple helmet sized for children. It gives moderate protection against sharp attacks. Not effective against blunt weapons. That said, if this is being used in combat something has already gone very wrong.</description>
