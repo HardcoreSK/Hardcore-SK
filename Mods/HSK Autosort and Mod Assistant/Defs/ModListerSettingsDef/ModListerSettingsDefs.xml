@@ -163,7 +163,7 @@
 					<HSKMod>true</HSKMod>
 				</li>
 				<li>
-					<id>rimfridge.kv.rw</id>
+					<id>sbz.neatstoragefridge</id>
 					<HSKMod>true</HSKMod>
 				</li>
 				<li>
@@ -241,6 +241,13 @@
 				</li>
 				<li>
 					<id>dubwise.rimatomics</id>
+					<HSKMod>true</HSKMod>
+					<loadAfter>
+						<li>skyarkhangel.hsk</li>
+					</loadAfter>
+				</li>
+				<li>
+					<id>hsk.extensions.storage</id>
 					<HSKMod>true</HSKMod>
 					<loadAfter>
 						<li>skyarkhangel.hsk</li>
@@ -784,6 +791,67 @@
 					<id>maxzicode.dws.zitools</id>
 					<HSKMod>true</HSKMod>
 				</li>
+				<li>
+					<id>nals.dynamicportraits</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>owlchemist.doorclearance</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>nals.customportraits</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>xeonovadan.rimworldfavourites</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>avilmask.commonsense</id>
+					<HSKMod>true</HSKMod>
+					<link>https://discord.com/channels/272340793174392832/1029868141641207809/1089080710767317073</link>
+					<requiredMods>
+						<li>None</li>
+					</requiredMods>
+					<loadBefore>
+						<li>mehni.pickupandhaul</li>
+						<li>codeoptimist.jobsofopportunity</li>
+						<li>likeafox.haulexplicitly</li>
+					</loadBefore>
+				</li>
+				<li>
+					<id>dame.ignorance</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>mlie.xndrenameeverything</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>nonnonstop.resizefiltertab</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>arof.fluffy.worktab.continued</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>name.krypt.rimworld.moddiff</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>puremj.mjrimmods.whileyouarenearby</id>
+					<HSKMod>true</HSKMod>
+					<link>https://discord.com/channels/272340793174392832/1029868036594864178/1061765762051747984</link>
+					<requiredMods>
+						<li>None</li>
+					</requiredMods>
+				</li>
+				<li>
+					<id>co.uk.epicguru.whatsthatmod</id>
+					<HSKMod>true</HSKMod>
+				</li>
 			</DefaultOptional>
 
 			<DefaultOptionalTesting>
@@ -797,10 +865,6 @@
 				</li>
 				<li>
 					<id>uuugggg.ctrlf</id>
-					<HSKMod>true</HSKMod>
-				</li>
-				<li>
-					<id>owlchemist.doorclearance</id>
 					<HSKMod>true</HSKMod>
 				</li>
 				<li>
@@ -820,33 +884,8 @@
 					<HSKMod>true</HSKMod>
 				</li>
 				<li>
-					<id>name.krypt.rimworld.moddiff</id>
-					<HSKMod>true</HSKMod>
-				</li>
-				<li>
 					<id>noquiem.coordread</id>
 					<HSKMod>true</HSKMod>
-				</li>
-				<li>
-					<id>avilmask.commonsense</id>
-					<HSKMod>true</HSKMod>
-					<link>https://discord.com/channels/272340793174392832/1029868141641207809/1089080710767317073</link>
-					<requiredMods>
-						<li>None</li>
-					</requiredMods>
-					<loadBefore>
-						<li>mehni.pickupandhaul</li>
-						<li>codeoptimist.jobsofopportunity</li>
-						<li>likeafox.haulexplicitly</li>
-					</loadBefore>
-				</li>
-				<li>
-					<id>puremj.mjrimmods.whileyouarenearby</id>
-					<HSKMod>true</HSKMod>
-					<link>https://discord.com/channels/272340793174392832/1029868036594864178/1061765762051747984</link>
-					<requiredMods>
-						<li>None</li>
-					</requiredMods>
 				</li>
 				<li>
 					<id>merthsoft.designatorshapes</id>
@@ -865,10 +904,6 @@
 					<HSKMod>true</HSKMod>
 				</li>
 				<li>
-					<id>nals.dynamicportraits</id>
-					<HSKMod>true</HSKMod>
-				</li>
-				<li>
 					<id>mersid.backuppowerupdated</id>
 					<HSKMod>true</HSKMod>
 				</li>
@@ -877,23 +912,7 @@
 					<HSKMod>true</HSKMod>
 				</li>
 				<li>
-					<id>co.uk.epicguru.whatsthatmod</id>
-					<HSKMod>true</HSKMod>
-				</li>
-				<li>
-					<id>nonnonstop.resizefiltertab</id>
-					<HSKMod>true</HSKMod>
-				</li>
-				<li>
 					<id>spdskatr.projectrimfactory.industrialrollers</id>
-					<HSKMod>true</HSKMod>
-				</li>
-				<li>
-					<id>nals.customportraits</id>
-					<HSKMod>true</HSKMod>
-				</li>
-				<li>
-					<id>xeonovadan.rimworldfavourites</id>
 					<HSKMod>true</HSKMod>
 				</li>
 				<li>
@@ -907,6 +926,10 @@
 				<li>
 					<id>thelonetec.relationbasedtrading</id>
 					<link>https://github.com/TheLoneTec/Relation-Based-Trading</link>
+				</li>
+				<li>
+					<id>name.krypt.rimworld.unifiedxmlexport</id>
+					<HSKMod>true</HSKMod>
 				</li>
 			</DefaultOptionalTesting>
 
@@ -1088,10 +1111,6 @@
 				<li>
 					<id>mlie.medicalsupplements</id>
 					<link>https://discord.com/channels/272340793174392832/1061699042842779648</link>
-				</li>
-				<li>
-					<id>dame.ignorance</id>
-					<link>https://discord.com/channels/272340793174392832/1074488885977026580</link>
 				</li>
 				<li>
 					<id>ghostdata.lifelessons</id>
@@ -1510,9 +1529,6 @@
 				</li>
 				<li>
 					<id>ameshi.pseudotranslatedisabler</id>
-				</li>
-				<li>
-					<id>name.krypt.rimworld.unifiedxmlexport</id>
 				</li>
 				<li>
 					<id>smashphil.xmlpatchhelper</id>

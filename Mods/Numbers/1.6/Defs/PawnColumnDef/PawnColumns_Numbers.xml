@@ -192,13 +192,6 @@
   </PawnColumnDef>
 
   <PawnColumnDef>
-    <defName>Numbers_Wildness</defName>
-    <workerClass>Numbers.PawnColumnWorker_AnimalWildness</workerClass>
-    <sortable>true</sortable>
-    <label>Wildness</label>
-  </PawnColumnDef>
-
-  <PawnColumnDef>
     <defName>Numbers_TameChance</defName>
     <workerClass>Numbers.PawnColumnWorker_TameChance</workerClass>
     <sortable>true</sortable>
@@ -378,4 +371,35 @@
     <width>50</width>
   </PawnColumnDef>
 
+  <PawnColumnDef>
+    <defName>Numbers_IdeologyCertainty</defName>
+    <label>Ideology Certainty</label>
+    <width>80</width>
+    <workerClass>Numbers.PawnColumnWorker_IdeologyCertainty</workerClass>
+    <sortable>true</sortable>
+  </PawnColumnDef>
+
+  <PawnColumnDef>
+    <defName>Numbers_ToxicBuildup</defName>
+    <label>Toxic Buildup</label>
+    <workerClass>Numbers.PawnColumnWorker_ToxicBuildUp</workerClass>
+    <width>50</width>
+    <sortable>true</sortable>
+  </PawnColumnDef>
+
+  <PawnColumnDef>
+    <defName>Numbers_CaravanCarryingCapacity</defName>
+    <label>Caravan Carrying Capacity</label>
+    <workerClass>Numbers.PawnColumnWorker_CaravanCarryingCapacity</workerClass>
+    <width>80</width>
+    <sortable>true</sortable>
+  </PawnColumnDef>
+
+  <PawnColumnDef>
+    <defName>Numbers_ExtractSkull</defName>
+    <workerClass>Numbers.PawnColumnWorker_ExtractSkull</workerClass>
+    <sortable>true</sortable>
+    <label>Extract skull</label>
+    <paintable>true</paintable>
+  </PawnColumnDef>
 </Defs>
