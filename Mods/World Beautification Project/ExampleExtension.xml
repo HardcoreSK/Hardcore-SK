@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <BiomeDef>
+        <!--
+        This is an example mod extension for a biome taken from the borealForest modextension
+        Textures should go in the folder 
+        Textures/WorldMaterials/BiomesKit/WMBP_ExampleBiome/
+        Where WMBP_ExampleBiome is the defName of your biome
+        Any examples below are relative to the above texture folder
+        
+        All temperatures are specified in Celsius
+        
+        Any fields not listed here are not utilised in world map beautification.
+        -->
+
+        <defName>WMBP_ExampleBiome</defName>
+        <!--
+        Other relevant biome information would be here
+        -->
+        <modExtensions>
+            <!--
+            MayRequireAnyOf allows this extension to work with WMBP and Regrowth.
+            
+            If you are instead creating a patch for another mod, the MayRequireAnyOf is not necessary,
+            and you should instead use alternativePackageIDs in your about file
+            https://rimworldwiki.com/wiki/Modding_Tutorials/About.xml#Optional_Tags
+            -->
+            <li Class="BiomesKit.BiomesKitControls" MayRequireAnyOf="zal.wmbp,regrowth.botr.core">
+                <!--
+                Allows flat tiles to display a forest. This requires a texture in 
+                Forest/Forest.png
+                -->
+                <forested>true</forested>
+                <!--
+                Will display Forest/Forest_Snowy.png if tile temperature is below forestSnowyBelow
+                Omit to not apply
+                -->
+                <forestSnowyBelow>0</forestSnowyBelow>
+                <!--
+                Will display Forest/Forest_Sparse.png if tile rainfall is below forestSparseBelow
+                Omit to not apply
+                -->
+                <forestSparseBelow>1100</forestSparseBelow>
+                <!--
+                Will display Forest/Forest_Dense.png if tile rainfall is below forestDenseAbove
+                If forestSnowyBelow and forestDenseAbove are both active, this will also require Forest/Forest_SnowyDense.png
+                Omit to not apply
+                -->
+                <forestDenseAbove>1500</forestDenseAbove>
+
+                <!--
+                Will allow hill textures to be used. Otherwise, will use base game textures
+                Requires textures at
+                Hills/SmallHills.png
+                Hills/LargeHills.png
+                Hills/Mountains.png
+                Hills/Impassable.png
+                -->
+                <uniqueHills>true</uniqueHills>
+                
+                <!--
+                For Small Hills and Large Hills
+                Will display Hills/SmallSnowPiles.png and Hills/LargeSnowPiles.png if tile temperature is below snowpilesBelow
+                If you use 999, you will not require a Hills/SmallHills.png or Hills/LargeHills.png texture
+                Omit to not apply 
+                -->
+                <snowpilesBelow>-15</snowpilesBelow>
+                
+                <!--
+                For mountain tiles
+                Will display Hills/Mountains_SemiSnowy.png if tile temperature is below mountainsSemiSnowyBelow
+                Will display Hills/Mountains_Snowy.png if tile temperature is below mountainsSnowyBelow
+                Will display Hills/Mountains_VerySnowy.png if tile temperature is below mountainsVerySnowyBelow
+                Will display Hills/Mountains_FullySnowy.png if tile temperature is below mountainsFullySnowyBelow
+                If you omit one of these, that texture will not be applied.
+				You can omit all of them, and you will not have to worry about the textures
+                -->
+                <mountainsSemiSnowyBelow>10</mountainsSemiSnowyBelow>
+                <mountainsSnowyBelow>-5</mountainsSnowyBelow>
+                <mountainsVerySnowyBelow>-12</mountainsVerySnowyBelow>
+                <mountainsFullySnowyBelow>-21</mountainsFullySnowyBelow>
+                
+                <!--
+                For impassable tiles
+                Will display Hills/Impassable_SemiSnowy.png if tile temperature is below impassableSemiSnowyBelow
+                Will display Hills/Impassable_Snowy.png if tile temperature is below ImpassableSnowyBelow
+                Will display Hills/Impassable_VerySnowy.png if tile temperature is below impassableVerySnowyBelow
+                Will display Hills/Impassable_FullySnowy.png if tile temperature is below impassableFullySnowyBelow
+                If you omit one of these, that texture will not be applied.
+				You can omit all of them, and you will not have to worry about the textures
+                -->
+                <impassableSemiSnowyBelow>25</impassableSemiSnowyBelow>
+                <impassableSnowyBelow>0</impassableSnowyBelow>
+                <impassableVerySnowyBelow>-5</impassableVerySnowyBelow>
+                <impassableFullySnowyBelow>-21</impassableFullySnowyBelow>
+
+                <!--
+                Rarely used, this node is not present in the Boreal Forest mod extension.
+                Will scale all textures applied for this extension according to the value.
+                Note that by default this value is 1. You should omit this unless you want to scale your textures
+                -->
+                <materialSizeMultiplier>1.6</materialSizeMultiplier>
+            </li>
+        </modExtensions>
+    </BiomeDef>
+</Defs>
