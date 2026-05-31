@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <KeyzAllowUtilities_SettingsCategory>Keyz' Allow Utilities</KeyzAllowUtilities_SettingsCategory>
+    <KAU_SettingsTitle>Keyz' Allow Utilities</KAU_SettingsTitle>
+    <KAU_Section_Selection>Выделение и разрешение</KAU_Section_Selection>
+    <KAU_Section_Hauling>Переноска</KAU_Section_Hauling>
+    <KAU_Section_Plants>Растения</KAU_Section_Plants>
+    <KAU_Section_Combat>Бой</KAU_Section_Combat>
+    <KAU_Section_Mining>Горнодобыча</KAU_Section_Mining>
+    <KAU_Section_Shortcuts>Горячие клавиши</KAU_Section_Shortcuts>
+    <KeyzAllowUtilities_Settings_MaxSelect>Максимум выбранных объектов: [{0}]</KeyzAllowUtilities_Settings_MaxSelect>
+    <KUA_AllowAll>Разрешить всё на карте</KUA_AllowAll>
+    <KUA_AllowAllExcludingCorpses>Разрешить всё на карте (кроме трупов)</KUA_AllowAllExcludingCorpses>
+    <KUA_ForbidAll>Запретить всё на карте</KUA_ForbidAll>
+    <KUA_Allowed>Разрешено объектов: {0}</KUA_Allowed>
+    <KUA_AllowedExcludingCorpses>Разрешено объектов: {0} (трупы исключены)</KUA_AllowedExcludingCorpses>
+    <KUA_Forbidden>Запрещено объектов: {0}</KUA_Forbidden>
+    <KUA_MultiSelect>Инструменты выделения</KUA_MultiSelect>
+    <KUA_MultiSelectDesc>Различные инструменты выделения для данного типа объектов. Удерживайте Shift для игнорирования дополнительных условий.</KUA_MultiSelectDesc>
+    <KUA_SelectOnScreen>Выделить похожие на экране</KUA_SelectOnScreen>
+    <KUA_SelectOnMap>Выделить похожие на карте</KUA_SelectOnMap>
+    <KUA_SelectInRect>Выделить похожие в области</KUA_SelectInRect>
+    <KAU_DisableClaimAll>Отключить захват всего</KAU_DisableClaimAll>
+
+    <KUA_SelectOnScreenWithStuff>Выделить похожие на экране из материала {0}</KUA_SelectOnScreenWithStuff>
+    <KUA_SelectOnMapWithStuff>Выделить похожие на карте из материала {0}</KUA_SelectOnMapWithStuff>
+    <KUA_SelectInRectWithStuff>Выделить похожие в области из материала {0}</KUA_SelectInRectWithStuff>
+
+    <KUA_HarvestGrown>Собрать созревшие</KUA_HarvestGrown>
+    <KUA_HarvestGrownDesc>Помечает полностью выросшие растения для сбора урожая или других ресурсов.</KUA_HarvestGrownDesc>
+
+    <KUA_HarvestGrownWood>Срубить взрослые деревья</KUA_HarvestGrownWood>
+    <KUA_HarvestGrownWoodDesc>Помечает полностью выросшие деревья для заготовки древесины.</KUA_HarvestGrownWoodDesc>
+
+    <KUA_HarvestOnScreen>Собрать все созревшие на экране</KUA_HarvestOnScreen>
+    <KUA_HarvestOnMap>Собрать все созревшие на карте</KUA_HarvestOnMap>
+
+    <KUA_CutGrown>Срезать созревшие</KUA_CutGrown>
+    <KUA_CutGrownDesc>Помечает полностью выросшие растения для уничтожения. Растение будет удалено, а все ресурсы с него собраны.</KUA_CutGrownDesc>
+
+    <KUA_CutGrownOnScreen>Срезать все созревшие на экране</KUA_CutGrownOnScreen>
+    <KUA_CutGrownOnMap>Срезать все созревшие на карте</KUA_CutGrownOnMap>
+
+    <KAU_NoKill>Нельзя добить</KAU_NoKill>
+    <KAU_Kill>Добить {0} [{1}]</KAU_Kill>
+    <KAU_StripKill>Снять экипировку и добить {0} [{1}]</KAU_StripKill>
+    <KAU_MeleeTooLow>Навык ближнего боя слишком низкий: {0}</KAU_MeleeTooLow>
+    <KAU_Unable>Невозможно атаковать в ближнем бою</KAU_Unable>
+
+    <KUA_HaulUrgently>Срочно перенести</KUA_HaulUrgently>
+    <KUA_HaulUrgentlyDesc>Переноска с высоким приоритетом.</KUA_HaulUrgentlyDesc>
+
+    <KUA_ToggleFinishOff>Добивание</KUA_ToggleFinishOff>
+    <KUA_ToggleFinishOffDesc>Включить/выключить добивание</KUA_ToggleFinishOffDesc>
+
+    <KUA_ToggleFinishOffDisable>Отменить добивание</KUA_ToggleFinishOffDisable>
+    <KUA_ToggleFinishOffDisableDesc>Отменить добивание</KUA_ToggleFinishOffDisableDesc>
+
+    <KUA_ToggleHaulUrgently>Срочно перенести</KUA_ToggleHaulUrgently>
+    <KUA_ToggleHaulUrgentlyDesc>Срочно перенести</KUA_ToggleHaulUrgentlyDesc>
+
+    <KUA_ToggleHaulUrgentlyDisable>Отменить срочную переноску</KUA_ToggleHaulUrgentlyDisable>
+    <KUA_ToggleHaulUrgentlyDisableDesc>Отменить срочную переноску</KUA_ToggleHaulUrgentlyDisableDesc>
+
+    <KUA_ToggleNoHaulUrgently>Не переносить</KUA_ToggleNoHaulUrgently>
+    <KUA_ToggleNoHaulUrgentlyDesc>Не переносить</KUA_ToggleNoHaulUrgentlyDesc>
+
+    <KUA_ToggleNoHaulUrgentlyDisable>Разрешить переноску</KUA_ToggleNoHaulUrgentlyDisable>
+    <KUA_ToggleNoHaulUrgentlyDisableDesc>Разрешить переноску</KUA_ToggleNoHaulUrgentlyDisableDesc>
+
+    <KAU_ToggleHaulUrgently>Отключить срочную переноску</KAU_ToggleHaulUrgently>
+    <KAU_ToggleFinishOff>Отключить добивание</KAU_ToggleFinishOff>
+    <KAU_ToggleStripMine>Отключить шахтную добычу</KAU_ToggleStripMine>
+    <KAU_ToggleAllowFinishOffOnFriendly>Разрешить добивание дружественных пешек</KAU_ToggleAllowFinishOffOnFriendly>
+
+    <KAU_ToggleHarvest>Отключить инструменты сбора урожая</KAU_ToggleHarvest>
+    <KAU_ToggleCut>Отключить инструменты срезания</KAU_ToggleCut>
+    <KAU_ToggleSelection>Отключить кнопки выделения</KAU_ToggleSelection>
+    <KAU_DisableSelectOnScreen>Отключить «Выделить на экране»</KAU_DisableSelectOnScreen>
+    <KAU_DisableSelectOnMap>Отключить «Выделить на карте»</KAU_DisableSelectOnMap>
+    <KAU_DisableSelectInRect>Отключить «Выделить в области»</KAU_DisableSelectInRect>
+
+    <KAU_ToggleFertileZone>Отключить инструмент плодородной зоны выращивания</KAU_ToggleFertileZone>
+
+    <KAU_ToggleNoHauling>Отключить инструмент и кнопки запрета переноски</KAU_ToggleNoHauling>
+    <KAU_ToggleDisableAllowShortcuts>Отключить горячие клавиши разрешения/запрета</KAU_ToggleDisableAllowShortcuts>
+    <KAU_ExcludeCorpsesFromAllowAll>Исключать трупы из «Разрешить всё» (Shift+Разрешить для включения)</KAU_ExcludeCorpsesFromAllowAll>
+    <KAU_DisableSelectStored>Отключить кнопку «Выделить хранящиеся»</KAU_DisableSelectStored>
+
+    <KUA_SelectSimilar>Выделить похожие</KUA_SelectSimilar>
+    <KUA_SelectSimilarDesc>Выделяет объекты, похожие на уже выбранные</KUA_SelectSimilarDesc>
+
+    <KAU_ToggleDisableAllShortcuts>Отключить все горячие клавиши</KAU_ToggleDisableAllShortcuts>
+
+    <KAU_DefErrorLog>Логировать источники ошибок Def</KAU_DefErrorLog>
+    <KAU_DefErrorLogToolTip>После ошибки Def добавляет новую строку журнала с указанием её источника</KAU_DefErrorLogToolTip>
+
+    <KAU_DisableMeleeRequirementForFinishOff>Отключить требование навыка ближнего боя для добивания</KAU_DisableMeleeRequirementForFinishOff>
+
+    <KUA_ToggleHaulUrgentlyOnScreen>Срочно перенести всё на экране</KUA_ToggleHaulUrgentlyOnScreen>
+    <KUA_ToggleHaulUrgentlyOnMap>Срочно перенести всё на карте</KUA_ToggleHaulUrgentlyOnMap>
+
+    <KAU_GrowingZone>Зона выращивания (только плодородная почва)</KAU_GrowingZone>
+    <KAU_DesignatorGrowingZoneDesc>Создаёт зону, где колонисты будут выращивать выбранное растение только на плодородных клетках.</KAU_DesignatorGrowingZoneDesc>
+
+    <KAU_DesignatorZoneExpand>Расширить зону (только плодородная почва)</KAU_DesignatorZoneExpand>
+
+    <KAU_StripMine>Шахтная добыча</KAU_StripMine>
+    <KAU_StripMineDesc>Добывать по сетке, а не всё подряд</KAU_StripMineDesc>
+
+    <KUA_NoHaul>Не переносить</KUA_NoHaul>
+    <KUA_NoHaulDesc>Запрещает переносить этот предмет на склады и в другие места хранения. Не влияет на доставку ресурсов к рабочим местам и использование в рецептах.</KUA_NoHaulDesc>
+
+    <KAU_DesignatorFloors>Выбор покрытия пола</KAU_DesignatorFloors>
+    <KAU_DesignatorFloorsDesc>Позволяет выбрать тип пола для строительства</KAU_DesignatorFloorsDesc>
+
+    <KAU_GrabbedTerrain>Выбранное покрытие</KAU_GrabbedTerrain>
+    <KAU_GrabTerrain>Выбрать</KAU_GrabTerrain>
+
+    <KAU_OOB>За пределами карты</KAU_OOB>
+    <KAU_NotBuildable>Невозможно построить</KAU_NotBuildable>
+    <KAU_ResearchNotFinished>Исследование не завершено</KAU_ResearchNotFinished>
+
+    <KAU_NotAPlant>Не растение</KAU_NotAPlant>
+    <KAU_NotHarvestable>Нельзя собрать</KAU_NotHarvestable>
+    <KAU_NoHarvestableThing>Объект не подходит для сбора</KAU_NoHarvestableThing>
+    <KAU_AlreadyDesignated>Уже помечено</KAU_AlreadyDesignated>
+    <KAU_NotFullyGrown>Ещё не выросло</KAU_NotFullyGrown>
+
+    <KUA_CutBlighted>Срезать поражённые болезнью</KUA_CutBlighted>
+    <KUA_CutBlightedDesc>Срезать только поражённые болезнью растения</KUA_CutBlightedDesc>
+
+    <KUA_SelectStored>Выделить хранящиеся</KUA_SelectStored>
+    <KUA_SelectStoredDesc>Выделяет все предметы в данном хранилище. Удерживайте Shift для добавления к текущему выделению.</KUA_SelectStoredDesc>
+
+    <KUA_ClaimAllDoors>Захватить все двери</KUA_ClaimAllDoors>
+    <KUA_ClaimAllDoorsDesc>Захватывает все двери на карте, которые сейчас могут быть захвачены игроком</KUA_ClaimAllDoorsDesc>
+
+    <KUA_ClaimedDoors>Захвачено дверей: {0}</KUA_ClaimedDoors>
+    <KUA_DesignatedCount>Помечено объектов: {0}</KUA_DesignatedCount>
+
+    <KAU_PlantGrownLevel>Считать растение выросшим при уровне {0}%</KAU_PlantGrownLevel>
+
+    <KUA_HarvestAll>Собрать всё</KUA_HarvestAll>
+    <KUA_HarvestAllDesc>Помечает все пригодные для сбора растения независимо от стадии роста.</KUA_HarvestAllDesc>
+
+    <KUA_HarvestAllWood>Срубить все деревья</KUA_HarvestAllWood>
+    <KUA_HarvestAllWoodDesc>Помечает все деревья для заготовки древесины независимо от стадии роста.</KUA_HarvestAllWoodDesc>
+
+    <KUA_HarvestAllOnScreen>Собрать всё на экране (любой рост)</KUA_HarvestAllOnScreen>
+    <KUA_HarvestAllOnMap>Собрать всё на карте (любой рост)</KUA_HarvestAllOnMap>
+
+    <KUA_HarvestAllWoodOnScreen>Срубить все деревья на экране (любой рост)</KUA_HarvestAllWoodOnScreen>
+    <KUA_HarvestAllWoodOnMap>Срубить все деревья на карте (любой рост)</KUA_HarvestAllWoodOnMap>
+
+    <KAU_ToggleHarvestAll>Отключить инструмент и кнопки «Собрать всё»</KAU_ToggleHarvestAll>
+
+    <KAU_NotAPawn>Не пешка</KAU_NotAPawn>
+    <KAU_NotFriendlyOrDowned>Не дружественная или не лежачая пешка</KAU_NotFriendlyOrDowned>
+</LanguageData>
