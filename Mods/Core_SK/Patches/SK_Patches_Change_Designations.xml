@@ -3,4 +3,5 @@
     <Operation Class="PatchOperationRemove">
         <xpath>Defs/DesignationCategoryDef[defName="Floors"]/specialDesignatorClasses/li[text()="Designator_RemoveFoundation"]</xpath>
     </Operation>
+	<!-- Already in Structure, its for bridges + gravship substructure only -->
 </Patch>
