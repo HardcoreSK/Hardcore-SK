@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--
+	<slot>Adulthood</slot> - constant
+	spawnCategories = Elderhood - constant
+	disallowedTraits - doesnt work
+	nameMaker - doesnt work
+	shuffleable = false - constant
+	requiresSpawnCategory = false - constant
+	-->
+	<BackstoryDef Name="ElderhoodBackstory" Abstract="true">
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Elderhood</li>
+		</spawnCategories>
+		<shuffleable>False</shuffleable>
+		<requiresSpawnCategory>false</requiresSpawnCategory>
+	</BackstoryDef>
+	<!---->
+</Defs>

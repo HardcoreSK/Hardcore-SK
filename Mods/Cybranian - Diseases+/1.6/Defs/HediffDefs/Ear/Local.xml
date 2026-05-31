@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->
+	<HediffDef ParentName="InfectionBase">
+		<defName>DimonSever000_NoiseInEars</defName>
+		<label>Noise in ears</label>
+		<description>An irritating effect on the ear that causes pain.</description>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<tendable>false</tendable>
+		<makesSickThought>true</makesSickThought>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.5</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painOffset>0.05</painOffset>
+				<partEfficiencyOffset>-0.5</partEfficiencyOffset>
+			</li>
+		</stages>
+	</HediffDef>
+	<!---->
+	<HediffDef ParentName="InfectionBase">
+		<defName>DimonSever000_Otitis</defName>
+		<label>Otitis</label>
+		<makesSickThought>true</makesSickThought>
+		<tendable>true</tendable>
+		<description>An infection in the ear canals that causes partial hearing loss and pain.</description>
+		<descriptionHyperlinks>
+			<HediffDef>DimonSever000_NoiseInEars</HediffDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.15</severityPerDayNotImmune>
+			</li>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>24</baseTendDurationHours>
+				<disappearsAtTotalTendQuality>3.0</disappearsAtTotalTendQuality>
+			</li>
+			<li Class="Diseases.Hediffs.HediffCompProperties_Storage">
+				<comps>
+					<li>
+						<compClass>Diseases.Hediffs.HediffComp_DiseaseAfterTicks</compClass>
+						<intervalTicks>60000~120000</intervalTicks>
+						<hediffDefs>
+							<li>DimonSever000_NoiseInEars</li>
+						</hediffDefs>
+						<partsToAffect>
+							<li>Ear</li>
+						</partsToAffect>
+						<chance>0.5</chance>
+						<letter>false</letter>
+					</li>
+				</comps>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>easy</label>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+				<painOffset>0.05</painOffset>
+			</li>
+			<li>
+				<label>medium</label>
+				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+				<painOffset>0.1</painOffset>
+				<minSeverity>0.5</minSeverity>
+			</li>
+			<li>
+				<label>severe</label>
+				<partEfficiencyOffset>-0.5</partEfficiencyOffset>
+				<painOffset>0.15</painOffset>
+				<minSeverity>0.8</minSeverity>
+			</li>
+		</stages>
+	</HediffDef>
+	<!---->
+</Defs>

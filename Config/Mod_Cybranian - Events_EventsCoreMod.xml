@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="EventsCore.Settings.EventModSettings">
+		<settings>
+			<li Class="EventsCore.Settings.WorldSettings">
+				<riverWarmingTexturing>False</riverWarmingTexturing>
+			</li>
+			<li Class="EventsCore.Settings.IncidentAllowedSettings">
+				<incidentAllowedDict>
+					<keys>
+						<li>MountainAir</li>
+						<li>SeaAir</li>
+						<li>ParadeOfPlanets</li>
+						<li>IceStorm</li>
+						<li>RatInfestation</li>
+						<li>TurtleInvasion</li>
+						<li>AlliesGift</li>
+						<li>PsyStorm</li>
+						<li>OldMan</li>
+						<li>DeathOfSun</li>
+						<li>GlobalCooling</li>
+						<li>GlobalWarming</li>
+						<li>DeathOfDistantStar</li>
+						<li>WorldMeteorite</li>
+						<li>ArtificialChannelConstruction</li>
+						<li>IrrigationConstruction</li>
+						<li>RoadConstruction</li>
+						<li>SupervolcanoExplosion</li>
+					</keys>
+					<values>
+						<li>True</li>
+						<li>True</li>
+						<li>True</li>
+						<li>True</li>
+						<li>True</li>
+						<li>True</li>
+						<li>True</li>
+						<li>True</li>
+						<li>True</li>
+						<li>True</li>
+						<li>True</li>
+						<li>True</li>
+						<li>False</li>
+						<li>False</li>
+						<li>True</li>
+						<li>True</li>
+						<li>True</li>
+						<li>True</li>
+					</values>
+				</incidentAllowedDict>
+			</li>
+		</settings>
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->
+	<ThoughtDef>
+		<defName>PreferredTrait</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>IdeologyVirtues.ThoughtWorker_Precept_PreferredTrait_Social</workerClass>
+		<stages>
+			<li>
+				<label>disapproved traits</label>
+				<baseOpinionOffset>-30</baseOpinionOffset>
+			</li>
+			<li>
+				<label>disapproved traits</label>
+				<baseOpinionOffset>-20</baseOpinionOffset>
+			</li>
+			<li>
+				<label>disapproved traits</label>
+				<baseOpinionOffset>-15</baseOpinionOffset>
+			</li>
+			<li>
+				<label>disapproved trait</label>
+				<baseOpinionOffset>-10</baseOpinionOffset>
+			</li>
+			<li>
+				<label>preferred trait</label>
+				<baseOpinionOffset>10</baseOpinionOffset>
+			</li>
+			<li>
+				<label>preferred traits</label>
+				<baseOpinionOffset>15</baseOpinionOffset>
+			</li>
+			<li>
+				<label>preferred traits</label>
+				<baseOpinionOffset>20</baseOpinionOffset>
+			</li>
+			<li>
+				<label>preferred traits</label>
+				<baseOpinionOffset>30</baseOpinionOffset>
+			</li>
+		</stages>
+		<nullifyingHediffs>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhumanized</li>
+		</nullifyingHediffs>
+	</ThoughtDef>
+	<!---->
+	<ThoughtDef>
+		<defName>PreferredTrait_Self</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>IdeologyVirtues.ThoughtWorker_Precept_PreferredTrait_Self</workerClass>
+		<stages>
+			<li>
+				<label>I am a terrible sinner</label>
+				<description>I am a disgrace to our society, I have so many sins...</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+			<li>
+				<label>I am a big sinner</label>
+				<description>I am not worthy of my society.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+			<li>
+				<label>I am a sinner</label>
+				<description>There's definitely something wrong with me.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>I am a virtue</label>
+				<description>I am worthy of my society.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<li>
+				<label>I am a big virtue</label>
+				<description>I am realy worthy of my society.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>I am a great virtue</label>
+				<description>I embody many of the positive qualities of our society.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingHediffs>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhumanized</li>
+		</nullifyingHediffs>
+	</ThoughtDef>
+	<!---->
+</Defs>

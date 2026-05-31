@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->
+	<RoadDef>
+		<defName>ArtificialChannelHighway</defName>
+		<label>artificial channel highway</label>
+		<priority>500</priority>
+		<ancientOnly>true</ancientOnly>
+		<movementCostMultiplier>0.3</movementCostMultiplier>
+		<pathingMode>Bulldoze</pathingMode>
+		<roadGenSteps>
+			<li Class="RoadDefGenStep_Place">
+				<chancePerPositionCurve>
+					<points>
+						<li>0, 1</li>
+						<li>5, 1</li>
+						<li>5.001, 0</li>
+					</points>
+				</chancePerPositionCurve>
+				<place>WaterShallow</place>
+			</li>
+		</roadGenSteps>
+		<worldRenderSteps>
+			<li>
+				<layer>Gravel</layer>
+				<width>1</width>
+			</li>
+			<li>
+				<layer>ArtificialChannel</layer>
+				<width>0.8</width>
+			</li>
+		</worldRenderSteps>
+		<distortionFrequency>0</distortionFrequency>
+		<distortionIntensity>0</distortionIntensity>
+	</RoadDef>
+	<RoadWorldLayerDef>
+		<defName>ArtificialChannel</defName>
+		<order>500</order>
+		<color>(73, 82, 100)</color>
+	</RoadWorldLayerDef>
+	<!---->
+</Defs>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->
+	<GameConditionDef>
+		<defName>DeathOfSun</defName>
+		<label>Death of sun</label>
+		<description>The star in your system is rapidly losing luminosity, giving off less and less heat to the planet's surface. Soon the planet will be plunged into darkness, and the temperature will become unbearable for life.\n\nThe current luminosity is about {0}.</description>
+		<conditionClass>EventsCore.GameConditions.GameCondition_DeathOfSun</conditionClass>
+		<endMessage>The star has lit up again.</endMessage>
+		<canBePermanent>true</canBePermanent>
+	</GameConditionDef>
+	<!---->
+	<GameConditionDef>
+		<defName>ClimateChange</defName>
+		<label>Climate change</label>
+		<description>The climate is changing rapidly, striving for an equilibrium value.\nThe target value since the beginning of the changes is {0}.\nCurrent climate change is {1}.\n\nThe process is currently complete at {2}.</description>
+		<conditionClass>EventsCore.GameConditions.GameCondition_ClimateChange</conditionClass>
+		<endMessage>The climate has become balanced.</endMessage>
+		<canBePermanent>true</canBePermanent>
+	</GameConditionDef>
+	<!---->
+	<GameConditionDef>
+		<defName>DeathOfDistantStar</defName>
+		<label>Death of distant star</label>
+		<description>In the sky, we see the image of the death of a distant star, which has reached us after many years, even thousands of years. It probably won't last long.</description>
+		<conditionClass>EventsCore.GameConditions.GameCondition_DeathOfDistantStar</conditionClass>
+		<endMessage>The dead star disappears from the sky.</endMessage>
+		<canBePermanent>false</canBePermanent>
+	</GameConditionDef>
+	<!---->
+	<GameConditionDef>
+		<defName>SeaAir</defName>
+		<label>Sea air</label>
+		<description>Sea air, filled with humidity and giving off sea salt, improves well-being and invigorates.</description>
+		<letterText>A breath of fresh mountain air. The colonists are feeling better.</letterText>
+		<endMessage>Sea air cleared</endMessage>
+		<canBePermanent>true</canBePermanent>
+	</GameConditionDef>
+	<!---->
+	<GameConditionDef>
+		<defName>MountainAir</defName>
+		<label>Mountain air</label>
+		<letterText>A breath of fresh mountain air. The colonists are feeling better.</letterText>
+		<description>The mountain air is especially fresh, which gives you energy.</description>
+		<endMessage>Mountain air cleared</endMessage>
+		<canBePermanent>true</canBePermanent>
+	</GameConditionDef>
+	<!---->
+	<GameConditionDef>
+		<defName>ParadeOfPlanets</defName>
+		<label>Parade of planets</label>
+		<description>The planets of your star system have lined up with a slight deviation. This is a rare event, interesting for all astronomers.</description>
+		<endMessage>The parade of planets is complete</endMessage>
+		<canBePermanent>false</canBePermanent>
+	</GameConditionDef>
+	<!---->
+	<GameConditionDef>
+		<defName>IceStorm</defName>
+		<label>Ice storm</label>
+		<description>This storm carries incredible low temperatures and ice fragments. Do not leave the house!</description>
+		<letterText>An ice storm overtook you. This storm carries incredible low temperatures and ice fragments. Do not leave the house! You have a few hours to hide.</letterText>
+		<conditionClass>EventsCore.GameConditions.GameCondition_IceStorm</conditionClass>
+		<endMessage>Ice storm is over</endMessage>
+		<canBePermanent>true</canBePermanent>
+	</GameConditionDef>
+	<!---->
+	<GameConditionDef>
+		<defName>PsyStorm</defName>
+		<conditionClass>EventsCore.GameConditions.GameCondition_PsyStorm</conditionClass>
+		<label>Psy storm</label>
+		<description>The storm has a detrimental effect on the psyche of living beings, causing fits of aggression, but it can also inspire new achievements or bestow special talents.</description>
+		<letterText>You are caught in a powerful psychic storm. You can hide from it as long as you are under a roof. \n\nThe storm has a detrimental effect on the psyche of living beings, causing fits of aggression, but it can also inspire new achievements or bestow special talents.</letterText>
+		<endMessage>Psy storm is over</endMessage>
+		<canBePermanent>true</canBePermanent>
+	</GameConditionDef>
+	<!---->
+</Defs>

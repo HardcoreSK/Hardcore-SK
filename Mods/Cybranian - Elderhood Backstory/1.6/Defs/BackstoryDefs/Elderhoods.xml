@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--
+	<slot>Adulthood</slot> - constant
+	spawnCategories = Elderhood - constant
+	shuffleable = false - constant
+	requiresSpawnCategory = false - constant
+	disallowedTraits - doesnt work
+	nameMaker - doesnt work
+	-->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<!-- Does not participate in generation -->
+		<defName>Elderhood_PlayerColonist</defName>
+		<title>Colony old man</title>
+		<titleFemale>Colony old woman</titleFemale>
+		<titleShort>Old man</titleShort>
+		<titleShortFemale>Old woman</titleShortFemale>
+		<description>[PAWN_nameDef] lived a difficult, but interesting and happy life in colony.</description>
+		<spawnCategories Inherit="false">
+			<li>SpecialElderhood</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<!-- Does not participate in generation -->
+		<defName>Elderhood_PlayerPrisoner</defName>
+		<title>Prisoner old man</title>
+		<titleFemale>Prisoner old woman</titleFemale>
+		<titleShort>Old man</titleShort>
+		<titleShortFemale>Old woman</titleShortFemale>
+		<description>[PAWN_nameDef] met {PAWN_gender ? his : her} old age as a prisoner of the colony.</description>
+		<spawnCategories Inherit="false">
+			<li>SpecialElderhood</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<!-- Does not participate in generation -->
+		<defName>Elderhood_PlayerSlave</defName>
+		<title>Slave old man</title>
+		<titleFemale>Slave old woman</titleFemale>
+		<titleShort>Old man</titleShort>
+		<titleShortFemale>Old woman</titleShortFemale>
+		<description>[PAWN_nameDef] met {PAWN_gender ? his : her} old age as a slave of the colony.</description>
+		<spawnCategories Inherit="false">
+			<li>SpecialElderhood</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_WiseOldMan</defName>
+		<title>Wise old man</title>
+		<titleFemale>Wise old woman</titleFemale>
+		<titleShort>Wise man</titleShort>
+		<titleShortFemale>Wise woman</titleShortFemale>
+		<description>[PAWN_nameDef] lived a difficult, but interesting and happy life in {PAWN_gender ? his : her} own way.</description>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Social>3</Social>
+		</skillGains>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_ElderlyWriter</defName>
+		<title>Elderly writer</title>
+		<titleFemale>Elderly writer</titleFemale>
+		<titleShort>Writer</titleShort>
+		<titleShortFemale>Writer</titleShortFemale>
+		<description>[PAWN_nameDef] lived a long life, filling the pages of {PAWN_gender ? his : her} diaries and books. {PAWN_gender ? His : Her} work has survived many eras, but with each passing year {PAWN_gender ? his : her} words became more and more valuable to those seeking answers in a world full of change. Now, when {PAWN_gender ? his : her} strength is no longer the same, {PAWN_gender ? he : she} still writes, looking back at the past and trying to understand the new times.</description>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Artistic>3</Artistic>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Artistic</li>
+		</requiredWorkTags>
+		<possessions>
+			<Novel>1</Novel>
+		</possessions>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_TiredPhilosopher</defName>
+		<title>Tired philosopher</title>
+		<titleFemale>Tired philosopher</titleFemale>
+		<titleShort>Philosopher</titleShort>
+		<titleShortFemale>Philosopher</titleShortFemale>
+		<description>[PAWN_nameDef] gone a long way from a young dreamer to old {PAWN_gender ? man : women}, which still asks questions about the meaning of life, but every year the search became more and more silent. {PAWN_gender ? His : Her} texts have become rare, and views on the world have changed, but {PAWN_gender ? he : she } still believes in the importance of thinking that can change a person. Old age has not diminished {PAWN_gender ? his : her} craving for the search for truth, but took away the strength for a long debate.</description>
+		<skillGains>
+			<Intellectual>4</Intellectual>
+			<Social>3</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Social</li>
+		</requiredWorkTags>
+		<possessions>
+			<TextBook>1</TextBook>
+		</possessions>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_RetiredSoldier</defName>
+		<title>Retired soldier</title>
+		<titleFemale>Retired soldier</titleFemale>
+		<titleShort>Soldier</titleShort>
+		<titleShortFemale>Soldier</titleShortFemale>
+		<description>[PAWN_nameDef] survived many military conflicts in {PAWN_gender ? his : her} youth, but now, {PAWN_gender ? he : she} looks back on those years with bitterness. {PAWN_gender ? He : She} saw the horrors of war, but {PAWN_gender ? he : she} also realized the importance and fragility of peace. Over the course of {PAWN_gender ? his : her} life, {PAWN_gender ? he : she} losts many comrades, but {PAWN_gender ? he : she} still wears the medals {PAWN_gender ? he : she} received for bravery with pride. In {PAWN_gender ? his : her} later years, {PAWN_gender ? she : he} strives to teach the youth to appreciate the peace.</description>
+		<skillGains>
+			<Melee>2</Melee>
+			<Shooting>2</Shooting>
+			<Social>-3</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_OldMechanic</defName>
+		<title>Old mechanic</title>
+		<titleFemale>Old mechanic</titleFemale>
+		<titleShort>Mechanic</titleShort>
+		<titleShortFemale>Mechanic</titleShortFemale>
+		<description>[PAWN_nameDef] has spent {PAWN_gender ? his : her} entire life taking apart and putting together machines, from the simplest to the most complex on this planet. {PAWN_gender ? His : Her} hands now shake like the parts of a broken machine, and sometimes {PAWN_gender ? he : she} can't build something with the same precision as before. But {PAWN_gender ? his : her} mind is still full of knowledge about how machines work. {PAWN_gender ? His : Her} memory sometimes fails, but the old mechanic can still fix almost anything puts {PAWN_gender ? his : her} hands on.</description>
+		<skillGains>
+			<Crafting>4</Crafting>
+			<Construction>2</Construction>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Constructing</li>
+			<li>Crafting</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_Sage</defName>
+		<title>Sage</title>
+		<titleFemale>Sage</titleFemale>
+		<titleShort>Sage</titleShort>
+		<titleShortFemale>Sage</titleShortFemale>
+		<description>[PAWN_nameDef] has spent {PAWN_gender ? his : her} life as not only an elder, but also a keeper of knowledge. For many years, has passed on stories and lessons learned through experience to younger generations. Now, as {PAWN_gender ? he : she} approaches death, {PAWN_gender ? he : she} watches {PAWN_gender ? his : her} legacy fade and feels that time has passed. However, {PAWN_gender ? he : she} continues to share {PAWN_gender ? his : her} wisdom with those willing to listen, despite {PAWN_gender ? his : her} weariness and loss of strength.</description>
+		<skillGains>
+			<Social>4</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_LonelyWanderer</defName>
+		<title>Lonely wanderer</title>
+		<titleFemale>Lonely wanderer</titleFemale>
+		<titleShort>Wanderer</titleShort>
+		<titleShortFemale>Wanderer</titleShortFemale>
+		<description>[PAWN_nameDef] in {PAWN_gender ? his : her} youth traveled the world, but now, in {PAWN_gender ? his : her} old age, {PAWN_gender ? his : her} legs can no longer take {PAWN_gender ? him : her} that far. {PAWN_gender ? He : She} remembers the times when wandered through distant lands, and looks with sadness at {PAWN_gender ? his : her} home, which has become cramped and lifeless. In old age, {PAWN_gender ? he : she} is alone, and only memories of past travels give life some meaning.</description>
+		<skillGains>
+			<Medicine>1</Medicine>
+			<Melee>1</Melee>
+			<Social>-2</Social>
+		</skillGains>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_ElderlyScientist</defName>
+		<title>Elderly scientist</title>
+		<titleFemale>Elderly scientist</titleFemale>
+		<titleShort>Scientist</titleShort>
+		<titleShortFemale>Scientist</titleShortFemale>
+		<description>[PAWN_nameDef] has always was one of those who sought answers to questions that tormented humanity. Over the years, {PAWN_gender ? his : her} research became less and less visible, and {PAWN_gender ? his : her} articles lost popularity. However, despite {PAWN_gender ? his : her} old age, {PAWN_gender ? he : she} still continues to work, although {PAWN_gender ? he : she} understands that it is unlikely that {PAWN_gender ? his : her} discoveries will be able to change anything in a world that has changed too much.</description>
+		<skillGains>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<possessions>
+			<Schematic>1</Schematic>
+		</possessions>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_BoringProfessor</defName>
+		<title>Boring professor</title>
+		<titleFemale>Boring professor</titleFemale>
+		<titleShort>Professor</titleShort>
+		<titleShortFemale>Professor</titleShortFemale>
+		<description>[PAWN_nameDef] has been a lifelong scholar, moving into teaching students in recent years. {PAWN_gender ? He : She} is truly passionate about {PAWN_gender ? his : her} work, but sees that {PAWN_gender ? his : her} former mental strength is fading. Students often disdain the older professor, causing {PAWN_gender ? his : her} to lose their temper.</description>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Social>-2</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_AvidHunter</defName>
+		<title>Avid hunter</title>
+		<titleFemale>Avid hunter</titleFemale>
+		<titleShort>Hunter</titleShort>
+		<titleShortFemale>Hunter</titleShortFemale>
+		<description>[PAWN_nameDef] has spent much time in the forests and mountains, following prey and learning to survive in the most difficult conditions. {PAWN_gender ? His : Her} strength is not what it used to be, and he can no longer catch animals with the same agility as in {PAWN_gender ? his : her} youth. But {PAWN_gender ? his : her} memory is still clear, and {PAWN_gender ? he : she} passes on {PAWN_gender ? his : her} knowledge to others, though not without regret that the years have passed, and with them {PAWN_gender ? his : her} former skills.</description>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>1</Melee>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_OldBlacksmith</defName>
+		<title>Old blacksmith</title>
+		<titleFemale>Old blacksmith</titleFemale>
+		<titleShort>Blacksmith</titleShort>
+		<titleShortFemale>Blacksmith</titleShortFemale>
+		<description>[PAWN_nameDef] has forged tons of metal, creating weapons, tools, and jewelry. {PAWN_gender ? His : Her} hammer, while not as powerful as it once was, can still move heavy machinery, but old age has slowed it down. He often sits at {PAWN_gender ? {PAWN_gender ? his : her} : her} forge, reflecting on how many times {PAWN_gender ? his : her} hands have created something that changed the course of history. Now, {PAWN_gender ? he : she} is proud that {PAWN_gender ? his : her} forge still functions, but also knows that {PAWN_gender ? his : her} time is coming to an end.</description>
+		<skillGains>
+			<Crafting>5</Crafting>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Crafting</li>
+		</requiredWorkTags>
+		<possessions>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</possessions>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_Homeless</defName>
+		<title>Homeless</title>
+		<titleFemale>Homeless</titleFemale>
+		<titleShort>Homeless</titleShort>
+		<titleShortFemale>Homeless</titleShortFemale>
+		<description>[PAWN_nameDef] lived a long and unusual life. The cruel irony is that in {PAWN_gender ? his : her} old age {PAWN_gender ? he : she} found {PAWN_gender ? himself : herself} on the street. With no one to care for the elderly man, all {PAWN_gender ? he : she} can do is try to survive and enjoy the little things {PAWN_gender ? he : she} has left.</description>
+		<skillGains>
+			<Crafting>2</Crafting>
+			<Cooking>1</Cooking>
+			<Social>-2</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Crafting</li>
+			<li>Cooking</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_OldAlcoholic</defName>
+		<title>Old alcoholic</title>
+		<titleFemale>Old alcoholic</titleFemale>
+		<titleShort>Alcoholic</titleShort>
+		<titleShortFemale>Alcoholic</titleShortFemale>
+		<description>[PAWN_nameDef] has suffered a major loss that has left {PAWN_gender ? him : her} mentally devastated. Gradually, [PAWN_nameDef] has become an alcoholic, spending most of {PAWN_gender ? his : her} day in the company of a bottle of beer. {PAWN_gender ? He : She} is rarely seen sober, and {PAWN_gender ? his : her} mind has completely lost all sharpness.</description>
+		<skillGains>
+			<Intellectual>-3</Intellectual>
+			<Social>-3</Social>
+		</skillGains>
+		<possessions>
+			<Beer>25</Beer>
+		</possessions>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_AbandonedOldMan</defName>
+		<title>Abandoned old man</title>
+		<titleFemale>Abandoned old woman</titleFemale>
+		<titleShort>Abandoned</titleShort>
+		<titleShortFemale>Abandoned</titleShortFemale>
+		<description>[PAWN_nameDef]'s life ceased to interest those close to {PAWN_gender ? him : her}. The few who remained faithful to {PAWN_gender ? him : her} are already in the grave. {PAWN_gender ? He : She} lives out {PAWN_gender ? his : her} last years alone, constantly feeling an endless longing for the past.</description>
+		<skillGains>
+			<Cooking>1</Cooking>
+			<Medicine>1</Medicine>
+			<Social>-3</Social>
+		</skillGains>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_QuietGardener</defName>
+		<title>Quiet gardener</title>
+		<titleFemale>Quiet gardener</titleFemale>
+		<titleShort>Gardener</titleShort>
+		<titleShortFemale>Gardener</titleShortFemale>
+		<description>[PAWN_nameDef] never thought {PAWN_gender ? he : she} would love plants so much. Watching them grow slowly brings {PAWN_gender ? him : her} peace of mind. Flowers, vegetables, trees, {PAWN_gender ? he : she} expands the garden with maniacal zeal, dissolving in it day after day.</description>
+		<skillGains>
+			<Plants>4</Plants>
+			<Medicine>1</Medicine>
+			<Social>-2</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_RetiredInvestigator</defName>
+		<title>Retired investigator</title>
+		<titleFemale>Retired investigator</titleFemale>
+		<titleShort>Investigator</titleShort>
+		<titleShortFemale>Investigator</titleShortFemale>
+		<description>[PAWN_nameDef] has solved hundreds of cases of varying scale. These were petty thefts, murders of high-ranking officials of the empire, sabotage of the production of nutritional paste for remote colonies. {PAWN_gender ? He : She} remembers everything, but nothing exactly. Gradually, the memory of the past days leaves {PAWN_gender ? him : her}, however, it seems {PAWN_gender ? he : she} has found peace.</description>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Medicine>1</Medicine>
+			<Social>2</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_FormerLeader</defName>
+		<title>Former leader</title>
+		<titleFemale>Former leader</titleFemale>
+		<titleShort>Leader</titleShort>
+		<titleShortFemale>Leader</titleShortFemale>
+		<description>[PAWN_nameDef] was once the leader of a large faction that controlled trade routes on a distant feral world. Now, in {PAWN_gender ? his : her} old age, {PAWN_gender ? he : she} no longer has the power {PAWN_gender ? he : she} once had, and {PAWN_gender ? his : her} mind is filled with memories of lost friends and betrayal. {PAWN_gender ? He : She} often sits alone, pondering what {PAWN_gender ? he : she} could have done differently, and hoping that {PAWN_gender ? his : her} experiences will one day prove useful to future generations.</description>
+		<skillGains>
+			<Melee>2</Melee>
+			<Social>3</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_UnnecessaryResearcher</defName>
+		<title>Unnecessary researcher</title>
+		<titleFemale>Unnecessary researcher</titleFemale>
+		<titleShort>Researcher</titleShort>
+		<titleShortFemale>Researcher</titleShortFemale>
+		<description>[PAWN_nameDef] became fascinated with archaeology, unraveling the ancient mysteries of the fringe world. Now, in {PAWN_gender ? him : her} old age, {PAWN_gender ? him : her} knees can no longer withstand long hikes, and {PAWN_gender ? him : her} eyes no longer see the details as they once did. But the fire of curiosity still burns in {PAWN_gender ? him : her} heart, and {PAWN_gender ? he : she} often rereads old records, hoping that one day {PAWN_gender ? he : she} will find something that will change history.</description>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Animals>3</Animals>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Animals</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_OldAlchemist</defName>
+		<title>Old alchemist</title>
+		<titleFemale>Old alchemist</titleFemale>
+		<titleShort>Alchemist</titleShort>
+		<titleShortFemale>Alchemist</titleShortFemale>
+		<description>[PAWN_nameDef] has spent years searching for the Philosopher's Stone, the secret of immortality, and other great goals. However, over the years, {PAWN_gender ? he : she} has come to realize that {PAWN_gender ? his : her} powers are no longer what they once were, and {PAWN_gender ? his : her} experiments have not yielded the results {PAWN_gender ? he : she} longed for. All {PAWN_gender ? he : she} has left are the books and notes {PAWN_gender ? he : she} used to try to explain the mysteries of the universe. But even now, {PAWN_gender ? he : she} continues {PAWN_gender ? his : her} research, despite {PAWN_gender ? his : her} restlessness and fatigue.</description>
+		<skillGains>
+			<Crafting>3</Crafting>
+			<Cooking>3</Cooking>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Crafting</li>
+			<li>Cooking</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_ElderlyModder</defName>
+		<title>Elderly modder</title>
+		<titleFemale>Elderly modder</titleFemale>
+		<titleShort>Modder</titleShort>
+		<titleShortFemale>Modder</titleShortFemale>
+		<description>[PAWN_nameDef] spent many years developing application software and modifications for {PAWN_gender ? his : her} favorite game. Unfortunately, {PAWN_gender ? he : she} never became popular in {PAWN_gender ? his : her} home world and spent {PAWN_gender ? his : her} old age in poverty.</description>
+		<skillGains>
+			<Social>-3</Social>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_KindTeacher</defName>
+		<title>Kind teacher</title>
+		<titleFemale>Kind teacher</titleFemale>
+		<titleShort>Teacher</titleShort>
+		<titleShortFemale>Teacher</titleShortFemale>
+		<description>[PAWN_nameDef] didn't think {PAWN_gender ? he : she}'d last long in the teaching profession. {PAWN_gender ? He : She}'s become an example to many young people, guiding their lives in what {PAWN_gender ? he : she} believes is a better direction. {PAWN_gender ? He : She} continues to try, even though {PAWN_gender ? he : she} feels the onset of infirmity.</description>
+		<skillGains>
+			<Social>4</Social>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Kind>0</Kind>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_WeakSurgeon</defName>
+		<title>Weak surgeon</title>
+		<titleFemale>Weak surgeon</titleFemale>
+		<titleShort>Surgeon</titleShort>
+		<titleShortFemale>Surgeon</titleShortFemale>
+		<description>[PAWN_nameDef] has performed many complex surgeries, becoming a sought-after surgeon in {PAWN_gender ? his : her} industrial world. However, the years have taken their toll. {PAWN_gender ? His : Her} hands are increasingly shaking, which once led to a serious medical error. Since then, {PAWN_gender ? he : she} no longer performs surgeries, focusing on scientific work.</description>
+		<skillGains>
+			<Medicine>6</Medicine>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Caring</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_RanchOwner</defName>
+		<title>Ranch owner</title>
+		<titleFemale>Ranch owner</titleFemale>
+		<titleShort>Ranch owner</titleShort>
+		<titleShortFemale>Ranch owner</titleShortFemale>
+		<description>[PAWN_nameDef] settle down on a small ranch, raising alpacas and muffalo. It's not easy, but {PAWN_gender ? he : she} tries to keep the ranch in good shape.</description>
+		<skillGains>
+			<Animals>6</Animals>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Animals</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_TiredMerchant</defName>
+		<title>Tired merchant</title>
+		<titleFemale>Tired merchant</titleFemale>
+		<titleShort>Merchant</titleShort>
+		<titleShortFemale>Merchant</titleShortFemale>
+		<description>[PAWN_nameDef] was long known as the most successful merchant in the region. Now, in {PAWN_gender ? his : her} old age, {PAWN_gender ? his : her} travels have become rare, and {PAWN_gender ? his : her} trading days have become increasingly a thing of the past. {PAWN_gender ? He : She} spends {PAWN_gender ? his : her} days reflecting on the deals that led to {PAWN_gender ? his : her} success, and sometimes regrets that {PAWN_gender ? he : she} was not able to retire sooner, feeling the futility of pursuing wealth.</description>
+		<skillGains>
+			<Social>6</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_FormerForeman</defName>
+		<title>Former foreman</title>
+		<titleFemale>Former foreman</titleFemale>
+		<titleShort>Foreman</titleShort>
+		<titleShortFemale>Foreman</titleShortFemale>
+		<description>[PAWN_nameDef] was once an army commander, but as {PAWN_gender ? he : she} aged, {PAWN_gender ? he : she} lost many of {PAWN_gender ? his : her} fighting skills and abilities. Now {PAWN_gender ? he : she} spends {PAWN_gender ? his : her} time in peace, reminiscing about {PAWN_gender ? his : her} youth and telling stories to others, but {PAWN_gender ? his : her} time has passed. {PAWN_gender ? He : She} is proud of what {PAWN_gender ? he : she} has done, but also knows that the world has changed and {PAWN_gender ? he : she} is no longer needed. Sometimes, {PAWN_gender ? his : her} dead friends visit {PAWN_gender ? him : her} in {PAWN_gender ? his : her} nightmares.</description>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Social>1</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_FadedMusicStar</defName>
+		<title>Faded music star</title>
+		<titleFemale>Faded music star</titleFemale>
+		<titleShort>Music star</titleShort>
+		<titleShortFemale>Music star</titleShortFemale>
+		<description>[PAWN_nameDef] became a local music artist, quickly gaining popularity. However, new generations of the planet's inhabitants have practically lost all interest in {PAWN_gender ? him : her}, and {PAWN_gender ? his : her} musical career has long ended. {PAWN_gender ? He : She} still cannot let go of the past.</description>
+		<skillGains>
+			<Artistic>3</Artistic>
+			<Social>3</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Artistic</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_Handyman</defName>
+		<title>Handyman</title>
+		<titleFemale>Handyman</titleFemale>
+		<titleShort>Handyman</titleShort>
+		<titleShortFemale>Handyman</titleShortFemale>
+		<description>[PAWN_nameDef] found himself no longer needed in {PAWN_gender ? his : her} profession in {PAWN_gender ? his : her} old age, forcing {PAWN_gender ? him : her} to become a common laborer. {PAWN_gender ? He : She} has had a hard time accepting the new reality, and {PAWN_gender ? his : her} body can barely withstand the strain.</description>
+		<skillGains>
+			<Crafting>2</Crafting>
+			<Construction>2</Construction>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Constructing</li>
+			<li>Crafting</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_BakeryPastryChef</defName>
+		<title>Bakery pastry chef</title>
+		<titleFemale>Bakery pastry chef</titleFemale>
+		<titleShort>Bakery chef</titleShort>
+		<titleShortFemale>Bakery chef</titleShortFemale>
+		<description>[PAWN_nameDef] has gotten a good handle on cooking, having found a job at a bakery. {PAWN_gender ? He : She} has spent years honing {PAWN_gender ? his : her} skills, but the years have taken their toll. {PAWN_gender ? He : She} has begun to make simple mistakes, but customers still love {PAWN_gender ? him : her}.</description>
+		<skillGains>
+			<Cooking>6</Cooking>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Cooking</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_OldCook</defName>
+		<title>Old cook</title>
+		<titleFemale>Old cook</titleFemale>
+		<titleShort>Old cook</titleShort>
+		<titleShortFemale>Old cook</titleShortFemale>
+		<description>[PAWN_nameDef] spent years at the stove, turning simple ingredients into dishes that brought people together. Now, when the flavors are barely noticeable, {PAWN_gender ? he : she} cooks for the memories and the silence that fills the kitchen.</description>
+		<skillGains>
+			<Cooking>5</Cooking>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Cooking</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_MuseumCurator</defName>
+		<title>Museum curator</title>
+		<titleFemale>Museum curator</titleFemale>
+		<titleShort>Curator</titleShort>
+		<titleShortFemale>Curator</titleShortFemale>
+		<description>[PAWN_nameDef] has dedicated {PAWN_gender ? his : her} life to preserving the past. In {PAWN_gender ? his : her} old age, {PAWN_gender ? he : she} knows the sound of the silence of abandoned halls, and can tell the story of any object — even if no one is listening.</description>
+		<skillGains>
+			<Social>3</Social>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_ElderlyBotanist</defName>
+		<title>Elderly botanist</title>
+		<titleFemale>Elderly botanist</titleFemale>
+		<titleShort>Botanist</titleShort>
+		<titleShortFemale>Botanist</titleShortFemale>
+		<description>[PAWN_nameDef] has grown more plants than has seen people, and {PAWN_gender ? he : she} remembers every one. With age, {PAWN_gender ? his : her} eyesight has become worse, but {PAWN_gender ? his : her} hands still remember how to handle life with care.</description>
+		<skillGains>
+			<Social>-2</Social>
+			<Plants>4</Plants>
+		</skillGains>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_Librarian</defName>
+		<title>Librarian</title>
+		<titleFemale>Librarian</titleFemale>
+		<titleShort>Librarian</titleShort>
+		<titleShortFemale>Librarian</titleShortFemale>
+		<description>[PAWN_nameDef] lived among books for so long that learned to distinguish editions and authors by smell. Over the years, {PAWN_gender ? his : her} eyesight has failed, but {PAWN_gender ? his : her} memory still holds thousands of stories.</description>
+		<skillGains>
+			<Social>-1</Social>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_FormerDancer</defName>
+		<title>Former dancer</title>
+		<titleFemale>Former dancer</titleFemale>
+		<titleShort>Dancer</titleShort>
+		<titleShortFemale>Dancer</titleShortFemale>
+		<description>[PAWN_nameDef] performed in front of crowds, but as the years passed, all that was left was old shoes and music in {PAWN_gender ? his : her} head. Sometimes {PAWN_gender ? he : she} still dances, alone, to sounds that are no longer there.</description>
+		<skillGains>
+			<Artistic>4</Artistic>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Artistic</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_Watchmaker</defName>
+		<title>Watchmaker</title>
+		<titleFemale>Watchmaker</titleFemale>
+		<titleShort>Watchmaker</titleShort>
+		<titleShortFemale>Watchmaker</titleShortFemale>
+		<description>[PAWN_nameDef] collected hundreds of clocks, but even they cannot stop aging. Now {PAWN_gender ? he : she} listens to the ticking and smiles - because every second lived consciously is more valuable than eternity.</description>
+		<skillGains>
+			<Crafting>4</Crafting>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Crafting</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_ForgottenArtist</defName>
+		<title>Forgotten artist</title>
+		<titleFemale>Forgotten artist</titleFemale>
+		<titleShort>Artist</titleShort>
+		<titleShortFemale>Artist</titleShortFemale>
+		<description>[PAWN_nameDef] drew dreams - and turned them into reality. With age came weakness, but in the head of {PAWN_gender ? his : her} a world still blooms, inaccessible to others.</description>
+		<skillGains>
+			<Artistic>5</Artistic>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Artistic</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<TorturedArtist>0</TorturedArtist>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_RepentantKiller</defName>
+		<title>Repentant killer</title>
+		<titleFemale>Repentant killer</titleFemale>
+		<titleShort>Killer</titleShort>
+		<titleShortFemale>Killer</titleShortFemale>
+		<description>[PAWN_nameDef] has killed many innocent people because they stood in {PAWN_gender ? his : her} way. {PAWN_gender ? He : She} has long since acknowledged {PAWN_gender ? his : her} mistakes and will never touch a weapon again.</description>
+		<skillGains>
+			<Social>-3</Social>
+		</skillGains>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_EternalJoker</defName>
+		<title>Eternal joker</title>
+		<titleFemale>Eternal joker</titleFemale>
+		<titleShort>Joker</titleShort>
+		<titleShortFemale>Joker</titleShortFemale>
+		<description>[PAWN_nameDef] has been smiling constantly in recent years, and jokes are constantly on {PAWN_gender ? his : her} lips. {PAWN_gender ? He : She} seems like a truly happy {PAWN_gender ? old man : old woman}.</description>
+		<skillGains>
+			<Social>5</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_TiredLabAssistant</defName>
+		<title>Tired lab assistant</title>
+		<titleFemale>Tired lab assistant</titleFemale>
+		<titleShort>Assistant</titleShort>
+		<titleShortFemale>Assistant</titleShortFemale>
+		<description>[PAWN_nameDef] can't remember when {PAWN_gender ? he : she} first started working at the lab. {PAWN_gender ? He : She} spent thousands of hours cleaning and preparing the lab, but never received a promotion.</description>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Crafting>1</Crafting>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Cleaning</li>
+			<li>Hauling</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
+		<defName>Elderhood_Anchorman</defName>
+		<title>Anchorman</title>
+		<titleFemale>Anchorman</titleFemale>
+		<titleShort>Anchorman</titleShort>
+		<titleShortFemale>Anchorman</titleShortFemale>
+		<description>[PAWN_nameDef] has been broadcasting on one of the TV channels of {PAWN_gender ? his : her} outlying world for many years. It seems that {PAWN_gender ? his : her} face is known to every inhabitant of the planet, but {PAWN_gender ? he : she} understands that sooner or later {PAWN_gender ? he : she} will have to leave.</description>
+		<skillGains>
+			<Artistic>3</Artistic>
+			<Social>3</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Artistic</li>
+			<li>Social</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+</Defs>

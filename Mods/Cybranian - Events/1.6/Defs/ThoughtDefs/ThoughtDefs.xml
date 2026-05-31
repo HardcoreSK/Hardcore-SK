@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->
+	<ThoughtDef>
+		<defName>MountainAir</defName>
+		<workerClass>ThoughtWorker_GameCondition</workerClass>
+		<gameCondition>MountainAir</gameCondition>
+		<nullifyingHediffs>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhumanized</li>
+		</nullifyingHediffs>
+		<stages>
+			<li>
+				<label>mountain air</label>
+				<description>I feel the freshness of the mountains.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!---->
+	<ThoughtDef>
+		<defName>SeaAir</defName>
+		<workerClass>ThoughtWorker_GameCondition</workerClass>
+		<gameCondition>SeaAir</gameCondition>
+		<nullifyingHediffs>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhumanized</li>
+		</nullifyingHediffs>
+		<stages>
+			<li>
+				<label>sea air</label>
+				<description>I feel the freshness of the sea.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!---->
+	<ThoughtDef>
+		<defName>DeathOfDistantStar</defName>
+		<workerClass>ThoughtWorker_Aurora</workerClass>
+		<gameCondition>DeathOfDistantStar</gameCondition>
+		<nullifyingHediffs>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhumanized</li>
+		</nullifyingHediffs>
+		<stages>
+			<li>
+				<label>death of distant star</label>
+				<description>It is extraordinarily exciting to watch the death of a star years after its actual death.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!---->
+	<ThoughtDef>
+		<defName>ParadeOfPlanets</defName>
+		<workerClass>ThoughtWorker_Aurora</workerClass>
+		<gameCondition>ParadeOfPlanets</gameCondition>
+		<nullifyingHediffs>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhumanized</li>
+		</nullifyingHediffs>
+		<stages>
+			<li>
+				<label>parade of planets</label>
+				<description>I happened to look at the parade of the planets. An interesting sight.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!---->
+	<ThoughtDef>
+		<defName>PsyStorm</defName>
+		<workerClass>ThoughtWorker_GameCondition</workerClass>
+		<gameCondition>PsyStorm</gameCondition>
+		<nullifyingTraitDegrees>
+			<PsychicSensitivity>-1</PsychicSensitivity>
+			<PsychicSensitivity>-2</PsychicSensitivity>
+		</nullifyingTraitDegrees>
+		<stages>
+			<li>
+				<label>psy storm effect</label>
+				<description>My thoughts are confused.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!---->
+</Defs>

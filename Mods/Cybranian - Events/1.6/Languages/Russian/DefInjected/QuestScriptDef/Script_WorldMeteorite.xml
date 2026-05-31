@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<!---->
+	<!---->
+	<!---->
+	<WorldMeteorite.questDescriptionRules.rulesStrings>
+		<li>questDescription->Огромный драгоценный метеорит из [targetMineable_label] упал на планету. У нас не больше [timeoutTicks_duration] до того, как другие смогут добраться до него. [lumpThreatDescription]</li>
+	</WorldMeteorite.questDescriptionRules.rulesStrings>
+	<WorldMeteorite.questNameRules.rulesStrings>
+		<li>questName->[meteorite] из [targetMineableThing_label]</li>
+		<li>questName->[targetMineableThing_label] [meteorite]</li>
+		<li>questName->[discovered] [meteorite] из [targetMineableThing_label]</li>
+		<!---->
+		<li>meteorite->метеорит</li>
+		<li>meteorite->метеор</li>
+		<li>meteorite->астероид</li>
+		<li>meteorite->обломок</li>
+		<!---->
+		<li>discovered->обнаружен</li>
+		<li>discovered->засечен</li>
+		<li>discovered->найден</li>
+		<li>discovered->упал</li>
+		<!---->
+	</WorldMeteorite.questNameRules.rulesStrings>
+	<WorldMeteorite.LetterLabelQuestExpired.slateRef>Время задания истекло: [resolvedQuestName]</WorldMeteorite.LetterLabelQuestExpired.slateRef>
+	<WorldMeteorite.LetterTextQuestExpired.slateRef>Метеорит из [targetMineable_label] больше пропал с радаров. Должно быть, его обнаружил и выкопал кто-то другой. Время, отведённое для задания [resolvedQuestName], истекло.</WorldMeteorite.LetterTextQuestExpired.slateRef>
+	<!---->
+	<!---->
+	<!---->
+</LanguageData>

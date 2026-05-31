@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->
+	<EventsCore.Settings.SettingsTabDef>
+		<defName>IncidentAllowedSettings</defName>
+		<label>Allowed incidents</label>
+		<workerClass>EventsCore.Settings.SettingsTabRecord_IncidentAllowedSettings</workerClass>
+	</EventsCore.Settings.SettingsTabDef>
+	<!---->
+	<EventsCore.Settings.SettingsTabDef>
+		<defName>World</defName>
+		<label>World</label>
+		<workerClass>EventsCore.Settings.SettingsTabRecord_World</workerClass>
+	</EventsCore.Settings.SettingsTabDef>
+	<!---->
+</Defs>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->
+	<IncidentDef ParentName="DiseaseIncident">
+		<defName>DimonSever000_Pneumonia</defName>
+		<label>Pneumonia</label>
+		<diseaseIncident>DimonSever000_Pneumonia</diseaseIncident>
+		<letterLabel>Disease: Pneumonia</letterLabel>
+		<diseaseVictimFractionRange>0.15~0.3</diseaseVictimFractionRange>
+		<letterText>{0} of your {1} have a {2} - a severe respiratory disease that is difficult to treat. The patient may get complications in the form of pneumothorax or pulmonary edema. \n\nThe following {1} report symptoms</letterText>
+	</IncidentDef>
+	<!---->
+	<IncidentDef ParentName="DiseaseIncident">
+		<defName>DimonSever000_CommonCold</defName>
+		<label>Common cold</label>
+		<diseaseIncident>DimonSever000_CommonCold</diseaseIncident>
+		<letterLabel>Disease: Common cold</letterLabel>
+		<diseaseVictimFractionRange>0.25~0.5</diseaseVictimFractionRange>
+		<letterText>{0} of your {1} have a {2} - a mild respiratory illness that is easy to treat at first. In some cases, unpleasant symptoms such as sore throat and general weakness may occur. \n\nThe following {1} have gotten sick</letterText>
+	</IncidentDef>
+	<!---->
+	<IncidentDef ParentName="DiseaseIncident">
+		<defName>DimonSever000_Tuberculosis</defName>
+		<label>Tuberculosis</label>
+		<diseaseIncident>DimonSever000_Tuberculosis</diseaseIncident>
+		<letterLabel>Disease: Tuberculosis</letterLabel>
+		<diseaseVictimFractionRange>0.05~0.1</diseaseVictimFractionRange>
+		<letterText>{0} of your {1} have a {2} - a serious illness that is difficult to notice at first. It is difficult to treat and progresses slowly. \n\nThe following {1} have gotten sick</letterText>
+	</IncidentDef>
+	<!---->
+	<IncidentDef ParentName="DiseaseIncident">
+		<defName>DimonSever000_Conjunctivitis</defName>
+		<label>Conjunctivitis</label>
+		<diseaseIncident>DimonSever000_Conjunctivitis</diseaseIncident>
+		<letterLabel>Disease: Conjunctivitis</letterLabel>
+		<letterText>{0} of your {1} have a {2} - is an inflammation of the lining of the eye caused by an infection. \n\nThe following {1} have gotten sick</letterText>
+		<diseasePartsToAffect>
+			<li>Eye</li>
+		</diseasePartsToAffect>
+	</IncidentDef>
+	<!---->
+	<IncidentDef ParentName="DiseaseIncident">
+		<defName>DimonSever000_Otitis</defName>
+		<label>Otitis</label>
+		<diseaseIncident>DimonSever000_Otitis</diseaseIncident>
+		<letterLabel>Disease: Otitis</letterLabel>
+		<letterText>{0} of your {1} have a {2} - is inflammation of the ear canals, causing hearing impairment and persistent headache. \n\nThe following {1} have gotten sick</letterText>
+		<diseasePartsToAffect>
+			<li>Ear</li>
+		</diseasePartsToAffect>
+	</IncidentDef>
+	<!---->
+</Defs>

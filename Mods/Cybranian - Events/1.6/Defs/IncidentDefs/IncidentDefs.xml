@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->
+	<IncidentDef>
+		<defName>MountainAir</defName>
+		<label>Mountain air</label>
+		<letterLabel>Mountain air</letterLabel>
+		<workerClass>EventsCore.Incidents.IncidentWorker_MountainAir</workerClass>
+		<gameCondition>MountainAir</gameCondition>
+		<durationDays>1~3</durationDays>
+		<letterDef>PositiveEvent</letterDef>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<baseChance>3</baseChance>
+		<earliestDay>0</earliestDay>
+		<minRefireDays>30</minRefireDays>
+	</IncidentDef>
+	<!---->
+	<IncidentDef>
+		<defName>SeaAir</defName>
+		<label>Sea air</label>
+		<letterLabel>Sea air</letterLabel>
+		<workerClass>EventsCore.Incidents.IncidentWorker_SeaAir</workerClass>
+		<gameCondition>SeaAir</gameCondition>
+		<durationDays>1~3</durationDays>
+		<letterDef>PositiveEvent</letterDef>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<baseChance>3</baseChance>
+		<earliestDay>0</earliestDay>
+		<minRefireDays>30</minRefireDays>
+	</IncidentDef>
+	<!---->
+	<IncidentDef>
+		<defName>ParadeOfPlanets</defName>
+		<label>Parade of planets</label>
+		<letterLabel>Parade of planets</letterLabel>
+		<letterText>The planets of your star system have lined up with a slight deviation. This is a rare event, interesting for all astronomers.</letterText>
+		<workerClass>EventsCore.Incidents.IncidentWorker_MakeGameConditionWorld</workerClass>
+		<gameCondition>ParadeOfPlanets</gameCondition>
+		<durationDays>1~2</durationDays>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+			<li>Map_TempIncident</li>
+			<li>Map_Misc</li>
+			<li>Map_RaidBeacon</li>
+			<li>Caravan</li>
+		</targetTags>
+		<letterDef>PositiveEvent</letterDef>
+		<baseChance>1</baseChance>
+		<earliestDay>30</earliestDay>
+		<minRefireDays>180</minRefireDays>
+	</IncidentDef>
+	<!---->
+	<IncidentDef>
+		<defName>IceStorm</defName>
+		<label>Ice storm</label>
+		<letterLabel>Ice storm</letterLabel>
+		<category>ThreatSmall</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_MakeGameCondition</workerClass>
+		<gameCondition>IceStorm</gameCondition>
+		<letterDef>ThreatSmall</letterDef>
+		<baseChance>5</baseChance>
+		<earliestDay>30</earliestDay>
+		<minRefireDays>60</minRefireDays>
+		<disabledWhen>
+			<extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
+		</disabledWhen>
+		<durationDays>1.5~3</durationDays>
+		<allowedBiomes>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+		</allowedBiomes>
+	</IncidentDef>
+	<!---->
+	<IncidentDef>
+		<defName>RatInfestation</defName>
+		<label>Rat infestation</label>
+		<letterLabel>Rat infestation</letterLabel>
+		<letterText>A horde of {0} rats is emerging from the ground and attacking your crops! Kill them if you don't want to lose your crops.</letterText>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>EventsCore.Incidents.IncidentWorker_RatInfestation</workerClass>
+		<letterDef>NegativeEvent</letterDef>
+		<baseChance>2</baseChance>
+		<minRefireDays>30</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+		<modExtensions>
+			<li Class="EventsCore.Incidents.DefModExtension_IncidentProps">
+				<props Class="EventsCore.Incidents.IncidentProperties_RatInfestation">
+					<rangeByPointsCurve>
+						<points>
+							<li>(100, 2)</li>
+							<li>(2000, 13)</li>
+						</points>
+					</rangeByPointsCurve>
+					<ratByPointCurve>
+						<points>
+							<li>(0, 8)</li>
+							<li>(2000, 50)</li>
+						</points>
+					</ratByPointCurve>
+				</props>
+			</li>
+		</modExtensions>
+	</IncidentDef>
+	<!---->
+	<IncidentDef>
+		<defName>TurtleInvasion</defName>
+		<label>Turtle invasion</label>
+		<letterLabel>Turtle invasion</letterLabel>
+		<letterText>A horde of {0} turtles emerges from underwater!</letterText>
+		<category>ThreatSmall</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>EventsCore.Incidents.IncidentWorker_TurtleInvasion</workerClass>
+		<letterDef>ThreatSmall</letterDef>
+		<baseChance>2</baseChance>
+		<earliestDay>30</earliestDay>
+		<minRefireDays>60</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+	</IncidentDef>
+	<!---->
+	<IncidentDef>
+		<defName>AlliesGift</defName>
+		<label>Allies gift</label>
+		<letterLabel>Allies gift</letterLabel>
+		<letterText>Your allies, faction {0} has sent you a small symbolic gift as a token of friendship.</letterText>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>EventsCore.Incidents.IncidentWorker_AlliesGift</workerClass>
+		<letterDef>PositiveEvent</letterDef>
+		<baseChance>2</baseChance>
+		<minRefireDays>60</minRefireDays>
+	</IncidentDef>
+	<!---->
+	<IncidentDef>
+		<defName>PsyStorm</defName>
+		<label>Psy storm</label>
+		<category>ThreatSmall</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_MakeGameCondition</workerClass>
+		<gameCondition>PsyStorm</gameCondition>
+		<letterLabel>Psy storm</letterLabel>
+		<letterDef>ThreatSmall</letterDef>
+		<baseChance>1</baseChance>
+		<earliestDay>60</earliestDay>
+		<minRefireDays>60</minRefireDays>
+		<disabledWhen>
+			<extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
+		</disabledWhen>
+		<durationDays>1~2</durationDays>
+	</IncidentDef>
+	<!---->
+	<IncidentDef>
+		<defName>OldMan</defName>
+		<label>Old man</label>
+		<letterLabel>Old man: {0}</letterLabel>
+		<letterText>Not far from you wanders an abandoned old man named {0}, who, apparently, has extraordinary knowledge, but has become unnecessary due to his age.</letterText>
+		<category>Misc</category>
+		<letterDef>PositiveEvent</letterDef>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_GiveQuest</workerClass>
+		<questScriptDef>OldMan</questScriptDef>
+		<baseChance>1</baseChance>
+		<minRefireDays>90</minRefireDays>
+		<pawnKind>WandererJoiner_OldMan</pawnKind>
+		<populationEffect>IncreaseEasy</populationEffect>
+	</IncidentDef>
+	<!---->
+	<IncidentDef>
+		<defName>DeathOfSun</defName>
+		<label>Death of sun</label>
+		<letterLabel>Death of sun</letterLabel>
+		<letterText>The sun of this star system shows signs of imminent death, and its luminosity will steadily decrease day by day. This is probably an irreversible process. The decrease in luminosity has also triggered a process of global cooling.</letterText>
+		<workerClass>EventsCore.Incidents.IncidentWorker_MakeGameConditionWorld</workerClass>
+		<gameCondition>DeathOfSun</gameCondition>
+		<category>ThreatBig</category>
+		<letterDef>ThreatBig</letterDef>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+			<li>Map_TempIncident</li>
+			<li>Map_Misc</li>
+			<li>Map_RaidBeacon</li>
+			<li>Caravan</li>
+		</targetTags>
+		<baseChance>0.1</baseChance>
+		<earliestDay>300</earliestDay>
+		<minRefireDays>9999999</minRefireDays>
+	</IncidentDef>
+	<!---->
+	<IncidentDef>
+		<defName>GlobalCooling</defName>
+		<label>Global cooling</label>
+		<letterLabel>Global cooling</letterLabel>
+		<letterText>A global cooling event is beginning, during which the planet will gradually freeze and the climate will change dramatically. The seas will be covered with ice, opening up routes for caravans. Prepare for the onset of terrible cold.\n\nThe coldest places will be located high above sea level.</letterText>
+		<workerClass>EventsCore.Incidents.IncidentWorker_ClimateChange</workerClass>
+		<gameCondition>ClimateChange</gameCondition>
+		<category>ThreatBig</category>
+		<letterDef>ThreatBig</letterDef>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+			<li>Map_TempIncident</li>
+			<li>Map_Misc</li>
+			<li>Map_RaidBeacon</li>
+			<li>Caravan</li>
+		</targetTags>
+		<baseChance>0.1</baseChance>
+		<earliestDay>300</earliestDay>
+		<minRefireDays>720</minRefireDays>
+		<modExtensions>
+			<li Class="EventsCore.Incidents.DefModExtension_IncidentProps">
+				<props Class="EventsCore.Incidents.IncidentProperties_ClimateChange">
+					<targetTemperatureChange>-80</targetTemperatureChange>
+					<elevationTemperatureCurve>
+						<points>
+							<li>-500, 0.5</li>
+							<li>0, 1</li>
+							<li>3000, 1.5</li>
+						</points>
+					</elevationTemperatureCurve>
+					<equatorialDistanceTemperatureCurve>
+						<points>
+							<li>0, 0.5</li>
+							<li>1, 3</li>
+						</points>
+					</equatorialDistanceTemperatureCurve>
+					<!-- Что примерно дает 80 за 30 дней -->
+					<temperatureChangePerIntervalByDayPassedCurve>
+						<points>
+							<li>0, -1.0</li>
+							<li>5, -1.2</li>
+							<li>10, -2.0</li>
+							<li>20, -3.0</li>
+							<li>30, -5.0</li>
+						</points>
+					</temperatureChangePerIntervalByDayPassedCurve>
+				</props>
+			</li>
+		</modExtensions>
+	</IncidentDef>
+	<!---->
+	<IncidentDef>
+		<defName>GlobalWarming</defName>
+		<label>Global warming</label>
+		<letterLabel>Global warming</letterLabel>
+		<letterText>Global warming is beginning, during which the planet will gradually warm up and the climate will change dramatically. Glaciers will begin to melt, rivers will dry up, and ever larger areas will be covered by deserts. Warming will affect high-mountain cold regions faster.</letterText>
+		<workerClass>EventsCore.Incidents.IncidentWorker_ClimateChange</workerClass>
+		<gameCondition>ClimateChange</gameCondition>
+		<category>ThreatBig</category>
+		<letterDef>ThreatBig</letterDef>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+			<li>Map_TempIncident</li>
+			<li>Map_Misc</li>
+			<li>Map_RaidBeacon</li>
+			<li>Caravan</li>
+		</targetTags>
+		<baseChance>0.1</baseChance>
+		<earliestDay>300</earliestDay>
+		<minRefireDays>720</minRefireDays>
+		<modExtensions>
+			<li Class="EventsCore.Incidents.DefModExtension_IncidentProps">
+				<props Class="EventsCore.Incidents.IncidentProperties_ClimateChange">
+					<targetTemperatureChange>80</targetTemperatureChange>
+					<elevationTemperatureCurve>
+						<points>
+							<li>-500, 0.5</li>
+							<li>0, 1</li>
+							<li>3000, 1.5</li>
+						</points>
+					</elevationTemperatureCurve>
+					<equatorialDistanceTemperatureCurve>
+						<points>
+							<li>0, 0.5</li>
+							<li>1, 2.5</li>
+						</points>
+					</equatorialDistanceTemperatureCurve>
+					<!-- Что примерно дает 80 за 30 дней -->
+					<temperatureChangePerIntervalByDayPassedCurve>
+						<points>
+							<li>0, 1.0</li>
+							<li>5, 1.2</li>
+							<li>10, 2.0</li>
+							<li>20, 3.0</li>
+							<li>30, 5.0</li>
+						</points>
+					</temperatureChangePerIntervalByDayPassedCurve>
+				</props>
+			</li>
+		</modExtensions>
+	</IncidentDef>
+	<!---->
+	<IncidentDef>
+		<defName>DeathOfDistantStar</defName>
+		<label>Death of distant star</label>
+		<letterLabel>Death of distant star</letterLabel>
+		<letterText>You can observe in the sky a distant and beautiful picture of the death of a star, which came to you many years later.</letterText>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+			<li>Map_TempIncident</li>
+			<li>Map_Misc</li>
+			<li>Map_RaidBeacon</li>
+			<li>Caravan</li>
+		</targetTags>
+		<workerClass>EventsCore.Incidents.IncidentWorker_MakeGameConditionWorld</workerClass>
+		<gameCondition>DeathOfDistantStar</gameCondition>
+		<durationDays>5~10</durationDays>
+		<letterDef>PositiveEvent</letterDef>
+		<baseChance>0.5</baseChance>
+		<earliestDay>15</earliestDay>
+		<minRefireDays>200</minRefireDays>
+	</IncidentDef>
+	<!---->
+	<IncidentDef>
+		<defName>WorldMeteorite</defName>
+		<label>Meteorite fall</label>
+		<category>Misc</category>
+		<letterDef>PositiveEvent</letterDef>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+			<li>Map_TempIncident</li>
+			<li>Map_Misc</li>
+			<li>Map_RaidBeacon</li>
+			<li>Caravan</li>
+		</targetTags>
+		<workerClass>EventsCore.Incidents.IncidentWorker_WorldMeteorite</workerClass>
+		<baseChance>1</baseChance>
+		<earliestDay>10</earliestDay>
+		<minRefireDays>45</minRefireDays>
+	</IncidentDef>
+	<!---->
+	<IncidentDef>
+		<defName>ArtificialChannelConstruction</defName>
+		<label>Channel construction</label>
+		<letterLabel>Channel construction</letterLabel>
+		<letterText>Faction {0} successfully completes their project to create a water channel - {1}. They plan to use it to transport goods and people, but nothing will stop others from using it.\nTraveling along the canal allows you to reach your destination conveniently and quickly.</letterText>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+			<li>Map_TempIncident</li>
+			<li>Map_Misc</li>
+			<li>Map_RaidBeacon</li>
+			<li>Caravan</li>
+		</targetTags>
+		<workerClass>EventsCore.Incidents.IncidentWorker_ArtificialChannelConstruction</workerClass>
+		<letterDef>NeutralEvent</letterDef>
+		<baseChance>0.5</baseChance>
+		<earliestDay>30</earliestDay>
+		<minRefireDays>80</minRefireDays>
+		<modExtensions>
+			<li Class="EventsCore.Incidents.DefModExtension_IncidentProps">
+				<props Class="EventsCore.Incidents.IncidentProperties_ArtificialChannelConstruction">
+					<minTechLevel>Medieval</minTechLevel>
+					<defaultChannelLength>8~20</defaultChannelLength>
+					<channelLengthByTechLevelCurve>
+						<points>
+							<li>(3, 0.75)</li>
+							<!-- Medieval -->
+							<li>(4, 1)</li>
+							<!-- Industrial -->
+							<li>(5, 1.25)</li>
+							<!-- Spacer -->
+							<li>(6, 1.5)</li>
+							<!-- Ultra -->
+							<li>(7, 2)</li>
+							<!-- Archotech -->
+						</points>
+					</channelLengthByTechLevelCurve>
+				</props>
+			</li>
+		</modExtensions>
+	</IncidentDef>
+	<!---->
+	<IncidentDef>
+		<defName>IrrigationConstruction</defName>
+		<label>Irrigation construction</label>
+		<letterLabel>Irrigation construction</letterLabel>
+		<letterText>Faction {0} successfully completes their project to extend the riverbed to their settlement - {1}. They plan to use the constructed irrigation canal to irrigate the soil.</letterText>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+			<li>Map_TempIncident</li>
+			<li>Map_Misc</li>
+			<li>Map_RaidBeacon</li>
+			<li>Caravan</li>
+		</targetTags>
+		<workerClass>EventsCore.Incidents.IncidentWorker_IrrigationConstruction</workerClass>
+		<letterDef>NeutralEvent</letterDef>
+		<baseChance>0.5</baseChance>
+		<earliestDay>30</earliestDay>
+		<minRefireDays>80</minRefireDays>
+		<modExtensions>
+			<li Class="EventsCore.Incidents.DefModExtension_IncidentProps">
+				<props Class="EventsCore.Incidents.IncidentProperties_IrrigationConstruction">
+					<minTechLevel>Medieval</minTechLevel>
+					<riverLengthByTechLevelCurve>
+						<points>
+							<li>(3, 15)</li>
+							<!-- Medieval -->
+							<li>(4, 20)</li>
+							<!-- Industrial -->
+							<li>(5, 25)</li>
+							<!-- Spacer -->
+							<li>(6, 30)</li>
+							<!-- Ultra -->
+							<li>(7, 50)</li>
+							<!-- Archotech -->
+						</points>
+					</riverLengthByTechLevelCurve>
+				</props>
+			</li>
+		</modExtensions>
+	</IncidentDef>
+	<!---->
+	<IncidentDef>
+		<defName>RoadConstruction</defName>
+		<label>Road construction</label>
+		<letterLabel>Road construction</letterLabel>
+		<letterText>Faction {0} successfully completes its project to build a road between settlements {1} and {2}. The road promises to be a useful tool in supply and trade. Besides, we can use it too.</letterText>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+			<li>Map_TempIncident</li>
+			<li>Map_Misc</li>
+			<li>Map_RaidBeacon</li>
+			<li>Caravan</li>
+		</targetTags>
+		<workerClass>EventsCore.Incidents.IncidentWorker_RoadConstruction</workerClass>
+		<letterDef>NeutralEvent</letterDef>
+		<baseChance>0.5</baseChance>
+		<earliestDay>30</earliestDay>
+		<minRefireDays>80</minRefireDays>
+		<modExtensions>
+			<li Class="EventsCore.Incidents.DefModExtension_IncidentProps">
+				<props Class="EventsCore.Incidents.IncidentProperties_RoadConstruction">
+					<minTechLevel>Neolithic</minTechLevel>
+					<techLevelRoadMap>
+						<Undefined>StoneRoad</Undefined>
+						<Animal>DirtPath</Animal>
+						<Neolithic>DirtPath</Neolithic>
+						<Medieval>DirtRoad</Medieval>
+						<Industrial>StoneRoad</Industrial>
+						<Spacer>AncientAsphaltRoad</Spacer>
+						<Ultra>AncientAsphaltHighway</Ultra>
+						<Archotech>AncientAsphaltHighway</Archotech>
+					</techLevelRoadMap>
+					<roadLengthByTechLevelCurve>
+						<points>
+							<li>(0, 20)</li>
+							<!-- Undefined -->
+							<li>(1, 12)</li>
+							<!-- Animal -->
+							<li>(2, 12)</li>
+							<!-- Neolithic -->
+							<li>(3, 15)</li>
+							<!-- Medieval -->
+							<li>(4, 20)</li>
+							<!-- Industrial -->
+							<li>(5, 25)</li>
+							<!-- Spacer -->
+							<li>(6, 30)</li>
+							<!-- Ultra -->
+							<li>(7, 40)</li>
+							<!-- Archotech -->
+						</points>
+					</roadLengthByTechLevelCurve>
+				</props>
+			</li>
+		</modExtensions>
+	</IncidentDef>
+	<!---->
+	<IncidentDef>
+		<defName>SupervolcanoExplosion</defName>
+		<label>Supervolcano explosion</label>
+		<letterLabel>Supervolcano explosion</letterLabel>
+		<letterText>A supervolcano has erupted! Lava flows are destroying everything in their path.\n\nThe eruption is estimated at {0} points.\n\nClouds of dust and smoke will spread across the sky and will slowly settle, triggering a volcanic winter.</letterText>
+		<category>ThreatBig</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+			<li>Map_TempIncident</li>
+			<li>Map_Misc</li>
+			<li>Map_RaidBeacon</li>
+			<li>Caravan</li>
+		</targetTags>
+		<workerClass>EventsCore.Incidents.IncidentWorker_SupervolcanoExplosion</workerClass>
+		<letterDef>ThreatBig</letterDef>
+		<baseChance>1</baseChance>
+		<earliestDay>60</earliestDay>
+		<minRefireDays>180</minRefireDays>
+		<modExtensions>
+			<li Class="EventsCore.Incidents.DefModExtension_IncidentProps">
+				<props Class="EventsCore.Incidents.IncidentProperties_SupervolcanoExplosion">
+					<powerRange>1~8</powerRange>
+					<explodeRadius>5~20</explodeRadius>
+					<ashByPowerCurve>
+						<points>
+							<li>1, 30</li>
+							<li>8, 150</li>
+						</points>
+					</ashByPowerCurve>
+				</props>
+			</li>
+		</modExtensions>
+	</IncidentDef>
+	<!---->
+</Defs>
