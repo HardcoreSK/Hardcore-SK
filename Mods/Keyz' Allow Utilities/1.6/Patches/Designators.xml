@@ -15,12 +15,9 @@
                 <xpath>/Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses/li[13]</xpath>
                 <value>
                     <!--<li>KeyzAllowUtilities.Designator_SelectSimilar</li> HSK - Pointless because you cant select something beforehand -->
-                    <li>KeyzAllowUtilities.Designator_FinishOff</li>
                     <!--<li>KeyzAllowUtilities.Designator_StripMine</li> HSK moved to HSK patch -->
                     <li>KeyzAllowUtilities.Designator_CutGrown</li>
                     <li>KeyzAllowUtilities.Designator_CutBlighted</li>
-                    <li>KeyzAllowUtilities.Designator_HarvestGrown</li>
-                    <li>KeyzAllowUtilities.Designator_HarvestAll</li>
                 </value>
             </li>
 			
@@ -42,6 +39,24 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses/li[text()="Designator_PlantsHarvest"]</xpath>
+				<order>Append</order> <!--Reverse order in values!-->
+				<value>
+                    <li>KeyzAllowUtilities.Designator_HarvestGrown</li>
+                    <li>KeyzAllowUtilities.Designator_HarvestAll</li>
+				</value>
+			</li>
+
+			<!-- HSK Changes, moved next to other mine designators -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses/li[text()="Designator_Hunt"]</xpath>
+				<order>Prepend</order> <!--Reverse order in values!-->
+				<value>
+                    <li>KeyzAllowUtilities.Designator_FinishOff</li>
+				</value>
+			</li>
+
 			<!-- HSK moved here so its closer to the hardoded haul things -->
 			<li Class="PatchOperationInsert">
 				<xpath>Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses/li[text()="Designator_Haul"]</xpath>
@@ -52,13 +67,14 @@
 			</li>
 			
             <!-- Grabbed from original Allow Tool - puts the tool in the place people expect -->
-            <li Class="PatchOperationInsert">
+            <!--
+			<li Class="PatchOperationInsert">
                 <order>Append</order>
                 <xpath>/Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses/li[5]</xpath>
                 <value>
                     <li>KeyzAllowUtilities.Designator_ZoneAdd_GrowingFertile</li>
                 </value>
-            </li>
+            </li>-->
             <!-- ~1~ Remove stock forbid designator @1@ -->
             <!-- <li Class="PatchOperationRemove"> -->
             <!--     <success>Always</success> -->
