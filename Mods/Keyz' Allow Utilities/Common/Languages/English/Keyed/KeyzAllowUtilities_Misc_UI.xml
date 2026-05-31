@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <KeyzAllowUtilities_SettingsCategory>Keyz' Allow Utilities</KeyzAllowUtilities_SettingsCategory>
+    <KAU_SettingsTitle>Keyz' Allow Utilities</KAU_SettingsTitle>
+    <KAU_Section_Selection>Selection &amp; Allowing</KAU_Section_Selection>
+    <KAU_Section_Hauling>Hauling</KAU_Section_Hauling>
+    <KAU_Section_Plants>Plants</KAU_Section_Plants>
+    <KAU_Section_Combat>Combat</KAU_Section_Combat>
+    <KAU_Section_Mining>Mining</KAU_Section_Mining>
+    <KAU_Section_Shortcuts>Shortcuts</KAU_Section_Shortcuts>
+    <KeyzAllowUtilities_Settings_MaxSelect>Max selected items: [{0}]</KeyzAllowUtilities_Settings_MaxSelect>
+    <KUA_AllowAll>Allow all across map</KUA_AllowAll>
+    <KUA_AllowAllExcludingCorpses>Allow all across map (except corpses)</KUA_AllowAllExcludingCorpses>
+    <KUA_ForbidAll>Forbid all across map</KUA_ForbidAll>
+    <KUA_Allowed>{0} things allowed</KUA_Allowed>
+    <KUA_AllowedExcludingCorpses>{0} things allowed (corpses excluded)</KUA_AllowedExcludingCorpses>
+    <KUA_Forbidden>{0} things forbidden</KUA_Forbidden>
+    <KUA_MultiSelect>Selection tools</KUA_MultiSelect>
+    <KUA_MultiSelectDesc>Various selection tools for this item type. Hold shift to ignore stuff</KUA_MultiSelectDesc>
+    <KUA_SelectOnScreen>Select similar items on screen</KUA_SelectOnScreen>
+    <KUA_SelectOnMap>Select similar items on map</KUA_SelectOnMap>
+    <KUA_SelectInRect>Select similar items in rect</KUA_SelectInRect>
+    <KAU_DisableClaimAll>Disable claim all</KAU_DisableClaimAll>
+
+    <KUA_SelectOnScreenWithStuff>Select similar items on screen made from {0}</KUA_SelectOnScreenWithStuff>
+    <KUA_SelectOnMapWithStuff>Select similar items on map made from {0}</KUA_SelectOnMapWithStuff>
+    <KUA_SelectInRectWithStuff>Select similar items in rect made from {0}</KUA_SelectInRectWithStuff>
+
+    <KUA_HarvestGrown>Harvest grown</KUA_HarvestGrown>
+    <KUA_HarvestGrownDesc>Marks fully grown plants to be harvested for their food or other products.</KUA_HarvestGrownDesc>
+
+    <KUA_HarvestGrownWood>Chop grown wood</KUA_HarvestGrownWood>
+    <KUA_HarvestGrownWoodDesc>Marks fully grown trees to be chopped down for wood.</KUA_HarvestGrownWoodDesc>
+
+    <KUA_HarvestOnScreen>Harvest all fully grown on screen</KUA_HarvestOnScreen>
+    <KUA_HarvestOnMap>Harvest all fully grown on map</KUA_HarvestOnMap>
+
+    <KUA_CutGrown>Cut grown</KUA_CutGrown>
+    <KUA_CutGrownDesc>Marks fully grown plants to be cut and destroyed. The plant will be completely removed, and any food or resource yield will be harvested.</KUA_CutGrownDesc>
+
+    <KUA_CutGrownOnScreen>Cut all fully grown on screen</KUA_CutGrownOnScreen>
+    <KUA_CutGrownOnMap>Cut all fully grown on map</KUA_CutGrownOnMap>
+
+    <KAU_NoKill>Cannot finish off</KAU_NoKill>
+    <KAU_Kill>Finish off {0} [{1}]</KAU_Kill>
+    <KAU_StripKill>Strip, then finish off {0} [{1}]</KAU_StripKill>
+    <KAU_MeleeTooLow>Melee too low {0}</KAU_MeleeTooLow>
+    <KAU_Unable>Unable to melee</KAU_Unable>
+
+    <KUA_HaulUrgently>Haul urgently</KUA_HaulUrgently>
+    <KUA_HaulUrgentlyDesc>High-priority hauling.</KUA_HaulUrgentlyDesc>
+
+    <KUA_ToggleFinishOff>Finish off</KUA_ToggleFinishOff>
+    <KUA_ToggleFinishOffDesc>Toggle finishing off</KUA_ToggleFinishOffDesc>
+
+    <KUA_ToggleFinishOffDisable>Cancel finish off</KUA_ToggleFinishOffDisable>
+    <KUA_ToggleFinishOffDisableDesc>Cancel finish off</KUA_ToggleFinishOffDisableDesc>
+
+    <KUA_ToggleHaulUrgently>Haul urgently</KUA_ToggleHaulUrgently>
+    <KUA_ToggleHaulUrgentlyDesc>Haul urgently</KUA_ToggleHaulUrgentlyDesc>
+
+    <KUA_ToggleHaulUrgentlyDisable>Cancel haul urgently</KUA_ToggleHaulUrgentlyDisable>
+    <KUA_ToggleHaulUrgentlyDisableDesc>Cancel haul urgently</KUA_ToggleHaulUrgentlyDisableDesc>
+
+    <KUA_ToggleNoHaulUrgently>Do not haul</KUA_ToggleNoHaulUrgently>
+    <KUA_ToggleNoHaulUrgentlyDesc>Do not haul</KUA_ToggleNoHaulUrgentlyDesc>
+
+    <KUA_ToggleNoHaulUrgentlyDisable>Allow hauling</KUA_ToggleNoHaulUrgentlyDisable>
+    <KUA_ToggleNoHaulUrgentlyDisableDesc>Allow hauling</KUA_ToggleNoHaulUrgentlyDisableDesc>
+
+    <KAU_ToggleHaulUrgently>Disable Haul Urgently</KAU_ToggleHaulUrgently>
+    <KAU_ToggleFinishOff>Disable Finish Off</KAU_ToggleFinishOff>
+    <KAU_ToggleStripMine>Disable Strip Mine</KAU_ToggleStripMine>
+    <KAU_ToggleAllowFinishOffOnFriendly>Allow finish off on friendly pawns</KAU_ToggleAllowFinishOffOnFriendly>
+
+    <KAU_ToggleHarvest>Disable Harvest Designator and Gizmos</KAU_ToggleHarvest>
+    <KAU_ToggleCut>Disable Cut Designator and Gizmos</KAU_ToggleCut>
+    <KAU_ToggleSelection>Disable Selection Gizmos</KAU_ToggleSelection>
+    <KAU_DisableSelectOnScreen>Disable "Select on screen"</KAU_DisableSelectOnScreen>
+    <KAU_DisableSelectOnMap>Disable "Select on map"</KAU_DisableSelectOnMap>
+    <KAU_DisableSelectInRect>Disable "Select in rect"</KAU_DisableSelectInRect>
+
+    <KAU_ToggleFertileZone>Disable Fertile Grow Zone Designator</KAU_ToggleFertileZone>
+
+    <KAU_ToggleNoHauling>Disable No Hauling Designator and Gizmos</KAU_ToggleNoHauling>
+    <KAU_ToggleDisableAllowShortcuts>Disable Allow/Forbid hotkeys</KAU_ToggleDisableAllowShortcuts>
+    <KAU_ExcludeCorpsesFromAllowAll>Exclude corpses from Allow All (Shift+Allow to include)</KAU_ExcludeCorpsesFromAllowAll>
+    <KAU_DisableSelectStored>Disable Select Stored gizmo</KAU_DisableSelectStored>
+
+    <KUA_SelectSimilar>Select similar</KUA_SelectSimilar>
+    <KUA_SelectSimilarDesc>Selects items similar to those already selected</KUA_SelectSimilarDesc>
+
+    <KAU_ToggleDisableAllShortcuts>Disable all shortcuts</KAU_ToggleDisableAllShortcuts>
+
+    <KAU_DefErrorLog>Log def error sources</KAU_DefErrorLog>
+    <KAU_DefErrorLogToolTip>Logs the source of any def errors in a new log-line after the error</KAU_DefErrorLogToolTip>
+
+    <KAU_DisableMeleeRequirementForFinishOff>Disable Melee requirement for finish off</KAU_DisableMeleeRequirementForFinishOff>
+
+    <KUA_ToggleHaulUrgentlyOnScreen>Haul all on screen urgently</KUA_ToggleHaulUrgentlyOnScreen>
+    <KUA_ToggleHaulUrgentlyOnMap>Haul all on map urgently</KUA_ToggleHaulUrgentlyOnMap>
+
+    <KAU_GrowingZone>Growing zone (Fertile only)</KAU_GrowingZone>
+    <KAU_DesignatorGrowingZoneDesc>Create a zone where your colonists will try to grow a certain kind of plant that only targets fertile tiles.</KAU_DesignatorGrowingZoneDesc>
+
+    <KAU_DesignatorZoneExpand>Expand zone (Fertile only)</KAU_DesignatorZoneExpand>
+
+    <KAU_StripMine>Strip Mine</KAU_StripMine>
+    <KAU_StripMineDesc>Mine a grid rather than everything</KAU_StripMineDesc>
+
+    <KUA_NoHaul>Do not haul</KUA_NoHaul>
+    <KUA_NoHaulDesc>Prevents this item from being hauled to e.g. stockpiles. This does not prevent the items being hauled to work - e.g. resources to a toolbench, or being used by a recipe at the toolbench</KUA_NoHaulDesc>
+
+    <KAU_DesignatorFloors>Floor picker</KAU_DesignatorFloors>
+    <KAU_DesignatorFloorsDesc>Allows you to pick a floor type to build</KAU_DesignatorFloorsDesc>
+    <KAU_GrabbedTerrain>Grabbed terrain</KAU_GrabbedTerrain>
+    <KAU_GrabTerrain>Grab</KAU_GrabTerrain>
+
+    <KAU_OOB>Out of bounds</KAU_OOB>
+    <KAU_NotBuildable>Can't be built</KAU_NotBuildable>
+    <KAU_ResearchNotFinished>Research not finished</KAU_ResearchNotFinished>
+
+
+    <KAU_NotAPlant>Not a plant</KAU_NotAPlant>
+    <KAU_NotHarvestable>Not harvestable</KAU_NotHarvestable>
+    <KAU_NoHarvestableThing>Not harvestable thing</KAU_NoHarvestableThing>
+    <KAU_AlreadyDesignated>Already designated</KAU_AlreadyDesignated>
+    <KAU_NotFullyGrown>Not fully grown</KAU_NotFullyGrown>
+
+    <KUA_CutBlighted>Cut blighted</KUA_CutBlighted>
+    <KUA_CutBlightedDesc>Cut only blighted plants</KUA_CutBlightedDesc>
+
+    <KUA_SelectStored>Select stored</KUA_SelectStored>
+    <KUA_SelectStoredDesc>Select all items in this storage. Hold Shift to add to current selection.</KUA_SelectStoredDesc>
+
+    <KUA_ClaimAllDoors>Claim all doors</KUA_ClaimAllDoors>
+    <KUA_ClaimAllDoorsDesc>Claim all doors that can currently be claimed by the player on the map</KUA_ClaimAllDoorsDesc>
+    <KUA_ClaimedDoors>Claimed {0} doors</KUA_ClaimedDoors>
+    <KUA_DesignatedCount>{0} things designated</KUA_DesignatedCount>
+
+    <KAU_PlantGrownLevel>Consider plants grown at this level {0}%</KAU_PlantGrownLevel>
+
+    <KUA_HarvestAll>Harvest all</KUA_HarvestAll>
+    <KUA_HarvestAllDesc>Marks harvestable plants to be harvested regardless of growth level.</KUA_HarvestAllDesc>
+
+    <KUA_HarvestAllWood>Chop all wood</KUA_HarvestAllWood>
+    <KUA_HarvestAllWoodDesc>Marks trees to be chopped down for wood regardless of growth level.</KUA_HarvestAllWoodDesc>
+
+    <KUA_HarvestAllOnScreen>Harvest all on screen (any growth)</KUA_HarvestAllOnScreen>
+    <KUA_HarvestAllOnMap>Harvest all on map (any growth)</KUA_HarvestAllOnMap>
+
+    <KUA_HarvestAllWoodOnScreen>Chop all wood on screen (any growth)</KUA_HarvestAllWoodOnScreen>
+    <KUA_HarvestAllWoodOnMap>Chop all wood on map (any growth)</KUA_HarvestAllWoodOnMap>
+
+    <KAU_ToggleHarvestAll>Disable Harvest All Designator and Gizmos</KAU_ToggleHarvestAll>
+
+    <KAU_NotAPawn>Not a pawn</KAU_NotAPawn>
+    <KAU_NotFriendlyOrDowned>Not friendly or downed</KAU_NotFriendlyOrDowned>
+</LanguageData>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationInsert">
+                <order>Append</order>
+                <xpath>/Defs/DesignationCategoryDef[defName="Floors"]/specialDesignatorClasses/li[5]</xpath>
+                <value>
+                    <li>KeyzAllowUtilities.Designator_Floors</li>
+                </value>
+            </li>
+            <!-- Grabbed from original Allow Tool - puts the tool in the place people expect -->
+            <li Class="PatchOperationInsert">
+                <order>Append</order>
+                <xpath>/Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses/li[13]</xpath>
+                <value>
+                    <!--<li>KeyzAllowUtilities.Designator_SelectSimilar</li> HSK - Pointless because you cant select something beforehand -->
+                    <li>KeyzAllowUtilities.Designator_FinishOff</li>
+                    <!--<li>KeyzAllowUtilities.Designator_StripMine</li> HSK moved to HSK patch -->
+                    <li>KeyzAllowUtilities.Designator_CutGrown</li>
+                    <li>KeyzAllowUtilities.Designator_CutBlighted</li>
+                    <li>KeyzAllowUtilities.Designator_HarvestGrown</li>
+                    <li>KeyzAllowUtilities.Designator_HarvestAll</li>
+                </value>
+            </li>
+			
+			<!-- HSK Changes, moved next to other mine designators -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses/li[text()="Designator_Mine"]</xpath>
+				<order>Append</order> <!--Reverse order in values!-->
+				<value>
+					<li MayRequire="keyz182.KeyzAllowUtilities">KeyzAllowUtilities.Designator_StripMine</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses/li[text()="Designator_PlantsHarvestWood"]</xpath>
+				<order>Append</order> <!--Reverse order in values!-->
+				<value>
+                    <li>KeyzAllowUtilities.Designator_HarvestGrownWood</li>
+                    <!--<li>KeyzAllowUtilities.Designator_HarvestAllWood</li> HSK - Unecessary, basically vanilla option -->
+				</value>
+			</li>
+
+			<!-- HSK moved here so its closer to the hardoded haul things -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses/li[text()="Designator_Haul"]</xpath>
+				<order>Append</order> <!--Reverse order in values!-->
+				<value>
+					<li>KeyzAllowUtilities.Designator_HaulUrgently</li>
+				</value>
+			</li>
+			
+            <!-- Grabbed from original Allow Tool - puts the tool in the place people expect -->
+            <li Class="PatchOperationInsert">
+                <order>Append</order>
+                <xpath>/Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses/li[5]</xpath>
+                <value>
+                    <li>KeyzAllowUtilities.Designator_ZoneAdd_GrowingFertile</li>
+                </value>
+            </li>
+            <!-- ~1~ Remove stock forbid designator @1@ -->
+            <!-- <li Class="PatchOperationRemove"> -->
+            <!--     <success>Always</success> -->
+            <!--     <xpath>/Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses/li[text()="Designator_Forbid"]</xpath> -->
+            <!-- </li> -->
+            <!-- ~1~ Remove stock unforbid designator @1@ -->
+            <!-- <li Class="PatchOperationRemove"> -->
+            <!--     <success>Always</success> -->
+            <!--     <xpath>/Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses/li[text()="Designator_Unforbid"]</xpath> -->
+            <!-- </li> -->
+        </operations>
+    </Operation>
+    <!-- Gate vanilla Designator_Open: skip when Ancient urban ruins (packageId: XMB.AncientUrbanrUins.MO) is loaded — AUR ships its own Open designator and colliding causes a duplicate entry. -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ancient urban ruins</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses</xpath>
+            <value>
+                <li>RimWorld.Designator_Open</li>
+            </value>
+        </nomatch>
+    </Operation>
+</Patch>
