@@ -3,7 +3,7 @@
 
 	<!-- =========== REALISTIC PRODUCTION SK MOD =========== -->
 
-	<ThingDef Name="OrganicMeals" ParentName="SK_ResourceBase" Abstract="True">
+	<ThingDef Name="OrganicMeals" ParentName="ResourceBase" Abstract="True">
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -18,7 +18,7 @@
 		<tickerType>Rare</tickerType>
 	</ThingDef>
 
-	<ThingDef Name="EdibleBase" ParentName="SK_ResourceBase" Abstract="True">
+	<ThingDef Name="EdibleBase" ParentName="ResourceBase" Abstract="True">
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>1.0</Flammability>

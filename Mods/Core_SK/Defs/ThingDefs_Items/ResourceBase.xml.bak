@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-  <ThingDef Name="SK_ResourceBase" Abstract="True">
+<!-- DefOverwrite
+  <ThingDef Name="ResourceBase" Abstract="True">
     <thingClass>ThingWithComps</thingClass>
     <label>unspecified resource</label>
     <category>Item</category>
@@ -24,8 +24,8 @@
     <healthAffectsPrice>false</healthAffectsPrice>
     <allowedArchonexusCount>-1</allowedArchonexusCount>
   </ThingDef>
-
-  <ThingDef Name="SK_ResourceVerbBase" ParentName="SK_ResourceBase" Abstract="True">
+--><!--
+  <ThingDef Name="SK_ResourceVerbBase" ParentName="ResourceBase" Abstract="True">
     <equipmentType>Primary</equipmentType>
     <techLevel>Neolithic</techLevel>
     <comps>
@@ -34,5 +34,5 @@
       </li>
     </comps>
   </ThingDef>
-
+-->
 </Defs>

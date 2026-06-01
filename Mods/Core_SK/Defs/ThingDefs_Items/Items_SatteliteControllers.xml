@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef ParentName="SK_ResourceBase">
+    <ThingDef ParentName="ResourceBase">
         <defName>IonCannonControllerCore</defName>
         <label>ion satellite controller core</label>
         <description>A mechanoid device to controller the ion cannon satellite. This is a jewel of technology for farming planets and a feared weapon on contested ones.</description>
@@ -27,7 +27,7 @@
         <tradeability>None</tradeability>
     </ThingDef>
 
-    <ThingDef ParentName="SK_ResourceBase">
+    <ThingDef ParentName="ResourceBase">
         <defName>WeatherControllerCore</defName>
         <label>Weather controller core</label>
         <description>An advanced device designed to controller the local weather. This is a jewel of technology for farming planets and a feared weapon on contested ones.</description>

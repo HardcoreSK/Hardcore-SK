@@ -3,7 +3,7 @@
 
 	<!--=============== Fabric, leather, etc  ====================-->
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Cloth</defName>
 		<label>cloth</label>
 		<description>Cloth is woven from the raw organic fibers of a Cotton Bush. These fibers are called Raw Cotton.</description>
@@ -77,7 +77,7 @@
 		<allowedArchonexusCount>100</allowedArchonexusCount>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>WoolMegasloth</defName>
 		<label>Megasloth wool</label>
 		<description>While somewhat coarse, Megasloth wool's long fibers make it very strong. It is very warm.</description>
@@ -126,7 +126,7 @@
 		<burnableByRecipe>True</burnableByRecipe>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>WoolMuffalo</defName>
 		<label>Muffalo wool</label>
 		<description>Muffalo Wool is soft, light and provides very good insulation. Wool clothes can keep the body warm even in extreme conditions.</description>
@@ -175,7 +175,7 @@
 		<burnableByRecipe>True</burnableByRecipe>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>WoolDromedary</defName>
 		<label>Dromedary hair</label>
 		<description>Dromedary Hair clothing is usually worn by desert travelers to protect them from the heat. It provides excellent insulation due to its thermostatic properties.</description>
@@ -224,7 +224,7 @@
 		<burnableByRecipe>True</burnableByRecipe>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>WoolAlpaca</defName>
 		<label>Alpaca wool</label>
 		<description>This is the remarkably soft wool of an Alpaca. It is useful for clothing.</description>
@@ -273,7 +273,7 @@
 		<burnableByRecipe>True</burnableByRecipe>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>WoolBison</defName>
 		<label>Bison wool</label>
 		<description>Thick and coarse wool of a bison. Quite warm.</description>
@@ -322,7 +322,7 @@
 		<burnableByRecipe>True</burnableByRecipe>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>WoolSheep</defName>
 		<label>sheep wool</label>
 		<description>Sheep's wool. It provides good insulation.</description>
@@ -374,7 +374,7 @@
 		<burnableByRecipe>True</burnableByRecipe>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>HempCloth</defName>
 		<label>Hemp</label>
 		<description>Hemp is a type of cloth woven from Weed. It is the same weed that people like to light up and smoke. Watch out for fire sources!</description>
@@ -430,7 +430,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Velour</defName>
 		<label>Velour</label>
 		<graphicData>
@@ -479,7 +479,7 @@
 		<burnableByRecipe>True</burnableByRecipe>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Flaxcloth</defName>
 		<label>Linen cloth</label>
 		<description>A fabric designed for making clothes. It is soft, light, and strong.</description>
@@ -533,7 +533,7 @@
 		</comps>
 	</ThingDef>  
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>DevilstrandCloth</defName>
 		<label>Devilstrand cloth</label>
 		<description>Fabric spun from microfibers extracted from silk-producing Devilstrand Mushrooms. Very tough, but insulates no better than Cloth.</description>
@@ -587,7 +587,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Synthread</defName>
 		<label>Synthread</label>
 		<description>Spacer-tech synthetic fabric designed for making ordinary clothes. It is soft, light, strong, and insulates well.</description>
@@ -634,7 +634,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Hyperweave</defName>
 		<label>Hyperweave</label>
 		<description>High-tech nano-fibers woven into sheets. It is somewhat heavy, but is incredibly difficult to break. The secrets of its production are known only to the most advanced GlitterWorld cultures.</description>
@@ -681,7 +681,7 @@
 		<stackLimit>150</stackLimit>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Kevlar</defName>
 		<label>Kevlar</label>
 		<description>Kevlar is a woven combination of plastic and synthetic fibers that is often used for combat-related protective armor.</description>
@@ -742,7 +742,7 @@
 		<stackLimit>150</stackLimit>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>ChitinPlating</defName>
 		<label>Chitin plating</label>
 		<description>A modified version of the insect exoskeleton. Has increased durability and ease of use as a textile.</description>
@@ -790,7 +790,7 @@
 		<stackLimit>75</stackLimit>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Compaste</defName>
 		<label>Compound paste</label>
 		<description>A bottle of compound paste, used for various crafting processes. The label reads: "DO NOT DRINK! Avoid sticking your fingers on surfaces after use!".</description>

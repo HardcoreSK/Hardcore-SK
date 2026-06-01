@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Salt</defName>
 		<label>salt</label>
 		<description>Salt is used into preservation of foods.</description>
@@ -35,7 +35,7 @@
 		</ingestible>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Glowstone</defName>
 		<thingClass>SK.Item_PL</thingClass>
 		<label>Glowstone</label>
@@ -72,7 +72,7 @@
 		</deepLumpSizeRange>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Coldstone</defName>
 		<label>Coldstone</label>
 		<thingClass>SK.Item_PL</thingClass>
@@ -117,7 +117,7 @@
 		</deepLumpSizeRange>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Peat</defName>
 		<label>Peat</label>
 		<description>Peat, also known as turf, is an accumulation of partially decayed vegetation or organic matter that is unique to natural areas, such as peatlands, mires and swamps.</description>
@@ -155,7 +155,7 @@
 		<stackLimit>600</stackLimit>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>SoftClay</defName>
 		<label>Soft Clay</label>
 		<description>A lump of raw clay that was gathered from water sources on the ground. It can be baked into Clay Bricks at a Smelting Furnace.</description>
@@ -179,7 +179,7 @@
 		<stackLimit>600</stackLimit>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Nitre</defName>
 		<label>Nitre</label>
 		<description>Major uses of potassium nitrate (Nitre) are in fertilizers, tree stump removal, rocket propellants and fireworks. It is one of the major components of Gunpowder.</description>
@@ -228,7 +228,7 @@
 		</deepLumpSizeRange>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Coal</defName>
 		<label>Coal Ore</label>
 		<description>A black lump of Coal Ore. It is a useful reaction agent in metal alloy smelting.</description>
@@ -267,7 +267,7 @@
 		</deepLumpSizeRange>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Charcoal</defName>
 		<label>Charcoal</label>
 		<description>A blackened lump of Charcoal. It is a useful Coal Ore substitute made by burning Wood Logs or Bamboo Logs.</description>
@@ -297,7 +297,7 @@
 		<stackLimit>600</stackLimit>
 	</ThingDef>	
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Silicon</defName>
 		<label>silicon</label>
 		<description>Silicon is the one of the most common elements in the universe by mass, but very rarely occurs as the pure free element in nature. It can be produced by smelting Sand.</description>

@@ -128,7 +128,7 @@
 		</graphicData>
 		<stuffCategories Inherit="false" />
 	</ThingDef> -->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="UnfinishedTechArmor">
 		<defName>UnfinishedMetallicTechArmor</defName>
 		<description>An unfinished piece of armor.</description>
@@ -136,7 +136,7 @@
 			<li>Metallic</li>
 		</stuffCategories>
 	</ThingDef>
-    
+    -->
     <ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedResearch</defName>
 		<label>unfinished research</label>

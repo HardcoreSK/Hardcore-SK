@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!--=============== Glass ====================-->
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>GlassBatch</defName>
 		<label>Glass Batch</label>
 		<description>Raw Glass Batch that was made from Sand. It would be more useful when it is refined into Glass Frames.</description>
@@ -25,7 +25,7 @@
 			<li>GlassCat</li>
 		</thingCategories>
 	</ThingDef>
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Glass</defName>
 		<label>Glass Frame</label>
 		<description>A transparent material that is quite popular despite being fragile. Glass is produced from Glass Batch, which is made from Sand.</description>
@@ -75,7 +75,7 @@
 		</stuffProps>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 	</ThingDef>
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>ReinforcedGlass</defName>
 		<label>Reinforced Glass Frame</label>
 		<description>A stronger version of Glass Frames that is harder to work with, but has more potential uses.</description>

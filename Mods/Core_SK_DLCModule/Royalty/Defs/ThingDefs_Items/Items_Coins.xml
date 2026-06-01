@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <!--  Coins  -->
-    <ThingDef ParentName="SK_ResourceBase" Name="CoinBase" Abstract="True">
+    <ThingDef ParentName="ResourceBase" Name="CoinBase" Abstract="True">
         <description>Love the Empire or hate it, there's no denying the power of their coins. Their value is backed by the silver and gold they're made of, and a ton of Imperial goods that even a polite barbarian can buy (assuming he's not reduced to a pile of ash by the cataphracts on the outskirts of a trading post).</description>
 		<techLevel>Medieval</techLevel>
         <soundInteract>Silver_Drop</soundInteract>

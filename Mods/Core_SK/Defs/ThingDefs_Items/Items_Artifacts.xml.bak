@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+<!--
 	<ThingDef ParentName="SK_ResourceBase" Name="SK_ArtifactBase" Abstract="True">
 		<thingClass>ThingWithComps</thingClass>
 		<techLevel>Archotech</techLevel>
@@ -28,7 +28,7 @@
 			<li Class="CompProperties_Styleable"/>
 		</comps>
 	</ThingDef>
-
+-->
 	<!--   <ThingDef ParentName="SK_ArtifactBase">
     <defName>PsychicInsanityLance</defName>
     <label>psychic insanity lance</label>
@@ -108,7 +108,7 @@
       </li>
     </comps>
   </ThingDef> -->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="SK_ArtifactBase">
 		<defName>PsychicAnimalPulser</defName>
 		<label>psychic animal pulser</label>
@@ -190,5 +190,5 @@
 			</li>
 		</comps>
 	</ThingDef>
-
+-->
 </Defs>

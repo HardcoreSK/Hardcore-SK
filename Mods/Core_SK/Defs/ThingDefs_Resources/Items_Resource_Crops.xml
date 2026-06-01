@@ -27,7 +27,7 @@
 		<pathCost>15</pathCost>
 	</ThingDef>
 
-	<ThingDef Abstract="True" Name="SK_OrganicProductBase" ParentName="SK_ResourceBase">
+	<ThingDef Abstract="True" Name="SK_OrganicProductBase" ParentName="ResourceBase">
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -67,7 +67,7 @@
 		<allowedArchonexusCount>200</allowedArchonexusCount>
 	</ThingDef>
 
-	<ThingDef Abstract="True" ParentName="SK_ResourceBase" Name="CookingProductBase">
+	<ThingDef Abstract="True" ParentName="ResourceBase" Name="CookingProductBase">
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -88,7 +88,7 @@
 		<tickerType>Rare</tickerType>
 	</ThingDef>
 
-	<ThingDef Abstract="True" ParentName="SK_ResourceBase" Name="RawDrugsBase">
+	<ThingDef Abstract="True" ParentName="ResourceBase" Name="RawDrugsBase">
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
