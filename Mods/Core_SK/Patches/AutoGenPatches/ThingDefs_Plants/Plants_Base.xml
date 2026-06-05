@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[@Name="PlantBaseNonEdible"]</xpath>
+    <value>
+		<plant Merge="true">
+			<fertilityMin>0.5</fertilityMin>
+			<sowWork>150</sowWork>
+			<pollution>Any</pollution>
+		</plant>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bullet</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Beanbag</damageDef>
+				<multiplier>0.2</multiplier>
+			</li>
+			<li>
+				<damageDef>Arrow</damageDef>
+				<multiplier>0.1</multiplier>
+			</li>
+			<li>
+				<damageDef>Optic</damageDef>
+				<multiplier>4.0</multiplier>
+			</li>
+			<li>
+				<damageDef>Microwave</damageDef>
+				<multiplier>4.0</multiplier>
+			</li>
+		</damageMultipliers>
+    </value>
+  </Operation>
+
+</Patch>

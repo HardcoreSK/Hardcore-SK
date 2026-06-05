@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
+<!-- To be removed -->
 	<ThingDef Name="SK_PlantBaseNonEdible" Abstract="True">
 		<category>Plant</category>
 		<thingClass>Plant</thingClass>
@@ -56,7 +56,7 @@
 			</li>
 		</damageMultipliers>
 	</ThingDef>
-
+<!-- To be removed -->
 	<ThingDef ParentName="SK_PlantBaseNonEdible" Name="SK_PlantBase" Abstract="True">
 		<ingestible>
 			<foodType>Plant</foodType>
@@ -64,7 +64,7 @@
 		</ingestible>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_PlantBase" Name="SK_DeciduousPlantBase" Abstract="True">
+	<ThingDef ParentName="PlantBase" Name="SK_DeciduousPlantBase" Abstract="True">
 		<graphicData>
 			<shaderParameters>
 				<_FallColorSource>(0.3803, 0.4352, 0.1451)</_FallColorSource>
@@ -77,8 +77,8 @@
 
 	<ThingDef ParentName="SK_PlantBase" Name="WildPlantBase" Abstract="True">
 		<plant>
-			<harvestAfterGrowth>0.10</harvestAfterGrowth>
-			<harvestMinGrowth>0.51</harvestMinGrowth>
+			<harvestAfterGrowth>0.10</harvestAfterGrowth> <!-- the minimum growth percentage at which the plant can be harvested at all. -->
+			<harvestMinGrowth>0.51</harvestMinGrowth> <!-- the point after which harvesting starts giving a yield instead of nothing (the yield then scales with growth). -->
 		</plant>
 	</ThingDef>
 

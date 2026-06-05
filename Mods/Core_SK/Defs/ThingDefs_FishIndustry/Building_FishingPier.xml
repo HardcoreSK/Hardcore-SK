@@ -253,25 +253,17 @@
 			<fixedStorageSettings>
 				<priority>Unstored</priority>
 				<filter>
-					<disallowedCategories>
-						<li>Root</li>
-					</disallowedCategories>
-					<specialFiltersToDisallow>
-						<li>AllowRotten</li>
-						<li>AllowLargeCorpses</li>
-					</specialFiltersToDisallow>
+					<categories>
+						<li>CorpsesFish</li>
+					</categories>
 				</filter>
 			</fixedStorageSettings>
 			<defaultStorageSettings>
 				<priority>Unstored</priority>
 				<filter>
-					<disallowedCategories>
-						<li>Root</li>
-					</disallowedCategories>
-					<specialFiltersToDisallow>
-						<li>AllowRotten</li>
-						<li>AllowLargeCorpses</li>
-					</specialFiltersToDisallow>
+					<categories>
+						<li>CorpsesFish</li>
+					</categories>
 				</filter>
 			</defaultStorageSettings>
 		  <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
