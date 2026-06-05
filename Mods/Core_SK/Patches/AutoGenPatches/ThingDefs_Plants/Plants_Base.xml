@@ -34,4 +34,17 @@
     </value>
   </Operation>
 
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[@Name="BushBase"]</xpath>
+    <value>
+		<statBases Merge="true">
+			<Nutrition>0.3</Nutrition>	
+		</statBases>
+		<plant Merge="true">
+			<harvestAfterGrowth>0.10</harvestAfterGrowth> <!-- the minimum growth percentage at which the plant can be harvested at all. -->
+			<harvestMinGrowth>0.51</harvestMinGrowth> <!-- the point after which harvesting starts giving a yield instead of nothing (the yield then scales with growth). -->
+		</plant>
+    </value>
+  </Operation>
+
 </Patch>

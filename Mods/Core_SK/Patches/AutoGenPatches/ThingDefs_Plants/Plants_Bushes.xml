@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Bush"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousBushBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Bush"]</xpath>
+    <value>
+      <description>Bushes are a type of green, short shrubbery. Unlike other plants this one is incapable of producing fruits or vegetables.</description>
+      <graphicData Merge="true">
+        <texPath>Things/Plant/PlantBush</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <statBases>
+        <Beauty>3</Beauty>
+        <BeautyOutdoors>3</BeautyOutdoors>
+        <Nutrition>0.27</Nutrition>
+      </statBases>
+      <plant Merge="true">
+        <visualSizeRange>0.5~1.3</visualSizeRange>
+        <maxMeshCount>16</maxMeshCount>
+        <leaflessGraphicPath>Things/Plant/PlantBush_Leafless</leaflessGraphicPath>
+		<leaflessSnowOverlayGraphicPath>Things/Plant/PlantBush_LeaflessSnowy</leaflessSnowOverlayGraphicPath>
+        <harvestWork>130</harvestWork>
+        <fertilityMin>0.2</fertilityMin>
+        <harvestTag>Standard</harvestTag>
+        <harvestedThingDef>Kindling</harvestedThingDef>
+        <harvestMinGrowth>0.5</harvestMinGrowth>
+        <harvestFailable>false</harvestFailable>
+        <harvestYield>5</harvestYield>
+        <growDays>5</growDays>
+        <topWindExposure>0.3</topWindExposure>
+        <sowTags>
+          <li>Ground</li>
+        </sowTags>
+        <sowMinSkill>1</sowMinSkill>
+        <sowResearchPrerequisites>
+          <li>Animal_A1</li>
+        </sowResearchPrerequisites>
+      </plant>
+    </value>
+  </Operation>
+<!-- To-DO
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Alocasia"]</xpath>
+    <value>
+      <description>A common broadleaf tropical plant.</description>
+      <statBases>
+        <Beauty>3</Beauty>
+        <BeautyOutdoors>3</BeautyOutdoors>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Plant/PlantAlocasia</texPath>
+        <drawSize>1.4</drawSize>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.55, 0.17, 0.15)</volume>
+          <offset>(0,0,-0.2)</offset>
+        </shadowData>
+      </graphicData>
+      <plant>
+        <leaflessGraphicPath>Things/Plant/PlantAlocasia_Leafless</leaflessGraphicPath>
+        <wildClusterRadius>4</wildClusterRadius>
+        <wildClusterWeight>7.5</wildClusterWeight>
+        <growDays>12</growDays>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Clivia"]</xpath>
+    <value>
+      <statBases>
+        <Beauty>5</Beauty>
+        <BeautyOutdoors>5</BeautyOutdoors>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Plant/PlantClivia</texPath>
+        <drawSize>1.1</drawSize>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.3, 0.2, 0.15)</volume>
+          <offset>(0,0,-0.1)</offset>
+        </shadowData>
+      </graphicData>
+      <plant>
+        <maxMeshCount>4</maxMeshCount>
+        <leaflessGraphicPath>Things/Plant/PlantClivia_Leafless</leaflessGraphicPath>
+        <wildClusterRadius>3</wildClusterRadius>
+        <wildClusterWeight>4</wildClusterWeight>
+        <growDays>8</growDays>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Rafflesia"]</xpath>
+    <value>
+      <description>A rare, giant flower. You would think a giant flower would be beautiful, but this one is quite smelly and ugly.</description>
+      <statBases>
+        <Beauty>-6</Beauty>
+        <BeautyOutdoors>0</BeautyOutdoors>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Plant/PlantRafflesia</texPath>
+        <drawSize>1.4</drawSize>
+        <shadowData>
+          <volume>(0.55, 0.2, 0.2)</volume>
+          <offset>(0,0,-0.1)</offset>
+        </shadowData>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <plant>
+        <topWindExposure>0.07</topWindExposure>
+        <growDays>13</growDays>
+        <wildClusterRadius>-1</wildClusterRadius>
+      </plant>
+    </value>
+  </Operation>
+-->
+</Patch>

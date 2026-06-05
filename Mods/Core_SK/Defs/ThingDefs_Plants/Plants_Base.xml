@@ -75,7 +75,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_PlantBase" Name="WildPlantBase" Abstract="True">
+	<ThingDef ParentName="PlantBase" Name="WildPlantBase" Abstract="True">
 		<plant>
 			<harvestAfterGrowth>0.10</harvestAfterGrowth> <!-- the minimum growth percentage at which the plant can be harvested at all. -->
 			<harvestMinGrowth>0.51</harvestMinGrowth> <!-- the point after which harvesting starts giving a yield instead of nothing (the yield then scales with growth). -->
@@ -93,7 +93,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_PlantBase" Name="PlantDef" Abstract="True">
+	<ThingDef ParentName="PlantBase" Name="PlantDef" Abstract="True">
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Beauty>1</Beauty>
@@ -170,7 +170,7 @@
 		</plant>
 	</ThingDef>
 
-
+<!-- to be removed -->
 	<ThingDef ParentName="CactusBase" Name="SK_BushBase" Abstract="True">
 		<graphicData>
 			<shadowData>
@@ -190,7 +190,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BushBase" Name="SK_DeciduousBushBase" Abstract="True">
+	<ThingDef ParentName="BushBase" Name="SK_DeciduousBushBase" Abstract="True">
 		<graphicData>
 			<shaderParameters>
 				<_FallColorSource>(0.3803, 0.4352, 0.1451)</_FallColorSource>
@@ -200,10 +200,10 @@
 			</shaderParameters>
 		</graphicData>
 	</ThingDef>
-
+<!-- Stopped here -->
 	<!--============================ Wild - Trees ============================-->
 
-	<ThingDef ParentName="SK_PlantBase" Name="SK_TreeBase" Abstract="True">
+	<ThingDef ParentName="PlantBase" Name="SK_TreeBase" Abstract="True">
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
 			<Flammability>0.8</Flammability>

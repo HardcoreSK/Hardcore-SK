@@ -726,6 +726,12 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Plant_Bush"]/plant/leaflessSnowOverlayGraphicPath</xpath>
+        <value>
+            <leaflessSnowOverlayGraphicPath>Things/Plant/Bush_LeaflessSnowy</leaflessSnowOverlayGraphicPath>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Plant_Bush"]/graphicData/drawSize</xpath>
         <value>
             <drawSize>0.7</drawSize>
