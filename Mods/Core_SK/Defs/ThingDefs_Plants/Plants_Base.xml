@@ -92,7 +92,7 @@
 			</shaderParameters>
 		</graphicData>
 	</ThingDef>
-
+<!-- Possible to be renamed to CropPlant -->
 	<ThingDef ParentName="PlantBase" Name="PlantDef" Abstract="True">
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
@@ -107,7 +107,7 @@
 			<harvestTag>Standard</harvestTag>
 		</plant>
 	</ThingDef>
-
+<!-- Possible to be renamed to CropPlant -->
 	<ThingDef ParentName="PlantDef" Name="SK_DeciduousPlantDef" Abstract="True">
 		<graphicData>
 			<shaderParameters>
@@ -118,7 +118,7 @@
 			</shaderParameters>
 		</graphicData>
 	</ThingDef>
-
+<!-- Possible to be removed -->
 	<ThingDef ParentName="WildPlantBase" Name="PlantFlowerBase" Abstract="True">
 		<altitudeLayer>LowPlant</altitudeLayer>
 		<thingClass>SK.PlantFlower</thingClass>		
@@ -144,7 +144,7 @@
 			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>
-
+<!-- Possible to be removed -->
 	<ThingDef ParentName="PlantFlowerBase" Name="SK_DeciduousPlantFlowerBase" Abstract="True">
 		<graphicData>
 			<shaderParameters>
