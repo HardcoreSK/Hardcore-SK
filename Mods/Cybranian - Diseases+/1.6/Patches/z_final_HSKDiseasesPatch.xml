@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!--Removing duplicates-->
+    <Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/HediffDef[
+                    defName="DimonSever000_CommonCold" or
+                    defName="DimonSever000_Pneumonia" or
+                    defName="DimonSever000_Fever" or
+                    defName="DimonSever000_Coma" or
+                    defName="DimonSever000_Angina"
+                ]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/IncidentDef[
+                    defName="DimonSever000_CommonCold" or
+                    defName="DimonSever000_Pneumonia"
+                ]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThoughtDef[
+                    defName="DimonSever000_Fever" or
+                    defName="DimonSever000_Coma"
+                ]</xpath>
+			</li>
+		</operations>
+	</Operation>
+    
+    <!--Replacing deleted mod diseases-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName="DimonSever000_Tuberculosis"]/descriptionHyperlinks</xpath>
+        <value>
+            <HediffDef>Fever</HediffDef>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/HediffDef[
+            defName="DimonSever000_Tuberculosis" or 
+            defName="Plague" or 
+            defName="Malaria" or
+            defName="SleepingSickness"
+        ]/comps/li["Diseases.Hediffs.HediffCompProperties_Storage"]/comps/li/hediffDefs/li[text()="DimonSever000_Fever"]</xpath>
+        <value>
+            <li>Fever</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/HediffDef[defName="DimonSever000_Diabetes"]/descriptionHyperlinks/HediffDef[text()="DimonSever000_Coma"]</xpath>
+        <value>
+            <HediffDef>Coma</HediffDef>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/HediffDef[defName="DimonSever000_Diabetes"]/comps/li["Diseases.Hediffs.HediffCompProperties_Storage"]/comps/li/hediffDefs/li[text()="DimonSever000_Coma"]</xpath>
+        <value>
+            <li>Coma</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/HediffDef[
+            defName="Flu" or 
+            defName="Hypothermia"
+        ]/comps/li["Diseases.Hediffs.HediffCompProperties_Storage"]/comps/li/hediffDefs/li[text()="DimonSever000_Pneumonia"]</xpath>
+        <value>
+            <li>Pneumonia</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/HediffDef[defName="Hypothermia"]/comps/li["Diseases.Hediffs.HediffCompProperties_Storage"]/comps/li/hediffDefs/li[text()="DimonSever000_CommonCold"]</xpath>
+        <value>
+            <li>CommonCold</li>
+        </value>
+    </Operation>
+    
+    <!--Adding synergy to mod diseases-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName="DimonSever000_Otitis"]/comps/li["Diseases.Hediffs.HediffCompProperties_Storage"]/comps/li/hediffDefs</xpath>
+        <value>
+            <li>Earache</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName="DimonSever000_Otitis"]/descriptionHyperlinks</xpath>
+        <value>
+            <HediffDef>Earache</HediffDef>
+        </value>
+    </Operation>
+    
+    
+    <!--Adding synergy to HSK diseases-->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/HediffDef[defName="CommonCold"]</xpath>
+        <value>
+            <maxSeverity>1.0</maxSeverity>
+            <comps Merge="True">
+                <li Class="Diseases.Hediffs.HediffCompProperties_Storage">
+                    <comps>
+                        <li>
+                            <compClass>Diseases.Hediffs.HediffComp_DiseaseAfterTicks</compClass>
+                            <intervalTicks>72000~240000</intervalTicks>
+                            <hediffDefs>
+                                <li>DimonSever000_PulmonaryEdema</li>
+                            </hediffDefs>
+                            <partsToAffect>
+                                <li>Lung</li>
+                            </partsToAffect>
+                            <countToAffect>2</countToAffect>
+                            <letter>false</letter>
+                            <chance>0.03</chance>
+                            <severityRange>0.2~1.0</severityRange>
+                        </li>
+                        <li>
+                            <compClass>Diseases.Hediffs.HediffComp_DiseaseAfterTicks</compClass>
+                            <intervalTicks>40000~70000</intervalTicks>
+                            <hediffDefs>
+                                <li>Fever</li>
+                            </hediffDefs>
+                            <countToAffect>1</countToAffect>
+                            <letter>false</letter>
+                            <chance>0.03</chance>
+                            <severityRange>0.85~1.0</severityRange>
+                        </li>
+                        <li>
+                            <compClass>Diseases.Hediffs.HediffComp_DiseaseAfterTicks</compClass>
+                            <intervalTicks>15000~30000</intervalTicks>
+                            <hediffDefs>
+                                <li>StrepThroat</li>
+                            </hediffDefs>
+                            <partsToAffect>
+                                <li>Neck</li>
+                            </partsToAffect>
+                            <countToAffect>1</countToAffect>
+                            <letter>true</letter>
+                            <chance>0.2</chance>
+                            <severityRange>0.75~1.0</severityRange>
+                        </li>
+                    </comps>
+                </li>
+            </comps>
+        </value>
+	</Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/HediffDef[defName="Pneumonia"]</xpath>
+        <value>
+            <maxSeverity>1.0</maxSeverity>
+            <comps Merge="True">
+                <li Class="Diseases.Hediffs.HediffCompProperties_Storage">
+                    <comps>
+                        <li>
+                            <compClass>Diseases.Hediffs.HediffComp_DiseaseAfterTicks</compClass>
+                            <intervalTicks>72000~150000</intervalTicks>
+                            <hediffDefs>
+                                <li>DimonSever000_PulmonaryEdema</li>
+                            </hediffDefs>
+                            <partsToAffect>
+                                <li>Lung</li>
+                            </partsToAffect>
+                            <countToAffect>2</countToAffect>
+                            <letter>false</letter>
+                            <chance>0.2</chance>
+                            <severityRange>0.2~1.0</severityRange>
+                        </li>
+                        <li>
+                            <compClass>Diseases.Hediffs.HediffComp_DiseaseAfterTicks</compClass>
+                            <intervalTicks>72000~150000</intervalTicks>
+                            <hediffDefs>
+                                <li>Fever</li>
+                            </hediffDefs>
+                            <countToAffect>1</countToAffect>
+                            <letter>false</letter>
+                            <chance>0.3</chance>
+                            <severityRange>0.4~1.0</severityRange>
+                        </li>
+                        <li>
+                            <compClass>Diseases.Hediffs.HediffComp_DiseaseAfterTicks</compClass>
+                            <intervalTicks>72000~150000</intervalTicks>
+                            <hediffDefs>
+                                <li>DimonSever000_Pneumothorax</li>
+                            </hediffDefs>
+                            <partsToAffect>
+                                <li>Lung</li>
+                            </partsToAffect>
+                            <countToAffect>2</countToAffect>
+                            <letter>true</letter>
+                            <chance>0.1</chance>
+                            <severityRange>0.5~1.0</severityRange>
+                        </li>
+                    </comps>
+                </li>
+            </comps>
+        </value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/HediffDef[defName="Coronavirus"]</xpath>
+        <value>
+            <maxSeverity>1.0</maxSeverity>
+            <comps Merge="True">
+                <li Class="Diseases.Hediffs.HediffCompProperties_Storage">
+                    <comps>
+                        <li>
+                            <compClass>Diseases.Hediffs.HediffComp_DiseaseAfterTicks</compClass>
+                            <intervalTicks>72000~240000</intervalTicks>
+                            <hediffDefs>
+                                <li>DimonSever000_PulmonaryEdema</li>
+                            </hediffDefs>
+                            <partsToAffect>
+                                <li>Lung</li>
+                            </partsToAffect>
+                            <countToAffect>2</countToAffect>
+                            <letter>false</letter>
+                            <chance>0.2</chance>
+                            <severityRange>0.2~1.0</severityRange>
+                        </li>
+                        <li>
+                            <compClass>Diseases.Hediffs.HediffComp_DiseaseAfterTicks</compClass>
+                            <intervalTicks>40000~70000</intervalTicks>
+                            <hediffDefs>
+                                <li>Fever</li>
+                            </hediffDefs>
+                            <countToAffect>1</countToAffect>
+                            <letter>false</letter>
+                            <chance>0.2</chance>
+                            <severityRange>0.55~1.0</severityRange>
+                        </li>
+                        <li>
+                            <compClass>Diseases.Hediffs.HediffComp_DiseaseAfterTicks</compClass>
+                            <intervalTicks>72000~150000</intervalTicks>
+                            <hediffDefs>
+                                <li>DimonSever000_Pneumothorax</li>
+                            </hediffDefs>
+                            <partsToAffect>
+                                <li>Lung</li>
+                            </partsToAffect>
+                            <countToAffect>2</countToAffect>
+                            <letter>true</letter>
+                            <chance>0.2</chance>
+                            <severityRange>0.5~1.0</severityRange>
+                        </li>
+                    </comps>
+                </li>
+            </comps>
+        </value>
+	</Operation>
+</Patch>
