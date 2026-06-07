@@ -4,7 +4,7 @@
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>ReverseEngineer_ArchotechBow</defName>
 		<label>Reverse Engineer Archotech Bow</label>
-		<description>You dont know how to make it. Its time to change that.</description>
+		<description>You dont know how to make it. It's time to change that and fix all problems with these crude fakes.</description>
 		<jobString>Researching Archotech Bow.</jobString>
 		<workAmount>50000</workAmount>
 		<skillRequirements>
@@ -16,7 +16,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Bow_Archotech</li>
+						<li>Bow_Archotech_Prototype</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -27,7 +27,7 @@
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Bow_Archotech</li>
+				<li>Bow_Archotech_Prototype</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<recipeUsers>
@@ -39,7 +39,7 @@
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>ReverseEngineer_ArchotechBlaster</defName>
 		<label>Reverse Engineer Archotech Blaster</label>
-		<description>You dont know how to make it. Its time to change that.</description>
+		<description>You dont know how to make it. It's time to change that and fix all problems with these crude fakes.</description>
 		<jobString>Researching Archotech Blaster.</jobString>
 		<workAmount>50000</workAmount>
 		<skillRequirements>
@@ -51,7 +51,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Gun_ArchotechBlaster</li>
+						<li>Gun_ArchotechBlaster_Prototype</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -62,7 +62,7 @@
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Gun_ArchotechBlaster</li>
+				<li>Gun_ArchotechBlaster_Prototype</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<recipeUsers>
@@ -74,7 +74,7 @@
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>ReverseEngineer_ArchotechSMG</defName>
 		<label>Reverse Engineer Archotech SMG</label>
-		<description>You dont know how to make it. Its time to change that.</description>
+		<description>You dont know how to make it. It's time to change that and fix all problems with these crude fakes.</description>
 		<jobString>Researching Archotech SMG.</jobString>
 		<workAmount>50000</workAmount>
 		<skillRequirements>
@@ -86,7 +86,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Gun_ArchotechSMG</li>
+						<li>Gun_ArchotechSMG_Prototype</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -97,7 +97,7 @@
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Gun_ArchotechSMG</li>
+				<li>Gun_ArchotechSMG_Prototype</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<recipeUsers>
@@ -109,7 +109,7 @@
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>ReverseEngineer_ArchotechSword</defName>
 		<label>Reverse Engineer Archotech Sword</label>
-		<description>You dont know how to make it. Its time to change that.</description>
+		<description>You dont know how to make it. It's time to change that and fix all problems with these crude fakes.</description>
 		<jobString>Researching Archotech Sword.</jobString>
 		<workAmount>50000</workAmount>
 		<skillRequirements>
@@ -121,8 +121,8 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>MeleeWeapon_Archotech1H</li>
-						<li>MeleeWeapon_Archotech2H</li>
+						<li>MeleeWeapon_Archotech1H_Prototype</li>
+						<li>MeleeWeapon_Archotech2H_Prototype</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -133,8 +133,8 @@
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>MeleeWeapon_Archotech1H</li>
-				<li>MeleeWeapon_Archotech2H</li>
+				<li>MeleeWeapon_Archotech1H_Prototype</li>
+				<li>MeleeWeapon_Archotech2H_Prototype</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<recipeUsers>

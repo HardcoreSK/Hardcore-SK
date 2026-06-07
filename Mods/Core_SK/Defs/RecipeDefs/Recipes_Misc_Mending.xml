@@ -96,6 +96,9 @@
 				<li>WeaponsMelee</li>
 				<li>SurvivalTools</li>
 			</categories>
+			<disallowedCategories>
+				<li>ArchotechMelee</li>
+			</disallowedCategories>
 		</fixedIngredientFilter>
 		<skillRequirements>
 			<Crafting>4</Crafting>
@@ -104,7 +107,7 @@
 
 	<RecipeDef ParentName="MendingBase">
 		<defName>MendComplexWeapon</defName>
-		<label>repair complex weapon</label>
+		<label>repair ranged weapon</label>
 		<description>Repair weapon.</description>
 		<jobString>Repairing.</jobString>
 		<workAmount>250</workAmount>
@@ -124,6 +127,9 @@
 			<categories>
 				<li>WeaponsRanged</li>
 			</categories>
+			<disallowedCategories>
+				<li>ArchotechRanged</li>
+			</disallowedCategories>
 		</fixedIngredientFilter>
 		<skillRequirements>
 			<Crafting>14</Crafting>

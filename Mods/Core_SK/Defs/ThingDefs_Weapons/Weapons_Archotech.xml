@@ -2,7 +2,7 @@
 <Defs>
 
     <!-- Bow -->
-    <ThingDef ParentName="RangedWeaponArchotechBase">
+    <ThingDef ParentName="RangedWeaponArchotechBase" Name="ArchotechBow">
         <defName>Bow_Archotech</defName>
         <label>Archotech Frame A-1 «Bow»</label>
         <description>Bow of archotech origin. No one know why or how, but it is here. Endless explosive «arrows-like» projectiles, small autoaim, endless possibilities. Allows the wearer to shoot at night as if it were day.</description>
@@ -12,7 +12,7 @@
         </graphicData>
         <soundInteract>Bow_Recurve</soundInteract>
         <statBases>
-            <MarketValue>30000</MarketValue>
+            <MarketValue>100000</MarketValue>
             <WorkToMake>30000</WorkToMake>
             <SightsEfficiency>1.5</SightsEfficiency>
             <ShotSpread>0.2</ShotSpread>
@@ -43,6 +43,7 @@
         <deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
         <relicChance>0</relicChance>
         <tradeability>None</tradeability>
+        <smeltable>false</smeltable>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
                 <recoilPattern>Regular</recoilPattern>
@@ -68,16 +69,40 @@
             <li>ArchotechRanged</li>
         </thingCategories>
         <rotateInShelves>false</rotateInShelves>
-        <thingSetMakerTags>
-            <li>RewardStandardLowFreq</li>
-        </thingSetMakerTags>
         <equippedStatOffsets>
             <Suppressability>-0.5</Suppressability>
         </equippedStatOffsets>
     </ThingDef>
-
+    
+    <ThingDef ParentName="ArchotechBow">
+        <defName>Bow_Archotech_Prototype</defName>
+        <label>Archotech Replica А-1 «Bow»</label>
+        <description>Replica of archotech bow. No one know why or how, but it is here. Endless explosive «arrows-like» projectiles, small autoaim, endless possibilities. Allows the wearer to shoot at night as if it were day. VERY FRAGILE.</description>
+        <thingSetMakerTags>
+            <li>RewardStandardLowFreq</li>
+        </thingSetMakerTags>
+        <useHitPoints>true</useHitPoints>
+        <recipeMaker IsNull="True" Inherit="False" />
+        <stuffCategories IsNull="True" />
+        <costStuffCount IsNull="True" />
+        <costList IsNull="True" />
+        <statBases Inherit="False">
+            <MaxHitPoints>10</MaxHitPoints>
+            <MarketValue>20000</MarketValue>
+            <SightsEfficiency>1.5</SightsEfficiency>
+            <ShotSpread>0.2</ShotSpread>
+            <SwayFactor>1</SwayFactor>
+            <Bulk>5</Bulk>
+            <Mass>1.0</Mass>
+            <RangedWeapon_Cooldown>0.70</RangedWeapon_Cooldown>
+            <Flammability>1</Flammability>
+            <DeteriorationRate>1</DeteriorationRate>
+            <NightVisionEfficiency_Weapon>1</NightVisionEfficiency_Weapon>
+        </statBases>
+    </ThingDef>
+    
     <!-- Blaster -->
-    <ThingDef ParentName="RangedWeaponArchotechBase">
+    <ThingDef ParentName="RangedWeaponArchotechBase" Name="ArchotechBlaster">
         <defName>Gun_ArchotechBlaster</defName>
         <label>Archotech Frame A-2 «Blaster»</label>
         <description>Blaster of archotech origin. No one know why or how, but it is here. Endless «blaster-like» powerful bolts, small autoaim, endless possibilities. Allows the wearer to shoot at night as if it were day.</description>
@@ -86,7 +111,7 @@
             <graphicClass>SK.Graphic_SingleNoColor</graphicClass>
         </graphicData>
         <statBases>
-            <MarketValue>30000</MarketValue>
+            <MarketValue>500000</MarketValue>
             <WorkToMake>30000</WorkToMake>
             <SightsEfficiency>1.5</SightsEfficiency>
             <ShotSpread>0.1</ShotSpread>
@@ -110,6 +135,7 @@
         <deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
         <relicChance>0</relicChance>
         <tradeability>None</tradeability>
+        <smeltable>false</smeltable>
         <thingCategories>
             <li>ArchotechRanged</li>
         </thingCategories>
@@ -148,9 +174,6 @@
         <recipeMaker>
             <researchPrerequisite>Blaster_weapons_Archotech</researchPrerequisite>
         </recipeMaker>
-        <thingSetMakerTags>
-            <li>RewardStandardLowFreq</li>
-        </thingSetMakerTags>
         <equippedStatOffsets>
             <Suppressability>-0.5</Suppressability>
         </equippedStatOffsets>
@@ -187,9 +210,36 @@
             </li>
         </tools>
     </ThingDef>
+    
+    <ThingDef ParentName="ArchotechBlaster">
+        <defName>Gun_ArchotechBlaster_Prototype</defName>
+        <label>Archotech Replica А-2 «Blaster»</label>
+        <description>Replica of archotech blaster. No one know why or how, but it is here. Endless «blaster-like» powerful bolts, small autoaim, endless possibilities. Allows the wearer to shoot at night as if it were day. VERY FRAGILE.</description>
+        <thingSetMakerTags>
+            <li>RewardStandardLowFreq</li>
+        </thingSetMakerTags>
+        <useHitPoints>true</useHitPoints>
+        <recipeMaker IsNull="True" Inherit="False"/>
+        <stuffCategories IsNull="True" />
+        <costStuffCount IsNull="True" />
+        <costList IsNull="True" />
+        <statBases Inherit="False">
+            <MaxHitPoints>10</MaxHitPoints>
+            <MarketValue>50000</MarketValue>
+            <SightsEfficiency>1.5</SightsEfficiency>
+            <ShotSpread>0.1</ShotSpread>
+            <SwayFactor>1</SwayFactor>
+            <Bulk>10.3</Bulk>
+            <Mass>2.5</Mass>
+            <RangedWeapon_Cooldown>0.70</RangedWeapon_Cooldown>
+            <Flammability>1</Flammability>
+            <DeteriorationRate>1</DeteriorationRate>
+            <NightVisionEfficiency_Weapon>1</NightVisionEfficiency_Weapon>
+        </statBases>
+    </ThingDef>
 
     <!-- SMG -->
-    <ThingDef ParentName="RangedWeaponArchotechBase">
+    <ThingDef ParentName="RangedWeaponArchotechBase" Name="ArchotechSMG">
         <defName>Gun_ArchotechSMG</defName>
         <label>Archotech Frame A-3 «SMG»</label>
         <description>SMG of archotech origin. No one know why or how, but it is here. Endless «bullet-like» powerful projectiles, small autoaim, endless possibilities. Allows the wearer to shoot at night as if it were day.</description>
@@ -198,7 +248,7 @@
             <graphicClass>SK.Graphic_SingleNoColor</graphicClass>
         </graphicData>
         <statBases>
-            <MarketValue>30000</MarketValue>
+            <MarketValue>350000</MarketValue>
             <WorkToMake>30000</WorkToMake>
             <SightsEfficiency>1.2</SightsEfficiency>
             <ShotSpread>0.1</ShotSpread>
@@ -222,6 +272,7 @@
         <deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
         <relicChance>0</relicChance>
         <tradeability>None</tradeability>
+        <smeltable>false</smeltable>
         <thingCategories>
             <li>ArchotechRanged</li>
         </thingCategories>
@@ -260,9 +311,6 @@
         <recipeMaker>
             <researchPrerequisite>SMG_Archotech</researchPrerequisite>
         </recipeMaker>
-        <thingSetMakerTags>
-            <li>RewardStandardLowFreq</li>
-        </thingSetMakerTags>
         <equippedStatOffsets>
             <Suppressability>-0.5</Suppressability>
         </equippedStatOffsets>
@@ -300,7 +348,34 @@
         </tools>
     </ThingDef>
     
-    <ThingDef ParentName="WeaponArchotechBase">
+    <ThingDef ParentName="ArchotechSMG">
+        <defName>Gun_ArchotechSMG_Prototype</defName>
+        <label>Archotech Replica А-3 «SMG»</label>
+        <description>Replica of archotech smg. No one know why or how, but it is here. Endless «bullet-like» powerful projectiles, small autoaim, endless possibilities. Allows the wearer to shoot at night as if it were day. VERY FRAGILE.</description>
+        <thingSetMakerTags>
+            <li>RewardStandardLowFreq</li>
+        </thingSetMakerTags>
+        <useHitPoints>true</useHitPoints>
+        <recipeMaker IsNull="True" Inherit="False"/>
+        <stuffCategories IsNull="True" />
+        <costStuffCount IsNull="True" />
+        <costList IsNull="True" />
+        <statBases Inherit="False">
+            <MaxHitPoints>10</MaxHitPoints>
+            <SightsEfficiency>1.2</SightsEfficiency>
+            <ShotSpread>0.1</ShotSpread>
+            <SwayFactor>0.6</SwayFactor>
+            <Bulk>7</Bulk>
+            <Mass>1.2</Mass>
+            <RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+            <Flammability>1</Flammability>
+            <DeteriorationRate>1</DeteriorationRate>
+            <NightVisionEfficiency_Weapon>1</NightVisionEfficiency_Weapon>
+        </statBases>
+    </ThingDef>
+    
+    <!-- Swords -->
+    <ThingDef ParentName="WeaponArchotechBase" Name="ArchotechSword2H">
         <defName>MeleeWeapon_Archotech2H</defName>
         <label>Archotech Frame B-1 «Broadsword»</label>
         <description>Highly advanced melee weapon of archotech origin. No one know why or how, but it is here. Can «shoot» powerful projectiles and cut almost anything.</description>
@@ -313,7 +388,7 @@
             <li>HitechMelee2H</li>
         </weaponTags>
         <statBases>
-            <MarketValue>30000</MarketValue>
+            <MarketValue>300000</MarketValue>
             <WorkToMake>30000</WorkToMake>
             <Bulk>10</Bulk>
             <Mass>3.5</Mass>
@@ -328,6 +403,7 @@
         <deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
         <relicChance>0</relicChance>
         <tradeability>None</tradeability>
+        <smeltable>false</smeltable>
         <stuffCategories>
             <li>RareMetallic</li>
         </stuffCategories>
@@ -410,9 +486,34 @@
         <thingCategories>
             <li>ArchotechMelee</li>
         </thingCategories>
+    </ThingDef>  
+
+    <ThingDef ParentName="ArchotechSword2H">
+        <defName>MeleeWeapon_Archotech2H_Prototype</defName>
+        <label>Archotech Replica B-1 «Broadsword»</label>
+        <description>Replica of archotech broadsword. No one know why or how, but it is here. Can «shoot» powerful projectiles and cut almost anything. VERY FRAGILE.</description>
+        <thingSetMakerTags>
+            <li>RewardStandardLowFreq</li>
+        </thingSetMakerTags>
+        <useHitPoints>true</useHitPoints>
+        <recipeMaker IsNull="True" Inherit="False"/>
+        <stuffCategories IsNull="True" />
+        <costStuffCount IsNull="True" />
+        <costList IsNull="True" />
+        <statBases Inherit="False">
+            <MaxHitPoints>10</MaxHitPoints>
+            <MarketValue>30000</MarketValue>
+            <Bulk>10</Bulk>
+            <Mass>3.5</Mass>
+            <Flammability>1</Flammability>
+            <DeteriorationRate>1</DeteriorationRate>
+            <MeleeCounterParryBonus>0.5</MeleeCounterParryBonus>
+            <RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+            <NightVisionEfficiency_Weapon>1</NightVisionEfficiency_Weapon>
+        </statBases>
     </ThingDef>
     
-    <ThingDef ParentName="WeaponArchotechBase">
+    <ThingDef ParentName="WeaponArchotechBase" Name="ArchotechSword1H">
         <defName>MeleeWeapon_Archotech1H</defName>
         <label>Archotech Frame B-2 «Shortsword»</label>
         <description>Highly advanced melee weapon of archotech origin. No one know why or how, but it is here. Grant «future visions» for a few seconds in combat, allowing the user to predict enemy movements. Cut almost anything.</description>
@@ -426,7 +527,7 @@
 			<li>CE_OneHandedWeapon</li>
         </weaponTags>
         <statBases>
-            <MarketValue>30000</MarketValue>
+            <MarketValue>300000</MarketValue>
             <WorkToMake>30000</WorkToMake>
             <Bulk>6</Bulk>
             <Mass>1.5</Mass>
@@ -441,6 +542,7 @@
         <deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
         <relicChance>0</relicChance>
         <tradeability>None</tradeability>
+        <smeltable>false</smeltable>
         <stuffCategories>
             <li>RareMetallic</li>
         </stuffCategories>
@@ -510,4 +612,30 @@
             <li>ArchotechMelee</li>
         </thingCategories>
     </ThingDef>
+
+    <ThingDef ParentName="ArchotechSword1H">
+        <defName>MeleeWeapon_Archotech1H_Prototype</defName>
+        <label>Archotech Replica B-2 «Shortsword»</label>
+        <description>Replica of archotech shortsword. No one know why or how, but it is here. Grant «future visions» for a few seconds in combat, allowing the user to predict enemy movements. Cut almost anything. VERY FRAGILE.</description>
+        <thingSetMakerTags>
+            <li>RewardStandardLowFreq</li>
+        </thingSetMakerTags>
+        <useHitPoints>true</useHitPoints>
+        <recipeMaker IsNull="True" Inherit="False"/>
+        <stuffCategories IsNull="True" />
+        <costStuffCount IsNull="True" />
+        <costList IsNull="True" />
+        <statBases Inherit="False">
+            <MaxHitPoints>10</MaxHitPoints>
+            <MarketValue>30000</MarketValue>
+            <Bulk>6</Bulk>
+            <Mass>1.5</Mass>
+            <Flammability>1</Flammability>
+            <DeteriorationRate>1</DeteriorationRate>
+            <MeleeCounterParryBonus>2</MeleeCounterParryBonus>
+            <RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+            <NightVisionEfficiency_Weapon>1</NightVisionEfficiency_Weapon>
+        </statBases>
+    </ThingDef>
+
 </Defs>
