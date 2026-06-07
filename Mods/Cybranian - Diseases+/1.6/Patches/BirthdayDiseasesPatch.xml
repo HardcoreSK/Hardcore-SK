@@ -2,7 +2,7 @@
 <Patch>
 	<!---->
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/HediffGiverSetDef[defName="Human"]/hediffGivers</xpath>
+		<xpath>Defs/HediffGiverSetDef[defName="Human"]/hediffGivers</xpath>
 		<value>
 			<!--========== Spine ==========-->
 			<li Class="HediffGiver_Birthday">

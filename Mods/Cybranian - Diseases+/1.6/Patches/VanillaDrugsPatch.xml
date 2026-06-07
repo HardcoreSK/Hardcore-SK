@@ -2,7 +2,7 @@
 <Patch>
 	<!---->
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName="Beer"]/descriptionHyperlinks</xpath>
+		<xpath>Defs/ThingDef[defName="Beer"]/descriptionHyperlinks</xpath>
 		<value>
 			<HediffDef>DimonSever000_DeliriumTremens</HediffDef>
 			<HediffDef>DimonSever000_Depression</HediffDef>
@@ -12,7 +12,7 @@
 	</Operation>
 	<!---->
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/ChemicalDef[defName="Alcohol"]/onGeneratedAddictedEvents</xpath>
+		<xpath>Defs/ChemicalDef[defName="Alcohol"]/onGeneratedAddictedEvents</xpath>
 		<value>
 			<li>
 				<hediff>DimonSever000_Depression</hediff>
@@ -39,9 +39,9 @@
 	</Operation>
 	<!---->
 	<Operation Class="PatchOperationConditional">
-		<xpath>*/HediffDef[defName="AlcoholTolerance"]/comps</xpath>
+		<xpath>Defs/HediffDef[defName="AlcoholTolerance"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>*/HediffDef[defName="AlcoholTolerance"]</xpath>
+			<xpath>Defs/HediffDef[defName="AlcoholTolerance"]</xpath>
 			<!-- comps нет -->
 			<value>
 				<hediffClass>HediffWithComps</hediffClass>
@@ -81,7 +81,7 @@
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-			<xpath>*/HediffDef[defName="AlcoholTolerance"]/comps</xpath>
+			<xpath>Defs/HediffDef[defName="AlcoholTolerance"]/comps</xpath>
 			<!-- comps есть -->
 			<value>
 				<li Class="Diseases.Hediffs.HediffCompProperties_Storage">
@@ -120,7 +120,7 @@
 	</Operation>
 	<!---->
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName="Ambrosia"]/descriptionHyperlinks</xpath>
+		<xpath>Defs/ThingDef[defName="Ambrosia"]/descriptionHyperlinks</xpath>
 		<value>
 			<HediffDef>DimonSever000_Hallucinosis</HediffDef>
 			<HediffDef>DimonSever000_Ravings</HediffDef>
@@ -128,7 +128,7 @@
 	</Operation>
 	<!---->
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/ChemicalDef[defName="Ambrosia"]</xpath>
+		<xpath>Defs/ChemicalDef[defName="Ambrosia"]</xpath>
 		<value>
 			<onGeneratedAddictedEvents>
 				<li>
@@ -150,9 +150,9 @@
 	</Operation>
 	<!---->
 	<Operation Class="PatchOperationConditional">
-		<xpath>*/HediffDef[defName="AmbrosiaTolerance"]/comps</xpath>
+		<xpath>Defs/HediffDef[defName="AmbrosiaTolerance"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>*/HediffDef[defName="AmbrosiaTolerance"]</xpath>
+			<xpath>Defs/HediffDef[defName="AmbrosiaTolerance"]</xpath>
 			<!-- comps нет -->
 			<value>
 				<hediffClass>HediffWithComps</hediffClass>
@@ -180,7 +180,7 @@
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-			<xpath>*/HediffDef[defName="AmbrosiaTolerance"]/comps</xpath>
+			<xpath>Defs/HediffDef[defName="AmbrosiaTolerance"]/comps</xpath>
 			<!-- comps есть -->
 			<value>
 				<li Class="Diseases.Hediffs.HediffCompProperties_Storage">
@@ -207,7 +207,7 @@
 	</Operation>
 	<!---->
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName="GoJuice"]/descriptionHyperlinks</xpath>
+		<xpath>Defs/ThingDef[defName="GoJuice"]/descriptionHyperlinks</xpath>
 		<value>
 			<HediffDef>DimonSever000_Depression</HediffDef>
 			<HediffDef>DimonSever000_Hallucinosis</HediffDef>
@@ -216,9 +216,9 @@
 	</Operation>
 	<!---->
 	<Operation Class="PatchOperationConditional">
-		<xpath>*/HediffDef[defName="GoJuiceTolerance"]/comps</xpath>
+		<xpath>Defs/HediffDef[defName="GoJuiceTolerance"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>*/HediffDef[defName="GoJuiceTolerance"]</xpath>
+			<xpath>Defs/HediffDef[defName="GoJuiceTolerance"]</xpath>
 			<!-- comps нет -->
 			<value>
 				<hediffClass>HediffWithComps</hediffClass>
@@ -260,7 +260,7 @@
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-			<xpath>*/HediffDef[defName="GoJuiceTolerance"]/comps</xpath>
+			<xpath>Defs/HediffDef[defName="GoJuiceTolerance"]/comps</xpath>
 			<!-- comps есть -->
 			<value>
 				<li Class="Diseases.Hediffs.HediffCompProperties_Storage">
@@ -301,7 +301,7 @@
 	</Operation>
 	<!---->
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName="Luciferium"]/descriptionHyperlinks</xpath>
+		<xpath>Defs/ThingDef[defName="Luciferium"]/descriptionHyperlinks</xpath>
 		<value>
 			<HediffDef>DimonSever000_ManicSyndrome</HediffDef>
 			<HediffDef>DimonSever000_BipolarDisorder</HediffDef>
@@ -309,9 +309,9 @@
 	</Operation>
 	<!---->
 	<Operation Class="PatchOperationConditional">
-		<xpath>*/HediffDef[defName="LuciferiumAddiction"]/comps</xpath>
+		<xpath>Defs/HediffDef[defName="LuciferiumAddiction"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>*/HediffDef[defName="LuciferiumAddiction"]</xpath>
+			<xpath>Defs/HediffDef[defName="LuciferiumAddiction"]</xpath>
 			<!-- comps нет -->
 			<value>
 				<comps>
@@ -337,7 +337,7 @@
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-			<xpath>*/HediffDef[defName="LuciferiumAddiction"]/comps</xpath>
+			<xpath>Defs/HediffDef[defName="LuciferiumAddiction"]/comps</xpath>
 			<!-- comps есть -->
 			<value>
 				<li Class="Diseases.Hediffs.HediffCompProperties_Storage">
@@ -363,7 +363,7 @@
 	</Operation>
 	<!---->
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName="Flake"]/descriptionHyperlinks</xpath>
+		<xpath>Defs/ThingDef[defName="Flake"]/descriptionHyperlinks</xpath>
 		<value>
 			<HediffDef>DimonSever000_Arrhythmia</HediffDef>
 			<HediffDef>DimonSever000_HeartDefect</HediffDef>
@@ -372,7 +372,7 @@
 	</Operation>
 	<!---->
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName="PsychiteTea"]/descriptionHyperlinks</xpath>
+		<xpath>Defs/ThingDef[defName="PsychiteTea"]/descriptionHyperlinks</xpath>
 		<value>
 			<HediffDef>DimonSever000_Arrhythmia</HediffDef>
 			<HediffDef>DimonSever000_HeartDefect</HediffDef>
@@ -381,7 +381,7 @@
 	</Operation>
 	<!---->
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName="Yayo"]/descriptionHyperlinks</xpath>
+		<xpath>Defs/ThingDef[defName="Yayo"]/descriptionHyperlinks</xpath>
 		<value>
 			<HediffDef>DimonSever000_Arrhythmia</HediffDef>
 			<HediffDef>DimonSever000_HeartDefect</HediffDef>
@@ -390,9 +390,9 @@
 	</Operation>
 	<!---->
 	<Operation Class="PatchOperationConditional">
-		<xpath>*/HediffDef[defName="PsychiteTolerance"]/comps</xpath>
+		<xpath>Defs/HediffDef[defName="PsychiteTolerance"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>*/HediffDef[defName="PsychiteTolerance"]</xpath>
+			<xpath>Defs/HediffDef[defName="PsychiteTolerance"]</xpath>
 			<!-- comps нет -->
 			<value>
 				<hediffClass>HediffWithComps</hediffClass>
@@ -434,7 +434,7 @@
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-			<xpath>*/HediffDef[defName="PsychiteTolerance"]/comps</xpath>
+			<xpath>Defs/HediffDef[defName="PsychiteTolerance"]/comps</xpath>
 			<!-- comps есть -->
 			<value>
 				<li Class="Diseases.Hediffs.HediffCompProperties_Storage">
@@ -475,7 +475,7 @@
 	</Operation>
 	<!---->
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName="SmokeleafJoint"]/descriptionHyperlinks</xpath>
+		<xpath>Defs/ThingDef[defName="SmokeleafJoint"]/descriptionHyperlinks</xpath>
 		<value>
 			<HediffDef>DimonSever000_PulmonaryEdema</HediffDef>
 			<HediffDef>DimonSever000_Depression</HediffDef>
@@ -483,9 +483,9 @@
 	</Operation>
 	<!---->
 	<Operation Class="PatchOperationConditional">
-		<xpath>*/HediffDef[defName="SmokeleafTolerance"]/comps</xpath>
+		<xpath>Defs/HediffDef[defName="SmokeleafTolerance"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>*/HediffDef[defName="SmokeleafTolerance"]</xpath>
+			<xpath>Defs/HediffDef[defName="SmokeleafTolerance"]</xpath>
 			<!-- comps нет -->
 			<value>
 				<hediffClass>HediffWithComps</hediffClass>
@@ -526,7 +526,7 @@
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-			<xpath>*/HediffDef[defName="SmokeleafTolerance"]/comps</xpath>
+			<xpath>Defs/HediffDef[defName="SmokeleafTolerance"]/comps</xpath>
 			<!-- comps есть -->
 			<value>
 				<li Class="Diseases.Hediffs.HediffCompProperties_Storage">
@@ -566,7 +566,7 @@
 	</Operation>
 	<!---->
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName="WakeUp"]/descriptionHyperlinks</xpath>
+		<xpath>Defs/ThingDef[defName="WakeUp"]/descriptionHyperlinks</xpath>
 		<value>
 			<HediffDef>DimonSever000_HeartDefect</HediffDef>
 			<HediffDef>DimonSever000_ParanoidSyndrome</HediffDef>
@@ -574,9 +574,9 @@
 	</Operation>
 	<!---->
 	<Operation Class="PatchOperationConditional">
-		<xpath>*/HediffDef[defName="WakeUpTolerance"]/comps</xpath>
+		<xpath>Defs/HediffDef[defName="WakeUpTolerance"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>*/HediffDef[defName="WakeUpTolerance"]</xpath>
+			<xpath>Defs/HediffDef[defName="WakeUpTolerance"]</xpath>
 			<!-- comps нет -->
 			<value>
 				<hediffClass>HediffWithComps</hediffClass>
@@ -617,7 +617,7 @@
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-			<xpath>*/HediffDef[defName="WakeUpTolerance"]/comps</xpath>
+			<xpath>Defs/HediffDef[defName="WakeUpTolerance"]/comps</xpath>
 			<!-- comps есть -->
 			<value>
 				<li Class="Diseases.Hediffs.HediffCompProperties_Storage">
