@@ -20,7 +20,7 @@
                         </graphicData>
                     </value>
                 </li>
-            
+
                 <!-- Бионический мочевой пузырь  -->
                 <li Class="SK.PatchOperationReplaceExtended">
                     <xpath>Defs/ThingDef[defName="BionicBladder"]</xpath>
@@ -62,13 +62,11 @@
                 <li Class="SK.PatchOperationReplaceExtended">
                     <xpath>Defs/ThingDef[defName="RK_BionicTail"]/graphicData</xpath>
                     <value>
-                        <graphicData>
-                            <texPath>Things/Item/BodyPart/Mods/RK_BionicTail</texPath>
-                            <color>(1,1,1)</color>
-                        </graphicData>
+                        <texPath>Things/Item/BodyPart/Mods/RK_BionicTail</texPath>
+                        <color>(1,1,1)</color>
                     </value>
                 </li>
-            
+
                 <!-- Тряпичный хвост раткинов -->
                 <li Class="SK.PatchOperationReplaceExtended">
                     <xpath>Defs/ThingDef[defName="RK_FakeTail"]</xpath>
@@ -85,5 +83,5 @@
         </match>
     </Operation>
 
-	
+
 </Patch>
