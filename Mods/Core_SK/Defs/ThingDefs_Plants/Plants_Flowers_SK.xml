@@ -9,7 +9,6 @@
 		<statBases>
 			<Beauty>10</Beauty>
 			<BeautyOutdoors>10</BeautyOutdoors>
-			<Nutrition>0.25</Nutrition>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Flowers/SK/venus</texPath>
@@ -111,7 +110,6 @@
 		<statBases>
 			<Beauty>15</Beauty>
 			<BeautyOutdoors>15</BeautyOutdoors>
-			<Nutrition>0.25</Nutrition>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Flowers/SK/whiterose</texPath>
@@ -218,7 +216,6 @@
 		<statBases>
 			<Beauty>16</Beauty>
 			<BeautyOutdoors>16</BeautyOutdoors>
-			<Nutrition>0.25</Nutrition>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Flowers/SK/rosebay</texPath>
@@ -253,7 +250,6 @@
 		<statBases>
 			<Beauty>15</Beauty>
 			<BeautyOutdoors>15</BeautyOutdoors>
-			<Nutrition>0.25</Nutrition>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Flowers/SK/delphinium</texPath>
@@ -288,7 +284,6 @@
 		<statBases>
 			<Beauty>4</Beauty>
 			<BeautyOutdoors>4</BeautyOutdoors>
-			<Nutrition>0.25</Nutrition>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Flowers/SK/crocus</texPath>
@@ -312,27 +307,19 @@
 		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="PlantBase">
+	<ThingDef ParentName="PlantFlowerBase">
 		<defName>Plant_Anthurium</defName>
 		<label>Anthurium</label>
 		<description>A beautiful cultivated red flower.</description>
 		<statBases>
 			<Beauty>10</Beauty>
 			<BeautyOutdoors>10</BeautyOutdoors>
-			<Nutrition>0.25</Nutrition>	
 		</statBases>
-		<hideAtSnowOrSandDepth>0.3</hideAtSnowOrSandDepth>
-		<pathCost>3</pathCost>
 		<graphicData>
 			<texPath>Things/Flowers/SK/Anthurium</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<plant>
-			<sowTags>
-				<li>Ground</li>
-				<li>Decorative</li>
-			</sowTags>
-			<dieIfLeafless>true</dieIfLeafless>
 			<maxMeshCount>9</maxMeshCount>
 			<sowWork>300</sowWork>
 			<topWindExposure>0.1</topWindExposure>
@@ -345,10 +332,6 @@
 			<sowResearchPrerequisites>
 				<li>Flowers_A1</li>
 			</sowResearchPrerequisites>
-			<wildClusterWeight>6</wildClusterWeight>
-			<wildClusterRadius>7</wildClusterRadius>
-			<wildOrder>1</wildOrder>
-			<purpose>Beauty</purpose>
 		</plant>
 		<modExtensions>
 			<li Class="SK.ExtendedPlantGraphic">

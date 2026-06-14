@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Astragalus"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousPlantFlowerBaseDummy</value>
+  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Plant_Astragalus"]</xpath>
     <value>
@@ -13,20 +19,8 @@
       <graphicData>
         <texPath>Things/Flowers/SK/astragalus</texPath>
         <graphicClass>Graphic_Random</graphicClass>
-		<shaderParameters>
-			<_FallColorSource>(0.3803, 0.4352, 0.1451)</_FallColorSource>
-			<_FallColorDestination>/Other/TreeFallGradient</_FallColorDestination>
-			<_FallTransitionRange>(0.02, 0.10)</_FallTransitionRange>
-			<_FallBehaviorEnabled>1</_FallBehaviorEnabled>
-		</shaderParameters>
       </graphicData>
-	  <hideAtSnowOrSandDepth>0.3</hideAtSnowOrSandDepth>
-	  <pathCost>3</pathCost>
       <plant Merge="true">
-		<sowTags>
-			<li>Ground</li>
-			<li>Decorative</li>
-		</sowTags>
         <sowWork>300</sowWork>
         <sowResearchPrerequisites>
           <li>Flowers_A1</li>
@@ -38,8 +32,6 @@
         <visualSizeRange>0.3~0.75</visualSizeRange>
         <growMinGlow>0.3</growMinGlow>
         <lifespanDaysPerGrowDays>5</lifespanDaysPerGrowDays>
-        <wildClusterWeight>6</wildClusterWeight>
-        <purpose>Beauty</purpose>
       </plant>
       <modExtensions>
         <li Class="SK.ExtendedPlantGraphic">
@@ -49,6 +41,12 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Rose"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousPlantFlowerBaseDummy</value>
+  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Plant_Rose"]</xpath>
     <value>
@@ -56,22 +54,12 @@
       <statBases Merge="true">
         <Beauty>16</Beauty>
         <BeautyOutdoors>16</BeautyOutdoors>
-		<Nutrition>0.25</Nutrition>	
       </statBases>
       <graphicData>
         <texPath>Things/Flowers/SK/redrose</texPath>
         <graphicClass>Graphic_Random</graphicClass>
-		<shaderParameters>
-			<_FallColorSource>(0.3803, 0.4352, 0.1451)</_FallColorSource>
-			<_FallColorDestination>/Other/TreeFallGradient</_FallColorDestination>
-			<_FallTransitionRange>(0.02, 0.10)</_FallTransitionRange>
-			<_FallBehaviorEnabled>1</_FallBehaviorEnabled>
-		</shaderParameters>
       </graphicData>
-	  <hideAtSnowOrSandDepth>0.3</hideAtSnowOrSandDepth>
-	  <pathCost>3</pathCost>
       <plant Merge="true">
-	    <!-- <dieIfLeafless>false</dieIfLeafless> Might need this -->
         <sowResearchPrerequisites>
           <li>Flowers_A2</li>
         </sowResearchPrerequisites>
@@ -91,6 +79,12 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Daylily"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousPlantFlowerBaseDummy</value>
+  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Plant_Daylily"]</xpath>
     <value>
@@ -99,7 +93,6 @@
       <statBases Merge="true">
         <Beauty>12</Beauty>
         <BeautyOutdoors>12</BeautyOutdoors>
-		<Nutrition>0.25</Nutrition>	
       </statBases>
       <graphicData>
         <texPath>Things/Flowers/SK/daylily</texPath>
@@ -107,17 +100,8 @@
         <shadowData>
           <volume>(0.3, 0.3, 0.3)</volume>
         </shadowData>
-		<shaderParameters>
-			<_FallColorSource>(0.3803, 0.4352, 0.1451)</_FallColorSource>
-			<_FallColorDestination>/Other/TreeFallGradient</_FallColorDestination>
-			<_FallTransitionRange>(0.02, 0.10)</_FallTransitionRange>
-			<_FallBehaviorEnabled>1</_FallBehaviorEnabled>
-		</shaderParameters>
       </graphicData>
-	  <hideAtSnowOrSandDepth>0.3</hideAtSnowOrSandDepth>
-	  <pathCost>3</pathCost>
       <plant Merge="true">
-	    <!-- <dieIfLeafless>false</dieIfLeafless> Might need this -->
         <sowResearchPrerequisites>
           <li>Flowers_A2</li>
         </sowResearchPrerequisites>
@@ -138,6 +122,12 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Dandelion"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousPlantFlowerBaseDummy</value>
+  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Plant_Dandelion"]</xpath>
     <value>
@@ -146,34 +136,20 @@
       <statBases Merge="true">
         <Beauty>5</Beauty>
         <BeautyOutdoors>5</BeautyOutdoors>
-		<Nutrition>0.25</Nutrition>
       </statBases>
       <graphicData>
         <texPath>Things/Flowers/SK/dandelion</texPath>
         <graphicClass>Graphic_Random</graphicClass>
-		<shaderParameters>
-			<_FallColorSource>(0.3803, 0.4352, 0.1451)</_FallColorSource>
-			<_FallColorDestination>/Other/TreeFallGradient</_FallColorDestination>
-			<_FallTransitionRange>(0.02, 0.10)</_FallTransitionRange>
-			<_FallBehaviorEnabled>1</_FallBehaviorEnabled>
-		</shaderParameters>
       </graphicData>
-	  <hideAtSnowOrSandDepth>0.3</hideAtSnowOrSandDepth>
-	  <pathCost>3</pathCost>
       <plant Merge="true">
         <growDays>1.8</growDays>
         <growMinGlow>0.3</growMinGlow>
-		<sowTags>
-			<li>Ground</li>
-			<li>Decorative</li>
-		</sowTags>
         <sowWork>150</sowWork>
         <fertilityMin>0.07</fertilityMin>
         <maxMeshCount>4</maxMeshCount>
         <visualSizeRange>0.2~0.8</visualSizeRange>
         <lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
         <fertilitySensitivity>1</fertilitySensitivity>
-        <purpose>Beauty</purpose>
       </plant>
       <modExtensions>
         <li Class="SK.ExtendedPlantGraphic">

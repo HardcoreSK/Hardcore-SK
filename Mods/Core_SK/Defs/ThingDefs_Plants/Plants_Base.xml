@@ -118,10 +118,9 @@
 			</shaderParameters>
 		</graphicData>
 	</ThingDef>
-<!--
+
 	<ThingDef ParentName="WildPlantBase" Name="PlantFlowerBase" Abstract="True">
-		<altitudeLayer>LowPlant</altitudeLayer>
-		<thingClass>SK.PlantFlower</thingClass> Optional and only if there isnt a SK.ExtendedPlantGraphic
+		<!--<thingClass>SK.PlantFlower</thingClass>  Optional and only if there isnt a SK.ExtendedPlantGraphic -->
 		<statBases>
 			<MaxHitPoints>70</MaxHitPoints>
 			<Beauty>10</Beauty>
@@ -144,8 +143,8 @@
 			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>
-	-->
-	<ThingDef ParentName="PlantBase" Name="SK_DeciduousPlantFlowerBase" Abstract="True">
+
+	<ThingDef ParentName="PlantFlowerBase" Name="SK_DeciduousPlantFlowerBase" Abstract="True">
 		<graphicData>
 			<shaderParameters>
 				<_FallColorSource>(0.3803, 0.4352, 0.1451)</_FallColorSource>
