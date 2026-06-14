@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<Operation Class="PatchOperationRemove">
+<!-- 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/DesignationCategoryDef[defName = "SK_category_terraform"]/specialDesignatorClasses/li[.= "SK.Designator_CollectSand"]</xpath>
 	</Operation>
 
@@ -15,7 +15,7 @@
 
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/DesignationCategoryDef[defName = "SK_category_terraform"]/specialDesignatorClasses/li[.= "SK.Designator_CollectCrushedstone"]</xpath>
-	</Operation>
+	</Operation> -->
 
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>

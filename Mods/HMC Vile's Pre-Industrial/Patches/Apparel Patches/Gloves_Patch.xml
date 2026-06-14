@@ -12,7 +12,7 @@
 				<!-- SHELL layer needs to be added to gloves so pawns won't double up with arm armor such as vambraces -->
 				
 				<li Class="PatchOperationReplace">	
-				<xpath>Defs/ThingDef[defName="Apparello_chefglove"]/apparel/layers</xpath> <!-- CHEF GLOVES -->
+				<xpath>Defs/ThingDef[defName="Gloves_Chef"]/apparel/layers</xpath> <!-- CHEF GLOVES -->
 					<value>
 						<layers>
 							<li>OnSkin</li>
@@ -22,7 +22,7 @@
 				</li>
 				
 				<li Class="PatchOperationReplace">	
-				<xpath>Defs/ThingDef[defName="Apparello_Workglove"]/apparel/layers</xpath> <!-- LEATHER GLOVES -->
+				<xpath>Defs/ThingDef[defName="Gloves_Worker"]/apparel/layers</xpath> <!-- LEATHER GLOVES -->
 					<value>
 						<layers>
 							<li>OnSkin</li>
@@ -42,7 +42,7 @@
 				</li>
 				
 				<li Class="PatchOperationReplace">	
-				<xpath>Defs/ThingDef[defName="Apparello_Motorglove"]/apparel/layers</xpath> <!-- LEATHER GRIPS -->
+				<xpath>Defs/ThingDef[defName="Gloves_Tactical"]/apparel/layers</xpath> <!-- LEATHER GRIPS -->
 					<value>
 						<layers>
 							<li>OnSkin</li>
@@ -52,7 +52,7 @@
 				</li>
 				
 				<li Class="PatchOperationReplace">	
-				<xpath>Defs/ThingDef[defName="MedievalTimes_Gloves_Combat"]/apparel/layers</xpath> <!-- COMBAT GLOVES -->
+				<xpath>Defs/ThingDef[defName="Gloves_Combat"]/apparel/layers</xpath> <!-- COMBAT GLOVES -->
 					<value>
 						<layers>
 							<li>OnSkin</li>

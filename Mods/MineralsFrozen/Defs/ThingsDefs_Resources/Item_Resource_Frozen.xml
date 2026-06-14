@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   
-  <ThingDef Name="FrozenBlockBase" ParentName="SK_ResourceBase" Class="MineralsFrozen.ThingDef_FrozenBlockBase" Abstract="True">
+  <ThingDef Name="FrozenBlockBase" ParentName="ResourceBase" Class="MineralsFrozen.ThingDef_FrozenBlockBase" Abstract="True">
     <thingClass>MineralsFrozen.FrozenBlockBase</thingClass>
     <useHitPoints>true</useHitPoints>
     <stackLimit>75</stackLimit>
