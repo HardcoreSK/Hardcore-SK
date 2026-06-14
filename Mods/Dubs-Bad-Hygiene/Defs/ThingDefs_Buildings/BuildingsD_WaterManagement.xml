@@ -217,7 +217,7 @@
       <Flammability>1.0</Flammability>
     </statBases>
     <researchPrerequisites>
-      <li MayRequire="dbhlitemode">CentralHeating</li>
+      <li MayRequire="dbhlitemode">LogBoilers</li> <!-- Since basic generators need water to function properly-->
     </researchPrerequisites>
   </ThingDef>
 
