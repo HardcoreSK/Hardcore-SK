@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!--
@@ -67,13 +67,13 @@
 			<Flammability>0</Flammability>
 			<Beauty>0</Beauty>
 		</statBases>
-        <noRightClickDraftAttack>true</noRightClickDraftAttack>
+		<noRightClickDraftAttack>true</noRightClickDraftAttack>
 		<drawStyleCategory>Default1D</drawStyleCategory>
 		<costList>
-            <Wire>2</Wire>
-            <Rubber>1</Rubber>
-            <ReinforcedConcrete>1</ReinforcedConcrete>
-            <Pipe>1</Pipe>
+			<Wire>2</Wire>
+			<Rubber>1</Rubber>
+			<ReinforcedConcrete>1</ReinforcedConcrete>
+			<Pipe>1</Pipe>
 		</costList>
 		<comps>
 			<li Class="CompProperties_Power">
@@ -114,7 +114,7 @@
 				<rect>(0.2,0.2,0.6,0.6)</rect>
 			</damageData>
 		</graphicData>
-        <drawerType>RealtimeOnly</drawerType>
+		<drawerType>RealtimeOnly</drawerType>
 		<canOverlapZones>false</canOverlapZones>
 		<building>
 			<uninstallWork>150</uninstallWork>
@@ -146,8 +146,8 @@
 				<compClass>CompPowerTransmitter</compClass>
 				<transmitsPower>true</transmitsPower>
 			</li>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="SK.CompProperties_AutoFlicker"/>
+			<li Class="CompProperties_Flickable" />
+			<li Class="SK.CompProperties_AutoFlicker" />
 		</comps>
 		<rotatable>false</rotatable>
 		<blockWind>false</blockWind>
@@ -174,7 +174,7 @@
 				<rect>(0.2,0.2,0.6,0.6)</rect>
 			</damageData>
 		</graphicData>
-        <drawerType>RealtimeOnly</drawerType>
+		<drawerType>RealtimeOnly</drawerType>
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>
 			<allowWireConnection>false</allowWireConnection>
@@ -204,7 +204,7 @@
 				<compClass>CompPowerTransmitter</compClass>
 				<transmitsPower>true</transmitsPower>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 		</comps>
 		<rotatable>false</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>
@@ -280,7 +280,7 @@
 				<explosiveRadius>3.9</explosiveRadius>
 				<explosiveDamageType>Bomb</explosiveDamageType>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 			<li Class="CompProperties_Stunnable">
 				<useLargeEMPEffecter>true</useLargeEMPEffecter>
 				<affectedDamageDefs>
@@ -349,7 +349,7 @@
 				<glowRadius>5</glowRadius>
 				<glowColor>(1,213,238,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 			<li Class="CompProperties_Stunnable">
 				<useLargeEMPEffecter>true</useLargeEMPEffecter>
 				<empChancePerTick>0.03</empChancePerTick>
@@ -426,7 +426,7 @@
 				<basePowerConsumption>-1500</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 			<li>
 				<compClass>CompAutoCutWindTurbine</compClass>
 			</li>
@@ -487,8 +487,8 @@
 			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
 		</building>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
 			<li Class="CompProperties_Power">
 				<compClass>SK.CompPowerPlantFueled</compClass>
 				<basePowerConsumption>-2000</basePowerConsumption>
@@ -537,8 +537,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<modExtensions>
-			<li Class="SK.Events.AccidentalExplosionExtension">
-			</li>
+			<li Class="SK.Events.AccidentalExplosionExtension" />
 		</modExtensions>
 	</ThingDef>
 
@@ -585,7 +584,7 @@
 				<transmitsPower>true</transmitsPower>
 				<soundAmbientProducingPower>GeothermalPlant_Ambience</soundAmbientProducingPower>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 			<li Class="CompProperties_Flickable" />
 			<li Class="SK.CompProperties_RestrictedPlacement">
 				<compClass>SK.CompRestrictedPlacement</compClass>
@@ -671,14 +670,13 @@
 		</placeWorkers>
 		<comps>
 			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>-1500</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li>
 				<compClass>SK.HorizontalWindTurbine</compClass>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Stunnable">
 				<useLargeEMPEffecter>true</useLargeEMPEffecter>
@@ -692,8 +690,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>16</constructionSkillPrerequisite>
 		<modExtensions>
-			<li Class="SK.Events.AccidentalExplosionExtension">
-			</li>
+			<li Class="SK.Events.AccidentalExplosionExtension" />
 		</modExtensions>
 	</ThingDef>
 
@@ -747,7 +744,7 @@
 				<explosiveRadius>8</explosiveRadius>
 				<explosiveDamageType>Flame</explosiveDamageType>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 			<li Class="CompProperties_Flickable" />
 		</comps>
 		<rotatable>false</rotatable>
@@ -759,8 +756,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>17</constructionSkillPrerequisite>
 		<modExtensions>
-			<li Class="SK.Events.AccidentalExplosionExtension">
-			</li>
+			<li Class="SK.Events.AccidentalExplosionExtension" />
 		</modExtensions>
 	</ThingDef>
 
@@ -796,8 +792,8 @@
 			<Microchips>5</Microchips>
 		</costList>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
 			<li Class="CompProperties_Power">
 				<compClass>SK.CompPowerPlantFueled</compClass>
 				<basePowerConsumption>-20000</basePowerConsumption>
@@ -895,7 +891,6 @@
 		</costList>
 		<comps>
 			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>1</basePowerConsumption>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<soundAmbientProducingPower>PlasmaTurbine</soundAmbientProducingPower>
@@ -908,7 +903,7 @@
 				<explosiveRadius>5</explosiveRadius>
 				<explosiveDamageType>Flame</explosiveDamageType>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Stunnable">
 				<useLargeEMPEffecter>true</useLargeEMPEffecter>
@@ -986,7 +981,7 @@
 					<li>SteamGeyser</li>
 				</restrictedThing>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Stunnable">
 				<useLargeEMPEffecter>true</useLargeEMPEffecter>
@@ -1043,8 +1038,8 @@
 			<Microchips>5</Microchips>
 		</costList>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
 			<li Class="CompProperties_Power">
 				<compClass>SK.CompPowerPlantFueled</compClass>
 				<basePowerConsumption>-38000</basePowerConsumption>
@@ -1091,7 +1086,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>19</constructionSkillPrerequisite>
 	</ThingDef>
-	
+
 	<!-- Misc power -->
 
 	<ThingDef ParentName="BuildingBase">
@@ -1148,8 +1143,8 @@
 				<strikesHitBase>false</strikesHitBase>
 				<cooldownPercentPowerSave>50</cooldownPercentPowerSave>
 			</li>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<size>(1,1)</size>
 		<minifiedDef>MinifiedThing</minifiedDef>

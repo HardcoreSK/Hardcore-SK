@@ -110,8 +110,7 @@
       </costList>
       <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
       <comps>
-        <li Class="CompProperties_Power">
-          <compClass>CompPowerTrader</compClass>
+        <li Class="SK.CompProperties_IdlePower">
           <basePowerConsumption>80</basePowerConsumption>
           <shortCircuitInRain>false</shortCircuitInRain>
           <soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -290,8 +289,7 @@
       </costList>
       <comps>
         <li Class="CompProperties_Flickable"/>
-        <li Class="CompProperties_Power">
-          <compClass>CompPowerTrader</compClass>
+        <li Class="SK.CompProperties_IdlePower">
           <basePowerConsumption>80</basePowerConsumption>
           <shortCircuitInRain>false</shortCircuitInRain>
           <soundPowerOn>Power_OnSmall</soundPowerOn>

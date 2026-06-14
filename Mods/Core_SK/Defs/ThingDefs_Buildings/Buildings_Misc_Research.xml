@@ -111,6 +111,7 @@
 		<label>laboratory station</label>
 		<description>An auxillary research station for expanding laboratory operations. Requires power.</description>
 		<thingClass>SK.Building_Lamp</thingClass>
+		<tickerType>Rare</tickerType>
 		<graphicData>
 			<texPath>Things/Building/Research/station</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -147,9 +148,9 @@
 		</statBases>
 		<size>(3,1)</size>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>850</basePowerConsumption>
+				<idlePowerFactor>0.1</idlePowerFactor>
 				<shortCircuitInRain>true</shortCircuitInRain>
 			</li>
 			<li Class="CompProperties_Flickable"/>
@@ -177,6 +178,7 @@
 		<label>research terminal</label>
 		<description>A compact research terminal for expanding laboratory operations. Requires power.</description>
 		<thingClass>SK.Building_Lamp</thingClass>
+		<tickerType>Rare</tickerType>
 		<graphicData>
 			<texPath>Things/Building/Research/terminal</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -212,9 +214,9 @@
 		</statBases>
 		<size>(1,1)</size>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>250</basePowerConsumption>
+				<idlePowerFactor>0.1</idlePowerFactor>
 				<shortCircuitInRain>true</shortCircuitInRain>
 			</li>
 			<li Class="CompProperties_Flickable"/>

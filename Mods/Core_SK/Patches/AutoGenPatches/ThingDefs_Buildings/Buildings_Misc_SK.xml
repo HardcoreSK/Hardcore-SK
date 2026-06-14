@@ -152,8 +152,7 @@
             <tickerType>Normal</tickerType>
             <comps>
                 <li Class="CompProperties_Flickable"/>
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <basePowerConsumption>700</basePowerConsumption>
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <idlePowerDraw>70</idlePowerDraw>
@@ -220,8 +219,7 @@
                     <glowRadius>14</glowRadius>
                     <glowColor>(370,370,370,0)</glowColor>
                 </li>
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <soundPowerOn>Power_OnSmall</soundPowerOn>
                     <soundPowerOff>Power_OffSmall</soundPowerOff>
@@ -273,8 +271,7 @@
             <comps>
                 <li Class="CompProperties_Flickable"/>
                 <li Class="CompProperties_Breakdownable"/>
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <basePowerConsumption>60</basePowerConsumption>
                 </li>
             </comps>
@@ -335,8 +332,7 @@
             <comps>
                 <li Class="CompProperties_Flickable"/>
                 <li Class="CompProperties_Breakdownable"/>
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <basePowerConsumption>300</basePowerConsumption>
                     <idlePowerDraw>30</idlePowerDraw>
@@ -412,8 +408,7 @@
             <comps>
                 <li Class="CompProperties_Flickable"/>
                 <li Class="CompProperties_Breakdownable"/>
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <basePowerConsumption>350</basePowerConsumption>
                 </li>
@@ -476,8 +471,7 @@
             <comps>
                 <li Class="CompProperties_Flickable"/>
                 <li Class="CompProperties_Breakdownable"/>
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <basePowerConsumption>150</basePowerConsumption>
                     <idlePowerDraw>0</idlePowerDraw>
@@ -621,8 +615,7 @@
             </graphicData>
             <comps>
                 <li Class="CompProperties_Forbiddable"/>
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <basePowerConsumption>300</basePowerConsumption>
                 </li>
@@ -830,8 +823,7 @@
                 <ElectronicComponents>5</ElectronicComponents>
             </costList>
             <comps Merge="true">
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <basePowerConsumption>1500</basePowerConsumption>
                     <idlePowerDraw>150</idlePowerDraw>
                 </li>
@@ -864,8 +856,7 @@
                 <Electronics>5</Electronics>
             </costList>
             <comps Merge="true">
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <basePowerConsumption>2200</basePowerConsumption>
                     <idlePowerDraw>220</idlePowerDraw>
                 </li>

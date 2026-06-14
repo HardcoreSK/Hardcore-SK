@@ -59,17 +59,18 @@
                 <ElectronicComponents>2</ElectronicComponents>
             </costList>
             <comps>
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <basePowerConsumption>100</basePowerConsumption>
+                    <idlePowerFactor>0.1</idlePowerFactor>
+                    <IdlePowerMode>WhenNear</IdlePowerMode>
                 </li>
-                <li Class="CompProperties_Breakdownable"/>
-                <li Class="SK.CompProperties_LowIdleDraw">
+                <li Class="CompProperties_Breakdownable" />
+                <!--                 <li Class="SK.CompProperties_LowIdleDraw">
                     <compClass>SK.CompPowerLowIdleDraw</compClass>
                     <idlePowerFactor>0.1</idlePowerFactor>
                     <operationalMode>WhenNear</operationalMode>
-                </li>
-                <li Class="CompProperties_Styleable"/>
+                </li> -->
+                <li Class="CompProperties_Styleable" />
             </comps>
             <designationHotKey>Misc3</designationHotKey>
             <constructionSkillPrerequisite>8</constructionSkillPrerequisite>

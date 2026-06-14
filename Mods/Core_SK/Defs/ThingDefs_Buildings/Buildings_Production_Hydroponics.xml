@@ -98,8 +98,7 @@
 		<neverMultiSelect>true</neverMultiSelect>
 		<comps>
 			<li Class="CompProperties_Forbiddable" />
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<transmitsPower>true</transmitsPower>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -166,8 +165,7 @@
 		<tickerType>Rare</tickerType>
 		<comps>
 			<li Class="CompProperties_Forbiddable" />
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>25</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable" />
@@ -223,8 +221,7 @@
 		</building>
 		<comps>
 			<li Class="CompProperties_Forbiddable" />
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>150</basePowerConsumption>
 			</li>

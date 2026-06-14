@@ -23,8 +23,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>350</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>

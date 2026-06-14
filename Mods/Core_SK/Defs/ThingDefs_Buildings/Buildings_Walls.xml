@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!--========================= Walls =============================-->
-<!--
+	<!--
 	<ThingDef ParentName="BuildingBase" Name="WallBase" Abstract ="True">
 		<graphicData>
 			<linkType>CornerFiller</linkType>
@@ -58,7 +58,8 @@
 			</li>
 		</comps>
 	</ThingDef>
---><!-- DefOverwrite
+-->
+	<!-- DefOverwrite
 	<ThingDef ParentName="Wall">
 		<defName>Wall</defName>
 		<label>wall</label>
@@ -119,7 +120,8 @@
 		</stuffCategories>
 		<costStuffCount>6</costStuffCount>
 	</ThingDef>
---><!-- DefOverwrite
+-->
+	<!-- DefOverwrite
 	<ThingDef ParentName="BuildingBase">
 		<defName>Fence</defName>
 		<label>fence</label>
@@ -294,7 +296,7 @@
 				<compClass>CompPowerTransmitter</compClass>
 				<transmitsPower>true</transmitsPower>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 		</comps>
 		<researchPrerequisites>
 			<li>Autodoors</li>
@@ -352,15 +354,14 @@
 				<glowRadius>5</glowRadius>
 				<glowColor>(217,217,217,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<transmitsPower>true</transmitsPower>
 				<basePowerConsumption>25</basePowerConsumption>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 		</comps>
 		<researchPrerequisites>
 			<li>Autodoors</li>
@@ -445,7 +446,7 @@
 			<li>Construction_B3</li>
 		</researchPrerequisites>
 	</ThingDef>
-<!--
+	<!--
 	<ThingDef ParentName="BuildingBase" Name="Column">
 		<defName>Column</defName>
 		<label>column</label>

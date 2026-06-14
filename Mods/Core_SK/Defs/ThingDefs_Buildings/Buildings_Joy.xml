@@ -59,13 +59,13 @@
 		</placeWorkers>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>230</basePowerConsumption>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
 				<idlePowerDraw>23</idlePowerDraw>
+				<idleMode>GroupUse</idleMode>
 			</li>
 			<li Class="CompProperties_Glower">		
 				<glowRadius>3</glowRadius>
@@ -314,8 +314,7 @@
 			<paintable>true</paintable>
 		</building>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
 				<idlePowerDraw>25</idlePowerDraw>
@@ -361,8 +360,7 @@
 			<paintable>true</paintable>
 		</building>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
 				<idlePowerDraw>25</idlePowerDraw>
@@ -408,8 +406,7 @@
 			<paintable>true</paintable>
 		</building>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
 				<idlePowerDraw>25</idlePowerDraw>
@@ -455,8 +452,7 @@
 			<paintable>true</paintable>
 		</building>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
 				<idlePowerDraw>25</idlePowerDraw>
@@ -502,8 +498,7 @@
 			<paintable>true</paintable>
 		</building>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
 				<idlePowerDraw>25</idlePowerDraw>
@@ -549,8 +544,7 @@
 			<paintable>true</paintable>
 		</building>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
 				<idlePowerDraw>25</idlePowerDraw>
@@ -596,8 +590,7 @@
 			<paintable>true</paintable>
 		</building>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
 				<idlePowerDraw>25</idlePowerDraw>
@@ -643,8 +636,7 @@
 			<paintable>true</paintable>
 		</building>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
 				<idlePowerDraw>25</idlePowerDraw>
@@ -690,8 +682,7 @@
 			<paintable>true</paintable>
 		</building>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
 				<idlePowerDraw>25</idlePowerDraw>
@@ -737,8 +728,7 @@
 			<paintable>true</paintable>
 		</building>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
 				<idlePowerDraw>25</idlePowerDraw>
@@ -784,8 +774,7 @@
 			<paintable>true</paintable>
 		</building>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>250</basePowerConsumption>
 				<idlePowerDraw>25</idlePowerDraw>

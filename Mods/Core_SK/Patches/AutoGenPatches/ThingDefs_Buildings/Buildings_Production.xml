@@ -263,8 +263,7 @@
                 <nutritionCostPerDispense>0.8</nutritionCostPerDispense>
             </building>
             <comps>
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <basePowerConsumption>350</basePowerConsumption>
                 </li>
@@ -601,8 +600,7 @@
             <comps>
                 <li Class="CompProperties_Flickable"/>
                 <li Class="CompProperties_Breakdownable"/>
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <basePowerConsumption>600</basePowerConsumption>
                     <soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -677,8 +675,7 @@
             <tickerType>Normal</tickerType>
             <comps>
                 <li Class="CompProperties_Flickable"/>
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <basePowerConsumption>300</basePowerConsumption>
                     <idlePowerDraw>30</idlePowerDraw>

@@ -120,8 +120,7 @@
 			<unpoweredWorkTableWorkSpeedFactor>0.50</unpoweredWorkTableWorkSpeedFactor>
 		</building>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>120</basePowerConsumption>
 			</li>
@@ -290,8 +289,7 @@
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>210</basePowerConsumption>
 			</li>

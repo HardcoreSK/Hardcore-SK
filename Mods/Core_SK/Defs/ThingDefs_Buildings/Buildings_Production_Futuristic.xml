@@ -69,8 +69,7 @@
 					<li>PodChair</li>
 				</linkableFacilities>
 			</li>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>2500</basePowerConsumption>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -149,8 +148,7 @@
 		</recipes>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>20000</basePowerConsumption>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -232,8 +230,7 @@
 		<surfaceType>Item</surfaceType>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>1</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 				<soundAmbientProducingPower>MatterFab</soundAmbientProducingPower>

@@ -128,8 +128,7 @@
 					<li>Patterner</li>
 				</linkableFacilities>
 			</li>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>300</basePowerConsumption>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -270,8 +269,7 @@
 			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>1500</basePowerConsumption>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -348,8 +346,7 @@
 			<unpoweredWorkTableWorkSpeedFactor>0.6</unpoweredWorkTableWorkSpeedFactor>
 		</building>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>550</basePowerConsumption>
 				<idlePowerDraw>55</idlePowerDraw>
@@ -439,8 +436,7 @@
 			<uninstallWork>1250</uninstallWork>
 		</building>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>500</basePowerConsumption>
 				<idlePowerDraw>50</idlePowerDraw>

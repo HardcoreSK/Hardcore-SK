@@ -137,8 +137,7 @@
 			<li Class="CompProperties_Mannable">
 				<manWorkType>Violent</manWorkType>
 			</li>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>20000</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 			</li>
@@ -213,8 +212,7 @@
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="SK.CompProperties_PowerOnGraphic" />
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>4000</basePowerConsumption>
 			</li>
 			<li>
@@ -255,8 +253,7 @@
 			<li Class="CompProperties_Mannable">
 				<manWorkType>Violent</manWorkType>
 			</li>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>10000</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 			</li>
@@ -334,8 +331,7 @@
 			<Microchips>5</Microchips>
 		</costList>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>15000</basePowerConsumption>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>

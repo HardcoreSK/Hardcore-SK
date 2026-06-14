@@ -39,8 +39,7 @@
         </statBases>
         <tickerType>Normal</tickerType>
         <comps>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
+            <li Class="SK.CompProperties_IdlePower">
                 <basePowerConsumption>2500</basePowerConsumption>
             </li>
             <li Class="CompProperties_HeatPusher">
@@ -142,8 +141,7 @@
             <ElectronicComponents>4</ElectronicComponents>
         </costList>
         <comps>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
+            <li Class="SK.CompProperties_IdlePower">
                 <basePowerConsumption>1800</basePowerConsumption>
             </li>
             <li Class="SK.CompProperties_RestrictedPlacement">
@@ -220,8 +218,7 @@
         <canOverlapZones>false</canOverlapZones>
         <tickerType>Normal</tickerType>
         <comps>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
+            <li Class="SK.CompProperties_IdlePower">
                 <shortCircuitInRain>true</shortCircuitInRain>
                 <basePowerConsumption>700</basePowerConsumption>
                 <soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -351,8 +348,7 @@
             <li>MakeBioDiesel</li>
         </recipes>
         <comps>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
+            <li Class="SK.CompProperties_IdlePower">
                 <shortCircuitInRain>true</shortCircuitInRain>
                 <basePowerConsumption>500</basePowerConsumption>
                 <soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -416,8 +412,7 @@
 			<Microchips>4</Microchips>
 		</costList>	
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>1800</basePowerConsumption>
 				<shortCircuitInRain>false</shortCircuitInRain>
 			</li>
@@ -490,8 +485,7 @@
 			<Microchips>1</Microchips>
 		</costList>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>300</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Glower">
@@ -551,7 +545,7 @@
     		<comps>
     			<li Class="CompProperties_Flickable"/>
     			<li Class="CompProperties_Breakdownable"/>
-    			<li Class="CompProperties_Power">
+    			<li Class="SK.CompProperties_IdlePower">
     				<compClass>SK.CompPowerPlantFueled</compClass>
     				<basePowerConsumption>-30000</basePowerConsumption>
     				<transmitsPower>true</transmitsPower>
@@ -688,8 +682,7 @@
               <li>BiomeOcean.PlaceWorker_TidalGenerator</li>
             </placeWorkers>
         	<comps>
-        			<li Class="CompProperties_Power">
-        				<compClass>CompPowerTrader</compClass>
+        			<li Class="SK.CompProperties_IdlePower">
         				<basePowerConsumption>-400</basePowerConsumption>
         				<transmitsPower>true</transmitsPower>
               </li>
@@ -744,7 +737,7 @@
         		<comps>
         			<li Class="CompProperties_Flickable"/>
         			<li Class="CompProperties_Breakdownable"/>
-        			<li Class="CompProperties_Power">
+        			<li Class="SK.CompProperties_IdlePower">
         				<compClass>SK.CompPowerPlantFueled</compClass>
         				<basePowerConsumption>-1200</basePowerConsumption>
         				<transmitsPower>true</transmitsPower>

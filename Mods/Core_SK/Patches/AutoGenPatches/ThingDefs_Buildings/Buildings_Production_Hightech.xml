@@ -42,8 +42,7 @@
             <minifiedDef>MinifiedThing</minifiedDef>
             <tickerType>Normal</tickerType>
             <comps>
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <basePowerConsumption>350</basePowerConsumption>
                     <idlePowerDraw>35</idlePowerDraw>
@@ -144,8 +143,7 @@
             </recipes>
             <tickerType>Normal</tickerType>
             <comps>
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <basePowerConsumption>950</basePowerConsumption>
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <idlePowerDraw>95</idlePowerDraw>
@@ -228,8 +226,7 @@
             <minifiedDef>MinifiedThing</minifiedDef>
             <tickerType>Normal</tickerType>
             <comps>
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <basePowerConsumption>700</basePowerConsumption>
                     <soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -318,8 +315,7 @@
             </building>
             <tickerType>Normal</tickerType>
             <comps>
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <basePowerConsumption>400</basePowerConsumption>
                     <soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -380,8 +376,7 @@
             <comps>
                 <li Class="CompProperties_Forbiddable"/>
                 <li Class="CompProperties_Flickable"/>
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <basePowerConsumption>400</basePowerConsumption>
                     <idlePowerDraw>40</idlePowerDraw>
                 </li>
@@ -427,8 +422,7 @@
                 <Mechanism>8</Mechanism>
             </costList>
             <comps>
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <basePowerConsumption>900</basePowerConsumption>
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <idlePowerDraw>80</idlePowerDraw>
@@ -499,8 +493,7 @@
             <tickerType>Normal</tickerType>
             <comps>
                 <li Class="CompProperties_Flickable"/>
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTrader</compClass>
+                <li Class="SK.CompProperties_IdlePower">
                     <basePowerConsumption>650</basePowerConsumption>
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <soundPowerOn>Power_OnSmall</soundPowerOn>

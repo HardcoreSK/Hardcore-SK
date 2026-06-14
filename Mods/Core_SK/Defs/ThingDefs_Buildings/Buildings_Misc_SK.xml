@@ -116,8 +116,7 @@
 		<comps>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>2400</basePowerConsumption>
 			</li>
@@ -190,8 +189,7 @@
 		<comps>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>3200</basePowerConsumption>
 			</li>
 			<li Class="SK.CompProperties_RestrictedPlacement">
@@ -258,8 +256,7 @@
 		<comps>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>280</basePowerConsumption>
 				<idlePowerDraw>0</idlePowerDraw>
@@ -593,8 +590,7 @@
 		<designationCategory>Misc</designationCategory>
 		<comps>
 			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>800</basePowerConsumption>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -667,8 +663,7 @@
 				<explosiveRadius>4.9</explosiveRadius>
 				<explosiveDamageType>Flame</explosiveDamageType>
 			</li>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>2000</basePowerConsumption>
 				<idlePowerDraw>200</idlePowerDraw>
@@ -847,8 +842,7 @@
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
 		</building>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>1000</basePowerConsumption>
 			</li>

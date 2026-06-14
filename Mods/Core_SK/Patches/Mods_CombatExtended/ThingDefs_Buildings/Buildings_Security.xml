@@ -170,8 +170,7 @@
 				<SentryBlasterTurret_Crate>1</SentryBlasterTurret_Crate>
 			</costList>
 			<comps>
-				<li Class="CompProperties_Power">
-					<compClass>CompPowerTrader</compClass>
+				<li Class="SK.CompProperties_IdlePower">
 					<basePowerConsumption>1200</basePowerConsumption>
 				</li>
 				<li Class="CompProperties_Flickable" />
@@ -251,8 +250,7 @@
 				<LaserTurret_Crate>1</LaserTurret_Crate>
 			</costList>
 			<comps>
-				<li Class="CompProperties_Power">
-					<compClass>CompPowerTrader</compClass>
+				<li Class="SK.CompProperties_IdlePower">
 					<basePowerConsumption>1500</basePowerConsumption>
 				</li>
 				<li Class="CompProperties_Flickable" />

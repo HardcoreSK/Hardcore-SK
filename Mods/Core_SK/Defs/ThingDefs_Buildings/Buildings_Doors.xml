@@ -176,15 +176,11 @@
 		<uiIconPath>Things/Building/Doors/DoorBlast/DoorBlast_MenuIcon</uiIconPath>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>150</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
 				<idlePowerFactor>0.1</idlePowerFactor>
-				<operationalMode>WhenNear</operationalMode>
+				<idleMode>WhenNear</idleMode>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
@@ -232,8 +228,7 @@
 			<Steel>5</Steel>
 		</costList>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>50</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
@@ -275,8 +270,7 @@
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>350</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
@@ -324,8 +318,7 @@
 			<Mechanism>5</Mechanism>
 		</costList>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>350</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>

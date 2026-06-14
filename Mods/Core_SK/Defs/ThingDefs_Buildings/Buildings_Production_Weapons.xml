@@ -52,8 +52,7 @@
                     <li>PodChair</li>
                 </linkableFacilities>
             </li>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
+            <li Class="SK.CompProperties_IdlePower">
                 <shortCircuitInRain>true</shortCircuitInRain>
                 <basePowerConsumption>500</basePowerConsumption>
                 <soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -126,8 +125,7 @@
                     <li>PodChair</li>
                 </linkableFacilities>
             </li>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
+            <li Class="SK.CompProperties_IdlePower">
                 <shortCircuitInRain>true</shortCircuitInRain>
                 <basePowerConsumption>500</basePowerConsumption>
                 <soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -193,8 +191,7 @@
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <tickerType>Normal</tickerType>
         <comps>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
+            <li Class="SK.CompProperties_IdlePower">
                 <shortCircuitInRain>true</shortCircuitInRain>
                 <basePowerConsumption>800</basePowerConsumption>
                 <idlePowerDraw>80</idlePowerDraw>
@@ -277,8 +274,7 @@
                     <li>PodChair</li>
                 </linkableFacilities>
             </li>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
+            <li Class="SK.CompProperties_IdlePower">
                 <shortCircuitInRain>true</shortCircuitInRain>
                 <basePowerConsumption>1800</basePowerConsumption>
                 <soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -347,8 +343,7 @@
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <surfaceType>Item</surfaceType>
         <comps>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
+            <li Class="SK.CompProperties_IdlePower">
                 <shortCircuitInRain>true</shortCircuitInRain>
                 <basePowerConsumption>500</basePowerConsumption>
                 <idlePowerDraw>50</idlePowerDraw>

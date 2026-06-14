@@ -39,8 +39,8 @@
                 <WorkToBuild>11000</WorkToBuild>
             </statBases>
             <comps>
-                <li Class="CompProperties_Power">
-                    <compClass>CompPowerTransmitter</compClass>
+                <li Class="CompProperties_Power">\s*
+*.*<compClass>CompPowerTransmitter</compClass>
                     <transmitsPower>true</transmitsPower>
                 </li>
                 <li Class="CompProperties_ShipPart"/>

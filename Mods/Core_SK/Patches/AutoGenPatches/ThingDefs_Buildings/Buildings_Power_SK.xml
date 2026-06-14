@@ -187,7 +187,7 @@
                 <li>PlaceWorker_NotUnderRoof</li>
             </placeWorkers>
             <comps>
-                <li Class="CompProperties_Power">
+                <li Class="SK.CompProperties_IdlePower">
                     <compClass>SK.CompPowerPlantSolar</compClass>
                     <basePowerConsumption>-1</basePowerConsumption>
                     <transmitsPower>true</transmitsPower>
@@ -231,7 +231,7 @@
             </costList>
             <constructEffect IsNull="true"/>
             <comps>
-                <li Class="CompProperties_Power">
+                <li Class="SK.CompProperties_IdlePower">
                     <compClass>CompPowerPlantWind</compClass>
                     <basePowerConsumption>-700</basePowerConsumption>
                     <transmitsPower>true</transmitsPower>
@@ -295,7 +295,7 @@
             <comps>
                 <li Class="CompProperties_Flickable"/>
                 <li Class="CompProperties_Breakdownable"/>
-                <li Class="CompProperties_Power">
+                <li Class="SK.CompProperties_IdlePower">
                     <compClass>SK.CompPowerPlantFueled</compClass>
                     <basePowerConsumption>-750</basePowerConsumption>
                     <transmitsPower>true</transmitsPower>
@@ -425,7 +425,7 @@
             <comps>
                 <li Class="CompProperties_Flickable"/>
                 <li Class="CompProperties_Breakdownable"/>
-                <li Class="CompProperties_Power">
+                <li Class="SK.CompProperties_IdlePower">
                     <compClass>SK.CompPowerPlantFueled</compClass>
                     <basePowerConsumption>-3500</basePowerConsumption>
                     <transmitsPower>true</transmitsPower>
@@ -509,7 +509,7 @@
             </costList>
             <constructEffect IsNull="true"/>
             <comps>
-                <li Class="CompProperties_Power">
+                <li Class="SK.CompProperties_IdlePower">
                     <compClass>CompPowerPlantSteam</compClass>
                     <basePowerConsumption>-5000</basePowerConsumption>
                     <transmitsPower>true</transmitsPower>
@@ -552,7 +552,7 @@
             </costList>
             <constructEffect IsNull="true"/>
             <comps>
-                <li Class="CompProperties_Power">
+                <li Class="SK.CompProperties_IdlePower">
                     <compClass>CompPowerPlantWater</compClass>
                     <basePowerConsumption>-1000</basePowerConsumption>
                     <transmitsPower>true</transmitsPower>
