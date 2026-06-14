@@ -92,8 +92,8 @@
 			</shaderParameters>
 		</graphicData>
 	</ThingDef>
-<!-- Possible to be renamed to CropPlant -->
-	<ThingDef ParentName="PlantBase" Name="PlantDef" Abstract="True">
+
+	<ThingDef ParentName="PlantBase" Name="CropPlant" Abstract="True">
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Beauty>1</Beauty>
@@ -107,8 +107,8 @@
 			<harvestTag>Standard</harvestTag>
 		</plant>
 	</ThingDef>
-<!-- Possible to be renamed to CropPlant -->
-	<ThingDef ParentName="PlantDef" Name="SK_DeciduousPlantDef" Abstract="True">
+
+	<ThingDef ParentName="CropPlant" Name="SK_DeciduousCropPlant" Abstract="True">
 		<graphicData>
 			<shaderParameters>
 				<_FallColorSource>(0.3803, 0.4352, 0.1451)</_FallColorSource>
@@ -118,10 +118,10 @@
 			</shaderParameters>
 		</graphicData>
 	</ThingDef>
-<!-- Possible to be removed -->
+<!--
 	<ThingDef ParentName="WildPlantBase" Name="PlantFlowerBase" Abstract="True">
 		<altitudeLayer>LowPlant</altitudeLayer>
-		<thingClass>SK.PlantFlower</thingClass>		
+		<thingClass>SK.PlantFlower</thingClass> Optional and only if there isnt a SK.ExtendedPlantGraphic
 		<statBases>
 			<MaxHitPoints>70</MaxHitPoints>
 			<Beauty>10</Beauty>
@@ -144,8 +144,8 @@
 			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>
-<!-- Possible to be removed -->
-	<ThingDef ParentName="PlantFlowerBase" Name="SK_DeciduousPlantFlowerBase" Abstract="True">
+	-->
+	<ThingDef ParentName="PlantBase" Name="SK_DeciduousPlantFlowerBase" Abstract="True">
 		<graphicData>
 			<shaderParameters>
 				<_FallColorSource>(0.3803, 0.4352, 0.1451)</_FallColorSource>
@@ -156,6 +156,7 @@
 		</graphicData>
 	</ThingDef>
 
+<!--
 	<ThingDef ParentName="WildPlantBase" Name="CactusBase" Abstract="True">
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -170,8 +171,7 @@
 		</plant>
 	</ThingDef>
 
-<!-- to be removed -->
-	<ThingDef ParentName="CactusBase" Name="SK_BushBase" Abstract="True">
+	<ThingDef ParentName="CactusBase" Name="BushBase" Abstract="True">
 		<graphicData>
 			<shadowData>
 				<volume>(0.55, 0.2, 0.2)</volume>
@@ -189,7 +189,7 @@
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="BushBase" Name="SK_DeciduousBushBase" Abstract="True">
 		<graphicData>
 			<shaderParameters>

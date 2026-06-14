@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="PlantDef">
+	<ThingDef ParentName="CropPlant">
 		<defName>Plant_Potato</defName>
 		<label>Potato Plant</label>
 		<description>Potato Plants produce nutritious tubers called Potatoes. Potato Plants grow quickly and are a reliable food source crop for basic meals.</description>
@@ -35,7 +35,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_DeciduousPlantDef">
+	<ThingDef ParentName="SK_DeciduousCropPlant">
 		<defName>Plant_Corn</defName>
 		<label>Corn Plant</label>
 		<description>Corn Plants are large grain plants that produce ears of delicious yellow seeds that are called Corn. Corn Plants grow slowly but yeild lots of food. Corn is useful as a food ingredient or for making Ethanol Fuel.</description>
@@ -72,7 +72,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_DeciduousPlantDef">
+	<ThingDef ParentName="SK_DeciduousCropPlant">
 		<defName>Plant_Rice</defName>
 		<label>Rice Plant</label>
 		<description>Rice Plants are short grain plants that yields numerous amounts of edible seeds called Rice. Rice is useful as a meal ingredient, can be made into Ethanol Fuel or distilled into Sake from the Brewery.</description>
@@ -108,7 +108,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="PlantDef">
+	<ThingDef ParentName="CropPlant">
 		<defName>Plantbean</defName>
 		<label>Bean Stalk</label>
 		<description>A Bean Stalk produces a Bean Pod, a soft shell with small, edible seeds inside. They can be used as a meal ingredient or can be refined into BioDiesel Fuel.</description>
@@ -145,7 +145,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="PlantDef">
+	<ThingDef ParentName="CropPlant">
 		<defName>PlantTomato</defName>
 		<label>Tomato Vine</label>
 		<description>Tomato Vines produce round, palm sized, red, sharp-tasting fruits called Tomatoes. Tomatoes are related to Potato Plants and grow very quickly.</description>
@@ -181,7 +181,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="PlantDef">
+	<ThingDef ParentName="CropPlant">
 		<defName>PlantCarrot</defName>
 		<label>Carrot Plant</label>
 		<description>Carrot Plants produce long, crunchy, orange root vegetables called Carrots. Carrots are refreshing to eat raw and have a long shelf life.</description>
@@ -221,7 +221,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="PlantDef">
+	<ThingDef ParentName="CropPlant">
 		<defName>Plant_Mushroom</defName>
 		<label>Champignon Mushroom</label>
 		<description>Champignon Mushrooms produce white or brown edible caps called Raw Champignon. This robust mushroom has been genetically engineered and is cultivated to produce a filling meat substitute.</description>

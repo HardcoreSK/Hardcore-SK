@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!--============================ Bushes  ============================-->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="SK_DeciduousBushBase">
 		<defName>Plant_Bush</defName>
 		<label>bush</label>
@@ -37,7 +37,7 @@
 			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>
-
+-->
 
 	<ThingDef ParentName="SK_DeciduousBushBase">
 		<defName>Plant_Rhododendron</defName>
@@ -75,7 +75,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BushBase">
+	<ThingDef ParentName="BushBase">
 		<defName>Plant_SwordFern</defName>
 		<label>swordFern</label>
 		<description>An attractive and hardy fern. Not eaten by most animals due to toxins and carcinogens.</description>
@@ -103,7 +103,7 @@
 		</plant>
 	</ThingDef>
 <!-- DefOverwrite
-	<ThingDef ParentName="SK_BushBase">
+	<ThingDef ParentName="BushBase">
 		<defName>Plant_Alocasia</defName>
 		<label>alocasia</label>
 		<description>A common broadleaf tropical plant.</description>
@@ -128,7 +128,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BushBase">
+	<ThingDef ParentName="BushBase">
 		<defName>Plant_Clivia</defName>
 		<label>clivia</label>
 		<description>An unusual plant with tall, pretty flowers. Some call it the 'bush lily'.</description>
@@ -154,7 +154,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BushBase">
+	<ThingDef ParentName="BushBase">
 		<defName>Plant_Rafflesia</defName>
 		<label>giant rafflesia</label>
 		<description>A rare, giant flower. You would think a giant flower would be beautiful, but this one is quite smelly and ugly.</description>

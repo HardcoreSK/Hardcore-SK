@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="SK_DeciduousPlantDef">
+	<ThingDef ParentName="SK_DeciduousCropPlant">
 		<defName>Plant_Cotton</defName>
 		<label>Cotton Bush</label>
 		<description>Cotton Bushes produce Cotton, a fine plant fiber that can be spun from the Tailor's Workbench into a textile called Cloth.</description>
@@ -35,7 +35,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_DeciduousPlantDef">
+	<ThingDef ParentName="SK_DeciduousCropPlant">
 		<defName>Plant_Flax</defName>
 		<label>Flax flower</label>
 		<description>A flower thats fibers are use to spin into cloth.</description>
@@ -68,7 +68,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="PlantDef">
+	<ThingDef ParentName="CropPlant">
 		<defName>Plant_Devilstrand</defName>
 		<label>Devilstrand Mushroom</label>
 		<description>Devilstrand Mushrooms are slow growing fungi that produce Devilstrand Puffballs, which can be spun into a textile called Devilstrand Cloth. This fungi was genetically engineered to produce a silk net of the highest grade. It is long rumored to have mystical properties and it owes its name to the devilish greed it inspires in people.</description>
@@ -109,7 +109,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_DeciduousPlantDef">
+	<ThingDef ParentName="SK_DeciduousCropPlant">
 		<defName>Plant_Hops</defName>
 		<label>Hops Plant</label>
 		<description>A Hop Plant is a flowering plant that yields Hops, an essential ingredient in brewing Wort from the Brewery.</description>
@@ -143,7 +143,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="PlantDef">
+	<ThingDef ParentName="CropPlant">
 		<defName>Plant_Sugarcane</defName>
 		<label>Sugarcane Plant</label>
 		<description>Sugarcane Plants produce a type of long grass stalk called Sugarcane. The grass stalks are rich in sucrose, which can be milled from the Butcher Table to produce Sugar.</description>
@@ -177,7 +177,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="PlantDef">
+	<ThingDef ParentName="CropPlant">
 		<defName>Plant_TreeBamboo</defName>
 		<label>bamboo tree</label>
 		<description>Bamboo stalks produce Bamboo. Bamboo is a fast growing grass that functions as a wood alternative.</description>
@@ -214,7 +214,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_DeciduousPlantDef">
+	<ThingDef ParentName="SK_DeciduousCropPlant">
 		<defName>Plantwheat</defName>
 		<label>Wheat Grass</label>
 		<description>Wheat Grass is a cereal grain that produces Wheat. Wheat can be milled into Flour, which can be baked into Bread Leaves from the Oven.</description>
@@ -250,7 +250,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="PlantDef">
+	<ThingDef ParentName="CropPlant">
 		<defName>Plant_Smokeleaf</defName>
 		<label>smokeleaf plant</label>
 		<description>A leafy plant cultivated for its psychological effects. Smokeleaf leaves can be prepared into joints at the crafting spot.</description>
@@ -293,7 +293,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="PlantDef">
+	<ThingDef ParentName="CropPlant">
 		<defName>Plant_Psychoid</defName>
 		<label>psychoid plant</label>
 		<description>A leafy plant. Its leaves can be refined into various forms of the psychoid drug.</description>
@@ -334,7 +334,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="PlantDef">
+	<ThingDef ParentName="CropPlant">
 		<defName>Plant_Tobacco</defName>
 		<label>Tobacco Plant</label>
 		<description>Tobacco Plants are a green, leafy member of the nightshade family. Unlike other nightshade plants that produce fruits, Tobacco Plants are grown for their Tobacco Leaves. These leaves are rolled from the Tobacco Rolling Bench and smoked as an addictive drug.</description>
@@ -374,7 +374,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="PlantDef">
+	<ThingDef ParentName="CropPlant">
 		<defName>Plant_Coffee</defName>
 		<label>Coffee Plant</label>
 		<description>Coffee Plants are green, leafy plants that produce red cherries. Coffee Beans are inside of the cherries, and when the Coffee Beans are ground they are can be brewed into a tasty beverage called Coffee from the Coffee Machine.</description>
@@ -413,7 +413,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="PlantDef">
+	<ThingDef ParentName="CropPlant">
 		<defName>Plant_Tea</defName>
 		<label>Tea Shrub</label>
 		<description>Tea Shrubs produce aromatic Tea Leaves. When these leaves are brewed with hot water they make a tasty beverage from the Coffee Machine called Tea.</description>
