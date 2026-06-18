@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/DamageDef[defName="Bomb"]</xpath>
+		<value>
+			<defaultDamage>156</defaultDamage>
+			<defaultArmorPenetration>52</defaultArmorPenetration>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/DamageDef[defName="Bullet"]</xpath>
+		<value>
+			<minDamageToFragment>40</minDamageToFragment>
+		</value>
+	</Operation>
+
+
+</Patch>

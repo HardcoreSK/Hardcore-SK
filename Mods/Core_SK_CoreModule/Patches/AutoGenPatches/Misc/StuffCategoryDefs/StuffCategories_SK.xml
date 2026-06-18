@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/StuffCategoryDef[defName="Metallic"]</xpath>
+    <value>
+      <label>Metallic</label>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/StuffCategoryDef[defName="Woody"]</xpath>
+    <value>
+      <label>Woody</label>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/StuffCategoryDef[defName="Stony"]</xpath>
+    <value>
+      <label>Stony</label>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/StuffCategoryDef[defName="Fabric"]</xpath>
+    <value>
+      <label>Fabric</label>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/StuffCategoryDef[defName="Leathery"]</xpath>
+    <value>
+      <label>Leathery</label>
+    </value>
+  </Operation>
+
+</Patch>

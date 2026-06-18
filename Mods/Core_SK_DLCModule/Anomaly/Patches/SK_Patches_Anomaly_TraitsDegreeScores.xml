@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="PerfectMemory"]</xpath>
+		<value>
+			<li Class="SK.ModExt_TraitDegreeScore">
+				<Scores>
+					<li>3</li>
+				</Scores>
+			</li>
+		</value>
+	</Operation>
+</Patch>

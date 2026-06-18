@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[@Name="DoorBase"]</xpath>
+        <value>
+            <statBases>
+                <MaxHitPoints>200</MaxHitPoints>
+                <Flammability>1.0</Flammability>
+            </statBases>
+            <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+            <constructionSkillPrerequisite>1</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Door"]</xpath>
+        <value>
+            <label>rustic door</label>
+            <graphicData>
+                <texPath>Things/Building/Doors/DoorRustic/DoorRustic_Mover</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+            </graphicData>
+            <uiIconPath>Things/Building/Doors/DoorRustic/DoorRustic_MenuIcon</uiIconPath>
+            <statBases>
+                <MaxHitPoints>180</MaxHitPoints>
+                <WorkToBuild>400</WorkToBuild>
+            </statBases>
+            <stuffCategories Inherit="false">
+                <li>Woody</li>
+            </stuffCategories>
+            <costStuffCount>10</costStuffCount>
+            <costList>
+                <ComponentMedieval>1</ComponentMedieval>
+            </costList>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Autodoor"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Building/Doors/AutoDoor/AutoDoor_Mover</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+            </graphicData>
+            <uiIconPath>Things/Building/Doors/AutoDoor/AutoDoor_MenuIcon</uiIconPath>
+            <statBases>
+                <MaxHitPoints>250</MaxHitPoints>
+                <WorkToBuild>800</WorkToBuild>
+            </statBases>
+            <stuffCategories Inherit="false">
+                <li>Metallic</li>
+            </stuffCategories>
+            <costStuffCount>50</costStuffCount>
+            <costList>
+                <ComponentIndustrial>2</ComponentIndustrial>
+                <ElectronicComponents>2</ElectronicComponents>
+            </costList>
+            <comps>
+                <li Class="SK.CompProperties_IdlePower">
+                    <basePowerConsumption>100</basePowerConsumption>
+                    <idlePowerFactor>0.1</idlePowerFactor>
+                    <idleMode>WhenNear</idleMode>
+                </li>
+                <li Class="CompProperties_Breakdownable" />
+                <!--                 <li Class="SK.CompProperties_LowIdleDraw">
+                    <compClass>SK.CompPowerLowIdleDraw</compClass>
+                    <idlePowerFactor>0.1</idlePowerFactor>
+                    <operationalMode>WhenNear</operationalMode>
+                </li> -->
+                <li Class="CompProperties_Styleable" />
+            </comps>
+            <designationHotKey>Misc3</designationHotKey>
+            <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="FenceGate"]</xpath>
+        <value>
+            <stuffCategories Inherit="false">
+                <li>Metallic</li>
+                <li>Woody</li>
+            </stuffCategories>
+            <costStuffCount>15</costStuffCount>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="AnimalFlap"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Building/Doors/AnimalFlap/AnimalFlap_Mover</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+            </graphicData>
+            <uiIconPath>Things/Building/Doors/AnimalFlap/AnimalFlap_MenuIcon</uiIconPath>
+            <costStuffCount>40</costStuffCount>
+            <costList>
+                <ComponentMedieval>3</ComponentMedieval>
+            </costList>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="OrnateDoor"]</xpath>
+        <value>
+            <statBases>
+                <WorkToBuild>8000</WorkToBuild>
+                <MaxHitPoints>250</MaxHitPoints>
+                <Beauty>30</Beauty>
+            </statBases>
+            <stuffCategories Inherit="false">
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <costStuffCount>80</costStuffCount>
+            <costList>
+                <Gold>25</Gold>
+                <ComponentMedieval>4</ComponentMedieval>
+            </costList>
+            <building Merge="True">
+                <doorSupportGraphic>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>(3,2)</drawSize>
+                </doorSupportGraphic>
+                <doorTopGraphic>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>(3,2)</drawSize>
+                </doorTopGraphic>
+            </building>
+            <uiOrder>2014</uiOrder>
+            <researchPrerequisites>
+                <li>Construction_B1</li>
+            </researchPrerequisites>
+            <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+
+</Patch>

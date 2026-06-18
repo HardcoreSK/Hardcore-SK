@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/DesignationCategoryDef[defName="Production"]</xpath>
+    <value>
+      <label>Production</label>
+      <order>550</order>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/DesignationCategoryDef[defName="Furniture"]</xpath>
+    <value>
+      <label>Furniture</label>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/DesignationCategoryDef[defName="Security"]</xpath>
+    <value>
+      <label>Security</label>
+      <order>450</order>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/DesignationCategoryDef[defName="Power"]</xpath>
+    <value>
+      <label>Power</label>
+      <order>420</order>
+      <specialDesignatorClasses>
+        <li>Designator_Cancel</li>
+        <li>Designator_Deconstruct</li>
+        <li>SK.Designator_DeconstructPowerConduit</li>
+      </specialDesignatorClasses>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/DesignationCategoryDef[defName="Floors"]</xpath>
+    <value>
+      <label>Home Floors</label>
+      <order>300</order>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/DesignationCategoryDef[defName="Misc"]</xpath>
+    <value>
+      <label>Misc</label>
+      <order>400</order>
+    </value>
+  </Operation>
+
+    <!--Right after Odyssey-->
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/DesignationCategoryDef[defName="Ship"]</xpath>
+    <value>
+      <order>9</order>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/DesignationCategoryDef[defName="Temperature"]</xpath>
+    <value>
+      <label>Temperature</label>
+      <order>270</order>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/DesignationCategoryDef[defName="Joy"]</xpath>
+    <value>
+      <label>Joy</label>
+      <order>260</order>
+    </value>
+  </Operation>
+
+</Patch>

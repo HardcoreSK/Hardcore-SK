@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/PawnKindDef[defName="Mech_CentipedeBlaster"]</xpath>
+    <value>
+      <label>Centipede blaster</label>
+      <combatPower>800</combatPower>
+      <weaponMoney>8000~8000</weaponMoney>
+      <weaponTags>
+        <li>MBL3</li>
+      </weaponTags>
+      <modExtensions>
+        <li Class="CombatExtended.LoadoutPropertiesExtension">
+          <primaryMagazineCount>
+            <min>3</min>
+            <max>3</max>
+          </primaryMagazineCount>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/PawnKindDef[defName="Mech_CentipedeGunner"]</xpath>
+    <value>
+      <label>Centipede gunner</label>
+      <combatPower>800</combatPower>
+      <weaponMoney>4500~6000</weaponMoney>
+      <weaponTags>
+        <li>MechanoidMinigun</li>
+      </weaponTags>
+      <modExtensions>
+        <li Class="CombatExtended.LoadoutPropertiesExtension">
+          <primaryMagazineCount>
+            <min>2</min>
+            <max>3</max>
+          </primaryMagazineCount>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/PawnKindDef[defName="Mech_CentipedeBurner"]</xpath>
+    <value>
+      <label>Centipede burner</label>
+      <!--inferno cannon is way more powerful than other variants with giant range-->
+      <combatPower>1200</combatPower>
+      <weaponMoney>8000~8000</weaponMoney>
+      <weaponTags>
+        <li>INF</li>
+      </weaponTags>
+      <modExtensions>
+        <li Class="CombatExtended.LoadoutPropertiesExtension">
+          <primaryMagazineCount>
+            <min>5</min>
+            <max>10</max>
+          </primaryMagazineCount>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/PawnKindDef[defName="Mech_Scyther"]</xpath>
+    <value>
+      <label>Scyther</label>
+      <combatPower>640</combatPower>
+      <lifeStages>
+        <li MayRequire="Ludeon.Rimworld.Biotech">
+          <bodyGraphicData>
+            <texPath>Things/Pawn/Mechanoid/ScytherClean</texPath>
+            <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Scyther</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>1.5</drawSize>
+            <shadowData>
+              <volume>(0.4, 0.8, 0.4)</volume>
+            </shadowData>
+          </bodyGraphicData>
+        </li>
+        <li>
+          <bodyGraphicData>
+            <texPath>Things/Pawn/Mechanoid/Scyther</texPath>
+            <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Scyther</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>1.5</drawSize>
+            <shadowData>
+              <volume>(0.4, 0.8, 0.4)</volume>
+            </shadowData>
+          </bodyGraphicData>
+        </li>
+      </lifeStages>
+      <weaponMoney>5000~5000</weaponMoney>
+      <weaponTags>
+        <li>MBL2</li>
+      </weaponTags>
+      <modExtensions>
+        <li Class="CombatExtended.LoadoutPropertiesExtension">
+          <primaryMagazineCount>
+            <min>4</min>
+            <max>5</max>
+          </primaryMagazineCount>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/PawnKindDef[defName="Mech_Lancer"]</xpath>
+    <value>
+      <label>Lancer</label>
+      <combatPower>590</combatPower>
+      <lifeStages>
+        <li MayRequire="Ludeon.Rimworld.Biotech">
+          <bodyGraphicData>
+            <texPath>Things/Pawn/Mechanoid/LancerClean</texPath>
+            <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Lancer</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>1.5</drawSize>
+            <shadowData>
+              <volume>(0.4, 0.8, 0.4)</volume>
+            </shadowData>
+          </bodyGraphicData>
+        </li>
+        <li>
+          <bodyGraphicData>
+            <texPath>Things/Pawn/Mechanoid/Lancer</texPath>
+            <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Lancer</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>1.5</drawSize>
+            <shadowData>
+              <volume>(0.4, 0.8, 0.4)</volume>
+            </shadowData>
+          </bodyGraphicData>
+        </li>
+      </lifeStages>
+      <weaponMoney>5000~5000</weaponMoney>
+      <weaponTags>
+        <li>MBL2</li>
+      </weaponTags>
+      <modExtensions>
+        <li Class="CombatExtended.LoadoutPropertiesExtension">
+          <primaryMagazineCount>
+            <min>25</min>
+            <max>35</max>
+          </primaryMagazineCount>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/PawnKindDef[defName="Mech_Pikeman"]</xpath>
+    <value>
+      <label>Pikeman</label>
+      <combatPower>590</combatPower>
+      <weaponMoney>4000~4000</weaponMoney>
+      <weaponTags>
+        <li>Mneedle</li>
+      </weaponTags>
+      <modExtensions>
+        <li Class="CombatExtended.LoadoutPropertiesExtension">
+          <primaryMagazineCount>
+            <min>4</min>
+            <max>5</max>
+          </primaryMagazineCount>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+</Patch>

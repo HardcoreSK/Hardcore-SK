@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/SoundDef[defName="MetalHitImportant"]</xpath>
+    <value>
+      <eventNames/>
+      <subSounds>
+        <li>
+          <grains>
+            <li Class="AudioGrain_Clip">
+              <clipPath>RGS_Misc/RGS_MetalHit</clipPath>
+            </li>
+          </grains>
+          <volumeRange>
+            <min>10</min>
+            <max>14</max>
+          </volumeRange>
+          <pitchRange>
+            <min>0.8940217</min>
+            <max>1.190761</max>
+          </pitchRange>
+        </li>
+      </subSounds>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/SoundDef[defName="BulletImpact_Metal"]</xpath>
+    <value>
+      <eventNames/>
+      <subSounds>
+        <li>
+          <grains>
+            <li Class="AudioGrain_Folder">
+              <clipFolderPath>RGS_Misc/RGS_Bullet_Metal</clipFolderPath>
+            </li>
+          </grains>
+          <volumeRange>
+            <min>6</min>
+            <max>22</max>
+          </volumeRange>
+          <pitchRange>
+            <min>0.986413</min>
+            <max>1.033913</max>
+          </pitchRange>
+        </li>
+      </subSounds>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/SoundDef[defName="BulletImpact_Wood"]</xpath>
+    <value>
+      <eventNames/>
+      <subSounds>
+        <li>
+          <grains>
+            <li Class="AudioGrain_Folder">
+              <clipFolderPath>RGS_Misc/RGS_Bullet_Wood</clipFolderPath>
+            </li>
+          </grains>
+          <volumeRange>
+            <min>10</min>
+            <max>30</max>
+          </volumeRange>
+          <pitchRange>
+            <min>0.936413</min>
+            <max>1.073913</max>
+          </pitchRange>
+        </li>
+      </subSounds>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/SoundDef[defName="MortarIncendiary_Explode"]</xpath>
+    <value>
+      <eventNames/>
+      <maxVoices>4</maxVoices>
+      <subSounds>
+        <li>
+          <grains>
+            <li Class="AudioGrain_Clip">
+              <clipPath>RGS_Misc/RGS_FireExplosion</clipPath>
+            </li>
+          </grains>
+          <volumeRange>
+            <min>60</min>
+            <max>70</max>
+          </volumeRange>
+          <pitchRange>
+            <min>0.765690</min>
+            <max>0.845345</max>
+          </pitchRange>
+        </li>
+      </subSounds>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/SoundDef[defName="Explosion_Flame"]</xpath>
+    <value>
+      <eventNames/>
+      <subSounds>
+        <li>
+          <grains>
+            <li Class="AudioGrain_Clip">
+              <clipPath>RGS_Misc/RGS_FireExplosion</clipPath>
+            </li>
+          </grains>
+          <volumeRange>
+            <min>30</min>
+            <max>35</max>
+          </volumeRange>
+          <pitchRange>
+            <min>0.9856522</min>
+            <max>1.084783</max>
+          </pitchRange>
+        </li>
+      </subSounds>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/SoundDef[defName="Mortar_LaunchA"]</xpath>
+    <value>
+      <eventNames/>
+      <subSounds>
+        <li>
+          <grains>
+            <li Class="AudioGrain_Clip">
+              <clipPath>RGS_Misc/RGS_MortarLaunch</clipPath>
+            </li>
+          </grains>
+          <volumeRange>
+            <min>50</min>
+            <max>55</max>
+          </volumeRange>
+          <pitchRange>
+            <min>0.97</min>
+            <max>1.03</max>
+          </pitchRange>
+        </li>
+      </subSounds>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/SoundDef[defName="MortarRound_PreImpact"]</xpath>
+    <value>
+      <eventNames/>
+      <subSounds>
+        <li>
+          <grains>
+            <li Class="AudioGrain_Clip">
+              <clipPath>RGS_Misc/RGS_MortarIncoming</clipPath>
+            </li>
+          </grains>
+          <volumeRange>
+            <min>28.82353</min>
+            <max>37.05883</max>
+          </volumeRange>
+          <pitchRange>
+            <min>0.8</min>
+            <max>1.2</max>
+          </pitchRange>
+          <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+        </li>
+      </subSounds>
+    </value>
+  </Operation>
+
+</Patch>

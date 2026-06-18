@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RiverDef[defName="LargeRiver"]</xpath>
+    <value>
+      <widthOnMap>24</widthOnMap>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RiverDef[defName="River"]</xpath>
+    <value>
+      <widthOnMap>18</widthOnMap>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RiverDef[defName="Creek"]</xpath>
+    <value>
+      <widthOnMap>12</widthOnMap>
+    </value>
+  </Operation>
+
+  <!-- Placeholder since they are identical -->
+  <!-- <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RiverDef[defName="HugeRiver"]</xpath>
+    <value>
+    </value>
+  </Operation> -->
+
+</Patch>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="Prosthetics"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.MedievalBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="Prosthetics"]</xpath>
+    <value>
+      <label>Prosthesis install I</label>
+      <description>description</description>
+      <baseCost>400</baseCost>
+      <techLevel>Medieval</techLevel>
+      <prerequisites>
+        <li>Clinical_B1</li>
+      </prerequisites>
+      <researchViewX>5.00</researchViewX>
+      <researchViewY>64.00</researchViewY>
+      <tab>Medicine_SK</tab>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="MedicineProduction"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.IndustrialBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="MedicineProduction"]</xpath>
+    <value>
+      <label>Medical supplies V</label>
+      <description>description</description>
+      <baseCost>1000</baseCost>
+      <prerequisites>
+        <li>Medicine_B2</li>
+      </prerequisites>
+      <researchViewX>7.00</researchViewX>
+      <researchViewY>62.00</researchViewY>
+      <tab>Medicine_SK</tab>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="HospitalBed"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.IndustrialBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="HospitalBed"]</xpath>
+    <value>
+      <label>Medical equipment III</label>
+      <description>description</description>
+      <baseCost>1300</baseCost>
+      <prerequisites>
+        <li>MedicineProduction</li>
+        <li>Clinical_C1</li>
+      </prerequisites>
+      <researchViewX>8.00</researchViewX>
+      <researchViewY>63.00</researchViewY>
+      <tab>Medicine_SK</tab>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="VitalsMonitor"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="VitalsMonitor"]</xpath>
+    <value>
+      <label>Medical equipment IV</label>
+      <description>description</description>
+      <baseCost>1200</baseCost>
+      <prerequisites>
+        <li>HospitalBed</li>
+      </prerequisites>
+      <requiredResearchFacilities/>
+      <researchViewX>9.00</researchViewX>
+      <researchViewY>63.00</researchViewY>
+      <tab>Medicine_SK</tab>
+      <tags>
+        <li>AsariStart</li>
+      </tags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="Bionics"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechMultiBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="Bionics"]</xpath>
+    <value>
+      <label>Prosthesis making VIII</label>
+      <description>description</description>
+      <baseCost>1500</baseCost>
+      <prerequisites>
+        <li>Prosthesis_making_D4</li>
+      </prerequisites>
+      <researchViewX>19.00</researchViewX>
+      <researchViewY>65.00</researchViewY>
+      <tab>Medicine_SK</tab>
+    </value>
+  </Operation>
+
+ 
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="PsychoidBrewing"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.PrimitiveBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="PsychoidBrewing"]</xpath>
+    <value>
+      <label>Drugs II</label>
+      <description>description</description>
+      <baseCost>100</baseCost>
+      <prerequisites>
+        <li>Drugs_A1</li>
+      </prerequisites>
+      <researchViewY>61.00</researchViewY>
+      <tab>Medicine_SK</tab>
+      <tags IsNull="true" Inherit="false" />
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="DrugProduction"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.IndustrialBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="DrugProduction"]</xpath>
+    <value>
+      <label>Drugs IV</label>
+      <description>description</description>
+      <baseCost>1300</baseCost>
+      <prerequisites>
+        <li>Oil_Industry_C5</li>
+      </prerequisites>
+      <researchViewX>11.00</researchViewX>
+      <researchViewY>60.00</researchViewY>
+      <tab>Medicine_SK</tab>
+      <tags>
+        <li>NovaStart</li>
+      </tags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="PenoxycylineProduction"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="PenoxycylineProduction"]</xpath>
+    <value>
+      <label>Drugs V</label>
+      <description>description</description>
+      <baseCost>1000</baseCost>
+      <prerequisites>
+        <li>Drugs_C2</li>
+      </prerequisites>
+      <researchViewX>13.00</researchViewX>
+      <researchViewY>59.00</researchViewY>
+      <tab>Medicine_SK</tab>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="WakeUpProduction"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="WakeUpProduction"]</xpath>
+    <value>
+      <label>Wake-up Production</label>
+      <baseCost>1000</baseCost>
+      <prerequisites>
+        <li>Drugs_C2</li>
+      </prerequisites>
+      <researchViewX>13.00</researchViewX>
+      <researchViewY>60.00</researchViewY>
+      <tab>Medicine_SK</tab>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="PsychiteRefining"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="PsychiteRefining"]</xpath>
+    <value>
+      <label>Psychite Refining</label>
+      <baseCost>1200</baseCost>
+      <prerequisites>
+        <li>Drugs_C3</li>
+      </prerequisites>
+      <researchViewX>13.00</researchViewX>
+      <researchViewY>61.00</researchViewY>
+      <tab>Medicine_SK</tab>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ResearchProjectDef[defName="GoJuiceProduction"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.HitechBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="GoJuiceProduction"]</xpath>
+    <value>
+      <label>Go-juice Production</label>
+      <baseCost>1400</baseCost>
+      <prerequisites>
+        <li>WakeUpProduction</li>
+        <li>PsychiteRefining</li>
+      </prerequisites>
+      <researchViewX>14.00</researchViewX>
+      <researchViewY>61.00</researchViewY>
+      <tab>Medicine_SK</tab>
+    </value>
+  </Operation>
+
+</Patch>

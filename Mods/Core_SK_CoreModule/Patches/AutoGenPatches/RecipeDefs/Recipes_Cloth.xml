@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="Make_Patchleather"]</xpath>
+    <value>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <recipeUsers>
+        <li>LeatherworkerTable</li>
+        <li>TableLoom</li>
+      </recipeUsers>
+      <ingredients>
+        <li>
+          <filter>
+            <categories>
+              <li>Leathers</li>
+            </categories>
+            <disallowedThingDefs>
+              <li>Leather_Thrumbo</li>
+            </disallowedThingDefs>
+          </filter>
+          <count>50</count>
+        </li>
+      </ingredients>
+      <fixedIngredientFilter>
+        <categories>
+          <li>Leathers</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Leather_Patch</li>
+          <li>Leather_Human</li>
+          <li>Chitin</li>
+        </disallowedThingDefs>
+      </fixedIngredientFilter>
+      <researchPrerequisite>Apparel_A1</researchPrerequisite>
+    </value>
+  </Operation>
+
+</Patch>

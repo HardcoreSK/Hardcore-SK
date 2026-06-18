@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/DifficultyDef[defName="Peaceful"]</xpath>
+    <value>
+      <label>☮ Peaceful</label>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/DifficultyDef[defName="Easy"]</xpath>
+    <value>
+      <label>✬ Builder</label>
+      <threatScale>0.20</threatScale>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/DifficultyDef[defName="Medium"]</xpath>
+    <value>
+      <label>☫ Medium</label>
+      <threatScale>0.40</threatScale>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/DifficultyDef[defName="Rough"]</xpath>
+    <value>
+      <label>✇ Rough</label>
+      <threatScale>0.7</threatScale>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/DifficultyDef[defName="Hard"]</xpath>
+    <value>
+      <label>✪ Savage</label>
+      <threatScale>1.1</threatScale>
+      <deepDrillInfestationChanceFactor>1.0</deepDrillInfestationChanceFactor>
+      <threatsGeneratorThreatCountFactor>1.1</threatsGeneratorThreatCountFactor>
+      <questRewardValueFactor>0.8</questRewardValueFactor>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/DifficultyDef[defName="Extreme"]</xpath>
+    <value>
+      <label>☣ &lt;b&gt;&lt;color=#FF0000&gt;Merciless&lt;/color&gt;&lt;/b&gt;</label>
+      <drawColor>(1,0.2,0.2)</drawColor>
+      <threatScale>1.35</threatScale>
+      <adaptationEffectFactor>0.5</adaptationEffectFactor>
+      <colonistMoodOffset>-8</colonistMoodOffset>
+      <deepDrillInfestationChanceFactor>1</deepDrillInfestationChanceFactor>
+      <wastepackInfestationChanceFactor>1.75</wastepackInfestationChanceFactor>
+    </value>
+  </Operation>
+
+</Patch>

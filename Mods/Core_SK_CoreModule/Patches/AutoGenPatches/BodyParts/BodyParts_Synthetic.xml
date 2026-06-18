@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="BionicHeart" or
+                            defName="BionicStomach"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.BodyPartBase_SyntheticDummy</value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="BionicStomach"]</xpath>
+        <value>
+            <label>synthetic stomach</label>
+            <description>An enhanced stomach augmented with synthetic fibres to decrease rejection rate.</description>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/Core/SyntheticStomach</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.80</drawSize>
+                <color>(1,1,1)</color>
+            </graphicData>
+            <statBases>
+                <Mass>1</Mass>
+                <MaxHitPoints>100</MaxHitPoints>
+            </statBases>
+            <costList>
+                <Hyperweave>23</Hyperweave>
+                <CarbonAlloy>3</CarbonAlloy>
+                <SyntheticFibers>7</SyntheticFibers>
+                <Electronics>2</Electronics>
+            </costList>
+            <recipeMaker>
+                <productCount>1</productCount>
+                <skillRequirements>
+                    <Crafting>14</Crafting>
+                </skillRequirements>
+                <researchPrerequisite>Prosthesis_making_D4</researchPrerequisite>
+            </recipeMaker>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/HediffDef[defName="BionicStomach"]</xpath>
+        <value>
+            <label>synthetic stomach</label>
+            <description>An installed enhanced stomach augmented with synthetic fibres to decrease rejection rate.</description>
+            <labelNoun>a synthetic stomach</labelNoun>
+            <addedPartProps>
+                <solid>true</solid>
+                <partEfficiency>1.15</partEfficiency>
+                <betterThanNatural>true</betterThanNatural>
+            </addedPartProps>
+            <stages>
+                <li>
+                    <makeImmuneTo>
+                        <li>GutWorms</li>
+                    </makeImmuneTo>
+                    <foodPoisoningChanceFactor>0.5</foodPoisoningChanceFactor>
+                    <capMods>
+                        <li>
+                            <capacity>Eating</capacity>
+                            <offset>0.09</offset>
+                        </li>
+                    </capMods>
+                </li>
+            </stages>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/RecipeDef[defName="InstallBionicStomach"]</xpath>
+        <value>
+            <label>Install synthetic stomach</label>
+            <description>Installs a Synthetic Stomach.</description>
+            <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+            <jobString>Installing Synthetic Stomach.</jobString>
+            <workAmount>3200</workAmount>
+            <descriptionHyperlinks>
+                <ThingDef>BionicStomach</ThingDef>
+            </descriptionHyperlinks>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <ingredients>
+                <li>
+                    <filter>
+                        <categories>
+                            <li>Medicine</li>
+                        </categories>
+                    </filter>
+                    <count>1</count>
+                </li>
+                <li>
+                    <filter>
+                        <thingDefs>
+                            <li>BionicStomach</li>
+                        </thingDefs>
+                    </filter>
+                    <count>1</count>
+                </li>
+            </ingredients>
+            <fixedIngredientFilter>
+                <categories>
+                    <li>Medicine</li>
+                </categories>
+                <thingDefs>
+                    <li>BionicStomach</li>
+                </thingDefs>
+            </fixedIngredientFilter>
+            <skillRequirements>
+                <Medicine>13</Medicine>
+            </skillRequirements>
+            <researchPrerequisite>Prosthesis_install_D2</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="BionicHeart"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/Core/SyntheticHeart</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.80</drawSize>
+                <color>(1,1,1)</color>
+            </graphicData>
+            <statBases>
+                <Mass>1.5</Mass>
+                <MaxHitPoints>75</MaxHitPoints>
+            </statBases>
+            <costList>
+                <Hyperweave>15</Hyperweave>
+                <CarbonAlloy>4</CarbonAlloy>
+                <SyntheticFibers>10</SyntheticFibers>
+                <Microchips>1</Microchips>
+            </costList>
+            <recipeMaker>
+                <productCount>1</productCount>
+                <skillRequirements>
+                    <Crafting>14</Crafting>
+                </skillRequirements>
+                <researchPrerequisite>Prosthesis_making_D4</researchPrerequisite>
+            </recipeMaker>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/HediffDef[defName="BionicHeart"]</xpath>
+        <value>
+            <description>An installed advanced artificial heart. It has synthetic muscle fibers for a realistic heartbeat, plus a high-flow pump for rapid circulation during high stress. It is better than a biological heart in almost every way.</description>
+            <addedPartProps>
+                <solid>true</solid>
+                <partEfficiency>1.15</partEfficiency>
+            </addedPartProps>
+            <stages>
+                <li>
+                    <capMods>
+                        <li>
+                            <capacity>BloodPumping</capacity>
+                            <offset>0.08</offset>
+                        </li>
+                        <li>
+                            <capacity>Moving</capacity>
+                            <offset>0.04</offset>
+                        </li>
+                        <li>
+                            <capacity>Manipulation</capacity>
+                            <offset>0.04</offset>
+                        </li>
+                    </capMods>
+                </li>
+            </stages>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/RecipeDef[defName="InstallBionicHeart"]</xpath>
+        <value>
+            <label>Install bionic heart</label>
+            <description>Installs a bionic heart.</description>
+            <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+            <jobString>Installing Synthetic Heart.</jobString>
+            <workAmount>3800</workAmount>
+            <descriptionHyperlinks>
+                <ThingDef>BionicHeart</ThingDef>
+            </descriptionHyperlinks>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <ingredients>
+                <li>
+                    <filter>
+                        <categories>
+                            <li>Medicine</li>
+                        </categories>
+                    </filter>
+                    <count>1</count>
+                </li>
+                <li>
+                    <filter>
+                        <thingDefs>
+                            <li>BionicHeart</li>
+                        </thingDefs>
+                    </filter>
+                    <count>1</count>
+                </li>
+            </ingredients>
+            <fixedIngredientFilter>
+                <categories>
+                    <li>Medicine</li>
+                </categories>
+                <thingDefs>
+                    <li>BionicHeart</li>
+                </thingDefs>
+            </fixedIngredientFilter>
+            <skillRequirements>
+                <Medicine>14</Medicine>
+            </skillRequirements>
+            <researchPrerequisite>Prosthesis_install_D2</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Joywire"]</xpath>
+        <value>
+            <description>This little brain implant will make you feel happy and relaxed. Requires brain surgery research before installing.</description>
+            <statBases>
+                <Mass>0.1</Mass>
+                <MaxHitPoints>35</MaxHitPoints>
+            </statBases>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/Core/Joywire</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.80</drawSize>
+            </graphicData>
+            <costList>
+                <ComponentAdvanced>3</ComponentAdvanced>
+                <Plastic>15</Plastic>
+                <Electronics>2</Electronics>
+                <SyntheticFibers>7</SyntheticFibers>
+            </costList>
+            <recipeMaker>
+                <workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+                <soundWorking>EPOEAssembling</soundWorking>
+                <productCount>1</productCount>
+                <skillRequirements>
+                    <Crafting>11</Crafting>
+                </skillRequirements>
+                <researchPrerequisite>Prosthesis_making_D4</researchPrerequisite>
+            </recipeMaker>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/HediffDef[defName="Joywire"]</xpath>
+        <value>
+            <description>An installed brain implant will make you feel happy and relaxed. Requires brain surgery research before installing.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/RecipeDef[defName="InstallJoywire"]</xpath>
+        <value>
+            <label>Install Joywire</label>
+            <description>Installs joywire.</description>
+            <workerClass>Recipe_InstallImplant</workerClass>
+            <workAmount>2000</workAmount>
+            <descriptionHyperlinks>
+                <ThingDef>Joywire</ThingDef>
+            </descriptionHyperlinks>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <ingredients>
+                <li>
+                    <filter>
+                        <categories>
+                            <li>Medicine</li>
+                        </categories>
+                    </filter>
+                    <count>1</count>
+                </li>
+                <li>
+                    <filter>
+                        <thingDefs>
+                            <li>Joywire</li>
+                        </thingDefs>
+                    </filter>
+                    <count>1</count>
+                </li>
+            </ingredients>
+            <fixedIngredientFilter>
+                <categories>
+                    <li>Medicine</li>
+                </categories>
+                <thingDefs>
+                    <li>Joywire</li>
+                </thingDefs>
+            </fixedIngredientFilter>
+            <researchPrerequisite>Prosthesis_install_D2</researchPrerequisite>
+            <skillRequirements>
+                <Medicine>13</Medicine>
+            </skillRequirements>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Painstopper"]</xpath>
+        <value>
+            <description>This brain implant will make you not feel pain. Requires brain surgery research before installing.</description>
+            <statBases>
+                <MarketValue>2400</MarketValue>
+                <Mass>0.1</Mass>
+                <MaxHitPoints>35</MaxHitPoints>
+            </statBases>
+            <graphicData>
+                <texPath>Things/Item/BodyPart/Core/Painstopper</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.80</drawSize>
+            </graphicData>
+            <costList>
+                <ComponentAdvanced>4</ComponentAdvanced>
+                <Plastic>14</Plastic>
+                <Neutroamine>10</Neutroamine>
+                <Electronics>2</Electronics>
+            </costList>
+            <recipeMaker>
+                <workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+                <soundWorking>EPOEAssembling</soundWorking>
+                <productCount>1</productCount>
+                <skillRequirements>
+                    <Crafting>11</Crafting>
+                </skillRequirements>
+                <researchPrerequisite>Prosthesis_making_D4</researchPrerequisite>
+            </recipeMaker>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/HediffDef[defName="Painstopper"]</xpath>
+        <value>
+            <description>An installed brain implant will make you not feel pain. Requires brain surgery research before installing.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/RecipeDef[defName="InstallPainstopper"]</xpath>
+        <value>
+            <label>Install Painstopper</label>
+            <description>Installs painstopper.</description>
+            <workerClass>Recipe_InstallImplant</workerClass>
+            <workAmount>2000</workAmount>
+            <descriptionHyperlinks>
+                <ThingDef>Painstopper</ThingDef>
+            </descriptionHyperlinks>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <ingredients>
+                <li>
+                    <filter>
+                        <categories>
+                            <li>Medicine</li>
+                        </categories>
+                    </filter>
+                    <count>1</count>
+                </li>
+                <li>
+                    <filter>
+                        <thingDefs>
+                            <li>Painstopper</li>
+                        </thingDefs>
+                    </filter>
+                    <count>1</count>
+                </li>
+            </ingredients>
+            <fixedIngredientFilter>
+                <categories>
+                    <li>Medicine</li>
+                </categories>
+                <thingDefs>
+                    <li>Painstopper</li>
+                </thingDefs>
+            </fixedIngredientFilter>
+            <researchPrerequisite>Prosthesis_install_D2</researchPrerequisite>
+            <skillRequirements>
+                <Medicine>13</Medicine>
+            </skillRequirements>
+        </value>
+    </Operation>
+
+</Patch>

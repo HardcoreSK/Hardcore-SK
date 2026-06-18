@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/TerrainDef[defName="StrawMatting"]</xpath>
+    <value>
+      <statBases Merge="true">
+        <WorkToBuild>170</WorkToBuild>
+        <Beauty>0</Beauty>
+      </statBases>
+      <costList>
+        <Hay>3</Hay>
+      </costList>
+    </value>
+  </Operation>
+
+</Patch>

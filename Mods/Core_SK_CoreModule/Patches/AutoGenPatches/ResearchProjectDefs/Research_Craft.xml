@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="MultiAnalyzer"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="MultiAnalyzer"]</xpath>
+    <value>
+      <label>Research technologies V</label>
+      <description>description</description>
+      <baseCost>2700</baseCost>
+      <techLevel>Spacer</techLevel>
+      <prerequisites>
+        <li>Research_table_C2</li>
+      </prerequisites>
+      <researchViewX>17.00</researchViewX>
+      <researchViewY>19.00</researchViewY>
+      <tab>Craft_SK</tab>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="DeepDrilling"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.IndustrialBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="DeepDrilling"]</xpath>
+    <value>
+      <label>Mining III</label>
+      <description>description</description>
+      <baseCost>1400</baseCost>
+      <prerequisites>
+        <li>Mining_C1</li>
+      </prerequisites>
+      <researchViewX>8.00</researchViewX>
+      <researchViewY>24.00</researchViewY>
+      <tab>Craft_SK</tab>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="GroundPenetratingScanner"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="GroundPenetratingScanner"]</xpath>
+    <value>
+      <label>Mining IV</label>
+      <description>description</description>
+      <baseCost>1100</baseCost>
+      <prerequisites>
+        <li>DeepDrilling</li>
+        <li>Electronics_C2</li>
+      </prerequisites>
+      <researchViewX>12.00</researchViewX>
+      <researchViewY>24.00</researchViewY>
+      <tab>Craft_SK</tab>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="LongRangeMineralScanner"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="LongRangeMineralScanner"]</xpath>
+    <value>
+      <label>Mining VI</label>
+      <description>description</description>
+      <baseCost>1000</baseCost>
+      <prerequisites>
+        <li>GroundPenetratingScanner</li>
+      </prerequisites>
+      <researchViewX>13.00</researchViewX>
+      <researchViewY>24.00</researchViewY>
+      <tab>Craft_SK</tab>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="BiofuelRefining"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.IndustrialBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="BiofuelRefining"]</xpath>
+    <value>
+      <label>Chemistry I</label>
+      <description>description</description>
+      <baseCost>1000</baseCost>
+      <prerequisites>
+        <li>Oil_Industry_C1</li>
+      </prerequisites>
+      <researchViewX>9.00</researchViewX>
+      <researchViewY>27.00</researchViewY>
+      <tab>Craft_SK</tab>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="MicroelectronicsBasics"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.MedievalBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="MicroelectronicsBasics"]</xpath>
+    <value>
+      <label>Electronics I</label>
+      <description>description</description>
+      <baseCost>1600</baseCost>
+      <researchViewX>7.00</researchViewX>
+      <researchViewY>21.00</researchViewY>
+      <tab>Craft_SK</tab>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.MedievalBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="Stonecutting"]</xpath>
+    <value>
+      <label>Stone processing I</label>
+      <description>description</description>
+      <prerequisites>
+        <li>Craft_B1</li>
+      </prerequisites>
+      <researchViewX>4.00</researchViewX>
+      <researchViewY>23.00</researchViewY>
+      <tab>Craft_SK</tab>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="ShipBasics"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechLabStationBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="ShipBasics"]</xpath>
+    <value>
+      <label>Starflight basics</label>
+      <baseCost>2500</baseCost>
+      <techLevel>Ultra</techLevel>
+      <prerequisites>
+        <li>Research_table_D2</li>
+        <li>Components_E1</li>
+      </prerequisites>
+      <researchViewX>22.00</researchViewX>
+      <researchViewY>21.00</researchViewY>
+      <tab>Craft_SK</tab>
+      <tags>
+        <li>ShipRelated</li>
+      </tags>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="ShipCryptosleep"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechLabStationBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="ShipCryptosleep"]</xpath>
+    <value>
+      <label>Vacuum cryptosleep casket</label>
+      <baseCost>3000</baseCost>
+      <techLevel>Ultra</techLevel>
+      <researchViewX>23.00</researchViewX>
+      <researchViewY>21.00</researchViewY>
+      <tab>Craft_SK</tab>
+      <tags>
+        <li>ShipRelated</li>
+      </tags>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="ShipReactor"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechLabStationBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="ShipReactor"]</xpath>
+    <value>
+      <label>Starship reactor</label>
+      <baseCost>3000</baseCost>
+      <techLevel>Ultra</techLevel>
+      <researchViewX>23.00</researchViewX>
+      <researchViewY>20.00</researchViewY>
+      <tab>Craft_SK</tab>
+      <tags>
+        <li>ShipRelated</li>
+      </tags>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="ShipEngine"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechLabStationBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="ShipEngine"]</xpath>
+    <value>
+      <baseCost>3000</baseCost>
+      <techLevel>Ultra</techLevel>
+      <researchViewX>23.00</researchViewX>
+      <researchViewY>19.00</researchViewY>
+      <tab>Craft_SK</tab>
+      <tags>
+        <li>ShipRelated</li>
+      </tags>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="ShipComputerCore"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechLabStationBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="ShipComputerCore"]</xpath>
+    <value>
+      <label>Machine persuasion</label>
+      <techLevel>Ultra</techLevel>
+      <researchViewX>23.00</researchViewX>
+      <researchViewY>18.00</researchViewY>
+      <tab>Craft_SK</tab>
+      <tags>
+        <li>ShipRelated</li>
+      </tags>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="ShipSensorCluster"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechLabStationBaseDummy</value>
+	</Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="ShipSensorCluster"]</xpath>
+    <value>
+      <label>Starflight sensors</label>
+      <baseCost>3000</baseCost>
+      <techLevel>Ultra</techLevel>
+      <researchViewX>23.00</researchViewX>
+      <researchViewY>17.00</researchViewY>
+      <tab>Craft_SK</tab>
+      <tags>
+        <li>ShipRelated</li>
+      </tags>
+    </value>
+  </Operation>
+
+</Patch>

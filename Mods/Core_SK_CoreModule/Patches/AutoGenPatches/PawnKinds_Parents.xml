@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/PawnKindDef[defName="Wolf_Timber" or defName="Wolf_Arctic" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_WolfKindBaseDummy</value>
+	</Operation>
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/PawnKindDef[defName="Hare" or defName="Snowhare" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_HareKindBaseDummy</value>
+	</Operation>
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/PawnKindDef[defName="Fox_Fennec" or defName="Fox_Red" or defName="Fox_Arctic" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_AnimalFoxKindBaseDummy</value>
+	</Operation>
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/PawnKindDef[defName="Ostrich" or defName="Emu" or defName="Cassowary" or defName="Turkey" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_BigBirdKindBaseDummy</value>
+	</Operation>
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/PawnKindDef[defName="Cougar" or defName="Panther" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_BigCatKindBaseDummy</value>
+	</Operation>
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/PawnKindDef[defName="Bear_Grizzly" or defName="Bear_Polar" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_BearKindBaseDummy</value>
+	</Operation>
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/PawnKindDef[defName="SpaceRefugee" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SpaceRefugeeBaseDummy</value>
+	</Operation>
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/PawnKindDef[defName="Grenadier_Destructive" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.GrenadierDestructiveBaseDummy</value>
+	</Operation>
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/PawnKindDef[defName="Muffalo" or defName="Gazelle" or defName="Iguana" or defName="Dromedary" or defName="Sheep" or defName="Lynx" or defName="Cat" or defName="Chicken" or defName="Duck" or defName="Goose" or defName="YorkshireTerrier" or defName="Husky" or defName="LabradorRetriever" or defName="Pig" or defName="Cow" or defName="Alpaca" or defName="Bison" or defName="Goat" or defName="Yak" or defName="GuineaPig" or defName="Donkey" or defName="Rhinoceros" or defName="Elephant" or defName="Megasloth" or defName="Thrumbo" or defName="Horse" or defName="Megascarab" or defName="Spelopede" or defName="Megaspider" or defName="Squirrel" or defName="Alphabeaver" or defName="Capybara" or defName="Chinchilla" or defName="Boomrat" or defName="Raccoon" or defName="Rat" or defName="Deer" or defName="Ibex" or defName="Elk" or defName="Caribou" or defName="WildBoar" or defName="Tortoise" or defName="Cobra" or defName="Monkey" or defName="Boomalope" or defName="Warg"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_AnimalKindBaseDummy</value>
+	</Operation>
+</Patch>

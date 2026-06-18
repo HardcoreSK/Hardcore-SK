@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="Harp"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.MedievalBaseDummy</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ResearchProjectDef[defName="Harp"]</xpath>
+		<value>
+			<label>Enjoyment III</label>
+			<description>description</description>
+			<baseCost>300</baseCost>
+			<prerequisites>
+				<li>Enjoyment_A2</li>
+				<li>Craft_B1</li>
+			</prerequisites>
+			<researchViewX>4.00</researchViewX>
+			<researchViewY>6.00</researchViewY>
+			<tab>Buildings_SK</tab>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="Harpsichord"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.MedievalBaseDummy</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ResearchProjectDef[defName="Harpsichord"]</xpath>
+		<value>
+			<label>Enjoyment IV</label>
+			<description>description</description>
+			<baseCost>400</baseCost>
+			<prerequisites>
+				<li>Harp</li>
+			</prerequisites>
+			<researchViewX>5.00</researchViewX>
+			<researchViewY>6.00</researchViewY>
+			<tab>Buildings_SK</tab>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="Piano"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.MedievalBaseDummy</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ResearchProjectDef[defName="Piano"]</xpath>
+		<value>
+			<label>Enjoyment V</label>
+			<description>description</description>
+			<baseCost>400</baseCost>
+			<techLevel>Medieval</techLevel>
+			<researchViewX>6.00</researchViewX>
+			<researchViewY>6.00</researchViewY>
+			<tab>Buildings_SK</tab>
+		</value>
+	</Operation>
+
+</Patch>

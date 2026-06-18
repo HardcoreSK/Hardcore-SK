@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!--========== Ancient Roads Patch ==========-->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/TerrainDef[defName = "BrokenAsphalt"]</xpath>
+        <value Merge="true">
+            <designationCategory>NaturalFloors</designationCategory>
+            <constructEffect>ConstructDirt</constructEffect>
+            <costList Merge="true">
+                <ConcreteResource>1</ConcreteResource>
+            </costList>
+            <statBases Merge="true">
+                <WorkToBuild>200</WorkToBuild>
+                <Beauty>0</Beauty>
+            </statBases>
+            <researchPrerequisites>
+                <li>Concrete_floor_C1</li>
+            </researchPrerequisites>
+            <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        </value>
+    </Operation>
+</Patch>

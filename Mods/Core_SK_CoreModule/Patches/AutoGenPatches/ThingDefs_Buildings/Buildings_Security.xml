@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Turret_MiniTurret"]</xpath>
+    <value>
+      <label>sentry light turret</label>
+      <graphicData>
+        <texPath>Things/Building/Security/TurretImprovised</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(3,3)</drawSize>
+        <damageData>
+          <rect>(0.2,0.2,0.6,0.6)</rect>
+        </damageData>
+        <shadowData>
+          <volume>(0.27,0.25,0.27)</volume>
+          <offset>(0,0,0)</offset>
+        </shadowData>
+      </graphicData>
+      <uiIconPath>Things/Building/Security/TurretImprovised_ico</uiIconPath>
+	  <statBases Merge="true">
+		<Flammability>1.0</Flammability>
+		<WorkToBuild>800</WorkToBuild>
+		<Mass>25</Mass>
+		<Bulk>15</Bulk>
+	  </statBases>
+      <comps>
+        <li Class="SK.CompProperties_IdlePower">
+          <basePowerConsumption>700</basePowerConsumption>
+        </li>
+        <li Class="CompProperties_Flickable"/>
+        <li Class="CompProperties_Breakdownable"/>
+        <li Class="CompProperties_Stunnable">
+          <affectedDamageDefs>
+            <li>Stun</li>
+            <li>EMP</li>
+          </affectedDamageDefs>
+        </li>
+      </comps>
+      <description>An AI-controlled turret that automatically fires at nearby enemies. Requires 700 W to function.\nCaliber: 5.56x45mm NATO</description>
+      <stuffCategories>
+        <li>RuggedMetallic</li>
+      </stuffCategories>
+      <costStuffCount>100</costStuffCount>
+      <costList>
+        <SentryTurret_Crate>1</SentryTurret_Crate>
+      </costList>
+      <specialDisplayRadius>3</specialDisplayRadius>
+      <building Merge="true">
+        <ai_combatDangerous>false</ai_combatDangerous>
+        <turretGunDef>Gun_MiniTurret</turretGunDef>
+        <turretTopDrawSize>4</turretTopDrawSize>
+      </building>
+      <designationHotKey>Misc1</designationHotKey>
+      <tradeTags>
+        <li>CE_Turret</li>
+      </tradeTags>
+      <minifiedDef>MinifiedTurretGun</minifiedDef>
+      <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[@Name="BaseArtilleryBuilding"]</xpath>
+    <value>
+		<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+		  <texPath>Things/Building/Security/MortarBase</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>(3,3)</drawSize>
+		  <damageData>
+			  <rect>(0.38,0.2,0.56375,0.8)</rect>
+			  <cornerTL>Damage/Corner</cornerTL>
+		  </damageData>
+		  <shadowData>
+			  <offset>(-0.13,-0.87,-0.1)</offset>
+			  <volume>(0.5,0.4,1.05)</volume>
+		  </shadowData>
+	  </graphicData>
+	  <techLevel>Industrial</techLevel>
+	  <castEdgeShadows>false</castEdgeShadows>
+	  <staticSunShadowHeight>0</staticSunShadowHeight>
+	  <stealable/>
+	  <statBases>
+		  <MaxHitPoints>180</MaxHitPoints>
+		  <Flammability>1.0</Flammability>
+		  <WorkToBuild>1700</WorkToBuild>
+		  <Beauty>-60</Beauty>
+		  <Mass>41</Mass>
+		  <Bulk>80</Bulk>
+	  </statBases>
+	  <stuffCategories>
+		  <li>RuggedMetallic</li>
+	  </stuffCategories>
+	  <costStuffCount>120</costStuffCount>
+	  <costList>
+		  <Mortar_Crate>1</Mortar_Crate>
+	  </costList>
+	  <building Merge="true">
+		  <turretGunDef>Artillery_Mortar</turretGunDef>
+		  <uninstallWork>150</uninstallWork>
+		  <spawnedConceptLearnOpportunity>CE_MortarDirectFire</spawnedConceptLearnOpportunity>
+	  </building>
+      <designationHotKey>Misc3</designationHotKey>
+	  <minifiedDef>MinifiedTurret_81mmMortar</minifiedDef>
+	  <placeWorkers>
+		  <li>PlaceWorker_NotUnderRoof</li>
+		  <li>PlaceWorker_TurretTop</li>
+	  </placeWorkers>
+	  <tradeTags>
+		  <li>CE_Turret</li>
+	  </tradeTags>
+	  <researchPrerequisites>
+		  <li>Mortars</li>
+	  </researchPrerequisites>
+	  <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Turret_Mortar"]</xpath>
+    <value>
+	  <label>81mm artillery mortar</label>
+	  <building>
+		  <buildingTags>
+			  <li>Artillery_BaseDestroyer</li>
+			  <li>Artillery_MannedMortar</li>
+		  </buildingTags>
+		  <turretTopDrawSize>4</turretTopDrawSize>
+	  </building>
+      <costListForDifficulty IsNull="True"/>  
+      <designationHotKey>Misc3</designationHotKey>
+	  <uiIconPath>Things/Building/Security/Mortar_ico</uiIconPath>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Artillery_Mortar"]</xpath>
+    <value>
+      <label>81mm mortar</label>
+      <description>Lobs mortar shells on a high arc. Very inaccurate but long-ranged and capable of indirect fire.</description>
+      <graphicData>
+        <texPath>Things/Building/Security/Mortar_Top</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <comps>
+        <li Class="CombatExtended.CompProperties_FireModes">
+          <aiAimMode>AimedShot</aiAimMode>
+        </li>
+        <li Class="CombatExtended.CompProperties_AmmoUser">
+          <magazineSize>1</magazineSize>
+          <reloadTime>7.2</reloadTime>
+          <ammoSet>AmmoSet_81mmMortarShell</ammoSet>
+        </li>
+        <li Class="CombatExtended.CompProperties_Charges">
+          <chargeSpeeds>
+            <li>30</li>
+            <li>50</li>
+            <li>70</li>
+            <li>90</li>
+          </chargeSpeeds>
+        </li>
+      </comps>
+      <verbs>
+        <li Class="CombatExtended.VerbPropertiesCE">
+          <verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+          <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+          <circularError>1</circularError>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_81mmMortarShell_HE</defaultProjectile>
+          <warmupTime>3.00</warmupTime>
+          <minRange>32</minRange>
+          <range>280</range>
+          <burstShotCount>1</burstShotCount>
+          <soundCast>Mortar_LaunchA</soundCast>
+          <muzzleFlashScale>16</muzzleFlashScale>
+          <indirectFirePenalty>1.0</indirectFirePenalty>
+          <targetParams>
+            <canTargetLocations>true</canTargetLocations>
+          </targetParams>
+        </li>
+      </verbs>
+    </value>
+  </Operation>
+
+</Patch>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[@Name="BuildingBase"]</xpath>
+    <value>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bullet</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Arrow</damageDef>
+				<multiplier>0.2</multiplier>
+			</li>
+			<li>
+				<damageDef>Beanbag</damageDef>
+				<multiplier>0.1</multiplier>
+			</li>
+			<li>
+				<damageDef>Optic</damageDef>
+				<multiplier>0.7</multiplier>
+			</li>
+			<li>
+				<damageDef>Microwave</damageDef>
+				<multiplier>0.8</multiplier>
+			</li>
+			<li>
+				<damageDef>Blunt</damageDef>
+				<multiplier>1.2</multiplier>
+			</li>
+			<li>
+				<damageDef>Cut</damageDef>
+				<multiplier>0.7</multiplier>
+			</li>
+			<li>
+				<damageDef>Bite</damageDef>
+				<multiplier>0.55</multiplier>
+			</li>
+			<li>
+				<damageDef>KineticPulse</damageDef>
+				<multiplier>1.2</multiplier>
+			</li>
+		</damageMultipliers>
+    </value>
+  </Operation>
+
+</Patch>
