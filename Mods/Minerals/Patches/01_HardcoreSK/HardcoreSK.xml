@@ -57,6 +57,12 @@
                     <name>ClayBrick</name>
                 </li>
                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ZF_BlocksClay"]/stuffProps</xpath>
+                    <value>
+						<commonality>0</commonality>
+					</value>
+                </li>
+                <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName = "Stone-RockyDirt"]/modExtensions/li[@Class="FertileFields.Terrain"]/above</xpath>
                     <value>
                         <li>ZF_ClaystoneBase_Rough</li>

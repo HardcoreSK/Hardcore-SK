@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Glowstool"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_CavePlantBaseDummy</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Glowstool"]</xpath>
+	  <attribute>Class</attribute>
+	  <value>SK.ThingDef_ClusterPlant</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Glowstool"]</xpath>
+    <value>
+      <label>glowbulb</label>
+      <description>A small glowing bulb, growing in nearly every corner of dark caves. While being nutritious, its very rough taste make it better used as a cooked ingredient. Dies when exposed to light.</description>
+      <thingClass>SK.ClusterPlant</thingClass>
+      <statBases>
+        <MaxHitPoints>65</MaxHitPoints>
+        <Flammability>0.4</Flammability>
+        <Beauty>9</Beauty>
+        <BeautyOutdoors>9</BeautyOutdoors>
+        <Nutrition>0.2</Nutrition>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Plant/PlantGlowbulb</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.3, 0.4, 0.3)</volume>
+        </shadowData>
+      </graphicData>
+      <pathCost>15</pathCost>
+      <ingestible>
+        <foodType>Plant</foodType>
+        <preferability>NeverForNutrition</preferability>
+      </ingestible>
+      <plant>
+        <fertilityMin>0.01</fertilityMin>
+        <fertilitySensitivity>2</fertilitySensitivity>
+        <growDays>12</growDays>
+        <sowTags>
+          <li>Fungiponics</li>
+        </sowTags>
+        <sowResearchPrerequisites>
+          <li>Fungiponics_B1</li>
+        </sowResearchPrerequisites>
+        <dieIfLeafless>true</dieIfLeafless>
+        <harvestMinGrowth>0.90</harvestMinGrowth>
+        <harvestWork>50</harvestWork>
+        <harvestTag>Standard</harvestTag>
+        <harvestedThingDef>RawGlowbulb</harvestedThingDef>
+        <harvestYield>5</harvestYield>
+        <neverBlightable>true</neverBlightable>
+        <visualSizeRange>0.6~0.8</visualSizeRange>
+        <topWindExposure>0.02</topWindExposure>
+        <wildClusterRadius>3</wildClusterRadius>
+        <wildClusterWeight>5</wildClusterWeight>
+        <cavePlantWeight>4.5</cavePlantWeight>
+        <purpose>Food</purpose>
+        <pollution>Any</pollution>
+      </plant>
+      <comps>
+        <li Class="CompProperties_Glower">
+          <glowRadius>4</glowRadius>
+          <glowColor>(5,128,128,0)</glowColor>
+        </li>
+      </comps>
+	  <!-- custom hsk tags -->
+      <cavePlantCommonalityMaxFraction>0.3</cavePlantCommonalityMaxFraction>
+      <minGrowTemperature>0</minGrowTemperature>
+      <minOptimalGrowTemperature>10</minOptimalGrowTemperature>
+      <maxOptimalGrowTemperature>40</maxOptimalGrowTemperature>
+      <maxGrowTemperature>50</maxGrowTemperature>
+      <hasStaticGlower>false</hasStaticGlower>
+      <hasDynamicGlower>true</hasDynamicGlower>
+      <growOnlyOnRoughRock>true</growOnlyOnRoughRock>
+      <growOnlyUndeRoof>true</growOnlyUndeRoof>
+      <growOnlyNearNaturalRock>true</growOnlyNearNaturalRock>
+      <minFertility>0.0</minFertility>
+      <maxFertility>999.0</maxFertility>
+      <minLight>0.0</minLight>
+      <maxLight>0.6</maxLight>
+      <clusterSizeRange>
+        <min>1</min>
+        <max>4</max>
+      </clusterSizeRange>
+      <clusterSpawnRadius>3.5</clusterSpawnRadius>
+      <clusterExclusivityRadiusOffset>5</clusterExclusivityRadiusOffset>
+      <clusterExclusivityRadiusFactor>1</clusterExclusivityRadiusFactor>
+      <isSymbiosisPlant>false</isSymbiosisPlant>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Agarilux"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_CavePlantBaseDummy</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Agarilux"]</xpath>
+	  <attribute>Class</attribute>
+	  <value>SK.ThingDef_ClusterPlant</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Agarilux"]</xpath>
+    <value>
+      <label>gleamcap</label>
+      <description>A massive caveworld mushroom. Known for its natural healing properties by caveworld tenders. It dies when exposed to light.</description>
+      <thingClass>SK.ClusterPlant_Gleamcap</thingClass>
+      <statBases>
+        <MaxHitPoints>90</MaxHitPoints>
+        <Flammability>0.3</Flammability>
+        <Beauty>11</Beauty>
+        <BeautyOutdoors>11</BeautyOutdoors>
+        <Nutrition>0.4</Nutrition>
+      </statBases>
+	  <altitudeLayer />
+      <graphicData>
+        <texPath>Things/Plant/PlantGleamcap</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.5, 0.5, 0.4)</volume>
+        </shadowData>
+      </graphicData>
+      <pathCost>18</pathCost>
+      <fillPercent>0.20</fillPercent>
+      <ingestible>
+        <foodType>Plant</foodType>
+        <preferability>NeverForNutrition</preferability>
+      </ingestible>
+      <plant>
+        <fertilityMin>0.01</fertilityMin>
+        <fertilitySensitivity>2</fertilitySensitivity>
+        <growDays>9</growDays>
+		<dieIfLeafless>false</dieIfLeafless>
+        <sowTags>
+          <li>Fungiponics</li>
+        </sowTags>
+        <sowResearchPrerequisites>
+          <li>Fungiponics_B1</li>
+        </sowResearchPrerequisites>
+        <sowMinSkill>8</sowMinSkill>
+        <harvestMinGrowth>0.90</harvestMinGrowth>
+        <harvestWork>100</harvestWork>
+        <harvestTag>Standard</harvestTag>
+        <harvestedThingDef>GleamcapStem</harvestedThingDef>
+        <harvestYield>4</harvestYield>
+        <neverBlightable>true</neverBlightable>
+        <visualSizeRange>0.3~1.2</visualSizeRange>
+        <topWindExposure>0.03</topWindExposure>
+        <cavePlantWeight>3.5</cavePlantWeight>
+        <wildClusterRadius>3</wildClusterRadius>
+        <wildClusterWeight>5</wildClusterWeight>
+        <purpose>Food</purpose>
+        <pollution>Any</pollution>
+      </plant>
+      <comps>
+        <li Class="CompProperties_Glower">
+          <glowRadius>4</glowRadius>
+          <glowColor>(5,128,85,0)</glowColor>
+        </li>
+      </comps>
+      <cavePlantCommonalityMaxFraction>0.3</cavePlantCommonalityMaxFraction>
+      <minGrowTemperature>0</minGrowTemperature>
+      <minOptimalGrowTemperature>10</minOptimalGrowTemperature>
+      <maxOptimalGrowTemperature>40</maxOptimalGrowTemperature>
+      <maxGrowTemperature>50</maxGrowTemperature>
+      <hasStaticGlower>false</hasStaticGlower>
+      <hasDynamicGlower>true</hasDynamicGlower>
+      <growOnlyOnRoughRock>true</growOnlyOnRoughRock>
+      <growOnlyUndeRoof>true</growOnlyUndeRoof>
+      <growOnlyNearNaturalRock>true</growOnlyNearNaturalRock>
+      <minFertility>0.0</minFertility>
+      <maxFertility>999.0</maxFertility>
+      <minLight>0.0</minLight>
+      <maxLight>0.6</maxLight>
+      <clusterSizeRange>
+        <min>1</min>
+        <max>3</max>
+      </clusterSizeRange>
+      <clusterSpawnRadius>1.5</clusterSpawnRadius>
+      <clusterExclusivityRadiusOffset>2</clusterExclusivityRadiusOffset>
+      <clusterExclusivityRadiusFactor>2</clusterExclusivityRadiusFactor>
+      <isSymbiosisPlant>false</isSymbiosisPlant>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Bryolux"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_CavePlantBaseDummy</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Bryolux"]</xpath>
+	  <attribute>Class</attribute>
+	  <value>SK.ThingDef_ClusterPlant</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Bryolux"]</xpath>
+    <value>
+      <label>shimmershroom</label>
+      <description>Some nice and tasty caveworld shimmershrooms. Much appreciated for their delicate taste and nutrition qualities by caveworlds inhabitants. Dies when exposed to light.</description>
+      <thingClass>SK.ClusterPlant</thingClass>
+      <statBases>
+        <MaxHitPoints>25</MaxHitPoints>
+        <Flammability>0.4</Flammability>
+        <Beauty>8</Beauty>
+        <BeautyOutdoors>8</BeautyOutdoors>
+        <Nutrition>0.15</Nutrition>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Plant/PlantShimmershroom</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.3, 0.3, 0.2)</volume>
+        </shadowData>
+      </graphicData>
+      <neverMultiSelect>false</neverMultiSelect>
+      <pathCost>18</pathCost>
+      <ingestible>
+        <foodType>Plant</foodType>
+        <preferability>NeverForNutrition</preferability>
+      </ingestible>
+      <plant>
+        <fertilityMin>0.01</fertilityMin>
+        <fertilitySensitivity>2</fertilitySensitivity>
+        <growDays>18</growDays>
+        <sowTags>
+          <li>Fungiponics</li>
+        </sowTags>
+        <sowResearchPrerequisites>
+          <li>Fungiponics_B1</li>
+        </sowResearchPrerequisites>
+        <sowMinSkill>7</sowMinSkill>
+        <dieIfLeafless>true</dieIfLeafless>
+        <harvestMinGrowth>0.90</harvestMinGrowth>
+        <harvestWork>50</harvestWork>
+        <harvestTag>Standard</harvestTag>
+        <harvestedThingDef>RawShimmershroom</harvestedThingDef>
+        <harvestYield>5</harvestYield>
+        <neverBlightable>true</neverBlightable>
+        <visualSizeRange>0.6~0.8</visualSizeRange>
+        <topWindExposure>0.03</topWindExposure>
+        <cavePlantWeight>7.5</cavePlantWeight>
+        <wildClusterRadius>3</wildClusterRadius>
+        <wildClusterWeight>5</wildClusterWeight>
+        <purpose>Food</purpose>
+        <pollution>Any</pollution>
+      </plant>
+      <comps>
+        <li Class="CompProperties_Glower">
+          <glowRadius>4</glowRadius>
+          <glowColor>(128,5,100,0)</glowColor>
+        </li>
+      </comps>
+      <cavePlantCommonalityMaxFraction>0.6</cavePlantCommonalityMaxFraction>
+      <minGrowTemperature>0</minGrowTemperature>
+      <minOptimalGrowTemperature>10</minOptimalGrowTemperature>
+      <maxOptimalGrowTemperature>40</maxOptimalGrowTemperature>
+      <maxGrowTemperature>50</maxGrowTemperature>
+      <hasStaticGlower>false</hasStaticGlower>
+      <hasDynamicGlower>true</hasDynamicGlower>
+      <growOnlyOnRoughRock>true</growOnlyOnRoughRock>
+      <growOnlyUndeRoof>true</growOnlyUndeRoof>
+      <growOnlyNearNaturalRock>true</growOnlyNearNaturalRock>
+      <minFertility>0.0</minFertility>
+      <maxFertility>999.0</maxFertility>
+      <minLight>0.0</minLight>
+      <maxLight>0.6</maxLight>
+      <clusterSizeRange>
+        <min>4</min>
+        <max>7</max>
+      </clusterSizeRange>
+      <clusterSpawnRadius>2.0</clusterSpawnRadius>
+      <clusterExclusivityRadiusOffset>5</clusterExclusivityRadiusOffset>
+      <clusterExclusivityRadiusFactor>2</clusterExclusivityRadiusFactor>
+      <isSymbiosisPlant>false</isSymbiosisPlant>
+    </value>
+  </Operation>
+
+	<!-- This is now vanilla -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Plant_Timbershroom"]/plant</xpath>
+		<value>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>3</wildClusterWeight>
+			<cavePlantWeight>0.6</cavePlantWeight>
+			<sowTags Inherit="False">
+				<li>Fungiponics</li>
+			</sowTags>
+			<harvestedThingDef>WoodLog</harvestedThingDef>
+			<blockAdjacentSow>true</blockAdjacentSow>
+			<sowResearchPrerequisites>
+				<li>Fungiponics_A1</li>
+			</sowResearchPrerequisites>
+			<sowWork>750</sowWork>
+			<harvestWork>300</harvestWork>
+			<harvestTag>Wood</harvestTag>
+			<harvestMinGrowth>0.40</harvestMinGrowth>
+			<harvestFailable>false</harvestFailable>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<interferesWithRoof>false</interferesWithRoof>
+			<harvestYield>60</harvestYield>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Plant_Timbershroom"]</xpath>
+		<value>
+			<selectable>true</selectable>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1456,8 +1456,8 @@
             </comps>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Glowstool"]/plant/maxMeshCount</xpath>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Glowstool"]/plant</xpath>
         <value>
             <maxMeshCount>1</maxMeshCount>
         </value>

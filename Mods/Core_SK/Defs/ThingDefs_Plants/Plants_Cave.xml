@@ -32,7 +32,7 @@
 		</plant>
 		<hideAtSnowOrSandDepth>0.4</hideAtSnowOrSandDepth>
 	</ThingDef>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="SK_CavePlantBase" Class="SK.ThingDef_ClusterPlant">
 		<defName>Glowstool</defName>
 		<label>glowbulb</label>
@@ -276,7 +276,7 @@
 		<clusterExclusivityRadiusFactor>2</clusterExclusivityRadiusFactor>
 		<isSymbiosisPlant>false</isSymbiosisPlant>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="SK_CavePlantBase" Class="SK.ThingDef_ClusterPlant">
 		<defName>Brightbells</defName>
 		<label>brightbells</label>

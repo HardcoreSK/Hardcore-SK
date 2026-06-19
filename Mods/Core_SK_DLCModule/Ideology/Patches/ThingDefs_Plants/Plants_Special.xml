@@ -13,27 +13,14 @@
 -->
 
 	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="Plant_Timbershroom"]/plant</xpath>
+		<xpath>Defs/ThingDef[defName="Plant_Nutrifungus"]/plant</xpath>
 		<value>
 			<wildClusterRadius>3</wildClusterRadius>
 			<wildClusterWeight>3</wildClusterWeight>
 			<cavePlantWeight>0.6</cavePlantWeight>
-			<sowTags Inherit="False">
+			<sowTags Merge="true">
 				<li>Fungiponics</li>
 			</sowTags>
-			<harvestedThingDef>WoodLog</harvestedThingDef>
-			<blockAdjacentSow>true</blockAdjacentSow>
-			<sowResearchPrerequisites>
-				<li>Fungiponics_A1</li>
-			</sowResearchPrerequisites>
-			<sowWork>750</sowWork>
-			<harvestWork>300</harvestWork>
-			<harvestTag>Wood</harvestTag>
-			<harvestMinGrowth>0.40</harvestMinGrowth>
-			<harvestFailable>false</harvestFailable>
-			<mustBeWildToSow>false</mustBeWildToSow>
-			<interferesWithRoof>false</interferesWithRoof>
-			<harvestYield>60</harvestYield>
 		</value>
 	</Operation>
 
@@ -41,13 +28,6 @@
 		<xpath>Defs/ThingDef[defName="Plant_Fibercorn"]/plant</xpath>
 		<value>
             <visualSizeRange>0.5~0.75</visualSizeRange>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Plant_Timbershroom"]</xpath>
-		<value>
-			<selectable>true</selectable>
 		</value>
 	</Operation>
 
