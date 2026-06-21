@@ -5,7 +5,7 @@
     <xpath>Defs/ThingDef[defName="Wall"]</xpath>
     <value>
       <description>An impassable wall. It is capable of holding up a roof.</description>
-      <building>
+      <building Merge="True">
         <relatedBuildCommands>
 			<li>Door</li>
 			<li>MDoor</li>
