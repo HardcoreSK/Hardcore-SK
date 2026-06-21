@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<!-- Overrides for 1.6\Defs\ThingDefs_Building\Buildings_RatkinTunnel.xml -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RK_EmpBomb"]</xpath>
+		<value>
+			<thingClass>NewRatkin.Building_EmpBomb</thingClass>
+			<minifiedDef>MinifiedEMP</minifiedDef>
+			<thingCategories>
+				<li>BuildingsSpecial</li>
+			</thingCategories>
+			<graphicData>
+				<texPath>Things/Item/RK_EMP</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>1</drawSize>
+			</graphicData>
+			<rotatable>false</rotatable>
+			<altitudeLayer>Building</altitudeLayer>
+			<fillPercent>0.2</fillPercent>
+			<costList>
+				<Plasteel>60</Plasteel>
+				<ComponentIndustrial>6</ComponentIndustrial>
+				<ComponentSpacer>1</ComponentSpacer>
+			</costList>
+			<statBases>
+				<Mass>10</Mass>
+				<MaxHitPoints>150</MaxHitPoints>
+				<WorkToBuild>2500</WorkToBuild>
+				<Flammability>0</Flammability>
+			</statBases>
+			<constructEffect>ConstructMetal</constructEffect>
+			<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+			<blockWind>false</blockWind>
+			<tickerType>Normal</tickerType>
+			<defaultPlacingRot>North</defaultPlacingRot>
+			<passability>PassThroughOnly</passability>
+			<killedLeavings>
+				<Plasteel>45</Plasteel>
+				<ComponentIndustrial>4</ComponentIndustrial>
+			</killedLeavings>
+			<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+			<comps>
+				<li Class="NewRatkin.CompProperties_CountDown">
+					<compClass>NewRatkin.Comp_CountDown</compClass>
+					<timeLimit>50</timeLimit>
+				</li>
+				<li>
+					<compClass>NewRatkin.Comp_Emp</compClass>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RK_GuerrillaTunnel"]</xpath>
+		<value>
+			<thingClass>NewRatkin.Building_GuerrillaTunnel</thingClass>
+			<graphicData>
+				<texPath>Things/Building/RK_GuerrillaTunnel</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>4</drawSize>
+			</graphicData>
+			<rotatable>false</rotatable>
+			<altitudeLayer>Building</altitudeLayer>
+			<fillPercent>0.8</fillPercent>
+			<statBases>
+				<MaxHitPoints>840</MaxHitPoints>
+				<Flammability>0.0</Flammability>
+			</statBases>
+			<blockWind>false</blockWind>
+			<tickerType>Normal</tickerType>
+			<passability>PassThroughOnly</passability>
+			<killedLeavings>
+				<Plasteel>240</Plasteel>
+				<SteelBar>75</SteelBar>
+				<ComponentIndustrial>3</ComponentIndustrial>
+				<Chemfuel>120</Chemfuel>
+			</killedLeavings>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RK_GuerrillaTunnelSpawner"]</xpath>
+		<value>
+			<thingClass>NewRatkin.GuerrillaTunnelSpawner</thingClass>
+			<tickerType>Normal</tickerType>
+			<drawerType>RealtimeOnly</drawerType>
+			<alwaysFlee>true</alwaysFlee>
+		</value>
+	</Operation>
+</Patch>

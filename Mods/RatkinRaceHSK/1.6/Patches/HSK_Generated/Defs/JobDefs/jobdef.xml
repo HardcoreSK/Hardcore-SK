@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/JobDef[defName="RK_Job_SpectatePray"]</xpath>
+		<value>
+			<driverClass>JobDriver_Spectate</driverClass>
+			<reportString>praying.</reportString>
+		</value>
+	</Operation>
+</Patch>

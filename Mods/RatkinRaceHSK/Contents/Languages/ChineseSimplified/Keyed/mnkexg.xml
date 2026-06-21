@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- Events -->
+
+  <!-- EN: EMP Bomb Explosion -->
+  <EMPExplode>EMP爆炸</EMPExplode>
+  <!-- EN: An electro-magnetic pulse set inside the base has gone off and overloaded the power generators, causing them to break down. -->
+  <EMPExplodeDesc>EMP攻击使发电机过载而损坏。</EMPExplodeDesc>
+  <!-- EN: Seeing that the EMP has gone off from afar, ratkin forces waiting nearby join the assault. -->
+  <MessageCommandoAssaulting>鼠族隧道游击队开始攻击殖民地。</MessageCommandoAssaulting>
+  <!-- EN: The rat hole has been destroyed. -->
+  <RatHoleGone>鼠族隧道消失了。</RatHoleGone>
+
+  <!-- Shields Functionality -->
+
+  <!-- EN: Deflect! -->
+  <ShieldBlock>偏转攻击！</ShieldBlock>
+  <!-- EN: Deflect Chance: -->
+  <ShieldBlockChance>偏转机率:</ShieldBlockChance>
+  <!-- EN: Block Chance(Heat) -->
+  <BlockChance_Heat>格档率（热能）</BlockChance_Heat>
+  <!-- EN: Block Chance(Blunt) -->
+  <BlockChance_Blunt>格档率（钝器）</BlockChance_Blunt>
+  <!-- EN: Block Chance(Sharp) -->
+  <BlockChance_Sharp>格档率（利器）</BlockChance_Sharp>
+  <!-- EN: Wearer Block Chance(Heat) -->
+  <BlockChanceWear_Heat>装备者格档率（热能）</BlockChanceWear_Heat>
+  <!-- EN: Wearer Block Chance(Blunt) -->
+  <BlockChanceWear_Blunt>装备者格档率（钝器）</BlockChanceWear_Blunt>
+  <!-- EN: Wearer Block Chance(Sharp) -->
+  <BlockChanceWear_Sharp>装备者格档率（利器）</BlockChanceWear_Sharp>
+  <!-- EN: Deflection\nThe chance to block damage from outside.\n\nOnly frontal attacks can be blocked; the allowed arc differs by shield. Check this item's "shield deflect angle" stat.\nThis chance is based on wearer's Melee skill and armor rate of this equipment. -->
+  <BlockChanceDefualtDesc>攻击偏转\n格挡来袭攻击的几率。\n\n偏转只能格挡正面140°范围内的攻击。\n此几率取决于盾牌装备者的近战技能等级和此装备的护甲值。</BlockChanceDefualtDesc>
+
+  <!-- Join Requirements -->
+
+  <!-- EN: At least {0} injured folk in the settlement. -->
+  <RK_JoinReq_Injured_DescShort>殖民地里至少要有{0}名伤患。</RK_JoinReq_Injured_DescShort>
+  <!-- EN: Are there any here in need of a healing hand? -->
+  <RK_JoinReq_Priest_Injured_Desc1>“这里有人需要帮忙救治吗？”</RK_JoinReq_Priest_Injured_Desc1>
+  <!-- EN: With faith, even hardship may yet be overcome. -->
+  <RK_JoinReq_Priest_Injured_Desc2>“只要信念坚定，再大的困难也能克服。”</RK_JoinReq_Priest_Injured_Desc2>
+  <!-- EN: At least {0} medicine in store. -->
+  <RK_JoinReq_Medicine_DescShort>殖民地里至少要有{0}份医药库存。</RK_JoinReq_Medicine_DescShort>
+  <!-- EN: It would ease my heart to see ample remedies here. -->
+  <RK_JoinReq_Priest_Medicine_Desc1>“如果这里医药充足，我就能放心住下来了。”</RK_JoinReq_Priest_Medicine_Desc1>
+  <!-- EN: With enough medicine, I could tend to many more souls... -->
+  <RK_JoinReq_Priest_Medicine_Desc2>“只要医药充足，我就能救治更多人了...”</RK_JoinReq_Priest_Medicine_Desc2>
+  <!-- EN: Settlement wealth must be at least {0}. -->
+  <RK_JoinReq_StableLife_DescShort>殖民地的财富值至少要达到{0}。</RK_JoinReq_StableLife_DescShort>
+  <!-- EN: I long to dwell in a proper village. The wanderer's road is too cruel. -->
+  <RK_JoinReq_StableLife_Desc1>“我很想找个像样的村镇住下来，四处漂泊的生活还是太残酷了。”</RK_JoinReq_StableLife_Desc1>
+  <!-- EN: I seek a steadier village life. Small hamlets ask too much of a soul. -->
+  <RK_JoinReq_StableLife_Desc2>“我想要过上更安稳的日子。那种破旧的小村镇实在是待不下去。”</RK_JoinReq_StableLife_Desc2>
+  <!-- EN: Settlement wealth must be at least {0}. -->
+  <RK_JoinReq_NewLife_DescShort>殖民地的财富值至少要达到{0}。</RK_JoinReq_NewLife_DescShort>
+  <!-- EN: With means such as these, perhaps I could begin anew. -->
+  <RK_JoinReq_NewLife_Desc1>“有了这样的条件兜底，也许我还能东山再起。”</RK_JoinReq_NewLife_Desc1>
+  <!-- EN: I have had my fill of a poor life. -->
+  <RK_JoinReq_NewLife_Desc2>“我已经过够穷日子了。”</RK_JoinReq_NewLife_Desc2>
+  <!-- EN: No settlers with these backgrounds: {0} -->
+  <RK_JoinReq_NobleTired_DescShort>不能有具备以下背景故事的殖民者：\n{0}</RK_JoinReq_NobleTired_DescShort>
+  <!-- EN: I am weary of bowing and scraping before the highborn. -->
+  <RK_JoinReq_NobleTired_Desc1>“我受够了在那些权贵面前低三下四。”</RK_JoinReq_NobleTired_Desc1>
+  <!-- EN: I want no more dealings with nobles. -->
+  <RK_JoinReq_NobleTired_Desc2>“我可不想再和那些贵族打交道了。”</RK_JoinReq_NobleTired_Desc2>
+  <!-- EN: Highest Empire title among settlers must be {0} or lower. -->
+  <RK_JoinReq_ServantRoyalTitle_DescShort>不能有荣誉头衔高于{0}的殖民者。</RK_JoinReq_ServantRoyalTitle_DescShort>
+  <!-- EN: I am weary of currying favor with the highborn. -->
+  <RK_JoinReq_ServantRoyalTitle_Desc1>“鬼才想去讨好那些权贵。”</RK_JoinReq_ServantRoyalTitle_Desc1>
+  <!-- EN: If I must serve, I shall choose my own master. -->
+  <RK_JoinReq_ServantRoyalTitle_Desc2>“如果非要给别人当手下，那我要自己去选值得追随的老大。”</RK_JoinReq_ServantRoyalTitle_Desc2>
+  <!-- EN:  or  -->
+  <RK_JoinReq_ItemSeparatorOr>或</RK_JoinReq_ItemSeparatorOr>
+  <!-- EN: Required: {0} -->
+  <RK_JoinReq_WindFreedom_DescShort>需要：{0}</RK_JoinReq_WindFreedom_DescShort>
+  <!-- EN: Life on the road has its charms, yet a spell of rest does too. -->
+  <RK_JoinReq_WindFreedom_Desc1>“四处漂泊自有其魅力，但偶尔找个地方歇歇脚也不错。”</RK_JoinReq_WindFreedom_Desc1>
+  <!-- EN: Even a wanderer has tastes. I would need gear worth using. -->
+  <RK_JoinReq_WindFreedom_Desc2>“怎么？身为漂泊者的我当然也有自己的讲究。我需要些值得一用的装备。”</RK_JoinReq_WindFreedom_Desc2>
+  <!-- EN: Need a settler with all of these skills: {0} -->
+  <RK_JoinReq_SeekingMentor_DescShort>需要一名具备以下所有技能的殖民者：\n{0}</RK_JoinReq_SeekingMentor_DescShort>
+  <!-- EN: I heed only one stronger than myself. -->
+  <RK_JoinReq_SeekingMentor_Desc1>“只有比我更厉害的人才能命令我。”</RK_JoinReq_SeekingMentor_Desc1>
+  <!-- EN: I seek a true warrior. Is there one among you? -->
+  <RK_JoinReq_SeekingMentor_Desc2>“我在寻找一位真正的战士。你们之中有这样的人吗？”</RK_JoinReq_SeekingMentor_Desc2>
+  <!-- EN: Need a settler with at least one of these skills: {0} -->
+  <RK_JoinReq_Prepared_DescShort>需要一名具备以下任意技能的殖民者：\n{0}</RK_JoinReq_Prepared_DescShort>
+  <!-- EN: I am tired of surviving by my wits alone. I seek a proper mentor. -->
+  <RK_JoinReq_Prepared_Desc1>“我厌倦只靠耍小聪明活下去了。我在寻找一位正经的师傅。”</RK_JoinReq_Prepared_Desc1>
+  <!-- EN: Be it battle or craft, someone here must truly know their trade. -->
+  <RK_JoinReq_Prepared_Desc2>“不管是打架还是做东西，这里总该有真正的行家吧？”</RK_JoinReq_Prepared_Desc2>
+  <!-- EN: No special requirements. -->
+  <RK_JoinReq_JoinHope_DescShort>没有特殊需求。</RK_JoinReq_JoinHope_DescShort>
+  <!-- EN: A pleasure to meet you. -->
+  <RK_JoinReq_JoinHope_Desc1>“很高兴见到你。”</RK_JoinReq_JoinHope_Desc1>
+  <!-- EN: I hope we shall get along well. -->
+  <RK_JoinReq_JoinHope_Desc2>“希望我们能相处愉快。”</RK_JoinReq_JoinHope_Desc2>
+
+  <!-- Abilities -->
+
+  <!-- EN: Next Prayer service ready in -->
+  <AbilityPrayerServiceCooldown>剩余冷却时间</AbilityPrayerServiceCooldown>
+  <!-- EN: {PAWN_labelShort} hosts a prayer service. -->
+  <MessagePrayerServiceStart>祷告会由{PAWN_labelShort}主持。</MessagePrayerServiceStart>
+  <!-- EN: prayer service has been aborted. -->
+  <MessagePrayerServiceAborted>祷告会由于某种原因而中止。</MessagePrayerServiceAborted>
+  <!-- EN: prayer service has ended. -->
+  <MessagePrayerServiceEnded>祷告会结束了。</MessagePrayerServiceEnded>
+  <!-- EN: Must target a hostile target. -->
+  <RK_AbilityMustTargetHostile>只能以敌对单位为目标。</RK_AbilityMustTargetHostile>
+  <!-- EN: Face direction -->
+  <RK_ShieldFaceDirection>面朝指定方向</RK_ShieldFaceDirection>
+  <!-- EN: Click a point to face that direction. Hold position while facing. Target a pawn to track them continuously. -->
+  <RK_ShieldFaceDirectionDesc>命令殖民者坚守原地，并面朝目标点所在的方向。如果以单位为目标，则殖民者面朝的方向会根据其位置持续变化。</RK_ShieldFaceDirectionDesc>
+  <!-- EN: facing direction. -->
+  <RK_ShieldFaceDirectionReport>面朝指定方向。</RK_ShieldFaceDirectionReport>
+  <!-- EN: Must be drafted. -->
+  <RK_ShieldFaceDirection_NotDrafted>必须处于征召状态。</RK_ShieldFaceDirection_NotDrafted>
+  <!-- EN: Cannot use while dead or downed. -->
+  <RK_ShieldFaceDirection_InvalidState>无法在死亡或倒地状态下使用。</RK_ShieldFaceDirection_InvalidState>
+  <!-- EN: Cannot use while busy. -->
+  <RK_ShieldFaceDirection_Busy>无法在忙碌时使用。</RK_ShieldFaceDirection_Busy>
+  <!-- EN: Shield is inactive. -->
+  <RK_ShieldFaceDirection_ShieldInactive>盾牌无效。</RK_ShieldFaceDirection_ShieldInactive>
+  <!-- EN: Cooldown: {0} -->
+  <RK_ShieldFaceDirection_Cooldown>冷却中：{0}</RK_ShieldFaceDirection_Cooldown>
+  <!-- EN: already giving a prayer meeting. -->
+  <AbilityPrayerServiceDisabledAlreadyGivingPrayerService>正在举行祷告会。</AbilityPrayerServiceDisabledAlreadyGivingPrayerService>
+  <!-- EN: can't use when drafted. -->
+  <AbilityPrayerServiceDisabledDrafted>无法在征召状态下使用。</AbilityPrayerServiceDisabledDrafted>
+  <!-- EN: No colonist-built pulpit. -->
+  <AbilityPrayerServiceDisabledNoPulpitBuilding>缺少殖民者建造的神职讲台。</AbilityPrayerServiceDisabledNoPulpitBuilding>
+  <!-- EN: Cannot path to the pulpit interaction cell. -->
+  <AbilityPrayerServiceDisabledCannotReachPulpit>无法抵达神职讲台所在的位置。</AbilityPrayerServiceDisabledCannotReachPulpit>
+  <!-- EN: The pulpit cannot be reserved (in use or blocked). -->
+  <AbilityPrayerServiceDisabledCannotReservePulpit>神职讲台无法被预留（正在使用或被阻挡）。</AbilityPrayerServiceDisabledCannotReservePulpit>
+  <!-- EN: Pulpit interaction cell is out of bounds. -->
+  <AbilityPrayerServiceDisabledInteractionCellOutOfBounds>神职讲台所在的位置超出边界。</AbilityPrayerServiceDisabledInteractionCellOutOfBounds>
+  <!-- EN: Pulpit interaction cell is in a forbidden area. -->
+  <AbilityPrayerServiceDisabledInteractionCellForbidden>神职讲台处于可活动区域之外。</AbilityPrayerServiceDisabledInteractionCellForbidden>
+  <!-- EN: Pulpit interaction cell is not standable. -->
+  <AbilityPrayerServiceDisabledInteractionCellNotStandable>神职讲台所在的位置无法站立。</AbilityPrayerServiceDisabledInteractionCellNotStandable>
+  <!-- EN: The pulpit is forbidden to this pawn. -->
+  <AbilityPrayerServiceDisabledPulpitForbidden>此人被禁止使用神职讲台。</AbilityPrayerServiceDisabledPulpitForbidden>
+  <!-- EN: The pulpit is on fire. -->
+  <AbilityPrayerServiceDisabledPulpitBurning>神职讲台着火了。</AbilityPrayerServiceDisabledPulpitBurning>
+  <!-- EN: The pulpit area is too dangerous. -->
+  <AbilityPrayerServiceDisabledPulpitDangerous>神职讲台所在的位置过于危险。</AbilityPrayerServiceDisabledPulpitDangerous>
+  <!-- EN: Worship space is too small (room must be larger than 25 cells). -->
+  <AbilityPrayerServiceDisabledRoomTooSmall>可供祈祷的空间过小（房间面积必须大于25格）。</AbilityPrayerServiceDisabledRoomTooSmall>
+
+  <!-- Miscellaneous -->
+
+  <!-- EN: Equipped {0} and dropped {1}. Reason: {2} -->
+  <RK_ApparelWeaponIncompatible_Dropped>装备{0}并丢下{1}。原因：{2}</RK_ApparelWeaponIncompatible_Dropped>
+  <!-- EN: Equipped {0} and dropped {1}. -->
+  <RK_ApparelWeaponIncompatible_Dropped_Default>装备{0}并丢下{1}。</RK_ApparelWeaponIncompatible_Dropped_Default>
+  <!-- EN: Incompatible weapon -->
+  <RK_GripIncompatible>武器不兼容</RK_GripIncompatible>
+  <!-- EN: Cannot equip {0}: incompatible with equipped weapon {1}. {2} -->
+  <RK_GripIncompatible_Equip>无法装备{0}：与已装备的{1}不兼容。{2}</RK_GripIncompatible_Equip>
+  <!-- EN: Cannot equip {0}: incompatible with equipped weapon {1}. -->
+  <RK_GripIncompatible_Equip_Default>无法装备{0}：与已装备的{1}不兼容。</RK_GripIncompatible_Equip_Default>
+  <!-- EN: Cannot equip {0}: incompatible with worn equipment {1}. {2} -->
+  <RK_WeaponGripIncompatible_Equip>无法装备{0}：与已装备的{1}不兼容。{2}</RK_WeaponGripIncompatible_Equip>
+  <!-- EN: Cannot equip {0}: incompatible with worn equipment {1}. -->
+  <RK_WeaponGripIncompatible_Equip_Default>无法装备{0}：与已装备的{1}不兼容。</RK_WeaponGripIncompatible_Equip_Default>
+  <!-- EN: One-handed -->
+  <RK_GripType_OneHand>单手</RK_GripType_OneHand>
+  <!-- EN: Two-handed -->
+  <RK_GripType_TwoHand>双手</RK_GripType_TwoHand>
+  <!-- EN: Special -->
+  <RK_GripType_Special>特殊</RK_GripType_Special>
+  <!-- EN: Weapon grip type -->
+  <RK_WeaponGripType_Label>武器握持类型</RK_WeaponGripType_Label>
+  <!-- EN: How this weapon is classified by grip type. Equipment with a grip filter allows only weapons that share at least one listed grip type. -->
+  <RK_WeaponGripType_Report>此武器的握持类型。武器握持类型包括：单手、双手和特殊。某些装备具有握持类型方面的限制，例如鼠族重盾只能与单手或特殊握持类型的武器一同装备。</RK_WeaponGripType_Report>
+  <!-- EN: Compatible weapon types -->
+  <RK_AllowedGripType_Label>可兼容的武器握持类型</RK_AllowedGripType_Label>
+  <!-- EN: Weapon grip types that can be wielded as primary weapon together with this equipment. -->
+  <RK_AllowedGripType_Report>此装备只能与符合这些握持类型的武器一同装备。</RK_AllowedGripType_Report>
+
+  <!-- Wandering Trader -->
+
+  <!-- EN: Info -->
+  <RK_WanderingTrader_Info>查看信息</RK_WanderingTrader_Info>
+  <!-- EN: View settlers seeking to join -->
+  <RK_WanderingTrader_ViewSettlers>查看想要加入的殖民者</RK_WanderingTrader_ViewSettlers>
+  <!-- EN: Mercenary search -->
+  <RK_WanderingTrader_MercenarySearch>佣兵查找</RK_WanderingTrader_MercenarySearch>
+  <!-- EN: Talk to leader -->
+  <RK_WanderingCaravan_TalkToLeader>和商队领袖交谈</RK_WanderingCaravan_TalkToLeader>
+  <!-- EN: Dismiss caravan -->
+  <RK_WanderingCaravan_DismissCaravan>送走商队</RK_WanderingCaravan_DismissCaravan>
+  <!-- EN: Trade goods -->
+  <RK_WanderingCaravan_TradeGoods>交易货物</RK_WanderingCaravan_TradeGoods>
+  <!-- EN: Commission item -->
+  <RK_WanderingCaravan_Commission>委托物品</RK_WanderingCaravan_Commission>
+  <!-- EN: Recruit settlers -->
+  <RK_WanderingCaravan_SettleProposal>招募请求</RK_WanderingCaravan_SettleProposal>
+  <!-- EN: End conversation -->
+  <RK_WanderingCaravan_EndDialog>结束交谈</RK_WanderingCaravan_EndDialog>
+  <!-- EN: {0} greets you warmly. -->
+  <RK_WanderingCaravan_LeaderGreeting>{0}向你致以亲切的问候。</RK_WanderingCaravan_LeaderGreeting>
+  <!-- EN: Caravan leader -->
+  <RK_WanderingCaravan_LeaderTitle>商队领袖</RK_WanderingCaravan_LeaderTitle>
+  <!-- EN: Caravan arrival -->
+  <RK_WanderingCaravan_ArrivalLetterLabel>鼠族游商</RK_WanderingCaravan_ArrivalLetterLabel>
+  <!-- EN: A wandering ratkin caravan is approaching. Talk to the leader to initiate trade or recruit new settlers. -->
+  <RK_WanderingCaravan_ArrivalLetter>一队鼠族游商正在接近。与他们的领袖交谈以进行贸易或招募殖民者。</RK_WanderingCaravan_ArrivalLetter>
+  <!-- EN: Propose -->
+  <RK_WanderingCaravan_AcceptOne>招募</RK_WanderingCaravan_AcceptOne>
+  <!-- EN: Propose all -->
+  <RK_WanderingCaravan_AcceptAll>全部招募</RK_WanderingCaravan_AcceptAll>
+  <!-- EN: {0} has joined the colony. -->
+  <RK_WanderingCaravan_OneJoined>{0}加入了殖民地。</RK_WanderingCaravan_OneJoined>
+  <!-- EN: {0} have joined the colony. -->
+  <RK_WanderingCaravan_AllJoined>{0}加入了殖民地。</RK_WanderingCaravan_AllJoined>
+  <!-- EN: Commission feature is under development. -->
+  <RK_WanderingCaravan_CommissionPlaceholder>委托系统目前仍处于开发阶段。</RK_WanderingCaravan_CommissionPlaceholder>
+  <!-- EN: The caravan is already on the map. Dismiss the current caravan if you want to spawn another one. -->
+  <RK_WanderingCaravan_AlreadySpawned>当前地图已存在鼠族游商。</RK_WanderingCaravan_AlreadySpawned>
+  <!-- EN: The caravan is trying to leave after being attacked. -->
+  <RK_WanderingCaravan_AttackedPenalty>遭受攻击的鼠族游商将在很长一段时间内避免拜访此处。</RK_WanderingCaravan_AttackedPenalty>
+
+  <!-- Ammo for BFR -->
+
+  <!-- EN: Separation Mechanics research required. -->
+  <RK_BFR_Toggle_RequiresSeparationMechanics>需要完成“鼠族分离机械科技”研究项目。</RK_BFR_Toggle_RequiresSeparationMechanics>
+  <!-- EN: AP -->
+  <RK_BFR_Ammo_LabelAP>穿甲弹模式</RK_BFR_Ammo_LabelAP>
+  <!-- EN: Airburst -->
+  <RK_BFR_Ammo_LabelHE>高爆弹模式</RK_BFR_Ammo_LabelHE>
+  <!-- EN: Switch to airburst rounds. The rounds currently loaded can punch through several targets in a line with strong piercing damage and defeat armor. -->
+  <RK_BFR_Ammo_DescToHE>点击以切换至高爆弹模式。当子弹接近目标时，会向前方锥形范围引爆，适合对付成群的敌人。\n\n当前为穿甲弹模式。</RK_BFR_Ammo_DescToHE>
+  <!-- EN: Switch to armor-piercing rounds. The rounds currently used can detonate mid-air when it gets close to its target, dispersing shrapnel in front and shredding tight groups of enemies. -->
+  <RK_BFR_Ammo_DescToAP>点击以切换至穿甲弹模式。子弹能直线穿透弹道上的多个目标，并造成强力的穿刺伤害。\n\n当前为高爆弹模式。</RK_BFR_Ammo_DescToAP>
+
+  <!-- Pulse Rifle -->
+
+  <!-- EN: Burst -->
+  <RK_PulseRifleFireMode_LabelBurst>点射模式</RK_PulseRifleFireMode_LabelBurst>
+  <!-- EN: Single -->
+  <RK_PulseRifleFireMode_LabelSingle>神射模式</RK_PulseRifleFireMode_LabelSingle>
+  <!-- EN: Switch to sniper mode. Currently fires four lighter bolts in quick succession at shorter effective range, suited to close and mid-range fights. -->
+  <RK_PulseRifleFireMode_DescToSingle>点击以切换至神射模式。发射2发重型能量弹，射程更远，中远距离精度更高。\n\n当前为点射模式。</RK_PulseRifleFireMode_DescToSingle>
+  <!-- EN: Switch to rapid fire mode. Currently fires two heavy energy bolts while offering longer range and better accuracy for medium and long range combat. -->
+  <RK_PulseRifleFireMode_DescToBurst>点击以切换至点射模式。快速发射4发轻型能量弹，射程较短，适合中近距离作战。\n\n当前为神射模式。</RK_PulseRifleFireMode_DescToBurst>
+
+</LanguageData>

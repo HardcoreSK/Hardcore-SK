@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: shield deflect angle -->
+  <RK_Stat_DeflectAngle.label>盾牌偏转角度</RK_Stat_DeflectAngle.label>
+  <!-- EN: The total frontal arc (in degrees) within which this shield can deflect incoming attacks. For example, 90° means ±45° to each side. -->
+  <RK_Stat_DeflectAngle.description>此盾牌能偏转攻击的有效正面总角度（以度为单位）。举例来讲，90°意味着以盾牌使用者的面部朝向为中心，每侧各有45°范围可以偏转攻击。</RK_Stat_DeflectAngle.description>
+  <!-- EN: {0}° -->
+  <RK_Stat_DeflectAngle.formatString>{0}°</RK_Stat_DeflectAngle.formatString>
+  
+  <!-- EN: Shield Armor - Blunt -->
+  <RK_Stat_Shield_Blunt.label>盾牌护甲 - 钝器</RK_Stat_Shield_Blunt.label>
+  <!-- EN: The protection this shield provides against blunt damage, such as fists, club impacts, and falling rocks.\n\nUnlike body armor, a shield either blocks an attack entirely or lets it through completely — there is no partial mitigation or damage type conversion.\n\nWhen an attack lands within the shield's deflect arc and the block attempt succeeds, the shield's blunt armor rating is compared against the attacker's armor penetration:\n\n    threshold = max(Shield Armor - Attacker AP, 0)\n\nA random roll from 0 to 1 is then made:\n    - If the roll is below the threshold, the attack is fully blocked and deals no damage.\n    - If the roll meets or exceeds the threshold, the attack fully penetrates — the shield has no effect.\n\nFor example, with 40% shield armor against an attack with 10% armor penetration, the threshold is 30%. There is a 30% chance of a full block, and a 70% chance of full penetration.\n\nThe shield's armor is applied only once, and only when a block attempt has already been triggered. -->
+  <RK_Stat_Shield_Blunt.description>此盾牌抵御钝器伤害的防护能力，例如拳头、棍棒攻击和落石。\n\n与衣物的护甲机制不同，盾牌要么完全格挡攻击，要么被攻击直接穿透，不会出现伤害部分减免或伤害类型转换的情况。\n\n当攻击袭来的方向处在盾牌的偏转角度内且格挡判定成功时，会先将盾牌的钝器护甲值与攻击武器的护甲穿透值进行比较：\n阈值=盾牌的护甲值-攻击武器的护甲穿透值\n\n随后抽取一个0-1之间的随机数：\n\n - 如果这个随机数小于阈值，攻击将被盾牌完全格挡，不会造成任何伤害。\n - 如果这个随机数大于或等于阈值，则攻击将会直接穿透盾牌，正常造成伤害。\n\n举例来讲，如果盾牌的钝器护甲值为40%，攻击武器的护甲穿透值为10%，则阈值=40%-10%=30%，这就意味着盾牌有30%几率完全格挡攻击，有70%几率被攻击直接穿透。\n\n盾牌的护甲值仅会在格挡判定被触发后生效一次。</RK_Stat_Shield_Blunt.description>
+  
+  <!-- EN: Shield Armor - Heat -->
+  <RK_Stat_Shield_Heat.label>盾牌护甲 - 热能</RK_Stat_Shield_Heat.label>
+  <!-- EN: The protection this shield provides against temperature-related damage, such as burns, fire, and heat-based attacks.\n\nUnlike body armor, a shield either blocks an attack entirely or lets it through completely — there is no partial mitigation.\n\nWhen an attack lands within the shield's deflect arc and the block attempt succeeds, the shield's heat armor rating is compared against the attacker's armor penetration:\n\n    threshold = max(Shield Armor - Attacker AP, 0)\n\nA random roll from 0 to 1 is then made:\n    - If the roll is below the threshold, the attack is fully blocked and deals no damage.\n    - If the roll meets or exceeds the threshold, the attack fully penetrates — the shield has no effect.\n\nFor example, with 30% shield armor against an attack with 10% armor penetration, the threshold is 20%. There is a 20% chance of a full block, and an 80% chance of full penetration.\n\nThe shield's armor is applied only once, and only when a block attempt has already been triggered. -->
+  <RK_Stat_Shield_Heat.description>此盾牌抵御温度相关伤害的防护能力，比如燃烧、火焰和热能攻击。\n\n与衣物的护甲机制不同，盾牌要么完全格挡攻击，要么被攻击直接穿透，不会出现伤害部分减免或伤害类型转换的情况。\n\n当攻击袭来的方向处在盾牌的偏转角度内且格挡判定成功时，会先将盾牌的热能护甲值与攻击武器的护甲穿透值进行比较：\n阈值=盾牌的护甲值-攻击武器的护甲穿透值\n\n随后抽取一个0-1之间的随机数：\n\n - 如果这个随机数小于阈值，攻击将被盾牌完全格挡，不会造成任何伤害。\n - 如果这个随机数大于或等于阈值，则攻击将会直接穿透盾牌，正常造成伤害。\n\n举例来讲，如果盾牌的热能护甲值为30%，攻击武器的护甲穿透值为10%，则阈值=30%-10%=20%，这就意味着盾牌有20%几率完全格挡攻击，有80%几率被攻击直接穿透。\n\n盾牌的护甲值仅会在格挡判定被触发后生效一次。</RK_Stat_Shield_Heat.description>
+  
+  <!-- EN: Shield Armor - Sharp -->
+  <RK_Stat_Shield_Sharp.label>盾牌护甲 - 利器</RK_Stat_Shield_Sharp.label>
+  <!-- EN: The protection this shield provides against sharp damage, such as bullets, knife stabs, explosions, and animal bites.\n\nUnlike body armor, a shield either blocks an attack entirely or lets it through completely — there is no partial mitigation or blunt conversion.\n\nWhen an attack lands within the shield's deflect arc and the block attempt succeeds, the shield's sharp armor rating is compared against the attacker's armor penetration:\n\n    threshold = max(Shield Armor - Attacker AP, 0)\n\nA random roll from 0 to 1 is then made:\n    - If the roll is below the threshold, the attack is fully blocked and deals no damage.\n    - If the roll meets or exceeds the threshold, the attack fully penetrates — the shield has no effect.\n\nFor example, with 50% shield armor against an attack with 20% armor penetration, the threshold is 30%. There is a 30% chance of a full block, and a 70% chance of full penetration.\n\nThe shield's armor is applied only once, and only when a block attempt has already been triggered. -->
+  <RK_Stat_Shield_Sharp.description>此盾牌抵御利器伤害的防护能力，比如子弹、刀剑穿刺，爆炸以及动物的抓咬。\n\n与衣物的护甲机制不同，盾牌要么完全格挡攻击，要么被攻击直接穿透，不会出现伤害部分减免或伤害类型转换的情况。\n\n当攻击来袭的方向处在盾牌的偏转角度内且格挡判定成功时，会先将盾牌的利器护甲值与攻击武器的护甲穿透值进行比较：\n阈值=盾牌的护甲值-攻击武器的护甲穿透值\n\n随后抽取一个0-1之间的随机数：\n\n - 如果这个随机数小于阈值，攻击将被盾牌完全格挡，不会造成任何伤害。\n - 如果这个随机数大于或等于阈值，则攻击将会直接穿透盾牌，正常造成伤害。\n\n举例来讲，如果盾牌的利器护甲值为50%，攻击武器的护甲穿透值为20%，则阈值=50%-20%=30%，这就意味着盾牌有30%几率完全格挡攻击，有70%几率被攻击直接穿透。\n\n盾牌的护甲值仅会在格挡判定被触发后生效一次。</RK_Stat_Shield_Sharp.description>
+  
+  <!-- EN: shield block chance -->
+  <RK_Stat_ShieldBlockChance.label>盾牌格挡率</RK_Stat_ShieldBlockChance.label>
+  <!-- EN: Chance to attempt blocking an incoming attack with this shield.\n\nIf the attempt succeeds, a second armor roll (shield armor vs attacker AP) determines whether the attack is fully deflected.\n\nAffected by melee skill, manipulation, and sight — identical modifiers to melee hit chance. -->
+  <RK_Stat_ShieldBlockChance.description>此盾牌格挡来袭攻击的几率。\n\n如果格挡成功，则会进行第二次护甲判定（盾牌的护甲值 vs 攻击武器的护甲穿透值）来决定攻击是否被完全偏转。\n\n此项的值受近战技能等级、操作能力和视觉能力影响——与近战命中率的修正机制相同。</RK_Stat_ShieldBlockChance.description>
+  
+  <!-- EN: Shield Armor - Material effect multiplier -->
+  <RK_Stat_ShieldStuffBase.label>盾牌护甲 - 材料效果乘数</RK_Stat_ShieldStuffBase.label>
+  
+</LanguageData>

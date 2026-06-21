@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ApparelLayerDef[defName="BackPack"]</xpath>
+		<value>
+			<drawOrder>250</drawOrder>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ApparelLayerDef[defName="InnerCoat"]</xpath>
+		<value>
+			<drawOrder>225</drawOrder>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ApparelLayerDef[defName="OnFace"]</xpath>
+		<value>
+			<drawOrder>425</drawOrder>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ApparelLayerDef[defName="OuterClothing"]</xpath>
+		<value>
+			<drawOrder>275</drawOrder>
+		</value>
+	</Operation>
+</Patch>

@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs</xpath>
+		<value>
+			<ScenarioDef>
+				<defName>RK_Scenario</defName>
+				<label>ratkin colony</label>
+				<description>각자의 사연을 갖고 새로운 삶을 위해 나온 네 랫킨의 이야기입니다. 서로 다른 꿈을 꾸고 있지만 지금은 잠시 접어두기로 하였습니다.</description>
+				<scenario>
+					<summary>It's a story of Ratkins, each with a story.</summary>
+					<playerFaction>
+						<def>PlayerFaction</def>
+						<factionDef>RK_PlayerFaction</factionDef>
+					</playerFaction>
+					<surfaceLayer>
+						<def>SurfaceLayerFixed</def>
+						<tag>Surface</tag>
+						<layer>Surface</layer>
+						<settingsDef>Surface</settingsDef>
+						<hide>true</hide>
+						<connections>
+							<Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+								<zoomMode>ZoomOut</zoomMode>
+							</Orbit>
+						</connections>
+					</surfaceLayer>
+					<parts>
+						<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+							<def>ConfigurePawnsXenotypes</def>
+							<pawnChoiceCount>8</pawnChoiceCount>
+							<customSummary>Start with four Ratkin.</customSummary>
+							<xenotypeCounts>
+								<li>
+									<xenotype>RK_XenoType_Ratkin</xenotype>
+									<count>4</count>
+									<description>non-baby ratkin</description>
+									<requiredAtStart>true</requiredAtStart>
+									<allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
+								</li>
+							</xenotypeCounts>
+						</li>
+						<li Class="ScenPart_PlayerPawnsArriveMethod">
+							<def>PlayerPawnsArriveMethod</def>
+							<method>Standing</method>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>Silver</thingDef>
+							<count>500</count>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>GrilledCheese</thingDef>
+							<count>35</count>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>RawRice</thingDef>
+							<count>300</count>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>RK_Crossbow</thingDef>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>Ammo_Bolt_Metallic</thingDef>
+							<count>200</count>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>RK_Rifle</thingDef>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>Ammo_303British_FMJ</thingDef>
+							<count>150</count>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>MedicineHerbal</thingDef>
+							<count>60</count>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>HerbMedicine</thingDef>
+							<count>10</count>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>ComponentIndustrial</thingDef>
+							<count>30</count>
+						</li>
+						<li Class="ScenPart_ScatterThingsNearPlayerStart">
+							<def>ScatterThingsNearPlayerStart</def>
+							<thingDef>Bronze</thingDef>
+							<count>400</count>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>MeleeWeapon_Dagger</thingDef>
+							<stuff>Bronze</stuff>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>TFJ_Tool_Woodcutting_Handaxe</thingDef>
+							<stuff>Bronze</stuff>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
+							<stuff>Bronze</stuff>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>TFJ_Tool_Building_Hammer</thingDef>
+							<stuff>Bronze</stuff>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>TFJ_Tool_Sickle</thingDef>
+							<stuff>Bronze</stuff>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>TFJ_Tool_Hoe</thingDef>
+							<stuff>Bronze</stuff>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>TFJ_Tool_Broom</thingDef>
+							<stuff>Bamboo</stuff>
+						</li>
+						<li Class="ScenPart_ScatterThingsNearPlayerStart">
+							<def>ScatterThingsNearPlayerStart</def>
+							<thingDef>Bamboo</thingDef>
+							<count>300</count>
+						</li>
+						<li Class="ScenPart_ScatterThingsAnywhere">
+							<def>ScatterThingsAnywhere</def>
+							<thingDef>Plasteel</thingDef>
+							<count>120</count>
+						</li>
+						<li Class="ScenPart_StartingAnimal">
+							<def>StartingAnimal</def>
+							<animalKind>Rottie</animalKind>
+							<count>1</count>
+							<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+						</li>
+						<li Class="ScenPart_ScatterThingsAnywhere">
+							<def>ScatterThingsAnywhere</def>
+							<visible>false</visible>
+							<thingDef>ShipChunk</thingDef>
+							<count>14</count>
+						</li>
+						<li Class="ScenPart_ScatterThingsAnywhere">
+							<def>ScatterThingsAnywhere</def>
+							<visible>false</visible>
+							<thingDef>ShipMechChunk</thingDef>
+							<count>8</count>
+						</li>
+						<li Class="ScenPart_ScatterThingsAnywhere">
+							<def>ScatterThingsAnywhere</def>
+							<visible>false</visible>
+							<thingDef>WoodenDebris</thingDef>
+							<stuff>Bamboo</stuff>
+							<count>4</count>
+						</li>
+						<li Class="ScenPart_ScatterThingsAnywhere">
+							<def>ScatterThingsAnywhere</def>
+							<visible>false</visible>
+							<thingDef>Cairn</thingDef>
+							<stuff>ClayBrick</stuff>
+							<count>9</count>
+						</li>
+						<li Class="ScenPart_ScatterThingsAnywhere">
+							<def>ScatterThingsAnywhere</def>
+							<visible>false</visible>
+							<thingDef>BambooPlank</thingDef>
+							<count>20</count>
+						</li>
+						<li Class="ScenPart_ScatterThingsAnywhere">
+							<def>ScatterThingsAnywhere</def>
+							<visible>false</visible>
+							<thingDef>BlocksSandstone</thingDef>
+							<count>30</count>
+						</li>
+					</parts>
+				</scenario>
+			</ScenarioDef>
+		</value>
+	</Operation>
+</Patch>

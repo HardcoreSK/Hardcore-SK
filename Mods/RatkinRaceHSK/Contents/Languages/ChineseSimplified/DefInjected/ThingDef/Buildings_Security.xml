@@ -1,18 +1,55 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  <RK_BaseArtilleryWeapon.label>弩炮报错</RK_BaseArtilleryWeapon.label>
-  <RK_Ballista_Strait_Body.label>鼠族弩炮</RK_Ballista_Strait_Body.label>
-  <RK_Ballista_Strait_Body.description>发射巨型弩箭的防御器械。为了便于鼠族操作而进行过特殊改造。</RK_Ballista_Strait_Body.description>
-  <RK_Turret_Ballista_Strait.label>鼠族弩炮</RK_Turret_Ballista_Strait.label>
-  <RK_Turret_Ballista_Strait.description>发射巨型弩箭的防御器械。具备精准与高射程优势。</RK_Turret_Ballista_Strait.description>
-  <BaseBolt.label>弩箭</BaseBolt.label>
-  <BallistaBolt_Normal.label>巨型弩箭（标准）</BallistaBolt_Normal.label>
-  <BallistaBolt_Normal.description>标准规格的巨型弩箭。如果被这支巨箭击中，将很难有生还者。</BallistaBolt_Normal.description>
-  <Bullet_BallistaBolt_Normal.label>巨型弩箭（标准）</Bullet_BallistaBolt_Normal.label>
-  <BallistaBolt_Heavy.label>巨型弩箭（重型）</BallistaBolt_Heavy.label>
-  <BallistaBolt_Heavy.description>极其沉重的巨型弩箭。在标准弩箭的基础上增加重量以强化落地时的冲击力。</BallistaBolt_Heavy.description>
-  <Bullet_BallistaBolt_HE.label>巨型弩箭（重型）</Bullet_BallistaBolt_HE.label>
-  <BallistaBolt_AP.label>巨型弩箭（穿透）</BallistaBolt_AP.label>
-  <BallistaBolt_AP.description>穿透力十足的巨型弩箭。能在弹道飞行路线上对多个目标造成杀伤。</BallistaBolt_AP.description>
-  <Bullet_BallistaBolt_AP.label>巨型弩箭（穿透）</Bullet_BallistaBolt_AP.label>
+  
+  <!-- EN: Mote -->
+  <Mote_ShockWave.label>特效</Mote_ShockWave.label>
+  
+  <!-- EN: ballista bolt (AP) -->
+  <RK_Ammo_BallistaBoltAP.label>巨型弩箭（穿透）</RK_Ammo_BallistaBoltAP.label>
+  <!-- EN: The ballistic bolt has high penetration. It can penetrate multiple target in firing lines. -->
+  <RK_Ammo_BallistaBoltAP.description>穿透力十足的巨型弩箭。能在弹道飞行路线上对多个目标造成杀伤。</RK_Ammo_BallistaBoltAP.description>
+  
+  <!-- EN: ballista bolt (normal) -->
+  <RK_Ammo_BallistaBoltNormal.label>巨型弩箭（标准）</RK_Ammo_BallistaBoltNormal.label>
+  <!-- EN: It is a ballista bolt. It will be hard to survive if hit by this big arrow. -->
+  <RK_Ammo_BallistaBoltNormal.description>标准规格的巨型弩箭。如果被这支巨箭击中，将很难有生还者。</RK_Ammo_BallistaBoltNormal.description>
+  
+  <!-- EN: Ratkin Cannon Shell -->
+  <RK_Ammo_CannonBall.label>鼠族加农炮弹</RK_Ammo_CannonBall.label>
+  <!-- EN: 다듬어진 돌덩어리의 표면을 강철로 둘러 싼 포탄입니다. -->
+  <RK_Ammo_CannonBall.description>用表面包裹着铁壳的光滑石块制成的加农炮弹。</RK_Ammo_CannonBall.description>
+  
+  <!-- EN: ballista -->
+  <RK_Building_Ballista.label>鼠族弩炮</RK_Building_Ballista.label>
+  <!-- EN: It is a machine that fires large arrows. It is designed to be easy to operate by Ratkin. -->
+  <RK_Building_Ballista.description>发射巨型弩箭的防御器械。为了便于鼠族操作而进行过特殊改造。</RK_Building_Ballista.description>
+  
+  <!-- EN: Ratkin Cannon -->
+  <RK_Building_Cannon.label>鼠族加农炮</RK_Building_Cannon.label>
+  <!-- EN: 다듬어진 돌덩어리를 원거리로 발사할수 있는 대포입니다. 적을 원거리에서 제압하기 위하여 개발되었으나 언덕 너머를 사격할수는 없습니다. 별명은 찍찍포입니다. -->
+  <RK_Building_Cannon.description>可以远程发射铁石炮弹的防御器械，俗称“吱吱炮”。虽然是为了远距离火力压制而研发的，但它无法像迫击炮那样越过墙体和障碍打击目标。</RK_Building_Cannon.description>
+  
+  <!-- EN: Cannon -->
+  <RK_Building_CannonTurret.label>鼠族加农炮</RK_Building_CannonTurret.label>
+  <!-- EN: 다듬어진 돌덩어리를 원거리로 발사할수 있는 대포입니다. 적을 원거리에서 제압하기 위하여 개발되었으나 언덕 너머를 사격할수는 없습니다. 별명은 찍찍포입니다. -->
+  <RK_Building_CannonTurret.description>可以远程发射铁石炮弹的防御器械，俗称“吱吱炮”。虽然是为了远距离火力压制而研发的，但它无法像迫击炮那样越过墙体和障碍打击目标。</RK_Building_CannonTurret.description>
+  <!-- EN: Cannon -->
+  <RK_Building_CannonTurret.verbs.Verb_Shoot.label>鼠族加农炮</RK_Building_CannonTurret.verbs.Verb_Shoot.label>
+  
+  <!-- EN: ballista bolt (AP) -->
+  <RK_Projectile_BallistaBoltAP.label>巨型弩箭（穿透）</RK_Projectile_BallistaBoltAP.label>
+  
+  <!-- EN: ballista bolt (normal) -->
+  <RK_Projectile_BallistaBoltNormal.label>巨型弩箭（标准）</RK_Projectile_BallistaBoltNormal.label>
+  
+  <!-- EN: Ratkin Cannon Shell -->
+  <RK_Projectile_CannonBall.label>鼠族加农炮弹</RK_Projectile_CannonBall.label>
+  
+  <!-- EN: ballista -->
+  <RK_Weapon_Ballista.label>鼠族弩炮</RK_Weapon_Ballista.label>
+  <!-- EN: ballista bolt launcher. accurate and long-ranged. -->
+  <RK_Weapon_Ballista.description>发射巨型弩箭的防御器械。精度高且射程远。</RK_Weapon_Ballista.description>
+  <!-- EN: ballista -->
+  <RK_Weapon_Ballista.verbs.Verb_Shoot.label>鼠族弩炮</RK_Weapon_Ballista.verbs.Verb_Shoot.label>
+  
 </LanguageData>

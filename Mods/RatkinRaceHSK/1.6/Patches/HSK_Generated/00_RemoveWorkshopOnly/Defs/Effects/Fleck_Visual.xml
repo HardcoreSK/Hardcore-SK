@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<!-- Remove workshop defs absent from HSK patch baseline: 1.6\Defs\Effects\Fleck_Visual.xml -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/FleckDef[defName="RK_WyvernFireExplosion"]</xpath>
+	</Operation>
+</Patch>

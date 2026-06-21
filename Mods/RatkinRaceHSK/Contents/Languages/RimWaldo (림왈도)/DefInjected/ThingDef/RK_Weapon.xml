@@ -74,43 +74,23 @@
   <!-- 라이플 -->
 
   <RK_Rifle.label>랫킨 소총</RK_Rifle.label>
-  <RK_Rifle.description>인간의 라이플을 흉내내 만든 라이플입니다. 석궁보다 사거리가 길고 작은 검을 달아두어 유사시 창처럼 사용할 수 있습니다.</RK_Rifle.description>
+  <RK_Rifle.description>인간의 라이플을 흉내내 랫킨식 플레셰트 탄환을 쓰는 소총입니다. 관통력이 높고 석궁보다 사거리가 길며, 작은 검을 달아 유사시 창처럼 사용할 수 있습니다.</RK_Rifle.description>
   <RK_Rifle.tools.0.label>개머리판</RK_Rifle.tools.0.label>
   <RK_Rifle.tools.1.label>총검</RK_Rifle.tools.1.label>
+  <RK_Rifle.tools.2.label>플레셰트 촉</RK_Rifle.tools.2.label>
 
-  <Bullet_RK_Rifle.label>소총탄</Bullet_RK_Rifle.label>
+  <Bullet_RK_Rifle.label>플레셰트 소총탄</Bullet_RK_Rifle.label>
 
 
   <!-- 저격 라이플 -->
 
   <RK_SniperRifle.label>랫킨 저격 소총</RK_SniperRifle.label>
-  <RK_SniperRifle.description>랫킨식 망원렌즈가 달린 소총입니다. 망원장비덕분에 더 먼곳까지 조준할 수 있지만 가까운 곳을 조준하기 힘듭니다.</RK_SniperRifle.description>
+  <RK_SniperRifle.description>플레셰트 탄환을 쓰는 랫킨식 망원 소총입니다. 두꺼운 장갑을 갖춘 적도 먼 거리에서 제압할 수 있으며, 가까운 거리는 상대적으로 조준하기 어렵습니다. 유사시 근접을 위해 작은 검을 달았습니다.</RK_SniperRifle.description>
   <RK_SniperRifle.tools.0.label>개머리판</RK_SniperRifle.tools.0.label>
   <RK_SniperRifle.tools.1.label>총검</RK_SniperRifle.tools.1.label>
+  <RK_SniperRifle.tools.2.label>플레셰트 촉</RK_SniperRifle.tools.2.label>
 
-  <Bullet_RK_SniperRifle.label>소총탄</Bullet_RK_SniperRifle.label>
-
-
-  <!-- 플레셰트 라이플 -->
-
-  <RK_FlechetteRifle.label>랫킨 플레셰트 소총</RK_FlechetteRifle.label>
-  <RK_FlechetteRifle.description>플레셰트탄을 사용하는 소총입니다. 랫킨식 플레셰트 탄환을 사용하여 사거리를 조금 희생해 관통력을 높였습니다. 유사시 근접전을 할 수 있도록 작은 검 달아두었습니다.</RK_FlechetteRifle.description>
-  <RK_FlechetteRifle.tools.0.label>개머리판</RK_FlechetteRifle.tools.0.label>
-  <RK_FlechetteRifle.tools.1.label>총검</RK_FlechetteRifle.tools.1.label>
-  <RK_FlechetteRifle.tools.2.label>플레셰트 촉</RK_FlechetteRifle.tools.2.label>
-
-  <Bullet_RK_FlechetteRifle.label>플레셰트탄</Bullet_RK_FlechetteRifle.label>
-
-
-  <!-- 플레셰트 저격 라이플 -->
-
-  <RK_FlechetteSniperRifle.label>랫킨 플레셰트 저격 소총</RK_FlechetteSniperRifle.label>
-  <RK_FlechetteSniperRifle.description>플레셰트탄을 사용하는 망원렌즈가 달린 소총입니다. 두꺼운 장갑을 갖춘 적도 확실하게 제압할 수 있습니다. 유사시 근접전을 위해 작은 검을 달아두었습니다.</RK_FlechetteSniperRifle.description>
-  <RK_FlechetteSniperRifle.tools.0.label>개머리판</RK_FlechetteSniperRifle.tools.0.label>
-  <RK_FlechetteSniperRifle.tools.1.label>총검</RK_FlechetteSniperRifle.tools.1.label>
-  <RK_FlechetteSniperRifle.tools.2.label>플레셰트 촉</RK_FlechetteSniperRifle.tools.2.label>
-
-  <Bullet_RK_FlechetteSniperRifle.label>플레셰트탄</Bullet_RK_FlechetteSniperRifle.label>
+  <Bullet_RK_SniperRifle.label>플레셰트 저격탄</Bullet_RK_SniperRifle.label>
 
 
   <!-- 랫킨용 실험용총 2연발 -->
@@ -138,5 +118,19 @@
   <Bullet_BFR_AP.label>wedge bullet (AP)</Bullet_BFR_AP.label>
   <Bullet_BFR_SC.label>wedge bullet (SC)</Bullet_BFR_SC.label>
 
+
+  <!-- 창 밀리 히트찬스 +3 -->
+
+  <RK_Spear.label>랫킨 창</RK_Spear.label>
+  <RK_Spear.description>간단하게 만든 창입니다. 길이가 짧아서 인간이 보기에는 단창처럼 보입니다.</RK_Spear.description>
+  <RK_Spear.tools.0.label>창 날끝</RK_Spear.tools.0.label>
+  <RK_Spear.tools.1.label>창 날</RK_Spear.tools.1.label>
+
+ <!-- 할버드 밀리 히트찬스 +3 -->
+
+  <RK_Halberd.label>랫킨 할버드</RK_Halberd.label>
+  <RK_Halberd.description>장대에 단검과 도끼와 끌개가 함께 부착된 무기입니다. 험난한 전장에서 유용한 무기입니다.</RK_Halberd.description>
+  <RK_Halberd.tools.0.label>할버드 날끝</RK_Halberd.tools.0.label>
+  <RK_Halberd.tools.1.label>할버드 날</RK_Halberd.tools.1.label>
 
 </LanguageData>

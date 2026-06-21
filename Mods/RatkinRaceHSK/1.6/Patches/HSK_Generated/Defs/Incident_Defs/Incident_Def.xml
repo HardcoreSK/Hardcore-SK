@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<!-- Overrides for 1.6\Defs\Incident_Defs\Incident_Def.xml -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/IncidentDef[defName="RatkinTunnel_Guerrilla"]</xpath>
+		<value>
+			<targetTags>
+				<li>Map_PlayerHome</li>
+			</targetTags>
+			<workerClass>NewRatkin.IncidentWorker_RatkinGuerrillaTunner</workerClass>
+			<letterLabel>Commando</letterLabel>
+			<letterText>땅속에서 지진파가 감지되었습니다.\n\n고도로 훈련된 랫킨 특수부대가 곧 땅 아래서 올라올것입니다. 그들이 시설을 마비시키기 전에 막어야합니다.</letterText>
+			<letterDef>ThreatBig</letterDef>
+			<baseChance>0.3</baseChance>
+			<earliestDay>330</earliestDay>
+			<minRefireDays>45</minRefireDays>
+			<category>ThreatBig</category>
+			<pointsScaleable>true</pointsScaleable>
+			<minThreatPoints>10000</minThreatPoints>
+			<tale>Raid</tale>
+		</value>
+	</Operation>
+</Patch>

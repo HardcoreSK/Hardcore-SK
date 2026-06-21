@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<!-- Remove workshop defs absent from HSK patch baseline: 1.6\Defs\UniquePawn\UniquePawn_Sample.xml -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[defName="RK_Unique_Kira"]</xpath>
+	</Operation>
+</Patch>

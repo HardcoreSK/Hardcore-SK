@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase"]</xpath>
+		<value>
+			<workAmount>1500</workAmount>
+			<skillRequirements>
+				<Medicine>3</Medicine>
+			</skillRequirements>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Cloth</li>
+						</thingDefs>
+					</filter>
+					<count>5</count>
+				</li>
+			</ingredients>
+			<fixedIngredientFilter>
+				<thingDefs>
+					<li>Cloth</li>
+				</thingDefs>
+			</fixedIngredientFilter>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeEar"]</xpath>
+		<value>
+			<RecipeDef ParentName="SurgeryFlesh">
+				<defName>RK_Recipe_InstallFakeEar</defName>
+				<label>install fake ear</label>
+				<description>Install a fake ear.</description>
+				<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+				<jobString>Installing fake ear.</jobString>
+				<workAmount>2000</workAmount>
+				<skillRequirements>
+					<Medicine>3</Medicine>
+				</skillRequirements>
+				<ingredients>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>RK_FakeEar</li>
+							</thingDefs>
+						</filter>
+						<count>1</count>
+					</li>
+				</ingredients>
+				<fixedIngredientFilter>
+					<thingDefs>
+						<li>RK_FakeEar</li>
+					</thingDefs>
+				</fixedIngredientFilter>
+				<appliedOnFixedBodyParts>
+					<li>Ear</li>
+				</appliedOnFixedBodyParts>
+				<addsHediff>RK_Hediff_FakeEar</addsHediff>
+			</RecipeDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeTail"]</xpath>
+		<value>
+			<RecipeDef ParentName="SurgeryFlesh">
+				<defName>RK_Recipe_InstallFakeTail</defName>
+				<label>install fake tail</label>
+				<description>Install a fake tail.</description>
+				<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+				<descriptionHyperlinks>
+					<ThingDef>Cloth</ThingDef>
+				</descriptionHyperlinks>
+				<jobString>Installing fake tail.</jobString>
+				<appliedOnFixedBodyParts>
+					<li>RK_BodyPart_Tail</li>
+				</appliedOnFixedBodyParts>
+				<workAmount>2000</workAmount>
+				<skillRequirements>
+					<Medicine>3</Medicine>
+				</skillRequirements>
+				<ingredients>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>RK_FakeTail</li>
+							</thingDefs>
+						</filter>
+						<count>1</count>
+					</li>
+				</ingredients>
+				<fixedIngredientFilter>
+					<thingDefs>
+						<li>RK_FakeTail</li>
+					</thingDefs>
+				</fixedIngredientFilter>
+				<addsHediff>RK_Hediff_FakeTail</addsHediff>
+			</RecipeDef>
+		</value>
+	</Operation>
+</Patch>

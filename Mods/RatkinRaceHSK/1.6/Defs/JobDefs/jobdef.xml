@@ -33,4 +33,20 @@
 		<driverClass>JobDriver_Spectate</driverClass>
 		<reportString>praying.</reportString>
 	</JobDef>
+
+	<!-- 유랑단 리더에게 이동 후 대화 (trader와 동일하게 직접 만나야 대화 가능) -->
+	<JobDef>
+		<defName>RK_Job_TalkToCaravanLeader</defName>
+		<driverClass>NewRatkin.JobDriver_TalkToCaravanLeader</driverClass>
+		<reportString>talking to caravan leader.</reportString>
+		<casualInterruptible>true</casualInterruptible>
+	</JobDef>
+
+	<!-- 유랑단 리더에게 직접 이동 후 돌려보내기 (대화하기와 동일하게 직접 만나야 가능) -->
+	<JobDef>
+		<defName>RK_Job_DismissCaravanLeader</defName>
+		<driverClass>NewRatkin.JobDriver_DismissCaravanLeader</driverClass>
+		<reportString>dismissing caravan.</reportString>
+		<casualInterruptible>true</casualInterruptible>
+	</JobDef>
 </Defs>

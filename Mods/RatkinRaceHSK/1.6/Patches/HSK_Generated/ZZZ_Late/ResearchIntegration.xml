@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--Targeted migration from removed Ratkin research projects to HSK research projects.-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="Make_RK_Ammo_CannonBall"]/researchPrerequisite[.="RK_Research_Fortification"]</xpath>
+		<value>
+			<researchPrerequisite>Fortification_B1</researchPrerequisite>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="RK_Recipe_Hardtack" or defName="RK_Recipe_HardtackBulk"]/researchPrerequisites/li[.="RK_Research_FoodPreservation"]</xpath>
+		<value>
+			<li>Pemmican</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_PrototypePulseRifle" or defName="RK_Weapon_Bolter"]/recipeMaker/researchPrerequisite[.="RK_Research_AngryRatProject"]</xpath>
+		<value>
+			<researchPrerequisite>ChargedShot</researchPrerequisite>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Ammo_WyvernFire" or defName="RK_Weapon_Gunlance"]/recipeMaker/researchPrerequisites/li[.="RK_Research_DragonFlame"]</xpath>
+		<value>
+			<li>ChargedShot</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Crossbow"]/recipeMaker/researchPrerequisite[.="RK_Research_Carpentry"]</xpath>
+		<value>
+			<researchPrerequisite>ComplexFurniture</researchPrerequisite>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_AutoCrossBow" or defName="RK_Weapon_Arbalest"]/recipeMaker/researchPrerequisites/li[.="RK_Research_Carpentry"]</xpath>
+		<value>
+			<li>ComplexFurniture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Weapon_RatHolicGun"]/recipeMaker/researchPrerequisite[.="RK_Research_GearMechanics"]</xpath>
+		<value>
+			<researchPrerequisite>Electricity</researchPrerequisite>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Axe" or defName="RK_Fork" or defName="RK_Hockey"]/recipeMaker/researchPrerequisites/li[.="RK_Research_Agriculture"]</xpath>
+		<value>
+			<li>Food_Plants_A1</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Weapon_Arbalest"]/recipeMaker/researchPrerequisites/li[.="RK_Research_Fortification"]</xpath>
+		<value>
+			<li>Fortification_B1</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Building_Cannon"]/researchPrerequisites/li[.="RK_Research_Fortification"]</xpath>
+		<value>
+			<li>Fortification_B1</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[.="RK_Research_Metallurgy"]</xpath>
+		<value>
+			<li>Metals_C1</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Rifle" or defName="RK_SniperRifle" or defName="RK_Weapon_SawedOff"]/recipeMaker/researchPrerequisite[.="RK_Research_RatkinEngineering"]</xpath>
+		<value>
+			<researchPrerequisite>Machining</researchPrerequisite>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_AutoCrossBow"]/recipeMaker/researchPrerequisites/li[.="RK_Research_RatkinEngineering"]</xpath>
+		<value>
+			<li>Machining</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_HamsterWheelGenerator"]/researchPrerequisites/li[.="RK_Research_RatkinEngineering"]</xpath>
+		<value>
+			<li>Machining</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Plate"]/recipeMaker/researchPrerequisite[.="RK_Research_Metallurgy"]</xpath>
+		<value>
+			<researchPrerequisite>Metals_C1</researchPrerequisite>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_RoyalCrown" or defName="RK_RoyalRobe"]/recipeMaker/researchPrerequisite[.="RK_Research_NobleApparel"]</xpath>
+		<value>
+			<researchPrerequisite>NobleApparel</researchPrerequisite>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Weapon_BFR"]/recipeMaker/researchPrerequisite[.="RK_Research_ObservationAndSurveying"]</xpath>
+		<value>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Apparel_Vacsuit" or defName="RK_Apparel_VacsuitChildren" or defName="RK_Apparel_VacsuitHelmet"]/recipeMaker/researchPrerequisite[.="RK_Research_OrbitalEquipment"]</xpath>
+		<value>
+			<researchPrerequisite>ReconArmor</researchPrerequisite>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Dagger" or defName="RK_OneHanded" or defName="RK_Weapon_Maul"]/recipeMaker/researchPrerequisite[.="RK_Research_Smithing"]</xpath>
+		<value>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Axe" or defName="RK_Cleaver" or defName="RK_Fork" or defName="RK_Hockey" or defName="RK_Pickaxe"]/recipeMaker/researchPrerequisites/li[.="RK_Research_Smithing"]</xpath>
+		<value>
+			<li>Smithing</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_ElectricSmithy" or defName="RK_FueledSmithy"]/researchPrerequisites/li[.="RK_Research_Smithing"]</xpath>
+		<value>
+			<li>Smithing</li>
+		</value>
+	</Operation>
+</Patch>

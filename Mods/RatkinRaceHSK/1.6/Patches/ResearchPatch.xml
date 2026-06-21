@@ -5,7 +5,7 @@
         <match Class="PatchOperationAdd">
             <xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"]/tags</xpath>
             <value>
-                <li>RatkinStart</li>
+                <li>RK_ResearchTag_IndustrialBasic</li>
             </value>
         </match>
     </Operation>
@@ -14,7 +14,7 @@
         <match Class="PatchOperationAdd">
             <xpath>Defs/ResearchProjectDef[defName="PassiveCooler"]/tags</xpath>
             <value>
-                <li>RatkinStart</li>
+                <li>RK_ResearchTag_IndustrialBasic</li>
             </value>
         </match>
     </Operation>
@@ -23,7 +23,7 @@
         <match Class="PatchOperationAdd">
             <xpath>Defs/ResearchProjectDef[defName="Stonecutting"]/tags</xpath>
             <value>
-                <li>RatkinStart</li>
+                <li>RK_ResearchTag_IndustrialBasic</li>
             </value>
         </match>
     </Operation>
@@ -32,7 +32,7 @@
         <match Class="PatchOperationAdd">
             <xpath>Defs/ResearchProjectDef[defName="Smithing"]/tags</xpath>
             <value>
-                <li>RatkinStart</li>
+                <li>RK_ResearchTag_IndustrialBasic</li>
             </value>
         </match>
     </Operation>
@@ -41,7 +41,7 @@
         <match Class="PatchOperationAdd">
             <xpath>Defs/ResearchProjectDef[defName="Pemmican"]/tags</xpath>
             <value>
-                <li>RatkinStart</li>
+                <li>RK_ResearchTag_IndustrialBasic</li>
             </value>
         </match>
     </Operation>
@@ -50,7 +50,7 @@
         <match Class="PatchOperationAdd">
             <xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]/tags</xpath>
             <value>
-                <li>RatkinStart</li>
+                <li>RK_ResearchTag_IndustrialBasic</li>
             </value>
         </match>
     </Operation>
@@ -59,14 +59,14 @@
         <match Class="PatchOperationAdd">
             <xpath>Defs/ResearchProjectDef[defName="Terraform_A1"]/tags</xpath>
             <value>
-                <li>RatkinStart</li>
+                <li>RK_ResearchTag_IndustrialBasic</li>
             </value>
         </match>
         <nomatch Class="PatchOperationAdd">
             <xpath>Defs/ResearchProjectDef[defName="Terraform_A1"]</xpath>
             <value>
                 <tags>
-                    <li>RatkinStart</li>
+                    <li>RK_ResearchTag_IndustrialBasic</li>
                 </tags>
             </value>
         </nomatch>

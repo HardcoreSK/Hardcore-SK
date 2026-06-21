@@ -20,12 +20,11 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
 		<costList>
-			<Mechanism>4</Mechanism>
+			<Steel>20</Steel>
 		</costList>
-		<costStuffCount>65</costStuffCount>
+		<costStuffCount>45</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
-			<li>Metallic</li>
 		</stuffCategories>
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
@@ -34,7 +33,7 @@
 			<WorkToBuild>2000</WorkToBuild>
 			<MaxHitPoints>180</MaxHitPoints>
 			<Flammability>1.0</Flammability>
-			<WorkTableWorkSpeedFactor>0.55</WorkTableWorkSpeedFactor>
+			<WorkTableWorkSpeedFactor>0.50</WorkTableWorkSpeedFactor>
 		</statBases>
 		<size>(2,1)</size>
 		<designationCategory>Production</designationCategory>
@@ -52,8 +51,6 @@
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
-					<li>Patterner</li>
-					<li>Small_ToolCabinet</li>
 					<li>ToolCabinet</li>
 				</linkableFacilities>
 			</li>
@@ -86,13 +83,11 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
 		<costList>
-			<ComponentIndustrial>5</ComponentIndustrial>
-			<ElectronicComponents>1</ElectronicComponents>
-			<Mechanism>3</Mechanism>
+			<Steel>65</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
-		<costStuffCount>85</costStuffCount>
+		<costStuffCount>65</costStuffCount>
 		<stuffCategories>
-			<li>Metallic</li>
 			<li>Woody</li>
 		</stuffCategories>
 		<altitudeLayer>Building</altitudeLayer>
@@ -102,7 +97,6 @@
 			<WorkToBuild>2500</WorkToBuild>
 			<MaxHitPoints>180</MaxHitPoints>
 			<Flammability>1.0</Flammability>
-			<WorkTableWorkSpeedFactor>1.1</WorkTableWorkSpeedFactor>
 		</statBases>
 		<size>(2,1)</size>
 		<designationCategory>Production</designationCategory>
@@ -120,15 +114,14 @@
 			<unpoweredWorkTableWorkSpeedFactor>0.50</unpoweredWorkTableWorkSpeedFactor>
 		</building>
 		<comps>
-			<li Class="SK.CompProperties_IdlePower">
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>120</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
-					<li>Patterner</li>
-					<li>Small_ToolCabinet</li>
 					<li>ToolCabinet</li>
 				</linkableFacilities>
 			</li>
@@ -138,7 +131,8 @@
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
 		<researchPrerequisites>
-			<li>Ratkin_Apparel_C1</li>
+			<li>Ratkin_Apparel_B1</li>
+			<li>Electricity</li>
 		</researchPrerequisites>
 	</ThingDef>
 	
@@ -164,13 +158,11 @@
 			</damageData>
 		</graphicData>
 		<costList>
-			<ComponentMedieval>4</ComponentMedieval>
+			<Steel>85</Steel>
 		</costList>
-		<costStuffCount>70</costStuffCount>
+		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
-			<li>Metallic</li>
-			<li>Stony</li>
-			<li>Bricks</li>
+			<li>Woody</li>
 		</stuffCategories>
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
@@ -183,11 +175,6 @@
 		</statBases>
 		<size>(2,1)</size>
 		<designationCategory>Production</designationCategory>
-		<recipes>
-			<li>MakeAmmo_Bolt_Metallic</li>
-			<li>MakeAmmo_Bolt_Venom</li>
-			<li>MakeAmmo_Bolt_Explosive</li>
-		</recipes>
 		<passability>PassThroughOnly</passability>
 		<pathCost>70</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>
@@ -207,16 +194,12 @@
 				<fuelFilter>
 					<thingDefs>
 						<li>WoodLog</li>
-						<li>Coal</li>
-						<li>Charcoal</li>
-						<li>Kindling</li>
 					</thingDefs>
 				</fuelFilter>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 			</li>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
-					<li>Small_ToolCabinet</li>
 					<li>ToolCabinet</li>
 				</linkableFacilities>
 			</li>
@@ -225,7 +208,7 @@
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
 		<researchPrerequisites>
-			<li>Craft_B1</li>
+			<li>RK_Research_Smithing</li>
 		</researchPrerequisites>
 	</ThingDef>
 
@@ -251,12 +234,12 @@
 			</damageData>
 		</graphicData>
 		<costList>
-			<ComponentIndustrial>5</ComponentIndustrial>
-			<ElectronicComponents>3</ElectronicComponents>
+			<Steel>85</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
-		<costStuffCount>90</costStuffCount>
+		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>Woody</li>
 		</stuffCategories>
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
@@ -265,23 +248,15 @@
 			<WorkToBuild>3000</WorkToBuild>
 			<MaxHitPoints>180</MaxHitPoints>
 			<Flammability>1.0</Flammability>
-			<WorkTableWorkSpeedFactor>1.1</WorkTableWorkSpeedFactor>
 		</statBases>
 		<size>(2,1)</size>
 		<designationCategory>Production</designationCategory>
-		<recipes>
-			<li>ExtractMetalFromSlag</li>
-			<li>MakeAmmo_Bolt_Metallic</li>
-			<li>MakeAmmo_Bolt_Venom</li>
-			<li>MakeAmmo_Bolt_Explosive</li>
-		</recipes>
 		<passability>PassThroughOnly</passability>
 		<pathCost>70</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(1,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-		<defaultPlacingRot>South</defaultPlacingRot>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
 		</inspectorTabs>
@@ -289,14 +264,14 @@
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
 		<comps>
-			<li Class="SK.CompProperties_IdlePower">
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>210</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
-					<li>Small_ToolCabinet</li>
 					<li>ToolCabinet</li>
 				</linkableFacilities>
 			</li>
@@ -309,7 +284,8 @@
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
 		<researchPrerequisites>
-			<li>Metals_C1</li>
+			<li>RK_Research_Smithing</li>
+			<li>Electricity</li>
 		</researchPrerequisites>
 	</ThingDef>
 	

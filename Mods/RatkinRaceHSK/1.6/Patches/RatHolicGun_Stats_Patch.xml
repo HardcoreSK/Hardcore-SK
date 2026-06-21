@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- [DISABLED] Report/147_RatHolicGun_Legacy_StatPart_Disabled_Memo.md
+     RangedCooldownFactor 헤딥 방식으로 전환. StatPart 패치 불필요.
+-->
+<Patch>
+	<!-- <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<success>Invert</success>
+				<xpath>*/StatDef[defName = "RangedWeapon_Cooldown"]/parts</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/StatDef[defName = "RangedWeapon_Cooldown"]</xpath>
+				<value>
+					<parts>
+					</parts>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/StatDef[defName = "RangedWeapon_Cooldown"]/parts</xpath>
+				<value>
+					<li Class="NewRatkin.StatPart_RatHolicGunSpooling_Cooldown_Multiplier">
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation> -->
+</Patch>

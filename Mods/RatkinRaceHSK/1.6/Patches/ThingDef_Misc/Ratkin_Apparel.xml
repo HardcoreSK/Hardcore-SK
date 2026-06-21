@@ -5,7 +5,10 @@
 		<success></success>
 		<operations>
 			<li Class="PatchOperationFindMod">
-				<mods><li>NewRatkinPlus</li></mods>
+				<mods>
+					<li>NewRatkinPlus</li>
+					<li>Solaris.RatkinRaceMod</li>
+				</mods>
 			</li>
 
 	<!--NOTE: Numerous pieces of apparel aren't patched here. Apparel without a specific value for Bulk or WornBulk
@@ -102,29 +105,35 @@
 			</li>
 
 			<!-- ========== Plate Armor - Helm =========== -->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="RK_PlateHelmA"]/statBases</xpath>
+			<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/ThingDef[defName="RK_PlateHelmA"]</xpath>
 				<value>
-					<Bulk>4</Bulk>
-					<WornBulk>1</WornBulk>					
+					<statBases Merge="True">
+						<Bulk>4</Bulk>
+						<WornBulk>1</WornBulk>
+					</statBases>
 				</value>
 			</li>
 
 			<!-- ========== Plate Armor - Helm =========== -->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="RK_PlateHelmB"]/statBases</xpath>
+			<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/ThingDef[defName="RK_PlateHelmB"]</xpath>
 				<value>
-					<Bulk>4</Bulk>
-					<WornBulk>1</WornBulk>					
+					<statBases Merge="True">
+						<Bulk>4</Bulk>
+						<WornBulk>1</WornBulk>
+					</statBases>
 				</value>
 			</li>
 
 			<!-- ========== Plate Armor - Helm =========== -->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="RK_PlateHelmC"]/statBases</xpath>
+			<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/ThingDef[defName="RK_PlateHelmC"]</xpath>
 				<value>
-					<Bulk>4</Bulk>
-					<WornBulk>1</WornBulk>					
+					<statBases Merge="True">
+						<Bulk>4</Bulk>
+						<WornBulk>1</WornBulk>
+					</statBases>
 				</value>
 			</li>	
 

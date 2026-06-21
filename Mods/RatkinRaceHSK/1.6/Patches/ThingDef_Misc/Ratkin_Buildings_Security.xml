@@ -1,31 +1,26 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <Patch>
 	<Operation Class="PatchOperationSequence">
-		<success></success>
+		<success />
 		<operations>
 			<li Class="PatchOperationFindMod">
-				<mods><li>NewRatkinPlus</li></mods>
+				<mods>
+					<li>NewRatkinPlus</li>
+					<li>Solaris.RatkinRaceMod</li>
+				</mods>
 			</li>
-
-			  <!-- ========== Ratkin Ballista ========== -->
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingDef[defName="RK_Ballista_Strait_Body"]</xpath>
-				</li>
-			<!-- Building -->  
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingDef[defName="RK_Turret_Ballista_Strait"]</xpath>
-				</li>
-			<!-- Bolts -->
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingDef[defName="BallistaBolt_Normal"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingDef[defName="BallistaBolt_AP"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingDef[defName="BallistaBolt_Heavy"]</xpath>
-				</li>				
-			
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="RK_Building_Ballista"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="RK_Weapon_Ballista"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="RK_Ammo_BallistaBoltNormal"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="RK_Ammo_BallistaBoltAP"]</xpath>
+			</li>
 		</operations>
 	</Operation>
 </Patch>

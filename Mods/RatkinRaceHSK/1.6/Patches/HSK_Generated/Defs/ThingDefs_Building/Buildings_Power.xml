@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<!-- Overrides for 1.6\Defs\ThingDefs_Building\Buildings_Power.xml -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RK_HamsterWheelGenerator"]</xpath>
+		<value>
+			<thingClass>Building</thingClass>
+			<drawerType>MapMeshAndRealTime</drawerType>
+			<graphicData>
+				<texPath>Things/Building/RK_HamsterWheelGeneratorBody</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>(3,3)</drawSize>
+			</graphicData>
+			<uiIconPath>Things/Building/RK_HamsterWheelGeneratorBody_north</uiIconPath>
+			<castEdgeShadows>false</castEdgeShadows>
+			<altitudeLayer>Building</altitudeLayer>
+			<passability>Standable</passability>
+			<blockWind>true</blockWind>
+			<scatterableOnMapGen>false</scatterableOnMapGen>
+			<fillPercent>1</fillPercent>
+			<hasInteractionCell>True</hasInteractionCell>
+			<interactionCellOffset>(0,0,0)</interactionCellOffset>
+			<blockLight>false</blockLight>
+			<canOverlapZones>false</canOverlapZones>
+			<statBases>
+				<MaxHitPoints>280</MaxHitPoints>
+				<WorkToBuild>2500</WorkToBuild>
+				<Flammability>1.0</Flammability>
+				<Beauty>-5</Beauty>
+			</statBases>
+			<tickerType>Normal</tickerType>
+			<size>(1,1)</size>
+			<stuffCategories>
+				<li>Metallic</li>
+			</stuffCategories>
+			<costStuffCount>80</costStuffCount>
+			<costList>
+				<ComponentIndustrial>4</ComponentIndustrial>
+				<ElectronicComponents>1</ElectronicComponents>
+			</costList>
+			<comps>
+				<li Class="CompProperties_Forbiddable" />
+				<li Class="NewRatkin.CompProperties_PowerHamsterWheel">
+					<basePowerConsumption>-1</basePowerConsumption>
+					<transmitsPower>true</transmitsPower>
+					<maxPowerOutputWatts>1000</maxPowerOutputWatts>
+					<referenceMoveSpeedForFullOutput>5</referenceMoveSpeedForFullOutput>
+					<centerOffset>(0, 0, 0.15)</centerOffset>
+					<centerFacingOffset>0</centerFacingOffset>
+					<frontOffset>(0, 1, -0.1)</frontOffset>
+					<backOffset>(0, -1, 0.15)</backOffset>
+					<rimScale>(1, 0.5, 1)</rimScale>
+					<bladeScale>(1, 0.5, 1.6)</bladeScale>
+					<bladeRadius>0.475</bladeRadius>
+					<bladeYOffset>0.086875</bladeYOffset>
+					<bladeZOffset>0.45</bladeZOffset>
+					<bladeCount>16</bladeCount>
+				</li>
+				<li Class="CompProperties_Breakdownable" />
+			</comps>
+			<rotatable>false</rotatable>
+			<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+			<designationCategory>Power</designationCategory>
+			<building>
+				<ai_chillDestination>false</ai_chillDestination>
+			</building>
+			<researchPrerequisites>
+				<li>Renewable_energy_C2</li>
+			</researchPrerequisites>
+			<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+			<modExtensions>
+				<li Class="SK.Events.EarthquakeExtension">
+					<immunityToDamage>true</immunityToDamage>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="RK_HamsterWheelGenerator"]/constructEffect</xpath>
+	</Operation>
+</Patch>

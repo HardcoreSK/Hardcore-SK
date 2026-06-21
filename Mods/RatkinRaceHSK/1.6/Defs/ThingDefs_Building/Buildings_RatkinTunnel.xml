@@ -1,30 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BuildingNaturalBase">
-		<defName>RK_ThiefTunnel</defName>
-		<label>rat hole</label>
-		<description>쥐구멍입니다. 아무래도 체구가 작은 누군가가 드나들기 위해 벽에 구멍을 낸것같습니다.</description>
-		<thingClass>NewRatkin.Building_ThiefTunnel</thingClass>
-		<graphicData>
-			<texPath>Things/Building/RK_ThiefTunnel</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
-		</graphicData>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
-		<rotatable>false</rotatable>
-		<fillPercent>0.8</fillPercent>
-		<statBases>
-			<MaxHitPoints>340</MaxHitPoints>
-			<Flammability>0.0</Flammability>
-		</statBases>
-		<tickerType>Normal</tickerType>
-		<building>
-			<isEdifice>false</isEdifice>
-			<canPlaceOverWall>true</canPlaceOverWall>
-		</building>
-		<clearBuildingArea>false</clearBuildingArea>
-		<defaultPlacingRot>South</defaultPlacingRot>
-	</ThingDef>
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>RK_GuerrillaTunnel</defName>
 		<label>drill tunnel</label>
@@ -46,10 +21,9 @@
 		<tickerType>Normal</tickerType>
 		<passability>PassThroughOnly</passability>
 		<killedLeavings>
-			<Plasteel>240</Plasteel>
-			<SteelBar>75</SteelBar>
+			<Steel>240</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
-			<Chemfuel>120</Chemfuel>
+			<Chemfuel>75</Chemfuel>
 		</killedLeavings>
 	</ThingDef>
 
@@ -60,14 +34,6 @@
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType>
 		<alwaysFlee>true</alwaysFlee>
-	</ThingDef>	
-	<ThingDef ParentName="EtherealThingBase">
-		<defName>RK_ThiefTunnelSpawner</defName>
-		<label>tunnel</label>
-		<thingClass>NewRatkin.ThiefTunnelSpawner</thingClass>
-		<tickerType>Normal</tickerType>
-		<drawerType>RealtimeOnly</drawerType>
-		<alwaysFlee>true</alwaysFlee>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -75,10 +41,8 @@
 		<label>emp Bomb</label>
 		<description>EMP폭탄입니다. 복잡하게 만들어서 폭발을 막는 방법은 직접 파괴하거나 해체를 하는 방법뿐입니다.</description>
 		<thingClass>NewRatkin.Building_EmpBomb</thingClass>
-		<minifiedDef>MinifiedEMP</minifiedDef>		
-		<thingCategories>
-			<li>BuildingsSpecial</li>
-		</thingCategories>		
+		<minifiedDef IsNull="True" />
+		<thingCategories Inherit="False" />
 		<graphicData>
 			<texPath>Things/Item/RK_EMP</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -88,7 +52,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.2</fillPercent>
 		<costList>
-			<Plasteel>60</Plasteel>
+			<Steel>60</Steel>
 			<ComponentIndustrial>6</ComponentIndustrial>
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
@@ -105,7 +69,7 @@
 		<defaultPlacingRot>North</defaultPlacingRot>
 		<passability>PassThroughOnly</passability>
 		<killedLeavings>
-			<Plasteel>45</Plasteel>
+			<Steel>45</Steel>
 			<ComponentIndustrial>4</ComponentIndustrial>
 		</killedLeavings>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>

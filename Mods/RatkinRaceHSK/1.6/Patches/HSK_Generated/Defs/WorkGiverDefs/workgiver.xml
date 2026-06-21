@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<!-- Overrides for 1.6\Defs\WorkGiverDefs\workgiver.xml -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/WorkGiverDef[defName="RK_Work_HamsterWheel"]</xpath>
+		<value>
+			<giverClass>NewRatkin.WorkGiver_HamsterWheel</giverClass>
+			<workType>RK_HamsterWheel</workType>
+			<priorityInType>50</priorityInType>
+			<verb>run</verb>
+			<gerund>running at</gerund>
+		</value>
+	</Operation>
+</Patch>

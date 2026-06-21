@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<!-- Overrides for 1.6\Defs\DutyDefs\DutyDefs.xml -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/DutyDef[defName="RK_JoinPrayerService"]</xpath>
+		<value>
+			<hook>MediumPriority</hook>
+			<socialModeMax>SuperActive</socialModeMax>
+			<thinkNode Class="ThinkNode_Priority">
+				<subNodes>
+					<li Class="JobGiver_GotoTravelDestination">
+						<exactCell>false</exactCell>
+						<locomotionUrgency>Walk</locomotionUrgency>
+					</li>
+					<li Class="NewRatkin.ThinkNode_ConditionalAtDutyRoom">
+						<subNodes>
+							<li Class="JobGiver_WanderInGatheringArea">
+								<ticksBetweenWandersRange>100~300</ticksBetweenWandersRange>
+								<locomotionUrgency>Walk</locomotionUrgency>
+							</li>
+						</subNodes>
+					</li>
+				</subNodes>
+			</thinkNode>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/DutyDef[defName="RK_OrganizePrayerService"]</xpath>
+		<value>
+			<socialModeMax>Off</socialModeMax>
+			<thinkNode Class="ThinkNode_Priority">
+				<subNodes>
+					<li Class="NewRatkin.JobGiver_GotoTravelInteractionCell">
+						<locomotionUrgency>Jog</locomotionUrgency>
+					</li>
+					<li Class="NewRatkin.ThinkNode_ConditionalAtDutyInteractionCell">
+						<subNodes>
+							<li Class="NewRatkin.JobGiver_PrayerService">
+								<ticks>100</ticks>
+							</li>
+						</subNodes>
+					</li>
+				</subNodes>
+			</thinkNode>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/DutyDef[defName="RK_SpectatePrayerService"]</xpath>
+		<value>
+			<hook>MediumPriority</hook>
+			<socialModeMax>Quiet</socialModeMax>
+			<thinkNode Class="ThinkNode_Priority">
+				<subNodes>
+					<li Class="NewRatkin.JobGiver_PrayDutySpectateRect" />
+				</subNodes>
+			</thinkNode>
+		</value>
+	</Operation>
+</Patch>

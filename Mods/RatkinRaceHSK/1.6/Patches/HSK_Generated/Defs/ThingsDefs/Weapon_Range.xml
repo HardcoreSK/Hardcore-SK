@@ -1,0 +1,780 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[@Name="RK_IndustrialRangeWeapon"]</xpath>
+		<value>
+			<thingCategories Inherit="false">
+				<li>RKRangeWeapon</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[@Name="RK_IndustrialRangeWeapon"]/tradeTags</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs</xpath>
+		<value>
+			<ThingDef Abstract="True" Name="RK_MedievalRangeWeapon" ParentName="RangedWeaponMedievalBase">
+				<recipeMaker>
+					<recipeUsers Inherit="false">
+						<li>RK_FueledSmithy</li>
+						<li>RK_ElectricSmithy</li>
+					</recipeUsers>
+				</recipeMaker>
+				<thingCategories Inherit="false">
+					<li>RKRangeWeapon</li>
+				</thingCategories>
+			</ThingDef>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[@Name="RK_NeolithicRangeWeapon"]</xpath>
+		<value>
+			<recipeMaker>
+				<recipeUsers Inherit="false">
+					<li>RK_FueledSmithy</li>
+					<li>RK_ElectricSmithy</li>
+				</recipeUsers>
+			</recipeMaker>
+			<thingCategories Inherit="false">
+				<li>RKRangeWeapon</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[@Name="RK_NeolithicRangeWeapon"]/tradeTags</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs</xpath>
+		<value>
+			<ThingDef ParentName="RK_IndustrialRangeWeapon">
+				<defName>Gun_RKShotgun</defName>
+				<label>Ratkin shotgun</label>
+				<description>소드오프 샷건입니다. 랫킨 왕국에서는 샷건이 랫킨을 쏩니다.</description>
+				<graphicData>
+					<texPath>Weapon/RK_shotgun_line</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+				</graphicData>
+				<soundInteract>Interact_Rifle</soundInteract>
+				<statBases>
+					<MarketValue>600</MarketValue>
+					<WorkToMake>8000</WorkToMake>
+					<SightsEfficiency>1.0</SightsEfficiency>
+					<ShotSpread>0.18</ShotSpread>
+					<SwayFactor>1.44</SwayFactor>
+					<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+					<Bulk>6.0</Bulk>
+					<Mass>2.3</Mass>
+				</statBases>
+				<weaponTags Inherit="false">
+					<li>RK_2TierWeapon</li>
+					<li>RK_Rifle</li>
+					<li>RK_Weapon</li>
+					<li>RK_RangeWeapon</li>
+					<li>RK_Combatant</li>
+				</weaponTags>
+				<equippedAngleOffset>45</equippedAngleOffset>
+				<equippedStatOffsets>
+					<HuntingStealth>0.10</HuntingStealth>
+					<Suppressability>-0.35</Suppressability>
+				</equippedStatOffsets>
+				<costList>
+					<WoodPlank>20</WoodPlank>
+					<Steel>40</Steel>
+					<ComponentIndustrial>3</ComponentIndustrial>
+					<Shotgun_Component>1</Shotgun_Component>
+					<Weapon_Parts>2</Weapon_Parts>
+				</costList>
+				<recipeMaker>
+					<skillRequirements>
+						<Crafting>4</Crafting>
+					</skillRequirements>
+					<recipeUsers Inherit="false">
+						<li>RK_ElectricSmithy</li>
+					</recipeUsers>
+					<researchPrerequisite>GasOperation</researchPrerequisite>
+				</recipeMaker>
+				<verbs>
+					<li Class="CombatExtended.VerbPropertiesCE">
+						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+						<warmupTime>0.62</warmupTime>
+						<range>16</range>
+						<soundCast>Shot_Shotgun</soundCast>
+						<soundCastTail>GunTail_Heavy</soundCastTail>
+						<muzzleFlashScale>9</muzzleFlashScale>
+					</li>
+				</verbs>
+				<comps>
+					<li Class="CombatExtended.CompProperties_FireModes">
+						<aiUseBurstMode>FALSE</aiUseBurstMode>
+						<aiAimMode>AimedShot</aiAimMode>
+						<noSingleShot>FALSE</noSingleShot>
+					</li>
+					<li Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>4</magazineSize>
+						<reloadOneAtATime>true</reloadOneAtATime>
+						<reloadTime>0.6</reloadTime>
+						<ammoSet>AmmoSet_12Gauge</ammoSet>
+					</li>
+				</comps>
+				<tools>
+					<li Class="CombatExtended.ToolCE">
+						<label>stock</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>7</power>
+						<cooldownTime>1.5</cooldownTime>
+						<chanceFactor>1.5</chanceFactor>
+						<armorPenetrationBlunt>3</armorPenetrationBlunt>
+						<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+					</li>
+					<li Class="CombatExtended.ToolCE">
+						<label>bayonet</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>13</power>
+						<cooldownTime>1.4</cooldownTime>
+						<armorPenetrationSharp>5</armorPenetrationSharp>
+						<armorPenetrationBlunt>4.5</armorPenetrationBlunt>
+						<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+					</li>
+				</tools>
+			</ThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_AutoCrossBow"]</xpath>
+		<value>
+			<ThingDef ParentName="RK_MedievalRangeWeapon">
+				<defName>RK_AutoCrossBow</defName>
+				<label>autocross bow</label>
+				<description>기계식으로 발사되는 반자동 석궁입니다. 원형 탄창에서 빠른속도로 볼트를 발사할 수 있습니다.</description>
+				<graphicData>
+					<texPath>Weapon/RK_AutoCrossBow</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+				</graphicData>
+				<soundInteract>Bow_Small</soundInteract>
+				<costList>
+					<WoodPlank>15</WoodPlank>
+					<Steel>35</Steel>
+					<ComponentMedieval>4</ComponentMedieval>
+					<ComponentIndustrial>3</ComponentIndustrial>
+					<Mechanism>2</Mechanism>
+				</costList>
+				<recipeMaker>
+					<researchPrerequisite>Machining</researchPrerequisite>
+					<skillRequirements>
+						<Crafting>7</Crafting>
+					</skillRequirements>
+					<recipeUsers Inherit="false">
+						<li>RK_ElectricSmithy</li>
+					</recipeUsers>
+				</recipeMaker>
+				<statBases>
+					<SightsEfficiency>0.9</SightsEfficiency>
+					<ShotSpread>0.3</ShotSpread>
+					<SwayFactor>1.25</SwayFactor>
+					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+					<Bulk>7.5</Bulk>
+					<Mass>2.0</Mass>
+					<WorkToMake>7500</WorkToMake>
+				</statBases>
+				<equippedStatOffsets>
+					<HuntingStealth>0.1</HuntingStealth>
+					<Suppressability>-0.35</Suppressability>
+				</equippedStatOffsets>
+				<weaponTags Inherit="false">
+					<li>RK_1TierRange</li>
+					<li>RK_Crossbow</li>
+					<li>RK_CrossbowAdvanced</li>
+					<li>RK_Weapon</li>
+					<li>RK_RangeWeapon</li>
+					<li>RK_Combatant</li>
+					<li>RK_LightWeapon</li>
+				</weaponTags>
+				<verbs>
+					<li Class="CombatExtended.VerbPropertiesCE">
+						<recoilAmount>1.25</recoilAmount>
+						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Projectile_MetallicBolt</defaultProjectile>
+						<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+						<burstShotCount>3</burstShotCount>
+						<warmupTime>1.1</warmupTime>
+						<range>31</range>
+						<soundCast>Bow_Small</soundCast>
+					</li>
+				</verbs>
+				<comps>
+					<li Class="CombatExtended.CompProperties_FireModes">
+						<aiUseBurstMode>FALSE</aiUseBurstMode>
+						<aiAimMode>AimedShot</aiAimMode>
+						<aimedBurstShotCount>2</aimedBurstShotCount>
+					</li>
+					<li Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadOneAtATime>true</reloadOneAtATime>
+						<magazineSize>6</magazineSize>
+						<reloadTime>0.6</reloadTime>
+						<ammoSet>AmmoSet_Bolt</ammoSet>
+					</li>
+				</comps>
+				<tools>
+					<li Class="CombatExtended.ToolCE">
+						<label>stock</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>9</power>
+						<cooldownTime>1.7</cooldownTime>
+						<armorPenetrationBlunt>4</armorPenetrationBlunt>
+						<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+					</li>
+				</tools>
+			</ThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs</xpath>
+		<value>
+			<ThingDef ParentName="RK_IndustrialRangeWeapon">
+				<defName>RK_BFR</defName>
+				<label>BFR 3000</label>
+				<description>Big Force Rifle 3000.</description>
+				<graphicData>
+					<texPath>Weapon/BFR</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+				</graphicData>
+				<soundInteract>InteractPTUR</soundInteract>
+				<statBases>
+					<MarketValue>3500</MarketValue>
+					<SightsEfficiency>1.75</SightsEfficiency>
+					<ShotSpread>0.01</ShotSpread>
+					<SwayFactor>1.1</SwayFactor>
+					<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+					<Bulk>13.0</Bulk>
+					<Mass>10.0</Mass>
+					<WorkToMake>40000</WorkToMake>
+					<NightVisionEfficiency_Weapon>0.3</NightVisionEfficiency_Weapon>
+				</statBases>
+				<equippedStatOffsets>
+					<HuntingStealth>0.05</HuntingStealth>
+					<Suppressability>-0.35</Suppressability>
+				</equippedStatOffsets>
+				<costList>
+					<Plasteel>100</Plasteel>
+					<ComponentIndustrial>8</ComponentIndustrial>
+					<Weapon_Parts>6</Weapon_Parts>
+					<ComponentSpacer>5</ComponentSpacer>
+					<AdvSniper_Component>1</AdvSniper_Component>
+				</costList>
+				<equippedAngleOffset>45</equippedAngleOffset>
+				<verbs>
+					<li Class="CombatExtended.VerbPropertiesCE">
+						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
+						<warmupTime>3.9</warmupTime>
+						<range>70</range>
+						<soundCast>RF_ShotHecateII</soundCast>
+						<soundCastTail>GunTail_Heavy</soundCastTail>
+						<muzzleFlashScale>9</muzzleFlashScale>
+					</li>
+				</verbs>
+				<comps>
+					<li Class="CombatExtended.CompProperties_FireModes">
+						<aiAimMode>AimedShot</aiAimMode>
+					</li>
+					<li Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>5</magazineSize>
+						<reloadTime>3.2</reloadTime>
+						<ammoSet>AmmoSet_50BMG</ammoSet>
+					</li>
+				</comps>
+				<recipeMaker>
+					<researchPrerequisite>Sniper_rifles_D1</researchPrerequisite>
+					<skillRequirements>
+						<Crafting>13</Crafting>
+					</skillRequirements>
+					<recipeUsers Inherit="false">
+						<li>RK_ElectricSmithy</li>
+					</recipeUsers>
+				</recipeMaker>
+				<weaponTags Inherit="false">
+					<li>RK_HeavyRifle</li>
+				</weaponTags>
+				<tradeTags Inherit="false">
+					<li>ExoticMisc</li>
+				</tradeTags>
+				<tools>
+					<li Class="CombatExtended.ToolCE">
+						<label>stock</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>9</power>
+						<cooldownTime>1.9</cooldownTime>
+						<armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+						<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+					</li>
+					<li Class="CombatExtended.ToolCE">
+						<label>barrel</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>10</power>
+						<cooldownTime>2</cooldownTime>
+						<armorPenetrationBlunt>4</armorPenetrationBlunt>
+						<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+					</li>
+				</tools>
+				<tradeability>All</tradeability>
+			</ThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Crossbow"]</xpath>
+		<value>
+			<ThingDef ParentName="RK_MedievalRangeWeapon">
+				<defName>RK_Crossbow</defName>
+				<label>cross bow</label>
+				<description>간단한 석궁입니다. 사냥을 할때 쓰입니다.</description>
+				<graphicData>
+					<texPath>Weapon/RK_Crossbow</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+				</graphicData>
+				<soundInteract>Bow_Small</soundInteract>
+				<costList>
+					<WoodPlank>25</WoodPlank>
+					<Steel>25</Steel>
+					<ComponentMedieval>4</ComponentMedieval>
+					<ComponentIndustrial>2</ComponentIndustrial>
+				</costList>
+				<recipeMaker>
+					<researchPrerequisite>Greatbow</researchPrerequisite>
+					<skillRequirements>
+						<Crafting>5</Crafting>
+					</skillRequirements>
+				</recipeMaker>
+				<statBases>
+					<SightsEfficiency>1</SightsEfficiency>
+					<ShotSpread>0.5</ShotSpread>
+					<SwayFactor>1.2</SwayFactor>
+					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+					<Mass>1.2</Mass>
+					<Bulk>6.0</Bulk>
+					<WorkToMake>3600</WorkToMake>
+				</statBases>
+				<equippedStatOffsets>
+					<HuntingStealth>0.07</HuntingStealth>
+					<Suppressability>-0.35</Suppressability>
+				</equippedStatOffsets>
+				<weaponTags Inherit="false">
+					<li>RK_1TierRange</li>
+					<li>RK_Crossbow</li>
+					<li>RK_Weapon</li>
+					<li>RK_RangeWeapon</li>
+					<li>RK_LightWeapon</li>
+				</weaponTags>
+				<verbs>
+					<li Class="CombatExtended.VerbPropertiesCE">
+						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Projectile_MetallicBolt</defaultProjectile>
+						<warmupTime>1</warmupTime>
+						<range>26</range>
+						<soundCast>Bow_Small</soundCast>
+					</li>
+				</verbs>
+				<comps>
+					<li Class="CombatExtended.CompProperties_FireModes">
+						<aiAimMode>AimedShot</aiAimMode>
+					</li>
+					<li Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>1</magazineSize>
+						<reloadTime>0.7</reloadTime>
+						<ammoSet>AmmoSet_Bolt</ammoSet>
+					</li>
+				</comps>
+				<tools>
+					<li Class="CombatExtended.ToolCE">
+						<label>stock</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>7</power>
+						<cooldownTime>1.6</cooldownTime>
+						<armorPenetrationBlunt>3</armorPenetrationBlunt>
+						<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+					</li>
+				</tools>
+			</ThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs</xpath>
+		<value>
+			<ThingDef ParentName="RK_MedievalRangeWeapon">
+				<defName>RK_EnhanceCrossBow</defName>
+				<label>enhanced cross bow</label>
+				<description>개량된 석궁입니다. 보다 멀리나가며 관통력도 우수합니다.</description>
+				<graphicData>
+					<texPath>Weapon/RK_EnhanceCrossBow</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+				</graphicData>
+				<soundInteract>Bow_Small</soundInteract>
+				<costList>
+					<WoodPlank>20</WoodPlank>
+					<Steel>30</Steel>
+					<ComponentMedieval>4</ComponentMedieval>
+					<ComponentIndustrial>4</ComponentIndustrial>
+				</costList>
+				<recipeMaker>
+					<researchPrerequisite>Bow_B2</researchPrerequisite>
+					<skillRequirements>
+						<Crafting>6</Crafting>
+					</skillRequirements>
+				</recipeMaker>
+				<statBases>
+					<SightsEfficiency>1.1</SightsEfficiency>
+					<ShotSpread>0.3</ShotSpread>
+					<SwayFactor>1.2</SwayFactor>
+					<RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+					<Bulk>6.5</Bulk>
+					<Mass>1.4</Mass>
+					<WorkToMake>2800</WorkToMake>
+				</statBases>
+				<equippedStatOffsets>
+					<HuntingStealth>0.15</HuntingStealth>
+					<Suppressability>-0.35</Suppressability>
+				</equippedStatOffsets>
+				<weaponTags Inherit="false">
+					<li>RK_1TierRange</li>
+					<li>RK_Crossbow</li>
+					<li>RK_Weapon</li>
+					<li>RK_RangeWeapon</li>
+					<li>RK_Combatant</li>
+					<li>RK_LightWeapon</li>
+				</weaponTags>
+				<verbs>
+					<li Class="CombatExtended.VerbPropertiesCE">
+						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Projectile_MetallicBolt</defaultProjectile>
+						<warmupTime>1</warmupTime>
+						<range>34</range>
+						<soundCast>Bow_Small</soundCast>
+					</li>
+				</verbs>
+				<comps>
+					<li Class="CombatExtended.CompProperties_FireModes">
+						<aiAimMode>AimedShot</aiAimMode>
+					</li>
+					<li Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>1</magazineSize>
+						<reloadTime>0.5</reloadTime>
+						<ammoSet>AmmoSet_Bolt</ammoSet>
+					</li>
+				</comps>
+				<tools>
+					<li Class="CombatExtended.ToolCE">
+						<label>stock</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>8</power>
+						<cooldownTime>1.6</cooldownTime>
+						<armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+						<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+					</li>
+				</tools>
+			</ThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_PrototypePulseRifle"]</xpath>
+		<value>
+			<ThingDef ParentName="RK_IndustrialRangeWeapon">
+				<defName>RK_PrototypePulseRifle</defName>
+				<label>prototype pulse rifle</label>
+				<description>실험용 파동 소총입니다. 실험용 랫킨들을 위해 제작되어 특수망원렌즈가 근거리 원거리 모두 정밀하게 조준해줍니다. 랫킨식 플레셰트탄환에서 아이디어를 얻어 제작한 이 무기는 쇄기모양의 고관통 에너지탄을 빠르게 발사합니다.</description>
+				<graphicData>
+					<texPath>Weapon/RK_PrototypePulseRifle</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+				</graphicData>
+				<soundInteract>InteractPTUR</soundInteract>
+				<statBases>
+					<MarketValue>2800</MarketValue>
+					<SightsEfficiency>1.25</SightsEfficiency>
+					<ShotSpread>0.06</ShotSpread>
+					<SwayFactor>1.2</SwayFactor>
+					<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+					<Bulk>8.0</Bulk>
+					<Mass>4.0</Mass>
+					<WorkToMake>40000</WorkToMake>
+					<NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>
+				</statBases>
+				<equippedStatOffsets>
+					<HuntingStealth>0.1</HuntingStealth>
+					<Suppressability>-0.35</Suppressability>
+				</equippedStatOffsets>
+				<costList>
+					<Plasteel>80</Plasteel>
+					<ComponentIndustrial>5</ComponentIndustrial>
+					<Weapon_Parts>4</Weapon_Parts>
+					<ComponentSpacer>3</ComponentSpacer>
+					<AdvSniper_Component>1</AdvSniper_Component>
+					<Charged_Component>1</Charged_Component>
+				</costList>
+				<verbs>
+					<li Class="CombatExtended.VerbPropertiesCE">
+						<recoilAmount>1.3</recoilAmount>
+						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_6x24mmCharged</defaultProjectile>
+						<warmupTime>1.0</warmupTime>
+						<range>48</range>
+						<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+						<burstShotCount>4</burstShotCount>
+						<soundCast>PrototypePulse</soundCast>
+						<soundCastTail>GunTail_Medium</soundCastTail>
+						<muzzleFlashScale>9</muzzleFlashScale>
+					</li>
+				</verbs>
+				<comps>
+					<li Class="CombatExtended.CompProperties_FireModes">
+						<aiUseBurstMode>FALSE</aiUseBurstMode>
+						<aiAimMode>AimedShot</aiAimMode>
+						<aimedBurstShotCount>2</aimedBurstShotCount>
+					</li>
+					<li Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>20</magazineSize>
+						<reloadTime>3.5</reloadTime>
+						<ammoSet>AmmoSet_6x24mmCharged</ammoSet>
+					</li>
+				</comps>
+				<recipeMaker>
+					<researchPrerequisite>Charge_weapons_D</researchPrerequisite>
+					<skillRequirements>
+						<Crafting>13</Crafting>
+					</skillRequirements>
+					<recipeUsers Inherit="false">
+						<li>RK_ElectricSmithy</li>
+					</recipeUsers>
+				</recipeMaker>
+				<weaponTags Inherit="false">
+					<li>RK_4TierWeapon</li>
+					<li>RK_Weapon</li>
+					<li>RK_RangeWeapon</li>
+				</weaponTags>
+				<tradeTags>
+					<li>ExoticMisc</li>
+				</tradeTags>
+				<tools>
+					<li Class="CombatExtended.ToolCE">
+						<label>stock</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>9</power>
+						<cooldownTime>1.7</cooldownTime>
+						<armorPenetrationBlunt>4</armorPenetrationBlunt>
+						<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+					</li>
+					<li Class="CombatExtended.ToolCE">
+						<label>barrel</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>8</power>
+						<cooldownTime>1.7</cooldownTime>
+						<armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+						<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+					</li>
+				</tools>
+				<tradeability>All</tradeability>
+			</ThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Rifle"]</xpath>
+		<value>
+			<ThingDef ParentName="RK_IndustrialRangeWeapon">
+				<defName>RK_Rifle</defName>
+				<label>ratkin rifle</label>
+				<description>인간의 라이플을 흉내내 만든 라이플입니다. 석궁보다 사거리가 길고 작은 검을 달아두어 유사시 창처럼 사용할 수 있습니다.</description>
+				<graphicData>
+					<texPath>Weapon/RK_Rifle</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+				</graphicData>
+				<soundInteract>Interact_Rifle</soundInteract>
+				<statBases>
+					<MarketValue>875</MarketValue>
+					<SightsEfficiency>1</SightsEfficiency>
+					<ShotSpread>0.04</ShotSpread>
+					<SwayFactor>1.6</SwayFactor>
+					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+					<Bulk>7.4</Bulk>
+					<Mass>3.6</Mass>
+					<WorkToMake>12000</WorkToMake>
+				</statBases>
+				<equippedStatOffsets>
+					<HuntingStealth>0.1</HuntingStealth>
+					<Suppressability>-0.35</Suppressability>
+				</equippedStatOffsets>
+				<costList>
+					<WoodPlank>30</WoodPlank>
+					<Steel>45</Steel>
+					<ComponentIndustrial>3</ComponentIndustrial>
+					<Weapon_Parts>2</Weapon_Parts>
+					<Rifle_Component>1</Rifle_Component>
+				</costList>
+				<recipeMaker>
+					<skillRequirements>
+						<Crafting>6</Crafting>
+					</skillRequirements>
+					<recipeUsers Inherit="false">
+						<li>RK_ElectricSmithy</li>
+					</recipeUsers>
+					<researchPrerequisite>Rifles_C1</researchPrerequisite>
+				</recipeMaker>
+				<verbs>
+					<li Class="CombatExtended.VerbPropertiesCE">
+						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_303British_FMJ</defaultProjectile>
+						<warmupTime>1.4</warmupTime>
+						<range>50</range>
+						<soundCast>Rifle</soundCast>
+						<soundCastTail>GunTail_Heavy</soundCastTail>
+						<muzzleFlashScale>9</muzzleFlashScale>
+					</li>
+				</verbs>
+				<comps>
+					<li Class="CombatExtended.CompProperties_FireModes">
+						<aiAimMode>AimedShot</aiAimMode>
+					</li>
+					<li Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>5</magazineSize>
+						<reloadTime>3.2</reloadTime>
+						<ammoSet>AmmoSet_303British</ammoSet>
+					</li>
+				</comps>
+				<tools>
+					<li Class="CombatExtended.ToolCE">
+						<label>bayonet</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>13</power>
+						<cooldownTime>1.4</cooldownTime>
+						<armorPenetrationSharp>5</armorPenetrationSharp>
+						<armorPenetrationBlunt>4.5</armorPenetrationBlunt>
+						<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+					</li>
+				</tools>
+				<weaponTags Inherit="false">
+					<li>RK_2TierWeapon</li>
+					<li>RK_3TierWeapon</li>
+					<li>RK_Rifle</li>
+					<li>RK_Weapon</li>
+					<li>RK_RangeWeapon</li>
+					<li>RK_LightWeapon</li>
+					<li>RK_Combatant</li>
+				</weaponTags>
+				<equippedAngleOffset>45</equippedAngleOffset>
+			</ThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_SniperRifle"]</xpath>
+		<value>
+			<ThingDef ParentName="RK_IndustrialRangeWeapon">
+				<defName>RK_SniperRifle</defName>
+				<label>ratkin sniper rifle</label>
+				<description>랫킨식 망원렌즈가 달린 소총입니다. 망원장비덕분에 더 먼곳까지 조준할 수 있지만 가까운 곳을 조준하기 힘듭니다.</description>
+				<graphicData>
+					<texPath>Weapon/RK_SniperRifle</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+				</graphicData>
+				<soundInteract>Interact_Rifle</soundInteract>
+				<statBases>
+					<MarketValue>1450</MarketValue>
+					<SightsEfficiency>1.8</SightsEfficiency>
+					<ShotSpread>0.03</ShotSpread>
+					<SwayFactor>1.5</SwayFactor>
+					<RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+					<Bulk>9.6</Bulk>
+					<Mass>4.1</Mass>
+					<WorkToMake>12000</WorkToMake>
+				</statBases>
+				<equippedStatOffsets>
+					<HuntingStealth>0.2</HuntingStealth>
+					<Suppressability>-0.35</Suppressability>
+				</equippedStatOffsets>
+				<costList>
+					<WoodPlank>30</WoodPlank>
+					<Steel>60</Steel>
+					<ComponentIndustrial>5</ComponentIndustrial>
+					<Weapon_Parts>3</Weapon_Parts>
+					<Sniper_Component>1</Sniper_Component>
+				</costList>
+				<recipeMaker>
+					<skillRequirements>
+						<Crafting>8</Crafting>
+					</skillRequirements>
+					<recipeUsers Inherit="false">
+						<li>RK_ElectricSmithy</li>
+					</recipeUsers>
+					<researchPrerequisite>Sniper_rifles_C1</researchPrerequisite>
+				</recipeMaker>
+				<verbs>
+					<li Class="CombatExtended.VerbPropertiesCE">
+						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_303British_FMJ</defaultProjectile>
+						<warmupTime>1.8</warmupTime>
+						<range>60</range>
+						<soundCast>Rifle</soundCast>
+						<soundCastTail>GunTail_Heavy</soundCastTail>
+						<muzzleFlashScale>9</muzzleFlashScale>
+					</li>
+				</verbs>
+				<comps>
+					<li Class="CombatExtended.CompProperties_FireModes">
+						<aiAimMode>AimedShot</aiAimMode>
+					</li>
+					<li Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>5</magazineSize>
+						<reloadTime>3.2</reloadTime>
+						<ammoSet>AmmoSet_303British</ammoSet>
+					</li>
+				</comps>
+				<tools>
+					<li Class="CombatExtended.ToolCE">
+						<label>bayonet</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>13</power>
+						<cooldownTime>1.4</cooldownTime>
+						<armorPenetrationSharp>5</armorPenetrationSharp>
+						<armorPenetrationBlunt>4.5</armorPenetrationBlunt>
+						<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+					</li>
+				</tools>
+				<weaponTags Inherit="false">
+					<li>RK_2TierWeapon</li>
+					<li>RK_3TierWeapon</li>
+					<li>RK_Rifle</li>
+					<li>RK_Weapon</li>
+					<li>RK_RangeWeapon</li>
+				</weaponTags>
+				<equippedAngleOffset>45</equippedAngleOffset>
+			</ThingDef>
+		</value>
+	</Operation>
+</Patch>

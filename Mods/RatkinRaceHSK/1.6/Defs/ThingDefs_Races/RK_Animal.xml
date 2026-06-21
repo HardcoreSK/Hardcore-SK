@@ -3,21 +3,15 @@
 
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>RK_KingHamster</defName>
-		<label>대왕 햄스터</label>
-		<description>큰 햄스터입니다. 성격은 온순해지는 대신 덩치가 엄청 커졌습니다. 여전히 지능수준은 햄스터와 같지만 길들여서 짐꾼으로 쓸 수 있을것 같습니다. 더운 온도에 비교적 잘 적응합니다.</description>
+		<label>Hamstrox</label>
+		<description>무리 생활을 하는 거대한 초식 동물로, 햄스터의 후손이 춥거나 따뜻한 환경에 잘 적응한 결과입니다. 분노한 햄스트록스는 매우 위험하지만, 길들이면 얌전한 동물이며 짐꾼으로 쓸 수 있습니다. 햄스트록스가 이렇게 커진 이유는 아무도 알지 못합니다. 어쩌면 초기 유전자 조작 실험의 흔적일지도 모릅니다.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
 			<MarketValue>450</MarketValue>
-			<Mass>75</Mass>
-			<ComfyTemperatureMin>-45</ComfyTemperatureMin>
-			<ComfyTemperatureMax>50</ComfyTemperatureMax>
-			<MeatAmount>50</MeatAmount>
-			<CarryWeight>155</CarryWeight>
-			<CarryBulk>140</CarryBulk>
-			<GermResistance>0.15</GermResistance>
-			<GermContainment>0.1</GermContainment>
-			<FilthRate>12</FilthRate>
-			<Wildness>0</Wildness>
+			<ComfyTemperatureMin>-60</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<FilthRate>16</FilthRate>
+			<Wildness>0.0</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -31,7 +25,8 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 			<li>
-				<label>left hand</label>
+				<label>left paw</label>
+				<labelNoLocation>paw</labelNoLocation>
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
@@ -40,7 +35,8 @@
 				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
 			</li>
 			<li>
-				<label>right hand</label>
+				<label>right paw</label>
+				<labelNoLocation>paw</labelNoLocation>
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
@@ -61,19 +57,20 @@
 		<comps>
 			<li Class="CompProperties_Shearable">
 				<woolDef>RK_Wool_KingHamster</woolDef>
-				<shearIntervalDays>12</shearIntervalDays>
-				<woolAmount>90</woolAmount>
+				<shearIntervalDays>15</shearIntervalDays>
+				<woolAmount>75</woolAmount>
 			</li>
 		</comps>
 		<race>
 			<herdAnimal>true</herdAnimal>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<body>QuadrupedAnimalWithHooves</body>
 			<baseBodySize>1.8</baseBodySize>
 			<baseHealthScale>1.6</baseHealthScale>
-			<baseHungerRate>0.8</baseHungerRate>
+			<baseHungerRate>0.65</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<leatherDef>Leather_Plain</leatherDef>
-			<useMeatFrom>Elephant</useMeatFrom>
+			<leatherDef>RK_Leather_KingHamster</leatherDef>
 			<gestationPeriodDays>8</gestationPeriodDays>
 			<trainability>Intermediate</trainability>
 			<packAnimal>true</packAnimal>
@@ -96,18 +93,22 @@
 					<soundAngry>Pawn_Alphabeaver_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
+			<roamMtbDays>3</roamMtbDays>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<soundEating>Herbivore_Eat</soundEating>
 		</race>
 		<tradeTags>
+			<li>AnimalCommon</li>
+			<li>AnimalFarm</li>
 			<li>AnimalRatkin</li>
 		</tradeTags>
 	</ThingDef>
-
+	
 	<PawnKindDef Name="KingHamster" ParentName="AnimalKindBase">
 		<defName>Ratkin_KingHamster</defName>
-		<label>대왕 햄스터</label>
+		<label>Hamstrox</label>
 		<race>RK_KingHamster</race>
 		<combatPower>65</combatPower>
 		<ecoSystemWeight>1.2</ecoSystemWeight>
@@ -117,8 +118,8 @@
 		</wildGroupSize>
 		<lifeStages>
 			<li>
-				<label>king hamster calf</label>
-				<labelPlural>king hamster calves</labelPlural>
+				<label>Hamstrox calf</label>
+				<labelPlural>Hamstrox calves</labelPlural>
 				<bodyGraphicData>
 					<texPath>Animal/RK_KingHamster/RK_KingHamster</texPath>
 					<drawSize>1.5</drawSize>
@@ -163,4 +164,40 @@
 		</lifeStages>
 	</PawnKindDef>
 
+	<ThingDef ParentName="LeatherBase">
+		<defName>RK_Leather_KingHamster</defName>
+		<label>Hamstrox fur</label>
+		<description>햄스트록스의 두터운 모피입니다. 부드러운 베이지 색이 특징적입니다. 뛰어난 통풍성 덕분에 더운 지방에서 체온 조절에 좋습니다.</description>
+		<graphicData>
+			<color>(247,230,218)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.3</MarketValue>
+			<StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>30</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(247,230,218)</color>
+			<commonality>0.025</commonality>
+			<statFactors>
+				<Beauty>1.3</Beauty>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="WoolBase">
+		<defName>RK_Wool_KingHamster</defName>
+		<label>Hamstrox wool</label>
+		<description>부드럽고 가벼우면서도 뛰어난 보온성을 지녔습니다. 이 털로 만든 옷은 극지방에서 활동하기 좋습니다.</description>
+		<graphicData>
+			<color>(236,198,170)</color>
+		</graphicData>
+		<statBases>
+			<StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(236,198,170)</color>
+		</stuffProps>
+	</ThingDef>
 </Defs>

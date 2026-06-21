@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
 	<DamageDef ParentName="StunBase">
 		<defName>RK_EMP</defName>
 		<label>EMP</label>
@@ -35,22 +34,22 @@
 
 	<SoundDef>
 		<defName>RK_Sound_Emp_Crack</defName>
-		<context>MapOnly</context> 
-		<eventNames />  
-		<maxSimultaneous>1</maxSimultaneous>  
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>Things/Emp_Crack</clipPath>
 					</li>
-				</grains>      
+				</grains>
 				<volumeRange>
-					<min>80</min>        
+					<min>80</min>
 					<max>80</max>
-				</volumeRange>      
+				</volumeRange>
 				<pitchRange>
-					<min>0.8516304</min>        
+					<min>0.8516304</min>
 					<max>1.254348</max>
 				</pitchRange>
 			</li>

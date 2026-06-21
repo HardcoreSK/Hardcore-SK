@@ -11,7 +11,7 @@
 					<BodyPart>
 						<bodyPart>Spine</bodyPart>
 					</BodyPart>
-					<Gene MayRequire="Ludeon.RimWorld.Biotech">Tail_Ratkin</Gene>
+					<Gene MayRequire="Ludeon.RimWorld.Biotech">RK_Gene_ThinTail</Gene>
 					<Posture>
 						<drawnStanding>true</drawnStanding>
 						<drawnLaying>true</drawnLaying>
@@ -72,7 +72,7 @@
 					<BodyPart>
 						<bodyPart>Spine</bodyPart>
 					</BodyPart>
-					<Gene MayRequire="Ludeon.RimWorld.Biotech">Tail_Ratkin</Gene>
+					<Gene MayRequire="Ludeon.RimWorld.Biotech">RK_Gene_ThinTail</Gene>
 					<Posture>
 						<drawnStanding>true</drawnStanding>
 						<drawnLaying>true</drawnLaying>
@@ -136,7 +136,7 @@
 							<BodyPart>
 								<bodyPart>Spine</bodyPart>
 							</BodyPart>
-							<Gene MayRequire="Ludeon.RimWorld.Biotech">Tail_Ratkin</Gene>
+							<Gene MayRequire="Ludeon.RimWorld.Biotech">RK_Gene_ThinTail</Gene>
 							<Posture>
 								<drawnStanding>true</drawnStanding>
 								<drawnLaying>true</drawnLaying>
@@ -191,23 +191,48 @@
 		</match>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/graphicPaths/head/headtypeGraphics</xpath>
-		<value>
-			<Gaunt>Things/Pawn/Humanlike/Heads/Genes/None_Gaunt_Average</Gaunt>
-			<Male_HeavyJawNormal>Things/Pawn/Humanlike/Heads/Male/Male_HeavyJaw_Normal</Male_HeavyJawNormal>
-			<Female_HeavyJawNormal>Things/Pawn/Humanlike/Heads/Female/Female_HeavyJaw_Normal</Female_HeavyJawNormal>
-			<Furskin_Average1>Things/Pawn/Humanlike/Heads/FurCovered_Average1_Normal</Furskin_Average1>
-			<Furskin_Average2>Things/Pawn/Humanlike/Heads/FurCovered_Average2_Normal</Furskin_Average2>
-			<Furskin_Average3>Things/Pawn/Humanlike/Heads/FurCovered_Average2_Normal</Furskin_Average3>
-			<Furskin_Gaunt>Things/Pawn/Humanlike/Heads/FurCovered_Gaunt_Normal</Furskin_Gaunt>
-			<Furskin_Narrow1>Things/Pawn/Humanlike/Heads/FurCovered_Narrow1_Normal</Furskin_Narrow1>
-			<Furskin_Narrow2>Things/Pawn/Humanlike/Heads/FurCovered_Narrow2_Normal</Furskin_Narrow2>
-			<Furskin_Narrow3>Things/Pawn/Humanlike/Heads/FurCovered_Narrow3_Normal</Furskin_Narrow3>
-			<Furskin_Heavy1>Things/Pawn/Humanlike/Heads/FurCovered_Wide1_Normal</Furskin_Heavy1>
-			<Furskin_Heavy2>Things/Pawn/Humanlike/Heads/FurCovered_Wide2_Normal</Furskin_Heavy2>
-			<Furskin_Heavy3>Things/Pawn/Humanlike/Heads/FurCovered_Wide3_Normal</Furskin_Heavy3>
-		</value>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/graphicPaths/head/headtypeGraphics</xpath>
+			<value>
+				<Gaunt>Things/Pawn/Humanlike/Heads/Genes/None_Gaunt_Average</Gaunt>
+				<Male_HeavyJawNormal>Things/Pawn/Humanlike/Heads/Male/Male_HeavyJaw_Normal</Male_HeavyJawNormal>
+				<Female_HeavyJawNormal>Things/Pawn/Humanlike/Heads/Female/Female_HeavyJaw_Normal</Female_HeavyJawNormal>
+				<Furskin_Average1>Things/Pawn/Humanlike/Heads/FurCovered_Average1_Normal</Furskin_Average1>
+				<Furskin_Average2>Things/Pawn/Humanlike/Heads/FurCovered_Average2_Normal</Furskin_Average2>
+				<Furskin_Average3>Things/Pawn/Humanlike/Heads/FurCovered_Average2_Normal</Furskin_Average3>
+				<Furskin_Gaunt>Things/Pawn/Humanlike/Heads/FurCovered_Gaunt_Normal</Furskin_Gaunt>
+				<Furskin_Narrow1>Things/Pawn/Humanlike/Heads/FurCovered_Narrow1_Normal</Furskin_Narrow1>
+				<Furskin_Narrow2>Things/Pawn/Humanlike/Heads/FurCovered_Narrow2_Normal</Furskin_Narrow2>
+				<Furskin_Narrow3>Things/Pawn/Humanlike/Heads/FurCovered_Narrow3_Normal</Furskin_Narrow3>
+				<Furskin_Heavy1>Things/Pawn/Humanlike/Heads/FurCovered_Wide1_Normal</Furskin_Heavy1>
+				<Furskin_Heavy2>Things/Pawn/Humanlike/Heads/FurCovered_Wide2_Normal</Furskin_Heavy2>
+				<Furskin_Heavy3>Things/Pawn/Humanlike/Heads/FurCovered_Wide3_Normal</Furskin_Heavy3>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationReplace">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/graphicPaths/head</xpath>
+			<value>
+				<head>
+					<headtypeGraphics>
+						<Gaunt>Things/Pawn/Humanlike/Heads/Genes/None_Gaunt_Average</Gaunt>
+						<Male_HeavyJawNormal>Things/Pawn/Humanlike/Heads/Male/Male_HeavyJaw_Normal</Male_HeavyJawNormal>
+						<Female_HeavyJawNormal>Things/Pawn/Humanlike/Heads/Female/Female_HeavyJaw_Normal</Female_HeavyJawNormal>
+						<Furskin_Average1>Things/Pawn/Humanlike/Heads/FurCovered_Average1_Normal</Furskin_Average1>
+						<Furskin_Average2>Things/Pawn/Humanlike/Heads/FurCovered_Average2_Normal</Furskin_Average2>
+						<Furskin_Average3>Things/Pawn/Humanlike/Heads/FurCovered_Average2_Normal</Furskin_Average3>
+						<Furskin_Gaunt>Things/Pawn/Humanlike/Heads/FurCovered_Gaunt_Normal</Furskin_Gaunt>
+						<Furskin_Narrow1>Things/Pawn/Humanlike/Heads/FurCovered_Narrow1_Normal</Furskin_Narrow1>
+						<Furskin_Narrow2>Things/Pawn/Humanlike/Heads/FurCovered_Narrow2_Normal</Furskin_Narrow2>
+						<Furskin_Narrow3>Things/Pawn/Humanlike/Heads/FurCovered_Narrow3_Normal</Furskin_Narrow3>
+						<Furskin_Heavy1>Things/Pawn/Humanlike/Heads/FurCovered_Wide1_Normal</Furskin_Heavy1>
+						<Furskin_Heavy2>Things/Pawn/Humanlike/Heads/FurCovered_Wide2_Normal</Furskin_Heavy2>
+						<Furskin_Heavy3>Things/Pawn/Humanlike/Heads/FurCovered_Wide3_Normal</Furskin_Heavy3>
+					</headtypeGraphics>
+				</head>
+			</value>
+		</nomatch>
 	</Operation>
 
 	<!-- Ears -->
@@ -221,7 +246,7 @@
 						<bodyPart>Ear</bodyPart>
 						<bodyPartLabel>left ear</bodyPartLabel>
 					</BodyPart>
-					<Gene MayRequire="Ludeon.RimWorld.Biotech">Ears_Ratkin</Gene>
+					<Gene MayRequire="Ludeon.RimWorld.Biotech">RK_Gene_LargeEars</Gene>
 					<Posture>
 						<drawnStanding>true</drawnStanding>
 						<drawnLaying>true</drawnLaying>
@@ -310,7 +335,7 @@
 						<bodyPart>Ear</bodyPart>
 						<bodyPartLabel>right ear</bodyPartLabel>
 					</BodyPart>
-					<Gene MayRequire="Ludeon.RimWorld.Biotech">Ears_Ratkin</Gene>
+					<Gene MayRequire="Ludeon.RimWorld.Biotech">RK_Gene_LargeEars</Gene>
 					<Posture>
 						<drawnStanding>true</drawnStanding>
 						<drawnLaying>true</drawnLaying>
@@ -405,7 +430,7 @@
 						<bodyPart>Ear</bodyPart>
 						<bodyPartLabel>left ear</bodyPartLabel>
 					</BodyPart>
-					<Gene MayRequire="Ludeon.RimWorld.Biotech">Ears_Ratkin</Gene>
+					<Gene MayRequire="Ludeon.RimWorld.Biotech">RK_Gene_LargeEars</Gene>
 					<Posture>
 						<drawnStanding>true</drawnStanding>
 						<drawnLaying>true</drawnLaying>
@@ -494,7 +519,7 @@
 						<bodyPart>Ear</bodyPart>
 						<bodyPartLabel>right ear</bodyPartLabel>
 					</BodyPart>
-					<Gene MayRequire="Ludeon.RimWorld.Biotech">Ears_Ratkin</Gene>
+					<Gene MayRequire="Ludeon.RimWorld.Biotech">RK_Gene_LargeEars</Gene>
 					<Posture>
 						<drawnStanding>true</drawnStanding>
 						<drawnLaying>true</drawnLaying>
