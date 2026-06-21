@@ -1,31 +1,317 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="ChemfuelTank"]</xpath>
-		<value>
-			<costList>
-				<ComponentIndustrial>2</ComponentIndustrial>
-			</costList>
-			<costStuffCount>100</costStuffCount>
-			<stuffCategories>
-				<li>SolidMetallic</li>
-				<li>RuggedMetallic</li>
-			</stuffCategories>
-		</value>
-	</Operation>
+    <!--Better spaceship stats-->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GravEngine"]/statBases</xpath>
+        <value>
+            <SubstructureSupport>1000</SubstructureSupport>
+            <MarketValue>15000</MarketValue>
+        </value>
+    </Operation>
 
-		<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="LargeChemfuelTank"]</xpath>
-		<value>
-			<costList>
-				<ComponentIndustrial>4</ComponentIndustrial>
-			</costList>
-			<costStuffCount>200</costStuffCount>
-			<stuffCategories>
-				<li>SolidMetallic</li>
-				<li>RuggedMetallic</li>
-			</stuffCategories>
-		</value>
-	</Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="GravEngine"]/comps/li[@Class="CompProperties_SubstructureFootprint"]/radius</xpath>
+        <value>
+            <radius>22.9</radius>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="GravshipShieldGenerator"]/comps/li[@Class="CompProperties_ProjectileInterceptor"]/radius</xpath>
+        <value>
+            <radius>28.9</radius>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GravFieldExtender"]/comps/li[@Class="CompProperties_GravshipFacility"]</xpath>
+        <value>
+            <statOffsets>
+              <SubstructureSupport>350</SubstructureSupport>
+            </statOffsets>
+            <maxSimultaneous>10</maxSimultaneous>
+            <maxDistance>23.9</maxDistance>
+        </value>
+    </Operation>
+    
+    <!--HSK is power-hungry-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="GravcorePowerCell"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+        <value>
+            <basePowerConsumption>-10000</basePowerConsumption>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="GravshipShieldGenerator"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+        <value>
+            <basePowerConsumption>5000</basePowerConsumption>
+        </value>
+    </Operation>
+
+    <!--Costs-->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GravshipHull"]</xpath>
+        <value>
+            <costStuffCount>6</costStuffCount>
+            <stuffCategories Inherit="False">
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GravFieldExtender"]</xpath>
+        <value>
+            <graphicData Merge="True">
+                <graphicClass>SK.Graphic_SingleNoColor</graphicClass>
+            </graphicData>
+            <costList>
+                <Gravcore>1</Gravcore>
+                <GravlitePanel>35</GravlitePanel>
+                <Microchips>2</Microchips>
+                <ComponentUltra>2</ComponentUltra>
+                <ComponentAdvanced>10</ComponentAdvanced>
+            </costList>
+            <costStuffCount>100</costStuffCount>
+            <stuffCategories>
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <constructionSkillPrerequisite>18</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="PilotConsole"]</xpath>
+        <value>
+            <graphicData Merge="True">
+                <graphicClass>SK.Graphic_MultiNoColor</graphicClass>
+            </graphicData>
+            <costList>
+                <Microchips>5</Microchips>
+                <Electronics>12</Electronics>
+                <ElectronicComponents>25</ElectronicComponents>
+                <ComponentSpacer>2</ComponentSpacer>
+            </costList>
+            <costStuffCount>150</costStuffCount>
+            <stuffCategories>
+                <li>SolidMetallic</li>
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="ChemfuelTank"]</xpath>
+        <value>
+            <graphicData Merge="True">
+                <graphicClass>SK.Graphic_MultiNoColor</graphicClass>
+            </graphicData>
+            <costList>
+                <ComponentAdvanced>2</ComponentAdvanced>
+            </costList>
+            <costStuffCount>100</costStuffCount>
+            <stuffCategories>
+                <li>SolidMetallic</li>
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="LargeChemfuelTank"]</xpath>
+        <value>
+            <graphicData Merge="True">
+                <graphicClass>SK.Graphic_MultiNoColor</graphicClass>
+            </graphicData>
+            <costList>
+                <ComponentAdvanced>4</ComponentAdvanced>
+            </costList>
+            <costStuffCount>200</costStuffCount>
+            <stuffCategories>
+                <li>SolidMetallic</li>
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SmallThruster"]</xpath>
+        <value>
+            <graphicData>
+                <graphicClass>SK.Graphic_MultiNoColor</graphicClass>
+                <texPath>Things/Building/SmallThruster/SmallThruster</texPath>
+                <drawSize>(1.1, 2.2)</drawSize>
+                <shadowData>
+                    <volume>(1, 1, 2)</volume>
+                </shadowData>
+            </graphicData>
+            <costList>
+                <ComponentAdvanced>10</ComponentAdvanced>
+                <ComponentSpacer>2</ComponentSpacer>
+            </costList>
+            <costStuffCount>100</costStuffCount>
+            <stuffCategories>
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="LargeThruster"]</xpath>
+        <value>
+            <graphicData>
+                <graphicClass>SK.Graphic_MultiNoColor</graphicClass>
+                <texPath>Things/Building/LateralThruster/LateralThruster</texPath>
+                <drawSize>(2.2, 2.2)</drawSize>
+                <shadowData>
+                    <volume>(1.8, 0.75, 1.8)</volume>
+                </shadowData>
+            </graphicData>
+            <costList>
+                <ComponentAdvanced>14</ComponentAdvanced>
+                <ComponentSpacer>4</ComponentSpacer>
+            </costList>
+            <costStuffCount>180</costStuffCount>
+            <stuffCategories>
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="FuelOptimizer"]</xpath>
+        <value>
+            <graphicData Merge="True">
+                <graphicClass>SK.Graphic_MultiNoColor</graphicClass>
+            </graphicData>
+            <costList>
+                <GravlitePanel>40</GravlitePanel>
+                <Microchips>2</Microchips>
+                <Electronics>5</Electronics>
+                <ComponentSpacer>4</ComponentSpacer>
+            </costList>
+            <costStuffCount>80</costStuffCount>
+            <stuffCategories>
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <constructionSkillPrerequisite>13</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SignalJammer"]</xpath>
+        <value>
+            <graphicData Merge="True">
+                <graphicClass>SK.Graphic_MultiNoColor</graphicClass>
+            </graphicData>
+            <costList>
+                <Gravcore>1</Gravcore>
+                <GravlitePanel>80</GravlitePanel>
+                <Microchips>4</Microchips>
+                <Electronics>10</Electronics>
+                <ComponentSpacer>8</ComponentSpacer>
+            </costList>
+            <costStuffCount>160</costStuffCount>
+            <stuffCategories>
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GravcorePowerCell"]</xpath>
+        <value>
+            <graphicData Merge="True">
+                <graphicClass>SK.Graphic_SingleNoColor</graphicClass>
+            </graphicData>
+            <costList>
+                <Gravcore>1</Gravcore>
+                <GravlitePanel>50</GravlitePanel>
+                <Microchips>2</Microchips>
+                <Electronics>2</Electronics>
+                <ComponentSpacer>2</ComponentSpacer>
+            </costList>
+            <costStuffCount>50</costStuffCount>
+            <stuffCategories>
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+            <designationCategory>Odyssey</designationCategory>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="PilotSubpersonaCore"]</xpath>
+        <value>
+            <graphicData Merge="True">
+                <graphicClass>SK.Graphic_SingleNoColor</graphicClass>
+            </graphicData>
+            <costList>
+                <GravlitePanel>20</GravlitePanel>
+                <BioMicrochips>4</BioMicrochips>
+                <ComponentUltra>2</ComponentUltra>
+            </costList>
+            <costStuffCount>50</costStuffCount>
+            <stuffCategories>
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <constructionSkillPrerequisite>16</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GravshipShieldGenerator"]</xpath>
+        <value>
+            <graphicData Merge="True">
+                <graphicClass>SK.Graphic_SingleNoColor</graphicClass>
+            </graphicData>
+            <costList>
+                <GravlitePanel>80</GravlitePanel>
+                <ElectronicComponents>25</ElectronicComponents>
+                <ComponentSpacer>10</ComponentSpacer>
+                <Microchips>5</Microchips>
+                <ComponentUltra>2</ComponentUltra>
+            </costList>
+            <costStuffCount>180</costStuffCount>
+            <stuffCategories>
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <constructionSkillPrerequisite>16</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GravAnchor"]</xpath>
+        <value>
+            <graphicData Merge="True">
+                <graphicClass>SK.Graphic_SingleNoColor</graphicClass>
+            </graphicData>
+            <statBases Merge="True">
+                <Mass>100</Mass>
+            </statBases>
+            <costList>
+                <GravlitePanel>80</GravlitePanel>
+                <ElectronicComponents>10</ElectronicComponents>
+                <Microchips>2</Microchips>
+            </costList>
+            <costStuffCount>180</costStuffCount>
+            <stuffCategories>
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+            <minifiedDef>MinifiedThing</minifiedDef>
+            <thingCategories>
+                <li>BuildingsMisc</li>
+            </thingCategories>
+        </value>
+    </Operation>
 </Patch>

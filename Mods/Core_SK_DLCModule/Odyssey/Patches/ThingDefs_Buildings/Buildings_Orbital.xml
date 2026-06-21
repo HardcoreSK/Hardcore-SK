@@ -1,25 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OrbitalScanner"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+        <value>
+            <basePowerConsumption>1000</basePowerConsumption>
+        </value>
+    </Operation>
+
 	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="VacBarrier"]</xpath>
+		<xpath>Defs/ThingDef[defName="OrbitalScanner"]</xpath>
 		<value>
+            <graphicData Merge="True">
+                <graphicClass>SK.Graphic_MultiNoColor</graphicClass>
+            </graphicData>
 			<costList>
-				<ComponentIndustrial>2</ComponentIndustrial>
-				<GravlitePanel>2</GravlitePanel>
-				<ElectronicComponents>2</ElectronicComponents>
+                <Microchips>1</Microchips>
+                <Electronics>3</Electronics>
+                <ComponentSpacer>2</ComponentSpacer>
 			</costList>
-			<costStuffCount>20</costStuffCount>
-			<stuffCategories Inherit="False">
+			<costStuffCount>150</costStuffCount>
+			<stuffCategories>
 				<li>Metallic</li>
-				<li>RuggedMetallic</li>
 			</stuffCategories>
+            <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		</value>
 	</Operation>
 
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="OxygenPump"]</xpath>
 		<value>
+            <graphicData Merge="True">
+                <graphicClass>SK.Graphic_MultiNoColor</graphicClass>
+            </graphicData>
 			<costList>
 				<ComponentIndustrial>2</ComponentIndustrial>
 				<ElectronicComponents>4</ElectronicComponents>
@@ -27,15 +40,27 @@
 			<costStuffCount>50</costStuffCount>
 			<stuffCategories Inherit="False">
 				<li>Metallic</li>
-				<li>RuggedMetallic</li>
 			</stuffCategories>
+            <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 		</value>
 	</Operation>
 
 	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="GravcorePowerCell"]</xpath>
+		<xpath>Defs/ThingDef[defName="VacBarrier"]</xpath>
 		<value>
-            <designationCategory>Odyssey</designationCategory>
+            <statBases Merge="True">
+                <MaxHitPoints>250</MaxHitPoints>
+            </statBases>
+			<costList>
+				<ComponentIndustrial>2</ComponentIndustrial>
+				<GravlitePanel>2</GravlitePanel>
+				<ElectronicComponents>2</ElectronicComponents>
+			</costList>
+			<costStuffCount>20</costStuffCount>
+			<stuffCategories Inherit="False">
+				<li>RuggedMetallic</li>
+			</stuffCategories>
+            <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 		</value>
 	</Operation>
 </Patch>
