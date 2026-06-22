@@ -217,7 +217,7 @@
       <Flammability>1.0</Flammability>
     </statBases>
     <researchPrerequisites>
-      <li MayRequire="dbhlitemode">LogBoilers</li> <!-- Since basic generators need water to function properly-->
+      <li MayRequire="dbhlitemode">CentralHeating</li> <!-- Steam Generator has internal storage that lasts about a day, also the water butt works fine for it.-->
     </researchPrerequisites>
   </ThingDef>
 
