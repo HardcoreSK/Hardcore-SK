@@ -364,8 +364,8 @@
                             <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
                             <fuelLabel>Water</fuelLabel>
                             <fuelGizmoLabel>Water</fuelGizmoLabel>
-                            <fuelCapacity>100</fuelCapacity>
-                            <fuelConsumptionRate>100</fuelConsumptionRate>
+                            <fuelCapacity>1</fuelCapacity>
+                            <fuelConsumptionRate>0.4</fuelConsumptionRate> <!-- 3600 * fuelConsumptionRate = liters per day -->
                             <fuelMultiplier>1</fuelMultiplier>
                             <fuelFilter/>
                         </li>
