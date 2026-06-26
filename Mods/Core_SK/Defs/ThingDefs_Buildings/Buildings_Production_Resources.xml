@@ -575,7 +575,8 @@
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="SK.CompProperties_IdlePower">
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>800</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_HeatPusher">
@@ -653,7 +654,8 @@
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="SK.CompProperties_IdlePower">
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>1100</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Glower">
