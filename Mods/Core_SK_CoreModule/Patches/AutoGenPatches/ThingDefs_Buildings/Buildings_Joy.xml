@@ -23,7 +23,7 @@
         <ComponentMedieval>3</ComponentMedieval>
       </costList>
       <building Merge="true">
-      	<uninstallWork>700</uninstallWork>
+        <uninstallWork>700</uninstallWork>
       </building>
       <researchPrerequisites>
         <li>Enjoyment_A2</li>
@@ -51,7 +51,7 @@
       </stuffCategories>
       <costStuffCount>10</costStuffCount>
       <building Merge="true">
-      	<uninstallWork>700</uninstallWork>
+        <uninstallWork>700</uninstallWork>
       </building>
       <researchPrerequisites>
         <li>Enjoyment_A1</li>
@@ -76,7 +76,7 @@
         <ComponentMedieval>3</ComponentMedieval>
       </costList>
       <building Merge="true">
-      	<uninstallWork>700</uninstallWork>
+        <uninstallWork>700</uninstallWork>
       </building>
       <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
       <researchPrerequisites>
@@ -104,7 +104,7 @@
         <ComponentMedieval>4</ComponentMedieval>
       </costList>
       <building Merge="true">
-      	<uninstallWork>700</uninstallWork>
+        <uninstallWork>700</uninstallWork>
       </building>
       <researchPrerequisites>
         <li>Harp</li>
@@ -136,7 +136,7 @@
         <Cloth>60</Cloth>
       </costList>
       <building Merge="true">
-		<uninstallWork>700</uninstallWork>
+        <uninstallWork>700</uninstallWork>
       </building>
       <researchPrerequisites>
         <li>Piano</li>
@@ -165,7 +165,7 @@
         <ComponentIndustrial>5</ComponentIndustrial>
       </costList>
       <building Merge="true">
-		<uninstallWork>700</uninstallWork>
+        <uninstallWork>700</uninstallWork>
       </building>
       <researchPrerequisites>
         <li>Piano</li>
@@ -197,13 +197,25 @@
         <JoyGainFactor>1</JoyGainFactor>
       </statBases>
       <building Merge="true">
-		<uninstallWork>700</uninstallWork>
+        <uninstallWork>700</uninstallWork>
       </building>
       <generateCommonality>0.6</generateCommonality>
       <researchPrerequisites>
         <li>TubeTelevision</li>
       </researchPrerequisites>
       <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="TubeTelevision"]/comps/li[@Class="CompProperties_Power"]</xpath>
+    <value>
+      <li Class="SK.CompProperties_IdlePower">
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>200</basePowerConsumption>
+        <idleMode>GroupUse</idleMode>
+        <idlePowerFactor>0.1</idlePowerFactor>
+      </li>
     </value>
   </Operation>
 
@@ -225,10 +237,23 @@
         <ComponentIndustrial>3</ComponentIndustrial>
       </costList>
       <building Merge="true">
-		<uninstallWork>700</uninstallWork>
+        <uninstallWork>700</uninstallWork>
       </building>
       <designationHotKey>Misc5</designationHotKey>
       <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    </value>
+  </Operation>
+
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="FlatscreenTelevision"]/comps/li[@Class="CompProperties_Power"]</xpath>
+    <value>
+      <li Class="SK.CompProperties_IdlePower">
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>330</basePowerConsumption>
+        <idleMode>GroupUse</idleMode>
+        <idlePowerFactor>0.1</idlePowerFactor>
+      </li>
     </value>
   </Operation>
 
@@ -258,17 +283,22 @@
       <building Merge="true">
         <watchBuildingStandDistanceRange>2~7</watchBuildingStandDistanceRange>
         <watchBuildingStandRectWidth>7</watchBuildingStandRectWidth>
-		<uninstallWork>700</uninstallWork>
+        <uninstallWork>700</uninstallWork>
       </building>
-      <comps>
-        <li Class="SK.CompProperties_IdlePower">
-          <shortCircuitInRain>true</shortCircuitInRain>
-          <basePowerConsumption>250</basePowerConsumption>
-        </li>
-        <li Class="CompProperties_Flickable"/>
-      </comps>
       <constructionSkillPrerequisite>14</constructionSkillPrerequisite>
-	  <designationCategory>Joy</designationCategory>
+      <designationCategory>Joy</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="MegascreenTelevision"]/comps/li[@Class="CompProperties_Power"]</xpath>
+    <value>
+      <li Class="SK.CompProperties_IdlePower">
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>450</basePowerConsumption>
+        <idleMode>GroupUse</idleMode>
+        <idlePowerFactor>0.1</idlePowerFactor>
+      </li>
     </value>
   </Operation>
 
@@ -290,20 +320,13 @@
         <ComponentIndustrial>6</ComponentIndustrial>
       </costList>
       <building Merge="true">
-		<uninstallWork>700</uninstallWork>
+        <uninstallWork>700</uninstallWork>
       </building>
-      <comps>
-        <li Class="SK.CompProperties_IdlePower">
-          <shortCircuitInRain>true</shortCircuitInRain>
-          <basePowerConsumption>280</basePowerConsumption>
-        </li>
-        <li Class="CompProperties_Flickable"/>
-      </comps>
       <researchPrerequisites>
         <li>Enjoyment_D1</li>
       </researchPrerequisites>
       <constructionSkillPrerequisite>16</constructionSkillPrerequisite>
-	  <designationCategory>Joy</designationCategory>
+      <designationCategory>Joy</designationCategory>
     </value>
   </Operation>
 
