@@ -8,6 +8,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>Transparent</shaderType>
 		</graphicData>
+		<building>
+			<deconstructible>false</deconstructible>
+		</building>
+		<category>Ethereal</category>
 		<altitudeLayer>Filth</altitudeLayer>
 		<passability>Standable</passability>
 		<selectable>false</selectable>
@@ -20,7 +24,6 @@
 		<castEdgeShadows>false</castEdgeShadows>
 		<statBases>
 			<Flammability>0</Flammability>
-			<Beauty>0</Beauty>
 		</statBases>
 	</ThingDef>
 
@@ -92,7 +95,6 @@
 	<ThingDef ParentName="EventBase">
 		<defName>CosmicRAD</defName>
 		<label>radiation filth</label>
-		<thingClass>Thing</thingClass>
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>7</glowRadius>
@@ -116,7 +118,6 @@
 	<ThingDef ParentName="EventBase">
 		<defName>NFRAD</defName>
 		<label>radiation filth</label>
-		<thingClass>Thing</thingClass>
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>4.5</glowRadius>
