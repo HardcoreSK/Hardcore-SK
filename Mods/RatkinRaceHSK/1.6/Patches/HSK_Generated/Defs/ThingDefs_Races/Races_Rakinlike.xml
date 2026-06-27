@@ -437,13 +437,18 @@
 					</generalSettings>
 					<graphicPaths>
 						<body>
+							<path>Things/Ratkin/Bodies/BodiesNaked_Thin</path>
 							<bodytypeGraphics>
-								<Thin>Things/Ratkin/Bodies/Naked_Thin</Thin>
+								<Thin>Things/Ratkin/Bodies/BodiesNaked_Thin</Thin>
 								<Child MayRequire="Ludeon.RimWorld.Biotech">Things/Ratkin/Bodies/Naked_Child</Child>
 								<Baby MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Bodies/Naked_Child</Baby>
 							</bodytypeGraphics>
 						</body>
 						<head>Things/Ratkin/Head/</head>
+						<apparel>
+							<bodyTypeFallback>Thin</bodyTypeFallback>
+							<femaleBodyTypeFallback>Thin</femaleBodyTypeFallback>
+						</apparel>
 						<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
 					</graphicPaths>
 					<styleSettings>
