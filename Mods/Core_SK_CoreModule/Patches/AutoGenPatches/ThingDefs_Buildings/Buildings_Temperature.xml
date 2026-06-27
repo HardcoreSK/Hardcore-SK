@@ -237,7 +237,7 @@
         </damageData>
       </graphicData>
       <altitudeLayer>PawnUnused</altitudeLayer>
-      <fillPercent>0.99</fillPercent>
+      <fillPercent>1</fillPercent>
       <statBases Merge="true">
         <WorkToBuild>700</WorkToBuild>
       </statBases>
@@ -258,7 +258,7 @@
       <building>
         <canPlaceOverWall>true</canPlaceOverWall>
         <canExchangeVacuum>true</canExchangeVacuum>
-        <isEdifice>false</isEdifice>
+        <isEdifice>true</isEdifice>
       </building>
       <comps>
         <li Class="CompProperties_Flickable">

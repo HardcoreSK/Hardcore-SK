@@ -222,6 +222,7 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="TubeTelevision"]</xpath>
     <value>
+      <tickerType>Rare</tickerType>
       <statBases Merge="true">
         <WorkToBuild>4000</WorkToBuild>
         <Mass>8</Mass>
@@ -260,6 +261,7 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="FlatscreenTelevision"]</xpath>
     <value>
+      <tickerType>Rare</tickerType>
       <fillPercent>0.25</fillPercent>
       <statBases Merge="true">
         <Mass>6</Mass>
@@ -305,6 +307,7 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="MegascreenTelevision"]</xpath>
     <value>
+      <tickerType>Rare</tickerType>
       <fillPercent>0.25</fillPercent>
       <statBases Merge="true">
         <MaxHitPoints>85</MaxHitPoints>
