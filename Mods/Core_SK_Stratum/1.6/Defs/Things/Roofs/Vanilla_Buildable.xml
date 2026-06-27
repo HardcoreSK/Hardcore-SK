@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Standard Constructed Roof -->
+  <ThingDef ParentName="SolarWeb_Stratum_RoofBuildableBase">
+    <defName>SolarWeb-Stratum-RoofStandard_Buildable</defName>
+    <label>standard roof</label>
+    <description>The standard roof used by most colonies. It is durable and airtight, providing reliable protection against the elements.</description>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <MarketValue>10</MarketValue>
+      <SolarWeb-Stratum-Insulation>0.9</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-ThermalConductivity>0.1</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-DamageThreshold>5</SolarWeb-Stratum-DamageThreshold>
+      <SolarWeb-Stratum-ArmorRating>0.20</SolarWeb-Stratum-ArmorRating>
+    </statBases>
+  </ThingDef>
+
+  <!-- Thin Rock Roof -->
+  <ThingDef ParentName="SolarWeb_Stratum_RoofBuildableBase">
+    <defName>SolarWeb-Stratum-RoofThinRock_Buildable</defName>
+    <label>thin rock roof</label>
+    <description>A natural roof of thin stone. While sturdy, it is rough and unattractive.</description>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Beauty>-1</Beauty>
+      <SolarWeb-Stratum-Insulation>0.9</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-ThermalConductivity>0.1</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-DamageThreshold>10</SolarWeb-Stratum-DamageThreshold>
+      <SolarWeb-Stratum-ArmorRating>0.40</SolarWeb-Stratum-ArmorRating>
+    </statBases>
+  </ThingDef>
+
+  <!-- Overhead Mountain -->
+  <ThingDef ParentName="SolarWeb_Stratum_RoofBuildableBase">
+    <defName>SolarWeb-Stratum-RoofOverheadMountain_Buildable</defName>
+    <label>overhead mountain</label>
+    <description>A massive thickness of solid rock. Practically indestructible and offers perfect insulation.</description>
+    <statBases>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Beauty>-2</Beauty>
+      <SolarWeb-Stratum-Insulation>1.0</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-ThermalConductivity>0.0</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-DamageThreshold>50</SolarWeb-Stratum-DamageThreshold>
+      <SolarWeb-Stratum-ArmorRating>0.90</SolarWeb-Stratum-ArmorRating>
+    </statBases>
+  </ThingDef>
+
+</Defs>

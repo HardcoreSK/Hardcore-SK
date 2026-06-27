@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>SolarWeb-Stratum-SkylightMood</defName>
+    <workerClass>SolarWeb.Stratum.Thoughts.ThoughtWorker_Skylight</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <!-- Standard Stages (0-3) -->
+      <li>
+        <label>indoor</label>
+        <description>I'm indoors.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>partial skylight</label>
+        <description>It's nice to see some natural light while I'm indoors.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+      <li>
+        <label>skylight</label>
+        <description>The glass roof provides a beautiful view. It feels much more open in here.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>glass dome</label>
+        <description>It almost feels like I'm outside. I love looking up and seeing everything above me.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+
+      <!-- Undergrounder/Tunneler Stages (4-6) -->
+      <li>
+        <label>exposed by skylight</label>
+        <description>There's a window in the roof. I don't like being seen from above.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+      <li>
+        <label>hates skylight</label>
+        <description>This glass roof makes me feel far too exposed. I'd much rather have solid stone above my head.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+      <li>
+        <label>terrified by glass dome</label>
+        <description>There's barely any roof at all! I feel completely vulnerable to the sky. Get me into a real room!</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

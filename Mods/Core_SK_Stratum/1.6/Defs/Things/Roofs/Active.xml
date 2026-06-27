@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="SolarWeb_Stratum_RoofBuildableBase">
+    <defName>SolarWeb-Stratum-ThermalRadiatorRoof_Buildable</defName>
+    <label>active thermal radiator roof</label>
+    <description>A highly advanced roofing system integrated with active heat exchange pipes. It draws power from connected conduits to forcefully pump heat from the room below to the environment above, keeping the interior cool.</description>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>300</WorkToBuild>
+      <Beauty>0.5</Beauty>
+      <SolarWeb-Stratum-Insulation>0.9</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-ThermalConductivity>0.1</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-DamageThreshold>5</SolarWeb-Stratum-DamageThreshold>
+      <SolarWeb-Stratum-ArmorRating>0.20</SolarWeb-Stratum-ArmorRating>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+      <Silver>1</Silver>
+    </costList>
+    <uiOrder>2150</uiOrder>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>AirConditioning</li>
+      <li>Fabrication</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <SolarWeb.Stratum.Defs.StratumRoofDef>
+    <defName>SolarWeb-Stratum-ThermalRadiatorRoof</defName>
+    <label>active thermal radiator roof</label>
+    <description>A highly advanced roofing system integrated with active heat exchange pipes. It draws power from connected conduits to forcefully pump heat from the room below to the environment above, keeping the interior cool.</description>
+    <isThickRoof>false</isThickRoof>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+    <soundPunchThrough>PunchThroughRoofMetal</soundPunchThrough>
+    <modExtensions>
+      <li Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension">
+        <buildableDef>SolarWeb-Stratum-ThermalRadiatorRoof_Buildable</buildableDef>
+        <graphicData>
+          <texPath>Roofs/GenericTile</texPath>
+          <isSeamless>true</isSeamless>
+          <color>(0.4, 0.45, 0.5)</color>
+        </graphicData>
+        <designationCategory>SolarWeb-Stratum-Roofs</designationCategory>
+      </li>
+      <li Class="SolarWeb.Stratum.DefModExtensions.ActiveRadiatorRoofExtension">
+        <powerDrawActive>20</powerDrawActive>
+        <powerDrawStandby>1</powerDrawStandby>
+        <coolingCapacity>5</coolingCapacity>
+        <targetTemperature>21</targetTemperature>
+      </li>
+      <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
+        <Name>Thermal Radiator Roof</Name>
+        <Properties>
+          <ThermalCapacity>1500</ThermalCapacity>
+          <ThermalConductivity>0.1</ThermalConductivity>
+          <FaceGasPermeability>0</FaceGasPermeability>
+          <MaxPressureDeltaKpa>1000</MaxPressureDeltaKpa>
+        </Properties>
+      </li>
+    </modExtensions>
+  </SolarWeb.Stratum.Defs.StratumRoofDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SolarWeb-Stratum-Thermostat</defName>
+    <label>thermostat</label>
+    <description>A wall-mounted temperature control console, used to control the target temperature of roofs.</description>
+    <thingClass>SolarWeb.Stratum.Things.Thermostat</thingClass>
+    <category>Building</category>
+    <rotatable>true</rotatable>
+    <graphicData>
+      <texPath>Things/Building/Joy/TubeTelevision</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <color>(255, 255, 255)</color>
+      <drawSize>(0.5, 0.5)</drawSize>
+      <drawOffsetNorth>(0,0,0.5)</drawOffsetNorth>
+      <drawOffsetSouth>(0,0,-0.5)</drawOffsetSouth>
+      <drawOffsetWest>(-0.5,0,0)</drawOffsetWest>
+      <drawOffsetEast>(0.5,0,0)</drawOffsetEast>
+      <shadowData>
+        <volume>(0.5, 0.3, 0.4)</volume>
+      </shadowData>
+    </graphicData>
+    <building>
+      <isEdifice>false</isEdifice>
+      <isAttachment>true</isAttachment>
+    </building>
+    <placeWorkers>
+      <li>Placeworker_AttachedToWall</li>
+    </placeWorkers>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability>
+    <clearBuildingArea>false</clearBuildingArea>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>150</WorkToBuild>
+      <Mass>1</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <size>(1, 1)</size>
+    <costList>
+      <Steel>10</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>5</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_TempControl">
+        <defaultTargetTemperature>21</defaultTargetTemperature>
+      </li>
+    </comps>
+    <designationCategory>SolarWeb-Stratum-Roofs</designationCategory>
+    <uiOrder>2160</uiOrder>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <terrainAffordanceNeeded IsNull="True" />
+    <researchPrerequisites>
+      <li>AirConditioning</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

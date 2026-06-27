@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FleckDef>
+    <defName>SolarWeb-Stratum-Sunbeam</defName>
+    <fleckSystemClass>FleckSystemStatic</fleckSystemClass>
+    <graphicData>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <texPath>Things/Mote/FireGlow</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <color>(1, 1, 0.8, 0.3)</color>
+      <drawSize>(1.2, 1.2)</drawSize>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>5</fadeInTime>
+    <solidTime>10.0</solidTime>
+    <fadeOutTime>5</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef>
+    <defName>SolarWeb-Stratum-RoofExplosionFlash</defName>
+    <fleckSystemClass>FleckSystemStatic</fleckSystemClass>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <solidTime>0.05</solidTime>
+    <fadeOutTime>0.1</fadeOutTime>
+    <graphicData>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <texPath>Things/Mote/ExplosionFlash</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <color>(1, 0.9, 0.8, 0.8)</color>
+    </graphicData>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>SolarWeb-Stratum-RoofSmoke</defName>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <fadeInTime>0.50</fadeInTime>
+    <solidTime>6</solidTime>
+    <fadeOutTime>3.2</fadeOutTime>
+    <growthRate>0.005</growthRate>
+    <graphicData>
+      <texPath>Things/Mote/Smoke</texPath>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase_Thrown" Name="SolarWeb-Stratum-RoofSparks">
+    <defName>SolarWeb-Stratum-RoofSparks</defName>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <fadeInTime>0.75</fadeInTime>
+    <solidTime>0.5</solidTime>
+    <fadeOutTime>0.65</fadeOutTime>
+    <graphicData>
+      <texPath>Things/Mote/MicroSparks</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+  </FleckDef>
+</Defs>

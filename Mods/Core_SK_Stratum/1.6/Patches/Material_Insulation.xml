@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[stuffProps/categories/li="Woody"]/stuffProps/statOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[stuffProps/categories/li="Woody"]/stuffProps</xpath>
+      <value>
+        <statOffsets>
+          <SolarWeb-Stratum-Insulation>0.05</SolarWeb-Stratum-Insulation>
+        </statOffsets>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[stuffProps/categories/li="Woody"]/stuffProps/statOffsets</xpath>
+      <value>
+        <SolarWeb-Stratum-Insulation>0.05</SolarWeb-Stratum-Insulation>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[stuffProps/categories/li="Stony"]/stuffProps/statOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[stuffProps/categories/li="Stony"]/stuffProps</xpath>
+      <value>
+        <statOffsets>
+          <SolarWeb-Stratum-Insulation>0.02</SolarWeb-Stratum-Insulation>
+        </statOffsets>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[stuffProps/categories/li="Stony"]/stuffProps/statOffsets</xpath>
+      <value>
+        <SolarWeb-Stratum-Insulation>0.02</SolarWeb-Stratum-Insulation>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[stuffProps/categories/li="Metallic"]/stuffProps/statOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[stuffProps/categories/li="Metallic"]/stuffProps</xpath>
+      <value>
+        <statOffsets>
+          <SolarWeb-Stratum-Insulation>-0.05</SolarWeb-Stratum-Insulation>
+        </statOffsets>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[stuffProps/categories/li="Metallic"]/stuffProps/statOffsets</xpath>
+      <value>
+        <SolarWeb-Stratum-Insulation>-0.05</SolarWeb-Stratum-Insulation>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Plasteel"]/stuffProps/statOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Plasteel"]/stuffProps</xpath>
+      <value>
+        <statOffsets>
+          <SolarWeb-Stratum-Insulation>0.08</SolarWeb-Stratum-Insulation>
+        </statOffsets>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Plasteel"]/stuffProps/statOffsets</xpath>
+      <value>
+        <SolarWeb-Stratum-Insulation>0.08</SolarWeb-Stratum-Insulation>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Hyperweave"]/stuffProps/statOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Hyperweave"]/stuffProps</xpath>
+      <value>
+        <statOffsets>
+          <SolarWeb-Stratum-Insulation>0.05</SolarWeb-Stratum-Insulation>
+        </statOffsets>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Hyperweave"]/stuffProps/statOffsets</xpath>
+      <value>
+        <SolarWeb-Stratum-Insulation>0.05</SolarWeb-Stratum-Insulation>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Synthread"]/stuffProps/statOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Synthread"]/stuffProps</xpath>
+      <value>
+        <statOffsets>
+          <SolarWeb-Stratum-Insulation>0.03</SolarWeb-Stratum-Insulation>
+        </statOffsets>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Synthread"]/stuffProps/statOffsets</xpath>
+      <value>
+        <SolarWeb-Stratum-Insulation>0.03</SolarWeb-Stratum-Insulation>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[stuffProps/categories/li="Fabric"]/stuffProps/statOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[stuffProps/categories/li="Fabric"]/stuffProps</xpath>
+      <value>
+        <statOffsets>
+          <SolarWeb-Stratum-Insulation>0.05</SolarWeb-Stratum-Insulation>
+        </statOffsets>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[stuffProps/categories/li="Fabric"]/stuffProps/statOffsets</xpath>
+      <value>
+        <SolarWeb-Stratum-Insulation>0.05</SolarWeb-Stratum-Insulation>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[stuffProps/categories/li="Leathery"]/stuffProps/statOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[stuffProps/categories/li="Leathery"]/stuffProps</xpath>
+      <value>
+        <statOffsets>
+          <SolarWeb-Stratum-Insulation>0.02</SolarWeb-Stratum-Insulation>
+        </statOffsets>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[stuffProps/categories/li="Leathery"]/stuffProps/statOffsets</xpath>
+      <value>
+        <SolarWeb-Stratum-Insulation>0.02</SolarWeb-Stratum-Insulation>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

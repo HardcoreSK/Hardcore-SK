@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RoofDef[defName="RoofConstructed"]/label</xpath>
+    <value>
+      <label>standard roof</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RoofDef[defName="RoofConstructed"]</xpath>
+    <value>
+      <modExtensions>
+        <li Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension">
+          <buildableDef>SolarWeb-Stratum-RoofStandard_Buildable</buildableDef>
+          <graphicData>
+            <texPath>Roofs/GenericTile</texPath>
+            <isSeamless>true</isSeamless>
+            <color>(0.55, 0.55, 0.55)</color>
+          </graphicData>
+        </li>
+        <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
+          <Name>Ancient Roof</Name>
+          <Properties>
+            <ThermalCapacity>1000</ThermalCapacity>
+            <ThermalConductivity>0.8</ThermalConductivity>
+            <FaceGasPermeability>0</FaceGasPermeability>
+            <MaxPressureDeltaKpa>150</MaxPressureDeltaKpa>
+          </Properties>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RoofDef[defName="RoofRockThin"]</xpath>
+    <value>
+      <modExtensions>
+        <li Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension">
+          <buildableDef>SolarWeb-Stratum-RoofThinRock_Buildable</buildableDef>
+          <graphicData>
+            <texPath>Roofs/worn_rock_natural_01</texPath>
+            <color>(0.48, 0.4, 0.32)</color>
+            <isSeamless>true</isSeamless>
+          </graphicData>
+        </li>
+        <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
+          <Name>Thin Rock Roof</Name>
+          <Properties>
+            <ThermalCapacity>3000</ThermalCapacity>
+            <ThermalConductivity>0.1</ThermalConductivity>
+            <FaceGasPermeability>0</FaceGasPermeability>
+            <MaxPressureDeltaKpa>200</MaxPressureDeltaKpa>
+          </Properties>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RoofDef[defName="RoofRockThick"]</xpath>
+    <value>
+      <modExtensions>
+        <li Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension">
+          <buildableDef>SolarWeb-Stratum-RoofOverheadMountain_Buildable</buildableDef>
+          <graphicData>
+            <texPath>Roofs/worn_rock_natural_01</texPath>
+            <color>(0.55, 0.55, 0.55)</color>
+            <isSeamless>true</isSeamless>
+          </graphicData>
+        </li>
+        <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
+          <Name>Overhead Mountain</Name>
+          <Properties>
+            <ThermalCapacity>10000</ThermalCapacity>
+            <ThermalConductivity>0</ThermalConductivity>
+            <FaceGasPermeability>0</FaceGasPermeability>
+            <MaxPressureDeltaKpa>5000</MaxPressureDeltaKpa>
+          </Properties>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+</Patch>

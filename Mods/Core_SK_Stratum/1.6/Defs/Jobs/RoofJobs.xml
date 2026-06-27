@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef>
+    <defName>SolarWeb-Stratum-DeliverRoofIngredients</defName>
+    <driverClass>SolarWeb.Stratum.AI.JobDrivers.DeliverRoofIngredients</driverClass>
+    <reportString>hauling roof materials.</reportString>
+    <casualInterruptible>true</casualInterruptible>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>SolarWeb-Stratum-BuildCustomRoof</defName>
+    <driverClass>SolarWeb.Stratum.AI.JobDrivers.BuildCustomRoof</driverClass>
+    <reportString>installing roof.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>SolarWeb-Stratum-RepairCustomRoof</defName>
+    <driverClass>SolarWeb.Stratum.AI.JobDrivers.RepairCustomRoof</driverClass>
+    <reportString>repairing roof.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+  </JobDef>
+  
+  <JobDef>
+    <defName>SolarWeb-Stratum-OperateRetractableRoofConsole</defName>
+    <driverClass>SolarWeb.Stratum.AI.JobDrivers.OperateRetractableRoofConsole</driverClass>
+    <reportString>operating retractable roof console.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+  </JobDef>
+</Defs>

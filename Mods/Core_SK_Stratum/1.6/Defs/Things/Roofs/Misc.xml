@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>SolarWeb-Stratum-RoofFrame</defName>
+    <thingClass>SolarWeb.Stratum.Things.RoofFrame</thingClass>
+    <label>roof construction site</label>
+    <description>A temporary marker placed on a designated roof cell. Haul materials here to begin construction.</description>
+    <category>Building</category>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <building>
+      <expandHomeArea>false</expandHomeArea>
+      <isEdifice>false</isEdifice>
+      <deconstructible>false</deconstructible>
+    </building>
+    <passability>Standable</passability>
+    <fillPercent>0</fillPercent>
+    <selectable>true</selectable>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <pathCost>0</pathCost>
+    <canBeUsedUnderRoof>true</canBeUsedUnderRoof>
+    <canInteractThroughCorners>true</canInteractThroughCorners>
+    <neverMultiSelect>false</neverMultiSelect>
+    <blueprintDef>SolarWeb-Stratum-RoofFrame</blueprintDef>
+    <entityDefToBuild>SolarWeb-Stratum-RoofFrame</entityDefToBuild>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+    <!-- Graphic is never rendered (DrawAt is overridden to do nothing),
+         but a valid graphicData is required by the engine. -->
+    <graphicData>
+      <texPath>Things/Building/BuildingFrame/Underfield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MetaOverlay</shaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+</Defs>

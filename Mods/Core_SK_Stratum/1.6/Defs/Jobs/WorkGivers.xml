@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <WorkGiverDef>
+    <defName>SolarWeb-Stratum-DeliverRoofIngredients</defName>
+    <label>deliver roof materials</label>
+    <giverClass>SolarWeb.Stratum.AI.WorkGivers.DeliverRoofIngredients</giverClass>
+    <workType>Construction</workType>
+    <priorityInType>94</priorityInType>
+    <verb>haul roof materials</verb>
+    <gerund>hauling roof materials</gerund>
+    <scanThings>true</scanThings>
+    <scanCells>false</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>SolarWeb-Stratum-BuildCustomRoof</defName>
+    <label>build custom roofs</label>
+    <giverClass>SolarWeb.Stratum.AI.WorkGivers.BuildCustomRoof</giverClass>
+    <workType>Construction</workType>
+    <priorityInType>95</priorityInType>
+    <verb>install roof</verb>
+    <gerund>installing roof</gerund>
+    <scanThings>true</scanThings>
+    <scanCells>true</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>SolarWeb-Stratum-RepairCustomRoof</defName>
+    <label>repair custom roofs</label>
+    <giverClass>SolarWeb.Stratum.AI.WorkGivers.RepairCustomRoof</giverClass>
+    <workType>Construction</workType>
+    <priorityInType>100</priorityInType>
+    <verb>repair roof</verb>
+    <gerund>repairing roof</gerund>
+    <scanThings>false</scanThings>
+    <scanCells>true</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>SolarWeb-Stratum-OperateRetractableRoofConsole</defName>
+    <label>operate retractable roof console</label>
+    <giverClass>SolarWeb.Stratum.AI.WorkGivers.OperateRetractableRoofConsole</giverClass>
+    <workType>Construction</workType>
+    <priorityInType>110</priorityInType> <!-- High priority in construction so pawns respond quickly -->
+    <verb>operate roof console</verb>
+    <gerund>operating roof console</gerund>
+    <scanThings>true</scanThings>
+    <scanCells>false</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+</Defs>

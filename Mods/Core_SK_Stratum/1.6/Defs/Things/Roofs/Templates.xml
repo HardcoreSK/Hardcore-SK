@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="SolarWeb_Stratum_RoofBuildableBase" ParentName="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <label>roof template</label>
+    <description>A template for buildable roofs. This def is not intended to be spawned.</description>
+    <useHitPoints>true</useHitPoints>
+    <selectable>false</selectable>
+    <drawerType>None</drawerType>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <pathCost>0</pathCost>
+    <statBases>
+      <Flammability>0</Flammability>
+      <SolarWeb-Stratum-Insulation>0.9</SolarWeb-Stratum-Insulation>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Production/LampSun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <building>
+      <isEdifice>false</isEdifice>
+      <deconstructible>false</deconstructible>
+    </building>
+  </ThingDef>
+</Defs>

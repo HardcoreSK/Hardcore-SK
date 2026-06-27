@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RoomStatDef>
+    <defName>SolarWeb-Stratum-SkylightPercentage</defName>
+    <label>skylight coverage</label>
+    <workerClass>SolarWeb.Stratum.Stats.SkylightPercentage</workerClass>
+    <displayRounded>false</displayRounded>
+    <isHidden>false</isHidden>
+    <roomlessScore>0</roomlessScore>
+    <scoreStages>
+      <li>
+        <minScore>0.0</minScore>
+        <label>none</label>
+      </li>
+      <li>
+        <minScore>0.1</minScore>
+        <label>minor</label>
+      </li>
+      <li>
+        <minScore>0.5</minScore>
+        <label>major</label>
+      </li>
+      <li>
+        <minScore>0.9</minScore>
+        <label>full</label>
+      </li>
+    </scoreStages>
+  </RoomStatDef>
+
+</Defs>

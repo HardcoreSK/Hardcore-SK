@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Core SK - Stratum</name>
+  <packageId>SolarWeb.Stratum</packageId>
+  <author>SolarWeb Studios</author>
+  <modVersion>0.8.7-hsk1</modVersion>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <url>https://steamcommunity.com/sharedfiles/filedetails/?id=3740754795</url>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>kentington.saveourship2</li>
+    <li>ceteam.combatextended</li>
+  </loadAfter>
+  <description>Local Hardcore SK edition of Stratum. Provides an enhanced roof building and damage system, with HSK-specific material costs and research prerequisites.</description>
+</ModMetaData>

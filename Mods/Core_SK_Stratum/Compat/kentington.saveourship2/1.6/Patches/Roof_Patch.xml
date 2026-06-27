@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/RoofDef[defName="RoofShip"]</xpath>
+    <attribute>Class</attribute>
+    <value>SolarWeb.Stratum.Defs.StratumRoofDef</value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RoofDef[defName="RoofShip"]/label</xpath>
+    <value>
+      <label>hull plating</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RoofDef[defName="RoofShip"]/modExtensions</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/RoofDef[defName="RoofShip"]</xpath>
+      <value>
+        <modExtensions />
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RoofDef[defName="RoofShip"]/modExtensions</xpath>
+    <value>
+      <li Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension">
+        <buildableDef>SolarWeb-Stratum-HullPlating_Buildable</buildableDef>
+        <graphicData>
+          <texPath>Roofs/GenericTile</texPath>
+          <isSeamless>true</isSeamless>
+          <color>(0.37, 0.37, 0.37)</color>
+          <edgeData>
+            <color>(0.3, 0.3, 0.3)</color>
+          </edgeData>
+        </graphicData>
+        <thermalConductivity>0.05</thermalConductivity>
+      </li>
+      <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
+        <Name>Hull Plating</Name>
+        <Properties>
+          <ThermalCapacity>1500</ThermalCapacity>
+          <ThermalConductivity>0.05</ThermalConductivity>
+          <FaceGasPermeability>0</FaceGasPermeability>
+          <MaxPressureDeltaKpa>1200</MaxPressureDeltaKpa>
+        </Properties>
+      </li>
+    </value>
+  </Operation>
+
+</Patch>
