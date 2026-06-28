@@ -74,7 +74,8 @@ def output(enabled: list[str], mod_dict: dict[str, Mod]) -> None:
         for k, v in mod_dict.items():
             #print(f"{k} {v}")
             if k not in enabled and cur_version not in v.supported_versions:
-                f.write(f"\"{v.path.removeprefix('./')}\" export-ignore\n")
+                mod_path = v.path.removeprefix('./').replace(os.sep, '/')
+                f.write(f"\"{mod_path}\" export-ignore\n")
 
 
 def main() -> None:
