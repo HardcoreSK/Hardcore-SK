@@ -1,4 +1,29 @@
 
+v1.12.25
+
+- Fixed compatibility issues with various mods that caused inaccurate previews
+
+v1.12.24
+
+- Fixed compatibility with the 'Visual Exceptions' mod
+
+v1.12.23
+
+- Optimized terrain color algorithm (much faster startup and lower RAM usage)
+- Fixed compatibility issue with 'MultiFloors' causing inaccurate previews
+- Fixed compatibility issue with 'Zombieland' causing inaccurate previews
+- Added automatic detection and logging of some causes for inaccurate previews
+
+v1.12.22
+
+- Disabled obsolete compatibility patch for Performance Optimizer in 1.6
+- Updated Spanish translation (submitted by Ferchu)
+
+v1.12.21
+
+- Added settings button that allows editing map size and starting season
+- Added compatibility patch for the 'RV with built-in PD' mod
+
 v1.12.20
 
 - Fixed compatibility with Vanilla Events Expanded
