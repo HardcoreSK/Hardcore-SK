@@ -373,6 +373,7 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="MultiAnalyzer"]</xpath>
         <value>
+            <tickerType>Rare</tickerType>
             <thingClass>SK.Building_Lamp</thingClass>
             <graphicData>
                 <texPath>Things/Building/Research/MultiAnalyzer</texPath>
@@ -412,6 +413,7 @@
                 <li Class="SK.CompProperties_IdlePower">
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <basePowerConsumption>350</basePowerConsumption>
+                    <idlePowerFactor>0.1</idlePowerFactor>
                 </li>
                 <li Class="CompProperties_Facility">
                     <statOffsets>

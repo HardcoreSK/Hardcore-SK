@@ -17,31 +17,15 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[@Name="SmallBirdThingBase"]/race/useMeatFrom</xpath>
+		<xpath>Defs/ThingDef[@Name="SmallBirdThingBase" or 
+		@Name="WaterBirdThingBase" or 
+		@Name="MiscBirdBase" or 
+		defName="Penguin" or 
+		defName="Wolf_Great"]/race/useMeatFrom</xpath>
 		<value>
 			<useMeatFrom>Elephant</useMeatFrom>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[@Name="WaterBirdThingBase"]/race/useMeatFrom</xpath>
-		<value>
-			<useMeatFrom>Elephant</useMeatFrom>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[@Name="MiscBirdBase"]/race/useMeatFrom</xpath>
-		<value>
-			<useMeatFrom>Elephant</useMeatFrom>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Penguin"]/race/useMeatFrom</xpath>
-		<value>
-			<useMeatFrom>Elephant</useMeatFrom>
-		</value>
-	</Operation>
 
 </Patch>
