@@ -190,4 +190,12 @@
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RetractableRoofConsole"]/researchPrerequisites</xpath>
     <value><researchPrerequisites><li>Electronics_D1</li><li>Roof_D3</li></researchPrerequisites></value>
   </Operation>
+
+  <!-- Restore HSK's research-gated overhead mountain removal designator. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>SK.Designator_AreaNoThickRoof</li>
+    </value>
+  </Operation>
 </Patch>
