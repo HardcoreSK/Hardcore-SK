@@ -266,9 +266,11 @@
 			<MaxHitPoints>300</MaxHitPoints>
 			<Flammability>0.8</Flammability>
 			<Nutrition>1.5</Nutrition>	
+			<Mass>100</Mass>
 		</statBases>
 		<altitudeLayer>Building</altitudeLayer>
 		<selectable>true</selectable>
+		<minifiedDef>MinifiedTree</minifiedDef>
 		<fillPercent>0.25</fillPercent>
 		<hideAtSnowOrSandDepth>99999</hideAtSnowOrSandDepth>
 		<graphicData>
@@ -293,6 +295,7 @@
 			<sowWork>650</sowWork>
 			<harvestWork>600</harvestWork>
 			<harvestTag>Standard</harvestTag>
+			<forceIsTree>true</forceIsTree>
 			<harvestMinGrowth>0.50</harvestMinGrowth>
 			<harvestFailable>false</harvestFailable>
 			<harvestAfterGrowth>0.30</harvestAfterGrowth>
