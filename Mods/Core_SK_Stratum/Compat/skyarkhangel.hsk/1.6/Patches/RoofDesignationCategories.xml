@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Restore HSK's research-gated overhead mountain removal designator. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>SK.Designator_AreaNoThickRoof</li>
+    </value>
+  </Operation>
+</Patch>

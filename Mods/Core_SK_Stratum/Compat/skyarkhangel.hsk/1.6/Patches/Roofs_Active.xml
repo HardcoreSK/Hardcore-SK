@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-ThermalRadiatorRoof_Buildable"]/costList</xpath>
+    <value>
+      <costList>
+        <Steel>10</Steel>
+        <Silver>5</Silver>
+        <Mechanism>2</Mechanism>
+        <ElectronicComponents>2</ElectronicComponents>
+      </costList>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-ThermalRadiatorRoof_Buildable"]/researchPrerequisites</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>Temperature_control_C3</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-Thermostat"]/costList</xpath>
+    <value>
+      <costList>
+        <Steel>10</Steel>
+        <ElectronicComponents>2</ElectronicComponents>
+      </costList>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-Thermostat"]/researchPrerequisites</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>Temperature_control_C3</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+</Patch>

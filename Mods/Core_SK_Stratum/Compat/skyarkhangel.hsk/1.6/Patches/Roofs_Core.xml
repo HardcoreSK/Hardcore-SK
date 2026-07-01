@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Early roofs: stop the free/three-item roofs from bypassing HSK's construction economy. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofThatch_Buildable"]</xpath>
+    <value>
+      <costList>
+        <Hay>2</Hay>
+      </costList>
+    </value>
+  </Operation>
+
+  <!--   <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofShingle_Buildable"]/costStuffCount</xpath>
+    <value>
+      <costStuffCount>3</costStuffCount>
+    </value>
+  </Operation> -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofThatchHay_Buildable"]</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>Construction_B1</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofShingle_Buildable"]</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>Construction_B2</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+
+  <!-- Preserve the old HSK transparent- and solar-roof material scale. -->
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofGlass_Buildable"]</xpath>
+    <value>
+      <costList>
+        <Glass>5</Glass>
+      </costList>
+      <researchPrerequisites>
+        <li>Construction_B3</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofSolarShingles_Buildable"]/costList</xpath>
+    <value>
+      <costList>
+        <Glass>5</Glass>
+        <ComponentIndustrial>2</ComponentIndustrial>
+        <Mechanism>2</Mechanism>
+        <ElectronicComponents>1</ElectronicComponents>
+      </costList>
+    </value>
+  </Operation>
+
+  <!-- Insulated roofs. -->
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-CompositeInsulatedPanel_Buildable"]</xpath>
+    <value>
+      <costList>
+        <Steel>5</Steel>
+      </costList>
+      <costStuffCount>10</costStuffCount>
+      <researchPrerequisites>
+        <li>Temperature_control_C2</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+</Patch>
