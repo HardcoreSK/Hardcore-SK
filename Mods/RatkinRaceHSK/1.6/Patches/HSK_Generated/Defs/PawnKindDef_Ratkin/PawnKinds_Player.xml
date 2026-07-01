@@ -23,12 +23,6 @@
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/PawnKindDef[@Name="RKBasePawnKind"]/apparelColor</xpath>
 	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/PawnKindDef[@Name="RKBasePawnKind"]/xenotypeSet</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/PawnKindDef[@Name="RKBasePawnKind"]/useFactionXenotypes</xpath>
-	</Operation>
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/PawnKindDef[defName="RatkinColonist"]</xpath>
 		<value>
