@@ -12,6 +12,14 @@
 	<packageId>Dubwise.Rimefeller</packageId>
 	<description>Drill for oil, process into chemfuel, plastic, composites, napalm. HSK Mod version.</description>
 	<loadAfter>
-		<li>skyarkhangel.HSK</li>		
+		<li>skyarkhangel.HSK</li>
+		<li>adaptive.storage.framework</li>
 	</loadAfter>
+	<modDependencies>
+		<li>
+			<packageId>adaptive.storage.framework</packageId>
+			<displayName>Adaptive Storage Framework</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3033901359</steamWorkshopUrl>
+		</li>
+	</modDependencies>
 </ModMetaData>

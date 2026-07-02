@@ -132,6 +132,8 @@
 		<defName>RefineryLoadingBay</defName>
 		<label>Refinery unloading bay</label>
 		<description>Bay required by refineries to unload product.</description>
+		<thingClass>AdaptiveStorage.ThingClass</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<texPath>Rimefeller/Things/Building/loadbay</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -140,6 +142,7 @@
 		<rotatable>false</rotatable>
 		<tickerType>Never</tickerType>
 		<building>
+			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings>
 				<filter>
 					<thingDefs>
@@ -174,6 +177,36 @@
 			<li>Oil_Industry_C3</li>
 		</researchPrerequisites>
 	</ThingDef>
+
+	<AdaptiveStorage.GraphicsDef>
+		<defName>RefineryLoadingBayASF</defName>
+		<targetDef>RefineryLoadingBay</targetDef>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>Rimefeller/Things/Building/loadbay</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(1,1)</drawSize>
+				</graphicData>
+			</li>
+		</graphics>
+		<showContainedItems>true</showContainedItems>
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Circle</stackBehaviour>
+							<stackOffset>(0,0,0.42)</stackOffset>
+							<stackOffsetFactor>0.28</stackOffsetFactor>
+							<drawOffset>(0,0,0.08)</drawOffset>
+							<drawScale>0.55</drawScale>
+						</r0>
+					</rows>
+				</c0>
+			</columns>
+		</itemGraphics>
+	</AdaptiveStorage.GraphicsDef>
 
 
 	<ThingDef Name="RefineryBase" ParentName="BasedRimefellerMom" Abstract="True">
