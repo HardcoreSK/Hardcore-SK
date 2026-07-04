@@ -1,46 +1,70 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
     <!-- use 4 spaces indentation, NOT tabs -->
     <!-- Overall prefix for the mod is "PL" for PrepareLanding -->
 
     <!--============================================== Main Window [MW] =============================================-->
     <!-- strings used throughout the whole mod -->
-    <PLMW_SelectAny>N'importe quel</PLMW_SelectAny> <!-- Note: "any" as in "Select Any Biome" or "Select Any Type of Stone" -->
-    <PLMW_None>Aucun</PLMW_None> <!-- Note: "none" as in "None was selected" -->
-    <PLMW_Meter>Mètre</PLMW_Meter> <!-- Note: "Meter" as the SI unit of length -->
-    <PLMW_Hour>Heure</PLMW_Hour> <!-- Note: "Hour" as the SI unit of time -->
-    <PLMW_Reset>Réinitialiser</PLMW_Reset> <!-- as in "Reset all options"; used for the main window buttons -->
-    <PLMW_All>Tout</PLMW_All> <!-- as in "All available options"; used for the main window buttons -->
-    <PLMW_Tile>Tuile</PLMW_Tile> <!-- as in "Tile on the world map" -->
-    <PLMW_Tiles>Tuiles</PLMW_Tiles>
+    <!-- EN: Any -->
+  <PLMW_SelectAny>N'importe quel</PLMW_SelectAny> <!-- Note: "any" as in "Select Any Biome" or "Select Any Type of Stone" -->
+    <!-- EN: None -->
+  <PLMW_None>Aucun</PLMW_None> <!-- Note: "none" as in "None was selected" -->
+    <!-- EN: Meter -->
+  <PLMW_Meter>Mètre</PLMW_Meter> <!-- Note: "Meter" as the SI unit of length -->
+    <!-- EN: Hour -->
+  <PLMW_Hour>Heure</PLMW_Hour> <!-- Note: "Hour" as the SI unit of time -->
+    <!-- EN: Reset -->
+  <PLMW_Reset>Réinitialiser</PLMW_Reset> <!-- as in "Reset all options"; used for the main window buttons -->
+    <!-- EN: All -->
+  <PLMW_All>Tout</PLMW_All> <!-- as in "All available options"; used for the main window buttons -->
+    <!-- EN: Tile -->
+  <PLMW_Tile>Tuile</PLMW_Tile> <!-- as in "Tile on the world map" -->
+    <!-- EN: Tiles -->
+  <PLMW_Tiles>Tuiles</PLMW_Tiles>
 
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Bottom Buttons [BB] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <PLMWBB_FilterTiles>Filtrer Tuile</PLMWBB_FilterTiles>
-    <PLMWBB_ResetFilters>Réinitialiser Filtres</PLMWBB_ResetFilters>
-    <PLMWBB_Minimize>Minimiser</PLMWBB_Minimize>
-    <PLMWBB_SelectRandom>Tuile au Hasard</PLMWBB_SelectRandom>
+    <!-- EN: Filter Tiles -->
+  <PLMWBB_FilterTiles>Filtrer les Tuiles</PLMWBB_FilterTiles>
+    <!-- EN: Reset Filters -->
+  <PLMWBB_ResetFilters>Réinitialiser les Filtres</PLMWBB_ResetFilters>
+    <!-- EN: Minimize -->
+  <PLMWBB_Minimize>Minimiser</PLMWBB_Minimize>
+    <!-- EN: Select Random -->
+  <PLMWBB_SelectRandom>Sélection Aléatoire</PLMWBB_SelectRandom>
         <!-- Load / Save specific; some strings are also obtained from LoadSave.xml -->
-        <PLMWBB_LoadSave>Charger / Enregistrer</PLMWBB_LoadSave>
-        <PLMWBB_LoadOrSaveFilterPresets>Charger ou enregistrer des préréglages de filtre.</PLMWBB_LoadOrSaveFilterPresets> 
-        <PLMWBB_SaveFiltersToPreset>Enregistrer les états des filtres actuels dans une règle.</PLMWBB_SaveFiltersToPreset>
-        <PLMWBB_LoadPreset>Charger un Préréglage.</PLMWBB_LoadPreset>
-        <PLMWBB_SelectAction>Sélectionner une Action</PLMWBB_SelectAction>        
+        <!-- EN: Load / Save -->
+  <PLMWBB_LoadSave>Charger / Enregistrer</PLMWBB_LoadSave>
+        <!-- EN: Load or Save Filter Presets. -->
+  <PLMWBB_LoadOrSaveFilterPresets>Charger ou enregistrer des préréglages de filtre.</PLMWBB_LoadOrSaveFilterPresets> 
+        <!-- EN: Save current filter states to a preset. -->
+  <PLMWBB_SaveFiltersToPreset>Enregistrer les filtres actuels dans un préréglage.</PLMWBB_SaveFiltersToPreset>
+        <!-- EN: Load a preset. -->
+  <PLMWBB_LoadPreset>Charger un Préréglage.</PLMWBB_LoadPreset>
+        <!-- EN: Select Action -->
+  <PLMWBB_SelectAction>Sélectionner une Action</PLMWBB_SelectAction>        
 
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Minimized Window [MINW] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <PLMWMINW_ClearFilteredTiles>Effacer les Tuiles Filtrées</PLMWMINW_ClearFilteredTiles>
+    <!-- EN: Clear Filtered Tiles -->
+  <PLMWMINW_ClearFilteredTiles>Effacer les Tuiles Filtrées</PLMWMINW_ClearFilteredTiles>
         <!-- dev: in MinimizedWindow.cs -->
-    <PLMWMINW_MinmizedWindow>Fenêtre Minimisée</PLMWMINW_MinmizedWindow>
-    <PLMWMINW_MaximizeWindow>Maximiser la Fenêtre</PLMWMINW_MaximizeWindow> <!-- tool-tip on the minimized window for the maximize button -->    
+    <!-- EN: Minimized Window -->
+  <PLMWMINW_MinmizedWindow>Fenêtre Minimisée</PLMWMINW_MinmizedWindow>
+    <!-- EN: Maximize Window -->
+  <PLMWMINW_MaximizeWindow>Maximiser la Fenêtre</PLMWMINW_MaximizeWindow> <!-- tool-tip on the minimized window for the maximize button -->    
 
     <!--=============================================== Internal [INT] ==============================================-->
     <!-- Strings that are related to internal C# code but they still appear in some places on the GUI -->
 
         <!-- Usable Min / Max Numeric Field -->
-        <PLINT_UsableMinMaxNumFieldMin>Min</PLINT_UsableMinMaxNumFieldMin> <!-- As in "Minimum" -->
-        <PLINT_UsableMinMaxNumFieldMax>Max</PLINT_UsableMinMaxNumFieldMax> <!-- As in "Maximum" -->
-        <PLINT_UsableMinMaxNumFieldUse>Utiliser</PLINT_UsableMinMaxNumFieldUse> <!-- Used only in "Use Min/Max" -->
+        <!-- EN: Min -->
+  <PLINT_UsableMinMaxNumFieldMin>Min</PLINT_UsableMinMaxNumFieldMin> <!-- As in "Minimum" -->
+        <!-- EN: Max -->
+  <PLINT_UsableMinMaxNumFieldMax>Max</PLINT_UsableMinMaxNumFieldMax> <!-- As in "Maximum" -->
+        <!-- EN: Use -->
+  <PLINT_UsableMinMaxNumFieldUse>Utiliser</PLINT_UsableMinMaxNumFieldUse> <!-- Used only in "Use Min/Max" -->
 
         <!-- MinMaxFromRestrictedListItem -->
-        <PLINT_MinMaxFromRestrictedListItemSelect>Sélectionner</PLINT_MinMaxFromRestrictedListItemSelect> <!-- As in "Select Growing Period" -->
+        <!-- EN: Select -->
+  <PLINT_MinMaxFromRestrictedListItemSelect>Sélectionner</PLINT_MinMaxFromRestrictedListItemSelect> <!-- As in "Select Growing Period" -->
 
 </LanguageData>

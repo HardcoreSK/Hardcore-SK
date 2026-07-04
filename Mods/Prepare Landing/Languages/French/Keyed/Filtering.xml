@@ -1,51 +1,80 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
     <!-- Use 4 spaces indentation, NOT tabs -->
     <!-- Overall prefix for the mod is "PL" for PrepareLanding -->
 
     <!--=============================================== Filtering [FILT] =============================================-->
-    <PLFILT_FilteredTilesCleared>Liste des tuiles filtrée effacée.</PLFILT_FilteredTilesCleared>
-    <PLFILT_FilterTilesFirst>Veuillez filtrer des tuiles d'abord.</PLFILT_FilterTilesFirst>
-    <PLFILT_FailedFindValidBaseTile>Impossible de trouver une tuile valide pour une base.</PLFILT_FailedFindValidBaseTile>
-    <PLFILT_NewFilterfing>Nouveau filtrage</PLFILT_NewFilterfing>
+    <!-- EN: Filtered tiles cleared. -->
+  <PLFILT_FilteredTilesCleared>Liste des tuiles filtrées effacée.</PLFILT_FilteredTilesCleared>
+    <!-- EN: Please filter tiles first. -->
+  <PLFILT_FilterTilesFirst>Veuillez filtrer des tuiles d'abord.</PLFILT_FilterTilesFirst>
+    <!-- EN: Failed to find a valid tile for a base. -->
+  <PLFILT_FailedFindValidBaseTile>Impossible de trouver une tuile valide pour une base.</PLFILT_FailedFindValidBaseTile>
+    <!-- EN: New Filtering -->
+ <PLFILT_NewFiltering>Nouveau filtrage</PLFILT_NewFiltering>
         <!-- {0} is 0 or a positive number -->
-    <PLFILT_StartingFilteringWithxTiles>Début de filtrage avec : {0} tuiles.</PLFILT_StartingFilteringWithxTiles>
+    <!-- EN: Starting filtering with: {0} tiles. -->
+  <PLFILT_StartingFilteringWithxTiles>Début de filtrage avec : {0} tuiles.</PLFILT_StartingFilteringWithxTiles>
         <!-- {0} is either PLFILT_InConjunctionPreviousFilters or simply a dot '.' -->
-    <PLFILT_ZeroMatchingTiles>ce filtre à entraîné 0 tuiles correspondantes{0} Peut-être que le filtre est trop restrictif ?</PLFILT_ZeroMatchingTiles>
+    <!-- EN: this filter resulted in 0 matching tiles{0} Maybe the filtering was a little bit too harsh? -->
+  <PLFILT_ZeroMatchingTiles>Ce filtre a entraîné 0 tuiles correspondantes{0}. Peut-être que le filtre est trop restrictif ?</PLFILT_ZeroMatchingTiles>
         <!-- {0} is 0 or a positive number -->
-    <PLFILT_InConjunctionPreviousFilters> (en conjonction avec les {0} filtres précédents)</PLFILT_InConjunctionPreviousFilters>
-    <PLFILT_FilterResultZeroTiles>Le filtre à donné 0 tuiles</PLFILT_FilterResultZeroTiles>
-    <PLFILT_AllValidTilesMatching>ce filtre entraîne la correspondance de toutes les tuiles valides.</PLFILT_AllValidTilesMatching>
+    <!-- EN:  (in conjunction with the previous {0} filters) -->
+  <PLFILT_InConjunctionPreviousFilters> (en conjonction avec les {0} filtres précédents)</PLFILT_InConjunctionPreviousFilters>
+    <!-- EN: Filter resulted in 0 tiles -->
+  <PLFILT_FilterResultZeroTiles>Le filtre a donné 0 tuiles.</PLFILT_FilterResultZeroTiles>
+    <!-- EN: this filter results in all valid tiles matching -->
+  <PLFILT_AllValidTilesMatching>ce filtre entraîne la correspondance de toutes les tuiles valides.</PLFILT_AllValidTilesMatching>
         <!-- as in "Filtering Biomes: 123 tiles found." -->
-    <PLFILT_TilesFound>tuiles trouvées</PLFILT_TilesFound>
+    <!-- EN: tiles found -->
+  <PLFILT_TilesFound>tuiles trouvées</PLFILT_TilesFound>
         <!-- as in "Filter ran in: 0.01 seconds." ; note that this is for a single filter -->
-    <PLFILT_FilterRanIn>Le filtre s'est exécuté en :</PLFILT_FilterRanIn>
+    <!-- EN: filter ran in: -->
+  <PLFILT_FilterRanIn>Le filtre s'est exécuté en :</PLFILT_FilterRanIn>
         <!-- {0} is 0 or a positive number -->
-    <PLFILT_xTilesMatchAllFilters>Avant de vérifier les tuiles valides : un total de {0} tuile(s) correspond à tous les filtres.</PLFILT_xTilesMatchAllFilters>
-    <PLFILT_NoTileMatchesFilter>Aucune tuile ne correspond au(x) filtre(s) donné(s).</PLFILT_NoTileMatchesFilter>
+    <!-- EN: Before checking for valid tiles: a total of {0} tile(s) match(es) all filters. -->
+  <PLFILT_xTilesMatchAllFilters>Avant de vérifier les tuiles valides : un total de {0} tuile(s) correspond à tous les filtres.</PLFILT_xTilesMatchAllFilters>
+    <!-- EN: No tile matches the given filter(s). -->
+  <PLFILT_NoTileMatchesFilter>Aucune tuile ne correspond au(x) filtre(s) donné(s).</PLFILT_NoTileMatchesFilter>
         <!-- {0} is 0 or a positive number; {1} is a time as in: "All 2 filters ran in 0.01 seconds" -->
-    <PLFILT_AllFiltersRanIn>Tous les filtres ({0}) se sont exécutés en {1}.</PLFILT_AllFiltersRanIn>
+    <!-- EN: All {0} filter(s) ran in {1}. -->
+  <PLFILT_AllFiltersRanIn>Tous les filtres ({0}) se sont exécutés en {1}.</PLFILT_AllFiltersRanIn>
         <!-- {0} is 0 or a positive number -->
-    <PLFILT_TotalOfxTilesMatchAllFilters>Un total de {0} tuile(s) correspond à tous les filtres.</PLFILT_TotalOfxTilesMatchAllFilters>
-    <PLFILT_PreFiltering>Pré-filtrage</PLFILT_PreFiltering>
+    <!-- EN: A total of {0} tile(s) match(es) all filters. -->
+  <PLFILT_TotalOfxTilesMatchAllFilters>Un total de {0} tuile(s) correspond à tous les filtres.</PLFILT_TotalOfxTilesMatchAllFilters>
+    <!-- EN: PreFiltering -->
+  <PLFILT_PreFiltering>Pré-filtrage</PLFILT_PreFiltering>
         <!-- {0} and {1} are 0 or a positive number -->
-    <PLFILT_ValidTilesRemainAfterFilter>Pré-filtrage: {0} tuile(s) valide(s) reste(nt) après filtrage ({1} tuile(s) enlevée(s)).</PLFILT_ValidTilesRemainAfterFilter>
+    <!-- EN: Pre-filter: {0} valid tile(s) remain(s) after filtering ({1} tile(s) removed). -->
+  <PLFILT_ValidTilesRemainAfterFilter>Pré-filtrage: {0} tuile(s) valide(s) reste(nt) après filtrage ({1} tuile(s) enlevée(s)).</PLFILT_ValidTilesRemainAfterFilter>
         <!-- {0} is 0 or a positive number -->
-    <PLFILT_TilesWithRiver>Pré-filtrage : {0} tuiles avec au moins une rivière.</PLFILT_TilesWithRiver>
-    <PLFILT_TilesWithRoad>Pré-filtrage : {0} tuiles avec au moins une route.</PLFILT_TilesWithRoad>
-    <PLFILT_NewWorld>Nouveau Monde</PLFILT_NewWorld>
-    <PLFILT_AllFiltersInDefaultState>Tous les filtres sont dans leur état par défaut</PLFILT_AllFiltersInDefaultState>
-    <PLFILT_PleaseSelectAtLeastOneFilter>Veuillez sélectionner au moins un filtre</PLFILT_PleaseSelectAtLeastOneFilter>
+    <!-- EN: Pre-filter: {0} tiles with at least one river. -->
+  <PLFILT_TilesWithRiver>Pré-filtrage : {0} tuiles avec au moins une rivière.</PLFILT_TilesWithRiver>
+    <!-- EN: Pre-filter: {0} tiles with at least one road. -->
+  <PLFILT_TilesWithRoad>Pré-filtrage : {0} tuiles avec au moins une route.</PLFILT_TilesWithRoad>
+    <!-- EN: New World -->
+  <PLFILT_NewWorld>Nouveau Monde</PLFILT_NewWorld>
+    <!-- EN: All filters are in their default state -->
+  <PLFILT_AllFiltersInDefaultState>Tous les filtres sont dans leur état par défaut</PLFILT_AllFiltersInDefaultState>
+    <!-- EN: please select at least one filter -->
+  <PLFILT_PleaseSelectAtLeastOneFilter>Veuillez sélectionner au moins un filtre</PLFILT_PleaseSelectAtLeastOneFilter>
         <!-- {0} is a hilliness type, as "Large Hills" for example -->
-    <PLFILT_NoCavesForChosenTerrain>Il ne peut pas y avoir de cave avec le type de terrain choisi. Choisissez au moins {0}.</PLFILT_NoCavesForChosenTerrain>
-    <PLFILT_NoBiomeNoTerrainSelected>Pas de biome et pas de terrain sélectionné pour une couverture de planète >= 50%&#xA;&#x9;Veuillez sélectionner un biome ou un terrain en premier.</PLFILT_NoBiomeNoTerrainSelected>
+    <!-- EN: There can be no caves with the chosen terrain type. Choose at least {0}. -->
+  <PLFILT_NoCavesForChosenTerrain>Il ne peut pas y avoir de cave avec le type de terrain choisi. Choisissez au moins {0}.</PLFILT_NoCavesForChosenTerrain>
+    <!-- EN: No biome and no terrain selected for a Planet coverage >= 50%
+	Please select a biome and a terrain first. -->
+  <PLFILT_NoBiomeNoTerrainSelected>Pas de biome et pas de terrain sélectionné pour une couverture de planète >= 50%\n	Veuillez sélectionner un biome ou un terrain en premier.</PLFILT_NoBiomeNoTerrainSelected>
 
     <!-- ######## dev: this is in TileFilter.cs ######## -->
 
-    <PLFILT_Filtering>Filtrage</PLFILT_Filtering> <!-- as in "Filtering Biomes" or "Filtering Caves" -->
-    <PLFILT_MovementTimeIsNull>Temps de mouvement Null dans</PLFILT_MovementTimeIsNull> <!-- followed by a function name; this is an internal error that might be logged on the GUI -->
-    <PLFILT_VerifyMinIsLessOrEqualMax>Veuillez vérifier que la valeur minimum est inférieure ou égale à la valeur maximum (comparaison actuelle :</PLFILT_VerifyMinIsLessOrEqualMax> <!-- followed by two numbers -->
-    <PLFILT_TemperatureIsNull>Température Null dans</PLFILT_TemperatureIsNull>
+    <!-- EN: Filtering -->
+  <PLFILT_Filtering>Filtrage</PLFILT_Filtering> <!-- as in "Filtering Biomes" or "Filtering Caves" -->
+    <!-- EN: MovementTime is null in -->
+  <PLFILT_MovementTimeIsNull>Temps de mouvement Null dans</PLFILT_MovementTimeIsNull> <!-- followed by a function name; this is an internal error that might be logged on the GUI -->
+    <!-- EN: please verify that Min value is less or equal than Max value (actual comparison: -->
+  <PLFILT_VerifyMinIsLessOrEqualMax>Veuillez vérifier que la valeur minimum est inférieure ou égale à la valeur maximum (comparaison actuelle :</PLFILT_VerifyMinIsLessOrEqualMax> <!-- followed by two numbers -->
+    <!-- EN: Temperature is null in -->
+  <PLFILT_TemperatureIsNull>Température Null dans</PLFILT_TemperatureIsNull>
 
     <!--============ Filter Info Logger [FILIL] ==============-->
 
@@ -53,11 +82,15 @@
             - it is a short message, starting with a space (thus there's no space between 'occurred' and {0})
             - there is not short message and then the string is a dot ('.');
         {1} is a tab name, probably "World Info" but this is also translated. -->
-    <PLFILIL_FilterErrorOccurred>Une erreur de filtrage c'est produite{0}&#xA;Veuillez voir la tab "{1}" pour une description d'erreur.</PLFILIL_FilterErrorOccurred>
+    <!-- EN: A filter error occurred{0}
+Please see the "{1}" tab for an error description. -->
+  <PLFILIL_FilterErrorOccurred>Une erreur de filtrage s’est produite{0}\nVeuillez consulter l’onglet « {1} » pour une description de l’erreur.</PLFILIL_FilterErrorOccurred>
 
     <!--============ LongEventHandler ==============-->
         <!-- Note: RimWorld offers no translation text for these strings... I let them here in case it is added in Rimworld's code -->
-    <PLFILT_FilteringWorldTiles>Filtrage des tuiles du Monde</PLFILT_FilteringWorldTiles>
-    <PLFILT_PreFilteringWorldTiles>Pré-filtrage des tuiles du Monde</PLFILT_PreFilteringWorldTiles>
+    <!-- EN: Filtering World Tiles -->
+  <PLFILT_FilteringWorldTiles>Filtrage des tuiles du Monde</PLFILT_FilteringWorldTiles>
+    <!-- EN: Pre-filtering World Tiles -->
+  <PLFILT_PreFilteringWorldTiles>Pré-filtrage des tuiles du Monde</PLFILT_PreFilteringWorldTiles>
 
 </LanguageData>
