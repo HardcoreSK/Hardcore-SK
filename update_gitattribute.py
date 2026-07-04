@@ -70,12 +70,14 @@ def output(enabled: list[str], mod_dict: dict[str, Mod]) -> None:
     """
     Set export-ignore for mods that are not enabled in ModsConfig.xml and not supported in 1.5
     """
+    output_lines = []
+    for package_id, mod in mod_dict.items():
+        if package_id not in enabled and cur_version not in mod.supported_versions:
+            mod_path = mod.path.removeprefix('./').replace(os.sep, '/')
+            output_lines.append(f'"{mod_path}" export-ignore\n')
+
     with open(".gitattributes", "w", encoding='utf-8') as f:
-        for k, v in mod_dict.items():
-            #print(f"{k} {v}")
-            if k not in enabled and cur_version not in v.supported_versions:
-                mod_path = v.path.removeprefix('./').replace(os.sep, '/')
-                f.write(f"\"{mod_path}\" export-ignore\n")
+        f.writelines(sorted(output_lines, key=str.casefold))
 
 
 def main() -> None:

@@ -22,6 +22,10 @@ jobs:
         run: |
             git config user.name "GitHub Actions"
             git config user.email "<>"
+            if git diff --quiet -- .gitattributes; then
+              echo ".gitattributes is already up to date; skipping commit and push."
+              exit 0
+            fi
             git add .gitattributes
-            git commit -m "Update .gitattributes" || echo "No changes to commit"
+            git commit -m "Update .gitattributes"
             git push
