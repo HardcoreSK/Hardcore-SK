@@ -1,20 +1,28 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
     <!-- Use 4 spaces indentation, NOT tabs -->
     <!-- Overall prefix for the mod is "PL" for PrepareLanding; MW for Main Window -->
 
     <!--============================================== Information [INF] ============================================-->
 
-    <PLMWINF_WorldInfo>Informations Monde</PLMWINF_WorldInfo>
+    <!-- EN: World Info -->
+  <PLMWINF_WorldInfo>Informations Monde</PLMWINF_WorldInfo>
 
-    <PLMWINF_PlanetName>Nom Planète</PLMWINF_PlanetName>
+    <!-- EN: Planet Name -->
+  <PLMWINF_PlanetName>Nom Planète</PLMWINF_PlanetName>
         <!-- all the following strings are followed by a strictly positive integer number -->
-    <PLMWINF_TotalTiles>Total Tuiles</PLMWINF_TotalTiles>
-    <PLMWINF_SettleableTiles>Tuiles habitable</PLMWINF_SettleableTiles> <!-- as in "number of tiles that can be settled" -->
-    <PLMWINF_TilesWithRivers>Tuiles avec Rivières</PLMWINF_TilesWithRivers>
-    <PLMWINF_TilesWithRoads>Tuiles avec Routes</PLMWINF_TilesWithRoads>
-    <PLMWINF_Biomes>Biomes</PLMWINF_Biomes>
-    <PLMWINF_NumberOfTiles>Nombre de Tuiles</PLMWINF_NumberOfTiles>
+    <!-- EN: Total Tiles -->
+  <PLMWINF_TotalTiles>Total Tuiles</PLMWINF_TotalTiles>
+    <!-- EN: Settleable Tiles -->
+  <PLMWINF_SettleableTiles>Tuiles habitables</PLMWINF_SettleableTiles> <!-- as in "number of tiles that can be settled" -->
+    <!-- EN: Tiles with Rivers -->
+  <PLMWINF_TilesWithRivers>Tuiles avec Rivières</PLMWINF_TilesWithRivers>
+    <!-- EN: Tiles with Roads -->
+  <PLMWINF_TilesWithRoads>Tuiles avec Routes</PLMWINF_TilesWithRoads>
+    <!-- EN: Biomes -->
+  <PLMWINF_Biomes>Biomes</PLMWINF_Biomes>
+    <!-- EN: Number of Tiles -->
+  <PLMWINF_NumberOfTiles>Nombre de Tuiles</PLMWINF_NumberOfTiles>
 
         <!-- "Records" as in highest or lowest characteristics (e.g temperature, altitude, etc.)
         The string is constructed as follows:
@@ -35,13 +43,18 @@
         - LAT:      is the latitude of the tile
         - LONG:     is the longitude of the tile
         -->
-    <PLMWINF_WorldLowest>Plus Bas Mondial:</PLMWINF_WorldLowest>
-    <PLMWINF_WorldHighest>Plus Haut Mondial:</PLMWINF_WorldHighest>
+    <!-- EN: World Lowest -->
+  <PLMWINF_WorldLowest>Plus Bas Mondial:</PLMWINF_WorldLowest>
+    <!-- EN: World Highest -->
+  <PLMWINF_WorldHighest>Plus Haut Mondial:</PLMWINF_WorldHighest>
 
         <!-- other entries -->
 
-    <PLMWINF_FilterInfo>Informations Filtre</PLMWINF_FilterInfo>
-    <PLMWINF_ClearInfo>Effacer les Information</PLMWINF_ClearInfo>
+    <!-- EN: Filter Information -->
+  <PLMWINF_FilterInfo>Informations de filtrage</PLMWINF_FilterInfo>
+    <!-- EN: Clear Information -->
+  <PLMWINF_ClearInfo>Effacer les Informations</PLMWINF_ClearInfo>
 
-    <PLMWINF_WorldRecords>Records Mondiaux</PLMWINF_WorldRecords> <!-- "Records" as in highest or lowest values in the world -->
+    <!-- EN: World Records -->
+  <PLMWINF_WorldRecords>Records Mondiaux</PLMWINF_WorldRecords> <!-- "Records" as in highest or lowest values in the world -->
 </LanguageData>
