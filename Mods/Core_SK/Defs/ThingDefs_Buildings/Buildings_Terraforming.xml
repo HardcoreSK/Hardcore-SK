@@ -96,7 +96,7 @@
 				<basePowerConsumption>300</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Refuelable">
-				<consumeFuelOnlyWhenPowered>true</consumeFuelOnlyWhenPowered>
+				<externalTicking>true</externalTicking>
 				<fuelConsumptionRate>60.0</fuelConsumptionRate>
 				<fuelCapacity>10.0</fuelCapacity>
 				<fuelConsumptionPerTickInRain>-10</fuelConsumptionPerTickInRain>
@@ -109,9 +109,6 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 				<showFuelGizmo>true</showFuelGizmo>
 				<fuelGizmoLabel>Compost</fuelGizmoLabel>
-			</li>
-			<li>
-				<compClass>CompQuality</compClass>
 			</li>
 		</comps>
 		<rotatable>false</rotatable>
