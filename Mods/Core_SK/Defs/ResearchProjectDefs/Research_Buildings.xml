@@ -721,23 +721,7 @@
 			<li>IEDs</li>
 			<li>Stones_C1</li>
 		</prerequisites>
-		<researchViewX>9.00</researchViewX>
-		<researchViewY>14.00</researchViewY>
-		<tab>Buildings_SK</tab>
-	</ResearchProjectDef>
-
-	<ResearchProjectDef ParentName="HitechBase">
-		<defName>ResearchMotionSwitch</defName>
-		<label>Power Switch Motion Sensors</label>
-		<description>This will unlock motion sensor technology on power switches</description>
-		<discoveredLetterText>Now your power switch can be configured to automatically switch on when someone is in the room. Additionally further enhancement is now possible.</discoveredLetterText>
-		<baseCost>1500</baseCost>
-		<techLevel>Industrial</techLevel>
-		<prerequisites>
-			<li>Electrical_engineering_C2</li>
-			<li>Research_table_C2</li>
-		</prerequisites>
-		<researchViewX>13.00</researchViewX>
+		<researchViewX>10.00</researchViewX>
 		<researchViewY>14.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
@@ -1074,7 +1058,8 @@
 		<researchViewY>16.00</researchViewY>
 		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
-<!-- DefOverwrite
+
+    <!-- DefOverwrite
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>Batteries</defName>		--><!-- Electrical_engineering_C1 --><!--
 		<label>Electrical networks I</label>
@@ -1087,8 +1072,24 @@
 		<researchViewX>8.00</researchViewX>
 		<researchViewY>17.00</researchViewY>
 		<tab>Buildings_SK</tab>
+	</ResearchProjectDef>-->
+
+	<ResearchProjectDef ParentName="IndustrialBase">
+		<defName>ResearchMotionSwitch</defName>
+		<label>Motion sensors</label>
+		<description>This will unlock motion sensor technology on power switches.</description>
+		<discoveredLetterText>Now your power switch can be configured to automatically switch on when someone is in the room. Additionally further enhancement is now possible.</discoveredLetterText>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Electrical_engineering_C2</li>
+			<li>Research_table_C1</li>
+		</prerequisites>
+		<researchViewX>10.00</researchViewX>
+		<researchViewY>17.00</researchViewY>
+		<tab>Buildings_SK</tab>
 	</ResearchProjectDef>
--->
+
 	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>Electrical_engineering_C2</defName>
 		<label>Electrical networks II</label>
@@ -1232,12 +1233,11 @@
 		<baseCost>1700</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
-			<li>Autodoors</li>
 			<li>IEDs</li>
 			<li>Stones_C1</li>
 		</prerequisites>
 		<researchViewX>9.00</researchViewX>
-		<researchViewY>13.00</researchViewY>
+		<researchViewY>14.00</researchViewY>
 		<tab>Craft_SK</tab>
 	</ResearchProjectDef>
 
@@ -1251,8 +1251,8 @@
 			<li>Roof_D2</li>
 			<li>Fortification_C2</li>
 		</prerequisites>
-		<researchViewX>10.00</researchViewX>
-		<researchViewY>13.00</researchViewY>
+		<researchViewX>11.00</researchViewX>
+		<researchViewY>14.00</researchViewY>
 		<tab>Craft_SK</tab>
 	</ResearchProjectDef>
 

@@ -6,21 +6,21 @@
         <xpath>Defs/ThingDef[defName="GravEngine"]/statBases</xpath>
         <value>
             <SubstructureSupport>1000</SubstructureSupport>
-            <MarketValue>15000</MarketValue>
+            <MarketValue>25000</MarketValue>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="GravEngine"]/comps/li[@Class="CompProperties_SubstructureFootprint"]/radius</xpath>
         <value>
-            <radius>22.9</radius>
+            <radius>25.9</radius>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="GravshipShieldGenerator"]/comps/li[@Class="CompProperties_ProjectileInterceptor"]/radius</xpath>
         <value>
-            <radius>28.9</radius>
+            <radius>32.9</radius>
         </value>
     </Operation>
     
@@ -28,10 +28,10 @@
         <xpath>Defs/ThingDef[defName="GravFieldExtender"]/comps/li[@Class="CompProperties_GravshipFacility"]</xpath>
         <value>
             <statOffsets>
-              <SubstructureSupport>350</SubstructureSupport>
+              <SubstructureSupport>400</SubstructureSupport>
             </statOffsets>
             <maxSimultaneous>10</maxSimultaneous>
-            <maxDistance>23.9</maxDistance>
+            <maxDistance>25.9</maxDistance>
         </value>
     </Operation>
     
@@ -46,7 +46,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="GravshipShieldGenerator"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
         <value>
-            <basePowerConsumption>5000</basePowerConsumption>
+            <basePowerConsumption>7000</basePowerConsumption>
         </value>
     </Operation>
 

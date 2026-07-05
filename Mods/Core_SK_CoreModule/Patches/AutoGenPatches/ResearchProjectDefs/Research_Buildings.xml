@@ -1,319 +1,331 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ResearchProjectDef[defName="TubeTelevision"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.IndustrialBaseDummy</value>
+    </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="TubeTelevision"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.IndustrialBaseDummy</value>
-	</Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="TubeTelevision"]</xpath>
+        <value>
+            <label>Enjoyment VI</label>
+            <description>description</description>
+            <baseCost>800</baseCost>
+            <prerequisites>
+                <li>Piano</li>
+            </prerequisites>
+            <researchViewX>11.00</researchViewX>
+            <researchViewY>6.00</researchViewY>
+            <tab>Buildings_SK</tab>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ResearchProjectDef[defName="TubeTelevision"]</xpath>
-    <value>
-      <label>Enjoyment VI</label>
-      <description>description</description>
-      <baseCost>800</baseCost>
-      <prerequisites>
-        <li>Piano</li>
-      </prerequisites>
-      <researchViewX>11.00</researchViewX>
-      <researchViewY>6.00</researchViewY>
-      <tab>Buildings_SK</tab>
-    </value>
-  </Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ResearchProjectDef[defName="FlatscreenTelevision"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.HitechBaseDummy</value>
+    </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="FlatscreenTelevision"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechBaseDummy</value>
-	</Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="FlatscreenTelevision"]</xpath>
+        <value>
+            <label>Enjoyment VII</label>
+            <description>description</description>
+            <baseCost>1000</baseCost>
+            <prerequisites>
+                <li>TubeTelevision</li>
+                <li>Electronics_C2</li>
+            </prerequisites>
+            <researchViewX>12.00</researchViewX>
+            <researchViewY>6.00</researchViewY>
+            <tab>Buildings_SK</tab>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ResearchProjectDef[defName="FlatscreenTelevision"]</xpath>
-    <value>
-      <label>Enjoyment VII</label>
-      <description>description</description>
-      <baseCost>1000</baseCost>
-      <prerequisites>
-        <li>TubeTelevision</li>
-        <li>Electronics_C2</li>
-      </prerequisites>
-      <researchViewX>12.00</researchViewX>
-      <researchViewY>6.00</researchViewY>
-      <tab>Buildings_SK</tab>
-    </value>
-  </Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.PrimitiveBaseDummy</value>
+    </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.PrimitiveBaseDummy</value>
-	</Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"]</xpath>
+        <value>
+            <label>Furniture I</label>
+            <description>description</description>
+            <baseCost>250</baseCost>
+            <researchViewX>3.00</researchViewX>
+            <researchViewY>7.00</researchViewY>
+            <tab>Buildings_SK</tab>
+            <tags>
+                <li MayRequire="Solaris.RatkinRaceMod">RatkinStart</li>
+            </tags>
+        </value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"]</xpath>
-    <value>
-      <label>Furniture I</label>
-      <description>description</description>
-      <baseCost>250</baseCost>
-      <researchViewX>3.00</researchViewX>
-      <researchViewY>7.00</researchViewY>
-      <tab>Buildings_SK</tab>
-      <tags>
-        <li MayRequire="Solaris.RatkinRaceMod">RK_ResearchTag_IndustrialBasic</li>
-      </tags>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"]</xpath>
+        <value>
+            <label>Furniture I</label>
+            <description>description</description>
+            <baseCost>250</baseCost>
+            <researchViewX>3.00</researchViewX>
+            <researchViewY>7.00</researchViewY>
+            <tab>Buildings_SK</tab>
+            <tags>
+                <li MayRequire="Solaris.RatkinRaceMod">RK_ResearchTag_IndustrialBasic</li>
+            </tags>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechMultiBaseDummy</value>
-	</Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.HitechMultiBaseDummy</value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
-    <value>
-      <label>Beds VI</label>
-      <description>description</description>
-      <baseCost>1500</baseCost>
-      <prerequisites>
-        <li>Beds_C3</li>
-        <li>Components_D1</li>
-      </prerequisites>
-      <researchViewX>18.00</researchViewX>
-      <researchViewY>8.00</researchViewY>
-      <tab>Buildings_SK</tab>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
+        <value>
+            <label>Beds VI</label>
+            <description>description</description>
+            <baseCost>1500</baseCost>
+            <prerequisites>
+                <li>Beds_C3</li>
+                <li>Components_D1</li>
+            </prerequisites>
+            <researchViewX>18.00</researchViewX>
+            <researchViewY>8.00</researchViewY>
+            <tab>Buildings_SK</tab>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="PassiveCooler"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.PrimitiveBaseDummy</value>
-	</Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ResearchProjectDef[defName="PassiveCooler"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.PrimitiveBaseDummy</value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ResearchProjectDef[defName="PassiveCooler"]</xpath>
-    <value>
-      <label>Temperature control I</label>
-      <description>description</description>
-      <baseCost>150</baseCost>
-      <researchViewX>2.00</researchViewX>
-      <researchViewY>11.00</researchViewY>
-      <tab>Buildings_SK</tab>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="PassiveCooler"]</xpath>
+        <value>
+            <label>Temperature control I</label>
+            <description>description</description>
+            <baseCost>150</baseCost>
+            <researchViewX>2.00</researchViewX>
+            <researchViewY>11.00</researchViewY>
+            <tab>Buildings_SK</tab>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="AirConditioning"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.IndustrialBaseDummy</value>
-	</Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ResearchProjectDef[defName="AirConditioning"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.IndustrialBaseDummy</value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ResearchProjectDef[defName="AirConditioning"]</xpath>
-    <value>
-      <label>Temperature control III</label>
-      <description>description</description>
-      <baseCost>1000</baseCost>
-      <prerequisites>
-        <li>Temperature_control_B1</li>
-        <li>Electricity</li>
-      </prerequisites>
-      <researchViewX>8.00</researchViewX>
-      <researchViewY>11.00</researchViewY>
-      <tab>Buildings_SK</tab>
-      <tags>
-        <li>NovaStart</li>
-      </tags>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="AirConditioning"]</xpath>
+        <value>
+            <label>Temperature control III</label>
+            <description>description</description>
+            <baseCost>1000</baseCost>
+            <prerequisites>
+                <li>Temperature_control_B1</li>
+                <li>Electricity</li>
+            </prerequisites>
+            <researchViewX>8.00</researchViewX>
+            <researchViewY>11.00</researchViewY>
+            <tab>Buildings_SK</tab>
+            <tags>
+                <li>NovaStart</li>
+            </tags>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="IEDs"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.MedievalBaseDummy</value>
-	</Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ResearchProjectDef[defName="IEDs"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.MedievalBaseDummy</value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ResearchProjectDef[defName="IEDs"]</xpath>
-    <value>
-      <label>Fortification IV</label>
-      <description>description</description>
-      <baseCost>1500</baseCost>
-      <prerequisites>
-        <li>Fortification_B2</li>
-      </prerequisites>
-      <researchViewY>14.00</researchViewY>
-      <tab>Buildings_SK</tab>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="IEDs"]</xpath>
+        <value>
+            <label>Fortification IV</label>
+            <description>description</description>
+            <baseCost>1500</baseCost>
+            <prerequisites>
+                <li>Fortification_B2</li>
+            </prerequisites>
+            <researchViewY>14.00</researchViewY>
+            <tab>Buildings_SK</tab>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="Firefoam"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.MedievalBaseDummy</value>
-	</Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ResearchProjectDef[defName="Firefoam"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.MedievalBaseDummy</value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ResearchProjectDef[defName="Firefoam"]</xpath>
-    <value>
-      <label>Construction IV</label>
-      <description>description</description>
-      <prerequisites>
-        <li>Construction_B3</li>
-      </prerequisites>
-      <researchViewY>13.00</researchViewY>
-      <tab>Buildings_SK</tab>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="Firefoam"]</xpath>
+        <value>
+            <label>Construction IV</label>
+            <description>description</description>
+            <prerequisites>
+                <li>Construction_B3</li>
+            </prerequisites>
+            <researchViewY>13.00</researchViewY>
+            <tab>Buildings_SK</tab>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="Autodoors"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.IndustrialBaseDummy</value>
-	</Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ResearchProjectDef[defName="Autodoors"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.IndustrialBaseDummy</value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ResearchProjectDef[defName="Autodoors"]</xpath>
-    <value>
-      <label>Construction V</label>
-      <description>description</description>
-      <baseCost>1000</baseCost>
-      <prerequisites>
-        <li>Firefoam</li>
-        <li>MicroelectronicsBasics</li>
-      </prerequisites>
-      <researchViewX>8.00</researchViewX>
-      <researchViewY>13.00</researchViewY>
-      <tab>Buildings_SK</tab>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="Autodoors"]</xpath>
+        <value>
+            <label>Construction V</label>
+            <description>description</description>
+            <baseCost>1000</baseCost>
+            <prerequisites>
+                <li>Firefoam</li>
+                <li>MicroelectronicsBasics</li>
+            </prerequisites>
+            <researchViewX>9.00</researchViewX>
+            <researchViewY>13.00</researchViewY>
+            <tab>Buildings_SK</tab>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="Electricity"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.MedievalBaseDummy</value>
-	</Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ResearchProjectDef[defName="Electricity"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.MedievalBaseDummy</value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ResearchProjectDef[defName="Electricity"]</xpath>
-    <value>
-      <label>Power engineering I</label>
-      <description>description</description>
-      <baseCost>1500</baseCost>
-      <prerequisites>
-		</prerequisites>
-      <researchViewX>7.00</researchViewX>
-      <researchViewY>15.00</researchViewY>
-      <tab>Buildings_SK</tab>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="Electricity"]</xpath>
+        <value>
+            <label>Power engineering I</label>
+            <description>description</description>
+            <baseCost>1500</baseCost>
+            <prerequisites />
+            <researchViewX>7.00</researchViewX>
+            <researchViewY>15.00</researchViewY>
+            <tab>Buildings_SK</tab>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="WatermillGenerator"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.MedievalBaseDummy</value>
-	</Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ResearchProjectDef[defName="WatermillGenerator"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.MedievalBaseDummy</value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ResearchProjectDef[defName="WatermillGenerator"]</xpath>
-    <value>
-      <label>Renewable energy I</label>
-      <description>description</description>
-      <baseCost>800</baseCost>
-      <researchViewY>16.00</researchViewY>
-      <tab>Buildings_SK</tab>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="WatermillGenerator"]</xpath>
+        <value>
+            <label>Renewable energy I</label>
+            <description>description</description>
+            <baseCost>800</baseCost>
+            <researchViewY>16.00</researchViewY>
+            <tab>Buildings_SK</tab>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="SolarPanels"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.IndustrialBaseDummy</value>
-	</Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ResearchProjectDef[defName="SolarPanels"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.IndustrialBaseDummy</value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ResearchProjectDef[defName="SolarPanels"]</xpath>
-    <value>
-      <label>Renewable energy III</label>
-      <description>description</description>
-      <baseCost>1200</baseCost>
-      <prerequisites>
-        <li>Renewable_energy_C2</li>
-      </prerequisites>
-      <researchViewX>10.00</researchViewX>
-      <researchViewY>16.00</researchViewY>
-      <tab>Buildings_SK</tab>
-      <tags>
-        <li>NovaStart</li>
-        <li>AsariStart</li>
-      </tags>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="SolarPanels"]</xpath>
+        <value>
+            <label>Renewable energy III</label>
+            <description>description</description>
+            <baseCost>1200</baseCost>
+            <prerequisites>
+                <li>Renewable_energy_C2</li>
+            </prerequisites>
+            <researchViewX>10.00</researchViewX>
+            <researchViewY>16.00</researchViewY>
+            <tab>Buildings_SK</tab>
+            <tags>
+                <li>NovaStart</li>
+                <li>AsariStart</li>
+            </tags>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="GeothermalPower"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.IndustrialBaseDummy</value>
-	</Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ResearchProjectDef[defName="GeothermalPower"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.IndustrialBaseDummy</value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ResearchProjectDef[defName="GeothermalPower"]</xpath>
-    <value>
-      <label>Renewable energy V</label>
-      <description>description</description>
-      <baseCost>800</baseCost>
-      <prerequisites>
-        <li>Renewable_energy_C4</li>
-      </prerequisites>
-      <researchViewX>13.00</researchViewX>
-      <researchViewY>16.00</researchViewY>
-      <tab>Buildings_SK</tab>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="GeothermalPower"]</xpath>
+        <value>
+            <label>Renewable energy V</label>
+            <description>description</description>
+            <baseCost>800</baseCost>
+            <prerequisites>
+                <li>Renewable_energy_C4</li>
+            </prerequisites>
+            <researchViewX>13.00</researchViewX>
+            <researchViewY>16.00</researchViewY>
+            <tab>Buildings_SK</tab>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="Batteries"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.IndustrialBaseDummy</value>
-	</Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ResearchProjectDef[defName="Batteries"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.IndustrialBaseDummy</value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ResearchProjectDef[defName="Batteries"]</xpath>
-    <value>
-      <label>Electrical networks I</label>
-      <description>description</description>
-      <baseCost>1500</baseCost>
-      <researchViewX>8.00</researchViewX>
-      <researchViewY>17.00</researchViewY>
-      <tab>Buildings_SK</tab>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="Batteries"]</xpath>
+        <value>
+            <label>Electrical networks I</label>
+            <description>description</description>
+            <baseCost>1500</baseCost>
+            <researchViewX>8.00</researchViewX>
+            <researchViewY>17.00</researchViewY>
+            <tab>Buildings_SK</tab>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ResearchProjectDef[defName="TransportPod"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.HitechMultiBaseDummy</value>
-	</Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ResearchProjectDef[defName="TransportPod"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.HitechMultiBaseDummy</value>
+    </Operation>
 
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/ResearchProjectDef[defName="TransportPod"]</xpath>
-    <value>
-      <label>Transport pods</label>
-      <description>description</description>
-      <baseCost>1600</baseCost>
-      <techLevel>Spacer</techLevel>
-      <prerequisites>
-        <li>Telecommunications_D1</li>
-      </prerequisites>
-      <researchViewX>18.00</researchViewX>
-      <researchViewY>13.00</researchViewY>
-      <tab>Craft_SK</tab>
-    </value>
-  </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="TransportPod"]</xpath>
+        <value>
+            <label>Transport pods</label>
+            <description>description</description>
+            <baseCost>1600</baseCost>
+            <techLevel>Spacer</techLevel>
+            <prerequisites>
+                <li>Telecommunications_D1</li>
+            </prerequisites>
+            <researchViewX>18.00</researchViewX>
+            <researchViewY>13.00</researchViewY>
+            <tab>Craft_SK</tab>
+        </value>
+    </Operation>
 
 </Patch>
