@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!--Non-Gravship-->
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="Fishing"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.PrimitiveBaseDummy</value>
+	</Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ResearchProjectDef[defName="Fish_A1"]</xpath>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="Fishing"]</xpath>
+        <value>
+            <baseCost>150</baseCost>
+            <researchViewX>2.00</researchViewX>
+            <researchViewY>50.00</researchViewY>
+            <tab>Animal_SK</tab>
+            <tags Merge="True">
+                <li>NorbalStart</li>
+            </tags>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="Fish_C1"]</xpath>
+        <value>
+            <prerequisites>
+                <li>Fishing</li>
+                <li>Oil_Industry_C5</li>
+            </prerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/RecipeDef[defName="MakeFishingBait"]</xpath>
+        <value>
+            <researchPrerequisite>Fishing</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="HSK_FishingSpotSpawner" or defName="HSK_FishTrap"]</xpath>
+        <value>
+            <researchPrerequisites Replace="True">
+                <li>Fishing</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="HeavyBridges"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.IndustrialBaseDummy</value>
+	</Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="HeavyBridges"]</xpath>
+        <value>
+            <baseCost>150</baseCost>
+            <researchViewX>10.00</researchViewX>
+            <researchViewY>13.00</researchViewY>
+            <tab>Buildings_SK</tab>
+            <prerequisites>
+                <li>Autodoors</li>
+            </prerequisites>
+        </value>
+    </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="BeamWeapons"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechMultiBaseDummy</value>
+	</Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="BeamWeapons"]</xpath>
+        <value>
+            <baseCost>2200</baseCost>
+            <researchViewX>19.00</researchViewX>
+            <researchViewY>34.00</researchViewY>
+            <tab>Weapon_SK</tab>
+            <prerequisites Replace="True">
+                <li>ChargedShot</li>
+            </prerequisites>
+        </value>
+    </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="Shuttles"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechMultiBaseDummy</value>
+	</Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="Shuttles"]</xpath>
+        <value>
+            <researchViewX>19.00</researchViewX>
+            <researchViewY>13.00</researchViewY>
+            <tab>Craft_SK</tab>
+            <prerequisites Replace="True">
+                <li>TransportPod</li>
+            </prerequisites>
+        </value>
+    </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="HunterDrones"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.IndustrialBaseDummy</value>
+	</Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="HunterDrones"]</xpath>
+        <value>
+            <researchViewX>12.00</researchViewX>
+            <researchViewY>35.00</researchViewY>
+            <tab>Weapon_SK</tab>
+            <prerequisites Replace="True">
+                <li>IED_C1</li>
+            </prerequisites>
+        </value>
+    </Operation>
+
+    <!--Gravship-->
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="OrbitalTech"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechBaseDummy</value>
+	</Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="OrbitalTech"]</xpath>
+        <value>
+            <baseCost>2000</baseCost>
+            <researchViewX>15.00</researchViewX>
+            <researchViewY>71.00</researchViewY>
+            <tab>Gravship_SK</tab>
+            <prerequisites Replace="True">
+                <li>Oil_Industry_C3</li>
+            </prerequisites>
+        </value>
+    </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="BasicGravtech"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechBaseDummy</value>
+	</Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="BasicGravtech"]</xpath>
+        <value>
+            <baseCost>2500</baseCost>
+            <researchViewX>16.00</researchViewX>
+            <researchViewY>71.00</researchViewY>
+            <tab>Gravship_SK</tab>
+            <prerequisites Replace="True">
+                <li>OrbitalTech</li>
+            </prerequisites>
+        </value>
+    </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="StandardGravtech"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechMultiBaseDummy</value>
+	</Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="StandardGravtech"]</xpath>
+        <value>
+            <baseCost>2500</baseCost>
+            <researchViewX>18.00</researchViewX>
+            <researchViewY>71.00</researchViewY>
+            <techLevel>Spacer</techLevel>
+            <tab>Gravship_SK</tab>
+            <prerequisites Replace="True">
+                <li>Metals_D1</li>
+                <li>BasicGravtech</li>
+            </prerequisites>
+        </value>
+    </Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ResearchProjectDef[defName="AdvancedGravtech"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.HitechLabStationBaseDummy</value>
+	</Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="AdvancedGravtech"]</xpath>
+        <value>
+            <baseCost>4000</baseCost>
+            <researchViewX>22.00</researchViewX>
+            <researchViewY>71.00</researchViewY>
+            <techLevel>Ultra</techLevel>
+            <tab>Gravship_SK</tab>
+            <prerequisites Replace="True">
+                <li>Components_E1</li>
+                <li>StandardGravtech</li>
+            </prerequisites>
+        </value>
+    </Operation>
+
+</Patch>
