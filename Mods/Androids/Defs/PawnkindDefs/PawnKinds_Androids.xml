@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- Player -->
-	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
+	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>ChjAndroidColonist</defName>
 		<label>human android colonist</label>
 		<race>ChjAndroid</race>
@@ -68,7 +68,7 @@
 		<combatPower>70</combatPower>
 		<itemQuality>Poor</itemQuality>
 		<isFighter>false</isFighter>
-		<gearHealthRange>
+		<gearHealthRange Inherit="False">
 			<min>0.2</min>
 			<max>2.0</max>
 		</gearHealthRange>
@@ -90,7 +90,7 @@
 			<li>MeleeTools</li>
 			<li>MedievalMelee</li>
 		</weaponTags>
-		<techHediffsMoney>
+		<techHediffsMoney Inherit="False">
 			<min>2000</min>
 			<max>3000</max>
 		</techHediffsMoney>
@@ -149,7 +149,7 @@
 		</backstoryCategories>
 		<combatPower>170</combatPower>
 		<maxGenerationAge>65</maxGenerationAge>
-		<gearHealthRange>
+		<gearHealthRange Inherit="False">
 			<min>0.5</min>
 			<max>1.8</max>
 		</gearHealthRange>
@@ -171,7 +171,7 @@
 			<li>PT3</li>
 			<li>SMG2</li>
 		</weaponTags>
-		<techHediffsMoney>
+		<techHediffsMoney Inherit="False">
 			<min>2000</min>
 			<max>3000</max>
 		</techHediffsMoney>
@@ -228,7 +228,7 @@
 			<li>ChjAndroid</li>
 		</backstoryCategories>
 		<combatPower>140</combatPower>
-		<gearHealthRange>
+		<gearHealthRange Inherit="False">
 			<min>0.7</min>
 			<max>2.3</max>
 		</gearHealthRange>
@@ -241,7 +241,7 @@
 			<max>5000</max>
 		</apparelMoney>
 		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
-		<techHediffsMoney>
+		<techHediffsMoney Inherit="False">
 			<min>1000</min>
 			<max>1500</max>
 		</techHediffsMoney>
@@ -301,7 +301,7 @@
 			<li>ChjAndroid</li>
 		</backstoryCategories>
 		<combatPower>162</combatPower>
-		<gearHealthRange>
+		<gearHealthRange Inherit="False">
 			<min>0.7</min>
 			<max>2.3</max>
 		</gearHealthRange>
@@ -322,7 +322,7 @@
 			<li>TierOneSMG</li>
 			<li>SMG2</li>
 		</weaponTags>
-		<techHediffsMoney>
+		<techHediffsMoney Inherit="False">
 			<min>1000</min>
 			<max>1500</max>
 		</techHediffsMoney>
@@ -379,7 +379,7 @@
 			<li>ChjAndroid</li>
 		</backstoryCategories>
 		<combatPower>95</combatPower>
-		<gearHealthRange>
+		<gearHealthRange Inherit="False">
 			<min>0.7</min>
 			<max>2.3</max>
 		</gearHealthRange>
@@ -398,7 +398,7 @@
 		<weaponTags>
 			<li>RF1</li>
 		</weaponTags>
-		<techHediffsMoney>
+		<techHediffsMoney Inherit="False">
 			<min>1000</min>
 			<max>1500</max>
 		</techHediffsMoney>
@@ -455,7 +455,7 @@
 			<li>ChjAndroid</li>
 		</backstoryCategories>
 		<combatPower>140</combatPower>
-		<gearHealthRange>
+		<gearHealthRange Inherit="False">
 			<min>0.5</min>
 			<max>2.3</max>
 		</gearHealthRange>
@@ -479,7 +479,7 @@
 		<weaponTags>
 			<li>MidworldMelee</li>
 		</weaponTags>
-		<techHediffsMoney>
+		<techHediffsMoney Inherit="False">
 			<min>2000</min>
 			<max>3000</max>
 		</techHediffsMoney>
@@ -518,7 +518,7 @@
 			<li>ChjAndroid</li>
 		</backstoryCategories>
 		<combatPower>185</combatPower>
-		<gearHealthRange>
+		<gearHealthRange Inherit="False">
 			<min>0.5</min>
 			<max>1.4</max>
 		</gearHealthRange>
@@ -539,7 +539,7 @@
 			<li>MG1</li>
 			<li>MG2</li>
 		</weaponTags>
-		<techHediffsMoney>
+		<techHediffsMoney Inherit="False">
 			<min>2000</min>
 			<max>3000</max>
 		</techHediffsMoney>

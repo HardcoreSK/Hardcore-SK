@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<FactionDef ParentName="SK_PlayerFactionBase">
+	<FactionDef ParentName="PlayerFactionBase">
 		<defName>ChjPlayerAndroidColony</defName>
 		<label>New Android Arrivals</label>
 		<description>Your own Android community.</description>
@@ -35,7 +35,7 @@
 		</apparelStuffFilter>
 	</FactionDef>
 
-	<FactionDef ParentName="SK_HumanFactionBase">
+	<FactionDef ParentName="OutlanderFactionBase">
 		<defName>ChjAndroidEnclave</defName>
 		<label>android enclave</label>
 		<description>A collection of android enclaves which are eeking out an existence out on the rim. Freed from their previous lives they now try to co-exist with outlanders and try to help anyone whom crashland on the planet.\n\nA idealistic collection of Androids who do their best to make the rim better.</description>

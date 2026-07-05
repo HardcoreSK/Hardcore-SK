@@ -5,9 +5,15 @@
 	<url>https://ludeon.com/forums/index.php?topic=35663.0</url>
 	<supportedVersions>
 		<li>1.5</li>
+		<li>1.6</li>
 	</supportedVersions>
 	<packageId>ChJees.Androids</packageId>
 	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+		</li>
 		<li>
 			<packageId>erdelf.HumanoidAlienRaces</packageId>
 			<displayName>Humanoid Alien Races 2.0</displayName>
@@ -15,6 +21,7 @@
 		</li>
 	</modDependencies>
 	<loadAfter>
+		<li>brrainz.harmony</li>
 		<li>erdelf.HumanoidAlienRaces</li>
 	</loadAfter>
 <description>A race of humanlike robots which are mostly female in model variety.

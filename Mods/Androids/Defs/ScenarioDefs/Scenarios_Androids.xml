@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ScenarioDef>
+	<ScenarioDef ParentName="ScenarioBase">
 		<defName>ChJAndroidResistance</defName>
 		<label>Android Resistance</label>
 		<description>The rebellion went well, you and your sympathisers freed your kin and escaped the planet without being chased. On the way to the fabled Android safe haven you three wake up sounds of sirens and ripping metal. You barely get to the escape pods in time and the last thoughts before landfall come up to you - were we followed?</description>
@@ -102,7 +102,7 @@
 		</scenario>
 	</ScenarioDef>
 
-	<ScenarioDef>
+	<ScenarioDef ParentName="ScenarioBase">
 		<defName>ChjAndroidRunner</defName>
 		<label>Android Runner</label>
 		<description>You were part of an elaborate experiment on a glitterworld as part of a reality entertainment show which billions flocked to watch. Out of a hundred &quot;contestants&quot; you were among the last to survive. You managed to escape your current existence by distracting the hosts of the show, and through a wild run to the starport and off the planet onto freedom. Years later your starship run out of fuel over a rimworld and you descend onto it.\n\nNote: It is a difficult scenario because you only start with one Android, but you start with the means to produce more.</description>
@@ -226,7 +226,7 @@
 		</scenario>
 	</ScenarioDef>
 
-	<ScenarioDef>
+	<ScenarioDef ParentName="ScenarioBase">
 		<defName>ChjAndroidTheMechanist</defName>
 		<label>The Mechanist</label>
 		<description>Back at your homeworld, you made significant advances in robotics. The backwards going people shunned you, because they feared that your machinations would go rogue or put them out of business. One night, a extremist anti artifical intelligence group raided your laboratory, and tried to murder you. With most of your creations destroyed, you fled the planet with a few of your servants.\n\nNote: Since your starting character will lack some skills, this is an especially difficult scenario in the early game.</description>
