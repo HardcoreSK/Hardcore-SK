@@ -259,7 +259,7 @@
 			<Bulk>25</Bulk>
 			<Mass>6</Mass>
 		</statBases>
-		<costList>
+		<costList Inherit="False">
 			<Hay>20</Hay>
 		</costList>
 		<stuffCategories Inherit="false">
@@ -304,7 +304,7 @@
 			<li>WoodLogs</li>
 		</stuffCategories>
 		<costStuffCount>20</costStuffCount>
-		<costList>
+		<costList Inherit="False">
 			<Hay>40</Hay>
 		</costList>
 		<building>
@@ -612,7 +612,7 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
-		<costList>
+		<costList Inherit="False">
 			<ComponentMedieval>6</ComponentMedieval>
 		</costList>
 		<building>

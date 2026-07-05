@@ -49,71 +49,77 @@
     </value>
   </Operation>
 <!--
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[@Name="BedBase"]</xpath>
-		<value>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[@Name="BedBase"]</xpath>
+    <value>
 
-		</value>
-	</Operation>
+    </value>
+  </Operation>
 -->
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[@Name="SansComfortBedBase"]</xpath>
-		<value>
-			<fillPercent>0.3</fillPercent>
-			<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
-			<!-- Make the default for beds match HSK, so other mod beds inherit -->
-			<costList>
-				<ComponentIndustrial>4</ComponentIndustrial> <!-- average ingredient cost -->
-			</costList>
-			<stuffCategories Inherit="false">
-				<li>Leathery</li>
-				<li>Fabric</li>
-				<li>HF</li>
-			</stuffCategories>
-		</value>
-	</Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="HayBed" or defName="HeyBedDouble"]/costList</xpath>
+    <attribute>Inherit</attribute>
+    <value>False</value>
+  </Operation>
+  
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[@Name="SansComfortBedBase"]</xpath>
+    <value>
+      <fillPercent>0.3</fillPercent>
+      <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+      <!-- Make the default for beds match HSK, so other mod beds inherit -->
+      <costList>
+        <ComponentIndustrial>4</ComponentIndustrial> <!-- average ingredient cost -->
+      </costList>
+      <stuffCategories Inherit="false">
+        <li>Leathery</li>
+        <li>Fabric</li>
+        <li>HF</li>
+      </stuffCategories>
+    </value>
+  </Operation>
 
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[@Name="BasicBedBase"]</xpath>
-		<value>
-			<comps Merge="true">
-				<li Class="CompProperties_AffectedByFacilities">
-					<linkableFacilities>
-						<li>VitalsMonitor</li>
-						<li>AdvancedVitalsMonitor</li>
-						<li>Dresser</li>
-						<li>EndTable</li>
-						<li>EndTableSimple</li>
-						<!--<li>ClutterLockerA</li> -->
-						<li>JournalTable</li>
-						<li>HolographicCell</li>
-						<!--<li>Commode</li>-->
-						<!--Dont forget to enable CompProperties_Facility in Commode def, if you want enable it again-->
-						<!--<li>Storage_Locker</li>-->
-						<li>medieval_surg_washpan</li>  
-						<li>medieval_surg_instruments</li>
-						<li>medieval_surg_lamp</li>
-						<li>industrial_surg_instruments</li>
-						<li>industrial_surg_lamp</li>
-						<li>space_surg_instruments</li>
-						<li>space_surg_lamp</li>
-						<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
-					</linkableFacilities>
-				</li>
-			</comps>
-			<staticSunShadowHeight>0</staticSunShadowHeight>
-			<statBases Merge="true">
-				<MaxHitPoints>80</MaxHitPoints>
-				<Bulk>80</Bulk>
-				<Mass>30</Mass>
-			</statBases>
-		</value>
-	</Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[@Name="BasicBedBase"]</xpath>
+    <value>
+      <comps Merge="true">
+        <li Class="CompProperties_AffectedByFacilities">
+          <linkableFacilities>
+            <li>VitalsMonitor</li>
+            <li>AdvancedVitalsMonitor</li>
+            <li>Dresser</li>
+            <li>EndTable</li>
+            <li>EndTableSimple</li>
+            <!--<li>ClutterLockerA</li> -->
+            <li>JournalTable</li>
+            <li>HolographicCell</li>
+            <!--<li>Commode</li>-->
+            <!--Dont forget to enable CompProperties_Facility in Commode def, if you want enable it again-->
+            <!--<li>Storage_Locker</li>-->
+            <li>medieval_surg_washpan</li>  
+            <li>medieval_surg_instruments</li>
+            <li>medieval_surg_lamp</li>
+            <li>industrial_surg_instruments</li>
+            <li>industrial_surg_lamp</li>
+            <li>space_surg_instruments</li>
+            <li>space_surg_lamp</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+          </linkableFacilities>
+        </li>
+      </comps>
+      <staticSunShadowHeight>0</staticSunShadowHeight>
+      <statBases Merge="true">
+        <MaxHitPoints>80</MaxHitPoints>
+        <Bulk>80</Bulk>
+        <Mass>30</Mass>
+      </statBases>
+    </value>
+  </Operation>
 
   <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="Bedroll"]</xpath>
-	  <attribute>ParentName</attribute>
-	  <value>BasicBedBase</value>
+    <xpath>Defs/ThingDef[defName="Bedroll"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>BasicBedBase</value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
@@ -124,7 +130,7 @@
       <graphicData>
         <texPath>Things/Building/Furniture/Beds/Norbal/single/norbalbed</texPath>
         <graphicClass>Graphic_Multi</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
+    <shaderType>CutoutComplex</shaderType>
         <drawSize>(1,2)</drawSize>
         <shadowData>
           <volume>(0.8, 0.15, 1.8)</volume>
@@ -134,21 +140,21 @@
         </damageData>
       </graphicData>
       <statBases>
-		<Flammability>1.0</Flammability>
+    <Flammability>1.0</Flammability>
         <Bulk>90</Bulk>
         <Mass>40</Mass>
-		<BedRestEffectiveness>0.87</BedRestEffectiveness>
-		<ImmunityGainSpeedFactor>1.0</ImmunityGainSpeedFactor>
-		<SurgerySuccessChanceFactor>0.85</SurgerySuccessChanceFactor>
-		<Comfort>0.7</Comfort>
-		<WorkToBuild>1000</WorkToBuild>
+    <BedRestEffectiveness>0.87</BedRestEffectiveness>
+    <ImmunityGainSpeedFactor>1.0</ImmunityGainSpeedFactor>
+    <SurgerySuccessChanceFactor>0.85</SurgerySuccessChanceFactor>
+    <Comfort>0.7</Comfort>
+    <WorkToBuild>1000</WorkToBuild>
         <Beauty>4</Beauty>
       </statBases>
-	  <comps/>
+    <comps/>
       <stuffCategories Inherit="false">
         <li>Leathery</li>
       </stuffCategories>
-      <costList>
+      <costList Inherit="False">
         <ComponentMedieval>4</ComponentMedieval>
         <Leather_Patch>30</Leather_Patch>
       </costList>
@@ -166,9 +172,9 @@
   </Operation>
 
   <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="BedrollDouble"]</xpath>
-	  <attribute>ParentName</attribute>
-	  <value>BasicBedBase</value>
+    <xpath>Defs/ThingDef[defName="BedrollDouble"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>BasicBedBase</value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
@@ -179,7 +185,7 @@
       <graphicData>
         <texPath>Things/Building/Furniture/Beds/Norbal/double/norbalbed</texPath>
         <graphicClass>Graphic_Multi</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
+    <shaderType>CutoutComplex</shaderType>
         <drawSize>(2,2)</drawSize>
         <shadowData>
           <volume>(1.8, 0.15, 1.8)</volume>
@@ -198,12 +204,12 @@
         <Comfort>0.8</Comfort>
         <WorkToBuild>1200</WorkToBuild>
       </statBases>
-	  <comps/>
+    <comps/>
       <stuffCategories Inherit="false">
         <li>Leathery</li>
       </stuffCategories>
       <costStuffCount>75</costStuffCount>
-      <costList>
+      <costList Inherit="False">
         <ComponentMedieval>8</ComponentMedieval>
         <Leather_Patch>60</Leather_Patch>
       </costList>
@@ -228,7 +234,7 @@
       <graphicData>
         <texPath>Things/Building/Furniture/Beds/Normal/single/normalbed</texPath>
         <graphicClass>Graphic_Multi</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
+    <shaderType>CutoutComplex</shaderType>
         <drawSize>(1,2)</drawSize>
         <shadowData>
           <volume>(0.8, 0.2, 1.8)</volume>
@@ -242,7 +248,7 @@
         <WorkToBuild>800</WorkToBuild>
         <Bulk>70</Bulk>
         <Mass>28</Mass>
-		<BedRestEffectiveness>0.95</BedRestEffectiveness>
+    <BedRestEffectiveness>0.95</BedRestEffectiveness>
         <ImmunityGainSpeedFactor>1.03</ImmunityGainSpeedFactor>
         <SurgerySuccessChanceFactor>0.87</SurgerySuccessChanceFactor>
         <Comfort>0.75</Comfort>
@@ -252,7 +258,7 @@
         <li>Fabric</li>
       </stuffCategories>
       <costStuffCount>65</costStuffCount>
-      <costList>
+      <costList Inherit="False">
         <ComponentMedieval>6</ComponentMedieval>
       </costList>
       <building>
@@ -273,7 +279,7 @@
       <graphicData>
         <texPath>Things/Building/Furniture/Beds/Normal/double/normalbed</texPath>
         <graphicClass>Graphic_Multi</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
+    <shaderType>CutoutComplex</shaderType>
         <drawSize>(2,2)</drawSize>
         <shadowData>
           <volume>(1.8, 0.2, 1.8)</volume>
@@ -297,7 +303,7 @@
         <li>Leathery</li>
       </stuffCategories>
       <costStuffCount>110</costStuffCount>
-      <costList>
+      <costList Inherit="False">
         <ComponentMedieval>12</ComponentMedieval>
       </costList>
       <building>
@@ -320,7 +326,7 @@
       <graphicData>
         <texPath>Things/Building/Furniture/Beds/Lover/lovebad</texPath>
         <graphicClass>Graphic_Multi</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
+    <shaderType>CutoutComplex</shaderType>
         <drawSize>(2,2)</drawSize>
         <shadowData>
           <volume>(1.8, 0.2, 1.8)</volume>
@@ -367,7 +373,7 @@
       <graphicData>
         <texPath>Things/Building/Furniture/Beds/MedBed/medbed</texPath>
         <graphicClass>Graphic_Multi</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
+    <shaderType>CutoutComplex</shaderType>
         <drawSize>(1,2)</drawSize>
         <shadowData>
           <volume>(0.8, 0.2, 1.8)</volume>
@@ -387,31 +393,31 @@
         <SurgerySuccessChanceFactor>1.1</SurgerySuccessChanceFactor>
         <BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">5</BirthRitualQualityOffset>
       </statBases>
-		<comps>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>VitalsMonitor</li>
-					<li>AdvancedVitalsMonitor</li>
-					<li>Dresser</li>
-					<li>EndTable</li>
-					<li>EndTableSimple</li>
-					<!--<li>ClutterLockerA</li> -->
-					<li>JournalTable</li>
-					<li>HolographicCell</li>
-					<!--<li>Commode</li>-->
-					<!--Dont forget to enable CompProperties_Facility in Commode def, if you want enable it again-->
-					<!--<li>Storage_Locker</li>-->
-					<li>medieval_surg_washpan</li>  
-					<li>medieval_surg_instruments</li>
-					<li>medieval_surg_lamp</li>
-					<li>industrial_surg_instruments</li>
-					<li>industrial_surg_lamp</li>
-					<li>space_surg_instruments</li>
-					<li>space_surg_lamp</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
-				</linkableFacilities>
-			</li>
-		</comps>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>VitalsMonitor</li>
+          <li>AdvancedVitalsMonitor</li>
+          <li>Dresser</li>
+          <li>EndTable</li>
+          <li>EndTableSimple</li>
+          <!--<li>ClutterLockerA</li> -->
+          <li>JournalTable</li>
+          <li>HolographicCell</li>
+          <!--<li>Commode</li>-->
+          <!--Dont forget to enable CompProperties_Facility in Commode def, if you want enable it again-->
+          <!--<li>Storage_Locker</li>-->
+          <li>medieval_surg_washpan</li>  
+          <li>medieval_surg_instruments</li>
+          <li>medieval_surg_lamp</li>
+          <li>industrial_surg_instruments</li>
+          <li>industrial_surg_lamp</li>
+          <li>space_surg_instruments</li>
+          <li>space_surg_lamp</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+        </linkableFacilities>
+      </li>
+    </comps>
       <stuffCategories Inherit="false">
         <li>Metallic</li>
         <li>Plastic</li>
@@ -430,7 +436,7 @@
         <buildingSizeCategory>Small</buildingSizeCategory>
         <paintable>true</paintable>
       </building>
-	  <staticSunShadowHeight>0</staticSunShadowHeight>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
     </value>
   </Operation>
 
