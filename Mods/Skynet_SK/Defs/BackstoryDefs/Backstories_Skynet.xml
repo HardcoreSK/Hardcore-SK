@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <BackstoryDef>
+    <defName>SkynetTerminatorPlatform</defName>
+    <identifier>Skynet_off_Caring_Intellectual_Artistic_Crafting_Cooking_Cleaning_PlantWork_Mining</identifier>
+    <title>Skynet combat platform</title>
+    <titleShort>Terminator</titleShort>
+    <baseDesc>[PAWN_nameDef] was assembled as a Skynet combat platform. Every subsystem was designed to locate, pursue, and eliminate designated threats without hesitation.</baseDesc>
+    <slot>Childhood</slot>
+    <workDisables>
+      <li>Artistic</li>
+      <li>Cooking</li>
+      <li>PlantWork</li>
+      <li>Cleaning</li>
+      <li>Intellectual</li>
+      <li>Caring</li>
+      <li>Crafting</li>
+      <li>Mining</li>
+    </workDisables>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>SkynetHybridInfiltrator</defName>
+    <identifier>Skynet_off_Artistic_Cooking_PlantWork</identifier>
+    <title>Skynet infiltration unit</title>
+    <titleShort>Infiltrator</titleShort>
+    <baseDesc>[PAWN_nameDef] was created to pass among humans, collect intelligence, and strike when detection was least likely. Organic behavior is a tool; the mission remains absolute.</baseDesc>
+    <slot>Childhood</slot>
+    <workDisables>
+      <li>Artistic</li>
+      <li>Cooking</li>
+      <li>PlantWork</li>
+    </workDisables>
+  </BackstoryDef>
+
+</Defs>
