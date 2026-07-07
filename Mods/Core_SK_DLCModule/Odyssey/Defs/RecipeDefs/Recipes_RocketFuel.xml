@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>MakeOxidizedChemfuel</defName>
+		<label>Create oxidized chemfuel</label>
+		<description>Create oxidized chemfuel from various chemical compounds. Produces 75.</description>
+		<jobString>Creating oxidized chemfuel.</jobString>
+		<workAmount>10000</workAmount>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Nitre</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Sulphates</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Chemfuel</li>
+				<li>Nitre</li>
+				<li>Sulphates</li>
+				<li>Prometheum</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<OxidizedChemfuel>75</OxidizedChemfuel>
+		</products>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<recipeUsers>
+			<li>TableChemlab</li>
+		</recipeUsers>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>BasicGravtech</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

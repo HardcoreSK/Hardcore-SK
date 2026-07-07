@@ -39,14 +39,14 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="GravcorePowerCell"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
         <value>
-            <basePowerConsumption>-10000</basePowerConsumption>
+            <basePowerConsumption>-5000</basePowerConsumption>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="GravshipShieldGenerator"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
         <value>
-            <basePowerConsumption>7000</basePowerConsumption>
+            <basePowerConsumption>5000</basePowerConsumption>
         </value>
     </Operation>
 
@@ -312,6 +312,36 @@
             <thingCategories>
                 <li>BuildingsMisc</li>
             </thingCategories>
+        </value>
+    </Operation>
+    
+    <!--Fuel-->
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="ChemfuelTank"]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+        <value>
+            <fuelCapacity>300</fuelCapacity>
+            <initialConfigurableTargetFuelLevel>300</initialConfigurableTargetFuelLevel>
+            <fuelFilter DeepReplace="True">
+                <thingDefs>
+                    <li>OxidizedChemfuel</li>
+                </thingDefs>
+            </fuelFilter>
+            <fuelLabel>Oxidized Chemfuel</fuelLabel>
+            <fuelGizmoLabel>Oxidized Chemfuel</fuelGizmoLabel>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="LargeChemfuelTank"]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+        <value>
+            <fuelFilter DeepReplace="True">
+                <thingDefs>
+                    <li>OxidizedChemfuel</li>
+                </thingDefs>
+            </fuelFilter>
+            <fuelLabel>Oxidized Chemfuel</fuelLabel>
+            <fuelGizmoLabel>Oxidized Chemfuel</fuelGizmoLabel>
         </value>
     </Operation>
 </Patch>
