@@ -35,6 +35,14 @@
     </value>
   </Operation>
 
+  <!-- HSK clay bricks use the Bricks stuff category rather than Stony. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofShingle_Buildable"]/stuffCategories</xpath>
+    <value>
+      <li>Bricks</li>
+    </value>
+  </Operation>
+
   <!-- Preserve the old HSK transparent- and solar-roof material scale. -->
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofGlass_Buildable"]</xpath>
