@@ -670,6 +670,7 @@
 		</placeWorkers>
 		<comps>
 			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>-1500</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 			</li>
@@ -891,6 +892,7 @@
 		</costList>
 		<comps>
 			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>1</basePowerConsumption>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<soundAmbientProducingPower>PlasmaTurbine</soundAmbientProducingPower>
