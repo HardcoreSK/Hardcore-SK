@@ -12,9 +12,12 @@
 				<li Class="PatchOperationRemove">
 					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/statBases</xpath>
 				</li>
-				<!-- <li Class="PatchOperationRemove">
+				<li Class="PatchOperationRemove">
 					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
-				</li> -->
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/AlienRace.RaceSettings[defName="RK_Race_Setting"]/universalBodyAddons</xpath>
+				</li>
 			</operations>
 		</match>
 	</Operation>

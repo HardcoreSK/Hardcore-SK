@@ -7,17 +7,23 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/AlienRace.RaceSettings[defName="RK_Race_Setting"]/universalBodyAddons/li[path="Things/Ratkin/BodyAddon/RK_Texture_EarLeft"]/conditions/Race</xpath>
-					<value>
-						<Gene>RK_Gene_LargeEars</Gene>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/AlienRace.RaceSettings[defName="RK_Race_Setting"]/universalBodyAddons/li[path="Things/Ratkin/BodyAddon/RK_Texture_EarLeft"]/conditions/Race</xpath>
+						<value>
+							<Gene>RK_Gene_LargeEars</Gene>
+						</value>
+					</match>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/AlienRace.RaceSettings[defName="RK_Race_Setting"]/universalBodyAddons/li[path="Things/Ratkin/BodyAddon/RK_Texture_EarRight"]/conditions/Race</xpath>
-					<value>
-						<Gene>RK_Gene_LargeEars</Gene>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/AlienRace.RaceSettings[defName="RK_Race_Setting"]/universalBodyAddons/li[path="Things/Ratkin/BodyAddon/RK_Texture_EarRight"]/conditions/Race</xpath>
+						<value>
+							<Gene>RK_Gene_LargeEars</Gene>
+						</value>
+					</match>
 				</li>
 			</operations>
 		</match>
