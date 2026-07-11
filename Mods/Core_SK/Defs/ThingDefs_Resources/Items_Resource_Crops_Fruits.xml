@@ -53,13 +53,13 @@
 		<defName>RawWatermelon</defName>
 		<label>Watermelon</label>
 		<description>A powerful creeping vine with carved leaves that produces giant sweet berries. Despite the botanical classification, colonists continue to argue whether it is a fruit, a vegetable, or a "huge strange raspberry."</description>
-		<possessionCount>10</possessionCount>
+		<possessionCount>1</possessionCount>
 		<graphicData>
 			<texPath>Things/Fruits/watermelon</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>6</MarketValue>
-			<Nutrition>0.15</Nutrition>
+			<Nutrition>0.50</Nutrition>
 		</statBases>
 		<tickerType>Rare</tickerType>
 		<thingCategories>
@@ -67,12 +67,12 @@
 		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Rottable">
-				<daysToRotStart>9</daysToRotStart>
+				<daysToRotStart>18</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
 		<ingestible>
-			<joy>0.07</joy>
+			<joy>0.1</joy>
 		</ingestible>
 	</ThingDef>
 	
