@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ScenarioDef[defName="TheGravship"]/scenario/parts/li[@Class="ScenPart_StartingThing_Defined"][thingDef="Chemfuel"]</xpath>
+		<value>
+          <thingDef>OxidizedChemfuel</thingDef>
+          <count>300</count>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ScenarioDef[defName="TheGravship"]/scenario/parts</xpath>
+		<value>
+            <li Class="ScenPart_StartingResearch">
+                <def>StartingResearch</def>
+                <project>OrbitalTech</project>
+            </li>
+            <li Class="ScenPart_StartingResearch">
+                <def>StartingResearch</def>
+                <project>Oil_Industry_C5</project>
+            </li>
+            <li Class="ScenPart_StartingResearch">
+                <def>StartingResearch</def>
+                <project>Oil_Industry_C4</project>
+            </li>
+            <li Class="ScenPart_StartingResearch">
+                <def>StartingResearch</def>
+                <project>Oil_Industry_C3</project>
+            </li>
+            <li Class="ScenPart_StartingResearch">
+                <def>StartingResearch</def>
+                <project>Oil_Industry_C2</project>
+            </li>
+            <li Class="ScenPart_StartingResearch">
+                <def>StartingResearch</def>
+                <project>Oil_Industry_C1</project>
+            </li>
+            <li Class="ScenPart_StartingResearch">
+                <def>StartingResearch</def>
+                <project>BiofuelRefining</project>
+            </li>
+            <li Class="ScenPart_StartingResearch">
+                <def>StartingResearch</def>
+                <project>Mining_C1</project>
+            </li>
+            <li Class="ScenPart_StartingResearch">
+                <def>StartingResearch</def>
+                <project>Mining_B1</project>
+            </li>
+		</value>
+	</Operation>
+</Patch>
