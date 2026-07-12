@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <!-- Ratkin utility weapons added by the 1.6 update were still using vanilla Tool. -->
+      <li Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="RK_Axe"]</xpath>
+        <value>
+          <statBases>
+            <Bulk>5</Bulk>
+          </statBases>
+          <tools>
+            <li Class="CombatExtended.ToolCE">
+              <label>handle</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>8</power>
+              <cooldownTime>2</cooldownTime>
+              <armorPenetrationBlunt>3</armorPenetrationBlunt>
+              <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>edge</label>
+              <capacities>
+                <li>Cut</li>
+              </capacities>
+              <power>20</power>
+              <cooldownTime>2.5</cooldownTime>
+              <armorPenetrationSharp>7</armorPenetrationSharp>
+              <armorPenetrationBlunt>2</armorPenetrationBlunt>
+              <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+            </li>
+          </tools>
+        </value>
+      </li>
+      <li Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="RK_Cleaver"]</xpath>
+        <value>
+          <statBases>
+            <Bulk>2.5</Bulk>
+          </statBases>
+          <tools>
+            <li Class="CombatExtended.ToolCE">
+              <label>handle</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>5</power>
+              <cooldownTime>2</cooldownTime>
+              <armorPenetrationBlunt>2</armorPenetrationBlunt>
+              <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>edge</label>
+              <capacities>
+                <li>Cut</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>1.8</cooldownTime>
+              <armorPenetrationSharp>5</armorPenetrationSharp>
+              <armorPenetrationBlunt>1</armorPenetrationBlunt>
+              <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+            </li>
+          </tools>
+        </value>
+      </li>
+      <li Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="RK_Hockey"]</xpath>
+        <value>
+          <statBases>
+            <Bulk>5</Bulk>
+          </statBases>
+          <tools>
+            <li Class="CombatExtended.ToolCE">
+              <label>point</label>
+              <capacities>
+                <li>Stab</li>
+              </capacities>
+              <power>17</power>
+              <cooldownTime>2.4</cooldownTime>
+              <armorPenetrationSharp>6</armorPenetrationSharp>
+              <armorPenetrationBlunt>2</armorPenetrationBlunt>
+              <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>edge</label>
+              <capacities>
+                <li>Cut</li>
+              </capacities>
+              <power>14</power>
+              <cooldownTime>2</cooldownTime>
+              <armorPenetrationSharp>5</armorPenetrationSharp>
+              <armorPenetrationBlunt>2</armorPenetrationBlunt>
+              <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+            </li>
+          </tools>
+        </value>
+      </li>
+      <li Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="RK_Pickaxe"]</xpath>
+        <value>
+          <statBases>
+            <Bulk>5</Bulk>
+          </statBases>
+          <tools>
+            <li Class="CombatExtended.ToolCE">
+              <label>hammer</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>20</power>
+              <cooldownTime>3</cooldownTime>
+              <armorPenetrationBlunt>7</armorPenetrationBlunt>
+              <linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>point</label>
+              <capacities>
+                <li>RK_ToolCapacity_PickaxeStab</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>3</cooldownTime>
+              <armorPenetrationSharp>8</armorPenetrationSharp>
+              <armorPenetrationBlunt>3</armorPenetrationBlunt>
+              <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+              <extraMeleeDamages>
+                <li>
+                  <def>Crush</def>
+                  <amount>10</amount>
+                </li>
+              </extraMeleeDamages>
+            </li>
+          </tools>
+        </value>
+      </li>
+      <!-- Conventional ranged weapons can use CE verbs and ammunition without losing Ratkin mechanics. -->
+      <li Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="RK_Weapon_Arbalest"]</xpath>
+        <value>
+          <statBases>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.35</ShotSpread>
+            <SwayFactor>1.35</SwayFactor>
+            <Bulk>8</Bulk>
+          </statBases>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+              <hasStandardCommand>true</hasStandardCommand>
+              <defaultProjectile>Projectile_MetallicBolt</defaultProjectile>
+              <warmupTime>1.5</warmupTime>
+              <range>35</range>
+              <soundCast>Bow_Large</soundCast>
+            </li>
+          </verbs>
+          <comps>
+            <li Class="NewRatkin.CompProperties_WeaponGripType">
+              <gripTypes>
+                <li>TwoHand</li>
+              </gripTypes>
+            </li>
+            <li Class="CombatExtended.CompProperties_FireModes">
+              <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+              <magazineSize>1</magazineSize>
+              <reloadTime>1.8</reloadTime>
+              <ammoSet>AmmoSet_Bolt</ammoSet>
+            </li>
+          </comps>
+          <tools>
+            <li Class="CombatExtended.ToolCE">
+              <label>limb</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2.2</cooldownTime>
+              <armorPenetrationBlunt>4</armorPenetrationBlunt>
+              <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>arrow</label>
+              <capacities>
+                <li>Stab</li>
+              </capacities>
+              <power>16</power>
+              <cooldownTime>2</cooldownTime>
+              <armorPenetrationSharp>6</armorPenetrationSharp>
+              <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+            </li>
+          </tools>
+        </value>
+      </li>
+      <li Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="RK_Weapon_Bolter"]</xpath>
+        <value>
+          <statBases>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.25</ShotSpread>
+            <SwayFactor>1</SwayFactor>
+            <Bulk>5.5</Bulk>
+          </statBases>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+              <hasStandardCommand>true</hasStandardCommand>
+              <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
+              <warmupTime>0.5</warmupTime>
+              <range>24</range>
+              <soundCast>RK_Sound_BolterFire</soundCast>
+              <soundCastTail>GunTail_Heavy</soundCastTail>
+              <muzzleFlashScale>18</muzzleFlashScale>
+              <label>bolter fire</label>
+            </li>
+          </verbs>
+          <comps>
+            <li Class="NewRatkin.CompProperties_WeaponGripType">
+              <gripTypes>
+                <li>OneHand</li>
+              </gripTypes>
+            </li>
+            <li Class="CombatExtended.CompProperties_FireModes" />
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+              <magazineSize>6</magazineSize>
+              <reloadTime>2.5</reloadTime>
+              <ammoSet>AmmoSet_50BMG</ammoSet>
+            </li>
+          </comps>
+          <tools>
+            <li Class="CombatExtended.ToolCE">
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>2</cooldownTime>
+              <armorPenetrationBlunt>3</armorPenetrationBlunt>
+              <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>2</cooldownTime>
+              <armorPenetrationBlunt>3</armorPenetrationBlunt>
+              <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+            </li>
+          </tools>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
