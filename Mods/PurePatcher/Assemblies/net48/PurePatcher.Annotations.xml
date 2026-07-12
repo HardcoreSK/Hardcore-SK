@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PurePatcher.Annotations</name>
+    </assembly>
+    <members>
+        <member name="T:PurePatcher.Annotations.AddFieldAttribute">
+            <summary>
+            Marks the accessor of a requested new field
+            </summary>
+        </member>
+        <member name="T:PurePatcher.Annotations.BindComponentAttribute">
+            <summary>
+            Marks an AddField accessor for automatic binding to a component from the target class.
+            </summary>
+        </member>
+        <member name="T:PurePatcher.Annotations.DefaultValueAttribute">
+            <summary>
+            Specifies the default value of an AddField accessor.
+            </summary>
+        </member>
+        <member name="M:PurePatcher.Annotations.DefaultValueAttribute.#ctor(System.Object)">
+            <summary>
+            Creates a default value annotation for an AddField accessor.
+            </summary>
+            <param name="defaultValue">The value assigned to the generated field during construction.</param>
+        </member>
+        <member name="T:PurePatcher.Annotations.DisabledIfModActiveAttribute">
+            <summary>
+            Disables a ReplaceMethod patch when any listed RimWorld mod packageId is active.
+            </summary>
+        </member>
+        <member name="M:PurePatcher.Annotations.DisabledIfModActiveAttribute.#ctor(System.String[])">
+            <summary>
+            Creates a mod-activity condition for a ReplaceMethod patch.
+            </summary>
+            <param name="packageIds">The RimWorld mod packageIds that disable the patch when active.</param>
+        </member>
+        <member name="T:PurePatcher.Annotations.InitValueAttribute">
+            <summary>
+            Specifies a method supplying the initial value of an AddField accessor.
+            The method has to be in the same class as the AddField accessor.
+            </summary>
+        </member>
+        <member name="M:PurePatcher.Annotations.InitValueAttribute.#ctor(System.String)">
+            <summary>
+            Creates an initializer annotation for an AddField accessor.
+            </summary>
+            <param name="initializerMethod">The name of the method that supplies the initial field value.</param>
+        </member>
+        <member name="T:PurePatcher.Annotations.ReplaceMethodAttribute">
+            <summary>
+            Replaces the target method body with this method body.
+            </summary>
+        </member>
+        <member name="M:PurePatcher.Annotations.ReplaceMethodAttribute.#ctor(System.Type,System.String)">
+            <summary>
+            Creates a method replacement annotation.
+            </summary>
+            <param name="targetType">The type that declares the target method.</param>
+            <param name="targetMethodName">The name of the target method.</param>
+        </member>
+        <member name="T:PurePatcher.Annotations.RewriteAssemblyAttribute">
+            <summary>
+            Marks a method that rewrites the target assembly module.
+            </summary>
+        </member>
+    </members>
+</doc>
