@@ -78,8 +78,8 @@
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>50</basePowerConsumption>
 			</li>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<researchPrerequisites>
 			<li>Oil_Industry_C2</li>
@@ -114,14 +114,13 @@
 			</defaultStorageSettings>
 		</building>
 		<comps>
-			<li Class="Rimefeller.CompProperties_Siphon">
-			</li>
+			<li Class="Rimefeller.CompProperties_Siphon" />
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>50</basePowerConsumption>
 			</li>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<researchPrerequisites>
 			<li>Oil_Industry_C2</li>
@@ -142,6 +141,7 @@
 		<rotatable>false</rotatable>
 		<tickerType>Never</tickerType>
 		<building>
+			<blueprintClass>Blueprint_Storage</blueprintClass>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings>
 				<filter>
@@ -232,15 +232,15 @@
 		<rotatable>false</rotatable>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
-      <WorkToBuild>20000</WorkToBuild>
+			<WorkToBuild>20000</WorkToBuild>
 			<Flammability>4.0</Flammability>
 			<Beauty>-12</Beauty>
 			<Cleanliness>-100</Cleanliness>
 			<Mass>40</Mass>
 		</statBases>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
 
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
@@ -296,7 +296,7 @@
 				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>6</heatPerSecond>
 			</li>
-			<li Class="Rimefeller.CompProperties_Refinery">       
+			<li Class="Rimefeller.CompProperties_Refinery">
 				<compClass>Rimefeller.CompRefineryPolymer</compClass>
 				<Product>Polymers</Product>
 				<StackSize>20</StackSize>
