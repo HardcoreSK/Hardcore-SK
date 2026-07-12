@@ -36,4 +36,14 @@
     <!-- battery only mode -->
     <Fluffy.BackupPower.RunOnBatteriesOnly.Label>Run on batteries</Fluffy.BackupPower.RunOnBatteriesOnly.Label>
     <Fluffy.BackupPower.RunOnBatteriesOnly.Desc>If enabled, the backup power control unit will turn off when batteries are sufficiently full. \nIf disabled, the backup power control unit will only turn off when batteries are sufficiently full AND the current power production exceeds demand.</Fluffy.BackupPower.RunOnBatteriesOnly.Desc>
+
+
+    <Fluffy.BackupPower.ForceFlickOff.Label>DEV: Force flick off</Fluffy.BackupPower.ForceFlickOff.Label>
+    <Fluffy.BackupPower.ForceFlickOff.Desc>DEV: Force the generator to flick off, regardless of the current power situation.</Fluffy.BackupPower.ForceFlickOff.Desc>
+    <Fluffy.BackupPower.ForceFlickOn.Label>DEV: Force flick on</Fluffy.BackupPower.ForceFlickOn.Label>
+    <Fluffy.BackupPower.ForceFlickOn.Desc>DEV: Force the generator to flick on, regardless of the current power situation.</Fluffy.BackupPower.ForceFlickOn.Desc>
+
+    <Fluffy.BackupPower.BatteryBackupEnabled.Label>Enabled</Fluffy.BackupPower.BatteryBackupEnabled.Label>
+    <Fluffy.BackupPower.BatteryBackupEnabled.Desc>Enable backup power for this building. If disabled, the backup power box will not enable or disable the generator, regardless of the current power situation.</Fluffy.BackupPower.BatteryBackupEnabled.Desc>
+
 </LanguageData>

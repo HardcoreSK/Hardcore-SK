@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnTableGrouped.CompatibilityInfoDef>
+		<defName>fluffy_worktab</defName>
+		<packageId>arof.fluffy.worktab.continued</packageId>
+		<modName>Arof's fork of Fluffy's Work Tab</modName>
+		<tables>
+			<li>
+				<name>Work</name>
+				<compatibility>Issues</compatibility>
+				<defaultGrouping>faction</defaultGrouping>
+				<hint>Arof's fork of Fluffy's WorkTab has modified packageId. It can and will cause compatibility issues for other mods. Please use any other fork. (Yes, I'm annoyed by the fact I had to modify my mod)</hint>
+				<issues>Issues related to this version of Work Tab:
+- Window size doesn't updates group expand/collapse
+- Fix for invalid table's inner size doesn't work in this version</issues>
+				<config>
+					<allowHScroll>true</allowHScroll>
+				</config>
+				<settingsWorker>PawnTableGrouped.WorkTabSettingsWorker</settingsWorker>
+			</li>
+		</tables>
+	</PawnTableGrouped.CompatibilityInfoDef>
+</Defs>
