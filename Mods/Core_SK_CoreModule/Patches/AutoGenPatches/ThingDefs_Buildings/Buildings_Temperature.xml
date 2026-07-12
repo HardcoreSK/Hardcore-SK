@@ -257,7 +257,7 @@
       <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
       <placeWorkers>
         <li>PlaceWorker_Vent</li>
-        <li>SK.PlaceWorker_OnlyOnThing</li>
+        <li>SK.PlaceWorker_OnlyOnWall</li>
       </placeWorkers>
       <modExtensions>
         <li Class="SK.WallAttachmentExtension"/>
@@ -275,13 +275,6 @@
         </li>
         <li Class="SK.CompProperties_RestrictedPlacement">
           <compClass>SK.CompRestrictedPlacement</compClass>
-          <thingDefs>
-            <li>Wall</li>
-            <li>ClutterSilverWall</li>
-            <li>UtilityWall</li>
-            <li>ClutterUWallLight</li>
-            <li MayRequire="ludeon.rimworld.odyssey">GravshipHull</li>
-          </thingDefs>
         </li>
       </comps>
       <researchPrerequisites>
