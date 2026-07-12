@@ -132,6 +132,8 @@
 		<requiredCapacity>GunlanceShell_Normal</requiredCapacity>
 		<verb Class="NewRatkin.VerbProperties_Gunlance">
 			<verbClass>NewRatkin.Verb_GunlanceFiring</verbClass>
+			<!-- CE stat workers require a standard meleeDamageDef on every tool maneuver. -->
+			<meleeDamageDef>Bomb</meleeDamageDef>
 			<damageDef>Bomb</damageDef>
 			<range>1.7</range>
 			<angle>50</angle>

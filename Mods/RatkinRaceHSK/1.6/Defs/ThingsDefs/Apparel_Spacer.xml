@@ -18,9 +18,10 @@
 			<MaxHitPoints>120</MaxHitPoints>
 			<Mass>0.9</Mass>
 			<Flammability>0.4</Flammability>
-			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<!-- Combat Extended vacsuit armor scale. -->
+			<ArmorRating_Sharp>3.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>7</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.66</ArmorRating_Heat>
 			<Insulation_Cold>10</Insulation_Cold>
 			<Insulation_Heat>20</Insulation_Heat>
 			<EquipDelay>4</EquipDelay>
@@ -101,9 +102,10 @@
 			<MaxHitPoints>180</MaxHitPoints>
 			<Mass>7.2</Mass>
 			<Flammability>0.4</Flammability>
-			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<!-- Combat Extended vacsuit armor scale. -->
+			<ArmorRating_Sharp>3.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>7</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.66</ArmorRating_Heat>
 			<Insulation_Cold>70</Insulation_Cold>
 			<Insulation_Heat>30</Insulation_Heat>
 			<EquipDelay>14</EquipDelay>
@@ -130,7 +132,7 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/Vacsuit/RK_Apparel_Vacsuit</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			<layers>
+			<layers Inherit="False">
 				<li>Middle</li>
 				<li>Shell</li>
 				<li>BackPack</li>
@@ -372,9 +374,10 @@
 			<WorkToMake>75000</WorkToMake>
 			<MaxHitPoints>400</MaxHitPoints>
 			<Mass>9</Mass>
-			<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.8</ArmorRating_Heat>
+			<!-- Combat Extended cataphract armor scale. -->
+			<ArmorRating_Sharp>17</ArmorRating_Sharp>
+			<ArmorRating_Blunt>47</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.14</ArmorRating_Heat>
 			<Insulation_Cold>70</Insulation_Cold>
 			<Insulation_Heat>70</Insulation_Heat>
 			<EquipDelay>10</EquipDelay>
@@ -396,7 +399,7 @@
 		<apparel>
 			<wornGraphicPath>Apparel/SpaceArmor/RK_Apparel_SpaceArmor</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			<layers>
+			<layers Inherit="False">
 				<li>Middle</li>
 				<li>Shell</li>
 				<li>BackPack</li>
@@ -432,9 +435,10 @@
 			<MaxHitPoints>180</MaxHitPoints>
 			<Mass>1.2</Mass>
 			<Flammability>0.1</Flammability>
-			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.7</ArmorRating_Heat>
+			<!-- Combat Extended cataphract helmet armor scale. -->
+			<ArmorRating_Sharp>17.21</ArmorRating_Sharp>
+			<ArmorRating_Blunt>46.7</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.07</ArmorRating_Heat>
 			<Insulation_Cold>10</Insulation_Cold>
 			<Insulation_Heat>50</Insulation_Heat>
 			<EquipDelay>6</EquipDelay>
