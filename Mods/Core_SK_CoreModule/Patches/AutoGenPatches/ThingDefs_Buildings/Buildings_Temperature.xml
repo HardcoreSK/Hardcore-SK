@@ -237,7 +237,10 @@
           <cornerBR>Damage/Corner</cornerBR>
         </damageData>
       </graphicData>
-      <altitudeLayer>PawnUnused</altitudeLayer>
+      <altitudeLayer>BuildingOnTop</altitudeLayer>
+      <passability>PassThroughOnly</passability>
+      <blockLight>false</blockLight>
+      <castEdgeShadows>false</castEdgeShadows>
       <fillPercent>1</fillPercent>
       <statBases Merge="true">
         <WorkToBuild>700</WorkToBuild>
@@ -256,6 +259,9 @@
         <li>PlaceWorker_Vent</li>
         <li>SK.PlaceWorker_OnlyOnThing</li>
       </placeWorkers>
+      <modExtensions>
+        <li Class="SK.WallAttachmentExtension"/>
+      </modExtensions>
       <building>
         <canPlaceOverWall>true</canPlaceOverWall>
         <canExchangeVacuum>true</canExchangeVacuum>

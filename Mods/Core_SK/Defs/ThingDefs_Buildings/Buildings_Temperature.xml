@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 	<!--
@@ -876,14 +876,14 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		<altitudeLayer>PawnUnused</altitudeLayer>
-		<passability>Impassable</passability>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
 		<fillPercent>0.99</fillPercent>
 		<coversFloor>true</coversFloor>
-		<blockLight>true</blockLight>
+		<blockLight>false</blockLight>
 		<canOverlapZones>false</canOverlapZones>
 		<blockWeather>true</blockWeather>
-		<castEdgeShadows>true</castEdgeShadows>
+		<castEdgeShadows>false</castEdgeShadows>
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>
 		<clearBuildingArea>false</clearBuildingArea>
 		<statBases>
@@ -908,9 +908,12 @@
 			<li>SK.PlaceWorker_OnlyOnThing</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<modExtensions>
+			<li Class="SK.WallAttachmentExtension"/>
+		</modExtensions>
 		<building>
 			<canPlaceOverWall>true</canPlaceOverWall>
-			<isEdifice>false</isEdifice>
+			<isEdifice>true</isEdifice>
 		</building>
 		<comps>
 			<li Class="CompProperties_Flickable">
