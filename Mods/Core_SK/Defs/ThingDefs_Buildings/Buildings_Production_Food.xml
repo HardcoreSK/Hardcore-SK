@@ -650,6 +650,7 @@
             <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
             <uninstallWork>750</uninstallWork>
         </building>
+        <tickerType>Normal</tickerType>
         <comps>
             <li Class="CompProperties_AffectedByFacilities">
                 <linkableFacilities>
@@ -661,9 +662,6 @@
                 <shortCircuitInRain>true</shortCircuitInRain>
                 <soundPowerOn>Power_OnSmall</soundPowerOn>
                 <soundPowerOff>Power_OffSmall</soundPowerOff>
-            </li>
-            <li Class="SK.CompProperties_LowIdleDraw">
-                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
             <li Class="CompProperties_Flickable"/>
