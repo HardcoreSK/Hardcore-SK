@@ -31,4 +31,12 @@
     <casualInterruptible>false</casualInterruptible>
     <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
   </JobDef>
+
+  <JobDef>
+    <defName>SolarWeb-Stratum-SmoothRoof</defName>
+    <driverClass>SolarWeb.Stratum.AI.JobDrivers.SmoothRoof</driverClass>
+    <reportString>smoothing roof.</reportString>
+    <casualInterruptible>true</casualInterruptible>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
 </Defs>

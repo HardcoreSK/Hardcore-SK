@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="LampBase">
+    <defName>SolarWeb-Stratum-SunLamp_Hanging</defName>
+    <label>hanging sun lamp</label>
+    <description>An industrial lamp which lights an area brightly enough to grow crops, but consumes a huge amount of power. Designed to hang from the underside of a roof ceiling.</description>
+    <thingClass>Building_SunLamp</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/LampSun</texPath>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <blockWind>true</blockWind>
+    <tickerType>Rare</tickerType>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <WorkToBuild>330</WorkToBuild>
+      <Mass>4.5</Mass>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+    </costList>
+    <uiOrder>2995</uiOrder>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>7.0</overlightRadius>
+        <glowRadius>14</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>3000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Schedule">
+        <startTime>0.25</startTime>
+        <endTime>0.8</endTime>
+        <offMessage>Off for plant resting period</offMessage>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>3</heatPerSecond>
+      </li>
+    </comps>
+    <specialDisplayRadius>5.8</specialDisplayRadius>
+    <placeWorkers Inherit="false">
+      <li>SolarWeb.Stratum.AI.PlaceWorkers.OnRoof</li>
+      <li>PlaceWorker_GlowRadius</li>
+    </placeWorkers>
+    <modExtensions>
+      <li Class="SolarWeb.Stratum.DefModExtensions.RoofBuilding">
+        <attachmentType>Hanging</attachmentType>
+        <minifyOnRoofLoss>true</minifyOnRoofLoss>
+        <destroyOnRoofLoss>false</destroyOnRoofLoss>
+      </li>
+    </modExtensions>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SolarWeb-Stratum-FireSprinkler</defName>
+    <label>hanging fire sprinkler</label>
+    <description>An automated fire sprinkler system that hangs from the ceiling. When fire is detected, it discharges firefoam to extinguish them. Uses chemfuel to spray the foam and must be recharged after going off.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/FirefoamPopper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Mass>2.5</Mass>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelCapacity>30.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelLabel>Chemfuel</fuelLabel>
+        <fuelGizmoLabel>Chemfuel</fuelGizmoLabel>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <autoRefuelPercent>1</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <canEjectFuel>false</canEjectFuel>
+        <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>0</explosiveRadius>
+        <explosiveExpandPerFuel>0.8333</explosiveExpandPerFuel>
+        <explosiveDamageType>Extinguish</explosiveDamageType>
+        <startWickHitPointsPercent>-1</startWickHitPointsPercent>
+        <chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+        <postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        <explosionSound>Explosion_FirefoamPopper</explosionSound>
+        <wickTicks>0</wickTicks>
+        <destroyThingOnExplosionSize>9999</destroyThingOnExplosionSize>
+      </li>
+      <li Class="CompProperties_ProximityFuse">
+        <target>Fire</target>
+        <radius>5</radius>
+      </li>
+    </comps>
+    <tickerType>Normal</tickerType>
+    <designationCategory>Misc</designationCategory>
+    <uiOrder>2850</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <placeWorkers>
+      <li>SolarWeb.Stratum.AI.PlaceWorkers.OnRoof</li>
+    </placeWorkers>
+    <modExtensions>
+      <li Class="SolarWeb.Stratum.DefModExtensions.RoofBuilding">
+        <attachmentType>Hanging</attachmentType>
+        <minifyOnRoofLoss>true</minifyOnRoofLoss>
+        <destroyOnRoofLoss>false</destroyOnRoofLoss>
+      </li>
+    </modExtensions>
+    <researchPrerequisites>
+      <li>Firefoam</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="LampBase">
+    <defName>SolarWeb-Stratum-LEDLight_Hanging</defName>
+    <label>hanging LED lamp</label>
+    <description>A low-profile lighting fixture suspended from the ceiling.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/WallLamp/WallLamp</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Furniture/WallLamp/WallLamp_MenuIcon</uiIconPath>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <terrainAffordanceNeeded IsNull="True" />
+    <pathCost>0</pathCost>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <WorkToBuild>330</WorkToBuild>
+      <MaxHitPoints>35</MaxHitPoints>
+      <Mass>2</Mass>
+    </statBases>
+    <costList>
+      <Steel>15</Steel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>30</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>11</glowRadius>
+        <glowColor>(214,148,94,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+    <designationCategory>Furniture</designationCategory>
+    <uiOrder>2852</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <placeWorkers>
+      <li>SolarWeb.Stratum.AI.PlaceWorkers.OnRoof</li>
+    </placeWorkers>
+    <modExtensions>
+      <li Class="SolarWeb.Stratum.DefModExtensions.RoofBuilding">
+        <attachmentType>Hanging</attachmentType>
+        <minifyOnRoofLoss>true</minifyOnRoofLoss>
+        <destroyOnRoofLoss>false</destroyOnRoofLoss>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SolarWeb-Stratum-PASpeaker_Hanging</defName>
+    <label>hanging speaker</label>
+    <description>A small speaker suspended from the ceiling. Receives audio feeds from a powered PA Transmitter console on the same power grid and broadcasts transmissions to nearby colonists.</description>
+    <thingClass>SolarWeb.Stratum.Things.BroadcastSpeaker</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/PassiveCooler</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.5,1)</drawSize>
+      <color>(55, 55, 55)</color>
+    </graphicData>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <tickerType>Rare</tickerType>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <WorkToBuild>400</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>3</Mass>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <designationCategory>Misc</designationCategory>
+    <uiOrder>2854</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <placeWorkers>
+      <li>SolarWeb.Stratum.AI.PlaceWorkers.OnRoof</li>
+    </placeWorkers>
+    <modExtensions>
+      <li Class="SolarWeb.Stratum.DefModExtensions.RoofBuilding">
+        <attachmentType>Hanging</attachmentType>
+        <minifyOnRoofLoss>true</minifyOnRoofLoss>
+        <destroyOnRoofLoss>false</destroyOnRoofLoss>
+      </li>
+    </modExtensions>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SolarWeb-Stratum-PATransmitter</defName>
+    <label>broadcaster</label>
+    <description>A console used to broadcast audio programs to all speakers connected on the same power grid.</description>
+    <thingClass>SolarWeb.Stratum.Things.BroadcastTransmitter</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientCommsConsole</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2, 1)</drawSize>
+    </graphicData>
+    <size>(2,1)</size>
+    <rotatable>true</rotatable>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <tickerType>Rare</tickerType>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>5.5</Mass>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <Plasteel>10</Plasteel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+    <designationCategory>Misc</designationCategory>
+    <uiOrder>2856</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SolarWeb-Stratum-CeilingFan</defName>
+    <label>ceiling fan</label>
+    <description>A powered, ceiling-mounted fan that circulates air, raising the comfortable temperature range of nearby pawns to make hot rooms more tolerable.</description>
+    <thingClass>SolarWeb.Stratum.Things.CeilingFan</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientTankTrap/AncientTankTrapB</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <tickerType>Rare</tickerType>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>0.5</Flammability>
+      <Mass>3.0</Mass>
+    </statBases>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>15</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <uiOrder>2860</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <placeWorkers>
+      <li>SolarWeb.Stratum.AI.PlaceWorkers.OnRoof</li>
+    </placeWorkers>
+    <modExtensions>
+      <li Class="SolarWeb.Stratum.DefModExtensions.RoofBuilding">
+        <attachmentType>Hanging</attachmentType>
+        <minifyOnRoofLoss>true</minifyOnRoofLoss>
+        <destroyOnRoofLoss>false</destroyOnRoofLoss>
+      </li>
+    </modExtensions>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SolarWeb-Stratum-SurgicalSpotlight</defName>
+    <label>surgical spotlight</label>
+    <description>A powered, high-intensity, ceiling-mounted spotlight that projects a focused beam of light, making it easier for surgeons to see their work.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/WallLamp/WallLamp</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <tickerType>Never</tickerType>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Flammability>0.5</Flammability>
+      <Mass>2.5</Mass>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>40</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <overlightRadius>1</overlightRadius>
+        <glowColor>(255,255,255,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <SurgerySuccessChanceFactor>0.05</SurgerySuccessChanceFactor>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+      </li>
+    </comps>
+    <designationCategory>Misc</designationCategory>
+    <uiOrder>2862</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <placeWorkers>
+      <li>SolarWeb.Stratum.AI.PlaceWorkers.OnRoof</li>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <modExtensions>
+      <li Class="SolarWeb.Stratum.DefModExtensions.RoofBuilding">
+        <attachmentType>Hanging</attachmentType>
+        <minifyOnRoofLoss>true</minifyOnRoofLoss>
+        <destroyOnRoofLoss>false</destroyOnRoofLoss>
+      </li>
+    </modExtensions>
+    <researchPrerequisites>
+      <li>HospitalBed</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SolarWeb-Stratum-AeroponicsMister_Hanging</defName>
+    <label>aeroponics mister</label>
+    <description>A powered, ceiling-mounted automated mister designed for agricultural use. Periodically releases a fine mist of nutrient-enriched water, slightly boosting the growth rate of nearby plants.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientDisplayBank_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.5,1)</drawSize>
+    </graphicData>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <tickerType>Rare</tickerType>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>0.5</Flammability>
+      <Mass>3.0</Mass>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>30</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li>
+        <compClass>SolarWeb.Stratum.ThingComps.GrowthBooster</compClass>
+      </li>
+    </comps>
+    <designationCategory>Production</designationCategory>
+    <uiOrder>2864</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <placeWorkers>
+      <li>SolarWeb.Stratum.AI.PlaceWorkers.OnRoof</li>
+    </placeWorkers>
+    <modExtensions>
+      <li Class="SolarWeb.Stratum.DefModExtensions.RoofBuilding">
+        <attachmentType>Hanging</attachmentType>
+        <minifyOnRoofLoss>true</minifyOnRoofLoss>
+        <destroyOnRoofLoss>false</destroyOnRoofLoss>
+      </li>
+      <li Class="SolarWeb.Stratum.DefModExtensions.GrowthBooster">
+        <growthRateFactor>1.05</growthRateFactor>
+        <radius>2.9</radius>
+        <emitMist>true</emitMist>
+      </li>
+    </modExtensions>
+    <researchPrerequisites>
+      <li>Hydroponics</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

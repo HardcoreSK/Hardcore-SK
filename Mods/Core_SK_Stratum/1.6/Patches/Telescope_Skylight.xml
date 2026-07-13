@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Telescope"]/placeWorkers/li[text()="PlaceWorker_NotUnderRoof"]</xpath>
+    <value>
+      <li>SolarWeb.Stratum.PlaceWorkers.NotUnderRoofExceptSkylight</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Telescope"]/canBeUsedUnderRoof</xpath>
+    <value>
+      <canBeUsedUnderRoof>true</canBeUsedUnderRoof>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/JoyGiverDef[defName="UseTelescope"]/giverClass</xpath>
+    <value>
+      <giverClass>SolarWeb.Stratum.JoyGivers.UseTelescope</giverClass>
+    </value>
+  </Operation>
+</Patch>

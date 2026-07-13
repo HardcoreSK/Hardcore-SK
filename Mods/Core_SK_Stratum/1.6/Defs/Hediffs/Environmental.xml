@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>SolarWeb-Stratum-CeilingFanBreeze</defName>
+    <label>ceiling fan breeze</label>
+    <description>A cool breeze from a ceiling fan makes the heat more tolerable.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears" />
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <ComfyTemperatureMax>5</ComfyTemperatureMax>
+          <ComfyTemperatureMin>5</ComfyTemperatureMin>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

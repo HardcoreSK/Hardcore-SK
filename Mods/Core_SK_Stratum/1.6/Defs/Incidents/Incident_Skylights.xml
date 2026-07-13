@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <IncidentDef>
+    <defName>SolarWeb_Stratum_SkylightCoating</defName>
+    <label>skylight coating</label>
+    <category>ThreatSmall</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>SolarWeb.Stratum.AI.Incidents.SkylightDeposit</workerClass>
+    <baseChance>1.0</baseChance>
+    <requireColonistsPresent>true</requireColonistsPresent>
+  </IncidentDef>
+</Defs>

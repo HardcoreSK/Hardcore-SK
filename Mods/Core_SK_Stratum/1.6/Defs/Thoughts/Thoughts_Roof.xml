@@ -48,4 +48,18 @@
     </stages>
   </ThoughtDef>
 
+  <ThoughtDef>
+    <defName>SolarWeb-Stratum-PA_Calming_Thought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>SolarWeb-Stratum-PA_Calming_Hediff</hediff>
+    <stages>
+      <li>
+        <label>calming broadcast</label>
+        <description>The speaker is playing very soothing audio. I feel a bit more at ease.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
 </Defs>

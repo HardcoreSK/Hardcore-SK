@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li="VitalsMonitor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+    <value>
+      <li>SolarWeb-Stratum-SurgicalSpotlight</li>
+    </value>
+  </Operation>
+</Patch>

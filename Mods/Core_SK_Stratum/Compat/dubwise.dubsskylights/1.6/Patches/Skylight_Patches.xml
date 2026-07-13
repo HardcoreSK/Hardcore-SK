@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="BasedSkyLight"]/description</xpath>
+    <value>
+      <description>A structural frame placed underneath an existing skylight panel. It reinforces the glass structure against impacts and provides double-pane insulation to reduce heat loss.</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SkyLightA"]/label</xpath>
+    <value>
+      <label>skylight frame</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SkyLightD"]/label</xpath>
+    <value>
+      <label>skylight frame 2x2</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SkyLightB"]/label</xpath>
+    <value>
+      <label>skylight frame 3x3</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SkyLightC"]/label</xpath>
+    <value>
+      <label>skylight frame 1x4</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SkyLightA"]/costList</xpath>
+    <value>
+      <costList>
+        <Steel>15</Steel>
+        <GlassPane>1</GlassPane>
+      </costList>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SkyLightD"]/costList</xpath>
+    <value>
+      <costList>
+        <Steel>30</Steel>
+        <GlassPane>2</GlassPane>
+      </costList>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SkyLightB"]/costList</xpath>
+    <value>
+      <costList>
+        <Steel>45</Steel>
+        <GlassPane>3</GlassPane>
+      </costList>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SkyLightC"]/costList</xpath>
+    <value>
+      <costList>
+        <Steel>30</Steel>
+        <GlassPane>2</GlassPane>
+      </costList>
+    </value>
+  </Operation>
+</Patch>

@@ -41,6 +41,7 @@
           <color>(0.4, 0.45, 0.5)</color>
         </graphicData>
         <designationCategory>SolarWeb-Stratum-Roofs</designationCategory>
+        <allowRooftopAttachments>false</allowRooftopAttachments>
       </li>
       <li Class="SolarWeb.Stratum.DefModExtensions.ActiveRadiatorRoofExtension">
         <powerDrawActive>20</powerDrawActive>
@@ -111,7 +112,7 @@
         <defaultTargetTemperature>21</defaultTargetTemperature>
       </li>
     </comps>
-    <designationCategory>SolarWeb-Stratum-Roofs</designationCategory>
+    <designationCategory>Temperature</designationCategory>
     <uiOrder>2160</uiOrder>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <terrainAffordanceNeeded IsNull="True" />

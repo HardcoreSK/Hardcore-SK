@@ -62,4 +62,35 @@
       <li>Manipulation</li>
     </requiredCapacities>
   </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>SolarWeb-Stratum-FightRoofFires</defName>
+    <label>fight roof fires</label>
+    <giverClass>SolarWeb.Stratum.AI.WorkGivers.FightRoofFires</giverClass>
+    <workType>Firefighter</workType>
+    <emergency>true</emergency>
+    <verb>extinguish</verb>
+    <gerund>extinguishing</gerund>
+    <canBeDoneWhileDrafted>true</canBeDoneWhileDrafted>
+    <autoTakeablePriorityDrafted>20</autoTakeablePriorityDrafted>
+    <forceFleck>FeedbackExtinguish</forceFleck>
+    <directOrderable>true</directOrderable>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>SolarWeb-Stratum-SmoothRoof</defName>
+    <label>smooth stone roofs</label>
+    <giverClass>SolarWeb.Stratum.AI.WorkGivers.SmoothRoof</giverClass>
+    <workType>Construction</workType>
+    <priorityInType>93</priorityInType>
+    <verb>smooth roof</verb>
+    <gerund>smoothing roof</gerund>
+    <scanThings>false</scanThings>
+    <scanCells>true</scanCells>
+    <doesSmoothing>true</doesSmoothing>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+  </WorkGiverDef>
 </Defs>

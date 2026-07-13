@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <StatDef>
     <defName>SolarWeb-Stratum-Insulation</defName>
@@ -51,7 +51,7 @@
     <showIfUndefined>false</showIfUndefined>
     <displayPriorityInCategory>2503</displayPriorityInCategory>
   </StatDef>
-  
+
   <StatDef>
     <defName>SolarWeb-Stratum-StuffInsulationMultiplier</defName>
     <label>stuff insulation multiplier</label>
@@ -90,7 +90,7 @@
     <showIfUndefined>false</showIfUndefined>
     <displayPriorityInCategory>2506</displayPriorityInCategory>
   </StatDef>
-  
+
   <StatDef>
     <defName>SolarWeb-Stratum-StuffArmorMultiplier</defName>
     <label>stuff armor multiplier</label>
@@ -116,5 +116,18 @@
     <showIfUndefined>false</showIfUndefined>
     <displayPriorityInCategory>2508</displayPriorityInCategory>
     <formatString>{0} ticks</formatString>
+  </StatDef>
+
+  <StatDef>
+    <defName>SolarWeb-Stratum-StuffBeautyMultiplier</defName>
+    <label>stuff beauty multiplier</label>
+    <description>Multiplier applied to the beauty rating provided by the material used to build the roof.</description>
+    <alwaysHide>true</alwaysHide>
+    <category>Building</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <minValue>0</minValue>
+    <maxValue>10</maxValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <displayPriorityInCategory>2509</displayPriorityInCategory>
   </StatDef>
 </Defs>

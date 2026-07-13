@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/RoofDef[defName="RoofConstructed"]</xpath>
+    <attribute>Class</attribute>
+    <value>SolarWeb.Stratum.Defs.StratumRoofDef</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/RoofDef[defName="RoofRockThin"]</xpath>
+    <attribute>Class</attribute>
+    <value>SolarWeb.Stratum.Defs.StratumRoofDef</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/RoofDef[defName="RoofRockThick"]</xpath>
+    <attribute>Class</attribute>
+    <value>SolarWeb.Stratum.Defs.StratumRoofDef</value>
+  </Operation>
+
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/RoofDef[defName="RoofConstructed"]/label</xpath>
     <value>
@@ -40,8 +58,7 @@
         <li Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension">
           <buildableDef>SolarWeb-Stratum-RoofThinRock_Buildable</buildableDef>
           <graphicData>
-            <texPath>Roofs/worn_rock_natural_01</texPath>
-            <color>(0.48, 0.4, 0.32)</color>
+            <texPath>Roofs/WornRockThin</texPath>
             <isSeamless>true</isSeamless>
           </graphicData>
         </li>
@@ -65,8 +82,8 @@
         <li Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension">
           <buildableDef>SolarWeb-Stratum-RoofOverheadMountain_Buildable</buildableDef>
           <graphicData>
-            <texPath>Roofs/worn_rock_natural_01</texPath>
-            <color>(0.55, 0.55, 0.55)</color>
+            <texPath>Roofs/WornRockThin</texPath>
+            <color>(0.75, 0.75, 0.75)</color>
             <isSeamless>true</isSeamless>
           </graphicData>
         </li>

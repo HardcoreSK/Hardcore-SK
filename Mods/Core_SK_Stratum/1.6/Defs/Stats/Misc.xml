@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <StatDef>
+    <defName>SolarWeb-Stratum-ScanSpeed</defName>
+    <label>scan speed</label>
+    <description>The scanning speed of this scanner.</description>
+    <category>Building</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <minValue>0</minValue>
+    <maxValue>100</maxValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+    <displayPriorityInCategory>2510</displayPriorityInCategory>
+  </StatDef>
+
+  <StatDef>
+    <defName>SolarWeb-Stratum-ScanSpeedOffset</defName>
+    <label>scan speed offset</label>
+    <description>Offset applied to the scanning speed of scanners.</description>
+    <category>Building</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <minValue>0</minValue>
+    <maxValue>100</maxValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+    <displayPriorityInCategory>2510</displayPriorityInCategory>
+  </StatDef>
+</Defs>
