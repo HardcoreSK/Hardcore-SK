@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Agave"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousPlantBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Agave"]</xpath>
+    <value>
+      <statBases>
+        <MaxHitPoints>120</MaxHitPoints>
+        <Nutrition>0.2</Nutrition>
+        <Beauty>2</Beauty>
+        <BeautyOutdoors>2</BeautyOutdoors>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Plant/PlantAgave</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.2, 0.6, 0.2)</volume>
+        </shadowData>
+      </graphicData>
+      <plant Merge="true">
+        <growDays>3</growDays>
+        <harvestYield>3</harvestYield>
+        <harvestWork>700</harvestWork>
+        <fertilityMin>0.3</fertilityMin>
+        <visualSizeRange>0.7~1.1</visualSizeRange>
+        <wildClusterWeight>53</wildClusterWeight>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Berry"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousPlantBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Berry"]</xpath>
+    <value>
+      <statBases>
+        <MaxHitPoints>120</MaxHitPoints>
+        <Nutrition>0.3</Nutrition>
+        <Beauty>3</Beauty>
+        <BeautyOutdoors>3</BeautyOutdoors>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Plant/PlantRaspberry</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.15, 0.2, 0.15)</volume>
+        </shadowData>
+      </graphicData>
+      <ingestible>
+        <preferability>NeverForNutrition</preferability>
+        <foodType>Plant</foodType>
+      </ingestible>
+      <plant Merge="true">
+        <maxMeshCount>4</maxMeshCount>
+        <leaflessGraphicPath>Things/Plant/PlantRaspberry_Leafless</leaflessGraphicPath>
+        <harvestYield>4</harvestYield>
+		<harvestWork>150</harvestWork>
+        <wildClusterRadius>4</wildClusterRadius>
+        <wildClusterWeight>55</wildClusterWeight>
+        <visualSizeRange>0.6~1.0</visualSizeRange>
+        <growDays>4.5</growDays>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Strawberry"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousPlantBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Strawberry"]</xpath>
+    <value>
+      <statBases>
+        <MaxHitPoints>120</MaxHitPoints>
+        <Nutrition>0.3</Nutrition>
+        <Beauty>4</Beauty>
+        <BeautyOutdoors>4</BeautyOutdoors>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Plant/PlantRaspberry</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.15, 0.2, 0.15)</volume>
+        </shadowData>
+      </graphicData>
+      <pathCost>30</pathCost>
+      <ingestible>
+        <preferability>NeverForNutrition</preferability>
+        <foodType>Plant</foodType>
+      </ingestible>
+      <plant Merge="true">
+        <sowResearchPrerequisites>
+          <li>Fruit_Plants_B1</li>
+        </sowResearchPrerequisites>
+        <maxMeshCount>4</maxMeshCount>
+        <leaflessGraphicPath>Things/Plant/PlantRaspberry_Leafless</leaflessGraphicPath>
+        <harvestWork>160</harvestWork>
+        <harvestYield>5</harvestYield>
+        <fertilityMin>0.5</fertilityMin>
+        <wildClusterWeight>55</wildClusterWeight>
+        <wildClusterRadius>4</wildClusterRadius>
+        <visualSizeRange>0.6~1.0</visualSizeRange>
+        <topWindExposure>0.3</topWindExposure>
+        <fertilitySensitivity>0.6</fertilitySensitivity>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_TreeCocoa"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.CropPlantDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_TreeCocoa"]</xpath>
+    <value>
+      <label>Cocoa Tree</label>
+      <description>Cocoa Trees produce seeds in pods that are called Cocoa Beans. Cocoa Beans can be refined into chocolate.</description>
+      <graphicData>
+        <texPath>Things/Plant/PlantCocoa</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <statBases Merge="true">
+        <Beauty>6</Beauty>
+        <BeautyOutdoors>6</BeautyOutdoors>
+      </statBases>
+      <plant Merge="true">
+        <sowMinSkill>9</sowMinSkill>
+        <sowTags>
+          <li>Ground</li>
+          <li>Hydroponic</li>
+        </sowTags>
+        <leaflessGraphicPath>Things/Plant/PlantCocoa_Leafless</leaflessGraphicPath>
+        <harvestedThingDef>Rawcocoa</harvestedThingDef>
+        <harvestYield>16</harvestYield>
+        <topWindExposure>0.1</topWindExposure>
+        <growDays>9</growDays>
+        <fertilitySensitivity>1.2</fertilitySensitivity>
+        <visualSizeRange>0.3~1.20</visualSizeRange>
+        <wildOrder>2</wildOrder>
+        <purpose>Food</purpose>
+      </plant>
+    </value>
+  </Operation>
+
+</Patch>
