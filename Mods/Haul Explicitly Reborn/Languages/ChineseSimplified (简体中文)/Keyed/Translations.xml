@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <!-- Command buttons -->
+    <!-- EN: Don't haul -->
+    <HaulExplicitly.SetUnhaulableLabel>禁止搬运</HaulExplicitly.SetUnhaulableLabel>
+    <!-- EN: Your colonists will leave this item where it is- - unless it is needed imminently, or you explicitly create a job to haul it somewhere. -->
+    <HaulExplicitly.SetUnhaulableDesc>你的殖民者会把这个物品留在原地——除非急需，或者你明确地命令殖民者把它带去某个地方。</HaulExplicitly.SetUnhaulableDesc>
+    <!-- EN: Haul -->
+    <HaulExplicitly.SetHaulableLabel>搬运</HaulExplicitly.SetHaulableLabel>
+    <!-- EN: Your colonists will freely haul this item to any suitable stockpile -->
+    <HaulExplicitly.SetHaulableDesc>你的殖民者可以自由地将此物品带到任何合适的储存区。</HaulExplicitly.SetHaulableDesc>
+    <!-- EN: Haul to -->
+    <HaulExplicitly.HaulExplicitlyLabel>搬到...</HaulExplicitly.HaulExplicitlyLabel>
+    <!-- EN: Designate a specific location where the item will be hauled to. From there, it will no longer be hauled until you make it haulable again. -->
+    <HaulExplicitly.HaulExplicitlyDesc>命令殖民者将物品运送到特定的位置。在你再次明确地命令殖民者搬运它之前，它将不再被搬运。</HaulExplicitly.HaulExplicitlyDesc>
+    <!-- EN: Remove from haul job -->
+    <HaulExplicitly.CancelHaulExplicitlyLabel>从搬运工作中移除</HaulExplicitly.CancelHaulExplicitlyLabel>
+    <!-- EN: The item will no longer be hauled to the destination you previously designated. -->
+    <HaulExplicitly.CancelHaulExplicitlyDesc>该物品将不再被搬运到你之前指定的目的地。</HaulExplicitly.CancelHaulExplicitlyDesc>
+    <!-- EN: Whole job -->
+    <HaulExplicitly.SelectAllHaulExplicitlyLabel>整个搬运工作</HaulExplicitly.SelectAllHaulExplicitlyLabel>
+    <!-- EN: Select every item that is a part of the same hauling job as this item. -->
+    <HaulExplicitly.SelectAllHaulExplicitlyDesc>选择与此物品属于同一搬运工作的每个项目。</HaulExplicitly.SelectAllHaulExplicitlyDesc>
+    <!-- EN: Auto Forbidden: On -->
+    <HaulExplicitly.AutoForbiddenAfterHaulExplicitlyIsOnLabel>自动禁止：开</HaulExplicitly.AutoForbiddenAfterHaulExplicitlyIsOnLabel>
+    <!-- EN: Auto Forbidden: Off -->
+    <HaulExplicitly.AutoForbiddenAfterHaulExplicitlyIsOffLabel>自动禁止：关</HaulExplicitly.AutoForbiddenAfterHaulExplicitlyIsOffLabel>
+    <!-- EN: Auto Forbidden after Haul to destination -->
+    <HaulExplicitly.AutoForbiddenAfterHaulExplicitlyDesc>搬运到目的地后自动禁止物品互动</HaulExplicitly.AutoForbiddenAfterHaulExplicitlyDesc>
+
+    <!-- Other -->
+    <!-- EN: Items to haul -->
+    <HaulExplicitly.InventoryLabel>待搬运物品</HaulExplicitly.InventoryLabel>
+    <!-- EN: Haul {{0}}x {ITEMTYPE} -->
+    <HaulExplicitly.ItemHaulSetQuantity>搬运{{0}}个{ITEMTYPE}</HaulExplicitly.ItemHaulSetQuantity>
+    
+    <!-- Notices -->
+    <!-- EN: HaulExplicitly: This item has been set don't haul -->
+    <HaulExplicitly.ThisItemHasBeenSetDontHaul>HaulExplicitly: 此物品已设置为禁止搬运。</HaulExplicitly.ThisItemHasBeenSetDontHaul>>
+
+</LanguageData>
