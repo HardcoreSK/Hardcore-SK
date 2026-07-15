@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="SK_DeciduousPlantBase">
 		<defName>Plant_Agave</defName>
 		<label>agave</label>
@@ -37,7 +37,7 @@
 			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>  
-
+-->
 	<ThingDef ParentName="SK_DeciduousPlantBase">
 		<defName>Plant_Watermelon</defName>
 		<label>watermelon plant</label>
@@ -89,7 +89,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
+	<!-- DefOverwrite
 	<ThingDef ParentName="SK_DeciduousPlantBase">
 		<defName>Plant_Berry</defName>
 		<label>berry bush</label>
@@ -131,7 +131,7 @@
 			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_DeciduousPlantBase">
 		<defName>Plant_Strawberry</defName>
 		<label>strawberry plant</label>
@@ -182,7 +182,7 @@
 			<humanFoodPlant>true</humanFoodPlant>
 		</plant>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="CropPlant">
 		<defName>Plant_TreeCocoa</defName>
 		<label>Cocoa Tree</label>
@@ -221,7 +221,7 @@
 			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="SK_DeciduousFruitTreeBase">
 		<defName>Plant_TreeApple</defName>
 		<label>Apple Tree</label>
