@@ -517,7 +517,8 @@
       <tickerType>Rare</tickerType>
       <comps>
         <li Class="CompProperties_Flickable"/>
-        <li Class="SK.CompProperties_IdlePower">
+        <li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
           <basePowerConsumption>20</basePowerConsumption>
           <soundPowerOn>Power_OnSmall</soundPowerOn>
           <soundPowerOff>Power_OffSmall</soundPowerOff>

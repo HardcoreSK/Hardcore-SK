@@ -26,7 +26,8 @@
 			</costList>
 			<comps>
 				<li Class="CompProperties_Flickable" />
-				<li Class="SK.CompProperties_IdlePower">
+				<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
 					<basePowerConsumption>100</basePowerConsumption>
 					<powerUpgrades>
 						<li>

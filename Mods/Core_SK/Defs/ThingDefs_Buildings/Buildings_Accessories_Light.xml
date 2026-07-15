@@ -44,7 +44,8 @@
         </costList>
         <comps>
             <li Class="CompProperties_Flickable"/>
-            <li Class="SK.CompProperties_IdlePower">
+            <li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
                 <basePowerConsumption>80</basePowerConsumption>
                 <shortCircuitInRain>false</shortCircuitInRain>
                 <soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -238,7 +239,8 @@
         <clearBuildingArea>false</clearBuildingArea>
         <comps>
             <li Class="CompProperties_Flickable"/>
-            <li Class="SK.CompProperties_IdlePower">
+            <li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
                 <basePowerConsumption>80</basePowerConsumption>
                 <shortCircuitInRain>true</shortCircuitInRain>
                 <soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -372,7 +374,8 @@
         </costList>
         <comps>
             <li Class="CompProperties_Flickable"/>
-            <li Class="SK.CompProperties_IdlePower">
+            <li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
                 <basePowerConsumption>70</basePowerConsumption>
                 <soundPowerOn>Power_OnSmall</soundPowerOn>
                 <soundPowerOff>Power_OffSmall</soundPowerOff>
