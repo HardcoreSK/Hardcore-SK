@@ -7,7 +7,14 @@
   <RK_Crossbow.description>簡単な石弓です.狩りをするとき使われます.</RK_Crossbow.description>
   <RK_Crossbow.tools.limb.label>持手</RK_Crossbow.tools.limb.label>
   <RK_Crossbow.tools.arrow.label>矢</RK_Crossbow.tools.arrow.label>
-  <RK_Crossbow.verbs.Verb_Shoot.label>クロスボウボルト</RK_Crossbow.verbs.Verb_Shoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Crossbow.verbs.Verb_Shoot.label
+  Reason: Couldn't inject RK_Crossbow.verbs.Verb_Shoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_Shoot.
+  
+<RK_Crossbow.verbs.Verb_Shoot.label>クロスボウボルト</RK_Crossbow.verbs.Verb_Shoot.label>
+  -->
 
   <Bolt_RK_Crossbow.label>クロスボウボルト</Bolt_RK_Crossbow.label>
 
@@ -18,7 +25,14 @@
   <RK_AutoCrossBow.description>機械式で発射される半自動石弓です.円形弾倉から急速にボルトを発射することができます.</RK_AutoCrossBow.description>
   <RK_AutoCrossBow.tools.limb.label>持手</RK_AutoCrossBow.tools.limb.label>
   <RK_AutoCrossBow.tools.arrow.label>矢</RK_AutoCrossBow.tools.arrow.label>
-  <RK_AutoCrossBow.verbs.Verb_Shoot.label>機械式クロスボウボルト</RK_AutoCrossBow.verbs.Verb_Shoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_AutoCrossBow.verbs.Verb_Shoot.label
+  Reason: Couldn't inject RK_AutoCrossBow.verbs.Verb_Shoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_Shoot.
+  
+<RK_AutoCrossBow.verbs.Verb_Shoot.label>機械式クロスボウボルト</RK_AutoCrossBow.verbs.Verb_Shoot.label>
+  -->
 
   <Bolt_RK_AutoCrossBow.label>クロスボウボルト</Bolt_RK_AutoCrossBow.label>
 
@@ -29,9 +43,19 @@
   <RK_Weapon_Arbalest.description>大型の石弓です.引くのに大きな力が必要ですが強力な破壊力があります.</RK_Weapon_Arbalest.description>
   <RK_Weapon_Arbalest.tools.limb.label>持手</RK_Weapon_Arbalest.tools.limb.label>
   <RK_Weapon_Arbalest.tools.arrow.label>矢</RK_Weapon_Arbalest.tools.arrow.label>
-  <RK_Weapon_Arbalest.verbs.Verb_Shoot.label>大型クロスボウ</RK_Weapon_Arbalest.verbs.Verb_Shoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Weapon_Arbalest.verbs.Verb_Shoot.label
+  Reason: Couldn't inject RK_Weapon_Arbalest.verbs.Verb_Shoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_Shoot.
+  
+  Key: RK_AutoCrossBow.verbs.Verb_Shoot.label
+  Reason: Couldn't inject RK_AutoCrossBow.verbs.Verb_Shoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_Shoot.
+  
+<RK_Weapon_Arbalest.verbs.Verb_Shoot.label>大型クロスボウ</RK_Weapon_Arbalest.verbs.Verb_Shoot.label>
 
   <RK_AutoCrossBow.verbs.Verb_Shoot.label>アーバレストボルト</RK_AutoCrossBow.verbs.Verb_Shoot.label>
+  -->
 
   <RK_Projectile_Arbalest.label>アーバレストボルト</RK_Projectile_Arbalest.label>
 
@@ -43,7 +67,14 @@
   <RK_Rifle.tools.stock.label>ストック</RK_Rifle.tools.stock.label>
   <RK_Rifle.tools.bayonet.label>バヨネット</RK_Rifle.tools.bayonet.label>
   <RK_Rifle.tools.flechette.label>フレシェット</RK_Rifle.tools.flechette.label>
-  <RK_Rifle.verbs.Verb_Shoot.label>ライフル弾</RK_Rifle.verbs.Verb_Shoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Rifle.verbs.Verb_Shoot.label
+  Reason: Couldn't inject RK_Rifle.verbs.Verb_Shoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_Shoot.
+  
+<RK_Rifle.verbs.Verb_Shoot.label>ライフル弾</RK_Rifle.verbs.Verb_Shoot.label>
+  -->
 
   <Bullet_RK_Rifle.label>ライフル弾</Bullet_RK_Rifle.label>
 
@@ -55,18 +86,42 @@
   <RK_SniperRifle.tools.stock.label>ストック</RK_SniperRifle.tools.stock.label>
   <RK_SniperRifle.tools.bayonet.label>バヨネット</RK_SniperRifle.tools.bayonet.label>
   <RK_SniperRifle.tools.flechette.label>フレシェット</RK_SniperRifle.tools.flechette.label>
-  <RK_SniperRifle.verbs.Verb_Shoot.label>ライフル弾</RK_SniperRifle.verbs.Verb_Shoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_SniperRifle.verbs.Verb_Shoot.label
+  Reason: Couldn't inject RK_SniperRifle.verbs.Verb_Shoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_Shoot.
+  
+<RK_SniperRifle.verbs.Verb_Shoot.label>ライフル弾</RK_SniperRifle.verbs.Verb_Shoot.label>
+  -->
 
   <Bullet_RK_SniperRifle.label>ライフル弾</Bullet_RK_SniperRifle.label>
 
 
   <!-- Sword off: HE Tan Replication Bullet_RK_Weapon_SawedOff_HE (for value customization) -->
 
-  <RK_Weapon_SawedOff.label>RK ソードオフショットガン</RK_Weapon_SawedOff.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Weapon_SawedOff.label
+  Reason: Found no Verse.ThingDef named RK_Weapon_SawedOff to match RK_Weapon_SawedOff.label (mnkexg.xml)
+  
+  Key: RK_Weapon_SawedOff.description
+  Reason: Found no Verse.ThingDef named RK_Weapon_SawedOff to match RK_Weapon_SawedOff.description (mnkexg.xml)
+  
+<RK_Weapon_SawedOff.label>RK ソードオフショットガン</RK_Weapon_SawedOff.label>
   <RK_Weapon_SawedOff.description>ソードオフショットガンです.ラットキン王国ではショットガンでラットキンを撃ちます.</RK_Weapon_SawedOff.description>
+  -->
   <RK_Weapon_SawedOff.tools.stock.label>ストック</RK_Weapon_SawedOff.tools.stock.label>
   <RK_Weapon_SawedOff.tools.barrel.label>バレル</RK_Weapon_SawedOff.tools.barrel.label>
-  <RK_Weapon_SawedOff.verbs.Verb_Shoot.label>散弾</RK_Weapon_SawedOff.verbs.Verb_Shoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Weapon_SawedOff.verbs.Verb_Shoot.label
+  Reason: Found no Verse.ThingDef named RK_Weapon_SawedOff to match RK_Weapon_SawedOff.verbs.Verb_Shoot.label (mnkexg.xml)
+  
+<RK_Weapon_SawedOff.verbs.Verb_Shoot.label>散弾</RK_Weapon_SawedOff.verbs.Verb_Shoot.label>
+  -->
 
   <RK_Bullet_SawedOff.label>散弾</RK_Bullet_SawedOff.label>
 
@@ -75,7 +130,14 @@
 
   <RK_Weapon_Bolter.label>RK ボルター</RK_Weapon_Bolter.label>
   <RK_Weapon_Bolter.description>実験用の波動ライフルです.実験用ラットキンのために製作され,特殊望遠レンズが近距離・遠距離ともに精密に照準を合わせます.ラットキン用フレシェット弾からアイデアを得て製作されたこの武器は,叩きダメージタイプの高貫通エネルギー弾を高速で発射します.</RK_Weapon_Bolter.description>
-  <RK_Weapon_Bolter.verbs.Verb_Shoot.label>ボルター弾</RK_Weapon_Bolter.verbs.Verb_Shoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Weapon_Bolter.verbs.Verb_Shoot.label
+  Reason: Couldn't inject RK_Weapon_Bolter.verbs.Verb_Shoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_Shoot.
+  
+<RK_Weapon_Bolter.verbs.Verb_Shoot.label>ボルター弾</RK_Weapon_Bolter.verbs.Verb_Shoot.label>
+  -->
   <RK_Weapon_Bolter.tools.grip.label>グリップ</RK_Weapon_Bolter.tools.grip.label>
   <RK_Weapon_Bolter.tools.barrel.label>バレル</RK_Weapon_Bolter.tools.barrel.label>
 

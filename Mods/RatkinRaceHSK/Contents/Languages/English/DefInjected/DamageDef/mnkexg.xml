@@ -18,7 +18,17 @@
 
   <RK_Damage_Torn.label>tear</RK_Damage_Torn.label>
   <RK_Damage_Torn.deathMessage>{0} has died from lacerations.</RK_Damage_Torn.deathMessage>
-  <RK_Damage_BurnTorn.label>burn-tear</RK_Damage_BurnTorn.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Damage_BurnTorn.label
+  Reason: Found no Verse.DamageDef named RK_Damage_BurnTorn to match RK_Damage_BurnTorn.label (mnkexg.xml)
+  
+  Key: RK_Damage_BurnTorn.deathMessage
+  Reason: Found no Verse.DamageDef named RK_Damage_BurnTorn to match RK_Damage_BurnTorn.deathMessage (mnkexg.xml)
+  
+<RK_Damage_BurnTorn.label>burn-tear</RK_Damage_BurnTorn.label>
   <RK_Damage_BurnTorn.deathMessage>{0} has died from lacerations.</RK_Damage_BurnTorn.deathMessage>
+  -->
   <RK_Damage_BonusCut.label>cut</RK_Damage_BonusCut.label>
 </LanguageData>

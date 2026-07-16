@@ -18,19 +18,64 @@
   <RK_EmpBomb.label>EMP 폭탄</RK_EmpBomb.label>
   <RK_EmpBomb.description>EMP 폭탄입니다. 너무 복잡하게 만들어져 이를 해체하기 힘들어 직접 파괴 하는 수 밖에 없어 보입니다.</RK_EmpBomb.description>
   <MinifiedEMP.label>포장된 EMP</MinifiedEMP.label>
-  <RK_Building_Ballista.label>노포</RK_Building_Ballista.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Building_Ballista.label
+  Reason: Found no Verse.ThingDef named RK_Building_Ballista to match RK_Building_Ballista.label (mnkexg.xml)
+  
+  Key: RK_Building_Ballista.description
+  Reason: Found no Verse.ThingDef named RK_Building_Ballista to match RK_Building_Ballista.description (mnkexg.xml)
+  
+  Key: RK_Weapon_Ballista.label
+  Reason: Found no Verse.ThingDef named RK_Weapon_Ballista to match RK_Weapon_Ballista.label (mnkexg.xml)
+  
+  Key: RK_Weapon_Ballista.description
+  Reason: Found no Verse.ThingDef named RK_Weapon_Ballista to match RK_Weapon_Ballista.description (mnkexg.xml)
+  
+  Key: RK_Weapon_Ballista.verbs.Verb_Shoot.label
+  Reason: Found no Verse.ThingDef named RK_Weapon_Ballista to match RK_Weapon_Ballista.verbs.Verb_Shoot.label (mnkexg.xml)
+  
+  Key: RK_Ammo_BallistaBoltNormal.label
+  Reason: Found no Verse.ThingDef named RK_Ammo_BallistaBoltNormal to match RK_Ammo_BallistaBoltNormal.label (mnkexg.xml)
+  
+  Key: RK_Ammo_BallistaBoltNormal.description
+  Reason: Found no Verse.ThingDef named RK_Ammo_BallistaBoltNormal to match RK_Ammo_BallistaBoltNormal.description (mnkexg.xml)
+  
+<RK_Building_Ballista.label>노포</RK_Building_Ballista.label>
   <RK_Building_Ballista.description>거대한 화살을 발사하는 기계입니다. 재장전 시간이 오래 걸리지만 높은 명중률과 뛰어난 관통력을 갖고 있습니다.</RK_Building_Ballista.description>
   <RK_Weapon_Ballista.label>랫킨 노포</RK_Weapon_Ballista.label>
   <RK_Weapon_Ballista.description>거대한 화살을 발사할 수 있는 장치입니다. 재장전 시간이 오래 걸리지만 높은 명중률과 뛰어난 관통력을 갖고 있습니다.</RK_Weapon_Ballista.description>
   <RK_Weapon_Ballista.verbs.Verb_Shoot.label>노포</RK_Weapon_Ballista.verbs.Verb_Shoot.label>
   <RK_Ammo_BallistaBoltNormal.label>거대한 화살</RK_Ammo_BallistaBoltNormal.label>
   <RK_Ammo_BallistaBoltNormal.description>거대한 화살입니다. 이 커다란 화살은 대상을 관통하고 막대한 피해를 입힐 수 있습니다.</RK_Ammo_BallistaBoltNormal.description>
+  -->
   <RK_Projectile_BallistaBoltNormal.label>거대한 화살</RK_Projectile_BallistaBoltNormal.label>
-  <RK_Ammo_BallistaBoltAP.label>거대한 화살(관통)</RK_Ammo_BallistaBoltAP.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Ammo_BallistaBoltAP.label
+  Reason: Found no Verse.ThingDef named RK_Ammo_BallistaBoltAP to match RK_Ammo_BallistaBoltAP.label (mnkexg.xml)
+  
+  Key: RK_Ammo_BallistaBoltAP.description
+  Reason: Found no Verse.ThingDef named RK_Ammo_BallistaBoltAP to match RK_Ammo_BallistaBoltAP.description (mnkexg.xml)
+  
+<RK_Ammo_BallistaBoltAP.label>거대한 화살(관통)</RK_Ammo_BallistaBoltAP.label>
   <RK_Ammo_BallistaBoltAP.description>거대한 화살입니다. 끝이 더 뾰족하게 만들어져 더 많은 대상을 꿰뚫고 지나갈 수 있습니다.</RK_Ammo_BallistaBoltAP.description>
+  -->
   <RK_Projectile_BallistaBoltAP.label>거대한 화살</RK_Projectile_BallistaBoltAP.label>
-  <RK_Building_Cannon.label>대포</RK_Building_Cannon.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Building_Cannon.label
+  Reason: Found no Verse.ThingDef named RK_Building_Cannon to match RK_Building_Cannon.label (mnkexg.xml)
+  
+  Key: RK_Building_Cannon.description
+  Reason: Found no Verse.ThingDef named RK_Building_Cannon to match RK_Building_Cannon.description (mnkexg.xml)
+  
+<RK_Building_Cannon.label>대포</RK_Building_Cannon.label>
   <RK_Building_Cannon.description>포탄을 쏠 수 있는 대포입니다. 포탄을 직사로 발사 할 수 있습니다.</RK_Building_Cannon.description>
+  -->
   <RK_Building_CannonTurret.label>대포</RK_Building_CannonTurret.label>
   <RK_Building_CannonTurret.description>포탄을 쏠 수 있는 포신입니다.</RK_Building_CannonTurret.description>
   <RK_Building_CannonTurret.verbs.Verb_Shoot.label>대포</RK_Building_CannonTurret.verbs.Verb_Shoot.label>
@@ -250,49 +295,131 @@
   <RK_Bullet_SectorShot_Dummy.label>산탄</RK_Bullet_SectorShot_Dummy.label>
   <RK_Crossbow.label>랫킨 석궁</RK_Crossbow.label>
   <RK_Crossbow.description>간단한 석궁입니다. 사냥을 할때 쓰입니다.</RK_Crossbow.description>
-  <RK_Crossbow.verbs.Verb_Shoot.label>석궁</RK_Crossbow.verbs.Verb_Shoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Crossbow.verbs.Verb_Shoot.label
+  Reason: Couldn't inject RK_Crossbow.verbs.Verb_Shoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_Shoot.
+  
+<RK_Crossbow.verbs.Verb_Shoot.label>석궁</RK_Crossbow.verbs.Verb_Shoot.label>
+  -->
   <RK_Crossbow.tools.0.label>활대</RK_Crossbow.tools.0.label>
   <RK_Crossbow.tools.1.label>볼트촉</RK_Crossbow.tools.1.label>
   <Bolt_RK_Crossbow.label>석궁 볼트</Bolt_RK_Crossbow.label>
   <RK_AutoCrossBow.label>랫킨 연발 석궁</RK_AutoCrossBow.label>
   <RK_AutoCrossBow.description>기계식으로 발사되는 반자동 석궁입니다. 빠른속도로 볼트를 발사할 수 있습니다.</RK_AutoCrossBow.description>
-  <RK_AutoCrossBow.verbs.Verb_Shoot.label>연발 석궁</RK_AutoCrossBow.verbs.Verb_Shoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_AutoCrossBow.verbs.Verb_Shoot.label
+  Reason: Couldn't inject RK_AutoCrossBow.verbs.Verb_Shoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_Shoot.
+  
+<RK_AutoCrossBow.verbs.Verb_Shoot.label>연발 석궁</RK_AutoCrossBow.verbs.Verb_Shoot.label>
+  -->
   <RK_AutoCrossBow.tools.0.label>활대</RK_AutoCrossBow.tools.0.label>
   <RK_AutoCrossBow.tools.1.label>볼트촉</RK_AutoCrossBow.tools.1.label>
   <Bolt_RK_AutoCrossBow.label>석궁 볼트</Bolt_RK_AutoCrossBow.label>
   <RK_Weapon_Arbalest.label>랫킨 대형 석궁</RK_Weapon_Arbalest.label>
   <RK_Weapon_Arbalest.description>대형 석궁입니다. 장전속도가 느리지만 뛰어난 저지력을 갖고 있습니다.</RK_Weapon_Arbalest.description>
-  <RK_Weapon_Arbalest.verbs.Verb_Shoot.label>대형 석궁</RK_Weapon_Arbalest.verbs.Verb_Shoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Weapon_Arbalest.verbs.Verb_Shoot.label
+  Reason: Couldn't inject RK_Weapon_Arbalest.verbs.Verb_Shoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_Shoot.
+  
+<RK_Weapon_Arbalest.verbs.Verb_Shoot.label>대형 석궁</RK_Weapon_Arbalest.verbs.Verb_Shoot.label>
+  -->
   <RK_Weapon_Arbalest.tools.0.label>활대</RK_Weapon_Arbalest.tools.0.label>
   <RK_Weapon_Arbalest.tools.1.label>볼트</RK_Weapon_Arbalest.tools.1.label>
   <RK_Projectile_Arbalest.label>대형 석궁 볼트</RK_Projectile_Arbalest.label>
   <RK_Rifle.label>랫킨 소총</RK_Rifle.label>
   <RK_Rifle.description>반자동 소총입니다. 탄환은 가늘고 예리하여 관통력은 높으나 피해량이 조금 낮습니다. 착검되어 있어 근접전에 유리합니다.</RK_Rifle.description>
-  <RK_Rifle.verbs.Verb_Shoot.label>소총</RK_Rifle.verbs.Verb_Shoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Rifle.verbs.Verb_Shoot.label
+  Reason: Couldn't inject RK_Rifle.verbs.Verb_Shoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_Shoot.
+  
+<RK_Rifle.verbs.Verb_Shoot.label>소총</RK_Rifle.verbs.Verb_Shoot.label>
+  -->
   <RK_Rifle.tools.0.label>개머리판</RK_Rifle.tools.0.label>
-  <RK_Rifle.tools.1.label>총검</RK_Rifle.tools.1.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Rifle.tools.1.label
+  Reason: Couldn't inject RK_Rifle.tools.1.label into Verse.ThingDef (mnkexg.xml): Index out of bounds (max index is 0)
+  
+<RK_Rifle.tools.1.label>총검</RK_Rifle.tools.1.label>
+  -->
   <Bullet_RK_Rifle.label>화살촉탄</Bullet_RK_Rifle.label>
   <RK_SniperRifle.label>랫킨 망원 소총</RK_SniperRifle.label>
   <RK_SniperRifle.description>망원 렌즈가 달린 반자동 소총입니다. 망원 렌즈를 통해 조금 더 조준하고 쏠 수 있습니다. 탄환은 가늘고 예리하여 관통력은 높으나 피해량이 조금 낮습니다. 착검되어 있어 근접전에 유리합니다.</RK_SniperRifle.description>
-  <RK_SniperRifle.verbs.Verb_Shoot.label>저격 소총</RK_SniperRifle.verbs.Verb_Shoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_SniperRifle.verbs.Verb_Shoot.label
+  Reason: Couldn't inject RK_SniperRifle.verbs.Verb_Shoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_Shoot.
+  
+<RK_SniperRifle.verbs.Verb_Shoot.label>저격 소총</RK_SniperRifle.verbs.Verb_Shoot.label>
+  -->
   <RK_SniperRifle.tools.0.label>개머리판</RK_SniperRifle.tools.0.label>
-  <RK_SniperRifle.tools.1.label>총검</RK_SniperRifle.tools.1.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_SniperRifle.tools.1.label
+  Reason: Couldn't inject RK_SniperRifle.tools.1.label into Verse.ThingDef (mnkexg.xml): Index out of bounds (max index is 0)
+  
+<RK_SniperRifle.tools.1.label>총검</RK_SniperRifle.tools.1.label>
+  -->
   <Bullet_RK_SniperRifle.label>화살촉탄</Bullet_RK_SniperRifle.label>
-  <RK_Weapon_SawedOff.label>랫킨 소드오프 샷건</RK_Weapon_SawedOff.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Weapon_SawedOff.label
+  Reason: Found no Verse.ThingDef named RK_Weapon_SawedOff to match RK_Weapon_SawedOff.label (mnkexg.xml)
+  
+  Key: RK_Weapon_SawedOff.description
+  Reason: Found no Verse.ThingDef named RK_Weapon_SawedOff to match RK_Weapon_SawedOff.description (mnkexg.xml)
+  
+  Key: RK_Weapon_SawedOff.verbs.Verb_Shoot.label
+  Reason: Found no Verse.ThingDef named RK_Weapon_SawedOff to match RK_Weapon_SawedOff.verbs.Verb_Shoot.label (mnkexg.xml)
+  
+  Key: RK_Weapon_SawedOff.tools.0.label
+  Reason: Found no Verse.ThingDef named RK_Weapon_SawedOff to match RK_Weapon_SawedOff.tools.0.label (mnkexg.xml)
+  
+  Key: RK_Weapon_SawedOff.tools.1.label
+  Reason: Found no Verse.ThingDef named RK_Weapon_SawedOff to match RK_Weapon_SawedOff.tools.1.label (mnkexg.xml)
+  
+<RK_Weapon_SawedOff.label>랫킨 소드오프 샷건</RK_Weapon_SawedOff.label>
   <RK_Weapon_SawedOff.description>한손으로 들 수 있는 샷건입니다. 발사된 투사체가 일정 거리 앞에서 분사됩니다.</RK_Weapon_SawedOff.description>
   <RK_Weapon_SawedOff.verbs.Verb_Shoot.label>소드오프 샷건</RK_Weapon_SawedOff.verbs.Verb_Shoot.label>
   <RK_Weapon_SawedOff.tools.0.label>개머리판</RK_Weapon_SawedOff.tools.0.label>
   <RK_Weapon_SawedOff.tools.1.label>총열</RK_Weapon_SawedOff.tools.1.label>
+  -->
   <RK_Bullet_SawedOff.label>산탄</RK_Bullet_SawedOff.label>
   <RK_Weapon_Bolter.label>랫킨 핸드캐넌</RK_Weapon_Bolter.label>
   <RK_Weapon_Bolter.description>대구경 탄환을 쏘는 핸드캐넌 입니다. 대구경 탄환을 발사하여 뛰어난 피해량과 저지력을 갖고 있습니다. 탄환에 코팅된 에너지 장으로 인해 이따금 에너지 장을 무력화 할 수 있으며, 대상을 기절 시킬 수도 있습니다.</RK_Weapon_Bolter.description>
-  <RK_Weapon_Bolter.verbs.Verb_Shoot.label>핸드캐넌 사격</RK_Weapon_Bolter.verbs.Verb_Shoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Weapon_Bolter.verbs.Verb_Shoot.label
+  Reason: Couldn't inject RK_Weapon_Bolter.verbs.Verb_Shoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_Shoot.
+  
+<RK_Weapon_Bolter.verbs.Verb_Shoot.label>핸드캐넌 사격</RK_Weapon_Bolter.verbs.Verb_Shoot.label>
+  -->
   <RK_Weapon_Bolter.tools.0.label>손잡이</RK_Weapon_Bolter.tools.0.label>
   <RK_Weapon_Bolter.tools.1.label>총열</RK_Weapon_Bolter.tools.1.label>
   <RK_Bullet_Bolter.label>대구경 탄환</RK_Bullet_Bolter.label>
   <RK_PrototypePulseRifle.label>랫킨 파동 소총</RK_PrototypePulseRifle.label>
   <RK_PrototypePulseRifle.description>에너지 탄환을 쏘는 소총입니다. 내장된 유동 콘덴서를 통해 발사할 에너지량을 빠르게 조절하여 발사 상황에 맞게 대응할 수 있습니다. 근·중거리 교전시 빠르게 4발을 속사 하며, 원거리 교전시 고밀도 쐐기탄을 2발을 정밀 발사합니다.</RK_PrototypePulseRifle.description>
-  <RK_PrototypePulseRifle.verbs.Verb_PulseRifleShoot.label>속사</RK_PrototypePulseRifle.verbs.Verb_PulseRifleShoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_PrototypePulseRifle.verbs.Verb_PulseRifleShoot.label
+  Reason: Couldn't inject RK_PrototypePulseRifle.verbs.Verb_PulseRifleShoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_PulseRifleShoot.
+  
+<RK_PrototypePulseRifle.verbs.Verb_PulseRifleShoot.label>속사</RK_PrototypePulseRifle.verbs.Verb_PulseRifleShoot.label>
+  -->
   <RK_PrototypePulseRifle.tools.0.label>개머리판</RK_PrototypePulseRifle.tools.0.label>
   <RK_PrototypePulseRifle.tools.1.label>총열</RK_PrototypePulseRifle.tools.1.label>
   <Bullet_RK_PrototypePulseRifleLight.label>쐐기탄</Bullet_RK_PrototypePulseRifleLight.label>
@@ -323,7 +450,14 @@
   <RK_Fork.label>랫킨 포크삽</RK_Fork.label>
   <RK_Fork.description>끝치 갈라진 포크형태의 삽입니다. 작물을 효율적으로 퍼나르고 수확하는데 도움이 됩니다.</RK_Fork.description>
   <RK_Fork.tools.0.label>포크삽 끝</RK_Fork.tools.0.label>
-  <RK_Fork.tools.1.label>포크삽 날</RK_Fork.tools.1.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Fork.tools.1.label
+  Reason: Couldn't inject RK_Fork.tools.1.label into Verse.ThingDef (mnkexg.xml): Index out of bounds (max index is 0)
+  
+<RK_Fork.tools.1.label>포크삽 날</RK_Fork.tools.1.label>
+  -->
   <RK_Pickaxe.label>랫킨 곡괭이</RK_Pickaxe.label>
   <RK_Pickaxe.description>채굴할 때 쓰는 곡괭이입니다. 돌을 파고 채석 작업을 하는데 도움이 됩니다.</RK_Pickaxe.description>
   <RK_Pickaxe.tools.0.label>망치면</RK_Pickaxe.tools.0.label>

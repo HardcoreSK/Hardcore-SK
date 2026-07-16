@@ -12,11 +12,27 @@
 	<AIRobot_Hauler.description>This is a hauling robot. It carries your purchases home and even lifts your new piano up into your room on the 20th floor.</AIRobot_Hauler.description>
 	<AIRobot_Cleaner.description>A cleaning robot. Cleans your room while you're away. CAUTION: Don't let your pets come near it!</AIRobot_Cleaner.description>
 	
-	<AIRobot_Hauler_disabled.label>HaulingBot (disabled)</AIRobot_Hauler_disabled.label>
+		<!--
+	HSK Patched out or doesn't exist.
+	
+	Key: AIRobot_Hauler_disabled.label
+	Reason: Found no Verse.ThingDef named AIRobot_Hauler_disabled to match AIRobot_Hauler_disabled.label (AIRobot_Base.xml)
+	
+	Key: AIRobot_Hauler_disabled.description
+	Reason: Found no Verse.ThingDef named AIRobot_Hauler_disabled to match AIRobot_Hauler_disabled.description (AIRobot_Base.xml)
+	
+	Key: AIRobot_Cleaner_disabled.label
+	Reason: Found no Verse.ThingDef named AIRobot_Cleaner_disabled to match AIRobot_Cleaner_disabled.label (AIRobot_Base.xml)
+	
+	Key: AIRobot_Cleaner_disabled.description
+	Reason: Found no Verse.ThingDef named AIRobot_Cleaner_disabled to match AIRobot_Cleaner_disabled.description (AIRobot_Base.xml)
+	
+<AIRobot_Hauler_disabled.label>HaulingBot (disabled)</AIRobot_Hauler_disabled.label>
 	<AIRobot_Hauler_disabled.description>This is the sad end of a bot. It's no longer useful and can only be dismantled.</AIRobot_Hauler_disabled.description>
 	
 	<AIRobot_Cleaner_disabled.label>CleaningBot (disabled)</AIRobot_Cleaner_disabled.label>
 	<AIRobot_Cleaner_disabled.description>This is the sad end of a bot. It's no longer useful and can only be dismantled.</AIRobot_Cleaner_disabled.description>
+	-->
 	
 	<AIRobot_Hauler.tools.0.label>left manipulator</AIRobot_Hauler.tools.0.label>
 	<AIRobot_Hauler.tools.1.label>right manipulator</AIRobot_Hauler.tools.1.label>

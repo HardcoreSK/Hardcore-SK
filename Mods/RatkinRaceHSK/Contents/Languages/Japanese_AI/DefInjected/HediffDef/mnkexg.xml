@@ -31,10 +31,26 @@
   <RK_Hediff_Torn.description>裂けた傷です。</RK_Hediff_Torn.description>
   <RK_Hediff_Torn.injuryProps.destroyedLabel>裂けた</RK_Hediff_Torn.injuryProps.destroyedLabel>
   <RK_Hediff_Torn.injuryProps.destroyedOutLabel>引き千切れた</RK_Hediff_Torn.injuryProps.destroyedOutLabel>
-  <RK_Hediff_Torn.comps.0.labelTendedWell>包帯済み</RK_Hediff_Torn.comps.0.labelTendedWell>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Hediff_Torn.comps.0.labelTendedWell
+  Reason: Couldn't inject RK_Hediff_Torn.comps.0.labelTendedWell into Verse.HediffDef (mnkexg.xml): Field labelTendedWell does not exist in type CombatExtended.HediffCompProperties_Stabilize.
+  
+  Key: RK_Hediff_Torn.comps.0.labelTendedWellInner
+  Reason: Couldn't inject RK_Hediff_Torn.comps.0.labelTendedWellInner into Verse.HediffDef (mnkexg.xml): Field labelTendedWellInner does not exist in type CombatExtended.HediffCompProperties_Stabilize.
+  
+  Key: RK_Hediff_Torn.comps.0.labelSolidTendedWell
+  Reason: Couldn't inject RK_Hediff_Torn.comps.0.labelSolidTendedWell into Verse.HediffDef (mnkexg.xml): Field labelSolidTendedWell does not exist in type CombatExtended.HediffCompProperties_Stabilize.
+  
+  Key: RK_Hediff_Torn.comps.2.permanentLabel
+  Reason: Couldn't inject RK_Hediff_Torn.comps.2.permanentLabel into Verse.HediffDef (mnkexg.xml): Field permanentLabel does not exist in type Verse.HediffCompProperties_Infecter.
+  
+<RK_Hediff_Torn.comps.0.labelTendedWell>包帯済み</RK_Hediff_Torn.comps.0.labelTendedWell>
   <RK_Hediff_Torn.comps.0.labelTendedWellInner>縫合済み</RK_Hediff_Torn.comps.0.labelTendedWellInner>
   <RK_Hediff_Torn.comps.0.labelSolidTendedWell>接合済み</RK_Hediff_Torn.comps.0.labelSolidTendedWell>
   <RK_Hediff_Torn.comps.2.permanentLabel>裂けた傷跡</RK_Hediff_Torn.comps.2.permanentLabel>
+  -->
   <RK_Hediff_RatHolicGun.label>回転慣性</RK_Hediff_RatHolicGun.label>
   <RK_Hediff_RatHolicGun.description>ラットホリックガンを使用中です。</RK_Hediff_RatHolicGun.description>
   <RK_Hediff_RatHolicGunSpooling.label>回転蓄積</RK_Hediff_RatHolicGunSpooling.label>

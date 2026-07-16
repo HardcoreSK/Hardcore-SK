@@ -31,10 +31,26 @@
   <RK_Hediff_Torn.description>찢어진 상처입니다.</RK_Hediff_Torn.description>
   <RK_Hediff_Torn.injuryProps.destroyedLabel>찢어짐</RK_Hediff_Torn.injuryProps.destroyedLabel>
   <RK_Hediff_Torn.injuryProps.destroyedOutLabel>찢겨나감</RK_Hediff_Torn.injuryProps.destroyedOutLabel>
-  <RK_Hediff_Torn.comps.0.labelTendedWell>붕대 감음</RK_Hediff_Torn.comps.0.labelTendedWell>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Hediff_Torn.comps.0.labelTendedWell
+  Reason: Couldn't inject RK_Hediff_Torn.comps.0.labelTendedWell into Verse.HediffDef (mnkexg.xml): Field labelTendedWell does not exist in type CombatExtended.HediffCompProperties_Stabilize.
+  
+  Key: RK_Hediff_Torn.comps.0.labelTendedWellInner
+  Reason: Couldn't inject RK_Hediff_Torn.comps.0.labelTendedWellInner into Verse.HediffDef (mnkexg.xml): Field labelTendedWellInner does not exist in type CombatExtended.HediffCompProperties_Stabilize.
+  
+  Key: RK_Hediff_Torn.comps.0.labelSolidTendedWell
+  Reason: Couldn't inject RK_Hediff_Torn.comps.0.labelSolidTendedWell into Verse.HediffDef (mnkexg.xml): Field labelSolidTendedWell does not exist in type CombatExtended.HediffCompProperties_Stabilize.
+  
+  Key: RK_Hediff_Torn.comps.2.permanentLabel
+  Reason: Couldn't inject RK_Hediff_Torn.comps.2.permanentLabel into Verse.HediffDef (mnkexg.xml): Field permanentLabel does not exist in type Verse.HediffCompProperties_Infecter.
+  
+<RK_Hediff_Torn.comps.0.labelTendedWell>붕대 감음</RK_Hediff_Torn.comps.0.labelTendedWell>
   <RK_Hediff_Torn.comps.0.labelTendedWellInner>봉합됨</RK_Hediff_Torn.comps.0.labelTendedWellInner>
   <RK_Hediff_Torn.comps.0.labelSolidTendedWell>접합됨</RK_Hediff_Torn.comps.0.labelSolidTendedWell>
   <RK_Hediff_Torn.comps.2.permanentLabel>찢긴 흉터</RK_Hediff_Torn.comps.2.permanentLabel>
+  -->
   <RK_Hediff_RatHolicGun.label>회전 관성</RK_Hediff_RatHolicGun.label>
   <RK_Hediff_RatHolicGun.description>랫홀릭 건을 사용중입니다.</RK_Hediff_RatHolicGun.description>
   <RK_Hediff_RatHolicGunSpooling.label>회전 축적</RK_Hediff_RatHolicGunSpooling.label>

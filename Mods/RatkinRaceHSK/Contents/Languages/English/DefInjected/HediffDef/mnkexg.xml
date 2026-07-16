@@ -40,10 +40,26 @@
 
   <RK_Hediff_Torn.injuryProps.destroyedLabel>tear apart</RK_Hediff_Torn.injuryProps.destroyedLabel>
   <RK_Hediff_Torn.injuryProps.destroyedOutLabel>ripped off</RK_Hediff_Torn.injuryProps.destroyedOutLabel>
-  <RK_Hediff_Torn.comps.0.labelTendedWell>bandaged</RK_Hediff_Torn.comps.0.labelTendedWell>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Hediff_Torn.comps.0.labelTendedWell
+  Reason: Couldn't inject RK_Hediff_Torn.comps.0.labelTendedWell into Verse.HediffDef (mnkexg.xml): Field labelTendedWell does not exist in type CombatExtended.HediffCompProperties_Stabilize.
+  
+  Key: RK_Hediff_Torn.comps.0.labelTendedWellInner
+  Reason: Couldn't inject RK_Hediff_Torn.comps.0.labelTendedWellInner into Verse.HediffDef (mnkexg.xml): Field labelTendedWellInner does not exist in type CombatExtended.HediffCompProperties_Stabilize.
+  
+  Key: RK_Hediff_Torn.comps.0.labelSolidTendedWell
+  Reason: Couldn't inject RK_Hediff_Torn.comps.0.labelSolidTendedWell into Verse.HediffDef (mnkexg.xml): Field labelSolidTendedWell does not exist in type CombatExtended.HediffCompProperties_Stabilize.
+  
+  Key: RK_Hediff_Torn.comps.2.permanentLabel
+  Reason: Couldn't inject RK_Hediff_Torn.comps.2.permanentLabel into Verse.HediffDef (mnkexg.xml): Field permanentLabel does not exist in type Verse.HediffCompProperties_Infecter.
+  
+<RK_Hediff_Torn.comps.0.labelTendedWell>bandaged</RK_Hediff_Torn.comps.0.labelTendedWell>
   <RK_Hediff_Torn.comps.0.labelTendedWellInner>stitched</RK_Hediff_Torn.comps.0.labelTendedWellInner>
   <RK_Hediff_Torn.comps.0.labelSolidTendedWell>joined</RK_Hediff_Torn.comps.0.labelSolidTendedWell>
   <RK_Hediff_Torn.comps.2.permanentLabel>tear scar</RK_Hediff_Torn.comps.2.permanentLabel>
+  -->
 
   <RK_Hediff_RatHolicGun.label>rotational inertia</RK_Hediff_RatHolicGun.label>
   <RK_Hediff_RatHolicGun.description>Using a RatHolic gun.</RK_Hediff_RatHolicGun.description>

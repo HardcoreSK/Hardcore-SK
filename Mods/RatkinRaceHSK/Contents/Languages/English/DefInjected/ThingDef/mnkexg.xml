@@ -29,7 +29,31 @@
   <RK_EmpBomb.description>A makeshift electro-magnetic pulse bomb used by Ratkin commandos to disable enemy defenses just before a follow-up raid arrives. Due to its unique construction, it is impossible to diffuse without shooting or deconstructing it.</RK_EmpBomb.description>
   <MinifiedEMP.label>minified thing</MinifiedEMP.label>
 
-  <RK_Building_Ballista.label>ballista</RK_Building_Ballista.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Building_Ballista.label
+  Reason: Found no Verse.ThingDef named RK_Building_Ballista to match RK_Building_Ballista.label (mnkexg.xml)
+  
+  Key: RK_Building_Ballista.description
+  Reason: Found no Verse.ThingDef named RK_Building_Ballista to match RK_Building_Ballista.description (mnkexg.xml)
+  
+  Key: RK_Weapon_Ballista.label
+  Reason: Found no Verse.ThingDef named RK_Weapon_Ballista to match RK_Weapon_Ballista.label (mnkexg.xml)
+  
+  Key: RK_Weapon_Ballista.description
+  Reason: Found no Verse.ThingDef named RK_Weapon_Ballista to match RK_Weapon_Ballista.description (mnkexg.xml)
+  
+  Key: RK_Weapon_Ballista.verbs.Verb_Shoot.label
+  Reason: Found no Verse.ThingDef named RK_Weapon_Ballista to match RK_Weapon_Ballista.verbs.Verb_Shoot.label (mnkexg.xml)
+  
+  Key: RK_Ammo_BallistaBoltNormal.label
+  Reason: Found no Verse.ThingDef named RK_Ammo_BallistaBoltNormal to match RK_Ammo_BallistaBoltNormal.label (mnkexg.xml)
+  
+  Key: RK_Ammo_BallistaBoltNormal.description
+  Reason: Found no Verse.ThingDef named RK_Ammo_BallistaBoltNormal to match RK_Ammo_BallistaBoltNormal.description (mnkexg.xml)
+  
+<RK_Building_Ballista.label>ballista</RK_Building_Ballista.label>
   <RK_Building_Ballista.description>Ballista bolt launcher. A device capable of firing giant bolts. It takes a long time to reload, but has high accuracy and excellent armor penetration despite its primitive design.</RK_Building_Ballista.description>
 
   <RK_Weapon_Ballista.label>ballista</RK_Weapon_Ballista.label>
@@ -38,14 +62,35 @@
 
   <RK_Ammo_BallistaBoltNormal.label>giant bolt</RK_Ammo_BallistaBoltNormal.label>
   <RK_Ammo_BallistaBoltNormal.description>A giant bolt. This huge projectile on its own can pierce into lightly targets and inflict tremendous damage.</RK_Ammo_BallistaBoltNormal.description>
+  -->
   <RK_Projectile_BallistaBoltNormal.label>giant bolt</RK_Projectile_BallistaBoltNormal.label>
 
-  <RK_Ammo_BallistaBoltAP.label>giant bolt (AP)</RK_Ammo_BallistaBoltAP.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Ammo_BallistaBoltAP.label
+  Reason: Found no Verse.ThingDef named RK_Ammo_BallistaBoltAP to match RK_Ammo_BallistaBoltAP.label (mnkexg.xml)
+  
+  Key: RK_Ammo_BallistaBoltAP.description
+  Reason: Found no Verse.ThingDef named RK_Ammo_BallistaBoltAP to match RK_Ammo_BallistaBoltAP.description (mnkexg.xml)
+  
+<RK_Ammo_BallistaBoltAP.label>giant bolt (AP)</RK_Ammo_BallistaBoltAP.label>
   <RK_Ammo_BallistaBoltAP.description>A ballista bolt sharpened to achieve a higher penetrating power and counter otherwise impregnable opponents. It can penetrate straight through multiple targets in firing lines.</RK_Ammo_BallistaBoltAP.description>
+  -->
   <RK_Projectile_BallistaBoltAP.label>giant bolt</RK_Projectile_BallistaBoltAP.label>
 
-  <RK_Building_Cannon.label>cannon</RK_Building_Cannon.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Building_Cannon.label
+  Reason: Found no Verse.ThingDef named RK_Building_Cannon to match RK_Building_Cannon.label (mnkexg.xml)
+  
+  Key: RK_Building_Cannon.description
+  Reason: Found no Verse.ThingDef named RK_Building_Cannon to match RK_Building_Cannon.description (mnkexg.xml)
+  
+<RK_Building_Cannon.label>cannon</RK_Building_Cannon.label>
   <RK_Building_Cannon.description>An emplaced cannon that can fire cannon shells over long distances. Developed to fire upon enemies from a distance, but cannot be used to shoot over walls. It's commonly called the Squeak Cannon among the ratkin.</RK_Building_Cannon.description>
+  -->
 
   <RK_Building_CannonTurret.label>cannon</RK_Building_CannonTurret.label>
   <RK_Building_CannonTurret.description>An emplaced cannon that can fire cannon shells over long distances. Developed to fire upon enemies from a distance, but cannot be used to shoot over walls. It's commonly called the Squeak Cannon among the ratkin.</RK_Building_CannonTurret.description>
@@ -358,7 +403,14 @@ The size of the weapon makes it impossible for humans to use it.</RK_Halberd.des
   <RK_Crossbow.description>A crossbow made for Ratkin. Its main purpose is hunting, though Ratkin prefer to do no such thing.
 
 The size of the weapon makes it impossible for humans to use it.</RK_Crossbow.description>
-  <RK_Crossbow.verbs.Verb_Shoot.label>crossbow</RK_Crossbow.verbs.Verb_Shoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Crossbow.verbs.Verb_Shoot.label
+  Reason: Couldn't inject RK_Crossbow.verbs.Verb_Shoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_Shoot.
+  
+<RK_Crossbow.verbs.Verb_Shoot.label>crossbow</RK_Crossbow.verbs.Verb_Shoot.label>
+  -->
   <RK_Crossbow.tools.0.label>limb</RK_Crossbow.tools.0.label>
   <RK_Crossbow.tools.1.label>arrow</RK_Crossbow.tools.1.label>
 
@@ -368,7 +420,14 @@ The size of the weapon makes it impossible for humans to use it.</RK_Crossbow.de
   <RK_AutoCrossBow.description>A mechanically operated semi-automatic crossbow. It can launch bolts in bursts thanks to a circular magazine feeding bolts into the grove and the internals quickly drawing the string back before firing again.
 
 The size of the weapon makes it impossible for humans to use it.</RK_AutoCrossBow.description>
-  <RK_AutoCrossBow.verbs.Verb_Shoot.label>repeating crossbow</RK_AutoCrossBow.verbs.Verb_Shoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_AutoCrossBow.verbs.Verb_Shoot.label
+  Reason: Couldn't inject RK_AutoCrossBow.verbs.Verb_Shoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_Shoot.
+  
+<RK_AutoCrossBow.verbs.Verb_Shoot.label>repeating crossbow</RK_AutoCrossBow.verbs.Verb_Shoot.label>
+  -->
   <RK_AutoCrossBow.tools.0.label>limb</RK_AutoCrossBow.tools.0.label>
   <RK_AutoCrossBow.tools.1.label>arrow</RK_AutoCrossBow.tools.1.label>
 
@@ -376,7 +435,14 @@ The size of the weapon makes it impossible for humans to use it.</RK_AutoCrossBo
 
   <RK_Weapon_Arbalest.label>Ratkin arbalest</RK_Weapon_Arbalest.label>
   <RK_Weapon_Arbalest.description>A large crossbow. It may reload slowly, but the bolts fired form this thing offer excellent power.</RK_Weapon_Arbalest.description>
-  <RK_Weapon_Arbalest.verbs.Verb_Shoot.label>arbalest</RK_Weapon_Arbalest.verbs.Verb_Shoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Weapon_Arbalest.verbs.Verb_Shoot.label
+  Reason: Couldn't inject RK_Weapon_Arbalest.verbs.Verb_Shoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_Shoot.
+  
+<RK_Weapon_Arbalest.verbs.Verb_Shoot.label>arbalest</RK_Weapon_Arbalest.verbs.Verb_Shoot.label>
+  -->
   <RK_Weapon_Arbalest.tools.0.label>limb</RK_Weapon_Arbalest.tools.0.label>
   <RK_Weapon_Arbalest.tools.1.label>bolt</RK_Weapon_Arbalest.tools.1.label>
   <RK_Projectile_Arbalest.label>arbalest bolt</RK_Projectile_Arbalest.label>
@@ -385,9 +451,23 @@ The size of the weapon makes it impossible for humans to use it.</RK_AutoCrossBo
   <RK_Rifle.description>A Ratkin rifle made to mimic the human-made bolt-action rifle and offers longer range than the crossbow. The rifle features a small blade attached at the end of the barrel that can be used as a melee weapon in an emergency.
 
 The size of the weapon makes it impossible for humans to use it.</RK_Rifle.description>
-  <RK_Rifle.verbs.Verb_Shoot.label>rifle</RK_Rifle.verbs.Verb_Shoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Rifle.verbs.Verb_Shoot.label
+  Reason: Couldn't inject RK_Rifle.verbs.Verb_Shoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_Shoot.
+  
+<RK_Rifle.verbs.Verb_Shoot.label>rifle</RK_Rifle.verbs.Verb_Shoot.label>
+  -->
   <RK_Rifle.tools.0.label>stock</RK_Rifle.tools.0.label>
-  <RK_Rifle.tools.1.label>bayonet</RK_Rifle.tools.1.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Rifle.tools.1.label
+  Reason: Couldn't inject RK_Rifle.tools.1.label into Verse.ThingDef (mnkexg.xml): Index out of bounds (max index is 0)
+  
+<RK_Rifle.tools.1.label>bayonet</RK_Rifle.tools.1.label>
+  -->
   <Bullet_RK_Rifle.label>flechette rifle round</Bullet_RK_Rifle.label>
 
   <RK_SniperRifle.label>Ratkin sniper rifle</RK_SniperRifle.label>
@@ -396,25 +476,65 @@ The size of the weapon makes it impossible for humans to use it.</RK_Rifle.descr
 This rifle has been made to feature a scope on top of it to improve long range accuracy at the cost of making firing in close range difficult.
 
 The size of the weapon makes it impossible for humans to use it.</RK_SniperRifle.description>
-  <RK_SniperRifle.verbs.Verb_Shoot.label>sniper rifle</RK_SniperRifle.verbs.Verb_Shoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_SniperRifle.verbs.Verb_Shoot.label
+  Reason: Couldn't inject RK_SniperRifle.verbs.Verb_Shoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_Shoot.
+  
+<RK_SniperRifle.verbs.Verb_Shoot.label>sniper rifle</RK_SniperRifle.verbs.Verb_Shoot.label>
+  -->
   <RK_SniperRifle.tools.0.label>stock</RK_SniperRifle.tools.0.label>
-  <RK_SniperRifle.tools.1.label>bayonet</RK_SniperRifle.tools.1.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_SniperRifle.tools.1.label
+  Reason: Couldn't inject RK_SniperRifle.tools.1.label into Verse.ThingDef (mnkexg.xml): Index out of bounds (max index is 0)
+  
+<RK_SniperRifle.tools.1.label>bayonet</RK_SniperRifle.tools.1.label>
+  -->
   <Bullet_RK_SniperRifle.label>flechette sniper round</Bullet_RK_SniperRifle.label>
 
-  <RK_Weapon_SawedOff.label>Ratkin sawed-off shotgun</RK_Weapon_SawedOff.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Weapon_SawedOff.label
+  Reason: Found no Verse.ThingDef named RK_Weapon_SawedOff to match RK_Weapon_SawedOff.label (mnkexg.xml)
+  
+  Key: RK_Weapon_SawedOff.description
+  Reason: Found no Verse.ThingDef named RK_Weapon_SawedOff to match RK_Weapon_SawedOff.description (mnkexg.xml)
+  
+  Key: RK_Weapon_SawedOff.verbs.Verb_Shoot.label
+  Reason: Found no Verse.ThingDef named RK_Weapon_SawedOff to match RK_Weapon_SawedOff.verbs.Verb_Shoot.label (mnkexg.xml)
+  
+  Key: RK_Weapon_SawedOff.tools.0.label
+  Reason: Found no Verse.ThingDef named RK_Weapon_SawedOff to match RK_Weapon_SawedOff.tools.0.label (mnkexg.xml)
+  
+  Key: RK_Weapon_SawedOff.tools.1.label
+  Reason: Found no Verse.ThingDef named RK_Weapon_SawedOff to match RK_Weapon_SawedOff.tools.1.label (mnkexg.xml)
+  
+<RK_Weapon_SawedOff.label>Ratkin sawed-off shotgun</RK_Weapon_SawedOff.label>
   <RK_Weapon_SawedOff.description>A simple shotgun used by the Ratkin. Its loaded with a shell that, upon contact with the enemy, explodes to disperse its shrapnel into their body. The barrel has been sawn off.
 
 The size of the weapon makes it impossible for humans to use it.</RK_Weapon_SawedOff.description>
   <RK_Weapon_SawedOff.verbs.Verb_Shoot.label>sawed-off shotgun</RK_Weapon_SawedOff.verbs.Verb_Shoot.label>
   <RK_Weapon_SawedOff.tools.0.label>stock</RK_Weapon_SawedOff.tools.0.label>
   <RK_Weapon_SawedOff.tools.1.label>barrel</RK_Weapon_SawedOff.tools.1.label>
+  -->
   <RK_Bullet_SawedOff.label>buckshot</RK_Bullet_SawedOff.label>
 
   <RK_Weapon_Bolter.label>Ratkin Bolter</RK_Weapon_Bolter.label>
   <RK_Weapon_Bolter.description>This unique gun is described as a large-caliber hand cannon by the ratkin and used by said ratkin to defeat heavily armored opponents. Its oversized ammunition gives it excellent damage and stopping power, with the energy field coating each round sometimes disabling energy shields and stunning the target.
 
 Sadly, only Ratkin can equip this.</RK_Weapon_Bolter.description>
-  <RK_Weapon_Bolter.verbs.Verb_Shoot.label>hand cannon shot</RK_Weapon_Bolter.verbs.Verb_Shoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Weapon_Bolter.verbs.Verb_Shoot.label
+  Reason: Couldn't inject RK_Weapon_Bolter.verbs.Verb_Shoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_Shoot.
+  
+<RK_Weapon_Bolter.verbs.Verb_Shoot.label>hand cannon shot</RK_Weapon_Bolter.verbs.Verb_Shoot.label>
+  -->
   <RK_Weapon_Bolter.tools.0.label>grip</RK_Weapon_Bolter.tools.0.label>
   <RK_Weapon_Bolter.tools.1.label>barrel</RK_Weapon_Bolter.tools.1.label>
   <RK_Bullet_Bolter.label>large-caliber round</RK_Bullet_Bolter.label>
@@ -425,7 +545,14 @@ Sadly, only Ratkin can equip this.</RK_Weapon_Bolter.description>
 It has two firing modes for close-long range combat respectively. Burst mode fires four rounds in rapid succession, while single fires two precise high-density rounds.
 
 The size of the weapon makes it impossible for humans to use it.</RK_PrototypePulseRifle.description>
-  <RK_PrototypePulseRifle.verbs.Verb_PulseRifleShoot.label>rapid fire</RK_PrototypePulseRifle.verbs.Verb_PulseRifleShoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_PrototypePulseRifle.verbs.Verb_PulseRifleShoot.label
+  Reason: Couldn't inject RK_PrototypePulseRifle.verbs.Verb_PulseRifleShoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_PulseRifleShoot.
+  
+<RK_PrototypePulseRifle.verbs.Verb_PulseRifleShoot.label>rapid fire</RK_PrototypePulseRifle.verbs.Verb_PulseRifleShoot.label>
+  -->
   <RK_PrototypePulseRifle.tools.0.label>stock</RK_PrototypePulseRifle.tools.0.label>
   <RK_PrototypePulseRifle.tools.1.label>barrel</RK_PrototypePulseRifle.tools.1.label>
 
@@ -475,7 +602,14 @@ The size of the weapon makes it impossible for humans to use it.</RK_Hockey.desc
 
 The size of the weapon makes it impossible for humans to use it.</RK_Fork.description>
   <RK_Fork.tools.0.label>point</RK_Fork.tools.0.label>
-  <RK_Fork.tools.1.label>edge</RK_Fork.tools.1.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Fork.tools.1.label
+  Reason: Couldn't inject RK_Fork.tools.1.label into Verse.ThingDef (mnkexg.xml): Index out of bounds (max index is 0)
+  
+<RK_Fork.tools.1.label>edge</RK_Fork.tools.1.label>
+  -->
 
   <RK_Pickaxe.label>Ratkin pickaxe</RK_Pickaxe.label>
   <RK_Pickaxe.description>A pickaxe used for mining. It helps with chipping away at stone and makes the normally laborious excavation work go away in a breeze.

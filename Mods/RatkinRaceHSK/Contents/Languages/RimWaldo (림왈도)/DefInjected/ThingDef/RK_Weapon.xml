@@ -30,7 +30,14 @@
   <RK_Fork.label>랫킨 포크삽</RK_Fork.label>
   <RK_Fork.description>끝치 갈라진 포크형태의 삽입니다. 짚더미를 퍼 나를때 편리합니다.</RK_Fork.description>
   <RK_Fork.tools.0.label>포크삽 끝</RK_Fork.tools.0.label>
-  <RK_Fork.tools.1.label>포크삽 날</RK_Fork.tools.1.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Fork.tools.1.label
+  Reason: Couldn't inject RK_Fork.tools.1.label into Verse.ThingDef (mnkexg.xml): Index out of bounds (max index is 0)
+  
+<RK_Fork.tools.1.label>포크삽 날</RK_Fork.tools.1.label>
+  -->
 
 
   <!-- 기본 근접값은  초당 8.84 -->
@@ -76,7 +83,14 @@
   <RK_Rifle.label>랫킨 소총</RK_Rifle.label>
   <RK_Rifle.description>인간의 라이플을 흉내내 랫킨식 플레셰트 탄환을 쓰는 소총입니다. 관통력이 높고 석궁보다 사거리가 길며, 작은 검을 달아 유사시 창처럼 사용할 수 있습니다.</RK_Rifle.description>
   <RK_Rifle.tools.0.label>개머리판</RK_Rifle.tools.0.label>
-  <RK_Rifle.tools.1.label>총검</RK_Rifle.tools.1.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Rifle.tools.1.label
+  Reason: Couldn't inject RK_Rifle.tools.1.label into Verse.ThingDef (mnkexg.xml): Index out of bounds (max index is 0)
+  
+<RK_Rifle.tools.1.label>총검</RK_Rifle.tools.1.label>
+  -->
   <RK_Rifle.tools.2.label>플레셰트 촉</RK_Rifle.tools.2.label>
 
   <Bullet_RK_Rifle.label>플레셰트 소총탄</Bullet_RK_Rifle.label>
@@ -87,7 +101,14 @@
   <RK_SniperRifle.label>랫킨 저격 소총</RK_SniperRifle.label>
   <RK_SniperRifle.description>플레셰트 탄환을 쓰는 랫킨식 망원 소총입니다. 두꺼운 장갑을 갖춘 적도 먼 거리에서 제압할 수 있으며, 가까운 거리는 상대적으로 조준하기 어렵습니다. 유사시 근접을 위해 작은 검을 달았습니다.</RK_SniperRifle.description>
   <RK_SniperRifle.tools.0.label>개머리판</RK_SniperRifle.tools.0.label>
-  <RK_SniperRifle.tools.1.label>총검</RK_SniperRifle.tools.1.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_SniperRifle.tools.1.label
+  Reason: Couldn't inject RK_SniperRifle.tools.1.label into Verse.ThingDef (mnkexg.xml): Index out of bounds (max index is 0)
+  
+<RK_SniperRifle.tools.1.label>총검</RK_SniperRifle.tools.1.label>
+  -->
   <RK_SniperRifle.tools.2.label>플레셰트 촉</RK_SniperRifle.tools.2.label>
 
   <Bullet_RK_SniperRifle.label>플레셰트 저격탄</Bullet_RK_SniperRifle.label>
