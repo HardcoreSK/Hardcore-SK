@@ -2,9 +2,6 @@
 <Patch>
 	<!-- Remove workshop defs absent from HSK patch baseline: 1.6\Defs\ThingsDefs\Weapon_Util.xml -->
 	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ManeuverDef[defName="RK_Maneuver_PickaxeStab"]</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/ThingDef[defName="RK_Weapon_Maul"]</xpath>
 	</Operation>
 </Patch>

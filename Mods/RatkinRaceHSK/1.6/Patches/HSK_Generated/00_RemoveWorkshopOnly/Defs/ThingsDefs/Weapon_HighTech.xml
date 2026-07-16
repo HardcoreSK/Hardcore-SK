@@ -4,7 +4,4 @@
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/DamageDef[defName="RK_Damage_BurnTorn"]</xpath>
 	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ManeuverDef[defName="RK_GunlanceExplosion_Normal" or defName="RK_Maneuver_ChainSword"]</xpath>
-	</Operation>
 </Patch>
