@@ -137,7 +137,6 @@
                 <li>Apparel_FlakVest</li>
             </apparelRequired>
             <apparelTags>
-                <li>SyndicateMedium</li>
                 <li>SyndicateUnique</li>
                 <li>UniqueSpacer</li>
             </apparelTags>
@@ -294,6 +293,7 @@
         <value>
             <itemQuality>Excellent</itemQuality>
             <apparelMoney>11500~15000</apparelMoney>
+            <weaponMoney>11000~15000</weaponMoney>
             <combatPower>450</combatPower>
             <apparelRequired>
                 <li>Apparel_PlateArmor</li>
@@ -302,7 +302,6 @@
             <weaponTags>
                 <li>MedievalMeleeAdvanced</li>
                 <li>UltratechMelee</li>
-                <li>SyndicateMelee</li>
             </weaponTags>
             <specificApparelRequirements>
                 <li>
@@ -478,6 +477,9 @@
         <xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]</xpath>
         <value>
             <weaponMoney>18110~20000</weaponMoney>
+            <weaponTags Inherit="False">
+                <li>Bladelink</li>
+            </weaponTags>
         </value>
     </Operation>
 
