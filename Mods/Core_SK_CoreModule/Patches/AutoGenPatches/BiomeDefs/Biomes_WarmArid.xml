@@ -120,6 +120,7 @@
         <SnowGentle>1</SnowGentle>
         <SnowHard>1</SnowHard>
         <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+		<Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
         <Rainstorm>1</Rainstorm>
         <Blizzard>2</Blizzard>
         <Whiteout>2</Whiteout>
@@ -133,6 +134,7 @@
         <Plant_Venus>0.3</Plant_Venus>
         <Plant_Cotton>0.15</Plant_Cotton>
         <Plant_Smokeleaf>0.05</Plant_Smokeleaf>
+		<Plant_Aloe>0.15</Plant_Aloe>
         <Plant_Hypericum>0.03</Plant_Hypericum>
         <Plant_Bush>0.6</Plant_Bush>
         <Plant_Rhododendron>0.05</Plant_Rhododendron>
@@ -147,6 +149,7 @@
         <Plant_TreeDrago>0.35</Plant_TreeDrago>
         <Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">5</Plant_GrayGrass>
         <Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">0.7</Plant_PebbleCactus>
+		<Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
       </wildPlants>
       <wildAnimals>
         <Warg>0.02</Warg>
@@ -181,6 +184,13 @@
         <GuineaPig>0.015</GuineaPig>
         <Horse>0.1</Horse>
         <Bison>0.12</Bison>
+        <MonitorLizard MayRequire="Ludeon.RimWorld.Odyssey">0.5</MonitorLizard>
+        <Flamingo MayRequire="Ludeon.RimWorld.Odyssey">0.5</Flamingo>
+        <Sparrow MayRequire="Ludeon.RimWorld.Odyssey">0.5</Sparrow>
+        <Quail MayRequire="Ludeon.RimWorld.Odyssey">0.5</Quail>
+        <Vulture MayRequire="Ludeon.RimWorld.Odyssey">0.5</Vulture>
+        <Hippo MayRequire="Ludeon.RimWorld.Odyssey">0.25</Hippo>
+        <Armadillo MayRequire="Ludeon.RimWorld.Odyssey">0.2</Armadillo>
       </wildAnimals>
       <pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
         <Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.1</Toxalope>
@@ -192,12 +202,6 @@
         <Megascarab>0.2</Megascarab>
         <Cockroach>0.2</Cockroach>
       </pollutionWildAnimals>
-      <allowedPackAnimals>
-        <li>Muffalo</li>
-        <li>Elephant</li>
-        <li>Buffalo</li>
-        <li>Dromedary</li>
-      </allowedPackAnimals>
     </value>
   </Operation>
 
@@ -284,6 +288,7 @@
         <SnowGentle>1</SnowGentle>
         <SnowHard>1</SnowHard>
         <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+        <Sandstorm MayRequire="Ludeon.RimWorld.Odyssey">1</Sandstorm>
         <Rainstorm>1</Rainstorm>
         <Blizzard>1</Blizzard>
         <Hurricane>1</Hurricane>
@@ -292,6 +297,7 @@
         <Plant_Agave>0.25</Plant_Agave>
         <Plant_SaguaroCactus>1.2</Plant_SaguaroCactus>
         <Plant_PincushionCactus>1.1</Plant_PincushionCactus>
+		<Plant_Aloe>0.2</Plant_Aloe>
         <Plant_Hypericum>0.02</Plant_Hypericum>
         <Plant_Bush>0.25</Plant_Bush>
         <Plant_Grass>7</Plant_Grass>
@@ -305,6 +311,7 @@
         <Plant_Tinctoria>0.005</Plant_Tinctoria>
         <Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">5</Plant_GrayGrass>
         <Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">1</Plant_PebbleCactus>
+        <Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
       </wildPlants>
       <wildAnimals>
         <Gazelle>0.1</Gazelle>
@@ -324,11 +331,10 @@
         <Cockroach>0.05</Cockroach>
         <Donkey>0.11</Donkey>
         <GuineaPig>0.01</GuineaPig>
+        <MonitorLizard MayRequire="Ludeon.RimWorld.Odyssey">0.5</MonitorLizard>
+        <Vulture MayRequire="Ludeon.RimWorld.Odyssey">0.5</Vulture>
+        <Armadillo MayRequire="Ludeon.RimWorld.Odyssey">0.2</Armadillo>
       </wildAnimals>
-      <allowedPackAnimals>
-        <li>Buffalo</li>
-        <li>Dromedary</li>
-      </allowedPackAnimals>
     </value>
   </Operation>
 
@@ -415,12 +421,14 @@
         <SnowGentle>1.5</SnowGentle>
         <SnowHard>1</SnowHard>
         <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+		<Sandstorm MayRequire="Ludeon.RimWorld.Odyssey">2</Sandstorm>
         <Rainstorm>1</Rainstorm>
         <Blizzard>1</Blizzard>
         <Hurricane>1</Hurricane>
       </baseWeatherCommonalities>
       <wildPlants>
         <Plant_Agave>0.25</Plant_Agave>
+		<Plant_Aloe>0.12</Plant_Aloe>
         <Plant_SaguaroCactus>1</Plant_SaguaroCactus>
         <Plant_Grass>6</Plant_Grass>
         <Plant_TreePalm>0.1</Plant_TreePalm>
@@ -439,11 +447,8 @@
         <Scorpion>0.05</Scorpion>
         <Cockroach>0.03</Cockroach>
         <Donkey>0.13</Donkey>
+        <Vulture MayRequire="Ludeon.RimWorld.Odyssey">1</Vulture>
       </wildAnimals>
-      <allowedPackAnimals>
-        <li>Buffalo</li>
-        <li>Dromedary</li>
-      </allowedPackAnimals>
     </value>
   </Operation>
 

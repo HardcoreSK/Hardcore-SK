@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="SK_DeciduousCropPlant">
 		<defName>Plant_Healroot</defName>
 		<label>Healroot Plant</label>
@@ -37,9 +37,9 @@
 			<allowAutoCut>false</allowAutoCut>
 		</plant>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="CropPlant">
-		<defName>Plant_HealrootWild</defName>
+		<defName>Plant_Aloe</defName>
 		<label>Aloe Plant</label>
 		<description>Aloe Plants produce Aloe Leaves, which are similar to Healroots but can be produced as Herbal Medicine Kits from the Canning Stove.</description>
 		<statBases>
@@ -66,8 +66,8 @@
 			<harvestYield>4</harvestYield>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>4.7</growDays>
-			<fertilityMin>1.35</fertilityMin>
-			<fertilitySensitivity>1.5</fertilitySensitivity>
+			<fertilityMin>0.3</fertilityMin>
+			<fertilitySensitivity>1.4</fertilitySensitivity>
 			<visualSizeRange>0.1~0.7</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Health</purpose>

@@ -143,8 +143,10 @@
         <SnowGentle>4</SnowGentle>
         <SnowHard>4</SnowHard>
         <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+        <Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
+        <Blizzard MayRequire="Ludeon.RimWorld.Odyssey">3</Blizzard>
+        <TorrentialRain MayRequire="Ludeon.RimWorld.Odyssey">0.5</TorrentialRain>
         <Rainstorm>1</Rainstorm>
-        <Blizzard>4</Blizzard>
         <Whiteout>3</Whiteout>
         <Hurricane>1</Hurricane>
       </baseWeatherCommonalities>
@@ -152,7 +154,7 @@
         <Plant_Mushroom>0.15</Plant_Mushroom>
         <Plant_Berry>0.35</Plant_Berry>
         <Plant_Bush>1.0</Plant_Bush>
-        <Plant_Healroot>0.06</Plant_Healroot>
+        <Plant_HealrootWild>0.16</Plant_HealrootWild>
         <Plant_Rhododendron>0.25</Plant_Rhododendron>
         <Plant_Grass>3.4</Plant_Grass>
         <Plant_Moss>3.8</Plant_Moss>
@@ -177,6 +179,8 @@
         <Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">4</Plant_Ripthorn>
         <Plant_TreeGrayPine MayRequire="Ludeon.RimWorld.Biotech">12</Plant_TreeGrayPine>
         <Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">4.0</Plant_GrayGrass>
+        <Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
+        <Plant_Bulrush MayRequire="Ludeon.RimWorld.Odyssey">0.2</Plant_Bulrush>
       </wildPlants>
       <wildAnimals>
         <Elk>0.4</Elk>
@@ -220,6 +224,16 @@
         <SnowLeopard>0.07</SnowLeopard>
         <Mammoth>0.07</Mammoth>
         <Cockroach>0.1</Cockroach>
+        <Moose MayRequire="Ludeon.RimWorld.Odyssey">0.2</Moose>
+        <Wolf_Great MayRequire="Ludeon.RimWorld.Odyssey">0.02</Wolf_Great>
+        <Porcupine MayRequire="Ludeon.RimWorld.Odyssey">0.2</Porcupine>
+        <Badger MayRequire="Ludeon.RimWorld.Odyssey">0.2</Badger>
+        <Wolverine MayRequire="Ludeon.RimWorld.Odyssey">0.07</Wolverine>
+        <Mink MayRequire="Ludeon.RimWorld.Odyssey">0.2</Mink>
+        <Heron MayRequire="Ludeon.RimWorld.Odyssey">0.2</Heron>
+        <Swan MayRequire="Ludeon.RimWorld.Odyssey">0.1</Swan>
+        <Sparrow MayRequire="Ludeon.RimWorld.Odyssey">0.5</Sparrow>
+        <Crow MayRequire="Ludeon.RimWorld.Odyssey">0.5</Crow>
       </wildAnimals>
       <pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
         <WasteRat MayRequire="Ludeon.RimWorld.Biotech">1</WasteRat>
@@ -365,8 +379,10 @@
         <SnowGentle>7</SnowGentle>
         <SnowHard>7</SnowHard>
         <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+        <Windy MayRequire="Ludeon.RimWorld.Odyssey">2</Windy>
+        <Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
+        <Blizzard MayRequire="Ludeon.RimWorld.Odyssey">7</Blizzard>
         <Rainstorm>1</Rainstorm>
-        <Blizzard>7</Blizzard>
         <Whiteout>3</Whiteout>
         <Hurricane>1</Hurricane>
       </baseWeatherCommonalities>
@@ -376,7 +392,6 @@
         <Plant_Dandelion>0.3</Plant_Dandelion>
         <Plant_Astragalus>0.32</Plant_Astragalus>
         <Plant_Crocus>0.2</Plant_Crocus>
-        <Plant_HealrootWild>0.02</Plant_HealrootWild>
         <Plant_NeutroFlower>0.01</Plant_NeutroFlower>
         <Plant_WildRose>0.02</Plant_WildRose>
         <Plant_Hypericum>0.02</Plant_Hypericum>
@@ -391,8 +406,12 @@
         <Plant_TreeCypress>0.012</Plant_TreeCypress>
         <Plant_TreeMaple>0.007</Plant_TreeMaple>
         <Plant_Tinctoria>0.005</Plant_Tinctoria>
-        <Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">4</Plant_GrayGrass>
+        <Plant_HealrootWild>0.05</Plant_HealrootWild>
+        <Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">3</Plant_GrayGrass>
+        <Plant_Fireweed MayRequire="Ludeon.RimWorld.Odyssey">0.1</Plant_Fireweed>
         <Plant_TreeGrayPine MayRequire="Ludeon.RimWorld.Biotech">0.08</Plant_TreeGrayPine>
+        <Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
+        <Plant_Bulrush MayRequire="Ludeon.RimWorld.Odyssey">0.2</Plant_Bulrush>
       </wildPlants>
       <wildAnimals>
         <Elk>0.25</Elk>
@@ -432,6 +451,11 @@
         <WhiteTiger>0.01</WhiteTiger>
         <SnowLeopard>0.02</SnowLeopard>
         <Mammoth>0.2</Mammoth>
+        <Muskox MayRequire="Ludeon.RimWorld.Odyssey">1</Muskox>
+        <Moose MayRequire="Ludeon.RimWorld.Odyssey">0.2</Moose>
+        <Wolf_Great MayRequire="Ludeon.RimWorld.Odyssey">0.07</Wolf_Great>
+        <Wolverine MayRequire="Ludeon.RimWorld.Odyssey">0.07</Wolverine>
+        <Sparrow MayRequire="Ludeon.RimWorld.Odyssey">0.5</Sparrow>
       </wildAnimals>
       <allowedPackAnimals>
         <li>Muffalo</li>
@@ -574,6 +598,9 @@
         <SnowGentle>4</SnowGentle>
         <SnowHard>4</SnowHard>
         <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+        <BlindFog MayRequire="Ludeon.RimWorld.Odyssey">1</BlindFog>
+        <Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
+        <TorrentialRain MayRequire="Ludeon.RimWorld.Odyssey">0.5</TorrentialRain>
         <Rainstorm>1</Rainstorm>
         <Blizzard>3</Blizzard>
         <Whiteout>6</Whiteout>
@@ -590,7 +617,6 @@
         <Plant_TreeWillow>0.05</Plant_TreeWillow>
         <Plant_TreeCypress>0.02</Plant_TreeCypress>
         <Plant_TreeMaple>0.01</Plant_TreeMaple>
-        <Plant_HealrootWild>0.04</Plant_HealrootWild>
         <Plant_NeutroFlower>0.02</Plant_NeutroFlower>
         <Plant_WildRose>0.02</Plant_WildRose>
         <Plant_Hypericum>0.02</Plant_Hypericum>
@@ -599,6 +625,10 @@
         <Plant_Crocus>0.02</Plant_Crocus>
         <Plant_Rhododendron>0.02</Plant_Rhododendron>
         <Plant_Tinctoria>0.015</Plant_Tinctoria>
+        <Plant_HealrootWild>0.05</Plant_HealrootWild>
+        <Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
+        <Plant_LilyPad MayRequire="Ludeon.RimWorld.Odyssey">0.2</Plant_LilyPad>
+        <Plant_Bulrush MayRequire="Ludeon.RimWorld.Odyssey">0.2</Plant_Bulrush>
       </wildPlants>
       <wildAnimals>
         <Squirrel>0.7</Squirrel>
@@ -634,6 +664,14 @@
         <WhiteTiger>0.007</WhiteTiger>
         <SnowLeopard>0.009</SnowLeopard>
         <Mammoth>0.1</Mammoth>
+        <Wolf_Great MayRequire="Ludeon.RimWorld.Odyssey">0.02</Wolf_Great>
+        <Duck>0.5</Duck>
+        <Moose MayRequire="Ludeon.RimWorld.Odyssey">0.2</Moose>
+        <Badger MayRequire="Ludeon.RimWorld.Odyssey">0.2</Badger>
+        <Wolverine MayRequire="Ludeon.RimWorld.Odyssey">0.07</Wolverine>
+        <Mink MayRequire="Ludeon.RimWorld.Odyssey">0.2</Mink>
+        <Swan MayRequire="Ludeon.RimWorld.Odyssey">0.1</Swan>
+        <Bullfrog MayRequire="Ludeon.RimWorld.Odyssey">0.2</Bullfrog>
       </wildAnimals>
       <allowedPackAnimals>
         <li>Muffalo</li>
@@ -735,8 +773,10 @@
         <SnowGentle>20</SnowGentle>
         <SnowHard>40</SnowHard>
         <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+        <Windy MayRequire="Ludeon.RimWorld.Odyssey">1</Windy>
+        <Overcast MayRequire="Ludeon.RimWorld.Odyssey">1</Overcast>
+        <Blizzard MayRequire="Ludeon.RimWorld.Odyssey">30</Blizzard>
         <Rainstorm>0</Rainstorm>
-        <Blizzard>30</Blizzard>
         <Whiteout>10</Whiteout>
         <Hurricane>20</Hurricane>
       </baseWeatherCommonalities>
@@ -843,9 +883,11 @@
         <SnowGentle>8</SnowGentle>
         <SnowHard>8</SnowHard>
         <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+        <Windy MayRequire="Ludeon.RimWorld.Odyssey">1</Windy>
+        <Overcast MayRequire="Ludeon.RimWorld.Odyssey">1</Overcast>
+        <Blizzard MayRequire="Ludeon.RimWorld.Odyssey">20</Blizzard>
         <Hurricane>20</Hurricane>
         <Rainstorm>0</Rainstorm>
-        <Blizzard>20</Blizzard>
         <Whiteout>12</Whiteout>
       </baseWeatherCommonalities>
       <wildAnimals>
@@ -862,6 +904,7 @@
       <allowedPackAnimals>
         <li>Bear_Polar</li>
         <li>Mammoth</li>
+		<li>Muffalo</li>
       </allowedPackAnimals>
     </value>
   </Operation>

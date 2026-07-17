@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Healroot"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousCropPlantDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[@Name="HealrootBase"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Plant/PlantHeelingRoot_Harvest</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <statBases Merge="true">
+        <Beauty>2</Beauty>
+        <BeautyOutdoors>2</BeautyOutdoors>
+        <Nutrition>0.15</Nutrition>
+      </statBases>
+      <plant Merge="true">
+        <maxMeshCount>4</maxMeshCount>
+        <immatureGraphicPath>Things/Plant/PlantHeelingRoot</immatureGraphicPath>
+        <harvestYield>8</harvestYield>
+        <growDays>9</growDays>
+        <fertilitySensitivity>0.5</fertilitySensitivity>
+        <fertilityMin>0.4</fertilityMin>
+        <visualSizeRange>0.2~0.7</visualSizeRange>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Healroot"]</xpath>
+    <value>
+      <label>Healroot Plant</label>
+      <graphicData>
+        <texPath>Things/Plant/PlantHeelingRoot_Harvest</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <plant Merge="true">
+        <sowMinSkill>5</sowMinSkill>
+		<sowWork>600</sowWork>
+        <sowResearchPrerequisites>
+          <li>Medical_Plants_A1</li>
+        </sowResearchPrerequisites>
+        <immatureGraphicPath>Things/Plant/PlantHeelingRoot</immatureGraphicPath>
+        <growDays>5.8</growDays>
+        <purpose>Health</purpose>
+      </plant>
+    </value>
+  </Operation>
+
+</Patch>

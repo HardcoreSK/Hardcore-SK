@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Cotton"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousCropPlantDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Cotton"]</xpath>
+    <value>
+      <label>Cotton Bush</label>
+      <description>Cotton Bushes produce Cotton, a fine plant fiber that can be spun from the Tailor's Workbench into a textile called Cloth.</description>
+      <graphicData>
+        <texPath>Things/Plant/PlantCotton_Harvest</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <statBases Merge="true">
+        <Beauty>1</Beauty>
+        <BeautyOutdoors>1</BeautyOutdoors>
+      </statBases>
+      <plant Merge="true">
+        <maxMeshCount>4</maxMeshCount>
+        <sowMinSkill>5</sowMinSkill>
+        <sowResearchPrerequisites>
+          <li>Fabric_Plants_A2</li>
+        </sowResearchPrerequisites>
+        <immatureGraphicPath>Things/Plant/PlantCotton</immatureGraphicPath>
+        <harvestedThingDef>RawCotton</harvestedThingDef>
+        <harvestYield>8</harvestYield>
+        <growDays>5.6</growDays>
+        <fertilityMin>0.5</fertilityMin>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Devilstrand"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.CropPlantDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Devilstrand"]</xpath>
+    <value>
+      <label>Devilstrand Mushroom</label>
+      <description>Devilstrand Mushrooms are slow growing fungi that produce Devilstrand Puffballs, which can be spun into a textile called Devilstrand Cloth. This fungi was genetically engineered to produce a silk net of the highest grade. It is long rumored to have mystical properties and it owes its name to the devilish greed it inspires in people.</description>
+      <statBases Merge="true">
+        <MaxHitPoints>100</MaxHitPoints>
+        <Beauty>-2</Beauty>
+        <BeautyOutdoors>0</BeautyOutdoors>
+        <Nutrition>0.01</Nutrition>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Plant/PlantDevilstrand_Harvest</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <ingestible>
+        <preferability>NeverForNutrition</preferability>
+      </ingestible>
+      <plant Merge="true">
+        <maxMeshCount>4</maxMeshCount>
+        <sowTags DeepReplace="true">
+          <li>Hydroponic</li>
+        </sowTags>
+        <immatureGraphicPath>Things/Plant/PlantDevilstrand</immatureGraphicPath>
+        <harvestedThingDef>RawDevilstrand</harvestedThingDef>
+        <harvestYield>8</harvestYield>
+        <growDays>15</growDays>
+        <fertilitySensitivity>0.4</fertilitySensitivity>
+        <fertilityMin>1.1</fertilityMin>
+        <visualSizeRange>0.3~1.0</visualSizeRange>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Hops"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousCropPlantDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Hops"]</xpath>
+    <value>
+      <label>Hops Plant</label>
+      <description>A Hop Plant is a flowering plant that yields Hops, an essential ingredient in brewing Wort from the Brewery.</description>
+      <graphicData>
+        <texPath>Things/Plant/PlantHops_Harvest</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <statBases Merge="true">
+        <Beauty>1</Beauty>
+        <BeautyOutdoors>1</BeautyOutdoors>
+      </statBases>
+      <plant Merge="true">
+        <maxMeshCount>4</maxMeshCount>
+        <immatureGraphicPath>Things/Plant/PlantHops</immatureGraphicPath>
+        <growDays>5.4</growDays>
+        <fertilitySensitivity>0.6</fertilitySensitivity>
+        <fertilityMin>0.3</fertilityMin>
+        <sowResearchPrerequisites>
+          <li>Food_Plants_A2</li>
+        </sowResearchPrerequisites>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_TreeBamboo"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.CropPlantDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_TreeBamboo"]</xpath>
+    <value>
+      <description>Bamboo stalks produce Bamboo. Bamboo is a fast growing grass that functions as a wood alternative.</description>
+      <graphicData>
+        <texPath>Things/Plant/PlantBambooTree</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <statBases Merge="true">
+        <Nutrition>0.6</Nutrition>
+        <Beauty>4</Beauty>
+        <BeautyOutdoors>4</BeautyOutdoors>
+      </statBases>
+      <plant Merge="true">
+        <maxMeshCount>25</maxMeshCount>
+        <sowMinSkill>2</sowMinSkill>
+        <sowResearchPrerequisites>
+          <li>TreeSowing</li>
+        </sowResearchPrerequisites>
+        <sowTags>
+          <li>Ground</li>
+          <li>Hydroponic</li>
+        </sowTags>
+        <harvestedThingDef>Bamboo</harvestedThingDef>
+		<harvestWork>200</harvestWork>
+        <growDays>4</growDays>
+        <topWindExposure>0.1</topWindExposure>
+        <fertilityMin>0.15</fertilityMin>
+        <visualSizeRange>0.2~0.8</visualSizeRange>
+        <wildClusterWeight>22</wildClusterWeight>
+        <wildOrder>2</wildOrder>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Smokeleaf"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.CropPlantDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Smokeleaf"]</xpath>
+    <value>
+      <statBases Merge="true">
+        <Beauty>3</Beauty>
+        <BeautyOutdoors>3</BeautyOutdoors>
+        <Nutrition>0.05</Nutrition>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Plant/PlantSmokeleaf_Harvest</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <ingestible>
+        <foodType>Plant</foodType>
+        <preferability>NeverForNutrition</preferability>
+        <joy>0.05</joy>
+        <joyKind>Chemical</joyKind>
+      </ingestible>
+      <plant Merge="true">
+        <maxMeshCount>4</maxMeshCount>
+        <sowMinSkill>6</sowMinSkill>
+        <sowResearchPrerequisites>
+          <li>Drug_plants_A1</li>
+        </sowResearchPrerequisites>
+        <immatureGraphicPath>Things/Plant/PlantSmokeleaf</immatureGraphicPath>
+        <!--<harvestWork>200</harvestWork> This is the default -->
+        <harvestYield>4</harvestYield>
+        <growDays>10.8</growDays>
+        <topWindExposure>0.3</topWindExposure>
+        <fertilityMin>0.2</fertilityMin>
+        <fertilitySensitivity>1.5</fertilitySensitivity>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Psychoid"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.CropPlantDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Psychoid"]</xpath>
+    <value>
+      <statBases Merge="true">
+        <Beauty>2</Beauty>
+        <BeautyOutdoors>2</BeautyOutdoors>
+        <Nutrition>0.1</Nutrition>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Plant/PlantPsychoid_Harvest</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <pathCost>10</pathCost>
+      <plant Merge="true">
+        <sowResearchPrerequisites>
+          <li>Drug_plants_A2</li>
+        </sowResearchPrerequisites>
+        <growDays>6.6</growDays>
+        <harvestYield>10</harvestYield>
+        <immatureGraphicPath>Things/Plant/PlantPsychoid</immatureGraphicPath>
+        <maxMeshCount>4</maxMeshCount>
+        <visualSizeRange>0.3~1.0</visualSizeRange>
+      </plant>
+    </value>
+  </Operation>
+
+</Patch>

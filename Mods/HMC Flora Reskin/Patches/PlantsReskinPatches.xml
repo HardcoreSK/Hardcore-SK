@@ -955,14 +955,14 @@
             <immatureGraphicPath>Things/Plant/reskinPlants/Healroot/Healroot_Immature</immatureGraphicPath>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Plant_Healroot"]/plant/visualSizeRange</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Healroot"]/plant</xpath>
         <value>
             <visualSizeRange>0.6~1.0</visualSizeRange>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Plant_Healroot"]/plant/maxMeshCount</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Healroot"]/plant</xpath>
         <value>
             <maxMeshCount>1</maxMeshCount>
         </value>
@@ -1221,7 +1221,7 @@
 
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Plant_HealrootWild"]/graphicData</xpath>
+        <xpath>Defs/ThingDef[defName="Plant_Aloe"]/graphicData</xpath>
         <value>
             <graphicData>
                 <texPath>Things/Plant/reskinPlants/Aloe/Aloe</texPath>
@@ -1230,19 +1230,19 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Plant_HealrootWild"]/plant/immatureGraphicPath</xpath>
+        <xpath>Defs/ThingDef[defName="Plant_Aloe"]/plant/immatureGraphicPath</xpath>
         <value>
             <immatureGraphicPath>Things/Plant/reskinPlants/Aloe/Aloe</immatureGraphicPath>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Plant_HealrootWild"]/plant/maxMeshCount</xpath>
+        <xpath>Defs/ThingDef[defName="Plant_Aloe"]/plant/maxMeshCount</xpath>
         <value>
             <maxMeshCount>1</maxMeshCount>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Plant_HealrootWild"]/plant/visualSizeRange</xpath>
+        <xpath>Defs/ThingDef[defName="Plant_Aloe"]/plant/visualSizeRange</xpath>
         <value>
             <visualSizeRange>0.5~1.0</visualSizeRange>
         </value>
