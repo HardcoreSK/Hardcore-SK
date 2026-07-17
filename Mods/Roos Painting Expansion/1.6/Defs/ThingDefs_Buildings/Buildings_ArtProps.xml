@@ -106,7 +106,8 @@
             <li Class="CompProperties_Art">
                 <nameMaker>NamerArtSculpture</nameMaker>
                 <descriptionMaker>ArtDescription_Painting</descriptionMaker>
-                <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+                <!-- Paintings use the Art/InterpretArt joy giver instead of vanilla Meditative/ViewArt. -->
+                <canBeEnjoyedAsArt>false</canBeEnjoyedAsArt>
             </li>
             <li Class="CompProperties_MeditationFocus">
                 <statDef>MeditationFocusStrength</statDef>
