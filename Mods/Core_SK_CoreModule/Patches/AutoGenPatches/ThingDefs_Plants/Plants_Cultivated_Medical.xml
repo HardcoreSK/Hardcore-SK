@@ -52,4 +52,13 @@
     </value>
   </Operation>
 
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_HealrootWild"]</xpath>
+    <value>
+      <plant Merge="true">
+        <harvestYield>2</harvestYield>
+      </plant>
+    </value>
+  </Operation>
+
 </Patch>
