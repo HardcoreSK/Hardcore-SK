@@ -1,15 +1,15 @@
 <Patch>
 
-    <!-- Classic -->
+    <!-- Expedition -->
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ScenarioDef[defName="Classic"]/scenario/parts</xpath>
+        <xpath>Defs/ScenarioDef[defName="Expedition"]/scenario/parts</xpath>
         <value>
 
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
                 <thingDef>TFJ_Tool_Paxe</thingDef>
                 <stuff>Steel</stuff>
-                <count>2</count>
+                <count>3</count>
             </li>
         </value>
     </Operation>
@@ -21,18 +21,9 @@
 
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Woodcutting_Handaxe</thingDef>
+                <thingDef>TFJ_Tool_Paxe</thingDef>
                 <stuff>Steel</stuff>
-            </li>
-            <li Class="ScenPart_StartingThing_Defined">
-                <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Building_Hammer</thingDef>
-                <stuff>Steel</stuff>
-            </li>
-            <li Class="ScenPart_StartingThing_Defined">
-                <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
-                <stuff>Steel</stuff>
+                <count>2</count>
             </li>
         </value>
     </Operation>
@@ -64,7 +55,7 @@
                 <def>StartingThing_Defined</def>
                 <thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
                 <stuff>Bronze</stuff>
-				<count>2</count>
+                <count>2</count>
             </li>
         </value>
     </Operation>

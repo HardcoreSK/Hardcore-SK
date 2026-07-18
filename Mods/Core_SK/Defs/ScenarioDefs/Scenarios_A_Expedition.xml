@@ -40,11 +40,11 @@
 	</ScenarioDef> -->
 
 	<ScenarioDef ParentName="ScenarioBase">
-		<defName>Classic</defName>
-		<label>Classic</label>
-		<description>The three of you awake in your cryptosleep sarcophagi. Some time later, you land on this unknown rimworld.</description>
+		<defName>Expedition</defName>
+		<label>Expedition</label>
+		<description>The four of you awake in your cryptosleep sarcophagi after a long travel.\n\nSome time later, you land on this unknown rimworld. \n\nThis is your chance to start from the very beginning.</description>
 		<scenario>
-			<summary>Three survivors - the classic RimWorld experience.</summary>
+			<summary>Four colonists that had some time to prepare.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
 				<factionDef>PlayerColony</factionDef>
@@ -54,14 +54,14 @@
 				<!-- Config pages -->
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
 					<def>ConfigPage_ConfigureStartingPawns</def>
-					<pawnCount>3</pawnCount>
+					<pawnCount>4</pawnCount>
 					<pawnChoiceCount>8</pawnChoiceCount>
 				</li>
 
 				<!-- Player starting stuff spawn method-->
 				<li Class="ScenPart_PlayerPawnsArriveMethod">
 					<def>PlayerPawnsArriveMethod</def>
-					<method>Standing</method>
+					<method>DropPods</method>
 					<visible>false</visible>
 				</li>
 
@@ -99,6 +99,7 @@
 					<def>StartingThing_Defined</def>
 					<thingDef>DeployableTent</thingDef>
 					<stuff>Cloth</stuff>
+          <count>2</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
@@ -136,12 +137,6 @@
 					<thingDef>ShipMechChunk</thingDef>
 					<count>11</count>
 					<allowRoofed>false</allowRoofed>
-				</li>
-				<!-- Game start dialog -->
-				<li Class="ScenPart_GameStartDialog">
-					<def>GameStartDialog</def>
-					<textKey>GameStartDialog</textKey>
-					<closeSound>GameStartSting</closeSound>
 				</li>
 
 			</parts>

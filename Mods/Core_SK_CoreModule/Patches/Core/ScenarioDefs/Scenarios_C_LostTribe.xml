@@ -5,7 +5,7 @@
     <xpath>Defs/ScenarioDef[defName="LostTribe"]</xpath>
     <value>
       <label>Lost Tribe</label>
-      <description>Your tribe was destroyed by the great blood machines sent by the gods. Five of you managed to escape. Now, it's time to build up a new home. \n\nYou will play for human race.</description>
+      <description>Your tribe was destroyed by the great blood machines sent by the gods. Five of you managed to escape. Now, it's time to build up a new home. \n\nYour starting colonists will be humans.</description>
       <scenario>
         <summary>Five lost tribespeople attempt to rebuild.</summary>
         <playerFaction>
@@ -93,24 +93,6 @@
             <def>StartingAnimal</def>
             <count>3</count>
             <bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
-          </li>
-          <li Class="ScenPart_ScatterThingsNearPlayerStart">
-            <def>ScatterThingsAnywhere</def>
-            <visible>false</visible>
-            <thingDef>WoodLog</thingDef>
-            <count>320</count>
-          </li>
-          <li Class="ScenPart_ScatterThingsAnywhere">
-            <def>ScatterThingsAnywhere</def>
-            <visible>false</visible>
-            <thingDef>WoodPlank</thingDef>
-            <count>20</count>
-          </li>
-          <li Class="ScenPart_ScatterThingsAnywhere">
-            <def>ScatterThingsAnywhere</def>
-            <visible>false</visible>
-            <thingDef>BlocksSandstone</thingDef>
-            <count>30</count>
           </li>
           <li Class="ScenPart_ScatterThingsAnywhere">
             <def>ScatterThingsAnywhere</def>
