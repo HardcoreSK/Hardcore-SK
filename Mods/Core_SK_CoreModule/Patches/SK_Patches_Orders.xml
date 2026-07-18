@@ -31,7 +31,7 @@
         <order>Append</order> <!--Reverse order in values!-->
         <value>
             <li>Designator_ExtractTree</li>
-            <!--<li>SK.Designator_PlantsChopWood</li> -->
+            <li>SK.Designator_PlantsChopWood</li>
         </value>
     </Operation>
     
@@ -40,7 +40,7 @@
         <order>Append</order> <!--Reverse order in values!-->
         <value>
             <!--Duplicated functions and harder to use-->
-            <!--<li MayRequire="UnlimitedHugs.AllowTool">AllowTool.Designator_HarvestFullyGrown</li>-->
+            <li MayRequire="UnlimitedHugs.AllowTool">AllowTool.Designator_HarvestFullyGrown</li>
             <li>SK.Designator_PlantsHarvestEdibles</li>
         </value>
     </Operation>

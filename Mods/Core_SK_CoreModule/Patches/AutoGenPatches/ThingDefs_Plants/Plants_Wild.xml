@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Moss"]</xpath>
+    <value>
+      <statBases Merge="true">
+        <Beauty>1</Beauty>
+        <BeautyOutdoors>1</BeautyOutdoors>
+        <Nutrition>0.15</Nutrition>
+      </statBases>
+      <plant Merge="true">
+        <growDays>15</growDays>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_ShrubLow"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousWildPlantBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_ShrubLow"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Plant/PlantShrubLow</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+        <drawSize>1.0</drawSize>
+      </graphicData>
+      <statBases Merge="true">
+        <Beauty>1</Beauty>
+        <BeautyOutdoors>1</BeautyOutdoors>
+      </statBases>
+      <pathCost>20</pathCost>
+      <plant Merge="true">
+        <visualSizeRange>0.3~0.9</visualSizeRange>
+        <fertilityMin>0.4</fertilityMin>
+        <wildClusterWeight>27</wildClusterWeight>
+        <maxMeshCount>9</maxMeshCount>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Chokevine"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousWildPlantBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Chokevine"]</xpath>
+    <value>
+      <statBases Merge="true">
+        <Beauty>1</Beauty>
+        <BeautyOutdoors>1</BeautyOutdoors>
+      </statBases>
+      <pathCost>32</pathCost>
+      <graphicData>
+        <texPath>Things/Plant/PlantChokevine</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <plant Merge="true">
+        <fertilityMin>0.15</fertilityMin>
+        <leaflessGraphicPath>Things/Plant/PlantChokevine_Leafless</leaflessGraphicPath>
+        <visualSizeRange>0.3~0.8</visualSizeRange>
+        <wildClusterWeight>100</wildClusterWeight>
+        <maxMeshCount>9</maxMeshCount>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Brambles"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.WildPlantBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Brambles"]</xpath>
+    <value>
+      <statBases Merge="true">
+        <Beauty>1</Beauty>
+        <BeautyOutdoors>1</BeautyOutdoors>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Plant/PlantBrambles</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <plant Merge="true">
+        <fertilityMin>0.4</fertilityMin>
+        <leaflessGraphicPath>Things/Plant/PlantBrambles_Leafless</leaflessGraphicPath>
+        <visualSizeRange>0.3~0.7</visualSizeRange>
+        <wildClusterWeight>35</wildClusterWeight>
+        <maxMeshCount>9</maxMeshCount>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Grass"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousWildPlantBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Grass"]</xpath>
+    <value>
+      <statBases Merge="true">
+        <Beauty>1</Beauty>
+        <BeautyOutdoors>1</BeautyOutdoors>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Plant/PlantGrass</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <hideAtSnowOrSandDepth>0.35</hideAtSnowOrSandDepth>
+      <fillPercent>0</fillPercent>
+      <plant Merge="true">
+        <leaflessGraphicPath>Things/Plant/PlantGrass_Leafless</leaflessGraphicPath>
+        <harvestWork>40</harvestWork>
+        <fertilityMin>0.07</fertilityMin>
+        <maxMeshCount>16</maxMeshCount>
+        <harvestTag>Standard</harvestTag>
+        <harvestedThingDef>Hay</harvestedThingDef>
+        <harvestYield>3</harvestYield>
+        <visualSizeRange>0.15~0.5</visualSizeRange>
+        <growDays>2.3</growDays>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_TallGrass"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousWildPlantBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_TallGrass"]</xpath>
+    <value>
+      <description>Wild tall grass is grass that grew exceedingly high. It significantly slows down anyone moving over it.</description>
+      <statBases Merge="true">
+        <Beauty>1</Beauty>
+        <BeautyOutdoors>1</BeautyOutdoors>
+      </statBases>
+      <pathCost>18</pathCost>
+      <graphicData>
+        <texPath>Things/Plant/PlantGrass</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <fillPercent>0</fillPercent>
+      <plant Merge="true">
+        <leaflessGraphicPath>Things/Plant/PlantGrass_Leafless</leaflessGraphicPath>
+        <fertilityMin>0.08</fertilityMin>
+        <maxMeshCount>16</maxMeshCount>
+        <harvestTag>Standard</harvestTag>
+        <harvestedThingDef>Hay</harvestedThingDef>
+        <harvestYield>6</harvestYield>
+        <visualSizeRange>0.3~0.8</visualSizeRange>
+        <growDays>2.8</growDays>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Haygrass"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousWildPlantBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Haygrass"]</xpath>
+    <value>
+      <description>A mixture of nutrient-rich grasses that yield large amounts of Hay. Hay is edible for animals, but not humans. Haygrass is not destroyed when an animal eats it, so it can be used to make an improved, more compact grazing area for ranching animals.</description>
+      <statBases Merge="true">
+        <Beauty>1</Beauty>
+        <BeautyOutdoors>1</BeautyOutdoors>
+        <Nutrition>0.35</Nutrition>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Plant/PlantGrass</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <hideAtSnowOrSandDepth>0.6</hideAtSnowOrSandDepth>
+      <pathCost>5</pathCost>
+      <fillPercent>0</fillPercent>
+      <plant Merge="true">
+        <leaflessGraphicPath>Things/Plant/PlantGrass_Leafless</leaflessGraphicPath>
+        <dieIfLeafless>false</dieIfLeafless>
+        <maxMeshCount>16</maxMeshCount>
+        <harvestedThingDef>Hay</harvestedThingDef>
+        <harvestYield>8</harvestYield>
+        <sowTags>
+          <li>Ground</li>
+          <li>Hydroponic</li>
+        </sowTags>
+        <sowMinSkill>1</sowMinSkill>
+        <sowResearchPrerequisites>
+          <li>Animal_A1</li>
+        </sowResearchPrerequisites>
+        <topWindExposure>0.3</topWindExposure>
+        <growDays>2.5</growDays>
+        <fertilityMin>0.08</fertilityMin>
+        <fertilitySensitivity>0.7</fertilitySensitivity>
+        <visualSizeRange>0.25~0.8</visualSizeRange>
+      </plant>
+    </value>
+  </Operation>
+
+</Patch>

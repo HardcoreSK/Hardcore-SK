@@ -756,8 +756,8 @@
             <leaflessGraphicPath>Things/Plant/reskinPlants/Brambles/Brambles_Leafless</leaflessGraphicPath>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Plant_Brambles"]/graphicData/drawSize</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Brambles"]/graphicData</xpath>
         <value>
             <drawSize>1.0</drawSize>
         </value>

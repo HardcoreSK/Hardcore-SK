@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="SK_PlantBase">
 		<defName>Plant_Moss</defName>
 		<label>moss</label>
@@ -32,7 +32,7 @@
 			<pollution>Any</pollution>
 		</plant>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_DeciduousWildPlantBase">
 		<defName>Plant_ShrubLow</defName>
 		<label>low shrubs</label>
@@ -65,7 +65,7 @@
 			<pollutedGraphicPath>Things/Plant/ShrubLow_Polluted</pollutedGraphicPath>
 		</plant>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_DeciduousWildPlantBase">
 		<defName>Plant_Chokevine</defName>
 		<label>chokevine</label>
@@ -98,8 +98,8 @@
 			<pollution>Any</pollution>
 		</plant>
 	</ThingDef>
-
-
+-->
+<!-- DefOverwrite
 	<ThingDef ParentName="WildPlantBase">
 		<defName>Plant_Brambles</defName>
 		<label>brambles</label>
@@ -132,7 +132,7 @@
 			<pollution>Any</pollution>
 		</plant>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="WildPlantBase">
 		<defName>Plant_Fern</defName>
 		<label>fern</label>
@@ -231,7 +231,7 @@
 	</ThingDef>
 
 	<!--=========================== Grass ==============================-->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="SK_DeciduousWildPlantBase">
 		<defName>Plant_Grass</defName>
 		<label>grass</label>
@@ -263,7 +263,7 @@
 			<wildOrder>1</wildOrder>
 		</plant>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_DeciduousWildPlantBase">
 		<defName>Plant_TallGrass</defName>
 		<label>tall grass</label>
@@ -299,8 +299,8 @@
 			<pollutedGraphicPath>Things/Plant/Grass_Polluted</pollutedGraphicPath>
 		</plant>
 	</ThingDef>
-
-
+-->
+<!-- DefOverwrite
 	<ThingDef ParentName="SK_DeciduousWildPlantBase">
 		<defName>Plant_Haygrass</defName>
 		<label>haygrass</label>
@@ -342,7 +342,7 @@
 			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>
-
+-->
 
 	<ThingDef ParentName="SK_DeciduousCropPlant">
 		<defName>Plant_WildRose</defName>

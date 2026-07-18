@@ -72,24 +72,6 @@
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_LoftBeds</defName>
-		<label>loft beds</label>
-		<description>A simple bed for one pawn.</description>
-		<defNames>
-			<li>Bed_Normal_Loft</li>
-			<li>Bed_Industrial_Loft</li>
-			<li>Bed_Millenium_Loft</li>
-		</defNames>
-		<designationCategory>Furniture</designationCategory>
-		<debug>false</debug>
-		<order>25</order>
-		<types>
-			<li>Beds</li>
-			<li>Bedroom</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_DoubleBeds</defName>
 		<label>double beds</label>
 		<description>Double-wide bed that fits two people.</description>
@@ -101,6 +83,24 @@
 			<li>Bed_Industrial_Double</li>
 			<li>RoyalBed</li>
 			<li>Bed_Millenium_Double</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+		<order>25</order>
+		<types>
+			<li>Beds</li>
+			<li>Bedroom</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_LoftBeds</defName>
+		<label>loft beds</label>
+		<description>A simple bed for one pawn.</description>
+		<defNames>
+			<li>Bed_Normal_Loft</li>
+			<li>Bed_Industrial_Loft</li>
+			<li>Bed_Millenium_Loft</li>
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 		<debug>false</debug>

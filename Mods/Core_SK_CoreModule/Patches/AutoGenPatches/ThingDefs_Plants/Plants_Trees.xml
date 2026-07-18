@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[@Name="TreeBase"]</xpath>
+    <value>
+		<description>A tree.</description>
+		<hideAtSnowOrSandDepth>99999</hideAtSnowOrSandDepth>
+		<pathCost>130</pathCost>
+		<plant Merge="true">
+			<fertilityMin>0.3</fertilityMin>
+			<sowWork>750</sowWork>
+			<harvestYield>50</harvestYield>
+		</plant>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_TreePalm"]</xpath>
+    <value>
+      <description>A tropical tree with a tall, naked trunk topped by a cluster of very broad leaves. Produces hard, fibrous fruits called coconuts. The palm tree will remain after harvesting and will start another cycle of coconut production.</description>
+      <graphicData>
+        <texPath>Things/Plant/PlantCoconutPalmTree</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.1, 0.3, 0.1)</volume>
+          <offset>(0,0,0)</offset>
+        </shadowData>
+      </graphicData>
+      <statBases Merge="true">
+        <Beauty>7</Beauty>
+        <BeautyOutdoors>7</BeautyOutdoors>
+        <Nutrition>1.2</Nutrition>
+      </statBases>
+      <plant Merge="true">
+        <sowMinSkill>9</sowMinSkill>
+        <sowResearchPrerequisites>
+          <li>Fruit_Plants_B1</li>
+        </sowResearchPrerequisites>
+        <visualSizeRange>1.2~3.4</visualSizeRange>
+        <growDays>12</growDays>
+        <fertilitySensitivity>0.25</fertilitySensitivity>
+        <harvestWork>550</harvestWork>
+        <harvestYield>22</harvestYield>
+        <harvestedThingDef>RawCoconut</harvestedThingDef>
+        <fertilityMin>0.03</fertilityMin>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_TreeDrago"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Trees/TreeDrago</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.14, 0.35, 0.13)</volume>
+          <offset>(0,0,0)</offset>
+        </shadowData>
+      </graphicData>
+      <statBases Merge="true">
+        <Beauty>5</Beauty>
+        <BeautyOutdoors>5</BeautyOutdoors>
+      </statBases>
+      <plant Merge="true">
+        <growDays>30</growDays>
+        <harvestWork>850</harvestWork>
+        <harvestYield>60</harvestYield>
+        <visualSizeRange>2.5~3.8</visualSizeRange>
+        <sowResearchPrerequisites>
+          <li>Trees_B2</li>
+        </sowResearchPrerequisites>
+		<immatureGraphicPath/>
+        <choppedThingDef>ChoppedStumpBig</choppedThingDef>
+        <smashedThingDef>SmashedStumpBig</smashedThingDef>
+      </plant>
+      <modExtensions>
+        <li Class="SK.ExtendedPlantGraphic">
+          <hasSnowyGraphic>true</hasSnowyGraphic>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_TreeOak"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Trees/TreeOak</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.17, 0.35, 0.13)</volume>
+          <offset>(-0.03,0,-0.44)</offset>
+        </shadowData>
+      </graphicData>
+      <statBases>
+        <Beauty>7</Beauty>
+        <BeautyOutdoors>7</BeautyOutdoors>
+      </statBases>
+      <plant>
+        <visualSizeRange>1.3~3.0</visualSizeRange>
+        <leaflessGraphicPath>Things/Trees/TreeOak_Leafless</leaflessGraphicPath>
+		<immatureGraphicPath/>
+		<leaflessImmatureGraphicPath/>
+        <growDays>35</growDays>
+        <harvestWork>900</harvestWork>
+        <harvestYield>75</harvestYield>
+        <sowMinSkill>8</sowMinSkill>
+        <sowResearchPrerequisites>
+          <li>Trees_B3</li>
+        </sowResearchPrerequisites>
+        <choppedThingDef>ChoppedStumpBig</choppedThingDef>
+        <smashedThingDef>SmashedStumpBig</smashedThingDef>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_TreePoplar"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Trees/TreePoplar</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.15, 0.2, 0.15)</volume>
+          <offset>(0,0,0)</offset>
+        </shadowData>
+      </graphicData>
+      <statBases Merge="true">
+        <Beauty>3</Beauty>
+        <BeautyOutdoors>3</BeautyOutdoors>
+        <Nutrition>0.75</Nutrition>
+      </statBases>
+      <plant Merge="true">
+        <wildClusterRadius>17</wildClusterRadius>
+        <wildClusterWeight>25</wildClusterWeight>
+        <visualSizeRange>1.2~3.2</visualSizeRange>
+        <leaflessGraphicPath>Things/Trees/TreePoplar_Leafless</leaflessGraphicPath>
+		<immatureGraphicPath/>
+		<leaflessImmatureGraphicPath/>
+        <growDays>18</growDays>
+        <harvestWork>650</harvestWork>
+        <harvestYield>40</harvestYield>
+        <sowMinSkill>4</sowMinSkill>
+        <sowResearchPrerequisites>
+          <li>Trees_B2</li>
+        </sowResearchPrerequisites>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_TreePine"]</xpath>
+    <value>
+      <description>A large conifer covered with prickly pine cones. It grows in a distinctive conical shape. Softwood trees.</description>
+      <graphicData>
+        <texPath>Things/Trees/TreePine</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.15, 0.3, 0.15)</volume>
+          <offset>(0,0,-0.38)</offset>
+        </shadowData>
+      </graphicData>
+      <statBases Merge="true">
+        <Beauty>5</Beauty>
+        <BeautyOutdoors>5</BeautyOutdoors>
+        <Nutrition>1.25</Nutrition>
+      </statBases>
+      <plant Merge="true">
+        <visualSizeRange>1.4~3.8</visualSizeRange>
+        <growDays>23</growDays>
+        <harvestYield>50</harvestYield>
+        <sowMinSkill>6</sowMinSkill>
+		<immatureGraphicPath/>
+        <sowResearchPrerequisites>
+          <li>Trees_B3</li>
+        </sowResearchPrerequisites>
+      </plant>
+      <modExtensions>
+        <li Class="SK.ExtendedPlantGraphic">
+          <hasSnowyGraphic>true</hasSnowyGraphic>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_TreeBirch"]</xpath>
+    <value>
+      <description>Birch trees are northern, white trees known for having a thin, paper-like bark.</description>
+      <graphicData>
+        <texPath>Things/Trees/TreeBirch</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.15, 0.3, 0.1)</volume>
+          <offset>(-0.03,0,-0.44)</offset>
+        </shadowData>
+      </graphicData>
+      <statBases Merge="true">
+        <Beauty>4</Beauty>
+        <BeautyOutdoors>4</BeautyOutdoors>
+        <Nutrition>1.25</Nutrition>
+      </statBases>
+      <plant Merge="true">
+        <visualSizeRange>1.5~2.9</visualSizeRange>
+        <leaflessGraphicPath>Things/Trees/TreeBirch_Leafless</leaflessGraphicPath>
+		<immatureGraphicPath/>
+		<leaflessImmatureGraphicPath/>
+        <growDays>17</growDays>
+        <harvestWork>700</harvestWork>
+        <harvestYield>35</harvestYield>
+        <sowMinSkill>3</sowMinSkill>
+        <sowResearchPrerequisites>
+          <li>Trees_B2</li>
+        </sowResearchPrerequisites>
+        <choppedThingDef>ChoppedBirchStump</choppedThingDef>
+        <smashedThingDef>SmashedBirchStump</smashedThingDef>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_TreeTeak"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Trees/TreeTeak</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.15, 0.2, 0.15)</volume>
+          <offset>(0,0,0)</offset>
+        </shadowData>
+      </graphicData>
+      <statBases Merge="true">
+        <Beauty>5</Beauty>
+        <BeautyOutdoors>5</BeautyOutdoors>
+      </statBases>
+      <plant Merge="true">
+        <leaflessGraphicPath>Things/Trees/TreeOak_Leafless</leaflessGraphicPath>
+		<immatureGraphicPath/>
+        <harvestWork>900</harvestWork>
+        <harvestYield>68</harvestYield>
+        <visualSizeRange>1.5~3.2</visualSizeRange>
+        <sowMinSkill>7</sowMinSkill>
+        <sowResearchPrerequisites>
+          <li>Trees_B3</li>
+        </sowResearchPrerequisites>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_TreeCecropia"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Trees/TreeCecropia</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.15, 0.2, 0.15)</volume>
+          <offset>(0,0,0)</offset>
+        </shadowData>
+      </graphicData>
+      <statBases Merge="true">
+        <Beauty>4</Beauty>
+        <BeautyOutdoors>4</BeautyOutdoors>
+      </statBases>
+      <plant Merge="true">
+        <visualSizeRange>1.2~3.5</visualSizeRange>
+        <growDays>16</growDays>
+        <harvestYield>30</harvestYield>
+        <sowMinSkill>2</sowMinSkill>
+        <sowResearchPrerequisites>
+          <li>TreeSowing</li>
+        </sowResearchPrerequisites>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_TreeWillow"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Trees/TreeWillow</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.2, 0.3, 0.13)</volume>
+          <offset>(0,0,-0.44)</offset>
+        </shadowData>
+      </graphicData>
+      <statBases Merge="true">
+        <Beauty>3</Beauty>
+        <BeautyOutdoors>3</BeautyOutdoors>
+      </statBases>
+      <plant Merge="true">
+        <growDays>12</growDays>
+        <leaflessGraphicPath>Things/Trees/TreeWillow_Leafless</leaflessGraphicPath>
+		<immatureGraphicPath/>
+		<leaflessImmatureGraphicPath/>
+        <harvestWork>700</harvestWork>
+        <harvestYield>20</harvestYield>
+        <visualSizeRange>1.3~2.05</visualSizeRange>
+        <sowMinSkill>3</sowMinSkill>
+        <sowResearchPrerequisites>
+          <li>TreeSowing</li>
+        </sowResearchPrerequisites>
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_TreeCypress"]</xpath>
+    <value>
+      <graphicData Merge="true">
+        <texPath>Things/Trees/TreeCypress</texPath>
+      </graphicData>
+      <statBases Merge="true">
+        <Beauty>3</Beauty>
+        <BeautyOutdoors>3</BeautyOutdoors>
+      </statBases>
+      <plant Merge="true">
+        <growDays>26</growDays>
+        <harvestWork>1200</harvestWork>
+        <harvestYield>45</harvestYield>
+        <visualSizeRange>2.2~3.8</visualSizeRange>
+        <sowMinSkill>7</sowMinSkill>
+        <sowResearchPrerequisites>
+          <li>Trees_B3</li>
+        </sowResearchPrerequisites>
+        <choppedThingDef>ChoppedStumpBig</choppedThingDef>
+        <smashedThingDef>SmashedStumpBig</smashedThingDef>
+      </plant>
+      <modExtensions>
+        <li Class="SK.ExtendedPlantGraphic">
+          <hasSnowyGraphic>true</hasSnowyGraphic>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_TreeMaple"]</xpath>
+    <value>
+      <graphicData Merge="true">
+        <texPath>Things/Trees/TreeMaple</texPath>
+      </graphicData>
+      <statBases Merge="true">
+        <Beauty>4</Beauty>
+        <BeautyOutdoors>4</BeautyOutdoors>
+      </statBases>
+      <plant Merge="true">
+        <growDays>22</growDays>
+        <leaflessGraphicPath>Things/Trees/TreeMaple_Leafless</leaflessGraphicPath>
+		<immatureGraphicPath/>
+		<leaflessImmatureGraphicPath/>
+        <harvestWork>600</harvestWork>
+        <harvestYield>40</harvestYield>
+        <sowMinSkill>5</sowMinSkill>
+        <sowResearchPrerequisites>
+          <li>Trees_B2</li>
+        </sowResearchPrerequisites>
+      </plant>
+    </value>
+  </Operation>
+
+</Patch>

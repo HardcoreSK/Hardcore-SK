@@ -56,11 +56,6 @@
     </value>
   </Operation>
 -->
-  <Operation Class="PatchOperationAttributeSet">
-    <xpath>Defs/ThingDef[defName="HayBed" or defName="HeyBedDouble"]/costList</xpath>
-    <attribute>Inherit</attribute>
-    <value>False</value>
-  </Operation>
   
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[@Name="SansComfortBedBase"]</xpath>

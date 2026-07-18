@@ -2,9 +2,8 @@
 <Defs>
 	<!--============================ Trees  ============================-->
 
-	<ThingDef ParentName="TreewoodBase">
+	<ThingDef ParentName="TreeBase">
 		<defName>Plant_Mangrove</defName>
-		<thingClass>SK.PlantMarsh</thingClass>
 		<label>mangrove tree</label>
 		<description>Mangroves are trees or shrubs that grow in salty water in hot places like the tropics.</description>
 		<graphicData>
@@ -26,10 +25,16 @@
 			<harvestYield>25</harvestYield>
 			<wildClusterRadius>10</wildClusterRadius>
 			<wildClusterWeight>11</wildClusterWeight>
+			<wildPlantUseDistanceToShore>true</wildPlantUseDistanceToShore>
+			<wildTerrainTags>
+			  <li>Mud</li>
+			  <li>WaterMarshy</li>
+			</wildTerrainTags>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
 		</plant>
 	</ThingDef>
-
-	<ThingDef ParentName="TreewoodBase">
+<!-- DefOverwrite
+	<ThingDef ParentName="TreeBase">
 		<defName>Plant_TreePalm</defName>
 		<label>palm tree</label>
 		<description>A tropical tree with a tall, naked trunk topped by a cluster of very broad leaves. Produces hard, fibrous fruits called coconuts. The palm tree will remain after harvesting and will start another cycle of coconut production.</description>
@@ -62,8 +67,8 @@
 			<wildClusterWeight>11</wildClusterWeight>
 		</plant>
 	</ThingDef>
-
-	<ThingDef ParentName="TreewoodBase">
+--><!-- DefOverwrite
+	<ThingDef ParentName="TreeBase">
 		<defName>Plant_TreeDrago</defName>
 		<label>drago tree</label>
 		<description>A hardy desert tree topped with thick, pointed leaves.</description>
@@ -98,8 +103,8 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_DeciduousTreeBase">
+--><!-- DefOverwrite
+	<ThingDef ParentName="DeciduousTreeBase">
 		<defName>Plant_TreeOak</defName>
 		<label>oak tree</label>
 		<description>Oak trees are slow growing, strong, hardwood trees.</description>
@@ -130,8 +135,8 @@
 			<smashedThingDef>SmashedStumpBig</smashedThingDef>
 		</plant>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_DeciduousTreeBase">
+--><!-- DefOverwrite
+	<ThingDef ParentName="DeciduousTreeBase">
 		<defName>Plant_TreePoplar</defName>
 		<label>poplar tree</label>
 		<description>Poplar trees are quick growing, softwood trees. They produce less wood than oak trees.</description>
@@ -162,9 +167,9 @@
 			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>
-
-
-	<ThingDef ParentName="TreewoodBase">
+-->
+<!-- DefOverwrite
+	<ThingDef ParentName="TreeBase">
 		<defName>Plant_TreePine</defName>
 		<label>pine tree</label>
 		<description>Pine trees are large conifer, softwood trees.</description>
@@ -190,7 +195,6 @@
 			<sowResearchPrerequisites>
 				<li>Trees_B3</li>
 			</sowResearchPrerequisites>
-			<!-- <pollutedGraphicPath>Things/Plant/TreePine_Polluted</pollutedGraphicPath> -->
 		</plant>
 		<modExtensions>
 			<li Class="SK.ExtendedPlantGraphic">
@@ -198,8 +202,8 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_DeciduousTreeBase">
+--><!-- DefOverwrite
+	<ThingDef ParentName="DeciduousTreeBase">
 		<defName>Plant_TreeBirch</defName>
 		<label>birch tree</label>
 		<description>Birch trees are northern, white trees known for having a thin, paper-like bark.</description>
@@ -230,9 +234,9 @@
 			<smashedThingDef>SmashedBirchStump</smashedThingDef>
 		</plant>
 	</ThingDef>
-
-
-	<ThingDef ParentName="SK_DeciduousTreeBase">
+-->
+<!-- DefOverwrite
+	<ThingDef ParentName="DeciduousTreeBase">
 		<defName>Plant_TreeTeak</defName>
 		<label>teak tree</label>
 		<description>Teak trees are very strong and slow growing hardwood trees. Wood from Teak Trees was used in ancient times to build sailing ships.</description>
@@ -260,8 +264,8 @@
 			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>
-
-	<ThingDef ParentName="TreewoodBase">
+--><!-- DefOverwrite
+	<ThingDef ParentName="TreeBase">
 		<defName>Plant_TreeCecropia</defName>
 		<label>cecropia tree</label>
 		<description>Cecropia trees are small, common rainforest trees. It grows very fast, but yields little usable wood.</description>
@@ -288,11 +292,10 @@
 			<sowResearchPrerequisites>
 				<li>TreeSowing</li>
 			</sowResearchPrerequisites>
-			<!-- <leaflessGraphicPath>Things/Plant/TreeCecropia_Leafless</leaflessGraphicPath> -->
 		</plant>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_DeciduousTreeBase">
+--><!-- DefOverwrite
+	<ThingDef ParentName="DeciduousTreeBase">
 		<defName>Plant_TreeWillow</defName>
 		<label>willow tree</label>
 		<description>One of the fastest growing shade trees providing a beautiful, thick, leafy canopy. Doesn't yield much usable wood.</description>
@@ -322,8 +325,8 @@
 			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_DeciduousTreeBase">
+--><!-- DefOverwrite
+	<ThingDef ParentName="DeciduousTreeBase">
 		<defName>Plant_TreeCypress</defName>
 		<label>cypress tree</label>
 		<description>A tall, slow-growing tree. Typically found in swamps. Despite its slow growth, planting these trees can be profitable because they yield much usable wood.</description>
@@ -359,8 +362,8 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_DeciduousTreeBase">
+--><!-- DefOverwrite
+	<ThingDef ParentName="DeciduousTreeBase">
 		<defName>Plant_TreeMaple</defName>
 		<label>maple tree</label>
 		<description>A common, medium-sized tree. It's often found in swamps and on moist terrain.</description>
@@ -389,8 +392,8 @@
 			<wildClusterWeight>25</wildClusterWeight>
 		</plant>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_TreeBase">
+-->
+	<ThingDef ParentName="TreeBase">
 		<defName>PlantTreeRedwood</defName>
 		<label>redwood</label>
 		<description>A huge, very slow growing tree. Its roots are shallow, and when it gets too large, it topples over. \n\n Yields red wood, which is valuable and rare.</description>
@@ -410,6 +413,7 @@
 		</statBases>
 		<blockLight>true</blockLight>
 		<plant>
+			<sowWork>1800</sowWork>
 			<sowTags />
 			<fertilityMin>0.8</fertilityMin>
 			<harvestedThingDef>RedWoodLog</harvestedThingDef>

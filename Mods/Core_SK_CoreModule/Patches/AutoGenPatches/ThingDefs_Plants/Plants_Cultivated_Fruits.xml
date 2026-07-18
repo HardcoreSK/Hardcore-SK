@@ -30,6 +30,12 @@
         <fertilityMin>0.3</fertilityMin>
         <visualSizeRange>0.7~1.1</visualSizeRange>
         <wildClusterWeight>53</wildClusterWeight>
+		<wildPlantUseDistanceToShore>true</wildPlantUseDistanceToShore>
+		<wildTerrainTags>
+			<li>Sand</li>
+			<li>Dry</li>
+		</wildTerrainTags>
+		<completelyIgnoreFertility>true</completelyIgnoreFertility>
       </plant>
     </value>
   </Operation>

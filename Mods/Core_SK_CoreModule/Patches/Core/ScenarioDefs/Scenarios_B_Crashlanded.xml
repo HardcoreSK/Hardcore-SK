@@ -4,22 +4,28 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ScenarioDef[defName="Crashlanded"]</xpath>
     <value>
-      <description>The three of you awake in your cryptosleep sarcophagi to the sound of sirens and ripping metal. You barely get to the escape pods before the ship is torn apart. Some time later, you land on this unknown rimworld.</description>
+      <description>Somewhere in the deep space, far from magnificent Glitterworlds, a slave ship full of its recent catch was orbiting an isolated planet.\n\n     No one knows what caused the explosion in the cargo deck, but the ship was torn apart instantly. The few slavers that survived the explosion tried to flee in the escape pods, but a failure emergency systems lead to automatic pre-release of those pods. Scattered ship parts crashed onto the planet's surface, killing everyone who was awake inside.\n\n     Nevertheless, some of the slaves sleeping in the prisoner cryptosleep caskets managed to survive the impact and awoke from their slumber. They had no idea where they were, how far away from home they were taken, or if they ever would get back again. As the debris settled, they trudged out onto the foreign land and began their survival in this harsh Rimworld.
+		Note: this scenario should have to start without creating a colonists in the manual mode (prepare carefully).
+		</description>
       <scenario>
-        <summary>Three crashlanded survivors - the classic RimWorld experience.</summary>
+        <summary>Ascend your colony of crashlanded survivors from primitive savagery to the magnificence of transcendence.</summary>
         <playerFaction>
           <def>PlayerFaction</def>
           <factionDef>PlayerColony</factionDef>
         </playerFaction>
         <parts>
+          <li Class="ScenPart_GameStartDialog">
+            <def>GameStartDialog</def>
+            <text>     Somewhere in the deep space, far from magnificent Glitterworlds, a slave ship full of its recent catch was orbiting an isolated planet.\n\n     No one knows what caused the explosion in the cargo deck, but the ship was torn apart instantly. The few slavers that survived the explosion tried to flee in the escape pods, but a failure emergency systems lead to automatic pre-release of those pods. Scattered ship parts crashed onto the planet's surface, killing everyone who was awake inside.\n\n     Nevertheless, some of the slaves sleeping in the prisoner cryptosleep caskets managed to survive the impact and awoke from their slumber. They had no idea where they were, how far away from home they were taken, or if they ever would get back again. As the debris settled, they trudged out onto the foreign land and began their survival in this harsh Rimworld.</text>
+            <closeSound>GameStartSting</closeSound>
+          </li>
           <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
             <def>ConfigPage_ConfigureStartingPawns</def>
             <pawnCount>3</pawnCount>
             <pawnChoiceCount>8</pawnChoiceCount>
           </li>
-          <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <li Class="SK.ScenPart_CrashLanding">
             <def>PlayerPawnsArriveMethod</def>
-            <method>DropPods</method>
             <visible>false</visible>
           </li>
           <li Class="ScenPart_ForcedHediff">
@@ -48,31 +54,17 @@
             <count>11</count>
             <allowRoofed>false</allowRoofed>
           </li>
-          
-          <li Class="ScenPart_StartingThing_Defined">
-            <def>StartingThing_Defined</def>
-            <thingDef>MealSurvivalPack</thingDef>
-            <count>24</count>
+          <li Class="ScenPart_ScatterThingsAnywhere">
+            <def>ScatterThingsAnywhere</def>
+            <visible>false</visible>
+            <thingDef>WoodPlank</thingDef>
+            <count>20</count>
           </li>
-          <li Class="ScenPart_StartingThing_Defined">
-            <def>StartingThing_Defined</def>
-            <thingDef>MedicineIndustrial</thingDef>
-            <count>16</count>
-          </li>
-          <li Class="ScenPart_StartingThing_Defined">
-            <def>StartingThing_Defined</def>
-            <thingDef>RF_Gun_VektorCP</thingDef>
-            <count>2</count>
-          </li>
-          <li Class="ScenPart_StartingThing_Defined">
-            <def>StartingThing_Defined</def>
-            <thingDef>Ammo_9x19mmPara_FMJ</thingDef>
-            <count>300</count>
-          </li>
-          <li Class="ScenPart_StartingThing_Defined">
-            <def>StartingThing_Defined</def>
-            <thingDef>MeleeWeapon_Knife</thingDef>
-            <stuff>Steel</stuff>
+          <li Class="ScenPart_ScatterThingsAnywhere">
+            <def>ScatterThingsAnywhere</def>
+            <visible>false</visible>
+            <thingDef>BlocksSandstone</thingDef>
+            <count>30</count>
           </li>
         </parts>
       </scenario>

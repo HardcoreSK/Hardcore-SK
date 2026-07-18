@@ -201,7 +201,7 @@
 	</ThingDef>
 <!-- Stopped here -->
 	<!--============================ Wild - Trees ============================-->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="PlantBase" Name="SK_TreeBase" Abstract="True">
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
@@ -243,7 +243,6 @@
 			<harvestMinGrowth>0.40</harvestMinGrowth>
 			<harvestFailable>false</harvestFailable>
 			<blockAdjacentSow>true</blockAdjacentSow>
-			<!-- <mustBeWildToSow>true</mustBeWildToSow> -->
 			<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
 			<burnedThingDef>BurnedTree</burnedThingDef>
 			<choppedThingDef>ChoppedStump</choppedThingDef>
@@ -260,7 +259,7 @@
 			<interferesWithRoof>true</interferesWithRoof>
 		</plant>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="WildPlantBase" Name="FruitTreeBase" Abstract="True">
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
@@ -326,8 +325,8 @@
 			</shaderParameters>
 		</graphicData>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_TreeBase" Name="TreewoodBase" Abstract="True">
+<!-- DefOverwrite - Unecessary
+	<ThingDef ParentName="TreeBase" Name="TreewoodBase" Abstract="True">
 		<plant>
 			<soundHarvesting>Harvest_Tree</soundHarvesting>
 			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
@@ -355,5 +354,5 @@
 			</shaderParameters>
 		</graphicData>
 	</ThingDef>
-
+-->
 </Defs>
