@@ -4,7 +4,7 @@
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[@Name="BasePawn"]</xpath>
 		<value>
-			<statBases>
+			<statBases Merge="true">
 				<MeleeDodgeChance>0</MeleeDodgeChance>
 				<MeleeCritChance>0</MeleeCritChance>
 				<MeleeParryChance>0</MeleeParryChance>
