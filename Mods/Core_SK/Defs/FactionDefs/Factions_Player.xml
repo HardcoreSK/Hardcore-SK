@@ -238,45 +238,6 @@
 		</apparelStuffFilter>
 	</FactionDef>
 
-	<FactionDef ParentName="PlayerFactionBase">
-		<defName>PlayerSurvivor</defName>
-		<label>New Survivors</label>
-		<description>A colony of recently-arrived off-worlders.</description>
-		<isPlayer>true</isPlayer>
-		<basicMemberKind>Survivor</basicMemberKind>
-		<pawnSingular>survivor</pawnSingular>
-		<pawnsPlural>survivors</pawnsPlural>
-		<techLevel>Industrial</techLevel>
-		<allowedCultures>
-			<li>Astropolitan</li>
-		</allowedCultures>
-		<backstoryFilters>
-			<li>
-				<categories>
-					<li>Offworld</li>
-				</categories>
-			</li>
-		</backstoryFilters>
-		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
-		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
-		<forageabilityFactor>1.3</forageabilityFactor>
-		<startingResearchTags>
-			<li>ClassicStart</li>
-		</startingResearchTags>
-		<apparelStuffFilter>
-			<categories>
-				<li>Leathers</li>
-			</categories>
-			<thingDefs>
-				<li>Steel</li>
-				<li>Synthread</li>
-				<li>FerrosiliconAlloy</li>
-				<li>CupronickelAlloy</li>
-				<li>SteelBar</li>
-			</thingDefs>
-		</apparelStuffFilter>
-	</FactionDef>
 
 	<FactionDef ParentName="PlayerFactionBase">
 		<defName>OrassanPlayerColony</defName>

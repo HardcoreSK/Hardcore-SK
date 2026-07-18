@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ScenarioDef[defName="Crashlanded"]</xpath>
+    <value>
+      <description>The three of you awake in your cryptosleep sarcophagi to the sound of sirens and ripping metal. You barely get to the escape pods before the ship is torn apart. Some time later, you land on this unknown rimworld.</description>
+      <scenario>
+        <summary>Three crashlanded survivors - the classic RimWorld experience.</summary>
+        <playerFaction>
+          <def>PlayerFaction</def>
+          <factionDef>PlayerColony</factionDef>
+        </playerFaction>
+        <parts>
+          <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+            <def>ConfigPage_ConfigureStartingPawns</def>
+            <pawnCount>3</pawnCount>
+            <pawnChoiceCount>8</pawnChoiceCount>
+          </li>
+          <li Class="ScenPart_PlayerPawnsArriveMethod">
+            <def>PlayerPawnsArriveMethod</def>
+            <method>DropPods</method>
+            <visible>false</visible>
+          </li>
+          <li Class="ScenPart_ForcedHediff">
+            <def>ForcedHediff</def>
+            <visible>false</visible>
+            <context>PlayerStarter</context>
+            <chance>0.5</chance>
+            <hediff>CryptosleepSickness</hediff>
+            <hideOffMap>true</hideOffMap>
+            <severityRange>
+              <min>1</min>
+              <max>1</max>
+            </severityRange>
+          </li>
+          <li Class="ScenPart_ScatterThingsAnywhere">
+            <def>ScatterThingsAnywhere</def>
+            <visible>false</visible>
+            <thingDef>ShipChunk</thingDef>
+            <count>15</count>
+            <allowRoofed>false</allowRoofed>
+          </li>
+          <li Class="ScenPart_ScatterThingsAnywhere">
+            <def>ScatterThingsAnywhere</def>
+            <visible>false</visible>
+            <thingDef>ShipMechChunk</thingDef>
+            <count>11</count>
+            <allowRoofed>false</allowRoofed>
+          </li>
+          
+          <li Class="ScenPart_StartingThing_Defined">
+            <def>StartingThing_Defined</def>
+            <thingDef>MealSurvivalPack</thingDef>
+            <count>24</count>
+          </li>
+          <li Class="ScenPart_StartingThing_Defined">
+            <def>StartingThing_Defined</def>
+            <thingDef>MedicineIndustrial</thingDef>
+            <count>16</count>
+          </li>
+          <li Class="ScenPart_StartingThing_Defined">
+            <def>StartingThing_Defined</def>
+            <thingDef>RF_Gun_VektorCP</thingDef>
+            <count>2</count>
+          </li>
+          <li Class="ScenPart_StartingThing_Defined">
+            <def>StartingThing_Defined</def>
+            <thingDef>Ammo_9x19mmPara_FMJ</thingDef>
+            <count>300</count>
+          </li>
+          <li Class="ScenPart_StartingThing_Defined">
+            <def>StartingThing_Defined</def>
+            <thingDef>MeleeWeapon_Knife</thingDef>
+            <stuff>Steel</stuff>
+          </li>
+        </parts>
+      </scenario>
+    </value>
+  </Operation>
+
+</Patch>
