@@ -288,4 +288,13 @@
 		</value>
 	</Operation>
 
+	<!-- ========== Add soundExplosion to Bullet for cookoff ========== -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/DamageDef[defName="Bullet"]</xpath>
+		<value>
+			<soundExplosion>Explosion_Bomb</soundExplosion>
+		</value>
+	</Operation>
+
 </Patch>

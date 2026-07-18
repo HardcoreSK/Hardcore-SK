@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- ========== Structures ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Defoliator"]/fillPercent</xpath>
+		<value>
+			<fillPercent>0.85</fillPercent>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Defoliator"]/comps/li[@Class="CompProperties_Explosive"]/wickTicks</xpath>
+		<value>
+			<wickTicks>
+				<min>240</min>
+				<max>600</max>
+			</wickTicks>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="UnstablePowerCell"]/comps/li[@Class="CompProperties_Explosive"]/wickTicks</xpath>
+		<value>
+			<wickTicks>
+				<min>280</min>
+				<max>660</max>
+			</wickTicks>
+		</value>
+	</Operation>
+
+</Patch>
