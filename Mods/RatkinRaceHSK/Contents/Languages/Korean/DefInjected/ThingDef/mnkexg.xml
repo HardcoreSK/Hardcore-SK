@@ -426,7 +426,14 @@
   <Bullet_RK_PrototypePulseRifleHeavy.label>고밀도 쐐기탄</Bullet_RK_PrototypePulseRifleHeavy.label>
   <RK_Weapon_BFR.label>랫킨 다목적 저격 소총</RK_Weapon_BFR.label>
   <RK_Weapon_BFR.description>대구경 저격 소총입니다. 다목적 상황을 가정하여 개발되었으며 연구를 통해 여러 탄환 사용이 가능합니다.</RK_Weapon_BFR.description>
-  <RK_Weapon_BFR.verbs.Verb_BFRShoot.label>AP 사격</RK_Weapon_BFR.verbs.Verb_BFRShoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Weapon_BFR.verbs.Verb_BFRShoot.label
+  Reason: Couldn't inject RK_Weapon_BFR.verbs.Verb_BFRShoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_BFRShoot.
+  
+<RK_Weapon_BFR.verbs.Verb_BFRShoot.label>AP 사격</RK_Weapon_BFR.verbs.Verb_BFRShoot.label>
+  -->
   <RK_Weapon_BFR.tools.0.label>개머리판</RK_Weapon_BFR.tools.0.label>
   <RK_Weapon_BFR.tools.1.label>총열</RK_Weapon_BFR.tools.1.label>
   <Bullet_BFR_AP.label>관통탄</Bullet_BFR_AP.label>
