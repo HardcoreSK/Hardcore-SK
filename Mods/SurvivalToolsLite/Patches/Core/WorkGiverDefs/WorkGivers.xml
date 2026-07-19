@@ -24,6 +24,18 @@
             </li>
         </value>
     </Operation>
+	
+    <!-- Smith -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/WorkGiverDef[workType="Smithing"]</xpath>
+        <value>
+            <li Class="SurvivalToolsLite.WorkGiverExtension">
+                <requiredStats>
+                    <li>SmithingSpeed</li>
+                </requiredStats>
+            </li>
+        </value>
+    </Operation>
 
     <!-- Growing -->
     <Operation Class="PatchOperationAddModExtension">
