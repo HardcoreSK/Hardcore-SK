@@ -500,16 +500,8 @@
 			</shadowData>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<comps>
-			<li Class="SK.CompLoot_Properties">
-				<lootCounters>
-					<ChunkSlagSteel>5</ChunkSlagSteel>
-					<MedicineIndustrial>10</MedicineIndustrial>
-					<MealSurvivalPack>10</MealSurvivalPack>
-					<Gun_BoltActionRifle>1</Gun_BoltActionRifle>
-					<Ammo_303British_FMJ>150</Ammo_303British_FMJ>
-				</lootCounters>
-			</li>
+    <comps>
+			<li Class="SK.CompSealedCargo_Properties"></li>
 		</comps>
 	</ThingDef>
 
@@ -531,17 +523,8 @@
 		<statBases>
 			<WorkToBuild>600</WorkToBuild>
 		</statBases>
-		<comps>
-			<li Class="SK.CompLoot_Properties">
-				<lootCounters>
-					<Turret_KPV>1</Turret_KPV>
-					<Ammo_145x114mm_FMJ>200</Ammo_145x114mm_FMJ>
-					<ChunkSlagSteel>10</ChunkSlagSteel>
-					<MedicineIndustrial>10</MedicineIndustrial>
-					<MealSurvivalPack>10</MealSurvivalPack>
-					<MeleeWeapon_Monkeywrench>1</MeleeWeapon_Monkeywrench>
-				</lootCounters>
-			</li>
+    <comps>
+			<li Class="SK.CompSealedCargo_Properties"></li>
 		</comps>
 	</ThingDef>
 
