@@ -27,6 +27,25 @@
           <li Class="SK.ScenPart_CrashLanding">
             <def>PlayerPawnsArriveMethod</def>
             <visible>false</visible>
+            <slaverPodCount>2</slaverPodCount>
+            <slaverPodContents>
+              <li>
+                <thingDef>MedicineIndustrial</thingDef>
+                <count>10</count>
+              </li>
+              <li>
+                <thingDef>MealSurvivalPack</thingDef>
+                <count>10</count>
+              </li>
+              <li>
+                <thingDef>RF_Gun_VektorCP</thingDef>
+                <count>1</count>
+              </li>
+              <li>
+                <thingDef>Ammo_9x19mmPara_FMJ</thingDef>
+                <count>150</count>
+              </li>
+            </slaverPodContents>
           </li>
           <li Class="ScenPart_ForcedHediff">
             <def>ForcedHediff</def>
@@ -54,17 +73,16 @@
             <count>11</count>
             <allowRoofed>false</allowRoofed>
           </li>
-          <li Class="ScenPart_ScatterThingsAnywhere">
-            <def>ScatterThingsAnywhere</def>
-            <visible>false</visible>
-            <thingDef>WoodPlank</thingDef>
-            <count>20</count>
+
+          <li Class="ScenPart_StartingThing_Defined">
+            <def>StartingThing_Defined</def>
+            <thingDef>MedicineIndustrial</thingDef>
+            <count>16</count>
           </li>
-          <li Class="ScenPart_ScatterThingsAnywhere">
-            <def>ScatterThingsAnywhere</def>
-            <visible>false</visible>
-            <thingDef>BlocksSandstone</thingDef>
-            <count>30</count>
+          <li Class="ScenPart_StartingThing_Defined">
+            <def>StartingThing_Defined</def>
+            <thingDef>MeleeWeapon_Knife</thingDef>
+            <stuff>Steel</stuff>
           </li>
         </parts>
       </scenario>
