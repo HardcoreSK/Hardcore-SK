@@ -426,7 +426,14 @@
   <Bullet_RK_PrototypePulseRifleHeavy.label>高密度楔弾</Bullet_RK_PrototypePulseRifleHeavy.label>
   <RK_Weapon_BFR.label>ラットキン多目的狙撃小銃</RK_Weapon_BFR.label>
   <RK_Weapon_BFR.description>大口径狙撃小銃です。多目的な状況を想定して開発されており、研究によって複数の弾種を使用できます。</RK_Weapon_BFR.description>
-  <RK_Weapon_BFR.verbs.Verb_BFRShoot.label>AP射撃</RK_Weapon_BFR.verbs.Verb_BFRShoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Weapon_BFR.verbs.Verb_BFRShoot.label
+  Reason: Couldn't inject RK_Weapon_BFR.verbs.Verb_BFRShoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_BFRShoot.
+  
+<RK_Weapon_BFR.verbs.Verb_BFRShoot.label>AP射撃</RK_Weapon_BFR.verbs.Verb_BFRShoot.label>
+  -->
   <RK_Weapon_BFR.tools.0.label>銃床</RK_Weapon_BFR.tools.0.label>
   <RK_Weapon_BFR.tools.1.label>銃身</RK_Weapon_BFR.tools.1.label>
   <Bullet_BFR_AP.label>貫通弾</Bullet_BFR_AP.label>

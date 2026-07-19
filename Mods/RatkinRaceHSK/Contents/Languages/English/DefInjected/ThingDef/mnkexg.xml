@@ -563,7 +563,14 @@ The size of the weapon makes it impossible for humans to use it.</RK_PrototypePu
   <RK_Weapon_BFR.description>A large-caliber sniper rifle. Designed for multipurpose use, it can be upgraded to fire multiple ammunition types.
 
 The size of the weapon makes it impossible for humans to use it.</RK_Weapon_BFR.description>
-  <RK_Weapon_BFR.verbs.Verb_BFRShoot.label>AP shot</RK_Weapon_BFR.verbs.Verb_BFRShoot.label>
+    <!--
+  HSK Patched out or doesn't exist.
+  
+  Key: RK_Weapon_BFR.verbs.Verb_BFRShoot.label
+  Reason: Couldn't inject RK_Weapon_BFR.verbs.Verb_BFRShoot.label into Verse.ThingDef (mnkexg.xml): None of the list elements have a handle named Verb_BFRShoot.
+  
+<RK_Weapon_BFR.verbs.Verb_BFRShoot.label>AP shot</RK_Weapon_BFR.verbs.Verb_BFRShoot.label>
+  -->
   <RK_Weapon_BFR.tools.0.label>stock</RK_Weapon_BFR.tools.0.label>
   <RK_Weapon_BFR.tools.1.label>barrel</RK_Weapon_BFR.tools.1.label>
   <Bullet_BFR_AP.label>wedge bullet (AP)</Bullet_BFR_AP.label>
