@@ -33,11 +33,6 @@
                 <uninstallWork>150</uninstallWork>
             </building>
             <comps><!-- Remove Duplicate ReportWorkSpeed -->
-                <li Class="CompProperties_AffectedByFacilities">
-                    <linkableFacilities>
-                        <li>ToolCabinet</li>
-                    </linkableFacilities>
-                </li>
             </comps>
             <recipes Merge="true">
                 <li>ButcherCorpseFlesh</li>
@@ -611,6 +606,7 @@
                     <linkableFacilities>
                         <li>Patterner</li>
                         <li>Small_ToolCabinet</li>
+                        <li>ToolCabinet</li>
                         <li>PodChair</li>
                     </linkableFacilities>
                 </li>
@@ -918,6 +914,7 @@
             <comps>
                 <li Class="CompProperties_AffectedByFacilities">
                     <linkableFacilities>
+                        <li>Small_ToolCabinet</li>
                         <li>ToolCabinet</li>
                         <li>PodChair</li>
                     </linkableFacilities>
@@ -979,7 +976,6 @@
                 <li Class="CompProperties_AffectedByFacilities">
                     <linkableFacilities>
                         <li>Small_ToolCabinet</li>
-                        <li>PodChair</li>
                     </linkableFacilities>
                 </li>
             </comps>

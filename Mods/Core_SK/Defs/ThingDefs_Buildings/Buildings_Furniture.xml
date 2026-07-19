@@ -90,9 +90,9 @@
 		</statBases>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<stuffCategories>
-			<li>Woody</li>
+			<li>WoodLogs</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<pathCost>30</pathCost>
 		<designationCategory>Furniture</designationCategory>
 		<fillPercent>0.35</fillPercent>
@@ -1025,8 +1025,8 @@
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2</StyleDominance>
 		</statBases>
 		<size>(2,1)</size>
-		<stuffCategories>
-			<li>Woody</li>
+		<stuffCategories Inherit="False">
+			<li>WoodLogs</li>
 		</stuffCategories>
 		<costStuffCount>60</costStuffCount>
 		<rotatable>true</rotatable>

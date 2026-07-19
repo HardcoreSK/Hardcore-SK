@@ -541,11 +541,14 @@
                 <Mechanism>5</Mechanism>
             </costList>
             <comps>
-                <li Class="CompProperties_Facility">
+                <li Class="SK.CompProperties_QualityScaledFacility">
                     <statOffsets>
-                        <WorkTableWorkSpeedFactor>0.20</WorkTableWorkSpeedFactor>
+                        <WorkTableWorkSpeedFactor>0.2</WorkTableWorkSpeedFactor>
                     </statOffsets>
-                    <maxSimultaneous>2</maxSimultaneous>
+                    <maxSimultaneous>1</maxSimultaneous>
+                </li>
+                <li>
+                  <compClass>CompQuality</compClass>
                 </li>
             </comps>
             <researchPrerequisites>
