@@ -32,8 +32,17 @@
             <building Merge="true">
                 <uninstallWork>150</uninstallWork>
             </building>
-            <comps><!-- Remove Duplicate ReportWorkSpeed -->
-            </comps>
+			<comps>
+			  <li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+				  <li>ToolCabinet</li>
+				</linkableFacilities>
+			  </li>
+			</comps>
+			<placeWorkers>
+			  <li>PlaceWorker_ShowFacilitiesConnections</li>
+			  <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+			</placeWorkers>
             <recipes Merge="true">
                 <li>ButcherCorpseFlesh</li>
                 <li>MakeHerbMedicine</li>
