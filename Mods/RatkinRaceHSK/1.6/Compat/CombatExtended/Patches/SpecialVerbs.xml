@@ -32,6 +32,31 @@
     </value>
   </Operation>
 
+  <!-- Strawberry beer: resolve the bottle strike through CE, then apply the
+       Ratkin alcohol effect only when the hit deals damage. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ManeuverDef[defName="RK_BeerBottleStrike"]/verb/verbClass</xpath>
+    <value>
+      <verbClass>NewRatkin.CombatExtended.Verb_StrawberryBeerMeleeCE</verbClass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="RK_StrawberryBeer"]/tools/li[capacities/li="RK_BeerBottle"]</xpath>
+    <value>
+      <li Class="CombatExtended.ToolCE">
+        <label>bottle</label>
+        <capacities>
+          <li>RK_BeerBottle</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.1</cooldownTime>
+        <chanceFactor>5.0</chanceFactor>
+        <armorPenetrationBlunt>1</armorPenetrationBlunt>
+      </li>
+    </value>
+  </Operation>
+
   <!-- Pulse rifle: restore its light-burst/heavy-shot Ratkin modes on top of CE. -->
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="RK_PrototypePulseRifle"]/verbs</xpath>
