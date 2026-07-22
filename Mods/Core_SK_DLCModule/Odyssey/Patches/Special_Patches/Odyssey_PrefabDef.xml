@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/PrefabDef[defName="BiofuelRefinery_Cluster"]/BiofuelRefinery</xpath>
+		<value>
+			<stuff>Steel</stuff>
+		</value>
+	</Operation>
+	
+</Patch>
