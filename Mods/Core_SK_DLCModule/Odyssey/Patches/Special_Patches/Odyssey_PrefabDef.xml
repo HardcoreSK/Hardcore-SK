@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/PrefabDef[defName="BiofuelRefinery_Cluster"]/BiofuelRefinery</xpath>
+		<xpath>Defs/PrefabDef[defName="BiofuelRefinery_Cluster"]/things/BiofuelRefinery</xpath>
 		<value>
 			<stuff>Steel</stuff>
 		</value>
