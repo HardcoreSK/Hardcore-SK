@@ -216,11 +216,6 @@
 								<defName>CreepyBreathing</defName>
 							</li>
 						</disallowedTraits>
-						<growthAges MayRequire="Ludeon.RimWorld.Biotech">
-							<li>5</li>
-							<li>8</li>
-							<li>11</li>
-						</growthAges>
 						<reproduction>
 							<femaleFertilityAgeFactor>
 								<points>
@@ -502,28 +497,6 @@
 							<li>(5, 0)</li>
 						</points>
 					</litterSizeCurve>
-					<lifeStageAges Inherit="false">
-						<li>
-							<def>HumanlikeBaby</def>
-							<minAge>0</minAge>
-						</li>
-						<li>
-							<def>HumanlikeChild</def>
-							<minAge>2</minAge>
-						</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">
-							<def>HumanlikePreTeenager</def>
-							<minAge>6</minAge>
-						</li>
-						<li>
-							<def>HumanlikeTeenager</def>
-							<minAge>11</minAge>
-						</li>
-						<li>
-							<def>HumanlikeAdult</def>
-							<minAge>16</minAge>
-						</li>
-					</lifeStageAges>
 					<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
 						<Firefighter>5</Firefighter>
 						<Patient>0</Patient>
