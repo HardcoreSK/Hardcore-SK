@@ -33,6 +33,64 @@
     <exclusionTags>
       <li>Ears</li>
     </exclusionTags>
+	<renderNodeProperties>
+		<li Class="PawnRenderNodeProperties_EarHideByApparelTag">
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<texPath>Things/Pawn/Humanlike/OrassanEars/EarLeft</texPath>
+			<colorType>Skin</colorType>
+			<parentTagDef>Head</parentTagDef>
+			<linkedBodyPartsGroup>HSK_LeftEar</linkedBodyPartsGroup>
+			<useSkinShader>true</useSkinShader>
+			<useRottenColor>true</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+				<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+				<defaultData>
+					<layer>105</layer>
+				</defaultData>
+				<dataNorth>
+					<offset>(0.02, 0, 0.16)</offset>
+				</dataNorth>
+				<dataSouth>
+					<offset>(-0.08, 0, 0.19)</offset>
+				</dataSouth>
+				<dataEast>
+					<offset>(-0.15, -0.25, 0.26)</offset>
+				</dataEast>
+				<dataWest>
+					<offset>(0.15,0.15, 0.26)</offset>
+				</dataWest>
+			</drawData>
+		</li>
+		<li Class="PawnRenderNodeProperties_EarHideByApparelTag">
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<texPath>Things/Pawn/Humanlike/OrassanEars/EarRight</texPath>
+			<colorType>Skin</colorType>
+			<parentTagDef>Head</parentTagDef>
+			<linkedBodyPartsGroup>HSK_RightEar</linkedBodyPartsGroup>
+			<useSkinShader>true</useSkinShader>
+			<useRottenColor>true</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+				<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+				<defaultData>
+					<layer>105</layer>
+				</defaultData>
+				<dataNorth>
+					<offset>(-0.06, 0, 0.16)</offset>
+				</dataNorth>
+				<dataSouth>
+					<offset>(0.04, 0, 0.19)</offset>
+				</dataSouth>
+				<dataEast>
+					<offset>(-0.15, 0.15, 0.26)</offset>
+				</dataEast>
+				<dataWest>
+					<offset>(0.15, -0.25, 0.26)</offset>
+				</dataWest>
+			</drawData>
+		</li>
+	</renderNodeProperties>
     <symbolPack>
       <prefixSymbols>
         <li><symbol>cat</symbol></li>
@@ -68,26 +126,43 @@
 		<capacity>Manipulation</capacity>
 		<offset>0.05</offset>
 	  </li>
-	</capMods><!--
+	</capMods>
+	<renderNodeProperties>
+		<li>
+			<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+			<texPath>Things/Pawn/Humanlike/OrassanTails/OTail</texPath>
+			<colorType>Skin</colorType>
+			<overrideMeshSize>(1, 1)</overrideMeshSize>
+			<parentTagDef>Body</parentTagDef>
+			<linkedBodyPartsGroup>HSK_Tail</linkedBodyPartsGroup>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+				<scale>1.5</scale>
+				<childScale>1</childScale>
+				<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+				<defaultData>
+					<layer>-2</layer>
+				</defaultData>
+				<dataNorth>
+					<offset>(-0.05, 0.15,-0.75)</offset>
+					<layer>90</layer>
+				</dataNorth>
+				<dataSouth>
+					<offset>(0, 0,0)</offset>
+				</dataSouth>
+				<dataEast>
+					<offset>(-0.67, 0,-0.54)</offset>
+				</dataEast>
+				<dataWest>
+					<offset>(0.67, 0,-0.54)</offset>
+				</dataWest>
+			</drawData>
+		</li>
+	</renderNodeProperties>
+	<!--
 	<randomChosen>true</randomChosen>
-    <graphicData>
-      <drawLoc>Tailbone</drawLoc>
-    </graphicData>
-    <capMods>
-      <li>
-        <capacity>Manipulation</capacity>
-        <offset>0.05</offset>
-      </li>
-    </capMods>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
-    <graphicData>
-      <graphicPath>Things/Pawn/Humanlike/BodyAttachments/SmoothTail/SmoothTail</graphicPath>
-      <colorType>Hair</colorType>
-      <drawOffsetNorth>(0, 0.2, -0.15)</drawOffsetNorth>
-      <drawOffsetSouth>(0, -0.1, -0.15)</drawOffsetSouth>
-      <drawOffsetEast>(-0.5, -0.1, -0.15)</drawOffsetEast>
-    </graphicData>-->
+    <biostatMet>-1</biostatMet>-->
   </GeneDef>
 
   <GeneDef>
@@ -99,15 +174,7 @@
     <endogeneCategory>Ears</endogeneCategory>
     <displayCategory>Cosmetic</displayCategory>
     <displayOrderInCategory>70</displayOrderInCategory>
-    <iconColor>(0.75, 0.75, 0.75)</iconColor><!--
-    <graphicData>
-      <layer>PostHair</layer>
-      <drawNorthAfterHair>true</drawNorthAfterHair>
-      <useSkinShader>true</useSkinShader>
-      <drawLoc>HeadTop</drawLoc>
-      <graphicPath>Things/Pawn/Humanlike/HeadAttachments/PointedEars/PointedEars</graphicPath>
-      <colorType>Skin</colorType>
-    </graphicData>-->
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
 	<capMods>
 	  <li>
 		<capacity>Hearing</capacity>
@@ -120,6 +187,64 @@
     <exclusionTags>
       <li>Ears</li>
     </exclusionTags>
+	<renderNodeProperties>
+		<li Class="PawnRenderNodeProperties_EarHideByApparelTag">
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<texPath>Things/Pawn/Humanlike/DovaEars/EarLeft</texPath>
+			<colorType>Skin</colorType>
+			<parentTagDef>Head</parentTagDef>
+			<linkedBodyPartsGroup>HSK_LeftEar</linkedBodyPartsGroup>
+			<useSkinShader>true</useSkinShader>
+			<useRottenColor>true</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+				<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+				<defaultData>
+					<layer>105</layer>
+				</defaultData>
+				<dataNorth>
+					<offset>(0, 0, -0.1)</offset>
+				</dataNorth>
+				<dataSouth>
+					<offset>(0.01, 0, -0.1)</offset>
+				</dataSouth>
+				<dataEast>
+					<offset>(-0.05, -0.25, -0.06)</offset>
+				</dataEast>
+				<dataWest>
+					<offset>(0.05,0.15, -0.06)</offset>
+				</dataWest>
+			</drawData>
+		</li>
+		<li Class="PawnRenderNodeProperties_EarHideByApparelTag">
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<texPath>Things/Pawn/Humanlike/DovaEars/EarRight</texPath>
+			<colorType>Skin</colorType>
+			<parentTagDef>Head</parentTagDef>
+			<linkedBodyPartsGroup>HSK_RightEar</linkedBodyPartsGroup>
+			<useSkinShader>true</useSkinShader>
+			<useRottenColor>true</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+				<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+				<defaultData>
+					<layer>105</layer>
+				</defaultData>
+				<dataNorth>
+					<offset>(0.01, 0, -0.1)</offset>
+				</dataNorth>
+				<dataSouth>
+					<offset>(0.005, 0, -0.1)</offset>
+				</dataSouth>
+				<dataEast>
+					<offset>(0, 0.15, -0.06)</offset>
+				</dataEast>
+				<dataWest>
+					<offset>(0.05, -0.25, -0.06)</offset>
+				</dataWest>
+			</drawData>
+		</li>
+	</renderNodeProperties>
     <symbolPack>
       <prefixSymbols>
         <li><symbol>point</symbol></li>
@@ -141,15 +266,7 @@
     <endogeneCategory>Ears</endogeneCategory>
     <displayCategory>Cosmetic</displayCategory>
     <displayOrderInCategory>70</displayOrderInCategory>
-    <iconColor>(0.75, 0.75, 0.75)</iconColor><!--
-    <graphicData>
-      <layer>PostHair</layer>
-      <drawNorthAfterHair>true</drawNorthAfterHair>
-      <useSkinShader>true</useSkinShader>
-      <drawLoc>HeadTop</drawLoc>
-      <graphicPath>Things/Pawn/Humanlike/HeadAttachments/PointedEars/PointedEars</graphicPath>
-      <colorType>Skin</colorType>
-    </graphicData>-->
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
 	<capMods>
 	  <li>
 		<capacity>Hearing</capacity>
@@ -162,6 +279,64 @@
 	<exclusionTags>
       <li>Ears</li>
     </exclusionTags>
+	<renderNodeProperties>
+		<li Class="PawnRenderNodeProperties_EarHideByApparelTag">
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<texPath>Things/Pawn/Humanlike/ElvenEars/EarLeft</texPath>
+			<colorType>Skin</colorType>
+			<parentTagDef>Head</parentTagDef>
+			<linkedBodyPartsGroup>HSK_LeftEar</linkedBodyPartsGroup>
+			<useSkinShader>true</useSkinShader>
+			<useRottenColor>true</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+				<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+				<defaultData>
+					<layer>105</layer>
+				</defaultData>
+				<dataNorth>
+					<offset>(0, 0, -0.08)</offset>
+				</dataNorth>
+				<dataSouth>
+					<offset>(0.01, 0, -0.08)</offset>
+				</dataSouth>
+				<dataEast>
+					<offset>(-0.05, -0.25, -0.06)</offset>
+				</dataEast>
+				<dataWest>
+					<offset>(0.05,0.15, -0.06)</offset>
+				</dataWest>
+			</drawData>
+		</li>
+		<li Class="PawnRenderNodeProperties_EarHideByApparelTag">
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<texPath>Things/Pawn/Humanlike/ElvenEars/EarRight</texPath>
+			<colorType>Skin</colorType>
+			<parentTagDef>Head</parentTagDef>
+			<linkedBodyPartsGroup>HSK_RightEar</linkedBodyPartsGroup>
+			<useSkinShader>true</useSkinShader>
+			<useRottenColor>true</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+				<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+				<defaultData>
+					<layer>105</layer>
+				</defaultData>
+				<dataNorth>
+					<offset>(0.01, 0, -0.08)</offset>
+				</dataNorth>
+				<dataSouth>
+					<offset>(0.005, 0, -0.08)</offset>
+				</dataSouth>
+				<dataEast>
+					<offset>(0, 0.15, -0.06)</offset>
+				</dataEast>
+				<dataWest>
+					<offset>(0.05, -0.25, -0.06)</offset>
+				</dataWest>
+			</drawData>
+		</li>
+	</renderNodeProperties>
     <symbolPack>
       <prefixSymbols>
         <li><symbol>point</symbol></li>

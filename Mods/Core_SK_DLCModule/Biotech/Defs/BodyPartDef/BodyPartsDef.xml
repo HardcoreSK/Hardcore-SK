@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyPartDef>
+		<defName>HSK_BodyPart_Tailbone</defName>
+		<label>tail bone</label>
+		<hitPoints>15</hitPoints>
+		<frostbiteVulnerability>1</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<beautyRelated>true</beautyRelated>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartGroupDef>
+		<defName>HSK_LeftEar</defName>
+		<label>left ear</label>
+		<listOrder>196</listOrder>
+	</BodyPartGroupDef>
+
+	<BodyPartGroupDef>
+		<defName>HSK_RightEar</defName>
+		<label>right ear</label>
+		<listOrder>197</listOrder>
+	</BodyPartGroupDef>
+
+	<BodyPartGroupDef>
+		<defName>HSK_Tail</defName>
+		<label>tail</label>
+		<listOrder>45</listOrder>
+	</BodyPartGroupDef>
+
+</Defs>	

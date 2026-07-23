@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!--
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="RK_BodyPart_Tail"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/BodyPartDef[defName="RK_BodyPart_Tail"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/BodyPartGroupDef[defName="RK_Tail"]</xpath>
+	</Operation>
+-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="Neck"]/parts/li[def = "Head"]/parts/li[customLabel="left ear"]/groups</xpath>
+		<value>
+			<li>HSK_LeftEar</li>
+		</value>
+	</Operation>
+  
+  	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="Neck"]/parts/li[def = "Head"]/parts/li[customLabel="right ear"]/groups</xpath>
+		<value>
+			<li>HSK_RightEar</li>
+		</value>
+	</Operation>
+  
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="RK_BodyPart_Tail"]/groups</xpath>
+		<value>
+			<groups>
+				<li>Waist</li>
+				<li>RK_Tail</li>
+				<li>HSK_Tail</li>
+			</groups>
+		</value>
+	</Operation>
+
+</Patch>	

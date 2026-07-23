@@ -523,7 +523,7 @@
                     <customPortraitDrawSize>(0.85, 1.1)</customPortraitDrawSize>
                     <customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitHeadDrawSize>
                     <!--<getsGreyAt>80</getsGreyAt>-->
-                    <oldHairAgeRange>80.0~120.0</oldHairAgeRange>
+                    <oldHairAgeRange>80.0~120.0</oldHairAgeRange><!--
                     <bodyAddons>
                         <li>
                             <conditions>
@@ -687,7 +687,7 @@
                                 </east>
                             </offsets>
                         </li>
-                    </bodyAddons>
+                    </bodyAddons>-->
                     <colorChannels>
                         <li>
                             <name>skin</name>
@@ -789,6 +789,8 @@
                         <Male>Things/Pawn/Humanlike/Bodies/Naked_Male</Male>
                         <Female>Things/Pawn/Humanlike/Bodies/Naked_Female</Female>
                         <Thin>Things/Pawn/Humanlike/Bodies/Naked_Thin</Thin>
+                        <Hulk>Things/Pawn/Humanlike/Bodies/Naked_Hulk</Hulk>
+                        <Fat>Things/Pawn/Humanlike/Bodies/Naked_Fat</Fat>
                         <Child MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Bodies/Child/Naked_Child</Child>
                         <Baby MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Bodies/Naked_Baby</Baby>
                     </bodytypeGraphics>
@@ -849,6 +851,17 @@
                 </blackEndoCategories>
                 <xenotypeList>
                     <li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Nova</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">Starjack</li>
                 </xenotypeList>
                 <onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
             </raceRestriction>
@@ -1048,7 +1061,7 @@
                         <li>Thin</li>
                     </bodyTypes>
                     <!--<getsGreyAt>1000</getsGreyAt>-->
-                    <oldHairAgeRange>1000.0~1200.0</oldHairAgeRange>
+                    <oldHairAgeRange>1000.0~1200.0</oldHairAgeRange><!--
                     <bodyAddons>
                         <li>
                             <conditions>
@@ -1212,7 +1225,7 @@
                                 </east>
                             </offsets>
                         </li>
-                    </bodyAddons>
+                    </bodyAddons>-->
                     <colorChannels>
                         <li>
                             <name>skin</name>
@@ -1400,6 +1413,17 @@
                 </blackEndoCategories>
                 <xenotypeList>
                     <li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Dova</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">Starjack</li>
                 </xenotypeList>
                 <onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
             </raceRestriction>
@@ -1644,6 +1668,17 @@
             <raceRestriction>
                 <xenotypeList>
                     <li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Norbal</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">Starjack</li>
                 </xenotypeList>
                 <onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
             </raceRestriction>
@@ -1784,7 +1819,7 @@
                         <li>Female</li>
                     </bodyTypes>
                     <!--<getsGreyAt>50</getsGreyAt>-->
-                    <oldHairAgeRange>50.0~68.0</oldHairAgeRange>
+                    <oldHairAgeRange>50.0~68.0</oldHairAgeRange><!--
                     <bodyAddons>
                         <li>
                             <drawSize>.75</drawSize>
@@ -2063,7 +2098,7 @@
                                 </east>
                             </offsets>
                         </li>
-                    </bodyAddons>
+                    </bodyAddons>-->
                     <colorChannels>
                         <!--<li>
                             <name>skin</name>
@@ -2152,6 +2187,8 @@
                         <Male>Things/Pawn/Humanlike/Bodies/Naked_Male</Male>
                         <Female>Things/Pawn/Humanlike/Bodies/Naked_Female</Female>
                         <Thin>Things/Pawn/Humanlike/Bodies/Naked_Thin</Thin>
+                        <Hulk>Things/Pawn/Humanlike/Bodies/Naked_Hulk</Hulk>
+                        <Fat>Things/Pawn/Humanlike/Bodies/Naked_Fat</Fat>
                         <Child MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Bodies/Child/Naked_Child</Child>
                         <Baby MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Bodies/Naked_Baby</Baby>
                     </bodytypeGraphics>
@@ -2262,6 +2299,17 @@
                 <onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
                 <xenotypeList>
                     <li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Orassan</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">Starjack</li>
                 </xenotypeList>
                 <blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
                     <li>Melanin</li>

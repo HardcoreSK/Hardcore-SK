@@ -24,6 +24,16 @@
 			</fixedIngredientFilter>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeTail" or defName="RK_Recipe_InstallBionicTail" or defName="RK_Recipe_InstallArchotechTail"]/appliedOnFixedBodyParts</xpath>
+		<value>
+			<li>HSK_BodyPart_Tailbone</li>
+			<li>OTail</li>
+			<li>RK_BodyPart_Tail</li>
+		</value>
+	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeEar"]</xpath>
 		<value>
@@ -72,6 +82,8 @@
 				</descriptionHyperlinks>
 				<jobString>Installing fake tail.</jobString>
 				<appliedOnFixedBodyParts>
+					<li>HSK_BodyPart_Tailbone</li>
+					<li>OTail</li>
 					<li>RK_BodyPart_Tail</li>
 				</appliedOnFixedBodyParts>
 				<workAmount>2000</workAmount>

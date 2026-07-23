@@ -216,6 +216,11 @@
 								<defName>CreepyBreathing</defName>
 							</li>
 						</disallowedTraits>
+						<growthAges MayRequire="Ludeon.RimWorld.Biotech">
+							<li>5</li>
+							<li>8</li>
+							<li>11</li>
+						</growthAges>
 						<reproduction>
 							<femaleFertilityAgeFactor>
 								<points>
@@ -242,7 +247,11 @@
 						<body>
 							<path>Things/Ratkin/Bodies/BodiesNaked_Thin</path>
 							<bodytypeGraphics>
-								<Thin>Things/Ratkin/Bodies/BodiesNaked_Thin</Thin>
+								<Male>Things/Pawn/Humanlike/Bodies/Naked_Male</Male>
+								<Female>Things/Pawn/Humanlike/Bodies/Naked_Female</Female>
+								<Thin>Things/Ratkin/Body/Thin/Naked_Thin</Thin>
+								<Hulk>Things/Pawn/Humanlike/Bodies/Naked_Hulk</Hulk>
+								<Fat>Things/Pawn/Humanlike/Bodies/Naked_Fat</Fat>
 								<Child MayRequire="Ludeon.RimWorld.Biotech">Things/Ratkin/Bodies/Naked_Child</Child>
 								<Baby MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Bodies/Naked_Child</Baby>
 							</bodytypeGraphics>
@@ -349,6 +358,17 @@
 						</weaponList>
 						<xenotypeList>
 							<li MayRequire="Ludeon.RimWorld.Biotech">RK_XenoType_Ratkin</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">Starjack</li>
 						</xenotypeList>
 						<onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
 					</raceRestriction>
@@ -497,6 +517,28 @@
 							<li>(5, 0)</li>
 						</points>
 					</litterSizeCurve>
+					<lifeStageAges Inherit="false">
+						<li>
+							<def>HumanlikeBaby</def>
+							<minAge>0</minAge>
+						</li>
+						<li>
+							<def>HumanlikeChild</def>
+							<minAge>2</minAge>
+						</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">
+							<def>HumanlikePreTeenager</def>
+							<minAge>6</minAge>
+						</li>
+						<li>
+							<def>HumanlikeTeenager</def>
+							<minAge>11</minAge>
+						</li>
+						<li>
+							<def>HumanlikeAdult</def>
+							<minAge>16</minAge>
+						</li>
+					</lifeStageAges>
 					<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
 						<Firefighter>5</Firefighter>
 						<Patient>0</Patient>

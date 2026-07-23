@@ -26,6 +26,13 @@
 		</colorSpectrum>	
 		<techLevel>Medieval</techLevel>
 		<naturalEnemy>true</naturalEnemy>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.04</Sanguophage>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.05</Hussar>
+				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.04</Neanderthal>
+			</xenotypeChances>
+		</xenotypeSet>
 		<allowedCultures>
 			<li>Knighthood</li>
 		</allowedCultures>

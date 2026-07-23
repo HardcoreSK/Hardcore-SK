@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/GeneDef[defName="RK_Gene_LargeEars"]</xpath>
+		<value>
+			<iconPath>Body/RatEar_Gene_Icon</iconPath>
+			<capMods>
+			  <li>
+				<capacity>Hearing</capacity>
+				<offset>0.1</offset>
+			  </li>
+			</capMods>
+			<statOffsets>
+			  <SocialImpact>0.05</SocialImpact>
+			</statOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/GeneDef[defName="RK_Gene_LargeEars"]/renderNodeProperties/li[linkedBodyPartsGroup = "RK_LeftEar"]</xpath>
+		<value>
+			<linkedBodyPartsGroup>HSK_LeftEar</linkedBodyPartsGroup>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/GeneDef[defName="RK_Gene_LargeEars"]/renderNodeProperties/li[linkedBodyPartsGroup = "RK_RightEar"]</xpath>
+		<value>
+			<linkedBodyPartsGroup>HSK_RightEar</linkedBodyPartsGroup>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/GeneDef[defName="RK_Gene_ThinTail"]</xpath>
+		<value>
+			<iconPath>Body/RatTail_Gene_Icon</iconPath>
+			<capMods>
+			  <li>
+				<capacity>Manipulation</capacity>
+				<offset>0.05</offset>
+			  </li>
+			</capMods>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/GeneDef[defName="RK_Gene_ThinTail"]/renderNodeProperties/li/linkedBodyPartsGroup</xpath>
+		<value>
+			<linkedBodyPartsGroup>HSK_Tail</linkedBodyPartsGroup>
+		</value>
+	</Operation>
+
+</Patch>	
