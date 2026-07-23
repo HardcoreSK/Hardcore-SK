@@ -44,12 +44,7 @@
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Gun_MiniShotgun"]</xpath>
 		<value>
-			<statBases>
-				<!-- Keep the vanilla selection stats. ReplaceExtended replaces the
-				     whole statBases node, and without MarketValue the pawn weapon
-				     generator cannot select this gun for Mech_Militor. -->
-				<MarketValue>1000</MarketValue>
-				<Mass>1.5</Mass>
+			<statBases Merge="true">
 				<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
 				<SightsEfficiency>1</SightsEfficiency>
 				<ShotSpread>0.15</ShotSpread>
