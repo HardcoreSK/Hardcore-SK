@@ -108,9 +108,12 @@
 			</li>
 			
 			<!-- Christmas tree patches -->
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="ChristmasTree"]/costList</xpath>
+			<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/ThingDef[defName="ChristmasTree"]</xpath>
 				<value>
+					<graphicData Merge="true">
+						<shaderType>CutoutComplex</shaderType>
+					</graphicData>
 					<stuffCategories>
 						<li>WoodLogs</li>
 					</stuffCategories>

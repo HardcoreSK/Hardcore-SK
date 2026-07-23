@@ -172,25 +172,27 @@
 			</li>
 		</operations>
 	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName = "Throne"]/stuffCategories</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "Throne"]</xpath>
-				<value>
-					<stuffCategories>
-						<li>RuggedMetallic</li>
-						<li>Stony</li>
-					</stuffCategories>
-				</value>
-			</li>
-		</operations>
+	
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName = "Throne"]</xpath>
+		<value>
+			<stuffCategories/>
+			<uiIconScale>1</uiIconScale>
+			<stuffCategories>
+				<li>RuggedMetallic</li>
+				<li>Stony</li>
+			</stuffCategories>
+			<uiIconPath>Things/Building/Furniture/Throne_icon</uiIconPath>
+		</value>
 	</Operation>
-
+<!--
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Throne"]/graphicData/drawSize</xpath>
+        <value>
+            <drawSize>(2.1, 2.1)</drawSize>
+        </value>
+    </Operation>
+-->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>

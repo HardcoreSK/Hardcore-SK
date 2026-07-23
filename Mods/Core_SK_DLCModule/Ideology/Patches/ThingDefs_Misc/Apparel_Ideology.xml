@@ -9,9 +9,14 @@
     </Operation>
     <!-- ========== Burka ========== -->
     <Operation Class="SK.PatchOperationReplaceExtended">
-        <xpath>Defs/ThingDef[defName="Apparel_Burka"]/statBases</xpath>
+        <xpath>Defs/ThingDef[defName="Apparel_Burka"]</xpath>
         <value>
-            <StuffEffectMultiplierArmor>1.2</StuffEffectMultiplierArmor>
+			<statBases Merge="true">
+				<StuffEffectMultiplierArmor>1.2</StuffEffectMultiplierArmor>		
+			</statBases>
+			<apparel Merge="true">
+				<renderSkipFlags DeepReplace="true"/>
+			</apparel>
         </value>
     </Operation>
     <!-- ========== Robe ========== -->
