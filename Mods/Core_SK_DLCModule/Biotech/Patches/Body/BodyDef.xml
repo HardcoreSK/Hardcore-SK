@@ -6,19 +6,21 @@
 		<xpath>Defs/BodyPartGroupDef[defName="RK_Tail"]</xpath>
 	</Operation>
 -->
-	<Operation Class="PatchOperationInsert">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/BodyDef[defName="Human"]/corePart/parts/li[def="Spine"]</xpath>
 		<value>
-			<li>
-				<def>HSK_BodyPart_Tailbone</def>
-				<customLabel>tail bone</customLabel>
-				<coverage>0.05</coverage>
-				<height>Bottom</height>
-				<groups>
-					<li>Waist</li>
-					<li>HSK_Tail</li>
-				</groups>
-			</li>
+			<parts>
+				<li>
+					<def>HSK_BodyPart_Tailbone</def>
+					<customLabel>tail bone</customLabel>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>Waist</li>
+						<li>HSK_Tail</li>
+					</groups>
+				</li>	
+			</parts>
 		</value>
 	</Operation>
 
