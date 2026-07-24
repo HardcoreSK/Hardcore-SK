@@ -777,4 +777,80 @@
 			</ThingDef>
 		</value>
 	</Operation>
+	<!-- New Ratkin weapons: use HSK stuff and the matching weapon workbenches. -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RK_Weapon_Arbalest"]</xpath>
+		<value>
+			<costStuffCount>30</costStuffCount>
+			<stuffCategories>
+				<li>StrongMetallic</li>
+			</stuffCategories>
+			<costList>
+				<WoodPlank>30</WoodPlank>
+				<ComponentMedieval>6</ComponentMedieval>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RK_Weapon_Bolter"]</xpath>
+		<value>
+			<costStuffCount>50</costStuffCount>
+			<stuffCategories>
+				<li>StrongMetallic</li>
+			</stuffCategories>
+			<costList>
+				<ComponentAdvanced>5</ComponentAdvanced>
+				<Weapon_Parts>4</Weapon_Parts>
+				<Heavy_Component>1</Heavy_Component>
+				<Mechanism>2</Mechanism>
+				<Plastic>8</Plastic>
+			</costList>
+			<recipeMaker>
+				<recipeUsers Inherit="false">
+					<li>AdvWeaponCraftingWorkTable</li>
+				</recipeUsers>
+			</recipeMaker>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RK_Weapon_BFR"]</xpath>
+		<value>
+			<costStuffCount>60</costStuffCount>
+			<stuffCategories>
+				<li>StrongMetallic</li>
+			</stuffCategories>
+			<costList>
+				<ComponentIndustrial>8</ComponentIndustrial>
+				<Weapon_Parts>6</Weapon_Parts>
+				<AdvSniper_Component>1</AdvSniper_Component>
+				<Plastic>20</Plastic>
+				<Rubber>5</Rubber>
+			</costList>
+			<recipeMaker>
+				<recipeUsers Inherit="false">
+					<li>AdvWeaponCraftingWorkTable</li>
+				</recipeUsers>
+			</recipeMaker>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RK_Weapon_RatHolicGun"]</xpath>
+		<value>
+			<costStuffCount>40</costStuffCount>
+			<stuffCategories>
+				<li>StrongMetallic</li>
+			</stuffCategories>
+			<costList>
+				<Heavy_Component>1</Heavy_Component>
+				<Weapon_Parts>13</Weapon_Parts>
+				<ComponentAdvanced>10</ComponentAdvanced>
+				<Plastic>25</Plastic>
+			</costList>
+			<recipeMaker>
+				<recipeUsers Inherit="false">
+					<li>AdvWeaponCraftingWorkTable</li>
+				</recipeUsers>
+			</recipeMaker>
+		</value>
+	</Operation>
 </Patch>

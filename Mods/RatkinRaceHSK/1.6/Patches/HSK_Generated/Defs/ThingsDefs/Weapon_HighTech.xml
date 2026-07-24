@@ -168,11 +168,15 @@
 			</tradeTags>
 			<costStuffCount>100</costStuffCount>
 			<stuffCategories>
-				<li>Metallic</li>
+				<li>StrongMetallic</li>
 			</stuffCategories>
 			<costList>
-				<Steel>100</Steel>
-				<ComponentIndustrial>8</ComponentIndustrial>
+				<ComponentIndustrial>6</ComponentIndustrial>
+				<ComponentAdvanced>4</ComponentAdvanced>
+				<Weapon_Parts>6</Weapon_Parts>
+				<Heavy_Component>1</Heavy_Component>
+				<Mechanism>4</Mechanism>
+				<Plastic>12</Plastic>
 			</costList>
 			<statBases>
 				<WorkToMake>35000</WorkToMake>
@@ -193,10 +197,10 @@
 					<capacities>
 						<li>Stab</li>
 					</capacities>
-					<power>20</power>
+					<power>24</power>
 					<cooldownTime>3</cooldownTime>
-					<armorPenetrationSharp>5.5</armorPenetrationSharp>
-					<armorPenetrationBlunt>9</armorPenetrationBlunt>
+					<armorPenetrationSharp>6.5</armorPenetrationSharp>
+					<armorPenetrationBlunt>10</armorPenetrationBlunt>
 					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
 				</li>
 				<li Class="CombatExtended.ToolCE">
@@ -204,10 +208,10 @@
 					<capacities>
 						<li>GunlanceShell_Normal</li>
 					</capacities>
-					<power>25</power>
+					<power>28</power>
 					<cooldownTime>3</cooldownTime>
-					<armorPenetrationSharp>5</armorPenetrationSharp>
-					<armorPenetrationBlunt>10</armorPenetrationBlunt>
+					<armorPenetrationSharp>6</armorPenetrationSharp>
+					<armorPenetrationBlunt>12</armorPenetrationBlunt>
 					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 				</li>
 			</tools>
@@ -218,7 +222,7 @@
 					<li>ChargedShot</li>
 				</researchPrerequisites>
 				<recipeUsers Inherit="false">
-					<li>TableMachining</li>
+					<li>AdvWeaponCraftingWorkTable</li>
 				</recipeUsers>
 				<skillRequirements>
 					<Crafting>10</Crafting>
@@ -284,22 +288,55 @@
 				<graphicClass>Graphic_Single</graphicClass>
 				<color>(1,1,1,1)</color>
 			</graphicData>
+			<techLevel>Industrial</techLevel>
+			<weaponClasses Inherit="false">
+				<li>Melee</li>
+				<li>MeleePiercer</li>
+			</weaponClasses>
+			<tradeTags Inherit="false">
+				<li>RK_TradeTag_Weapon</li>
+				<li>RK_TradeTag_MeleeWeapon</li>
+				<li>RK_TradeTag_3TierWeapon</li>
+				<li>RK_TradeTag_HighTech</li>
+				<li>RK_TradeTag_All</li>
+			</tradeTags>
+			<statBases>
+				<MarketValue>1200</MarketValue>
+				<WorkToMake>30000</WorkToMake>
+				<Mass>7</Mass>
+				<Bulk>8</Bulk>
+			</statBases>
+			<costStuffCount>100</costStuffCount>
+			<stuffCategories>
+				<li>StrongMetallic</li>
+			</stuffCategories>
 			<costList>
-				<ComponentSpacer>5</ComponentSpacer>
-				<Plasteel>50</Plasteel>
-				<Steel>150</Steel>
+				<ComponentAdvanced>8</ComponentAdvanced>
+				<Weapon_Parts>10</Weapon_Parts>
+				<Mechanism>4</Mechanism>
+				<Electronics>5</Electronics>
+				<Plastic>20</Plastic>
 			</costList>
+			<recipeMaker>
+				<researchPrerequisite>Melee_C2</researchPrerequisite>
+				<recipeUsers Inherit="false">
+					<li>ElectricSmithy</li>
+				</recipeUsers>
+				<skillRequirements>
+					<Crafting>9</Crafting>
+				</skillRequirements>
+			</recipeMaker>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
 					<label>edge</label>
 					<capacities>
 						<li>RK_ToolCapacity_ChainSword</li>
 					</capacities>
-					<power>20</power>
-					<cooldownTime>2</cooldownTime>
+					<power>26</power>
+					<cooldownTime>1.8</cooldownTime>
 					<chanceFactor>5.0</chanceFactor>
-					<armorPenetrationSharp>6.5</armorPenetrationSharp>
-					<armorPenetrationBlunt>5</armorPenetrationBlunt>
+					<armorPenetrationSharp>8</armorPenetrationSharp>
+					<armorPenetrationBlunt>10</armorPenetrationBlunt>
 					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 				</li>
 			</tools>
@@ -320,29 +357,46 @@
 				<graphicClass>Graphic_Single</graphicClass>
 				<color>(1,1,1,1)</color>
 			</graphicData>
+			<techLevel>Ultra</techLevel>
+			<costStuffCount>140</costStuffCount>
+			<stuffCategories>
+				<li>SolidMetallic</li>
+			</stuffCategories>
 			<costList>
-				<ComponentSpacer>6</ComponentSpacer>
-				<Plasteel>50</Plasteel>
-				<Steel>150</Steel>
-				<Uranium>50</Uranium>
+				<ComponentSpacer>18</ComponentSpacer>
+				<Weapon_Parts>8</Weapon_Parts>
+				<AdvMechanism>4</AdvMechanism>
+				<Microchips>2</Microchips>
+				<MagneticMaterial>12</MagneticMaterial>
+				<Hexcell>1</Hexcell>
+				<Plasma_Component>1</Plasma_Component>
 			</costList>
+			<recipeMaker>
+				<researchPrerequisite>Melee_E1</researchPrerequisite>
+				<recipeUsers Inherit="false">
+					<li>MechWeaponCraftingWorkTable</li>
+				</recipeUsers>
+				<skillRequirements>
+					<Crafting>13</Crafting>
+				</skillRequirements>
+			</recipeMaker>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
 					<label>edge</label>
 					<capacities>
 						<li>RK_ToolCapacity_ChainSword</li>
 					</capacities>
-					<power>20</power>
-					<cooldownTime>2</cooldownTime>
+					<power>34</power>
+					<cooldownTime>1.65</cooldownTime>
 					<chanceFactor>5.0</chanceFactor>
-					<armorPenetrationSharp>6.5</armorPenetrationSharp>
-					<armorPenetrationBlunt>5</armorPenetrationBlunt>
+					<armorPenetrationSharp>13</armorPenetrationSharp>
+					<armorPenetrationBlunt>18</armorPenetrationBlunt>
 					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 					<extraMeleeDamages>
 						<li>
 							<def>Burn</def>
-							<amount>5</amount>
-							<chance>0.5</chance>
+							<amount>7</amount>
+							<chance>0.6</chance>
 						</li>
 					</extraMeleeDamages>
 				</li>
