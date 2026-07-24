@@ -3,7 +3,7 @@
 
 	<!-- ======================= Chicken =============================== -->
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Chicken</defName>
 		<label>chicken</label>
 		<devNote>chicken-1</devNote>
@@ -122,7 +122,7 @@
 		</modExtensions>
 	</ThingDef>
 
-<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Chicken</defName>
 		<label>chicken</label>
 		<race>Chicken</race>
@@ -202,7 +202,7 @@
 
 	<!-- ======================= Duck =============================== -->
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Duck</defName>
 		<label>duck</label>
 		<devNote>chicken-1</devNote>
@@ -315,7 +315,7 @@
 		</modExtensions>
 	</ThingDef>
 
-<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Duck</defName>
 		<label>duck</label>
 		<race>Duck</race>
@@ -521,7 +521,7 @@
 	</PawnKindDef>
  -->
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Goose</defName>
 		<label>goose</label>
 		<devNote>chicken-1</devNote>
@@ -646,7 +646,7 @@
 
 	<!-- ======================= Goose =============================== -->
 
-	<!-- <PawnKindDef ParentName="SK_AnimalKindBase">
+	<!-- <PawnKindDef ParentName="AnimalKindBase">
 		<defName>Goose</defName>
 		<label>goose</label>
 		<labelPlural>geese</labelPlural>

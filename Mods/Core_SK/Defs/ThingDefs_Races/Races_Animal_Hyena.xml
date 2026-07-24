@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>SpottedHyena</defName>
 		<label>Spotted Hyena</label>
 		<description>A mid sized, Spotted Hyena that hunt in packs. Its mouth-grip strength is very powerful.</description>
@@ -154,7 +154,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SpottedHyena</defName>
 		<label>Spotted Hyena</label>
 		<race>SpottedHyena</race>

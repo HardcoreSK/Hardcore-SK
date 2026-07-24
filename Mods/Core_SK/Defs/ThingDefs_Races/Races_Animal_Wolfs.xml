@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ========================== Wolves ================================= -->
-	<ThingDef Name="SK_WolfThingBase" ParentName="SK_AnimalThingBase" Abstract="True">
+	<ThingDef Name="SK_WolfThingBase" ParentName="AnimalThingBase" Abstract="True">
 		<devNote>warg-1</devNote>
 		<statBases>
 			<Mass>60</Mass>
@@ -134,7 +134,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase" Name="SK_WolfKindBase" Abstract="True">
+	<PawnKindDef ParentName="AnimalKindBase" Name="SK_WolfKindBase" Abstract="True">
 		<combatPower>135</combatPower>
 		<ecoSystemWeight>0.55</ecoSystemWeight>
 		<wildGroupSize>2~7</wildGroupSize>

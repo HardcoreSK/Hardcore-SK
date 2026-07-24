@@ -2,7 +2,7 @@
 <Defs>
 	<!-- ========================== Giant ============================ -->
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Rhinoceros</defName>
 		<label>rhinoceros</label>
 		<devNote>cow-1</devNote>
@@ -133,7 +133,7 @@
 		</modExtensions>
 	</ThingDef>
 
-<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Rhinoceros</defName>
 		<label>rhinoceros</label>
 		<race>Rhinoceros</race>
@@ -186,7 +186,7 @@
 		</lifeStages>
 	</PawnKindDef>
  -->	
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Elephant</defName>
 		<label>elephant</label>
 		<devNote>cow-1</devNote>
@@ -317,7 +317,7 @@
 		</modExtensions>
 	</ThingDef>
 
-<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Elephant</defName>
 		<label>Elephant</label>
 		<race>Elephant</race>
@@ -378,7 +378,7 @@
 		</lifeStages>
 	</PawnKindDef>
  -->
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Mammoth</defName>
 		<label>mammoth</label>
 		<devNote>cow-1</devNote>
@@ -508,7 +508,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Mammoth</defName>
 		<label>Mammoth</label>
 		<race>Mammoth</race>
@@ -599,7 +599,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Megasloth</defName>
 		<label>megasloth</label>
 		<devNote>sheep-1</devNote>
@@ -710,7 +710,7 @@
 		</modExtensions>
 	</ThingDef>
 
-<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Megasloth</defName>
 		<label>Megasloth</label>
 		<race>Megasloth</race>
@@ -762,7 +762,7 @@
 		</lifeStages>
 	</PawnKindDef>
  -->
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Thrumbo</defName>
 		<label>thrumbo</label>
 		<devNote>misc</devNote>
@@ -917,7 +917,7 @@
 		</modExtensions>
 	</ThingDef>
 
-<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Thrumbo</defName>
 		<label>thrumbo</label>
 		<race>Thrumbo</race>
@@ -975,7 +975,7 @@
 		</lifeStages>
 	</PawnKindDef>
  -->
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Megabadger</defName>
 		<label>megabadger</label>
 		<devNote>sheep-1</devNote>
@@ -1097,7 +1097,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Megabadger</defName>
 		<label>megabadger</label>
 		<race>Megabadger</race>
@@ -1151,7 +1151,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Rhino_Wooly</defName>
 		<label>woolly rhino</label>
 		<devNote>cow-1</devNote>
@@ -1270,7 +1270,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Rhino_Wooly</defName>
 		<label>woolly rhinoceros</label>
 		<labelPlural>woolly rhinoceroses</labelPlural>

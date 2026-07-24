@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ========================== Insects ============================ -->
-	<ThingDef Abstract="True" ParentName="SK_AnimalThingBase" Name="SK_InsectThingBase">
+	<ThingDef Abstract="True" ParentName="AnimalThingBase" Name="SK_InsectThingBase">
 		<devNote>insect</devNote>
 		<statBases>
 			<Flammability>1.0</Flammability>
@@ -141,7 +141,7 @@
 		</modExtensions>
 	</ThingDef>
 
-<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Megascarab</defName>
 		<label>Megascarab</label>
 		<race>Megascarab</race>
@@ -305,7 +305,7 @@
 		</modExtensions>
 	</ThingDef>
 
-<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Spelopede</defName>
 		<label>spelopede</label>
 		<race>Spelopede</race>
@@ -476,7 +476,7 @@
 		</modExtensions>
 	</ThingDef>
 
-<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Megaspider</defName>
 		<label>megaspider</label>
 		<race>Megaspider</race>
@@ -645,7 +645,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Scorpion</defName>
 		<label>Scorpion</label>
 		<race>Scorpion</race>
