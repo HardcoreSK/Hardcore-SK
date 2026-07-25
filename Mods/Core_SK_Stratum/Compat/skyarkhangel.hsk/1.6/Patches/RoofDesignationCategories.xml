@@ -1,10 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <!-- Restore HSK's research-gated overhead mountain removal designator. -->
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses</xpath>
+  <Operation Class="PatchOperationInsert">
+    <xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses/li[text()="Designator_AreaIgnoreRoof"]</xpath>
     <value>
       <li>SK.Designator_AreaNoThickRoof</li>
     </value>
   </Operation>
+  
+  <Operation Class="PatchOperationInsert">
+    <xpath>Defs/DesignationCategoryDef[defName="Structure"]/specialDesignatorClasses/li[text()="Designator_RemoveFoundation"]</xpath>
+    <value>
+      <li>SolarWeb.Stratum.AI.Designators.SmoothRoof</li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-ThermalRadiatorRoof"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Structure</designationCategory>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-RoofThatch"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Structure</designationCategory>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-RoofThatchHay"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Structure</designationCategory>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-RoofShingle"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Structure</designationCategory>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-RoofGlass"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Structure</designationCategory>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-RoofSolarShingles"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Structure</designationCategory>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-CompositeInsulatedPanel"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Structure</designationCategory>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-LuxuryGlassPanel"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Structure</designationCategory>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-SterileTiledRoof"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Structure</designationCategory>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-HullPlating"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Structure</designationCategory>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-ReinforcedHullPlating"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Structure</designationCategory>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-SolarHullPlate"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Structure</designationCategory>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-ReinforcedGlassPanel"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Structure</designationCategory>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-RetractableRoof"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Structure</designationCategory>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-RetractableRoofLight"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Structure</designationCategory>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RetractableRoofConsole"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Structure</designationCategory>
+    </value>
+  </Operation>
+  
 </Patch>

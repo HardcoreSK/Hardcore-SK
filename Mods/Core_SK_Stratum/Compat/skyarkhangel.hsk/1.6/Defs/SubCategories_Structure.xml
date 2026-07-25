@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Structure -->
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_PrimitiveRoofs</defName>
+		<label>Primitive Roofs</label>
+		<description>The most basic of roofs you can build for your colony early on.</description>
+		<defNames>
+			<li>SolarWeb-Stratum-RoofThatch_Buildable</li>
+			<li>SolarWeb-Stratum-RoofThatchHay_Buildable</li>
+			<li>SolarWeb-Stratum-RoofShingle_Buildable</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+		<order>100</order>
+		<types>
+			<li>Roofs</li>
+			<li>Rooms</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ModernRoofs</defName>
+		<label>Modern Roofs</label>
+		<description>More sturdier roofs that can handle a greater impact and provide extra utility.</description>
+		<defNames>
+			<li>SolarWeb-Stratum-RoofGlass_Buildable</li>
+			<li>SolarWeb-Stratum-CompositeInsulatedPanel_Buildable</li>
+			<li>SolarWeb-Stratum-LuxuryGlassPanel_Buildable</li>
+			<li>SolarWeb-Stratum-SterileTiledRoof_Buildable</li>
+			<li>SolarWeb-Stratum-RoofSolarShingles_Buildable</li>
+			<li>SolarWeb-Stratum-ThermalRadiatorRoof_Buildable</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+		<order>110</order>
+		<types>
+			<li>Roofs</li>
+			<li>Rooms</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Ludeon.RimWorld.Odyssey">
+		<defName>SubCategory_GravShipRoofs</defName>
+		<label>Grav Ship Roofs</label>
+		<description>Spacer technology roofs that can withstand the vacuum of space and are designed for a grav ship.</description>
+		<defNames>
+			<li>SolarWeb-Stratum-HullPlating_Buildable</li>
+			<li>SolarWeb-Stratum-ReinforcedHullPlating_Buildable</li>
+			<li>SolarWeb-Stratum-SolarHullPlate_Buildable</li>
+			<li>SolarWeb-Stratum-ReinforcedGlassPanel_Buildable</li>
+			<li>SolarWeb-Stratum-RetractableRoof_Buildable</li>
+			<li>SolarWeb-Stratum-RetractableRoofLight_Buildable</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+		<order>120</order>
+		<types>
+			<li>Roofs</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_RetractableRoofs</defName>
+		<label>Retractable Roofs</label>
+		<description>Advanced roofs that can be retracted by operating at a roof console.</description>
+		<defNames>
+			<li>SolarWeb-Stratum-RetractableRoof_Buildable</li>
+			<li>SolarWeb-Stratum-RetractableRoofLight_Buildable</li>
+			<li>SolarWeb-Stratum-RetractableRoofConsole</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+		<order>130</order>
+		<types>
+			<li>Roofs</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>
