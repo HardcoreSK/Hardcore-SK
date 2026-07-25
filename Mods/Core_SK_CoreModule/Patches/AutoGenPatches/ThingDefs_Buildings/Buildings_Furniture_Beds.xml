@@ -159,7 +159,7 @@
         <destroySound>BuildingDestroyed_Soft_Medium</destroySound>
         <destroyShakeAmount>0</destroyShakeAmount>
       </building>
-      <researchPrerequisites>
+      <researchPrerequisites Inherit="false">
         <li>Beds_A1</li>
       </researchPrerequisites>
       <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
@@ -214,7 +214,7 @@
         <destroySound>BuildingDestroyed_Soft_Medium</destroySound>
         <destroyShakeAmount>0</destroyShakeAmount>
       </building>
-      <researchPrerequisites>
+      <researchPrerequisites Inherit="false">
         <li>Beds_A1</li>
       </researchPrerequisites>
       <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
@@ -261,7 +261,7 @@
         <bed_healPerDay>7</bed_healPerDay>
         <paintable>true</paintable>
       </building>
-      <researchPrerequisites>
+      <researchPrerequisites Inherit="false">
         <li>Beds_B1</li>
       </researchPrerequisites>
       <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
@@ -306,7 +306,7 @@
         <bed_healPerDay>7</bed_healPerDay>
         <paintable>true</paintable>
       </building>
-      <researchPrerequisites>
+      <researchPrerequisites Inherit="false">
         <li>Beds_B1</li>
       </researchPrerequisites>
       <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
@@ -355,7 +355,7 @@
         <bed_healPerDay>7</bed_healPerDay>
         <paintable>true</paintable>
       </building>
-      <researchPrerequisites>
+      <researchPrerequisites Inherit="false">
         <li>Beds_C2</li>
       </researchPrerequisites>
       <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
