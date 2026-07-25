@@ -73,12 +73,6 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="BaseMechanoid"]/comps</xpath>
 		<value>
-			<li>
-				<compClass>CombatExtended.CompPawnGizmo</compClass>
-			</li>
-			<li>
-				<compClass>CombatExtended.CompAmmoGiver</compClass>
-			</li>
 			<li Class="CombatExtended.CompProperties_MechAmmo">
 				<gizmoIconSetMagCount>UI/Buttons/SetMagCount</gizmoIconSetMagCount>
 				<gizmoIconTakeAmmoNow>UI/Buttons/TakeAmmoNow</gizmoIconTakeAmmoNow>
