@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+  <!-- Former SK_BaseMechanoidKind -->
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/PawnKindDef[@Name="BaseMechanoidKind"]</xpath>
+    <value>
+      <defaultFactionDef>Mechanoid</defaultFactionDef>
+      <aiAvoidCover>true</aiAvoidCover>
+      <destroyGearOnDrop>true</destroyGearOnDrop>
+      <canStrip>false</canStrip>
+      <minGenerationAge MayRequire="Ludeon.RimWorld.Biotech">200</minGenerationAge>
+      <forceNormalGearQuality>true</forceNormalGearQuality>
+    </value>
+  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/PawnKindDef[defName="Mech_CentipedeBlaster"]</xpath>
     <value>

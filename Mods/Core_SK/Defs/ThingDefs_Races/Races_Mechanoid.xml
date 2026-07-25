@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ============================ Mechanoids ========================== -->
-	<ThingDef ParentName="BasePawn" Name="SK_BaseMechanoid" Abstract="True">
+
+	<!--  ReplaceExtended into BaseMechanoid-->
+	<!-- 	<ThingDef ParentName="BasePawn" Name="SK_BaseMechanoid" Abstract="True">
 		<statBases>
 			<MarketValue>1200</MarketValue>
 			<Mass>70</Mass>
@@ -58,12 +60,12 @@
 				<compClass>CombatExtended.CompAmmoGiver</compClass>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef> -->
 
 	<!-- Centipede - abstract -->
-	<ThingDef Abstract="True" Name="MechCentipede" ParentName="SK_BaseMechanoid">
+	<ThingDef Abstract="True" Name="MechCentipede" ParentName="BaseMechanoid">
 		<description>Heavy combat mechanoids that glide on dozens of tiny legs. Their thick carpace and firepower makes them very effective against bunched-up static defenders. They are somewhat vulnerable to mobile hit-and-run tactics.</description>
-		<statBases/>
+		<statBases />
 		<tools>
 			<li Class="CombatExtended.ToolCE">
 				<label>head</label>
@@ -153,7 +155,7 @@
 	</ThingDef>
 
 	<!-- Scyther -->
-	<ThingDef ParentName="SK_BaseMechanoid">
+	<ThingDef ParentName="BaseMechanoid">
 		<defName>Mech_Scyther</defName>
 		<label>Scyther</label>
 		<description>Scythers are fast, spindly, armored human-sized combat Mechanoids. They usually carry one primary ranged weapon, and their bodies are adorned with two articulated blades to make them deadly in melee combat. They don't use cover. They are best handled by concentrated, overwhelming force.</description>
@@ -286,7 +288,7 @@
 	</ThingDef>
 
 	<!-- Stalker -->
-<!-- 	<ThingDef Name="LancerMechanoidWalker" ParentName="SK_BaseMechanoid">
+	<!-- 	<ThingDef Name="LancerMechanoidWalker" ParentName="BaseMechanoid">
 		<defName>Mech_Lancer</defName>
 		<label>Lancer</label>
 		<description>Lancer are agile, lanky, human-sized combat Mechanoids. They usually carry one primary ranged weapon, and their bodies are adorned with two articulated blades to make them deadly in melee combat. They don't use cover. Best handled by concentrated, overwhelming force.</description>
@@ -396,11 +398,11 @@
 	</ThingDef> -->
 
 	<!-- New 1.1 update mechanoid. Temp. based on Lancer -->
-	<ThingDef ParentName="SK_BaseMechanoid">
+	<ThingDef ParentName="BaseMechanoid">
 		<defName>Mech_Pikeman</defName>
 		<label>Pikeman</label>
 		<description>A clunky multi-legged combat mechanoid specialized as a long-range weapons platform. While effective at distance, it is weak in close-range fights and in melee combat.\n\nVeterans of mechanoid wars know that often, the safest place to be around a pikeman is touching it.</description>
-		<statBases/>
+		<statBases />
 		<tools>
 			<li Class="CombatExtended.ToolCE">
 				<label>left fist</label>
@@ -496,11 +498,11 @@
 
 	<!-- Termite -->
 
-	<ThingDef ParentName="SK_BaseMechanoid">
+	<ThingDef ParentName="BaseMechanoid">
 		<defName>Mech_Termite</defName>
 		<label>termite</label>
 		<description>A medium-sized mechanoid. Termites specialize in burrowing, digging, and breaking through defensive structures. Defenders need to decide whether to try to eliminate the termite before it can dig through their defenses, or take it where it emerges.</description>
-		<statBases/>
+		<statBases />
 		<tools>
 			<li Class="CombatExtended.ToolCE">
 				<label>head</label>
@@ -545,7 +547,7 @@
 	</ThingDef>
 
 	<!-- Crawler -->
-	<ThingDef ParentName="SK_BaseMechanoid">
+	<ThingDef ParentName="BaseMechanoid">
 		<defName>Mech_Crawler</defName>
 		<label>Crawler</label>
 		<description>Crawlers are small spider-like Mechanoids. While not particularly sturdy, their speed, size and numbers more than make up for it. A tiny plasma cutter at their front allows them to cut through metal like butter. Their favorite passtime is open surgery.</description>

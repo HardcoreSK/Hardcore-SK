@@ -10,12 +10,10 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs</xpath>
 		<value>
-            <!--Pawns-->
+			<!--Pawns-->
 			<ThingDef Name="SK.SK_HumanDummy" ParentName="SK_Human" Abstract="True" />
-			<ThingDef Name="SK.SK_BaseMechanoidDummy" ParentName="SK_BaseMechanoid" Abstract="True" />
 			<ThingDef Name="SK.SK_BaseMechanoidWalkerDummy" ParentName="SK_BaseMechanoidWalker" Abstract="True" />
             
-			<PawnKindDef Name="SK.SK_BaseMechanoidKindDummy" ParentName="BaseMechanoidKind" Abstract="True" />
 			<PawnKindDef Name="SK.GrenadierDestructiveBaseDummy" ParentName="GrenadierDestructiveBase" Abstract="True" />
 			<PawnKindDef Name="SK.SpaceRefugeeBaseDummy" ParentName="SpaceRefugeeBase" Abstract="True" />
 			<PawnKindDef Name="SK.SK_BearKindBaseDummy" ParentName="SK_BearKindBase" Abstract="True" />

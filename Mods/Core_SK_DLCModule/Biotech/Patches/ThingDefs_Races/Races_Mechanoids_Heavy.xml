@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ThingDef[@Name="HeavyMechanoid"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.SK_BaseMechanoidDummy</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/PawnKindDef[@Name="HeavyMechanoidKind"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.SK_BaseMechanoidKindDummy</value>
-	</Operation>
-	
-
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[@Name="HeavyMechanoid"]/statBases</xpath>
 		<value>

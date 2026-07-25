@@ -32,4 +32,9 @@
 		</value>
 	</Operation>
 
+	<!-- Remove comp added by CE in BaseMechanoid. Mechanoids still inherit this Comp from BasePawn-->
+<!-- 	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[@Name="BaseMechanoid"]/comps/li[compClass="CombatExtended.CompPawnGizmo"]</xpath>
+	</Operation> -->
+
 </Patch>
