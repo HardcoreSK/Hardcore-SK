@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ========================== Tropical ============================ -->
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Cobra</defName>
 		<label>cobra</label>
 		<devNote>misc</devNote>
@@ -134,7 +134,7 @@
 		</modExtensions>
 	</ThingDef>
 
-<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Cobra</defName>
 		<label>cobra</label>
 		<race>Cobra</race>
@@ -175,7 +175,7 @@
 		</lifeStages>
 	</PawnKindDef>
  -->
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Monkey</defName>
 		<label>monkey</label>
 		<description>A small primate, the monkey can use its curly tail to grab on to branches, leaving its hands free to do other things. Monkeys are selfish but clever, and can be trained to carry out fairly complex tasks.</description>
@@ -283,7 +283,7 @@
 		</modExtensions>
 	</ThingDef>
 
-<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Monkey</defName>
 		<label>monkey</label>
 		<race>Monkey</race>
@@ -333,7 +333,7 @@
 		</lifeStages>
 	</PawnKindDef>
  -->
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Boomalope</defName>
 		<label>boomalope</label>
 		<devNote>cow-1</devNote>
@@ -470,7 +470,7 @@
 		</modExtensions>
 	</ThingDef>
 
-<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Boomalope</defName>
 		<label>boomalope</label>
 		<race>Boomalope</race>
@@ -531,7 +531,7 @@
 		</lifeStages>
 	</PawnKindDef>
  -->
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Lacosdile</defName>
 		<label>lacosdile</label>
 		<description>A lacosdile is a crossbred and genetically manipulated lizard originally created as part of clever fragrance marketing gig. Being herbivorous and barely dangerous made them very common pets. However as the trends passed lacosdiles were soon found flooding the sewage systems, and in desperation were carried off across the galaxy to the furthest reaches of space. As a result the species now flourish on desolate rimworlds, where they have adapted to become omnivorous.</description>
@@ -681,7 +681,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Lacosdile</defName>
 		<label>lacosdile</label>
 		<race>Lacosdile</race>
@@ -722,7 +722,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Okapi</defName>
 		<label>okapi</label>
 		<description>A giraffid artiodactyl mammal. Okapis are primarily diurnal but may be active for a few hours in darkness. They are essentially solitary, coming together only to breed. Okapis are herbivores, feeding on tree leaves and buds, grasses, ferns, fruits, and fungi. Okapis inhabit canopy forests at altitudes of 500–1,500 m (1,600–4,900 ft).</description>
@@ -842,7 +842,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Okapi</defName>
 		<label>okapi</label>
 		<race>Okapi</race>

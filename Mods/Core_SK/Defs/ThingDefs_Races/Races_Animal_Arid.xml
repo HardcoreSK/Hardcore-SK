@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ========================== Arid ============================ -->
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Muffalo</defName>
 		<label>muffalo</label>
 		<devNote>cow-1</devNote>
@@ -22,7 +23,6 @@
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
-				<!--<id>lefthoofblunt</id>-->
 				<label>left hoof</label>
 				<capacities>
 					<li>Blunt</li>
@@ -33,7 +33,6 @@
 				<armorPenetrationBlunt>3</armorPenetrationBlunt>
 			</li>
 			<li Class="CombatExtended.ToolCE">
-				<!--<id>lefthoofblunt</id>-->
 				<label>left hoof</label>
 				<capacities>
 					<li>Poke</li>
@@ -44,7 +43,6 @@
 				<armorPenetrationBlunt>3</armorPenetrationBlunt>
 			</li>
 			<li Class="CombatExtended.ToolCE">
-				<!--<id>righthoofblunt</id>-->
 				<label>right hoof</label>
 				<capacities>
 					<li>Blunt</li>
@@ -55,7 +53,6 @@
 				<armorPenetrationBlunt>3</armorPenetrationBlunt>
 			</li>
 			<li Class="CombatExtended.ToolCE">
-				<!--<id>righthoofblunt</id>-->
 				<label>right hoof</label>
 				<capacities>
 					<li>Poke</li>
@@ -167,8 +164,8 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
-	<!-- <PawnKindDef ParentName="SK_AnimalKindBase">
+-->
+	<!-- <PawnKindDef ParentName="AnimalKindBase">
 		<defName>Muffalo</defName>
 		<label>muffalo</label>
 		<race>Muffalo</race>
@@ -240,8 +237,8 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
- -->
-	<ThingDef ParentName="SK_AnimalThingBase">
+ --><!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Gazelle</defName>
 		<label>gazelle</label>
 		<devNote>pig-1</devNote>
@@ -259,7 +256,6 @@
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
-				<!--<id>lefthoofblunt</id>-->
 				<label>left hoof</label>
 				<capacities>
 					<li>Blunt</li>
@@ -270,7 +266,6 @@
 				<armorPenetrationBlunt>2.5</armorPenetrationBlunt>
 			</li>
 			<li Class="CombatExtended.ToolCE">
-				<!--<id>righthoofblunt</id>-->
 				<label>right hoof</label>
 				<capacities>
 					<li>Blunt</li>
@@ -349,8 +344,8 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
-	<!-- <PawnKindDef ParentName="SK_AnimalKindBase">
+-->
+	<!-- <PawnKindDef ParentName="AnimalKindBase">
 		<defName>Gazelle</defName>
 		<label>gazelle</label>
 		<race>Gazelle</race>
@@ -399,8 +394,8 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
- -->
-	<ThingDef ParentName="SK_AnimalThingBase">
+ --><!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Iguana</defName>
 		<label>iguana</label>
 		<devNote>squirrel-1</devNote>
@@ -543,8 +538,8 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
-	<!-- <PawnKindDef ParentName="SK_AnimalKindBase">
+-->
+	<!-- <PawnKindDef ParentName="AnimalKindBase">
 		<defName>Iguana</defName>
 		<label>iguana</label>
 		<race>Iguana</race>
@@ -588,8 +583,8 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
- -->
-	<ThingDef ParentName="SK_AnimalThingBase">
+ --><!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Dromedary</defName>
 		<label>dromedary</label>
 		<devNote>cow-1</devNote>
@@ -724,8 +719,8 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
-	<!-- <PawnKindDef ParentName="SK_AnimalKindBase">
+-->
+	<!-- <PawnKindDef ParentName="AnimalKindBase">
 		<defName>Dromedary</defName>
 		<label>dromedary</label>
 		<labelPlural>dromedaries</labelPlural>
@@ -782,7 +777,7 @@
 		</lifeStages>
 	</PawnKindDef>
  -->
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Buffalo</defName>
 		<label>buffalo</label>
 		<devNote>cow-1</devNote>
@@ -941,7 +936,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Buffalo</defName>
 		<label>buffalo</label>
 		<race>Buffalo</race>
@@ -1020,8 +1015,8 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Sheep</defName>
 		<label>Sheep</label>
 		<devNote>sheep</devNote>
@@ -1120,8 +1115,8 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
-<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
+-->
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Sheep</defName>
 		<label>sheep</label>
 		<labelPlural>sheep</labelPlural>

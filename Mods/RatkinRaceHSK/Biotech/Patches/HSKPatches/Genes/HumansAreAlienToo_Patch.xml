@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Human"]/alienRace/raceRestriction/xenotypeList</xpath>
+        <value>
+			<li MayRequire="Ludeon.RimWorld.Biotech">RK_XenoType_Ratkin</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Nova" or defName="Alien_Dova" or defName="Norbal" or defName="Alien_Orassan"]/alienRace/raceRestriction/xenotypeList</xpath>
+        <value>
+			<li MayRequire="Ludeon.RimWorld.Biotech">RK_XenoType_Ratkin</li>
+        </value>
+    </Operation>
+
+</Patch>	

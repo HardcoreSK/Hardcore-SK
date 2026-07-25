@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="SK_AnimalThingBase" Name="AnimalDogBase" Abstract="True">
+	<ThingDef ParentName="AnimalThingBase" Name="AnimalDogBase" Abstract="True">
 		<devNote>cat-1</devNote>
 		<statBases>
 			<Mass>40</Mass>
@@ -131,7 +131,7 @@
 		</modExtensions>
 	</ThingDef>
 
-<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>YorkshireTerrier</defName>
 		<label>dog</label>
 		<race>YorkshireTerrier</race>
@@ -252,7 +252,7 @@
 		</modExtensions>
 	</ThingDef>
 
-<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Husky</defName>
 		<label>Husky</label>
 		<labelPlural>huskies</labelPlural>
@@ -383,7 +383,7 @@
 		</modExtensions>
 	</ThingDef>
 
-<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>LabradorRetriever</defName>
 		<label>Labrador Retriever</label>
 		<race>LabradorRetriever</race>
@@ -509,7 +509,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GermanShepherd</defName>
 		<label>Shepherd</label>
 		<race>GermanShepherd</race>

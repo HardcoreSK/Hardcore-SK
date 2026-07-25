@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- Animal -->
-	<ThingDef Name="ThingBaseDesiri" ParentName="SK_AnimalThingBase">
+	<ThingDef Name="ThingBaseDesiri" ParentName="AnimalThingBase">
 		<defName>Animal_Desiri</defName>
 		<label>arctic desiri</label>
 		<description>A small predator native to Orassia. It usually hunts small game like mice and voles, sometimes burrowing through a meter of snow to reach its prey... and the giant spiders native to Orassia. They use their strong jaws to crush their prey's exoskeleton and/or bones, and are surprisingly durable for their size. A somewhat popular pet among orassans, due to their instinct to bond with a partner. They typically live in pairs because of this. Since ancient times, they have been used to produce the drug known as synchronisity. How it's done varies based on cultural practices, since any bodily fluid would work in theory, but it is gathered through harvesting their milk... it's up to your imagination as to how the males are "milked." The milk must be evaporated to get the raw synchronisity, so it is of little culinary signifigance.</description>
@@ -176,7 +176,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Animal_Desiri</defName>
 		<label>arctic desiri</label>
 		<labelPlural>desiri</labelPlural>
@@ -247,7 +247,7 @@
 		</race>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Animal_Desiri_TemperateOne</defName>
 		<label>temperate desiri</label>
 		<labelPlural>temperate desiri</labelPlural>
@@ -318,7 +318,7 @@
 		</race>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Animal_Desiri_TemperateTwo</defName>
 		<label>temperate desiri</label>
 		<labelPlural>temperate desiri</labelPlural>
@@ -389,7 +389,7 @@
 		</race>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Animal_Desiri_Urban</defName>
 		<label>urban desiri</label>
 		<labelPlural>urban desiri</labelPlural>
@@ -452,7 +452,7 @@
 		</race>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Animal_Desiri_Desert</defName>
 		<label>desert desiri</label>
 		<labelPlural>desert desiri</labelPlural>

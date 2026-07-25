@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ========================== Horses ============================ -->
-	<ThingDef Abstract="True" ParentName="SK_AnimalThingBase" Name="BaseHorses">
+	<ThingDef Abstract="True" ParentName="AnimalThingBase" Name="BaseHorses">
 		<race>
 			<body>QuadrupedAnimalWithHooves</body>
 			<herdAnimal>true</herdAnimal>
@@ -133,7 +133,7 @@
 		</race>
 	</ThingDef>
 
-<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Horse</defName>
 		<label>horse</label>
 		<race>Horse</race>
@@ -222,7 +222,7 @@
 		</race>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Horse_Wooly</defName>
 		<label>woolly horse</label>
 		<race>Horse_Wooly</race>

@@ -23,6 +23,9 @@
 		<xpath>Defs/ThingDef[@Name="BasePawn"]</xpath>
 		<value>
 			<comps>
+				<li>
+					<compClass>CombatExtended.CompPawnGizmo</compClass>
+				</li>
 				<li Class="CombatExtended.CompProperties_Inventory" />
 				<li Class="CombatExtended.CompProperties_TacticalManager" />
 			</comps>

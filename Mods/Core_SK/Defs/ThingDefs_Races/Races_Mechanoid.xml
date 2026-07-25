@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ============================ Mechanoids ========================== -->
-	<ThingDef ParentName="SK_BasePawn" Name="SK_BaseMechanoid" Abstract="True">
+	<ThingDef ParentName="BasePawn" Name="SK_BaseMechanoid" Abstract="True">
 		<statBases>
 			<MarketValue>1200</MarketValue>
 			<Mass>70</Mass>

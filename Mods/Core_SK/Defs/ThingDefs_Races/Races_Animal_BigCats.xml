@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ========================== BigCats ============================ -->
-	<ThingDef ParentName="SK_AnimalThingBase" Name="SK_BigCatThingBase" Abstract="True">
+	<ThingDef ParentName="AnimalThingBase" Name="SK_BigCatThingBase" Abstract="True">
 		<devNote>warg-1</devNote>
 		<statBases>
 			<Mass>110</Mass>
@@ -144,7 +144,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase" Name="SK_BigCatKindBase" Abstract="True">
+	<PawnKindDef ParentName="AnimalKindBase" Name="SK_BigCatKindBase" Abstract="True">
 		<combatPower>160</combatPower>
 		<ecoSystemWeight>0.45</ecoSystemWeight>
 	</PawnKindDef>
@@ -272,7 +272,7 @@
 	</PawnKindDef>
  -->
 	<!--===============================================-->
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Lynx</defName>
 		<label>Lynx</label>
 		<devNote>warg-1</devNote>
@@ -407,7 +407,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<!-- <PawnKindDef ParentName="SK_AnimalKindBase">
+	<!-- <PawnKindDef ParentName="AnimalKindBase">
 		<defName>Lynx</defName>
 		<label>lynx</label>
 		<race>Lynx</race>
@@ -462,7 +462,7 @@
 		</lifeStages>
 	</PawnKindDef>
  -->
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Tiger</defName>
 		<label>Tiger</label>
 		<devNote>warg-1</devNote>
@@ -607,7 +607,7 @@
 		</modExtensions>
 	</ThingDef>
 
-<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Tiger</defName>
 		<label>Tiger</label>
 		<race>Tiger</race>
@@ -657,7 +657,7 @@
 		</lifeStages>
 	</PawnKindDef>
  -->
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>WhiteTiger</defName>
 		<label>White tiger</label>
 		<devNote>warg-1</devNote>
@@ -802,7 +802,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>WhiteTiger</defName>
 		<label>White tiger</label>
 		<race>WhiteTiger</race>

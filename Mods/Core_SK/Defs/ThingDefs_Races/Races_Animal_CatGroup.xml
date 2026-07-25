@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="SK_AnimalThingBase" Name="AnimalDomesticCatBase" Abstract="True">
+	<ThingDef ParentName="AnimalThingBase" Name="AnimalDomesticCatBase" Abstract="True">
 		<devNote>cat</devNote>
 		<statBases>
 			<Mass>3</Mass>
@@ -147,7 +147,7 @@
 		</race>
 	</ThingDef>
 
-<!-- 	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Cat</defName>
 		<label>cat</label>
 		<race>Cat</race>
@@ -218,7 +218,7 @@
 		</modExtensions>
 	</PawnKindDef>
  -->
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>MiniMaineCoon</defName>
 		<label>miniature maine coon</label>
 		<race>Cat</race>
@@ -271,7 +271,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>MaineCoon</defName>
 		<label>maine coon</label>
 		<race>Cat</race>
@@ -324,7 +324,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>EuropeanShorthair</defName>
 		<label>European Shorthair</label>
 		<race>Cat</race>
@@ -377,7 +377,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>NorwegianForestCat</defName>
 		<label>Norwegian Forest Cat</label>
 		<race>Cat</race>
@@ -430,7 +430,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BritishShorthair</defName>
 		<label>British Shorthair</label>
 		<race>Cat</race>
@@ -483,7 +483,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Siamese</defName>
 		<label>Siamese</label>
 		<race>Cat</race>

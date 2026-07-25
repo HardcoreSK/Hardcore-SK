@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="SK_AnimalThingBase" Name="SK_BigBirdThingBase" Abstract="True">
+	<ThingDef ParentName="AnimalThingBase" Name="SK_BigBirdThingBase" Abstract="True">
 		<devNote>chicken-1</devNote>
 		<race>
 			<body>Bird</body>
@@ -36,7 +36,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase" Name="SK_BigBirdKindBase" Abstract="True">
+	<PawnKindDef ParentName="AnimalKindBase" Name="SK_BigBirdKindBase" Abstract="True">
 		<combatPower>70</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.38</ecoSystemWeight>

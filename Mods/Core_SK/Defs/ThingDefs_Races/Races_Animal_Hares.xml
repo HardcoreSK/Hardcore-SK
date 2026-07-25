@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ========================== Hares ============================ -->
-	<ThingDef Abstract="True" ParentName="SK_AnimalThingBase" Name="SK_HareThingBase">
+	<ThingDef Abstract="True" ParentName="AnimalThingBase" Name="SK_HareThingBase">
 		<devNote>squirrel-1</devNote>
 		<statBases>
 			<Mass>1.5</Mass>
@@ -94,7 +94,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef Abstract="True" ParentName="SK_AnimalKindBase" Name="SK_HareKindBase">
+	<PawnKindDef Abstract="True" ParentName="AnimalKindBase" Name="SK_HareKindBase">
 		<combatPower>33</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.25</ecoSystemWeight>

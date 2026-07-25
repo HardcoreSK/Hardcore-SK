@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="SK_AnimalThingBase" Name="MartinThingBase" Abstract="True">
+	<ThingDef ParentName="AnimalThingBase" Name="MartinThingBase" Abstract="True">
 		<statBases>
 			<Mass>3</Mass>
 			<MoveSpeed>6.8</MoveSpeed>
@@ -122,7 +122,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase" Name="MartinKindBase" Abstract="True">
+	<PawnKindDef ParentName="AnimalKindBase" Name="MartinKindBase" Abstract="True">
 		<combatPower>155</combatPower>
 
 		<canArriveManhunter>false</canArriveManhunter>
