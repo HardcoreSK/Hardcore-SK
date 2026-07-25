@@ -21,7 +21,8 @@
                     <cornerBR>Damage/Corner</cornerBR>
                 </damageData>
             </graphicData>
-            <minifiedDef IsNull="true"/>
+            <minifiedDef IsNull="true" />
+            <thingCategories IsNull="true"/>
             <statBases>
                 <WorkToBuild>300</WorkToBuild>
                 <WorkTableWorkSpeedFactor>0.7</WorkTableWorkSpeedFactor>
@@ -32,17 +33,17 @@
             <building Merge="true">
                 <uninstallWork>150</uninstallWork>
             </building>
-			<comps>
-			  <li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-				  <li>CookingTools</li>
-				</linkableFacilities>
-			  </li>
-			</comps>
-			<placeWorkers>
-			  <li>PlaceWorker_ShowFacilitiesConnections</li>
-			  <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-			</placeWorkers>
+            <comps>
+                <li Class="CompProperties_AffectedByFacilities">
+                    <linkableFacilities>
+                        <li>CookingTools</li>
+                    </linkableFacilities>
+                </li>
+            </comps>
+            <placeWorkers>
+                <li>PlaceWorker_ShowFacilitiesConnections</li>
+                <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+            </placeWorkers>
             <recipes Merge="true">
                 <li>ButcherCorpseFlesh</li>
                 <li>MakeHerbMedicine</li>
@@ -160,7 +161,7 @@
                 <ComponentMedieval>10</ComponentMedieval>
                 <Mechanism>5</Mechanism>
             </costList>
-            <constructEffect IsNull="true"/>
+            <constructEffect IsNull="true" />
             <statBases Merge="true">
                 <WorkToBuild>1200</WorkToBuild>
                 <MaxHitPoints>180</MaxHitPoints>
@@ -174,7 +175,7 @@
             <fillPercent>0.6</fillPercent>
             <tickerType>Normal</tickerType>
             <comps>
-                <li Class="CompProperties_Flickable"/>
+                <li Class="CompProperties_Flickable" />
                 <li Class="CompProperties_AffectedByFacilities">
                     <linkableFacilities>
                         <li>CookingTools</li>
@@ -271,8 +272,8 @@
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <basePowerConsumption>350</basePowerConsumption>
                 </li>
-                <li Class="CompProperties_Flickable"/>
-                <li Class="CompProperties_Breakdownable"/>
+                <li Class="CompProperties_Flickable" />
+                <li Class="CompProperties_Breakdownable" />
             </comps>
             <size>(2,1)</size>
             <stuffCategories>
@@ -284,7 +285,7 @@
                 <ElectronicComponents>5</ElectronicComponents>
                 <Mechanism>5</Mechanism>
             </costList>
-            <constructEffect IsNull="true"/>
+            <constructEffect IsNull="true" />
             <interactionCellOffset>(0,0,-1)</interactionCellOffset>
             <designationHotKey>Misc2</designationHotKey>
             <researchPrerequisites>
@@ -317,7 +318,7 @@
             <costList>
                 <ComponentIndustrial>2</ComponentIndustrial>
             </costList>
-            <constructEffect IsNull="true"/>
+            <constructEffect IsNull="true" />
             <designationHotKey>Misc3</designationHotKey>
             <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
         </value>
@@ -358,7 +359,7 @@
                 <WoodLog>50</WoodLog>
             </costList>
             <minifiedDef>MinifiedThing</minifiedDef>
-            <constructEffect IsNull="true"/>
+            <constructEffect IsNull="true" />
             <statBases>
                 <WorkToBuild>1300</WorkToBuild>
                 <MaxHitPoints>180</MaxHitPoints>
@@ -375,7 +376,7 @@
                 <uninstallWork>1250</uninstallWork>
             </building>
             <comps>
-                <li Class="CompProperties_Flickable"/>
+                <li Class="CompProperties_Flickable" />
                 <li Class="CompProperties_AffectedByFacilities">
                     <linkableFacilities>
                         <li>CookingTools</li>
@@ -477,7 +478,7 @@
                         <li>PodChair</li>
                     </linkableFacilities>
                 </li>
-                <li Class="CompProperties_Breakdownable"/>
+                <li Class="CompProperties_Breakdownable" />
             </comps>
             <researchPrerequisites>
                 <li>Chemistry_C2</li>
@@ -602,8 +603,8 @@
             </building>
             <tickerType>Normal</tickerType>
             <comps>
-                <li Class="CompProperties_Flickable"/>
-                <li Class="CompProperties_Breakdownable"/>
+                <li Class="CompProperties_Flickable" />
+                <li Class="CompProperties_Breakdownable" />
                 <li Class="SK.CompProperties_IdlePower">
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <basePowerConsumption>600</basePowerConsumption>
@@ -669,7 +670,7 @@
             <recipes DeepReplace="true">
                 <li>Make_ComponentSpacer</li>
             </recipes>
-            <thingCategories/>
+            <thingCategories />
             <statBases Merge="true">
                 <WorkToBuild>2800</WorkToBuild>
                 <MaxHitPoints>200</MaxHitPoints>
@@ -679,7 +680,7 @@
             </statBases>
             <tickerType>Normal</tickerType>
             <comps>
-                <li Class="CompProperties_Flickable"/>
+                <li Class="CompProperties_Flickable" />
                 <li Class="SK.CompProperties_IdlePower">
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <basePowerConsumption>300</basePowerConsumption>
@@ -697,7 +698,7 @@
                 <unpoweredWorkTableWorkSpeedFactor>0.6</unpoweredWorkTableWorkSpeedFactor>
             </building>
             <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-            <researchPrerequisites IsNull="True"/>
+            <researchPrerequisites IsNull="True" />
         </value>
     </Operation>
 
@@ -740,7 +741,7 @@
                 <ComponentMedieval>12</ComponentMedieval>
                 <Mechanism>8</Mechanism>
             </costList>
-            <constructEffect IsNull="true"/>
+            <constructEffect IsNull="true" />
             <statBases Merge="true">
                 <WorkToBuild>1700</WorkToBuild>
                 <MaxHitPoints>250</MaxHitPoints>
@@ -760,7 +761,7 @@
                 </buildingTags>
             </building>
             <comps>
-                <li Class="CompProperties_Flickable"/>
+                <li Class="CompProperties_Flickable" />
                 <li Class="CompProperties_AffectedByFacilities">
                     <linkableFacilities>
                         <li>Small_ToolCabinet</li>
@@ -928,7 +929,7 @@
                         <li>PodChair</li>
                     </linkableFacilities>
                 </li>
-                <li Class="CompProperties_Breakdownable"/>
+                <li Class="CompProperties_Breakdownable" />
             </comps>
             <researchPrerequisites>
                 <li>Art_B1</li>
