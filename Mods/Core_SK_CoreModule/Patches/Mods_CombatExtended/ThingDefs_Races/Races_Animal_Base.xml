@@ -22,7 +22,7 @@
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[@Name="BasePawn"]</xpath>
 		<value>
-			<comps>
+			<comps Merge="true">
 				<li>
 					<compClass>CombatExtended.CompPawnGizmo</compClass>
 				</li>
