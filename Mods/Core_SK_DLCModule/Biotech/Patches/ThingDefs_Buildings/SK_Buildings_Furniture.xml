@@ -115,6 +115,14 @@
 					</researchPrerequisites>
 				</value>
 			</li>
+			
+			<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/ThingDef[defName="SanguphageMeetingTorch"]</xpath>
+				<value>
+				  <stuffCategories Inherit="false" />
+				  <costStuffCount Inherit="false" />
+				</value>
+			</li>
 
 		</operations>
 	</Operation>
