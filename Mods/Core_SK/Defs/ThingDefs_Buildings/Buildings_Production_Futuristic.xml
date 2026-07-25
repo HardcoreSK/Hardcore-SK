@@ -256,6 +256,8 @@
 		<defName>HadronColliderFeeder</defName>
 		<label>hadron collider hopper</label>
 		<description>Holds inorganic matter for the hadron collider.</description>
+		<thingClass>AdaptiveStorage.ThingClass</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<texPath>Things/Building/Misc/hopper</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -282,6 +284,9 @@
 		<canOverlapZones>false</canOverlapZones>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<building>
+			<blueprintClass>Blueprint_Storage</blueprintClass>
+			<maxItemsInCell>4</maxItemsInCell>
+			<isHopper>true</isHopper>
 			<uninstallWork>700</uninstallWork>
 			<fixedStorageSettings>
 				<priority>Important</priority>
@@ -315,5 +320,36 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>18</constructionSkillPrerequisite>
 	</ThingDef>
+
+	<AdaptiveStorage.GraphicsDef>
+		<defName>HadronColliderFeederASF</defName>
+		<targetDef>HadronColliderFeeder</targetDef>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>Things/Building/Misc/hopper</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>(2,2)</drawSize>
+				</graphicData>
+			</li>
+		</graphics>
+		<showContainedItems>true</showContainedItems>
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Circle</stackBehaviour>
+							<stackOffset>(0,0,0.42)</stackOffset>
+							<stackOffsetFactor>0.28</stackOffsetFactor>
+							<drawOffset>(0,0,0.08)</drawOffset>
+							<drawScale>0.55</drawScale>
+						</r0>
+					</rows>
+				</c0>
+			</columns>
+		</itemGraphics>
+	</AdaptiveStorage.GraphicsDef>
 
 </Defs>
