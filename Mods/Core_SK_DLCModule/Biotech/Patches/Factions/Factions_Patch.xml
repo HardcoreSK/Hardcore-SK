@@ -151,14 +151,13 @@
       </pawnGroupMakers>
     </value>
   </Operation>
-
+<!-- No different to vanilla, even missing some
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/FactionDef[defName="PirateYttakin"]</xpath>
     <value>
       <earliestRaidDays>96</earliestRaidDays>
       <pawnGroupMakers Inherit="False">
         <li>
-          <!-- Normal fights, ranged with melee mix-ins -->
           <kindDef>Combat</kindDef>
           <commonality>100</commonality>
           <options>
@@ -181,7 +180,6 @@
           </options>
         </li>
         <li>
-          <!-- Normal fights, melee-only -->
           <kindDef>Combat</kindDef>
           <commonality>30</commonality>
           <disallowedStrategies>
@@ -195,7 +193,6 @@
           </options>
         </li>
         <li>
-          <!-- Normal fights, explosives with ranged mix-ins -->
           <kindDef>Combat</kindDef>
           <commonality>15</commonality>
           <disallowedStrategies>
@@ -214,7 +211,6 @@
           </options>
         </li>
         <li>
-          <!-- Normal fights, drifters only (very rare) -->
           <kindDef>Combat</kindDef>
           <commonality>2.5</commonality>
           <maxTotalPoints>1000</maxTotalPoints>
@@ -224,7 +220,6 @@
           </options>
         </li>
         <li>
-          <!-- Base defense, mainly ranged with melee mix-ins -->
           <kindDef>Settlement</kindDef>
           <options>
             <Thrasher_Yttakin>3</Thrasher_Yttakin>
@@ -272,7 +267,7 @@
       </pawnGroupMakers>
     </value>
   </Operation>
-
+-->
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/FactionDef[defName="OutlanderRoughPig"]</xpath>
     <value>
