@@ -4,6 +4,26 @@
 	<!-- Structure -->
 
 	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Walls</defName>
+		<label>Walls</label>
+		<description>Strong walls that protect your buildings from invasion and surrounding threats.</description>
+		<defNames>
+			<li>Wall</li>
+			<li>Window</li>
+			<li>ClutterSilverWall</li>
+			<li>UtilityWall</li>
+			<li>ClutterUWallLight</li>
+			<li MayRequire="Dubwise.Rimatomics">RadiationShielding</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+		<order>10</order>
+		<types>
+			<li>Rooms</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Doors</defName>
 		<label>Doors</label>
 		<description>Simple doors that allow you to control access between different parts of your colony.</description>
@@ -22,7 +42,10 @@
 		</defNames>
 		<designationCategory>Structure</designationCategory>
 		<debug>false</debug>
-		<order>10</order>
+		<order>20</order>
+		<types>
+			<li>Rooms</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -38,24 +61,10 @@
 		</defNames>
 		<designationCategory>Structure</designationCategory>
 		<debug>false</debug>
-		<order>11</order>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Walls</defName>
-		<label>Walls</label>
-		<description>Strong walls that protect your buildings from invasion and surrounding threats.</description>
-		<defNames>
-			<li>Wall</li>
-			<li>Window</li>
-			<li>ClutterSilverWall</li>
-			<li>UtilityWall</li>
-			<li>ClutterUWallLight</li>
-			<li MayRequire="Dubwise.Rimatomics">RadiationShielding</li>
-		</defNames>
-		<designationCategory>Structure</designationCategory>
-		<debug>false</debug>
-		<order>20</order>
+		<order>30</order>
+		<types>
+			<li>Rooms</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -68,7 +77,10 @@
 		</defNames>
 		<designationCategory>Structure</designationCategory>
 		<debug>false</debug>
-		<order>30</order>
+		<order>40</order>
+		<types>
+			<li>Rooms</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -81,7 +93,21 @@
 		</defNames>
 		<designationCategory>Structure</designationCategory>
 		<debug>false</debug>
-		<order>40</order>
+		<order>50</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Outdoor</defName>
+		<label>Outdoor</label>
+		<description>Fecnes, Gates and everything that belongs outside.</description>
+		<defNames>
+			<li>Fence</li>
+			<li>FenceGate</li>
+			<li>PenMarker</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+		<order>60</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 </Defs>
