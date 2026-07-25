@@ -48,14 +48,14 @@
 		</statBases>
 		<equippedStatOffsets>
 			<CarryBulk>10</CarryBulk>
-			<MoveSpeed>-0.3</MoveSpeed>
-			<WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+			<MoveSpeed>-0.15</MoveSpeed>
+			<WorkSpeedGlobal>-0.08</WorkSpeedGlobal>
 			<PsychicSensitivity>-0.05</PsychicSensitivity>
-			<ShootingAccuracyPawn>-0.06</ShootingAccuracyPawn>
-			<AimingDelayFactor>0.05</AimingDelayFactor>
-			<MeleeHitChance>-0.05</MeleeHitChance>
-			<MeleeWeapon_CooldownMultiplier>0.06</MeleeWeapon_CooldownMultiplier>
-			<Suppressability>-0.16</Suppressability>
+			<ShootingAccuracyPawn>0.04</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.05</AimingDelayFactor>
+			<MeleeHitChance>-0.04</MeleeHitChance>
+			<MeleeWeapon_CooldownMultiplier>0.04</MeleeWeapon_CooldownMultiplier>
+			<Suppressability>-0.18</Suppressability>
 			<ArmorRating_Toxin>0.15</ArmorRating_Toxin>
 			<GermResistance>0.05</GermResistance>
 			<GermContainment>0.05</GermContainment>
@@ -140,16 +140,17 @@
 			<ArmorRating_Heat>0.125</ArmorRating_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryWeight>10</CarryWeight>
-			<CarryBulk>10</CarryBulk>
-			<MoveSpeed>0.2</MoveSpeed>
-			<WorkSpeedGlobal>-0.21</WorkSpeedGlobal>
+			<CarryWeight>15</CarryWeight>
+			<CarryBulk>12</CarryBulk>
+			<MoveSpeed>0.3</MoveSpeed>
+			<WorkSpeedGlobal>-0.08</WorkSpeedGlobal>
 			<MentalBreakThreshold>-0.04</MentalBreakThreshold>
 			<PsychicSensitivity>-0.1</PsychicSensitivity>
-			<ShootingAccuracyPawn>-0.08</ShootingAccuracyPawn>
-			<AimingDelayFactor>0.07</AimingDelayFactor>
-			<MeleeHitChance>-0.03</MeleeHitChance>
-			<MeleeWeapon_CooldownMultiplier>0.05</MeleeWeapon_CooldownMultiplier>
+			<ShootingAccuracyPawn>0.04</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.05</AimingDelayFactor>
+			<ReloadSpeed>0.08</ReloadSpeed>
+			<MeleeHitChance>-0.02</MeleeHitChance>
+			<MeleeWeapon_CooldownMultiplier>0.03</MeleeWeapon_CooldownMultiplier>
 			<ImmunityGainSpeed>0.2</ImmunityGainSpeed>
 			<Suppressability>-0.2</Suppressability>
 			<ArmorRating_Toxin>0.16</ArmorRating_Toxin>
@@ -269,16 +270,17 @@
 			<ArmorRating_Heat>0.125</ArmorRating_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryWeight>30</CarryWeight>
-			<CarryBulk>15</CarryBulk>
-			<MoveSpeed>0.15</MoveSpeed>
-			<WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
+			<CarryWeight>35</CarryWeight>
+			<CarryBulk>20</CarryBulk>
+			<MoveSpeed>0.1</MoveSpeed>
+			<WorkSpeedGlobal>-0.14</WorkSpeedGlobal>
 			<MentalBreakThreshold>-0.03</MentalBreakThreshold>
 			<PsychicSensitivity>-0.1</PsychicSensitivity>
-			<ShootingAccuracyPawn>-0.06</ShootingAccuracyPawn>
-			<AimingDelayFactor>0.04</AimingDelayFactor>
-			<MeleeHitChance>-0.04</MeleeHitChance>
-			<MeleeWeapon_CooldownMultiplier>0.12</MeleeWeapon_CooldownMultiplier>
+			<ShootingAccuracyPawn>0.02</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.02</AimingDelayFactor>
+			<ReloadSpeed>0.12</ReloadSpeed>
+			<MeleeHitChance>-0.03</MeleeHitChance>
+			<MeleeWeapon_CooldownMultiplier>0.06</MeleeWeapon_CooldownMultiplier>
 			<ImmunityGainSpeed>0.2</ImmunityGainSpeed>
 			<Suppressability>-0.22</Suppressability>
 			<ArmorRating_Toxin>0.16</ArmorRating_Toxin>
@@ -368,15 +370,18 @@
 		</statBases>
 		<equippedStatOffsets>
 			<CarryBulk>15</CarryBulk>
-			<MoveSpeed>-0.3</MoveSpeed>
-			<WorkSpeedGlobal>-0.17</WorkSpeedGlobal>
+			<MoveSpeed>-0.2</MoveSpeed>
+			<WorkSpeedGlobal>-0.08</WorkSpeedGlobal>
+			<SocialImpact>0.10</SocialImpact>
 			<MentalBreakThreshold>-0.08</MentalBreakThreshold>
 			<PsychicSensitivity>-0.05</PsychicSensitivity>
-			<ShootingAccuracyPawn>-0.22</ShootingAccuracyPawn>
+			<ShootingAccuracyPawn>-0.18</ShootingAccuracyPawn>
 			<AimingDelayFactor>0.04</AimingDelayFactor>
+			<ReloadSpeed>0.05</ReloadSpeed>
 			<MeleeHitChance>0.15</MeleeHitChance>
-			<MeleeWeapon_CooldownMultiplier>0.03</MeleeWeapon_CooldownMultiplier>
-			<Suppressability>-0.17</Suppressability>
+			<MeleeCritChance>0.08</MeleeCritChance>
+			<MeleeWeapon_CooldownMultiplier>-0.06</MeleeWeapon_CooldownMultiplier>
+			<Suppressability>-0.20</Suppressability>
 			<ArmorRating_Toxin>0.18</ArmorRating_Toxin>
 			<GermResistance>0.03</GermResistance>
 			<GermContainment>0.04</GermContainment>
@@ -466,18 +471,19 @@
 		</statBases>
 		<equippedStatOffsets>
 			<CarryWeight>40</CarryWeight>
-			<CarryBulk>15</CarryBulk>
-			<MoveSpeed>-0.7</MoveSpeed>
-			<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
+			<CarryBulk>18</CarryBulk>
+			<MoveSpeed>-0.45</MoveSpeed>
+			<WorkSpeedGlobal>-0.12</WorkSpeedGlobal>
 			<MentalBreakThreshold>-0.08</MentalBreakThreshold>
 			<PsychicSensitivity>-0.1</PsychicSensitivity>
-			<ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
-			<AimingDelayFactor>0.1</AimingDelayFactor>
-			<MeleeHitChance>-0.26</MeleeHitChance>
-			<MeleeWeapon_CooldownMultiplier>0.21</MeleeWeapon_CooldownMultiplier>
-			<Suppressability>-0.22</Suppressability>
-			<ArmorRating_Toxin>0.4</ArmorRating_Toxin>
-			<Radiation>-0.3</Radiation>
+			<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.05</AimingDelayFactor>
+			<MeleeHitChance>-0.10</MeleeHitChance>
+			<MeleeWeapon_CooldownMultiplier>0.08</MeleeWeapon_CooldownMultiplier>
+			<ImmunityGainSpeed>0.3</ImmunityGainSpeed>
+			<Suppressability>-0.25</Suppressability>
+			<ArmorRating_Toxin>0.5</ArmorRating_Toxin>
+			<Radiation>-0.4</Radiation>
 			<GermResistance>0.04</GermResistance>
 			<GermContainment>0.03</GermContainment>
 			<VacuumResistance MayRequire="ludeon.rimworld.odyssey">0.33</VacuumResistance>
@@ -577,18 +583,20 @@
 			<ArmorRating_Heat>0.05</ArmorRating_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryWeight>40</CarryWeight>
-			<CarryBulk>15</CarryBulk>
+			<CarryWeight>50</CarryWeight>
+			<CarryBulk>20</CarryBulk>
 			<MoveSpeed>-1.3</MoveSpeed>
 			<WorkSpeedGlobal>-0.3</WorkSpeedGlobal>
-			<MentalBreakThreshold>-0.08</MentalBreakThreshold>
+			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
 			<PsychicSensitivity>0.1</PsychicSensitivity>
-			<ShootingAccuracyPawn>-0.22</ShootingAccuracyPawn>
-			<AimingDelayFactor>0.22</AimingDelayFactor>
-			<MeleeHitChance>-0.27</MeleeHitChance>
-			<MeleeWeapon_CooldownMultiplier>0.22</MeleeWeapon_CooldownMultiplier>
-			<ImmunityGainSpeed>0.25</ImmunityGainSpeed>
-			<Suppressability>-0.24</Suppressability>
+			<ShootingAccuracyPawn>-0.20</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.20</AimingDelayFactor>
+			<ReloadSpeed>-0.15</ReloadSpeed>
+			<MeleeHitChance>-0.15</MeleeHitChance>
+			<MeleeParryChance>0.18</MeleeParryChance>
+			<MeleeWeapon_CooldownMultiplier>0.15</MeleeWeapon_CooldownMultiplier>
+			<ImmunityGainSpeed>0.35</ImmunityGainSpeed>
+			<Suppressability>-0.35</Suppressability>
 			<ArmorRating_Toxin>0.4</ArmorRating_Toxin>
 			<Radiation>-0.35</Radiation>
 			<GermResistance>0.05</GermResistance>
@@ -680,17 +688,19 @@
 			<ArmorRating_Heat>0.14</ArmorRating_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryWeight>50</CarryWeight>
-			<CarryBulk>20</CarryBulk>
-			<MoveSpeed>-1.35</MoveSpeed>
-			<WorkSpeedGlobal>-0.3</WorkSpeedGlobal>
-			<MentalBreakThreshold>-0.08</MentalBreakThreshold>
+			<CarryWeight>60</CarryWeight>
+			<CarryBulk>25</CarryBulk>
+			<MoveSpeed>-0.65</MoveSpeed>
+			<WorkSpeedGlobal>-0.18</WorkSpeedGlobal>
+			<MentalBreakThreshold>-0.06</MentalBreakThreshold>
 			<PsychicSensitivity>-0.05</PsychicSensitivity>
-			<ShootingAccuracyPawn>-0.18</ShootingAccuracyPawn>
-			<AimingDelayFactor>0.22</AimingDelayFactor>
-			<MeleeHitChance>-0.27</MeleeHitChance>
-			<MeleeWeapon_CooldownMultiplier>0.22</MeleeWeapon_CooldownMultiplier>
-			<Suppressability>-0.23</Suppressability>
+			<ShootingAccuracyPawn>-0.08</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.08</AimingDelayFactor>
+			<ReloadSpeed>-0.05</ReloadSpeed>
+			<MeleeHitChance>0.08</MeleeHitChance>
+			<MeleeParryChance>0.10</MeleeParryChance>
+			<MeleeWeapon_CooldownMultiplier>-0.06</MeleeWeapon_CooldownMultiplier>
+			<Suppressability>-0.28</Suppressability>
 			<ArmorRating_Toxin>0.4</ArmorRating_Toxin>
 			<Radiation>-0.2</Radiation>
 			<GermResistance>0.04</GermResistance>
@@ -786,18 +796,20 @@
 			<ArmorRating_Heat>0.16</ArmorRating_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryWeight>40</CarryWeight>
-			<CarryBulk>15</CarryBulk>
-			<MoveSpeed>-1.1</MoveSpeed>
-			<WorkSpeedGlobal>-0.27</WorkSpeedGlobal>
+			<CarryWeight>45</CarryWeight>
+			<CarryBulk>18</CarryBulk>
+			<MoveSpeed>-0.5</MoveSpeed>
+			<WorkSpeedGlobal>-0.18</WorkSpeedGlobal>
 			<MentalBreakThreshold>-0.08</MentalBreakThreshold>
 			<PsychicSensitivity>-0.1</PsychicSensitivity>
-			<ShootingAccuracyPawn>-0.15</ShootingAccuracyPawn>
-			<AimingDelayFactor>0.2</AimingDelayFactor>
-			<MeleeHitChance>-0.26</MeleeHitChance>
-			<MeleeWeapon_CooldownMultiplier>0.21</MeleeWeapon_CooldownMultiplier>
-			<ImmunityGainSpeed>0.2</ImmunityGainSpeed>
-			<Suppressability>-0.24</Suppressability>
+			<ShootingAccuracyPawn>-0.04</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.04</AimingDelayFactor>
+			<ReloadSpeed>0.05</ReloadSpeed>
+			<MeleeHitChance>0.06</MeleeHitChance>
+			<MeleeCritChance>0.05</MeleeCritChance>
+			<MeleeWeapon_CooldownMultiplier>-0.05</MeleeWeapon_CooldownMultiplier>
+			<ImmunityGainSpeed>0.25</ImmunityGainSpeed>
+			<Suppressability>-0.28</Suppressability>
 			<ArmorRating_Toxin>0.45</ArmorRating_Toxin>
 			<Radiation>-0.35</Radiation>
 			<GermResistance>0.04</GermResistance>
@@ -908,16 +920,17 @@
 		</statBases>
 		<equippedStatOffsets>
 			<CarryBulk>10</CarryBulk>
-			<MoveSpeed>-0.4</MoveSpeed>
-			<WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+			<MoveSpeed>-0.2</MoveSpeed>
+			<WorkSpeedGlobal>-0.08</WorkSpeedGlobal>
 			<MentalBreakThreshold>-0.06</MentalBreakThreshold>
 			<PsychicSensitivity>-0.05</PsychicSensitivity>
-			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
-			<AimingDelayFactor>-0.15</AimingDelayFactor>
-			<MeleeHitChance>-0.25</MeleeHitChance>
-			<MeleeWeapon_CooldownMultiplier>0.11</MeleeWeapon_CooldownMultiplier>
+			<ShootingAccuracyPawn>0.12</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.18</AimingDelayFactor>
+			<ReloadSpeed>0.10</ReloadSpeed>
+			<MeleeHitChance>-0.15</MeleeHitChance>
+			<MeleeWeapon_CooldownMultiplier>0.08</MeleeWeapon_CooldownMultiplier>
 			<ImmunityGainSpeed>0.2</ImmunityGainSpeed>
-			<Suppressability>-0.19</Suppressability>
+			<Suppressability>-0.20</Suppressability>
 			<ArmorRating_Toxin>0.3</ArmorRating_Toxin>
 			<Radiation>-0.25</Radiation>
 			<GermResistance>0.05</GermResistance>
@@ -1011,17 +1024,19 @@
 			<ArmorRating_Heat>0.155</ArmorRating_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryWeight>60</CarryWeight>
-			<CarryBulk>30</CarryBulk>
-			<MoveSpeed>-1.4</MoveSpeed>
-			<WorkSpeedGlobal>-0.35</WorkSpeedGlobal>
-			<MentalBreakThreshold>-0.08</MentalBreakThreshold>
+			<CarryWeight>80</CarryWeight>
+			<CarryBulk>40</CarryBulk>
+			<MoveSpeed>-1.5</MoveSpeed>
+			<WorkSpeedGlobal>-0.40</WorkSpeedGlobal>
+			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
 			<PsychicSensitivity>-0.05</PsychicSensitivity>
-			<ShootingAccuracyPawn>-0.25</ShootingAccuracyPawn>
-			<AimingDelayFactor>0.23</AimingDelayFactor>
-			<MeleeHitChance>-0.28</MeleeHitChance>
-			<MeleeWeapon_CooldownMultiplier>0.25</MeleeWeapon_CooldownMultiplier>
-			<Suppressability>-0.31</Suppressability>
+			<ShootingAccuracyPawn>-0.12</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.15</AimingDelayFactor>
+			<ReloadSpeed>-0.12</ReloadSpeed>
+			<MeleeHitChance>-0.20</MeleeHitChance>
+			<MeleeParryChance>0.20</MeleeParryChance>
+			<MeleeWeapon_CooldownMultiplier>0.20</MeleeWeapon_CooldownMultiplier>
+			<Suppressability>-0.45</Suppressability>
 			<ArmorRating_Toxin>0.5</ArmorRating_Toxin>
 			<Radiation>-0.3</Radiation>
 			<GermResistance>0.05</GermResistance>
@@ -1124,17 +1139,20 @@
 			<ArmorRating_Heat>0.12</ArmorRating_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryWeight>50</CarryWeight>
-			<CarryBulk>20</CarryBulk>
-			<MoveSpeed>-1</MoveSpeed>
-			<WorkSpeedGlobal>-0.35</WorkSpeedGlobal>
-			<MentalBreakThreshold>-0.08</MentalBreakThreshold>
+			<CarryWeight>60</CarryWeight>
+			<CarryBulk>25</CarryBulk>
+			<MoveSpeed>-0.55</MoveSpeed>
+			<WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
+			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
 			<PsychicSensitivity>-0.05</PsychicSensitivity>
-			<ShootingAccuracyPawn>-0.28</ShootingAccuracyPawn>
-			<AimingDelayFactor>0.29</AimingDelayFactor>
-			<MeleeHitChance>0.15</MeleeHitChance>
-			<MeleeWeapon_CooldownMultiplier>0.05</MeleeWeapon_CooldownMultiplier>
-			<Suppressability>-0.32</Suppressability>
+			<ShootingAccuracyPawn>-0.25</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.25</AimingDelayFactor>
+			<ReloadSpeed>-0.10</ReloadSpeed>
+			<MeleeHitChance>0.25</MeleeHitChance>
+			<MeleeCritChance>0.12</MeleeCritChance>
+			<MeleeParryChance>0.18</MeleeParryChance>
+			<MeleeWeapon_CooldownMultiplier>-0.12</MeleeWeapon_CooldownMultiplier>
+			<Suppressability>-0.40</Suppressability>
 			<ArmorRating_Toxin>0.5</ArmorRating_Toxin>
 			<Radiation>-0.3</Radiation>
 			<GermResistance>0.04</GermResistance>
@@ -1228,16 +1246,17 @@
 			<ArmorRating_Heat>0</ArmorRating_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryBulk>16</CarryBulk>
-			<MoveSpeed>-0.25</MoveSpeed>
-			<WorkSpeedGlobal>-0.16</WorkSpeedGlobal>
+			<CarryBulk>18</CarryBulk>
+			<MoveSpeed>-0.08</MoveSpeed>
+			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
 			<MentalBreakThreshold>-0.04</MentalBreakThreshold>
 			<PsychicSensitivity>-0.05</PsychicSensitivity>
-			<ShootingAccuracyPawn>-0.13</ShootingAccuracyPawn>
-			<AimingDelayFactor>0.12</AimingDelayFactor>
-			<MeleeHitChance>-0.14</MeleeHitChance>
-			<MeleeWeapon_CooldownMultiplier>0.12</MeleeWeapon_CooldownMultiplier>
-			<Suppressability>-0.15</Suppressability>
+			<ShootingAccuracyPawn>-0.02</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.02</AimingDelayFactor>
+			<ReloadSpeed>0.05</ReloadSpeed>
+			<MeleeHitChance>-0.04</MeleeHitChance>
+			<MeleeWeapon_CooldownMultiplier>0.04</MeleeWeapon_CooldownMultiplier>
+			<Suppressability>-0.16</Suppressability>
 			<GermResistance>0.03</GermResistance>
 			<GermContainment>0.03</GermContainment>
 			<VacuumResistance MayRequire="ludeon.rimworld.odyssey">0.33</VacuumResistance>
