@@ -3,12 +3,12 @@
 <!-- 	<ThingCategoryDef>
 		<defName>Root</defName>
 		<label>root</label>
-	</ThingCategoryDef> -->
+	</ThingCategoryDef>
 	<ThingCategoryDef>
 		<defName>Resources</defName>
 		<label>Resources</label>
 		<parent>Root</parent>
-	</ThingCategoryDef>
+	</ThingCategoryDef> -->
 	<!-- DefOverwrite
 	<ThingCategoryDef>
 		<defName>Foods</defName>
@@ -131,7 +131,7 @@
 	<ThingCategoryDef>
 		<defName>MedicineStuff</defName>
 		<label>Medical</label>
-		<parent>Resources</parent>
+		<parent>Manufactured</parent>
 		<iconPath>Things/Item/Drug/MedicalDrink</iconPath>
 		<resourceReadoutRoot>true</resourceReadoutRoot>
 	</ThingCategoryDef>

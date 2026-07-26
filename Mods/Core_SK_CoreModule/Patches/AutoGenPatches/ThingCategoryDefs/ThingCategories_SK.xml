@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
+<!--
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingCategoryDef[defName="Foods"]</xpath>
     <value>
       <parent>Resources</parent>
     </value>
   </Operation>
-<!--
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingCategoryDef[defName="FoodMeals"]</xpath>
     <value>
@@ -64,13 +64,13 @@
       <label>Vegetarian</label>
     </value>
   </Operation>
--->
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingCategoryDef[defName="Manufactured"]</xpath>
     <value>
       <parent>Resources</parent>
     </value>
-  </Operation>
+  </Operation>-->
 <!--
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingCategoryDef[defName="Textiles"]</xpath>
@@ -92,7 +92,7 @@
       <label>Medicine</label>
     </value>
   </Operation>
--->
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingCategoryDef[defName="ResourcesRaw"]</xpath>
     <value>
@@ -100,7 +100,7 @@
       <parent>Resources</parent>
     </value>
   </Operation>
-
+-->
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingCategoryDef[defName="StoneBlocks"]</xpath>
     <value>
