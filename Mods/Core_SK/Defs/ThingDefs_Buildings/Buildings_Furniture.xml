@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!--======================= Basic domestic furniture ==============================-->
@@ -106,7 +106,7 @@
 		</comps>
 	</ThingDef>
 
-<!-- DefOverwrite
+	<!-- DefOverwrite
 	<ThingDef ParentName="FurnitureBase">
 		<defName>Stool</defName>
 		<label>backless stool</label>
@@ -177,7 +177,7 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/Chairs/StoolWithBack</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(3,3)</drawSize>
+			<drawSize>(3,3)</drawSize>
 			<shadowData>
 				<volume>(0.3, 0.6, 0.3)</volume>
 			</shadowData>
@@ -274,7 +274,7 @@
 		<comps>
 			<li Class="CompProperties_Styleable" />
 		</comps>
-	</ThingDef>  
+	</ThingDef>
 
 	<ThingDef ParentName="FurnitureBase">
 		<defName>SlabChair</defName>
@@ -444,7 +444,7 @@
 			<li Class="CompProperties_Styleable" />
 		</comps>
 	</ThingDef>
-<!-- DefOverwrite
+	<!-- DefOverwrite
 	<ThingDef ParentName="ArtableFurnitureBase">
 		<defName>DiningChair</defName>
 		<label>dining chair</label>
@@ -624,7 +624,7 @@
 		</comps>
 	</ThingDef>
 
-<!-- DefOverwrite
+	<!-- DefOverwrite
 	<ThingDef ParentName="FurnitureBase">
 		<defName>Armchair</defName>
 		<label>armchair</label>
@@ -851,7 +851,7 @@
 		<costStuffCount>50</costStuffCount>
 		<pathCost>30</pathCost>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
@@ -904,7 +904,7 @@
 			</li>
 		</comps>
 	</ThingDef>-->
-<!-- DefOverwrite
+	<!-- DefOverwrite
 	<ThingDef ParentName="TableBase" Name="SK_TableGatherSpotBase" Abstract="True" >
 		<thingClass>SK.Building_Table</thingClass>
 		<comps>
@@ -1067,7 +1067,7 @@
 			<li>Woody</li>
 			<li>Plastic</li>
 			<li>Precious</li>
-			<li>Glass</li>		
+			<li>Glass</li>
 		</stuffCategories>
 		<costStuffCount>15</costStuffCount>
 		<researchPrerequisites>
@@ -1075,7 +1075,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
-<!-- DefOverwrite
+	<!-- DefOverwrite
 	<ThingDef ParentName="TableGatherSpotBase">
 		<defName>Table1x2c</defName>
 		<label>table (1x2)</label>
@@ -1153,7 +1153,7 @@
 			<li>Woody</li>
 			<li>Plastic</li>
 			<li>Precious</li>
-			<li>Glass</li>		
+			<li>Glass</li>
 		</stuffCategories>
 		<costStuffCount>40</costStuffCount>
 		<researchPrerequisites>
@@ -1161,7 +1161,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
-<!-- DefOverwrite
+	<!-- DefOverwrite
 	<ThingDef ParentName="TableGatherSpotBase">
 		<defName>Table2x2c</defName>
 		<label>table (2x2)</label>
@@ -1209,7 +1209,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
---><!-- DefOverwrite
+-->
+	<!-- DefOverwrite
 	<ThingDef ParentName="TableGatherSpotBase">
 		<defName>Table2x4c</defName>
 		<label>table (2x3)</label>
@@ -1254,7 +1255,8 @@
 		</building>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
---><!-- DefOverwrite
+-->
+	<!-- DefOverwrite
 	<ThingDef ParentName="TableGatherSpotBase">
 		<defName>Table3x3c</defName>
 		<label>table (3x3)</label>
@@ -1629,7 +1631,7 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-		</placeWorkers>		
+		</placeWorkers>
 		<researchPrerequisites>
 			<li>Storage_C2</li>
 		</researchPrerequisites>
@@ -1637,7 +1639,7 @@
 	</ThingDef>
 
 	<!--================ Dresser ================-->
-<!-- DefOverwrite
+	<!-- DefOverwrite
 	<ThingDef ParentName="FurnitureBase">
 		<defName>Dresser</defName>
 		<label>dressing table</label>
@@ -1773,7 +1775,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef> -->
 
-<!-- DefOverwrite
+	<!-- DefOverwrite
 	<ThingDef Abstract="True" Name="BookcaseBase" ParentName="FurnitureBase">
 		<thingClass>Building_Bookcase</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
@@ -1832,7 +1834,8 @@
 			<li Class="CompProperties_Styleable" />
 		</comps>
 	</ThingDef>
---><!-- DefOverwrite
+-->
+	<!-- DefOverwrite
 	<ThingDef ParentName="BookcaseBase">
 		<defName>Bookcase</defName>
 		<label>bookcase</label>
@@ -1873,7 +1876,8 @@
 		</building>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
---><!-- DefOverwrite
+-->
+	<!-- DefOverwrite
 	<ThingDef ParentName="BookcaseBase">
 		<defName>BookcaseSmall</defName>
 		<label>small bookcase</label>
@@ -1982,7 +1986,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 
-<!-- DefOverwrite
+	<!-- DefOverwrite
 	<ThingDef ParentName="TableBase">
 		<defName>EndTable</defName>
 		<label>end table with lamp</label>
@@ -2041,9 +2045,6 @@
 			<li Class="CompProperties_Glower">
 				<glowRadius>4</glowRadius>
 				<glowColor>(217,217,208,0)</glowColor>
-			</li>
-			<li Class="SK.CompProperties_ColoredLight">
-				<compClass>SK.CompColoredLight</compClass>
 			</li>
 			<li Class="CompProperties_Facility">       
 				<statOffsets>			
@@ -2190,7 +2191,7 @@
 				<glowRadius>2</glowRadius>
 				<glowColor>(255,255,255,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="SK.CompProperties_ColoredLight">
 				<compClass>SK.CompColoredLight</compClass>
 			</li>

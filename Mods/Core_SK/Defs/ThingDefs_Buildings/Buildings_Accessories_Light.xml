@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
     <!--
@@ -43,9 +43,9 @@
             <ElectronicComponents>1</ElectronicComponents>
         </costList>
         <comps>
-            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Flickable" />
             <li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+                <compClass>CompPowerTrader</compClass>
                 <basePowerConsumption>80</basePowerConsumption>
                 <shortCircuitInRain>false</shortCircuitInRain>
                 <soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -63,10 +63,6 @@
                 <colorPickerEnabled>true</colorPickerEnabled>
                 <darklightToggle>true</darklightToggle>
             </li>
-            <!--
-			<li Class="SK.CompProperties_ColoredLight">
-				<compClass>SK.CompColoredLight</compClass>
-			</li>-->
         </comps>
         <building>
             <uninstallWork>300</uninstallWork>
@@ -137,7 +133,7 @@
         </researchPrerequisites>
         <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     </ThingDef>
-    
+
     <ThingDef ParentName="SK_LampBase">
         <defName>GlowstoneTableLamp</defName>
         <label>glowstone table lamp</label>
@@ -238,9 +234,9 @@
         </building>
         <clearBuildingArea>false</clearBuildingArea>
         <comps>
-            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Flickable" />
             <li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+                <compClass>CompPowerTrader</compClass>
                 <basePowerConsumption>80</basePowerConsumption>
                 <shortCircuitInRain>true</shortCircuitInRain>
                 <soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -258,10 +254,7 @@
                 <colorPickerEnabled>true</colorPickerEnabled>
                 <darklightToggle>true</darklightToggle>
             </li>
-            <!--
-			<li Class="SK.CompProperties_ColoredLight">
-				<compClass>SK.CompColoredLight</compClass>
-			</li>-->
+
             <li Class="SK.CompProperties_RestrictedPlacement">
                 <compClass>SK.CompRestrictedPlacement</compClass>
             </li>
@@ -277,7 +270,7 @@
         </researchPrerequisites>
         <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     </ThingDef>
-    
+
     <ThingDef ParentName="SK_LampBase">
         <defName>CeilingGlowstoneLamp</defName>
         <label>glowstone сeiling lamp</label>
@@ -373,9 +366,9 @@
             <ElectronicComponents>1</ElectronicComponents>
         </costList>
         <comps>
-            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Flickable" />
             <li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+                <compClass>CompPowerTrader</compClass>
                 <basePowerConsumption>70</basePowerConsumption>
                 <soundPowerOn>Power_OnSmall</soundPowerOn>
                 <soundPowerOff>Power_OffSmall</soundPowerOff>
@@ -393,10 +386,7 @@
                 <colorPickerEnabled>true</colorPickerEnabled>
                 <darklightToggle>true</darklightToggle>
             </li>
-            <!--
-			<li Class="SK.CompProperties_ColoredLight">
-				<compClass>SK.CompColoredLight</compClass>
-			</li>-->
+
             <li Class="SK.CompProperties_RestrictedPlacement">
                 <compClass>SK.CompRestrictedPlacement</compClass>
             </li>
@@ -421,7 +411,7 @@
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
     </ThingDef>
-    
+
     <ThingDef ParentName="SK_LampBase">
         <defName>Lighting_WallGlowstone</defName>
         <label>glowstone wall lamp</label>
@@ -491,9 +481,9 @@
         </researchPrerequisites>
         <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
     </ThingDef>
-    
+
     <!--===================== Fueled Lamps ==============================-->
-    
+
     <ThingDef ParentName="SK_LampBase">
         <defName>BowlLamp</defName>
         <label>bowl lamp</label>
@@ -544,7 +534,7 @@
             <li>
                 <compClass>CompQuality</compClass>
             </li>
-            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Flickable" />
             <li Class="SK.CompFueled_Properties">
                 <factorByDifficulty>false</factorByDifficulty>
                 <operatingTemp>300</operatingTemp>
@@ -766,7 +756,7 @@
             <ElectronicComponents>1</ElectronicComponents>
         </costList>
         <comps>
-            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Flickable" />
             <li Class="CompProperties_Glower">
                 <glowRadius>6</glowRadius>
                 <glowColor>(217,217,208,0)</glowColor>
@@ -819,7 +809,7 @@
         </costList>
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <comps>
-            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Flickable" />
             <li Class="CompProperties_Glower">
                 <glowRadius>4</glowRadius>
                 <glowColor>(217,217,208,0)</glowColor>
@@ -901,7 +891,7 @@
             <!{1}**
 			<li Class="SK.CompProperties_ColoredLight">
 				<compClass>SK.CompColoredLight</compClass>
-			</li>**{1}>
+			</li>
             <li Class="CompProperties_Glower">
                 <glowRadius>4</glowRadius>
                 <glowColor>(217,217,208,0)</glowColor>

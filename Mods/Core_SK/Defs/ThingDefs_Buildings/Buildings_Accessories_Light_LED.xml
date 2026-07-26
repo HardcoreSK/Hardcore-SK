@@ -84,21 +84,7 @@
 				<glowColor>(255,255,255,0)</glowColor>
 				<colorPickerEnabled>true</colorPickerEnabled>
 				<darklightToggle>true</darklightToggle>
-			</li><!--
-			<li Class="SK.CompProperties_ColoredLight">
-				<compClass>SK.CompColoredLight</compClass>
-				<colors>
-					<li>white</li>-->
-					<!-- <li>red</li> -->
-					<!-- <li>green</li> -->
-					<!-- <li>blue</li> -->
-					<!-- <li>yellow</li> -->
-					<!-- <li>orange</li> -->
-					<!-- <li>purple</li> 
-					<li>warm</li>
-					<li>cold</li>
-				</colors>
-			</li>-->
+			</li>
 		</comps>
 		<rotatable>false</rotatable>
 		<neverMultiSelect>false</neverMultiSelect>
@@ -133,9 +119,7 @@
 		</building>
 		<comps>
 			<li Class="CompProperties_Flickable"/>
-			<!--<li Class="SK.CompProperties_ColoredLight">
-				<compClass>SK.CompColoredLight</compClass>
-			</li>-->
+
 		</comps>
 		<rotatable>false</rotatable>
 		<filthLeaving>Filth_BrokenGlass</filthLeaving>
@@ -335,10 +319,7 @@
 				<glowColor>(217,217,208,0)</glowColor>
 				<colorPickerEnabled>true</colorPickerEnabled>
 				<darklightToggle>true</darklightToggle>
-			</li><!--
-			<li Class="SK.CompProperties_ColoredLight">
-				<compClass>SK.CompColoredLight</compClass>
-			</li>-->
+			</li>
 			<li Class="SK.CompProperties_RestrictedPlacement">
 				<compClass>SK.CompRestrictedPlacement</compClass>
 			</li>
