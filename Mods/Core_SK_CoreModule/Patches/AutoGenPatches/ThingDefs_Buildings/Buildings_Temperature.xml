@@ -185,6 +185,7 @@
       </costList>
       <placeWorkers>
         <li>PlaceWorker_Cooler</li>
+        <li>SK.PlaceWorker_OnlyOnThing</li>
         <li>SK.PlaceWorker_OnlyOnWall</li>
       </placeWorkers>
       <building>
@@ -192,6 +193,16 @@
         <isEdifice>false</isEdifice>
       </building>
       <comps>
+        <li Class="SK.CompProperties_RestrictedPlacement">
+          <compClass>SK.CompRestrictedPlacement</compClass>
+          <thingDefs>
+            <li>Wall</li>
+            <li>ClutterSilverWall</li>
+            <li>UtilityWall</li>
+            <li>ClutterUWallLight</li>
+            <li MayRequire="ludeon.rimworld.odyssey">GravshipHull</li>
+          </thingDefs>
+        </li>
         <li Class="SK.CompProperties_IdlePower">
           <soundPowerOn>Power_OnSmall</soundPowerOn>
           <soundPowerOff>Power_OffSmall</soundPowerOff>
