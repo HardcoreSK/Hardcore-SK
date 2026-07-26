@@ -27,11 +27,6 @@
 		<value>SK.SK_BigCatKindBaseDummy</value>
 	</Operation>
 	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/PawnKindDef[defName="Bear_Grizzly" or defName="Bear_Polar" ]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK.SK_BearKindBaseDummy</value>
-	</Operation>
-	<Operation Class="PatchOperationAttributeSet">
 		<xpath>Defs/PawnKindDef[defName="SpaceRefugee" ]</xpath>
 		<attribute>ParentName</attribute>
 		<value>SK.SpaceRefugeeBaseDummy</value>
