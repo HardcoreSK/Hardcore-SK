@@ -2,9 +2,9 @@
 <Patch>
 
   <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="Plant_Agave"]</xpath>
-	  <attribute>ParentName</attribute>
-	  <value>SK.SK_DeciduousPlantBaseDummy</value>
+    <xpath>Defs/ThingDef[defName="Plant_Agave"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.SK_DeciduousPlantBaseDummy</value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
@@ -30,20 +30,21 @@
         <fertilityMin>0.3</fertilityMin>
         <visualSizeRange>0.7~1.1</visualSizeRange>
         <wildClusterWeight>53</wildClusterWeight>
-		<wildPlantUseDistanceToShore>true</wildPlantUseDistanceToShore>
-		<wildTerrainTags>
-			<li>Sand</li>
-			<li>Dry</li>
-		</wildTerrainTags>
-		<completelyIgnoreFertility>true</completelyIgnoreFertility>
+        <wildPlantUseDistanceToShore>true</wildPlantUseDistanceToShore>
+        <wildTerrainTags>
+          <li>Soil</li>
+          <li>Sand</li>
+          <li>Dry</li>
+        </wildTerrainTags>
+        <completelyIgnoreFertility>true</completelyIgnoreFertility>
       </plant>
     </value>
   </Operation>
 
   <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="Plant_Berry"]</xpath>
-	  <attribute>ParentName</attribute>
-	  <value>SK.SK_DeciduousPlantBaseDummy</value>
+    <xpath>Defs/ThingDef[defName="Plant_Berry"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.SK_DeciduousPlantBaseDummy</value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
@@ -70,7 +71,7 @@
         <maxMeshCount>4</maxMeshCount>
         <leaflessGraphicPath>Things/Plant/PlantRaspberry_Leafless</leaflessGraphicPath>
         <harvestYield>4</harvestYield>
-		<harvestWork>150</harvestWork>
+        <harvestWork>150</harvestWork>
         <wildClusterRadius>4</wildClusterRadius>
         <wildClusterWeight>55</wildClusterWeight>
         <visualSizeRange>0.6~1.0</visualSizeRange>
@@ -80,9 +81,9 @@
   </Operation>
 
   <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="Plant_Strawberry"]</xpath>
-	  <attribute>ParentName</attribute>
-	  <value>SK.SK_DeciduousPlantBaseDummy</value>
+    <xpath>Defs/ThingDef[defName="Plant_Strawberry"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.SK_DeciduousPlantBaseDummy</value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
@@ -125,9 +126,9 @@
   </Operation>
 
   <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="Plant_TreeCocoa"]</xpath>
-	  <attribute>ParentName</attribute>
-	  <value>SK.CropPlantDummy</value>
+    <xpath>Defs/ThingDef[defName="Plant_TreeCocoa"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.CropPlantDummy</value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">

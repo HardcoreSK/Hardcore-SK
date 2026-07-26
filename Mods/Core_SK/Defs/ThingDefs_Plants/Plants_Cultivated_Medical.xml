@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-<!-- DefOverwrite
+	<!-- DefOverwrite
 	<ThingDef ParentName="SK_DeciduousCropPlant">
 		<defName>Plant_Healroot</defName>
 		<label>Healroot Plant</label>
@@ -73,6 +73,7 @@
 			<purpose>Health</purpose>
 			<wildPlantUseDistanceToShore>true</wildPlantUseDistanceToShore>
 			<wildTerrainTags>
+				<li>Soil</li>
 				<li>Sand</li>
 				<li>Dry</li>
 			</wildTerrainTags>
