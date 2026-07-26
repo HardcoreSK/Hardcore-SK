@@ -82,16 +82,16 @@
 		</building>
 		<altitudeLayer>LowPlant</altitudeLayer>
 		<uiIconPath>Things/Building/Walls/MenuMoatIcon</uiIconPath>
-		<pathCost>70</pathCost>
+		<pathCost>140</pathCost>
 		<pathCostIgnoreRepeat>False</pathCostIgnoreRepeat>
 		<statBases>
 			<Beauty>-20</Beauty>
-			<WorkToBuild>400</WorkToBuild>
+			<WorkToBuild>800</WorkToBuild>
 			<Flammability>0</Flammability>
 		</statBases>
 		<costList>
-			<SoftClay>10</SoftClay>
-			<SandResource>10</SandResource>
+			<SoftClay>3</SoftClay>
+			<SandResource>2</SandResource>
 		</costList>
 		<drawStyleCategory>Default1D</drawStyleCategory>
 		<blockLight>false</blockLight>
