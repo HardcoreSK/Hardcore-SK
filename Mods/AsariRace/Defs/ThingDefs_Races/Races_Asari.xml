@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ASARI -->
 	<AlienRace.ThingDef_AlienRace ParentName="BaseHumanlikePawn">
@@ -128,14 +128,14 @@
 			</generalSettings>
 			<graphicPaths>
 				<head>
-					<path>Things/Pawn/Humanlike/Asari/Head/</path>
+					<path>Things/Pawn/Humanlike/Asari/Head/Female_Average_Normal</path>
 					<headtypeGraphics>
 						<Male_AverageNormal>Things/Pawn/Humanlike/Asari/Head/Male_Average_Normal</Male_AverageNormal>
 						<Female_AverageNormal>Things/Pawn/Humanlike/Asari/Head/Female_Average_Normal</Female_AverageNormal>
 					</headtypeGraphics>
 				</head>
 				<body>
-					<path>Things/Pawn/Humanlike/Asari/Body/</path>
+					<path>Things/Pawn/Humanlike/Asari/Body/Naked_Female</path>
 					<bodytypeGraphics>
 						<Female>Things/Pawn/Humanlike/Asari/Body/Naked_Female</Female>
 						<Child MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Bodies/Child/Naked_Child</Child>

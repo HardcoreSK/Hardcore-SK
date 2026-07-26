@@ -256,7 +256,19 @@
 								<Baby MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Bodies/Naked_Child</Baby>
 							</bodytypeGraphics>
 						</body>
-						<head>Things/Ratkin/Head/</head>
+						<head>
+							<path>Things/Ratkin/Head/RK_Texture_Head1</path>
+							<headtypeGraphics>
+								<RK_HeadType_Head1>Things/Ratkin/Head/RK_Texture_Head1</RK_HeadType_Head1>
+								<RK_HeadType_Head2>Things/Ratkin/Head/RK_Texture_Head2</RK_HeadType_Head2>
+								<RK_HeadType_Head3>Things/Ratkin/Head/RK_Texture_Head3</RK_HeadType_Head3>
+								<RK_HeadType_Head4>Things/Ratkin/Head/RK_Texture_Head4</RK_HeadType_Head4>
+								<RK_HeadType_Head5>Things/Ratkin/Head/RK_Texture_Head5</RK_HeadType_Head5>
+								<RK_HeadType_Head6>Things/Ratkin/Head/RK_Texture_Head6</RK_HeadType_Head6>
+								<RK_HeadType_Head7>Things/Ratkin/Head/RK_Texture_Head7</RK_HeadType_Head7>
+								<RK_HeadType_Head8>Things/Ratkin/Head/RK_Texture_Head8</RK_HeadType_Head8>
+							</headtypeGraphics>
+						</head>
 						<apparel>
 							<bodyTypeFallback>Thin</bodyTypeFallback>
 							<femaleBodyTypeFallback>Thin</femaleBodyTypeFallback>
