@@ -4,6 +4,7 @@
 	<ThingDef ParentName="StandardBuilding">
 		<defName>GroundPenetratingScannerAdvanced</defName>
 		<label>advanced ground-penetrating scanner</label>
+		<tickerType>Normal</tickerType>
 		<description>A sensor unit used by researchers to search for buried resources. The chance to find a resource depends on the operator's research ability. It consumes a lot of electricity. If you find a buried resource, you'll need to use deep drills to extract it. It doesn't work under a roof.</description>
 		<graphicData>
 			<texPath>Things/Building/Misc/GroundPenetratingScanner</texPath>

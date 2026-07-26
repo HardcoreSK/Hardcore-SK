@@ -852,7 +852,8 @@
 		<pathCost>30</pathCost>
 		<comps>
 			<li Class="CompProperties_Flickable"/>
-			<li Class="SK.CompProperties_IdlePower">
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>100</basePowerConsumption>
 			</li>
@@ -2179,7 +2180,8 @@
 				</statOffsets>
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
-			<li Class="SK.CompProperties_IdlePower">
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>90</basePowerConsumption>
 				<shortCircuitInRain>true</shortCircuitInRain>
 

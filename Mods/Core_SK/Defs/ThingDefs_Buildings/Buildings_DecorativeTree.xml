@@ -58,7 +58,8 @@
 				<compClass>CompQuality</compClass>
 			</li>
 			<li Class="CompProperties_Flickable"/>
-			<li Class="SK.CompProperties_IdlePower">
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>50</basePowerConsumption>
 			</li>

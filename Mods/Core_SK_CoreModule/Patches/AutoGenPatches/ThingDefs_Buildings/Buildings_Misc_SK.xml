@@ -151,7 +151,7 @@
             </statBases>
             <tickerType>Normal</tickerType>
             <comps>
-                <li Class="CompProperties_Flickable"/>
+                <li Class="CompProperties_Flickable" />
                 <li Class="SK.CompProperties_IdlePower">
                     <basePowerConsumption>700</basePowerConsumption>
                     <shortCircuitInRain>true</shortCircuitInRain>
@@ -166,7 +166,7 @@
                 </li>
             </comps>
             <minifiedDef>MinifiedThing</minifiedDef>
-            <thingCategories/>
+            <thingCategories />
             <building Merge="true">
                 <uninstallWork>360</uninstallWork>
             </building>
@@ -270,9 +270,10 @@
                 <Mechanism>3</Mechanism>
             </costList>
             <comps>
-                <li Class="CompProperties_Flickable"/>
-                <li Class="CompProperties_Breakdownable"/>
-                <li Class="SK.CompProperties_IdlePower">
+                <li Class="CompProperties_Flickable" />
+                <li Class="CompProperties_Breakdownable" />
+                <li Class="CompProperties_Power">
+                    <compClass>CompPowerTrader</compClass>
                     <basePowerConsumption>60</basePowerConsumption>
                 </li>
             </comps>
@@ -330,9 +331,10 @@
                 <ComponentIndustrial>5</ComponentIndustrial>
             </costList>
             <interactionCellOffset>(0,0,1)</interactionCellOffset>
+            <tickerType>Normal</tickerType>
             <comps>
-                <li Class="CompProperties_Flickable"/>
-                <li Class="CompProperties_Breakdownable"/>
+                <li Class="CompProperties_Flickable" />
+                <li Class="CompProperties_Breakdownable" />
                 <li Class="SK.CompProperties_IdlePower">
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <basePowerConsumption>300</basePowerConsumption>
@@ -389,7 +391,7 @@
                 </damageData>
             </graphicData>
             <fillPercent>0.4</fillPercent>
-            <thingCategories/>
+            <thingCategories />
             <statBases>
                 <MaxHitPoints>200</MaxHitPoints>
                 <WorkToBuild>5500</WorkToBuild>
@@ -408,8 +410,8 @@
                 <ComponentIndustrial>5</ComponentIndustrial>
             </costList>
             <comps>
-                <li Class="CompProperties_Flickable"/>
-                <li Class="CompProperties_Breakdownable"/>
+                <li Class="CompProperties_Flickable" />
+                <li Class="CompProperties_Breakdownable" />
                 <li Class="SK.CompProperties_IdlePower">
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <basePowerConsumption>350</basePowerConsumption>
@@ -472,8 +474,8 @@
                 <Electronics>3</Electronics>
             </costList>
             <comps>
-                <li Class="CompProperties_Flickable"/>
-                <li Class="CompProperties_Breakdownable"/>
+                <li Class="CompProperties_Flickable" />
+                <li Class="CompProperties_Breakdownable" />
                 <li Class="SK.CompProperties_IdlePower">
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <basePowerConsumption>150</basePowerConsumption>
@@ -490,7 +492,7 @@
                     <canLinkToMedBedsOnly>true</canLinkToMedBedsOnly>
                 </li>
             </comps>
-            <!--<tickerType>Normal</tickerType>-->
+            <tickerType>Normal</tickerType>
             <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
         </value>
     </Operation>
@@ -548,7 +550,7 @@
                     <maxSimultaneous>1</maxSimultaneous>
                 </li>
                 <li>
-                  <compClass>CompQuality</compClass>
+                    <compClass>CompQuality</compClass>
                 </li>
             </comps>
             <researchPrerequisites>
@@ -599,7 +601,7 @@
                 <li>IED_C1</li>
             </researchPrerequisites>
             <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-            <placeWorkers Inherit="False"/>
+            <placeWorkers Inherit="False" />
         </value>
     </Operation>
 
@@ -620,7 +622,7 @@
                 </damageData>
             </graphicData>
             <comps>
-                <li Class="CompProperties_Forbiddable"/>
+                <li Class="CompProperties_Forbiddable" />
                 <li Class="SK.CompProperties_IdlePower">
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <basePowerConsumption>300</basePowerConsumption>
@@ -762,7 +764,7 @@
                             <volume>(0.83, 0.3, 1.7)</volume>
                         </shadowData>
                     </graphicData>
-                  <alwaysDrawParent>false</alwaysDrawParent>
+                    <alwaysDrawParent>false</alwaysDrawParent>
                 </li>
             </comps>
             <!--<staticSunShadowHeight>1.0</staticSunShadowHeight>-->
@@ -809,7 +811,7 @@
                             <volume>(0.83, 0.3, 1.7)</volume>
                         </shadowData>
                     </graphicData>
-                  <alwaysDrawParent>false</alwaysDrawParent>
+                    <alwaysDrawParent>false</alwaysDrawParent>
                 </li>
             </comps>
             <!--<staticSunShadowHeight>0.4</staticSunShadowHeight>-->

@@ -189,7 +189,8 @@
 		<comps>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
-			<li Class="SK.CompProperties_IdlePower">
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>3200</basePowerConsumption>
 			</li>
 			<li Class="SK.CompProperties_RestrictedPlacement">

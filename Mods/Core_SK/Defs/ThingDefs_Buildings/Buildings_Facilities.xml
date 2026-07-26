@@ -308,7 +308,8 @@
 				</statOffsets>
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
-			<li Class="SK.CompProperties_IdlePower">
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>400</basePowerConsumption>
 			</li>
@@ -375,7 +376,8 @@
 				</statOffsets>
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
-			<li Class="SK.CompProperties_IdlePower">
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>50</basePowerConsumption>
 			</li>

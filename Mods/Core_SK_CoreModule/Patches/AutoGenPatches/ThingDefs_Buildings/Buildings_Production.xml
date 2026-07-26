@@ -22,7 +22,7 @@
                 </damageData>
             </graphicData>
             <minifiedDef IsNull="true" />
-            <thingCategories IsNull="true"/>
+            <thingCategories IsNull="true" />
             <statBases>
                 <WorkToBuild>300</WorkToBuild>
                 <WorkTableWorkSpeedFactor>0.7</WorkTableWorkSpeedFactor>
@@ -268,7 +268,9 @@
                 <nutritionCostPerDispense>0.8</nutritionCostPerDispense>
             </building>
             <comps>
-                <li Class="SK.CompProperties_IdlePower">
+                <li Class="CompProperties_Power">
+                    <compClass>CompPowerTrader</compClass>
+
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <basePowerConsumption>350</basePowerConsumption>
                 </li>
