@@ -3,7 +3,7 @@
 
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses/li[text()="Designator_AreaBuildRoof"]</xpath>
-  </Operation>
+  </Operation><!--
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses/li[text()="Designator_AreaNoRoof"]</xpath>
   </Operation><!--
