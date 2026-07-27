@@ -3,10 +3,12 @@
 
 	<ThingDef ParentName="AnimalThingBase" Name="FishThingBase" Abstract="True">
 		<statBases>
-			<LeatherAmount>25</LeatherAmount>
+			<LeatherAmount>0</LeatherAmount>
 			<MeatAmount>70</MeatAmount>
 			<MoveSpeed>0.01</MoveSpeed>
 			<Wildness>0.99</Wildness>
+			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
+			<MarketValue>100</MarketValue>
 		</statBases>
 		<race>
 			<thinkTreeMain>Animal</thinkTreeMain>
@@ -22,65 +24,6 @@
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-		</race>
-		<tools>
-			<li Class="CombatExtended.ToolCE">
-				<capacities>
-					<li>Scratch</li>
-				</capacities>
-				<power>6</power>
-				<cooldownTime>1.5</cooldownTime>
-				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>9</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
-				<armorPenetrationSharp>2</armorPenetrationSharp>
-				<armorPenetrationBlunt>4</armorPenetrationBlunt>
-			</li>
-		</tools>
-		<modExtensions>
-			<li Class="CombatExtended.RacePropertiesExtensionCE">
-				<bodyShape>Birdlike</bodyShape>
-			</li>
-		</modExtensions>
-	</ThingDef>
-
-	<PawnKindDef Name="FishKindBase" Abstract="True" />
-
-	<!-- HYPNOSQUID - medium -->
-
-	<ThingDef ParentName="FishThingBase">
-		<defName>ThingDefFishSduiggles</defName>
-		<label>hypnosquid</label>
-		<description>Hypnosquid can be found in swamps and shallow waters. This species of squid is very intelligent and beautiful. And who would want to catch it after that? You? You're a monster!</description>
-		<statBases>
-			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
-			<MarketValue>100</MarketValue>
-			<Mass>8</Mass>
-			<LeatherAmount>0</LeatherAmount>
-			<MeleeDodgeChance>0.2</MeleeDodgeChance>
-			<MeleeCritChance>0.04</MeleeCritChance>
-			<MeleeParryChance>0.04</MeleeParryChance>
-			<Wildness>0.99</Wildness>
-		</statBases>
-		<race>
-			<body>Squid</body>
-			<predator>true</predator>
-			<maxPreyBodySize>0.35</maxPreyBodySize>
-			<baseBodySize>0.30</baseBodySize>
-			<baseHealthScale>0.30</baseHealthScale>
-			<baseHungerRate>0.07</baseHungerRate>
-			<foodType>CarnivoreAnimal</foodType>
-			<meatLabel>Fish meat</meatLabel>
-			<manhunterOnTameFailChance>0.005</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0.25</manhunterOnDamageChance>
-			<gestationPeriodDays>22.0</gestationPeriodDays>
-			<nameOnTameChance>0</nameOnTameChance>
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>
@@ -109,6 +52,83 @@
 				</li>
 			</lifeStageAges>
 		</race>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>9</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<armorPenetrationSharp>2</armorPenetrationSharp>
+				<armorPenetrationBlunt>4</armorPenetrationBlunt>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Birdlike</bodyShape>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef Name="FishKindBase" Abstract="True">
+		<combatPower>30</combatPower>
+		<ecoSystemWeight>0.4</ecoSystemWeight>
+		<canArriveManhunter>false</canArriveManhunter>
+		<livesInOcean>true</livesInOcean>
+		<livesInMarsh>false</livesInMarsh>
+		<livesInRiver>false</livesInRiver>
+		<commonality>0.4</commonality>
+		<naturalBiomes>
+			<li MayRequire="vileheathen.mountainsmeadows">Prairie</li>
+			<li>TemperateForest</li>
+			<li>TemperateSwamp</li>
+			<li>TropicalRainforest</li>
+			<li>TropicalSwamp</li>
+			<li>AridShrubland</li>
+			<li>DesertArchipelago</li>
+			<li>DesertArchipelago_Fresh</li>
+			<li>TemperateArchipelago</li>
+			<li>TemperateArchipelago_Fresh</li>
+			<li>TropicalArchipelago</li>
+			<li>TropicalArchipelago_Fresh</li>
+			<li>TemperateSwampArchipelago</li>
+			<li>TemperateSwampArchipelago_Fresh</li>
+			<li>TropicalSwampArchipelago</li>
+			<li>TropicalSwampArchipelago_Fresh</li>
+		</naturalBiomes>
+	</PawnKindDef>
+
+	<!-- HYPNOSQUID - medium -->
+
+	<ThingDef ParentName="FishThingBase">
+		<defName>ThingDefFishSduiggles</defName>
+		<label>hypnosquid</label>
+		<description>Hypnosquid can be found in swamps and shallow waters. This species of squid is very intelligent and beautiful. And who would want to catch it after that? You? You're a monster!</description>
+		<statBases>
+			<Mass>8</Mass>
+		</statBases>
+		<race>
+			<body>Squid</body>
+			<predator>true</predator>
+			<maxPreyBodySize>0.35</maxPreyBodySize>
+			<baseBodySize>0.30</baseBodySize>
+			<baseHealthScale>0.30</baseHealthScale>
+			<baseHungerRate>0.07</baseHungerRate>
+			<foodType>CarnivoreAnimal</foodType>
+			<meatLabel>Fish meat</meatLabel>
+			<manhunterOnTameFailChance>0.005</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.25</manhunterOnDamageChance>
+			<gestationPeriodDays>22.0</gestationPeriodDays>
+		</race>
 		<tools Inherit="False">
 			<li Class="CombatExtended.ToolCE">
 				<capacities>
@@ -136,9 +156,6 @@
 		<defName>PawnKindDefFishSduiggles</defName>
 		<label>hypnosquid</label>
 		<race>ThingDefFishSduiggles</race>
-		<combatPower>30</combatPower>
-		<ecoSystemWeight>0.4</ecoSystemWeight>
-		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -175,7 +192,7 @@
 		<livesInMarsh>false</livesInMarsh>
 		<livesInRiver>false</livesInRiver>
 		<commonality>0.4</commonality>
-		<naturalBiomes>
+		<naturalBiomes Inherit="false">
 			<li MayRequire="vileheathen.mountainsmeadows">Prairie</li>
 			<li>TemperateForest</li>
 			<li>TemperateSwamp</li>
@@ -201,11 +218,7 @@
 		<label>saberfish</label>
 		<description>The saberfish, a marvel of aquatic absurdity, is nature's attempt at blending a sword and a fish – because who wouldn't want a fish armed with a blade? With its sleek body and fin-credible fencing skills, this underwater warrior is always ready for a duel or a daring seafood showdown.</description>
 		<statBases>
-			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
-			<MarketValue>100</MarketValue>
 			<Mass>30</Mass>
-			<LeatherAmount>0</LeatherAmount>
-			<Wildness>0.99</Wildness>
 		</statBases>
 		<race>
 			<body>Fish</body>
@@ -220,34 +233,6 @@
 			<manhunterOnTameFailChance>0.03</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.85</manhunterOnDamageChance>
 			<gestationPeriodDays>2.0</gestationPeriodDays>
-			<nameOnTameChance>0</nameOnTameChance>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(3, 1)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>15</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>2</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>6</minAge>
-					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
-					<soundDeath>Pawn_Cobra_Death</soundDeath>
-					<soundCall>Pawn_Cobra_Call</soundCall>
-					<soundAngry>Pawn_Cobra_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
 		</race>
 		<tradeTags />
 	</ThingDef>
@@ -256,9 +241,7 @@
 		<defName>PawnKindDefSaberfish</defName>
 		<label>saberfish</label>
 		<race>ThingDefSaberfish</race>
-		<combatPower>30</combatPower>
 		<ecoSystemWeight>0.05</ecoSystemWeight>
-		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -295,7 +278,7 @@
 		<livesInMarsh>false</livesInMarsh>
 		<livesInRiver>false</livesInRiver>
 		<commonality>0.13</commonality>
-		<naturalBiomes>
+		<naturalBiomes Inherit="false">
 			<li MayRequire="vileheathen.mountainsmeadows">Prairie</li>
 			<li>TemperateForest</li>
 			<li>TemperateSwamp</li>
@@ -321,11 +304,7 @@
 		<label>redfin tuna</label>
 		<description>Meet the redfin tuna, the ocean's fiery fashionista that makes waves with its scarlet scales. This fish is like the aquatic runway model, effortlessly flaunting its vibrant hue and leaving other fish in awe of its underwater couture. It's not just a tuna, it's a marine maestro in the art of crimson chic, proving that swimming in style is always on the menu beneath the waves.</description>
 		<statBases>
-			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
-			<MarketValue>100</MarketValue>
 			<Mass>14</Mass>
-			<LeatherAmount>0</LeatherAmount>
-			<Wildness>0.99</Wildness>
 		</statBases>
 		<race>
 			<body>Fish</body>
@@ -340,34 +319,6 @@
 			<manhunterOnTameFailChance>0.03</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.85</manhunterOnDamageChance>
 			<gestationPeriodDays>2.0</gestationPeriodDays>
-			<nameOnTameChance>0</nameOnTameChance>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(3, 1)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>15</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>2</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>6</minAge>
-					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
-					<soundDeath>Pawn_Cobra_Death</soundDeath>
-					<soundCall>Pawn_Cobra_Call</soundCall>
-					<soundAngry>Pawn_Cobra_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
 		</race>
 		<tradeTags />
 	</ThingDef>
@@ -376,9 +327,7 @@
 		<defName>PawnKindDefRedfinTuna</defName>
 		<label>redfin tuna</label>
 		<race>ThingDefRedfinTuna</race>
-		<combatPower>30</combatPower>
 		<ecoSystemWeight>0.19</ecoSystemWeight>
-		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -415,7 +364,7 @@
 		<livesInMarsh>false</livesInMarsh>
 		<livesInRiver>false</livesInRiver>
 		<commonality>0.27</commonality>
-		<naturalBiomes>
+		<naturalBiomes Inherit="false">
 			<li>TropicalRainforest</li>
 			<li>TropicalSwamp</li>
 			<li>AridShrubland</li>
@@ -432,14 +381,7 @@
 		<label>snackeral</label>
 		<description>lorem ipsum</description>
 		<statBases>
-			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
-			<MarketValue>100</MarketValue>
 			<Mass>2</Mass>
-			<LeatherAmount>0</LeatherAmount>
-			<MeleeDodgeChance>0.2</MeleeDodgeChance>
-			<MeleeCritChance>0.04</MeleeCritChance>
-			<MeleeParryChance>0.04</MeleeParryChance>
-			<Wildness>0.99</Wildness>
 		</statBases>
 		<race>
 			<body>Fish</body>
@@ -454,34 +396,6 @@
 			<manhunterOnTameFailChance>0.03</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.85</manhunterOnDamageChance>
 			<gestationPeriodDays>2.0</gestationPeriodDays>
-			<nameOnTameChance>0</nameOnTameChance>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(3, 1)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>6</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.75</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>1.5</minAge>
-					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
-					<soundDeath>Pawn_Cobra_Death</soundDeath>
-					<soundCall>Pawn_Cobra_Call</soundCall>
-					<soundAngry>Pawn_Cobra_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
 		</race>
 		<tools Inherit="False">
 			<li Class="CombatExtended.ToolCE">
@@ -510,9 +424,7 @@
 		<defName>PawnKindDefFishMashgon</defName>
 		<label>snackeral</label>
 		<race>ThingDefFishMashgon</race>
-		<combatPower>30</combatPower>
 		<ecoSystemWeight>0.8</ecoSystemWeight>
-		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -551,7 +463,7 @@
 		<commonality>0.8</commonality>
 		<breedQuantity>60</breedQuantity>
 		<breedingDurationInDays>2</breedingDurationInDays>
-		<naturalBiomes>
+		<naturalBiomes  Inherit="false">
 			<li>SeaIce</li>
 			<li>IceSheet</li>
 			<li>Tundra</li>
@@ -587,11 +499,7 @@
 		<label>cuda</label>
 		<description>lorem ipsum</description>
 		<statBases>
-			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
-			<MarketValue>100</MarketValue>
 			<Mass>4</Mass>
-			<LeatherAmount>0</LeatherAmount>
-			<Wildness>0.99</Wildness>
 		</statBases>
 		<race>
 			<body>Fish</body>
@@ -606,34 +514,6 @@
 			<manhunterOnTameFailChance>0.03</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.85</manhunterOnDamageChance>
 			<gestationPeriodDays>2.0</gestationPeriodDays>
-			<nameOnTameChance>0</nameOnTameChance>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(3, 1)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>6</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.75</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>1.5</minAge>
-					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
-					<soundDeath>Pawn_Cobra_Death</soundDeath>
-					<soundCall>Pawn_Cobra_Call</soundCall>
-					<soundAngry>Pawn_Cobra_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
 		</race>
 		<tradeTags />
 	</ThingDef>
@@ -642,9 +522,7 @@
 		<defName>PawnKindDefCuda</defName>
 		<label>cuda</label>
 		<race>ThingDefCuda</race>
-		<combatPower>30</combatPower>
 		<ecoSystemWeight>0.7</ecoSystemWeight>
-		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -681,7 +559,7 @@
 		<livesInMarsh>false</livesInMarsh>
 		<livesInRiver>false</livesInRiver>
 		<commonality>0.7</commonality>
-		<naturalBiomes>
+		<naturalBiomes Inherit="false">
 			<li>TropicalRainforest</li>
 			<li>TropicalSwamp</li>
 			<li>AridShrubland</li>
@@ -698,11 +576,7 @@
 		<label>ice flounder</label>
 		<description>lorem ipsum</description>
 		<statBases>
-			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
-			<MarketValue>100</MarketValue>
 			<Mass>7</Mass>
-			<LeatherAmount>0</LeatherAmount>
-			<Wildness>0.99</Wildness>
 		</statBases>
 		<race>
 			<body>Fish</body>
@@ -717,34 +591,6 @@
 			<manhunterOnTameFailChance>0.03</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.85</manhunterOnDamageChance>
 			<gestationPeriodDays>2.0</gestationPeriodDays>
-			<nameOnTameChance>0</nameOnTameChance>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(3, 1)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>6</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.75</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>1.5</minAge>
-					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
-					<soundDeath>Pawn_Cobra_Death</soundDeath>
-					<soundCall>Pawn_Cobra_Call</soundCall>
-					<soundAngry>Pawn_Cobra_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
 		</race>
 		<tradeTags />
 	</ThingDef>
@@ -753,9 +599,6 @@
 		<defName>PawnKindDefIceFlounder</defName>
 		<label>ice flounder</label>
 		<race>ThingDefIceFlounder</race>
-		<combatPower>30</combatPower>
-		<ecoSystemWeight>0.4</ecoSystemWeight>
-		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -792,7 +635,7 @@
 		<livesInMarsh>true</livesInMarsh>
 		<livesInRiver>true</livesInRiver>
 		<commonality>0.45</commonality>
-		<naturalBiomes>
+		<naturalBiomes Inherit="false">
 			<li MayRequire="vileheathen.mountainsmeadows">MontaneForest</li>
 			<li MayRequire="vileheathen.mountainsmeadows">MontaneGrasslands</li>
 			<li>SeaIce</li>
@@ -814,14 +657,7 @@
 		<label>eel</label>
 		<description>lorem ipsum</description>
 		<statBases>
-			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
-			<MarketValue>100</MarketValue>
 			<Mass>4</Mass>
-			<LeatherAmount>0</LeatherAmount>
-			<MeleeDodgeChance>0.2</MeleeDodgeChance>
-			<MeleeCritChance>0.04</MeleeCritChance>
-			<MeleeParryChance>0.04</MeleeParryChance>
-			<Wildness>0.99</Wildness>
 		</statBases>
 		<race>
 			<body>Fish</body>
@@ -836,34 +672,6 @@
 			<manhunterOnTameFailChance>0.03</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.85</manhunterOnDamageChance>
 			<gestationPeriodDays>2.0</gestationPeriodDays>
-			<nameOnTameChance>0</nameOnTameChance>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(3, 1)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>6</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.75</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>1.5</minAge>
-					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
-					<soundDeath>Pawn_Cobra_Death</soundDeath>
-					<soundCall>Pawn_Cobra_Call</soundCall>
-					<soundAngry>Pawn_Cobra_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
 		</race>
 		<tradeTags />
 	</ThingDef>
@@ -872,9 +680,7 @@
 		<defName>PawnKindDefFishSeasnake</defName>
 		<label>eel</label>
 		<race>ThingDefFishSeasnake</race>
-		<combatPower>30</combatPower>
 		<ecoSystemWeight>0.7</ecoSystemWeight>
-		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -911,7 +717,7 @@
 		<livesInMarsh>false</livesInMarsh>
 		<livesInRiver>true</livesInRiver>
 		<commonality>0.7</commonality>
-		<naturalBiomes>
+		<naturalBiomes Inherit="false">
 			<li>SeaIce</li>
 			<li>IceSheet</li>
 			<li>Tundra</li>
@@ -948,14 +754,7 @@
 		<label>alligar</label>
 		<description>lorem ipsum</description>
 		<statBases>
-			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
-			<MarketValue>100</MarketValue>
 			<Mass>10</Mass>
-			<LeatherAmount>3</LeatherAmount>
-			<MeleeDodgeChance>0.2</MeleeDodgeChance>
-			<MeleeCritChance>0.04</MeleeCritChance>
-			<MeleeParryChance>0.04</MeleeParryChance>
-			<Wildness>0.99</Wildness>
 		</statBases>
 		<race>
 			<leatherDef>Leather_Lizard</leatherDef>
@@ -971,34 +770,6 @@
 			<manhunterOnTameFailChance>0.03</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.85</manhunterOnDamageChance>
 			<gestationPeriodDays>2.0</gestationPeriodDays>
-			<nameOnTameChance>0</nameOnTameChance>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(3, 1)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>15</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>2</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>6</minAge>
-					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
-					<soundDeath>Pawn_Cobra_Death</soundDeath>
-					<soundCall>Pawn_Cobra_Call</soundCall>
-					<soundAngry>Pawn_Cobra_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
 		</race>
 		<tradeTags />
 	</ThingDef>
@@ -1007,9 +778,7 @@
 		<defName>PawnKindDefFishTailteeth</defName>
 		<label>alligar</label>
 		<race>ThingDefFishTailteeth</race>
-		<combatPower>30</combatPower>
 		<ecoSystemWeight>0.15</ecoSystemWeight>
-		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -1048,7 +817,7 @@
 		<commonality>0.22</commonality>
 		<breedQuantity>280</breedQuantity>
 		<breedingDurationInDays>6</breedingDurationInDays>
-		<naturalBiomes>
+		<naturalBiomes Inherit="false">
 			<li>TemperateForest</li>
 			<li>TropicalRainforest</li>
 			<li>AridShrubland</li>
@@ -1071,14 +840,7 @@
 		<label>breadmouth bass</label>
 		<description>lorem ipsum</description>
 		<statBases>
-			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
-			<MarketValue>100</MarketValue>
 			<Mass>8</Mass>
-			<LeatherAmount>0</LeatherAmount>
-			<MeleeDodgeChance>0.2</MeleeDodgeChance>
-			<MeleeCritChance>0.04</MeleeCritChance>
-			<MeleeParryChance>0.04</MeleeParryChance>
-			<Wildness>0.99</Wildness>
 		</statBases>
 		<race>
 			<body>Fish</body>
@@ -1093,34 +855,6 @@
 			<manhunterOnTameFailChance>0.03</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.85</manhunterOnDamageChance>
 			<gestationPeriodDays>2.0</gestationPeriodDays>
-			<nameOnTameChance>0</nameOnTameChance>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(3, 1)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>6</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.75</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>1.5</minAge>
-					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
-					<soundDeath>Pawn_Cobra_Death</soundDeath>
-					<soundCall>Pawn_Cobra_Call</soundCall>
-					<soundAngry>Pawn_Cobra_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
 		</race>
 		<tools Inherit="False">
 			<li Class="CombatExtended.ToolCE">
@@ -1149,9 +883,6 @@
 		<defName>PawnKindDefFishBlueblade</defName>
 		<label>breadmouth bass</label>
 		<race>ThingDefFishBlueblade</race>
-		<combatPower>30</combatPower>
-		<ecoSystemWeight>0.4</ecoSystemWeight>
-		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -1190,7 +921,7 @@
 		<commonality>0.45</commonality>
 		<breedQuantity>160</breedQuantity>
 		<breedingDurationInDays>4</breedingDurationInDays>
-		<naturalBiomes>
+		<naturalBiomes Inherit="false">
 			<li MayRequire="vileheathen.mountainsmeadows">Prairie</li>
 			<li MayRequire="vileheathen.mountainsmeadows">MontaneForest</li>
 			<li MayRequire="vileheathen.mountainsmeadows">MontaneGrasslands</li>
@@ -1215,11 +946,7 @@
 		<label>killer catfish</label>
 		<description>lorem ipsum</description>
 		<statBases>
-			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
-			<MarketValue>100</MarketValue>
 			<Mass>16</Mass>
-			<LeatherAmount>0</LeatherAmount>
-			<Wildness>0.99</Wildness>
 		</statBases>
 		<race>
 			<body>Fish</body>
@@ -1234,34 +961,6 @@
 			<manhunterOnTameFailChance>0.03</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.85</manhunterOnDamageChance>
 			<gestationPeriodDays>2.0</gestationPeriodDays>
-			<nameOnTameChance>0</nameOnTameChance>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(3, 1)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>15</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>2</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>6</minAge>
-					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
-					<soundDeath>Pawn_Cobra_Death</soundDeath>
-					<soundCall>Pawn_Cobra_Call</soundCall>
-					<soundAngry>Pawn_Cobra_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
 		</race>
 		<tradeTags />
 	</ThingDef>
@@ -1270,9 +969,7 @@
 		<defName>PawnKindDefFishKillerCatfish</defName>
 		<label>killer catfish</label>
 		<race>ThingDefFishKillerCatfish</race>
-		<combatPower>30</combatPower>
 		<ecoSystemWeight>0.12</ecoSystemWeight>
-		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -1309,7 +1006,7 @@
 		<livesInMarsh>true</livesInMarsh>
 		<livesInRiver>true</livesInRiver>
 		<commonality>0.12</commonality>
-		<naturalBiomes>
+		<naturalBiomes Inherit="false">
 			<li>TemperateForest</li>
 			<li>TropicalRainforest</li>
 			<li>TemperateArchipelago</li>
@@ -1332,11 +1029,7 @@
 		<label>death sturgeon</label>
 		<description>lorem ipsum</description>
 		<statBases>
-			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
-			<MarketValue>100</MarketValue>
 			<Mass>20</Mass>
-			<LeatherAmount>4</LeatherAmount>
-			<Wildness>0.99</Wildness>
 		</statBases>
 		<race>
 			<leatherDef>Leather_Lizard</leatherDef>
@@ -1353,33 +1046,6 @@
 			<manhunterOnDamageChance>0.85</manhunterOnDamageChance>
 			<gestationPeriodDays>2.0</gestationPeriodDays>
 			<nameOnTameChance>0</nameOnTameChance>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(3, 1)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>15</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>2</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>6</minAge>
-					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
-					<soundDeath>Pawn_Cobra_Death</soundDeath>
-					<soundCall>Pawn_Cobra_Call</soundCall>
-					<soundAngry>Pawn_Cobra_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
 		</race>
 		<tradeTags />
 	</ThingDef>
@@ -1388,9 +1054,7 @@
 		<defName>PawnKindDefDeathSturgeon</defName>
 		<label>death sturgeon</label>
 		<race>ThingDefDeathSturgeon</race>
-		<combatPower>30</combatPower>
 		<ecoSystemWeight>0.13</ecoSystemWeight>
-		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -1427,7 +1091,7 @@
 		<livesInMarsh>false</livesInMarsh>
 		<livesInRiver>true</livesInRiver>
 		<commonality>0.13</commonality>
-		<naturalBiomes>
+		<naturalBiomes Inherit="false">
 			<li MayRequire="vileheathen.mountainsmeadows">Prairie</li>
 			<li MayRequire="vileheathen.mountainsmeadows">MontaneForest</li>
 			<li MayRequire="vileheathen.mountainsmeadows">MontaneGrasslands</li>
@@ -1452,11 +1116,7 @@
 		<label>sterling perch</label>
 		<description>lorem ipsum</description>
 		<statBases>
-			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
-			<MarketValue>100</MarketValue>
 			<Mass>2</Mass>
-			<LeatherAmount>0</LeatherAmount>
-			<Wildness>0.99</Wildness>
 		</statBases>
 		<race>
 			<body>Fish</body>
@@ -1471,34 +1131,6 @@
 			<manhunterOnTameFailChance>0.03</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.85</manhunterOnDamageChance>
 			<gestationPeriodDays>2.0</gestationPeriodDays>
-			<nameOnTameChance>0</nameOnTameChance>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(3, 1)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>6</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.75</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>1.5</minAge>
-					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
-					<soundDeath>Pawn_Cobra_Death</soundDeath>
-					<soundCall>Pawn_Cobra_Call</soundCall>
-					<soundAngry>Pawn_Cobra_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
 		</race>
 		<tradeTags />
 	</ThingDef>
@@ -1507,9 +1139,7 @@
 		<defName>PawnKindDefFishSterlingPerch</defName>
 		<label>sterling perch</label>
 		<race>ThingDefFishSterlingPerch</race>
-		<combatPower>30</combatPower>
 		<ecoSystemWeight>0.77</ecoSystemWeight>
-		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -1546,7 +1176,7 @@
 		<livesInMarsh>true</livesInMarsh>
 		<livesInRiver>true</livesInRiver>
 		<commonality>0.77</commonality>
-		<naturalBiomes>
+		<naturalBiomes Inherit="false">
 			<li MayRequire="vileheathen.mountainsmeadows">Prairie</li>
 			<li MayRequire="vileheathen.mountainsmeadows">MontaneForest</li>
 			<li MayRequire="vileheathen.mountainsmeadows">MontaneGrasslands</li>
@@ -1586,11 +1216,7 @@
 		<label>pinstripe bass</label>
 		<description>lorem ipsum</description>
 		<statBases>
-			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
-			<MarketValue>100</MarketValue>
 			<Mass>4</Mass>
-			<LeatherAmount>0</LeatherAmount>
-			<Wildness>0.99</Wildness>
 		</statBases>
 		<race>
 			<body>Fish</body>
@@ -1605,34 +1231,6 @@
 			<manhunterOnTameFailChance>0.03</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.85</manhunterOnDamageChance>
 			<gestationPeriodDays>2.0</gestationPeriodDays>
-			<nameOnTameChance>0</nameOnTameChance>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(3, 1)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>6</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.75</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>1.5</minAge>
-					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
-					<soundDeath>Pawn_Cobra_Death</soundDeath>
-					<soundCall>Pawn_Cobra_Call</soundCall>
-					<soundAngry>Pawn_Cobra_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
 		</race>
 		<tradeTags />
 	</ThingDef>
@@ -1641,9 +1239,7 @@
 		<defName>PawnKindDefFishPinstripeBass</defName>
 		<label>pinstripe bass</label>
 		<race>ThingDefFishPinstripeBass</race>
-		<combatPower>30</combatPower>
 		<ecoSystemWeight>0.7</ecoSystemWeight>
-		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -1680,7 +1276,7 @@
 		<livesInMarsh>true</livesInMarsh>
 		<livesInRiver>true</livesInRiver>
 		<commonality>0.7</commonality>
-		<naturalBiomes>
+		<naturalBiomes Inherit="false">
 			<li>BorealForest</li>
 			<li>TemperateForest</li>
 			<li>TropicalRainforest</li>
