@@ -853,4 +853,107 @@
 			</recipeMaker>
 		</value>
 	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RK_Weapon_SawedOff"]</xpath>
+		<value>
+			<statBases>
+				<MarketValue>450</MarketValue>
+				<WorkToMake>9000</WorkToMake>
+				<SightsEfficiency>0.6</SightsEfficiency>
+				<ShotSpread>0.35</ShotSpread>
+				<SwayFactor>1.6</SwayFactor>
+				<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+				<Bulk>4</Bulk>
+				<Mass>1.8</Mass>
+			</statBases>
+			<costStuffCount>20</costStuffCount>
+			<stuffCategories>
+				<li>StrongMetallic</li>
+			</stuffCategories>
+			<costList>
+				<WoodPlank>12</WoodPlank>
+				<ComponentIndustrial>3</ComponentIndustrial>
+				<Shotgun_Component>1</Shotgun_Component>
+				<Weapon_Parts>1</Weapon_Parts>
+				<Rubber>4</Rubber>
+			</costList>
+			<recipeMaker>
+				<researchPrerequisite>GasOperation</researchPrerequisite>
+				<recipeUsers Inherit="false">
+					<li>WeaponCraftingWorkTable</li>
+				</recipeUsers>
+				<skillRequirements>
+					<Crafting>5</Crafting>
+				</skillRequirements>
+			</recipeMaker>
+			<verbs>
+				<li Class="CombatExtended.VerbPropertiesCE">
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+					<warmupTime>0.45</warmupTime>
+					<range>11</range>
+					<recoilAmount>1.5</recoilAmount>
+					<soundCast>RK_Sound_ShotgunSawedOff</soundCast>
+					<soundCastTail>GunTail_Heavy</soundCastTail>
+					<muzzleFlashScale>9</muzzleFlashScale>
+				</li>
+			</verbs>
+			<weaponTags Inherit="false">
+				<li>RK_2TierWeapon</li>
+				<li>RK_Shotgun</li>
+				<li>RK_WeaponTag_OneHand</li>
+				<li>RK_WeaponTag_OneHandRange</li>
+				<li>RK_WeaponTag_OneHandRangeAttack</li>
+				<li>CE_OneHandedWeapon</li>
+			</weaponTags>
+			<thingCategories Inherit="false">
+				<li>RKRangeWeapon</li>
+				<li>Shotguns</li>
+			</thingCategories>
+			<comps>
+				<li Class="NewRatkin.CompProperties_WeaponGripType">
+					<gripTypes>
+						<li>OneHand</li>
+					</gripTypes>
+				</li>
+				<li Class="CombatExtended.CompProperties_FireModes">
+					<aiAimMode>Snapshot</aiAimMode>
+				</li>
+				<li Class="CombatExtended.CompProperties_AmmoUser">
+					<magazineSize>2</magazineSize>
+					<reloadOneAtATime>true</reloadOneAtATime>
+					<reloadTime>0.65</reloadTime>
+					<ammoSet>AmmoSet_12Gauge</ammoSet>
+				</li>
+			</comps>
+			<smeltProducts>
+				<Shotgun_Component>1</Shotgun_Component>
+				<Weapon_Parts>1</Weapon_Parts>
+			</smeltProducts>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>stock</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>7</power>
+					<cooldownTime>1.8</cooldownTime>
+					<armorPenetrationBlunt>3</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>barrel</label>
+					<capacities>
+						<li>Blunt</li>
+						<li>Poke</li>
+					</capacities>
+					<power>7</power>
+					<cooldownTime>1.8</cooldownTime>
+					<armorPenetrationBlunt>3</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
 </Patch>

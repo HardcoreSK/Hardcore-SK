@@ -302,12 +302,21 @@
 					<raceRestriction>
 						<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
 						<apparelList>
+							<li>RK_Apparel_Banner</li>
+							<li>RK_Apparel_SpaceArmor</li>
+							<li>RK_Apparel_SpaceArmorHelmet</li>
+							<li MayRequire="Ludeon.RimWorld.Odyssey">RK_Apparel_Vacsuit</li>
+							<li MayRequire="Ludeon.RimWorld.Odyssey,Ludeon.RimWorld.Biotech">RK_Apparel_VacsuitChildren</li>
+							<li MayRequire="Ludeon.RimWorld.Odyssey">RK_Apparel_VacsuitHelmet</li>
 							<li>RK_ApronSkirt</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">RK_ApronSkirtChildren</li>
 							<li>RK_SummerDress</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">RK_Apparel_ChildrenSummerDress</li>
 							<li>RK_StrawHat</li>
 							<li>RK_Muffler</li>
 							<li>RK_CrossBack</li>
 							<li>RK_Cardigan</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">RK_Apparel_ChildrenCardigan</li>
 							<li>RK_WoolenHat</li>
 							<li>RK_Backpack</li>
 							<li>RK_WorkerWear</li>
@@ -321,6 +330,7 @@
 							<li>RK_MildCoat</li>
 							<li>RK_GaurdenUniform</li>
 							<li>RK_WinterRobe</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">RK_Apparel_ChildrenWinterRobe</li>
 							<li>RK_OutdoorBackpack</li>
 							<li>RK_OrderUniform</li>
 							<li>RK_OrderUniformB</li>
@@ -343,6 +353,7 @@
 							<li>RK_PlateHelmC</li>
 							<li>RK_WoodenShield</li>
 							<li>RK_HeavyShield</li>
+							<li>RK_TowerShield</li>
 							<li>RK_SantaRobe</li>
 							<li>RK_SantaHat</li>
 							<li>RK_SantaSack</li>
@@ -355,18 +366,38 @@
 							<li>Apparel_SmokepopBelt</li>
 						</whiteApparelList>
 						<weaponList>
-							<li>RK_Fork</li>
-							<li>RK_LongSword</li>
-							<li>RK_LongSword</li>
-							<li>RK_Crossbow</li>
-							<li>RK_EnhanceCrossBow</li>
 							<li>RK_AutoCrossBow</li>
+							<li>RK_Axe</li>
+							<li>RK_Cleaver</li>
+							<li>RK_Crossbow</li>
+							<li>RK_Dagger</li>
+							<li>RK_Fork</li>
+							<li>RK_Hockey</li>
+							<li>RK_LightLance</li>
+							<li>RK_LongSword</li>
+							<li>RK_Spear</li>
+							<li>RK_Mace</li>
+							<li>RK_MagicWand</li>
+							<li>RK_Weapon_Maul</li>
+							<li>RK_OneHanded</li>
+							<li>RK_Pickaxe</li>
+							<li>RK_Weapon_Gunlance</li>
 							<li>RK_Rifle</li>
 							<li>RK_SniperRifle</li>
-							<li>RK_Dagger</li>
-							<li>RK_OneHanded</li>
-							<li>RK_LightLance</li>
+							<li>RK_Weapon_SawedOff</li>
+							<li>RK_TwoHanded</li>
+							<li>RK_Weapon_Arbalest</li>
+							<li>RK_Weapon_BFR</li>
+							<li>RK_PrototypePulseRifle</li>
+							<li>RK_Weapon_Bolter</li>
+							<li>RK_Weapon_ProtoChainSword</li>
+							<li>RK_Weapon_ProtoFlameChainSword</li>
+							<li>RK_Weapon_RatHolicGun</li>
+							<li>RK_Halberd</li>
 							<li>RK_HeavyLance</li>
+							<li>Gun_RKShotgun</li>
+							<li>RK_BFR</li>
+							<li>RK_EnhanceCrossBow</li>
 						</weaponList>
 						<xenotypeList>
 							<li MayRequire="Ludeon.RimWorld.Biotech">RK_XenoType_Ratkin</li>

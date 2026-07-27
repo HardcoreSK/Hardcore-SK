@@ -78,4 +78,65 @@
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/ThingDef[defName="RK_Fork"]/tradeability</xpath>
 	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RK_Weapon_Maul"]</xpath>
+		<value>
+			<techLevel>Medieval</techLevel>
+			<weaponTags Inherit="false">
+				<li>RK_Weapon</li>
+				<li>RK_Knight</li>
+				<li>RK_Defender</li>
+				<li>RK_EliteDefender</li>
+				<li>RK_WeaponTag_OneHand</li>
+				<li>RK_WeaponTag_OneHandMelee</li>
+				<li>RK_WeaponTag_OneHandMeleeAttack</li>
+				<li>CE_OneHandedWeapon</li>
+			</weaponTags>
+			<statBases>
+				<WorkToMake>8000</WorkToMake>
+				<Mass>1.8</Mass>
+				<Bulk>4.5</Bulk>
+			</statBases>
+			<costList>
+				<WoodPlank>25</WoodPlank>
+				<ComponentMedieval>2</ComponentMedieval>
+			</costList>
+			<costStuffCount>70</costStuffCount>
+			<stuffCategories>
+				<li>StrongMetallic</li>
+			</stuffCategories>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>Head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>22</power>
+					<cooldownTime>2.7</cooldownTime>
+					<armorPenetrationBlunt>10</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>handle</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>2.2</cooldownTime>
+					<armorPenetrationBlunt>3</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				</li>
+			</tools>
+			<recipeMaker>
+				<researchPrerequisite>Smithing</researchPrerequisite>
+				<recipeUsers Inherit="false">
+					<li>RK_FueledSmithy</li>
+					<li>RK_ElectricSmithy</li>
+				</recipeUsers>
+				<skillRequirements>
+					<Crafting>5</Crafting>
+				</skillRequirements>
+			</recipeMaker>
+		</value>
+	</Operation>
 </Patch>
