@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <!-- General -->
+    <MissileGirl.Settings>设置</MissileGirl.Settings>
+    <MissileGirl.Settings.Debugging>Debug设置</MissileGirl.Settings.Debugging>
+    <MissileGirl.Collapsible.Expand>[展开]</MissileGirl.Collapsible.Expand>
+    <MissileGirl.Collapsible.Hide>[收起]</MissileGirl.Collapsible.Hide>
+    <MissileGirl.Selection>选项: {0}</MissileGirl.Selection>
+    <!-- MissileGirl -->
+    <MissileGirl.Settings.PleaseUnpause>请勿暂停游戏...正在启动MissileGirl!</MissileGirl.Settings.PleaseUnpause>
+    <MissileGirl.Settings.PleaseWait>请等待MissileGirl启动完毕!</MissileGirl.Settings.PleaseWait>
+    <MissileGirl.IncompatibilityWindow.Title>存在与MissileGirl冲突的Mod</MissileGirl.IncompatibilityWindow.Title>
+    <MissileGirl.IncompatibilityWindow.Description>
+        你的Mod列表存在与MissileGirl冲突的Mod。该类兼容性问题会毁掉你的存档!你可选择禁用MissileGirl或继续一意孤行。以下是冲突的Mod列表:\n
+    </MissileGirl.IncompatibilityWindow.Description>
+    <MissileGirl.IncompatibilityWindow.Continue>我已了解! 继续游戏!</MissileGirl.IncompatibilityWindow.Continue>
+    <MissileGirl.IncompatibilityWindow.OpenModManager>打开Mod配置</MissileGirl.IncompatibilityWindow.OpenModManager>
+    <MissileGirl.IncompatibilityWindow.Disclaimer>若你忽视这条警告或继续，MissileGirl团队不为后续问题提供任何技术支持!
+    </MissileGirl.IncompatibilityWindow.Disclaimer>
+    <MissileGirl.Alert_StatsLearning.Label>自适应模式已激活</MissileGirl.Alert_StatsLearning.Label>
+    <MissileGirl.Alert_StatsLearning.Explanation>自适应模式已启用了 {0} 分钟!仅建议在开新档或更改Mod列表后启用 {1}
+        分钟。
+    </MissileGirl.Alert_StatsLearning.Explanation>
+    <MissileGirl.AdaptiveAlert.Label>启用自适应模式警报</MissileGirl.AdaptiveAlert.Label>
+    <MissileGirl.AdaptiveAlert.Description>禁用该选项以关闭自适应模式警报。</MissileGirl.AdaptiveAlert.Description>
+    <MissileGirl.Unpause>请勿暂停游戏!</MissileGirl.Unpause>
+    <MissileGirl.Warming>启动中!请稍后...</MissileGirl.Warming>
+    <MissileGirl.HideProgressBar>此提示可在MissileGirl设置中隐藏/禁用</MissileGirl.HideProgressBar>
+    <!-- MissileGirl MissileGirl.TabContent_Settings -->
+    <MissileGirl.MissileGirl>MissileGirl</MissileGirl.MissileGirl>
+    <MissileGirl.Tab>主要功能</MissileGirl.Tab>
+    <MissileGirl.Close>关闭</MissileGirl.Close>
+    <MissileGirl.Enable>启用</MissileGirl.Enable>
+    <MissileGirl.TranslationCaching>启用翻译缓存</MissileGirl.TranslationCaching>
+    <MissileGirl.Experimental>实验性功能</MissileGirl.Experimental>
+    <MissileGirl.Experimental.Description>
+        以下为MissileGirl先行版功能，你可自行选择调整。\n警告：若你不清楚后果请勿修改以下配置。
+    </MissileGirl.Experimental.Description>
+    <MissileGirl.Experimental.OptInBeta>MissileGirl先行版的可选配置</MissileGirl.Experimental.OptInBeta>
+    <MissileGirl.EnableGagarin>加快载入速度(更短的载入时间)</MissileGirl.EnableGagarin>
+    <MissileGirl.EnableGagarin.Tip>MissileGirl通过缓存Xml补丁文件的操作以尝试加快载入游戏的速度。
+        在启用该选项后请重启两次游戏，以便MissileGirl创建缓存。取决于启用的Mod数量及Mod类型至多可缩减一半载入时间。建议在使用Combat
+        Extended或Doc universal这类大量使用Xml补丁的Mod时启用。
+    </MissileGirl.EnableGagarin.Tip>
+    <MissileGirl.ShowIcon>显示MissileGirl按钮/图标</MissileGirl.ShowIcon>
+    <MissileGirl.ShowIcon.Description>因受游戏限制，部分设置无法在游戏主界面的Mod选项中配置。
+    </MissileGirl.ShowIcon.Description>
+    <MissileGirl.ProgressBar>游戏开始时显示启动进度条</MissileGirl.ProgressBar>
+    <MissileGirl.ProgressBar.Description>开启此选项会在你载入新地图时显示启动进度条。
+    </MissileGirl.ProgressBar.Description>
+    <MissileGirl.Junk>垃圾清理配置</MissileGirl.Junk>
+    <MissileGirl.CorpseRemoval>启用自动清除尸体</MissileGirl.CorpseRemoval>
+    <MissileGirl.CorpseRemoval.Description>
+        为保持游戏平衡性，该机制只会清除存在于视野外一段时间及非玩家基地(居住区)附近的尸体。
+    </MissileGirl.CorpseRemoval.Description>
+    <MissileGirl.GameSpeed>游戏速度配置</MissileGirl.GameSpeed>
+    <MissileGirl.DisableForcedSlowdowns>禁用强制限速</MissileGirl.DisableForcedSlowdowns>
+    <MissileGirl.DisableForcedSlowdowns.Description>禁用游戏中事件的强制限速。若已使用SmartSpeed则关闭此选项。
+    </MissileGirl.DisableForcedSlowdowns.Description>
+    <MissileGirl.StatCacheSettings>数据缓存配置</MissileGirl.StatCacheSettings>
+    <MissileGirl.Adaptive>自适应模式</MissileGirl.Adaptive>
+    <MissileGirl.Adaptive.Description>每当新开档或更改Mod列表时启用30分钟后关闭。</MissileGirl.Adaptive.Description>
+    <MissileGirl.EnableGearStatCaching>缓存装备状态数据</MissileGirl.EnableGearStatCaching>
+    <MissileGirl.Debugging>启用debugging</MissileGirl.Debugging>
+    <MissileGirl.Debugging.Description>仅适用于高级用户及Mod作者</MissileGirl.Debugging.Description>
+
+    <!-- Soyuz Soyuz.TabContent_DilationSettings -->
+    <Soyuz.Tab>间隔扩增配置</Soyuz.Tab>
+
+    <!-- Proton Proton.TabContent_Alerts -->
+    <Proton.Tab>警报配置</Proton.Tab>
+    <Proton.Colored.ActiveNow>正在运行</Proton.Colored.ActiveNow>
+    <Proton.Colored.IgnoredAndBad>忽略及低性能</Proton.Colored.IgnoredAndBad>
+    <Proton.Colored.DisabledOrBad>已禁用或低性能</Proton.Colored.DisabledOrBad>
+    <Proton.Colored.Ignored>忽略(属于关键警报)</Proton.Colored.Ignored>
+    <Proton.Enable>启用警报配置</Proton.Enable>
+    <Proton.DisalbeAllInfo>若你已启用了Dub's performance这个Mod，MissileGirl会取代其警报配置的功能。
+    </Proton.DisalbeAllInfo>
+    <Proton.DisableAll.P1>禁用</Proton.DisableAll.P1>
+    <Proton.DisableAll.P2>所有警报</Proton.DisableAll.P2>
+    <Proton.Disabled>已禁用配置</Proton.Disabled>
+    <Proton.AlertsDisabled>禁用所有警报</Proton.AlertsDisabled>
+    <Proton.MaxIn>最大响应时间</Proton.MaxIn>
+    <Proton.MinUpdate>最小刷新间隔</Proton.MinUpdate>
+    <Proton.Enabled>启用</Proton.Enabled>
+    <Proton.IgnoreThis>忽略此警报(将恢复为原版表现)</Proton.IgnoreThis>
+    <Proton.AlertName>警报名称</Proton.AlertName>
+    <Proton.Avg>平均响应时间</Proton.Avg>
+    <Proton.TimeSinceLast>上次更新时间</Proton.TimeSinceLast>
+    <!-- Gagarin -->
+    <Gagarin.ParsingReports>MissileGirl正检测是否存在重复的代码文件(Bases/Defs)</Gagarin.ParsingReports>
+    <Gagarin.Tab>优化载入时间</Gagarin.Tab>
+    <Gagarin.Expiry>XML缓存将于 {0} 天后过期</Gagarin.Expiry>
+    <Gagarin.Tip>当启用优化载入时间时，所有XML文件都会被缓存。该选项开启后会跳过XML补丁操作。可在MissileGirl主菜单中禁用
+    </Gagarin.Tip>
+    <Gagarin.ClearCache>清空缓存</Gagarin.ClearCache>
+    <Gagarin.ClearCache.Description>
+        清空缓存可解决因XML文件缓存而导致的问题，以便Mod更新添加新贴图到缓存中。\n建议每隔上方提示的天数清空一次缓存。
+    </Gagarin.ClearCache.Description>
+
+</LanguageData>

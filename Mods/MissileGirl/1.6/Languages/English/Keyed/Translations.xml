@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <MissileGirl.ModNameShort>Missile Girl</MissileGirl.ModNameShort>
+    <!-- General -->
+    <MissileGirl.Settings>Settings</MissileGirl.Settings>
+    <MissileGirl.Settings.Debugging>Debug Settings</MissileGirl.Settings.Debugging>
+    <MissileGirl.Collapsible.Expand>[Expand]</MissileGirl.Collapsible.Expand>
+    <MissileGirl.Collapsible.Hide>[Hide]</MissileGirl.Collapsible.Hide>
+    <MissileGirl.Selection>Selection: {0}</MissileGirl.Selection>
+    <MissileGirl.ResetDefault>Reset to Default</MissileGirl.ResetDefault>
+    <!-- MissileGirl -->
+    <MissileGirl.Settings.PleaseUnpause>Please unpause the game... MissileGirl is warming up!
+    </MissileGirl.Settings.PleaseUnpause>
+    <MissileGirl.Settings.PleaseWait>Please wait... MissileGirl is warming up!</MissileGirl.Settings.PleaseWait>
+    <MissileGirl.IncompatibilityWindow.Title>You are running incompatible mods</MissileGirl.IncompatibilityWindow.Title>
+    <MissileGirl.IncompatibilityWindow.Description>You are running incompatible mods with MissileGirl. This type of
+        incompatibility will nuke/destroy your save! You can Disable MissileGirl or You continue on your own
+        responsibility.\nCurrent incompatible mods are:\n
+    </MissileGirl.IncompatibilityWindow.Description>
+    <MissileGirl.IncompatibilityWindow.Continue>Yes, I understand! Continue!
+    </MissileGirl.IncompatibilityWindow.Continue>
+    <MissileGirl.IncompatibilityWindow.OpenModManager>Open the mod manager
+    </MissileGirl.IncompatibilityWindow.OpenModManager>
+    <MissileGirl.IncompatibilityWindow.Disclaimer>The MissileGirl team will provide no support if you choose to ignore
+        this message or continue!
+    </MissileGirl.IncompatibilityWindow.Disclaimer>
+    <MissileGirl.Alert_StatsLearning.Label>Adaptive mode is active</MissileGirl.Alert_StatsLearning.Label>
+    <MissileGirl.Alert_StatsLearning.Explanation>Adaptive mode has been active for {0} minutes! It is recommended to have
+        it running for {1} minutes per new save or when you change your mods.
+    </MissileGirl.Alert_StatsLearning.Explanation>
+    <MissileGirl.AdaptiveAlert.Label>Enable adaptive mode alert</MissileGirl.AdaptiveAlert.Label>
+    <MissileGirl.AdaptiveAlert.Description>Disable this if you don't want the adaptive mode alert in your alert list.
+    </MissileGirl.AdaptiveAlert.Description>
+    <MissileGirl.Unpause>Please unpause the game!</MissileGirl.Unpause>
+    <MissileGirl.Warming>is warming up! Please wait...</MissileGirl.Warming>
+    <MissileGirl.HideProgressBar>You can hide/disable in MissileGirl's settings</MissileGirl.HideProgressBar>
+    <!-- MissileGirl MissileGirl.TabContent_Settings -->
+    <MissileGirl.MissileGirl>MissileGirl</MissileGirl.MissileGirl>
+    <MissileGirl.Tab>Home</MissileGirl.Tab>
+
+    <MissileGirl.FixBeauty>Dynamic beauty scan radius</MissileGirl.FixBeauty>
+    <MissileGirl.FixBeauty.Tip>Beauty scan radius will change depending on what the pawn is doing. Use at your own
+        risk.
+    </MissileGirl.FixBeauty.Tip>
+
+    <MissileGirl.DeepDrillOptimize>Fix Deep Drill Lag</MissileGirl.DeepDrillOptimize>
+    <MissileGirl.DeepDrillOptimize.Tip>Reduces lag from deep drill when not on resource
+    </MissileGirl.DeepDrillOptimize.Tip>
+
+    <MissileGirl.TemperatureTickCheck>Cache Temperature Check</MissileGirl.TemperatureTickCheck>
+    <MissileGirl.TemperatureTickCheck.Tip>Caches pawn temperature check to once per tick.
+    </MissileGirl.TemperatureTickCheck.Tip>
+
+    <MissileGirl.BuildingRepairCheck>Building Repairable Check</MissileGirl.BuildingRepairCheck>
+    <MissileGirl.BuildingRepairCheck.Tip>Short circuits check if building is not repairable or doesn't have hitpoints.
+    </MissileGirl.BuildingRepairCheck.Tip>
+
+    <MissileGirl.NotifyPawnDamage>Notify Pawn Damage Tweak</MissileGirl.NotifyPawnDamage>
+    <MissileGirl.NotifyPawnDamage.Tip>Helps with stuttering by preventing pawn damage notification spam if current's
+        pawn LordToil is Assault or Sapper.
+    </MissileGirl.NotifyPawnDamage.Tip>
+
+    <MissileGirl.GenMapSize>Map Size Generation Override</MissileGirl.GenMapSize>
+    <MissileGirl.GenMapSize.Text>Set the map size/shape for the next generated map. (after generating said map this
+        option will reset back to default)
+    </MissileGirl.GenMapSize.Text>
+    <MissileGirl.GenMapSize.Note>Please note that the new map will have a width/height that is dividable by region
+        height (this rounding process is automatic).
+    </MissileGirl.GenMapSize.Note>
+    <MissileGirl.GenMapSize.Mode.Custom>Custom</MissileGirl.GenMapSize.Mode.Custom>
+    <MissileGirl.GenMapSize.Mode.Vanilla>Vanilla</MissileGirl.GenMapSize.Mode.Vanilla>
+    <MissileGirl.GenMapSize.Width>Width</MissileGirl.GenMapSize.Width>
+    <MissileGirl.GenMapSize.Height>Height</MissileGirl.GenMapSize.Height>
+    <MissileGirl.Close>Close</MissileGirl.Close>
+    <MissileGirl.Enable>Enable</MissileGirl.Enable>
+    <MissileGirl.TranslationCaching>Enable text size caching</MissileGirl.TranslationCaching>
+    <MissileGirl.Experimental>Experimental features</MissileGirl.Experimental>
+    <MissileGirl.Experimental.Description>Here you can opt in MissileGirl Beta features.\nWarning: do not do this if you
+        don't know what you're doing.
+    </MissileGirl.Experimental.Description>
+    <MissileGirl.Experimental.OptInBeta>Opt in MissileGirl beta features</MissileGirl.Experimental.OptInBeta>
+    <MissileGirl.EnableGagarin>Enable load time reduction (Faster loading times)</MissileGirl.EnableGagarin>
+    <MissileGirl.EnableGagarin.Tip>MissileGirl will attempt to reduce your loading time by caching Xml patch operations. After you active this settings restart your game twice in order for MissileGirl to create the cache. Depending on how many mods you use and what mods you could see several minutes shaved off loading time. This is recommended to be used with Xml patch heavy mods such as Combat Extended.</MissileGirl.EnableGagarin.Tip>
+    <MissileGirl.ShowIcon>Show MissileGirl button/icon</MissileGirl.ShowIcon>
+    <MissileGirl.ShowIcon.Description>Due to game limitations some options aren't available from the game menu
+        settings.
+    </MissileGirl.ShowIcon.Description>
+    <MissileGirl.ProgressBar>Show warmup progress bar on startup</MissileGirl.ProgressBar>
+    <MissileGirl.ProgressBar.Pause>Pause after warmup</MissileGirl.ProgressBar.Pause>
+    <MissileGirl.ProgressBar.Description>This will show a warmup progress bar when you load a new map.
+    </MissileGirl.ProgressBar.Description>
+    <MissileGirl.Junk>Junk</MissileGirl.Junk>
+    <MissileGirl.CorpseRemoval>Enable automatic corpses removal.</MissileGirl.CorpseRemoval>
+    <MissileGirl.CorpseRemoval.Description>This removes corpses that aren't in view for a while and that aren't near
+        your base to avoid breaking the game balance.
+    </MissileGirl.CorpseRemoval.Description>
+    <MissileGirl.GameSpeed>Game speed settings</MissileGirl.GameSpeed>
+    <MissileGirl.DisableForcedSlowdowns>Disable forced slowdowns</MissileGirl.DisableForcedSlowdowns>
+    <MissileGirl.DisableForcedSlowdowns.Description>Disable forced slowdowns by game events. Disable this if you are
+        using SmartSpeed.
+    </MissileGirl.DisableForcedSlowdowns.Description>
+    <MissileGirl.StatCacheSettings>Stats cache settings</MissileGirl.StatCacheSettings>
+    <MissileGirl.Adaptive>Adaptive mode</MissileGirl.Adaptive>
+    <MissileGirl.Adaptive.Description>Enable for 30 minutes after creating a new save or changing your mod list.
+    </MissileGirl.Adaptive.Description>
+    <MissileGirl.EnableGearStatCaching>Enable gear stat caching</MissileGirl.EnableGearStatCaching>
+    <MissileGirl.Debugging>Enable debugging</MissileGirl.Debugging>
+    <MissileGirl.Debugging.Description>Only for advanced users and modders</MissileGirl.Debugging.Description>
+    <MissileGirl.OptimizationSettings>Vanilla Optimizations</MissileGirl.OptimizationSettings>
+
+    <!-- Soyuz Soyuz.TabContent_DilationSettings -->
+    <Soyuz.Tab>Time dilation control</Soyuz.Tab>
+
+    <!-- Proton Proton.TabContent_Alerts -->
+    <Proton.Tab>Alert management</Proton.Tab>
+    <Proton.Colored.ActiveNow>Active now</Proton.Colored.ActiveNow>
+    <Proton.Colored.IgnoredAndBad>Ignored and behaving badly</Proton.Colored.IgnoredAndBad>
+    <Proton.Colored.DisabledOrBad>Disabled or behaving badly</Proton.Colored.DisabledOrBad>
+    <Proton.Colored.Ignored>Ignored (for critical alerts)</Proton.Colored.Ignored>
+    <Proton.Enable>Enable</Proton.Enable>
+    <Proton.DisalbeAllInfo>If you have Dub's performance analyzer installed MissileGirl will override its alert control
+        system. Use this one instead.
+    </Proton.DisalbeAllInfo>
+    <Proton.DisableAll.P1>DISABLE</Proton.DisableAll.P1>
+    <Proton.DisableAll.P2>all alerts</Proton.DisableAll.P2>
+    <Proton.Disabled>Controls disabled</Proton.Disabled>
+    <Proton.AlertsDisabled>All alerts are disabled</Proton.AlertsDisabled>
+    <Proton.MaxIn>Max execution in</Proton.MaxIn>
+    <Proton.MinUpdate>Min update interval</Proton.MinUpdate>
+    <Proton.Enabled>Enabled</Proton.Enabled>
+    <Proton.IgnoreThis>Ignore this (will revert to vanilla behavior)</Proton.IgnoreThis>
+    <Proton.AlertName>Alert name</Proton.AlertName>
+    <Proton.Avg>Average execution time</Proton.Avg>
+    <Proton.TimeSinceLast>Time since last update</Proton.TimeSinceLast>
+
+    <!-- Gagarin -->
+    <Gagarin.ParsingReports>MissileGirl is checking for any duplicated Bases or Defs</Gagarin.ParsingReports>
+    <Gagarin.Tab>Load time optimization</Gagarin.Tab>
+    <Gagarin.Expiry>Gagarin cache will expire in: {0} days</Gagarin.Expiry>
+    <Gagarin.CacheExpires>Cache Expires</Gagarin.CacheExpires>
+    <Gagarin.CacheExpires.Desc>Determines if the cache will ever expire based on time. This does not prevent the cache being rebuilt from detecting mod changes.</Gagarin.CacheExpires.Desc>
+    <Gagarin.CacheRetentionTime>Max Cache Retention Time</Gagarin.CacheRetentionTime>
+    <Gagarin.Tip>As long as load time optimization is active it will cache every XML Def. This allows you to skip XML patching. You can disable it from the main menu in MissileGirl</Gagarin.Tip>
+    <Gagarin.ClearCache>Clear cache</Gagarin.ClearCache>
+    <Gagarin.ClearCache.Description>Clearing the cache can help resolve XML caching issues in case of a mod update as well as allowing new textures to be cached.</Gagarin.ClearCache.Description>
+
+</LanguageData>
