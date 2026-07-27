@@ -37,6 +37,11 @@
 		<techHediffsChance>0.35</techHediffsChance>
 		<techHediffsMaxAmount>3</techHediffsMaxAmount>
 		<initialWillRange>1~3</initialWillRange>
+		<xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+		  </xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 	<!-- Desperado -->
 	<PawnKindDef ParentName="KingdomBase">
@@ -137,17 +142,17 @@
 		</inventoryOptions>
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
-			<Baseline_Nova MayRequire="Ludeon.RimWorld.Biotech">0.7</Baseline_Nova>
-			<Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.03</Sanguophage>
-			<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.03</Dirtmole>
-			<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.03</Hussar>
-			<Waster MayRequire="Ludeon.RimWorld.Biotech">0.03</Waster>
-			<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0.03</Pigskin>
+			<Baseline_Nova MayRequire="Ludeon.RimWorld.Biotech">0.81</Baseline_Nova>
+			<Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.01</Sanguophage>
+			<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.02</Dirtmole>
+			<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.01</Hussar>
+			<Waster MayRequire="Ludeon.RimWorld.Biotech">0.02</Waster>
+			<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0.02</Pigskin>
 			<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.03</Neanderthal>
 			<Impid MayRequire="Ludeon.RimWorld.Biotech">0.03</Impid>
-			<Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie>
-			<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.03</Yttakin>
-			<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.03</Starjack>
+			<Genie MayRequire="Ludeon.RimWorld.Biotech">0.02</Genie>
+			<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.02</Yttakin>
+			<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.01</Starjack>
 		  </xenotypeChances>
 		</xenotypeSet>
 	</PawnKindDef>
@@ -195,6 +200,17 @@
 			<li>MedievalRanged</li>
 		</weaponTags>
 		<initialResistanceRange>11~21</initialResistanceRange>
+		<xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			<Baseline_Norbal MayRequire="Ludeon.RimWorld.Biotech">0.88</Baseline_Norbal>
+			<Baseline_Nova MayRequire="Ludeon.RimWorld.Biotech">0.02</Baseline_Nova>
+			<Baseline_Dova MayRequire="Ludeon.RimWorld.Biotech">0.02</Baseline_Dova>
+			<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.02</Hussar>
+			<Waster MayRequire="Ludeon.RimWorld.Biotech">0.02</Waster>
+			<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0.02</Pigskin>
+			<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.02</Neanderthal>
+		  </xenotypeChances>
+		</xenotypeSet>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>

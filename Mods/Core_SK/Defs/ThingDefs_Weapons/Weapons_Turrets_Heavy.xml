@@ -52,10 +52,10 @@
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<statBases>
-			<MarketValue>500</MarketValue>
-			<SightsEfficiency>1.0</SightsEfficiency>
+			<MarketValue>500</MarketValue><!--
+			<SightsEfficiency>1.5</SightsEfficiency>
 			<ShotSpread>0.02</ShotSpread>
-			<SwayFactor>0.9</SwayFactor>
+			<SwayFactor>0.3</SwayFactor>-->
 			<RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
@@ -64,18 +64,18 @@
 				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Stone_Ball</defaultProjectile>
-				<warmupTime>2.40</warmupTime>
-				<minRange>20</minRange>
+				<warmupTime>4.40</warmupTime>
+				<minRange>35</minRange>
 				<range>150</range>
 				<!--<forcedMissRadius>4</forcedMissRadius>-->
-				<circularError>1.1</circularError>
+				<circularError>0.08</circularError>
 				<burstShotCount>1</burstShotCount>
 				<soundCast>CatapultShot</soundCast>
 				<muzzleFlashScale>14</muzzleFlashScale>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-				<indirectFirePenalty>1</indirectFirePenalty>
+				<indirectFirePenalty>0.1</indirectFirePenalty>
 			</li>
 		</verbs>
 		<comps>
@@ -86,7 +86,7 @@
 			</li>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
-				<reloadTime>7.5</reloadTime>
+				<reloadTime>8.5</reloadTime>
 				<!-- <spawnUnloaded>true</spawnUnloaded> -->
 				<ammoSet>AmmoSet_Catapult</ammoSet>
 			</li>
