@@ -37,6 +37,8 @@
 					<MaxHitPoints>220</MaxHitPoints>
 					<WorkToMake>32500</WorkToMake>
 					<Mass>8</Mass>
+					<Bulk>8</Bulk>
+					<WornBulk>3</WornBulk>
 					<Insulation_Cold>5</Insulation_Cold>
 					<Insulation_Heat>5</Insulation_Heat>
 					<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
@@ -111,6 +113,8 @@
 					<MaxHitPoints>155</MaxHitPoints>
 					<WorkToMake>18000</WorkToMake>
 					<Mass>2.5</Mass>
+					<Bulk>4</Bulk>
+					<WornBulk>1</WornBulk>
 					<Insulation_Cold>2</Insulation_Cold>
 					<Insulation_Heat>2</Insulation_Heat>
 					<StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
@@ -192,6 +196,8 @@
 					<MaxHitPoints>155</MaxHitPoints>
 					<WorkToMake>18000</WorkToMake>
 					<Mass>2.5</Mass>
+					<Bulk>4</Bulk>
+					<WornBulk>1</WornBulk>
 					<Insulation_Cold>2</Insulation_Cold>
 					<Insulation_Heat>2</Insulation_Heat>
 					<StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
@@ -274,6 +280,8 @@
 					<MaxHitPoints>155</MaxHitPoints>
 					<WorkToMake>18000</WorkToMake>
 					<Mass>2.5</Mass>
+					<Bulk>4</Bulk>
+					<WornBulk>1</WornBulk>
 					<Insulation_Cold>2</Insulation_Cold>
 					<Insulation_Heat>2</Insulation_Heat>
 					<StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
@@ -331,6 +339,53 @@
 					</defaultIngredientFilter>
 				</recipeMaker>
 			</ThingDef>
+		</value>
+	</Operation>
+
+	<!-- Spacer apparel is retained from the upstream Defs instead of receiving a generated full replacement. -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RK_Apparel_Vacsuit"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<Bulk>80</Bulk>
+				<WornBulk>12</WornBulk>
+			</statBases>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RK_Apparel_VacsuitHelmet"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<Bulk>4</Bulk>
+				<WornBulk>1</WornBulk>
+			</statBases>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RK_Apparel_VacsuitChildren"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<Bulk>40</Bulk>
+				<WornBulk>6</WornBulk>
+			</statBases>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RK_Apparel_SpaceArmor"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<Bulk>70</Bulk>
+				<WornBulk>15</WornBulk>
+			</statBases>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RK_Apparel_SpaceArmorHelmet"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<Bulk>5</Bulk>
+				<WornBulk>1</WornBulk>
+			</statBases>
 		</value>
 	</Operation>
 </Patch>
