@@ -10,6 +10,15 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofThatchHay_Buildable"]</xpath>
+    <value>
+      <costList>
+        <Hay>4</Hay>
+      </costList>
+    </value>
+  </Operation>
+
   <!--   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofShingle_Buildable"]/costStuffCount</xpath>
     <value>
