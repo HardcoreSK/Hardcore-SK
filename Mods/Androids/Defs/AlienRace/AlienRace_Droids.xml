@@ -145,7 +145,8 @@
 			<graphicPaths>
 				<body>Things/ChjDroid/Body/</body>
 				<head>
-					<!--<path>Things/ChjDroid/Head/</path>-->
+					<!-- Fallback for xenotype HeadTypeDefs not present below. -->
+					<path>Things/ChjDroid/Head/Male_Average_Normal</path>
 					<headtypeGraphics>
 						<Male_AverageNormal>Things/ChjDroid/Head/Male_Average_Normal</Male_AverageNormal>
 					</headtypeGraphics>
@@ -646,7 +647,8 @@
 			<graphicPaths>
 				<body>Things/ChjBattleDroid/Body/</body>
 				<head>
-					<!--<path>Things/ChjBattleDroid/Head</path>-->
+					<!-- Fallback for xenotype HeadTypeDefs not present below. -->
+					<path>Things/ChjBattleDroid/Head/Male_Average_Normal</path>
 					<headtypeGraphics>
 						<Male_AverageNormal>Things/ChjBattleDroid/Head/Male_Average_Normal</Male_AverageNormal>
 					</headtypeGraphics>

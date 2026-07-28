@@ -14,9 +14,9 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/graphicPaths/head/headtypeGraphics</xpath>
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/graphicPaths/head/genderGraphics/*/extendedGraphics</xpath>
 					<value>
-						<Ghoul_Wide>Things/Pawn/Ghoul/Heads/GhoulskinHead_Wide</Ghoul_Wide>
+						<HeadType For="Ghoul_Wide">Things/Pawn/Ghoul/Heads/GhoulskinHead_Wide</HeadType>
 					</value>
 				</li>
 			</operations>

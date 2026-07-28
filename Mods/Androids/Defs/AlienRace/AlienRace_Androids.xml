@@ -248,7 +248,8 @@
 			</generalSettings>
 			<graphicPaths>
 				<head>
-					<path>Things/Android/Head/</path>
+					<!-- Fallback for xenotype HeadTypeDefs not present below. -->
+					<path>Things/Android/Head/Female_Average_Normal</path>
 					<headtypeGraphics>
 						<Male_AverageNormal>Things/Android/Head/Female_Average_Normal</Male_AverageNormal>
 						<Female_AverageNormal>Things/Android/Head/Female_Average_Normal</Female_AverageNormal>

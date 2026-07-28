@@ -129,10 +129,12 @@
 			<graphicPaths>
 				<head>
 					<path>Things/Pawn/Humanlike/Asari/Head/Female_Average_Normal</path>
-					<headtypeGraphics>
-						<Male_AverageNormal>Things/Pawn/Humanlike/Asari/Head/Male_Average_Normal</Male_AverageNormal>
-						<Female_AverageNormal>Things/Pawn/Humanlike/Asari/Head/Female_Average_Normal</Female_AverageNormal>
-					</headtypeGraphics>
+					<!-- Always keep an Asari head when xenotype genes replace headType. -->
+					<genderGraphics>
+						<None>Things/Pawn/Humanlike/Asari/Head/Female_Average_Normal</None>
+						<Male>Things/Pawn/Humanlike/Asari/Head/Male_Average_Normal</Male>
+						<Female>Things/Pawn/Humanlike/Asari/Head/Female_Average_Normal</Female>
+					</genderGraphics>
 				</head>
 				<body>
 					<path>Things/Pawn/Humanlike/Asari/Body/Naked_Female</path>
