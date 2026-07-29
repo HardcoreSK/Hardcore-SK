@@ -37,6 +37,42 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Darktorch"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/Misc/Darktorch</uiIconPath>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Darktorch"]/comps/li[@Class="CompProperties_DarklightOverlay"]</xpath>
+				<value>
+					<li Class="SK.CompProperties_FireOverlayMod">
+					  <texPath>Things/Special/Darklight</texPath>
+					  <fireSize>0.5</fireSize>
+					  <offset>(0.4,0.0,-0.02)</offset>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DarktorchFungus"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/Misc/FungusDarktorch/FungusDarkTorch_MenuIcon</uiIconPath>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DarktorchFungus"]/comps/li[@Class="CompProperties_DarklightOverlay"]</xpath>
+				<value>
+					<li Class="SK.CompProperties_FireOverlayMod">
+					  <texPath>Things/Special/Darklight</texPath>
+					  <fireSize>0.6</fireSize>
+					  <offset>(0.4,0.0,-0.05)</offset>
+					</li>
+				</value>
+			</li>
+
 			<!-- Ideogram patches -->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Ideogram"]/costList</xpath>

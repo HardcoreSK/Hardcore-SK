@@ -37,7 +37,7 @@
     </Operation>
 
     <Operation Class="SK.PatchOperationReplaceExtended">
-        <xpath>Defs/RecipeDef[defName="MakeFishingBait"]</xpath>
+        <xpath>Defs/RecipeDef[defName="MakeFishingBait" or defName="ProcessSmallFish"]</xpath>
         <value>
             <researchPrerequisite>Fishing</researchPrerequisite>
         </value>

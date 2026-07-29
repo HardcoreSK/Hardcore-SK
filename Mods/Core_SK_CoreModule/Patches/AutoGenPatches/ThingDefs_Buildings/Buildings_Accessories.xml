@@ -157,14 +157,16 @@
         <texPath>Things/Building/Furniture/Lights/torch</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <drawRotated>false</drawRotated>
+		<drawOffset>(0,0,0.3)</drawOffset>
         <shadowData>
-          <volume>(0.2, 0.3, 0.2)</volume>
-          <offset>(0,0,0)</offset>
+          <volume>(0.1, 0.15, 0.1)</volume>
+          <offset>(0,0,-0.35)</offset>
         </shadowData>
         <damageData>
           <rect>(0.35,0.35,0.3,0.3)</rect>
         </damageData>
       </graphicData>
+	  <uiIconPath>Things/Building/Furniture/Lights/torch</uiIconPath>
       <rotatable>false</rotatable>
       <pathCost>8</pathCost>
       <tickerType>Normal</tickerType>
@@ -210,8 +212,8 @@
           <heatPushMaxTemperature>23</heatPushMaxTemperature>
         </li>
         <li Class="SK.CompProperties_FireOverlayMod">
-          <fireSize>0.3</fireSize>
-          <offset>(0.55,0.0,0.0)</offset>
+          <fireSize>0.4</fireSize>
+          <offset>(0.46,0.0,0.0)</offset>
         </li>
         <li Class="CompProperties_MeditationFocus">
           <statDef>MeditationFocusStrength</statDef>
