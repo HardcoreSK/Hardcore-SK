@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="SK_WorkTable">
+	<!-- <ThingDef ParentName="SK_WorkTable">
 		<defName>HandMendingWorkbench</defName>
 		<label>hand mending workbench</label>
 		<description>A workbench equipped with all the tools required to mend and repair damaged medieval apparel, armor and weapons. Keep it stocked with mending kits.</description>
@@ -74,7 +74,7 @@
 			<li>Repair_table_B1</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-	</ThingDef>
+	</ThingDef> -->
 	<!--
 	<ThingDef ParentName="SK_WorkTableFueled">
 		<defName>TableMendingClothing</defName>
@@ -155,7 +155,7 @@
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
 	-->
-	<RecipeDef ParentName="MendingBase">
+	<!-- <RecipeDef ParentName="MendingBase">
 		<defName>MendTextileApparel</defName>
 		<label>mend textile apparel</label>
 		<description>Mend pre-modern apparel made of textiles.</description>
@@ -217,9 +217,9 @@
 		<recipeUsers>
 			<li>HandMendingWorkbench</li>
 		</recipeUsers>
-	</RecipeDef>
+	</RecipeDef> -->
 
-	<RecipeDef ParentName="MendingBase">
+<!-- 	<RecipeDef ParentName="MendingBase">
 		<defName>MendRepairArmor</defName>
 		<label>repair armor/weapons</label>
 		<description>Repair low-tech armor and melee weapons.</description>
@@ -294,6 +294,6 @@
 			<li>HandMendingWorkbench</li>
 		</recipeUsers>
 
-	</RecipeDef>
+	</RecipeDef> -->
 
 </Defs>
