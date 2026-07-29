@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="CookMealSpecialBase_SK">
+		<defName>ProcessSmallFish</defName>
+		<label>process small fish</label>
+		<description>Cut up the smaller fish, filleting the meat from the bone</description>
+		<jobString>filleting small fish.</jobString>
+		<workAmount>400</workAmount>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Fish</li>
+					</categories>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Fish</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<Meat_ThingDefFishSduiggles>30</Meat_ThingDefFishSduiggles>
+		</products>
+		<skillRequirements>
+			<Cooking>2</Cooking>
+		</skillRequirements>
+		<recipeUsers>
+			<li>TableButcher</li>
+			<li>ButcherSpot</li>
+			<li>TableKitchen</li>
+		</recipeUsers>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>BasicGravtech</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>
