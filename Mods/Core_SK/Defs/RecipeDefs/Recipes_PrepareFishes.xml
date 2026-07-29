@@ -15,49 +15,37 @@
     <ingredients>
       <li>
         <filter>
-		  <thingDefs>
-			<li>Corpse_ThingDefFishSduiggles</li>
-			<li>Corpse_ThingDefFishSeasnake</li>
-			<li>Corpse_ThingDefFishMashgon</li>
-			<li>Corpse_ThingDefFishBlueblade</li>
-			<li>Corpse_ThingDefFishTailteeth</li>
-			<li>Corpse_ThingDefCuda</li>
-			<li>Corpse_ThingDefIceFlounder</li>
-			<li>Corpse_ThingDefFishSterlingPerch</li>
-			<li>Corpse_ThingDefFishPinstripeBass</li>
-		  </thingDefs>
+		  <categories>
+			<li>CorpsesFish</li>
+			<li>Fish</li>
+		  </categories>
         </filter>
-        <count>1</count>
+        <count>2</count>
       </li>
     </ingredients>
     <products>
       <MealFine>1</MealFine>
     </products>
     <fixedIngredientFilter>
-      <thingDefs>
-        <li>Corpse_ThingDefFishSduiggles</li>
-		<li>Corpse_ThingDefFishSeasnake</li>
-		<li>Corpse_ThingDefFishMashgon</li>
-		<li>Corpse_ThingDefFishBlueblade</li>
-        <li>Corpse_ThingDefFishTailteeth</li>
-		<li>Corpse_ThingDefCuda</li>
-		<li>Corpse_ThingDefIceFlounder</li>
-		<li>Corpse_ThingDefFishSterlingPerch</li>
-		<li>Corpse_ThingDefFishPinstripeBass</li>
-      </thingDefs>
-      <specialFiltersToDisallow>
-        <li>AllowRotten</li>
-      </specialFiltersToDisallow>
+		<categories>
+			<li>CorpsesFish</li>
+			<li>Fish</li>
+		</categories>
+		<specialFiltersToDisallow>
+			<li>AllowRotten</li>
+		</specialFiltersToDisallow>
     </fixedIngredientFilter>
     <recipeUsers>
       <li>Campfire</li>
       <li>TableGrill</li>
       <li>FueledStove</li>
-			<li>ElectricStove</li>
+      <li>ElectricStove</li>
     </recipeUsers>
     <workSkill>Cooking</workSkill>
 	<requiredGiverWorkType>Cooking</requiredGiverWorkType>
 	<researchPrerequisite>Food_00</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
   </RecipeDef>
 
   <RecipeDef>
@@ -73,46 +61,34 @@
     <ingredients>
       <li>
         <filter>
-		  <thingDefs>
-			<li>Corpse_ThingDefFishSduiggles</li>
-			<li>Corpse_ThingDefFishSeasnake</li>
-			<li>Corpse_ThingDefFishMashgon</li>
-			<li>Corpse_ThingDefFishBlueblade</li>
-			<li>Corpse_ThingDefFishTailteeth</li>
-			<li>Corpse_ThingDefCuda</li>
-			<li>Corpse_ThingDefIceFlounder</li>
-			<li>Corpse_ThingDefFishSterlingPerch</li>
-			<li>Corpse_ThingDefFishPinstripeBass</li>
-		  </thingDefs>
+		  <categories>
+			<li>CorpsesFish</li>
+			<li>Fish</li>
+		  </categories>
         </filter>
-        <count>4</count>
+        <count>8</count>
       </li>
     </ingredients>
     <products>
       <MealFine>4</MealFine>
     </products>
     <fixedIngredientFilter>
-      <thingDefs>
-        <li>Corpse_ThingDefFishSduiggles</li>
-		<li>Corpse_ThingDefFishSeasnake</li>
-		<li>Corpse_ThingDefFishMashgon</li>
-		<li>Corpse_ThingDefFishBlueblade</li>
-        <li>Corpse_ThingDefFishTailteeth</li>
-		<li>Corpse_ThingDefCuda</li>
-		<li>Corpse_ThingDefIceFlounder</li>
-		<li>Corpse_ThingDefFishSterlingPerch</li>
-		<li>Corpse_ThingDefFishPinstripeBass</li>
-      </thingDefs>
-      <specialFiltersToDisallow>
-        <li>AllowRotten</li>
-      </specialFiltersToDisallow>
+	  <categories>
+		<li>CorpsesFish</li>
+		<li>Fish</li>
+	  </categories>
+	  <specialFiltersToDisallow>
+		<li>AllowRotten</li>
+	  </specialFiltersToDisallow>
     </fixedIngredientFilter>
     <recipeUsers>
-			<li>ElectricStove_Pro</li>
+		<li>ElectricStove_Pro</li>
     </recipeUsers>
     <workSkill>Cooking</workSkill>
 	<requiredGiverWorkType>Cooking</requiredGiverWorkType>
 	<researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
   </RecipeDef>
 
 </Defs>
