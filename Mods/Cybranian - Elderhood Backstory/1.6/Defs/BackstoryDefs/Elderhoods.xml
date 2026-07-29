@@ -48,6 +48,17 @@
 	</BackstoryDef>
 	<!---->
 	<BackstoryDef ParentName="ElderhoodBackstory">
+		<!-- Only for CreepJoiners -->
+		<defName>Elderhood_Unknown</defName>
+		<title>unknown</title>
+		<titleShort>unknown</titleShort>
+		<description>[PAWN_nameDef]'s origins are unknown.</description>
+		<spawnCategories Inherit="false">
+			<li>SpecialElderhood</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef ParentName="ElderhoodBackstory">
 		<defName>Elderhood_WiseOldMan</defName>
 		<title>Wise old man</title>
 		<titleFemale>Wise old woman</titleFemale>

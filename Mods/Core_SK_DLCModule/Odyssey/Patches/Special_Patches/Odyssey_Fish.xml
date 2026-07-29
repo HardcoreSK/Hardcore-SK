@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingCategoryDef[defName="Fish"]</xpath>
+		<value>
+			<label>small fish</label>
+			<parent>Corpses</parent>
+		</value>
+	</Operation>
+	
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/WorkGiverDef[defName="WorkGiver_FishAtFishingPier"]</xpath>
+		<value>
+			<workType>Fishing</workType>
+		</value>
+	</Operation>
+	
+</Patch>

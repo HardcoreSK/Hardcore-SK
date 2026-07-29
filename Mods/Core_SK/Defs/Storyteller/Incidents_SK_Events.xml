@@ -176,11 +176,7 @@
 		<workerClass>SK.Events.IncidentWorker_MakeGameConditionCC</workerClass>
 		<gameCondition>IceAge</gameCondition>
 		<letterLabel>Ice Age</letterLabel>
-		<letterText>Atmospheric composition of the planet drastically changed resulting in a significant drop in temperature.
-
-Flora and Fauna is suffering from these changes as biomes shift into their colder counterparts. Resources become scarce, forcing factions into conflict.
-
-It will last anywhere between a season to several years. (Visual changes will only appear upon saving/reloading the current save)</letterText>
+		<letterText>Atmospheric composition of the planet drastically changed resulting in a significant drop in temperature.\n\nFlora and Fauna is suffering from these changes as biomes shift into their colder counterparts. Resources become scarce, forcing factions into conflict.\n\nIt will last anywhere between a season to several years. (Visual changes will only appear upon saving/reloading the current save)</letterText>
 		<letterDef>PurpleEvent</letterDef>
 		<baseChance>0.04</baseChance>
 		<earliestDay>260</earliestDay>
@@ -204,11 +200,7 @@ It will last anywhere between a season to several years. (Visual changes will on
 		<workerClass>SK.Events.IncidentWorker_MakeGameConditionCC</workerClass>
 		<gameCondition>GlobalWarming</gameCondition>
 		<letterLabel>Global Warming</letterLabel>
-		<letterText>Global temperatures have suddenly risen to dangerous levels.
-
-Flora and Fauna is suffering from these changes as biomes shift into their warmer counterparts. Resources become scarce, forcing factions into conflict.
-
-It will last anywhere between a season to several years. (Visual changes will only appear upon saving/reloading the current save)</letterText>
+		<letterText>Global temperatures have suddenly risen to dangerous levels.\n\nFlora and Fauna is suffering from these changes as biomes shift into their warmer counterparts. Resources become scarce, forcing factions into conflict.\n\nIt will last anywhere between a season to several years. (Visual changes will only appear upon saving/reloading the current save)</letterText>
 		<letterDef>PurpleEvent</letterDef>
 		<baseChance>0.05</baseChance>
 		<earliestDay>260</earliestDay>
@@ -232,9 +224,7 @@ It will last anywhere between a season to several years. (Visual changes will on
 		<workerClass>SK.Events.IncidentWorker_MakeGameConditionCC</workerClass>
 		<gameCondition>PsychicRain</gameCondition>
 		<letterLabel>Psychic Rain</letterLabel>
-		<letterText>A dangerous psychic entity caused disturbance on subatomic levels, resonating across all particles of the atmosphere.
-
-A seemingly endless supernatural rain has begun, altering the very composition of time. Any person or creature not under the roof will age significantly faster.</letterText>
+		<letterText>A dangerous psychic entity caused disturbance on subatomic levels, resonating across all particles of the atmosphere.\n\nA seemingly endless supernatural rain has begun, altering the very composition of time. Any person or creature not under the roof will age significantly faster.</letterText>
 		<letterDef>PurpleEvent</letterDef>
 		<baseChance>0.15</baseChance>
 		<earliestDay>60</earliestDay>
@@ -266,11 +256,7 @@ A seemingly endless supernatural rain has begun, altering the very composition o
 		<workerClass>SK.Events.IncidentWorker_MakeGameConditionCC</workerClass>
 		<gameCondition>LongNight</gameCondition>
 		<letterLabel>Long Night</letterLabel>
-		<letterText>A space entity of unimaginable size has covered a local star, resulting in a long lasting eclipse.
-
-Terrified of this supernatural phenomenon, other factions will use this time to wage war and conflict across the surface.
-
-It will last anywhere between a season to several years.</letterText>
+		<letterText>A space entity of unimaginable size has covered a local star, resulting in a long lasting eclipse.\n\nTerrified of this supernatural phenomenon, other factions will use this time to wage war and conflict across the surface.\n\nIt will last anywhere between a season to several years.</letterText>
 		<letterDef>PurpleEvent</letterDef>
 		<baseChance>0.07</baseChance>
 		<earliestDay>180</earliestDay>
@@ -375,7 +361,7 @@ It will last anywhere between a season to several years.</letterText>
 
 	<IncidentDef>
 		<defName>AcidicSoil</defName>
-		<label>Acidic Soil</label>
+		<label>acidic soil</label>
 		<category>Misc</category>
 		<targetTags>
 			<li>Map_PlayerHome</li>
@@ -383,11 +369,7 @@ It will last anywhere between a season to several years.</letterText>
 		<workerClass>SK.Events.IncidentWorker_MakeGameConditionCC</workerClass>
 		<gameCondition>AcidicSoil</gameCondition>
 		<letterLabel>Acidic Soil</letterLabel>
-		<letterText>An unusual acidity has appeared in the soil.
-
-Acidic soil is devastating for plant life and will quickly destroy all the crops not planted in the hydroponics. Be sure to quickly harvest any plants you can.
-
-Many things can cause this, excess rainfall, decay of organic matter, the use of certain fertilizers, or the harvest of crops.</letterText>
+		<letterText>An unusual acidity has appeared in the soil.\n\nAcidic soil is devastating for plant life and will quickly destroy all the crops not planted in the hydroponics. Be sure to quickly harvest any plants you can.\n\nMany things can cause this, excess rainfall, decay of organic matter, the use of certain fertilizers, or the harvest of crops.</letterText>
 		<letterDef>PurpleEvent</letterDef>
 		<baseChance>0.6</baseChance>
 		<minRefireDays>50</minRefireDays>
