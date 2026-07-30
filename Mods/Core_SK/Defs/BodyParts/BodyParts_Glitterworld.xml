@@ -27,17 +27,13 @@
 		</thingSetMakerTags>
 	</ThingDef>
 
-	<RecipeDef Name="SK_SurgeryInstallGlitterworldImplantBase" ParentName="SK_SurgeryInstallImplantBase" Abstract="True">
+	<RecipeDef Name="SK_SurgeryInstallGlitterworldImplantBase" ParentName="SK.SurgeryInstallImplantBaseDummy" Abstract="True">
 		<deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
 		<workerClass>Recipe_InstallImplant</workerClass>
 		<workAmount>2500</workAmount>
 		<skillRequirements>
 			<Medicine>8</Medicine>
 		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-			<li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
-		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>

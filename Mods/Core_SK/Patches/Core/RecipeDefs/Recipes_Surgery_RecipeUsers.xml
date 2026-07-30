@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/RecipeDef[@Name="SurgeryInstallImplantBase"]</xpath>
+		<value>
+			<surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
+			<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+			<recipeUsers Merge="True">
+				<li>Alien_Nova</li>
+				<li>Alien_Dova</li>
+				<li>Norbal</li>
+				<li>Alien_Orassan</li>
+				<li MayRequire="Solaris.RatkinRaceMod">Ratkin</li>
+			</recipeUsers>
+		</value>
+	</Operation>
+
+</Patch>

@@ -78,6 +78,8 @@
 			<ThingDef Name="SK.BodyPartBase_CyberneticDummy" ParentName="BodyPartBase_Cybernetic" Abstract="True" />
             <ThingDef Name="SK.BodyPartBase_SyntheticDummy" ParentName="BodyPartBase_Synthetic" Abstract="True"/>
 			<ThingDef Name="SK.BodyPartBaseDummy" ParentName="BodyPartBase" Abstract="True" />
+			<RecipeDef Name="SK.SurgeryInstallImplantBaseDummy" ParentName="SurgeryInstallImplantBase" Abstract="True" />
+			<RecipeDef Name="SK.SurgeryInstallBodyPartArtificialBaseDummy" ParentName="SurgeryInstallBodyPartArtificialBase" Abstract="True" />
 
             <!--Guns and Melee-->
 			<ThingDef Name="SK.SK_BaseGunDummy" ParentName="SK_BaseGun" Abstract="True" />
