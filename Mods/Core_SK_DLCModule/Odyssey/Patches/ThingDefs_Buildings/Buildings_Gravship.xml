@@ -316,32 +316,62 @@
     </Operation>
     
     <!--Fuel-->
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Chemfuel"]</xpath>
+        <value>
+            <li Class="SK.GravshipFuelExtension">
+                <efficiency>0.5</efficiency>
+                <failureChanceFactor>1.5</failureChanceFactor>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="OxidizedChemfuel"]</xpath>
+        <value>
+            <li Class="SK.GravshipFuelExtension">
+                <efficiency>1</efficiency>
+                <failureChanceFactor>0.5</failureChanceFactor>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="ChemfuelTank" or defName="LargeChemfuelTank"]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+        <attribute>Class</attribute>
+        <value>SK.CompProperties_RefuelableChangable</value>
+    </Operation>
     
     <Operation Class="SK.PatchOperationReplaceExtended">
-        <xpath>Defs/ThingDef[defName="ChemfuelTank"]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+        <xpath>Defs/ThingDef[defName="ChemfuelTank"]/comps/li[@Class="SK.CompProperties_RefuelableChangable"]</xpath>
         <value>
             <fuelCapacity>300</fuelCapacity>
             <initialConfigurableTargetFuelLevel>300</initialConfigurableTargetFuelLevel>
             <fuelFilter DeepReplace="True">
                 <thingDefs>
+                    <li>Chemfuel</li>
                     <li>OxidizedChemfuel</li>
                 </thingDefs>
             </fuelFilter>
-            <fuelLabel>Oxidized Chemfuel</fuelLabel>
-            <fuelGizmoLabel>Oxidized Chemfuel</fuelGizmoLabel>
+            <fuelLabel>Fuel</fuelLabel>
+            <fuelGizmoLabel>Fuel</fuelGizmoLabel>
+            <canEjectFuel>false</canEjectFuel>
         </value>
     </Operation>
 
     <Operation Class="SK.PatchOperationReplaceExtended">
-        <xpath>Defs/ThingDef[defName="LargeChemfuelTank"]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+        <xpath>Defs/ThingDef[defName="LargeChemfuelTank"]/comps/li[@Class="SK.CompProperties_RefuelableChangable"]</xpath>
         <value>
             <fuelFilter DeepReplace="True">
                 <thingDefs>
+                    <li>Chemfuel</li>
                     <li>OxidizedChemfuel</li>
                 </thingDefs>
             </fuelFilter>
-            <fuelLabel>Oxidized Chemfuel</fuelLabel>
-            <fuelGizmoLabel>Oxidized Chemfuel</fuelGizmoLabel>
+            <fuelLabel>Fuel</fuelLabel>
+            <fuelGizmoLabel>Fuel</fuelGizmoLabel>
+            <canEjectFuel>false</canEjectFuel>
         </value>
     </Operation>
 </Patch>
