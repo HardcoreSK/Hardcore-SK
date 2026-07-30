@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+		<!-- Remove fixed market value so it follow the materials used-->
+		<Operation Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef[@Name="RK_WeaponAttr_UltratechBase"]/statBases/MarketValue</xpath>
+		</Operation>
+
+</Patch>
