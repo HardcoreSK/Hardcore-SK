@@ -45,6 +45,9 @@
 			<soundInteract>Standard_Drop</soundInteract>
 			<soundDrop>Standard_Drop</soundDrop>
 			<tickerType>Rare</tickerType>
+			<!-- Remove Vanilla Recipe -->
+			<costList IsNull="True"/>
+			<recipeMaker IsNull="True"/>
 			<statBases Merge="True">
 				<MaxHitPoints>60</MaxHitPoints>
 				<MarketValue>35</MarketValue>
