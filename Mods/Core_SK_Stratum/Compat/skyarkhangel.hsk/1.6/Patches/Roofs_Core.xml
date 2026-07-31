@@ -5,7 +5,7 @@
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofThatch_Buildable"]</xpath>
     <value>
       <costList>
-        <Hay>2</Hay>
+        <Hay>1</Hay>
       </costList>
     </value>
   </Operation>
@@ -14,7 +14,7 @@
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofThatchHay_Buildable"]</xpath>
     <value>
       <costList>
-        <Hay>4</Hay>
+        <Hay>2</Hay>
       </costList>
     </value>
   </Operation>
@@ -45,10 +45,14 @@
   </Operation>
 
   <!-- HSK clay bricks use the Bricks stuff category rather than Stony. -->
-  <Operation Class="PatchOperationAdd">
+  <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofShingle_Buildable"]/stuffCategories</xpath>
     <value>
-      <li>Bricks</li>
+		<stuffCategories>
+		  <li>Woody</li>
+		  <li>Stony</li>
+		  <li>Bricks</li>
+		</stuffCategories>
     </value>
   </Operation>
 

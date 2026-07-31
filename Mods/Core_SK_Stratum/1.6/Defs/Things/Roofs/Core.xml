@@ -35,6 +35,9 @@
         <isAirtight>false</isAirtight>
         <allowHangingAttachments>false</allowHangingAttachments>
         <allowRooftopAttachments>false</allowRooftopAttachments>
+		<sustainerSound>Harvest_Standard</sustainerSound>
+		<finishSound>Harvest_Standard_Finish</finishSound>
+		<workEffect>ConstructWood</workEffect>
       </li>
       <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
         <Name>Primitive Thatch Roof</Name>
@@ -89,6 +92,9 @@
         <isAirtight>false</isAirtight>
         <allowHangingAttachments>false</allowHangingAttachments>
         <allowRooftopAttachments>false</allowRooftopAttachments>
+		<sustainerSound>Harvest_Standard</sustainerSound>
+		<finishSound>Harvest_Standard_Finish</finishSound>
+		<workEffect>ConstructWood</workEffect>
       </li>
       <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
         <Name>Hay Thatch Roof</Name>
