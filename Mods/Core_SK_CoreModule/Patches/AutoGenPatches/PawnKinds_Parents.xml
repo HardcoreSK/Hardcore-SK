@@ -15,7 +15,7 @@
 		<xpath>Defs/PawnKindDef[defName="Fox_Fennec" or defName="Fox_Red" or defName="Fox_Arctic" ]</xpath>
 		<attribute>ParentName</attribute>
 		<value>SK.SK_AnimalFoxKindBaseDummy</value>
-	</Operation>
+	</Operation><!--
 	<Operation Class="PatchOperationAttributeSet">
 		<xpath>Defs/PawnKindDef[defName="Ostrich" or defName="Emu" or defName="Cassowary" or defName="Turkey" ]</xpath>
 		<attribute>ParentName</attribute>
@@ -25,7 +25,7 @@
 		<xpath>Defs/PawnKindDef[defName="Cougar" or defName="Panther" ]</xpath>
 		<attribute>ParentName</attribute>
 		<value>SK.SK_BigCatKindBaseDummy</value>
-	</Operation>
+	</Operation>-->
 	<Operation Class="PatchOperationAttributeSet">
 		<xpath>Defs/PawnKindDef[defName="SpaceRefugee" ]</xpath>
 		<attribute>ParentName</attribute>

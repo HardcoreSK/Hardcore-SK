@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="AnimalThingBase" Name="SK_BigBirdThingBase" Abstract="True">
+<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase" Name="BigBirdThingBase" Abstract="True">
 		<devNote>chicken-1</devNote>
 		<race>
 			<body>Bird</body>
@@ -36,16 +37,16 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="AnimalKindBase" Name="SK_BigBirdKindBase" Abstract="True">
+	<PawnKindDef ParentName="AnimalKindBase" Name="BigBirdKindBase" Abstract="True">
 		<combatPower>70</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.38</ecoSystemWeight>
 	</PawnKindDef>
-
+-->
 
 	<!--===============================================-->
-
-	<ThingDef ParentName="SK_BigBirdThingBase">
+<!-- DefOverwrite
+	<ThingDef ParentName="BigBirdThingBase">
 		<defName>Ostrich</defName>
 		<label>ostrich</label>
 		<description>The largest unmodified bird species, ostriches are known for their fast run, huge eggs, and powerful kick.</description>
@@ -137,8 +138,8 @@
 			<li>AnimalUncommon</li>
 		</tradeTags>
 	</ThingDef>
-
-<!-- 	<PawnKindDef ParentName="SK_BigBirdKindBase">
+-->
+<!-- 	<PawnKindDef ParentName="BigBirdKindBase">
 		<defName>Ostrich</defName>
 		<label>ostrich</label>
 		<labelPlural>ostriches</labelPlural>
@@ -202,8 +203,8 @@
 	</PawnKindDef>
  -->
 	<!--===============================================-->
-
-	<ThingDef ParentName="SK_BigBirdThingBase">
+<!-- DefOverwrite
+	<ThingDef ParentName="BigBirdThingBase">
 		<defName>Emu</defName>
 		<label>emu</label>
 		<description>A large flightless bird with beady eyes on its ugly face. With its bad attitude, it is the jerk of the natural world.</description>
@@ -305,8 +306,8 @@
 			<li>AnimalUncommon</li>
 		</tradeTags>
 	</ThingDef>
-
-<!-- 	<PawnKindDef ParentName="SK_BigBirdKindBase">
+-->
+<!-- 	<PawnKindDef ParentName="BigBirdKindBase">
 		<defName>Emu</defName>
 		<label>emu</label>
 		<race>Emu</race>
@@ -353,8 +354,8 @@
 	</PawnKindDef>
  -->
 	<!--===============================================-->
-
-	<ThingDef ParentName="SK_BigBirdThingBase">
+<!-- DefOverwrite
+	<ThingDef ParentName="BigBirdThingBase">
 		<defName>Cassowary</defName>
 		<label>cassowary</label>
 		<description>A large flightless bird with brightly-colored feathers. While it looks beautiful, its kick is vicious. It's known for being quick to aggression when harmed by violence or confronted by incompetent animal tamers.</description>
@@ -447,8 +448,8 @@
 			<li>AnimalUncommon</li>
 		</tradeTags>
 	</ThingDef>
-
-<!-- 	<PawnKindDef ParentName="SK_BigBirdKindBase">
+-->
+<!-- 	<PawnKindDef ParentName="BigBirdKindBase">
 		<defName>Cassowary</defName>
 		<label>cassowary</label>
 		<labelPlural>cassowaries</labelPlural>

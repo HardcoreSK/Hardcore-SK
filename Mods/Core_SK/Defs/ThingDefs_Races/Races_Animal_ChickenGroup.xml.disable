@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- ======================= Chicken =============================== -->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Chicken</defName>
 		<label>chicken</label>
@@ -121,7 +121,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
+-->
 <!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Chicken</defName>
 		<label>chicken</label>
@@ -201,7 +201,7 @@
  -->
 
 	<!-- ======================= Duck =============================== -->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Duck</defName>
 		<label>duck</label>
@@ -314,7 +314,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
+-->
 <!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Duck</defName>
 		<label>duck</label>
@@ -379,8 +379,8 @@
  -->
 
 	<!--===============================================-->
-
-	<ThingDef ParentName="SK_BigBirdThingBase">
+<!-- DefOverwrite
+	<ThingDef ParentName="BigBirdThingBase">
 		<defName>Turkey</defName>
 		<label>turkey</label>
 		<devNote>chicken-1</devNote>
@@ -460,7 +460,7 @@
 			<li>AnimalFarm</li>
 		</tradeTags>
 	</ThingDef>
-
+-->
 <!-- 	<PawnKindDef ParentName="SK_BigBirdKindBase">
 		<defName>Turkey</defName>
 		<label>turkey</label>
@@ -520,7 +520,7 @@
 		</lifeStages>
 	</PawnKindDef>
  -->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Goose</defName>
 		<label>goose</label>
@@ -642,7 +642,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
+-->
 
 	<!-- ======================= Goose =============================== -->
 
