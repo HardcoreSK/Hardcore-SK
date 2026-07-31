@@ -266,7 +266,9 @@
 					</headtypeGraphics>
 				</head>
 				<body>
-					<path>Things/Android/</path>
+					<!-- Safe fallback when genes or temporary pawn generation provide
+					     a body type that has no matching branch below. -->
+					<path>Things/Android/Naked_Thin</path>
 					<bodytypeGraphics>
 						<Male>Things/Android/Naked_Male</Male>
 						<Female>Things/Android/Naked_Female</Female>
