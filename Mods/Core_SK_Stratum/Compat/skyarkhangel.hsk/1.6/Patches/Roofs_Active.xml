@@ -3,12 +3,15 @@
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-ThermalRadiatorRoof_Buildable"]/costList</xpath>
     <value>
-      <costList>
-        <Steel>10</Steel>
-        <Silver>5</Silver>
-        <Mechanism>2</Mechanism>
-        <ElectronicComponents>2</ElectronicComponents>
-      </costList>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>5</costStuffCount>
+		<costList>
+			<SilverBar>5</SilverBar>
+			<Mechanism>2</Mechanism>
+			<ElectronicComponents>2</ElectronicComponents>
+		</costList>
     </value>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -23,10 +26,13 @@
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-Thermostat"]/costList</xpath>
     <value>
-      <costList>
-        <Steel>10</Steel>
-        <ElectronicComponents>2</ElectronicComponents>
-      </costList>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+		<costList>
+			<ElectronicComponents>2</ElectronicComponents>
+		</costList>
     </value>
   </Operation>
   <Operation Class="PatchOperationReplace">

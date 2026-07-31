@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Steel"]</xpath>
+    <value>
+      <label>steel alloy</label>
+      <description>Steel Alloy is a group of iron-carbon alloys with a carbon content less than 2%. A tougher metal than cast-iron that comes with a higher production cost. Steel is ferromagnetic (it can become magnetized when paired with a magnetic metal).</description>
+      <graphicData>
+        <texPath>Things/Item/Ingot</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(167,167,170)</color>
+      </graphicData>
+      <stackLimit>600</stackLimit>
+      <techLevel>Industrial</techLevel>
+      <statBases>
+        <MarketValue>3</MarketValue>
+        <StuffPower_Armor_Blunt>0.9</StuffPower_Armor_Blunt>
+        <StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp>
+        <StuffPower_Armor_Heat>0.06</StuffPower_Armor_Heat>
+        <StuffPower_Insulation_Cold>-5</StuffPower_Insulation_Cold>
+        <StuffPower_Insulation_Heat>-5</StuffPower_Insulation_Heat>
+        <SharpDamageMultiplier>1.0</SharpDamageMultiplier>
+        <BluntDamageMultiplier>1.0</BluntDamageMultiplier>
+        <DeteriorationRate>0</DeteriorationRate>
+        <Flammability>0</Flammability>
+        <Mass>0.35</Mass>
+        <Bulk>0.35</Bulk>
+      </statBases>
+      <useHitPoints>true</useHitPoints>
+      <thingCategories>
+        <li>SLDBar</li>
+      </thingCategories>
+      <stuffProps>
+        <stuffAdjective>Steel</stuffAdjective>
+        <appearance>Metal</appearance>
+        <categories>
+          <li>Metallic</li>
+          <li>StrongMetallic</li>
+          <li>RuggedMetallic</li>
+          <li>Sterile</li>
+        </categories>
+        <constructEffect>ConstructMetal</constructEffect>
+        <color>(138,133,135)</color>
+        <commonality>1.0</commonality>
+        <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+        <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+        <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+        <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+        <statFactors>
+          <MaxHitPoints>1.7</MaxHitPoints>
+          <Beauty>1.0</Beauty>
+          <Flammability>0</Flammability>
+          <WorkToMake>1.0</WorkToMake>
+          <WorkToBuild>1.0</WorkToBuild>
+          <DoorOpenSpeed>0.7</DoorOpenSpeed>
+          <MeleeWeapon_CooldownMultiplier>1.0</MeleeWeapon_CooldownMultiplier>
+          <MoveSpeed>0.8</MoveSpeed>
+          <MarketValue>0.7</MarketValue>
+          <BedRestEffectiveness>0.85</BedRestEffectiveness>
+          <ImmunityGainSpeedFactor>0.95</ImmunityGainSpeedFactor>
+          <WorkTableWorkSpeedFactor>1.0</WorkTableWorkSpeedFactor>
+          <MeleePenetrationFactor>1.0</MeleePenetrationFactor>
+          <Mass>1.1</Mass>
+        </statFactors>
+        <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+      </stuffProps>
+    </value>
+  </Operation>
+
+</Patch>

@@ -60,9 +60,11 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofGlass_Buildable"]</xpath>
     <value>
-      <costList>
-        <Glass>5</Glass>
-      </costList>
+		<stuffCategories>
+			<li>Glass</li>
+		</stuffCategories>
+		<costStuffCount>5</costStuffCount>
+      <costList/>
       <researchPrerequisites>
         <li>Construction_B3</li>
       </researchPrerequisites>
@@ -72,12 +74,15 @@
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofSolarShingles_Buildable"]/costList</xpath>
     <value>
-      <costList>
-        <Glass>5</Glass>
-        <ComponentIndustrial>2</ComponentIndustrial>
-        <Mechanism>2</Mechanism>
-        <ElectronicComponents>1</ElectronicComponents>
-      </costList>
+		<stuffCategories>
+			<li>Glass</li>
+		</stuffCategories>
+		<costStuffCount>5</costStuffCount>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Mechanism>2</Mechanism>
+			<ElectronicComponents>1</ElectronicComponents>
+		</costList>
     </value>
   </Operation>
 
