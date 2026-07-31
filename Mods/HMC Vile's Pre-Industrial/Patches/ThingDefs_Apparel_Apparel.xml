@@ -31,7 +31,7 @@
 			<generateCommonality>.95</generateCommonality>
 			<apparel Merge="True">
 				<wornGraphicPath>Things/Apparel/VilePart3_Medieval/Kirtle/Tunic_Fine</wornGraphicPath>
-				<layers>
+				<layers Merge="False">
 					<li>Middle</li>
 				</layers>
 				<tags>
@@ -85,7 +85,7 @@
 			<generateCommonality>0.9</generateCommonality>
 			<apparel Merge="True">
 				<wornGraphicPath>Things/Apparel/VilePart3_Medieval/WorkTunic/Tunic_Poor</wornGraphicPath>
-				<layers>
+				<layers Merge="False">
 					<li>Middle</li>
 				</layers>
 			</apparel>
@@ -135,12 +135,12 @@
 				<GermContainment>0.02</GermContainment>
 			</equippedStatOffsets>
 			<apparel Merge="True">
-				<bodyPartGroups>
+				<bodyPartGroups Merge="False">
 					<li>Torso</li>
 					<li>Legs</li>
 				</bodyPartGroups>
 				<wornGraphicPath>Things/Apparel/VilePart3_Medieval/BlacksmithsApron/BlacksmithsApron</wornGraphicPath>
-				<layers>
+				<layers Merge="False">
 					<li>Middle</li>
 				</layers>
 				<tags>
