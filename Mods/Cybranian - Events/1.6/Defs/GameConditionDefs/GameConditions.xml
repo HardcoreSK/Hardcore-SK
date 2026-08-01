@@ -2,33 +2,6 @@
 <Defs>
 	<!---->
 	<GameConditionDef>
-		<defName>DeathOfSun</defName>
-		<label>Death of sun</label>
-		<description>The star in your system is rapidly losing luminosity, giving off less and less heat to the planet's surface. Soon the planet will be plunged into darkness, and the temperature will become unbearable for life.\n\nThe current luminosity is about {0}.</description>
-		<conditionClass>EventsCore.GameConditions.GameCondition_DeathOfSun</conditionClass>
-		<endMessage>The star has lit up again.</endMessage>
-		<canBePermanent>true</canBePermanent>
-	</GameConditionDef>
-	<!---->
-	<GameConditionDef>
-		<defName>ClimateChange</defName>
-		<label>Climate change</label>
-		<description>The climate is changing rapidly, striving for an equilibrium value.\nThe target value since the beginning of the changes is {0}.\nCurrent climate change is {1}.\n\nThe process is currently complete at {2}.</description>
-		<conditionClass>EventsCore.GameConditions.GameCondition_ClimateChange</conditionClass>
-		<endMessage>The climate has become balanced.</endMessage>
-		<canBePermanent>true</canBePermanent>
-	</GameConditionDef>
-	<!---->
-	<GameConditionDef>
-		<defName>DeathOfDistantStar</defName>
-		<label>Death of distant star</label>
-		<description>In the sky, we see the image of the death of a distant star, which has reached us after many years, even thousands of years. It probably won't last long.</description>
-		<conditionClass>EventsCore.GameConditions.GameCondition_DeathOfDistantStar</conditionClass>
-		<endMessage>The dead star disappears from the sky.</endMessage>
-		<canBePermanent>false</canBePermanent>
-	</GameConditionDef>
-	<!---->
-	<GameConditionDef>
 		<defName>SeaAir</defName>
 		<label>Sea air</label>
 		<description>Sea air, filled with humidity and giving off sea salt, improves well-being and invigorates.</description>
