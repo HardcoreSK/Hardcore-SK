@@ -249,6 +249,8 @@
 
 	<!-- ### DriedFruit ### -->
 	<RecipeDef ParentName="GlitterpediaModExtBase" Name="Make_DriedFruitBase" Abstract="True">
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<fixedIngredientFilter>
 			<categories>
 				<li>FruitFoodRaw</li>
@@ -300,11 +302,11 @@
 						<li>FruitFoodRaw</li>
 					</categories>
 				</filter>
-				<count>5</count>
-			</li>
+				<count>3.75</count>
+			</li>	
 		</ingredients>
 		<products>
-			<driedfruit>5</driedfruit>
+			<driedfruit>25</driedfruit>
 		</products>
 	</RecipeDef>
 
@@ -319,11 +321,11 @@
 						<li>FruitFoodRaw</li>
 					</categories>
 				</filter>
-				<count>25</count>
+				<count>18.75</count>
 			</li>
 		</ingredients>
 		<products>
-			<driedfruit>25</driedfruit>
+			<driedfruit>125</driedfruit>
 		</products>
 
 		<!-- RecipeDef_UF fields -->

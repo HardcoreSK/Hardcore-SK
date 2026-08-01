@@ -220,6 +220,8 @@
 
 	<!-- ### DriedFruit ### -->
 	<RecipeDef ParentName="UFDryingIndustrialBase" Name="Make_DriedFruitIndustrialBase" Abstract="True">
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<fixedIngredientFilter>
 			<categories>
 				<li>FruitFoodRaw</li>
@@ -240,11 +242,11 @@
 						<li>FruitFoodRaw</li>
 					</categories>
 				</filter>
-				<count>5</count>
+				<count>3.75</count>
 			</li>
 		</ingredients>
 		<products>
-			<driedfruit>5</driedfruit>
+			<driedfruit>25</driedfruit>
 		</products>
 		<slotsRequired>1</slotsRequired>
 	</RecipeDef>
@@ -260,11 +262,11 @@
 						<li>FruitFoodRaw</li>
 					</categories>
 				</filter>
-				<count>25</count>
+				<count>18.75</count>
 			</li>
 		</ingredients>
 		<products>
-			<driedfruit>25</driedfruit>
+			<driedfruit>125</driedfruit>
 		</products>
 		<slotsRequired>5</slotsRequired>
 	</RecipeDef>
@@ -280,11 +282,11 @@
 						<li>FruitFoodRaw</li>
 					</categories>
 				</filter>
-				<count>50</count>
+				<count>37.5</count>
 			</li>
 		</ingredients>
 		<products>
-			<driedfruit>50</driedfruit>
+			<driedfruit>250</driedfruit>
 		</products>
 		<slotsRequired>10</slotsRequired>
 	</RecipeDef>
