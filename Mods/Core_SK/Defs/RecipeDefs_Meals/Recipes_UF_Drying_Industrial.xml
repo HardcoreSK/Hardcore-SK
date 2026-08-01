@@ -22,6 +22,18 @@
 				<li>soylentgreen</li>
 			</disallowedThingDefs>
 		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>MetalCannedMeat_raw</li>
+				<li>MetalCannedMeat_prime</li>
+				<li>Meat_Megaspider</li>
+				<li>Meat_Human</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
 		<processDays>0.5</processDays>
 	</RecipeDef>
 
