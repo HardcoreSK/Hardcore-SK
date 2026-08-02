@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+<!--
 	<ThingDef ParentName="AnimalThingBase" Name="AnimalDomesticCatBase" Abstract="True">
 		<devNote>cat</devNote>
 		<statBases>
@@ -135,7 +136,7 @@
 			<li Class="SK.DomesticCatExtension" />
 		</modExtensions>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="AnimalDomesticCatBase">
 		<defName>Cat</defName>
 		<label>common cat</label>
@@ -146,7 +147,7 @@
 			<maxPreyBodySize>0.28</maxPreyBodySize>
 		</race>
 	</ThingDef>
-
+-->
 <!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Cat</defName>
 		<label>cat</label>
