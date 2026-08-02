@@ -368,6 +368,8 @@
                             <fuelConsumptionRate>0.4</fuelConsumptionRate> <!-- 3600 * fuelConsumptionRate = liters per day -->
                             <fuelMultiplier>1</fuelMultiplier>
                             <fuelFilter/>
+							<externalTicking>true</externalTicking> <!-- handle the consuming ourslves in CompFueled -->
+							<minimumFueledThreshold>0.1</minimumFueledThreshold> <!-- Required when combined with out CompFueled, so a small amount of water can get it started -->
                         </li>
                     </value>
                 </li>
