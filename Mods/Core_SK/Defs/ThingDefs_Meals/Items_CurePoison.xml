@@ -53,7 +53,7 @@
 
 	<ThingDef ParentName="MealBeverage">
 		<defName>AntidoteSimple</defName>
-		<label>Simple antidote</label>
+		<label>primitive antidote</label>
 		<description>A simple antidote for removing poison from the body and treating poisoned arrow wounds. It has side effects when taken. Consult a specialist before use.</description>
 		<thingClass>ThingWithComps</thingClass>
 		<graphicData>
@@ -82,7 +82,7 @@
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AntidoteBasic</hediffDef>
-					<severity>1.0</severity>
+					<severity>0.8</severity>
 				</li>
 				<li Class="SK.IngestionOutcomeDoer_RemoveHediff">
 					<hediffToRemove>VenomBuildup</hediffToRemove>
@@ -104,7 +104,7 @@
 
 	<ThingDef ParentName="MealBeverage">
 		<defName>AntidoteSafe</defName>
-		<label>Safe antidote</label>
+		<label>antidote</label>
 		<description>A safe antidote for removing poison from the body and treating poisoned wounds. Has no side effects. I promise.</description>
 		<thingClass>ThingWithComps</thingClass>
 		<graphicData>
