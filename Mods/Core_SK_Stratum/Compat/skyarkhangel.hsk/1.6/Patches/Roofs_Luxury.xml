@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-LuxuryGlassPanel_Buildable"]/stuffCategories</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-LuxuryGlassPanel_Buildable"]/costStuffCount</xpath>
-  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-LuxuryGlassPanel_Buildable"]</xpath>
     <value>
@@ -19,6 +14,24 @@
 		<researchPrerequisites>
 			<li>Construction_B3</li>
 		</researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-LuxuryGlassPanel"]/modExtensions</xpath>
+    <value>
+      <li Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension">
+        <buildableDef>SolarWeb-Stratum-LuxuryGlassPanel_Buildable</buildableDef>
+        <graphicData>
+          <texPath>Roofs/StainedGlassPanels</texPath>
+          <skylightFrameWidth>0.03</skylightFrameWidth>
+          <isSeamless>true</isSeamless>
+        </graphicData>
+        <designationCategory>Structure</designationCategory>
+        <isSkylight>true</isSkylight>
+        <allowHangingAttachments>false</allowHangingAttachments>
+        <allowRooftopAttachments>false</allowRooftopAttachments>
+      </li>
     </value>
   </Operation>
 

@@ -116,6 +116,9 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RetractableRoofConsole"]</xpath>
     <value>
+		<graphicData Merge="true">
+		  <texPath>Things/Building/Misc/CanopyConsole</texPath>
+		</graphicData>
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>SolidMetallic</li>
