@@ -24,7 +24,7 @@
 		</comps>
 		<!-- ===Different graphics can be applied at empty, half full (above 0) and full (above 75%) if this mod extension exists=== -->
 		<modExtensions>
-			<!--<li Class="CombatExtended.ModExtension_AutoLoaderGraphics">
+			<li Class="CombatExtended.ModExtension_AutoLoaderGraphics">
 				<fullGraphic>
 					<texPath>Things/Building/Misc/Autoloader</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -37,12 +37,11 @@
 						<cornerBR>Damage/Corner</cornerBR>
 					</damageData>
 				</fullGraphic>
-				<halfFullGraphic />
 				<emptyGraphic>
-					<texPath>Things/Building/Misc/ToolCabinet</texPath>
+					<texPath>Things/Building/Misc/Autoloader</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(2,1)</drawSize>
-					<color>(0,0,114)</color>
+					<drawSize>(3,3)</drawSize>
+					<color>(0,0,0)</color>
 					<damageData>
 						<cornerTL>Damage/Corner</cornerTL>
 						<cornerTR>Damage/Corner</cornerTR>
@@ -50,15 +49,10 @@
 						<cornerBR>Damage/Corner</cornerBR>
 					</damageData>
 				</emptyGraphic>
-			The tag here is buildingTags under building node, Not weapon tag. See the def of KPV for example
-				<allowedTurretTags>
-					<li>CE_TurretHeavy</li>
-				</allowedTurretTags>
-			if left empty, a default machine cranking sound will play
+				<allowedTurrets />
 				<reloadingSustainer />
-			if left empty, the intereact sound of the turret gun will play
 				<reloadCompleteSound />
-			</li>-->
+			</li>
 		</modExtensions>
 		<!-- ===Generic stuffs here=== -->
 		<graphicData>
@@ -82,11 +76,12 @@
 		<pathCost>42</pathCost>
 		<size>(2,1)</size>
 		<costList>
-			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentIndustrial>10</ComponentIndustrial>
 			<Mechanism>5</Mechanism>
-			<ElectronicComponents>2</ElectronicComponents>
+			<ElectronicComponents>5</ElectronicComponents>
+			<Electronics>2</Electronics>
 		</costList>
-		<costStuffCount>50</costStuffCount>
+		<costStuffCount>75</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -110,69 +105,44 @@
     
     
 	<ThingDef ParentName="SK_AutoloaderBase">
-		<defName>Turret_Autoloader_556x45mmNATO</defName>
-		<label>auto loader (5.56x45mm)</label>
+		<defName>Turret_Autoloader_Bullets</defName>
+		<label>bullets autoloader</label>
 		<comps>
-			<li Class="CombatExtended.CompProperties_AmmoUser">
+			<li Class="CombatExtended.CompProperties_AmmoListUser">
 				<magazineSize>300</magazineSize>
-				<reloadTime>7.8</reloadTime>
+				<reloadTime>5</reloadTime>
 				<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+                <additionalAmmoSets>
+					<li>AmmoSet_762x51mmNATO</li>
+					<li>AmmoSet_50BMG</li>
+					<li>AmmoSet_145x114mm</li>
+					<li>AmmoSet_30x173mm</li>
+					<li>AmmoSet_20x102mm</li>
+					<li>AmmoSet_BlasterBolt</li>
+					<li>AmmoSet_ChargedLaser</li>
+				</additionalAmmoSets>
 			</li>
 		</comps>
-		<modExtensions>
-			<li Class="CombatExtended.ModExtension_AutoLoaderGraphics">
-				<fullGraphic>
-					<texPath>Things/Building/Misc/Autoloader</texPath>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(3,3)</drawSize>
-					<color>(0,0,0)</color>
-					<damageData>
-						<cornerTL>Damage/Corner</cornerTL>
-						<cornerTR>Damage/Corner</cornerTR>
-						<cornerBL>Damage/Corner</cornerBL>
-						<cornerBR>Damage/Corner</cornerBR>
-					</damageData>
-				</fullGraphic>
-				<allowedTurrets>
-					<li>Turret_MiniTurret</li>
-				</allowedTurrets>
-				<reloadingSustainer />
-				<reloadCompleteSound />
-			</li>
-		</modExtensions>
 	</ThingDef>
     
     <ThingDef ParentName="SK_AutoloaderBase">
-		<defName>Turret_Autoloader_145x114mm</defName>
-		<label>auto loader (14.5x114mm)</label>
+		<defName>Turret_Autoloader_Shells</defName>
+		<label>shells autoloader</label>
 		<comps>
-			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>300</magazineSize>
-				<reloadTime>7.8</reloadTime>
-				<ammoSet>AmmoSet_145x114mm</ammoSet>
+			<li Class="CombatExtended.CompProperties_AmmoListUser">
+				<magazineSize>5</magazineSize>
+				<reloadTime>5</reloadTime>
+				<ammoSet>AmmoSet_30x29mmGrenade</ammoSet>
+                <additionalAmmoSets>
+					<li>AmmoSet_SPG9Rocket</li>
+					<li>AmmoSet_81mmMortarShell</li>
+					<li>AmmoSet_90mmCannonShell</li>
+					<li>AmmoSet_120mmCannonShell</li>
+					<li>AmmoSet_130mmRocketMissile</li>
+					<li>AmmoSet_155mmHowitzerShell</li>
+				</additionalAmmoSets>
 			</li>
 		</comps>
-		<modExtensions>
-			<li Class="CombatExtended.ModExtension_AutoLoaderGraphics">
-				<fullGraphic>
-					<texPath>Things/Building/Misc/Autoloader</texPath>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(3,3)</drawSize>
-					<color>(0,0,0)</color>
-					<damageData>
-						<cornerTL>Damage/Corner</cornerTL>
-						<cornerTR>Damage/Corner</cornerTR>
-						<cornerBL>Damage/Corner</cornerBL>
-						<cornerBR>Damage/Corner</cornerBR>
-					</damageData>
-				</fullGraphic>
-				<allowedTurrets>
-					<li>Turret_Autocannon</li>
-				</allowedTurrets>
-				<reloadingSustainer />
-				<reloadCompleteSound />
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 </Defs>
