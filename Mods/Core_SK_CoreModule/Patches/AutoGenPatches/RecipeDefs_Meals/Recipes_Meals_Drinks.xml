@@ -3,9 +3,9 @@
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="PsychiteTea"]</xpath>
-    <value Merge="true">
-      <ingestible>
-        <outcomeDoers>
+    <value>
+      <ingestible Merge="true">
+        <outcomeDoers DeepReplace="True">
           <li Class="IngestionOutcomeDoer_GiveHediff">
             <hediffDef>PsychiteTeaHigh</hediffDef>
             <severity>0.75</severity>
@@ -23,7 +23,7 @@
           </li>
         </outcomeDoers>
       </ingestible>
-      <recipeMaker>
+      <recipeMaker Merge="true">
         <researchPrerequisite>Food_00</researchPrerequisite><!--
         <recipeUsers>
           <li>Campfire</li>
