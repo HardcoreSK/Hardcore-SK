@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="PowerFueled">
+		<defName>AntimatterReactorGrav</defName>
+		<label>gravship antimatter reactor</label>
+		<description>The contained antimatter is separated from ordinary matter by magnetic fields, preventing unintended reactions. The energy is then extracted in much the same way that nuclear reactors capture the heat and light energy released by fission reactions.\nSmaller version of regular antimatter reactor specifically for gravship. Very fragile. Exhaust more heat than regular version.\nMax. power output: 35,000 W.</description>
+		<thingClass>SK.Building_AntimatterReactor</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Power/AntimatterReactor/AntimatterReactor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(2.7, 1, 2.7)</volume>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>15000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-70</Beauty>
+		</statBases>
+		<rotatable>false</rotatable>
+        <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded>
+		<size>(3,3)</size>
+		<stuffCategories>
+			<li>SolidMetallic</li>
+		</stuffCategories>
+		<costStuffCount>400</costStuffCount>
+		<costList>
+			<Glass>100</Glass>
+			<ReinforcedConcrete>100</ReinforcedConcrete>
+			<MagneticMaterial>40</MagneticMaterial>
+			<AdvMechanism>12</AdvMechanism>
+			<Microchips>5</Microchips>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_Power">
+				<compClass>SK.CompPowerPlantFueled</compClass>
+				<basePowerConsumption>-35000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+				<soundAmbientProducingPower>PlasmaTurbine</soundAmbientProducingPower>
+			</li>
+			<li Class="SK.CompFueled_Properties">
+				<canAutoBurn>true</canAutoBurn>
+				<operatingTemp>10000</operatingTemp>
+				<drawfirefuel>false</drawfirefuel>
+				<throwsmoke>false</throwsmoke>
+				<fuelCapacity>50</fuelCapacity>
+				<burnFuelMultiplier>1</burnFuelMultiplier>
+				<smokeEnabled>false</smokeEnabled>
+				<fuelFilter>
+					<thingDefs>
+						<li>Antimatter</li>
+					</thingDefs>
+				</fuelFilter>
+			</li>
+			<li Class="SK.CompProperties_HeatPusherAdvanced">
+				<compClass>SK.CompHeatPusherAdvanced</compClass>
+				<heatPerSecond>60</heatPerSecond>
+				<heatPushMaxTemperature>250</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>7</glowRadius>
+				<glowColor>(255,255,0,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>6</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+			</li>
+			<li Class="CompProperties_Stunnable">
+				<useLargeEMPEffecter>true</useLargeEMPEffecter>
+				<affectedDamageDefs>
+					<li>EMP</li>
+				</affectedDamageDefs>
+			</li>
+		</comps>
+		<designationCategory>Power</designationCategory>
+		<researchPrerequisites>
+			<li>Generators_E1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>19</constructionSkillPrerequisite>
+	</ThingDef>
+
+</Defs>
