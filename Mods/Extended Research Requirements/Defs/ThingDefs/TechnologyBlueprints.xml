@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>TechnologyBlueprint_ChargedShot</defName>
+    <label>directed-energy weapons blueprint</label>
+    <description>A technical blueprint reconstructed by dismantling and studying a futuristic weapon. Applying it gives the colony enough practical knowledge to begin researching directed-energy weapons.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <graphicData>
+      <texPath>Things/Item/TechnologyBlueprint/schematic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.8,0.8)</drawSize>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <Mass>0.2</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Techprints</li>
+    </thingCategories>
+    <comps>
+      <li Class="ExtendedResearchRequirements.CompProperties_TechnologyBlueprint">
+        <applicationTicks>600</applicationTicks>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>
