@@ -7,6 +7,17 @@
         </value>
     </Operation>
     
+    <Operation Class="PatchOperationAdd">
+      <xpath>Defs/MapGeneratorDef[@Name="Base_Player"]/genSteps</xpath>
+      <value>
+        <li>ScatterAncientStargate</li>
+        <li>ScatterWoodenDebris</li>
+        <li>ScatterCairns</li>
+        <li>ScatterCrashedShipWrecks</li>
+        <li>ScatterShipWrecks</li>
+      </value>
+    </Operation>
+    
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/MapGeneratorDef[defName="Encounter"]/genSteps/li["RocksFromGrid_NoMinerals"]</xpath>
         <value>

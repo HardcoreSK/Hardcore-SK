@@ -123,4 +123,112 @@
 		<genStep Class="SK.GenStep_Algae"/>
 	</GenStepDef>
 
+  <GenStepDef>
+    <defName>ScatterAncientStargate</defName>
+    <order>1601</order>
+    <genStep Class="GenStep_ScatterThings">
+      <thingDef>AncientStargate</thingDef>
+      <stuff>AlphaPoly</stuff>
+
+      <count>1</count>
+      <onlyOnStartingMap>true</onlyOnStartingMap>
+      <allowInWaterBiome>false</allowInWaterBiome>
+      <allowRoofed>false</allowRoofed>
+      <allowFoggedPositions>false</allowFoggedPositions>
+
+      <minEdgeDistPct>0.166667</minEdgeDistPct>
+      <minDistToPlayerStartPct>0.333</minDistToPlayerStartPct>
+
+      <validators>
+        <li Class="ScattererValidator_Buildable">
+          <radius>2</radius>
+          <affordance>Heavy</affordance>
+        </li>
+        <li Class="ScattererValidator_AvoidSpecialThings"/>
+      </validators>
+    </genStep>
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>ScatterWoodenDebris</defName>
+    <order>1602</order>
+    <genStep Class="GenStep_ScatterThings">
+      <thingDef>WoodenDebris</thingDef>
+      <stuff>WoodLog</stuff>
+      <countPer10kCellsRange>2.56~3.2</countPer10kCellsRange>
+      <onlyOnStartingMap>true</onlyOnStartingMap>
+      <allowInWaterBiome>false</allowInWaterBiome>
+      <allowRoofed>false</allowRoofed>
+      <allowFoggedPositions>false</allowFoggedPositions>
+      <validators>
+        <li Class="ScattererValidator_Buildable">
+          <radius>1</radius>
+          <affordance>Light</affordance>
+        </li>
+        <li Class="ScattererValidator_AvoidSpecialThings"/>
+      </validators>
+    </genStep>
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>ScatterCairns</defName>
+    <order>1603</order>
+    <genStep Class="GenStep_ScatterThings">
+      <thingDef>Cairn</thingDef>
+      <stuff>BlocksLimestone</stuff>
+      <countPer10kCellsRange>3.2~4.48</countPer10kCellsRange>
+      <onlyOnStartingMap>true</onlyOnStartingMap>
+      <allowInWaterBiome>false</allowInWaterBiome>
+      <allowRoofed>false</allowRoofed>
+      <allowFoggedPositions>false</allowFoggedPositions>
+      <validators>
+        <li Class="ScattererValidator_Buildable">
+          <radius>1</radius>
+          <affordance>Light</affordance>
+        </li>
+        <li Class="ScattererValidator_AvoidSpecialThings"/>
+      </validators>
+    </genStep>
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>ScatterCrashedShipWrecks</defName>
+    <order>1604</order>
+    <genStep Class="GenStep_ScatterThings">
+      <thingDef>CrashedShipWreck</thingDef>
+      <countPer10kCellsRange>0.16~0.32</countPer10kCellsRange>
+      <onlyOnStartingMap>true</onlyOnStartingMap>
+      <allowInWaterBiome>false</allowInWaterBiome>
+      <allowRoofed>false</allowRoofed>
+      <allowFoggedPositions>false</allowFoggedPositions>
+      <validators>
+        <li Class="ScattererValidator_Buildable">
+          <radius>2</radius>
+          <affordance>Light</affordance>
+        </li>
+        <li Class="ScattererValidator_AvoidSpecialThings"/>
+      </validators>
+    </genStep>
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>ScatterShipWrecks</defName>
+    <order>1605</order>
+    <genStep Class="GenStep_ScatterThings">
+      <thingDef>ShipWreck</thingDef>
+      <countPer10kCellsRange>0.16~0.48</countPer10kCellsRange>
+      <onlyOnStartingMap>true</onlyOnStartingMap>
+      <allowInWaterBiome>false</allowInWaterBiome>
+      <allowRoofed>false</allowRoofed>
+      <allowFoggedPositions>false</allowFoggedPositions>
+      <validators>
+        <li Class="ScattererValidator_Buildable">
+          <radius>2</radius>
+          <affordance>Light</affordance>
+        </li>
+        <li Class="ScattererValidator_AvoidSpecialThings"/>
+      </validators>
+    </genStep>
+  </GenStepDef>
+
 </Defs>
