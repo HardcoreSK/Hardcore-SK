@@ -39,6 +39,8 @@
 		<defNames>
 			<li>Battery</li>
 			<li>FissionBattery</li>
+			<li MayRequire="Dubwise.Rimatomics">PPC</li>
+			<li MayRequire="NachoToast.RimatomicsPlusPlus">RimatomicsPlusPlus_PPHC</li>
 		</defNames>
 		<designationCategory>Power</designationCategory>
 		<debug>false</debug>
