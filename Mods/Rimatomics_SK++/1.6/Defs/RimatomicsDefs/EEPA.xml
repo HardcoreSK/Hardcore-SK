@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <Def Class="Rimatomics.RimatomicResearchDef">
+        <defName>RimatomicsPlusPlus_EEPA</defName>
+        <ResearchLabel>EEPA</ResearchLabel>
+        <UnlockStep>RimatomicsPlusPlus_EEPA3</UnlockStep>
+        <part>RimatomicsPlusPlus_EEPA</part>
+        <Upgrade>true</Upgrade>
+        <ProjTypeLabel>Punisher Upgrade</ProjTypeLabel>
+        <ResearchDesc>Electromagnetically-Enhanced Projectile Accelerators (EEPA) utilize strong electromagnets to rapidly accelerate sabots when firing, resulting in drastically increased speeds over long distances.</ResearchDesc>
+        <ResearchDescDisc>You can now produce EEPA modules at Rimatomics machining tables.\n\nTo install the module, select a Punisher and designate the EEPA for installation.</ResearchDescDisc>
+        <price>2000</price>
+        <previewImageURL>Rimatomics/Things/Resources/FluxBooster</previewImageURL>
+        <stats>
+            <li>World travel speed x500%</li>
+            <li>Removes range cap</li>
+            <li>Fire mission pulse size +30%</li>
+        </stats>
+        <Steps>
+            <li>RimatomicsPlusPlus_EEPA1</li>
+            <li>RimatomicsPlusPlus_EEPA2</li>
+            <li>RimatomicsPlusPlus_EEPA3</li>
+        </Steps>
+        <prerequisites>
+            <li>ResearchRailgun_TargetingChip</li>
+        </prerequisites>
+    </Def>
+
+    <Def Class="Rimatomics.ResearchStepDef">
+        <defName>RimatomicsPlusPlus_EEPA1</defName>
+        <PointCost>2500</PointCost>
+        <label>Research electromagnetic acceleration methods</label>
+        <description>A skilled researcher must plan a series of tests which can be performed on Punishers to collect data for analysis.</description>
+        <WorkType>Research</WorkType>
+        <SkillLevel>8</SkillLevel>
+        <requiredResearchFacilities>
+            <li>WeaponsBench</li>
+        </requiredResearchFacilities>
+        <FacilityFailures>
+            <li>Failure_FacilityBreakdown</li>
+            <li>Failure_ArcDischarge</li>
+            <li>Failure_BlindingFlash</li>
+            <li>Failure_Overvoltage</li>
+        </FacilityFailures>
+    </Def>
+
+    <Def Class="Rimatomics.ResearchStepDef">
+        <defName>RimatomicsPlusPlus_EEPA2</defName>
+        <PointCost>40</PointCost>
+        <label>Gather weapons data</label>
+        <description>Use a Punisher on any target to collect data.</description>
+        <GatherDataFor>PPCRailgun</GatherDataFor>
+    </Def>
+
+    <Def Class="Rimatomics.ResearchStepDef">
+        <defName>RimatomicsPlusPlus_EEPA3</defName>
+        <PointCost>2000</PointCost>
+        <label>Evaluate barrel modifications</label>
+        <description>Analyze the data gathered and finalize the designs for the EEPA module.</description>
+        <WorkType>Research</WorkType>
+        <SkillLevel>8</SkillLevel>
+        <requiredResearchFacilities>
+            <li>WeaponsBench</li>
+        </requiredResearchFacilities>
+        <RecipeUnlocks>
+            <li>Make_RimatomicsPlusPlus_EEPA</li>
+        </RecipeUnlocks>
+    </Def>
+</Defs>

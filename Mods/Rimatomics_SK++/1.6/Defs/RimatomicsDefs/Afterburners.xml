@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <Def Class="Rimatomics.RimatomicResearchDef">
+        <defName>RimatomicsPlusPlus_Afterburners</defName>
+        <ResearchLabel>Afterburners</ResearchLabel>
+        <UnlockStep>RimatomicsPlusPlus_Afterburners3</UnlockStep>
+        <Upgrade>true</Upgrade>
+        <ProjTypeLabel>Liberator Upgrade</ProjTypeLabel>
+        <ResearchDesc>Afterburners significantly increase the maximum speed of strategic missiles, allowing for more timely payload deliveries over long distances.\n\nThis is a passive upgrade, once research has been completed all missiles will benefit from it without any further action being needed.</ResearchDesc>
+        <ResearchDescDisc>The afterburner upgrades are now complete, all strategic missiles will have much greater world travel speeds.</ResearchDescDisc>
+        <price>2000</price>
+        <previewImageURL>Rimatomics/Things/Resources/plutoniumSeeder</previewImageURL>
+        <stats>
+            <li>World travel speed x500%</li>
+        </stats>
+        <Steps>
+            <li>RimatomicsPlusPlus_Afterburners1</li>
+            <li>RimatomicsPlusPlus_Afterburners2</li>
+            <li>RimatomicsPlusPlus_Afterburners3</li>
+        </Steps>
+        <prerequisites>
+            <li>ResearchGuidenceSystem</li>
+        </prerequisites>
+    </Def>
+
+    <Def Class="Rimatomics.ResearchStepDef">
+        <defName>RimatomicsPlusPlus_Afterburners1</defName>
+        <PointCost>2500</PointCost>
+        <label>Research construction methods</label>
+        <description>A skilled researcher must plan a series of tests which can be performed on missile fuselages to collect data for analysis.</description>
+        <WorkType>Research</WorkType>
+        <SkillLevel>8</SkillLevel>
+        <FacilityFailures>
+            <li>Failure_FacilityBreakdown</li>
+            <li>Failure_ArcDischarge</li>
+            <li>Failure_BlindingFlash</li>
+        </FacilityFailures>
+    </Def>
+
+    <Def Class="Rimatomics.ResearchStepDef">
+        <defName>RimatomicsPlusPlus_Afterburners2</defName>
+        <PointCost>30</PointCost>
+        <label>Gather weapons data</label>
+        <description>Launch a strategic missile at any target to gather data.</description>
+        <GatherDataFor>ICBMfission</GatherDataFor>
+    </Def>
+
+    <Def Class="Rimatomics.ResearchStepDef">
+        <defName>RimatomicsPlusPlus_Afterburners3</defName>
+        <PointCost>2500</PointCost>
+        <label>Finalize afterburner design</label>
+        <description>Analyze the data gathered and finalize the designs for new missile fuselages.</description>
+        <WorkType>Research</WorkType>
+        <SkillLevel>8</SkillLevel>
+        <RecipeUnlocks>
+            <li>RimatomicsPlusPlus_DummyRecipe</li>
+        </RecipeUnlocks>
+    </Def>
+</Defs>

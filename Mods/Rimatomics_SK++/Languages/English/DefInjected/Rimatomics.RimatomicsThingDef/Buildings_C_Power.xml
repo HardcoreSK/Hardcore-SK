@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <!-- "R.T.G" -> "RTG" -->
+    <RimatomicsRTG.label>RTG</RimatomicsRTG.label>
+
+    <!-- decapitalise "Type" -->
+    <ReactorCoreA.label>Reactor type A</ReactorCoreA.label>
+
+    <!-- add full stop at end -->
+    <ReactorCoreA.description>Rimatomics thermal reactor core with 21 fuel assembly capacity. A reactor core contains the fuel components where nuclear reactions take place and heat is generated.</ReactorCoreA.description>
+
+    <!-- decapitalise "Type" -->
+    <ReactorCoreB.label>Reactor type X</ReactorCoreB.label>
+
+    <!-- decapitalise "Type" -->
+    <ReactorCoreC.label>Reactor type V</ReactorCoreC.label>
+
+    <!-- decapitalise "Turbine" -->
+    <Turbine.label>Thor turbine</Turbine.label>
+
+    <!-- rewrite "The Thor has" -> "The Thor turbine has", add "kW" formatting -->
+    <Turbine.description>A turbine driven by steam which turns a generator to produce electricity. The Thor turbine has a maximum power output of 100kW.</Turbine.description>
+
+    <!-- decapitalise "Turbine" -->
+    <BigTurbine.label>Zeus turbine</BigTurbine.label>
+
+    <!-- rewrite "The Zeus has" -> "The Zeus turbine has", add "kW" formatting -->
+    <BigTurbine.description>A turbine driven by steam which turns a generator to produce electricity. The Zeus turbine has a maximum power output of 1000kW.</BigTurbine.description>
+
+    <!-- add full stop at end -->
+    <CoolingRadiator.description>Small air coolers designed to provide cooling for small nuclear reactors when resources or space is limited.\n25kW cooling capacity.</CoolingRadiator.description>
+
+    <!-- "Water Cooling" -> "water cooler", expand description -->
+    <CoolingWater.label>water cooler</CoolingWater.label>
+
+    <!-- expand description, add full stop -->
+    <CoolingWater.description>Large water coolers designed to provide substantial amounts of cooling to nuclear reactors by using cold water from rivers, lakes or oceans.\n250kW cooling capacity.</CoolingWater.description>
+
+    <!-- decapitalise "Tower" -->
+    <CoolingTower.label>Cooling tower</CoolingTower.label>
+
+    <!-- expand description, add full stop -->
+    <CoolingTower.description>Very large air coolers designed to provide substantial amounts of cooling for nuclear reactors when no natural bodies of water are available.\n250kW cooling capacity.</CoolingTower.description>
+
+    <!-- decapitalise "Voltage" -->
+    <Transformer.label>High voltage transformer</Transformer.label>
+
+    <!-- typo fix, rewrite description, add full stop -->
+    <Transformer.description>High voltage transformers designed to convert the voltage used by high voltage lines to the voltage used by power conduits.</Transformer.description>
+
+    <!-- add full stop at end -->
+    <ReactorControl.description>Computer system designed to control nuclear reactors. Send a colonist to man the station to access the controls, multiple controls can be open at the same time.</ReactorControl.description>
+
+    <!-- decapitalise "Pool" -->
+    <storagePool.label>Storage pool</storagePool.label>
+
+    <!-- add full stop at end -->
+    <storagePool.description>A storage pool for safely storing spent nuclear fuel rods, water in the pool absorbs radiation, fuel must be manually removed from the pool before it can be used.</storagePool.description>
+
+    <!-- decapitalise "Detector" -->
+    <RadiationDetector.label>Radiation detector</RadiationDetector.label>
+
+    <!-- add full stop at end -->
+    <RadiationDetector.description>Radiation detector, can be placed near reactors to detect radiation leaks.</RadiationDetector.description>
+</LanguageData>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="UpgradePart">
+        <defName>RimatomicsPlusPlus_ABOS</defName>
+        <label>ABOS</label>
+        <description>An upgrade module for Rimatomics Punishers.\n\nAdvanced Barrel Orientation Systems (ABOS) coordinate hydraulic actuators along the base of Punisher barrels, enabling usage at extreme and precise angles.\n\n&lt;color=#E5E54C&gt;Effects when installed:&lt;/color&gt;\n- Removes line of sight requirement\n- Pulse size +20%</description>
+        <descriptionHyperlinks>
+            <ThingDef>PPCRailgun</ThingDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Rimatomics/Things/Resources/upgrades</texPath>
+        </graphicData>
+        <recipeMaker>
+            <workAmount>7000</workAmount>
+            <recipeUsers>
+                <li>TableRimatomicsMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <stuffCategories>
+            <li>RuggedMetallic</li>
+        </stuffCategories>
+        <costStuffCount>35</costStuffCount>
+        <costList>
+            <MagneticMaterial>1</MagneticMaterial>
+            <AdvMechanism>5</AdvMechanism>
+            <Microchips>5</Microchips>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="UpgradePart">
+        <defName>RimatomicsPlusPlus_EEPA</defName>
+        <label>EEPA</label>
+        <description>An upgrade module for Rimatomics Punishers.\n\nElectromagnetically-Enhanced Projectile Accelerators (EEPA) utilize strong electromagnets to rapidly accelerate sabots when firing, resulting in drastically increased speeds over long distances.\n\n&lt;color=#E5E54C&gt;Effects when installed:&lt;/color&gt;\n- World travel speed x500%\n- Removes range cap\n- Fire mission pulse size +25%</description>
+        <descriptionHyperlinks>
+            <ThingDef>PPCRailgun</ThingDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Rimatomics/Things/Resources/FluxBooster</texPath>
+        </graphicData>
+        <recipeMaker>
+            <workAmount>7000</workAmount>
+            <recipeUsers>
+                <li>TableRimatomicsMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <stuffCategories>
+            <li>RuggedMetallic</li>
+        </stuffCategories>
+        <costStuffCount>35</costStuffCount>
+        <costList>
+            <MagneticMaterial>5</MagneticMaterial>
+            <AdvMechanism>3</AdvMechanism>
+            <Microchips>5</Microchips>
+        </costList>
+    </ThingDef>
+
+</Defs>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <Def Class="Rimatomics.RimatomicResearchDef">
+        <defName>RimatomicsPlusPlus_ABOS</defName>
+        <ResearchLabel>ABOS</ResearchLabel>
+        <UnlockStep>RimatomicsPlusPlus_ABOS3</UnlockStep>
+        <part>RimatomicsPlusPlus_ABOS</part>
+        <Upgrade>true</Upgrade>
+        <ProjTypeLabel>Punisher Upgrade</ProjTypeLabel>
+        <ResearchDesc>Advanced Barrel Orientation Systems (ABOS) coordinate hydraulic actuators along the base of Punisher barrels, enabling usage at extreme and precise angles.</ResearchDesc>
+        <ResearchDescDisc>You can now produce ABOS modules at Rimatomics machining tables.\n\nTo install the module, select a Punisher and designate the ABOS for installation.</ResearchDescDisc>
+        <price>6000</price>
+        <previewImageURL>Rimatomics/Things/Resources/upgrades</previewImageURL>
+        <stats>
+            <li>Removes line of sight requirement</li>
+            <li>Pulse size +20%</li>
+        </stats>
+        <Steps>
+            <li>RimatomicsPlusPlus_ABOS1</li>
+            <li>RimatomicsPlusPlus_ABOS2</li>
+            <li>RimatomicsPlusPlus_ABOS3</li>
+        </Steps>
+        <prerequisites>
+            <li>Railgun</li>
+        </prerequisites>
+    </Def>
+
+    <Def Class="Rimatomics.ResearchStepDef">
+        <defName>RimatomicsPlusPlus_ABOS1</defName>
+        <PointCost>2500</PointCost>
+        <label>Research hydraulic actuators</label>
+        <description>A skilled researcher must plan a series of tests which can be performed on Punishers to collect data for analysis.</description>
+        <WorkType>Research</WorkType>
+        <SkillLevel>8</SkillLevel>
+        <requiredResearchFacilities>
+            <li>WeaponsBench</li>
+        </requiredResearchFacilities>
+        <FacilityFailures>
+            <li>Failure_FacilityBreakdown</li>
+        </FacilityFailures>
+    </Def>
+
+    <Def Class="Rimatomics.ResearchStepDef">
+        <defName>RimatomicsPlusPlus_ABOS2</defName>
+        <PointCost>40</PointCost>
+        <label>Gather weapons data</label>
+        <description>Use a Punisher on any target to collect data.</description>
+        <GatherDataFor>PPCRailgun</GatherDataFor>
+    </Def>
+
+    <Def Class="Rimatomics.ResearchStepDef">
+        <defName>RimatomicsPlusPlus_ABOS3</defName>
+        <PointCost>2000</PointCost>
+        <label>Finalize cylinder architecture</label>
+        <description>Analyze the data gathered and finalize the designs for the ABOS module.</description>
+        <WorkType>Research</WorkType>
+        <SkillLevel>8</SkillLevel>
+        <requiredResearchFacilities>
+            <li>WeaponsBench</li>
+        </requiredResearchFacilities>
+        <RecipeUnlocks>
+            <li>Make_RimatomicsPlusPlus_ABOS</li>
+        </RecipeUnlocks>
+    </Def>
+</Defs>

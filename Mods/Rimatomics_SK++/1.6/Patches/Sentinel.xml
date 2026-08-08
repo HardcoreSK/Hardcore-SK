@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- research project needs a primary building -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/Def[defName="EnergyShields"]</xpath>
+        <value>
+            <PrimaryBuilding>RimatomicsShieldGenerator</PrimaryBuilding>
+        </value>
+    </Operation>
+
+    <!-- unnecessary attributes, shield logic is in base game now yay -->
+    <Operation Class="PatchOperationAttributeRemove">
+        <xpath>Defs/Def[@RimatomicsDLC]</xpath>
+        <attribute>RimatomicsDLC</attribute>
+    </Operation>
+</Patch>
