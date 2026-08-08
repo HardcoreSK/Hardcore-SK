@@ -83,7 +83,7 @@
 
     <ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_HoldingDevices</defName>
-		<label>Holding Devices</label>
+		<label>Holding devices</label>
 		<description>Secure. Contain. Protect.</description>
 		<defNames>
 			<li>HoldingSpot</li>
@@ -100,7 +100,7 @@
 
     <ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_DarkRituals</defName>
-		<label>Dark Rutuals</label>
+		<label>Dark rutuals</label>
 		<description>A summoning of horrors beyond our comprehension, what could go wrong?</description>
 		<defNames>
 			<li>PsychicRitualSpot</li>
@@ -113,7 +113,7 @@
 
     <ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_EffectProjectors</defName>
-		<label>Effect Projectors</label>
+		<label>Effect projectors</label>
 		<description>If you constantly whisper something directly into the colonists' heads, they will certainly be happy.</description>
 		<defNames>
 			<li>SleepSuppressor</li>
@@ -128,7 +128,7 @@
 
     <ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_GravStructures</defName>
-		<label>Gravship Structures</label>
+		<label>Gravship structures</label>
 		<description>Everything starts with a wall. Not this time.</description>
 		<defNames>
 			<li>Substructure</li>
@@ -143,11 +143,10 @@
 
     <ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_GravSystems</defName>
-		<label>Gravship Systems</label>
+		<label>Gravship systems</label>
 		<description>Dont forget to turn oxygen on!</description>
 		<defNames>
 			<li>PilotConsole</li>
-			<li>GravcorePowerCell</li>
 			<li>OxygenPump</li>
 			<li>SignalJammer</li>
 			<li>GravFieldExtender</li>
@@ -159,8 +158,8 @@
 
     <ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_GravFuelTanks</defName>
-		<label>Fuel Tanks</label>
-		<description>Always carry a bt more than enough.</description>
+		<label>Fuel tanks</label>
+		<description>Always carry a bit more than enough.</description>
 		<defNames>
 			<li>ChemfuelTank</li>
 			<li>LargeChemfuelTank</li>
@@ -168,6 +167,19 @@
 		<designationCategory>Odyssey</designationCategory>
 		<debug>false</debug>
 		<order>30</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_GravEnergy</defName>
+		<label>Power network</label>
+		<description>You can fly without power, but is it a good decision?</description>
+		<defNames>
+			<li>GravcorePowerCell</li>
+			<li>AntimatterReactorGrav</li>
+		</defNames>
+		<designationCategory>Odyssey</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
     <ArchitectSense.DesignationSubCategoryDef>
@@ -180,7 +192,7 @@
 		</defNames>
 		<designationCategory>Odyssey</designationCategory>
 		<debug>false</debug>
-		<order>40</order>
+		<order>50</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 </Defs>
