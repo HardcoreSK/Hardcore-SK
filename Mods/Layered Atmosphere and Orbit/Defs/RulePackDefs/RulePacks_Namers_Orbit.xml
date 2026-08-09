@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RulePackDef>
+        <defName>NamerWorldObject_LAO_AsteroidGiantBasic</defName>
+        <include>
+            <li>WorldFeatureNamerCommon</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>terrain_word(p=4)->[size] [terrain]</li>
+				<li>size->Giant</li>
+				<li>size->Massive</li>
+				<li>size->Enormous</li>
+				<li>size->Big</li>
+                <li>terrain->asteroid</li>
+                <li>terrain->rock</li>
+                <li>terrain->satellite</li>
+                <li>terrain->planetoid</li>
+                <li>terrain->moon</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>

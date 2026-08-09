@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>LAO_Air</defName>
+		<label>air</label>
+		<fertility>0</fertility>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>300</renderPrecedence>
+		<dontRender>true</dontRender>
+		<passability>Impassable</passability>
+		<layerable>false</layerable>
+		<pathCost>300</pathCost>
+		<avoidWander>true</avoidWander>
+		<holdSnowOrSand>false</holdSnowOrSand>
+		<preventCraters>true</preventCraters>
+		<designationCategory/>
+		<filthAcceptanceMask>
+			<li>None</li>
+		</filthAcceptanceMask>
+		<statBases>
+			<WorkToBuild>0</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tags>
+			<li>Space</li>
+		</tags>
+		<affordances>
+			<li>Bridgeable</li>
+		</affordances>
+		<spaceEdgeGraphicData IsNull="True"/>
+		<canBePolluted>false</canBePolluted>
+	</TerrainDef>
+  
+</Defs>

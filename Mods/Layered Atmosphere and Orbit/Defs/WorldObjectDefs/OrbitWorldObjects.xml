@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+	<WorldObjectDef Abstract="True" Name="GeneratedAsteroidGiant" ParentName="GeneratedAsteroid">
+		<nameMaker>NamerWorldObject_LAO_AsteroidGiantBasic</nameMaker>
+		<description>A giant vacstone asteroid that was towed into orbit around the planet as part of a mining operation long ago. However, mechanoid interference halted the process before most of its valuable resources could be extracted.\n\nThis location can be reached using transport pods, shuttles, or a gravship.</description>
+		<overrideMapSize>(350,1,350)</overrideMapSize>
+		<expandingIconDrawSize>1.6</expandingIconDrawSize>
+	</WorldObjectDef>
+
+	<WorldObjectDef ParentName="GeneratedAsteroidGiant">
+		<defName>LAO_AsteroidGiant</defName>
+		<label>giant asteroid</label>
+		<mapGenerator>LAO_AsteroidGiant</mapGenerator>
+	</WorldObjectDef>
+
+	<WorldObjectDef ParentName="ClaimableSpace">
+		<defName>LAO_AsteroidGiantMiningSite</defName>
+		<worldObjectClass>ResourceAsteroidMapParent</worldObjectClass>
+		<label>giant asteroid mining site</label>
+		<description>A giant vacstone asteroid that was towed into orbit around the planet as part of a mining operation long ago. However, mechanoid interference halted the process before all of its valuable resources could be extracted.\n\nThis location can be reached using transport pods, shuttles, or a gravship.</description>
+		<nameMaker>NamerWorldObject_LAO_AsteroidGiantBasic</nameMaker>
+		<expandingIconTexture>World/WorldObjects/Expanding/ResourceAsteroid</expandingIconTexture>
+		<expandingIconMaskTexture>World/WorldObjects/Expanding/ResourceAsteroid_m</expandingIconMaskTexture>
+		<expandingShader>CutoutComplexUI</expandingShader>
+		<overrideMapSize>(350,1,350)</overrideMapSize>
+		<expandingIconDrawSize>1.6</expandingIconDrawSize>
+		<mapGenerator>LAO_AsteroidGiantMiningSite</mapGenerator>
+	</WorldObjectDef>
+
+	<WorldObjectDef ParentName="GeneratedAsteroidGiant">
+		<defName>LAO_OrbitalItemStashGiant</defName>
+		<label>giant orbital item stash</label>
+		<worldObjectClass>BasicAsteroidMapParent</worldObjectClass>
+		<expandingIconTexture>World/WorldObjects/Expanding/OrbitalItemStash</expandingIconTexture>
+		<mapGenerator>LAO_OrbitalItemStashGiant</mapGenerator>
+	</WorldObjectDef>
+
+</Defs>

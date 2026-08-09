@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace"> <!--yes, full replace-->
+		<xpath>Defs/LayeredAtmosphereOrbit.PlanetLayerGroupDef[defName="LAO_Atmosphere"]/modExtensions/li</xpath>
+		<value>
+			<li Class="LayeredAtmosphereOrbit.LayeredAtmosphereOrbitDefModExtension">
+				<isPreventQuestMapIfNotWhitelisted>true</isPreventQuestMapIfNotWhitelisted>
+				<minFactionTechLevel>Industrial</minFactionTechLevel>
+				<minArrivalFactionTechLevel>Industrial</minArrivalFactionTechLevel>
+				<WhitelistFactionDef>
+					<li>Insect</li>
+					<li>Insectoid</li>
+				</WhitelistFactionDef>
+				<WhitelistArrivalFactionDef>
+					<li>Insect</li>
+					<li>Insectoid</li>
+				</WhitelistArrivalFactionDef>
+                <BlacklistFactionDef>
+                    <li>OgreMutants</li>
+                    <li>NorbalTribe</li>
+                    <li>MedievalKingdom</li>
+                    <li>Feral</li>
+                </BlacklistFactionDef>
+				<BlacklistGameConditionDef>
+					<li>ExtremeCold</li>
+					<li>ExtremeHot</li>
+					<li>SandTornado</li>
+				</BlacklistGameConditionDef>
+				<BlacklistIncidentDef>
+					<li>FarmAnimalsWanderIn</li>
+					<li>WandererJoin</li>
+					<li>RefugeeChased</li>
+					<li>ThrumboPasses</li>
+					<li>HerdMigration</li>
+					<li>WildManWandersIn</li>
+					<li>Alphabeavers</li>
+					<li>TraderCaravanArrival</li>
+					<li>VisitorGroup</li>
+					<li>TravelerGroup</li>
+					<li>ManhunterPack</li>
+					<!--<li>CropEaters</li>
+					<li>HungryCritters</li>
+					<li>DevourersOfCrops</li>-->
+					<li>Swarm</li>
+					<li>FeenixPasses</li>
+					<li>IcicatPasses</li>
+					<li>RaptorPasses</li>
+					<li>TribeMigration</li>
+					<li>HungryLocusts</li>
+					<li>Plunderers</li>
+					<li>Earthquake</li>
+					<li>SeismicActivity</li>
+					<li>MajorRescue</li>
+					<li>OrassianFound</li>
+				</BlacklistIncidentDef>
+				<BlacklistQuestScriptDef>
+					<li>ThreatReward_Raid_Joiner</li>
+				</BlacklistQuestScriptDef>
+			</li>
+		</value>
+	</Operation>
+	
+</Patch>

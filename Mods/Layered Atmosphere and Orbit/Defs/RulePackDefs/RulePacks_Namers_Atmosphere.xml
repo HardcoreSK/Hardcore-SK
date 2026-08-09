@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RulePackDef>
+        <defName>NamerWorldObject_LAO_FloatingIslandBase</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>flying_terrain->[flying] [terrain]</li>
+                <li>flying->floating</li>
+                <li>flying->aerial</li>
+                <li>flying->hovering</li>
+                <li>flying->flying</li>
+                <li>flying->sky</li>
+                <li>flying->skyborne</li>
+                <li>flying->airborne</li>
+                <li>terrain->island</li>
+                <li>terrain->land</li>
+                <li>terrain->landform</li>
+                <li>terrain->landmass</li>
+                <li>terrain->isle</li>
+				<li>size->Giant</li>
+				<li>size->Massive</li>
+				<li>size->Enormous</li>
+				<li>size->Big</li>
+                <li>typeMountain->Mountain</li>
+                <li>typeMountain->Peak</li>
+                <li>typeMountain->Alpine</li>
+                <li>typeHill->Hill</li>
+                <li>typeHill->Knoll</li>
+                <li>typeHill->Mound</li>
+                <li>typeFlat->Plain</li>
+                <li>typeFlat->Lowland</li>
+                <li>typeFlat->Flatland</li>
+                <li>typeCrust->Crust</li>
+                <li>typeCrust->Caves</li>
+                <li>typeCrust->Cavern</li>
+                <li>typeInfested->Infested</li>
+                <li>typeInfested->Swarming</li>
+                <li>typeInfested->Teeming</li>
+                <li>typeCollapsing->Collapsing</li>
+                <li>typeCollapsing->Crumbling</li>
+                <li>typeCollapsing->Disintegrating</li>
+                <li>typeCollapsing->Falling apart</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	
+	
+    <RulePackDef>
+        <defName>NamerWorldObject_LAO_FloatingIsland</defName>
+        <include>
+            <li>WorldFeatureNamerCommon</li>
+            <li>NamerWorldObject_LAO_FloatingIslandBase</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>terrain_word(p=4)->[flying_terrain]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+    <RulePackDef>
+        <defName>NamerWorldObject_LAO_FloatingIslandHill</defName>
+        <include>
+            <li>WorldFeatureNamerCommon</li>
+            <li>NamerWorldObject_LAO_FloatingIslandBase</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>terrain_word(p=4)->[flying_terrain] ([typeHill])</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+    <RulePackDef>
+        <defName>NamerWorldObject_LAO_FloatingIslandFlat</defName>
+        <include>
+            <li>WorldFeatureNamerCommon</li>
+            <li>NamerWorldObject_LAO_FloatingIslandBase</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>terrain_word(p=4)->[flying_terrain] ([typeFlat])</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	
+	
+    <RulePackDef>
+        <defName>NamerWorldObject_LAO_FloatingIslandGiant</defName>
+        <include>
+            <li>WorldFeatureNamerCommon</li>
+            <li>NamerWorldObject_LAO_FloatingIslandBase</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>terrain_word(p=4)->[size] [flying_terrain]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+    <RulePackDef>
+        <defName>NamerWorldObject_LAO_FloatingIslandGiantMountain</defName>
+        <include>
+            <li>WorldFeatureNamerCommon</li>
+            <li>NamerWorldObject_LAO_FloatingIslandBase</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>terrain_word(p=4)->[size] [flying_terrain] ([typeMountain])</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+    <RulePackDef>
+        <defName>NamerWorldObject_LAO_FloatingIslandGiantCrust</defName>
+        <include>
+            <li>WorldFeatureNamerCommon</li>
+            <li>NamerWorldObject_LAO_FloatingIslandBase</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>terrain_word(p=4)->[size] [flying_terrain] ([typeCrust])</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+    <RulePackDef>
+        <defName>NamerWorldObject_LAO_FloatingIslandGiantFlat</defName>
+        <include>
+            <li>WorldFeatureNamerCommon</li>
+            <li>NamerWorldObject_LAO_FloatingIslandBase</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>terrain_word(p=4)->[size] [flying_terrain] ([typeFlat])</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	
+	
+    <RulePackDef>
+        <defName>NamerWorldObject_LAO_FloatingIslandCollapsing</defName>
+        <include>
+            <li>WorldFeatureNamerCommon</li>
+            <li>NamerWorldObject_LAO_FloatingIslandBase</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>terrain_word(p=4)->[flying_terrain] ([typeCollapsing])</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>

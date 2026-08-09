@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<QuestScriptDef>
+		<defName>OpportunitySite_LAO_GiantAsteroidMiningSite</defName>
+		<randomlySelectable>false</randomlySelectable>
+		<givenBy>
+			<li>OrbitalScanner</li>
+		</givenBy>
+		<rootSelectionWeight>1</rootSelectionWeight>
+		<isRootSpecial>true</isRootSpecial>
+		<defaultChallengeRating>2</defaultChallengeRating>
+		<autoAccept>true</autoAccept>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName->[size] [resource] Asteroid</li>
+				<li>size->Giant</li>
+				<li>size->Massive</li>
+				<li>size->Enormous</li>
+				<li>size->Big</li>
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription->[discoveryMethod] the location of a giant asteroid orbiting the planet. It contains significant amounts of [resource], and potentially other resources as well.\n\nOrbital miners steer asteroids into orbit so that they can be mined and the ore sold to orbital traders. You do not detect any signs of life from this asteroid, but mechanoid signals are being picked up.\n\nYou can reach the asteroid with transport pods, shuttles, or a gravship. Equip your colonists with sufficient orbital apparel before departing.</li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<questDescriptionAndNameRules>
+			<rulesStrings>
+			</rulesStrings>
+		</questDescriptionAndNameRules>
+		<canOccurOnAllPlanetLayers>true</canOccurOnAllPlanetLayers>
+		<root Class="QuestNode_Sequence">
+			<nodes>
+				<li Class="QuestNode_IsSet">
+					<name>discoveryMethod</name>
+					<elseNode Class="QuestNode_RandomNode">
+						<nodes>
+							<li Class="QuestNode_Set">
+								<name>discoveryMethod</name>
+								<value>You have discovered</value>
+							</li>
+						</nodes>
+					</elseNode>
+				</li>
+				<li Class="QuestNode_Root_Asteroid">
+					<layerDef>LAO_HighOrbit</layerDef>
+					<worldObjectDef>LAO_AsteroidGiantMiningSite</worldObjectDef>
+					<mineables>
+						<li>MineableGold</li>
+						<li>MineablePlasteel</li>
+						<li>MineableUranium</li>
+					</mineables>
+				</li>
+			</nodes>
+		</root>
+	</QuestScriptDef>
+
+	<QuestScriptDef>
+		<defName>OpportunitySite_LAO_OrbitalItemStashGiant</defName>
+		<randomlySelectable>false</randomlySelectable>
+		<givenBy>
+			<li>OrbitalScanner</li>
+		</givenBy>
+		<rootSelectionWeight>0.7</rootSelectionWeight>
+		<isRootSpecial>true</isRootSpecial>
+		<defaultChallengeRating>2</defaultChallengeRating>
+		<autoAccept>true</autoAccept>
+		<questAvailableLetterTextIsDescription>true</questAvailableLetterTextIsDescription>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName->[adjective] [size] [orbital] [stash_noun]</li>
+				<li>questName->[size] [orbital] [stash_noun]</li>
+        
+				<li>adjective->Hidden</li>
+				<li>adjective->Secret</li>
+				<li>size->Giant</li>
+				<li>size->Massive</li>
+				<li>size->Enormous</li>
+				<li>size->Big</li>
+				<li>orbital->Orbital</li>
+				<li>orbital->Asteroid</li>
+				<li>stash_noun->Stash</li>
+				<li>stash_noun->Cache</li>
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription->[discoveryMethod] a giant unusual asteroid orbiting the planet. The asteroid has a hollow core which contains several structures.\n\nYou can break in to obtain the loot inside.\n\nBe warned - the buildings may contain defense systems and mechanoid signals are being picked up.</li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<canOccurOnAllPlanetLayers>true</canOccurOnAllPlanetLayers>
+		<root Class="QuestNode_Sequence">
+			<nodes>
+				<li Class="QuestNode_IsSet">
+					<name>discoveryMethod</name>
+					<elseNode Class="QuestNode_RandomNode">
+						<nodes>
+							<li Class="QuestNode_Set">
+								<name>discoveryMethod</name>
+								<value>You have discovered</value>
+							</li>
+						</nodes>
+					</elseNode>
+				</li>
+				<li Class="QuestNode_Root_Asteroid">
+					<layerDef>LAO_HighOrbit</layerDef>
+					<worldObjectDef>LAO_OrbitalItemStashGiant</worldObjectDef>
+				</li>
+			</nodes>
+		</root>
+	</QuestScriptDef>
+  
+</Defs>

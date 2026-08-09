@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/PlanetLayerDef[defName ="Surface"]/modExtensions</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/PlanetLayerDef[defName ="Surface"]</xpath>
+					<order>Append</order>
+					<value>
+						<modExtensions>
+							<li Class="LayeredAtmosphereOrbit.LayeredAtmosphereOrbitDefModExtension">
+								<isReplaceConnections>true</isReplaceConnections>
+								<elevation>0</elevation>
+								<planetLayerGroup>LAO_Surface</planetLayerGroup>
+							</li>
+						</modExtensions>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/PlanetLayerDef[defName ="Surface"]/modExtensions</xpath>
+					<order>Append</order>
+					<value>
+						<li Class="LayeredAtmosphereOrbit.LayeredAtmosphereOrbitDefModExtension">
+							<isReplaceConnections>true</isReplaceConnections>
+							<elevation>0</elevation>
+							<planetLayerGroup>LAO_Surface</planetLayerGroup>
+						</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/PlanetLayerDef[defName ="Orbit"]/modExtensions</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/PlanetLayerDef[defName ="Orbit"]</xpath>
+					<order>Append</order>
+					<value>
+						<modExtensions>
+							<li Class="LayeredAtmosphereOrbit.LayeredAtmosphereOrbitDefModExtension">
+								<isReplaceConnections>true</isReplaceConnections>
+								<elevation>200</elevation>
+								<tempOffest>-95</tempOffest>
+								<planetLayerGroup>LAO_Orbit</planetLayerGroup>
+							</li>
+						</modExtensions>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/PlanetLayerDef[defName ="Orbit"]/modExtensions</xpath>
+					<order>Append</order>
+					<value>
+						<li Class="LayeredAtmosphereOrbit.LayeredAtmosphereOrbitDefModExtension">
+							<isReplaceConnections>true</isReplaceConnections>
+							<elevation>200</elevation>
+							<tempOffest>-95</tempOffest>
+							<planetLayerGroup>LAO_Orbit</planetLayerGroup>
+						</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/WorldObjectDef[@Name="StaticWorldObjectBase"]/inspectorTabs</xpath>
+				<order>Append</order>
+				<value>
+					<li>LayeredAtmosphereOrbit.WITab_PlanetLayer</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnsArrivalModeDef[defName="EdgeDrop" or defName="EdgeDropGroups" or defName="CenterDrop" or defName="RandomDrop" or defName="MechClusterDrop" or defName="SpecificDropDebug"]/layerWhitelist</xpath>
+				<order>Append</order>
+				<value>
+					<li>LAO_Troposphere</li>
+					<li>LAO_Stratosphere</li>
+					<li>LAO_Mesosphere</li>
+					<li>LAO_HighOrbit</li>
+					<li>LAO_Surface_Luna</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnsArrivalModeDef[defName="EmergeFromWater"]/layerBlacklist</xpath>
+				<order>Append</order>
+				<value>
+					<li>LAO_HighOrbit</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="BaseArtilleryBuilding"]/comps/li[@Class="CompProperties_Mannable"]/planetLayerWhitelist</xpath>
+				<order>Append</order>
+				<value>
+					<li>LAO_Troposphere</li>
+					<li>LAO_Stratosphere</li>
+					<li>LAO_Mesosphere</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RaidStrategyDef[defName="Siege"]/layerWhitelist</xpath>
+				<order>Append</order>
+				<value>
+					<li>LAO_Troposphere</li>
+					<li>LAO_Stratosphere</li>
+					<li>LAO_Mesosphere</li>
+					<li>LAO_Surface_Luna</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

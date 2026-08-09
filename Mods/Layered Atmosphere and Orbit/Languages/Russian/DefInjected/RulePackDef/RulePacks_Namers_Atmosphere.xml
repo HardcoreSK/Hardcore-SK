@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<NamerWorldObject_LAO_FloatingIslandBase.rulePack.rulesStrings>
+		<li>flying_terrain->[flying] [terrain]</li>
+		<li>flying->парящий</li>
+		<li>flying->воздушный</li>
+		<li>flying->зависший</li>
+		<li>flying->летающий</li>
+		<li>flying->небесный</li>
+		<li>flying->леветирующий</li>
+		<li>flying->дрейфующий</li>
+		<li>terrain->остров</li>
+		<li>terrain->земля</li>
+		<li>terrain->поверхность</li>
+		<li>terrain->суша</li>
+		<li>terrain->островок</li>
+		<li>size->Гигантский</li>
+		<li>size->Огромный</li>
+		<li>size->Колоссальный</li>
+		<li>size->Большой</li>
+		<li>typeMountain->гора</li>
+		<li>typeMountain->вершина</li>
+		<li>typeMountain->пик</li>
+		<li>typeHill->холм</li>
+		<li>typeHill->пригорок</li>
+		<li>typeHill->насыпь</li>
+		<li>typeFlat->равнина</li>
+		<li>typeFlat->низина</li>
+		<li>typeFlat->плоскогорье</li>
+		<li>typeCrust->кора</li>
+		<li>typeCrust->недры</li>
+		<li>typeCrust->пешера</li>
+		<li>typeInfested->заражённый</li>
+		<li>typeInfested->кишащий</li>
+		<li>typeInfested->инфецированный</li>
+		<li>typeCollapsing->разрушающийся</li>
+		<li>typeCollapsing->крошащийся</li>
+		<li>typeCollapsing->распадающийся</li>
+		<li>typeCollapsing->разваливающийся</li>
+	</NamerWorldObject_LAO_FloatingIslandBase.rulePack.rulesStrings>
+  
+	<NamerWorldObject_LAO_FloatingIsland.rulePack.rulesStrings.0>terrain_word(p=4)->[flying_terrain]</NamerWorldObject_LAO_FloatingIsland.rulePack.rulesStrings.0>
+	<NamerWorldObject_LAO_FloatingIslandHill.rulePack.rulesStrings.0>terrain_word(p=4)->[flying_terrain] ([typeHill])</NamerWorldObject_LAO_FloatingIslandHill.rulePack.rulesStrings.0>
+	<NamerWorldObject_LAO_FloatingIslandFlat.rulePack.rulesStrings.0>terrain_word(p=4)->[flying_terrain] ([typeFlat])</NamerWorldObject_LAO_FloatingIslandFlat.rulePack.rulesStrings.0>
+	<NamerWorldObject_LAO_FloatingIslandGiant.rulePack.rulesStrings.0>terrain_word(p=4)->[size] [flying_terrain]</NamerWorldObject_LAO_FloatingIslandGiant.rulePack.rulesStrings.0>
+	<NamerWorldObject_LAO_FloatingIslandGiantMountain.rulePack.rulesStrings.0>terrain_word(p=4)->[size] [flying_terrain] ([typeMountain])</NamerWorldObject_LAO_FloatingIslandGiantMountain.rulePack.rulesStrings.0>
+	<NamerWorldObject_LAO_FloatingIslandGiantCrust.rulePack.rulesStrings.0>terrain_word(p=4)->[size] [flying_terrain] ([typeCrust])</NamerWorldObject_LAO_FloatingIslandGiantCrust.rulePack.rulesStrings.0>
+	<NamerWorldObject_LAO_FloatingIslandGiantFlat.rulePack.rulesStrings.0>terrain_word(p=4)->[size] [flying_terrain] ([typeFlat])</NamerWorldObject_LAO_FloatingIslandGiantFlat.rulePack.rulesStrings.0>
+	<NamerWorldObject_LAO_FloatingIslandCollapsing.rulePack.rulesStrings.0>terrain_word(p=4)->[flying_terrain] ([typeCollapsing])</NamerWorldObject_LAO_FloatingIslandCollapsing.rulePack.rulesStrings.0>
+
+</LanguageData>

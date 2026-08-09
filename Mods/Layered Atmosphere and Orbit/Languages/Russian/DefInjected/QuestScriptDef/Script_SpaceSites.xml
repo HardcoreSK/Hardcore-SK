@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<OpportunitySite_LAO_GiantAsteroidMiningSite.questDescriptionRules.rulesStrings.0>questDescription->[discoveryMethod] местоположение гигантского астероида на орбите планеты. В нем в больших количествах содержится [resource] и, возможно, другие ресурсы.\n\nОрбитальные шахтеры направляют ценные астероиды на орбиту планеты, чтобы их было легче добывать и продавать орбитальным торговцам. Признаков жизни на астероиде не обнаружено, однако улавливаются сигналы механоидов.\n\nДобраться до астероида можно на транспортных капсулах, шаттлах или гравикорабле. Перед вылетом оснастите поселенцев подходящей орбитальной одеждой.</OpportunitySite_LAO_GiantAsteroidMiningSite.questDescriptionRules.rulesStrings.0>
+	<OpportunitySite_LAO_GiantAsteroidMiningSite.questNameRules.rulesStrings>
+		<li>questName->[size] [resource] Астероид</li>
+		<li>size->Гигантский</li>
+		<li>size->Огромный</li>
+		<li>size->Колоссальный</li>
+		<li>size->Большой</li>
+	</OpportunitySite_LAO_GiantAsteroidMiningSite.questNameRules.rulesStrings>
+	<OpportunitySite_LAO_GiantAsteroidMiningSite.root.nodes.IsSet.elseNode.nodes.Set.value.slateRef>Вы обнаружили</OpportunitySite_LAO_GiantAsteroidMiningSite.root.nodes.IsSet.elseNode.nodes.Set.value.slateRef>
+
+	<OpportunitySite_LAO_OrbitalItemStashGiant.questDescriptionRules.rulesStrings.0>questDescription->[discoveryMethod] гигантский необычный астероид на орбите планеты. У астероида полое ядро, внутри которого расположены несколько сооружений.\n\nВы можете проникнуть внутрь, чтобы добыть сокровища.\n\nОсторожно — в строениях могут быть защитные системы, а также улавливаются сигналы механоидов.</OpportunitySite_LAO_OrbitalItemStashGiant.questDescriptionRules.rulesStrings.0>
+	<OpportunitySite_LAO_OrbitalItemStashGiant.questNameRules.rulesStrings>
+		<li>questName->[adjective] [size] [orbital] [stash_noun]</li>
+		<li>questName->[size] [orbital] [stash_noun]</li>
+		<li>adjective->Спрятанный</li>
+		<li>adjective->Секретный</li>
+		<li>orbital->Орбитальные</li>
+		<li>orbital->Астероид</li>
+		<li>size->Гигантский</li>
+		<li>size->Огромный</li>
+		<li>size->Колоссальный</li>
+		<li>size->Большой</li>
+		<li>stash_noun->Тайник</li>
+		<li>stash_noun->Схрон</li>
+	</OpportunitySite_LAO_OrbitalItemStashGiant.questNameRules.rulesStrings>
+	<OpportunitySite_LAO_OrbitalItemStashGiant.root.nodes.IsSet.elseNode.nodes.Set.value.slateRef>Вы обнаружили</OpportunitySite_LAO_OrbitalItemStashGiant.root.nodes.IsSet.elseNode.nodes.Set.value.slateRef>
+
+</LanguageData>

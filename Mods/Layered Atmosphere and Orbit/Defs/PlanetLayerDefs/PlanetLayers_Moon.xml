@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PlanetLayerDef Name="LAO_MoonSurfaceBase" Abstract="True">
+		<layerType>SurfaceLayer</layerType>
+		<tileType>SurfaceTile</tileType>
+		<elevationString>{0} m</elevationString>
+		<gerundLabel>on the</gerundLabel>
+		<backgroundBiome>LAO_Luna</backgroundBiome>
+		<onlyAllowWhitelistedIncidents>true</onlyAllowWhitelistedIncidents>
+		<onlyAllowWhitelistedBiomes>true</onlyAllowWhitelistedBiomes>
+		<onlyAllowWhitelistedGameConditions>true</onlyAllowWhitelistedGameConditions>
+		<onlyAllowWhitelistedQuests>true</onlyAllowWhitelistedQuests>
+	</PlanetLayerDef>
+
+	<PlanetLayerDef ParentName="LAO_MoonSurfaceBase">
+		<defName>LAO_Surface_Luna</defName>
+		<label>Luna moon</label>
+		<viewGizmoTooltip>View locations that are on the Luna moon surface.</viewGizmoTooltip>
+		<viewGizmoTexPath>UI/Commands/LAO_ViewLuna</viewGizmoTexPath>
+		<defaultBiome>LAO_Luna</defaultBiome>
+		<backgroundBiome>LAO_Luna</backgroundBiome>
+		<worldGenSteps>
+			<li>LAO_TerrainLuna</li>
+			<li>Mutators</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Landmarks</li>
+			<!-- <li>AncientSites</li> -->
+			<!-- <li>AncientRoads</li> -->
+			<li>Factions</li>
+			<li>Features</li>
+		</worldGenSteps>
+		<worldDrawLayers>
+			<li>WorldDrawLayer_CurrentMapTile</li>
+			<li>WorldDrawLayer_SelectedTile</li>
+			<li>WorldDrawLayer_SettleTile</li>
+			<li>WorldDrawLayer_MouseTile</li>
+			<li>WorldDrawLayer_ClosestTile</li>
+			<li>LayeredAtmosphereOrbit.WorldDrawLayer_UngeneratedPlanetPartsBackgroundBiome</li>
+			<li>WorldDrawLayer_WorldObjects_Expandable</li>
+			<li>WorldDrawLayer_WorldObjects_NonExpandable</li>
+			<li>WorldDrawLayer_DebugNoise</li>
+			<li>WorldDrawLayer_Landmarks</li>
+			<!-- <li>WorldDrawLayer_Glow</li> -->
+			<li>WorldDrawLayer_Hills</li>
+			<li>WorldDrawLayer_Terrain</li>
+		</worldDrawLayers>
+		<worldTabs>
+			<li>WITab_Terrain</li>
+			<li>WITab_Planet</li>
+		</worldTabs>
+		<modExtensions>
+			<li Class="LayeredAtmosphereOrbit.LayeredAtmosphereOrbitDefModExtension">
+				<isReplaceConnections>true</isReplaceConnections>
+				<isOptionToAutoAdd>true</isOptionToAutoAdd>
+				<isSurface>true</isSurface>
+				<elevation>0</elevation>
+				<planetLayerGroup>LAO_Surface_Luna</planetLayerGroup>
+				<multScatterLumpsMineable>2</multScatterLumpsMineable>
+				<IncidentChanceMultipliers>
+					<OrbitalDebris>5</OrbitalDebris>
+					<SolarFlare>2.3</SolarFlare>
+					<MeteoriteImpact>4</MeteoriteImpact>
+					<Infestation>1.5</Infestation>
+				</IncidentChanceMultipliers>
+				<WhitelistIncidentDef>
+					<li>Infestation</li>
+					<li>DeepDrillInfestation</li>
+					<li>Ambush</li>
+					<li>CaravanMeeting</li>
+					<li>CaravanDemand</li>
+					<li>WandererJoin</li>
+					<li>RansomDemand</li>
+					<li>VisitorGroup</li>
+					<li>TravelerGroup</li>
+					<li>RaidFriendly</li>
+					<li>GameEndedWanderersJoin</li>
+					<li>DefoliatorShipPartCrash</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">WandererJoinAbasia</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Disease_Abasia</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Disease_BloodRot</li>
+					<li>GiveQuest_MechanoidSignal</li>
+				</WhitelistIncidentDef>
+				<WhitelistQuestScriptDef>
+					<li>ThreatReward_Raid_Joiner</li>
+					<li>DelayedRewardDropPods</li>
+					<li>OpportunitySite_ItemStash</li>
+					<li>LongRangeMineralScannerLump</li>
+					<li>OpportunitySite_PrisonerWillingToJoin</li>
+					<li>TradeRequest</li>
+					<li>RefugeePodCrash</li>
+					<li>OpportunitySite_AncientMercenaries</li>
+					<li>Opportunity_AncientStructureLaunchSite</li>
+					<li>Opportunity_AncientStructureGarrison</li>
+					<li>Opportunity_AncientStructureChemfuelRefinery</li>
+					<li>Opportunity_AncientStructureWarehouse</li>
+					<li>Opportunity_AncientInfestedSettlement</li>
+					<li>OpportunitySite_BanditCamp_Giver</li>
+					<li>MechanoidSignal</li>
+					<li>GravEngine</li>
+					<li>Gravcore_MechanoidRelay</li>
+					<li>Gravcore_InsectLair</li>
+					<li>Gravcore_AncientReactor</li>
+					<li>Gravcore_AncientStockpile</li>
+					<li>Gravcore_CrashedMechanoidPlatform</li>
+					<li>GravshipWreckage</li>
+					<li>OpportunitySite_ItemStash_Giver</li>
+					<li>SurveySite</li>
+				</WhitelistQuestScriptDef>
+			</li>
+		</modExtensions>
+	</PlanetLayerDef>
+  
+</Defs>

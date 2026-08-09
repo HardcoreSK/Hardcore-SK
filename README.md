@@ -115,12 +115,16 @@ SpoonShortage, Mrofa, Fluffy, Zhentar, Brrainz, Dubwise, Erdelf, Greeny, Hunt3rK
 Lambert2191, Vuursteen, Tuvia, Dunkhan, jnkyacc, Jalordon, Varmonger, funs777, olizit, 
 Quelling, pongvin, lex1975, evgeny-k, Moon, Leiarr, Voker57, Pardonius,
  Sonsalt, Rhyssia, Adenia, Abhay (artwork), ApelAirplane (artwork),
-SomethingCrunchy (dev), NotFood (dev), Murdantiks, Adenia, Soyaman, Tombomcbombo, LimeTreeSnake, Raseri13
+SomethingCrunchy (dev), NotFood (dev), Murdantiks, Soyaman, Tombomcbombo, LimeTreeSnake, Raseri13
 
 Thanks to translators Rey, Ivanzyfer, FaHT1k, mora145, totobrother, Desert Rain
 
 And to anyone else we might have missed!
 
-## LICENSE
+## MODS LICENSES
 
 The content of all individual mods is licensed under their respective licenses.
+
+## SPECIAL MODS MENTIONS
+
+MrHydralisk for Layered Atmosphere and Orbit and Complementary Odyssey
