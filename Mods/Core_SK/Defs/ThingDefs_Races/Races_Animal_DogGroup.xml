@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Defs>
+<Defs><!-- Uneeded For now
 	<ThingDef ParentName="AnimalThingBase" Name="AnimalDogBase" Abstract="True">
-		<devNote>cat-1</devNote>
 		<statBases>
 			<Mass>40</Mass>
 			<MoveSpeed>7.2</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ImmunityGainSpeed>1.25</ImmunityGainSpeed>
 			<MeleeDodgeChance>0.17</MeleeDodgeChance>
-			<MeleeCritChance>0.01</MeleeCritChance>
 			<GermResistance>0.18</GermResistance>
 			<GermContainment>0.06</GermContainment>
 			<FilthRate>1</FilthRate>
@@ -31,6 +29,9 @@
 			<nameOnTameChance>1</nameOnTameChance>
 			<manhunterOnDamageChance>0.5</manhunterOnDamageChance>
 			<trainability>Advanced</trainability>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Comfort</li>
+			</specialTrainables>
 			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<litterSizeCurve>
 				<points>
@@ -70,7 +71,7 @@
 			<li>AnimalPet</li>
 		</tradeTags>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="AnimalDogBase">
 		<defName>YorkshireTerrier</defName>
 		<label>yorkshire terrier</label>
@@ -130,7 +131,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
+-->
 <!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>YorkshireTerrier</defName>
 		<label>dog</label>
@@ -185,7 +186,7 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
- -->
+ --><!-- DefOverwrite
 	<ThingDef ParentName="AnimalDogBase">
 		<defName>Husky</defName>
 		<label>husky</label>
@@ -251,7 +252,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
+-->
 <!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Husky</defName>
 		<label>Husky</label>
@@ -308,7 +309,7 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
- -->
+ --><!-- DefOverwrite
 	<ThingDef ParentName="AnimalDogBase">
 		<defName>LabradorRetriever</defName>
 		<label>labrador retriever</label>
@@ -382,7 +383,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
+-->
 <!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>LabradorRetriever</defName>
 		<label>Labrador Retriever</label>
@@ -437,11 +438,17 @@
 		</lifeStages>
 	</PawnKindDef>
  -->
-	<ThingDef ParentName="AnimalDogBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>GermanShepherd</defName>
 		<label>shepherd</label>
 		<description>A large working dog that is usually tan and black in color. It is one of the most intelligent breeds of dog and they are prized for their trainability.</description>
 		<statBases>
+			<Mass>40</Mass> <!-- D -->
+			<GermResistance>0.18</GermResistance> <!-- D -->
+			<GermContainment>0.06</GermContainment> <!-- D -->
+			<FilthRate>1</FilthRate> <!-- D -->
+			<Wildness>0.2</Wildness> <!-- D -->
+			
 			<MoveSpeed>7.4</MoveSpeed>
 			<ComfyTemperatureMin>-22</ComfyTemperatureMin>
 			<MarketValue>830</MarketValue>
@@ -450,10 +457,58 @@
 			<MeleeCritChance>0.04</MeleeCritChance>
 		</statBases>
 		<race>
+			<animalType>Canine</animalType>
+			<predator>true</predator>
+			<maxPreyBodySize>0.6</maxPreyBodySize>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<petness>1</petness>
+			<herdAnimal>true</herdAnimal>
 			<baseBodySize>0.55</baseBodySize>
 			<baseHungerRate>0.8</baseHungerRate>
 			<baseHealthScale>0.9</baseHealthScale>
+			<foodType>CarnivoreAnimal, OmnivoreAnimal, OvivoreAnimal</foodType>
+			<useMeatFrom>Elephant</useMeatFrom>
+			<leatherDef>Leather_Dog</leatherDef>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<manhunterOnDamageChance>0.5</manhunterOnDamageChance>
+			<trainability>Advanced</trainability>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Comfort</li>
+			</specialTrainables>
+			<nuzzleMtbHours>12</nuzzleMtbHours>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1.7)</li>
+					<li>(3, 0.7)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
 			<lifeExpectancy>14</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.25</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.5</minAge>
+					<soundWounded>Pawn_DogSmall_Injured</soundWounded>
+					<soundDeath>Pawn_DogSmall_Dead</soundDeath>
+					<soundCall>Pawn_DogSmall_Call</soundCall>
+					<soundAngry>Pawn_DogSmall_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<soundEating>PredatorSmall_Eat</soundEating>
 		</race>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
