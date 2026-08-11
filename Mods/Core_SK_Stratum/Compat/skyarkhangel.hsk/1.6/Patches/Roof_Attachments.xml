@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[
+            defName="SolarWeb-Stratum-LEDLight_Hanging" or
+            defName="SolarWeb-Stratum-SunLamp_Hanging" or
+            defName="SolarWeb-Stratum-SurgicalSpotlight" or 
+            defName="SolarWeb-Stratum-AeroponicsMister_Hanging" or 
+            defName="SolarWeb-Stratum-CeilingFan"
+        ]</xpath>
+    </Operation>
+    
+    <!--<Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="SolarWeb-Stratum-SurgicalSpotlight"]</xpath>
+    </Operation>-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-LightningRod"]/designationCategory</xpath>
+        <value>
+            <designationCategory IsNull="True" />
+        </value>
+    </Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-FireSprinkler"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Building/Misc/fireplug</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shadowData>
+                    <volume>(0.25, 0.5, 0.25)</volume>
+                    <offset>(0,0,-0.1)</offset>
+                </shadowData>
+                <damageData>
+                    <rect>(0.2,0.2,0.6,0.6)</rect>
+                </damageData>
+            </graphicData>
+            <statBases>
+                <MaxHitPoints>30</MaxHitPoints>
+                <WorkToBuild>1000</WorkToBuild>
+                <Flammability>1.0</Flammability>
+                <Beauty>-8</Beauty>
+                <Bulk>20</Bulk>
+                <Mass>10</Mass>
+            </statBases>
+            <fillPercent>0</fillPercent>
+            <costList>
+                <ComponentIndustrial>5</ComponentIndustrial>
+                <Surfactant>25</Surfactant>
+                <ElectronicComponents>1</ElectronicComponents>
+                <Mechanism>1</Mechanism>
+            </costList>
+            <researchPrerequisites>
+                <li>IED_C1</li>
+            </researchPrerequisites>
+            <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+</Patch>

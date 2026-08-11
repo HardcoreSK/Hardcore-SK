@@ -56,6 +56,10 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-ReinforcedGlassPanel_Buildable"]</xpath>
     <value>
+        <statBases Merge="True">
+            <SolarWeb-Stratum-Insulation>0.7</SolarWeb-Stratum-Insulation>
+            <SolarWeb-Stratum-ThermalConductivity>0.3</SolarWeb-Stratum-ThermalConductivity>
+        </statBases>
 		<stuffCategories>
 			<li>StrongMetallic</li>
 			<li>SolidMetallic</li>
@@ -68,6 +72,13 @@
 			<li>Construction_B3</li>
 			<li>Roof_D2</li>
 		</researchPrerequisites>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-ReinforcedGlassPanel"]/modExtensions/li[@Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties"]/Properties/ThermalConductivity</xpath>
+    <value>
+            <ThermalConductivity>0.3</ThermalConductivity>
     </value>
   </Operation>
 
