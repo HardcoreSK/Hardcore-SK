@@ -103,4 +103,19 @@
 		<order>60</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_PowerSafety</defName>
+		<label>power safety</label>
+		<description>Protect you power network from various incidents.</description>
+		<defNames>
+			<li>LightningRod</li>
+			<li MayRequire="ratys.rtfuse">Building_RTMakeshiftFuse</li>
+			<li MayRequire="ratys.rtfuse">Building_RTCircuitBreaker</li>
+			<li MayRequire="ratys.rtsolarflareshield">Building_RTMagneticShield</li>
+		</defNames>
+		<designationCategory>Power</designationCategory>
+		<debug>false</debug>
+		<order>70</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
 </Defs>

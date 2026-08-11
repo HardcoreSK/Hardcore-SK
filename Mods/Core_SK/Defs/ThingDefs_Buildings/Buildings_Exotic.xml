@@ -230,7 +230,7 @@
 		<costList>
 			<ComponentMedieval>15</ComponentMedieval>
 		</costList>
-		<designationCategory>Joy</designationCategory>
+		<designationCategory IsNull="True" />
 		<maxTechLevelToBuild>Medieval</maxTechLevelToBuild>
 	</ThingDef>
 
@@ -264,7 +264,7 @@
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
-		<designationCategory>Joy</designationCategory>
+		<designationCategory IsNull="True" />
 		<maxTechLevelToBuild>Medieval</maxTechLevelToBuild>
 	</ThingDef>
 
@@ -313,7 +313,7 @@
 				</offsets>
 			</li>
 		</comps>
-		<designationCategory>Joy</designationCategory>
+		<designationCategory IsNull="True" />
 	</ThingDef>
 
 	<ThingDef ParentName="GenstepBuilding">

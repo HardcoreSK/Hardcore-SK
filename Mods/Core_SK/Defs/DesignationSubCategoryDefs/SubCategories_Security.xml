@@ -193,11 +193,11 @@
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimatomics">
 		<defName>SubCategory_EnergyWeapons</defName>
-		<label>advanced sentry weapons</label>
+		<label>advanced weapons</label>
 		<description>Various advanced weapons.</description>
 		<defNames>
-			<li>PPCTeslaCoil</li>
 			<li>PPCHEL</li>
+			<li>PPCTeslaCoil</li>
 			<li>PPCRailgun</li>
 			<li>PPCObelisk</li>
 			<li>PPCMarauder</li>
@@ -211,6 +211,24 @@
 		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimatomics">
+		<defName>SubCategory_WeaponsUtilities</defName>
+		<label>support systems</label>
+		<description>Various support systems.</description>
+		<defNames>
+			<li>RimatomicsShieldGenerator</li>
+			<li>PPCWeaponsConsole</li>
+			<li>PPCADS</li>
+			<li>RadarDish</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+		<order>120</order>
+		<types>
+			<li>Special</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Autoloaders</defName>
 		<label>autoloaders</label>
@@ -221,7 +239,7 @@
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
-		<order>120</order>
+		<order>130</order>
 		<types>
 			<li>Special</li>
 		</types>
@@ -236,24 +254,6 @@
 			<li>IonSatelliteBroadcaster</li>
 			<li>SkywrathController</li>
 			<li>Building_Shield</li>
-		</defNames>
-		<designationCategory>Security</designationCategory>
-		<debug>false</debug>
-		<order>130</order>
-		<types>
-			<li>Special</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.Rimatomics">
-		<defName>SubCategory_WeaponsUtilities</defName>
-		<label>support systems</label>
-		<description>Various support systems.</description>
-		<defNames>
-			<li>PPCWeaponsConsole</li>
-			<li>RimatomicsShieldGenerator</li>
-			<li>PPCADS</li>
-			<li>RadarDish</li>
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>

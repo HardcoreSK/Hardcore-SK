@@ -84,12 +84,13 @@
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Bridges</defName>
-		<label>Bridges</label>
-		<description>Water crossing bridges.</description>
+		<defName>SubCategory_Fences</defName>
+		<label>Fences</label>
+		<description>Fenсes, gates and everything close enough.</description>
 		<defNames>
-			<li>Bridge</li>
-			<li MayRequire="ludeon.rimworld.odyssey">HeavyBridge</li>
+			<li>Fence</li>
+			<li>FenceGate</li>
+			<li>PenMarker</li>
 		</defNames>
 		<designationCategory>Structure</designationCategory>
 		<debug>false</debug>
@@ -97,13 +98,12 @@
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Outdoor</defName>
-		<label>Outdoor</label>
-		<description>Fecnes, Gates and everything that belongs outside.</description>
+		<defName>SubCategory_Bridges</defName>
+		<label>Bridges</label>
+		<description>Water crossing bridges.</description>
 		<defNames>
-			<li>Fence</li>
-			<li>FenceGate</li>
-			<li>PenMarker</li>
+			<li>Bridge</li>
+			<li MayRequire="ludeon.rimworld.odyssey">HeavyBridge</li>
 		</defNames>
 		<designationCategory>Structure</designationCategory>
 		<debug>false</debug>

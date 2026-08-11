@@ -44,8 +44,8 @@
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Ludeon.RimWorld.Odyssey">
 		<defName>SubCategory_GravShipRoofs</defName>
-		<label>Grav Ship Roofs</label>
-		<description>Spacer technology roofs that can withstand the vacuum of space and are designed for a grav ship.</description>
+		<label>Space Roofs</label> 
+		<description>Spacer technology roofs that can withstand the vacuum of space and are designed for a grav ship and orbital stations.</description>
 		<defNames>
 			<li>SolarWeb-Stratum-HullPlating</li>
 			<li>SolarWeb-Stratum-ReinforcedHullPlating</li>
@@ -75,6 +75,21 @@
 		<types>
 			<li>Roofs</li>
 		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <!-- Joy -->
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Radio</defName>
+		<label>Radio</label>
+		<description>Broadcasting chill beats through your colony for relaxation.</description>
+		<defNames>
+			<li>SolarWeb-Stratum-PATransmitter</li>
+			<li>SolarWeb-Stratum-PASpeaker_Hanging</li>
+		</defNames>
+		<designationCategory>Joy</designationCategory>
+		<debug>false</debug>
+		<order>150</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 </Defs>
