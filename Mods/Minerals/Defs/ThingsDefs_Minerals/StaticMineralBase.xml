@@ -70,6 +70,7 @@
     <canSpawnOnThings>false</canSpawnOnThings>
     <!-- If the primary color is based on the stone below it -->
     <coloredByTerrain>false</coloredByTerrain>
+    <preventGravshipLandingOn>false</preventGravshipLandingOn>
     <building>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
@@ -81,9 +82,20 @@
       <mineableNonMinedEfficiency>0</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
+      <isEdifice>false</isEdifice>
       <destroyShakeAmount>0</destroyShakeAmount>
+      <ai_neverTrashThis>true</ai_neverTrashThis>
+      <canLandGravshipOn>true</canLandGravshipOn>
     </building>
+	<blocksAltitudes>
+		<li>FloorCoverings</li>
+		<li>FloorEmplacement</li>
+		<li>SmallWire</li>
+		<li>DoorMoveable</li>
+		<li>Building</li>
+		<li>BuildingBelowTop</li>
+		<li>BuildingOnTop</li>
+	</blocksAltitudes>
     <!-- What stage of map generation the thing is spawned during (chunks or plants) -->
     <newMapGenStep>chunks</newMapGenStep>
     <!-- Tags which determine how some options behave  -->
