@@ -1,4 +1,13 @@
 
+v1.12.26
+
+- Fixed compatibility patch for Vanilla Events Expanded v2.x
+- Added support for 'smaller region' and 'larger region' map features from VLE
+- Added GenStep def extension which controls whether it is included in previews
+- Added Portuguese-Brazilian translation (thanks to Digoloker for submitting)
+- Added Chinese-Simplified translation (thanks to ylc395 for submitting)
+- Updated Chinese-Traditional translation (thanks to ylc395 for submitting)
+
 v1.12.25
 
 - Fixed compatibility issues with various mods that caused inaccurate previews
