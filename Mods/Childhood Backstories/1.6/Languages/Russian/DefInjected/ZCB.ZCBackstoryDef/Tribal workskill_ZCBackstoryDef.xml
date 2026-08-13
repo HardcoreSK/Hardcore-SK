@@ -1,0 +1,145 @@
+<LanguageData>
+	<!-- 1.6\Defs\Tribal\Tribal workskill.xml -->
+	<!-- EN: shaman's apprentice -->
+	<ZCB_ShamanApprentice.title>ученик шамана</ZCB_ShamanApprentice.title>
+	<!-- EN: shaman -->
+	<ZCB_ShamanApprentice.titleShort>шаман</ZCB_ShamanApprentice.titleShort>
+	<!-- EN: [PAWN_nameDef] learned to care for all living things - including doing what's necessary to maintain the balance. -->
+	<ZCB_ShamanApprentice.baseDesc>{PAWN_nameDef} {PAWN_gender ? научился : научилась} заботиться обо всех живых существах ― в том числе делать то, что необходимо для поддержания баланса.</ZCB_ShamanApprentice.baseDesc>
+	<!-- EN: Medicine -->
+	<ZCB_ShamanApprentice.requiredSkills.0.name>Medicine</ZCB_ShamanApprentice.requiredSkills.0.name>
+	<!-- EN: Plants -->
+	<ZCB_ShamanApprentice.requiredSkills.1.name>Plants</ZCB_ShamanApprentice.requiredSkills.1.name>
+	
+	<!-- EN: tribal hunter -->
+	<ZCB_TribalHunter.title>охотник племени</ZCB_TribalHunter.title>
+	<!-- EN: hunter -->
+	<ZCB_TribalHunter.titleShort>охотник</ZCB_TribalHunter.titleShort>
+	<!-- EN: [PAWN_nameDef] wasn't very skilled with a bow, but [PAWN_pronoun] still managed to successfully hunt, helping feed [PAWN_possessive] tribe. -->
+	<ZCB_TribalHunter.baseDesc>{PAWN_nameDef} не очень умело {PAWN_gender ? обращался : обращалась} с луком, но всё же успешно {PAWN_gender ? охотился : охотилась}, помогая прокормить своё племя.</ZCB_TribalHunter.baseDesc>
+	<!-- EN: TimeHunting -->
+	<ZCB_TribalHunter.requiredRecords.0.name>TimeHunting</ZCB_TribalHunter.requiredRecords.0.name>
+	<!-- EN: KillsAnimals -->
+	<ZCB_TribalHunter.requiredRecords.1.name>KillsAnimals</ZCB_TribalHunter.requiredRecords.1.name>
+	<!-- EN: Shooting -->
+	<ZCB_TribalHunter.requiredSkills.0.name>Shooting</ZCB_TribalHunter.requiredSkills.0.name>
+	
+	<!-- EN: gatherer -->
+	<ZCB_Gatherer.title>собиратель</ZCB_Gatherer.title>
+	<!-- EN: gatherer -->
+	<ZCB_Gatherer.titleShort>собиратель</ZCB_Gatherer.titleShort>
+	<!-- EN: [PAWN_nameDef] gathered roots and berries to help feed [PAWN_possessive] tribe. -->
+	<ZCB_Gatherer.baseDesc>{PAWN_nameDef} {PAWN_gender ? собирал : собирала} корни и ягоды, чтобы прокормить своё племя.</ZCB_Gatherer.baseDesc>
+	<!-- EN: PlantsHarvested -->
+	<ZCB_Gatherer.requiredRecords.0.name>PlantsHarvested</ZCB_Gatherer.requiredRecords.0.name>
+	
+	<!-- EN: storyteller -->
+	<ZCB_Storyteller.title>сказочник</ZCB_Storyteller.title>
+	<!-- EN: storyteller -->
+	<ZCB_Storyteller.titleShort>сказочник</ZCB_Storyteller.titleShort>
+	<!-- EN: [PAWN_nameDef] loved telling stories, inventing new worlds with [PAWN_possessive] imagination and enthralling her peers around the campfire. [PAWN_pronoun] frequently used this talent to get out of doing chores. -->
+	<ZCB_Storyteller.baseDesc>{PAWN_nameDef} {PAWN_gender ? любил : любила} рассказывать истории, придумывать новые миры с помощью своего воображения и увлекать своих сверстников у костра. {PAWN_pronoun} часто {PAWN_gender ? использовал : использовала} этот талант, чтобы увильнуть от выполнения домашних обязанностей.</ZCB_Storyteller.baseDesc>
+	<!-- EN: Social -->
+	<ZCB_Storyteller.requiredSkills.0.name>Social</ZCB_Storyteller.requiredSkills.0.name>
+	
+	<!-- EN: tunnel kid -->
+	<ZCB_TunnelKid2.title>дитя пещер</ZCB_TunnelKid2.title>
+	<!-- EN: tunneller -->
+	<ZCB_TunnelKid2.titleShort>дитя пещер</ZCB_TunnelKid2.titleShort>
+	<!-- EN: [PAWN_nameDef] spent much of [PAWN_possessive] childhood underground, helping to expand [PAWN_possessive] tribe's caves. [PAWN_possessive] loved the work, and rarely went outside or saw the sun. -->
+	<ZCB_TunnelKid2.baseDesc>Большую часть своего детства {PAWN_nameDef} {PAWN_gender ? провёл : провела} под землей, помогая расширять пещеры своего племени. {PAWN_objective} нравилась эта работа, и {PAWN_pronoun} редко {PAWN_gender ? выходил : выходила} наружу и не {PAWN_gender ? видел : видела} солнца.</ZCB_TunnelKid2.baseDesc>
+	<!-- EN: PlantsHarvested -->
+	<ZCB_TunnelKid2.requiredRecords.0.name>PlantsHarvested</ZCB_TunnelKid2.requiredRecords.0.name>
+	
+	<!-- EN: artist -->
+	<ZCB_TribalArtist.title>художник</ZCB_TribalArtist.title>
+	<!-- EN: artist -->
+	<ZCB_TribalArtist.titleShort>художник</ZCB_TribalArtist.titleShort>
+	<!-- EN: [PAWN_nameDef] was fascinated by colors and shapes. [PAWN_pronoun] spent much of [PAWN_possessive] childhood drawing on every available surface, or planning out [PAWN_possessive] next creation. -->
+	<ZCB_TribalArtist.baseDesc>{PAWN_nameDef} {PAWN_gender ? был очарован : была очарована} цветами и формами. Большую часть своего детства {PAWN_pronoun} {PAWN_gender ? провёл : провела}, рисуя где только угодно либо придумывая своё следующее творение.</ZCB_TribalArtist.baseDesc>
+	
+	<!-- EN: crafter -->
+	<ZCB_TribalCrafter.title>ремесленник</ZCB_TribalCrafter.title>
+	<!-- EN: crafter -->
+	<ZCB_TribalCrafter.titleShort>ремесленник</ZCB_TribalCrafter.titleShort>
+	<!-- EN: [PAWN_nameDef] loved working with [PAWN_possessive] hands to create useful things. [PAWN_pronoun] also learned everything [PAWN_pronoun] could about gathering materials for [PAWN_possessive] crafts. -->
+	<ZCB_TribalCrafter.baseDesc>{PAWN_nameDef} {PAWN_gender ? любил : любила} работать руками, создавая полезные вещи. {PAWN_pronoun} также {PAWN_gender ? научился : научилась} собирать материалы для своих поделок.</ZCB_TribalCrafter.baseDesc>
+	
+	<!-- EN: cook -->
+	<ZCB_TribalCook.title>повар</ZCB_TribalCook.title>
+	<!-- EN: cook -->
+	<ZCB_TribalCook.titleShort>повар</ZCB_TribalCook.titleShort>
+	<!-- EN: [PAWN_nameDef] spent [PAWN_possessive] in the kitchen, helping to feed [PAWN_possessive] tribe and occasionally stealing snacks. -->
+	<ZCB_TribalCook.baseDesc>{PAWN_nameDef} {PAWN_gender ? проводил : проводила} время на кухне, помогая кормить своё племя и время от времени воруя закуски.</ZCB_TribalCook.baseDesc>
+	<!-- EN: MealsCooked -->
+	<ZCB_TribalCook.requiredRecords.0.name>MealsCooked</ZCB_TribalCook.requiredRecords.0.name>
+	
+	<!-- EN: builder -->
+	<ZCB_TribalBuilder.title>строитель</ZCB_TribalBuilder.title>
+	<!-- EN: builder -->
+	<ZCB_TribalBuilder.titleShort>строитель</ZCB_TribalBuilder.titleShort>
+	<!-- EN: [PAWN_nameDef] helped [PAWN_possessive] tribe with construction projects. [PAWN_possessive] favourite part was using a hammer. -->
+	<ZCB_TribalBuilder.baseDesc>{PAWN_nameDef} {PAWN_gender ? помогал : помогала} своему племени в строительстве. Больше всего {PAWN_objective} нравилось работать молотком.</ZCB_TribalBuilder.baseDesc>
+	
+	<!-- EN: child shaman -->
+	<ZCB_ChildShaman.title>юный шаман</ZCB_ChildShaman.title>
+	<!-- EN: nurse -->
+	<ZCB_ChildShaman.titleShort>медбрат</ZCB_ChildShaman.titleShort>
+	<!-- EN: [PAWN_nameDef] grew up taking care of the sick and injured. -->
+	<ZCB_ChildShaman.baseDesc>{PAWN_nameDef} {PAWN_gender ? вырос : выросла}, ухаживая за больными и ранеными.</ZCB_ChildShaman.baseDesc>
+	<!-- EN: TimesTendedOther -->
+	<ZCB_ChildShaman.requiredRecords.0.name>TimesTendedOther</ZCB_ChildShaman.requiredRecords.0.name>
+	
+	<!-- EN: child healer -->
+	<ZCB_Healer.title>юный знахарь</ZCB_Healer.title>
+	<!-- EN: healer -->
+	<ZCB_Healer.titleShort>знахарь</ZCB_Healer.titleShort>
+	<!-- EN: [PAWN_nameDef] was a medical prodigy, caring for the sick and injured of [PAWN_possessive] tribe and even performing surgery at a young age. Having seen so many injuries, [PAWN_pronoun] abhors violence. -->
+	<ZCB_Healer.baseDesc>{PAWN_nameDef} {PAWN_gender ? был : была} вундеркиндом в медицине, {PAWN_pronoun} {PAWN_gender ? ухаживал : ухаживала} за больными и ранеными своего племени и даже {PAWN_gender ? проводил : проводила} операции в юном возрасте. Повидав столько травм, {PAWN_pronoun} не приемлет насилия.</ZCB_Healer.baseDesc>
+	<!-- EN: OperationsPerformed -->
+	<ZCB_Healer.requiredRecords.0.name>OperationsPerformed</ZCB_Healer.requiredRecords.0.name>
+	
+	<!-- EN: animal whisperer -->
+	<ZCB_AnimalWhisperer.title>животновод</ZCB_AnimalWhisperer.title>
+	<!-- EN: whisperer -->
+	<ZCB_AnimalWhisperer.titleShort>животновод</ZCB_AnimalWhisperer.titleShort>
+	<!-- EN: [PAWN_nameDef] took care of the colony's animals, tending to their neesd and persuading them to share their resources with [PAWN_possessive] tribe. -->
+	<ZCB_AnimalWhisperer.baseDesc>{PAWN_nameDef} {PAWN_gender ? заботился : заботилась} о животных поселения, {PAWN_gender ? ухаживал : ухаживала} за ними и {PAWN_gender ? убеждал : убеждала} их поделиться своими ресурсами со своим племенем.</ZCB_AnimalWhisperer.baseDesc>
+	<!-- EN: TimesTendedOther -->
+	<ZCB_AnimalWhisperer.requiredRecords.0.name>TimesTendedOther</ZCB_AnimalWhisperer.requiredRecords.0.name>
+	<!-- EN: Animals -->
+	<ZCB_AnimalWhisperer.requiredSkills.0.name>Animals</ZCB_AnimalWhisperer.requiredSkills.0.name>
+	
+	<!-- EN: child laborer -->
+	<ZCB_ChildLaborerTribal.title>юный рабочий</ZCB_ChildLaborerTribal.title>
+	<!-- EN: laborer -->
+	<ZCB_ChildLaborerTribal.titleShort>рабочий</ZCB_ChildLaborerTribal.titleShort>
+	<!-- EN: [PAWN_nameDef] worked manual jobs around the settlement, building furniture and doing basic crafts. -->
+	<ZCB_ChildLaborerTribal.baseDesc>{PAWN_nameDef} {PAWN_gender ? выполнял : выполняла} ручную работу по всему поселению, {PAWN_gender ? собирал : собирала} мебель и {PAWN_gender ? занимался : занималась} простым ремеслом.</ZCB_ChildLaborerTribal.baseDesc>
+	<!-- EN: ThingsConstructed -->
+	<ZCB_ChildLaborerTribal.requiredRecords.0.name>ThingsConstructed</ZCB_ChildLaborerTribal.requiredRecords.0.name>
+	<!-- EN: ThingsCrafted -->
+	<ZCB_ChildLaborerTribal.requiredRecords.1.name>ThingsCrafted</ZCB_ChildLaborerTribal.requiredRecords.1.name>
+	<!-- EN: Intellectual -->
+	<ZCB_ChildLaborerTribal.requiredSkills.0.name>Intellectual</ZCB_ChildLaborerTribal.requiredSkills.0.name>
+	
+	<!-- EN: artist -->
+	<ZCB_TribalArtist2.title>художник</ZCB_TribalArtist2.title>
+	<!-- EN: artist -->
+	<ZCB_TribalArtist2.titleShort>художник</ZCB_TribalArtist2.titleShort>
+	<!-- EN: [PAWN_nameDef] loved art from a young age, spending hours drawing on the floor and painting with traditional dyes. However, [PAWN_pronoun] never learned to use [PAWN_possessive] skills in a practical way. -->
+	<ZCB_TribalArtist2.baseDesc>{PAWN_nameDef} с ранних лет {PAWN_gender ? любил : любила} искусство, часами {PAWN_gender ? рисовал : рисовала} на полу и {PAWN_gender ? красил : красила} традиционными красками. Однако {PAWN_pronoun} так и не {PAWN_gender ? научился : научилась} применять свои навыки на практике.</ZCB_TribalArtist2.baseDesc>
+	<!-- EN: Artistic -->
+	<ZCB_TribalArtist2.requiredSkills.0.name>Artistic</ZCB_TribalArtist2.requiredSkills.0.name>
+	
+	<!-- EN: lookout -->
+	<ZCB_TribalLookout.title>сторож</ZCB_TribalLookout.title>
+	<!-- EN: lookout -->
+	<ZCB_TribalLookout.titleShort>сторож</ZCB_TribalLookout.titleShort>
+	<!-- EN: [PAWN_nameDef] was assigned to watch over the animal herds when young, and keep an eye out for predators. As [PAWN_pronoun] got older, [PAWN_pronoun] would chase the predators away with a bow. -->
+	<ZCB_TribalLookout.baseDesc>В юности {PAWN_nameDef} поручали присматривать за стадами животных и следить за хищниками. Когда {PAWN_pronoun} {PAWN_gender ? подрос, то стал : подросла, то стала} отгонять хищников с помощью лука.</ZCB_TribalLookout.baseDesc>
+	<!-- EN: Animals -->
+	<ZCB_TribalLookout.requiredSkills.0.name>Animals</ZCB_TribalLookout.requiredSkills.0.name>
+	<!-- EN: Shooting -->
+	<ZCB_TribalLookout.requiredSkills.1.name>Shooting</ZCB_TribalLookout.requiredSkills.1.name>
+</LanguageData>

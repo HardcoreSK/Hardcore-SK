@@ -1,0 +1,32 @@
+<LanguageData>
+	<!-- 1.6\Defs\Basic Backstories\Trait backstories.xml -->
+	<!-- EN: ugly child -->
+	<ZCB_UglyChild.title>уродливый мальчик</ZCB_UglyChild.title>
+	<!-- EN: ugly -->
+	<ZCB_UglyChild.titleShort>уродливый</ZCB_UglyChild.titleShort>
+	<!-- EN: [PAWN_nameDef] was quite an ugly child. [PAWN_pronoun] worked extra hard to make friends. -->
+	<ZCB_UglyChild.baseDesc>{PAWN_nameDef} {PAWN_gender ? был : была} довольно уродливым ребёнком, из-за чего {PAWN_objective} было очень сложно завести друзей.</ZCB_UglyChild.baseDesc>
+	
+	<!-- EN: staggeringly ugly child -->
+	<ZCB_UglyChild2.title>невероятно уродливый</ZCB_UglyChild2.title>
+	<!-- EN: ugly -->
+	<ZCB_UglyChild2.titleShort>уродливый</ZCB_UglyChild2.titleShort>
+	<!-- EN: [PAWN_nameDef] was a staggeringly ugly child. [PAWN_pronoun] worked extra hard to make friends, baking treats for the rest of the colony to win favor. -->
+	<ZCB_UglyChild2.baseDesc>{PAWN_nameDef} {PAWN_gender ? был : была} невероятно уродливым ребёнком. {PAWN_pronoun} очень {PAWN_gender ? старался : старалась} завести друзей и {PAWN_gender ? пёк : пекла} угощения для остальных поселенцев, чтобы завоевать их расположение.</ZCB_UglyChild2.baseDesc>
+	<!-- EN: MealsCooked -->
+	<ZCB_UglyChild2.requiredRecords.0.name>MealsCooked</ZCB_UglyChild2.requiredRecords.0.name>
+	
+	<!-- EN: tunnel kid -->
+	<ZCB_Undergrounder.title>дитя пещер</ZCB_Undergrounder.title>
+	<!-- EN: tunnel kid -->
+	<ZCB_Undergrounder.titleShort>дитя пещер</ZCB_Undergrounder.titleShort>
+	<!-- EN: [PAWN_nameDef] loved exploring and expanding the tunnels that extended from his home. [PAWN_pronoun] enjoyed any kind of digging, even helping plow and till [PAWN_possessive] colony's farms. -->
+	<ZCB_Undergrounder.baseDesc>{PAWN_nameDef} {PAWN_gender ? обожал : обожала} исследовать и расширять туннели, которые тянулись от {PAWN_possessive} дома. {PAWN_objective} нравилось копать и даже работать на ферме.</ZCB_Undergrounder.baseDesc>
+	
+	<!-- EN: assassin -->
+	<ZCB_Assassin.title>ассасин</ZCB_Assassin.title>
+	<!-- EN: assassin -->
+	<ZCB_Assassin.titleShort>ассасин</ZCB_Assassin.titleShort>
+	<!-- EN: [PAWN_nameDef] loved watching [PAWN_possessive] enemies die through a scope. Or [PAWN_possessive] friends, [PAWN_pronoun] wasn't picky. -->
+	<ZCB_Assassin.baseDesc>{PAWN_nameDef} нравилось наблюдать за смертью врагов через прицел. Или друзей ― {PAWN_objective} без разницы.</ZCB_Assassin.baseDesc>
+</LanguageData>

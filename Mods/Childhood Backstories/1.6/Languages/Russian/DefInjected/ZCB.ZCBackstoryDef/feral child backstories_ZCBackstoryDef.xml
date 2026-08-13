@@ -1,0 +1,29 @@
+<LanguageData>
+	<!-- 1.6\Defs\Basic Backstories\feral child backstories.xml -->
+	<!-- EN: feral child -->
+	<ZCB_FeralChild.title>одичавший ребёнок</ZCB_FeralChild.title>
+	<!-- EN: feral -->
+	<ZCB_FeralChild.titleShort>маугли</ZCB_FeralChild.titleShort>
+	<!-- EN: [PAWN_nameDef] was left to survive on [PAWN_possessive] own after some trauma that [PAWN_pronoun] refuses to talk about. [PAWN_pronoun] learned to appreciate the nature that protected and cared for [PAWN_objective]. -->
+	<ZCB_FeralChild.baseDesc>{PAWN_nameDef} {PAWN_gender ? был оставлен : была оставлена} выживать самостоятельно после травмы, о которой {PAWN_pronoun} отказывается говорить. {PAWN_pronoun} {PAWN_gender ? научился : научилась} ценить природу, которая защищала и заботилась о н{PAWN_possessive}.</ZCB_FeralChild.baseDesc>
+	<!-- EN: ZCB_TimeAsWildMan -->
+	<ZCB_FeralChild.requiredRecords.0.name>ZCB_TimeAsWildMan</ZCB_FeralChild.requiredRecords.0.name>
+	
+	<!-- EN: feral child -->
+	<ZCB_FeralChild2.title>одичавший ребёнок</ZCB_FeralChild2.title>
+	<!-- EN: feral -->
+	<ZCB_FeralChild2.titleShort>маугли</ZCB_FeralChild2.titleShort>
+	<!-- EN: Abandoned by [PAWN_possessive] parents at an early age, [PAWN_nameDef] was raised by a herd of friendly muffalo. [PAWN_pronoun] cared for the herd, fighting off predators and tending to minor wounds. -->
+	<ZCB_FeralChild2.baseDesc>{PAWN_nameDef} {PAWN_gender ? был брошен : была брошена} родителями и {PAWN_gender ? рос : росла} в стаде дружелюбных муффало. {PAWN_pronoun} {PAWN_gender ? заботился о них, отбивался от хищников и лечил мелкие раны : заботилась о них, отбивалась от хищников и лечила мелкие раны}.</ZCB_FeralChild2.baseDesc>
+	<!-- EN: ZCB_TimeAsWildMan -->
+	<ZCB_FeralChild2.requiredRecords.0.name>ZCB_TimeAsWildMan</ZCB_FeralChild2.requiredRecords.0.name>
+	
+	<!-- EN: wild child -->
+	<ZCB_WildChild.title>дикий ребёнок</ZCB_WildChild.title>
+	<!-- EN: wild -->
+	<ZCB_WildChild.titleShort>дикарь</ZCB_WildChild.titleShort>
+	<!-- EN: [PAWN_nameDef] survived alone in the wilderness for years before being adopted into [PAWN_factionName]. [PAWN_pronoun] missed having company, and became very outgoing after finding [PAWN_possessive] new family. -->
+	<ZCB_WildChild.baseDesc>{PAWN_nameDef} долгие годы {PAWN_gender ? выживал один : выживала одна} в пустыне, прежде чем {PAWN_gender ? был принят : была принята} во фракцию {PAWN_factionName}. {PAWN_pronoun} {PAWN_gender ? скучал по компании и стал очень общительным после того, как нашёл : скучала по компании и стала очень общительной после того, как нашла} свою новую семью.</ZCB_WildChild.baseDesc>
+	<!-- EN: ZCB_TimeAsWildMan -->
+	<ZCB_WildChild.requiredRecords.0.name>ZCB_TimeAsWildMan</ZCB_WildChild.requiredRecords.0.name>
+</LanguageData>
