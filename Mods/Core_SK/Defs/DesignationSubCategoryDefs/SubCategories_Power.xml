@@ -109,6 +109,7 @@
 		<description>Protect you power network from various incidents.</description>
 		<defNames>
 			<li>LightningRod</li>
+			<li MayRequire="mersid.backuppowerupdated">BackupPower_Attachment</li>
 			<li MayRequire="ratys.rtfuse">Building_RTMakeshiftFuse</li>
 			<li MayRequire="ratys.rtfuse">Building_RTCircuitBreaker</li>
 			<li MayRequire="ratys.rtsolarflareshield">Building_RTMagneticShield</li>
