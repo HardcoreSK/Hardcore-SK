@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-    <Operation Class="PatchOperationAdd">
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ScenarioDef[defName="LAO_StrandedAboveTribe"]</xpath>
+    </Operation>
+    <!--<Operation Class="PatchOperationAdd">
         <xpath>Defs/ScenarioDef[defName="LAO_StrandedAboveTribe"]/scenario/parts</xpath>
         <value>
             <li Class="ScenPart_StartingThing_Defined">
@@ -35,5 +38,5 @@
                 <allowRoofed>false</allowRoofed>
             </li>
         </value>
-    </Operation>
+    </Operation>-->
 </Patch>
