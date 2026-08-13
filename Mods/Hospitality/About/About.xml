@@ -1,30 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Hospitality</name>
-  <author>Orion</author>
-  <url>https://ludeon.com/forums/index.php?topic=11444.0</url>
+  <name>Hospitality (Continued)</name>
+  <author>Zaljerem</author>
   <supportedVersions>
-		<li>1.0</li>
-		<li>1.1</li>
-		<li>1.2</li>
-		<li>1.3</li>
-		<li>1.4</li>
-	  	<li>1.5</li>
+		<li>1.5</li>		
+	  	<li>1.6</li>
   </supportedVersions>
+<modVersion IgnoreIfNoMatchingField="True">1.1.0</modVersion>
   <packageId>Orion.Hospitality</packageId>
-  <description>Allows you to recruit visitors. At a price, of course. 
+  <description>
+Original mod by Orion
+https://steamcommunity.com/sharedfiles/filedetails/?id=753498552
+https://ludeon.com/forums/index.php?topic=11444.0
+GNU General Public License
+All the same, if the original author requests it, I will remove this update.
+
+packageID of Orion.Hospitality has been retained for compatibility purposes. Please unsub from the original for 1.6.
+
+--
+
+This mod should really need no introduction, but if you don't know, I recommend checking the original mod page.
+
+It is my great honor to continue this classic, historical, amazing mod. 
+
+All appreciation to Orion, for the original mod, and for licensing it so that it will live on. Thanks for everything!
+A high-five to Adamas for his work, and being ok with me taking this on. Great mods, I'm a big fan!
+
+Thank you to everyone who helped test!
+Special thanks to Halicade, SirHumphreyAppleby, and Roque the Rogue for heavy testing and error reporting! We've smashed a bunch of bugs - start as you mean to go on!
+
+--
+
+Original mod notes (1.5):
+
+Allows you to recruit visitors. At a price, of course. 
 
 You can also improve your relationship with visiting factions and sell items to visiting guests. Guests will buy and use things inside of their allowed area.
-
 
 Errors and bugs: If you get errors, most likely Hospitality is clashing with another mod you're using.
 
 So to help me fix bugs, please describe clearly what happened. I also need a log. You create it by pressing Ctrl-F12 after you get an error or the problem first occurs. You'll get a link that you can post with your description. 
 
 Hospitality should be loaded as late as possible in the load order.
-  </description>
+</description>
   <modIconPath IgnoreIfNoMatchingField="True">HospitalityModIcon</modIconPath>
-
   <modDependencies>
 		<li>
 			<packageId>brrainz.harmony</packageId>
@@ -33,11 +52,10 @@ Hospitality should be loaded as late as possible in the load order.
 			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
 		</li>
 	</modDependencies>
-
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>brrainz.harmony</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	</loadAfter>
-
 </ModMetaData>
