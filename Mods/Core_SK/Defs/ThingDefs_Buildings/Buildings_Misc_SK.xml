@@ -721,6 +721,12 @@
 				<thingDefs>
 					<li>SteamGeyser</li>
 				</thingDefs>
+                <terrainDefs>
+					<li>Bridge</li>
+					<li MayRequire="ludeon.rimworld.odyssey">HeavyBridge</li>
+					<li MayRequire="ludeon.rimworld.odyssey">AncientHeavyBridge</li>
+					<li MayRequire="ludeon.rimworld.odyssey">Substructure</li>
+                </terrainDefs>
 			</li>
 		</comps>
 		<size>(1,1)</size>
