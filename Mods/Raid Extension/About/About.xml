@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <packageId>SR.ModRimworld.RaidExtension</packageId>
+    <name>Raid Extension</name>
+    <authors>
+        <li>llunak</li>
+        <li>Shadowrabbit</li>
+    </authors>
+    <supportedVersions>
+        <li>1.2</li>
+        <li>1.3</li>
+        <li>1.4</li>
+        <li>1.5</li>
+        <li>1.6</li>
+        <!-- Update also harmony version below. -->
+    </supportedVersions>
+    <modDependenciesByVersion>
+        <v1.5>
+            <li>
+                <packageId>brrainz.harmony</packageId>
+                <displayName>Harmony</displayName>
+                <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+                <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+            </li>
+        </v1.5>
+        <v1.6>
+            <li>
+                <packageId>brrainz.harmony</packageId>
+                <displayName>Harmony</displayName>
+                <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+                <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+            </li>
+        </v1.6>
+    </modDependenciesByVersion>
+    <loadAfter>
+        <li>Ludeon.RimWorld</li>
+        <li>Ludeon.RimWorld.Royalty</li>
+    </loadAfter>
+    <description>4 new incidents have been added to this mod. These events expand the ways in which hostile factions interact with colonists, making them not limited to the form of raids.
+This is a fork of https://steamcommunity.com/sharedfiles/filedetails/?id=2554928098 , with changes from https://steamcommunity.com/sharedfiles/filedetails/?id=3220647134 incorporated.
+    </description>
+</ModMetaData>
