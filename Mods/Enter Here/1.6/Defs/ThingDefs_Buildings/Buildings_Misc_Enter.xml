@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>EnterHereSpot</defName>
@@ -22,6 +22,7 @@
     <placeWorkers>
       <li>EnterHere.PlaceWorker_NearEdge</li>
     </placeWorkers>
+    <terrainAffordanceNeeded Inherit="False" />
     <building>
       <isInert>true</isInert>
       <sowTag>SupportPlantsOnly</sowTag>
@@ -30,6 +31,8 @@
       <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
       <ai_chillDestination>false</ai_chillDestination>
       <ai_neverTrashThis>true</ai_neverTrashThis>
+      <claimable>false</claimable>
+      <expandHomeArea>false</expandHomeArea>
     </building>
   </ThingDef>
 </Defs>
