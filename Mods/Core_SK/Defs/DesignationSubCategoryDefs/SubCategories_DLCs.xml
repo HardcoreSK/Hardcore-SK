@@ -78,6 +78,19 @@
 		<debug>false</debug>
 		<order>50</order>
 	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+        <defName>SubCategory_BossSummoners</defName>
+        <label>Mechbosses locators</label>
+        <description>Summon powerful mechlords to fight with.</description>
+        <defNames>
+            <li>BurnoutMechlinkBooster</li>
+            <li>MechbandDish</li>
+        </defNames>
+        <designationCategory>Biotech</designationCategory>
+        <debug>false</debug>
+		<order>60</order>
+    </ArchitectSense.DesignationSubCategoryDef>
 
     <!--Anomaly-->
 
