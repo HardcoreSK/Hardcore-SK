@@ -28,10 +28,16 @@
 					<li>SandTornado</li>
 				</BlacklistGameConditionDef>
 				<BlacklistIncidentDef>
+					<li>SeasonalFlooding</li>
+					<li>LavaFlow</li>
+					<li>LavaEmergence</li>
+					<li>VolcanicDebris</li>
+					<li>DroughtInitial</li>
+					<li>Drought</li>
+					<li>ThrumboPasses</li>
 					<li>FarmAnimalsWanderIn</li>
 					<li>WandererJoin</li>
 					<li>RefugeeChased</li>
-					<li>ThrumboPasses</li>
 					<li>HerdMigration</li>
 					<li>WildManWandersIn</li>
 					<li>Alphabeavers</li>
@@ -39,9 +45,9 @@
 					<li>VisitorGroup</li>
 					<li>TravelerGroup</li>
 					<li>ManhunterPack</li>
-					<!--<li>CropEaters</li>
+					<li>CropEaters</li>
 					<li>HungryCritters</li>
-					<li>DevourersOfCrops</li>-->
+					<li>DevourersOfCrops</li>
 					<li>Swarm</li>
 					<li>FeenixPasses</li>
 					<li>IcicatPasses</li>
@@ -53,6 +59,31 @@
 					<li>SeismicActivity</li>
 					<li>MajorRescue</li>
 					<li>OrassianFound</li>
+					<li MayRequire="SR.ModRimworld.FactionalWarContinued">SrFactionWar</li>
+					<li MayRequire="SR.ModRimworld.FactionalWarContinued">SrFactionWarShellingSiteGenerate</li>
+					<li MayRequire="SR.ModRimworld.FactionalWarContinued">SrFactionWarContentionSiteGenerate</li>
+					<li MayRequire="SR.ModRimworld.FactionalWarContinued">SrFactionWarTempCampSiteGenerate</li>
+					<li MayRequire="SR.ModRimworld.RaidExtension">SrPoaching</li>
+					<li MayRequire="SR.ModRimworld.RaidExtension">SrPoachingSurprise</li>
+					<li MayRequire="SR.ModRimworld.RaidExtension">SrLogging</li>
+					<li MayRequire="SR.ModRimworld.RaidExtension">SrLoggingSurprise</li>
+					<li MayRequire="SR.ModRimworld.RaidExtension">SrHositleTraveler</li>
+					<li MayRequire="SR.ModRimworld.RaidExtension">SrHositleTravelerSurprise</li>
+					<li MayRequire="SR.ModRimworld.RaidExtension">SrHositleCaravanPassing</li>
+					<li MayRequire="SR.ModRimworld.RaidExtension">SrHositleCaravanPassingSurprise</li>
+					<li MayRequire="Albion.GoExplore">LostCityLGE</li>
+					<li MayRequire="Albion.GoExplore">AmbrosiaAnimalsLGE</li>
+					<li MayRequire="Albion.GoExplore">ShipCoreStartupLGE</li>
+					<li MayRequire="Albion.GoExplore">PrisonCampLGE</li>
+					<li MayRequire="Albion.GoExplore">NewSettlementLGE</li>
+					<li MayRequire="Albion.GoExplore">QuestResearchRequestSW</li>
+					<li MayRequire="Albion.GoExplore">InterceptedMessageLGE</li>
+					<li MayRequire="Orion.Hospitality">VisitorGroupMax</li>
+					<li MayRequire="Orion.Hospitality">VisitorGroupSelectFaction</li>
+					<li MayRequire="Orion.Hospitality">HappyGuestJoins</li>
+					<li MayRequire="Solaris.RatkinRaceMod">RatkinTunnel_Guerrilla</li>
+					<li MayRequire="Solaris.RatkinRaceMod">RatkinFollowUpTroops</li>
+					<li MayRequire="Solaris.RatkinRaceMod">GiveQuest_ReliquaryPilgrims_Ratkin</li>
 				</BlacklistIncidentDef>
 				<BlacklistQuestScriptDef>
 					<li>ThreatReward_Raid_Joiner</li>
@@ -61,4 +92,45 @@
 		</value>
 	</Operation>
 	
+
+	<Operation Class="PatchOperationReplace"> <!--yes, full replace-->
+		<xpath>Defs/LayeredAtmosphereOrbit.PlanetLayerGroupDef[defName="LAO_Orbit"]/modExtensions/li</xpath>
+		<value>
+			<li Class="LayeredAtmosphereOrbit.LayeredAtmosphereOrbitDefModExtension">
+				<vacuum>1</vacuum>
+				<minFactionTechLevel>Spacer</minFactionTechLevel>
+				<WhitelistIncidentDef>
+                    <!--Vanilla + Odyssey-->
+					<li>RaidEnemy</li>
+					<li>OrbitalDebris</li>
+					<li>MeteoriteImpact</li>
+					<li>ResourcePodCrash</li>
+					<li>RefugeePodCrash</li>
+					<li>ShipChunkDrop</li>
+					<li>OrbitalTraderArrival</li>
+					<li>MechCluster</li>
+                    <!--Core SK-->
+					<li>OrbitalTraderArrivalSBT</li>
+					<li>LongNight</li>
+					<li>StorytellerFrenzyEvent</li>
+					<li>SkyFall</li>
+					<li>MoonFall</li>
+					<li>ZeonIncoming</li>
+					<li>Accident</li>
+					<li>RazorRain</li>
+					<li>CosmicRadiation</li>
+					<li>AccidentalExplosion</li>
+					<li>ColonistStash</li>
+					<li>EclipseMeteorImpact</li>
+					<li>MysteriousTransmission</li>
+					<li>Thanksgiving</li>
+					<li>EnemyShip</li>
+					<li>PortalRaid</li>
+					<li>BombardmentIncident</li>
+					<li>PowerBeamStrikeIncident</li>
+					<li MayRequire="Dubwise.Rimatomics">TransformerExplosion</li>
+				</WhitelistIncidentDef>
+			</li>
+		</value>
+	</Operation>
 </Patch>
