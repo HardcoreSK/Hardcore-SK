@@ -1,24 +1,93 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-	<NamerWorldObject_LAO_FloatingIslandBase.rulePack.rulesStrings>
+	<!-- EN: 
 		<li>flying_terrain->[flying] [terrain]</li>
-		<li>flying->парящий</li>
-		<li>flying->воздушный</li>
-		<li>flying->зависший</li>
-		<li>flying->летающий</li>
-		<li>flying->небесный</li>
-		<li>flying->леветирующий</li>
-		<li>flying->дрейфующий</li>
-		<li>terrain->остров</li>
-		<li>terrain->земля</li>
-		<li>terrain->поверхность</li>
-		<li>terrain->суша</li>
-		<li>terrain->островок</li>
-		<li>size->Гигантский</li>
-		<li>size->Огромный</li>
-		<li>size->Колоссальный</li>
-		<li>size->Большой</li>
+		<li>flying->floating</li>
+		<li>flying->aerial</li>
+		<li>flying->hovering</li>
+		<li>flying->flying</li>
+		<li>flying->sky</li>
+		<li>flying->skyborne</li>
+		<li>flying->airborne</li>
+		<li>terrain->island</li>
+		<li>terrain->land</li>
+		<li>terrain->landform</li>
+		<li>terrain->landmass</li>
+		<li>terrain->isle</li>
+		<li>size->Giant</li>
+		<li>size->Massive</li>
+		<li>size->Enormous</li>
+		<li>size->Big</li>
+		<li>typeMountain->Mountain</li>
+		<li>typeMountain->Peak</li>
+		<li>typeMountain->Alpine</li>
+		<li>typeHill->Hill</li>
+		<li>typeHill->Knoll</li>
+		<li>typeHill->Mound</li>
+		<li>typeFlat->Plain</li>
+		<li>typeFlat->Lowland</li>
+		<li>typeFlat->Flatland</li>
+		<li>typeCrust->Crust</li>
+		<li>typeCrust->Caves</li>
+		<li>typeCrust->Cavern</li>
+		<li>typeInfested->Infested</li>
+		<li>typeInfested->Swarming</li>
+		<li>typeInfested->Teeming</li>
+		<li>typeCollapsing->Collapsing</li>
+		<li>typeCollapsing->Crumbling</li>
+		<li>typeCollapsing->Disintegrating</li>
+		<li>typeCollapsing->Falling apart</li>
+	-->
+	<NamerWorldObject_LAO_FloatingIslandBase.rulePack.rulesStrings>
+		<li>r_name->[flying_terrain]</li>
+		<li>flying_terrain->[flying_terrain_masc]</li>
+		<li>flying_terrain->[flying_terrain_fem]</li>
+		<li>flying_terrain->[flying_terrain_neut]</li>
+		<li>flying_terrain_masc->[flying_masc] [terrain_masc]</li>
+		<li>flying_terrain_fem->[flying_fem] [terrain_fem]</li>
+		<li>flying_terrain_neut->[flying_neut] [terrain_neut]</li>
+		<li>flying_masc->парящий</li>
+		<li>flying_fem->парящая</li>
+		<li>flying_neut->парящее</li>
+		<li>flying_masc->воздушный</li>
+		<li>flying_fem->воздушная</li>
+		<li>flying_neut->воздушное</li>
+		<li>flying_masc->зависший</li>
+		<li>flying_fem->зависшая</li>
+		<li>flying_neut->зависшее</li>
+		<li>flying_masc->летающий</li>
+		<li>flying_fem->летающая</li>
+		<li>flying_neut->летающее</li>
+		<li>flying_masc->небесный</li>
+		<li>flying_fem->небесная</li>
+		<li>flying_neut->небесное</li>
+		<li>flying_masc->левитирующий</li>
+		<li>flying_fem->левитирующая</li>
+		<li>flying_neut->левитирующее</li>
+		<li>flying_masc->дрейфующий</li>
+		<li>flying_fem->дрейфующая</li>
+		<li>flying_neut->дрейфующее</li>
+		<li>terrain_masc->остров</li>
+		<li>terrain_masc->рельеф</li>
+		<li>terrain_masc->массив</li>
+		<li>terrain_fem->земля</li>
+		<li>terrain_fem->масса</li>
+		<li>terrain_fem->суша</li>
+		<li>terrain_fem->поверхность</li>
+		<li>terrain_neut->образование</li>
+		<li>size_masc->Гигантский</li>
+		<li>size_fem->Гигантская</li>
+		<li>size_neut->Гигантское</li>
+		<li>size_masc->Огромный</li>
+		<li>size_fem->Огромная</li>
+		<li>size_neut->Огромное</li>
+		<li>size_masc->Массивный</li>
+		<li>size_fem->Массивная</li>
+		<li>size_neut->Массивное</li>
+		<li>size_masc->Большой</li>
+		<li>size_fem->Большая</li>
+		<li>size_neut->Большое</li>
 		<li>typeMountain->гора</li>
 		<li>typeMountain->вершина</li>
 		<li>typeMountain->пик</li>
@@ -30,23 +99,79 @@
 		<li>typeFlat->плоскогорье</li>
 		<li>typeCrust->кора</li>
 		<li>typeCrust->недры</li>
-		<li>typeCrust->пешера</li>
+		<li>typeCrust->пещера</li>
 		<li>typeInfested->заражённый</li>
 		<li>typeInfested->кишащий</li>
-		<li>typeInfested->инфецированный</li>
+		<li>typeInfested->инфицированный</li>
 		<li>typeCollapsing->разрушающийся</li>
 		<li>typeCollapsing->крошащийся</li>
 		<li>typeCollapsing->распадающийся</li>
 		<li>typeCollapsing->разваливающийся</li>
 	</NamerWorldObject_LAO_FloatingIslandBase.rulePack.rulesStrings>
-  
-	<NamerWorldObject_LAO_FloatingIsland.rulePack.rulesStrings.0>terrain_word(p=4)->[flying_terrain]</NamerWorldObject_LAO_FloatingIsland.rulePack.rulesStrings.0>
-	<NamerWorldObject_LAO_FloatingIslandHill.rulePack.rulesStrings.0>terrain_word(p=4)->[flying_terrain] ([typeHill])</NamerWorldObject_LAO_FloatingIslandHill.rulePack.rulesStrings.0>
-	<NamerWorldObject_LAO_FloatingIslandFlat.rulePack.rulesStrings.0>terrain_word(p=4)->[flying_terrain] ([typeFlat])</NamerWorldObject_LAO_FloatingIslandFlat.rulePack.rulesStrings.0>
-	<NamerWorldObject_LAO_FloatingIslandGiant.rulePack.rulesStrings.0>terrain_word(p=4)->[size] [flying_terrain]</NamerWorldObject_LAO_FloatingIslandGiant.rulePack.rulesStrings.0>
-	<NamerWorldObject_LAO_FloatingIslandGiantMountain.rulePack.rulesStrings.0>terrain_word(p=4)->[size] [flying_terrain] ([typeMountain])</NamerWorldObject_LAO_FloatingIslandGiantMountain.rulePack.rulesStrings.0>
-	<NamerWorldObject_LAO_FloatingIslandGiantCrust.rulePack.rulesStrings.0>terrain_word(p=4)->[size] [flying_terrain] ([typeCrust])</NamerWorldObject_LAO_FloatingIslandGiantCrust.rulePack.rulesStrings.0>
-	<NamerWorldObject_LAO_FloatingIslandGiantFlat.rulePack.rulesStrings.0>terrain_word(p=4)->[size] [flying_terrain] ([typeFlat])</NamerWorldObject_LAO_FloatingIslandGiantFlat.rulePack.rulesStrings.0>
-	<NamerWorldObject_LAO_FloatingIslandCollapsing.rulePack.rulesStrings.0>terrain_word(p=4)->[flying_terrain] ([typeCollapsing])</NamerWorldObject_LAO_FloatingIslandCollapsing.rulePack.rulesStrings.0>
+
+	<!-- EN: 
+		<li>terrain_word(p=4)->[flying_terrain]</li>
+	-->
+	<NamerWorldObject_LAO_FloatingIsland.rulePack.rulesStrings>
+		<li>terrain_word(p=4)->[flying_terrain]</li>
+	</NamerWorldObject_LAO_FloatingIsland.rulePack.rulesStrings>
+
+	<!-- EN: 
+		<li>terrain_word(p=4)->[flying_terrain] ([typeHill])</li>
+	 -->
+	<NamerWorldObject_LAO_FloatingIslandHill.rulePack.rulesStrings>
+		<li>terrain_word(p=4)->[flying_terrain] ([typeHill])</li>
+	</NamerWorldObject_LAO_FloatingIslandHill.rulePack.rulesStrings>
+
+	<!-- EN: 
+		<li>terrain_word(p=4)->[flying_terrain] ([typeFlat])</li>
+	 -->
+	<NamerWorldObject_LAO_FloatingIslandFlat.rulePack.rulesStrings>
+		<li>terrain_word(p=4)->[flying_terrain] ([typeFlat])</li>
+	</NamerWorldObject_LAO_FloatingIslandFlat.rulePack.rulesStrings>
+
+	<!-- EN: 
+		<li>terrain_word(p=4)->[size] [flying_terrain]</li>
+	 -->
+	<NamerWorldObject_LAO_FloatingIslandGiant.rulePack.rulesStrings>
+		<li>terrain_word(p=4)->[size_masc] [flying_terrain_masc]</li>
+		<li>terrain_word(p=4)->[size_fem] [flying_terrain_fem]</li>
+		<li>terrain_word(p=4)->[size_neut] [flying_terrain_neut]</li>
+	</NamerWorldObject_LAO_FloatingIslandGiant.rulePack.rulesStrings>
+
+	<!-- EN: 
+		<li>terrain_word(p=4)->[size] [flying_terrain] ([typeMountain])</li>
+	 -->
+	<NamerWorldObject_LAO_FloatingIslandGiantMountain.rulePack.rulesStrings>
+		<li>terrain_word(p=4)->[size_masc] [flying_terrain_masc] ([typeMountain])</li>
+		<li>terrain_word(p=4)->[size_fem] [flying_terrain_fem] ([typeMountain])</li>
+		<li>terrain_word(p=4)->[size_neut] [flying_terrain_neut] ([typeMountain])</li>
+	</NamerWorldObject_LAO_FloatingIslandGiantMountain.rulePack.rulesStrings>
+
+	<!-- EN: 
+		<li>terrain_word(p=4)->[size] [flying_terrain] ([typeCrust])</li>
+	 -->
+	<NamerWorldObject_LAO_FloatingIslandGiantCrust.rulePack.rulesStrings>
+		<li>terrain_word(p=4)->[size_masc] [flying_terrain_masc] ([typeCrust])</li>
+		<li>terrain_word(p=4)->[size_fem] [flying_terrain_fem] ([typeCrust])</li>
+		<li>terrain_word(p=4)->[size_neut] [flying_terrain_neut] ([typeCrust])</li>
+	</NamerWorldObject_LAO_FloatingIslandGiantCrust.rulePack.rulesStrings>
+
+	<!-- EN: 
+		<li>terrain_word(p=4)->[size] [flying_terrain] ([typeFlat])</li>
+	 -->
+
+	<NamerWorldObject_LAO_FloatingIslandGiantFlat.rulePack.rulesStrings>
+		<li>terrain_word(p=4)->[size_masc] [flying_terrain_masc] ([typeFlat])</li>
+		<li>terrain_word(p=4)->[size_fem] [flying_terrain_fem] ([typeFlat])</li>
+		<li>terrain_word(p=4)->[size_neut] [flying_terrain_neut] ([typeFlat])</li>
+	</NamerWorldObject_LAO_FloatingIslandGiantFlat.rulePack.rulesStrings>
+
+	<!-- EN: 
+		<li>terrain_word(p=4)->[flying_terrain] ([typeCollapsing])</li>
+	 -->
+	<NamerWorldObject_LAO_FloatingIslandCollapsing.rulePack.rulesStrings>
+		<li>terrain_word(p=4)->[flying_terrain] ([typeCollapsing])</li>
+	</NamerWorldObject_LAO_FloatingIslandCollapsing.rulePack.rulesStrings>
 
 </LanguageData>

@@ -1,17 +1,35 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-	<NamerWorldObject_LAO_AsteroidGiantBasic.rulePack.rulesStrings>
+	<!-- EN: 
 		<li>terrain_word(p=4)->[size] [terrain]</li>
-		<li>size->Гигантский</li>
-		<li>size->Огромный</li>
-		<li>size->Колоссальный</li>
-		<li>size->Большой</li>
-		<li>terrain->астероид</li>
-		<li>terrain->скала</li>
-		<li>terrain->спутник</li>
-		<li>terrain->планетоид</li>
-		<li>terrain->луна</li>
+		<li>size->Giant</li>
+		<li>size->Massive</li>
+		<li>size->Enormous</li>
+		<li>size->Big</li>
+		<li>terrain->asteroid</li>
+		<li>terrain->rock</li>
+		<li>terrain->satellite</li>
+		<li>terrain->planetoid</li>
+		<li>terrain->moon</li>
+	-->
+	<NamerWorldObject_LAO_AsteroidGiantBasic.rulePack.rulesStrings>
+		<li>r_name(p=4)->[terrain_word]</li>
+		<li>terrain_word(p=4)->[size_masc] [terrain_masc]</li>
+		<li>terrain_word(p=4)->[size_fem] [terrain_fem]</li>
+		<li>size_masc->Гигантский</li>
+		<li>size_fem->Гигантская</li>
+		<li>size_masc->Огромный</li>
+		<li>size_fem->Огромная</li>
+		<li>size_masc->Колоссальный</li>
+		<li>size_fem->Колоссальная</li>
+		<li>size_masc->Большой</li>
+		<li>size_fem->Большая</li>
+		<li>terrain_masc->астероид</li>
+		<li>terrain_fem->скала</li>
+		<li>terrain_masc->спутник</li>
+		<li>terrain_masc->планетоид</li>
+		<li>terrain_fem->луна</li>
 	</NamerWorldObject_LAO_AsteroidGiantBasic.rulePack.rulesStrings>
-  
+
 </LanguageData>
