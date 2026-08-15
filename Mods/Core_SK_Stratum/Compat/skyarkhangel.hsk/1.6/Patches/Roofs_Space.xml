@@ -4,32 +4,43 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-HullPlating_Buildable"]</xpath>
     <value>
-      <costList>
-        <Steel>20</Steel>
-      </costList>
-      <researchPrerequisites>
-        <li>Roof_D2</li>
-      </researchPrerequisites>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>SolidMetallic</li>
+		</stuffCategories>
+		<costStuffCount>5</costStuffCount>
+		<researchPrerequisites>
+			<li>Roof_D2</li>
+		</researchPrerequisites>
     </value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-ReinforcedHullPlating_Buildable"]</xpath>
     <value>
-      <costList>
-        <ReinforcedConcrete>40</ReinforcedConcrete>
-      </costList>
-      <researchPrerequisites>
-        <li>Roof_D3</li>
-      </researchPrerequisites>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>SolidMetallic</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+		<costList>
+			<ReinforcedConcrete>6</ReinforcedConcrete>
+		</costList>
+		<researchPrerequisites>
+			<li>Roof_D3</li>
+		</researchPrerequisites>
     </value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-SolarHullPlate_Buildable"]</xpath>
     <value>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>SolidMetallic</li>
+		</stuffCategories>
+		<costStuffCount>5</costStuffCount>
       <costList>
-        <ReinforcedConcrete>40</ReinforcedConcrete>
         <Glass>5</Glass>
         <ComponentIndustrial>4</ComponentIndustrial>
         <Mechanism>2</Mechanism>
@@ -45,14 +56,29 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-ReinforcedGlassPanel_Buildable"]</xpath>
     <value>
-      <costList>
-        <Glass>10</Glass>
-        <Steel>20</Steel>
-      </costList>
-      <researchPrerequisites>
-        <li>Construction_B3</li>
-        <li>Roof_D2</li>
-      </researchPrerequisites>
+        <statBases Merge="True">
+            <SolarWeb-Stratum-Insulation>0.7</SolarWeb-Stratum-Insulation>
+            <SolarWeb-Stratum-ThermalConductivity>0.3</SolarWeb-Stratum-ThermalConductivity>
+        </statBases>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>SolidMetallic</li>
+		</stuffCategories>
+		<costStuffCount>5</costStuffCount>
+		<costList>
+			<Glass>10</Glass>
+		</costList>
+		<researchPrerequisites>
+			<li>Construction_B3</li>
+			<li>Roof_D2</li>
+		</researchPrerequisites>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-ReinforcedGlassPanel"]/modExtensions/li[@Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties"]/Properties/ThermalConductivity</xpath>
+    <value>
+            <ThermalConductivity>0.3</ThermalConductivity>
     </value>
   </Operation>
 
@@ -60,41 +86,59 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RetractableRoofLight_Buildable"]</xpath>
     <value>
-      <costList>
-        <Steel>10</Steel>
-        <Mechanism>2</Mechanism>
-        <ElectronicComponents>2</ElectronicComponents>
-      </costList>
-      <researchPrerequisites>
-        <li>Electronics_C2</li>
-        <li>Roof_D2</li>
-      </researchPrerequisites>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>SolidMetallic</li>
+			<li>StrongMetallic</li>
+			<li>Plastic</li>
+		</stuffCategories>
+		<costList>
+			<Mechanism>2</Mechanism>
+			<ElectronicComponents>2</ElectronicComponents>
+		</costList>
+		<researchPrerequisites>
+			<li>Electronics_C2</li>
+			<li>Roof_D2</li>
+		</researchPrerequisites>
     </value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RetractableRoof_Buildable"]</xpath>
     <value>
-      <costList>
-        <Steel>20</Steel>
-        <Plasteel>10</Plasteel>
-        <Mechanism>4</Mechanism>
-        <ElectronicComponents>4</ElectronicComponents>
-      </costList>
-      <researchPrerequisites>
-        <li>Electronics_C2</li>
-        <li>Roof_D3</li>
-      </researchPrerequisites>
+		<stuffCategories>
+			<li>SolidMetallic</li>
+			<li>Plastic</li>
+		</stuffCategories>
+		<costStuffCount>2</costStuffCount>
+		<costStuffCount>4</costStuffCount>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<Mechanism>4</Mechanism>
+			<ElectronicComponents>4</ElectronicComponents>
+		</costList>
+		<researchPrerequisites>
+			<li>Electronics_C2</li>
+			<li>Roof_D3</li>
+		</researchPrerequisites>
     </value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RetractableRoofConsole"]</xpath>
     <value>
+		<graphicData Merge="true">
+		  <texPath>Things/Building/Misc/CanopyConsole</texPath>
+		</graphicData>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>SolidMetallic</li>
+			<li>StrongMetallic</li>
+			<li>Plastic</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
       <costList>
-        <Steel>100</Steel>
-        <Plasteel>30</Plasteel>
-        <ComponentIndustrial>5</ComponentIndustrial>
+        <ComponentIndustrial>6</ComponentIndustrial>
         <ComponentSpacer>1</ComponentSpacer>
         <Mechanism>10</Mechanism>
         <ElectronicComponents>10</ElectronicComponents>

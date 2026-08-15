@@ -282,7 +282,7 @@
                 <WorkToBuild>2100</WorkToBuild>
                 <Flammability>1.0</Flammability>
             </statBases>
-            <description>The basic Steam Generator that produces electricity. Can be fueled with Charcoal, Kindling and wooden stuff.\nMax. power output: 2,250 W.</description>
+            <description>The basic Steam Generator that produces electricity. Can be fueled with Charcoal, Kindling and wooden stuff.\nMax. power output: 2,250 W.\n\n600C(Base) = 1440 liters/d</description>
             <stuffCategories>
                 <li>RuggedMetallic</li>
             </stuffCategories>
@@ -295,7 +295,7 @@
             <comps>
                 <li Class="CompProperties_Flickable"/>
                 <li Class="CompProperties_Breakdownable"/>
-                <li Class="SK.CompProperties_IdlePower">
+                <li Class="CompProperties_Power">
                     <compClass>SK.CompPowerPlantFueled</compClass>
                     <basePowerConsumption>-750</basePowerConsumption>
                     <transmitsPower>true</transmitsPower>
@@ -368,6 +368,8 @@
                             <fuelConsumptionRate>0.4</fuelConsumptionRate> <!-- 3600 * fuelConsumptionRate = liters per day -->
                             <fuelMultiplier>1</fuelMultiplier>
                             <fuelFilter/>
+							<externalTicking>true</externalTicking> <!-- handle the consuming ourslves in CompFueled -->
+							<minimumFueledThreshold>0.1</minimumFueledThreshold> <!-- Required when combined with out CompFueled, so a small amount of water can get it started -->
                         </li>
                     </value>
                 </li>

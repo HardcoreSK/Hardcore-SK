@@ -13,7 +13,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>10</order>
+		<order>110</order>
 		<types>
 			<li>Resources</li>
 		</types>
@@ -32,7 +32,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>20</order>
+		<order>120</order>
 		<types>
 			<li>Resources</li>
 		</types>
@@ -55,7 +55,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>30</order>
+		<order>130</order>
 		<types>
 			<li>Resources</li>
 		</types>
@@ -72,7 +72,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>40</order>
+		<order>140</order>
 		<types>
 			<li>Weapons</li>
 			<li>Apparel</li>
@@ -91,7 +91,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>50</order>
+		<order>150</order>
 		<types>
 			<li>Resources</li>
 		</types>
@@ -114,7 +114,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>60</order>
+		<order>160</order>
 		<types>
 			<li>Resources</li>
 		</types>
@@ -141,7 +141,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>70</order>
+		<order>170</order>
 		<types>
 			<li>Resources</li>
 		</types>
@@ -165,7 +165,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>80</order>
+		<order>180</order>
 		<types>
 			<li>Apparel</li>
 		</types>
@@ -191,7 +191,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>90</order>
+		<order>190</order>
 		<types>
 			<li>Weapons</li>
 		</types>
@@ -208,7 +208,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>100</order>
+		<order>200</order>
 		<types>
 			<li>Apparel</li>
 			<li>Weapons</li>
@@ -225,7 +225,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>110</order>
+		<order>210</order>
 		<types>
 			<li>Resources</li>
 		</types>
@@ -243,7 +243,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>120</order>
+		<order>220</order>
 		<types>
 			<li>Medicine</li>
 		</types>
@@ -263,7 +263,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>130</order>
+		<order>230</order>
 		<types>
 			<li>Medicine</li>
 		</types>
@@ -280,10 +280,12 @@
 			<li>Matterfab</li>
 			<li>HadronCollider</li>
 			<li>HadronColliderFeeder</li>
+			<li MayRequire="ChJees.Androids">ChJDroidPrinter</li>
+			<li MayRequire="ChJees.Androids">ChJAndroidPrinter</li>
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>140</order>
+		<order>240</order>
 		<types>
 			<li>Resources</li>
 		</types>

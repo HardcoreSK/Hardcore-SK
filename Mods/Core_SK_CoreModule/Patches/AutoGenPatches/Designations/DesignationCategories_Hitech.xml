@@ -28,7 +28,7 @@
     <xpath>Defs/DesignationCategoryDef[defName="Power"]</xpath>
     <value>
       <label>Power</label>
-      <order>420</order>
+      <order>350</order>
       <specialDesignatorClasses>
         <li>Designator_Cancel</li>
         <li>Designator_Deconstruct</li>
@@ -40,7 +40,7 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/DesignationCategoryDef[defName="Floors"]</xpath>
     <value>
-      <label>Home Floors</label>
+      <label>Soft Floors</label>
       <order>300</order>
     </value>
   </Operation>
@@ -49,7 +49,7 @@
     <xpath>Defs/DesignationCategoryDef[defName="Misc"]</xpath>
     <value>
       <label>Misc</label>
-      <order>400</order>
+      <order>270</order>
     </value>
   </Operation>
 
@@ -65,7 +65,7 @@
     <xpath>Defs/DesignationCategoryDef[defName="Temperature"]</xpath>
     <value>
       <label>Temperature</label>
-      <order>270</order>
+      <order>400</order>
     </value>
   </Operation>
 
@@ -73,7 +73,7 @@
     <xpath>Defs/DesignationCategoryDef[defName="Joy"]</xpath>
     <value>
       <label>Joy</label>
-      <order>260</order>
+      <order>390</order>
     </value>
   </Operation>
 

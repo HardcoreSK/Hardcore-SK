@@ -1,0 +1,84 @@
+<LanguageData>
+	<!-- 1.6\Defs\Basic Backstories\Workskill Backstories.xml -->
+	<!-- EN: tunnel kid -->
+	<ZCB_TunnelKid.title>дитя пещер</ZCB_TunnelKid.title>
+	<!-- EN: tunneler -->
+	<ZCB_TunnelKid.titleShort>дитя пещер</ZCB_TunnelKid.titleShort>
+	<!-- EN: [PAWN_nameDef] spent much of [PAWN_possessive] time underground, working in the mines. [PAWN_pronoun] loved every minute of it. -->
+	<ZCB_TunnelKid.baseDesc>{PAWN_nameDef} {PAWN_gender ? проводил : проводила} большую часть времени под землей, работая в шахтах. {PAWN_objective} нравилась каждая проведённая там минута.</ZCB_TunnelKid.baseDesc>
+	<!-- EN: CellsMined -->
+	<ZCB_TunnelKid.requiredRecords.0.name>CellsMined</ZCB_TunnelKid.requiredRecords.0.name>
+	<!-- 1.6\Defs\Outlander\Workskill Backstories.xml -->
+	<!-- EN: child nurse -->
+	<ZCB_ChildNurse.title>юный медик</ZCB_ChildNurse.title>
+	<!-- EN: nurse -->
+	<ZCB_ChildNurse.titleShort>медбрат</ZCB_ChildNurse.titleShort>
+	<!-- EN: [PAWN_nameDef] grew up taking care of the sick and injured. -->
+	<ZCB_ChildNurse.baseDesc>{PAWN_nameDef} {PAWN_gender ? вырос : выросла}, ухаживая за больными и ранеными.</ZCB_ChildNurse.baseDesc>
+	<!-- EN: TimesTendedOther -->
+	<ZCB_ChildNurse.requiredRecords.0.name>TimesTendedOther</ZCB_ChildNurse.requiredRecords.0.name>
+	
+	<!-- EN: child doctor -->
+	<ZCB_ChildDoctor.title>юный врач</ZCB_ChildDoctor.title>
+	<!-- EN: doctor -->
+	<ZCB_ChildDoctor.titleShort>врач</ZCB_ChildDoctor.titleShort>
+	<!-- EN: [PAWN_nameDef] was a medical prodigy, caring for the sick and injured and even performing surgery at a young age. Having seen so many injuries, [PAWN_pronoun] abhors violence. -->
+	<ZCB_ChildDoctor.baseDesc>{PAWN_nameDef} {PAWN_gender ? был : была} вундеркиндом в медицине, {PAWN_pronoun} {PAWN_gender ? ухаживал : ухаживала} за больными и ранеными и даже {PAWN_gender ? проводил : проводила} операции в юном возрасте. Повидав столько травм, {PAWN_pronoun} не приемлет насилия.</ZCB_ChildDoctor.baseDesc>
+	<!-- EN: OperationsPerformed -->
+	<ZCB_ChildDoctor.requiredRecords.0.name>OperationsPerformed</ZCB_ChildDoctor.requiredRecords.0.name>
+	
+	<!-- EN: farmhand -->
+	<ZCB_Farmhand.title>фермер</ZCB_Farmhand.title>
+	<!-- EN: farmhand -->
+	<ZCB_Farmhand.titleShort>фермер</ZCB_Farmhand.titleShort>
+	<!-- EN: [PAWN_nameDef] grew up helping around the farm, gaining insight into both planting and animal husbandry. -->
+	<ZCB_Farmhand.baseDesc>{PAWN_nameDef} {PAWN_gender ? рос : росла}, помогая по хозяйству, приобретая опыт в растениеводстве и животноводстве.</ZCB_Farmhand.baseDesc>
+	<!-- EN: TimeHandlingAnimals -->
+	<ZCB_Farmhand.requiredRecords.0.name>TimeHandlingAnimals</ZCB_Farmhand.requiredRecords.0.name>
+	<!-- EN: Plants -->
+	<ZCB_Farmhand.requiredSkills.0.name>Plants</ZCB_Farmhand.requiredSkills.0.name>
+	
+	<!-- EN: ranch kid -->
+	<ZCB_RanchKid.title>дитя ранчо</ZCB_RanchKid.title>
+	<!-- EN: rancher -->
+	<ZCB_RanchKid.titleShort>скотовод</ZCB_RanchKid.titleShort>
+	<!-- EN: [PAWN_nameDef] took care of the colony's animals. -->
+	<ZCB_RanchKid.baseDesc>{PAWN_nameDef} {PAWN_gender ? ухаживал : ухаживала} за животными поселения.</ZCB_RanchKid.baseDesc>
+	<!-- EN: TimesTendedOther -->
+	<ZCB_RanchKid.requiredRecords.0.name>TimesTendedOther</ZCB_RanchKid.requiredRecords.0.name>
+	<!-- EN: Animals -->
+	<ZCB_RanchKid.requiredSkills.0.name>Animals</ZCB_RanchKid.requiredSkills.0.name>
+	
+	<!-- EN: kitchen aid -->
+	<ZCB_KitchenAid.title>помощник повара</ZCB_KitchenAid.title>
+	<!-- EN: cook -->
+	<ZCB_KitchenAid.titleShort>повар</ZCB_KitchenAid.titleShort>
+	<!-- EN: [PAWN_nameDef] helped in the kitchen, chopping vegetables and preparing simple meals for the colony. [PAWN_pronoun] learned how to make delicious meals efficiently while avoiding food poisoning. -->
+	<ZCB_KitchenAid.baseDesc>{PAWN_nameDef} {PAWN_gender ? помогал : помогала} на кухне, нарезая овощи и готовя простые блюда для поселения. {PAWN_pronoun} {PAWN_gender ? научился : научилась}, как эффективно готовить вкусные блюда, не отравляя при этом поселенцев.</ZCB_KitchenAid.baseDesc>
+	<!-- EN: Cooking -->
+	<ZCB_KitchenAid.requiredSkills.0.name>Cooking</ZCB_KitchenAid.requiredSkills.0.name>
+	<!-- EN: Construction -->
+	<ZCB_KitchenAid.requiredSkills.1.name>Construction</ZCB_KitchenAid.requiredSkills.1.name>
+	
+	<!-- EN: child laborer -->
+	<ZCB_ChildLaborer.title>юный рабочий</ZCB_ChildLaborer.title>
+	<!-- EN: laborer -->
+	<ZCB_ChildLaborer.titleShort>рабочий</ZCB_ChildLaborer.titleShort>
+	<!-- EN: [PAWN_nameDef] worked manual jobs around the colony, carrying materials for construction and crafting equipment. -->
+	<ZCB_ChildLaborer.baseDesc>{PAWN_nameDef} {PAWN_gender ? выполнял : выполняла} ручную работу в поселении, {PAWN_gender ? переносил : переносила} материалы для строительства и {PAWN_gender ? изготавливал : изготавливала} снаряжение.</ZCB_ChildLaborer.baseDesc>
+	<!-- EN: ThingsConstructed -->
+	<ZCB_ChildLaborer.requiredRecords.0.name>ThingsConstructed</ZCB_ChildLaborer.requiredRecords.0.name>
+	<!-- EN: ThingsCrafted -->
+	<ZCB_ChildLaborer.requiredRecords.1.name>ThingsCrafted</ZCB_ChildLaborer.requiredRecords.1.name>
+	<!-- EN: Intellectual -->
+	<ZCB_ChildLaborer.requiredSkills.0.name>Intellectual</ZCB_ChildLaborer.requiredSkills.0.name>
+	
+	<!-- EN: budding artist -->
+	<ZCB_BuddingArtist.title>юный художник</ZCB_BuddingArtist.title>
+	<!-- EN: artist -->
+	<ZCB_BuddingArtist.titleShort>художник</ZCB_BuddingArtist.titleShort>
+	<!-- EN: [PAWN_nameDef] loved art from a young age, spending hours drawing on the floor and even dabbling in sculpture. However, [PAWN_pronoun] never learned to use [PAWN_possessive] skills in a practical way. -->
+	<ZCB_BuddingArtist.baseDesc>{PAWN_nameDef} с ранних лет {PAWN_gender ? любил : любила} искусство, часами {PAWN_gender ? рисовал : рисовала} на полу и даже {PAWN_gender ? лепил : лепила} скульптуры. Однако {PAWN_pronoun} так и не {PAWN_gender ? научился : научилась} применять свои навыки на практике.</ZCB_BuddingArtist.baseDesc>
+	<!-- EN: Artistic -->
+	<ZCB_BuddingArtist.requiredSkills.0.name>Artistic</ZCB_BuddingArtist.requiredSkills.0.name>
+</LanguageData>

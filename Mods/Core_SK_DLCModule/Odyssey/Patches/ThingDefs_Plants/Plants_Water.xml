@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- Switch out with a proper plant fiber/Cordage def when have texture + neolithic content -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Reeds"]/plant</xpath>
+        <value>
+            <harvestedThingDef>Hay</harvestedThingDef>
+            <harvestYield>3</harvestYield>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Bulrush"]/plant</xpath>
+        <value>
+            <harvestedThingDef>Hay</harvestedThingDef>
+            <harvestYield>8</harvestYield>
+        </value>
+    </Operation>
+
+</Patch>

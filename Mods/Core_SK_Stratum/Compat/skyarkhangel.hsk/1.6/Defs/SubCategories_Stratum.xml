@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Structure -->
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_PrimitiveRoofs</defName>
+		<label>Primitive Roofs</label>
+		<description>The most basic of roofs you can build for your colony early on.</description>
+		<defNames>
+			<li>SolarWeb-Stratum-RoofThatch</li>
+			<li>SolarWeb-Stratum-RoofThatchHay</li>
+			<li>SolarWeb-Stratum-RoofShingle</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+		<order>100</order>
+		<types>
+			<li>Roofs</li>
+			<li>Rooms</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ModernRoofs</defName>
+		<label>Modern Roofs</label>
+		<description>More sturdier roofs that can handle a greater impact and provide extra utility.</description>
+		<defNames>
+			<li>SolarWeb-Stratum-RoofGlass</li>
+			<li>SolarWeb-Stratum-CompositeInsulatedPanel</li>
+			<li>SolarWeb-Stratum-LuxuryGlassPanel</li>
+			<li>SolarWeb-Stratum-SterileTiledRoof</li>
+			<li>SolarWeb-Stratum-RoofSolarShingles</li>
+			<li>SolarWeb-Stratum-ThermalRadiatorRoof</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+		<order>110</order>
+		<types>
+			<li>Roofs</li>
+			<li>Rooms</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Ludeon.RimWorld.Odyssey">
+		<defName>SubCategory_GravShipRoofs</defName>
+		<label>Space Roofs</label> 
+		<description>Spacer technology roofs that can withstand the vacuum of space and are designed for a grav ship and orbital stations.</description>
+		<defNames>
+			<li>SolarWeb-Stratum-HullPlating</li>
+			<li>SolarWeb-Stratum-ReinforcedHullPlating</li>
+			<li>SolarWeb-Stratum-SolarHullPlate</li>
+			<li>SolarWeb-Stratum-ReinforcedGlassPanel</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+		<order>120</order>
+		<types>
+			<li>Roofs</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_RetractableRoofs</defName>
+		<label>Retractable Roofs</label>
+		<description>Advanced roofs that can be retracted by operating at a roof console.</description>
+		<defNames>
+			<li>SolarWeb-Stratum-RetractableRoof</li>
+			<li>SolarWeb-Stratum-RetractableRoofLight</li>
+			<li>SolarWeb-Stratum-RetractableRoofConsole</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+		<order>130</order>
+		<types>
+			<li>Roofs</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <!-- Joy -->
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Radio</defName>
+		<label>Radio</label>
+		<description>Broadcasting chill beats through your colony for relaxation.</description>
+		<defNames>
+			<li>SolarWeb-Stratum-PATransmitter</li>
+			<li>SolarWeb-Stratum-PASpeaker_Hanging</li>
+		</defNames>
+		<designationCategory>Joy</designationCategory>
+		<debug>false</debug>
+		<order>150</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>

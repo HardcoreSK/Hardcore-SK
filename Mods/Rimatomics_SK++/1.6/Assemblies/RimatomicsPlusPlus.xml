@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RimatomicsPlusPlus</name>
+    </assembly>
+    <members>
+        <member name="M:RimatomicsPlusPlus.Building_LaunchPadExtensions.MaxLaunchDistance(Rimatomics.Building_LaunchPad,RimWorld.Planet.PlanetLayer)">
+            <summary>
+            MaxLaunchDistance but also takes into account the current layer.
+            </summary>
+        </member>
+        <member name="M:RimatomicsPlusPlus.Building_LaunchPadExtensions.TryLaunchDirect(Rimatomics.Building_LaunchPad,RimWorld.Planet.GlobalTargetInfo)">
+            <summary>
+            TryLaunch() but without the weird additional target getting logic.
+            </summary>
+            <remarks>
+            This is needed to make targeting mapless tiles on different layers work. Generated tiles
+            don't need this since the original method only does the erroneous copying logic when
+            LocalTargetInfo.IsValid is false.
+            </remarks>
+        </member>
+        <member name="M:RimatomicsPlusPlus.Building_RailgunExtensions.WorldRange(Rimatomics.Building_Railgun,RimWorld.Planet.PlanetLayer)">
+            <summary>
+            WorldRange but also takes into account the current layer.
+            </summary>
+        </member>
+        <member name="M:RimatomicsPlusPlus.Building_RailgunExtensions.FireMission(Rimatomics.Building_Railgun,RimWorld.Planet.GlobalTargetInfo)">
+            <summary>
+            FireMission() but without the weird additional target getting logic.
+            </summary>
+            <remarks>
+            This is needed to make targeting tiles in different layers work.
+            </remarks>
+        </member>
+        <member name="M:RimatomicsPlusPlus.Building_RailgunExtensions.FireMission(Rimatomics.Building_Railgun,Verse.LocalTargetInfo,System.Int32)">
+            <summary>
+            Multiplayer-compatible fire mission method.
+            </summary>
+        </member>
+        <member name="M:RimatomicsPlusPlus.NuclearStrikeExtensions.GetValidRadialCellsAround(Rimatomics.NuclearStrike)">
+            <summary>
+            RadialCellsAround() but excludes cells that are out of map bounds.
+            </summary>
+        </member>
+        <member name="M:RimatomicsPlusPlus.ModPatches.BaseMissile_Tick_Transpiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
+            <summary>
+            Replaces the normal ICBM creation with the one added by this mod.
+            </summary>
+        </member>
+        <member name="M:RimatomicsPlusPlus.ModPatches.DubUtils_ApplyRads_Transpiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
+            <summary>
+            Silences radiation warnings in the console.
+            </summary>
+        </member>
+        <member name="M:RimatomicsPlusPlus.ModPatches.Alert_NeedBatteries_NeedBatteries_Postfix(Verse.Map,System.Boolean@)">
+            <summary>
+            Makes the "Need batteries" alert count PPCs as batteries too.
+            </summary>
+        </member>
+        <member name="M:RimatomicsPlusPlus.ModPatches.NuclearStrike_Flash_Transpiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
+            <summary>
+            Removes invalid cells from nuclear strike flash calculations.
+            </summary>
+        </member>
+        <member name="M:RimatomicsPlusPlus.StaticPatches.Building_LaunchPad_StartChoosingDestination_Prefix(Rimatomics.Building_LaunchPad)">
+            <summary>
+            Fixes laggy world tile selection at long ranges for the Liberator.
+            </summary>
+        </member>
+        <member name="M:RimatomicsPlusPlus.StaticPatches.Building_Railgun_StartChoosingDestination_Prefix(Rimatomics.Building_Railgun)">
+            <summary>
+            Fixes world tile selection for the Punisher.
+            </summary>
+        </member>
+        <member name="M:RimatomicsPlusPlus.StaticPatches.Verb_Railgun_TryCastFireMission_Transpiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
+            <summary>
+            Replaces the normal sabot creation with the one added by this mod.
+            </summary>
+        </member>
+        <member name="M:RimatomicsPlusPlus.StaticPatches.Building_Railgun_PulseSize_Postfix(Rimatomics.Building_Railgun,System.Single@)">
+            <summary>
+            Changes Punisher pulse size based on upgrades (EEPA, ABOS) and current fire mission.
+            </summary>
+        </member>
+        <member name="M:RimatomicsPlusPlus.StaticPatches.Building_Railgun_Spread_Postfix(Rimatomics.Building_Railgun,System.Int32@)">
+            <summary>
+            Changes Punisher spread based on upgrades/comps (targeting chip).
+            </summary>
+        </member>
+        <member name="M:RimatomicsPlusPlus.StaticPatches.Dialog_ReactorConsole_drawSlot_Transpiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
+            <summary>
+            Less precise displays for fuel row power (but not the percentage).
+            </summary>
+        </member>
+    </members>
+</doc>

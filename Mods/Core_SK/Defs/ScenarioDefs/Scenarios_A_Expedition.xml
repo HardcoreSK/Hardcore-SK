@@ -42,9 +42,9 @@
 	<ScenarioDef ParentName="ScenarioBase">
 		<defName>Expedition</defName>
 		<label>Expedition</label>
-		<description>The four of you awake in your cryptosleep sarcophagi after a long travel.\n\nSome time later, you land on this unknown rimworld. \n\nThis is your chance to start from the very beginning.</description>
+		<description>The three of you awake in your cryptosleep sarcophagi after a long travel.\n\nSome time later, you land on this unknown rimworld. \n\nThis is your chance to start from the very beginning.</description>
 		<scenario>
-			<summary>Four colonists that had some time to prepare.</summary>
+			<summary>Three colonists that had some time to prepare.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
 				<factionDef>PlayerColony</factionDef>
@@ -54,7 +54,7 @@
 				<!-- Config pages -->
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
 					<def>ConfigPage_ConfigureStartingPawns</def>
-					<pawnCount>4</pawnCount>
+					<pawnCount>3</pawnCount>
 					<pawnChoiceCount>8</pawnChoiceCount>
 				</li>
 

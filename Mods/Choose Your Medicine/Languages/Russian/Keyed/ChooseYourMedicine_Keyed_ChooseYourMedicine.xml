@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+		<!-- main tab gui -->
+	<!-- EN: The clipboard contains a {0} and you are going to paste it into a {1}.\n\nAre you sure you want to do that? -->
+	<Kopp_CYM_PasteConfirmation>Буфер обмена содержит {0} и Вы собираетесь вставить это в {1}.\n\nВы уверены?</Kopp_CYM_PasteConfirmation>
+	<!-- EN: Stage -->
+	<Kopp_CYM_Stage>Стадия</Kopp_CYM_Stage>
+	<!-- EN: Row -->
+	<Kopp_CYM_Row>Строка</Kopp_CYM_Row>
+	<!-- EN: Column -->
+	<Kopp_CYM_Column>Колонка</Kopp_CYM_Column>
+	<!-- EN: Page -->
+	<Kopp_CYM_Page>Страница</Kopp_CYM_Page>
+	<!-- EN: Only this page -->
+	<Kopp_CYM_DefaultSettingsOneTab>Только эта страница</Kopp_CYM_DefaultSettingsOneTab>
+	<!-- EN: All pages -->
+	<Kopp_CYM_DefaultSettingsAllTabs>Все страницы</Kopp_CYM_DefaultSettingsAllTabs>
+	<!-- EN: All pages and operations -->
+	<Kopp_CYM_DefaultSettingsAllTabsAndOperations>Все страницы и операции</Kopp_CYM_DefaultSettingsAllTabsAndOperations>
+	<!-- EN: Are you sure you want to set the settings of this page back to default? -->
+	<Kopp_CYM_ConfirmationOneTab>Вы уверены, что хотите вернуть настройки этой страницы к значениям по умолчанию?</Kopp_CYM_ConfirmationOneTab>
+	<!-- EN: Are you sure you want to set the settings of all pages back to default? -->
+	<Kopp_CYM_ConfirmationAllTabs>Вы уверены, что хотите вернуть настройки всех страниц к значениям по умолчанию?</Kopp_CYM_ConfirmationAllTabs>
+	<!-- EN: Are you sure you want to set the settings of all pages back to default?\nThis includes the settings for operations as well.\nIf new hediffs are found, they will be added, old ones will be removed. -->
+	<Kopp_CYM_ConfirmationAllTabsAndOperations>Вы уверены, что хотите вернуть настройки всех страниц к значениям по умолчанию?\nЭто также сбросит настройки для операций.\nЕсли будут найдены новые состояния, они будут добавлены, старые будут удалены.</Kopp_CYM_ConfirmationAllTabsAndOperations>
+
+	<!-- EN: Not urgent -->
+	<Kopp_CYM_RowEasyLabel>Не срочное</Kopp_CYM_RowEasyLabel>
+	<!-- EN: Severity and Immunity:\nIf the immunity is ahead of the severity level by at least the value you specify, this type of medicine is chosen.\n\nSeverity and NOT Immunity:\nIf severity is below the set value, this type of medicine is chosen.\n\nNOT Severity and Immunity:\nIf immunity is ahead of the set value, this type of medicine is chosen.\n\nThis is the third condition to be checked. -->
+	<Kopp_CYM_RowEasyTooltip>Тяжесть и иммунитет:\nЕсли иммунитет опережает степень тяжести хотя бы на установленное значение, используется данный тип медикаментов.\n\nТолько тяжесть:\nЕсли степень тяжести меньше установленного значения, используется данный тип медикаментов.\n\nТолько иммунитет:\nЕсли иммунитет больше установленного значения, используется данный тип медикаментов.\n\nЭто третье условие, которое проверяется.</Kopp_CYM_RowEasyTooltip>
+
+	<!-- EN: Default -->
+	<Kopp_CYM_RowStandardLabel>По умолчанию</Kopp_CYM_RowStandardLabel>
+	<!-- EN: If none of the previous statements apply, this type of medicine is chosen. -->
+	<Kopp_CYM_RowStandardTooltip>Если ни одно из предыдущих условий не выполнено, используется данный тип медикаментов.</Kopp_CYM_RowStandardTooltip>
+
+	<!-- EN: Acute -->
+	<Kopp_CYM_RowProblematicLabel>Острое</Kopp_CYM_RowProblematicLabel>
+	<!-- EN: Severity and Immunity:\nIf immunity is ahead of severity by the amount you specify or less, this type of medicine is chosen.\n\nSeverity and NOT Immunity:\nIf severity is greater than the set value, this type of medicine is chosen.\n\nNOT Severity and Immunity:\nIf immunity is below the set value, this type of medicine is chosen.\n\nThis is the second condition to be checked. -->
+	<Kopp_CYM_RowProblematicTooltip>Тяжесть и иммунитет:\nЕсли иммунитет опережает степень тяжести на установленное значение или меньше, используется данный тип медикаментов.\n\nТолько тяжесть:\nЕсли степень тяжести меньше установленного значения, используется данный тип медикаментов.\n\nТолько иммунитет:\nЕсли иммунитет больше установленного значения, используется данный тип медикаментов.\n\nЭто второе условие, которое проверяется.</Kopp_CYM_RowProblematicTooltip>
+
+	<!-- EN: Immunity lower -->
+	<Kopp_CYM_RowImmunityLabel>Иммунитет меньше</Kopp_CYM_RowImmunityLabel>
+	<!-- EN: If the immunity is lower than the set value, this type of medicine is chosen. Without this option every new hediff of this group gets probably tended with the medicine for 'acute'.\n\nThis is the first condition to be checked. -->
+	<Kopp_CYM_RowImmunityTooltip>Если иммунитет меньше установленного значения, используется этот тип медикаментов. Без этой опции каждое новое состояние этой группы, вероятно, будет лечиться медикаментами для «Острого».\n\nЭто первое условие, которое проверяется.</Kopp_CYM_RowImmunityTooltip>
+
+	<!-- EN: Severity lower -->
+	<Kopp_CYM_RowSeverityLowerLabel>Тяжесть меньше</Kopp_CYM_RowSeverityLowerLabel>
+	<!-- EN: Severity and NOT Immunity:\nIf the severity is lower than the set value, this type of medicine is chosen. Without this option every new hediff of this group gets probably tended with the medicine for 'acute'.\nThis is the first condition to be checked.\n\nTotal Tend Quality:\nOnly applies to hediffs that have total tend quality and severity:\nIf the severity is below the set value, this type of medicine is chosen.\nThis is the third condition to be checked. -->
+	<Kopp_CYM_RowSeverityLowerTooltip>Только тяжесть:\nЕсли степень тяжести меньше установленного значения, используется данный тип медикаментов. Без этой опции каждое новое состояние этой группы, вероятно, будет лечиться медикаментами для «Острого».\nЭто первое условие, которое проверяется.\n\nОбщее качество лечения:\nПрименяется только к состояниям, которые имеют общее качество лечение и степень тяжести:\nЕсли степень тяжести меньше установленного значения, используется данный тип медикаментов.\nЭто третье условие, которое проверяется.</Kopp_CYM_RowSeverityLowerTooltip>
+	<!-- EN: Severity greater -->
+	<Kopp_CYM_RowSeverityGreaterLabel>Тяжесть больше</Kopp_CYM_RowSeverityGreaterLabel>
+	<!-- EN: Only applies to hediffs that have total tend quality and severity:\nIf the severity is greater than the set value, this type of medicine is chosen.\n\nThis is the second condition to be checked. -->
+	<Kopp_CYM_RowSeverityGreaterTooltip>Применяется только к состояниям, которые имеют общее качество лечение и степень тяжести:\nЕсли степень тяжести больше установленного значения, используется данный тип медикаментов.\nЭто второе условие, которое проверяется.</Kopp_CYM_RowSeverityGreaterTooltip>
+
+	<!-- EN: Total Tend Quality -->
+	<Kopp_CYM_TotalTendQuality>Общее качество лечения</Kopp_CYM_TotalTendQuality>
+	<!-- EN: Total Tend Quality lower -->
+	<Kopp_CYM_RowTotalTendLowerLabel>Общее качество лечения меньше</Kopp_CYM_RowTotalTendLowerLabel>
+	<!-- EN: If the total tend quality is lower than the set value, this type of medicine is chosen. Without this option every new hediff of this group gets probably tended with the medicine for 'standard'.\n\nThis is the first condition to be checked. -->
+	<Kopp_CYM_RowTotalTendLowerTooltip>Если общее качество лечения меньше установленного значения, используется этот тип медикаментов. Без этой опции каждое новое состояние этой группы, вероятно, будет лечиться медикаментами по умолчанию.\n\nЭто первое условие, которое проверяется.</Kopp_CYM_RowTotalTendLowerTooltip>
+
+	<!-- EN: Bodypart damaged greater -->
+	<Kopp_CYM_RowBodyPartDamagedGreaterLabel>Часть тела повреждена больше</Kopp_CYM_RowBodyPartDamagedGreaterLabel>
+	<!-- EN: If the bodypart the hediff is applied to is more damaged than the set value, this type of medicine is chosen.\n\nThis is the first condition to be checked. -->
+	<Kopp_CYM_RowBodyPartDamagedGreaterTooltip>Если часть тела повреждена больше установленного значения, используется этот тип медикаментов.\n\nЭто первое условие, которое проверяется.</Kopp_CYM_RowBodyPartDamagedGreaterTooltip>
+	<!-- EN: Bodypart damaged lower -->
+	<Kopp_CYM_RowBodyPartDamagedLowerLabel>Часть тела повреждена меньше</Kopp_CYM_RowBodyPartDamagedLowerLabel>
+	<!-- EN: If the bodypart the hediff is applied to is less damaged than the set value, this type of medicine is chosen.\nFor most hediffs in this category, except bleeding ones, you probably will set "no medicine" or even 'no care'.\n\nThis is the third condition to be checked. -->
+	<Kopp_CYM_RowBodyPartDamagedLowerTooltip>Если часть тела повреждена меньше установленного значения, используется этот тип медикаментов.\nДля большинства состояний этой категории, кроме кровоточащих, Вы, вероятно, установите «без медикаментов» или даже «без лечения»\n\nЭто третье условие, которое проверяется.</Kopp_CYM_RowBodyPartDamagedLowerTooltip>
+
+	<!-- EN: Body damaged greater -->
+	<Kopp_CYM_RowBodyDamagedGreaterLabel>Часть тела повреждена больше</Kopp_CYM_RowBodyDamagedGreaterLabel>
+	<!-- EN: If the whole body is more damaged than the set value, this type of medicine is chosen.\n\nThis is the second condition to be checked. -->
+	<Kopp_CYM_RowBodyDamagedGreaterTooltip>Если всё тело повреждено больше установленного значения, используется этот тип медикаментов.\n\nЭто второе условие, которое проверяется.</Kopp_CYM_RowBodyDamagedGreaterTooltip>
+
+	<!-- EN: Severity -->
+	<Kopp_CYM_Severity>Тяжесть</Kopp_CYM_Severity>
+	<!-- EN: Immunity -->
+	<Kopp_CYM_Immunity>Иммунитет</Kopp_CYM_Immunity>
+	<!-- EN: & -->
+	<Kopp_CYM_AndSymbol>&amp;</Kopp_CYM_AndSymbol>
+
+	<!-- EN: Hediffs are grouped by whether they use immunity/severity/total tend quality.\n\n\nA few notes about healing/tending:
+\nThe type of a medicine is not a factor in the calculation how long a doctor needs to tend a hediff. That means better medicines does not make tending take less time.\n\nBatch tending happens with every medicine type.\n\nIn vanilla the healing of wounds/bodyparts works as following: Every X ticks a certain amount of damage gets restored. The amount depends on a few factors, e.g. wound tended, patient in bed, tend quality and so on. But no matter if a patient has 10 hediffs each causing 1 damage or one hediff causing 10 damage, the time needed to be fully healed is the same (as long as the circumstances are the same). -->
+	<Kopp_CYM_GroupsTooltip>Состояния сгруппированы по тому, используют ли они иммунитет/тяжесть/общее качество лечения.\n\n\nНесколько заметок о лечении: \nТип медикаментов не является фактором расчёта того, как долго врачу придётся лечить. Это означает, что лучшие медикаменты не ускоряют время лечения.\n\nЛечение происходит с каждым типом лекарства.\n\nВ ванильной версии лечение ран/частей тела работает следующим образом: каждые X тиков восстанавливается определённое количество повреждения. Количество зависит от нескольких факторов, например, обработка раны, находится ли пациент в кровати, качество лечения и так далее. Но независимо от того, есть ли у пациента 10 состояний, каждый из которых вызывает 1 повреждение, или одно состояние, вызывающее 10 повреждений, время, необходимое для полного выздоровления, одинаковое (при одинаковых условиях).</Kopp_CYM_GroupsTooltip>
+
+	<!-- EN: Copy -->
+	<Kopp_CYM_Copy>Копировать</Kopp_CYM_Copy>
+	<!-- EN: Paste -->
+	<Kopp_CYM_Paste>Вставить</Kopp_CYM_Paste>
+
+	<!-- EN: C -->
+	<Kopp_CYM_CopyAcronym>К</Kopp_CYM_CopyAcronym>
+	<!-- EN: P -->
+	<Kopp_CYM_PasteAcroynm>В</Kopp_CYM_PasteAcroynm>
+
+	<!-- EN: Copy whole page -->
+	<Kopp_CYM_CopyWholePage>Копировать всё</Kopp_CYM_CopyWholePage>
+	<!-- EN: Paste into this page -->
+	<Kopp_CYM_PasteIntoThisPage>Вставить сюда</Kopp_CYM_PasteIntoThisPage>
+	<!-- EN: Default settings -->
+	<Kopp_CYM_DefaultSettings>По умолчанию</Kopp_CYM_DefaultSettings>
+	<!-- EN: Update hediff list -->
+	<Kopp_CYM_UpdateList>Обновить состояния</Kopp_CYM_UpdateList>
+	<!-- EN: Removed {0} hediffs. Added {1} hediffs. See debug log for details. -->
+	<Kopp_CYM_UpdateListFeedback>Удалено {0} состояний. Добавлено {1} состояний. Подробности см. в журнале отладки.</Kopp_CYM_UpdateListFeedback>
+
+	<!-- EN: Colonists -->
+	<Kopp_CYM_ListNameColonist>Поселенцы</Kopp_CYM_ListNameColonist>
+	<!-- EN: Prisoners -->
+	<Kopp_CYM_ListNameImprisonedColonist>Пленники</Kopp_CYM_ListNameImprisonedColonist>
+	<!-- EN: Slaves -->
+	<Kopp_CYM_ListNameEnslavedColonist>Рабы</Kopp_CYM_ListNameEnslavedColonist>
+	<!-- EN: Tamed animals -->
+	<Kopp_CYM_ListNameColonyAnimal>Прируч. животные</Kopp_CYM_ListNameColonyAnimal>
+	<!-- EN: Wildlife -->
+	<Kopp_CYM_ListNameNeutralAnimal>Дикие животные</Kopp_CYM_ListNameNeutralAnimal>
+	<!-- EN: Neutral factions -->
+	<Kopp_CYM_ListNameNeutralFaction>Нейтр. фракции</Kopp_CYM_ListNameNeutralFaction>
+	<!-- EN: Hostile factions -->
+	<Kopp_CYM_ListNameHostileFaction>Вражд. фракции</Kopp_CYM_ListNameHostileFaction>
+	<!-- EN: Ghouls -->
+	<Kopp_CYM_ListNameGhouls>Гули</Kopp_CYM_ListNameGhouls>
+	<!-- EN: Friendly factions -->
+	<Kopp_CYM_ListNameFriendlyFaction>Друж. фракции</Kopp_CYM_ListNameFriendlyFaction>
+	<!-- EN: Other humans -->
+	<Kopp_CYM_ListNameOtherHumans>Другие люди</Kopp_CYM_ListNameOtherHumans>
+	<!-- EN: Entities -->
+	<Kopp_CYM_ListNameEntities>Существа</Kopp_CYM_ListNameEntities>
+
+	<!-- EN: Detailed settings:\n\nDisabled:\nSet a medical care category for a stage.\nThe healer will try to use that medicine, if it is not available, a worse one and so on (like vanilla).\nIt is also possible to set 'no medical care'.\n\nActive:\nSet a list of medicines for a stage.\nUse drag dropping to change the order of the medicines. Use right click to remove a medicine.\nThe Healer will try to use the first listed medicine, if not available, the second one and so on.\nIf none of the medicines in the list is available, the doctor will tend without medicine.\nIt is not possible to add 'no medical care' to the list. -->
+	<Kopp_CYM_DetailedSettings>Подробные настройки:\nОтключено:\nУстанавливает категорию медицинской помощи для этапа.\nВрач попытается использовать этот тип медикаментов, если он недоступен, то используется хуже и так далее (как в ванильной версии).\nТакже возможно установить «без лечения».\n\Включено:\nУстанавливает список медикаментов для этапа.\nИспользуйте перетаскивание для изменения порядка медикаментов. Щелкните правой кнопкой мыши, чтобы удалить медикаменты.\nВрач попытается использовать первый указанный тип медикаментов, если он недоступен, то второй и так далее.\nЕсли ни один из медикаментов в списке недоступен, врач будет лечить без них.\nДобавить «без лечения» невозможно.</Kopp_CYM_DetailedSettings>
+
+		<!-- <Kopp_CYM_ShowHelper>Help</Kopp_CYM_ShowHelper> -->
+
+	<!-- EN: Hide/Unveil -->
+	<Kopp_CYM_ShowHidden>Скрыть/Раскрыть</Kopp_CYM_ShowHidden>
+	<!-- EN: Hide -->
+	<Kopp_CYM_Hide>Скрыть</Kopp_CYM_Hide>
+	<!-- EN: Unveil -->
+	<Kopp_CYM_Unveil>Раскрыть</Kopp_CYM_Unveil>
+
+	<!-- EN: Operations -->
+	<Kopp_CYM_Operations>Процедуры</Kopp_CYM_Operations>
+
+		<!-- <Kopp_CYM_ImprisonedColonistsTooltip>Imprisoned colonists are NOT all prisoners, but just the ones of your own faction.\n\nTo set the medicine for other prisoners, use the 'neutral' and 'hostile factions' tab/row.</Kopp_CYM_ImprisonedColonistsTooltip> -->
+
+	<!-- EN: Mod options -->
+	<Kopp_CYM_ModOptions>Настройки мода</Kopp_CYM_ModOptions>
+
+		<!-- main tab gui helper -->
+		<!-- <Kopp_CYM_HelperWhichMedicine1>1: The way how the mod decides which medicine to use to tend a hediff is quite simple:\nFirst, the mod checks if a medicine has been manually assigned to a pawns instance of a hediff. This can be done in the pawns health tab by clicking on the lowly visible button which is added for every tendable hediff. This will ignore the pawns settings. If no medicine is manually assigned, the settings in this gui come into play and we jump to (2).\nNote that if the gui settings select a better medicine than what the pawn allows, the best medicine the pawn allows is used.</Kopp_CYM_HelperWhichMedicine1> -->
+		<!-- <Kopp_CYM_HelperWhichMedicine2>2: If the immunity is lower than the set value, this medicine is used. This should be useful for the first tend(s) where we are not sure how things will turn out.\n\nExample: Immunity is at 15%, the slider is set to 20%. So the immunity is lower than the set value, the statement is true and this medicine is used. If the slider is set to 10%, the statement is false and we jump to (3).</Kopp_CYM_HelperWhichMedicine2> -->
+		<!-- <Kopp_CYM_HelperWhichMedicine3>3: If the immunity exceeds severity by less than the specified value (or not at all), this kind of medicine gets used.\n\nExample: Immunity is at 50%, severity is at 46%. So the immunity is 4% ahead of the severity. If the slider is set to 5%, the statement is true and this medicine gets used. If the slider is set to 3%, the statement is false and we jump to (4).</Kopp_CYM_HelperWhichMedicine3> -->
+		<!-- <Kopp_CYM_HelperWhichMedicine4>4: If the immunity is ahead of the severity by at least the set value, this kind of medicine gets used.\n\nExample: Immunity is at 40%, severity is at 15%. So the immunity is 25% ahead of the severity. If the slider is set to 10%, the statement is true and this medicine gets used. If the slider is set to 30%, the statement is false and we jump to (5).</Kopp_CYM_HelperWhichMedicine4> -->
+		<!-- <Kopp_CYM_HelperWhichMedicine5>5: If none of the previous statements were true, this medicine gets used.\n\nSome hediffs only have this option though: The ones that do not have a comp immunizable.</Kopp_CYM_HelperWhichMedicine5> -->
+		<!-- <Kopp_CYM_HelperCopyPaste>You can copy a page, a column or a entry. Each of them can be pasted into another. E.g. you can copy a column and paste it into a row. Note that copying does not actually copy the content, but only saves which page/column/entry to copy. So if you copy, change and then paste something, the changes will also be pasted.</Kopp_CYM_HelperCopyPaste> -->
+		<!-- <Kopp_CYM_HelperLeftButtons>If you click 'default settings' a dropdown menu will appear where you can select 'this page' or 'all pages'.\n\nThe 'update hediff list' is needed if you have added or removed mods that included tendable hediffs.\n\nThe operations button opens a new gui where you can specify the medicine for operations and one or two other options.</Kopp_CYM_HelperLeftButtons> -->
+		<!-- <Kopp_CYM_HelperLabels>Some hediffs have the same label. If you hover over the label, you can see the defName. As it is impossible to know which hediff can affect which kind of pawn, each list contains every tendable hediff.\nYou can hide entries from the list by clicking on its label, then 'hide'. In this way, a list can be freed from unnecessary entries.</Kopp_CYM_HelperLabels> -->
+
+
+		<!-- pawns health tab -->
+	<!-- EN: One tending -->
+	<Kopp_CYM_TendOneTime>Одно лечение</Kopp_CYM_TendOneTime>
+	<!-- EN: Until hediff is gone -->
+	<Kopp_CYM_TendUntilHediffGone>Пока не вылечено</Kopp_CYM_TendUntilHediffGone>
+	<!-- EN: Clear -->
+	<Kopp_CYM_Clear>Очистить</Kopp_CYM_Clear>
+
+
+		<!-- dialog operations -->
+	<!-- EN: Settings for operations -->
+	<Kopp_CYM_OperationsHeadline>Настройки для процедур</Kopp_CYM_OperationsHeadline>
+	<!-- EN: The maximum medical care for operations:  -->
+	<Kopp_CYM_OperationsMaxCare>Максимальный врачебный уход при проведении процедур:</Kopp_CYM_OperationsMaxCare>
+	<!-- EN: Note that the maximum medical care category set in a pawns player settings is respected. -->
+	<Kopp_CYM_OperationsMaxCareTooltip>Обратите внимание, что максимальный врачебный уход, установленный в настройках пешки игрока, соблюдается.</Kopp_CYM_OperationsMaxCareTooltip>
+	<!-- EN: Try to take the worst medicine, which promises maximum success. -->
+	<Kopp_CYM_OperationsWorseMed>Стараться использовать наихудшие медикаменты, которые обещают максимальный успех.</Kopp_CYM_OperationsWorseMed>
+	<!-- EN: The surgery success chance depends on a few factors and is limited to 98%. This option ensures that the best allowed medicine is taken only if it is necessary, otherwise weaker if the 98% can be reached with it. -->
+	<Kopp_CYM_OperationsWorseMedTooltip>Шансы на успех операции зависят от нескольких факторов и ограничиваются 98%. Этот вариант гарантирует, что наилучшие разрешенные медикаменты будут использоваться только в случае необходимости, в противном случае они будут хуже, если с их помощью можно достичь 98%.</Kopp_CYM_OperationsWorseMedTooltip>
+	<!-- EN: Operate only when maximum success is expected. -->
+	<Kopp_CYM_OperationsOnlyWhenBestSuccess>Оперировать только тогда, когда ожидается максимальный успех.</Kopp_CYM_OperationsOnlyWhenBestSuccess>
+	<!-- EN: This option causes surgeries to only be started if the expected surgery success chance reaches the upper limit of 98%. -->
+	<Kopp_CYM_OperationsOnlyWhenBestSuccessTooltip>Эта опция позволяет начинать операцию только в том случае, если ожидаемый шанс успеха операции достигает верхнего предела в 98%.</Kopp_CYM_OperationsOnlyWhenBestSuccessTooltip>
+	<!-- EN: Take the best available medicine if the surgery may cause a hediff, whose duration may then be affected by the used medicine. -->
+	<Kopp_CYM_OperationsUseBest>Использовать лучшие медикаменты, если операция вызывает состояние, на которое могут повлиять используемые медикаменты.</Kopp_CYM_OperationsUseBest>
+	<!-- EN: In vanilla there is only one operation type which falls in this category: 'Implant xenogerm'.\nThe medicine used is a factor in the duration of the 'Xenogermination coma'. -->
+	<Kopp_CYM_OperationsUseBestTooltip>В ванилле есть только один тип операций, который относится к этой категории: «Вживление генов».\nИспользуемые медикаменты влияют на продолжительность «Ксенокомы».</Kopp_CYM_OperationsUseBestTooltip>
+
+
+		<!-- mod settings -->
+	<!-- EN: Mods main button should be shown at the bottom bar -->
+	<Kopp_CYM_ShowMainButton>Отображать кнопку мода на нижней панели</Kopp_CYM_ShowMainButton>
+	<!-- EN: If you do not want the mods main button to appear at the bottom bar you can disable it.\n\nThe gui can be opened from the mod settings as well. -->
+	<Kopp_CYM_ShowMainButtonTooltip>Если вы не хотите, чтобы главная кнопка мода отображалась на нижней панели, вы можете отключить её.\n\nМеню можно открыть и из настроек мода.</Kopp_CYM_ShowMainButtonTooltip>
+	<!-- EN: Open the mods main tab gui -->
+	<Kopp_CYM_OpenModsGui>Открыть главную вкладку мода</Kopp_CYM_OpenModsGui>
+	<!-- EN: Count of medicine a colonist can carry:  -->
+	<Kopp_CYM_AmountMedicineCarry>Количество медикаментов, которые поселенец может носить с собой:</Kopp_CYM_AmountMedicineCarry>
+	<!-- EN: In vanilla a colonist is allowed to carry 3 medicines of a certain type.\nUse this setting to adjust the amount to your likings.\n\nNOTE: I only did a quick test if it is working without issues for extreme numbers. -->
+	<Kopp_CYM_AmountMedicineCarryTooltip>В ванилле поселенцу разрешено носить 3 медикамента определённого типа.\nИспользуйте эту настройку, чтобы настроить количество по своему вкусу.\n\nNOTE: Я только сделал быстрый тест, работает ли он без проблем для экстремальных чисел.</Kopp_CYM_AmountMedicineCarryTooltip>
+	<!-- EN: Search range for medicine when tending:  -->
+	<Kopp_CYM_TendingsSearchRange>Дальность поиска медикаментов при лечении:</Kopp_CYM_TendingsSearchRange>
+	<!-- EN: Set the range a doctor will look for medicines when tending a patient.\n\nThe starting point is the position of the patient.\n\nSet to '-1' to search the whole map (vanilla). -->
+	<Kopp_CYM_TendingsSearchRangeTooltip>Установить диапазон, в котором врач будет искать медикаменты при лечении пациента.\n\nНачальной точкой является положение пациента.\n\nУстановите значение «-1», чтобы искать по всей карте (ванилла).</Kopp_CYM_TendingsSearchRangeTooltip>
+	<!-- EN: Always open a new window when clicking the medicine row of a hediff stage in the detailed view in the mods main gui: -->
+	<Kopp_CYM_AlwaysOpenNewWindowForDetailedMeds>Всегда открывать новое окно при нажатии на строку медикаментов стадии состояния в подробном виде в основном интерфейсе модов:</Kopp_CYM_AlwaysOpenNewWindowForDetailedMeds>
+	<!-- EN: If set to false, the new window only opens if necessary - if there is too many medicine types which makes drag dropping difficult. -->
+	<Kopp_CYM_AlwaysOpenNewWindowForDetailedMedsTooltip>Если установить значение false, новое окно откроется только при необходимости — если слишком много типов медикаментов, что затрудняет перетаскивание.</Kopp_CYM_AlwaysOpenNewWindowForDetailedMedsTooltip>
+	<!-- EN: Always show the copy/paste buttons for each stage of a hediff: -->
+	<Kopp_CYM_AlwaysShowCopyPasteForEachHediffStage>Всегда отображать кнопки копирования/вставки для каждого этапа состояния:</Kopp_CYM_AlwaysShowCopyPasteForEachHediffStage>
+	<!-- EN: If set to false, the buttons are only shown for a single hediff stage while the mouse is close to it. -->
+	<Kopp_CYM_AlwaysShowCopyPasteForEachHediffStageTooltip>Если установить значение false, кнопки отображаются только для одной стадии состояния, пока мышь наведена рядом.</Kopp_CYM_AlwaysShowCopyPasteForEachHediffStageTooltip>
+	<!-- EN: Set the scale of the window and icons when clicking on the row of medicines in the detailed view opens a new window:  -->
+	<Kopp_CYM_DetailedViewSizeOfNewWindow>Установить масштаб окна и иконок при нажатии на строку медикаментов в подробном просмотре и открытии нового окна:</Kopp_CYM_DetailedViewSizeOfNewWindow>
+	<!-- EN: Choose Your Medicine -->
+	<Kopp_CYM_ChooseYourMedicine>Choose Your Medicine</Kopp_CYM_ChooseYourMedicine>
+</LanguageData>

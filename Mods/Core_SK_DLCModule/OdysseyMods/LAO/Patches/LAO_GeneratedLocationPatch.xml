@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/GeneratedLocationDef[
+            defName="LAO_FloatingIslandGiantMountain" or
+            defName="LAO_FloatingIslandGiantCrust" or
+            defName="LAO_FloatingIslandGiantFlat" or
+            defName="LAO_FloatingIslandHill" or
+            defName="LAO_FloatingIslandFlat" or
+            defName="LAO_FloatingIslandCollapsing" or
+            defName="LAO_AsteroidGiant"
+        ]/preciousResources</xpath>
+		<value>
+            <preciousResources>
+                <li>HewnOreGold</li>
+                <li>HewnOreSilver</li>
+                <li>HewnOreSteel</li>
+                <li>HewnOreJade</li>
+                <li>HewnOreNickel</li>
+                <li>HewnOreTitanium</li>
+                <li>HewnOreLead</li>
+                <li>HewnOreTungsten</li>
+            </preciousResources>
+		</value>
+	</Operation>
+    
+    <!--<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/LayeredAtmosphereOrbit.PlanetLayerGroupDef[defName="LAO_Atmosphere"]/modExtensions</xpath>
+		<value>
+			<stuff>Steel</stuff>
+		</value>
+	</Operation>-->
+	
+</Patch>

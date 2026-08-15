@@ -16,6 +16,7 @@
             <prerequisites>
                 <li>Piano</li>
             </prerequisites>
+            <hiddenPrerequisites />
             <researchViewX>11.00</researchViewX>
             <researchViewY>6.00</researchViewY>
             <tab>Buildings_SK</tab>
@@ -322,9 +323,17 @@
             <prerequisites>
                 <li>Telecommunications_D1</li>
             </prerequisites>
+            <hiddenPrerequisites />
             <researchViewX>18.00</researchViewX>
             <researchViewY>13.00</researchViewY>
             <tab>Craft_SK</tab>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ResearchProjectDef[defName="FoamTurret"]</xpath>
+        <value>
+            <hiddenPrerequisites />
         </value>
     </Operation>
 

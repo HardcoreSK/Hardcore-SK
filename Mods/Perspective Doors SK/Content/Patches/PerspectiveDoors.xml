@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Door" or defName="Autodoor" or defName="AnimalFlap"]/graphicData</xpath>
+		<value>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</value>
+	</Operation>
+	
+	<!-- HSK -->
+	
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="AnimalFlap"]</xpath>
+		<value>
+			<comps Merge="true">
+				<li Class="SK.CompProperties_SecondLayer">
+					<graphicData>
+						<texPath>Things/Building/Doors/AnimalFlap/AnimalFlap_Bar</texPath>
+						<graphicClass>Graphic_Multi</graphicClass>
+					</graphicData>
+					<altitudeLayer>Skyfaller</altitudeLayer>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+	
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Blastdoor" or defName="CellDoor" or defName="MDoor"]/graphicData</xpath>
+		<value>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="PrimitiveDoor"]/graphicData</xpath>
+		<value>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</value>
+	</Operation>
+	
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[@Name="DoorGlassBase"]/graphicData</xpath>
+		<value>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</value>
+	</Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Rimatomics</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName="DU_Blastdoor"]</xpath>
+                    <value>
+                        <graphicData Merge="true">
+                            <graphicClass>Graphic_Multi</graphicClass>
+                        </graphicData>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

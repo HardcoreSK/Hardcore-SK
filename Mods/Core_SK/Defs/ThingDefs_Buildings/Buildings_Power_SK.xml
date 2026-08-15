@@ -423,7 +423,7 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerPlantWind</compClass>
-				<basePowerConsumption>-1500</basePowerConsumption>
+				<basePowerConsumption>-2200</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Breakdownable" />
@@ -671,7 +671,7 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>-1500</basePowerConsumption>
+				<basePowerConsumption>-3000</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li>
@@ -797,7 +797,7 @@
 			<li Class="CompProperties_Breakdownable" />
 			<li Class="CompProperties_Power">
 				<compClass>SK.CompPowerPlantFueled</compClass>
-				<basePowerConsumption>-20000</basePowerConsumption>
+				<basePowerConsumption>-30000</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 				<soundAmbientProducingPower>PlasmaTurbine</soundAmbientProducingPower>
 			</li>
@@ -1008,7 +1008,7 @@
 	<ThingDef ParentName="PowerFueled">
 		<defName>AntimatterReactor</defName>
 		<label>antimatter reactor</label>
-		<description>The contained antimatter is separated from ordinary matter by magnetic fields, preventing unintended reactions. The energy is then extracted in much the same way that nuclear reactors capture the heat and light energy released by fission reactions.\nMax. power output: 38,000 W.</description>
+		<description>The contained antimatter is separated from ordinary matter by magnetic fields, preventing unintended reactions. The energy is then extracted in much the same way that nuclear reactors capture the heat and light energy released by fission reactions.\nMax. power output: 60,000 W.</description>
 		<thingClass>SK.Building_AntimatterReactor</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
@@ -1044,7 +1044,7 @@
 			<li Class="CompProperties_Breakdownable" />
 			<li Class="CompProperties_Power">
 				<compClass>SK.CompPowerPlantFueled</compClass>
-				<basePowerConsumption>-38000</basePowerConsumption>
+				<basePowerConsumption>-60000</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 				<soundAmbientProducingPower>PlasmaTurbine</soundAmbientProducingPower>
 			</li>

@@ -21,6 +21,21 @@
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ActiveGames</defName>
+		<label>active games</label>
+		<description>Active games for active colonists.</description>
+		<defNames>
+			<li>HoopstoneRing</li>
+			<li>HorseshoesPin</li>
+			<li MayRequire="Haplo.Miscellaneous.TrainingNoTask">ArcheryTarget</li>
+			<li>BilliardsTable</li>
+		</defNames>
+		<designationCategory>Joy</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_TV</defName>
 		<label>television</label>
 		<description>Colonist needs to watch old movies.</description>
@@ -32,7 +47,7 @@
 		</defNames>
 		<designationCategory>Joy</designationCategory>
 		<debug>false</debug>
-		<order>20</order>
+		<order>30</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -53,7 +68,7 @@
 		</defNames>
 		<designationCategory>Joy</designationCategory>
 		<debug>false</debug>
-		<order>30</order>
+		<order>40</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Rooboid.Paintings.Ex">
@@ -66,7 +81,7 @@
 			<li>RBPGalleryBarrier</li>
 		</defNames>
 		<designationCategory>Joy</designationCategory>
-		<order>40</order>
+		<order>50</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef MayRequire="Ludeon.RimWorld.Biotech">
@@ -80,7 +95,7 @@
 		</defNames>
 		<designationCategory>Joy</designationCategory>
 		<debug>false</debug>
-		<order>50</order>
+		<order>60</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 </Defs>

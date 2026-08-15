@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[@Name="ApparelNeoliticSimpleBase"]</xpath>
+		<xpath>Defs/ThingDef[@Name="ApparelNeolithicSimpleBase"]</xpath>
 		<value>
 			<recipeMaker>
 				<workSpeedStat>TailoringSpeed</workSpeedStat>
@@ -21,7 +21,7 @@
 
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[@Name="ArmorNeoliticSimpleBase"]</xpath>
+		<xpath>Defs/ThingDef[@Name="ArmorNeolithicSimpleBase"]</xpath>
 		<value>
 			<recipeMaker>
 				<workSpeedStat>SmithingSpeed</workSpeedStat>

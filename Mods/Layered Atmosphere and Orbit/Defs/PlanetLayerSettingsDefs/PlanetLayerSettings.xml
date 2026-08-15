@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<PlanetLayerSettingsDef Name="LAO_OrbitLayerBase" Abstract="True">
+		<defName>LAO_Orbit</defName>
+		<label>Default orbit</label>
+		<settings>
+			<subdivisions>5</subdivisions>
+			<useSurfaceViewAngle>true</useSurfaceViewAngle>
+		</settings>
+	</PlanetLayerSettingsDef>
+  
+	<PlanetLayerSettingsDef ParentName="LAO_OrbitLayerBase">
+		<defName>LAO_Troposphere</defName>
+		<label>troposphere</label>
+		<settings>
+			<radius>103</radius>
+			<extraCameraAltitude>30</extraCameraAltitude>
+			<backgroundWorldCameraOffset>16</backgroundWorldCameraOffset>
+			<backgroundWorldCameraParallaxDistancePer100Cells>0.25</backgroundWorldCameraParallaxDistancePer100Cells>
+		</settings>
+	</PlanetLayerSettingsDef>
+  
+	<PlanetLayerSettingsDef ParentName="LAO_OrbitLayerBase">
+		<defName>LAO_Stratosphere</defName>
+		<label>stratosphere</label>
+		<settings>
+			<radius>107.5</radius>
+			<extraCameraAltitude>75</extraCameraAltitude>
+			<backgroundWorldCameraOffset>40</backgroundWorldCameraOffset>
+			<backgroundWorldCameraParallaxDistancePer100Cells>0.655</backgroundWorldCameraParallaxDistancePer100Cells>
+		</settings>
+	</PlanetLayerSettingsDef>
+  
+	<PlanetLayerSettingsDef ParentName="LAO_OrbitLayerBase">
+		<defName>LAO_Mesosphere</defName>
+		<label>mesosphere</label>
+		<settings>
+			<radius>112</radius>
+			<extraCameraAltitude>120</extraCameraAltitude>
+			<backgroundWorldCameraOffset>64</backgroundWorldCameraOffset>
+			<backgroundWorldCameraParallaxDistancePer100Cells>1</backgroundWorldCameraParallaxDistancePer100Cells>
+		</settings>
+	</PlanetLayerSettingsDef>
+  
+	<PlanetLayerSettingsDef ParentName="LAO_OrbitLayerBase">
+		<defName>LAO_HighOrbit</defName>
+		<label>high orbit</label>
+		<settings>
+			<radius>175</radius>
+			<extraCameraAltitude>750</extraCameraAltitude>
+			<backgroundWorldCameraOffset>400</backgroundWorldCameraOffset>
+			<backgroundWorldCameraParallaxDistancePer100Cells>6.25</backgroundWorldCameraParallaxDistancePer100Cells>
+		</settings>
+	</PlanetLayerSettingsDef>
+  
+</Defs>

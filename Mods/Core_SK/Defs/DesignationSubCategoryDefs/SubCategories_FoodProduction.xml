@@ -79,7 +79,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>30</order>
+		<order>40</order>
 		<types>
 			<li>Cooking</li>
 		</types>
@@ -98,7 +98,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>40</order>
+		<order>50</order>
 		<types>
 			<li>Cooking</li>
 		</types>
@@ -115,7 +115,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>50</order>
+		<order>60</order>
 		<types>
 			<li>Cooking</li>
 		</types>
@@ -134,7 +134,7 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>60</order>
+		<order>70</order>
 		<types>
 			<li>Cooking</li>
 		</types>
@@ -151,32 +151,35 @@
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>70</order>
+		<order>80</order>
 		<types>
 			<li>Cooking</li>
 		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Hydroponics</defName>
-		<label>hydroponics</label>
-		<description>A hydroponic basin can grow plants quickly.</description>
+		<defName>SubCategory_Farming</defName>
+		<label>farming</label>
+		<description>Farming utilities and hydroponic basins.</description>
         <graphicData>
             <texPath>Things/Building/ProductionFood/HydroponicsBox/HydroponicsBoxIcon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<color>(133,97,67)</color>
         </graphicData>
 		<defNames>
+			<li MayRequire="notfood.SeedsPlease">PlantProcessingTable</li>
+			<li>PrimitiveHydroponic</li>
 			<li>PrimitiveHydroponic</li>
 			<li>HydroponicsBasin</li>
 			<li>Agrarian</li>
 			<li>FungiponicsBasin</li>
 			<li>NewHydroponicsBasin</li>
 			<li>ClutterAlloyHydroponicsBasinVS</li>
+			<li>SunLamp</li>
 		</defNames>
 		<designationCategory>Production</designationCategory>
 		<debug>false</debug>
-		<order>80</order>
+		<order>90</order>
 		<types>
 			<li>Cooking</li>
 		</types>

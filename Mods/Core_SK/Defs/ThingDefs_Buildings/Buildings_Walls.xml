@@ -296,7 +296,6 @@
 				<compClass>CompPowerTransmitter</compClass>
 				<transmitsPower>true</transmitsPower>
 			</li>
-			<li Class="CompProperties_Flickable" />
 		</comps>
 		<researchPrerequisites>
 			<li>Autodoors</li>
@@ -354,9 +353,10 @@
 				<glowRadius>5</glowRadius>
 				<glowColor>(217,217,217,0)</glowColor>
 			</li>
-			<li Class="SK.CompProperties_IdlePower">
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
 				<transmitsPower>true</transmitsPower>
-				<basePowerConsumption>25</basePowerConsumption>
+				<basePowerConsumption>20</basePowerConsumption>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medical Tab</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/MainButtonDef[defName="MedicalTab"]/order</xpath>
+            <value>
+                <order>40</order>
+            </value>
+        </match>
+    </Operation>
+</Patch>

@@ -11,6 +11,7 @@
 			<li>Vent</li>
 			<li MayRequire="Dubwise.DubsBadHygiene">CeilingFanS</li>
 			<li MayRequire="Dubwise.DubsBadHygiene">CeilingFan</li>
+			<li MayRequire="SolarWeb.Stratum">SolarWeb-Stratum-RotaryTurbineVent</li>
 		</defNames>
 		<designationCategory>Temperature</designationCategory>
 		<debug>false</debug>
@@ -137,13 +138,11 @@
 		<description>Special devices.</description>
 		<defNames>
 			<li>TemperatureGauge</li>
+			<li MayRequire="SolarWeb.Stratum">SolarWeb-Stratum-Thermostat</li>
 			<li MayRequire="ludeon.rimworld.anomaly">AtmosphericHeater</li>
 		</defNames>
 		<designationCategory>Temperature</designationCategory>
 		<order>90</order>
-		<types>
-			<li>Coolers</li>
-		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 </Defs>

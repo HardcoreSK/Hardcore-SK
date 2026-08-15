@@ -184,8 +184,7 @@
 		<pawnKind>WandererJoiner_OldMan</pawnKind>
 		<populationEffect>IncreaseEasy</populationEffect>
 	</IncidentDef>
-	<!---->
-	<IncidentDef>
+	<!--<IncidentDef>
 		<defName>DeathOfSun</defName>
 		<label>Death of sun</label>
 		<letterLabel>Death of sun</letterLabel>
@@ -205,7 +204,6 @@
 		<earliestDay>300</earliestDay>
 		<minRefireDays>9999999</minRefireDays>
 	</IncidentDef>
-	<!---->
 	<IncidentDef>
 		<defName>GlobalCooling</defName>
 		<label>Global cooling</label>
@@ -242,7 +240,7 @@
 							<li>1, 3</li>
 						</points>
 					</equatorialDistanceTemperatureCurve>
-					<!-- Что примерно дает 80 за 30 дней -->
+					<!{1}** Что примерно дает 80 за 30 дней **{1}>
 					<temperatureChangePerIntervalByDayPassedCurve>
 						<points>
 							<li>0, -1.0</li>
@@ -256,7 +254,6 @@
 			</li>
 		</modExtensions>
 	</IncidentDef>
-	<!---->
 	<IncidentDef>
 		<defName>GlobalWarming</defName>
 		<label>Global warming</label>
@@ -293,7 +290,7 @@
 							<li>1, 2.5</li>
 						</points>
 					</equatorialDistanceTemperatureCurve>
-					<!-- Что примерно дает 80 за 30 дней -->
+					<!{1}** Что примерно дает 80 за 30 дней **{1}>
 					<temperatureChangePerIntervalByDayPassedCurve>
 						<points>
 							<li>0, 1.0</li>
@@ -307,7 +304,6 @@
 			</li>
 		</modExtensions>
 	</IncidentDef>
-	<!---->
 	<IncidentDef>
 		<defName>DeathOfDistantStar</defName>
 		<label>Death of distant star</label>
@@ -328,7 +324,7 @@
 		<baseChance>0.5</baseChance>
 		<earliestDay>15</earliestDay>
 		<minRefireDays>200</minRefireDays>
-	</IncidentDef>
+	</IncidentDef>-->
 	<!---->
 	<IncidentDef>
 		<defName>WorldMeteorite</defName>

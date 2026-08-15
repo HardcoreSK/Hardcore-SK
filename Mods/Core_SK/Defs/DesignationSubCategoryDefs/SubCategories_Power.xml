@@ -39,6 +39,8 @@
 		<defNames>
 			<li>Battery</li>
 			<li>FissionBattery</li>
+			<li MayRequire="Dubwise.Rimatomics">PPC</li>
+			<li MayRequire="NachoToast.RimatomicsPlusPlus">RimatomicsPlusPlus_PPHC</li>
 		</defNames>
 		<designationCategory>Power</designationCategory>
 		<debug>false</debug>
@@ -99,6 +101,22 @@
 		<designationCategory>Power</designationCategory>
 		<debug>false</debug>
 		<order>60</order>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_PowerSafety</defName>
+		<label>power safety</label>
+		<description>Protect you power network from various incidents.</description>
+		<defNames>
+			<li>LightningRod</li>
+			<li MayRequire="mersid.backuppowerupdated">BackupPower_Attachment</li>
+			<li MayRequire="ratys.rtfuse">Building_RTMakeshiftFuse</li>
+			<li MayRequire="ratys.rtfuse">Building_RTCircuitBreaker</li>
+			<li MayRequire="ratys.rtsolarflareshield">Building_RTMagneticShield</li>
+		</defNames>
+		<designationCategory>Power</designationCategory>
+		<debug>false</debug>
+		<order>70</order>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 </Defs>

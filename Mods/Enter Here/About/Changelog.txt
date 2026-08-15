@@ -1,5 +1,44 @@
 # Changelog for EnterHere
 
+1.6.4 - Should now check 5 tiles around the edge for a valid enter spot
+
+
+1.6.3 - Fixed compatibility with Vehicle Framework
+
+
+1.6.2 - Fixed Vehicle Framework issue, but cant affect its caravan entries until they actually use their extraValidator
+
+
+1.6.1 - Fix for Vehicle Framework
+
+
+1.6.0 - Updated to 1.6
+
+
+1.5.8 - Enter-spots should now be placeable on any terrain affordance, like water
+
+
+1.5.7 - No duplicate patching, thanks Bradson! Also uses harmony Prepare correctly.
+
+
+1.5.6 - Vehicle-caravans should now leave and enter the map correctly using the enter/exit spots
+
+
+1.5.5 - Added support for Vehicle Caravans
+
+
+1.5.4 - Fixed the anomaly-patches when anomaly isnt loaded
+
+
+1.5.3 - The enemy-raid setting should now also affect Anomaly entity incidents
+
+
+1.5.2 - Leaving caravans should behave better
+
+
+1.5.1 - Outgoing caravans will now use the exit spot (if selected). Spot does no longer expand the home area.
+
+
 1.5.0 - Updated for 1.5
 
 

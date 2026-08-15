@@ -13,6 +13,7 @@
 			<li>CaravanPackingSpot</li>
 			<li MayRequire="ludeon.rimworld.ideology">RitualSpot</li>
 			<li MayRequire="ludeon.rimworld.royalty">MeditationSpot</li>
+			<li MayRequire="ChJees.Androids">ChjDroidHibernationPad</li>
 		</defNames>
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
@@ -28,7 +29,7 @@
 			<li>MassGrave</li>
 			<!--<li>MassGraveAlt</li>-->
 			<li>Sarcophagus</li>
-			<li>CryptosleepCasket</li>
+			<!--<li>CryptosleepCasket</li>-->
 		</defNames>
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
@@ -58,10 +59,10 @@
 		<description>Researchers use these stations to improve their research stands.</description>
 		<defNames>
 			<li>FileCabinet</li>
+			<li>LabTerminal</li>
 			<li>MultiAnalyzer</li>
 			<!--<li>CounterTopModular</li>-->
 			<li>LabStation</li>
-			<li>LabTerminal</li>
 		</defNames>
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
@@ -96,6 +97,7 @@
 			<li>LongRangeMineralScanner</li>
 			<li>MobileMineralSonar</li>
 			<li MayRequire="skyarkhangel.mineralscanner">GroundPenetratingScannerAdvanced</li>
+			<li MayRequire="SolarWeb.Stratum">SolarWeb-Stratum-RooftopScannerBooster</li>
 		</defNames>
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
@@ -109,6 +111,7 @@
 		<defNames>
 			<li>PodLauncher</li>
 			<li>TransportPod</li>
+			<li MayRequire="ludeon.rimworld.royalty">ShipLandingBeacon</li>
 		</defNames>
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
@@ -129,7 +132,7 @@
 		<debug>false</debug>
 		<order>70</order>
 		<types>
-			<li>Facilities</li>
+			<li>Utilities</li>
 		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
@@ -152,13 +155,13 @@
 		<debug>false</debug>
 		<order>80</order>
 		<types>
-			<li>Facilities</li>
+			<li>Utilities</li>
 		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_TrainingFacilities</defName>
-		<label>Train facilities</label>
+		<label>Train stations</label>
 		<description>A special buildings that can be linked to another buildings to increase its effectiveness.</description>
 		<defNames>
 			<li>MartialArtsTarget</li>
@@ -170,7 +173,25 @@
 		<debug>false</debug>
 		<order>90</order>
 		<types>
-			<li>Facilities</li>
+			<li>Utilities</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+	<!-- Misc -->
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Firefoam</defName>
+		<label>Firefoam</label>
+		<description>Special buildings to put down fires.</description>
+		<defNames>
+			<li>FirefoamPopper</li>
+			<li MayRequire="SolarWeb.Stratum">SolarWeb-Stratum-FireSprinkler</li>
+		</defNames>
+		<designationCategory>Misc</designationCategory>
+		<debug>false</debug>
+		<order>100</order>
+		<types>
+			<li>Utilities</li>
 		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
@@ -186,7 +207,10 @@
 		</defNames>
 		<designationCategory>Misc</designationCategory>
 		<debug>false</debug>
-		<order>100</order>
+		<order>200</order>
+		<types>
+			<li>Utilities</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 </Defs>

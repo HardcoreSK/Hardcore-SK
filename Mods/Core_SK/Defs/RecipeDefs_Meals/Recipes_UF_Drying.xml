@@ -13,6 +13,18 @@
 				<li>soylentgreen</li>
 			</disallowedThingDefs>
 		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>MetalCannedMeat_raw</li>
+				<li>MetalCannedMeat_prime</li>
+				<li>Meat_Megaspider</li>
+				<li>Meat_Human</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
 		<recipeUsers>
 			<li>JerkyRack</li>
 		</recipeUsers>
@@ -249,6 +261,8 @@
 
 	<!-- ### DriedFruit ### -->
 	<RecipeDef ParentName="GlitterpediaModExtBase" Name="Make_DriedFruitBase" Abstract="True">
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<fixedIngredientFilter>
 			<categories>
 				<li>FruitFoodRaw</li>
@@ -300,8 +314,8 @@
 						<li>FruitFoodRaw</li>
 					</categories>
 				</filter>
-				<count>5</count>
-			</li>
+				<count>0.75</count>
+			</li>	
 		</ingredients>
 		<products>
 			<driedfruit>5</driedfruit>
@@ -319,7 +333,7 @@
 						<li>FruitFoodRaw</li>
 					</categories>
 				</filter>
-				<count>25</count>
+				<count>3.75</count>
 			</li>
 		</ingredients>
 		<products>

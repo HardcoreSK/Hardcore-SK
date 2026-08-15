@@ -14,7 +14,7 @@
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofThatchHay_Buildable"]</xpath>
     <value>
       <costList>
-        <Hay>4</Hay>
+        <Hay>3</Hay>
       </costList>
     </value>
   </Operation>
@@ -45,10 +45,14 @@
   </Operation>
 
   <!-- HSK clay bricks use the Bricks stuff category rather than Stony. -->
-  <Operation Class="PatchOperationAdd">
+  <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofShingle_Buildable"]/stuffCategories</xpath>
     <value>
-      <li>Bricks</li>
+		<stuffCategories>
+		  <li>Woody</li>
+		  <li>Stony</li>
+		  <li>Bricks</li>
+		</stuffCategories>
     </value>
   </Operation>
 
@@ -56,9 +60,11 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofGlass_Buildable"]</xpath>
     <value>
-      <costList>
-        <Glass>5</Glass>
-      </costList>
+		<stuffCategories>
+			<li>Glass</li>
+		</stuffCategories>
+		<costStuffCount>5</costStuffCount>
+      <costList/>
       <researchPrerequisites>
         <li>Construction_B3</li>
       </researchPrerequisites>
@@ -68,12 +74,15 @@
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofSolarShingles_Buildable"]/costList</xpath>
     <value>
-      <costList>
-        <Glass>5</Glass>
-        <ComponentIndustrial>2</ComponentIndustrial>
-        <Mechanism>2</Mechanism>
-        <ElectronicComponents>1</ElectronicComponents>
-      </costList>
+		<stuffCategories>
+			<li>Glass</li>
+		</stuffCategories>
+		<costStuffCount>5</costStuffCount>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Mechanism>2</Mechanism>
+			<ElectronicComponents>1</ElectronicComponents>
+		</costList>
     </value>
   </Operation>
 

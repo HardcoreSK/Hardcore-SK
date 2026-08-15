@@ -15,8 +15,13 @@
 		<xpath>Defs/ResearchProjectDef[defName="TurretPack"]</xpath>
 		<value>
 			<tab>Apparel_SK</tab>
-			<researchViewX>19.00</researchViewX>
-			<researchViewY>43.00</researchViewY>
+			<hiddenPrerequisites />
+			<researchViewX>15.00</researchViewX>
+			<researchViewY>41.00</researchViewY>
+            <prerequisites>
+                <li>FlakArmor</li>
+                <li>Turrets_31</li>
+            </prerequisites>
 		</value>
 	</Operation>
 	

@@ -1,6 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- Floors -->
+	<!-- Soft Floors -->
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_PrimitiveWoodFloors</defName>
+		<label>primitive floor</label>
+		<description>Primitive wood, bamboo, hay floors.</description>
+		<defNames>
+			<li>TikiFloorBamboo</li>
+			<li>TikiFloorDark</li>
+			<li>TikiFloorLight</li>
+			<li>TikiFloorFancy</li>
+			<li>LogFloor</li>
+			<li>FloorRedWood</li>
+			<li>ThatchFloor</li>
+			<li>WeaveFloor</li>
+			<li>WovenLeafFloor</li>
+			<li>StrawMatting</li>
+		</defNames>
+		<designationCategory>Floors</designationCategory>
+		<debug>false</debug>
+		<order>10</order>
+		<types>
+			<li>Living Area</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_WoodFloors</defName>
+		<label>wood floor</label>
+		<description>Wood panels.</description>
+		<defNames>
+			<li>WoodPlankFloorFour</li>
+			<li>ParquetFloor</li>
+			<li>ClutterWoodTileA</li>
+			<li>WoodPlankFloor</li>
+			<li>WoodPlankFloorTwo</li>
+			<li>WoodPlankFloorThree</li>
+			<li>WoodPlankFloorFive</li>
+			<li>WoodPlankFloorSix</li>
+		</defNames>
+		<designationCategory>Floors</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+		<types>
+			<li>Living Area</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_BambooFloors</defName>
+		<label>Bamboo floor</label>
+		<description>Bamboo panels.</description>
+		<defNames>
+			<li>BambooFloor</li>
+			<li>BambooFloorB</li>
+			<li>BambooFloorC</li>
+			<li>BambooFloorD</li>
+			<li>BambooFloorE</li>
+			<li>BambooFloorF</li>
+		</defNames>
+		<designationCategory>Floors</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+		<types>
+			<li>Living Area</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_RedWoodFloors</defName>
+		<label>Red Wood floor</label>
+		<description>Red Wood panels.</description>
+		<defNames>
+			<li>RedWoodFloor</li>
+			<li>RedWoodFloorB</li>
+			<li>RedWoodFloorC</li>
+			<li>RedWoodFloorD</li>
+			<li>RedWoodFloorE</li>
+			<li>RedWoodFloorF</li>
+		</defNames>
+		<designationCategory>Floors</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
+		<types>
+			<li>Living Area</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
+		<defName>SubCategory_DBHfloors</defName>
+		<label>Kitchen n Bath tiles.</label>
+		<description>Tiles for your kitchen and bathroom.</description>
+		<defNames>
+			<li>DBHMosaicTile</li>
+			<li>DBHMosaicSandstone</li>
+			<li>DBHMosaicGranite</li>
+			<li>DBHMosaicLimestone</li>
+			<li>DBHMosaicSlate</li>
+			<li>DBHMosaicMarble</li>
+		</defNames>
+		<designationCategory>Floors</designationCategory>
+		<types>
+			<li>Utility</li>
+			<li>Clean</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+	<!-- Hard Floors -->
 
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_ConcreteSurface</defName>
@@ -10,11 +117,374 @@
 			<li>Concrete</li>
 			<li>DarkConcrete</li>
 			<li>PavedTile</li>
+			<li>BrokenAsphalt</li>
 		</defNames>
-		<designationCategory>OutsideFloors</designationCategory>
+		<designationCategory>NaturalFloors</designationCategory>
 		<debug>false</debug>
+		<order>10</order>
 		<types>
 			<li>Utility</li>
+			<li>Outside</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_RoughStone</defName>
+		<label>Rough stone</label>
+		<description>Stone paving with random square and rectangular slabs.</description>
+		<defNames>
+			<li>RoughSandstoneFloor</li>
+			<li>RoughGraniteFloor</li>
+			<li>RoughLimestoneFloor</li>
+			<li>RoughSlateFloor</li>
+			<li>RoughMarbleFloor</li>
+			<li>RoughCeramicsFloor</li>
+			<li>RoughBasaltFloor</li>
+		</defNames>
+		<designationCategory>NaturalFloors</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+		<types>
+			<li>Brickwork</li>
+			<li>Outside</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Flagstone</defName>
+		<label>Flagstone</label>
+		<description>Roughly-cut stone tiles. Not super pretty, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources.</description>
+		<defNames>
+			<li>FlagstoneSandstone</li>
+			<li>FlagstoneGranite</li>
+			<li>FlagstoneLimestone</li>
+			<li>FlagstoneSlate</li>
+			<li>FlagstoneMarble</li>
+			<li>FlagstoneBasalt</li>
+			<li MayRequire="ludeon.rimworld.anomaly">FlagstoneVacstone</li>
+		</defNames>
+		<designationCategory>NaturalFloors</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+		<types>
+			<li>Brickwork</li>
+			<li>Outside</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_CobbleFloor</defName>
+		<label>Cobble floor</label>
+		<description>Simple cobblestone flooring constructed only using small rocks found nearby.</description>
+		<defNames>
+			<li>CobbleFloorSandstone</li>
+			<li>CobbleFloorGranite</li>
+			<li>CobbleFloorLimestone</li>
+			<li>CobbleFloorSlate</li>
+			<li>CobbleFloorMarble</li>
+			<li>CobbleFloorBasalt</li>
+		</defNames>
+		<designationCategory>NaturalFloors</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
+		<types>
+			<li>Brickwork</li>
+			<li>Outside</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_StoneRoughPaving</defName>
+		<label>Stone rough paving</label>
+		<description>Rough stone paving.</description>
+		<defNames>
+			<li>FloorStoneRoughSandstone</li>
+			<li>FloorStoneRoughGranite</li>
+			<li>FloorStoneRoughLimestone</li>
+			<li>FloorStoneRoughSlate</li>
+			<li>FloorStoneRoughMarble</li>
+			<li>FloorStoneRoughCeramics</li>
+			<li>FloorStoneRoughBasalt</li>
+		</defNames>
+		<designationCategory>NaturalFloors</designationCategory>
+		<debug>false</debug>
+		<order>50</order>
+		<types>
+			<li>Brickwork</li>
+			<li>Outside</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_UnevenBricks</defName>
+		<label>Uneven bricks</label>
+		<description>Bricks of various sizes laid on the floor. Perfect for that rustic look.</description>
+		<defNames>
+			<li>UEBrickSandstone</li>
+			<li>UEBrickGranite</li>
+			<li>UEBrickLimestone</li>
+			<li>UEBrickSlate</li>
+			<li>UEBrickMarble</li>
+			<li>UEBrickClayBrick</li>
+			<li>UEBrickCeramics</li>
+			<li>UEBrickBasalt</li>
+		</defNames>
+		<designationCategory>NaturalFloors</designationCategory>
+		<debug>false</debug>
+		<order>60</order>
+		<types>
+			<li>Brickwork</li>
+			<li>Outside</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_SmallBrickTile</defName>
+		<label>Small brick tiles</label>
+		<description>Smaller bricks laid in an interlocking pattern. Takes slightly longer to make than the regular variety.</description>
+		<defNames>
+			<li>SBrickSandstone</li>
+			<li>SBrickGranite</li>
+			<li>SBrickLimestone</li>
+			<li>SBrickSlate</li>
+			<li>SBrickMarble</li>
+			<li>SBrickClayBrick</li>
+			<li>SBrickCeramics</li>
+			<li>SBrickBasalt</li>
+		</defNames>
+		<designationCategory>NaturalFloors</designationCategory>
+		<debug>false</debug>
+		<order>70</order>
+		<types>
+			<li>Brickwork</li>
+			<li>Outside</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_MediumBrickTile</defName>
+		<label>Medium brick tiles</label>
+		<description>Bricks laid in an interlocking pattern.</description>
+		<defNames>
+			<li>MBrickSandstone</li>
+			<li>MBrickGranite</li>
+			<li>MBrickLimestone</li>
+			<li>MBrickSlate</li>
+			<li>MBrickMarble</li>
+			<li>MBrickClayBrick</li>
+			<li>MBrickCeramics</li>
+			<li>MBrickBasalt</li>
+		</defNames>
+		<designationCategory>NaturalFloors</designationCategory>
+		<debug>false</debug>
+		<order>80</order>
+		<types>
+			<li>Brickwork</li>
+			<li>Outside</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_MediterraneanBricks</defName>
+		<label>Mediterranean bricks</label>
+		<description>Bricks laid in a circular interlocking pattern.</description>
+		<defNames>
+			<li>MedBrickSandstone</li>
+			<li>MedBrickGranite</li>
+			<li>MedBrickLimestone</li>
+			<li>MedBrickSlate</li>
+			<li>MedBrickMarble</li>
+			<li>MedBrickClayBrick</li>
+			<li>MedBrickCeramics</li>
+			<li>MedBrickBasalt</li>
+		</defNames>
+		<designationCategory>NaturalFloors</designationCategory>
+		<debug>false</debug>
+		<order>90</order>
+		<types>
+			<li>Brickwork</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_HerringboneBricks</defName>
+		<label>Herringbone bricks</label>
+		<description>Bricks laid in an interlocking pattern.</description>
+		<defNames>
+			<li>HerrBrickSandstone</li>
+			<li>HerrBrickGranite</li>
+			<li>HerrBrickLimestone</li>
+			<li>HerrBrickSlate</li>
+			<li>HerrBrickMarble</li>
+			<li>HerrBrickClayBrick</li>
+			<li>HerrBrickCeramics</li>
+			<li>HerrBrickBasalt</li>
+		</defNames>
+		<designationCategory>NaturalFloors</designationCategory>
+		<debug>false</debug>
+		<order>100</order>
+		<types>
+			<li>Brickwork</li>
+			<li>Outside</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_VanillaFloor</defName>
+		<label>Solid stone floors</label>
+		<description>Solid stone tiles for a castle feeling.</description>
+		<defNames>
+			<li>TileSandstone</li>
+			<li>TileGranite</li>
+			<li>TileLimestone</li>
+			<li>TileSlate</li>
+			<li>TileMarble</li>
+			<li>ClayBrickTile</li>
+			<li>TileBasalt</li>
+			<li>TileCeramics</li>
+			<li MayRequire="ludeon.rimworld.anomaly">TileVacstone</li>
+		</defNames>
+		<designationCategory>NaturalFloors</designationCategory>
+		<debug>false</debug>
+		<order>110</order>
+		<types>
+			<li>Brickwork</li>
+			<li>Outside</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_StoneSlabs</defName>
+		<label>stone slabs</label>
+		<description>Stone flooring made with square slabs.</description>
+		<defNames>
+			<li>FloorStoneSlabsSandstone</li>
+			<li>FloorStoneSlabsGranite</li>
+			<li>FloorStoneSlabsLimestone</li>
+			<li>FloorStoneSlabsSlate</li>
+			<li>FloorStoneSlabsMarble</li>
+			<li>FloorStoneSlabsCeramics</li>
+			<li>FloorStoneSlabsBasalt</li>
+		</defNames>
+		<designationCategory>NaturalFloors</designationCategory>
+		<debug>false</debug>
+		<order>120</order>
+		<types>
+			<li>Brickwork</li>
+			<li>Outside</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_StoneHexPaving</defName>
+		<label>stone hex paving</label>
+		<description>Stone paving with hexagonal tiles.</description>
+		<defNames>
+			<li>FloorStoneHexSandstone</li>
+			<li>FloorStoneHexGranite</li>
+			<li>FloorStoneHexLimestone</li>
+			<li>FloorStoneHexSlate</li>
+			<li>FloorStoneHexMarble</li>
+			<li>FloorStoneHexCeramics</li>
+			<li>FloorStoneHexBasalt</li>
+		</defNames>
+		<designationCategory>NaturalFloors</designationCategory>
+		<debug>false</debug>
+		<order>130</order>
+		<types>
+			<li>Brickwork</li>
+			<li>Outside</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_StoneMosaicPaving</defName>
+		<label>Stone mosaic paving</label>
+		<description>Stone paving with a light/dark mosaic.</description>
+		<defNames>
+			<li>FloorStoneMosaicSandstone</li>
+			<li>FloorStoneMosaicGranite</li>
+			<li>FloorStoneMosaicLimestone</li>
+			<li>FloorStoneMosaicSlate</li>
+			<li>FloorStoneMosaicMarble</li>
+			<li>FloorStoneMosaicClayBrick</li>
+			<li>FloorStoneMosaicCeramics</li>
+			<li>FloorStoneMosaicBasalt</li>
+		</defNames>
+		<designationCategory>NaturalFloors</designationCategory>
+		<debug>false</debug>
+		<order>140</order>
+		<types>
+			<li>Brickwork</li>
+			<li>Outside</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_StoneRandomPaving</defName>
+		<label>Stone random paving</label>
+		<description>Stone paving with random square and rectangular slabs.</description>
+		<defNames>
+			<li>FloorStoneRandomSandstone</li>
+			<li>FloorStoneRandomGranite</li>
+			<li>FloorStoneRandomLimestone</li>
+			<li>FloorStoneRandomSlate</li>
+			<li>FloorStoneRandomMarble</li>
+			<li>FloorStoneRandomClayBrick</li>
+			<li>FloorStoneRandomCeramics</li>
+			<li>FloorStoneRandomBasalt</li>
+		</defNames>
+		<designationCategory>NaturalFloors</designationCategory>
+		<debug>false</debug>
+		<order>150</order>
+		<types>
+			<li>Brickwork</li>
+			<li>Outside</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_StoneStaggered</defName>
+		<label>Stone staggered tile</label>
+		<description>Stone tiles with rounded corners laid in a staggered pattern.</description>
+		<defNames>
+			<li>FloorStoneStaggeredSandstone</li>
+			<li>FloorStoneStaggeredGranite</li>
+			<li>FloorStoneStaggeredLimestone</li>
+			<li>FloorStoneStaggeredSlate</li>
+			<li>FloorStoneStaggeredMarble</li>
+			<li>FloorStoneStaggeredClayBrick</li>
+			<li>FloorStoneStaggeredCeramics</li>
+			<li>FloorStoneStaggeredBasalt</li>
+		</defNames>
+		<designationCategory>NaturalFloors</designationCategory>
+		<debug>false</debug>
+		<order>160</order>
+		<types>
+			<li>Brickwork</li>
+			<li>Outside</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_PolishStoneTile</defName>
+		<label>Polish stone tile</label>
+		<description>Smoothed and polished stone tiles. Time-consuming to make, but easy to keep clean.</description>
+		<defNames>
+			<li>EXF_TileSandstone</li>
+			<li>EXF_TileGranite</li>
+			<li>EXF_TileLimestone</li>
+			<li>EXF_TileSlate</li>
+			<li>EXF_TileMarble</li>
+			<li>EXF_TileCeramics</li>
+			<li>EXF_TileBasalt</li>
+		</defNames>
+		<designationCategory>NaturalFloors</designationCategory>
+		<debug>false</debug>
+		<order>170</order>
+		<types>
+			<li>Brickwork</li>
+			<li>Clean</li>
 		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
@@ -31,10 +501,13 @@
 			<li>FAFMetalTileB</li>
 			<li>FAFTechTile</li>
 		</defNames>
-		<designationCategory>OutsideFloors</designationCategory>
+		<designationCategory>NaturalFloors</designationCategory>
 		<debug>false</debug>
+		<order>180</order>
 		<types>
 			<li>Utility</li>
+			<li>Outside</li>
+			<li>Metal</li>
 		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
@@ -50,10 +523,13 @@
 			<li>PlateCupronickelAlloy</li>
 			<li>PlateCeramics</li>
 		</defNames>
-		<designationCategory>OutsideFloors</designationCategory>
+		<designationCategory>NaturalFloors</designationCategory>
 		<debug>false</debug>
+		<order>190</order>
 		<types>
 			<li>Utility</li>
+			<li>Clean</li>
+			<li>Metal</li>
 		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
@@ -77,10 +553,13 @@
 			<li>TitaniumTile</li>
 			<li>BetaPolyTile</li>
 		</defNames>
-		<designationCategory>OutsideFloors</designationCategory>
+		<designationCategory>NaturalFloors</designationCategory>
 		<debug>false</debug>
+		<order>200</order>
 		<types>
 			<li>Expensive</li>
+			<li>Clean</li>
+			<li>Metal</li>
 		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
     
@@ -94,8 +573,12 @@
 			<li>TileGlowstoneDotted</li>
 			<li>TileColdstoneDotted</li>
 		</defNames>
-		<designationCategory>OutsideFloors</designationCategory>
+		<designationCategory>NaturalFloors</designationCategory>
 		<debug>false</debug>
+		<order>210</order>
+		<types>
+			<li>Utility</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
     
 	<ArchitectSense.DesignationSubCategoryDef>
@@ -107,441 +590,13 @@
 			<li>SterileTile</li>
 			<li MayRequire="ludeon.rimworld.anomaly">BioferritePlate</li>
 		</defNames>
-		<designationCategory>OutsideFloors</designationCategory>
+		<designationCategory>NaturalFloors</designationCategory>
 		<debug>false</debug>
+		<order>220</order>
 		<types>
 			<li>Utility</li>
+			<li>Clean</li>
 			<li>Expensive</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_SmallBrickTile</defName>
-		<label>Small brick tiles</label>
-		<description>Smaller bricks laid in an interlocking pattern. Takes slightly longer to make than the regular variety.</description>
-		<defNames>
-			<li>SBrickSandstone</li>
-			<li>SBrickGranite</li>
-			<li>SBrickLimestone</li>
-			<li>SBrickSlate</li>
-			<li>SBrickMarble</li>
-			<li>SBrickClayBrick</li>
-			<li>SBrickCeramics</li>
-			<li>SBrickBasalt</li>
-		</defNames>
-		<designationCategory>OutsideFloors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Brickwork</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_MediumBrickTile</defName>
-		<label>Medium brick tiles</label>
-		<description>Bricks laid in an interlocking pattern.</description>
-		<defNames>
-			<li>MBrickSandstone</li>
-			<li>MBrickGranite</li>
-			<li>MBrickLimestone</li>
-			<li>MBrickSlate</li>
-			<li>MBrickMarble</li>
-			<li>MBrickClayBrick</li>
-			<li>MBrickCeramics</li>
-			<li>MBrickBasalt</li>
-		</defNames>
-		<designationCategory>OutsideFloors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Brickwork</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_MediterraneanBricks</defName>
-		<label>Mediterranean bricks</label>
-		<description>Bricks laid in a circular interlocking pattern.</description>
-		<defNames>
-			<li>MedBrickSandstone</li>
-			<li>MedBrickGranite</li>
-			<li>MedBrickLimestone</li>
-			<li>MedBrickSlate</li>
-			<li>MedBrickMarble</li>
-			<li>MedBrickClayBrick</li>
-			<li>MedBrickCeramics</li>
-			<li>MedBrickBasalt</li>
-		</defNames>
-		<designationCategory>OutsideFloors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Brickwork</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_UnevenBricks</defName>
-		<label>Uneven bricks</label>
-		<description>Bricks of various sizes laid on the floor. Perfect for that rustic look.</description>
-		<defNames>
-			<li>UEBrickSandstone</li>
-			<li>UEBrickGranite</li>
-			<li>UEBrickLimestone</li>
-			<li>UEBrickSlate</li>
-			<li>UEBrickMarble</li>
-			<li>UEBrickClayBrick</li>
-			<li>UEBrickCeramics</li>
-			<li>UEBrickBasalt</li>
-		</defNames>
-		<designationCategory>OutsideFloors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Brickwork</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_HerringboneBricks</defName>
-		<label>Herringbone bricks</label>
-		<description>Bricks laid in an interlocking pattern.</description>
-		<defNames>
-			<li>HerrBrickSandstone</li>
-			<li>HerrBrickGranite</li>
-			<li>HerrBrickLimestone</li>
-			<li>HerrBrickSlate</li>
-			<li>HerrBrickMarble</li>
-			<li>HerrBrickClayBrick</li>
-			<li>HerrBrickCeramics</li>
-			<li>HerrBrickBasalt</li>
-		</defNames>
-		<designationCategory>OutsideFloors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Brickwork</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_PrimitiveWoodFloors</defName>
-		<label>primitive floor</label>
-		<description>Primitive wood, bamboo, hay floors.</description>
-		<defNames>
-			<li>TikiFloorBamboo</li>
-			<li>TikiFloorDark</li>
-			<li>TikiFloorLight</li>
-			<li>TikiFloorFancy</li>
-			<li>LogFloor</li>
-			<li>FloorRedWood</li>
-			<li>ThatchFloor</li>
-			<li>WeaveFloor</li>
-			<li>WovenLeafFloor</li>
-			<li>StrawMatting</li>
-		</defNames>
-		<designationCategory>Floors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Living Area</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_WoodFloors</defName>
-		<label>wood floor</label>
-		<description>Wood panels.</description>
-		<defNames>
-			<li>WoodPlankFloorFour</li>
-			<li>ParquetFloor</li>
-			<li>ClutterWoodTileA</li>
-			<li>WoodPlankFloor</li>
-			<li>WoodPlankFloorTwo</li>
-			<li>WoodPlankFloorThree</li>
-			<li>WoodPlankFloorFive</li>
-			<li>WoodPlankFloorSix</li>
-		</defNames>
-		<designationCategory>Floors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Living Area</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_BambooFloors</defName>
-		<label>Bamboo floor</label>
-		<description>Bamboo panels.</description>
-		<defNames>
-			<li>BambooFloor</li>
-			<li>BambooFloorB</li>
-			<li>BambooFloorC</li>
-			<li>BambooFloorD</li>
-			<li>BambooFloorE</li>
-			<li>BambooFloorF</li>
-		</defNames>
-		<designationCategory>Floors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Living Area</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_RedWoodFloors</defName>
-		<label>Red Wood floor</label>
-		<description>Red Wood panels.</description>
-		<defNames>
-			<li>RedWoodFloor</li>
-			<li>RedWoodFloorB</li>
-			<li>RedWoodFloorC</li>
-			<li>RedWoodFloorD</li>
-			<li>RedWoodFloorE</li>
-			<li>RedWoodFloorF</li>
-		</defNames>
-		<designationCategory>Floors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Living Area</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_VanillaFloor</defName>
-		<label>Solid stone floors</label>
-		<description>Solid stone tiles for a castle feeling.</description>
-		<defNames>
-			<li>TileSandstone</li>
-			<li>TileGranite</li>
-			<li>TileLimestone</li>
-			<li>TileSlate</li>
-			<li>TileMarble</li>
-			<li>ClayBrickTile</li>
-			<li>TileBasalt</li>
-			<li>TileCeramics</li>
-			<li MayRequire="ludeon.rimworld.anomaly">TileVacstone</li>
-		</defNames>
-		<designationCategory>NaturalFloors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Brickwork</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Flagstone</defName>
-		<label>Flagstone</label>
-		<description>Roughly-cut stone tiles. Not super pretty, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources.</description>
-		<defNames>
-			<li>FlagstoneSandstone</li>
-			<li>FlagstoneGranite</li>
-			<li>FlagstoneLimestone</li>
-			<li>FlagstoneSlate</li>
-			<li>FlagstoneMarble</li>
-			<li>FlagstoneBasalt</li>
-			<li MayRequire="ludeon.rimworld.anomaly">FlagstoneVacstone</li>
-		</defNames>
-		<designationCategory>NaturalFloors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Brickwork</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_RoughStone</defName>
-		<label>Rough stone</label>
-		<description>Stone paving with random square and rectangular slabs.</description>
-		<defNames>
-			<li>RoughSandstoneFloor</li>
-			<li>RoughGraniteFloor</li>
-			<li>RoughLimestoneFloor</li>
-			<li>RoughSlateFloor</li>
-			<li>RoughMarbleFloor</li>
-			<li>RoughCeramicsFloor</li>
-			<li>RoughBasaltFloor</li>
-		</defNames>
-		<designationCategory>NaturalFloors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Brickwork</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_StoneSlabs</defName>
-		<label>stone slabs</label>
-		<description>Stone flooring made with square slabs.</description>
-		<defNames>
-			<li>FloorStoneSlabsSandstone</li>
-			<li>FloorStoneSlabsGranite</li>
-			<li>FloorStoneSlabsLimestone</li>
-			<li>FloorStoneSlabsSlate</li>
-			<li>FloorStoneSlabsMarble</li>
-			<li>FloorStoneSlabsCeramics</li>
-			<li>FloorStoneSlabsBasalt</li>
-		</defNames>
-		<designationCategory>NaturalFloors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Brickwork</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_StoneHexPaving</defName>
-		<label>stone hex paving</label>
-		<description>Stone paving with hexagonal tiles.</description>
-		<defNames>
-			<li>FloorStoneHexSandstone</li>
-			<li>FloorStoneHexGranite</li>
-			<li>FloorStoneHexLimestone</li>
-			<li>FloorStoneHexSlate</li>
-			<li>FloorStoneHexMarble</li>
-			<li>FloorStoneHexCeramics</li>
-			<li>FloorStoneHexBasalt</li>
-		</defNames>
-		<designationCategory>NaturalFloors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Brickwork</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_StoneMosaicPaving</defName>
-		<label>Stone mosaic paving</label>
-		<description>Stone paving with a light/dark mosaic.</description>
-		<defNames>
-			<li>FloorStoneMosaicSandstone</li>
-			<li>FloorStoneMosaicGranite</li>
-			<li>FloorStoneMosaicLimestone</li>
-			<li>FloorStoneMosaicSlate</li>
-			<li>FloorStoneMosaicMarble</li>
-			<li>FloorStoneMosaicClayBrick</li>
-			<li>FloorStoneMosaicCeramics</li>
-			<li>FloorStoneMosaicBasalt</li>
-		</defNames>
-		<designationCategory>NaturalFloors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Brickwork</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_StoneRoughPaving</defName>
-		<label>Stone rough paving</label>
-		<description>Rough stone paving.</description>
-		<defNames>
-			<li>FloorStoneRoughSandstone</li>
-			<li>FloorStoneRoughGranite</li>
-			<li>FloorStoneRoughLimestone</li>
-			<li>FloorStoneRoughSlate</li>
-			<li>FloorStoneRoughMarble</li>
-			<li>FloorStoneRoughCeramics</li>
-			<li>FloorStoneRoughBasalt</li>
-		</defNames>
-		<designationCategory>NaturalFloors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Brickwork</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_StoneRandomPaving</defName>
-		<label>Stone random paving</label>
-		<description>Stone paving with random square and rectangular slabs.</description>
-		<defNames>
-			<li>FloorStoneRandomSandstone</li>
-			<li>FloorStoneRandomGranite</li>
-			<li>FloorStoneRandomLimestone</li>
-			<li>FloorStoneRandomSlate</li>
-			<li>FloorStoneRandomMarble</li>
-			<li>FloorStoneRandomClayBrick</li>
-			<li>FloorStoneRandomCeramics</li>
-			<li>FloorStoneRandomBasalt</li>
-		</defNames>
-		<designationCategory>NaturalFloors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Brickwork</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_StoneStaggered</defName>
-		<label>Stone staggered tile</label>
-		<description>Stone tiles with rounded corners laid in a staggered pattern.</description>
-		<defNames>
-			<li>FloorStoneStaggeredSandstone</li>
-			<li>FloorStoneStaggeredGranite</li>
-			<li>FloorStoneStaggeredLimestone</li>
-			<li>FloorStoneStaggeredSlate</li>
-			<li>FloorStoneStaggeredMarble</li>
-			<li>FloorStoneStaggeredClayBrick</li>
-			<li>FloorStoneStaggeredCeramics</li>
-			<li>FloorStoneStaggeredBasalt</li>
-		</defNames>
-		<designationCategory>NaturalFloors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Brickwork</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_CobbleFloor</defName>
-		<label>Cobble floor</label>
-		<description>Simple cobblestone flooring constructed only using small rocks found nearby.</description>
-		<defNames>
-			<li>CobbleFloorSandstone</li>
-			<li>CobbleFloorGranite</li>
-			<li>CobbleFloorLimestone</li>
-			<li>CobbleFloorSlate</li>
-			<li>CobbleFloorMarble</li>
-			<li>CobbleFloorBasalt</li>
-		</defNames>
-		<designationCategory>NaturalFloors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Brickwork</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_PolishStoneTile</defName>
-		<label>Polish stone tile</label>
-		<description>Smoothed and polished stone tiles. Time-consuming to make, but easy to keep clean.</description>
-		<defNames>
-			<li>EXF_TileSandstone</li>
-			<li>EXF_TileGranite</li>
-			<li>EXF_TileLimestone</li>
-			<li>EXF_TileSlate</li>
-			<li>EXF_TileMarble</li>
-			<li>EXF_TileCeramics</li>
-			<li>EXF_TileBasalt</li>
-		</defNames>
-		<designationCategory>NaturalFloors</designationCategory>
-		<debug>false</debug>
-		<types>
-			<li>Brickwork</li>
-		</types>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef MayRequire="Dubwise.DubsBadHygiene">
-		<defName>SubCategory_DBHfloors</defName>
-		<label>Kitchen n Bath tiles.</label>
-		<description>Tiles for your kitchen and bathroom.</description>
-		<defNames>
-			<li>DBHMosaicTile</li>
-			<li>DBHMosaicSandstone</li>
-			<li>DBHMosaicGranite</li>
-			<li>DBHMosaicLimestone</li>
-			<li>DBHMosaicSlate</li>
-			<li>DBHMosaicMarble</li>
-		</defNames>
-		<designationCategory>Floors</designationCategory>
-		<types>
-			<li>Brickwork</li>
-			<li>Utility</li>
 		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 

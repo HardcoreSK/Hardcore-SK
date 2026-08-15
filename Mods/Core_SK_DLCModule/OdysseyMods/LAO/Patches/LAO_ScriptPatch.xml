@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/QuestScriptDef[defName="OpportunitySite_LAO_GiantAsteroidMiningSite"]/root/nodes/li[@Class="QuestNode_Root_Asteroid"]/mineables</xpath>
+        <value>
+            <mineables>
+                <li>HewnOreGold</li>
+                <li>HewnOreTitanium</li>
+                <li>HewnOreUranium</li>
+            </mineables>
+        </value>
+    </Operation>
+</Patch>

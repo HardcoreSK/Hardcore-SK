@@ -84,6 +84,23 @@
 	</ArchitectSense.DesignationSubCategoryDef>
 
 	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Fences</defName>
+		<label>Fences</label>
+		<description>Fenсes, gates and everything close enough.</description>
+		<defNames>
+			<li>Fence</li>
+			<li>FenceGate</li>
+			<li>PenMarker</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+		<order>50</order>
+		<types>
+			<li>Outside</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Bridges</defName>
 		<label>Bridges</label>
 		<description>Water crossing bridges.</description>
@@ -93,21 +110,10 @@
 		</defNames>
 		<designationCategory>Structure</designationCategory>
 		<debug>false</debug>
-		<order>50</order>
-	</ArchitectSense.DesignationSubCategoryDef>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Outdoor</defName>
-		<label>Outdoor</label>
-		<description>Fecnes, Gates and everything that belongs outside.</description>
-		<defNames>
-			<li>Fence</li>
-			<li>FenceGate</li>
-			<li>PenMarker</li>
-		</defNames>
-		<designationCategory>Structure</designationCategory>
-		<debug>false</debug>
 		<order>60</order>
+		<types>
+			<li>Outside</li>
+		</types>
 	</ArchitectSense.DesignationSubCategoryDef>
 
 </Defs>

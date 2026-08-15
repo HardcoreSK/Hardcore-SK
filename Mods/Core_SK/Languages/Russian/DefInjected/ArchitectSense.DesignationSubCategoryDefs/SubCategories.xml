@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
+    <!-- Structure -->
+
     <SubCategory_Walls.label>стены</SubCategory_Walls.label>
     <SubCategory_Walls.description>Прочные стены, защищающие ваши здания от вторжения и окружающих угроз.</SubCategory_Walls.description>
     
@@ -15,6 +17,21 @@
 
     <SubCategory_Bridges.label>мосты</SubCategory_Bridges.label>
     <SubCategory_Bridges.description>Стройте мосты чтобы соединять моста и не только.</SubCategory_Bridges.description>
+
+    <SubCategory_Fences.label>Заборы</SubCategory_Fences.label>
+    <SubCategory_Fences.description>Заборы, ворота и всё связанное с ними.</SubCategory_Fences.description>
+    
+    <SubCategory_PrimitiveRoofs.label>примитивные крыши</SubCategory_PrimitiveRoofs.label>
+    <SubCategory_PrimitiveRoofs.description>Самая простая крыша, которую вы можете построить для своей колонии на ранних этапах игры.</SubCategory_PrimitiveRoofs.description>
+    
+    <SubCategory_ModernRoofs.label>современные крыши</SubCategory_ModernRoofs.label>
+    <SubCategory_ModernRoofs.description>Более прочные крыши, способные выдерживать более сильные удары и обладающие дополнительными функциональными возможностями.</SubCategory_ModernRoofs.description>
+
+    <SubCategory_GravShipRoofs.label>космические крыши</SubCategory_GravShipRoofs.label>
+    <SubCategory_GravShipRoofs.description>Крыши, созданные с использованием космических технологий, способные выдерживать вакуум космического пространства и предназначенные для гравикораблей и космических станций.</SubCategory_GravShipRoofs.description>
+
+    <SubCategory_RetractableRoofs.label>складываемые крыши</SubCategory_RetractableRoofs.label>
+    <SubCategory_RetractableRoofs.description>Усовершенствованные крыши, которые можно убирать, управляя ими с помощью консоли.</SubCategory_RetractableRoofs.description>
 
     <!-- Power -->
 	
@@ -35,6 +52,9 @@
 	
     <SubCategory_PlasmaPower.label>энергия плазмы</SubCategory_PlasmaPower.label>
     <SubCategory_PlasmaPower.description>Различные генераторы, вырабатывающие энергию из разогретой плазмы.</SubCategory_PlasmaPower.description>
+	
+    <SubCategory_PowerSafety.label>защита энергосети</SubCategory_PowerSafety.label>
+    <SubCategory_PowerSafety.description>Защитите вашу жнергосистему от различных инцидентов.</SubCategory_PowerSafety.description>
 
     <!-- Furniture -->
 	
@@ -49,6 +69,9 @@
 	
     <SubCategory_DoubleBeds.label>двойные кровати</SubCategory_DoubleBeds.label>
     <SubCategory_DoubleBeds.description>Двойные кровати. Могут использоваться сразу двумя людьми.</SubCategory_DoubleBeds.description>
+	
+    <SubCategory_LoftBeds.label>лофтовые кровати</SubCategory_LoftBeds.label>
+    <SubCategory_LoftBeds.description>Кровати для постройки над другими строениями для нужд ваших бараков.</SubCategory_LoftBeds.description>
 	
     <SubCategory_HospitalBeds.label>больничные кровати</SubCategory_HospitalBeds.label>
     <SubCategory_HospitalBeds.description>Специальные кровати для лечения заболевших.</SubCategory_HospitalBeds.description>
@@ -158,6 +181,15 @@
 	
     <SubCategory_ModernRugs.label>современные ковры</SubCategory_ModernRugs.label>
     <SubCategory_ModernRugs.description>Современные дизайнерские ковры придадут любому помещению изысканность.</SubCategory_ModernRugs.description>
+	
+    <SubCategory_BordersWarningRibbon.label>бордюр (предупреждающий)</SubCategory_BordersWarningRibbon.label>
+    <SubCategory_BordersWarningRibbon.description>Бордюр с окрасом предупреждаюшей ленты.</SubCategory_BordersWarningRibbon.description>
+	
+    <SubCategory_BordersStoneBlocks.label>бордюр (каменные блоки)</SubCategory_BordersStoneBlocks.label>
+    <SubCategory_BordersStoneBlocks.description>Бордюр из каменных блоков.</SubCategory_BordersStoneBlocks.description>
+	
+    <SubCategory_BordersPebbles.label>бордюр (галька)</SubCategory_BordersPebbles.label>
+    <SubCategory_BordersPebbles.description>Бордюр из гальки.</SubCategory_BordersPebbles.description>
  
     <!--<SubCategory_QuantumRelay.label>квантовое реле</SubCategory_QuantumRelay.label>
     <SubCategory_QuantumRelay.description>Дополнение к квантовому складу.</SubCategory_QuantumRelay.description>
@@ -194,8 +226,8 @@
     <SubCategory_Fishing.label>рыбалка</SubCategory_Fishing.label>
     <SubCategory_Fishing.description>Постройки для рыбалки и рыбного фермерства.</SubCategory_Fishing.description>
 	
-    <SubCategory_Hydroponics.label>гидропоника</SubCategory_Hydroponics.label>
-    <SubCategory_Hydroponics.description>Постройки для гидропоники.</SubCategory_Hydroponics.description>
+    <SubCategory_Farming.label>фермерство</SubCategory_Farming.label>
+    <SubCategory_Farming.description>Постройки для производства пищи.</SubCategory_Farming.description>
 
     <!-- Production -->
 	
@@ -249,6 +281,9 @@
     <SubCategory_TableGames.label>настольные игры</SubCategory_TableGames.label>
     <SubCategory_TableGames.description>Специальные столы для совместных игр.</SubCategory_TableGames.description>
 	
+    <SubCategory_ActiveGames.label>активные игры</SubCategory_ActiveGames.label>
+    <SubCategory_ActiveGames.description>Активные игры для активных колонистов.</SubCategory_ActiveGames.description>
+	
     <SubCategory_TV.label>ТВ</SubCategory_TV.label>
     <SubCategory_TV.description>Телевизоры для просмотра фильмов.</SubCategory_TV.description>
 	
@@ -260,6 +295,9 @@
 	
     <SubCategory_KidsToys.label>игрушки</SubCategory_KidsToys.label>
     <SubCategory_KidsToys.description>Каждый ребёнок заслуживает игрушку.</SubCategory_KidsToys.description>
+	
+    <SubCategory_Radio.label>радио</SubCategory_Radio.label>
+    <SubCategory_Radio.description>Транслируем релаксирующие биты по всей колонии.</SubCategory_Radio.description>
 
     <!-- Security -->
 	
@@ -293,10 +331,16 @@
     <SubCategory_ACannons.label>автопушки</SubCategory_ACannons.label>
     <SubCategory_ACannons.description>Различные стационарные крупнокалиберные пулемёты.</SubCategory_ACannons.description>
 
-    <SubCategory_EnergyWeapons.label>энергетическое оружие</SubCategory_EnergyWeapons.label>
-    <SubCategory_EnergyWeapons.description>Различное энергетическое оружие.</SubCategory_EnergyWeapons.description>
+    <SubCategory_EnergyWeapons.label>продвинутое вооружение</SubCategory_EnergyWeapons.label>
+    <SubCategory_EnergyWeapons.description>Различное продвинутое вооружение для защиты колонии.</SubCategory_EnergyWeapons.description>
 
-    <SubCategory_WeaponsUtilities.label>системы поддержки</SubCategory_WeaponsUtilities.label>
+    <SubCategory_Autoloaders.label>автоподатчики</SubCategory_Autoloaders.label>
+    <SubCategory_Autoloaders.description>Атоподатчики патронов для бесконечного ада из пуль!</SubCategory_Autoloaders.description>
+
+    <SubCategory_SpecialDefences.label>особые защитные системы</SubCategory_SpecialDefences.label>
+    <SubCategory_SpecialDefences.description>Защитные системы, не вписывающиеся в базовую классификацию.</SubCategory_SpecialDefences.description>
+
+    <SubCategory_WeaponsUtilities.label>системы поддержки периметра</SubCategory_WeaponsUtilities.label>
     <SubCategory_WeaponsUtilities.description>Различные системы поддержки в бою и управления полем боя.</SubCategory_WeaponsUtilities.description>
 	
     <!-- Misc -->
@@ -309,6 +353,9 @@
 	
     <SubCategory_ResearchBenches.label>научные столы</SubCategory_ResearchBenches.label>
     <SubCategory_ResearchBenches.description>Научные столы различного технического уровня.</SubCategory_ResearchBenches.description>
+	
+    <SubCategory_ResearchStations.label>инструменты исследователя</SubCategory_ResearchStations.label>
+    <SubCategory_ResearchStations.description>Исследователи используют данные станции для ускорения работ.</SubCategory_ResearchStations.description>
 
     <SubCategory_Terraforming.label>терраформирование</SubCategory_Terraforming.label>
     <SubCategory_Terraforming.description>Приспособления для терраформирования.</SubCategory_Terraforming.description>
@@ -327,6 +374,9 @@
 	
     <SubCategory_TrainingFacilities.label>тренажеры</SubCategory_TrainingFacilities.label>
     <SubCategory_TrainingFacilities.description>Постройки для тренировки каких-либо навыков.</SubCategory_TrainingFacilities.description>
+	
+    <SubCategory_Firefoam.label>пожарная пена</SubCategory_Firefoam.label>
+    <SubCategory_Firefoam.description>Устройства для защиты поселений от пожаров.</SubCategory_Firefoam.description>
 	
     <SubCategory_Transportation.label>транспортировка</SubCategory_Transportation.label>
     <SubCategory_Transportation.description>Постройки для перевозки между поселениями.</SubCategory_Transportation.description>
@@ -359,6 +409,9 @@
 
     <SubCategory_Airconditon.label>охладительные системы</SubCategory_Airconditon.label>
     <SubCategory_Airconditon.description>Оборудование для охлаждения помещений и создания морозильных камер.</SubCategory_Airconditon.description>
+
+    <SubCategory_TemperatureDevices.label>специальные устройства</SubCategory_TemperatureDevices.label>
+    <SubCategory_TemperatureDevices.description>Особые устройства, не подпадающие под другие категории.</SubCategory_TemperatureDevices.description>
     
     <!-- Floors -->
 	
@@ -544,6 +597,9 @@
     <SubCategory_AtomicTurbines.label>турбины</SubCategory_AtomicTurbines.label>
     <SubCategory_AtomicTurbines.description>Всё это время это было просто для кипячения воды?</SubCategory_AtomicTurbines.description>
 
+    <SubCategory_Sarcophagus.label>саркофаги</SubCategory_Sarcophagus.label>
+    <SubCategory_Sarcophagus.description>Различные саркофаги для реакторов.</SubCategory_Sarcophagus.description>
+
     <SubCategory_AtomicUtilities.label>управление реактором</SubCategory_AtomicUtilities.label>
     <SubCategory_AtomicUtilities.description>Различные строения для управления и контроля.</SubCategory_AtomicUtilities.description>
 
@@ -615,6 +671,9 @@
     
     <SubCategory_GemoStations.label>торпор</SubCategory_GemoStations.label>
     <SubCategory_GemoStations.description>Устройства для гемофагов.</SubCategory_GemoStations.description>
+
+    <SubCategory_BossSummoners.label>локаторы мехбоссов</SubCategory_BossSummoners.label>
+    <SubCategory_BossSummoners.description>Вызывайте мощных мехбоссов на бой!</SubCategory_BossSummoners.description>
     
     <!--Anomaly-->
     
@@ -640,6 +699,9 @@
     
     <SubCategory_GravFuelTanks.label>хранилища топлива</SubCategory_GravFuelTanks.label>
     <SubCategory_GravFuelTanks.description>Всегда храни больше чем требуется.</SubCategory_GravFuelTanks.description>
+    
+    <SubCategory_GravEnergy.label>энергетическая сеть</SubCategory_GravEnergy.label>
+    <SubCategory_GravEnergy.description>Полететь можно и без электричества, но хорошее ли это решение?</SubCategory_GravEnergy.description>
     
     <SubCategory_GravThrusters.label>ускорители</SubCategory_GravThrusters.label>
     <SubCategory_GravThrusters.description>Я есть скорость.</SubCategory_GravThrusters.description>

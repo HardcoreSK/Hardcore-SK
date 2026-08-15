@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<MapGeneratorDef ParentName="SpaceMapGenerator">
+		<defName>LAO_AsteroidGiant</defName>
+		<label>basic giant asteroid</label>
+		<genSteps>
+			<li>LAO_AsteroidGiant</li>
+			<li>AsteroidBasicTransportPods</li>
+			<li>AncientMiningCharge_Asteroid</li>
+			<li>AncientExplosivesCrate_Asteroid</li>
+			<li>AncientDrillPlatform_Asteroid</li>
+			<li>AncientTuneller_Asteroid</li>
+			<li>MechShipChunk_Asteroid</li>
+			<li>LAO_SleepingMechanoidsGiant</li>
+			<li>RockChunks</li>
+		</genSteps>
+	</MapGeneratorDef>
+
+	<MapGeneratorDef ParentName="SpaceMapGenerator">
+		<defName>LAO_AsteroidGiantMiningSite</defName>
+		<label>mining giant asteroid</label>
+		<genSteps>
+			<li>LAO_AsteroidGiantMiningSite</li>
+			<li>AsteroidBasicTransportPods</li>
+			<li>MechShipChunk_Asteroid</li>
+			<li>LAO_SleepingMechanoidsGiant</li>
+			<li>RockChunks</li>
+		</genSteps>
+	</MapGeneratorDef>
+
+	<MapGeneratorDef ParentName="SpaceMapGenerator">
+		<defName>LAO_OrbitalItemStashGiant</defName>
+		<label>giant orbital item stash</label>
+		<genSteps>
+			<li>LAO_AsteroidGiant_NoRuins</li>
+			<li>MechShipChunk_Asteroid</li>
+			<li>LAO_AsteroidGiantItemStash</li>
+			<li>LAO_SleepingMechanoidsGiant</li>
+			<li>RockChunks</li>
+		</genSteps>
+	</MapGeneratorDef>
+  
+</Defs>

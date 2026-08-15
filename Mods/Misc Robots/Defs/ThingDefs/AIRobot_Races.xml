@@ -15,7 +15,7 @@
 			<LeatherAmount>0</LeatherAmount>
 			<MeatAmount>0</MeatAmount>
 			<FilthRate>0</FilthRate>
-			<PsychicSensitivity>0.5</PsychicSensitivity>
+			<PsychicSensitivity>0</PsychicSensitivity>
 			<ToxicResistance>1</ToxicResistance>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.95</ToxicEnvironmentResistance>
 			<Mass>15</Mass>
@@ -26,6 +26,7 @@
 			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
 			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
 			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">2</VacuumSpeedMultiplier>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
 			<Wildness>0.1</Wildness>
 		</statBases>
 		<receivesSignals>false</receivesSignals>
@@ -122,7 +123,7 @@
 		<uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>
 		<statBases>
 			<MarketValue>10</MarketValue>
-			<MoveSpeed>5.25</MoveSpeed>
+			<MoveSpeed>3</MoveSpeed>
 			<Flammability>1.0</Flammability>
 			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
 			<ComfyTemperatureMax>80</ComfyTemperatureMax>

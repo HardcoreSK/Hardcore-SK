@@ -1,0 +1,95 @@
+<LanguageData>
+	<!-- 1.6\Defs\Basic Backstories\Misc Backstories.xml -->
+	<!-- EN: burn victim -->
+	<ZCB_ChildBurnVictim.title>жертва ожогов</ZCB_ChildBurnVictim.title>
+	<!-- EN: burned -->
+	<ZCB_ChildBurnVictim.titleShort>обгоревший</ZCB_ChildBurnVictim.titleShort>
+	<!-- EN: After being terribly burned as a child, [PAWN_nameDef] developed a life-long fear of fire. -->
+	<ZCB_ChildBurnVictim.baseDesc>После того как в детстве {PAWN_nameDef} страшно {PAWN_gender ? обжёгся : обожглась}, у н{PAWN_possessive} на всю жизнь сохранился страх перед огнём.</ZCB_ChildBurnVictim.baseDesc>
+	<!-- EN: TimeOnFire -->
+	<ZCB_ChildBurnVictim.requiredRecords.0.name>TimeOnFire</ZCB_ChildBurnVictim.requiredRecords.0.name>
+	
+	<!-- EN: juvenile delinquent -->
+	<ZCB_JuvenileDelinquent.title>малолетний арестант</ZCB_JuvenileDelinquent.title>
+	<!-- EN: delinquent -->
+	<ZCB_JuvenileDelinquent.titleShort>арестант</ZCB_JuvenileDelinquent.titleShort>
+	<!-- EN: [PAWN_nameDef] has a troubled childhood. Frequently on the wrong side of the law, [PAWN_pronoun] spent a lot of time in jail. -->
+	<ZCB_JuvenileDelinquent.baseDesc>У {PAWN_nameDef} было трудное детство. Часто оказываясь по ту сторону закона, {PAWN_pronoun} {PAWN_gender ? провёл : провела} много времени в тюрьме.</ZCB_JuvenileDelinquent.baseDesc>
+	
+	<!-- EN: sole suvivor -->
+	<ZCB_SoleSurvivor.title>оставшийся в живых</ZCB_SoleSurvivor.title>
+	<!-- EN: suvivor -->
+	<ZCB_SoleSurvivor.titleShort>выживший</ZCB_SoleSurvivor.titleShort>
+	<!-- EN: Left completely alone, [PAWN_nameDef] was forced to fend for [PAWN_objective]self at a young age. -->
+	<ZCB_SoleSurvivor.baseDesc>Оставшись в полном одиночестве, {PAWN_nameDef} в юном возрасте {PAWN_gender ? был вынужден сам : была вынуждена сама} заботиться о себе.</ZCB_SoleSurvivor.baseDesc>
+	
+	<!-- EN: serial killer -->
+	<ZCB_SerialKiller.title>серийный убийца</ZCB_SerialKiller.title>
+	<!-- EN: killer -->
+	<ZCB_SerialKiller.titleShort>убийца</ZCB_SerialKiller.titleShort>
+	<!-- EN: [PAWN_nameDef] spent [PAWN_possessive] childhood learning how to take people apart. [PAWN_possessive] never learned how to put them back together. -->
+	<ZCB_SerialKiller.baseDesc>{PAWN_nameDef} {PAWN_gender ? провёл : провела} своё детство, учась разбирать людей на части. Но {PAWN_pronoun} так и не {PAWN_gender ? научился : научилась} собирать их обратно.</ZCB_SerialKiller.baseDesc>
+	<!-- EN: KillsHumanlikes -->
+	<ZCB_SerialKiller.requiredRecords.0.name>KillsHumanlikes</ZCB_SerialKiller.requiredRecords.0.name>
+	<!-- EN: TimesTendedOther -->
+	<ZCB_SerialKiller.requiredRecords.1.name>TimesTendedOther</ZCB_SerialKiller.requiredRecords.1.name>
+	
+	<!-- EN: morbid curiosity -->
+	<ZCB_MorbidCuriosity.title>мрачное дитя</ZCB_MorbidCuriosity.title>
+	<!-- EN: morbid -->
+	<ZCB_MorbidCuriosity.titleShort>мрачный</ZCB_MorbidCuriosity.titleShort>
+	<!-- EN: [PAWN_nameDef] was always fascinated by the dead. [PAWN_pronoun] found any excuse to hang around the battlefield, burying the bodies of raiders after stealing their stuff. [PAWN_possessive] peers found this uncomfortable and ostracised [PAWN_objective]. As [PAWN_pronoun] grew older, [PAWN_pronoun] increasingly preferred the company of the dead to that of the living. -->
+	<ZCB_MorbidCuriosity.baseDesc>{PAWN_nameDef} всегда был {PAWN_gender ? очарован : очарована} мертвецами. {PAWN_pronoun} {PAWN_gender ? придумывал : придумывала} любой предлог, чтобы побродить по полю боя, хороня тела налётчиков и крадя их вещи. {PAWN_possessive} сверстников пугало это и они изгнали {PAWN_possessive}. По мере взросления {PAWN_pronoun} всё чаще {PAWN_gender ? предпочитал : предпочитала} компанию мёртвых, чем живых.</ZCB_MorbidCuriosity.baseDesc>
+	<!-- EN: BodiesStripped -->
+	<ZCB_MorbidCuriosity.requiredRecords.0.name>BodiesStripped</ZCB_MorbidCuriosity.requiredRecords.0.name>
+	<!-- EN: CorpsesBuried -->
+	<ZCB_MorbidCuriosity.requiredRecords.1.name>CorpsesBuried</ZCB_MorbidCuriosity.requiredRecords.1.name>
+	<!-- EN: OperationsPerformed -->
+	<ZCB_MorbidCuriosity.requiredRecords.2.name>OperationsPerformed</ZCB_MorbidCuriosity.requiredRecords.2.name>
+	
+	<!-- EN: bullied bookworm -->
+	<ZCB_BulliedBookworm.title>книжный червь</ZCB_BulliedBookworm.title>
+	<!-- EN: bookworm -->
+	<ZCB_BulliedBookworm.titleShort>книжный червь</ZCB_BulliedBookworm.titleShort>
+	<!-- EN: As a child, [PAWN_nameDef] never fit in with the other kids. Instead, [PAWN_pronoun] spent [PAWN_possessive] time reading, and occasionally fighting off bullies. -->
+	<ZCB_BulliedBookworm.baseDesc>В детстве {PAWN_nameDef} никогда не {PAWN_gender ? вписывался : вписывалась} в компанию других детей. Вместо этого {PAWN_pronoun} {PAWN_gender ? проводил : проводила} своё время за чтением и часто {PAWN_gender ? подвергался : подвергалась} буллингу.</ZCB_BulliedBookworm.baseDesc>
+	<!-- EN: ZCB_TimeReading -->
+	<ZCB_BulliedBookworm.requiredRecords.0.name>ZCB_TimeReading</ZCB_BulliedBookworm.requiredRecords.0.name>
+	
+	<!-- EN: surgery victim -->
+	<ZCB_SurgeryVictim.title>жертва операций</ZCB_SurgeryVictim.title>
+	<!-- EN: victim -->
+	<ZCB_SurgeryVictim.titleShort>жертва</ZCB_SurgeryVictim.titleShort>
+	<!-- EN: [PAWN_nameDef] distrusts doctors, as every hospital visit seems to result in a new artificial part - [PAWN_pronoun] would much prefer to stay intact. When not under the knife, [PAWN_nameDef] enjoyed spending time in nature.\n\nAdds trait: Body purist -->
+	<ZCB_SurgeryVictim.baseDesc>{PAWN_nameDef} не доверяет врачам, поскольку каждый визит в больницу, приводил к появлению новой искусственной части части ― поэтому {PAWN_pronoun} {PAWN_gender ? предпочёл бы остаться невредимым : предпочла бы остаться невредимой}. Когда {PAWN_pronoun} не ложится под нож, {PAWN_nameDef} любит проводить время на природе.\n\nДобавляет черту: Биоконсерватор</ZCB_SurgeryVictim.baseDesc>
+	
+	<!-- EN: amputee -->
+	<ZCB_Amputee.title>ампутант</ZCB_Amputee.title>
+	<!-- EN: amputee -->
+	<ZCB_Amputee.titleShort>ампутант</ZCB_Amputee.titleShort>
+	<!-- EN: [PAWN_nameDef] was distraught the first time [PAWN_pronoun] had to replace one of [PAWN_possessive] natural body parts, but soon grew to appreciate the replacement. [PAWN_pronoun] looks forward to getting more replacement parts for the ones [PAWN_pronoun] is still missing.\n\nAdds trait: Transhumanist -->
+	<ZCB_Amputee.baseDesc>Когда {PAWN_nameDef} впервые пришлось заменить одну из своих естественных частей тела, {PAWN_pronoun} {PAWN_gender ? был расстроен, но вскоре ему : была расстроена, но вскоре ей} понравилась замена. {PAWN_pronoun} с нетерпением ждёт, когда ему заменят остальные части тела.\n\nДобавляет черту: Трансгуманист</ZCB_Amputee.baseDesc>
+	
+	<!-- EN: butchered butcher -->
+	<ZCB_ButcheredButcher.title>мясник-психопат</ZCB_ButcheredButcher.title>
+	<!-- EN: butchered -->
+	<ZCB_ButcheredButcher.titleShort>мясник</ZCB_ButcheredButcher.titleShort>
+	<!-- EN: Having been under the knife several times, [PAWN_nameDef] is quite comfortable with butchery of both animals and people.\n\nAdds trait: Psychopath -->
+	<ZCB_ButcheredButcher.baseDesc>Несколько раз побывав под ножом, {PAWN_nameDef} вполне спокойно относится к разделке как животных, так и людей.\n\nДобавляет черту: Психопат</ZCB_ButcheredButcher.baseDesc>
+	<!-- EN: OperationsReceived -->
+	<ZCB_ButcheredButcher.requiredRecords.0.name>OperationsReceived</ZCB_ButcheredButcher.requiredRecords.0.name>
+	
+	<!-- EN: wimpy transhumanist -->
+	<ZCB_WimpyTranshumanist.title>слабый трансгуманист</ZCB_WimpyTranshumanist.title>
+	<!-- EN: wimp -->
+	<ZCB_WimpyTranshumanist.titleShort>хлюпик</ZCB_WimpyTranshumanist.titleShort>
+	<!-- EN: [PAWN_nameDef] discovered that each new artificial part reduced [PAWN_possessive] ability to feel pain. [PAWN_pronoun] made it [PAWN_possessive] mission to replace as much as possible of [PAWN_possessive] weak flesh.\n\nAdds trait: Transhumanist -->
+	<ZCB_WimpyTranshumanist.baseDesc>{PAWN_nameDef} {PAWN_gender ? обнаружил : обнаружила}, что каждая {PAWN_possessive} новая искусственная часть тела уменьшает чувствительность боли. После этого {PAWN_pronoun} {PAWN_gender ? поставил : поставила} себе цель заменить как можно больше своей слабой плоти.\n\nДобавляет черту: Трансгуманист</ZCB_WimpyTranshumanist.baseDesc>
+	
+	<!-- EN: transhumanist -->
+	<ZCB_Transhumanist.title>трансгуманист</ZCB_Transhumanist.title>
+	<!-- EN: transhumanist -->
+	<ZCB_Transhumanist.titleShort>трансгуманист</ZCB_Transhumanist.titleShort>
+	<!-- EN: [PAWN_nameDef] felt that [PAWN_possessive] arficial parts were improvements over [PAWN_possessive] natural flesh.\n\nAdds trait: Transhumanist -->
+	<ZCB_Transhumanist.baseDesc>{PAWN_nameDef} {PAWN_gender ? считал : считала}, что {PAWN_possessive} искусственные части тела были куда лучше естественной плоти.\n\nДобавляет черту: Трансгуманист</ZCB_Transhumanist.baseDesc>
+</LanguageData>

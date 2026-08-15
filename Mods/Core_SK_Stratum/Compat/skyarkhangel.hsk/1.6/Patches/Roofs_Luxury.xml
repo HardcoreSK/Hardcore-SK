@@ -1,31 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-LuxuryGlassPanel_Buildable"]/stuffCategories</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-LuxuryGlassPanel_Buildable"]/costStuffCount</xpath>
-  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-LuxuryGlassPanel_Buildable"]</xpath>
     <value>
-      <costList>
-        <Glass>10</Glass>
-        <Silver>10</Silver>
-      </costList>
-      <researchPrerequisites>
-        <li>Construction_B3</li>
-      </researchPrerequisites>
+		<stuffCategories>
+			<li>Precious</li>
+		</stuffCategories>
+		<costStuffCount>4</costStuffCount>
+		<costList>
+			<Glass>10</Glass>
+		</costList>
+		<researchPrerequisites>
+			<li>Construction_B3</li>
+		</researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-LuxuryGlassPanel"]/modExtensions</xpath>
+    <value>
+      <li Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension">
+        <buildableDef>SolarWeb-Stratum-LuxuryGlassPanel_Buildable</buildableDef>
+        <graphicData>
+          <texPath>Roofs/StainedGlassPanels</texPath>
+          <skylightFrameWidth>0.03</skylightFrameWidth>
+          <isSeamless>true</isSeamless>
+        </graphicData>
+        <designationCategory>Structure</designationCategory>
+        <isSkylight>true</isSkylight>
+        <allowHangingAttachments>false</allowHangingAttachments>
+        <allowRooftopAttachments>false</allowRooftopAttachments>
+      </li>
     </value>
   </Operation>
 
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-SterileTiledRoof_Buildable"]/costList</xpath>
     <value>
-      <costList>
-        <Glass>5</Glass>
-        <Silver>10</Silver>
-      </costList>
+		<stuffCategories>
+			<li>Sterile</li>
+		</stuffCategories>
+		<costStuffCount>8</costStuffCount>
+		<costList>
+			<Glass>5</Glass>
+		</costList>
     </value>
   </Operation>
 </Patch>
