@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Keep sanguophages as rare as they are in regular HSK factions.
+       Move the removed weight back to the inheritable Ratkin xenotype so the
+       complete xenotype table keeps its original total weight. -->
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/PawnKindDef/xenotypeSet/xenotypeChances[RK_XenoType_Ratkin]</xpath>
+    <value>
+      <RK_XenoType_Ratkin MayRequire="Ludeon.RimWorld.Biotech">0.77</RK_XenoType_Ratkin>
+      <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.03</Sanguophage>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/FactionDef/xenotypeSet/xenotypeChances[RK_XenoType_Ratkin]</xpath>
+    <value>
+      <RK_XenoType_Ratkin MayRequire="Ludeon.RimWorld.Biotech">0.77</RK_XenoType_Ratkin>
+      <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.03</Sanguophage>
+    </value>
+  </Operation>
+
+  <!-- HAR adds raceGenes after applying the generated xenotype and always adds
+       them as endogenes. Special xenotypes therefore keep their xenogenes while
+       retaining the inheritable Ratkin foundation. Duplicate endogenes on the
+       normal Ratkin xenotype are ignored by Pawn_GeneTracker.AddGene. -->
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings</xpath>
+    <value>
+      <raceGenes>
+        <li>RK_Gene_SmallBody</li>
+        <li>RK_Gene_Nimble</li>
+        <li>RK_Gene_PoorEyesight</li>
+        <li>RK_Gene_FragilePain</li>
+        <li>AptitudeStrong_Mining</li>
+        <li>AptitudeStrong_Plants</li>
+        <li>RK_Gene_GoodGardening</li>
+        <li>Skin_SheerWhite</li>
+        <li>Beard_NoBeardOnly</li>
+        <li>RK_Gene_LargeEars</li>
+        <li>RK_Gene_ThinTail</li>
+        <li>RK_Gene_CuteFace</li>
+      </raceGenes>
+    </value>
+  </Operation>
+
+</Patch>

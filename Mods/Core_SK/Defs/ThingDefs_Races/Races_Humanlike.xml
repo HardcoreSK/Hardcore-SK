@@ -442,6 +442,20 @@
         <description>Nova are a human-like race from a planet where the temperature is almost always freezing or below. They are well tolerated to cold temperatures because their bodies are unusually warm. They are much quicker than humans.</description>
         <alienRace>
             <generalSettings>
+                <raceGenes MayRequire="Ludeon.RimWorld.Biotech">
+                    <li>Ears_Nova</li>
+                    <li>MoveSpeed_VeryQuick</li>
+                    <li>FireGreatFlammability</li>
+                    <li>PsychicAbility_Improved</li>
+                    <li>ToxWeakness_Minor</li>
+                    <li>MinTemp_LargeDecrease</li>
+                    <li>MaxTemp_SmallDecrease</li>
+                    <li>Immunity_Strong</li>
+                    <li>MeleeAgile</li>
+                    <li>MeleePrecise</li>
+                    <li>GermContainment_Minor</li>
+                    <li>EfficientStomach</li>
+                </raceGenes>
                 <humanRecipeImport>false</humanRecipeImport>
                 <maleGenderProbability>0.5</maleGenderProbability>
                 <forcedRaceTraitEntries>
@@ -946,6 +960,23 @@
         <description>The Dova. Originating from their Dovian homeworld and a cruel, harsh society which has left its impact even on those on the Rim. Whether sent here as punishment, or as escape and a search for better things, these Dova are here now.</description>
         <alienRace>
             <generalSettings>
+                <raceGenes MayRequire="Ludeon.RimWorld.Biotech">
+                    <li>Ears_Dova</li>
+                    <li>MoveSpeed_VeryQuick</li>
+                    <li>PsychicAbility_Improved</li>
+                    <li>ToxResist_Minor</li>
+                    <li>MinTemp_SmallIncrease</li>
+                    <li>MaxTemp_SmallIncrease</li>
+                    <li>Immunity_Strong</li>
+                    <li>AptitudeAboveAverage_Plants</li>
+                    <li>MeleeAgile</li>
+                    <li>GermResist_Minor</li>
+                    <li>AptitudeStrong_Intellectual</li>
+                    <li>VeryEfficientStomach</li>
+                    <li>Learning_Poor</li>
+                    <li>AptitudeBelowAverage_Social</li>
+                    <li>Aggression_Aggressive</li>
+                </raceGenes>
                 <immuneToAge>true</immuneToAge>
                 <humanRecipeImport>false</humanRecipeImport>
                 <maleGenderProbability>0.5</maleGenderProbability>
@@ -1549,6 +1580,22 @@
         </statBases>
         <alienRace>
             <generalSettings>
+                <raceGenes MayRequire="Ludeon.RimWorld.Biotech">
+                    <li>MinTemp_SmallDecrease</li>
+                    <li>MaxTemp_LargeDecrease</li>
+                    <li>Learning_Poor</li>
+                    <li>Immunity_Strong</li>
+                    <li>HardenedStomach</li>
+                    <li>ToughSkin</li>
+                    <li>MeleePrecise</li>
+                    <li>GermResist_Strong</li>
+                    <li>GermContainment_Poor</li>
+                    <li>MeleeDamage_Strong</li>
+                    <li>AptitudePoor_Shooting</li>
+                    <li>AptitudePoor_Intellectual</li>
+                    <li>Beard_Male_Always</li>
+                    <li>Aggression_Aggressive</li>
+                </raceGenes>
                 <humanRecipeImport>false</humanRecipeImport>
                 <alienPartGenerator>
                     <headTypes>
@@ -1728,6 +1775,22 @@
         <description>A baseline orassan, mostly unmodified by gene engineering and mostly unchanged by evolutionary pressures on non-Orass planets. A humanoid feline race.</description>
         <alienRace>
             <generalSettings>
+                <raceGenes MayRequire="Ludeon.RimWorld.Biotech">
+                    <li>Ears_Orassan</li>
+                    <li>Tail_Orassan</li>
+                    <li>MoveSpeed_ExtremelyQuick</li>
+                    <li>FireFlammability</li>
+                    <li>Immunity_Strong</li>
+                    <li>MinTemp_LargeDecrease</li>
+                    <li>MaxTemp_SmallDecrease</li>
+                    <li>MeleeAgile</li>
+                    <li>GermResist_Minor</li>
+                    <li>MinorDarkVision</li>
+                    <li>AptitudeRemarkable_Animals</li>
+                    <li>NakedSpeed</li>
+                    <li>Sleepy</li>
+                    <li>VeryEfficientStomach</li>
+                </raceGenes>
                 <minAgeForAdulthood>16</minAgeForAdulthood>
                 <factionRelations>
                     <li>
