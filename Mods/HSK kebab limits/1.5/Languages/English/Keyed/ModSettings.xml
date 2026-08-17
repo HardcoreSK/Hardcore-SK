@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <KebabLimitsSettingsCategory>HSK kebab limits</KebabLimitsSettingsCategory>
+
+  <ResetSettings>Reset settings</ResetSettings>
+  <ResetSettingsConfirm>Reset all HSK kebab limits settings to their default values?</ResetSettingsConfirm>
+  <ResetSetting>Reset</ResetSetting>
+  <ResetSettingConfirm>Reset {SETTING} to its default value?</ResetSettingConfirm>
+
+  <EnableHardEjection>Enable forced item ejection</EnableHardEjection>
+  <EnableHardEjectionTooltip>When enabled, items exceeding the configured stack limits are automatically ejected from storage onto the floor.</EnableHardEjectionTooltip>
+
+  <DisplayLogFactorInfo>The storage stack limit slider uses a non-linear scale for easier adjustment. Increase this value if your modded stacks can hold thousands of items.</DisplayLogFactorInfo>
+  <DisplayLogFactor>Slider scale modifier</DisplayLogFactor>
+  <DisplayLogFactorExample>Preview of the scale modifier:</DisplayLogFactorExample>
+  <DisplayLogFactorExampleNote>(this preview slider does not affect gameplay)</DisplayLogFactorExampleNote>
+
+  <PressIfStackSizeChangedRuntime>Recalculate stack limits after runtime stack size changes</PressIfStackSizeChangedRuntime>
+
+  <PercentageMode>Use percentages instead of item counts</PercentageMode>
+  <EnableSimilarStackLimits>Enable advanced storage group modes</EnableSimilarStackLimits>
+  <EnableSimilarStackLimitsTooltip>Unlocks "Storage-wide limit" and "Similar stack limit xN" in storage settings, applying limits across the whole slot group instead of per cell. When off, only the slider's per-cell limit applies.</EnableSimilarStackLimitsTooltip>
+  <EnableLogging>Enable logging</EnableLogging>
+
+  <EnableNegativeSolveCache>Enable cross-tick cache (Optimization)</EnableNegativeSolveCache>
+  <EnableNegativeSolveCacheTooltip>Remembers between game ticks that a storage group is full for an item type, and skips repeated limit checks on large full warehouses. Disable if hauling behaves strangely.</EnableNegativeSolveCacheTooltip>
+
+  <ZoneWideCascadeEject>Eject on storage-wide limit</ZoneWideCascadeEject>
+  <ZoneWideCascadeEjectDisabledTooltip>Disable forced ejection when the storage-wide limit changes.</ZoneWideCascadeEjectDisabledTooltip>
+  <ZoneWideCascadeEjectMode1Tooltip>Mode 1 — Cell order: excess is ejected while walking storage cells in a fixed order until each item type meets the zone limit. All units are counted, including non-stackable items with max stack size equal to 1 (weapons, apparel).</ZoneWideCascadeEjectMode1Tooltip>
+  <ZoneWideCascadeEjectMode2Tooltip>Mode 2 — Most items first: a one-time scan finds which types have the highest totals; the type with the largest amount is fully processed first, then the second largest, and so on. No re-sorting during ejection.</ZoneWideCascadeEjectMode2Tooltip>
+  <ZoneWideCascadeEjectMode3Tooltip>Mode 3 — Least items first: non-stackable items with max stack size equal to 1 are ejected first (weapons, apparel, etc.), then stackable resources — from the type with the lowest zone total to the highest; within a type, smallest stacks first.</ZoneWideCascadeEjectMode3Tooltip>
+
+  <DelayedZoneOverflowEject>Delayed stockpile overflow eject</DelayedZoneOverflowEject>
+  <DelayedZoneOverflowEjectDisabledTooltip>Disable delayed cleanup after a pawn could not place all carried items into a limited stockpile or storage.</DelayedZoneOverflowEjectDisabledTooltip>
+  <DelayedZoneOverflowEjectModeTooltip>Run delayed cleanup {HOURS} game hour(s) after a limited stockpile or storage rejects part of a carried stack.</DelayedZoneOverflowEjectModeTooltip>
+
+  <Multistack>Multistacks</Multistack>
+  <MultistackDisabled>Multistack disabled</MultistackDisabled>
+  <MultistackModeDisabledTooltip>Only one stack may occupy a single map cell — standard RimWorld behavior.</MultistackModeDisabledTooltip>
+
+  <MultistackEnabledGlobal>Multistack enabled globally</MultistackEnabledGlobal>
+  <MultistackModeEnabledGlobalTooltip>Allow multiple stacks per cell in all storages.</MultistackModeEnabledGlobalTooltip>
+
+  <MultistackEnabledPerStorage>Multistack configured separately</MultistackEnabledPerStorage>
+  <MultistackModeEnabledPerStorageTooltip>Each storage may individually allow or disallow multiple stacks per cell.</MultistackModeEnabledPerStorageTooltip>
+
+  <LimitSliderMaxValue>Maximum slider value:</LimitSliderMaxValue>
+
+  <ModifiedHighlightColorLabel>Modified limit highlight color:</ModifiedHighlightColorLabel>
+  <ModifiedHighlightColorTooltip>Select the color used to mark storage limits changed from default values.</ModifiedHighlightColorTooltip>
+
+  <MultistackInfo>Multistack determines how many separate item stacks may occupy one map cell. Custom storage buildings may allow more than one stack per cell. Does not affect unrestricted storage. Similar items may still be restricted by limit rules.</MultistackInfo>
+
+  <AllowPerItemAboveSlider>Allow per-item limits above the stack slider</AllowPerItemAboveSlider>
+  <AllowPerItemAboveSliderTooltip>When enabled, in "No similar stack limit" and "Similar stack limit xN" modes a single item (or category) may be set higher than the storage slider default — e.g. 50 for most items and 100 for one type. In "Storage-wide limit" mode per-item values still cannot exceed the warehouse total; switching to that mode clears overrides above the cap.</AllowPerItemAboveSliderTooltip>
+</LanguageData>

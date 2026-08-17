@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <KebabLimitsSettingsCategory>HSK kebab limits</KebabLimitsSettingsCategory>
+
+  <ResetSettings>Сброс настроек</ResetSettings>
+  <ResetSettingsConfirm>Сбросить все настройки HSK kebab limits к значениям по умолчанию?</ResetSettingsConfirm>
+  <ResetSetting>Сброс</ResetSetting>
+  <ResetSettingConfirm>Сбросить настройку «{SETTING}» к значению по умолчанию?</ResetSettingConfirm>
+
+  <EnableHardEjection>Разрешить принудительный сброс предметов</EnableHardEjection>
+  <EnableHardEjectionTooltip>При включении предметы, превышающие заданные ограничения стаков, будут автоматически сбрасываться из хранилища на пол.</EnableHardEjectionTooltip>
+
+  <DisplayLogFactorInfo>Ползунок ограничения стаков использует нелинейную шкалу для удобной настройки. Увеличьте значение, если модифицированные стаки могут хранить тысячи предметов.</DisplayLogFactorInfo>
+  <DisplayLogFactor>Модификатор шкалы ползунка</DisplayLogFactor>
+  <DisplayLogFactorExample>Предварительный просмотр модификатора:</DisplayLogFactorExample>
+  <DisplayLogFactorExampleNote>(данный ползунок не влияет на игровой процесс)</DisplayLogFactorExampleNote>
+
+  <PressIfStackSizeChangedRuntime>Пересчитать лимиты после изменения размера стака</PressIfStackSizeChangedRuntime>
+
+  <PercentageMode>Использовать проценты вместо количества предметов</PercentageMode>
+  <EnableSimilarStackLimits>Включить расширенные групповые режимы склада</EnableSimilarStackLimits>
+  <EnableSimilarStackLimitsTooltip>В настройках склада становятся доступны режимы «Общий лимит склада» и «Лимит похожих стаков xN»: лимит считается по всей группе ячеек, а не по отдельной клетке. При выключении действует только поклеточный лимит ползунка.</EnableSimilarStackLimitsTooltip>
+  <EnableLogging>Включить логирование</EnableLogging>
+
+  <EnableNegativeSolveCache>Включить межтиковый кэш (Оптимизация)</EnableNegativeSolveCache>
+  <EnableNegativeSolveCacheTooltip>Запоминает между тиками, что группа склада полна для типа предмета, и пропускает повторные проверки лимита на больших заполненных складах. Отключите при странном поведении переноски.</EnableNegativeSolveCacheTooltip>
+
+  <ZoneWideCascadeEject>Сброс при общем лимите склада</ZoneWideCascadeEject>
+  <ZoneWideCascadeEjectDisabledTooltip>Отключить принудительный сброс лишних предметов при изменении общего лимита склада.</ZoneWideCascadeEjectDisabledTooltip>
+  <ZoneWideCascadeEjectMode1Tooltip>Режим 1 — Поклеточный: лишнее сбрасывается при обходе клеток склада в фиксированном порядке, пока для каждого типа предмета не будет достигнут общий лимит. Считаются все штуки на складе, включая нестакаемые предметы с максимальным стаком равным 1 (оружие, одежда).</ZoneWideCascadeEjectMode1Tooltip>
+  <ZoneWideCascadeEjectMode2Tooltip>Режим 2 — Сначала то, чего больше: перед сбросом один раз определяется, каких предметов на складе больше всего; сначала полностью обрабатывается тип с наибольшим количеством, затем со вторым по количеству и т.д. Без повторной пересортировки во время сброса.</ZoneWideCascadeEjectMode2Tooltip>
+  <ZoneWideCascadeEjectMode3Tooltip>Режим 3 — Сначала то, чего меньше: сначала выбрасываются нестакаемые предметы с максимальным стаком равным 1 (оружие, одежда и т.п.), затем стакающиеся ресурсы — от типа с наименьшим количеством на складе к наибольшему; внутри типа — сначала самые маленькие стаки.</ZoneWideCascadeEjectMode3Tooltip>
+
+  <DelayedZoneOverflowEject>Отложенный сброс переполнения склада</DelayedZoneOverflowEject>
+  <DelayedZoneOverflowEjectDisabledTooltip>Отключить отложенную очистку после того, как пешка не смогла положить весь переносимый стак в склад или хранилище с лимитом.</DelayedZoneOverflowEjectDisabledTooltip>
+  <DelayedZoneOverflowEjectModeTooltip>Запустить отложенную очистку через {HOURS} игровых часов после того, как склад или хранилище с лимитом отклонило часть переносимого стака.</DelayedZoneOverflowEjectModeTooltip>
+
+  <Multistack>Мультистаки</Multistack>
+  <MultistackDisabled>Мультистаки отключены</MultistackDisabled>
+  <MultistackModeDisabledTooltip>В одной клетке карты допускается только один стак — стандартное поведение RimWorld.</MultistackModeDisabledTooltip>
+
+  <MultistackEnabledGlobal>Мультистаки включены глобально</MultistackEnabledGlobal>
+  <MultistackModeEnabledGlobalTooltip>Разрешить несколько стаков в одной клетке для всех хранилищ.</MultistackModeEnabledGlobalTooltip>
+
+  <MultistackEnabledPerStorage>Мультистаки настраиваются отдельно</MultistackEnabledPerStorage>
+  <MultistackModeEnabledPerStorageTooltip>Для каждого хранилища можно отдельно разрешить или запретить несколько стаков в одной клетке.</MultistackModeEnabledPerStorageTooltip>
+
+  <LimitSliderMaxValue>Максимальное значение ползунка:</LimitSliderMaxValue>
+
+  <ModifiedHighlightColorLabel>Цвет выделения изменённых лимитов:</ModifiedHighlightColorLabel>
+  <ModifiedHighlightColorTooltip>Выберите цвет, которым будут отмечены лимиты, изменённые относительно стандартных значений.</ModifiedHighlightColorTooltip>
+
+  <MultistackInfo>Мультистак определяет, сколько отдельных стаков может находиться в одной клетке карты. Пользовательские хранилища могут поддерживать более одного стака на клетку. Не влияет на неограниченные хранилища. Одинаковые предметы могут по-прежнему ограничиваться правилами лимитов.</MultistackInfo>
+
+  <AllowPerItemAboveSlider>Разрешить лимит предмета выше ползунка склада</AllowPerItemAboveSlider>
+  <AllowPerItemAboveSliderTooltip>Если включено, в режимах «Без лимита похожих стаков» и «Лимит похожих стаков xN» отдельному предмету (или категории) можно задать лимит выше значения ползунка — например 50 для всех и 100 для одного типа. В режиме «Общий лимит склада» лимит предмета по-прежнему не выше общего капа; при переключении на этот режим overrides выше капа сбрасываются.</AllowPerItemAboveSliderTooltip>
+</LanguageData>
