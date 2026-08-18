@@ -1,33 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-  <!-- Keep sanguophages as rare as they are in regular HSK factions.
-       Move the removed weight back to the inheritable Ratkin xenotype so the
-       complete xenotype table keeps its original total weight. -->
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/PawnKindDef/xenotypeSet/xenotypeChances[RK_XenoType_Ratkin]</xpath>
-    <value>
-      <RK_XenoType_Ratkin MayRequire="Ludeon.RimWorld.Biotech">0.77</RK_XenoType_Ratkin>
-      <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.03</Sanguophage>
-    </value>
-  </Operation>
-
-  <Operation Class="SK.PatchOperationReplaceExtended">
-    <xpath>Defs/FactionDef/xenotypeSet/xenotypeChances[RK_XenoType_Ratkin]</xpath>
-    <value>
-      <RK_XenoType_Ratkin MayRequire="Ludeon.RimWorld.Biotech">0.77</RK_XenoType_Ratkin>
-      <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.03</Sanguophage>
-    </value>
-  </Operation>
-
-  <!-- HAR adds raceGenes after applying the generated xenotype and always adds
-       them as endogenes. Special xenotypes therefore keep their xenogenes while
-       retaining the inheritable Ratkin foundation. Duplicate endogenes on the
-       normal Ratkin xenotype are ignored by Pawn_GeneTracker.AddGene. -->
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings</xpath>
     <value>
-      <raceGenes>
+      <raceGenes MayRequire="Ludeon.RimWorld.Biotech">
+        <li>RK_Gene_SmallBody</li> <!-- Met:0 CarryingCapacity -15 -->
+        <!-- 전투 -->
+        <li>RK_Gene_Nimble</li> <!-- Met:-2 MeleeDodgeChance ×1.3, MoveSpeed +0.1 -->
+        <li>RK_Gene_PoorEyesight</li> <!-- Met:+3 Poor Eyesight - 장거리 사격 정확도 감소 -->
+        <li>RK_Gene_FragilePain</li> <!-- Met:+1 Cpx:-1 PainShockThreshold -0.1 -->
+        <!-- 작업 능력 - 림월드 코어 기본 유전자 -->
+        <li>AptitudeStrong_Mining</li> <!-- 좋은 채굴 -->
+        <li>AptitudeStrong_Plants</li> <!-- 좋은 원예 -->
+        <li>RK_Gene_GoodGardening</li> <!-- 재배 속도 100%, 재배량 130% -->
+        <!-- 외형 - 피부색 (순백/밝은 회색/창백한 노란색, exclusion으로 1개만 적용) -->
+        <li>Skin_SheerWhite</li> <!-- 순백색 - 림월드 바이오테크 기본 -->
+        <li>Beard_NoBeardOnly</li> <!-- 수염 없음 -->
+        <li>RK_Gene_LargeEars</li> <!-- Met:0 외형만 -->
+        <li>RK_Gene_ThinTail</li> <!-- Met:0 외형만 -->
+        <li>RK_Gene_CuteFace</li> <!-- Met:0 NegotiationAbility ×0.80, TradePriceImprovement ×0.90, SocialImpact ×1.20 -->
+      </raceGenes>
+    </value>
+  </Operation>
+
+  <!-- Baseliner carries no genes of its own; HAR raceGenes supplies the
+       inheritable Ratkin foundation. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction/xenotypeList</xpath>
+    <value>
+      <xenotypeList>
+        <li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
+        <li MayRequire="Ludeon.RimWorld.Biotech">RK_XenoType_Ratkin</li>
+        <li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
+        <li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+        <li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
+        <li MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">Starjack</li>
+      </xenotypeList>
+    </value>
+  </Operation>
+
+  <!-- Keep the endogene layer identical to RK_XenoType_Ratkin. HAR applies
+       this restriction only to endogenes; xenogenes remain unrestricted. -->
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction</xpath>
+    <value>
+      <onlyHaveRaceRestrictedGenesEndo>true</onlyHaveRaceRestrictedGenesEndo>
+      <whiteGeneListEndo>
         <li>RK_Gene_SmallBody</li>
         <li>RK_Gene_Nimble</li>
         <li>RK_Gene_PoorEyesight</li>
@@ -40,7 +59,30 @@
         <li>RK_Gene_LargeEars</li>
         <li>RK_Gene_ThinTail</li>
         <li>RK_Gene_CuteFace</li>
-      </raceGenes>
+      </whiteGeneListEndo>
+    </value>
+  </Operation>
+
+  <!-- Only non-inheritable xenotypes are allowed here. Their genes are added
+       exclusively as xenogenes and cannot replace Ratkin raceGenes. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef/xenotypeSet/xenotypeChances[RK_XenoType_Ratkin]</xpath>
+    <value>
+      <xenotypeChances>
+        <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.03</Sanguophage>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.03</Hussar>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie>
+        <Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.03</Starjack>
+      </xenotypeChances>
+    </value>
+  </Operation>
+
+  <!-- Factions keep their full xenotype pools. Only normalize the
+       Sanguophage weight to the regular HSK value. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/FactionDef/xenotypeSet/xenotypeChances[RK_XenoType_Ratkin]/Sanguophage</xpath>
+    <value>
+      <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.03</Sanguophage>
     </value>
   </Operation>
 

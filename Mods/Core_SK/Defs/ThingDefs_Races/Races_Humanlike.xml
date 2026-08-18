@@ -820,22 +820,28 @@
                 <blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
                     <li>Melanin</li>
                 </blackEndoCategories>
+                <onlyHaveRaceRestrictedGenesEndo MayRequire="Ludeon.RimWorld.Biotech">true</onlyHaveRaceRestrictedGenesEndo>
+                <whiteGeneListEndo MayRequire="Ludeon.RimWorld.Biotech">
+                    <li>Ears_Nova</li>
+                    <li>MoveSpeed_VeryQuick</li>
+                    <li>FireGreatFlammability</li>
+                    <li>PsychicAbility_Improved</li>
+                    <li>ToxWeakness_Minor</li>
+                    <li>MinTemp_LargeDecrease</li>
+                    <li>MaxTemp_SmallDecrease</li>
+                    <li>Immunity_Strong</li>
+                    <li>MeleeAgile</li>
+                    <li>MeleePrecise</li>
+                    <li>GermContainment_Minor</li>
+                    <li>EfficientStomach</li>
+                </whiteGeneListEndo>
                 <xenotypeList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
                     <li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Nova</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">Starjack</li>
-					
-					<li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Dova</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Norbal</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Orassan</li>
                 </xenotypeList>
                 <onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
             </raceRestriction>
@@ -1404,22 +1410,31 @@
                 <blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
                     <li>Melanin</li>
                 </blackEndoCategories>
+                <onlyHaveRaceRestrictedGenesEndo MayRequire="Ludeon.RimWorld.Biotech">true</onlyHaveRaceRestrictedGenesEndo>
+                <whiteGeneListEndo MayRequire="Ludeon.RimWorld.Biotech">
+                    <li>Ears_Dova</li>
+                    <li>MoveSpeed_VeryQuick</li>
+                    <li>PsychicAbility_Improved</li>
+                    <li>ToxResist_Minor</li>
+                    <li>MinTemp_SmallIncrease</li>
+                    <li>MaxTemp_SmallIncrease</li>
+                    <li>Immunity_Strong</li>
+                    <li>AptitudeAboveAverage_Plants</li>
+                    <li>MeleeAgile</li>
+                    <li>GermResist_Minor</li>
+                    <li>AptitudeStrong_Intellectual</li>
+                    <li>VeryEfficientStomach</li>
+                    <li>Learning_Poor</li>
+                    <li>AptitudeBelowAverage_Social</li>
+                    <li>Aggression_Aggressive</li>
+                </whiteGeneListEndo>
                 <xenotypeList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
                     <li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Dova</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">Starjack</li>
-					
-					<li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Nova</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Norbal</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Orassan</li>
                 </xenotypeList>
                 <onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
             </raceRestriction>
@@ -1678,22 +1693,30 @@
                 </body>
             </graphicPaths>
             <raceRestriction>
+                <onlyHaveRaceRestrictedGenesEndo MayRequire="Ludeon.RimWorld.Biotech">true</onlyHaveRaceRestrictedGenesEndo>
+                <whiteGeneListEndo MayRequire="Ludeon.RimWorld.Biotech">
+                    <li>MinTemp_SmallDecrease</li>
+                    <li>MaxTemp_LargeDecrease</li>
+                    <li>Learning_Poor</li>
+                    <li>Immunity_Strong</li>
+                    <li>HardenedStomach</li>
+                    <li>ToughSkin</li>
+                    <li>MeleePrecise</li>
+                    <li>GermResist_Strong</li>
+                    <li>GermContainment_Poor</li>
+                    <li>MeleeDamage_Strong</li>
+                    <li>AptitudePoor_Shooting</li>
+                    <li>AptitudePoor_Intellectual</li>
+                    <li>Beard_Male_Always</li>
+                    <li>Aggression_Aggressive</li>
+                </whiteGeneListEndo>
                 <xenotypeList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
                     <li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Norbal</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">Starjack</li>
-					
-					<li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Nova</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Dova</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Orassan</li>
                 </xenotypeList>
                 <onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
             </raceRestriction>
@@ -2342,23 +2365,31 @@
             </thoughtSettings>
             <raceRestriction>
                 <onlyHaveRaceRestrictedGenes>false</onlyHaveRaceRestrictedGenes>
+                <onlyHaveRaceRestrictedGenesEndo MayRequire="Ludeon.RimWorld.Biotech">true</onlyHaveRaceRestrictedGenesEndo>
+                <whiteGeneListEndo MayRequire="Ludeon.RimWorld.Biotech">
+                    <li>Ears_Orassan</li>
+                    <li>Tail_Orassan</li>
+                    <li>MoveSpeed_ExtremelyQuick</li>
+                    <li>FireFlammability</li>
+                    <li>Immunity_Strong</li>
+                    <li>MinTemp_LargeDecrease</li>
+                    <li>MaxTemp_SmallDecrease</li>
+                    <li>MeleeAgile</li>
+                    <li>GermResist_Minor</li>
+                    <li>MinorDarkVision</li>
+                    <li>AptitudeRemarkable_Animals</li>
+                    <li>NakedSpeed</li>
+                    <li>Sleepy</li>
+                    <li>VeryEfficientStomach</li>
+                </whiteGeneListEndo>
                 <onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
                 <xenotypeList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
                     <li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Orassan</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">Starjack</li>
-					
-					<li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Nova</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Dova</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Baseline_Norbal</li>
                 </xenotypeList>
                 <blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
                     <li>Melanin</li>
