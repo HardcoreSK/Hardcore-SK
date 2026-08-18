@@ -26,11 +26,10 @@
 
   <!-- Baseliner carries no genes of its own; HAR raceGenes supplies the
        inheritable Ratkin foundation. -->
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction/xenotypeList</xpath>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction</xpath>
     <value>
       <xenotypeList>
-        <li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
         <li MayRequire="Ludeon.RimWorld.Biotech">RK_XenoType_Ratkin</li>
         <li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
         <li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
