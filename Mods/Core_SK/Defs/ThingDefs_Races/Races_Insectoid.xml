@@ -42,7 +42,7 @@
 		<description>A quiet stalker and merciless killer, the Antis (ant mantis) is a warrior caste of the insectoid hive. This species was created to fight the Mechanoid invasion, but poses a danger to people, too. It is a social creature that cannot reproduce individually.</description>
 		<statBases>
 			<Mass>50</Mass>
-			<MoveSpeed>6.6</MoveSpeed>
+			<MoveSpeed>5.2</MoveSpeed>
 			<ArmorRating_Sharp>1</ArmorRating_Sharp>
 			<ArmorRating_Blunt>2</ArmorRating_Blunt>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -62,7 +62,7 @@
 					<li>Cut</li>
 				</capacities>
 				<power>8</power>
-				<cooldownTime>1.35</cooldownTime>
+				<cooldownTime>1.55</cooldownTime>
 				<linkedBodyPartsGroup>AntisLeftForeleg</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
@@ -81,7 +81,7 @@
 					<li>Cut</li>
 				</capacities>
 				<power>8</power>
-				<cooldownTime>1.35</cooldownTime>
+				<cooldownTime>1.55</cooldownTime>
 				<linkedBodyPartsGroup>AntisRightForeleg</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
@@ -99,7 +99,7 @@
 					<li>ToxicBite</li>
 				</capacities>
 				<power>11</power>
-				<cooldownTime>2.7</cooldownTime>
+				<cooldownTime>2.9</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 				<armorPenetrationSharp>3.5</armorPenetrationSharp>
 				<armorPenetrationBlunt>2.4</armorPenetrationBlunt>
@@ -110,7 +110,7 @@
 					<li>Blunt</li>
 				</capacities>
 				<power>7</power>
-				<cooldownTime>1.65</cooldownTime>
+				<cooldownTime>1.8</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<chanceFactor>0.2</chanceFactor>
 				<armorPenetrationBlunt>5</armorPenetrationBlunt>
@@ -138,7 +138,7 @@
 		</butcherProducts>
 		<race>
 			<body>Antis</body>
-			<baseBodySize>0.9</baseBodySize>
+			<baseBodySize>0.7</baseBodySize>
 			<baseHungerRate>0.7</baseHungerRate>
 			<baseHealthScale>1.25</baseHealthScale>
 			<maxPreyBodySize>2.2</maxPreyBodySize>
@@ -180,7 +180,6 @@
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>Quadruped</bodyShape>
 			</li>
-			<li Class="SK.InsectoidExtension" />
 		</modExtensions>
 	</ThingDef>
 
@@ -190,7 +189,7 @@
 		<race>Antis</race>
 		<defaultFactionType>Insectoid</defaultFactionType>
 		<aiAvoidCover>true</aiAvoidCover>
-		<combatPower>230</combatPower>
+		<combatPower>200</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -244,9 +243,9 @@
 		<description>Gnawlers are a "grunt" caste of the insectoid hive. They are much smaller than the "warrior" caste and isn't particular dangerous when alone. Gnawlers can be very dangerous when they form into packs. It is a social creature that cannot reproduce individually.</description>
 		<statBases>
 			<Mass>90</Mass>
-			<MoveSpeed>6.4</MoveSpeed>
-			<ArmorRating_Sharp>2.2</ArmorRating_Sharp>
-			<ArmorRating_Blunt>3</ArmorRating_Blunt>
+			<MoveSpeed>4.3</MoveSpeed>
+			<ArmorRating_Sharp>2.7</ArmorRating_Sharp>
+			<ArmorRating_Blunt>3.5</ArmorRating_Blunt>
 			<Flammability>1</Flammability>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>90</ComfyTemperatureMax>
@@ -299,7 +298,7 @@
 			</li>
 			<li Class="CombatExtended.ToolCE">
 				<capacities>
-					<li>ToxicBite</li>
+					<li>Bite</li>
 				</capacities>
 				<power>17</power>
 				<cooldownTime>3.4</cooldownTime>
@@ -321,7 +320,6 @@
 		</tools>
 		<butcherProducts>
 			<Chitin>25</Chitin>
-			<PoisonGland>1</PoisonGland>
 		</butcherProducts>
 		<race>
 			<body>Antis</body>
@@ -367,7 +365,6 @@
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>Quadruped</bodyShape>
 			</li>
-			<li Class="SK.InsectoidExtension" />
 		</modExtensions>
 	</ThingDef>
 
@@ -377,7 +374,7 @@
 		<race>Gnawler</race>
 		<defaultFactionType>Insectoid</defaultFactionType>
 		<aiAvoidCover>true</aiAvoidCover>
-		<combatPower>240</combatPower>
+		<combatPower>280</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
