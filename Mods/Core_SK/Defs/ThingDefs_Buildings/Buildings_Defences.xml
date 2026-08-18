@@ -1,351 +1,352 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--========================= Cheval de frise =============================-->
+  <!--========================= Cheval de frise =============================-->
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>chevalDeFrise</defName>
-		<label>cheval de frise</label>
-		<description>A defensive barrier made of sharpened sticks. It is weak but slow to climb over.</description>
-		<graphicData>
-			<texPath>Things/Building/Security/ChevalDeFrise</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3,4)</drawSize>
-			<shadowData>
-				<volume>(0.3, 0.6, 0.3)</volume>
-			</shadowData>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<pathCost>60</pathCost>
-		<passability>PassThroughOnly</passability>
-		<fillPercent>0.5</fillPercent>
-		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsSecurity</li>
-		</thingCategories>
-		<statBases>
-			<MaxHitPoints>180</MaxHitPoints>
-			<Beauty>-7</Beauty>
-			<WorkToBuild>500</WorkToBuild>
-			<Flammability>1</Flammability>
-			<Mass>60</Mass>
-		</statBases>
-		<size>(2,1)</size>
-		<building>
-			<uninstallWork>800</uninstallWork>
-			<ai_chillDestination>false</ai_chillDestination>
-			<isInert>true</isInert>
-			<buildingTags>
-				<li>ForceBuildDuringSiege</li>
-			</buildingTags>
-		</building>
-		<costList>
-			<WoodLog>10</WoodLog>
-		</costList>
-		<holdsRoof>false</holdsRoof>
-		<blockLight>false</blockLight>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<constructEffect>ConstructWood</constructEffect>
-		<designationCategory>Security</designationCategory>
-		<repairEffect>ConstructWood</repairEffect>
-		<rotatable>true</rotatable>
-		<neverMultiSelect>true</neverMultiSelect>
-		<researchPrerequisites>
-			<li>Fortification_A1</li>
-		</researchPrerequisites>
-		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
-	</ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>chevalDeFrise</defName>
+    <label>cheval de frise</label>
+    <description>A defensive barrier made of sharpened sticks. It is weak but slow to climb over.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/ChevalDeFrise</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,4)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>60</pathCost>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Beauty>-7</Beauty>
+      <WorkToBuild>500</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>60</Mass>
+    </statBases>
+    <size>(2,1)</size>
+    <building>
+      <uninstallWork>800</uninstallWork>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <buildingTags>
+        <li>ForceBuildDuringSiege</li>
+      </buildingTags>
+    </building>
+    <costList>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <holdsRoof>false</holdsRoof>
+    <blockLight>false</blockLight>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <constructEffect>ConstructWood</constructEffect>
+    <designationCategory>Security</designationCategory>
+    <repairEffect>ConstructWood</repairEffect>
+    <rotatable>true</rotatable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <researchPrerequisites>
+      <li>Fortification_A1</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+  </ThingDef>
 
-	<!--========================= Moat =============================-->
+  <!--========================= Moat =============================-->
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>Moat</defName>
-		<thingClass>Building</thingClass>
-		<label>shallow moat</label>
-		<description>A light perimeter defense to slow down your enemy.</description>
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Building/Walls/MoatAtlas</texPath>
-			<shaderType>Transparent</shaderType>
-			<linkType>Basic</linkType>
-			<linkFlags>
-				<li>MapEdge</li>
-			</linkFlags>
-		</graphicData>
-		<building>
-			<blueprintGraphicData>
-				<texPath>Things/Building/Walls/MoatAtlasBlueprint</texPath>
-			</blueprintGraphicData>
-			<buildingTags>
-				<li>ForceBuildDuringSiege</li>
-			</buildingTags>
-		</building>
-		<altitudeLayer>LowPlant</altitudeLayer>
-		<uiIconPath>Things/Building/Walls/MenuMoatIcon</uiIconPath>
-		<pathCost>140</pathCost>
-		<pathCostIgnoreRepeat>False</pathCostIgnoreRepeat>
-		<statBases>
-			<Beauty>-20</Beauty>
-			<WorkToBuild>800</WorkToBuild>
-			<Flammability>0</Flammability>
-		</statBases>
-		<costList>
-			<SoftClay>3</SoftClay>
-			<SandResource>2</SandResource>
-		</costList>
-		<drawStyleCategory>Default1D</drawStyleCategory>
-		<blockLight>false</blockLight>
-		<holdsRoof>false</holdsRoof>
-		<rotatable>false</rotatable>
-		<neverMultiSelect>true</neverMultiSelect>
-		<terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
-		<designationCategory>Security</designationCategory>
-		<constructEffect>ConstructDirt</constructEffect>
-		<repairEffect>ConstructDirt</repairEffect>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<researchPrerequisites>
-			<li>Fortification_A1</li>
-		</researchPrerequisites>
-	</ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Moat</defName>
+    <thingClass>Building</thingClass>
+    <label>shallow moat</label>
+    <description>A light perimeter defense to slow down your enemy.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Walls/MoatAtlas</texPath>
+      <shaderType>Transparent</shaderType>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>MapEdge</li>
+      </linkFlags>
+    </graphicData>
+    <building>
+      <ai_neverTrashThis>true</ai_neverTrashThis>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Walls/MoatAtlasBlueprint</texPath>
+      </blueprintGraphicData>
+      <buildingTags>
+        <li>ForceBuildDuringSiege</li>
+      </buildingTags>
+    </building>
+    <altitudeLayer>LowPlant</altitudeLayer>
+    <uiIconPath>Things/Building/Walls/MenuMoatIcon</uiIconPath>
+    <pathCost>140</pathCost>
+    <pathCostIgnoreRepeat>False</pathCostIgnoreRepeat>
+    <statBases>
+      <Beauty>-20</Beauty>
+      <WorkToBuild>800</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <SoftClay>3</SoftClay>
+      <SandResource>2</SandResource>
+    </costList>
+    <drawStyleCategory>Default1D</drawStyleCategory>
+    <blockLight>false</blockLight>
+    <holdsRoof>false</holdsRoof>
+    <rotatable>false</rotatable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <constructEffect>ConstructDirt</constructEffect>
+    <repairEffect>ConstructDirt</repairEffect>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <researchPrerequisites>
+      <li>Fortification_A1</li>
+    </researchPrerequisites>
+  </ThingDef>
     
-	<!--========================= Special =============================-->
+  <!--========================= Special =============================-->
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>IonSatelliteBroadcaster</defName>
-		<label>Ion satellite broadcaster</label>
-		<description>A powerful ion cannon controller device. It is able to destroy your ennemies with power of mechanoid ion weapon.</description>
-		<thingClass>SK.Building_IonSatelliteBroadcaster</thingClass>
-		<graphicData>
-			<texPath>Things/Building/IonController/IonGunController_build</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(2,2)</drawSize>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
-		<statBases>
-			<MaxHitPoints>150</MaxHitPoints>
-			<Flammability>0.5</Flammability>
-			<WorkToBuild>12000</WorkToBuild>
-		</statBases>
-		<tickerType>Normal</tickerType>
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<explosiveRadius>7</explosiveRadius>
-				<explosiveDamageType>Flame</explosiveDamageType>
-			</li>
-			<li Class="CompProperties_Mannable">
-				<manWorkType>Violent</manWorkType>
-			</li>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>20000</basePowerConsumption>
-				<transmitsPower>true</transmitsPower>
-			</li>
-			<li Class="CompProperties_Flickable"/>
-		</comps>
-		<size>(2,2)</size>
-		<passability>Impassable</passability>
-		<castEdgeShadows>true</castEdgeShadows>
-		<fillPercent>1.0</fillPercent>
-		<stuffCategories>
-			<li>RuggedMetallic</li>
-		</stuffCategories>
-		<costStuffCount>140</costStuffCount>
-		<costList>
-			<ComponentSpacer>15</ComponentSpacer>
-			<Mechanism>5</Mechanism>
-			<IonCannonControllerCore>1</IonCannonControllerCore>
-		</costList>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<designationCategory>Security</designationCategory>
-		<placeWorkers>
-			<li>PlaceWorker_NotUnderRoof</li>
-			<li>SK.PlaceWorker_Single</li>
-		</placeWorkers>
-		<building>
-			<ai_combatDangerous>false</ai_combatDangerous>
-			<turretGunDef>Artillery_SkywrathController</turretGunDef>			
-		</building>
-		<researchPrerequisites>
-			<li>Ion_gun_D1</li>
-		</researchPrerequisites>
-		<constructionSkillPrerequisite>19</constructionSkillPrerequisite>
-	</ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>IonSatelliteBroadcaster</defName>
+    <label>Ion satellite broadcaster</label>
+    <description>A powerful ion cannon controller device. It is able to destroy your ennemies with power of mechanoid ion weapon.</description>
+    <thingClass>SK.Building_IonSatelliteBroadcaster</thingClass>
+    <graphicData>
+      <texPath>Things/Building/IonController/IonGunController_build</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <WorkToBuild>12000</WorkToBuild>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>7</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Mannable">
+        <manWorkType>Violent</manWorkType>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>20000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <size>(2,2)</size>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1.0</fillPercent>
+    <stuffCategories>
+      <li>RuggedMetallic</li>
+    </stuffCategories>
+    <costStuffCount>140</costStuffCount>
+    <costList>
+      <ComponentSpacer>15</ComponentSpacer>
+      <Mechanism>5</Mechanism>
+      <IonCannonControllerCore>1</IonCannonControllerCore>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+      <li>SK.PlaceWorker_Single</li>
+    </placeWorkers>
+    <building>
+      <ai_combatDangerous>false</ai_combatDangerous>
+      <turretGunDef>Artillery_SkywrathController</turretGunDef>
+    </building>
+    <researchPrerequisites>
+      <li>Ion_gun_D1</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>19</constructionSkillPrerequisite>
+  </ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>Building_NaniteShieldStation</defName>
-		<label>nanite shield station</label>
-		<description>Supplies and recharges Nanite Shield Modulators on colonists to protect them from injury.</description>
-		<thingClass>SK.Building_Pawn_Upgrader</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Defences/NaniteShieldStation</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(1.3, 1.3)</drawSize>
-            <drawOffset>(0, 0, -0.1)</drawOffset>
-			<shadowData>
-				<volume>(0.85, 1.1, 0.85)</volume>
-				<offset>(0,0,-0.1)</offset>
-			</shadowData>
-		</graphicData>
-		<uiIconPath>Things/Building/Defences/NaniteShieldStation</uiIconPath>
-		<altitudeLayer>Building</altitudeLayer>
-		<blockLight>true</blockLight>
-		<fillPercent>1</fillPercent>
-		<size>(1,1)</size>
-		<rotatable>false</rotatable>
-		<holdsRoof>false</holdsRoof>
-		<statBases>
-			<MaxHitPoints>500</MaxHitPoints>
-			<WorkToBuild>1200</WorkToBuild>
-			<Flammability>1.0</Flammability>
-			<Beauty>25</Beauty>
-		</statBases>
-		<costList>
-			<MagneticMaterial>25</MagneticMaterial>
-			<BiosyntheticMaterial>15</BiosyntheticMaterial>
-			<ComponentSpacer>6</ComponentSpacer>
-			<AdvMechanism>8</AdvMechanism>
-			<Microchips>6</Microchips>
-		</costList>
-		<specialDisplayRadius>2</specialDisplayRadius>
-		<passability>Impassable</passability>
-		<tickerType>Normal</tickerType>
-		<comps>
-			<li Class="SK.CompProperties_PowerOnGraphic" />
-			<li Class="SK.CompProperties_IdlePower">
-				<basePowerConsumption>4000</basePowerConsumption>
-			</li>
-			<li>
-				<compClass>SK.NanoManager</compClass>
-			</li>
-		</comps>
-		<designationCategory>Security</designationCategory>
-		<constructionSkillPrerequisite>17</constructionSkillPrerequisite>
-		<researchPrerequisites>
-			<li>Fortification_E1</li>
-		</researchPrerequisites>
-	</ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Building_NaniteShieldStation</defName>
+    <label>nanite shield station</label>
+    <description>Supplies and recharges Nanite Shield Modulators on colonists to protect them from injury.</description>
+    <thingClass>SK.Building_Pawn_Upgrader</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Defences/NaniteShieldStation</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.3, 1.3)</drawSize>
+      <drawOffset>(0, 0, -0.1)</drawOffset>
+      <shadowData>
+        <volume>(0.85, 1.1, 0.85)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Building/Defences/NaniteShieldStation</uiIconPath>
+    <altitudeLayer>Building</altitudeLayer>
+    <blockLight>true</blockLight>
+    <fillPercent>1</fillPercent>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <holdsRoof>false</holdsRoof>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>25</Beauty>
+    </statBases>
+    <costList>
+      <MagneticMaterial>25</MagneticMaterial>
+      <BiosyntheticMaterial>15</BiosyntheticMaterial>
+      <ComponentSpacer>6</ComponentSpacer>
+      <AdvMechanism>8</AdvMechanism>
+      <Microchips>6</Microchips>
+    </costList>
+    <specialDisplayRadius>2</specialDisplayRadius>
+    <passability>Impassable</passability>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="SK.CompProperties_PowerOnGraphic"/>
+      <li Class="SK.CompProperties_IdlePower">
+        <basePowerConsumption>4000</basePowerConsumption>
+      </li>
+      <li>
+        <compClass>SK.NanoManager</compClass>
+      </li>
+    </comps>
+    <designationCategory>Security</designationCategory>
+    <constructionSkillPrerequisite>17</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>Fortification_E1</li>
+    </researchPrerequisites>
+  </ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>SkywrathController</defName>
-		<label>Skywrath controller</label>
-		<description>A powerful weather controller device. It is able to unleash the sky's wrath on your ennemies.</description>
-		<thingClass>SK.Events.Building_SkywrathController</thingClass>
-		<graphicData>
-			<texPath>Things/Building/MechanoidTerraformer</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(3,3)</drawSize>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
-		<statBases>
-			<MaxHitPoints>150</MaxHitPoints>
-			<Flammability>0.5</Flammability>
-			<WorkToBuild>12000</WorkToBuild>
-		</statBases>
-		<tickerType>Normal</tickerType>
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<explosiveRadius>7</explosiveRadius>
-				<explosiveDamageType>Flame</explosiveDamageType>
-			</li>
-			<li Class="CompProperties_Mannable">
-				<manWorkType>Violent</manWorkType>
-			</li>
-			<li Class="SK.CompProperties_IdlePower">
-				<basePowerConsumption>10000</basePowerConsumption>
-				<transmitsPower>true</transmitsPower>
-			</li>
-			<li Class="CompProperties_Flickable"/>
-		</comps>
-		<size>(3,3)</size>
-		<passability>Impassable</passability>
-		<castEdgeShadows>true</castEdgeShadows>
-		<fillPercent>0.9</fillPercent>
-		<stuffCategories>
-			<li>SolidMetallic</li>
-		</stuffCategories>
-		<costStuffCount>150</costStuffCount>
-		<costList>
-			<ComponentSpacer>15</ComponentSpacer>
-			<MagneticMaterial>30</MagneticMaterial>
-			<Mechanism>10</Mechanism>
-			<Microchips>3</Microchips>
-			<WeatherControllerCore>1</WeatherControllerCore>
-		</costList>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<designationCategory>Security</designationCategory>
-		<placeWorkers>
-			<li>PlaceWorker_NotUnderRoof</li>
-			<li>SK.PlaceWorker_Single</li>
-		</placeWorkers>
-		<researchPrerequisites>
-			<li>ResearchSkywrathController</li>
-		</researchPrerequisites>
-		<building>
-			<turretGunDef>Artillery_SkywrathController</turretGunDef>
-		</building>
-	</ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>SkywrathController</defName>
+    <label>Skywrath controller</label>
+    <description>A powerful weather controller device. It is able to unleash the sky's wrath on your ennemies.</description>
+    <thingClass>SK.Events.Building_SkywrathController</thingClass>
+    <graphicData>
+      <texPath>Things/Building/MechanoidTerraformer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <WorkToBuild>12000</WorkToBuild>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>7</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Mannable">
+        <manWorkType>Violent</manWorkType>
+      </li>
+      <li Class="SK.CompProperties_IdlePower">
+        <basePowerConsumption>10000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <size>(3,3)</size>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.9</fillPercent>
+    <stuffCategories>
+      <li>SolidMetallic</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <costList>
+      <ComponentSpacer>15</ComponentSpacer>
+      <MagneticMaterial>30</MagneticMaterial>
+      <Mechanism>10</Mechanism>
+      <Microchips>3</Microchips>
+      <WeatherControllerCore>1</WeatherControllerCore>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+      <li>SK.PlaceWorker_Single</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>ResearchSkywrathController</li>
+    </researchPrerequisites>
+    <building>
+      <turretGunDef>Artillery_SkywrathController</turretGunDef>
+    </building>
+  </ThingDef>
 
-	<ThingDef>
-		<defName>Building_Shield</defName>
-		<label>orbital power shield</label>
-		<description>Automatically switches on to protect from the orbital bombardment; tremendous power drain and considerable heating when operational.</description>
-		<tickerType>Normal</tickerType>
-		<category>Building</category>
-		<thingClass>SK.Events.OrbitalPowerShield</thingClass>
-		<graphicData>
-			<texPath>Things/Building/OrbitalShield/Shield</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(8,8)</drawSize>
-		</graphicData>
-		<drawerType>MapMeshAndRealTime</drawerType>
-		<repairEffect>Repair</repairEffect>
-		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
-		<castEdgeShadows>false</castEdgeShadows>
-		<size>(8,8)</size>
-		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>Impassable</passability>
-		<selectable>True</selectable>
-		<rotatable>False</rotatable>
-		<fillPercent>0.30</fillPercent>
-		<pathCost>50</pathCost>
-		<statBases>
-			<MaxHitPoints>500</MaxHitPoints>
-			<WorkToBuild>35000</WorkToBuild>
-			<Flammability>1.0</Flammability>
-			<Beauty>-30</Beauty>
-		</statBases>
-		<stuffCategories>
-			<li>SolidMetallic</li>
-		</stuffCategories>
-		<costStuffCount>700</costStuffCount>
-		<costList>
-			<ComponentSpacer>40</ComponentSpacer>
-			<MagneticMaterial>30</MagneticMaterial>
-			<AdvMechanism>15</AdvMechanism>
-			<Microchips>5</Microchips>
-		</costList>
-		<comps>
-			<li Class="SK.CompProperties_IdlePower">
-				<basePowerConsumption>15000</basePowerConsumption>
-				<shortCircuitInRain>false</shortCircuitInRain>
-				<transmitsPower>true</transmitsPower>
-			</li>
-			<li Class="CompProperties_Flickable" />
-			<li Class="SK.Events.CompProperties_Shield"/>
-			<li Class="CompProperties_Breakdownable"/>
-		</comps>
-		<researchPrerequisites>
-			<li>Fortification_E2</li>
-		</researchPrerequisites>
-		<designationCategory>Security</designationCategory>
-		<constructionSkillPrerequisite>19</constructionSkillPrerequisite>
-	</ThingDef>
+  <ThingDef>
+    <defName>Building_Shield</defName>
+    <label>orbital power shield</label>
+    <description>Automatically switches on to protect from the orbital bombardment; tremendous power drain and considerable heating when operational.</description>
+    <tickerType>Normal</tickerType>
+    <category>Building</category>
+    <thingClass>SK.Events.OrbitalPowerShield</thingClass>
+    <graphicData>
+      <texPath>Things/Building/OrbitalShield/Shield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(8,8)</drawSize>
+    </graphicData>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <repairEffect>Repair</repairEffect>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(8,8)</size>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <selectable>True</selectable>
+    <rotatable>False</rotatable>
+    <fillPercent>0.30</fillPercent>
+    <pathCost>50</pathCost>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>35000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-30</Beauty>
+    </statBases>
+    <stuffCategories>
+      <li>SolidMetallic</li>
+    </stuffCategories>
+    <costStuffCount>700</costStuffCount>
+    <costList>
+      <ComponentSpacer>40</ComponentSpacer>
+      <MagneticMaterial>30</MagneticMaterial>
+      <AdvMechanism>15</AdvMechanism>
+      <Microchips>5</Microchips>
+    </costList>
+    <comps>
+      <li Class="SK.CompProperties_IdlePower">
+        <basePowerConsumption>15000</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="SK.Events.CompProperties_Shield"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <researchPrerequisites>
+      <li>Fortification_E2</li>
+    </researchPrerequisites>
+    <designationCategory>Security</designationCategory>
+    <constructionSkillPrerequisite>19</constructionSkillPrerequisite>
+  </ThingDef>
 
 </Defs>
