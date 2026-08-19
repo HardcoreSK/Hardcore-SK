@@ -16,8 +16,11 @@
                 <Mass>8</Mass>
                 <MaxHitPoints>90</MaxHitPoints>
             </statBases>
-            <costList Inherit="False" IsNull="True"/>
-            <recipeMaker Inherit="False" IsNull="True"/>
+            <thingCategories>
+                <li>SimpleProstheses</li>
+            </thingCategories>
+            <costList Inherit="False" IsNull="True" />
+            <recipeMaker Inherit="False" IsNull="True" />
         </value>
     </Operation>
 
@@ -94,8 +97,11 @@
                 <Mass>2</Mass>
                 <MaxHitPoints>90</MaxHitPoints>
             </statBases>
-            <costList Inherit="False" IsNull="True"/>
-            <recipeMaker Inherit="False" IsNull="True"/>
+            <thingCategories>
+                <li>SimpleProstheses</li>
+            </thingCategories>
+            <costList Inherit="False" IsNull="True" />
+            <recipeMaker Inherit="False" IsNull="True" />
         </value>
     </Operation>
 
