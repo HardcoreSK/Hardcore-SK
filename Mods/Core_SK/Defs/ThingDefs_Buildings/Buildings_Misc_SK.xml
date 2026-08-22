@@ -822,7 +822,7 @@
 		</statBases>
 	</ThingDef>
 
-	<ThingDef Class="SK.StargateThingDef" ParentName="BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>Stargate</defName>
 		<label>stargate</label>
 		<description>A Stargate allows transferring of colonists and items between colonies. You can send things through in Colony A's Stargate and load them in Colony B's Stargate. To use it place items or colonists near the Stargate and use the "add resource" or "add colonist" buttons, then use the "dial out" button. The colonists or items are now ready to be "recalled" in a different colony.</description>
@@ -840,8 +840,6 @@
 		<rotatable>false</rotatable>
 		<specialDisplayRadius>3</specialDisplayRadius>
 		<tickerType>Rare</tickerType>
-		<FileLocationPrimary/>
-		<FileLocationSecondary/>
 		<statBases>
 			<WorkToBuild>20000</WorkToBuild>
 			<MaxHitPoints>2000</MaxHitPoints>
@@ -854,7 +852,7 @@
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
 		</building>
 		<comps>
-			<li Class="SK.CompProperties_IdlePower">
+			<li Class="SK.CompProperties_StargateCapacitor">
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>1000</basePowerConsumption>
 			</li>
@@ -875,7 +873,7 @@
 		<designationCategory>Misc</designationCategory>
 	</ThingDef>
 
-	<ThingDef Class="SK.StargateThingDef" ParentName="BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>AncientStargate</defName>
 		<label>an ancient unknown building</label>
 		<description>According to rumors, this is the ancient gate through which our ancestors traveled or maybe the ancients..</description>
@@ -892,8 +890,6 @@
 		<fillPercent>0.3</fillPercent>
 		<rotatable>false</rotatable>
 		<tickerType>Rare</tickerType>
-		<FileLocationPrimary/>
-		<FileLocationSecondary/>
 		<statBases>
 			<MaxHitPoints>1000</MaxHitPoints>
 			<Flammability>0.0</Flammability>

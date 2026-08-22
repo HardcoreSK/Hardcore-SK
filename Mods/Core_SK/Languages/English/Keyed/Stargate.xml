@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Stargate.AddColonistLabel>Add colonist</Stargate.AddColonistLabel>
+  <Stargate.AddColonistDesc>Select a nearby colonist and load them into the Stargate buffer.</Stargate.AddColonistDesc>
+  <Stargate.DialOutLabel>Send transfer</Stargate.DialOutLabel>
+  <Stargate.DialOutDesc>Publish the buffered pawns for recall from another save.</Stargate.DialOutDesc>
+  <Stargate.RecallLabel>Recall transfer</Stargate.RecallLabel>
+  <Stargate.RecallDesc>Recall the waiting transfer into this save.</Stargate.RecallDesc>
+  <Stargate.IncreasePowerLabel>Increase charging rate</Stargate.IncreasePowerLabel>
+  <Stargate.IncreasePowerDesc>Increase power draw to charge the Stargate faster.</Stargate.IncreasePowerDesc>
+  <Stargate.DecreasePowerLabel>Decrease charging rate</Stargate.DecreasePowerLabel>
+  <Stargate.DecreasePowerDesc>Reduce the Stargate charging rate and power draw.</Stargate.DecreasePowerDesc>
+  <Stargate.DevFillCapacitorLabel>DEV: Fill Stargate capacitor</Stargate.DevFillCapacitorLabel>
+  <Stargate.DevFillCapacitorDesc>Instantly fill the Stargate capacitor to its configured capacity.</Stargate.DevFillCapacitorDesc>
+
+  <Stargate.MissingCapacitor>The Stargate capacitor component is missing.</Stargate.MissingCapacitor>
+  <Stargate.MaximumChargingRate>The maximum charging rate is selected.</Stargate.MaximumChargingRate>
+  <Stargate.MinimumChargingRate>The charging rate is already zero.</Stargate.MinimumChargingRate>
+  <Stargate.CapacitorAlreadyFull>The capacitor is already fully charged.</Stargate.CapacitorAlreadyFull>
+  <Stargate.InsufficientConnectionCharge>Insufficient charge to establish a connection.</Stargate.InsufficientConnectionCharge>
+  <Stargate.NoPawn>No pawns are loaded in the Stargate.</Stargate.NoPawn>
+  <Stargate.NoPawnNearby>No eligible player pawns are near the Stargate.</Stargate.NoPawnNearby>
+  <Stargate.ChannelOccupied>The transfer channel is occupied. Recall or archive the existing transfer first.</Stargate.ChannelOccupied>
+  <Stargate.NoInboundTransfer>No inbound Stargate transfer was found.</Stargate.NoInboundTransfer>
+  <Stargate.InvalidTransfer>Invalid Stargate transfer: {0}</Stargate.InvalidTransfer>
+  <Stargate.SourceLedgerMissing>The current save has no Stargate transfer ledger.</Stargate.SourceLedgerMissing>
+  <Stargate.DestinationLedgerMissing>The destination save has no Stargate transfer ledger.</Stargate.DestinationLedgerMissing>
+  <Stargate.TransferPublished>Transfer published. The pawns can now be recalled by another Stargate.</Stargate.TransferPublished>
+  <Stargate.RecallSucceeded>The Stargate transfer arrived successfully.</Stargate.RecallSucceeded>
+  <Stargate.CannotAddPawn>The selected pawn could not be added to the Stargate buffer.</Stargate.CannotAddPawn>
+  <Stargate.BufferedPawnsInspect>Buffered pawns: {0}</Stargate.BufferedPawnsInspect>
+  <Stargate.CapacitorChargeInspect>Capacitor charge: {0} / {1}</Stargate.CapacitorChargeInspect>
+  <Stargate.ChargingRateInspect>Charging rate: {0}</Stargate.ChargingRateInspect>
+  <Stargate.BufferedPawnsDiscarded>Stargate {0} was destroyed without a valid map; {1} buffered pawns were discarded.</Stargate.BufferedPawnsDiscarded>
+
+  <Stargate.PlayerPawnOnly>Only player-controlled colonists can use the Stargate.</Stargate.PlayerPawnOnly>
+  <Stargate.DeadOrDown>Dead or downed pawns cannot use the Stargate.</Stargate.DeadOrDown>
+  <Stargate.NotSuitable>Babies, prisoners, and slaves cannot use the Stargate.</Stargate.NotSuitable>
+  <Stargate.NoQuestLodger>Quest lodgers cannot use the Stargate.</Stargate.NoQuestLodger>
+  <Stargate.LordControlled>Pawns controlled by a Lord cannot use the Stargate.</Stargate.LordControlled>
+
+  <Stargate.PackageMissing>The transfer package is missing.</Stargate.PackageMissing>
+  <Stargate.EnvelopeIncomplete>The transfer envelope is incomplete.</Stargate.EnvelopeIncomplete>
+  <Stargate.NoValidPawns>The transfer contains no valid pawns.</Stargate.NoValidPawns>
+  <Stargate.InvalidIdeologyData>The transfer contains invalid ideology data.</Stargate.InvalidIdeologyData>
+  <Stargate.InvalidIdeologyIdentity>The transfer contains an invalid ideology identity.</Stargate.InvalidIdeologyIdentity>
+  <Stargate.DuplicateIdeologyRecords>The transfer contains duplicate ideology records.</Stargate.DuplicateIdeologyRecords>
+  <Stargate.MissingPreceptDef>Ideology {0} references a missing Precept Def.</Stargate.MissingPreceptDef>
+  <Stargate.MissingPawnDef>A pawn race or kind Def is missing. Restore the source mod before recalling this transfer.</Stargate.MissingPawnDef>
+  <Stargate.MissingPawnTracker>Pawn {0} is missing required tracker data.</Stargate.MissingPawnTracker>
+  <Stargate.IdeologyOutsideTransfer>Pawn {0} references an ideology outside this transfer.</Stargate.IdeologyOutsideTransfer>
+  <Stargate.PreviousIdeologyOutsideTransfer>Pawn {0} references a previous ideology outside this transfer.</Stargate.PreviousIdeologyOutsideTransfer>
+  <Stargate.DuplicatePawnIdentities>The transfer contains duplicate pawn identities.</Stargate.DuplicatePawnIdentities>
+  <Stargate.MissingHealthDef>Pawn {0} references a missing health Def.</Stargate.MissingHealthDef>
+  <Stargate.MissingTraitDef>Pawn {0} references a missing trait Def.</Stargate.MissingTraitDef>
+  <Stargate.MissingGeneDef>Pawn {0} references a missing gene Def.</Stargate.MissingGeneDef>
+  <Stargate.MissingAbilityDef>Pawn {0} references a missing ability Def.</Stargate.MissingAbilityDef>
+  <Stargate.MissingCarriedThingDef>Pawn {0} carries a Thing whose Def is missing.</Stargate.MissingCarriedThingDef>
+  <Stargate.IdeologyRegistrationFailed>The destination save could not register an imported ideology.</Stargate.IdeologyRegistrationFailed>
+  <Stargate.NoArrivalSpace>There is not enough clear space around the Stargate for every arriving pawn.</Stargate.NoArrivalSpace>
+  <Stargate.PlacementFailed>Could not place {0} at {1}.</Stargate.PlacementFailed>
+  <Stargate.TransferAlreadyConsumed>This transfer has already been accepted by this save.</Stargate.TransferAlreadyConsumed>
+  <Stargate.ChargeChangedDuringTransfer>The capacitor charge changed before the transfer completed.</Stargate.ChargeChangedDuringTransfer>
+  <Stargate.ArrivedArchiveFailed>The pawns arrived, but the accepted transfer could not be archived: {0}</Stargate.ArrivedArchiveFailed>
+
+  <Stargate.MissingRootElement>The transfer file has no root element.</Stargate.MissingRootElement>
+  <Stargate.UnknownTransferFormat>The transfer file has an unknown format.</Stargate.UnknownTransferFormat>
+  <Stargate.SchemaVersionMissing>The transfer schema version is missing.</Stargate.SchemaVersionMissing>
+  <Stargate.LegacySchemaRequiresRepublish>Transfer schema {0} does not contain a clean cross-save ideology snapshot. Return to the source save and publish the pawns again.</Stargate.LegacySchemaRequiresRepublish>
+  <Stargate.UnsupportedSchema>Transfer schema {0} is not supported.</Stargate.UnsupportedSchema>
+  <Stargate.IdeologyPayloadMissing>The transfer envelope has no ideology payload.</Stargate.IdeologyPayloadMissing>
+  <Stargate.InvalidPayloadError>Could not read the transfer metadata: {0}</Stargate.InvalidPayloadError>
+  <Stargate.SaveFailed>Could not save the Stargate transfer: {0}</Stargate.SaveFailed>
+  <Stargate.LoadFailed>Could not load the Stargate transfer: {0}</Stargate.LoadFailed>
+  <Stargate.ArchiveFailed>Could not archive the Stargate transfer: {0}</Stargate.ArchiveFailed>
+  <Stargate.RecallFailed>Stargate recall failed: {0}</Stargate.RecallFailed>
+  <Stargate.LegacyItemsUnsupported>This legacy transfer contains items. Item transfer is not supported by the rewritten Stargate yet.</Stargate.LegacyItemsUnsupported>
+  <Stargate.RemapFailed>Could not remap {0}.{1}.</Stargate.RemapFailed>
+  <Stargate.UnexpectedDialOutFailure>Unexpected Stargate dial-out failure: {0}</Stargate.UnexpectedDialOutFailure>
+  <Stargate.UnexpectedRecallFailure>Unexpected Stargate recall failure: {0}</Stargate.UnexpectedRecallFailure>
+
+  <Stargate.AncientGateLabel>Stargate</Stargate.AncientGateLabel>
+  <Stargate.AncientGateRequiresPlayer>The ancient Stargate must belong to the player before it can receive a transfer.</Stargate.AncientGateRequiresPlayer>
+  <Stargate.DisplayStudyReportLabel>Display study report</Stargate.DisplayStudyReportLabel>
+  <Stargate.DisplayStudyReportDesc>Open the completed study report for the ancient Stargate.</Stargate.DisplayStudyReportDesc>
+  <Stargate.PausedSuffix> (paused)</Stargate.PausedSuffix>
+  <Stargate.StudyProgressInspect>Study progress{0}: {1}%</Stargate.StudyProgressInspect>
+  <Stargate.StudyReportTitle>Study report</Stargate.StudyReportTitle>
+  <Stargate.StudyReportBody>### Study report ###\n\nStudy subject: Interdimensional ancient artifact.\n\n- Artifact location: {0}</Stargate.StudyReportBody>
+  <Stargate.StudyReportObservation>\n- Observations:\n  1. It consists of several rings measuring 3.14 meters in diameter.\n  2. It is made from an unknown exotic material by an ancient civilization.\n  3. Rotating the inner ring creates a stable one-way wormhole to another ring.\n\n- Conclusions:\n  1. We will call this structure a Stargate.\n  2. Missing components limit the artifact to receiving transfers.\n\n- Recommendations:\n  1. Exercise extreme caution around the artifact.\n  2. Further study may permit interdimensional travel.\n  3. Its exceptionally strong material may also be useful.</Stargate.StudyReportObservation>
+  <Stargate.CannotUseIncapacitated>Cannot use: incapacitated.</Stargate.CannotUseIncapacitated>
+  <Stargate.CannotUseReserved>Cannot use: reserved.</Stargate.CannotUseReserved>
+  <Stargate.CannotUseNoPath>Cannot use: no path.</Stargate.CannotUseNoPath>
+  <Stargate.ResearchSkillTooLow>{0} needs Intellectual level {1} to study the ancient Stargate.</Stargate.ResearchSkillTooLow>
+  <Stargate.StartStudy>Start study</Stargate.StartStudy>
+  <Stargate.PauseStudy>Pause study</Stargate.PauseStudy>
+  <Stargate.PronounHis>his</Stargate.PronounHis>
+  <Stargate.PronounHer>her</Stargate.PronounHer>
+  <Stargate.PronounIts>its</Stargate.PronounIts>
+  <Stargate.StudyCompletedReport> has completed the study of the strange artifact. </Stargate.StudyCompletedReport>
+  <Stargate.StudyReferencesReport> report is remarkable!\n\n### Study references ###\n\nDate: </Stargate.StudyReferencesReport>
+  <Stargate.ResearcherLabel>\nResearcher: </Stargate.ResearcherLabel>
+  <Stargate.WeaponPackFailed>Could not move {0}'s equipped weapon {1} into inventory for transfer.</Stargate.WeaponPackFailed>
+  <Stargate.InvalidEquippedWeaponData>The transfer contains invalid equipped-weapon data.</Stargate.InvalidEquippedWeaponData>
+  <Stargate.TransferredWeaponMissing>Could not find {0}'s transferred weapon ({1}) in inventory.</Stargate.TransferredWeaponMissing>
+  <Stargate.WeaponRestoreFailed>Could not re-equip {0}'s transferred weapon {1}.</Stargate.WeaponRestoreFailed>
+  <Stargate.SourceReferenceRestoreFailed>Could not restore a source-save reference after Stargate serialization: {0}</Stargate.SourceReferenceRestoreFailed>
+</LanguageData>
