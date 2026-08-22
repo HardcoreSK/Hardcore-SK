@@ -33,6 +33,15 @@
 		</damageMultipliers>
     </value>
   </Operation>
+  
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[@Name="TreeBase"]</xpath>
+    <value>
+		<plant Merge="true">
+      <mustBeWildToSow>false</mustBeWildToSow>
+		</plant>
+    </value>
+  </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[@Name="BushBase"]</xpath>
