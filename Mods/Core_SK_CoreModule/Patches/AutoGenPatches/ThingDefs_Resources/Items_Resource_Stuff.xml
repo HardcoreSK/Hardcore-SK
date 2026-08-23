@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Core_SK uses ResourceBase instead of WoolBase for these wool resources. -->
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="WoolMegasloth" or defName="WoolMuffalo" or defName="WoolAlpaca" or defName="WoolBison" or defName="WoolSheep"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>ResourceBase</value>
+	</Operation>
+
+	<!-- ThingDef: Cloth -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Cloth"]</xpath>
+		<value Merge="true">
+			<description>Cloth is woven from the raw organic fibers of a Cotton Bush. These fibers are called Raw Cotton.</description>
+			<graphicData DeepReplace="true">
+				<texPath>Things/Item/Resource/Cloth</texPath>
+				<graphicClass>Graphic_StackCount</graphicClass>
+			</graphicData>
+			<statBases DeepReplace="true">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>1.5</MarketValue>
+				<Flammability>1.75</Flammability>
+				<DeteriorationRate>0</DeteriorationRate>
+				<StuffPower_Armor_Blunt>0.95</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Sharp>0.6</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Heat>0.09</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>11</StuffPower_Insulation_Heat>
+				<Mass>0.01</Mass>
+				<Bulk>0.01</Bulk>
+			</statBases>
+			<tickerType>Rare</tickerType>
+			<stackLimit>300</stackLimit>
+			<techLevel>Medieval</techLevel>
+			<stuffProps DeepReplace="true">
+				<categories>
+					<li>Fabric</li>
+				</categories>
+				<color>(162,157,152)</color>
+				<statFactors>
+					<MaxHitPoints>1.5</MaxHitPoints>
+					<Beauty>1.1</Beauty>
+					<MoveSpeed>1</MoveSpeed>
+					<MarketValue>0.8</MarketValue>
+					<WorkToMake>0.9</WorkToMake>
+					<WorkToBuild>0.9</WorkToBuild>
+					<BedRestEffectiveness>1.1</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>0.9</ImmunityGainSpeedFactor>
+					<Mass>0.4</Mass>
+				</statFactors>
+				<commonality>1.4</commonality>
+				<allowColorGenerators>true</allowColorGenerators>
+				<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+			</stuffProps>
+			<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+			<thingCategories DeepReplace="true">
+				<li>BTextiles</li>
+			</thingCategories>
+			<burnableByRecipe>True</burnableByRecipe>
+			<allowedArchonexusCount>100</allowedArchonexusCount>
+		</value>
+	</Operation>
+
+	<!-- ThingDef: WoolMegasloth -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="WoolMegasloth"]</xpath>
+		<value Merge="true">
+			<label>Megasloth wool</label>
+			<description>While somewhat coarse, Megasloth wool's long fibers make it very strong. It is very warm.</description>
+			<graphicData DeepReplace="true">
+				<texPath>Things/Item/Resource/Wool</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<color>(189,161,116)</color>
+			</graphicData>
+			<statBases DeepReplace="true">
+				<MaxHitPoints>90</MaxHitPoints>
+				<MarketValue>4</MarketValue>
+				<Flammability>1.5</Flammability>
+				<DeteriorationRate>0</DeteriorationRate>
+				<StuffPower_Armor_Blunt>0.93</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Sharp>0.87</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Heat>0.07</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>28</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>-9</StuffPower_Insulation_Heat>
+				<Mass>0.02</Mass>
+				<Bulk>0.02</Bulk>
+			</statBases>
+			<tickerType>Rare</tickerType>
+			<stackLimit>300</stackLimit>
+			<techLevel>Neolithic</techLevel>
+			<stuffProps DeepReplace="true">
+				<categories>
+					<li>Fabric</li>
+				</categories>
+				<color>(189,161,116)</color>
+				<statFactors>
+					<MaxHitPoints>1.45</MaxHitPoints>
+					<Beauty>1.1</Beauty>
+					<MoveSpeed>0.75</MoveSpeed>
+					<MarketValue>1.2</MarketValue>
+					<WorkToMake>1.2</WorkToMake>
+					<WorkToBuild>1.2</WorkToBuild>
+					<BedRestEffectiveness>1.35</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>1.0</ImmunityGainSpeedFactor>
+					<Mass>0.75</Mass>
+				</statFactors>
+			</stuffProps>
+			<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+			<thingCategories DeepReplace="true">
+				<li>BTextiles</li>
+			</thingCategories>
+			<burnableByRecipe>True</burnableByRecipe>
+		</value>
+	</Operation>
+
+	<!-- ThingDef: WoolMuffalo -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="WoolMuffalo"]</xpath>
+		<value Merge="true">
+			<label>Muffalo wool</label>
+			<description>Muffalo Wool is soft, light and provides very good insulation. Wool clothes can keep the body warm even in extreme conditions.</description>
+			<graphicData DeepReplace="true">
+				<texPath>Things/Item/Resource/Wool</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<color>(179,192,186)</color>
+			</graphicData>
+			<statBases DeepReplace="true">
+				<MaxHitPoints>90</MaxHitPoints>
+				<MarketValue>3</MarketValue>
+				<Flammability>1.5</Flammability>
+				<DeteriorationRate>0</DeteriorationRate>
+				<StuffPower_Armor_Blunt>0.95</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Sharp>0.85</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Heat>0.063</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>27</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>-8</StuffPower_Insulation_Heat>
+				<Mass>0.02</Mass>
+				<Bulk>0.02</Bulk>
+			</statBases>
+			<techLevel>Neolithic</techLevel>
+			<tickerType>Rare</tickerType>
+			<stackLimit>300</stackLimit>
+			<stuffProps DeepReplace="true">
+				<categories>
+					<li>Fabric</li>
+				</categories>
+				<color>(179,192,186)</color>
+				<statFactors>
+					<MaxHitPoints>1.5</MaxHitPoints>
+					<Beauty>1.2</Beauty>
+					<MoveSpeed>0.8</MoveSpeed>
+					<MarketValue>0.7</MarketValue>
+					<WorkToMake>1.1</WorkToMake>
+					<WorkToBuild>1.1</WorkToBuild>
+					<BedRestEffectiveness>1.3</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>1.0</ImmunityGainSpeedFactor>
+					<Mass>0.72</Mass>
+				</statFactors>
+			</stuffProps>
+			<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+			<thingCategories DeepReplace="true">
+				<li>BTextiles</li>
+			</thingCategories>
+			<burnableByRecipe>True</burnableByRecipe>
+		</value>
+	</Operation>
+
+	<!-- ThingDef: WoolAlpaca -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="WoolAlpaca"]</xpath>
+		<value Merge="true">
+			<label>Alpaca wool</label>
+			<description>This is the remarkably soft wool of an Alpaca. It is useful for clothing.</description>
+			<graphicData DeepReplace="true">
+				<texPath>Things/Item/Resource/Wool</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<color>(237,216,174)</color>
+			</graphicData>
+			<statBases DeepReplace="true">
+				<MaxHitPoints>90</MaxHitPoints>
+				<MarketValue>4.0</MarketValue>
+				<Flammability>1.5</Flammability>
+				<DeteriorationRate>0</DeteriorationRate>
+				<StuffPower_Armor_Blunt>0.9</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Sharp>0.65</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Heat>0.069</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>24</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
+				<Mass>0.02</Mass>
+				<Bulk>0.02</Bulk>
+			</statBases>
+			<tickerType>Rare</tickerType>
+			<stackLimit>300</stackLimit>
+			<techLevel>Neolithic</techLevel>
+			<stuffProps DeepReplace="true">
+				<categories>
+					<li>Fabric</li>
+				</categories>
+				<color>(180,148,109)</color>
+				<statFactors>
+					<MaxHitPoints>1.2</MaxHitPoints>
+					<Beauty>1.2</Beauty>
+					<MoveSpeed>0.85</MoveSpeed>
+					<MarketValue>0.7</MarketValue>
+					<WorkToMake>1.1</WorkToMake>
+					<WorkToBuild>1.1</WorkToBuild>
+					<BedRestEffectiveness>1.2</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+					<Mass>0.66</Mass>
+				</statFactors>
+			</stuffProps>
+			<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+			<thingCategories DeepReplace="true">
+				<li>BTextiles</li>
+			</thingCategories>
+			<burnableByRecipe>True</burnableByRecipe>
+		</value>
+	</Operation>
+
+	<!-- ThingDef: WoolBison -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="WoolBison"]</xpath>
+		<value Merge="true">
+			<label>Bison wool</label>
+			<graphicData DeepReplace="true">
+				<texPath>Things/Item/Resource/Wool</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<color>(104,69,45)</color>
+			</graphicData>
+			<statBases DeepReplace="true">
+				<MaxHitPoints>90</MaxHitPoints>
+				<MarketValue>4.0</MarketValue>
+				<Flammability>1.5</Flammability>
+				<DeteriorationRate>0</DeteriorationRate>
+				<StuffPower_Armor_Blunt>0.94</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Sharp>0.86</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Heat>0.076</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>22</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
+				<Mass>0.02</Mass>
+				<Bulk>0.02</Bulk>
+			</statBases>
+			<tickerType>Rare</tickerType>
+			<stackLimit>300</stackLimit>
+			<techLevel>Neolithic</techLevel>
+			<stuffProps DeepReplace="true">
+				<categories>
+					<li>Fabric</li>
+				</categories>
+				<color>(104,69,45)</color>
+				<statFactors>
+					<MaxHitPoints>1.2</MaxHitPoints>
+					<Beauty>1.2</Beauty>
+					<MoveSpeed>0.85</MoveSpeed>
+					<MarketValue>0.7</MarketValue>
+					<WorkToMake>1.1</WorkToMake>
+					<WorkToBuild>1.1</WorkToBuild>
+					<BedRestEffectiveness>1.2</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+					<Mass>0.66</Mass>
+				</statFactors>
+			</stuffProps>
+			<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+			<thingCategories DeepReplace="true">
+				<li>BTextiles</li>
+			</thingCategories>
+			<burnableByRecipe>True</burnableByRecipe>
+		</value>
+	</Operation>
+
+	<!-- ThingDef: WoolSheep -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="WoolSheep"]</xpath>
+		<value Merge="true">
+			<graphicData DeepReplace="true">
+				<texPath>Things/Item/Resource/Wool</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<color>(219,214,209)</color>
+			</graphicData>
+			<statBases DeepReplace="true">
+				<MaxHitPoints>90</MaxHitPoints>
+				<MarketValue>1.6</MarketValue>
+				<Flammability>1.65</Flammability>
+				<DeteriorationRate>0</DeteriorationRate>
+				<StuffPower_Armor_Blunt>0.96</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Sharp>0.84</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Heat>0.076</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>23</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+				<Mass>0.02</Mass>
+				<Bulk>0.02</Bulk>
+			</statBases>
+			<tickerType>Rare</tickerType>
+			<stackLimit>300</stackLimit>
+			<techLevel>Medieval</techLevel>
+			<stuffProps DeepReplace="true">
+				<commonality>0.24</commonality>
+				<stuffAdjective>Ram Wool</stuffAdjective>
+				<categories>
+					<li>Fabric</li>
+				</categories>
+				<color>(219,214,209)</color>
+				<statFactors>
+					<MaxHitPoints>1.2</MaxHitPoints>
+					<Beauty>1.2</Beauty>
+					<MoveSpeed>0.85</MoveSpeed>
+					<MarketValue>0.7</MarketValue>
+					<WorkToMake>1.1</WorkToMake>
+					<WorkToBuild>1.1</WorkToBuild>
+					<BedRestEffectiveness>1.2</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+					<Mass>0.62</Mass>
+				</statFactors>
+				<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+			</stuffProps>
+			<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+			<thingCategories DeepReplace="true">
+				<li>BTextiles</li>
+			</thingCategories>
+			<burnableByRecipe>True</burnableByRecipe>
+		</value>
+	</Operation>
+
+	<!-- ThingDef: DevilstrandCloth -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="DevilstrandCloth"]</xpath>
+		<value Merge="true">
+			<label>Devilstrand cloth</label>
+			<description>Fabric spun from microfibers extracted from silk-producing Devilstrand Mushrooms. Very tough, but insulates no better than Cloth.</description>
+			<statBases DeepReplace="true">
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>8</MarketValue>
+				<Flammability>0.4</Flammability>
+				<DeteriorationRate>0</DeteriorationRate>
+				<StuffPower_Armor_Blunt>1.52</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Sharp>1.42</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Heat>0.3</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>11</StuffPower_Insulation_Heat>
+				<Mass>0.02</Mass>
+				<Bulk>0.02</Bulk>
+			</statBases>
+			<tickerType>Rare</tickerType>
+			<stackLimit>150</stackLimit>
+			<techLevel>Medieval</techLevel>
+			<stuffProps DeepReplace="true">
+				<categories>
+					<li>HF</li>
+				</categories>
+				<color>(180,60,60)</color>
+				<statFactors>
+					<MaxHitPoints>1.9</MaxHitPoints>
+					<Flammability>0.4</Flammability>
+					<Beauty>1.8</Beauty>
+					<WorkToMake>1.3</WorkToMake>
+					<WorkToBuild>1.3</WorkToBuild>
+					<MoveSpeed>0.95</MoveSpeed>
+					<MarketValue>0.7</MarketValue>
+					<BedRestEffectiveness>0.85</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>1.35</ImmunityGainSpeedFactor>
+					<Mass>0.7</Mass>
+				</statFactors>
+			</stuffProps>
+			<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+			<thingCategories DeepReplace="true">
+				<li>HTextiles</li>
+			</thingCategories>
+			<burnableByRecipe>True</burnableByRecipe>
+		</value>
+	</Operation>
+
+	<!-- ThingDef: Synthread -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Synthread"]</xpath>
+		<value Merge="true">
+			<label>Synthread</label>
+			<statBases DeepReplace="true">
+				<MaxHitPoints>150</MaxHitPoints>
+				<MarketValue>13</MarketValue>
+				<Flammability>1.0</Flammability>
+				<DeteriorationRate>0</DeteriorationRate>
+				<StuffPower_Armor_Blunt>1.32</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Sharp>1.61</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Heat>0.148</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>16</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>16</StuffPower_Insulation_Heat>
+				<Mass>0.04</Mass>
+				<Bulk>0.04</Bulk>
+			</statBases>
+			<tickerType>Rare</tickerType>
+			<stackLimit>150</stackLimit>
+			<techLevel>Spacer</techLevel>
+			<stuffProps DeepReplace="true">
+				<categories>
+					<li>HF</li>
+				</categories>
+				<color>(174,219,228)</color>
+				<statFactors>
+					<MaxHitPoints>2.2</MaxHitPoints>
+					<WorkToMake>1.3</WorkToMake>
+					<WorkToBuild>1.3</WorkToBuild>
+					<Beauty>1.5</Beauty>
+					<MoveSpeed>1.1</MoveSpeed>
+					<MarketValue>0.7</MarketValue>
+					<BedRestEffectiveness>1.05</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+					<Mass>0.63</Mass>
+				</statFactors>
+			</stuffProps>
+			<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+			<thingCategories DeepReplace="true">
+				<li>HTextiles</li>
+			</thingCategories>
+		</value>
+	</Operation>
+
+	<!-- ThingDef: Hyperweave -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Hyperweave"]</xpath>
+		<value Merge="true">
+			<label>Hyperweave</label>
+			<description>High-tech nano-fibers woven into sheets. It is somewhat heavy, but is incredibly difficult to break. The secrets of its production are known only to the most advanced GlitterWorld cultures.</description>
+			<statBases DeepReplace="true">
+				<MarketValue>25</MarketValue>
+				<DeteriorationRate>0</DeteriorationRate>
+				<Flammability>0.5</Flammability>
+				<StuffPower_Armor_Blunt>1.72</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Sharp>1.55</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Heat>0.159</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+				<Mass>0.03</Mass>
+				<Bulk>0.03</Bulk>
+			</statBases>
+			<tickerType>Rare</tickerType>
+			<techLevel>Spacer</techLevel>
+			<stuffProps DeepReplace="true">
+				<categories>
+					<li>HF</li>
+				</categories>
+				<color>(0,106,126)</color>
+				<statFactors>
+					<MaxHitPoints>2.4</MaxHitPoints>
+					<Flammability>0.55</Flammability>
+					<WorkToMake>1.8</WorkToMake>
+					<WorkToBuild>1.8</WorkToBuild>
+					<Beauty>1.5</Beauty>
+					<MoveSpeed>1.2</MoveSpeed>
+					<MarketValue>0.7</MarketValue>
+					<BedRestEffectiveness>1.1</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>1.15</ImmunityGainSpeedFactor>
+					<Mass>0.65</Mass>
+				</statFactors>
+			</stuffProps>
+			<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+			<thingCategories DeepReplace="true">
+				<li>HTextiles</li>
+			</thingCategories>
+			<stackLimit>150</stackLimit>
+		</value>
+	</Operation>
+
+</Patch>

@@ -4,6 +4,7 @@
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[@Name="LeatherBase"]</xpath>
 		<value>
+			<stackLimit>300</stackLimit>
 			<statBases Merge="True">
 				<DeteriorationRate>0</DeteriorationRate>
 				<Mass>0.1</Mass>
