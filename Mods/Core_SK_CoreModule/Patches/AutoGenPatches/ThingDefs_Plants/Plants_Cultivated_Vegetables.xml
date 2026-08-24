@@ -1,55 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
   <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="Plant_Potato"]</xpath>
-	  <attribute>ParentName</attribute>
-	  <value>SK.CropPlantDummy</value>
+    <xpath>Defs/ThingDef[defName="Plant_Potato"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.CropPlantDummy</value>
   </Operation>
-
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Plant_Potato"]</xpath>
-    <value>
-      <statBases Merge="true">
+    <value Merge="true">
+      <label>Potato Plant</label>
+      <description>Potato Plants produce nutritious tubers called Potatoes. Potato Plants grow quickly and are a reliable food source crop for basic meals.</description>
+      <statBases DeepReplace="true">
         <Beauty>1</Beauty>
         <BeautyOutdoors>1</BeautyOutdoors>
       </statBases>
-      <graphicData>
+      <graphicData DeepReplace="true">
         <texPath>Things/Plant/PlantPotato_Harvest</texPath>
         <graphicClass>Graphic_Random</graphicClass>
       </graphicData>
-      <plant Merge="true">
+      <plant DeepReplace="true">
         <maxMeshCount>4</maxMeshCount>
+        <sowTags>
+          <li>Ground</li>
+          <li>Hydroponic</li>
+        </sowTags>
         <immatureGraphicPath>Things/Plant/PlantPotato</immatureGraphicPath>
         <sowMinSkill>1</sowMinSkill>
-		<growDays>5</growDays>
+        <harvestedThingDef>RawPotatoes</harvestedThingDef>
         <harvestYield>13</harvestYield>
+        <topWindExposure>0.1</topWindExposure>
+        <growDays>5</growDays>
+        <fertilitySensitivity>0.4</fertilitySensitivity>
         <fertilityMin>0.5</fertilityMin>
         <visualSizeRange>0.2~1.0</visualSizeRange>
+        <wildOrder>2</wildOrder>
+        <purpose>Food</purpose>
+        <humanFoodPlant>true</humanFoodPlant>
       </plant>
     </value>
   </Operation>
-
-  <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="Plant_Corn"]</xpath>
-	  <attribute>ParentName</attribute>
-	  <value>SK.SK_DeciduousCropPlantDummy</value>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Plant_Potato"]/selectable</xpath>
   </Operation>
-
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Plant_Potato"]/pathCost</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Plant_Potato"]/ingestible</xpath>
+  </Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Plant_Corn"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.SK_DeciduousCropPlantDummy</value>
+  </Operation>
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Plant_Corn"]</xpath>
-    <value>
+    <value Merge="true">
       <label>Corn Plant</label>
       <description>A tall grain plant which produces ears of soft, edible seeds. While corn takes a long time to grow, it yields lots of food compared to other crops. Harvested corn takes a long time to spoil. Corn is useful as a food ingredient or for making Ethanol Fuel.</description>
-      <graphicData>
+      <graphicData DeepReplace="true">
         <texPath>Things/Plant/PlantCorn</texPath>
         <graphicClass>Graphic_Random</graphicClass>
       </graphicData>
-      <statBases Merge="true">
+      <statBases DeepReplace="true">
         <Beauty>2</Beauty>
         <BeautyOutdoors>2</BeautyOutdoors>
+        <Nutrition>0.4</Nutrition>
       </statBases>
-      <plant Merge="true">
+      <plant DeepReplace="true">
         <maxMeshCount>9</maxMeshCount>
         <sowMinSkill>6</sowMinSkill>
         <sowResearchPrerequisites>
@@ -60,46 +78,78 @@
           <li>Hydroponic</li>
         </sowTags>
         <immatureGraphicPath>Things/Plant/PlantCorn_Harvest</immatureGraphicPath>
+        <harvestedThingDef>RawCorn</harvestedThingDef>
         <harvestYield>30</harvestYield>
         <topWindExposure>0.15</topWindExposure>
         <growDays>9</growDays>
+        <fertilitySensitivity>1</fertilitySensitivity>
         <fertilityMin>0.4</fertilityMin>
         <visualSizeRange>0.2~1.0</visualSizeRange>
+        <wildOrder>2</wildOrder>
+        <purpose>Food</purpose>
+        <humanFoodPlant>true</humanFoodPlant>
       </plant>
     </value>
   </Operation>
-
-  <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="Plant_Rice"]</xpath>
-	  <attribute>ParentName</attribute>
-	  <value>SK.SK_DeciduousCropPlantDummy</value>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Plant_Corn"]/selectable</xpath>
   </Operation>
-
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Plant_Corn"]/pathCost</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Plant_Corn"]/ingestible</xpath>
+  </Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Plant_Rice"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.SK_DeciduousCropPlantDummy</value>
+  </Operation>
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Plant_Rice"]</xpath>
-    <value>
+    <value Merge="true">
       <label>Rice Plant</label>
       <description>A short, fast-growing crop that yields small edible grains. Its great nutritional output and ease of cultivation has made it the economic core of many great civilizations. While rice grows quickly, it is sensitive to soil fertility and will not fare well in poor soil. Can be made into Ethanol Fuel or distilled into Sake from the Brewery.</description>
-      <graphicData>
+      <graphicData DeepReplace="true">
         <texPath>Things/Plant/PlantRice_Harvest</texPath>
         <graphicClass>Graphic_Random</graphicClass>
       </graphicData>
-      <statBases Merge="true">
+      <statBases DeepReplace="true">
         <Beauty>2</Beauty>
         <BeautyOutdoors>2</BeautyOutdoors>
       </statBases>
-      <plant Merge="true">
+      <plant DeepReplace="true">
+        <maxMeshCount>1</maxMeshCount>
         <sowMinSkill>12</sowMinSkill>
         <sowResearchPrerequisites>
           <li>Food_Plants_A2</li>
         </sowResearchPrerequisites>
+        <sowTags>
+          <li>Ground</li>
+          <li>Hydroponic</li>
+        </sowTags>
         <immatureGraphicPath>Things/Plant/PlantRice</immatureGraphicPath>
+        <harvestedThingDef>RawRice</harvestedThingDef>
+        <harvestTag>Standard</harvestTag>
         <harvestYield>16</harvestYield>
+        <topWindExposure>0.1</topWindExposure>
         <growDays>4.6</growDays>
+        <fertilitySensitivity>1</fertilitySensitivity>
         <fertilityMin>0.5</fertilityMin>
         <visualSizeRange>0.2~0.8</visualSizeRange>
+        <wildOrder>2</wildOrder>
+        <purpose>Food</purpose>
+        <humanFoodPlant>true</humanFoodPlant>
       </plant>
     </value>
   </Operation>
-
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Plant_Rice"]/selectable</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Plant_Rice"]/pathCost</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Plant_Rice"]/ingestible</xpath>
+  </Operation>
 </Patch>

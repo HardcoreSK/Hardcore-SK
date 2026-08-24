@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!--
 	<ThingDef ParentName="SK_DeciduousCropPlant">
 		<defName>Plant_Cotton</defName>
 		<label>Cotton Bush</label>
@@ -34,6 +35,7 @@
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
+	-->
 
 	<ThingDef ParentName="SK_DeciduousCropPlant">
 		<defName>Plant_Flax</defName>
@@ -68,6 +70,7 @@
 		</plant>
 	</ThingDef>
 
+	<!--
 	<ThingDef ParentName="CropPlant">
 		<defName>Plant_Devilstrand</defName>
 		<label>Devilstrand Mushroom</label>
@@ -108,7 +111,9 @@
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
+	-->
 
+	<!--
 	<ThingDef ParentName="SK_DeciduousCropPlant">
 		<defName>Plant_Hops</defName>
 		<label>Hops Plant</label>
@@ -142,6 +147,7 @@
 			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>
+	-->
 
 	<ThingDef ParentName="CropPlant">
 		<defName>Plant_Sugarcane</defName>
@@ -177,6 +183,7 @@
 		</plant>
 	</ThingDef>
 
+	<!--
 	<ThingDef ParentName="CropPlant">
 		<defName>Plant_TreeBamboo</defName>
 		<label>bamboo tree</label>
@@ -210,9 +217,12 @@
 			<wildClusterRadius>5</wildClusterRadius>
 			<wildClusterWeight>22</wildClusterWeight>
 			<wildOrder>2</wildOrder>
+	-->
 			<!-- <leaflessGraphicPath>Things/Plant/TreeBamboo_Leafless</leaflessGraphicPath> -->
+	<!--
 		</plant>
 	</ThingDef>
+	-->
 
 	<ThingDef ParentName="SK_DeciduousCropPlant">
 		<defName>Plantwheat</defName>
@@ -250,6 +260,7 @@
 		</plant>
 	</ThingDef>
 
+	<!--
 	<ThingDef ParentName="CropPlant">
 		<defName>Plant_Smokeleaf</defName>
 		<label>smokeleaf plant</label>
@@ -292,7 +303,9 @@
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
+	-->
 
+	<!--
 	<ThingDef ParentName="CropPlant">
 		<defName>Plant_Psychoid</defName>
 		<label>psychoid plant</label>
@@ -333,6 +346,7 @@
 			<fertilitySensitivity>0.4</fertilitySensitivity>
 		</plant>
 	</ThingDef>
+	-->
 
 	<ThingDef ParentName="CropPlant">
 		<defName>Plant_Tobacco</defName>
