@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!--
 	<ThingDef ParentName="ResourceBase">
 		<defName>Silver</defName>
 		<label>Silver Ore</label>
@@ -7,7 +8,9 @@
 		<graphicData>
 			<texPath>Things/Item/Ores/Silver</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
+	-->
 			<!--<color>(180,173,150)</color>-->
+	<!--
 		</graphicData>
 		<resourceReadoutPriority>First</resourceReadoutPriority>
 		<soundInteract>Silver_Drop</soundInteract>
@@ -46,6 +49,8 @@
 		</deepLumpSizeRange>
 		<allowedArchonexusCount>1000</allowedArchonexusCount>
 	</ThingDef>
+	-->
+	<!--
 	<ThingDef ParentName="ResourceBase">
 		<defName>Gold</defName>
 		<label>Gold Ore</label>
@@ -53,7 +58,9 @@
 		<graphicData>
 			<texPath>Things/Item/Ores/Gold</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
+	-->
 			<!--<color>(255,215,0)</color>-->
+	<!--
 		</graphicData>
 		<soundInteract>Silver_Drop</soundInteract>
 		<soundDrop>Silver_Drop</soundDrop>
@@ -87,6 +94,7 @@
 			<max>12</max>
 		</deepLumpSizeRange>
 	</ThingDef>
+	-->
 	<ThingDef ParentName="ResourceBase">
 		<defName>Iron</defName>
 		<label>Iron Ore</label>
@@ -376,6 +384,7 @@
 			<max>25</max>
 		</deepLumpSizeRange>
 	</ThingDef>
+	<!--
 	<ThingDef ParentName="ResourceBase">
 		<defName>Jade</defName>
 		<label>jade</label>
@@ -433,4 +442,5 @@
 		</stuffProps>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 	</ThingDef>
+	-->
 </Defs>

@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Steel"]</xpath>
-    <value>
+    <value Merge="true">
       <label>steel alloy</label>
       <description>Steel Alloy is a group of iron-carbon alloys with a carbon content less than 2%. A tougher metal than cast-iron that comes with a higher production cost. Steel is ferromagnetic (it can become magnetized when paired with a magnetic metal).</description>
-      <graphicData>
+      <graphicData DeepReplace="true">
         <texPath>Things/Item/Ingot</texPath>
         <graphicClass>Graphic_StackCount</graphicClass>
         <color>(167,167,170)</color>
       </graphicData>
       <stackLimit>600</stackLimit>
       <techLevel>Industrial</techLevel>
-      <statBases>
+      <statBases DeepReplace="true">
         <MarketValue>3</MarketValue>
         <StuffPower_Armor_Blunt>0.9</StuffPower_Armor_Blunt>
         <StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp>
@@ -28,17 +27,17 @@
         <Bulk>0.35</Bulk>
       </statBases>
       <useHitPoints>true</useHitPoints>
-      <thingCategories>
+      <thingCategories DeepReplace="true">
         <li>SLDBar</li>
+        <li>Sterile</li>
       </thingCategories>
-      <stuffProps>
+      <stuffProps DeepReplace="true">
         <stuffAdjective>Steel</stuffAdjective>
         <appearance>Metal</appearance>
         <categories>
           <li>Metallic</li>
           <li>StrongMetallic</li>
           <li>RuggedMetallic</li>
-          <li>Sterile</li>
         </categories>
         <constructEffect>ConstructMetal</constructEffect>
         <color>(138,133,135)</color>
@@ -62,11 +61,31 @@
           <WorkTableWorkSpeedFactor>1.0</WorkTableWorkSpeedFactor>
           <MeleePenetrationFactor>1.0</MeleePenetrationFactor>
           <Mass>1.1</Mass>
-		  <Cleanliness>0.4</Cleanliness>
+          <Cleanliness>0.4</Cleanliness>
         </statFactors>
         <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
       </stuffProps>
     </value>
   </Operation>
-
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Steel"]/healthAffectsPrice</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Steel"]/slagDef</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Steel"]/deepCommonality</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Steel"]/deepCountPerPortion</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Steel"]/deepLumpSizeRange</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Steel"]/burnableByRecipe</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Steel"]/allowedArchonexusCount</xpath>
+  </Operation>
 </Patch>

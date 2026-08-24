@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="WoodLog"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>ResourceBase</value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="WoodLog"]</xpath>
+    <value Merge="true">
+      <label>wood log</label>
+      <description>Wood from trees or other fibrous plants. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch. It can be processed into planks or kindling.</description>
+      <graphicData DeepReplace="true">
+        <texPath>Things/Item/WoodLogStacked</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+      </graphicData>
+      <tickerType>Rare</tickerType>
+      <statBases DeepReplace="true">
+        <MarketValue>1.4</MarketValue>
+        <MaxHitPoints>150</MaxHitPoints>
+        <Flammability>5.0</Flammability>
+        <DeteriorationRate>0</DeteriorationRate>
+        <StuffPower_Armor_Blunt>0.75</StuffPower_Armor_Blunt>
+        <StuffPower_Armor_Sharp>0.6</StuffPower_Armor_Sharp>
+        <StuffPower_Armor_Heat>0.04</StuffPower_Armor_Heat>
+        <StuffPower_Insulation_Cold>0.85</StuffPower_Insulation_Cold>
+        <StuffPower_Insulation_Heat>0.45</StuffPower_Insulation_Heat>
+        <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
+        <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+        <MaxBurningTempCelsius>550</MaxBurningTempCelsius>
+        <BurnDurationHours>0.8</BurnDurationHours>
+        <MeleeCounterParryBonus>0.85</MeleeCounterParryBonus>
+        <Mass>0.3</Mass>
+        <Bulk>0.3</Bulk>
+      </statBases>
+      <techLevel>Neolithic</techLevel>
+      <stackLimit>300</stackLimit>
+      <stuffProps DeepReplace="true">
+        <stuffAdjective>wood log</stuffAdjective>
+        <categories>
+          <li>WoodLogs</li>
+        </categories>
+        <color>(149,103,65)</color>
+        <constructEffect>ConstructWood</constructEffect>
+        <appearance>Planks</appearance>
+        <soundImpactBullet>BulletImpact_Wood</soundImpactBullet>
+        <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+        <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+        <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>
+        <statOffsets>
+          <Beauty>2</Beauty>
+        </statOffsets>
+        <statFactors>
+          <MaxHitPoints>0.85</MaxHitPoints>
+          <Flammability>1</Flammability>
+          <Beauty>1.3</Beauty>
+          <WorkToMake>0.6</WorkToMake>
+          <WorkToBuild>0.6</WorkToBuild>
+          <MeleeWeapon_CooldownMultiplier>1.05</MeleeWeapon_CooldownMultiplier>
+          <MoveSpeed>0.75</MoveSpeed>
+          <MarketValue>0.65</MarketValue>
+          <BedRestEffectiveness>1.0</BedRestEffectiveness>
+          <ImmunityGainSpeedFactor>1.0</ImmunityGainSpeedFactor>
+          <WorkTableWorkSpeedFactor>0.65</WorkTableWorkSpeedFactor>
+          <DoorOpenSpeed>1.15</DoorOpenSpeed>
+          <MeleePenetrationFactor>0.4</MeleePenetrationFactor>
+          <Mass>0.45</Mass>
+        </statFactors>
+      </stuffProps>
+      <thingCategories DeepReplace="true">
+        <li>Wooden</li>
+      </thingCategories>
+      <burnableByRecipe>True</burnableByRecipe>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="WoodLog"]/equippedAngleOffset</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="WoodLog"]/healthAffectsPrice</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="WoodLog"]/minRewardCount</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="WoodLog"]/weaponClasses</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="WoodLog"]/tools</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="WoodLog"]/allowedArchonexusCount</xpath>
+  </Operation>
+</Patch>

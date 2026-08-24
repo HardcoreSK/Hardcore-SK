@@ -242,6 +242,7 @@
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 	</ThingDef>
 
+	<!--
 	<ThingDef ParentName="ResourceBase">
 		<defName>Steel</defName>
 		<label>steel alloy</label>
@@ -270,7 +271,9 @@
 			<Bulk>0.35</Bulk>
 		</statBases>
 		<useHitPoints>true</useHitPoints>
+	-->
 		<!-- <slagDef>ChunkSlagSteel</slagDef> Should be marked. Bcs it lead to GenLeaving NRE. Vanilla --> 
+	<!--
 		<thingCategories>
 			<li>SLDBar</li>
 		</thingCategories>
@@ -310,6 +313,7 @@
 		</stuffProps>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 	</ThingDef>
+	-->
 
 
 	<ThingDef ParentName="ResourceBase">
