@@ -10,6 +10,7 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="ButcherSpot"]</xpath>
         <value>
+            <inspectorTabs DeepReplace="true" />
             <graphicData>
                 <texPath>Things/Building/ProductionFood/CuttingPlace</texPath>
                 <graphicClass>Graphic_Single</graphicClass>
@@ -65,6 +66,7 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="TableButcher"]</xpath>
         <value>
+            <inspectorTabs DeepReplace="true" />
             <graphicData>
                 <texPath>Things/Building/ProductionFood/CuttingTable/CuttingTable</texPath>
                 <graphicClass>SK.Graphic_AppearancesMulti</graphicClass>
@@ -135,6 +137,7 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="FueledStove"]</xpath>
         <value>
+            <inspectorTabs DeepReplace="true" />
             <description>A simple wood-fueled stove with an attached countertop for preparing meals. Can be fueled by Kindling, Coal, Charcoal and wooden stuff.</description>
             <graphicData>
                 <texPath>Things/Building/ProductionFood/Stove/Stove</texPath>
@@ -377,9 +380,8 @@
             <building Merge="true">
                 <uninstallWork>1250</uninstallWork>
             </building>
-            <inspectorTabs>
+            <inspectorTabs DeepReplace="true">
                 <li>SK.ITab_Fuel</li>
-                <li>ITab_Bills</li>
             </inspectorTabs>
             <comps>
                 <li Class="CompProperties_Flickable" />
@@ -436,6 +438,7 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="DrugLab"]</xpath>
         <value>
+            <inspectorTabs DeepReplace="true" />
             <drawerType>MapMeshAndRealTime</drawerType>
             <graphicData>
                 <texPath>Things/Building/Production/DrugLab/DrugLab</texPath>
@@ -502,6 +505,7 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="HandTailoringBench"]</xpath>
         <value>
+            <inspectorTabs DeepReplace="true" />
             <label>tailor's bench</label>
             <description>A workbench equipped for tailoring basic clothing from textiles.</description>
             <graphicData>
@@ -566,6 +570,7 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="ElectricTailoringBench"]</xpath>
         <value>
+            <inspectorTabs DeepReplace="true" />
             <label>electric tailoring bench</label>
             <description>A workbench with a sewing machine for rapid tailoring of clothes. Can work without electricity at 40% of normal speed.</description>
             <graphicData>
@@ -644,6 +649,7 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="FabricationBench"]</xpath>
         <value>
+            <inspectorTabs DeepReplace="true" />
             <label>hand assembling workbench</label>
             <description>A table for the assembling of components, wires, and mechanisms. Further research will allow advanced mechanisms to be built here as well. Power needed: 300 W. Can work without electricity, but work speed will be reduced by 30%.</description>
             <drawerType>MapMeshAndRealTime</drawerType>
@@ -715,6 +721,7 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="FueledSmithy"]</xpath>
         <value>
+            <inspectorTabs DeepReplace="true" />
             <label>blacksmith</label>
             <description>This blacksmithing setup has all the tools needed to build metal armor, work tools, melee weapons, advanced bows and crossbows, as well as simple ammunition such as arrows. It requires some fuel that burns at a high temperature such as coal or peat.</description>
             <graphicData>
@@ -819,6 +826,7 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="TableStonecutter"]</xpath>
         <value>
+            <inspectorTabs DeepReplace="true" />
             <label>hand cutting table</label>
             <thingClass>Building_WorkTable</thingClass>
             <description>An unpowered work table equipped to process stone chunks into blocks, rubble or sand.</description>
@@ -887,6 +895,7 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="TableSculpting"]</xpath>
         <value>
+            <inspectorTabs DeepReplace="true" />
             <label>sculptor's table</label>
             <description>A workbench equipped for artistic sculpting.</description>
             <graphicData>
@@ -951,6 +960,7 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="CraftingSpot"]</xpath>
         <value>
+            <inspectorTabs DeepReplace="true" />
             <label>craftsman table</label>
             <description>A place for crafting simple things like shivs or bows.</description>
             <graphicData>

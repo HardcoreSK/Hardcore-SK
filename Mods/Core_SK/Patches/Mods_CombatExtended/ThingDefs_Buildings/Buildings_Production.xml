@@ -37,9 +37,7 @@
 				<Mechanism>10</Mechanism>
 			</costList>
 			<minifiedDef>MinifiedThing</minifiedDef>
-			<inspectorTabs Inherit="False">
-				<li>ITab_Bills</li>
-			</inspectorTabs>
+			<inspectorTabs DeepReplace="true" />
 			<statBases>
 				<WorkToBuild>5500</WorkToBuild>
 				<MaxHitPoints>240</MaxHitPoints>

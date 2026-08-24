@@ -41,9 +41,6 @@
 		<size>(3,3)</size>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
-		<inspectorTabs>
-			<li>ITab_Bills</li>
-		</inspectorTabs>
 		<recipes>
 			<!-- Into matter -->
 			<li>ConvertResourcesRaw</li>
@@ -172,9 +169,6 @@
 		<placeWorkers>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>	
-		<inspectorTabs>
-		  <li>ITab_Bills</li>
-		</inspectorTabs>
 		<building>
 			<heatPerTickWhileWorking>1.5</heatPerTickWhileWorking>
 		</building>
