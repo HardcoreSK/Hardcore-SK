@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Gun_MiniTurret"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.BaseAutoTurretGunDummy</value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Gun_MiniTurret"]</xpath>
+    <value Merge="true">
+      <label>Sentry light gun</label>
+      <graphicData DeepReplace="true">
+        <texPath>Things/Building/Security/TurretImprovised_Top</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <description>Jury-rigged automatic gun attached to a turret.</description>
+      <soundInteract>Interact_Rifle</soundInteract>
+      <tradeability>None</tradeability>
+      <statBases DeepReplace="true">
+        <SightsEfficiency>1.45</SightsEfficiency>
+        <ShotSpread>0.08</ShotSpread>
+        <SwayFactor>1.80</SwayFactor>
+        <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+        <DeteriorationRate>0</DeteriorationRate>
+      </statBases>
+      <verbs DeepReplace="true">
+        <li Class="CombatExtended.VerbPropertiesCE">
+          <recoilAmount>0.41</recoilAmount>
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+          <warmupTime>0.90</warmupTime>
+          <range>35</range>
+          <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+          <burstShotCount>5</burstShotCount>
+          <soundCast>GunShotA</soundCast>
+          <soundCastTail>GunTail_Light</soundCastTail>
+          <muzzleFlashScale>9</muzzleFlashScale>
+          <recoilPattern>Mounted</recoilPattern>
+        </li>
+      </verbs>
+      <comps DeepReplace="true">
+        <li Class="CombatExtended.CompProperties_AmmoUser">
+          <magazineSize>300</magazineSize>
+          <reloadTime>6.00</reloadTime>
+          <ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+        </li>
+        <li Class="CombatExtended.CompProperties_FireModes">
+          <aimedBurstShotCount>3</aimedBurstShotCount>
+          <aiUseBurstMode>FALSE</aiUseBurstMode>
+          <aiAimMode>Snapshot</aiAimMode>
+          <noSnapshot>true</noSnapshot>
+          <noSingleShot>true</noSingleShot>
+        </li>
+      </comps>
+    </value>
+  </Operation>
+</Patch>

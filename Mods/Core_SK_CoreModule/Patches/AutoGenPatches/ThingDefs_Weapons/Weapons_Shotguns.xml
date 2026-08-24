@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.BaseGun_LongBarreledDummy</value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]</xpath>
+    <value Merge="true">
+      <label>Striker Shotgun</label>
+      <description>A cheap-looking semi-automatic shotgun. Has a higher fire rate and high damage output, but low range.</description>
+      <graphicData DeepReplace="true">
+        <texPath>Things/Weapons/Shotguns/Striker</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases DeepReplace="true">
+        <MarketValue>900</MarketValue>
+        <SightsEfficiency>0.8</SightsEfficiency>
+        <ShotSpread>0.24</ShotSpread>
+        <SwayFactor>1.8</SwayFactor>
+        <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+        <Bulk>9.5</Bulk>
+        <Mass>4.5</Mass>
+      </statBases>
+      <weaponTags DeepReplace="true">
+        <li>ST2</li>
+        <li>Gun</li>
+        <li>TierTwoPistol</li>
+        <li>CE_AI_AssaultWeapon</li>
+      </weaponTags>
+      <thingCategories DeepReplace="true">
+        <li>Shotguns</li>
+      </thingCategories>
+      <verbs DeepReplace="true">
+        <li Class="CombatExtended.VerbPropertiesCE">
+          <recoilAmount>1.5</recoilAmount>
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+          <warmupTime>0.62</warmupTime>
+          <range>16</range>
+          <ticksBetweenBurstShots>16</ticksBetweenBurstShots>
+          <burstShotCount>4</burstShotCount>
+          <soundCast>RF_ShotAA12</soundCast>
+          <soundCastTail>GunTail_Heavy</soundCastTail>
+          <muzzleFlashScale>9</muzzleFlashScale>
+        </li>
+      </verbs>
+      <comps DeepReplace="true">
+        <li Class="CombatExtended.CompProperties_FireModes">
+          <aiUseBurstMode>FALSE</aiUseBurstMode>
+          <aiAimMode>AimedShot</aiAimMode>
+          <noSingleShot>FALSE</noSingleShot>
+          <aimedBurstShotCount>2</aimedBurstShotCount>
+        </li>
+        <li Class="CombatExtended.CompProperties_AmmoUser">
+          <magazineSize>12</magazineSize>
+          <reloadOneAtATime>true</reloadOneAtATime>
+          <reloadTime>1</reloadTime>
+          <ammoSet>AmmoSet_12Gauge</ammoSet>
+        </li>
+      </comps>
+      <smeltProducts DeepReplace="true">
+        <Shotgun_Component>1</Shotgun_Component>
+        <Weapon_Parts>6</Weapon_Parts>
+        <Plastic>3</Plastic>
+      </smeltProducts>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/weaponClasses</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/recipeMaker</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/thingSetMakerTags</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/costList</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/tools</xpath>
+  </Operation>
+</Patch>

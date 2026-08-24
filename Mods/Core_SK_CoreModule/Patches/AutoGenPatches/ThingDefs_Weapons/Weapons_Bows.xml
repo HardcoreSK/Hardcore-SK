@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Bow_Short"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.RangedWeaponNeolithicBaseDummy</value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Bow_Short"]</xpath>
+    <value Merge="true">
+      <label>Short Bow</label>
+      <description>A simple short bow. It was made with skill from primitive technology.</description>
+      <graphicData DeepReplace="true">
+        <texPath>Things/Weapons/Bows/BowShort</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <stuffCategories DeepReplace="true">
+        <li>WoodLogs</li>
+      </stuffCategories>
+      <costStuffCount>60</costStuffCount>
+      <statBases DeepReplace="true">
+        <WorkToMake>4000</WorkToMake>
+        <SightsEfficiency>0.85</SightsEfficiency>
+        <ShotSpread>1</ShotSpread>
+        <SwayFactor>2</SwayFactor>
+        <Bulk>3.0</Bulk>
+        <Mass>1.8</Mass>
+        <RangedWeapon_Cooldown>1.15</RangedWeapon_Cooldown>
+      </statBases>
+      <tradeability>Sellable</tradeability>
+      <weaponTags DeepReplace="true">
+        <li>NeolithicRangedBasic</li>
+        <li>CE_Bow</li>
+      </weaponTags>
+      <weaponClasses DeepReplace="true">
+        <li>Neolithic</li>
+        <li>ShortShots</li>
+      </weaponClasses>
+      <techLevel>Neolithic</techLevel>
+      <verbs DeepReplace="true">
+        <li Class="CombatExtended.VerbPropertiesCE">
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Projectile_Arrow_Stone</defaultProjectile>
+          <warmupTime>1.0</warmupTime>
+          <range>30</range>
+          <soundCast>Bow_Small</soundCast>
+        </li>
+      </verbs>
+      <comps DeepReplace="true">
+        <li Class="CombatExtended.CompProperties_AmmoUser">
+          <ammoSet>AmmoSet_Arrow</ammoSet>
+        </li>
+        <li Class="CombatExtended.CompProperties_FireModes">
+          <noSnapshot>True</noSnapshot>
+        </li>
+      </comps>
+      <thingCategories DeepReplace="true">
+        <li>BowRanged</li>
+      </thingCategories>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Bow_Short"]/possessionCount</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Bow_Short"]/costList</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Bow_Short"]/recipeMaker</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Bow_Short"]/tools</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Bow_Short"]/rotateInShelves</xpath>
+  </Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Bow_Recurve"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.RangedWeaponMedievalBaseDummy</value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Bow_Recurve"]</xpath>
+    <value Merge="true">
+      <label>Recurve Bow</label>
+      <description>A recurve bow stores more energy and delivers energy more efficiently than the equivalent straight-limbed bow.</description>
+      <graphicData DeepReplace="true">
+        <texPath>Things/Weapons/Bows/BowRecurve</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <stuffCategories DeepReplace="true">
+        <li>WoodLogs</li>
+      </stuffCategories>
+      <costStuffCount>62</costStuffCount>
+      <statBases DeepReplace="true">
+        <WorkToMake>7000</WorkToMake>
+        <SightsEfficiency>1.0</SightsEfficiency>
+        <ShotSpread>2</ShotSpread>
+        <SwayFactor>1</SwayFactor>
+        <Bulk>4.5</Bulk>
+        <Mass>2.0</Mass>
+        <RangedWeapon_Cooldown>1.10</RangedWeapon_Cooldown>
+      </statBases>
+      <weaponTags DeepReplace="true">
+        <li>NeolithicRangedBasic</li>
+        <li>CE_Bow</li>
+      </weaponTags>
+      <weaponClasses DeepReplace="true">
+        <li>ShortShots</li>
+      </weaponClasses>
+      <tradeability>Sellable</tradeability>
+      <verbs DeepReplace="true">
+        <li Class="CombatExtended.VerbPropertiesCE">
+          <recoilPattern>Regular</recoilPattern>
+          <recoilAmount>1.18</recoilAmount>
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Projectile_StreamlinedArrow_Stone</defaultProjectile>
+          <warmupTime>0.85</warmupTime>
+          <range>34</range>
+          <soundCast>Bow_Recurve</soundCast>
+        </li>
+      </verbs>
+      <comps DeepReplace="true">
+        <li Class="CombatExtended.CompProperties_AmmoUser">
+          <ammoSet>AmmoSet_StreamlinedArrow</ammoSet>
+        </li>
+        <li Class="CombatExtended.CompProperties_FireModes">
+          <noSnapshot>True</noSnapshot>
+        </li>
+      </comps>
+      <recipeMaker DeepReplace="true">
+        <researchPrerequisite>RecurveBow</researchPrerequisite>
+      </recipeMaker>
+      <thingCategories DeepReplace="true">
+        <li>BowRanged</li>
+      </thingCategories>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Bow_Recurve"]/costList</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Bow_Recurve"]/thingSetMakerTags</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Bow_Recurve"]/tools</xpath>
+  </Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Bow_Great"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.RangedWeaponNeolithicBaseDummy</value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Bow_Great"]</xpath>
+    <value Merge="true">
+      <label>Great Bow</label>
+      <description>A powerful great bow. It fires a heavy arrow over long distances.</description>
+      <graphicData DeepReplace="true">
+        <texPath>Things/Weapons/Bows/BowGreat</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <tradeability>Sellable</tradeability>
+      <stuffCategories DeepReplace="true">
+        <li>WoodLogs</li>
+      </stuffCategories>
+      <costStuffCount>50</costStuffCount>
+      <costList DeepReplace="true">
+        <ComponentMedieval>6</ComponentMedieval>
+      </costList>
+      <statBases DeepReplace="true">
+        <WorkToMake>5000</WorkToMake>
+        <SightsEfficiency>0.95</SightsEfficiency>
+        <ShotSpread>1</ShotSpread>
+        <SwayFactor>2</SwayFactor>
+        <Bulk>5.00</Bulk>
+        <Mass>3.00</Mass>
+        <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+      </statBases>
+      <weaponTags DeepReplace="true">
+        <li>MedievalRanged</li>
+        <li>NeolithicRangedBasic</li>
+        <li>CE_Bow</li>
+      </weaponTags>
+      <weaponClasses DeepReplace="true">
+        <li>ShortShots</li>
+      </weaponClasses>
+      <verbs DeepReplace="true">
+        <li Class="CombatExtended.VerbPropertiesCE">
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Projectile_Arrow_Stone</defaultProjectile>
+          <warmupTime>1.3</warmupTime>
+          <range>38</range>
+          <soundCast>Bow_Large</soundCast>
+        </li>
+      </verbs>
+      <comps DeepReplace="true">
+        <li Class="CombatExtended.CompProperties_AmmoUser">
+          <ammoSet>AmmoSet_Arrow</ammoSet>
+        </li>
+        <li Class="CombatExtended.CompProperties_FireModes">
+          <noSnapshot>True</noSnapshot>
+        </li>
+      </comps>
+      <recipeMaker DeepReplace="true">
+        <researchPrerequisite>Bow_A1</researchPrerequisite>
+      </recipeMaker>
+      <thingCategories DeepReplace="true">
+        <li>BowRanged</li>
+      </thingCategories>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Bow_Great"]/thingSetMakerTags</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Bow_Great"]/tools</xpath>
+  </Operation>
+</Patch>

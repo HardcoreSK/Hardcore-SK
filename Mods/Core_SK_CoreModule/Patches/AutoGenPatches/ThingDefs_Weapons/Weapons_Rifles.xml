@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.BaseGun_LongBarreledDummy</value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]</xpath>
+    <value Merge="true">
+      <label>M16 Rifle</label>
+      <description>A general-purpose military weapon for field or urban combat. It fires a three-round burst. Good range, low power, high rate of fire.</description>
+      <graphicData DeepReplace="true">
+        <texPath>Things/Weapons/Rifles/M16</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases DeepReplace="true">
+        <MarketValue>1450</MarketValue>
+        <SightsEfficiency>1.05</SightsEfficiency>
+        <ShotSpread>0.055</ShotSpread>
+        <SwayFactor>1.16</SwayFactor>
+        <RangedWeapon_Cooldown>0.44</RangedWeapon_Cooldown>
+        <Bulk>10.5</Bulk>
+        <Mass>3.5</Mass>
+      </statBases>
+      <weaponTags DeepReplace="true">
+        <li>RF4</li>
+        <li>AdvancedGun</li>
+        <li>IndustrialGunAdvanced</li>
+        <li>TierTwoRifle</li>
+        <li>CE_AI_Rifle</li>
+        <li>AssaultRifle</li>
+      </weaponTags>
+      <thingCategories DeepReplace="true">
+        <li>Rifles</li>
+      </thingCategories>
+      <verbs DeepReplace="true">
+        <li Class="CombatExtended.VerbPropertiesCE">
+          <recoilAmount>1.23</recoilAmount>
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+          <warmupTime>0.66</warmupTime>
+          <range>45</range>
+          <burstShotCount>5</burstShotCount>
+          <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+          <soundCast>Shot_AssaultRifle</soundCast>
+          <soundCastTail>GunTail_Medium</soundCastTail>
+          <muzzleFlashScale>9</muzzleFlashScale>
+        </li>
+      </verbs>
+      <comps DeepReplace="true">
+        <li Class="CombatExtended.CompProperties_FireModes">
+          <aiUseBurstMode>FALSE</aiUseBurstMode>
+          <aiAimMode>AimedShot</aiAimMode>
+          <aimedBurstShotCount>3</aimedBurstShotCount>
+        </li>
+        <li Class="CombatExtended.CompProperties_AmmoUser">
+          <magazineSize>30</magazineSize>
+          <reloadTime>2</reloadTime>
+          <ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+        </li>
+      </comps>
+      <smeltProducts DeepReplace="true">
+        <AdvRifle_Component>1</AdvRifle_Component>
+        <Weapon_Parts>5</Weapon_Parts>
+      </smeltProducts>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/recipeMaker</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/thingSetMakerTags</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/costList</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/tools</xpath>
+  </Operation>
+</Patch>

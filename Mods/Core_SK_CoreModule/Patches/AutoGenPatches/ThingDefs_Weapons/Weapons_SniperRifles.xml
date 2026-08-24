@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Gun_SniperRifle"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.BaseGun_LongBarreledDummy</value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Gun_SniperRifle"]</xpath>
+    <value Merge="true">
+      <label>M24 Sniper Rifle</label>
+      <description>Ancient pattern military sniper rifle. Bolt action. Long range, great accuracy and power.</description>
+      <graphicData DeepReplace="true">
+        <texPath>Things/Weapons/SniperRifles/M24</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases DeepReplace="true">
+        <MarketValue>1650</MarketValue>
+        <SightsEfficiency>1.75</SightsEfficiency>
+        <ShotSpread>0.01</ShotSpread>
+        <SwayFactor>0.8</SwayFactor>
+        <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+        <Bulk>11</Bulk>
+        <Mass>6.5</Mass>
+        <WorkToMake>30000</WorkToMake>
+      </statBases>
+      <weaponTags DeepReplace="true">
+        <li>SNIP1</li>
+        <li>SniperRifle</li>
+        <li>TierTwoSniper</li>
+        <li>CE_AI_Rifle</li>
+      </weaponTags>
+      <thingCategories DeepReplace="true">
+        <li>SRifles</li>
+      </thingCategories>
+      <verbs DeepReplace="true">
+        <li Class="CombatExtended.VerbPropertiesCE">
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+          <warmupTime>2.1</warmupTime>
+          <range>65</range>
+          <soundCast>Shot_SniperRifle</soundCast>
+          <soundCastTail>GunTail_Heavy</soundCastTail>
+          <muzzleFlashScale>9</muzzleFlashScale>
+        </li>
+      </verbs>
+      <comps DeepReplace="true">
+        <li Class="CombatExtended.CompProperties_FireModes">
+          <aiAimMode>AimedShot</aiAimMode>
+        </li>
+        <li Class="CombatExtended.CompProperties_AmmoUser">
+          <magazineSize>5</magazineSize>
+          <reloadTime>2</reloadTime>
+          <ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+        </li>
+      </comps>
+      <smeltProducts DeepReplace="true">
+        <Sniper_Component>1</Sniper_Component>
+        <Weapon_Parts>3</Weapon_Parts>
+        <Plastic>4</Plastic>
+      </smeltProducts>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/possessionCount</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/weaponClasses</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/recipeMaker</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/thingSetMakerTags</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/costList</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/tools</xpath>
+  </Operation>
+</Patch>

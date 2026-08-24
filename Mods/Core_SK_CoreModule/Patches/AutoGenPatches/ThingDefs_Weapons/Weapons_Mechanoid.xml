@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Gun_ChargeBlasterHeavy"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.BaseGun_OtherDummy</value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Gun_ChargeBlasterHeavy"]</xpath>
+    <value Merge="true">
+      <label>Mech. Heavy Charge Blaster</label>
+      <description>Charged-shot blaster for area suppressive fire. Mechanoid-built.</description>
+      <graphicData DeepReplace="true">
+        <texPath>Things/Weapons/Mechanoid/MechGun</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <soundInteract>InteractPrecision</soundInteract>
+      <statBases DeepReplace="true">
+        <MaxHitPoints>500</MaxHitPoints>
+        <MarketValue>2400</MarketValue>
+        <SightsEfficiency>1</SightsEfficiency>
+        <ShotSpread>0.14</ShotSpread>
+        <SwayFactor>1.6</SwayFactor>
+        <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+        <Bulk>24.00</Bulk>
+        <Mass>25.00</Mass>
+      </statBases>
+      <tradeability>None</tradeability>
+      <techLevel>Spacer</techLevel>
+      <destroyOnDrop>True</destroyOnDrop>
+      <weaponTags DeepReplace="true">
+        <li>MBL3</li>
+        <li>MechanoidGunHeavy</li>
+        <li>CE_AI_Suppressive</li>
+      </weaponTags>
+      <weaponClasses DeepReplace="true">
+        <li>RangedHeavy</li>
+      </weaponClasses>
+      <thingCategories DeepReplace="true">
+        <li>Futuristic</li>
+      </thingCategories>
+      <verbs Inherit="False" DeepReplace="true">
+        <li Class="CombatExtended.VerbPropertiesCE">
+          <recoilAmount>1.85</recoilAmount>
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_6x24mmCharged</defaultProjectile>
+          <range>50</range>
+          <warmupTime>0.95</warmupTime>
+          <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+          <burstShotCount>25</burstShotCount>
+          <soundCast>ShotChargeBlaster</soundCast>
+          <soundCastTail>GunTail_Heavy</soundCastTail>
+          <muzzleFlashScale>9</muzzleFlashScale>
+        </li>
+      </verbs>
+      <comps DeepReplace="true">
+        <li Class="CombatExtended.CompProperties_FireModes">
+          <aiUseBurstMode>FALSE</aiUseBurstMode>
+          <aiAimMode>AimedShot</aiAimMode>
+        </li>
+        <li Class="CombatExtended.CompProperties_AmmoUser">
+          <magazineSize>150</magazineSize>
+          <reloadTime>4.70</reloadTime>
+          <ammoSet>AmmoSet_6x24mmCharged</ammoSet>
+        </li>
+      </comps>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Gun_Needle"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.BaseGun_OtherDummy</value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Gun_Needle"]</xpath>
+    <value Merge="true">
+      <graphicData DeepReplace="true">
+        <texPath>Things/Weapons/Mechanoid/NeedleGun</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases DeepReplace="true">
+        <MaxHitPoints>500</MaxHitPoints>
+        <MarketValue>1400</MarketValue>
+        <SightsEfficiency>1.7</SightsEfficiency>
+        <ShotSpread>0.01</ShotSpread>
+        <SwayFactor>1.5</SwayFactor>
+        <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+        <Bulk>12.3</Bulk>
+        <Mass>7.8</Mass>
+      </statBases>
+      <soundInteract>Interact_ChargeRifle</soundInteract>
+      <destroyOnDrop>True</destroyOnDrop>
+      <weaponTags DeepReplace="true">
+        <li>Mneedle</li>
+        <li>MechanoidGunLongRange</li>
+        <li>CE_AI_Rifle</li>
+      </weaponTags>
+      <weaponClasses DeepReplace="true">
+        <li>RangedHeavy</li>
+      </weaponClasses>
+      <thingCategories DeepReplace="true">
+        <li>Futuristic</li>
+      </thingCategories>
+      <verbs DeepReplace="true">
+        <li Class="CombatExtended.VerbPropertiesCE">
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_5x50mmCaseless_Sabot</defaultProjectile>
+          <warmupTime>2</warmupTime>
+          <range>70</range>
+          <burstShotCount>1</burstShotCount>
+          <soundCast>Shot_NeedleGun</soundCast>
+          <soundCastTail>GunTail_Heavy</soundCastTail>
+          <muzzleFlashScale>9</muzzleFlashScale>
+        </li>
+      </verbs>
+      <comps DeepReplace="true">
+        <li Class="CombatExtended.CompProperties_FireModes">
+          <aiAimMode>AimedShot</aiAimMode>
+        </li>
+        <li Class="CombatExtended.CompProperties_AmmoUser">
+          <magazineSize>3</magazineSize>
+          <reloadTime>2.5</reloadTime>
+          <ammoSet>AmmoSet_5x50mmCaseless</ammoSet>
+        </li>
+      </comps>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_Needle"]/relicChance</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_Needle"]/tools</xpath>
+  </Operation>
+</Patch>

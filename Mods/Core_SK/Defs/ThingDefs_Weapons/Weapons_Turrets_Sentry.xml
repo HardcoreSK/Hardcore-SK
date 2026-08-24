@@ -3,6 +3,7 @@
 
 	<!-- ================ Improvised turret gun ============== -->
 
+	<!--
 	<ThingDef ParentName="BaseAutoTurretGun">
 		<defName>Gun_MiniTurret</defName>
 		<label>Sentry light gun</label>
@@ -10,7 +11,9 @@
 			<texPath>Things/Building/Security/TurretImprovised_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+	-->
 		<!-- <menuHidden>True</menuHidden> -->
+	<!--
 		<description>Jury-rigged automatic gun attached to a turret.</description>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<tradeability>None</tradeability>
@@ -42,7 +45,9 @@
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>300</magazineSize>
 				<reloadTime>6.00</reloadTime>
+	-->
 				<!-- <spawnUnloaded>false</spawnUnloaded> -->
+	<!--
 				<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
@@ -54,6 +59,7 @@
 			</li>
 		</comps>
 	</ThingDef>
+	-->
 
 
 	<!-- ================== Blaster Turret ================== -->

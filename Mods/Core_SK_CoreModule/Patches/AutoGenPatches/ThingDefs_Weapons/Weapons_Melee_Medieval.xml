@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_Gladius"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.WeaponMedievalBaseDummy</value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_Gladius"]</xpath>
+    <value Merge="true">
+      <label>Gladius</label>
+      <description>A short one-handed sword. Good for stabbing from behind the shield</description>
+      <graphicData DeepReplace="true">
+        <texPath>Things/Weapons/Melee/Gladius</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <soundInteract>InteractMelee</soundInteract>
+      <stuffCategories DeepReplace="true">
+        <li>StrongMetallic</li>
+      </stuffCategories>
+      <costList DeepReplace="true">
+        <ComponentMedieval>4</ComponentMedieval>
+      </costList>
+      <statBases DeepReplace="true">
+        <WorkToMake>7500</WorkToMake>
+        <Bulk>5</Bulk>
+        <Mass>2</Mass>
+        <MeleeCounterParryBonus>1.1</MeleeCounterParryBonus>
+      </statBases>
+      <equippedStatOffsets DeepReplace="true">
+        <MeleeCritChance>0.2</MeleeCritChance>
+        <MeleeParryChance>0.5</MeleeParryChance>
+        <MeleeDodgeChance>0.2</MeleeDodgeChance>
+      </equippedStatOffsets>
+      <weaponTags DeepReplace="true">
+        <li>MedievalMelee</li>
+        <li>CE_OneHandedWeapon</li>
+      </weaponTags>
+      <tools DeepReplace="true">
+        <li Class="CombatExtended.ToolCE">
+          <label>pommel</label>
+          <capacities>
+            <li>Poke</li>
+          </capacities>
+          <power>5</power>
+          <cooldownTime>1.2</cooldownTime>
+          <chanceFactor>0.1</chanceFactor>
+          <armorPenetrationBlunt>4</armorPenetrationBlunt>
+          <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>point</label>
+          <capacities>
+            <li>Stab</li>
+          </capacities>
+          <power>11</power>
+          <cooldownTime>1.3</cooldownTime>
+          <chanceFactor>1.33</chanceFactor>
+          <armorPenetrationBlunt>1.3</armorPenetrationBlunt>
+          <armorPenetrationSharp>4.2</armorPenetrationSharp>
+          <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>edge</label>
+          <capacities>
+            <li>Cut</li>
+          </capacities>
+          <power>14</power>
+          <cooldownTime>1.4</cooldownTime>
+          <armorPenetrationBlunt>6</armorPenetrationBlunt>
+          <armorPenetrationSharp>3.5</armorPenetrationSharp>
+          <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+        </li>
+      </tools>
+      <recipeMaker DeepReplace="true">
+        <researchPrerequisite>LongBlades</researchPrerequisite>
+      </recipeMaker>
+      <weaponClasses DeepReplace="true">
+        <li>MeleePiercer</li>
+      </weaponClasses>
+      <thingCategories DeepReplace="true">
+        <li>SharpMelee</li>
+      </thingCategories>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_Gladius"]/possessionCount</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_Gladius"]/uiIconScale</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_Gladius"]/thingSetMakerTags</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_Gladius"]/relicChance</xpath>
+  </Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_LongSword"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.WeaponMedievalBaseDummy</value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_LongSword"]</xpath>
+    <value Merge="true">
+      <label>Longsword</label>
+      <description>Noble two-handed weapon of the ancients, the longsword can be used for slashing or stabbing and is deadly in the right hands.</description>
+      <graphicData DeepReplace="true">
+        <texPath>Things/Weapons/Melee/Longsword</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <soundInteract>InteractMelee</soundInteract>
+      <stuffCategories DeepReplace="true">
+        <li>StrongMetallic</li>
+      </stuffCategories>
+      <costStuffCount>65</costStuffCount>
+      <costList DeepReplace="true">
+        <ComponentMedieval>4</ComponentMedieval>
+      </costList>
+      <statBases DeepReplace="true">
+        <WorkToMake>8000</WorkToMake>
+        <Bulk>7</Bulk>
+        <Mass>3</Mass>
+        <MeleeCounterParryBonus>1.7</MeleeCounterParryBonus>
+      </statBases>
+      <equippedAngleOffset>-95</equippedAngleOffset>
+      <equippedStatOffsets DeepReplace="true">
+        <MeleeCritChance>0.3</MeleeCritChance>
+        <MeleeParryChance>0.7</MeleeParryChance>
+        <MeleeDodgeChance>0.4</MeleeDodgeChance>
+      </equippedStatOffsets>
+      <weaponTags DeepReplace="true">
+        <li>MedievalMelee2H</li>
+      </weaponTags>
+      <tools DeepReplace="true">
+        <li Class="CombatExtended.ToolCE">
+          <label>pommel</label>
+          <capacities>
+            <li>Poke</li>
+          </capacities>
+          <power>6</power>
+          <cooldownTime>1.2</cooldownTime>
+          <chanceFactor>0.2</chanceFactor>
+          <armorPenetrationBlunt>4</armorPenetrationBlunt>
+          <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>point</label>
+          <capacities>
+            <li>Stab</li>
+          </capacities>
+          <power>16</power>
+          <cooldownTime>1.8</cooldownTime>
+          <chanceFactor>1</chanceFactor>
+          <armorPenetrationBlunt>1.5</armorPenetrationBlunt>
+          <armorPenetrationSharp>4.8</armorPenetrationSharp>
+          <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>edge</label>
+          <capacities>
+            <li>Cut</li>
+          </capacities>
+          <power>22</power>
+          <cooldownTime>2</cooldownTime>
+          <chanceFactor>0.6</chanceFactor>
+          <armorPenetrationBlunt>6.5</armorPenetrationBlunt>
+          <armorPenetrationSharp>3.7</armorPenetrationSharp>
+          <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+        </li>
+      </tools>
+      <recipeMaker DeepReplace="true">
+        <researchPrerequisite>LongBlades</researchPrerequisite>
+      </recipeMaker>
+      <weaponClasses DeepReplace="true">
+        <li>MeleePiercer</li>
+      </weaponClasses>
+      <thingCategories DeepReplace="true">
+        <li>SharpMelee</li>
+      </thingCategories>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_LongSword"]/possessionCount</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_LongSword"]/thingSetMakerTags</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="MeleeWeapon_LongSword"]/relicChance</xpath>
+  </Operation>
+</Patch>

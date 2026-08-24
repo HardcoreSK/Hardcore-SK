@@ -64,6 +64,7 @@
 	</ThingDef>
 
 	<!-- Mech. Heavy Charge Blaster -->
+	<!--
 	<ThingDef ParentName="BaseGun_Other">
 		<defName>Gun_ChargeBlasterHeavy</defName>
 		<label>Mech. Heavy Charge Blaster</label>
@@ -86,7 +87,9 @@
 		<tradeability>None</tradeability>
 		<techLevel>Spacer</techLevel>
 		<destroyOnDrop>True</destroyOnDrop>
+	-->
 		<!-- <menuHidden>True</menuHidden> -->
+	<!--
 		<weaponTags>
 			<li>MBL3</li>
 			<li>MechanoidGunHeavy</li>
@@ -125,6 +128,7 @@
 			</li>
 		</comps>
 	</ThingDef>
+	-->
 
 	<!-- INFERNO CANNON -->
 	<!--<ThingDef ParentName="BaseGun_Other">
@@ -504,6 +508,7 @@
 	</ThingDef>-->
 
 	<!-- Needlegun -->
+	<!--
 	<ThingDef ParentName="BaseGun_Other">
 		<defName>Gun_Needle</defName>
 		<label>needle gun</label>
@@ -526,7 +531,9 @@
 		<tradeability>None</tradeability>
 		<techLevel>Spacer</techLevel>
 		<destroyOnDrop>True</destroyOnDrop>
+	-->
 		<!-- <menuHidden>True</menuHidden> -->
+	<!--
 		<weaponTags>
 			<li>Mneedle</li>
 			<li>MechanoidGunLongRange</li>
@@ -562,5 +569,6 @@
 			</li>
 		</comps>
 	</ThingDef>
+	-->
 
 </Defs>
