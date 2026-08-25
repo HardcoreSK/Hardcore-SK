@@ -25,7 +25,7 @@
 		</comps>
 		<ingestible>
 			<preferability>MealFine</preferability>
-			<joy>0.45</joy>
+			<joy>0.10</joy>
 			<joyKind>Gluttonous</joyKind>
 			<nurseable>true</nurseable>
 			<ingestEffect>EatVegetarian</ingestEffect>
@@ -208,6 +208,10 @@
 			<li Class="CompProperties_Drug">
 				<addictiveness>0</addictiveness>
 				<listOrder>1100</listOrder>
+			</li>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>7</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
 	</ThingDef>
