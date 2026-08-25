@@ -261,34 +261,6 @@
     </Operation>
 
     <Operation Class="SK.PatchOperationReplaceExtended">
-        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]</xpath>
-        <value>
-            <itemQuality>Excellent</itemQuality>
-            <weaponMoney>3000~5000</weaponMoney>
-            <combatPower>550</combatPower>
-            <weaponTags Inherit="False">
-                <li>ASN2</li>
-                <li>ADR3</li>
-                <li>ASN3</li>
-                <li>Minigun</li>
-            </weaponTags>
-            <!--removed gunlink added Backpack-->
-            <specificApparelRequirements DeepReplace="True" Inherit="False">
-                <li>
-                    <bodyPartGroup>Legs</bodyPartGroup>
-                    <apparelLayer>OnSkin</apparelLayer>
-                    <stuff>Synthread</stuff>
-                </li>
-                <li>
-                    <bodyPartGroup>Shoulders</bodyPartGroup>
-                    <apparelLayer>Backpack</apparelLayer>
-                    <stuff>Synthread</stuff>
-                </li>
-            </specificApparelRequirements>
-        </value>
-    </Operation>
-
-    <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]</xpath>
         <value>
             <itemQuality>Excellent</itemQuality>
@@ -345,7 +317,7 @@
         <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]</xpath>
         <value>
             <itemQuality>Excellent</itemQuality>
-            <weaponMoney>3000~5000</weaponMoney>
+            <weaponMoney>3100~5000</weaponMoney>
             <combatPower>550</combatPower>
             <weaponTags Inherit="False">
                 <li>ASN2</li>
