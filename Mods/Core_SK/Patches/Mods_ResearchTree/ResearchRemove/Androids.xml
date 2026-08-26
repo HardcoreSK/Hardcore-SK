@@ -27,16 +27,11 @@
 		<mods>
 			<li>Skynet</li>
 		</mods>	
-		<match Class="PatchOperationSequence">
-			<success>Always</success>
-			<operations>
-				<li Class="PatchOperationTest">
-					<xpath>Defs/ResearchProjectDef[defName="AndroidRepairKit"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/ResearchProjectDef[defName="AndroidRepairKit"]</xpath>
-				</li>
-			</operations>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ResearchProjectDef[defName="AndroidRepairKit"]</xpath>
+			<match Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="AndroidRepairKit"]</xpath>
+			</match>
 		</match>
 	</Operation>
 	</Patch>

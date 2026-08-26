@@ -4,16 +4,12 @@
         <mods>
             <li>Rimatomics</li>
         </mods>
-        <match Class="PatchOperationSequence">
-            <operations>
-                <li Class="SK.PatchOperationReplaceExtended">
-                    <xpath>Defs/DesignationCategoryDef[defName="Rimatomics"]</xpath>
-                    <value>
-                        <label>Nuclear</label>
-                        <order>340</order>
-                    </value>
-                </li>
-            </operations>
-        </match>
+        <match Class="SK.PatchOperationReplaceExtended">
+            <xpath>Defs/DesignationCategoryDef[defName="Rimatomics"]</xpath>
+            <value>
+                <label>Nuclear</label>
+                <order>340</order>
+            </value>
+		</match>
     </Operation>
 </Patch>

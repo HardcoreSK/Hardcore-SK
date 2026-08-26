@@ -4,16 +4,12 @@
         <mods>
             <li>Rimefeller</li>
         </mods>
-        <match Class="PatchOperationSequence">
-            <operations>
-                <li Class="SK.PatchOperationReplaceExtended">
-                    <xpath>Defs/DesignationCategoryDef[defName="Rimefeller"]</xpath>
-                    <value>
-                        <label>Oil</label>
-                        <order>360</order>
-                    </value>
-                </li>
-            </operations>
-        </match>
+        <match Class="SK.PatchOperationReplaceExtended">
+            <xpath>Defs/DesignationCategoryDef[defName="Rimefeller"]</xpath>
+            <value>
+                <label>Oil</label>
+                <order>360</order>
+            </value>
+		</match>
     </Operation>
 </Patch>
