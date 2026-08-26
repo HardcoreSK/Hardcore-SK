@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
 	<!-- ========== MeleeWeapon_MonoSwordBladelink ========== -->
@@ -54,46 +54,30 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
+
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSwordBladelink"]</xpath>
-		<value>
-			<stuffCategories>
+		<value Merge="true">
+			<weaponTags Merge="true">
+				<li>CE_OneHandedWeapon</li>
+			</weaponTags>
+
+			<stuffCategories DeepReplace="true">
 				<li>SolidMetallic</li>
 			</stuffCategories>
 			<techLevel>Spacer</techLevel>
-			<equippedStatOffsets>
+			<equippedStatOffsets Merge="true">
 				<MeleeCritChance>0.80</MeleeCritChance>
 				<MeleeParryChance>0.50</MeleeParryChance>
 				<MeleeDodgeChance>0.37</MeleeDodgeChance>	
 			</equippedStatOffsets>
-			<thingCategories>
+			<thingCategories DeepReplace="true">
 				<li>SharpMelee</li>
-			</thingCategories>
-		</value>
+			</thingCategories></value>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSwordBladelink"]/weaponTags</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSwordBladelink"]</xpath>
-				<value>
-					<weaponTags />
-				</value>
-			</li>
-		</operations>
-	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSwordBladelink"]/weaponTags</xpath>
-		<value>
-			<li>CE_OneHandedWeapon</li>
-		</value>
-	</Operation>
 
 	<!-- ========== MeleeWeapon_ZeusHammerBladelink ========== -->
 
@@ -133,48 +117,32 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_ZeusHammerBladelink"]/statBases</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_ZeusHammerBladelink"]</xpath>
-				<value>
-					<statBases />
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_ZeusHammerBladelink"]/statBases</xpath>
-		<value>
-			<Bulk>8</Bulk>
-			<MeleeCounterParryBonus>0.10</MeleeCounterParryBonus>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="MeleeWeapon_ZeusHammerBladelink"]</xpath>
-		<value>
-			<stuffCategories>
+		<value Merge="true">
+			<statBases Merge="true">
+				<Bulk>8</Bulk>
+				<MeleeCounterParryBonus>0.10</MeleeCounterParryBonus>
+			</statBases>
+
+			<stuffCategories DeepReplace="true">
 				<li>SolidMetallic</li>
 			</stuffCategories>
 			<techLevel>Spacer</techLevel>
-			<equippedStatOffsets>
+			<equippedStatOffsets Merge="true">
 				<MeleeCritChance>1.10</MeleeCritChance>
 				<MeleeParryChance>0.55</MeleeParryChance>
 				<MeleeDodgeChance>0.40</MeleeDodgeChance>
 			</equippedStatOffsets>
-			<thingCategories>
+			<thingCategories DeepReplace="true">
 				<li>HeavyMelee</li>
 				<li>BluntMelee</li>
-			</thingCategories>
-		</value>
+			</thingCategories></value>
 	</Operation>
+
+
+
+
 
 	<!-- ========== MeleeWeapon_PlasmaSwordBladelink ========== -->
 

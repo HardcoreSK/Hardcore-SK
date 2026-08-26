@@ -1,61 +1,57 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <Operation Class="PatchOperationSequence">
-        <operations>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="SentienceCatalyst"]/thingCategories</xpath>
-                <value>
-                    <thingCategories>
-                        <li>Serums</li>
-                    </thingCategories>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SentienceCatalyst"]/thingCategories</xpath>
+        <value>
+            <thingCategories>
+                <li>Serums</li>
+            </thingCategories>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[
                     defName="MastodonTusk" or
                     defName="AlphaThrumboHorn"
                 ]/thingCategories</xpath>
-                <value>
-                    <thingCategories>
-                        <li>ExoticHorns</li>
-                    </thingCategories>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="ArcheanSeed"]/thingCategories</xpath>
-                <value>
-                    <thingCategories>
-                        <li>SpecialTreesSeeds</li>
-                    </thingCategories>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[
+        <value>
+            <thingCategories>
+                <li>ExoticHorns</li>
+            </thingCategories>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ArcheanSeed"]/thingCategories</xpath>
+        <value>
+            <thingCategories>
+                <li>SpecialTreesSeeds</li>
+            </thingCategories>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[
                     defName="Gravcore" or
                     defName="ShuttleEngine"
                 ]/thingCategories</xpath>
-                <value>
-                    <thingCategories>
-                        <li>HighTechItems</li>
-                    </thingCategories>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="GravlitePanel"]/thingCategories</xpath>
-                <value>
-                    <thingCategories>
-                        <li>Parts</li>
-                    </thingCategories>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="Obsidian"]/thingCategories</xpath>
-                <value>
-                    <thingCategories>
-                        <li>Extracted</li>
-                    </thingCategories>
-                </value>
-            </li>
-        </operations>
+        <value>
+            <thingCategories>
+                <li>HighTechItems</li>
+            </thingCategories>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="GravlitePanel"]/thingCategories</xpath>
+        <value>
+            <thingCategories>
+                <li>Parts</li>
+            </thingCategories>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Obsidian"]/thingCategories</xpath>
+        <value>
+            <thingCategories>
+                <li>Extracted</li>
+            </thingCategories>
+        </value>
     </Operation>
 </Patch>

@@ -51,22 +51,18 @@
 
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ResearchProjectDef[defName="Bioregeneration"]</xpath>
-    <value>
+    <value Merge="true">
       <researchViewX>18.00</researchViewX>
       <researchViewY>69.00</researchViewY>
       <tab>Medicine_SK</tab>
       <techLevel>Spacer</techLevel>
-    </value>
+
+			<requiredResearchFacilities Merge="true">
+        <li>LabStation</li>
+      </requiredResearchFacilities></value>
   </Operation>
 
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ResearchProjectDef[defName="Bioregeneration"]</xpath>
-    <value>
-      <requiredResearchFacilities>
-        <li>LabStation</li>
-      </requiredResearchFacilities>
-    </value>
-  </Operation>
+
 
   <Operation Class="PatchOperationAddModExtension">
     <xpath>Defs/ResearchProjectDef[defName="Bioregeneration"]</xpath>
@@ -80,4 +76,4 @@
     </value>
   </Operation>
 
-</Patch>	
+</Patch>

@@ -1,22 +1,18 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <Operation Class="PatchOperationSequence">
-        <operations>
-            <li Class="SK.PatchOperationReplaceExtended">
-                <xpath>Defs/ThingDef[defName="SecurityDoor"]</xpath>
-                <value>
-                    <building Merge="True">
-                        <doorSupportGraphic>
-                            <shaderType>CutoutComplex</shaderType>
-                            <drawSize>(3,2)</drawSize>
-                        </doorSupportGraphic>
-                        <doorTopGraphic>
-                            <drawSize>(3,2)</drawSize>
-                        </doorTopGraphic>
-                    </building>
-                    <uiOrder>2016</uiOrder>
-                </value>
-            </li>
-        </operations>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SecurityDoor"]</xpath>
+        <value>
+            <building Merge="True">
+                <doorSupportGraphic>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>(3,2)</drawSize>
+                </doorSupportGraphic>
+                <doorTopGraphic>
+                    <drawSize>(3,2)</drawSize>
+                </doorTopGraphic>
+            </building>
+            <uiOrder>2016</uiOrder>
+        </value>
     </Operation>
 </Patch>

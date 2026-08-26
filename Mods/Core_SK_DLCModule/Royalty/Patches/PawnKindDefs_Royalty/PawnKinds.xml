@@ -457,9 +457,7 @@
 
     <!-- ========== Royalty ========== -->
 
-    <Operation Class="PatchOperationSequence">
-        <operations>
-            <li Class="SK.PatchOperationReplaceExtended">
+    <Operation Class="SK.PatchOperationReplaceExtended">
                 <xpath>Defs/PawnKindDef[@Name="RoyalBase"]</xpath>
                 <value>
                     <itemQuality>Good</itemQuality>
@@ -468,15 +466,13 @@
                     <apparelMoney>16500~18000</apparelMoney>
                     <techHediffsMoney>21500~26500</techHediffsMoney>
                 </value>
-            </li>
-            <li Class="PatchOperationAdd">
+            </Operation>
+    <Operation Class="PatchOperationAdd">
                 <xpath>Defs/PawnKindDef[@Name="RoyalBase"]/weaponTags</xpath>
                 <value>
                     <li>SyndicateMelee</li>
                 </value>
-            </li>
-        </operations>
-    </Operation>
+            </Operation>
 
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/PawnKindDef[defName="Empire_Royal_NobleWimp" or defName="Empire_Royal_Knight" or defName="Empire_Royal_Count" or defName="Empire_Royal_Praetor" or defName="Empire_Royal_Duke" or defName="Empire_Royal_Consul" or defName="Empire_Royal_Stellarch"]</xpath>

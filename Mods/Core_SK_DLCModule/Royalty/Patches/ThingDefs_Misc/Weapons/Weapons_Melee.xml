@@ -245,71 +245,41 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSword"]/statBases</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSword"]</xpath>
-				<value>
-					<statBases />
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSword"]/statBases</xpath>
-		<value>
-			<Bulk>4</Bulk>
-			<MeleeCounterParryBonus>0.40</MeleeCounterParryBonus>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSword"]</xpath>
-		<value>
-			<stuffCategories>
+		<value Merge="true">
+			<statBases Merge="true">
+				<Bulk>4</Bulk>
+				<MeleeCounterParryBonus>0.40</MeleeCounterParryBonus>
+			</statBases>
+
+			<stuffCategories DeepReplace="true">
 				<li>SolidMetallic</li>
 			</stuffCategories>
 			<techLevel>Spacer</techLevel>
-			<equippedStatOffsets>
+			<equippedStatOffsets Merge="true">
 				<MeleeCritChance>0.80</MeleeCritChance>
 				<MeleeParryChance>0.40</MeleeParryChance>
 				<MeleeDodgeChance>0.27</MeleeDodgeChance>
 			</equippedStatOffsets>
-			<thingCategories Inherit="False">
+			<thingCategories Inherit="False" DeepReplace="true">
 				<li>AdvancedMelee</li>
 				<li>SharpMelee</li>
-			</thingCategories>
+			</thingCategories></value>
+	</Operation>
+
+
+
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSword"]</xpath>
+		<value Merge="true">
+			<weaponTags Merge="true">
+				<li>CE_OneHandedWeapon</li>
+			</weaponTags>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSword"]/weaponTags</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSword"]</xpath>
-				<value>
-					<weaponTags />
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSword"]/weaponTags</xpath>
-		<value>
-			<li>CE_OneHandedWeapon</li>
-		</value>
-	</Operation>
 
 	<!-- ========== MeleeWeapon_Zeushammer ========== -->
 
@@ -349,49 +319,32 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_Zeushammer"]/statBases</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_Zeushammer"]</xpath>
-				<value>
-					<statBases />
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_Zeushammer"]/statBases</xpath>
-		<value>
-			<Bulk>8</Bulk>
-			<MeleeCounterParryBonus>0.60</MeleeCounterParryBonus>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="MeleeWeapon_Zeushammer"]</xpath>
-		<value>
-			<stuffCategories>
+		<value Merge="true">
+			<statBases Merge="true">
+				<Bulk>8</Bulk>
+				<MeleeCounterParryBonus>0.60</MeleeCounterParryBonus>
+			</statBases>
+
+			<stuffCategories DeepReplace="true">
 				<li>SolidMetallic</li>
 			</stuffCategories>
 			<techLevel>Spacer</techLevel>
-			<equippedStatOffsets>
+			<equippedStatOffsets Merge="true">
 				<MeleeCritChance>1.10</MeleeCritChance>
 				<MeleeParryChance>0.20</MeleeParryChance>
 				<MeleeDodgeChance>0.10</MeleeDodgeChance>
 			</equippedStatOffsets>
-			<thingCategories Inherit="False">
+			<thingCategories Inherit="False" DeepReplace="true">
 				<li>AdvancedMelee</li>
 				<li>HeavyMelee</li>
 				<li>BluntMelee</li>
-			</thingCategories>
-		</value>
+			</thingCategories></value>
 	</Operation>
+
+
+
 
 	<!-- ========== MeleeWeapon_PlasmaSword ========== -->
 
@@ -451,48 +404,31 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_PlasmaSword"]/statBases</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_PlasmaSword"]</xpath>
-				<value>
-					<statBases />
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_PlasmaSword"]/statBases</xpath>
-		<value>
-			<Bulk>8.5</Bulk>
-			<MeleeCounterParryBonus>0.80</MeleeCounterParryBonus>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="MeleeWeapon_PlasmaSword"]</xpath>
-		<value>
-			<stuffCategories>
+		<value Merge="true">
+			<statBases Merge="true">
+				<Bulk>8.5</Bulk>
+				<MeleeCounterParryBonus>0.80</MeleeCounterParryBonus>
+			</statBases>
+
+			<stuffCategories DeepReplace="true">
 				<li>SolidMetallic</li>
 			</stuffCategories>
 			<techLevel>Spacer</techLevel>
-			<equippedStatOffsets>
+			<equippedStatOffsets Merge="true">
 				<MeleeCritChance>0.85</MeleeCritChance>
 				<MeleeParryChance>0.50</MeleeParryChance>
 				<MeleeDodgeChance>0.40</MeleeDodgeChance>
 			</equippedStatOffsets>
-			<thingCategories Inherit="False">
+			<thingCategories Inherit="False" DeepReplace="true">
 				<li>AdvancedMelee</li>
 				<li>SharpMelee</li>
-			</thingCategories>
-		</value>
+			</thingCategories></value>
 	</Operation>
+
+
+
 
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/ThingDef[@Name="MeleeWeaponUltratech" or 

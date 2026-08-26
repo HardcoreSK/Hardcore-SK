@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
   <!-- ========== Headwrap, Broadwrap ========== -->
@@ -151,10 +151,8 @@
   </Operation>	 -->
     
     
-    <Operation Class="PatchOperationSequence">
-        <operations>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[
                     defName="Apparel_Blindfold" or
                     defName="Apparel_Headwrap" or
                     defName="Apparel_Broadwrap" or
@@ -165,29 +163,27 @@
                     defName="Apparel_Shadecone" or
                     defName="Apparel_Flophat"
                 ]</xpath>
-                <value>
-                    <thingCategories Inherit="False">
-                        <li>HeaddressCat</li>
-                    </thingCategories>
-                </value>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="Apparel_Collar"]</xpath>
-                <value>
-                    <thingCategories Inherit="False">
-                        <li>SpecialHelmetsCat</li>
-                    </thingCategories>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="Apparel_TortureCrown"]/thingCategories</xpath>
-                <value>
-                    <thingCategories>
-                        <li>SpecialHelmetsCat</li>
-                    </thingCategories>
-                </value>
-            </li>
-        </operations>
+        <value>
+            <thingCategories Inherit="False">
+                <li>HeaddressCat</li>
+            </thingCategories>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Apparel_Collar"]</xpath>
+        <value>
+            <thingCategories Inherit="False">
+                <li>SpecialHelmetsCat</li>
+            </thingCategories>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_TortureCrown"]/thingCategories</xpath>
+        <value>
+            <thingCategories>
+                <li>SpecialHelmetsCat</li>
+            </thingCategories>
+        </value>
     </Operation>
 
 </Patch>

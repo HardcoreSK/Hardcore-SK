@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
   <!--========================= Cheval de frise =============================-->
@@ -108,7 +108,7 @@
       <li>Fortification_A1</li>
     </researchPrerequisites>
   </ThingDef>
-    
+
   <!--========================= Special =============================-->
 
   <ThingDef ParentName="BuildingBase">
@@ -143,7 +143,7 @@
         <basePowerConsumption>20000</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Flickable" />
     </comps>
     <size>(2,2)</size>
     <passability>Impassable</passability>
@@ -213,7 +213,7 @@
     <passability>Impassable</passability>
     <tickerType>Normal</tickerType>
     <comps>
-      <li Class="SK.CompProperties_PowerOnGraphic"/>
+      <li Class="SK.CompProperties_PowerOnGraphic" />
       <li Class="SK.CompProperties_IdlePower">
         <basePowerConsumption>4000</basePowerConsumption>
       </li>
@@ -259,7 +259,7 @@
         <basePowerConsumption>10000</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Flickable" />
     </comps>
     <size>(3,3)</size>
     <passability>Impassable</passability>
@@ -288,6 +288,7 @@
     <building>
       <turretGunDef>Artillery_SkywrathController</turretGunDef>
     </building>
+    <constructionSkillPrerequisite>19</constructionSkillPrerequisite>
   </ThingDef>
 
   <ThingDef>
@@ -338,9 +339,9 @@
         <shortCircuitInRain>false</shortCircuitInRain>
         <transmitsPower>true</transmitsPower>
       </li>
-      <li Class="CompProperties_Flickable"/>
-      <li Class="SK.Events.CompProperties_Shield"/>
-      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Flickable" />
+      <li Class="SK.Events.CompProperties_Shield" />
+      <li Class="CompProperties_Breakdownable" />
     </comps>
     <researchPrerequisites>
       <li>Fortification_E2</li>

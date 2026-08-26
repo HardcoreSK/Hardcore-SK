@@ -1,164 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_Headwrap"]/recipeMaker</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_Headwrap"]</xpath>
-				<value>
-					<recipeMaker/>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_Headwrap"]/recipeMaker</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_Headwrap"]</xpath>
+			<value>
+				<recipeMaker />
+			</value>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_Broadwrap"]/recipeMaker</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_Broadwrap"]</xpath>
-				<value>
-					<recipeMaker/>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_Broadwrap"]/recipeMaker</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_Broadwrap"]</xpath>
+			<value>
+				<recipeMaker />
+			</value>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_VisageMask"]/recipeMaker</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_VisageMask"]</xpath>
-				<value>
-					<recipeMaker/>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_VisageMask"]/recipeMaker</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_VisageMask"]</xpath>
+			<value>
+				<recipeMaker />
+			</value>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_Slicecap"]/recipeMaker</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_Slicecap"]</xpath>
-				<value>
-					<recipeMaker/>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_Slicecap"]/recipeMaker</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_Slicecap"]</xpath>
+			<value>
+				<recipeMaker />
+			</value>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_Collar"]/recipeMaker</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_Collar"]</xpath>
-				<value>
-					<recipeMaker/>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_Collar"]/recipeMaker</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_Collar"]</xpath>
+			<value>
+				<recipeMaker />
+			</value>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_AuthorityCap"]/recipeMaker</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_AuthorityCap"]</xpath>
-				<value>
-					<recipeMaker/>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_AuthorityCap"]/recipeMaker</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_AuthorityCap"]</xpath>
+			<value>
+				<recipeMaker />
+			</value>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_BodyStrap"]/recipeMaker</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_BodyStrap"]</xpath>
-				<value>
-					<recipeMaker/>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_BodyStrap"]/recipeMaker</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_BodyStrap"]</xpath>
+			<value>
+				<recipeMaker />
+			</value>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_Burka"]/recipeMaker</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_Burka"]</xpath>
-				<value>
-					<recipeMaker/>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_Burka"]/recipeMaker</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_Burka"]</xpath>
+			<value>
+				<recipeMaker />
+			</value>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_TortureCrown"]/recipeMaker</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_TortureCrown"]</xpath>
-				<value>
-					<recipeMaker/>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_TortureCrown"]/recipeMaker</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_TortureCrown"]</xpath>
+			<value>
+				<recipeMaker />
+			</value>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_Blindfold"]/recipeMaker</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_Blindfold"]</xpath>
-				<value>
-					<recipeMaker/>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_Blindfold"]/recipeMaker</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_Blindfold"]</xpath>
+			<value>
+				<recipeMaker />
+			</value>
+		</nomatch>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">

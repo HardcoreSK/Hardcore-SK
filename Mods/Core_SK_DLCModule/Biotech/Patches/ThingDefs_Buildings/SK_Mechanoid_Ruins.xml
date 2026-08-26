@@ -1,11 +1,7 @@
 <Patch>
 
 	<!-- List and number of items when disassembled -->
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-		
-			<li Class="PatchOperationConditional">
+	<Operation Class="PatchOperationConditional">
 				<xpath>Defs/ThingDef[defName = "AncientExostriderRemains"]/building</xpath>
 				<match Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName = "AncientExostriderRemains"]/building</xpath>
@@ -25,9 +21,8 @@
 						</building>
 					</value>
 				</nomatch>
-			</li>
-
-			<li Class="PatchOperationAdd">
+			</Operation>
+	<Operation Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName = "AncientExostriderRemains"]/killedLeavings</xpath>
 				<value>
 					<NitinolAlloy>5</NitinolAlloy>
@@ -37,8 +32,8 @@
 					<Ceramics>5</Ceramics>
 					<Plastic>8</Plastic>
 				</value>
-			</li>
-<!--
+			</Operation>
+	<!--
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName = "AncientExostriderRemains"]/comps/li[@Class="CompProperties_LeavingsLetter"]/leavingsFilter/thingDefs</xpath>
 				<value>
@@ -54,14 +49,13 @@
 				</value>
 			</li>
 -->
-			<li Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName = "AncientExostriderRemains"]/comps/li[@Class="CompProperties_ProximityLetter"]/letterText</xpath>
 				<value>
 					<letterText>Passing near the remains of an ancient exostrider mechanoid, {PAWN_nameDef} noticed an (*Reward)intact transponder(/Reward) inside.\n\nIf you could get the transponder, you could read valuable information from it. The massive mech is smashed and fused into a solid piece. You must destroy it to retrieve the transponder.\n\nBe careful - the incendiary weapon cells look (*Threat)unstable(/Threat) and will likely detonate after you do some damage.\n\nMight be wise to bring some fire fighting equipment if you want to save some of the resources after the explosion. </letterText>
 				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
+			</Operation>
+	<Operation Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName = "AncientExostriderRemains"]</xpath>
 				<value>
 					<costList>
@@ -73,9 +67,6 @@
 						<Plastic>8</Plastic>
 					</costList>
 				</value>
-			</li>
-
-		</operations>
-	</Operation>
+			</Operation>
 	
 </Patch>

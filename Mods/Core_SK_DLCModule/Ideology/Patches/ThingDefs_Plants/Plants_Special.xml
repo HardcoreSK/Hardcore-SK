@@ -47,34 +47,22 @@
 	</Operation>
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/BiomeDef/wildPlants[Plant_Grass > 4]</xpath>
-		<match Class="PatchOperationSequence">
-			<operations>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/BiomeDef/wildPlants[Plant_Grass > 4]</xpath>
-					<value>
-						<Plant_Fibercorn>0.2</Plant_Fibercorn>
-					</value>
-				</li>
-
-			</operations>
+		<xpath>Defs/BiomeDef/wildPlants[Plant_Grass &gt; 4]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/BiomeDef/wildPlants[Plant_Grass &gt; 4]</xpath>
+			<value>
+				<Plant_Fibercorn>0.2</Plant_Fibercorn>
+			</value>
 		</match>
 	</Operation>
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/BiomeDef/wildPlants[Plant_Grass > 2 and 4 > Plant_Grass]</xpath>
-		<match Class="PatchOperationSequence">
-			<operations>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/BiomeDef/wildPlants[Plant_Grass > 2 and 4 > Plant_Grass]</xpath>
-					<value>
-						<Plant_Fibercorn>0.1</Plant_Fibercorn>
-					</value>
-				</li>
-
-			</operations>
+		<xpath>Defs/BiomeDef/wildPlants[Plant_Grass &gt; 2 and 4 &gt; Plant_Grass]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/BiomeDef/wildPlants[Plant_Grass &gt; 2 and 4 &gt; Plant_Grass]</xpath>
+			<value>
+				<Plant_Fibercorn>0.1</Plant_Fibercorn>
+			</value>
 		</match>
 	</Operation>
 

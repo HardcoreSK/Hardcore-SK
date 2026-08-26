@@ -1,58 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <Operation Class="PatchOperationSequence">
-        <operations>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="Apparel_PackBroadshield"]/recipeMaker/researchPrerequisite</xpath>
-                <value>
-                    <researchPrerequisite>Fortification_E1</researchPrerequisite>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_PackBroadshield"]/recipeMaker/researchPrerequisite</xpath>
+        <value>
+            <researchPrerequisite>Fortification_E1</researchPrerequisite>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[
                 defName="Drape" or
                 defName="Brazier" or
                 defName="Throne"
                 ]/researchPrerequisites</xpath>
-                <value>
-                    <researchPrerequisites>
-                        <li>Construction_B1</li>
-                    </researchPrerequisites>
-                </value>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="GrandThrone"]</xpath>
-                <value>
-                    <researchPrerequisites>
-                        <li>Construction_B2</li>
-                    </researchPrerequisites>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="ShipLandingBeacon"]/researchPrerequisites</xpath>
-                <value>
-                    <researchPrerequisites>
-                        <li>Telecommunications_C1</li>
-                    </researchPrerequisites>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[
+        <value>
+            <researchPrerequisites>
+                <li>Construction_B1</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="GrandThrone"]</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Construction_B2</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ShipLandingBeacon"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Telecommunications_C1</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[
                 defName="Apparel_Crown" or
                 defName="Apparel_Coronet" or
                 defName="Apparel_RobeRoyal"
                 ]/recipeMaker/researchPrerequisite</xpath>
-                <value>
-                    <researchPrerequisite>RoyalApparel</researchPrerequisite>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="Apparel_PackJump"]/recipeMaker/researchPrerequisite</xpath>
-                <value>
-                    <researchPrerequisite>JumpPack</researchPrerequisite>
-                </value>
-            </li><!--
+        <value>
+            <researchPrerequisite>RoyalApparel</researchPrerequisite>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_PackJump"]/recipeMaker/researchPrerequisite</xpath>
+        <value>
+            <researchPrerequisite>JumpPack</researchPrerequisite>
+        </value>
+    </Operation>
+    <!--
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[
                 defName="Apparel_ArmorCataphractPrestige" or
@@ -71,17 +70,16 @@
 				  </recipeUsers>
                 </value>
             </li>-->
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/TerrainDef[@Name="FineTileStoneBase"]/researchPrerequisites</xpath>
-                <value>
-                    <researchPrerequisites>
-                        <li>Stone_floor_B3</li>
-                    </researchPrerequisites>
-                </value>
-            </li>
-
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/RecipeDef[
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/TerrainDef[@Name="FineTileStoneBase"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Stone_floor_B3</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[
                     defName="InstallPsychicSensitizer" or
                     defName="InstallPsychicHarmonizer" or
                     defName="InstallPsychicReader" or
@@ -134,20 +132,18 @@
                     defName="RemoveVenomFangs" or
                     defName="RemoveVenomTalon"
                 ]</xpath>
-                <value>
-                    <researchPrerequisite>Prosthesis_install_D4</researchPrerequisite>
-                </value>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/RecipeDef[
+        <value>
+            <researchPrerequisite>Prosthesis_install_D4</researchPrerequisite>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[
                 defName="CureBloodRot" or
                 defName="CureAbasia"
                 ]</xpath>
-                <value>
-                    <researchPrerequisite>Heal_C3</researchPrerequisite>
-                </value>
-            </li>
-        </operations>
+        <value>
+            <researchPrerequisite>Heal_C3</researchPrerequisite>
+        </value>
     </Operation>
     
 </Patch>

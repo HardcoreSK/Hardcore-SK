@@ -1,324 +1,313 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <Operation Class="PatchOperationSequence">
-        <operations>
-            <li Class="PatchOperationAttributeSet">
-                <xpath>Defs/ThingDef[defName="Apparel_MechlordSuit" or defName="Apparel_ArmorHelmetMechlordHelmet" or defName="Apparel_ArmorHelmetMechCommander"]</xpath>
-                <attribute>ParentName</attribute>
-                <value>SK.ArmorSpacerBaseDummy</value>
-            </li>
-            
-            <li Class="SK.PatchOperationReplaceExtended">
-                <xpath>Defs/ThingDef[defName="Apparel_IntegratorHeadset"]</xpath>
-                <value>
-                    <recipeMaker DeepReplace="True" Inherit="False">
-                        <workSpeedStat>SmithingSpeed</workSpeedStat>
-                        <workSkill>Crafting</workSkill>
-                        <effectWorking>Smith</effectWorking>
-                        <soundWorking>Recipe_Machining</soundWorking>
-                        <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-                        <researchPrerequisite>HighMechtech</researchPrerequisite>
-                        <skillRequirements>
-                            <Crafting>12</Crafting>
-                        </skillRequirements>
-                        <recipeUsers>
-                            <li>HyperTailoringBench</li>
-                        </recipeUsers>
-                    </recipeMaker>
-                    <thingCategories DeepReplace="True" Inherit="False">
-                        <li>HeadgearMechanitor</li>
-                    </thingCategories>
-                    <stuffCategories DeepReplace="True">
-                        <li>RuggedMetallic</li>
-                    </stuffCategories>
-                    <costStuffCount>25</costStuffCount>
-                    <costList DeepReplace="True" Inherit="False">
-                        <ComponentAdvanced>2</ComponentAdvanced>
-                        <ComponentSpacer>4</ComponentSpacer>
-                        <ElectronicComponents>2</ElectronicComponents>
-                        <PowerfocusChip>1</PowerfocusChip>
-                    </costList>
-                </value>
-            </li>
-
-            <li Class="SK.PatchOperationReplaceExtended">
-                <xpath>Defs/ThingDef[defName="Apparel_ArmorHelmetMechCommander"]</xpath>
-                <value>
-                    <thingClass>Apparel</thingClass>
-                    <recipeMaker DeepReplace="True" Inherit="False">
-                        <workSpeedStat>SmithingSpeed</workSpeedStat>
-                        <workSkill>Crafting</workSkill>
-                        <effectWorking>Smith</effectWorking>
-                        <soundWorking>Recipe_Machining</soundWorking>
-                        <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-                        <researchPrerequisite>StandardMechtech</researchPrerequisite>
-                        <skillRequirements>
-                            <Crafting>10</Crafting>
-                        </skillRequirements>
-                        <recipeUsers>
-                            <li>HyperTailoringBench</li>
-                        </recipeUsers>
-                    </recipeMaker>
-                    <thingCategories DeepReplace="True" Inherit="False">
-                        <li>HeadgearMechanitor</li>
-                        <li>MediumHelmetsCat</li>
-                    </thingCategories>
-                    <stuffCategories DeepReplace="True">
-                        <li>RuggedMetallic</li>
-                    </stuffCategories>
-                    <tradeTags DeepReplace="True">
-                        <li>Armor</li>
-                    </tradeTags>
-                    <costStuffCount>60</costStuffCount>
-                    <costList DeepReplace="True" Inherit="False">
-                        <SignalChip>1</SignalChip>
-                        <ComponentIndustrial>4</ComponentIndustrial>
-                        <ComponentAdvanced>2</ComponentAdvanced>
-                        <ElectronicComponents>1</ElectronicComponents>
-                    </costList>
-                </value>
-            </li>
-
-            <li Class="SK.PatchOperationReplaceExtended">
-                <xpath>Defs/ThingDef[defName="Apparel_ArmorHelmetMechlordHelmet"]</xpath>
-                <value>
-                    <thingClass>Apparel</thingClass>
-                    <recipeMaker DeepReplace="True" Inherit="False">
-                        <workSpeedStat>SmithingSpeed</workSpeedStat>
-                        <workSkill>Crafting</workSkill>
-                        <effectWorking>Smith</effectWorking>
-                        <soundWorking>Recipe_Machining</soundWorking>
-                        <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-                        <researchPrerequisite>HighMechtech</researchPrerequisite>
-                        <skillRequirements>
-                            <Crafting>16</Crafting>
-                        </skillRequirements>
-                        <recipeUsers>
-                            <li>HyperTailoringBench</li>
-                        </recipeUsers>
-                    </recipeMaker>
-                    <thingCategories DeepReplace="True" Inherit="False">
-                        <li>HeadgearMechanitor</li>
-                        <li>MediumHelmetsCat</li>
-                    </thingCategories>
-                    <stuffCategories DeepReplace="True">
-                        <li>RuggedMetallic</li>
-                    </stuffCategories>
-                    <tradeTags DeepReplace="True">
-                        <li>Armor</li>
-                    </tradeTags>
-                    <costStuffCount>90</costStuffCount>
-                    <costList DeepReplace="True" Inherit="False">
-                        <ComponentSpacer>4</ComponentSpacer>
-                        <ComponentAdvanced>2</ComponentAdvanced>
-                        <ElectronicComponents>1</ElectronicComponents>
-                        <ReinforcedGlass>2</ReinforcedGlass>
-                        <NanostructuringChip>2</NanostructuringChip>
-                    </costList>
-                    <statBases DeepReplace="True" Inherit="False">
-                        <WorkToMake>45000</WorkToMake>
-                        <MaxHitPoints>270</MaxHitPoints>
-                        <Flammability>0.3</Flammability>
-                        <Mass>3.0</Mass>
-                        <Bulk>5</Bulk>
-                        <WornBulk>7</WornBulk>
-                        <EquipDelay>11</EquipDelay>
-                        <Insulation_Cold>32</Insulation_Cold>
-                        <Insulation_Heat>9</Insulation_Heat>
-                        <StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
-                        <StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
-                        <StuffEffectMultiplierArmor>3.47</StuffEffectMultiplierArmor>
-                        <ArmorRating_Sharp>11.1</ArmorRating_Sharp>
-                        <ArmorRating_Blunt>25.96</ArmorRating_Blunt>
-                        <ArmorRating_Heat>0.25</ArmorRating_Heat>
-                    </statBases>
-                    <equippedStatOffsets DeepReplace="True" Inherit="False">
-                        <MoveSpeed>-0.05</MoveSpeed>
-                        <WorkSpeedGlobal>-0.07</WorkSpeedGlobal>
-                        <MentalBreakThreshold>-0.04</MentalBreakThreshold>
-                        <PsychicSensitivity>-0.2</PsychicSensitivity>
-                        <MechBandwidth>12</MechBandwidth>
-                        <ShootingAccuracyPawn>-0.08</ShootingAccuracyPawn>
-                        <AimingDelayFactor>0.05</AimingDelayFactor>
-                        <MeleeWeapon_CooldownMultiplier>0.05</MeleeWeapon_CooldownMultiplier>
-                        <Suppressability>-0.2</Suppressability>
-                        <ArmorRating_Toxin>0.16</ArmorRating_Toxin>
-                        <GermResistance>0.3</GermResistance>
-                        <GermContainment>0.3</GermContainment>
-                    </equippedStatOffsets>
-                </value>
-            </li>
-
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="Apparel_ArmorHelmetMechlordHelmet" or defName="Apparel_ArmorHelmetMechCommander"]/apparel</xpath>
-                <value>
-                    <bodyPartGroups>
-                        <li>FullHead</li>
-                    </bodyPartGroups>
-                    <layers>
-                        <li>Overhead</li>
-                    </layers>
-                </value>
-            </li>
-            
-			<!-- Redirect to ArmorSpacerBase -->
-			<li Class="SK.PatchOperationReplaceExtended">
-				<xpath>Defs/ThingDef[defName="Apparel_MechlordSuit"]</xpath>
-				<value>
-					<thingClass>Apparel</thingClass>
-					<thingCategories DeepReplace="True" Inherit="False">
-						<li>MediumUpperArmorCat</li>
-						<li>Setpowerarmor</li>
-					</thingCategories>
-					<recipeMaker DeepReplace="True" Inherit="False">
-						<workSpeedStat>SmithingSpeed</workSpeedStat>
-						<workSkill>Crafting</workSkill>
-						<effectWorking>Smith</effectWorking>
-						<soundWorking>Recipe_Machining</soundWorking>
-						<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-                        <researchPrerequisite>HighMechtech</researchPrerequisite>
-						<recipeUsers>
-							<li>HyperTailoringBench</li>
-						</recipeUsers>
-						<skillRequirements>
-							<Crafting>16</Crafting>
-						</skillRequirements>
-					</recipeMaker>
-					<stuffCategories DeepReplace="True" >
-						<li>StrongMetallic</li>
-					</stuffCategories>
-					<costStuffCount>120</costStuffCount>
-					<costList DeepReplace="True">
-						<NanostructuringChip>2</NanostructuringChip>
-						<PowerfocusChip>1</PowerfocusChip>
-						<ComponentSpacer>2</ComponentSpacer>
-						<Carbon>10</Carbon>
-						<MagneticMaterial>2</MagneticMaterial>
-						<SyntheticFibers>6</SyntheticFibers>
-						<Hexcell>2</Hexcell>
-					</costList>
-					<statBases DeepReplace="True">
-						<WorkToMake>60000</WorkToMake>
-						<MaxHitPoints>120</MaxHitPoints>
-						<Flammability>0.6</Flammability>
-						<Mass>3.5</Mass>
-						<Bulk>25</Bulk>
-						<WornBulk>10</WornBulk>
-						<EquipDelay>11</EquipDelay>
-						<Insulation_Cold>32</Insulation_Cold>
-						<Insulation_Heat>9</Insulation_Heat>
-						<StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
-						<StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
-						<StuffEffectMultiplierArmor>3.47</StuffEffectMultiplierArmor>
-						<ArmorRating_Sharp>8</ArmorRating_Sharp>
-						<ArmorRating_Blunt>15.96</ArmorRating_Blunt>
-						<ArmorRating_Heat>0.125</ArmorRating_Heat>
-					</statBases>
-					<equippedStatOffsets DeepReplace="True">
-						<CarryWeight>20</CarryWeight>
-						<CarryBulk>15</CarryBulk>
-						<MoveSpeed>-0.3</MoveSpeed>
-						<WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
-						<MentalBreakThreshold>-0.04</MentalBreakThreshold>
-						<PsychicSensitivity>-0.1</PsychicSensitivity>
-						<MechBandwidth>12</MechBandwidth>
-						<ShootingAccuracyPawn>-0.08</ShootingAccuracyPawn>
-						<AimingDelayFactor>0.05</AimingDelayFactor>
-						<MeleeWeapon_CooldownMultiplier>0.05</MeleeWeapon_CooldownMultiplier>
-						<ImmunityGainSpeed>0.2</ImmunityGainSpeed>
-						<Suppressability>-0.2</Suppressability>
-						<ArmorRating_Toxin>0.16</ArmorRating_Toxin>
-						<GermResistance>0.04</GermResistance>
-						<GermContainment>0.04</GermContainment>
-					</equippedStatOffsets>
-					<tradeTags DeepReplace="True">
-						<li>Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_MechlordSuit"]/apparel</xpath>
-				<value>
-					<bodyPartGroups>
-						<li>Torso</li>
-						<li>Neck</li>
-						<li>Shoulders</li>
-						<li>Arms</li>
-						<li>Hands</li>
-						<li>Legs</li>
-						<li>Feet</li>
-					</bodyPartGroups>
-					<layers>
-						<li>Shell</li>
-						<li>Middle</li>
-					</layers>
-				</value>
-			</li>
-
-            <!-- airwire headset -->
-            <li Class="SK.PatchOperationReplaceExtended">
-                <xpath>Defs/ThingDef[defName="Apparel_AirwireHeadset"]</xpath>
-                <value>
-                    <recipeMaker DeepReplace="True" Inherit="False">
-                        <workSpeedStat>SmithingSpeed</workSpeedStat>
-                        <workSkill>Crafting</workSkill>
-                        <effectWorking>Smith</effectWorking>
-                        <soundWorking>Recipe_Machining</soundWorking>
-                        <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-                        <researchPrerequisite>BasicMechtech</researchPrerequisite>
-                        <skillRequirements>
-                            <Crafting>9</Crafting>
-                        </skillRequirements>
-                        <recipeUsers>
-                            <li>TableElectronics</li>
-                        </recipeUsers>
-                    </recipeMaker>
-                    <costList DeepReplace="True" >
-                        <Plastic>40</Plastic>
-                        <Wire>15</Wire>
-                        <ReinforcedGlass>10</ReinforcedGlass>
-                        <ComponentIndustrial>4</ComponentIndustrial>
-                        <ElectronicComponents>2</ElectronicComponents>
-                        <Electronics>1</Electronics>
-                    </costList>
-                    <thingCategories Inherit="False">
-                        <li>HeadgearMechanitor</li>
-                    </thingCategories>
-                </value>
-            </li>
-
-            <!-- array headset -->
-            <li Class="SK.PatchOperationReplaceExtended">
-                <xpath>Defs/ThingDef[defName="Apparel_ArrayHeadset"]</xpath>
-                <value>
-                    <recipeMaker DeepReplace="True" Inherit="False">
-                        <workSpeedStat>SmithingSpeed</workSpeedStat>
-                        <workSkill>Crafting</workSkill>
-                        <effectWorking>Smith</effectWorking>
-                        <soundWorking>Recipe_Machining</soundWorking>
-                        <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-                        <researchPrerequisite>BasicMechtech</researchPrerequisite>
-                        <skillRequirements>
-                            <Crafting>13</Crafting>
-                        </skillRequirements>
-                        <recipeUsers>
-                            <li>TableElectronics</li>
-                        </recipeUsers>
-                    </recipeMaker>
-                    <costList DeepReplace="True" >
-                        <Plastic>45</Plastic>
-                        <Wire>20</Wire>
-                        <ReinforcedGlass>15</ReinforcedGlass>
-                        <ComponentIndustrial>6</ComponentIndustrial>
-                        <ElectronicComponents>4</ElectronicComponents>
-                        <Electronics>2</Electronics>
-                        <Microchips>2</Microchips>
-                    </costList>
-                    <thingCategories Inherit="False">
-                        <li>HeadgearMechanitor</li>
-                    </thingCategories>
-                </value>
-            </li>
-        </operations>
-    </Operation>
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="Apparel_MechlordSuit" or defName="Apparel_ArmorHelmetMechlordHelmet" or defName="Apparel_ArmorHelmetMechCommander"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.ArmorSpacerBaseDummy</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Apparel_IntegratorHeadset"]</xpath>
+		<value>
+			<recipeMaker DeepReplace="True" Inherit="False">
+				<workSpeedStat>SmithingSpeed</workSpeedStat>
+				<workSkill>Crafting</workSkill>
+				<effectWorking>Smith</effectWorking>
+				<soundWorking>Recipe_Machining</soundWorking>
+				<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+				<researchPrerequisite>HighMechtech</researchPrerequisite>
+				<skillRequirements>
+					<Crafting>12</Crafting>
+				</skillRequirements>
+				<recipeUsers>
+					<li>HyperTailoringBench</li>
+				</recipeUsers>
+			</recipeMaker>
+			<thingCategories DeepReplace="True" Inherit="False">
+				<li>HeadgearMechanitor</li>
+			</thingCategories>
+			<stuffCategories DeepReplace="True">
+				<li>RuggedMetallic</li>
+			</stuffCategories>
+			<costStuffCount>25</costStuffCount>
+			<costList DeepReplace="True" Inherit="False">
+				<ComponentAdvanced>2</ComponentAdvanced>
+				<ComponentSpacer>4</ComponentSpacer>
+				<ElectronicComponents>2</ElectronicComponents>
+				<PowerfocusChip>1</PowerfocusChip>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Apparel_ArmorHelmetMechCommander"]</xpath>
+		<value>
+			<thingClass>Apparel</thingClass>
+			<recipeMaker DeepReplace="True" Inherit="False">
+				<workSpeedStat>SmithingSpeed</workSpeedStat>
+				<workSkill>Crafting</workSkill>
+				<effectWorking>Smith</effectWorking>
+				<soundWorking>Recipe_Machining</soundWorking>
+				<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+				<researchPrerequisite>StandardMechtech</researchPrerequisite>
+				<skillRequirements>
+					<Crafting>10</Crafting>
+				</skillRequirements>
+				<recipeUsers>
+					<li>HyperTailoringBench</li>
+				</recipeUsers>
+			</recipeMaker>
+			<thingCategories DeepReplace="True" Inherit="False">
+				<li>HeadgearMechanitor</li>
+				<li>MediumHelmetsCat</li>
+			</thingCategories>
+			<stuffCategories DeepReplace="True">
+				<li>RuggedMetallic</li>
+			</stuffCategories>
+			<tradeTags DeepReplace="True">
+				<li>Armor</li>
+			</tradeTags>
+			<costStuffCount>60</costStuffCount>
+			<costList DeepReplace="True" Inherit="False">
+				<SignalChip>1</SignalChip>
+				<ComponentIndustrial>4</ComponentIndustrial>
+				<ComponentAdvanced>2</ComponentAdvanced>
+				<ElectronicComponents>1</ElectronicComponents>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Apparel_ArmorHelmetMechlordHelmet"]</xpath>
+		<value>
+			<thingClass>Apparel</thingClass>
+			<recipeMaker DeepReplace="True" Inherit="False">
+				<workSpeedStat>SmithingSpeed</workSpeedStat>
+				<workSkill>Crafting</workSkill>
+				<effectWorking>Smith</effectWorking>
+				<soundWorking>Recipe_Machining</soundWorking>
+				<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+				<researchPrerequisite>HighMechtech</researchPrerequisite>
+				<skillRequirements>
+					<Crafting>16</Crafting>
+				</skillRequirements>
+				<recipeUsers>
+					<li>HyperTailoringBench</li>
+				</recipeUsers>
+			</recipeMaker>
+			<thingCategories DeepReplace="True" Inherit="False">
+				<li>HeadgearMechanitor</li>
+				<li>MediumHelmetsCat</li>
+			</thingCategories>
+			<stuffCategories DeepReplace="True">
+				<li>RuggedMetallic</li>
+			</stuffCategories>
+			<tradeTags DeepReplace="True">
+				<li>Armor</li>
+			</tradeTags>
+			<costStuffCount>90</costStuffCount>
+			<costList DeepReplace="True" Inherit="False">
+				<ComponentSpacer>4</ComponentSpacer>
+				<ComponentAdvanced>2</ComponentAdvanced>
+				<ElectronicComponents>1</ElectronicComponents>
+				<ReinforcedGlass>2</ReinforcedGlass>
+				<NanostructuringChip>2</NanostructuringChip>
+			</costList>
+			<statBases DeepReplace="True" Inherit="False">
+				<WorkToMake>45000</WorkToMake>
+				<MaxHitPoints>270</MaxHitPoints>
+				<Flammability>0.3</Flammability>
+				<Mass>3.0</Mass>
+				<Bulk>5</Bulk>
+				<WornBulk>7</WornBulk>
+				<EquipDelay>11</EquipDelay>
+				<Insulation_Cold>32</Insulation_Cold>
+				<Insulation_Heat>9</Insulation_Heat>
+				<StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
+				<StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
+				<StuffEffectMultiplierArmor>3.47</StuffEffectMultiplierArmor>
+				<ArmorRating_Sharp>11.1</ArmorRating_Sharp>
+				<ArmorRating_Blunt>25.96</ArmorRating_Blunt>
+				<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			</statBases>
+			<equippedStatOffsets DeepReplace="True" Inherit="False">
+				<MoveSpeed>-0.05</MoveSpeed>
+				<WorkSpeedGlobal>-0.07</WorkSpeedGlobal>
+				<MentalBreakThreshold>-0.04</MentalBreakThreshold>
+				<PsychicSensitivity>-0.2</PsychicSensitivity>
+				<MechBandwidth>12</MechBandwidth>
+				<ShootingAccuracyPawn>-0.08</ShootingAccuracyPawn>
+				<AimingDelayFactor>0.05</AimingDelayFactor>
+				<MeleeWeapon_CooldownMultiplier>0.05</MeleeWeapon_CooldownMultiplier>
+				<Suppressability>-0.2</Suppressability>
+				<ArmorRating_Toxin>0.16</ArmorRating_Toxin>
+				<GermResistance>0.3</GermResistance>
+				<GermContainment>0.3</GermContainment>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_ArmorHelmetMechlordHelmet" or defName="Apparel_ArmorHelmetMechCommander"]/apparel</xpath>
+		<value>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+		</value>
+	</Operation>
+	<!-- Redirect to ArmorSpacerBase -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Apparel_MechlordSuit"]</xpath>
+		<value>
+			<thingClass>Apparel</thingClass>
+			<thingCategories DeepReplace="True" Inherit="False">
+				<li>MediumUpperArmorCat</li>
+				<li>Setpowerarmor</li>
+			</thingCategories>
+			<recipeMaker DeepReplace="True" Inherit="False">
+				<workSpeedStat>SmithingSpeed</workSpeedStat>
+				<workSkill>Crafting</workSkill>
+				<effectWorking>Smith</effectWorking>
+				<soundWorking>Recipe_Machining</soundWorking>
+				<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+				<researchPrerequisite>HighMechtech</researchPrerequisite>
+				<recipeUsers>
+					<li>HyperTailoringBench</li>
+				</recipeUsers>
+				<skillRequirements>
+					<Crafting>16</Crafting>
+				</skillRequirements>
+			</recipeMaker>
+			<stuffCategories DeepReplace="True">
+				<li>StrongMetallic</li>
+			</stuffCategories>
+			<costStuffCount>120</costStuffCount>
+			<costList DeepReplace="True">
+				<NanostructuringChip>2</NanostructuringChip>
+				<PowerfocusChip>1</PowerfocusChip>
+				<ComponentSpacer>2</ComponentSpacer>
+				<Carbon>10</Carbon>
+				<MagneticMaterial>2</MagneticMaterial>
+				<SyntheticFibers>6</SyntheticFibers>
+				<Hexcell>2</Hexcell>
+			</costList>
+			<statBases DeepReplace="True">
+				<WorkToMake>60000</WorkToMake>
+				<MaxHitPoints>120</MaxHitPoints>
+				<Flammability>0.6</Flammability>
+				<Mass>3.5</Mass>
+				<Bulk>25</Bulk>
+				<WornBulk>10</WornBulk>
+				<EquipDelay>11</EquipDelay>
+				<Insulation_Cold>32</Insulation_Cold>
+				<Insulation_Heat>9</Insulation_Heat>
+				<StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
+				<StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
+				<StuffEffectMultiplierArmor>3.47</StuffEffectMultiplierArmor>
+				<ArmorRating_Sharp>8</ArmorRating_Sharp>
+				<ArmorRating_Blunt>15.96</ArmorRating_Blunt>
+				<ArmorRating_Heat>0.125</ArmorRating_Heat>
+			</statBases>
+			<equippedStatOffsets DeepReplace="True">
+				<CarryWeight>20</CarryWeight>
+				<CarryBulk>15</CarryBulk>
+				<MoveSpeed>-0.3</MoveSpeed>
+				<WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+				<MentalBreakThreshold>-0.04</MentalBreakThreshold>
+				<PsychicSensitivity>-0.1</PsychicSensitivity>
+				<MechBandwidth>12</MechBandwidth>
+				<ShootingAccuracyPawn>-0.08</ShootingAccuracyPawn>
+				<AimingDelayFactor>0.05</AimingDelayFactor>
+				<MeleeWeapon_CooldownMultiplier>0.05</MeleeWeapon_CooldownMultiplier>
+				<ImmunityGainSpeed>0.2</ImmunityGainSpeed>
+				<Suppressability>-0.2</Suppressability>
+				<ArmorRating_Toxin>0.16</ArmorRating_Toxin>
+				<GermResistance>0.04</GermResistance>
+				<GermContainment>0.04</GermContainment>
+			</equippedStatOffsets>
+			<tradeTags DeepReplace="True">
+				<li>Armor</li>
+			</tradeTags>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_MechlordSuit"]/apparel</xpath>
+		<value>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+				<li>Middle</li>
+			</layers>
+		</value>
+	</Operation>
+	<!-- airwire headset -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Apparel_AirwireHeadset"]</xpath>
+		<value>
+			<recipeMaker DeepReplace="True" Inherit="False">
+				<workSpeedStat>SmithingSpeed</workSpeedStat>
+				<workSkill>Crafting</workSkill>
+				<effectWorking>Smith</effectWorking>
+				<soundWorking>Recipe_Machining</soundWorking>
+				<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+				<researchPrerequisite>BasicMechtech</researchPrerequisite>
+				<skillRequirements>
+					<Crafting>9</Crafting>
+				</skillRequirements>
+				<recipeUsers>
+					<li>TableElectronics</li>
+				</recipeUsers>
+			</recipeMaker>
+			<costList DeepReplace="True">
+				<Plastic>40</Plastic>
+				<Wire>15</Wire>
+				<ReinforcedGlass>10</ReinforcedGlass>
+				<ComponentIndustrial>4</ComponentIndustrial>
+				<ElectronicComponents>2</ElectronicComponents>
+				<Electronics>1</Electronics>
+			</costList>
+			<thingCategories Inherit="False">
+				<li>HeadgearMechanitor</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<!-- array headset -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Apparel_ArrayHeadset"]</xpath>
+		<value>
+			<recipeMaker DeepReplace="True" Inherit="False">
+				<workSpeedStat>SmithingSpeed</workSpeedStat>
+				<workSkill>Crafting</workSkill>
+				<effectWorking>Smith</effectWorking>
+				<soundWorking>Recipe_Machining</soundWorking>
+				<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+				<researchPrerequisite>BasicMechtech</researchPrerequisite>
+				<skillRequirements>
+					<Crafting>13</Crafting>
+				</skillRequirements>
+				<recipeUsers>
+					<li>TableElectronics</li>
+				</recipeUsers>
+			</recipeMaker>
+			<costList DeepReplace="True">
+				<Plastic>45</Plastic>
+				<Wire>20</Wire>
+				<ReinforcedGlass>15</ReinforcedGlass>
+				<ComponentIndustrial>6</ComponentIndustrial>
+				<ElectronicComponents>4</ElectronicComponents>
+				<Electronics>2</Electronics>
+				<Microchips>2</Microchips>
+			</costList>
+			<thingCategories Inherit="False">
+				<li>HeadgearMechanitor</li>
+			</thingCategories>
+		</value>
+	</Operation>
 </Patch>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
   <!-- ========== Tribal Fire ========== -->
@@ -13,7 +13,7 @@
 				<li>NeolithicRangedBasic</li>
 			</weaponTags>
 			<modExtensions Inherit="false">
-				<li Class="CombatExtended.LoadoutPropertiesExtension" >
+				<li Class="CombatExtended.LoadoutPropertiesExtension">
 					<primaryMagazineCount>
 						<min>20</min>
 						<max>40</max>
@@ -45,7 +45,7 @@
 				<li>NeolithicRangedBasic</li>
 			</weaponTags>
 			<modExtensions Inherit="false">
-				<li Class="CombatExtended.LoadoutPropertiesExtension" >
+				<li Class="CombatExtended.LoadoutPropertiesExtension">
 					<primaryMagazineCount>
 						<min>25</min>
 						<max>50</max>
@@ -178,37 +178,29 @@
 
 	<!-- ========== Yttakin ========== -->
 	
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/PawnKindDef[defName="Drifter_Yttakin"]</xpath>
-				<value>
-					<weaponMoney>100~500</weaponMoney>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/PawnKindDef[defName="Mercenary_Heavy_Yttakin"]</xpath>
-				<value>
-					<weaponMoney>1800~2200</weaponMoney>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/PawnKindDef[defName="Mercenary_Sniper_Yttakin"]</xpath>
-				<value>
-					<weaponMoney>1200~1800</weaponMoney>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/PawnKindDef[defName="Mercenary_Elite_Yttakin"]</xpath>
-				<value>
-					<weaponMoney>2300~3600</weaponMoney>
-				</value>
-			</li>
-
-		</operations>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Drifter_Yttakin"]</xpath>
+		<value>
+			<weaponMoney>100~500</weaponMoney>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Mercenary_Heavy_Yttakin"]</xpath>
+		<value>
+			<weaponMoney>1800~2200</weaponMoney>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Mercenary_Sniper_Yttakin"]</xpath>
+		<value>
+			<weaponMoney>1200~1800</weaponMoney>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Mercenary_Elite_Yttakin"]</xpath>
+		<value>
+			<weaponMoney>2300~3600</weaponMoney>
+		</value>
 	</Operation>
 
 	<!-- ========== Pigskin ========== -->

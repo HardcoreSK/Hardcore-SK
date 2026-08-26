@@ -1,50 +1,44 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Normal</success>
-		<operations>
-			<!-- Megaspider -->
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="CocoonMegaspider"]/building/combatPower</xpath>
-				<value>
-					<combatPower>220</combatPower>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="CocoonMegaspider"]/comps/li[@Class="CompProperties_PawnSpawnOnWakeup"]/points</xpath>
-				<value>
-					<points>220</points>
-				</value>
-			</li>
-			<!-- Megascarab -->
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="CocoonMegascarab"]/building/combatPower</xpath>
-				<value>
-					<combatPower>70</combatPower>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="CocoonMegascarab"]/comps/li[@Class="CompProperties_PawnSpawnOnWakeup"]/points</xpath>
-				<value>
-					<points>70</points>
-				</value>
-			</li>
-			<!-- Spelopede -->
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="CocoonSpelopede"]/building/combatPower</xpath>
-				<value>
-					<combatPower>140</combatPower>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="CocoonSpelopede"]/comps/li[@Class="CompProperties_PawnSpawnOnWakeup"]/points</xpath>
-				<value>
-					<points>140</points>
-				</value>
-			</li>
-
-		</operations>
+	<!-- Megaspider -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CocoonMegaspider"]/building/combatPower</xpath>
+		<value>
+			<combatPower>220</combatPower>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CocoonMegaspider"]/comps/li[@Class="CompProperties_PawnSpawnOnWakeup"]/points</xpath>
+		<value>
+			<points>220</points>
+		</value>
+	</Operation>
+	<!-- Megascarab -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CocoonMegascarab"]/building/combatPower</xpath>
+		<value>
+			<combatPower>70</combatPower>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CocoonMegascarab"]/comps/li[@Class="CompProperties_PawnSpawnOnWakeup"]/points</xpath>
+		<value>
+			<points>70</points>
+		</value>
+	</Operation>
+	<!-- Spelopede -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CocoonSpelopede"]/building/combatPower</xpath>
+		<value>
+			<combatPower>140</combatPower>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CocoonSpelopede"]/comps/li[@Class="CompProperties_PawnSpawnOnWakeup"]/points</xpath>
+		<value>
+			<points>140</points>
+		</value>
 	</Operation>
 
 </Patch>

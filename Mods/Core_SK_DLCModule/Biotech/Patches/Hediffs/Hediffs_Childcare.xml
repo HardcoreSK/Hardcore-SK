@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
 	<Operation Class="PatchOperationReplace">
@@ -18,17 +18,11 @@
 	<mods>
 		<li>SeedsPlease</li>
 	</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-	
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/HediffDef[defName="Lactating"]/stages/li[fertilityFactor]</xpath>
-				<value>
-					<hungerRateFactorOffset>-0.5</hungerRateFactorOffset>
-				</value>
-			</li>
-	
-			</operations>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/HediffDef[defName="Lactating"]/stages/li[fertilityFactor]</xpath>
+			<value>
+				<hungerRateFactorOffset>-0.5</hungerRateFactorOffset>
+			</value>
 		</match>
 	</Operation>
 

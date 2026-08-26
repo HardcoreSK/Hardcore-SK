@@ -1,84 +1,47 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="ApparelShirtRoyalTier2Base" or @Name="ApparelVestRoyalTier5Base" or @Name="ApparelHatRoyalTier2Fabric" or defName= "Apparel_RobeRoyal" or defName= "Apparel_Cape" or defName= "Apparel_Beret"]/stuffCategories</xpath>
 		<value>
 			<li>HF</li>
 		</value>
 	</Operation>
-	
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="ApparelHatRoyalTier2"]/statBases</xpath>
 		<value>
-		  <StuffEffectMultiplierArmor>1.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>1.5</StuffEffectMultiplierArmor>
 		</value>
 	</Operation>
-	
 	<!-- ========== Apparel_ShirtRuffle ========== -->
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_ShirtRuffle"]/thingCategories</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_ShirtRuffle"]</xpath>
-				<value>
-					<thingCategories/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Apparel_ShirtRuffle"]/thingCategories</xpath>
-		<value>
-			<li>SetNoble</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Apparel_ShirtRuffle"]</xpath>
-		<value>
-			<statBases>
+		<value Merge="true">
+			<thingCategories Merge="true">
+				<li>SetNoble</li>
+			</thingCategories>
+
+			<statBases Merge="true">
 				<ArmorRating_Sharp>0</ArmorRating_Sharp>
 				<ArmorRating_Blunt>0</ArmorRating_Blunt>
 				<ArmorRating_Heat>0.055</ArmorRating_Heat>
 				<StuffEffectMultiplierArmor>1.55</StuffEffectMultiplierArmor>
-			</statBases>
-		</value>
+			</statBases></value>
 	</Operation>
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_ShirtRuffle"]/equippedStatOffsets</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_ShirtRuffle"]</xpath>
-				<value>
-					<equippedStatOffsets/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Apparel_ShirtRuffle"]/equippedStatOffsets</xpath>
-		<value>
-			<CarryBulk>13</CarryBulk>
-			<MoveSpeed>-0.07</MoveSpeed>
-			<WorkSpeedGlobal>-0.07</WorkSpeedGlobal>
-			<GermResistance>0.11</GermResistance>
-			<GermContainment>0.11</GermContainment>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
+
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Apparel_ShirtRuffle"]</xpath>
-		<value>
+		<value Merge="true">
+			<equippedStatOffsets Merge="true">
+				<CarryBulk>13</CarryBulk>
+				<MoveSpeed>-0.07</MoveSpeed>
+				<WorkSpeedGlobal>-0.07</WorkSpeedGlobal>
+				<GermResistance>0.11</GermResistance>
+				<GermContainment>0.11</GermContainment>
+			</equippedStatOffsets>
+
 			<techLevel>Medieval</techLevel>
-			<recipeMaker Inherit="false">
+			<recipeMaker Inherit="false" Merge="true">
 				<workSpeedStat>TailoringSpeed</workSpeedStat>
 				<workSkill>Crafting</workSkill>
 				<effectWorking>Tailor</effectWorking>
@@ -91,34 +54,21 @@
 				</skillRequirements>
 				<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 				<researchPrerequisite>NobleApparel</researchPrerequisite>
-			</recipeMaker>
+			</recipeMaker></value>
+	</Operation>
+
+
+	<!-- ========== Apparel_Corset ========== -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Apparel_Corset"]</xpath>
+		<value Merge="true">
+			<thingCategories Merge="true">
+				<li>VestsCat</li>
+				<li>SetNoble</li>
+			</thingCategories>
 		</value>
 	</Operation>
 
-	<!-- ========== Apparel_Corset ========== -->	
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_Corset"]/thingCategories</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_Corset"]</xpath>
-				<value>
-					<thingCategories/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Apparel_Corset"]/thingCategories</xpath>
-		<value>
-			<li>VestsCat</li>
-			<li>SetNoble</li>
-		</value>
-	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Apparel_Corset"]/statBases</xpath>
 		<value>
@@ -128,36 +78,19 @@
 			<StuffEffectMultiplierArmor>1.1</StuffEffectMultiplierArmor>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_Corset"]/equippedStatOffsets</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_Corset"]</xpath>
-				<value>
-					<equippedStatOffsets/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Apparel_Corset"]/equippedStatOffsets</xpath>
-		<value>
-			<CarryBulk>8</CarryBulk>
-			<MoveSpeed>-0.12</MoveSpeed>
-			<WorkSpeedGlobal>-0.12</WorkSpeedGlobal>
-			<GermResistance>0.05</GermResistance>
-			<GermContainment>0.02</GermContainment>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Apparel_Corset"]</xpath>
-		<value>
+		<value Merge="true">
+			<equippedStatOffsets Merge="true">
+				<CarryBulk>8</CarryBulk>
+				<MoveSpeed>-0.12</MoveSpeed>
+				<WorkSpeedGlobal>-0.12</WorkSpeedGlobal>
+				<GermResistance>0.05</GermResistance>
+				<GermContainment>0.02</GermContainment>
+			</equippedStatOffsets>
+
 			<techLevel>Medieval</techLevel>
-			<recipeMaker Inherit="false">
+			<recipeMaker Inherit="false" Merge="true">
 				<workSpeedStat>TailoringSpeed</workSpeedStat>
 				<workSkill>Crafting</workSkill>
 				<effectWorking>Tailor</effectWorking>
@@ -170,34 +103,21 @@
 				</skillRequirements>
 				<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 				<researchPrerequisite>NobleApparel</researchPrerequisite>
-			</recipeMaker>
-		</value>
+			</recipeMaker></value>
 	</Operation>
+
 
 	<!-- ========== Apparel_VestRoyal ========== -->
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_VestRoyal"]/thingCategories</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_VestRoyal"]</xpath>
-				<value>
-					<thingCategories/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Apparel_VestRoyal"]/thingCategories</xpath>
-		<value>
-			<li>VestsCat</li>
-			<li>SetNoble</li>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Apparel_VestRoyal"]</xpath>
+		<value Merge="true">
+			<thingCategories Merge="true">
+				<li>VestsCat</li>
+				<li>SetNoble</li>
+			</thingCategories>
 		</value>
 	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Apparel_VestRoyal"]/statBases</xpath>
 		<value>
@@ -207,36 +127,19 @@
 			<StuffEffectMultiplierArmor>1.35</StuffEffectMultiplierArmor>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_VestRoyal"]/equippedStatOffsets</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_VestRoyal"]</xpath>
-				<value>
-					<equippedStatOffsets/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Apparel_VestRoyal"]/equippedStatOffsets</xpath>
-		<value>
-			<CarryBulk>12</CarryBulk>
-			<MoveSpeed>-0.07</MoveSpeed>
-			<WorkSpeedGlobal>-0.04</WorkSpeedGlobal>
-			<GermResistance>0.05</GermResistance>
-			<GermContainment>0.02</GermContainment>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Apparel_VestRoyal"]</xpath>
-		<value>
+		<value Merge="true">
+			<equippedStatOffsets Merge="true">
+				<CarryBulk>12</CarryBulk>
+				<MoveSpeed>-0.07</MoveSpeed>
+				<WorkSpeedGlobal>-0.04</WorkSpeedGlobal>
+				<GermResistance>0.05</GermResistance>
+				<GermContainment>0.02</GermContainment>
+			</equippedStatOffsets>
+
 			<techLevel>Medieval</techLevel>
-			<recipeMaker Inherit="false">
+			<recipeMaker Inherit="false" Merge="true">
 				<workSpeedStat>TailoringSpeed</workSpeedStat>
 				<workSkill>Crafting</workSkill>
 				<effectWorking>Tailor</effectWorking>
@@ -249,12 +152,11 @@
 				</skillRequirements>
 				<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 				<researchPrerequisite>NobleApparel</researchPrerequisite>
-			</recipeMaker>
-		</value>
+			</recipeMaker></value>
 	</Operation>
 
-	<!-- ========== Apparel_RobeRoyal ========== -->
 
+	<!-- ========== Apparel_RobeRoyal ========== -->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Apparel_RobeRoyal"]/thingCategories</xpath>
 		<value>
@@ -275,42 +177,26 @@
 			<StuffEffectMultiplierArmor>1.4</StuffEffectMultiplierArmor>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_RobeRoyal"]/equippedStatOffsets</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_RobeRoyal"]</xpath>
-				<value>
-					<equippedStatOffsets/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Apparel_RobeRoyal"]/equippedStatOffsets</xpath>
-		<value>
-			<CarryBulk>10</CarryBulk>
-			<MoveSpeed>-0.12</MoveSpeed>
-			<WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
-			<SocialImpact>0.12</SocialImpact>
-			<ShootingAccuracyPawn>-0.07</ShootingAccuracyPawn>
-			<AimingDelayFactor>0.11</AimingDelayFactor>
-			<MeleeHitChance>-0.15</MeleeHitChance>
-			<MeleeWeapon_CooldownMultiplier>0.13</MeleeWeapon_CooldownMultiplier>
-			<GermResistance>0.03</GermResistance>
-			<GermContainment>0.04</GermContainment>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Apparel_RobeRoyal"]</xpath>
-		<value>
-			<techLevel>Medieval</techLevel>
-		</value>
+		<value Merge="true">
+			<equippedStatOffsets Merge="true">
+				<CarryBulk>10</CarryBulk>
+				<MoveSpeed>-0.12</MoveSpeed>
+				<WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+				<SocialImpact>0.12</SocialImpact>
+				<ShootingAccuracyPawn>-0.07</ShootingAccuracyPawn>
+				<AimingDelayFactor>0.11</AimingDelayFactor>
+				<MeleeHitChance>-0.15</MeleeHitChance>
+				<MeleeWeapon_CooldownMultiplier>0.13</MeleeWeapon_CooldownMultiplier>
+				<GermResistance>0.03</GermResistance>
+				<GermContainment>0.04</GermContainment>
+			</equippedStatOffsets>
+
+			<techLevel>Medieval</techLevel></value>
 	</Operation>
+
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Apparel_RobeRoyal"]/recipeMaker</xpath>
 		<value>
@@ -330,67 +216,32 @@
 			</recipeMaker>
 		</value>
 	</Operation>
-
-	<!-- ========== Apparel_HatLadies ========== -->	
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_HatLadies"]/thingCategories</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_HatLadies"]</xpath>
-				<value>
-					<thingCategories/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Apparel_HatLadies"]/thingCategories</xpath>
-		<value>
-			<li>SetNoble</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
+	<!-- ========== Apparel_HatLadies ========== -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Apparel_HatLadies"]</xpath>
-		<value>
-			<statBases>
+		<value Merge="true">
+			<thingCategories Merge="true">
+				<li>SetNoble</li>
+			</thingCategories>
+
+			<statBases Merge="true">
 				<StuffEffectMultiplierArmor>0.43</StuffEffectMultiplierArmor>
-			</statBases>			
-		</value>
+			</statBases></value>
 	</Operation>
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_HatLadies"]/equippedStatOffsets</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_HatLadies"]</xpath>
-				<value>
-					<equippedStatOffsets/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Apparel_HatLadies"]/equippedStatOffsets</xpath>
-		<value>
-			<MoveSpeed>-0.01</MoveSpeed>
-			<GlobalLearningFactor>0.02</GlobalLearningFactor>
-			<TradePriceImprovement>0.07</TradePriceImprovement>
-			<SocialImpact>0.22</SocialImpact>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
+
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Apparel_HatLadies"]</xpath>
-		<value>
+		<value Merge="true">
+			<equippedStatOffsets Merge="true">
+				<MoveSpeed>-0.01</MoveSpeed>
+				<GlobalLearningFactor>0.02</GlobalLearningFactor>
+				<TradePriceImprovement>0.07</TradePriceImprovement>
+				<SocialImpact>0.22</SocialImpact>
+			</equippedStatOffsets>
+
 			<techLevel>Medieval</techLevel>
-			<recipeMaker Inherit="false">
+			<recipeMaker Inherit="false" Merge="true">
 				<workSpeedStat>TailoringSpeed</workSpeedStat>
 				<workSkill>Crafting</workSkill>
 				<effectWorking>Tailor</effectWorking>
@@ -403,70 +254,36 @@
 				</skillRequirements>
 				<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 				<researchPrerequisite>NobleApparel</researchPrerequisite>
-			</recipeMaker>
-		</value>
+			</recipeMaker></value>
 	</Operation>
 
-	<!-- ========== Apparel_HatTop ========== -->	
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_HatTop"]/thingCategories</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_HatTop"]</xpath>
-				<value>
-					<thingCategories/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Apparel_HatTop"]/thingCategories</xpath>
-		<value>
-			<li>SetNoble</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
+	<!-- ========== Apparel_HatTop ========== -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Apparel_HatTop"]</xpath>
-		<value>
-			<statBases>
+		<value Merge="true">
+			<thingCategories Merge="true">
+				<li>SetNoble</li>
+			</thingCategories>
+
+			<statBases Merge="true">
 				<StuffEffectMultiplierArmor>0.43</StuffEffectMultiplierArmor>
-			</statBases>			
-		</value>
+			</statBases></value>
 	</Operation>
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_HatTop"]/equippedStatOffsets</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_HatTop"]</xpath>
-				<value>
-					<equippedStatOffsets/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Apparel_HatTop"]/equippedStatOffsets</xpath>
-		<value>
-			<MoveSpeed>-0.01</MoveSpeed>
-			<GlobalLearningFactor>0.02</GlobalLearningFactor>
-			<TradePriceImprovement>0.07</TradePriceImprovement>
-			<SocialImpact>0.22</SocialImpact>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
+
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Apparel_HatTop"]</xpath>
-		<value>
+		<value Merge="true">
+			<equippedStatOffsets Merge="true">
+				<MoveSpeed>-0.01</MoveSpeed>
+				<GlobalLearningFactor>0.02</GlobalLearningFactor>
+				<TradePriceImprovement>0.07</TradePriceImprovement>
+				<SocialImpact>0.22</SocialImpact>
+			</equippedStatOffsets>
+
 			<techLevel>Medieval</techLevel>
-			<recipeMaker Inherit="false">
+			<recipeMaker Inherit="false" Merge="true">
 				<workSpeedStat>TailoringSpeed</workSpeedStat>
 				<workSkill>Crafting</workSkill>
 				<effectWorking>Tailor</effectWorking>
@@ -479,12 +296,11 @@
 				</skillRequirements>
 				<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 				<researchPrerequisite>NobleApparel</researchPrerequisite>
-			</recipeMaker>
-		</value>
+			</recipeMaker></value>
 	</Operation>
 
-	<!-- ========== Apparel_Coronet ========== -->	
 
+	<!-- ========== Apparel_Coronet ========== -->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Apparel_Coronet"]/thingCategories</xpath>
 		<value>
@@ -494,54 +310,33 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Apparel_Coronet"]/statBases</xpath>
 		<value>
-			<StuffEffectMultiplierArmor>1.35</StuffEffectMultiplierArmor>		
+			<StuffEffectMultiplierArmor>1.35</StuffEffectMultiplierArmor>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Apparel_Coronet"]/equippedStatOffsets</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_Coronet"]</xpath>
-				<value>
-					<equippedStatOffsets/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Apparel_Coronet"]/equippedStatOffsets</xpath>
-		<value>
-			<MoveSpeed>-0.02</MoveSpeed>
-			<GlobalLearningFactor>0.04</GlobalLearningFactor>
-			<TradePriceImprovement>0.11</TradePriceImprovement>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Apparel_Coronet"]</xpath>
+		<value Merge="true">
+			<equippedStatOffsets Merge="true">
+				<MoveSpeed>-0.02</MoveSpeed>
+				<GlobalLearningFactor>0.04</GlobalLearningFactor>
+				<TradePriceImprovement>0.11</TradePriceImprovement>
+			</equippedStatOffsets>
 		</value>
 	</Operation>
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Apparel_Coronet"]/equippedStatOffsets/SocialImpact</xpath>
 		<value>
 			<SocialImpact>0.27</SocialImpact>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="Apparel_Coronet"]/stuffCategories</xpath>
-				<success>Normal</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_Coronet"]</xpath>
-				<value>
-					<stuffCategories>
-						<li>Precious</li>
-					</stuffCategories>					
-				</value>
-			</li>
-		</operations>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Apparel_Coronet"]</xpath>
+		<value Merge="true">
+			<stuffCategories DeepReplace="true">
+				<li>Precious</li>
+			</stuffCategories>
+		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/ThingDef[defName="Apparel_Coronet"]/recipeMaker/defaultIngredientFilter</xpath>
@@ -552,10 +347,7 @@
 			<costStuffCount>35</costStuffCount>
 		</value>
 	</Operation>
-
-
-	<!-- ========== Apparel_Crown ========== -->	
-
+	<!-- ========== Apparel_Crown ========== -->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Apparel_Crown"]/thingCategories</xpath>
 		<value>
@@ -565,7 +357,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Apparel_Crown"]/statBases</xpath>
 		<value>
-			<StuffEffectMultiplierArmor>1.25</StuffEffectMultiplierArmor>		
+			<StuffEffectMultiplierArmor>1.25</StuffEffectMultiplierArmor>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
@@ -582,22 +374,13 @@
 			<SocialImpact>0.3</SocialImpact>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="Apparel_Crown"]/stuffCategories</xpath>
-				<success>Normal</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_Crown"]</xpath>
-				<value>
-					<stuffCategories>
-						<li>Precious</li>
-					</stuffCategories>					
-				</value>
-			</li>
-		</operations>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Apparel_Crown"]</xpath>
+		<value Merge="true">
+			<stuffCategories DeepReplace="true">
+				<li>Precious</li>
+			</stuffCategories>
+		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/ThingDef[defName="Apparel_Crown"]/recipeMaker/defaultIngredientFilter</xpath>
@@ -608,10 +391,7 @@
 			<costStuffCount>50</costStuffCount>
 		</value>
 	</Operation>
-
-
-	<!-- ========== Apparel_CrownStellic ========== -->	
-
+	<!-- ========== Apparel_CrownStellic ========== -->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Apparel_CrownStellic"]/thingCategories</xpath>
 		<value>
@@ -621,7 +401,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Apparel_CrownStellic"]/statBases</xpath>
 		<value>
-			<StuffEffectMultiplierArmor>1.31</StuffEffectMultiplierArmor>		
+			<StuffEffectMultiplierArmor>1.31</StuffEffectMultiplierArmor>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
@@ -638,22 +418,13 @@
 			<SocialImpact>0.35</SocialImpact>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="Apparel_CrownStellic"]/stuffCategories</xpath>
-				<success>Normal</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_CrownStellic"]</xpath>
-				<value>
-					<stuffCategories>
-						<li>Precious</li>
-					</stuffCategories>					
-				</value>
-			</li>
-		</operations>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Apparel_CrownStellic"]</xpath>
+		<value Merge="true">
+			<stuffCategories DeepReplace="true">
+				<li>Precious</li>
+			</stuffCategories>
+		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Apparel_CrownStellic"]/costStuffCount</xpath>
@@ -661,9 +432,7 @@
 			<costStuffCount>60</costStuffCount>
 		</value>
 	</Operation>
-
 	<!-- ========== Apparel_Beret ========== -->
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Apparel_Beret"]/thingCategories</xpath>
 		<value>
@@ -673,7 +442,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Apparel_Beret"]/statBases</xpath>
 		<value>
-			<StuffEffectMultiplierArmor>0.42</StuffEffectMultiplierArmor>	
+			<StuffEffectMultiplierArmor>0.42</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>0</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0</ArmorRating_Blunt>
 			<ArmorRating_Heat>0</ArmorRating_Heat>
@@ -707,5 +476,4 @@
 			</recipeMaker>
 		</value>
 	</Operation>
-
 </Patch>

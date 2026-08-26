@@ -1,96 +1,92 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <Operation Class="PatchOperationSequence">
-        <operations>
-            <!-- control pack -->
-            <li Class="SK.PatchOperationReplaceExtended">
-                <xpath>Defs/ThingDef[defName="Apparel_PackControl"]</xpath>
-                <value>
-                    <stuffCategories>
-                        <li>StrongMetallic</li>
-                    </stuffCategories>
-                    <costStuffCount>100</costStuffCount>
-                    <costList DeepReplace="True">
-                        <Wire>20</Wire>
-                        <ComponentIndustrial>4</ComponentIndustrial>
-                        <ElectronicComponents>2</ElectronicComponents>
-                        <Electronics>1</Electronics>
-                    </costList>
-                    <recipeMaker DeepReplace="True" Inherit="False">
-                        <workSpeedStat>SmithingSpeed</workSpeedStat>
-                        <workSkill>Crafting</workSkill>
-                        <effectWorking>Smith</effectWorking>
-                        <soundWorking>Recipe_Machining</soundWorking>
-                        <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
-                        <researchPrerequisite>BasicMechtech</researchPrerequisite>
-                        <skillRequirements>
-                            <Crafting>10</Crafting>
-                        </skillRequirements>
-                        <recipeUsers>
-                            <li>TableElectronics</li>
-                        </recipeUsers>
-                    </recipeMaker>
-                </value>
-            </li>
-            <!-- bandwidth pack -->
-            <li Class="SK.PatchOperationReplaceExtended">
-                <xpath>Defs/ThingDef[defName="Apparel_PackBandwidth"]</xpath>
-                <value>
-                    <stuffCategories>
-                        <li>StrongMetallic</li>
-                    </stuffCategories>
-                    <costStuffCount>50</costStuffCount>
-                    <costList DeepReplace="True">
-                        <SignalChip>2</SignalChip>
-                        <ComponentIndustrial>6</ComponentIndustrial>
-                        <ElectronicComponents>3</ElectronicComponents>
-                        <Electronics>2</Electronics>
-                    </costList>
-                    <recipeMaker DeepReplace="True" Inherit="False">
-                        <workSpeedStat>SmithingSpeed</workSpeedStat>
-                        <workSkill>Crafting</workSkill>
-                        <effectWorking>Smith</effectWorking>
-                        <soundWorking>Recipe_Machining</soundWorking>
-                        <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
-                        <researchPrerequisite>StandardMechtech</researchPrerequisite>
-                        <skillRequirements>
-                            <Crafting>14</Crafting>
-                        </skillRequirements>
-                        <recipeUsers>
-                            <li>TableElectronics</li>
-                        </recipeUsers>
-                    </recipeMaker>
-                </value>
-            </li>
-            <!-- tox pack -->
-            <li Class="SK.PatchOperationReplaceExtended">
-                <xpath>Defs/ThingDef[defName="Apparel_PackTox"]</xpath>
-                <value>
-                    <stuffCategories>
-                        <li>StrongMetallic</li>
-                    </stuffCategories>
-                    <costStuffCount>25</costStuffCount>
-                    <costList DeepReplace="True">
-                        <ComponentIndustrial>1</ComponentIndustrial>
-                        <Mechanism>1</Mechanism>
-                        <Chemfuel>35</Chemfuel>
-                    </costList>
-                    <recipeMaker DeepReplace="True" Inherit="False">
-                        <workSpeedStat>SmithingSpeed</workSpeedStat>
-                        <workSkill>Crafting</workSkill>
-                        <effectWorking>Smith</effectWorking>
-                        <soundWorking>Recipe_Machining</soundWorking>
-                        <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
-                        <researchPrerequisite>ToxGas</researchPrerequisite>
-                        <skillRequirements>
-                            <Crafting>5</Crafting>
-                        </skillRequirements>
-                        <recipeUsers>
-                            <li>TableElectronics</li>
-                        </recipeUsers>
-                    </recipeMaker>
-                </value>
-            </li>
-        </operations>
+    <!-- control pack -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Apparel_PackControl"]</xpath>
+        <value>
+            <stuffCategories>
+                <li>StrongMetallic</li>
+            </stuffCategories>
+            <costStuffCount>100</costStuffCount>
+            <costList DeepReplace="True">
+                <Wire>20</Wire>
+                <ComponentIndustrial>4</ComponentIndustrial>
+                <ElectronicComponents>2</ElectronicComponents>
+                <Electronics>1</Electronics>
+            </costList>
+            <recipeMaker DeepReplace="True" Inherit="False">
+                <workSpeedStat>SmithingSpeed</workSpeedStat>
+                <workSkill>Crafting</workSkill>
+                <effectWorking>Smith</effectWorking>
+                <soundWorking>Recipe_Machining</soundWorking>
+                <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+                <researchPrerequisite>BasicMechtech</researchPrerequisite>
+                <skillRequirements>
+                    <Crafting>10</Crafting>
+                </skillRequirements>
+                <recipeUsers>
+                    <li>TableElectronics</li>
+                </recipeUsers>
+            </recipeMaker>
+        </value>
+    </Operation>
+    <!-- bandwidth pack -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Apparel_PackBandwidth"]</xpath>
+        <value>
+            <stuffCategories>
+                <li>StrongMetallic</li>
+            </stuffCategories>
+            <costStuffCount>50</costStuffCount>
+            <costList DeepReplace="True">
+                <SignalChip>2</SignalChip>
+                <ComponentIndustrial>6</ComponentIndustrial>
+                <ElectronicComponents>3</ElectronicComponents>
+                <Electronics>2</Electronics>
+            </costList>
+            <recipeMaker DeepReplace="True" Inherit="False">
+                <workSpeedStat>SmithingSpeed</workSpeedStat>
+                <workSkill>Crafting</workSkill>
+                <effectWorking>Smith</effectWorking>
+                <soundWorking>Recipe_Machining</soundWorking>
+                <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+                <researchPrerequisite>StandardMechtech</researchPrerequisite>
+                <skillRequirements>
+                    <Crafting>14</Crafting>
+                </skillRequirements>
+                <recipeUsers>
+                    <li>TableElectronics</li>
+                </recipeUsers>
+            </recipeMaker>
+        </value>
+    </Operation>
+    <!-- tox pack -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Apparel_PackTox"]</xpath>
+        <value>
+            <stuffCategories>
+                <li>StrongMetallic</li>
+            </stuffCategories>
+            <costStuffCount>25</costStuffCount>
+            <costList DeepReplace="True">
+                <ComponentIndustrial>1</ComponentIndustrial>
+                <Mechanism>1</Mechanism>
+                <Chemfuel>35</Chemfuel>
+            </costList>
+            <recipeMaker DeepReplace="True" Inherit="False">
+                <workSpeedStat>SmithingSpeed</workSpeedStat>
+                <workSkill>Crafting</workSkill>
+                <effectWorking>Smith</effectWorking>
+                <soundWorking>Recipe_Machining</soundWorking>
+                <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+                <researchPrerequisite>ToxGas</researchPrerequisite>
+                <skillRequirements>
+                    <Crafting>5</Crafting>
+                </skillRequirements>
+                <recipeUsers>
+                    <li>TableElectronics</li>
+                </recipeUsers>
+            </recipeMaker>
+        </value>
     </Operation>
 </Patch>

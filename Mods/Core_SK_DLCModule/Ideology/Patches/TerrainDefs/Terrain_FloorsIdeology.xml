@@ -1,71 +1,61 @@
-﻿<Patch>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
 	<!-- Ideology floor bases patches -->
-	<Operation Class="PatchOperationSequence">
-		<success>Normal</success>
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/TerrainDef[@Name="IdeoStoneTileBase"]/statBases/Beauty</xpath>
-				<value>
-					<Beauty>6</Beauty>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/TerrainDef[@Name="IdeoCarpetBase"]/statBases/Beauty</xpath>
-				<value>
-					<Beauty>8</Beauty>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef[@Name="IdeoStoneTileBase"]/statBases/Beauty</xpath>
+		<value>
+			<Beauty>6</Beauty>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef[@Name="IdeoCarpetBase"]/statBases/Beauty</xpath>
+		<value>
+			<Beauty>8</Beauty>
+		</value>
 	</Operation>
 	<!-- Ideology styles floor patches -->
-	<Operation Class="PatchOperationSequence">
-		<success>Normal</success>
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/TerrainDef[defName="Plates_Spikecore"]/statBases/Beauty</xpath>
-				<value>
-					<Beauty>6</Beauty>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/TerrainDef[defName="Plates_Spikecore"]/costList/Steel</xpath>
-				<value>
-					<Steel>12</Steel>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/TerrainDef[defName="Boards_Totemic"]/statBases/Beauty</xpath>
-				<value>
-					<Beauty>6</Beauty>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/TerrainDef[defName="Boards_Totemic"]/costList/WoodLog</xpath>
-				<value>
-					<WoodPlank>20</WoodPlank>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/TerrainDef[defName="Tile_Transhumanist"]/statBases/Beauty</xpath>
-				<value>
-					<Beauty>6</Beauty>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/TerrainDef[defName="Tile_Transhumanist"]/costList/Steel</xpath>
-				<value>
-					<Steel>12</Steel>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/TerrainDef[defName="Tile_Transhumanist"]</xpath>
-				<value>
-					<researchPrerequisites>
-						<li>Metal_floor_B1</li>
-					</researchPrerequisites>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef[defName="Plates_Spikecore"]/statBases/Beauty</xpath>
+		<value>
+			<Beauty>6</Beauty>
+		</value>
 	</Operation>
-
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef[defName="Plates_Spikecore"]/costList/Steel</xpath>
+		<value>
+			<Steel>12</Steel>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef[defName="Boards_Totemic"]/statBases/Beauty</xpath>
+		<value>
+			<Beauty>6</Beauty>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef[defName="Boards_Totemic"]/costList/WoodLog</xpath>
+		<value>
+			<WoodPlank>20</WoodPlank>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef[defName="Tile_Transhumanist"]/statBases/Beauty</xpath>
+		<value>
+			<Beauty>6</Beauty>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef[defName="Tile_Transhumanist"]/costList/Steel</xpath>
+		<value>
+			<Steel>12</Steel>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="Tile_Transhumanist"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Metal_floor_B1</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
 </Patch>
