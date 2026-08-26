@@ -21,7 +21,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/QuestScriptDef[defName = "BuildMonumentWorker"]/root/nodes/li[12]/node/nodes/li[@Class= "QuestNode_Signal"]/node/nodes/li[@Class= "QuestNode_SetAndRestore"]/value</xpath>
+		<xpath>Defs/QuestScriptDef[defName="BuildMonumentWorker"]/root//li[@Class="QuestNode_SetAndRestore"][name="points"]/value</xpath>
 		<value>
 			<value>$($pointsOriginal * 0.7)</value> <!-- vanilla value is 1.75 -->
 		</value>

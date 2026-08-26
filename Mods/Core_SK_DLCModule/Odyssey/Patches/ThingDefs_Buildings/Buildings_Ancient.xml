@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "AncientSmallContainer"]</xpath>
+		<value>
+			<costList>
+				<Iron>33</Iron>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "AncientMediumContainer"]</xpath>
+		<value>
+			<costList>
+				<Iron>66</Iron>
+			</costList>
+		</value>
+	</Operation>
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientBarrierLong" or defName="AncientMilitaryBarrier"]</xpath>
 		<value>
@@ -10,8 +26,8 @@
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientMiningCharge"]</xpath>
 		<value>
 			<costList>
@@ -20,8 +36,8 @@
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientExplosivesCrate"]</xpath>
 		<value>
 			<costList>
@@ -30,18 +46,18 @@
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientDrillPlatform"]</xpath>
 		<value>
 			<costList>
 				<Steel>70</Steel>
-        <Mechanism>4</Mechanism>
+				<Mechanism>4</Mechanism>
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="RubblePile"]</xpath>
 		<value>
 			<costList>
@@ -49,165 +65,165 @@
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientExcavator"]</xpath>
 		<value>
 			<costList>
-        <Steel>30</Steel>
-        <AluminiumBar>6</AluminiumBar>
-        <Wire>8</Wire>
-        <Rubber>10</Rubber>
-        <Glass>16</Glass>
+				<Steel>30</Steel>
+				<AluminiumBar>6</AluminiumBar>
+				<Wire>8</Wire>
+				<Rubber>10</Rubber>
+				<Glass>16</Glass>
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientChemtruck"]</xpath>
 		<value>
 			<costList>
-        <Steel>24</Steel>
-        <AluminiumBar>6</AluminiumBar>
-        <Wire>8</Wire>
-        <Rubber>10</Rubber>
-        <Glass>16</Glass>
+				<Steel>24</Steel>
+				<AluminiumBar>6</AluminiumBar>
+				<Wire>8</Wire>
+				<Rubber>10</Rubber>
+				<Glass>16</Glass>
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientTunnelerClaw"]</xpath>
 		<value>
 			<costList>
-        <Steel>20</Steel>
-        <Titanium>6</Titanium>
+				<Steel>20</Steel>
+				<Titanium>6</Titanium>
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientTunnelerHusk"]</xpath>
 		<value>
 			<costList>
-        <Steel>26</Steel>
-        <Titanium>8</Titanium>
+				<Steel>26</Steel>
+				<Titanium>8</Titanium>
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientWindTurbineBody"]</xpath>
 		<value>
 			<costList>
-        <Steel>20</Steel>
-        <Mechanism>4</Mechanism>
+				<Steel>20</Steel>
+				<Mechanism>4</Mechanism>
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientChembarrel"]</xpath>
 		<value>
 			<costList>
-        <Steel>8</Steel>
+				<Steel>8</Steel>
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientChembarrelPallet"]</xpath>
 		<value>
 			<costList>
-        <Steel>20</Steel>
+				<Steel>20</Steel>
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientPipe"]</xpath>
 		<value>
 			<costList>
-        <Steel>4</Steel>
+				<Steel>4</Steel>
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientArmchair"]</xpath>
 		<value>
 			<costList>
-        <ComponentMedieval>4</ComponentMedieval>
+				<ComponentMedieval>4</ComponentMedieval>
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientPlantPot"]</xpath>
 		<value>
 			<costList>
-        <Ceramics>4</Ceramics>
+				<Ceramics>4</Ceramics>
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientTV"]</xpath>
 		<value>
 			<costList>
-        <Plastic>8</Plastic>
-        <ComponentIndustrial>4</ComponentIndustrial>
-        <ElectronicComponents>1</ElectronicComponents>
-        <Wire>4</Wire>
+				<Plastic>8</Plastic>
+				<ComponentIndustrial>4</ComponentIndustrial>
+				<ElectronicComponents>1</ElectronicComponents>
+				<Wire>4</Wire>
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientBathtub"]</xpath>
 		<value>
 			<costList>
-        <Steel>10</Steel>
+				<Steel>10</Steel>
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientShower"]</xpath>
 		<value>
 			<costList>
-        <Steel>4</Steel>
-        <Ceramics>6</Ceramics>
+				<Steel>4</Steel>
+				<Ceramics>6</Ceramics>
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientFilingCabinet"]</xpath>
 		<value>
 			<costList>
-        <Steel>4</Steel>
+				<Steel>4</Steel>
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientColdStorage"]</xpath>
 		<value>
 			<costList>
-        <Steel>12</Steel>
-        <ComponentIndustrial>4</ComponentIndustrial>
-        <ElectronicComponents>1</ElectronicComponents>
-        <Wire>4</Wire>
+				<Steel>12</Steel>
+				<ComponentIndustrial>4</ComponentIndustrial>
+				<ElectronicComponents>1</ElectronicComponents>
+				<Wire>4</Wire>
 			</costList>
 		</value>
 	</Operation>
-  
-  <Operation Class="SK.PatchOperationReplaceExtended">
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="AncientLockers"]</xpath>
 		<value>
 			<costList>
-        <Steel>6</Steel>
+				<Steel>6</Steel>
 			</costList>
 		</value>
 	</Operation>

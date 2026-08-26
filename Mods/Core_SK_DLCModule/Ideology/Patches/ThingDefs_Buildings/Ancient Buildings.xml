@@ -640,14 +640,14 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName = "AncientContainer"]</xpath>
+		<xpath>Defs/ThingDef[defName = "AncientLargeContainer"]</xpath>
 		<value>
 			<costList>
-				<Steel>33</Steel>
+				<Iron>99</Iron>
 			</costList>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
+<!-- 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName = "AncientMechanoidShell"]</xpath>
 		<value>
 			<costList>
@@ -662,7 +662,7 @@
 				<NitinolAlloy>5</NitinolAlloy>
 			</costList>
 		</value>
-	</Operation>
+	</Operation> -->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName = "AncientMechDropBeacon"]</xpath>
 		<value>

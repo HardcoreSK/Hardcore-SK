@@ -3,9 +3,25 @@
 	<!-- Remove unused leather from the game -->
 	
 	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="GuineaPig"]</xpath>
+		<value Merge="true">
+			<race Merge="true">
+				<leatherDef>Leather_Light</leatherDef>
+			</race>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Alpaca"]</xpath>
+		<value Merge="true">
+			<race Merge="true">
+				<leatherDef>Leather_Plain</leatherDef>
+			</race>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[@Name="BaseBear" or defName="Dromedary"]</xpath>
-		<value>
-			<race>
+		<value Merge="true">
+			<race Merge="true">
 				<leatherDef>Leather_Heavy</leatherDef>
 			</race>
 		</value>

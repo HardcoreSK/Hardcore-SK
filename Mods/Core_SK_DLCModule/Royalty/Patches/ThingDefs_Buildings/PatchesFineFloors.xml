@@ -7,7 +7,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/TerrainDef[@Name="CarpetFineBase"]/statBases/Beauty</xpath>
+		<xpath>Defs/TerrainTemplateDef[defName="CarpetFine"]/statBases/Beauty</xpath>
 		<value>
 			<Beauty>8</Beauty>
 		</value>

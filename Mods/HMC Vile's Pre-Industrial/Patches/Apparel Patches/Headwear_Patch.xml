@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
+  <!-- Apparel_Kufiya was removed; keep the old compatibility patch for reference.
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="Apparel_Kufiya"]/recipeMaker/researchPrerequisite</xpath>
     <value>
       <researchPrerequisite>Apparel_A2</researchPrerequisite>
     </value>
   </Operation>
+  -->
 
 </Patch>
