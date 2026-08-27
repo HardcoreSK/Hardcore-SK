@@ -661,6 +661,9 @@
 		<descriptionHyperlinks>
 			<ThingDef>GTLung</ThingDef>
 		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="CombatExtended.SmokeInhalationImmuneExtension" />
+		</modExtensions>
 		<addedPartProps>			
 			<solid>true</solid>
 			<partEfficiency>1.25</partEfficiency>

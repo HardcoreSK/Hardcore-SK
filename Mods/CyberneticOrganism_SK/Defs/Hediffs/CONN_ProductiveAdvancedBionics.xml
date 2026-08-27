@@ -32,6 +32,9 @@
 		<descriptionHyperlinks>
 			<ThingDef>CONN_EnergeticLung</ThingDef>
 		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="CombatExtended.SmokeInhalationImmuneExtension" />
+		</modExtensions>
 	</HediffDef>
 
 	<ThingDef ParentName="ProductiveAdvancedBionicsBase">

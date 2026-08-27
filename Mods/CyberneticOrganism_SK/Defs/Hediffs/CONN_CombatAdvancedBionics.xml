@@ -529,6 +529,9 @@
 		<descriptionHyperlinks>
 			<ThingDef>CONN_Shadowrunner</ThingDef>
 		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="CombatExtended.SmokeInhalationImmuneExtension" />
+		</modExtensions>
 		<comps>
 			<!-- <li Class="CONN.HediffCompProperties_SmokepopDefense">
 				<rechargeTime>6</rechargeTime>
