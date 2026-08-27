@@ -93,6 +93,7 @@
 				</primaryMagazineCount>
 			</li>
 		</modExtensions>
+		<useFactionXenotypes>false</useFactionXenotypes>
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
 			<Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.03</Sanguophage>
@@ -401,6 +402,7 @@
 		</weaponTags>
 		<initialWillRange>2~4</initialWillRange>
 		<initialResistanceRange>13~19</initialResistanceRange>
+		<useFactionXenotypes>false</useFactionXenotypes>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<sidearms>
