@@ -1,0 +1,8 @@
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name = "TreeBase"]/plant/mustBeWildToSow</xpath>
+			<value>
+				<mustBeWildToSow>false</mustBeWildToSow>
+			</value>
+    </Operation>
+</Patch>
