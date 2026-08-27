@@ -89,11 +89,27 @@
 			<li>StandingLampLEDsmall</li>
 			<li>StandingLampLEDnormal</li>
 			<li>StandingLampLEDlarge</li>
-			<li>CeilingLEDLamp</li>
 		</defNames>
 		<designationCategory>Accessories</designationCategory>
 		<debug>false</debug>
 		<order>30</order>
+		<types>
+			<li>Lights</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+		<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_CeilingLEDLamps</defName>
+		<label>ceiling LED lamps</label>
+		<description>LED lamp that lights an area.</description>
+		<defNames>
+			<li>CeilingLEDLampSmall</li>
+			<li>CeilingLEDLamp</li>
+			<li>CeilingLEDLampLarge</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+		<order>31</order>
 		<types>
 			<li>Lights</li>
 		</types>
