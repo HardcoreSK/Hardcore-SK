@@ -269,9 +269,9 @@
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="SK_StandingLampLED">
-		<defName>CeilingLEDLamp</defName>
-		<label>ceiling LED lamp</label>
+	<!-- ======================== Ceiling LED Lighting ======================= -->
+
+	<ThingDef Abstract="True" Name="CeilingLEDLampBase" ParentName="SK_StandingLampLED">
 		<thingClass>SK.Building_Lamp</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Furniture/Lights/CeilingLamp</texPath>
@@ -283,22 +283,7 @@
 			<shaderType>Transparent</shaderType>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<statBases>
-			<MaxHitPoints>35</MaxHitPoints>
-			<WorkToBuild>360</WorkToBuild>
-			<Beauty>10</Beauty>
-			<Bulk>7</Bulk>
-			<Mass>2</Mass>
-		</statBases>
 		<tickerType>Rare</tickerType>
-		<description>A ceiling LED lamp that lights an area. People need light to move and work at full speed. Must be placed under a roof. Requires 10 W.</description>
-		<costList>
-			<Plastic>10</Plastic>
-			<Glass>7</Glass>
-			<ComponentIndustrial>3</ComponentIndustrial>
-			<ElectronicComponents>2</ElectronicComponents>
-			<Electronics>1</Electronics>
-		</costList>
 		<building>
 			<uninstallWork>800</uninstallWork>
 			<isEdifice>false</isEdifice>
@@ -307,18 +292,8 @@
 		<clearBuildingArea>false</clearBuildingArea>
 		<comps>
 			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>10</basePowerConsumption>
-				<shortCircuitInRain>true</shortCircuitInRain>
-				<soundPowerOn>Power_OnSmall</soundPowerOn>
-				<soundPowerOff>Power_OffSmall</soundPowerOff>
-			</li>
-			<li Class="CompProperties_Glower">
-				<glowRadius>9</glowRadius>
-				<glowColor>(217,217,208,0)</glowColor>
-				<colorPickerEnabled>true</colorPickerEnabled>
-				<darklightToggle>true</darklightToggle>
+			<li Class="SK.CompProperties_ColoredLight">
+				<compClass>SK.CompColoredLight</compClass>
 			</li>
 			<li Class="SK.CompProperties_RestrictedPlacement">
 				<compClass>SK.CompRestrictedPlacement</compClass>
@@ -330,7 +305,108 @@
 		<filthLeaving>Filth_BrokenGlass</filthLeaving>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<rotatable>false</rotatable>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
+
+	<ThingDef ParentName="CeilingLEDLampBase">
+		<defName>CeilingLEDLampSmall</defName>
+		<label>ceiling LED lamp (small)</label>
+		<description>A ceiling LED lamp that lights a small area. People need light to move and work at full speed. Must be placed under a roof. Requires 5 W.</description>
+		<thingClass>SK.Building_Lamp</thingClass>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Bulk>5</Bulk>
+			<Mass>1</Mass>
+		</statBases>
+		<costList>
+			<Plastic>10</Plastic>
+			<Glass>5</Glass>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ElectronicComponents>1</ElectronicComponents>
+			<Electronics>1</Electronics>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>5</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<soundPowerOn>Power_OnSmall</soundPowerOn>
+				<soundPowerOff>Power_OffSmall</soundPowerOff>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(217,217,208,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="CeilingLEDLampBase">
+		<defName>CeilingLEDLamp</defName>
+		<label>ceiling LED lamp (medium)</label>
+		<description>A ceiling LED lamp that lights an area. People need light to move and work at full speed. Must be placed under a roof. Requires 10 W.</description>
+		<thingClass>SK.Building_Lamp</thingClass>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<WorkToBuild>350</WorkToBuild>
+			<Bulk>6</Bulk>
+			<Mass>2</Mass>
+		</statBases>
+		<costList>
+			<Plastic>12</Plastic>
+			<Glass>7</Glass>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<ElectronicComponents>2</ElectronicComponents>
+			<Electronics>1</Electronics>
+		</costList>
+		<comps Inherit="False">
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>10</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<soundPowerOn>Power_OnSmall</soundPowerOn>
+				<soundPowerOff>Power_OffSmall</soundPowerOff>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>8</glowRadius>
+				<glowColor>(217,217,208,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="CeilingLEDLampBase">
+		<defName>CeilingLEDLampLarge</defName>
+		<label>ceiling LED lamp (large)</label>
+		<description>A ceiling LED lamp that lights a large area. People need light to move and work at full speed. Must be placed under a roof. Requires 15 W.</description>
+		<thingClass>SK.Building_Lamp</thingClass>
+		<statBases>
+			<MaxHitPoints>35</MaxHitPoints>
+			<WorkToBuild>410</WorkToBuild>
+			<Bulk>7</Bulk>
+			<Mass>3</Mass>
+		</statBases>
+		<costList>
+			<Plastic>15</Plastic>
+			<Glass>10</Glass>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ElectronicComponents>3</ElectronicComponents>
+			<Electronics>1</Electronics>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>15</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<soundPowerOn>Power_OnSmall</soundPowerOn>
+				<soundPowerOff>Power_OffSmall</soundPowerOff>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>11</glowRadius>
+				<glowColor>(217,217,208,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
 <!--
 	<ThingDef MayRequire="Ludeon.RimWorld.Ideology" ParentName="SK_StandingLampLED">
 		<defName>StandingDarkLampLEDnormal</defName>
