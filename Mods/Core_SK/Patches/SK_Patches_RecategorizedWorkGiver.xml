@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-    <Operation Class="PatchOperationReplace">
+    <!--<Operation Class="PatchOperationReplace">
             <xpath>Defs/WorkGiverDef[defName="DoBillsHaulCampfire" or
                 defName="TakeBeerOutOfFermentingBarrel" or 
                 defName="FillFermentingBarrel"]/workType</xpath>
@@ -28,7 +28,7 @@
             <value>
                 <workType>BasicWorker</workType>
             </value>
-    </Operation>
+    </Operation>-->
     
      <Operation Class="PatchOperationReplace">
             <xpath>Defs/WorkGiverDef[defName="DoBillsUseCraftingSpot"]/workType</xpath>

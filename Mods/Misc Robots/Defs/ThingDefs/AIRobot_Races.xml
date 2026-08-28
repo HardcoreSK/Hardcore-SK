@@ -136,7 +136,7 @@
 			<baseHealthScale>0.5</baseHealthScale>
 			<mechEnabledWorkTypes>
 				<li>Hauling</li>
-				<li>Processing</li>
+				<!--<li>Processing</li>-->
 				<li>BiotechHauling</li>
 			</mechEnabledWorkTypes>
 		</race>
@@ -146,10 +146,10 @@
 				<workTypeDef>Hauling</workTypeDef>
 				<priority>1</priority>
 			</li>
-			<li>
+			<!--<li>
 				<workTypeDef>Processing</workTypeDef>
 				<priority>1</priority>
-			</li>
+			</li>-->
 			<li>
 				<workTypeDef>BiotechHauling</workTypeDef>
 				<priority>1</priority>
