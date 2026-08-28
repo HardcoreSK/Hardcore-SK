@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RaidStrategyDef>
+    <defName>InsectoidSwarm</defName>
+    <workerClass>SkyAiRefined.RaidStrategyWorker_InsectoidSwarm</workerClass>
+    <selectionWeightPerPointsCurve>
+      <points>
+        <li>(0, 1)</li>
+      </points>
+    </selectionWeightPerPointsCurve>
+    <pointsFactorCurve>
+      <points>
+        <li>(0, 1)</li>
+      </points>
+    </pointsFactorCurve>
+    <arriveModes>
+      <li>EdgeWalkIn</li>
+      <li>EdgeWalkInGroups</li>
+    </arriveModes>
+    <letterLabelEnemy>Insectoid swarm</letterLabelEnemy>
+    <arrivalTextEnemy>The swarm is attacking immediately.</arrivalTextEnemy>
+    <letterLabelFriendly>Insectoid swarm</letterLabelFriendly>
+    <arrivalTextFriendly>The swarm is moving in immediately.</arrivalTextFriendly>
+  </RaidStrategyDef>
+
+</Defs>
