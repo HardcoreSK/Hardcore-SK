@@ -10,7 +10,8 @@ import os
 import xml.etree.ElementTree as ET
 import re
 
-cur_version: str = '1.5'
+cur_version: str = '1.6'
+KEEP_LINES_BELOW_MARKER = "## Keep Lines Below"
 
 @dataclass
 class Mod:
@@ -68,7 +69,10 @@ def build_dict() -> dict[str, Mod]:
 
 def output(enabled: list[str], mod_dict: dict[str, Mod]) -> None:
     """
-    Set export-ignore for mods that are not enabled in ModsConfig.xml and not supported in 1.5
+    Set export-ignore for mods that are not enabled in ModsConfig.xml and not supported.
+
+    If the existing file contains KEEP_LINES_BELOW_MARKER on its own line,
+    preserve that line and the content below it.
     """
     output_lines = []
     for package_id, mod in mod_dict.items():
@@ -76,8 +80,19 @@ def output(enabled: list[str], mod_dict: dict[str, Mod]) -> None:
             mod_path = mod.path.removeprefix('./').replace(os.sep, '/')
             output_lines.append(f'"{mod_path}" export-ignore\n')
 
-    with open(".gitattributes", "w", encoding='utf-8') as f:
+    preserved_lines = []
+    if os.path.exists(".gitattributes"):
+        with open(".gitattributes", "r", encoding="utf-8") as f:
+            existing_lines = f.readlines()
+        for index, line in enumerate(existing_lines):
+            if line.rstrip("\r\n") == KEEP_LINES_BELOW_MARKER:
+                preserved_lines = existing_lines[index:]
+                break
+
+    with open(".gitattributes", "w", encoding="utf-8", newline="\n") as f:
         f.writelines(sorted(output_lines, key=str.casefold))
+        if preserved_lines:
+            f.writelines(preserved_lines)
 
 
 def main() -> None:
