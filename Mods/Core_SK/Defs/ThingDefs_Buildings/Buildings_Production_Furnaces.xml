@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!--
+	<!--
     DefOverwrite list:
     ElectricSmelter
     -->
@@ -37,7 +37,7 @@
 			<MaxHitPoints>280</MaxHitPoints>
 			<Flammability>0</Flammability>
 			<Cleanliness>-8</Cleanliness>
-            <OutdoorWorkRateFactor>1.0</OutdoorWorkRateFactor>
+			<OutdoorWorkRateFactor>1.0</OutdoorWorkRateFactor>
 			<Mass>1000</Mass>
 		</statBases>
 		<pathCost>90</pathCost>
@@ -59,7 +59,7 @@
 			<li>MakeGlass</li>
 		</recipes>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>Small_ToolCabinet</li>
@@ -100,9 +100,9 @@
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
-        <building>
-            <workTableNotInRoomRoleFactor>1.0</workTableNotInRoomRoleFactor>
-        </building>
+		<building>
+			<workTableNotInRoomRoleFactor>1.0</workTableNotInRoomRoleFactor>
+		</building>
 		<researchPrerequisites>
 			<li>Craft_B1</li>
 		</researchPrerequisites>
@@ -135,7 +135,7 @@
 			<Flammability>0</Flammability>
 			<Cleanliness>-8</Cleanliness>
 			<Mass>500</Mass>
-            <OutdoorWorkRateFactor>1.0</OutdoorWorkRateFactor>
+			<OutdoorWorkRateFactor>1.0</OutdoorWorkRateFactor>
 		</statBases>
 		<pathCost>90</pathCost>
 		<size>(3,3)</size>
@@ -157,11 +157,11 @@
 			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<building>
-            <workTableNotInRoomRoleFactor>1.0</workTableNotInRoomRoleFactor>
+			<workTableNotInRoomRoleFactor>1.0</workTableNotInRoomRoleFactor>
 			<uninstallWork>1850</uninstallWork>
 		</building>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>Small_ToolCabinet</li>
@@ -252,7 +252,7 @@
 			<Flammability>0</Flammability>
 			<Beauty>-60</Beauty>
 			<Cleanliness>-7</Cleanliness>
-            <OutdoorWorkRateFactor>1.0</OutdoorWorkRateFactor>
+			<OutdoorWorkRateFactor>1.0</OutdoorWorkRateFactor>
 		</statBases>
 		<size>(3,3)</size>
 		<designationCategory>Production</designationCategory>
@@ -300,15 +300,15 @@
 				<heatPerSecond>25</heatPerSecond>
 				<heatPushMaxTemperature>55</heatPushMaxTemperature>
 			</li>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<building>
-            <workTableNotInRoomRoleFactor>1.0</workTableNotInRoomRoleFactor>
+			<workTableNotInRoomRoleFactor>1.0</workTableNotInRoomRoleFactor>
 			<heatPerTickWhileWorking>2</heatPerTickWhileWorking>
 		</building>
 		<researchPrerequisites>
