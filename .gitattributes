@@ -19,3 +19,41 @@
 "Mods/TD Find Lib" export-ignore
 "Mods/ThingFilterResizer" export-ignore
 "Mods/Variety Matters Redux" export-ignore
+
+# Combat Extended is also a nested source repository. Keep its text files in LF
+# so the outer and nested repositories see identical worktree bytes.
+Mods/CombatExtended/.gitattributes text eol=lf
+Mods/CombatExtended/.gitignore text eol=lf
+Mods/CombatExtended/.editorconfig text eol=lf
+Mods/CombatExtended/.github/CODEOWNERS text eol=lf
+Mods/CombatExtended/Makefile text eol=lf
+Mods/CombatExtended/**/*.xml text eol=lf
+Mods/CombatExtended/**/*.xml.bak text eol=lf
+Mods/CombatExtended/**/*.bak text eol=lf
+Mods/CombatExtended/**/*.xml_disabled text eol=lf
+Mods/CombatExtended/**/*.disabled text eol=lf
+Mods/CombatExtended/**/*.txt text eol=lf
+Mods/CombatExtended/**/*.cs text eol=lf
+Mods/CombatExtended/**/*.csproj text eol=lf
+Mods/CombatExtended/**/*.props text eol=lf
+Mods/CombatExtended/**/*.sln text eol=lf
+Mods/CombatExtended/**/*.json text eol=lf
+Mods/CombatExtended/**/*.yml text eol=lf
+Mods/CombatExtended/**/*.yaml text eol=lf
+Mods/CombatExtended/**/*.md text eol=lf
+Mods/CombatExtended/**/*.py text eol=lf
+Mods/CombatExtended/**/*.svg text eol=lf
+Mods/CombatExtended/**/*.code-workspace text eol=lf
+Mods/CombatExtended/**/*.DotSettings text eol=lf
+Mods/CombatExtended/Source/CombatExtended/CombatExtended/Verbs/VerbShootCE_AdvancedUBGL text eol=lf
+Mods/CombatExtended/**/*.dll binary
+Mods/CombatExtended/**/*.pdb binary
+Mods/CombatExtended/**/*.png binary
+Mods/CombatExtended/**/*.dds binary
+Mods/CombatExtended/**/*.jpg binary
+Mods/CombatExtended/**/*.jpeg binary
+Mods/CombatExtended/**/*.ogg binary
+Mods/CombatExtended/**/*.wav binary
+Mods/CombatExtended/**/*.xcf binary
+Mods/CombatExtended/**/*.so binary
+Mods/CombatExtended/**/*.bundle binary
