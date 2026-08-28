@@ -32,12 +32,14 @@
     </value>
   </Operation>
 
-  <!-- 	<Operation Class="SK.PatchOperationReplaceExtended">
+   	<Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/WorkGiverDef[defName="DoBillsCremate"]</xpath>
     <value>
-    
+      <fixedBillGiverDefs Merge="True">
+        <li>Kiln</li>
+      </fixedBillGiverDefs>
     </value>
-  </Operation> -->
+  </Operation> 
   <!--   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/WorkGiverDef[defName="DoBillsCookCampfire"]</xpath>
     <value>
