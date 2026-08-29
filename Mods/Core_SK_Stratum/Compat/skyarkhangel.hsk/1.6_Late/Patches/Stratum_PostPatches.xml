@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Stratum adds these links from its base patch folder, after the normal HSK compat folder. -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="SolarWeb-Stratum-SurgicalSpotlight"]</xpath>
+  </Operation>
+
+  <!-- These five extensions are created by Stratum without an explicit category. -->
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/*[
+      defName="RoofConstructed" or
+      defName="RoofRockThin" or
+      defName="RoofRockThick" or
+      defName="SolarWeb-Stratum-RoofOverheadMountainSmoothed" or
+      defName="SolarWeb-Stratum-RoofThinRockSmoothed"
+    ]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]</xpath>
+    <value Merge="true">
+      <designationCategory>Structure</designationCategory>
+    </value>
+  </Operation>
+</Patch>

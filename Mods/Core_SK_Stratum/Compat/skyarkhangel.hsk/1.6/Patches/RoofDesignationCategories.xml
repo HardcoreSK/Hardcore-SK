@@ -106,6 +106,13 @@
       <designationCategory>Structure</designationCategory>
     </value>
   </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-SolarSkylight"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Structure</designationCategory>
+    </value>
+  </Operation>
   
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-ReinforcedGlassPanel"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]/designationCategory</xpath>
