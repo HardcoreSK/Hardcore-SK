@@ -5,7 +5,7 @@
     <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="SolarWeb-Stratum-SurgicalSpotlight"]</xpath>
   </Operation>
 
-  <!-- These five extensions are created by Stratum without an explicit category. -->
+  <!-- Keep vanilla constructed/natural roofs out of HSK's build menu. -->
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/*[
       defName="RoofConstructed" or
@@ -14,8 +14,8 @@
       defName="SolarWeb-Stratum-RoofOverheadMountainSmoothed" or
       defName="SolarWeb-Stratum-RoofThinRockSmoothed"
     ]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]</xpath>
-    <value Merge="true">
-      <designationCategory>Structure</designationCategory>
+    <value>
+      <designationCategory IsNull="true" />
     </value>
   </Operation>
 </Patch>
