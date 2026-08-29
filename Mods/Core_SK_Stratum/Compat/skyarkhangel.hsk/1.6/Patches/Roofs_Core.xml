@@ -10,6 +10,25 @@
     </value>
   </Operation>
 
+  <!-- Preserve the HSK construction effects previously embedded in Stratum's roof Defs. -->
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-RoofThatch"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]</xpath>
+    <value Merge="true">
+      <sustainerSound>Harvest_Standard</sustainerSound>
+      <finishSound>Harvest_Standard_Finish</finishSound>
+      <workEffect>ConstructWood</workEffect>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-RoofThatchHay"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]</xpath>
+    <value Merge="true">
+      <sustainerSound>Harvest_Standard</sustainerSound>
+      <finishSound>Harvest_Standard_Finish</finishSound>
+      <workEffect>ConstructWood</workEffect>
+    </value>
+  </Operation>
+
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofThatchHay_Buildable"]</xpath>
     <value>
@@ -83,6 +102,15 @@
 			<Mechanism>2</Mechanism>
 			<ElectronicComponents>1</ElectronicComponents>
 		</costList>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofSolarShingles_Buildable"]</xpath>
+    <value Merge="true">
+      <researchPrerequisites DeepReplace="true">
+        <li>SolarPanels</li>
+      </researchPrerequisites>
     </value>
   </Operation>
 

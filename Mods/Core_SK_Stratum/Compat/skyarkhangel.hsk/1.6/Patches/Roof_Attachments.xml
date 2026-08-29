@@ -10,9 +10,9 @@
         ]</xpath>
     </Operation>
     
-    <!--<Operation Class="PatchOperationRemove">
+    <Operation Class="PatchOperationRemove">
         <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="SolarWeb-Stratum-SurgicalSpotlight"]</xpath>
-    </Operation>-->
+    </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-LightningRod"]/designationCategory</xpath>
         <value>

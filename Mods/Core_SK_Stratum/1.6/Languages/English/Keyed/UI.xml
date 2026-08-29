@@ -15,6 +15,8 @@
   <ShowRoofBuildingsToggleButton>Toggle visibility of roof-attached buildings.</ShowRoofBuildingsToggleButton>
   <MustPlaceOnRoof>Must be placed on a roof tile.</MustPlaceOnRoof>
   <RoofAttachmentNotSupported>Roof does not support this attachment type.</RoofAttachmentNotSupported>
+  <Stratum_CannotBuildOverRooftopBuilding>Cannot build on upper level: Occupied by rooftop building below.</Stratum_CannotBuildOverRooftopBuilding>
+  <Stratum_CannotPlaceRooftopUnderUpperLevel>Cannot place rooftop building: Covered by upper level floor above.</Stratum_CannotPlaceRooftopUnderUpperLevel>
   <Stratum_Alert_RoofOnFire>Roof on fire</Stratum_Alert_RoofOnFire>
   <Stratum_Alert_RoofOnFireDesc>A roof is on fire!</Stratum_Alert_RoofOnFireDesc>
   <SolarWeb_Stratum_Pollen>Pollen</SolarWeb_Stratum_Pollen>
@@ -26,4 +28,20 @@
   <SolarWeb_Stratum_RoofAlreadySmoothed>Already smoothed.</SolarWeb_Stratum_RoofAlreadySmoothed>
   <SolarWeb_Stratum_CancelSmoothRoof>Cancel smoothing roof</SolarWeb_Stratum_CancelSmoothRoof>
   <SolarWeb_Stratum_CancelSmoothRoofDesc>Cancel the smoothing of this natural stone roof.</SolarWeb_Stratum_CancelSmoothRoofDesc>
+  <Stratum_SelectCanopyStyle>Retraction Style</Stratum_SelectCanopyStyle>
+  <Stratum_SelectCanopyStyleDesc>Configure how the retractable roof panels open and close.</Stratum_SelectCanopyStyleDesc>
+  <Stratum_Style_Iris>Iris (Concentric)</Stratum_Style_Iris>
+  <Stratum_Style_Iris_Desc>Retracts from the room center outward in concentric rings.</Stratum_Style_Iris_Desc>
+  <Stratum_Style_SplitX>Split X (East / West)</Stratum_Style_SplitX>
+  <Stratum_Style_SplitX_Desc>Divides down the middle and retracts outward toward the East and West walls.</Stratum_Style_SplitX_Desc>
+  <Stratum_Style_SplitY>Split Y (North / South)</Stratum_Style_SplitY>
+  <Stratum_Style_SplitY_Desc>Divides down the middle and retracts outward toward the North and South walls.</Stratum_Style_SplitY_Desc>
+  <Stratum_Style_Quadrant>Quadrant (4-Way Split)</Stratum_Style_Quadrant>
+  <Stratum_Style_Quadrant_Desc>Divides into four quadrants retracting outward to the outer corners.</Stratum_Style_Quadrant_Desc>
+  <Stratum_Style_LinearX>Linear Sweep (West to East)</Stratum_Style_LinearX>
+  <Stratum_Style_LinearX_Desc>Retracts panels sequentially from West to East across the ceiling.</Stratum_Style_LinearX_Desc>
+  <Stratum_Style_LinearZ>Linear Sweep (South to North)</Stratum_Style_LinearZ>
+  <Stratum_Style_LinearZ_Desc>Retracts panels sequentially from South to North across the ceiling.</Stratum_Style_LinearZ_Desc>
+  <Stratum_Style_ConsoleRadial>Console Radial</Stratum_Style_ConsoleRadial>
+  <Stratum_Style_ConsoleRadial_Desc>Retracts panels in outward rings starting from the console.</Stratum_Style_ConsoleRadial_Desc>
 </LanguageData>

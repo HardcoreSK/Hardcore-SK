@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <!-- Restore HSK's research-gated overhead mountain removal designator. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>Designator_AreaNoRoof</li>
+      <li>Designator_AreaIgnoreRoof</li>
+    </value>
+  </Operation>
+
   <Operation Class="PatchOperationInsert">
     <xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses/li[text()="Designator_AreaIgnoreRoof"]</xpath>
     <value>
@@ -50,9 +58,9 @@
     </value>
   </Operation>
   
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-RoofSolarShingles"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]/designationCategory</xpath>
-    <value>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-RoofSolarShingles"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]</xpath>
+    <value Merge="true">
       <designationCategory>Structure</designationCategory>
     </value>
   </Operation>
@@ -92,9 +100,9 @@
     </value>
   </Operation>
   
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-SolarHullPlate"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]/designationCategory</xpath>
-    <value>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/SolarWeb.Stratum.Defs.StratumRoofDef[defName="SolarWeb-Stratum-SolarHullPlate"]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]</xpath>
+    <value Merge="true">
       <designationCategory>Structure</designationCategory>
     </value>
   </Operation>
@@ -125,6 +133,18 @@
     <value>
       <designationCategory>Structure</designationCategory>
     </value>
+  </Operation>
+
+  <!-- HSK keeps all roof controls in Structure instead of Stratum's separate category. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ConceptDef[defName="SolarWeb-Stratum-ManualRoofs"]/highlightTags/li[text()="DesignationCategoryButton-SolarWeb-Stratum-Roofs-Closed"]</xpath>
+    <value>
+      <li>DesignationCategoryButton-Structure-Closed</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/DesignationCategoryDef[defName="SolarWeb-Stratum-Roofs"]</xpath>
   </Operation>
   
 </Patch>

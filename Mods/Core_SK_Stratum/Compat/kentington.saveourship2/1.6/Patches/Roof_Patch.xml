@@ -43,6 +43,10 @@
           <ThermalCapacity>1500</ThermalCapacity>
           <ThermalConductivity>0.05</ThermalConductivity>
           <FaceGasPermeability>0</FaceGasPermeability>
+          <!-- Matches Stratum's own HullPlating: insulated pressure hull. Without a value here
+               an SOS2 ship could not radiate at all, which matters more for a ship than for
+               anything else since its roof faces open space. -->
+          <RadiativeConductivity>0.05</RadiativeConductivity>
           <MaxPressureDeltaKpa>1200</MaxPressureDeltaKpa>
         </Properties>
       </li>

@@ -5,12 +5,12 @@
     <label>luxury glass panel</label>
     <description>Lead glass decoratively arranged in a metal frame. Doesn't allow as much light through as a standard skylight, but greatly improves room aesthetics.</description>
     <statBases>
-      <MaxHitPoints>120</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <WorkToBuild>600</WorkToBuild>
       <Beauty>5.0</Beauty>
-      <SolarWeb-Stratum-Insulation>0.6</SolarWeb-Stratum-Insulation>
-      <SolarWeb-Stratum-Transparency>0.6</SolarWeb-Stratum-Transparency>
-      <SolarWeb-Stratum-ThermalConductivity>0.4</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-Insulation>0.50</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-Transparency>0.75</SolarWeb-Stratum-Transparency>
+      <SolarWeb-Stratum-ThermalConductivity>0.50</SolarWeb-Stratum-ThermalConductivity>
       <SolarWeb-Stratum-StuffInsulationMultiplier>0.2</SolarWeb-Stratum-StuffInsulationMultiplier>
       <SolarWeb-Stratum-DamageThreshold>2</SolarWeb-Stratum-DamageThreshold>
       <SolarWeb-Stratum-ArmorRating>0.10</SolarWeb-Stratum-ArmorRating>
@@ -50,10 +50,12 @@
       </li>
       <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
         <Name>Luxury Glass Panel</Name>
+        <SurfaceIndependentOfStuff>true</SurfaceIndependentOfStuff>
         <Properties>
           <ThermalCapacity>1200</ThermalCapacity>
-          <ThermalConductivity>0.4</ThermalConductivity>
+          <ThermalConductivity>0.50</ThermalConductivity>
           <FaceGasPermeability>0</FaceGasPermeability>
+          <RadiativeConductivity>0.80</RadiativeConductivity>
           <MaxPressureDeltaKpa>1500</MaxPressureDeltaKpa>
         </Properties>
       </li>
@@ -65,15 +67,15 @@
     <label>sterile tiled roof</label>
     <description>Roof tiles with a special silver-infused coating to inhibit microbial growth. Essential for high-tech hospitals and laboratories.</description>
     <statBases>
-      <MaxHitPoints>150</MaxHitPoints>
+      <MaxHitPoints>140</MaxHitPoints>
       <WorkToBuild>400</WorkToBuild>
       <Beauty>-1.0</Beauty>
       <Cleanliness>0.6</Cleanliness>
       <MarketValue>38</MarketValue>
-      <SolarWeb-Stratum-Insulation>0.95</SolarWeb-Stratum-Insulation>
-      <SolarWeb-Stratum-ThermalConductivity>0.05</SolarWeb-Stratum-ThermalConductivity>
-      <SolarWeb-Stratum-DamageThreshold>7</SolarWeb-Stratum-DamageThreshold>
-      <SolarWeb-Stratum-ArmorRating>0.30</SolarWeb-Stratum-ArmorRating>
+      <SolarWeb-Stratum-Insulation>0.85</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-ThermalConductivity>0.15</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-DamageThreshold>5</SolarWeb-Stratum-DamageThreshold>
+      <SolarWeb-Stratum-ArmorRating>0.20</SolarWeb-Stratum-ArmorRating>
     </statBases>
     <costList>
       <Steel>3</Steel>
@@ -106,8 +108,10 @@
         <Name>Sterile Tiled Roof</Name>
         <Properties>
           <ThermalCapacity>1500</ThermalCapacity>
-          <ThermalConductivity>0.05</ThermalConductivity>
+          <ThermalConductivity>0.15</ThermalConductivity>
           <FaceGasPermeability>0</FaceGasPermeability>
+          <!-- Glazed ceramic tile: a moderate emitter, well above bare hull plate. -->
+          <RadiativeConductivity>0.20</RadiativeConductivity>
           <MaxPressureDeltaKpa>800</MaxPressureDeltaKpa>
         </Properties>
       </li>

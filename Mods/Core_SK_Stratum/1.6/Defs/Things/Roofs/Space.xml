@@ -5,13 +5,13 @@
     <label>hull plating</label>
     <description>Simple, airtight metal plates used for basic spacecraft hull construction. It is perfectly impermeable but lacks the structural reinforcement of higher-tier plating.</description>
     <statBases>
-      <MaxHitPoints>150</MaxHitPoints>
+      <MaxHitPoints>200</MaxHitPoints>
       <WorkToBuild>300</WorkToBuild>
       <Beauty>0.5</Beauty>
-      <SolarWeb-Stratum-Insulation>0.95</SolarWeb-Stratum-Insulation>
-      <SolarWeb-Stratum-ThermalConductivity>0.05</SolarWeb-Stratum-ThermalConductivity>
-      <SolarWeb-Stratum-DamageThreshold>8</SolarWeb-Stratum-DamageThreshold>
-      <SolarWeb-Stratum-ArmorRating>0.35</SolarWeb-Stratum-ArmorRating>
+      <SolarWeb-Stratum-Insulation>0.85</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-ThermalConductivity>0.15</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-DamageThreshold>10</SolarWeb-Stratum-DamageThreshold>
+      <SolarWeb-Stratum-ArmorRating>0.40</SolarWeb-Stratum-ArmorRating>
     </statBases>
     <costList>
       <Steel>8</Steel>
@@ -47,8 +47,9 @@
         <Name>Hull Plating</Name>
         <Properties>
           <ThermalCapacity>1500</ThermalCapacity>
-          <ThermalConductivity>0.05</ThermalConductivity>
+          <ThermalConductivity>0.15</ThermalConductivity>
           <FaceGasPermeability>0</FaceGasPermeability>
+          <RadiativeConductivity>0.05</RadiativeConductivity>
           <MaxPressureDeltaKpa>1200</MaxPressureDeltaKpa>
         </Properties>
       </li>
@@ -60,13 +61,13 @@
     <label>reinforced hull plating</label>
     <description>Heavy-duty, double-layered metal plates with internal structural supports. Designed to withstand significant pressure differentials and micrometeoroid impacts.</description>
     <statBases>
-      <MaxHitPoints>325</MaxHitPoints>
+      <MaxHitPoints>350</MaxHitPoints>
       <WorkToBuild>400</WorkToBuild>
       <Beauty>1.0</Beauty>
-      <SolarWeb-Stratum-Insulation>0.98</SolarWeb-Stratum-Insulation>
-      <SolarWeb-Stratum-ThermalConductivity>0.02</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-Insulation>0.88</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-ThermalConductivity>0.12</SolarWeb-Stratum-ThermalConductivity>
       <SolarWeb-Stratum-DamageThreshold>15</SolarWeb-Stratum-DamageThreshold>
-      <SolarWeb-Stratum-ArmorRating>0.50</SolarWeb-Stratum-ArmorRating>
+      <SolarWeb-Stratum-ArmorRating>0.55</SolarWeb-Stratum-ArmorRating>
     </statBases>
     <costList>
       <Steel>12</Steel>
@@ -99,8 +100,9 @@
         <Name>Reinforced Hull Plating</Name>
         <Properties>
           <ThermalCapacity>3000</ThermalCapacity>
-          <ThermalConductivity>0.02</ThermalConductivity>
+          <ThermalConductivity>0.12</ThermalConductivity>
           <FaceGasPermeability>0</FaceGasPermeability>
+          <RadiativeConductivity>0.04</RadiativeConductivity>
           <MaxPressureDeltaKpa>2000</MaxPressureDeltaKpa>
         </Properties>
       </li>
@@ -112,14 +114,14 @@
     <label>reinforced solar hull plating</label>
     <description>Top-tier orbital roofing. Combines the structural integrity of reinforced hull plating with integrated solar collection cells. While expensive, it provides power while serving as a high-pressure seal.</description>
     <statBases>
-      <MaxHitPoints>300</MaxHitPoints>
+      <MaxHitPoints>250</MaxHitPoints>
       <WorkToBuild>500</WorkToBuild>
       <Beauty>1.0</Beauty>
-      <SolarWeb-Stratum-Insulation>0.98</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-Insulation>0.80</SolarWeb-Stratum-Insulation>
       <SolarWeb-Stratum-SolarOutput>50</SolarWeb-Stratum-SolarOutput>
-      <SolarWeb-Stratum-ThermalConductivity>0.02</SolarWeb-Stratum-ThermalConductivity>
-      <SolarWeb-Stratum-DamageThreshold>12</SolarWeb-Stratum-DamageThreshold>
-      <SolarWeb-Stratum-ArmorRating>0.45</SolarWeb-Stratum-ArmorRating>
+      <SolarWeb-Stratum-ThermalConductivity>0.20</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-DamageThreshold>10</SolarWeb-Stratum-DamageThreshold>
+      <SolarWeb-Stratum-ArmorRating>0.35</SolarWeb-Stratum-ArmorRating>
     </statBases>
     <costList>
       <Steel>18</Steel>
@@ -127,10 +129,6 @@
     </costList>
     <uiOrder>2220</uiOrder>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-    <researchPrerequisites>
-      <li>AdvancedFabrication</li>
-      <li>SolarPanels</li>
-    </researchPrerequisites>
   </ThingDef>
 
   <SolarWeb.Stratum.Defs.StratumRoofDef>
@@ -147,15 +145,15 @@
           <texPath>Roofs/SolarReinforcedHullPlate</texPath>
           <color>(0.15, 0.15, 0.25)</color>
         </graphicData>
-        <designationCategory>SolarWeb-Stratum-Roofs</designationCategory>
         <allowRooftopAttachments>false</allowRooftopAttachments>
       </li>
       <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
         <Name>Solar Hull Plate</Name>
         <Properties>
           <ThermalCapacity>3500</ThermalCapacity>
-          <ThermalConductivity>0.02</ThermalConductivity>
+          <ThermalConductivity>0.20</ThermalConductivity>
           <FaceGasPermeability>0</FaceGasPermeability>
+          <RadiativeConductivity>0.10</RadiativeConductivity>
           <MaxPressureDeltaKpa>2500</MaxPressureDeltaKpa>
         </Properties>
       </li>
@@ -165,14 +163,14 @@
   <ThingDef ParentName="SolarWeb_Stratum_RoofBuildableBase">
     <defName>SolarWeb-Stratum-ReinforcedGlassPanel_Buildable</defName>
     <label>reinforced glass panel</label>
-    <description>Thick, lead-lined glass panels held in a steel frame. Allows viewing the stars while maintaining an airtight seal, though it is less insulating and strong than solid hull plates.</description>
+    <description>Thick, lead-lined glass panels held in a steel frame. The optically pure crystal passes more light than a standard skylight, making it the best roof to grow crops under. Allows viewing the stars while maintaining an airtight seal, though it is less insulating and strong than solid hull plates.</description>
     <statBases>
-      <MaxHitPoints>150</MaxHitPoints>
+      <MaxHitPoints>140</MaxHitPoints>
       <WorkToBuild>400</WorkToBuild>
       <Beauty>2.0</Beauty>
-      <SolarWeb-Stratum-Insulation>0.5</SolarWeb-Stratum-Insulation>
-      <SolarWeb-Stratum-Transparency>0.8</SolarWeb-Stratum-Transparency>
-      <SolarWeb-Stratum-ThermalConductivity>0.5</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-Insulation>0.45</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-Transparency>0.95</SolarWeb-Stratum-Transparency>
+      <SolarWeb-Stratum-ThermalConductivity>0.55</SolarWeb-Stratum-ThermalConductivity>
       <SolarWeb-Stratum-DamageThreshold>5</SolarWeb-Stratum-DamageThreshold>
       <SolarWeb-Stratum-ArmorRating>0.20</SolarWeb-Stratum-ArmorRating>
     </statBases>
@@ -190,7 +188,7 @@
   <SolarWeb.Stratum.Defs.StratumRoofDef>
     <defName>SolarWeb-Stratum-ReinforcedGlassPanel</defName>
     <label>reinforced glass panel</label>
-    <description>Thick, lead-lined glass panels held in a steel frame. Allows viewing the stars while maintaining an airtight seal, though it is less insulating and strong than solid hull plates.</description>
+    <description>Thick, lead-lined glass panels held in a steel frame. The optically pure crystal passes more light than a standard skylight, making it the best roof to grow crops under. Allows viewing the stars while maintaining an airtight seal, though it is less insulating and strong than solid hull plates.</description>
     <isThickRoof>false</isThickRoof>
     <filthLeaving>Filth_RubbleBuilding</filthLeaving>
     <soundPunchThrough>PunchThroughRoofMetal</soundPunchThrough>
@@ -206,13 +204,16 @@
         <designationCategory>SolarWeb-Stratum-Roofs</designationCategory>
         <isSkylight>true</isSkylight>
         <glassTint>(0.8, 0.9, 1.0)</glassTint>
+        <allowHangingAttachments>false</allowHangingAttachments>
+        <allowRooftopAttachments>false</allowRooftopAttachments>
       </li>
       <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
         <Name>Glass Panel</Name>
         <Properties>
           <ThermalCapacity>1000</ThermalCapacity>
-          <ThermalConductivity>0.5</ThermalConductivity>
+          <ThermalConductivity>0.55</ThermalConductivity>
           <FaceGasPermeability>0</FaceGasPermeability>
+          <RadiativeConductivity>0.75</RadiativeConductivity>
           <MaxPressureDeltaKpa>1000</MaxPressureDeltaKpa>
         </Properties>
       </li>
@@ -227,10 +228,10 @@
       <MaxHitPoints>180</MaxHitPoints>
       <WorkToBuild>600</WorkToBuild>
       <Beauty>2.0</Beauty>
-      <SolarWeb-Stratum-Insulation>0.90</SolarWeb-Stratum-Insulation>
-      <SolarWeb-Stratum-ThermalConductivity>0.10</SolarWeb-Stratum-ThermalConductivity>
-      <SolarWeb-Stratum-DamageThreshold>10</SolarWeb-Stratum-DamageThreshold>
-      <SolarWeb-Stratum-ArmorRating>0.25</SolarWeb-Stratum-ArmorRating>
+      <SolarWeb-Stratum-Insulation>0.80</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-ThermalConductivity>0.20</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-DamageThreshold>8</SolarWeb-Stratum-DamageThreshold>
+      <SolarWeb-Stratum-ArmorRating>0.30</SolarWeb-Stratum-ArmorRating>
       <SolarWeb-Stratum-TransitionSpeed>120</SolarWeb-Stratum-TransitionSpeed>
     </statBases>
     <costList>
@@ -242,6 +243,7 @@
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <researchPrerequisites>
       <li>MicroelectronicsBasics</li>
+      <li>Fabrication</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -264,6 +266,16 @@
         <allowHangingAttachments>false</allowHangingAttachments>
         <allowRooftopAttachments>false</allowRooftopAttachments>
       </li>
+      <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
+        <Name>Heavy Retractable Canopy</Name>
+        <Properties>
+          <ThermalCapacity>2000</ThermalCapacity>
+          <ThermalConductivity>0.20</ThermalConductivity>
+          <FaceGasPermeability>0</FaceGasPermeability>
+          <RadiativeConductivity>0.10</RadiativeConductivity>
+          <MaxPressureDeltaKpa>1500</MaxPressureDeltaKpa>
+        </Properties>
+      </li>
     </modExtensions>
   </SolarWeb.Stratum.Defs.StratumRoofDef>
 
@@ -276,8 +288,8 @@
       <WorkToBuild>300</WorkToBuild>
       <Beauty>1.0</Beauty>
       <SolarWeb-Stratum-Insulation>0.50</SolarWeb-Stratum-Insulation>
-      <SolarWeb-Stratum-ThermalConductivity>0.30</SolarWeb-Stratum-ThermalConductivity>
-      <SolarWeb-Stratum-DamageThreshold>5</SolarWeb-Stratum-DamageThreshold>
+      <SolarWeb-Stratum-ThermalConductivity>0.50</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-DamageThreshold>3</SolarWeb-Stratum-DamageThreshold>
       <SolarWeb-Stratum-ArmorRating>0.05</SolarWeb-Stratum-ArmorRating>
       <SolarWeb-Stratum-TransitionSpeed>45</SolarWeb-Stratum-TransitionSpeed>
     </statBases>
@@ -289,6 +301,7 @@
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <researchPrerequisites>
       <li>MicroelectronicsBasics</li>
+      <li>Fabrication</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -310,6 +323,16 @@
         <isRetractable>true</isRetractable>
         <allowHangingAttachments>false</allowHangingAttachments>
         <allowRooftopAttachments>false</allowRooftopAttachments>
+      </li>
+      <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
+        <Name>Light Retractable Canopy</Name>
+        <Properties>
+          <ThermalCapacity>800</ThermalCapacity>
+          <ThermalConductivity>0.50</ThermalConductivity>
+          <FaceGasPermeability>0</FaceGasPermeability>
+          <RadiativeConductivity>0.60</RadiativeConductivity>
+          <MaxPressureDeltaKpa>600</MaxPressureDeltaKpa>
+        </Properties>
       </li>
     </modExtensions>
   </SolarWeb.Stratum.Defs.StratumRoofDef>
@@ -376,5 +399,68 @@
       <li Class="CompProperties_Flickable" />
     </comps>
   </ThingDef>
+
+  <ThingDef ParentName="SolarWeb_Stratum_RoofBuildableBase">
+    <defName>SolarWeb-Stratum-SolarSkylight_Buildable</defName>
+    <label>solar skylight</label>
+    <description>An advanced skylight panel incorporating highly transparent photovoltaic micro-film within glass-composite plating. It generates clean electrical power while allowing ample natural sunlight to pass through for plant growth.</description>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>450</WorkToBuild>
+      <Beauty>1.0</Beauty>
+      <SolarWeb-Stratum-Insulation>0.55</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-SolarOutput>20</SolarWeb-Stratum-SolarOutput>
+      <SolarWeb-Stratum-Transparency>0.85</SolarWeb-Stratum-Transparency>
+      <SolarWeb-Stratum-ThermalConductivity>0.45</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-DamageThreshold>4</SolarWeb-Stratum-DamageThreshold>
+      <SolarWeb-Stratum-ArmorRating>0.15</SolarWeb-Stratum-ArmorRating>
+    </statBases>
+    <costList>
+      <Steel>10</Steel>
+      <Plasteel>3</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <uiOrder>2225</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>SolarPanels</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <SolarWeb.Stratum.Defs.StratumRoofDef>
+    <defName>SolarWeb-Stratum-SolarSkylight</defName>
+    <label>solar skylight</label>
+    <description>An advanced skylight panel incorporating highly transparent photovoltaic micro-film within glass-composite plating. It generates clean electrical power while allowing ample natural sunlight to pass through for plant growth.</description>
+    <isThickRoof>false</isThickRoof>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+    <soundPunchThrough>PunchThroughRoofMetal</soundPunchThrough>
+    <modExtensions>
+      <li Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension">
+        <buildableDef>SolarWeb-Stratum-SolarSkylight_Buildable</buildableDef>
+        <graphicData>
+          <texPath>Roofs/SolarReinforcedHullPlate</texPath>
+          <color>(0.15, 0.15, 0.25)</color>
+          <skylightFrameWidth>0.08</skylightFrameWidth>
+          <isSeamless>true</isSeamless>
+        </graphicData>
+        <designationCategory>SolarWeb-Stratum-Roofs</designationCategory>
+        <isSkylight>true</isSkylight>
+        <glassTint>(0.4, 0.7, 0.9)</glassTint>
+        <allowHangingAttachments>false</allowHangingAttachments>
+        <allowRooftopAttachments>false</allowRooftopAttachments>
+      </li>
+      <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
+        <Name>Solar Skylight</Name>
+        <Properties>
+          <ThermalCapacity>1200</ThermalCapacity>
+          <ThermalConductivity>0.45</ThermalConductivity>
+          <FaceGasPermeability>0</FaceGasPermeability>
+          <RadiativeConductivity>0.75</RadiativeConductivity>
+          <MaxPressureDeltaKpa>800</MaxPressureDeltaKpa>
+        </Properties>
+      </li>
+    </modExtensions>
+  </SolarWeb.Stratum.Defs.StratumRoofDef>
 
 </Defs>

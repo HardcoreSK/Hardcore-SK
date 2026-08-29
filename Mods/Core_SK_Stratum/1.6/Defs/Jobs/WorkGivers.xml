@@ -13,6 +13,7 @@
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
+    <nonColonistsCanDo>true</nonColonistsCanDo>
     <canBeDoneByMechs>true</canBeDoneByMechs>
   </WorkGiverDef>
 
@@ -29,6 +30,7 @@
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
+    <nonColonistsCanDo>true</nonColonistsCanDo>
     <canBeDoneByMechs>true</canBeDoneByMechs>
   </WorkGiverDef>
 
@@ -37,7 +39,7 @@
     <label>repair custom roofs</label>
     <giverClass>SolarWeb.Stratum.AI.WorkGivers.RepairCustomRoof</giverClass>
     <workType>Construction</workType>
-    <priorityInType>100</priorityInType>
+    <priorityInType>40</priorityInType>
     <verb>repair roof</verb>
     <gerund>repairing roof</gerund>
     <scanThings>false</scanThings>
@@ -45,6 +47,7 @@
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
+    <nonColonistsCanDo>true</nonColonistsCanDo>
     <canBeDoneByMechs>true</canBeDoneByMechs>
   </WorkGiverDef>
   
@@ -75,6 +78,7 @@
     <autoTakeablePriorityDrafted>20</autoTakeablePriorityDrafted>
     <forceFleck>FeedbackExtinguish</forceFleck>
     <directOrderable>true</directOrderable>
+    <nonColonistsCanDo>true</nonColonistsCanDo>
   </WorkGiverDef>
 
   <WorkGiverDef>
@@ -92,5 +96,6 @@
       <li>Manipulation</li>
     </requiredCapacities>
     <canBeDoneByMechs>true</canBeDoneByMechs>
+    <nonColonistsCanDo>true</nonColonistsCanDo>
   </WorkGiverDef>
 </Defs>

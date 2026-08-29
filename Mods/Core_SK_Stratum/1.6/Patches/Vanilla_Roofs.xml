@@ -44,6 +44,10 @@
             <ThermalCapacity>1000</ThermalCapacity>
             <ThermalConductivity>0.8</ThermalConductivity>
             <FaceGasPermeability>0</FaceGasPermeability>
+            <!-- Plain constructed roofing, not engineered hull: a moderate emitter, on par with
+                 shingle and sterile tile. Deliberately well above HullPlating's 0.05, which is
+                 reserved for insulated pressure hull. Not stuffable, so no stuff can override. -->
+            <RadiativeConductivity>0.20</RadiativeConductivity>
             <MaxPressureDeltaKpa>150</MaxPressureDeltaKpa>
           </Properties>
         </li>
@@ -64,10 +68,16 @@
         </li>
         <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
           <Name>Thin Rock Roof</Name>
+          <!-- Stuffable with Stony. The stuff genuinely is the material, but the room does not
+               radiate through the rock — that transport is conduction, already covered by
+               ThermalConductivity. Without this, stone's 0.90 would override the value below
+               and freeze every mountain base. -->
+          <SurfaceIndependentOfStuff>true</SurfaceIndependentOfStuff>
           <Properties>
             <ThermalCapacity>3000</ThermalCapacity>
             <ThermalConductivity>0.1</ThermalConductivity>
             <FaceGasPermeability>0</FaceGasPermeability>
+            <RadiativeConductivity>0.02</RadiativeConductivity>
             <MaxPressureDeltaKpa>200</MaxPressureDeltaKpa>
           </Properties>
         </li>
@@ -89,10 +99,14 @@
         </li>
         <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
           <Name>Overhead Mountain</Name>
+          <!-- As thin rock, more so: stuffable Stony, and there is no sky to radiate to under
+               a mountain at all. -->
+          <SurfaceIndependentOfStuff>true</SurfaceIndependentOfStuff>
           <Properties>
             <ThermalCapacity>10000</ThermalCapacity>
             <ThermalConductivity>0</ThermalConductivity>
             <FaceGasPermeability>0</FaceGasPermeability>
+            <RadiativeConductivity>0</RadiativeConductivity>
             <MaxPressureDeltaKpa>5000</MaxPressureDeltaKpa>
           </Properties>
         </li>

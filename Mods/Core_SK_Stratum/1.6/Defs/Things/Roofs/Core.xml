@@ -35,9 +35,6 @@
         <isAirtight>false</isAirtight>
         <allowHangingAttachments>false</allowHangingAttachments>
         <allowRooftopAttachments>false</allowRooftopAttachments>
-		<sustainerSound>Harvest_Standard</sustainerSound>
-		<finishSound>Harvest_Standard_Finish</finishSound>
-		<workEffect>ConstructWood</workEffect>
       </li>
       <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
         <Name>Primitive Thatch Roof</Name>
@@ -45,6 +42,7 @@
           <ThermalCapacity>200</ThermalCapacity>
           <ThermalConductivity>0.3</ThermalConductivity>
           <FaceGasPermeability>0.8</FaceGasPermeability>
+          <RadiativeConductivity>0.90</RadiativeConductivity>
           <MaxPressureDeltaKpa>10</MaxPressureDeltaKpa>
         </Properties>
       </li>
@@ -92,9 +90,6 @@
         <isAirtight>false</isAirtight>
         <allowHangingAttachments>false</allowHangingAttachments>
         <allowRooftopAttachments>false</allowRooftopAttachments>
-		<sustainerSound>Harvest_Standard</sustainerSound>
-		<finishSound>Harvest_Standard_Finish</finishSound>
-		<workEffect>ConstructWood</workEffect>
       </li>
       <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
         <Name>Hay Thatch Roof</Name>
@@ -102,6 +97,7 @@
           <ThermalCapacity>400</ThermalCapacity>
           <ThermalConductivity>0.2</ThermalConductivity>
           <FaceGasPermeability>0.5</FaceGasPermeability>
+          <RadiativeConductivity>0.90</RadiativeConductivity>
           <MaxPressureDeltaKpa>25</MaxPressureDeltaKpa>
         </Properties>
       </li>
@@ -117,10 +113,10 @@
       <WorkToBuild>100</WorkToBuild>
       <Beauty>0</Beauty>
       <Flammability>1.0</Flammability>
-      <SolarWeb-Stratum-Insulation>0.9</SolarWeb-Stratum-Insulation>
-      <SolarWeb-Stratum-ThermalConductivity>0.1</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-Insulation>0.75</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-ThermalConductivity>0.25</SolarWeb-Stratum-ThermalConductivity>
       <SolarWeb-Stratum-DamageThreshold>3</SolarWeb-Stratum-DamageThreshold>
-      <SolarWeb-Stratum-ArmorRating>0.15</SolarWeb-Stratum-ArmorRating>
+      <SolarWeb-Stratum-ArmorRating>0.12</SolarWeb-Stratum-ArmorRating>
       <SolarWeb-Stratum-StuffArmorMultiplier>1.0</SolarWeb-Stratum-StuffArmorMultiplier>
     </statBases>
     <stuffCategories>
@@ -153,8 +149,9 @@
         <Name>Shingle Roof</Name>
         <Properties>
           <ThermalCapacity>1200</ThermalCapacity>
-          <ThermalConductivity>0.1</ThermalConductivity>
+          <ThermalConductivity>0.25</ThermalConductivity>
           <FaceGasPermeability>0</FaceGasPermeability>
+          <RadiativeConductivity>0.20</RadiativeConductivity>
           <MaxPressureDeltaKpa>200</MaxPressureDeltaKpa>
         </Properties>
       </li>
@@ -169,9 +166,10 @@
       <MaxHitPoints>50</MaxHitPoints>
       <WorkToBuild>250</WorkToBuild>
       <Beauty>2.0</Beauty>
-      <SolarWeb-Stratum-Insulation>0.2</SolarWeb-Stratum-Insulation>
-      <SolarWeb-Stratum-Transparency>0.8</SolarWeb-Stratum-Transparency>
-      <SolarWeb-Stratum-ThermalConductivity>0.8</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-Insulation>0.25</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-Transparency>0.88</SolarWeb-Stratum-Transparency>
+      <SolarWeb-Stratum-ThermalConductivity>0.75</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-DamageThreshold>0</SolarWeb-Stratum-DamageThreshold>
       <SolarWeb-Stratum-ArmorRating>0.05</SolarWeb-Stratum-ArmorRating>
     </statBases>
     <costList>
@@ -207,8 +205,9 @@
         <Name>Glass Roof</Name>
         <Properties>
           <ThermalCapacity>500</ThermalCapacity>
-          <ThermalConductivity>0.8</ThermalConductivity>
+          <ThermalConductivity>0.75</ThermalConductivity>
           <FaceGasPermeability>0</FaceGasPermeability>
+          <RadiativeConductivity>0.85</RadiativeConductivity>
           <MaxPressureDeltaKpa>50</MaxPressureDeltaKpa>
         </Properties>
       </li>
@@ -223,11 +222,11 @@
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToBuild>200</WorkToBuild>
       <Beauty>0.5</Beauty>
-      <SolarWeb-Stratum-Insulation>0.8</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-Insulation>0.70</SolarWeb-Stratum-Insulation>
       <SolarWeb-Stratum-SolarOutput>20</SolarWeb-Stratum-SolarOutput>
-      <SolarWeb-Stratum-ThermalConductivity>0.2</SolarWeb-Stratum-ThermalConductivity>
-      <SolarWeb-Stratum-DamageThreshold>4</SolarWeb-Stratum-DamageThreshold>
-      <SolarWeb-Stratum-ArmorRating>0.15</SolarWeb-Stratum-ArmorRating>
+      <SolarWeb-Stratum-ThermalConductivity>0.30</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-DamageThreshold>3</SolarWeb-Stratum-DamageThreshold>
+      <SolarWeb-Stratum-ArmorRating>0.10</SolarWeb-Stratum-ArmorRating>
       <SolarWeb-Stratum-StuffArmorMultiplier>0.5</SolarWeb-Stratum-StuffArmorMultiplier>
     </statBases>
     <costList>
@@ -236,9 +235,6 @@
     </costList>
     <uiOrder>2050</uiOrder>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-    <researchPrerequisites>
-      <li>SolarPanels</li>
-    </researchPrerequisites>
   </ThingDef>
 
   <SolarWeb.Stratum.Defs.StratumRoofDef>
@@ -256,7 +252,6 @@
           <isSeamless>true</isSeamless>
           <color>(0.1, 0.1, 0.2)</color>
         </graphicData>
-        <designationCategory>SolarWeb-Stratum-Roofs</designationCategory>
         <isSkylight>false</isSkylight>
         <allowRooftopAttachments>false</allowRooftopAttachments>
       </li>
@@ -264,8 +259,9 @@
         <Name>Solar Shingles</Name>
         <Properties>
           <ThermalCapacity>1500</ThermalCapacity>
-          <ThermalConductivity>0.2</ThermalConductivity>
+          <ThermalConductivity>0.30</ThermalConductivity>
           <FaceGasPermeability>0</FaceGasPermeability>
+          <RadiativeConductivity>0.85</RadiativeConductivity>
           <MaxPressureDeltaKpa>150</MaxPressureDeltaKpa>
         </Properties>
       </li>
@@ -281,10 +277,10 @@
       <WorkToBuild>200</WorkToBuild>
       <Beauty>0.5</Beauty>
       <Flammability>1.0</Flammability>
-      <SolarWeb-Stratum-Insulation>0.88</SolarWeb-Stratum-Insulation>
-      <SolarWeb-Stratum-ThermalConductivity>0.12</SolarWeb-Stratum-ThermalConductivity>
-      <SolarWeb-Stratum-DamageThreshold>6</SolarWeb-Stratum-DamageThreshold>
-      <SolarWeb-Stratum-ArmorRating>0.25</SolarWeb-Stratum-ArmorRating>
+      <SolarWeb-Stratum-Insulation>0.92</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-ThermalConductivity>0.08</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-DamageThreshold>4</SolarWeb-Stratum-DamageThreshold>
+      <SolarWeb-Stratum-ArmorRating>0.15</SolarWeb-Stratum-ArmorRating>
       <SolarWeb-Stratum-StuffArmorMultiplier>1.2</SolarWeb-Stratum-StuffArmorMultiplier>
     </statBases>
     <costList>
@@ -321,10 +317,12 @@
       </li>
       <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
         <Name>Composite Panel</Name>
+        <SurfaceIndependentOfStuff>true</SurfaceIndependentOfStuff>
         <Properties>
           <ThermalCapacity>2000</ThermalCapacity>
-          <ThermalConductivity>0.12</ThermalConductivity>
+          <ThermalConductivity>0.08</ThermalConductivity>
           <FaceGasPermeability>0</FaceGasPermeability>
+          <RadiativeConductivity>0.02</RadiativeConductivity>
           <MaxPressureDeltaKpa>500</MaxPressureDeltaKpa>
         </Properties>
       </li>

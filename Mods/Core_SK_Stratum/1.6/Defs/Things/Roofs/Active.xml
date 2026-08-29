@@ -8,10 +8,10 @@
       <MaxHitPoints>120</MaxHitPoints>
       <WorkToBuild>300</WorkToBuild>
       <Beauty>0.5</Beauty>
-      <SolarWeb-Stratum-Insulation>0.9</SolarWeb-Stratum-Insulation>
-      <SolarWeb-Stratum-ThermalConductivity>0.1</SolarWeb-Stratum-ThermalConductivity>
-      <SolarWeb-Stratum-DamageThreshold>5</SolarWeb-Stratum-DamageThreshold>
-      <SolarWeb-Stratum-ArmorRating>0.20</SolarWeb-Stratum-ArmorRating>
+      <SolarWeb-Stratum-Insulation>0.85</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-ThermalConductivity>0.15</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-DamageThreshold>4</SolarWeb-Stratum-DamageThreshold>
+      <SolarWeb-Stratum-ArmorRating>0.15</SolarWeb-Stratum-ArmorRating>
     </statBases>
     <costList>
       <Steel>5</Steel>
@@ -53,8 +53,9 @@
         <Name>Thermal Radiator Roof</Name>
         <Properties>
           <ThermalCapacity>1500</ThermalCapacity>
-          <ThermalConductivity>0.1</ThermalConductivity>
+          <ThermalConductivity>0.15</ThermalConductivity>
           <FaceGasPermeability>0</FaceGasPermeability>
+          <RadiativeConductivity>0.15</RadiativeConductivity>
           <MaxPressureDeltaKpa>1000</MaxPressureDeltaKpa>
         </Properties>
       </li>
