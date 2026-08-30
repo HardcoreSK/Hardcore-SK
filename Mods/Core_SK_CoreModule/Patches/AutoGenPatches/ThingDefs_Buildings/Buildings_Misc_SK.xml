@@ -150,7 +150,10 @@
                 <ResearchSpeedFactor>1.0</ResearchSpeedFactor>
             </statBases>
             <tickerType>Normal</tickerType>
-            <comps>
+            <comps Inherit="False">
+                <li Class="CompProperties_ReportWorkSpeed">
+                    <workSpeedStat>ResearchSpeedFactor</workSpeedStat>
+                </li>
                 <li Class="CompProperties_Flickable" />
                 <li Class="SK.CompProperties_IdlePower">
                     <basePowerConsumption>700</basePowerConsumption>
