@@ -5,6 +5,24 @@
     <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="SolarWeb-Stratum-SurgicalSpotlight"]</xpath>
   </Operation>
 
+  <!-- Restore HSK's roof-removal tools after Stratum removes the vanilla entries. -->
+<!--   <Operation Class="PatchOperationRemove">
+    <xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses/li[
+      text()="Designator_AreaNoRoof" or
+      text()="Designator_AreaIgnoreRoof" or
+      text()="SK.Designator_AreaNoThickRoof"
+    ]</xpath>
+  </Operation> -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>Designator_AreaNoRoof</li>
+      <li>SK.Designator_AreaNoThickRoof</li>
+      <li>Designator_AreaIgnoreRoof</li>
+    </value>
+  </Operation>
+
   <!-- Keep vanilla constructed/natural roofs out of HSK's build menu. -->
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/*[
