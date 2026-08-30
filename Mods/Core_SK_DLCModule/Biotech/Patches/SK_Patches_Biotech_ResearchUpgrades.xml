@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mech_Lifter"]/statBases/CarryingCapacity</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mech_Lifter"]/statBases/CarryingCapacity</xpath>
+			<value>
+				<CarryingCapacity>75</CarryingCapacity>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mech_Lifter"]/statBases</xpath>
+			<value>
+				<CarryingCapacity>75</CarryingCapacity>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GrowthVat"]/comps/li[compClass="Core_SK_Patch.CompAgeSetting"]</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GrowthVat"]/comps</xpath>
+			<value>
+				<li>
+					<compClass>Core_SK_Patch.CompAgeSetting</compClass>
+				</li>
+			</value>
+		</nomatch>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!--
+    Rimatomics' reactor and plutonium-processor loading jobs use its custom
+    NuclearWork WorkTypeDef. Lifter mechs only scan explicitly enabled work
+    types, so the Hauling tag on NuclearWork is not sufficient by itself.
+  -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Dubs Rimatomics</li>
+      <li>Rimatomics</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="SK.PatchOperationReplaceExtended">
+          <xpath>Defs/ThingDef[defName="Mech_Lifter"]/race/mechEnabledWorkTypes</xpath>
+          <value>
+            <li>NuclearWork</li>
+          </value>
+        </li>
+
+        <!-- Make the newly enabled work type active for freshly initialized lifters. -->
+        <li Class="SK.PatchOperationReplaceExtended">
+          <xpath>Defs/ThingDef[defName="Mech_Lifter"]/race</xpath>
+          <value Merge="True">
+            <mechWorkTypePriorities Merge="True">
+              <NuclearWork>3</NuclearWork>
+            </mechWorkTypePriorities>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>
