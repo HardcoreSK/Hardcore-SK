@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- Terraforming -->
 
@@ -37,6 +37,9 @@
 		<soundInteract>Wood_Drop</soundInteract>
 		<soundDrop>Wood_Drop</soundDrop>
 		<stackLimit>900</stackLimit>
+		<!-- Controls how many resources are generated when drilling -->
+		<deepCountPerPortion>50</deepCountPerPortion>
+
 		<statBases>
 			<MarketValue>0.3</MarketValue>
 			<DeteriorationRate>0</DeteriorationRate>
@@ -62,6 +65,9 @@
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Metal_Drop</soundDrop>
 		<stackLimit>900</stackLimit>
+		<!-- Controls how many resources are generated when drilling -->
+		<deepCountPerPortion>30</deepCountPerPortion>
+
 		<statBases>
 			<MarketValue>0.3</MarketValue>
 			<DeteriorationRate>0</DeteriorationRate>

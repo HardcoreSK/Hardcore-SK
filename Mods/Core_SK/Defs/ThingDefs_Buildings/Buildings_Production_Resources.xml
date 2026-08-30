@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!--
+	<!--
     DefOverwrite list:
     FueledSmithy
     TableStonecutter
@@ -10,8 +10,8 @@
     ElectricSmithy
     DeepDrill
     -->
-    
-    <!--Wood-->
+
+	<!--Wood-->
 
 	<ThingDef ParentName="SK_WorkTable">
 		<defName>TableSawmillHand</defName>
@@ -38,13 +38,13 @@
 			<Flammability>1.0</Flammability>
 			<Cleanliness>-7</Cleanliness>
 			<Mass>500</Mass>
-            <OutdoorWorkRateFactor>1.0</OutdoorWorkRateFactor>
+			<OutdoorWorkRateFactor>1.0</OutdoorWorkRateFactor>
 		</statBases>
 		<size>(3,1)</size>
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<building>
-            <workTableNotInRoomRoleFactor>1.0</workTableNotInRoomRoleFactor>
+			<workTableNotInRoomRoleFactor>1.0</workTableNotInRoomRoleFactor>
 			<uninstallWork>1250</uninstallWork>
 		</building>
 		<recipes>
@@ -101,7 +101,7 @@
 			<Flammability>1.0</Flammability>
 			<Cleanliness>-3</Cleanliness>
 			<Mass>500</Mass>
-            <OutdoorWorkRateFactor>1.0</OutdoorWorkRateFactor>
+			<OutdoorWorkRateFactor>1.0</OutdoorWorkRateFactor>
 		</statBases>
 		<size>(3,1)</size>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -137,8 +137,8 @@
 				<heatPerSecond>6</heatPerSecond>
 				<heatPushMaxTemperature>35</heatPushMaxTemperature>
 			</li>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -149,8 +149,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 	</ThingDef>
-    
-    <!--Glass-->
+
+	<!--Glass-->
 
 	<ThingDef Class="SK.ThingDef_AnimatedWorktable" ParentName="SK_WorkTable">
 		<defName>GlassworkTable</defName>
@@ -202,8 +202,8 @@
 		</recipes>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>Small_ToolCabinet</li>
@@ -241,8 +241,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
 	</ThingDef>
-    
-    <!--Stone-->
+
+	<!--Stone-->
 
 	<ThingDef ParentName="SK_WorkTable">
 		<defName>TableStonecutterNeolithic</defName>
@@ -284,7 +284,7 @@
 		<designationCategory>Production</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<building>
-            <workTableNotInRoomRoleFactor>1.0</workTableNotInRoomRoleFactor>
+			<workTableNotInRoomRoleFactor>1.0</workTableNotInRoomRoleFactor>
 			<uninstallWork>1450</uninstallWork>
 		</building>
 		<placeWorkers>
@@ -292,8 +292,8 @@
 		</placeWorkers>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</ThingDef>
-    
-    <!--Concrete-->
+
+	<!--Concrete-->
 
 	<ThingDef ParentName="SK_WorkTable">
 		<defName>ConcreteMixer</defName>
@@ -419,8 +419,8 @@
 					<li>PodChair</li>
 				</linkableFacilities>
 			</li>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -431,8 +431,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>11</constructionSkillPrerequisite>
 	</ThingDef>
-    
-    <!--Chemistry-->
+
+	<!--Chemistry-->
 
 	<ThingDef ParentName="SK_WorkTable">
 		<defName>TableChemlab</defName>
@@ -505,8 +505,8 @@
 				<heatPerSecond>4.5</heatPerSecond>
 				<heatPushMaxTemperature>45</heatPushMaxTemperature>
 			</li>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<researchPrerequisites>
 			<li>Oil_Industry_C5</li>
@@ -518,8 +518,8 @@
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
 
-    
-    <!--Extractors-->
+
+	<!--Extractors-->
 
 	<ThingDef ParentName="StandardBuilding">
 		<defName>Extractor</defName>
@@ -569,7 +569,10 @@
 				<glowColor>(255,0,0,0)</glowColor>
 			</li>
 			<li Class="CompProperties_CreatesInfestations" />
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
+			<li>
+				<compClass>SK.CompAutoExtractorLimit</compClass>
+			</li>
 		</comps>
 		<size>(3,3)</size>
 		<stuffCategories>
@@ -648,7 +651,10 @@
 				<heatPushMaxTemperature>1500</heatPushMaxTemperature>
 			</li>
 			<li Class="CompProperties_CreatesInfestations" />
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
+			<li>
+				<compClass>SK.CompAutoExtractorLimit</compClass>
+			</li>
 		</comps>
 		<size>(5,5)</size>
 		<stuffCategories>

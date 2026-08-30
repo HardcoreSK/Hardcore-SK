@@ -22,7 +22,7 @@
                 </damageData>
             </graphicData>
             <staticSunShadowHeight>0</staticSunShadowHeight>
-            <constructEffect IsNull="true"/>
+            <constructEffect IsNull="true" />
             <stuffCategories>
                 <li>StrongMetallic</li>
             </stuffCategories>
@@ -57,8 +57,8 @@
                         <li>CookingTools</li>
                     </linkableFacilities>
                 </li>
-                <li Class="CompProperties_Flickable"/>
-                <li Class="CompProperties_Breakdownable"/>
+                <li Class="CompProperties_Flickable" />
+                <li Class="CompProperties_Breakdownable" />
             </comps>
             <recipes>
                 <li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFood</li>
@@ -108,7 +108,7 @@
                 </damageData>
             </graphicData>
             <staticSunShadowHeight>0</staticSunShadowHeight>
-            <constructEffect IsNull="true"/>
+            <constructEffect IsNull="true" />
             <stuffCategories>
                 <li>RuggedMetallic</li>
             </stuffCategories>
@@ -152,8 +152,8 @@
                     <glowRadius>3</glowRadius>
                     <glowColor>(217,112,33,0)</glowColor>
                 </li>
-                <li Class="CompProperties_Flickable"/>
-                <li Class="CompProperties_Breakdownable"/>
+                <li Class="CompProperties_Flickable" />
+                <li Class="CompProperties_Breakdownable" />
                 <li Class="CompProperties_HeatPusher">
                     <compClass>CompHeatPusherPowered</compClass>
                     <heatPerSecond>9.5</heatPerSecond>
@@ -206,7 +206,7 @@
             </graphicData>
             <defaultPlacingRot>West</defaultPlacingRot>
             <staticSunShadowHeight>0</staticSunShadowHeight>
-            <constructEffect IsNull="true"/>
+            <constructEffect IsNull="true" />
             <stuffCategories>
                 <li>RuggedMetallic</li>
             </stuffCategories>
@@ -245,13 +245,13 @@
                         <li>PodChair</li>
                     </linkableFacilities>
                 </li>
-                <li Class="CompProperties_Flickable"/>
-                <li Class="CompProperties_Breakdownable"/>
+                <li Class="CompProperties_Flickable" />
+                <li Class="CompProperties_Breakdownable" />
             </comps>
             <building Merge="true">
                 <heatPerTickWhileWorking>0.8</heatPerTickWhileWorking>
             </building>
-            <recipes IsNull="True"/>
+            <recipes IsNull="True" />
             <designationHotKey>Misc5</designationHotKey>
             <placeWorkers>
                 <li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -301,7 +301,7 @@
                 <ElectronicComponents>5</ElectronicComponents>
                 <Mechanism>5</Mechanism>
             </costList>
-            <constructEffect IsNull="true"/>
+            <constructEffect IsNull="true" />
             <statBases Merge="true">
                 <WorkToBuild>3750</WorkToBuild>
                 <MaxHitPoints>260</MaxHitPoints>
@@ -336,8 +336,8 @@
                     <heatPerSecond>4</heatPerSecond>
                     <heatPushMaxTemperature>65</heatPushMaxTemperature>
                 </li>
-                <li Class="CompProperties_Flickable"/>
-                <li Class="CompProperties_Breakdownable"/>
+                <li Class="CompProperties_Flickable" />
+                <li Class="CompProperties_Breakdownable" />
             </comps>
             <researchPrerequisites>
                 <li>Metals_C1</li>
@@ -377,14 +377,17 @@
             </statBases>
             <tickerType>Rare</tickerType>
             <comps>
-                <li Class="CompProperties_Forbiddable"/>
-                <li Class="CompProperties_Flickable"/>
+                <li Class="CompProperties_Forbiddable" />
+                <li Class="CompProperties_Flickable" />
                 <li Class="SK.CompProperties_IdlePower">
                     <basePowerConsumption>400</basePowerConsumption>
                     <idlePowerDraw>40</idlePowerDraw>
                 </li>
-                <li Class="CompProperties_DeepDrill"/>
-                <li Class="CompProperties_CreatesInfestations"/>
+                <li Class="CompProperties_DeepDrill" />
+                <li Class="CompProperties_CreatesInfestations" />
+                <li>
+                    <compClass>SK.CompBillableDrill</compClass>
+                </li>
             </comps>
             <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
         </value>
@@ -395,7 +398,7 @@
         <attribute>Class</attribute>
         <value>UniversalFermenterSK.ThingDef_UF</value>
     </Operation>
-	
+
     <Operation Class="PatchOperationAttributeSet">
         <xpath>Defs/ThingDef[defName="BiofuelRefinery"]</xpath>
         <attribute>ParentName</attribute>
@@ -430,12 +433,12 @@
                     <shortCircuitInRain>true</shortCircuitInRain>
                     <idlePowerDraw>80</idlePowerDraw>
                 </li>
-                <li Class="CompProperties_Flickable"/>
-                <li Class="CompProperties_Breakdownable"/>
+                <li Class="CompProperties_Flickable" />
+                <li Class="CompProperties_Breakdownable" />
             </comps>
-            <recipes/>
+            <recipes />
             <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
-            <inspectorTabs/>
+            <inspectorTabs />
             <!-- UF stats -->
             <showProductIcon>true</showProductIcon>
             <barOffset>(0.0, 0.25)</barOffset>
@@ -495,7 +498,7 @@
             </recipes>
             <tickerType>Normal</tickerType>
             <comps>
-                <li Class="CompProperties_Flickable"/>
+                <li Class="CompProperties_Flickable" />
                 <li Class="SK.CompProperties_IdlePower">
                     <basePowerConsumption>650</basePowerConsumption>
                     <shortCircuitInRain>true</shortCircuitInRain>
