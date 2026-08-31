@@ -48,6 +48,7 @@
 					<muzzleFlashScale>9</muzzleFlashScale>
 				</li>
 			</verbs>
+			<tools DeepReplace="True"/>
 			<comps>
 				<li Class="CombatExtended.CompProperties_FireModes" />
 				<li Class="CombatExtended.CompProperties_AmmoUser">
@@ -103,6 +104,7 @@
 				<Bulk>2.2</Bulk>
 				<Mass>1.5</Mass>
 			</statBases>
+			<tools DeepReplace="True"/>
 			<verbs>
 				<li Class="CombatExtended.VerbPropertiesCE">
 					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
