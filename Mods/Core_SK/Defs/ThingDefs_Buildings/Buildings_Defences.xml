@@ -56,59 +56,6 @@
     <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
   </ThingDef>
 
-  <!--========================= Moat =============================-->
-
-  <ThingDef ParentName="BuildingBase">
-    <defName>Moat</defName>
-    <thingClass>Building</thingClass>
-    <label>shallow moat</label>
-    <description>A light perimeter defense to slow down your enemy.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-      <texPath>Things/Building/Walls/MoatAtlas</texPath>
-      <shaderType>Transparent</shaderType>
-      <linkType>Basic</linkType>
-      <linkFlags>
-        <li>MapEdge</li>
-      </linkFlags>
-    </graphicData>
-    <building>
-      <ai_neverTrashThis>true</ai_neverTrashThis>
-      <blueprintGraphicData>
-        <texPath>Things/Building/Walls/MoatAtlasBlueprint</texPath>
-      </blueprintGraphicData>
-      <buildingTags>
-        <li>ForceBuildDuringSiege</li>
-      </buildingTags>
-    </building>
-    <altitudeLayer>LowPlant</altitudeLayer>
-    <uiIconPath>Things/Building/Walls/MenuMoatIcon</uiIconPath>
-    <pathCost>140</pathCost>
-    <pathCostIgnoreRepeat>False</pathCostIgnoreRepeat>
-    <statBases>
-      <Beauty>-20</Beauty>
-      <WorkToBuild>800</WorkToBuild>
-      <Flammability>0</Flammability>
-    </statBases>
-    <costList>
-      <SoftClay>3</SoftClay>
-      <SandResource>2</SandResource>
-    </costList>
-    <drawStyleCategory>Default1D</drawStyleCategory>
-    <blockLight>false</blockLight>
-    <holdsRoof>false</holdsRoof>
-    <rotatable>false</rotatable>
-    <neverMultiSelect>true</neverMultiSelect>
-    <terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
-    <designationCategory>Security</designationCategory>
-    <constructEffect>ConstructDirt</constructEffect>
-    <repairEffect>ConstructDirt</repairEffect>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <researchPrerequisites>
-      <li>Fortification_A1</li>
-    </researchPrerequisites>
-  </ThingDef>
-
   <!--========================= Special =============================-->
 
   <ThingDef ParentName="BuildingBase">

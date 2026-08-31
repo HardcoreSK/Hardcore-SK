@@ -168,4 +168,19 @@
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
 
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_StickySoil</defName>
+		<label>Sticky soil</label>
+		<description>Terraform for defend</description>
+		<order>11</order>
+		<defNames>
+			<li>RockyDirt-Mud</li>
+			<li>Mud-RockyDirt</li>
+			<li>RockyDirt-Quicksand</li>
+			<li>Quicksand-RockyDirt</li>
+		</defNames>
+		<designationCategory>SK_category_terraform</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
 </Defs>
