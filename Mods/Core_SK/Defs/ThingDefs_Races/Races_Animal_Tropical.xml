@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ========================== Tropical ============================ -->
+	<!-- DefOverwrite
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Cobra</defName>
 		<label>cobra</label>
@@ -81,7 +82,9 @@
 			<petness>0.05</petness>
 			<manhunterOnTameFailChance>0.33</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.60</manhunterOnDamageChance>
+			-->
 			<!-- <gestationPeriodDays>14.5</gestationPeriodDays> -->
+			<!--
 			<nameOnTameChance>1</nameOnTameChance>
 			<litterSizeCurve>
 				<points>
@@ -133,6 +136,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
 <!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Cobra</defName>
@@ -175,6 +179,7 @@
 		</lifeStages>
 	</PawnKindDef>
  -->
+	<!-- DefOverwrite
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Monkey</defName>
 		<label>monkey</label>
@@ -282,6 +287,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
 <!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Monkey</defName>
@@ -333,6 +339,7 @@
 		</lifeStages>
 	</PawnKindDef>
  -->
+	<!-- DefOverwrite
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Boomalope</defName>
 		<label>boomalope</label>
@@ -469,6 +476,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
 <!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Boomalope</defName>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Remove vanilla manhunterOnTameFailChance 0.1 so Boomalope inherits HSK 0.005 from AnimalThingBase. -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Boomalope"]/race/manhunterOnTameFailChance</xpath>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Boomalope"]</xpath>
+    <value>
+      <statBases Merge="true">
+        <Mass>70</Mass>
+        <MoveSpeed>2.3</MoveSpeed>
+        <MarketValue>900</MarketValue>
+        <MeleeDodgeChance>0.05</MeleeDodgeChance>
+        <MeleeCritChance>0</MeleeCritChance>
+        <MeleeParryChance>0.12</MeleeParryChance>
+        <ToxicResistance>0.9</ToxicResistance>
+      </statBases>
+      <tools DeepReplace="true">
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>4</power>
+          <cooldownTime>2.1</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <armorPenetrationBlunt>1.7</armorPenetrationBlunt>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+          <chanceFactor>0.2</chanceFactor>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>left hoof</label>
+          <capacities>
+            <li>Blunt</li>
+            <li>Poke</li>
+          </capacities>
+          <power>6</power>
+          <cooldownTime>2</cooldownTime>
+          <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+          <armorPenetrationSharp>1.2</armorPenetrationSharp>
+          <armorPenetrationBlunt>3.3</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>right hoof</label>
+          <capacities>
+            <li>Blunt</li>
+            <li>Poke</li>
+          </capacities>
+          <power>6</power>
+          <cooldownTime>2</cooldownTime>
+          <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+          <armorPenetrationSharp>1.2</armorPenetrationSharp>
+          <armorPenetrationBlunt>3.3</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <capacities>
+            <li>Bite</li>
+          </capacities>
+          <power>9</power>
+          <cooldownTime>2</cooldownTime>
+          <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+          <chanceFactor>0.5</chanceFactor>
+          <armorPenetrationSharp>2.2</armorPenetrationSharp>
+          <armorPenetrationBlunt>2.1</armorPenetrationBlunt>
+        </li>
+      </tools>
+      <comps DeepReplace="true">
+        <li Class="SK.CompProperties_ShearableRenameable">
+          <growthLabel>Chemical fullness</growthLabel>
+          <shearIntervalDays>4</shearIntervalDays>
+          <woolAmount>6</woolAmount>
+          <woolDef>FSX</woolDef>
+        </li>
+      </comps>
+      <race Merge="true">
+        <baseBodySize>1.3</baseBodySize>
+        <baseHungerRate>0.6</baseHungerRate>
+        <useMeatFrom>Elephant</useMeatFrom>
+        <leatherDef>Leather_Boomanimal</leatherDef>
+        <manhunterOnDamageChance>0.2</manhunterOnDamageChance>
+        <trainability>Intermediate</trainability>
+        <roamMtbDays>5</roamMtbDays>
+        <trainableTags DeepReplace="true">
+          <li>Basic</li>
+          <li>Combat</li>
+        </trainableTags>
+        <untrainableTags DeepReplace="true">
+          <li>HuntingTraining</li>
+          <li>Help</li>
+          <li>Work</li>
+        </untrainableTags>
+      </race>
+      <tradeTags Merge="true">
+        <li>CE_AnimalBoom</li>
+      </tradeTags>
+      <modExtensions Merge="true">
+        <li Class="CombatExtended.RacePropertiesExtensionCE">
+          <bodyShape>Quadruped</bodyShape>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Cobra"]</xpath>
+    <value>
+      <statBases Merge="true">
+        <Mass>2</Mass>
+        <MoveSpeed>2.9</MoveSpeed>
+        <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+        <MarketValue>600</MarketValue>
+        <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
+        <MeleeDodgeChance>0.17</MeleeDodgeChance>
+        <MeleeCritChance>0</MeleeCritChance>
+        <GermResistance>0.27</GermResistance>
+        <GermContainment>0.09</GermContainment>
+        <FilthRate>1</FilthRate>
+      </statBases>
+      <tools DeepReplace="true">
+        <li Class="CombatExtended.ToolCE">
+          <label>venom-fangs</label>
+          <capacities>
+            <li>ToxicBite</li>
+          </capacities>
+          <power>6</power>
+          <cooldownTime>1.2</cooldownTime>
+          <chanceFactor>2</chanceFactor>
+          <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+          <surpriseAttack>
+            <extraMeleeDamages>
+              <li>
+                <def>Stun</def>
+                <amount>21</amount>
+              </li>
+            </extraMeleeDamages>
+          </surpriseAttack>
+          <armorPenetrationSharp>1.2</armorPenetrationSharp>
+          <armorPenetrationBlunt>0.3</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>1</power>
+          <cooldownTime>1.2</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+          <chanceFactor>0.2</chanceFactor>
+          <armorPenetrationBlunt>0.225</armorPenetrationBlunt>
+        </li>
+      </tools>
+      <comps Merge="true">
+        <li Class="CompProperties_EggLayer">
+          <eggUnfertilizedDef>EggCobraUnfertilized</eggUnfertilizedDef>
+          <eggFertilizedDef>EggCobraFertilized</eggFertilizedDef>
+          <eggFertilizationCountMax>1</eggFertilizationCountMax>
+          <eggLayIntervalDays>8.5</eggLayIntervalDays>
+          <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+          <eggCountRange>1~3</eggCountRange>
+        </li>
+      </comps>
+      <butcherProducts DeepReplace="true">
+        <PoisonGland>1</PoisonGland>
+      </butcherProducts>
+      <race Merge="true">
+        <maxPreyBodySize>0.4</maxPreyBodySize>
+        <baseHungerRate>0.3</baseHungerRate>
+        <baseHealthScale>0.4</baseHealthScale>
+        <useMeatFrom>Elephant</useMeatFrom>
+        <trainability>Intermediate</trainability>
+        <manhunterOnTameFailChance>0.33</manhunterOnTameFailChance>
+        <manhunterOnDamageChance>0.60</manhunterOnDamageChance>
+        <litterSizeCurve>
+          <points>
+            <li>(0.5, 0)</li>
+            <li>(1, 1)</li>
+            <li>(3, 1)</li>
+            <li>(3.5, 0)</li>
+          </points>
+        </litterSizeCurve>
+        <trainableTags DeepReplace="true">
+          <li>Basic</li>
+          <li>Combat</li>
+        </trainableTags>
+        <untrainableTags DeepReplace="true">
+          <li>Help</li>
+          <li>Work</li>
+        </untrainableTags>
+      </race>
+      <modExtensions Merge="true">
+        <li Class="CombatExtended.RacePropertiesExtensionCE">
+          <bodyShape>Serpentine</bodyShape>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Monkey"]</xpath>
+    <value>
+      <statBases Merge="true">
+        <Mass>15</Mass>
+        <MoveSpeed>5.5</MoveSpeed>
+        <MarketValue>500</MarketValue>
+        <ImmunityGainSpeed>1.1</ImmunityGainSpeed>
+        <MeleeDodgeChance>0.23</MeleeDodgeChance>
+        <MeleeCritChance>0</MeleeCritChance>
+        <Wildness>0.50</Wildness>
+      </statBases>
+      <tools DeepReplace="true">
+        <li Class="CombatExtended.ToolCE">
+          <label>left fist</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>3</power>
+          <cooldownTime>1.3</cooldownTime>
+          <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+          <armorPenetrationBlunt>1</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>right fist</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>3</power>
+          <cooldownTime>1.3</cooldownTime>
+          <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+          <armorPenetrationBlunt>1</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <capacities>
+            <li>Bite</li>
+          </capacities>
+          <power>4</power>
+          <cooldownTime>1.45</cooldownTime>
+          <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+          <chanceFactor>0.5</chanceFactor>
+          <armorPenetrationSharp>1.1</armorPenetrationSharp>
+          <armorPenetrationBlunt>0.7</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>2</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+          <chanceFactor>0.2</chanceFactor>
+          <armorPenetrationBlunt>1.1</armorPenetrationBlunt>
+        </li>
+      </tools>
+      <race Merge="true">
+        <petness>0.5</petness>
+        <baseBodySize>0.75</baseBodySize>
+        <baseHungerRate>0.5</baseHungerRate>
+        <useMeatFrom>Elephant</useMeatFrom>
+        <trainability>Advanced</trainability>
+        <manhunterOnDamageChance>0</manhunterOnDamageChance>
+        <nuzzleMtbHours>42</nuzzleMtbHours>
+        <lifeStageAges Inherit="False" DeepReplace="true">
+          <li>
+            <def>AnimalBaby</def>
+            <minAge>0</minAge>
+          </li>
+          <li>
+            <def>AnimalJuvenile</def>
+            <minAge>0.2</minAge>
+          </li>
+          <li>
+            <def>AnimalAdult</def>
+            <minAge>0.3333</minAge>
+            <soundWounded>Pawn_Monkey_Wounded</soundWounded>
+            <soundDeath>Pawn_Monkey_Death</soundDeath>
+            <soundCall>Pawn_Monkey_Call</soundCall>
+            <soundAngry>Pawn_Monkey_Angry</soundAngry>
+          </li>
+        </lifeStageAges>
+      </race>
+      <modExtensions Merge="true">
+        <li Class="CombatExtended.RacePropertiesExtensionCE">
+          <bodyShape>Humanoid</bodyShape>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+</Patch>

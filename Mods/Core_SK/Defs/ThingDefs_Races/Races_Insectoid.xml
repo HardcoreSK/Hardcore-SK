@@ -131,6 +131,13 @@
 				<hotKey>Misc4</hotKey>
 				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
 			</li>
+			<li Class="CombatExtended.CompProperties_ArmorDurability">
+				<Durability>150</Durability>
+				<Regenerates>true</Regenerates>
+				<RegenInterval>600</RegenInterval>
+				<RegenValue>5</RegenValue>
+				<MinArmorPct>0.5</MinArmorPct>
+			</li>
 		</comps>
 		<butcherProducts>
 			<Chitin>10</Chitin>
@@ -234,8 +241,8 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-    
-    <!-- ====================================================== -->
+
+	<!-- ====================================================== -->
 
 	<ThingDef ParentName="InstectoidBase">
 		<defName>Venetis</defName>
@@ -331,6 +338,13 @@
 				<chargeNoun>jump</chargeNoun>
 				<hotKey>Misc4</hotKey>
 				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+			<li Class="CombatExtended.CompProperties_ArmorDurability">
+				<Durability>120</Durability>
+				<Regenerates>true</Regenerates>
+				<RegenInterval>600</RegenInterval>
+				<RegenValue>5</RegenValue>
+				<MinArmorPct>0.5</MinArmorPct>
 			</li>
 		</comps>
 		<butcherProducts>
@@ -519,6 +533,15 @@
 				<armorPenetrationBlunt>6</armorPenetrationBlunt>
 			</li>
 		</tools>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ArmorDurability">
+				<Durability>500</Durability>
+				<Regenerates>true</Regenerates>
+				<RegenInterval>600</RegenInterval>
+				<RegenValue>5</RegenValue>
+				<MinArmorPct>0.5</MinArmorPct>
+			</li>
+		</comps>
 		<butcherProducts>
 			<Chitin>25</Chitin>
 		</butcherProducts>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ========================== Temperate ============================ -->
+	<!-- DefOverwrite
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Deer</defName>
 		<label>deer</label>
@@ -120,6 +121,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
 <!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Deer</defName>
@@ -194,6 +196,7 @@
 		</lifeStages>
 	</PawnKindDef>
  -->
+	<!-- DefOverwrite
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Ibex</defName>
 		<label>ibex</label>
@@ -317,6 +320,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
 <!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Ibex</defName>
@@ -391,6 +395,7 @@
 		</lifeStages>
 	</PawnKindDef>
  -->
+	<!-- DefOverwrite
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Elk</defName>
 		<label>elk</label>
@@ -418,7 +423,9 @@
 		</comps>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
+				-->
 				<!--<id>lefthoofblunt</id>-->
+				<!--
 				<label>left hoof</label>
 				<capacities>
 					<li>Blunt</li>
@@ -429,7 +436,9 @@
 				<armorPenetrationBlunt>4.7</armorPenetrationBlunt>
 			</li>
 			<li Class="CombatExtended.ToolCE">
+				-->
 				<!--<id>righthoofblunt</id>-->
+				<!--
 				<label>right hoof</label>
 				<capacities>
 					<li>Blunt</li>
@@ -521,6 +530,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
 <!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Elk</defName>
@@ -599,6 +609,7 @@
 		</lifeStages>
 	</PawnKindDef>
  -->
+	<!-- DefOverwrite
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Caribou</defName>
 		<label>caribou</label>
@@ -724,6 +735,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
 <!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Caribou</defName>
@@ -778,6 +790,7 @@
 		</lifeStages>
 	</PawnKindDef>
  -->
+	<!-- DefOverwrite
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>WildBoar</defName>
 		<label>wild boar</label>
@@ -908,6 +921,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
 <!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>WildBoar</defName>
@@ -961,6 +975,7 @@
 		</lifeStages>
 	</PawnKindDef>
  -->
+	<!-- DefOverwrite
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Tortoise</defName>
 		<label>tortoise</label>
@@ -1068,6 +1083,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
 <!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Tortoise</defName>

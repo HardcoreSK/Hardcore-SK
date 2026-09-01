@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Megascarab"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.SK_InsectThingBaseDummy</value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Megascarab"]</xpath>
+    <value>
+      <label>Megascarab</label>
+      <description>A large, genetically-engineered beetle. What was once the worker caste of an artifical ecosystem of insectoids designed to fight Mechanoid invasions, it is now usually seen without its deadlier insectoid cousins. Still, its size and hard shell make it dangerous when it attacks. An eusocial creature, it cannot reproduce individually.</description>
+      <statBases Merge="true">
+        <Mass>15</Mass>
+        <MoveSpeed>4.1</MoveSpeed>
+        <ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+        <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+        <MarketValue>250</MarketValue>
+        <ImmunityGainSpeed>2.5</ImmunityGainSpeed>
+        <MeleeDodgeChance>0</MeleeDodgeChance>
+        <MeleeCritChance>0.02</MeleeCritChance>
+        <Wildness>0.82</Wildness>
+      </statBases>
+      <tools DeepReplace="true">
+        <li Class="CombatExtended.ToolCE">
+          <capacities>
+            <li>Bite</li>
+          </capacities>
+          <power>4</power>
+          <cooldownTime>1.8</cooldownTime>
+          <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+          <armorPenetrationSharp>1.8</armorPenetrationSharp>
+          <armorPenetrationBlunt>1.6</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>2</power>
+          <cooldownTime>1.45</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+          <chanceFactor>0.2</chanceFactor>
+          <armorPenetrationBlunt>1.5</armorPenetrationBlunt>
+        </li>
+      </tools>
+      <comps Merge="true">
+          <li Class="SK.CompProperties_ShearableRenameable">
+            <compClass>SK.CompShearableRenameable</compClass>
+            <growthLabel>Chitin</growthLabel>
+            <woolDef>Chitin</woolDef>
+            <shearIntervalDays>5</shearIntervalDays>
+            <woolAmount>30</woolAmount>
+          </li>
+          <li Class="CombatExtended.CompProperties_ArmorDurability">
+            <Durability>150</Durability>
+            <Regenerates>true</Regenerates>
+            <RegenInterval>600</RegenInterval>
+            <RegenValue>5</RegenValue>
+            <MinArmorPct>0.5</MinArmorPct>
+          </li>
+      </comps>
+      <butcherProducts DeepReplace="true">
+        <Chitin>5</Chitin>
+      </butcherProducts>
+      <race Merge="true">
+        <baseBodySize>0.35</baseBodySize>
+        <baseHungerRate>0.4</baseHungerRate>
+        <baseHealthScale>0.75</baseHealthScale>
+        <trainableTags DeepReplace="true">
+          <li>Basic</li>
+          <li>Combat</li>
+        </trainableTags>
+        <untrainableTags DeepReplace="true">
+          <li>Help</li>
+          <li>Work</li>
+        </untrainableTags>
+        <lifeStageAges Inherit="False" DeepReplace="true">
+          <li>
+            <def>EusocialInsectLarva</def>
+            <minAge>0</minAge>
+          </li>
+          <li>
+            <def>EusocialInsectJuvenile</def>
+            <minAge>0.03</minAge>
+          </li>
+          <li>
+            <def>EusocialInsectAdultShearable</def>
+            <minAge>0.4</minAge>
+            <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+            <soundDeath>Pawn_Megascarab_Death</soundDeath>
+            <soundCall>Pawn_Megascarab_Call</soundCall>
+            <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+          </li>
+        </lifeStageAges>
+      </race>
+      <modExtensions Merge="true">
+        <li Class="CombatExtended.RacePropertiesExtensionCE">
+          <bodyShape>Serpentine</bodyShape>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Megaspider"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.SK_InsectThingBaseDummy</value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Megaspider"]</xpath>
+    <value>
+      <description>Not actually a spider, the megaspider is a genetically-engineered giant insectoid the size of a bear. Designed for heavy work and combat, its thick chitinous armor makes it hard to kill, while its long deadly ripper-blades make it deadly.</description>
+      <statBases Merge="true">
+        <Mass>140</Mass>
+        <MoveSpeed>3.5</MoveSpeed>
+        <MarketValue>700</MarketValue>
+        <ArmorRating_Blunt>7</ArmorRating_Blunt>
+        <ArmorRating_Sharp>1.8</ArmorRating_Sharp>
+        <MeleeDodgeChance>0</MeleeDodgeChance>
+        <MeleeCritChance>0</MeleeCritChance>
+        <Wildness>0.9</Wildness>
+      </statBases>
+      <tools DeepReplace="true">
+        <li Class="CombatExtended.ToolCE">
+          <capacities>
+            <li>Stab</li>
+          </capacities>
+          <power>12</power>
+          <cooldownTime>1.33</cooldownTime>
+          <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+          <armorPenetrationSharp>4.5</armorPenetrationSharp>
+          <armorPenetrationBlunt>7.5</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <capacities>
+            <li>Cut</li>
+          </capacities>
+          <power>20</power>
+          <cooldownTime>2.1</cooldownTime>
+          <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+          <armorPenetrationSharp>4</armorPenetrationSharp>
+          <armorPenetrationBlunt>8.5</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>15</power>
+          <cooldownTime>3.65</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+          <chanceFactor>0.2</chanceFactor>
+          <armorPenetrationBlunt>11</armorPenetrationBlunt>
+        </li>
+      </tools>
+      <comps Merge="true">
+          <li Class="SK.CompProperties_ShearableRenameable">
+            <compClass>SK.CompShearableRenameable</compClass>
+            <growthLabel>Chitin</growthLabel>
+            <woolDef>Chitin</woolDef>
+            <shearIntervalDays>5</shearIntervalDays>
+            <woolAmount>60</woolAmount>
+          </li>
+          <li Class="CombatExtended.CompProperties_ArmorDurability">
+            <Durability>750</Durability>
+            <Regenerates>true</Regenerates>
+            <RegenInterval>600</RegenInterval>
+            <RegenValue>5</RegenValue>
+            <MinArmorPct>0.5</MinArmorPct>
+          </li>
+      </comps>
+      <butcherProducts DeepReplace="true">
+        <Chitin>25</Chitin>
+      </butcherProducts>
+      <race Merge="true">
+        <baseHungerRate>0.9</baseHungerRate>
+        <baseBodySize>1.0</baseBodySize>
+        <baseHealthScale>3.4</baseHealthScale>
+        <gestationPeriodDays>7</gestationPeriodDays>
+        <trainability>Intermediate</trainability>
+        <trainableTags DeepReplace="true">
+          <li>Basic</li>
+          <li>Combat</li>
+        </trainableTags>
+        <untrainableTags DeepReplace="true">
+          <li>Help</li>
+          <li>Work</li>
+        </untrainableTags>
+        <lifeStageAges Inherit="False" DeepReplace="true">
+          <li>
+            <def>EusocialInsectLarva</def>
+            <minAge>0</minAge>
+          </li>
+          <li>
+            <def>EusocialInsectJuvenile</def>
+            <minAge>0.03</minAge>
+          </li>
+          <li>
+            <def>EusocialInsectAdultShearable</def>
+            <minAge>0.2</minAge>
+            <soundWounded>Pawn_BigInsect_Pain</soundWounded>
+            <soundDeath>Pawn_BigInsect_Death</soundDeath>
+            <soundCall>Pawn_BigInsect_Call</soundCall>
+            <soundAngry>Pawn_BigInsect_Angry</soundAngry>
+          </li>
+        </lifeStageAges>
+      </race>
+      <modExtensions Merge="true">
+        <li Class="CombatExtended.RacePropertiesExtensionCE">
+          <bodyShape>QuadrupedLow</bodyShape>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Spelopede"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.SK_InsectThingBaseDummy</value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Spelopede"]</xpath>
+    <value>
+      <label>Spelopede</label>
+      <description>A medium-sized bioengineered bug the size of a sheep. The spelopede is the middle caste of a hive, taking care of most work tasks as well as fighting with its claws.</description>
+      <statBases Merge="true">
+        <Mass>80</Mass>
+        <MoveSpeed>3.8</MoveSpeed>
+        <MarketValue>450</MarketValue>
+        <ArmorRating_Blunt>4</ArmorRating_Blunt>
+        <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+        <MeleeDodgeChance>0</MeleeDodgeChance>
+        <MeleeCritChance>0.12</MeleeCritChance>
+        <Wildness>0.82</Wildness>
+      </statBases>
+      <tools DeepReplace="true">
+        <li Class="CombatExtended.ToolCE">
+          <capacities>
+            <li>Cut</li>
+          </capacities>
+          <power>13</power>
+          <cooldownTime>1.8</cooldownTime>
+          <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+          <armorPenetrationSharp>2.2</armorPenetrationSharp>
+          <armorPenetrationBlunt>2</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>3</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+          <chanceFactor>0.2</chanceFactor>
+          <armorPenetrationBlunt>2</armorPenetrationBlunt>
+        </li>
+      </tools>
+      <comps Merge="true">
+          <li Class="SK.CompProperties_ShearableRenameable">
+            <compClass>SK.CompShearableRenameable</compClass>
+            <growthLabel>Chitin</growthLabel>
+            <woolDef>Chitin</woolDef>
+            <shearIntervalDays>5</shearIntervalDays>
+            <woolAmount>45</woolAmount>
+          </li>
+          <li Class="CombatExtended.CompProperties_ArmorDurability">
+            <Durability>500</Durability>
+            <Regenerates>true</Regenerates>
+            <RegenInterval>600</RegenInterval>
+            <RegenValue>5</RegenValue>
+            <MinArmorPct>0.5</MinArmorPct>
+          </li>
+      </comps>
+      <butcherProducts DeepReplace="true">
+        <Chitin>15</Chitin>
+      </butcherProducts>
+      <race Merge="true">
+        <baseHungerRate>0.7</baseHungerRate>
+        <baseBodySize>0.7</baseBodySize>
+        <baseHealthScale>2.25</baseHealthScale>
+        <gestationPeriodDays>12</gestationPeriodDays>
+        <trainability>Intermediate</trainability>
+        <trainableTags DeepReplace="true">
+          <li>Basic</li>
+          <li>Combat</li>
+        </trainableTags>
+        <untrainableTags DeepReplace="true">
+          <li>Help</li>
+          <li>Work</li>
+        </untrainableTags>
+        <lifeStageAges Inherit="False" DeepReplace="true">
+          <li>
+            <def>EusocialInsectLarva</def>
+            <minAge>0</minAge>
+          </li>
+          <li>
+            <def>EusocialInsectJuvenile</def>
+            <minAge>0.03</minAge>
+          </li>
+          <li>
+            <def>EusocialInsectAdultShearable</def>
+            <minAge>0.2</minAge>
+            <soundWounded>Pawn_Spelopede_Pain</soundWounded>
+            <soundDeath>Pawn_Spelopede_Death</soundDeath>
+            <soundCall>Pawn_Spelopede_Call</soundCall>
+            <soundAngry>Pawn_Spelopede_Angry</soundAngry>
+          </li>
+        </lifeStageAges>
+      </race>
+      <modExtensions Merge="true">
+        <li Class="CombatExtended.RacePropertiesExtensionCE">
+          <bodyShape>QuadrupedLow</bodyShape>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+</Patch>
