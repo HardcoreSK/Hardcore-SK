@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <WorkGiverDef ParentName="DeliverRoofMaterials">
+        <defName>SolarWeb-Stratum-DeliverRoofIngredientsHaul</defName>
+        <label>deliver roof materials (haul)</label>
+        <workType>Hauling</workType>
+        <priorityInType>46</priorityInType>
+        <!-- remove SurvivalToolsLite.WorkGiverExtension of required ConstructionSpeed -->
+        <modExtensions Inherit="False" />
+      </WorkGiverDef>
+
+</Defs>
