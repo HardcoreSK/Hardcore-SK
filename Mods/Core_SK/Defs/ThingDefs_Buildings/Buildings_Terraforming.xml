@@ -1089,4 +1089,96 @@
     </statBases>
   </ThingDef>-->
 
+<!--––––––––––––––––––––––––––––––––   Terraform for defend   ––––––––––––––––––––––––––––––-->
+
+	<ThingDef ParentName="RFF_TerraformBasicBase">
+		<defName>RockyDirt-Mud</defName>
+		<label>RockyDirt ► Mud</label>
+		<description>↑ Rocky dirt\n\n↓ Mud</description>
+		<uiIconPath>UI/Icons/Terraforming/RockyDirt-Mud</uiIconPath>
+		<modExtensions>
+			<li Class="FertileFields.Terrain">
+				<above>
+					<li>RockySoil</li>
+				</above>
+				<result>Mud</result>
+			</li>
+		</modExtensions>
+		<statBases>
+			<WorkToBuild>1140</WorkToBuild>
+		</statBases>
+		<costList>
+			<SoftClay>10</SoftClay>
+			<SandResource>10</SandResource>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="RFF_TerraformBasicBase">
+		<defName>Mud-RockyDirt</defName>
+		<label>Mud ► Rocky dirt</label>
+		<description>↑ Mud \n\n↓ Rocky dirt\n\n  ▪ 10 soft clay\n  ▪ 10 sand</description>
+		<uiIconPath>UI/Icons/Terraforming/Mud-RockyDirt</uiIconPath>
+		<modExtensions>
+			<li Class="FertileFields.Terrain">
+				<above>
+					<li>Mud</li>
+				</above>
+				<result>RockySoil</result>
+				<products>
+					<SoftClay>10</SoftClay>
+					<SandResource>10</SandResource>
+				</products>
+			</li>
+		</modExtensions>
+		<statBases>
+			<WorkToBuild>1140</WorkToBuild>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="RFF_TerraformAdvancedBase">
+		<defName>RockyDirt-Quicksand</defName>
+		<label>RockyDirt ► Quicksand</label>
+		<description>↑ Rocky dirt\n\n↓ Quicksand</description>
+		<uiIconPath>UI/Icons/Terraforming/RockyDirt-Quicksand</uiIconPath>
+		<modExtensions>
+			<li Class="FertileFields.Terrain">
+				<above>
+					<li>RockySoil</li>
+				</above>
+				<result>Quicksand</result>
+			</li>
+		</modExtensions>
+		<statBases>
+			<WorkToBuild>1240</WorkToBuild>
+		</statBases>
+		<costList>
+			<SoftClay>10</SoftClay>
+			<SandResource>10</SandResource>
+			<Polymers>2</Polymers>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="RFF_TerraformAdvancedBase">
+		<defName>Quicksand-RockyDirt</defName>
+		<label>Quicksand ► Rocky dirt</label>
+		<description>↑ Quicksand \n\n↓ Rocky dirt\n\n  ▪ 10 soft clay\n  ▪ 10 sand\n  ▪ 2 polymers</description>
+		<uiIconPath>UI/Icons/Terraforming/Quicksand-RockyDirt</uiIconPath>
+		<modExtensions>
+			<li Class="FertileFields.Terrain">
+				<above>
+					<li>Quicksand</li>
+				</above>
+				<result>RockySoil</result>
+				<products>
+					<SoftClay>10</SoftClay>
+					<SandResource>10</SandResource>
+					<Polymers>2</Polymers>
+				</products>
+			</li>
+		</modExtensions>
+		<statBases>
+			<WorkToBuild>1240</WorkToBuild>
+		</statBases>
+	</ThingDef>
+
 </Defs>
