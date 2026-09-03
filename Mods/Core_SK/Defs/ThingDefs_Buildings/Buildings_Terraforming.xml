@@ -1092,16 +1092,16 @@
 <!--––––––––––––––––––––––––––––––––   Terraform for defend   ––––––––––––––––––––––––––––––-->
 
 	<ThingDef ParentName="RFF_TerraformBasicBase">
-		<defName>RockyDirt-Mud</defName>
-		<label>RockyDirt ► Mud</label>
-		<description>↑ Rocky dirt\n\n↓ Mud</description>
-		<uiIconPath>UI/Icons/Terraforming/RockyDirt-Mud</uiIconPath>
+		<defName>RockyDirt-LoamSoil</defName>
+		<label>Rocky dirt ► Loam soil</label>
+		<description>↑ Rocky dirt\n\n↓ Loam soil</description>
+		<uiIconPath>UI/Icons/Terraforming/RockyDirt-LoamSoil</uiIconPath>
 		<modExtensions>
 			<li Class="FertileFields.Terrain">
 				<above>
 					<li>RockySoil</li>
 				</above>
-				<result>Mud</result>
+				<result>LoamSoil</result>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -1114,14 +1114,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="RFF_TerraformBasicBase">
-		<defName>Mud-RockyDirt</defName>
-		<label>Mud ► Rocky dirt</label>
-		<description>↑ Mud \n\n↓ Rocky dirt\n\n  ▪ 10 soft clay\n  ▪ 10 sand</description>
-		<uiIconPath>UI/Icons/Terraforming/Mud-RockyDirt</uiIconPath>
+		<defName>LoamSoil-RockyDirt</defName>
+		<label>Loam soil ► Rocky dirt</label>
+		<description>↑ Loam soil \n\n↓ Rocky dirt\n\n  ▪ 10 soft clay\n  ▪ 10 sand</description>
+		<uiIconPath>UI/Icons/Terraforming/LoamSoil-RockyDirt</uiIconPath>
 		<modExtensions>
 			<li Class="FertileFields.Terrain">
 				<above>
-					<li>Mud</li>
+					<li>LoamSoil</li>
 				</above>
 				<result>RockySoil</result>
 				<products>

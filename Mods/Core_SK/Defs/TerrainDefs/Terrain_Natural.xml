@@ -716,5 +716,45 @@
 			</li>
 		</tools>
 	</TerrainDef>
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>LoamSoil</defName>
+		<label>Loam soil</label>
+		<description>Soil consisting of a mixture of sand and clay.</description>
+		<texturePath>Terrain/Surfaces/LoamSoil</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/MudPolluted</pollutedTexturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
+		<edgeType>FadeRough</edgeType>
+		<categoryType>Soil</categoryType>
+		<renderPrecedence>330</renderPrecedence>
+		<pathCost>35</pathCost>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-2</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Diggable</li>
+			<li>Bridgeable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0</fertility>
+		<takeFootprints>True</takeFootprints>
+		<avoidWander>true</avoidWander>
+		<driesTo>Soil</driesTo>
+		<tools>
+			<li>
+				<label>loam soil</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>MudInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+	</TerrainDef>
 
 </Defs>
