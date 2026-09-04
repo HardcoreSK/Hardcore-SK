@@ -47,4 +47,8 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/StatDef[defName="AimingDelayFactor"]/postProcessCurve</xpath>
+	</Operation>
+
 </Patch>
