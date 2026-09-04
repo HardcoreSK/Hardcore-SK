@@ -7,9 +7,9 @@
 			<Ammo_80x256mmFuel_Thermobaric>Bullet_80x256mmFuel_Thermobaric</Ammo_80x256mmFuel_Thermobaric>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationRemove">
+<!-- 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_80x256mmFuel"]/ammoTypes/Ammo_80x256mmFuel_Incendiary</xpath>
-	</Operation>
+	</Operation> -->
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_80x256mmFuel"]/similarTo</xpath>
 	</Operation>
@@ -31,10 +31,11 @@
 			<thingSetMakerTags Inherit="false" />
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationRemove">
+<!-- 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/ThingDef[defName="Ammo_80x256mmFuel_Incendiary" or defName="Bullet_80x256mmFuel_Incendiary"]</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
+	</Operation> -->
+	<!-- Keep the CE incendiary recipe now that the incendiary round is retained. -->
+<!-- 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/RecipeDef[defName="MakeAmmo_80x256mmFuel_Incendiary"]</xpath>
-	</Operation>
+	</Operation> -->
 </Patch>

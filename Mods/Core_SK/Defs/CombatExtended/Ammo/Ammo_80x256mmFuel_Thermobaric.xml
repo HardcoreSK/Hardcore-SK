@@ -60,4 +60,60 @@
             </li>
         </comps>
     </ThingDef>
+
+    <RecipeDef ParentName="ChargeAmmoRecipeBase">
+        <defName>MakeAmmo_80x256mmFuel_Thermobaric</defName>
+        <label>make 80x256mm fuel cell (Thermobaric) x5</label>
+        <description>Craft 5 80x256mm thermobaric fuel cells.</description>
+        <jobString>Making 80x256mm thermobaric fuel cells.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Prometheum</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>FSX</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>22</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Prometheum</li>
+                <li>FSX</li>
+                <li>Steel</li>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_80x256mmFuel_Thermobaric>5</Ammo_80x256mmFuel_Thermobaric>
+        </products>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <workAmount>8000</workAmount>
+    </RecipeDef>
 </Defs>
