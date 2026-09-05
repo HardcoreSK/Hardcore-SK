@@ -92,6 +92,7 @@
 			<li>StrongMetallic</li>
 			<li>Plastic</li>
 		</stuffCategories>
+		<costStuffCount>4</costStuffCount>
 		<costList>
 			<Mechanism>2</Mechanism>
 			<ElectronicComponents>2</ElectronicComponents>
@@ -110,7 +111,6 @@
 			<li>SolidMetallic</li>
 			<li>Plastic</li>
 		</stuffCategories>
-		<costStuffCount>2</costStuffCount>
 		<costStuffCount>4</costStuffCount>
 		<costList>
 			<Plasteel>10</Plasteel>
@@ -121,6 +121,21 @@
 			<li>Electronics_C2</li>
 			<li>Roof_D3</li>
 		</researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-SolarSkylight_Buildable"]</xpath>
+    <value Merge="true">
+		<stuffCategories DeepReplace="true">
+			<li>Glass</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+      <costList DeepReplace="true">
+        <ComponentIndustrial>4</ComponentIndustrial>
+        <Mechanism>2</Mechanism>
+        <ElectronicComponents>2</ElectronicComponents>
+      </costList>
     </value>
   </Operation>
 

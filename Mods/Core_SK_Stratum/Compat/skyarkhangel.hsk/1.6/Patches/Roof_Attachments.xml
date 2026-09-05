@@ -52,4 +52,82 @@
             <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
         </value>
     </Operation>
+
+    <!-- Bring the remaining Stratum roof attachments into HSK's component and
+         stuff economy instead of leaving their low vanilla-oriented costs. -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-PASpeaker_Hanging"]</xpath>
+        <value Merge="true">
+            <stuffCategories DeepReplace="true">
+                <li>Metallic</li>
+                <li>Woody</li>
+            </stuffCategories>
+            <costStuffCount>40</costStuffCount>
+            <costList DeepReplace="true">
+                <ComponentIndustrial>3</ComponentIndustrial>
+                <ElectronicComponents>2</ElectronicComponents>
+            </costList>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-PATransmitter"]</xpath>
+        <value Merge="true">
+            <stuffCategories DeepReplace="true">
+                <li>StrongMetallic</li>
+                <li>Plastic</li>
+            </stuffCategories>
+            <costStuffCount>60</costStuffCount>
+            <costList DeepReplace="true">
+                <Glass>15</Glass>
+                <Electronics>5</Electronics>
+                <ComponentIndustrial>5</ComponentIndustrial>
+            </costList>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RooftopScannerBooster"]</xpath>
+        <value Merge="true">
+            <stuffCategories DeepReplace="true">
+                <li>RuggedMetallic</li>
+            </stuffCategories>
+            <costStuffCount>100</costStuffCount>
+            <costList DeepReplace="true">
+                <Plastic>35</Plastic>
+                <Mechanism>5</Mechanism>
+                <ComponentIndustrial>8</ComponentIndustrial>
+                <Electronics>3</Electronics>
+            </costList>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RotaryTurbineVent"]</xpath>
+        <value Merge="true">
+            <stuffCategories DeepReplace="true">
+                <li>StrongMetallic</li>
+            </stuffCategories>
+            <costStuffCount>50</costStuffCount>
+            <costList DeepReplace="true">
+                <ComponentIndustrial>3</ComponentIndustrial>
+                <Mechanism>2</Mechanism>
+            </costList>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RooftopSolarGenerator"]</xpath>
+        <value Merge="true">
+            <stuffCategories DeepReplace="true">
+                <li>StrongMetallic</li>
+            </stuffCategories>
+            <costStuffCount>30</costStuffCount>
+            <costList DeepReplace="true">
+                <Glass>20</Glass>
+                <ComponentIndustrial>2</ComponentIndustrial>
+                <ElectronicComponents>2</ElectronicComponents>
+            </costList>
+        </value>
+    </Operation>
 </Patch>
