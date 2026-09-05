@@ -732,6 +732,9 @@
 			<li>Ceramic</li>
 		</stuffCategories>
 		<costStuffCount>100</costStuffCount>
+		<researchPrerequisites Inherit="False">
+			<li>Hygiene_31</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<!-- Spacer Toilet (base) -->
@@ -760,11 +763,11 @@
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>120</basePowerConsumption>
-				</li>
-			<li Class="CompProperties_Flickable"/>
+			</li>
+			<li Class="CompProperties_Flickable" />
 		</comps>
 		<researchPrerequisites>
-				<li MayRequire="Ludeon.RimWorld.Odyssey">OrbitalTech</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">OrbitalTech</li>
 		</researchPrerequisites>
 	</ThingDef>
 
