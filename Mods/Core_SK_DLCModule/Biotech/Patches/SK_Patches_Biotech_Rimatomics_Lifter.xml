@@ -14,9 +14,11 @@
     <match Class="PatchOperationSequence">
       <operations>
         <li Class="SK.PatchOperationReplaceExtended">
-          <xpath>Defs/ThingDef[defName="Mech_Lifter"]/race/mechEnabledWorkTypes</xpath>
+          <xpath>Defs/ThingDef[defName="Mech_Lifter"]/race</xpath>
           <value>
-            <li>NuclearWork</li>
+            <mechEnabledWorkTypes Merge="True">
+              <li>NuclearWork</li>
+            </mechEnabledWorkTypes>
           </value>
         </li>
 
