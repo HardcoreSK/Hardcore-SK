@@ -130,4 +130,27 @@
             </costList>
         </value>
     </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[
+            defName="SolarWeb-Stratum-PASpeaker_Hanging" or
+            defName="SolarWeb-Stratum-PATransmitter" or
+            defName="SolarWeb-Stratum-RooftopScannerBooster" or
+            defName="SolarWeb-Stratum-RotaryTurbineVent" or
+            defName="SolarWeb-Stratum-RooftopSolarGenerator"
+        ]/constructEffect</xpath>
+    </Operation>
+
+    <!-- Keep ArchitectSense membership aligned with the buildings' actual
+         architect tabs. Scanner and turbine memberships already live in HSK. -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[
+            defName="SolarWeb-Stratum-PASpeaker_Hanging" or
+            defName="SolarWeb-Stratum-PATransmitter"
+        ]/designationCategory</xpath>
+        <value>
+            <designationCategory>Joy</designationCategory>
+        </value>
+    </Operation>
+
 </Patch>
