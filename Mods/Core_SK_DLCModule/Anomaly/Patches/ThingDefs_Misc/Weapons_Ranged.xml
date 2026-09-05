@@ -87,4 +87,32 @@
 		</value>
 	</Operation>
 
+
+	<!-- Add quality-based weapon art without replacing existing names, traits or CE components. -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="NerveSpiker"][not(comps/li[@Class="CompProperties_Art" or @Class="RimWorld.CompProperties_Art" or compClass="CompArt" or compClass="RimWorld.CompArt"])]</xpath>
+		<match Class="SK.PatchOperationReplaceExtended">
+			<xpath>Defs/ThingDef[defName="NerveSpiker"][not(comps/li[@Class="CompProperties_Art" or @Class="RimWorld.CompProperties_Art" or compClass="CompArt" or compClass="RimWorld.CompArt"])]</xpath>
+			<value Merge="true">
+				<comps>
+					<li Class="CompProperties_Art">
+						<nameMaker>NamerArtWeaponGun</nameMaker>
+						<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+						<minQualityForArtistic>Excellent</minQualityForArtistic>
+					</li>
+				</comps>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="NerveSpiker"][not(inspectorTabs/li="ITab_Art" or inspectorTabs/li="RimWorld.ITab_Art")]</xpath>
+		<match Class="SK.PatchOperationReplaceExtended">
+			<xpath>Defs/ThingDef[defName="NerveSpiker"][not(inspectorTabs/li="ITab_Art" or inspectorTabs/li="RimWorld.ITab_Art")]</xpath>
+			<value Merge="true">
+				<inspectorTabs>
+					<li>ITab_Art</li>
+				</inspectorTabs>
+			</value>
+		</match>
+	</Operation>
 </Patch>
