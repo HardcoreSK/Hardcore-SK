@@ -157,6 +157,41 @@
 		<researchPrerequisite>Super_matter_E1</researchPrerequisite>
 	</RecipeDef>
 
+    <RecipeDef>
+    <defName>ConvertToLead</defName>
+    <label>Convert to lead ore</label>
+    <description>Convert inorganic matter into lead ore. Produces 100.</description>
+    <jobString>Converting matter into lead ore.</jobString>
+		<workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>12000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Matter</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+	    	<li>Matter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Anglesite>100</Anglesite>
+    </products>
+		<skillRequirements>
+			<Crafting>15</Crafting>
+		</skillRequirements>
+  	<workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>Super_matter_E1</researchPrerequisite>
+	</RecipeDef>
+
 	
     <!-- aluminium -->
   <RecipeDef>
