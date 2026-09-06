@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>SMQ_Monument</defName>
+    <label>monument</label>
+    <description>A simple monument. Small in size, extremely sturdy, and brimming with immense energy.</description>
+    <category>Building</category>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.35</fillPercent>
+    <passability>PassThroughOnly</passability>
+    <selectable>true</selectable>
+    <rotatable>false</rotatable>
+    <useHitPoints>true</useHitPoints>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/SMQ</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>50</Beauty>
+      <Flammability>0</Flammability>
+    </statBases>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsArt</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Art</li>
+    </tradeTags>
+    <building>
+      <blueprintClass>ZuoYao.SimpleMonumentQuest.Blueprint_SimpleMonument</blueprintClass>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+    </building>
+    <blueprintDef>Blueprint_SMQ_Monument</blueprintDef>
+    <frameDef>Frame_SMQ_Monument</frameDef>
+    <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <thingClass>ZuoYao.SimpleMonumentQuest.Building_SimpleMonument</thingClass>
+  </ThingDef>
+  <ThingDef>
+    <defName>Blueprint_SMQ_Monument</defName>
+    <label>monument blueprint</label>
+    <description>The construction blueprint for a monument.</description>
+    <category>Ethereal</category>
+    <altitudeLayer>Blueprint</altitudeLayer>
+    <selectable>true</selectable>
+    <useHitPoints>false</useHitPoints>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/SMQ</texPath>
+      <shaderType>EdgeDetect</shaderType>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <thingClass>ZuoYao.SimpleMonumentQuest.Blueprint_SimpleMonument</thingClass>
+    <entityDefToBuild>SMQ_Monument</entityDefToBuild>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>Frame_SMQ_Monument</defName>
+    <label>monument frame</label>
+    <description>A monument under construction.</description>
+    <category>Building</category>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <selectable>true</selectable>
+    <useHitPoints>true</useHitPoints>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/SMQ</texPath>
+      <shaderType>Transparent</shaderType>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <thingClass>ZuoYao.SimpleMonumentQuest.Frame_SimpleMonument</thingClass>
+    <entityDefToBuild>SMQ_Monument</entityDefToBuild>
+    <isFrameInt>true</isFrameInt>
+    <building />
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+  </ThingDef>
+</Defs>

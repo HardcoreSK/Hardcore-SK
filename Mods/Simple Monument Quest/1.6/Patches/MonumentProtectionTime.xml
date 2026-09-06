@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/QuestScriptDef[defName="BuildMonumentWorker"]</xpath>
+    <match Class="PatchOperationAttributeSet">
+      <xpath>/Defs/QuestScriptDef[defName="BuildMonumentWorker"]//*[@Class="QuestNode_Set"][name="haveToProtectForTicks"]</xpath>
+      <attribute>Class</attribute>
+      <value>ZuoYao.SimpleMonumentQuest.QuestNode_SetMonumentProtectionTime</value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/QuestScriptDef[defName="Util_Constants_Monuments"]</xpath>
+    <match Class="PatchOperationAttributeSet">
+      <xpath>/Defs/QuestScriptDef[defName="Util_Constants_Monuments"]//*[@Class="QuestNode_Set"][name="keepMonumentTicks"]</xpath>
+      <attribute>Class</attribute>
+      <value>ZuoYao.SimpleMonumentQuest.QuestNode_SetMonumentProtectionTime</value>
+    </match>
+  </Operation>
+</Patch>

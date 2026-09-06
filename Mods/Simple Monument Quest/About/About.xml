@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Simple Monument Quest</name>
+  <author>ZuoYao</author>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>
+原版纪念碑任务实在是太愚蠢了，所以我制作了这个mod，将占地庞大的建筑群改为了一个单体纪念碑！
+
+内容：
+纪念碑建筑占地1x1，所需材料和工作量按照任务要求重新计算。
+完美继承任务原有的建造、保护和奖惩流程。
+纪念碑血量按材料数量增加，与之前受损即失败不同，现在只有完全被摧毁才会导致任务失败！
+
+————————
+The original Monument quest was ridiculous, so I created this mod to change the massive complex into a single monument!
+
+Content: 
+The monument occupies a 1x1 area, and the required materials and labor have been recalculated according to the quest requirements.
+It perfectly inherits the original quest's construction, protection, and reward/penalty processes.
+The monument's health increases with the amount of materials used. Unlike before, where damage resulted in failure, now the quest only fails when the monument is completely destroyed!
+
+
+代码：左爻
+贴图及封面：堂丸
+
+鸣谢：涅瓦莲作者Keeptpa的技术支持
+</description>
+  <packageId>ZuoYao.SimpleMonumentQuest</packageId>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+  </loadAfter>
+</ModMetaData>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/StatDef[defName="MaxHitPoints"]/parts</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/StatDef[defName="MaxHitPoints"]/parts</xpath>
+      <value>
+        <li Class="ZuoYao.SimpleMonumentQuest.StatPart_SimpleMonumentHitPoints" />
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/StatDef[defName="MaxHitPoints"]</xpath>
+      <value>
+        <parts>
+          <li Class="ZuoYao.SimpleMonumentQuest.StatPart_SimpleMonumentHitPoints" />
+        </parts>
+      </value>
+    </nomatch>
+  </Operation>
+</Patch>
