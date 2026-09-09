@@ -132,7 +132,7 @@
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Gun_Spiner"]</xpath>
 		<value>
-			<statBases>
+			<statBases Merge="true">
 				<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 				<SightsEfficiency>1</SightsEfficiency>
 				<ShotSpread>0.16</ShotSpread>
