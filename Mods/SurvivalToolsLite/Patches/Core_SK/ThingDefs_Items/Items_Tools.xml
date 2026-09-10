@@ -87,11 +87,9 @@
 					<li Class="SurvivalToolsLite.SurvivalToolProperties">
 						<baseWorkStatFactors>
 							<ConstructionSpeed>1.2</ConstructionSpeed>
-							<SmithingSpeed>1.2</SmithingSpeed>
 						</baseWorkStatFactors>
 						<defaultSurvivalToolAssignmentTags>
 							<li>Constructor</li>
-							<li>Crafter</li>
 						</defaultSurvivalToolAssignmentTags>
 					</li>
 				</value>
@@ -229,7 +227,6 @@
 							<ConstructionSpeed>1.3</ConstructionSpeed>
 							<PlantHarvestingSpeed>1.3</PlantHarvestingSpeed>
 							<PlantWorkSpeed>1.2</PlantWorkSpeed>
-							<SmithingSpeed>1.3</SmithingSpeed>
 							<MedicalOperationSpeed>1.1</MedicalOperationSpeed>
 							<MedicalSurgerySuccessChance>1</MedicalSurgerySuccessChance>
 							<PruningSpeed MayRequire="ludeon.rimworld.ideology">1.5</PruningSpeed>
@@ -238,7 +235,6 @@
 							<li>Constructor</li>
 							<li>Miner</li>
 							<li>PlantWorker</li>
-							<li>Crafter</li>
 							<li>Tend</li>
 						</defaultSurvivalToolAssignmentTags>
 						<toolWearFactor>0.15</toolWearFactor>
@@ -270,11 +266,9 @@
 				<value>
 					<li Class="SurvivalToolsLite.SurvivalToolProperties">
 						<baseWorkStatFactors>
-							<SmithingSpeed>1.4</SmithingSpeed>
 							<ConstructionSpeed>1.4</ConstructionSpeed>
 						</baseWorkStatFactors>
 						<defaultSurvivalToolAssignmentTags>
-							<li>Crafter</li>
 							<li>Constructor</li>
 						</defaultSurvivalToolAssignmentTags>
 					</li>
@@ -379,7 +373,6 @@
 							<ConstructionSpeed>1</ConstructionSpeed>
 							<PlantHarvestingSpeed>0.5</PlantHarvestingSpeed>
 							<PlantWorkSpeed>1.2</PlantWorkSpeed>
-							<SmithingSpeed>1</SmithingSpeed>
 							<PruningSpeed MayRequire="ludeon.rimworld.ideology">1</PruningSpeed>
 						</baseWorkStatFactors>
 						<defaultSurvivalToolAssignmentTags>

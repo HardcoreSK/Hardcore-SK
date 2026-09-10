@@ -135,32 +135,6 @@
         </value>
     </Operation>
 	
-	
-    <Operation Class="PatchOperationSequence">
-        <success>Always</success>
-        <operations>
-            <li Class="PatchOperationTest">
-                <xpath>Defs/StatDef[defName="SmithingSpeed"]/parts</xpath>
-                <success>Invert</success>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/StatDef[defName="SmithingSpeed"]</xpath>
-                <value>
-                    <parts/>
-                </value>
-            </li>
-        </operations>
-    </Operation>
-	
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/StatDef[defName="SmithingSpeed"]/parts</xpath>
-        <value>
-            <li Class="SurvivalToolsLite.StatPart_SurvivalTool">
-				<noToolStatFactor>0.7</noToolStatFactor>
-				<noToolStatFactorHardcore>0.4</noToolStatFactorHardcore>
-            </li>
-        </value>
-    </Operation>
 
     <Operation Class="PatchOperationSequence">
         <success>Always</success>
