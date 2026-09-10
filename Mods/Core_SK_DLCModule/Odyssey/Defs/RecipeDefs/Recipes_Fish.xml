@@ -7,9 +7,9 @@
 		<description>Cut up the smaller fish, filleting the meat from the bone</description>
 		<jobString>filleting small fish.</jobString>
 		<workAmount>400</workAmount>
-		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_Drug</soundWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
 		<ingredients>
 			<li>
 				<filter>
@@ -36,7 +36,7 @@
 			<li>ButcherSpot</li>
 			<li>TableKitchen</li>
 		</recipeUsers>
-		<workSkill>Crafting</workSkill>
+		<workSkill>Cooking</workSkill>
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
 		<researchPrerequisite>Fish_A1</researchPrerequisite>
 	</RecipeDef>
