@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+    <!-- Preserve HSK race differences on the original Core defs, after CE and Core SK patches. CE owns the final tools and armor comps. -->
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[@Name="MechCentipede"]</xpath>
+        <value Merge="true">
+            <description>Heavy combat mechanoids that glide on dozens of tiny legs. Their thick carpace and firepower makes them very effective against bunched-up static defenders. They are somewhat vulnerable to mobile hit-and-run tactics.</description>
+            <race>
+                <baseBodySize>1.1</baseBodySize>
+                <baseHealthScale>4.4</baseHealthScale>
+            </race>
+            <butcherProducts DeepReplace="true">
+                <Plasteel>8</Plasteel>
+                <DepletedUranium>9</DepletedUranium>
+                <CarbonAlloy>6</CarbonAlloy>
+            </butcherProducts>
+            <modExtensions>
+                <li Class="CombatExtended.RacePropertiesExtensionCE">
+                    <bodyShape>QuadrupedLow</bodyShape>
+                </li>
+            </modExtensions>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Mech_Scyther"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>BaseMechanoid</value>
+    </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Mech_Scyther"]</xpath>
+        <value Merge="true">
+            <label>Scyther</label>
+            <description>Scythers are fast, spindly, armored human-sized combat Mechanoids. They usually carry one primary ranged weapon, and their bodies are adorned with two articulated blades to make them deadly in melee combat. They don't use cover. They are best handled by concentrated, overwhelming force.</description>
+            <statBases>
+                <Mass>130</Mass>
+                <MoveSpeed>3.9</MoveSpeed>
+                <ArmorRating_Blunt>6</ArmorRating_Blunt>
+                <ArmorRating_Sharp>4</ArmorRating_Sharp>
+                <MeatAmount>0</MeatAmount>
+                <CarryWeight>120</CarryWeight>
+                <CarryBulk>60</CarryBulk>
+                <MaxHitPoints>200</MaxHitPoints>
+                <AimingAccuracy>1.0</AimingAccuracy>
+                <ShootingAccuracyPawn>1.8</ShootingAccuracyPawn>
+                <MeleeDodgeChance>0.08</MeleeDodgeChance>
+                <MeleeCritChance>0.18</MeleeCritChance>
+                <MeleeParryChance>0.09</MeleeParryChance>
+            </statBases>
+            <race>
+                <intelligence>ToolUser</intelligence>
+                <thinkTreeMain>Mechanoid</thinkTreeMain>
+                <baseBodySize>1.1</baseBodySize>
+                <baseHealthScale>3.2</baseHealthScale>
+                <lifeStageAges DeepReplace="true">
+                    <li>
+                        <def>MechanoidFullyFormed</def>
+                        <minAge>0</minAge>
+                        <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+                        <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+                        <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+                    </li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">
+                        <def>MechanoidFullyFormed</def>
+                        <minAge>100</minAge>
+                        <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+                        <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+                        <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+                    </li>
+                </lifeStageAges>
+            </race>
+            <butcherProducts DeepReplace="true">
+                <Plasteel>4</Plasteel>
+                <DepletedUranium>5</DepletedUranium>
+                <CarbonAlloy>4</CarbonAlloy>
+            </butcherProducts>
+            <modExtensions>
+                <li Class="CombatExtended.RacePropertiesExtensionCE">
+                    <bodyShape>Humanoid</bodyShape>
+                </li>
+            </modExtensions>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Mech_Pikeman"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>BaseMechanoid</value>
+    </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Mech_Pikeman"]</xpath>
+        <value Merge="true">
+            <label>Pikeman</label>
+            <race>
+                <intelligence>ToolUser</intelligence>
+                <thinkTreeMain>Mechanoid</thinkTreeMain>
+                <baseBodySize>1.0</baseBodySize>
+                <soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+                <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+                <soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+            </race>
+            <butcherProducts DeepReplace="true">
+                <Plasteel>4</Plasteel>
+                <DepletedUranium>5</DepletedUranium>
+                <CarbonAlloy>3</CarbonAlloy>
+            </butcherProducts>
+            <modExtensions>
+                <li Class="CombatExtended.RacePropertiesExtensionCE">
+                    <bodyShape>Humanoid</bodyShape>
+                </li>
+            </modExtensions>
+        </value>
+    </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Mech_Termite"]</xpath>
+        <value Merge="true">
+            <butcherProducts DeepReplace="true">
+                <Plasteel>3</Plasteel>
+                <CarbonAlloy>2</CarbonAlloy>
+            </butcherProducts>
+            <modExtensions>
+                <li Class="CombatExtended.RacePropertiesExtensionCE">
+                    <bodyShape>QuadrupedLow</bodyShape>
+                </li>
+            </modExtensions>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="Mech_Termite"]/race/mechWeightClass</xpath>
+    </Operation>
+</Patch>

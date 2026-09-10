@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[@Name="MechCentipede"]</xpath>
+        <value Merge="true">
+            <statBases>
+                <BandwidthCost>4</BandwidthCost>
+                <MechEnergyLossPerHP>0.2</MechEnergyLossPerHP>
+            </statBases>
+        </value>
+    </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Mech_Scyther"]</xpath>
+        <value Merge="true">
+            <statBases>
+                <BandwidthCost>2</BandwidthCost>
+            </statBases>
+        </value>
+    </Operation>
+</Patch>

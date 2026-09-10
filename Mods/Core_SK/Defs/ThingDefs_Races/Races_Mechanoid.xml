@@ -63,6 +63,7 @@
 	</ThingDef> -->
 
 	<!-- Centipede - abstract -->
+	<!-- DefOverwrite: migrated to CoreModule/Patches/AutoGenPatches/ThingDefs_Races/Races_Mechanoid.xml.
 	<ThingDef Abstract="True" Name="MechCentipede" ParentName="BaseMechanoid">
 		<description>Heavy combat mechanoids that glide on dozens of tiny legs. Their thick carpace and firepower makes them very effective against bunched-up static defenders. They are somewhat vulnerable to mobile hit-and-run tactics.</description>
 		<statBases />
@@ -135,26 +136,34 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
 	<!-- Centipede - blaster -->
+	<!-- DefOverwrite: identical to Core; use the vanilla definition.
 	<ThingDef ParentName="MechCentipede">
 		<defName>Mech_CentipedeBlaster</defName>
 		<label>centipede blaster</label>
 	</ThingDef>
+	-->
 
 	<!-- Centipede - minigun -->
+	<!-- DefOverwrite: identical to Core; use the vanilla definition.
 	<ThingDef ParentName="MechCentipede">
 		<defName>Mech_CentipedeGunner</defName>
 		<label>centipede gunner</label>
 	</ThingDef>
+	-->
 
 	<!-- Centipede - burner -->
+	<!-- DefOverwrite: identical to Core; use the vanilla definition.
 	<ThingDef ParentName="MechCentipede">
 		<defName>Mech_CentipedeBurner</defName>
 		<label>centipede burner</label>
 	</ThingDef>
+	-->
 
 	<!-- Scyther -->
+	<!-- DefOverwrite: migrated to CoreModule/Patches/AutoGenPatches/ThingDefs_Races/Races_Mechanoid.xml.
 	<ThingDef ParentName="BaseMechanoid">
 		<defName>Mech_Scyther</defName>
 		<label>Scyther</label>
@@ -286,6 +295,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
 	<!-- Stalker -->
 	<!-- 	<ThingDef Name="LancerMechanoidWalker" ParentName="BaseMechanoid">
@@ -398,6 +408,7 @@
 	</ThingDef> -->
 
 	<!-- New 1.1 update mechanoid. Temp. based on Lancer -->
+	<!-- DefOverwrite: migrated to CoreModule/Patches/AutoGenPatches/ThingDefs_Races/Races_Mechanoid.xml.
 	<ThingDef ParentName="BaseMechanoid">
 		<defName>Mech_Pikeman</defName>
 		<label>Pikeman</label>
@@ -495,9 +506,11 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
 	<!-- Termite -->
 
+	<!-- DefOverwrite: migrated to CoreModule/Patches/AutoGenPatches/ThingDefs_Races/Races_Mechanoid.xml.
 	<ThingDef ParentName="BaseMechanoid">
 		<defName>Mech_Termite</defName>
 		<label>termite</label>
@@ -545,6 +558,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
 	<!-- Crawler -->
 	<ThingDef ParentName="BaseMechanoid">
