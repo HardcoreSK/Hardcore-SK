@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+    <!-- Retain Name="Human" for vanilla inheritance. SK_Human remains an abstract alias through !DummyAbstracts.xml. -->
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Human"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.BaseHumanlikePawnDummy</value>
+    </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Human"]</xpath>
+        <value Merge="true">
+            <statBases>
+                <Mass>70</Mass>
+                <MoveSpeed>4.85</MoveSpeed>
+                <ComfyTemperatureMin>12</ComfyTemperatureMin>
+                <ComfyTemperatureMax>32</ComfyTemperatureMax>
+                <LeatherAmount>30</LeatherAmount>
+                <TameAnimalChance>1.2</TameAnimalChance>
+                <TrainAnimalChance>1.2</TrainAnimalChance>
+                <SocialImpact>1.1</SocialImpact>
+                <GermResistance>0.05</GermResistance>
+                <GermContainment>0.05</GermContainment>
+                <NightVisionEfficiency>0.05</NightVisionEfficiency>
+            </statBases>
+            <tools DeepReplace="true">
+                <li Class="CombatExtended.ToolCE">
+                    <label>left fist</label>
+                    <labelNoLocation>fist</labelNoLocation>
+                    <capacities>
+                        <li>Blunt</li>
+                    </capacities>
+                    <power>4</power>
+                    <cooldownTime>1.26</cooldownTime>
+                    <chanceFactor>0.5</chanceFactor>
+                    <surpriseAttack>
+                        <extraMeleeDamages>
+                            <li>
+                                <def>Stun</def>
+                                <amount>14</amount>
+                            </li>
+                        </extraMeleeDamages>
+                    </surpriseAttack>
+                    <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+                    <armorPenetrationBlunt>1.2</armorPenetrationBlunt>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                    <label>right fist</label>
+                    <labelNoLocation>fist</labelNoLocation>
+                    <capacities>
+                        <li>Blunt</li>
+                    </capacities>
+                    <power>4</power>
+                    <cooldownTime>1.26</cooldownTime>
+                    <chanceFactor>0.5</chanceFactor>
+                    <surpriseAttack>
+                        <extraMeleeDamages>
+                            <li>
+                                <def>Stun</def>
+                                <amount>14</amount>
+                            </li>
+                        </extraMeleeDamages>
+                    </surpriseAttack>
+                    <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+                    <armorPenetrationBlunt>1.2</armorPenetrationBlunt>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                    <label>teeth</label>
+                    <capacities>
+                        <li>Bite</li>
+                    </capacities>
+                    <power>4</power>
+                    <cooldownTime>2</cooldownTime>
+                    <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                    <chanceFactor>0.3</chanceFactor>
+                    <armorPenetrationSharp>0.6</armorPenetrationSharp>
+                    <armorPenetrationBlunt>1</armorPenetrationBlunt>
+                    <soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+                    <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                    <label>head</label>
+                    <capacities>
+                        <li>Blunt</li>
+                    </capacities>
+                    <power>4</power>
+                    <cooldownTime>1.75</cooldownTime>
+                    <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                    <chanceFactor>0.2</chanceFactor>
+                    <armorPenetrationBlunt>1.4</armorPenetrationBlunt>
+                    <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                </li>
+            </tools>
+            <race>
+                <meatMarketValue>0.8</meatMarketValue>
+                <leatherDef>Leather_Human</leatherDef>
+                <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+                <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+                <!-- Keep a local list for later Toddlers insertion; do not append the inherited stages a second time. -->
+                <lifeStageAges DeepReplace="true" Inherit="False">
+                    <li>
+                        <def>HumanlikeBaby</def>
+                        <minAge>0</minAge>
+                    </li>
+                    <li>
+                        <def>HumanlikeChild</def>
+                        <minAge>3</minAge>
+                    </li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">
+                        <def>HumanlikePreTeenager</def>
+                        <minAge>9</minAge>
+                    </li>
+                    <li>
+                        <def>HumanlikeTeenager</def>
+                        <minAge>13</minAge>
+                    </li>
+                    <li>
+                        <def>HumanlikeAdult</def>
+                        <minAge>18</minAge>
+                        <soundWounded>Pawn_Human_Wounded</soundWounded>
+                        <soundDeath>Pawn_Human_Death</soundDeath>
+                        <soundCall>Pawn_Human_Wounded</soundCall>
+                        <soundAngry>Pawn_Human_Wounded</soundAngry>
+                    </li>
+                </lifeStageAges>
+                <baseBodySize>1.0</baseBodySize>
+                <gestationPeriodDays>40</gestationPeriodDays>
+            </race>
+            <modExtensions>
+                <li Class="CombatExtended.RacePropertiesExtensionCE">
+                    <bodyShape>Humanoid</bodyShape>
+                </li>
+            </modExtensions>
+        </value>
+    </Operation>
+
+    <!-- Mostly for preventing duplicates -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="Human"]/statBases/Wildness |
+            Defs/ThingDef[defName="Human"]/race/litterSizeCurve |
+            Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings |
+            Defs/ThingDef[defName="Human"]/race/specialShadowData |
+            Defs/ThingDef[defName="Human"]/race/ageGenerationCurve |
+            Defs/ThingDef[defName="Human"]/race/hediffGiverSets</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="Human"]/recipes/li[.="ExciseCarcinoma" or .="AdministerMechSerumHealer" or .="RemoveBodyPart" or .="Euthanize" or .="Anesthetize" or .="CureScaria" or .="Vasectomy" or .="ReverseVasectomy" or .="TubalLigation" or .="ExtractOvum" or .="CureBloodRot" or .="CureAbasia" or .="ExtractHemogenPack" or .="BloodTransfusion" or .="ImplantXenogerm" or .="ImplantIUD" or .="RemoveIUD" or .="TerminatePregnancy" or .="SurgicalInspection" or .="BlissLobotomy" or .="GhoulInfusion" or .="RemovePorcupineQuill"]</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="Human"]/ingredient/mergeCompatibilityTags/li[.="HumanMeat"]</xpath>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="Human"]/comps/li[@Class="CompProperties_HoldingPlatformTarget" or @Class="CompProperties_Studiable"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="Human"]/comps/li[@Class="CompProperties_HoldingPlatformTarget" or @Class="CompProperties_Studiable"]</xpath>
+        </match>
+    </Operation>
+</Patch>

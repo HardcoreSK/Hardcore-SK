@@ -100,11 +100,13 @@
 		<ecoSystemWeight>0.25</ecoSystemWeight>
 	</PawnKindDef>
 
+	<!-- DefOverwrite: migrated to CoreModule/Patches/AutoGenPatches/ThingDefs_Races.
 	<ThingDef ParentName="SK_HareThingBase">
 		<defName>Hare</defName>
 		<label>hare</label>
 		<description>This small, solitary herbivore can swiftly hop away from danger.</description>
 	</ThingDef>
+	-->
 
 <!-- 	<PawnKindDef ParentName="SK_HareKindBase">
 		<defName>Hare</defName>
@@ -172,6 +174,7 @@
 		</modExtensions>
 	</PawnKindDef>
  -->
+	<!-- DefOverwrite: migrated to CoreModule/Patches/AutoGenPatches/ThingDefs_Races.
 	<ThingDef ParentName="SK_HareThingBase">
 		<defName>Snowhare</defName>
 		<label>snow hare</label>
@@ -180,6 +183,7 @@
 			<ComfyTemperatureMin>-70</ComfyTemperatureMin>
 		</statBases>
 	</ThingDef>
+	-->
 
 <!-- 	<PawnKindDef ParentName="SK_HareKindBase">
 		<defName>Snowhare</defName>

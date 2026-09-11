@@ -336,6 +336,7 @@
         </comps>
     </ThingDef>
     <!-- HUMAN -->
+    <!-- DefOverwrite: migrated to CoreModule/Patches/AutoGenPatches/ThingDefs_Races.
     <ThingDef Name="SK_Human" ParentName="BaseHumanlikePawn">
         <defName>Human</defName>
         <label>human</label>
@@ -427,13 +428,16 @@
             <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
             <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
         </race>
-        <comps /> <!-- Empty node for Facial Animations' patch -->
+        <comps /> -->
+<!-- Empty node for Facial Animations' patch -->
+<!--
         <modExtensions>
             <li Class="CombatExtended.RacePropertiesExtensionCE">
                 <bodyShape>Humanoid</bodyShape>
             </li>
         </modExtensions>
     </ThingDef>
+    -->
     <!-- NOVA -->
     <AlienRace.ThingDef_AlienRace ParentName="BaseHumanlikePawn">
         <thingClass>Pawn</thingClass>

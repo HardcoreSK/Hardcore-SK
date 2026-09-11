@@ -140,11 +140,13 @@
 		<wildGroupSize>2~7</wildGroupSize>
 	</PawnKindDef>
 
+	<!-- DefOverwrite: migrated to CoreModule/Patches/AutoGenPatches/ThingDefs_Races.
 	<ThingDef ParentName="SK_WolfThingBase">
 		<defName>Wolf_Timber</defName>
 		<label>timber wolf</label>
 		<description>A rugged predator long feared by many ancient Earth cultures. As pack hunters, wolves have a complex social life and are fiercely intelligent.</description>
 	</ThingDef>
+	-->
 
 <!-- 	<PawnKindDef ParentName="SK_WolfKindBase">
 		<defName>Wolf_Timber</defName>
@@ -195,11 +197,13 @@
 		</lifeStages>
 	</PawnKindDef>
  -->
+	<!-- DefOverwrite: migrated to CoreModule/Patches/AutoGenPatches/ThingDefs_Races.
 	<ThingDef ParentName="SK_WolfThingBase">
 		<defName>Wolf_Arctic</defName>
 		<label>arctic wolf</label>
 		<description>An arctic variant of the old Earth wolf. As pack hunters, wolves have a complex social life and are fiercely intelligent.</description>
 	</ThingDef>
+	-->
 
 <!-- 	<PawnKindDef ParentName="SK_WolfKindBase">
 		<defName>Wolf_Arctic</defName>

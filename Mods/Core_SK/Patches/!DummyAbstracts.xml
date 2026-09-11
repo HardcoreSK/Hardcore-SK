@@ -10,6 +10,12 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs</xpath>
 		<value>
+			<!-- Animal and human Def migration parents. -->
+			<ThingDef Name="SK.SK_HareThingBaseDummy" ParentName="SK_HareThingBase" Abstract="True" />
+			<ThingDef Name="SK.SK_WolfThingBaseDummy" ParentName="SK_WolfThingBase" Abstract="True" />
+			<ThingDef Name="SK.SK_ThingFoxBaseDummy" ParentName="SK_ThingFoxBase" Abstract="True" />
+			<ThingDef Name="SK.BaseHumanlikePawnDummy" ParentName="BaseHumanlikePawn" Abstract="True" />
+			<ThingDef Name="SK_Human" ParentName="Human" Abstract="True" />
 			<!--Pawns-->
 			<ThingDef Name="SK.BaseHorsesDummy" ParentName="BaseHorses" Abstract="True" />
 			<ThingDef Name="SK.SK_InsectThingBaseDummy" ParentName="SK_InsectThingBase" Abstract="True" />

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+    <!-- Use HSK values through Merge; remove only fields with no inherited value or list entries that must disappear. -->
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Wolf_Timber"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.SK_WolfThingBaseDummy</value>
+    </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Wolf_Timber"]</xpath>
+        <value Merge="true">
+            <description>A rugged predator long feared by many ancient Earth cultures. As pack hunters, wolves have a complex social life and are fiercely intelligent.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="Wolf_Timber"]/race/meatLabel</xpath>
+    </Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Wolf_Arctic"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.SK_WolfThingBaseDummy</value>
+    </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Wolf_Arctic"]</xpath>
+        <value Merge="true">
+            <race>
+                <useMeatFrom>Elephant</useMeatFrom>
+            </race>
+            <statBases>
+                <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+            </statBases>
+        </value>
+    </Operation>
+</Patch>
