@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- If something starts with lower case, it'll be capitalized automatically if needed. -->
+  <!-- If it starts with an upper case, you need to make sure you also capitalize it. -->
+
+  <!-- LABEL is the style label if any, like "animalist". This should always work like this for Ideology styles. -->
+  <!-- It can be replaced by the random style's label override, like "samurai helmet" for the prestige marine -->
+  <!-- helmet style. If that one is not specified either, it'll attempt to use the random style def's label -->
+  <!-- (none in vanilla, I don't think they even use labels). If all fails, it'll use the "random style" text. -->
+  <!-- INDEX is used for random graphics, as those have no names. It's just a number starting at 1 and counting -->
+  <!-- up, while "default random" is used for the default value (randomly assigned random value). -->
+  <StyleChangeAnytimeRandomDefault>{LABEL} (default random)</StyleChangeAnytimeRandomDefault>
+  <StyleChangeAnytimeRandomIndexed>{LABEL} {INDEX}</StyleChangeAnytimeRandomIndexed>
+
+  <!-- Name for styles where there are none. Default/basic refers to something that has no style specified, -->
+  <!-- while random style refers to something that's using random styles but has no built-in label for it. -->
+  <StyleChangeAnytimeNoStyle>basic</StyleChangeAnytimeNoStyle>
+  <StyleChangeAnytimeRandomStyle>random style</StyleChangeAnytimeRandomStyle>
+
+  <!-- The first two are used for the change appearance gizmo and its description. -->
+  <!-- The last one is used for the gizmo if it's disabled, or in the bills menu if something has no alternative appearances. -->
+  <StyleChangeAnytimeChangeAppearance>change appearance</StyleChangeAnytimeChangeAppearance>
+  <StyleChangeAnytimeChangeAppearanceDesc>Change appearance of the selected things. This is purely visual and has no gameplay impact.</StyleChangeAnytimeChangeAppearanceDesc>
+  <StyleChangeAnytimeChangeAppearanceDisabledNoCategories>No appearance variations available.</StyleChangeAnytimeChangeAppearanceDisabledNoCategories>
+
+</LanguageData>
