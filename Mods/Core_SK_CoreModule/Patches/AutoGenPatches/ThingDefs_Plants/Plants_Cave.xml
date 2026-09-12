@@ -2,15 +2,15 @@
 <Patch>
 
   <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="Glowstool"]</xpath>
-	  <attribute>ParentName</attribute>
-	  <value>SK.SK_CavePlantBaseDummy</value>
+    <xpath>Defs/ThingDef[defName="Glowstool"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.SK_CavePlantBaseDummy</value>
   </Operation>
 
   <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="Glowstool"]</xpath>
-	  <attribute>Class</attribute>
-	  <value>SK.ThingDef_ClusterPlant</value>
+    <xpath>Defs/ThingDef[defName="Glowstool"]</xpath>
+    <attribute>Class</attribute>
+    <value>SK.ThingDef_ClusterPlant</value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
@@ -39,6 +39,11 @@
         <preferability>NeverForNutrition</preferability>
       </ingestible>
       <plant>
+        <neverBlightable>true</neverBlightable>
+        <growMinGlow>0</growMinGlow>
+        <growOptimalGlow>0</growOptimalGlow>
+        <cavePlant>true</cavePlant>
+        <diesToLight>true</diesToLight>
         <fertilityMin>0.01</fertilityMin>
         <fertilitySensitivity>2</fertilitySensitivity>
         <growDays>12</growDays>
@@ -54,7 +59,6 @@
         <harvestTag>Standard</harvestTag>
         <harvestedThingDef>RawGlowbulb</harvestedThingDef>
         <harvestYield>5</harvestYield>
-        <neverBlightable>true</neverBlightable>
         <visualSizeRange>0.6~0.8</visualSizeRange>
         <topWindExposure>0.02</topWindExposure>
         <wildClusterRadius>3</wildClusterRadius>
@@ -69,14 +73,14 @@
           <glowColor>(5,128,128,0)</glowColor>
         </li>
       </comps>
-	  <!-- custom hsk tags -->
+      <!-- custom hsk tags -->
       <cavePlantCommonalityMaxFraction>0.3</cavePlantCommonalityMaxFraction>
       <minGrowTemperature>0</minGrowTemperature>
       <minOptimalGrowTemperature>10</minOptimalGrowTemperature>
       <maxOptimalGrowTemperature>40</maxOptimalGrowTemperature>
       <maxGrowTemperature>50</maxGrowTemperature>
       <hasStaticGlower>false</hasStaticGlower>
-      <hasDynamicGlower>true</hasDynamicGlower>
+      <hasDynamicGlower>false</hasDynamicGlower>
       <growOnlyOnRoughRock>true</growOnlyOnRoughRock>
       <growOnlyUndeRoof>true</growOnlyUndeRoof>
       <growOnlyNearNaturalRock>true</growOnlyNearNaturalRock>
@@ -96,15 +100,15 @@
   </Operation>
 
   <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="Agarilux"]</xpath>
-	  <attribute>ParentName</attribute>
-	  <value>SK.SK_CavePlantBaseDummy</value>
+    <xpath>Defs/ThingDef[defName="Agarilux"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.SK_CavePlantBaseDummy</value>
   </Operation>
 
   <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="Agarilux"]</xpath>
-	  <attribute>Class</attribute>
-	  <value>SK.ThingDef_ClusterPlant</value>
+    <xpath>Defs/ThingDef[defName="Agarilux"]</xpath>
+    <attribute>Class</attribute>
+    <value>SK.ThingDef_ClusterPlant</value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
@@ -120,7 +124,7 @@
         <BeautyOutdoors>11</BeautyOutdoors>
         <Nutrition>0.4</Nutrition>
       </statBases>
-	  <altitudeLayer>LowPlant</altitudeLayer>
+      <altitudeLayer>LowPlant</altitudeLayer>
       <graphicData>
         <texPath>Things/Plant/PlantGleamcap</texPath>
         <graphicClass>Graphic_Random</graphicClass>
@@ -135,10 +139,15 @@
         <preferability>NeverForNutrition</preferability>
       </ingestible>
       <plant>
+        <neverBlightable>true</neverBlightable>
+        <growMinGlow>0</growMinGlow>
+        <growOptimalGlow>0</growOptimalGlow>
+        <cavePlant>true</cavePlant>
+        <diesToLight>true</diesToLight>
         <fertilityMin>0.01</fertilityMin>
         <fertilitySensitivity>2</fertilitySensitivity>
         <growDays>9</growDays>
-		<dieIfLeafless>false</dieIfLeafless>
+        <dieIfLeafless>false</dieIfLeafless>
         <sowTags>
           <li>Fungiponics</li>
         </sowTags>
@@ -151,7 +160,6 @@
         <harvestTag>Standard</harvestTag>
         <harvestedThingDef>GleamcapStem</harvestedThingDef>
         <harvestYield>4</harvestYield>
-        <neverBlightable>true</neverBlightable>
         <visualSizeRange>0.3~1.2</visualSizeRange>
         <topWindExposure>0.03</topWindExposure>
         <cavePlantWeight>3.5</cavePlantWeight>
@@ -172,7 +180,7 @@
       <maxOptimalGrowTemperature>40</maxOptimalGrowTemperature>
       <maxGrowTemperature>50</maxGrowTemperature>
       <hasStaticGlower>false</hasStaticGlower>
-      <hasDynamicGlower>true</hasDynamicGlower>
+      <hasDynamicGlower>false</hasDynamicGlower>
       <growOnlyOnRoughRock>true</growOnlyOnRoughRock>
       <growOnlyUndeRoof>true</growOnlyUndeRoof>
       <growOnlyNearNaturalRock>true</growOnlyNearNaturalRock>
@@ -192,15 +200,15 @@
   </Operation>
 
   <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="Bryolux"]</xpath>
-	  <attribute>ParentName</attribute>
-	  <value>SK.SK_CavePlantBaseDummy</value>
+    <xpath>Defs/ThingDef[defName="Bryolux"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.SK_CavePlantBaseDummy</value>
   </Operation>
 
   <Operation Class="PatchOperationAttributeSet">
-	  <xpath>Defs/ThingDef[defName="Bryolux"]</xpath>
-	  <attribute>Class</attribute>
-	  <value>SK.ThingDef_ClusterPlant</value>
+    <xpath>Defs/ThingDef[defName="Bryolux"]</xpath>
+    <attribute>Class</attribute>
+    <value>SK.ThingDef_ClusterPlant</value>
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
@@ -230,6 +238,11 @@
         <preferability>NeverForNutrition</preferability>
       </ingestible>
       <plant>
+        <neverBlightable>true</neverBlightable>
+        <growMinGlow>0</growMinGlow>
+        <growOptimalGlow>0</growOptimalGlow>
+        <cavePlant>true</cavePlant>
+        <diesToLight>true</diesToLight>
         <fertilityMin>0.01</fertilityMin>
         <fertilitySensitivity>2</fertilitySensitivity>
         <growDays>18</growDays>
@@ -246,7 +259,6 @@
         <harvestTag>Standard</harvestTag>
         <harvestedThingDef>RawShimmershroom</harvestedThingDef>
         <harvestYield>5</harvestYield>
-        <neverBlightable>true</neverBlightable>
         <visualSizeRange>0.6~0.8</visualSizeRange>
         <topWindExposure>0.03</topWindExposure>
         <cavePlantWeight>7.5</cavePlantWeight>
@@ -267,7 +279,7 @@
       <maxOptimalGrowTemperature>40</maxOptimalGrowTemperature>
       <maxGrowTemperature>50</maxGrowTemperature>
       <hasStaticGlower>false</hasStaticGlower>
-      <hasDynamicGlower>true</hasDynamicGlower>
+      <hasDynamicGlower>false</hasDynamicGlower>
       <growOnlyOnRoughRock>true</growOnlyOnRoughRock>
       <growOnlyUndeRoof>true</growOnlyUndeRoof>
       <growOnlyNearNaturalRock>true</growOnlyNearNaturalRock>
@@ -286,37 +298,37 @@
     </value>
   </Operation>
 
-	<!-- This is now vanilla -->
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="Plant_Timbershroom"]/plant</xpath>
-		<value>
-			<wildClusterRadius>3</wildClusterRadius>
-			<wildClusterWeight>3</wildClusterWeight>
-			<cavePlantWeight>0.6</cavePlantWeight>
-			<sowTags Inherit="False">
-				<li>Fungiponics</li>
-			</sowTags>
-			<harvestedThingDef>WoodLog</harvestedThingDef>
-			<blockAdjacentSow>true</blockAdjacentSow>
-			<sowResearchPrerequisites>
-				<li>Fungiponics_A1</li>
-			</sowResearchPrerequisites>
-			<sowWork>750</sowWork>
-			<harvestWork>300</harvestWork>
-			<harvestTag>Wood</harvestTag>
-			<harvestMinGrowth>0.40</harvestMinGrowth>
-			<harvestFailable>false</harvestFailable>
-			<mustBeWildToSow>false</mustBeWildToSow>
-			<interferesWithRoof>false</interferesWithRoof>
-			<harvestYield>60</harvestYield>
-		</value>
-	</Operation>
+  <!-- This is now vanilla -->
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Timbershroom"]/plant</xpath>
+    <value>
+      <wildClusterRadius>3</wildClusterRadius>
+      <wildClusterWeight>3</wildClusterWeight>
+      <cavePlantWeight>0.6</cavePlantWeight>
+      <sowTags Inherit="False">
+        <li>Fungiponics</li>
+      </sowTags>
+      <harvestedThingDef>WoodLog</harvestedThingDef>
+      <blockAdjacentSow>true</blockAdjacentSow>
+      <sowResearchPrerequisites>
+        <li>Fungiponics_A1</li>
+      </sowResearchPrerequisites>
+      <sowWork>750</sowWork>
+      <harvestWork>300</harvestWork>
+      <harvestTag>Wood</harvestTag>
+      <harvestMinGrowth>0.40</harvestMinGrowth>
+      <harvestFailable>false</harvestFailable>
+      <mustBeWildToSow>false</mustBeWildToSow>
+      <interferesWithRoof>false</interferesWithRoof>
+      <harvestYield>60</harvestYield>
+    </value>
+  </Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Plant_Timbershroom"]</xpath>
-		<value>
-			<selectable>true</selectable>
-		</value>
-	</Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Plant_Timbershroom"]</xpath>
+    <value>
+      <selectable>true</selectable>
+    </value>
+  </Operation>
 
 </Patch>
