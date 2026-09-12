@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>ReverseEngineer_ChargedShot</defName>
+    <label>reverse engineer directed-energy weapons</label>
+    <description>Disassemble a futuristic weapon to reconstruct a technology blueprint for directed-energy weapons. The weapon is destroyed in the process.</description>
+    <jobString>Reverse engineering a futuristic weapon.</jobString>
+    <workAmount>6000</workAmount>
+    <workSkill>Intellectual</workSkill>
+    <workSpeedStat>ResearchSpeed</workSpeedStat>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Futuristic</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Futuristic</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <TechnologyBlueprint_ChargedShot>1</TechnologyBlueprint_ChargedShot>
+    </products>
+    <recipeUsers>
+      <li>WeaponCraftingWorkTable</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>

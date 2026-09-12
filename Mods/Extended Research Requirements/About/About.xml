@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Extended Research Requirements</name>
+  <author>Hardcore SK</author>
+  <packageId>hsk.extendedresearchrequirements</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Adds explicit, consumable technology blueprints and other extensible requirements to research projects.</description>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>skyarkhangel.HSK</packageId>
+      <displayName>Core SK</displayName>
+      <downloadUrl>https://github.com/skyarkhangel/Hardcore-SK</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>skyarkhangel.HSK</li>
+    <li>qwerty19106.researchtreesk</li>
+  </loadAfter>
+</ModMetaData>
