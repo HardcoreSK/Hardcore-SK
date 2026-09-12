@@ -81,6 +81,8 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallIndependentEye</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install robotic eye</label>
 		<description>Install robotic eye.</description>
 		<descriptionHyperlinks>
@@ -199,6 +201,8 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallEnergyLink</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install energy link</label>
 		<workerClass>CONN.Recipe_InstallArtificialBodyPartAndClearPawnFromCache</workerClass>
 		<description>Install energy link.</description>
@@ -332,6 +336,8 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallOuterBlade</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install outer blade</label>
 		<description>Install outer blade.</description>
 		<descriptionHyperlinks>
@@ -459,6 +465,8 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallPowerArms</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install power arms</label>
 		<description>Install power arms.</description>
 		<descriptionHyperlinks>
@@ -582,6 +590,8 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallShadowrunner</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install shadowrunner</label>
 		<description>Install shadowrunner.</description>
 		<descriptionHyperlinks>
@@ -696,6 +706,8 @@
 
 	<RecipeDef ParentName="SurgeryInstallImplantBase">
 		<defName>CONN_InstallExoskeletonArmor</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install exoskeleton armor</label>
 		<description>Install an exoskeleton armor.</description>
 		<descriptionHyperlinks>
@@ -822,6 +834,8 @@
 
 	<RecipeDef ParentName="SurgeryInstallImplantBase">
 		<defName>CONN_InstallDermalplating</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install dermalplating</label>
 		<description>Install a dermalplating.</description>
 		<descriptionHyperlinks>
@@ -952,6 +966,8 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallLionheart</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install lionheart</label>
 		<description>Install lionheart.</description>
 		<descriptionHyperlinks>
