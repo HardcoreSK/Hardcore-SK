@@ -91,6 +91,8 @@
                 </li>
             </tools>
             <race>
+                <!-- Keep the target for Quarry/Hospitality patches; inherit the parent work ages. -->
+                <lifeStageWorkSettings DeepReplace="true" />
                 <meatMarketValue>0.8</meatMarketValue>
                 <leatherDef>Leather_Human</leatherDef>
                 <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
@@ -137,7 +139,6 @@
     <Operation Class="PatchOperationRemove">
         <xpath>Defs/ThingDef[defName="Human"]/statBases/Wildness |
             Defs/ThingDef[defName="Human"]/race/litterSizeCurve |
-            Defs/ThingDef[defName="Human"]/race/lifeStageWorkSettings |
             Defs/ThingDef[defName="Human"]/race/specialShadowData |
             Defs/ThingDef[defName="Human"]/race/ageGenerationCurve |
             Defs/ThingDef[defName="Human"]/race/hediffGiverSets</xpath>
