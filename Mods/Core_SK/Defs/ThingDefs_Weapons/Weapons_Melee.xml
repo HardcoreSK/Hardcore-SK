@@ -143,6 +143,7 @@
     
 	<ThingDef Name="WeaponArchotechBase" ParentName="SK_BaseMeleeWeapon" Abstract="True">
 		<techLevel>Archotech</techLevel>
+		<possessionCount>0</possessionCount>
 		<recipeMaker>
 			<workSpeedStat>SmithingSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
