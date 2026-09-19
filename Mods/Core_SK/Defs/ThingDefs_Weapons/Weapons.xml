@@ -185,6 +185,7 @@
     
 	<ThingDef Name="RangedWeaponArchotechBase" ParentName="RangedWeaponBase" Abstract="True">
 		<techLevel>Archotech</techLevel>
+		<possessionCount>0</possessionCount>
 		<recipeMaker>
 			<workSpeedStat>SmithingSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
