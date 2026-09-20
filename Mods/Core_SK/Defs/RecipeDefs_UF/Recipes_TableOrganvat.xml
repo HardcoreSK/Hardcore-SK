@@ -21,6 +21,7 @@
             </categories>
             <disallowedCategories>
                 <li>CorpsesMechanoid</li>
+                <li>Fish</li>
             </disallowedCategories>
         </fixedIngredientFilter>
         <defaultIngredientFilter>
@@ -43,7 +44,8 @@
         <ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>1</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
         <usesTemperature>false</usesTemperature>
         <scaleToMeatAmount>true</scaleToMeatAmount>
-        <scaleToMeatAmountBase>127</scaleToMeatAmountBase>
+        <!-- 100 meat amount yields 20 biomatter: 5 meat per biomatter. -->
+        <scaleToMeatAmountBase>100</scaleToMeatAmountBase>
         <processDays>1.5</processDays>
     </RecipeDef>
 
