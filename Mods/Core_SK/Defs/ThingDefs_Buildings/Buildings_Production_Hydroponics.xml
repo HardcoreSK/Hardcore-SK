@@ -111,6 +111,20 @@
 				<glowColor>(370,370,370,0)</glowColor>
 			</li>
 			<li Class="CompProperties_Flickable" />
+			<li Class="DubsBadHygiene.CompProperties_Pipe" MayRequire="Dubwise.DubsBadHygiene">
+				<mode>Sewage</mode>
+			</li>
+			<li Class="CompProperties_Refuelable" MayRequire="Dubwise.DubsBadHygiene">
+				<consumeFuelOnlyWhenPowered>true</consumeFuelOnlyWhenPowered>
+				<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+				<fuelLabel>Water</fuelLabel>
+				<fuelGizmoLabel>Water</fuelGizmoLabel>
+				<fuelCapacity>5</fuelCapacity>
+				<fuelConsumptionRate>0.025</fuelConsumptionRate>
+				<fuelMultiplier>200</fuelMultiplier>
+				<fuelFilter/>
+			</li>
 		</comps>
         <modExtensions>
             <li Class="SK.Events.EarthquakeExtension">
@@ -169,6 +183,20 @@
 				<basePowerConsumption>25</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable" />
+			<li Class="DubsBadHygiene.CompProperties_Pipe" MayRequire="Dubwise.DubsBadHygiene">
+				<mode>Sewage</mode>
+			</li>
+			<li Class="CompProperties_Refuelable" MayRequire="Dubwise.DubsBadHygiene">
+				<consumeFuelOnlyWhenPowered>true</consumeFuelOnlyWhenPowered>
+				<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+				<fuelLabel>Water</fuelLabel>
+				<fuelGizmoLabel>Water</fuelGizmoLabel>
+				<fuelCapacity>1.25</fuelCapacity>
+				<fuelConsumptionRate>0.00625</fuelConsumptionRate>
+				<fuelMultiplier>200</fuelMultiplier>
+				<fuelFilter/>
+			</li>
 		</comps>
         <modExtensions>
             <li Class="SK.Events.EarthquakeExtension">
