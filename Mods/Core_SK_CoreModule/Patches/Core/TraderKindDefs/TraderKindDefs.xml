@@ -2215,9 +2215,6 @@
           <maxTechLevelGenerate>Industrial</maxTechLevelGenerate>
           <countRange>0~2</countRange>
         </li>
-        <li Class="StockGenerator_ReinforcedBarrels">
-          <countRange>1~4</countRange>
-        </li>
         <!-- Apparel -->
         <li Class="StockGenerator_MarketValue">
           <tradeTag>Clothing</tradeTag>
@@ -2250,5 +2247,12 @@
 
       </stockGenerators>
     </value>
+  </Operation>
+  <!-- Remove the vanilla stock generators too, including inherited trader templates. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/TraderKindDef/stockGenerators/li[@Class="StockGenerator_ReinforcedBarrels"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/TraderKindDef/stockGenerators/li[@Class="StockGenerator_ReinforcedBarrels"]</xpath>
+    </match>
   </Operation>
 </Patch>

@@ -11,9 +11,10 @@
         <Flammability>0.1</Flammability>
         <DeteriorationRate>1.0</DeteriorationRate>
       </statBases>
-      <thingSetMakerTags DeepReplace="true">
-        <li>RewardStandardHighFreq</li>
-      </thingSetMakerTags>
+      <!-- Retain the Def for saves, but exclude it from new rewards and trader stock. -->
+      <thingSetMakerTags DeepReplace="true" />
+      <tradeability>Sellable</tradeability>
+      <preventSpawningInResourcePod>true</preventSpawningInResourcePod>
     </value>
   </Operation>
 </Patch>
