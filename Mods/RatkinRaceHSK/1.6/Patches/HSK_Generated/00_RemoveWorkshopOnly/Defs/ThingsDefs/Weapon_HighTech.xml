@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<Patch>
-	<!-- Remove workshop defs absent from HSK patch baseline: 1.6\Defs\ThingsDefs\Weapon_HighTech.xml -->
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/DamageDef[defName="RK_Damage_BurnTorn"]</xpath>
-	</Operation>
-</Patch>

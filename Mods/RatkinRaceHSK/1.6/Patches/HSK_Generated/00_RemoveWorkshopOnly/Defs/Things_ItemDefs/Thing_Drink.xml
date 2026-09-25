@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<Patch>
-	<!-- Remove workshop recipes absent from the HSK patch baseline. The beer-bottle
-	     maneuver is retained because the CE compatibility layer replaces its verb. -->
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/RecipeDef[defName="Make_RK_StrawberryBeer" or defName="Make_RK_StrawberryBeer_Bulk"]</xpath>
-	</Operation>
-</Patch>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Survival Tools Lite</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Run after the generated full replacement of RK_LongSword. Survival Tools Lite
+				     recognizes both the thing class and the mod extension. -->
+				<li Class="SK.PatchOperationReplaceExtended">
+					<xpath>Defs/ThingDef[defName="RK_Axe" or defName="RK_Cleaver" or defName="RK_Hockey" or defName="RK_Fork" or defName="RK_Pickaxe" or defName="RK_Weapon_Maul" or defName="RK_LongSword"]</xpath>
+					<value>
+						<thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
+						<statBases Merge="true">
+							<ToolEffectivenessFactor>1</ToolEffectivenessFactor>
+						</statBases>
+					</value>
+				</li>
+
+				<!-- Move only the work speed bonuses handled by Survival Tools Lite. -->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[(defName="RK_Axe" or defName="RK_Hockey" or defName="RK_Fork" or defName="RK_LongSword")]/equippedStatOffsets/PlantWorkSpeed | Defs/ThingDef[defName="RK_Cleaver"]/equippedStatOffsets/CookSpeed | Defs/ThingDef[defName="RK_Cleaver"]/equippedStatOffsets/ButcheryFleshSpeed | Defs/ThingDef[defName="RK_Pickaxe"]/equippedStatOffsets/MiningSpeed | Defs/ThingDef[defName="RK_Pickaxe"]/equippedStatOffsets/DeepDrillingSpeed | Defs/ThingDef[defName="RK_Weapon_Maul"]/equippedStatOffsets/ConstructionSpeed</xpath>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="RK_Axe"]</xpath>
+					<value>
+						<li Class="SurvivalToolsLite.SurvivalToolProperties">
+							<baseWorkStatFactors>
+								<TreeFellingSpeed>1.2</TreeFellingSpeed>
+								<PlantWorkSpeed>1.2</PlantWorkSpeed>
+								<PlantHarvestingSpeed>1</PlantHarvestingSpeed>
+							</baseWorkStatFactors>
+							<defaultSurvivalToolAssignmentTags>
+								<li>PlantWorker</li>
+							</defaultSurvivalToolAssignmentTags>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="RK_Cleaver"]</xpath>
+					<value>
+						<li Class="SurvivalToolsLite.SurvivalToolProperties">
+							<baseWorkStatFactors>
+								<CookSpeed>1.3</CookSpeed>
+								<ButcheryFleshSpeed>1.3</ButcheryFleshSpeed>
+								<ButcheryFleshEfficiency>1</ButcheryFleshEfficiency>
+							</baseWorkStatFactors>
+							<defaultSurvivalToolAssignmentTags>
+								<li>Cook</li>
+							</defaultSurvivalToolAssignmentTags>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="RK_Hockey"]</xpath>
+					<value>
+						<li Class="SurvivalToolsLite.SurvivalToolProperties">
+							<baseWorkStatFactors>
+								<PlantWorkSpeed>1.5</PlantWorkSpeed>
+							</baseWorkStatFactors>
+							<defaultSurvivalToolAssignmentTags>
+								<li>PlantWorker</li>
+							</defaultSurvivalToolAssignmentTags>
+							</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="RK_Fork"]</xpath>
+					<value>
+						<li Class="SurvivalToolsLite.SurvivalToolProperties">
+							<baseWorkStatFactors>
+								<PlantWorkSpeed>1.1</PlantWorkSpeed>
+								<PlantHarvestingSpeed>1.1</PlantHarvestingSpeed>
+							</baseWorkStatFactors>
+							<defaultSurvivalToolAssignmentTags>
+								<li>PlantWorker</li>
+							</defaultSurvivalToolAssignmentTags>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="RK_Pickaxe"]</xpath>
+					<value>
+						<li Class="SurvivalToolsLite.SurvivalToolProperties">
+							<baseWorkStatFactors>
+								<MiningSpeed>1.4</MiningSpeed>
+								<MiningYieldDigging>1</MiningYieldDigging>
+								<DeepDrillingSpeed>1.2</DeepDrillingSpeed>
+							</baseWorkStatFactors>
+							<defaultSurvivalToolAssignmentTags>
+								<li>Miner</li>
+							</defaultSurvivalToolAssignmentTags>
+							</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="RK_Weapon_Maul"]</xpath>
+					<value>
+						<li Class="SurvivalToolsLite.SurvivalToolProperties">
+							<baseWorkStatFactors>
+								<ConstructionSpeed>1.3</ConstructionSpeed>
+							</baseWorkStatFactors>
+							<defaultSurvivalToolAssignmentTags>
+								<li>Constructor</li>
+							</defaultSurvivalToolAssignmentTags>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="RK_LongSword"]</xpath>
+					<value>
+						<li Class="SurvivalToolsLite.SurvivalToolProperties">
+							<baseWorkStatFactors>
+								<PlantWorkSpeed>1.1</PlantWorkSpeed>
+								<PlantHarvestingSpeed>1</PlantHarvestingSpeed>
+							</baseWorkStatFactors>
+							<defaultSurvivalToolAssignmentTags>
+								<li>PlantWorker</li>
+							</defaultSurvivalToolAssignmentTags>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
