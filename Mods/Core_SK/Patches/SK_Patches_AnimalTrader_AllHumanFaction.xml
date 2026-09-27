@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+	<!-- Empire is ParentName FactionBase, so this add included it.
+	     Empire_Caravan_TraderGeneral has permitRequiredForTrading TradeCaravan. Caravan_AnimalTrader does not, so without that permit its commonality stays positive and the general kind is 0. The caravan is always the animal trader and trade opens.
+	     Other FactionBase factions have no such permit, so the kind stays on them.
+	     Excluding Empire leaves only the general kind. With no colonist holding TradeCaravan, Empire has no positive-weight caravan kind and is not a caravan source. With the permit, the general kind is the one that arrives. -->
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/FactionDef[@ParentName = "FactionBase"]/caravanTraderKinds</xpath>
+		<xpath>Defs/FactionDef[@ParentName = "FactionBase" and defName != "Empire"]/caravanTraderKinds</xpath>
 		<value>
 			<li>Caravan_AnimalTrader</li>
 		</value>
