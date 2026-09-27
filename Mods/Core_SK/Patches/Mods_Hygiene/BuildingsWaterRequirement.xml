@@ -7,7 +7,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName='HydroponicsBasin' or defName='NewHydroponicsBasin']/tickerType</xpath>
+                    <xpath>Defs/ThingDef[defName='HydroponicsBasin' or defName='NewHydroponicsBasin' or defName='ClutterAlloyHydroponicsBasinVS']/tickerType</xpath>
                     <value>
                         <tickerType>Normal</tickerType>
                     </value>
@@ -33,6 +33,29 @@
                 </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName='NewHydroponicsBasin']/comps</xpath>
+                    <value>
+                        <li Class="DubsBadHygiene.CompProperties_Pipe">
+                            <mode>Sewage</mode>
+                        </li>
+                        <li Class="CompProperties_Refuelable">
+                            <consumeFuelOnlyWhenPowered>true</consumeFuelOnlyWhenPowered>
+                            <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+                            <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+                            <fuelLabel>Water</fuelLabel>
+                            <fuelGizmoLabel>Water</fuelGizmoLabel>
+                            <fuelCapacity>5</fuelCapacity>
+                            <fuelConsumptionRate>0.025</fuelConsumptionRate>
+                            <fuelMultiplier>200</fuelMultiplier>
+                            <fuelFilter/>
+                        </li>
+                    </value>
+                </li>
+                <!-- ClutterAlloyHydroponicsBasinVS is a 1x1 Hydroponic grower, same footprint as NewHydroponicsBasin, and was not listed here, so it never got CompPipe or CompRefuelable.
+                     DBH drains and rots a grower only when that comp exists, and while Hydroponics is on its TickRare prefix skips vanilla power-off plant death for every grower. This pot therefore grew with no water and with the power switch off.
+                     Tank matches the 1x1 basin (capacity 5, rate 0.025, multiplier 200). tickerType Normal is in the replace above so its rare tick is the same path as the other basins.
+                     Agrarian is 3x3 and its description says self-watering. PrimitiveHydroponic and FungiponicsBasin are not this hook. -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName='ClutterAlloyHydroponicsBasinVS']/comps</xpath>
                     <value>
                         <li Class="DubsBadHygiene.CompProperties_Pipe">
                             <mode>Sewage</mode>
