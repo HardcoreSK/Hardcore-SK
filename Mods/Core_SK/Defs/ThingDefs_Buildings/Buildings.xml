@@ -84,6 +84,12 @@
 		<placeWorkers>
 			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
 		</placeWorkers>
+		<!-- ResearchBase had no workTableRoomRole. PrimitiveResearchBench inherits it, so the bench does not score as a laboratory and StatPart_WorkTableRoomRole skips a null role when prisoner beds change the room.
+		     Laboratory and 0.8 match vanilla research benches and SK_WorkTable. That part stays off when the room is psychologically outdoors. SimpleResearchBench and HiTechResearchBench already set these two fields. -->
+		<building>
+			<workTableRoomRole>Laboratory</workTableRoomRole>
+			<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+		</building>
 	</ThingDef>
 
 	<ThingDef Name="JoyBase" ParentName="StandardBuilding" Abstract="True">
