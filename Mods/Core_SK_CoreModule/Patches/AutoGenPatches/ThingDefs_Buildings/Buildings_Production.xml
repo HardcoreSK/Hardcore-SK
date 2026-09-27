@@ -1009,6 +1009,8 @@
             </comps>
             <building Merge="true">
                 <uninstallWork>70</uninstallWork>
+                <!-- Vanilla CraftingSpot is a floor spot with artificialForMeditationPurposes false. This patch makes a minified 3x1 table; the merge left that flag, so the table did not reduce anima grass or Natural focus within 27.9. true overrides the spot. ButcherSpot stays a spot (minifiedDef nulled, flag false). Campfire stays false. -->
+                <artificialForMeditationPurposes>true</artificialForMeditationPurposes>
             </building>
             <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
         </value>
