@@ -262,9 +262,12 @@
             <li>CE_AutoEnableTrade</li>
             <li>Exotic</li>
         </tradeTags>
+        <!-- AmmoFirefoamFuel is under Ammo/Weapons. Chemical is under Extracted/ResourcesRaw.
+             Pallet fixed storage allows ResourcesRaw and does not allow Weapons or Ammo.
+             ThingFilter allows a def when any of its categories match, then the storage tree lists every category of that def, so a pallet accepted Surfactant and showed it as the only item under Weapons.
+             AmmoFirefoamFuel stays: ammo storage and the weapons cabinet allow Ammo, and the extinguisher ammo set points at the Surfactant def. -->
         <thingCategories>
             <li>AmmoFirefoamFuel</li>
-            <li>Chemical</li>
         </thingCategories>
         <stackLimit>150</stackLimit>
     </ThingDef>
