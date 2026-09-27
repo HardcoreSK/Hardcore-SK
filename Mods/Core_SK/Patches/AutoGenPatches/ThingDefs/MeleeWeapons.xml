@@ -236,6 +236,17 @@
 			</thingCategories>
 		</value>
 	</Operation>
+	<!--
+		MeleeWeapon_Knife is reparented to WeaponIndustrialBaseDummy, which only lists ElectricSmithy.
+		FueledSmithy came from vanilla BaseMeleeWeapon. The knife still lists CraftingSpot, and recipeUsers append, so the fueled smithy drops out while the crafting spot stays.
+		Add FueledSmithy on this knife only. Leave recipeMaker in place so Crafting 9, SmithingSpeed, and CraftingSpot remain.
+	-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Knife"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>FueledSmithy</li>
+		</value>
+	</Operation>
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="MeleeWeapon_Ikwa"]</xpath>
 		<value>
