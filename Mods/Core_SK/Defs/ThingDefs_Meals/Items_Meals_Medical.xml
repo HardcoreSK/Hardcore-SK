@@ -178,6 +178,9 @@
 		<ingestible>
 			<foodType>Fluid, Processed</foodType>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<!-- ResourceBase, so this does not inherit DrugBase's pickup of 1.
+			     maxNumToIngestAtOnce only caps the swallow. Unset, manual consume hauls up to 20 to drink 1. -->
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
 			<drugCategory>Medical</drugCategory>
 			<preferability>NeverForNutrition</preferability>
 			<ingestSound>Ingest_Drink</ingestSound>
@@ -225,6 +228,9 @@
 		<ingestible>
 			<foodType>Fluid, Processed</foodType>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<!-- ResourceBase, so this does not inherit DrugBase's pickup of 1.
+			     maxNumToIngestAtOnce only caps the swallow. Unset, manual consume hauls up to 20 to drink 1. -->
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
 			<drugCategory>Medical</drugCategory>
 			<preferability>NeverForNutrition</preferability>
 			<ingestSound>Ingest_Drink</ingestSound>

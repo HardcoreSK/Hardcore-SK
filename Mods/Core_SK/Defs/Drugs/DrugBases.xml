@@ -35,6 +35,11 @@
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<!-- Drug consume jobs pick up defaultNumToIngestAtOnce and ignore maxNumToIngestAtOnce.
+			     This abstract is not parented to DrugBase, which already sets the pickup count to 1.
+			     Unset, the field is 20: manual consume hauls the stack, swallows 1, and drops the rest.
+			     A scheduled dose already asks for 1. -->
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
 			<joyKind>Chemical</joyKind>
 			<chairSearchRadius>8</chairSearchRadius>
 		</ingestible>
