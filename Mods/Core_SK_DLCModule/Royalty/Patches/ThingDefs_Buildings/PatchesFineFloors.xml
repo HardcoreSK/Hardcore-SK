@@ -6,6 +6,13 @@
 			<Beauty>6</Beauty>
 		</value>
 	</Operation>
+	<!-- FineTileStoneBase has no designationCategory, so it inherits FloorBase Floors (Architect label Soft Floors). TileStoneBase and the other cut-stone floors are NaturalFloors (Hard Floors). ReplaceExtended adds the missing node; FineTile* and Minerals ZF_FineTile* inherit it. Floor_Tile_Fine is unchanged so the color list stays one dropdown. CarpetFine stays on Floors. -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/TerrainDef[@Name="FineTileStoneBase"]</xpath>
+		<value>
+			<designationCategory>NaturalFloors</designationCategory>
+		</value>
+	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/TerrainTemplateDef[defName="CarpetFine"]/statBases/Beauty</xpath>
 		<value>
