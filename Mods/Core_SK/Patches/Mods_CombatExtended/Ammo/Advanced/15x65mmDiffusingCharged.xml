@@ -32,6 +32,12 @@
 			<thingSetMakerTags Inherit="false" />
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="15x65mmDiffusingChargedBase"]/tradeTags</xpath>
+		<value>
+			<li>CE_AutoEnableCrafting</li>
+		</value>
+	</Operation>
 	<Operation Class="PatchOperationAttributeSet">
 		<xpath>Defs/ThingDef[@Name="Base15x65mmDiffusingChargedBullet"]</xpath>
 		<attribute>ParentName</attribute>
@@ -52,7 +58,48 @@
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/ThingDef[defName="Ammo_15x65mmDiffusingCharged" or defName="Bullet_15x65mmDiffusingCharged"]</xpath>
 	</Operation>
-	<Operation Class="PatchOperationRemove">
+	<!-- Use the HSK charged pellet bolt materials and batch size for the replacement ammo. -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/RecipeDef[defName="MakeAmmo_15x65mmDiffusingCharged"]</xpath>
+		<value>
+			<defName>MakeAmmo_15x65mmDiffusingCharged_Buck</defName>
+			<label>make 15x65mm Diffusing Charged cartridge x80</label>
+			<description>Craft 80 15x65mm Diffusing Charged cartridges.</description>
+			<ingredients DeepReplace="true">
+				<li>
+					<filter><categories><li>SLDBar</li></categories></filter>
+					<count>16</count>
+				</li>
+				<li>
+					<filter><categories><li>USLDBar</li></categories></filter>
+					<count>10</count>
+				</li>
+				<li>
+					<filter><thingDefs><li>MagneticMaterial</li></thingDefs></filter>
+					<count>2</count>
+				</li>
+				<li>
+					<filter><thingDefs><li>BiosyntheticMaterial</li></thingDefs></filter>
+					<count>2</count>
+				</li>
+			</ingredients>
+			<fixedIngredientFilter DeepReplace="true">
+				<categories>
+					<li>SLDBar</li>
+					<li>USLDBar</li>
+				</categories>
+				<thingDefs>
+					<li>MagneticMaterial</li>
+					<li>BiosyntheticMaterial</li>
+				</thingDefs>
+			</fixedIngredientFilter>
+			<products DeepReplace="true">
+				<Ammo_15x65mmDiffusingCharged_Buck>80</Ammo_15x65mmDiffusingCharged_Buck>
+			</products>
+		</value>
+	</Operation>
+	<!-- Inherit the HSK ChargeAmmoRecipeBase workAmount. -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_15x65mmDiffusingCharged_Buck"]/workAmount</xpath>
 	</Operation>
 </Patch>
