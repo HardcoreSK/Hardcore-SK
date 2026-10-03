@@ -12,7 +12,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="66mmThermalBoltBase"]/tradeTags</xpath>
 		<value>
-			<li>&lt;li MayRequire="Ludeon.RimWorld.Biotech"&gt;CE_AutoEnableCrafting&lt;/li&gt;</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">CE_AutoEnableCrafting</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
@@ -34,7 +34,46 @@
 			</comps>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationRemove">
+	<!-- HSK changes this round to thermobaric; use its existing thermobaric fuel cell materials. -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/RecipeDef[defName="MakeAmmo_66mmThermalBolt_Incendiary"]</xpath>
+		<value>
+			<label>make 66mm Thermal Bolt x20</label>
+			<description>Craft 20 66mm Thermal Bolts.</description>
+			<ingredients DeepReplace="true">
+				<li>
+					<filter><categories><li>Metallic</li></categories></filter>
+					<count>40</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+						</thingDefs>
+					</filter>
+					<count>10</count>
+				</li>
+				<li>
+					<filter><thingDefs><li>Napalm</li></thingDefs></filter>
+					<count>15</count>
+				</li>
+			</ingredients>
+			<fixedIngredientFilter DeepReplace="true">
+				<categories><li>Metallic</li></categories>
+				<thingDefs>
+					<li>Powder</li>
+					<li>FSX</li>
+					<li>Napalm</li>
+				</thingDefs>
+			</fixedIngredientFilter>
+			<products DeepReplace="true">
+				<Ammo_66mmThermalBolt_Incendiary>20</Ammo_66mmThermalBolt_Incendiary>
+			</products>
+		</value>
+	</Operation>
+	<!-- Inherit the HSK ChargeAmmoRecipeBase workAmount. -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_66mmThermalBolt_Incendiary"]/workAmount</xpath>
 	</Operation>
 </Patch>

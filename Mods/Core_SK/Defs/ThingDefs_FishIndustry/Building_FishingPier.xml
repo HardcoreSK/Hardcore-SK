@@ -271,7 +271,7 @@
 					</categories>
 				</filter>
 			</defaultStorageSettings>
-		  <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<!-- HSK_FishTrap is a minified building. false kept it out of the anima artificial-building count (grass growth and Natural focus, radius 27.9). Default true matches other constructed production buildings. Campfire stays false. -->
 		</building>
 		<inspectorTabs Inherit="false"/>
 		<thingCategories>
