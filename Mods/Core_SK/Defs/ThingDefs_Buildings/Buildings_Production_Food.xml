@@ -237,7 +237,7 @@
             <workTableNotInRoomRoleFactor>1</workTableNotInRoomRoleFactor>
             <isMealSource>true</isMealSource>
             <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+            <!-- OpenHearth is a minified fueled work table. false kept it out of the anima artificial-building count (grass growth and Natural focus, radius 27.9). Campfire stays false. Default true matches the other SK_WorkTableFueled benches. -->
             <destroySound>BuildingDestroyed_Wood_Small</destroySound>
         </building>
         <researchPrerequisites>
