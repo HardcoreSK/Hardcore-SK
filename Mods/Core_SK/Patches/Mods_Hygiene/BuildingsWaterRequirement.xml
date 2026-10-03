@@ -50,6 +50,31 @@
                         </li>
                     </value>
                 </li>
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName='ClutterAlloyHydroponicsBasinVS']</xpath>
+                    <value>
+                        <tickerType>Normal</tickerType>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName='ClutterAlloyHydroponicsBasinVS']/comps</xpath>
+                    <value>
+                        <li Class="DubsBadHygiene.CompProperties_Pipe">
+                            <mode>Sewage</mode>
+                        </li>
+                        <li Class="CompProperties_Refuelable">
+                            <consumeFuelOnlyWhenPowered>true</consumeFuelOnlyWhenPowered>
+                            <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+                            <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+                            <fuelLabel>Water</fuelLabel>
+                            <fuelGizmoLabel>Water</fuelGizmoLabel>
+                            <fuelCapacity>1.25</fuelCapacity>
+                            <fuelConsumptionRate>0.00625</fuelConsumptionRate>
+                            <fuelMultiplier>200</fuelMultiplier>
+                            <fuelFilter/>
+                        </li>
+                    </value>
+                </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName='FertilizerPump']/comps</xpath>
                     <value>
