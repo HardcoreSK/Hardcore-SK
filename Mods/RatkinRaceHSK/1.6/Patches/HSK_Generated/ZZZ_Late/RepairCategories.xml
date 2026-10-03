@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<!-- Repair categories for hand-crafted weapons and shields; preserve existing categories. -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_TowerShield']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li>ShieldCat</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_Dagger']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li>AgileMelee</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_OneHanded']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li>SharpMelee</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_LightLance']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li>SharpMelee</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_LongSword']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li>SharpMelee</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_Spear']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li>SharpMelee</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_Halberd']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li>SharpMelee</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_TwoHanded']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li>HeavyMelee</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_HeavyLance']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li>HeavyMelee</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_Mace']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li>BluntMelee</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_Axe']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li>SurvivalToolsNeolithic</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_Cleaver']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li>SurvivalToolsNeolithic</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_Hockey']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li>SurvivalToolsNeolithic</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_Fork']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li>SurvivalToolsNeolithic</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_Pickaxe']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li>SurvivalToolsNeolithic</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_Weapon_Maul']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li>SurvivalToolsNeolithic</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_Crossbow']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li>CrossbarRanged</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_EnhanceCrossBow']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li>CrossbarRanged</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_Weapon_Arbalest']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li>CrossbarRanged</li>
+			</thingCategories>
+		</value>
+	</Operation>
+</Patch>
