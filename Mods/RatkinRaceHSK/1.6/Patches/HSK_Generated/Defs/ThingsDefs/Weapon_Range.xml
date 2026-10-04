@@ -340,6 +340,9 @@
 		<value>
 			<ThingDef ParentName="RK_MedievalRangeWeapon">
 				<defName>RK_Crossbow</defName>
+				<thingCategories>
+					<li>CrossbarRanged</li>
+				</thingCategories>
 				<label>cross bow</label>
 				<description>간단한 석궁입니다. 사냥을 할때 쓰입니다.</description>
 				<graphicData>

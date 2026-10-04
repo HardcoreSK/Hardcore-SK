@@ -308,6 +308,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_ApronSkirt</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">BaseLayerCat</li>
+				</thingCategories>
 				<label>apron skirt</label>
 				<description>앞치마가 달린 간단한 의류입니다.</description>
 				<graphicData>
@@ -378,6 +381,9 @@
 		<value>
 			<ThingDef ParentName="RK_BattleSuitBase">
 				<defName>RK_BattleSuit</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">CombinedArmorCat</li>
+				</thingCategories>
 				<graphicData>
 					<texPath>Apparel/RK_BattleSuit</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -393,6 +399,9 @@
 		<value>
 			<ThingDef ParentName="RK_BattleSuitBase">
 				<defName>RK_BattleSuitB</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">CombinedArmorCat</li>
+				</thingCategories>
 				<graphicData>
 					<texPath>Apparel/RK_BattleSuitB</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -408,6 +417,9 @@
 		<value>
 			<ThingDef ParentName="RK_HatMakeableBase">
 				<defName>RK_BulletProofHelmet</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">PreModernHelmetsCat</li>
+				</thingCategories>
 				<label>Ratkin military helmet</label>
 				<description>랫킨용 방탄 모자입니다. 착용자의 공포감을 조금 덜어주고 조준을 수월하게 해줍니다.</description>
 				<graphicData>
@@ -481,6 +493,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_Cardigan</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">ShellLayerCat</li>
+				</thingCategories>
 				<label>cardigan</label>
 				<description>옷 겉에 입는 외투입니다. 옷을 한겹 더입어 추위로부터 몸을 지킬 수 있습니다.</description>
 				<graphicData>
@@ -550,6 +565,9 @@
 		<value>
 			<ThingDef ParentName="RK_HatMakeableBase">
 				<defName>RK_ChefHat</defName>
+				<thingCategories>
+					<li>HeaddressCat</li>
+				</thingCategories>
 				<label>chef hat</label>
 				<description>쉐프 모자입니다. 음식에 머리카락이나 이물질이 들어가지 않도록 방지해줍니다.</description>
 				<graphicData>
@@ -617,6 +635,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_ChefSuit</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">BaseLayerCat</li>
+				</thingCategories>
 				<label>chef suit</label>
 				<description>쉐프 복장입니다. 요리하기 편하도록 디자인 되어 조리속도를 상승시켜줍니다.</description>
 				<graphicData>
@@ -691,6 +712,9 @@
 		<value>
 			<ThingDef ParentName="RK_HatMakeableBase">
 				<defName>RK_Coif</defName>
+				<thingCategories>
+					<li>HeaddressCat</li>
+				</thingCategories>
 				<label>coif</label>
 				<description>작업할 때 쓰는 모자입니다. 머리카락이 넘어오지 않도록 방지해줍니다.</description>
 				<graphicData>
@@ -752,6 +776,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_EarCostume</defName>
+				<thingCategories>
+					<li>HeaddressCat</li>
+				</thingCategories>
 				<label>ratkin ear costume</label>
 				<description>귀여운 랫킨을 흉내내기 위한 귀 코스튬 입니다. 덩치가 큰 사람이 사용하면 전혀 귀엽지 않습니다.</description>
 				<graphicData>
@@ -806,6 +833,9 @@
 		<value>
 			<ThingDef ParentName="RK_HatMakeableBase">
 				<defName>RK_ExplorerHat</defName>
+				<thingCategories>
+					<li>HeaddressCat</li>
+				</thingCategories>
 				<label>explorer hat</label>
 				<description>탐험 모자입니다. 땡볕을 막아줍니다.</description>
 				<graphicData>
@@ -869,6 +899,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_ExplorerWear</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">BaseLayerCat</li>
+				</thingCategories>
 				<label>explorer wear</label>
 				<description>오지를 탐험할때 입는 옷입니다. 이동에 편리하고 몸에서 나는 소리를 줄여줍니다.</description>
 				<graphicData>
@@ -946,6 +979,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_FlatColorCoat</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">BaseLayerCat</li>
+				</thingCategories>
 				<label>flatcolor coat</label>
 				<description>단아한 단색 원피스입니다. 편하면서 공식적 자리에 입기 좋아보입니다.</description>
 				<graphicData>
@@ -1023,6 +1059,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_FrillOnepiece</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">BaseLayerCat</li>
+				</thingCategories>
 				<label>frill onepiece</label>
 				<description>프릴장식이 있는 귀여운 원피스이빈다. 상류층의 아가씨들에게 인기가 많습니다.</description>
 				<graphicData>
@@ -1098,6 +1137,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_GaurdenUniform</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">BaseLayerCat</li>
+				</thingCategories>
 				<label>gaurden uniform</label>
 				<description>정원 지킴이들이 입는 정장입니다. 농경이 중요한 랫킨의 사회에서 정원을 지키는것은 중요한 일이며 가장 유능한 인재들만이 정원사가 될 수 있습니다.</description>
 				<graphicData>
@@ -1178,6 +1220,9 @@
 		<value>
 			<ThingDef ParentName="RK_HatMakeableBase">
 				<defName>RK_HairCorsage</defName>
+				<thingCategories>
+					<li>HeaddressCat</li>
+				</thingCategories>
 				<label>hair corsage</label>
 				<description>머리에 쓰는 코사주입니다. 코사주의 우아함은 말 한마디마다 힘을 실어줍니다.</description>
 				<graphicData>
@@ -1290,6 +1335,9 @@
 		<value>
 			<ThingDef ParentName="RK_MaskBase">
 				<defName>RK_Mask</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">PreModernHelmetsCat</li>
+				</thingCategories>
 				<graphicData>
 					<texPath>Apparel/RK_Mask</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -1309,6 +1357,9 @@
 		<value>
 			<ThingDef ParentName="RK_MaskBase">
 				<defName>RK_MaskB</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">PreModernHelmetsCat</li>
+				</thingCategories>
 				<graphicData>
 					<texPath>Apparel/RK_MaskB</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -1329,6 +1380,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_MildCoat</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">BaseLayerCat</li>
+				</thingCategories>
 				<label>mild coat</label>
 				<description>앞치마가 달린 간단한 의류입니다.</description>
 				<graphicData>
@@ -1396,6 +1450,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_Muffler</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">MiddleLayerCat</li>
+				</thingCategories>
 				<label>muffler</label>
 				<description>목에 두르는 목도리입니다. 목을 통해 체온이 빠져나가는걸 방지해줍니다. 사막을 횡단할때 쓸 수 있습니다.</description>
 				<graphicData>
@@ -1461,6 +1518,9 @@
 		<value>
 			<ThingDef ParentName="RK_OrderBase">
 				<defName>RK_OrderUniform</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">MiddleLayerCat</li>
+				</thingCategories>
 				<graphicData>
 					<texPath>Apparel/RK_OrderUniform</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -1476,6 +1536,9 @@
 		<value>
 			<ThingDef ParentName="RK_OrderBase">
 				<defName>RK_OrderUniformB</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">MiddleLayerCat</li>
+				</thingCategories>
 				<graphicData>
 					<texPath>Apparel/RK_OrderUniformB</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -1491,6 +1554,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_ResearchGlasses</defName>
+				<thingCategories>
+					<li>HeaddressCat</li>
+				</thingCategories>
 				<label>ratkin glasses</label>
 				<description>랫킨용 안경입니다. 랫킨들에게 부족한 시력을 높여줍니다. 똑똑해진것 같다는 느낌도 조금 줍니다.</description>
 				<graphicData>
@@ -1558,6 +1624,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_ResearchGown</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">BaseLayerCat</li>
+				</thingCategories>
 				<label>research gown</label>
 				<description>연구할때 입는 가운입니다. 먼지를 날리지 않으며 지적으로 보입니다.</description>
 				<graphicData>
@@ -1640,6 +1709,9 @@
 		<value>
 			<ThingDef ParentName="RK_HatMakeableBase">
 				<defName>RK_RibbonHairBand</defName>
+				<thingCategories>
+					<li>HeaddressCat</li>
+				</thingCategories>
 				<label>ribbon hair band</label>
 				<description>머리에 착용하는 작고 이쁜 리본입니다. 리본의 귀여움은 사탕하나를 더 주고 싶도록 만들것입니다.</description>
 				<graphicData>
@@ -1695,6 +1767,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_SistersDerss</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">BaseLayerCat</li>
+				</thingCategories>
 				<label>Sisters Dress</label>
 				<description>수녀들이 입는 단아한 원피스입니다. 약간의 옆트임이 있어 움직임이 편합니다. 랫킨의 수녀들은 아픈 사람들을 돌보기도 합니다.</description>
 				<graphicData>
@@ -1771,6 +1846,9 @@
 		<value>
 			<ThingDef ParentName="RK_HatMakeableBase">
 				<defName>RK_SistersVeil</defName>
+				<thingCategories>
+					<li>HeaddressCat</li>
+				</thingCategories>
 				<label>Veil</label>
 				<description>수녀들이 머리에 쓰는 베일입니다. 머리를 단정하게 해줍니다.</description>
 				<graphicData>
@@ -1839,6 +1917,9 @@
 		<value>
 			<ThingDef ParentName="RK_HatMakeableBase">
 				<defName>RK_StrawHat</defName>
+				<thingCategories>
+					<li>HeaddressCat</li>
+				</thingCategories>
 				<label>Straw Hat</label>
 				<description>건초로 만든 밀짚모자입니다. 뜨거운 땡볕으로부터 몸을 지켜줍니다.</description>
 				<graphicData>
@@ -1902,6 +1983,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_SummerDress</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">BaseLayerCat</li>
+				</thingCategories>
 				<label>summer dress</label>
 				<description>여름용 흰 드레스입니다. 통풍이 잘되어 체온을 빠르게 식혀줍니다.</description>
 				<graphicData>
@@ -1966,6 +2050,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_WinterRobe</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">ShellLayerCat</li>
+				</thingCategories>
 				<label>winter robe</label>
 				<description>겨울용 예복입니다. 극지에서 활동할때 입습니다.</description>
 				<graphicData>
@@ -2041,6 +2128,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_WoolenHat</defName>
+				<thingCategories>
+					<li>HeaddressCat</li>
+				</thingCategories>
 				<label>woolen hat</label>
 				<description>털 달린 모자입니다.</description>
 				<graphicData>
@@ -2101,6 +2191,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_WorkerWear</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">BaseLayerCat</li>
+				</thingCategories>
 				<label>Ratkin worker outfit</label>
 				<description>작업하기 편한 옷입니다. 일상생활에서 일하기 편하도록 디자인되었습니다.</description>
 				<graphicData>

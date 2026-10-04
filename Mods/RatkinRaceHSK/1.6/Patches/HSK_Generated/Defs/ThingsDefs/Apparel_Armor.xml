@@ -5,6 +5,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_Plate</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">MiddleArmorCat</li>
+				</thingCategories>
 				<label>ratkin plate armor</label>
 				<description>금속으로 만든 방어구입니다. 덧입을 수 있어 방어력을 한층 더 올릴 수 있습니다.</description>
 				<graphicData>
@@ -96,6 +99,9 @@
 		<value>
 			<ThingDef ParentName="RK_HatMakeableBase">
 				<defName>RK_PlateHelmA</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">PreModernHelmetsCat</li>
+				</thingCategories>
 				<label>Ratkin plate Helm</label>
 				<description>금속으로 만든 투구입니다.</description>
 				<graphicData>
@@ -179,6 +185,9 @@
 		<value>
 			<ThingDef ParentName="RK_HatMakeableBase">
 				<defName>RK_PlateHelmB</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">PreModernHelmetsCat</li>
+				</thingCategories>
 				<label>Ratkin plate Helm</label>
 				<description>금속으로 만든 투구입니다.</description>
 				<graphicData>
@@ -263,6 +272,9 @@
 		<value>
 			<ThingDef ParentName="RK_HatMakeableBase">
 				<defName>RK_PlateHelmC</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">PreModernHelmetsCat</li>
+				</thingCategories>
 				<label>Ratkin plate Helm</label>
 				<description>금속으로 만든 투구입니다.</description>
 				<graphicData>

@@ -5,6 +5,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_Backpack</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">ShellLayerCat</li>
+				</thingCategories>
 				<label>backpack</label>
 				<description>등에 맬 수 있는 가방입니다. 짐을 더 많이 나를 수 있게 해줍니다.</description>
 				<graphicData>
@@ -88,6 +91,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_CrossBack</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">ShellLayerCat</li>
+				</thingCategories>
 				<label>cross back</label>
 				<description>간단한 봇짐입니다. 짐을 조금 더 나를 수 있게 해줍니다.</description>
 				<graphicData>
@@ -156,6 +162,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_OutdoorBackpack</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">ShellLayerCat</li>
+				</thingCategories>
 				<label>ratkin outdoor backpack</label>
 				<description>랫킨용 등짐 가방입니다. 랫킨 신체에 맞도록 고안된 가방으로 더욱 많은 짐을 들 수 있도록 해줍니다.</description>
 				<graphicData>

@@ -281,6 +281,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_WhiteCoat</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">ShellLayerCat</li>
+				</thingCategories>
 				<label>ratkin white coat</label>
 				<description>순백색의 두꺼운 코트입니다. 질 좋은 원단과 세심하게 마감하였습니다. 고위직을 위한 의복같아 보입니다.</description>
 				<graphicData>

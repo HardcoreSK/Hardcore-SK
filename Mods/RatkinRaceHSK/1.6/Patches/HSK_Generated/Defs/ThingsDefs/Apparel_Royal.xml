@@ -6,6 +6,9 @@
 		<value>
 			<ThingDef ParentName="RK_HatMakeableBase">
 				<defName>RK_RoyalCrown</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">PreModernHelmetsCat</li>
+				</thingCategories>
 				<label>Ratkin royal crown</label>
 				<description>금속제 왕관입니다.</description>
 				<graphicData>
@@ -88,6 +91,9 @@
 		<value>
 			<ThingDef ParentName="RK_ApparelMakeableBase">
 				<defName>RK_RoyalRobe</defName>
+				<thingCategories>
+					<li MayRequire="ViTech.MedievalOverhaul">ShellLayerCat</li>
+				</thingCategories>
 				<label>ratkin royal robe</label>
 				<description>고풍스러운 귀족을 위한 외투입니다. 직물을 여러번 덧대어 튼튼하고 방풍이 잘되도록 만들었습니다.</description>
 				<graphicData>

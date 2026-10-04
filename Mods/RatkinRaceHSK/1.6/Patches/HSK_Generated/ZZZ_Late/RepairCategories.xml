@@ -34,14 +34,6 @@
 		</value>
 	</Operation>
 	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName='RK_LongSword']</xpath>
-		<value>
-			<thingCategories Merge="true">
-				<li>SharpMelee</li>
-			</thingCategories>
-		</value>
-	</Operation>
-	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName='RK_Spear']</xpath>
 		<value>
 			<thingCategories Merge="true">
@@ -54,22 +46,6 @@
 		<value>
 			<thingCategories Merge="true">
 				<li>SharpMelee</li>
-			</thingCategories>
-		</value>
-	</Operation>
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName='RK_TwoHanded']</xpath>
-		<value>
-			<thingCategories Merge="true">
-				<li>HeavyMelee</li>
-			</thingCategories>
-		</value>
-	</Operation>
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName='RK_HeavyLance']</xpath>
-		<value>
-			<thingCategories Merge="true">
-				<li>HeavyMelee</li>
 			</thingCategories>
 		</value>
 	</Operation>
@@ -130,18 +106,27 @@
 		</value>
 	</Operation>
 	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName='RK_Crossbow']</xpath>
+		<xpath>Defs/ThingDef[defName='RK_Weapon_Arbalest']</xpath>
 		<value>
 			<thingCategories Merge="true">
 				<li>CrossbarRanged</li>
 			</thingCategories>
 		</value>
 	</Operation>
+	<!-- Repair categories for child and banner apparel without generated whole-Def replacements. -->
 	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName='RK_Weapon_Arbalest']</xpath>
+		<xpath>Defs/ThingDef[defName='RK_ApronSkirtChildren' or defName='RK_Apparel_ChildrenSummerDress']</xpath>
 		<value>
 			<thingCategories Merge="true">
-				<li>CrossbarRanged</li>
+				<li MayRequire="ViTech.MedievalOverhaul">BaseLayerCat</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName='RK_Apparel_ChildrenWinterRobe' or defName='RK_Apparel_ChildrenCardigan' or defName='RK_Apparel_Banner']</xpath>
+		<value>
+			<thingCategories Merge="true">
+				<li MayRequire="ViTech.MedievalOverhaul">ShellLayerCat</li>
 			</thingCategories>
 		</value>
 	</Operation>
