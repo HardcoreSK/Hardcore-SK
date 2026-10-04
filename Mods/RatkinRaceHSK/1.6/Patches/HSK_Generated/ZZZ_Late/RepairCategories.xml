@@ -138,14 +138,6 @@
 		</value>
 	</Operation>
 	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName='RK_EnhanceCrossBow']</xpath>
-		<value>
-			<thingCategories Merge="true">
-				<li>CrossbarRanged</li>
-			</thingCategories>
-		</value>
-	</Operation>
-	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName='RK_Weapon_Arbalest']</xpath>
 		<value>
 			<thingCategories Merge="true">

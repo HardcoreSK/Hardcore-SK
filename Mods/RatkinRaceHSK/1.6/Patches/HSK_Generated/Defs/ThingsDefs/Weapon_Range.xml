@@ -419,6 +419,9 @@
 		<value>
 			<ThingDef ParentName="RK_MedievalRangeWeapon">
 				<defName>RK_EnhanceCrossBow</defName>
+				<thingCategories>
+					<li>CrossbarRanged</li>
+				</thingCategories>
 				<label>enhanced cross bow</label>
 				<description>개량된 석궁입니다. 보다 멀리나가며 관통력도 우수합니다.</description>
 				<graphicData>
