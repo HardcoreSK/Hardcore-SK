@@ -195,10 +195,13 @@
 		<naturalBiomes Inherit="false">
 			<li MayRequire="vileheathen.mountainsmeadows">Prairie</li>
 			<li>TemperateForest</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Glowforest</li>
 			<li>TemperateSwamp</li>
 			<li>TropicalRainforest</li>
 			<li>TropicalSwamp</li>
 			<li>AridShrubland</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">LavaField</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Grasslands</li>
 			<li>DesertArchipelago</li>
 			<li>DesertArchipelago_Fresh</li>
 			<li>TemperateArchipelago</li>
@@ -281,10 +284,13 @@
 		<naturalBiomes Inherit="false">
 			<li MayRequire="vileheathen.mountainsmeadows">Prairie</li>
 			<li>TemperateForest</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Glowforest</li>
 			<li>TemperateSwamp</li>
 			<li>TropicalRainforest</li>
 			<li>TropicalSwamp</li>
 			<li>AridShrubland</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">LavaField</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Grasslands</li>
 			<li>DesertArchipelago</li>
 			<li>DesertArchipelago_Fresh</li>
 			<li>TemperateArchipelago</li>
@@ -368,6 +374,8 @@
 			<li>TropicalRainforest</li>
 			<li>TropicalSwamp</li>
 			<li>AridShrubland</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">LavaField</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Grasslands</li>
 			<li>TropicalArchipelago</li>
 			<li>TropicalArchipelago_Fresh</li>
 			<li>TropicalSwampArchipelago</li>
@@ -467,11 +475,16 @@
 			<li>SeaIce</li>
 			<li>IceSheet</li>
 			<li>Tundra</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">GlacialPlain</li>
 			<li>BorealForest</li>
 			<li>TemperateForest</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Glowforest</li>
 			<li>TropicalRainforest</li>
 			<li>AridShrubland</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">LavaField</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Grasslands</li>
 			<li>Desert</li>
+			<li>ExtremeDesert</li>
 			<li>BorealArchipelago</li>
 			<li>BorealArchipelago_Fresh</li>
 			<li>DesertArchipelago</li>
@@ -563,6 +576,8 @@
 			<li>TropicalRainforest</li>
 			<li>TropicalSwamp</li>
 			<li>AridShrubland</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">LavaField</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Grasslands</li>
 			<li>TropicalArchipelago</li>
 			<li>TropicalArchipelago_Fresh</li>
 			<li>TropicalSwampArchipelago</li>
@@ -641,6 +656,7 @@
 			<li>SeaIce</li>
 			<li>IceSheet</li>
 			<li>Tundra</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">GlacialPlain</li>
 			<li>BorealForest</li>
 			<li>BorealArchipelago</li>
 			<li>BorealArchipelago_Fresh</li>
@@ -721,11 +737,16 @@
 			<li>SeaIce</li>
 			<li>IceSheet</li>
 			<li>Tundra</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">GlacialPlain</li>
 			<li>BorealForest</li>
 			<li>TemperateForest</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Glowforest</li>
 			<li>TropicalRainforest</li>
 			<li>AridShrubland</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">LavaField</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Grasslands</li>
 			<li>Desert</li>
+			<li>ExtremeDesert</li>
 			<li>ColdBog</li>
 			<li>BorealArchipelago</li>
 			<li>BorealArchipelago_Fresh</li>
@@ -819,8 +840,11 @@
 		<breedingDurationInDays>6</breedingDurationInDays>
 		<naturalBiomes Inherit="false">
 			<li>TemperateForest</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Glowforest</li>
 			<li>TropicalRainforest</li>
 			<li>AridShrubland</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">LavaField</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Grasslands</li>
 			<li>TemperateArchipelago</li>
 			<li>TemperateArchipelago_Fresh</li>
 			<li>TropicalArchipelago</li>
@@ -928,8 +952,10 @@
 			<li>SeaIce</li>
 			<li>IceSheet</li>
 			<li>Tundra</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">GlacialPlain</li>
 			<li>BorealForest</li>
 			<li>TemperateForest</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Glowforest</li>
 			<li>BorealArchipelago_Fresh</li>
 			<li>DesertArchipelago_Fresh</li>
 			<li>TemperateArchipelago_Fresh</li>
@@ -1008,6 +1034,7 @@
 		<commonality>0.12</commonality>
 		<naturalBiomes Inherit="false">
 			<li>TemperateForest</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Glowforest</li>
 			<li>TropicalRainforest</li>
 			<li>TemperateArchipelago</li>
 			<li>TemperateArchipelago_Fresh</li>
@@ -1098,9 +1125,12 @@
 			<li>SeaIce</li>
 			<li>IceSheet</li>
 			<li>Tundra</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">GlacialPlain</li>
 			<li>BorealForest</li>
 			<li>TemperateForest</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Glowforest</li>
 			<li>Desert</li>
+			<li>ExtremeDesert</li>
 			<li>BorealArchipelago_Fresh</li>
 			<li>DesertArchipelago_Fresh</li>
 			<li>TemperateArchipelago_Fresh</li>
@@ -1183,11 +1213,16 @@
 			<li>SeaIce</li>
 			<li>IceSheet</li>
 			<li>Tundra</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">GlacialPlain</li>
 			<li>BorealForest</li>
 			<li>TemperateForest</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Glowforest</li>
 			<li>TropicalRainforest</li>
 			<li>AridShrubland</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">LavaField</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Grasslands</li>
 			<li>Desert</li>
+			<li>ExtremeDesert</li>
 			<li>ColdBog</li>
 			<li>BorealArchipelago</li>
 			<li>BorealArchipelago_Fresh</li>
@@ -1279,9 +1314,13 @@
 		<naturalBiomes Inherit="false">
 			<li>BorealForest</li>
 			<li>TemperateForest</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Glowforest</li>
 			<li>TropicalRainforest</li>
 			<li>AridShrubland</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">LavaField</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Grasslands</li>
 			<li>Desert</li>
+			<li>ExtremeDesert</li>
 			<li>BorealArchipelago</li>
 			<li>BorealArchipelago_Fresh</li>
 			<li>DesertArchipelago</li>
