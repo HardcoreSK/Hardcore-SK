@@ -365,4 +365,49 @@
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/RecipeDef[defName="MakeAmmo_30x29mmGrenade_Smoke"]/workAmount</xpath>
 	</Operation>
+	<!-- Use the existing HSK HEDP material requirements and launcher recipe base. -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_30x29mmGrenade_HEDP"]</xpath>
+		<value Merge="true">
+			<label>make 30x29mm HEDP grenades x20</label>
+			<description>Craft 20 30x29mm HEDP grenades.</description>
+			<researchPrerequisite>Range_C2</researchPrerequisite>
+			<ingredients DeepReplace="true">
+				<li>
+					<filter><categories><li>Metallic</li></categories></filter>
+					<count>40</count>
+				</li>
+				<li>
+					<filter><thingDefs><li>Powder</li><li>FSX</li></thingDefs></filter>
+					<count>8</count>
+				</li>
+				<li>
+					<filter><categories><li>Chemical</li></categories></filter>
+					<count>5</count>
+				</li>
+				<li>
+					<filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter>
+					<count>4</count>
+				</li>
+			</ingredients>
+			<fixedIngredientFilter DeepReplace="true">
+				<categories>
+					<li>SLDBar</li>
+					<li>USLDBar</li>
+					<li>Chemical</li>
+				</categories>
+				<thingDefs>
+					<li>Powder</li>
+					<li>FSX</li>
+					<li>ComponentIndustrial</li>
+				</thingDefs>
+			</fixedIngredientFilter>
+			<products DeepReplace="true">
+				<Ammo_30x29mmGrenade_HEDP>20</Ammo_30x29mmGrenade_HEDP>
+			</products>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_30x29mmGrenade_HEDP"]/workAmount</xpath>
+	</Operation>
 </Patch>
