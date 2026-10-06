@@ -183,7 +183,7 @@
 			<preferability>NeverForNutrition</preferability>
 			<ingestSound>Ingest_Drink</ingestSound>
 			<outcomeDoers>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
+				<li Class="SK.IngestionOutcomeDoer_AddHediffSeverity">
 					<hediffDef>MedicalDrink</hediffDef>
 					<severity>0.15</severity>
 				</li>
@@ -231,7 +231,7 @@
 			<preferability>NeverForNutrition</preferability>
 			<ingestSound>Ingest_Drink</ingestSound>
 			<outcomeDoers>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
+				<li Class="SK.IngestionOutcomeDoer_AddHediffSeverity">
 					<hediffDef>MedicalDrink</hediffDef>
 					<severity>0.20</severity>
 				</li>
