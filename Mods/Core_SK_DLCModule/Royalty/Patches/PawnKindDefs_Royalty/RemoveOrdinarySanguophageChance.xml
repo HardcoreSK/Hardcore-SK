@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!--
+		Ordinary xenotypeChances roll Sanguophage onto raids, visitors, settlements, and random starters.
+		PawnGenerator.XenotypesAvailableFor adds the faction set when useFactionXenotypes is left on, then always adds the pawn kind set, and sums the same xenotype.
+		The sanguophage quests and the Sanguophage scenario use SanguophageBase (weight 999), inherited by Sanguophage and Sanguophage_Player. SanguophageThrall has no chance node. Those defs are skipped.
+		Royalty royal pawn kinds carry the same random weight in Royalty data. This remove runs after Royalty and Biotech. The node is MayRequire Biotech, so the conditional skips when that node is absent.
+		xenotypeList entries are the race allow-list for a quest or scenario pawn and are not this xpath.
+		Core module and Ratkin patch values do not insert this element. Ratkin can load after this patch; its replacements would otherwise put the weight back.
+	-->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef/xenotypeSet/xenotypeChances/Sanguophage</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/FactionDef/xenotypeSet/xenotypeChances/Sanguophage</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/PawnKindDef[not(defName="Sanguophage" or defName="Sanguophage_Player" or defName="SanguophageThrall" or @Name="SanguophageBase")]/xenotypeSet/xenotypeChances/Sanguophage</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/PawnKindDef[not(defName="Sanguophage" or defName="Sanguophage_Player" or defName="SanguophageThrall" or @Name="SanguophageBase")]/xenotypeSet/xenotypeChances/Sanguophage</xpath>
+		</match>
+	</Operation>
+
+</Patch>
