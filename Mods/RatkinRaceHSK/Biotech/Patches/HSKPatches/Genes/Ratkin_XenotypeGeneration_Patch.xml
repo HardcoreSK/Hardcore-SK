@@ -25,8 +25,7 @@
   </Operation>
 
   <!-- Baseliner carries no genes of its own; HAR raceGenes supplies the
-       inheritable Ratkin foundation.
-       Sanguophage stays on this allow-list so a quest or scenario pawn of this race can still be one. The list is not the roll. -->
+       inheritable Ratkin foundation. -->
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction</xpath>
     <value>
@@ -64,9 +63,7 @@
   </Operation>
 
   <!-- Only non-inheritable xenotypes are allowed here. Their genes are added
-       exclusively as xenogenes and cannot replace Ratkin raceGenes.
-       Sanguophage is omitted: the sanguophage quests and scenario use their own pawn kinds.
-       The removed weight is on RK_XenoType_Ratkin so this set still sums to 1. -->
+       exclusively as xenogenes and cannot replace Ratkin raceGenes. -->
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/PawnKindDef/xenotypeSet/xenotypeChances[RK_XenoType_Ratkin]</xpath>
     <value>
