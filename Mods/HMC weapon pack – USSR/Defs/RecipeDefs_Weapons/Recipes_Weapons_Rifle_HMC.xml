@@ -167,13 +167,6 @@
 		<researchPrerequisite>Rifles_C1</researchPrerequisite>
 	</RecipeDef>
 
-    <!--
-    BuildAK74M_HMC and BuildGroza took AdvRifle_Component.
-    MakeAdvRifle_Component costs 2 AdvMechanism, and both AdvMechanism recipes require Components_D1 (Spacer).
-    Rifles_C2 and Rifles_C3 are Industrial. Core_SK rifles on those projects already take Rifle_Component on AdvWeaponCraftingWorkTable.
-    Research, bench, and the other ingredient counts stay. Mosin-Nagant and AVT-40 stay on Rifles_C1 and Rifle_Component.
-    Smelt products on the gun defs stay AdvRifle_Component.
-    -->
     <!-- AK74M -->
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildAK74M_HMC</defName>
