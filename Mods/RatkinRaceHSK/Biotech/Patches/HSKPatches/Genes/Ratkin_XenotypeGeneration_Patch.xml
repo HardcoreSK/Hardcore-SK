@@ -68,21 +68,11 @@
     <xpath>Defs/PawnKindDef/xenotypeSet/xenotypeChances[RK_XenoType_Ratkin]</xpath>
     <value>
       <xenotypeChances>
-        <RK_XenoType_Ratkin MayRequire="Ludeon.RimWorld.Biotech">0.88</RK_XenoType_Ratkin>
-        <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.03</Sanguophage>
+        <RK_XenoType_Ratkin MayRequire="Ludeon.RimWorld.Biotech">0.91</RK_XenoType_Ratkin>
         <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.03</Hussar>
         <Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie>
         <Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.03</Starjack>
       </xenotypeChances>
-    </value>
-  </Operation>
-
-  <!-- Factions keep their full xenotype pools. Only normalize the
-       Sanguophage weight to the regular HSK value. -->
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef/xenotypeSet/xenotypeChances[RK_XenoType_Ratkin]/Sanguophage</xpath>
-    <value>
-      <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.03</Sanguophage>
     </value>
   </Operation>
 
