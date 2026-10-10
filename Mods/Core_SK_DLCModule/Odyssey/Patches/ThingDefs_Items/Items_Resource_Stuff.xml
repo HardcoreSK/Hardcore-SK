@@ -10,4 +10,166 @@
 			</statFactors>
 		</value>
 	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Leather_Mastodon"]</xpath>
+        <value>
+            <statBases>
+                <MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>3.0</MarketValue>
+                <StuffPower_Armor_Sharp>1.12</StuffPower_Armor_Sharp>
+                <StuffPower_Armor_Blunt>1.2</StuffPower_Armor_Blunt>
+                <StuffPower_Armor_Heat>0.1</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
+      			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+				<Bulk>0.1</Bulk>
+            </statBases>
+			<stuffProps>
+                <statFactors>
+                    <MarketValue>0.8</MarketValue>
+					<MoveSpeed>1</MoveSpeed>
+                    <WorkToMake>1.7</WorkToMake>
+                    <WorkToBuild>1.7</WorkToBuild>
+                    <BedRestEffectiveness>0.8</BedRestEffectiveness>
+                    <ImmunityGainSpeedFactor>1</ImmunityGainSpeedFactor>
+                    <Mass>0.5</Mass>
+                </statFactors>
+            </stuffProps>
+        </value>
+    </Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Leather_Sealskin"]</xpath>
+        <value>
+            <statBases>
+                <MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>4.0</MarketValue>
+                <StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
+                <StuffPower_Armor_Blunt>1.1</StuffPower_Armor_Blunt>
+                <StuffPower_Armor_Heat>0.08</StuffPower_Armor_Heat>	
+				<StuffPower_Insulation_Cold>36</StuffPower_Insulation_Cold>
+      			<StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+				<Bulk>0.1</Bulk>
+            </statBases>
+			<stuffProps>
+                <statFactors>
+                    <MarketValue>0.8</MarketValue>
+					<MoveSpeed>1</MoveSpeed>
+                    <WorkToMake>1.8</WorkToMake>
+                    <WorkToBuild>1.8</WorkToBuild>
+                    <BedRestEffectiveness>0.88</BedRestEffectiveness>
+                    <ImmunityGainSpeedFactor>1.2</ImmunityGainSpeedFactor>
+                    <Mass>0.5</Mass>
+                </statFactors>
+            </stuffProps>
+        </value>
+    </Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Leather_AlphaThrumbo"]</xpath>
+        <value>
+            <statBases>
+                <MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>20.0</MarketValue>
+                <StuffPower_Armor_Sharp>1.45</StuffPower_Armor_Sharp>
+                <StuffPower_Armor_Blunt>1.35</StuffPower_Armor_Blunt>
+                <StuffPower_Armor_Heat>0.16</StuffPower_Armor_Heat>	
+				<StuffPower_Insulation_Cold>36</StuffPower_Insulation_Cold>
+      			<StuffPower_Insulation_Heat>24</StuffPower_Insulation_Heat>
+				<Bulk>0.1</Bulk>
+            </statBases>
+			<stuffProps>
+                <statFactors>
+                    <MarketValue>0.8</MarketValue>
+					<MoveSpeed>1.1</MoveSpeed>
+                    <WorkToMake>2</WorkToMake>
+                    <WorkToBuild>2</WorkToBuild>
+                    <BedRestEffectiveness>1.4</BedRestEffectiveness>
+                    <ImmunityGainSpeedFactor>1.4</ImmunityGainSpeedFactor>
+                    <Mass>0.5</Mass>
+                </statFactors>
+            </stuffProps>
+        </value>
+    </Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Leather_Mink"]</xpath>
+        <value>
+            <statBases>
+                <MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>5.2</MarketValue>
+                <StuffPower_Armor_Sharp>0.7</StuffPower_Armor_Sharp>
+                <StuffPower_Armor_Blunt>0.75</StuffPower_Armor_Blunt>
+                <StuffPower_Armor_Heat>0.1</StuffPower_Armor_Heat>	
+				<StuffPower_Insulation_Cold>32</StuffPower_Insulation_Cold>
+      			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+				<Bulk>0.1</Bulk>
+            </statBases>
+			<stuffProps>
+                <statFactors>
+                    <MarketValue>0.8</MarketValue>
+					<MoveSpeed>1</MoveSpeed>
+                    <WorkToMake>1.2</WorkToMake>
+                    <WorkToBuild>1.2</WorkToBuild>
+                    <BedRestEffectiveness>1.4</BedRestEffectiveness>
+                    <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+                    <Mass>0.5</Mass>
+                </statFactors>
+            </stuffProps>
+        </value>
+    </Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Leather_Hippo"]</xpath>
+        <value>
+            <statBases>
+                <MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>3.7</MarketValue>
+                <StuffPower_Armor_Sharp>1.35</StuffPower_Armor_Sharp>
+                <StuffPower_Armor_Blunt>1.1</StuffPower_Armor_Blunt>
+                <StuffPower_Armor_Heat>0.1</StuffPower_Armor_Heat>	
+				<StuffPower_Insulation_Cold>14</StuffPower_Insulation_Cold>
+      			<StuffPower_Insulation_Heat>16</StuffPower_Insulation_Heat>
+				<Bulk>0.1</Bulk>
+            </statBases>
+			<stuffProps>
+                <statFactors>
+                    <MarketValue>0.8</MarketValue>
+					<MoveSpeed>1</MoveSpeed>
+                    <WorkToMake>1.7</WorkToMake>
+                    <WorkToBuild>1.7</WorkToBuild>
+                    <BedRestEffectiveness>0.8</BedRestEffectiveness>
+                    <ImmunityGainSpeedFactor>0.96</ImmunityGainSpeedFactor>
+                    <Mass>0.5</Mass>
+                </statFactors>
+            </stuffProps>
+        </value>
+    </Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Leather_Armadillo"]</xpath>
+        <value>
+            <statBases>
+                <MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>3.2</MarketValue>
+                <StuffPower_Armor_Sharp>1.4</StuffPower_Armor_Sharp>
+                <StuffPower_Armor_Blunt>1.1</StuffPower_Armor_Blunt>
+                <StuffPower_Armor_Heat>0.1</StuffPower_Armor_Heat>	
+				<StuffPower_Insulation_Cold>16</StuffPower_Insulation_Cold>
+      			<StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
+				<Bulk>0.1</Bulk>
+            </statBases>
+			<stuffProps>
+                <statFactors>
+                    <MarketValue>0.8</MarketValue>
+					<MoveSpeed>0.9</MoveSpeed>
+                    <WorkToMake>1.8</WorkToMake>
+                    <WorkToBuild>1.8</WorkToBuild>
+                    <BedRestEffectiveness>0.7</BedRestEffectiveness>
+                    <ImmunityGainSpeedFactor>0.96</ImmunityGainSpeedFactor>
+                    <Mass>0.5</Mass>
+                </statFactors>
+            </stuffProps>
+        </value>
+    </Operation>
 </Patch>
