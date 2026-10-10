@@ -1,4 +1,4 @@
-# Rimworld Hardcore SK v.1.5
+# Rimworld Hardcore SK v1.5
 
 [![Logo](https://i.imgur.com/WP7w2sM.png)](https://github.com/skyarkhangel/Hardcore-SK)
 <!-- you cant center markdown images -->
@@ -43,11 +43,13 @@ For Windows users:
 
 ### Manual installation
 
-[Master:](https://github.com/skyarkhangel/Hardcore-SK/tree/master) - The stable version/branch of the project usually a version behind the latest Rimworld. Currently for version 1.5.
+[Master:](https://github.com/HardcoreSK/Hardcore-SK/tree/master) - The stable version/branch of the project usually a version behind the latest Rimworld. Currently for version 1.4.
 
-[Development:](https://github.com/skyarkhangel/Hardcore-SK/tree/development) - The work-in-progress version which contains the latest content for the latest version of rimworld, but is more likely to contain bugs. Already for latest version 1.5.
+[Development:](https://github.com/HardcoreSK/Hardcore-SK/tree/development) - The work-in-progress version which contains the latest content for the latest version of rimworld, but is more likely to contain bugs. Already for latest version 1.5.
 
-1. Install either the [development](https://github.com/skyarkhangel/Hardcore-SK/tree/development) branch for version 1.5 Development or [master](https://github.com/skyarkhangel/Hardcore-SK/tree/master) for 1.4.
+[Alpha:](https://github.com/HardcoreSK/Hardcore-SK/tree/alpha) - The work-in-progress version for 1.6. Since this is an alpha version, expect game-breaking bugs and always make a backup before updating.
+
+1. Install the [development](https://github.com/HardcoreSK/Hardcore-SK/tree/development) branch for Game version 1.5.4409, [master](https://github.com/HardcoreSK/Hardcore-SK/tree/master) for Game version 1.4.3901, or [alpha](https://github.com/HardcoreSK/Hardcore-SK/tree/alpha) for Game version 1.6.
 
 2. Go to the folder you installed the game in and delete all mods inside your `Rimworld\Mods\` folder.
 
