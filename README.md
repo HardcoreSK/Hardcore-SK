@@ -43,13 +43,11 @@ For Windows users:
 
 ### Manual installation
 
-[Master:](https://github.com/HardcoreSK/Hardcore-SK/tree/master) - The stable version/branch of the project usually a version behind the latest Rimworld. Currently for version 1.4.
-
-[Development:](https://github.com/HardcoreSK/Hardcore-SK/tree/development) - The work-in-progress version which contains the latest content for the latest version of rimworld, but is more likely to contain bugs. Already for latest version 1.5.
+[Master:](https://github.com/HardcoreSK/Hardcore-SK/tree/master) - The stable version/branch of the project usually a version behind the latest Rimworld. Currently for version 1.5.
 
 [Alpha:](https://github.com/HardcoreSK/Hardcore-SK/tree/alpha) - The work-in-progress version for 1.6. Since this is an alpha version, expect game-breaking bugs and always make a backup before updating.
 
-1. Install the [development](https://github.com/HardcoreSK/Hardcore-SK/tree/development) branch for Game version 1.5.4409, [master](https://github.com/HardcoreSK/Hardcore-SK/tree/master) for Game version 1.4.3901, or [alpha](https://github.com/HardcoreSK/Hardcore-SK/tree/alpha) for Game version 1.6.
+1. Install the [master](https://github.com/HardcoreSK/Hardcore-SK/tree/master) for Game version 1.5.4409, or [alpha](https://github.com/HardcoreSK/Hardcore-SK/tree/alpha) for Game version 1.6.
 
 2. Go to the folder you installed the game in and delete all mods inside your `Rimworld\Mods\` folder.
 
@@ -73,6 +71,10 @@ For Mac users: `/Users/your user name/Library/Application Support/RimWorld`
 7. Check mods at the title screen - turn on optional mods or disable ones you don't want. Switch Language if needed. Play!
 
 8. Have fun 😀  
+
+## Older versions
+
+For older versions, check [here](https://github.com/skyarkhangel/Hardcore-SK/releases).
 
 ## Looking for even more content?
 
