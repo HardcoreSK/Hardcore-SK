@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[defName="VNPE_NutrientPasteFeeder"]/comps</xpath>
+	<value>
+                               <li Class="Hospitality.CompProperties_VendingMachine">
+                                   <compClass>Hospitality.CompVendingMachine</compClass>
+                                   <defaultPrice>10</defaultPrice>
+                                   <priceSteps>1</priceSteps>
+                                   <noToggle>false</noToggle>
+                               </li>
+                           </value>
+	</Operation>
+
+   <Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[defName="VNPE_NutrientPasteTap"]/comps</xpath>
+	<value>
+                               <li Class="Hospitality.CompProperties_VendingMachine">
+                                   <compClass>Hospitality.CompVendingMachine</compClass>
+                                   <defaultPrice>10</defaultPrice>
+                                   <priceSteps>1</priceSteps>
+                                   <noToggle>false</noToggle>
+                               </li>
+                           </value>
+	</Operation>
+	
+</Patch>
+        
