@@ -523,6 +523,7 @@
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/ThingDef[defName="Squirrel"]</xpath>
     <value>
+      <uiIconScale>1</uiIconScale>
       <statBases Merge="true">
         <Mass>1</Mass>
         <MoveSpeed>5.5</MoveSpeed>
