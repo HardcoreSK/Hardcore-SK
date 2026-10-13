@@ -24,17 +24,13 @@
 	<EnablePinningResourcesTip>Ctrl+左键将某资源固定到顶端（仅限类别模式）</EnablePinningResourcesTip>
 	<ShowHideResourceList>隐藏资源统计</ShowHideResourceList>
 	<ShowHideResourceListTip>隐藏屏幕左侧的资源统计</ShowHideResourceListTip>
-	<dragdropdes>拖动以交换</dragdropdes>
 	<ReplacePlantMenu>启用薄荷植物菜单</ReplacePlantMenu>
 	<ResearchCompletionMode>当研究完成后的通知方式</ResearchCompletionMode>
 	<MintHelpLinks>支持链接（T.R.汉化）</MintHelpLinks>
 	<MintDiscord>薄荷菜单的Discord交流社区</MintDiscord>
-	<ProjectStalled>研究要求未满足</ProjectStalled>
 	<ProjectStopped>研究项目已停止</ProjectStopped>
 	<MintWiki>薄荷菜单的维基百科</MintWiki>
-	<SetButtonsFromBuildo>按Ctrl+左键为薄荷轮盘添加建筑项目</SetButtonsFromBuildo>
 	<BillSearchTip>可搜索词包括：\n\n清单列表或产品列表中的任何词，例如裤子\n\n材料类别，例如皮革\n\n身体部分，例如头\n\n分类，例如工业\n\n装备部位，例如帽子</BillSearchTip>
-	<NoActiveProject>没有正在进行的研究项目</NoActiveProject>
 	<TargetProject>目标项目：{0}</TargetProject>
 	<MintWheelDesc>薄荷轮盘{0}/{1} Ctrl+单击以分配</MintWheelDesc>
 	<MintWheelMenu>薄荷轮盘菜单</MintWheelMenu>
@@ -55,9 +51,6 @@
 	<HideLockedProjects>隐藏锁定的研究项目</HideLockedProjects>
 	<PinnedRes>固定</PinnedRes>
 	<MintResourceReadout>薄荷资源显示</MintResourceReadout>
-	<MintExperimental>附加</MintExperimental>
-	<Autoprojectstep>自动研究</Autoprojectstep>
-	<AutoprojectstepDesc>自动启动下一个研究项目步骤以完成目标项目</AutoprojectstepDesc>
 	<MintBills>薄荷清单</MintBills>
 	<ListWidth>详细信息栏宽度</ListWidth>
 	<RowHeight>详细信息栏高度</RowHeight>
@@ -68,4 +61,67 @@
 	<BoxSizeX>植物图标宽度</BoxSizeX>
 	<BoxSizeY>植物图标高度</BoxSizeY>
 	<MintResetAll>全部重置</MintResetAll>
+	<Mint.GearMenu>薄荷装备菜单</Mint.GearMenu>
+	<Mint.GearMenuVisible>显示主按钮</Mint.GearMenuVisible>
+	<Mint.GearMenuDesc>启用一个按钮，打开装备管理菜单，可将可用的装备拖放到任意殖民者身上</Mint.GearMenuDesc>
+	<Mint.Setup>设置</Mint.Setup>
+	<MessageCantEquipWhileDowned>倒地时无法装备</MessageCantEquipWhileDowned>
+	<Mint.PinCompareTip>固定最后悬停的清单，并与鼠标下的清单进行比较</Mint.PinCompareTip>
+	<Mint.CompareDifferencesOnly>仅显示差异</Mint.CompareDifferencesOnly>
+	<Mint.CompareNoDifferences>没有差异</Mint.CompareNoDifferences>
+	<MintWheelEditMode>点击建筑规划菜单中的项目，将其添加到轮盘\n拖放以调整轮盘中的位置</MintWheelEditMode>
+	<Mint.ConfirmDisallowBuilding>禁止建造{0}？</Mint.ConfirmDisallowBuilding>
+	<Mint.SomethingWentWrong>哎呀，出错了！</Mint.SomethingWentWrong>
+	<Mint.ResearchTabs>分类</Mint.ResearchTabs>
+	<Mint.ProjectsShiftClickToQueue>研究项目 - Shift+单击加入队列</Mint.ProjectsShiftClickToQueue>
+	<Mint.QueueCurrent>当前</Mint.QueueCurrent>
+	<Mint.QueueStep>步骤 {0}/{1}</Mint.QueueStep>
+	<Mint.CompletionModeDialog>对话框</Mint.CompletionModeDialog>
+	<Mint.CompletionModeLetter>信件</Mint.CompletionModeLetter>
+	<Mint.SortWeapon>武器</Mint.SortWeapon>
+	<Mint.SortColonistBar>殖民者栏</Mint.SortColonistBar>
+	<Mint.PinCompareBuildingTip>固定此建筑，并与鼠标下的建筑进行比较。按住Shift点击任意建筑即可固定。</Mint.PinCompareBuildingTip>
+	<Mint.SortByStat>按属性排序</Mint.SortByStat>
+	<Mint.SortDefault>默认顺序</Mint.SortDefault>
+	<Mint.SortedByHigh>{0}，从高到低</Mint.SortedByHigh>
+	<Mint.SortedByLow>{0}，从低到高</Mint.SortedByLow>
+	<Mint.SortTip>按属性对显示的建筑排序，并显示其数值。再次选择同一属性可反转顺序。未选择分类时，所有分类会一起排名，没有该属性的建筑不会显示。</Mint.SortTip>
+	<Mint.Search>搜索</Mint.Search>
+	<Mint.PinCategoryTip>将此分类固定在列表顶部</Mint.PinCategoryTip>
+	<Mint.ShowAsList>以列表显示</Mint.ShowAsList>
+	<Mint.ShowAsGrid>以网格显示</Mint.ShowAsGrid>
+	<Mint.WheelLayout>布局</Mint.WheelLayout>
+	<Mint.WheelLayoutTip>轮盘：围绕鼠标的圈。\n网格：围绕鼠标的行和列。</Mint.WheelLayoutTip>
+	<Mint.WheelLayoutWheel>轮盘</Mint.WheelLayoutWheel>
+	<Mint.WheelLayoutGrid>网格</Mint.WheelLayoutGrid>
+	<Mint.WheelSizing>大小</Mint.WheelSizing>
+	<Mint.WheelSizingTip>固定：固定数量、位置不变的格子，空位也会显示。\n自动：添加按钮时轮盘或网格随之扩大。</Mint.WheelSizingTip>
+	<Mint.WheelSizingFixed>固定</Mint.WheelSizingFixed>
+	<Mint.WheelSizingAuto>自动</Mint.WheelSizingAuto>
+	<Mint.AutoWheelEditMode>在建筑规划菜单或 Mint 建造菜单中点击项目来添加，点击已在轮盘上的项目则将其移除。先点击一个按钮，接下来的项目会插在它前面。\n拖动按钮可交换位置，右键点击可移除。</Mint.AutoWheelEditMode>
+	<Mint.WheelColumns>列数：{0}</Mint.WheelColumns>
+	<Mint.WheelGridRows>行数：{0}</Mint.WheelGridRows>
+	<Mint.DesignatorBars>快捷栏</Mint.DesignatorBars>
+	<Mint.ShowDesignatorBars>显示快捷栏</Mint.ShowDesignatorBars>
+	<Mint.DesignatorBarsTip>常驻屏幕的建造按钮栏。鼠标移到快捷栏上时会出现齿轮按钮，点击即可设置。</Mint.DesignatorBarsTip>
+	<Mint.SetUpBars>设置快捷栏</Mint.SetUpBars>
+	<Mint.BarSetupTip>设置快捷栏</Mint.BarSetupTip>
+	<Mint.BarSetupHelp>点击一个格子，然后在建筑规划菜单或 Mint 建造菜单中点击项目来填入。\n拖动格子可调整位置，右键点击可清空。拖动标题栏可移动快捷栏。</Mint.BarSetupHelp>
+	<Mint.AddBar>添加快捷栏</Mint.AddBar>
+	<Mint.BarLabel>快捷栏 {0}：{1}x{2}</Mint.BarLabel>
+	<Mint.BarMoveTip>拖动以移动快捷栏。</Mint.BarMoveTip>
+	<Mint.DeleteBarTip>删除此快捷栏。</Mint.DeleteBarTip>
+	<Mint.DeleteBarConfirm>删除此快捷栏及其中的按钮？</Mint.DeleteBarConfirm>
+	<Mint.BarBiggerTip>放大按钮。</Mint.BarBiggerTip>
+	<Mint.BarSmallerTip>缩小按钮。</Mint.BarSmallerTip>
+	<Mint.BarAddRowTip>添加一行。</Mint.BarAddRowTip>
+	<Mint.BarRemoveRowTip>移除最下面一行。</Mint.BarRemoveRowTip>
+	<Mint.BarAddColumnTip>添加一列。</Mint.BarAddColumnTip>
+	<Mint.BarRemoveColumnTip>移除最右边一列。</Mint.BarRemoveColumnTip>
+	<Mint.FixedWheelEditMode>点击一个格子，然后在建筑规划菜单或 Mint 建造菜单中点击项目来填入。未选格子时，点击会填入第一个空位，或移除已在轮盘上的项目。\n拖动格子可交换位置，右键点击可清空。</Mint.FixedWheelEditMode>
+	<Mint.WheelRings>圈数：{0}</Mint.WheelRings>
+	<Mint.WheelButtonSize>按钮大小：{0}</Mint.WheelButtonSize>
+	<Mint.AddRingTip>添加一圈格子。</Mint.AddRingTip>
+	<Mint.RemoveRingTip>移除最外圈。</Mint.RemoveRingTip>
+	<Mint.WheelFull>Mint 轮盘已满。请在轮盘设置中添加一圈。</Mint.WheelFull>
 </LanguageData>
