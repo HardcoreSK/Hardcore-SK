@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 	<SaveStorageSettings.SaveZoneSettings>Save Settings</SaveStorageSettings.SaveZoneSettings>
 	<SaveStorageSettings.SaveZoneSettingsDesc>Save this storage zone's settings.</SaveStorageSettings.SaveZoneSettingsDesc>
@@ -15,7 +15,7 @@
 	<SaveStorageSettings.LoadAsNew>Load As New</SaveStorageSettings.LoadAsNew>
 	<SaveStorageSettings.LoadOutfit>Load</SaveStorageSettings.LoadOutfit>
 	<SaveStorageSettings.SaveOutfit>Save</SaveStorageSettings.SaveOutfit>
-	
+
 	<SaveStorageSettings.LoadOperations>Load Operations</SaveStorageSettings.LoadOperations>
 	<SaveStorageSettings.SaveOperations>Save Operations</SaveStorageSettings.SaveOperations>
 	<SaveStorageSettings.AppendOperations>Append Operations</SaveStorageSettings.AppendOperations>
@@ -23,4 +23,8 @@
 	<!-- %s will be replaced by the def name -->
 	<SaveStorageSettings.UnableToLoadRecipeDef>Unable to load bill with RecipeDef of %s</SaveStorageSettings.UnableToLoadRecipeDef>
 	<SaveStorageSettings.ResearchNotDoneForRecipeDef>Research is not done for %s</SaveStorageSettings.ResearchNotDoneForRecipeDef>
+
+	<SaveStorageSettings.SettingsCategory>Save Storage Settings</SaveStorageSettings.SettingsCategory>
+	<SaveStorageSettings.SkipRecipeResearchCheck>Ignore research requirements when loading bills</SaveStorageSettings.SkipRecipeResearchCheck>
+	<SaveStorageSettings.SkipRecipeResearchCheckDesc>Load saved work bills even if the recipe's research is not finished. Other mods that load bills through this mod follow this setting.</SaveStorageSettings.SkipRecipeResearchCheckDesc>
 </LanguageData>
