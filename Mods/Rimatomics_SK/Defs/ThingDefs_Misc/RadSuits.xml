@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <ThingDef Name="RadSuitBase" Abstract="True"   Class="Rimatomics.RimatomicsThingDef">
@@ -157,6 +157,10 @@
     </graphicData>
     <apparel>
       <wornGraphicPath>Rimatomics/Things/MopMask/MopMask</wornGraphicPath>
+      <renderSkipFlags>
+        <li>Hair</li>
+        <li>Beard</li>
+      </renderSkipFlags>
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>

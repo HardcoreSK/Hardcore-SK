@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
 
@@ -556,8 +556,8 @@
 
   <Def Class="Rimatomics.ResearchStepDef">
     <defName>ICBM4</defName>
-    <label>Construct a weapons console</label>
-    <description>Construct a weapons console. The weapons console is a manned target acquisition computer required by all energy weapons. It networks to any Rimatomics energy weapons that share the same power net, then detects enemies using the onboard sensors of the weapons and the Target Acquisition System to assign targets. The main display features real-time ground and air target tracking, and a PPC capacity gauge displays the total stored PPC energy on the net.</description>
+    <label>Construct a weapons console (SACS)</label>
+    <description>Construct a weapons console (SACS). The SACS is a manned target acquisition computer required by all energy weapons. It networks to any Rimatomics energy weapons that share the same power net, then detects enemies using the onboard sensors of the weapons and the Target Acquisition System to assign targets. The main display features real-time ground and air target tracking, and a PPC capacity gauge displays the total stored PPC energy on the net.</description>
     <RequiredThings>
       <li>PPCWeaponsConsole</li>
     </RequiredThings>
