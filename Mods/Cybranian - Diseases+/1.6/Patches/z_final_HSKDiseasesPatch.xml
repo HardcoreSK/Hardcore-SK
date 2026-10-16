@@ -140,6 +140,7 @@
             </comps>
         </value>
 	</Operation>
+
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/HediffDef[defName="Pneumonia"]</xpath>
         <value>
@@ -191,6 +192,7 @@
             </comps>
         </value>
 	</Operation>
+
 	<Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/HediffDef[defName="Coronavirus"]</xpath>
         <value>
@@ -242,4 +244,12 @@
             </comps>
         </value>
 	</Operation>
+
+    <!--Tweaks for mod diseases-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/HediffDef[defName="DimonSever000_Depression"]/comps/li["HediffCompProperties_Immunizable"]/severityPerDayNotImmune</xpath>
+        <value>
+            <severityPerDayNotImmune>0.05</severityPerDayNotImmune>
+        </value>
+    </Operation>
 </Patch>
