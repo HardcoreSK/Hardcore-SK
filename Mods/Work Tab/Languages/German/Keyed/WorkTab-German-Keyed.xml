@@ -11,8 +11,8 @@
     <WorkTab.CollapseAll>Klick, um alle Prioritäten einzuklappen\nStrg-klick auf Kopfzeile, um individuell die Prioritäten ein- und auszuklappen</WorkTab.CollapseAll>
 
     <!-- column header tooltips -->
-    <WorkTab.DetailedColumnTip>Shift + Linksklick oder hochscrollen, um die Prioritäten zu erhöhen\nShift + Rechtsklick oder runterscrollen, um die Prioritäten zu verringern</WorkTab.DetailedColumnTip>
-    <WorkTab.ToggleColumnTip>Shift + Linksklick oder hochscrollen, um die Prioritäten anzuschalten\nShift + Rechtsklick oder runterscrollen, um die Prioritäten auszuschalten</WorkTab.ToggleColumnTip>
+    <WorkTab.DetailedColumnTip>hochscrollen, um die Prioritäten zu erhöhen oder runterscrollen, um die Prioritäten zu verringern</WorkTab.DetailedColumnTip>
+    <WorkTab.ToggleColumnTip>hochscrollen, um die Prioritäten anzuschalten oder runterscrollen, um die Prioritäten auszuschalten</WorkTab.ToggleColumnTip>
     <WorkTab.ExpandWorkgiversColumnTip>Strg + klick, um die detailierte Priorisierungsliste auszuklappen</WorkTab.ExpandWorkgiversColumnTip>
     <WorkTab.CollapseWorkgiversColumnTip>Strg + klick, um die detailierte Priorisierungsliste einzuklappen</WorkTab.CollapseWorkgiversColumnTip>
 
@@ -21,17 +21,13 @@
 	<WorkTab.24HourModeTip>Sollen Zeiten in 12h (z.B. 9a.m, 9p.m.) der in 24h (z.B. 12:00, 21:00) Modus angezeigt werden?</WorkTab.24HourModeTip>
 	<WorkTab.MaxPriority>Anzahl Stufen von Prioritäten</WorkTab.MaxPriority>
 	<WorkTab.MaxPriorityTip>Wie viele Stufen von Prioritäten sollen eingestellt werden? (Wähle zwischen 4 und 9)</WorkTab.MaxPriorityTip>
-    <WorkTab.PlaySounds>Geräusche</WorkTab.PlaySounds>
-    <WorkTab.PlaySoundsTip>Soll ein Geräusch abgespielt werden, wenn die Priorität verändert wird?</WorkTab.PlaySoundsTip>
-    <WorkTab.PlayCrunch>Knackige Geräusche</WorkTab.PlayCrunch>
-    <WorkTab.PlayCrunchTip>Soll ein knackiges Geräusch abgespielt werden, wenn ein Koloniest einem Job zugeordnet wird, welches er nicht beherrscht?</WorkTab.PlayCrunchTip>
+    <WorkTab.DefaultPriority>Standardpriorität</WorkTab.DefaultPriority>
+    <WorkTab.DefaultPriorityTip>Standardpriorität (Standardwert 3, begrenzt auf 1 bis 9)</WorkTab.DefaultPriorityTip>
+    <WorkTab.HighlightActiveWorkCells>Aktive Arbeitszellen markieren</WorkTab.HighlightActiveWorkCells>
+    <WorkTab.HighlightActiveWorkCellsTip>Markieren Sie die Rasterquadrate im Arbeitstab, wenn die Figur gerade diesen Job ausführt.</WorkTab.HighlightActiveWorkCellsTip>
     <WorkTab.DisableScrollwheel>Scrollrad deaktivieren</WorkTab.DisableScrollwheel>
     <WorkTab.DisableScrollwheelTip>Deaktiviert die Scrollradfunktion (wenn die Maus sich über Prioritäten befindet)</WorkTab.DisableScrollwheelTip>
-    <WorkTab.VerticalLabels>Vertikale Beschriftung</WorkTab.VerticalLabels>
-    <WorkTab.VerticalLabelsTip>Zeigt Arbeitsbeschriftungen vertikal an</WorkTab.VerticalLabelsTip>
-    <WorkTab.FontFix>Feste vertikale Schriftart</WorkTab.FontFix>
-    <WorkTab.FontFixTip>Unity (die Engine womit RimWorld mit erstellt worden ist) kann nicht gut mit rotierten Schriftarten umgehen und verursacht ein verwischen. Dieser Fix entfernt das verwischen, aber es kann zu einer leichten Verschiebung der Buchstaben führen</WorkTab.FontFixTip>
-
+    
     <!-- scheduler -->
     <WorkTab.SchedulerHourTip>{0}-{1} ist aktuell {2}\n\n{3}</WorkTab.SchedulerHourTip>
     <WorkTab.Selected>ausgewählt</WorkTab.Selected>
@@ -49,5 +45,34 @@
 
     <!-- pawn label tooltip  -->
     <WorkTab.LabelCellTip>Klick, um hinzuspringen\nShift-Linksklick oder hochscrollen, um die Prioritäten zu erhöhen\nShift-Rechtsklick oder runterscrollen, um die Prioritäten zu verringern</WorkTab.LabelCellTip>
+
+    <!-- Favourites -->
+    <Fluffy.WorkTab.CreateFavourite>Neuen Favoriten erstellen</Fluffy.WorkTab.CreateFavourite>
+    <Fluffy.WorkTab.LoadFavourite>Favorit laden</Fluffy.WorkTab.LoadFavourite>
+    <Fluffy.WorkTab.ClearFavourite>Favorit zurücksetzen</Fluffy.WorkTab.ClearFavourite>
+    <Fluffy.WorkTab.UnloadFavourite>Entladen</Fluffy.WorkTab.UnloadFavourite>
+    <Fluffy.WorkTab.DeleteFavourite>Entladen und löschen</Fluffy.WorkTab.DeleteFavourite>
+    <Fluffy.WorkTab.DefaultFavouriteLabel>Favorit</Fluffy.WorkTab.DefaultFavouriteLabel>
+    <Fluffy.WorkTab.CreateFavouritesDialogTitle>Neuen Favoriten erstellen</Fluffy.WorkTab.CreateFavouritesDialogTitle>
+    <Fluffy.WorkTab.EditFavouritesDialogTitle>"{0}" bearbeiten</Fluffy.WorkTab.EditFavouritesDialogTitle>
+    <Fluffy.WorkTab.NoStoredFavourites>Keine Favoriten gespeichert</Fluffy.WorkTab.NoStoredFavourites>
+
+    <Fluffy.WorkTab.FavouriteLabelCannotBeEmpty>Favoritenname darf nicht leer sein</Fluffy.WorkTab.FavouriteLabelCannotBeEmpty>
+    <Fluffy.WorkTab.FavouriteInvalidFilename>"{0}" ist kein gültiger Name – Favoritennamen müssen gültige Dateinamen sein</Fluffy.WorkTab.FavouriteInvalidFilename>
+    <Fluffy.WorkTab.FavouriteAlreadyExists>Ein Favorit mit diesem Namen existiert bereits</Fluffy.WorkTab.FavouriteAlreadyExists>
+
+    <!-- priority labels -->
+    <Fluffy.WorkTab.Priority.None>Wird nicht erledigt</Fluffy.WorkTab.Priority.None>
+    <Fluffy.WorkTab.Priority.Top>Höchste Priorität</Fluffy.WorkTab.Priority.Top>
+    <Fluffy.WorkTab.Priority.VeryHigh>Sehr hohe Priorität</Fluffy.WorkTab.Priority.VeryHigh>
+    <Fluffy.WorkTab.Priority.High>Hohe Priorität</Fluffy.WorkTab.Priority.High>
+    <Fluffy.WorkTab.Priority.AboveNormal>Überdurchschnittliche Priorität</Fluffy.WorkTab.Priority.AboveNormal>
+    <Fluffy.WorkTab.Priority.Normal>Normale Priorität</Fluffy.WorkTab.Priority.Normal>
+    <Fluffy.WorkTab.Priority.BelowNormal>Unterdurchschnittliche Priorität</Fluffy.WorkTab.Priority.BelowNormal>
+    <Fluffy.WorkTab.Priority.Low>Niedrige Priorität</Fluffy.WorkTab.Priority.Low>
+    <Fluffy.WorkTab.Priority.VeryLow>Sehr niedrige Priorität</Fluffy.WorkTab.Priority.VeryLow>
+    <Fluffy.WorkTab.Priority.Lowest>Niedrigste Priorität</Fluffy.WorkTab.Priority.Lowest>
+
+    <Fluffy.WorkTab.CompactWorkTabSettingDisabledTip>Diese Einstellung ist deaktiviert. Bitte konfigurieren Sie sie in {0}.</Fluffy.WorkTab.CompactWorkTabSettingDisabledTip>
 
 </LanguageData>

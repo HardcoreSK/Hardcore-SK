@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <WorkTab>Work Tab</WorkTab>
 
   <!-- Main tab toggle buttons -->
@@ -12,8 +11,8 @@
   <WorkTab.CollapseAll>Haga clic para contraer todas las prioridades\nCtrl-clic encabezados para alternar la expansión de las prioridades individuales</WorkTab.CollapseAll>
 
   <!-- column header tooltips -->
-  <WorkTab.DetailedColumnTip>Shift + clic izquierdo o desplazarse hacia arriba para aumentar las prioridades\nShift + clic derecho o desplácese hacia abajo para disminuir las prioridades</WorkTab.DetailedColumnTip>
-  <WorkTab.ToggleColumnTip>Shift + clic izquierdo o desplazarse hacia arriba para alternar prioridades en\nShift + clic derecho o desplácese hacia abajo para alternar las prioridades</WorkTab.ToggleColumnTip>
+  <WorkTab.DetailedColumnTip>desplazarse hacia arriba para aumentar las prioridades o desplácese hacia abajo para disminuir las prioridades</WorkTab.DetailedColumnTip>
+  <WorkTab.ToggleColumnTip>desplazarse hacia arriba para alternar prioridades en o desplácese hacia abajo para alternar las prioridades</WorkTab.ToggleColumnTip>
   <WorkTab.ExpandWorkgiversColumnTip>Ctrl + clic para ampliar la lista de prioridades detalladas</WorkTab.ExpandWorkgiversColumnTip>
   <WorkTab.CollapseWorkgiversColumnTip>Ctrl + clic para colapsar la lista de prioridades detalladas</WorkTab.CollapseWorkgiversColumnTip>
 
@@ -22,17 +21,13 @@
   <WorkTab.24HourModeTip>En caso de que se quieran mostrar las horas en formato de 12h (e.j. mediodía, 9p.m.) o 24h (e.j. 12:00, 21:00)</WorkTab.24HourModeTip>
   <WorkTab.MaxPriority>Niveles de prioridad</WorkTab.MaxPriority>
   <WorkTab.MaxPriorityTip>¿Cuántos niveles de prioridad deberíamos usar? (Limitado entre 4 y 9)</WorkTab.MaxPriorityTip>
-  <WorkTab.PlaySounds>Sonidos</WorkTab.PlaySounds>
-  <WorkTab.PlaySoundsTip>Reproducir sonido cuando se cambia una prioridad</WorkTab.PlaySoundsTip>
-  <WorkTab.PlayCrunch>Sonidos crujientes</WorkTab.PlayCrunch>
-  <WorkTab.PlayCrunchTip>Reproduce un sonido crujiente cuando se asigna un peón a un trabajo para el que no son expertos</WorkTab.PlayCrunchTip>
-    <WorkTab.DisableScrollwheel>Disable Scrollwheel</WorkTab.DisableScrollwheel>
-    <WorkTab.DisableScrollwheelTip>Disable the scrollwheel functions (when hovering over skills)</WorkTab.DisableScrollwheelTip>
-    <WorkTab.VerticalLabels>Vertical labels</WorkTab.VerticalLabels>
-    <WorkTab.VerticalLabelsTip>Display work labels vertically</WorkTab.VerticalLabelsTip>
-    <WorkTab.FontFix>Fix vertical fonts</WorkTab.FontFix>
-    <WorkTab.FontFixTip>Unity (the engine RimWorld is built on) does not deal well with rotated fonts, causing a blur. This fix removes the blur, but can cause slightly odd letter positioning.</WorkTab.FontFixTip>
-
+  <WorkTab.DefaultPriority>Prioridad predeterminada</WorkTab.DefaultPriority>
+  <WorkTab.DefaultPriorityTip>Prioridad predeterminada (valor por defecto 3, rango de 1 a 9)</WorkTab.DefaultPriorityTip>
+  <WorkTab.HighlightActiveWorkCells>Resaltar celdas de trabajo activas</WorkTab.HighlightActiveWorkCells>
+  <WorkTab.HighlightActiveWorkCellsTip>Resalta las celdas de la cuadrícula en la pestaña de trabajos cuando un colono está realizando esa tarea en este momento.</WorkTab.HighlightActiveWorkCellsTip>
+  <WorkTab.DisableScrollwheel>Disable Scrollwheel</WorkTab.DisableScrollwheel>
+  <WorkTab.DisableScrollwheelTip>Disable the scrollwheel functions (when hovering over skills)</WorkTab.DisableScrollwheelTip>
+  
   <!-- scheduler -->
   <WorkTab.SchedulerHourTip>{0}-{1} está actualmente {2}\n\n{3}</WorkTab.SchedulerHourTip>
   <WorkTab.Selected>seleccionado</WorkTab.Selected>
@@ -50,5 +45,34 @@
 
   <!-- pawn label tooltip  -->
   <WorkTab.LabelCellTip>Clic para saltar a\nHaga clic con el botón izquierdo del mouse o desplácese hacia arriba para aumentar las prioridades\nHaga clic con el botón derecho del ratón o desplácese hacia abajo para disminuir las prioridades</WorkTab.LabelCellTip>
+
+  <!-- Favourites -->
+  <Fluffy.WorkTab.CreateFavourite>Crear nuevo favorito</Fluffy.WorkTab.CreateFavourite>
+  <Fluffy.WorkTab.LoadFavourite>Cargar favorito</Fluffy.WorkTab.LoadFavourite>
+  <Fluffy.WorkTab.ClearFavourite>Limpiar favorito</Fluffy.WorkTab.ClearFavourite>
+  <Fluffy.WorkTab.UnloadFavourite>Descargar</Fluffy.WorkTab.UnloadFavourite>
+  <Fluffy.WorkTab.DeleteFavourite>Descargar y eliminar</Fluffy.WorkTab.DeleteFavourite>
+  <Fluffy.WorkTab.DefaultFavouriteLabel>Favorito</Fluffy.WorkTab.DefaultFavouriteLabel>
+  <Fluffy.WorkTab.CreateFavouritesDialogTitle>Crear nuevo favorito</Fluffy.WorkTab.CreateFavouritesDialogTitle>
+  <Fluffy.WorkTab.EditFavouritesDialogTitle>Editando "{0}"</Fluffy.WorkTab.EditFavouritesDialogTitle>
+  <Fluffy.WorkTab.NoStoredFavourites>No hay favoritos guardados</Fluffy.WorkTab.NoStoredFavourites>
+
+  <Fluffy.WorkTab.FavouriteLabelCannotBeEmpty>El nombre del favorito no puede estar vacío</Fluffy.WorkTab.FavouriteLabelCannotBeEmpty>
+  <Fluffy.WorkTab.FavouriteInvalidFilename>"{0}" no es un nombre válido. Los nombres de favoritos deben ser nombres de archivo válidos</Fluffy.WorkTab.FavouriteInvalidFilename>
+  <Fluffy.WorkTab.FavouriteAlreadyExists>Ya existe un favorito con ese nombre</Fluffy.WorkTab.FavouriteAlreadyExists>
+
+  <!-- priority labels -->
+  <Fluffy.WorkTab.Priority.None>No realizará</Fluffy.WorkTab.Priority.None>
+  <Fluffy.WorkTab.Priority.Top>Prioridad máxima</Fluffy.WorkTab.Priority.Top>
+  <Fluffy.WorkTab.Priority.VeryHigh>Prioridad muy alta</Fluffy.WorkTab.Priority.VeryHigh>
+  <Fluffy.WorkTab.Priority.High>Prioridad alta</Fluffy.WorkTab.Priority.High>
+  <Fluffy.WorkTab.Priority.AboveNormal>Prioridad superior a la normal</Fluffy.WorkTab.Priority.AboveNormal>
+  <Fluffy.WorkTab.Priority.Normal>Prioridad normal</Fluffy.WorkTab.Priority.Normal>
+  <Fluffy.WorkTab.Priority.BelowNormal>Prioridad inferior a la normal</Fluffy.WorkTab.Priority.BelowNormal>
+  <Fluffy.WorkTab.Priority.Low>Prioridad baja</Fluffy.WorkTab.Priority.Low>
+  <Fluffy.WorkTab.Priority.VeryLow>Prioridad muy baja</Fluffy.WorkTab.Priority.VeryLow>
+  <Fluffy.WorkTab.Priority.Lowest>Prioridad mínima</Fluffy.WorkTab.Priority.Lowest>
+
+  <Fluffy.WorkTab.CompactWorkTabSettingDisabledTip>Esta configuración está desactivada. Por favor, configúrela en {0}.</Fluffy.WorkTab.CompactWorkTabSettingDisabledTip>
 
 </LanguageData>

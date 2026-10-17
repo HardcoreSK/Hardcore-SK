@@ -1,30 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <WorkTab>Work Tab</WorkTab>
+
   <!-- Main tab toggle buttons -->
   <WorkTab.PrioritiesSimple>當前顯示數值型優先級\n\n點擊切換至開關型優先級</WorkTab.PrioritiesSimple>
   <WorkTab.PrioritiesDetailed>當前顯示開關型優先級\n\n點擊切換至數值型優先級</WorkTab.PrioritiesDetailed>
   <WorkTab.PrioritiesTimed>當前顯示計畫型優先級\n\n點擊切換至全天型優先級</WorkTab.PrioritiesTimed>
   <WorkTab.PrioritiesWholeDay>當前顯示全天型優先級\n\n點擊切換至計畫型優先級</WorkTab.PrioritiesWholeDay>
+  <WorkTab.ExpandAll>當前顯示詳細優先級\nCtrl+點擊以切换詳細優先級</WorkTab.ExpandAll>
+  <WorkTab.CollapseAll>當前顯示縮略優先級\nCtrl+點擊以切换縮略優先級</WorkTab.CollapseAll>
 
   <!-- column header tooltips -->
-  <WorkTab.DetailedColumnTip>Shift+左鍵點擊或滾輪上滾以提升優先級\nShift+右鍵點擊或滾輪下滾以降低優先級</WorkTab.DetailedColumnTip>
-  <WorkTab.ToggleColumnTip>Shift+左鍵點擊或滾輪上滾以開啟優先級\nShift+右鍵點擊或滾輪下滾以關閉優先級</WorkTab.ToggleColumnTip>
+  <WorkTab.DetailedColumnTip>滾輪上滾以提升優先級或滾輪下滾以降低優先級</WorkTab.DetailedColumnTip>
+  <WorkTab.ToggleColumnTip>滾輪上滾以開啟優先級或滾輪下滾以關閉優先級</WorkTab.ToggleColumnTip>
   <WorkTab.ExpandWorkgiversColumnTip>Ctrl+點擊以展開詳細優先級列表</WorkTab.ExpandWorkgiversColumnTip>
   <WorkTab.CollapseWorkgiversColumnTip>Ctrl+點擊以收起詳細優先級列表</WorkTab.CollapseWorkgiversColumnTip>
 
-  <!-- settings labels and tooltips -->
+  <!-- settings -->
   <WorkTab.24HourMode>24小時模式</WorkTab.24HourMode>
   <WorkTab.24HourModeTip>時間顯示是以12小時制（比如：中午、9p.m.）或24小時制（比如：12:00、21:00）。</WorkTab.24HourModeTip>
   <WorkTab.MaxPriority>優先級等級</WorkTab.MaxPriority>
   <WorkTab.MaxPriorityTip>優先級使用多少個等級（限制在4至9之間）。</WorkTab.MaxPriorityTip>
+  <WorkTab.DisableScrollwheel>禁用滾輪代替點擊</WorkTab.DisableScrollwheel>
+  <WorkTab.DisableScrollwheelTip>禁用滾輪代替點擊（當滑鼠懸停在技能上時）</WorkTab.DisableScrollwheelTip>
+  <WorkTab.DefaultPriority>默認優先級</WorkTab.DefaultPriority>
+  <WorkTab.DefaultPriorityTip>默認優先級（默認3，限制在1至9之間）</WorkTab.DefaultPriorityTip>
+  <WorkTab.HighlightActiveWorkCells>高亮工作單元格</WorkTab.HighlightActiveWorkCells>
+  <WorkTab.HighlightActiveWorkCellsTip>高亮顯示小人當前工作的單元格</WorkTab.HighlightActiveWorkCellsTip>
 
   <!-- scheduler -->
-  <WorkTab.SchedulerHourTip>{0}-{1}當前{2}</WorkTab.SchedulerHourTip>
+  <WorkTab.SchedulerHourTip>{0}-{1}當前{2}\n\n{3}</WorkTab.SchedulerHourTip>
   <WorkTab.Selected>已選擇</WorkTab.Selected>
   <WorkTab.NotSelected>未選擇</WorkTab.NotSelected>
-  <midnight>午夜</midnight>
+  <WorkTab.ClickToSelect>點擊以選擇\nShift+點擊來取消其他選擇</WorkTab.ClickToSelect>
+  <WorkTab.ClickToFocus>點擊以聚焦</WorkTab.ClickToFocus>
+  <WorkTab.RightClickToDeselect>右鍵點擊來取消</WorkTab.RightClickToDeselect>  <midnight>午夜</midnight>
   <noon>中午</noon>
-  <WorkTab.SchedulerWholeDay>選擇全天</WorkTab.SchedulerWholeDay>
-  <WorkTab.SchedulerCurrentTimeOnly>選擇當前小時</WorkTab.SchedulerCurrentTimeOnly>
+  <WorkTab.SelectWholeDayTip>選擇全天</WorkTab.SelectWholeDayTip>
+  <WorkTab.SelectCurrentHourTip>選擇當前小時</WorkTab.SelectCurrentHourTip>
+
+  <!-- detailed tooltips  -->
+  <WorkTab.XIsAssignedToY>{0} 負責 {1}</WorkTab.XIsAssignedToY>
+
+  <!-- pawn label tooltip  -->
+  <WorkTab.LabelCellTip>點擊來跳轉\nShift+點擊或滾輪向上來增加優先級\nShift+右鍵點擊或滾輪向下來減少優先級</WorkTab.LabelCellTip>
+
+  <!-- Favourites -->
+  <Fluffy.WorkTab.CreateFavourite>創建偏愛</Fluffy.WorkTab.CreateFavourite>
+  <Fluffy.WorkTab.LoadFavourite>讀取偏愛</Fluffy.WorkTab.LoadFavourite>
+  <Fluffy.WorkTab.ClearFavourite>清理偏愛</Fluffy.WorkTab.ClearFavourite>
+  <Fluffy.WorkTab.UnloadFavourite>取消讀取</Fluffy.WorkTab.UnloadFavourite>
+  <Fluffy.WorkTab.DeleteFavourite>取消讀取并刪除</Fluffy.WorkTab.DeleteFavourite>
+  <Fluffy.WorkTab.DefaultFavouriteLabel>偏愛</Fluffy.WorkTab.DefaultFavouriteLabel>
+  <Fluffy.WorkTab.CreateFavouritesDialogTitle>創建偏愛</Fluffy.WorkTab.CreateFavouritesDialogTitle>
+  <Fluffy.WorkTab.EditFavouritesDialogTitle>編輯 "{0}"</Fluffy.WorkTab.EditFavouritesDialogTitle>
+  <Fluffy.WorkTab.NoStoredFavourites>沒有已保存的偏愛</Fluffy.WorkTab.NoStoredFavourites>
+
+
+  <Fluffy.WorkTab.FavouriteLabelCannotBeEmpty>偏愛名不可為空</Fluffy.WorkTab.FavouriteLabelCannotBeEmpty>
+  <Fluffy.WorkTab.FavouriteInvalidFilename>"{0}" 不是一個可用的偏愛名，必須使用可作為文件名的名稱。</Fluffy.WorkTab.FavouriteInvalidFilename>
+  <Fluffy.WorkTab.FavouriteAlreadyExists>同名偏愛已存在</Fluffy.WorkTab.FavouriteAlreadyExists>
+
+  <!-- priority labels -->
+  <Fluffy.WorkTab.Priority.None>不會做</Fluffy.WorkTab.Priority.None>
+  <Fluffy.WorkTab.Priority.Top>最高優先級</Fluffy.WorkTab.Priority.Top>
+  <Fluffy.WorkTab.Priority.VeryHigh>極高優先級</Fluffy.WorkTab.Priority.VeryHigh>
+  <Fluffy.WorkTab.Priority.High>高優先級</Fluffy.WorkTab.Priority.High>
+  <Fluffy.WorkTab.Priority.AboveNormal>稍高優先級</Fluffy.WorkTab.Priority.AboveNormal>
+  <Fluffy.WorkTab.Priority.Normal>正常優先級</Fluffy.WorkTab.Priority.Normal>
+  <Fluffy.WorkTab.Priority.BelowNormal>稍低優先級</Fluffy.WorkTab.Priority.BelowNormal>
+  <Fluffy.WorkTab.Priority.Low>低優先級</Fluffy.WorkTab.Priority.Low>
+  <Fluffy.WorkTab.Priority.VeryLow>極低優先級</Fluffy.WorkTab.Priority.VeryLow>
+  <Fluffy.WorkTab.Priority.Lowest>最低優先級</Fluffy.WorkTab.Priority.Lowest>
+
+  <Fluffy.WorkTab.CompactWorkTabSettingDisabledTip>此設定已禁用，請在{0}中進行設定。</Fluffy.WorkTab.CompactWorkTabSettingDisabledTip>
 
 </LanguageData>

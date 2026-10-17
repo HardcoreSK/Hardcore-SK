@@ -11,8 +11,8 @@
     <WorkTab.CollapseAll>클릭해 세부적인 우선 순위 정책을 축소합니다.\n해더를 Ctrl-click 해서 개별 우선 순위 정책에 대한 상세 보기를 축소합니다.</WorkTab.CollapseAll>
 
     <!-- column header tooltips -->
-    <WorkTab.DetailedColumnTip>Shift + 왼쪽 클릭 혹은 휠 업으로 우선 순위를 올립니다.\nShift + 오른쪽 클릭 혹은 휠 다운으로 우선 순위를 낮춥니다.</WorkTab.DetailedColumnTip>
-    <WorkTab.ToggleColumnTip>Shift + 왼쪽 클릭 혹은 휠 업으로 우선 순위를 토글을 켭니다.\nShift + 오른쪽 클릭 혹은 휠 다운으로 우선 순위 토글을 끕니다.</WorkTab.ToggleColumnTip>
+    <WorkTab.DetailedColumnTip>휠 업으로 우선 순위를 올립니다. 혹은 휠 다운으로 우선 순위를 낮춥니다.</WorkTab.DetailedColumnTip>
+    <WorkTab.ToggleColumnTip>휠 업으로 우선 순위를 토글을 켭니다.혹은 휠 다운으로 우선 순위 토글을 끕니다.</WorkTab.ToggleColumnTip>
     <WorkTab.ExpandWorkgiversColumnTip>Ctrl + 클릭으로 상세 우선 순위 리스트를 확장합니다.</WorkTab.ExpandWorkgiversColumnTip>
     <WorkTab.CollapseWorkgiversColumnTip>Ctrl + 클릭으로 상세 우선 순위 이스트를 축소합니다.</WorkTab.CollapseWorkgiversColumnTip>
 
@@ -21,17 +21,13 @@
 	<WorkTab.24HourModeTip>활성화 시 시간을 24시간 형식(예. 12:00, 21:00)보기로 전환합니다.</WorkTab.24HourModeTip>
 	<WorkTab.MaxPriority>우선 순위 구분 단계</WorkTab.MaxPriority>
 	<WorkTab.MaxPriorityTip>우선 순위를 얼마나 많은 단계로 나누길 원하시나요? (4에서 9사이 값으로 제한됨)</WorkTab.MaxPriorityTip>
-    <WorkTab.PlaySounds>소리</WorkTab.PlaySounds>
-    <WorkTab.PlaySoundsTip>우선 순위가 변경되면 소리로 알릴까요?</WorkTab.PlaySoundsTip>
-    <WorkTab.PlayCrunch>바삭한 소리</WorkTab.PlayCrunch>
-    <WorkTab.PlayCrunchTip>림이 할당된 작업에 스킬이 모자른 경우 소리로 알릴까요?</WorkTab.PlayCrunchTip>
+    <WorkTab.DefaultPriority>기본 우선순위</WorkTab.DefaultPriority>
+    <WorkTab.DefaultPriorityTip>기본 우선순위 (기본값 3, 1부터 9까지 설정 가능)</WorkTab.DefaultPriorityTip>
+    <WorkTab.HighlightActiveWorkCells>활성 작업 셀 강조</WorkTab.HighlightActiveWorkCells>
+    <WorkTab.HighlightActiveWorkCellsTip>일꾼이 현재 해당 작업을 수행 중일 때 작업 탭의 그리드 칸을 강조 표시합니다.</WorkTab.HighlightActiveWorkCellsTip>
     <WorkTab.DisableScrollwheel>마우스 휠 비활성화</WorkTab.DisableScrollwheel>
     <WorkTab.DisableScrollwheelTip>기술 위에 마우스를 호버했을 때 동작하는 휠 기능을 비활성화 합니다.</WorkTab.DisableScrollwheelTip>
-    <WorkTab.VerticalLabels>수직 레이블</WorkTab.VerticalLabels>
-    <WorkTab.VerticalLabelsTip>일 레이블을 수직으로 배치합니다.</WorkTab.VerticalLabelsTip>
-    <WorkTab.FontFix>수직 폰트 수정</WorkTab.FontFix>
-    <WorkTab.FontFixTip>유니티(림월드를 만든 엔진)은 회전된 폰트에 대해 제대로 처리하지 못해 블러 효과를 일으킵니다. 이 수정은 블러를 제거하지만 글자가 약간 이상한 곳에 위치할 수 있습니다.</WorkTab.FontFixTip>
-
+    
     <!-- scheduler -->
     <WorkTab.SchedulerHourTip>{0}-{1} 은 현재 {2}\n\n{3}</WorkTab.SchedulerHourTip>
     <WorkTab.Selected>선택됨</WorkTab.Selected>
@@ -49,5 +45,34 @@
 
     <!-- pawn label tooltip  -->
     <WorkTab.LabelCellTip>클릭하여 이동\nShift-왼쪽 클릭 혹은 휠 업으로 우선 순위 올림\nShift-오른쪽 클릭 혹은 휠 다운으로 우선 순위 낮춤</WorkTab.LabelCellTip>
+
+    <!-- Favourites -->
+    <Fluffy.WorkTab.CreateFavourite>새 즐겨찾기 만들기</Fluffy.WorkTab.CreateFavourite>
+    <Fluffy.WorkTab.LoadFavourite>즐겨찾기 불러오기</Fluffy.WorkTab.LoadFavourite>
+    <Fluffy.WorkTab.ClearFavourite>즐겨찾기 초기화</Fluffy.WorkTab.ClearFavourite>
+    <Fluffy.WorkTab.UnloadFavourite>언로드</Fluffy.WorkTab.UnloadFavourite>
+    <Fluffy.WorkTab.DeleteFavourite>언로드 및 삭제</Fluffy.WorkTab.DeleteFavourite>
+    <Fluffy.WorkTab.DefaultFavouriteLabel>즐겨찾기</Fluffy.WorkTab.DefaultFavouriteLabel>
+    <Fluffy.WorkTab.CreateFavouritesDialogTitle>새 즐겨찾기 만들기</Fluffy.WorkTab.CreateFavouritesDialogTitle>
+    <Fluffy.WorkTab.EditFavouritesDialogTitle>"{0}" 편집 중</Fluffy.WorkTab.EditFavouritesDialogTitle>
+    <Fluffy.WorkTab.NoStoredFavourites>저장된 즐겨찾기가 없습니다</Fluffy.WorkTab.NoStoredFavourites>
+
+    <Fluffy.WorkTab.FavouriteLabelCannotBeEmpty>즐겨찾기 이름은 비워둘 수 없습니다</Fluffy.WorkTab.FavouriteLabelCannotBeEmpty>
+    <Fluffy.WorkTab.FavouriteInvalidFilename>"{0}"은(는) 올바르지 않은 이름입니다. 즐겨찾기 이름은 유효한 파일 이름이어야 합니다</Fluffy.WorkTab.FavouriteInvalidFilename>
+    <Fluffy.WorkTab.FavouriteAlreadyExists>같은 이름의 즐겨찾기가 이미 존재합니다</Fluffy.WorkTab.FavouriteAlreadyExists>
+
+    <!-- priority labels -->
+    <Fluffy.WorkTab.Priority.None>작업하지 않음</Fluffy.WorkTab.Priority.None>
+    <Fluffy.WorkTab.Priority.Top>최우선 순위</Fluffy.WorkTab.Priority.Top>
+    <Fluffy.WorkTab.Priority.VeryHigh>매우 높은 우선순위</Fluffy.WorkTab.Priority.VeryHigh>
+    <Fluffy.WorkTab.Priority.High>높은 우선순위</Fluffy.WorkTab.Priority.High>
+    <Fluffy.WorkTab.Priority.AboveNormal>보통보다 높은 우선순위</Fluffy.WorkTab.Priority.AboveNormal>
+    <Fluffy.WorkTab.Priority.Normal>보통 우선순위</Fluffy.WorkTab.Priority.Normal>
+    <Fluffy.WorkTab.Priority.BelowNormal>보통보다 낮은 우선순위</Fluffy.WorkTab.Priority.BelowNormal>
+    <Fluffy.WorkTab.Priority.Low>낮은 우선순위</Fluffy.WorkTab.Priority.Low>
+    <Fluffy.WorkTab.Priority.VeryLow>매우 낮은 우선순위</Fluffy.WorkTab.Priority.VeryLow>
+    <Fluffy.WorkTab.Priority.Lowest>가장 낮은 우선순위</Fluffy.WorkTab.Priority.Lowest>
+
+    <Fluffy.WorkTab.CompactWorkTabSettingDisabledTip>이 설정은 비활성화되었습니다. {0}에서 설정을 구성하십시오.</Fluffy.WorkTab.CompactWorkTabSettingDisabledTip>
 
 </LanguageData>
