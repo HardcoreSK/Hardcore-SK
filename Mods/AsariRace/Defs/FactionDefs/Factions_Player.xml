@@ -25,7 +25,6 @@
 		</allowedCultures>	
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistAbstract</li>
 		</requiredMemes>
 		<disallowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
@@ -46,6 +45,9 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
 		</disallowedMemes>
+		<structureMemeWeights>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+		</structureMemeWeights>
 		<backstoryFilters>
 			<li>
 				<categories>
