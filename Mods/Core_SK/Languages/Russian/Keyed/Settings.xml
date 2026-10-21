@@ -96,4 +96,12 @@
 	<FishTrapDefaultOptionDesc>Выберите эту опцию, чтобы ловушка для рыбы по умолчанию использовала широкий режим</FishTrapDefaultOptionDesc>
 	<AutoRebuildFishTrap>Автоматическое восстановление ловушек для рыбы</AutoRebuildFishTrap>
 	<AutoRebuildFishTrapDesc>Если ловушка для рыбы разрушается из-за низкой прочности, на том же месте автоматически размещается чертеж ловушки из того же материала.</AutoRebuildFishTrapDesc>
+	<!-- EN: a specialised system for assigning passions to make it make sense and avoid inconsistencies. -->
+	<PassionUpdateDesc>Специализированная система распределения интересов к навыкам, обеспечивающая логичность и исключающая противоречия.</PassionUpdateDesc>
+	<!-- EN: Custom Passion Assignment -->
+	<PassionUpdateLabel>Особое распределение интересов</PassionUpdateLabel>
+	<!-- EN: Adjusts the skill decay per level, adds check points at certain levels for different skills, also stops skill from decaying if it is improved within the day. -->
+	<UseCustomSkillDecayDesc>Корректирует деградацию навыков по уровням, добавляет контрольные точки на определённых уровнях для разных навыков и останавливает деградацию навыка, если он повышался в течение дня.</UseCustomSkillDecayDesc>
+	<!-- EN: Use SK Custom Skill Decay System(Needs restart after switching) -->
+	<UseCustomSkillDecayLabel>Использовать систему деградации навыков от SK (требуется перезапуск)</UseCustomSkillDecayLabel>
 </LanguageData>

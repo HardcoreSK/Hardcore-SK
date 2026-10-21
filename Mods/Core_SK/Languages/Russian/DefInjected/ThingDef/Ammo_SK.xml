@@ -78,7 +78,7 @@
 	<Ammo_ChargedLaser_Stable.label>Лазерная энергоячейка (С)</Ammo_ChargedLaser_Stable.label> 
 	<Ammo_ChargedLaser_Stable.description>Лазерная энергоячейка стабильная - боеприпас для хайтек вооружения. Представляет собой микробатарею.\n\nПри стрельбе высвобожденная энергия боеприпаса подается на фокусирующий компонент оружия, где на доли секунды формируется мощный высокотемпературный луч света. Настолько точечный и сконцентрированный, что буквально дырявит цели аналогично пулям. Не поджигает цели.</Ammo_ChargedLaser_Stable.description> 
 
-	<Ammo_ChargedLaser_Electromagnetic.label>Лазерная энергоячейка (ЭМ)</Ammo_ChargedLaser_Electromagnetic.label> 
+	<Ammo_ChargedLaser_Electromagnetic.label>Лазерная энергоячейка (EMP)</Ammo_ChargedLaser_Electromagnetic.label> 
 	<Ammo_ChargedLaser_Electromagnetic.description>Лазерная энергоячейка электромагнитная - боеприпас для хайтек вооружения. Представляет собой микробатарею.\n\nПри стрельбе высвобожденная энергия боеприпаса подается на фокусирующий компонент оружия, где на доли секунды формируется мощный высокотемпературный луч света. Данный луч не обладает высокой мощностью или сконцентрированностью, но передает электромагнитный импульс, позволяющий повреждать электротехнические приборы и машины.</Ammo_ChargedLaser_Electromagnetic.description> 
 
 	<Ammo_RailRay.label>Боеприпас рейлгана (EC-NE)</Ammo_RailRay.label>
@@ -89,7 +89,8 @@
 	<Bullet_PlasmaSniper.label>сгусток плазмы (EC)</Bullet_PlasmaSniper.label>
 	<Bullet_PlasmaPelletBolt.label>сгусток плазмы (FRAC)</Bullet_PlasmaPelletBolt.label>
 	<Bullet_Blaster.label>луч бластера (AP)</Bullet_Blaster.label>
-	<!--<Bullet_BlasterPelletBolt.label>луч бластера (AP-FRAC)</Bullet_BlasterPelletBolt.label>-->
+	<!-- EN: Blaster pellet bolt -->
+	<Bullet_BlasterPelletBolt.label>луч бластера (AP-FRAC)</Bullet_BlasterPelletBolt.label>
 	<Bullet_Laserbeam.label>луч лазера (EC)</Bullet_Laserbeam.label>
 	<Bullet_ChargeLance.label>игла рейлгана</Bullet_ChargeLance.label>
 		
@@ -140,4 +141,36 @@
 	<!-- EN: Surfactants are a product of Salt, Sulfur and Alcohol or various other methods. Effective foam base for fighting fires. -->
 	<Surfactant.description>Поверхностно-активное вещество, изготовленное из соли, серы и пенообразующих элементов. Эффективная пенная основа для тушения пожаров.</Surfactant.description>
 
+	<!-- EN: Blaster bolt -->
+	<Bullet_Blaster_BlackWidow.label>луч бластера (AP)</Bullet_Blaster_BlackWidow.label>
+
+	<!-- EN: Laser beam (Stable) -->
+	<Bullet_Laserbeam_Stable_BlackWidow.label>луч лазера (Stable)</Bullet_Laserbeam_Stable_BlackWidow.label>
+
+	<!-- EN: Laser beam -->
+	<Bullet_Laserbeam_Electromagnetic.label>луч лазера (EMP)</Bullet_Laserbeam_Electromagnetic.label>
+
+	<!-- EN: Laser beam -->
+	<Bullet_Laserbeam_Electromagnetic_Mantis.label>луч лазера (EMP)</Bullet_Laserbeam_Electromagnetic_Mantis.label>
+
+	<!-- EN: Laser beam -->
+	<Bullet_Laserbeam_Mantis.label>луч лазера (EC)</Bullet_Laserbeam_Mantis.label>
+
+	<!-- EN: Laser beam (Stable) -->
+	<Bullet_Laserbeam_Stable.label>луч лазера (Stable)</Bullet_Laserbeam_Stable.label>
+
+	<!-- EN: Laser beam (Stable) -->
+	<Bullet_Laserbeam_Stable_Mantis.label>луч лазера (Stable)</Bullet_Laserbeam_Stable_Mantis.label>
+
+	<!-- EN: Poison Dart -->
+	<PoisonDart.label>ядовитый дротик</PoisonDart.label>
+
+	<!-- EN: RPG-7 small grenade (Frag) -->
+	<Bullet_RPG7TripleGrenade_Frag.label>малая граната РПГ-7 (FRAG)</Bullet_RPG7TripleGrenade_Frag.label>
+
+	<!-- EN: RPG-7 small grenade (HEAT) -->
+	<Bullet_RPG7TripleGrenade_HEAT.label>малая граната РПГ-7 (HEAT)</Bullet_RPG7TripleGrenade_HEAT.label>
+
+	<!-- EN: RPG-7 small grenade (Thermobaric) -->
+	<Bullet_RPG7TripleGrenade_Thermobaric.label>малая граната РПГ-7 (Thermobaric)</Bullet_RPG7TripleGrenade_Thermobaric.label>
 </LanguageData>
