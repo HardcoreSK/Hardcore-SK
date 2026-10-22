@@ -28,6 +28,8 @@
 				<WorkToMake>600</WorkToMake>
 				<Mass>0.03</Mass>
 				<Bulk>0.06</Bulk>
+				<Flammability>1.0</Flammability>
+				<DeteriorationRate>10</DeteriorationRate>
 			</statBases>
 			<thingCategories>
 				<li>Preserves</li>
@@ -45,7 +47,6 @@
 				<li Class="CompProperties_Ingredients">
 					<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
 				</li>
-				<li Class="CompProperties_FoodPoisonable" />
 			</comps>
 			<stackLimit>150</stackLimit>
 			<thingSetMakerTags>
@@ -116,6 +117,7 @@
 				<Nutrition>0.06</Nutrition>
 			</statBases>
 			<ingestible Merge="True">
+				<preferability>MealAwful</preferability>
 				<maxNumToIngestAtOnce>10</maxNumToIngestAtOnce>
 			</ingestible>
 			<thingCategories>

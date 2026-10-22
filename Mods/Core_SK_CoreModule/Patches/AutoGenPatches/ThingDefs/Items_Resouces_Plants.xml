@@ -135,6 +135,13 @@
 			<graphicData>
 				<texPath>Things/Item/Resource/PlantFoodRaw/RawFungus</texPath>
 			</graphicData>
+			<statBases Merge="True">
+				<Mass>0.04</Mass>
+				<Bulk>0.05</Bulk>
+			</statBases>
+			<thingCategories Inherit="False">
+				<li>FungusPlantRaw</li>
+			</thingCategories>
 			<comps>
 				<li Class="CompProperties_Rottable">
 					<daysToRotStart>12</daysToRotStart>
