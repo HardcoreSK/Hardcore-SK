@@ -305,6 +305,9 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="Hopper"]</xpath>
         <value>
+            <researchPrerequisites>
+                <li>MicroelectronicsBasics</li>
+            </researchPrerequisites>
             <description>Holds resources for the nutrient paste dispenser or fertilizer machine.</description>
             <graphicData>
                 <texPath>Things/Building/Misc/hopper</texPath>
@@ -964,6 +967,8 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="CraftingSpot"]</xpath>
         <value>
+            <useHitPoints>true</useHitPoints>
+            <altitudeLayer>Building</altitudeLayer>
             <inspectorTabs DeepReplace="true" />
             <label>craftsman table</label>
             <description>A place for crafting simple things like shivs or bows.</description>
