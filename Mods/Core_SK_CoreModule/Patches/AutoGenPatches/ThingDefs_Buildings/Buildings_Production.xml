@@ -10,6 +10,8 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="ButcherSpot"]</xpath>
         <value>
+            <fillPercent>0</fillPercent>
+            <pathCost>0</pathCost>
             <inspectorTabs DeepReplace="true" />
             <graphicData>
                 <texPath>Things/Building/ProductionFood/CuttingPlace</texPath>

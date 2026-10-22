@@ -451,6 +451,7 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="ElectricCrematorium"]</xpath>
         <value>
+            <pathCost>50</pathCost>
             <label>crematorium</label>
             <thingClass>SK.Building_Crematorium</thingClass>
             <description>Cremates corpses, apparel or various resources into ashes. Requires power.</description>

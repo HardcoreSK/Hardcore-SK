@@ -39,6 +39,8 @@
 	<!-- Base Worktable -->
 
 	<ThingDef Name="SK_WorkTable" ParentName="BenchBase" Abstract="True">
+		<fillPercent>0.5</fillPercent>
+		<pathCost>50</pathCost>
 		<thingClass>SK.SK_Building_WorkTable</thingClass>
 		<tickerType>Normal</tickerType>
 		<graphicData>
