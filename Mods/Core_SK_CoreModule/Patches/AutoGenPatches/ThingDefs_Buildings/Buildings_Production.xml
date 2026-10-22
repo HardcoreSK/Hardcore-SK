@@ -728,6 +728,7 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="FueledSmithy"]</xpath>
         <value>
+            <minifiedDef IsNull="true" />
             <inspectorTabs DeepReplace="true" />
             <label>blacksmith</label>
             <description>This blacksmithing setup has all the tools needed to build metal armor, work tools, melee weapons, advanced bows and crossbows, as well as simple ammunition such as arrows. It requires some fuel that burns at a high temperature such as coal or peat.</description>
