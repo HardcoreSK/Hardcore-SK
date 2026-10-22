@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf8'?>
+<ModMetaData>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <name>HSK Trait Growth</name>
+  <author>battlemage64</author>
+  <packageId>battlemage64.PeopleCanChange</packageId>
+  <description>HSK-specific trait growth. Requires Core SK and Humanoid Alien Races.
+
+Random trait changes, accumulated moods and cannibalism exposure, growth through hardship into Hardened, trait-based skill passions and prosthetic adaptation are handled by one HSK growth component. No legacy People Can Change behaviour or save migration is used. Prosthetic adaptation is derived from People Can Change.
+</description>
+  <modDependencies>
+    <li>
+      <packageId>skyarkhangel.HSK</packageId>
+      <displayName>Core SK</displayName>
+    </li>
+    <li>
+      <packageId>erdelf.HumanoidAlienRaces</packageId>
+      <displayName>Humanoid Alien Races</displayName>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>skyarkhangel.HSK</li>
+    <li>erdelf.HumanoidAlienRaces</li>
+  </loadAfter>
+</ModMetaData>
