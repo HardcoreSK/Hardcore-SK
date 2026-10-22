@@ -3056,6 +3056,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 	<!--Root Cellar- outdoors only, diggable terrain-->
 	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
 		<minifiedDef IsNull="true" />
+		<thingCategories IsNull="true" />
 		<defName>RootCellar</defName>
 		<label>root cellar</label>
 		<description>A cellar dug into the ground to keep produce cool and dry. Reduces spoilage by 40%. Slow to store and retrieve items, since it takes a bit of time to "root" around in there. Can store up to 27 items but takes of 3x3 space.</description>
