@@ -96,6 +96,16 @@
 	</Operation>
 
 	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Weapon_GrenadeMolotov" or defName="Weapon_GrenadeFrag" or defName="Weapon_GrenadeEMP"]</xpath>
+		<value>
+			<relicChance>0</relicChance>
+			<weaponClasses Inherit="False">
+				<li>Ranged</li>
+			</weaponClasses>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Weapon_GrenadeFrag"]</xpath>
 		<value>
 			<graphicData>
