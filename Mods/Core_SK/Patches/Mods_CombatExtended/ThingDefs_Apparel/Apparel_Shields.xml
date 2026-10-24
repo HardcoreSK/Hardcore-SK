@@ -14,6 +14,10 @@
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="CE_Apparel_BallisticShield"]</xpath>
 		<value>
+            <graphicData>
+                <texPath>Things/Apparel/Shields/ShieldBallistic</texPath>
+                <graphicClass>SK.Graphic_SingleNoColor</graphicClass>
+            </graphicData>
 			<stuffCategories>
 				<li>StrongMetallic</li>
 			</stuffCategories>
@@ -23,8 +27,9 @@
 				<Kevlar>15</Kevlar>
 			</costList>
 			<statBases>
+                <Flammability>0.0</Flammability>
 				<WorkToMake>14000</WorkToMake>
-				<MaxHitPoints>130</MaxHitPoints>
+				<MaxHitPoints>200</MaxHitPoints>
 				<Mass>13</Mass>
 				<Bulk>16</Bulk>
 				<WornBulk>10</WornBulk>
@@ -37,8 +42,8 @@
 				<ArmorRating_Heat>0.1</ArmorRating_Heat>
 			</statBases>
 			<equippedStatOffsets>
-				<MoveSpeed>-0.01</MoveSpeed>
-				<WorkSpeedGlobal>-0.01</WorkSpeedGlobal>
+				<MoveSpeed>-0.1</MoveSpeed>
+				<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
 				<ReloadSpeed>-0.3</ReloadSpeed>
 				<MeleeHitChance>-0.9</MeleeHitChance>
 				<ShootingAccuracyPawn>-0.4</ShootingAccuracyPawn>
@@ -47,6 +52,7 @@
 				<MeleeCritChance>-0.2</MeleeCritChance>
 				<MeleeParryChance>1.0</MeleeParryChance>
 			</equippedStatOffsets>
+            <generateCommonality>2</generateCommonality>
 			<apparel Merge="true">
 				<tags>
 					<li>BallisticShield</li>
@@ -75,7 +81,7 @@
 				<li>ShieldCat</li>
 				<li>SetCombatarmor</li>
 				<li>SetSecurity</li>
-				<li>SetInteractor</li>
+				<!--<li>SetInteractor</li>-->
 			</thingCategories>
 			<recipeMaker>
 				<workSpeedStat>SmithingSpeed</workSpeedStat>
@@ -83,7 +89,7 @@
 				<effectWorking>Smith</effectWorking>
 				<soundWorking>Recipe_Machining</soundWorking>
 				<recipeUsers>
-					<li>ElectricTailoringBench</li>
+					<li>ElectricSmithy</li>
 				</recipeUsers>
 				<researchPrerequisite>FlakArmor</researchPrerequisite>
 				<unfinishedThingDef>UnfinishedShield</unfinishedThingDef>
@@ -97,6 +103,8 @@
 						<li>LeftShoulder</li>
 						<li>Torso</li>
 						<li>Neck</li>
+						<li>FullHead</li>
+                        <li>Legs</li>
 					</shieldCoverage>
 					<crouchCoverage>
 						<li>Hands</li>
@@ -110,5 +118,12 @@
 				</li>
 			</modExtensions>
 		</value>
+	</Operation>
+    
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Apparel_BallisticShield"]/apparel/renderNodeProperties/li/texPath</xpath>
+		<value>
+            <texPath>Things/Apparel/Shields/ShieldBallistic</texPath>
+        </value>
 	</Operation>
 </Patch>
