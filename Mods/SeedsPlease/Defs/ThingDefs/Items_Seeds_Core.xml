@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+
   <SeedsPlease.SeedDef ParentName="SeedBase">
     <defName>Seed_Rice</defName>
     <label>rice seeds</label>
@@ -38,6 +40,9 @@
   <SeedsPlease.SeedDef ParentName="SeedBase">
     <defName>Seed_Haygrass</defName>
     <label>haygrass seeds</label>
+    <statBases>
+        <MarketValue>0.9</MarketValue>
+    </statBases>
     <sources>
       <li>Plant_Haygrass</li>
 	  <li>Plant_Grass</li>
