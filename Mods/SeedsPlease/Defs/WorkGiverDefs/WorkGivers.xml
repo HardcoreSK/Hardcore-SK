@@ -19,6 +19,21 @@
   </WorkGiverDef>
   
   <WorkGiverDef>
+    <defName>GrowerClearZone</defName>
+    <label>clear growing zones</label>
+    <giverClass>SeedsPlease.WorkGiver_GrowerClearZone</giverClass>
+    <workType>Growing</workType>
+    <priorityInType>110</priorityInType>
+    <verb>clear</verb>
+    <gerund>clearing</gerund>
+    <scanThings>false</scanThings>
+    <scanCells>true</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
     <defName>GrowerSow</defName>
     <label>sow crops</label>
     <giverClass>SeedsPlease.WorkGiver_GrowerSowWithSeeds</giverClass>
