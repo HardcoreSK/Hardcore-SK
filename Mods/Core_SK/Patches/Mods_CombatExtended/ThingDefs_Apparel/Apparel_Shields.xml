@@ -16,7 +16,8 @@
 		<value>
             <graphicData>
                 <texPath>Things/Apparel/Shields/ShieldBallistic</texPath>
-                <graphicClass>SK.Graphic_SingleNoColor</graphicClass>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
             </graphicData>
 			<stuffCategories>
 				<li>StrongMetallic</li>
@@ -24,7 +25,7 @@
 			<costStuffCount>50</costStuffCount>
 			<costList>
 				<ComponentIndustrial>5</ComponentIndustrial>
-				<Kevlar>15</Kevlar>
+				<Kevlar>25</Kevlar>
 			</costList>
 			<statBases>
                 <Flammability>0.0</Flammability>
@@ -37,9 +38,9 @@
 				<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
 				<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
 				<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
-				<ArmorRating_Sharp>8</ArmorRating_Sharp>
+				<ArmorRating_Sharp>11.4</ArmorRating_Sharp>
 				<ArmorRating_Blunt>28.8</ArmorRating_Blunt>
-				<ArmorRating_Heat>0.1</ArmorRating_Heat>
+				<ArmorRating_Heat>0.3</ArmorRating_Heat>
 			</statBases>
 			<equippedStatOffsets>
 				<MoveSpeed>-0.1</MoveSpeed>
@@ -60,23 +61,6 @@
 				</tags>
 				<useDeflectMetalEffect>true</useDeflectMetalEffect>
 			</apparel>
-			<colorGenerator Class="ColorGenerator_Options">
-				<options>
-					<li>
-						<weight>10</weight>
-						<only>(0.33,0.33,0.33,1)</only>
-					</li>
-					<li>
-						<weight>10</weight>
-						<only>(0.65,0.65,0.65,1)</only>
-					</li>
-					<li>
-						<weight>6</weight>
-						<min>(0.3,0.3,0.3,1)</min>
-						<max>(0.5,0.5,0.5,1)</max>
-					</li>
-				</options>
-			</colorGenerator>
 			<thingCategories>
 				<li>ShieldCat</li>
 				<li>SetCombatarmor</li>
