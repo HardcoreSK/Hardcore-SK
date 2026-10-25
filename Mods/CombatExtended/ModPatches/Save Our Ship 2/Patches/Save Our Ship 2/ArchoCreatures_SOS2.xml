@@ -383,7 +383,7 @@
 				<!-- ========== Archotortoise : Combat Type ========== -->
 
 				<li Class="PatchOperationAddModExtension">
-					<xpath>Defs/ThingDef[defName="Archotortoise"]</xpath>
+					<xpath>Defs/ThingDef[defName="Tortoise"]</xpath>
 					<value>
 						<li Class="CombatExtended.RacePropertiesExtensionCE">
 							<bodyShape>QuadrupedLow</bodyShape>
@@ -738,4 +738,14 @@
 			</operations>
 		</match>
 	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Archotortoise"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>QuadrupedLow</bodyShape>
+			</li>
+		</value>
+	</Operation>
+
 </Patch>
