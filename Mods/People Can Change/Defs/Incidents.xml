@@ -1,0 +1,28 @@
+<Defs>
+    <IncidentDef>
+        <defName>TraitChange</defName>
+        <label>trait change</label>
+        <baseChance>.6</baseChance>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+            <li>Map_TempIncident</li>
+            <li>Map_Misc</li>
+            <li>Map_RaidBeacon</li>
+        </targetTags>
+        <category>Misc</category>
+        <workerClass>HSK.TraitGrowth.IncidentWorker_GainTrait</workerClass>
+    </IncidentDef>
+    <IncidentDef>
+        <defName>TraitRemove</defName>
+        <label>trait removed</label>
+        <baseChance>.6</baseChance>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+            <li>Map_TempIncident</li>
+            <li>Map_Misc</li>
+            <li>Map_RaidBeacon</li>
+        </targetTags>
+        <category>Misc</category>
+        <workerClass>HSK.TraitGrowth.IncidentWorker_LoseTrait</workerClass>
+    </IncidentDef>
+</Defs>
