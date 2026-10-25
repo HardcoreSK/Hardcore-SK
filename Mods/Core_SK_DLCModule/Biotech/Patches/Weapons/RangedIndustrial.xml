@@ -3,23 +3,17 @@
 
 	<!-- ========== Remove the vanilla Toxbomb launcher ========== -->
 
-	<Operation Class="PatchOperationRemove">
+<!-- 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/ThingDef[defName="Gun_ToxbombLauncher"]</xpath>
-	</Operation>
+	</Operation> -->
 
-	<!-- Add the tox grenades to the 40mm grenade ammoset -->
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_40x46mmGrenade"]/ammoTypes</xpath>
-		<value>
-			<Ammo_40x46mmGrenade_Tox>Bullet_40x46mmGrenade_Tox</Ammo_40x46mmGrenade_Tox>
-		</value>
-	</Operation>
+	<!-- CE 1.6.7.4.0 now adds the tox round to AmmoSet_40x46mmGrenade itself;
+		keep this patch from adding the same AmmoLink twice. -->
 
 	<!-- ========== Remove the vanilla Flamebow ========== -->
 
-	<Operation Class="PatchOperationRemove">
+<!-- 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/ThingDef[defName="Flamebow"]</xpath>
-	</Operation>
+	</Operation> -->
 
 </Patch>

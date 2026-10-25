@@ -16,11 +16,16 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_LauncherGrenade"]/ammoTypes</xpath>
-		<value>
-			<Ammo_LauncherGrenade_Tox>Bullet_40x46mmGrenade_Tox</Ammo_LauncherGrenade_Tox>
-		</value>
+<!-- HSK ships the generic ammo sets (Defs/Ammo/GENERIC) as .bak, so AmmoSet_LauncherGrenade
+		is not loaded. Only add the tox round when that set actually exists. -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_LauncherGrenade"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_LauncherGrenade"]/ammoTypes</xpath>
+			<value>
+				<Ammo_LauncherGrenade_Tox>Bullet_40x46mmGrenade_Tox</Ammo_LauncherGrenade_Tox>
+			</value>
+		</match>
 	</Operation>
 
 	<!-- ========== Tox Grenades ========== -->
