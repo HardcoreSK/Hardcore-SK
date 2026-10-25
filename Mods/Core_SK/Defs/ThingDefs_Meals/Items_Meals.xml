@@ -239,4 +239,41 @@
 		</comps>
 	</ThingDef>
 
+	<ThingDef ParentName="SK_MealBase">
+		<defName>FriedOnions</defName>
+		<label>Fried Onion Rings</label>
+		<description>Not very nutritious, but they’re good at warding off diseases and other settlers.</description>
+		<graphicData>
+			<texPath>Things/Food/FriedVegetables</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>10</DeteriorationRate>
+			<MarketValue>5</MarketValue>
+			<WorkToMake>250</WorkToMake>
+			<Bulk>1.0</Bulk>
+			<Mass>0.5</Mass>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<stackLimit>10</stackLimit>
+		<ingestible>
+			<foodType>Meal</foodType>
+			<preferability>MealSimple</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>HadFriedOnions</hediffDef>
+					<severity>0.25</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
 </Defs>
