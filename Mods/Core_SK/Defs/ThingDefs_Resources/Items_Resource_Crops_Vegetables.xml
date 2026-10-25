@@ -1,38 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- <ThingDef ParentName="SK_PlantFoodRawBase">
-		<defName>RawPotatoes</defName>
-		<label>Potatoes</label>
-		<description>Potatoes are a starchy, tuberous crop of a Potato Plant. They are not very tasty when eaten raw but they do grow quickly.</description>
-		<graphicData>
-			<texPath>Things/Veg/Potato</texPath>
-		</graphicData>
-		<statBases>
-			<MarketValue>1.9</MarketValue>
-			<Nutrition>0.07</Nutrition>
-		</statBases>
-		<tickerType>Rare</tickerType>
-		<thingCategories>
-			<li>BasicPlantFoodRaw</li>
-		</thingCategories>
-		<ingestible>
-			<foodType>VegetableOrFruit</foodType>
-		</ingestible>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>30</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-	</ThingDef> -->
+	<!--
+    DefOverwrite list:
+    RawPotatoes
+    -->
 
 	<ThingDef ParentName="SK_PlantFoodRawBase">
 		<defName>Rawbean</defName>
 		<label>Bean Pod</label>
 		<description>Bean Pods are the edible seeds of the Bean Plant. They can be used for cooking or for making BioDiesel Fuel. Unpleasant when eaten raw.</description>
 		<graphicData>
-			<texPath>Things/Veg/bean</texPath>
+			<texPath>Things/Food/Raw/Beans</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>1.5</MarketValue>
@@ -53,13 +32,12 @@
 		</comps>
 	</ThingDef>
 
-
 	<ThingDef ParentName="SK_PlantFoodRawBase">
 		<defName>RawTomatoes</defName>
 		<label>Tomatoes</label>
 		<description>Tomatoes are round, palm sized, red, sharp-tasting fruits of the Tomato Vine. It is useful in cooking and is enjoyable to eat even when raw.</description>
 		<graphicData>
-			<texPath>Things/Veg/Tomato</texPath>
+			<texPath>Things/Food/Raw/Tomato</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>1.9</MarketValue>
@@ -85,7 +63,7 @@
 		<label>Carrots</label>
 		<description>Carrots are long, crunchy, orange root vegetables of the Carrot Plant. Refreshing when eaten raw.</description>
 		<graphicData>
-			<texPath>Things/Veg/Carrot</texPath>
+			<texPath>Things/Food/Raw/Carrot</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>2.1</MarketValue>
@@ -111,7 +89,7 @@
 		<label>giant leaf</label>
 		<description>Raw giant leaf. Not really appetizing raw, it is better prepared as a soup.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/RawGiantLeaf</texPath>
+			<texPath>Things/Food/Raw/GiantLeaf</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -136,7 +114,7 @@
 		<label>Algae</label>
 		<description>Algae are rich in vitamins seaweed that is used in cooking recipes with vegetables.</description>
 		<graphicData>
-			<texPath>Things/Fruits/RawAlgae</texPath>
+			<texPath>Things/Food/Raw/Algae</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>4.5</MarketValue>

@@ -32,7 +32,7 @@
 		<label>shimmershroom</label>
 		<description>Raw shimmershroom. Its delicate taste and nutrition qualities are much appreciated by caveworlds inhabitants.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/RawShimmershroom</texPath>
+			<texPath>Things/Food/Raw/Shimmershroom</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -64,7 +64,7 @@
 		<label>glowbulb</label>
 		<description>Raw glowbulb. While being nutritious, its very rough taste make it better used as a cooked ingredient.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/RawGlowbulb</texPath>
+			<texPath>Things/Food/Raw/Glowbulb</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -92,7 +92,7 @@
 		<description>A massive gleamcap stem. Known for its natural healing properties by caveworld tenders, it can be used to treat injuries and ease the pain.</description>
 		<thingClass>Medicine</thingClass>
 		<graphicData>
-			<texPath>Things/Item/Resource/GleamcapStem</texPath>
+			<texPath>Things/Food/Raw/GleamcapStem</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Standard_Drop</soundInteract>
@@ -145,13 +145,12 @@
 		</comps>
 	</ThingDef> -->
 
-
 	<ThingDef ParentName="MushroomBase">
 		<defName>Rawmushroom</defName>
 		<label>Raw Champignon</label>
 		<description>Raw Champignon are small white or brown edible caps of the Champignon Mushroom. The caps are round in appearance. Unsavory when eaten raw, as the texture is similar to raw meat.</description>
 		<graphicData>
-			<texPath>Things/Veg/mushroom</texPath>
+			<texPath>Things/Food/Raw/Champignon</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>5</MarketValue>

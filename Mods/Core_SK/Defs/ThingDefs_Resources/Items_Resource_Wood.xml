@@ -2,88 +2,16 @@
 <Defs>
 
 	<!--
-	<ThingDef ParentName="ResourceBase">
-		<defName>WoodLog</defName>
-		<label>wood log</label>
-		<description>Wood from trees or other fibrous plants. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch. It can be processed into planks or kindling.</description>
-		<graphicData>
-			<texPath>Things/Item/WoodLogStacked</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-		</graphicData>
-		<soundInteract>Wood_Drop</soundInteract>
-		<soundDrop>Wood_Drop</soundDrop>
-		<tickerType>Rare</tickerType>
-		<statBases>
-			<MarketValue>1.4</MarketValue>
-			<MaxHitPoints>150</MaxHitPoints>
-			<Flammability>5.0</Flammability>
-			<DeteriorationRate>0</DeteriorationRate>
-			<StuffPower_Armor_Blunt>0.75</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Sharp>0.6</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Heat>0.04</StuffPower_Armor_Heat>
-			<StuffPower_Insulation_Cold>0.85</StuffPower_Insulation_Cold>
-			<StuffPower_Insulation_Heat>0.45</StuffPower_Insulation_Heat>
-			<SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-			<BluntDamageMultiplier>0.8</BluntDamageMultiplier>
-			<MaxBurningTempCelsius>550</MaxBurningTempCelsius>
-			<BurnDurationHours>0.8</BurnDurationHours>
-			<MeleeCounterParryBonus>0.85</MeleeCounterParryBonus>
-			<Mass>0.3</Mass>
-			<Bulk>0.3</Bulk>
-		</statBases>
-		<techLevel>Neolithic</techLevel>
-		<stackLimit>300</stackLimit>
-		<stuffProps>
-			<stuffAdjective>wood log</stuffAdjective>
-			<categories>
-				<li>WoodLogs</li>
-			</categories>
-			<color>(149,103,65)</color>
-			<constructEffect>ConstructWood</constructEffect>
-			<appearance>Planks</appearance>
-			<soundImpactBullet>BulletImpact_Wood</soundImpactBullet>
-			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
-			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
-			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>
-			<statOffsets>
-				<Beauty>2</Beauty>
-			</statOffsets>
-			<statFactors>
-				<MaxHitPoints>0.85</MaxHitPoints>
-				<Flammability>1</Flammability>
-				<Beauty>1.3</Beauty>
-				<WorkToMake>0.6</WorkToMake>
-				<WorkToBuild>0.6</WorkToBuild>
-				<MeleeWeapon_CooldownMultiplier>1.05</MeleeWeapon_CooldownMultiplier>
-				<MoveSpeed>0.75</MoveSpeed>
-				<MarketValue>0.65</MarketValue>
-				<BedRestEffectiveness>1.0</BedRestEffectiveness>
-				<ImmunityGainSpeedFactor>1.0</ImmunityGainSpeedFactor>
-				<WorkTableWorkSpeedFactor>0.65</WorkTableWorkSpeedFactor>
-				<DoorOpenSpeed>1.15</DoorOpenSpeed>
-				<MeleePenetrationFactor>0.4</MeleePenetrationFactor>
-				<Mass>0.45</Mass>
-			</statFactors>
-		</stuffProps>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<isTechHediff>true</isTechHediff>
-		<thingCategories>
-			<li>Wooden</li>
-		</thingCategories>
-		<burnableByRecipe>True</burnableByRecipe>
-		<techHediffsTags>
-			<li>Poor</li>
-		</techHediffsTags>
-	</ThingDef>
-	-->
-
+    DefOverwrite list:
+    WoodLog
+    -->
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>RedWoodLog</defName>
 		<label>redwood</label>
 		<description>Wood from redwood and sequoia trees or other fibrous plants. Red, valuable and more fireproof than regular wood. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch.</description>
 		<graphicData>
-			<texPath>Things/Item/WoodLogStacked</texPath>
+			<texPath>Things/Item/Resource/Wooden/WoodLogStacked</texPath>
 			<color>(102,41,20)</color>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
@@ -159,7 +87,7 @@
 		<label>wood plank</label>
 		<description>Wood planks crafted from wood logs. Useful for building structures, weapons, and even simple prosthetics.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/WoodPlank</texPath>
+			<texPath>Things/Item/Resource/Wooden/WoodPlank</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<soundInteract>Wood_Drop</soundInteract>
@@ -223,13 +151,12 @@
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 	</ThingDef>
 
-
 	<ThingDef ParentName="ResourceBase">
 		<defName>Bamboo</defName>
 		<label>bamboo log</label>
 		<description>Bamboo Logs are a type of wood-like grass. It is a fast growing wood alternative that is useful for construction.</description>
 		<graphicData>
-			<texPath>Things/Item/Veg/bamboo</texPath>
+			<texPath>Things/Item/Resource/Wooden/Bamboo</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stackLimit>300</stackLimit>
@@ -287,13 +214,12 @@
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 	</ThingDef>
 
-
 	<ThingDef ParentName="ResourceBase">
 		<defName>BambooPlank</defName>
 		<label>bamboo plank</label>
 		<description>Bamboo Planks are crafted from Bamboo Logs. They are useful for building structures, weapons and even simple prosthetics.</description>
 		<graphicData>
-			<texPath>Things/Item/Veg/BambooPlank</texPath>
+			<texPath>Things/Item/Resource/Wooden/BambooPlank</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Wood_Drop</soundInteract>
@@ -361,7 +287,7 @@
 		<label>redwood plank</label>
 		<description>Redwood planks crafted from redwood logs. Useful for building structures, weapons, and even simple prosthetics.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/WoodPlank</texPath>
+			<texPath>Things/Item/Resource/Wooden/WoodPlank</texPath>
 			<color>(102,41,20)</color>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
@@ -430,7 +356,7 @@
 		<label>firewood</label>
 		<description>Firewood is either created by cutting logs, or salvaged from breaking down bushes. It can act as a fuel for various low-tech buildings, including the steam generator. It burns twice as long compared to unprocessed wood.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/Kindling</texPath>
+			<texPath>Things/Item/Resource/Wooden/Kindling</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Wood_Drop</soundInteract>

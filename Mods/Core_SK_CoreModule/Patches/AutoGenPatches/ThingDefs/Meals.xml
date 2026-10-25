@@ -19,7 +19,7 @@
 		<xpath>Defs/ThingDef[defName="MealSurvivalPack"]</xpath>
 		<value>
 			<graphicData>
-				<texPath>Things/Item/Meal128/MRE</texPath>
+				<texPath>Things/Food/Meals/MRE</texPath>
 				<graphicClass>Graphic_MealVariants</graphicClass>
 			</graphicData>
 			<statBases Merge="True">
@@ -42,7 +42,7 @@
 		<xpath>Defs/ThingDef[defName="MealFine"]</xpath>
 		<value>
 			<graphicData>
-				<texPath>Things/Item/Meal128/StirFry</texPath>
+				<texPath>Things/Food/Meals/StirFry</texPath>
 				<graphicClass>Graphic_MealVariants</graphicClass>
 			</graphicData>
 		</value>
@@ -52,7 +52,7 @@
 		<value>
 			<description>An elborate concoction of food skillfully prepared into a succulent meal.</description>
 			<graphicData>
-				<texPath>Things/Item/Meal128/SteakDinner</texPath>
+				<texPath>Things/Food/Meals/SteakDinner</texPath>
 				<graphicClass>Graphic_MealVariants</graphicClass>
 			</graphicData>
 		</value>
@@ -63,7 +63,7 @@
 			<label>Fruit Salad</label>
 			<description>A fruit salad made from gathered fruit.</description>
 			<graphicData>
-				<texPath>Things/Item/Meal/Salad/Salad</texPath>
+				<texPath>Things/Food/Meals/Salad</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
 			</graphicData>
 			<statBases Merge="True">
@@ -88,7 +88,7 @@
 		<xpath>Defs/ThingDef[defName="MealNutrientPaste"]</xpath>
 		<value>
 			<graphicData>
-				<texPath>Things/Item/Meal/NutrientPaste</texPath>
+				<texPath>Things/Food/Meals/NutrientPaste</texPath>
 				<graphicClass>Graphic_StackCount</graphicClass>
 			</graphicData>
 			<statBases Merge="True">

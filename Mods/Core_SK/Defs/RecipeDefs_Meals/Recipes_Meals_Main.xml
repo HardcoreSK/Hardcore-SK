@@ -788,9 +788,9 @@
 
 	<RecipeDef ParentName="CookMealSpecialBase_SK">
 		<defName>MakeMushroomMadness</defName>
-		<label>make mushroom madness</label>
+		<label>make mushroom kebab</label>
 		<description>Make a mysterious dish from different mushrooms. Produces 2.</description>
-		<jobString>Cooking mushroom madness.</jobString>
+		<jobString>Cooking mushroom kebab.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -856,9 +856,9 @@
 
 	<RecipeDef ParentName="CookMealSpecialBase_SK">
 		<defName>MakeMushroomMadnessBulk</defName>
-		<label>make mushroom madness (x4)</label>
+		<label>make mushroom kebab (x4)</label>
 		<description>Make a mysterious dish from different mushrooms. Produces 8. Much of the ingredients are wasted in order to create the best eating experience.</description>
-		<jobString>Cooking mushroom madness.</jobString>
+		<jobString>Cooking mushroom kebab.</jobString>
 		<workAmount>2000</workAmount>
 		<ingredients>
 			<li>
@@ -1209,6 +1209,75 @@
 
 
 	<!--     Lavish Meals     -->
+
+	<RecipeDef ParentName="CookMealSpecialBase_SK">
+		<defName>MakeBurger</defName>
+		<label>cook meat burger</label>
+		<description>Cooks a burger made from bread and meat. Delicious! Produces 2.</description>
+		<jobString>Cooking burger.</jobString>
+		<workAmount>900</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Muffalo</li>
+						<li>MetalCannedMeat_prime</li>
+					</thingDefs>
+				</filter>
+				<count>0.8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>bread</li>
+					</thingDefs>
+				</filter>
+				<count>0.6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawTomatoes</li>
+					</thingDefs>
+				</filter>
+				<count>0.3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Meat_Muffalo</li>
+				<li>MetalCannedMeat_prime</li>
+				<li>bread</li>
+				<li>RawTomatoes</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Meat_Muffalo</li>
+				<li>MetalCannedMeat_prime</li>
+				<li>bread</li>
+				<li>RawTomatoes</li>
+			</thingDefs>
+			<disallowedThingDefs>
+				<li>Meat_Megaspider</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+				<li>Meat_Human</li>
+			</disallowedThingDefs>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+		</defaultIngredientFilter>
+		<products>
+			<MeatBurger>2</MeatBurger>
+		</products>
+		<skillRequirements>
+			<Cooking>13</Cooking>
+		</skillRequirements>
+		<recipeUsers>
+			<li>ElectricStove_Pro</li>
+		</recipeUsers>
+		<researchPrerequisite>Food_C6</researchPrerequisite>
+	</RecipeDef>
 
 	<RecipeDef ParentName="CookMealSpecialBase_SK">
 		<defName>MakeBurgerCheese</defName>

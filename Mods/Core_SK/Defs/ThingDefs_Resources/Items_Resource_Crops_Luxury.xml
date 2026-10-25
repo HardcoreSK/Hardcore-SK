@@ -7,7 +7,7 @@
 		<label>Wild Rose</label>
 		<description>Wild Roses are the red flowers of a Wild Rose Plant. The plant is also known as the Prickly Rose, Bristly Rose and Arctic Rose.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/mediflower</texPath>
+			<texPath>Things/Food/Ingredients/WildRose</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<altitudeLayer>Item</altitudeLayer>
@@ -54,7 +54,7 @@
 		<label>Hypericum</label>
 		<description>Hypericum is a type of medicinal flower of the Hypericum Plant. This plant is well-known by its herbal name, the St. John's Wort. Researchers have discovered that Hypericum alters brain chemistry in a way which improves mood.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/mediflowery</texPath>
+			<texPath>Things/Food/Ingredients/Hypericum</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<altitudeLayer>Item</altitudeLayer>
@@ -101,7 +101,7 @@
 		<label>Mint Leaves</label>
 		<description>Mints Leaves are aromatic, leafy herbs of a Mint Plant.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/mediflowerg</texPath>
+			<texPath>Things/Food/Ingredients/MintLeaves</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<altitudeLayer>Item</altitudeLayer>
@@ -142,13 +142,12 @@
 		<stackLimit>75</stackLimit>
 	</ThingDef>
 
-
 	<ThingDef ParentName="CropsBase">
 		<defName>Rawonion</defName>
 		<label>Onion</label>
 		<description>Onions are the vegetable bulbs of Onion Plants. Considered to be a luxury crop, Onions are used in savory food dishes. A pungeant chemcial is released when Onions are chopped that can make you cry!</description>
 		<graphicData>
-			<texPath>Things/Veg/onion</texPath>
+			<texPath>Things/Food/Ingredients/Onion</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<altitudeLayer>Item</altitudeLayer>

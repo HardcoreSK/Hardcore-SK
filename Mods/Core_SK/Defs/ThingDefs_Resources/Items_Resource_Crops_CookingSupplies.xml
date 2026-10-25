@@ -1,70 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
-	<!-- <ThingDef ParentName="SK_PlantFoodRawBase">
-		<defName>RawCorn</defName>
-		<label>Corn</label>
-		<description>Corn comes from the Corn Plant. The leafy stalk of the plant produces ears which contain the grain that can be ground into flour, recycled into fuel or used in recipes for a variety of dishes.</description>
-		<soundInteract>Grain_Drop</soundInteract>
-		<soundDrop>Grain_Drop</soundDrop>
-		<graphicData>
-			<texPath>Things/Veg/Corn</texPath>
-		</graphicData>
-		<statBases>
-			<MarketValue>2.1</MarketValue>
-			<Nutrition>0.04</Nutrition>
-		</statBases>
-		<tickerType>Rare</tickerType>
-		<thingCategories>
-			<li>BasicPlantFoodRaw</li>
-		</thingCategories>
-		<ingestible>
-			<foodType>VegetableOrFruit</foodType>
-		</ingestible>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>60</daysToRotStart>
-			</li>
-		</comps>
-		<stackLimit>300</stackLimit>
-	</ThingDef> -->
-
-
-	<!-- <ThingDef ParentName="SK_PlantFoodRawBase">
-		<defName>RawRice</defName>
-		<label>Rice</label>
-		<description>Rice are the small edible seeds of the Rice Plant. Not enjoyable when eaten raw, as the seeds are hard and numerous. It is a quick growing food source that can also be used for Ethanol Fuel or the alcoholic drink called Sake.</description>
-		<soundInteract>Grain_Drop</soundInteract>
-		<soundDrop>Grain_Drop</soundDrop>
-		<graphicData>
-			<texPath>Things/Veg/Rice</texPath>
-		</graphicData>
-		<thingCategories>
-			<li>BasicPlantFoodRaw</li>
-		</thingCategories>
-		<statBases>
-			<MarketValue>1.9</MarketValue>
-			<Nutrition>0.05</Nutrition>
-		</statBases>
-		<tickerType>Rare</tickerType>
-		<ingestible>
-			<foodType>Seed</foodType>
-		</ingestible>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>40</daysToRotStart>
-			</li>
-		</comps>
-		<stackLimit>300</stackLimit>
-	</ThingDef> -->
+	<!--
+    DefOverwrite list:
+    RawCorn
+    RawRice
+    RawHops
+    PsychoidLeaves
+    SmokeleafLeaves
+    -->
 
 	<ThingDef ParentName="SK_RoughPlantBase">
 		<defName>Rawwheat</defName>
 		<label>Wheat</label>
 		<description>Wheat is a cereal grain. It can be milled into Flour for use in baking bread.</description>
 		<graphicData>
-			<texPath>Things/Item/wheat</texPath>
+			<texPath>Things/Food/Ingredients/Wheat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -93,7 +44,7 @@
 		<label>Cocoa Beans</label>
 		<description>Cocoa Beans are the seeds of cocoa pods from a Cocoa Tree. They can be refined into chocolate.</description>
 		<graphicData>
-			<texPath>Things/Item/cocoa</texPath>
+			<texPath>Things/Food/Ingredients/Cocoa</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -121,7 +72,7 @@
 		<label>Sugarcane</label>
 		<description>Sugarcane is a type of long grass from the Sugarcane Plant. The grass stalks are rich in sucrose, which can be milled to produce Sugar.</description>
 		<graphicData>
-			<texPath>Things/Veg/sugarcane</texPath>
+			<texPath>Things/Food/Ingredients/Sugarcane</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -149,7 +100,7 @@
 		<label>Tobacco Leaves</label>
 		<description>Raw Tobacco Leaves from a Tobacco Plant. Not recommended for eating. Tobacco can be rolled and smoked as a stimulating drug. They are addicting and are associated with a number of health problems for long term use.</description>
 		<graphicData>
-			<texPath>Things/Item/RawTobacco</texPath>
+			<texPath>Things/Food/Drugs/Tobacco</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -172,7 +123,6 @@
 		</comps>
 		<stackLimit>100</stackLimit>
 	</ThingDef>
-
 
 	<!-- Disabled because it duplicates regular flour products -->
 	<!-- <ThingDef ParentName="SK_RoughPlantBase">
@@ -209,7 +159,7 @@
 		<label>coffee berries</label>
 		<description>Raw coffee berries from a Coffee Plant. It should be dried, roasted, pulverized before use and only then brewed.</description>
 		<graphicData>
-			<texPath>Things/Veg/RawCoffee</texPath>
+			<texPath>Things/Food/Ingredients/CoffeeBeans</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -233,13 +183,12 @@
 		<stackLimit>100</stackLimit>
 	</ThingDef>
 
-
 	<ThingDef ParentName="SK_RoughPlantBase">
 		<defName>RawTea</defName>
 		<label>Tea Leaves</label>
 		<description>Tea Leaves from a Tea Shrub. When brewed with water, it produces a relaxing beverage called Tea.</description>
 		<graphicData>
-			<texPath>Things/Item/tea</texPath>
+			<texPath>Things/Food/Ingredients/Tea</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>

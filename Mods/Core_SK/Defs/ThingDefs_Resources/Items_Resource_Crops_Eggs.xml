@@ -5,7 +5,7 @@
 
 	<ThingDef Abstract="True" Name="SK_EggBase" ParentName="SK_OrganicProductBase">
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<texPath>Things/Food/Eggs/EggSmall</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ingestible>
@@ -65,7 +65,7 @@
 		<label>Raptor Egg (Unfertilized)</label>
 		<description>An unfertilized egg of a Raptor.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<texPath>Things/Food/Eggs/EggOval</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(245,100,245)</color>
 		</graphicData>
@@ -86,7 +86,7 @@
 		<description>A fertilized egg of a Raptor. If all goes well, it should hatch into a Baby Raptor. Eggs can be eaten raw, but are much better when cooked.</description>
 		<tickerType>Normal</tickerType>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<texPath>Things/Food/Eggs/EggOval</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(245,100,245)</color>
 		</graphicData>
@@ -117,7 +117,7 @@
 		<label>Fenix Egg (Unfertilized)</label>
 		<description>An unfertilized egg of a Fenix.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<texPath>Things/Food/Eggs/EggOval</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(199,138,25)</color>
 		</graphicData>
@@ -138,7 +138,7 @@
 		<description>A fertilized egg of a Fenix. If Eggs can be eaten raw, but are much better when cooked.</description>
 		<tickerType>Normal</tickerType>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<texPath>Things/Food/Eggs/EggOval</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(199,138,25)</color>
 		</graphicData>
@@ -169,7 +169,7 @@
 		<label>Green wyvern Egg (Unfertilized)</label>
 		<description>An unfertilized egg of a  Green wyvern.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<texPath>Things/Food/Eggs/EggOval</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(45,120,54)</color>
 		</graphicData>
@@ -190,7 +190,7 @@
 		<description>A fertilized egg of a Green wyvern. If Eggs can be eaten raw, but are much better when cooked.</description>
 		<tickerType>Normal</tickerType>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<texPath>Things/Food/Eggs/EggOval</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(45,120,54)</color>
 		</graphicData>
@@ -221,7 +221,7 @@
 		<label>Behir Egg (Unfertilized)</label>
 		<description>An unfertilized egg of a Behir. If Eggs can be eaten raw, but are much better when cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<texPath>Things/Food/Eggs/EggOval</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(167,100,205)</color>
 		</graphicData>
@@ -242,7 +242,7 @@
 		<description>A fertilized egg of a Behir. If Eggs can be eaten raw, but are much better when cooked.</description>
 		<tickerType>Normal</tickerType>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<texPath>Things/Food/Eggs/EggOval</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(167,100,205)</color>
 		</graphicData>
@@ -273,7 +273,7 @@
 		<label>Lacosdile Egg (Unfertilized)</label>
 		<description>An unfertilized egg of a Lacosdile. Eggs can be eaten raw, but are much better when cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<texPath>Things/Food/Eggs/EggRound</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(245,100,245)</color>
 		</graphicData>
@@ -293,7 +293,7 @@
 		<description>A fertilized egg of a Lacosdile. If all goes well, it should hatch into a Baby Lacosdile. Eggs can be eaten raw, but are much better when cooked.</description>
 		<tickerType>Normal</tickerType>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<texPath>Things/Food/Eggs/EggRound</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(245,100,245)</color>
 		</graphicData>
@@ -318,7 +318,7 @@
 		<label>Nightling egg (Unfertilized)</label>
 		<description>An unfertilized Nightling egg. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/NightlingEggs</texPath>
+			<texPath>Things/Food/Eggs/EggNightling</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -337,7 +337,7 @@
 		<description>Fertilized Nightling egg. If all goes well, it should hatch into a baby Nightling. It can be eaten raw, but it's much better cooked.</description>
 		<tickerType>Normal</tickerType>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/NightlingEggs</texPath>
+			<texPath>Things/Food/Eggs/EggNightling</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -366,7 +366,7 @@
 		<label>ptarmigan egg (Unfertilized)</label>
 		<description>Unfertilized ptarmigan egg. It can be eaten raw, but it's much, much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Pawn/Animal/Ptarmigans/Egg</texPath>
+			<texPath>Things/Food/Eggs/EggPtarmigan</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(255,255,255)</color>
 		</graphicData>
@@ -382,7 +382,7 @@
 		<label>ptarmigan egg (Fertilized)</label>
 		<description>Fertilized ptarmigan egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Pawn/Animal/Ptarmigans/Egg</texPath>
+			<texPath>Things/Food/Eggs/EggPtarmigan</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(255,255,255)</color>
 		</graphicData>
