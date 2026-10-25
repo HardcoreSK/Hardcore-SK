@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="SK_ResourceVerbBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>IronWoodLogHMC</defName>
 		<label>iron wood log</label>
 		<description>Wood from genetically modified iron pine trees. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch. It can be processed into planks or kindling.</description>
@@ -9,7 +9,6 @@
 			<texPath>Things/Resource/IronWoodLog</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		<equippedAngleOffset>-20</equippedAngleOffset>
 		<soundInteract>Wood_Drop</soundInteract>
 		<soundDrop>Wood_Drop</soundDrop>
 		<tickerType>Rare</tickerType>
@@ -74,18 +73,6 @@
 		<techHediffsTags>
 			<li>Poor</li>
 		</techHediffsTags>
-		<tools>
-			<li Class="CombatExtended.ToolCE">
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>10</power>
-				<cooldownTime>2.1</cooldownTime>
-				<chanceFactor>1.33</chanceFactor>
-				<armorPenetrationBlunt>2.3</armorPenetrationBlunt>
-				<linkedBodyPartsGroup>Base</linkedBodyPartsGroup>
-			</li>
-		</tools>
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
