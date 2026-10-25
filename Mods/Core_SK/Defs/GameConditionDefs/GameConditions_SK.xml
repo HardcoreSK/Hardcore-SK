@@ -162,6 +162,7 @@
 
 	<GameConditionDef>
 		<defName>KirinColdsnap</defName>
+		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
 		<conditionClass>GameCondition_ColdSnap</conditionClass>
 		<label>Unusual cold</label>
 		<description>An unusual cold snap is freezing the region.</description>
@@ -295,6 +296,7 @@
 
 	<GameConditionDef>
 		<defName>BombardmentCondition</defName>
+		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
 		<conditionClass>SK.Events.GameCondition_Bombardment</conditionClass>
 		<label>bombardment</label>
 		<description>Enemy faction are not pleased with you.. so they will bomb you to hell.</description>
