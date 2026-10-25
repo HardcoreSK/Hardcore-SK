@@ -34,12 +34,12 @@
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
-            defName="Apparel_Psymask" 
-            or defName="Apparello_Gas" 
-            or defName="Apparello_ViperGas" 
-            or defName="Apparello_Cyninja" 
+            defName="Hat_PsyMask"
+            or defName="Hat_GasMask"
+            or defName="Hat_GasMaskElephant"
+            or defName="Hat_TacticalCover"
             or defName="Apparel_TacticalMask"
-            or defName="WeldingHelmet"
+            or defName="Helmet_Welding"
             or defName="Apparel_Respirator"
         ]/apparel/layers</xpath>
 		<value>

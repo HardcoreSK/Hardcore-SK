@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+	<!--
+    DefOverwrite list:
+    Pemmican
+    -->
+
 	<ThingDef Name="CannedBase" Abstract="True">
 		<thingClass>ThingWithComps</thingClass>
 		<category>Item</category>
@@ -55,7 +60,7 @@
 		<description>Meat that has been cured with salt.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Meal/SaltedMeat</texPath>
+			<texPath>Things/Food/SaltedMeat</texPath>
 		</graphicData>
 		<thingCategories>
 			<li>Preserves</li>
@@ -78,15 +83,14 @@
 		</ingestible>
 	</ThingDef>
 
-
 	<ThingDef ParentName="CannedNonMeatBase">
 		<defName>PickledVeg</defName>
-		<label>Pickled Vegetable</label>
+		<label>Pickled Vegetables</label>
 		<description>Vegetables that have been preserved in a salty brine.</description>
 		<possessionCount>2</possessionCount>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Meal/PickleVeg</texPath>
+			<texPath>Things/Food/PickledVegetables</texPath>
 		</graphicData>
 		<thingCategories>
 			<li>Preserves</li>
@@ -111,11 +115,11 @@
 
 	<ThingDef ParentName="CannedNonMeatBase">
 		<defName>ExtraCannedFood</defName>
-		<label>Extra Canned Meal</label>
+		<label>Canned Meal (Extra)</label>
 		<description>A meal preserved in cans to prevent it from going bad.</description>
 		<possessionCount>2</possessionCount>
 		<graphicData>
-			<texPath>Things/Item/canveg</texPath>
+			<texPath>Things/Food/CannedFoodVeg</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingCategories>
@@ -145,11 +149,11 @@
 
 	<ThingDef ParentName="CannedNonMeatBase">
 		<defName>BasicCannedFood</defName>
-		<label>Basic Canned Meal</label>
+		<label>Canned Meal (Basic)</label>
 		<description>A meal preserved in cans to prevent it from going bad.</description>
 		<possessionCount>2</possessionCount>
 		<graphicData>
-			<texPath>Things/Item/canveg</texPath>
+			<texPath>Things/Food/CannedFoodVeg</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingCategories>
@@ -178,14 +182,13 @@
 		<stackLimit>300</stackLimit>
 	</ThingDef>
 
-
 	<ThingDef ParentName="CannedMeatBase">
 		<defName>MetalCannedMeat_prime</defName>
-		<label>Canned prime meat</label>
+		<label>Canned Meat (Prime)</label>
 		<description>Prime meat preserved in cans to prevent it from going bad.</description>
 		<possessionCount>2</possessionCount>
 		<graphicData>
-			<texPath>Things/Item/canmeat_prime</texPath>
+			<texPath>Things/Food/CannedFoodMeatPrime</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingCategories>
@@ -215,11 +218,11 @@
 
 	<ThingDef ParentName="CannedMeatBase">
 		<defName>MetalCannedMeat_raw</defName>
-		<label>Canned raw meat</label>
+		<label>Canned Meat (Simple)</label>
 		<description>Meat preserved in cans to prevent it from going bad.</description>
 		<possessionCount>2</possessionCount>
 		<graphicData>
-			<texPath>Things/Item/canmeat_raw</texPath>
+			<texPath>Things/Food/CannedFoodMeatRaw</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingCategories>
@@ -252,7 +255,7 @@
 		<label>Dried Fruit</label>
 		<description>Fruit that has had the water removed to increase it's shelf life.</description>
 		<graphicData>
-			<texPath>Things/Item/Meal/Meal_Driedfruit</texPath>
+			<texPath>Things/Food/Driedfruit</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingCategories>
@@ -286,7 +289,7 @@
 		<label>Jerky</label>
 		<description>Jerky made from raw meat. Max 10 eaten at a time.</description>
 		<graphicData>
-			<texPath>Things/Item/Meal/grilledmeat</texPath>
+			<texPath>Things/Food/GrilledMeat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingCategories>
@@ -315,48 +318,4 @@
 		</comps>
 	</ThingDef>
 
-	<!-- <ThingDef ParentName="SK_MealBaseIngredientless">
-		<defName>Pemmican</defName>
-		<label>Pemmican</label>
-		<description>A preserved mashed mixture of fat and plant food. Tastes bland, but not offensive. It lasts a very long time without refrigeration. Great for traveling.</description>
-		<thingClass>ThingWithComps</thingClass>
-		<graphicData>
-			<texPath>Things/Item/Resource/Pemmican</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-		</graphicData>
-		<socialPropernessMatters>true</socialPropernessMatters>
-		<statBases>
-			<MarketValue>3.5</MarketValue>
-			<WorkToMake>600</WorkToMake>
-			<Mass>0.03</Mass>
-			<Bulk>0.06</Bulk>
-			<Nutrition>0.05</Nutrition>
-		</statBases>
-		<thingCategories>
-			<li>Preserves</li>
-		</thingCategories>
-		<ingestible>
-			<foodType>Meal</foodType>
-			<preferability>MealAwful</preferability>
-			<ingestEffect>EatVegetarian</ingestEffect>
-			<ingestSound>Meal_Eat</ingestSound>
-			<optimalityOffsetHumanlikes>15</optimalityOffsetHumanlikes>
-			<maxNumToIngestAtOnce>12</maxNumToIngestAtOnce>
-		</ingestible>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>80</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-			<li Class="CompProperties_Ingredients">
-				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
-			</li>
-		</comps>
-		<stackLimit>150</stackLimit>
-		<thingSetMakerTags>
-			<li>HSKhumanitarianSuppliesTierOne</li>
-		</thingSetMakerTags>
-	</ThingDef>
-
- -->
 </Defs>

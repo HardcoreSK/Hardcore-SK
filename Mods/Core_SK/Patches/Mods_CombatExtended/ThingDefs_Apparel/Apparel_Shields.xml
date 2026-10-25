@@ -14,17 +14,23 @@
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="CE_Apparel_BallisticShield"]</xpath>
 		<value>
+            <graphicData>
+                <texPath>Things/Apparel/Shields/ShieldBallistic</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+            </graphicData>
 			<stuffCategories>
 				<li>StrongMetallic</li>
 			</stuffCategories>
 			<costStuffCount>50</costStuffCount>
 			<costList>
 				<ComponentIndustrial>5</ComponentIndustrial>
-				<Kevlar>15</Kevlar>
+				<Kevlar>25</Kevlar>
 			</costList>
 			<statBases>
+                <Flammability>0.0</Flammability>
 				<WorkToMake>14000</WorkToMake>
-				<MaxHitPoints>130</MaxHitPoints>
+				<MaxHitPoints>200</MaxHitPoints>
 				<Mass>13</Mass>
 				<Bulk>16</Bulk>
 				<WornBulk>10</WornBulk>
@@ -32,13 +38,13 @@
 				<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
 				<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
 				<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
-				<ArmorRating_Sharp>8</ArmorRating_Sharp>
+				<ArmorRating_Sharp>11.4</ArmorRating_Sharp>
 				<ArmorRating_Blunt>28.8</ArmorRating_Blunt>
-				<ArmorRating_Heat>0.1</ArmorRating_Heat>
+				<ArmorRating_Heat>0.3</ArmorRating_Heat>
 			</statBases>
 			<equippedStatOffsets>
-				<MoveSpeed>-0.01</MoveSpeed>
-				<WorkSpeedGlobal>-0.01</WorkSpeedGlobal>
+				<MoveSpeed>-0.1</MoveSpeed>
+				<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
 				<ReloadSpeed>-0.3</ReloadSpeed>
 				<MeleeHitChance>-0.9</MeleeHitChance>
 				<ShootingAccuracyPawn>-0.4</ShootingAccuracyPawn>
@@ -47,6 +53,7 @@
 				<MeleeCritChance>-0.2</MeleeCritChance>
 				<MeleeParryChance>1.0</MeleeParryChance>
 			</equippedStatOffsets>
+            <generateCommonality>2</generateCommonality>
 			<apparel Merge="true">
 				<tags>
 					<li>BallisticShield</li>
@@ -54,28 +61,11 @@
 				</tags>
 				<useDeflectMetalEffect>true</useDeflectMetalEffect>
 			</apparel>
-			<colorGenerator Class="ColorGenerator_Options">
-				<options>
-					<li>
-						<weight>10</weight>
-						<only>(0.33,0.33,0.33,1)</only>
-					</li>
-					<li>
-						<weight>10</weight>
-						<only>(0.65,0.65,0.65,1)</only>
-					</li>
-					<li>
-						<weight>6</weight>
-						<min>(0.3,0.3,0.3,1)</min>
-						<max>(0.5,0.5,0.5,1)</max>
-					</li>
-				</options>
-			</colorGenerator>
 			<thingCategories>
 				<li>ShieldCat</li>
 				<li>SetCombatarmor</li>
 				<li>SetSecurity</li>
-				<li>SetInteractor</li>
+				<!--<li>SetInteractor</li>-->
 			</thingCategories>
 			<recipeMaker>
 				<workSpeedStat>SmithingSpeed</workSpeedStat>
@@ -83,7 +73,7 @@
 				<effectWorking>Smith</effectWorking>
 				<soundWorking>Recipe_Machining</soundWorking>
 				<recipeUsers>
-					<li>ElectricTailoringBench</li>
+					<li>ElectricSmithy</li>
 				</recipeUsers>
 				<researchPrerequisite>FlakArmor</researchPrerequisite>
 				<unfinishedThingDef>UnfinishedShield</unfinishedThingDef>
@@ -97,6 +87,8 @@
 						<li>LeftShoulder</li>
 						<li>Torso</li>
 						<li>Neck</li>
+						<li>FullHead</li>
+                        <li>Legs</li>
 					</shieldCoverage>
 					<crouchCoverage>
 						<li>Hands</li>
@@ -110,5 +102,12 @@
 				</li>
 			</modExtensions>
 		</value>
+	</Operation>
+    
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Apparel_BallisticShield"]/apparel/renderNodeProperties/li/texPath</xpath>
+		<value>
+            <texPath>Things/Apparel/Shields/ShieldBallistic</texPath>
+        </value>
 	</Operation>
 </Patch>

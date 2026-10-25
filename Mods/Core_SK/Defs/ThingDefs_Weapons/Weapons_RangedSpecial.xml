@@ -33,6 +33,7 @@
 			<li>CE_Bow</li>
 		</weaponTags>
 		<weaponClasses>
+			<li>Neolithic</li>
 			<li>ShortShots</li>
 		</weaponClasses>
 		<verbs>
@@ -60,6 +61,78 @@
 			<li>Specialranged</li>
 		</thingCategories>
 		<rotateInShelves>false</rotateInShelves>
+	</ThingDef>
+    
+	<!-- sling	-->
+	<ThingDef ParentName="RangedWeaponNeolithicBase">
+		<defName>Sling</defName>
+		<label>sling</label>
+		<description>A simple sling from leathery or fabric stuff. It was made with skill from primitive technology.\nIgnores shield belts.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Special/Sling</texPath>
+			<graphicClass>SK.Graphic_SingleNoColor</graphicClass>
+		</graphicData>
+		<soundInteract>Bow_Small</soundInteract>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+		<costList>
+			<ComponentMedieval>1</ComponentMedieval>
+		</costList>
+		<equippedAngleOffset>-80</equippedAngleOffset>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MaxHitPoints>50</MaxHitPoints>
+			<SightsEfficiency>0.6</SightsEfficiency>
+			<ShotSpread>1.25</ShotSpread>
+			<SwayFactor>1.5</SwayFactor>
+			<Bulk>1.5</Bulk>
+			<Mass>0.9</Mass>
+			<RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+		</statBases>
+		<tradeability>Sellable</tradeability>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+			<li>CE_Bow</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Neolithic</li>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<techLevel>Neolithic</techLevel>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_SlingBall_Stone</defaultProjectile>
+				<warmupTime>0.35</warmupTime>
+				<range>19.1</range>
+				<soundCast>ThrowGrenade</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<ammoSet>AmmoSet_SlingBall</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<noSnapshot>True</noSnapshot>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>0.7,0.7</DrawSize>
+			</li>
+		</modExtensions>
+		<recipeMaker>
+			<researchPrerequisite>Craft_0</researchPrerequisite>
+		</recipeMaker>
+		<thingCategories>
+			<li>Specialranged</li>
+		</thingCategories>
 	</ThingDef>
 
 </Defs>

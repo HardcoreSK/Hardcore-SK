@@ -10,6 +10,8 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="ButcherSpot"]</xpath>
         <value>
+            <fillPercent>0</fillPercent>
+            <pathCost>0</pathCost>
             <inspectorTabs DeepReplace="true" />
             <graphicData>
                 <texPath>Things/Building/ProductionFood/CuttingPlace</texPath>
@@ -305,6 +307,9 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="Hopper"]</xpath>
         <value>
+            <researchPrerequisites>
+                <li>MicroelectronicsBasics</li>
+            </researchPrerequisites>
             <description>Holds resources for the nutrient paste dispenser or fertilizer machine.</description>
             <graphicData>
                 <texPath>Things/Building/Misc/hopper</texPath>
@@ -725,6 +730,8 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="FueledSmithy"]</xpath>
         <value>
+            <minifiedDef IsNull="true" />
+            <thingCategories IsNull="true" />
             <inspectorTabs DeepReplace="true" />
             <label>blacksmith</label>
             <description>This blacksmithing setup has all the tools needed to build metal armor, work tools, melee weapons, advanced bows and crossbows, as well as simple ammunition such as arrows. It requires some fuel that burns at a high temperature such as coal or peat.</description>
@@ -964,6 +971,8 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="CraftingSpot"]</xpath>
         <value>
+            <useHitPoints>true</useHitPoints>
+            <altitudeLayer>Building</altitudeLayer>
             <inspectorTabs DeepReplace="true" />
             <label>craftsman table</label>
             <description>A place for crafting simple things like shivs or bows.</description>

@@ -6,7 +6,7 @@
 		<label>bread</label>
 		<description>A freshly baked loaf of bread.</description>
 		<graphicData>
-			<texPath>Things/Item/Meal/Meal_Bread</texPath>
+			<texPath>Things/Food/Bread</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -35,7 +35,7 @@
 		<label>pizza</label>
 		<description>Masterfully made pizza with many different ingredients. \n\nLowers pain\nImproves consciousness\nReduces incoming damage</description>
 		<graphicData>
-			<texPath>Things/Item/Meal/Meal_Pizza</texPath>
+			<texPath>Things/Food/Pizza</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -73,7 +73,7 @@
 		<label>taffy</label>
 		<description>A sweet, chewy candy.</description>
 		<graphicData>
-			<texPath>Things/Item/Meal/Meal_Taffy</texPath>
+			<texPath>Things/Food/Taffy</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -106,7 +106,7 @@
 		<label>cookie</label>
 		<description>Freshly baked cookies!</description>
 		<graphicData>
-			<texPath>Things/Item/cookie</texPath>
+			<texPath>Things/Food/Cookie</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -121,7 +121,6 @@
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<comps>
 			<li Class="CompProperties_Rottable">
-
 				<daysToRotStart>4</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
@@ -155,7 +154,6 @@
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<comps>
 			<li Class="CompProperties_Rottable">
-
 				<daysToRotStart>4</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
@@ -171,12 +169,45 @@
 		</ingestible>
 	</ThingDef>
 
+	<ThingDef ParentName="SK_MealBase">
+		<defName>PotatoPie</defName>
+		<label>Potato pies</label>
+		<description>A small nutritious pies with mashed potatoes inside.</description>
+		<graphicData>
+			<texPath>Things/Food/PotatoPie</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>22</MarketValue>
+			<WorkToMake>700</WorkToMake>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>10</DeteriorationRate>
+			<Nutrition>1.1</Nutrition>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>MealLavish</preferability>
+			<joy>0.2</joy>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<joyKind>Gluttonous</joyKind>
+		</ingestible>
+	</ThingDef>
+
 	<ThingDef ParentName="SweetMealBase">
 		<defName>SweetBun</defName>
 		<label>sweet bun</label>
-		<description>A sweet roll covered in sugary icing. \n\nFood Effects: Consciousness and Moving.</description>
+		<description>A sweet roll covered in sugary icing.\n\nFood Effects: Consciousness and Moving.</description>
 		<graphicData>
-			<texPath>Things/Item/Meal/Meal_SweetBun</texPath>
+			<texPath>Things/Food/SweetBun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -191,7 +222,6 @@
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<comps>
 			<li Class="CompProperties_Rottable">
-
 				<daysToRotStart>4</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>

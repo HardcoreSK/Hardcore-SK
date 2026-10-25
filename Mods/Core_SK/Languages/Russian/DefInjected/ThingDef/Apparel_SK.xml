@@ -245,19 +245,32 @@
 
     <!--Shields-->
 
-    <Shield_Tribal.label>Щит туземца</Shield_Tribal.label>
-    <Shield_Tribal.description>Легкий, но быстро приходит в негодность.</Shield_Tribal.description>
+    <Shield_Tribal.label>примитивный щит</Shield_Tribal.label>
+    <Shield_Tribal.description>Легкий, сделанный на коленке щит, использующийся местными племенами. Хлипкий, быстро приходит в негодность.</Shield_Tribal.description>
 
-    <Shield_Bone.label>Костяной щит</Shield_Bone.label>
+    <Shield_Kite.label>каплевидный щит</Shield_Kite.label>
+    <Shield_Kite.description>Базовый деревянный щит, использующийся местными племенами.</Shield_Kite.description>
 
-    <Shield_Buckler.label>Баклер</Shield_Buckler.label>
-    <Shield_Buckler.description>Баклер чаще всего небольшой металлический круглый щит. У баклера только одна рукоятка, которую сжимают в кулаке, из-за чего их называют «кулачными щитами».</Shield_Buckler.description>
+    <Shield_Viking.label>норбальский щит</Shield_Viking.label>
+    <Shield_Viking.description>Красивый деревянный щит с кожаной окантовкой и металлической центральной частью; такие часто используют более состоятельные воины местных племён.</Shield_Viking.description>
 
-    <Shield_Medieval.label>Треугольный щит</Shield_Medieval.label>
-    <Shield_Medieval.description>Вытянутый геральдический треугольный щит.</Shield_Medieval.description>
+    <Shield_Rimmed.label>укрепленный щит</Shield_Rimmed.label>
+    <Shield_Rimmed.description>Более прочная версия норбальского щита — с металлическим ободом для повышенной долговечности.</Shield_Rimmed.description>
+    
+    <Shield_Buckler.label>баклер</Shield_Buckler.label>
+    <Shield_Buckler.description>Баклер - небольшой металлический круглый щит для маневренного боя. У баклера только одна рукоятка, которую сжимают в кулаке, из-за чего их называют «кулачными щитами».</Shield_Buckler.description>
 
-    <BallisticShield.label>Бронещит</BallisticShield.label>
-    <BallisticShield.description>Большой - во весь рост, противоударный, противопульный тактический бронещит.</BallisticShield.description>
+    <Shield_Medieval.label>треугольный щит</Shield_Medieval.label>
+    <Shield_Medieval.description>Вытянутый геральдический треугольный щит. В Империи часто является частью церемониального боевого комплекта и имеет вычурное название "экю".</Shield_Medieval.description>
+
+    <Shield_Heavy.label>тяжелый щит</Shield_Heavy.label>
+    <Shield_Heavy.description>Массивный металлический щит, созданный для защиты от всего ценой своего веса. Держать его под силу лишь сильнейшим воинам.</Shield_Heavy.description>
+
+    <CE_Apparel_BallisticShield.label>баллистический щит</CE_Apparel_BallisticShield.label>
+    <CE_Apparel_BallisticShield.description>Ростовой противоударный и противопулевой тактический щит против умеренного огня или тяжелого оружия ближнего боя.</CE_Apparel_BallisticShield.description>
+    
+    <Shield_Spacer.label>силовой щит</Shield_Spacer.label>
+    <Shield_Spacer.description>Этот щит представлет из себя развитие идей баллистических щитов, только более прочных и легких. Выдерживает практически любой огонь пехотного калибра.</Shield_Spacer.description>
     
     <!--CE-->
 
@@ -660,4 +673,10 @@
     <Boots_Speed.label>скоростные сапоги</Boots_Speed.label>
     <Boots_Speed.description>Созданы исключительно для быстрого перемещения и прыжков, как у кролика.</Boots_Speed.description>
 
+    <!-- EN: 이것은 JE-257A1"아인헤랴르" 백병전 전투 갑옷 세트의 일부입니다. 이것은 JE-342A7"드워프"갑옷을 개조해 두꺼운 갑옷 플레이트중 일부를 제거하여 근접 전투에서 효율을 더 내기 위해 만들어졌습니다. -->
+    <Armor_CQC.description>Часть комплекта штурмовой боевой брони JE-257A1 "Эйнхерий". Создана путём модификации брони JE-342A7 "Дверг" с удалением части массивных бронепластин для большей подвижности и эффективности в ближнем бою.</Armor_CQC.description>
+    <!-- EN: 이것은 JE-342A7"드워프" 공성 갑옷 세트의 일부입니다. 이 갑옷은 공성전에서 성벽을 돌파하는 용도 딱 하나만을 생각하고 만들어진 갑옷입니다. -->
+    <Armor_Siege.description>Часть комплекта осадной брони JE-342A7 "Дверг". Эта броня разработана исключительно для одной цели - сокрушительного прорыва крепостных стен в ходе осады.</Armor_Siege.description>
+    <!-- EN: 원시 부족민들이 착용하는 나무로 만든 방패입니다. -->
+    <Shield_Bone.description>Щит примитивных племён, изготовленный из кости и дерева.</Shield_Bone.description>
 </LanguageData>

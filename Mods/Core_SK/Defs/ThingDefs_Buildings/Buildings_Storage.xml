@@ -2746,7 +2746,85 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 		<!--<stackOffsetEast>(0,-0.02,0.6)</stackOffsetEast> (distance between horizontal,?,distance between vertical) -->
 		<!--<drawOffsetEast>(-0.15,2.05,0.45)</drawOffsetEast> (x -left & right, y - layer, z - up & down) -->
 	</AdaptiveStorage.GraphicsDef>
-	
+    
+    <!--HayBale-->
+	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
+		<defName>HayBale</defName>
+		<label>Hay bale</label>
+		<description>The simplest method of storing hay known to man—aside from just piling it up.</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/Storage/HayBale/HayBale</texPath>
+			<drawSize>(1.3,1.3)</drawSize>
+			<shadowData>				
+				<volume>(0.7,0.4,0.7)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<uiIconPath>Things/Building/Storage/HayBale/HayBale_east</uiIconPath>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>2</Flammability>
+			<Beauty>3</Beauty>
+			<Mass>15</Mass>
+		</statBases>
+		<pathCost>100</pathCost>
+		<costList>
+			<Hay>30</Hay>
+		</costList>
+		<building>
+			<maxItemsInCell>3</maxItemsInCell>
+			<preventDeteriorationOnTop>false</preventDeteriorationOnTop>
+			<fixedStorageSettings>
+				<filter>
+					<thingDefs>
+						<li>Hay</li>
+						<li>Rawwheat</li>
+						<li>Silage</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<filter>
+					<thingDefs>
+						<li>Hay</li>
+						<li>Rawwheat</li>
+						<li>Silage</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="SK.CompProperties_RotModified">
+				<rotmodifier>0.75</rotmodifier>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>Storage_A1</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+    <AdaptiveStorage.GraphicsDef>
+		<defName>HayBaleASF</defName>
+		<targetDef>HayBale</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Building/Storage/HayBale/HayBale</texPath>
+                    <drawSize>(1.3,1.3)</drawSize>
+                    <shadowData>				
+                        <volume>(0.7,0.4,0.7)</volume>
+                        <offset>(0,0,0)</offset>
+                    </shadowData>
+                </graphicData>
+            </li>
+        </graphics>
+		<showContainedItems>false</showContainedItems>
+	</AdaptiveStorage.GraphicsDef>
+
     <AdaptiveStorage.GraphicsDef>
 		<defName>ShelfASF</defName>
 		<targetDef>Shelf</targetDef>
@@ -3054,7 +3132,7 @@ This template demonstrates that whitespace is obeyed in the description.\n\nSo a
 	</AdaptiveStorage.GraphicsDef>
 -->
 	<!--Root Cellar- outdoors only, diggable terrain-->
-	<ThingDef ParentName="AdaptiveStorageMinifiableBase">
+	<ThingDef ParentName="AdaptiveStorageBase">
 		<defName>RootCellar</defName>
 		<label>root cellar</label>
 		<description>A cellar dug into the ground to keep produce cool and dry. Reduces spoilage by 40%. Slow to store and retrieve items, since it takes a bit of time to "root" around in there. Can store up to 27 items but takes of 3x3 space.</description>

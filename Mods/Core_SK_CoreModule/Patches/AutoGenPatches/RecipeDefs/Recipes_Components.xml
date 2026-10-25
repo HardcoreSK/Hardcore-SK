@@ -99,4 +99,12 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/RecipeDef[defName="Make_ComponentIndustrial"]/unfinishedThingDef</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/RecipeDef[defName="Make_ComponentSpacer"]/unfinishedThingDef</xpath>
+  </Operation>
+
 </Patch>

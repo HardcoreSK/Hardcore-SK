@@ -1,23 +1,38 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-    <GravshipWindow.label>окно гравикорабля</GravshipWindow.label>
-    <GravshipWindow.description>Прочная герметичная прозрачная стена, предотвращающая утечку кислорода в вакууме. Эта стена непосредственно интегрируется с надстройкой, поэтому может быть построена только на гравикорабле.</GravshipWindow.description>
-    
-    <AntimatterReactorGrav.label>мини-реактор антиматерии</AntimatterReactorGrav.label>
-    <AntimatterReactorGrav.description>Антивещество содержится отдельно от обычной материи магнитными полями, так что нет опасности непредвиденного слияния материи с антивеществом, при реакции которых высвобождается колоссальное количество энергии.\nУменьшенная версия для гравикораблей. Очень хрупкий. Выделяет больше тепла, чем стандартная версия.\nМакс. энерговыработка: 35,000 W.</AntimatterReactorGrav.description>
-    
-    <FueledPowerCellGrav.label>топливная энергоячейка</FueledPowerCellGrav.label>
-    <FueledPowerCellGrav.description>Небольшой и не очень эффективный источник энергии для гравикораблей. На современных кораблях он используется в основном для обеспечения основных потребностей корабля в случае чрезвычайной ситуации. Выделяет небольшое количество тепла.\nМакс. энерговыработка: 1,200 W.</FueledPowerCellGrav.description>
-  
-    <ChemfuelTank.label>малый топливный бак</ChemfuelTank.label>
-    <ChemfuelTank.description>Бак для хранения топлива, обеспечивающий двигатели гравикорабля.</ChemfuelTank.description>
-    <ChemfuelTank.comps.CompRefuelable.fuelGizmoLabel>Топливо</ChemfuelTank.comps.CompRefuelable.fuelGizmoLabel>
-    <ChemfuelTank.comps.CompRefuelable.fuelLabel>Топливо</ChemfuelTank.comps.CompRefuelable.fuelLabel>
-  
-    <LargeChemfuelTank.label>большой топливный бак</LargeChemfuelTank.label>
-    <LargeChemfuelTank.description>Огромный бак для хранения топлива, обеспечивающий двигатели гравикорабля.</LargeChemfuelTank.description>
-    <LargeChemfuelTank.comps.CompRefuelable.fuelGizmoLabel>Топливо</LargeChemfuelTank.comps.CompRefuelable.fuelGizmoLabel>
-    <LargeChemfuelTank.comps.CompRefuelable.fuelLabel>Топливо</LargeChemfuelTank.comps.CompRefuelable.fuelLabel>
-  
+  <!-- EN: hull window -->
+  <GravshipWindow.label>окно гравикорабля</GravshipWindow.label>
+
+  <!-- EN: A strong airtight transparent wall that prevents oxygen leaks in the vacuum of space. The wall connects directly into the underlying substructure, meaning it can only be built on a gravship. -->
+  <GravshipWindow.description>Прочная герметичная прозрачная стена, предотвращающая утечку кислорода в вакууме. Эта стена непосредственно интегрируется с надстройкой, поэтому может быть построена только на гравикорабле.</GravshipWindow.description>
+
+  <!-- EN: gravship antimatter reactor -->
+  <AntimatterReactorGrav.label>реактор антиматерии гравикорабля</AntimatterReactorGrav.label>
+
+  <!-- EN: The contained antimatter is separated from ordinary matter by magnetic fields, preventing unintended reactions. The energy is then extracted in much the same way that nuclear reactors capture the heat and light energy released by fission reactions.\nSmaller version of regular antimatter reactor specifically for gravship. Very fragile. Exhaust more heat than regular version.\nMax. power output: 35,000 W. -->
+  <AntimatterReactorGrav.description>Антивещество содержится отдельно от обычной материи магнитными полями, предотвращая непредвиденные реакции. Энергия извлекается так же, как ядерные реакторы улавливают тепловую и световую энергию, выделяющуюся при реакциях деления.\nУменьшенная версия обычного реактора антиматерии специально для гравикорабля. Очень хрупкий. Выделяет больше тепла, чем обычная версия.\nМакс. энерговыработка: 35,000 W.</AntimatterReactorGrav.description>
+
+  <!-- EN: fueled power cell -->
+  <FueledPowerCellGrav.label>топливный генератор</FueledPowerCellGrav.label>
+
+  <!-- EN: A small and not very efficient power source for grav ships. On modern ships, it is used primarily to provide the ship's basic needs in case of emergency. Exhaust a little bit of heat.\nMax. power output: 1,000 W. -->
+  <FueledPowerCellGrav.description>Небольшой и не очень эффективный источник энергии для гравикораблей. На современных кораблях он используется в первую очередь для обеспечения базовых нужд корабля в чрезвычайных ситуациях. Выделяет немного тепла.\nМакс. энерговыработка: 1,000 W.</FueledPowerCellGrav.description>
+
+  <ChemfuelTank.label>малый топливный бак</ChemfuelTank.label>
+
+  <ChemfuelTank.description>Бак для хранения топлива, обеспечивающий двигатели гравикорабля.</ChemfuelTank.description>
+
+  <ChemfuelTank.comps.CompRefuelable.fuelGizmoLabel>Топливо</ChemfuelTank.comps.CompRefuelable.fuelGizmoLabel>
+
+  <ChemfuelTank.comps.CompRefuelable.fuelLabel>Топливо</ChemfuelTank.comps.CompRefuelable.fuelLabel>
+
+  <LargeChemfuelTank.label>большой топливный бак</LargeChemfuelTank.label>
+
+  <LargeChemfuelTank.description>Огромный бак для хранения топлива, обеспечивающий двигатели гравикорабля.</LargeChemfuelTank.description>
+
+  <LargeChemfuelTank.comps.CompRefuelable.fuelGizmoLabel>Топливо</LargeChemfuelTank.comps.CompRefuelable.fuelGizmoLabel>
+
+  <LargeChemfuelTank.comps.CompRefuelable.fuelLabel>Топливо</LargeChemfuelTank.comps.CompRefuelable.fuelLabel>
+
 </LanguageData>
