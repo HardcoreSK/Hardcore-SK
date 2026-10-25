@@ -140,6 +140,55 @@
 	</RecipeDef>
 
 	<RecipeDef>
+		<defName>MakePotatoPie</defName>
+		<label>bake potato pies</label>
+		<description>Bake nutritious potato pies. Produces 5.</description>
+		<jobString>Baking potato pies.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Flour</li>
+					</thingDefs>
+				</filter>
+				<count>0.25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawPotatoes</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Flour</li>
+				<li>RawPotatoes</li>
+			</thingDefs>
+			<specialFiltersToDisallow>
+				<li>AllowRotten</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<products>
+			<PotatoPie>5</PotatoPie>
+		</products>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<researchPrerequisite>Bakery_B1</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
 		<defName>MakeTaffy</defName>
 		<label>cook taffy candies</label>
 		<description>Turns sugar into taffy. Taffy is a type of sweet, chewable candy. Produces 5.</description>
