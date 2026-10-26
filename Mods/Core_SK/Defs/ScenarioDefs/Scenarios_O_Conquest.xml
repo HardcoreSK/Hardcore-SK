@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>DesertersConquest</defName>
+		<label>Conquest</label>
+		<description>You were an officer of the Empire until the day you walked away from a war you no longer believed in. Your best soldiers followed you, and together you vanished.\n\nThe Empire caught up with you, and the sentence for desertion was prison for the whole squad. Then it made another offer: a squad this good is too valuable to rot in a cell. Wipe out every hostile faction on a remote rimworld, and the charges are dropped.\n\nYou accepted.</description>
+		<scenario>
+			<summary>Seven deserters of the Empire's finest squad, pardoned on one condition: planet conquest.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>PlayerColony</factionDef>
+			</playerFaction>
+			<parts>
+				<!-- Диалог с лором -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>The Empire's offer was simple: destroy every hostile faction on this world, and the desertion charges disappear. Your squad has the skills, the gear and nothing left to lose. Make this rimworld yours.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+				<!-- Пешки -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+					<def>ConfigurePawnsKindDefs</def>
+					<pawnChoiceCount>0</pawnChoiceCount>
+					<leftBehindPawnKind>Player_DeserterRifleman</leftBehindPawnKind>
+					<kindCounts>
+						<li>
+							<kindDef>Player_DeserterMedic</kindDef>
+							<count>1</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+						<li>
+							<kindDef>Player_DeserterSniper</kindDef>
+							<count>1</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+						<li>
+							<kindDef>Player_DeserterRifleman</kindDef>
+							<count>4</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+						<li>
+							<kindDef>Player_DeserterAssault</kindDef>
+							<count>1</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+					</kindCounts>
+				</li>
+				<!-- Падаем дропподами по легенде -->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+					<!--<visible>false</visible>-->
+				</li>
+				<!-- Немного руин старых, меньше обычного -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>ShipChunk</thingDef>
+					<count>9</count>
+					<allowRoofed>false</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>ShipMechChunk</thingDef>
+					<count>4</count>
+					<allowRoofed>false</allowRoofed>
+				</li>
+				<!-- Стандартные вещи для развития -->
+                <li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>140</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>DeployableTentBig</thingDef>
+					<stuff>Synthread</stuff>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>BagBed</thingDef>
+					<stuff>Synthread</stuff>
+					<count>7</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>TFJ_Tool_Multitool</thingDef>
+					<stuff>Plasteel</stuff>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>24</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineUltratech</thingDef>
+					<count>8</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Ammo_556x45mmNATO_FMJ</thingDef>
+					<count>1500</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Ammo_762x39mmSoviet_FMJ</thingDef>
+					<count>1500</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Ammo_9x19mmPara_FMJ</thingDef>
+					<count>1500</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Ammo_45ACP_FMJ</thingDef>
+					<count>1500</count>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+</Defs>
