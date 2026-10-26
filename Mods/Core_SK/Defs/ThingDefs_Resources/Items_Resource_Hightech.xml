@@ -2,13 +2,12 @@
 <Defs>
 	<!--=============== Antimatter ====================-->
 
-
 	<ThingDef ParentName="ResourceBase">
 		<defName>Antimatter</defName>
 		<label>AntiMatter</label>
 		<description>AntiMatter in the form of anti-atoms is one of the most difficult materials to produce. AntiMatter in the form of individual anti-particles however, is commonly produced by particle accelerators and in some types of radioactive decay.</description>
 		<graphicData>
-			<texPath>Things/Building/Production/HadronCollider/Antimatter</texPath>
+			<texPath>Things/Item/Resource/Antimatter</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stackLimit>75</stackLimit>
@@ -44,9 +43,7 @@
 		</thingCategories>
 	</ThingDef>
 
-
 	<!--=============== Magnetic material ====================-->
-
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>MagneticMaterial</defName>
@@ -74,7 +71,6 @@
 	</ThingDef>
 
 	<!--=============== Biosynthetic material ====================-->
-
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>BiosyntheticMaterial</defName>
@@ -106,7 +102,7 @@
 		<label>HexCell</label>
 		<description>A compact energy storing device. It is generally used for powering advanced weaponry or shock absorbers in powered armor.</description>
 		<graphicData>
-			<texPath>Things/Item/HexCell</texPath>
+			<texPath>Things/Item/Resource/HexCell</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stackLimit>50</stackLimit>
