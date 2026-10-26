@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <SMQ_MaterialMultiplier>所需材料倍率：{0}</SMQ_MaterialMultiplier>
   <SMQ_WorkMultiplier>建造工作量倍率：{0}</SMQ_WorkMultiplier>
@@ -30,4 +30,15 @@
   <SMQ_CommandPlaceBlueprints>放置纪念碑蓝图</SMQ_CommandPlaceBlueprints>
   <SMQ_CommandPlaceBlueprintsDesc>将纪念碑标记转换为施工蓝图。</SMQ_CommandPlaceBlueprintsDesc>
   <SMQ_ProtectionTimeMultiplier>保护纪念碑时间倍率：{0}</SMQ_ProtectionTimeMultiplier>
+  <SMQ_CancelConstructionBeforeMoving>请先取消纪念碑蓝图或施工框架，再移动、卸下或取消标记。</SMQ_CancelConstructionBeforeMoving>
+  <SMQ_CancelConstructionBeforeSelecting>请先取消现有纪念碑蓝图或施工框架，再重新选择材料。</SMQ_CancelConstructionBeforeSelecting>
+  <SMQ_FinishInstallationFirst>请先完成或取消标记的安装、移动或卸下指令。</SMQ_FinishInstallationFirst>
+  <SMQ_ConstructionReadyAgain>纪念碑施工已中断，可以通过标记重新选择材料并放置蓝图。</SMQ_ConstructionReadyAgain>
+  <SMQ_MissingSketch>纪念碑的任务草图缺失，无法恢复建造成本。请保留存档并报告此问题。</SMQ_MissingSketch>
+  <SMQ_BlueprintPlacementFailed>无法放置纪念碑蓝图：{0}</SMQ_BlueprintPlacementFailed>
+  <SMQ_BlueprintCreationFailed>纪念碑蓝图创建失败，已保留材料选择，可以重试。详细原因已记录到日志。</SMQ_BlueprintCreationFailed>
+  <SMQ_InvestmentBeautyExplanation>建造材料总量：{0}\n材料投入对应美观度：{1}</SMQ_InvestmentBeautyExplanation>
+  <SMQ_InvestmentFocusExplanation>建造材料总量：{0}\n材料投入对应基础冥想焦点强度：{1}</SMQ_InvestmentFocusExplanation>
+  <SMQ_ConstructionInProgress>纪念碑正在施工；取消蓝图或框架后可重新选择材料。</SMQ_ConstructionInProgress>
+  <SMQ_SelectMaterialsToBuild>安装标记后，可使用放置蓝图按钮选择材料并开始建造。</SMQ_SelectMaterialsToBuild>
 </LanguageData>

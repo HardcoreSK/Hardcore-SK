@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+	<!-- EN: Required materials: {0} -->
+	<SMQ_MaterialMultiplier>Требуемые материалы: {0}</SMQ_MaterialMultiplier>
+	<!-- EN: Construction work: {0} -->
+	<SMQ_WorkMultiplier>Объём строительных работ: {0}</SMQ_WorkMultiplier>
+	<!-- EN: Multiplier changes apply to the next monument quest that is generated. -->
+	<SMQ_SettingsApplyNextQuest>Изменения множителей будут применены к следующему сгенерированному заданию на монумент.</SMQ_SettingsApplyNextQuest>
+	<!-- EN: Include archotech monuments in random textures (restart required) -->
+	<SMQ_UseArchotechTexture>Включить архотек-монументы в список случайных текстур (требуется перезапуск)</SMQ_UseArchotechTexture>
+	<!-- EN: No available options; skipped. -->
+	<SMQ_NoOptionsSkipped>Нет доступных вариантов; пропущено.</SMQ_NoOptionsSkipped>
+	<!-- EN: Monument durability: {0} -->
+	<SMQ_MaxHitPointsExplanation>Прочность монумента: {0}</SMQ_MaxHitPointsExplanation>
+	<!-- EN: Monument blueprint -->
+	<SMQ_MonumentBlueprint>Проект монумента</SMQ_MonumentBlueprint>
+	<!-- EN: Monument -->
+	<SMQ_MonumentLabel>Монумент</SMQ_MonumentLabel>
+	<!-- EN: A simple monument. Small in size, extremely sturdy, and brimming with immense energy. -->
+	<SMQ_MonumentDescription>Простой монумент. Небольшой по размеру, чрезвычайно прочный и наполненный колоссальной энергией.</SMQ_MonumentDescription>
+	<!-- EN: Monument -->
+	<SMQ_Monument>Монумент</SMQ_Monument>
+	<!-- EN: Monument blueprint -->
+	<Blueprint_SMQ_Monument>Проект монумента</Blueprint_SMQ_Monument>
+	<!-- EN: The construction blueprint for the monument. -->
+	<Blueprint_SMQ_MonumentDescription>Строительный проект монумента.</Blueprint_SMQ_MonumentDescription>
+	<!-- EN: Monument frame -->
+	<Frame_SMQ_Monument>Каркас монумента</Frame_SMQ_Monument>
+	<!-- EN: A monument under construction. -->
+	<Frame_SMQ_MonumentDescription>Строящийся монумент.</Frame_SMQ_MonumentDescription>
+	<!-- EN: Material group {0}: {1} ({2} material units) -->
+	<SMQ_MaterialGroupOption>Группа материалов {0}: {1} ({2} ед. материала)</SMQ_MaterialGroupOption>
+	<!-- EN: Material group {0}: {1} -->
+	<SMQ_MaterialGroupSummary>Группа материалов {0}: {1}</SMQ_MaterialGroupSummary>
+	<!-- EN: Unknown material -->
+	<SMQ_UnknownMaterial>Неизвестный материал</SMQ_UnknownMaterial>
+	<!-- EN: Terrain material group {0}: {1} ({2} material units) -->
+	<SMQ_TerrainGroupOption>Группа материалов покрытия {0}: {1} ({2} ед. материала)</SMQ_TerrainGroupOption>
+	<!-- EN: Terrain material group {0}: {1} ({2} material units) -->
+	<SMQ_TerrainGroupSummary>Группа материалов покрытия {0}: {1} ({2} ед. материала)</SMQ_TerrainGroupSummary>
+	<!-- EN: Select monument materials -->
+	<SMQ_MaterialSelectionTitle>Выбрать материалы для монумента</SMQ_MaterialSelectionTitle>
+	<!-- EN: Select material -->
+	<SMQ_SelectMaterial>Выбрать материал</SMQ_SelectMaterial>
+	<!-- EN: Select a material for every group. -->
+	<SMQ_SelectAllMaterials>Выберите материал для каждой группы.</SMQ_SelectAllMaterials>
+	<!-- EN: Cannot uninstall the monument before the quest is complete. -->
+	<SMQ_MonumentCannotUninstall>Нельзя демонтировать монумент до завершения задания.</SMQ_MonumentCannotUninstall>
+	<!-- EN: DEV: Complete monument test -->
+	<SMQ_DebugCompleteMonument>DEV: Завершить проверку монумента</SMQ_DebugCompleteMonument>
+	<!-- EN: Complete the monument test through the normal construction flow. -->
+	<SMQ_DebugCompleteMonumentDesc>Завершить проверку монумента по стандартному процессу строительства.</SMQ_DebugCompleteMonumentDesc>
+	<!-- EN: Monument test failed: the material plan is invalid. -->
+	<SMQ_DebugCompleteMonumentFailed>Проверка монумента не удалась: план материалов некорректен.</SMQ_DebugCompleteMonumentFailed>
+	<!-- EN: Monument frame -->
+	<SMQ_FrameLabel>Каркас монумента</SMQ_FrameLabel>
+	<!-- EN: Place monument blueprint -->
+	<SMQ_CommandPlaceBlueprints>Разместить проект монумента</SMQ_CommandPlaceBlueprints>
+	<!-- EN: Convert the marker into a monument construction blueprint. -->
+	<SMQ_CommandPlaceBlueprintsDesc>Превратить маркер в строительный проект монумента.</SMQ_CommandPlaceBlueprintsDesc>
+	<!-- EN: Monument protection time multiplier: {0} -->
+	<SMQ_ProtectionTimeMultiplier>Множитель времени защиты монумента: {0}</SMQ_ProtectionTimeMultiplier>
+	<!-- EN: Cancel the monument blueprint or frame before moving, uninstalling, or cancelling its marker. -->
+	<SMQ_CancelConstructionBeforeMoving>Отмените проект или каркас монумента перед перемещением, демонтажем или отменой маркера.</SMQ_CancelConstructionBeforeMoving>
+	<!-- EN: Cancel the existing monument blueprint or frame before selecting materials again. -->
+	<SMQ_CancelConstructionBeforeSelecting>Отмените существующий проект или каркас монумента перед повторным выбором материалов.</SMQ_CancelConstructionBeforeSelecting>
+	<!-- EN: Finish or cancel the marker installation, movement, or uninstall order first. -->
+	<SMQ_FinishInstallationFirst>Сначала завершите или отмените приказ об установке, перемещении или демонтаже маркера.</SMQ_FinishInstallationFirst>
+	<!-- EN: Monument construction has stopped. Use its marker to select materials and place a new blueprint. -->
+	<SMQ_ConstructionReadyAgain>Строительство монумента остановлено. Используйте его маркер, чтобы выбрать материалы и разместить новый проект.</SMQ_ConstructionReadyAgain>
+	<!-- EN: The monument quest sketch is missing, so construction costs cannot be recovered. Please keep this save and report the problem. -->
+	<SMQ_MissingSketch>Чертёж задания на монумент отсутствует, поэтому стоимость строительства не может быть возмещена. Пожалуйста, сохраните эту запись игры и сообщите об ошибке автору мода.</SMQ_MissingSketch>
+	<!-- EN: Cannot place the monument blueprint: {0} -->
+	<SMQ_BlueprintPlacementFailed>Невозможно разместить проект монумента: {0}</SMQ_BlueprintPlacementFailed>
+	<!-- EN: The monument blueprint could not be created. Your material selections are preserved; you can retry. Details were written to the log. -->
+	<SMQ_BlueprintCreationFailed>Не удалось создать проект монумента. Выбранные материалы сохранены; вы можете повторить попытку. Подробности записаны в журнал отладки.</SMQ_BlueprintCreationFailed>
+	<!-- EN: Construction material count: {0}\nBeauty from material investment: {1} -->
+	<SMQ_InvestmentBeautyExplanation>Количество строительных материалов: {0}\nКрасота от вложенных материалов: {1}</SMQ_InvestmentBeautyExplanation>
+	<!-- EN: Construction material count: {0}\nBase meditation focus strength from material investment: {1} -->
+	<SMQ_InvestmentFocusExplanation>Количество строительных материалов: {0}\nБазовая сила фокуса медитации от вложенных материалов: {1}</SMQ_InvestmentFocusExplanation>
+	<!-- EN: Monument construction is in progress. Cancel its blueprint or frame to select materials again. -->
+	<SMQ_ConstructionInProgress>Идёт строительство монумента. Отмените его проект или каркас, чтобы выбрать материалы заново.</SMQ_ConstructionInProgress>
+	<!-- EN: Once the marker is installed, use Place blueprints to select materials and begin construction. -->
+	<SMQ_SelectMaterialsToBuild>После установки маркера используйте команду «Разместить проект», чтобы выбрать материалы и начать строительство.</SMQ_SelectMaterialsToBuild>
+</LanguageData>

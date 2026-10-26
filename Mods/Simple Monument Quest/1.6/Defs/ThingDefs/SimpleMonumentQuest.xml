@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>SMQ_Monument</defName>
@@ -20,13 +20,19 @@
       <MaxHitPoints>90</MaxHitPoints>
       <Mass>3</Mass>
       <Beauty>50</Beauty>
+      <MeditationFocusStrength>0.12</MeditationFocusStrength>
       <Flammability>0</Flammability>
     </statBases>
+    <comps>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes><li>Artistic</li></focusTypes>
+      </li>
+    </comps>
     <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
       <li>BuildingsArt</li>
     </thingCategories>
-    <tradeability>None</tradeability>
     <tradeTags>
       <li>Art</li>
     </tradeTags>
