@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <!-- Compound weapons reuse existing ammunition with stronger weapon-specific projectiles. -->
+  <!-- Poison and explosive secondary damage are preserved; only kinetic secondary damage is increased. -->
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_CompoundArrow</defName>
+    <label>compound bow arrows</label>
+    <ammoTypes>
+      <Ammo_Arrow_Stone>Projectile_CompoundArrow_Stone</Ammo_Arrow_Stone>
+      <Ammo_Arrow_Steel>Projectile_CompoundArrow_Steel</Ammo_Arrow_Steel>
+      <Ammo_Arrow_Venom>Projectile_CompoundArrow_Venom</Ammo_Arrow_Venom>
+      <Ammo_Arrow_Flame>Projectile_CompoundArrow_Flame</Ammo_Arrow_Flame>
+      <Ammo_Arrow_Explosive>Projectile_CompoundArrow_Explosive</Ammo_Arrow_Explosive>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_CompoundBolt</defName>
+    <label>compound crossbow bolts</label>
+    <ammoTypes>
+      <Ammo_Bolt_Metallic>Projectile_CompoundBolt_Metallic</Ammo_Bolt_Metallic>
+      <Ammo_Bolt_Venom>Projectile_CompoundBolt_Venom</Ammo_Bolt_Venom>
+      <Ammo_Bolt_Explosive>Projectile_CompoundBolt_Explosive</Ammo_Bolt_Explosive>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+  <ThingDef ParentName="BaseStreamlinedArrowProjectile">
+    <defName>Projectile_CompoundArrow_Stone</defName>
+    <label>compound streamlined arrow (stone)</label>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+      <texPath>Things/Projectile/Arrows/Arrow_Stone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <explosionDamageFalloff>true</explosionDamageFalloff>
+      <damageDef>ArrowHighVelocity</damageDef>
+      <speed>65</speed>
+      <damageAmountBase>15</damageAmountBase>
+      <armorPenetrationSharp>3.5</armorPenetrationSharp>
+      <armorPenetrationBlunt>5.5</armorPenetrationBlunt>
+      <preExplosionSpawnChance>0.2</preExplosionSpawnChance>
+      <preExplosionSpawnThingDef>Ammo_Arrow_Stone</preExplosionSpawnThingDef>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseStreamlinedArrowProjectile">
+    <defName>Projectile_CompoundArrow_Steel</defName>
+    <label>compound streamlined arrow (metallic)</label>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+      <texPath>Things/Projectile/Arrows/Arrow_Steel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <explosionDamageFalloff>true</explosionDamageFalloff>
+      <damageDef>ArrowHighVelocity</damageDef>
+      <speed>85</speed>
+      <damageAmountBase>20</damageAmountBase>
+      <armorPenetrationSharp>4.5</armorPenetrationSharp>
+      <armorPenetrationBlunt>6.2</armorPenetrationBlunt>
+      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+      <preExplosionSpawnThingDef>Ammo_Arrow_Steel</preExplosionSpawnThingDef>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseStreamlinedArrowProjectile">
+    <defName>Projectile_CompoundArrow_Venom</defName>
+    <label>compound streamlined arrow (venom)</label>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+      <texPath>Things/Projectile/Arrows/Arrow_Venom</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <explosionDamageFalloff>true</explosionDamageFalloff>
+      <damageDef>ArrowVenom</damageDef>
+      <speed>85</speed>
+      <damageAmountBase>7</damageAmountBase>
+      <armorPenetrationSharp>4.8</armorPenetrationSharp>
+      <armorPenetrationBlunt>5.6</armorPenetrationBlunt>
+      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+      <preExplosionSpawnThingDef>Ammo_Arrow_Steel</preExplosionSpawnThingDef>
+      <secondaryDamage>
+        <li>
+          <def>ArrowHighVelocity</def>
+          <amount>6</amount>
+        </li>
+      </secondaryDamage>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseStreamlinedArrowProjectile">
+    <defName>Projectile_CompoundArrow_Flame</defName>
+    <label>compound streamlined arrow (flame)</label>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+      <texPath>Things/Projectile/Arrows/Arrow_Flame</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <explosionDamageFalloff>true</explosionDamageFalloff>
+      <damageDef>ArrowFire</damageDef>
+      <speed>85</speed>
+      <explosionRadius>0.1</explosionRadius>
+      <damageAmountBase>4</damageAmountBase>
+      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.16</preExplosionSpawnChance>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseStreamlinedArrowProjectile">
+    <defName>Projectile_CompoundArrow_Explosive</defName>
+    <label>compound streamlined arrow (explosive)</label>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+      <texPath>Things/Projectile/Arrows/Arrow_Flame</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <explosionDamageFalloff>true</explosionDamageFalloff>
+      <damageDef>ArrowHighVelocity</damageDef>
+      <speed>85</speed>
+      <damageAmountBase>17</damageAmountBase>
+      <armorPenetrationSharp>3.0</armorPenetrationSharp>
+      <armorPenetrationBlunt>6.0</armorPenetrationBlunt>
+      <secondaryDamage>
+        <li>
+          <def>Bomb_Secondary</def>
+          <amount>14</amount>
+        </li>
+      </secondaryDamage>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseBoltProjectile">
+    <defName>Projectile_CompoundBolt_Metallic</defName>
+    <label>compound metallic bolt</label>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+      <texPath>Things/Projectile/Arrows/Arrow_Steel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.67</drawSize>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <explosionDamageFalloff>true</explosionDamageFalloff>
+      <damageDef>Arrow</damageDef>
+      <speed>100</speed>
+      <suppressionFactor>4</suppressionFactor>
+      <dangerFactor>3</dangerFactor>
+      <airborneSuppressionFactor>4</airborneSuppressionFactor>
+      <damageAmountBase>25</damageAmountBase>
+      <armorPenetrationBlunt>8.0</armorPenetrationBlunt>
+      <armorPenetrationSharp>5.5</armorPenetrationSharp>
+      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+      <preExplosionSpawnThingDef>Ammo_Bolt_Metallic</preExplosionSpawnThingDef>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseBoltProjectile">
+    <defName>Projectile_CompoundBolt_Venom</defName>
+    <label>compound venom bolt</label>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+      <texPath>Things/Projectile/Arrows/Arrow_Venom</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.67</drawSize>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <explosionDamageFalloff>true</explosionDamageFalloff>
+      <damageDef>ArrowVenom</damageDef>
+      <speed>100</speed>
+      <suppressionFactor>4</suppressionFactor>
+      <dangerFactor>3</dangerFactor>
+      <airborneSuppressionFactor>4</airborneSuppressionFactor>
+      <damageAmountBase>7</damageAmountBase>
+      <armorPenetrationBlunt>7.0</armorPenetrationBlunt>
+      <armorPenetrationSharp>5.7</armorPenetrationSharp>
+      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+      <preExplosionSpawnThingDef>Ammo_Bolt_Venom</preExplosionSpawnThingDef>
+      <secondaryDamage>
+        <li>
+          <def>ArrowHighVelocity</def>
+          <amount>7</amount>
+        </li>
+      </secondaryDamage>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseBoltProjectile">
+    <defName>Projectile_CompoundBolt_Explosive</defName>
+    <label>compound explosive bolt</label>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+      <texPath>Things/Projectile/Arrows/Arrow_Flame</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.67</drawSize>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <explosionDamageFalloff>true</explosionDamageFalloff>
+      <damageDef>Arrow</damageDef>
+      <speed>100</speed>
+      <suppressionFactor>4</suppressionFactor>
+      <dangerFactor>3</dangerFactor>
+      <airborneSuppressionFactor>4</airborneSuppressionFactor>
+      <damageAmountBase>20</damageAmountBase>
+      <armorPenetrationBlunt>8.0</armorPenetrationBlunt>
+      <armorPenetrationSharp>4.0</armorPenetrationSharp>
+      <secondaryDamage>
+        <li>
+          <def>Bomb_Secondary</def>
+          <amount>14</amount>
+        </li>
+      </secondaryDamage>
+    </projectile>
+  </ThingDef>
+</Defs>

@@ -257,7 +257,7 @@
 		<statBases>
 			<WorkToMake>9000</WorkToMake>
 			<SightsEfficiency>1.1</SightsEfficiency>
-			<ShotSpread>0.9</ShotSpread>
+			<ShotSpread>0.30</ShotSpread>
 			<SwayFactor>1</SwayFactor>
 			<Bulk>5</Bulk>
 			<Mass>3.0</Mass>
@@ -285,15 +285,15 @@
 				<recoilAmount>1</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Projectile_StreamlinedArrow_Steel</defaultProjectile>
+				<defaultProjectile>Projectile_CompoundArrow_Steel</defaultProjectile>
 				<warmupTime>0.5</warmupTime>
-				<range>42</range>
+				<range>50</range>
 				<soundCast>Bow_Recurve</soundCast>
 			</li>
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<ammoSet>AmmoSet_StreamlinedArrow</ammoSet>
+				<ammoSet>AmmoSet_CompoundArrow</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<noSnapshot>True</noSnapshot>

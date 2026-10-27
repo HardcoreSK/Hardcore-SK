@@ -36,6 +36,15 @@
 				</value>
 			</li>
 				
+			<!-- Compound crossbows retain Vile's specialized bolt options. -->
+            <li Class="SK.PatchOperationReplaceExtended">
+                <xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_CompoundBolt"]/ammoTypes</xpath>
+                <value>
+                    <Ammo_Bolt_Broadhead>Projectile_CompoundBolt_Broadhead</Ammo_Bolt_Broadhead>
+                    <Ammo_Bolt_Bodkin>Projectile_CompoundBolt_Bodkin</Ammo_Bolt_Bodkin>
+                </value>
+            </li>
+
 			<!-- explosive quarrels -->
 			<li Class="PatchOperationReplace">	
 				<xpath>Defs/ThingDef[defName="Ammo_Bolt_Explosive"]/label</xpath>

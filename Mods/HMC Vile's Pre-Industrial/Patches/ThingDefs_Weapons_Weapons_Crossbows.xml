@@ -92,6 +92,14 @@
 		</value>
 	</Operation>
 
+	<!-- Keep magazine size, reload time and all other components unchanged. -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Crossbow"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]</xpath>
+		<value>
+			<ammoSet>AmmoSet_LightBolt</ammoSet>
+		</value>
+	</Operation>
+
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="Arbalest"]</xpath>
 		<value>
