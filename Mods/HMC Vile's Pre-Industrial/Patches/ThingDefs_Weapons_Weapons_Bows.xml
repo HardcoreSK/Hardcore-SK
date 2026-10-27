@@ -94,7 +94,11 @@
 		</value>
 	</Operation>
 
-	<Operation Class="SK.PatchOperationReplaceExtended">
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="NorbalBow_Grape"]</xpath>
+	</Operation>
+
+	<!-- <Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="NorbalBow_Grape"]</xpath>
 		<value>
 			<label>Jezail Rifled Musket</label>
@@ -124,7 +128,6 @@
 				<SellPriceFactor>0.3</SellPriceFactor>
 			</statBases>
 			<weaponTags>
-				<!--<li>Gun</li>-->
 				<li>Musket</li>
 			</weaponTags>
 			<thingCategories>
@@ -162,6 +165,6 @@
 				<ComponentMedieval>8</ComponentMedieval>
 			</smeltProducts>
 		</value>
-	</Operation>
+	</Operation> -->
 
 </Patch>

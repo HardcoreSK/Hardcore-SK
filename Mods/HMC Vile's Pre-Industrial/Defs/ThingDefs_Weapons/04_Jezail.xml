@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- <ThingDef ParentName="BaseGun_LongBarreled">
-		<defName>NorbalBow_Grape</defName>
+	<ThingDef ParentName="BaseGun_LongBarreled">
+		<defName>Rifle_Jezail</defName>
 		<label>Jezail Rifled Musket</label>
 		<description>Essentially an early sniper rifle, this musket has a rifled barrel to spin the bullet, increasing accuracy. Being muzzle-loaded, that means it's more difficult to load, and the rifling only makes it more difficult. The barrel is exceptionally long which only further increases the range and accuracy. Just don't miss your first shot.</description>
 		<graphicData>
@@ -57,7 +57,7 @@
 		<smeltProducts Inherit="false">
 			<ComponentMedieval>8</ComponentMedieval>
 		</smeltProducts>
-	</ThingDef> -->
+	</ThingDef>
 
 	<!-- RECIPE -->
 
@@ -97,7 +97,7 @@
 			</li>
 		</ingredients>
 		<products>
-			<NorbalBow_Grape>1</NorbalBow_Grape>
+			<Rifle_Jezail>1</Rifle_Jezail>
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
