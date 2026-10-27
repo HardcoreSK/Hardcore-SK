@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <TD_Find_Lib.ThingQueryCategoryDef>
+        <mod>Ludeon.RimWorld.Odyssey</mod>
+        <defName>Category_Odyssey</defName>
+        <label>odyssey</label>
+        <insertCategory>Category_ItemInfo</insertCategory>
+        <subQueries>
+            <li>Query_IsUnique</li>
+            <li>Query_GravshipFuel</li>
+            <li>Query_GravshipCapacity</li>
+            <li>Query_GravshipIsOnCooldown</li>
+        </subQueries>
+    </TD_Find_Lib.ThingQueryCategoryDef>
+
+    <TD_Find_Lib.ThingQueryDef>
+        <defName>Query_IsUnique</defName>
+        <label>is unique</label>
+        <queryClass>TDFindLib_Odyssey.ThingQueryIsUnique</queryClass>
+        <mod>Ludeon.RimWorld.Odyssey</mod>
+    </TD_Find_Lib.ThingQueryDef>
+
+    <TD_Find_Lib.ThingQueryDef>
+        <defName>Query_GravshipFuel</defName>
+        <label>gravship fuel %</label>
+        <queryClass>TDFindLib_Odyssey.ThingQueryPercentFuel</queryClass>
+        <mod>Ludeon.RimWorld.Odyssey</mod>
+    </TD_Find_Lib.ThingQueryDef>
+
+    <TD_Find_Lib.ThingQueryDef>
+        <defName>Query_GravshipCapacity</defName>
+        <label>gravship capacity %</label>
+        <queryClass>TDFindLib_Odyssey.ThingQueryPercentCapacity</queryClass>
+        <mod>Ludeon.RimWorld.Odyssey</mod>
+    </TD_Find_Lib.ThingQueryDef>
+
+    <TD_Find_Lib.ThingQueryDef>
+        <defName>Query_GravshipIsOnCooldown</defName>
+        <label>gravship cooling down</label>
+        <queryClass>TDFindLib_Odyssey.ThingQueryIsOnCooldown</queryClass>
+        <mod>Ludeon.RimWorld.Odyssey</mod>
+    </TD_Find_Lib.ThingQueryDef>
+</Defs>
