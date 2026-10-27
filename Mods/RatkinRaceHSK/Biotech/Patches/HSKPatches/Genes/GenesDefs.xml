@@ -51,4 +51,13 @@
 		</value>
 	</Operation>
 
-</Patch>	
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/GeneDef[defName="RK_Gene_FragilePain"]</xpath>
+		<value>
+			<exclusionTags>
+				<li>Pain</li>
+			</exclusionTags>
+		</value>
+	</Operation>
+
+</Patch>
