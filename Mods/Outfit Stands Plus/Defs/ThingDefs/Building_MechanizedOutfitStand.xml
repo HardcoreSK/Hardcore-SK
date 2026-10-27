@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="OutfitStandBase" Name="OutfitStandsPlus_MechanizedOutfitStandBase" Abstract="True">
+        <description>A small display that showcases a single outfit. Saves space and can be used to quickly change clothing.\nMechanized for extra changing speed.</description>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,1)</interactionCellOffset>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <statBases>
+            <WorkToBuild>2000</WorkToBuild>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>50</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="OutfitStandsPlus.ThingComps.CompProperties_OutfitStandsPlusMainComp">
+            </li>
+        </comps>
+        <researchPrerequisites>
+            <li>Storage_C4</li>
+        </researchPrerequisites>
+    </ThingDef>
+    <ThingDef ParentName="OutfitStandsPlus_MechanizedOutfitStandBase">
+        <label>mechanized outfit stand</label>
+        <defName>OutfitStandsPlus_MechanizedOutfitStand</defName>
+        <thingClass>OutfitStandsPlus.Things.MechanizedOutfitStand</thingClass>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/OutfitStand/OutfitStand_MenuIcon</texPath>
+            <drawSize>(1.3, 1.3)</drawSize>
+        </graphicData>
+        <costList>
+            <ComponentIndustrial>6</ComponentIndustrial>
+			<ReinforcedConcrete>15</ReinforcedConcrete>
+			<Wire>15</Wire>
+			<ElectronicComponents>2</ElectronicComponents>
+        </costList>
+        <costStuffCount>80</costStuffCount>
+        <building>
+            <storageGroupTag>OutfitStand</storageGroupTag>
+            <fixedStorageSettings>
+                <filter>
+                    <specialFiltersToDisallow>
+                        <li>AllowChildOnlyApparel</li>
+                    </specialFiltersToDisallow>
+                </filter>
+            </fixedStorageSettings>
+        </building>
+        <comps>
+            <li Class="OutfitStandsPlus.ThingComps.CompProperties_AssignableToPawn_OutfitStandsPlusAdult">
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="OutfitStandsPlus_MechanizedOutfitStandBase">
+        <label>mechanized kid outfit stand</label>
+        <defName>OutfitStandsPlus_MechanizedKidOutfitStand</defName>
+        <thingClass>OutfitStandsPlus.Things.MechanizedKidOutfitStand</thingClass>
+        <costList>
+            <ComponentIndustrial>6</ComponentIndustrial>
+			<ReinforcedConcrete>10</ReinforcedConcrete>
+			<Wire>10</Wire>
+			<ElectronicComponents>2</ElectronicComponents>
+        </costList>
+        <costStuffCount>60</costStuffCount>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/OutfitStand/KidOutfitStand_MenuIcon</texPath>
+            <drawSize>(1.3, 1.3)</drawSize>
+        </graphicData>
+        <building>
+            <storageGroupTag>KidOutfitStand</storageGroupTag>
+            <fixedStorageSettings>
+                <filter>
+                    <specialFiltersToDisallow>
+                        <li>AllowAdultOnlyApparel</li>
+                    </specialFiltersToDisallow>
+                </filter>
+            </fixedStorageSettings>
+        </building>
+        <comps>
+            <li Class="OutfitStandsPlus.ThingComps.CompProperties_AssignableToPawn_OutfitStandsPlusKid">
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>
