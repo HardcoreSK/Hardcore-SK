@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationConditional" MayRequire="ZuoYao.SimpleMonumentQuest">
+				<xpath>Defs/ThingDef[defName="SMQ_Monument"]</xpath>
+				<nomatch Class="PatchOperationTest">
+					<xpath>Defs/ThingDef[defName="SMQ_Monument"]</xpath>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional" MayRequire="ZuoYao.SimpleMonumentQuest">
+				<xpath>Defs/ThingDef[defName="SMQ_Monument"]/tradeability</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="SMQ_Monument"]</xpath>
+					<value>
+						<tradeability>None</tradeability>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="SMQ_Monument"]/tradeability[text()="None"]</xpath>
+					<nomatch Class="PatchOperationTest">
+						<xpath>Defs/ThingDef[defName="SMQ_Monument"]/tradeability[text()="None"]</xpath>
+					</nomatch>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
