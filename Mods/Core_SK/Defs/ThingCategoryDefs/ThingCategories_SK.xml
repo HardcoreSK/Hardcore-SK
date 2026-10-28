@@ -161,7 +161,7 @@
 		<label>Animal Food</label>
 		<parent>Foods</parent>
 		<resourceReadoutRoot>true</resourceReadoutRoot>
-		<iconPath>Things/Item/CatFood</iconPath>
+		<iconPath>Things/Food/Animal/CatFood</iconPath>
 	</ThingCategoryDef>
 	<!--		
 				  <ThingCategoryDef>
@@ -185,7 +185,7 @@
 		<defName>MeatSubRaw</defName>
 		<label>Meat Substitute</label>
 		<parent>FoodRaw</parent>
-		<iconPath>Things/Item/Meal_Tofu</iconPath>
+		<iconPath>Things/Food/Ingredients/Tofu</iconPath>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
 		<defName>FoodFreshFish</defName>
@@ -758,6 +758,11 @@
 		<label>tools</label>
 		<parent>Weapons</parent>
 	</ThingCategoryDef>
+    <ThingCategoryDef>
+        <defName>SurvivalToolsPrimitive</defName>
+        <label>primitive tools</label>
+        <parent>SurvivalTools</parent>
+    </ThingCategoryDef>
 	<ThingCategoryDef>
 		<defName>SurvivalToolsNeolithic</defName>
 		<label>basic tools</label>

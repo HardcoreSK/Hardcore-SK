@@ -1,50 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-<!-- 	<ThingDef ParentName="SK_MealBase">
-		<defName>MealNutrientPaste</defName>
-		<label>nutrient paste meal</label>
-		<description>A synthetic mixture of protein, carbohydrates, vitamins, amino acids and minerals. Everything the body needs with an absolutely disgusting taste.</description>
-		<graphicData>
-			<texPath>Things/Item/Meal/NutrientPaste</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-		</graphicData>
-		<statBases>
-			<DeteriorationRate>10</DeteriorationRate>
-			<MarketValue>15</MarketValue>
-			<Bulk>1.50</Bulk>
-			<Mass>0.5</Mass>
-			<Nutrition>1</Nutrition>	
-		</statBases>
-		<ingestible>
-			<foodType>Meal</foodType>
-			<preferability>MealAwful</preferability>
-			<ingestEffect>EatVegetarian</ingestEffect>
-			<ingestSound>Meal_Eat</ingestSound>
-			<ateEvent>AteNutrientPaste</ateEvent>
-		</ingestible>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>5</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-		<modExtensions>
-			<li Class="SK.SyntheticMealExtension">
-			</li>
-		</modExtensions>
-		<thingSetMakerTags>
-			<li>HSKhumanitarianSuppliesTierTwo</li>
-			<li>HSKhumanitarianSuppliesTierFour</li>
-		</thingSetMakerTags>
-	</ThingDef> -->
+	<!--
+    DefOverwrite list:
+    MealNutrientPaste
+    -->
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>soylentgreen</defName>
 		<label>soylent green</label>
 		<description>Soylent Green is made from people, corpses that is. The taste varies from person to person.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/soylent</texPath>
+			<texPath>Things/Food/Raw/SoylentGreen</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>

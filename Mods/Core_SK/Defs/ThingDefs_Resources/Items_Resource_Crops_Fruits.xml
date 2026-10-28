@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!--
+    DefOverwrite list:
+    RawBerries
+    RawAgave
+    -->
+
 	<ThingDef Abstract="True" Name="FruitFoodRawBase" ParentName="OrganicProductBase">
 		<ingestible>
 			<preferability>RawTasty</preferability>
@@ -22,40 +28,13 @@
 		</statBases>
 	</ThingDef>
 
-	<!-- <ThingDef ParentName="SmallFruitFoodRawBase">
-		<defName>RawBerries</defName>
-		<label>Strawberries</label>
-		<description>Strawberries are small, red, soft fruits of a Strawberry Plant. They are good when eaten raw.</description>
-		<possessionCount>10</possessionCount>
-		<graphicData>
-			<texPath>Things/Fruits/Berries</texPath>
-		</graphicData>
-		<statBases>
-			<MarketValue>6</MarketValue>
-			<Nutrition>0.15</Nutrition>
-		</statBases>
-		<tickerType>Rare</tickerType>
-		<thingCategories>
-			<li>FruitFoodRaw</li>
-		</thingCategories>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>6</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-		<ingestible>
-			<joy>0.05</joy>
-		</ingestible>
-	</ThingDef> -->
-
 	<ThingDef ParentName="SmallFruitFoodRawBase">
 		<defName>RawWatermelon</defName>
 		<label>Watermelon</label>
 		<description>A powerful creeping vine with carved leaves that produces giant sweet berries. Despite the botanical classification, colonists continue to argue whether it is a fruit, a vegetable, or a "huge strange raspberry."</description>
 		<possessionCount>1</possessionCount>
 		<graphicData>
-			<texPath>Things/Fruits/watermelon</texPath>
+			<texPath>Things/Food/Raw/Watermelon</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>6</MarketValue>
@@ -75,33 +54,6 @@
 			<joy>0.1</joy>
 		</ingestible>
 	</ThingDef>
-	
-	<!-- <ThingDef ParentName="SmallFruitFoodRawBase">
-		<defName>RawAgave</defName>
-		<label>Agave Fruit</label>
-		<description>The Agave Fruit is edible stalks and flowers of a wild Agave Plant. Agave Plants are native to deserts. The fruits are foul when eaten raw.</description>
-		<possessionCount>10</possessionCount>
-		<graphicData>
-			<texPath>Things/Fruits/AgaveFruit</texPath>
-		</graphicData>
-		<statBases>
-			<MarketValue>6</MarketValue>
-			<Nutrition>0.15</Nutrition>
-		</statBases>
-		<tickerType>Rare</tickerType>
-		<thingCategories>
-			<li>FruitFoodRaw</li>
-		</thingCategories>
-		<ingestible>
-			<joy>0.03</joy>
-		</ingestible>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>7</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-	</ThingDef> -->
 
 	<ThingDef ParentName="FruitFoodRawBase">
 		<defName>Rawapple</defName>
@@ -109,7 +61,7 @@
 		<description>Apples are a round, red fruit that grows on Apple Trees. Commonly used in cooking for deserts due to its sweet taste, it can also be brewed into Apple Cider. Delectable to eat even when raw.</description>
 		<possessionCount>10</possessionCount>
 		<graphicData>
-			<texPath>Things/Fruits/apple</texPath>
+			<texPath>Things/Food/Raw/Apple</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>5</MarketValue>
@@ -130,14 +82,13 @@
 		</comps>
 	</ThingDef>
 
-
 	<ThingDef ParentName="FruitFoodRawBase">
 		<defName>Rawbanana</defName>
 		<label>Banana</label>
 		<description>A Banana is a long, soft, yellow, sweet fruit that grows on Banana Trees. Yummy to eat when raw.</description>
 		<possessionCount>10</possessionCount>
 		<graphicData>
-			<texPath>Things/Fruits/banana</texPath>
+			<texPath>Things/Food/Raw/Banana</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>6</MarketValue>
@@ -158,14 +109,13 @@
 		</comps>
 	</ThingDef>
 
-
 	<ThingDef ParentName="FruitFoodRawBase">
 		<defName>Rawgrape</defName>
 		<label>Grapes</label>
 		<description>Grapes are small, sweet, berry fruits that grow in clusters on Grape Vines. Tantalizing to eat even when raw.</description>
 		<possessionCount>10</possessionCount>
 		<graphicData>
-			<texPath>Things/Fruits/grape</texPath>
+			<texPath>Things/Food/Raw/Grape</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>7</MarketValue>
@@ -186,14 +136,13 @@
 		</comps>
 	</ThingDef>
 
-
 	<ThingDef ParentName="FruitFoodRawBase">
 		<defName>Raworange</defName>
 		<label>Orange</label>
 		<description>Oranges are a sweet, citric fruit that grows on Orange Trees. A tough outer rind protects the soft pulpy flesh inside. Pleasant to eat when raw.</description>
 		<possessionCount>10</possessionCount>
 		<graphicData>
-			<texPath>Things/Fruits/orange</texPath>
+			<texPath>Things/Food/Raw/Orange</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>7</MarketValue>
@@ -214,14 +163,13 @@
 		</comps>
 	</ThingDef>
 
-
 	<ThingDef ParentName="FruitFoodRawBase">
 		<defName>Rawpeach</defName>
 		<label>Peach</label>
 		<description>Peaches are a soft, fuzzy, sweet fruit that grows on Peach Trees. They have a large, hard pit at the core of the fruit. Splendid to eat when raw.</description>
 		<possessionCount>10</possessionCount>
 		<graphicData>
-			<texPath>Things/Fruits/peach</texPath>
+			<texPath>Things/Food/Raw/Peach</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>6</MarketValue>
@@ -247,7 +195,7 @@
 		<label>Coconut</label>
 		<description>Coconuts are fruits of the palm tree, which are mistakenly called nuts.</description>
 		<graphicData>
-			<texPath>Things/Fruits/Coconut</texPath>
+			<texPath>Things/Food/Raw/Coconut</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>6</MarketValue>

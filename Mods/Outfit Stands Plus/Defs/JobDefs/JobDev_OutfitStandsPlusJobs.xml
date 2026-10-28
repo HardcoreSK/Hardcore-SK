@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <JobDef>
+        <defName>OutfitStandsPlus_JobReturnToStand</defName>
+        <driverClass>OutfitStandsPlus.Jobs.JobDriver_OutfitStandsPlusReturnToStand</driverClass>
+        <reportString>Returning outfit to stand.</reportString>
+        <suspendable>false</suspendable>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+</Defs>

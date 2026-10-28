@@ -1,11 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+	<!--
+    DefOverwrite list:
+    Chocolate
+    -->
+
 	<ThingDef ParentName="SweetMealBase">
 		<defName>IceCream</defName>
 		<label>Ice Cream</label>
 		<description>A special desert that is not only extreamly tasty, but also helps to ease heatstrokes.</description>
 		<graphicData>
-			<texPath>Things/Item/Meal/icecream</texPath>
+			<texPath>Things/Food/Meals/IceCream</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -48,7 +54,7 @@
 		<label>Chocolate Milk</label>
 		<description>Chocolate added to milk.</description>
 		<graphicData>
-			<texPath>Things/Item/Meal/Meal_ChocoMilk</texPath>
+			<texPath>Things/Food/Meals/ChocoMilk</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -78,7 +84,7 @@
 		<label>Caramel</label>
 		<description>A sweet candy made from sugar.</description>
 		<graphicData>
-			<texPath>Things/Item/Meal/caramel</texPath>
+			<texPath>Things/Food/Meals/Caramel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -106,48 +112,12 @@
 		</comps>
 	</ThingDef>
 
-	<!-- <ThingDef ParentName="SweetMealBase">
-		<defName>Chocolate</defName>
-		<label>Chocolate</label>
-		<description>A delicious preparation of cocoa seeds ground together with sugar and vanilla. Very pleasurable to eat, but not very nutritious.</description>
-		<allowedArchonexusCount>80</allowedArchonexusCount>
-		<possessionCount>10</possessionCount>
-		<graphicData>
-			<texPath>Things/Item/Resource/Chocolate</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-			<drawSize>0.88</drawSize>
-		</graphicData>
-		<soundInteract>Standard_Drop</soundInteract>
-		<soundDrop>Standard_Drop</soundDrop>
-		<socialPropernessMatters>true</socialPropernessMatters>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<MarketValue>4</MarketValue>
-			<Flammability>1.0</Flammability>
-			<Nutrition>0.04</Nutrition>
-		</statBases>
-		<ingestible>
-			<preferability>DesperateOnly</preferability>
-			<foodType>Processed</foodType>
-			<joy>0.1</joy>
-			<joyKind>Gluttonous</joyKind>
-			<maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
-			<ingestSound>Meal_Eat</ingestSound>
-		</ingestible>
-		<comps>
-			<li Class="CompProperties_Drug">
-				<addictiveness>0</addictiveness>
-			</li>
-		</comps>
-	</ThingDef>
-
- -->
 	<ThingDef ParentName="SK_MealBase">
 		<defName>Cheese</defName>
 		<label>cheese</label>
 		<description>A piece of cheese.</description>
 		<graphicData>
-			<texPath>Things/Item/Meal/Meal_Cheese</texPath>
+			<texPath>Things/Food/Meals/Cheese</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -178,7 +148,7 @@
 		<label>aged cheese</label>
 		<description>A piece of elite aged cheese.</description>
 		<graphicData>
-			<texPath>Things/Item/Meal/Meal_AgedCheese</texPath>
+			<texPath>Things/Food/Meals/CheeseAged</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>

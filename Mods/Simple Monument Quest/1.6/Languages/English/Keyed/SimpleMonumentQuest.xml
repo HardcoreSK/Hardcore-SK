@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <SMQ_MaterialMultiplier>Required materials: {0}</SMQ_MaterialMultiplier>
   <SMQ_WorkMultiplier>Construction work: {0}</SMQ_WorkMultiplier>
@@ -30,4 +30,15 @@
   <SMQ_CommandPlaceBlueprints>Place monument blueprint</SMQ_CommandPlaceBlueprints>
   <SMQ_CommandPlaceBlueprintsDesc>Convert the marker into a monument construction blueprint.</SMQ_CommandPlaceBlueprintsDesc>
   <SMQ_ProtectionTimeMultiplier>Monument protection time multiplier: {0}</SMQ_ProtectionTimeMultiplier>
+  <SMQ_CancelConstructionBeforeMoving>Cancel the monument blueprint or frame before moving, uninstalling, or cancelling its marker.</SMQ_CancelConstructionBeforeMoving>
+  <SMQ_CancelConstructionBeforeSelecting>Cancel the existing monument blueprint or frame before selecting materials again.</SMQ_CancelConstructionBeforeSelecting>
+  <SMQ_FinishInstallationFirst>Finish or cancel the marker installation, movement, or uninstall order first.</SMQ_FinishInstallationFirst>
+  <SMQ_ConstructionReadyAgain>Monument construction has stopped. Use its marker to select materials and place a new blueprint.</SMQ_ConstructionReadyAgain>
+  <SMQ_MissingSketch>The monument quest sketch is missing, so construction costs cannot be recovered. Please keep this save and report the problem.</SMQ_MissingSketch>
+  <SMQ_BlueprintPlacementFailed>Cannot place the monument blueprint: {0}</SMQ_BlueprintPlacementFailed>
+  <SMQ_BlueprintCreationFailed>The monument blueprint could not be created. Your material selections are preserved; you can retry. Details were written to the log.</SMQ_BlueprintCreationFailed>
+  <SMQ_InvestmentBeautyExplanation>Construction material count: {0}\nBeauty from material investment: {1}</SMQ_InvestmentBeautyExplanation>
+  <SMQ_InvestmentFocusExplanation>Construction material count: {0}\nBase meditation focus strength from material investment: {1}</SMQ_InvestmentFocusExplanation>
+  <SMQ_ConstructionInProgress>Monument construction is in progress. Cancel its blueprint or frame to select materials again.</SMQ_ConstructionInProgress>
+  <SMQ_SelectMaterialsToBuild>Once the marker is installed, use Place blueprints to select materials and begin construction.</SMQ_SelectMaterialsToBuild>
 </LanguageData>

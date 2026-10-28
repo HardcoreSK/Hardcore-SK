@@ -27,7 +27,7 @@
     </graphicData>
     <uiIconPath>Things/Mineral/IceStalagmite/IceStalagmiteA</uiIconPath>
     <fillPercent>0.2</fillPercent>
-    <hideAtSnowDepth>5</hideAtSnowDepth>
+    <hideAtSnowOrSandDepth>5</hideAtSnowOrSandDepth>
     <filthLeaving>Filth_Dirt</filthLeaving>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -198,7 +198,7 @@
       </damageData>
     </graphicData>
     <uiIconPath>Things/Mineral/SmoothSnowDrift/SmoothSnowDriftA</uiIconPath>
-    <hideAtSnowDepth>1.9</hideAtSnowDepth>
+    <hideAtSnowOrSandDepth>1.9</hideAtSnowOrSandDepth>
     <filthLeaving>Filth_Dirt</filthLeaving>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -329,7 +329,7 @@
       </damageData>
     </graphicData>
     <uiIconPath>Things/Mineral/SnowDrift/SnowDriftA</uiIconPath>
-    <hideAtSnowDepth>5</hideAtSnowDepth>
+    <hideAtSnowOrSandDepth>5</hideAtSnowOrSandDepth>
     <filthLeaving>Filth_Dirt</filthLeaving>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->

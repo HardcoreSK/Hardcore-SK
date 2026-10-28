@@ -137,6 +137,10 @@
         <label>Living Frost</label>
         <description>The frigid, throbbing heart of a thawed Kirin. It radiates frost and will gradually lower temperatures if kept in a room. It is prized by traders for its supposed medicinal values and uses in alchemy.</description>
         <thingClass>ThingWithComps</thingClass>
+        <graphicData>
+            <texPath>Things/Item/Resource/LivingFrost</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
         <comps>
             <li Class="SK.CompPropertiesSnow">
                 <compClass>SK.CompSnow</compClass>
@@ -180,10 +184,6 @@
             <Bulk>7</Bulk>
             <Mass>4</Mass>
         </statBases>
-        <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Things/Item/LivingFrost</texPath>
-        </graphicData>
     </ThingDef>
 
     <ThingDef>
@@ -191,6 +191,10 @@
         <label>Living Fire</label>
         <description>The scorching, vibrating heart of an extinguished Feenix. It pulses with heat and will gradually raise temperatures if kept in a room. It is prized by traders for its supposed medicinal values and uses in alchemy.</description>
         <thingClass>ThingWithComps</thingClass>
+        <graphicData>
+            <texPath>Things/Item/Resource/LivingFire</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
         <comps>
             <li Class="SK.CompProperties_HeatPusherFenix">
                 <heatPushMaxTemperature>100</heatPushMaxTemperature>
@@ -230,10 +234,6 @@
             <Bulk>7</Bulk>
             <Mass>4</Mass>
         </statBases>
-        <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Things/Item/LivingFire</texPath>
-        </graphicData>
     </ThingDef>
 
 </Defs>

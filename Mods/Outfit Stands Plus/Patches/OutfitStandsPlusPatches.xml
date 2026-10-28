@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Building_OutfitStand"]/comps</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Building_OutfitStand"]</xpath>
+            <value>
+                <comps>
+                    <li Class="OutfitStandsPlus.ThingComps.CompProperties_AssignableToPawn_OutfitStandsPlusAdult">
+                    </li>
+                    <li Class="OutfitStandsPlus.ThingComps.CompProperties_OutfitStandsPlusMainComp"></li>
+                </comps>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Building_OutfitStand"]/comps</xpath>
+            <value>
+                <li Class="OutfitStandsPlus.ThingComps.CompProperties_AssignableToPawn_OutfitStandsPlusAdult">
+                </li>
+                <li Class="OutfitStandsPlus.ThingComps.CompProperties_OutfitStandsPlusMainComp"></li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Building_KidOutfitStand"]/comps</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Building_KidOutfitStand"]</xpath>
+            <value>
+                <comps>
+                    <li Class="OutfitStandsPlus.ThingComps.CompProperties_AssignableToPawn_OutfitStandsPlusKid">
+                    </li>
+                    <li Class="OutfitStandsPlus.ThingComps.CompProperties_OutfitStandsPlusMainComp"></li>
+                </comps>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Building_KidOutfitStand"]/comps</xpath>
+            <value>
+                <li Class="OutfitStandsPlus.ThingComps.CompProperties_AssignableToPawn_OutfitStandsPlusKid">
+                </li>
+                <li Class="OutfitStandsPlus.ThingComps.CompProperties_OutfitStandsPlusMainComp"></li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[@Name="BasePawn"]/comps</xpath>
+        <value>
+            <li Class="OutfitStandsPlus.ThingComps.CompProperties_OutfitStandsPlusUseCommandsComp">
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[@Name="OutfitStandBase"]/minifiedDef[@IsNull="True"]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[@Name="OutfitStandBase"]</xpath>
+            <value>
+                <minifiedDef>OutfitStandPlusMinified</minifiedDef>
+                <thingCategories>
+                    <li>BuildingsFurniture</li>
+                </thingCategories>
+            </value>
+        </match>
+    </Operation>
+</Patch>

@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <OutputType>Library</OutputType>
+        <RootNamespace>TDFindLib_CAIFOW</RootNamespace>
+        <AssemblyName>TDFindLib_CAIFOW</AssemblyName>
+        <AllowedReferenceRelatedFileExtensions>None</AllowedReferenceRelatedFileExtensions>
+        <LangVersion>latest</LangVersion>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <Version>1.7</Version>
+    	<GenerateDependencyFile>false</GenerateDependencyFile>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>portable</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>..\..\$(Version)\ModSupport\$(MSBuildProjectName)\Assemblies\</OutputPath>
+        <DefineConstants>DEBUG</DefineConstants>
+        <WarningLevel>4</WarningLevel>
+        <Prefer32Bit>false</Prefer32Bit>
+    </PropertyGroup>
+    <!-- Release configuration -->
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <DebugType>embedded</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>..\..\$(Version)\ModSupport\$(MSBuildProjectName)\Assemblies\</OutputPath>
+        <WarningLevel>4</WarningLevel>
+        <Prefer32Bit>false</Prefer32Bit>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\Source\TD_Find_Lib.csproj">
+            <Private>False</Private>
+        </ProjectReference>
+    </ItemGroup>
+    <ItemGroup>
+        <ReleaseFiles Include="Defs\**;Patches\**;Languages\**;Sounds\**;Textures\**"/>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CSharp" Version="4.7.0"/>
+        <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Reference Include="CombatAI">
+            <HintPath>..\..\Workshop\steamapps\workshop\content\294100\2938891185\1.5\Assemblies\CombatAI.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+    <Target Name="PostBuild" AfterTargets="Build">
+        <Copy Condition=" '$(Configuration)' == 'Release' " SourceFiles="@(ReleaseFiles)" DestinationFiles="@(ReleaseFiles->'$(OutputPathFiles)%(RelativeDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true"/>
+    </Target>
+</Project>

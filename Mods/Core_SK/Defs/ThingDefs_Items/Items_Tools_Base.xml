@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Name="BaseTool" ParentName="SK_BaseMeleeWeapon" Abstract="True">
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <statBases>
+            <WorkToMake>1800</WorkToMake>
+            <Mass>0.7</Mass>
+            <Bulk>1.5</Bulk>
+        </statBases>
+        <techLevel>Neolithic</techLevel>
+        <soundInteract>Interact_BeatFire</soundInteract>
+        <weaponTags>
+            <li>MeleeTools</li>
+            <li>CE_Sidearm_Melee</li>
+            <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+        <relicChance>0</relicChance>
+        <smeltable>true</smeltable>
+        <possessionCount>1</possessionCount>
+        <generateCommonality>0.2</generateCommonality>
+        <burnableByRecipe>True</burnableByRecipe>
+        <recipeMaker>
+            <workSpeedStat>SmithingSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <defaultIngredientFilter>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedThingDefs>
+                    <li>Silver</li>
+                    <li>Gold</li>
+                </disallowedThingDefs>
+            </defaultIngredientFilter>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+        </recipeMaker>
+    </ThingDef>
+
+</Defs>
