@@ -2,16 +2,22 @@
 <LanguageData>
 
   <capSelectTab>Not selected</capSelectTab>
+  <capOverviewTab>Overview</capOverviewTab>
+  <WealthCategoryLabel>Category</WealthCategoryLabel>
+  <WealthShareLabel>Share</WealthShareLabel>
+  <WealthShareTip>Percentage of the total wealth points shown across Items, Buildings and Pawns, including linked, loaded pocket maps.</WealthShareTip>
+  <WealthTotalLabel>Total</WealthTotalLabel>
   <capItemsTab>Items</capItemsTab>
   <capBuildingsTab>Buildings</capBuildingsTab>
+  <WealthFloorLabel>Floor: {0}</WealthFloorLabel>
+  <WealthFoundationLabel>Foundation: {0}</WealthFoundationLabel>
   <capPawnsTab>Pawns</capPawnsTab>
   <capRadePointsTab>Raid points</capRadePointsTab>
   <btnSelectTab>Tab: {0}</btnSelectTab>
   <lblOrder>Sort by:</lblOrder>
   
   <TabComparer_None>None</TabComparer_None>
-  <TabComparer_MarketValue>Price</TabComparer_MarketValue>
-  <TabComparer_MarketValueAll>Total price</TabComparer_MarketValueAll>
+  <TabComparer_WealthPoints>Wealth points</TabComparer_WealthPoints>
   <TabComparer_Count>Count</TabComparer_Count>
   <TabComparer_Name>Name</TabComparer_Name>
   <TabComparer_Category>Category</TabComparer_Category>
@@ -20,7 +26,8 @@
   <TabComparer_Mass>Mass</TabComparer_Mass>
   <EntryLabel>Label</EntryLabel>
   <CountLabel>Count</CountLabel>
-  <MarketValueLabel>Value</MarketValueLabel>
+  <WealthPointsLabel>Wealth points</WealthPointsLabel>
+  <WealthPointsTip>Total contribution of all things in this row to the wealth used by the storyteller to calculate raid strength. Includes the selected map and its linked, loaded pocket maps, as in the base game. Buildings, floors and foundations count at 50% of their market value; building damage is ignored; slaves count at 75% of their market value. Items and other pawns count at full market value. Quest lodgers and their held items are excluded. These are wealth points, not raid points: difficulty, adaptation and other factors also affect raid strength. With wealth-independent progress enabled, the storyteller uses elapsed time instead of colony wealth.</WealthPointsTip>
   <InfoLabel>Info</InfoLabel>
   <Pawns>Pawns</Pawns>
   

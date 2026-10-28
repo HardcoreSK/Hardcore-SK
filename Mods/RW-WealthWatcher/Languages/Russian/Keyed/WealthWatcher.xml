@@ -2,16 +2,22 @@
 <LanguageData>
 
   <capSelectTab>Не выбрано</capSelectTab>
+  <capOverviewTab>Обзор</capOverviewTab>
+  <WealthCategoryLabel>Категория</WealthCategoryLabel>
+  <WealthShareLabel>Доля</WealthShareLabel>
+  <WealthShareTip>Процент от суммы очков богатства во вкладках «Предметы», «Постройки» и «Пешки», включая связанные загруженные карманные карты.</WealthShareTip>
+  <WealthTotalLabel>Всего</WealthTotalLabel>
   <capItemsTab>Предметы</capItemsTab>
   <capBuildingsTab>Постройки</capBuildingsTab>
+  <WealthFloorLabel>Пол: {0}</WealthFloorLabel>
+  <WealthFoundationLabel>Фундамент: {0}</WealthFoundationLabel>
   <capPawnsTab>Пешки</capPawnsTab>
   <capRadePointsTab>Очки рейда</capRadePointsTab>
   <btnSelectTab>Вкладка: {0}</btnSelectTab>
   <lblOrder>Сортировать по:</lblOrder>
   
   <TabComparer_None>Ничего</TabComparer_None>
-  <TabComparer_MarketValue>Цена</TabComparer_MarketValue>
-  <TabComparer_MarketValueAll>Цена общая</TabComparer_MarketValueAll>
+  <TabComparer_WealthPoints>Очки богатства</TabComparer_WealthPoints>
   <TabComparer_Count>Количество</TabComparer_Count>
   <TabComparer_Name>Имя</TabComparer_Name>
   <TabComparer_Category>Категория</TabComparer_Category>
@@ -21,7 +27,8 @@
 
   <EntryLabel>Название</EntryLabel>
   <CountLabel>Кол-во</CountLabel>
-  <MarketValueLabel>Цена</MarketValueLabel>
+  <WealthPointsLabel>Очки богатства</WealthPointsLabel>
+  <WealthPointsTip>Суммарный вклад всех объектов в строке в богатство, которое рассказчик использует для расчёта силы рейдов. Как и в базовой игре, учитываются выбранная карта и связанные с ней загруженные карманные карты. Постройки, полы и фундаменты учитываются по 50% рыночной стоимости; повреждения построек не учитываются, рабы — по 75% рыночной стоимости. Предметы и остальные пешки — по полной рыночной стоимости. Временные жильцы по заданиям и их вещи не учитываются. Это очки богатства, а не очки рейда: на силу рейдов также влияют сложность, адаптация и другие факторы. При включённом прогрессе независимо от богатства рассказчик использует прошедшее время вместо богатства колонии.</WealthPointsTip>
   <InfoLabel>Инфо</InfoLabel>
   <Pawns>Пешки</Pawns>
   
