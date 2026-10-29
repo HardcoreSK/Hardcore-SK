@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="SK.PatchOperationReplaceExtended">
+			<xpath>Defs/RulePackDef[defName="DamageEvent_CookOff" or defName="DamageEvent_Shelling" or defName="DamageEvent_ShellingExplosion"]/rulePack</xpath>
+			<value>
+				<rulesStrings Merge="True">
+					<li>damageSource->[damage_source]</li>
+					<li>damaged_participle->[damaged_present]</li>
+					<li>destroyed_participle->[destroyed_present]</li>
+				</rulesStrings>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>
