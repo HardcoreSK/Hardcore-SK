@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Simple Monument Quest</li>
+        </mods>
+        <match Class="SK.PatchOperationReplaceExtended">
+            <xpath>Defs/ThingDef[defName="SMQ_Monument"]</xpath>
+            <value>
+                <tradeability>None</tradeability>
+            </value>
+        </match>
+    </Operation>
+</Patch>
