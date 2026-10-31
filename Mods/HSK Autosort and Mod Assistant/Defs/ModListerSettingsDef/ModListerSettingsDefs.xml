@@ -223,6 +223,7 @@
 					<HSKMod>true</HSKMod>
 					<loadAfter>
 						<li>skyarkhangel.hsk</li>
+						<li>skyarkhangel.hsk.core</li>
 					</loadAfter>
 				</li>
 				<li>
@@ -970,6 +971,7 @@
 						<li>dimonsever000.wiki.specific</li>
 						<li>taranchuk.performanceoptimizer</li>
 						<li>krkr.rocketman</li>
+						<li>vr.missilegirl</li>
 					</loadBefore>
 				</li>
 				<li>
@@ -982,6 +984,7 @@
 					<loadBefore>
 						<li>taranchuk.performanceoptimizer</li>
 						<li>krkr.rocketman</li>
+						<li>vr.missilegirl</li>
 					</loadBefore>
 				</li>
 				<li>
@@ -994,6 +997,16 @@
 				</li>
 				<li>
 					<id>krkr.rocketman</id>
+					<HSKMod>true</HSKMod>
+					<loadAfter>
+						<li>dubwise.dubsperformanceanalyzer.steam</li>
+						<li>dimonsever000.wiki.specific</li>
+						<li>taranchuk.performanceoptimizer</li>
+						<li>trinity.runtimegcfixed</li>
+					</loadAfter>
+				</li>
+				<li>
+					<id>vr.missilegirl</id>
 					<HSKMod>true</HSKMod>
 					<loadAfter>
 						<li>dubwise.dubsperformanceanalyzer.steam</li>
