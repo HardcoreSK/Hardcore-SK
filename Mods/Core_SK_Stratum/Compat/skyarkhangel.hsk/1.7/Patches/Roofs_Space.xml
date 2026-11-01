@@ -136,6 +136,12 @@
         <Mechanism>2</Mechanism>
         <ElectronicComponents>2</ElectronicComponents>
       </costList>
+      <!-- Follow reinforced-glass roofing and solar power, not apparel fabrication. -->
+      <researchPrerequisites DeepReplace="true" Inherit="False">
+        <li>SolarPanels</li>
+        <li>Construction_B3</li>
+        <li>Roof_D2</li>
+      </researchPrerequisites>
     </value>
   </Operation>
 
