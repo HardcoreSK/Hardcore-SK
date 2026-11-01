@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<!-- =========================== Medieval ================================ -->
-
+	<!--
+    DefOverwrite list:
+    MeleeWeapon_Gladius
+    MeleeWeapon_LongSword
+    -->
 
 	<ThingDef ParentName="WeaponMedievalBase">
 		<defName>MeleeWeapon_Dagger</defName>
@@ -76,173 +79,6 @@
 			<researchPrerequisite>Smithing</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
-
-	<!--
-	<ThingDef ParentName="WeaponMedievalBase">
-		<defName>MeleeWeapon_Gladius</defName>
-		<label>Gladius</label>
-		<description>A short one-handed sword. Good for stabbing from behind the shield</description>
-		<graphicData>
-			<texPath>Things/Weapons/Melee/Gladius</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>InteractMelee</soundInteract>
-		<stuffCategories>
-			<li>StrongMetallic</li>
-		</stuffCategories>
-		<costStuffCount>50</costStuffCount>
-		<costList>
-			<ComponentMedieval>4</ComponentMedieval>
-		</costList>
-		<statBases>
-			<WorkToMake>7500</WorkToMake>
-			<Bulk>5</Bulk>
-			<Mass>2</Mass>
-			<MeleeCounterParryBonus>1.1</MeleeCounterParryBonus>
-		</statBases>
-		<equippedAngleOffset>-65</equippedAngleOffset>
-		<equippedStatOffsets>
-			<MeleeCritChance>0.2</MeleeCritChance>
-			<MeleeParryChance>0.5</MeleeParryChance>
-			<MeleeDodgeChance>0.2</MeleeDodgeChance>
-		</equippedStatOffsets>
-		<techLevel>Medieval</techLevel>
-		<weaponTags>
-			<li>MedievalMelee</li>
-			<li>CE_OneHandedWeapon</li>
-		</weaponTags>
-		<tools>
-			<li Class="CombatExtended.ToolCE">
-				<label>pommel</label>
-				<capacities>
-					<li>Poke</li>
-				</capacities>
-				<power>5</power>
-				<cooldownTime>1.2</cooldownTime>
-				<chanceFactor>0.1</chanceFactor>
-				<armorPenetrationBlunt>4</armorPenetrationBlunt>
-				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<label>point</label>
-				<capacities>
-					<li>Stab</li>
-				</capacities>
-				<power>11</power>
-				<cooldownTime>1.3</cooldownTime>
-				<chanceFactor>1.33</chanceFactor>
-				<armorPenetrationBlunt>1.3</armorPenetrationBlunt>
-				<armorPenetrationSharp>4.2</armorPenetrationSharp>
-				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<label>edge</label>
-				<capacities>
-					<li>Cut</li>
-				</capacities>
-				<power>14</power>
-				<cooldownTime>1.4</cooldownTime>
-				<armorPenetrationBlunt>6</armorPenetrationBlunt>
-				<armorPenetrationSharp>3.5</armorPenetrationSharp>
-				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
-			</li>
-		</tools>
-		<recipeMaker>
-			<researchPrerequisite>LongBlades</researchPrerequisite>
-		</recipeMaker>
-		<weaponClasses>
-			<li>MeleePiercer</li>
-		</weaponClasses>
-		<thingCategories>
-			<li>SharpMelee</li>
-		</thingCategories>
-	</ThingDef>
-	-->
-
-
-	<!--
-	<ThingDef ParentName="WeaponMedievalBase">
-		<defName>MeleeWeapon_LongSword</defName>
-		<label>Longsword</label>
-		<description>Noble two-handed weapon of the ancients, the longsword can be used for slashing or stabbing and is deadly in the right hands.</description>
-		<graphicData>
-			<texPath>Things/Weapons/Melee/Longsword</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>InteractMelee</soundInteract>
-		<stuffCategories>
-			<li>StrongMetallic</li>
-		</stuffCategories>
-		<costStuffCount>65</costStuffCount>
-		<costList>
-			<ComponentMedieval>4</ComponentMedieval>
-		</costList>
-		<statBases>
-			<WorkToMake>8000</WorkToMake>
-			<Bulk>7</Bulk>
-			<Mass>3</Mass>
-			<MeleeCounterParryBonus>1.7</MeleeCounterParryBonus>
-		</statBases>
-		<equippedAngleOffset>-95</equippedAngleOffset>
-		<equippedStatOffsets>
-			<MeleeCritChance>0.3</MeleeCritChance>
-			<MeleeParryChance>0.7</MeleeParryChance>
-			<MeleeDodgeChance>0.4</MeleeDodgeChance>
-		</equippedStatOffsets>
-		<techLevel>Medieval</techLevel>
-		<weaponTags>
-			<li>MedievalMelee2H</li>
-		</weaponTags>
-		<tools>
-			<li Class="CombatExtended.ToolCE">
-				<label>pommel</label>
-				<capacities>
-					<li>Poke</li>
-				</capacities>
-				<power>6</power>
-				<cooldownTime>1.2</cooldownTime>
-				<chanceFactor>0.2</chanceFactor>
-				<armorPenetrationBlunt>4</armorPenetrationBlunt>
-				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<label>point</label>
-				<capacities>
-					<li>Stab</li>
-				</capacities>
-				<power>16</power>
-				<cooldownTime>1.8</cooldownTime>
-				<chanceFactor>1</chanceFactor>
-				<armorPenetrationBlunt>1.5</armorPenetrationBlunt>
-				<armorPenetrationSharp>4.8</armorPenetrationSharp>
-				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<label>edge</label>
-				<capacities>
-					<li>Cut</li>
-				</capacities>
-				<power>22</power>
-				<cooldownTime>2</cooldownTime>
-				<chanceFactor>0.6</chanceFactor>
-				<armorPenetrationBlunt>6.5</armorPenetrationBlunt>
-				<armorPenetrationSharp>3.7</armorPenetrationSharp>
-				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
-			</li>
-		</tools>
-		<recipeMaker>
-			<researchPrerequisite>LongBlades</researchPrerequisite>
-		</recipeMaker>
-		<weaponClasses>
-			<li>MeleePiercer</li>
-		</weaponClasses>
-		<thingCategories>
-			<li>SharpMelee</li>
-		</thingCategories>
-	</ThingDef>
-	-->
-
 
 	<ThingDef ParentName="WeaponMedievalBase">
 		<defName>MeleeWeapon_GreatSword</defName>
@@ -330,7 +166,6 @@
 		</thingCategories>
 	</ThingDef>
 
-
 	<ThingDef ParentName="WeaponMedievalBase">
 		<defName>MeleeWeapon_Morningstar</defName>
 		<label>Morningstar</label>
@@ -338,6 +173,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/Melee/Morningstar</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<weaponTags>
@@ -387,7 +223,6 @@
 			<researchPrerequisite>Smithing</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
 
 	<ThingDef ParentName="WeaponMedievalBase">
 		<defName>MeleeWeapon_Scimitar</defName>
@@ -468,7 +303,6 @@
 			<li>SharpMelee</li>
 		</thingCategories>
 	</ThingDef>
-
 
 	<ThingDef ParentName="WeaponMedievalBase">
 		<defName>MeleeWeapon_Glaive</defName>
@@ -556,11 +390,97 @@
 		</thingCategories>
 	</ThingDef>
 
-
 	<ThingDef ParentName="WeaponMedievalBase">
 		<defName>MeleeWeapon_Partisan</defName>
+		<label>Partisan</label>
+		<description>An improved version of the spear, designed for more skilled warriors. The "feathers" on the spearhead provide better defense against attacks and prevent the weapon from getting stuck in an opponent.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Melee/Partisan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<soundInteract>InteractMelee</soundInteract>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<ComponentMedieval>8</ComponentMedieval>
+		</costList>
+		<statBases>
+			<WorkToMake>8500</WorkToMake>
+			<Bulk>9</Bulk>
+			<Mass>4.5</Mass>
+			<MeleeCounterParryBonus>1.1</MeleeCounterParryBonus>
+		</statBases>
+		<equippedAngleOffset>-25</equippedAngleOffset>
+		<equippedStatOffsets>
+			<MeleeCritChance>0.2</MeleeCritChance>
+			<MeleeParryChance>0.4</MeleeParryChance>
+			<MeleeDodgeChance>0.8</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>MedievalMelee2H</li>
+		</weaponTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.0</cooldownTime>
+				<chanceFactor>0.15</chanceFactor>
+				<armorPenetrationBlunt>8</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>1</chanceFactor>
+				<armorPenetrationBlunt>13</armorPenetrationBlunt>
+				<armorPenetrationSharp>5.5</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.3</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationBlunt>6</armorPenetrationBlunt>
+				<armorPenetrationSharp>2.8</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
+		</recipeMaker>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.3,1.3</DrawSize>
+			</li>
+		</modExtensions>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<thingCategories>
+			<li>SharpMelee</li>
+			<li>HeavyMelee</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="WeaponMedievalBase">
+		<defName>MeleeWeapon_Halberd</defName>
 		<label>Halberd</label>
-		<description>A two-handed polearm with an axe head and a slunder.</description>
+		<description>A versatile, two-handed pole weapon from the Middle Ages. It can be used to deliver both sharp, cutting blows and armor-piercing thrusts.</description>
 		<graphicData>
 			<texPath>Things/Weapons/Melee/Halberd</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -725,7 +645,6 @@
 		</recipeMaker>
 	</ThingDef>
 
-
 	<ThingDef ParentName="WeaponMedievalBase">
 		<defName>NorbalMeleeWeapon_ShortSword</defName>
 		<label>Heroic Sword</label>
@@ -805,7 +724,6 @@
 		</recipeMaker>
 	</ThingDef>
 
-
 	<ThingDef ParentName="WeaponMedievalBase">
 		<defName>NorbalMeleeWeapon_Ax</defName>
 		<label>Norbal War Axe</label>
@@ -881,7 +799,6 @@
 			<researchPrerequisite>Smithing</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
 
 	<ThingDef ParentName="WeaponMedievalBase">
 		<defName>NorbalMeleeWeapon_Bigax</defName>
