@@ -90,7 +90,7 @@
 		<description>Concrete is a composite material composed of sand and rubble. It is a fluid material that bonds into a solid material over time. It can have metals added to create reinforced concrete, a durable and solid building material.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Concrete</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<stackLimit>150</stackLimit>
 		<techLevel>Industrial</techLevel>
@@ -271,7 +271,7 @@
 		<label>inorganic matter</label>
 		<description>A container of inorganic matter. It can be made at an inorganic matter converter from various types of raw resources or refined into specific resources. It can be used to feed a hadron collider for antimatter production.</description>
 		<graphicData>
-			<texPath>Things/Item/RMatter</texPath>
+			<texPath>Things/Item/Resource/InorganicMatter</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Metal_Drop</soundInteract>
