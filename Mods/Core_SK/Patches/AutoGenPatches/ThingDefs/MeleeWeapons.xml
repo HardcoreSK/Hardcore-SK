@@ -315,6 +315,11 @@
 			<thingCategories>
 				<li>SharpMelee</li>
 			</thingCategories>
+            <modExtensions Merge="True">
+                <li Class="CombatExtended.GunDrawExtension">
+                    <DrawSize>1.15,1.15</DrawSize>
+                </li>
+            </modExtensions>
 		</value>
 	</Operation>
 	<Operation Class="SK.PatchOperationReplaceExtended">

@@ -14,6 +14,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/Melee/Dagger</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<soundInteract>InteractMelee</soundInteract>
 		<stuffCategories>
@@ -29,7 +30,7 @@
 			<Mass>0.5</Mass>
 			<MeleeCounterParryBonus>1.6</MeleeCounterParryBonus>
 		</statBases>
-		<equippedAngleOffset>-25</equippedAngleOffset>
+		<equippedAngleOffset>-45</equippedAngleOffset>
 		<equippedStatOffsets>
 			<CookSpeed>0.3</CookSpeed>
 			<ButcheryFleshSpeed>0.3</ButcheryFleshSpeed>
@@ -78,6 +79,11 @@
 		<recipeMaker>
 			<researchPrerequisite>Smithing</researchPrerequisite>
 		</recipeMaker>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>0.7,0.7</DrawSize>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="WeaponMedievalBase">
@@ -87,6 +93,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/Melee/Zweihander</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<soundInteract>InteractMelee</soundInteract>
 		<stuffCategories>
@@ -102,7 +109,7 @@
 			<Mass>4</Mass>
 			<MeleeCounterParryBonus>1.4</MeleeCounterParryBonus>
 		</statBases>
-		<equippedAngleOffset>-20</equippedAngleOffset>
+		<equippedAngleOffset>-90</equippedAngleOffset>
 		<equippedStatOffsets>
 			<MeleeCritChance>0.5</MeleeCritChance>
 			<MeleeParryChance>0.6</MeleeParryChance>
@@ -154,7 +161,7 @@
 		</recipeMaker>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.2,1.2</DrawSize>
+				<DrawSize>1.4,1.4</DrawSize>
 			</li>
 		</modExtensions>
 		<weaponClasses>
@@ -231,6 +238,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/Melee/Scimitar</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<soundInteract>InteractMelee</soundInteract>
 		<stuffCategories>
@@ -246,7 +254,7 @@
 			<Mass>3</Mass>
 			<MeleeCounterParryBonus>1.0</MeleeCounterParryBonus>
 		</statBases>
-		<equippedAngleOffset>-45</equippedAngleOffset>
+		<equippedAngleOffset>-75</equippedAngleOffset>
 		<equippedStatOffsets>
 			<MeleeCritChance>0.6</MeleeCritChance>
 			<MeleeParryChance>0.35</MeleeParryChance>
@@ -293,6 +301,11 @@
 				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.1,1.1</DrawSize>
+			</li>
+		</modExtensions>
 		<recipeMaker>
 			<researchPrerequisite>LongBlades</researchPrerequisite>
 		</recipeMaker>
@@ -311,6 +324,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/Melee/Glaive</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<soundInteract>InteractMelee</soundInteract>
 		<stuffCategories>
@@ -326,7 +340,7 @@
 			<Mass>5</Mass>
 			<MeleeCounterParryBonus>0.9</MeleeCounterParryBonus>
 		</statBases>
-		<equippedAngleOffset>-25</equippedAngleOffset>
+		<equippedAngleOffset>-35</equippedAngleOffset>
 		<equippedStatOffsets>
 			<MeleeCritChance>0.5</MeleeCritChance>
 			<MeleeParryChance>0.15</MeleeParryChance>
@@ -413,7 +427,7 @@
 			<Mass>4.5</Mass>
 			<MeleeCounterParryBonus>1.1</MeleeCounterParryBonus>
 		</statBases>
-		<equippedAngleOffset>-25</equippedAngleOffset>
+		<equippedAngleOffset>-35</equippedAngleOffset>
 		<equippedStatOffsets>
 			<MeleeCritChance>0.2</MeleeCritChance>
 			<MeleeParryChance>0.4</MeleeParryChance>
@@ -484,6 +498,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/Melee/Halberd</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<soundInteract>InteractMelee</soundInteract>
 		<stuffCategories>
@@ -499,7 +514,7 @@
 			<Mass>5</Mass>
 			<MeleeCounterParryBonus>0.9</MeleeCounterParryBonus>
 		</statBases>
-		<equippedAngleOffset>-25</equippedAngleOffset>
+		<equippedAngleOffset>-35</equippedAngleOffset>
 		<equippedStatOffsets>
 			<MeleeCritChance>0.3</MeleeCritChance>
 			<MeleeParryChance>0.2</MeleeParryChance>
@@ -564,12 +579,13 @@
 	</ThingDef>
 
 	<ThingDef ParentName="WeaponMedievalBase">
-		<defName>NorbalMeleeWeapon_ShortSwordtwo</defName>
-		<label>Norbal Sword</label>
-		<description>Reliable and deadly one-handed sword. Comes with added Nordic flair.</description>
+		<defName>MeleeWeapon_LongSeax</defName>
+		<label>Long Seax</label>
+		<description>A reliable and sharp, single-edged, one-handed blade with a distinctive shape. Suitable for both combat and everyday tasks.</description>
 		<graphicData>
-			<texPath>Things/Weapons/Norbal/NorbalierSword</texPath>
+			<texPath>Things/Weapons/Melee/LongSeax</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<soundInteract>InteractMelee</soundInteract>
 		<techLevel>Medieval</techLevel>
@@ -591,7 +607,7 @@
 			<Mass>2.2</Mass>
 			<MeleeCounterParryBonus>1.2</MeleeCounterParryBonus>
 		</statBases>
-		<equippedAngleOffset>-65</equippedAngleOffset>
+		<equippedAngleOffset>-45</equippedAngleOffset>
 		<equippedStatOffsets>
 			<MeleeCritChance>0.2</MeleeCritChance>
 			<MeleeParryChance>0.3</MeleeParryChance>
@@ -646,12 +662,13 @@
 	</ThingDef>
 
 	<ThingDef ParentName="WeaponMedievalBase">
-		<defName>NorbalMeleeWeapon_ShortSword</defName>
-		<label>Heroic Sword</label>
-		<description>A sharp two-handed sword used only by the fiercest norbal warriors.</description>
+		<defName>MeleeWeapon_RuneSword</defName>
+		<label>Rune Sword</label>
+		<description>An incredibly sharp two-handed sword bearing mysterious runic patterns. Such patterns are typically inscribed by a tribe’s "weapon shaman" onto the swords of their finest warriors, ensuring the blades cut better and remain sharp at all times.</description>
 		<graphicData>
-			<texPath>Things/Weapons/Norbal/NorbalSword</texPath>
+			<texPath>Things/Weapons/Melee/RuneSword</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<soundInteract>InteractMelee</soundInteract>
 		<techLevel>Medieval</techLevel>
@@ -671,7 +688,7 @@
 			<Mass>3</Mass>
 			<MeleeCounterParryBonus>1.1</MeleeCounterParryBonus>
 		</statBases>
-		<equippedAngleOffset>-65</equippedAngleOffset>
+		<equippedAngleOffset>-45</equippedAngleOffset>
 		<equippedStatOffsets>
 			<MeleeCritChance>0.7</MeleeCritChance>
 			<MeleeParryChance>0.6</MeleeParryChance>
@@ -722,6 +739,11 @@
 		<recipeMaker>
 			<researchPrerequisite>Smithing</researchPrerequisite>
 		</recipeMaker>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.2,1.2</DrawSize>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="WeaponMedievalBase">
