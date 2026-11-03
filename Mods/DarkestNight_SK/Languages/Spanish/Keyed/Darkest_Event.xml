@@ -1,20 +1,47 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-  <LabelBV>¡Una fuerza vil de la oscuridad ha llegado!</LabelBV>
-  <DescBV>Mientras observas la oscuridad que se acerca, sabes que la muerte ha llegado a Rimworld. Te das vuelta para gritar a los demás... "¡CORRAN!" Pero la oscuridad ya está sobre ti. Sólo la oscuridad y tus propios gritos permanecen ... no puedes escapar de este destino. Lo último que sientes, antes de caer en el abismo, es que tu carne es arrancada de los huesos. La noche más oscura ha llegado. ¡Prepárate, pues la oscuridad lo consume todo!\n\n¡Quedate cerca de las fuentes de luz para protegerte!</DescBV>
-  <DarknessComesA>La oscuridad engullirá este RimWorld en 60.</DarknessComesA>
-  <DarknessComesB>La oscuridad engullirá este RimWorld en 30.</DarknessComesB>
-  <DarknessComesC>La oscuridad engullirá este RimWorld en 15.</DarknessComesC>
-  <DarknessComesD>La oscuridad engullirá este RimWorld en 5.</DarknessComesD>
-  <DarknessComesE>La oscuridad engullirá este RimWorld en 4.</DarknessComesE>
-  <DarknessComesF>La oscuridad engullirá este RimWorld en 3.</DarknessComesF>
-  <DarknessComesG>La oscuridad engullirá este RimWorld en 2.</DarknessComesG>
-  <DarknessComesH>La oscuridad engullirá este RimWorld en 1.</DarknessComesH>
-  <DarknessComes>¡La oscuridad te esta buscando!</DarknessComes>
-  <OmniousDarkLabel>Oscuridad omiosa</OmniousDarkLabel>
-  <OmniousDarkDesc>La oscuridad se ha movido, pero no estás a salvo de su camino...\n\nLa oscuridad se reunirá contigo de nuevo, pronto...</OmniousDarkDesc>
-  <TakenDC>La sombra ha tomado a </TakenDC>
-  <IntoDS>en la oscuridad.</IntoDS>
+  <LabelBV>La oscuridad se acerca</LabelBV>
+  <DescBV>El señor de la oscuridad ha venido por vuestras almas... ¡preparaos para la oscuridad y un frío espantoso!\n\nQuedaos cerca de la luz. Solo ella os salvará.</DescBV>
+  <DarknessComesA>La oscuridad engullirá el mundo de RimWorld en 60.</DarknessComesA>
+  <DarknessComesB>La oscuridad engullirá el mundo de RimWorld en 30.</DarknessComesB>
+  <DarknessComesC>La oscuridad engullirá el mundo de RimWorld en 15.</DarknessComesC>
+  <DarknessComesD>La oscuridad engullirá el mundo de RimWorld en 5.</DarknessComesD>
+  <DarknessComesE>La oscuridad engullirá el mundo de RimWorld en 4.</DarknessComesE>
+  <DarknessComesF>La oscuridad engullirá el mundo de RimWorld en 3.</DarknessComesF>
+  <DarknessComesG>La oscuridad engullirá el mundo de RimWorld en 2.</DarknessComesG>
+  <DarknessComesH>La oscuridad engullirá el mundo de RimWorld en 1.</DarknessComesH>
+  <DarknessComes>¡La oscuridad ha venido por vosotros!</DarknessComes>
+  <OmniousDarkLabel>La oscuridad se retira</OmniousDarkLabel>
+  <OmniousDarkDesc>La oscuridad se retira, pero no os sintáis a salvo...\n\nLa oscuridad volverá por vosotros más tarde...</OmniousDarkDesc>
+  <TakenDC>La sombra se ha llevado a {PAWN_nameDef} a la oscuridad.</TakenDC>
+
+  <DarkestNightSK.ModVersion>Versión del mod instalada: {0}</DarkestNightSK.ModVersion>
+
+  <DarkestNightSK.event1Only>Evento de oscuridad pasiva: solo este evento</DarkestNightSK.event1Only>
+  <DarkestNightSK.event1Chance>Factor de oscuridad pasiva (predeterminado: 0.5): {0}</DarkestNightSK.event1Chance>
+  <DarkestNightSK.event1Desc>El evento de oscuridad pasiva es más tranquilo. La oscuridad no os persigue a propósito, solo si os acercáis. También son más lentos.</DarkestNightSK.event1Desc>
+  <DarkestNightSK.event1Disabled>Evento de oscuridad pasiva: desactivado</DarkestNightSK.event1Disabled>
+
+  <LabelBVPassive>Oscuridad pasiva</LabelBVPassive>
+  <DescBVPassive>A lo lejos se divisa una oscuridad extraña pero calmada, que se acerca lentamente a vuestro asentamiento.</DescBVPassive>
+
+  <DarkestNightSK.event2Only>Evento de oscuridad que se aproxima: solo este evento</DarkestNightSK.event2Only>
+  <DarkestNightSK.event2Chance>Evento de oscuridad que se aproxima (predeterminado: 0.3): {0}</DarkestNightSK.event2Chance>
+  <DarkestNightSK.event2Desc>El evento de oscuridad que se aproxima es un evento normal, salvo que veis la oscuridad en el horizonte antes, lo que os da más tiempo para prepararos.</DarkestNightSK.event2Desc>
+  <DarkestNightSK.event2Disabled>Evento de oscuridad que se aproxima: desactivado</DarkestNightSK.event2Disabled>
+
+  <LabelBVLooming>Oscuridad que se aproxima</LabelBVLooming>
+  <DescBVLooming>En el horizonte se divisa una oscuridad extraña que se acerca al asentamiento bastante rápido. Más vale que os preparéis.</DescBVLooming>
+
+  <DarkestNightSK.event3Only>Evento de oscuridad normal: solo este evento</DarkestNightSK.event3Only>
+  <DarkestNightSK.event3Chance>Factor de oscuridad normal (predeterminado: 0.2): {0}</DarkestNightSK.event3Chance>
+  <DarkestNightSK.event3Desc>El evento de oscuridad normal es un evento normal. Solo tenéis 60 segundos para prepararos. La oscuridad perseguirá a vuestros colonos y romperá vuestras puertas.</DarkestNightSK.event3Desc>
+  <DarkestNightSK.event3Disabled>Evento de oscuridad normal: desactivado</DarkestNightSK.event3Disabled>
+
+  <DarkestNightSK.voidCountMax>Máximo de sombras (predeterminado: 150): {0}</DarkestNightSK.voidCountMax>
+  <DarkestNightSK.voidCountMaxDesc>Cuántas sombras pueden existir a la vez. Bájalo si el evento causa lag.</DarkestNightSK.voidCountMaxDesc>
+  <DarkestNightSK.voidSpawnInterval>Intervalo de aparición de sombras (predeterminado: 20): {0}</DarkestNightSK.voidSpawnInterval>
+  <DarkestNightSK.voidSpawnIntervalDesc>Máximo de tics entre intentos de aparición. La espera real es aleatoria de 1 a este valor. Más alto es más fácil y menos costoso.</DarkestNightSK.voidSpawnIntervalDesc>
 
 </LanguageData>

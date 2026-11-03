@@ -4,9 +4,15 @@
     <defName>Darkness</defName>
     <conditionClass>SK.Events.GameCondition_Darkness</conditionClass>
     <label>Darkness</label>
-    <description>An unusual dark and cold... night.</description>
-    <endMessage>The darkness is gone</endMessage>
+    <description>Unusual darkness, and voices in the dark that freeze the blood in your veins.</description>
+    <endMessage>The unusual darkness has gone.</endMessage>
+    <weatherDef>Dark_Stage1</weatherDef>
+    <canBePermanent>true</canBePermanent>
+    <natural>false</natural>
+    <allowUnderground>false</allowUnderground>
+    <preventNeutralVisitors>true</preventNeutralVisitors>
     <pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
+    <displayOnUI>false</displayOnUI>
   </GameConditionDef>
 
 </Defs>

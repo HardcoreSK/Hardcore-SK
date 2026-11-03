@@ -1,25 +1,47 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-  <LabelBV>암흑의 비열한 포스가 도착했습니다.!</LabelBV>
-  <DescBV>당신은 암흑이 다가오는 것을 보고 림월드에 죽음이 닥치리라고 직감했습니다... 
-다른이들에게 소리지르며 도망쳐!라고 외쳤지만 암흑은 이미 당신의 지척에 도달했습니다. 
-오직 당신의 비명과 캄캄한 어둠만이 남았습니다. 이 절망 속에서 벗어날 수 없습니다.
-심연속으로 빠지기전에 마지막으로 당신이 느낀것은 뼈에 사무치는 외로움과 고독이였습니다.
-빛 한점 없는 새카만 밤이 세상을 삼켰습니다. 
-이 절망을 벗어나기 위해 준비하세요! 어둠이 모든 것을 삼키기 전에!! \n\n 빛 속에서 어둠이 물러나기만을 견디세요.</DescBV>
-  <DarknessComesA>암흑이 이 지역을 집어 삼키는 중 : 60 남음.</DarknessComesA>
-  <DarknessComesB>암흑이 이 지역을 집어 삼키는 중 : 30 남음.</DarknessComesB>
-  <DarknessComesC>암흑이 이 지역을 집어 삼키는 중 : 15 남음.</DarknessComesC>
-  <DarknessComesD>암흑이 이 지역을 집어 삼키는 중 : 5 남음.</DarknessComesD>
-  <DarknessComesE>암흑이 이 지역을 집어 삼키는 중 : 4 남음.</DarknessComesE>
-  <DarknessComesF>암흑이 이 지역을 집어 삼키는 중 : 3 남음.</DarknessComesF>
-  <DarknessComesG>암흑이 이 지역을 집어 삼키는 중 : 2 남음.</DarknessComesG>
-  <DarknessComesH>암흑이 이 지역을 집어 삼키는 중 : 1 남음.</DarknessComesH>
-  <DarknessComes>암흑이 플레이어를 집어 삼키러 옵니다!</DarknessComes>
-  <OmniousDarkLabel>불길한 암흑</OmniousDarkLabel>
-  <OmniousDarkDesc>운 좋게도 어둠이 물러갔지만 완전히 사라진건 아닙니다... \n\n 언젠가 암흑은 다시 찾아올 것입니다...</OmniousDarkDesc>
-  <TakenDC>그림자를 강탈 당했습니다. </TakenDC>
-  <IntoDS>어둠속으로...</IntoDS>
+  <LabelBV>어둠이 다가온다</LabelBV>
+  <DescBV>어둠의 군주가 너희의 영혼을 찾아왔다... 어둠과 끔찍한 추위에 대비하라!\n\n빛 가까이에 있어라. 오직 그것만이 너희를 구할 것이다.</DescBV>
+  <DarknessComesA>어둠이 RimWorld의 세계를 삼키기까지 60.</DarknessComesA>
+  <DarknessComesB>어둠이 RimWorld의 세계를 삼키기까지 30.</DarknessComesB>
+  <DarknessComesC>어둠이 RimWorld의 세계를 삼키기까지 15.</DarknessComesC>
+  <DarknessComesD>어둠이 RimWorld의 세계를 삼키기까지 5.</DarknessComesD>
+  <DarknessComesE>어둠이 RimWorld의 세계를 삼키기까지 4.</DarknessComesE>
+  <DarknessComesF>어둠이 RimWorld의 세계를 삼키기까지 3.</DarknessComesF>
+  <DarknessComesG>어둠이 RimWorld의 세계를 삼키기까지 2.</DarknessComesG>
+  <DarknessComesH>어둠이 RimWorld의 세계를 삼키기까지 1.</DarknessComesH>
+  <DarknessComes>어둠이 너희를 찾아왔다!</DarknessComes>
+  <OmniousDarkLabel>어둠이 물러난다</OmniousDarkLabel>
+  <OmniousDarkDesc>어둠이 물러나지만, 안심하지 마라...\n\n어둠은 나중에 다시 너희를 찾아올 것이다...</OmniousDarkDesc>
+  <TakenDC>그림자가 {PAWN_nameDef}을(를) 어둠 속으로 데려갔다.</TakenDC>
+
+  <DarkestNightSK.ModVersion>설치된 모드 버전: {0}</DarkestNightSK.ModVersion>
+
+  <DarkestNightSK.event1Only>수동적 어둠 사건: 이 사건만</DarkestNightSK.event1Only>
+  <DarkestNightSK.event1Chance>수동적 어둠 계수 (기본값: 0.5): {0}</DarkestNightSK.event1Chance>
+  <DarkestNightSK.event1Desc>수동적 어둠 사건은 더 조용한 사건이다. 어둠은 일부러 쫓지 않고, 가까이 다가갈 때만 반응한다. 그림자도 더 느리다.</DarkestNightSK.event1Desc>
+  <DarkestNightSK.event1Disabled>수동적 어둠 사건: 비활성화</DarkestNightSK.event1Disabled>
+
+  <LabelBVPassive>수동적 어둠</LabelBVPassive>
+  <DescBVPassive>멀리서 이상하지만 고요한 어둠이 보이며, 정착지를 향해 천천히 다가오고 있다.</DescBVPassive>
+
+  <DarkestNightSK.event2Only>다가오는 어둠 사건: 이 사건만</DarkestNightSK.event2Only>
+  <DarkestNightSK.event2Chance>다가오는 어둠 사건 (기본값: 0.3): {0}</DarkestNightSK.event2Chance>
+  <DarkestNightSK.event2Desc>다가오는 어둠 사건은 일반 사건과 같지만, 수평선의 어둠이 더 일찍 다가오는 것이 보여 준비할 시간이 더 있다.</DarkestNightSK.event2Desc>
+  <DarkestNightSK.event2Disabled>다가오는 어둠 사건: 비활성화</DarkestNightSK.event2Disabled>
+
+  <LabelBVLooming>다가오는 어둠</LabelBVLooming>
+  <DescBVLooming>수평선에 이상한 어둠이 보이며, 정착지를 향해 꽤 빠르게 다가오고 있다. 준비하는 편이 낫다.</DescBVLooming>
+
+  <DarkestNightSK.event3Only>일반 어둠 사건: 이 사건만</DarkestNightSK.event3Only>
+  <DarkestNightSK.event3Chance>일반 어둠 계수 (기본값: 0.2): {0}</DarkestNightSK.event3Chance>
+  <DarkestNightSK.event3Desc>일반 어둠 사건은 보통의 사건이다. 준비할 시간은 60초뿐이다. 어둠이 정착민을 쫓고 문을 부술 것이다.</DarkestNightSK.event3Desc>
+  <DarkestNightSK.event3Disabled>일반 어둠 사건: 비활성화</DarkestNightSK.event3Disabled>
+
+  <DarkestNightSK.voidCountMax>최대 그림자 수 (기본값: 150): {0}</DarkestNightSK.voidCountMax>
+  <DarkestNightSK.voidCountMaxDesc>한 번에 존재할 수 있는 그림자 수입니다. 사건이 버벅이면 이 값을 낮추세요.</DarkestNightSK.voidCountMaxDesc>
+  <DarkestNightSK.voidSpawnInterval>그림자 생성 간격 (기본값: 20): {0}</DarkestNightSK.voidSpawnInterval>
+  <DarkestNightSK.voidSpawnIntervalDesc>생성 시도 사이의 최대 틱입니다. 실제 대기는 1부터 이 값까지 무작위입니다. 값이 클수록 쉽고 성능에 유리합니다.</DarkestNightSK.voidSpawnIntervalDesc>
 
 </LanguageData>

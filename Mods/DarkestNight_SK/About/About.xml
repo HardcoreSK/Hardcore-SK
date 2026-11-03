@@ -4,25 +4,24 @@
 	<author>Skyarkhangel</author>
 	<url>https://github.com/skyarkhangel/Hardcore-SK</url>
 	<supportedVersions>
-		<li>1.5</li>
+		<li>1.6</li>
 	</supportedVersions>
 	<packageId>skyarkhangel.darkestnight</packageId>
 	<description>
 [English]
 
-As you watch the approaching darkness you know death has come to Rimworld.. 
-You turn to yell for the others.. "RUN!" but the Darkness is already upon you. 
-Only blackness and your own screams remain...you cannot escape this fate.
-The last thing you feel, before you fall into the Abyss, is your flesh being torn from your bones.
-The Darkest Night has arrived.
+When you watch the approaching darkness, you know that death has come to RimWorld...
+You turn to call the others. "Run!" But the Darkness is already beside you.
+Your screams and pleas drown in the enveloping darkness... You cannot escape this fate.
+The last thing you feel, before you fall into the Abyss, is your flesh torn from your bones.
+The darkest night has come.
 
-Darkest Night is an event mod for Rimworld, that will make your heart pounding much faster! A lot of impressions by SK Team, Guaranteed. 
-In this event darkness has come to Rimworld and with it, death.
-Your colony must survive a darkness, so black, nothing can be seen. It is also inhabited by flesh craving creatures. No defenses can save your people. Only the light can keep them at bay.
-Once the Darkest Night starts, you will be given a small window to prepare. How you prepare is up to you.
-Will you huddle around a campfire or the kitchen lights while your battieries run dry? 
-Choose carefully. 
-Only two outcomes are certain: Live and see the light again, or die by the claws and teeth of that, which you cannot see, nor fight.
+Darkest Night is an event mod for RimWorld that will make your heart beat much faster. Plenty of impressions from the SK Team, guaranteed.
+When darkness has come to RimWorld, and death with it, your colony must survive a darkness so black that nothing can be seen. The darkness is thick with creatures that hunger for your flesh. No defenses will save your people. Only the light can hold the monsters in fear.
+Before the darkest night begins, you will be shown a small window in which to prepare. How thoroughly you prepare is up to you.
+Will you hide by the campfire or in the kitchen while your crackers dry out?
+Choose carefully.
+Only two outcomes are known: survive and see the light again, or die by the claws and teeth of those you will not even have time to make out.
 
 [Russian]
 
@@ -41,28 +40,36 @@ Darkest Night - это мод генерации событий для Rimworld,
 
 [Spanish]
 
-Mientras observa la oscuridad que se acerca, sabe que la muerte ha llegado a Rimworld.
-Te vuelves a gritar a los otros .. "¡CORRAN!" pero la Oscuridad ya está sobre ti.
-Solo la negrura y tus propios gritos permanecen ... no puedes escapar de este destino.
-Lo último que sientes, antes de caer en el Abismo, es la carne arrancandose de tus huesos.
-La noche más oscura ha llegado.
+Cuando observáis la oscuridad que se acerca, sabéis que la muerte ha llegado a RimWorld...
+Os volvéis para llamar a los demás. «¡Corred!» Pero la Oscuridad ya está a vuestro lado.
+Vuestros gritos y súplicas se ahogan en la oscuridad que os envuelve... No podéis escapar de este destino.
+Lo último que sentís, antes de caer en el Abismo, es vuestra carne arrancada de los huesos.
+Ha llegado la noche más oscura.
 
-Darkest Night es un mod de evento para Rimworld, ¡que hará que tu corazón palpite mucho más rápido! Muchas impresiones de SK Team, Guaranteed.
-En este caso, la oscuridad ha llegado a Rimworld y, con ella, a la muerte.
-Tu colonia debe sobrevivir a la oscuridad, tan negra, que no se puede ver nada. También está habitado por criaturas que anhelan la carne. Ninguna defensa puede salvar a tu gente. Solo la luz puede mantenerlos a raya.
-Una vez que comience la Noche más oscura, se te dará una pequeña ventana para prepararte. Cómo te preparas depende de ti.
-¿Te acurrucarás alrededor de una fogata o las luces de la cocina mientras tus baterias se agotan?
-Elija cuidadosamente.
-Solo dos resultados son ciertos: Vive y vuelve a ver la luz, o muere por las garras y los dientes de eso, que no puedes ver, ni combatir.
+Darkest Night es un mod de eventos para RimWorld que hará que el corazón os lata mucho más rápido. El equipo SK garantiza muchas impresiones.
+Cuando la oscuridad ha llegado a RimWorld, y la muerte con ella, vuestra colonia debe sobrevivir en una oscuridad tan negra que no se ve nada. La oscuridad está llena de criaturas que ansían vuestra carne. Ninguna defensa salvará a vuestra gente. Solo la luz puede mantener a los monstruos a raya.
+Antes de que empiece la noche más oscura, se os mostrará una pequeña ventana para prepararos. Lo bien que os preparéis depende de vosotros.
+¿Os esconderéis junto a la hoguera o en la cocina mientras se secan vuestras galletas?
+Elegid con cuidado.
+Solo se conocen dos desenlaces: sobrevivir y volver a ver la luz, o morir por las garras y los dientes de aquellos a quienes ni siquiera tendréis tiempo de distinguir.
 
 	</description>
 	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
 	</modDependencies>
 	<loadBefore>
 	</loadBefore>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+		<li>brrainz.harmony</li>
+		<li>CETeam.CombatExtended</li>
 	</loadAfter>
 	<incompatibleWith>
 	</incompatibleWith>

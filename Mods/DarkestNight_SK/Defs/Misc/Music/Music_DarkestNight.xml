@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MusicSequenceDef>
+    <defName>DarkestNight</defName>
+    <loopDelayRange>1~2</loopDelayRange>
+    <fadeoutLastSongDuration>5</fadeoutLastSongDuration>
+    <minTimeToPlay>30</minTimeToPlay>
+    <loop>true</loop>
+    <canBeInterrupted>false</canBeInterrupted>
+    <song>Darkest</song>
+  </MusicSequenceDef>
+
+  <MusicTransitionDef>
+    <defName>DarkestNight</defName>
+    <workerType>SK.Events.MusicTransition_DarkestNight</workerType>
+    <sequence>DarkestNight</sequence>
+    <priority>150</priority>
+    <overridesInterruptions>true</overridesInterruptions>
+  </MusicTransitionDef>
+
+  <MusicSequenceDef>
+    <defName>DarkestNightEnd</defName>
+    <song>Noodle_Planetfall_a</song>
+    <loop>false</loop>
+    <canBeInterrupted>false</canBeInterrupted>
+    <useTransitionForLifetime>false</useTransitionForLifetime>
+    <fadeoutLastSongDuration>0</fadeoutLastSongDuration>
+  </MusicSequenceDef>
+
+  <MusicTransitionDef>
+    <defName>DarkestNightEnd</defName>
+    <workerType>SK.Events.MusicTransition_DarkestEnd</workerType>
+    <sequence>DarkestNightEnd</sequence>
+    <priority>10</priority>
+  </MusicTransitionDef>
+
+</Defs>
