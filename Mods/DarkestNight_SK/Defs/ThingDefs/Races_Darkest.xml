@@ -17,8 +17,12 @@
 			<li>
 				<compClass>CompAttachBase</compClass>
 			</li>
-			<li>
-				<compClass>SK.Events.CompVoidShadow</compClass>
+			<li Class="SK.Events.CompProperties_VoidShadow">
+				<searchRadius>65</searchRadius>
+				<ignoredFleshTypes>
+					<li MayRequire="skyarkhangel.skynet">Skynet</li>
+					<li MayRequire="ChJees.Androids">ChJDroid</li>
+				</ignoredFleshTypes>
 			</li>
 		</comps>
 		<drawGUIOverlay>false</drawGUIOverlay>
