@@ -1,43 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-  <LabelBV>Тьма наступает</LabelBV>
-  <DescBV>Лорд тьмы пришел за вашими душами... приготовьтесь ко тьме и жуткому холоду!\n\nДержитесь рядом со светом. Только он спасёт вас.</DescBV>
-  <DarknessComesA>Тьма поглотит мир RimWorld'a через 60.</DarknessComesA> 
-  <DarknessComesB>Тьма поглотит мир RimWorld'a через 30.</DarknessComesB> 
-  <DarknessComesC>Тьма поглотит мир RimWorld'a через 15.</DarknessComesC> 
-  <DarknessComesD>Тьма поглотит мир RimWorld'a через 5.</DarknessComesD> 
-  <DarknessComesE>Тьма поглотит мир RimWorld'a через 4.</DarknessComesE> 
+  <DarknessComesA>Тьма поглотит мир RimWorld'a через 60.</DarknessComesA>
+  <DarknessComesB>Тьма поглотит мир RimWorld'a через 30.</DarknessComesB>
+  <DarknessComesC>Тьма поглотит мир RimWorld'a через 15.</DarknessComesC>
+  <DarknessComesD>Тьма поглотит мир RimWorld'a через 5.</DarknessComesD>
+  <DarknessComesE>Тьма поглотит мир RimWorld'a через 4.</DarknessComesE>
   <DarknessComesF>Тьма поглотит мир RimWorld'a через 3.</DarknessComesF>
   <DarknessComesG>Тьма поглотит мир RimWorld'a через 2.</DarknessComesG>
-  <DarknessComesH>Тьма поглотит мир RimWorld'a через 1.</DarknessComesH> 
-  <DarknessComes>Тьма пришла за вами!</DarknessComes> 
-  <OmniousDarkLabel>Тьма отступает</OmniousDarkLabel> 
-  <OmniousDarkDesc>Тьма отступает, но не чувствуйте себя в безопасности...\n\nТьма вернётся за вами позже...</OmniousDarkDesc> 
+  <DarknessComesH>Тьма поглотит мир RimWorld'a через 1.</DarknessComesH>
+  <DarknessComes>Тьма пришла за вами!</DarknessComes>
+  <OmniousDarkLabel>Тьма отступает</OmniousDarkLabel>
+  <OmniousDarkDesc>Тьма отступает, но не чувствуйте себя в безопасности...\n\nТьма вернётся за вами позже...</OmniousDarkDesc>
   <TakenDC>Тень забрала {PAWN_nameDef} во тьму.</TakenDC>
 
   <DarkestNightSK.ModVersion>Установленная мод-версия: {0}</DarkestNightSK.ModVersion>
 
-  <DarkestNightSK.event1Only>Событие пассивной темноты: только это событие</DarkestNightSK.event1Only>
-  <DarkestNightSK.event1Chance>Пассивный фактор темноты (по умолчанию: 0,5): {0}</DarkestNightSK.event1Chance>
-  <DarkestNightSK.event1Desc>Событие пассивной темноты — это более тихое событие, когда темнота не преследует вас намеренно, только если вы приблизитесь. Они также медленнее.</DarkestNightSK.event1Desc>
-  <DarkestNightSK.event1Disabled>Событие пассивной темноты: отключено</DarkestNightSK.event1Disabled>
-
-  <LabelBVPassive>Пассивная тьма</LabelBVPassive>
-  <DescBVPassive>Вдалеке замечается странная, но спокойная тьма, медленно приближающаяся к вашему поселению.</DescBVPassive>
-
-  <DarkestNightSK.event2Only>Событие Приближение тьмы: только это событие</DarkestNightSK.event2Only>
-  <DarkestNightSK.event2Chance>Событие Приближение тьмы (по умолчанию: 0,3): {0}</DarkestNightSK.event2Chance>
-  <DarkestNightSK.event2Desc>Событие Приближение тьмы — это обычное событие, за исключением того, что вы видите, что тьма на горизонте наступает раньше, что дает вам больше времени для подготовки.</DarkestNightSK.event2Desc>
-  <DarkestNightSK.event2Disabled>Событие Приближение тьмы: отключено</DarkestNightSK.event2Disabled>
-
-  <LabelBVLooming>Приближающаяся тьма</LabelBVLooming>
-  <DescBVLooming>На горизонте замечается странная тьма, довольно быстро приближающаяся к поселению. Ты лучше подготовься.</DescBVLooming>
-
-  <DarkestNightSK.event3Only>Обычное темное событие: только это событие</DarkestNightSK.event3Only>
-  <DarkestNightSK.event3Chance>Нормальный коэффициент темноты (по умолчанию: 0,2): {0}</DarkestNightSK.event3Chance>
-  <DarkestNightSK.event3Desc>Обычное событие тьмы — это обычное событие, у вас есть всего 60 секунд на подготовку, тьма выследит ваших колонистов и сломает ваши двери.</DarkestNightSK.event3Desc>
-  <DarkestNightSK.event3Disabled>Событие нормальной темноты: отключено</DarkestNightSK.event3Disabled>
+  <!-- {0} = название события, {1} = вес по умолчанию, {2} = текущий вес -->
+  <DarkestNightSK.eventOnly>{0}: только это событие</DarkestNightSK.eventOnly>
+  <DarkestNightSK.eventWeight>{0} (по умолчанию: {1}): {2}</DarkestNightSK.eventWeight>
+  <DarkestNightSK.eventDisabled>{0}: отключено</DarkestNightSK.eventDisabled>
 
   <DarkestNightSK.voidCountMax>Максимум теней (по умолчанию: 150): {0}</DarkestNightSK.voidCountMax>
   <DarkestNightSK.voidCountMaxDesc>Сколько теней может существовать одновременно. Уменьшите, если событие вызывает лаги.</DarkestNightSK.voidCountMaxDesc>
