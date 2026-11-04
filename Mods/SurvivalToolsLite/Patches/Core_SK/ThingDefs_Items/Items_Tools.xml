@@ -18,6 +18,7 @@
                 defName="Tool_PrimitiveHandaxe" or
                 defName="Tool_PrimitiveHammer" or
                 defName="Tool_PrimitiveSickle" or
+                defName="MeleeWeapon_Tanto" or
                 defName="MeleeWeapon_Bonesaw" or
                 defName="MeleeWeapon_Monkeywrench" or
                 defName="MeleeWeapon_Sledgehammer"]</xpath>
@@ -257,6 +258,23 @@
 			</li>
 
 			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Monkeywrench"]/equippedStatOffsets</xpath>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Monkeywrench"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.SurvivalToolProperties">
+						<baseWorkStatFactors>
+							<ConstructionSpeed>1.4</ConstructionSpeed>
+						</baseWorkStatFactors>
+						<defaultSurvivalToolAssignmentTags>
+							<li>Constructor</li>
+						</defaultSurvivalToolAssignmentTags>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName="MeleeWeapon_Sledgehammer"]/equippedStatOffsets</xpath>
 			</li>
 			<li Class="PatchOperationAddModExtension">
@@ -270,6 +288,34 @@
 							<li>Constructor</li>
 						</defaultSurvivalToolAssignmentTags>
 					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Tanto"]/equippedStatOffsets</xpath>
+                <value>
+                    <equippedStatOffsets>
+                        <MeleeCritChance>0.5</MeleeCritChance>
+                        <MeleeDodgeChance>0.3</MeleeDodgeChance>
+                        <MeleeParryChance>0.2</MeleeParryChance>
+                    </equippedStatOffsets>
+                </value>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Tanto"]</xpath>
+				<value>
+                    <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                        <baseWorkStatFactors>
+                            <CookSpeed>1.15</CookSpeed>
+                            <ButcheryFleshSpeed>1.25</ButcheryFleshSpeed>
+                            <ButcheryFleshEfficiency>1.1</ButcheryFleshEfficiency>
+                            <PlantHarvestingSpeed>1.0</PlantHarvestingSpeed>
+                        </baseWorkStatFactors>
+                        <defaultSurvivalToolAssignmentTags>
+                            <li>Cook</li>
+                            <li>PlantWorker</li>
+                        </defaultSurvivalToolAssignmentTags>
+                    </li>
 				</value>
 			</li>
 
