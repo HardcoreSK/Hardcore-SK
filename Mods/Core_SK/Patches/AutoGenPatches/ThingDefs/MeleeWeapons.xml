@@ -6,7 +6,7 @@
 		<value>SK.WeaponNeoliticBaseDummy</value>
 	</Operation>
 	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_Knife" ]</xpath>
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Knife"]</xpath>
 		<attribute>ParentName</attribute>
 		<value>SK.WeaponIndustrialBaseDummy</value>
 	</Operation>
@@ -21,6 +21,7 @@
 			<graphicData>
 				<texPath>Things/Weapons/Melee/Gladius</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
 			</graphicData>
 			<soundInteract>InteractMelee</soundInteract>
 			<stuffCategories>
@@ -99,6 +100,7 @@
 			<graphicData>
 				<texPath>Things/Weapons/Melee/Longsword</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
 			</graphicData>
 			<soundInteract>InteractMelee</soundInteract>
 			<stuffCategories>
@@ -114,7 +116,7 @@
 				<Mass>3</Mass>
 				<MeleeCounterParryBonus>1.7</MeleeCounterParryBonus>
 			</statBases>
-			<equippedAngleOffset>-95</equippedAngleOffset>
+			<equippedAngleOffset>-45</equippedAngleOffset>
 			<equippedStatOffsets>
 				<MeleeCritChance>0.3</MeleeCritChance>
 				<MeleeParryChance>0.7</MeleeParryChance>
@@ -166,6 +168,11 @@
 			<thingCategories>
 				<li>SharpMelee</li>
 			</thingCategories>
+            <modExtensions>
+                <li Class="CombatExtended.GunDrawExtension">
+                    <DrawSize>1.4,1.4</DrawSize>
+                </li>
+            </modExtensions>
 		</value>
 	</Operation>
 	<Operation Class="SK.PatchOperationReplaceExtended">
@@ -348,7 +355,7 @@
 				<Mass>3.5</Mass>
 				<MeleeCounterParryBonus>0.9</MeleeCounterParryBonus>
 			</statBases>
-			<equippedAngleOffset>-20</equippedAngleOffset>
+			<equippedAngleOffset>-70</equippedAngleOffset>
 			<equippedStatOffsets>
 				<MeleeCritChance>0.8</MeleeCritChance>
 				<MeleeParryChance>0.9</MeleeParryChance>
