@@ -17,16 +17,22 @@
 			<li>
 				<compClass>CompAttachBase</compClass>
 			</li>
+			<li Class="Darkest_SK.CompProperties_VoidShadow">
+				<searchRadius>65</searchRadius>
+				<ignoredFleshTypes>
+					<li MayRequire="skyarkhangel.skynet">Skynet</li>
+					<li MayRequire="ChJees.Androids">ChJDroid</li>
+				</ignoredFleshTypes>
+			</li>
 		</comps>
-		<drawGUIOverlay>true</drawGUIOverlay>
+		<drawGUIOverlay>false</drawGUIOverlay>
 	</ThingDef>
 
 	<!-- ====== Void ===== -->
 	<ThingDef ParentName="BaseVoid">
-		<thingClass>SK.Events.Pawn_Void</thingClass>
 		<defName>Void</defName>
-		<label>Shadow</label>
-		<description>These swift, merciless creatures came from the darkest voids of the galaxy. By being born from shadows, they abhor light. With a icy cold bite they seek to extinguish the bright flames of life.</description>
+		<label>shadow</label>
+		<description>These swift, merciless creatures came from the darkest voids of the galaxy. They are born of shadow and fear the light. With an icy bite, they mean to put out the bright flame of life.</description>
 		<statBases>
 			<Mass>20</Mass>
 			<MoveSpeed>10</MoveSpeed>
@@ -34,13 +40,11 @@
 			<ArmorRating_Blunt>0</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0</ArmorRating_Sharp>
 			<ArmorRating_Heat>0</ArmorRating_Heat>
-			<MeatAmount>0</MeatAmount>
-			<LeatherAmount>0</LeatherAmount>
 			<ComfyTemperatureMin>-178</ComfyTemperatureMin>
 			<ComfyTemperatureMax>3000</ComfyTemperatureMax>
 			<MeleeDodgeChance>0.8</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
-			<Wildness>0.99</Wildness>
+			<Wildness>1</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -55,7 +59,7 @@
 			</li>
 		</tools>
 		<race>
-			<intelligence>Animal</intelligence>
+			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Void</thinkTreeMain>
 			<body>QuadrupedAnimalWithHooves</body>
 			<renderTree>Animal</renderTree>
@@ -64,11 +68,13 @@
 			<hasGenders>false</hasGenders>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<neverIncludeInQuests>true</neverIncludeInQuests>
 			<foodType>None</foodType>
 			<baseBodySize>0.3</baseBodySize>
 			<baseHealthScale>10</baseHealthScale>
-			<useMeatFrom>Megaspider</useMeatFrom>
 			<fleshType>Void</fleshType>
+			<hasCorpse>false</hasCorpse>
+			<hasMeat>false</hasMeat>
 			<trainability>None</trainability>
 			<lifeStageAges>
 				<li>
@@ -83,9 +89,6 @@
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-			<hediffGiverSets>
-				<li>UndeadPassiveSet</li>
-			</hediffGiverSets>
 		</race>
 		<modExtensions>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">

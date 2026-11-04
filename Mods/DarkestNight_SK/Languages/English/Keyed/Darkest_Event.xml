@@ -1,48 +1,29 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-  <LabelBV>A Vile Force Of Darkness Has Arrived!</LabelBV>
-  <DescBV>As you watch the approaching darkness you know death has come to Rimworld.. 
-You turn to yell for the others.. "RUN!" but the Darkness is already upon you. 
-Only blackness and your own screams remain...you cannot escape this fate.
-The last thing you feel, before you fall into the Abyss, is your flesh being torn from your bones.
-The Darkest Night has arrived. 
-Prepare yourself, for the darkness consumes all! \n\nStay within light sources for protection!</DescBV>
-  <DarknessComesA>Darkness will engulf this RimWorld in 60.</DarknessComesA> 
-  <DarknessComesB>Darkness will engulf this RimWorld in 30.</DarknessComesB> 
-  <DarknessComesC>Darkness will engulf this RimWorld in 15.</DarknessComesC> 
-  <DarknessComesD>Darkness will engulf this RimWorld in 5.</DarknessComesD> 
-  <DarknessComesE>Darkness will engulf this RimWorld in 4.</DarknessComesE> 
-  <DarknessComesF>Darkness will engulf this RimWorld in 3.</DarknessComesF>
-  <DarknessComesG>Darkness will engulf this RimWorld in 2.</DarknessComesG>
-  <DarknessComesH>Darkness will engulf this RimWorld in 1.</DarknessComesH> 
-  <DarknessComes>The Darkness is out to get you!</DarknessComes> 
-  <OmniousDarkLabel>Omnious Darkness</OmniousDarkLabel> 
-  <OmniousDarkDesc>The darkness has moved on, but you are not safe from its path... \n\n The Darkness will meet with you again, soon...</OmniousDarkDesc> 
-  <TakenDC>The Shadow has taken </TakenDC>
-  <IntoDS> into the darkness.</IntoDS>
+  <DarknessComesA>Darkness will swallow the world of RimWorld in 60.</DarknessComesA>
+  <DarknessComesB>Darkness will swallow the world of RimWorld in 30.</DarknessComesB>
+  <DarknessComesC>Darkness will swallow the world of RimWorld in 15.</DarknessComesC>
+  <DarknessComesD>Darkness will swallow the world of RimWorld in 5.</DarknessComesD>
+  <DarknessComesE>Darkness will swallow the world of RimWorld in 4.</DarknessComesE>
+  <DarknessComesF>Darkness will swallow the world of RimWorld in 3.</DarknessComesF>
+  <DarknessComesG>Darkness will swallow the world of RimWorld in 2.</DarknessComesG>
+  <DarknessComesH>Darkness will swallow the world of RimWorld in 1.</DarknessComesH>
+  <DarknessComes>The darkness has come for you!</DarknessComes>
+  <OmniousDarkLabel>The darkness retreats</OmniousDarkLabel>
+  <OmniousDarkDesc>The darkness is retreating, but do not feel safe...\n\nThe darkness will come back for you later...</OmniousDarkDesc>
+  <TakenDC>The shadow took {PAWN_nameDef} into the darkness.</TakenDC>
 
-  <DarkestNightSK.ModVersion>Installed mod-version: {0}</DarkestNightSK.ModVersion>
+  <DarkestNightSK.ModVersion>Installed mod version: {0}</DarkestNightSK.ModVersion>
 
-  <DarkestNightSK.event1Only>Passive Darkness Event: Only Event</DarkestNightSK.event1Only>
-  <DarkestNightSK.event1Chance>Passive Darkness Event Factor (Default: 0.5): {0}</DarkestNightSK.event1Chance>
-  <DarkestNightSK.event1Desc>Passive Darkness event, is a more calm event, where the darkness doesnt hunt you down specifically, but only if you get close. They are also slower.</DarkestNightSK.event1Desc>
-  <DarkestNightSK.event1Disabled>Passive Darkness Event: Disabled</DarkestNightSK.event1Disabled>
+  <!-- {0} = event label, {1} = default weight, {2} = current weight -->
+  <DarkestNightSK.eventOnly>{0}: this event only</DarkestNightSK.eventOnly>
+  <DarkestNightSK.eventWeight>{0} (default: {1}): {2}</DarkestNightSK.eventWeight>
+  <DarkestNightSK.eventDisabled>{0}: disabled</DarkestNightSK.eventDisabled>
 
-  <LabelBVPassive>Passive Darkness</LabelBVPassive>
-  <DescBVPassive>A strange but calm darkness is spotted in the distance, its slowly moving towards your settlement.</DescBVPassive>
-
-  <DarkestNightSK.event2Only>Looming Darkness Event: Only Event</DarkestNightSK.event2Only>
-  <DarkestNightSK.event2Chance>Looming Darkness Event Factor (Default: 0.3): {0}</DarkestNightSK.event2Chance>
-  <DarkestNightSK.event2Desc>Looming Darkness Event, is a normal event, except you see the darkness coming earlier on the horizon, giving you more time to prepare.</DarkestNightSK.event2Desc>
-  <DarkestNightSK.event2Disabled>Looming Darkness Event: Disabled</DarkestNightSK.event2Disabled>
-
-  <LabelBVLooming>Looming Darkness</LabelBVLooming>
-  <DescBVLooming>A strange darkness is spotted on the horizon, its moving quite fast towards the settlement. You better prepare.</DescBVLooming>
-
-  <DarkestNightSK.event3Only>Normal Darkness Event: Only Event</DarkestNightSK.event3Only>
-  <DarkestNightSK.event3Chance>Normal Darkness Event Factor (Default: 0.2): {0}</DarkestNightSK.event3Chance>
-  <DarkestNightSK.event3Desc>Normal Darkness Event, is a normal event, you only have 60 seconds to prepare, the darkness will hunt your colonists down and break your doors.</DarkestNightSK.event3Desc>
-  <DarkestNightSK.event3Disabled>Normal Darkness Event: Disabled</DarkestNightSK.event3Disabled>
+  <DarkestNightSK.voidCountMax>Maximum shadows (default: 150): {0}</DarkestNightSK.voidCountMax>
+  <DarkestNightSK.voidCountMaxDesc>How many shadows can exist at once. Lower this if the event causes lag.</DarkestNightSK.voidCountMaxDesc>
+  <DarkestNightSK.voidSpawnInterval>Shadow spawn interval (default: 20): {0}</DarkestNightSK.voidSpawnInterval>
+  <DarkestNightSK.voidSpawnIntervalDesc>Maximum ticks between spawn attempts. The actual wait is random from 1 to this value. Higher is easier and cheaper.</DarkestNightSK.voidSpawnIntervalDesc>
 
 </LanguageData>

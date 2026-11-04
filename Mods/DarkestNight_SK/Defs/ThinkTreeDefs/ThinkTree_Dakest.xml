@@ -6,33 +6,21 @@
 	<defName>Void</defName>
     <thinkRoot Class="ThinkNode_Priority">
       <subNodes>
-        <!-- Downed -->
-        <li Class="ThinkNode_Subtree">
-          <treeDef>Downed</treeDef>
-        </li>
-		
-        <!-- Add Job -->
-        <li Class="SK.Events.JobGiver_Darkness"/>
-        
-        <!-- Do a queued job -->
+        <li Class="Darkest_SK.JobGiver_Darkness"/>
+
         <li Class="ThinkNode_QueuedJob" />
 
-        <!-- Lord -->
-        <li Class="ThinkNode_Subtree">
-          <treeDef>LordDuty</treeDef>
-        </li>
-
-        <!-- Idle -->
         <li Class="ThinkNode_Tagger">
           <tagToGive>Idle</tagToGive>
           <subNodes>
             <li Class="JobGiver_WanderAnywhere">
               <maxDanger>Deadly</maxDanger>
+              <wanderRadius>5</wanderRadius>
+              <ticksBetweenWandersRange>180~300</ticksBetweenWandersRange>
             </li>
           </subNodes>
         </li>
-        
-        <!-- Idle error -->
+
         <li Class="JobGiver_IdleError"/>
       </subNodes>
     </thinkRoot>

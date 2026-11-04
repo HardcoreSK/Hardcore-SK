@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FactionDef ParentName="SK_FactionBase">
+	<FactionDef ParentName="FactionBase">
 		<defName>Darkness</defName>
-		<label>Darkspawn</label>
-		<description>These swift, merciless creatures came from the darkest voids of the galaxy. By being born from shadows, they abhor light. With a icy cold bite they seek to extinguish the bright flames of life.</description>
-		<pawnSingular>void</pawnSingular>
-		<pawnsPlural>voids</pawnsPlural>
+		<label>Shadow</label>
+		<description>These swift, merciless creatures came from the darkest voids of the galaxy. They are born of shadow and fear the light. With an icy bite, they mean to put out the bright flame of life.</description>
+		<pawnSingular>shadow</pawnSingular>
+		<pawnsPlural>shadows</pawnsPlural>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
-		<fixedName>darkness</fixedName>
+		<fixedName>Shadow</fixedName>
 		<factionIconPath>World/WorldObjects/Expanding/Insects</factionIconPath>
 		<colorSpectrum>
 			<li>(0.44, 0.41, 0.32)</li>
@@ -23,6 +23,7 @@
 		<humanlikeFaction>false</humanlikeFaction>
 		<techLevel>Neolithic</techLevel>
 		<hidden>true</hidden>
+		<displayInFactionSelection>false</displayInFactionSelection>
 		<autoFlee>false</autoFlee>
 		<canUseAvoidGrid>false</canUseAvoidGrid>
 		<permanentEnemy>true</permanentEnemy>
