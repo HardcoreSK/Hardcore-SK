@@ -225,6 +225,11 @@
 			<li>AgileMelee</li>
 			<li>SurvivalToolsIndustrial</li>
 		</thingCategories>
+        <modExtensions>
+            <li Class="CombatExtended.GunDrawExtension">
+                <DrawSize>0.8,0.8</DrawSize>
+            </li>
+        </modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="WeaponIndustrialBase">
@@ -552,6 +557,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.1,1.1</DrawSize>
+				<DrawOffset>0.2,0.2</DrawOffset>
 			</li>
 		</modExtensions>
 		<weaponClasses>
@@ -647,6 +653,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.4,1.4</DrawSize>
+				<DrawOffset>0.4,0.3</DrawOffset>
 			</li>
 		</modExtensions>
 		<weaponClasses>
