@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-  <LabelBV>La oscuridad se acerca</LabelBV>
-  <DescBV>El señor de la oscuridad ha venido por vuestras almas... ¡preparaos para la oscuridad y un frío espantoso!\n\nQuedaos cerca de la luz. Solo ella os salvará.</DescBV>
   <DarknessComesA>La oscuridad engullirá el mundo de RimWorld en 60.</DarknessComesA>
   <DarknessComesB>La oscuridad engullirá el mundo de RimWorld en 30.</DarknessComesB>
   <DarknessComesC>La oscuridad engullirá el mundo de RimWorld en 15.</DarknessComesC>
@@ -18,26 +16,10 @@
 
   <DarkestNightSK.ModVersion>Versión del mod instalada: {0}</DarkestNightSK.ModVersion>
 
-  <DarkestNightSK.event1Only>Evento de oscuridad pasiva: solo este evento</DarkestNightSK.event1Only>
-  <DarkestNightSK.event1Chance>Factor de oscuridad pasiva (predeterminado: 0.5): {0}</DarkestNightSK.event1Chance>
-  <DarkestNightSK.event1Desc>El evento de oscuridad pasiva es más tranquilo. La oscuridad no os persigue a propósito, solo si os acercáis. También son más lentos.</DarkestNightSK.event1Desc>
-  <DarkestNightSK.event1Disabled>Evento de oscuridad pasiva: desactivado</DarkestNightSK.event1Disabled>
-
-  <LabelBVPassive>Oscuridad pasiva</LabelBVPassive>
-  <DescBVPassive>A lo lejos se divisa una oscuridad extraña pero calmada, que se acerca lentamente a vuestro asentamiento.</DescBVPassive>
-
-  <DarkestNightSK.event2Only>Evento de oscuridad que se aproxima: solo este evento</DarkestNightSK.event2Only>
-  <DarkestNightSK.event2Chance>Evento de oscuridad que se aproxima (predeterminado: 0.3): {0}</DarkestNightSK.event2Chance>
-  <DarkestNightSK.event2Desc>El evento de oscuridad que se aproxima es un evento normal, salvo que veis la oscuridad en el horizonte antes, lo que os da más tiempo para prepararos.</DarkestNightSK.event2Desc>
-  <DarkestNightSK.event2Disabled>Evento de oscuridad que se aproxima: desactivado</DarkestNightSK.event2Disabled>
-
-  <LabelBVLooming>Oscuridad que se aproxima</LabelBVLooming>
-  <DescBVLooming>En el horizonte se divisa una oscuridad extraña que se acerca al asentamiento bastante rápido. Más vale que os preparéis.</DescBVLooming>
-
-  <DarkestNightSK.event3Only>Evento de oscuridad normal: solo este evento</DarkestNightSK.event3Only>
-  <DarkestNightSK.event3Chance>Factor de oscuridad normal (predeterminado: 0.2): {0}</DarkestNightSK.event3Chance>
-  <DarkestNightSK.event3Desc>El evento de oscuridad normal es un evento normal. Solo tenéis 60 segundos para prepararos. La oscuridad perseguirá a vuestros colonos y romperá vuestras puertas.</DarkestNightSK.event3Desc>
-  <DarkestNightSK.event3Disabled>Evento de oscuridad normal: desactivado</DarkestNightSK.event3Disabled>
+  <!-- {0} = nombre del evento, {1} = peso predeterminado, {2} = peso actual -->
+  <DarkestNightSK.eventOnly>{0}: solo este evento</DarkestNightSK.eventOnly>
+  <DarkestNightSK.eventWeight>{0} (predeterminado: {1}): {2}</DarkestNightSK.eventWeight>
+  <DarkestNightSK.eventDisabled>{0}: desactivado</DarkestNightSK.eventDisabled>
 
   <DarkestNightSK.voidCountMax>Máximo de sombras (predeterminado: 150): {0}</DarkestNightSK.voidCountMax>
   <DarkestNightSK.voidCountMaxDesc>Cuántas sombras pueden existir a la vez. Bájalo si el evento causa lag.</DarkestNightSK.voidCountMaxDesc>

@@ -18,6 +18,11 @@
                 defName="Tool_PrimitiveHandaxe" or
                 defName="Tool_PrimitiveHammer" or
                 defName="Tool_PrimitiveSickle" or
+                defName="MeleeWeapon_Schiv" or
+                defName="MeleeWeapon_Knife" or
+                defName="MeleeWeapon_Dagger" or
+                defName="MeleeWeapon_Tanto" or
+                defName="MeleeWeapon_Cleaver" or
                 defName="MeleeWeapon_Bonesaw" or
                 defName="MeleeWeapon_Monkeywrench" or
                 defName="MeleeWeapon_Sledgehammer"]</xpath>
@@ -239,8 +244,12 @@
 				</value>
 			</li>
 
+            <!--Monkeywrench-->
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_Monkeywrench"]/equippedStatOffsets</xpath>
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Monkeywrench"]/equippedStatOffsets/ConstructionSpeed</xpath>
+			</li>
+            <li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Monkeywrench"]/equippedStatOffsets/SmithingSpeed</xpath>
 			</li>
 			<li Class="PatchOperationAddModExtension">
 				<xpath>Defs/ThingDef[defName="MeleeWeapon_Monkeywrench"]</xpath>
@@ -256,6 +265,110 @@
 				</value>
 			</li>
 
+            <!--Shiv-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Schiv"]/equippedStatOffsets/CookSpeed</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Schiv"]/equippedStatOffsets/ButcheryFleshSpeed</xpath>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Schiv"]</xpath>
+				<value>
+                    <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                        <baseWorkStatFactors>
+                            <CookSpeed>1.0</CookSpeed>
+                            <ButcheryFleshSpeed>1.0</ButcheryFleshSpeed>
+                            <ButcheryFleshEfficiency>0.9</ButcheryFleshEfficiency>
+                            <MedicalOperationSpeed>0.8</MedicalOperationSpeed>
+                            <MedicalSurgerySuccessChance>0.8</MedicalSurgerySuccessChance>
+                        </baseWorkStatFactors>
+                        <defaultSurvivalToolAssignmentTags>
+                            <li>Cook</li>
+                            <li>Tend</li>
+                        </defaultSurvivalToolAssignmentTags>
+                    </li>
+				</value>
+			</li>
+
+            <!--Knife-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Knife"]/equippedStatOffsets/CookSpeed</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Knife"]/equippedStatOffsets/ButcheryFleshSpeed</xpath>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Knife"]</xpath>
+				<value>
+                    <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                        <baseWorkStatFactors>
+                            <CookSpeed>1.2</CookSpeed>
+                            <ButcheryFleshSpeed>1.2</ButcheryFleshSpeed>
+                            <ButcheryFleshEfficiency>1.1</ButcheryFleshEfficiency>
+                            <PlantHarvestingSpeed>1.0</PlantHarvestingSpeed>
+                            <MedicalOperationSpeed>0.9</MedicalOperationSpeed>
+                            <MedicalSurgerySuccessChance>0.95</MedicalSurgerySuccessChance>
+                        </baseWorkStatFactors>
+                        <defaultSurvivalToolAssignmentTags>
+                            <li>Cook</li>
+                            <li>PlantWorker</li>
+                            <li>Tend</li>
+                        </defaultSurvivalToolAssignmentTags>
+                    </li>
+				</value>
+			</li>
+
+            <!--Dagger-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Dagger"]/equippedStatOffsets/CookSpeed</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Dagger"]/equippedStatOffsets/ButcheryFleshSpeed</xpath>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Dagger"]</xpath>
+				<value>
+                    <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                        <baseWorkStatFactors>
+                            <CookSpeed>1.1</CookSpeed>
+                            <ButcheryFleshSpeed>1.1</ButcheryFleshSpeed>
+                            <ButcheryFleshEfficiency>1.1</ButcheryFleshEfficiency>
+                            <MedicalOperationSpeed>0.85</MedicalOperationSpeed>
+                            <MedicalSurgerySuccessChance>0.85</MedicalSurgerySuccessChance>
+                        </baseWorkStatFactors>
+                        <defaultSurvivalToolAssignmentTags>
+                            <li>Cook</li>
+                            <li>Tend</li>
+                        </defaultSurvivalToolAssignmentTags>
+                    </li>
+				</value>
+			</li>
+
+            <!--Cleaver-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Cleaver"]/equippedStatOffsets/CookSpeed</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Cleaver"]/equippedStatOffsets/ButcheryFleshSpeed</xpath>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Cleaver"]</xpath>
+				<value>
+                    <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                        <baseWorkStatFactors>
+                            <CookSpeed>1.2</CookSpeed>
+                            <ButcheryFleshSpeed>1.35</ButcheryFleshSpeed>
+                            <ButcheryFleshEfficiency>1.15</ButcheryFleshEfficiency>
+                        </baseWorkStatFactors>
+                        <defaultSurvivalToolAssignmentTags>
+                            <li>Cook</li>
+                        </defaultSurvivalToolAssignmentTags>
+                    </li>
+				</value>
+			</li>
+
+            <!--Sledgehammer-->
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName="MeleeWeapon_Sledgehammer"]/equippedStatOffsets</xpath>
 			</li>
@@ -273,6 +386,35 @@
 				</value>
 			</li>
 
+            <!--Tanto-->
+            <li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Tanto"]/equippedStatOffsets/CookSpeed</xpath>
+			</li>
+            <li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Tanto"]/equippedStatOffsets/ButcheryFleshSpeed</xpath>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Tanto"]</xpath>
+				<value>
+                    <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                        <baseWorkStatFactors>
+                            <CookSpeed>1.15</CookSpeed>
+                            <ButcheryFleshSpeed>1.25</ButcheryFleshSpeed>
+                            <ButcheryFleshEfficiency>1.1</ButcheryFleshEfficiency>
+                            <PlantHarvestingSpeed>1.0</PlantHarvestingSpeed>
+                            <MedicalOperationSpeed>0.9</MedicalOperationSpeed>
+                            <MedicalSurgerySuccessChance>0.95</MedicalSurgerySuccessChance>
+                        </baseWorkStatFactors>
+                        <defaultSurvivalToolAssignmentTags>
+                            <li>Cook</li>
+                            <li>PlantWorker</li>
+                            <li>Tend</li>
+                        </defaultSurvivalToolAssignmentTags>
+                    </li>
+				</value>
+			</li>
+
+            <!--Bonesaw-->
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName="MeleeWeapon_Bonesaw"]/equippedStatOffsets/MedicalOperationSpeed</xpath>
 			</li>
@@ -294,6 +436,7 @@
 				</value>
 			</li>
 
+            <!--Paxe-->
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName="Tool_Paxe"]/equippedStatOffsets</xpath>
 			</li>

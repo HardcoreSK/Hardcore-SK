@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-  <LabelBV>The darkness is closing in</LabelBV>
-  <DescBV>The lord of darkness has come for your souls... prepare for the darkness and the dreadful cold!\n\nStay near the light. Only it will save you.</DescBV>
   <DarknessComesA>Darkness will swallow the world of RimWorld in 60.</DarknessComesA>
   <DarknessComesB>Darkness will swallow the world of RimWorld in 30.</DarknessComesB>
   <DarknessComesC>Darkness will swallow the world of RimWorld in 15.</DarknessComesC>
@@ -18,26 +16,10 @@
 
   <DarkestNightSK.ModVersion>Installed mod version: {0}</DarkestNightSK.ModVersion>
 
-  <DarkestNightSK.event1Only>Passive darkness event: this event only</DarkestNightSK.event1Only>
-  <DarkestNightSK.event1Chance>Passive darkness factor (default: 0.5): {0}</DarkestNightSK.event1Chance>
-  <DarkestNightSK.event1Desc>The passive darkness event is a quieter one. The darkness does not hunt you on purpose, only if you come close. They are also slower.</DarkestNightSK.event1Desc>
-  <DarkestNightSK.event1Disabled>Passive darkness event: disabled</DarkestNightSK.event1Disabled>
-
-  <LabelBVPassive>Passive darkness</LabelBVPassive>
-  <DescBVPassive>A strange but calm darkness can be seen in the distance, slowly approaching your settlement.</DescBVPassive>
-
-  <DarkestNightSK.event2Only>Approaching darkness event: this event only</DarkestNightSK.event2Only>
-  <DarkestNightSK.event2Chance>Approaching darkness event (default: 0.3): {0}</DarkestNightSK.event2Chance>
-  <DarkestNightSK.event2Desc>The approaching darkness event is a normal event, except that you see the darkness on the horizon coming sooner, which gives you more time to prepare.</DarkestNightSK.event2Desc>
-  <DarkestNightSK.event2Disabled>Approaching darkness event: disabled</DarkestNightSK.event2Disabled>
-
-  <LabelBVLooming>Approaching darkness</LabelBVLooming>
-  <DescBVLooming>A strange darkness can be seen on the horizon, approaching the settlement quite quickly. You had better prepare.</DescBVLooming>
-
-  <DarkestNightSK.event3Only>Ordinary darkness event: this event only</DarkestNightSK.event3Only>
-  <DarkestNightSK.event3Chance>Normal darkness factor (default: 0.2): {0}</DarkestNightSK.event3Chance>
-  <DarkestNightSK.event3Desc>An ordinary darkness event is a normal event. You have only 60 seconds to prepare. The darkness will hunt down your colonists and break your doors.</DarkestNightSK.event3Desc>
-  <DarkestNightSK.event3Disabled>Normal darkness event: disabled</DarkestNightSK.event3Disabled>
+  <!-- {0} = event label, {1} = default weight, {2} = current weight -->
+  <DarkestNightSK.eventOnly>{0}: this event only</DarkestNightSK.eventOnly>
+  <DarkestNightSK.eventWeight>{0} (default: {1}): {2}</DarkestNightSK.eventWeight>
+  <DarkestNightSK.eventDisabled>{0}: disabled</DarkestNightSK.eventDisabled>
 
   <DarkestNightSK.voidCountMax>Maximum shadows (default: 150): {0}</DarkestNightSK.voidCountMax>
   <DarkestNightSK.voidCountMaxDesc>How many shadows can exist at once. Lower this if the event causes lag.</DarkestNightSK.voidCountMaxDesc>
