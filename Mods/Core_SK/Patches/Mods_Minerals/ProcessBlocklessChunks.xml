@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Minerals</li>
+        </mods>
+        <match Class="SK.PatchOperationReplaceExtended">
+            <xpath>Defs/RecipeDef[defName="ProcessBlocklessChunks"]</xpath>
+            <value>
+                <label>crush soft stone chunk</label>
+                <description>Crush a soft stone chunk to obtain resources suitable for construction.</description>
+            </value>
+        </match>
+    </Operation>
+</Patch>
