@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Minerals</li>
+        </mods>
+        <match Class="SK.PatchOperationReplaceExtended">
+            <xpath>Defs/ThingDef[@Name="QuartzBase" or @Name="TourmalineBase" or @Name="MetalOxideBase" or @Name="EmbeddedMineralBase" or defName="CalciteCrystal"]</xpath>
+            <value>
+                <building>
+                    <mineablePreventMeteorite>true</mineablePreventMeteorite>
+                </building>
+            </value>
+        </match>
+    </Operation>
+</Patch>
