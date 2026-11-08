@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Misc. Bees'n'Honey</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName="Honey"]</xpath>
+                    <value>
+                        <statBases Merge="True">
+                            <DeteriorationRate>1</DeteriorationRate>
+                            <Bulk>0.2</Bulk>
+                        </statBases>
+                        <tradeTags>
+                            <li>Exotic</li>
+                        </tradeTags>
+                    </value>
+                </li>
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[@Name="Misc_BeehiveBase"]</xpath>
+                    <value>
+                        <graphicData Merge="True">
+                            <shaderType>CutoutComplex</shaderType>
+                        </graphicData>
+                        <costStuffCount>50</costStuffCount>
+                        <costList Replace="True">
+                            <ComponentMedieval>3</ComponentMedieval>
+                            <HoneycombWithQueen>1</HoneycombWithQueen>
+                        </costList>
+                        <stuffCategories Replace="True">
+                            <li>Woody</li>
+                        </stuffCategories>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_SpecialFoods"]/defNames</xpath>
+                    <value>
+                        <li>Misc_Beehive</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/RecipeDef[defName="MakeMead"]</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="Mead"]</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
