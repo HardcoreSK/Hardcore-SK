@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- PlaceHolder since identical-->
+<!--   <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/IncidentDef[defName="ShipChunkDrop"]</xpath>
+    <value/>
+  </Operation> -->
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/IncidentDef[defName="OrbitalTraderArrival"]</xpath>
+    <value>
+      <baseChance>4</baseChance>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/IncidentDef[defName="TraderCaravanArrival"]</xpath>
+    <value>
+      <baseChance>5</baseChance>
+    </value>
+  </Operation>
+
+    <!-- PlaceHolder since identical-->
+<!--   <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/IncidentDef[defName="VisitorGroup"]</xpath>
+    <value/>
+  </Operation> -->
+
+    <!-- PlaceHolder since identical-->
+<!--   <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/IncidentDef[defName="TravelerGroup"]</xpath>
+    <value/>
+  </Operation> -->
+
+    <!-- PlaceHolder since identical-->
+<!--   <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/IncidentDef[defName="RaidFriendly"]</xpath>
+    <value/>
+  </Operation> -->
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/IncidentDef[defName="StrangerInBlackJoin"]</xpath>
+    <value>
+      <workerClass>SK.Events.IncidentWorker_WandererJoin</workerClass>
+      <minRefireDays>30</minRefireDays>
+    </value>
+  </Operation>
+
+</Patch>

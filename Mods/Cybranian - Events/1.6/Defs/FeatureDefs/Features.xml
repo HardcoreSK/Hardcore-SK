@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->
+	<FeatureDef>
+		<defName>MeteoriteCrater</defName>
+		<workerClass>EventsCore.World.FeatureWorker_Special</workerClass>
+		<order>501</order>
+		<minSize>20</minSize>
+		<maxSize>50</maxSize>
+		<nameMaker>NamerMeteoriteCrater</nameMaker>
+	</FeatureDef>
+	<!---->
+	<FeatureDef>
+		<defName>ArtificialChannel</defName>
+		<workerClass>EventsCore.World.FeatureWorker_Special</workerClass>
+		<order>502</order>
+		<minSize>1</minSize>
+		<maxSize>99999</maxSize>
+		<nameMaker>NamerArtificialChannel</nameMaker>
+	</FeatureDef>
+	<!---->
+</Defs>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BiomeDef Name="LAO_LunaBiomeBase">
+		<defName>LAO_Luna</defName>
+		<label>luna</label>
+		<description>Barren wastes scoured clean by vacuum and radiation. Periodic meteorite impacts can harm people and destroy buildings, but also unearth valuable mineral deposits.</description>
+		<settleWarning>This area has no atmosphere and no signs of life. It is threatened by meteorite impacts, as well as periodic solar flares.</settleWarning>
+		<workerClass>LayeredAtmosphereOrbit.BiomeWorker_MoonBase</workerClass>
+		<texture>World/Biomes/LAO_VacstoneFields</texture>
+		<wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
+		<animalDensity>0</animalDensity>
+		<plantDensity>0</plantDensity>
+		<geyserCountFactor>0.25</geyserCountFactor>
+		<settlementSelectionWeight>1</settlementSelectionWeight>
+		<movementDifficulty>1</movementDifficulty>
+		<noAmbientWind>true</noAmbientWind>
+		<constantOutdoorTemperature>-35</constantOutdoorTemperature>
+		<inVacuum>true</inVacuum>
+		<isExtremeBiome>true</isExtremeBiome>
+		<maxFishPopulation>0</maxFishPopulation>
+		<allowRoads>false</allowRoads>
+		<allowRivers>false</allowRivers>
+		<noGravel>true</noGravel>
+		<allowFarmingCamps>false</allowFarmingCamps>
+		<hasVirtualPlants>false</hasVirtualPlants>
+		<allowPollution>true</allowPollution>
+		<baseWeatherCommonalities>
+			<Orbit>1</Orbit>
+		</baseWeatherCommonalities>
+		<layerWhitelist>
+			<li>LAO_Surface_Luna</li>
+		</layerWhitelist>
+		<diseases>
+			<li>
+				<diseaseInc>Disease_OrganDecay</diseaseInc>
+				<commonality>20</commonality>
+			</li>
+		</diseases>
+		<soundsAmbient>
+			<li>Ambient_SpaceMap</li>
+		</soundsAmbient>
+		<terrainsByFertility>
+			<li>
+				<terrain>Vacstone_RoughHewn</terrain>
+				<min>-999</min>
+				<max>0.68</max>
+			</li>
+			<li>
+				<terrain>Vacstone_Rough</terrain>
+				<min>0.68</min>
+				<max>999</max>
+			</li>
+		</terrainsByFertility>
+		<forceRockTypes>
+			<li>Vacstone</li>
+		</forceRockTypes>
+		<extraGenSteps>
+			<li>LAO_MoonCratersLarge</li>
+			<li>LAO_MoonCratersMedium</li>
+			<li>LAO_MoonCratersSmall</li>
+		</extraGenSteps>
+		<preventGenSteps>
+			<li>Plants</li>
+			<li>Snow</li>
+			<li>Animals</li>
+		</preventGenSteps>
+	</BiomeDef>
+
+</Defs>

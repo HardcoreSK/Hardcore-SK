@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- Pirate Bases -->
+	<!-- Pirate Bases - DefOverwrite
 	<PawnKindDef Name="SK_PirateBase" Abstract="True">
 		<race>Human</race>
 		<defaultFactionType>Pirate</defaultFactionType>
@@ -17,10 +17,7 @@
 		<invFoodDef>MealJerky</invFoodDef>
 		<minGenerationAge>18</minGenerationAge>
 		<maxGenerationAge>60</maxGenerationAge>
-		<techHediffsMoney>
-			<min>50</min>
-			<max>800</max>
-		</techHediffsMoney>
+		<techHediffsMoney>50~800</techHediffsMoney>
 		<techHediffsTags>
 			<li>Poor</li>
 		</techHediffsTags>
@@ -29,7 +26,8 @@
 		<biocodeWeaponChance>0.1</biocodeWeaponChance>
 		<initialWillRange>1~3</initialWillRange>
 	</PawnKindDef>
-	<!-- Drifter -->
+	-->
+	<!-- Drifter 
 	<PawnKindDef ParentName="SK_PirateBase">
 		<defName>Drifter</defName>
 		<label>drifter</label>
@@ -74,8 +72,8 @@
 			</subOptionsChooseOne>
 		</inventoryOptions>
 	</PawnKindDef>
-
-	<!-- Thrasher -->
+-->
+	<!-- Thrasher 
 	<PawnKindDef ParentName="SK_PirateBase">
 		<defName>Thrasher</defName>
 		<label>thrasher</label>
@@ -95,7 +93,7 @@
 		<apparelTags>
 			<li>Outlander</li>
 			<li>WoodenShield</li>
-			<li>MedievalShield</li>
+			<li>Shield_Medieval</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
 		<weaponTags>
@@ -128,9 +126,9 @@
 			</subOptionsChooseOne>
 		</inventoryOptions>
 	</PawnKindDef>
-
+-->
 	<!-- Crunchesher -->
-	<PawnKindDef ParentName="SK_PirateBase">
+	<PawnKindDef ParentName="PirateBase">
 		<defName>Crunchesher</defName>
 		<label>crunchesher</label>
 		<race>Human</race>
@@ -143,7 +141,7 @@
 		<weaponMoney>200~550</weaponMoney>
 		<apparelRequired>
 			<li>Apparel_BasicShirt</li>
-			<li>Apparello_Sombrero</li>
+			<li>Hat_Sombrero</li>
 		</apparelRequired>
 		<apparelTags>
 			<li>Outlander</li>
@@ -163,7 +161,7 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<!-- Scavenger -->
+	<!-- Scavenger - DefOverwrite
 	<PawnKindDef ParentName="SK_PirateBase">
 		<defName>Scavenger</defName>
 		<label>scavenger</label>
@@ -230,8 +228,8 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
-	<!-- Pirate -->
+-->
+	<!-- Pirate 
 	<PawnKindDef ParentName="SK_PirateBase">
 		<defName>Pirate</defName>
 		<label>pirate gunner</label>
@@ -241,7 +239,7 @@
 		<gearHealthRange>0.7~2.3</gearHealthRange>
 		<apparelMoney>500~1100</apparelMoney>
 		<apparelRequired>
-			<li>Apparello_Urbulence</li>
+			<li>Apparel_UrbanShirt</li>
 		</apparelRequired>
 		<apparelTags>
 			<li>Outlander</li>
@@ -297,8 +295,9 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
+	-->
 	<!-- Pirate -->
-	<PawnKindDef ParentName="SK_PirateBase">
+	<PawnKindDef ParentName="PirateBase">
 		<defName>PirateBomb</defName>
 		<label>pirate bomber</label>
 		<race>Human</race>

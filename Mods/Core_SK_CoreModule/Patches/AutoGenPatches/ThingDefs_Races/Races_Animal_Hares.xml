@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+    <!-- Use HSK values through Merge; remove only fields with no inherited value or list entries that must disappear. -->
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Hare"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.SK_HareThingBaseDummy</value>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="Hare"]/uiIconScale |
+            Defs/ThingDef[defName="Hare"]/race/headPosPerRotation</xpath>
+    </Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Snowhare"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.SK_HareThingBaseDummy</value>
+    </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Snowhare"]</xpath>
+        <value Merge="true">
+            <label>snow hare</label>
+            <description>This hardy, animal survives the brutal winters of the north by burrowing through snow and finding prey underneath, or hibernating the worst months away.</description>
+            <statBases>
+                <ComfyTemperatureMin>-70</ComfyTemperatureMin>
+            </statBases>
+            <race>
+                <useMeatFrom>Elephant</useMeatFrom>
+            </race>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="Snowhare"]/uiIconScale</xpath>
+    </Operation>
+</Patch>

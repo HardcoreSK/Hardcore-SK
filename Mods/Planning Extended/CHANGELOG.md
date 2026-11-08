@@ -1,5 +1,47 @@
 # Changelog
 
+## 1.17.0
+- Added support for different plan grabbing positions when pasting a plan, defaults to Center
+- Added support for drawing a plan from a center point, default key binding is the ALT key
+- Added new shapes and shape variants
+  - Padded Line Variant: Can be used to draw closed walls that are neither horizontal nor vertical
+  - Rounded Rectangle: A rectangle with rounded corners, provides Outline and Filled variants
+  - Fill Shape: Can be used to fill an enclosed area with the selected plan tiles
+  - Fill Color Shape: Clicking on a single plan tile will paint all connected plan tiles of the same color with the selected color
+    - Fill Color All Variant: Will recolor all tiles indepdent of the clicked plan tile type
+    - Fill Color Same Variant: Will recolor only tiles of the same plan tile type
+- Changed key bindings of Replace / Skip plan mode to B key
+- Changed mouse attached text when adding or painting a plan to support the new options
+- Improved the diagonal line snapping
+- Improved shape modifier re-calculation to only apply when necessary
+- Fixed Shape update not applying when pressing / releasing shape modifier key without changing the dragged area
+- Fixed usage of DrawStyleCategory in Designator
+  - Fixes dragging on designators where it is not supposed to happen, such as `PastePlanDesignator`
+  - Fixes creating two undo-redo operations when using the `PastePlanDesignator`
+
+## 1.16.0
+- Added saving and restoring plan visibility per plan type
+- Added option to set default plan visibility on startup (visible, invisible, last saved)
+- Added button to open plan blueprint folder in settings (on Windows)
+- Added missing Russian translations using AI
+- Improved spacing in settings
+
+## 1.15.0
+- Adapted vanilla plan converter to RimWorld v1.6
+
+## 1.14.0
+- Added support for RimWorld 1.6
+- Each RimWorld version now has its own project, so changes will only affect the latest version
+
+## 1.13.1
+- Fixed wrong folder name for the Chinese translation
+
+## 1.13.0
+- Added Chinese language support (thanks to WYX-K)
+
+## 1.12.0
+- Orientation of doors now takes placement of floors into account
+
 ## 1.11.0
 - Added Spanish language support
 - Fixed case where default texture set is not set to 'Round'

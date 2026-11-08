@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Soft-removes normal fermenting barrel -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName = "FermentingBarrel"]/designationCategory</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Beer"]/comps</xpath>
+		<value>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Beer"]</xpath>
+		<value>
+			<thingCategories Inherit="False">
+				<li>Alcohol_Bottles</li>
+			</thingCategories>
+		</value>
+	</Operation>
+
+	<!-- Temp, remove alcohol from ebing weapons to avoid issues when spawned with raiders for now -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName = "Beer"]/tools</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName = "Beer"]/equippedAngleOffset</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName = "Beer"]/equipmentType</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName = "Beer"]/comps/li[compClass="CompEquippable"]</xpath>
+	</Operation>
+
+	<!-- New IngestionOutcomeDoer_GiveHediffByQuality -->
+
+	<!-- <Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef/ingestible/outcomeDoers/li[@Class="IngestionOutcomeDoer_GiveHediff" and hediffDef="AlcoholHigh"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation> -->
+
+</Patch>

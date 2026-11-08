@@ -17,6 +17,7 @@
 		<canBePermanent>false</canBePermanent>
 		<endMessage>Hopefully, the cold superstorm has finished.</endMessage>
 		<allowUnderground>false</allowUnderground>
+		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
 	</GameConditionDef>
 
 	<GameConditionDef>
@@ -27,6 +28,7 @@
 		<canBePermanent>false</canBePermanent>
 		<endMessage>Hopefully, the inferno accident has finished.</endMessage>
 		<allowUnderground>false</allowUnderground>
+		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
 	</GameConditionDef>
 
 	<GameConditionDef>
@@ -37,6 +39,7 @@
 		<canBePermanent>true</canBePermanent>
 		<endMessage>The sandstorm has finished, dust vortices are gone.</endMessage>
 		<allowUnderground>false</allowUnderground>
+		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
 	</GameConditionDef>
 
 	<GameConditionDef>
@@ -46,6 +49,7 @@
 		<description>Ice vortex is found.\n\nPowerful ice vortices can cause freezing to living creatures.</description>
 		<canBePermanent>true</canBePermanent>
 		<allowUnderground>false</allowUnderground>
+		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
 	</GameConditionDef>
 
 	<GameConditionDef>
@@ -75,16 +79,15 @@
 		<endMessage>The hail storm is ending.</endMessage>
 		<canBePermanent>true</canBePermanent>
 		<allowUnderground>false</allowUnderground>
+		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
 	</GameConditionDef>
 
-	<GameConditionDef>
-		<defName>Drought</defName>
+	<GameConditionDef> <!-- Odyssey has a Dought Event -->
+		<defName>AcidicSoil</defName>
 		<conditionClass>SK.Events.GameCondition_Drought</conditionClass>
-		<label>Drought</label>
-		<description>An unusual drought has set in.
-
-Drought is devastating for plant life and will quickly destroy all the crops not planted in the hydroponics. Be sure to quickly harvest any plants you can.</description>
-		<endMessage>The drought is ending.</endMessage>
+		<label>Acidic Soil</label>
+		<description>An unusually high acidity has appeared in the soil.\n\nAcidic soil is devastating for plant life and will quickly destroy all the crops not planted in the hydroponics. Be sure to quickly harvest any plants you can.\n\nMany things can cause this, excess rainfall, decay of organic matter, the use of certain fertilizers, or the harvest of crops.</description>
+		<endMessage>The acidity of the soil has returned to normal levels.</endMessage>
 		<canBePermanent>false</canBePermanent>
 		<allowUnderground>false</allowUnderground>
 	</GameConditionDef>
@@ -93,11 +96,7 @@ Drought is devastating for plant life and will quickly destroy all the crops not
 		<defName>IceAge</defName>
 		<conditionClass>SK.Events.GameCondition_IceAge</conditionClass>
 		<label>Ice Age</label>
-		<description>Atmospheric composition of the planet drastically changed resulting in a significant drop in temperature.
-
-Flora and Fauna is suffering from these changes as biomes shift into their colder counterparts. Resources become scarce, forcing factions into conflict.
-
-It will last anywhere between a season to several years.</description>
+		<description>Atmospheric composition of the planet drastically changed resulting in a significant drop in temperature.\n\nFlora and Fauna is suffering from these changes as biomes shift into their colder counterparts. Resources become scarce, forcing factions into conflict.\n\nIt will last anywhere between a season to several years.</description>
 		<endMessage>The ice age is ending</endMessage>
 		<canBePermanent>false</canBePermanent>
 		<exclusiveConditions>
@@ -113,11 +112,7 @@ It will last anywhere between a season to several years.</description>
 		<defName>GlobalWarming</defName>
 		<conditionClass>SK.Events.GameCondition_GlobalWarming</conditionClass>
 		<label>Global Warming</label>
-		<description>Global temperatures have suddenly risen to dangerous levels.
-
-Flora and Fauna is suffering from these changes as biomes shift into their warmer counterparts. Resources become scarce, forcing factions into conflict.
-
-It will last anywhere between a season to several years.</description>
+		<description>Global temperatures have suddenly risen to dangerous levels.\n\nFlora and Fauna is suffering from these changes as biomes shift into their warmer counterparts. Resources become scarce, forcing factions into conflict.\n\nIt will last anywhere between a season to several years.</description>
 		<endMessage>The global warming is ending</endMessage>
 		<canBePermanent>false</canBePermanent>
 		<exclusiveConditions>
@@ -133,11 +128,7 @@ It will last anywhere between a season to several years.</description>
 		<defName>PsychicRain</defName>
 		<conditionClass>SK.Events.GameCondition_PsychicRain</conditionClass>
 		<label>Psychic Rain</label>
-		<description>A dangerous psychic entity caused disturbance on subatomic levels, resonating across all particles of the atmosphere.
-
-A seemingly endless supernatural rain has begun, altering the very composition of time. Any person or creature not under the roof will age significantly faster.
-
-It will last anywhere between a season to several years.</description>
+		<description>A dangerous psychic entity caused disturbance on subatomic levels, resonating across all particles of the atmosphere.\n\nA seemingly endless supernatural rain has begun, altering the very composition of time. Any person or creature not under the roof will age significantly faster.\n\nIt will last anywhere between a season to several years.</description>
 		<endMessage>The psychic rain is ending</endMessage>
 		<canBePermanent>true</canBePermanent>
 		<exclusiveConditions>
@@ -146,17 +137,14 @@ It will last anywhere between a season to several years.</description>
 			<li>LongNight</li>
 		</exclusiveConditions>
 		<allowUnderground>false</allowUnderground>
+		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
 	</GameConditionDef>
 
 	<GameConditionDef>
 		<defName>LongNight</defName>
 		<conditionClass>SK.Events.GameCondition_LongNight</conditionClass>
 		<label>Long Night</label>
-		<description>A space entity of unimaginable size has covered a local star, resulting in a long lasting eclipse.
-
-Terrified of this supernatural phenomenon, other factions will use this time to wage war and conflict across the surface.
-
-It will last anywhere between a season to several years.</description>
+		<description>A space entity of unimaginable size has covered a local star, resulting in a long lasting eclipse.\n\nTerrified of this supernatural phenomenon, other factions will use this time to wage war and conflict across the surface.\n\nIt will last anywhere between a season to several years.</description>
 		<endMessage>The long night is ending</endMessage>
 		<canBePermanent>true</canBePermanent>
 		<exclusiveConditions>
@@ -174,6 +162,7 @@ It will last anywhere between a season to several years.</description>
 
 	<GameConditionDef>
 		<defName>KirinColdsnap</defName>
+		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
 		<conditionClass>GameCondition_ColdSnap</conditionClass>
 		<label>Unusual cold</label>
 		<description>An unusual cold snap is freezing the region.</description>
@@ -228,7 +217,7 @@ It will last anywhere between a season to several years.</description>
 		</silencedByConditions>
 	</GameConditionDef>
 
-	<!-- Fix vanilla light sky -->
+	<!-- Fix vanilla light sky - DefOverwrite - code needs reviewing to see if necessary
 	<GameConditionDef>
 		<defName>Eclipse</defName>
 		<conditionClass>SK.Events.GameCondition_Eclipse</conditionClass>
@@ -243,8 +232,8 @@ It will last anywhere between a season to several years.</description>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">UnnaturalDarkness</li>
 		</silencedByConditions>
 	</GameConditionDef>
-
-	<!-- New staged coldsnap gamecondition -->
+-->
+	<!-- New staged coldsnap gamecondition - DefOverwrite
 	<GameConditionDef>
 		<defName>ColdSnap</defName>
 		<conditionClass>SK.GameCondition_ColdSnap</conditionClass>
@@ -259,8 +248,8 @@ It will last anywhere between a season to several years.</description>
 		</exclusiveConditions>
 		<allowUnderground>false</allowUnderground>
 	</GameConditionDef>
-
-	<!-- New staged heatwave gamecondition -->
+-->
+	<!-- New staged heatwave gamecondition - DefOverwrite
 	<GameConditionDef>
 		<defName>HeatWave</defName>
 		<conditionClass>SK.GameCondition_HeatWave</conditionClass>
@@ -280,7 +269,7 @@ It will last anywhere between a season to several years.</description>
 		</letterHyperlinks>
 		<allowUnderground>false</allowUnderground>
 	</GameConditionDef>
-
+-->
 	<GameConditionDef>
 		<defName>StorytellerFrenzy</defName>
 		<label>storyteller frenzy</label>
@@ -307,6 +296,7 @@ It will last anywhere between a season to several years.</description>
 
 	<GameConditionDef>
 		<defName>BombardmentCondition</defName>
+		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
 		<conditionClass>SK.Events.GameCondition_Bombardment</conditionClass>
 		<label>bombardment</label>
 		<description>Enemy faction are not pleased with you.. so they will bomb you to hell.</description>

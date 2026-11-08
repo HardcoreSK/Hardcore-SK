@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ToyBox patches -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ToyBox"]</xpath>
+		<value>
+			<costList>
+				<ComponentIndustrial>5</ComponentIndustrial>
+				<Mechanism>2</Mechanism>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ToyBox"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Harp</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ToyBox"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Joy</designationCategory>
+		</value>
+	</Operation>
+	<!-- SchoolDesk patches -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="SchoolDesk"]</xpath>
+		<value>
+			<costList>
+				<ComponentMedieval>1</ComponentMedieval>
+			</costList>
+		</value>
+	</Operation>
+	<!-- BabyDecoration patches -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BabyDecoration"]</xpath>
+		<value>
+			<costList>
+				<ComponentMedieval>4</ComponentMedieval>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BabyDecoration"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Harp</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BabyDecoration"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Joy</designationCategory>
+		</value>
+	</Operation>
+	<!--
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Crib"]</xpath>
+				<value>
+					<stuffCategories Inherit="False">
+						<li>Fabric</li>
+						<li>Leathery</li>
+					</stuffCategories>
+					<costList>
+						<ComponentMedieval>4</ComponentMedieval>
+					</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Crib"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites Inherit="False">
+						<li>Beds_B1</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]</xpath>
+			</li>
+-->
+	<!-- Blackboard patches -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Blackboard"]</xpath>
+		<value>
+			<costList>
+				<Silicon>10</Silicon>
+				<ComponentMedieval>2</ComponentMedieval>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Blackboard"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Tables_B2</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="SanguphageMeetingTorch"]</xpath>
+		<value>
+			<stuffCategories Inherit="false" />
+			<costStuffCount Inherit="false" />
+		</value>
+	</Operation>
+</Patch>

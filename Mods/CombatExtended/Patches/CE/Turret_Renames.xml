@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  
+  <!-- ============ KPV ============ -->
+
+  <Operation Class="CombatExtended.PatchOperationSettingsConditional">
+		<settingName>realWeaponNames</settingName>
+		<nomatch Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="Turret_KPV"]/label</xpath>
+			<value>
+				<label>mounted HMG</label>
+			</value>
+		</nomatch>
+	</Operation>
+
+  <Operation Class="CombatExtended.PatchOperationSettingsConditional">
+		<settingName>realWeaponNames</settingName>
+		<nomatch Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="Gun_KPV"]/label</xpath>
+			<value>
+				<label>mounted HMG</label>
+			</value>
+		</nomatch>
+	</Operation>
+
+  <!-- ============ M240B ============ -->
+
+  <Operation Class="CombatExtended.PatchOperationSettingsConditional">
+		<settingName>realWeaponNames</settingName>
+		<nomatch Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="Turret_M240B"]/label</xpath>
+			<value>
+				<label>mounted MMG</label>
+			</value>
+		</nomatch>
+	</Operation>
+
+  <Operation Class="CombatExtended.PatchOperationSettingsConditional">
+		<settingName>realWeaponNames</settingName>
+		<nomatch Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="Gun_M240B"]/label</xpath>
+			<value>
+				<label>mounted MMG</label>
+			</value>
+		</nomatch>
+	</Operation>
+
+  <!-- ============ AGS-30 ============ -->
+
+  <Operation Class="CombatExtended.PatchOperationSettingsConditional">
+		<settingName>realWeaponNames</settingName>
+		<nomatch Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="Turret_AGSThirty"]/label</xpath>
+			<value>
+				<label>automatic grenade launcher</label>
+			</value>
+		</nomatch>
+	</Operation>
+
+  <Operation Class="CombatExtended.PatchOperationSettingsConditional">
+		<settingName>realWeaponNames</settingName>
+		<nomatch Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="Gun_AGSThirty"]/label</xpath>
+			<value>
+				<label>automatic grenade launcher</label>
+			</value>
+		</nomatch>
+	</Operation>
+</Patch>

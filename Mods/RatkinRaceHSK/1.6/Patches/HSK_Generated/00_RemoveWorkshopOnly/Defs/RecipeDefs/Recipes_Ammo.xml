@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<!-- Remove workshop defs absent from HSK patch baseline: 1.6\Defs\RecipeDefs\Recipes_Ammo.xml -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/RecipeDef[defName="Make_RK_Ammo_CannonBall"]</xpath>
+	</Operation>
+</Patch>

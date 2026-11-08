@@ -4,9 +4,11 @@
   <ThingDef Name="FrozenMineralBase" ParentName="DynamicMineralBase" Abstract="True">
     <!-- What stage of map generation the thing is spawned during (chunks or plants) -->
     <newMapGenStep>plants</newMapGenStep>
+    <preventGravshipLandingOn>false</preventGravshipLandingOn>
     <building>
 	    <ai_neverTrashThis>true</ai_neverTrashThis>
 	    <destroyShakeAmount>0</destroyShakeAmount>
+	    <canLandGravshipOn>true</canLandGravshipOn>
     </building>
   </ThingDef>
   

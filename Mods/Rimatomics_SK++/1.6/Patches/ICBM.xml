@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- world object replacement -->
+    <Operation Class="RimatomicsPlusPlus.PatchOperationUnlessDisabledInSettings">
+        <settingsKey>NukeWorldObject</settingsKey>
+        <value Class="PatchOperationReplace">
+            <xpath>Defs/WorldObjectDef[defName="ICBMfission"]/worldObjectClass</xpath>
+            <value>
+                <worldObjectClass>RimatomicsPlusPlus.WorldObject_ICBM</worldObjectClass>
+            </value>
+        </value>
+    </Operation>
+
+    <!-- makes the missile world icon not get hidden by other icons, more apparent at high altitudes -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/WorldObjectDef[defName="ICBMfission"]/expandingIconPriority</xpath>
+        <value>
+            <expandingIconPriority>99</expandingIconPriority>
+        </value>
+    </Operation>
+</Patch>

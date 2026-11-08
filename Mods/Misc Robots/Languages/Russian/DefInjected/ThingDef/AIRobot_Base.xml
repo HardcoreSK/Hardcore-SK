@@ -15,11 +15,27 @@
 	<AIRobot_Hauler.description>Грузовой дрон. Принесёт ваши покупки домой и даже сможет занести купленное пианино в вашу квартиру на 20ом этаже.</AIRobot_Hauler.description>
 	<AIRobot_Cleaner.description>Дрон-уборщик. Содержит вашу комнату в чистоте, пока вы в отъезде. ВНИМАНИЕ: Не позволяйте вашим питомцам приближаться к нему!</AIRobot_Cleaner.description>
 
-	<AIRobot_Hauler_disabled.label>Грузовой дрон (отключен)</AIRobot_Hauler_disabled.label>
+		<!--
+	HSK Patched out or doesn't exist.
+	
+	Key: AIRobot_Hauler_disabled.label
+	Reason: Found no Verse.ThingDef named AIRobot_Hauler_disabled to match AIRobot_Hauler_disabled.label (AIRobot_Base.xml)
+	
+	Key: AIRobot_Hauler_disabled.description
+	Reason: Found no Verse.ThingDef named AIRobot_Hauler_disabled to match AIRobot_Hauler_disabled.description (AIRobot_Base.xml)
+	
+	Key: AIRobot_Cleaner_disabled.label
+	Reason: Found no Verse.ThingDef named AIRobot_Cleaner_disabled to match AIRobot_Cleaner_disabled.label (AIRobot_Base.xml)
+	
+	Key: AIRobot_Cleaner_disabled.description
+	Reason: Found no Verse.ThingDef named AIRobot_Cleaner_disabled to match AIRobot_Cleaner_disabled.description (AIRobot_Base.xml)
+	
+<AIRobot_Hauler_disabled.label>Грузовой дрон (отключен)</AIRobot_Hauler_disabled.label>
 	<AIRobot_Hauler_disabled.description>Печальная участь дрона. Он больше непригоден для работы и требует или капитального ремонта или утилизации.</AIRobot_Hauler_disabled.description>
 
 	<AIRobot_Cleaner_disabled.label>Дрон-уборщик (отключен)</AIRobot_Cleaner_disabled.label>
 	<AIRobot_Cleaner_disabled.description>Печальная участь дрона. Он больше непригоден для работы и требует или капитального ремонта или утилизации.</AIRobot_Cleaner_disabled.description>
+	-->
 
 	<AIRobot_Hauler.tools.0.label>левый манипулятор</AIRobot_Hauler.tools.0.label>
 	<AIRobot_Hauler.tools.1.label>правый манипулятор</AIRobot_Hauler.tools.1.label>

@@ -1,4 +1,5 @@
 Assemblies/CombatExtended.dll
+Assemblies/CombatExtended.HSK.dll
 AssembliesCompat/*.dll
 AssembliesCore/*.dll
 *.suo
@@ -21,9 +22,10 @@ UnityEngine.dll
 
 # Exclude optimized .dds textures from RimPy / png2dds
 *.dds
-
+*.zstd
 
 .idea/
 !*.xml.bak
 __pycache__
 ModPatches/*/Assemblies/
+.vs/

@@ -90,13 +90,24 @@
 			</modExtensions>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="Gun_Minigun"]/modExtensions/li[@Class="CombatExtended.GunDrawExtension"]</xpath>
-		<value>
-			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.1,1.1</DrawSize>
-			</li>
-		</value>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Gun_Minigun"]/modExtensions/li[@Class="CombatExtended.GunDrawExtension"]</xpath>
+			<value>
+				<li Class="CombatExtended.GunDrawExtension">
+					<DrawSize>1.1,1.1</DrawSize>
+				</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Gun_Minigun"]</xpath>
+			<value>
+				<li Class="CombatExtended.GunDrawExtension">
+					<DrawSize>1.1,1.1</DrawSize>
+				</li>
+			</value>
+		</nomatch>
 	</Operation>
 
 

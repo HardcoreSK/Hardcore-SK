@@ -51,7 +51,7 @@
 	<op_clean_number_label>Filth limit for pre-task cleaning</op_clean_number_label>
 	<adv_clean_number_label>Filth limit for pre-bill cleaning</adv_clean_number_label>
 	<doc_clean_number_label>Filth limit for post-tending cleaning</doc_clean_number_label>
-	<skip_snow_clean_label>Pawns are discouraged from clearing snow from areas when it's snowing or raining</skip_snow_clean_label>
+	<skip_snow_clean_label>Pawns are discouraged from clearing snow (and sand) from areas when it's snowing or raining (or a sandstorm)</skip_snow_clean_label>
 	<skip_snow_clean_note>When raining just in case if it's a tricky weather</skip_snow_clean_note>
 	<prefer_spoiling_meals_label>Pawns are encouraged to eat meals that are closer to spoiling</prefer_spoiling_meals_label>
 	<prefer_spoiling_meals_note>WARNING: A large amount of items to choose from may cause lag when this option is enabled.</prefer_spoiling_meals_note>
@@ -81,4 +81,7 @@
 	<meditation_economy_note>Unless under meditation assignment, pawns will stop meditating if their psyfocus is full and they don't see meditation as a good source of joy (i. e. full or bored of it)</meditation_economy_note>
 	<advanced_respect_capacity_label>-- pawns will not exceed inventory capacity</advanced_respect_capacity_label>
 	<advanced_respect_capacity_note>For immersion reasons or whatever</advanced_respect_capacity_note>
+	<optimal_patching_label>Optimal Patching</optimal_patching_label>
+	<optimal_patching_note>When this option is off, all options activate immediately after toggling them, at the cost of always being in the code, possibly affecting performance even if they're toggled off. When option is on, options will require you to restart the game when changed, but patches needed for these options won't happen, removing extra performance impact when game launches with these options toggled off</optimal_patching_note>
+	<optimal_patching_attention_label>ATTENTION: Optimal patching doesn't properly apply without restarting the game!</optimal_patching_attention_label>
 </LanguageData>

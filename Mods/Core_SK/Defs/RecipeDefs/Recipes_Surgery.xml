@@ -12,44 +12,6 @@
 		<surgeryOutcomeEffect>SurgeryOutcomeBase</surgeryOutcomeEffect>
 	</RecipeDef>	
 
-	<RecipeDef Name="SK_SurgeryInstallImplantBase" ParentName="SK_SurgeryFlesh" Abstract="True">
-		<workerClass>Recipe_InstallImplant</workerClass>
-		<workAmount>2500</workAmount>
-		<skillRequirements>
-			<Medicine>5</Medicine>
-		</skillRequirements>
-		<recipeUsers>
-			<li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
-		</recipeUsers>
-		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-		</fixedIngredientFilter>
-	</RecipeDef>
-
-	<!-- The surgery recipes to install parts in a pawn -->
-
-	<RecipeDef Name="SK_SurgeryInstallBodyPartArtificialBase" ParentName="SK_SurgeryInstallImplantBase" Abstract="True">
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-	</RecipeDef>
-
-	<RecipeDef Name="SK_SurgeryInstallBodyPartNaturalBase" ParentName="SK_SurgeryInstallImplantBase" Abstract="True">
-		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
-	</RecipeDef>
-
-
 	<!-- The surgery recipes to remove parts in a pawn -->
 
 	<RecipeDef Name="SK_SurgeryRemoveImplantBase" ParentName="SK_SurgeryFlesh" Abstract="True">

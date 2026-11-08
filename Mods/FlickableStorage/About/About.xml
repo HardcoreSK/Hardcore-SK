@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Flickable Storage</name>
+  <packageId>Mlie.FlickableStorage</packageId>
+  <author>Mlie</author>
+  <url>https://github.com/emipa606/FlickableStorage</url>
+  <supportedVersions>
+    <li>1.1</li>
+    <li>1.2</li>
+    <li>1.3</li>
+    <li>1.4</li>
+    <li>1.5</li>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+  </loadAfter>
+  <description>[img]https://img.litet.net/logos/Self-Info.png[/img]
+
+Storage-buildings and stockpiles can be set to one of four settings
+
+[list]
+[*] Storage on - Works as normal
+[*] Storage off - Will not accept or release any items
+[*] Accept only - Pawns can only store items, not retrieve them
+[*] Retrieve only - Pawns can only retrieve items, not store them
+[/list]
+
+[h2]Examples[/h2]
+Your prison cells have a storage unit for food, but when there is no prisoners. You want to stop hauling food for it without changing storage filters or priorities. You turn the shelf to retrieve only when there are no prisoners.
+
+You want to have a stack of steel left at all times for emergency trap-building. You set one shelf to store only with highest priority. 
+
+[h2]Technical[/h2]
+The blocking of storing new items is done by modifying the Accept-check for the storage.
+The blocking of retrieving items is done by modifying the Forbidden check for the items in the storage. Pawns with mental break ignores the forbidden check so they will still be able to fetch items.
+
+Should work with all mods that add storage buildings using the IHaulDestination class. Tested for example with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1617282896]LWM's Deep Storage[/url]
+Will also change flick-setting in all linked storages.
+
+NOTE: Chunks cannot be forbidden so are ignored by this mods settings. You can fix this by adding [url= https://steamcommunity.com/sharedfiles/filedetails/?id=2054653797][XND] Forbiddable Debris[/url]
+
+[h2]Credits[/h2]
+notfood: Support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1752864297]Multiplayer[/url], optimization and generalization
+Waveshaper: Debugging
+HawnHan: Chinese translation
+Velcroboy333: Original idea
+
+[table]
+    [tr]
+        [td][url=https://discord.gg/h5TY6DA][img]https://img.litet.net/logos/Discord.png[/img][/url][/td]
+        [td][url=https://github.com/emipa606/FlickableStorage][img]https://img.litet.net/logos/Github.png[/img][/url][/td]
+    [/tr]
+    [tr]
+        [td][img]https://img.litet.net/logos/SafeToAdd.png[/img][/td]
+        [td][img]https://img.litet.net/logos/SafeToRemove.png[/img][/td]
+    [/tr]
+[/table]
+	
+[img]https://img.litet.net/logos/Self-SupportAndDonations.png[/img]
+Since modding is just a hobby for me I expect no donations to keep modding. If you still want to show your support you can gift me anything from my [url=https://store.steampowered.com/wishlist/id/Mlie]Wishlist[/url] or buy me a cup of tea.
+
+[url=https://ko-fi.com/G2G55DDYD][img]https://img.litet.net/logos/Kofi-Small.png[/img][/url]
+
+[img]https://img.litet.net/logos/Self-ReportingIssues.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Always post your log using the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Log Uploader[/url]
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
+[/list] 
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2497907804][img]https://img.shields.io/github/v/release/emipa606/FlickableStorage?label=latest%20version&amp;style=plastic&amp;labelColor=0070cd&amp;color=white[/img][/url] | tags: storage,  settings</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.6.1</modVersion>
+</ModMetaData>

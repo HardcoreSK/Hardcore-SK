@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->
+	<RulePackDef>
+		<defName>NamerMeteoriteCrater</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->crater [narrative_name]</li>
+				<!---->
+				<li>terrain_word(p=5)->crater</li>
+				<li>terrain_word->hole</li>
+				<li>terrain_word->dent</li>
+				<li>terrain_word->cavity</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!---->
+	<RulePackDef>
+		<defName>NamerArtificialChannel</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->channel [narrative_name]</li>
+				<!---->
+				<li>terrain_word(p=5)->channel</li>
+				<li>terrain_word->canal</li>
+				<li>terrain_word->waterway</li>
+				<li>terrain_word->artery</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!---->
+	<RulePackDef>
+		<defName>NamerVolcano</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->volcano [narrative_name]</li>
+				<!---->
+				<li>terrain_word(p=5)->volcano</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!---->
+</Defs>

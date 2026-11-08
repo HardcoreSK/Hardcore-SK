@@ -1,0 +1,49 @@
+<LanguageData>
+	<!-- 1.6\Defs\Outlander\Outlander Trait backstories.xml -->
+	<!-- EN: sickly child -->
+	<ZCB_SicklyChild.title>болезненный мальчик</ZCB_SicklyChild.title>
+	<!-- EN: sickly -->
+	<ZCB_SicklyChild.titleShort>болезненный</ZCB_SicklyChild.titleShort>
+	<!-- EN: [PAWN_nameDef] was a sickly child. [PAWN_pronoun] spent days on end recuperating in the hospital, where [PAWN_pronoun] befriended all the nurses and picked up some basic medical training. -->
+	<ZCB_SicklyChild.baseDesc>{PAWN_nameDef} {PAWN_gender ? был : была} очень болезненным ребёнком. Несколько дней подряд {PAWN_pronoun} {PAWN_gender ? проводил : проводила} в больнице, где {PAWN_gender ? подружился : подружилась} со всеми медсёстрами и {PAWN_gender ? получил : получила} базовые медицинские навыки.</ZCB_SicklyChild.baseDesc>
+	<!-- EN: TimeInBedForMedicalReasons -->
+	<ZCB_SicklyChild.requiredRecords.0.name>TimeInBedForMedicalReasons</ZCB_SicklyChild.requiredRecords.0.name>
+	
+	<!-- EN: gourmand -->
+	<ZCB_Gourmand.title>обжора</ZCB_Gourmand.title>
+	<!-- EN: gourmand -->
+	<ZCB_Gourmand.titleShort>обжора</ZCB_Gourmand.titleShort>
+	<!-- EN: [PAWN_nameDef] always had a love for food. [PAWN_pronoun] spent [PAWN_possessive] spare time hanging around the kitchen, pilfering snacks and learning the secrets of cooking a good meal. -->
+	<ZCB_Gourmand.baseDesc>{PAWN_nameDef} всегда {PAWN_gender ? любил : любила} вкусно поесть. Свободное время {PAWN_pronoun} {PAWN_gender ? проводил : проводила} на кухне, воруя закуски и постигая секреты приготовления вкусной еды.</ZCB_Gourmand.baseDesc>
+	<!-- EN: MealsCooked -->
+	<ZCB_Gourmand.requiredRecords.0.name>MealsCooked</ZCB_Gourmand.requiredRecords.0.name>
+	
+	<!-- EN: brawler -->
+	<ZCB_Brawler.title>драчун</ZCB_Brawler.title>
+	<!-- EN: brawler -->
+	<ZCB_Brawler.titleShort>драчун</ZCB_Brawler.titleShort>
+	<!-- EN: [PAWN_nameDef] was quick to anger and loved getting up close and personal, resolving arguments with  [PAWN_possessive] fists. [PAWN_pronoun] didn't make many friends, but [PAWN_pronoun] did get a lot of practice patching up wounds. -->
+	<ZCB_Brawler.baseDesc>{PAWN_nameDef} {PAWN_gender ? был очень вспыльчивым и любил : была очень вспыльчивой и любила} разрешать споры кулаками. У н{PAWN_possessive} было не так много друзей, но {PAWN_pronoun} много {PAWN_gender ? практиковался : практиковалась} в лечении ран.</ZCB_Brawler.baseDesc>
+	<!-- EN: DamageDealt -->
+	<ZCB_Brawler.requiredRecords.0.name>DamageDealt</ZCB_Brawler.requiredRecords.0.name>
+	<!-- EN: DamageTaken -->
+	<ZCB_Brawler.requiredRecords.1.name>DamageTaken</ZCB_Brawler.requiredRecords.1.name>
+	<!-- EN: TimesTendedOther -->
+	<ZCB_Brawler.requiredRecords.2.name>TimesTendedOther</ZCB_Brawler.requiredRecords.2.name>
+	
+	<!-- EN: mad prodigy -->
+	<ZCB_MadProdogy.title>безумный вундеркинд</ZCB_MadProdogy.title>
+	<!-- EN: prodigy -->
+	<ZCB_MadProdogy.titleShort>вундеркинд</ZCB_MadProdogy.titleShort>
+	<!-- EN: [PAWN_nameDef] was an unstable prodigy. He applied his genius to the arts, and frequently broke under the pressure of his chaotic mind. -->
+	<ZCB_MadProdogy.baseDesc>{PAWN_nameDef} {PAWN_gender ? был : была} неуравновешенным вундеркиндом. {PAWN_pronoun} {PAWN_gender ? применял : применяла} свою гениальность в искусстве, но из-за своего хаотичного ума у н{PAWN_possessive} часто были нервные срывы.</ZCB_MadProdogy.baseDesc>
+	<!-- EN: TimesInMentalState -->
+	<ZCB_MadProdogy.requiredRecords.0.name>TimesInMentalState</ZCB_MadProdogy.requiredRecords.0.name>
+	
+	<!-- EN: bully -->
+	<ZCB_Bully.title>хулиган</ZCB_Bully.title>
+	<!-- EN: bully -->
+	<ZCB_Bully.titleShort>хулиган</ZCB_Bully.titleShort>
+	<!-- EN: [PAWN_nameDef] enjoyed hurting people, often picking on the smaller children. [PAWN_pronoun] loved utterly crushing [PAWN_possessive] unfortunate targets. -->
+	<ZCB_Bully.baseDesc>{PAWN_nameDef} нравилось причинять боль людям. Поэтому {PAWN_pronoun} часто {PAWN_gender ? задирал : задирала} маленьких детей и других несчастных людей.</ZCB_Bully.baseDesc>
+</LanguageData>

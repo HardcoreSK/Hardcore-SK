@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Rimefeller</li>
+        </mods>
+        <match Class="SK.PatchOperationReplaceExtended">
+            <xpath>Defs/DesignationCategoryDef[defName="Rimefeller"]</xpath>
+            <value>
+                <label>Oil</label>
+                <order>360</order>
+            </value>
+		</match>
+    </Operation>
+</Patch>

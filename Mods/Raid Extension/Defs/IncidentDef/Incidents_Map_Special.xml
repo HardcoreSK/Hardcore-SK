@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <IncidentDef Name="SrPoaching">
+        <defName>SrPoaching</defName>
+        <label>Poaching</label>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>SR.ModRimworld.RaidExtension.IncidentWorkerPoaching</workerClass>
+        <category>ThreatSmall</category>
+        <baseChance>0.8</baseChance>
+        <pointsScaleable>true</pointsScaleable>
+        <requireColonistsPresent>false</requireColonistsPresent>
+    </IncidentDef>
+    <IncidentDef ParentName="SrPoaching">
+        <defName>SrPoachingSurprise</defName>
+        <workerClass>SR.ModRimworld.RaidExtension.IncidentWorkerPoachingSurprise</workerClass>
+        <category>ThreatBig</category>
+        <baseChance>0.08</baseChance>
+    </IncidentDef>
+    <IncidentDef Name="SrLogging">
+        <defName>SrLogging</defName>
+        <label>Logging</label>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>SR.ModRimworld.RaidExtension.IncidentWorkerLogging</workerClass>
+        <category>ThreatSmall</category>
+        <baseChance>0.8</baseChance>
+        <pointsScaleable>true</pointsScaleable>
+        <requireColonistsPresent>false</requireColonistsPresent>
+    </IncidentDef>
+    <IncidentDef ParentName="SrLogging">
+        <defName>SrLoggingSurprise</defName>
+        <workerClass>SR.ModRimworld.RaidExtension.IncidentWorkerLoggingSurprise</workerClass>
+        <category>ThreatBig</category>
+        <baseChance>0.08</baseChance>
+    </IncidentDef>
+    <IncidentDef Name="SrHositleTraveler">
+        <defName>SrHositleTraveler</defName>
+        <label>Lost Raider</label>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>SR.ModRimworld.RaidExtension.IncidentWorkerHostileTraveler</workerClass>
+        <category>Misc</category>
+        <baseChance>1</baseChance>
+        <pointsScaleable>true</pointsScaleable>
+        <requireColonistsPresent>True</requireColonistsPresent>
+    </IncidentDef>
+    <IncidentDef ParentName="SrHositleTraveler">
+        <defName>SrHositleTravelerSurprise</defName>
+        <workerClass>SR.ModRimworld.RaidExtension.IncidentWorkerHostileTravelerSurprise</workerClass>
+        <category>ThreatBig</category>
+        <baseChance>0.1</baseChance>
+    </IncidentDef>
+    <IncidentDef Name="SrHositleCaravanPassing">
+        <defName>SrHositleCaravanPassing</defName>
+        <label>Hostile Caravan Passing By</label>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>SR.ModRimworld.RaidExtension.IncidentWorkerHostileTraderCaravanPassing</workerClass>
+        <category>Misc</category>
+        <baseChance>1</baseChance>
+        <pointsScaleable>true</pointsScaleable>
+        <requireColonistsPresent>false</requireColonistsPresent>
+    </IncidentDef>
+    <IncidentDef ParentName="SrHositleCaravanPassing">
+        <defName>SrHositleCaravanPassingSurprise</defName>
+        <workerClass>SR.ModRimworld.RaidExtension.IncidentWorkerHostileTraderCaravanPassingSurprise</workerClass>
+        <category>ThreatBig</category>
+        <baseChance>0.1</baseChance>
+    </IncidentDef>
+</Defs>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/MapGeneratorDef[
+            defName="LAO_FloatingIslandHill" or
+            defName="LAO_FloatingIslandGiantMountain" or
+            defName="LAO_FloatingIslandGiantCrust" or
+            defName="LAO_FloatingIslandDebug" or
+            defName="LAO_FloatingIslandFlat" or
+            defName="LAO_FloatingIslandGiantFlat"
+        ]/genSteps/li[text()="ScatterRuinsSimple"]</xpath>
+        <order>Append</order>
+		<value>
+			<li>ScatterCrashedShipWrecks</li>
+			<li>ScatterShipWrecks</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/MapGeneratorDef[defName="LAO_FloatingIslandCollapsing"]/genSteps/li[text()="RockChunks"]</xpath>
+        <order>Append</order>
+		<value>
+			<li>ScatterCrashedShipWrecks</li>
+			<li>ScatterShipWrecks</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/MapGeneratorDef[defName="LAO_AsteroidGiant"]/genSteps/li[text()="LAO_AsteroidGiant"]</xpath>
+        <order>Append</order>
+		<value>
+			<li>ScatterCrashedShipWrecks</li>
+			<li>ScatterShipWrecks</li>
+		</value>
+	</Operation>
+	
+</Patch>

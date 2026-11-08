@@ -1,0 +1,1396 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Gatherer_Assistant</defName>
+		<title>Gatherer assistant</title>
+		<titleFemale>Gatherer assistant</titleFemale>
+		<titleShort>Assistant</titleShort>
+		<titleShortFemale>Assistant</titleShortFemale>
+		<description>[PAWN_nameDef] was always afraid of wild animals, so {PAWN_gender ? he : she} became an assistant to the tribal gatherer. [PAWN_nameDef] learned a lot over the years in the forest.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Medicine>2</Medicine>
+			<Plants>4</Plants>
+		</skillGains>
+		<workDisables>
+			<li>Animals</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Young_Gatherer</defName>
+		<title>Young gatherer</title>
+		<titleFemale>Young gatherer</titleFemale>
+		<titleShort>Gatherer</titleShort>
+		<titleShortFemale>Gatherer</titleShortFemale>
+		<description>From early childhood, [PAWN_nameDef] loved to go to the forest and live close to nature. Perhaps this is what saved [PAWN_nameDef] from death when the tribe was destroyed by evil machines.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Animals>3</Animals>
+			<Plants>4</Plants>
+		</skillGains>
+		<workDisables>
+			<li>Social</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Weak_Child</defName>
+		<title>Weak child</title>
+		<titleFemale>Weak child</titleFemale>
+		<titleShort>Weak child</titleShort>
+		<titleShortFemale>Weak child</titleShortFemale>
+		<description>[PAWN_nameDef]'s childhood was not easy. The tribe abandoned [PAWN_nameDef] at the edge of the river because {PAWN_gender ? he : she} could not swim.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Animals>-2</Animals>
+			<Plants>-2</Plants>
+			<Medicine>3</Medicine>
+		</skillGains>
+		<workDisables>
+			<li>Social</li>
+		</workDisables>
+		<forcedTraits>
+			<Wimp>0</Wimp>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Rock_Climber</defName>
+		<title>Rock climber</title>
+		<titleFemale>Rock climber</titleFemale>
+		<titleShort>Climber</titleShort>
+		<titleShortFemale>Climber</titleShortFemale>
+		<description>[PAWN_nameDef] was born in the mountains, far from the settlements. [PAWN_nameDef] was usually assigned by the community to take care of the pets and prepare food.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Animals>4</Animals>
+			<Plants>-5</Plants>
+			<Cooking>2</Cooking>
+			<Mining>2</Mining>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Mining</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Firefighting</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Blacksmith_Journeyman</defName>
+		<title>Blacksmith's journeyman</title>
+		<titleFemale>Blacksmith's journeyman</titleFemale>
+		<titleShort>Journeyman</titleShort>
+		<titleShortFemale>Journeyman</titleShortFemale>
+		<description>[PAWN_nameDef] was born into the family of a tribal blacksmith who made spears and nets for fishing. Gradually [PAWN_nameDef] takes over father's skills and becomes his apprentice.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Crafting>3</Crafting>
+			<Mining>3</Mining>
+			<Plants>-2</Plants>
+			<Animals>-2</Animals>
+		</skillGains>
+		<workDisables>
+			<li>Cooking</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Crafting</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Wimp>0</Wimp>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Tribal_Messenger</defName>
+		<title>Tribal messenger</title>
+		<titleFemale>Tribal messenger</titleFemale>
+		<titleShort>Messenger</titleShort>
+		<titleShortFemale>Messenger</titleShortFemale>
+		<description>[PAWN_nameDef] was always distinguished by endurance on long campaigns, so [PAWN_nameDef] usually carried out messages to distant tribal communities on behalf of the leader.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Animals>2</Animals>
+			<Social>6</Social>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<SpeedOffset>2</SpeedOffset>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Witch_Child</defName>
+		<title>Witch's child</title>
+		<titleFemale>Witch's child</titleFemale>
+		<titleShort>Witch's child</titleShort>
+		<titleShortFemale>Witch's child</titleShortFemale>
+		<description>[PAWN_nameDef] mother was declared a witch, which was the reason for her public execution. [PAWN_nameDef] was forced to flee the tribe that very night.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Animals>3</Animals>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+			<li>Social</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Potter_Apprentice</defName>
+		<title>Potter's apprentice</title>
+		<titleFemale>Potter's apprentice</titleFemale>
+		<titleShort>Apprentice</titleShort>
+		<titleShortFemale>Apprentice</titleShortFemale>
+		<description>[PAWN_nameDef] was born into a poor potter's family. From early childhood, [PAWN_nameDef] mastered the art of craft, which allowed {PAWN_gender ? him : her} to gain prestige in the tribe.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Crafting>5</Crafting>
+			<Intellectual>1</Intellectual>
+			<Social>-3</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Crafting</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Loner_Hermit</defName>
+		<title>Loner hermit</title>
+		<titleFemale>Loner hermit</titleFemale>
+		<titleShort>Loner hermit</titleShort>
+		<titleShortFemale>Loner hermit</titleShortFemale>
+		<description>The tribe got rid of {PAWN_gender ? him : her} when [PAWN_nameDef] was very young. [PAWN_nameDef] survived despite everything and vowed revenge.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Crafting>3</Crafting>
+			<Shooting>5</Shooting>
+			<Intellectual>-5</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+			<li>Social</li>
+			<li>Caring</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Ascetic>0</Ascetic>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Cave_Keeper</defName>
+		<title>Cave keeper</title>
+		<titleFemale>Cave keeper</titleFemale>
+		<titleShort>Keeper</titleShort>
+		<titleShortFemale>Keeper</titleShortFemale>
+		<description>Every night [PAWN_nameDef] watches the endless darkness around his cave, guarding the peace of his relatives.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Intellectual>-3</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+		<forcedTraits>
+			<Ascetic>0</Ascetic>
+			<Undergrounder>0</Undergrounder>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Captive</defName>
+		<title>Captive</title>
+		<titleFemale>Captive</titleFemale>
+		<titleShort>Captive</titleShort>
+		<titleShortFemale>Captive</titleShortFemale>
+		<description>[PAWN_nameDef]'s family was captured and driven into slavery to the mountain passes. [PAWN_nameDef] had no rights in the new tribe and was doing dirty work.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>-3</Shooting>
+			<Plants>4</Plants>
+			<Mining>4</Mining>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+			<li>Mining</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Child_Of_Slave</defName>
+		<title>Child of slave</title>
+		<titleFemale>Child of slave</titleFemale>
+		<titleShort>Slave</titleShort>
+		<titleShortFemale>Slave</titleShortFemale>
+		<description>[PAWN_nameDef] was born into a family of hereditary slaves raised to serve the chief.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Plants>3</Plants>
+			<Mining>3</Mining>
+			<Construction>3</Construction>
+		</skillGains>
+		<workDisables>
+			<li>Violent</li>
+			<li>Artistic</li>
+			<li>Intellectual</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+			<li>Mining</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Ascetic>0</Ascetic>
+			<Masochist>0</Masochist>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Young_Archer</defName>
+		<title>Young archer</title>
+		<titleFemale>Young archer</titleFemale>
+		<titleShort>Archer</titleShort>
+		<titleShortFemale>Archer</titleShortFemale>
+		<description>From early childhood [PAWN_nameDef] fell in love with bow training and strove to go hunting with the tribe. One day [PAWN_nameDef] saves the tribe from an ambush with his well-aimed shot.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>-3</Melee>
+		</skillGains>
+		<workDisables>
+			<li>PlantWork</li>
+			<li>Artistic</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<ShootingAccuracy>1</ShootingAccuracy>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Superstitious_Child</defName>
+		<title>Superstitious child</title>
+		<titleFemale>Superstitious child</titleFemale>
+		<titleShort>Child</titleShort>
+		<titleShortFemale>Child</titleShortFemale>
+		<description>[PAWN_nameDef] always believed in the stories that his fellow tribesmen told around the fire. It seems that his faith is unshakable.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Artistic>5</Artistic>
+			<Animals>1</Animals>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Artistic</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Young_Squire</defName>
+		<title>Young squire</title>
+		<titleFemale>Young squire</titleFemale>
+		<titleShort>Squire</titleShort>
+		<titleShortFemale>Squire</titleShortFemale>
+		<description>[PAWN_nameDef] witnessed many of the military campaigns of {PAWN_gender ? his : her} tribe and invariably acted as a squire.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>5</Melee>
+			<Animals>2</Animals>
+			<Crafting>-3</Crafting>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+			<li>Intellectual</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Eskimo_Child</defName>
+		<title>Eskimo's child</title>
+		<titleFemale>Eskimo's child</titleFemale>
+		<titleShort>Eskimo</titleShort>
+		<titleShortFemale>Eskimo</titleShortFemale>
+		<description>[PAWN_nameDef] was born in the far north. From early childhood, [PAWN_nameDef] knows how to handle deer and live in low temperatures.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Animals>2</Animals>
+			<Construction>2</Construction>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+			<li>PlantWork</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Young_Explorer</defName>
+		<title>Young explorer</title>
+		<titleFemale>Young explorer</titleFemale>
+		<titleShort>Explorer</titleShort>
+		<titleShortFemale>Explorer</titleShortFemale>
+		<description>[PAWN_nameDef] often left {PAWN_gender ? his : her} native tribe in search of adventure. One day [PAWN_nameDef] returns, seeing only ruins in front of him.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Animals>2</Animals>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+			<li>Cleaning</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Desert_Child</defName>
+		<title>Desert child</title>
+		<titleFemale>Desert child</titleFemale>
+		<titleShort>Desert child</titleShort>
+		<titleShortFemale>Desert child</titleShortFemale>
+		<description>[PAWN_nameDef] was born in a distant and hot desert, which tested {PAWN_gender ? his : her} tribe for strength every day.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>5</Melee>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Animals</li>
+			<li>Cleaning</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Wasteland_Child</defName>
+		<title>Wasteland child</title>
+		<titleFemale>Wasteland child</titleFemale>
+		<titleShort>Wasteland child</titleShort>
+		<titleShortFemale>Wasteland child</titleShortFemale>
+		<description>[PAWN_nameDef] was born in the war-polluted wastelands, through which for many years {PAWN_gender ? his : her} ruined tribe walked.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Crafting>3</Crafting>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Animals</li>
+			<li>PlantWork</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Flood_Child</defName>
+		<title>Flood child</title>
+		<titleFemale>Flood child</titleFemale>
+		<titleShort>Flood child</titleShort>
+		<titleShortFemale>Flood child</titleShortFemale>
+		<description>At a young age, [PAWN_nameDef] learned what a flood is. [PAWN_nameDef]'s tribe was at the center of the disaster, and the tribal shaman's rituals failed to stop the storm surge.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>-3</Shooting>
+			<Melee>1</Melee>
+			<Crafting>4</Crafting>
+		</skillGains>
+		<workDisables>
+			<li>Animals</li>
+			<li>PlantWork</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Traveler_Child</defName>
+		<title>Traveler's child</title>
+		<titleFemale>Traveler's child</titleFemale>
+		<titleShort>Traveler's child</titleShort>
+		<titleShortFemale>Traveler's child</titleShortFemale>
+		<description>[PAWN_nameDef] was born into a nomadic tribal family. From early childhood, [PAWN_nameDef] is on long exhausting hikes.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Crafting>3</Crafting>
+			<Plants>3</Plants>
+		</skillGains>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Cleaning</li>
+			<li>Firefighting</li>
+			<li>Artistic</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Chief_Child</defName>
+		<title>Chief's child</title>
+		<titleFemale>Chief's child</titleFemale>
+		<titleShort>Chief's child</titleShort>
+		<titleShortFemale>Chief's child</titleShortFemale>
+		<description>[PAWN_nameDef] was born into the family of a tribal leader. {PAWN_gender ? He : She}  was free from many jobs and lived for {PAWN_gender ? his : her} own pleasure.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>-2</Shooting>
+			<Melee>-1</Melee>
+			<Artistic>4</Artistic>
+			<Social>5</Social>
+		</skillGains>
+		<workDisables>
+			<li>Cleaning</li>
+			<li>Firefighting</li>
+			<li>PlantWork</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Artistic</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Greedy>0</Greedy>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Warrior_Child</defName>
+		<title>Warrior's child</title>
+		<titleFemale>Warrior's child</titleFemale>
+		<titleShort>Warrior's child</titleShort>
+		<titleShortFemale>Warrior's child</titleShortFemale>
+		<description>From early childhood, [PAWN_nameDef] studied the art of war with {PAWN_gender ? his : her} father, the leader of a tribal village. One day {PAWN_gender ? his : her} father dies and bequeathed to {PAWN_gender ? him : her} to rule the tribe.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Artistic>4</Artistic>
+			<Cooking>-3</Cooking>
+			<Crafting>-4</Crafting>
+		</skillGains>
+		<workDisables>
+			<li>Mining</li>
+			<li>PlantWork</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Greedy>0</Greedy>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Caravan_Child</defName>
+		<title>Caravan's child</title>
+		<titleFemale>Caravan's child</titleFemale>
+		<titleShort>Caravan's child</titleShort>
+		<titleShortFemale>Caravan's child</titleShortFemale>
+		<description>Almost all of [PAWN_nameDef]'s childhood was spent traveling. [PAWN_nameDef] lived in a merchant caravan belonging to a merchant tribe.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Animals>4</Animals>
+			<Crafting>-5</Crafting>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Animals</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Mining</li>
+			<li>PlantWork</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Campfire_Keeper</defName>
+		<title>Campfire keeper</title>
+		<titleFemale>Campfire keeper</titleFemale>
+		<titleShort>Keeper</titleShort>
+		<titleShortFemale>Keeper</titleShortFemale>
+		<description>[PAWN_nameDef] guarded the fire from wind and rain, preventing it from going out.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>1</Melee>
+			<Cooking>3</Cooking>
+		</skillGains>
+		<workDisables>
+			<li>PlantWork</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Thrown_Child</defName>
+		<title>Thrown child</title>
+		<titleFemale>Thrown child</titleFemale>
+		<titleShort>Thrown child</titleShort>
+		<titleShortFemale>Thrown child</titleShortFemale>
+		<description>At an early age, [PAWN_nameDef] was abandoned by {PAWN_gender ? his : her} tribe. Weeks of wandering brought [PAWN_nameDef] to a new home.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Cooking>1</Cooking>
+			<Plants>2</Plants>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+			<li>Social</li>
+			<li>Caring</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Surviving_Child</defName>
+		<title>Surviving child</title>
+		<titleFemale>Surviving child</titleFemale>
+		<titleShort>Surviving child</titleShort>
+		<titleShortFemale>Surviving child</titleShortFemale>
+		<description>[PAWN_nameDef] space station crashed. [PAWN_nameDef]'s body was discovered by local aborigines and raised as their child.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Crafting>3</Crafting>
+			<Animals>4</Animals>
+			<Plants>3</Plants>
+		</skillGains>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Crafting</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Ascetic>0</Ascetic>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Lonely_Avenger</defName>
+		<title>Lonely avenger</title>
+		<titleFemale>Lonely avenger</titleFemale>
+		<titleShort>Avenger</titleShort>
+		<titleShortFemale>Avenger</titleShortFemale>
+		<description>[PAWN_nameDef]'s tribe was destroyed by evil machines. Only [PAWN_nameDef] was able to escape in time, making {PAWN_gender ? his : her} way through the wild jungle. Once, [PAWN_nameDef] vowed revenge and destroys dozens of mechanoids with one bow.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>-3</Melee>
+			<Crafting>4</Crafting>
+			<Animals>1</Animals>
+			<Plants>1</Plants>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Artistic</li>
+			<li>Social</li>
+			<li>Caring</li>
+		</workDisables>
+		<forcedTraits>
+			<Ascetic>0</Ascetic>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Insane_Child</defName>
+		<title>Insane child</title>
+		<titleFemale>Insane child</titleFemale>
+		<titleShort>Insane</titleShort>
+		<titleShortFemale>Insane</titleShortFemale>
+		<description>[PAWN_nameDef] grew up like an ordinary child until [PAWN_nameDef] fell ill with a strange disease. Alone, [PAWN_nameDef] killed a dozen people from {PAWN_gender ? his : her} tribe and fled into the forest.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>-4</Shooting>
+			<Melee>5</Melee>
+			<Crafting>2</Crafting>
+			<Animals>2</Animals>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+			<li>Social</li>
+			<li>Caring</li>
+			<li>PlantWork</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Young_Pathfinder</defName>
+		<title>Young pathfinder</title>
+		<titleFemale>Young pathfinder</titleFemale>
+		<titleShort>Pathfinder</titleShort>
+		<titleShortFemale>Pathfinder</titleShortFemale>
+		<description>Since childhood, [PAWN_nameDef] loved to go hunting and explore the surrounding forest. [PAWN_nameDef] took notes in the trees, taking note of {PAWN_gender ? his : her} observations.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Crafting>1</Crafting>
+			<Animals>2</Animals>
+			<Plants>2</Plants>
+		</skillGains>
+		<workDisables>
+			<li>Cleaning</li>
+			<li>Firefighting</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Chief_Lover</defName>
+		<title>Chief's lover</title>
+		<titleFemale>Chief's lover</titleFemale>
+		<titleShort>Lover</titleShort>
+		<titleShortFemale>Lover</titleShortFemale>
+		<description>The tribe bought [PAWN_nameDef] from a passing caravan. The leader of the tribe liked [PAWN_nameDef], predetermining fate.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>5</Social>
+			<Artistic>3</Artistic>
+			<Crafting>-2</Crafting>
+		</skillGains>
+		<workDisables>
+			<li>Violent</li>
+			<li>Firefighting</li>
+			<li>PlantWork</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Masochist>0</Masochist>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Tanner_Child</defName>
+		<title>Tanner's child</title>
+		<titleFemale>Tanner's child</titleFemale>
+		<titleShort>Tanner's child</titleShort>
+		<titleShortFemale>Tanner's child</titleShortFemale>
+		<description>[PAWN_nameDef] was born into the family of a tanner. From childhood, [PAWN_nameDef]'s father taught {PAWN_gender ? him : her} to decorate skins and passed on all {PAWN_gender ? his : her} skills.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Construction>1</Construction>
+			<Crafting>5</Crafting>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Crafting</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Animals</li>
+			<li>PlantWork</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Shipwreck_Child</defName>
+		<title>Shipwreck child</title>
+		<titleFemale>Shipwreck child</titleFemale>
+		<titleShort>Shipwreck child</titleShort>
+		<titleShortFemale>Shipwreck child</titleShortFemale>
+		<description>As a child, [PAWN_nameDef] and {PAWN_gender ? his : her} tribe sailed across the ocean, fleeing the threat on makeshift boats. One day, a storm destroys their caravan, nailing [PAWN_nameDef] to a desert island.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Construction>4</Construction>
+			<Crafting>3</Crafting>
+			<Plants>3</Plants>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Crafting</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Animals</li>
+			<li>Violent</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Fisherman_Child</defName>
+		<title>Fisherman's child</title>
+		<titleFemale>Fisherman's child</titleFemale>
+		<titleShort>Fisherman</titleShort>
+		<titleShortFemale>Fisherman</titleShortFemale>
+		<description>[PAWN_nameDef] was born into a tribal family of hunters and fishermen. [PAWN_nameDef]'s father taught {PAWN_gender ? him : her} to skillfully catch and cook fish, as well as weave nets for fishing.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Animals>4</Animals>
+			<Crafting>2</Crafting>
+			<Construction>1</Construction>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Animals</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>PlantWork</li>
+			<li>Intellectual</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Priest_Child</defName>
+		<title>Priest's child</title>
+		<titleFemale>Priest's child</titleFemale>
+		<titleShort>Priest's child</titleShort>
+		<titleShortFemale>Priest's child</titleShortFemale>
+		<description>[PAWN_nameDef] was born into a noble family of priests of the desert tribe. According to tradition, [PAWN_nameDef] was supposed to become a high priest, for which [PAWN_nameDef] had been preparing for many years.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Social>5</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>PlantWork</li>
+			<li>Animals</li>
+			<li>Cleaning</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Carefree_Child</defName>
+		<title>Carefree child</title>
+		<titleFemale>Carefree child</titleFemale>
+		<titleShort>Carefree child</titleShort>
+		<titleShortFemale>Carefree child</titleShortFemale>
+		<description>[PAWN_nameDef]'s tribe was at the peak of {PAWN_gender ? his : her} power at the time of {PAWN_gender ? his : her} birth, which allowed {PAWN_gender ? him : her} to devote himself to what [PAWN_nameDef] loved.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Social>3</Social>
+			<Artistic>5</Artistic>
+		</skillGains>
+		<workDisables>
+			<li>PlantWork</li>
+			<li>Cleaning</li>
+			<li>Mining</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Diligent_Child</defName>
+		<title>Diligent child</title>
+		<titleFemale>Diligent child</titleFemale>
+		<titleShort>Diligent child</titleShort>
+		<titleShortFemale>Diligent child</titleShortFemale>
+		<description>[PAWN_nameDef] was born into a family of strict morals in a poor tribal community. From childhood, [PAWN_nameDef] showed great activity for the minimal praise of {PAWN_gender ? his : her} parents.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Intellectual>4</Intellectual>
+			<Social>-2</Social>
+			<Medicine>2</Medicine>
+			<Plants>2</Plants>
+			<Mining>2</Mining>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Sacrificed_Child</defName>
+		<title>Sacrificed child</title>
+		<titleFemale>Sacrificed child</titleFemale>
+		<titleShort>Sacrificed child</titleShort>
+		<titleShortFemale>Sacrificed child</titleShortFemale>
+		<description>According to legend, once a year, a sacrifice should be made to a volcano in order for the tribe to continue to live. This time, the victim was to be young [PAWN_nameDef]. At the time of the sacrifice, [PAWN_nameDef] managed to break the chains and escape.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Intellectual>4</Intellectual>
+			<Crafting>2</Crafting>
+			<Mining>1</Mining>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+			<li>Social</li>
+			<li>Caring</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+			<TooSmart>0</TooSmart>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Mowgli</defName>
+		<title>Mowgli</title>
+		<titleFemale>Mowgli</titleFemale>
+		<titleShort>Mowgli</titleShort>
+		<titleShortFemale>Mowgli</titleShortFemale>
+		<description>The tribe got rid of [PAWN_nameDef] in infancy, but [PAWN_nameDef] was picked up and raised by a panther. [PAWN_nameDef]'s habits are much like animal habits.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Plants>4</Plants>
+			<Animals>4</Animals>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Animals</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Intellectual</li>
+			<li>Artistic</li>
+			<li>Social</li>
+			<li>Caring</li>
+		</workDisables>
+		<forcedTraits>
+			<DislikesMen>0</DislikesMen>
+			<DislikesWomen>0</DislikesWomen>
+			<SlowLearner>0</SlowLearner>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Hearth_Keeper</defName>
+		<title>Hearth keeper</title>
+		<titleFemale>Hearth keeper</titleFemale>
+		<titleShort>Keeper</titleShort>
+		<titleShortFemale>Keeper</titleShortFemale>
+		<description>As a child, [PAWN_nameDef] loved to spend time by the fire, preparing food for {PAWN_gender ? his : her} fellow tribesmen.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Cooking>4</Cooking>
+			<Crafting>2</Crafting>
+			<Medicine>2</Medicine>
+			<Mining>-4</Mining>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Cooking</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Adventurer</defName>
+		<title>Adventurer</title>
+		<titleFemale>Adventurer</titleFemale>
+		<titleShort>Adventurer</titleShort>
+		<titleShortFemale>Adventurer</titleShortFemale>
+		<description>[PAWN_nameDef] never sat still. Since childhood, [PAWN_nameDef] wanders through forests and mountains, often contrary to the prohibitions of the tribe.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Plants>3</Plants>
+			<Medicine>2</Medicine>
+			<Mining>2</Mining>
+		</skillGains>
+		<workDisables>
+			<li>Cooking</li>
+			<li>Cleaning</li>
+			<li>Firefighting</li>
+		</workDisables>
+		<forcedTraits>
+			<Ascetic>0</Ascetic>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Miner_Child</defName>
+		<title>Miner's child</title>
+		<titleFemale>Miner's child</titleFemale>
+		<titleShort>Miner</titleShort>
+		<titleShortFemale>Miner</titleShortFemale>
+		<description>[PAWN_nameDef] was born into a family of miners who built a network of underground temples for a tribal cult.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Construction>4</Construction>
+			<Mining>4</Mining>
+			<Shooting>-3</Shooting>
+		</skillGains>
+		<workDisables>
+			<li>Cooking</li>
+			<li>PlantWork</li>
+			<li>Animals</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Young_Farmer</defName>
+		<title>Young farmer</title>
+		<titleFemale>Young farmer</titleFemale>
+		<titleShort>Young farmer</titleShort>
+		<titleShortFemale>Young farmer</titleShortFemale>
+		<description>Since childhood, [PAWN_nameDef] loves to tinker with plants. [PAWN_nameDef]'s father was a farmer in a sedentary tribe and taught {PAWN_gender ? him : her} a lot.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Plants>5</Plants>
+			<Medicine>2</Medicine>
+			<Shooting>-2</Shooting>
+			<Melee>-2</Melee>
+		</skillGains>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Animals</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Muffalo_Shepherd</defName>
+		<title>Muffalo shepherd</title>
+		<titleFemale>Muffalo shepherd</titleFemale>
+		<titleShort>Muffalo shepherd</titleShort>
+		<titleShortFemale>Muffalo shepherd</titleShortFemale>
+		<description>[PAWN_nameDef] lived with a small mountain tribe who were involved in raising muffalo. Since childhood, [PAWN_nameDef] walked mountain passes.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Animals>4</Animals>
+			<Plants>1</Plants>
+			<Shooting>1</Shooting>
+			<Crafting>-2</Crafting>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Animals</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Cleaning</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Storyteller</defName>
+		<title>Storyteller</title>
+		<titleFemale>Storyteller</titleFemale>
+		<titleShort>Storyteller</titleShort>
+		<titleShortFemale>Storyteller</titleShortFemale>
+		<description>[PAWN_nameDef] loved to listen to the stories of {PAWN_gender ? his : her} father, but soon [PAWN_nameDef]'s father was gone. In memory of him, [PAWN_nameDef] tells stories around the campfire for {PAWN_gender ? his : her} tribe.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>4</Social>
+			<Artistic>2</Artistic>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>Mining</li>
+			<li>Cleaning</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Wimp>0</Wimp>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Child_of_Battles</defName>
+		<title>Child of battles</title>
+		<titleFemale>Child of battles</titleFemale>
+		<titleShort>Child of battles</titleShort>
+		<titleShortFemale>Child of battles</titleShortFemale>
+		<description>[PAWN_nameDef] was born during the religious wars in which {PAWN_gender ? his : her} tribe actively participated. [PAWN_nameDef] had a chance to witness many battles and take part in them.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+			<Shooting>4</Shooting>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>Caring</li>
+			<li>Mining</li>
+			<li>Cleaning</li>
+			<li>Artistic</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Brawler>0</Brawler>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Tribe_Symbol</defName>
+		<title>Tribe symbol</title>
+		<titleFemale>Tribe symbol</titleFemale>
+		<titleShort>Tribe symbol</titleShort>
+		<titleShortFemale>Tribe symbol</titleShortFemale>
+		<description>[PAWN_nameDef] was born in turbulent times, and {PAWN_gender ? his : her} tribe was on the brink of destruction. At a young age, [PAWN_nameDef] led the battle and was able to save {PAWN_gender ? his : her} tribe from plunder. After that, [PAWN_nameDef] became a revered symbol of endurance and strength.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>5</Melee>
+			<Social>5</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Caring</li>
+			<li>Artistic</li>
+			<li>PlantWork</li>
+			<li>Mining</li>
+			<li>Cleaning</li>
+		</workDisables>
+		<forcedTraits>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Protector_Of_The_Weak</defName>
+		<title>Protector of the weak</title>
+		<titleFemale>Protector of the weak</titleFemale>
+		<titleShort>Protector</titleShort>
+		<titleShortFemale>Protector</titleShortFemale>
+		<description>[PAWN_nameDef] hates injustice and protects the weak from childhood. [PAWN_nameDef] made many enemies in the tribe, but also many admirers.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>5</Melee>
+			<Social>2</Social>
+			<Crafting>1</Crafting>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Keeper_Of_Children</defName>
+		<title>Keeper of children</title>
+		<titleFemale>Keeper of children</titleFemale>
+		<titleShort>Keeper of children</titleShort>
+		<titleShortFemale>Keeper of children</titleShortFemale>
+		<description>[PAWN_nameDef] looks after the little children in the tribe.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>4</Social>
+			<Intellectual>1</Intellectual>
+			<Crafting>2</Crafting>
+			<Plants>-3</Plants>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+	</BackstoryDef>
+	<!---->
+	<BackstoryDef>
+		<defName>Backstories_Childhood_Disobedient_Child</defName>
+		<title>Disobedient child</title>
+		<titleFemale>Disobedient child</titleFemale>
+		<titleShort>Disobedient child</titleShort>
+		<titleShortFemale>Disobedient child</titleShortFemale>
+		<description>[PAWN_nameDef] loves to get into trouble and does it regularly, despite punishment from the tribe.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>2</Melee>
+			<Intellectual>2</Intellectual>
+			<Crafting>2</Crafting>
+			<Construction>-3</Construction>
+		</skillGains>
+		<workDisables>
+			<li>Cleaning</li>
+			<li>Firefighting</li>
+		</workDisables>
+	</BackstoryDef>
+</Defs>

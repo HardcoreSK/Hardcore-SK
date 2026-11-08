@@ -3,7 +3,7 @@
 
 	<!--================================ Abstract bases ======================================-->
 
-	<ThingDef Name="FacilitiesBase" ParentName="StandartBuilding" Abstract="True">
+	<ThingDef Name="FacilitiesBase" ParentName="StandardBuilding" Abstract="True">
 		<designationCategory>Misc</designationCategory>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<statBases>
@@ -19,6 +19,7 @@
 		<building>
 			<uninstallWork>800</uninstallWork>
 		</building>
+
 	</ThingDef>
 
 	<ThingDef Name="LampFacilitiesBase" ParentName="FacilitiesBase" Abstract="True">
@@ -174,7 +175,7 @@
 			</li>
 			<li Class="CompProperties_Glower">
 				<overlightRadius>3.5</overlightRadius>
-				<glowRadius>4</glowRadius>
+				<glowRadius>2.5</glowRadius>
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 			<li Class="SK.CompProperties_HeatPusherAdvanced">
@@ -200,6 +201,7 @@
 			</li>
 		</comps>
 		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
 			<li>PlaceWorker_Heater</li>
 		</placeWorkers>
 		<inspectorTabs>
@@ -287,6 +289,9 @@
 		</statBases>
 		<description>Shining a light on things gets a whole new meaning if you are standing over an open body during an operation. Needs to be placed adjacent to a bed. One bed can be linked to only one of the same kind, but multiple beds can use the same one.</description>
 		<size>(1,1)</size>
+		<building>
+			<isEdifice>true</isEdifice>
+		</building>
 		<costList>
 			<Plastic>30</Plastic>
 			<Glass>20</Glass>
@@ -304,13 +309,15 @@
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
-				<basePowerConsumption>100</basePowerConsumption>
+				<basePowerConsumption>400</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Glower">
-				<overlightRadius>3.5</overlightRadius>
-				<glowRadius>5</glowRadius>
+				<overlightRadius>4</overlightRadius>
+				<glowRadius>3.5</glowRadius>
 				<glowColor>(255,255,255,0)</glowColor>
+				<colorPickerEnabled>true</colorPickerEnabled>
+				<darklightToggle>true</darklightToggle>
 			</li>
 		</comps>
 		<placeWorkers>
@@ -433,8 +440,7 @@
 				</statOffsets>
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>200</basePowerConsumption>
 			</li>

@@ -1,7 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ========================== WildCanines ============================ -->
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Warg</defName>
 		<label>warg</label>
 		<devNote>warg</devNote>
@@ -21,6 +22,7 @@
 			<ArmorRating_Blunt>1</ArmorRating_Blunt>
 			<FilthRate>2</FilthRate>
 			<ToxicResistance>0.8</ToxicResistance>
+			<Wildness>0.65</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -109,7 +111,6 @@
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Wolf</leatherDef>
 			<gestationPeriodDays>10</gestationPeriodDays>
-			<wildness>0.65</wildness>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.4</manhunterOnTameFailChance>
 			<nuzzleMtbHours>46</nuzzleMtbHours>
@@ -159,8 +160,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Warg</defName>
 		<label>Warg</label>
 		<race>Warg</race>
@@ -212,8 +214,8 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+ -->
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Nightling</defName>
 		<label>nightling</label>
 		<description>A large deformed beast with rows of quills on its back.
@@ -229,6 +231,7 @@ The rim is a violent place and the dead are a common sight. But over the years, 
 			<GermResistance>0.34</GermResistance>
 			<GermContainment>0.08</GermContainment>
 			<ToxicResistance>0.8</ToxicResistance>
+			<Wildness>0.7</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -329,7 +332,6 @@ The rim is a violent place and the dead are a common sight. But over the years, 
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Advanced</trainability>
-			<wildness>0.7</wildness>
 			<manhunterOnDamageChance>0.3</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<nuzzleMtbHours>36</nuzzleMtbHours>
@@ -379,7 +381,7 @@ The rim is a violent place and the dead are a common sight. But over the years, 
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Nightling</defName>
 		<label>Nightling</label>
 		<race>Nightling</race>

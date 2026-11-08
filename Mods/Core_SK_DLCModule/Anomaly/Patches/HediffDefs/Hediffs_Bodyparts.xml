@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GhoulPlating"]</xpath>
+        <value>
+            <costList>
+                <BioferriteAlloy>50</BioferriteAlloy>
+            </costList>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="GhoulBarbs"]</xpath>
+        <value>
+            <costList>
+                <BioferriteAlloy>30</BioferriteAlloy>
+            </costList>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="AdrenalHeart" or defName="CorrosiveHeart" or defName="MetalbloodHeart"]</xpath>
+        <value>
+            <costList>
+                <BioferriteAlloy>20</BioferriteAlloy>
+                <ComponentIndustrial>1</ComponentIndustrial>
+            </costList>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="RevenantVertebrae"]</xpath>
+        <value>
+            <costList>
+                <BioferriteAlloy>15</BioferriteAlloy>
+                <Shard>2</Shard>
+                <RevenantSpine>1</RevenantSpine>
+            </costList>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="InstallRevenantVertebrae"]</xpath>
+        <value>
+            <recipeUsers Inherit="False" />
+        </value>
+    </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[@Name="BasePawn"]</xpath>
+        <value>
+            <recipes Merge="True">
+                <li MayRequire="Ludeon.RimWorld.Anomaly">InstallRevenantVertebrae</li>
+            </recipes>
+        </value>
+    </Operation>
+
+</Patch>

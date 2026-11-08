@@ -1,105 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--
-			In furure tags:
-			<li>NorbalKingly</li>
-			<li>NorbalSage</li>
-			<li>Norbal</li>
-			<li>Outlander</li>
-			<li>BanditsLight</li>
-			<li>RenegadesLight</li>
-			<li>RenegadesMedium</li>
-			<li>PredatorsMedium</li>
-			<li>PredatorsLight</li>
-			<li>SectarianLight</li>
-			-->
-
-	<ThingDef ParentName="ApparelIndustrialSimpleBase">
-		<defName>Apparello_Bandit</defName>
-		<label>Bandit scarf</label>
-		<description>Stylish, elegant and soft to the touch. Known as the most important part of western attire, sspecially amongst the card cheats and other slippery individuals. It comes with a scarf for added banditry.</description>
+	<ThingDef ParentName="ApparelNeolithicBase">
+		<defName>Apparel_GlowstoneWard</defName>
+		<label>glowstone ward</label>
+		<description>Carefully processed medicinal herbs, exposed to the soft, warm radiation of a glowstone, have a healing and tonic effect on the body when worn continuously. This is a case where «magical» items made by shamans actually work simply because the materials themselves have unusual properties.</description>
+		<possessionCount>1</possessionCount>
 		<graphicData>
-			<texPath>Things/Apparel/Apparello/Hats/Display/Bandit</texPath>
+			<texPath>Things/Apparel/Accessories/GlowstoneWard/GlowstoneWard</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<costStuffCount>10</costStuffCount>
 		<stuffCategories>
-			<li>HF</li>
-			<li>Fabric</li>
+			<li>Leathery</li>
 		</stuffCategories>
-		<costStuffCount>20</costStuffCount>
 		<costList>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<MedicineHerbal>10</MedicineHerbal>
+			<Glowstone>10</Glowstone>
 		</costList>
 		<statBases>
-			<WorkToMake>3500</WorkToMake>
-			<MaxHitPoints>35</MaxHitPoints>
-			<Flammability>1.7</Flammability>
-			<Mass>0.25</Mass>
-			<Bulk>0.2</Bulk>
-			<WornBulk>0.1</WornBulk>
-			<EquipDelay>0.6</EquipDelay>
-			<Insulation_Heat>-5</Insulation_Heat>
-			<Insulation_Cold>5</Insulation_Cold>
-			<StuffEffectMultiplierArmor>0.03</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.2</Mass>
+			<Bulk>0.1</Bulk>
+			<WornBulk>0</WornBulk>
+			<EquipDelay>0.2</EquipDelay>			
+			<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.01</MoveSpeed>
-			<WorkSpeedGlobal>-0.01</WorkSpeedGlobal>
-			<SocialImpact>-0.1</SocialImpact>
-			<PsychicSensitivity>-0.05</PsychicSensitivity>
-			<NegotiationAbility>0.05</NegotiationAbility>
-			<TradePriceImprovement>0.05</TradePriceImprovement>
-			<GermResistance>0.20</GermResistance>
-			<GermContainment>0.35</GermContainment>
+			<SocialImpact>0.1</SocialImpact>
+			<NegotiationAbility>0.03</NegotiationAbility>
+			<ArmorRating_Toxin>0.07</ArmorRating_Toxin>
+			<GermResistance>0.1</GermResistance>
+			<GermContainment>0.1</GermContainment>
+			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
 		</equippedStatOffsets>
-		<generateCommonality>1</generateCommonality>
+		<generateCommonality>0.05</generateCommonality>
+		<generateAllowChance>0.05</generateAllowChance>
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
-				<li>Teeth</li>
+				<li>Neck</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Apparello/Hats/Bandit</wornGraphicPath>
 			<layers>
-				<li>Overhead</li>
+				<li>Neck</li>
 			</layers>
 			<tags>
-				<li>Outlander</li>
-				<li>BanditsLight</li>
-				<li>RenegadesLight</li>
-				<li>EmpireMedium</li>
-				<li>BrotherhoodScout</li>
+				<li>NorbalSage</li>
+				<li>Norbal</li>
+				<li>NorbalArcher</li>
+				<li>NorbalWarrior</li>
+				<li>Medieval</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
 				<li>Soldier</li>
 			</defaultOutfitTags>
-			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
 		</apparel>
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<li>
-					<weight>4</weight>
-					<min>(0.3,0.3,0.3,1)</min>
-					<max>(0.9,0.9,0.9,1)</max>
-				</li>
-			</options>
-		</colorGenerator>
 		<thingCategories>
-			<li>HeaddressCat</li>
+			<li>AccessoriesCat</li>
 		</thingCategories>
 		<recipeMaker>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<researchPrerequisite>Apparel_A2</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
 
 	<ThingDef ParentName="ArmorIndustrialBase">
-		<defName>Apparello_Pilot</defName>
+		<defName>Apparel_Aviators</defName>
 		<label>Aviator sunglasses</label>
 		<description>Authentic Rim-Ban™ quality. Cover your eyes with awesome!</description>
 		<graphicData>
-			<texPath>Things/Apparel/Apparello/Hats/Display/Pilot</texPath>
+			<texPath>Things/Apparel/Accessories/Aviators/Aviators</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories>
@@ -143,7 +120,7 @@
 			<bodyPartGroups>
 				<li>Eyes</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Apparello/Hats/Goggles/Pilot</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Accessories/Aviators/Aviators</wornGraphicPath>
 			<layers>
 				<li>EyeCover</li>
 			</layers>
@@ -177,11 +154,11 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ArmorIndustrialBase">
-		<defName>Apparello_Shadess</defName>
+		<defName>Apparel_Sunshades</defName>
 		<label>Sunshades</label>
 		<description>A pair of stylish eye shades favoured for protection from the sun. The wearer will never get caught with the excuse "the sun was shining in my eyes!"</description>
 		<graphicData>
-			<texPath>Things/Apparel/Apparello/Hats/Display/Shadess</texPath>
+			<texPath>Things/Apparel/Accessories/Sunshades/Sunshades</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories>
@@ -224,7 +201,7 @@
 			<bodyPartGroups>
 				<li>Eyes</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Apparello/Hats/Goggles/Shadess</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Accessories/Sunshades/Sunshades</wornGraphicPath>
 			<layers>
 				<li>EyeCover</li>
 			</layers>
@@ -258,11 +235,11 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ArmorIndustrialBase">
-		<defName>Apparello_Brimsk</defName>
+		<defName>Apparel_SkiMask</defName>
 		<label>Goggled Ski Mask</label>
 		<description>A military grade mask with skiing goggles attached, with a slightly stylized design. It is known for its heavy impact resistance.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Apparello/Hats/Display/Brimsk</texPath>
+			<texPath>Things/Apparel/Accessories/SkiMask/SkiMask</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories>
@@ -307,7 +284,7 @@
 			<bodyPartGroups>
 				<li>Eyes</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Apparello/Hats/Goggles/Brimsk</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Accessories/SkiMask/SkiMask</wornGraphicPath>
 			<layers>
 				<li>EyeCover</li>
 			</layers>
@@ -325,6 +302,7 @@
 			</defaultOutfitTags>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<parentTagDef>ApparelHead</parentTagDef>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
@@ -343,13 +321,12 @@
 		</recipeMaker>
 	</ThingDef>
 
-
 	<ThingDef ParentName="ArmorIndustrialBase">
-		<defName>Marine_BattleMask</defName>
+		<defName>Apparel_BattleMask</defName>
 		<label>Marine Storm Mask</label>
 		<description>A mask with a of pair of marine special forces military grade goggles, slightly stylized design. It is known for having heavy impact resistance.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Marines/Accessories/SturmMask/SturmMask</texPath>
+			<texPath>Things/Apparel/Accessories/SturmMask/SturmMask</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories>
@@ -394,7 +371,7 @@
 				<li>Teeth</li>
 				<li>Nose</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Marines/Accessories/SturmMask/SturmMask</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Accessories/SturmMask/SturmMask</wornGraphicPath>
 			<layers>
 				<li>EyeCover</li>
 			</layers>
@@ -409,6 +386,7 @@
 			</defaultOutfitTags>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<parentTagDef>ApparelHead</parentTagDef>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
@@ -430,10 +408,10 @@
 
 	<ThingDef ParentName="ArmorIndustrialBase">
 		<defName>Apparel_Earmuff</defName>
-		<label>earmuff</label>
+		<label>Earmuff</label>
 		<description>A pair of soft pads connected by a band across the top of the head, that are worn over the ears to protect them from cold.</description>
 		<graphicData>
-			<texPath>Things/Apparel/May/Earmuff</texPath>
+			<texPath>Things/Apparel/Accessories/Earmuff/Earmuff</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories>
@@ -471,7 +449,7 @@
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/May/Earmuff</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Accessories/Earmuff/Earmuff</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -513,13 +491,12 @@
 		</recipeMaker>
 	</ThingDef>
 
-
 	<ThingDef ParentName="ArmorSpacerSimpleBase">
-		<defName>Apparello_Visoor</defName>
+		<defName>Apparel_PilotVisor</defName>
 		<label>Shuttle Pilot's Visor</label>
 		<description>A pair of shuttle pilot's visors. It can be used to fulfill your usual piloting needs like calling in "Houston; mayday mayday - landing struts are jammed, I repeat landing struts are jammed. Copy? Roger Wilco. Starfox One out."</description>
 		<graphicData>
-			<texPath>Things/Apparel/Apparello/Hats/Display/Visoor</texPath>
+			<texPath>Things/Apparel/Accessories/PilotVisor/PilotVisor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories>
@@ -570,8 +547,7 @@
 			<bodyPartGroups>
 				<li>Eyes</li>
 			</bodyPartGroups>
-
-			<wornGraphicPath>Things/Apparel/Apparello/Hats/Goggles/Visoor</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Accessories/PilotVisor/PilotVisor</wornGraphicPath>
 			<layers>
 				<li>EyeCover</li>
 			</layers>
@@ -613,11 +589,11 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelIndustrialSimpleBase">
-		<defName>Marine_TacticalMask</defName>
+		<defName>Apparel_TacticalMask</defName>
 		<label>Marine Tactical Mask</label>
 		<description>A marine special forces black tactical mask. Also known as balaclava.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Marines/Accessories/TacticalMask/Balaklava</texPath>
+			<texPath>Things/Apparel/Accessories/TacticalMask/Balaklava</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories>
@@ -661,7 +637,7 @@
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Marines/Accessories/TacticalMask/Balaklava</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Accessories/TacticalMask/Balaklava</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -695,13 +671,87 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<!--<tags>
-			<li>SyndicateMedium</li>
-			<li>OrionScout</li>
-			<li>OrionMedium</li>
-			<li>OrionLight</li>
-			<li>SyndicateLight</li>
-			<li>SyndicateScout</li>
-		</tags>-->
+	<ThingDef ParentName="ApparelIndustrialBase">
+		<defName>Apparel_Ammobelt</defName>
+		<label>Ammo belt</label>
+		<description>Belt designed for carrying ammunition.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Apparel/Accessories/Belt/Belt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costList>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Compaste>5</Compaste>
+		</costList>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>1</Mass>
+			<Bulk>7</Bulk>
+			<WornBulk>5</WornBulk>
+			<EquipDelay>1.8</EquipDelay>			
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.26</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk>25</CarryBulk>
+			<ReloadSpeed>0.1</ReloadSpeed>
+			<MoveSpeed>-0.04</MoveSpeed>
+			<WorkSpeedGlobal>-0.04</WorkSpeedGlobal>
+			<AimingDelayFactor>-0.07</AimingDelayFactor>
+			<GermResistance>0.02</GermResistance>
+			<GermContainment>0.02</GermContainment>
+		</equippedStatOffsets>
+		<generateCommonality>1.15</generateCommonality>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Webbing</li>
+			</layers>
+			<wornGraphicPath>Things/Apparel/Accessories/Belt/Belt</wornGraphicPath>
+			<tags>
+				<li>Outlander</li>
+				<li>Military</li>
+				<li>OrionLight</li>
+				<li>OrionMedium</li>
+				<li>OrionScout</li>
+				<li>BrotherhoodLight</li>
+				<li>BrotherhoodMedium</li>
+				<li>BrotherhoodScout</li>
+				<li>SectarianScout</li>
+				<li>SectarianLight</li>
+				<li>SectarianMedium</li>
+				<li>SyndicateLight</li>
+				<li>SyndicateMedium</li>
+				<li>SyndicateScout</li>
+				<li>SyndicateMedium</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<thingCategories>
+			<li>SpecialApparelCat</li>
+		</thingCategories>
+		<generateAllowChance>0.8</generateAllowChance>
+		<recipeMaker>
+			<researchPrerequisite>Armor_C1</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
 
 </Defs>

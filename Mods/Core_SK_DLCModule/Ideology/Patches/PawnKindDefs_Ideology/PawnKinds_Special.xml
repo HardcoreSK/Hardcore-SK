@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/PawnKindDef[defName="Beggar"]/weaponTags</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/PawnKindDef[defName="Beggar"]/weaponTags</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="Beggar"]/combatPower</xpath>
+				<value>
+					<combatPower>70</combatPower>
+				</value>
+			</Operation>
+	<Operation Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Beggar"]</xpath>
+				<value>
+					<weaponTags>
+						<li>MedievalMelee</li>
+					</weaponTags>					
+				</value>
+			</Operation>
+	<Operation Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="Beggar"]/weaponMoney</xpath>
+				<value>
+					<weaponMoney>220~350</weaponMoney>
+				</value>
+			</Operation>
+	<Operation Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Beggar"]</xpath>
+				<value>
+					<apparelRequired>
+						<li>Apparel_UrbanShirt</li>
+					</apparelRequired>			
+				</value>
+			</Operation>
+	<Operation Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Beggar"]/apparelTags</xpath>
+				<value>
+					<li>BanditsLight</li>
+				</value>
+			</Operation>
+	<Operation Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="Beggar"]/apparelMoney</xpath>
+				<value>
+					<apparelMoney>370~900</apparelMoney>
+				</value>
+			</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/PawnKindDef[defName="PovertyPilgrim"]/weaponTags</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/PawnKindDef[defName="PovertyPilgrim"]/weaponTags</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="PovertyPilgrim"]/combatPower</xpath>
+				<value>
+					<combatPower>70</combatPower>
+				</value>
+			</Operation>
+	<Operation Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="PovertyPilgrim"]</xpath>
+				<value>
+					<weaponTags>
+						<li>MedievalMelee</li>
+						<li>NeolithicMeleeBasic</li>
+					</weaponTags>					
+				</value>
+			</Operation>
+	<Operation Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="PovertyPilgrim"]/weaponMoney</xpath>
+				<value>
+					<weaponMoney>220~350</weaponMoney>
+				</value>
+			</Operation>
+	<Operation Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="PovertyPilgrim"]</xpath>
+				<value>
+					<apparelRequired>
+						<li>Apparel_UrbanShirt</li>
+					</apparelRequired>			
+				</value>
+			</Operation>
+	<Operation Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="PovertyPilgrim"]/apparelTags</xpath>
+				<value>
+					<li>BanditsLight</li>
+				</value>
+			</Operation>
+	<Operation Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="PovertyPilgrim"]/apparelMoney</xpath>
+				<value>
+					<apparelMoney>370~900</apparelMoney>
+				</value>
+			</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/PawnKindDef[defName="WellEquippedTraveler"]/weaponTags</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/PawnKindDef[defName="WellEquippedTraveler"]/weaponTags</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="WellEquippedTraveler"]/combatPower</xpath>
+				<value>
+					<combatPower>150</combatPower>
+				</value>
+			</Operation>
+	<Operation Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="WellEquippedTraveler"]</xpath>
+				<value>
+					<weaponTags>
+						<li>TierOneSMG</li>
+						<li>RF1</li>
+						<li>MachineGun</li>
+					</weaponTags>					
+				</value>
+			</Operation>
+	<Operation Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="WellEquippedTraveler"]/weaponMoney</xpath>
+				<value>
+					<weaponMoney>900~1600</weaponMoney>
+				</value>
+			</Operation>
+	<Operation Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="WellEquippedTraveler"]</xpath>
+				<value>
+					<apparelRequired>
+						<li>Apparel_UrbanShirt</li>
+					</apparelRequired>			
+				</value>
+			</Operation>
+	<Operation Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="WellEquippedTraveler"]/apparelTags</xpath>
+				<value>
+					<li>RenegadesLight</li>
+					<li>RenegadesMedium</li>
+				</value>
+			</Operation>
+	<Operation Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="WellEquippedTraveler"]/apparelMoney</xpath>
+				<value>
+					<apparelMoney>2170~3200</apparelMoney>
+				</value>
+			</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+				<xpath>Defs/PawnKindDef[defName="WellEquippedTraveler"]</xpath>
+				<value>
+					<li Class="CombatExtended.LoadoutPropertiesExtension">
+						<primaryMagazineCount>
+							<min>2</min>
+							<max>4</max>
+						</primaryMagazineCount>
+						<sidearms>
+							<li>
+								<generateChance>0.7</generateChance>
+								<sidearmMoney>
+									<min>20</min>
+									<max>140</max>
+								</sidearmMoney>
+								<weaponTags>
+									<li>CE_Sidearm_Melee</li>
+								</weaponTags>
+							</li>
+						</sidearms>
+					</li>
+				</value>
+			</Operation>
+
+</Patch>

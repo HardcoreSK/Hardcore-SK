@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<Darkest_SK.DarknessEventDef>
+		<defName>Darkness_Passive</defName>
+		<label>passive darkness event</label>
+		<description>The passive darkness event is a quieter one. The darkness does not hunt you on purpose, only if you come close. They are also slower.</description>
+		<defaultWeight>0.5</defaultWeight>
+		<warningTicks>13600</warningTicks>
+		<searchRadius>10</searchRadius>
+		<paceHediff>DarkestNight_PassivePace</paceHediff>
+		<workerClass>Darkest_SK.DarknessEventWorker_Passive</workerClass>
+		<letterLabel>Passive darkness</letterLabel>
+		<letterText>A strange but calm darkness can be seen in the distance, slowly approaching your settlement.</letterText>
+	</Darkest_SK.DarknessEventDef>
+
+	<Darkest_SK.DarknessEventDef>
+		<defName>Darkness_Looming</defName>
+		<label>approaching darkness event</label>
+		<description>The approaching darkness event is a normal event, except that you see the darkness on the horizon coming sooner, which gives you more time to prepare.</description>
+		<defaultWeight>0.3</defaultWeight>
+		<warningTicks>6800</warningTicks>
+		<searchRadius>30</searchRadius>
+		<paceHediff>DarkestNight_LoomingPace</paceHediff>
+		<workerClass>Darkest_SK.DarknessEventWorker_Looming</workerClass>
+		<letterLabel>Approaching darkness</letterLabel>
+		<letterText>A strange darkness can be seen on the horizon, approaching the settlement quite quickly. You had better prepare.</letterText>
+	</Darkest_SK.DarknessEventDef>
+
+	<Darkest_SK.DarknessEventDef>
+		<defName>Darkness_Aggressive</defName>
+		<label>ordinary darkness event</label>
+		<description>An ordinary darkness event is a normal event. You have only 60 seconds to prepare. The darkness will hunt down your colonists and break your doors.</description>
+		<defaultWeight>0.2</defaultWeight>
+		<workerClass>Darkest_SK.DarknessEventWorker_Aggressive</workerClass>
+		<letterLabel>The darkness is closing in</letterLabel>
+		<letterText>The lord of darkness has come for your souls... prepare for the darkness and the dreadful cold!\n\nStay near the light. Only it will save you.</letterText>
+	</Darkest_SK.DarknessEventDef>
+
+</Defs>

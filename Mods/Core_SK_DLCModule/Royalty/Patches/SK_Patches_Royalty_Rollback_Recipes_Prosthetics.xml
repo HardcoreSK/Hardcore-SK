@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Skyarkhangel: Royalty changes parent and add  researchPrerequisite for some prosthetics. Return back! -->
+
+	
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="PowerClaw"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.BodyPartBase_BionicDummy</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="PowerClaw"]/recipeMaker</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="Joywire"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.BodyPartBase_BionicDummy</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="Joywire"]/recipeMaker</xpath>
+	</Operation>
+	
+	
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="Painstopper"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.BodyPartBaseDummy</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DutyDef>
+    <defName>InsectoidSwarmAssault</defName>
+    <alwaysShowWeapon>true</alwaysShowWeapon>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="JobGiver_AIFightEnemies">
+          <targetAcquireRadius>86</targetAcquireRadius>
+          <targetKeepRadius>93</targetKeepRadius>
+          <needLOSToAcquireNonPawnTargets>true</needLOSToAcquireNonPawnTargets>
+        </li>
+        <li Class="JobGiver_AIGotoNearestHostile" />
+        <li Class="JobGiver_AISapper">
+          <canMineMineables>false</canMineMineables>
+          <canMineNonMineables>false</canMineNonMineables>
+        </li>
+        <li Class="SkyAiRefined.JobGiver_InsectoidTrashColonyClose" />
+        <li Class="SkyAiRefined.JobGiver_InsectoidTrashBuildingsDistant" />
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+
+</Defs>

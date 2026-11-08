@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
+<!-- To be removed -->
 	<ThingDef Name="SK_PlantBaseNonEdible" Abstract="True">
 		<category>Plant</category>
 		<thingClass>Plant</thingClass>
@@ -26,10 +26,7 @@
 			<soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
 			<sowWork>150</sowWork>
 			<harvestWork>200</harvestWork>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>1.00</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~1.00</visualSizeRange>
 			<topWindExposure>0.1</topWindExposure>
 			<pollution>Any</pollution>
 		</plant>
@@ -59,7 +56,7 @@
 			</li>
 		</damageMultipliers>
 	</ThingDef>
-
+<!-- To be removed -->
 	<ThingDef ParentName="SK_PlantBaseNonEdible" Name="SK_PlantBase" Abstract="True">
 		<ingestible>
 			<foodType>Plant</foodType>
@@ -67,7 +64,7 @@
 		</ingestible>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_PlantBase" Name="SK_DeciduousPlantBase" Abstract="True">
+	<ThingDef ParentName="PlantBase" Name="SK_DeciduousPlantBase" Abstract="True">
 		<graphicData>
 			<shaderParameters>
 				<_FallColorSource>(0.3803, 0.4352, 0.1451)</_FallColorSource>
@@ -78,10 +75,10 @@
 		</graphicData>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_PlantBase" Name="WildPlantBase" Abstract="True">
+	<ThingDef ParentName="PlantBase" Name="WildPlantBase" Abstract="True">
 		<plant>
-			<harvestAfterGrowth>0.10</harvestAfterGrowth>
-			<harvestMinGrowth>0.51</harvestMinGrowth>
+			<harvestAfterGrowth>0.10</harvestAfterGrowth> <!-- the minimum growth percentage at which the plant can be harvested at all. -->
+			<harvestMinGrowth>0.51</harvestMinGrowth> <!-- the point after which harvesting starts giving a yield instead of nothing (the yield then scales with growth). -->
 		</plant>
 	</ThingDef>
 
@@ -96,13 +93,13 @@
 		</graphicData>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_PlantBase" Name="PlantDef" Abstract="True">
+	<ThingDef ParentName="PlantBase" Name="CropPlant" Abstract="True">
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Beauty>1</Beauty>
 			<Nutrition>0.3</Nutrition>	
 		</statBases>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<selectable>true</selectable>
 		<pathCost>10</pathCost>
 		<plant>
@@ -111,7 +108,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="PlantDef" Name="SK_DeciduousPlantDef" Abstract="True">
+	<ThingDef ParentName="CropPlant" Name="SK_DeciduousCropPlant" Abstract="True">
 		<graphicData>
 			<shaderParameters>
 				<_FallColorSource>(0.3803, 0.4352, 0.1451)</_FallColorSource>
@@ -123,14 +120,13 @@
 	</ThingDef>
 
 	<ThingDef ParentName="WildPlantBase" Name="PlantFlowerBase" Abstract="True">
-		<altitudeLayer>LowPlant</altitudeLayer>
-		<thingClass>SK.PlantFlower</thingClass>		
+		<!--<thingClass>SK.PlantFlower</thingClass>  Optional and only if there isnt a SK.ExtendedPlantGraphic -->
 		<statBases>
 			<MaxHitPoints>70</MaxHitPoints>
 			<Beauty>10</Beauty>
 			<Nutrition>0.25</Nutrition>	
 		</statBases>
-		<hideAtSnowDepth>0.3</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.3</hideAtSnowOrSandDepth>
 		<pathCost>3</pathCost>
 		<plant>
 			<sowTags>
@@ -159,12 +155,13 @@
 		</graphicData>
 	</ThingDef>
 
+<!--
 	<ThingDef ParentName="WildPlantBase" Name="CactusBase" Abstract="True">
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Nutrition>0.3</Nutrition>	
 		</statBases>
-		<hideAtSnowDepth>3.0</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>3.0</hideAtSnowOrSandDepth>
 		<selectable>true</selectable>
 		<fillPercent>0.08</fillPercent>
 		<pathCost>30</pathCost>
@@ -173,8 +170,7 @@
 		</plant>
 	</ThingDef>
 
-
-	<ThingDef ParentName="CactusBase" Name="SK_BushBase" Abstract="True">
+	<ThingDef ParentName="CactusBase" Name="BushBase" Abstract="True">
 		<graphicData>
 			<shadowData>
 				<volume>(0.55, 0.2, 0.2)</volume>
@@ -187,16 +183,13 @@
 			<growDays>3</growDays>
 			<wildClusterWeight>4</wildClusterWeight>
 			<wildClusterRadius>4</wildClusterRadius>
-			<visualSizeRange>
-				<min>0.7</min>
-				<max>1.1</max>
-			</visualSizeRange>
+			<visualSizeRange>0.7~1.1</visualSizeRange>
 			<topWindExposure>0.24</topWindExposure>
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_BushBase" Name="SK_DeciduousBushBase" Abstract="True">
+-->
+	<ThingDef ParentName="BushBase" Name="SK_DeciduousBushBase" Abstract="True">
 		<graphicData>
 			<shaderParameters>
 				<_FallColorSource>(0.3803, 0.4352, 0.1451)</_FallColorSource>
@@ -206,10 +199,10 @@
 			</shaderParameters>
 		</graphicData>
 	</ThingDef>
-
+<!-- Stopped here -->
 	<!--============================ Wild - Trees ============================-->
-
-	<ThingDef ParentName="SK_PlantBase" Name="SK_TreeBase" Abstract="True">
+<!-- DefOverwrite
+	<ThingDef ParentName="PlantBase" Name="SK_TreeBase" Abstract="True">
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
 			<Flammability>0.8</Flammability>
@@ -228,7 +221,7 @@
 				<offset>(0,0,-0.42)</offset>
 			</shadowData>
 		</graphicData>
-		<hideAtSnowDepth>99999</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>99999</hideAtSnowOrSandDepth>
 		<passability>PassThroughOnly</passability>
 		<pathCost>130</pathCost>
 		<blockWind>true</blockWind>
@@ -250,7 +243,6 @@
 			<harvestMinGrowth>0.40</harvestMinGrowth>
 			<harvestFailable>false</harvestFailable>
 			<blockAdjacentSow>true</blockAdjacentSow>
-			<!-- <mustBeWildToSow>true</mustBeWildToSow> -->
 			<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
 			<burnedThingDef>BurnedTree</burnedThingDef>
 			<choppedThingDef>ChoppedStump</choppedThingDef>
@@ -259,10 +251,7 @@
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
-			<visualSizeRange>
-				<min>1.3</min>
-				<max>2.0</max>
-			</visualSizeRange>
+			<visualSizeRange>1.3~2.0</visualSizeRange>
 			<topWindExposure>0.25</topWindExposure>
 			<wildClusterRadius>8</wildClusterRadius>
 			<wildClusterWeight>24</wildClusterWeight>
@@ -270,17 +259,19 @@
 			<interferesWithRoof>true</interferesWithRoof>
 		</plant>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="WildPlantBase" Name="FruitTreeBase" Abstract="True">
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
 			<Flammability>0.8</Flammability>
 			<Nutrition>1.5</Nutrition>	
+			<Mass>100</Mass>
 		</statBases>
 		<altitudeLayer>Building</altitudeLayer>
 		<selectable>true</selectable>
+		<minifiedDef>MinifiedTree</minifiedDef>
 		<fillPercent>0.25</fillPercent>
-		<hideAtSnowDepth>99999</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>99999</hideAtSnowOrSandDepth>
 		<graphicData>
 			<shadowData>
 				<volume>(0.2, 0.35, 0.13)</volume>
@@ -303,6 +294,7 @@
 			<sowWork>650</sowWork>
 			<harvestWork>600</harvestWork>
 			<harvestTag>Standard</harvestTag>
+			<forceIsTree>true</forceIsTree>
 			<harvestMinGrowth>0.50</harvestMinGrowth>
 			<harvestFailable>false</harvestFailable>
 			<harvestAfterGrowth>0.30</harvestAfterGrowth>
@@ -315,10 +307,7 @@
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
-			<visualSizeRange>
-				<min>1.5</min>
-				<max>2.0</max>
-			</visualSizeRange>
+			<visualSizeRange>1.5~2.0</visualSizeRange>
 			<topWindExposure>0.20</topWindExposure>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>5</wildClusterWeight>
@@ -336,8 +325,8 @@
 			</shaderParameters>
 		</graphicData>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_TreeBase" Name="TreewoodBase" Abstract="True">
+<!-- DefOverwrite - Unecessary
+	<ThingDef ParentName="TreeBase" Name="TreewoodBase" Abstract="True">
 		<plant>
 			<soundHarvesting>Harvest_Tree</soundHarvesting>
 			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
@@ -365,5 +354,5 @@
 			</shaderParameters>
 		</graphicData>
 	</ThingDef>
-
+-->
 </Defs>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>CollectSulfurGeyser</defName>
+		<label>collect sulfur</label>
+		<description>Collect sulfur from geyser. Require chemfuel to support extraction process. Require 3 days.</description>
+        <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Sulfur>50</Sulfur>
+		</products>
+		<recipeUsers>
+			<li>SulfurExtractor</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<usesTemperature>false</usesTemperature>
+		<processDays>3</processDays>
+		<autoExtract>false</autoExtract>
+	</RecipeDef>
+    
+    <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>CollectNitreGeyser</defName>
+		<label>collect nitre</label>
+		<description>Collect nitre from walls of the geyser. Very uneffective, with sulfur as byproduct. Require chemfuel to support extraction process. Require 5 days.</description>
+        <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Nitre>20</Nitre>
+			<Sulfur>10</Sulfur>
+		</products>
+		<recipeUsers>
+			<li>SulfurExtractor</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<usesTemperature>false</usesTemperature>
+		<processDays>5</processDays>
+		<autoExtract>false</autoExtract>
+	</RecipeDef>
+
+</Defs>

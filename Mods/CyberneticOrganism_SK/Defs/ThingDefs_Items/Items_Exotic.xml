@@ -20,7 +20,7 @@
 			<li>RewardStandardHighFreq</li>
 		</thingSetMakerTags>
 		<comps>
-			<!-- <li Class="CompProperties_UseEffectDestroySelf" />  All CONN Comps already destroy itself after doing effect -->	
+			<!-- <li Class="CompProperties_UseEffectDestroySelf" />  All CONN Comps already destroy itself after doing effect -->
 		</comps>
 	</ThingDef>
 
@@ -62,7 +62,7 @@
 		<comps>
 			<li Class="CompProperties_Usable">
 				<compClass>CONN.CompUsable_Neurotrainer</compClass>
-				<useJob>UseNeurotrainer</useJob>
+				<useJob>UseItem</useJob>
 				<useLabel>Use neuromod booster</useLabel>
 			</li>
 			<li Class="CompProperties_UseEffect">

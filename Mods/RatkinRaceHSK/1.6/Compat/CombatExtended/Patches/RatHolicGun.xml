@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Preserve RatHolic spooling while routing the weapon through CE ballistics and ammunition. -->
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="RK_Weapon_RatHolicGun"]</xpath>
+    <value>
+      <statBases>
+        <Mass>10</Mass>
+        <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+        <SightsEfficiency>1</SightsEfficiency>
+        <ShotSpread>0.12</ShotSpread>
+        <SwayFactor>2.5</SwayFactor>
+        <Bulk>12</Bulk>
+      </statBases>
+      <verbs>
+        <li Class="NewRatkin.CombatExtended.VerbProperties_RatHolicGunCE">
+          <verbClass>NewRatkin.CombatExtended.Verb_RatHolicGunCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+          <warmupTime>2</warmupTime>
+          <range>45</range>
+          <burstShotCount>1</burstShotCount>
+          <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+          <soundCast>Shot_Minigun</soundCast>
+          <soundCastTail>GunTail_Medium</soundCastTail>
+          <muzzleFlashScale>9</muzzleFlashScale>
+          <recoilAmount>1.1</recoilAmount>
+          <hediffDefs>
+            <li>RK_Hediff_RatHolicGunSpooling</li>
+            <li>RK_Hediff_RatHolicGunSpoolingAim</li>
+          </hediffDefs>
+          <maxStacks>5</maxStacks>
+        </li>
+      </verbs>
+      <comps>
+        <li Class="NewRatkin.CompProperties_WeaponGripType">
+          <gripTypes>
+            <li>TwoHand</li>
+          </gripTypes>
+        </li>
+        <li Class="NewRatkin.CompProperties_EquipableHediff">
+          <hediffDefs>
+            <li>RK_Hediff_RatHolicGun</li>
+          </hediffDefs>
+        </li>
+        <li Class="CombatExtended.CompProperties_FireModes">
+          <aiAimMode>Snapshot</aiAimMode>
+          <aimedBurstShotCount>1</aimedBurstShotCount>
+        </li>
+        <li Class="CombatExtended.CompProperties_AmmoUser">
+          <magazineSize>200</magazineSize>
+          <reloadTime>8</reloadTime>
+          <ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+        </li>
+      </comps>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>barrels</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>11.7</power>
+          <cooldownTime>1.1</cooldownTime>
+          <armorPenetrationBlunt>4</armorPenetrationBlunt>
+          <linkedBodyPartsGroup>Barrels</linkedBodyPartsGroup>
+        </li>
+      </tools>
+      <weaponTags>
+        <li>RK_Weapon_All</li>
+        <li>RK_Weapon_Range</li>
+        <li>RK_Weapon_RangeAttack</li>
+        <li>RK_Weapon_TwoHand</li>
+        <li>RK_Weapon_TwoHandRange</li>
+        <li>RK_Weapon_TwoHandRangeAttack</li>
+        <li>RK_WeaponTag_HighTech</li>
+        <li>CE_AI_Suppressive</li>
+      </weaponTags>
+    </value>
+  </Operation>
+</Patch>

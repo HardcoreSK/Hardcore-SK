@@ -1,0 +1,41 @@
+# Keep the Combat Extended repository platform-independent.
+* text=auto
+
+# Repository metadata and text source files use LF in the index and worktree.
+.gitattributes text eol=lf
+.gitignore text eol=lf
+.editorconfig text eol=lf
+.github/CODEOWNERS text eol=lf
+Makefile text eol=lf
+*.xml text eol=lf
+*.xml.bak text eol=lf
+*.bak text eol=lf
+*.xml_disabled text eol=lf
+*.disabled text eol=lf
+*.txt text eol=lf
+*.cs text eol=lf
+*.csproj text eol=lf
+*.props text eol=lf
+*.sln text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.svg text eol=lf
+*.code-workspace text eol=lf
+*.DotSettings text eol=lf
+Source/CombatExtended/CombatExtended/Verbs/VerbShootCE_AdvancedUBGL text eol=lf
+
+# Do not perform text conversion on binary assets or build products.
+*.dll binary
+*.pdb binary
+*.png binary
+*.dds binary
+*.jpg binary
+*.jpeg binary
+*.ogg binary
+*.wav binary
+*.xcf binary
+*.so binary
+*.bundle binary

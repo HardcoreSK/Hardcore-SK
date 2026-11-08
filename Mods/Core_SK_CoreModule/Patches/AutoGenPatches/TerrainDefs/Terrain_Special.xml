@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/TerrainDef[defName="Bridge"]</xpath>
+    <value>
+      <affordances Merge="true">
+        <li>Light</li>
+        <li>Walkable</li>
+      </affordances>
+      <statBases>
+        <WorkToBuild>2000</WorkToBuild>
+        <Flammability>0.8</Flammability>
+      </statBases>
+      <tags>
+        <li>Floor</li>
+      </tags>
+      <researchPrerequisites>
+        <li>Construction_B2</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+
+</Patch>

@@ -1,0 +1,50 @@
+<LanguageData>
+	<!-- 1.6\Defs\Tribal\Tribal Trait backstories.xml -->
+	<!-- EN: food thief -->
+	<ZCB_FoodThief.title>вор еды</ZCB_FoodThief.title>
+	<!-- EN: thief -->
+	<ZCB_FoodThief.titleShort>вор</ZCB_FoodThief.titleShort>
+	<!-- EN: [PAWN_nameDef] loved to eat, often getting into trouble for stealing more of [PAWN_possessive] share of the tribe's food. As punishment [PAWN_pronoun] was put to work in the kitchens, where [PAWN_pronoun] learned to love the art of cooking. -->
+	<ZCB_FoodThief.baseDesc>{PAWN_nameDef} {PAWN_gender ? любил : любила} поесть и часто {PAWN_gender ? попадал : попадала} в неприятности за то, что {PAWN_gender ? воровал : воровала} чужую еду. В наказание {PAWN_possessive} отправляли работать на кухню, где {PAWN_pronoun} {PAWN_gender ? научился любить : научилась любить} искусство приготовления пищи.</ZCB_FoodThief.baseDesc>
+	<!-- EN: MealsCooked -->
+	<ZCB_FoodThief.requiredRecords.0.name>MealsCooked</ZCB_FoodThief.requiredRecords.0.name>
+	
+	<!-- EN: ascetic child -->
+	<ZCB_Ascetic.title>аскетичное дитя</ZCB_Ascetic.title>
+	<!-- EN: ascetic -->
+	<ZCB_Ascetic.titleShort>аскетичный</ZCB_Ascetic.titleShort>
+	<!-- EN: [PAWN_nameDef] was never interested in furniture with ostantatious filigree or fancy, gluttonous meals. However, [PAWN_pronoun] could still appreciate good craftsmanship when it counted. -->
+	<ZCB_Ascetic.baseDesc>{PAWN_nameDef} никогда не {PAWN_gender ? интересовался : интересовалась} шикарной мебелью или блюдами. Однако {PAWN_pronoun} {PAWN_gender ? мог : могла} оценить хорошее мастерство, когда это имело значение.</ZCB_Ascetic.baseDesc>
+	
+	<!-- EN: brawler -->
+	<ZCB_TribalBrawler.title>драчун</ZCB_TribalBrawler.title>
+	<!-- EN: brawler -->
+	<ZCB_TribalBrawler.titleShort>драчун</ZCB_TribalBrawler.titleShort>
+	<!-- EN: [PAWN_nameDef] was good in a fight, always training to be stronger. [PAWN_pronoun] learned to shrug off hits that would have a lesser fighter on the ground.\n\Adds trait: Tough -->
+	<ZCB_TribalBrawler.baseDesc>{PAWN_nameDef} {PAWN_gender ? был хорош : была хороша} в драке, постоянно тренируясь, чтобы стать сильнее. {PAWN_pronoun} {PAWN_gender ? научился : научилась} отражать удары, от которых более слабый боец оказался бы на земле.\n\Добавляет черту: Живучесть</ZCB_TribalBrawler.baseDesc>
+	<!-- EN: DamageDealt -->
+	<ZCB_TribalBrawler.requiredRecords.0.name>DamageDealt</ZCB_TribalBrawler.requiredRecords.0.name>
+	<!-- EN: DamageTaken -->
+	<ZCB_TribalBrawler.requiredRecords.1.name>DamageTaken</ZCB_TribalBrawler.requiredRecords.1.name>
+	
+	<!-- EN: scavenger -->
+	<ZCB_Scavenger.title>мусорщик</ZCB_Scavenger.title>
+	<!-- EN: scavenger -->
+	<ZCB_Scavenger.titleShort>мусорщик</ZCB_Scavenger.titleShort>
+	<!-- EN: [PAWN_nameDef] spent [PAWN_possessive] childhood learning as much as [PAWN_pronoun] could about everything, making [PAWN_objective] a bit eccentric to the rest of [PAWN_possessive] tribe. [PAWN_pronoun] was especially interested in disassembling old mechs to see how they are made, with the hope of advancing technology for [PAWN_possessive] tribe. -->
+	<ZCB_Scavenger.baseDesc>{PAWN_nameDef} {PAWN_gender ? провёл : провела} своё детство, узнавая как можно больше обо всём на свете, что делает {PAWN_possessive} немного {PAWN_gender ? эксцентричным : эксцентричной} по сравнению с остальными членами {PAWN_possessive} племени. Особенно {PAWN_possessive} интересовала разборка старых механоидов, чтобы понять их устройство, в надежде продвинуть технологии своего племени.</ZCB_Scavenger.baseDesc>
+	
+	<!-- EN: tortured architect -->
+	<ZCB_TorturedArchitect.title>непонятный архитектор</ZCB_TorturedArchitect.title>
+	<!-- EN: architect -->
+	<ZCB_TorturedArchitect.titleShort>архитектор</ZCB_TorturedArchitect.titleShort>
+	<!-- EN: [PAWN_nameDef] was tortured by visions of architectural grandeur that his tribe could never live up to. -->
+	<ZCB_TorturedArchitect.baseDesc>{PAWN_nameDef} мучили видения архитектурного величия, которое {PAWN_possessive} племя никогда не сможет понять.</ZCB_TorturedArchitect.baseDesc>
+	
+	<!-- EN: barbarian -->
+	<ZCB_Barbarian.title>варвар</ZCB_Barbarian.title>
+	<!-- EN: barbarian -->
+	<ZCB_Barbarian.titleShort>варвар</ZCB_Barbarian.titleShort>
+	<!-- EN: [PAWN_nameDef] enjoyed hurting people, often getting into fights. [PAWN_pronoun] loved utterly crushing [PAWN_possessive] unfortunate targets. -->
+	<ZCB_Barbarian.baseDesc>{PAWN_nameDef} нравилось причинять боль людям, поэтому {PAWN_pronoun} часто {PAWN_gender ? ввязывался : ввязывалась} в драки. {PAWN_pronoun} {PAWN_gender ? любил : любила} безжалостно сокрушать свои несчастные цели.</ZCB_Barbarian.baseDesc>
+</LanguageData>

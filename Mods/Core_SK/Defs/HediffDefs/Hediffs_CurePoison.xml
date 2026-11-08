@@ -1,74 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<HediffDef>
-		<defName>AntidoteBasic</defName>
-		<label>simple Antidote</label>  
-		<description>A simple antidote. Helps fight poisons, but negatively affects consciousness.</description>
-		<labelNoun>an antidots</labelNoun>
-		<defaultLabelColor>(145,255,145)</defaultLabelColor>
-		<initialSeverity>0.35</initialSeverity>
-		<hediffClass>HediffWithComps</hediffClass>
-		<isBad>false</isBad>
-		<comps>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-1.0</severityPerDay>
-			</li>
-		</comps>
-		<stages>
-		    <li>
-        		<label>initial</label>
-        		<becomeVisible>false</becomeVisible>
-     		</li>
-			<li>
-				<minSeverity>0.01</minSeverity>
-				<label>resistance to poisons</label>
-				<statFactors>
-						<ToxicResistance>0.0</ToxicResistance>
-				</statFactors>
-				<capMods>
-          			<li>
-           				<capacity>Consciousness</capacity>
-            			<setMax>0.75</setMax>
-          			</li>
-				</capMods>
-				<makeImmuneTo>
-            		<li>VenomBuildup</li>
-				</makeImmuneTo>
-			</li>
-		</stages>
-	</HediffDef>
+  <HediffDef>
+    <defName>AntidoteBasic</defName>
+    <label>primitive antidote</label>
+    <description>A simple antidote. Helps fight poisons, but negatively affects consciousness.</description>
+    <labelNoun>a primitive antidote</labelNoun>
+    <defaultLabelColor>(145,255,145)</defaultLabelColor>
+    <initialSeverity>0.35</initialSeverity>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.0</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>initial</label>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <minSeverity>0.01</minSeverity>
+        <label>resistance to poisons</label>
+        <statOffsets>
+          <ToxicResistance>0.6</ToxicResistance>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.75</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
 
-	<HediffDef>
-		<defName>AntidoteSafe</defName>
-		<label>safe Antidote</label>  
-		<description>A safe antidote. Helps fight poisons without side effects</description>
-		<labelNoun>an safe antidots</labelNoun>
-		<defaultLabelColor>(0,128,192)</defaultLabelColor>
-		<initialSeverity>0.7</initialSeverity>
-		<hediffClass>HediffWithComps</hediffClass>
-		<isBad>false</isBad>
-		<comps>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-1.0</severityPerDay>
-			</li>
-		</comps>
-		<stages>
-		    <li>
-        		<label>initial</label>
-        		<becomeVisible>false</becomeVisible>
-     		</li>
-			<li>
-				<minSeverity>0.01</minSeverity>
-				<label>resistance to poisons</label>
-				<statFactors>
-						<ToxicResistance>0.0</ToxicResistance>
-				</statFactors>
-				<makeImmuneTo>
-            		<li>VenomBuildup</li>
-				</makeImmuneTo>
-			</li>
-		</stages>
-	</HediffDef>
+  <HediffDef>
+    <defName>AntidoteSafe</defName>
+    <label>antidote</label>
+    <description>A safe antidote. Helps fight poisons without side effects</description>
+    <labelNoun>an antidote</labelNoun>
+    <defaultLabelColor>(0,128,192)</defaultLabelColor>
+    <initialSeverity>0.7</initialSeverity>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.0</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>initial</label>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <minSeverity>0.01</minSeverity>
+        <label>resistance to poisons</label>
+        <statOffsets>
+          <ToxicResistance>1.0</ToxicResistance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
 
 </Defs>

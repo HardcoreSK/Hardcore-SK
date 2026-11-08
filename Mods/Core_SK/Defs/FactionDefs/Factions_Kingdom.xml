@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FactionDef ParentName="SK_HumanFactionBase">
+	<FactionDef ParentName="FactionBase">
 		<defName>MedievalKingdom</defName>
 		<label>Kingdom</label>
 		<pawnSingular>kingdom</pawnSingular>
@@ -26,6 +26,13 @@
 		</colorSpectrum>	
 		<techLevel>Medieval</techLevel>
 		<naturalEnemy>true</naturalEnemy>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.93</Baseliner>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.02</Hussar>
+				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.03</Neanderthal>
+			</xenotypeChances>
+		</xenotypeSet>
 		<allowedCultures>
 			<li>Knighthood</li>
 		</allowedCultures>
@@ -120,7 +127,7 @@
 				<li>WoolSheep</li>
 				<li>CopperBar</li>
 				<li>Bronze</li>
-				<li>Plasteel</li>
+				<li>Steel</li>
 			</thingDefs>
 		</apparelStuffFilter>
 		<pawnGroupMakers>

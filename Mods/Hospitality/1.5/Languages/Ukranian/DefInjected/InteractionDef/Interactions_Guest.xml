@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+	<GuestDiplomacy.label>поліпшити відносини</GuestDiplomacy.label>
+	<GuestDiplomacy.logRulesInitiator.rulesStrings>
+		<li>r_logentry->[INITIATOR_nameDef] проводить дипломатичну розмову з [RECIPIENT_nameDef] про [TalkTopicLight].</li>
+		<li>r_logentry->[INITIATOR_nameDef] обговорював політичну актуальність [subject] з [RECIPIENT_nameDef].</li>
+		<li>r_logentry->[INITIATOR_nameDef] [complimented] [RECIPIENT_nameDef] [PersonalCharacteristic].</li>
+		<li>r_logentry->[INITIATOR_nameDef] [complimented] фракцію [RECIPIENT_nameDef].</li>
+		<li>r_logentry->[INITIATOR_nameDef] [complimented] відносини з [RECIPIENT_factionName].</li>
+		<li>r_logentry->[INITIATOR_nameDef] передав вітання [RECIPIENT_nameDef] [PersonFamily].</li>
+		<li>r_logentry->[INITIATOR_nameDef] спробував зблизитися з [RECIPIENT_nameDef] обговоривши їхню спільну [opinion].</li>
+
+		<li>opinion->підтримку [ConceptPositive]</li>
+		<li>opinion->відразу до [ConceptNegative]</li>
+		<li>opinion->страх перед [ConceptNegative]</li>
+		<li>opinion->думку про [ConceptAny]</li>
+		<li>opinion->прагнення до [ConceptPositive]</li>
+		<li>complimented->похвалив</li>
+        <li>complimented->схвально відгукнувся про</li>
+        <li>complimented->звеличив</li>
+        <li>complimented->високо оцінив</li>
+        <li>complimented->відзначив</li>
+	</GuestDiplomacy.logRulesInitiator.rulesStrings>
+
+	<CharmGuestAttempt.label>спроба сподобатися</CharmGuestAttempt.label>
+ 	<CharmGuestAttempt.logRulesInitiator.rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] [saidwords] [RECIPIENT_nameDef].</li>
+        <li>r_logentry->[INITIATOR_nameDef] розповів [RECIPIENT_nameDef] про всі переваги [INITIATOR_factionName].</li>
+        <li>r_logentry->[INITIATOR_nameDef] розповів [RECIPIENT_nameDef] [adjwords] речі про іншого колоніста.</li>
+        <li>r_logentry->[INITIATOR_nameDef] познайомив [RECIPIENT_nameDef] з іншим колоністом.</li>
+        <li>saidwords->сказав [adjwords] слова до</li>
+        <li>saidwords->висловив [ConceptPositive] думку про</li>
+        <li>saidwords->зробив [adjwords] жести на адресу</li>
+		<li>adjwords->інтригуючі</li>
+		<li>adjwords->добрі</li>
+		<li>adjwords->привітні</li>
+		<li>adjwords->дружні</li>
+		<li>adjwords->чарівні</li>
+	</CharmGuestAttempt.logRulesInitiator.rulesStrings>
+
+	<ScroungeFoodAttempt.label>випросити їжу</ScroungeFoodAttempt.label>
+	  <!-- EN: 
+    r_logentry->[INITIATOR_nameDef] begged [RECIPIENT_nameDef] for some food.
+    r_logentry->[INITIATOR_nameDef] asked [RECIPIENT_nameDef] for something to eat.
+    r_logentry->[INITIATOR_nameDef] stared at [RECIPIENT_nameDef]'s food longingly.
+  -->
+ 	<ScroungeFoodAttempt.logRulesInitiator.rulesStrings>
+		<li>r_logentry->[INITIATOR_nameDef] випрошував [RECIPIENT_nameDef] трохи їжі.</li>
+        <li>r_logentry->[INITIATOR_nameDef] попросив [RECIPIENT_nameDef] щось поїсти.</li>
+        <li>r_logentry->[INITIATOR_nameDef] дивиться із сумом на їжу [RECIPIENT_nameDef]</li>
+	</ScroungeFoodAttempt.logRulesInitiator.rulesStrings>
+
+</LanguageData>

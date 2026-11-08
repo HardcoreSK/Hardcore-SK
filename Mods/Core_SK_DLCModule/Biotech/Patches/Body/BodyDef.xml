@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!--
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/BodyPartGroupDef[defName="RK_Tail"]</xpath>
+	</Operation>
+-->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/BodyDef[defName="Human"]/corePart/parts/li[def="Spine"]</xpath>
+		<value>
+			<parts>
+				<li>
+					<def>HSK_BodyPart_Tailbone</def>
+					<customLabel>tail bone</customLabel>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>Waist</li>
+						<li>HSK_Tail</li>
+					</groups>
+				</li>	
+			</parts>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyDef[defName="Human"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[customLabel="left ear"]/groups</xpath>
+		<value>
+			<li>HSK_LeftEar</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyDef[defName="Human"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[customLabel="right ear"]/groups</xpath>
+		<value>
+			<li>HSK_RightEar</li>
+		</value>
+	</Operation>
+
+	<!-- Orassan groups for Ears and Tail added directly into BodyDef -->
+
+
+</Patch>	

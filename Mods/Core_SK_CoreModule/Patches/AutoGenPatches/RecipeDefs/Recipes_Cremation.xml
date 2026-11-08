@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="CremateCorpse"]</xpath>
+    <value Merge="true">
+      <label>Cremate corpse</label>
+      <description>Cremate a corpse into ashes. Produces 4.</description>
+      <jobString>Cremating a corpse.</jobString>
+      <workAmount>600</workAmount>
+      <autoStripCorpses>true</autoStripCorpses>
+      <products>
+        <Ash>4</Ash>
+      </products>
+      <defaultIngredientFilter>
+        <thingDefs>
+          <li>Corpse_Human</li>
+          <li>Corpse_Norbal</li>
+          <li>Corpse_Alien_Nova</li>
+          <li>Corpse_Alien_Dova</li>
+          <li>Corpse_Alien_Orassan</li>
+        </thingDefs>
+        <specialFiltersToAllow>
+          <li>AllowCorpsesColonist</li>
+          <li>AllowCorpsesStranger</li>
+        </specialFiltersToAllow>
+      </defaultIngredientFilter>
+      <researchPrerequisite>Craft_0</researchPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="BurnApparel"]</xpath>
+    <value>
+      <label>Burn apparel</label>
+      <description>Burn apparel into ashes. Produces 2.</description>
+      <workAmount>200</workAmount>
+      <products>
+        <Ash>2</Ash>
+      </products>
+      <fixedIngredientFilter>
+        <categories>
+          <li>Apparel</li>
+        </categories>
+      </fixedIngredientFilter>
+      <researchPrerequisite>Craft_0</researchPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="BurnWeapon"]</xpath>
+    <value>
+      <ingredients>
+        <li>
+          <filter>
+            <categories>
+              <li>Weapons</li>
+              <li>SurvivalToolsNeolithic</li>
+            </categories>
+          </filter>
+          <count>1</count>
+        </li>
+      </ingredients>
+      <fixedIngredientFilter>
+        <categories>
+          <li>Weapons</li>
+          <li>SurvivalToolsNeolithic</li>
+        </categories>
+        <specialFiltersToDisallow>
+          <li>AllowNonBurnableWeapons</li>
+        </specialFiltersToDisallow>
+      </fixedIngredientFilter>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Weapons</li>
+          <li>SurvivalToolsNeolithic</li>
+        </categories>
+      </defaultIngredientFilter>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="BurnDrugs"]</xpath>
+    <value>
+      <researchPrerequisite>Craft_0</researchPrerequisite>
+    </value>
+  </Operation>
+
+</Patch>

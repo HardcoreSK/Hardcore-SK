@@ -1,16 +1,4 @@
-# Orion's Mods
-This repository hosts the RimWorld mod *Hospitality*. I also collect feature requests and issues for my other mods.
-
-## Want to download the latest version?
-Find them [here](https://github.com/OrionFive/Hospitality/releases).
-
-## Got a problem, bug or feature request? 
-Post it [here](https://github.com/OrionFive/Hospitality/issues).
-
-## Become a patron! 
-Want to support the development of Hospitality and my other mods? 
-Want to vote on the next feature? 
-[Become my patron!](https://www.patreon.com/orionmods)
+Hospitality (Continued)
 
 
 # License
@@ -36,4 +24,4 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 Notice to Ludeon Studios et al:
-The licensor hereby grants the legal firm Ludeon Studios, lead by Tynan Sylvester, an irrevocable license to use this mod or components thereof, separately to that offered to the public above. Ludeon may include content derived from this in official releases of RimWorld without owing money or credit to the licensor. This separate license does not constitute the release of this mod into the public domain, and the author retains copyright over the mod. 
+The licensor hereby grants the legal firm Ludeon Studios, led by Tynan Sylvester, an irrevocable license to use this mod or components thereof, separately from that offered to the public above. Ludeon may include content derived from this in official releases of RimWorld without owing money or credit to the licensor. This separate license does not constitute the release of this mod into the public domain, and the author retains copyright over the mod. 

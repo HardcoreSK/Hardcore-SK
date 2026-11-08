@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="SolarWeb_Stratum_RoofBuildableBase">
+    <defName>SolarWeb-Stratum-RoofStandard_Buildable</defName>
+    <label>standard roof</label>
+    <description>The standard roof used by most colonies. It is durable and airtight, providing reliable protection against the elements.</description>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <MarketValue>10</MarketValue>
+      <SolarWeb-Stratum-Insulation>0.80</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-ThermalConductivity>0.20</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-DamageThreshold>4</SolarWeb-Stratum-DamageThreshold>
+      <SolarWeb-Stratum-ArmorRating>0.15</SolarWeb-Stratum-ArmorRating>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="SolarWeb_Stratum_RoofBuildableBase">
+    <defName>SolarWeb-Stratum-RoofThinRock_Buildable</defName>
+    <label>thin rock roof</label>
+    <description>A natural roof of thin stone. While sturdy, it is rough and unattractive.</description>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Beauty>-1</Beauty>
+      <SolarWeb-Stratum-Insulation>0.85</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-ThermalConductivity>0.15</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-DamageThreshold>10</SolarWeb-Stratum-DamageThreshold>
+      <SolarWeb-Stratum-ArmorRating>0.40</SolarWeb-Stratum-ArmorRating>
+      <SolarWeb-Stratum-StuffBeautyMultiplier>0</SolarWeb-Stratum-StuffBeautyMultiplier>
+    </statBases>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>1</costStuffCount>
+  </ThingDef>
+
+  <ThingDef ParentName="SolarWeb_Stratum_RoofBuildableBase">
+    <defName>SolarWeb-Stratum-RoofOverheadMountain_Buildable</defName>
+    <label>overhead mountain</label>
+    <description>A massive thickness of solid rock. Practically indestructible and offers perfect insulation.</description>
+    <statBases>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Beauty>-2</Beauty>
+      <SolarWeb-Stratum-Insulation>1.0</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-ThermalConductivity>0.0</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-DamageThreshold>50</SolarWeb-Stratum-DamageThreshold>
+      <SolarWeb-Stratum-ArmorRating>0.90</SolarWeb-Stratum-ArmorRating>
+      <SolarWeb-Stratum-StuffBeautyMultiplier>0</SolarWeb-Stratum-StuffBeautyMultiplier>
+    </statBases>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>1</costStuffCount>
+  </ThingDef>
+
+  <ThingDef ParentName="SolarWeb_Stratum_RoofBuildableBase">
+    <defName>SolarWeb-Stratum-RoofOverheadMountainSmoothed_Buildable</defName>
+    <label>smoothed overhead mountain</label>
+    <description>A massive thickness of solid rock, smoothed to a clean finish.</description>
+    <statBases>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Beauty>2</Beauty>
+      <SolarWeb-Stratum-Insulation>1.0</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-ThermalConductivity>0.0</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-DamageThreshold>50</SolarWeb-Stratum-DamageThreshold>
+      <SolarWeb-Stratum-ArmorRating>0.90</SolarWeb-Stratum-ArmorRating>
+      <SolarWeb-Stratum-StuffBeautyMultiplier>0.5</SolarWeb-Stratum-StuffBeautyMultiplier>
+    </statBases>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>1</costStuffCount>
+  </ThingDef>
+
+  <SolarWeb.Stratum.Defs.StratumRoofDef>
+    <defName>SolarWeb-Stratum-RoofOverheadMountainSmoothed</defName>
+    <label>smoothed overhead mountain</label>
+    <description>A massive thickness of solid rock, smoothed to a clean finish.</description>
+    <isThickRoof>true</isThickRoof>
+    <isNatural>true</isNatural>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+    <soundPunchThrough>Pawn_Melee_Punch_HitBuilding_Stone</soundPunchThrough>
+    <modExtensions>
+      <li Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension">
+        <buildableDef>SolarWeb-Stratum-RoofOverheadMountainSmoothed_Buildable</buildableDef>
+        <graphicData>
+          <texPath>Roofs/SmoothedRockThin</texPath>
+          <color>(0.70, 0.70, 0.70)</color>
+          <isSeamless>true</isSeamless>
+        </graphicData>
+      </li>
+      <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
+        <Name>Smoothed Overhead Mountain</Name>
+        <SurfaceIndependentOfStuff>true</SurfaceIndependentOfStuff>
+        <Properties>
+          <ThermalCapacity>10000</ThermalCapacity>
+          <ThermalConductivity>0</ThermalConductivity>
+          <FaceGasPermeability>0</FaceGasPermeability>
+          <RadiativeConductivity>0</RadiativeConductivity>
+          <MaxPressureDeltaKpa>5000</MaxPressureDeltaKpa>
+        </Properties>
+      </li>
+    </modExtensions>
+  </SolarWeb.Stratum.Defs.StratumRoofDef>
+
+  <ThingDef ParentName="SolarWeb_Stratum_RoofBuildableBase">
+    <defName>SolarWeb-Stratum-RoofThinRockSmoothed_Buildable</defName>
+    <label>smoothed thin rock roof</label>
+    <description>A natural roof of thin stone, smoothed to a clean finish.</description>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Beauty>2</Beauty>
+      <SolarWeb-Stratum-Insulation>0.85</SolarWeb-Stratum-Insulation>
+      <SolarWeb-Stratum-ThermalConductivity>0.15</SolarWeb-Stratum-ThermalConductivity>
+      <SolarWeb-Stratum-DamageThreshold>10</SolarWeb-Stratum-DamageThreshold>
+      <SolarWeb-Stratum-ArmorRating>0.40</SolarWeb-Stratum-ArmorRating>
+      <SolarWeb-Stratum-StuffBeautyMultiplier>0.5</SolarWeb-Stratum-StuffBeautyMultiplier>
+    </statBases>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>1</costStuffCount>
+  </ThingDef>
+
+  <SolarWeb.Stratum.Defs.StratumRoofDef>
+    <defName>SolarWeb-Stratum-RoofThinRockSmoothed</defName>
+    <label>smoothed thin rock roof</label>
+    <description>A natural roof of thin stone, smoothed to a clean finish.</description>
+    <isThickRoof>false</isThickRoof>
+    <isNatural>true</isNatural>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+    <soundPunchThrough>Pawn_Melee_Punch_HitBuilding_Stone</soundPunchThrough>
+    <modExtensions>
+      <li Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension">
+        <buildableDef>SolarWeb-Stratum-RoofThinRockSmoothed_Buildable</buildableDef>
+        <graphicData>
+          <texPath>Roofs/SmoothedRockThin</texPath>
+          <isSeamless>true</isSeamless>
+        </graphicData>
+      </li>
+      <li Class="SolarWeb.Kalyphos.DefModExtensions.StructuralProperties" MayRequire="SolarWeb.Kalyphos">
+        <Name>Smoothed Thin Rock Roof</Name>
+        <SurfaceIndependentOfStuff>true</SurfaceIndependentOfStuff>
+        <Properties>
+          <ThermalCapacity>3000</ThermalCapacity>
+          <ThermalConductivity>0.1</ThermalConductivity>
+          <FaceGasPermeability>0</FaceGasPermeability>
+          <RadiativeConductivity>0.02</RadiativeConductivity>
+          <MaxPressureDeltaKpa>200</MaxPressureDeltaKpa>
+        </Properties>
+      </li>
+    </modExtensions>
+  </SolarWeb.Stratum.Defs.StratumRoofDef>
+</Defs>

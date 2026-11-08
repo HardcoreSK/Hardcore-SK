@@ -32,6 +32,9 @@
 		<descriptionHyperlinks>
 			<ThingDef>CONN_EnergeticLung</ThingDef>
 		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="CombatExtended.SmokeInhalationImmuneExtension" />
+		</modExtensions>
 	</HediffDef>
 
 	<ThingDef ParentName="ProductiveAdvancedBionicsBase">
@@ -70,8 +73,10 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallEnergeticLung</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install energetic lung</label>
 		<description>Install energetic lung.</description>
 		<descriptionHyperlinks>
@@ -179,8 +184,10 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallEnergeticKidney</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install energetic kidney</label>
 		<description>Install energetic kidney.</description>
 		<descriptionHyperlinks>
@@ -264,7 +271,7 @@
 		<label>energy core</label>
 		<description>An advanced artificial heart. It has synthetic muscle fibers for a realistic heartbeat, plus a high-flow pump for rapid circulation during high stress. It is better than a biological heart in almost every way with its advanced super core, which is build off a mechanoid power cell. (Replacement)</description>
 		<graphicData>
-			<texPath>Things/Item/BodyPart/Joywire</texPath>
+			<texPath>Things/Item/BodyPart/Core/Joywire</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -296,8 +303,10 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallEnergyCore</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install energy core</label>
 		<description>Install energy core.</description>
 		<descriptionHyperlinks>
@@ -411,8 +420,10 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallAutonomicViruskiller</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install autonomic viruskiller</label>
 		<description>Install autonomic viruskiller.</description>
 		<descriptionHyperlinks>
@@ -521,8 +532,10 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallAurum</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install aurum</label>
 		<description>Install aurum.</description>
 		<descriptionHyperlinks>

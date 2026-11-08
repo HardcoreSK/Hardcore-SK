@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_SaguaroCactus"]</xpath>
+    <value>
+      <description>The saguaro cactus is native to desert and arid environments. When fully grown, it can be chopped for a small amount of wood.</description>
+      <statBases Merge="true">
+        <Beauty>2</Beauty>
+        <BeautyOutdoors>2</BeautyOutdoors>
+        <MaxHitPoints>200</MaxHitPoints>
+        <Nutrition>0.7</Nutrition>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Plant/PlantSaguaroCactus</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.18, 0.3, 0.15)</volume>
+          <offset>(0,0,-0.38)</offset>
+        </shadowData>
+      </graphicData>
+      <!-- <fillPercent>0.25</fillPercent> i agree with vanilla (0.35)-->
+      <pathCost>130</pathCost>
+      <plant Merge="true">
+        <fertilityMin>0.04</fertilityMin>
+        <harvestWork>300</harvestWork>
+        <harvestYield>10</harvestYield>
+        <visualSizeRange>0.7~1.6</visualSizeRange> <!-- keep because of custom graphic -->
+        <topWindExposure>0.08</topWindExposure>
+        <wildClusterRadius>-1</wildClusterRadius> <!-- im guessing we set this so they cant spawn in groups? (possibly needs balancing) -->
+      </plant>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_PincushionCactus"]</xpath>
+    <value>
+      <description>A pincushion cactus is a short, round cactus with long pin-like needles. It is native to desert and arid environments.</description>
+      <statBases Merge="true">
+        <Beauty>1</Beauty>
+        <Nutrition>0.3</Nutrition>
+      </statBases>
+	  <graphicData>
+        <texPath>Things/Plant/PlantPincushionCactus</texPath> <!-- I will leave our texPaths like this for now, as it makes sure other mods cant overwrite our textures -->
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.15, 0.2, 0.15)</volume>
+          <offset>(0,0,0)</offset>
+        </shadowData>
+      </graphicData>
+      <fillPercent>0.08</fillPercent>
+      <plant Merge="true">
+        <fertilityMin>0.04</fertilityMin>
+        <growDays>2.7</growDays>
+      </plant>
+    </value>
+  </Operation>
+
+</Patch>

@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<!-- Overrides for 1.6\Defs\Storytellers\Storytellers.xml -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/IncidentDef[defName="RK_Incident_VagabondJoin"]</xpath>
+		<value>
+			<category>Special</category>
+			<targetTags>
+				<li>Map_PlayerHome</li>
+			</targetTags>
+			<workerClass>NewRatkin.IncidentWorker_WandererJoin</workerClass>
+			<letterLabel>Vagabond</letterLabel>
+			<letterText>피어오르는 연기를 본 [PAWN_kind]는 이곳으로 달려왔습니다.</letterText>
+			<baseChance>0</baseChance>
+			<minRefireDays>60</minRefireDays>
+			<minGreatestPopulation>3</minGreatestPopulation>
+			<pawnKind>RatkinVagabond</pawnKind>
+			<pawnFixedGender>Male</pawnFixedGender>
+			<pawnMustBeCapableOfViolence>true</pawnMustBeCapableOfViolence>
+			<modExtensions>
+				<li Class="NewRatkin.IncidentDefExtension_WandererJoin">
+					<pawnKindCounts>
+						<li>
+							<pawnKind>RatkinVagabond</pawnKind>
+							<count>1</count>
+						</li>
+						<li>
+							<pawnKind>RatkinPriest</pawnKind>
+							<count>1</count>
+							<mustBeCapableOfViolence>false</mustBeCapableOfViolence>
+						</li>
+					</pawnKindCounts>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/StorytellerDef[defName="RK_Storyteller_RottyMilden"]</xpath>
+		<value>
+			<portraitLarge>Storyteller/RK_STORY</portraitLarge>
+			<portraitTiny>Storyteller/RK_STORY_TINY</portraitTiny>
+			<listOrder>60</listOrder>
+			<comps>
+				<li Class="StorytellerCompProperties_RandomMain">
+					<allowedTargetTags>
+						<li>Map_PlayerHome</li>
+					</allowedTargetTags>
+					<minDaysPassed>0.85</minDaysPassed>
+					<mtbDays>0.85</mtbDays>
+					<maxThreatBigIntervalDays>15</maxThreatBigIntervalDays>
+					<minIncChancePopulationIntentFactor>0.2</minIncChancePopulationIntentFactor>
+					<randomPointsFactorRange>0.5~2</randomPointsFactorRange>
+					<skipThreatBigIfRaidBeacon>true</skipThreatBigIfRaidBeacon>
+					<categoryWeights>
+						<Misc>5.4</Misc>
+						<ThreatBig>0.9</ThreatBig>
+						<OrbitalVisitor>1.25</OrbitalVisitor>
+						<FactionArrival>1.45</FactionArrival>
+						<ThreatSmall>1.2</ThreatSmall>
+						<ShipChunkDrop>1.35</ShipChunkDrop>
+					</categoryWeights>
+				</li>
+				<li Class="StorytellerCompProperties_Disease">
+					<category>DiseaseHuman</category>
+					<minDaysPassed>4</minDaysPassed>
+				</li>
+				<li Class="StorytellerCompProperties_Disease">
+					<category>DiseaseAnimal</category>
+					<minDaysPassed>4</minDaysPassed>
+				</li>
+				<li Class="StorytellerCompProperties_ThreatsGenerator">
+					<allowedTargetTags>
+						<li>Map_RaidBeacon</li>
+					</allowedTargetTags>
+					<parms>
+						<allowedThreats>Raids</allowedThreats>
+						<onDays>1.0</onDays>
+						<offDays>0.5</offDays>
+						<minSpacingDays>0.04</minSpacingDays>
+						<numIncidentsRange>1~2</numIncidentsRange>
+					</parms>
+				</li>
+				<li Class="StorytellerCompProperties_FactionInteraction">
+					<incident>RaidFriendly</incident>
+					<baseIncidentsPerYear>10</baseIncidentsPerYear>
+					<minSpacingDays>0.4</minSpacingDays>
+					<fullAlliesOnly>true</fullAlliesOnly>
+					<minDanger>High</minDanger>
+				</li>
+				<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+					<category>Misc</category>
+					<allowedTargetTags>
+						<li>Caravan</li>
+						<li>Map_TempIncident</li>
+					</allowedTargetTags>
+				</li>
+				<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+					<category>ThreatSmall</category>
+					<applyCaravanVisibility>true</applyCaravanVisibility>
+					<allowedTargetTags>
+						<li>Caravan</li>
+						<li>Map_TempIncident</li>
+					</allowedTargetTags>
+				</li>
+				<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+					<category>ThreatBig</category>
+					<applyCaravanVisibility>true</applyCaravanVisibility>
+					<allowedTargetTags>
+						<li>Caravan</li>
+						<li>Map_TempIncident</li>
+					</allowedTargetTags>
+				</li>
+				<li Class="StorytellerCompProperties_RandomQuest">
+					<category>GiveQuest</category>
+					<allowedTargetTags>
+						<li>World</li>
+					</allowedTargetTags>
+					<onDays>10</onDays>
+					<numIncidentsRange>2</numIncidentsRange>
+					<acceptFractionByDaysPassedCurve>
+						<points>
+							<li>(5, 0)</li>
+							<li>(30, 1)</li>
+						</points>
+					</acceptFractionByDaysPassedCurve>
+					<minSpacingDays>0.2</minSpacingDays>
+					<disableIfAnyModActive>
+						<li>Ludeon.RimWorld.Royalty</li>
+					</disableIfAnyModActive>
+				</li>
+				<li Class="StorytellerCompProperties_RandomQuest">
+					<category>GiveQuest</category>
+					<allowedTargetTags>
+						<li>World</li>
+					</allowedTargetTags>
+					<onDays>12</onDays>
+					<numIncidentsRange>1~4</numIncidentsRange>
+					<acceptFractionByDaysPassedCurve>
+						<points>
+							<li>(5, 0)</li>
+							<li>(11, 1)</li>
+						</points>
+					</acceptFractionByDaysPassedCurve>
+					<minSpacingDays>0.2</minSpacingDays>
+					<enableIfAnyModActive>
+						<li>Ludeon.RimWorld.Royalty</li>
+					</enableIfAnyModActive>
+				</li>
+				<li Class="StorytellerCompProperties_CategoryMTB">
+					<category>Misc</category>
+					<allowedTargetTags>
+						<li>World</li>
+					</allowedTargetTags>
+					<minDaysPassed>1</minDaysPassed>
+					<mtbDays>15</mtbDays>
+				</li>
+				<li Class="StorytellerCompProperties_OnOffCycle">
+					<incident>OrbitalTraderArrival</incident>
+					<onDays>7</onDays>
+					<offDays>8</offDays>
+					<numIncidentsRange>1</numIncidentsRange>
+				</li>
+				<li Class="StorytellerCompProperties_Triggered">
+					<incident>RK_Incident_VagabondJoin</incident>
+					<delayTicks>300</delayTicks>
+				</li>
+				<li Class="StorytellerCompProperties_FactionInteraction">
+					<incident>TraderCaravanArrival</incident>
+					<minDaysPassed>3</minDaysPassed>
+					<baseIncidentsPerYear>7</baseIncidentsPerYear>
+					<allowedTargetTags>
+						<li>Map_PlayerHome</li>
+					</allowedTargetTags>
+				</li>
+				<li Class="StorytellerCompProperties_RK_PriestJoin">
+					<incident>RK_Incident_PriestJoin</incident>
+					<fireAfterDaysPassed>60</fireAfterDaysPassed>
+					<mtbDays>3</mtbDays>
+				</li>
+				<li Class="NewRatkin.StorytellerCompProperties_WanderingCaravan">
+					<incident>RK_Incident_WanderingTrader</incident>
+					<minDaysPassed>30</minDaysPassed>
+					<springMtbDays>3</springMtbDays>
+					<summerMtbDays>1.5</summerMtbDays>
+					<fallbackMtbDays>0.5</fallbackMtbDays>
+					<minRefireDays>45</minRefireDays>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+</Patch>

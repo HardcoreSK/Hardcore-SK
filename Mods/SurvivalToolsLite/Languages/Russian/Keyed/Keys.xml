@@ -16,7 +16,12 @@
   <Settings_ToolLimit>Лимит на количество</Settings_ToolLimit>
   <Settings_ToolLimit_Tooltip>Ограничены ли поселенцы в возможности нести определенное количество инструментов одновременно в своем инвентаре.</Settings_ToolLimit_Tooltip>
 
-  <Settings_ToolDegradationRate>Скорость износа инструмента</Settings_ToolDegradationRate>
+  <Settings_ToolDegradationRate>Скорость износа инструмента:{0}</Settings_ToolDegradationRate>
+  <Settings_ToolDegradationRateCurrent>Текущее значение: {0}</Settings_ToolDegradationRateCurrent>
+
+  <Settings_TreeFellingSpeedThreshold>Порог скорости рубки деревьев: {0}</Settings_TreeFellingSpeedThreshold>
+  <Settings_TreeFellingSpeedThreshold_Tooltip>Пешки, чья скорость рубки деревьев не превышает этого значения, не будут выполнять эту работу в случайном порядке (например, перед возведением крыши, установкой каркаса постройки и т. д.). \nПо умолчанию: 1%</Settings_TreeFellingSpeedThreshold_Tooltip>
+  <Settings_TreeFellingSpeedThresholdCurrent>Текущее значение: {0}</Settings_TreeFellingSpeedThresholdCurrent>
 
   <Settings_ToolOptimization>Оптимизация инструмента</Settings_ToolOptimization>
   <Settings_ToolOptimization_Tooltip>Будут ли поселенцы пытаться автоматически оптимизировать свои инвентарные инструменты. Отключение может улучшить производительность и исправить возможные ошибки с некоторыми модами.</Settings_ToolOptimization_Tooltip>
@@ -42,11 +47,11 @@
   <SurvivalToolAssignmentInUse>Назначение инструмента используется {0}</SurvivalToolAssignmentInUse>
   <NoSurvivalToolAssignmentSelected>Не выбрано назначение инструмента</NoSurvivalToolAssignmentSelected>
   <ForcedSurvivalTools>Принудительные инструменты</ForcedSurvivalTools>
-  
+
   <Settings_DisableNotifications>Выключить оповещения</Settings_DisableNotifications>
   <Settings_DisableNotifications_Tooltip>Выключить оповещения об отсутствии инструментов и требовании в замене.</Settings_DisableNotifications_Tooltip>
 
   <SurvivalToolsUpdateFix>Выполнено исправление обновления инструмента, свойства инструментов созданы заново...</SurvivalToolsUpdateFix>
   <Settings_RespawnToolAfterUpdate>Исправить сломанные инструменты (запустить после обновления)</Settings_RespawnToolAfterUpdate>
-  
+
 </LanguageData>

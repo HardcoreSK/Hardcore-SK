@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="ComponentIndustrial" or defName="ComponentSpacer" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.CropsBaseDummy</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="ComponentIndustrial"]</xpath>
+		<value>
+			<description>Various screws, nuts, bolts, rods, plates and frames.</description>
+			<graphicData>
+				<texPath>Things/Item/Components/Component</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<techLevel>Industrial</techLevel>
+			<statBases Merge="True">
+				<MarketValue>40</MarketValue>
+				<DeteriorationRate>0</DeteriorationRate>
+				<Flammability>0.2</Flammability>
+				<SellPriceFactor>0.50</SellPriceFactor>
+				<Mass>0.5</Mass>
+				<Bulk>0.5</Bulk>
+			</statBases>
+			<useHitPoints>true</useHitPoints>
+			<thingCategories>
+				<li>Parts</li>
+			</thingCategories>
+			<stackLimit>150</stackLimit>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="ComponentSpacer"]</xpath>
+		<value>
+			<label>spacer component</label>
+			<graphicData>
+				<texPath>Things/Item/Components/AdvancedComponent</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<techLevel>Spacer</techLevel>
+			<statBases Merge="True">
+				<MarketValue>150</MarketValue>
+				<DeteriorationRate>0</DeteriorationRate>
+				<Flammability>0.3</Flammability>
+				<SellPriceFactor>0.50</SellPriceFactor>
+				<Mass>0.5</Mass>
+				<Bulk>0.5</Bulk>
+			</statBases>
+			<useHitPoints>true</useHitPoints>
+			<thingCategories>
+				<li>Parts</li>
+			</thingCategories>
+			<stackLimit>150</stackLimit>
+		</value>
+	</Operation>
+</Patch>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ASARI -->
 	<AlienRace.ThingDef_AlienRace ParentName="BaseHumanlikePawn">
@@ -8,7 +8,7 @@
 		<description>A mono-gender race, the asari are distinctly feminine in appearance and possess maternal instincts. Their unique physiology, expressed in a millennium-long lifespan and the ability to reproduce with a partner of any gender or species, gives them a conservative yet convivial attitude toward other races.</description>
 		<alienRace>
 			<generalSettings>
-				<humanRecipeImport>true</humanRecipeImport>
+				<humanRecipeImport>false</humanRecipeImport>
 				<maleGenderProbability>0.00001</maleGenderProbability>
 				<immuneToAge>true</immuneToAge>
 				<forcedRaceTraitEntries>
@@ -128,14 +128,16 @@
 			</generalSettings>
 			<graphicPaths>
 				<head>
-					<path>Things/Pawn/Humanlike/Asari/Head/</path>
-					<headtypeGraphics>
-						<Male_AverageNormal>Things/Pawn/Humanlike/Asari/Head/Male_Average_Normal</Male_AverageNormal>
-						<Female_AverageNormal>Things/Pawn/Humanlike/Asari/Head/Female_Average_Normal</Female_AverageNormal>
-					</headtypeGraphics>
+					<path>Things/Pawn/Humanlike/Asari/Head/Female_Average_Normal</path>
+					<!-- Always keep an Asari head when xenotype genes replace headType. -->
+					<genderGraphics>
+						<None>Things/Pawn/Humanlike/Asari/Head/Female_Average_Normal</None>
+						<Male>Things/Pawn/Humanlike/Asari/Head/Male_Average_Normal</Male>
+						<Female>Things/Pawn/Humanlike/Asari/Head/Female_Average_Normal</Female>
+					</genderGraphics>
 				</head>
 				<body>
-					<path>Things/Pawn/Humanlike/Asari/Body/</path>
+					<path>Things/Pawn/Humanlike/Asari/Body/Naked_Female</path>
 					<bodytypeGraphics>
 						<Female>Things/Pawn/Humanlike/Asari/Body/Naked_Female</Female>
 						<Child MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Bodies/Child/Naked_Child</Child>
@@ -302,6 +304,8 @@
 		<race>
 			<useMeatFrom>Human</useMeatFrom>
 			<leatherDef>Leather_Human</leatherDef>
+			<nameGenerator>NamerPersonAsari</nameGenerator>
+			<nameGeneratorFemale>NamerPersonAsari</nameGeneratorFemale>
 			<lifeExpectancy>1200</lifeExpectancy>
 			<bloodDef>Filth_AsariBlood</bloodDef>
 			<baseHungerRate>0.75</baseHungerRate>

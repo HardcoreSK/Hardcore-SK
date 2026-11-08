@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.RaceSettings>
+		<defName>RK_Race_Setting</defName>
+		<pawnKindSettings>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>RatkinColonist</li>
+							</kindDefs>
+							<chance>50.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>RK_PlayerFaction</li>
+					</factionDefs>
+				</li>
+			</startingColonists>
+			<alienwandererkinds>
+				<!-- 방랑자 합류 이벤트용. 합류를 희망하는것들 -->
+				<!-- 실향민, 농부, 살인자, 전쟁 고아, 범죄자, 개척자, 떠돌이, 사냥꾼, 종교맨, 몰락귀족, 탈영병 -->
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<!-- TODO: 방랑자 합류를 위한 pawnKind 설정이 필요 -->
+								<li>RatkinServant</li>
+							</kindDefs>
+							<chance>100</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>Rakinia</li>
+					</factionDefs>
+				</li>
+			</alienwandererkinds>
+		</pawnKindSettings>
+	</AlienRace.RaceSettings>
+</Defs>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Ideology</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<success>Normal</success>
+					<operations>
+						<li Class="PatchOperationFindMod">
+							<mods>
+								<li>Biotech</li>
+							</mods>
+							<match Class="PatchOperationSequence">
+								<success>Normal</success>
+								<operations>
+									<li Class="PatchOperationAddModExtension">
+										<xpath>*/MemeDef[defName="Bloodfeeding"]</xpath>
+										<value>
+											<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+												<associatedPreferredTraits>
+													<li>Bloodlust</li>
+												</associatedPreferredTraits>
+											</li>
+										</value>
+									</li>
+								</operations>
+							</match>
+						</li>
+						<li Class="PatchOperationFindMod">
+							<mods>
+								<li>Anomaly</li>
+							</mods>
+							<match Class="PatchOperationSequence">
+								<success>Normal</success>
+								<operations>
+									<li Class="PatchOperationAddModExtension">
+										<xpath>*/MemeDef[defName="Inhuman"]</xpath>
+										<value>
+											<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+												<associatedPreferredTraits>
+													<li>Bloodlust</li>
+													<li>Psychopath</li>
+													<li>Abrasive</li>
+												</associatedPreferredTraits>
+												<associatedDisapprovedTraits>
+													<li>Kind</li>
+													<li>Wimp</li>
+													<li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
+												</associatedDisapprovedTraits>
+											</li>
+										</value>
+									</li>
+									<li Class="PatchOperationAddModExtension">
+										<xpath>*/MemeDef[defName="Ritualist"]</xpath>
+										<value>
+											<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+												<associatedPreferredTraits>
+													<PsychicSensitivity>2</PsychicSensitivity>
+													<PsychicSensitivity>1</PsychicSensitivity>
+													<li>VoidFascination</li>
+													<li>PerfectMemory</li>
+													<li>Occultist</li>
+													<li>Joyous</li>
+													<li>BodyMastery</li>
+													<li>VoidFascination</li>
+												</associatedPreferredTraits>
+												<associatedDisapprovedTraits>
+													<PsychicSensitivity>-1</PsychicSensitivity>
+													<PsychicSensitivity>-2</PsychicSensitivity>
+												</associatedDisapprovedTraits>
+											</li>
+										</value>
+									</li>
+								</operations>
+							</match>
+						</li>
+						<li Class="PatchOperationAddModExtension">
+							<xpath>*/MemeDef[defName="MaleSupremacy"]</xpath>
+							<value>
+								<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+									<associatedPreferredTraits>
+										<li>DislikesWomen</li>
+									</associatedPreferredTraits>
+									<associatedDisapprovedTraits>
+										<li>DislikesMen</li>
+									</associatedDisapprovedTraits>
+								</li>
+							</value>
+						</li>
+						<li Class="PatchOperationAddModExtension">
+							<xpath>*/MemeDef[defName="FemaleSupremacy"]</xpath>
+							<value>
+								<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+									<associatedPreferredTraits>
+										<li>DislikesMen</li>
+									</associatedPreferredTraits>
+									<associatedDisapprovedTraits>
+										<li>DislikesWomen</li>
+									</associatedDisapprovedTraits>
+								</li>
+							</value>
+						</li>
+						<li Class="PatchOperationAddModExtension">
+							<xpath>*/MemeDef[defName="Supremacist"]</xpath>
+							<value>
+								<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+									<associatedPreferredTraits>
+										<li>Bloodlust</li>
+										<li>Psychopath</li>
+										<li>Abrasive</li>
+										<li>Brawler</li>
+										<li>Tough</li>
+									</associatedPreferredTraits>
+									<associatedDisapprovedTraits>
+										<li>Kind</li>
+										<li>Wimp</li>
+										<li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
+									</associatedDisapprovedTraits>
+								</li>
+							</value>
+						</li>
+						<li Class="PatchOperationAddModExtension">
+							<xpath>*/MemeDef[defName="Guilty"]</xpath>
+							<value>
+								<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+									<associatedPreferredTraits>
+										<li>Masochist</li>
+										<li>Ascetic</li>
+									</associatedPreferredTraits>
+									<associatedDisapprovedTraits>
+										<li>Greedy</li>
+										<li>Jealous</li>
+									</associatedDisapprovedTraits>
+								</li>
+							</value>
+						</li>
+						<li Class="PatchOperationAddModExtension">
+							<xpath>*/MemeDef[defName="Individualist"]</xpath>
+							<value>
+								<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+									<associatedPreferredTraits>
+										<li MayRequire="Ludeon.RimWorld.Biotech">Recluse</li>
+									</associatedPreferredTraits>
+								</li>
+							</value>
+						</li>
+						<li Class="PatchOperationAddModExtension">
+							<xpath>*/MemeDef[defName="Collectivist"]</xpath>
+							<value>
+								<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+									<associatedPreferredTraits>
+										<Industriousness>2</Industriousness>
+										<Industriousness>1</Industriousness>
+									</associatedPreferredTraits>
+									<associatedDisapprovedTraits>
+										<li>Greedy</li>
+										<li>Jealous</li>
+										<li MayRequire="Ludeon.RimWorld.Biotech">Recluse</li>
+										<Industriousness>-1</Industriousness>
+										<Industriousness>-2</Industriousness>
+									</associatedDisapprovedTraits>
+								</li>
+							</value>
+						</li>
+						<li Class="PatchOperationAddModExtension">
+							<xpath>*/MemeDef[defName="AnimalPersonhood"]</xpath>
+							<value>
+								<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+									<associatedPreferredTraits>
+										<li MayRequire="Ludeon.RimWorld.Biotech">Recluse</li>
+									</associatedPreferredTraits>
+								</li>
+							</value>
+						</li>
+						<li Class="PatchOperationAddModExtension">
+							<xpath>*/MemeDef[defName="Transhumanist"]</xpath>
+							<value>
+								<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+									<associatedPreferredTraits>
+										<li>Transhumanist</li>
+									</associatedPreferredTraits>
+									<associatedDisapprovedTraits>
+										<li>BodyPurist</li>
+									</associatedDisapprovedTraits>
+								</li>
+							</value>
+						</li>
+						<li Class="PatchOperationAddModExtension">
+							<xpath>*/MemeDef[defName="FleshPurity"]</xpath>
+							<value>
+								<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+									<associatedPreferredTraits>
+										<li>BodyPurist</li>
+										<DrugDesire>-1</DrugDesire>
+									</associatedPreferredTraits>
+									<associatedDisapprovedTraits>
+										<li>Transhumanist</li>
+										<DrugDesire>2</DrugDesire>
+										<DrugDesire>1</DrugDesire>
+									</associatedDisapprovedTraits>
+								</li>
+							</value>
+						</li>
+						<li Class="PatchOperationAddModExtension">
+							<xpath>*/MemeDef[defName="PainIsVirtue"]</xpath>
+							<value>
+								<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+									<associatedPreferredTraits>
+										<li>Masochist</li>
+										<li>Ascetic</li>
+									</associatedPreferredTraits>
+									<associatedDisapprovedTraits>
+										<li>Gourmand</li>
+										<li>Wimp</li>
+										<li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
+									</associatedDisapprovedTraits>
+								</li>
+							</value>
+						</li>
+						<li Class="PatchOperationAddModExtension">
+							<xpath>*/MemeDef[defName="Cannibal"]</xpath>
+							<value>
+								<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+									<associatedPreferredTraits>
+										<li>Bloodlust</li>
+										<li>Psychopath</li>
+										<li>Cannibal</li>
+									</associatedPreferredTraits>
+								</li>
+							</value>
+						</li>
+						<li Class="PatchOperationAddModExtension">
+							<xpath>*/MemeDef[defName="Proselytizer"]</xpath>
+							<value>
+								<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+									<associatedDisapprovedTraits>
+										<li MayRequire="Ludeon.RimWorld.Biotech">Recluse</li>
+										<li>Abrasive</li>
+									</associatedDisapprovedTraits>
+								</li>
+							</value>
+						</li>
+						<li Class="PatchOperationAddModExtension">
+							<xpath>*/MemeDef[defName="HighLife"]</xpath>
+							<value>
+								<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+									<associatedPreferredTraits>
+										<DrugDesire>2</DrugDesire>
+										<DrugDesire>1</DrugDesire>
+									</associatedPreferredTraits>
+									<associatedDisapprovedTraits>
+										<DrugDesire>-1</DrugDesire>
+									</associatedDisapprovedTraits>
+								</li>
+							</value>
+						</li>
+						<li Class="PatchOperationAddModExtension">
+							<xpath>*/MemeDef[defName="Nudism"]</xpath>
+							<value>
+								<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+									<associatedDisapprovedTraits>
+										<li>Nudist</li>
+									</associatedDisapprovedTraits>
+								</li>
+							</value>
+						</li>
+						<li Class="PatchOperationAddModExtension">
+							<xpath>*/MemeDef[defName="Raider"]</xpath>
+							<value>
+								<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+									<associatedPreferredTraits>
+										<li>Bloodlust</li>
+										<li>Psychopath</li>
+										<li>Abrasive</li>
+										<li>Brawler</li>
+										<li>Tough</li>
+									</associatedPreferredTraits>
+									<associatedDisapprovedTraits>
+										<li>Kind</li>
+										<li>Wimp</li>
+										<li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
+									</associatedDisapprovedTraits>
+								</li>
+							</value>
+						</li>
+						<li Class="PatchOperationAddModExtension">
+							<xpath>*/MemeDef[defName="Blindsight"]</xpath>
+							<value>
+								<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+									<associatedPreferredTraits>
+										<PsychicSensitivity>2</PsychicSensitivity>
+										<PsychicSensitivity>1</PsychicSensitivity>
+									</associatedPreferredTraits>
+								</li>
+							</value>
+						</li>
+						<li Class="PatchOperationAddModExtension">
+							<xpath>*/MemeDef[defName="Darkness"]</xpath>
+							<value>
+								<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+									<associatedPreferredTraits>
+										<li>NightOwl</li>
+									</associatedPreferredTraits>
+								</li>
+							</value>
+						</li>
+						<li Class="PatchOperationAddModExtension">
+							<xpath>*/MemeDef[defName="Tunneler"]</xpath>
+							<value>
+								<li Class="IdeologyVirtues.DefModExtension_MemeDefVirtues">
+									<associatedPreferredTraits>
+										<li>Undergrounder</li>
+									</associatedPreferredTraits>
+								</li>
+							</value>
+						</li>
+					</operations>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

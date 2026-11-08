@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Apparel_PackHunter"]</xpath>
+		<value>
+            <recipeMaker DeepReplace="True" Inherit="False">
+                <workSpeedStat>SmithingSpeed</workSpeedStat>
+                <workSkill>Crafting</workSkill>
+                <effectWorking>Smith</effectWorking>
+                <soundWorking>Recipe_Machining</soundWorking>
+                <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+                <researchPrerequisite>HunterDrones</researchPrerequisite>
+                <skillRequirements>
+                    <Crafting>8</Crafting>
+                </skillRequirements>
+                <recipeUsers>
+                    <li>TableElectronics</li>
+                </recipeUsers>
+            </recipeMaker>
+			<stuffCategories>
+				<li>StrongMetallic</li>
+			</stuffCategories>
+			<costStuffCount>150</costStuffCount>
+			<costList>
+				<Weapon_Parts>5</Weapon_Parts>
+				<Electronics>5</Electronics>
+				<ComponentIndustrial>4</ComponentIndustrial>
+				<Mechanism>3</Mechanism>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Apparel_VacsuitHelmet"]</xpath>
+		<value>
+            <thingCategories Inherit="False">
+                <li>SpecialHelmetsCat</li>
+            </thingCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Apparel_Vacsuit"]</xpath>
+		<value>
+            <thingCategories Inherit="False">
+                <li>SpecialApparelCat</li>
+            </thingCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Apparel_VacsuitChildren"]</xpath>
+		<value>
+            <thingCategories Inherit="False">
+                <li>SpecialApparelCat</li>
+                <li>KidsApparel</li>
+            </thingCategories>
+		</value>
+	</Operation>
+
+</Patch>

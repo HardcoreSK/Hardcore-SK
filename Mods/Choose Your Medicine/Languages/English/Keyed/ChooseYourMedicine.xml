@@ -2,42 +2,81 @@
 <LanguageData>
 
 <!-- main tab gui -->
-	<Kopp_CYM_PasteRowInList>This will replace every entry in the list with the one you copied. Are you sure you want to do that?</Kopp_CYM_PasteRowInList>
+	<Kopp_CYM_PasteConfirmation>The clipboard contains a {0} and you are going to paste it into a {1}.\n\nAre you sure you want to do that?</Kopp_CYM_PasteConfirmation>
+	<Kopp_CYM_Stage>Stage</Kopp_CYM_Stage>
+	<Kopp_CYM_Row>Row</Kopp_CYM_Row>
+	<Kopp_CYM_Column>Column</Kopp_CYM_Column>
+	<Kopp_CYM_Page>Page</Kopp_CYM_Page>
 	<Kopp_CYM_DefaultSettingsOneTab>Only this page</Kopp_CYM_DefaultSettingsOneTab>
 	<Kopp_CYM_DefaultSettingsAllTabs>All pages</Kopp_CYM_DefaultSettingsAllTabs>
+	<Kopp_CYM_DefaultSettingsAllTabsAndOperations>All pages and operations</Kopp_CYM_DefaultSettingsAllTabsAndOperations>
 	<Kopp_CYM_ConfirmationOneTab>Are you sure you want to set the settings of this page back to default?</Kopp_CYM_ConfirmationOneTab>
-	<Kopp_CYM_ConfirmationAllTabs>Are you sure you want to set the settings of all pages back to default?\nIf new hediffs are found, they will be added, old ones will be removed.</Kopp_CYM_ConfirmationAllTabs>
+	<Kopp_CYM_ConfirmationAllTabs>Are you sure you want to set the settings of all pages back to default?</Kopp_CYM_ConfirmationAllTabs>
+	<Kopp_CYM_ConfirmationAllTabsAndOperations>Are you sure you want to set the settings of all pages back to default?\nThis includes the settings for operations as well.\nIf new hediffs are found, they will be added, old ones will be removed.</Kopp_CYM_ConfirmationAllTabsAndOperations>
 
 	<Kopp_CYM_RowEasyLabel>Not urgent</Kopp_CYM_RowEasyLabel>
-	<Kopp_CYM_RowEasyTooltip>If the immunity is ahead of the severity level by at least the value you specify, this type of medicine is chosen.</Kopp_CYM_RowEasyTooltip>
+	<Kopp_CYM_RowEasyTooltip>Severity and Immunity:\nIf the immunity is ahead of the severity level by at least the value you specify, this type of medicine is chosen.\n\nSeverity and NOT Immunity:\nIf severity is below the set value, this type of medicine is chosen.\n\nNOT Severity and Immunity:\nIf immunity is ahead of the set value, this type of medicine is chosen.\n\nThis is the third condition to be checked.</Kopp_CYM_RowEasyTooltip>
 
-	<Kopp_CYM_RowStandardLabel>Standard</Kopp_CYM_RowStandardLabel>
-	<Kopp_CYM_RowStandardTooltip>First, it is checked whether the medicine for 'immunity &lt;' should be used.\nThen, it is checked whether the medicine for 'acute' should be used.\nThen whether the one for 'not urgent' should be used.\nIf none fits, this medicine is used.</Kopp_CYM_RowStandardTooltip>
+	<Kopp_CYM_RowStandardLabel>Default</Kopp_CYM_RowStandardLabel>
+	<Kopp_CYM_RowStandardTooltip>If none of the previous statements apply, this type of medicine is chosen.</Kopp_CYM_RowStandardTooltip>
 
 	<Kopp_CYM_RowProblematicLabel>Acute</Kopp_CYM_RowProblematicLabel>
-	<Kopp_CYM_RowProblematicTooltip>If immunity is ahead of severity by the amount you specify or less, this type of medicine is chosen.</Kopp_CYM_RowProblematicTooltip>
+	<Kopp_CYM_RowProblematicTooltip>Severity and Immunity:\nIf immunity is ahead of severity by the amount you specify or less, this type of medicine is chosen.\n\nSeverity and NOT Immunity:\nIf severity is greater than the set value, this type of medicine is chosen.\n\nNOT Severity and Immunity:\nIf immunity is below the set value, this type of medicine is chosen.\n\nThis is the second condition to be checked.</Kopp_CYM_RowProblematicTooltip>
 
-	<Kopp_CYM_RowImmunityLabel>Immunity &lt;</Kopp_CYM_RowImmunityLabel>
-	<Kopp_CYM_RowImmunityTooltip>If the immunity is lower than the set value, this medicine is used. Without this option every new hediff (with immunity/severity) gets probably tended with the medicine for 'acute'.</Kopp_CYM_RowImmunityTooltip>
+	<Kopp_CYM_RowImmunityLabel>Immunity lower</Kopp_CYM_RowImmunityLabel>
+	<Kopp_CYM_RowImmunityTooltip>If the immunity is lower than the set value, this type of medicine is chosen. Without this option every new hediff of this group gets probably tended with the medicine for 'acute'.\n\nThis is the first condition to be checked.</Kopp_CYM_RowImmunityTooltip>
+
+	<Kopp_CYM_RowSeverityLowerLabel>Severity lower</Kopp_CYM_RowSeverityLowerLabel>
+	<Kopp_CYM_RowSeverityLowerTooltip>Severity and NOT Immunity:\nIf the severity is lower than the set value, this type of medicine is chosen. Without this option every new hediff of this group gets probably tended with the medicine for 'acute'.\nThis is the first condition to be checked.\n\nTotal Tend Quality:\nOnly applies to hediffs that have total tend quality and severity:\nIf the severity is below the set value, this type of medicine is chosen.\nThis is the third condition to be checked.</Kopp_CYM_RowSeverityLowerTooltip>
+	<Kopp_CYM_RowSeverityGreaterLabel>Severity greater</Kopp_CYM_RowSeverityGreaterLabel>
+	<Kopp_CYM_RowSeverityGreaterTooltip>Only applies to hediffs that have total tend quality and severity:\nIf the severity is greater than the set value, this type of medicine is chosen.\n\nThis is the second condition to be checked.</Kopp_CYM_RowSeverityGreaterTooltip>
+	
+	<Kopp_CYM_TotalTendQuality>Total Tend Quality</Kopp_CYM_TotalTendQuality>
+	<Kopp_CYM_RowTotalTendLowerLabel>Total Tend Quality lower</Kopp_CYM_RowTotalTendLowerLabel>
+	<Kopp_CYM_RowTotalTendLowerTooltip>If the total tend quality is lower than the set value, this type of medicine is chosen. Without this option every new hediff of this group gets probably tended with the medicine for 'standard'.\n\nThis is the first condition to be checked.</Kopp_CYM_RowTotalTendLowerTooltip>
+
+	<Kopp_CYM_RowBodyPartDamagedGreaterLabel>Bodypart damaged greater</Kopp_CYM_RowBodyPartDamagedGreaterLabel>
+	<Kopp_CYM_RowBodyPartDamagedGreaterTooltip>If the bodypart the hediff is applied to is more damaged than the set value, this type of medicine is chosen.\n\nThis is the first condition to be checked.</Kopp_CYM_RowBodyPartDamagedGreaterTooltip>
+	<Kopp_CYM_RowBodyPartDamagedLowerLabel>Bodypart damaged lower</Kopp_CYM_RowBodyPartDamagedLowerLabel>
+	<Kopp_CYM_RowBodyPartDamagedLowerTooltip>If the bodypart the hediff is applied to is less damaged than the set value, this type of medicine is chosen.\nFor most hediffs in this category, except bleeding ones, you probably will set "no medicine" or even 'no care'.\n\nThis is the third condition to be checked.</Kopp_CYM_RowBodyPartDamagedLowerTooltip>
+
+	<Kopp_CYM_RowBodyDamagedGreaterLabel>Body damaged greater</Kopp_CYM_RowBodyDamagedGreaterLabel>
+	<Kopp_CYM_RowBodyDamagedGreaterTooltip>If the whole body is more damaged than the set value, this type of medicine is chosen.\n\nThis is the second condition to be checked.</Kopp_CYM_RowBodyDamagedGreaterTooltip>
+
+	<Kopp_CYM_Severity>Severity</Kopp_CYM_Severity>
+	<Kopp_CYM_Immunity>Immunity</Kopp_CYM_Immunity>
+	<Kopp_CYM_AndSymbol>&amp;</Kopp_CYM_AndSymbol>
+
+	<Kopp_CYM_GroupsTooltip>Hediffs are grouped by whether they use immunity/severity/total tend quality.\n\n\nA few notes about healing/tending:
+\nThe type of a medicine is not a factor in the calculation how long a doctor needs to tend a hediff. That means better medicines does not make tending take less time.\n\nBatch tending happens with every medicine type.\n\nIn vanilla the healing of wounds/bodyparts works as following: Every X ticks a certain amount of damage gets restored. The amount depends on a few factors, e.g. wound tended, patient in bed, tend quality and so on. But no matter if a patient has 10 hediffs each causing 1 damage or one hediff causing 10 damage, the time needed to be fully healed is the same (as long as the circumstances are the same).</Kopp_CYM_GroupsTooltip>
 
 	<Kopp_CYM_Copy>Copy</Kopp_CYM_Copy>
 	<Kopp_CYM_Paste>Paste</Kopp_CYM_Paste>
+
+	<Kopp_CYM_CopyAcronym>C</Kopp_CYM_CopyAcronym>
+	<Kopp_CYM_PasteAcroynm>P</Kopp_CYM_PasteAcroynm>
 
 	<Kopp_CYM_CopyWholePage>Copy whole page</Kopp_CYM_CopyWholePage>
 	<Kopp_CYM_PasteIntoThisPage>Paste into this page</Kopp_CYM_PasteIntoThisPage>
 	<Kopp_CYM_DefaultSettings>Default settings</Kopp_CYM_DefaultSettings>
 	<Kopp_CYM_UpdateList>Update hediff list</Kopp_CYM_UpdateList>
-	<Kopp_CYM_UpdateListFeedback>Removed {0} hediffs. Added {1} hediffs.</Kopp_CYM_UpdateListFeedback>
+	<Kopp_CYM_UpdateListFeedback>Removed {0} hediffs. Added {1} hediffs. See debug log for details.</Kopp_CYM_UpdateListFeedback>
 
 	<Kopp_CYM_ListNameColonist>Colonists</Kopp_CYM_ListNameColonist>
-	<Kopp_CYM_ListNameImprisonedColonist>Imprisoned colonists</Kopp_CYM_ListNameImprisonedColonist>
-	<Kopp_CYM_ListNameEnslavedColonist>Enslaved colonists</Kopp_CYM_ListNameEnslavedColonist>
-	<Kopp_CYM_ListNameColonyAnimal>Colony animals</Kopp_CYM_ListNameColonyAnimal>
-	<Kopp_CYM_ListNameNeutralAnimal>Neutral animals</Kopp_CYM_ListNameNeutralAnimal>
+	<Kopp_CYM_ListNameImprisonedColonist>Prisoners</Kopp_CYM_ListNameImprisonedColonist>
+	<Kopp_CYM_ListNameEnslavedColonist>Slaves</Kopp_CYM_ListNameEnslavedColonist>
+	<Kopp_CYM_ListNameColonyAnimal>Tamed animals</Kopp_CYM_ListNameColonyAnimal>
+	<Kopp_CYM_ListNameNeutralAnimal>Wildlife</Kopp_CYM_ListNameNeutralAnimal>
 	<Kopp_CYM_ListNameNeutralFaction>Neutral factions</Kopp_CYM_ListNameNeutralFaction>
 	<Kopp_CYM_ListNameHostileFaction>Hostile factions</Kopp_CYM_ListNameHostileFaction>
+	<Kopp_CYM_ListNameGhouls>Ghouls</Kopp_CYM_ListNameGhouls>
+	<Kopp_CYM_ListNameFriendlyFaction>Friendly factions</Kopp_CYM_ListNameFriendlyFaction>
+	<Kopp_CYM_ListNameOtherHumans>Other humans</Kopp_CYM_ListNameOtherHumans>
+	<Kopp_CYM_ListNameEntities>Entities</Kopp_CYM_ListNameEntities>
 
-	<Kopp_CYM_ShowHelper>Help</Kopp_CYM_ShowHelper>
+	<Kopp_CYM_DetailedSettings>Detailed settings:\n\nDisabled:\nSet a medical care category for a stage.\nThe healer will try to use that medicine, if it is not available, a worse one and so on (like vanilla).\nIt is also possible to set 'no medical care'.\n\nActive:\nSet a list of medicines for a stage.\nUse drag dropping to change the order of the medicines. Use right click to remove a medicine.\nThe Healer will try to use the first listed medicine, if not available, the second one and so on.\nIf none of the medicines in the list is available, the doctor will tend without medicine.\nIt is not possible to add 'no medical care' to the list.</Kopp_CYM_DetailedSettings>
+
+	<!-- <Kopp_CYM_ShowHelper>Help</Kopp_CYM_ShowHelper> -->
 
 	<Kopp_CYM_ShowHidden>Hide/Unveil</Kopp_CYM_ShowHidden>
 	<Kopp_CYM_Hide>Hide</Kopp_CYM_Hide>
@@ -45,18 +84,19 @@
 
 	<Kopp_CYM_Operations>Operations</Kopp_CYM_Operations>
 
-	<Kopp_CYM_ImprisonedColonistsTooltip>Imprisoned colonists are NOT all prisoners, but just the ones of your own faction.\n\nTo set the medicine for other prisoners, use the 'neutral' and 'hostile factions' tab/row.</Kopp_CYM_ImprisonedColonistsTooltip>
+	<!-- <Kopp_CYM_ImprisonedColonistsTooltip>Imprisoned colonists are NOT all prisoners, but just the ones of your own faction.\n\nTo set the medicine for other prisoners, use the 'neutral' and 'hostile factions' tab/row.</Kopp_CYM_ImprisonedColonistsTooltip> -->
 
+	<Kopp_CYM_ModOptions>Mod options</Kopp_CYM_ModOptions>
 
 <!-- main tab gui helper -->
-	<Kopp_CYM_HelperWhichMedicine1>1: The way how the mod decides which medicine to use to tend a hediff is quite simple:\nFirst, the mod checks if a medicine has been manually assigned to a pawns instance of a hediff. This can be done in the pawns health tab by clicking on the lowly visible button which is added for every tendable hediff. This will ignore the pawns settings. If no medicine is manually assigned, the settings in this gui come into play and we jump to (2).\nNote that if the gui settings select a better medicine than what the pawn allows, the best medicine the pawn allows is used.</Kopp_CYM_HelperWhichMedicine1>
-	<Kopp_CYM_HelperWhichMedicine2>2: If the immunity is lower than the set value, this medicine is used. This should be useful for the first tend(s) where we are not sure how things will turn out.\n\nExample: Immunity is at 15%, the slider is set to 20%. So the immunity is lower than the set value, the statement is true and this medicine is used. If the slider is set to 10%, the statement is false and we jump to (3).</Kopp_CYM_HelperWhichMedicine2>
-	<Kopp_CYM_HelperWhichMedicine3>3: If the immunity exceeds severity by less than the specified value (or not at all), this kind of medicine gets used.\n\nExample: Immunity is at 50%, severity is at 46%. So the immunity is 4% ahead of the severity. If the slider is set to 5%, the statement is true and this medicine gets used. If the slider is set to 3%, the statement is false and we jump to (4).</Kopp_CYM_HelperWhichMedicine3>
-	<Kopp_CYM_HelperWhichMedicine4>4: If the immunity is ahead of the severity by at least the set value, this kind of medicine gets used.\n\nExample: Immunity is at 40%, severity is at 15%. So the immunity is 25% ahead of the severity. If the slider is set to 10%, the statement is true and this medicine gets used. If the slider is set to 30%, the statement is false and we jump to (5).</Kopp_CYM_HelperWhichMedicine4>
-	<Kopp_CYM_HelperWhichMedicine5>5: If none of the previous statements were true, this medicine gets used.\n\nSome hediffs only have this option though: The ones that do not have a comp immunizable.</Kopp_CYM_HelperWhichMedicine5>
-	<Kopp_CYM_HelperCopyPaste>You can copy a page, a column or a entry. Each of them can be pasted into another. E.g. you can copy a column and paste it into a row. Note that copying does not actually copy the content, but only saves which page/column/entry to copy. So if you copy, change and then paste something, the changes will also be pasted.</Kopp_CYM_HelperCopyPaste>
-	<Kopp_CYM_HelperLeftButtons>If you click 'default settings' a dropdown menu will appear where you can select 'this page' or 'all pages'.\n\nThe 'update hediff list' is needed if you have added or removed mods that included tendable hediffs.\n\nThe operations button opens a new gui where you can specify the medicine for operations and one or two other options.</Kopp_CYM_HelperLeftButtons>
-	<Kopp_CYM_HelperLabels>Some hediffs have the same label. If you hover over the label, you can see the defName. As it is impossible to know which hediff can affect which kind of pawn, each list contains every tendable hediff.\nYou can hide entries from the list by clicking on its label, then 'hide'. In this way, a list can be freed from unnecessary entries.</Kopp_CYM_HelperLabels>
+	<!-- <Kopp_CYM_HelperWhichMedicine1>1: The way how the mod decides which medicine to use to tend a hediff is quite simple:\nFirst, the mod checks if a medicine has been manually assigned to a pawns instance of a hediff. This can be done in the pawns health tab by clicking on the lowly visible button which is added for every tendable hediff. This will ignore the pawns settings. If no medicine is manually assigned, the settings in this gui come into play and we jump to (2).\nNote that if the gui settings select a better medicine than what the pawn allows, the best medicine the pawn allows is used.</Kopp_CYM_HelperWhichMedicine1> -->
+	<!-- <Kopp_CYM_HelperWhichMedicine2>2: If the immunity is lower than the set value, this medicine is used. This should be useful for the first tend(s) where we are not sure how things will turn out.\n\nExample: Immunity is at 15%, the slider is set to 20%. So the immunity is lower than the set value, the statement is true and this medicine is used. If the slider is set to 10%, the statement is false and we jump to (3).</Kopp_CYM_HelperWhichMedicine2> -->
+	<!-- <Kopp_CYM_HelperWhichMedicine3>3: If the immunity exceeds severity by less than the specified value (or not at all), this kind of medicine gets used.\n\nExample: Immunity is at 50%, severity is at 46%. So the immunity is 4% ahead of the severity. If the slider is set to 5%, the statement is true and this medicine gets used. If the slider is set to 3%, the statement is false and we jump to (4).</Kopp_CYM_HelperWhichMedicine3> -->
+	<!-- <Kopp_CYM_HelperWhichMedicine4>4: If the immunity is ahead of the severity by at least the set value, this kind of medicine gets used.\n\nExample: Immunity is at 40%, severity is at 15%. So the immunity is 25% ahead of the severity. If the slider is set to 10%, the statement is true and this medicine gets used. If the slider is set to 30%, the statement is false and we jump to (5).</Kopp_CYM_HelperWhichMedicine4> -->
+	<!-- <Kopp_CYM_HelperWhichMedicine5>5: If none of the previous statements were true, this medicine gets used.\n\nSome hediffs only have this option though: The ones that do not have a comp immunizable.</Kopp_CYM_HelperWhichMedicine5> -->
+	<!-- <Kopp_CYM_HelperCopyPaste>You can copy a page, a column or a entry. Each of them can be pasted into another. E.g. you can copy a column and paste it into a row. Note that copying does not actually copy the content, but only saves which page/column/entry to copy. So if you copy, change and then paste something, the changes will also be pasted.</Kopp_CYM_HelperCopyPaste> -->
+	<!-- <Kopp_CYM_HelperLeftButtons>If you click 'default settings' a dropdown menu will appear where you can select 'this page' or 'all pages'.\n\nThe 'update hediff list' is needed if you have added or removed mods that included tendable hediffs.\n\nThe operations button opens a new gui where you can specify the medicine for operations and one or two other options.</Kopp_CYM_HelperLeftButtons> -->
+	<!-- <Kopp_CYM_HelperLabels>Some hediffs have the same label. If you hover over the label, you can see the defName. As it is impossible to know which hediff can affect which kind of pawn, each list contains every tendable hediff.\nYou can hide entries from the list by clicking on its label, then 'hide'. In this way, a list can be freed from unnecessary entries.</Kopp_CYM_HelperLabels> -->
 
 
 <!-- pawns health tab -->
@@ -85,6 +125,11 @@
 	<Kopp_CYM_AmountMedicineCarryTooltip>In vanilla a colonist is allowed to carry 3 medicines of a certain type.\nUse this setting to adjust the amount to your likings.\n\nNOTE: I only did a quick test if it is working without issues for extreme numbers.</Kopp_CYM_AmountMedicineCarryTooltip>
 	<Kopp_CYM_TendingsSearchRange>Search range for medicine when tending: </Kopp_CYM_TendingsSearchRange>
 	<Kopp_CYM_TendingsSearchRangeTooltip>Set the range a doctor will look for medicines when tending a patient.\n\nThe starting point is the position of the patient.\n\nSet to '-1' to search the whole map (vanilla).</Kopp_CYM_TendingsSearchRangeTooltip>
+	<Kopp_CYM_AlwaysOpenNewWindowForDetailedMeds>Always open a new window when clicking the medicine row of a hediff stage in the detailed view in the mods main gui:</Kopp_CYM_AlwaysOpenNewWindowForDetailedMeds>
+	<Kopp_CYM_AlwaysOpenNewWindowForDetailedMedsTooltip>If set to false, the new window only opens if necessary - if there is too many medicine types which makes drag dropping difficult.</Kopp_CYM_AlwaysOpenNewWindowForDetailedMedsTooltip>
+	<Kopp_CYM_AlwaysShowCopyPasteForEachHediffStage>Always show the copy/paste buttons for each stage of a hediff:</Kopp_CYM_AlwaysShowCopyPasteForEachHediffStage>
+	<Kopp_CYM_AlwaysShowCopyPasteForEachHediffStageTooltip>If set to false, the buttons are only shown for a single hediff stage while the mouse is close to it.</Kopp_CYM_AlwaysShowCopyPasteForEachHediffStageTooltip>
+	<Kopp_CYM_DetailedViewSizeOfNewWindow>Set the scale of the window and icons when clicking on the row of medicines in the detailed view opens a new window: </Kopp_CYM_DetailedViewSizeOfNewWindow>
 	<Kopp_CYM_ChooseYourMedicine>Choose Your Medicine</Kopp_CYM_ChooseYourMedicine>
 
 	</LanguageData>

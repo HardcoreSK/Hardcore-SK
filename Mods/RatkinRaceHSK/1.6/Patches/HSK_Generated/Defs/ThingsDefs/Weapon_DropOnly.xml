@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<!-- Overrides for 1.6\Defs\ThingsDefs\Weapon_DropOnly.xml -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/DamageDef[defName="DemoBomb"]</xpath>
+		<value>
+			<workerClass>DamageWorker_AddInjury</workerClass>
+			<externalViolence>true</externalViolence>
+			<isExplosive>true</isExplosive>
+			<deathMessage>{0} has died in an explosion.</deathMessage>
+			<hediff>Shredded</hediff>
+			<hediffSolid>Crack</hediffSolid>
+			<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+			<impactSoundType>Blunt</impactSoundType>
+			<armorCategory>Sharp</armorCategory>
+			<minDamageToFragment>15</minDamageToFragment>
+			<defaultDamage>25</defaultDamage>
+			<defaultStoppingPower>1</defaultStoppingPower>
+			<defaultArmorPenetration>0.60</defaultArmorPenetration>
+			<buildingDamageFactor>4</buildingDamageFactor>
+			<plantDamageFactor>4</plantDamageFactor>
+			<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+			<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+			<explosionCellFleck>BlastDry</explosionCellFleck>
+			<explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+			<explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+			<soundExplosion>Explosion_Bomb</soundExplosion>
+			<combatLogRules>Damage_Bomb</combatLogRules>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ManeuverDef[defName="RK_MeleeExplosion"]</xpath>
+		<value>
+			<requiredCapacity>RK_ToolCapacity_MeleeExplosion</requiredCapacity>
+			<verb>
+				<verbClass>NewRatkin.Verb_MeleeExplosion</verbClass>
+				<meleeDamageDef>DemoBomb</meleeDamageDef>
+			</verb>
+			<logEntryDef>MeleeAttack</logEntryDef>
+			<combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+			<combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+			<combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+			<combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RK_MagicWand"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Weapon/RK_Cleaner</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<tickerType>Normal</tickerType>
+			<techLevel>Industrial</techLevel>
+			<weaponTags Inherit="false">
+				<li>RK_Demoman</li>
+				<li>CE_OneHandedWeapon</li>
+			</weaponTags>
+			<costList>
+				<WoodLog>5</WoodLog>
+				<FSX>1</FSX>
+			</costList>
+			<statBases>
+				<WorkToMake>6000</WorkToMake>
+				<Mass>2</Mass>
+				<Bulk>3</Bulk>
+			</statBases>
+			<equippedStatOffsets>
+				<MeleeHitChance>5</MeleeHitChance>
+				<MeleeCritChance>0</MeleeCritChance>
+				<MeleeParryChance>0</MeleeParryChance>
+				<MeleeDodgeChance>0.1</MeleeDodgeChance>
+				<Suppressability>-0.5</Suppressability>
+			</equippedStatOffsets>
+			<equippedAngleOffset>-55</equippedAngleOffset>
+			<comps>
+				<li Class="CompProperties_Explosive">
+					<explosiveRadius>2</explosiveRadius>
+					<explosiveDamageType>DemoBomb</explosiveDamageType>
+				</li>
+			</comps>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>RK_ToolCapacity_MeleeExplosion</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>1.5</cooldownTime>
+					<chanceFactor>2</chanceFactor>
+					<armorPenetrationSharp>5.3</armorPenetrationSharp>
+					<armorPenetrationBlunt>11.8</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>edge</label>
+					<capacities>
+						<li>RK_ToolCapacity_MeleeExplosion</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>1.5</cooldownTime>
+					<chanceFactor>2</chanceFactor>
+					<armorPenetrationSharp>5.3</armorPenetrationSharp>
+					<armorPenetrationBlunt>11.8</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+				</li>
+			</tools>
+			<tradeability>Sellable</tradeability>
+			<recipeMaker Inherit="false">
+		</recipeMaker>
+			<thingCategories Inherit="false">
+				<li>RKMeleeWeapon</li>
+			</thingCategories>
+		</value>
+	</Operation>
+</Patch>

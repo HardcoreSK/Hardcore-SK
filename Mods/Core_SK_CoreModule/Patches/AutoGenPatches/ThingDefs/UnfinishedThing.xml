@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[@Name="UnfinishedBase"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<Beauty>-4</Beauty>
+				<Mass>1</Mass>
+			</statBases>
+			<pathCost>15</pathCost>
+		</value>
+	</Operation>
+
+	<!-- <Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="UnfinishedMusicalInstrument" or defName="UnfinishedSculpture" or defName="UnfinishedGun" or defName="UnfinishedWeapon" or defName="UnfinishedTechArmor" or defName="UnfinishedArmor" or defName="UnfinishedApparel" or defName="UnfinishedBelt" or defName="UnfinishedPack" or defName="UnfinishedComponent" or defName="UnfinishedHealthItemProsthetic" or defName="UnfinishedHealthItemBionic" or defName="UnfinishedMask" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_UnfinishedBaseDummy</value>
+	</Operation> -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="UnfinishedSculpture"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+				<li>Precious</li>
+				<li>Woody</li>
+				<li>Stony</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+	<!-- 	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="UnfinishedWeapon"]</xpath>
+		<value>
+			<label>Unfinished weapon</label>
+		</value>
+	</Operation> -->
+	<!-- 	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="UnfinishedTechArmor"]</xpath>
+		<value>
+			<label>unfinished hitech armor</label>
+			<description>An unfinished piece of armor.</description>
+		</value>
+	</Operation> -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="UnfinishedArmor"]</xpath>
+		<value>
+			<stuffCategories Merge="True">
+				<li>Fabric</li>
+				<li>Leathery</li>
+				<li>Metallic</li>
+				<li>HF</li>
+			</stuffCategories>
+			<comps>
+				<li>
+					<compClass>CompColorable</compClass>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="UnfinishedApparel"]</xpath>
+		<value>
+			<stuffCategories Merge="True">
+				<li>Fabric</li>
+				<li>Leathery</li>
+				<li>Metallic</li>
+				<li>HF</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="UnfinishedHealthItemProsthetic"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/Unfinished/UnfinishedHealthItem</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<color>(189,169,118)</color>
+			</graphicData>
+		</value>
+	</Operation>
+</Patch>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- remove unused immunizable comp, add severity per day instead -->
+    <Operation Class="RimatomicsPlusPlus.PatchOperationUnlessDisabledInSettings">
+        <settingsKey>FatalRad</settingsKey>
+        <value Class="PatchOperationReplace">
+            <xpath>Defs/HediffDef[defName="FatalRad"]/comps</xpath>
+            <value>
+                <comps>
+                    <li Class="HediffCompProperties_SeverityPerDay">
+                        <severityPerDay>0.4</severityPerDay>
+                    </li>
+                </comps>
+            </value>
+        </value>
+    </Operation>
+
+    <!-- stages rename -->
+    <Operation Class="RimatomicsPlusPlus.PatchOperationUnlessDisabledInSettings">
+        <settingsKey>FatalRad</settingsKey>
+        <value Class="PatchOperationRemove">
+            <xpath>Defs/HediffDef[defName="FatalRad"]/stages/li/label</xpath>
+        </value>
+    </Operation>
+</Patch>

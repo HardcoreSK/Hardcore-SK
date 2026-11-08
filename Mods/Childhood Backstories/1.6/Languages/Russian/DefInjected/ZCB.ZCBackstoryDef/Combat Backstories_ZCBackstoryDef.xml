@@ -1,0 +1,36 @@
+<LanguageData>
+	<!-- 1.6\Defs\Outlander\Combat Backstories.xml -->
+	<!-- EN: child soldier -->
+	<ZCB_ChildSoldier.title>юный солдат</ZCB_ChildSoldier.title>
+	<!-- EN: soldier -->
+	<ZCB_ChildSoldier.titleShort>солдат</ZCB_ChildSoldier.titleShort>
+	<!-- EN: [PAWN_nameDef] was exposed to the harsh realities of battle at a young age. 
+\n[PAWN_pronoun] is skilled in combat, but the trauma has stunted [PAWN_possessive] social skills. -->
+	<ZCB_ChildSoldier.baseDesc>{PAWN_nameDef} ещё в юном возрасте {PAWN_gender ? познакомился : познакомилась} с суровыми реалиями сражений.\n{PAWN_pronoun} {PAWN_gender ? искусен : искусна} в бою, но травма затормозила {PAWN_possessive} социальные навыки.</ZCB_ChildSoldier.baseDesc>
+	<!-- EN: KillsHumanlikes -->
+	<ZCB_ChildSoldier.requiredRecords.0.name>KillsHumanlikes</ZCB_ChildSoldier.requiredRecords.0.name>
+	<!-- EN: PrisonersChatted -->
+	<ZCB_ChildSoldier.requiredRecords.1.name>PrisonersChatted</ZCB_ChildSoldier.requiredRecords.1.name>
+	
+	<!-- EN: child sniper -->
+	<ZCB_ChildSniper.title>юный снайпер</ZCB_ChildSniper.title>
+	<!-- EN: sniper -->
+	<ZCB_ChildSniper.titleShort>снайпер</ZCB_ChildSniper.titleShort>
+	<!-- EN: [PAWN_nameDef] grew up practicing with all manner of ranged weapons. -->
+	<ZCB_ChildSniper.baseDesc>{PAWN_nameDef} {PAWN_gender ? вырос : выросла}, тренируясь со всеми видами дальнобойного оружия.</ZCB_ChildSniper.baseDesc>
+	<!-- EN: ShotsFired -->
+	<ZCB_ChildSniper.requiredRecords.0.name>ShotsFired</ZCB_ChildSniper.requiredRecords.0.name>
+	<!-- EN: Shooting -->
+	<ZCB_ChildSniper.requiredSkills.0.name>Shooting</ZCB_ChildSniper.requiredSkills.0.name>
+	
+	<!-- EN: child supersoldier -->
+	<ZCB_ChildSuperSoldier.title>юный суперсолдат</ZCB_ChildSuperSoldier.title>
+	<!-- EN: soldier -->
+	<ZCB_ChildSuperSoldier.titleShort>солдат</ZCB_ChildSuperSoldier.titleShort>
+	<!-- EN: [PAWN_nameDef] grew up on the battlefield. All [PAWN_pronoun] knows is combat. -->
+	<ZCB_ChildSuperSoldier.baseDesc>{PAWN_nameDef} {PAWN_gender ? вырос : выросла} на поле боя. Всё, что {PAWN_pronoun} знает ― это бой.</ZCB_ChildSuperSoldier.baseDesc>
+	<!-- EN: KillsHumanlikes -->
+	<ZCB_ChildSuperSoldier.requiredRecords.0.name>KillsHumanlikes</ZCB_ChildSuperSoldier.requiredRecords.0.name>
+	<!-- EN: ShotsFired -->
+	<ZCB_ChildSuperSoldier.requiredRecords.1.name>ShotsFired</ZCB_ChildSuperSoldier.requiredRecords.1.name>
+</LanguageData>

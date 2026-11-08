@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Stargate.AddColonistLabel>Загрузить поселенца</Stargate.AddColonistLabel>
+  <Stargate.AddColonistDesc>Выбрать ближайшего поселенца и поместить его в буфер Звёздных врат.</Stargate.AddColonistDesc>
+  <Stargate.DialOutLabel>Отправить</Stargate.DialOutLabel>
+  <Stargate.DialOutDesc>Опубликовать перемещение поселенцев для их вызова в другом сохранении.</Stargate.DialOutDesc>
+  <Stargate.RecallLabel>Принять</Stargate.RecallLabel>
+  <Stargate.RecallDesc>Принять ожидающее перемещение в это сохранение.</Stargate.RecallDesc>
+  <Stargate.IncreasePowerLabel>Увеличить скорость зарядки</Stargate.IncreasePowerLabel>
+  <Stargate.IncreasePowerDesc>Увеличить потребление энергии, чтобы быстрее зарядить Звёздные врата.</Stargate.IncreasePowerDesc>
+  <Stargate.DecreasePowerLabel>Уменьшить скорость зарядки</Stargate.DecreasePowerLabel>
+  <Stargate.DecreasePowerDesc>Уменьшить скорость зарядки и потребление энергии.</Stargate.DecreasePowerDesc>
+  <Stargate.DevFillCapacitorLabel>РАЗР.: зарядить конденсатор врат</Stargate.DevFillCapacitorLabel>
+  <Stargate.DevFillCapacitorDesc>Мгновенно зарядить конденсатор Звёздных врат до заданной ёмкости.</Stargate.DevFillCapacitorDesc>
+
+  <Stargate.MissingCapacitor>У Звёздных врат отсутствует компонент конденсатора.</Stargate.MissingCapacitor>
+  <Stargate.MaximumChargingRate>Уже выбрана максимальная скорость зарядки.</Stargate.MaximumChargingRate>
+  <Stargate.MinimumChargingRate>Скорость зарядки уже равна нулю.</Stargate.MinimumChargingRate>
+  <Stargate.CapacitorAlreadyFull>Конденсатор уже полностью заряжен.</Stargate.CapacitorAlreadyFull>
+  <Stargate.InsufficientConnectionCharge>Недостаточно заряда для установки соединения.</Stargate.InsufficientConnectionCharge>
+  <Stargate.NoPawn>В Звёздные врата не загружены поселенцы.</Stargate.NoPawn>
+  <Stargate.NoPawnNearby>Рядом со Звёздными вратами нет подходящих поселенцев игрока.</Stargate.NoPawnNearby>
+  <Stargate.ChannelOccupied>Канал перемещения занят. Сначала примите или архивируйте существующее перемещение.</Stargate.ChannelOccupied>
+  <Stargate.NoInboundTransfer>Входящее перемещение через Звёздные врата не найдено.</Stargate.NoInboundTransfer>
+  <Stargate.InvalidTransfer>Недопустимое перемещение через Звёздные врата: {0}</Stargate.InvalidTransfer>
+  <Stargate.SourceLedgerMissing>В текущем сохранении отсутствует журнал перемещений Звёздных врат.</Stargate.SourceLedgerMissing>
+  <Stargate.DestinationLedgerMissing>В целевом сохранении отсутствует журнал перемещений Звёздных врат.</Stargate.DestinationLedgerMissing>
+  <Stargate.TransferPublished>Перемещение опубликовано. Теперь поселенцев можно принять другими Звёздными вратами.</Stargate.TransferPublished>
+  <Stargate.RecallSucceeded>Перемещение через Звёздные врата успешно завершено.</Stargate.RecallSucceeded>
+  <Stargate.CannotAddPawn>Не удалось добавить выбранного поселенца в буфер Звёздных врат.</Stargate.CannotAddPawn>
+  <Stargate.BufferedPawnsInspect>Поселенцев в буфере: {0}</Stargate.BufferedPawnsInspect>
+  <Stargate.CapacitorChargeInspect>Заряд конденсатора: {0} / {1}</Stargate.CapacitorChargeInspect>
+  <Stargate.ChargingRateInspect>Скорость зарядки: {0}</Stargate.ChargingRateInspect>
+  <Stargate.BufferedPawnsDiscarded>Звёздные врата {0} уничтожены без доступной карты; поселенцы в буфере ({1}) были удалены.</Stargate.BufferedPawnsDiscarded>
+
+  <Stargate.PlayerPawnOnly>Звёздными вратами могут пользоваться только подконтрольные игроку поселенцы.</Stargate.PlayerPawnOnly>
+  <Stargate.DeadOrDown>Мёртвые или упавшие персонажи не могут пользоваться Звёздными вратами.</Stargate.DeadOrDown>
+  <Stargate.NotSuitable>Младенцы, заключённые и рабы не могут пользоваться Звёздными вратами.</Stargate.NotSuitable>
+  <Stargate.NoQuestLodger>Временные участники задания не могут пользоваться Звёздными вратами.</Stargate.NoQuestLodger>
+  <Stargate.LordControlled>Персонажи под управлением группового ИИ не могут пользоваться Звёздными вратами.</Stargate.LordControlled>
+
+  <Stargate.PackageMissing>Пакет перемещения отсутствует.</Stargate.PackageMissing>
+  <Stargate.EnvelopeIncomplete>Заголовок пакета перемещения неполон.</Stargate.EnvelopeIncomplete>
+  <Stargate.NoValidPawns>В пакете нет допустимых поселенцев.</Stargate.NoValidPawns>
+  <Stargate.InvalidIdeologyData>Пакет содержит недопустимые данные идеологии.</Stargate.InvalidIdeologyData>
+  <Stargate.InvalidIdeologyIdentity>Пакет содержит недопустимый идентификатор идеологии.</Stargate.InvalidIdeologyIdentity>
+  <Stargate.DuplicateIdeologyRecords>Пакет содержит повторяющиеся записи идеологий.</Stargate.DuplicateIdeologyRecords>
+  <Stargate.MissingPreceptDef>Идеология {0} ссылается на отсутствующий Def принципа.</Stargate.MissingPreceptDef>
+  <Stargate.MissingPawnDef>Отсутствует Def расы или вида персонажа. Восстановите моды исходного сохранения перед приёмом.</Stargate.MissingPawnDef>
+  <Stargate.MissingPawnTracker>У персонажа {0} отсутствуют обязательные данные трекеров.</Stargate.MissingPawnTracker>
+  <Stargate.IdeologyOutsideTransfer>Персонаж {0} ссылается на идеологию вне этого пакета.</Stargate.IdeologyOutsideTransfer>
+  <Stargate.PreviousIdeologyOutsideTransfer>Персонаж {0} ссылается на прежнюю идеологию вне этого пакета.</Stargate.PreviousIdeologyOutsideTransfer>
+  <Stargate.DuplicatePawnIdentities>Пакет содержит повторяющиеся идентификаторы персонажей.</Stargate.DuplicatePawnIdentities>
+  <Stargate.MissingHealthDef>Персонаж {0} ссылается на отсутствующий Def состояния здоровья.</Stargate.MissingHealthDef>
+  <Stargate.MissingTraitDef>Персонаж {0} ссылается на отсутствующий Def черты.</Stargate.MissingTraitDef>
+  <Stargate.MissingGeneDef>Персонаж {0} ссылается на отсутствующий Def гена.</Stargate.MissingGeneDef>
+  <Stargate.MissingAbilityDef>Персонаж {0} ссылается на отсутствующий Def способности.</Stargate.MissingAbilityDef>
+  <Stargate.MissingCarriedThingDef>Персонаж {0} несёт предмет с отсутствующим Def.</Stargate.MissingCarriedThingDef>
+  <Stargate.IdeologyRegistrationFailed>Целевому сохранению не удалось зарегистрировать импортированную идеологию.</Stargate.IdeologyRegistrationFailed>
+  <Stargate.NoArrivalSpace>Вокруг Звёздных врат недостаточно свободного места для всех прибывающих поселенцев.</Stargate.NoArrivalSpace>
+  <Stargate.PlacementFailed>Не удалось разместить {0} в клетке {1}.</Stargate.PlacementFailed>
+  <Stargate.TransferAlreadyConsumed>Это перемещение уже было принято текущим сохранением.</Stargate.TransferAlreadyConsumed>
+  <Stargate.ChargeChangedDuringTransfer>Заряд конденсатора изменился до завершения перемещения.</Stargate.ChargeChangedDuringTransfer>
+  <Stargate.ArrivedArchiveFailed>Поселенцы прибыли, но принятое перемещение не удалось архивировать: {0}</Stargate.ArrivedArchiveFailed>
+
+  <Stargate.MissingRootElement>В файле перемещения отсутствует корневой элемент.</Stargate.MissingRootElement>
+  <Stargate.UnknownTransferFormat>Неизвестный формат файла перемещения.</Stargate.UnknownTransferFormat>
+  <Stargate.SchemaVersionMissing>В файле перемещения отсутствует версия формата.</Stargate.SchemaVersionMissing>
+  <Stargate.LegacySchemaRequiresRepublish>Формат перемещения версии {0} не содержит чистого межсохранного снимка идеологии. Вернитесь в исходное сохранение и отправьте поселенцев заново.</Stargate.LegacySchemaRequiresRepublish>
+  <Stargate.UnsupportedSchema>Формат перемещения версии {0} не поддерживается.</Stargate.UnsupportedSchema>
+  <Stargate.IdeologyPayloadMissing>В пакете перемещения отсутствуют данные идеологии.</Stargate.IdeologyPayloadMissing>
+  <Stargate.InvalidPayloadError>Не удалось прочитать метаданные перемещения: {0}</Stargate.InvalidPayloadError>
+  <Stargate.SaveFailed>Не удалось сохранить перемещение Звёздных врат: {0}</Stargate.SaveFailed>
+  <Stargate.LoadFailed>Не удалось загрузить перемещение Звёздных врат: {0}</Stargate.LoadFailed>
+  <Stargate.ArchiveFailed>Не удалось архивировать перемещение Звёздных врат: {0}</Stargate.ArchiveFailed>
+  <Stargate.RecallFailed>Не удалось принять перемещение через Звёздные врата: {0}</Stargate.RecallFailed>
+  <Stargate.LegacyItemsUnsupported>Старый пакет содержит предметы. Переписанные Звёздные врата пока не поддерживают перемещение предметов.</Stargate.LegacyItemsUnsupported>
+  <Stargate.RemapFailed>Не удалось переназначить {0}.{1}.</Stargate.RemapFailed>
+  <Stargate.UnexpectedDialOutFailure>Непредвиденная ошибка при отправке через Звёздные врата: {0}</Stargate.UnexpectedDialOutFailure>
+  <Stargate.UnexpectedRecallFailure>Непредвиденная ошибка при приёме через Звёздные врата: {0}</Stargate.UnexpectedRecallFailure>
+
+  <Stargate.AncientGateLabel>Звёздные врата</Stargate.AncientGateLabel>
+  <Stargate.AncientGateRequiresPlayer>Древние Звёздные врата должны принадлежать игроку, чтобы принимать перемещения.</Stargate.AncientGateRequiresPlayer>
+  <Stargate.DisplayStudyReportLabel>Показать отчёт исследования</Stargate.DisplayStudyReportLabel>
+  <Stargate.DisplayStudyReportDesc>Открыть завершённый отчёт об исследовании древних Звёздных врат.</Stargate.DisplayStudyReportDesc>
+  <Stargate.PausedSuffix> (приостановлено)</Stargate.PausedSuffix>
+  <Stargate.StudyProgressInspect>Прогресс исследования{0}: {1}%</Stargate.StudyProgressInspect>
+  <Stargate.StudyReportTitle>Отчёт исследования</Stargate.StudyReportTitle>
+  <Stargate.StudyReportBody>### Отчёт исследования ###\n\nОбъект: древний межпространственный артефакт.\n\n- Местоположение артефакта: {0}</Stargate.StudyReportBody>
+  <Stargate.StudyReportObservation>\n- Наблюдения:\n  1. Артефакт состоит из нескольких колец диаметром 3,14 метра.\n  2. Он изготовлен древней цивилизацией из неизвестного экзотического материала.\n  3. Вращение внутреннего кольца создаёт стабильную одностороннюю червоточину к другому кольцу.\n\n- Выводы:\n  1. Мы назовём это сооружение Звёздными вратами.\n  2. Из-за отсутствующих компонентов артефакт пока способен только принимать перемещения.\n\n- Рекомендации:\n  1. Соблюдать предельную осторожность рядом с артефактом.\n  2. Дальнейшее исследование может открыть межпространственные путешествия.\n  3. Необычайно прочный материал артефакта также может оказаться полезным.</Stargate.StudyReportObservation>
+  <Stargate.CannotUseIncapacitated>Невозможно использовать: персонаж недееспособен.</Stargate.CannotUseIncapacitated>
+  <Stargate.CannotUseReserved>Невозможно использовать: объект зарезервирован.</Stargate.CannotUseReserved>
+  <Stargate.CannotUseNoPath>Невозможно использовать: нет пути.</Stargate.CannotUseNoPath>
+  <Stargate.ResearchSkillTooLow>Для исследования древних Звёздных врат персонажу {0} требуется уровень интеллекта {1}.</Stargate.ResearchSkillTooLow>
+  <Stargate.StartStudy>Начать исследование</Stargate.StartStudy>
+  <Stargate.PauseStudy>Приостановить исследование</Stargate.PauseStudy>
+  <Stargate.PronounHis>его</Stargate.PronounHis>
+  <Stargate.PronounHer>её</Stargate.PronounHer>
+  <Stargate.PronounIts>его</Stargate.PronounIts>
+  <Stargate.StudyCompletedReport> завершает исследование странного артефакта. </Stargate.StudyCompletedReport>
+  <Stargate.StudyReferencesReport> отчёт оказался впечатляющим!\n\n### Заметки ###\n\nДата: </Stargate.StudyReferencesReport>
+  <Stargate.ResearcherLabel>\nИсследователь: </Stargate.ResearcherLabel>
+  <Stargate.WeaponPackFailed>Не удалось переместить экипированное оружие {1} персонажа {0} в инвентарь для переноса.</Stargate.WeaponPackFailed>
+  <Stargate.InvalidEquippedWeaponData>Данные об экипированном оружии в пакете переноса недействительны.</Stargate.InvalidEquippedWeaponData>
+  <Stargate.TransferredWeaponMissing>В инвентаре персонажа {0} не найдено перенесённое оружие ({1}).</Stargate.TransferredWeaponMissing>
+  <Stargate.WeaponRestoreFailed>Не удалось снова экипировать перенесённое оружие {1} персонажу {0}.</Stargate.WeaponRestoreFailed>
+  <Stargate.SourceReferenceRestoreFailed>Не удалось восстановить ссылку исходного сохранения после сериализации Звёздных врат: {0}</Stargate.SourceReferenceRestoreFailed>
+</LanguageData>

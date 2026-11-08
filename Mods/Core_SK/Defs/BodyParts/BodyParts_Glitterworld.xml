@@ -27,17 +27,13 @@
 		</thingSetMakerTags>
 	</ThingDef>
 
-	<RecipeDef Name="SK_SurgeryInstallGlitterworldImplantBase" ParentName="SK_SurgeryInstallImplantBase" Abstract="True">
+	<RecipeDef Name="SK_SurgeryInstallGlitterworldImplantBase" ParentName="SK.SurgeryInstallImplantBaseDummy" Abstract="True">
 		<deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
 		<workerClass>Recipe_InstallImplant</workerClass>
 		<workAmount>2500</workAmount>
 		<skillRequirements>
 			<Medicine>8</Medicine>
 		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-			<li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
-		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -87,7 +83,7 @@
 			<RecipeDef>InstallTacticalCorneaImplant</RecipeDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/Item/BodyPart/Joywire</texPath>
+			<texPath>Things/Item/BodyPart/Core/Joywire</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -180,7 +176,7 @@
 			<RecipeDef>InstallConstructorCore</RecipeDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/Item/BodyPart/Joywire</texPath>
+			<texPath>Things/Item/BodyPart/Core/Joywire</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -277,7 +273,7 @@
 			<RecipeDef>InstallFarmerCore</RecipeDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/Item/BodyPart/Joywire</texPath>
+			<texPath>Things/Item/BodyPart/Core/Joywire</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -375,7 +371,7 @@
 			<RecipeDef>InstallMinerCore</RecipeDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/Item/BodyPart/Joywire</texPath>
+			<texPath>Things/Item/BodyPart/Core/Joywire</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -473,7 +469,7 @@
 			<RecipeDef>InstallDoctorCore</RecipeDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/Item/BodyPart/Joywire</texPath>
+			<texPath>Things/Item/BodyPart/Core/Joywire</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -570,7 +566,7 @@
 			<RecipeDef>InstallDiplomatCore</RecipeDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/Item/BodyPart/Joywire</texPath>
+			<texPath>Things/Item/BodyPart/Core/Joywire</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -675,7 +671,7 @@
 			<RecipeDef>InstallAuxiliaryAI_Sharpshooter</RecipeDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/Item/BodyPart/Joywire</texPath>
+			<texPath>Things/Item/BodyPart/Core/Joywire</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -781,7 +777,7 @@
 			<RecipeDef>InstallAuxiliaryAI_Commando</RecipeDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/Item/BodyPart/Joywire</texPath>
+			<texPath>Things/Item/BodyPart/Core/Joywire</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -887,7 +883,7 @@
 			<RecipeDef>InstallAuxiliaryAI_Brawler</RecipeDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/Item/BodyPart/Joywire</texPath>
+			<texPath>Things/Item/BodyPart/Core/Joywire</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>

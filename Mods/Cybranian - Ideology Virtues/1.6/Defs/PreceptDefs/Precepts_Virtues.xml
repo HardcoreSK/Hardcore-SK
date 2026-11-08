@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->
+	<IssueDef>
+		<defName>PreferredTraits</defName>
+		<label>Traits</label>
+		<allowMultiplePrecepts>true</allowMultiplePrecepts>
+		<iconPath>UI/Issues/PreferredTraits</iconPath>
+	</IssueDef>
+	<!---->
+	<PreceptDef>
+		<defName>PreferredTraits</defName>
+		<issue>PreferredTraits</issue>
+		<label>preferred</label>
+		<description>Believers must possess a set of character traits that will bring them closer to perfection.</description>
+		<preceptClass>IdeologyVirtues.Precept_Virtue</preceptClass>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+		<ignoreNameUniqueness>true</ignoreNameUniqueness>
+		<impact>Medium</impact>
+		<maxCount>999</maxCount>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>PreferredTrait</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>PreferredTrait_Self</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!---->
+	<!---->
+	<!---->
+	<IssueDef>
+		<defName>DisapprovedTraits</defName>
+		<label>Traits</label>
+		<allowMultiplePrecepts>true</allowMultiplePrecepts>
+		<iconPath>UI/Issues/DisapprovedTraits</iconPath>
+	</IssueDef>
+	<!---->
+	<PreceptDef>
+		<defName>DisapprovedTraits</defName>
+		<issue>DisapprovedTraits</issue>
+		<label>disapproved</label>
+		<description>Believers should not have such traits, it is a sin and is condemned in our society.</description>
+		<preceptClass>IdeologyVirtues.Precept_Virtue</preceptClass>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+		<ignoreNameUniqueness>true</ignoreNameUniqueness>
+		<impact>Medium</impact>
+		<maxCount>999</maxCount>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>PreferredTrait</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>PreferredTrait_Self</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!---->
+</Defs>

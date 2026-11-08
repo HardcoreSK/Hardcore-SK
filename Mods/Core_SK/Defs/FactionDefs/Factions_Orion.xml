@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FactionDef ParentName="SK_HumanFactionBase">
+	<FactionDef ParentName="FactionBase">
 		<defName>Orion</defName>
 		<label>Orion Corporation</label>
 		<pawnSingular>orion corporation</pawnSingular>
@@ -28,9 +28,11 @@
 		</colorSpectrum>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Impid MayRequire="Ludeon.RimWorld.Biotech">0.025</Impid>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.04</Hussar>
+				<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.03</Starjack>
+				<Impid MayRequire="Ludeon.RimWorld.Biotech">0.045</Impid>
 				<Genie MayRequire="Ludeon.RimWorld.Biotech">0.025</Genie>
-				<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.025</Yttakin>
+				<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.035</Yttakin>
 			</xenotypeChances>
 		</xenotypeSet>
 		<allowedCultures>

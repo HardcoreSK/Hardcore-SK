@@ -39,7 +39,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Apparel_SmokepopBelt"]/comps/li[@Class="CompProperties_Reloadable"]/ammoDef</xpath>
 		<value>
-			<ammoDef>Weapon_GrenadeSmoke</ammoDef>
+			<ammoDef>CE_Weapon_GrenadeSmoke</ammoDef>
 		</value>
 	</Operation>
 
@@ -63,7 +63,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Apparel_FirefoampopPack"]/comps/li[@Class="CompProperties_Reloadable"]/ammoDef</xpath>
 		<value>
-			<ammoDef>Weapon_GrenadeFirefoam</ammoDef>
+			<ammoDef>CE_Weapon_GrenadeFirefoam</ammoDef>
 		</value>
 	</Operation>
 

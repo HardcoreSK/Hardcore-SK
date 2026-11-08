@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Chemfuel"]</xpath>
+    <value Merge="true">
+      <description>A volatile liquid chemical. Used to fuel engines, or to transmute into propellant for projectiles, or as an incendiary weapon.</description>
+      <graphicData DeepReplace="true">
+        <texPath>Things/Item/Resource/EthanolFuel</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <soundInteract>Standard_Drop</soundInteract>
+      <soundDrop>Standard_Drop</soundDrop>
+      <stackLimit>600</stackLimit>
+      <techLevel>Industrial</techLevel>
+      <statBases DeepReplace="true">
+        <MaxHitPoints>5</MaxHitPoints>
+        <MarketValue>6</MarketValue>
+        <DeteriorationRate>0.01</DeteriorationRate>
+        <Flammability>7</Flammability>
+        <MaxBurningTempCelsius>1200</MaxBurningTempCelsius>
+        <BurnDurationHours>0.7</BurnDurationHours>
+        <Mass>0.09</Mass>
+        <Bulk>0.1</Bulk>
+      </statBases>
+      <comps DeepReplace="true">
+        <li Class="CompProperties_Explosive">
+          <explosiveRadius>1.4</explosiveRadius>
+          <explosiveDamageType>Flame</explosiveDamageType>
+          <explosiveExpandPerStackcount>0.037</explosiveExpandPerStackcount>
+          <startWickOnDamageTaken>
+            <li>Flame</li>
+          </startWickOnDamageTaken>
+          <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+          <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+          <preExplosionSpawnChance>1</preExplosionSpawnChance>
+          <wickTicks>70~150</wickTicks>
+        </li>
+      </comps>
+      <thingCategories DeepReplace="true">
+        <li>FuelCat</li>
+      </thingCategories>
+      <stuffProps DeepReplace="true">
+        <stuffAdjective>fuel</stuffAdjective>
+      </stuffProps>
+    </value>
+  </Operation>
+</Patch>

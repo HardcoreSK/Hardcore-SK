@@ -1,13 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef Name="EventBase" ParentName="SK_BuildingBase" Abstract="True">
+	<ThingDef Name="EventBase" ParentName="BuildingBase" Abstract="True">
 		<!-- <menuHidden>True</menuHidden> -->
 		<graphicData>
 			<texPath>Inv</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>Transparent</shaderType>
 		</graphicData>
+		<building>
+			<deconstructible>false</deconstructible>
+		</building>
+		<category>Ethereal</category>
 		<altitudeLayer>Filth</altitudeLayer>
 		<passability>Standable</passability>
 		<selectable>false</selectable>
@@ -20,7 +24,6 @@
 		<castEdgeShadows>false</castEdgeShadows>
 		<statBases>
 			<Flammability>0</Flammability>
-			<Beauty>0</Beauty>
 		</statBases>
 	</ThingDef>
 
@@ -92,7 +95,6 @@
 	<ThingDef ParentName="EventBase">
 		<defName>CosmicRAD</defName>
 		<label>radiation filth</label>
-		<thingClass>Thing</thingClass>
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>7</glowRadius>
@@ -116,7 +118,6 @@
 	<ThingDef ParentName="EventBase">
 		<defName>NFRAD</defName>
 		<label>radiation filth</label>
-		<thingClass>Thing</thingClass>
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>4.5</glowRadius>
@@ -174,13 +175,26 @@
 		</graphicData>
 	</ThingDef>
 
+    <ThingDef ParentName="StrikeIncomingBase">
+        <defName>MechanoidTerraformerIncoming</defName>
+        <label>Mechanoid terraformer (incoming)</label>
+        <thingClass>SK.Events.MechanoidTerraformerIncoming</thingClass>
+        <graphicData>
+            <texPath>Things/Special/MechanoidTerraformerIncoming</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <shaderType>CutoutFlying</shaderType>
+        </graphicData>
+        <size>(3,3)</size>
+        <altitudeLayer>MetaOverlays</altitudeLayer>
+    </ThingDef>
 
 	<ThingDef>
 		<defName>Thing_RazorSpawner</defName>
 		<label>Razor Spawner</label>
 		<thingClass>SK.Events.Thing_RazorSpawner</thingClass>
 		<graphicData>
-			<texPath>Razor/entityspawn</texPath>
+			<texPath>Effects/EntitySpawner</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<tickerType>Rare</tickerType>
@@ -190,7 +204,7 @@
 
 	<!--=============== Misc Resources ====================-->
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>VGlower</defName>
 		<label>light</label>
 
@@ -391,7 +405,7 @@
 		<tickerType>Rare</tickerType>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 		<killedLeavings>
-			<Plasteel>150</Plasteel>
+			<Steel>150</Steel>
 			<ElectronicComponents>8</ElectronicComponents>
 			<ComponentIndustrial>20</ComponentIndustrial>
 			<ComponentSpacer>5</ComponentSpacer>

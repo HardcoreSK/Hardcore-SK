@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--___________________FermentingBarrel_____________________-->
+	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Beer</defName>
+		<label>make beer</label>
+		<description>Make beer from wort. Takes 6 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Wort</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<products>
+			<Beer>20</Beer>
+		</products>
+		<recipeUsers>
+			<li>UniversalFermenter</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>-1.0~32.0</temperatureSafe>
+		<temperatureIdeal>7.0~32.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+		<!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<processDays>6</processDays>
+		<!-- in days, 60000 ticks is a day -->
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<qualityDays>(4, 5, 6, 7, 8, 9, 10)</qualityDays>
+		<graphicSuffix />
+	</RecipeDef>
+
+	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Whisky</defName>
+		<label>make whisky</label>
+		<description>Make whisky from grain mash. Takes 7.25 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>grainmash</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<products>
+			<Alcohol_Whisky>20</Alcohol_Whisky>
+		</products>
+		<recipeUsers>
+			<li>UniversalFermenter</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>2.0~35.0</temperatureSafe>
+		<temperatureIdeal>3.0~24.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+		<!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<processDays>7.25</processDays>
+		<!-- in days, 60000 ticks is a day -->
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<qualityDays>(5.25, 6.25, 7.25, 8.25, 9.25, 10.25, 11.25)</qualityDays>
+		<graphicSuffix />
+	</RecipeDef>
+
+	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Sake</defName>
+		<label>make sake</label>
+		<description>Make sake from sake mash. Takes 5.25 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>sakemash</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<products>
+			<Alcohol_Sake>20</Alcohol_Sake>
+		</products>
+		<recipeUsers>
+			<li>UniversalFermenter</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>2.0~20.0</temperatureSafe>
+		<temperatureIdeal>6.0~15.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+		<!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<processDays>5.25</processDays>
+		<!-- in days, 60000 ticks is a day -->
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<qualityDays>(3.25, 4.25, 5.25, 6.25, 7.25, 8.25, 9.25)</qualityDays>
+		<graphicSuffix />
+	</RecipeDef>
+
+	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Cider</defName>
+		<label>make cider</label>
+		<description>Make cider from cider mash. Takes 4.8 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>cidermash</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<products>
+			<Alcohol_Cider>20</Alcohol_Cider>
+		</products>
+		<recipeUsers>
+			<li>UniversalFermenter</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>7.0~22.0</temperatureSafe>
+		<temperatureIdeal>11.0~15.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+		<!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<processDays>4.8</processDays>
+		<!-- in days, 60000 ticks is a day -->
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<qualityDays>(2.8, 3.8, 4.8, 5.8, 6.8, 7.8, 8.8)</qualityDays>
+		<graphicSuffix />
+	</RecipeDef>
+
+	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Rum</defName>
+		<label>make rum</label>
+		<description>Make rum from rum mash. Takes 4.5 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>rummash</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+		</ingredients>
+		<products>
+			<Alcohol_Rum>20</Alcohol_Rum>
+		</products>
+		<recipeUsers>
+			<li>UniversalFermenter</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>25.0~45.0</temperatureSafe>
+		<temperatureIdeal>30.0~38.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+		<!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<processDays>4.5</processDays>
+		<!-- in days, 60000 ticks is a day -->
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<qualityDays>(2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5)</qualityDays>
+		<graphicSuffix />
+	</RecipeDef>
+
+	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Berrywine</defName>
+		<label>make berry wine</label>
+		<description>Make berry wine from berry mash. Takes 5.8 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>berrymash</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<products>
+			<Alcohol_BerryWine>20</Alcohol_BerryWine>
+		</products>
+		<recipeUsers>
+			<li>UniversalFermenter</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>10.0~40.0</temperatureSafe>
+		<temperatureIdeal>18.0~32.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+		<!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<processDays>5.8</processDays>
+		<!-- in days, 60000 ticks is a day -->
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<qualityDays>(3.8, 4.8, 5.8, 6.8, 7.8, 8.8, 9.8)</qualityDays>
+		<graphicSuffix />
+	</RecipeDef>
+
+	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Vodka</defName>
+		<label>make vodka</label>
+		<description>Make vodka from vodka mash. Takes 4.8 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>vodkamash</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+		</ingredients>
+		<products>
+			<Alcohol_Vodka>20</Alcohol_Vodka>
+		</products>
+		<recipeUsers>
+			<li>UniversalFermenter</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>40.0~65.0</temperatureSafe>
+		<temperatureIdeal>45.0~55.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+		<!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<processDays>4.8</processDays>
+		<!-- in days, 60000 ticks is a day -->
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<qualityDays>(2.8, 3.8, 4.8, 5.8, 6.8, 7.8, 8.8)</qualityDays>
+		<graphicSuffix />
+	</RecipeDef>
+
+	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Tequila</defName>
+		<label>make tequila</label>
+		<description>Make tequila from tequila mash. Takes 5.6 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>tequilamash</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<products>
+			<Alcohol_Tequila>20</Alcohol_Tequila>
+		</products>
+		<recipeUsers>
+			<li>UniversalFermenter</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>18.0~45.0</temperatureSafe>
+		<temperatureIdeal>20.0~30.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+		<!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<processDays>5.6</processDays>
+		<!-- in days, 60000 ticks is a day -->
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<qualityDays>(3.6, 4.6, 5.6, 6.6, 7.6, 8.6, 9.6)</qualityDays>
+		<graphicSuffix />
+	</RecipeDef>
+
+	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Wine</defName>
+		<label>make wine</label>
+		<description>Make wine from wine mash. Takes 5.8 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>winemash</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+		</ingredients>
+		<products>
+			<Alcohol_Wine>20</Alcohol_Wine>
+		</products>
+		<recipeUsers>
+			<li>UniversalFermenter</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>15.0~38.0</temperatureSafe>
+		<temperatureIdeal>20.0~30.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+		<!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<processDays>5.8</processDays>
+		<!-- in days, 60000 ticks is a day -->
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<qualityDays>(3.8, 4.8, 5.8, 6.8, 7.8, 8.8, 9.8)</qualityDays>
+		<graphicSuffix />
+	</RecipeDef>
+
+</Defs>

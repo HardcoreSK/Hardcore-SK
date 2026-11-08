@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RecipeDef>
+        <defName>RimatomicsPlusPlus_DummyRecipe</defName>
+        <uiIconThing>RimatomicsPlusPlus_DummyThing</uiIconThing>
+    </RecipeDef>
+
+    <ThingDef>
+        <defName>RimatomicsPlusPlus_DummyThing</defName>
+        <label>dummy thing</label>
+        <description>Rimatomics has a bug (#66) where research projects aren't completable unless their final step unlocks a recipe (with a corresponding thing).\n\nThis dummy item (added by Rimatomics++) is temporarily here to fix this bug. You shouldn't see it anywhere in normal gameplay.</description>
+        <thingClass>ThingWithComps</thingClass>
+        <graphicData>
+            <texPath>UI/HeroArt/WebIcons/Book</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <altitudeLayer>Item</altitudeLayer>
+        <useHitPoints>true</useHitPoints>
+        <scatterableOnMapGen>false</scatterableOnMapGen>
+        <tradeability>None</tradeability>
+        <drawerType>MapMeshOnly</drawerType>
+        <thingCategories>
+            <li>MiscManufactured</li>
+        </thingCategories>
+    </ThingDef>
+</Defs>

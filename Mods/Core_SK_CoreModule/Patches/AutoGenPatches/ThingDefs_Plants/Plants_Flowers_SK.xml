@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Astragalus"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousPlantFlowerBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Astragalus"]</xpath>
+    <value>
+      <label>Astragalus Flowers</label>
+      <description>Astragalus Flowers are small perennial wild flowers that grow in alpine climates. It does not need seeds to be planted, but it does not produce anything except beauty while the flower is alive.</description>
+      <statBases Merge="true">
+        <Beauty>8</Beauty>
+        <BeautyOutdoors>8</BeautyOutdoors>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Flowers/SK/astragalus</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <plant Merge="true">
+        <sowWork>300</sowWork>
+        <sowResearchPrerequisites>
+          <li>Flowers_A1</li>
+        </sowResearchPrerequisites>
+        <fertilityMin>0.1</fertilityMin>
+        <fertilitySensitivity>1</fertilitySensitivity>
+        <growDays>4.3</growDays>
+        <maxMeshCount>4</maxMeshCount>
+        <visualSizeRange>0.3~0.75</visualSizeRange>
+        <growMinGlow>0.3</growMinGlow>
+        <lifespanDaysPerGrowDays>5</lifespanDaysPerGrowDays>
+      </plant>
+      <modExtensions>
+        <li Class="SK.ExtendedPlantGraphic">
+          <flowerPotGraphic>Things/Plant/FlowerPotGraphics/Astragalus</flowerPotGraphic>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Rose"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousPlantFlowerBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Rose"]</xpath>
+    <value>
+      <label>Rose Flowers</label>
+      <statBases Merge="true">
+        <Beauty>16</Beauty>
+        <BeautyOutdoors>16</BeautyOutdoors>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Flowers/SK/redrose</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <plant Merge="true">
+        <sowResearchPrerequisites>
+          <li>Flowers_A2</li>
+        </sowResearchPrerequisites>
+        <sowWork>450</sowWork>
+        <growMinGlow>0.3</growMinGlow>
+        <growDays>2</growDays>
+        <lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+        <fertilityMin>0.5</fertilityMin>
+        <fertilitySensitivity>1.2</fertilitySensitivity>
+        <visualSizeRange>0.3~0.9</visualSizeRange>
+      </plant>
+      <modExtensions>
+        <li Class="SK.ExtendedPlantGraphic">
+          <flowerPotGraphic>Things/Plant/FlowerPotGraphics/Rose</flowerPotGraphic>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Daylily"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousPlantFlowerBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Daylily"]</xpath>
+    <value>
+      <label>Daylily Flowers</label>
+      <description>Daylily Flowers are beautiful, cultivated flowers. They are great for brightening up a drab yard, but must be replanted often. It does not need seeds to be planted, but it does not produce anything except beauty while the flower is alive.</description>
+      <statBases Merge="true">
+        <Beauty>12</Beauty>
+        <BeautyOutdoors>12</BeautyOutdoors>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Flowers/SK/daylily</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.3, 0.3, 0.3)</volume>
+        </shadowData>
+      </graphicData>
+      <plant Merge="true">
+        <sowResearchPrerequisites>
+          <li>Flowers_A2</li>
+        </sowResearchPrerequisites>
+        <sowWork>400</sowWork>
+        <maxMeshCount>4</maxMeshCount>
+        <visualSizeRange>0.3~0.85</visualSizeRange>
+        <growDays>3.3</growDays>
+        <growMinGlow>0.2</growMinGlow>
+        <lifespanDaysPerGrowDays>4</lifespanDaysPerGrowDays>
+        <topWindExposure>0.3</topWindExposure>
+        <fertilityMin>0.2</fertilityMin>
+      </plant>
+      <modExtensions>
+        <li Class="SK.ExtendedPlantGraphic">
+          <flowerPotGraphic>Things/Plant/FlowerPotGraphics/Daylily</flowerPotGraphic>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Plant_Dandelion"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.SK_DeciduousPlantFlowerBaseDummy</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Plant_Dandelion"]</xpath>
+    <value>
+      <label>Dandelion Flowers</label>
+      <description>Dandelion Flowers are common, yellow, small flowers. Though it is often considered a pest weed, it is pleasant to look at. It does not need seeds to be planted, but it does not produce anything except beauty while the flower is alive.</description>
+      <statBases Merge="true">
+        <Beauty>5</Beauty>
+        <BeautyOutdoors>5</BeautyOutdoors>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Flowers/SK/dandelion</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <plant Merge="true">
+        <growDays>1.8</growDays>
+        <growMinGlow>0.3</growMinGlow>
+        <sowWork>150</sowWork>
+        <fertilityMin>0.07</fertilityMin>
+        <maxMeshCount>4</maxMeshCount>
+        <visualSizeRange>0.2~0.8</visualSizeRange>
+        <lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+        <fertilitySensitivity>1</fertilitySensitivity>
+      </plant>
+      <modExtensions>
+        <li Class="SK.ExtendedPlantGraphic">
+          <flowerPotGraphic>Things/Plant/FlowerPotGraphics/Dandelion</flowerPotGraphic>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+</Patch>

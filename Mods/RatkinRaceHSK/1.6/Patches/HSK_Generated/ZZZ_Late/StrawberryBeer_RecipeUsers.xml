@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- The workshop mod adds these bills to Brewery/recipes. HSK also makes
+	     them available at its electric brewery through RecipeDef.recipeUsers. -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/RecipeDef[defName="Make_RK_StrawberryBeer" or defName="Make_RK_StrawberryBeer_Bulk"]</xpath>
+		<value>
+			<recipeUsers>
+				<li>Brewery</li>
+				<li>ElectricBrewery</li>
+			</recipeUsers>
+		</value>
+	</Operation>
+</Patch>

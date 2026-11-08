@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--
+    DefOverwrite list:
+    CollapsedRocks
+    MineableSteel
+    MineableGold
+    MineableSilver
+    MineablePlasteel
+    MineableJade
+    -->
+
+	<!--============================ Resource rocks ===============================-->
+
+	<ThingDef ParentName="RockBase">
+		<defName>MineableNitre</defName>
+		<label>Nitre Deposits</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(124,124,110)</color>
+			<colorTwo>(175,175,165)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1800</MaxHitPoints>
+		</statBases>
+		<description>Deposits of Nitre. Major uses of potassium nitrate are in fertilizers, tree stump removal, rocket propellants and fireworks. It is one of the major components of gunpowder.</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Nitre</mineableThing>
+			<mineableYield>75</mineableYield>
+			<mineableScatterCommonality>1.05</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>8</min>
+				<max>16</max>
+			</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="RockBase">
+		<defName>MineableCoal</defName>
+		<label>Coal Ore Deposits</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(65,34,34)</color>
+			<colorTwo>(147,144,134)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+		</statBases>
+		<description>Deposits of Coal Ore. Coal is useful as a reaction agent in metal alloy production.</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Coal</mineableThing>
+			<mineableYield>75</mineableYield>
+			<mineableScatterCommonality>1.2</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>11</min>
+				<max>18</max>
+			</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="RockBase">
+		<defName>MineableTin</defName>
+		<label>Tin Ore Deposits</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(160,178,181)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1300</MaxHitPoints>
+		</statBases>
+		<description>Tin Ore is the second-easiest ore to mine. It is mined from Tin Veins.</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Tin</mineableThing>
+			<mineableYield>75</mineableYield>
+			<mineableScatterCommonality>1.1</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>9</min>
+				<max>17</max>
+			</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="RockBase">
+		<defName>MineableCopper</defName>
+		<label>Copper Ore Deposits</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(95,85,68)</color>
+			<colorTwo>(160,115,45)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1800</MaxHitPoints>
+		</statBases>
+		<description>Copper occurs naturally as native copper and was known to some of the oldest civilizations on record. Copper is useful for conduction of electrical currents, and is often used as wiring.</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Copper</mineableThing>
+			<mineableYield>75</mineableYield>
+			<mineableScatterCommonality>0.95</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>15</min>
+				<max>25</max>
+			</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="RockBase">
+		<defName>MineableAluminium</defName>
+		<label>Bauxite Ore Deposits</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(124,124,110)</color>
+			<colorTwo>(175,175,165)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>5500</MaxHitPoints>
+		</statBases>
+		<description>Bauxite is the ore of Aluminium. Aluminum is similar to copper as it is also highly conductive to electrical currents. It is less valuable than copper. Unlike copper however, aluminum can only be processed at an Electric Smelting Furnace. The refining process requires electrical currents in order to make Aluminum Alloy.</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Aluminium</mineableThing>
+			<mineableYield>75</mineableYield>
+			<mineableScatterCommonality>0.65</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>11</min>
+				<max>19</max>
+			</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="RockBase">
+		<defName>MineableTitanium</defName>
+		<label>Ilmenite Ore Deposits</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(160,178,181)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>13000</MaxHitPoints>
+		</statBases>
+		<description>Ilmenite is the ore of Titanium. Titanium is a very durable metal and is often used in alloys to produce metals much stronger than steel.</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Ilmenite</mineableThing>
+			<mineableYield>75</mineableYield>
+			<mineableScatterCommonality>0.25</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>3</min>
+				<max>9</max>
+			</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="RockBase">
+		<defName>MineableTungsten</defName>
+		<label>Wolframite Ore Deposits</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(88,115,175)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>20000</MaxHitPoints>
+		</statBases>
+		<description>Wolframite is the ore of Tungsten. Tungsten is a strong and quite dense material with a high melting temperature used for electric filaments and armor-piercing ammunition, as well as hard tungsten carbide machine tools.</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Wolframite</mineableThing>
+			<mineableYield>50</mineableYield>
+			<mineableScatterCommonality>0.15</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>3</min>
+				<max>9</max>
+			</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="RockBase">
+		<defName>MineableNickel</defName>
+		<label>Nickel Ore Deposits</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(88,115,175)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>10000</MaxHitPoints>
+		</statBases>
+		<description>Lateritic nickel ore deposits are surficial, weathered rinds formed on ultramafic rocks. Nickel Ore contains Nickel and small amounts of Cobalt.</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Nickel</mineableThing>
+			<mineableYield>50</mineableYield>
+			<mineableScatterCommonality>0.4</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>5</min>
+				<max>10</max>
+			</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="RockBase">
+		<defName>MineableLead</defName>
+		<label>Anglesite Deposits</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(89,74,68)</color>
+			<colorTwo>(134,148,63)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>6000</MaxHitPoints>
+		</statBases>
+		<description>Deposits of Anglesite. Anglesite is the ore form of Lead. It is a heavy metal that is denser than most common materials. Lead is soft and malleable, and has a relatively low melting point.</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Anglesite</mineableThing>
+			<mineableYield>75</mineableYield>
+			<mineableScatterCommonality>0.8</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>6</min>
+				<max>13</max>
+			</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="RockBase">
+		<defName>MineableGlowstone</defName>
+		<label>Glowstone Deposit</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(89,83,68)</color>
+			<colorTwo>(113,187,252)</colorTwo>
+		</graphicData>
+		<statBases>
+			<Beauty>20</Beauty>
+			<MaxHitPoints>3400</MaxHitPoints>
+		</statBases>
+		<description>Rock containing bits of a strange glowing gem.</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Glowstone</mineableThing>
+			<mineableYield>50</mineableYield>
+			<mineableScatterCommonality>0.35</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>3</min>
+				<max>6</max>
+			</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(113,187,252,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RockBase">
+		<defName>MineableSalt</defName>
+		<label>Compacted salt</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(199,201,197)</color>
+			<colorTwo>(240,242,237)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>900</MaxHitPoints>
+		</statBases>
+		<description>Salt compacted over time..</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Salt</mineableThing>
+			<mineableYield>150</mineableYield>
+			<mineableScatterCommonality>1.2</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>5</min>
+				<max>10</max>
+			</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="RockBase">
+		<defName>MineableColdstone</defName>
+		<label>Coldstone Deposit</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(89,83,68)</color>
+			<colorTwo>(224,228,240)</colorTwo>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+			<MaxHitPoints>3200</MaxHitPoints>
+		</statBases>
+		<description>Rock containing bits of a strangely cold gem.</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Coldstone</mineableThing>
+			<mineableYield>50</mineableYield>
+			<mineableScatterCommonality>0.3</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>4</min>
+				<max>7</max>
+			</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
+		</building>
+		<comps>
+			<li Class="SK.CompProperties_ColdPusher">
+				<ConstantPush>true</ConstantPush>
+				<ColdPerSecond>-10</ColdPerSecond>
+				<ColdPushMinTemperature>16</ColdPushMinTemperature>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(0,96,255,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+<!-- DefOverwrite
+	<ThingDef ParentName="RockBase">
+		<defName>MineableComponentsIndustrial</defName>
+		<label>compacted machinery</label>
+		<description>Ancient machinery, compacted over time. Can be mined for useful components.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/CompactedMachinery_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>ComponentIndustrial</mineableThing>
+			<mineableYield>2</mineableYield>
+			<mineableScatterCommonality>1.00</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>3</min>
+				<max>6</max>
+			</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="RockBase" Name="RaisedRocks">
+		<defName>RaisedRocks</defName>
+		<label>raised rocks</label>
+		<description>A fragile wall made of rubble. It will collapse in time.</description>
+		<graphicData>
+			<color>(138,118,113)</color>
+		</graphicData>
+		<tickerType>Rare</tickerType>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_RubbleRock</filthLeaving>
+		<building>
+			<isNaturalRock>false</isNaturalRock>
+			<claimable>false</claimable>
+			<destroySound>ChunkRock_Drop</destroySound>
+		</building>
+		<comps>
+			<li Class="CompProperties_Lifespan">
+				<lifespanTicks>10000</lifespanTicks>
+				<expireEffect>RaisedRock_Collapse</expireEffect>
+			</li>
+		</comps>
+	</ThingDef>
+-->
+</Defs>

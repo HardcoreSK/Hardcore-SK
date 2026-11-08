@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Structure -->
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Walls</defName>
+		<label>Walls</label>
+		<description>Strong walls that protect your buildings from invasion and surrounding threats.</description>
+		<defNames>
+			<li>Wall</li>
+			<li>Window</li>
+			<li>ClutterSilverWall</li>
+			<li>UtilityWall</li>
+			<li>ClutterUWallLight</li>
+			<li MayRequire="Dubwise.Rimatomics">RadiationShielding</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+		<order>10</order>
+		<types>
+			<li>Rooms</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Doors</defName>
+		<label>Doors</label>
+		<description>Simple doors that allow you to control access between different parts of your colony.</description>
+        <graphicData>
+            <texPath>Things/Building/Doors/DoorRustic/DoorRustic_MenuIcon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(133,97,67)</color>
+        </graphicData>
+		<defNames>
+			<li>PrimitiveDoor</li>
+			<li>Door</li>
+			<li>AnimalFlap</li>
+			<li>MDoor</li>
+			<li>DoorGlass</li>
+			<li>OrnateDoor</li>
+			<li MayRequire="xenomacabre.HCSKwallsandfloorsreduxeno">DoorBarn</li>
+			<li MayRequire="xenomacabre.HCSKwallsandfloorsreduxeno">DoorOrnate</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+		<order>20</order>
+		<types>
+			<li>Rooms</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_AutoDoors</defName>
+		<label>Autodoors</label>
+		<description>High-tech doors that open and close on their own as you approach.</description>
+		<defNames>
+			<li>Autodoor</li>
+			<li>Blastdoor</li>
+			<li>AutoDoorGlass</li>
+			<li MayRequire="ludeon.rimworld.anomaly">SecurityDoor</li>
+			<li MayRequire="Dubwise.Rimatomics">DU_Blastdoor</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+		<order>30</order>
+		<types>
+			<li>Rooms</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Columns</defName>
+		<label>Columns</label>
+		<description>Support structures that give strength and stability to large structures and roofs.</description>
+		<defNames>
+			<li>ColumnPrimitive</li>
+			<li>Column</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+		<order>40</order>
+		<types>
+			<li>Rooms</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Fences</defName>
+		<label>Fences</label>
+		<description>Fenсes, gates and everything close enough.</description>
+		<defNames>
+			<li>Fence</li>
+			<li>FenceGate</li>
+			<li>PenMarker</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+		<order>50</order>
+		<types>
+			<li>Outside</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Bridges</defName>
+		<label>Bridges</label>
+		<description>Water crossing bridges.</description>
+		<defNames>
+			<li>Bridge</li>
+			<li MayRequire="ludeon.rimworld.odyssey">HeavyBridge</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+		<order>60</order>
+		<types>
+			<li>Outside</li>
+		</types>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>

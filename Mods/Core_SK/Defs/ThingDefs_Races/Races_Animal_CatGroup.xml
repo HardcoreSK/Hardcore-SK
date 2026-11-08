@@ -1,6 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="SK_AnimalThingBase" Name="AnimalDomesticCatBase" Abstract="True">
+<!--
+	<ThingDef ParentName="AnimalThingBase" Name="AnimalDomesticCatBase" Abstract="True">
 		<devNote>cat</devNote>
 		<statBases>
 			<Mass>3</Mass>
@@ -10,6 +11,7 @@
 			<MeleeDodgeChance>0.35</MeleeDodgeChance>
 			<MeleeCritChance>0.1</MeleeCritChance>
 			<FilthRate>1</FilthRate>
+			<Wildness>0.1</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -79,7 +81,6 @@
 			<nameOnTameChance>1</nameOnTameChance>
 			<manhunterOnDamageChance>0.1</manhunterOnDamageChance>
 			<trainability>Intermediate</trainability>
-			<wildness>0.1</wildness>
 			<nuzzleMtbHours>9</nuzzleMtbHours>
 			<leatherDef>Leather_Light</leatherDef>
 			<useMeatFrom>Elephant</useMeatFrom>
@@ -132,10 +133,10 @@
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>QuadrupedLow</bodyShape>
 			</li>
-			<li Class="SK.DomesticCatExtension"/>
+			<li Class="SK.DomesticCatExtension" />
 		</modExtensions>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="AnimalDomesticCatBase">
 		<defName>Cat</defName>
 		<label>common cat</label>
@@ -146,8 +147,8 @@
 			<maxPreyBodySize>0.28</maxPreyBodySize>
 		</race>
 	</ThingDef>
-
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+-->
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Cat</defName>
 		<label>cat</label>
 		<race>Cat</race>
@@ -201,36 +202,24 @@
 			<li Class="SK.PawnGraphicExtension">
 				<colors>
 					<li>(225,225,225)</li>
-					<!-- White -->
 					<li>(215,215,215)</li>
-					<!-- Light Grey -->
 					<li>(125,125,125)</li>
-					<!-- Medium Grey -->
 					<li>(155,155,175)</li>
-					<!-- Light Blue Grey -->
 					<li>(90,95,105)</li>
-					<!-- Dark Blue Grey -->
 					<li>(210,145,95)</li>
-					<!-- Orange -->
 					<li>(225,215,180)</li>
-					<!-- Blonde -->
 					<li>(140,110,65)</li>
-					<!-- Tan -->
 					<li>(140,90,35)</li>
-					<!-- Medium Brown -->
 					<li>(100,45,5)</li>
-					<!-- Dark Brown -->
 					<li>(80,50,40)</li>
-					<!-- Very Dark Brown -->
 					<li>(25,25,25)</li>
-					<!-- Near Black -->
 				</colors>
 				<shaderType>Cutout</shaderType>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+ -->
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>MiniMaineCoon</defName>
 		<label>miniature maine coon</label>
 		<race>Cat</race>
@@ -241,7 +230,7 @@
 			<li>
 				<label>Miniature Maine Coon Kitten</label>
 				<bodyGraphicData>
-					<texPath>DomesticCat/MaineCoon</texPath>
+					<texPath>Things/Pawn/Animal/DomesticCat/MaineCoon</texPath>
 					<drawSize>.3</drawSize>
 					<color>(255,255,255)</color>
 				</bodyGraphicData>
@@ -252,7 +241,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>DomesticCat/MaineCoon</texPath>
+					<texPath>Things/Pawn/Animal/DomesticCat/MaineCoon</texPath>
 					<drawSize>.6</drawSize>
 					<color>(255,255,255)</color>
 					<shadowData>
@@ -267,7 +256,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>DomesticCat/MaineCoon</texPath>
+					<texPath>Things/Pawn/Animal/DomesticCat/MaineCoon</texPath>
 					<drawSize>.75</drawSize>
 					<color>(255,255,255)</color>
 					<shadowData>
@@ -283,7 +272,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>MaineCoon</defName>
 		<label>maine coon</label>
 		<race>Cat</race>
@@ -294,7 +283,7 @@
 			<li>
 				<label>Maine Coon Kitten</label>
 				<bodyGraphicData>
-					<texPath>DomesticCat/MaineCoon</texPath>
+					<texPath>Things/Pawn/Animal/DomesticCat/MaineCoon</texPath>
 					<drawSize>.4</drawSize>
 					<color>(255,255,255)</color>
 				</bodyGraphicData>
@@ -305,7 +294,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>DomesticCat/MaineCoon</texPath>
+					<texPath>Things/Pawn/Animal/DomesticCat/MaineCoon</texPath>
 					<drawSize>.8</drawSize>
 					<color>(255,255,255)</color>
 					<shadowData>
@@ -320,7 +309,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>DomesticCat/MaineCoon</texPath>
+					<texPath>Things/Pawn/Animal/DomesticCat/MaineCoon</texPath>
 					<drawSize>1</drawSize>
 					<color>(255,255,255)</color>
 					<shadowData>
@@ -336,7 +325,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>EuropeanShorthair</defName>
 		<label>European Shorthair</label>
 		<race>Cat</race>
@@ -347,7 +336,7 @@
 			<li>
 				<label>European Shorthair Kitten</label>
 				<bodyGraphicData>
-					<texPath>DomesticCat/EuropeanShorthair</texPath>
+					<texPath>Things/Pawn/Animal/DomesticCat/EuropeanShorthair</texPath>
 					<drawSize>.4</drawSize>
 					<color>(255,255,255)</color>
 				</bodyGraphicData>
@@ -358,7 +347,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>DomesticCat/EuropeanShorthair</texPath>
+					<texPath>Things/Pawn/Animal/DomesticCat/EuropeanShorthair</texPath>
 					<drawSize>.7</drawSize>
 					<color>(255,255,255)</color>
 					<shadowData>
@@ -373,7 +362,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>DomesticCat/EuropeanShorthair</texPath>
+					<texPath>Things/Pawn/Animal/DomesticCat/EuropeanShorthair</texPath>
 					<drawSize>.85</drawSize>
 					<color>(255,255,255)</color>
 					<shadowData>
@@ -389,7 +378,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>NorwegianForestCat</defName>
 		<label>Norwegian Forest Cat</label>
 		<race>Cat</race>
@@ -400,7 +389,7 @@
 			<li>
 				<label>Norwegian Forest Cat Kitten</label>
 				<bodyGraphicData>
-					<texPath>DomesticCat/NorwegianForestCat</texPath>
+					<texPath>Things/Pawn/Animal/DomesticCat/NorwegianForestCat</texPath>
 					<drawSize>.4</drawSize>
 					<color>(255,255,255)</color>
 				</bodyGraphicData>
@@ -411,7 +400,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>DomesticCat/NorwegianForestCat</texPath>
+					<texPath>Things/Pawn/Animal/DomesticCat/NorwegianForestCat</texPath>
 					<drawSize>.8</drawSize>
 					<color>(255,255,255)</color>
 					<shadowData>
@@ -426,7 +415,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>DomesticCat/NorwegianForestCat</texPath>
+					<texPath>Things/Pawn/Animal/DomesticCat/NorwegianForestCat</texPath>
 					<drawSize>1</drawSize>
 					<color>(255,255,255)</color>
 					<shadowData>
@@ -442,7 +431,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BritishShorthair</defName>
 		<label>British Shorthair</label>
 		<race>Cat</race>
@@ -453,7 +442,7 @@
 			<li>
 				<label>British Shorthair Kitten</label>
 				<bodyGraphicData>
-					<texPath>DomesticCat/BritishShorthair</texPath>
+					<texPath>Things/Pawn/Animal/DomesticCat/BritishShorthair</texPath>
 					<drawSize>.35</drawSize>
 					<color>(255,255,255)</color>
 				</bodyGraphicData>
@@ -464,7 +453,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>DomesticCat/BritishShorthair</texPath>
+					<texPath>Things/Pawn/Animal/DomesticCat/BritishShorthair</texPath>
 					<drawSize>.7</drawSize>
 					<color>(255,255,255)</color>
 					<shadowData>
@@ -479,7 +468,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>DomesticCat/BritishShorthair</texPath>
+					<texPath>Things/Pawn/Animal/DomesticCat/BritishShorthair</texPath>
 					<drawSize>.85</drawSize>
 					<color>(255,255,255)</color>
 					<shadowData>
@@ -495,7 +484,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Siamese</defName>
 		<label>Siamese</label>
 		<race>Cat</race>
@@ -506,7 +495,7 @@
 			<li>
 				<label>Siamese Kitten</label>
 				<bodyGraphicData>
-					<texPath>DomesticCat/Siamese</texPath>
+					<texPath>Things/Pawn/Animal/DomesticCat/Siamese</texPath>
 					<drawSize>.35</drawSize>
 					<color>(255,255,255)</color>
 				</bodyGraphicData>
@@ -517,7 +506,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>DomesticCat/Siamese</texPath>
+					<texPath>Things/Pawn/Animal/DomesticCat/Siamese</texPath>
 					<drawSize>.65</drawSize>
 					<color>(255,255,255)</color>
 					<shadowData>
@@ -532,7 +521,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>DomesticCat/Siamese</texPath>
+					<texPath>Things/Pawn/Animal/DomesticCat/Siamese</texPath>
 					<drawSize>.8</drawSize>
 					<color>(255,255,255)</color>
 					<shadowData>

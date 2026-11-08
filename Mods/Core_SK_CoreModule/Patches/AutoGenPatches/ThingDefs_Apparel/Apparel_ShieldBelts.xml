@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Apparel_ShieldBelt"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.ApparelShieldBaseDummy</value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Apparel_ShieldBelt"]</xpath>
+        <value>
+            <statBases Merge="true">
+                <WorkToMake>15000</WorkToMake>
+                <EnergyShieldRechargeRate>0.3</EnergyShieldRechargeRate>
+                <EnergyShieldEnergyMax>3.6</EnergyShieldEnergyMax>
+                <Mass>3</Mass>
+                <Bulk>4</Bulk>
+                <WornBulk>2</WornBulk>
+                <EquipDelay>1.7</EquipDelay>
+                <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+                <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+                <StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+                <ArmorRating_Sharp>0</ArmorRating_Sharp>
+                <ArmorRating_Blunt>0</ArmorRating_Blunt>
+                <ArmorRating_Heat>0</ArmorRating_Heat>
+            </statBases>
+            <thingSetMakerTags>
+                <li>RewardStandardMidFreq</li>
+                <li>RewardStandardQualitySuper</li>
+            </thingSetMakerTags>
+            <stuffCategories>
+                <li>StrongMetallic</li>
+            </stuffCategories>
+            <costStuffCount>50</costStuffCount>
+            <costList>
+                <Electronics>2</Electronics>
+            </costList>
+            <recipeMaker Merge="true">
+                <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+                <researchPrerequisite>ShieldBelt</researchPrerequisite>
+                <workSpeedStat>SmithingSpeed</workSpeedStat>
+                <workSkill>Crafting</workSkill>
+                <effectWorking>Smith</effectWorking>
+                <soundWorking>Recipe_Smith</soundWorking>
+                <recipeUsers>
+                    <li>TableElectronics</li>
+                </recipeUsers>
+                <useIngredientsForColor>false</useIngredientsForColor>
+                <skillRequirements>
+                    <Crafting>13</Crafting>
+                </skillRequirements>
+            </recipeMaker>
+            <generateCommonality>1</generateCommonality>
+            <apparel Merge="true">
+                <useDeflectMetalEffect>true</useDeflectMetalEffect>
+                <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+            </apparel>
+            <thingCategories>
+                <li>SpecialApparelCat</li>
+                <li>ApparelUtility</li>
+            </thingCategories>
+        </value>
+    </Operation>
+
+</Patch>

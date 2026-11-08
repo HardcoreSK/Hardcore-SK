@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[@Name="SmallBirdThingBase"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<Mass>1</Mass>
+			</statBases>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="SmallBirdThingBase" or 
+		@Name="WaterBirdThingBase" or 
+		@Name="MiscBirdBase" or 
+		defName="Penguin"]/race/useMeatFrom</xpath>
+		<value>
+			<useMeatFrom>Elephant</useMeatFrom>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Wolf_Great"]/race</xpath>
+		<value>
+			<useMeatFrom>Elephant</useMeatFrom>
+		</value>
+	</Operation>
+
+
+</Patch>

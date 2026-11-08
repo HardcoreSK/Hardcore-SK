@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef Abstract="True" Name="RFF_TerraformBase" ParentName="SK_BuildingBase">
+	<ThingDef Abstract="True" Name="RFF_TerraformBase" ParentName="BuildingBase">
 		<thingClass>FertileFields.Building_Terraform</thingClass>
 		<placeWorkers>
 			<li>FertileFields.PlaceWorker_Dynamic</li>
@@ -14,7 +14,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<blockLight>false</blockLight>
 		<rotatable>false</rotatable>
-		<placingDraggableDimensions>2</placingDraggableDimensions>
+		<drawStyleCategory>Default2D</drawStyleCategory>
 		<constructEffect>ConstructDirt</constructEffect>
 		<size>(1,1)</size>
 		<pathCost>60</pathCost>
@@ -44,10 +44,81 @@
 
 
 	<!-- Terraforming -->
+	<ThingDef ParentName="StandardBuilding">
+		<defName>FertilizerPump</defName>
+		<label>terraforming pump</label>
+		<description>A single use pump that slowly expands a field of growable soil around itself. Requires power. Requires water and compost in order to function.</description>
+		<thingClass>SK.Building_FertilizerPump</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Misc/Fertigator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.6, 0.6, 0.6)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<passability>Standable</passability>
+		<fillPercent>0.2</fillPercent>
+		<tickerType>Normal</tickerType>	
+		<statBases>
+			<MaxHitPoints>240</MaxHitPoints>
+			<WorkToBuild>1700</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Bulk>65</Bulk>
+			<Mass>30</Mass>
+		</statBases>
+		<size>(1,1)</size>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<costList>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<Rubber>30</Rubber>
+			<Plastic>20</Plastic>
+			<Mechanism>4</Mechanism>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>SK_category_terraform</designationCategory>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+		</building>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="SK.CompProperties_IdlePower">
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<externalTicking>true</externalTicking>
+				<fuelConsumptionRate>60.0</fuelConsumptionRate>
+				<fuelCapacity>10.0</fuelCapacity>
+				<fuelConsumptionPerTickInRain>-10</fuelConsumptionPerTickInRain>
+				<fuelFilter>
+					<thingDefs>
+						<li>Compost</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>0</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<showFuelGizmo>true</showFuelGizmo>
+				<fuelGizmoLabel>Compost</fuelGizmoLabel>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<researchPrerequisites>
+			<li>MoisturePump</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
 
-	<!--
-–––––––––––––––––––––––––––––––––   Rocky dirt   –––––––––––––––––––––––––––––––––
--->
+	<!--––––––––––––––––––––––––––––––––   Rocky dirt   ––––––––––––––––––––––––––––––-->
 
 	<ThingDef ParentName="RFF_TerraformAdvancedBase">
 		<defName>RockyDirt-Stone</defName>
@@ -113,9 +184,7 @@
 		</costList>
 	</ThingDef>
 
-	<!--
-–––––––––––––––––––––––––––––––––   Sand   –––––––––––––––––––––––––––––––––
--->
+	<!--––––––––––––––––––––––––––––––––   Sand   ––––––––––––––––––––––––––––––-->
 	<ThingDef ParentName="RFF_TerraformBasicBase">
 		<defName>Sand-RockyDirt</defName>
 		<label>Rocky dirt</label>
@@ -212,9 +281,7 @@
 	</ThingDef>
 
 
-	<!--
-–––––––––––––––––––––––––––––––––   Gravel   –––––––––––––––––––––––––––––––––
--->
+	<!--––––––––––––––––––––––––––––––––   Gravel   ––––––––––––––––––––––––––––––-->
 	<ThingDef ParentName="RFF_TerraformBasicBase">
 		<defName>Gravel-RockyDirt</defName>
 		<label>Rocky dirt</label>
@@ -281,9 +348,7 @@
 	</ThingDef>
 
 
-	<!--
-–––––––––––––––––––––––––––––––––   Soil   –––––––––––––––––––––––––––––––––
--->
+	<!--––––––––––––––––––––––––––––––––   Soil   ––––––––––––––––––––––––––––––-->
 	<ThingDef ParentName="RFF_TerraformBasicBase">
 		<defName>SoilF-RockyDirt</defName>
 		<label>Rocky dirt</label>
@@ -293,6 +358,8 @@
 			<li Class="FertileFields.Terrain">
 				<above>
 					<li>Soil</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">GrasslandSoil</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">GlowforestSoil</li>
 					<li>SavannaSoil</li>
 					<li>SoilRich</li>
 					<li>MossyTerrain</li>
@@ -320,6 +387,8 @@
 			<li Class="FertileFields.Terrain">
 				<above>
 					<li>Soil</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">GrasslandSoil</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">GlowforestSoil</li>
 					<li>SavannaSoil</li>
 					<li>SoilRich</li>
 					<li>MarginalSoil</li>
@@ -348,6 +417,8 @@
 			<li Class="FertileFields.Terrain">
 				<above>
 					<li>Soil</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">GrasslandSoil</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">GlowforestSoil</li>
 					<li>SavannaSoil</li>
 					<li>SoilRich</li>
 					<li>MarginalSoil</li>
@@ -374,6 +445,8 @@
 			<li Class="FertileFields.Terrain">
 				<above>
 					<li>Soil</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">GrasslandSoil</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">GlowforestSoil</li>
 					<li>SavannaSoil</li>
 					<li>SoilRich</li>
 					<li>MarginalSoil</li>
@@ -400,6 +473,8 @@
 			<li Class="FertileFields.Terrain">
 				<above>
 					<li>Soil</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">GrasslandSoil</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">GlowforestSoil</li>
 					<li>SavannaSoil</li>
 					<li>SoilRich</li>
 					<li>MossyTerrain</li>
@@ -413,9 +488,7 @@
 	</ThingDef>
 
 
-	<!--
-–––––––––––––––––––––––––––––––––   Shallow Water   –––––––––––––––––––––––––––––––––
--->
+	<!--––––––––––––––––––––––––––––––––   Shallow Water   ––––––––––––––––––––––––––––––-->
 	<ThingDef ParentName="RFF_TerraformAdvancedBase">
 		<defName>WaterShallow-Sand</defName>
 		<label>Sand</label>
@@ -427,7 +500,6 @@
 					<li>WaterShallow</li>
 					<li>WaterMovingShallow</li>
 					<li>WaterOceanShallow</li>
-					<li>FishingPierFloorShallowWater</li>
 					<li MayRequire="skyarkhangel.NPS">ColdSpringsWater</li>
 					<li MayRequire="skyarkhangel.NPS">HotSpringsWater</li>
 				</above>
@@ -454,7 +526,6 @@
 					<li>WaterShallow</li>
 					<li>WaterMovingShallow</li>
 					<li>WaterOceanShallow</li>
-					<li>FishingPierFloorShallowWater</li>
 				</above>
 				<result>Marsh</result>
 			</li>
@@ -468,7 +539,9 @@
 		<terrainAffordanceNeeded>ShallowWater</terrainAffordanceNeeded>
 	</ThingDef>
 
-	<ThingDef ParentName="RFF_TerraformAdvancedBase">
+	<!--
+    Disabled - too many pathfinding issues and abuse
+    <ThingDef ParentName="RFF_TerraformAdvancedBase">
 		<defName>WaterShallow-WaterDeep</defName>
 		<label>Deep water</label>
 		<description>↑ Shallow water\n\n↓ Deep water\n\n ▪ 10 dirt\n  \n\n► Placing impassable terrain on the map is overpowered and potentially game-breaking. Use with caution!</description>
@@ -479,7 +552,6 @@
 					<li>WaterShallow</li>
 					<li>WaterMovingShallow</li>
 					<li>WaterOceanShallow</li>
-					<li>FishingPierFloorShallowWater</li>
 				</above>
 				<result>WaterDeep</result>
 				<products>
@@ -492,11 +564,10 @@
 		</statBases>
 		<terrainAffordanceNeeded>ShallowWater</terrainAffordanceNeeded>
 	</ThingDef>
+    -->
 
 
-	<!--
-–––––––––––––––––––––––––––––––––   Marshy soil   –––––––––––––––––––––––––––––––––
--->
+	<!--––––––––––––––––––––––––––––––––   Marshy soil   ––––––––––––––––––––––––––––––-->
 	<ThingDef ParentName="RFF_TerraformBasicBase">
 		<defName>SoilMarshy-SoilF</defName>
 		<label>Soil</label>
@@ -562,9 +633,7 @@
 		<terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
 	</ThingDef>
 
-	<!--
-–––––––––––––––––––––––––––––––––   Marsh   –––––––––––––––––––––––––––––––––
--->
+	<!--––––––––––––––––––––––––––––––––   Marsh   ––––––––––––––––––––––––––––––-->
 	<ThingDef ParentName="RFF_TerraformBasicBase">
 		<defName>Marsh-SoilMarshy</defName>
 		<label>Marshy soil</label>
@@ -575,7 +644,6 @@
 				<above>
 					<li>Marsh</li>
 					<li>Mud</li>
-					<li>FishingPierFloorMarsh</li>
 				</above>
 				<result>MarshyTerrain</result>
 			</li>
@@ -599,7 +667,6 @@
 			<li Class="FertileFields.Terrain">
 				<above>
 					<li>Marsh</li>
-					<li>FishingPierFloorMarsh</li>
 				</above>
 				<result>WaterShallow</result>
 				<products>
@@ -614,9 +681,7 @@
 	</ThingDef>
 
 
-	<!--
-–––––––––––––––––––––––––––––––––   Cultivation   –––––––––––––––––––––––––––––––––
--->
+	<!--––––––––––––––––––––––––––––––––   Cultivation   ––––––––––––––––––––––––––––––-->
 	<ThingDef ParentName="RFF_TerraformBasicBase">
 		<defName>PoorSoil-MarginalSoil</defName>
 		<label>Poor soil ► Marginal soil</label>
@@ -757,6 +822,8 @@
 			<li Class="FertileFields.Terrain">
 				<above>
 					<li>Soil</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">GrasslandSoil</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">GlowforestSoil</li>
 					<li>MossyTerrain</li>
 				</above>
 				<result>SoilRich</result>
@@ -793,9 +860,7 @@
 	</ThingDef>
 
 
-	<!--
-–––––––––––––––––––––––––––––––––   Misc   –––––––––––––––––––––––––––––––––
--->
+	<!--––––––––––––––––––––––––––––––––   Misc   ––––––––––––––––––––––––––––––-->
 
 	<ThingDef ParentName="RFF_TerraformAdvancedBase">
 		<defName>Stone-RockyDirt</defName>
@@ -820,12 +885,12 @@
 					<li>Marble_Smooth</li>
 					<li>Marble_Rough</li>
 					<li>Marble_RoughHewn</li>
-					<!--          <li>Claystone_Smooth</li>
-          <li>Claystone_Rough</li>
-          <li>Claystone_RoughHewn</li>
-          <li>LavaRock_Rough</li>
-          <li>LavaRock_RoughHewn</li>
-          <li>LavaRock_Smooth</li> -->
+					<!--<li>Claystone_Smooth</li>
+                      <li>Claystone_Rough</li>
+                      <li>Claystone_RoughHewn</li>
+                      <li>LavaRock_Rough</li>
+                      <li>LavaRock_RoughHewn</li>
+                      <li>LavaRock_Smooth</li> -->
 				</above>
 				<result>RockySoil</result>
 				<productSpecial>Natural</productSpecial>
@@ -868,7 +933,6 @@
 					<li>WaterDeep</li>
 					<li>WaterMovingChestDeep</li>
 					<li>WaterOceanDeep</li>
-					<li>FishingPierFloorDeepWater</li>
 				</above>
 				<result>WaterShallow</result>
 			</li>
@@ -1036,5 +1100,97 @@
       <WorkToBuild>420</WorkToBuild>
     </statBases>
   </ThingDef>-->
+
+<!--––––––––––––––––––––––––––––––––   Terraform for defend   ––––––––––––––––––––––––––––––-->
+
+	<ThingDef ParentName="RFF_TerraformBasicBase">
+		<defName>RockyDirt-LoamSoil</defName>
+		<label>Rocky dirt ► Loam soil</label>
+		<description>↑ Rocky dirt\n\n↓ Loam soil</description>
+		<uiIconPath>UI/Icons/Terraforming/RockyDirt-LoamSoil</uiIconPath>
+		<modExtensions>
+			<li Class="FertileFields.Terrain">
+				<above>
+					<li>RockySoil</li>
+				</above>
+				<result>LoamSoil</result>
+			</li>
+		</modExtensions>
+		<statBases>
+			<WorkToBuild>1140</WorkToBuild>
+		</statBases>
+		<costList>
+			<SoftClay>10</SoftClay>
+			<SandResource>10</SandResource>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="RFF_TerraformBasicBase">
+		<defName>LoamSoil-RockyDirt</defName>
+		<label>Loam soil ► Rocky dirt</label>
+		<description>↑ Loam soil \n\n↓ Rocky dirt\n\n  ▪ 10 soft clay\n  ▪ 10 sand</description>
+		<uiIconPath>UI/Icons/Terraforming/LoamSoil-RockyDirt</uiIconPath>
+		<modExtensions>
+			<li Class="FertileFields.Terrain">
+				<above>
+					<li>LoamSoil</li>
+				</above>
+				<result>RockySoil</result>
+				<products>
+					<SoftClay>10</SoftClay>
+					<SandResource>10</SandResource>
+				</products>
+			</li>
+		</modExtensions>
+		<statBases>
+			<WorkToBuild>1140</WorkToBuild>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="RFF_TerraformAdvancedBase">
+		<defName>RockyDirt-Quicksand</defName>
+		<label>RockyDirt ► Quicksand</label>
+		<description>↑ Rocky dirt\n\n↓ Quicksand</description>
+		<uiIconPath>UI/Icons/Terraforming/RockyDirt-Quicksand</uiIconPath>
+		<modExtensions>
+			<li Class="FertileFields.Terrain">
+				<above>
+					<li>RockySoil</li>
+				</above>
+				<result>Quicksand</result>
+			</li>
+		</modExtensions>
+		<statBases>
+			<WorkToBuild>1240</WorkToBuild>
+		</statBases>
+		<costList>
+			<SoftClay>10</SoftClay>
+			<SandResource>10</SandResource>
+			<Polymers>2</Polymers>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="RFF_TerraformAdvancedBase">
+		<defName>Quicksand-RockyDirt</defName>
+		<label>Quicksand ► Rocky dirt</label>
+		<description>↑ Quicksand \n\n↓ Rocky dirt\n\n  ▪ 10 soft clay\n  ▪ 10 sand\n  ▪ 2 polymers</description>
+		<uiIconPath>UI/Icons/Terraforming/Quicksand-RockyDirt</uiIconPath>
+		<modExtensions>
+			<li Class="FertileFields.Terrain">
+				<above>
+					<li>Quicksand</li>
+				</above>
+				<result>RockySoil</result>
+				<products>
+					<SoftClay>10</SoftClay>
+					<SandResource>10</SandResource>
+					<Polymers>2</Polymers>
+				</products>
+			</li>
+		</modExtensions>
+		<statBases>
+			<WorkToBuild>1240</WorkToBuild>
+		</statBases>
+	</ThingDef>
 
 </Defs>

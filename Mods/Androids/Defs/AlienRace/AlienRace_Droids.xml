@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<AlienRace.ThingDef_AlienRace ParentName="SK_BasePawn">
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<defName>ChjDroid</defName>
 		<label>Droid</label>
 		<description>A race of rudimentary humanlike worker robots.\n\nUsually found toiling around in colonies around the rim which got a resident tinkerer.\n\nNot capable of sapience, however their relative cheap cost and ability to work around the clock make them valuable workers.</description>
@@ -145,7 +145,8 @@
 			<graphicPaths>
 				<body>Things/ChjDroid/Body/</body>
 				<head>
-					<!--<path>Things/ChjDroid/Head/</path>-->
+					<!-- Fallback for xenotype HeadTypeDefs not present below. -->
+					<path>Things/ChjDroid/Head/Male_Average_Normal</path>
 					<headtypeGraphics>
 						<Male_AverageNormal>Things/ChjDroid/Head/Male_Average_Normal</Male_AverageNormal>
 					</headtypeGraphics>
@@ -272,6 +273,7 @@
 			<Radiation>0</Radiation>
 			<GermResistance>1</GermResistance>
 			<GermContainment>1</GermContainment>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -481,7 +483,7 @@
 		</modExtensions>
 	</AlienRace.ThingDef_AlienRace>
 
-	<AlienRace.ThingDef_AlienRace ParentName="SK_BasePawn">
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<defName>ChjBattleDroid</defName>
 		<label>Battle droid</label>
 		<description>A race of rudimentary humanlike warrior robots.\n\nUsually found guarding the homes of the wealthy and offices of mega corporations. They show no mercy upon targets who fail to identify themselves. Are traditionally armed with miniguns and core launchers.</description>
@@ -499,11 +501,6 @@
 				<whiteApparelList>
 					<li>ChjAndroid_ChemfuelGenerator</li>
 					<li>Apparel_ShieldBelt</li>
-					<li>Apparello_SheildGaurdian</li>
-					<li>ShieldTribal</li>
-					<li>ShieldBone</li>
-					<li>Buckler</li>
-					<li>MedievalShield</li>
 					<li>CE_Apparel_BallisticShield</li>
 					<li>CE_Apparel_TacVest</li>
 					<li>CE_Apparel_Backpack</li>
@@ -651,7 +648,8 @@
 			<graphicPaths>
 				<body>Things/ChjBattleDroid/Body/</body>
 				<head>
-					<!--<path>Things/ChjBattleDroid/Head</path>-->
+					<!-- Fallback for xenotype HeadTypeDefs not present below. -->
+					<path>Things/ChjBattleDroid/Head/Male_Average_Normal</path>
 					<headtypeGraphics>
 						<Male_AverageNormal>Things/ChjBattleDroid/Head/Male_Average_Normal</Male_AverageNormal>
 					</headtypeGraphics>

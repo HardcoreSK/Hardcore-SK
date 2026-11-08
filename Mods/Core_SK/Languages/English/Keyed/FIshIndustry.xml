@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Fishing -->
+	<!-- UI -->
+
+	<FishIndustry.Fish_Count>Counting</FishIndustry.Fish_Count>
+	<FishIndustry.Small_Fish>Small Fish</FishIndustry.Small_Fish>
+	<FishIndustry.Big_Fish>Big Fish</FishIndustry.Big_Fish>
+	<FishIndustry.Fish_Meat>Fish Meat</FishIndustry.Fish_Meat>
+	<FishIndustry.Trap_Full>Trap is full.</FishIndustry.Trap_Full>
+	<FishIndustry.Water_Frozen>Water is frozen.</FishIndustry.Water_Frozen>
+	<FishIndustry.NoFish>There are no fish</FishIndustry.NoFish>
+	<FishIndustry.NoActivity>No Activity</FishIndustry.NoActivity>
+	<FishIndustry.SomeActivity>There is some activity</FishIndustry.SomeActivity>
+	<FishIndustry.FishNearby>There are fish nearby</FishIndustry.FishNearby>
+	<FishIndustry.Narrow_Funnel>Narrow Funnel</FishIndustry.Narrow_Funnel>
+	<FishIndustry.Wide_Funnel>Wide Funnel</FishIndustry.Wide_Funnel>
+	<FishIndustry.Catch_Small_Fish>Catch small fish.</FishIndustry.Catch_Small_Fish>
+	<FishIndustry.Catch_Big_Fish>Catch big fish.</FishIndustry.Catch_Big_Fish>
+   
+	<!-- PlaceWorker -->
+	<FishIndustry.FishingPier_InvalidBiome>No fish lives in this biome.</FishIndustry.FishingPier_InvalidBiome>
+	<FishIndustry.TooCloseFishingPier>Too close from another fishing spot.</FishIndustry.TooCloseFishingPier>
+	<FishIndustry.TooCloseFishingZone>Too close from a fishing zone.</FishIndustry.TooCloseFishingZone>
+	<FishIndustry.FishingPier_MustTouchBank>Fishing spot must touch a bank.</FishIndustry.FishingPier_MustTouchBank>
+	<FishIndustry.FishingPier_PierMustBeOnWater>Fishing spot must be placed on water.</FishIndustry.FishingPier_PierMustBeOnWater>
+	<FishIndustry.FishingPier_TooFewWater>Too few water</FishIndustry.FishingPier_TooFewWater>
+	<FishIndustry.FishingPier_ZoneMustBeOnWater>Fishing zone must be placed on water.</FishIndustry.FishingPier_ZoneMustBeOnWater>
+
+	<!-- Alerts -->
+	<FishIndustry.NeedHopperLabel>Need food hopper</FishIndustry.NeedHopperLabel>
+	<FishIndustry.NeedHopperExplanation>You have an aquaculture basin with no hopper next to it.\n\nTo breed, aquaculture basins must draw from an adjacent hopper filled with raw vegetable food or animal products.\n\nBuild a hopper adjacent to the aquaculture basin.</FishIndustry.NeedHopperExplanation>
+
+	<FishIndustry.IdleAquacultureBasinLabel>Idle aquaculture basin</FishIndustry.IdleAquacultureBasinLabel>
+	<FishIndustry.IdleAquacultureBasinExplanation>You have an idle aquaculture basin.\n\nEnsure a hunter can access it to start the breeding process. Select the basin if you want to modify the bred species.</FishIndustry.IdleAquacultureBasinExplanation>
+
+	<FishIndustry.CriticalIssueLabel>Aquaculture basin critical issue</FishIndustry.CriticalIssueLabel>
+	<FishIndustry.CriticalIssueExplanation>There is a critical issue with one of your basin.\n\nBred fishes will die if it lasts for too long! You should check the following requirements are met:\n- power supply,\n- food availability,\- correct maintenance.</FishIndustry.CriticalIssueExplanation>
+
+	<!-- Message -->
+	<FishIndustry.FishesDied>Bred fishes have died in an aquaculture basin. You should check its conditions.</FishIndustry.FishesDied>
+	<FishIndustry.FisherBitten> was bitten by a alligar while fishing.</FishIndustry.FisherBitten>
+
+	<!-- Gizmo -->
+	<FishIndustry.ChangeSpecies>Change species</FishIndustry.ChangeSpecies>
+	<FishIndustry.ChangeSpeciesDescription1>The aquaculture basin will start breeding </FishIndustry.ChangeSpeciesDescription1>
+	<FishIndustry.ChangeSpeciesDescription2>once a colonist has come to change the parameters. Click to select another species.</FishIndustry.ChangeSpeciesDescription2>
+	<FishIndustry.FishLabelPluralMashgon>snackerals</FishIndustry.FishLabelPluralMashgon>
+	<FishIndustry.FishLabelPluralBlueblade>bass</FishIndustry.FishLabelPluralBlueblade>
+	<FishIndustry.FishLabelPluralTailteeth>alligars</FishIndustry.FishLabelPluralTailteeth>
+	<FishIndustry.FishDescriptionMashgon>short breeding time but low meat yield</FishIndustry.FishDescriptionMashgon>
+	<FishIndustry.FishDescriptionBlueblade>medium breeding time and decent meat yield</FishIndustry.FishDescriptionBlueblade>
+	<FishIndustry.FishDescriptionTailteeth>high breeding time but yields prime meat</FishIndustry.FishDescriptionTailteeth>
+	<FishIndustry.Breeding>Breeding </FishIndustry.Breeding>
+	<FishIndustry.BasinIsBreeding>This aquaculture basin is breeding </FishIndustry.BasinIsBreeding>
+	<FishIndustry.WaitingForEggs>Waiting for eggs</FishIndustry.WaitingForEggs>
+	<FishIndustry.ClickToCancel>Click to cancel breeding </FishIndustry.ClickToCancel>
+	<FishIndustry.EnsureHaveHunterAndEggs>Ensure you have an available hunter and some eggs (a piece of meat) to start breeding.</FishIndustry.EnsureHaveHunterAndEggs>
+	<FishIndustry.Breed>Breed </FishIndustry.Breed>
+	<FishIndustry.ClickToStart>Click to start breeding </FishIndustry.ClickToStart>
+	<FishIndustry.BreedingRequestedMashgon>Snackerals breeding requested.</FishIndustry.BreedingRequestedMashgon>
+	<FishIndustry.BreedingRequestedBlueblade>Bass breeding requested.</FishIndustry.BreedingRequestedBlueblade>
+	<FishIndustry.BreedingRequestedTailteeth>Alligars breeding requested.</FishIndustry.BreedingRequestedTailteeth>
+	<FishIndustry.BreedingRequestedButNoEggsMashgon>Snackerals breeding requested however you have no mashgon egg in storage to start breeding.</FishIndustry.BreedingRequestedButNoEggsMashgon>
+	<FishIndustry.BreedingRequestedButNoEggsBlueblade>Bass breeding requested however you have no blueblade egg in storage to start breeding.</FishIndustry.BreedingRequestedButNoEggsBlueblade>
+	<FishIndustry.BreedingRequestedButNoEggsTailteeth>Alligars breeding requested however you have no tailteeth egg in storage to start breeding.</FishIndustry.BreedingRequestedButNoEggsTailteeth>
+
+	<FishIndustry.AllowFishingLabel>Allow fishing</FishIndustry.AllowFishingLabel>
+	<FishIndustry.AllowFishingDesc>Allow your hunters to fish in this area.</FishIndustry.AllowFishingDesc>
+	<FishIndustry.AllowUsingCornLabel>Allow using grain</FishIndustry.AllowUsingCornLabel>
+	<FishIndustry.AllowUsingCornDesc>Allow your hunters to use bait to catch fishes faster and more reliably.</FishIndustry.AllowUsingCornDesc>
+
+	<!-- Inspect String -->
+	<FishIndustry.ProgressLabel>Progress: </FishIndustry.ProgressLabel>
+	<FishIndustry.ProgressLabelNotBreeding>Progress: not breeding</FishIndustry.ProgressLabelNotBreeding>
+	<FishIndustry.WaterQuality>Water quality: {0}%</FishIndustry.WaterQuality>
+	<FishIndustry.WaterQualityFishesHealth>Water quality/fishes health: {0}%/{1}%</FishIndustry.WaterQualityFishesHealth>
+	<FishIndustry.NeedsMaintenanceNow>Needs maintenance now </FishIndustry.NeedsMaintenanceNow>
+	<FishIndustry.Issue>Issue</FishIndustry.Issue>
+	<FishIndustry.Issues>Issues</FishIndustry.Issues>
+	<FishIndustry.Issue_MicroFungus>micro fungus</FishIndustry.Issue_MicroFungus>
+	<FishIndustry.Issue_NoFood>no food</FishIndustry.Issue_NoFood>
+	<FishIndustry.Issue_CriticalWaterQuality>critical water quality</FishIndustry.Issue_CriticalWaterQuality>
+	<FishIndustry.Issue_BadlyMaintained>badly maintained</FishIndustry.Issue_BadlyMaintained>
+
+	<FishIndustry.FishStock>Fish stock: {0}</FishIndustry.FishStock>
+	<FishIndustry.TooSmallZone>Too small zone</FishIndustry.TooSmallZone>
+	<FishIndustry.NotViableNow>Not viable now</FishIndustry.NotViableNow>
+	<FishIndustry.SpeciesInZone>Species in zone: </FishIndustry.SpeciesInZone>
+	<FishIndustry.AffectedBy>Affected by: </FishIndustry.AffectedBy>
+	<FishIndustry.AffectedByBiome>biome</FishIndustry.AffectedByBiome>
+	<FishIndustry.AffectedByToxicFallout>toxic fallout</FishIndustry.AffectedByToxicFallout>
+	<FishIndustry.AffectedByBadTemperature>non-ideal temperature</FishIndustry.AffectedByBadTemperature>
+
+	<!-- Letters -->
+	<FishIndustry.LetterLabelMicroFungus>Micro fungus</FishIndustry.LetterLabelMicroFungus>
+	<FishIndustry.MicroFungus>Some of your aquaculture basins have been infected by a strange aquatic fungus.\nIt seems to consume all the water's oxygen.\nLet's hope the fishes will survive this deprivation.</FishIndustry.MicroFungus>
+
+	<FishIndustry.LetterLabelSunkenTreasure>Sunken treasure!</FishIndustry.LetterLabelSunkenTreasure>
+	<FishIndustry.SunkenTreasure>{0} has found a sunken treasure while fishing! What a good catch!\n</FishIndustry.SunkenTreasure>
+
+	<DeadMarineLabel>Dead marine</DeadMarineLabel>
+	<DeadMarineDesc> has cought a dead body while fishing!\n\n'This is really disgusting but look at his gear! This guy was probably a Mining Co. security member. I wonder what happend to him...'\n"</DeadMarineDesc>
+
+	<!-- Zone -->
+	<FishIndustry.FishingZone>Fishing zone</FishIndustry.FishingZone>
+	<FishIndustry.DesignatorFishingZoneDesc>Create a zone where your colonists will try to fish.</FishIndustry.DesignatorFishingZoneDesc>
+   
+</LanguageData>

@@ -39,14 +39,43 @@
     <label>shock</label>
     <description>Special non-lethal shock type ammo.</description>
   </CombatExtended.AmmoCategoryDef>
+  
   <CombatExtended.AmmoCategoryDef>
     <defName>LaserUST</defName>
     <label>unstable laser beam</label>
     <description>Unstable laser beam (can ignite objects).</description>
   </CombatExtended.AmmoCategoryDef>
+  
   <CombatExtended.AmmoCategoryDef>
     <defName>LaserST</defName>
     <label>stable laser beam</label>
     <description>Stable laser beam without igniting objects.</description>
   </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>LaserEM</defName>
+    <label>electromagnetic laser beam</label>
+    <description>Electromagnetic laser beam (can stun mechs).</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Blaster</defName>
+    <label>blaster bolt</label>
+    <description>blaster bolt.</description>
+  </CombatExtended.AmmoCategoryDef>
+
+  <CombatExtended.AmmoCategoryDef>
+    <defName>StoneSlingBall</defName>
+    <label>stone sling ball</label>
+    <labelShort>stone</labelShort>
+    <description>Simple stone sling ball.</description>
+  </CombatExtended.AmmoCategoryDef>
+
+   <CombatExtended.AmmoCategoryDef>
+    <defName>MetallicSlingBall</defName>
+    <label>metallic sling ball</label>
+    <labelShort>metallic</labelShort>
+    <description>Simple metallic sling ball.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
 </Defs>

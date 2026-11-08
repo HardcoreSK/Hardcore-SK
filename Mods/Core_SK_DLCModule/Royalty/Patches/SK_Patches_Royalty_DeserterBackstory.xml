@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- Custom spawn category for the Deserter squad scenario: PawnKind backstory filters use it
+	     to keep premade (solid) bios from replacing the fixed Deserter65 adulthood -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BackstoryDef[defName="Deserter65"]/spawnCategories</xpath>
+		<value>
+			<li>DeserterSquad</li>
+		</value>
+	</Operation>
+
+</Patch>

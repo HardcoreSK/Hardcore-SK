@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ScenarioDef>
+	<ScenarioDef ParentName="ScenarioBase">
 		<defName>BadTrip</defName>
 		<label>Bad Trip</label>
 		<description>You, as truly law-abiding citizens of the intergalactic Hegemony, were resting peacefully and lawfully in a medical module on a station near the Ringworld Epsilon, when a sudden attack by mechanoids interrupted your law-abiding vacation, and you and your companions had to urgently separate your module from the main station. Since there was virtually no food in your module, you made the volitional decision to disconnect and dump your bodies from the cryo-capsules and put yourselves in them, trusting that the space wind would carry you to a planet with a peaceful civilization.</description>
@@ -54,8 +54,8 @@
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>TFJ_Tool_Multitool</thingDef>
-					<stuff>Plasteel</stuff>
+					<thingDef>Tool_Multitool</thingDef>
+					<stuff>Steel</stuff>
 					<count>4</count>
 				</li>
 
@@ -92,7 +92,7 @@
 					<def>StartingThing_Defined</def>
 					<visible>false</visible>
 					<thingDef>DrugLab</thingDef>
-					<stuff>Plasteel</stuff>
+					<stuff>Steel</stuff>
 					<count>2</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
@@ -152,25 +152,25 @@
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<visible>false</visible>
-					<thingDef>tequila_Crate</thingDef>
+					<thingDef>Crate_Tequila</thingDef>
 					<count>5</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<visible>false</visible>
-					<thingDef>rum_Crate</thingDef>
+					<thingDef>Crate_Rum</thingDef>
 					<count>4</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<visible>false</visible>
-					<thingDef>Whiskey_Crate</thingDef>
+					<thingDef>Crate_Whiskey</thingDef>
 					<count>1</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<visible>false</visible>
-					<thingDef>vodka</thingDef>
+					<thingDef>Crate_Vodka</thingDef>
 					<count>1</count>
 				</li>
 				
@@ -224,7 +224,7 @@
 					<visible>false</visible>
 					<project>Beds_C1</project>
 				</li>
-				<li MayRequire="wit.expandedroofing" Class="ScenPart_StartingResearch">
+				<li MayRequire="SolarWeb.Stratum" Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>
 					<visible>false</visible>
 					<project>Tables_C1</project>

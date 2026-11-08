@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- fix displaying a radius of 26 when constructing a Punisher, use minRange (9.8) instead -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PPCRailgun"]/specialDisplayRadius</xpath>
+        <value>
+            <specialDisplayRadius>9.8</specialDisplayRadius>
+        </value>
+    </Operation>
+</Patch>

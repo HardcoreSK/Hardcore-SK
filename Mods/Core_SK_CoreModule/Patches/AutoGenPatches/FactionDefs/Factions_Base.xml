@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/FactionDef[@Name="FactionBase"]</xpath>
+    <value>
+		<attackersDownPercentageRangeForAutoFlee>0.52~0.72</attackersDownPercentageRangeForAutoFlee>
+    </value>
+  </Operation>
+
+</Patch>

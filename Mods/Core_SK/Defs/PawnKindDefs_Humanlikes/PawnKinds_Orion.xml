@@ -55,6 +55,19 @@
 			<li>ProtectiveExoskeleton</li>
 			<li>AIChip</li>
 		</techHediffsRequired>
+		<xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.03</Dirtmole>
+			<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.03</Hussar>
+			<Waster MayRequire="Ludeon.RimWorld.Biotech">0.03</Waster>
+			<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0.03</Pigskin>
+			<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.03</Neanderthal>
+			<Impid MayRequire="Ludeon.RimWorld.Biotech">0.03</Impid>
+			<Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie>
+			<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.03</Yttakin>
+			<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.03</Starjack>
+		  </xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>	
 
 	<!-- Chaser -->
@@ -71,7 +84,7 @@
 			<max>12000</max>
 		</apparelMoney>
 		<apparelRequired>
-			<li>Apparello_XcomOne</li>
+			<li>Apparel_OverallsModified</li>
 		</apparelRequired>
 		<apparelTags>
 			<li>OrionLight</li>
@@ -160,7 +173,7 @@
 			<max>12000</max>
 		</apparelMoney>
 		<apparelRequired>
-			<li>Apparello_XcomOne</li>
+			<li>Apparel_OverallsModified</li>
 		</apparelRequired>
 		<apparelTags>
 			<li>OrionMedium</li>
@@ -222,11 +235,13 @@
 		<techHediffsRequired>
 			<li>AuxiliaryAI_Commando</li>
 		</techHediffsRequired>
+		<useFactionXenotypes>false</useFactionXenotypes>
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
-			<Baseline_Nova MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Nova>
+			<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.03</Hussar>
+			<Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie>
+			<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.03</Starjack>
 		  </xenotypeChances>
-		  
 		</xenotypeSet>
 	</PawnKindDef>
 
@@ -288,7 +303,7 @@
 			<max>12000</max>
 		</apparelMoney>
 		<apparelRequired>
-			<li>Apparello_XcomOneCraft</li>
+			<li>Apparel_OverallsModified</li>
 		</apparelRequired>
 		<apparelTags>
 			<li>OrionMedium</li>
@@ -376,7 +391,7 @@
 			<max>12000</max>
 		</apparelMoney>
 		<apparelRequired>
-			<li>Apparello_XcomOne</li>
+			<li>Apparel_OverallsModified</li>
 		</apparelRequired>
 		<apparelTags>
 			<li>OrionScout</li>
@@ -438,11 +453,13 @@
 		<techHediffsRequired>
 			<li>AuxiliaryAI_Commando</li>
 		</techHediffsRequired>
+		<useFactionXenotypes>false</useFactionXenotypes>
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
-			<Baseline_Nova MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Nova>
+			<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.03</Hussar>
+			<Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie>
+			<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.03</Starjack>
 		  </xenotypeChances>
-		  
 		</xenotypeSet>
 	</PawnKindDef>
 
@@ -474,7 +491,7 @@
 			<max>12000</max>
 		</apparelMoney>
 		<apparelRequired>
-			<li>Apparello_XcomOneCraft</li>
+			<li>Apparel_OverallsModified</li>
 		</apparelRequired>
 		<apparelTags>
 			<li>OrionLight</li>
@@ -600,11 +617,13 @@
 		<techHediffsRequired>
 			<li>AuxiliaryAI_Commando</li>
 		</techHediffsRequired>
+		<useFactionXenotypes>false</useFactionXenotypes>
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
-			<Baseline_Nova MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Nova>
+			<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.03</Hussar>
+			<Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie>
+			<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.03</Starjack>
 		  </xenotypeChances>
-		  
 		</xenotypeSet>
 	</PawnKindDef>	
 
@@ -639,7 +658,7 @@
 			<li>BallisticShield</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>Apparello_XcomOneCraft</li>
+			<li>Apparel_OverallsModified</li>
 			<li>Apparel_ShieldBelt</li>
 		</apparelRequired>
 		<weaponMoney>

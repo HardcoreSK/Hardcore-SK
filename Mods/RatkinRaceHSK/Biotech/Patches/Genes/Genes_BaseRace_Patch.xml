@@ -1,7 +1,22 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationReplace">
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]</xpath>
+		<value>
+			<statBases Merge="True">
+				<ToxicResistance>0.05</ToxicResistance>
+				<GermResistance>0.05</GermResistance>
+				<MoveSpeed>4.85</MoveSpeed>
+				<ComfyTemperatureMin>11</ComfyTemperatureMin>
+				<ImmunityGainSpeed>1</ImmunityGainSpeed>
+				<AimingDelayFactor>1</AimingDelayFactor>
+				<MeleeDodgeChance>1.05</MeleeDodgeChance>
+			</statBases>
+		</value>
+	</Operation>
+
+	<!-- <Operation Class="PatchOperationReplace">
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/statBases/ToxicResistance</xpath>
 		<value>
 			<ToxicResistance>0.05</ToxicResistance>
@@ -41,17 +56,14 @@
 		<value>
 			<AimingDelayFactor>1</AimingDelayFactor>
 		</value>
-	</Operation>
+	</Operation> -->
 
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/statBases/NightVisionEfficiency</xpath>
-	</Operation>
 
-	<Operation Class="PatchOperationReplace">
+	<!-- 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/statBases/MeleeDodgeChance</xpath>
 		<value>
 			<MeleeDodgeChance>1.05</MeleeDodgeChance>
 		</value>
-	</Operation>
+	</Operation> -->
 
 </Patch>	

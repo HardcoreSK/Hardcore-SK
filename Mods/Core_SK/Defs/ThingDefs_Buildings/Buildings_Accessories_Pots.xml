@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--
+    DefOverwrite list:
+    PlantPot
+    -->
+    
+    <!--Pots-->
+
+	<ThingDef ParentName="PlantGrowerBase">
+		<defName>TuskPot</defName>
+		<label>tusk pot</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Pots/abstractflowerbed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.5, 0.2, 0.5)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<drawSize>(1.0,1.0)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<size>(1,1)</size>
+		<fillPercent>0.20</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>360</WorkToBuild>
+			<Beauty>3</Beauty>
+			<Bulk>15</Bulk>
+			<Mass>5</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
+		</statBases>
+		<costList>
+			<Fertilizer>5</Fertilizer>
+		</costList>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>	
+		<description>Designed by the honorable Shinzhor of Shinzaram, this lovely horn offers a charming alternative to plant your flowers in.</description>
+		<fertility>1.0</fertility>
+		<building>
+			<defaultPlantToGrow>Plant_Dandelion</defaultPlantToGrow>
+			<uninstallWork>200</uninstallWork>
+			<sowTag>Decorative</sowTag>
+			<paintable>true</paintable>
+		</building>
+		<rotatable>false</rotatable>
+		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>Accessory_A1</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantGrowerBase">
+		<defName>DecoratedPot</defName>
+		<label>decorated pot</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Pots/decoratedflowerpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.0,1.0)</drawSize>
+			<shadowData>
+				<volume>(1.8, 0.2, 0.5)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<size>(1,1)</size>
+		<fillPercent>0.20</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>410</WorkToBuild>
+			<Beauty>10</Beauty>
+			<Bulk>15</Bulk>
+			<Mass>17</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		<costList>
+			<Fertilizer>5</Fertilizer>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Plastic</li>
+			<li>Precious</li>
+			<li>Glass</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<description>A plant pot that can hold decorative flowers to improve the mood of people nearby.</description>
+		<fertility>1.0</fertility>
+		<building>
+			<defaultPlantToGrow>Plant_Dandelion</defaultPlantToGrow>
+			<uninstallWork>200</uninstallWork>
+			<sowTag>Decorative</sowTag>
+			<paintable>true</paintable>
+		</building>
+		<rotatable>true</rotatable>
+		<researchPrerequisites>
+			<li>Accessory_B1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantGrowerBase">
+		<defName>PentaPlantPot</defName>
+		<label>penta plant pot</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Pots/pentaflowerbed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.5, 0.2, 0.5)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<drawSize>(1.0,1.0)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<size>(1,1)</size>
+		<fillPercent>0.20</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>810</WorkToBuild>
+			<Beauty>8</Beauty>
+			<Bulk>20</Bulk>
+			<Mass>7</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">9</StyleDominance>
+		</statBases>
+		<costList>
+			<Fertilizer>7</Fertilizer>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Plastic</li>
+			<li>Precious</li>
+			<li>Glass</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>	
+		<description>Roses are red, violets are blue, we love our Penta Pot, and so will you!</description>
+		<fertility>1.0</fertility>
+		<building>
+			<defaultPlantToGrow>Plant_Dandelion</defaultPlantToGrow>
+			<uninstallWork>200</uninstallWork>
+			<sowTag>Decorative</sowTag>
+			<paintable>true</paintable>
+		</building>
+		<rotatable>false</rotatable>
+		<researchPrerequisites>
+			<li>Accessory_B1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+	</ThingDef>
+</Defs>

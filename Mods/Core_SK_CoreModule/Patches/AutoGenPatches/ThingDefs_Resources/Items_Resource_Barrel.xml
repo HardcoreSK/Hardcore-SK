@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="ReinforcedBarrel"]</xpath>
+    <value Merge="true">
+      <statBases DeepReplace="true">
+        <MaxHitPoints>75</MaxHitPoints>
+        <MarketValue>600</MarketValue>
+        <Mass>10</Mass>
+        <Bulk>8</Bulk>
+        <Flammability>0.1</Flammability>
+        <DeteriorationRate>1.0</DeteriorationRate>
+      </statBases>
+      <!-- Retain the Def for saves, but exclude it from new rewards and trader stock. -->
+      <thingSetMakerTags DeepReplace="true" />
+      <tradeability>Sellable</tradeability>
+      <preventSpawningInResourcePod>true</preventSpawningInResourcePod>
+    </value>
+  </Operation>
+</Patch>

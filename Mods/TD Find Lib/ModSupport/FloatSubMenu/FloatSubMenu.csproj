@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <OutputType>Library</OutputType>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <AssemblyName>TDFindLib_$(MSBuildProjectName)</AssemblyName>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <RootNamespace>TD$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <Version>1.7</Version>
+    	<GenerateDependencyFile>false</GenerateDependencyFile>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>portable</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>..\..\$(Version)\ModSupport\$(MSBuildProjectName)\Assemblies\</OutputPath>
+        <DefineConstants>DEBUG</DefineConstants>
+        <WarningLevel>4</WarningLevel>
+        <Prefer32Bit>false</Prefer32Bit>
+    </PropertyGroup>
+    <!-- Release configuration -->
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <DebugType>embedded</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>..\..\$(Version)\ModSupport\$(MSBuildProjectName)\Assemblies\</OutputPath>
+        <WarningLevel>4</WarningLevel>
+        <Prefer32Bit>false</Prefer32Bit>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+        <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+        <PackageReference Include="Krafs.Rimworld.Ref" Version="$(Version).*-*" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\Source\TD_Find_Lib.csproj">
+          <Private>False</Private>
+        </ProjectReference>
+    </ItemGroup>
+    <ItemGroup>
+        <Reference Include="FloatSubMenu">
+            <HintPath>..\..\Workshop\steamapps\workshop\content\294100\2864015430\$(Version)\Assemblies\FloatSubMenu.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+</Project>

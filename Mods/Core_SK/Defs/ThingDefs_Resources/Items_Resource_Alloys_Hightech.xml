@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Tungsten</defName>
 		<label>tungsten alloy</label>
 		<description>Tungsten, also known as Wolfram or Wolframite, is a hard, rare metal. Tungsten's hardness and high density give it military applications in penetrative projectiles. Tungsten compounds are also often used as industrial catalysts. Tungsten is not a magnetic metal.</description>
@@ -18,7 +18,7 @@
 			<MarketValue>40</MarketValue>
 			<StuffPower_Armor_Blunt>1.15</StuffPower_Armor_Blunt>
 			<StuffPower_Armor_Sharp>1.4</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Heat>0.166</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.137</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>-5</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>-5</StuffPower_Insulation_Heat>
 			<SharpDamageMultiplier>1.6</SharpDamageMultiplier>
@@ -34,7 +34,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>StelliteAlloy</defName>
 		<label>stellite alloy</label>
 		<description>Stellite is a magnetic alloy of Cobalt, Chromium and Tungsten designed for increased wear resistance.</description>
@@ -52,7 +52,7 @@
 			<MarketValue>30</MarketValue>
 			<StuffPower_Armor_Blunt>1.5</StuffPower_Armor_Blunt>
 			<StuffPower_Armor_Sharp>1.44</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Heat>0.125</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.112</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>-5</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>-5</StuffPower_Insulation_Heat>
 			<SharpDamageMultiplier>1.35</SharpDamageMultiplier>
@@ -103,8 +103,9 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_ResourceBase">
-		<defName>TitaniumBar</defName>
+	<!--
+	<ThingDef ParentName="ResourceBase">
+		<defName>Plasteel</defName>
 		<label>ferrotitanium alloy</label>
 		<description>Ferrotitanium is an alloy of Steel, Titanium and Carbon Fiber Alloy. It is very durable and somewhat beautiful. Ferrotitanium is not a magnetic metal.</description>
 		<graphicData>
@@ -120,7 +121,7 @@
 			<MarketValue>26</MarketValue>
 			<StuffPower_Armor_Blunt>1.42</StuffPower_Armor_Blunt>
 			<StuffPower_Armor_Sharp>1.47</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Heat>0.137</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.115</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>-5</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>-5</StuffPower_Insulation_Heat>
 			<SharpDamageMultiplier>1.4</SharpDamageMultiplier>
@@ -173,9 +174,10 @@
 		</stuffProps>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 	</ThingDef>
+	-->
 
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>NitinolAlloy</defName>
 		<label>nitinol alloy</label>
 		<description>Nitinol is an alloy of Nickel and Titanium. Nitinol is exceedingly difficult to make due to the exceptionally tight compositional control required, and the tremendous reactivity of Titanium. It is exceptionally durable and somewhat beautiful. Nitinol is not a magnetic metal.</description>
@@ -192,7 +194,7 @@
 			<MarketValue>27</MarketValue>
 			<StuffPower_Armor_Blunt>1.46</StuffPower_Armor_Blunt>
 			<StuffPower_Armor_Sharp>1.43</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Heat>0.14</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.12</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>-5</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>-5</StuffPower_Insulation_Heat>
 			<SharpDamageMultiplier>1.35</SharpDamageMultiplier>
@@ -247,7 +249,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>PobediteAlloy</defName>
 		<label>pobedite alloy</label>
 		<description>Pobedite is a magnetic alloy of Carbon Fiber Alloy, Tungsten and Cobalt. This composite alloy possesses a particularly high hardness, similar to that of a diamond.</description>
@@ -265,7 +267,7 @@
 			<MarketValue>33</MarketValue>
 			<StuffPower_Armor_Blunt>1.62</StuffPower_Armor_Blunt>
 			<StuffPower_Armor_Sharp>1.56</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Heat>0.164</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.133</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>-5</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>-5</StuffPower_Insulation_Heat>
 			<SharpDamageMultiplier>1.4</SharpDamageMultiplier>
@@ -317,7 +319,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Titanium</defName>
 		<label>titanium alloy</label>
 		<description>Titanium is a chemical element. It is a lustrous transition metal with a silver color, low density and high strength. It is highly resistant to corrosion in sea water, aqua regia and chlorine. Titanium is paramagnetic (it becomes attracted to magnetic metals to strengthen the magnetic bond).</description>
@@ -334,7 +336,7 @@
 			<MarketValue>45</MarketValue>
 			<StuffPower_Armor_Blunt>0.95</StuffPower_Armor_Blunt>
 			<StuffPower_Armor_Sharp>1.5</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Heat>0.14</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.12</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>-5</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>-5</StuffPower_Insulation_Heat>
 			<SharpDamageMultiplier>1.48</SharpDamageMultiplier>
@@ -389,7 +391,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>AlphaPoly</defName>
 		<label>alpha poly</label>
 		<description>The first iteration in artificially constructed, atomically assembled dense matter. This man-made, extremely rare material is only assembled in high end matter assemblers and is good for building structures in the chromosphere of stars.</description>
@@ -406,7 +408,7 @@
 			<MarketValue>45</MarketValue>
 			<StuffPower_Armor_Blunt>0.7</StuffPower_Armor_Blunt>
 			<StuffPower_Armor_Sharp>1.6</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Heat>0.16</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.136</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>30</StuffPower_Insulation_Heat>
 			<SharpDamageMultiplier>1.5</SharpDamageMultiplier>
@@ -419,7 +421,6 @@
 		<thingCategories>
 			<li>USLDBar</li>
 		</thingCategories>
-		<tickerType>Normal</tickerType>
 		<stuffProps>
 			<categories>
 				<li>Metallic</li>
@@ -461,7 +462,7 @@
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>BetaPoly</defName>
 		<label>beta poly</label>
 		<description>The second iteration in artificially constructed, atomically assembled dense matter. This man-made, extremely rare material is too expensive to be mass produced, and has only been used as material for indestructible space suits, unstoppable kinetic slugs and containment for miniature black holes.</description>
@@ -478,7 +479,7 @@
 			<MarketValue>65</MarketValue>
 			<StuffPower_Armor_Blunt>1.68</StuffPower_Armor_Blunt>
 			<StuffPower_Armor_Sharp>1.62</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Heat>0.165</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.14</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>40</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>40</StuffPower_Insulation_Heat>
 			<SharpDamageMultiplier>1.58</SharpDamageMultiplier>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/PawnKindDef[defName="Wolf_Timber" or defName="Wolf_Arctic" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_WolfKindBaseDummy</value>
+	</Operation>
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/PawnKindDef[defName="Hare" or defName="Snowhare" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_HareKindBaseDummy</value>
+	</Operation>
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/PawnKindDef[defName="Fox_Fennec" or defName="Fox_Red" or defName="Fox_Arctic" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_AnimalFoxKindBaseDummy</value>
+	</Operation><!--
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/PawnKindDef[defName="Ostrich" or defName="Emu" or defName="Cassowary" or defName="Turkey" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_BigBirdKindBaseDummy</value>
+	</Operation>
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/PawnKindDef[defName="Cougar" or defName="Panther" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SK_BigCatKindBaseDummy</value>
+	</Operation>-->
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/PawnKindDef[defName="SpaceRefugee" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.SpaceRefugeeBaseDummy</value>
+	</Operation>
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/PawnKindDef[defName="Grenadier_Destructive" ]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SK.GrenadierDestructiveBaseDummy</value>
+	</Operation>
+</Patch>

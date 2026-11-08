@@ -1,6 +1,6 @@
 # [Custom Prisoner Interactions](https://steamcommunity.com/sharedfiles/filedetails/?id=2841231775)
 
-![Image](https://i.imgur.com/iCj5o7O.png)
+![Image](https://img.litet.net/logos/Self-Info.png)
 
 Adds various extra options to the prisoner Interactions for Converting and Releasing prisoners.
 
@@ -38,39 +38,43 @@ It also adds the following options for the Convert option
 
 You can use this mod without owning Ideology, as it will still show for the release-option.
 
+If Biotech is active, there is an option to automatically enable hemogen farm on new prisoners.
+
 If you have suggestions for more options, please leave a comment and Ill see if I can add them to the mod.
 
-- [https://steamcommunity.com/sharedfiles/filedetails/?edit=true&id=2841412975](Chinese translation) by Chiwei
-- Supports the work and convert action added by [https://steamcommunity.com/sharedfiles/filedetails/?id=1899474310](Prison Labor)
+- [Chinese translation](https://steamcommunity.com/sharedfiles/filedetails/?edit=true&id=2841412975) by Chiwei
+- Supports the work and convert action added by [Prison Labor](https://steamcommunity.com/sharedfiles/filedetails/?id=1899474310)
 
 This mod replaces the following mods
 
 
-- [https://steamcommunity.com/sharedfiles/filedetails/?id=2702584632](Convert Then Recruit)
-- [https://steamcommunity.com/sharedfiles/filedetails/?id=2705395014](Convert Then Enslave)
-- [https://steamcommunity.com/sharedfiles/filedetails/?id=2838846353](Convert Then Release)
-- [https://steamcommunity.com/sharedfiles/filedetails/?id=2506029522](Release When Healthy)
+- [Convert Then Recruit](https://steamcommunity.com/sharedfiles/filedetails/?id=2702584632)
+- [Convert Then Enslave](https://steamcommunity.com/sharedfiles/filedetails/?id=2705395014)
+- [Convert Then Release](https://steamcommunity.com/sharedfiles/filedetails/?id=2838846353)
+- [Release When Healthy](https://steamcommunity.com/sharedfiles/filedetails/?id=2506029522)
 
 
 
 NOTICE: If any of your current prisoners have any of the custom interactions added by the above mods, please change these to the ”No action” setting before switching to this mod as the game will have trouble showing the prisoner tab if the selected saved action is missing. 
 
-![Image](https://i.imgur.com/Ds0rBAD.png)
-Since modding is just a hobby for me I expect no donations to keep modding. If you still want to show your support you can gift me anything from my [https://store.steampowered.com/wishlist/id/Mlie](Wishlist) or buy me a cup of tea.
+![Image](https://img.litet.net/logos/Self-SupportAndDonations.png)
 
-[https://ko-fi.com/G2G55DDYD]![Image]((https://i.imgur.com/VWG0yff.png))
+Since modding is just a hobby for me I expect no donations to keep modding. If you still want to show your support you can gift me anything from my [Wishlist](https://store.steampowered.com/wishlist/id/Mlie) or buy me a cup of tea.
 
-![Image](https://i.imgur.com/5xwDG6H.png)
+[![Image](https://img.litet.net/logos/Kofi-Small.png)](https://ko-fi.com/G2G55DDYD)
+
+![Image](https://img.litet.net/logos/Self-ReportingIssues.png)
+
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using [https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] or the standalone [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404](Uploader) and command Ctrl+F12
+-  Always post your log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404)
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
--  Use [https://github.com/RimSort/RimSort/releases/latest](RimSort) to sort your mods
+-  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
+ 
 
-
-[https://steamcommunity.com/sharedfiles/filedetails/changelog/2841231775]![Image]((https://img.shields.io/github/v/release/emipa606/CustomPrisonerInteractions?label=latest%20version&style=plastic&labelColor=0070cd&color=white))
+[![Image](https://img.shields.io/github/v/release/emipa606/CustomPrisonerInteractions?label=latest%20version&style=plastic&labelColor=0070cd&color=white)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2841231775) | tags: customization, new options, prison management

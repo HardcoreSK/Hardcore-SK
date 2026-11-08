@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<StructureLayoutDef>
+		<defName>OrbitalItemStash_LAO_ItemRoom</defName>
+		<workerClass>LayoutWorker_AncientStockpile</workerClass>
+		<canHaveMultipleLayoutsInRoom>true</canHaveMultipleLayoutsInRoom>
+		<clearRoomsEntirely>true</clearRoomsEntirely>
+		<minRoomWidth>8</minRoomWidth>
+		<minRoomHeight>8</minRoomHeight>
+
+		<!-- Structure -->
+		<exteriorDoorDef>AncientBlastDoor</exteriorDoorDef>
+		<doorStuffDef>Steel</doorStuffDef>
+		<wallDef>AncientFortifiedWall</wallDef>
+		<wallLampDef>AncientEmergencyLight_Blue</wallLampDef>
+    
+		<roomDefs>
+			<!-- Special -->
+			<OrbitalItemStash_ItemRoom>
+				<countRange>1~2</countRange>
+			</OrbitalItemStash_ItemRoom>
+      
+			<!-- Decorative -->
+			<AncientLivingArea>0.5</AncientLivingArea>
+			<AncientRuinsBarracks>0.75</AncientRuinsBarracks>
+			<InnerCourtyardRooms>
+				<countRange>1~2</countRange>
+			</InnerCourtyardRooms>
+			<OrbitalTransportRoom>0.5</OrbitalTransportRoom>
+
+			<!-- Threats -->
+			<AncientRuinsShelfWithLootRoom>
+				<countRange>2~4</countRange>
+			</AncientRuinsShelfWithLootRoom>
+			<AncientComputerRoom>
+				<countRange>1~4</countRange>
+			</AncientComputerRoom>
+			<AncientStockpileSecurityRoom>0.25</AncientStockpileSecurityRoom>
+			<OrbitalStoreroom>
+				<countRange>2~4</countRange>
+			</OrbitalStoreroom>
+		</roomDefs>
+		<junkScaterrers>
+			<Filth_Trash>
+				<groupsPerHundredCells>0~3</groupsPerHundredCells>
+				<itemsPerGroup>2~4</itemsPerGroup>
+				<groupDistRange>3~5</groupDistRange>
+			</Filth_Trash>
+			<Filth_BlastMark>
+				<groupsPerHundredCells>-2~1</groupsPerHundredCells><!-- ~66% to not appear -->
+				<itemsPerGroup>1~1</itemsPerGroup>
+			</Filth_BlastMark>
+			<Filth_MachineBits>
+				<groupsPerHundredCells>-1~1</groupsPerHundredCells><!-- ~50% to not appear -->
+				<itemsPerGroup>2~4</itemsPerGroup>
+				<groupDistRange>2~4</groupDistRange>
+			</Filth_MachineBits>
+			<RubblePile>
+				<groupsPerHundredCells>2~4</groupsPerHundredCells>
+				<itemsPerGroup>2~4</itemsPerGroup>
+				<groupDistRange>3~5</groupDistRange>
+				<minGroups>1</minGroups>
+			</RubblePile>
+			<Filth_RubbleRock>
+				<groupsPerHundredCells>2~4</groupsPerHundredCells>
+				<itemsPerGroup>3~8</itemsPerGroup>
+				<groupDistRange>3~5</groupDistRange>
+				<minGroups>1</minGroups>
+			</Filth_RubbleRock>
+		</junkScaterrers>
+		<parts>
+			<Breached>0.3</Breached>
+			<Gore>0.8</Gore>
+		</parts>
+	</StructureLayoutDef>
+  
+</Defs>

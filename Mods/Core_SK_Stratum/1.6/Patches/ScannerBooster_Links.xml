@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[(defName="GroundPenetratingScanner" or defName="LongRangeMineralScanner" or defName="OrbitalScanner" or comps/li[contains(@Class, 'Scanner') or contains(compClass, 'Scanner')]) and defName != "SolarWeb-Stratum-RooftopScannerBooster"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[(defName="GroundPenetratingScanner" or defName="LongRangeMineralScanner" or defName="OrbitalScanner" or comps/li[contains(@Class, 'Scanner') or contains(compClass, 'Scanner')]) and defName != "SolarWeb-Stratum-RooftopScannerBooster"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+      <value>
+        <li>SolarWeb-Stratum-RooftopScannerBooster</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[(defName="GroundPenetratingScanner" or defName="LongRangeMineralScanner" or defName="OrbitalScanner" or comps/li[contains(@Class, 'Scanner') or contains(compClass, 'Scanner')]) and defName != "SolarWeb-Stratum-RooftopScannerBooster"]/comps/li[@Class="CompProperties_AffectedByFacilities"]</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[(defName="GroundPenetratingScanner" or defName="LongRangeMineralScanner" or defName="OrbitalScanner" or comps/li[contains(@Class, 'Scanner') or contains(compClass, 'Scanner')]) and defName != "SolarWeb-Stratum-RooftopScannerBooster"]/comps</xpath>
+      <value>
+        <li Class="CompProperties_AffectedByFacilities">
+          <linkableFacilities>
+            <li>SolarWeb-Stratum-RooftopScannerBooster</li>
+          </linkableFacilities>
+        </li>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[(defName="GroundPenetratingScanner" or defName="LongRangeMineralScanner" or defName="OrbitalScanner" or comps/li[contains(@Class, 'Scanner') or contains(compClass, 'Scanner')]) and defName != "SolarWeb-Stratum-RooftopScannerBooster"]/placeWorkers</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[(defName="GroundPenetratingScanner" or defName="LongRangeMineralScanner" or defName="OrbitalScanner" or comps/li[contains(@Class, 'Scanner') or contains(compClass, 'Scanner')]) and defName != "SolarWeb-Stratum-RooftopScannerBooster"]/placeWorkers[not(li="PlaceWorker_ShowFacilitiesConnections")]</xpath>
+      <value>
+        <li>PlaceWorker_ShowFacilitiesConnections</li>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[(defName="GroundPenetratingScanner" or defName="LongRangeMineralScanner" or defName="OrbitalScanner" or comps/li[contains(@Class, 'Scanner') or contains(compClass, 'Scanner')]) and defName != "SolarWeb-Stratum-RooftopScannerBooster"]</xpath>
+      <value>
+        <placeWorkers>
+          <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[(defName="GroundPenetratingScanner" or defName="LongRangeMineralScanner" or defName="OrbitalScanner" or comps/li[contains(@Class, 'Scanner') or contains(compClass, 'Scanner')]) and defName != "SolarWeb-Stratum-RooftopScannerBooster"]/statBases</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[(defName="GroundPenetratingScanner" or defName="LongRangeMineralScanner" or defName="OrbitalScanner" or comps/li[contains(@Class, 'Scanner') or contains(compClass, 'Scanner')]) and defName != "SolarWeb-Stratum-RooftopScannerBooster"]/statBases[not(SolarWeb-Stratum-ScanSpeed)]</xpath>
+      <value>
+        <SolarWeb-Stratum-ScanSpeed>1</SolarWeb-Stratum-ScanSpeed>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[(defName="GroundPenetratingScanner" or defName="LongRangeMineralScanner" or defName="OrbitalScanner" or comps/li[contains(@Class, 'Scanner') or contains(compClass, 'Scanner')]) and defName != "SolarWeb-Stratum-RooftopScannerBooster"]</xpath>
+      <value>
+        <statBases>
+          <SolarWeb-Stratum-ScanSpeed>1</SolarWeb-Stratum-ScanSpeed>
+        </statBases>
+      </value>
+    </nomatch>
+  </Operation>
+</Patch>

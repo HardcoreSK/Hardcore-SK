@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[@Name="BaseBear"]</xpath>
+    <value>
+		<statBases Merge="true">
+			<Mass>150</Mass>
+			<MoveSpeed>6.2</MoveSpeed>
+			<MeleeDodgeChance>0.15</MeleeDodgeChance>
+			<MeleeCritChance>0.16</MeleeCritChance>
+			<CarryWeight>225</CarryWeight>
+			<CarryBulk>150</CarryBulk>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>2</ArmorRating_Blunt>
+			<FilthRate>5</FilthRate>
+		</statBases>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>1.6</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<armorPenetrationSharp>3.25</armorPenetrationSharp>
+				<armorPenetrationBlunt>6.5</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>1.6</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<armorPenetrationSharp>3.25</armorPenetrationSharp>
+				<armorPenetrationBlunt>6.5</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.1</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>40</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<armorPenetrationSharp>4.25</armorPenetrationSharp>
+				<armorPenetrationBlunt>12.5</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.35</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationBlunt>10</armorPenetrationBlunt>
+			</li>
+		</tools>
+		<race Merge="true">
+			<maxPreyBodySize>1.2</maxPreyBodySize>
+			<baseHungerRate>1.15</baseHungerRate>
+			<baseBodySize>1.2</baseBodySize>
+			<leatherDef>Leather_Heavy</leatherDef>
+			<useMeatFrom>Muffalo</useMeatFrom>
+			<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.9</manhunterOnDamageChance>
+			<hediffGiverSets>
+				<li>FuriousPassiveSet</li>
+			</hediffGiverSets>
+		</race>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Quadruped</bodyShape>
+			</li>
+		</modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/PawnKindDef[@Name="BearBase"]</xpath>
+    <value>
+		<combatPower>290</combatPower>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Bear_Grizzly"]</xpath>
+    <value>
+      <race>
+        <packAnimal>true</packAnimal>
+      </race>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Bear_Polar"]</xpath>
+    <value>
+      <statBases Merge="true">
+        <Mass>80</Mass>
+        <ComfyTemperatureMin>-70</ComfyTemperatureMin>
+        <MeleeDodgeChance>0.09</MeleeDodgeChance>
+        <MeleeCritChance>0.18</MeleeCritChance>
+        <MoveSpeed>5.2</MoveSpeed>
+      </statBases>
+      <race>
+        <packAnimal>true</packAnimal>
+      </race>
+    </value>
+  </Operation>
+
+</Patch>

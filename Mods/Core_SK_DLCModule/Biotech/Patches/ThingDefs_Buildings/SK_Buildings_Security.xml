@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="TrapIED_ToxGas"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Building/Traps/IED_ToxGas</texPath>
+                <drawSize>(2,2)</drawSize>
+			</graphicData>
+            <costList>
+                <Wire>2</Wire>
+                <ComponentIndustrial>2</ComponentIndustrial>
+                <Mechanism>2</Mechanism>
+                <Shell_Toxic>2</Shell_Toxic>
+            </costList>
+		</value>
+	</Operation>
+
+</Patch>

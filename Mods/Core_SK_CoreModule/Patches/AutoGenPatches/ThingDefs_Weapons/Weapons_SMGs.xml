@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Gun_MachinePistol"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.BaseGun_LongBarreledDummy</value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Gun_MachinePistol"]</xpath>
+    <value Merge="true">
+      <label>Uzi</label>
+      <description>A basic submachine gun. Short range, low power, high rate of fire. Very quick to aim and fire.</description>
+      <graphicData DeepReplace="true">
+        <texPath>Things/Weapons/SMGs/Uzi</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases DeepReplace="true">
+        <MarketValue>550</MarketValue>
+        <SightsEfficiency>1</SightsEfficiency>
+        <ShotSpread>0.12</ShotSpread>
+        <SwayFactor>1.2</SwayFactor>
+        <RangedWeapon_Cooldown>0.52</RangedWeapon_Cooldown>
+        <Bulk>5.5</Bulk>
+        <Mass>4</Mass>
+      </statBases>
+      <weaponTags DeepReplace="true">
+        <li>SMG2</li>
+        <li>Gun</li>
+        <li>TierOneSMG</li>
+        <li>CE_SMG</li>
+        <li>CE_AI_AssaultWeapon</li>
+        <li>CE_OneHandedWeapon</li>
+      </weaponTags>
+      <weaponClasses DeepReplace="true">
+        <li>RangedLight</li>
+      </weaponClasses>
+      <thingCategories DeepReplace="true">
+        <li>SMGs</li>
+      </thingCategories>
+      <verbs DeepReplace="true">
+        <li Class="CombatExtended.VerbPropertiesCE">
+          <recoilAmount>1.2</recoilAmount>
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+          <warmupTime>0.6</warmupTime>
+          <range>32</range>
+          <burstShotCount>8</burstShotCount>
+          <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+          <soundCast>Shot_MachinePistol</soundCast>
+          <soundCastTail>GunTail_Light</soundCastTail>
+          <muzzleFlashScale>9</muzzleFlashScale>
+        </li>
+      </verbs>
+      <comps DeepReplace="true">
+        <li Class="CombatExtended.CompProperties_FireModes">
+          <aiUseBurstMode>FALSE</aiUseBurstMode>
+          <aiAimMode>AimedShot</aiAimMode>
+          <aimedBurstShotCount>3</aimedBurstShotCount>
+        </li>
+        <li Class="CombatExtended.CompProperties_AmmoUser">
+          <magazineSize>32</magazineSize>
+          <reloadTime>1.8</reloadTime>
+          <ammoSet>AmmoSet_9x19mmPara</ammoSet>
+        </li>
+      </comps>
+      <smeltProducts DeepReplace="true">
+        <SMG_Component>1</SMG_Component>
+        <Weapon_Parts>2</Weapon_Parts>
+      </smeltProducts>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_MachinePistol"]/uiIconScale</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_MachinePistol"]/recipeMaker</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_MachinePistol"]/costList</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_MachinePistol"]/tools</xpath>
+  </Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Gun_HeavySMG"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.BaseGun_LongBarreledDummy</value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Gun_HeavySMG"]</xpath>
+    <value Merge="true">
+      <label>Spectre M4</label>
+      <description>A compact, wide-caliber slug-thrower. Very short range, but it packs a punch and handles quite well.</description>
+      <graphicData DeepReplace="true">
+        <texPath>Things/Weapons/SMGs/SpectreM4</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases DeepReplace="true">
+        <MarketValue>600</MarketValue>
+        <SightsEfficiency>0.9</SightsEfficiency>
+        <ShotSpread>0.15</ShotSpread>
+        <SwayFactor>1.6</SwayFactor>
+        <RangedWeapon_Cooldown>0.57</RangedWeapon_Cooldown>
+        <Bulk>4.5</Bulk>
+        <Mass>3.5</Mass>
+      </statBases>
+      <weaponTags DeepReplace="true">
+        <li>SMG2</li>
+        <li>Gun</li>
+        <li>TierTwoSMG</li>
+        <li>CE_SMG</li>
+        <li>CE_AI_AssaultWeapon</li>
+        <li>CE_OneHandedWeapon</li>
+      </weaponTags>
+      <weaponClasses DeepReplace="true">
+        <li>RangedLight</li>
+      </weaponClasses>
+      <thingCategories DeepReplace="true">
+        <li>SMGs</li>
+      </thingCategories>
+      <verbs DeepReplace="true">
+        <li Class="CombatExtended.VerbPropertiesCE">
+          <recoilPattern>Regular</recoilPattern>
+          <recoilAmount>1.6</recoilAmount>
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
+          <warmupTime>0.45</warmupTime>
+          <range>28</range>
+          <burstShotCount>7</burstShotCount>
+          <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+          <soundCast>Shot_HeavySMG</soundCast>
+          <soundCastTail>GunTail_Light</soundCastTail>
+          <muzzleFlashScale>9</muzzleFlashScale>
+        </li>
+      </verbs>
+      <comps DeepReplace="true">
+        <li Class="CombatExtended.CompProperties_FireModes">
+          <aiUseBurstMode>FALSE</aiUseBurstMode>
+          <aiAimMode>AimedShot</aiAimMode>
+          <aimedBurstShotCount>3</aimedBurstShotCount>
+        </li>
+        <li Class="CombatExtended.CompProperties_AmmoUser">
+          <magazineSize>30</magazineSize>
+          <reloadTime>2.5</reloadTime>
+          <ammoSet>AmmoSet_45ACP</ammoSet>
+        </li>
+      </comps>
+      <smeltProducts DeepReplace="true">
+        <SMG_Component>1</SMG_Component>
+        <Weapon_Parts>3</Weapon_Parts>
+        <Plastic>3</Plastic>
+      </smeltProducts>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/recipeMaker</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/thingSetMakerTags</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/costList</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/tools</xpath>
+  </Operation>
+</Patch>

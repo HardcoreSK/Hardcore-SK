@@ -1,25 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
 	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
 		<operations>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Woodcutting_Handaxe"]</xpath>
+            <li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/ThingDef[
+                defName="Tool_Woodcutting_Handaxe" or
+                defName="Tool_Mining_Pickaxe" or
+                defName="Tool_Building_Hammer" or
+                defName="Tool_Sickle" or
+                defName="Tool_Broom" or
+                defName="Tool_Hoe" or
+                defName="Tool_Broom" or
+                defName="Tool_Multitool" or
+                defName="Tool_Paxe" or
+                defName="Tool_PrimitivePickaxe" or
+                defName="Tool_PrimitiveHandaxe" or
+                defName="Tool_PrimitiveHammer" or
+                defName="Tool_PrimitiveSickle" or
+                defName="MeleeWeapon_Schiv" or
+                defName="MeleeWeapon_Knife" or
+                defName="MeleeWeapon_Dagger" or
+                defName="MeleeWeapon_Tanto" or
+                defName="MeleeWeapon_Cleaver" or
+                defName="MeleeWeapon_Bonesaw" or
+                defName="MeleeWeapon_Monkeywrench" or
+                defName="MeleeWeapon_Sledgehammer"]</xpath>
 				<value>
-					<thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
+                    <thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
+                    <statBases Merge="True">
+                        <ToolEffectivenessFactor>1</ToolEffectivenessFactor>
+                    </statBases>
+				</value>
+            </li>
+            
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="Tool_PrimitivePickaxe"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.SurvivalToolProperties">
+                        <baseWorkStatFactors>
+                            <MiningSpeed>1.0</MiningSpeed>
+                            <MiningYieldDigging>0.9</MiningYieldDigging>
+                            <PlantWorkSpeed>1.0</PlantWorkSpeed>
+                        </baseWorkStatFactors>
+                        <defaultSurvivalToolAssignmentTags>
+                            <li>Miner</li>
+                        </defaultSurvivalToolAssignmentTags>
+                        <toolWearFactor>3</toolWearFactor>
+                    </li>
 				</value>
 			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Woodcutting_Handaxe"]/statBases</xpath>
+            
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="Tool_PrimitiveHandaxe"]</xpath>
 				<value>
-					<ToolEffectivenessFactor>1</ToolEffectivenessFactor>
+                    <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                        <baseWorkStatFactors>
+                            <TreeFellingSpeed>1.1</TreeFellingSpeed>
+                            <PlantHarvestingSpeed>0.7</PlantHarvestingSpeed>
+                            <PruningSpeed MayRequire="ludeon.rimworld.ideology">1.0</PruningSpeed>
+                        </baseWorkStatFactors>
+                        <defaultSurvivalToolAssignmentTags>
+                            <li>PlantWorker</li>
+                        </defaultSurvivalToolAssignmentTags>
+                        <toolWearFactor>3</toolWearFactor>
+                    </li>
 				</value>
 			</li>
+            
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="Tool_PrimitiveHammer"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.SurvivalToolProperties">
+                        <baseWorkStatFactors>
+                            <ConstructionSpeed>1.0</ConstructionSpeed>
+                            <SmithingSpeed>1.0</SmithingSpeed>
+                        </baseWorkStatFactors>
+                        <defaultSurvivalToolAssignmentTags>
+                            <li>Constructor</li>
+                            <li>Crafter</li>
+                        </defaultSurvivalToolAssignmentTags>
+                        <toolWearFactor>3</toolWearFactor>
+                    </li>
+				</value>
+			</li>
+            
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="Tool_PrimitiveSickle"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.SurvivalToolProperties">
+                        <baseWorkStatFactors>
+                            <PlantWorkSpeed>1.0</PlantWorkSpeed>
+                            <PlantHarvestingSpeed>1.0</PlantHarvestingSpeed>
+                        </baseWorkStatFactors>
+                        <defaultSurvivalToolAssignmentTags>
+                            <li>PlantWorker</li>
+                        </defaultSurvivalToolAssignmentTags>
+                        <toolWearFactor>3</toolWearFactor>
+                    </li>
+				</value>
+			</li>
+            
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Woodcutting_Handaxe"]/equippedStatOffsets/PlantWorkSpeed</xpath>
+				<xpath>Defs/ThingDef[defName="Tool_Woodcutting_Handaxe"]/equippedStatOffsets/PlantWorkSpeed</xpath>
 			</li>
 			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Woodcutting_Handaxe"]</xpath>
+				<xpath>Defs/ThingDef[defName="Tool_Woodcutting_Handaxe"]</xpath>
 				<value>
 					<li Class="SurvivalToolsLite.SurvivalToolProperties">
 						<baseWorkStatFactors>
@@ -34,24 +120,11 @@
 				</value>
 			</li>
 
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Mining_Pickaxe"]</xpath>
-				<value>
-					<thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Mining_Pickaxe"]/statBases</xpath>
-				<value>
-					<ToolEffectivenessFactor>1</ToolEffectivenessFactor>
-				</value>
-			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Mining_Pickaxe"]/equippedStatOffsets/MiningSpeed</xpath>
+				<xpath>Defs/ThingDef[defName="Tool_Mining_Pickaxe"]/equippedStatOffsets/MiningSpeed</xpath>
 			</li>
 			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Mining_Pickaxe"]</xpath>
+				<xpath>Defs/ThingDef[defName="Tool_Mining_Pickaxe"]</xpath>
 				<value>
 					<li Class="SurvivalToolsLite.SurvivalToolProperties">
 						<baseWorkStatFactors>
@@ -65,56 +138,28 @@
 				</value>
 			</li>
 
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Building_Hammer"]</xpath>
-				<value>
-					<thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Building_Hammer"]/statBases</xpath>
-				<value>
-					<ToolEffectivenessFactor>1</ToolEffectivenessFactor>
-				</value>
-			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Building_Hammer"]/equippedStatOffsets</xpath>
+				<xpath>Defs/ThingDef[defName="Tool_Building_Hammer"]/equippedStatOffsets</xpath>
 			</li>
 			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Building_Hammer"]</xpath>
+				<xpath>Defs/ThingDef[defName="Tool_Building_Hammer"]</xpath>
 				<value>
 					<li Class="SurvivalToolsLite.SurvivalToolProperties">
 						<baseWorkStatFactors>
 							<ConstructionSpeed>1.2</ConstructionSpeed>
-							<SmithingSpeed>1.2</SmithingSpeed>
 						</baseWorkStatFactors>
 						<defaultSurvivalToolAssignmentTags>
 							<li>Constructor</li>
-							<li>Crafter</li>
 						</defaultSurvivalToolAssignmentTags>
 					</li>
 				</value>
 			</li>
 
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Sickle"]</xpath>
-				<value>
-					<thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Sickle"]/statBases</xpath>
-				<value>
-					<ToolEffectivenessFactor>1</ToolEffectivenessFactor>
-				</value>
-			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Sickle"]/equippedStatOffsets/PlantWorkSpeed</xpath>
+				<xpath>Defs/ThingDef[defName="Tool_Sickle"]/equippedStatOffsets/PlantWorkSpeed</xpath>
 			</li>
 			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Sickle"]</xpath>
+				<xpath>Defs/ThingDef[defName="Tool_Sickle"]</xpath>
 				<value>
 					<li Class="SurvivalToolsLite.SurvivalToolProperties">
 						<baseWorkStatFactors>
@@ -128,31 +173,11 @@
 				</value>
 			</li>
 
-			<!--<li Class="PatchOperationRemove">
-                    <xpath>Defs/ThingDef[defName="TFJ_Tool_Broom"]/equippedStatOffsets</xpath>
-                </li>
-                <li Class="PatchOperationAddModExtension">
-                    <xpath>Defs/ThingDef[defName="TFJ_Tool_Broom"]</xpath>
-					  <value>
-					  </value>
-                </li> -->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Broom"]</xpath>
-				<value>
-					<thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Broom"]/statBases</xpath>
-				<value>
-					<ToolEffectivenessFactor>1</ToolEffectivenessFactor>
-				</value>
-			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Broom"]/equippedStatOffsets/CleaningSpeed</xpath>
+				<xpath>Defs/ThingDef[defName="Tool_Broom"]/equippedStatOffsets/CleaningSpeed</xpath>
 			</li>
 			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Broom"]</xpath>
+				<xpath>Defs/ThingDef[defName="Tool_Broom"]</xpath>
 				<value>
 					<li Class="SurvivalToolsLite.SurvivalToolProperties">
 						<baseWorkStatFactors>
@@ -165,7 +190,7 @@
 				</value>
 			</li> <!--
 			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Broom"]</xpath>
+				<xpath>Defs/ThingDef[defName="Tool_Broom"]</xpath>
 				<value>
 					<li Class="SurvivalToolsLite.SurvivalToolHelper">
 						<purpose>Cleaning</purpose>
@@ -173,23 +198,11 @@
 				</value>
 			</li>-->
 
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Hoe"]</xpath>
-				<value>
-					<thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Hoe"]/statBases</xpath>
-				<value>
-					<ToolEffectivenessFactor>1</ToolEffectivenessFactor>
-				</value>
-			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Hoe"]/equippedStatOffsets/PlantWorkSpeed</xpath>
+				<xpath>Defs/ThingDef[defName="Tool_Hoe"]/equippedStatOffsets/PlantWorkSpeed</xpath>
 			</li>
 			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Hoe"]</xpath>
+				<xpath>Defs/ThingDef[defName="Tool_Hoe"]</xpath>
 				<value>
 					<li Class="SurvivalToolsLite.SurvivalToolProperties">
 						<baseWorkStatFactors>
@@ -202,24 +215,11 @@
 				</value>
 			</li>
 
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Multitool"]</xpath>
-				<value>
-					<thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Multitool"]/statBases</xpath>
-				<value>
-					<ToolEffectivenessFactor>1</ToolEffectivenessFactor>
-				</value>
-			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Multitool"]/equippedStatOffsets</xpath>
+				<xpath>Defs/ThingDef[defName="Tool_Multitool"]/equippedStatOffsets</xpath>
 			</li>
 			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Multitool"]</xpath>
+				<xpath>Defs/ThingDef[defName="Tool_Multitool"]</xpath>
 				<value>
 					<li Class="SurvivalToolsLite.SurvivalToolProperties">
 						<baseWorkStatFactors>
@@ -229,7 +229,6 @@
 							<ConstructionSpeed>1.3</ConstructionSpeed>
 							<PlantHarvestingSpeed>1.3</PlantHarvestingSpeed>
 							<PlantWorkSpeed>1.2</PlantWorkSpeed>
-							<SmithingSpeed>1.3</SmithingSpeed>
 							<MedicalOperationSpeed>1.1</MedicalOperationSpeed>
 							<MedicalSurgerySuccessChance>1</MedicalSurgerySuccessChance>
 							<PruningSpeed MayRequire="ludeon.rimworld.ideology">1.5</PruningSpeed>
@@ -238,66 +237,138 @@
 							<li>Constructor</li>
 							<li>Miner</li>
 							<li>PlantWorker</li>
-							<li>Crafter</li>
 							<li>Tend</li>
 						</defaultSurvivalToolAssignmentTags>
 						<toolWearFactor>0.15</toolWearFactor>
 					</li>
 				</value>
 			</li>
-		</operations>
-	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_Monkeywrench"]</xpath>
-				<value>
-					<thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_Monkeywrench"]/statBases</xpath>
-				<value>
-					<ToolEffectivenessFactor>1</ToolEffectivenessFactor>
-				</value>
-			</li>
+            <!--Monkeywrench-->
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_Monkeywrench"]/equippedStatOffsets</xpath>
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Monkeywrench"]/equippedStatOffsets/ConstructionSpeed</xpath>
+			</li>
+            <li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Monkeywrench"]/equippedStatOffsets/SmithingSpeed</xpath>
 			</li>
 			<li Class="PatchOperationAddModExtension">
 				<xpath>Defs/ThingDef[defName="MeleeWeapon_Monkeywrench"]</xpath>
 				<value>
 					<li Class="SurvivalToolsLite.SurvivalToolProperties">
 						<baseWorkStatFactors>
-							<SmithingSpeed>1.4</SmithingSpeed>
 							<ConstructionSpeed>1.4</ConstructionSpeed>
 						</baseWorkStatFactors>
 						<defaultSurvivalToolAssignmentTags>
-							<li>Crafter</li>
 							<li>Constructor</li>
 						</defaultSurvivalToolAssignmentTags>
 					</li>
 				</value>
 			</li>
-		</operations>
-	</Operation>
-	<!-- MeleeWeapon_Sledgehammer-->
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_Sledgehammer"]</xpath>
+
+            <!--Shiv-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Schiv"]/equippedStatOffsets/CookSpeed</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Schiv"]/equippedStatOffsets/ButcheryFleshSpeed</xpath>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Schiv"]</xpath>
 				<value>
-					<thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
+                    <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                        <baseWorkStatFactors>
+                            <CookSpeed>1.0</CookSpeed>
+                            <ButcheryFleshSpeed>1.0</ButcheryFleshSpeed>
+                            <ButcheryFleshEfficiency>0.9</ButcheryFleshEfficiency>
+                            <MedicalOperationSpeed>0.8</MedicalOperationSpeed>
+                            <MedicalSurgerySuccessChance>0.8</MedicalSurgerySuccessChance>
+                        </baseWorkStatFactors>
+                        <defaultSurvivalToolAssignmentTags>
+                            <li>Cook</li>
+                            <li>Tend</li>
+                        </defaultSurvivalToolAssignmentTags>
+                    </li>
 				</value>
 			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_Sledgehammer"]/statBases</xpath>
+
+            <!--Knife-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Knife"]/equippedStatOffsets/CookSpeed</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Knife"]/equippedStatOffsets/ButcheryFleshSpeed</xpath>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Knife"]</xpath>
 				<value>
-					<ToolEffectivenessFactor>1</ToolEffectivenessFactor>
+                    <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                        <baseWorkStatFactors>
+                            <CookSpeed>1.2</CookSpeed>
+                            <ButcheryFleshSpeed>1.2</ButcheryFleshSpeed>
+                            <ButcheryFleshEfficiency>1.1</ButcheryFleshEfficiency>
+                            <PlantHarvestingSpeed>1.0</PlantHarvestingSpeed>
+                            <MedicalOperationSpeed>0.9</MedicalOperationSpeed>
+                            <MedicalSurgerySuccessChance>0.95</MedicalSurgerySuccessChance>
+                        </baseWorkStatFactors>
+                        <defaultSurvivalToolAssignmentTags>
+                            <li>Cook</li>
+                            <li>PlantWorker</li>
+                            <li>Tend</li>
+                        </defaultSurvivalToolAssignmentTags>
+                    </li>
 				</value>
 			</li>
+
+            <!--Dagger-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Dagger"]/equippedStatOffsets/CookSpeed</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Dagger"]/equippedStatOffsets/ButcheryFleshSpeed</xpath>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Dagger"]</xpath>
+				<value>
+                    <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                        <baseWorkStatFactors>
+                            <CookSpeed>1.1</CookSpeed>
+                            <ButcheryFleshSpeed>1.1</ButcheryFleshSpeed>
+                            <ButcheryFleshEfficiency>1.1</ButcheryFleshEfficiency>
+                            <MedicalOperationSpeed>0.85</MedicalOperationSpeed>
+                            <MedicalSurgerySuccessChance>0.85</MedicalSurgerySuccessChance>
+                        </baseWorkStatFactors>
+                        <defaultSurvivalToolAssignmentTags>
+                            <li>Cook</li>
+                            <li>Tend</li>
+                        </defaultSurvivalToolAssignmentTags>
+                    </li>
+				</value>
+			</li>
+
+            <!--Cleaver-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Cleaver"]/equippedStatOffsets/CookSpeed</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Cleaver"]/equippedStatOffsets/ButcheryFleshSpeed</xpath>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Cleaver"]</xpath>
+				<value>
+                    <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                        <baseWorkStatFactors>
+                            <CookSpeed>1.2</CookSpeed>
+                            <ButcheryFleshSpeed>1.35</ButcheryFleshSpeed>
+                            <ButcheryFleshEfficiency>1.15</ButcheryFleshEfficiency>
+                        </baseWorkStatFactors>
+                        <defaultSurvivalToolAssignmentTags>
+                            <li>Cook</li>
+                        </defaultSurvivalToolAssignmentTags>
+                    </li>
+				</value>
+			</li>
+
+            <!--Sledgehammer-->
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName="MeleeWeapon_Sledgehammer"]/equippedStatOffsets</xpath>
 			</li>
@@ -315,18 +386,35 @@
 				</value>
 			</li>
 
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_Bonesaw"]</xpath>
+            <!--Tanto-->
+            <li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Tanto"]/equippedStatOffsets/CookSpeed</xpath>
+			</li>
+            <li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Tanto"]/equippedStatOffsets/ButcheryFleshSpeed</xpath>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Tanto"]</xpath>
 				<value>
-					<thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
+                    <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                        <baseWorkStatFactors>
+                            <CookSpeed>1.15</CookSpeed>
+                            <ButcheryFleshSpeed>1.25</ButcheryFleshSpeed>
+                            <ButcheryFleshEfficiency>1.1</ButcheryFleshEfficiency>
+                            <PlantHarvestingSpeed>1.0</PlantHarvestingSpeed>
+                            <MedicalOperationSpeed>0.9</MedicalOperationSpeed>
+                            <MedicalSurgerySuccessChance>0.95</MedicalSurgerySuccessChance>
+                        </baseWorkStatFactors>
+                        <defaultSurvivalToolAssignmentTags>
+                            <li>Cook</li>
+                            <li>PlantWorker</li>
+                            <li>Tend</li>
+                        </defaultSurvivalToolAssignmentTags>
+                    </li>
 				</value>
 			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_Bonesaw"]/statBases</xpath>
-				<value>
-					<ToolEffectivenessFactor>1</ToolEffectivenessFactor>
-				</value>
-			</li>
+
+            <!--Bonesaw-->
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName="MeleeWeapon_Bonesaw"]/equippedStatOffsets/MedicalOperationSpeed</xpath>
 			</li>
@@ -348,28 +436,12 @@
 				</value>
 			</li>
 
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Paxe"]</xpath>
-				<value>
-					<thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Paxe"]/statBases</xpath>
-				<value>
-					<ToolEffectivenessFactor>1</ToolEffectivenessFactor>
-				</value>
-			</li>
+            <!--Paxe-->
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Paxe"]/equippedStatOffsets</xpath>
+				<xpath>Defs/ThingDef[defName="Tool_Paxe"]/equippedStatOffsets</xpath>
 			</li>
 			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="TFJ_Tool_Paxe"]</xpath>
+				<xpath>Defs/ThingDef[defName="Tool_Paxe"]</xpath>
 				<value>
 					<li Class="SurvivalToolsLite.SurvivalToolProperties">
 						<baseWorkStatFactors>
@@ -379,7 +451,6 @@
 							<ConstructionSpeed>1</ConstructionSpeed>
 							<PlantHarvestingSpeed>0.5</PlantHarvestingSpeed>
 							<PlantWorkSpeed>1.2</PlantWorkSpeed>
-							<SmithingSpeed>1</SmithingSpeed>
 							<PruningSpeed MayRequire="ludeon.rimworld.ideology">1</PruningSpeed>
 						</baseWorkStatFactors>
 						<defaultSurvivalToolAssignmentTags>

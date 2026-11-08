@@ -1,0 +1,26 @@
+<LanguageData>
+	<!-- 1.6\Defs\Basic Backstories\Lost child backstories.xml -->
+	<!-- EN: lost boy -->
+	<ZCB_LostChild.title>потерянный мальчик</ZCB_LostChild.title>
+	<!-- EN: lost girl -->
+	<ZCB_LostChild.titleFemale>потерянная девочка</ZCB_LostChild.titleFemale>
+	<!-- EN: lost -->
+	<ZCB_LostChild.titleShort>потерянный</ZCB_LostChild.titleShort>
+	<!-- EN: Much of [PAWN_possessive] early childhood is a mystery, but [PAWN_nameDef] came of age in our colony. -->
+	<ZCB_LostChild.baseDesc>Многое из {PAWN_possessive} раннего детства остаётся загадкой, но {PAWN_nameDef} {PAWN_gender ? вырос : выросла} в нашем поселении.</ZCB_LostChild.baseDesc>
+	<!-- EN: TimeAsColonistOrColonyAnimal -->
+	<ZCB_LostChild.requiredRecords.0.name>TimeAsColonistOrColonyAnimal</ZCB_LostChild.requiredRecords.0.name>
+	
+	<!-- EN: builder -->
+	<ZCB_Builder.title>строитель</ZCB_Builder.title>
+	<!-- EN: builder -->
+	<ZCB_Builder.titleShort>строитель</ZCB_Builder.titleShort>
+	<!-- EN: After [PAWN_possessive] parents abandoned [PAWN_objective], [PAWN_pronoun] was taken in by pirates and forced to fight. Later [PAWN_pronoun] jonied [PAWN_factionName] and discovered a passion for building, quickly signing up to help renovate [PAWN_possessive] new home. -->
+	<ZCB_Builder.baseDesc>После того как {PAWN_possessive} родители отказались от н{PAWN_possessive}, {PAWN_pronoun} {PAWN_gender ? попал к пиратам и был вынужден : попала к пиратам и была вынуждена} сражаться. Позже {PAWN_pronoun} {PAWN_gender ? присоединился : присоединилась} к фракции {PAWN_factionName}. Обнаружив у себя высокий интерес к строительству, {PAWN_pronoun} быстро {PAWN_gender ? решил : решила} помочь в ремонте своего нового дома.</ZCB_Builder.baseDesc>
+	<!-- EN: TimeAsColonistOrColonyAnimal -->
+	<ZCB_Builder.requiredRecords.0.name>TimeAsColonistOrColonyAnimal</ZCB_Builder.requiredRecords.0.name>
+	<!-- EN: ThingsConstructed -->
+	<ZCB_Builder.requiredRecords.1.name>ThingsConstructed</ZCB_Builder.requiredRecords.1.name>
+	<!-- EN: CellsMined -->
+	<ZCB_Builder.requiredRecords.2.name>CellsMined</ZCB_Builder.requiredRecords.2.name>
+</LanguageData>

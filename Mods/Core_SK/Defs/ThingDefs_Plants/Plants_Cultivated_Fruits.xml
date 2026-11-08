@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="SK_DeciduousPlantBase">
 		<defName>Plant_Agave</defName>
 		<label>agave</label>
@@ -29,10 +29,7 @@
 			<harvestYield>3</harvestYield>
 			<harvestWork>700</harvestWork>
 			<fertilityMin>0.3</fertilityMin>
-			<visualSizeRange>
-				<min>0.7</min>
-				<max>1.1</max>
-			</visualSizeRange>
+			<visualSizeRange>0.7~1.1</visualSizeRange>
 			<topWindExposure>0.3</topWindExposure>
 			<wildClusterWeight>53</wildClusterWeight>
 			<wildClusterRadius>8</wildClusterRadius>
@@ -40,10 +37,10 @@
 			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>  
-
+-->
 	<ThingDef ParentName="SK_DeciduousPlantBase">
 		<defName>Plant_Watermelon</defName>
-		<label>Watermelon plant</label>
+		<label>watermelon plant</label>
 		<description>A tall, creeping vine that produces large, juicy fruits. Although watermelon is not as calorie-dense as grains or legumes, its refreshing flesh is prized in hot weather and can be stored for several weeks after harvest.</description>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -79,10 +76,7 @@
 			<fertilityMin>0.5</fertilityMin>
 			<wildClusterWeight>55</wildClusterWeight>
 			<wildClusterRadius>4</wildClusterRadius>
-			<visualSizeRange>
-				<min>0.6</min>
-				<max>1.0</max>
-			</visualSizeRange>
+			<visualSizeRange>1.05~1.6</visualSizeRange>
 			<growDays>6.2</growDays>
 			<fertilitySensitivity>0.6</fertilitySensitivity>
 			<wildOrder>2</wildOrder>
@@ -91,11 +85,11 @@
 		</plant>
 			<modExtensions>
 			<li Class="SK.ExtendedPlantGraphic">
-					<harvestGraphicPath>Things/Plant/Watermelon/PlantWatermelon_Harvest</harvestGraphicPath>
+					<harvestGraphicPath>Things/Plant/PlantWatermelon/PlantWatermelon_Harvest</harvestGraphicPath>
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
+	<!-- DefOverwrite
 	<ThingDef ParentName="SK_DeciduousPlantBase">
 		<defName>Plant_Berry</defName>
 		<label>berry bush</label>
@@ -129,10 +123,7 @@
 			<fertilityMin>0.5</fertilityMin>
 			<wildClusterWeight>55</wildClusterWeight>
 			<wildClusterRadius>4</wildClusterRadius>
-			<visualSizeRange>
-				<min>0.6</min>
-				<max>1.0</max>
-			</visualSizeRange>
+			<visualSizeRange>0.6~1.0</visualSizeRange>
 			<growDays>4.5</growDays>
 			<topWindExposure>0.3</topWindExposure>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
@@ -140,7 +131,7 @@
 			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_DeciduousPlantBase">
 		<defName>Plant_Strawberry</defName>
 		<label>strawberry plant</label>
@@ -182,10 +173,7 @@
 			<fertilityMin>0.5</fertilityMin>
 			<wildClusterWeight>55</wildClusterWeight>
 			<wildClusterRadius>4</wildClusterRadius>
-			<visualSizeRange>
-				<min>0.6</min>
-				<max>1.0</max>
-			</visualSizeRange>
+			<visualSizeRange>0.6~1.0</visualSizeRange>
 			<growDays>4.8</growDays>
 			<topWindExposure>0.3</topWindExposure>
 			<fertilitySensitivity>0.6</fertilitySensitivity>
@@ -194,8 +182,8 @@
 			<humanFoodPlant>true</humanFoodPlant>
 		</plant>
 	</ThingDef>
-
-	<ThingDef ParentName="PlantDef">
+--><!-- DefOverwrite
+	<ThingDef ParentName="CropPlant">
 		<defName>Plant_TreeCocoa</defName>
 		<label>Cocoa Tree</label>
 		<description>Cocoa Trees produce seeds in pods that are called Cocoa Beans. Cocoa Beans can be refined into chocolate.</description>
@@ -206,10 +194,11 @@
 		<statBases>
 			<Beauty>6</Beauty>
 			<BeautyOutdoors>6</BeautyOutdoors>
+			<Mass>100</Mass>
 		</statBases>
-		<minifiedDef IsNull="True" />
+		<minifiedDef>MinifiedTree</minifiedDef>
 		<plant>
-			<sowMinSkill>9</sowMinSkill>
+			<sowMinSkill>12</sowMinSkill>
 			<sowResearchPrerequisites>
 				<li>Cocoa</li>
 			</sowResearchPrerequisites>
@@ -227,15 +216,12 @@
 			<growDays>9</growDays>
 			<fertilitySensitivity>1.2</fertilitySensitivity>
 			<fertilityMin>0.7</fertilityMin>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>1.20</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~1.20</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="SK_DeciduousFruitTreeBase">
 		<defName>Plant_TreeApple</defName>
 		<label>Apple Tree</label>
@@ -249,7 +235,7 @@
 			<BeautyOutdoors>8</BeautyOutdoors>
 		</statBases>
 		<plant>  
-			<sowMinSkill>6</sowMinSkill>
+			<sowMinSkill>4</sowMinSkill>
 			<sowResearchPrerequisites>
 				<li>Fruit_Plants_B1</li>
 			</sowResearchPrerequisites>
@@ -261,10 +247,7 @@
 			<harvestedThingDef>Rawapple</harvestedThingDef>
 			<harvestYield>32</harvestYield>
 			<harvestMinGrowth>0.80</harvestMinGrowth>
-			<visualSizeRange>
-				<min>1.2</min>
-				<max>2.4</max>
-			</visualSizeRange>
+			<visualSizeRange>1.2~2.4</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 		</plant>
@@ -305,10 +288,7 @@
 			<harvestedThingDef>Rawbanana</harvestedThingDef>
 			<harvestYield>30</harvestYield>
 			<harvestMinGrowth>0.80</harvestMinGrowth>
-			<visualSizeRange>
-				<min>1.8</min>
-				<max>3.2</max>
-			</visualSizeRange>
+			<visualSizeRange>1.8~3.2</visualSizeRange>
 			<fertilityMin>0.15</fertilityMin>
 			<topWindExposure>0.25</topWindExposure>
 			<fertilitySensitivity>0.95</fertilitySensitivity>
@@ -339,7 +319,7 @@
 			<BeautyOutdoors>9</BeautyOutdoors>
 		</statBases>
 		<plant>
-			<sowMinSkill>14</sowMinSkill>
+			<sowMinSkill>12</sowMinSkill>
 			<sowResearchPrerequisites>
 				<li>Fruit_Plants_B1</li>
 			</sowResearchPrerequisites>
@@ -351,10 +331,7 @@
 			<harvestedThingDef>Raworange</harvestedThingDef>
 			<harvestYield>40</harvestYield>
 			<harvestMinGrowth>0.80</harvestMinGrowth>
-			<visualSizeRange>
-				<min>1.2</min>
-				<max>2.6</max>
-			</visualSizeRange>
+			<visualSizeRange>1.2~2.6</visualSizeRange>
 			<topWindExposure>0.25</topWindExposure>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
@@ -388,10 +365,7 @@
 				<li>Fruit_Plants_B1</li>
 			</sowResearchPrerequisites>
 			<leaflessGraphicPath>Things/Plant/PlantPeachTree/peachTree_Leafless</leaflessGraphicPath>
-			<visualSizeRange>
-				<min>1.3</min>
-				<max>2.8</max>
-			</visualSizeRange>
+			<visualSizeRange>1.3~2.8</visualSizeRange>
 			<topWindExposure>0.25</topWindExposure>
 			<growDays>18</growDays>
 			<fertilitySensitivity>0.85</fertilitySensitivity>
@@ -435,7 +409,7 @@
 			<foodType>Plant</foodType>
 		</ingestible>
 		<plant>
-			<sowMinSkill>12</sowMinSkill>
+			<sowMinSkill>13</sowMinSkill>
 			<sowResearchPrerequisites>
 				<li>Fruit_Plants_B1</li>
 			</sowResearchPrerequisites>
@@ -449,10 +423,7 @@
 			<harvestedThingDef>Rawgrape</harvestedThingDef>
 			<harvestYield>16</harvestYield>
 			<fertilityMin>1.2</fertilityMin>
-			<visualSizeRange>
-				<min>0.25</min>
-				<max>1.00</max>
-			</visualSizeRange>
+			<visualSizeRange>0.25~1.00</visualSizeRange>
 			<growDays>11</growDays>
 			<topWindExposure>0.1</topWindExposure>
 			<fertilitySensitivity>0.7</fertilitySensitivity>

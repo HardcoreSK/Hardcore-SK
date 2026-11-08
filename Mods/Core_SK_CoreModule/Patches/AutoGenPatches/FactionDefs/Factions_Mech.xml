@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/FactionDef[defName="Mechanoid"]</xpath>
+    <value Merge="true">
+      <label>Mechanoid hive</label>
+      <description>A hive of ancient self-replicating machines.</description>
+      <raidCommonalityFromPointsCurve>
+        <points>
+          <li>(0, 0.1)</li>
+          <li>(5000, 0.3)</li>
+          <li>(7000, 0.6)</li>
+          <li>(10000, 1.0)</li>
+          <li>(15000, 1.15)</li>
+          <li>(20000, 1.35)</li>
+        </points>
+      </raidCommonalityFromPointsCurve>
+      <categoryTag>Mechanoids</categoryTag>
+      <canSiege>false</canSiege>
+      <canUseAvoidGrid>true</canUseAvoidGrid>
+      <earliestRaidDays>160</earliestRaidDays>
+      <maxPawnCostPerTotalPointsCurve>
+        <points>
+          <li>(100000,20000)</li>
+        </points>
+      </maxPawnCostPerTotalPointsCurve>
+      <pawnGroupMakers>
+        <li>
+		  <!-- All types-->
+          <kindDef>Combat</kindDef>
+          <commonality>100</commonality>
+          <options>
+            <Mech_Crawler>85</Mech_Crawler>
+            <Mech_Lancer>70</Mech_Lancer>
+            <Mech_Scyther>60</Mech_Scyther>
+            <Mech_Pikeman>20</Mech_Pikeman>
+            <Mech_CentipedeBlaster>30</Mech_CentipedeBlaster>
+            <Mech_CentipedeGunner>30</Mech_CentipedeGunner>
+            <Mech_ScytherHG>45</Mech_ScytherHG>
+            <Mech_SniperLancer>35</Mech_SniperLancer>
+            <Mech_CentipedeBurner>35</Mech_CentipedeBurner>
+            <Mech_Militor MayRequire="Ludeon.RimWorld.Biotech">90</Mech_Militor>
+            <Mech_Centurion MayRequire="Ludeon.RimWorld.Biotech">20</Mech_Centurion>
+            <Mech_Warqueen MayRequire="Ludeon.RimWorld.Biotech">10</Mech_Warqueen>
+            <Mech_Apocriton MayRequire="Ludeon.RimWorld.Biotech">10</Mech_Apocriton>
+          </options>
+        </li>
+      <li>
+        <!-- Ranged only -->
+        <kindDef>Combat</kindDef>
+        <commonality>80</commonality>
+        <options>
+            <Mech_Lancer>40</Mech_Lancer>
+            <Mech_Pikeman>25</Mech_Pikeman>
+            <Mech_SniperLancer>35</Mech_SniperLancer>
+            <Mech_Scorcher MayRequire="Ludeon.RimWorld.Biotech">25</Mech_Scorcher>
+            <Mech_Cyclops MayRequire="Ludeon.RimWorld.Odyssey">5</Mech_Cyclops>
+            <Mech_Tesseron MayRequire="Ludeon.RimWorld.Biotech">25</Mech_Tesseron>
+            <Mech_Legionary MayRequire="Ludeon.RimWorld.Biotech">10</Mech_Legionary>
+            <Mech_Diabolus MayRequire="Ludeon.RimWorld.Biotech">5</Mech_Diabolus>
+        </options>
+      </li>
+        <li>
+		  <!-- Melee only-->
+          <kindDef>Combat</kindDef>
+          <commonality>70</commonality>
+          <options>
+            <Mech_Crawler>85</Mech_Crawler>
+            <Mech_Scyther>60</Mech_Scyther>
+            <Mech_ScytherHG>50</Mech_ScytherHG>
+          </options>
+        </li>
+        <li>
+		  <!-- Centipede only -->
+          <kindDef>Combat</kindDef>
+          <commonality>37</commonality>
+          <options>
+            <Mech_CentipedeBlaster>50</Mech_CentipedeBlaster>
+            <Mech_CentipedeGunner>50</Mech_CentipedeGunner>
+            <Mech_CentipedeBurner>40</Mech_CentipedeBurner>
+          </options>
+        </li>
+        <li>
+		  <!-- Shock Trooper Raid -->
+          <kindDef>Combat</kindDef>
+          <commonality>35</commonality>
+          <options>
+            <Mech_Lancer>70</Mech_Lancer>
+            <Mech_Pikeman>25</Mech_Pikeman>
+            <Mech_SniperLancer>35</Mech_SniperLancer>
+            <Mech_CentipedeBlaster>25</Mech_CentipedeBlaster>
+            <Mech_CentipedeBurner>15</Mech_CentipedeBurner>
+            <Mech_Scorcher MayRequire="Ludeon.RimWorld.Biotech">25</Mech_Scorcher>
+            <Mech_Cyclops MayRequire="Ludeon.RimWorld.Odyssey">5</Mech_Cyclops>
+            <Mech_Tesseron MayRequire="Ludeon.RimWorld.Biotech">25</Mech_Tesseron>
+            <Mech_Legionary MayRequire="Ludeon.RimWorld.Biotech">10</Mech_Legionary>
+            <Mech_Diabolus MayRequire="Ludeon.RimWorld.Biotech">5</Mech_Diabolus>
+          </options>
+        </li>
+        <li MayRequire="Ludeon.RimWorld.Biotech">
+		  <!-- militor only -->
+          <kindDef>Combat</kindDef>
+          <commonality>30</commonality>
+          <options>
+            <Mech_Militor>10</Mech_Militor>
+          </options>
+        </li>
+        <li><!-- breach raids -->
+          <kindDef>Combat</kindDef>
+          <commonality>3</commonality>
+          <options>
+            <Mech_Pikeman>10</Mech_Pikeman>
+            <Mech_Scyther>10</Mech_Scyther>
+            <Mech_Lancer>10</Mech_Lancer>
+            <Mech_CentipedeBlaster>10</Mech_CentipedeBlaster>
+            <Mech_Termite_Breach>1</Mech_Termite_Breach>
+            <Mech_Militor MayRequire="Ludeon.RimWorld.Biotech">20</Mech_Militor>
+          </options>
+        </li>
+      </pawnGroupMakers>
+      <allowedArrivalTemperatureRange>-150~200</allowedArrivalTemperatureRange>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingSetMakerDef[defName="MechanoidRaidLootMaker"]</xpath>
+    <value>
+      <root Class="ThingSetMaker_MarketValue">
+        <fixedParams>
+          <filter>
+            <thingDefs>
+              <li>Steel</li>
+              <li>ComponentSpacer</li>
+            </thingDefs>
+          </filter>
+        </fixedParams>
+      </root>
+    </value>
+  </Operation>
+
+</Patch>

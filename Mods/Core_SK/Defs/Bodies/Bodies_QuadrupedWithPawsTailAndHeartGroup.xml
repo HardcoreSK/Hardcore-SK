@@ -8,10 +8,13 @@
 			<def>Body</def>
 			<height>Middle</height>
 			<depth>Outside</depth>
+			<groups>
+				<li>CoveredByNaturalArmor</li>
+			</groups>
 			<parts>
 				<li>
 					<def>Tail</def>
-					<coverage>0.03</coverage>
+					<coverage>0.02</coverage>
 				</li>
 				<li>
 					<def>Spine</def>
@@ -20,7 +23,7 @@
 				</li>
 				<li>
 					<def>Stomach</def>
-					<coverage>0.05</coverage>
+					<coverage>0.08</coverage>
 					<depth>Inside</depth>
 				</li>
 				<li>
@@ -34,52 +37,59 @@
 				<li>
 					<def>Lung</def>
 					<customLabel>left lung</customLabel>
-					<coverage>0.03</coverage>
+					<coverage>0.08</coverage>
 					<depth>Inside</depth>
 				</li>
 				<li>
 					<def>Lung</def>
 					<customLabel>right lung</customLabel>
-					<coverage>0.03</coverage>
+					<coverage>0.08</coverage>
 					<depth>Inside</depth>
 				</li>
 				<li>
 					<def>Kidney</def>
 					<customLabel>left kidney</customLabel>
-					<coverage>0.03</coverage>
+					<coverage>0.025</coverage>
 					<depth>Inside</depth>
 				</li>
 				<li>
 					<def>Kidney</def>
 					<customLabel>right kidney</customLabel>
-					<coverage>0.03</coverage>
+					<coverage>0.025</coverage>
 					<depth>Inside</depth>
 				</li>
 				<li>
 					<def>Liver</def>
-					<coverage>0.05</coverage>
+					<coverage>0.07</coverage>
 					<depth>Inside</depth>
 				</li>
 				<li>
 					<def>Neck</def>
-					<coverage>0.08</coverage>
+					<coverage>0.12</coverage>
 					<height>Top</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 					<parts>
 						<li>
 							<def>Head</def>
 							<coverage>0.75</coverage>
 						  <groups>
 							<li>HeadAttackTool</li>
+							<li>CoveredByNaturalArmor</li>
 						  </groups>
 							<parts>
 								<li>
 									<def>Skull</def>
-									<coverage>0.15</coverage>
+									<coverage>0.3</coverage>
 									<depth>Inside</depth>
+									<groups>
+										<li>CoveredByNaturalArmor</li>
+									</groups>
 									<parts>
 										<li>
 											<def>Brain</def>
-											<coverage>0.85</coverage>
+											<coverage>0.9</coverage>
 											<depth>Inside</depth>
 										</li>
 									</parts>
@@ -87,22 +97,22 @@
 								<li>
 									<def>Eye</def>
 									<customLabel>left eye</customLabel>
-									<coverage>0.15</coverage>
+									<coverage>0.08</coverage>
 								</li>
 								<li>
 									<def>Eye</def>
 									<customLabel>right eye</customLabel>
-									<coverage>0.15</coverage>
+									<coverage>0.08</coverage>
 								</li>
 								<li>
 									<def>Ear</def>
 									<customLabel>left ear</customLabel>
-									<coverage>0.05</coverage>
+									<coverage>0.12</coverage>
 								</li>
 								<li>
 									<def>Ear</def>
 									<customLabel>right ear</customLabel>
-									<coverage>0.05</coverage>
+									<coverage>0.12</coverage>
 								</li>
 								<li>
 									<def>Nose</def>
@@ -110,9 +120,10 @@
 								</li>
 								<li>
 									<def>AnimalJaw</def>
-									<coverage>0.1</coverage>
+									<coverage>0.2</coverage>
 									<groups>
 										<li>Teeth</li>
+										<li>CoveredByNaturalArmor</li>
 									</groups>
 								</li>
 							</parts>
@@ -124,6 +135,9 @@
 					<customLabel>front left leg</customLabel>
 					<coverage>0.1</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 					<parts>
 						<li>
 							<def>Paw</def>
@@ -131,6 +145,7 @@
 							<coverage>0.1</coverage>
 							<groups>
 								<li>FrontLeftPaw</li>
+								<li>CoveredByNaturalArmor</li>
 							</groups>
 						</li>
 					</parts>
@@ -140,6 +155,9 @@
 					<customLabel>front right leg</customLabel>
 					<coverage>0.1</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 					<parts>
 						<li>
 							<def>Paw</def>
@@ -147,6 +165,7 @@
 							<coverage>0.1</coverage>
 							<groups>
 								<li>FrontRightPaw</li>
+								<li>CoveredByNaturalArmor</li>
 							</groups>
 						</li>
 					</parts>
@@ -156,11 +175,17 @@
 					<customLabel>rear left leg</customLabel>
 					<coverage>0.1</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 					<parts>
 						<li>
 							<def>Paw</def>
 							<customLabel>rear left paw</customLabel>
 							<coverage>0.1</coverage>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 						</li>
 					</parts>
 				</li>
@@ -169,11 +194,17 @@
 					<customLabel>rear right leg</customLabel>
 					<coverage>0.1</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 					<parts>
 						<li>
 							<def>Paw</def>
 							<customLabel>rear right paw</customLabel>
 							<coverage>0.1</coverage>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 						</li>
 					</parts>
 				</li>

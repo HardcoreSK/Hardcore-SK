@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Core SK - DLC Module</name>
+	<author>Skyarkhangel, TheLoneTec</author>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>skyarkhangel.HSK.DLC</packageId>
+	<description>The module that contains all the changes for the DLC to work.</description>
+	<url>https://github.com/skyarkhangel/Hardcore-SK</url>
+	<modDependencies>
+		<li>
+			<packageId>skyarkhangel.HSK</packageId>
+			<displayName>Core SK</displayName>
+			<downloadUrl>https://github.com/skyarkhangel/Hardcore-SK</downloadUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+		<li>Ludeon.RimWorld.Odyssey</li>
+		<li>UnlimitedHugs.HugsLib</li>
+		<li>erdelf.HumanoidAlienRaces</li>
+		<li>CETeam.CombatExtended</li>
+		<li>skyarkhangel.HSK</li>
+	</loadAfter>
+</ModMetaData>

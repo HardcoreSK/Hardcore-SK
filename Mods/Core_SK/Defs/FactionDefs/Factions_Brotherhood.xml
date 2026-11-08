@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FactionDef ParentName="SK_HumanFactionBase">
+	<FactionDef ParentName="FactionBase">
 		<defName>Brotherhood</defName>
 		<label>Bloodmoon brotherhood</label>		
 		<pawnSingular>bloodmoon brotherhood</pawnSingular>
@@ -27,7 +27,15 @@
 		</colorSpectrum>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Genie MayRequire="Ludeon.RimWorld.Biotech">0.025</Genie>
+				<Genie MayRequire="Ludeon.RimWorld.Biotech">0.06</Genie>
+				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.04</Dirtmole>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.05</Hussar>
+				<Waster MayRequire="Ludeon.RimWorld.Biotech">0.02</Waster>
+				<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0.02</Pigskin>
+				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.02</Neanderthal>
+				<Impid MayRequire="Ludeon.RimWorld.Biotech">0.05</Impid>
+				<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.02</Yttakin>
+				<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.04</Starjack>
 			</xenotypeChances>
 		</xenotypeSet>
 		<allowedCultures>
@@ -118,7 +126,7 @@
 				<li>SteelBar</li>
 				<li>FerrosiliconAlloy</li>
 				<li>CupronickelAlloy</li>
-				<li>Plasteel</li>
+				<li>Steel</li>
 			</thingDefs>
 		</apparelStuffFilter>
 		<pawnGroupMakers>

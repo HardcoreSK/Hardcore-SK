@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- Mechanoid Bases -->
+	<!-- Mechanoid Bases  - DefOverwrite
 	<PawnKindDef Name="SK_BaseMechanoidKind" Abstract="True">
 		<defaultFactionType>Mechanoid</defaultFactionType>
 		<aiAvoidCover>true</aiAvoidCover>
@@ -9,8 +9,8 @@
 		<minGenerationAge MayRequire="Ludeon.RimWorld.Biotech">200</minGenerationAge>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 	</PawnKindDef>
-
-	<!-- Centipede's -->	
+-->
+	<!-- Centipede's 	- DefOverwrite
 	<PawnKindDef ParentName="SK_BaseMechanoidKind" Name="SK_BaseMechCentipedeKind" Abstract="True">
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
@@ -42,8 +42,8 @@
 		<techHediffsMoney>9999~9999</techHediffsMoney>
 		<controlGroupPortraitZoom>0.65</controlGroupPortraitZoom>  
 	</PawnKindDef>
-
-
+-->
+<!-- DefOverwrite
 	<PawnKindDef ParentName="SK_BaseMechCentipedeKind">
 		<defName>Mech_CentipedeBlaster</defName>
 		<label>Centipede blaster</label>
@@ -161,9 +161,9 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
+-->
 
-
-	<!-- Scyther -->
+	<!-- Scyther --> <!-- DefOverwrite
 	<PawnKindDef ParentName="SK_BaseMechanoidKind">
 		<defName>Mech_Scyther</defName>
 		<label>Scyther</label>
@@ -214,9 +214,9 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
+-->
 	<!-- HeavyGun Scyther -->
-	<PawnKindDef ParentName="SK_BaseMechanoidKind">
+	<PawnKindDef ParentName="BaseMechanoidKind">
 		<defName>Mech_ScytherHG</defName>
 		<label>Scyther</label>
 		<race>Mech_Scyther</race>
@@ -267,7 +267,7 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<!-- Lancer -->
+	<!-- Lancer - DefOverwrite
 	<PawnKindDef ParentName="SK_BaseMechanoidKind">
 		<defName>Mech_Lancer</defName>
 		<label>Lancer</label>
@@ -317,9 +317,9 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
+ -->
 	<!-- Sniper Lancer -->
-	<PawnKindDef ParentName="SK_BaseMechanoidKind">
+	<PawnKindDef ParentName="BaseMechanoidKind">
 		<defName>Mech_SniperLancer</defName>
 		<label>Lancer</label>
 		<race>Mech_Lancer</race>
@@ -370,7 +370,7 @@
 	</PawnKindDef>
 
 
-	<!-- Pikeman -->
+	<!-- Pikeman - DefOverwrite
 	<PawnKindDef ParentName="SK_BaseMechanoidKind">
 		<defName>Mech_Pikeman</defName>
 		<label>Pikeman</label>
@@ -420,8 +420,9 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
+	-->
 	<!-- Crawler -->
-	<PawnKindDef ParentName="SK_BaseMechanoidKind">
+	<PawnKindDef ParentName="BaseMechanoidKind">
 		<defName>Mech_Crawler</defName>
 		<label>Crawler</label>
 		<race>Mech_Crawler</race>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/DesignationCategoryDef[defName="SolarWeb-Stratum-Roofs"]</xpath>
+    <value>
+      <modExtensions>
+        <li Class="BetterArchitect.NestedCategoryExtension">
+          <parentCategory>Structure</parentCategory>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-SunLamp_Hanging"]/designationCategory</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-SunLamp_Hanging"]/designationCategory</xpath>
+      <value>
+        <designationCategory>Ferny_Farming</designationCategory>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-SunLamp_Hanging"]</xpath>
+      <value>
+        <designationCategory>Ferny_Farming</designationCategory>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-FireSprinkler"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Firefoam</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-LEDLight_Hanging"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Lighting</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-PASpeaker_Hanging"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_DecoHanging</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-PATransmitter"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_DecoHanging</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-CeilingFan"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Cooling</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-SurgicalSpotlight"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Medical</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-AeroponicsMister_Hanging"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Farming</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-LightningRod"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_PowerGeneration</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RooftopScannerBooster"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Auxiliaries</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RotaryTurbineVent"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_AirManagement</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RooftopSolarGenerator"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_PowerGeneration</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-Thermostat"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_AirManagement</designationCategory>
+    </value>
+  </Operation>
+</Patch>

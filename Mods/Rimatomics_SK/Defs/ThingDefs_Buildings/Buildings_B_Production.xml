@@ -50,11 +50,8 @@
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>250</basePowerConsumption>
         <shortCircuitInRain>true</shortCircuitInRain>
+        <idlePowerDraw>50</idlePowerDraw>
       </li>
-	  <li Class="SK.CompProperties_LowIdleDraw">
-		 <compClass>SK.CompPowerLowIdleDraw</compClass>
-		 <idlePowerFactor>0.2</idlePowerFactor>
-	  </li>
       <li Class="CompProperties_Breakdownable"/>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_AffectedByFacilities">
@@ -66,7 +63,7 @@
       </li>
       <li Class="CompProperties_ReportWorkSpeed">
 				<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
-			</li>
+      </li>
     </comps>
     <fillPercent>0.5</fillPercent>
     <interactionCellIcon>DiningChair</interactionCellIcon>
@@ -107,16 +104,16 @@
     <building>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
     </building>
-		<stuffCategories>
-			<li>RuggedMetallic</li>
-		</stuffCategories>
-		<costStuffCount>200</costStuffCount>
-		<costList>
-			<Rubber>80</Rubber>
-			<ComponentIndustrial>15</ComponentIndustrial>
-			<Electronics>5</Electronics>
-			<Mechanism>12</Mechanism>
-		</costList>
+	<stuffCategories>
+		<li>RuggedMetallic</li>
+	</stuffCategories>
+	<costStuffCount>200</costStuffCount>
+	<costList>
+		<Rubber>80</Rubber>
+		<ComponentIndustrial>15</ComponentIndustrial>
+		<Electronics>5</Electronics>
+		<Mechanism>12</Mechanism>
+	</costList>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
@@ -141,11 +138,8 @@
         <compClass>CompPowerTrader</compClass>
         <shortCircuitInRain>true</shortCircuitInRain>
         <basePowerConsumption>500</basePowerConsumption>
+        <idlePowerDraw>100</idlePowerDraw>
       </li>
-	  <li Class="SK.CompProperties_LowIdleDraw">
-		 <compClass>SK.CompPowerLowIdleDraw</compClass>
-		 <idlePowerFactor>0.2</idlePowerFactor>
-	  </li>	  
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Glower">
         <glowRadius>5</glowRadius>
@@ -158,8 +152,8 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
       <li Class="CompProperties_ReportWorkSpeed">
-				<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
-			</li>
+		<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
+      </li>
     </comps>
     <designationHotKey>Misc7</designationHotKey>
     <placeWorkers>
@@ -203,16 +197,16 @@
     <tickerType>Normal</tickerType>    
     <canOverlapZones>false</canOverlapZones>
     <size>(4,4)</size>
-		<stuffCategories>
-			<li>SolidMetallic</li>
-		</stuffCategories>
-		<costStuffCount>300</costStuffCount>
-		<costList>
-			<ReinforcedConcrete>300</ReinforcedConcrete>
-			<Plastic>120</Plastic>
-			<Mechanism>20</Mechanism>
-			<ComponentIndustrial>15</ComponentIndustrial>
-		</costList>
+	<stuffCategories>
+		<li>SolidMetallic</li>
+	</stuffCategories>
+	<costStuffCount>300</costStuffCount>
+	<costList>
+		<ReinforcedConcrete>300</ReinforcedConcrete>
+		<Plastic>120</Plastic>
+		<Mechanism>20</Mechanism>
+		<ComponentIndustrial>15</ComponentIndustrial>
+	</costList>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -267,16 +261,16 @@
     </statBases>
     <tickerType>Normal</tickerType>   
     <size>(4,3)</size>
-		<stuffCategories>
-			<li>StrongMetallic</li>
-		</stuffCategories>
-		<costStuffCount>240</costStuffCount>
-		<costList>
-			<Plastic>90</Plastic>
-			<AdvMechanism>8</AdvMechanism>
-			<ComponentSpacer>10</ComponentSpacer>
-			<Microchips>2</Microchips>
-		</costList>
+	<stuffCategories>
+		<li>StrongMetallic</li>
+	</stuffCategories>
+	<costStuffCount>240</costStuffCount>
+	<costList>
+		<Plastic>90</Plastic>
+		<AdvMechanism>8</AdvMechanism>
+		<ComponentSpacer>10</ComponentSpacer>
+		<Microchips>2</Microchips>
+	</costList>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -299,7 +293,6 @@
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
     <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
-
   </ThingDef>
 
 

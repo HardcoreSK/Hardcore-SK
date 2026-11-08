@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- fixes https://github.com/Dubwise56/Rimatomics/issues/66 -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/Def[defName="GuidenceSystem3"]</xpath>
+        <value>
+            <RecipeUnlocks>
+                <li>RimatomicsPlusPlus_DummyRecipe</li>
+            </RecipeUnlocks>
+        </value>
+    </Operation>
+
+    <!-- blueprint upgrade text is inaccurate for guidance system since it's not a ThingDef -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/Def[defName="ResearchGuidenceSystem"]/BlueprintUpgrade</xpath>
+    </Operation>
+</Patch>

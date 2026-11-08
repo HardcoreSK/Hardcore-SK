@@ -1,113 +1,158 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="SK_ResourceBase">
-		<defName>ElectronicComponents</defName>
-		<label>Electronic Components</label>
-		<description>An Electronic Component is any basic discrete device or physical entity in an electronic system used to affect electrons or their associated fields. Basic electronic devices like Cook Stoves or Coolers use Electronic Components to process electricity.</description>
-    <graphicData>
-		<texPath>Things/Item/Resource/EC</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-		<soundInteract>Metal_Drop</soundInteract>
-		<soundDrop>Metal_Drop</soundDrop>
-		<stackLimit>75</stackLimit>
-		<tickerType>Rare</tickerType>
-		<techLevel>Industrial</techLevel>
-		<statBases>
-			<MarketValue>240</MarketValue>
-			<DeteriorationRate>0</DeteriorationRate>
-    		<Flammability>1</Flammability>
-			<Mass>0.5</Mass>
-			<Bulk>0.5</Bulk>
-		</statBases>
-		<thingCategories>
-			<li>ElectronicsCat</li>
-		</thingCategories>
-	</ThingDef>
+    <ThingDef ParentName="ResourceBase">
+        <defName>ElectronicComponents</defName>
+        <label>Electronic Components</label>
+        <description>An Electronic Component is any basic discrete device or physical entity in an electronic system used to affect electrons or their associated fields. Basic electronic devices like Cook Stoves or Coolers use Electronic Components to process electricity.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/ElectronicComponents</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>75</stackLimit>
+        <tickerType>Rare</tickerType>
+        <techLevel>Industrial</techLevel>
+        <statBases>
+            <MarketValue>240</MarketValue>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Flammability>1</Flammability>
+            <Mass>0.5</Mass>
+            <Bulk>0.5</Bulk>
+        </statBases>
+        <thingCategories>
+            <li>ElectronicsCat</li>
+        </thingCategories>
+    </ThingDef>
 
+    <ThingDef ParentName="ResourceBase">
+        <defName>Electronics</defName>
+        <label>Integrated Circuits</label>
+        <description>An Integrated Circuit is a set of electronic circuits on one small plate of semiconductor material, which is normally silicon. This can be made much smaller than a discrete circuit made from independent Electronic Components. It is useful for more advanced electrical devices such as Solar Generators or a Comms Console.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/IntegratedCircuits</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>75</stackLimit>
+        <tickerType>Rare</tickerType>
+        <techLevel>Industrial</techLevel>
+        <statBases>
+            <MarketValue>550</MarketValue>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Flammability>1</Flammability>
+            <Mass>0.55</Mass>
+            <Bulk>0.55</Bulk>
+        </statBases>
+        <thingCategories>
+            <li>ElectronicsCat</li>
+        </thingCategories>
+    </ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
-		<defName>Electronics</defName>
-		<label>Integrated Circuits</label>
-		<description>An Integrated Circuit is a set of electronic circuits on one small plate of semiconductor material, which is normally silicon. This can be made much smaller than a discrete circuit made from independent Electronic Components. It is useful for more advanced electrical devices such as Solar Generators or a Comms Console.</description>
-    <graphicData>
-		<texPath>Things/Item/Resource/Electronics</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-		<soundInteract>Metal_Drop</soundInteract>
-		<soundDrop>Metal_Drop</soundDrop>
-		<stackLimit>75</stackLimit>
-		<tickerType>Rare</tickerType>
-		<techLevel>Industrial</techLevel>
-		<statBases>
-			<MarketValue>550</MarketValue>
-			<DeteriorationRate>0</DeteriorationRate>
-    		<Flammability>1</Flammability>
-			<Mass>0.55</Mass>
-			<Bulk>0.55</Bulk>
-		</statBases>
-		<thingCategories>
-			<li>ElectronicsCat</li>
-		</thingCategories>
-	</ThingDef>
+    <ThingDef ParentName="ResourceBase">
+        <defName>Microchips</defName>
+        <label>Microchip Integrated Circuits</label>
+        <description>Microchip Integrated Circuits are Integrated Circuits that have had a microprocessor installed. It is a computer processor that incorporates the functions of a computer's central processing unit (CPU) on a single Integrated Circuit, or at most a few Integrated Circuits. It is useful for highly advanced electronic devices, such as Geothermal Generators.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Microchips</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>25</stackLimit>
+        <tickerType>Rare</tickerType>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Flammability>1</Flammability>
+            <Mass>0.3</Mass>
+            <Bulk>0.3</Bulk>
+        </statBases>
+        <thingCategories>
+            <li>ElectronicsCat</li>
+        </thingCategories>
+        <tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+    </ThingDef>
 
+    <ThingDef ParentName="ResourceBase">
+        <defName>BioMicrochips</defName>
+        <label>Bioelectronic Devices</label>
+        <description>BioElectronic Devices are bionic micro-electronic chips. These devices are too delicate and intricate to make by human hands. They need to be created through assistance via the robotic assembler.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/BioMicrochips</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>25</stackLimit>
+        <tickerType>Rare</tickerType>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+            <MarketValue>2100</MarketValue>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Flammability>1</Flammability>
+            <Mass>0.4</Mass>
+            <Bulk>0.4</Bulk>
+        </statBases>
+        <thingCategories>
+            <li>ElectronicsCat</li>
+        </thingCategories>
+        <tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+    </ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
-		<defName>Microchips</defName>
-		<label>Microchip Integrated Circuits</label>
-		<description>Microchip Integrated Circuits are Integrated Circuits that have had a microprocessor installed. It is a computer processor that incorporates the functions of a computer's central processing unit (CPU) on a single Integrated Circuit, or at most a few Integrated Circuits. It is useful for highly advanced electronic devices, such as Geothermal Generators.</description>
-    <graphicData>
-		<texPath>Things/Item/Resource/Microchips</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-		<soundInteract>Metal_Drop</soundInteract>
-		<soundDrop>Metal_Drop</soundDrop>
-		<stackLimit>25</stackLimit>
-		<tickerType>Rare</tickerType>
+	<ThingDef ParentName="ResourceBase">
+		<defName>MAAI_Chip</defName>
+		<label>MA-AI chip</label>
+		<description>Medical Assistant AI chip. Used as a specialized component in advanced and delicate implants, with an AI system that can handle all the device's complex processes without burdening the user.</description>
 		<techLevel>Spacer</techLevel>
-		<statBases>
-			<MarketValue>1000</MarketValue>
-			<DeteriorationRate>0</DeteriorationRate>
-    		<Flammability>1</Flammability>
-			<Mass>0.3</Mass>
-			<Bulk>0.3</Bulk>
-		</statBases>
-		<thingCategories>
-			<li>ElectronicsCat</li>
-		</thingCategories>
-		<tradeTags>
-			<li>Exotic</li>
-		</tradeTags>
-	</ThingDef>
-
-
-	<ThingDef ParentName="SK_ResourceBase">
-		<defName>BioMicrochips</defName>
-		<label>Bioelectronic Devices</label>
-		<description>BioElectronic Devices are bionic micro-electronic chips. These devices are too delicate and intricate to make by human hands. They need to be created through assistance via the robotic assembler.</description>
-    <graphicData>
-		<texPath>Things/Item/Resource/BioMicrochips</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
+		<graphicData>
+			<texPath>Things/Item/Resource/MAAIChip</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
 		<soundInteract>Metal_Drop</soundInteract>
-		<soundDrop>Metal_Drop</soundDrop>
-		<stackLimit>25</stackLimit>
-		<tickerType>Rare</tickerType>
-		<techLevel>Spacer</techLevel>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
 		<statBases>
-			<MarketValue>2100</MarketValue>
-			<DeteriorationRate>0</DeteriorationRate>
-    		<Flammability>1</Flammability>
-			<Mass>0.4</Mass>
-			<Bulk>0.4</Bulk>
+			<MarketValue>500</MarketValue>
+			<WorkToMake>7500</WorkToMake>
+			<MaxHitPoints>70</MaxHitPoints>
+			<Mass>0.6</Mass>
+			<Flammability>0.6</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
 		</statBases>
 		<thingCategories>
 			<li>ElectronicsCat</li>
 		</thingCategories>
-		<tradeTags>
-			<li>Exotic</li>
-		</tradeTags>
+		<costList>
+			<Gold>10</Gold>
+			<CarbonAlloy>15</CarbonAlloy>
+			<ComponentSpacer>5</ComponentSpacer>
+			<BioMicrochips>2</BioMicrochips>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+			<workSkillLearnPerTick>0.8</workSkillLearnPerTick>	  
+			<workSkill>Crafting</workSkill>
+			<workAmount>10000</workAmount>
+			<effectWorking>Smith</effectWorking>		
+			<soundWorking>EPOEAssembling</soundWorking>
+			<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+			<recipeUsers>
+				<li>RobAssem</li>
+			</recipeUsers>
+			<productCount>5</productCount>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+		</recipeMaker>
 	</ThingDef>
 
 </Defs>

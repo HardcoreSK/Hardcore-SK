@@ -2,7 +2,7 @@
 <Defs>
 	<!--============================ Trees  ============================-->
 
-	<ThingDef ParentName="TreewoodBase">
+	<ThingDef ParentName="TreeBase">
 		<defName>Plant_TreeIronPineHMC</defName>
 		<label>iron pine tree</label>
 		<description>Genetically modified pine trees are large conifer, very hardwood trees.</description>
@@ -23,10 +23,6 @@
 			<wildClusterRadius>15</wildClusterRadius>
 			<wildClusterWeight>50</wildClusterWeight>
 			<immatureGraphicPath>Things/reskinPlants/Plant/TreePineIronWood/TreePine_Immature</immatureGraphicPath>
-			<visualSizeRange>
-				<min>1.4</min>
-				<max>2.8</max>
-			</visualSizeRange>
 			<growDays>43</growDays>
 			<harvestWork>2000</harvestWork>
 			<harvestYield>30</harvestYield>

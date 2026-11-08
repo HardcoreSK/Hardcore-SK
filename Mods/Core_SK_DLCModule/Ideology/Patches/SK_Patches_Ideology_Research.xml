@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="Biosculpting"]</xpath>
+    <value>
+      <researchViewX>8.00</researchViewX>
+      <researchViewY>68.00</researchViewY>
+      <tab>Buildings_SK</tab>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName = "Biosculpting" or defName = "NeuralSupercharger"]</xpath>
+    <value>
+      <li Class="ResearchTreeSK.ResearchTreeSKModExtension" />
+      <li Class="SK.AdvancedResearchExtension">
+        <requiredResearchBuildings>
+          <li>SimpleResearchBench</li>
+          <li>HiTechResearchBench</li>
+        </requiredResearchBuildings>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName = "Biosculpting" or defName = "NeuralSupercharger"]/requiredResearchBuilding</xpath>
+    <value>
+      <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName = "Biosculpting" or defName = "NeuralSupercharger"]</xpath>
+    <value>
+      <requiredResearchFacilities>
+        <li>LabTerminal</li>
+      </requiredResearchFacilities>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="NeuralSupercharger"]</xpath>
+    <value>
+      <researchViewX>8.00</researchViewX>
+      <researchViewY>69.00</researchViewY>
+      <tab>Buildings_SK</tab>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ResearchProjectDef[defName="Bioregeneration"]</xpath>
+    <value Merge="true">
+      <researchViewX>18.00</researchViewX>
+      <researchViewY>69.00</researchViewY>
+      <tab>Medicine_SK</tab>
+      <techLevel>Spacer</techLevel>
+
+			<requiredResearchFacilities Merge="true">
+        <li>LabStation</li>
+      </requiredResearchFacilities></value>
+  </Operation>
+
+
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ResearchProjectDef[defName="Bioregeneration"]</xpath>
+    <value>
+      <li Class="ResearchTreeSK.ResearchTreeSKModExtension" />
+      <li Class="SK.AdvancedResearchExtension">
+        <requiredResearchBuildings>
+          <li>HiTechResearchBench</li>
+        </requiredResearchBuildings>
+      </li>
+    </value>
+  </Operation>
+
+</Patch>

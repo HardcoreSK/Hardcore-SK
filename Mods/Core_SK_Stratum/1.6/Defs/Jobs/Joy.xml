@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>SolarWeb-Stratum-GreenhouseGaze</defName>
+    <driverClass>SolarWeb.Stratum.AI.JobDrivers.GreenhouseGaze</driverClass>
+    <reportString>gazing at the sky from greenhouse.</reportString>
+    <joyDuration>4000</joyDuration>
+    <joyKind>Meditative</joyKind>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    <isCrawlingIfDowned>false</isCrawlingIfDowned>
+  </JobDef>
+</Defs>

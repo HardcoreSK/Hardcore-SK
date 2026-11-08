@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- ========== Components ========== -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/MemeDef[defName="Bloodfeeding"]/startingResearchProjects</xpath>
+		</match>
+	</Operation>
+
+</Patch>

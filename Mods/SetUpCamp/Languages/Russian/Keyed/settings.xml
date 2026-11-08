@@ -1,26 +1,52 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-  <SetUpCamp>Разбить лагерь</SetUpCamp>
-  <SetUpCampDesc>Разбейте лагерь, чтобы караван мог добывать руду и охотиться</SetUpCampDesc>
-  <SetUpCampFormedCamp>Караван успешно разбил лагерь.</SetUpCampFormedCamp>
-  <SetUpCampSettingsCategoryLabel>SetUpCamp</SetUpCampSettingsCategoryLabel>
-  <SetUpCampSettingMapSize>Диапазон размеров карты лагеря (по умолчанию: 75-125)</SetUpCampSettingMapSize>
-  <SetUpCampSettingsMapTimerDays>Время выхода из лагеря (по умолчанию: 5 дней)</SetUpCampSettingsMapTimerDays>
-  <SetUpCampSettingsMapTimerDaysTooltip>Дни до того, как караван будет вынужден покинуть лагерь</SetUpCampSettingsMapTimerDaysTooltip>
-  <SetUpCampSettingsTimeout>Время до исчезновения заброшенного лагеря (по умолчанию: 60)</SetUpCampSettingsTimeout>
-  <SetUpCampSettingsTimeoutTooltip>Дни до исчезновения заброшенных лагерей (15-120 дней)</SetUpCampSettingsTimeoutTooltip>
-  <SetUpCampSettingMinCampSize>Минимальный размер для лагерей</SetUpCampSettingMinCampSize>
-  <SetUpCampSettingMaxCampSize>Максимальный размер для лагерей</SetUpCampSettingMaxCampSize>
-  <SetUpCampSettingsCustomMapGenDef>Включить ресурсы для сгенерированной местности лагеря</SetUpCampSettingsCustomMapGenDef>
-  <SetUpCampSettingsPermanentCamps>Включить постоянные лагеря (отключение приведет к безвозвратному удалению всех пустых лагерей)</SetUpCampSettingsPermanentCamps>
-  <SetUpCampSettingsHomeEvents>Включить события "нормальных карт" в лагерях</SetUpCampSettingsHomeEvents>
-  <SetUpCampSettingsCaravanEvents>Включить события "караванов" в лагерях</SetUpCampSettingsCaravanEvents>
-  <SetUpCampDestroyCamp>Забросить лагерь</SetUpCampDestroyCamp>
-  <SetUpCampDestroyCampDesc>Навсегда забросить этот лагерь.</SetUpCampDestroyCampDesc>
-  <SetUpCampAbandonDialogue>Вы уверены, что хотите окончательно забросить этот лагерь?</SetUpCampAbandonDialogue>
-  <SetUpCampAbandoned>Лагерь заброшен.</SetUpCampAbandoned>
-  <SetUpCampStillInUse>В лагере еще есть колонисты. Вы должны продолжить путь каравана, прежде чем забросить лагерь.</SetUpCampStillInUse>
-  <SetUpCampOccupied>Вам нужно подождать, прежде чем разбивать лагерь на том же самом месте.</SetUpCampOccupied>
+    <SetUpCamp>Разбить лагерь</SetUpCamp>
+    <SetUpCampDesc>Разбейте лагерь, чтобы караван мог добывать руду и охотиться</SetUpCampDesc>
+    <SetUpCampFormedCamp>Караван успешно разбил лагерь.</SetUpCampFormedCamp>
+    <SetUpCampSettingMapSize>Диапазон размеров карты лагеря (по умолчанию: 75-125)</SetUpCampSettingMapSize>
+    <SetUpCampSettingsMapTimerDays>Время выхода из лагеря (по умолчанию: 5 дней)</SetUpCampSettingsMapTimerDays>
+    <SetUpCampSettingsMapTimerDaysTooltip>Дни до того, как караван будет вынужден покинуть лагерь</SetUpCampSettingsMapTimerDaysTooltip>
+    <SetUpCampSettingsTimeout>Время до исчезновения заброшенного лагеря (по умолчанию: 60)</SetUpCampSettingsTimeout>
+    <SetUpCampSettingsTimeoutTooltip>Дни до исчезновения заброшенных лагерей (15-120 дней)</SetUpCampSettingsTimeoutTooltip>
+    <SetUpCampSettingMinCampSize>Минимальный размер для лагерей</SetUpCampSettingMinCampSize>
+    <SetUpCampSettingMaxCampSize>Максимальный размер для лагерей</SetUpCampSettingMaxCampSize>
+    <SetUpCampSettingsCustomMapGenDef>Включить ресурсы для сгенерированной местности лагеря</SetUpCampSettingsCustomMapGenDef>
+    <SetUpCampSettingsPermanentCamps>Включить постоянные лагеря (отключение приведет к безвозвратному удалению всех пустых лагерей)</SetUpCampSettingsPermanentCamps>
+    <SetUpCampSettingsHomeEvents>Включить события "нормальных карт" в лагерях</SetUpCampSettingsHomeEvents>
+    <SetUpCampSettingsCaravanEvents>Включить события "караванов" в лагерях</SetUpCampSettingsCaravanEvents>
+    <SetUpCampDestroyCamp>Забросить лагерь</SetUpCampDestroyCamp>
+    <SetUpCampDestroyCampDesc>Навсегда забросить этот лагерь.</SetUpCampDestroyCampDesc>
+    <SetUpCampAbandonDialogue>Вы уверены, что хотите окончательно забросить этот лагерь?</SetUpCampAbandonDialogue>
+    <SetUpCampAbandoned>Лагерь заброшен.</SetUpCampAbandoned>
+    <SetUpCampStillInUse>В лагере еще есть колонисты. Вы должны продолжить путь каравана, прежде чем забросить лагерь.</SetUpCampStillInUse>
+    <SetUpCampOccupied>Вам нужно подождать, прежде чем разбивать лагерь на том же самом месте.</SetUpCampOccupied>
+  
+    <!-- Settings -->
+    <SetUpCampSettings>Привал каравана</SetUpCampSettings>
+    <SetUpCampNote>Все изменения не будут влиять на уже существующие лагеря</SetUpCampNote>
+
+    <CampResources>Ресурсы лагеря</CampResources>
+    <CampResourcesTooltip>Разрешить картам лагерей генерировать ресурсы, не относящиеся к скалам.</CampResourcesTooltip>
+
+    <RaidTimer>Таймер рейда</RaidTimer>
+    <RaidTimerTooltip>Примерное количество дней до того, как лагерь будет атакован.\nВведите 0, чтобы отключить.</RaidTimerTooltip>
+	
+    <AbandonedCampDuration>Время до исчезновения заброшенного лагеря</AbandonedCampDuration>
+    <AbandonedCampDurationTooltip>Количество дней, в течение которых заброшенные лагеря будут оставаться на карте мира.\nВведите 0, чтобы отключить.</AbandonedCampDurationTooltip>
+	
+    <PersistCamp>Постоянные лагеря</PersistCamp>
+    <PersistCampTooltip>Позволяет создавать постоянные лагеря, которые могут существовать без присутствия колонистов.</PersistCampTooltip>
+	
+    <PersistCampWarn>Внимание: если убрать отметку с постоянно действующего лагеря, когда колониста нет рядом, он будет покинут.</PersistCampWarn>
+
+    <PersistCampDefault>Постоянные лагеря по умолчанию</PersistCampDefault>
+    <PersistCampDefaultTooltip>Новые созданные лагеря будут автоматически помечаться как постоянные, если эта функция включена.</PersistCampDefaultTooltip>
+
+    <ConfirmEmptyCamps>Подтверждение ухода из постоянного лагеря</ConfirmEmptyCamps>
+    <ConfirmEmptyCampsTooltip>Удаляет диалоговое окно подтверждения при снятии отметки с постоянных лагерей, если эта функция отключена.</ConfirmEmptyCampsTooltip>
+	
+    <OverideCampSize>Переопределить размер карты лагеря</OverideCampSize>
+    <MapSizeMini>Мини</MapSizeMini>
 
 </LanguageData>

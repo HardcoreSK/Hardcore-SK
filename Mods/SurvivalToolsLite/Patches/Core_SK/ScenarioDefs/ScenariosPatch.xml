@@ -1,15 +1,15 @@
 <Patch>
 
-    <!-- Classic -->
+    <!-- Expedition -->
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ScenarioDef[defName="Classic"]/scenario/parts</xpath>
+        <xpath>Defs/ScenarioDef[defName="Expedition"]/scenario/parts</xpath>
         <value>
 
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Paxe</thingDef>
-                <stuff>Plasteel</stuff>
-                <count>2</count>
+                <thingDef>Tool_Paxe</thingDef>
+                <stuff>Steel</stuff>
+                <count>3</count>
             </li>
         </value>
     </Operation>
@@ -21,18 +21,9 @@
 
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Woodcutting_Handaxe</thingDef>
-                <stuff>Plasteel</stuff>
-            </li>
-            <li Class="ScenPart_StartingThing_Defined">
-                <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Building_Hammer</thingDef>
-                <stuff>Plasteel</stuff>
-            </li>
-            <li Class="ScenPart_StartingThing_Defined">
-                <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
-                <stuff>Plasteel</stuff>
+                <thingDef>Tool_Paxe</thingDef>
+                <stuff>Steel</stuff>
+                <count>2</count>
             </li>
         </value>
     </Operation>
@@ -44,27 +35,27 @@
 
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Woodcutting_Handaxe</thingDef>
+                <thingDef>Tool_Woodcutting_Handaxe</thingDef>
                 <stuff>Bronze</stuff>
                 <count>2</count>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Building_Hammer</thingDef>
+                <thingDef>Tool_Building_Hammer</thingDef>
                 <stuff>WoodPlank</stuff>
                 <count>2</count>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Sickle</thingDef>
+                <thingDef>Tool_Sickle</thingDef>
                 <stuff>Bronze</stuff>
                 <count>2</count>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
+                <thingDef>Tool_Mining_Pickaxe</thingDef>
                 <stuff>Bronze</stuff>
-				<count>2</count>
+                <count>2</count>
             </li>
         </value>
     </Operation>
@@ -76,25 +67,25 @@
 
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Woodcutting_Handaxe</thingDef>
+                <thingDef>Tool_Woodcutting_Handaxe</thingDef>
                 <stuff>Bronze</stuff>
                 <count>2</count>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Building_Hammer</thingDef>
+                <thingDef>Tool_Building_Hammer</thingDef>
                 <stuff>WoodPlank</stuff>
                 <count>2</count>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Sickle</thingDef>
+                <thingDef>Tool_Sickle</thingDef>
                 <stuff>Bronze</stuff>
                 <count>2</count>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
+                <thingDef>Tool_Mining_Pickaxe</thingDef>
                 <stuff>Bronze</stuff>
 				<count>2</count>
             </li>
@@ -108,18 +99,18 @@
 
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Woodcutting_Handaxe</thingDef>
-                <stuff>Plasteel</stuff>
+                <thingDef>Tool_Woodcutting_Handaxe</thingDef>
+                <stuff>Steel</stuff>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Building_Hammer</thingDef>
-                <stuff>Plasteel</stuff>
+                <thingDef>Tool_Building_Hammer</thingDef>
+                <stuff>Steel</stuff>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
-                <stuff>Plasteel</stuff>
+                <thingDef>Tool_Mining_Pickaxe</thingDef>
+                <stuff>Steel</stuff>
             </li>
         </value>
     </Operation>
@@ -131,18 +122,18 @@
 
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Woodcutting_Handaxe</thingDef>
-                <stuff>Plasteel</stuff>
+                <thingDef>Tool_Woodcutting_Handaxe</thingDef>
+                <stuff>Steel</stuff>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Building_Hammer</thingDef>
-                <stuff>Plasteel</stuff>
+                <thingDef>Tool_Building_Hammer</thingDef>
+                <stuff>Steel</stuff>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
-                <stuff>Plasteel</stuff>
+                <thingDef>Tool_Mining_Pickaxe</thingDef>
+                <stuff>Steel</stuff>
             </li>
         </value>
     </Operation>
@@ -153,18 +144,18 @@
         <value>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Woodcutting_Handaxe</thingDef>
-                <stuff>Plasteel</stuff>
+                <thingDef>Tool_Woodcutting_Handaxe</thingDef>
+                <stuff>Steel</stuff>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Building_Hammer</thingDef>
-                <stuff>Plasteel</stuff>
+                <thingDef>Tool_Building_Hammer</thingDef>
+                <stuff>Steel</stuff>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
-                <stuff>Plasteel</stuff>
+                <thingDef>Tool_Mining_Pickaxe</thingDef>
+                <stuff>Steel</stuff>
             </li>
         </value>
     </Operation>
@@ -175,20 +166,20 @@
         <value>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Woodcutting_Handaxe</thingDef>
-                <stuff>Plasteel</stuff>
+                <thingDef>Tool_Woodcutting_Handaxe</thingDef>
+                <stuff>Steel</stuff>
 				<count>2</count>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Building_Hammer</thingDef>
-                <stuff>Plasteel</stuff>
+                <thingDef>Tool_Building_Hammer</thingDef>
+                <stuff>Steel</stuff>
 				<count>2</count>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
-                <stuff>Plasteel</stuff>
+                <thingDef>Tool_Mining_Pickaxe</thingDef>
+                <stuff>Steel</stuff>
 				<count>2</count>
             </li>
         </value>
@@ -200,7 +191,7 @@
         <value>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Multitool</thingDef>
+                <thingDef>Tool_Multitool</thingDef>
 		        <stuff>SteelBar</stuff>
             </li>
         </value>
@@ -213,25 +204,25 @@
 
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Woodcutting_Handaxe</thingDef>
+                <thingDef>Tool_Woodcutting_Handaxe</thingDef>
                 <stuff>Bronze</stuff>
                 <count>2</count>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Building_Hammer</thingDef>
+                <thingDef>Tool_Building_Hammer</thingDef>
                 <stuff>WoodPlank</stuff>
                 <count>2</count>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Sickle</thingDef>
+                <thingDef>Tool_Sickle</thingDef>
                 <stuff>Bronze</stuff>
                 <count>2</count>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                <thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
+                <thingDef>Tool_Mining_Pickaxe</thingDef>
                 <stuff>Bronze</stuff>
 				<count>2</count>
             </li>
@@ -251,23 +242,23 @@
 
 						<li Class="ScenPart_StartingThing_Defined">
 							<def>StartingThing_Defined</def>
-							<thingDef>TFJ_Tool_Woodcutting_Handaxe</thingDef>
-							<stuff>Plasteel</stuff>
+							<thingDef>Tool_Woodcutting_Handaxe</thingDef>
+							<stuff>Steel</stuff>
 						</li>
 						<li Class="ScenPart_StartingThing_Defined">
 							<def>StartingThing_Defined</def>
-							<thingDef>TFJ_Tool_Building_Hammer</thingDef>
-							<stuff>Plasteel</stuff>
+							<thingDef>Tool_Building_Hammer</thingDef>
+							<stuff>Steel</stuff>
 						</li>
 						<li Class="ScenPart_StartingThing_Defined">
 							<def>StartingThing_Defined</def>
-							<thingDef>TFJ_Tool_Sickle</thingDef>
-							<stuff>Plasteel</stuff>
+							<thingDef>Tool_Sickle</thingDef>
+							<stuff>Steel</stuff>
 						</li>
 						<li Class="ScenPart_StartingThing_Defined">
 							<def>StartingThing_Defined</def>
-							<thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
-							<stuff>Plasteel</stuff>
+							<thingDef>Tool_Mining_Pickaxe</thingDef>
+							<stuff>Steel</stuff>
 						</li>
 					</value>
 				</li>
@@ -277,23 +268,23 @@
 
 						<li Class="ScenPart_StartingThing_Defined">
 							<def>StartingThing_Defined</def>
-							<thingDef>TFJ_Tool_Woodcutting_Handaxe</thingDef>
-							<stuff>Plasteel</stuff>
+							<thingDef>Tool_Woodcutting_Handaxe</thingDef>
+							<stuff>Steel</stuff>
 						</li>
 						<li Class="ScenPart_StartingThing_Defined">
 							<def>StartingThing_Defined</def>
-							<thingDef>TFJ_Tool_Building_Hammer</thingDef>
-							<stuff>Plasteel</stuff>
+							<thingDef>Tool_Building_Hammer</thingDef>
+							<stuff>Steel</stuff>
 						</li>
 						<li Class="ScenPart_StartingThing_Defined">
 							<def>StartingThing_Defined</def>
-							<thingDef>TFJ_Tool_Sickle</thingDef>
-							<stuff>Plasteel</stuff>
+							<thingDef>Tool_Sickle</thingDef>
+							<stuff>Steel</stuff>
 						</li>
 						<li Class="ScenPart_StartingThing_Defined">
 							<def>StartingThing_Defined</def>
-							<thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
-							<stuff>Plasteel</stuff>
+							<thingDef>Tool_Mining_Pickaxe</thingDef>
+							<stuff>Steel</stuff>
 						</li>
 					</value>
 				</li>
@@ -303,23 +294,23 @@
 
 						<li Class="ScenPart_StartingThing_Defined">
 							<def>StartingThing_Defined</def>
-							<thingDef>TFJ_Tool_Woodcutting_Handaxe</thingDef>
-							<stuff>Plasteel</stuff>
+							<thingDef>Tool_Woodcutting_Handaxe</thingDef>
+							<stuff>Steel</stuff>
 						</li>
 						<li Class="ScenPart_StartingThing_Defined">
 							<def>StartingThing_Defined</def>
-							<thingDef>TFJ_Tool_Building_Hammer</thingDef>
-							<stuff>Plasteel</stuff>
+							<thingDef>Tool_Building_Hammer</thingDef>
+							<stuff>Steel</stuff>
 						</li>
 						<li Class="ScenPart_StartingThing_Defined">
 							<def>StartingThing_Defined</def>
-							<thingDef>TFJ_Tool_Sickle</thingDef>
-							<stuff>Plasteel</stuff>
+							<thingDef>Tool_Sickle</thingDef>
+							<stuff>Steel</stuff>
 						</li>
 						<li Class="ScenPart_StartingThing_Defined">
 							<def>StartingThing_Defined</def>
-							<thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
-							<stuff>Plasteel</stuff>
+							<thingDef>Tool_Mining_Pickaxe</thingDef>
+							<stuff>Steel</stuff>
 						</li>
 					</value>
 				</li>
@@ -341,8 +332,8 @@
 					<value>
 						<li Class="ScenPart_StartingThing_Defined">
 							<def>StartingThing_Defined</def>
-							<thingDef>TFJ_Tool_Multitool</thingDef>
-							<stuff>Plasteel</stuff>
+							<thingDef>Tool_Multitool</thingDef>
+							<stuff>Steel</stuff>
 						</li>
 					</value>
 				</li>
@@ -352,23 +343,23 @@
 
 						<li Class="ScenPart_StartingThing_Defined">
 							<def>StartingThing_Defined</def>
-							<thingDef>TFJ_Tool_Woodcutting_Handaxe</thingDef>
-							<stuff>Plasteel</stuff>
+							<thingDef>Tool_Woodcutting_Handaxe</thingDef>
+							<stuff>Steel</stuff>
 						</li>
 						<li Class="ScenPart_StartingThing_Defined">
 							<def>StartingThing_Defined</def>
-							<thingDef>TFJ_Tool_Building_Hammer</thingDef>
-							<stuff>Plasteel</stuff>
+							<thingDef>Tool_Building_Hammer</thingDef>
+							<stuff>Steel</stuff>
 						</li>
 						<li Class="ScenPart_StartingThing_Defined">
 							<def>StartingThing_Defined</def>
-							<thingDef>TFJ_Tool_Sickle</thingDef>
-							<stuff>Plasteel</stuff>
+							<thingDef>Tool_Sickle</thingDef>
+							<stuff>Steel</stuff>
 						</li>
 						<li Class="ScenPart_StartingThing_Defined">
 							<def>StartingThing_Defined</def>
-							<thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
-							<stuff>Plasteel</stuff>
+							<thingDef>Tool_Mining_Pickaxe</thingDef>
+							<stuff>Steel</stuff>
 						</li>
 					</value>
 				</li>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<AlienRace.ThingDef_AlienRace ParentName="SK_BasePawn">
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<defName>ChjAndroid</defName>
 		<label>Human android</label>
 		<description>A race of humanlike robots which are mostly female in model variety.\n\nThe origins of these machines are mostly unknown. Some speculate they are escapees from a civilization which used them for labor and some just suggest they are outdated pleasure machines which got dumped by a passing space freighter.\n\nBy design by their previous masters they are weak physically but their raw fortitude is enough to make up for it. Beware of their biological reactor and capacitors violently exploding, if they die by overheating.</description>
@@ -248,7 +248,8 @@
 			</generalSettings>
 			<graphicPaths>
 				<head>
-					<path>Things/Android/Head/</path>
+					<!-- Fallback for xenotype HeadTypeDefs not present below. -->
+					<path>Things/Android/Head/Female_Average_Normal</path>
 					<headtypeGraphics>
 						<Male_AverageNormal>Things/Android/Head/Female_Average_Normal</Male_AverageNormal>
 						<Female_AverageNormal>Things/Android/Head/Female_Average_Normal</Female_AverageNormal>
@@ -265,7 +266,9 @@
 					</headtypeGraphics>
 				</head>
 				<body>
-					<path>Things/Android/</path>
+					<!-- Safe fallback when genes or temporary pawn generation provide
+					     a body type that has no matching branch below. -->
+					<path>Things/Android/Naked_Thin</path>
 					<bodytypeGraphics>
 						<Male>Things/Android/Naked_Male</Male>
 						<Female>Things/Android/Naked_Female</Female>
@@ -356,6 +359,7 @@
 			<Radiation>0.5</Radiation>
 			<GermResistance>1</GermResistance>
 			<GermContainment>1</GermContainment>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.5</VacuumResistance>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -510,6 +514,7 @@
 			<li MayRequire="Ludeon.RimWorld.Biotech">RemoveIUD</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">TerminatePregnancy</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">SurgicalInspection</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">RemovePorcupineQuill</li>
 		</recipes>
 		<butcherProducts>
 			<RobotParts>10</RobotParts>

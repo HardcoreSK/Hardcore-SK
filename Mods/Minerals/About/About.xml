@@ -4,15 +4,26 @@
 	<name>Minerals</name>
 	<author>Zachary Foster</author>
 	<supportedVersions>
-		<li>1.5</li>
+		<li>1.6</li>
 	</supportedVersions>
 	<packageId>zacharyfoster.minerals</packageId>
 	<modDependencies>
+		<li>
+		  <packageId>falconne.BWM</packageId>
+		  <displayName>Better Workbench Management</displayName>
+		  <steamWorkshopUrl>steam://url/CommunityFilePage/935982361</steamWorkshopUrl>
+		</li>
+		<li>
+		  <packageId>skyarkhangel.SurvivalToolsLite</packageId>
+		  <displayName>Survival Tools Lite</displayName>
+		  <steamWorkshopUrl>steam://url/CommunityFilePage/3278071677</steamWorkshopUrl>
+		</li>
 	</modDependencies>
 	<loadBefore>
 	</loadBefore>
 	<loadAfter>
 		<li>skyarkhangel.HSK</li>
+		<li>skyarkhangel.HSK.Core</li>
 	</loadAfter>
 	<incompatibleWith>
 	</incompatibleWith>

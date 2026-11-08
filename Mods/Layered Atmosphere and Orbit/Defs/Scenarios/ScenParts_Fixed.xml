@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<ScenPartDef>
+		<defName>LAO_Troposphere</defName>
+		<label>troposphere layer type</label>
+		<scenPartClass>ScenPart_PlanetLayerFixed</scenPartClass>
+		<category>Fixed</category>
+		<summaryPriority>100</summaryPriority>
+		<canBeRandomlyAdded>false</canBeRandomlyAdded>
+		<canBePlayerAddedRemoved>false</canBePlayerAddedRemoved>
+	</ScenPartDef>
+  
+	<ScenPartDef>
+		<defName>LAO_Stratosphere</defName>
+		<label>stratosphere layer type</label>
+		<scenPartClass>ScenPart_PlanetLayerFixed</scenPartClass>
+		<category>Fixed</category>
+		<summaryPriority>100</summaryPriority>
+		<canBeRandomlyAdded>false</canBeRandomlyAdded>
+		<canBePlayerAddedRemoved>false</canBePlayerAddedRemoved>
+	</ScenPartDef>
+  
+	<ScenPartDef>
+		<defName>LAO_Mesosphere</defName>
+		<label>mesosphere layer type</label>
+		<scenPartClass>ScenPart_PlanetLayerFixed</scenPartClass>
+		<category>Fixed</category>
+		<summaryPriority>100</summaryPriority>
+		<canBeRandomlyAdded>false</canBeRandomlyAdded>
+		<canBePlayerAddedRemoved>false</canBePlayerAddedRemoved>
+	</ScenPartDef>
+  
+	<ScenPartDef>
+		<defName>LAO_HighOrbit</defName>
+		<label>high orbit layer type</label>
+		<scenPartClass>ScenPart_PlanetLayerFixed</scenPartClass>
+		<category>Fixed</category>
+		<summaryPriority>100</summaryPriority>
+		<canBeRandomlyAdded>false</canBeRandomlyAdded>
+		<canBePlayerAddedRemoved>false</canBePlayerAddedRemoved>
+	</ScenPartDef>
+	
+	
+  
+	<ScenPartDef>
+		<defName>LAO_Surface_Luna</defName>
+		<label>Luna surface layer type</label>
+		<scenPartClass>ScenPart_PlanetLayerFixed</scenPartClass>
+		<category>Fixed</category>
+		<summaryPriority>100</summaryPriority>
+		<canBeRandomlyAdded>false</canBeRandomlyAdded>
+		<canBePlayerAddedRemoved>false</canBePlayerAddedRemoved>
+	</ScenPartDef>
+
+</Defs>

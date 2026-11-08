@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+<!-- DefOverwrite
 	<PawnKindDef Name="SK_TribalBase" Abstract="True">
 		<race>Human</race>
 		<defaultFactionType>TribeCivil</defaultFactionType>
@@ -354,8 +355,8 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
-	<PawnKindDef ParentName="SK_TribalBase" Name="TribalDemomanBase">
+-->
+	<PawnKindDef ParentName="TribalBase" Name="TribalDemomanBase">
 		<defName>Tribal_Demoman</defName>
 		<label>Demoman</label>
 		<race>Human</race>
@@ -402,7 +403,7 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
+<!-- DefOverwrite
 	<PawnKindDef ParentName="SK_TribalBase" Name="SK_TribalChiefBase" Abstract="True">
 		<race>Human</race>
 		<combatPower>170</combatPower>
@@ -494,7 +495,7 @@
 		<apparelRequired>
 			<li>Apparel_TribalA</li>
 			<li>Apparello_Tribalpad</li>
-			<li>Apparello_MojoFeather</li>
+			<li>Hat_FeathersHeaddress</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>250</min>
@@ -515,4 +516,5 @@
 		<initialWillRange>1~2</initialWillRange>
 		<initialResistanceRange>11~18</initialResistanceRange>
 	</PawnKindDef>
+	-->
 </Defs>

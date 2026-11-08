@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Mote_StoneBit"]</xpath>
+    <value>
+      <mote>
+        <fadeInTime>0.07</fadeInTime>
+        <solidTime>0.125</solidTime>
+        <fadeOutTime>0.25</fadeOutTime>
+      </mote>
+    </value>
+  </Operation>
+
+</Patch>

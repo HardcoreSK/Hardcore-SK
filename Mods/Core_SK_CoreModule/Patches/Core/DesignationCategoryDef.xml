@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses/li[text()="Designator_ZoneAdd_Growing"]</xpath>
+		<order>Append</order> <!--Reverse order in values!-->
+		<value>
+			<li>SK.Designator_ZoneAdd_GrowingSame</li>
+		</value>
+	</Operation>
+</Patch>

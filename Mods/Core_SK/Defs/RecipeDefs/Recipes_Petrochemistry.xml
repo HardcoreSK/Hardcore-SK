@@ -186,9 +186,9 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Sulphates</li>
-						<li>Sulfur</li>
 						<li>Ash</li>
+						<li>Sulfur</li>
+						<li>Sulphates</li>
 					</thingDefs>
 				</filter>
 				<count>3</count>
@@ -210,7 +210,7 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
-		<researchPrerequisite>Oil_Industry_C5</researchPrerequisite>
+		<researchPrerequisite>BiofuelRefining</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef>
@@ -381,7 +381,7 @@
 		<description>Create surfactant from Salt, Sulfur and Alcohol. Produces 50.</description>
 		<jobString>Creating surfactant.</jobString>
 		<workAmount>4000</workAmount>
-		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_Drug</soundWorking>
 		<ingredients>
@@ -441,7 +441,7 @@
 		<description>Create surfactant from Salt, Sulfur and Coconuts. Produces 50.</description>
 		<jobString>Creating surfactant.</jobString>
 		<workAmount>4000</workAmount>
-		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_Drug</soundWorking>
 		<ingredients>
@@ -500,7 +500,7 @@
 		<description>Create surfactant from polymers. Produces 50.</description>
 		<jobString>Creating surfactant.</jobString>
 		<workAmount>4000</workAmount>
-		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_Drug</soundWorking>
 		<ingredients>

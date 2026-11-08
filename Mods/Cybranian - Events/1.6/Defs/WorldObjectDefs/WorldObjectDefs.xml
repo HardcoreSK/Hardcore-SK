@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!---->
+	<WorldObjectDef>
+		<defName>VolcanicAsh</defName>
+		<label>Volcanic ash</label>
+		<description>Huge cloud of volcanic ash.</description>
+		<worldObjectClass>EventsCore.World.WorldObject_VolcanicAsh</worldObjectClass>
+		<texture>World/WorldObjects/VolcanicAsh</texture>
+		<expandingIconTexture>World/WorldObjects/VolcanicAshExpanding</expandingIconTexture>
+		<useDynamicDrawer>true</useDynamicDrawer>
+		<expandingIcon>true</expandingIcon>
+		<expandingIconPriority>1</expandingIconPriority>
+	</WorldObjectDef>
+	<!---->
+</Defs>

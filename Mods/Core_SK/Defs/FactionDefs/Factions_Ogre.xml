@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FactionDef ParentName="SK_FactionBase" Name="SK_OgreClanFactionBase" Abstract="True">
+	<FactionDef ParentName="FactionBase" Name="SK_OgreClanFactionBase" Abstract="True">
 		<pawnSingular>ogre</pawnSingular>
 		<pawnsPlural>ogres</pawnsPlural>
 		<leaderTitle>Clan shaman</leaderTitle>
@@ -41,7 +41,7 @@
 				<li>WoolSheep</li>
 				<li>CopperBar</li>
 				<li>Bronze</li>
-				<li>Plasteel</li>
+				<li>Steel</li>
 			</thingDefs>
 		</apparelStuffFilter>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>

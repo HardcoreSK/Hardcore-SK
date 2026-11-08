@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Pilum_Thrown"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>SK.BasePilumProjectileDummy</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[defName="Pilum_Thrown"]</xpath>
+	  <attribute>Class</attribute>
+	  <value>CombatExtended.AmmoDef</value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Pilum_Thrown"]</xpath>
+    <value>
+      <label>pilum (thrown)</label>
+      <projectile Class="CombatExtended.ProjectilePropertiesCE">
+        <damageAmountBase>24</damageAmountBase>
+        <speed>18</speed>
+        <armorPenetrationBlunt>5.92</armorPenetrationBlunt>
+        <armorPenetrationSharp>5.1</armorPenetrationSharp>
+        <preExplosionSpawnChance>0.75</preExplosionSpawnChance>
+        <preExplosionSpawnThingDef>Pila</preExplosionSpawnThingDef>
+        <suppressionFactor>0.6</suppressionFactor>
+        <dangerFactor>1</dangerFactor>
+        <airborneSuppressionFactor>0.3</airborneSuppressionFactor>
+      </projectile>
+    </value>
+  </Operation>
+
+</Patch>

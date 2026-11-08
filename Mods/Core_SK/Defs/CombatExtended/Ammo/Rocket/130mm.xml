@@ -28,7 +28,7 @@
 		<stackLimit>25</stackLimit>
 		<tradeTags>
 			<li>CE_AutoEnableTrade</li>
-			<li>CE_AutoEnableCrafting</li>
+			<li>CE_AutoEnableCrafting_TableHeavyAmmunition</li>
 		</tradeTags>
 		<statBases>
 			<Mass>8.6</Mass>
@@ -55,6 +55,8 @@
 		</statBases>
 		<ammoClass>RocketFrag</ammoClass>
 		<cookOffProjectile>Bullet_130mmRocketMissile</cookOffProjectile>
+        <spawnAsSiegeAmmo>true</spawnAsSiegeAmmo>
+        <generateAllowChance>1</generateAllowChance>
 	</ThingDef>
 
 	<!-- ================== Projectiles ================== -->
@@ -116,7 +118,6 @@
 			<soundExplode>Explosion_GiantBomb</soundExplode>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
-			<bulletChanceToStartFire>0.4</bulletChanceToStartFire>
 		</projectile>
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">

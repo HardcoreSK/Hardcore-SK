@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="Wall">
+        <defName>GravshipWindow</defName>
+        <label>hull window</label>
+        <description>A strong airtight transparent wall that prevents oxygen leaks in the vacuum of space. The wall connects directly into the underlying substructure, meaning it can only be built on a gravship.</description>
+        <designationCategory>Odyssey</designationCategory>
+        <uiOrder>1800</uiOrder>
+        <uiIconPath>Things/Building/Linked/GravshipHull/GravshipWindow_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>Things/Building/Linked/GravshipHull/GravshipWindow_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+        </graphicData>
+        <researchPrerequisites>
+            <li>BasicGravtech</li>
+        </researchPrerequisites>
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkToBuild>400</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costStuffCount>12</costStuffCount>
+        <building>
+            <isAirtight>true</isAirtight>
+        </building>
+        <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded>
+        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+        <stuffCategories Inherit="False">
+            <li>Glass</li>
+        </stuffCategories>
+        <comps Inherit="False"/>
+		<blockLight>false</blockLight>
+    </ThingDef>
+</Defs>

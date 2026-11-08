@@ -37,6 +37,11 @@
 		<techHediffsChance>0.35</techHediffsChance>
 		<techHediffsMaxAmount>3</techHediffsMaxAmount>
 		<initialWillRange>1~3</initialWillRange>
+		<xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+		  </xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 	<!-- Desperado -->
 	<PawnKindDef ParentName="KingdomBase">
@@ -54,12 +59,12 @@
 			<max>1370</max>
 		</apparelMoney>
 		<apparelRequired>
-			<li>MedievalTimes_Shirt_Tunic</li>
+			<li>Apparel_MedievalTunic</li>
 		</apparelRequired>
 		<apparelTags>
 			<li>MedievalKnightly</li>
 			<li>Medieval</li>
-			<li>MedievalShield</li>
+			<li>Shield_Medieval</li>
 		</apparelTags>
 		<weaponMoney>
 			<min>200</min>
@@ -80,7 +85,7 @@
 					</countRange>
 				</li>
 				<li>
-					<thingDef>rum</thingDef>
+					<thingDef>Alcohol_Rum</thingDef>
 					<countRange>
 						<min>1</min>
 						<max>2</max>
@@ -127,7 +132,7 @@
 					</countRange>
 				</li>
 				<li>
-					<thingDef>vodka</thingDef>
+					<thingDef>Alcohol_Vodka</thingDef>
 					<countRange>
 						<min>1</min>
 						<max>3</max>
@@ -135,11 +140,13 @@
 				</li>
 			</subOptionsChooseOne>
 		</inventoryOptions>
+		<useFactionXenotypes>false</useFactionXenotypes>
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
-			<Baseline_Nova MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Nova>
+			<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.01</Hussar>
+			<Genie MayRequire="Ludeon.RimWorld.Biotech">0.02</Genie>
+			<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.01</Starjack>
 		  </xenotypeChances>
-		  
 		</xenotypeSet>
 	</PawnKindDef>
 	<!-- Trader -->
@@ -153,8 +160,8 @@
 			<max>2200</max>
 		</apparelMoney>
 		<apparelRequired>
-			<li>Apparello_Trypophobia</li>
-			<li>Apparello_Sandtrader</li>
+			<li>Apparel_TraderCoat</li>
+			<li>Hat_Caravaneer</li>
 		</apparelRequired>
 		<initialResistanceRange>7~16</initialResistanceRange>
 	</PawnKindDef>
@@ -173,7 +180,7 @@
 			<max>1370</max>
 		</apparelMoney>
 		<apparelRequired>
-			<li>Apparello_Tunic</li>
+			<li>Apparel_RagTunic</li>
 		</apparelRequired>
 		<apparelTags>
 			<li>Medieval</li>
@@ -186,6 +193,12 @@
 			<li>MedievalRanged</li>
 		</weaponTags>
 		<initialResistanceRange>11~21</initialResistanceRange>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.02</Hussar>
+		  </xenotypeChances>
+		</xenotypeSet>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
@@ -228,11 +241,11 @@
 			<max>1370</max>
 		</apparelMoney>
 		<apparelRequired>
-			<li>Apparello_Tunic</li>
+			<li>Apparel_RagTunic</li>
 		</apparelRequired>
 		<apparelTags>
 			<li>Medieval</li>
-			<li>MedievalShield</li>
+			<li>Shield_Medieval</li>
 		</apparelTags>
 		<weaponMoney>
 			<min>12</min>
@@ -281,7 +294,7 @@
 			<li>MedievalKnightly</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>MedievalTimes_Shirt_Tunic</li>
+			<li>Apparel_MedievalTunic</li>
 		</apparelRequired>
 		<weaponMoney>
 			<min>350</min>
@@ -303,7 +316,7 @@
 					</countRange>
 				</li>
 				<li>
-					<thingDef>vodka</thingDef>
+					<thingDef>Alcohol_Vodka</thingDef>
 					<countRange>
 						<min>1</min>
 						<max>3</max>

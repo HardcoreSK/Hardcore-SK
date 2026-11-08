@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Nitre_Body</defName>
+		<label>Extracts nitre from body</label>
+		<description>Extract nitre from corpse. Takes 10 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Corpses</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ash</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Corpses</li>
+			</categories>
+			<thingDefs>
+				<li>Ash</li>
+			</thingDefs>
+			<disallowedCategories>
+				<li>CorpsesMechanoid</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+				<li>CorpsesAnimal</li>
+			</categories>
+			<thingDefs>
+				<li>Ash</li>
+			</thingDefs>
+			<specialFiltersToDisallow>
+				<li>AllowCorpsesColonist</li>
+			</specialFiltersToDisallow>
+		</defaultIngredientFilter>
+		<products>
+			<Nitre>30</Nitre>
+		</products>
+		<recipeUsers>
+			<li>Saltpeter_pit</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<temperatureSafe>
+			<min>5</min>
+			<max>35</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>10</min>
+			<max>30</max>
+		</temperatureIdeal>
+		<ruinedPerDegreePerHour>0</ruinedPerDegreePerHour>
+		<scaleToMeatAmount>true</scaleToMeatAmount>
+		<scaleToMeatAmountBase>127</scaleToMeatAmountBase>
+		<processDays>10</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.8</speedAboveSafe>
+		<graphicSuffix>_closed</graphicSuffix>
+	</RecipeDef>
+
+	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Nitre_Mush</defName>
+		<label>Extracts nitre from mush</label>
+		<description>Extract nitre from rotted mush. Takes 10 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RottedMush</li>
+					</thingDefs>
+				</filter>
+				<count>70</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ash</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RottedMush</li>
+				<li>Ash</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>RottedMush</li>
+				<li>Ash</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Nitre>7</Nitre>
+		</products>
+		<recipeUsers>
+			<li>Saltpeter_pit</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<temperatureSafe>
+			<min>5</min>
+			<max>35</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>10</min>
+			<max>30</max>
+		</temperatureIdeal>
+		<ruinedPerDegreePerHour>0</ruinedPerDegreePerHour>
+		<processDays>10</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.8</speedAboveSafe>
+		<graphicSuffix>_closed</graphicSuffix>
+	</RecipeDef>
+
+</Defs>

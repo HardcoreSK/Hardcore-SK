@@ -10,9 +10,9 @@
 		<selectable>true</selectable>
 		<altitudeLayer>Item</altitudeLayer>
 		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<tickerType>Normal</tickerType>
+		<!-- for CompForbiddable -->	
 		<drawerType>MapMeshOnly</drawerType>			
-		<tickerType>Normal</tickerType> <!-- for CompForbiddable -->	
-		<techLevel>Industrial</techLevel>		
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Styleable"/>
@@ -22,13 +22,13 @@
 		<pathCost>14</pathCost>
 	</ThingDef>
 
-	<ThingDef ParentName="MinifiedBase">
+<!-- 	<ThingDef ParentName="MinifiedBase">
 		<defName>MinifiedThing</defName>
 		<label>minified thing</label>
 		<inspectorTabs>
 			<li>ITab_Art</li>
 		</inspectorTabs>
-	</ThingDef>
+	</ThingDef> -->
 
 	<ThingDef ParentName="MinifiedTurretBase">
 		<defName>MinifiedTurret_Sniper</defName>

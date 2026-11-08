@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!---->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>DimonSever000_Lobotomy</defName>
+		<label>lobotomy</label>
+		<description>Lobotomy, which can cure mental illness or lead to death.</description>
+		<workerClass>Diseases.RecipeWorker_Lobotomy</workerClass>
+		<jobString>Does a lobotomy.</jobString>
+		<workAmount>2500</workAmount>
+		<surgerySuccessChanceFactor>0.75</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>0.25</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>DimonSever000_BrainTreatment</defName>
+		<label>brain treatment</label>
+		<description>Surgery for the treatment of chronic brain diseases. Dangerous but effective.</description>
+		<workerClass>Diseases.RecipeWorker_Lobotomy</workerClass>
+		<jobString>Does a brain treatment.</jobString>
+		<workAmount>3000</workAmount>
+		<surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>6</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+					<disallowedThingDefs>
+						<li>MedicineHerbal</li>
+					</disallowedThingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>MedicineHerbal</li>
+			</disallowedThingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>DimonSever000_CureDeafness</defName>
+		<label>Cure deafness</label>
+		<description>Cure a deafness.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing deafness.</jobString>
+		<workAmount>3000</workAmount>
+		<removesHediff>DimonSever000_Deafness</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s deafness.</successfullyRemovedHediffMessage>
+		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>DimonSever000_CureGlaucoma</defName>
+		<label>Cure glaucoma</label>
+		<description>Cure a glaucoma.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing glaucoma.</jobString>
+		<workAmount>3000</workAmount>
+		<removesHediff>DimonSever000_Glaucoma</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s glaucoma.</successfullyRemovedHediffMessage>
+		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>DimonSever000_CureStrabismus</defName>
+		<label>Cure strabismus</label>
+		<description>Cure a strabismus.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing strabismus.</jobString>
+		<workAmount>3000</workAmount>
+		<removesHediff>DimonSever000_Strabismus</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s strabismus.</successfullyRemovedHediffMessage>
+		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>DimonSever000_CureDiabetes</defName>
+		<label>Cure diabetes</label>
+		<description>Cure a diabetes.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing diabetes.</jobString>
+		<workAmount>5000</workAmount>
+		<removesHediff>DimonSever000_Diabetes</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s diabetes.</successfullyRemovedHediffMessage>
+		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineUltratech</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>VitalsMonitor</researchPrerequisite>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>DimonSever000_CureImmunodeficiency</defName>
+		<label>Cure immunodeficiency</label>
+		<description>Cure a immunodeficiency.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing immunodeficiency.</jobString>
+		<workAmount>5000</workAmount>
+		<removesHediff>DimonSever000_Immunodeficiency</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s immunodeficiency.</successfullyRemovedHediffMessage>
+		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineUltratech</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>VitalsMonitor</researchPrerequisite>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>DimonSever000_CureMotorParalysis</defName>
+		<label>Cure motor paralysis</label>
+		<description>Cure a motor paralysis.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing motor paralysis.</jobString>
+		<workAmount>5000</workAmount>
+		<removesHediff>DimonSever000_MotorParalysis</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s motor paralysis.</successfullyRemovedHediffMessage>
+		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineUltratech</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>VitalsMonitor</researchPrerequisite>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>DimonSever000_CurePainNumbnessSyndrome</defName>
+		<label>Cure pain numbness syndrome</label>
+		<description>Cure a pain numbness syndrome.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing pain numbness syndrome.</jobString>
+		<workAmount>5000</workAmount>
+		<removesHediff>DimonSever000_PainNumbnessSyndrome</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s pain numbness syndrome.</successfullyRemovedHediffMessage>
+		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineUltratech</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>VitalsMonitor</researchPrerequisite>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>DimonSever000_CureSoreJoints</defName>
+		<label>Cure sore joints</label>
+		<description>Cure a sore joints.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing sore joints.</jobString>
+		<workAmount>3000</workAmount>
+		<removesHediff>DimonSever000_SoreJoints</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s sore joints.</successfullyRemovedHediffMessage>
+		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>6</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>DimonSever000_CureArrhythmia</defName>
+		<label>Cure arrhythmia</label>
+		<description>Cure a arrhythmia.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing arrhythmia.</jobString>
+		<workAmount>3000</workAmount>
+		<removesHediff>DimonSever000_Arrhythmia</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s arrhythmia.</successfullyRemovedHediffMessage>
+		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>6</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>DimonSever000_CureHeartDefect</defName>
+		<label>Cure heart defect</label>
+		<description>Cure a heart defect.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing heart defect.</jobString>
+		<workAmount>5000</workAmount>
+		<removesHediff>DimonSever000_HeartDefect</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s heart defect.</successfullyRemovedHediffMessage>
+		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineUltratech</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>VitalsMonitor</researchPrerequisite>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>DimonSever000_CureStenocardia</defName>
+		<label>Cure stenocardia</label>
+		<description>Cure a stenocardia.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing stenocardia.</jobString>
+		<workAmount>3000</workAmount>
+		<removesHediff>DimonSever000_Stenocardia</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s stenocardia.</successfullyRemovedHediffMessage>
+		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>DimonSever000_CureKidneyFailure</defName>
+		<label>Cure kidney failure</label>
+		<description>Cure a kidney failure.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing kidney failure.</jobString>
+		<workAmount>3000</workAmount>
+		<removesHediff>DimonSever000_KidneyFailure</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s kidney failure.</successfullyRemovedHediffMessage>
+		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>DimonSever000_CureChronicKidneyDisease</defName>
+		<label>Cure chronic kidney disease</label>
+		<description>Cure a chronic kidney disease.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing chronic kidney disease.</jobString>
+		<workAmount>3000</workAmount>
+		<removesHediff>DimonSever000_ChronicKidneyDisease</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s chronic kidney disease.</successfullyRemovedHediffMessage>
+		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>6</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>DimonSever000_CureChronicHepatitis</defName>
+		<label>Cure chronic hepatitis</label>
+		<description>Cure a chronic hepatitis.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing chronic hepatitis.</jobString>
+		<workAmount>3000</workAmount>
+		<removesHediff>DimonSever000_ChronicHepatitis</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s chronic hepatitis.</successfullyRemovedHediffMessage>
+		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>DimonSever000_CureSpinalInstability</defName>
+		<label>Cure spinal instability</label>
+		<description>Cure a spinal instability.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing spinal instability.</jobString>
+		<workAmount>5000</workAmount>
+		<removesHediff>DimonSever000_SpinalInstability</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s spinal instability.</successfullyRemovedHediffMessage>
+		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineUltratech</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>VitalsMonitor</researchPrerequisite>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>DimonSever000_CureIntervertebralHernia</defName>
+		<label>Cure intervertebral hernia</label>
+		<description>Cure a intervertebral hernia.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing intervertebral hernia.</jobString>
+		<workAmount>5000</workAmount>
+		<removesHediff>DimonSever000_IntervertebralHernia</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s intervertebral hernia.</successfullyRemovedHediffMessage>
+		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineUltratech</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>VitalsMonitor</researchPrerequisite>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>DimonSever000_CureChronicGastritis</defName>
+		<label>Cure chronic gastritis</label>
+		<description>Cure a chronic gastritis.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing chronic gastritis.</jobString>
+		<workAmount>3000</workAmount>
+		<removesHediff>DimonSever000_ChronicGastritis</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s chronic gastritis.</successfullyRemovedHediffMessage>
+		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+</Defs>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<!-- Added defs moved from local-only file: 1.6\Defs\ThingDefs_Races\PawnBaseDef.xml -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs</xpath>
+		<value>
+			<ThingDef ParentName="BaseHumanlikePawn" Name="RK_PawnBase" Abstract="True">
+				<statBases>
+					<Mass>50</Mass>
+				</statBases>
+			</ThingDef>
+		</value>
+	</Operation>
+</Patch>

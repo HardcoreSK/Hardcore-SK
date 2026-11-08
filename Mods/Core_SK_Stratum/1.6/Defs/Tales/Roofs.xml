@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TaleDef>
+    <defName>SolarWeb-Stratum-GreenhouseGazedTogether</defName>
+    <label>greenhouse gazed together</label>
+    <taleClass>SolarWeb.Stratum.Tales.GreenhouseGaze</taleClass>
+    <type>Volatile</type>
+    <firstPawnSymbol>GAZER</firstPawnSymbol>
+    <secondPawnSymbol>COMPANION</secondPawnSymbol>
+    <baseInterest>1.4</baseInterest>
+    <rulePack>
+      <rulesStrings>
+        <li>tale_noun->a gathering of [GAZER_nameDef], [COMPANION_nameDef], [THIRDPAWN_nameDef], and [FOURTHPAWN_nameDef] gazing in the greenhouse</li>
+        <li>tale_noun->[GAZER_nameDef], [COMPANION_nameDef], [THIRDPAWN_nameDef], and [FOURTHPAWN_nameDef] sharing a peaceful moment under the glass</li>
+        
+        <li>image->[GAZER_nameFull], [COMPANION_nameFull], [THIRDPAWN_nameFull], and [FOURTHPAWN_nameFull] relaxing together under a glass canopy, with [WEATHER_description], [circumstance_group]</li>
+        <li>image->[GAZER_nameFull], [COMPANION_nameFull], [THIRDPAWN_nameFull], and [FOURTHPAWN_nameFull] looking up at the sky through greenhouse glass [circumstance_group]</li>
+        
+        <li>circumstance_phrase->surrounded by vibrant, green foliage</li>
+        <li>circumstance_phrase->with sunlight filtering through the leaves</li>
+        <li>circumstance_phrase->in quiet, peaceful contemplation</li>
+        
+        <li>desc_sentence->All four are looking up with expressions of peaceful serenity.</li>
+        <li>desc_sentence->Through the glass ceiling, [WEATHER_description] is visible.</li>
+        <li>desc_sentence->A variety of potted plants and growing vegetation frames the scene.</li>
+        <li>desc_sentence->[GAZER_nameDef] is pointing towards a distant cloud or star.</li>
+        <li>desc_sentence->[COMPANION_nameDef] is smiling softly at [GAZER_nameDef].</li>
+        <li>desc_sentence->[THIRDPAWN_nameDef] and [FOURTHPAWN_nameDef] are lounging nearby, enjoying the quiet scenery.</li>
+        <li>desc_sentence->A group of four is gathered together under the glass: [GAZER_nameDef], [COMPANION_nameDef], [THIRDPAWN_nameDef], and [FOURTHPAWN_nameDef].</li>
+      </rulesStrings>
+    </rulePack>
+  </TaleDef>
+</Defs>

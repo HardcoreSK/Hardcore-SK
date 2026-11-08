@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/IncidentDef[defName="RaidEnemy"]</xpath>
+    <value>
+      <baseChance>7</baseChance>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/IncidentDef[defName="Infestation"]</xpath>
+    <value>
+      <workerClass>SK.Events.IncidentWorker_Infestation</workerClass>
+      <baseChance>2.1</baseChance>
+      <earliestDay>15</earliestDay>
+      <minRefireDays>22</minRefireDays>
+      <minThreatPoints>3000</minThreatPoints>
+      <modExtensions>
+        <li Class="SK.Events.InfestationExtension">
+          <hivePointMultiplier>600</hivePointMultiplier>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/IncidentDef[defName="DeepDrillInfestation"]</xpath>
+    <value>
+      <workerClass>SK.Events.IncidentWorker_DeepDrillInfestation</workerClass>
+      <earliestDay>15</earliestDay>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/IncidentDef[defName="ManhunterPack"]</xpath>
+    <value>
+      <label>infected manhunter pack</label>
+      <workerClass>SK.Events.IncidentWorker_ManhunterPack</workerClass>
+      <baseChance>1.0</baseChance>
+      <minRefireDays>8</minRefireDays>
+      <modExtensions>
+        <li Class="SK.Events.ManhunterPackExtension">
+			<diseaseDef>Scaria</diseaseDef>
+			<chance>1.0</chance>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/IncidentDef[defName="DefoliatorShipPartCrash"]</xpath>
+    <value>
+      <workerClass>SK.Events.IncidentWorker_CrashedShipPart</workerClass>
+      <minRefireDays>20</minRefireDays>
+      <earliestDay>180</earliestDay>
+      <minThreatPoints>8500</minThreatPoints>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/IncidentDef[defName="AnimalInsanityMass"]</xpath>
+    <value>
+      <earliestDay>16</earliestDay>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/IncidentDef[defName="AnimalInsanitySingle"]</xpath>
+    <value>
+      <baseChance>0</baseChance>
+    </value>
+  </Operation>
+
+</Patch>

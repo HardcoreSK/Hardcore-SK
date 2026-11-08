@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+<!-- DefOverwrite
 	<StorytellerDef ParentName="BaseStoryteller">
 		<defName>Cassandra</defName>
 		<label>Cassandra Classic</label>
@@ -9,9 +9,7 @@
 		<portraitTiny>UI/HeroArt/Storytellers/CassandraClassicTiny</portraitTiny>
 		<listOrder>20</listOrder>
 		<comps>
-			<!-- Intro -->
 			<li Class="StorytellerCompProperties_ClassicIntro"/>
-			<!-- Home threats -->
 			<li Class="StorytellerCompProperties_OnOffCycle">
 				<category>ThreatBig</category>
 				<minDaysPassed>11.0</minDaysPassed>
@@ -50,7 +48,6 @@
 					</points>
 				</acceptPercentFactorPerThreatPointsCurve>
 			</li>
-			<!-- Home misc incidents-->
 			<li Class="StorytellerCompProperties_CategoryMTB">
 				<category>Misc</category>
 				<allowedTargetTags>
@@ -68,7 +65,6 @@
 				<category>DiseaseAnimal</category>
 				<minDaysPassed>9</minDaysPassed>
 			</li>
-			<!-- Ally/neutral interaction -->
 			<li Class="StorytellerCompProperties_FactionInteraction">
 				<incident>RaidFriendly</incident>
 				<baseIncidentsPerYear>15</baseIncidentsPerYear>
@@ -103,7 +99,6 @@
 					<li>Map_PlayerHome</li>
 				</allowedTargetTags>
 			</li>
-			<!-- Caravan / temp map -->
 			<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
 				<category>Misc</category>
 				<allowedTargetTags>
@@ -127,7 +122,6 @@
 					<li>Map_TempIncident</li>
 				</allowedTargetTags>
 			</li>
-			<!-- Quests - non-Royalty -->
 			<li Class="StorytellerCompProperties_RandomQuest">
 				<category>GiveQuest</category>
 				<allowedTargetTags>
@@ -146,7 +140,6 @@
 					<li>Ludeon.RimWorld.Royalty</li>
 				</disableIfAnyModActive>
 			</li>
-			<!-- Quests - Royalty -->
 			<li Class="StorytellerCompProperties_RandomQuest">
 				<category>GiveQuest</category>
 				<allowedTargetTags>
@@ -165,7 +158,6 @@
 					<li>Ludeon.RimWorld.Royalty</li>
 				</enableIfAnyModActive>
 			</li>
-			<!-- World misc incidents-->
 			<li Class="StorytellerCompProperties_CategoryMTB">
 				<category>Misc</category>
 				<allowedTargetTags>
@@ -174,21 +166,19 @@
 				<minDaysPassed>15</minDaysPassed>
 				<mtbDays>15</mtbDays>
 			</li>
-			<!-- Orbital trader -->
 			<li Class="StorytellerCompProperties_OnOffCycle">
 				<incident>OrbitalTraderArrival</incident>
 				<onDays>7</onDays>
 				<offDays>8</offDays>
 				<numIncidentsRange>1</numIncidentsRange>
 			</li>
-			<!-- Triggered -->
 			<li Class="StorytellerCompProperties_Triggered">
 				<incident>StrangerInBlackJoin</incident>
 				<delayTicks>180</delayTicks>
 			</li>
 		</comps>
 	</StorytellerDef>
-
+--><!-- DefOverwrite
 	<StorytellerDef ParentName="BaseStoryteller">
 		<defName>Phoebe</defName>
 		<label>Phoebe Chillax</label>
@@ -197,9 +187,7 @@
 		<portraitTiny>UI/HeroArt/Storytellers/PhoebeFriendlyTiny</portraitTiny>
 		<listOrder>30</listOrder>
 		<comps>
-			<!-- Intro -->
 			<li Class="StorytellerCompProperties_ClassicIntro"/>
-			<!-- Home threats -->
 			<li Class="StorytellerCompProperties_OnOffCycle">
 				<category>ThreatBig</category>
 				<minDaysPassed>13.0</minDaysPassed>
@@ -237,7 +225,6 @@
 					</points>
 				</acceptPercentFactorPerThreatPointsCurve>
 			</li>
-			<!-- Home misc incidents -->
 			<li Class="StorytellerCompProperties_CategoryMTB">
 				<category>Misc</category>
 				<allowedTargetTags>
@@ -255,7 +242,6 @@
 				<category>DiseaseAnimal</category>
 				<minDaysPassed>12</minDaysPassed>
 			</li>
-			<!-- Ally/neutral interaction -->
 			<li Class="StorytellerCompProperties_FactionInteraction">
 				<incident>RaidFriendly</incident>
 				<baseIncidentsPerYear>15</baseIncidentsPerYear>
@@ -290,7 +276,6 @@
 					<li>Map_PlayerHome</li>
 				</allowedTargetTags>
 			</li>
-			<!-- Caravan / temp map -->
 			<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
 				<category>Misc</category>
 				<allowedTargetTags>
@@ -314,7 +299,6 @@
 					<li>Map_TempIncident</li>
 				</allowedTargetTags>
 			</li>
-			<!-- Quests - non-Royalty -->
 			<li Class="StorytellerCompProperties_RandomQuest">
 				<category>GiveQuest</category>
 				<allowedTargetTags>
@@ -333,7 +317,6 @@
 					<li>Ludeon.RimWorld.Royalty</li>
 				</disableIfAnyModActive>
 			</li>
-			<!-- Quests - Royalty -->
 			<li Class="StorytellerCompProperties_RandomQuest">
 				<category>GiveQuest</category>
 				<allowedTargetTags>
@@ -352,7 +335,6 @@
 					<li>Ludeon.RimWorld.Royalty</li>
 				</enableIfAnyModActive>
 			</li>
-			<!-- World misc incidents -->
 			<li Class="StorytellerCompProperties_CategoryMTB">
 				<category>Misc</category>
 				<allowedTargetTags>
@@ -361,21 +343,19 @@
 				<minDaysPassed>15</minDaysPassed>
 				<mtbDays>15</mtbDays>
 			</li>
-			<!-- Orbital traders -->
 			<li Class="StorytellerCompProperties_OnOffCycle">
 				<incident>OrbitalTraderArrival</incident>
 				<onDays>7</onDays>
 				<offDays>8</offDays>
 				<numIncidentsRange>1</numIncidentsRange>
 			</li>
-			<!-- Triggered -->
 			<li Class="StorytellerCompProperties_Triggered">
 				<incident>StrangerInBlackJoin</incident>
 				<delayTicks>180</delayTicks>
 			</li>
 		</comps>
 	</StorytellerDef>
-
+--><!-- DefOverwrite
 	<StorytellerDef ParentName="BaseStoryteller">
 		<defName>Randy</defName>
 		<label>Randy Random</label>
@@ -384,7 +364,6 @@
 		<portraitTiny>UI/HeroArt/Storytellers/RandyRandomTiny</portraitTiny>
 		<listOrder>40</listOrder>
 		<comps>
-			<!-- Home all -->
 			<li Class="StorytellerCompProperties_RandomMain">
 				<allowedTargetTags>
 					<li>Map_PlayerHome</li>
@@ -412,7 +391,6 @@
 				<category>DiseaseAnimal</category>
 				<minDaysPassed>0</minDaysPassed>
 			</li>
-			<!-- Home special threats -->
 			<li Class="StorytellerCompProperties_ThreatsGenerator">
 				<allowedTargetTags>
 					<li>Map_RaidBeacon</li>
@@ -426,7 +404,6 @@
 					<minThreatPoints>500</minThreatPoints>
 				</parms>
 			</li>
-			<!-- Ally/neutral interaction -->
 			<li Class="StorytellerCompProperties_FactionInteraction">
 				<incident>RaidFriendly</incident>
 				<baseIncidentsPerYear>10</baseIncidentsPerYear>
@@ -434,7 +411,6 @@
 				<fullAlliesOnly>true</fullAlliesOnly>
 				<minDanger>High</minDanger>
 			</li>
-			<!-- Caravan / temp map -->
 			<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
 				<category>Misc</category>
 				<allowedTargetTags>
@@ -458,7 +434,6 @@
 					<li>Map_TempIncident</li>
 				</allowedTargetTags>
 			</li>
-			<!-- Quests - non-Royalty -->
 			<li Class="StorytellerCompProperties_RandomQuest">
 				<category>GiveQuest</category>
 				<allowedTargetTags>
@@ -477,7 +452,6 @@
 					<li>Ludeon.RimWorld.Royalty</li>
 				</disableIfAnyModActive>
 			</li>
-			<!-- Quests - Royalty -->
 			<li Class="StorytellerCompProperties_RandomQuest">
 				<category>GiveQuest</category>
 				<allowedTargetTags>
@@ -496,7 +470,6 @@
 					<li>Ludeon.RimWorld.Royalty</li>
 				</enableIfAnyModActive>
 			</li>
-			<!-- World misc incidents-->
 			<li Class="StorytellerCompProperties_CategoryMTB">
 				<category>Misc</category>
 				<allowedTargetTags>
@@ -505,14 +478,13 @@
 				<minDaysPassed>1</minDaysPassed>
 				<mtbDays>15</mtbDays>
 			</li>
-			<!-- Triggered -->
 			<li Class="StorytellerCompProperties_Triggered">
 				<incident>StrangerInBlackJoin</incident>
 				<delayTicks>180</delayTicks>
 			</li>
 		</comps>
 	</StorytellerDef>
-
+-->
 	<StorytellerDef ParentName="BaseStoryteller">
 		<defName>Kara</defName>
 		<label>Kara Fateful</label>

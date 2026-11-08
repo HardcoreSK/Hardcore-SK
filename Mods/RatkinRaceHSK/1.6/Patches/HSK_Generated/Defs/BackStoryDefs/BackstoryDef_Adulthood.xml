@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<!-- Overrides for 1.6\Defs\BackStoryDefs\BackstoryDef_Adulthood.xml -->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/AlienRace.AlienBackstoryDef[defName="Ratkin_Hunter"]</xpath>
+		<value>
+			<slot>Adulthood</slot>
+			<skillGains>
+				<Shooting>4</Shooting>
+				<Melee>3</Melee>
+			</skillGains>
+			<workDisables>
+				<li>Animals</li>
+			</workDisables>
+			<spawnCategories>
+				<li>RatkinStory</li>
+				<li>RatkinMercenary</li>
+				<li>RatkinGuardener</li>
+				<li>RatkinSoldier</li>
+				<li>RatkinDefender</li>
+				<li>RatkinWanderer</li>
+				<li>RatkinEliteDefender</li>
+				<li>RatkinCombatant</li>
+				<li>RatkinWild</li>
+			</spawnCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/AlienRace.AlienBackstoryDef[defName="Ratkin_Sister"]</xpath>
+		<value>
+			<slot>Adulthood</slot>
+			<skillGains>
+				<Social>4</Social>
+				<Medicine>4</Medicine>
+			</skillGains>
+			<workDisables>
+				<li>Violent</li>
+			</workDisables>
+			<spawnCategories>
+				<li>RatkinStory</li>
+				<li>RatkinNoble</li>
+				<li>RatkinPriest</li>
+				<li>RatkinKingdom</li>
+				<li>RatkinNonViolence</li>
+			</spawnCategories>
+			<forcedTraitsChance Inherit="False">
+				<li Inherit="False">
+					<defName Degree="2">Beauty</defName>
+				</li>
+				<li>
+					<defName>Faith</defName>
+				</li>
+			</forcedTraitsChance>
+			<disallowedTraitsChance Inherit="False">
+		</disallowedTraitsChance>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/AlienRace.AlienBackstoryDef[defName="Ratkin_Subject"]</xpath>
+		<value>
+			<slot>Adulthood</slot>
+			<skillGains>
+				<Shooting>4</Shooting>
+				<Melee>4</Melee>
+			</skillGains>
+			<workDisables>
+				<li>Cooking</li>
+			</workDisables>
+			<spawnCategories>
+				<li>RatkinStory</li>
+				<li>RatkinUneducated</li>
+				<li>RatkinSoldier</li>
+				<li>RatkinSubject</li>
+				<li>RatkinCity</li>
+			</spawnCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/AlienRace.AlienBackstoryDef[defName="Ratkin_Thief"]</xpath>
+		<value>
+			<slot>Adulthood</slot>
+			<skillGains>
+				<Melee>4</Melee>
+			</skillGains>
+			<workDisables>
+				<li>Intellectual</li>
+			</workDisables>
+			<spawnCategories>
+				<li>RatkinStory</li>
+				<li>RatkinUneducated</li>
+				<li>RatkinMercenary</li>
+				<li>RatkinEliteDefender</li>
+				<li>RatkinKingdom</li>
+				<li>RatkinDefender</li>
+				<li>RatkinWild</li>
+				<li>RatkinWanderer</li>
+				<li>RatkinThief</li>
+			</spawnCategories>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/AlienRace.AlienBackstoryDef[defName="Ratkin_Wanderer"]</xpath>
+		<value>
+			<slot>Adulthood</slot>
+			<skillGains>
+				<Shooting>2</Shooting>
+				<Melee>4</Melee>
+				<Cooking>2</Cooking>
+			</skillGains>
+			<workDisables>
+				<li>PlantWork</li>
+			</workDisables>
+			<spawnCategories>
+				<li>RatkinStory</li>
+				<li>RatkinWanderer</li>
+				<li>RatkinSoldier</li>
+				<li>RatkinMerchant</li>
+				<li>RatkinMercenary</li>
+				<li>RatkinEliteDefender</li>
+				<li>RatkinDefender</li>
+				<li>RatkinCombatant</li>
+			</spawnCategories>
+		</value>
+	</Operation>
+</Patch>

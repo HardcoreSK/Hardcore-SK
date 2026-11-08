@@ -20,7 +20,7 @@
     <altitudeLayer>SmallWire</altitudeLayer>
     <fillPercent>0.1</fillPercent>
     <coversFloor>false</coversFloor>
-    <hideAtSnowDepth>0.7</hideAtSnowDepth>
+    <hideAtSnowOrSandDepth>0.7</hideAtSnowOrSandDepth>
     <statBases>
       <MaxHitPoints>400</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -211,7 +211,7 @@
       <Beauty>3</Beauty>
     </statBases>
     <pathCost>80</pathCost>
-    <hideAtSnowDepth>0.7</hideAtSnowDepth>
+    <hideAtSnowOrSandDepth>0.7</hideAtSnowOrSandDepth>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->

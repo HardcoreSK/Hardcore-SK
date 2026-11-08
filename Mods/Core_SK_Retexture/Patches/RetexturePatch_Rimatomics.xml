@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Rimatomics</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName="DU_Blastdoor"]</xpath>
+                    <value>
+                        <graphicData>
+                            <texPath>Things/Building/Doors/RadiationAirlock/Airlock_Mover</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <shaderType>Cutout</shaderType>
+                        </graphicData>
+                        <uiIconPath>Things/Building/Doors/RadiationAirlock/Airlock_MenuIcon</uiIconPath>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

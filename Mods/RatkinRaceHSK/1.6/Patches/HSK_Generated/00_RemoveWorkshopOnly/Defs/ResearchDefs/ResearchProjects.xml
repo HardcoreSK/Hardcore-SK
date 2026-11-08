@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<!-- Remove Ratkin research nodes that are folded into the HSK research tree. -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_Sample" or defName="RK_Research_Carpentry" or defName="RK_Research_Agriculture" or defName="RK_Research_Smithing" or defName="RK_Research_Tailoring" or defName="RK_Research_FoodPreservation" or defName="RK_Research_Metallurgy" or defName="RK_Research_SwordAndShield" or defName="RK_Research_FunctionalApparel" or defName="RK_Research_AdvancedApparel" or defName="RK_Research_Fortification" or defName="RK_Research_NobleApparel" or defName="RK_Research_RatkinEngineering" or defName="RK_Research_GearMechanics" or defName="RK_Research_ObservationAndSurveying" or defName="RK_Research_SeparationMechanics" or defName="RK_Research_DragonFlame" or defName="RK_Research_OrbitalEquipment" or defName="RK_Research_AngryRatProject" or defName="RK_Research_CrusaderArmor"]</xpath>
+	</Operation>
+</Patch>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ResearchProjectDef[defName="ChargedShot"]/modExtensions</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ResearchProjectDef[defName="ChargedShot"]/modExtensions</xpath>
+      <value>
+        <li Class="ExtendedResearchRequirements.RequiredResearchItemsExtension">
+          <requirements>
+            <li>
+              <researchItem>TechnologyBlueprint_ChargedShot</researchItem>
+              <count>1</count>
+            </li>
+          </requirements>
+        </li>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ResearchProjectDef[defName="ChargedShot"]</xpath>
+      <value>
+        <modExtensions>
+          <li Class="ExtendedResearchRequirements.RequiredResearchItemsExtension">
+            <requirements>
+              <li>
+                <researchItem>TechnologyBlueprint_ChargedShot</researchItem>
+                <count>1</count>
+              </li>
+            </requirements>
+          </li>
+        </modExtensions>
+      </value>
+    </nomatch>
+  </Operation>
+</Patch>

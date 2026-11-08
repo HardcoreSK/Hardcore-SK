@@ -1,19 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+    <!--
+    DefOverwrite list:
+    HydroponicsBasin
+    -->
+
 	<!-- SATURATED SOIL -->
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>PrimitiveHydroponic</defName>
 		<label>saturated soil</label>
 		<thingClass>SK.Building_PlantGrowerLinked</thingClass>
 		<graphicData>
 			<shaderType>CutoutComplex</shaderType>
-			<texPath>Things/Building/Production/pghydro</texPath>
+			<texPath>Things/Building/ProductionFood/PrimitiveHydroponic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		<altitudeLayer>LowPlant</altitudeLayer>
 		<useHitPoints>false</useHitPoints>
-		<description>Enrichment soil. 80 fertility</description>
+		<description>Enrichment soil. 100% fertility</description>
 		<size>(1,3)</size>
 		<stuffCategories>
 			<li>Woody</li>
@@ -28,7 +34,7 @@
 			<SandResource>30</SandResource>
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
-		<fertility>0.8</fertility>
+		<fertility>1</fertility>
 		<building>
 			<defaultPlantToGrow>Plant_Potato</defaultPlantToGrow>
 			<sowTag>Hydroponic</sowTag>
@@ -42,75 +48,15 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
 	</ThingDef>
-	
-	<!-- BASIC BASIN -->
-	<ThingDef ParentName="StandartBuilding">
-		<defName>HydroponicsBasin</defName>
-		<label>hydroponic basin</label>
-		<thingClass>SK.Building_PlantGrowerLinked</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Production/HydroponicsBasin</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1,4)</drawSize>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-			</damageData>
-		</graphicData>
-		<altitudeLayer>LowPlant</altitudeLayer>
-		<statBases>
-			<WorkToBuild>1800</WorkToBuild>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-			<Cleanliness>-3</Cleanliness>
-		</statBases>
-		<description>A hydroponic basin can grow several plants quickly. The basin requires power to work and plants will die if the power is cut.150 fertility</description>
-		<size>(1,4)</size>
-		<stuffCategories>
-			<li>StrongMetallic</li>
-			<li>Woody</li>
-		</stuffCategories>
-		<costStuffCount>60</costStuffCount>
-		<costList>
-			<Fertilizer>30</Fertilizer>
-			<ComponentIndustrial>5</ComponentIndustrial>
-		</costList>
-		<fertility>1.5</fertility>
-		<building>
-			<defaultPlantToGrow>Plant_Potato</defaultPlantToGrow>
-			<sowTag>Hydroponic</sowTag>
-		</building>
-		<tickerType>Rare</tickerType>
-		<comps>
-			<li Class="CompProperties_Forbiddable" />
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>70</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Flickable" />
-		</comps>
-        <modExtensions>
-            <li Class="SK.Events.EarthquakeExtension">
-                <immunityToDamage>true</immunityToDamage>
-            </li>
-        </modExtensions>
-		<researchPrerequisites>
-			<li>Hydroponics</li>
-		</researchPrerequisites>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<designationCategory>Production</designationCategory>
-		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-	</ThingDef>
-	
+
 	<!-- ADVANCED HYDROPONICS -->
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>NewHydroponicsBasin</defName>
 		<label>advanced hydroponic basin</label>
+		<description>Advanced hydroponic basins grow plants quicker and provide their own light source. The basin requires power to work. 300 fertility</description>
 		<thingClass>SK.Building_PlantGrowerLinked</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Production/Hydrophonic/Hydroponics</texPath>
+			<texPath>Things/Building/ProductionFood/Hydrophonic/Hydroponics</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>Basic</linkType>
 			<linkFlags>
@@ -118,7 +64,7 @@
 			</linkFlags>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Things/Building/Production/Hydrophonic/Hydroponics_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/ProductionFood/Hydrophonic/Hydroponics_MenuIcon</uiIconPath>
 		<altitudeLayer>LowPlant</altitudeLayer>
 		<statBases>
 			<WorkToBuild>1500</WorkToBuild>
@@ -126,7 +72,6 @@
 			<Flammability>1.0</Flammability>
 			<Cleanliness>-1</Cleanliness>
 		</statBases>
-		<description>Advanced hydroponic basins grow plants quicker and provide their own light source. The basin requires power to work. 300 fertility</description>
 		<stuffCategories>
 			<li>StrongMetallic</li>
 			<li>Plastic</li>
@@ -147,14 +92,13 @@
 				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
 		</building>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<drawStyleCategory>Default1D</drawStyleCategory>
 		<tickerType>Rare</tickerType>
 		<rotatable>false</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>
 		<comps>
 			<li Class="CompProperties_Forbiddable" />
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<transmitsPower>true</transmitsPower>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
@@ -167,6 +111,20 @@
 				<glowColor>(370,370,370,0)</glowColor>
 			</li>
 			<li Class="CompProperties_Flickable" />
+			<li Class="DubsBadHygiene.CompProperties_Pipe" MayRequire="Dubwise.DubsBadHygiene">
+				<mode>Sewage</mode>
+			</li>
+			<li Class="CompProperties_Refuelable" MayRequire="Dubwise.DubsBadHygiene">
+				<consumeFuelOnlyWhenPowered>true</consumeFuelOnlyWhenPowered>
+				<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+				<fuelLabel>Water</fuelLabel>
+				<fuelGizmoLabel>Water</fuelGizmoLabel>
+				<fuelCapacity>5</fuelCapacity>
+				<fuelConsumptionRate>0.025</fuelConsumptionRate>
+				<fuelMultiplier>200</fuelMultiplier>
+				<fuelFilter/>
+			</li>
 		</comps>
         <modExtensions>
             <li Class="SK.Events.EarthquakeExtension">
@@ -183,17 +141,17 @@
 	</ThingDef>
 	
 	<!-- POT -->
-	<ThingDef ParentName="StandartBuilding">
+	<ThingDef ParentName="StandardBuilding">
 		<defName>ClutterAlloyHydroponicsBasinVS</defName>
 		<label>hydroponic pot</label>
+		<description>A hydroponic pot planted into the ground. Requires power. 300 fertility</description>
 		<thingClass>SK.Building_PlantGrowerLinked</thingClass>
 		<graphicData>
 			<shaderType>CutoutComplex</shaderType>
-			<texPath>Things/Building/Production/Hydrophonic/Pot</texPath>
+			<texPath>Things/Building/ProductionFood/HydroponicsPot</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<altitudeLayer>LowPlant</altitudeLayer>
-		<description>A hydroponic pot planted into the ground. Requires power. 300 fertility</description>
 		<size>(1,1)</size>
 		<statBases>
 			<WorkToBuild>1400</WorkToBuild>
@@ -221,11 +179,24 @@
 		<tickerType>Rare</tickerType>
 		<comps>
 			<li Class="CompProperties_Forbiddable" />
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>25</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable" />
+			<li Class="DubsBadHygiene.CompProperties_Pipe" MayRequire="Dubwise.DubsBadHygiene">
+				<mode>Sewage</mode>
+			</li>
+			<li Class="CompProperties_Refuelable" MayRequire="Dubwise.DubsBadHygiene">
+				<consumeFuelOnlyWhenPowered>true</consumeFuelOnlyWhenPowered>
+				<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+				<fuelLabel>Water</fuelLabel>
+				<fuelGizmoLabel>Water</fuelGizmoLabel>
+				<fuelCapacity>1.25</fuelCapacity>
+				<fuelConsumptionRate>0.00625</fuelConsumptionRate>
+				<fuelMultiplier>200</fuelMultiplier>
+				<fuelFilter/>
+			</li>
 		</comps>
         <modExtensions>
             <li Class="SK.Events.EarthquakeExtension">
@@ -242,11 +213,17 @@
 	</ThingDef>
 	
 	<!-- BOX -->
-	<ThingDef Name="Agrarian" ParentName="StandartBuilding">
+	<ThingDef Name="Agrarian" ParentName="StandardBuilding">
 		<defName>Agrarian</defName>
 		<label>hydroponic box</label>
 		<description>A small self-watering wooden wood box with earth in it for growing plants. Requires power. 120 fertility</description>
 		<thingClass>SK.Building_PlantGrowerLinked</thingClass>
+		<uiIconPath>Things/Building/ProductionFood/HydroponicsBox/HydroponicsBoxIcon</uiIconPath>
+		<graphicData>
+			<texPath>Things/Building/ProductionFood/HydroponicsBox/HydroponicsBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
 		<designationCategory>Production</designationCategory>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
@@ -271,18 +248,18 @@
 			<deconstructible>true</deconstructible>
 		</building>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>150</basePowerConsumption>
 			</li>
+			<li Class="CompProperties_Flickable" />
 		</comps>
-		<uiIconPath>Things/Building/AgrarianIcon</uiIconPath>
-		<graphicData>
-			<texPath>Things/Building/AgrarianAtlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(3,3)</drawSize>
-		</graphicData>
+        <modExtensions>
+            <li Class="SK.Events.EarthquakeExtension">
+                <immunityToDamage>true</immunityToDamage>
+            </li>
+        </modExtensions>
 		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
 		<altitudeLayer>LowPlant</altitudeLayer>
 		<tickerType>Rare</tickerType>

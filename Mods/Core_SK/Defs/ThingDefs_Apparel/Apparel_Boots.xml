@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="ApparelNeoliticBase">
-		<defName>Apparello_Clawboots</defName>
+	<ThingDef ParentName="ApparelNeolithicBase">
+		<defName>Boots_Clawed</defName>
 		<label>Clawed Boots</label>
 		<description>Boots with claws on them. They give a steady grip on rough terrain.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Apparello/Accessorello/Feet/Triboots</texPath>
+			<texPath>Things/Apparel/Boots/ClawedBoots</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>		
 		<stuffCategories>
@@ -67,13 +67,12 @@
         </recipeMaker>
 	</ThingDef>
 
-
 	<ThingDef ParentName="ApparelMedievalBase">
-		<defName>Apparello_Shoes</defName>
+		<defName>Boots_Shoes</defName>
 		<label>Shoes</label>
 		<description>Very basic shoes. Helps with moving through terrain.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Apparello/Accessorello/Feet/Shoes</texPath>
+			<texPath>Things/Apparel/Boots/Shoes</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>		
 		<stuffCategories>
@@ -98,7 +97,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>0.03</MoveSpeed>
-			<WorkSpeedGlobal>0.12</WorkSpeedGlobal>
+			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
 			<SocialImpact>0.04</SocialImpact>
 			<MentalBreakThreshold>-0.03</MentalBreakThreshold>
 			<GermResistance>0.02</GermResistance>
@@ -137,13 +136,12 @@
         </recipeMaker>
 	</ThingDef>
 
-
 	<ThingDef ParentName="ArmorMedievalBase">
-		<defName>MedievalTimes_Boots_Steel_Plated</defName>
+		<defName>Boots_Plated</defName>
 		<label>Plated Boots</label>
 		<description>A pair of leather boots with steel plates strapped on.</description>
 		<graphicData>
-			<texPath>Things/Apparel/MedievalTimes/Footwear_Armor/MedievalTimes_Boots_Plated</texPath>
+			<texPath>Things/Apparel/Boots/PlatedBoots</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>		
 		<stuffCategories>
@@ -216,11 +214,11 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ArmorMedievalBase">
-		<defName>Apparello_MetalBoots</defName>
+		<defName>Boots_Metal</defName>
 		<label>Metal Boots</label>
 		<description>Metal boots. Ain't nobody stepping on your toes now!</description>
 		<graphicData>
-			<texPath>Things/Apparel/Apparello/Accessorello/Feet/Knightboots</texPath>
+			<texPath>Things/Apparel/Boots/Knightboots</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>		
 		<stuffCategories>
@@ -281,13 +279,12 @@
         </recipeMaker>
 	</ThingDef>
 
-
-	<ThingDef ParentName="ApparelNeoliticBase">
-		<defName>Apparello_Snowboots</defName>
+	<ThingDef ParentName="ApparelNeolithicBase">
+		<defName>Boots_Snow</defName>
 		<label>Snow Boots</label>
 		<description>Boots designed for cold snow. They are exceptionally warm and comfy.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Apparello/Accessorello/Feet/Furboots</texPath>
+			<texPath>Things/Apparel/Boots/Furboots</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>		
 		<stuffCategories>
@@ -315,7 +312,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>0.02</MoveSpeed>
-			<WorkSpeedGlobal>0.12</WorkSpeedGlobal>
+			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
 			<SocialImpact>0.05</SocialImpact>
 			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
 			<GermResistance>0.02</GermResistance>
@@ -357,13 +354,12 @@
         </recipeMaker>
 	</ThingDef>
 
-
-	<ThingDef ParentName="ApparelNeoliticSimpleBase">
-		<defName>Apparello_NorbalMuffshoes</defName>
+	<ThingDef ParentName="ApparelNeolithicSimpleBase">
+		<defName>Boots_Fur</defName>
 		<label>Fur Boots</label>
 		<description>Very furry and warm boots. They can help with moving through terrain.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Norbal/NorbalBoots</texPath>
+			<texPath>Things/Apparel/Boots/NorbalBoots</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>		
 		<stuffCategories>
@@ -391,7 +387,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.01</MoveSpeed>
-			<WorkSpeedGlobal>0.12</WorkSpeedGlobal>
+			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
 			<SocialImpact>0.05</SocialImpact>
 			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
 			<GermResistance>0.02</GermResistance>
@@ -429,13 +425,12 @@
         </recipeMaker>
 	</ThingDef>
 
-
 	<ThingDef ParentName="ApparelIndustrialSimpleBase">
-		<defName>Apparello_Boots</defName>
+		<defName>Boots_Spurred</defName>
 		<label>Spurred Boots</label>
 		<description>Leather boots with spurs. The spurs help with moving through terrain.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Apparello/Accessorello/Feet/Cowboots</texPath>
+			<texPath>Things/Apparel/Boots/Cowboots</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>		
 		<stuffCategories>
@@ -444,8 +439,6 @@
 		<costStuffCount>15</costStuffCount>
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
-			<SyntheticFibers>5</SyntheticFibers>
-			<Kevlar>10</Kevlar>
 		</costList>
 		<statBases>
 			<WorkToMake>4000</WorkToMake>
@@ -463,10 +456,10 @@
 			<ArmorRating_Heat>0</ArmorRating_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>0.12</MoveSpeed>
-			<WorkSpeedGlobal>.15</WorkSpeedGlobal>
-			<SocialImpact>0.07</SocialImpact>
-			<MentalBreakThreshold>-0.07</MentalBreakThreshold>
+			<MoveSpeed>0.1</MoveSpeed>
+			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+			<SocialImpact>0.1</SocialImpact>
+			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
 			<GermResistance>0.04</GermResistance>
 			<GermContainment>0.02</GermContainment>
 		</equippedStatOffsets>
@@ -503,11 +496,11 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelIndustrialBase">
-		<defName>MedievalTimes_Boots_Combat</defName>
+		<defName>Boots_Combat</defName>
 		<label>Combat Boots</label>
 		<description>Adjustments in the design straps, Hyper-Gel insoles and contouring Hyper-Foam ensure a comfortable fit for any foot type.</description>
 		<graphicData>
-			<texPath>Things/Apparel/MedievalTimes/Footwear_Armor/MedievalTimes_Boots_Combat</texPath>
+			<texPath>Things/Apparel/Boots/CombatBoots</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>		
 		<stuffCategories>
@@ -515,6 +508,8 @@
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
 		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<SyntheticFibers>5</SyntheticFibers>
 			<Kevlar>10</Kevlar>
 		</costList>
 		<statBases>
@@ -531,12 +526,12 @@
 			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 			<StuffEffectMultiplierArmor>1.65</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>3.31</ArmorRating_Sharp>
-			<ArmorRating_Blunt>7.54</ArmorRating_Blunt>
+			<ArmorRating_Blunt>8.54</ArmorRating_Blunt>
 			<ArmorRating_Heat>0</ArmorRating_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>0.05</MoveSpeed>
-			<WorkSpeedGlobal>0.12</WorkSpeedGlobal>
+			<MoveSpeed>0.08</MoveSpeed>
+			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
 			<MentalBreakThreshold>0.01</MentalBreakThreshold>
 			<GermResistance>0.03</GermResistance>
 			<GermContainment>0.02</GermContainment>
@@ -574,11 +569,11 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelSpacerBase">
-		<defName>MedievalTimes_Boots_Techno</defName>
+		<defName>Boots_Techno</defName>
 		<label>Techno Boots</label>
 		<description>Custom made by Rocket Industries, these marvels of modern engineering come complete with metal plating, nanite recursive fibers, gravity assist hydraulics, Omega-weave electric stranding and thermo-dynamic assist functions. Even with all that they found room for the Hyper-Gel insoles and contouring Hyper-Foam, not that its needed with nanite recursive fibers.</description>
 		<graphicData>
-			<texPath>Things/Apparel/MedievalTimes/Footwear_Armor/MedievalTimes_Boots_Techno</texPath>
+			<texPath>Things/Apparel/Boots/TechnoBoots</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>		
 		<stuffCategories>
@@ -586,9 +581,9 @@
 		</stuffCategories>
 		<costStuffCount>17</costStuffCount>
 		<costList>
-			<BiosyntheticMaterial>4</BiosyntheticMaterial>
-			<SyntheticFibers>5</SyntheticFibers>
-			<Kevlar>5</Kevlar>
+			<BiosyntheticMaterial>3</BiosyntheticMaterial>
+			<SyntheticFibers>4</SyntheticFibers>
+			<Kevlar>10</Kevlar>
 		</costList>
 		<statBases>
 			<WorkToMake>16000</WorkToMake>
@@ -603,12 +598,12 @@
 			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 			<StuffEffectMultiplierArmor>1.87</StuffEffectMultiplierArmor>
-			<ArmorRating_Sharp>3.73</ArmorRating_Sharp>
-			<ArmorRating_Blunt>9.57</ArmorRating_Blunt>
+			<ArmorRating_Sharp>4.73</ArmorRating_Sharp>
+			<ArmorRating_Blunt>10.57</ArmorRating_Blunt>
 			<ArmorRating_Heat>0</ArmorRating_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>0.08</MoveSpeed>
+			<MoveSpeed>0.1</MoveSpeed>
 			<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
 			<SocialImpact>0.07</SocialImpact>
 			<MentalBreakThreshold>-0.07</MentalBreakThreshold>
@@ -652,11 +647,11 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelSpacerBase">
-		<defName>Apparello_Spboots</defName>
-		<label>Cryptonaut Springers</label>
+		<defName>Boots_Speed</defName>
+		<label>Speed Boots</label>
 		<description>A pair of footwear designed for ultimate balance. Stride through the environment like a rabbit on dope.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Apparello/Accessorello/Feet/SpacerBoots</texPath>
+			<texPath>Things/Apparel/Boots/SpacerBoots</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>		
 		<stuffCategories>
@@ -664,9 +659,9 @@
 		</stuffCategories>
 		<costStuffCount>15</costStuffCount>
 		<costList>
-			<BiosyntheticMaterial>3</BiosyntheticMaterial>
-			<SyntheticFibers>4</SyntheticFibers>
-			<Kevlar>10</Kevlar>
+			<BiosyntheticMaterial>4</BiosyntheticMaterial>
+			<SyntheticFibers>5</SyntheticFibers>
+			<Kevlar>5</Kevlar>
 		</costList>
 		<statBases>
 			<WorkToMake>15000</WorkToMake>
@@ -681,13 +676,13 @@
 			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 			<StuffEffectMultiplierArmor>2.13</StuffEffectMultiplierArmor>
-			<ArmorRating_Sharp>4.27</ArmorRating_Sharp>
-			<ArmorRating_Blunt>10.94</ArmorRating_Blunt>
+			<ArmorRating_Sharp>2.27</ArmorRating_Sharp>
+			<ArmorRating_Blunt>7.94</ArmorRating_Blunt>
 			<ArmorRating_Heat>0</ArmorRating_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>0.15</MoveSpeed>
-			<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+			<MoveSpeed>0.2</MoveSpeed>
+			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
 			<SocialImpact>0.07</SocialImpact>
 			<MentalBreakThreshold>-0.07</MentalBreakThreshold>
 			<GermResistance>0.04</GermResistance>

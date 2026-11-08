@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="OutfitStandBase" Name="OutfitStandsPlus_MendingOutfitStandBase" Abstract="True">
+        <description>A small display that showcases a single outfit. Saves space and can be used to quickly change clothing.\nMechanized for extra changing speed and uses mechanites to repair stored items.</description>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,1)</interactionCellOffset>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <statBases>
+            <WorkToBuild>5000</WorkToBuild>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>150</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="OutfitStandsPlus.ThingComps.CompProperties_OutfitStandsPlusMainComp">
+            </li>
+        </comps>
+        <tickerType>Rare</tickerType>
+        <researchPrerequisites>
+            <li>Storage_D1</li>
+        </researchPrerequisites>
+    </ThingDef>
+    <ThingDef ParentName="OutfitStandsPlus_MendingOutfitStandBase">
+        <label>mending outfit stand</label>
+        <defName>OutfitStandsPlus_MendingOutfitStand</defName>
+        <thingClass>OutfitStandsPlus.Things.MendingOutfitStand</thingClass>
+        <costList>
+            <ComponentSpacer>6</ComponentSpacer>
+			<ReinforcedConcrete>25</ReinforcedConcrete>
+			<Wire>30</Wire>
+			<AdvMechanism>6</AdvMechanism>
+			<Microchips>2</Microchips>
+			<BioMicrochips>1</BioMicrochips>
+        </costList>
+        <costStuffCount>100</costStuffCount>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/OutfitStand/OutfitStand_MenuIcon</texPath>
+            <drawSize>(1.3, 1.3)</drawSize>
+        </graphicData>
+        <building>
+            <storageGroupTag>OutfitStand</storageGroupTag>
+            <fixedStorageSettings>
+                <filter>
+                    <specialFiltersToDisallow>
+                        <li>AllowChildOnlyApparel</li>
+                    </specialFiltersToDisallow>
+                </filter>
+            </fixedStorageSettings>
+        </building>
+        <comps>
+            <li Class="OutfitStandsPlus.ThingComps.CompProperties_AssignableToPawn_OutfitStandsPlusAdult">
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="OutfitStandsPlus_MendingOutfitStandBase">
+        <label>mending kid outfit stand</label>
+        <defName>OutfitStandsPlus_MendingKidOutfitStand</defName>
+        <thingClass>OutfitStandsPlus.Things.MendingKidOutfitStand</thingClass>
+        <costList>
+            <ComponentSpacer>5</ComponentSpacer>
+			<ReinforcedConcrete>20</ReinforcedConcrete>
+			<Wire>20</Wire>
+			<AdvMechanism>5</AdvMechanism>
+			<Microchips>2</Microchips>
+			<BioMicrochips>1</BioMicrochips>
+        </costList>
+        <costStuffCount>80</costStuffCount>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/OutfitStand/KidOutfitStand_MenuIcon</texPath>
+            <drawSize>(1.3, 1.3)</drawSize>
+        </graphicData>
+        <building>
+            <storageGroupTag>KidOutfitStand</storageGroupTag>
+            <fixedStorageSettings>
+                <filter>
+                    <specialFiltersToDisallow>
+                        <li>AllowAdultOnlyApparel</li>
+                    </specialFiltersToDisallow>
+                </filter>
+            </fixedStorageSettings>
+        </building>
+        <comps>
+            <li Class="OutfitStandsPlus.ThingComps.CompProperties_AssignableToPawn_OutfitStandsPlusKid">
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

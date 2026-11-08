@@ -8,7 +8,10 @@ so they won't be included in the exported zip file (or when using download zip).
 from dataclasses import dataclass, field
 import os
 import xml.etree.ElementTree as ET
+import re
 
+cur_version: str = '1.6'
+KEEP_LINES_BELOW_MARKER = "## Keep Lines Below"
 
 @dataclass
 class Mod:
@@ -66,20 +69,43 @@ def build_dict() -> dict[str, Mod]:
 
 def output(enabled: list[str], mod_dict: dict[str, Mod]) -> None:
     """
-    Set export-ignore for mods that are not enabled in ModsConfig.xml and not supported in 1.5
+    Set export-ignore for mods that are not enabled in ModsConfig.xml and not supported.
+
+    If the existing file contains KEEP_LINES_BELOW_MARKER on its own line,
+    preserve that line and the content below it.
     """
-    with open(".gitattributes", "w", encoding='utf-8') as f:
-        for k, v in mod_dict.items():
-            #print(f"{k} {v}")
-            if k not in enabled and '1.5' not in v.supported_versions:
-                f.write(f"\"{v.path.removeprefix('./')}\" export-ignore\n")
+    output_lines = []
+    for package_id, mod in mod_dict.items():
+        if package_id not in enabled and cur_version not in mod.supported_versions:
+            mod_path = mod.path.removeprefix('./').replace(os.sep, '/')
+            output_lines.append(f'"{mod_path}" export-ignore\n')
+
+    preserved_lines = []
+    if os.path.exists(".gitattributes"):
+        with open(".gitattributes", "r", encoding="utf-8") as f:
+            existing_lines = f.readlines()
+        for index, line in enumerate(existing_lines):
+            if line.rstrip("\r\n") == KEEP_LINES_BELOW_MARKER:
+                preserved_lines = existing_lines[index:]
+                break
+
+    with open(".gitattributes", "w", encoding="utf-8", newline="\n") as f:
+        f.writelines(sorted(output_lines, key=str.casefold))
+        if preserved_lines:
+            f.writelines(preserved_lines)
 
 
 def main() -> None:
     enabled = get_modsconfig()
-    print(enabled)
+    #print(enabled)
     output(enabled, build_dict())
 
 
 if __name__ == "__main__":
+    with open('version_hsk.txt', 'r', encoding='utf-8') as f:
+        version = f.readline().strip()
+        match = re.search(r'(\d\.\d)\.', version)
+        if match:
+            cur_version = match.group(1)
+    print(f"Current version: {cur_version}")
     main()

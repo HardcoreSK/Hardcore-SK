@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/WorkGiverDef[defName="SolarWeb-Stratum-DeliverRoofIngredients"]</xpath>
+    <attribute>Name</attribute>
+    <value>DeliverRoofMaterials</value>
+  </Operation>
+
+</Patch>

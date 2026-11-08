@@ -609,14 +609,11 @@
 		</value>
 	</Operation>
 
+	<!-- ========== Explosive IED ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="TrapIED_Incendiary"]/costList</xpath>
+		<xpath>Defs/ThingDef[defName="TrapIED_HighExplosive"]/specialDisplayRadius</xpath>
 		<value>
-			<costList>
-				<Steel>10</Steel>
-				<Prometheum>2</Prometheum>
-				<ComponentIndustrial>1</ComponentIndustrial>
-			</costList>
+			<specialDisplayRadius>4.5</specialDisplayRadius>
 		</value>
 	</Operation>
 
@@ -636,6 +633,7 @@
 					<min>5</min>
 					<max>30</max>
 				</wickTicks>
+				<preExplosionSpawnSingleThingDef>Filth_BlastMark</preExplosionSpawnSingleThingDef>
 			</li>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
@@ -643,6 +641,25 @@
 					<Fragment_Small>100</Fragment_Small>
 				</fragments>
 			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Incendiary IED ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="TrapIED_Incendiary"]/specialDisplayRadius</xpath>
+		<value>
+			<specialDisplayRadius>5</specialDisplayRadius>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="TrapIED_Incendiary"]/costList</xpath>
+		<value>
+			<costList>
+				<Steel>10</Steel>
+				<Prometheum>2</Prometheum>
+				<ComponentIndustrial>1</ComponentIndustrial>
+			</costList>
 		</value>
 	</Operation>
 
@@ -664,6 +681,7 @@
 					<min>5</min>
 					<max>20</max>
 				</wickTicks>
+				<preExplosionSpawnSingleThingDef>Filth_BlastMark</preExplosionSpawnSingleThingDef>
 			</li>
 		</value>
 	</Operation>

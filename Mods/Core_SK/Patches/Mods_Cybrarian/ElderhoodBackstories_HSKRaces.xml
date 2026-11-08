@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Cybranian - Elderhood Backstory</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Dova" or defName="Alien_Nova"]</xpath>
+                    <value>
+                        <comps Merge="True">
+                            <li Class="ElderhoodBackstory.CompProperties_ElderhoodBackstory">
+                                <elderhoodAge>85</elderhoodAge>
+                            </li>
+                        </comps>
+                    </value>
+                </li>
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Norbal"]</xpath>
+                    <value>
+                        <comps Merge="True">
+                            <li Class="ElderhoodBackstory.CompProperties_ElderhoodBackstory">
+                                <elderhoodAge>50</elderhoodAge>
+                            </li>
+                        </comps>
+                    </value>
+                </li>
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]</xpath>
+                    <value>
+                        <comps Merge="True">
+                            <li Class="ElderhoodBackstory.CompProperties_ElderhoodBackstory">
+                                <elderhoodAge>46</elderhoodAge>
+                            </li>
+                        </comps>
+                    </value>
+                </li>
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>NewRatkinPlus</li>
+                    </mods>
+                    <match Class="SK.PatchOperationReplaceExtended">
+                        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]</xpath>
+                        <value>
+                            <comps Merge="True">
+                                <li Class="ElderhoodBackstory.CompProperties_ElderhoodBackstory">
+                                    <elderhoodAge>50</elderhoodAge>
+                                </li>
+                            </comps>
+                        </value>
+                    </match>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

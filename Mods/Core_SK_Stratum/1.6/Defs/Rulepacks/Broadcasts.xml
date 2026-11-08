@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <RulePackDef>
+    <defName>SolarWeb-Stratum-PA_Calming_RulePack</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>root->[intro] [calm_adjective] [calm_sound] [calm_modifier] [calm_purpose]</li>
+        <li>intro->Playing:</li>
+        <li>intro->Broadcasting:</li>
+        <li>intro->Streaming:</li>
+        <li>intro->Piping:</li>
+        <li>calm_adjective->ambient</li>
+        <li>calm_adjective->soothing</li>
+        <li>calm_adjective->gentle</li>
+        <li>calm_adjective->hypnotic</li>
+        <li>calm_adjective->ASMR-grade</li>
+        <li>calm_adjective->sub-audible</li>
+        <li>calm_adjective->heavily-filtered</li>
+        <li>calm_adjective->lo-fi</li>
+        <li>calm_sound->rain over rusted steel roofs</li>
+        <li>calm_sound->chimes in a synthetic garden</li>
+        <li>calm_sound->mechanical white noise</li>
+        <li>calm_sound->distant whale songs</li>
+        <li>calm_sound->purring of a sleeping centipede</li>
+        <li>calm_sound->coolant flowing through pipes</li>
+        <li>calm_sound->whispers of a friendly AI</li>
+        <li>calm_sound->nutrient paste bubbling</li>
+        <li>calm_modifier->during a toxic fallout</li>
+        <li>calm_modifier->on a rainy Tuesday</li>
+        <li>calm_modifier->in an empty warehouse</li>
+        <li>calm_modifier->to mask nearby explosions</li>
+        <li>calm_modifier->at low volumes</li>
+        <li>calm_purpose->to ease anxiety.</li>
+        <li>calm_purpose->for worker composure.</li>
+        <li>calm_purpose->to assist with stress relief.</li>
+        <li>calm_purpose->to lower colony blood pressure.</li>
+        <li>calm_purpose->to quiet the voices in the walls.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>SolarWeb-Stratum-PA_Inspirational_RulePack</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>root->[intro] [insp_adjective] [insp_action] [insp_target] [insp_purpose]</li>
+        <li>intro->Now playing:</li>
+        <li>intro->Uplifting audio active:</li>
+        <li>intro->Grid feed:</li>
+        <li>intro->Blasting:</li>
+        <li>insp_adjective->heroic</li>
+        <li>insp_adjective->high-energy</li>
+        <li>insp_adjective->aggressive</li>
+        <li>insp_adjective->motivational</li>
+        <li>insp_adjective->relentless</li>
+        <li>insp_adjective->bass-boosted</li>
+        <li>insp_action->marches of</li>
+        <li>insp_action->techno beats for</li>
+        <li>insp_action->accordion solos celebrating</li>
+        <li>insp_action->chants dedicated to</li>
+        <li>insp_action->screaming speeches regarding</li>
+        <li>insp_target->the industrial complex</li>
+        <li>insp_target->legendary thrumbo slayers</li>
+        <li>insp_target->highly-caffeinated engineers</li>
+        <li>insp_target->heroic cleaning droids</li>
+        <li>insp_target->the glory of manual labor</li>
+        <li>insp_purpose->to boost base productivity.</li>
+        <li>insp_purpose->for optimal work speed.</li>
+        <li>insp_purpose->to motivate the workforce.</li>
+        <li>insp_purpose->to banish exhaustion.</li>
+        <li>insp_purpose->to encourage working twice as hard.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>SolarWeb-Stratum-PA_Educational_RulePack</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>root->[intro] [edu_style] [edu_topic] [edu_purpose]</li>
+        <li>intro->Lecturing:</li>
+        <li>intro->Audiobook loop:</li>
+        <li>intro->Seminar broadcast:</li>
+        <li>intro->Dictating:</li>
+        <li>edu_style->a dry reading of</li>
+        <li>edu_style->an interactive quiz about</li>
+        <li>edu_style->a 10-hour lecture on</li>
+        <li>edu_style->a children's rhyme explaining</li>
+        <li>edu_style->a dramatic monologue regarding</li>
+        <li>edu_topic->Glitterworld tax codes</li>
+        <li>edu_topic->Rimworld structural physics</li>
+        <li>edu_topic->hygiene in cannibal tribes</li>
+        <li>edu_topic->how to identify edible insects</li>
+        <li>edu_topic->safe handling of toxic waste</li>
+        <li>edu_topic->proper posture during raids</li>
+        <li>edu_purpose->for student growth.</li>
+        <li>edu_purpose->to expand pawn horizons.</li>
+        <li>edu_purpose->for minor intellectual stimulus.</li>
+        <li>edu_purpose->to comply with learning regulations.</li>
+        <li>edu_purpose->to prevent cognitive stagnation.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>SolarWeb-Stratum-PA_Analytical_RulePack</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>root->[intro] [ana_data] [ana_process] [ana_purpose]</li>
+        <li>intro->Telemetry loop:</li>
+        <li>intro->Data stream active:</li>
+        <li>intro->Frequency feed:</li>
+        <li>intro->Raw static feed:</li>
+        <li>ana_data->binary dumps of</li>
+        <li>ana_data->real-time tracking of</li>
+        <li>ana_data->decrypted radio logs from</li>
+        <li>ana_data->chemical molecular scans of</li>
+        <li>ana_data->mathematical calculations regarding</li>
+        <li>ana_process->a malfunctioning mechanoid cluster</li>
+        <li>ana_process->local squirrel migration patterns</li>
+        <li>ana_process->colony nutrient paste efficiency</li>
+        <li>ana_process->orbital trash trajectory</li>
+        <li>ana_process->the heat output of the reactor</li>
+        <li>ana_purpose->to aid research efficiency.</li>
+        <li>ana_purpose->for calculating minds.</li>
+        <li>ana_purpose->to stimulate synaptic pathways.</li>
+        <li>ana_purpose->to optimize colony spreadsheets.</li>
+        <li>ana_purpose->to predict the future with 4% accuracy.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>SolarWeb-Stratum-PA_SleepAid_RulePack</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>root->[intro] [sleep_sound] [sleep_effect] [sleep_purpose]</li>
+        <li>intro->Generating:</li>
+        <li>intro->White noise active:</li>
+        <li>intro->Broadcasting:</li>
+        <li>intro->Humming:</li>
+        <li>sleep_sound->a deep subterranean rumble</li>
+        <li>sleep_sound->rhythmic hydraulic venting</li>
+        <li>sleep_sound->a monotone reading of weather data</li>
+        <li>sleep_sound->simulated heartbeats of a muffalo</li>
+        <li>sleep_sound->low buzz of fluorescent tubes</li>
+        <li>sleep_effect->that induces immediate drowsiness</li>
+        <li>sleep_effect->that slows brain activity</li>
+        <li>sleep_effect->that mimics dreamless slumber</li>
+        <li>sleep_effect->that sounds vaguely like an engine room</li>
+        <li>sleep_purpose->to promote rest.</li>
+        <li>sleep_purpose->for dreamless sleep.</li>
+        <li>sleep_purpose->to suppress nightmare activity.</li>
+        <li>sleep_purpose->to encourage peaceful compliance.</li>
+        <li>sleep_purpose->to keep pawns firmly in bed.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

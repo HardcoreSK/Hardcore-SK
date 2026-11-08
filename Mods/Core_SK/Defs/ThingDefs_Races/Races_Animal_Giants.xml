@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ========================== Giant ============================ -->
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Rhinoceros</defName>
 		<label>rhinoceros</label>
 		<devNote>cow-1</devNote>
@@ -23,6 +24,7 @@
 			<GermResistance>0.21</GermResistance>
 			<GermContainment>0.05</GermContainment>
 			<FilthRate>20</FilthRate>
+			<Wildness>0.83</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -79,7 +81,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Rhinoceros</leatherDef>
-			<wildness>0.83</wildness>
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.8</manhunterOnDamageChance>
@@ -132,8 +133,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Rhinoceros</defName>
 		<label>rhinoceros</label>
 		<race>Rhinoceros</race>
@@ -184,8 +186,10 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-	</PawnKindDef>	
-	<ThingDef ParentName="SK_AnimalThingBase">
+	</PawnKindDef>
+ -->	
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Elephant</defName>
 		<label>elephant</label>
 		<devNote>cow-1</devNote>
@@ -207,6 +211,7 @@
 			<GermResistance>0.15</GermResistance>
 			<FilthRate>24</FilthRate>
 			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+			<Wildness>0.7</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -219,7 +224,7 @@
 				<chanceFactor>0.65</chanceFactor>
 				<linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
 				<armorPenetrationSharp>5</armorPenetrationSharp>
-				<armorPenetrationBlunt>18</armorPenetrationBlunt>	
+				<armorPenetrationBlunt>18</armorPenetrationBlunt>
 			</li>
 			<li Class="CombatExtended.ToolCE">
 				<label>left foot</label>
@@ -229,7 +234,7 @@
 				<power>24</power>
 				<cooldownTime>2.55</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
-				<armorPenetrationBlunt>14</armorPenetrationBlunt>	
+				<armorPenetrationBlunt>14</armorPenetrationBlunt>
 			</li>
 			<li Class="CombatExtended.ToolCE">
 				<label>right foot</label>
@@ -239,7 +244,7 @@
 				<power>24</power>
 				<cooldownTime>2.55</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
-				<armorPenetrationBlunt>14</armorPenetrationBlunt>	
+				<armorPenetrationBlunt>14</armorPenetrationBlunt>
 			</li>
 			<li Class="CombatExtended.ToolCE">
 				<label>head</label>
@@ -251,7 +256,7 @@
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
-				<armorPenetrationBlunt>16</armorPenetrationBlunt>	
+				<armorPenetrationBlunt>16</armorPenetrationBlunt>
 			</li>
 		</tools>
 		<race>
@@ -266,7 +271,6 @@
 			<leatherDef>Leather_Elephant</leatherDef>
 			<manhunterOnDamageChance>0.5</manhunterOnDamageChance>
 			<gestationPeriodDays>13.32</gestationPeriodDays>
-			<wildness>0.7</wildness>
 			<nuzzleMtbHours>36</nuzzleMtbHours>
 			<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
 			<trainability>Advanced</trainability>
@@ -315,8 +319,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Elephant</defName>
 		<label>Elephant</label>
 		<race>Elephant</race>
@@ -376,8 +381,8 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+ -->
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Mammoth</defName>
 		<label>mammoth</label>
 		<devNote>cow-1</devNote>
@@ -398,6 +403,7 @@
 			<GermResistance>0.15</GermResistance>
 			<FilthRate>26</FilthRate>
 			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+			<Wildness>0.76</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -420,7 +426,7 @@
 				<power>26</power>
 				<cooldownTime>2.65</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
-				<armorPenetrationBlunt>14</armorPenetrationBlunt>	
+				<armorPenetrationBlunt>14</armorPenetrationBlunt>
 			</li>
 			<li Class="CombatExtended.ToolCE">
 				<label>right foot</label>
@@ -430,7 +436,7 @@
 				<power>26</power>
 				<cooldownTime>2.65</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
-				<armorPenetrationBlunt>14</armorPenetrationBlunt>	
+				<armorPenetrationBlunt>14</armorPenetrationBlunt>
 			</li>
 			<li Class="CombatExtended.ToolCE">
 				<label>head</label>
@@ -442,7 +448,7 @@
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<chanceFactor>0.2</chanceFactor>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<armorPenetrationBlunt>16</armorPenetrationBlunt>	
+				<armorPenetrationBlunt>16</armorPenetrationBlunt>
 			</li>
 		</tools>
 		<race>
@@ -457,7 +463,6 @@
 			<leatherDef>Leather_Elephant</leatherDef>
 			<manhunterOnDamageChance>0.65</manhunterOnDamageChance>
 			<gestationPeriodDays>13.32</gestationPeriodDays>
-			<wildness>0.76</wildness>
 			<nuzzleMtbHours>36</nuzzleMtbHours>
 			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
 			<trainability>Advanced</trainability>
@@ -507,7 +512,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Mammoth</defName>
 		<label>Mammoth</label>
 		<race>Mammoth</race>
@@ -598,7 +603,8 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Megasloth</defName>
 		<label>megasloth</label>
 		<devNote>sheep-1</devNote>
@@ -613,6 +619,7 @@
 			<ArmorRating_Blunt>6</ArmorRating_Blunt>
 			<ArmorRating_Sharp>1.15</ArmorRating_Sharp>
 			<FilthRate>24</FilthRate>
+			<Wildness>0.92</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -659,7 +666,6 @@
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Heavy</leatherDef>
 			<gestationPeriodDays>13.32</gestationPeriodDays>
-			<wildness>0.92</wildness>
 			<manhunterOnDamageChance>0.5</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
 			<trainability>Advanced</trainability>
@@ -708,8 +714,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Megasloth</defName>
 		<label>Megasloth</label>
 		<race>Megasloth</race>
@@ -760,8 +767,9 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+ -->
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Thrumbo</defName>
 		<label>thrumbo</label>
 		<devNote>misc</devNote>
@@ -783,6 +791,7 @@
 			<GermContainment>0.25</GermContainment>
 			<FilthRate>8</FilthRate>
 			<CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
+			<Wildness>0.985</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -866,7 +875,6 @@
 			<gestationPeriodDays>20</gestationPeriodDays>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.33</manhunterOnTameFailChance>
-			<wildness>0.985</wildness>
 			<lifeExpectancy>220</lifeExpectancy>
 			<willNeverEat>
 				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
@@ -915,8 +923,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Thrumbo</defName>
 		<label>thrumbo</label>
 		<race>Thrumbo</race>
@@ -973,8 +982,8 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+ -->
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Megabadger</defName>
 		<label>megabadger</label>
 		<devNote>sheep-1</devNote>
@@ -993,6 +1002,7 @@
 			<ArmorRating_Blunt>8</ArmorRating_Blunt>
 			<ArmorRating_Sharp>3.3</ArmorRating_Sharp>
 			<FilthRate>24</FilthRate>
+			<Wildness>0.83</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -1053,7 +1063,6 @@
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Heavy</leatherDef>
 			<gestationPeriodDays>17</gestationPeriodDays>
-			<wildness>0.83</wildness>
 			<manhunterOnTameFailChance>0.20</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.75</manhunterOnDamageChance>
 			<trainability>Advanced</trainability>
@@ -1096,7 +1105,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Megabadger</defName>
 		<label>megabadger</label>
 		<race>Megabadger</race>
@@ -1150,7 +1159,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Rhino_Wooly</defName>
 		<label>woolly rhino</label>
 		<devNote>cow-1</devNote>
@@ -1169,6 +1178,7 @@
 			<ArmorRating_Blunt>7</ArmorRating_Blunt>
 			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
 			<FilthRate>21</FilthRate>
+			<Wildness>0.80</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -1225,7 +1235,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Rhinoceros</leatherDef>
-			<wildness>0.80</wildness>
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.26</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.77</manhunterOnDamageChance>
@@ -1269,7 +1278,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Rhino_Wooly</defName>
 		<label>woolly rhinoceros</label>
 		<labelPlural>woolly rhinoceroses</labelPlural>

@@ -1,81 +1,80 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="SK_BuildingBase" Name="SK_DoorBase" Abstract="True">
-		<!-- <thingClass>SK.LockableDoors</thingClass> -->
-		<thingClass>Building_Door</thingClass>
-		<altitudeLayer>DoorMoveable</altitudeLayer>
-		<fillPercent>1</fillPercent>
-		<useHitPoints>true</useHitPoints>
+	<!--
+    DefOverwrite list:
+    DoorBase (base)
+    Door
+    Autodoor
+    FenceGate
+    AnimalFlap
+    OrnateDoor
+    -->
+	
+	<!-- Bases -->
+
+	<ThingDef ParentName="DoorBase" Name="DoorGlassBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Building/Doors/DoorGlass/DoorGlass_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+			<!--<shaderType>Transparent</shaderType>-->
+		</graphicData>
+		<uiIconPath>Things/Building/Doors/DoorGlass/DoorGlass_MenuIcon</uiIconPath>
+		<stuffCategories Inherit="False">
+			<li>Glass</li>
+		</stuffCategories>
 		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<Flammability>1.0</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0</Flammability>
 		</statBases>
+		<blockLight>false</blockLight>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<tickerType>Normal</tickerType>
-		<rotatable>false</rotatable>
-		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
-		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<!-- Best affordance needed for stone -->
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Structure</designationCategory>
 		<holdsRoof>true</holdsRoof>
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>
-		<blockLight>true</blockLight>
-		<drawerType>RealtimeOnly</drawerType>
 		<building>
-			<isInert>true</isInert>
-			<canPlaceOverWall>true</canPlaceOverWall>
-			<soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
-			<soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
-			<soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
-			<soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
-			<blueprintClass>Blueprint_Door</blueprintClass>
-			<blueprintGraphicData>
-				<texPath>Things/Building/Door/Door_Blueprint</texPath>
-			</blueprintGraphicData>
-			<ai_chillDestination>false</ai_chillDestination>
-			<paintable>true</paintable>
+			<paintable>false</paintable>
 		</building>
-		<comps>
-			<li Class="CompProperties_Forbiddable">
-				<allowNonPlayer>true</allowNonPlayer>
-			</li>
-		</comps>
-		<placeWorkers>
-			<li>PlaceWorker_DoorLearnOpeningSpeed</li>
-		</placeWorkers>
-		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
+		<!--filthLeaving>BrokenGlass</filthLeaving-->
 	</ThingDef>
-
-	<ThingDef ParentName="SK_DoorBase">
-		<defName>Door</defName>
-		<label>rustic door</label>
-		<description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
+	
+	<!-- Ordinary Doors -->
+    
+    <ThingDef ParentName="DoorBase">
+		<defName>PrimitiveDoor</defName>
+		<label>primitive door</label>
+		<description>Divides rooms. Simple doors must be manually opened, which slows people down. Fast to open, but very fragile and a bit ugly.</description>
 		<statBases>
-			<MaxHitPoints>180</MaxHitPoints>
-			<WorkToBuild>400</WorkToBuild>
+			<MaxHitPoints>35</MaxHitPoints>
+			<WorkToBuild>150</WorkToBuild>
+            <DoorOpenSpeed>1.2</DoorOpenSpeed>
+            <Beauty>-3</Beauty>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Building/Door/DoorSimple_Mover</texPath>
+			<texPath>Things/Building/Doors/DoorPrimitive/DoorPrimitive_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<damageData>
 				<!--  no damage marks because they don't move with the door
-        <rect>(0,0.12,1,0.76)</rect>-->
+                <rect>(0,0.12,1,0.76)</rect>-->
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Doors/DoorSimple_MenuIcon</uiIconPath>
-		<stuffCategories>
-			<li>Woody</li>
-		</stuffCategories>
-		<costStuffCount>10</costStuffCount>
+		<uiIconPath>Things/Building/Doors/DoorPrimitive/DoorPrimitive_MenuIcon</uiIconPath>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+        <holdsRoof>false</holdsRoof>
+        <blockWeather>true</blockWeather>
+		<stuffCategories IsNull="True" />
 		<costList>
-			<ComponentMedieval>1</ComponentMedieval>
+			<Kindling>10</Kindling>
+			<Hay>10</Hay>
 		</costList>
+        <constructionSkillPrerequisite IsNull="True" />
 	</ThingDef>
 
-	<ThingDef ParentName="SK_DoorBase">
+	<ThingDef ParentName="DoorBase">
 		<defName>MDoor</defName>
 		<label>metal door</label>
 		<description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
@@ -84,16 +83,17 @@
 			<WorkToBuild>800</WorkToBuild>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Building/Door/DoorSimple_Mover</texPath>
+			<texPath>Things/Building/Doors/DoorMetal/DoorMetal_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<!--  no damage marks because they don't move with the door
-        <rect>(0,0.12,1,0.76)</rect>-->
+                <rect>(0,0.12,1,0.76)</rect>-->
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Doors/DoorSimple_MenuIcon</uiIconPath>
-		<stuffCategories>
+		<uiIconPath>Things/Building/Doors/DoorMetal/DoorMetal_MenuIcon</uiIconPath>
+		<stuffCategories Inherit="false">
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>15</costStuffCount>
@@ -107,7 +107,7 @@
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_DoorBase">
+	<ThingDef ParentName="DoorBase">
 		<defName>CellDoor</defName>
 		<label>cell door</label>
 		<thingClass>SK.Building_CellDoor</thingClass>
@@ -116,7 +116,7 @@
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToBuild>550</WorkToBuild>
 		</statBases>
-		<stuffCategories>
+		<stuffCategories Inherit="False">
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>7</costStuffCount>
@@ -124,7 +124,7 @@
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<graphicData>
-			<texPath>Things/Building/Doors/CellDoor_Mover</texPath>
+			<texPath>Things/Building/Doors/CellDoor/CellDoor_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<damageData>
 				<!--  no damage marks because they don't move with the door
@@ -132,7 +132,7 @@
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Doors/CellDoor_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Doors/CellDoor/CellDoor_MenuIcon</uiIconPath>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTransmitter</compClass>
@@ -147,229 +147,41 @@
 		<!-- temp disabled celldoor -->
 	</ThingDef>
 
-	<ThingDef ParentName="SK_DoorBase">
-		<defName>Autodoor</defName>
-		<label>autodoor</label>
-		<description>A door divides rooms with a closable opening. Powered operation allows people to move through the door without slowing down.</description>
-		<statBases>
-			<MaxHitPoints>250</MaxHitPoints>
-			<WorkToBuild>800</WorkToBuild>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Building/Door/Autodoor_Mover</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<damageData>
-				<!--  no damage marks because they don't move with the door
-        <rect>(0,0.12,1,0.76)</rect>-->
-				<enabled>false</enabled>
-			</damageData>
-		</graphicData>
-		<uiIconPath>Things/Building/Doors/Autodoor_MenuIcon</uiIconPath>
-		<stuffCategories>
-			<li>RuggedMetallic</li>
-		</stuffCategories>
-		<costStuffCount>50</costStuffCount>
-		<costList>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<ElectronicComponents>2</ElectronicComponents>
-		</costList>
-		<tickerType>Normal</tickerType>
-		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>100</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Breakdownable"/>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
-				<idlePowerFactor>0.1</idlePowerFactor>
-				<operationalMode>WhenNear</operationalMode>
-			</li>
-			<li Class="CompProperties_Styleable" />
-		</comps>
-		<designationHotKey>Misc3</designationHotKey>
-		<researchPrerequisites>
-			<li>Autodoors</li>
-		</researchPrerequisites>
-		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-	</ThingDef>
-
-	<ThingDef ParentName="SK_DoorBase">
-		<defName>FenceGate</defName>
-		<label>fence gate</label>
-		<description>A simple gate made of posts and crossbars. It blocks some animals like a fence. Handlers can lead animals in and out of the pen through these gates.</description>
-		<statBases>
-			<MaxHitPoints>20</MaxHitPoints>
-			<WorkToBuild>500</WorkToBuild>
-			<DoorOpenSpeed>1.15</DoorOpenSpeed>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Building/Door/FenceGate_Mover</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<shadowData>
-				<volume>(0.3, 0.5, 0.3)</volume>
-			</shadowData>
-			<damageData>
-				<!--  no damage marks because they don't move with the door -->
-				<enabled>false</enabled>
-			</damageData>
-		</graphicData>
-		<uiIconPath>Things/Building/Door/FenceGate_MenuIcon</uiIconPath>
-		<stuffCategories>
-			<li>Metallic</li>
-			<li>Woody</li>
-		</stuffCategories>
-		<costStuffCount>15</costStuffCount>
-		<holdsRoof>false</holdsRoof>
-		<blockWeather>true</blockWeather>
-		<staticSunShadowHeight>0</staticSunShadowHeight>
-		<!-- disable static shadow -->
-		<blockWind>false</blockWind>
-		<building>
-			<ai_chillDestination>false</ai_chillDestination>
-			<relatedBuildCommands>
-				<li>Fence</li>
-				<li>PenMarker</li>
-			</relatedBuildCommands>
-			<blueprintGraphicData>
-				<texPath>Things/Building/Door/FenceGate_Blueprint</texPath>
-				<graphicClass>Graphic_Multi</graphicClass>
-			</blueprintGraphicData>
-			<preferConnectingToFences>true</preferConnectingToFences>
-			<soundDoorOpenManual>Door_FenceGateManual</soundDoorOpenManual>
-			<soundDoorCloseManual>Door_FenceGateManual</soundDoorCloseManual>
-			<paintable>true</paintable>
-		</building>
-	</ThingDef>
-
-	<ThingDef ParentName="SK_DoorBase">
-		<defName>AnimalFlap</defName>
-		<label>animal flap</label>
-		<description>A doorway hung with thick overlapping strips of fabric or leather. It allows animals to pass while insulating the temperature. Animal flaps are commonly used as barn doors to give penned animals a sheltered place to sleep.</description>
-		<statBases>
-			<WorkToBuild>850</WorkToBuild>
-			<MaxHitPoints>20</MaxHitPoints>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Building/Door/AnimalFlap_Mover</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<damageData>
-				<!-- no damage marks because they don't move with the door -->
-				<enabled>false</enabled>
-			</damageData>
-		</graphicData>
-		<uiIconPath>Things/Building/Door/AnimalFlap_MenuIcon</uiIconPath>
-		<costStuffCount>40</costStuffCount>
-		<stuffCategories Inherit="False">
-			<li>Fabric</li>
-			<li>Leathery</li>
-		</stuffCategories>
-		<costList>
-			<ComponentMedieval>3</ComponentMedieval>
-		</costList>
-		<building>
-			<roamerCanOpen>true</roamerCanOpen>
-			<ai_chillDestination>false</ai_chillDestination>
-			<blueprintGraphicData>
-				<texPath>Things/Building/Door/AnimalFlap_Blueprint</texPath>
-				<graphicClass>Graphic_Multi</graphicClass>
-			</blueprintGraphicData>
-			<paintable>false</paintable>
-		</building>
-	</ThingDef>
-
-	<ThingDef ParentName="SK_DoorBase">
-		<defName>OrnateDoor</defName>
-		<label>ornate door</label>
-		<description>Divides rooms. An intricately-carved door, decorated with gold. This large, heavy door requires adjacent walls to function.</description>
-		<thingClass>Building_MultiTileDoor</thingClass>
-		<statBases>
-			<MaxHitPoints>250</MaxHitPoints>
-			<WorkToBuild>8000</WorkToBuild>
-			<Beauty>30</Beauty>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Building/OrnateDoor/OrnateDoor2x1_Mover</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<damageData>
-				<enabled>false</enabled>
-			</damageData>
-		</graphicData>
-		<uiIconPath>Things/Building/OrnateDoor/OrnateDoor_MenuIcon_south</uiIconPath>
-		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
-		<stuffCategories>
-			<li>Precious</li>
-		</stuffCategories>
-		<costStuffCount>35</costStuffCount>
-		<size>(2,1)</size>
-		<rotatable>true</rotatable>
-		<building>
-			<blueprintClass>Blueprint_Build</blueprintClass>
-			<blueprintGraphicData>
-				<texPath>Things/Building/OrnateDoor/OrnateDoor_MenuIcon</texPath>
-				<graphicClass>Graphic_Multi</graphicClass>
-				<shaderType>EdgeDetect</shaderType>
-				<drawSize>(2.6, 3.1)</drawSize>
-			</blueprintGraphicData>
-			<doorTopGraphic>
-				<texPath>Things/Building/OrnateDoor/OrnateDoor2x1_Top</texPath>
-				<graphicClass>Graphic_Multi</graphicClass>
-				<drawSize>(3.1, 2.3)</drawSize>
-			</doorTopGraphic>
-			<doorSupportGraphic>
-				<texPath>Things/Building/OrnateDoor/OrnateDoor2x1_Support</texPath>
-				<graphicClass>Graphic_Multi</graphicClass>
-				<drawSize>(3.1, 2.3)</drawSize>
-			</doorSupportGraphic>
-		</building>
-		<placeWorkers>
-			<li>PlaceWorker_MultiCellDoor</li>
-		</placeWorkers>
-		<researchPrerequisites>
-			<li>Construction_B1</li>
-		</researchPrerequisites>
-		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-	</ThingDef>
-
-	<ThingDef ParentName="SK_DoorBase">
+	<ThingDef ParentName="DoorBase">
 		<defName>Blastdoor</defName>
-		<label>blast autodoor</label>
+		<label>reinforced autodoor</label>
 		<description>A powered, reinforced door that allows people to move through the door without slowing down.</description>
 		<statBases>
-			<MaxHitPoints>375</MaxHitPoints>
+			<MaxHitPoints>450</MaxHitPoints>
 			<WorkToBuild>1400</WorkToBuild>
 		</statBases>
-		<stuffCategories>
+		<stuffCategories Inherit="False">
 			<li>RuggedMetallic</li>
 		</stuffCategories>
-		<costStuffCount>90</costStuffCount>
+		<costStuffCount>60</costStuffCount>
 		<costList>
-			<ReinforcedConcrete>6</ReinforcedConcrete>
+			<ReinforcedConcrete>5</ReinforcedConcrete>
 			<ComponentIndustrial>3</ComponentIndustrial>
 			<ElectronicComponents>1</ElectronicComponents>
 		</costList>
 		<graphicData>
-			<texPath>Things/Building/Doors/DoorBlast_Mover</texPath>
+			<texPath>Things/Building/Doors/DoorBlast/DoorBlast_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<!--  no damage marks because they don't move with the door
-        <rect>(0,0.12,1,0.76)</rect>-->
+                <rect>(0,0.12,1,0.76)</rect>-->
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Doors/DoorBlast_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Doors/DoorBlast/DoorBlast_MenuIcon</uiIconPath>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>100</basePowerConsumption>
+			<li Class="SK.CompProperties_IdlePower">
+				<basePowerConsumption>150</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
-			</li>
-			<li Class="SK.CompProperties_LowIdleDraw">
-				<compClass>SK.CompPowerLowIdleDraw</compClass>
 				<idlePowerFactor>0.1</idlePowerFactor>
-				<operationalMode>WhenNear</operationalMode>
+				<idleMode>WhenNear</idleMode>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
@@ -379,13 +191,64 @@
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="DoorGlassBase">
+		<defName>DoorGlass</defName>
+		<label>glass door</label>
+		<description>Divides rooms. Allows light to pass through.</description>
+		<statBases>
+			<MaxHitPoints>320</MaxHitPoints>
+			<MarketValue>10</MarketValue>
+			<WorkToBuild>350</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+		<costStuffCount>15</costStuffCount>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+			<li>Construction_B3</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+	<ThingDef ParentName="DoorGlassBase">
+		<defName>AutoDoorGlass</defName>
+		<label>glass autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down. Allows light to pass through.</description>
+		<statBases>
+			<MaxHitPoints>320</MaxHitPoints>
+			<MarketValue>10</MarketValue>
+			<WorkToBuild>350</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ElectronicComponents>2</ElectronicComponents>
+			<Steel>5</Steel>
+		</costList>
+		<comps>
+			<li Class="SK.CompProperties_IdlePower">
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<researchPrerequisites>
+			<li>Autodoors</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<!-- Blast Door (big one) -->
+
+	<ThingDef ParentName="BuildingBase">
 		<defName>OpenBlastDoor</defName>
 		<label>large armor gate (open)</label>
-		<description>A very large gate that provides protection against hostile outside entities. It requires power, and must be manually opened and closed. The gate is currently open.</description>
+		<description>A huge gate that provides protection against hostile outside entities. It requires power, and must be manually opened and closed. The gate is currently open.</description>
 		<thingClass>SK.Building_OpenedBlastDoor</thingClass>
 		<graphicData>
-			<texPath>Things/Building/ArmorGate/ArmorGateOpen</texPath>
+			<texPath>Things/Building/Doors/ArmorGate/ArmorGateOpen</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,1)</drawSize>
 			<damageData>
@@ -408,8 +271,7 @@
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>350</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
@@ -421,14 +283,13 @@
 		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
 	</ThingDef>
 
-
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>ClosedBlastDoor</defName>
 		<label>large armor gate (closed)</label>
-		<description>A very large gate that provides protection against hostile outside entities. It requires power, and must be manually opened and closed. The gate is currently closed.</description>
+		<description>A huge gate that provides protection against hostile outside entities. It requires power, and must be manually opened and closed. The gate is currently closed.</description>
 		<thingClass>SK.Building_ClosedBlastDoor</thingClass>
 		<graphicData>
-			<texPath>Things/Building/ArmorGate/ArmorGateClose</texPath>
+			<texPath>Things/Building/Doors/ArmorGate/ArmorGateClose</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,1)</drawSize>
 			<damageData>
@@ -458,8 +319,7 @@
 			<Mechanism>5</Mechanism>
 		</costList>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<basePowerConsumption>350</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
@@ -475,14 +335,13 @@
 		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
 	</ThingDef>
 
-
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>JammedBlastDoor</defName>
 		<label>large armor gate (jammed)</label>
-		<description>A very large gate that provides protection against hostile outside entities. It requires power, and must be manually opened and closed. The gate is jammed.</description>
+		<description>A huge gate that provides protection against hostile outside entities. It requires power, and must be manually opened and closed. The gate is jammed.</description>
 		<thingClass>SK.Building_JammedBlastDoor</thingClass>
 		<graphicData>
-			<texPath>Things/Building/ArmorGate/ArmorGateClose</texPath>
+			<texPath>Things/Building/Doors/ArmorGate/ArmorGateClose</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,1)</drawSize>
 			<damageData>

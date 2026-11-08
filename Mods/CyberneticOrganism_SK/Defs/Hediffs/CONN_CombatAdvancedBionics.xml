@@ -79,8 +79,10 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallIndependentEye</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install robotic eye</label>
 		<description>Install robotic eye.</description>
 		<descriptionHyperlinks>
@@ -197,8 +199,10 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallEnergyLink</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install energy link</label>
 		<workerClass>CONN.Recipe_InstallArtificialBodyPartAndClearPawnFromCache</workerClass>
 		<description>Install energy link.</description>
@@ -330,8 +334,10 @@
 		</techHediffsTags>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallOuterBlade</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install outer blade</label>
 		<description>Install outer blade.</description>
 		<descriptionHyperlinks>
@@ -457,8 +463,10 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallPowerArms</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install power arms</label>
 		<description>Install power arms.</description>
 		<descriptionHyperlinks>
@@ -529,6 +537,9 @@
 		<descriptionHyperlinks>
 			<ThingDef>CONN_Shadowrunner</ThingDef>
 		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="CombatExtended.SmokeInhalationImmuneExtension" />
+		</modExtensions>
 		<comps>
 			<!-- <li Class="CONN.HediffCompProperties_SmokepopDefense">
 				<rechargeTime>6</rechargeTime>
@@ -577,8 +588,10 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallShadowrunner</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install shadowrunner</label>
 		<description>Install shadowrunner.</description>
 		<descriptionHyperlinks>
@@ -691,8 +704,10 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
 		<defName>CONN_InstallExoskeletonArmor</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install exoskeleton armor</label>
 		<description>Install an exoskeleton armor.</description>
 		<descriptionHyperlinks>
@@ -785,7 +800,7 @@
 		<label>dermalplating</label>
 		<description>A full body skin transplantation. Very dangerous for the patient. The results are worth it though, overall protection and resilience are improved drastically. Dermalplating becomes one with the body and skin. (Implant)</description>
 		<graphicData>
-			<texPath>Things/Item/BodyPart/Joywire</texPath>
+			<texPath>Things/Item/BodyPart/Core/Joywire</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -817,8 +832,10 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
 		<defName>CONN_InstallDermalplating</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install dermalplating</label>
 		<description>Install a dermalplating.</description>
 		<descriptionHyperlinks>
@@ -916,7 +933,7 @@
 		<label>lionheart</label>
 		<description>An advanced artificial heart with adrenaline injectors and an adaptive combat system. (Replacement)</description>
 		<graphicData>
-			<texPath>Things/Item/BodyPart/Joywire</texPath>
+			<texPath>Things/Item/BodyPart/Core/Joywire</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -947,8 +964,10 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallLionheart</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install lionheart</label>
 		<description>Install lionheart.</description>
 		<descriptionHyperlinks>

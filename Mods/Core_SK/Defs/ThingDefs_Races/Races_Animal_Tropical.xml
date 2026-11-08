@@ -1,7 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ========================== Tropical ============================ -->
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Cobra</defName>
 		<label>cobra</label>
 		<devNote>misc</devNote>
@@ -18,6 +19,7 @@
 			<GermResistance>0.27</GermResistance>
 			<GermContainment>0.09</GermContainment>
 			<FilthRate>1</FilthRate>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -55,6 +57,7 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>EggCobraUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>EggCobraFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>8.5</eggLayIntervalDays>
@@ -75,12 +78,13 @@
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Lizard</leatherDef>
-			<wildness>0.75</wildness>
 			<trainability>Intermediate</trainability>
 			<petness>0.05</petness>
 			<manhunterOnTameFailChance>0.33</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.60</manhunterOnDamageChance>
+			-->
 			<!-- <gestationPeriodDays>14.5</gestationPeriodDays> -->
+			<!--
 			<nameOnTameChance>1</nameOnTameChance>
 			<litterSizeCurve>
 				<points>
@@ -132,8 +136,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Cobra</defName>
 		<label>cobra</label>
 		<race>Cobra</race>
@@ -173,8 +178,9 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+ -->
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Monkey</defName>
 		<label>monkey</label>
 		<description>A small primate, the monkey can use its curly tail to grab on to branches, leaving its hands free to do other things. Monkeys are selfish but clever, and can be trained to carry out fairly complex tasks.</description>
@@ -187,6 +193,7 @@
 			<ImmunityGainSpeed>1.1</ImmunityGainSpeed>
 			<MeleeDodgeChance>0.23</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
+			<Wildness>0.50</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -217,7 +224,7 @@
 				<cooldownTime>1.45</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.5</chanceFactor>
-				<armorPenetrationSharp>1.1</armorPenetrationSharp>					
+				<armorPenetrationSharp>1.1</armorPenetrationSharp>
 				<armorPenetrationBlunt>0.7</armorPenetrationBlunt>
 			</li>
 			<li Class="CombatExtended.ToolCE">
@@ -244,7 +251,6 @@
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Light</leatherDef>
 			<trainability>Advanced</trainability>
-			<wildness>0.50</wildness>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<nuzzleMtbHours>42</nuzzleMtbHours>
 			<gestationPeriodDays>6.66</gestationPeriodDays>
@@ -281,8 +287,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Monkey</defName>
 		<label>monkey</label>
 		<race>Monkey</race>
@@ -331,8 +338,9 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+ -->
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Boomalope</defName>
 		<label>boomalope</label>
 		<devNote>cow-1</devNote>
@@ -347,6 +355,7 @@
 			<MeleeParryChance>0.12</MeleeParryChance>
 			<FilthRate>16</FilthRate>
 			<ToxicResistance>0.9</ToxicResistance>
+			<Wildness>0.6</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -419,7 +428,6 @@
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Boomanimal</leatherDef>
 			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
-			<wildness>0.6</wildness>
 			<trainability>Intermediate</trainability>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<roamMtbDays>5</roamMtbDays>
@@ -468,8 +476,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Boomalope</defName>
 		<label>boomalope</label>
 		<race>Boomalope</race>
@@ -529,8 +538,8 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+ -->
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Lacosdile</defName>
 		<label>lacosdile</label>
 		<description>A lacosdile is a crossbred and genetically manipulated lizard originally created as part of clever fragrance marketing gig. Being herbivorous and barely dangerous made them very common pets. However as the trends passed lacosdiles were soon found flooding the sewage systems, and in desperation were carried off across the galaxy to the furthest reaches of space. As a result the species now flourish on desolate rimworlds, where they have adapted to become omnivorous.</description>
@@ -545,6 +554,7 @@
 			<GermResistance>0.33</GermResistance>
 			<GermContainment>0.17</GermContainment>
 			<ToxicResistance>0.95</ToxicResistance>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -622,7 +632,6 @@
 			<foodType>CarnivoreAnimal, Corpse, AnimalProduct, OvivoreAnimal</foodType>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<leatherDef>Leather_Lizard</leatherDef>
-			<wildness>0.75</wildness>
 			<trainability>Intermediate</trainability>
 			<manhunterOnDamageChance>0.3</manhunterOnDamageChance>
 			<gestationPeriodDays>15</gestationPeriodDays>
@@ -680,7 +689,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Lacosdile</defName>
 		<label>lacosdile</label>
 		<race>Lacosdile</race>
@@ -721,7 +730,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Okapi</defName>
 		<label>okapi</label>
 		<description>A giraffid artiodactyl mammal. Okapis are primarily diurnal but may be active for a few hours in darkness. They are essentially solitary, coming together only to breed. Okapis are herbivores, feeding on tree leaves and buds, grasses, ferns, fruits, and fungi. Okapis inhabit canopy forests at altitudes of 500–1,500 m (1,600–4,900 ft).</description>
@@ -733,6 +742,7 @@
 			<MarketValue>480</MarketValue>
 			<MeleeDodgeChance>0.12</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
+			<Wildness>0.72</Wildness>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Milkable">
@@ -794,7 +804,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Plain</leatherDef>
-			<wildness>0.72</wildness>
 			<nuzzleMtbHours>60</nuzzleMtbHours>
 			<gestationPeriodDays>6.66</gestationPeriodDays>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
@@ -841,7 +850,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Okapi</defName>
 		<label>okapi</label>
 		<race>Okapi</race>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="BaseTool">
+        <defName>Tool_Multitool</defName>
+        <label>Multitool</label>
+        <description>A high-tech set of tools commonly used by domestic mechanoids in glitterworld societies, though also usable by humanoids due to their physiological similarities.</description>
+        <graphicData>
+            <texPath>Things/Tools/Multitool</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+            <MarketValue>3000</MarketValue>
+            <WorkToMake>27000</WorkToMake>
+            <Mass>2</Mass>
+            <Bulk>2</Bulk>
+        </statBases>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>11</power>
+                <cooldownTime>1.5</cooldownTime>
+                <armorPenetrationBlunt>4</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <equippedStatOffsets>
+            <PlantWorkSpeed>0.5</PlantWorkSpeed>
+            <ConstructionSpeed>0.5</ConstructionSpeed>
+            <MiningSpeed>0.5</MiningSpeed>
+            <PruningSpeed MayRequire="ludeon.rimworld.ideology">0.5</PruningSpeed>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>SurvivalToolsSpacer</li>
+        </thingCategories>
+        <recipeMaker>
+            <recipeUsers>
+                <li>ElectricSmithy</li>
+            </recipeUsers>
+            <researchPrerequisite>Electronics_D1</researchPrerequisite>
+        </recipeMaker>
+        <stuffCategories>
+            <li>StrongMetallic</li>
+        </stuffCategories>
+        <costStuffCount>40</costStuffCount>
+        <costList>
+            <Plastic>20</Plastic>
+            <Electronics>5</Electronics>
+            <Hexcell>2</Hexcell>
+        </costList>
+		<smeltable>false</smeltable>
+        <modExtensions>
+            <!-- 			<li Class="RightToolForJob.EquipRightToolExtension">
+				<purpose>Harvesing, CutPlant, Construction, Repair, Mining</purpose>
+			</li> -->
+        </modExtensions>
+    </ThingDef>
+
+</Defs>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Tribal_Miner"]</xpath>
+        <value>
+            <combatPower>80</combatPower>
+            <apparelMoney>250~450</apparelMoney>
+            <weaponMoney>450~500</weaponMoney>
+            <apparelTags>
+                <li>Tribal</li>
+            </apparelTags>
+            <apparelRequired>
+                <li>Apparel_TribalA</li>
+            </apparelRequired>
+            <techHediffsMoney>100~300</techHediffsMoney>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Tribal_Logger"]</xpath>
+        <value>
+            <combatPower>80</combatPower>
+            <apparelMoney>250~450</apparelMoney>
+            <weaponMoney>450~500</weaponMoney>
+            <apparelTags>
+                <li>Tribal</li>
+            </apparelTags>
+            <apparelRequired>
+                <li>Apparel_TribalA</li>
+            </apparelRequired>
+            <techHediffsMoney>100~300</techHediffsMoney>
+        </value>
+    </Operation>
+
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Tribal_Farmer"]</xpath>
+        <value>
+            <combatPower>80</combatPower>
+            <apparelMoney>250~450</apparelMoney>
+            <weaponMoney>450~500</weaponMoney>
+            <apparelTags>
+                <li>Tribal</li>
+            </apparelTags>
+            <apparelRequired>
+                <li>Apparel_TribalA</li>
+            </apparelRequired>
+            <techHediffsMoney>100~300</techHediffsMoney>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Miner"]</xpath>
+        <value>
+            <combatPower>80</combatPower>
+            <weaponMoney>220~400</weaponMoney>
+            <weaponTags>
+                <li>Pickaxe</li>
+            </weaponTags>
+            <apparelMoney>370~900</apparelMoney>
+            <apparelTags>
+                <li>BanditsLight</li>
+            </apparelTags>
+            <apparelRequired>
+                <li>Apparel_UrbanShirt</li>
+            </apparelRequired>
+            <backstoryFiltersOverride IsNull="True"/>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Logger"]</xpath>
+        <value>
+            <combatPower>80</combatPower>
+            <weaponMoney>220~400</weaponMoney>
+            <weaponTags>
+                <li>Handaxe</li>
+            </weaponTags>
+            <apparelMoney>370~900</apparelMoney>
+            <apparelTags>
+                <li>BanditsLight</li>
+            </apparelTags>
+            <apparelRequired>
+                <li>Apparel_UrbanShirt</li>
+            </apparelRequired>
+            <backstoryFiltersOverride IsNull="True"/>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Farmer"]</xpath>
+        <value>
+            <combatPower>80</combatPower>
+            <weaponMoney>220~400</weaponMoney>
+            <weaponTags>
+                <li>Handaxe</li>
+            </weaponTags>
+            <apparelMoney>370~900</apparelMoney>
+            <apparelTags>
+                <li>BanditsLight</li>
+            </apparelTags>
+            <apparelRequired>
+                <li>Apparel_UrbanShirt</li>
+            </apparelRequired>
+            <backstoryFiltersOverride IsNull="True"/>
+        </value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Hunter"]</xpath>
+        <value>
+            <combatPower>140</combatPower>
+            <weaponMoney>500~1100</weaponMoney>
+            <weaponTags Inherit="False">
+                <li>MedievalRanged</li>
+                <li>RF1</li>
+            </weaponTags>
+            <apparelMoney>670~1200</apparelMoney>
+            <apparelTags>
+                <li>BanditsLight</li>
+            </apparelTags>
+            <apparelRequired>
+                <li>Apparel_UrbanShirt</li>
+            </apparelRequired>
+            <backstoryFiltersOverride IsNull="True"/>
+        </value>
+    </Operation>
+</Patch>

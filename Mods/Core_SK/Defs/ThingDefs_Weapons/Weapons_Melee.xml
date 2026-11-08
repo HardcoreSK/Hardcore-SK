@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
 <Defs>
 
 	<ThingDef Name="SK_BaseMeleeWeapon" Abstract="True">
@@ -51,6 +50,7 @@
 		<tradeTags>
 			<li>WeaponMelee</li>
 		</tradeTags>
+		<smeltable>true</smeltable>
 	</ThingDef>
 
 	<ThingDef Name="WeaponNeoliticBase" ParentName="SK_BaseMeleeWeapon" Abstract="True">
@@ -135,6 +135,34 @@
 			</skillRequirements>
 			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_Styleable"/>
+		</comps>
+	</ThingDef>
+    
+	<ThingDef Name="WeaponArchotechBase" ParentName="SK_BaseMeleeWeapon" Abstract="True">
+		<techLevel>Archotech</techLevel>
+		<possessionCount>0</possessionCount>
+		<recipeMaker>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>MechWeaponCraftingWorkTable</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>20</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<burnableByRecipe>False</burnableByRecipe>
+		<weaponTags>
+			<li>Archotech</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ultratech</li>
+		</weaponClasses>
 		<comps>
 			<li Class="CompProperties_Styleable"/>
 		</comps>

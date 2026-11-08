@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+<!-- DefOverwrite
 	<ThingDef ParentName="SK_PlantBase">
 		<defName>Plant_Moss</defName>
 		<label>moss</label>
@@ -16,7 +16,7 @@
 			<texPath>Things/Plant/Moss</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<ingestible />
 		<plant>
 			<fertilityMin>0.05</fertilityMin>
@@ -26,16 +26,13 @@
 			<pollutedGraphicPath>Things/Plant/Moss_Polluted</pollutedGraphicPath>
 			<harvestWork>60</harvestWork>
 			<maxMeshCount>9</maxMeshCount>
-			<visualSizeRange>
-				<min>0.4</min>
-				<max>0.6</max>
-			</visualSizeRange>
+			<visualSizeRange>0.4~0.6</visualSizeRange>
 			<topWindExposure>0.0</topWindExposure>
 			<wildOrder>1</wildOrder>
 			<pollution>Any</pollution>
 		</plant>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_DeciduousWildPlantBase">
 		<defName>Plant_ShrubLow</defName>
 		<label>low shrubs</label>
@@ -52,12 +49,9 @@
 			<Nutrition>0.2</Nutrition>
 		</statBases>
 		<pathCost>20</pathCost>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<plant>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>0.9</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~0.9</visualSizeRange>
 			<fertilityMin>0.4</fertilityMin>
 			<fertilitySensitivity>0.7</fertilitySensitivity>
 			<growDays>3.1</growDays>
@@ -71,7 +65,7 @@
 			<pollutedGraphicPath>Things/Plant/ShrubLow_Polluted</pollutedGraphicPath>
 		</plant>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_DeciduousWildPlantBase">
 		<defName>Plant_Chokevine</defName>
 		<label>chokevine</label>
@@ -95,10 +89,7 @@
 			<maxMeshCount>9</maxMeshCount>
 			<leaflessGraphicPath>Things/Plant/PlantChokevine_Leafless</leaflessGraphicPath>
 			<pollutedGraphicPath>Things/Plant/Chokevine_Polluted</pollutedGraphicPath>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>0.8</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~0.8</visualSizeRange>
 			<topWindExposure>0.15</topWindExposure>
 			<wildClusterRadius>6</wildClusterRadius>
 			<wildClusterWeight>100</wildClusterWeight>
@@ -107,8 +98,8 @@
 			<pollution>Any</pollution>
 		</plant>
 	</ThingDef>
-
-
+-->
+<!-- DefOverwrite
 	<ThingDef ParentName="WildPlantBase">
 		<defName>Plant_Brambles</defName>
 		<label>brambles</label>
@@ -132,10 +123,7 @@
 			<maxMeshCount>9</maxMeshCount>
 			<leaflessGraphicPath>Things/Plant/PlantBrambles_Leafless</leaflessGraphicPath>
 			<pollutedGraphicPath>Things/Plant/Brambles_Polluted</pollutedGraphicPath>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>0.7</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~0.7</visualSizeRange>
 			<topWindExposure>0.15</topWindExposure>
 			<wildClusterWeight>35</wildClusterWeight>
 			<wildClusterRadius>4</wildClusterRadius>
@@ -144,7 +132,7 @@
 			<pollution>Any</pollution>
 		</plant>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="WildPlantBase">
 		<defName>Plant_Fern</defName>
 		<label>fern</label>
@@ -160,7 +148,7 @@
 			<texPath>Things/Plant/PlantFern</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<plant>
 			<leaflessGraphicPath>Things/Plant/PlantFern_Leafless</leaflessGraphicPath>
 			<fertilityMin>0.36</fertilityMin>
@@ -168,10 +156,7 @@
 			<growDays>3</growDays>
 			<harvestWork>60</harvestWork>
 			<maxMeshCount>9</maxMeshCount>
-			<visualSizeRange>
-				<min>0.7</min>
-				<max>1.2</max>
-			</visualSizeRange>
+			<visualSizeRange>0.7~1.2</visualSizeRange>
 			<topWindExposure>0.25</topWindExposure>
 			<wildClusterWeight>34</wildClusterWeight>
 			<wildClusterRadius>3</wildClusterRadius>
@@ -202,10 +187,7 @@
 		</graphicData>
 		<plant>
 			<maxMeshCount>4</maxMeshCount>
-			<visualSizeRange>
-				<min>0.1</min>
-				<max>0.6</max>
-			</visualSizeRange>
+			<visualSizeRange>0.1~0.6</visualSizeRange>
 			<fertilityMin>0.1</fertilityMin>
 			<wildClusterWeight>5</wildClusterWeight>
 			<wildClusterRadius>7</wildClusterRadius>
@@ -238,10 +220,7 @@
 		</graphicData>
 		<plant>
 			<maxMeshCount>16</maxMeshCount>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>0.6</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~0.6</visualSizeRange>
 			<wildClusterWeight>7</wildClusterWeight>
 			<wildClusterRadius>3</wildClusterRadius>
 			<fertilityMin>0.48</fertilityMin>
@@ -252,7 +231,7 @@
 	</ThingDef>
 
 	<!--=========================== Grass ==============================-->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="SK_DeciduousWildPlantBase">
 		<defName>Plant_Grass</defName>
 		<label>grass</label>
@@ -267,7 +246,7 @@
 			<texPath>Things/Plant/PlantGrass</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
-		<hideAtSnowDepth>0.35</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.35</hideAtSnowOrSandDepth>
 		<fillPercent>0</fillPercent>
 		<plant>
 			<leaflessGraphicPath>Things/Plant/PlantGrass_Leafless</leaflessGraphicPath>
@@ -277,17 +256,14 @@
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>Hay</harvestedThingDef>
 			<harvestYield>3</harvestYield>
-			<visualSizeRange>
-				<min>0.15</min>
-				<max>0.5</max>
-			</visualSizeRange>
+			<visualSizeRange>0.15~0.5</visualSizeRange>
 			<growDays>2.3</growDays>
 			<topWindExposure>0.4</topWindExposure>
 			<fertilitySensitivity>0.30</fertilitySensitivity>
 			<wildOrder>1</wildOrder>
 		</plant>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_DeciduousWildPlantBase">
 		<defName>Plant_TallGrass</defName>
 		<label>tall grass</label>
@@ -303,7 +279,7 @@
 			<texPath>Things/Plant/PlantGrass</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<fillPercent>0</fillPercent>
 		<plant>
 			<leaflessGraphicPath>Things/Plant/PlantGrass_Leafless</leaflessGraphicPath>
@@ -313,10 +289,7 @@
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>Hay</harvestedThingDef>
 			<harvestYield>6</harvestYield>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>0.8</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~0.8</visualSizeRange>
 			<growDays>2.8</growDays>
 			<topWindExposure>0.4</topWindExposure>
 			<fertilitySensitivity>0.7</fertilitySensitivity>
@@ -326,8 +299,8 @@
 			<pollutedGraphicPath>Things/Plant/Grass_Polluted</pollutedGraphicPath>
 		</plant>
 	</ThingDef>
-
-
+-->
+<!-- DefOverwrite
 	<ThingDef ParentName="SK_DeciduousWildPlantBase">
 		<defName>Plant_Haygrass</defName>
 		<label>haygrass</label>
@@ -342,7 +315,7 @@
 			<texPath>Things/Plant/PlantGrass</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
-		<hideAtSnowDepth>0.6</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.6</hideAtSnowOrSandDepth>
 		<selectable>true</selectable>
 		<pathCost>5</pathCost>
 		<fillPercent>0</fillPercent>
@@ -364,17 +337,14 @@
 			<growDays>2.5</growDays>
 			<fertilityMin>0.08</fertilityMin>
 			<fertilitySensitivity>0.7</fertilitySensitivity>
-			<visualSizeRange>
-				<min>0.25</min>
-				<max>0.8</max>
-			</visualSizeRange>
+			<visualSizeRange>0.25~0.8</visualSizeRange>
 			<wildOrder>1</wildOrder>
 			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>
+-->
 
-
-	<ThingDef ParentName="SK_DeciduousPlantDef">
+	<ThingDef ParentName="SK_DeciduousCropPlant">
 		<defName>Plant_WildRose</defName>
 		<label>wild rose flowers</label>
 		<description>Wild rose flowers are from wild rose seeds and produce red flowers called wild roses. The plant is also known as the prickly rose, bristly rose and arctic rose. They are used in berb collections made from the tobacco rolling bench, Advanced medicine kits made from the medical table, and lastly, into luxury meals from the cook stove.</description>
@@ -404,16 +374,13 @@
 			<growDays>8</growDays>
 			<fertilityMin>1.2</fertilityMin>
 			<fertilitySensitivity>1.3</fertilitySensitivity>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>1.05</max>
-			</visualSizeRange>
+			<visualSizeRange>0.3~1.05</visualSizeRange>
 			<wildOrder>1</wildOrder>
 		</plant>
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_DeciduousPlantDef">
+	<ThingDef ParentName="SK_DeciduousCropPlant">
 		<defName>Plant_Hypericum</defName>
 		<label>hypericum plant</label>
 		<description>Hypericum plants produce a type of medicinal flower called hypericum. They are used in herb collections made from the tobacco rolling bench, advanced medicine kits made from the medical table, and lastly, into luxury meals from the cook stove.</description>
@@ -443,10 +410,7 @@
 			<growDays>6</growDays>
 			<fertilityMin>1.3</fertilityMin>
 			<fertilitySensitivity>1.25</fertilitySensitivity>
-			<visualSizeRange>
-				<min>0.2</min>
-				<max>0.8</max>
-			</visualSizeRange>
+			<visualSizeRange>0.2~0.8</visualSizeRange>
 			<wildClusterWeight>7</wildClusterWeight>
 			<wildClusterRadius>3</wildClusterRadius>
 			<wildOrder>1</wildOrder>
@@ -454,7 +418,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_DeciduousPlantDef">
+	<ThingDef ParentName="SK_DeciduousCropPlant">
 		<defName>Plant_Mint</defName>
 		<label>mint plant</label>
 		<description>Mint plants are herbs that grow aromatic leaves called mint leaves. They are used in herb collections made from the tobacco rolling bench, advanced medicine kits made from the medical table, and into luxury meals from the cook stove.</description>
@@ -485,16 +449,13 @@
 			<growDays>6.5</growDays>
 			<fertilityMin>1.35</fertilityMin>
 			<fertilitySensitivity>1.3</fertilitySensitivity>
-			<visualSizeRange>
-				<min>0.15</min>
-				<max>0.8</max>
-			</visualSizeRange>
+			<visualSizeRange>0.15~0.8</visualSizeRange>
 			<wildOrder>1</wildOrder>
 		</plant>
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_DeciduousPlantDef">
+	<ThingDef ParentName="SK_DeciduousCropPlant">
 		<defName>Plant_Onion</defName>
 		<label>onion plant</label>
 		<description>Onions plants produce vegetable bulbs called onions. They are considered to be a luxury crop and are used in Luxury Meals from the Cook Stove. A pungent chemical is released when onions are chopped that can make you cry!</description>
@@ -524,10 +485,7 @@
 			<growDays>4.5</growDays>
 			<fertilityMin>1.2</fertilityMin>
 			<fertilitySensitivity>1.35</fertilitySensitivity>
-			<visualSizeRange>
-				<min>0.1</min>
-				<max>0.70</max>
-			</visualSizeRange>
+			<visualSizeRange>0.1~0.70</visualSizeRange>
 			<wildOrder>1</wildOrder>
 		</plant>
 	</ThingDef>

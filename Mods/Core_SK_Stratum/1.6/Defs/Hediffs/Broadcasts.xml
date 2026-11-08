@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <HediffDef>
+    <defName>SolarWeb-Stratum-PA_Calming_Hediff</defName>
+    <label>calming audio</label>
+    <description>Soothing sounds playing from the local PA speaker.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears" />
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>SolarWeb-Stratum-PA_Inspirational_Hediff</defName>
+    <label>inspirational audio</label>
+    <description>Uplifting music playing from the local PA speaker, improving productivity.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears" />
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <WorkSpeedGlobal>0.01</WorkSpeedGlobal>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>SolarWeb-Stratum-PA_Educational_Hediff</defName>
+    <label>educational audio</label>
+    <description>Informative lectures playing from the local PA speaker, helping with learning.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears" />
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <GlobalLearningFactor>0.05</GlobalLearningFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>SolarWeb-Stratum-PA_Analytical_Hediff</defName>
+    <label>analytical feed</label>
+    <description>Complex data feeds playing from the local PA speaker, helping with research focus.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears" />
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <ResearchSpeedFactor>0.04</ResearchSpeedFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>SolarWeb-Stratum-PA_SleepAid_Hediff</defName>
+    <label>sleep aid</label>
+    <description>Subtle white noise playing from a nearby speaker, improving sleep efficiency.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears" />
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <RestFallRateFactor>-0.05</RestFallRateFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

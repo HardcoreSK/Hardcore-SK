@@ -43,6 +43,13 @@
 		</requiredWorkTags>
 		<techHediffsChance>0.8</techHediffsChance>
 		<techHediffsMaxAmount>7</techHediffsMaxAmount>
+		<xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.03</Hussar>
+			<Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie>
+			<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.03</Starjack>
+		  </xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 	<!-- Raven -->
 	<PawnKindDef ParentName="PredatorsBase">
@@ -85,11 +92,13 @@
 				</primaryMagazineCount>
 			</li>
 		</modExtensions>
+		<useFactionXenotypes>false</useFactionXenotypes>
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
-			<Baseline_Nova MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Nova>
+			<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.03</Hussar>
+			<Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie>
+			<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.03</Starjack>
 		  </xenotypeChances>
-		  
 		</xenotypeSet>
 	</PawnKindDef>
 	<!-- Lynx -->
@@ -268,7 +277,7 @@
 		</apparelMoney>
 		<apparelTags>
 			<li>PredatorsLight</li>
-			<li>MedievalShield</li>
+			<li>Shield_Medieval</li>
 			<li>BoneShield</li>
 		</apparelTags>
 		<weaponMoney>
@@ -331,6 +340,7 @@
 		</weaponMoney>
 		<weaponTags>
 			<li>RF1</li>
+			<li>RF2</li>
 		</weaponTags>
 		<disallowedTraits>
 			<li>Brawler</li>
@@ -390,6 +400,7 @@
 		</weaponTags>
 		<initialWillRange>2~4</initialWillRange>
 		<initialResistanceRange>13~19</initialResistanceRange>
+		<useFactionXenotypes>false</useFactionXenotypes>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<sidearms>
@@ -426,8 +437,8 @@
 			<max>2200</max>
 		</apparelMoney>
 		<apparelRequired>
-			<li>Apparello_Trypophobia</li>
-			<li>Apparello_Sandtrader</li>
+			<li>Apparel_TraderCoat</li>
+			<li>Hat_Caravaneer</li>
 		</apparelRequired>
 	</PawnKindDef>
 </Defs>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <Def Class="Rimatomics.RimatomicResearchDef">
+        <defName>RimatomicsPlusPlus_PPHC</defName>
+        <ResearchLabel>Hypercapacitors</ResearchLabel>
+        <ProjTypeLabel>Research Facility</ProjTypeLabel>
+        <ResearchDesc>The RA-P4 Pulsed Power Hypercapacitor stores an extremely large amount of energy in its compressed bank of ultracapacitors, which can be discharged in a single pulse by compatible Rimatomics energy weapons.</ResearchDesc>
+        <ResearchDescDisc>All of the required technologies for constructing hypercapacitors have been researched. PPHCs are now available for construction.</ResearchDescDisc>
+        <price>10000</price>
+        <Screenshot>RimatomicsPlusPlus/Screenshots/PPHC</Screenshot>
+        <previewImageURL>Rimatomics/UI/voltage</previewImageURL>
+        <stats>
+            <li>60,000 Wd Capacity</li>
+        </stats>
+        <Steps>
+            <li>RimatomicsPlusPlus_PPHC1</li>
+            <li>RimatomicsPlusPlus_PPHC2</li>
+        </Steps>
+        <prerequisites>
+            <li>EnergyWeapons</li>
+        </prerequisites>
+    </Def>
+
+    <Def Class="Rimatomics.ResearchStepDef">
+        <defName>RimatomicsPlusPlus_PPHC1</defName>
+        <PointCost>1800</PointCost>
+        <label>Research energy storage</label>
+        <description>A skilled researcher needs to study how energy can be stored more efficiently.</description>
+        <WorkType>Research</WorkType>
+        <SkillLevel>14</SkillLevel>
+    </Def>
+
+    <Def Class="Rimatomics.ResearchStepDef">
+        <defName>RimatomicsPlusPlus_PPHC2</defName>
+        <PointCost>5000</PointCost>
+        <label>Experiment with energy storage mediums</label>
+        <description>Researchers must perform practical experiments using the weapons research bench. Rimatomics hypercapacitors are not safe unless extensive testing is performed, experimentation steps can be dangerous.</description>
+        <WorkType>Research</WorkType>
+        <SkillLevel>14</SkillLevel>
+        <requiredResearchFacilities>
+            <li>WeaponsBench</li>
+        </requiredResearchFacilities>
+        <FacilityFailures>
+            <li>Failure_ArcDischarge</li>
+            <li>Failure_BlindingFlash</li>
+            <li>Failure_Overvoltage</li>
+        </FacilityFailures>
+        <Unlocks>
+            <li>RimatomicsPlusPlus_PPHC</li>
+        </Unlocks>
+    </Def>
+</Defs>

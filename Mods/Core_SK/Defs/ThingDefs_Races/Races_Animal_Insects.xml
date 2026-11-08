@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ========================== Insects ============================ -->
-	<ThingDef Abstract="True" ParentName="SK_AnimalThingBase" Name="SK_InsectThingBase">
+	<ThingDef Abstract="True" ParentName="AnimalThingBase" Name="SK_InsectThingBase">
 		<devNote>insect</devNote>
 		<statBases>
 			<Flammability>1.0</Flammability>
@@ -40,6 +40,7 @@
 		</comps>
 	</ThingDef>
 
+	<!-- DefOverwrite
 	<ThingDef ParentName="SK_InsectThingBase">
 		<defName>Megascarab</defName>
 		<label>Megascarab</label>
@@ -55,6 +56,7 @@
 			<ImmunityGainSpeed>2.5</ImmunityGainSpeed>
 			<MeleeDodgeChance>0</MeleeDodgeChance>
 			<MeleeCritChance>0.02</MeleeCritChance>
+			<Wildness>0.82</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -98,7 +100,6 @@
 			<baseHungerRate>0.4</baseHungerRate>
 			<baseHealthScale>0.75</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<wildness>0.82</wildness>
 			<trainability>Intermediate</trainability>
 			<lifeExpectancy>10</lifeExpectancy>
 			<lifeStageAges>
@@ -111,7 +112,7 @@
 					<minAge>0.03</minAge>
 				</li>
 				<li>
-					<def>EusocialInsectAdult</def>
+					<def>EusocialInsectAdultShearable</def>
 					<minAge>0.4</minAge>
 					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
 					<soundDeath>Pawn_Megascarab_Death</soundDeath>
@@ -140,8 +141,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Megascarab</defName>
 		<label>Megascarab</label>
 		<race>Megascarab</race>
@@ -192,23 +194,19 @@
 		</lifeStages>
 		<modExtensions>
 			<li Class="SK.PawnGraphicExtension">
-				<colors>				
+				<colors>
 					<li>(165,155,140)</li>
-					<!-- light beige -->
 					<li>(70,60,50)</li>
-					<!-- light brown -->
 					<li>(85,85,85)</li>
-					<!-- light grey -->
 					<li>(55,55,55)</li>
-					<!-- medium grey -->
 					<li>(35,35,35)</li>
-					<!-- dark grey -->
 				</colors>
 				<shaderType>Cutout</shaderType>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
+ -->
+	<!-- DefOverwrite
 	<ThingDef ParentName="SK_InsectThingBase">
 		<defName>Spelopede</defName>
 		<label>Spelopede</label>
@@ -223,6 +221,7 @@
 			<ArmorRating_Sharp>1.5</ArmorRating_Sharp>
 			<MeleeDodgeChance>0</MeleeDodgeChance>
 			<MeleeCritChance>0.12</MeleeCritChance>
+			<Wildness>0.82</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -267,7 +266,6 @@
 			<baseHealthScale>2.25</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<gestationPeriodDays>12</gestationPeriodDays>
-			<wildness>0.82</wildness>
 			<trainability>Intermediate</trainability>
 			<lifeExpectancy>6</lifeExpectancy>
 			<lifeStageAges>
@@ -280,7 +278,7 @@
 					<minAge>0.03</minAge>
 				</li>
 				<li>
-					<def>EusocialInsectAdult</def>
+					<def>EusocialInsectAdultShearable</def>
 					<minAge>0.2</minAge>
 					<soundWounded>Pawn_Spelopede_Pain</soundWounded>
 					<soundDeath>Pawn_Spelopede_Death</soundDeath>
@@ -309,8 +307,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Spelopede</defName>
 		<label>spelopede</label>
 		<race>Spelopede</race>
@@ -358,23 +357,19 @@
 		</lifeStages>
 		<modExtensions>
 			<li Class="SK.PawnGraphicExtension">
-				<colors>				
+				<colors>
 					<li>(165,155,140)</li>
-					<!-- light beige -->
 					<li>(70,60,50)</li>
-					<!-- light brown -->
 					<li>(85,85,85)</li>
-					<!-- light grey -->
 					<li>(55,55,55)</li>
-					<!-- medium grey -->
 					<li>(35,35,35)</li>
-					<!-- dark grey -->
 				</colors>
 				<shaderType>Cutout</shaderType>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
+ -->
+	<!-- DefOverwrite
 	<ThingDef ParentName="SK_InsectThingBase">
 		<defName>Megaspider</defName>
 		<label>megaspider</label>
@@ -389,6 +384,7 @@
 			<ArmorRating_Sharp>1.8</ArmorRating_Sharp>
 			<MeleeDodgeChance>0</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
+			<Wildness>0.9</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -443,7 +439,6 @@
 			<baseHealthScale>3.4</baseHealthScale>
 			<gestationPeriodDays>7</gestationPeriodDays>
 			<meatLabel>insect meat</meatLabel>
-			<wildness>0.9</wildness>
 			<lifeExpectancy>6</lifeExpectancy>
 			<trainability>Intermediate</trainability>
 			<lifeStageAges>
@@ -456,7 +451,7 @@
 					<minAge>0.03</minAge>
 				</li>
 				<li>
-					<def>EusocialInsectAdult</def>
+					<def>EusocialInsectAdultShearable</def>
 					<minAge>0.2</minAge>
 					<soundWounded>Pawn_BigInsect_Pain</soundWounded>
 					<soundDeath>Pawn_BigInsect_Death</soundDeath>
@@ -485,8 +480,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Megaspider</defName>
 		<label>megaspider</label>
 		<race>Megaspider</race>
@@ -534,23 +530,18 @@
 		</lifeStages>
 		<modExtensions>
 			<li Class="SK.PawnGraphicExtension">
-				<colors>				
+				<colors>
 					<li>(165,155,140)</li>
-					<!-- light beige -->
 					<li>(70,60,50)</li>
-					<!-- light brown -->
 					<li>(85,85,85)</li>
-					<!-- light grey -->
 					<li>(55,55,55)</li>
-					<!-- medium grey -->
 					<li>(35,35,35)</li>
-					<!-- dark grey -->
 				</colors>
 				<shaderType>Cutout</shaderType>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
+ -->
 
 	<ThingDef ParentName="SK_InsectThingBase">
 		<defName>Scorpion</defName>
@@ -569,6 +560,7 @@
 			<MeatAmount>75</MeatAmount>
 			<MeleeDodgeChance>0</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
+			<Wildness>0.9</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -617,7 +609,6 @@
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<wildness>0.9</wildness>
 			<trainability>Intermediate</trainability>
 			<gestationPeriodDays>14</gestationPeriodDays>
 			<manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
@@ -633,7 +624,7 @@
 					<minAge>0.03</minAge>
 				</li>
 				<li>
-					<def>EusocialInsectAdult</def>
+					<def>EusocialInsectAdultShearable</def>
 					<minAge>0.4</minAge>
 					<soundWounded>Pawn_BigInsect_Pain</soundWounded>
 					<soundDeath>Pawn_BigInsect_Death</soundDeath>
@@ -660,7 +651,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Scorpion</defName>
 		<label>Scorpion</label>
 		<race>Scorpion</race>

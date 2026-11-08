@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- Player Bases -->
+	<!-- Player Bases - DefOverwrite
 	<PawnKindDef Abstract="True" Name="SK_BasePlayerPawnKind">
 		<race>Human</race>
 		<combatPower>80</combatPower>
@@ -19,8 +19,8 @@
 			<li>ImplantEmpireCommon</li>
 		</techHediffsTags>
 	</PawnKindDef>
-
-	<!-- Colonist -->
+-->
+	<!-- Colonist 
 	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
 		<defName>Colonist</defName>
 		<label>colonist</label>
@@ -35,8 +35,8 @@
 		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
 		<initialResistanceRange>13~21</initialResistanceRange>
 	</PawnKindDef>
-
-	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
+-->
+	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>DovaColonist</defName>
 		<label>colonist</label>
 		<race>Alien_Dova</race>
@@ -55,15 +55,18 @@
 			<li>PainCauser</li>
 		</techHediffsDisallowTags>
 		<initialResistanceRange>13~21</initialResistanceRange>
+		<useFactionXenotypes>false</useFactionXenotypes>
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
-			<Baseline_Dova MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Dova>
+			<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.03</Hussar>
+			<Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie>
+			<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.03</Starjack>
 		  </xenotypeChances>
 		</xenotypeSet>
 	</PawnKindDef>
 
 	<!-- Exiled -->
-	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
+	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>ColonistExiled</defName>
 		<label>colonist</label>
 		<defaultFactionType>PlayerExiled</defaultFactionType>
@@ -91,7 +94,7 @@
 	</PawnKindDef>
 
 	<!-- Nova -->
-	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
+	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>NovaColonist</defName>
 		<label>colonist</label>
 		<race>Alien_Nova</race>
@@ -111,14 +114,17 @@
 			<li>PainCauser</li>
 		</techHediffsDisallowTags>
 		<initialResistanceRange>13~21</initialResistanceRange>
+		<useFactionXenotypes>false</useFactionXenotypes>
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
-			<Baseline_Nova MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Nova>
+			<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.03</Hussar>
+			<Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie>
+			<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.03</Starjack>
 		  </xenotypeChances>
 		</xenotypeSet>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
+	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>Nova</defName>
 		<label>colonist</label>
 		<race>Alien_Nova</race>
@@ -168,82 +174,17 @@
 			<li>PainCauser</li>
 		</techHediffsDisallowTags>
 		<initialResistanceRange>13~21</initialResistanceRange>
+		<useFactionXenotypes>false</useFactionXenotypes>
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
-			<Baseline_Nova MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Nova>
+			<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.03</Hussar>
+			<Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie>
+			<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.03</Starjack>
 		  </xenotypeChances>
 		</xenotypeSet>
 	</PawnKindDef>
 
-	<!-- Survivor -->
-	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
-		<defName>Survivor</defName>
-		<label>colonist</label>
-		<defaultFactionType>PlayerSurvivor</defaultFactionType>
-		<chemicalAddictionChance>0.06</chemicalAddictionChance>
-		<apparelMoney>
-			<min>3000</min>
-			<max>5000</max>
-		</apparelMoney>
-		<apparelTags>
-			<li>BrotherhoodLight</li>
-		</apparelTags>
-		<weaponMoney>
-			<min>820</min>
-			<max>1200</max>
-		</weaponMoney>
-		<weaponTags>
-			<li>SMG2</li>
-		</weaponTags>
-		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-		<forceNormalGearQuality>true</forceNormalGearQuality>
-		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-		<techHediffsDisallowTags>
-			<li>PainCauser</li>
-		</techHediffsDisallowTags>
-		<initialResistanceRange>13~21</initialResistanceRange>
-		<modExtensions>
-			<li Class="CombatExtended.LoadoutPropertiesExtension">
-				<primaryMagazineCount>
-					<min>14</min>
-					<max>15</max>
-				</primaryMagazineCount>
-				<sidearms>
-					<li>
-						<generateChance>0.7</generateChance>
-						<sidearmMoney>
-							<min>250</min>
-							<max>350</max>
-						</sidearmMoney>
-						<weaponTags>
-							<li>GrenadeTierTwo</li>
-						</weaponTags>
-						<magazineCount>
-							<min>1</min>
-							<max>3</max>
-						</magazineCount>
-					</li>
-					<li>
-						<generateChance>0.6</generateChance>
-						<sidearmMoney>
-							<min>50</min>
-							<max>150</max>
-						</sidearmMoney>
-						<weaponTags>
-							<li>GrenadeFlashbang</li>
-						</weaponTags>
-						<magazineCount>
-							<min>1</min>
-							<max>2</max>
-						</magazineCount>
-					</li>
-				</sidearms>
-			</li>
-		</modExtensions>
-	</PawnKindDef>
-
-	<!-- Tribal -->
+	<!-- Tribal - DefOverwrite
 	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
 		<defName>Tribesperson</defName>
 		<label>member</label>
@@ -266,9 +207,9 @@
 		</techHediffsDisallowTags>
 		<initialResistanceRange>9~15</initialResistanceRange>
 	</PawnKindDef>
-
+-->
 	<!-- Norbal -->
-	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
+	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>Norbalperson</defName>
 		<label>member</label>
 		<race>Norbal</race>
@@ -279,7 +220,7 @@
 			<max>1380</max>
 		</apparelMoney>
 		<apparelRequired>
-			<li>Norballo_Shirt</li>
+			<li>Apparel_MundaneShirt</li>
 		</apparelRequired>
 		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
 		<apparelTags>
@@ -305,9 +246,12 @@
 		<techHediffsDisallowTags>
 			<li>PainCauser</li>
 		</techHediffsDisallowTags>
+		<useFactionXenotypes>false</useFactionXenotypes>
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
-			<Baseline_Norbal MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Norbal>
+			<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.03</Hussar>
+			<Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie>
+			<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.03</Starjack>
 		  </xenotypeChances>
 		</xenotypeSet>
 		<initialResistanceRange>9~18</initialResistanceRange>
@@ -333,6 +277,14 @@
 		</techHediffsDisallowTags>
 		<initialWillRange>0~0</initialWillRange>
 		<initialResistanceRange>9~18</initialResistanceRange>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.03</Hussar>
+			<Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie>
+			<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.03</Starjack>
+		  </xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="SK_BasePlayerPawnKindOrassan">
@@ -351,11 +303,6 @@
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
 		<initialResistanceRange>9~18</initialResistanceRange>
-		<xenotypeSet Inherit="False">
-		  <xenotypeChances>
-			<Baseline_Orassan MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Orassan>
-		  </xenotypeChances>
-		</xenotypeSet>
 	</PawnKindDef>	
 
 	<!-- Orassan Colonist -->
@@ -420,15 +367,10 @@
 				</sidearms>
 			</li>
 		</modExtensions>
-		<xenotypeSet Inherit="False">
-		  <xenotypeChances>
-			<Baseline_Orassan MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Orassan>
-		  </xenotypeChances>
-		</xenotypeSet>
 	</PawnKindDef>
 
 	<!-- Nuclear Survivor -->
-	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
+	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>NuclearSurvivor</defName>
 		<label>colonist</label>
 		<defaultFactionType>PlayerColony</defaultFactionType>
@@ -450,8 +392,8 @@
 			<li>RF3</li>
 		</weaponTags>
 		<apparelRequired>
-			<li>Apparel_HSH</li>
-			<li>Apparel_HS</li>
+			<li>Apparel_HazardHelmet</li>
+			<li>Apparel_HazardVest</li>
 		</apparelRequired>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
@@ -496,6 +438,265 @@
 						</magazineCount>
 					</li>
 				</sidearms>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+    
+	<!-- Deserter squad -->
+	<PawnKindDef Abstract="True" Name="DeserterBase" ParentName="BasePlayerPawnKind">
+		<race>Human</race>
+		<defaultFactionDef>PlayerColony</defaultFactionDef>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<fixedAdultBackstories>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Deserter65</li>
+		</fixedAdultBackstories>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>ImperialFighter</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>DeserterSquad</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<initialResistanceRange>15~40</initialResistanceRange>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <apparelIgnorePollution>true</apparelIgnorePollution>
+		<forceWeaponQuality>Excellent</forceWeaponQuality>
+		<minApparelQuality>Excellent</minApparelQuality>
+		<maxApparelQuality>Excellent</maxApparelQuality>
+		<humanPregnancyChance>0</humanPregnancyChance>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<allowOldAgeInjuries>false</allowOldAgeInjuries>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>3000~9000</techHediffsMoney>
+		<minGenerationAge>27</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		<techHediffsTags>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<apparelMoney>
+			<min>999999</min>
+			<max>999999</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>999999</min>
+			<max>999999</max>
+		</weaponMoney>
+        <royalTitleChance>0</royalTitleChance>
+        <titleRequired>Freeholder</titleRequired>
+		<forcedTraits>
+			<li>
+				<def>Hardened</def>
+			</li>
+		</forcedTraits>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DeserterBase">
+		<defName>Player_DeserterMedic</defName>
+		<label>medic</label>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Caring</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<weaponTags>
+			<li>SMG3</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Medicine</skill>
+				<range>10~15</range>
+			</li>
+			<li>
+				<skill>Intellectual</skill>
+				<range>10~15</range>
+			</li>
+			<li>
+				<skill>Shooting</skill>
+				<range>10~12</range>
+			</li>
+		</skills>
+		<apparelRequired>
+			<li>Helmet_SyndicateHood</li>
+			<li>Armor_SyndicateCoat</li>
+			<li>Bottoms_Combat</li>
+			<li>Boots_Speed</li>
+			<li>Gloves_Injector</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>OrionScout</li>
+			<li>SyndicateScout</li>
+		</apparelTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>4</min>
+					<max>4</max>
+				</primaryMagazineCount>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>999999</min>
+						<max>999999</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>PT2</li>
+					</weaponTags>
+					<magazineCount>
+						<min>2</min>
+						<max>2</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DeserterBase">
+		<defName>Player_DeserterSniper</defName>
+		<label>sniper</label>
+		<weaponTags>
+			<li>TierThreeSniper</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>16~19</range>
+			</li>
+		</skills>
+		<apparelRequired>
+			<li>Helmet_InteractorHood</li>
+			<li>Armor_InteractorCloak</li>
+			<li>Bottoms_Combat</li>
+			<li>Boots_Speed</li>
+			<li>Gloves_Sniper</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>OrionScout</li>
+			<li>SyndicateScout</li>
+		</apparelTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>8</min>
+					<max>8</max>
+				</primaryMagazineCount>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>999999</min>
+						<max>999999</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>PT2</li>
+					</weaponTags>
+					<magazineCount>
+						<min>2</min>
+						<max>2</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DeserterBase">
+		<defName>Player_DeserterRifleman</defName>
+		<label>rifleman</label>
+		<weaponTags>
+			<li>TierThreeRifle</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>16~19</range>
+			</li>
+		</skills>
+		<apparelRequired>
+			<li>Helmet_ShuttlePilot</li>
+			<li>Armor_Commando</li>
+			<li>Bottoms_Combat</li>
+			<li>Boots_Combat</li>
+			<li>Gloves_Combat</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>OrionMedium</li>
+			<li>SyndicateMedium</li>
+		</apparelTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>5</min>
+					<max>5</max>
+				</primaryMagazineCount>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>999999</min>
+						<max>999999</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>PT2</li>
+					</weaponTags>
+					<magazineCount>
+						<min>2</min>
+						<max>2</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DeserterBase">
+		<defName>Player_DeserterAssault</defName>
+		<label>assault trooper</label>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Cooking</li>
+		</requiredWorkTags>
+		<weaponTags>
+			<li>HitechPoweredMelee</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>16~19</range>
+			</li>
+			<li>
+				<skill>Cooking</skill>
+				<range>9~11</range>
+			</li>
+		</skills>
+		<apparelRequired>
+			<li>Helmet_CQC</li>
+			<li>Armor_CQC</li>
+			<li>Bottoms_Combat</li>
+			<li>Boots_Speed</li>
+			<li>Gloves_Melee</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>OrionMedium</li>
+			<li>SyndicateMedium</li>
+		</apparelTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>999999</min>
+						<max>999999</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>PT2</li>
+					</weaponTags>
+					<magazineCount>
+						<min>3</min>
+						<max>3</max>
+					</magazineCount>
+				</forcedSidearm>
 			</li>
 		</modExtensions>
 	</PawnKindDef>

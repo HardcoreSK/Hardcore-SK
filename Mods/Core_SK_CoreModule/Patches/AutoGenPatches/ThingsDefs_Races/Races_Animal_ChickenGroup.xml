@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Chicken"]</xpath>
+    <value>
+      <statBases Merge="true">
+        <Mass>3</Mass>
+        <MarketValue>110</MarketValue>
+        <MeleeDodgeChance>0.15</MeleeDodgeChance>
+        <MeleeCritChance>0</MeleeCritChance>
+        <FilthRate>2</FilthRate>
+      </statBases>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>claws</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>2</power>
+          <cooldownTime>1.5</cooldownTime>
+          <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+          <armorPenetrationSharp>1</armorPenetrationSharp>
+          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>beak</label>
+          <capacities>
+            <li>Bite</li>
+          </capacities>
+          <power>3</power>
+          <cooldownTime>1.6</cooldownTime>
+          <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+          <armorPenetrationBlunt>1</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>1</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+          <chanceFactor>0.2</chanceFactor>
+          <armorPenetrationBlunt>1</armorPenetrationBlunt>
+        </li>
+      </tools>
+      <race Merge="true">
+        <baseBodySize>0.19</baseBodySize>
+        <useMeatFrom>Elephant</useMeatFrom>
+        <leatherDef>Leather_Bird</leatherDef>
+        <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+        <manhunterOnDamageChance>0</manhunterOnDamageChance>
+        <litterSizeCurve>
+          <points>
+            <li>(0.99, 0)</li>
+            <li>(1, 1)</li>
+            <li>(1.01, 0)</li>
+          </points>
+        </litterSizeCurve>
+      </race>
+      <modExtensions>
+        <li Class="CombatExtended.RacePropertiesExtensionCE">
+          <bodyShape>Birdlike</bodyShape>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/PawnKindDef[defName="Chicken"]</xpath>
+    <value>
+		<flyingAnimationDrawSize>1.8</flyingAnimationDrawSize>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Duck"]</xpath>
+    <value>
+      <statBases Merge="true">
+        <MarketValue>90</MarketValue>
+        <MeleeDodgeChance>0.15</MeleeDodgeChance>
+        <MeleeCritChance>0</MeleeCritChance>
+        <MeatAmount>160</MeatAmount>
+        <Mass>4.4</Mass>
+        <FilthRate>2.5</FilthRate>
+      </statBases>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>claws</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>2</power>
+          <cooldownTime>1.5</cooldownTime>
+          <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+          <armorPenetrationSharp>1</armorPenetrationSharp>
+          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>beak</label>
+          <capacities>
+            <li>Bite</li>
+          </capacities>
+          <power>3</power>
+          <cooldownTime>1.6</cooldownTime>
+          <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+          <armorPenetrationBlunt>1</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>1</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+          <chanceFactor>0.2</chanceFactor>
+          <armorPenetrationBlunt>1</armorPenetrationBlunt>
+        </li>
+      </tools>
+      <race Merge="true">
+        <baseHungerRate>0.24</baseHungerRate>
+        <baseBodySize>0.18</baseBodySize>
+        <baseHealthScale>0.37</baseHealthScale>
+        <useMeatFrom>Elephant</useMeatFrom>
+        <leatherDef>Leather_Bird</leatherDef>
+        <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+        <manhunterOnDamageChance>0</manhunterOnDamageChance>
+      </race>
+      <modExtensions>
+        <li Class="CombatExtended.RacePropertiesExtensionCE">
+          <bodyShape>Birdlike</bodyShape>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Turkey"]</xpath>
+    <value>
+      <statBases Merge="true">
+        <MoveSpeed>3.8</MoveSpeed>
+        <Mass>8.3</Mass>
+        <MarketValue>250</MarketValue>
+        <LeatherAmount>0</LeatherAmount>
+        <MeleeDodgeChance>0.2</MeleeDodgeChance>
+        <MeleeCritChance>0.03</MeleeCritChance>
+        <FilthRate>3</FilthRate>
+      </statBases>
+      <race Merge="true">
+        <baseHungerRate>0.3</baseHungerRate>
+        <baseHealthScale>0.7</baseHealthScale>
+        <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+        <manhunterOnDamageChance>0</manhunterOnDamageChance>
+        <useMeatFrom>Muffalo</useMeatFrom>
+      </race>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>claws</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>4</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+          <armorPenetrationSharp>1.25</armorPenetrationSharp>
+          <armorPenetrationBlunt>0.7</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <capacities>
+            <li>Bite</li>
+          </capacities>
+          <power>3</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+          <armorPenetrationSharp>1.5</armorPenetrationSharp>
+          <armorPenetrationBlunt>1</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>3</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+          <chanceFactor>0.2</chanceFactor>
+          <armorPenetrationBlunt>1.25</armorPenetrationBlunt>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Goose"]</xpath>
+    <value>
+      <statBases Merge="true">
+        <MarketValue>120</MarketValue>
+        <MeleeDodgeChance>0.15</MeleeDodgeChance>
+        <MeleeCritChance>0</MeleeCritChance>
+        <Mass>6.25</Mass>
+        <MeatAmount>120</MeatAmount>
+        <FilthRate>4</FilthRate>
+      </statBases>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>claws</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>4</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+          <armorPenetrationSharp>1</armorPenetrationSharp>
+          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>beak</label>
+          <capacities>
+            <li>Bite</li>
+          </capacities>
+          <power>7</power>
+          <cooldownTime>1.8</cooldownTime>
+          <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+          <armorPenetrationBlunt>1</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>4</power>
+          <cooldownTime>1.85</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+          <chanceFactor>0.2</chanceFactor>
+          <armorPenetrationBlunt>1</armorPenetrationBlunt>
+        </li>
+      </tools>
+      <race Merge="true">
+        <baseHungerRate>0.32</baseHungerRate>
+        <baseBodySize>0.40</baseBodySize>
+        <baseHealthScale>0.55</baseHealthScale>
+        <useMeatFrom>Elephant</useMeatFrom>
+        <trainability>Advanced</trainability>
+        <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
+        <manhunterOnDamageChance>0.25</manhunterOnDamageChance>
+        <trainableTags>
+          <li>Basic</li>
+          <li>Work</li>
+          <li>Release</li>
+        </trainableTags>
+        <untrainableTags>
+          <li>Help</li>
+          <li>Combat</li>
+        </untrainableTags>
+      </race>
+      <modExtensions>
+        <li Class="CombatExtended.RacePropertiesExtensionCE">
+          <bodyShape>Birdlike</bodyShape>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+
+</Patch>

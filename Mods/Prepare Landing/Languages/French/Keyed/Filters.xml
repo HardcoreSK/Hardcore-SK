@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
     <!-- Use 4 spaces indentation, NOT tabs -->
     <!-- Overall prefix for the mod is "PL" for PrepareLanding; MW for Main Window -->
@@ -7,27 +7,49 @@
     <!-- dev: Tilefilters.cs -->
 
     <!-- Note to translators: check the Rimworld's core translation; most of those terms are already translated, but without an ending plural 's' -->
-    <PLTILFILT_Biomes>Biomes</PLTILFILT_Biomes>
-    <PLTILFILT_Terrains>Terrains</PLTILFILT_Terrains>
-    <PLTILFILT_Roads>Routes</PLTILFILT_Roads>
-    <PLTILFILT_Stones>Pierres</PLTILFILT_Stones>
-    <PLTILFILT_CantSelectMoreThan3Stones>Impossible de sélectionner plus de 3 types de pierres (sélection :</PLTILFILT_CantSelectMoreThan3Stones> <!-- followed by a number -->
-    <PLTILFILT_AtLeast2StoneTypesOnOrPartial>Au moins deux type de pierres doivent être dans l'état ON ou Partiel (sélection :</PLTILFILT_AtLeast2StoneTypesOnOrPartial> <!-- followed by a number -->
-    <PLTILFILT_Rivers>Rivières</PLTILFILT_Rivers>
-    <PLTILFILT_CurrentMovementTimes>Temps de Mouvement Actuel</PLTILFILT_CurrentMovementTimes>
-    <PLTILFILT_WinterMovementTimes>Temps de Mouvement Hivernal</PLTILFILT_WinterMovementTimes>
-    <PLTILFILT_SummerMovementTimes>Temps de Mouvement Estival</PLTILFILT_SummerMovementTimes>
-    <PLTILFILT_CoastalTiles>Tuiles Côtières</PLTILFILT_CoastalTiles>
-    <PLTILFILT_CoastalLakeTiles>Tuiles Côtière Lacustre</PLTILFILT_CoastalLakeTiles>
-    <PLTILFILT_Elevations>Élévations</PLTILFILT_Elevations>
-    <PLTILFILT_TimeZones>Fuseaux horaires</PLTILFILT_TimeZones>
-    <PLTILFILT_AverageTemperatures>Températures Moyennes</PLTILFILT_AverageTemperatures>
-    <PLTILFILT_WinterTemperatures>Températures Hivernales</PLTILFILT_WinterTemperatures>
-    <PLTILFILT_SummerTemperatures>Températures Estivales</PLTILFILT_SummerTemperatures>
-    <PLTILFILT_GrowingPeriods>Périodes de croissance</PLTILFILT_GrowingPeriods>
-    <PLTILFILT_RainFalls>Pluviométrie</PLTILFILT_RainFalls>
-    <PLTILFILT_RequestingMoreTilesThanAvailable>Vous demandez plus de tuiles qu'il n'y en a de disponible (max :</PLTILFILT_RequestingMoreTilesThanAvailable>  <!-- followed by a number -->
-    <PLTILFILT_WorldFeatures>Caractéristiques du Monde</PLTILFILT_WorldFeatures> <!-- these are the named locations on the world map -->
-    <PLTILFILT_CoastalRotation>Rotation Côtière</PLTILFILT_CoastalRotation>
+    <!-- EN: Biomes -->
+  <PLTILFILT_Biomes>Biomes</PLTILFILT_Biomes>
+    <!-- EN: Terrains -->
+  <PLTILFILT_Terrains>Terrains</PLTILFILT_Terrains>
+    <!-- EN: Roads -->
+  <PLTILFILT_Roads>Routes</PLTILFILT_Roads>
+    <!-- EN: Stones -->
+  <PLTILFILT_Stones>Pierres</PLTILFILT_Stones>
+    <!-- EN: Cannot select more than 3 stone types (selected: -->
+  <PLTILFILT_CantSelectMoreThan3Stones>Impossible de sélectionner plus de 3 types de pierres (sélection :</PLTILFILT_CantSelectMoreThan3Stones> <!-- followed by a number -->
+    <!-- EN: At least 2 types of stone types must be in ON or PARTIAL state (selected: -->
+  <PLTILFILT_AtLeast2StoneTypesOnOrPartial>Au moins deux types de pierres doivent être dans l'état ACTIF ou PARTIEL (sélection :</PLTILFILT_AtLeast2StoneTypesOnOrPartial> <!-- followed by a number -->
+    <!-- EN: Rivers -->
+  <PLTILFILT_Rivers>Rivières</PLTILFILT_Rivers>
+    <!-- EN: Current Movement Times -->
+  <PLTILFILT_CurrentMovementTimes>Temps de Mouvement Actuel</PLTILFILT_CurrentMovementTimes>
+    <!-- EN: Winter Movement Times -->
+  <PLTILFILT_WinterMovementTimes>Temps de Mouvement Hivernal</PLTILFILT_WinterMovementTimes>
+    <!-- EN: Summer Movement Times -->
+  <PLTILFILT_SummerMovementTimes>Temps de Mouvement Estival</PLTILFILT_SummerMovementTimes>
+    <!-- EN: Coastal Tiles -->
+  <PLTILFILT_CoastalTiles>Tuiles Côtières</PLTILFILT_CoastalTiles>
+    <!-- EN: Coastal Lake Tiles -->
+  <PLTILFILT_CoastalLakeTiles>Tuiles Lacustres Côtières</PLTILFILT_CoastalLakeTiles>
+    <!-- EN: Elevations -->
+  <PLTILFILT_Elevations>Élévations</PLTILFILT_Elevations>
+    <!-- EN: Time Zones -->
+  <PLTILFILT_TimeZones>Fuseaux horaires</PLTILFILT_TimeZones>
+    <!-- EN: Average Temperatures -->
+  <PLTILFILT_AverageTemperatures>Températures Moyennes</PLTILFILT_AverageTemperatures>
+    <!-- EN: Winter Temperatures -->
+  <PLTILFILT_WinterTemperatures>Températures Hivernales</PLTILFILT_WinterTemperatures>
+    <!-- EN: Summer Temperatures -->
+  <PLTILFILT_SummerTemperatures>Températures Estivales</PLTILFILT_SummerTemperatures>
+    <!-- EN: Growing Periods -->
+  <PLTILFILT_GrowingPeriods>Périodes de croissance</PLTILFILT_GrowingPeriods>
+    <!-- EN: RainFalls -->
+  <PLTILFILT_RainFalls>Pluviométrie</PLTILFILT_RainFalls>
+    <!-- EN: You are requesting more tiles than the number of available tiles (max: -->
+  <PLTILFILT_RequestingMoreTilesThanAvailable>Vous demandez plus de tuiles qu’il n’y en a de disponibles (max :</PLTILFILT_RequestingMoreTilesThanAvailable>  <!-- followed by a number -->
+    <!-- EN: World Features -->
+  <PLTILFILT_WorldFeatures>Caractéristiques du Monde</PLTILFILT_WorldFeatures> <!-- these are the named locations on the world map -->
+    <!-- EN: Coastal Rotation -->
+  <PLTILFILT_CoastalRotation>Rotation Côtière</PLTILFILT_CoastalRotation>
 
 </LanguageData>

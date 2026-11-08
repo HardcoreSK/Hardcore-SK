@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Name="SK_AutoloaderBase" ParentName="BuildingBase" Abstract="True">
+		<description>External device designed for both automatic and manned turrets. Equipped with special «circled» ammo belt and autoload mechanism.</description>
+		<!-- ===Thing class, ticker type and drawer type are mandatory=== -->
+		<thingClass>CombatExtended.Building_AutoLoaderCE</thingClass>
+		<tickerType>Normal</tickerType>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<!-- ===This Ammo user is the autoloader's ammo capacity and reload time=== -->
+		<comps>
+			<!--<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>400</magazineSize>
+				<reloadTime>7.8</reloadTime>
+				<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+			</li>-->
+			<!-- ===If CompMannable and CompPowerTrader are present, they'll be taken into account too, same goes for CompInitiatable and CompCanBeDormant=== -->
+			<!-- <li Class="CompProperties_Mannable">
+				<manWorkType>Hauling</manWorkType>
+			</li> -->
+			<li Class="SK.CompProperties_IdlePower">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+		</comps>
+		<!-- ===Different graphics can be applied at empty, half full (above 0) and full (above 75%) if this mod extension exists=== -->
+		<modExtensions>
+			<li Class="CombatExtended.ModExtension_AutoLoaderGraphics">
+				<fullGraphic>
+					<texPath>Things/Building/Misc/Autoloader</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(3,3)</drawSize>
+					<color>(0,0,0)</color>
+					<damageData>
+						<cornerTL>Damage/Corner</cornerTL>
+						<cornerTR>Damage/Corner</cornerTR>
+						<cornerBL>Damage/Corner</cornerBL>
+						<cornerBR>Damage/Corner</cornerBR>
+					</damageData>
+				</fullGraphic>
+				<emptyGraphic>
+					<texPath>Things/Building/Misc/Autoloader</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(3,3)</drawSize>
+					<color>(0,0,0)</color>
+					<damageData>
+						<cornerTL>Damage/Corner</cornerTL>
+						<cornerTR>Damage/Corner</cornerTR>
+						<cornerBL>Damage/Corner</cornerBL>
+						<cornerBR>Damage/Corner</cornerBR>
+					</damageData>
+				</emptyGraphic>
+				<allowedTurrets />
+				<reloadingSustainer />
+				<reloadCompleteSound />
+			</li>
+		</modExtensions>
+		<!-- ===Generic stuffs here=== -->
+		<graphicData>
+			<texPath>Things/Building/Misc/Autoloader</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<color>(96,114,95)</color>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.35</staticSunShadowHeight>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>42</pathCost>
+		<size>(2,1)</size>
+		<costList>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<Mechanism>5</Mechanism>
+			<ElectronicComponents>5</ElectronicComponents>
+			<Electronics>2</Electronics>
+		</costList>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+		</building>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>5000</WorkToBuild>
+			<Mass>50</Mass>
+			<Flammability>0</Flammability>
+			<!-- ===Look at this reload speed. this controls how fast/slow autoloader loads=== -->
+			<ReloadSpeed>0.5</ReloadSpeed>
+		</statBases>
+		<designationCategory>Security</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+        <researchPrerequisites>
+            <li>Fortification_C2</li>
+        </researchPrerequisites>
+	</ThingDef>
+    
+    
+	<ThingDef ParentName="SK_AutoloaderBase">
+		<defName>Turret_Autoloader_Bullets</defName>
+		<label>bullets autoloader</label>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoListUser">
+				<magazineSize>300</magazineSize>
+				<reloadTime>5</reloadTime>
+				<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+                <additionalAmmoSets>
+					<li>AmmoSet_762x51mmNATO</li>
+					<li>AmmoSet_50BMG</li>
+					<li>AmmoSet_145x114mm</li>
+					<li>AmmoSet_30x173mm</li>
+					<li>AmmoSet_20x102mm</li>
+					<li>AmmoSet_30x29mmGrenade</li>
+					<li>AmmoSet_BlasterBolt</li>
+					<li>AmmoSet_ChargedLaser</li>
+				</additionalAmmoSets>
+			</li>
+		</comps>
+	</ThingDef>
+    
+    <ThingDef ParentName="SK_AutoloaderBase">
+		<defName>Turret_Autoloader_Shells</defName>
+		<label>shells autoloader</label>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoListUser">
+				<magazineSize>5</magazineSize>
+				<reloadTime>5</reloadTime>
+				<ammoSet>AmmoSet_SPG9Rocket</ammoSet>
+                <additionalAmmoSets>
+					<li>AmmoSet_81mmMortarShell</li>
+					<li>AmmoSet_90mmCannonShell</li>
+					<li>AmmoSet_120mmCannonShell</li>
+					<li>AmmoSet_130mmRocketMissile</li>
+					<li>AmmoSet_155mmHowitzerShell</li>
+				</additionalAmmoSets>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Standard Skylight Panel -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-RoofGlass_Buildable"]/costList</xpath>
+    <value>
+      <costList>
+        <Steel>1</Steel>
+        <RB_Glass>2</RB_Glass>
+      </costList>
+    </value>
+  </Operation>
+
+  <!-- Reinforced Glass Panel -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SolarWeb-Stratum-ReinforcedGlassPanel_Buildable"]/costList</xpath>
+    <value>
+      <costList>
+        <Steel>2</Steel>
+        <Plasteel>1</Plasteel>
+        <RB_BallisticGlass>2</RB_BallisticGlass>
+      </costList>
+    </value>
+  </Operation>
+</Patch>

@@ -1,4 +1,4 @@
-# Rimworld Hardcore SK v.1.5
+# Rimworld Hardcore SK v.1.6 (WIP)
 
 [![Logo](https://i.imgur.com/WP7w2sM.png)](https://github.com/skyarkhangel/Hardcore-SK)
 <!-- you cant center markdown images -->
@@ -43,11 +43,11 @@ For Windows users:
 
 ### Manual installation
 
-[Master:](https://github.com/skyarkhangel/Hardcore-SK/tree/master) - The stable version/branch of the project usually a version behind the latest Rimworld. Currently for version 1.4.
+[Master:](https://github.com/HardcoreSK/Hardcore-SK/tree/master) - The stable version/branch of the project usually a version behind the latest Rimworld. Currently for version 1.5.
 
-[Development:](https://github.com/skyarkhangel/Hardcore-SK/tree/development) - The work-in-progress version which contains the latest content for the latest version of rimworld, but is more likely to contain bugs. Already for latest version 1.5.
+[Alpha:](https://github.com/HardcoreSK/Hardcore-SK/tree/alpha) - The work-in-progress version for 1.6. Since this is an alpha version, expect game-breaking bugs and always make a backup before updating.
 
-1. Install either the [development](https://github.com/skyarkhangel/Hardcore-SK/tree/development) branch for version 1.5 Development or [master](https://github.com/skyarkhangel/Hardcore-SK/tree/master) for 1.4.
+1. Install the [master](https://github.com/HardcoreSK/Hardcore-SK/tree/master) for Game version 1.5.4409, or [alpha](https://github.com/HardcoreSK/Hardcore-SK/tree/alpha) for Game version 1.6.
 
 2. Go to the folder you installed the game in and delete all mods inside your `Rimworld\Mods\` folder.
 
@@ -72,6 +72,10 @@ For Mac users: `/Users/your user name/Library/Application Support/RimWorld`
 
 8. Have fun 😀  
 
+## Older versions
+
+For older versions, check [here](https://github.com/skyarkhangel/Hardcore-SK/releases).
+
 ## Looking for even more content?
 
 These are some extensive and unique mods which are not derivative of others and are specifically designed to work alongside HSK:
@@ -89,21 +93,25 @@ Other mods which are not included in this project are not recommended.
 
 ## Credits
 
-A big thank you to the Patreons! (<https://www.patreon.com/skyarkhangel>, in no particular order.)
+A big thank you to all those that help donate to those on the project!
 
-Szara Kryik, Sonsalt, Makzilla, Schio, GuiltyHollow, ErdTod, Sol, Tie, Zachary F, Fsempri, Andrey, Dudok22, Hoouin K, PuffTheMagicDragon,
-PatchDotExe, Cawi, XLegionX007, НечтоХрустящее, Kristijan, sKeptr, White Sonja, Esterior, Igor Barbarossa, Kiko20, Ky6000, 
-NiciusB, plenumolog, томαѕz, Dan Rowan, dissolvedz, Erilaz, Fsempri, GuardianDll, Kage No Ryuu, Titan399, zaartix, Zag, Нея, CADUCTO, 
-JailBot, Dibbura, donnie, ignorer, korovyev, NiciusB, Nightray, Vuursteen and Егор Х!
+### Active members of SK Team
 
-### SK Team
+* **Lead developers** - TheLoneTec
+* **Coordinators** - Zakhad, Sidfu, A.Ziemens(Duotian)
+* **Discord moderators** - Ziemens, Xx-Nelson-xX, AndreiAvinov (Kiri), Pacas
+* **Artists** - Vile Heathen, ABAHrAPD
+* **Coders** - AndreiAvinov (Kiri), MasakiTenchi, Lightwave 
+* **XML modders** - ArpoMo6, Vile Heathen, Pacas, Xx-Nelson-xX, Elldar, Watcher 011
 
-* **Lead developers** - Skyarkhangel, TheLoneTec
-* **Coordinators** - Zakhad, Sidfu, Dzeniba, A.Ziemens(Duotian)
-* **Discord moderators** - Ziemens, MightyGooga, GG, Szara Kryik, Ashardalon, Xx-Nelson-xX, AndreiAvinov (Kiri), GuardianDll, Pacas
-* **Artists** - Cattleya (<https://www.patreon.com/cattleya>), Vile Heathen
-* **Coders** - Jeremy(PirateBY), TGC, Void, Dusty Breeches, Glucocorticoid, qwerty19106, AndreiAvinov (Kiri), MasakiTenchi 
-* **XML modders** - Sidfu, ArpoMo6, GuardianDll, Spaniard829, Vile Heathen, Pacas, Xx-Nelson-xX, Elldar
+### Previous members of SK Team
+
+* **Lead developers** - Skyarchangel
+* **Coordinators** - Dzeniba
+* **Discord moderators** - MightyGooga, GG, Szara Kryik, Ashardalon, GuardianDll
+* **Artists** - Cattleya (<https://www.patreon.com/cattleya>)
+* **Coders** - Jeremy(PirateBY), TGC, Void, Dusty Breeches, Glucocorticoid, qwerty19106
+* **XML modders** - GuardianDll, Spaniard829
 
 ### Special thanks to
 
@@ -111,12 +119,16 @@ SpoonShortage, Mrofa, Fluffy, Zhentar, Brrainz, Dubwise, Erdelf, Greeny, Hunt3rK
 Lambert2191, Vuursteen, Tuvia, Dunkhan, jnkyacc, Jalordon, Varmonger, funs777, olizit, 
 Quelling, pongvin, lex1975, evgeny-k, Moon, Leiarr, Voker57, Pardonius,
  Sonsalt, Rhyssia, Adenia, Abhay (artwork), ApelAirplane (artwork),
-SomethingCrunchy (dev), NotFood (dev), Murdantiks, Adenia, Soyaman, Tombomcbombo, LimeTreeSnake, Raseri13
+SomethingCrunchy (dev), NotFood (dev), Murdantiks, Soyaman, Tombomcbombo, LimeTreeSnake, Raseri13
 
 Thanks to translators Rey, Ivanzyfer, FaHT1k, mora145, totobrother, Desert Rain
 
 And to anyone else we might have missed!
 
-## LICENSE
+## MODS LICENSES
 
 The content of all individual mods is licensed under their respective licenses.
+
+## SPECIAL MODS MENTIONS
+
+MrHydralisk for Layered Atmosphere and Orbit and Complementary Odyssey

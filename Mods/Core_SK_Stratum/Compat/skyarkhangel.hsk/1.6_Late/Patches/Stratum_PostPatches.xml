@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Stratum adds these links from its base patch folder, after the normal HSK compat folder. -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="SolarWeb-Stratum-SurgicalSpotlight"]</xpath>
+  </Operation>
+
+  <!-- Restore HSK's roof-removal tools after Stratum removes the vanilla entries. -->
+<!--   <Operation Class="PatchOperationRemove">
+    <xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses/li[
+      text()="Designator_AreaNoRoof" or
+      text()="Designator_AreaIgnoreRoof" or
+      text()="SK.Designator_AreaNoThickRoof"
+    ]</xpath>
+  </Operation> -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>Designator_AreaNoRoof</li>
+      <li>SK.Designator_AreaNoThickRoof</li>
+      <li>Designator_AreaIgnoreRoof</li>
+    </value>
+  </Operation>
+
+  <!-- Keep vanilla constructed/natural roofs out of HSK's build menu. -->
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/*[
+      defName="RoofConstructed" or
+      defName="RoofRockThin" or
+      defName="RoofRockThick" or
+      defName="SolarWeb-Stratum-RoofOverheadMountainSmoothed" or
+      defName="SolarWeb-Stratum-RoofThinRockSmoothed"
+    ]/modExtensions/li[@Class="SolarWeb.Stratum.DefModExtensions.BuildableRoofExtension"]</xpath>
+    <value>
+      <designationCategory IsNull="true" />
+    </value>
+  </Operation>
+</Patch>

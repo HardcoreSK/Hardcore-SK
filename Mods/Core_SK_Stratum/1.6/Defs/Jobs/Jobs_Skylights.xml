@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef>
+    <defName>SolarWeb-Stratum-CleanSkylight</defName>
+    <driverClass>SolarWeb.Stratum.AI.JobDrivers.CleanSkylight</driverClass>
+    <reportString>cleaning skylight.</reportString>
+    <casualInterruptible>true</casualInterruptible>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <WorkGiverDef>
+    <defName>SolarWeb-Stratum-CleanSkylights</defName>
+    <label>clean skylights</label>
+    <giverClass>SolarWeb.Stratum.AI.WorkGivers.CleanSkylight</giverClass>
+    <workType>Cleaning</workType>
+    <priorityInType>80</priorityInType>
+    <verb>clean skylight</verb>
+    <gerund>cleaning skylight</gerund>
+    <scanThings>false</scanThings>
+    <scanCells>true</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+  </WorkGiverDef>
+</Defs>

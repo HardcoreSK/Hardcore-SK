@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->
+	<QuestScriptDef>
+		<defName>OldMan</defName>
+		<autoAccept>true</autoAccept>
+		<defaultHidden>true</defaultHidden>
+		<isRootSpecial>true</isRootSpecial>
+		<successHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">CharityFulfilled_WandererJoins</successHistoryEvent>
+		<failedOrExpiredHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">CharityRefused_WandererJoins</failedOrExpiredHistoryEvent>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName->Old man join</li>
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription-></li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<root Class="EventsCore.Quests.QuestNode_Root_WandererJoin_OldMan"/>
+	</QuestScriptDef>
+	<!---->
+	<QuestScriptDef>
+		<defName>WorldMeteorite</defName>
+		<autoAccept>true</autoAccept>
+		<defaultChallengeRating>1</defaultChallengeRating>
+		<isRootSpecial>true</isRootSpecial>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName->[meteorite] of [targetMineableThing_label]</li>
+				<li>questName->[targetMineableThing_label] [meteorite]</li>
+				<li>questName->[meteorite] of [targetMineableThing_label] [discovered]</li>
+				<!---->
+				<li>meteorite->meteorite</li>
+				<li>meteorite->meteor</li>
+				<li>meteorite->asteroid</li>
+				<li>meteorite->space rock</li>
+				<li>meteorite->cosmic debris</li>
+				<!---->
+				<li>discovered->discovered</li>
+				<li>discovered->detected</li>
+				<li>discovered->found</li>
+				<li>discovered->scanned</li>
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription->A huge, precious meteorite made of [targetMineable_label] has crashed onto the planet. We have no more than [timeoutTicks_duration] before others can reach it. [lumpThreatDescription]</li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<root Class="QuestNode_Sequence">
+			<nodes>
+				<li Class="QuestNode_SubScript">
+					<def>Util_AdjustPointsForDistantFight</def>
+				</li>
+				<li Class="QuestNode_ViolentQuestsAllowed">
+					<node Class="QuestNode_Set">
+						<name>siteThreatChance</name>
+						<value>0.5</value>
+					</node>
+					<elseNode Class="QuestNode_Set">
+						<name>siteThreatChance</name>
+						<value>0</value>
+					</elseNode>
+				</li>
+				<li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
+					<storeAs>sitePartDefs</storeAs>
+					<storeFactionAs>siteFaction</storeFactionAs>
+					<sitePartsTags>
+						<li>
+							<tag>WorldMeteorite</tag>
+						</li>
+						<li>
+							<tag>MineralScannerPreciousLumpThreat</tag>
+							<chance>$siteThreatChance</chance>
+						</li>
+					</sitePartsTags>
+				</li>
+				<li Class="EventsCore.Quests.QuestNode_GetDefaultSitePartsParamsMeteorite">
+					<tile>$siteTile</tile>
+					<faction>$siteFaction</faction>
+					<sitePartDefs>$sitePartDefs</sitePartDefs>
+					<storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+				</li>
+				<li Class="QuestNode_SubScript">
+					<def>Util_GenerateSite</def>
+				</li>
+				<li Class="QuestNode_SpawnWorldObjects">
+					<worldObjects>$site</worldObjects>
+				</li>
+				<li Class="QuestNode_Set">
+					<name>timeoutTicks</name>
+					<value>$(40*60000)</value>
+				</li>
+				<li Class="QuestNode_WorldObjectTimeout">
+					<worldObject>$site</worldObject>
+					<delayTicks>$timeoutTicks</delayTicks>
+					<isQuestTimeout>true</isQuestTimeout>
+					<inSignalDisable>site.MapGenerated</inSignalDisable>
+					<node Class="QuestNode_Sequence">
+						<nodes>
+							<li Class="QuestNode_Letter">
+								<label TKey="LetterLabelQuestExpired">Quest expired: [resolvedQuestName]</label>
+								<text TKey="LetterTextQuestExpired">Others have mined the precious meteorite of [targetMineable_label]. The quest [resolvedQuestName] has expired.</text>
+							</li>
+							<li Class="QuestNode_End">
+								<outcome>Fail</outcome>
+							</li>
+						</nodes>
+					</node>
+				</li>
+				<li Class="QuestNode_NoWorldObject">
+					<worldObject>$site</worldObject>
+					<node Class="QuestNode_End"/>
+				</li>
+			</nodes>
+		</root>
+	</QuestScriptDef>
+	<!---->
+</Defs>

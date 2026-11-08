@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Mosquito</defName>
 		<label>Mosquito</label>
 		<description>Mosquitoes are small, parasitic, flies whose tube-like mouthparts (called a proboscis) pierce the hosts' skin to consume blood. This rimworld variety has adapted to be omnivorious, but prefers the succelent taste of fresh blood if possible. Mosquitoes are known to carry and spread diseases.</description>
@@ -20,6 +20,7 @@
 			<GermResistance>0.55</GermResistance>
 			<GermContainment>0.01</GermContainment>
 			<ToxicResistance>0.8</ToxicResistance>
+			<Wildness>0.99</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -57,7 +58,6 @@
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<petness>0</petness>
-			<wildness>0.99</wildness>
 			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<lifeExpectancy>3</lifeExpectancy>
@@ -88,15 +88,14 @@
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>QuadrupedLow</bodyShape>
 			</li>
-			<li Class="SK.DestroyCorpseExtension">
-			</li>
+			<li Class="SK.DestroyCorpseExtension" />
 			<li Class="SK.AnimalExtension">
 				<hediffDef>Malaria</hediffDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Mosquito</defName>
 		<label>Mosquito</label>
 		<race>Mosquito</race>
@@ -137,7 +136,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Crashbug</defName>
 		<label>Crashbug</label>
 		<description>These fearsome, carnivorous beetle-bugs are small and hard to find, and they can often be fatal if one strikes. They attack by ramming or crashing into their target. This is what earned them their name of Crashbug.</description>
@@ -159,6 +158,7 @@
 			<GermContainment>0.02</GermContainment>
 			<FilthRate>3</FilthRate>
 			<ToxicResistance>0.9</ToxicResistance>
+			<Wildness>0.85</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -209,7 +209,6 @@
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<petness>0</petness>
-			<wildness>0.85</wildness>
 			<manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<lifeExpectancy>6</lifeExpectancy>
@@ -240,7 +239,7 @@
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>QuadrupedLow</bodyShape>
 			</li>
-			<li Class="SK.DestroyCorpseExtension"/>
+			<li Class="SK.DestroyCorpseExtension" />
 			<li Class="SK.DevourerAnimalExtension">
 				<things>
 					<li>weapon</li>
@@ -252,7 +251,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Crashbug</defName>
 		<label>Crashbug</label>
 		<race>Crashbug</race>
@@ -293,7 +292,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Fly</defName>
 		<label>Fly</label>
 		<description>The small housefly has evolved on this rimworld to become a common and larger nuisance insect. Flies are known to carry and spread diseases.</description>
@@ -312,6 +311,7 @@
 			<GermResistance>0.55</GermResistance>
 			<GermContainment>0.01</GermContainment>
 			<ToxicResistance>0.8</ToxicResistance>
+			<Wildness>0.99</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -349,7 +349,6 @@
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<wildness>0.99</wildness>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>1.00</manhunterOnTameFailChance>
 			<lifeExpectancy>3</lifeExpectancy>
@@ -380,15 +379,14 @@
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>QuadrupedLow</bodyShape>
 			</li>
-			<li Class="SK.DestroyCorpseExtension">
-			</li>
+			<li Class="SK.DestroyCorpseExtension" />
 			<li Class="SK.AnimalExtension">
 				<hediffDef>Malaria</hediffDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Fly</defName>
 		<label>Fly</label>
 		<race>Fly</race>
@@ -430,7 +428,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Flea</defName>
 		<label>Flea</label>
 		<description>Fleas are wingless insects with mouthparts adapted for piercing skin and sucking blood. Fleas are external parasites, living by hematophagy off the blood of mammals.</description>
@@ -449,6 +447,7 @@
 			<GermResistance>0.45</GermResistance>
 			<GermContainment>0.01</GermContainment>
 			<ToxicResistance>0.95</ToxicResistance>
+			<Wildness>0.99</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -487,7 +486,6 @@
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<wildness>0.99</wildness>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<lifeExpectancy>3</lifeExpectancy>
 			<lifeStageAges>
@@ -517,15 +515,14 @@
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>QuadrupedLow</bodyShape>
 			</li>
-			<li Class="SK.DestroyCorpseExtension">
-			</li>
+			<li Class="SK.DestroyCorpseExtension" />
 			<li Class="SK.AnimalExtension">
 				<hediffDef>Plague</hediffDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Flea</defName>
 		<label>Flea</label>
 		<race>Flea</race>
@@ -566,7 +563,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Cockroach</defName>
 		<label>cockroach</label>
 		<description>Cockroaches are omnivorous scavengers. They are attracted particularly to meats, starches, sugars, and fatty foods.</description>
@@ -586,6 +583,7 @@
 			<GermContainment>0.01</GermContainment>
 			<FilthRate>4</FilthRate>
 			<ToxicResistance>0.95</ToxicResistance>
+			<Wildness>0.85</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -625,7 +623,6 @@
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<petness>0</petness>
-			<wildness>0.85</wildness>
 			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<lifeExpectancy>3</lifeExpectancy>
@@ -656,7 +653,7 @@
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>QuadrupedLow</bodyShape>
 			</li>
-			<li Class="SK.DestroyCorpseExtension"/>
+			<li Class="SK.DestroyCorpseExtension" />
 			<li Class="SK.DevourerAnimalExtension">
 				<things>
 					<li>food</li>
@@ -665,7 +662,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Cockroach</defName>
 		<label>Cockroach</label>
 		<race>Cockroach</race>
@@ -706,9 +703,9 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-	
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>CropEaterInsect</defName>
 		<label>Cropeater</label>
 		<description>A small beetle that enjoys devouring plants.</description>
@@ -731,6 +728,7 @@
 			<GermContainment>0.02</GermContainment>
 			<FilthRate>4</FilthRate>
 			<ToxicResistance>0.95</ToxicResistance>
+			<Wildness>0.99</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -762,7 +760,6 @@
 			<baseHungerRate>2.5</baseHungerRate>
 			<baseHealthScale>0.2</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<wildness>0.99</wildness>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
@@ -802,7 +799,7 @@
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>Serpentine</bodyShape>
 			</li>
-			<li Class="SK.DestroyCorpseExtension"/>
+			<li Class="SK.DestroyCorpseExtension" />
 			<li Class="SK.DevourerAnimalExtension">
 				<things>
 					<li>plant</li>
@@ -811,7 +808,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>CropEaterInsect</defName>
 		<label>Cropeater</label>
 		<race>CropEaterInsect</race>

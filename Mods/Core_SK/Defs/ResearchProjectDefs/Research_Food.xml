@@ -31,9 +31,9 @@
 			<li>TribalStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="PrimitiveBase">
-		<defName>Pemmican</defName>		<!-- Food_A1 -->
+		<defName>Pemmican</defName>		--><!-- Food_A1 --><!--
 		<label>Food I</label>
 		<description>description</description>
 		<baseCost>150</baseCost>
@@ -48,7 +48,7 @@
 			<li>NorbalStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+-->
 
 <!-- Medieval -->
 	<ResearchProjectDef ParentName="MedievalBase">
@@ -66,7 +66,7 @@
 		<tags>
 			<li>NovaStart</li>
 			<li>AsariStart</li>
-			<li MayRequire="Solaris.RatkinRaceMod">RatkinStart</li>
+			<li MayRequire="Solaris.RatkinRaceMod">RK_ResearchTag_IndustrialBasic</li>
 		</tags>
 	</ResearchProjectDef>
 
@@ -144,7 +144,7 @@
 		<researchViewY>47.00</researchViewY>
 		<tab>Food_SK</tab>
 		<tags>
-			<li MayRequire="Solaris.RatkinRaceMod">RatkinStart</li>
+			<li MayRequire="Solaris.RatkinRaceMod">RK_ResearchTag_IndustrialBasic</li>
 		</tags>
 	</ResearchProjectDef>
 
@@ -160,7 +160,7 @@
 			<li>Food_B4</li>
 			<li>MicroelectronicsBasics</li>
 		</prerequisites>
-		<researchViewX>8.00</researchViewX>
+		<researchViewX>9.00</researchViewX>
 		<researchViewY>45.00</researchViewY>
 		<tab>Food_SK</tab>
 	</ResearchProjectDef>
@@ -174,7 +174,7 @@
 		<prerequisites>
 			<li>Food_C1</li>
 		</prerequisites>
-		<researchViewX>9.00</researchViewX>
+		<researchViewX>10.00</researchViewX>
 		<researchViewY>46.00</researchViewY>
 		<tab>Food_SK</tab>
 	</ResearchProjectDef>
@@ -188,7 +188,7 @@
 		<prerequisites>
 			<li>Food_C1</li>
 		</prerequisites>
-		<researchViewX>9.00</researchViewX>
+		<researchViewX>10.00</researchViewX>
 		<researchViewY>48.00</researchViewY>
 		<tab>Food_SK</tab>
 	</ResearchProjectDef>
@@ -203,7 +203,7 @@
 			<li>Food_C1</li>
 			<li>Bakery_B2</li>
 		</prerequisites>
-		<researchViewX>9.00</researchViewX>
+		<researchViewX>10.00</researchViewX>
 		<researchViewY>47.00</researchViewY>
 		<tab>Food_SK</tab>
 	</ResearchProjectDef>
@@ -217,13 +217,13 @@
 		<prerequisites>
 			<li>Bakery_C1</li>
 		</prerequisites>
-		<researchViewX>10.00</researchViewX>
+		<researchViewX>11.00</researchViewX>
 		<researchViewY>47.00</researchViewY>
 		<tab>Food_SK</tab>
 	</ResearchProjectDef>
-
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
-		<defName>PackagedSurvivalMeal</defName>		<!-- Food_C5 -->
+		<defName>PackagedSurvivalMeal</defName>		--><!-- Food_C5 --><!--
 		<label>Cooking IV</label>
 		<description>description</description>
 		<baseCost>1200</baseCost>
@@ -236,7 +236,7 @@
 		<researchViewY>45.00</researchViewY>
 		<tab>Food_SK</tab>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="HitechBase">
 		<defName>Food_C6</defName>
 		<label>Advanced cooking II</label>
@@ -267,8 +267,9 @@
 
 
 <!-- Spacer -->
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="HitechBase">
-		<defName>NutrientPaste</defName>		<!-- Food_D1 -->
+		<defName>NutrientPaste</defName>		--><!-- Food_D1 --><!--
 		<label>Soylent technology</label>
 		<description>Allows you to build the Soylent Green Machine to make Soylent Green from Humanlike corpses.</description>
 		<baseCost>1400</baseCost>
@@ -284,12 +285,13 @@
 			<li>AsariStart</li>
 		</tags>
 	</ResearchProjectDef>
-
+-->
 
 
 <!-- alcohol -->
+<!-- DefOverwrite
 	<ResearchProjectDef ParentName="MedievalBase">
-		<defName>Brewing</defName>		<!-- Alcohol_B1 -->
+		<defName>Brewing</defName>		--><!-- Alcohol_B1 --><!--
 		<label>Alcohol production I</label>
 		<description>description</description>
 		<baseCost>300</baseCost>
@@ -301,10 +303,10 @@
 		<researchViewY>48.00</researchViewY>
 		<tab>Food_SK</tab>
 		<tags>
-			<li MayRequire="Solaris.RatkinRaceMod">RatkinStart</li>
+			<li MayRequire="Solaris.RatkinRaceMod">RK_ResearchTag_IndustrialBasic</li>
 		</tags>
 	</ResearchProjectDef>
-
+-->
 	<ResearchProjectDef ParentName="MedievalBase">
 		<defName>Alcohol_B2</defName>
 		<label>Alcohol production II</label>

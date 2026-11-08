@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      
+      <!-- Raiders kidnapping -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/DutyDef[defName="Kidnap"]/thinkNode/subNodes</xpath>
+        <order>Prepend</order>
+        <value>
+          <li Class="CM_No_Pawn_Left_Behind.JobGiver_Rescue">
+            <rescueChance>0.33</rescueChance>
+            <searchRadius>10.0</searchRadius>
+            <opinionPriorityWeight>1.0</opinionPriorityWeight>
+            <marketValuePriorityWeight>1.0</marketValuePriorityWeight>
+            <distancePriorityWeight>1.0</distancePriorityWeight>
+            <healthSearchDistanceWeight>1.0</healthSearchDistanceWeight>
+          </li>
+        </value>
+      </li>
+      
+      <!-- Raiders stealing -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/DutyDef[defName="Steal"]/thinkNode/subNodes</xpath>
+        <order>Prepend</order>
+        <value>
+          <li Class="CM_No_Pawn_Left_Behind.JobGiver_Rescue">
+            <rescueChance>0.33</rescueChance>
+            <searchRadius>10.0</searchRadius>
+            <opinionPriorityWeight>1.0</opinionPriorityWeight>
+            <marketValuePriorityWeight>1.0</marketValuePriorityWeight>
+            <distancePriorityWeight>1.0</distancePriorityWeight>
+            <healthSearchDistanceWeight>1.0</healthSearchDistanceWeight>
+          </li>
+        </value>
+      </li>
+      
+      <!-- PanicFlee mental state used by raiders who fleeing in panic -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThinkTreeDef[defName="MentalStateNonCritical"]/thinkRoot/subNodes/li[state="PanicFlee"]/subNodes</xpath>
+        <order>Prepend</order>
+        <value>
+          <li Class="CM_No_Pawn_Left_Behind.JobGiver_Rescue">
+            <rescueChance>0.5</rescueChance>
+            <searchRadius>10.0</searchRadius>
+            <opinionPriorityWeight>1.0</opinionPriorityWeight>
+            <marketValuePriorityWeight>1.0</marketValuePriorityWeight>
+            <distancePriorityWeight>1.0</distancePriorityWeight>
+            <healthSearchDistanceWeight>1.0</healthSearchDistanceWeight>
+          </li>
+        </value>
+      </li>
+      
+      <!-- ExitMapBest duty used by raiders who are giving up -->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/DutyDef[defName="ExitMapBest"]/thinkNode</xpath>
+        <value>
+          <thinkNode Class="ThinkNode_Priority">
+            <subNodes>
+              <li Class="CM_No_Pawn_Left_Behind.JobGiver_Rescue">
+                <rescueChance>1.00</rescueChance>
+                <searchRadius>20.0</searchRadius>
+                <opinionPriorityWeight>1.0</opinionPriorityWeight>
+                <marketValuePriorityWeight>1.0</marketValuePriorityWeight>
+                <distancePriorityWeight>1.0</distancePriorityWeight>
+                <healthSearchDistanceWeight>1.0</healthSearchDistanceWeight>
+              </li>
+              <li Class="JobGiver_ExitMapBest">
+                <defaultLocomotion>Walk</defaultLocomotion>
+                <jobMaxDuration>300</jobMaxDuration>
+              </li>
+            </subNodes>
+          </thinkNode>
+        </value>
+      </li>
+      
+      <!-- ExitMapRandom duty used for fleeing pawns -->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/DutyDef[defName="ExitMapRandom"]/thinkNode</xpath>
+        <value>
+          <thinkNode Class="ThinkNode_Priority">
+            <subNodes>
+              <li Class="CM_No_Pawn_Left_Behind.JobGiver_Rescue">
+                <!-- Rescue chance checked every time we try this node: once at the beginning and then once every (jobMaxDuration) ticks of the exit map job that follows (default 0.33)-->
+                <rescueChance>0.5</rescueChance>
+                
+                <!-- Radius to search (default 10.0) -->
+                <searchRadius>10.0</searchRadius>
+              
+                <!-- Remove any of the following parameters or set their value below 0.0 to remove them from calculations -->
+                <!-- Weight of the opinion of the rescuer on target priority -->
+                <opinionPriorityWeight>1.0</opinionPriorityWeight>
+                <!-- Weight of the market value of the target on target priority -->
+                <marketValuePriorityWeight>1.0</marketValuePriorityWeight>
+                <!-- Weight of the distance to the target on target priority (divisor) -->
+                <distancePriorityWeight>1.0</distancePriorityWeight>
+                
+                <!-- Weight of the health of the rescuer on target search range -->
+                <healthSearchDistanceWeight>1.0</healthSearchDistanceWeight>
+              </li>
+              <li Class="JobGiver_ExitMapRandom">
+                <defaultLocomotion>Walk</defaultLocomotion>
+                <jobMaxDuration>300</jobMaxDuration>
+              </li>
+            </subNodes>
+          </thinkNode>
+        </value>
+      </li>
+      
+      <!-- ExitMapBestAndDefendSelf duty used by traders who are leaving -->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/DutyDef[defName="ExitMapBestAndDefendSelf"]/thinkNode</xpath>
+        <value>
+          <thinkNode Class="ThinkNode_Priority">
+            <subNodes>
+              <li Class="JobGiver_AIDefendSelf">
+                <targetAcquireRadius>35</targetAcquireRadius>
+                <targetKeepRadius>40</targetKeepRadius>
+              </li>
+              <li Class="CM_No_Pawn_Left_Behind.JobGiver_Rescue">
+                <rescueChance>1.00</rescueChance>
+                <searchRadius>20.0</searchRadius>
+                <opinionPriorityWeight>1.0</opinionPriorityWeight>
+                <marketValuePriorityWeight>1.0</marketValuePriorityWeight>
+                <distancePriorityWeight>1.0</distancePriorityWeight>
+                <healthSearchDistanceWeight>1.0</healthSearchDistanceWeight>
+              </li>
+              <li Class="JobGiver_ExitMapBest">
+                <defaultLocomotion>Walk</defaultLocomotion>
+                <jobMaxDuration>120</jobMaxDuration>
+              </li>
+            </subNodes>
+          </thinkNode>
+        </value>
+      </li>
+      
+    </operations>
+  </Operation>
+    
+</Patch>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Apparel_Pants"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.ApparelIndustrialBaseDummy</value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Apparel_Pants"]</xpath>
+        <value>
+            <label>Modern Striped Suspenders</label>
+            <description>A simple set of pants with suspenders that drape over the shoulders to hold the pants up.</description>
+            <graphicData>
+                <texPath>Things/Apparel/Bottoms/SuspendersModernStriped/Suspenders</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+            </graphicData>
+            <stuffCategories>
+                <li>HF</li>
+                <li>Fabric</li>
+                <li>Leathery</li>
+            </stuffCategories>
+            <costList>
+                <ComponentIndustrial>2</ComponentIndustrial>
+            </costList>
+            <statBases>
+                <WorkToMake>6000</WorkToMake>
+                <MaxHitPoints>60</MaxHitPoints>
+                <Flammability>2</Flammability>
+                <Mass>0.6</Mass>
+                <Bulk>0.5</Bulk>
+                <WornBulk>0</WornBulk>
+                <EquipDelay>2.5</EquipDelay>
+                <Insulation_Cold>5</Insulation_Cold>
+                <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+                <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+                <StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+                <ArmorRating_Sharp>0</ArmorRating_Sharp>
+                <ArmorRating_Blunt>0</ArmorRating_Blunt>
+                <ArmorRating_Heat>0</ArmorRating_Heat>
+            </statBases>
+            <equippedStatOffsets>
+                <CarryBulk>5</CarryBulk>
+                <MoveSpeed>-0.025</MoveSpeed>
+                <MedicalOperationSpeed>0.03</MedicalOperationSpeed>
+                <MedicalTendSpeed>0.03</MedicalTendSpeed>
+                <GermResistance>0.03</GermResistance>
+                <GermContainment>0.03</GermContainment>
+            </equippedStatOffsets>
+            <generateCommonality>2</generateCommonality>
+            <apparel>
+                <bodyPartGroups>
+                    <li>Legs</li>
+                </bodyPartGroups>
+                <wornGraphicPath>Things/Apparel/Bottoms/SuspendersModernStriped/Suspenders</wornGraphicPath>
+                <layers>
+                    <li>OnSkin</li>
+                </layers>
+                <tags>
+                    <li>IndustrialBasic</li>
+                    <li>Outlander</li>
+                    <li>RenegadesLight</li>
+                    <li>PredatorsScout</li>
+                    <li>SectarianScout</li>
+                </tags>
+                <defaultOutfitTags>
+                    <li>Worker</li>
+                    <li>Soldier</li>
+                </defaultOutfitTags>
+            </apparel>
+            <colorGenerator Class="ColorGenerator_StandardApparel"/>
+            <thingCategories>
+                <li>UrbanPantsCat</li>
+            </thingCategories>
+            <recipeMaker>
+                <researchPrerequisite>Apparel_C5</researchPrerequisite>
+                <displayPriority>265</displayPriority>
+            </recipeMaker>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Apparel_FlakPants"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.ApparelIndustrialBaseDummy</value>
+    </Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Apparel_FlakPants"]</xpath>
+        <value>
+            <graphicData>
+                <texPath>Things/Apparel/Bottoms/ArmoredPants/ArmoredPants</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+            </graphicData>
+            <stuffCategories>
+                <li>HF</li>
+                <li>Fabric</li>
+            </stuffCategories>
+            <costStuffCount>30</costStuffCount>
+            <costList>
+                <ComponentIndustrial>6</ComponentIndustrial>
+                <Compaste>18</Compaste>
+            </costList>
+            <statBases>
+                <WorkToMake>5500</WorkToMake>
+                <MaxHitPoints>120</MaxHitPoints>
+                <Flammability>1.2</Flammability>
+                <Mass>0.9</Mass>
+                <Bulk>1</Bulk>
+                <WornBulk>0</WornBulk>
+                <EquipDelay>3.5</EquipDelay>
+                <Insulation_Cold>5</Insulation_Cold>
+                <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+                <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+                <StuffEffectMultiplierArmor>1.06</StuffEffectMultiplierArmor>
+                <ArmorRating_Sharp>2.13</ArmorRating_Sharp>
+                <ArmorRating_Blunt>2.432</ArmorRating_Blunt>
+                <ArmorRating_Heat>0</ArmorRating_Heat>
+            </statBases>
+            <equippedStatOffsets>
+                <CarryBulk>5</CarryBulk>
+                <MoveSpeed>-0.07</MoveSpeed>
+                <WorkSpeedGlobal>-0.03</WorkSpeedGlobal>
+                <ShootingAccuracyPawn>-0.06</ShootingAccuracyPawn>
+                <AimingDelayFactor>0.06</AimingDelayFactor>
+                <MeleeHitChance>-0.07</MeleeHitChance>
+                <MeleeWeapon_CooldownMultiplier>0.07</MeleeWeapon_CooldownMultiplier>
+                <GermResistance>0.04</GermResistance>
+                <GermContainment>0.03</GermContainment>
+            </equippedStatOffsets>
+            <generateCommonality>1.8</generateCommonality>
+            <apparel>
+                <wornGraphicPath>Things/Apparel/Bottoms/Pants/Pants</wornGraphicPath>
+                <bodyPartGroups>
+                    <li>Legs</li>
+                </bodyPartGroups>
+                <layers>
+                    <li>OnSkin</li>
+                </layers>
+                <tags>
+                    <li>IndustrialMilitaryBasic</li>
+                    <li>IndustrialMilitaryAdvanced</li>
+                    <li>Outlander</li>
+                    <li>RenegadesMedium</li>
+                    <li>PredatorsMedium</li>
+                    <li>EmpireMedium</li>
+                    <li>SectarianMedium</li>
+                </tags>
+                <defaultOutfitTags>
+                    <li>Soldier</li>
+                </defaultOutfitTags>
+            </apparel>
+            <thingCategories>
+                <li>MilitaryPantsCat</li>
+            </thingCategories>
+            <recipeMaker>
+                <researchPrerequisite>FlakArmor</researchPrerequisite>
+            </recipeMaker>
+        </value>
+    </Operation>
+
+</Patch>

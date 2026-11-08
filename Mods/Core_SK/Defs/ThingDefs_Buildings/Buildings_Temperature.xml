@@ -1,159 +1,34 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
-	<ThingDef Name="BurnerFueled" ParentName="SK_BuildingBase" Abstract="True">
-		<thingClass>Building</thingClass>
-		<passability>PassThroughOnly</passability>
-		<tickerType>Normal</tickerType>
-		<altitudeLayer>Building</altitudeLayer>
-		<surfaceType>Item</surfaceType>
-		<canOverlapZones>false</canOverlapZones>
-		<fillPercent>0.6</fillPercent>
-		<inspectorTabs>
-			<li>SK.ITab_Fuel</li>
-		</inspectorTabs>
-	</ThingDef>
-
-	<ThingDef ParentName="BuildingFueled">
-		<defName>Campfire</defName>
-		<label>campfire</label>
-		<description>A campfire that can cook meals and produce heat, but it will burn out after a few days. As with all heat sources, it must be placed indoors so it has a closed space to heat.</description>    
-		<drawerType>MapMeshAndRealTime</drawerType>
-		<graphicData>
-			<texPath>Things/Building/Misc/Campfire</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawRotated>false</drawRotated>
-			<drawSize>(1,1)</drawSize>
-			<damageData>
-				<rect>(0.2,0,0.6,0.1)</rect>
-			</damageData>
-			<!--<shadowData>
-				<volume>(0.5, 0.5, 0.5)</volume>
-			</shadowData>-->
-		</graphicData>
-		<fillPercent>0.1</fillPercent>
-		<statBases>
-			<MaxHitPoints>20</MaxHitPoints>
-			<WorkToBuild>300</WorkToBuild>
-			<Flammability>0</Flammability>
-			<WorkTableWorkSpeedFactor>0.7</WorkTableWorkSpeedFactor>
-			<MeditationFocusStrength>0</MeditationFocusStrength>
-		</statBases>
-		<size>(1,1)</size>
-		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
-		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
-		<placeWorkers>
-			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
-			<li>PlaceWorker_Heater</li>
-			<li>PlaceWorker_GlowRadius</li>
-		</placeWorkers>
-		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-		<comps>
-			<li>
-				<compClass>CompGatherSpot</compClass>
-			</li>
-			<li Class="CompProperties_Glower">
-				<glowRadius>8</glowRadius>
-				<glowColor>(252,187,113,0)</glowColor>
-			</li>
-			<li Class="SK.CompProperties_HeatPusherAdvanced">
-				<compClass>SK.CompHeatPusherAdvanced</compClass>
-				<heatPerSecond>18</heatPerSecond>
-				<heatPushMaxTemperature>30</heatPushMaxTemperature>
-			</li>
-			<li Class="SK.CompFueled_Properties">
-				<operatingTemp>300</operatingTemp>
-				<fireDrawOffset>(0,0.15,0.25)</fireDrawOffset>
-				<smokeDrawOffset>(0,0,0.1)</smokeDrawOffset>
-				<fuelDrawOffset>(0,0.1,0.01)</fuelDrawOffset>
-				<fuelDrawScale>0.7</fuelDrawScale>
-				<fuelCapacity>10</fuelCapacity>
-				<burnFuelMultiplier>1</burnFuelMultiplier>
-				<smokesize>0.3</smokesize>
-				<canAutoBurn>true</canAutoBurn>
-				<effectOnWeather>true</effectOnWeather>
-				<smokeDensity>2</smokeDensity>
-				<fuelFilter>
-					<thingDefs>
-						<li>Charcoal</li>
-						<li>Coal</li>
-						<li>Kindling</li>
-						<li>Tallow</li>
-					</thingDefs>
-					<categories>
-						<li>Wooden</li>
-						<li>Woody</li>
-					</categories>  
-				</fuelFilter>
-			</li>
-			<li Class="CompProperties_MeditationFocus">
-				<statDef>MeditationFocusStrength</statDef>
-				<focusTypes>
-					<li>Flame</li>
-				</focusTypes>
-				<offsets>
-					<li Class="FocusStrengthOffset_Lit">
-						<offset>0.12</offset>
-					</li>
-					<li Class="FocusStrengthOffset_BuildingDefsLit">
-						<defs>
-							<li>Campfire</li>
-							<li>BowlLamp</li>
-							<li>Candle</li>
-							<li>TorchLamp</li>
-							<li>TorchWallLamp</li>
-							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-							<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
-							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
-							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
-						</defs>
-						<radius>9.9</radius>
-						<maxBuildings>8</maxBuildings>
-						<offsetPerBuilding>0.02</offsetPerBuilding>
-						<explanationKey>MeditationFocusPerFlame</explanationKey>
-						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
-					</li>
-				</offsets>
-			</li>
-		</comps>
-		<designationCategory>Temperature</designationCategory>
-		<designationHotKey>Misc1</designationHotKey>
-		<recipes>
-			<li>CremateCorpse</li>
-			<li>BurnApparel</li>
-			<li>BurnDrugs</li>
-			<li>BurnWeapon</li>
-			<li>BurnThings</li>
-			<li>RoastingCoffeeBeans</li>
-			<li>BrewCoffeeSingle</li>
-			<li>MakeCharcoal_Hand</li>
-			<li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFood</li>
-			<li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFoodBulk</li>
-		</recipes>
-		<building>
-			<isMealSource>true</isMealSource>
-			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
-		</building>
-	</ThingDef>
+	<!--
+    DefOverwrite list:
+    Campfire
+    Heater TODO
+    PassiveCooler TODO
+    Cooler TODO
+    Vent TODO
+    -->
+	
+	<!-- Heaters -->
 
 	<ThingDef ParentName="BurnerFueled">
 		<defName>Building_Heater</defName>
 		<label>stove heater</label>
+		<description>A stove that produces heat by burning basic fuel sources. Can be fueled by kindling, coal, charcoal, peat and wooden stuff.</description>
 		<graphicData>
-			<texPath>Things/Building/Temperature/WoodStoveFurnace</texPath>
+			<texPath>Things/Building/Temperature/WoodStoveFurnace/WoodStoveFurnace</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<rect>(0.2,0,0.6,0.1)</rect>
 			</damageData>
-			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.4,0.4,0.7)</volume>
+			</shadowData>
+			<drawSize>(2.5,2.5)</drawSize>
 		</graphicData>
-		<uiIconPath>Things/Building/Temperature/WoodStoveFurnace_ico</uiIconPath>	
+		<uiIconPath>Things/Building/Temperature/WoodStoveFurnace/WoodStoveFurnace_ico</uiIconPath>	
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>70</pathCost>
@@ -165,7 +40,6 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<tickerType>Normal</tickerType>
-		<description>A stove that produces heat by burning basic fuel sources. Can be fueled by kindling, coal, charcoal, peat and wooden stuff.</description>
 		<size>(1,1)</size>
 		<stuffCategories>
 			<li>Stony</li>
@@ -174,6 +48,7 @@
 		</stuffCategories>
 		<costStuffCount>120</costStuffCount>
 		<comps>
+			<li Class="SK.CompProperties_PowerOnGraphic" />
 			<li Class="CompProperties_Flickable"/>
 			<li Class="SK.CompProperties_HeatPusherAdvanced">
 				<compClass>SK.CompHeatPusherAdvanced</compClass>
@@ -211,19 +86,18 @@
 		</comps>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Temperature</designationCategory>
-		<staticSunShadowHeight>0.20</staticSunShadowHeight>
 		<researchPrerequisites>
 			<li>Temperature_control_B1</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>EHeatedFloor</defName>
 		<label>electric heated floor</label>
 		<thingClass>Building_Heater</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Misc/EHeatedFloor</texPath>
+			<texPath>Things/Building/Temperature/EHeatedFloor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<building>
@@ -235,14 +109,14 @@
 		<castEdgeShadows>false</castEdgeShadows>
 		<canOverlapZones>false</canOverlapZones>
 		<rotatable>false</rotatable>
-		<description>Heated flooring tiles that utilize conductive wires and convection heating to warm a room.</description>
+		<description>Heated flooring tiles that use conductive wires and convection heating to warm a room.</description>
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
 			<WorkToBuild>70</WorkToBuild>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<selectable>false</selectable>
-		<placingDraggableDimensions>2</placingDraggableDimensions>
+		<drawStyleCategory>Default2D</drawStyleCategory>
 		<costList>
 			<ConcreteResource>5</ConcreteResource>
 			<ComponentIndustrial>3</ComponentIndustrial>
@@ -258,8 +132,7 @@
 		<comps>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
@@ -277,13 +150,12 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_BuildingBase">
+<!-- DefOverwrite
+	<ThingDef ParentName="BuildingBase">
 		<defName>Heater</defName>
 		<label>heater</label>
 		<thingClass>Building_Heater</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Misc/TempControl/Heater</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shadowData>
 				<volume>(0.25,0.4,0.7)</volume>
@@ -328,8 +200,7 @@
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
@@ -351,14 +222,17 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_BuildingBase">
+-->
+	<ThingDef ParentName="BuildingBase">
 		<defName>RH_MediumHeater</defName>
 		<thingClass>SK.Building_WallHeater</thingClass>
 		<label>Medium heater</label>
 		<description>A wall mounted heater which is more efficient at heating large rooms and bases. It can automatically turn itself on or off to reach a specific target temperature.</description>
+		<blocksAltitudes>
+			<li>BuildingOnTop</li>
+		</blocksAltitudes>
 		<graphicData>
-			<texPath>Things/Building/Temperature/Heater/MediumHeater</texPath>
+			<texPath>Things/Building/Temperature/MediumHeater/MediumHeater</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 		</graphicData>
 		<stuffCategories>
@@ -387,10 +261,10 @@
 					<li>Wall</li>
 					<li>ClutterSilverWall</li>
 					<li>ClutterUWallLight</li>
+					<li MayRequire="ludeon.rimworld.odyssey">GravshipHull</li>
 				</thingDefs>
 			</li>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
@@ -427,13 +301,13 @@
 		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
 	</ThingDef>	
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>RedistHeat_IndustrialHeater</defName>
 		<thingClass>Building_Heater</thingClass>
 		<label>Industrial heater</label>
 		<description>A massive industrial heater. It can efficiently heat large rooms and bases. It can automatically turn itself on or off to reach a specific target temperature.</description>
 		<graphicData>
-			<texPath>Things/Building/Temperature/Heater/SuperHeater</texPath>
+			<texPath>Things/Building/Temperature/SuperHeater</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shadowData>
 				<volume>
@@ -464,8 +338,7 @@
 			<li>PlaceWorker_Heater</li>
 		</placeWorkers>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
@@ -498,12 +371,13 @@
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>GH</defName>
 		<label>geothermal heater</label>
+		<description>A industrial geothermal heater that collects and controls the heat from a steam geyser. It is self-balanced and can heat up a large indoor area to a comfortable temperature.</description>
 		<thingClass>SK.Building_GeothermalHeater</thingClass>
 		<graphicData>
-			<texPath>Things/Building/GH</texPath>
+			<texPath>Things/Building/Temperature/GeothermalHeater</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<shadowData>
@@ -524,7 +398,6 @@
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<tickerType>Normal</tickerType>
-		<description>A industrial geothermal heater that collects and controls the heat from a steam geyser. It is self-balanced and can heat up a large indoor area to a comfortable temperature.</description>
 		<stuffCategories>
 			<li>RuggedMetallic</li>
 		</stuffCategories>
@@ -557,12 +430,14 @@
 		<constructionSkillPrerequisite>13</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<!-- Coolers -->
+<!--
+	<ThingDef ParentName="BuildingBase">
 		<defName>PassiveCooler</defName>
 		<label>passive cooler</label>
 		<description>A traditional unpowered cooler that works by water evaporation. While it's not strong enough to refridgerate food, it can help survive a heat wave. It will run out and self-destruct after several days.</description>
 		<graphicData>
-			<texPath>Things/Building/Misc/PassiveCooler</texPath>
+			<texPath>Things/Building/Temperature/PassiveCooler</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawRotated>false</drawRotated>
 			<allowFlip>false</allowFlip>
@@ -624,14 +499,13 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 	</ThingDef>
-
-
-	<ThingDef ParentName="SK_BuildingBase">
+	-->
+	<ThingDef ParentName="BuildingBase">
 		<defName>ColdstonePassiveCooler</defName>
 		<label>coldstone passive cooler</label>
-		<description>A traditional unpowered cooler that works by water evaporation. While it's not strong enough to refridgerate food, it can help survive a heat wave. This version uses cold stone to do the cooling for places with limited timber.</description>
+		<description>A traditional unpowered cooler that works by water evaporation. While it's not strong enough to refrigerate food, it can help survive a heat wave. This version uses cold stone to do the cooling for places with limited timber.</description>
 		<graphicData>
-			<texPath>Things/Building/Misc/PassiveCooler</texPath>
+			<texPath>Things/Building/Temperature/PassiveCoolerCold</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawRotated>false</drawRotated>
 			<allowFlip>false</allowFlip>
@@ -694,13 +568,13 @@
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>ColdstoneBattery</defName>
 		<label>coldstone battery</label>
 		<description>A tank built to cool a medium-sized room to below freezing. Requires coldstone as fuel. Able to support a roof.</description>
 		<thingClass>SK.Building_ColdstoneBattery</thingClass>
 		<graphicData>
-			<texPath>Things/Building/ColdstoneBattery</texPath>
+			<texPath>Things/Building/Temperature/ColdstoneBattery</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,2.5)</drawSize>
 		</graphicData>
@@ -735,7 +609,7 @@
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>1.0</fuelConsumptionRate>
+				<fuelConsumptionRate>2.0</fuelConsumptionRate>
 				<fuelCapacity>30.0</fuelCapacity>
 				<autoRefuelPercent>0.1</autoRefuelPercent>
 				<fuelFilter>
@@ -763,13 +637,16 @@
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>RH_SmallCooler</defName>
 		<label>Small cooler</label>
 		<description>An electrical device that fits into a wall and pushes cold air into a room. Its exhaust port generates a lot of heat. Can be used to cool down rooms or to create a walk-in freezer.</description>
 		<thingClass>Building_Cooler</thingClass>
+		<blocksAltitudes>
+			<li>BuildingOnTop</li>
+		</blocksAltitudes>
 		<graphicData>
-			<texPath>Things/Building/Temperature/Cooler/SmallCooler</texPath>
+			<texPath>Things/Building/Temperature/SmallCooler/SmallCooler</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 		</graphicData>
 		<altitudeLayer>PawnUnused</altitudeLayer>
@@ -814,10 +691,10 @@
 					<li>Wall</li>
 					<li>ClutterSilverWall</li>
 					<li>ClutterUWallLight</li>
+					<li MayRequire="ludeon.rimworld.odyssey">GravshipHull</li>
 				</thingDefs>
 			</li>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
 				<basePowerConsumption>220</basePowerConsumption>
@@ -835,12 +712,15 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_BuildingBase">
+<!-- DefOverwrite
+	<ThingDef ParentName="BuildingBase">
 		<defName>Cooler</defName>
 		<label>cooler</label>
 		<description>An electrical device that fits into a wall and pushes cold air into a room. Its exhaust port generates a lot of heat. Can be used to cool down rooms during the summer months, or to create a walk-in freezer.</description>
 		<thingClass>Building_Cooler</thingClass>
+		<blocksAltitudes>
+			<li>BuildingOnTop</li>
+		</blocksAltitudes>
 		<graphicData>
 			<texPath>Things/Building/Temperature/Cooler/CoolerB</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -892,10 +772,10 @@
 					<li>Wall</li>
 					<li>ClutterSilverWall</li>
 					<li>ClutterUWallLight</li>
+					<li MayRequire="ludeon.rimworld.odyssey">GravshipHull</li>
 				</thingDefs>
 			</li>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
 				<basePowerConsumption>350</basePowerConsumption>
@@ -913,14 +793,14 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_BuildingBase">
+-->
+	<ThingDef ParentName="BuildingBase">
 		<defName>RedistHeat_IndustrialCooler</defName>
 		<thingClass>Building_Cooler</thingClass>
 		<label>Industrial cooler</label>
 		<description>A massive electrical device that pushes cold air into a room. It needs at least one external exhaust port.</description>
 		<graphicData>
-			<texPath>Things/Building/Temperature/Cooler/IndustrialCooler</texPath>
+			<texPath>Things/Building/Temperature/IndustrialCooler/IndustrialCooler</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,1)</drawSize>
 		</graphicData>
@@ -930,6 +810,9 @@
 			<Flammability>1.0</Flammability>
 			<Beauty>-12</Beauty>
 		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
 		<costStuffCount>145</costStuffCount>
 		<costList>
 			<Plastic>75</Plastic>
@@ -940,10 +823,10 @@
 		</costList>
 		<building>
 			<canPlaceOverWall>true</canPlaceOverWall>
+			<isAirtight>true</isAirtight>
 		</building>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
+			<li Class="SK.CompProperties_IdlePower">
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
 				<basePowerConsumption>850</basePowerConsumption>
@@ -977,7 +860,9 @@
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<!-- Other -->
+<!-- DefOverwrite
+	<ThingDef ParentName="BuildingBase">
 		<defName>Vent</defName>
 		<label>closable vent</label>
 		<thingClass>SK.Building_ClosableVent</thingClass>
@@ -991,15 +876,16 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		<altitudeLayer>PawnUnused</altitudeLayer>
-		<passability>Impassable</passability>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
 		<fillPercent>0.99</fillPercent>
 		<coversFloor>true</coversFloor>
-		<blockLight>true</blockLight>
+		<blockLight>false</blockLight>
 		<canOverlapZones>false</canOverlapZones>
 		<blockWeather>true</blockWeather>
-		<castEdgeShadows>true</castEdgeShadows>
+		<castEdgeShadows>false</castEdgeShadows>
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<clearBuildingArea>false</clearBuildingArea>
 		<statBases>
 			<WorkToBuild>700</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -1022,9 +908,12 @@
 			<li>SK.PlaceWorker_OnlyOnThing</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<modExtensions>
+			<li Class="SK.WallAttachmentExtension"/>
+		</modExtensions>
 		<building>
 			<canPlaceOverWall>true</canPlaceOverWall>
-			<isEdifice>false</isEdifice>
+			<isEdifice>true</isEdifice>
 		</building>
 		<comps>
 			<li Class="CompProperties_Flickable">
@@ -1037,6 +926,7 @@
 				<thingDefs>
 					<li>Wall</li>
 					<li>ClutterSilverWall</li>
+					<li>UtilityWall</li>
 					<li>ClutterUWallLight</li>
 				</thingDefs>
 			</li>
@@ -1047,13 +937,14 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_BuildingBase">
+-->
+	<ThingDef ParentName="BuildingBase">
 		<defName>TemperatureGauge</defName>
 		<label>thermometer</label>
+		<description>Displays the current ambient temperature and can be configured to provide temperature-based alerts. Does not require power.</description>
 		<thingClass>SK.Building_TemperatureGauge</thingClass>
 		<graphicData>
-			<texPath>Things/Building/TempGauge</texPath>
+			<texPath>Things/Building/Temperature/TempGauge</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shadowData>
 				<volume>(0.25,0.4,0.7)</volume>
@@ -1086,7 +977,6 @@
 			<Beauty>-5</Beauty>
 		</statBases>
 		<tickerType>Rare</tickerType>
-		<description>Displays the current ambient temperature and can be configured to provide temperature based alerts. Does not require power.</description>
 		<size>(1,1)</size>
 		<stuffCategories>
 			<li>StrongMetallic</li>

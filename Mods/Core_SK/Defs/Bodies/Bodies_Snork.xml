@@ -15,6 +15,9 @@
 			<def>Body</def>
 			<height>Middle</height>
 			<depth>Outside</depth>
+			<groups>
+				<li>CoveredByNaturalArmor</li>
+			</groups>
 			<parts>
 				<li>
 					<def>Spine</def>
@@ -64,18 +67,25 @@
 					<def>Neck</def>
 					<coverage>0.08</coverage>
 					<height>Top</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 					<parts>
 						<li>
 							<def>Head</def>
 							<coverage>0.75</coverage>
 							<groups>
 								<li>HeadAttackTool</li>
+								<li>CoveredByNaturalArmor</li>
 							</groups>
 							<parts>
 								<li>
 									<def>Skull</def>
 									<coverage>0.15</coverage>
 									<depth>Inside</depth>
+									<groups>
+										<li>CoveredByNaturalArmor</li>
+									</groups>
 									<parts>
 										<li>
 											<def>Brain</def>
@@ -113,6 +123,7 @@
 									<coverage>0.1</coverage>
 									<groups>
 										<li>TuskAttackTool</li>
+										<li>CoveredByNaturalArmor</li>
 									</groups>
 									<parts>
 										<li>
@@ -136,24 +147,36 @@
 					<customLabel>front left flipper</customLabel>
 					<coverage>0.07</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 				</li>
 				<li>
 					<def>Flipper</def>
 					<customLabel>front right flipper</customLabel>
 					<coverage>0.07</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 				</li>
 				<li>
 					<def>Flipper</def>
 					<customLabel>rear left flipper</customLabel>
 					<coverage>0.07</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 				</li>
 				<li>
 					<def>Flipper</def>
 					<customLabel>rear right flipper</customLabel>
 					<coverage>0.07</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 				</li>
 			</parts>
 		</corePart>

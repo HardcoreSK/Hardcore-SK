@@ -11,7 +11,7 @@
 		<effectWorking>Smith</effectWorking>
 		<soundWorking>Interact_Repair</soundWorking>
 		<recipeUsers>
-			<li>TableElectronics</li>
+			<li>TableRecycling</li>
 		</recipeUsers>
 		<skillRequirements>
 			<Crafting>10</Crafting>
@@ -20,11 +20,12 @@
 		<ingredients>
 			<li>
 				<filter>
-					<categories>
+					<!--<categories>
 						<li>ApparelUtility</li>
-					</categories>
+					</categories>-->
 					<thingDefs>
 						<li>Apparel_ShieldBelt</li>
+						<li>Apparel_ShieldGuardian</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -37,6 +38,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Apparel_ShieldBelt</li>
+				<li>Apparel_ShieldGuardian</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<workSkill>Crafting</workSkill>

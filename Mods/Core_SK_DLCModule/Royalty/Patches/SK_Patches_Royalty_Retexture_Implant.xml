@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!--======================= Источник имплантов Royalty ================================-->
+
+	<!-- Нейрокалькулятор -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Neurocalculator"]/graphicData</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/Neurocalculator</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+
+	<!-- Эстетичныйй нос -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AestheticNose"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/AestheticNose</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Цыркадный стимулятор -->
+		<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="CircadianAssistant"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/CircadianAssistant</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Цыркадный разделитель -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="CircadianHalfCycler"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/CircadianHalfCycler</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Усилитель любви -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LoveEnhancer"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/LoveEnhancer</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Коректор фигуры -->
+		<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AestheticShaper"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/AestheticShaper</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Коагулятор -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Coagulator"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/Coagulator</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Исцелитель -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="HealingEnhancer"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/HealingEnhancer</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Имунизатор -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Immunoenhancer"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/Immunoenhancer</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Желудок повторной обработки -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ReprocessorStomach"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/ReprocessorStomach</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Железа твердой кожи -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ToughskinGland"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/ToughskinGland</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Железа каменной кожи -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="StoneskinGland"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/StoneskinGland</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Бронирующая железа -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ArmorskinGland"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/ArmorskinGland</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Стерильный желудок -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DetoxifierStomach"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/DetoxifierStomach</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	 <!-- Ядерный желудок -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="NuclearStomach"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/NuclearStomach</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>				
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Гастроанализатор -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="GastroAnalyzer"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/GastroAnalyzer</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>				
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Когнитивный стимулятор -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LearningAssistant"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/LearningAssistant</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>				
+			</graphicData>
+		</value>
+	</Operation>
+
+	<!-- Пси-гормонайзер -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="PsychicHarmonizer"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/PsychicHarmonizer</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>				
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Пси-сенсибилизатор -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="PsychicSensitizer"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/PsychicSensitizer</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>				
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Пси-считыватель -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="PsychicReader"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/PsychicReader</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>				
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Агрорука -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="FieldHand"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/FieldHand</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>				
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Рука-бур -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DrillArm"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/DrillArm</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>				
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Ядовитые клыки -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VenomFangs"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/VenomFangs</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>				
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Ядовитые коготь -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VenomTalon"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/VenomTalon</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>				
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Локтевое лезвие -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ElbowBlade"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/ElbowBlade</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>				
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Коленный шип -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="KneeSpike"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/KneeSpike</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>				
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Кистьевой шип -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="HandTalon"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/HandTalon</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>				
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<!-- Мозгорез -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Mindscrew"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/BodyPart/Royalty/Mindscrew</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+				<color>(1,1,1)</color>				
+			</graphicData>
+		</value>
+	</Operation>
+
+</Patch>

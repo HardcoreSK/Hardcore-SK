@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <FleckDef ParentName="FleckBase">
+        <defName>HorrorScannerFleck</defName>
+        <altitudeLayer>Pawn</altitudeLayer>
+        <fadeInTime>0.1</fadeInTime>
+        <fadeOutTime>0.1</fadeOutTime>
+        <solidTime>1.5</solidTime>
+        <graphicData>
+            <graphicClass>Graphic_Fleck</graphicClass>
+            <texPath>Things/Building/Security/HorrorScanner/HorrorScanner_Effect</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+    </FleckDef>
+</Defs>

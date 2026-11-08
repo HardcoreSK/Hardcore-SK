@@ -24,7 +24,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>cider_Crate</li>
+						<li>Crate_Cider</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -32,11 +32,11 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>cider_Crate</li>
+				<li>Crate_Cider</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<cider>75</cider>
+			<Alcohol_Cider>75</Alcohol_Cider>
 		</products>
 	</RecipeDef>
 
@@ -47,7 +47,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>rum_Crate</li>
+						<li>Crate_Rum</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -55,11 +55,11 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>rum_Crate</li>
+				<li>Crate_Rum</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<rum>75</rum>
+			<Alcohol_Rum>75</Alcohol_Rum>
 		</products>
 	</RecipeDef>
 
@@ -70,7 +70,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Wine_Crate</li>
+						<li>Crate_Wine</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -78,22 +78,22 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Wine_Crate</li>
+				<li>Crate_Wine</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Wine>75</Wine>
+			<Alcohol_Wine>75</Alcohol_Wine>
 		</products>
 	</RecipeDef>
 
 	<RecipeDef ParentName="RecipeCrateBase">
 		<defName>EmptyCrate_strawberrywine</defName>
-		<label>empty strawberry wine crate</label>
+		<label>empty berry wine crate</label>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>strawberrywine_Crate</li>
+						<li>Crate_BerryWine</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -101,22 +101,22 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>strawberrywine_Crate</li>
+				<li>Crate_BerryWine</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<strawberrywine>75</strawberrywine>
+			<Alcohol_BerryWine>75</Alcohol_BerryWine>
 		</products>
 	</RecipeDef>
 
 	<RecipeDef ParentName="RecipeCrateBase">
 		<defName>EmptyCrate_saki</defName>
-		<label>empty saki crate</label>
+		<label>empty sake crate</label>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>saki_Crate</li>
+						<li>Crate_Sake</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -124,11 +124,11 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>saki_Crate</li>
+				<li>Crate_Sake</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<saki>75</saki>
+			<Alcohol_Sake>75</Alcohol_Sake>
 		</products>
 	</RecipeDef>
 
@@ -139,7 +139,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>vodka_Crate</li>
+						<li>Crate_Vodka</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -147,11 +147,11 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>vodka_Crate</li>
+				<li>Crate_Vodka</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<vodka>75</vodka>
+			<Alcohol_Vodka>75</Alcohol_Vodka>
 		</products>
 	</RecipeDef>
 
@@ -162,7 +162,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>tequila_Crate</li>
+						<li>Crate_Tequila</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -170,11 +170,11 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>tequila_Crate</li>
+				<li>Crate_Tequila</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<tequila>75</tequila>
+			<Alcohol_Tequila>75</Alcohol_Tequila>
 		</products>
 	</RecipeDef>
 
@@ -185,7 +185,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Whiskey_Crate</li>
+						<li>Crate_Whiskey</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -193,11 +193,11 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Whiskey_Crate</li>
+				<li>Crate_Whiskey</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<whisky>75</whisky>
+			<Alcohol_Whisky>75</Alcohol_Whisky>
 		</products>
 	</RecipeDef>
 
@@ -208,7 +208,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Moonshine_Crate</li>
+						<li>Crate_Moonshine</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -216,22 +216,22 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Moonshine_Crate</li>
+				<li>Crate_Moonshine</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Moonshine>75</Moonshine>
+			<Alcohol_Moonshine>75</Alcohol_Moonshine>
 		</products>
 	</RecipeDef>
 
 	<RecipeDef ParentName="RecipeCrateBase">
 		<defName>EmptyCrate_Gin</defName>
-		<label>empty Gin crate</label>
+		<label>empty gin crate</label>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Gin_Crate</li>
+						<li>Crate_Gin</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -239,22 +239,22 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Gin_Crate</li>
+				<li>Crate_Gin</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Gin>75</Gin>
+			<Alcohol_Gin>75</Alcohol_Gin>
 		</products>
 	</RecipeDef>
 
 	<RecipeDef ParentName="RecipeCrateBase">
 		<defName>EmptyCrate_Brandy</defName>
-		<label>empty Brandy crate</label>
+		<label>empty brandy crate</label>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Brandy_Crate</li>
+						<li>Crate_Brandy</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -262,22 +262,22 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Brandy_Crate</li>
+				<li>Crate_Brandy</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Brandy>75</Brandy>
+			<Alcohol_Brandy>75</Alcohol_Brandy>
 		</products>
 	</RecipeDef>
 
 	<RecipeDef ParentName="RecipeCrateBase">
 		<defName>EmptyCrate_Cognac</defName>
-		<label>empty Cognac crate</label>
+		<label>empty cognac crate</label>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Cognac_Crate</li>
+						<li>Crate_Cognac</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -285,22 +285,22 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Cognac_Crate</li>
+				<li>Crate_Cognac</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Cognac>75</Cognac>
+			<Alcohol_Cognac>75</Alcohol_Cognac>
 		</products>
 	</RecipeDef>
 
 	<RecipeDef ParentName="RecipeCrateBase">
 		<defName>EmptyCrate_Kahlua</defName>
-		<label>empty Kahlua crate</label>
+		<label>empty kahlua crate</label>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Kahlua_Crate</li>
+						<li>Crate_Kahlua</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -308,22 +308,22 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Kahlua_Crate</li>
+				<li>Crate_Kahlua</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Kahlua>75</Kahlua>
+			<Alcohol_Kahlua>75</Alcohol_Kahlua>
 		</products>
 	</RecipeDef>
 
 	<RecipeDef ParentName="RecipeCrateBase">
 		<defName>EmptyCrate_Arak</defName>
-		<label>empty Arak crate</label>
+		<label>empty arak crate</label>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Arak_Crate</li>
+						<li>Crate_Arak</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -331,22 +331,22 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Arak_Crate</li>
+				<li>Crate_Arak</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Arak>75</Arak>
+			<Alcohol_Arak>75</Alcohol_Arak>
 		</products>
 	</RecipeDef>
 
 	<RecipeDef ParentName="RecipeCrateBase">
 		<defName>EmptyCrate_Applejack</defName>
-		<label>empty Applejack crate</label>
+		<label>empty applejack crate</label>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Applejack_Crate</li>
+						<li>Crate_Applejack</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -354,34 +354,11 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Applejack_Crate</li>
+				<li>Crate_Applejack</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Applejack>75</Applejack>
-		</products>
-	</RecipeDef>
-
-	<RecipeDef ParentName="RecipeCrateBase">
-		<defName>EmptyCrate_Patreonbrew</defName>
-		<label>empty patreonbrew crate</label>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Patreonbrew_Crate</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Patreonbrew_Crate</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<products>
-			<Patreonbrew>75</Patreonbrew>
+			<Alcohol_Applejack>75</Alcohol_Applejack>
 		</products>
 	</RecipeDef>
 

@@ -13,11 +13,27 @@
 	<AIRobot_Hauler.description>Dieses ist ein Transportroboter. Er trägt deine Einkäufe nach Hause und befördert sogar dein neues Klavier in deine Wohnung in der 20.Etage.</AIRobot_Hauler.description>
 	<AIRobot_Cleaner.description>Ein Reinigungsroboter. Reinigt deinen Raum während du weg bist. VORSICHT: Nicht in die Nähe von Kleintieren bringen!</AIRobot_Cleaner.description>
 	
-	<AIRobot_Hauler_disabled.label>Transportbot (disabled)</AIRobot_Hauler_disabled.label>
+		<!--
+	HSK Patched out or doesn't exist.
+	
+	Key: AIRobot_Hauler_disabled.label
+	Reason: Found no Verse.ThingDef named AIRobot_Hauler_disabled to match AIRobot_Hauler_disabled.label (AIRobot_Base.xml)
+	
+	Key: AIRobot_Hauler_disabled.description
+	Reason: Found no Verse.ThingDef named AIRobot_Hauler_disabled to match AIRobot_Hauler_disabled.description (AIRobot_Base.xml)
+	
+	Key: AIRobot_Cleaner_disabled.label
+	Reason: Found no Verse.ThingDef named AIRobot_Cleaner_disabled to match AIRobot_Cleaner_disabled.label (AIRobot_Base.xml)
+	
+	Key: AIRobot_Cleaner_disabled.description
+	Reason: Found no Verse.ThingDef named AIRobot_Cleaner_disabled to match AIRobot_Cleaner_disabled.description (AIRobot_Base.xml)
+	
+<AIRobot_Hauler_disabled.label>Transportbot (disabled)</AIRobot_Hauler_disabled.label>
 	<AIRobot_Hauler_disabled.description>Dies ist der traurige Rest eines Roboters. Er ist nicht länger brauchbar und kann nur noch zerlegt werden.</AIRobot_Hauler_disabled.description>
 	
 	<AIRobot_Cleaner_disabled.label>Reinigungsbot (disabled)</AIRobot_Cleaner_disabled.label>
 	<AIRobot_Cleaner_disabled.description>Dies ist der traurige Rest eines Roboters. Er ist nicht länger brauchbar und kann nur noch zerlegt werden.</AIRobot_Cleaner_disabled.description>
+	-->
 	
 	<AIRobot_Hauler.tools.0.label>linker Manipulator</AIRobot_Hauler.tools.0.label>
 	<AIRobot_Hauler.tools.1.label>rechter Manipulator</AIRobot_Hauler.tools.1.label>

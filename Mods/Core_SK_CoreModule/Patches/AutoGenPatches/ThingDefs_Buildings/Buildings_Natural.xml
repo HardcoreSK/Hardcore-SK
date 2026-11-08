@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAttributeSet">
+	  <xpath>Defs/ThingDef[@Name="BuildingNaturalBase"]</xpath>
+	  <attribute>ParentName</attribute>
+	  <value>BuildingBase</value>
+  </Operation>
+	
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="CollapsedRocks"]</xpath>
+    <value>
+      <label>Collapsed Rocks</label>
+      <statBases>
+        <MaxHitPoints>1200</MaxHitPoints>
+      </statBases>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="MineableSteel"]</xpath>
+    <value>
+      <label>Iron Ore Deposits</label>
+      <statBases>
+        <MaxHitPoints>2800</MaxHitPoints>
+      </statBases>
+      <description>Deposits of Iron Ore. Iron Ore has a variety of uses as an economic metal, being abundant and easy to process. It can be strengthened by being mixed with other metals into alloys.</description>
+      <building>
+        <isResourceRock>true</isResourceRock>
+        <mineableThing>Iron</mineableThing>
+        <mineableYield>35</mineableYield>
+        <mineableScatterCommonality>1.1</mineableScatterCommonality>
+		<mineableScatterLumpSizeRange>20~40</mineableScatterLumpSizeRange>
+        <veinMineable>true</veinMineable>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="MineableSilver"]</xpath>
+    <value>
+      <label>Silver Ore Deposits</label>
+      <statBases>
+        <MaxHitPoints>3500</MaxHitPoints>
+      </statBases>
+      <description>Deposits of Silver Ore. Silver Ore is useful as the primary currency for trading.</description>
+      <building>
+        <isResourceRock>true</isResourceRock>
+        <mineableThing>Silver</mineableThing>
+        <mineableYield>250</mineableYield>
+        <mineableScatterCommonality>0.25</mineableScatterCommonality>
+		<mineableScatterLumpSizeRange>7~15</mineableScatterLumpSizeRange>
+        <veinMineable>true</veinMineable>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="MineableGold"]</xpath>
+    <value>
+      <label>Gold Ore Deposits</label>
+      <statBases>
+        <MaxHitPoints>4500</MaxHitPoints>
+      </statBases>
+      <description>Deposits of Gold Ore. Gold Ore is a very valuable and precious metal. The allure of this rare beautiful metal is known to bring out terrible greed in people.</description>
+      <building>
+        <isResourceRock>true</isResourceRock>
+        <mineableThing>Gold</mineableThing>
+        <mineableYield>50</mineableYield>
+        <mineableScatterCommonality>0.15</mineableScatterCommonality>
+		<mineableScatterLumpSizeRange>3~9</mineableScatterLumpSizeRange>
+        <veinMineable>true</veinMineable>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="MineablePlasteel"]</xpath>
+    <value>
+      <label>Compacted Ferrotitanium</label>
+      <graphicData DeepReplace="true">
+        <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>CutoutComplex</shaderType>
+        <color>(160,178,181)</color>
+      </graphicData>
+      <statBases>
+        <MaxHitPoints>10000</MaxHitPoints>
+      </statBases>
+      <description>Ancient compacted rubble rich in Ferrotitanium.</description>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="MineableJade"]</xpath>
+    <value>
+      <label>Jade</label>
+      <statBases>
+        <MaxHitPoints>6000</MaxHitPoints>
+      </statBases>
+      <building>
+        <isResourceRock>true</isResourceRock>
+        <mineableThing>Jade</mineableThing>
+        <mineableYield>75</mineableYield>
+        <mineableScatterCommonality>0.25</mineableScatterCommonality>
+		<mineableScatterLumpSizeRange>7~12</mineableScatterLumpSizeRange>
+        <veinMineable>true</veinMineable>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="SteamGeyser"]</xpath>
+    <value>
+      <destroyable>true</destroyable>
+      <statBases>
+        <WorkToMake>2500</WorkToMake>
+      </statBases>
+      <building>
+        <isEdifice>false</isEdifice>
+        <claimable>false</claimable>
+        <deconstructible>true</deconstructible>
+        <alwaysDeconstructible>true</alwaysDeconstructible>
+        <relatedBuildCommands>
+          <li>GeothermalGenerator</li>
+        </relatedBuildCommands>
+        <alwaysShowRelatedBuildCommands>true</alwaysShowRelatedBuildCommands>
+      </building>
+      <modExtensions>
+        <li Class="SK.ThingGround">
+			</li>
+      </modExtensions>
+    </value>
+  </Operation>
+<!-- Exact same 
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="MineableComponentsIndustrial"]</xpath>
+    <value>
+      <building>
+        <isResourceRock>true</isResourceRock>
+        <mineableThing>ComponentIndustrial</mineableThing>
+        <mineableYield>2</mineableYield>
+        <mineableScatterCommonality>1.00</mineableScatterCommonality>
+        <mineableScatterLumpSizeRange>
+          <min>3</min>
+          <max>6</max>
+        </mineableScatterLumpSizeRange>
+        <veinMineable>true</veinMineable>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="RaisedRocks"]</xpath>
+    <value>
+      <building>
+        <isNaturalRock>false</isNaturalRock>
+        <claimable>false</claimable>
+        <destroySound>ChunkRock_Drop</destroySound>
+      </building>
+    </value>
+  </Operation>
+-->
+</Patch>

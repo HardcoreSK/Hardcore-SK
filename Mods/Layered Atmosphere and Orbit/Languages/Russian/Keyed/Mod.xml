@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<LayeredAtmosphereOrbit.Settings.Title>Layered Atmosphere and Orbit</LayeredAtmosphereOrbit.Settings.Title>
+	
+	<LayeredAtmosphereOrbit.Settings.UseFuelCostBetweenLayers>Добавляет стоимость топлива для перемещения между слоями на основе расстояния в км. (В ваниле отключено.)</LayeredAtmosphereOrbit.Settings.UseFuelCostBetweenLayers>
+	<LayeredAtmosphereOrbit.Settings.FuelPerKm>Стоимость топлива для перемещения между слоями: {0} за км. (В ваниле 0.)</LayeredAtmosphereOrbit.Settings.FuelPerKm>
+	<LayeredAtmosphereOrbit.Settings.KmPerFuelSpace>Стоимость топлива для перемещения между планетами: {0} км за 1 ед. топлива. (В ваниле -1, что означает бесплатно.)</LayeredAtmosphereOrbit.Settings.KmPerFuelSpace>
+	
+	<LayeredAtmosphereOrbit.Settings.GravshipRoute>Гравикорабль будет перемещаться между слоями планеты, меняя свою высоту во время путешествия. Это позволит ему двигаться по XYZ, а не только по XZ. (В ванильной версии гравикорабль телепортируется на нужный слой мгновенно. Требуется перезапуск игры.)</LayeredAtmosphereOrbit.Settings.GravshipRoute>
+	
+	<LayeredAtmosphereOrbit.Settings.ShowLayerInGroup>Показывать слои планеты в той же или схожей группе. (Например, позволяет видеть летающие острова при выборе слоя поверхности. Требуется перезапуск игры.)</LayeredAtmosphereOrbit.Settings.ShowLayerInGroup>
+	<LayeredAtmosphereOrbit.Settings.AutoSwapLayerOnSelection>При выборе объекта на карте мира, который находится вне текущего слоя, произойдет автоматическое переключение на этот слой. (Полезно для быстрого переключения между слоями в одной группе слоев планеты. Требуется перезапуск игры.)</LayeredAtmosphereOrbit.Settings.AutoSwapLayerOnSelection>
+	<LayeredAtmosphereOrbit.Settings.TransparentInGroup>Прозрачность объектов на карте мира в слое, относящемся к той же группе слоев планеты: {0}. (При значении выше 50% позволяет выбирать объекты на карте мира из той же группы слоев планеты. По умолчанию 60%. В ваниле 30%.)</LayeredAtmosphereOrbit.Settings.TransparentInGroup>
+	<LayeredAtmosphereOrbit.Settings.TransparentInGroupSub>Прозрачность объектов на карте мира в слое, относящемся к схожей группе слоев планеты: {0}. (Например, относится к значению летающих островов, когда выбран поверхностный слой. По умолчанию 30%.)</LayeredAtmosphereOrbit.Settings.TransparentInGroupSub>
+	<LayeredAtmosphereOrbit.Settings.ReplaceAllViewLayerGizmo>Скрыть стандартные кнопки для просмотра слоев и оставить только кастомную. (Полезно, если у вас много слоев планеты. Требуется перезапуск игры.)</LayeredAtmosphereOrbit.Settings.ReplaceAllViewLayerGizmo>
+	<LayeredAtmosphereOrbit.Settings.GroupedAllViewLayerGizmo>Объединяет слои по группам и планетам в кастомной кнопке для просмотре слоём. (Полезно, когда у вас больше одной планеты.)</LayeredAtmosphereOrbit.Settings.GroupedAllViewLayerGizmo>
+	<LayeredAtmosphereOrbit.Settings.PlanetPatches>Включить патчи планет. (Необходимо для работы лун и других планет. Требуется перезапуск игры.)</LayeredAtmosphereOrbit.Settings.PlanetPatches>
+	<LayeredAtmosphereOrbit.Settings.HideOtherPlanets>Скрыть другие планеты, кроме выбранной в данный момент. (Требуется перезапуск игры.)</LayeredAtmosphereOrbit.Settings.HideOtherPlanets>
+	<LayeredAtmosphereOrbit.Settings.HideWorldTabs>Скрыть стандартные вкладки интерфейса карты мира, такие как «Ландшафт» и «Планета», так как вкладка «Слой» содержит всю эту информацию.</LayeredAtmosphereOrbit.Settings.HideWorldTabs>
+	
+	<LayeredAtmosphereOrbit.Settings.AutoAddLayersDefName.Total>Слои планеты, которые будут добавлены: (Требуется перезапуск игры.)</LayeredAtmosphereOrbit.Settings.AutoAddLayersDefName.Total>
+	<LayeredAtmosphereOrbit.Settings.AutoAddLayersDefName.Option>- {0}</LayeredAtmosphereOrbit.Settings.AutoAddLayersDefName.Option>
+	<LayeredAtmosphereOrbit.Settings.AutoAddLayersDefName.OptionOutdated>- {0} [Отсутствует]</LayeredAtmosphereOrbit.Settings.AutoAddLayersDefName.OptionOutdated>
+	
+	<LayeredAtmosphereOrbit.Settings.isOpenDebugFloatingIslandMapGen>[Debug] Open Floating Island Map Generator.</LayeredAtmosphereOrbit.Settings.isOpenDebugFloatingIslandMapGen>
+	
+</LanguageData>

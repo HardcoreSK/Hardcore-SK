@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FactionDef ParentName="SK_HumanFactionBase">
+	<FactionDef ParentName="FactionBase">
 		<defName>Syndicate</defName>
 		<label>Syndicate faction</label>		
 		<pawnSingular>syndicate faction</pawnSingular>
@@ -23,13 +23,10 @@
 		</colorSpectrum>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Baseline_Dova MayRequire="Ludeon.RimWorld.Biotech">0.75</Baseline_Dova>
-				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.1</Dirtmole>
+				<Baseline_Dova MayRequire="Ludeon.RimWorld.Biotech">0.9</Baseline_Dova>
 				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.05</Hussar>
-				<Waster MayRequire="Ludeon.RimWorld.Biotech">0.025</Waster>
-				<Impid MayRequire="Ludeon.RimWorld.Biotech">0.025</Impid>
 				<Genie MayRequire="Ludeon.RimWorld.Biotech">0.025</Genie>
-				<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.025</Yttakin>
+				<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.025</Starjack>
 			</xenotypeChances>
 		</xenotypeSet>
 		<factionIconPath>World/WorldObjects/Expanding/Syndicate</factionIconPath>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[@Name="OutfitStandBase"]</xpath>
+        <value>
+            <stuffCategories>
+                <li>Metallic</li>
+                <li>Woody</li>
+            </stuffCategories>
+            <designationCategory>ASFstorage</designationCategory>
+        </value>
+    </Operation>
+</Patch>

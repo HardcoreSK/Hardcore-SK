@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Tallow</defName>
 		<label>tallow</label>
 		<description>Pure non-edible fat that can be used to fuel simple buildings that don't require high burning temperature.</description>
@@ -32,10 +32,11 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<!--
+	<ThingDef ParentName="ResourceBase">
 		<defName>Chemfuel</defName>
 		<label>chemfuel</label>
-		<description>A volatile liquid chemical. Used to fuel engines and rockets, or to transmute into propellant for projectiles, or as an incendiary weapon.</description>
+		<description>A volatile liquid chemical. Used to fuel engines, or to transmute into propellant for projectiles, or as an incendiary weapon.</description>
 		<possessionCount>20</possessionCount>
 		<graphicData>
 			<texPath>Things/Item/Resource/EthanolFuel</texPath>
@@ -48,7 +49,9 @@
 		<techLevel>Industrial</techLevel>
 		<healthAffectsPrice>false</healthAffectsPrice>
 		<intricate>true</intricate>
+	-->
 		<!-- Not returned to player when product made of this is smelted. -->
+	<!--
 		<statBases>
 			<MaxHitPoints>5</MaxHitPoints>
 			<MarketValue>6</MarketValue>
@@ -81,8 +84,9 @@
 			<stuffAdjective>fuel</stuffAdjective>
 		</stuffProps>
 	</ThingDef>
+	-->
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Powder</defName>
 		<label>Gunpowder</label>
 		<description>Gunpowder, also known as black powder, is the earliest known chemical explosive. It is a mixture of Sulfur, Coal Ore and Nitre. The Sulfur and Coal Ore act as fuels, and the Nitre is an oxidizer.</description>
@@ -121,7 +125,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Napalm</defName>
 		<label>Napalm</label>
 		<description>Napalm is flammable liquid used in warfare. It is a mixture of a gelling agent and petroleum or a similar fuel.</description>

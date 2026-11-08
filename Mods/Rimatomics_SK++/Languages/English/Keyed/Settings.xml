@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <RimatomicsPlusPlus.SettingsCategory>Rimatomics++</RimatomicsPlusPlus.SettingsCategory>
+
+    <!-- base -->
+
+    <RimatomicsPlusPlus.NukesIgnoreHeavyWeaponsSystems.Label>Nukes ignore heavy weapons systems</RimatomicsPlusPlus.NukesIgnoreHeavyWeaponsSystems.Label>
+    <RimatomicsPlusPlus.NukesIgnoreHeavyWeaponsSystems.Description>You can't launch transport pods at a location with heavy weapons systems.\nAn ICBM would also get shot down, right?</RimatomicsPlusPlus.NukesIgnoreHeavyWeaponsSystems.Description>
+
+    <RimatomicsPlusPlus.SettlementDestructionGoodwill.Label>Settlement destruction goodwill gain</RimatomicsPlusPlus.SettlementDestructionGoodwill.Label>
+    <RimatomicsPlusPlus.SettlementDestructionGoodwill.Description>Destroying a faction's settlement gives you +20 goodwill with every faction that is hostile to them.\nNuking settlements is generally easier, so should give less goodwill.</RimatomicsPlusPlus.SettlementDestructionGoodwill.Description>
+
+    <RimatomicsPlusPlus.FalloutInSpace.Label>Nuclear fallout in space</RimatomicsPlusPlus.FalloutInSpace.Label>
+    <RimatomicsPlusPlus.FalloutInSpace.Description>High-yield nuclear detonations usually spread fallout to the surrounding tiles.\nDoesn't really make sense for that to happen in the vacuum of space though...</RimatomicsPlusPlus.FalloutInSpace.Description>
+
+    <!-- patches -->
+
+    <RimatomicsPlusPlus.Patches.Label>Patches</RimatomicsPlusPlus.Patches.Label>
+    <RimatomicsPlusPlus.Patches.Description>Changing any of these will require a restart, hover over each one for more details.</RimatomicsPlusPlus.Patches.Description>
+
+    <!-- c# -->
+
+    <RimatomicsPlusPlus.LaunchPadTargeting.Label>Liberator targeting (Building_LaunchPad.StartChoosingDestination)</RimatomicsPlusPlus.LaunchPadTargeting.Label>
+    <RimatomicsPlusPlus.LaunchPadTargeting.Description>Overhauls world tile targeting logic and UI for strategic missile launches.\n\nWhen Disabled:\n- Targeting tiles on different layers will not work.\n- Looking at far away tiles will cause noticeable frame drops even when the guidance system upgrade is unlocked.\n- The "nukes ignore heavy weapons systems" setting will not do anything.</RimatomicsPlusPlus.LaunchPadTargeting.Description>
+
+    <RimatomicsPlusPlus.RailgunTargeting.Label>Punisher targeting (Building_Railgun.StartChoosingDestination)</RimatomicsPlusPlus.RailgunTargeting.Label>
+    <RimatomicsPlusPlus.RailgunTargeting.Description>Overhauls world tile targeting logic and UI for fire missions.\n\nWhen Disabled:\n- Targeting tiles on different layers will not work.\n- The ABOS upgrade will not allow Punishers to fire mission their own map.\n- The EEPA upgrade will not impact maximum fire mission range.\n- The ABOS and EEPA upgrades will not impact pulse size.</RimatomicsPlusPlus.RailgunTargeting.Description>
+
+    <RimatomicsPlusPlus.RadiationWarnings.Label>Radiation warnings (DubUtils.applyRads)</RimatomicsPlusPlus.RadiationWarnings.Label>
+    <RimatomicsPlusPlus.RadiationWarnings.Description>Suppresses the console warning spam that occurs when a pawn is irradiated.</RimatomicsPlusPlus.RadiationWarnings.Description>
+
+    <RimatomicsPlusPlus.NukeWorldObject.Label>ICBM world object (BaseMissile.Tick)</RimatomicsPlusPlus.NukeWorldObject.Label>
+    <RimatomicsPlusPlus.NukeWorldObject.Description>Replaces the strategic missile world object with a custom one.\n\nWhen Disabled:\n- Targeting tiles on different layers will not work.\n- The afterburners upgrade will not do anything.\n- The "settlement destruction goodwill gain" and "nuclear fallout in space" settings will not do anything.</RimatomicsPlusPlus.NukeWorldObject.Description>
+
+    <RimatomicsPlusPlus.SabotWorldObject.Label>Sabot world object (Verb_Railgun.TryCastFireMission)</RimatomicsPlusPlus.SabotWorldObject.Label>
+    <RimatomicsPlusPlus.SabotWorldObject.Description>Replaces the sabot world object with a custom one.\n\nWhen Disabled:\n- Targeting tiles on different layers will not work.\n- The ABOS upgrade will not impact sabot world travel speed.</RimatomicsPlusPlus.SabotWorldObject.Description>
+
+    <RimatomicsPlusPlus.BatteryAlert.Label>Need batteries alert (Alert_NeedBatteries.NeedBatteries)</RimatomicsPlusPlus.BatteryAlert.Label>
+    <RimatomicsPlusPlus.BatteryAlert.Description>Stops the "need batteries" alert from appearing if you have PPCs or similar buildings.</RimatomicsPlusPlus.BatteryAlert.Description>
+
+    <RimatomicsPlusPlus.NukeCellFlash.Label>Nuclear explosion cell flashes (NuclearStrike.Flash)</RimatomicsPlusPlus.NukeCellFlash.Label>
+    <RimatomicsPlusPlus.NukeCellFlash.Description>Fixes errors caused by nuclear explosions trying to update terrain on out-of-bounds cells.</RimatomicsPlusPlus.NukeCellFlash.Description>
+
+    <RimatomicsPlusPlus.RailgunSpread.Label>Punisher spread (Building_Railgun.spread)</RimatomicsPlusPlus.RailgunSpread.Label>
+    <RimatomicsPlusPlus.RailgunSpread.Description>Adds buttons for adjusting fire mission spread on Punishers with the targeting chip upgrade.</RimatomicsPlusPlus.RailgunSpread.Description>
+
+    <RimatomicsPlusPlus.RailgunLOS.Label>Punisher line of sight (Verb_Railgun.CanHitCellFromCellIgnoringRange)</RimatomicsPlusPlus.RailgunLOS.Label>
+    <RimatomicsPlusPlus.RailgunLOS.Description>Enables firing without line of sight when the ABOS upgrade is installed.</RimatomicsPlusPlus.RailgunLOS.Description>
+
+    <RimatomicsPlusPlus.FuelRodUI.Label>Fuel rod UI (Dialog_ReactorConsole.drawSlot)</RimatomicsPlusPlus.FuelRodUI.Label>
+    <RimatomicsPlusPlus.FuelRodUI.Description>Fixes text wrapping issues when displaying fuel rod power in the reactor control UI.</RimatomicsPlusPlus.FuelRodUI.Description>
+
+    <RimatomicsPlusPlus.ResearchBenchInspect.Label>Research bench inspect string (Building_RimatomicsResearchBench.GetInspectString)</RimatomicsPlusPlus.ResearchBenchInspect.Label>
+    <RimatomicsPlusPlus.ResearchBenchInspect.Description>Adds information about what is currently being researched in the inspect pane of Rimatomics research benches.</RimatomicsPlusPlus.ResearchBenchInspect.Description>
+
+    <!-- multiplayer -->
+
+    <RimatomicsPlusPlus.NukeFalloutMultiplayer.Label>[MP] Nuclear explosion fallout RNG (NuclearStrike.StartStrike)</RimatomicsPlusPlus.NukeFalloutMultiplayer.Label>
+    <RimatomicsPlusPlus.NukeFalloutMultiplayer.Description>Fixes potential desyncs caused by non-deterministic RNG related to the duration of fallout caused by high yield nuclear explosions.</RimatomicsPlusPlus.NukeFalloutMultiplayer.Description>
+
+    <RimatomicsPlusPlus.EnergyWeaponBurstMultiplayer.Label>[MP] Energy weapon burst (Building_EnergyWeapon.BeginBurst)</RimatomicsPlusPlus.EnergyWeaponBurstMultiplayer.Label>
+    <RimatomicsPlusPlus.EnergyWeaponBurstMultiplayer.Description>Fixes potential desyncs caused by this method. I'm not sure how nor why this method is desyncing, but hopefully this fixes it...</RimatomicsPlusPlus.EnergyWeaponBurstMultiplayer.Description>
+
+    <RimatomicsPlusPlus.ReactorManMultiplayer.Label>[MP] Manned reactor consoles (ReactorControl.GetFloatMenuOptions)</RimatomicsPlusPlus.ReactorManMultiplayer.Label>
+    <RimatomicsPlusPlus.ReactorManMultiplayer.Description>Fixes desyncs caused by opening the reactor UI with a pawn instead of directly. This will also change the setting in Rimatomics.</RimatomicsPlusPlus.ReactorManMultiplayer.Description>
+
+    <RimatomicsPlusPlus.SiloYieldMultiplayer.Label>[MP] Liberator yield buttons (MissileSilo.GetGizmos)</RimatomicsPlusPlus.SiloYieldMultiplayer.Label>
+    <RimatomicsPlusPlus.SiloYieldMultiplayer.Description>Fixes desyncs caused by changing nuclear missile yields.</RimatomicsPlusPlus.SiloYieldMultiplayer.Description>
+
+    <RimatomicsPlusPlus.WeaponsBenchMultiplayer.Label>[MP] Weapons bench tick seeding (Building_WeaponsBench.Tick)</RimatomicsPlusPlus.WeaponsBenchMultiplayer.Label>
+    <RimatomicsPlusPlus.WeaponsBenchMultiplayer.Description>Fixes potential desyncs caused by randomly-generated laser VFX positioning on weapons benches.</RimatomicsPlusPlus.WeaponsBenchMultiplayer.Description>
+
+    <!-- xml -->
+
+    <RimatomicsPlusPlus.Research.Label>Rimatomics research project (XML)</RimatomicsPlusPlus.Research.Label>
+    <RimatomicsPlusPlus.Research.Description>Moves the Rimatomics research project to the main tab and adjusts its cost to 1000.</RimatomicsPlusPlus.Research.Description>
+
+    <RimatomicsPlusPlus.FatalRad.Label>Fatal radiation exposure (XML)</RimatomicsPlusPlus.FatalRad.Label>
+    <RimatomicsPlusPlus.FatalRad.Description>Removes the stage labels of the fatal radiation exposure (i.e. acute radiation syndome) hediff.\n\nThis option is only really here to disable if a translation is breaking.</RimatomicsPlusPlus.FatalRad.Description>
+
+    <RimatomicsPlusPlus.Ordering.Label>UI ordering (XML)</RimatomicsPlusPlus.Ordering.Label>
+    <RimatomicsPlusPlus.Ordering.Description>Tweaks the UI ordering of all the buildings in the Rimatomics tab of the architect menu.</RimatomicsPlusPlus.Ordering.Description>
+
+    <RimatomicsPlusPlus.PipeDeconstruct.Label>Deconstruct pipes button (XML)</RimatomicsPlusPlus.PipeDeconstruct.Label>
+    <RimatomicsPlusPlus.PipeDeconstruct.Description>Removes the "Deconstruct Pipes" button from the Rimatomics architect tab.</RimatomicsPlusPlus.PipeDeconstruct.Description>
+</LanguageData>

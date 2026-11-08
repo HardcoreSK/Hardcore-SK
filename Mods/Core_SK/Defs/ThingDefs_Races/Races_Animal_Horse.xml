@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ========================== Horses ============================ -->
-	<ThingDef Abstract="True" ParentName="SK_AnimalThingBase" Name="BaseHorses">
+	<ThingDef Abstract="True" ParentName="AnimalThingBase" Name="BaseHorses">
 		<race>
 			<body>QuadrupedAnimalWithHooves</body>
 			<herdAnimal>true</herdAnimal>
@@ -13,7 +13,6 @@
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Plain</leatherDef>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<wildness>0.3</wildness>
 			<roamMtbDays>2</roamMtbDays>
 			<trainability>None</trainability>
 			<manhunterOnDamageChance>0.3</manhunterOnDamageChance>
@@ -104,8 +103,12 @@
 				<bodyShape>Quadruped</bodyShape>
 			</li>
 		</modExtensions>
+		<statBases>
+			<Wildness>0.3</Wildness>
+		</statBases>
 	</ThingDef>
 
+	<!-- DefOverwrite
 	<ThingDef ParentName="BaseHorses">
 		<defName>Horse</defName>
 		<label>horse</label>
@@ -123,15 +126,16 @@
 			<FilthRate>16</FilthRate>
 			<CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
 		</statBases>
-		 <uiIconScale>1.1</uiIconScale>
+		<uiIconScale>1.1</uiIconScale>
 		<race>
 			<baseBodySize>1.3</baseBodySize>
 			<baseHungerRate>1</baseHungerRate>
 			<baseHealthScale>1.6</baseHealthScale>
 		</race>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Horse</defName>
 		<label>horse</label>
 		<race>Horse</race>
@@ -192,7 +196,7 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
+ -->
 	<!-- ======================== Woolly Horse ==================================-->
 	<ThingDef ParentName="BaseHorses">
 		<defName>Horse_Wooly</defName>
@@ -220,7 +224,7 @@
 		</race>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Horse_Wooly</defName>
 		<label>woolly horse</label>
 		<race>Horse_Wooly</race>

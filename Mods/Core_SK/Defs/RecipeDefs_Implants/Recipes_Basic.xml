@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef ParentName="MakeSimpleImplantBase">
+        <defName>CreateEyePatch</defName>
+        <label>make Eye Patch</label>
+        <description>Covers the eye socket. Intimidating.</description>
+        <jobString>making eye patch</jobString>
+        <ingredients>
+            <li>
+                <filter>
+					<categories>
+						<li>Leathers</li>
+						<li>Textiles</li>
+					</categories>
+                </filter>
+                <count>15</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Leathers</li>
+                <li>Textiles</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <EyePatch>1</EyePatch>
+        </products>
+        <skillRequirements>
+            <Crafting>1</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+
+    <RecipeDef ParentName="MakeSimpleImplantBase">
+        <defName>CreateClothTail</defName>
+        <label>make cloth tail</label>
+        <description>A very poor tail replacement. Looks bad, feels bad, is bad.</description>
+        <jobString>making cloth tail</jobString>
+        <ingredients>
+            <li>
+                <filter>
+					<categories>
+						<li>Leathers</li>
+					</categories>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+					<categories>
+						<li>Textiles</li>
+					</categories>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Wire</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Leathers</li>
+                <li>Textiles</li>
+            </categories>
+            <thingDefs>
+                <li>Wire</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <OClothTail>1</OClothTail>
+        </products>
+        <skillRequirements>
+            <Crafting>2</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+
+    <RecipeDef ParentName="MakeSimpleImplantBase">
+        <defName>CreateArtificialNose</defName>
+        <label>make Artificial Nose</label>
+        <description>Replaces missing hands. Way more comfortable and less frightening than the hook hand.</description>
+        <jobString>making artificial nose</jobString>
+        <researchPrerequisite>Prosthesis_making_B1</researchPrerequisite>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentMedieval</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SilverBar</li>
+                        <li>TinBar</li>
+                        <li>GoldBar</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+					<categories>
+						<li>Wooden</li>
+					</categories>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+					<categories>
+						<li>Leathers</li>
+					</categories>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Wooden</li>
+                <li>Leathers</li>
+            </categories>
+            <thingDefs>
+                <li>ComponentMedieval</li>
+                <li>SilverBar</li>
+                <li>TinBar</li>
+                <li>GoldBar</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ArtificialNose>1</ArtificialNose>
+        </products>
+        <skillRequirements>
+            <Crafting>4</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+
+    <RecipeDef ParentName="MakeSimpleImplantBase">
+        <defName>CreateSimpleProstheticHand</defName>
+        <label>make Simple Prosthetic Hand</label>
+        <description>Replaces missing hands. Way more comfortable and less frightening than the hook hand.</description>
+        <jobString>making simple prosthetic hand</jobString>
+        <researchPrerequisite>Prosthesis_making_B1</researchPrerequisite>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentMedieval</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Mechanism</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>SLDBar</li>
+                        <li>USLDBar</li>
+                    </categories>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+					<categories>
+						<li>Wooden</li>
+					</categories>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>SLDBar</li>
+                <li>USLDBar</li>
+                <li>Wooden</li>
+            </categories>
+            <thingDefs>
+                <li>ComponentMedieval</li>
+                <li>Mechanism</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <SimpleProstheticHand>1</SimpleProstheticHand>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="MakeSimpleImplantBase">
+        <defName>CreateSimpleProstheticArm</defName>
+        <label>make Simple Prosthetic Arm</label>
+        <description>A simple but durable arm prosthesis.</description>
+        <jobString>making simple prosthetic arm</jobString>
+        <researchPrerequisite>Prosthesis_making_B1</researchPrerequisite>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentMedieval</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Mechanism</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>SLDBar</li>
+                        <li>USLDBar</li>
+                    </categories>
+                </filter>
+                <count>30</count>
+            </li>
+            <li>
+                <filter>
+					<categories>
+						<li>Wooden</li>
+					</categories>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>SLDBar</li>
+                <li>USLDBar</li>
+                <li>Wooden</li>
+            </categories>
+            <thingDefs>
+                <li>ComponentMedieval</li>
+                <li>Mechanism</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <SimpleProstheticArm>1</SimpleProstheticArm>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="MakeSimpleImplantBase">
+        <defName>CreateSimpleProstheticFoot</defName>
+        <label>make Simple Prosthetic Foot</label>
+        <description>Replaces missing feet. Not as cheap as a wood log.</description>
+        <jobString>making simple prosthetic foot</jobString>
+        <researchPrerequisite>Prosthesis_making_B1</researchPrerequisite>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentMedieval</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Mechanism</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>SLDBar</li>
+                        <li>USLDBar</li>
+                    </categories>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+					<categories>
+						<li>Wooden</li>
+					</categories>
+                </filter>
+                <count>15</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>SLDBar</li>
+                <li>USLDBar</li>
+                <li>Wooden</li>
+            </categories>
+            <thingDefs>
+                <li>ComponentMedieval</li>
+                <li>Mechanism</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <SimpleProstheticFoot>1</SimpleProstheticFoot>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="MakeSimpleImplantBase">
+        <defName>CreateSimpleProstheticLeg</defName>
+        <label>make Simple Prosthetic Leg</label>
+        <description>Simple prosthesis made to replace missing leg. Not very comfortable but quite efficient.</description>
+        <jobString>making simple prosthetic leg</jobString>
+        <researchPrerequisite>Prosthesis_making_B1</researchPrerequisite>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentMedieval</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Mechanism</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>SLDBar</li>
+                        <li>USLDBar</li>
+                    </categories>
+                </filter>
+                <count>40</count>
+            </li>
+            <li>
+                <filter>
+					<categories>
+						<li>Wooden</li>
+					</categories>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>SLDBar</li>
+                <li>USLDBar</li>
+                <li>Wooden</li>
+            </categories>
+            <thingDefs>
+                <li>ComponentMedieval</li>
+                <li>Mechanism</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <SimpleProstheticLeg>1</SimpleProstheticLeg>
+        </products>
+    </RecipeDef>
+</Defs>

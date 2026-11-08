@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RecipeDef>
+		<defName>Make_HemogenPack</defName>
+		<label>Make Hemogen Pack</label>
+		<description>Transform Soylent Green into hemogen packs.</description>
+		<jobString>Making hemogen packs.</jobString>
+		<workAmount>1400</workAmount>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Bio_Matter_Sound</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>soylentgreen</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<products>
+			<HemogenPack>5</HemogenPack>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>soylentgreen</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>soylentgreen</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<recipeUsers>
+			<li>soylenttable</li>
+		</recipeUsers>
+		<workSkill>Medicine</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>NutrientPaste</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

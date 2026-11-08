@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>RK_Thing_BionicTail</defName>
+		<label>bionic tail</label>
+		<description>An advanced artificial tail. It also has a small AI that automatically balances the user's missing.</description>
+		<techLevel>Spacer</techLevel>
+		<costList> 
+			<Plasteel>12</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<statBases>
+			<WorkToMake>26000</WorkToMake>
+			<Mass>5</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BodyPartArchotechBase">
+		<defName>RK_Thing_ArchotechTail</defName>
+		<label>archotech ratkin tail</label>
+		<description>An artificial ratkin tail built by an archotech. It senses posture and micro-movements to keep the bearer perfectly balanced, feels like living flesh, and is harder to damage than plasteel. If harmed, it repairs itself over time. Its inner workings are a mystery.</description>
+		<descriptionHyperlinks><RecipeDef>RK_Recipe_InstallArchotechTail</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<Mass>4</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardCore</li>
+		</thingSetMakerTags>
+	</ThingDef>
+</Defs>

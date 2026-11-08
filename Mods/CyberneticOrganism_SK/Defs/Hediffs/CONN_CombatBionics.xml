@@ -79,8 +79,10 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallZoom</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install zoom</label>
 		<description>Install zoom.</description>
 		<descriptionHyperlinks>
@@ -199,8 +201,10 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallEnergyFist</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install energy fist</label>
 		<description>Install energy fist.</description>
 		<descriptionHyperlinks>
@@ -310,8 +314,10 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallElasticAchilles</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install elastic achilles</label>
 		<description>Install elastic achilles.</description>
 		<descriptionHyperlinks>
@@ -394,7 +400,7 @@
 		<label>cyclops visor</label>
 		<description>A hybrid bionic eye and target acquisition system with full adjustment filters and data scaning. It can be linked to the memory by connecting to the central nerve system. Enhance the sight and sharpness. (Replacement)</description>
 		<graphicData>
-			<texPath>Things/Item/BodyPart/Joywire</texPath>
+			<texPath>Things/Item/BodyPart/Core/Joywire</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -427,8 +433,10 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallCyclopsVisor</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install cyclops visor</label>
 		<description>Install cyclops visor.</description>
 		<descriptionHyperlinks>
@@ -517,7 +525,7 @@
 		<label>laser detection</label>
 		<description>A laser detection device, mounted on the ear side. The laser scans the environment and displays all important data on an extendable eye patch display. Improves sight substantially, while increasing target acquisition alongside it, with its elegant auto marker. (Implant)</description>
 		<graphicData>
-			<texPath>Things/Item/BodyPart/Joywire</texPath>
+			<texPath>Things/Item/BodyPart/Core/Joywire</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -549,8 +557,10 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
 		<defName>CONN_InstallLaserDetection</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install laser detection</label>
 		<description>Install a laser detection.</description>
 		<descriptionHyperlinks>
@@ -648,7 +658,7 @@
 		<label>sensoric earside</label>
 		<description>A sensoric hearing device and target acquisition system, replacing the ear. This allows you to hear a needle dropping from a far distance. (Replacement)</description>
 		<graphicData>
-			<texPath>Things/Item/BodyPart/Joywire</texPath>
+			<texPath>Things/Item/BodyPart/Core/Joywire</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -679,8 +689,10 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>CONN_InstallSensoricEarside</defName>
+		<!-- Registered through BaseHumanlikePawn.recipes for Human and HAR recipe import. -->
+		<recipeUsers Inherit="False" />
 		<label>install sensoric earside</label>
 		<description>Install sensoric earside.</description>
 		<descriptionHyperlinks>

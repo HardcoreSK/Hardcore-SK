@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<ThingCategoryDef>
@@ -75,6 +75,7 @@
 			<Mass>0.015</Mass>
 		</statBases>
 		<ammoClass>Sabot</ammoClass>
+		<generateAllowChance>0.65</generateAllowChance> <!-- Make advanced ammo types less common. -->
 		<cookOffProjectile>Bullet_5x50mmCaseless_Sabot</cookOffProjectile>
 	</ThingDef>
 

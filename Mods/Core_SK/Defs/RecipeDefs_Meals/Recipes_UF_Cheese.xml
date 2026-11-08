@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--___________________CheeseBasin_____________________-->
+	<RecipeDef ParentName="GlitterpediaModExtBase" Name="Make_CheeseBase" Abstract="True">
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Milk</li>
+				<li>SoyMilk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>CheeseBasin</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<temperatureSafe>
+			<min>0</min>
+			<max>30</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>10</min>
+			<max>25</max>
+		</temperatureIdeal>
+		<processDays>4</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.5</speedAboveSafe>
+		<sunFactor>
+			<min>1</min>
+			<max>1</max>
+		</sunFactor>
+		<rainFactor>
+			<min>1</min>
+			<max>0</max>
+		</rainFactor>
+		<snowFactor>
+			<min>1</min>
+			<max>0</max>
+		</snowFactor>
+		<windFactor>
+			<min>1</min>
+			<max>1</max>
+		</windFactor>
+		<graphicSuffix>_cheese</graphicSuffix>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_CheeseBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Cheese</defName>
+		<label>make cheese</label>
+		<description>Make cheese. Takes 4 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+						<li>SoyMilk</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<Cheese>5</Cheese>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_CheeseBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Cheese_x5</defName>
+		<label>make cheese x5</label>
+		<description>Make cheese x5. Takes 4 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+						<li>SoyMilk</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<products>
+			<Cheese>25</Cheese>
+		</products>
+
+		<!-- RecipeDef_UF fields -->
+		<slotsRequired>5</slotsRequired>
+	</RecipeDef>
+
+	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Cheese_Vat_x10</defName>
+		<label>make cheese x10</label>
+		<description>Make cheese x10. Takes 4 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+						<li>SoyMilk</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		<products>
+			<Cheese>50</Cheese>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Milk</li>
+				<li>SoyMilk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>CheeseVat</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>5</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+		<usesTemperature>false</usesTemperature>
+		<processDays>4</processDays>
+		<slotsRequired>10</slotsRequired>
+		<graphicSuffix>_cheese</graphicSuffix>
+	</RecipeDef>
+
+	<RecipeDef ParentName="GlitterpediaModExtBase" Name="Make_AgedCheeseBase" Abstract="True">
+		<recipeUsers>
+			<li>CheeseBasin</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<slotsRequired>5</slotsRequired>
+		<temperatureSafe>
+			<min>0</min>
+			<max>15</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>2</min>
+			<max>8</max>
+		</temperatureIdeal>
+		<processDays>8</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.05</speedAboveSafe>
+		<sunFactor>
+			<min>1</min>
+			<max>1</max>
+		</sunFactor>
+		<rainFactor>
+			<min>1</min>
+			<max>0</max>
+		</rainFactor>
+		<snowFactor>
+			<min>1</min>
+			<max>0</max>
+		</snowFactor>
+		<windFactor>
+			<min>1</min>
+			<max>1</max>
+		</windFactor>
+		<graphicSuffix>_cheese</graphicSuffix>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_AgedCheeseBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_AgedCheese</defName>
+		<label>make aged cheese</label>
+		<description>Make aged cheese. Takes 8 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<AgedCheese>3</AgedCheese>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_AgedCheeseBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_AgedCheese_x5</defName>
+		<label>make aged cheese x5</label>
+		<description>Make aged cheese x5. Takes 8 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<products>
+			<AgedCheese>15</AgedCheese>
+		</products>
+
+		<!-- RecipeDef_UF fields -->
+		<slotsRequired>5</slotsRequired>
+	</RecipeDef>
+
+	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_AgedCheese_Vat_x10</defName>
+		<label>make aged cheese x10</label>
+		<description>Make aged cheese x10. Takes 8 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		<products>
+			<AgedCheese>30</AgedCheese>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Milk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>CheeseVat</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>5</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+		<usesTemperature>false</usesTemperature>
+		<processDays>8</processDays>
+		<slotsRequired>10</slotsRequired>
+		<graphicSuffix>_cheese</graphicSuffix>
+	</RecipeDef>
+
+</Defs>

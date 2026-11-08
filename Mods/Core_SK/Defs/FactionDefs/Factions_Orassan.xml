@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FactionDef ParentName="SK_HumanFactionBase" Name="SK_OrassanBase" Abstract="True">
+	<FactionDef ParentName="FactionBase" Name="SK_OrassanBase" Abstract="True">
 		<pawnSingular>orassan</pawnSingular>
 		<pawnsPlural>orassans</pawnsPlural>
 		<listOrderPriority>29</listOrderPriority>
@@ -112,7 +112,10 @@
 		</backstoryFilters>
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
-			<Baseline_Orassan MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Orassan>
+			<Baseline_Orassan MayRequire="Ludeon.RimWorld.Biotech">0.91</Baseline_Orassan>
+			<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.03</Hussar>
+			<Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie>
+			<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.03</Starjack>
 		  </xenotypeChances>
 		</xenotypeSet>
 		<caravanTraderKinds>
@@ -165,7 +168,7 @@
 				<li>Synthread</li>
 				<li>CopperBar</li>
 				<li>Bronze</li>
-				<li>Plasteel</li>
+				<li>Steel</li>
 				<li>AluminiumBar</li>
 			</thingDefs>
 		</apparelStuffFilter>

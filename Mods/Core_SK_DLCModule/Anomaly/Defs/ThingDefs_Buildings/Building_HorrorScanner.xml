@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>Building_HorrorScanner</defName>
+        <label>metalhorror scanner</label>
+        <description>Recent research into the anomalous properties of metalhorror has revealed a connection between the aura emitted by shards and the metalhorror. If a shard is constantly exposed to both strong magnets and electricity, the balance of forces is disrupted when an anomaly appears within the detector's range, triggering an alarm in the scanner. In other words, it is recommended to have one at every entrance to the base.</description>
+        <thingClass>SK.Building_HorrorScanner</thingClass>
+        <altitudeLayer>Building</altitudeLayer>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>Things/Building/Security/HorrorScanner/HorrorScanner</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <rotatable>false</rotatable>
+        <passability>PassThroughOnly</passability>
+        <fillPercent>0.5</fillPercent>
+        <designationCategory>Anomaly</designationCategory>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <tickerType>Normal</tickerType>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>12000</WorkToBuild>
+            <Flammability>0.7</Flammability>
+            <Mass>50</Mass>
+        </statBases>
+        <costList>
+            <BioferriteAlloy>30</BioferriteAlloy>
+            <ElectronicComponents>5</ElectronicComponents>
+            <Electronics>1</Electronics>
+            <Shard>1</Shard>
+        </costList>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+        <researchPrerequisites>
+            <li>ProximityDetector</li>
+            <li>MetalbloodSerum</li>
+        </researchPrerequisites>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+        <placeWorkers>
+            <li>SK.PlaceWorker_HorrorScannerRadius</li>
+        </placeWorkers>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <building>
+            <buildingTags>
+                <li>Anomaly</li>
+            </buildingTags>
+        </building>
+        <comps>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>250</basePowerConsumption>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

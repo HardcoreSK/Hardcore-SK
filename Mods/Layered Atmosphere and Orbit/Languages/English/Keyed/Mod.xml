@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<LayeredAtmosphereOrbit.Settings.Title>Layered Atmosphere and Orbit</LayeredAtmosphereOrbit.Settings.Title>
+	
+	<LayeredAtmosphereOrbit.Settings.UseFuelCostBetweenLayers>Add fuel cost to travel between layers based on distance in km. (Vanilla is disabled.)</LayeredAtmosphereOrbit.Settings.UseFuelCostBetweenLayers>
+	<LayeredAtmosphereOrbit.Settings.FuelPerKm>Fuel cost to travel between layers: {0} per km. (Vanilla is 0.)</LayeredAtmosphereOrbit.Settings.FuelPerKm>
+	<LayeredAtmosphereOrbit.Settings.KmPerFuelSpace>Fuel cost to travel between planets: {0} km per 1 fuel. (Vanilla is -1, which is free.)</LayeredAtmosphereOrbit.Settings.KmPerFuelSpace>
+	
+	<LayeredAtmosphereOrbit.Settings.GravshipRoute>Gravship will move between planet layers by changing it own elevation, when traveling. Making it move XYZ instead of XZ only. (In Vanilla gravship teleports to needed layer right away. Require game restart.)</LayeredAtmosphereOrbit.Settings.GravshipRoute>
+	
+	<LayeredAtmosphereOrbit.Settings.ShowLayerInGroup>Show planet layers in same or similar group. (For example, allows to see floating islands, when surface layer selected. Require game restart.)</LayeredAtmosphereOrbit.Settings.ShowLayerInGroup>
+	<LayeredAtmosphereOrbit.Settings.AutoSwapLayerOnSelection>On world object selection not within current planet layer will automatically swap to that layer. (Useful for fast swap between layers in same planet layer group. Require game restart.)</LayeredAtmosphereOrbit.Settings.AutoSwapLayerOnSelection>
+	<LayeredAtmosphereOrbit.Settings.TransparentInGroup>Transparency of world objects in layer within same planet layer group {0}. (When above 50% allows to select world objects from same planet layer group. Default 60%. Vanilla 30%.)</LayeredAtmosphereOrbit.Settings.TransparentInGroup>
+	<LayeredAtmosphereOrbit.Settings.TransparentInGroupSub>Transparency of world objects in layer within similar planet layer group {0}. (For example, refer to value of floating islands, when surface layer selected. Default 30%.)</LayeredAtmosphereOrbit.Settings.TransparentInGroupSub>
+	<LayeredAtmosphereOrbit.Settings.ReplaceAllViewLayerGizmo>Remove vanilla buttons to view layers and keep only custom one. (Useful when have a lot of planet layers. Require game restart.)</LayeredAtmosphereOrbit.Settings.ReplaceAllViewLayerGizmo>
+	<LayeredAtmosphereOrbit.Settings.GroupedAllViewLayerGizmo>Group planet layer by group and planet on custom view layers button. (Useful when have more than one planet.)</LayeredAtmosphereOrbit.Settings.GroupedAllViewLayerGizmo>
+	<LayeredAtmosphereOrbit.Settings.PlanetPatches>Enable Planet patches. (Needed for Moons and other Planets to work. Require game restart.)</LayeredAtmosphereOrbit.Settings.PlanetPatches>
+	<LayeredAtmosphereOrbit.Settings.HideOtherPlanets>Hide other Planets, except currently selected. (Require game restart.)</LayeredAtmosphereOrbit.Settings.HideOtherPlanets>
+	<LayeredAtmosphereOrbit.Settings.HideWorldTabs>Hide vanilla world interface tabs like Terrain and Planet, since Layer tab have all of that info combined.</LayeredAtmosphereOrbit.Settings.HideWorldTabs>
+	
+	<LayeredAtmosphereOrbit.Settings.AutoAddLayersDefName.Total>Planet Layers that will be added: (Require game restart.)</LayeredAtmosphereOrbit.Settings.AutoAddLayersDefName.Total>
+	<LayeredAtmosphereOrbit.Settings.AutoAddLayersDefName.Option>- {0}</LayeredAtmosphereOrbit.Settings.AutoAddLayersDefName.Option>
+	<LayeredAtmosphereOrbit.Settings.AutoAddLayersDefName.OptionOutdated>- {0} [Missing]</LayeredAtmosphereOrbit.Settings.AutoAddLayersDefName.OptionOutdated>
+	
+	<LayeredAtmosphereOrbit.Settings.isOpenDebugFloatingIslandMapGen>[Debug] Open Floating Island Map Generator.</LayeredAtmosphereOrbit.Settings.isOpenDebugFloatingIslandMapGen>
+	
+</LanguageData>

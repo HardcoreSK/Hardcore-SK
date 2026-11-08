@@ -35,7 +35,7 @@
 			</li>
 			<!-- K9 cybernetic unit -->
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="AndroidDog"]/recipes</xpath>
+				<xpath>/Defs/ThingDef[defName="AndroidDog"]/recipes</xpath>
 				<value>
 					<li>CONN_InstallCompressionJaw</li>
 					<li>CONN_InstallCompressionStomach</li>

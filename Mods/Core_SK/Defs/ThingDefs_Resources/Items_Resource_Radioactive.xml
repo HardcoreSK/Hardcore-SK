@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!--
 	<ThingDef ParentName="CropsBase">
 		<defName>Uranium</defName>
 		<label>Uranium Ore</label>
@@ -48,9 +49,11 @@
 			</li>
 		</comps>
 	</ThingDef>
+	-->
 
 
-	<ThingDef ParentName="SK_RockBase">
+	<!--
+	<ThingDef ParentName="RockBase">
 		<defName>MineableUranium</defName>
 		<label>Uranium Ore Deposit</label>
 		<description>A rock deposit containing bits of Uranium Ore. It is radioactive, so be aware it releases dangerous radiation nearby and only pawns wearing a chemical protection suit and a chemical protection helmet are protected from the radiation. Uranium Ore can be refined by the Gas Centrifuge to make either Enriched Uranium Alloy or Depleted Uranium Alloy, which are best known for powering nuclear reactors and their excellent physical properties used in tools, weapons, armor, nuclear warheads, and alpha poly.</description>
@@ -102,5 +105,6 @@
 		</building>
 		<tickerType>Normal</tickerType>
 	</ThingDef>	
+	-->
 
 </Defs>

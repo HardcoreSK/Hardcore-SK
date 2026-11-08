@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[@Name="SuperHeavyMechanoid"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>HeavyMechanoid</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[@Name="SuperHeavyMechanoid"]</xpath>
+		<value>
+			<statBases>
+				<MarketValue>1600</MarketValue>
+				<ControlTakingTime>30</ControlTakingTime>
+				<BandwidthCost>5</BandwidthCost>
+				<ArmorRating_Blunt>54</ArmorRating_Blunt>
+				<ArmorRating_Sharp>24</ArmorRating_Sharp>
+				<PsychicSensitivity>0.75</PsychicSensitivity>
+				<MechEnergyLossPerHP>0.15</MechEnergyLossPerHP>
+			</statBases>
+			<race>
+				<baseHealthScale>4.5</baseHealthScale>
+				<mechWeightClass>UltraHeavy</mechWeightClass>
+			</race>
+			<butcherProducts Inherit="False">
+				<Plasteel>25</Plasteel>
+				<DepletedUranium>18</DepletedUranium>
+				<CarbonAlloy>12</CarbonAlloy>
+			</butcherProducts>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="Mech_Warqueen"]/comps/li[@Class="CompProperties_MechCarrier"]</xpath>
+		<value>
+			<fixedIngredient>Plasteel</fixedIngredient>
+			<!-- <startingIngredientCount>0</startingIngredientCount> --> <!-- Cannot set it to 0, otherwise enemy warqueens also won't carry any ingredient -->
+			<costPerPawn>15</costPerPawn>
+		</value>
+	</Operation>
+
+</Patch>

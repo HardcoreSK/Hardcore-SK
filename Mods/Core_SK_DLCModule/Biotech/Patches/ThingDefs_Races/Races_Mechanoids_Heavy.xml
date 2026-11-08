@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[@Name="HeavyMechanoid"]/statBases</xpath>
+		<value>
+			<MoveSpeed>1.9</MoveSpeed>
+			<ArmorRating_Blunt>15</ArmorRating_Blunt>
+			<ArmorRating_Sharp>7</ArmorRating_Sharp>
+			<ControlTakingTime>24</ControlTakingTime>
+			<MechEnergyLossPerHP>0.2</MechEnergyLossPerHP>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[@Name="HeavyMechanoid"]/race</xpath>
+		<value>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Metal</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<mechWeightClass>Heavy</mechWeightClass>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[@Name="HeavyMechanoid"]/butcherProducts</xpath>
+		<value>
+			<Plasteel>8</Plasteel>
+			<DepletedUranium>9</DepletedUranium>
+			<CarbonAlloy>6</CarbonAlloy>
+		</value>
+	</Operation>
+    
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Mech_Tunneler"]/statBases</xpath>
+        <value>
+            <WorkSpeedGlobal>1</WorkSpeedGlobal>
+            <MoveSpeed>3.1</MoveSpeed>
+            <MiningSpeed>1.25</MiningSpeed>
+            <MiningYield>1</MiningYield>
+        </value>
+    </Operation>
+
+</Patch>

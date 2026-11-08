@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<ThingDef Abstract="True" ParentName="SK_FurnitureBase" Name="SK_BedBase">
+<!-- DefOverwrite
+	<ThingDef Abstract="True" ParentName="FurnitureBase" Name="SK_BedBase">
 		<thingClass>Building_Bed</thingClass>
 		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
 		<staticSunShadowHeight>0</staticSunShadowHeight>
@@ -29,12 +29,8 @@
 					<li>Dresser</li>
 					<li>EndTable</li>
 					<li>EndTableSimple</li>
-					<!--<li>ClutterLockerA</li> -->
 					<li>JournalTable</li>
 					<li>HolographicCell</li>
-					<!--<li>Commode</li>-->
-					<!--Dont forget to enable CompProperties_Facility in Commode def, if you want enable it again-->
-					<!--<li>Storage_Locker</li>-->
 					<li>medieval_surg_washpan</li>  
 					<li>medieval_surg_instruments</li>
 					<li>medieval_surg_lamp</li>
@@ -58,8 +54,8 @@
 			</buildingTags>
 		</building>
 	</ThingDef>
-
-	<ThingDef Name="SK_BedWithQualityBase" ParentName="SK_BedBase" Abstract="True">
+--><!-- DefOverwrite
+	<ThingDef Name="SK_BedWithQualityBase" ParentName="BasicBedBase" Abstract="True">
 		<comps>
 			<li>
 				<compClass>CompQuality</compClass>
@@ -67,7 +63,7 @@
 		</comps>
 		<uiOrder>2020</uiOrder>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef Name="SK_ArtableBedBase" ParentName="SK_BedWithQualityBase" Abstract="True">
 		<comps>
 			<li Class="CompProperties_Art">
@@ -80,14 +76,14 @@
 			<li>ITab_Art</li>
 		</inspectorTabs>
 	</ThingDef>
-
+--><!-- DefOverwrite
 	<ThingDef Name="SK_SansComfortBedBase" ParentName="SK_ArtableBedBase" Abstract="True">
 		<statBases>
 			<BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">2</BirthRitualQualityOffset>
 		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="SK_BedBase">
+	</ThingDef>-->
+<!-- DefOverwrite
+	<ThingDef ParentName="BasicBedBase">
 		<defName>SleepingSpot</defName>
 		<label>sleeping spot</label>
 		<description>Designates a spot on the ground where people should sleep. Neither comfortable, nor healthy.</description>
@@ -126,8 +122,8 @@
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 		</building>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_BedBase">
+--> <!-- DefOverwrite
+	<ThingDef ParentName="BasicBedBase">
 		<defName>DoubleSleepingSpot</defName>
 		<label>double sleeping spot</label>
 		<description>Designates a spot on the ground where two people should sleep together. Not comfortable.</description>
@@ -167,8 +163,8 @@
 		</building>
 		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_BedWithQualityBase">
+-->
+	<ThingDef ParentName="BedWithQualityBase">
 		<defName>BagBed</defName>
 		<label>sleeping bag</label>
 		<description>A sleeping bag for sleeping in the wild. Lightweigh and comfy.</description>
@@ -197,7 +193,7 @@
 			<SurgerySuccessChanceFactor>0.75</SurgerySuccessChanceFactor>
 		</statBases>
 		<size>(1,2)</size>
-		<stuffCategories>
+		<stuffCategories Inherit="false">
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
@@ -215,9 +211,29 @@
 			<li>Beds_C1</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>VitalsMonitor</li>
+					<li>AdvancedVitalsMonitor</li>
+					<li>Dresser</li>
+					<li>EndTable</li>
+					<li>EndTableSimple</li>
+					<li>JournalTable</li>
+					<li>HolographicCell</li>
+					<li>medieval_surg_washpan</li>  
+					<li>medieval_surg_instruments</li>
+					<li>medieval_surg_lamp</li>
+					<li>industrial_surg_instruments</li>
+					<li>industrial_surg_lamp</li>
+					<li>space_surg_instruments</li>
+					<li>space_surg_lamp</li>
+				</linkableFacilities>
+			</li>
+		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BedBase">
+	<ThingDef ParentName="BasicBedBase">
 		<defName>HayBed</defName>
 		<label>hay bed</label>
 		<description>A makeshift bed, made of hay and small branches. Just a step above sleeping on the ground. Not very healthy to sleep on.</description>
@@ -243,13 +259,14 @@
 			<Bulk>25</Bulk>
 			<Mass>6</Mass>
 		</statBases>
-		<costList>
+		<costList Inherit="False">
 			<Hay>20</Hay>
 		</costList>
-		<stuffCategories>
+		<stuffCategories Inherit="False">
 			<li>WoodLogs</li>
 		</stuffCategories>
 		<costStuffCount>10</costStuffCount>
+		<researchPrerequisites Inherit="false"/>
 		<building>
 			<bed_showSleeperBody>True</bed_showSleeperBody>
 			<bed_healPerDay>6</bed_healPerDay>
@@ -258,7 +275,7 @@
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BedBase">
+	<ThingDef ParentName="BasicBedBase">
 		<defName>HayBedDouble</defName>
 		<label>double hay bed</label>
 		<description>A makeshift double bed, made of hay and small branches. Just a step above sleeping on the ground. Not very healthy to sleep on.</description>
@@ -284,13 +301,14 @@
 			<Mass>10</Mass>
 		</statBases>
 		<size>(2,2)</size>
-		<stuffCategories>
+		<stuffCategories Inherit="false">
 			<li>WoodLogs</li>
 		</stuffCategories>
 		<costStuffCount>20</costStuffCount>
-		<costList>
+		<costList Inherit="False">
 			<Hay>40</Hay>
 		</costList>
+		<researchPrerequisites Inherit="false"/>
 		<building>
 			<bed_showSleeperBody>True</bed_showSleeperBody>
 			<bed_healPerDay>7</bed_healPerDay>
@@ -380,7 +398,7 @@
 		</building>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</ThingDef> -->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="SK_BedWithQualityBase">
 		<defName>Bedroll</defName>
 		<label>mattress bed</label>
@@ -427,7 +445,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef> 
-
+--><!-- DefOverwrite
 	<ThingDef ParentName="SK_BedWithQualityBase">
 		<defName>BedrollDouble</defName>
 		<label>mattress double bed</label>
@@ -474,8 +492,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_SansComfortBedBase">
+--><!-- DefOverwrite
+	<ThingDef ParentName="SansComfortBedBase">
 		<defName>Bed</defName>
 		<label>simple bed</label>
 		<description>A cozy mattress with sheets on a metal frame for resting.</description>
@@ -519,8 +537,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_SansComfortBedBase">
+--><!-- DefOverwrite
+	<ThingDef ParentName="SansComfortBedBase">
 		<defName>DoubleBed</defName>
 		<label>double bed</label>
 		<description>A simple double-wide bed that fits two people.</description>
@@ -564,13 +582,73 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
+-->
+    <ThingDef ParentName="BasicBedBase">
+		<defName>Bed_Normal_Loft</defName>
+		<label>simple loft bed</label>
+		<description>A cozy mattress with sheets on a metal frame for resting. Fits one. Can be built above other beds.</description>
+        <uiIconPath>Things/Building/Furniture/Beds/Normal/loft/normalbed_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Beds/Normal/loft/normalbed</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,3)</drawSize>
+            <damageData>
+                <rect>(0,0.05,1,1.95)</rect>
+            </damageData>
+        </graphicData>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<statBases>
+			<Beauty>7</Beauty>
+			<WorkToBuild>1000</WorkToBuild>
+			<Comfort>0.75</Comfort>
+			<ImmunityGainSpeedFactor>1.03</ImmunityGainSpeedFactor>
+			<BedRestEffectiveness>0.95</BedRestEffectiveness>
+			<SurgerySuccessChanceFactor>0.87</SurgerySuccessChanceFactor>
+			<Bulk>70</Bulk>
+			<Mass>30</Mass>
+		</statBases>
+		<size>(1,2)</size>
+		<stuffCategories Inherit="false">
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+		<costList Inherit="False">
+			<ComponentMedieval>6</ComponentMedieval>
+		</costList>
+		<building>
+			<bed_showSleeperBody>False</bed_showSleeperBody>
+			<bed_healPerDay>7</bed_healPerDay>
+			<paintable>true</paintable>
+		</building>
+        <replaceTags IsNull="true" />
+        <altitudeLayer>PawnRope</altitudeLayer>
+        <clearBuildingArea>false</clearBuildingArea>
+        <canOverlapZones>true</canOverlapZones>
+        <!--<blockLight>true</blockLight>-->
+        <uiIconScale>1.5</uiIconScale>
+        <placeWorkers>
+            <li>SK.PlaceWorker_LoftBed</li>
+        </placeWorkers>
+        <fillPercent>0.20</fillPercent>
+        <comps>
+            <li Class="SK.CompProperties_LoftBed" />
+        </comps>
+		<researchPrerequisites>
+			<li>Beds_B1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+	</ThingDef>
 
-	<ThingDef ParentName="SK_SansComfortBedBase">
-		<defName>industrial_single_bed</defName>
+	<!--================================ industrial beds ======================================-->
+
+	<ThingDef ParentName="BasicBedBase">
+		<defName>Bed_Industrial_Single</defName>
 		<label>industrial bed</label>
 		<description>A comfy bed. Fits one. The boom of industrial production led to the need of more qualified workers on the more developed Rimworlds. The constraints of space drove the development of more advanced furniture. As a result this quite simple bed design emerged.</description>
 		<graphicData>
-			<texPath>Things/Building/Furniture/Beds/industrial/single/industrialbed</texPath>
+			<texPath>Things/Building/Furniture/Beds/Industrial/single/industrialbed</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1,2)</drawSize>
 			<shadowData>
@@ -580,6 +658,7 @@
 				<rect>(0,0.05,2,1.95)</rect>
 			</damageData>
 		</graphicData>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<statBases>
 			<WorkToBuild>1400</WorkToBuild>
 			<Beauty>18</Beauty>
@@ -591,7 +670,7 @@
 			<Mass>35</Mass>
 		</statBases>
 		<size>(1,2)</size>
-		<stuffCategories>
+		<stuffCategories Inherit="false">
 			<li>Fabric</li>
 			<li>HF</li>
 		</stuffCategories>
@@ -610,12 +689,12 @@
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_SansComfortBedBase">
-		<defName>industrial_double_bed</defName>
+	<ThingDef ParentName="BasicBedBase">
+		<defName>Bed_Industrial_Double</defName>
 		<label>industrial double bed</label>
 		<description>A comfy bed. Fits two. The boom of industrial production led to the need of more qualified workers on the more developed Rimworlds. The constraints of space drove the development of more advanced furniture. As a result this quite simple bed design emerged.</description>
 		<graphicData>
-			<texPath>Things/Building/Furniture/Beds/industrial/double/industrialbed</texPath>
+			<texPath>Things/Building/Furniture/Beds/Industrial/double/industrialbed</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<shadowData>
@@ -625,6 +704,7 @@
 				<rect>(0,0.05,2,1.95)</rect>
 			</damageData>
 		</graphicData>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<statBases>
 			<WorkToBuild>1700</WorkToBuild>
 			<Beauty>32</Beauty>
@@ -636,7 +716,7 @@
 			<Mass>65</Mass>
 		</statBases>
 		<size>(2,2)</size>
-		<stuffCategories>
+		<stuffCategories Inherit="false">
 			<li>Fabric</li>
 			<li>HF</li>
 		</stuffCategories>
@@ -654,11 +734,69 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
+    
+    <ThingDef ParentName="BasicBedBase">
+		<defName>Bed_Industrial_Loft</defName>
+		<label>industrial loft bed</label>
+		<description>A comfy bed. Fits one. Can be built above other beds. The boom of industrial production led to the need of more qualified workers on the more developed Rimworlds. The constraints of space drove the development of more advanced furniture. As a result this quite simple bed design emerged.</description>
+        <uiIconPath>Things/Building/Furniture/Beds/Industrial/loft/industrialbed_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Beds/Industrial/loft/industrialbed</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,3)</drawSize>
+            <damageData>
+                <rect>(0,0.05,1,1.95)</rect>
+            </damageData>
+        </graphicData>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<statBases>
+			<WorkToBuild>1700</WorkToBuild>
+			<Beauty>18</Beauty>
+			<Comfort>0.9</Comfort>
+			<BedRestEffectiveness>1.0</BedRestEffectiveness>
+			<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>0.95</SurgerySuccessChanceFactor>
+			<Bulk>90</Bulk>
+			<Mass>40</Mass>
+		</statBases>
+		<size>(1,2)</size>
+		<stuffCategories Inherit="false">
+			<li>Fabric</li>
+			<li>HF</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+		<costList>
+			<ComponentIndustrial>9</ComponentIndustrial>
+		</costList>
+		<building>
+			<bed_showSleeperBody>False</bed_showSleeperBody>
+			<bed_healPerDay>7</bed_healPerDay>
+			<paintable>true</paintable>
+		</building>
+        <replaceTags IsNull="true" />
+        <altitudeLayer>PawnRope</altitudeLayer>
+        <clearBuildingArea>false</clearBuildingArea>
+        <canOverlapZones>true</canOverlapZones>
+        <!--<blockLight>true</blockLight>-->
+        <uiIconScale>1.5</uiIconScale>
+        <placeWorkers>
+            <li>SK.PlaceWorker_LoftBed</li>
+        </placeWorkers>
+        <fillPercent>0.20</fillPercent>
+        <comps>
+            <li Class="SK.CompProperties_LoftBed" />
+        </comps>
+		<researchPrerequisites>
+			<li>Beds_C1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+	</ThingDef>
 
-	<!--================================ prison bed single right+top ======================================-->
+	<!--================================ prison beds ======================================-->
 
-	<ThingDef ParentName="SK_BedBase">
-		<defName>prison_single_bed_RT</defName>
+	<ThingDef ParentName="BasicBedBase">
+		<defName>Bed_Prison_Single_Right</defName>
 		<label>prison bed (R)</label>
 		<description>A bed on a wall for your prisoners. Fits only one. No effort was spared to make this bed look like it came out of the darkest deepest dungeon. The least amount of comfort and a hard surface to sleep will let your prisoners stay alert to finer things of their stay. An art well known among the medieval lords of the Rimworlds.</description>
 		<graphicData>
@@ -684,7 +822,7 @@
 			<Mass>20</Mass>
 		</statBases>
 		<size>(1,2)</size>	 
-		<stuffCategories>
+		<stuffCategories Inherit="false">
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
@@ -702,10 +840,8 @@
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<!--================================ prison bed single left+bottom ======================================-->
-
-	<ThingDef ParentName="SK_BedBase">
-		<defName>prison_single_bed_LB</defName>
+	<ThingDef ParentName="BasicBedBase">
+		<defName>Bed_Prison_Single_Left</defName>
 		<label>prison bed (L)</label>
 		<description>A bed on a wall for your prisoners. Fits only one. No effort was spared to make this bed look like it came out of the darkest deepest dungeon. The least amount of comfort and a hard surface to sleep will let your prisoners stay alert to finer things of their stay. An art well known among the medieval lords of the Rimworlds.</description>
 		<graphicData>
@@ -731,7 +867,7 @@
 			<Mass>20</Mass>
 		</statBases>
 		<size>(1,2)</size>	 
-		<stuffCategories>
+		<stuffCategories Inherit="false">
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
@@ -749,10 +885,12 @@
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_SansComfortBedBase">
-		<defName>MilleniumBed</defName>
+	<!--================================ millenium beds ======================================-->
+
+	<ThingDef ParentName="BasicBedBase">
+		<defName>Bed_Millenium_Single</defName>
 		<label>millenium bed</label>
-		<description>Millenium Line Bed.</description>
+		<description>A modern single bed - the height of perfection!</description>
 		<graphicData>
 			<texPath>Things/Building/Furniture/Beds/Modern/single/modernbed</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -777,7 +915,7 @@
 			<Mass>25</Mass>
 		</statBases>
 		<size>(1,2)</size>
-		<stuffCategories>
+		<stuffCategories Inherit="false">
 			<li>Fabric</li>
 			<li>HF</li>
 		</stuffCategories>
@@ -798,10 +936,10 @@
 		<constructionSkillPrerequisite>13</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_SansComfortBedBase">
-		<defName>MilleniumDoubleBed</defName>
+	<ThingDef ParentName="BasicBedBase">
+		<defName>Bed_Millenium_Double</defName>
 		<label>millenium double bed</label>
-		<description>Millenium Line Double bed.</description>
+		<description>A modern double bed - the height of perfection!</description>
 		<graphicData>
 			<texPath>Things/Building/Furniture/Beds/Modern/double/modernbed</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -823,7 +961,7 @@
 			<Mass>50</Mass>
 		</statBases>
 		<size>(2,2)</size>
-		<stuffCategories>
+		<stuffCategories Inherit="false">
 			<li>Fabric</li>
 			<li>HF</li>
 		</stuffCategories>
@@ -844,10 +982,69 @@
 		<constructionSkillPrerequisite>13</constructionSkillPrerequisite>
 	</ThingDef>
 
+    <ThingDef ParentName="BasicBedBase">
+		<defName>Bed_Millenium_Loft</defName>
+		<label>millenium loft bed</label>
+		<description>A modern single bed - the height of perfection!</description>
+        <uiIconPath>Things/Building/Furniture/Beds/Modern/loft/modernbed_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Beds/Modern/loft/modernbed</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,3)</drawSize>
+            <damageData>
+                <rect>(0,0.05,1,1.95)</rect>
+            </damageData>
+        </graphicData>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<statBases>
+			<Beauty>10</Beauty>
+			<WorkToBuild>1900</WorkToBuild>
+			<Comfort>1.07</Comfort>
+			<BedRestEffectiveness>1.05</BedRestEffectiveness>
+			<ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>0.97</SurgerySuccessChanceFactor>
+			<Bulk>60</Bulk>
+			<Mass>25</Mass>
+		</statBases>
+		<size>(1,2)</size>
+		<stuffCategories Inherit="false">
+			<li>Fabric</li>
+			<li>HF</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<Rubber>20</Rubber>
+			<Plastic>25</Plastic>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<building>
+			<bed_showSleeperBody>False</bed_showSleeperBody>
+			<bed_healPerDay>7</bed_healPerDay>
+			<paintable>true</paintable>
+		</building>
+        <replaceTags IsNull="true" />
+        <altitudeLayer>PawnRope</altitudeLayer>
+        <clearBuildingArea>false</clearBuildingArea>
+        <canOverlapZones>true</canOverlapZones>
+        <!--<blockLight>true</blockLight>-->
+        <uiIconScale>1.5</uiIconScale>
+        <placeWorkers>
+            <li>SK.PlaceWorker_LoftBed</li>
+        </placeWorkers>
+        <fillPercent>0.20</fillPercent>
+        <comps>
+            <li Class="SK.CompProperties_LoftBed" />
+        </comps>
+		<researchPrerequisites>
+			<li>Beds_C3</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+	</ThingDef>
 
 	<!--================================ heart double bed ======================================-->
-
-	<ThingDef ParentName="SK_SansComfortBedBase">
+<!-- DefOverwrite
+	<ThingDef ParentName="SansComfortBedBase">
 		<defName>RoyalBed</defName>
 		<label>lover's double bed</label>
 		<description>A comfy bed for your lovers. Fits two. The Model "heart-3000" is very popular in the more develpoed Rimworlds. It's mostly bought by couples and owners of certain establishments. Due to the Rimworlds not being the safest place and in the face of a possible sudden death the delieveries to the colonies in the Rimworlds have doubled over the years. Followed by a "mysterious" increase in population on these planets.</description>
@@ -896,11 +1093,11 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
-
+-->
 	<!--================================ pod beds ======================================-->
 
-	<ThingDef ParentName="SK_SansComfortBedBase">
-		<defName>PodBed</defName>
+	<ThingDef ParentName="BasicBedBase">
+		<defName>Bed_Cryo_Single</defName>
 		<label>pod bed</label>
 		<description>A futuristic bed with high rest effectiveness.</description>
 		<graphicData>
@@ -914,6 +1111,7 @@
 				<rect>(0,0.05,2,1.95)</rect>
 			</damageData>
 		</graphicData>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<thingSetMakerTags>
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
@@ -929,7 +1127,7 @@
 			<Mass>60</Mass>
 		</statBases>
 		<size>(1,2)</size>
-		<stuffCategories>
+		<stuffCategories Inherit="false">
 			<li>Metallic</li>
 			<li>Plastic</li>
 		</stuffCategories>
@@ -950,8 +1148,8 @@
 		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_SansComfortBedBase">
-		<defName>space_double_bed</defName>
+	<ThingDef ParentName="BasicBedBase">
+		<defName>Bed_Cryo_Double</defName>
 		<label>double pod bed</label>
 		<description>A comfy bed. Fits two. On the task of "going to space" this bed was literally first developed as a small spacecraft. After this fatal first mistake the possibility to sleep inside and a bit more comfort was added. This didn't prevent the advertising agency from using the terms "fly in your sleep" and "sleeping on clouds". After several lawsuits from customers with strange injuries the advertisment changed to a more down-to-earth direction.</description>
 		<graphicData>
@@ -965,6 +1163,7 @@
 				<rect>(0,0.05,2,1.95)</rect>
 			</damageData>
 		</graphicData>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<thingSetMakerTags>
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
@@ -980,7 +1179,7 @@
 			<Mass>90</Mass>
 		</statBases>
 		<size>(2,2)</size>
-		<stuffCategories>
+		<stuffCategories Inherit="false">
 			<li>Metallic</li>
 			<li>Plastic</li>
 		</stuffCategories>
@@ -1003,8 +1202,8 @@
 
 	<!--================================ cryo beds ======================================-->
 
-	<ThingDef ParentName="SK_SansComfortBedBase">
-		<defName>cryo_single_bed</defName>
+	<ThingDef ParentName="BasicBedBase">
+		<defName>Bed_Spacer_Single</defName>
 		<label>futuristic single bed</label>
 		<description>A comfy futuristic bed. Fits one. During the research of cryptosleep the possibilty of a short sleeping cycle based on this technology emerged. However most people still refuse to use these beds in fear of never waking up or losing several years by accident. This lead to several Rimworld legends although all exposed by scientists as fictional storys many people fear the device.</description>
 		<graphicData>
@@ -1018,6 +1217,7 @@
 				<rect>(0,0.05,2,1.95)</rect>
 			</damageData>
 		</graphicData>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<statBases>
 			<WorkToBuild>3000</WorkToBuild>
 			<Beauty>35</Beauty>
@@ -1029,7 +1229,7 @@
 			<Mass>50</Mass>
 		</statBases>
 		<size>(1,2)</size>
-		<stuffCategories>
+		<stuffCategories Inherit="false">
 			<li>Metallic</li>
 			<li>Plastic</li>
 		</stuffCategories>
@@ -1051,8 +1251,8 @@
 		<constructionSkillPrerequisite>17</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_SansComfortBedBase">
-		<defName>cryo_double_bed</defName>
+	<ThingDef ParentName="BasicBedBase">
+		<defName>Bed_Spacer_Double</defName>
 		<label>futuristic double bed</label>
 		<description>A comfy futuristic bed. Fits two. During the research of cryptosleep the possibilty of a short sleeping cycle based on this technology emerged. However most people still refuse to use these beds in fear of never waking up or losing several years by accident. This lead to several Rimworld legends although all exposed by scientists as fictional storys many people fear the device.</description>
 		<graphicData>
@@ -1066,6 +1266,7 @@
 				<rect>(0,0.05,2,1.95)</rect>
 			</damageData>
 		</graphicData>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<statBases>
 			<WorkToBuild>4000</WorkToBuild>
 			<Beauty>47</Beauty>
@@ -1077,7 +1278,7 @@
 			<Mass>90</Mass>
 		</statBases>
 		<size>(2,2)</size>
-		<stuffCategories>
+		<stuffCategories Inherit="false">
 			<li>Metallic</li>
 			<li>Plastic</li>
 		</stuffCategories>
@@ -1100,7 +1301,7 @@
 	</ThingDef>
 
 	<!--================================ hospital beds ======================================-->
-
+<!-- DefOverwrite
 	<ThingDef ParentName="SK_BedWithQualityBase">
 		<defName>HospitalBed</defName>
 		<label>hospital bed</label>
@@ -1151,8 +1352,8 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_BedWithQualityBase">
+-->
+	<ThingDef ParentName="BedWithQualityBase">
 		<defName>AdvHospitalBed</defName>
 		<label>advanced hospital bed</label>
 		<description>An advanced bed specially designed to treat injured people. Improves the chance of successful medical work even more than the hospital bed.</description>
@@ -1179,8 +1380,33 @@
 			<Mass>45</Mass>
 			<BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">5</BirthRitualQualityOffset>
 		</statBases>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>VitalsMonitor</li>
+					<li>AdvancedVitalsMonitor</li>
+					<li>Dresser</li>
+					<li>EndTable</li>
+					<li>EndTableSimple</li>
+					<!--<li>ClutterLockerA</li> -->
+					<li>JournalTable</li>
+					<li>HolographicCell</li>
+					<!--<li>Commode</li>-->
+					<!--Dont forget to enable CompProperties_Facility in Commode def, if you want enable it again-->
+					<!--<li>Storage_Locker</li>-->
+					<li>medieval_surg_washpan</li>  
+					<li>medieval_surg_instruments</li>
+					<li>medieval_surg_lamp</li>
+					<li>industrial_surg_instruments</li>
+					<li>industrial_surg_lamp</li>
+					<li>space_surg_instruments</li>
+					<li>space_surg_lamp</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+				</linkableFacilities>
+			</li>
+		</comps>
 		<size>(1,2)</size>
-		<stuffCategories>
+		<stuffCategories Inherit="false">
 			<li>Metallic</li>
 			<li>Plastic</li>
 		</stuffCategories>

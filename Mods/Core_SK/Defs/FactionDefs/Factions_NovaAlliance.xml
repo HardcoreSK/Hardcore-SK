@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FactionDef ParentName="SK_HumanFactionBase">
+	<FactionDef ParentName="FactionBase">
 		<defName>NovaAlliance</defName>
 		<label>Nova alliance</label>
 		<description>The Nova Corps is a fictional intergalactic military force.</description>
@@ -62,7 +62,10 @@
 		</backstoryFilters>
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
-			<Baseline_Nova MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Nova>
+			<Baseline_Nova MayRequire="Ludeon.RimWorld.Biotech">0.91</Baseline_Nova>
+			<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.03</Hussar>
+			<Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie>
+			<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.03</Starjack>
 		  </xenotypeChances>
 		</xenotypeSet>
 		<caravanTraderKinds>
@@ -116,7 +119,7 @@
 				<li>SilverBar</li>
 				<li>FerrosiliconAlloy</li>
 				<li>CupronickelAlloy</li>
-				<li>Plasteel</li>
+				<li>Steel</li>
 			</thingDefs>
 		</apparelStuffFilter>
 		<pawnGroupMakers>

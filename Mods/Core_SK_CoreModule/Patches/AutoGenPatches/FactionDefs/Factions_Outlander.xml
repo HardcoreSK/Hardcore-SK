@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]</xpath>
+    <value Merge="true">
+		<settlementGenerationWeight>1.5</settlementGenerationWeight>
+		<maxCountAtGameStart>1</maxCountAtGameStart>
+		<!-- <canMakeRandomly>true</canMakeRandomly> -->
+		<canSiege>false</canSiege>
+		<autoFlee>true</autoFlee>
+		<leaderTitle>Prime councilor</leaderTitle>
+		<earliestRaidDays>40</earliestRaidDays>
+		<colorSpectrum>
+			<li>(0.64, 0.42, 0.36)</li>
+			<li>(0.47, 0.5, 0.91)</li>
+		</colorSpectrum>
+		<raidCommonalityFromPointsCurve DeepReplace="true">
+			<points>
+				<li>(0, 0.01)</li>
+				<li>(800, 1.0)</li>
+				<li>(1500, 1.4)</li>
+				<li>(3000, 0.9)</li>
+				<li>(7000, 0.8)</li>
+				<li>(10000, 0.4)</li>
+				<li>(15000, 0.1)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<maxPawnCostPerTotalPointsCurve DeepReplace="true">
+			<points>
+				<li>(800, 125)</li>
+				<li>(3000, 130)</li>
+				<li>(4500, 155)</li>
+				<li>(5500, 170)</li>
+				<li>(6500, 220)</li>
+				<li>(7500, 260)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<apparelStuffFilter>
+			<categories>
+				<li>Leathers</li>
+			</categories>
+			<thingDefs>
+				<li>WoodPlank</li>
+				<li>Cloth</li>
+				<li>WoolMuffalo</li>
+				<li>WoolDromedary</li>
+				<li>WoolAlpaca</li>
+				<li>HempCloth</li>
+				<li>WoolSheep</li>
+				<li>CopperBar</li>
+				<li>Bronze</li>
+				<li>Steel</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Town_Trader>1</Town_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>3</Dromedary>
+					<Rhinoceros>2</Rhinoceros>
+					<Elephant>2</Elephant>
+					<Megabadger>1</Megabadger>
+					<Horse_Wooly>5</Horse_Wooly>
+					<Rhino_Wooly>2</Rhino_Wooly>
+					<Horse>7</Horse>
+					<Buffalo>4</Buffalo>
+					<Bear_Grizzly>2</Bear_Grizzly>
+					<Bear_Polar>1</Bear_Polar>
+					<Mammoth>2</Mammoth>
+				</carriers>
+				<guards>
+					<Villager>3</Villager>
+					<Town_Guard>10</Town_Guard>
+					<Grenadier_Destructive>1.5</Grenadier_Destructive>
+					<Mercenary_Slasher>7</Mercenary_Slasher>
+					<Mercenary_Gunner>10</Mercenary_Gunner>
+					<Mercenary_Elite>10</Mercenary_Elite>
+				</guards>
+			</li>
+		</pawnGroupMakers>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/FactionDef[defName="OutlanderCivil"]</xpath>
+    <value>
+      <pawnSingular>outlander</pawnSingular>
+      <pawnsPlural>outlanders</pawnsPlural>
+      <factionIconPath>World/WorldObjects/Expanding/Outlander</factionIconPath>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/FactionDef[defName="OutlanderRough"]</xpath>
+    <value>
+      <label>Bandits</label>
+      <description>Members of the criminal underworld who came to the rim for different reasons: to make money by selling artifacts, hide from the law or trade in weapons. The rim is full of bandits, ranging from common thugs to serious criminals, most of whom are members of one gang or another. Although the rimworld gangs frequently fight among themselves, the criminal element still poses a serious problem for all of the rim.</description>
+      <pawnSingular>bandit</pawnSingular>
+      <pawnsPlural>bandits</pawnsPlural>
+      <colorSpectrum>
+        <li>(0.00, 0.30, 0.70)</li>
+        <li>(0.00, 0.40, 1.00)</li>
+      </colorSpectrum>
+      <factionIconPath>World/WorldObjects/Expanding/Bandits</factionIconPath>
+    </value>
+  </Operation>
+
+</Patch>

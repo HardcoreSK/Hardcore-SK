@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<ThingDef Abstract="True" Name="SK_LeatherBase" ParentName="SK_ResourceBase">
+<!-- DefOverwrite
+	<ThingDef Abstract="True" Name="SK_LeatherBase" ParentName="ResourceBase">
 		<description>Tanned, dried, scraped skin. A good traditional material for making clothes and bags.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Leather</texPath>
@@ -15,7 +15,7 @@
 			<MarketValue>2.1</MarketValue>
 			<StuffPower_Armor_Sharp>0.81</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.24</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.15</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.1</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>16</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>16</StuffPower_Insulation_Heat>
 		</statBases>
@@ -35,10 +35,10 @@
 		</stuffProps>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 	</ThingDef>
-
+-->
 	<!--========== Basic leathers ============-->
 
-	<ThingDef ParentName="SK_LeatherBase">
+<!-- 	<ThingDef ParentName="LeatherBase">
 		<defName>Leather_Plain</defName>
 		<label>plain leather</label>
 		<graphicData>
@@ -49,7 +49,7 @@
 			<MarketValue>3</MarketValue>
 			<StuffPower_Armor_Sharp>0.91</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.64</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.10</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.07</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -70,9 +70,9 @@
 				<Mass>0.4</Mass>
 			</statFactors>
 		</stuffProps>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<!-- <ThingDef ParentName="LeatherBase">
 		<defName>Leather_Dog</defName>
 		<label>dog leather</label>
 		<graphicData>
@@ -83,7 +83,7 @@
 			<MarketValue>1</MarketValue>
 			<StuffPower_Armor_Sharp>0.71</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.64</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.10</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.07</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>13</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -106,7 +106,7 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_LeatherBase">
+ -->	<!-- <ThingDef ParentName="LeatherBase">
 		<defName>Leather_Wolf</defName>
 		<label>wolf fur pelt</label>
 		<description>A soft furry pelt harvested from a wolf-like creature. It is difficult to pierce and insulates well against cold.</description>
@@ -118,7 +118,7 @@
 			<MarketValue>2</MarketValue>
 			<StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.85</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.082</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.06</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>21</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>-3</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -141,7 +141,7 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_LeatherBase">
+ -->	<ThingDef ParentName="LeatherBase">
 		<defName>Leather_Nightling</defName>
 		<label>nightling fur pelt</label>
 		<description>A soft furry pelt harvested from a nighling creature. It is difficult to pierce and insulates well against cold.</description>
@@ -153,7 +153,7 @@
 			<MarketValue>2.5</MarketValue>
 			<StuffPower_Armor_Sharp>1.21</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>1.09</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.082</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.06</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>17</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>-2</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -176,7 +176,7 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<!-- <ThingDef ParentName="LeatherBase">
 		<defName>Leather_Panthera</defName>
 		<label>big cat fur pelt</label>
 		<description>A soft furry pelt harvested from a big cat. It is difficult to pierce and insulates well against heat.</description>
@@ -188,7 +188,7 @@
 			<MarketValue>2</MarketValue>
 			<StuffPower_Armor_Sharp>0.95</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.85</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.10</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.07</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>-3</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -211,7 +211,7 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_LeatherBase">
+ -->	<!-- <ThingDef ParentName="LeatherBase">
 		<defName>Leather_Camel</defName>
 		<label>camel leather</label>
 		<description>Tanned, dried, scraped camel skin. Good at temperature regulation in hot climates.</description>
@@ -223,7 +223,7 @@
 			<MarketValue>1.5</MarketValue>
 			<StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.9</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.132</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.09</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>25</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -251,7 +251,7 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_LeatherBase">
+ -->	<!-- <ThingDef ParentName="LeatherBase">
 		<defName>Leather_Bluefur</defName>
 		<label>blue fur pelt</label>
 		<description>The furry pelt of muffalo. Recognizable by its distinctive blue tint. Good at temperature regulation in cold climates.</description>
@@ -263,7 +263,7 @@
 			<MarketValue>2</MarketValue>
 			<StuffPower_Armor_Sharp>0.75</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.072</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.067</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>28</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>-8</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -284,9 +284,9 @@
 				<Mass>0.5</Mass>
 			</statFactors>
 		</stuffProps>
-	</ThingDef>
+	</ThingDef> -->
 
-<!-- 	<ThingDef ParentName="SK_LeatherBase">
+<!-- 	<ThingDef ParentName="LeatherBase">
 		<defName>Leather_Bear</defName>
 		<label>bear fur pelt</label>
 		<description>The strong furry leather of a bear. Compared to most leather, it is quite a bit tougher and a bit better at all kinds of temperature regulation.</description>
@@ -323,7 +323,7 @@
 
 	<!--========== Basic leathers: skin ============-->
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<!-- <ThingDef ParentName="LeatherBase">
 		<defName>Leather_Human</defName>
 		<label>human leather</label>
 		<description>Tanned, dried, scraped human skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
@@ -335,7 +335,7 @@
 			<MarketValue>2.8</MarketValue>
 			<StuffPower_Armor_Sharp>0.74</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.61</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.1</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.07</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -356,9 +356,9 @@
 				<Mass>0.5</Mass>
 			</statFactors>
 		</stuffProps>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<!-- <ThingDef ParentName="LeatherBase">
 		<defName>Leather_Pig</defName>
 		<label>pig leather</label>
 		<description>Tanned, dried, scraped pig skin. While a decent leather, it neither protects nor insulates particularly well.</description>
@@ -370,7 +370,7 @@
 			<MarketValue>2</MarketValue>
 			<StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.65</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.112</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.078</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -396,11 +396,11 @@
 				<Mass>0.5</Mass>
 			</statFactors>
 		</stuffProps>
-	</ThingDef>
+	</ThingDef> -->
 
 	<!--========== Thin leathers ============-->
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<!-- <ThingDef ParentName="LeatherBase">
 		<defName>Leather_Light</defName>
 		<label>light leather</label>
 		<description>Lightweight, thin leather. Probably harvested from a small animal. Not as protective as thicker leathers.</description>
@@ -412,7 +412,7 @@
 			<MarketValue>1.5</MarketValue>
 			<StuffPower_Armor_Sharp>0.75</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.11</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.077</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -438,9 +438,9 @@
 				<Mass>0.5</Mass>
 			</statFactors>
 		</stuffProps>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<!-- <ThingDef ParentName="LeatherBase">
 		<defName>Leather_Bird</defName>
 		<label>bird leather</label>
 		<description>Tanned, dried, scraped bird skin. It is quite delicate. Without its feathers, it provides little protection from heat or cold.</description>
@@ -452,7 +452,7 @@
 			<MarketValue>1.5</MarketValue>
 			<StuffPower_Armor_Sharp>0.73</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.62</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.06</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.05</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>7</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -473,9 +473,9 @@
 				<Mass>0.5</Mass>
 			</statFactors>
 		</stuffProps>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<!-- <ThingDef ParentName="LeatherBase">
 		<defName>Leather_GuineaPig</defName>
 		<label>guinea pig fur</label>
 		<description>Sheets of guinea pig fur. It is delicate, but luxurious.</description>
@@ -487,7 +487,7 @@
 			<MarketValue>6.5</MarketValue>
 			<StuffPower_Armor_Sharp>0.7</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.75</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.072</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.06</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>29</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>-7</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -508,9 +508,9 @@
 				<Mass>0.5</Mass>
 			</statFactors>
 		</stuffProps>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<!-- <ThingDef ParentName="LeatherBase">
 		<defName>Leather_Chinchilla</defName>
 		<label>chinchilla fur pelt</label>
 		<description>Tanned, dried, scraped chinchilla skin. Known as an extremely luxurious and insulating fur, it is exceptionally valuable.</description>
@@ -522,7 +522,7 @@
 			<MarketValue>6.5</MarketValue>
 			<StuffPower_Armor_Sharp>0.75</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.072</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.06</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>29</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>-7</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -543,9 +543,9 @@
 				<Mass>0.5</Mass>
 			</statFactors>
 		</stuffProps>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<!-- <ThingDef ParentName="LeatherBase">
 		<defName>Leather_Fox</defName>
 		<label>fox fur pelt</label>
 		<description>The pelt of a fox. It protects well from the cold and is quite luxurious, fetching a high price.</description>
@@ -557,7 +557,7 @@
 			<MarketValue>4</MarketValue>
 			<StuffPower_Armor_Sharp>0.75</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.85</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.08</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.07</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>27</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>-6</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -578,9 +578,9 @@
 				<Mass>0.5</Mass>
 			</statFactors>
 		</stuffProps>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<!-- <ThingDef ParentName="LeatherBase">
 		<defName>Leather_Lizard</defName>
 		<label>lizard leather</label>
 		<description>The tanned skin of a cold-blooded reptile. Lizard leather is reasonably tough, but does not insulate well at all.</description>
@@ -589,7 +589,7 @@
 			<MarketValue>3</MarketValue>
 			<StuffPower_Armor_Sharp>1.35</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.142</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.11</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>7</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -615,9 +615,9 @@
 				<Mass>0.5</Mass>
 			</statFactors>
 		</stuffProps>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<ThingDef ParentName="LeatherBase">
 		<defName>Leather_Boomanimal</defName>
 		<label>boomanimal leather</label>
 		<description>Lightweight leather from a boom animal like boomrat or boomalope. More flammable than other leathers.</description>
@@ -627,13 +627,12 @@
 			<Flammability>1.2</Flammability>
 			<StuffPower_Armor_Sharp>0.75</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.09</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.08</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>9</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
 			<Bulk>0.1</Bulk>	
 		</statBases>
-		<tickerType>Rare</tickerType>
 		<stackLimit>300</stackLimit>
 		<graphicData>
 			<color>(115,37,28)</color>
@@ -658,7 +657,7 @@
 
 	<!--========== Tough leathers ============-->
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<!-- <ThingDef ParentName="LeatherBase">
 		<defName>Leather_Elephant</defName>
 		<label>elephant leather</label>
 		<description>Tanned, dried, scraped elephant skin. While quite tough, it is a poor insulator.</description>
@@ -670,7 +669,7 @@
 			<MarketValue>3</MarketValue>
 			<StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.85</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.141</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.11</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>11</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -691,9 +690,9 @@
 				<Mass>0.5</Mass>
 			</statFactors>
 		</stuffProps>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<!-- <ThingDef ParentName="LeatherBase">
 		<defName>Leather_Heavy</defName>
 		<label>heavy fur</label>
 		<description>Thick leather covered in a long, rugged mat of fur. Harvested from a large, hardy animal. This thick skin insulates and protects very well.</description>
@@ -705,7 +704,7 @@
 			<MarketValue>2</MarketValue>
 			<StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>1.1</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.09</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.08</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>19</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>-5</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -726,9 +725,9 @@
 				<Mass>0.5</Mass>
 			</statFactors>
 		</stuffProps>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<!-- <ThingDef ParentName="LeatherBase">
 		<defName>Leather_Rhinoceros</defName>
 		<label>rhinoceros leather</label>
 		<description>Tanned, dried, scraped rhinocerous skin. It is exceptionally durable in combat, but provides little protection from weather.</description>
@@ -740,7 +739,7 @@
 			<MarketValue>2.5</MarketValue>
 			<StuffPower_Armor_Sharp>1.35</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>1.1</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.14</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.11</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>7</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -761,11 +760,11 @@
 				<Mass>0.5</Mass>
 			</statFactors>
 		</stuffProps>
-	</ThingDef>
+	</ThingDef> -->
 
 	<!--========== Super leathers ============-->
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<!-- <ThingDef ParentName="LeatherBase">
 		<defName>Leather_Thrumbo</defName>
 		<label>magic fur</label>
 		<description>Luxurious and extraordinarily durable. Used for the highest-quality crafts for its insulation and strength.</description>
@@ -777,7 +776,7 @@
 			<MarketValue>8</MarketValue>
 			<StuffPower_Armor_Sharp>1.4</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>1.3</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.145</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.135</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>9</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -798,9 +797,9 @@
 				<Mass>0.5</Mass>
 			</statFactors>
 		</stuffProps>
-	</ThingDef>
+	</ThingDef> -->
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<ThingDef ParentName="LeatherBase">
 		<defName>Leather_FireDragonskin</defName>
 		<label>feenix dragonskin scales</label>
 		<description>Luxurious and extraordinarily durable. Used for the highest-quality crafts for its insulation and strength.</description>
@@ -815,7 +814,7 @@
 			<Flammability>0</Flammability>
 			<StuffPower_Armor_Sharp>1.45</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>1.35</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.175</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.16</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>30</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -840,7 +839,7 @@
 		<burnableByRecipe>False</burnableByRecipe>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<ThingDef ParentName="LeatherBase">
 		<defName>Leather_KirinHide</defName>
 		<label>kirin fur pelt</label>
 		<description>Luxurious and extraordinarily durable. Used for the highest-quality crafts for its insulation and strength.</description>
@@ -852,7 +851,7 @@
 			<MarketValue>10</MarketValue>
 			<StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>1.35</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.082</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.071</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>32</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>-10</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -878,7 +877,7 @@
 		<burnableByRecipe>False</burnableByRecipe>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<ThingDef ParentName="LeatherBase">
 		<defName>Leather_FeatheredRaptorLeather</defName>
 		<label>feathered raptor leather</label>
 		<description>Luxurious and extraordinarily durable. Used for the highest-quality crafts for its insulation and strength.</description>
@@ -890,7 +889,7 @@
 			<MarketValue>5</MarketValue>
 			<StuffPower_Armor_Sharp>1.35</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.85</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.142</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.125</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -913,7 +912,7 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<ThingDef ParentName="LeatherBase">
 		<defName>Leather_BarghestFur</defName>
 		<label>barghest fur pelt</label>
 		<description>Luxurious and extraordinarily durable. Used for the highest-quality crafts for its insulation and strength.</description>
@@ -925,7 +924,7 @@
 			<MarketValue>14</MarketValue>
 			<StuffPower_Armor_Sharp>1.35</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>1.3</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.075</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.064</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>31</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>-10</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -948,7 +947,7 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<ThingDef ParentName="LeatherBase">
 		<defName>Chitin</defName>
 		<label>Chitin</label>
 		<description>Chitin is a long-chain polymer. It can be obtained from the exoskeletons of insects or shelled creatures. It can be used like leather, but it is quite difficult and expensive.</description>
@@ -957,7 +956,6 @@
 			<color>(75,68,80)</color>
 			<drawSize>0.75</drawSize>
 		</graphicData>
-		<tickerType>Rare</tickerType>
 		<statBases>
 			<MarketValue>7</MarketValue>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -965,7 +963,7 @@
 			<DeteriorationRate>0</DeteriorationRate>
 			<StuffPower_Armor_Blunt>0.9</StuffPower_Armor_Blunt>
 			<StuffPower_Armor_Sharp>1.05</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Heat>0.152</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.133</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>7</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat>
 			<Mass>0.05</Mass>
@@ -990,7 +988,7 @@
 
 	<!--========== Awful leathers ============-->
 
-	<ThingDef ParentName="SK_LeatherBase">
+	<!-- <ThingDef ParentName="LeatherBase">
 		<defName>Leather_Patch</defName>
 		<label>patch leather</label>
 		<description>A weak textile created by cutting up and sewing together various types of leathers. Regardless of what kind of leather is used to create it, patchleather's irregular seams make it less tough and less insulating than any intact leather.</description>
@@ -1002,7 +1000,7 @@
 			<MarketValue>0.5</MarketValue>
 			<StuffPower_Armor_Sharp>0.7</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.65</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.09</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.067</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>11</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat>
 			<Mass>0.1</Mass>
@@ -1023,6 +1021,6 @@
 				<Mass>0.5</Mass>
 			</statFactors>
 		</stuffProps>
-	</ThingDef>
+	</ThingDef> -->
 
 </Defs>

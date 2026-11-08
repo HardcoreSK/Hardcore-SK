@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- world object replacement -->
+    <Operation Class="RimatomicsPlusPlus.PatchOperationUnlessDisabledInSettings">
+        <settingsKey>SabotWorldObject</settingsKey>
+        <value Class="PatchOperationReplace">
+            <xpath>Defs/WorldObjectDef[defName="Sabot"]/worldObjectClass</xpath>
+            <value>
+                <worldObjectClass>RimatomicsPlusPlus.WorldObject_Sabot</worldObjectClass>
+            </value>
+        </value>
+    </Operation>
+
+    <!-- makes the sabot world icon not get hidden by other icons, more apparent at high altitudes -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/WorldObjectDef[defName="Sabot"]/expandingIconPriority</xpath>
+        <value>
+            <expandingIconPriority>98</expandingIconPriority>
+        </value>
+    </Operation>
+</Patch>

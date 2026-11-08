@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_BeamGraser" or defName="Gun_BeamRepeater"]</xpath>
+		<value>
+            <thingCategories Inherit="False">
+                <li>Futuristic</li>
+            </thingCategories>
+		</value>
+	</Operation>
+
+</Patch>

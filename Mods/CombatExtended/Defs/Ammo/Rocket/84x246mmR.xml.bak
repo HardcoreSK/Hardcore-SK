@@ -37,7 +37,7 @@
 		<tradeTags>
 			<li>CE_AutoEnableTrade</li>
 			<li>CE_AutoEnableCrafting_TableMachining</li>
-    		<li>CE_40K_HeavyAmmo</li>
+			<li>CE_40K_HeavyAmmo</li>
 		</tradeTags>
 		<thingCategories>
 			<li>Ammo84x246mmR</li>
@@ -272,6 +272,7 @@
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 			<speed>48</speed>
+			<preExplosionSpawnSingleThingDef>Filth_BlastMark</preExplosionSpawnSingleThingDef>
 		</projectile>
 	</ThingDef>
 
@@ -288,6 +289,7 @@
 			<speed>51</speed>
 			<soundExplode>MortarBomb_Explode</soundExplode>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<preExplosionSpawnSingleThingDef>Filth_BlastMark</preExplosionSpawnSingleThingDef>
 		</projectile>
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">
@@ -315,6 +317,7 @@
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 			<aimHeightOffset>2</aimHeightOffset>
 			<armingDelay>2</armingDelay>
+			<airburstDistanceOffset>-3</airburstDistanceOffset>
 		</projectile>
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">
@@ -322,7 +325,8 @@
 					<Fragment_Large>10</Fragment_Large>
 					<Fragment_Small>24</Fragment_Small>
 				</fragments>
-				<fragAngleRange>-89~-5</fragAngleRange>
+				<fragAngleRange>-60~-2</fragAngleRange>
+				<fragXZAngleRange>-45~45</fragXZAngleRange>
 			</li>
 		</comps>
 	</ThingDef>
@@ -396,6 +400,7 @@
 			<armorPenetrationBlunt>18</armorPenetrationBlunt>
 			<spreadMult>17.8</spreadMult>
 			<!-- x2 the normal spread -->
+			<shieldDamageMultiplier>0.25</shieldDamageMultiplier>
 		</projectile>
 	</ThingDef>
 
@@ -414,6 +419,7 @@
 			<speed>65</speed>
 			<soundExplode>MortarBomb_Explode</soundExplode>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<preExplosionSpawnSingleThingDef>Filth_BlastMark</preExplosionSpawnSingleThingDef>
 		</projectile>
 		<comps>
 			<li Class="CombatExtended.CompProperties_ExplosiveCE">
@@ -505,7 +511,7 @@
 		</products>
 	</RecipeDef>
 
-	<RecipeDef ParentName="LauncherAmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedLauncherAmmoRecipeBase">
 		<defName>MakeAmmo_84x246mmR_Thermobaric</defName>
 		<label>make 84x246mmR (Thermobaric) cartridges x5</label>
 		<description>Craft 5 84x246mmR (Thermobaric) cartridges.</description>
@@ -593,7 +599,7 @@
 		</products>
 	</RecipeDef>
 
-	<RecipeDef ParentName="LauncherAmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedLauncherAmmoRecipeBase">
 		<defName>MakeAmmo_84x246mmR_HE_TFuzed</defName>
 		<label>make 84x246mmR (Time-Fuzed) cartridge x5</label>
 		<description>Craft 5 84x246mmR (Time-Fuzed) cartridges.</description>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<LayeredAtmosphereOrbit.PlanetDef>
+		<defName>LAO_Rimworld</defName>
+		<label>Rimworld</label>
+		<description>A distant, sparsely populated planet located at the edge of the known space. Lacking a centralized government or interstellar law enforcement, these worlds are defined by a unique blend of technological advancement and primal struggle. Each RimWorld is a self-contained ecosystem, featuring a wide array of diverse biomes from scorching deserts to frozen wastelands. Inhabitants, often survivors of crashed starships, use advanced technology to navigate the planet's harsh environments, defend against hostile wildlife, and survive in a lawless, untamed landscape.\n\nGravity well elevation: 1000 km.</description>
+		<viewGizmoTexPath>UI/Commands/ViewPlanet</viewGizmoTexPath>
+		<typeTag>Planet</typeTag>
+		<gravityWellExitElevation>1000</gravityWellExitElevation>
+		<gravityWellRadius>200</gravityWellRadius>
+	</LayeredAtmosphereOrbit.PlanetDef>
+  
+	<LayeredAtmosphereOrbit.PlanetDef>
+		<defName>LAO_Luna</defName>
+		<label>Luna</label>
+		<description>Luna is a large, airless moon in a stable orbit around RimWorld. Once thriving with life, its atmosphere was lost to an unknown event, leaving its surface scoured by vacuum and solar radiation. Exposing the surface to the destructive force of meteorites, which erased almost all traces of its former inhabitants. The frequent flares also ensure the moon remains free of mechanoids presence. This makes it a perfect, hidden location for pirate hideouts.\n\nDistance to Rimworld: 375000 km.\nDiameter: 25% of Rimworld.\nGravity well elevation: 300 km.</description>
+		<posFromRimworld>(-56055.71, 4671.31, 0)</posFromRimworld>
+		<viewGizmoTexPath>UI/Commands/LAO_ViewLuna</viewGizmoTexPath>
+		<typeTag>Moon</typeTag>
+		<gravityWellExitElevation>300</gravityWellExitElevation>
+		<gravityWellRadius>75</gravityWellRadius>
+		<permamentGameConditionDefs/>
+	</LayeredAtmosphereOrbit.PlanetDef>
+  
+</Defs>

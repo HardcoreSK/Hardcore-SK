@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!--========================= Walls =============================-->
-
-	<ThingDef ParentName="SK_BuildingBase" Name="WallBase" Abstract ="True">
+	<!--
+	<ThingDef ParentName="BuildingBase" Name="WallBase" Abstract ="True">
 		<graphicData>
 			<linkType>CornerFiller</linkType>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -30,13 +30,12 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>1</fillPercent>
 		<coversFloor>true</coversFloor>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<drawStyleCategory>Default1D</drawStyleCategory>
 		<tickerType>Never</tickerType>
 		<rotatable>false</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>
 		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<!-- Best affordance needed for stone -->
 		<holdsRoof>true</holdsRoof>
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>
 		<blockLight>true</blockLight>
@@ -59,8 +58,9 @@
 			</li>
 		</comps>
 	</ThingDef>
-
-	<ThingDef ParentName="WallBase">
+-->
+	<!-- DefOverwrite
+	<ThingDef ParentName="Wall">
 		<defName>Wall</defName>
 		<label>wall</label>
 		<description>An impassable wall. It is capable of holding up a roof.</description>
@@ -120,8 +120,9 @@
 		</stuffCategories>
 		<costStuffCount>6</costStuffCount>
 	</ThingDef>
-
-	<ThingDef ParentName="SK_BuildingBase">
+-->
+	<!-- DefOverwrite
+	<ThingDef ParentName="BuildingBase">
 		<defName>Fence</defName>
 		<label>fence</label>
 		<description>A fence made of posts joined by crossbars used for building pens for certain kinds of animals. Some kinds of animals can get past fences. Predators will not hunt creatures on the other side of a fence, but may still wander inside.</description>
@@ -178,7 +179,7 @@
 		<pathCost>80</pathCost>
 		<blockWind>false</blockWind>
 		<fillPercent>0.25</fillPercent>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<drawStyleCategory>Default1D</drawStyleCategory>
 		<tickerType>Never</tickerType>
 		<rotatable>false</rotatable>
 		<selectable>true</selectable>
@@ -209,14 +210,14 @@
 			</blueprintGraphicData>
 		</building>
 	</ThingDef>
-
-	<ThingDef ParentName="WallBase">
+-->
+	<ThingDef ParentName="Wall">
 		<defName>ClutterSilverWall</defName>
 		<label>panel reinforced wall</label>
 		<description>A reinforced wall with thick panels attached to strengthen it further.</description>
 		<graphicData>
 			<shaderType>CutoutComplex</shaderType>
-			<texPath>Things/Building/Walls/SilverWall</texPath>
+			<texPath>Things/Building/Walls/ReinforcedWallAtlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
@@ -233,31 +234,18 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Walls/SilverWallIco</uiIconPath>
-		<building>
-			<blueprintGraphicData>
-				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
-			</blueprintGraphicData>
-			<relatedBuildCommands>
-				<li>Door</li>
-				<li>MDoor</li>
-				<li>Autodoor</li>
-				<li>CellDoor</li>
-				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
-			</relatedBuildCommands>
-			<paintable>true</paintable>
-		</building>
+		<uiIconPath>Things/Building/Walls/ReinforcedWallIco</uiIconPath>
 		<statBases>
-			<MaxHitPoints>750</MaxHitPoints>
+			<MaxHitPoints>800</MaxHitPoints>
 			<WorkToBuild>900</WorkToBuild>
-			<Flammability>0.1</Flammability>
+			<Flammability>0</Flammability>
 		</statBases>
 		<tickerType>Never</tickerType>
-		<stuffCategories>
+		<stuffCategories Inherit="false">
 			<li>StrongMetallic</li>
 		</stuffCategories>
 		<costStuffCount>12</costStuffCount>
-		<costList>
+		<costList Inherit="false">
 			<ComponentIndustrial>2</ComponentIndustrial>
 			<ReinforcedConcrete>4</ReinforcedConcrete>
 		</costList>
@@ -267,13 +255,12 @@
 		<constructionSkillPrerequisite>13</constructionSkillPrerequisite>
 	</ThingDef>
 
-
-	<ThingDef ParentName="WallBase">
-		<defName>ClutterUWallLight</defName>
-		<label>utility wall with lights</label>
-		<description>Upgraded version of basic walls, with the ability to easily attach things, like centuries old dust! This version comes with lights to show off your beautiful dust collection.</description>
+	<ThingDef ParentName="Wall">
+		<defName>UtilityWall</defName>
+		<label>utility wall</label>
+		<description>Upgraded version of basic walls, with the ability to easily attach things, like centuries old dust! This version comes with built-in wires to hide them from cats.</description>
 		<graphicData>
-			<texPath>Things/Building/Walls/UWallYellow</texPath>
+			<texPath>Things/Building/Walls/UtilityWallAtlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
@@ -290,31 +277,71 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<building>
-			<blueprintGraphicData>
-				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
-			</blueprintGraphicData>
-			<relatedBuildCommands>
-				<li>Door</li>
-				<li>MDoor</li>
-				<li>Autodoor</li>
-				<li>CellDoor</li>
-				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
-			</relatedBuildCommands>
-			<paintable>true</paintable>
-		</building>
-		<uiIconPath>Things/Building/Walls/UWallIco</uiIconPath>
+		<uiIconPath>Things/Building/Walls/UtilityWallIco</uiIconPath>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>540</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+		<stuffCategories Inherit="false">
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>6</costStuffCount>
+		<costList Inherit="false">
+			<Wire>3</Wire>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>Autodoors</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+		<modExtensions>
+			<li Class="SK.Events.EarthquakeExtension">
+				<immunityToDamage>true</immunityToDamage>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="Wall">
+		<defName>ClutterUWallLight</defName>
+		<label>utility wall with lights</label>
+		<description>Upgraded version of basic walls, with the ability to easily attach things, like centuries old dust! This version comes with lights to show off your beautiful dust collection.</description>
+		<graphicData>
+			<texPath>Things/Building/Walls/UtilityWallLightsAtlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Walls/UtilityWallLightsIco</uiIconPath>
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
 			<WorkToBuild>655</WorkToBuild>
-			<Flammability>1.0</Flammability>
+			<Flammability>0</Flammability>
 			<Beauty>1</Beauty>
 		</statBases>
-		<stuffCategories>
+		<stuffCategories Inherit="false">
 			<li>StrongMetallic</li>
 		</stuffCategories>
-		<costStuffCount>12</costStuffCount>
-		<costList>
+		<costStuffCount>6</costStuffCount>
+		<costList Inherit="false">
 			<Wire>3</Wire>
 			<Glass>5</Glass>
 			<ElectronicComponents>1</ElectronicComponents>
@@ -329,12 +356,12 @@
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<transmitsPower>true</transmitsPower>
-				<basePowerConsumption>25</basePowerConsumption>
+				<basePowerConsumption>20</basePowerConsumption>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<soundPowerOn>Power_OnSmall</soundPowerOn>
 				<soundPowerOff>Power_OffSmall</soundPowerOff>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 		</comps>
 		<researchPrerequisites>
 			<li>Autodoors</li>
@@ -347,37 +374,106 @@
 		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase" Name="Column">
+	<ThingDef ParentName="BuildingBase" Name="Window">
+		<defName>Window</defName>
+		<label>window</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<description>It's like a wall, but it lets light through.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/Wall</texPath>
+			<graphicClass>Graphic_Appearances</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<uiIconPath>Things/Building/Walls/Window</uiIconPath>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<MarketValue>15.2</MarketValue>
+			<WorkToBuild>150</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+		<costStuffCount>15</costStuffCount>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>true</blockWind>
+		<passability>Impassable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<drawStyleCategory>Default1D</drawStyleCategory>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<designationCategory>Structure</designationCategory>
+		<staticSunShadowHeight>9.0</staticSunShadowHeight>
+		<blockLight>false</blockLight>
+		<!--Important-->
+		<canOverlapZones>false</canOverlapZones>
+		<stuffCategories>
+			<li>Glass</li>
+		</stuffCategories>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<building>
+			<isInert>true</isInert>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<researchPrerequisites>
+			<li>Construction_B3</li>
+		</researchPrerequisites>
+	</ThingDef>
+	<!--
+	<ThingDef ParentName="BuildingBase" Name="Column">
 		<defName>Column</defName>
 		<label>column</label>
-		<description>A structural column capable of holding up a roof. It does not impede movement or provide cover.</description>
+		<description>A structural column capable of holding up a roof. It does not impede movement.</description>
 		<graphicData>
-			<drawSize>(1,1.25)</drawSize>
-			<drawOffset>(0,0,0.2)</drawOffset>
-			<texPath>Things/Building/Furniture/Column</texPath>
+			<drawSize>(3,3)</drawSize>
+			<texPath>Things/Building/Structures/Columns/Column</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shadowData>
 				<volume>(0.3, 0.5, 0.3)</volume>
-				<offset>(0,0,-0.23)</offset>
 			</shadowData>
-			<damageData>
-				<rect>(0.2,0.2,0.6,0.6)</rect>
-			</damageData>
 		</graphicData>
+		<uiIconPath>Things/Building/Structures/Columns/Column_Icon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
 			<WorkToBuild>550</WorkToBuild>
 			<Flammability>0.2</Flammability>
 			<Beauty>5</Beauty>
-			<Mass>10</Mass>
-			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+			<Mass>50</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
 		<stuffCategories>
 			<li>StrongMetallic</li>
 			<li>Stony</li>
 			<li>Bricks</li>
 		</stuffCategories>
-		<costStuffCount>35</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.25</fillPercent>
@@ -386,6 +482,58 @@
 		<rotatable>false</rotatable>
 		<fertility>0</fertility>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<canOverlapZones>false</canOverlapZones>
+		<designationCategory>Structure</designationCategory>
+		<blockLight>false</blockLight>
+		<specialDisplayRadius>6.9</specialDisplayRadius>
+		<building>
+			<isInert>true</isInert>
+			<ai_chillDestination>false</ai_chillDestination>
+			<paintable>true</paintable>
+		</building>
+		<researchPrerequisites>
+			<li>Construction_B2</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<comps>
+			<li Class="CompProperties_Styleable" />
+		</comps>
+	</ThingDef>
+-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>ColumnPrimitive</defName>
+		<label>wooden column</label>
+		<description>A structural column capable of holding up a roof. It does not impede movement.</description>
+		<graphicData>
+			<drawSize>(3,3)</drawSize>
+			<texPath>Things/Building/Structures/Columns/ColumnPrimitive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.5, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Structures/Columns/ColumnPrimitive_Icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>450</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>5</Beauty>
+			<Mass>20</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.25</fillPercent>
+		<pathCost>0</pathCost>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<fertility>0</fertility>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<holdsRoof>true</holdsRoof>
 		<canOverlapZones>false</canOverlapZones>
 		<designationCategory>Structure</designationCategory>
@@ -400,7 +548,7 @@
 		<researchPrerequisites>
 			<li>Construction_B1</li>
 		</researchPrerequisites>
-		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 		<comps>
 			<li Class="CompProperties_Styleable" />
 		</comps>

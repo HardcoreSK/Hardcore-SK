@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ResearchProjectDef[defName="Bow_Archotech"]</xpath>
+    <value>
+      <li Class="ExtendedResearchRequirements.RequiredResearchItemsExtension">
+        <requirements>
+          <li>
+            <researchItem>Techprint_Bow_Archotech</researchItem>
+            <count>1</count>
+            <creditLegacyTechprints>true</creditLegacyTechprints>
+          </li>
+        </requirements>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ResearchProjectDef[defName="Blaster_weapons_Archotech"]</xpath>
+    <value>
+      <li Class="ExtendedResearchRequirements.RequiredResearchItemsExtension">
+        <requirements>
+          <li>
+            <researchItem>Techprint_Blaster_weapons_Archotech</researchItem>
+            <count>1</count>
+            <creditLegacyTechprints>true</creditLegacyTechprints>
+          </li>
+        </requirements>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ResearchProjectDef[defName="SMG_Archotech"]</xpath>
+    <value>
+      <li Class="ExtendedResearchRequirements.RequiredResearchItemsExtension">
+        <requirements>
+          <li>
+            <researchItem>Techprint_SMG_Archotech</researchItem>
+            <count>1</count>
+            <creditLegacyTechprints>true</creditLegacyTechprints>
+          </li>
+        </requirements>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ResearchProjectDef[defName="Melee_Archotech"]</xpath>
+    <value>
+      <li Class="ExtendedResearchRequirements.RequiredResearchItemsExtension">
+        <requirements>
+          <li>
+            <researchItem>Techprint_Melee_Archotech</researchItem>
+            <count>1</count>
+            <creditLegacyTechprints>true</creditLegacyTechprints>
+          </li>
+        </requirements>
+      </li>
+    </value>
+  </Operation>
+</Patch>

@@ -6,7 +6,7 @@
 		<label>Fruit Yogurt</label>
 		<description>A sweet treat made from milk. \n\nFood Effects: Sight and Blood Filtration.</description>
 		<graphicData>
-			<texPath>Things/Item/Meal/Meal_FruitYogurt</texPath>
+			<texPath>Things/Food/Meals/FruitYogurt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -25,7 +25,7 @@
 		</comps>
 		<ingestible>
 			<preferability>MealFine</preferability>
-			<joy>0.45</joy>
+			<joy>0.10</joy>
 			<joyKind>Gluttonous</joyKind>
 			<nurseable>true</nurseable>
 			<ingestEffect>EatVegetarian</ingestEffect>
@@ -44,7 +44,7 @@
 		<label>Cup of Tea</label>
 		<description>A drink made from brewing tea leaves.</description>
 		<graphicData>
-		  <texPath>Things/Item/Drug/Tea</texPath>
+		  <texPath>Things/Food/Meals/Tea</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -55,7 +55,6 @@
 		</statBases>
 		<thingCategories>
 			<li>Energetics</li>
-			<li>Drugs</li>
 		</thingCategories>
 		<stackLimit>10</stackLimit>
 		<ingestible>
@@ -103,13 +102,12 @@
 		</comps>
 	</ThingDef>
 
-
 	<ThingDef ParentName="MealBeverage">
 		<defName>CupCoffee</defName>
 		<label>Cup of Coffee</label>
 		<description>A cup of coffee.</description>
 		<graphicData>
-			<texPath>Things/Item/Drug/Coffee</texPath>
+			<texPath>Things/Food/Meals/Coffee</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<stackLimit>10</stackLimit>
@@ -120,7 +118,6 @@
 		</statBases>
 		<thingCategories>
 			<li>Energetics</li>
-			<li>Drugs</li>
 		</thingCategories>
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
@@ -172,7 +169,7 @@
 		<label>Fruit Drink</label>
 		<description>A drink made by pressing fruit for their juice.</description>
 		<graphicData>
-			<texPath>Things/Item/Drug/Fruitdrink</texPath>
+			<texPath>Things/Food/Meals/FruitDrink</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<socialPropernessMatters>true</socialPropernessMatters>
@@ -211,6 +208,10 @@
 			<li Class="CompProperties_Drug">
 				<addictiveness>0</addictiveness>
 				<listOrder>1100</listOrder>
+			</li>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>7</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
 	</ThingDef>

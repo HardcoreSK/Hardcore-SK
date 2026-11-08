@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+	<GenStepDef>
+		<defName>LAO_MoonCratersLarge</defName>
+		<order>950</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>CraterLarge</thingDef>
+			<createUsedRect>true</createUsedRect>
+			<skipRoofed>true</skipRoofed>
+			<countPer10kCellsRange>3~12</countPer10kCellsRange>
+			<warnOnFail>false</warnOnFail>
+		</genStep>
+	</GenStepDef>
+
+	<GenStepDef>
+		<defName>LAO_MoonCratersMedium</defName>
+		<order>951</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>CraterMedium</thingDef>
+			<createUsedRect>true</createUsedRect>
+			<skipRoofed>true</skipRoofed>
+			<countPer10kCellsRange>5~20</countPer10kCellsRange>
+			<warnOnFail>false</warnOnFail>
+		</genStep>
+	</GenStepDef>
+  
+	<GenStepDef>
+		<defName>LAO_MoonCratersSmall</defName>
+		<order>952</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>CraterSmall</thingDef>
+			<createUsedRect>true</createUsedRect>
+			<skipRoofed>true</skipRoofed>
+			<countPer10kCellsRange>15~60</countPer10kCellsRange>
+			<warnOnFail>false</warnOnFail>
+		</genStep>
+	</GenStepDef>
+  
+</Defs>

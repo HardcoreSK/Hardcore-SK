@@ -1,4 +1,65 @@
 
+v1.12.26
+
+- Fixed compatibility patch for Vanilla Events Expanded v2.x
+- Added support for 'smaller region' and 'larger region' map features from VLE
+- Added GenStep def extension which controls whether it is included in previews
+- Added Portuguese-Brazilian translation (thanks to Digoloker for submitting)
+- Added Chinese-Simplified translation (thanks to ylc395 for submitting)
+- Updated Chinese-Traditional translation (thanks to ylc395 for submitting)
+
+v1.12.25
+
+- Fixed compatibility issues with various mods that caused inaccurate previews
+
+v1.12.24
+
+- Fixed compatibility with the 'Visual Exceptions' mod
+
+v1.12.23
+
+- Optimized terrain color algorithm (much faster startup and lower RAM usage)
+- Fixed compatibility issue with 'MultiFloors' causing inaccurate previews
+- Fixed compatibility issue with 'Zombieland' causing inaccurate previews
+- Added automatic detection and logging of some causes for inaccurate previews
+
+v1.12.22
+
+- Disabled obsolete compatibility patch for Performance Optimizer in 1.6
+- Updated Spanish translation (submitted by Ferchu)
+
+v1.12.21
+
+- Added settings button that allows editing map size and starting season
+- Added compatibility patch for the 'RV with built-in PD' mod
+
+v1.12.20
+
+- Fixed compatibility with Vanilla Events Expanded
+- Fixed compatibility with some Alpha Biomes map features
+- Fixed preview error when clicking gravship in orbit
+- Added debouncing to Map Designer auto-preview integration
+
+v1.12.19
+
+- Fixed compatibility with Dubs Bad Hygiene
+- Fixed compatibility with ReBuild Doors & Corners
+- Fixed an error that randomly caused previews to fail
+- Fixed some of the new DLC map features not being affected by seed rerolls
+
+v1.12.18
+
+- Support for RimWorld 1.6
+
+v1.12.17
+
+- Fixed texture loading error during startup that occured in some cases
+
+v1.12.16
+
+- Added option to disable preview completion animation
+- Added Spanish translation (thanks to @Ferchu for submitting)
+
 v1.12.15
 
 - Fixed compatibility patch for recently updated mod Vehicle Framework

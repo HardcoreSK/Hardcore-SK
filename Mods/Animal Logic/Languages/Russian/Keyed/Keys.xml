@@ -13,6 +13,9 @@
 	<ALConfigMeatConversionLabel>Превращает любое стандартное мясо в куриное при разделке</ALConfigMeatConversionLabel>
 	<ALConfigMeatConversionTooltip>Для удобства хранения. Не влияет на уже разделанное мясо.</ALConfigMeatConversionTooltip>
 	
+	<ALConfigShearCorpsesLabel>Собирать шерсть при разделке туш</ALConfigShearCorpsesLabel>
+	<ALConfigShearCorpsesTooltip>Работает только со стандартной состригаемой шерстью, не затрагивает экзотические ресурсы из некоторых модов.</ALConfigShearCorpsesTooltip>
+	
 	<ALConfigMedicalAlertsLabel>Уведомления о больных животных</ALConfigMedicalAlertsLabel>
 	<ALConfigMedicalAlertsTooltip>Показывает уведомления когда животные колонии ранены, нуждаются в спасении или серьезно больны.</ALConfigMedicalAlertsTooltip>
 	
@@ -25,6 +28,9 @@
 	<ALConfigTradeHintsLabel>Метки для торговли и караванов</ALConfigTradeHintsLabel>
 	<ALConfigTradeHintsTooltip>Добавляет информацию о поле и уровне обучения животного.</ALConfigTradeHintsTooltip>
 	
+	<ALConfigAnimalsCanUseFoodDispenserLabel>Разрешить животным использовать дозатор питательной пасты</ALConfigAnimalsCanUseFoodDispenserLabel>
+	<ALConfigAnimalsCanUseFoodDispenserTooltip>Животные смогут нажимать кнопку дозатора. Если они всё ещё его не используют, убедитесь, что само здание находится в их разрешенной зоне.</ALConfigAnimalsCanUseFoodDispenserTooltip>
+	
 	<ALConfigHaulingMTBLabel>Cреднее время между переноской {0}ч. Стандарт: 1.5ч.</ALConfigHaulingMTBLabel>
 	<ALConfigHaulingMTBTooltip>Установка на 0 значительно поднимает эффективность, но может повлиять на производительность при наличии большого количества обученных животных. Эта настройка действует аналогично дргим модам, увеличивающим эффективность животных-носильщиков.</ALConfigHaulingMTBTooltip>
 	
@@ -34,8 +40,17 @@
 	<ALConfigAlwaysShowRelationsLabel>Всегда показывать отношения животных</ALConfigAlwaysShowRelationsLabel>
 	<ALConfigAlwaysShowRelationsTooltip>По умолчанию, отображаются только отношения с именованными животными.</ALConfigAlwaysShowRelationsTooltip>
 	
-	<ALConfigToxicBuildupRotLabel>Модификатор шанса разложения при отравлении</ALConfigToxicBuildupRotLabel>
-	<ALConfigToxicBuildupRotTooltip>По умолчанию, животные умершие при наличии существенного уровня отравления имеют шанс немедленно начать разлагаться. Этосделано чтобы токсичные осадки были более опасным событием, но имеет побочный эффект - животные с ядовитым укусом (например кобры), убиы жертву, не могут её съесть. В результате они часто убивают одно животное за другим пока не перебъют всю живность подходящего размера и умирают с голоду. Установите на 0 чтобы полностью убрать шанс гниения.</ALConfigToxicBuildupRotTooltip>
+	<ALConfigToxicBuildupRotLabel>Множитель шанса разложения при отравлении: {0}%</ALConfigToxicBuildupRotLabel>
+	<ALConfigToxicBuildupRotTooltip>По умолчанию, животные умершие при наличии существенного уровня отравления имеют шанс немедленно начать разлагаться. Установите на 0% чтобы полностью убрать шанс гниения, или на 100% для стандартной формулы.</ALConfigToxicBuildupRotTooltip>
+	
+	<ALConfigTamingAgeFactorLabel>Молодых животных легче приручать и обучать</ALConfigTamingAgeFactorLabel>
+	<ALConfigTamingAgeFactorTooltip>Снижает показатель дикости у незрелых животных. Бонус пропорционален возрасту: новорожденных приручить значительно проще, а почти взрослых — едва заметно.</ALConfigTamingAgeFactorTooltip>
+	
+	<ALConfigComeWhenCalledLabel>Послушные животные откликаются на зов для дрессировки</ALConfigComeWhenCalledLabel>
+	<ALConfigComeWhenCalledTooltip>Животные с изученным послушанием идут навстречу дрессировщику, избавляя поселенца от необходимости бегать за ними по всей карте.</ALConfigComeWhenCalledTooltip>
+	
+	<ALConfigPlayWithAnimalsLabel>Разрешить игру с животными для отдыха</ALConfigPlayWithAnimalsLabel>
+	<ALConfigPlayWithAnimalsTooltip>Поселенцы, способные к уходу за животными, могут играть с питомцами ради развлечения. Предпочтение отдаётся прирученным любимцам. Опытные дрессировщики (навык 15+) могут также взаимодействовать с дикими животными с шансом их приручить.</ALConfigPlayWithAnimalsTooltip>
 
 	<!-- Extra stats -->
 	

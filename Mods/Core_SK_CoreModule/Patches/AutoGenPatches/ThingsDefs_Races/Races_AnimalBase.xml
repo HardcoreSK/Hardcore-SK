@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[@Name="AnimalThingBase"]</xpath>
+    <value>
+		<statBases Merge="true">
+		  <Flammability>1.2</Flammability>
+		  <LeatherAmount>30</LeatherAmount>
+		  <MeleeDodgeChance>0.02</MeleeDodgeChance>
+		  <MeleeCritChance>0</MeleeCritChance>
+		  <MeleeParryChance>0.07</MeleeParryChance>
+		  <GermResistance>0.12</GermResistance>
+		  <GermContainment>0.04</GermContainment>
+		</statBases>
+		<race Merge="true">
+		  <manhunterOnDamageChance>0.0125</manhunterOnDamageChance>
+		  <manhunterOnTameFailChance>0.005</manhunterOnTameFailChance>
+		  <nameOnTameChance>0.5</nameOnTameChance>
+		  <hediffGiverSets>
+			<li>OrganicStandard</li>
+			<li>Animal</li>
+		  </hediffGiverSets>
+		</race>
+		<comps Inherit="false">
+			<li>
+				<compClass>CompAttachBase</compClass>
+			</li>
+			<li Class="CombatExtended.CompProperties_Inventory" />
+			<li Class="CombatExtended.CompProperties_TacticalManager" />
+		</comps>
+		<recipes Merge="true">
+		  <li>InjectMedicine</li>
+		</recipes>
+    </value>
+  </Operation>
+
+</Patch>

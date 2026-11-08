@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/StatDef[defName="Beauty"]/parts</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/StatDef[defName="Beauty"]/parts</xpath>
+      <value><li Class="ZuoYao.SimpleMonumentQuest.StatPart_SimpleMonumentBeauty" /></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/StatDef[defName="Beauty"]</xpath>
+      <value><parts><li Class="ZuoYao.SimpleMonumentQuest.StatPart_SimpleMonumentBeauty" /></parts></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/StatDef[defName="MeditationFocusStrength"]/parts</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/StatDef[defName="MeditationFocusStrength"]/parts</xpath>
+      <value><li Class="ZuoYao.SimpleMonumentQuest.StatPart_SimpleMonumentFocus" /></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/StatDef[defName="MeditationFocusStrength"]</xpath>
+      <value><parts><li Class="ZuoYao.SimpleMonumentQuest.StatPart_SimpleMonumentFocus" /></parts></value>
+    </nomatch>
+  </Operation>
+</Patch>

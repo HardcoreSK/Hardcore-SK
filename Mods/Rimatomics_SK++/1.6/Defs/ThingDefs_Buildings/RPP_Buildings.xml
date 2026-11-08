@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="BasedWeapon" Class="Rimatomics.RimatomicsThingDef">
+        <defName>RimatomicsPlusPlus_PPHC</defName>
+        <label>PPHC</label>
+        <description>The RA-P4 Pulsed Power Hypercapacitor stores an extremely large amount of energy in its compressed bank of ultracapacitors, which can be discharged in a single pulse by compatible Rimatomics energy weapons.</description>
+        <thingClass>Rimatomics.Building_PPC</thingClass>
+        <graphicData>
+            <texPath>Rimatomics/Things/RimatomicsBuildings/PPCH</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3,5)</drawSize>
+        </graphicData>
+        <size>(2,4)</size>
+        <fillPercent>0.60</fillPercent>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>20000</WorkToBuild>
+            <Mass>800</Mass>
+            <Flammability>2.0</Flammability>
+        </statBases>
+        <castEdgeShadows>true</castEdgeShadows>
+        <building>
+            <ai_combatDangerous>true</ai_combatDangerous>
+        </building>
+		<designationCategory>Power</designationCategory>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>400</costStuffCount>
+		<costList>
+			<Plastic>150</Plastic>
+			<Weapon_Parts>15</Weapon_Parts>
+			<Plasma_Component>3</Plasma_Component>
+			<Microchips>3</Microchips>
+		</costList>
+        <comps>
+            <li Class="CompProperties_Battery">
+                <storedEnergyMax>60000</storedEnergyMax>
+                <efficiency>0.98</efficiency>
+                <shortCircuitInRain>false</shortCircuitInRain>
+                <transmitsPower>true</transmitsPower>
+            </li>
+			<li Class="CompProperties_Breakdownable"/>
+        </comps>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <constructionSkillPrerequisite>18</constructionSkillPrerequisite>
+    </ThingDef>
+
+</Defs>

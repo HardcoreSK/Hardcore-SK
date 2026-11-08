@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FactionDef ParentName="SK_HumanFactionBase">
+	<FactionDef ParentName="FactionBase">
 		<defName>Sectarian</defName>
 		<label>Church of violence</label>		
 		<pawnSingular>church of violence</pawnSingular>
@@ -31,6 +31,7 @@
 				<Impid MayRequire="Ludeon.RimWorld.Biotech">0.025</Impid>
 				<Genie MayRequire="Ludeon.RimWorld.Biotech">0.025</Genie>
 				<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.025</Yttakin>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.03</Hussar>
 			</xenotypeChances>
 		</xenotypeSet>
 		<allowedCultures>
@@ -112,7 +113,7 @@
 				<li>SteelBar</li>
 				<li>FerrosiliconAlloy</li>
 				<li>CupronickelAlloy</li>
-				<li>Plasteel</li>
+				<li>Steel</li>
 			</thingDefs>
 		</apparelStuffFilter>
 		<pawnGroupMakers>

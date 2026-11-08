@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WVC_MMWM_Settings>Режимы работы</WVC_MMWM_Settings>-->
+
+  <WVC_Label_MainModeLabelSetting>Основное</WVC_Label_MainModeLabelSetting>-->
+  <WVC_Label_BonusModeLabelSetting>Бонус</WVC_Label_BonusModeLabelSetting>-->
+  <WVC_Label_WorkModeMechanicsLabelSetting>Механики</WVC_Label_WorkModeMechanicsLabelSetting>-->
+
+  <WVC_WorkModes_ResetButton>Сбросить</WVC_WorkModes_ResetButton>-->
+
+  <WVC_WorkModes_ResetButtonWarning>Настройки будут сохранены, вы уверены?</WVC_WorkModes_ResetButtonWarning>-->
+  <WVC_WorkModes_ResetButton_SettingsChanged>Настройки изменены.</WVC_WorkModes_ResetButton_SettingsChanged>-->
+
+  <!-- Main -->
+  <WVC_Label_FindAndDestroy>Найти и уничтожить</WVC_Label_FindAndDestroy>-->
+  <WVC_Label_WaitEnemy>Ожидание врага</WVC_Label_WaitEnemy>-->
+  <WVC_Label_WorkAndWaitEnemy>Работа и ожидание</WVC_Label_WorkAndWaitEnemy>-->
+  <WVC_Label_DefendYourself>Защита себя</WVC_Label_DefendYourself>-->
+  <WVC_Label_Ambush>Засада</WVC_Label_Ambush>-->
+  <WVC_Label_WorkAndRecharge>Работа и подзарядка</WVC_Label_WorkAndRecharge>-->
+  <WVC_Label_SafeWorkAndRecharge>Работа, если безопасно</WVC_Label_SafeWorkAndRecharge>-->
+  <WVC_Label_EscaortAndRecharge>Сопровождение и подзарядка</WVC_Label_EscaortAndRecharge>-->
+  <WVC_Label_WorkRechargeEscort>Работа, подзарядка и сопровождение</WVC_Label_WorkRechargeEscort>-->
+  <WVC_Label_EscortIfEnemyOnMap>Сопровождение, если есть враги</WVC_Label_EscortIfEnemyOnMap>-->
+
+  <WVC_ToolTip_Setting>Перед выключением, назначьте всем механоидам режимы ваниллы. Для изменения требуется перезапуск игры.</WVC_ToolTip_Setting>-->
+
+  <!-- Bonus -->
+  <WVC_Label_EscortIfEnemyWorkAndRecharge>Сопровождение, если есть враги, работа и подзарядка</WVC_Label_EscortIfEnemyWorkAndRecharge>-->
+  <WVC_Label_EscortIfDraftedOrDowned>Сопровождение, если в боевом режиме или сражен</WVC_Label_EscortIfDraftedOrDowned>-->
+  <WVC_Label_HiveMindResearching>Коллективное исследование</WVC_Label_HiveMindResearching>-->
+  <WVC_Label_Scavenging>Собирательство</WVC_Label_Scavenging>-->
+  <WVC_Label_ScavenZoneCells>Минимальное количество для зоны собирательства: {0}</WVC_Label_ScavenZoneCells>-->
+
+  <WVC_ToolTip_BonusSetting>Бонусные режимы. Изначально они отключены. Включение их совместимо с существуемыми сохранениями.</WVC_ToolTip_BonusSetting>-->
+
+  <!-- Idle Optimization -->
+  <WVC_Label_enableShutdownForAllMechanoids>Оптимизация бездействия для ваннильных режимов</WVC_Label_enableShutdownForAllMechanoids>-->
+  <WVC_ToolTip_enableShutdownForAllMechanoids>Если включено, оптимизирует бездейтсвие для ваннильных режимов</WVC_ToolTip_enableShutdownForAllMechanoids>-->
+
+  <WVC_Label_enableSmartChargingForAllMechanoids>Умная подзарядка для ваннильных режимов</WVC_Label_enableSmartChargingForAllMechanoids>-->
+  <WVC_ToolTip_enableSmartChargingForAllMechanoids>Если включено, то механоиды будут идти на зарядку, когда они не ничем не заняты, а не только тогда, когда заряд опустится до заданного значения.</WVC_ToolTip_enableSmartChargingForAllMechanoids>-->
+
+  <WVC_ToolTip_VanillaModeOptimizationWarning>Не влияет на боевых механоидов, поскольку их режим бездействия был заменен имитацией патрулирования.</WVC_ToolTip_VanillaModeOptimizationWarning>-->
+
+  <!-- Features -->
+  <WVC_Label_enableShutdownSearching>Включить поиск зоны выключения</WVC_Label_enableShutdownSearching>-->
+  <WVC_ToolTip_enableShutdownSearching>Если включено, механоиды будут искать зону выключения перед непосредственно выключением.</WVC_ToolTip_enableShutdownSearching>-->
+
+  <WVC_Label_enableEnemySearching>Включить поиск врагов</WVC_Label_enableEnemySearching>-->
+  <WVC_ToolTip_enableEnemySearching>Если включено, в безопасных режимах, механоиды будут проверять карту на врагов.</WVC_ToolTip_enableEnemySearching>-->
+
+  <WVC_ToolTip_enableSearchingWarning>Если вы не понимаете, что делает данная опция, оставьте её включенной.</WVC_ToolTip_enableSearchingWarning>-->
+
+  <WVC_Label_enableSmartEscort>Умное сопровождение</WVC_Label_enableSmartEscort>-->
+  <WVC_ToolTip_enableSmartEscort>Если включено, позволяет выбирать пешку для сопровождения.
+
+Перезапуск игры обязателен!</WVC_ToolTip_enableSmartEscort>-->
+
+  <WVC_Label_shutdownModeZonesOrSpots>Режим сна: зоны или места</WVC_Label_shutdownModeZonesOrSpots>-->
+  <WVC_ToolTip_shutdownModeZonesOrSpots>Если включено, будут использоваться зоны. В качестве альтернативы - точки. Рекомендуется включить.
+
+Эта опция предназначена для опытных пользователей. Если вы не знаете, что такое точки, то лучше оставить её включенной.
+
+Перезапуск игры обязателен!</WVC_ToolTip_shutdownModeZonesOrSpots>-->
+
+  <WVC_Label_useCustomShutdownBehavior>Использовать настраиваемое поведение выключения.</WVC_Label_useCustomShutdownBehavior>-->
+  <WVC_ToolTip_useCustomShutdownBehavior>Ваннильный режим сна такой бесполезный, но надежный. Если вы столкнулись с ошибками, связанными с выключением механоидов, отключите эту опцию.</WVC_ToolTip_useCustomShutdownBehavior>-->
+
+  <WVC_Label_enableDormantMode>Режим покоя</WVC_Label_enableDormantMode>-->
+  <WVC_ToolTip_enableDormantMode>Если включено, то когда механоид находится в режиме выключения, он не потребляет нагрузку на сеть.
+
+В случае проблем с производительностью рекомендуется отключить эту опцию.
+
+Перезапуск игры обязателен!</WVC_ToolTip_enableDormantMode>-->
+  <WVC_Label_mechBandwithCostInDormantMode>Фактор затрат нагрузки на сеть в режиме покоя x{0}%</WVC_Label_mechBandwithCostInDormantMode>-->
+
+</LanguageData>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<CombatExtended.AmmoCategoryDef>
@@ -24,6 +24,12 @@
 	<CombatExtended.AmmoCategoryDef>
 		<defName>Laser</defName>
 		<label>laser</label>
+		<description>A concentrated beam or bolt of radiation, imparting disruptive energy into the target.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>Laser_Mech</defName>
+		<label>laser (mech)</label>
 		<description>A concentrated beam or bolt of radiation, imparting disruptive energy into the target.</description>
 	</CombatExtended.AmmoCategoryDef>
 
@@ -178,8 +184,8 @@
 
 	<CombatExtended.AmmoCategoryDef>
 		<defName>BlasterAP</defName>
-		<label>concentrated tibanna</label>
-		<labelShort>conc.</labelShort>
+		<label>pressurized tibanna</label>
+		<labelShort>AP</labelShort>
 		<description>Energy bolts created with tibanna gas. Causes neat punctures and burns that tend to carbonize and char. Low chance of wound infection. Spun to a higher pressure to create bolts with improved penetration, at the loss of wounding potential.</description>
 	</CombatExtended.AmmoCategoryDef>
 

@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!--========================== Fox base ========================-->
-	<ThingDef Name="SK_ThingFoxBase" ParentName="SK_AnimalThingBase" Abstract="True">
+	<ThingDef Name="SK_ThingFoxBase" ParentName="AnimalThingBase" Abstract="True">
 		<devNote>warg-1</devNote>
 		<statBases>
 			<Mass>7</Mass>
@@ -11,6 +11,7 @@
 			<MeleeDodgeChance>0.28</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>2</FilthRate>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -84,7 +85,6 @@
 			<trainability>Advanced</trainability>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Fox</leatherDef>
-			<wildness>0.75</wildness>
 			<nuzzleMtbHours>36</nuzzleMtbHours>
 			<manhunterOnDamageChance>0.85</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
@@ -127,20 +127,22 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase" Name="SK_AnimalFoxKindBase" Abstract="True">
+	<PawnKindDef ParentName="AnimalKindBase" Name="SK_AnimalFoxKindBase" Abstract="True">
 		<combatPower>55</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 	</PawnKindDef>
 
 	<!--========================== Fox fennec ========================-->
+	<!-- DefOverwrite: migrated to CoreModule/Patches/AutoGenPatches/ThingDefs_Races.
 	<ThingDef ParentName="SK_ThingFoxBase">
 		<defName>Fox_Fennec</defName>
 		<label>fennec fox</label>
 		<description>A small fox originally from the northern part of Earth's Africa continent. It hunts small creatures and has very large ears.</description>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalFoxKindBase">
+<!-- 	<PawnKindDef ParentName="SK_AnimalFoxKindBase">
 		<defName>Fox_Fennec</defName>
 		<label>fennec fox</label>
 		<labelPlural>fennec foxes</labelPlural>
@@ -184,15 +186,17 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
+ -->
 	<!--========================== Fox red ========================-->
+	<!-- DefOverwrite: migrated to CoreModule/Patches/AutoGenPatches/ThingDefs_Races.
 	<ThingDef ParentName="SK_ThingFoxBase">
 		<defName>Fox_Red</defName>
 		<label>red fox</label>
 		<description>A small solitary canine evolved for hunting small prey in temperate climates. Chicken farmers hate foxes because of their ability to destroy a whole coop in minutes.</description>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalFoxKindBase">
+<!-- 	<PawnKindDef ParentName="SK_AnimalFoxKindBase">
 		<defName>Fox_Red</defName>
 		<label>red fox</label>
 		<labelPlural>red foxes</labelPlural>
@@ -236,15 +240,17 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
+ -->
 	<!--========================== Fox arctic ========================-->
+	<!-- DefOverwrite: migrated to CoreModule/Patches/AutoGenPatches/ThingDefs_Races.
 	<ThingDef ParentName="SK_ThingFoxBase">
 		<defName>Fox_Arctic</defName>
 		<label>arctic fox</label>
 		<description>A small predator adapted for cold climates. It usually hunts small game like mice and voles, sometimes burrowing through a meter of snow to reach its prey.</description>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalFoxKindBase">
+<!-- 	<PawnKindDef ParentName="SK_AnimalFoxKindBase">
 		<defName>Fox_Arctic</defName>
 		<label>arctic fox</label>
 		<race>Fox_Arctic</race>
@@ -286,5 +292,5 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
+ -->
 </Defs>

@@ -1,7 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ========================== Rodentlike ============================ -->
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Squirrel</defName>
 		<label>squirrel</label>
 		<devNote>squirrel</devNote>
@@ -15,6 +16,7 @@
 			<MeleeDodgeChance>0.23</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>1</FilthRate>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -74,7 +76,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Light</leatherDef>
-			<wildness>0.75</wildness>
 			<trainability>None</trainability>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<gestationPeriodDays>5.661</gestationPeriodDays>
@@ -119,8 +120,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Squirrel</defName>
 		<label>squirrel</label>
 		<race>Squirrel</race>
@@ -160,8 +162,9 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+ -->
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Alphabeaver</defName>
 		<label>alphabeaver</label>
 		<devNote>misc</devNote>
@@ -175,6 +178,7 @@
 			<MeleeDodgeChance>0.12</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>8</FilthRate>
+			<Wildness>0.72</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -232,7 +236,6 @@
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Light</leatherDef>
 			<foodType>DendrovoreAnimal</foodType>
-			<wildness>0.72</wildness>
 			<trainability>Intermediate</trainability>
 			<gestationPeriodDays>8.5</gestationPeriodDays>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
@@ -286,8 +289,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Alphabeaver</defName>
 		<label>alphabeaver</label>
 		<race>Alphabeaver</race>
@@ -332,8 +336,9 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+ -->
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Capybara</defName>
 		<label>capybara</label>
 		<devNote>sheep-1</devNote>
@@ -348,6 +353,7 @@
 			<MeleeDodgeChance>0.11</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>8</FilthRate>
+			<Wildness>0.55</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -405,7 +411,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Light</leatherDef>
-			<wildness>0.55</wildness>
 			<roamMtbDays>2</roamMtbDays>
 			<petness>0.08</petness>
 			<trainability>Intermediate</trainability>
@@ -461,8 +466,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Capybara</defName>
 		<label>capybara</label>
 		<race>Capybara</race>
@@ -516,32 +522,23 @@
 			<li Class="SK.PawnGraphicExtension">
 				<colors>
 					<li>(225,225,225)</li>
-					<!-- White -->
 					<li>(215,215,215)</li>
-					<!-- Light Grey -->
 					<li>(125,125,125)</li>
-					<!-- Medium Grey -->
 					<li>(130,40,0)</li>
-					<!-- Reddish Brown -->
 					<li>(195,185,170)</li>
-					<!-- Light Tan -->
 					<li>(140,110,65)</li>
-					<!-- Tan -->
 					<li>(140,90,35)</li>
-					<!-- Medium Brown -->
 					<li>(100,45,5)</li>
-					<!-- Dark Brown -->
 					<li>(80,50,40)</li>
-					<!-- Very Dark Brown -->
 					<li>(90,90,90)</li>
-					<!-- Dark Grey -->
 				</colors>
 				<shaderType>Cutout</shaderType>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+ -->
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Chinchilla</defName>
 		<label>chinchilla</label>
 		<devNote>pig-1</devNote>
@@ -556,6 +553,7 @@
 			<MeleeDodgeChance>0.23</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>1</FilthRate>
+			<Wildness>0.50</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -612,7 +610,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Chinchilla</leatherDef>
-			<wildness>0.50</wildness>
 			<roamMtbDays>2</roamMtbDays>
 			<trainability>None</trainability>
 			<mateMtbHours>8</mateMtbHours>
@@ -660,8 +657,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Chinchilla</defName>
 		<label>chinchilla</label>
 		<race>Chinchilla</race>
@@ -709,8 +707,9 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+ -->
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Boomrat</defName>
 		<label>boomrat</label>
 		<devNote>squirrel-1</devNote>
@@ -724,6 +723,7 @@
 			<MeleeDodgeChance>0.18</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>3</FilthRate>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -792,7 +792,6 @@
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Boomanimal</leatherDef>
 			<executionRange>4</executionRange>
-			<wildness>0.75</wildness>
 			<trainability>Intermediate</trainability>
 			<petness>0.20</petness>
 			<mateMtbHours>8</mateMtbHours>
@@ -850,8 +849,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Boomrat</defName>
 		<label>boomrat</label>
 		<race>Boomrat</race>
@@ -900,8 +900,9 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+ -->
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Raccoon</defName>
 		<label>raccoon</label>
 		<devNote>squirrel-1</devNote>
@@ -915,6 +916,7 @@
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>4</FilthRate>
 			<ToxicResistance>0.8</ToxicResistance>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -971,7 +973,6 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Light</leatherDef>
-			<wildness>0.75</wildness>
 			<mateMtbHours>8</mateMtbHours>
 			<gestationPeriodDays>5.661</gestationPeriodDays>
 			<litterSizeCurve>
@@ -1015,8 +1016,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Raccoon</defName>
 		<label>raccoon</label>
 		<race>Raccoon</race>
@@ -1068,24 +1070,19 @@
 			<li Class="SK.PawnGraphicExtension">
 				<colors>
 					<li>(215,215,215)</li>
-					<!-- Light Grey -->
 					<li>(125,125,125)</li>
-					<!-- Medium Grey -->
 					<li>(155,155,175)</li>
-					<!-- Light Blue Grey -->
 					<li>(90,95,105)</li>
-					<!-- Dark Blue Grey -->
 					<li>(140,110,65)</li>
-					<!-- Tan -->
 					<li>(140,90,35)</li>
-					<!-- Medium Brown -->
 				</colors>
 				<shaderType>Cutout</shaderType>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+ -->
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Rat</defName>
 		<label>rat</label>
 		<devNote>squirrel-1</devNote>
@@ -1100,6 +1097,7 @@
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>1</FilthRate>
 			<ToxicResistance>0.9</ToxicResistance>
+			<Wildness>0.50</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -1158,7 +1156,6 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Light</leatherDef>
-			<wildness>0.50</wildness>
 			<trainability>None</trainability>
 			<petness>0.15</petness>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
@@ -1206,8 +1203,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Rat</defName>
 		<label>rat</label>
 		<race>Rat</race>
@@ -1250,8 +1248,8 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+ -->
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Chipmunk</defName>
 		<label>chipmunk</label>
 		<devNote>squirrel-1</devNote>
@@ -1265,6 +1263,7 @@
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>1</FilthRate>
 			<ToxicResistance>0.8</ToxicResistance>
+			<Wildness>0.50</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -1321,7 +1320,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Light</leatherDef>
-			<wildness>0.50</wildness>
 			<petness>0.15</petness>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
@@ -1369,7 +1367,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Chipmunk</defName>
 		<label>chipmunk</label>
 		<race>Chipmunk</race>

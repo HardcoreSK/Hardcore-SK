@@ -1,4 +1,103 @@
 
+v1.7.12
+
+- Fixed compatibility with river-related features from Vanilla Landmarks Expanded
+
+v1.7.11
+
+- Added compatibility patch for 'Roads Of The Rim'
+- Fixed lag spike (once per in-game day) when 'Alpha Biomes' is present
+- Fixed compatibility patch for 'RimWar' in 1.6
+
+v1.7.10
+
+- Fixed some landforms not generating when using Odyssey's caravan camp feature
+- Fixed outdated compatibility patch for Performance Optimizer in 1.6
+- Fixed performance issue on the world map when the "Terrain" tab is open
+- Fixed compatibility with the river settings from Map Designer
+- Fixed River Source landform no generating correctly in some biomes
+
+v1.7.9
+
+- Fixed coastal landforms not using ocean water terrain
+- Fixed River Source not using biome-specific water terrain
+- Fixed 'multi-biome features' toggle not affecting riverbanks
+- Fixed xml loading error when the game does not have file write access
+- Fixed fertility input node not working in 1.6
+- Disabled biome transitions for the Glowforest biome
+
+v1.7.8
+
+- Fixed compatibility issue with some pocket map mods
+
+v1.7.7.2
+
+- Technical changes in preparation for Prepare Landing 1.6 update
+
+v1.7.7.1
+
+- Fixed biome worker caching issue
+
+v1.7.7
+
+- Fixed caves generating incorrectly on some landforms
+
+v1.7.6
+
+- Fixed some Harmony patch conflict errors on startup
+- Internal changes to tile mutators in order to improve mod compatibility
+
+v1.7.5
+
+- Rivers will now use biome-specific terrain added in 1.6
+- Fixed mountains not generating correctly on river tiles
+- Fixed errors on startup for some mod-added biomes
+- Fixed world generation error after changing planet size
+- Fixed error that sometimes occured when generating maps with caves
+
+v1.7.4
+
+- Initial support for RimWorld 1.6 (unstable)
+
+v1.7.3.1
+
+- Updated translation (submitted by @dodther)
+
+v1.7.3
+
+- Added Russian translation (submitted by @dodther)
+
+v1.7.2
+
+- Fixed compatibility with the 'BetterLoading' mod
+
+v1.7.1
+
+- Fixed noisy/ugly areas and improved overall look of biome transitions
+- Fixed compatibility with the 'Configurable Maps' mod
+- Fixed an issue that caused inaccurate previews in the 'Map Reroll' mod
+- Fixed rivers generating incompletely on very large maps (500x500+)
+- Added new inputs to the 'Terrain Patches' node in the landform editor
+
+v1.7.0
+
+- Added new landform 'River' (replaces vanilla rivers)
+- Added new landform 'River Confluence'
+- Added new landform 'River Source'
+- Added new landform 'River Delta'
+- Added new landform 'River Island'
+- Added new landform 'Glacier'
+- Added new landform 'Gorge'
+- Reworked world tile requirements UI in the landform editor
+- Added various new nodes for the landform editor
+- Added new condition that checks whether a certain world object is nearby
+- Fixed biome grid errors that could occur during load/save
+- Fixed compatibility issue with Research Reinvented
+
+v1.6.11
+
+- Fixed incompatibility with Vanilla Factions Expanded Insectoids 2
+
 v1.6.10
 
 - Fixed an error that occured when clicking "Any" or "Any POI" in the landform search

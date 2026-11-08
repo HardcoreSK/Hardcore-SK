@@ -3,7 +3,7 @@
 
   	<!--=============== Raw Materials ====================-->
 	
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>RawCotton</defName>
 		<label>Raw Cotton</label>
 		<description>Raw Cotton from a Cotton Bush. It can be spun into Cloth at a Tailor's Workbench.</description>
@@ -14,7 +14,6 @@
 		<soundInteract>Standard_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<stackLimit>300</stackLimit>
-		<tickerType>Rare</tickerType>
 		<statBases>
 			<MarketValue>1.5</MarketValue>
     		<Flammability>2</Flammability>
@@ -27,7 +26,7 @@
 		</thingCategories>
 	</ThingDef>	
 	
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>RawFlax</defName>
 		<label>Raw flax</label>
 		<description>Raw flax. It can be spun into cloth or sold to a trader.</description>
@@ -38,7 +37,6 @@
 		<soundInteract>Standard_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<stackLimit>300</stackLimit>
-		<tickerType>Rare</tickerType>
 		<statBases>
 			<MarketValue>3.5</MarketValue>
     		<Flammability>2</Flammability>
@@ -51,7 +49,7 @@
 		</thingCategories>
 	</ThingDef>
 	
-	<ThingDef ParentName="SK_ResourceBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>RawDevilstrand</defName>
 		<label>Raw Devilstrand</label>
 		<description>Raw Devilstrand from a Devilstrand Mushroom. It can be spun into Devilstrand Cloth at a Tailor's Workbench.</description>
@@ -62,7 +60,6 @@
 		<soundInteract>Standard_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<stackLimit>150</stackLimit>
-		<tickerType>Rare</tickerType>
 		<statBases>
 			<MarketValue>6.4</MarketValue>
     		<Flammability>1</Flammability>

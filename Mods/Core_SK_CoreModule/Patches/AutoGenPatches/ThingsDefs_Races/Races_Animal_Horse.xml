@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Horse"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.BaseHorsesDummy</value>
+  </Operation>
+
+  <!-- Remove the vanilla local tools list so Horse inherits the four CombatExtended.ToolCE tools from SK.BaseHorsesDummy -> BaseHorses. -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Horse"]/tools</xpath>
+  </Operation>
+  <!-- Remove the vanilla local tradeTags so Horse inherits AnimalCommon and AnimalFarm from SK.BaseHorsesDummy -> BaseHorses. -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Horse"]/tradeTags</xpath>
+  </Operation>
+  <!-- Remove the vanilla local lifeStageAges so Horse inherits the three HSK horse stages from SK.BaseHorsesDummy -> BaseHorses. -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Horse"]/race/lifeStageAges</xpath>
+  </Operation>
+  <!-- Remove vanilla Wildness 0.35 so Horse inherits 0.3 from SK.BaseHorsesDummy -> BaseHorses. -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Horse"]/statBases/Wildness</xpath>
+  </Operation>
+  <!-- Remove vanilla leatherDef Leather_Plain so Horse inherits BaseHorses leatherDef: Leather_Plain normally, or Hide_DurableHide when Hell Bent applies. -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Horse"]/race/leatherDef</xpath>
+  </Operation>
+  <!-- Remove vanilla lifeExpectancy 30 so Horse inherits 27 from SK.BaseHorsesDummy -> BaseHorses. -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Horse"]/race/lifeExpectancy</xpath>
+  </Operation>
+  <!-- Remove vanilla petness 0.6 so Horse inherits 0.65 from SK.BaseHorsesDummy -> BaseHorses. -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Horse"]/race/petness</xpath>
+  </Operation>
+
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="Horse"]</xpath>
+    <value>
+      <description>A large, peaceful herbivore widely known for its great speed and strength. Horses and humans have a history stretching back for millenia, so it is no surprise to see one. Unfortunately, all your colonists are absolutely inept at riding, otherwise it could make a fitting steed.</description>
+      <statBases Merge="true">
+        <MoveSpeed>8.2</MoveSpeed>
+        <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+        <MarketValue>1200</MarketValue>
+        <MeleeDodgeChance>0.1</MeleeDodgeChance>
+        <MeleeCritChance>0</MeleeCritChance>
+        <CarryWeight>180</CarryWeight>
+        <CarryBulk>120</CarryBulk>
+        <Mass>105</Mass>
+      </statBases>
+      <race Merge="true">
+        <baseBodySize>1.3</baseBodySize>
+        <baseHungerRate>1</baseHungerRate>
+        <baseHealthScale>1.6</baseHealthScale>
+      </race>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->
+	<SitePartDef>
+		<defName>WorldMeteorite</defName>
+		<label>Precious meteorite</label>
+		<description>A mineable meteorite with precious resources.</description>
+		<workerClass>EventsCore.World.SitePartWorker_WorldMeteorite</workerClass>
+		<siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+		<expandingIconTexture>World/WorldObjects/WorldMeteorite</expandingIconTexture>
+		<forceExitAndRemoveMapCountdownDurationDays>11</forceExitAndRemoveMapCountdownDurationDays>
+		<mainPartAllThreatsLabel>Hostile activity detected.</mainPartAllThreatsLabel>
+		<tags>
+			<li>WorldMeteorite</li>
+		</tags>
+	</SitePartDef>
+	<!---->
+	<GenStepDef>
+		<defName>WorldMeteorite</defName>
+		<linkWithSite>WorldMeteorite</linkWithSite>
+		<order>450</order>
+		<genStep Class="EventsCore.GenSteps.GenStep_WorldMeteorite">
+			<mineables>
+				<li>HewnOreGold</li>
+				<li>HewnOreSilver</li>
+				<li>HewnOreSteel</li>
+				<li>HewnOreJade</li>
+				<li>HewnOreNickel</li>
+				<li>HewnOreTitanium</li>
+				<li>HewnOreLead</li>
+				<li>HewnOreTungsten</li>
+			</mineables>
+			<totalValueRange>
+				<min>20000</min>
+				<max>30000</max>
+			</totalValueRange>
+			<nearMapCenter>true</nearMapCenter>
+		</genStep>
+	</GenStepDef>
+	<!---->
+</Defs>

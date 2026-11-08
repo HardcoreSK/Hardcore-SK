@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+    <RecipeDef Name="GlitterpediaModExtBase" Abstract="True">
+        <modExtensions>
+            <li Class="WikiProject.DefExtension_Wiki" MayRequire="dimonsever000.wiki.specific">
+                <wikiExtraInfo Class="UniversalFermenterPatchForGlitterpedia.WikiExtraInfo_UniversalFermenter"/>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+
+    <!--___________________BiofuelRefinery_____________________-->
+    <!-- DefOverwrite
+	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_ChemfuelFromWood</defName>
+		<label>make chemfuel from wood</label>
+		<description>Make a batch of chemfuel by extracting and condensing wood gas from logs. Takes 1.5 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>70</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>WoodLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Chemfuel>35</Chemfuel>
+		</products>
+		<recipeUsers>
+			<li>BiofuelRefinery</li>
+		</recipeUsers>
+
+		--><!-- RecipeDef_UF fields --><!--
+		<ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>5</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+		<usesTemperature>false</usesTemperature>
+		<processDays>1.5</processDays>
+	</RecipeDef>
+
+	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_ChemfuelFromOrganics</defName>
+		<label>make chemfuel from organics</label>
+		<description>Make a batch of chemfuel by extracting biofuel from organic feedstocks. Takes 1.5 days to make</description>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<customSummary>feedstock</customSummary>
+					<categories>
+						<li>Foods</li>
+						<li>PlantMatter</li>
+					</categories>
+					<disallowedThingDefs>
+						<li>Hay</li>
+						<li>Dye</li>
+					</disallowedThingDefs>
+					<disallowedCategories>
+						<li>FoodMeals</li>
+					</disallowedCategories>
+				</filter>
+				<count>3.5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Foods</li>
+				<li>PlantMatter</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Hay</li>
+				<li>Dye</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">HemogenPack</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">BabyFood</li>
+			</disallowedThingDefs>
+			<disallowedCategories>
+				<li>FoodMeals</li>
+				<li MayRequire="notfood.SeedsPlease">SeedsCategory</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>MeatRaw</li>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+		</defaultIngredientFilter>
+		<products>
+			<Chemfuel>35</Chemfuel>
+		</products>
+		<recipeUsers>
+			<li>BiofuelRefinery</li>
+		</recipeUsers>
+
+		--><!-- RecipeDef_UF fields --><!--
+		<ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>5</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+		<usesTemperature>false</usesTemperature>
+		<processDays>1.5</processDays>
+	</RecipeDef>
+-->
+</Defs>

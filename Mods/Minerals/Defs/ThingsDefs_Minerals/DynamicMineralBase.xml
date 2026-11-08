@@ -24,6 +24,15 @@
     <maxSpawnClusterSize>1</maxSpawnClusterSize>
     <!-- Chance of spawning de novo each tick -->
     <spawnProb>0.0001</spawnProb>
+	<blocksAltitudes>
+		<li>FloorCoverings</li>
+		<li>FloorEmplacement</li>
+		<li>SmallWire</li>
+		<li>DoorMoveable</li>
+		<li>Building</li>
+		<li>BuildingBelowTop</li>
+		<li>BuildingOnTop</li>
+	</blocksAltitudes>
     <building>
       <isInert>false</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
@@ -34,6 +43,7 @@
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
 	  <destroyShakeAmount>0</destroyShakeAmount>
+	  <isEdifice>false</isEdifice>
     </building>
     <!-- If true, the graphics are regenerated more often -->
     <fastGraphicRefresh>false</fastGraphicRefresh>

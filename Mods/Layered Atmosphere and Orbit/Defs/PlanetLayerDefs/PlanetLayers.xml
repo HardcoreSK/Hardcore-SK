@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<PlanetLayerDef Name="LAO_LowOrbitLayer" ParentName="OrbitLayer" Abstract="True">
+		<defaultBiome>TemperateForest</defaultBiome>
+		<defaultMapWorldObject>LAO_Atmosphere</defaultMapWorldObject>
+		<viewGizmoTexPath>UI/Commands/LAO_ViewAtmosphere</viewGizmoTexPath>
+		<isSpace>false</isSpace>
+		<settlementWorldObjectDef>SpaceSettlement</settlementWorldObjectDef>
+		<destroyedSettlementWorldObjectDef>DestroyedSpaceSettlement</destroyedSettlementWorldObjectDef>
+		<onlyAllowWhitelistedArrivals>false</onlyAllowWhitelistedArrivals>
+		<lineWidthFactor>3.25</lineWidthFactor>
+		<worldGenSteps Inherit="False">
+			<li>Tiles</li>
+		</worldGenSteps>
+	</PlanetLayerDef>
+  
+	<PlanetLayerDef ParentName="LAO_LowOrbitLayer">
+		<defName>LAO_Troposphere</defName>
+		<label>troposphere</label>
+		<viewGizmoTooltip>View locations within a planet's troposphere.</viewGizmoTooltip>
+		<elevationString>20 km</elevationString>
+		<rangeDistanceFactor>20</rangeDistanceFactor>
+		<raidPointsFactor>0.98</raidPointsFactor>
+		<generatedLocationFactor>2</generatedLocationFactor>
+		<modExtensions>
+			<li Class="LayeredAtmosphereOrbit.LayeredAtmosphereOrbitDefModExtension">
+				<isReplaceConnections>true</isReplaceConnections>
+				<isOptionToAutoAdd>true</isOptionToAutoAdd>
+				<elevation>20</elevation>
+				<tempOffest>-10</tempOffest>
+				<birdArrivalChance>0.4</birdArrivalChance>
+				<planetLayerGroup>LAO_Atmosphere</planetLayerGroup>
+				<minArrivalFactionTechLevel>Industrial</minArrivalFactionTechLevel>
+			</li>
+		</modExtensions>
+	</PlanetLayerDef>
+  
+	<PlanetLayerDef ParentName="LAO_LowOrbitLayer">
+		<defName>LAO_Stratosphere</defName>
+		<label>stratosphere</label>
+		<viewGizmoTooltip>View locations within a planet's stratosphere.</viewGizmoTooltip>
+		<elevationString>50 km</elevationString>
+		<rangeDistanceFactor>18.5</rangeDistanceFactor>
+		<raidPointsFactor>0.96</raidPointsFactor>
+		<generatedLocationFactor>2.5</generatedLocationFactor>
+		<modExtensions>
+			<li Class="LayeredAtmosphereOrbit.LayeredAtmosphereOrbitDefModExtension">
+				<isReplaceConnections>true</isReplaceConnections>
+				<isOptionToAutoAdd>true</isOptionToAutoAdd>
+				<elevation>50</elevation>
+				<tempOffest>-20</tempOffest>
+				<birdArrivalChance>0.1</birdArrivalChance>
+				<planetLayerGroup>LAO_Atmosphere</planetLayerGroup>
+				<minArrivalFactionTechLevel>Industrial</minArrivalFactionTechLevel>
+			</li>
+		</modExtensions>
+	</PlanetLayerDef>
+  
+	<PlanetLayerDef ParentName="LAO_LowOrbitLayer">
+		<defName>LAO_Mesosphere</defName>
+		<label>mesosphere</label>
+		<viewGizmoTooltip>View locations within a planet's mesosphere.</viewGizmoTooltip>
+		<elevationString>80 km</elevationString>
+		<rangeDistanceFactor>17</rangeDistanceFactor>
+		<raidPointsFactor>0.94</raidPointsFactor>
+		<modExtensions>
+			<li Class="LayeredAtmosphereOrbit.LayeredAtmosphereOrbitDefModExtension">
+				<isReplaceConnections>true</isReplaceConnections>
+				<isOptionToAutoAdd>true</isOptionToAutoAdd>
+				<elevation>80</elevation>
+				<tempOffest>-40</tempOffest>
+				<planetLayerGroup>LAO_Atmosphere</planetLayerGroup>
+				<minArrivalFactionTechLevel>Spacer</minArrivalFactionTechLevel>
+				<BlacklistArrivalFactionDef>
+					<li>TradersGuild</li>
+					<li>Salvagers</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Empire</li>
+				</BlacklistArrivalFactionDef>
+			</li>
+		</modExtensions>
+	</PlanetLayerDef>
+  
+	<PlanetLayerDef ParentName="OrbitLayer">
+		<defName>LAO_HighOrbit</defName>
+		<label>high orbit</label>
+		<viewGizmoTooltip>View locations that are orbiting the planet.</viewGizmoTooltip>
+		<elevationString>500 km</elevationString>
+		<defaultBiome>Orbit</defaultBiome>
+		<rangeDistanceFactor>19</rangeDistanceFactor>
+		<raidPointsFactor>0.63</raidPointsFactor>
+		<generatedLocationFactor>1.5</generatedLocationFactor>
+		<modExtensions>
+			<li Class="LayeredAtmosphereOrbit.LayeredAtmosphereOrbitDefModExtension">
+				<isReplaceConnections>true</isReplaceConnections>
+				<isOptionToAutoAdd>true</isOptionToAutoAdd>
+				<elevation>500</elevation>
+				<tempOffest>-95</tempOffest>
+				<planetLayerGroup>LAO_Orbit</planetLayerGroup>
+				<minArrivalFactionTechLevel>Spacer</minArrivalFactionTechLevel>
+				<BlacklistArrivalFactionDef>
+					<li>Ancients</li>
+					<li>AncientsHostile</li>
+					<li>Pirate</li>
+				</BlacklistArrivalFactionDef>
+			</li>
+		</modExtensions>
+	</PlanetLayerDef>
+  
+</Defs>

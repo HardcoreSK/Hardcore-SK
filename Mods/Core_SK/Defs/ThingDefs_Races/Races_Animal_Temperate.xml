@@ -1,7 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ========================== Temperate ============================ -->
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Deer</defName>
 		<label>deer</label>
 		<devNote>pig-1</devNote>
@@ -16,6 +17,7 @@
 			<MeleeCritChance>0</MeleeCritChance>
 			<GermResistance>0.15</GermResistance>
 			<FilthRate>14</FilthRate>
+			<Wildness>0.73</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -83,7 +85,6 @@
 			<leatherDef>Leather_Plain</leatherDef>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
-			<wildness>0.73</wildness>
 			<roamMtbDays>2</roamMtbDays>
 			<nuzzleMtbHours>60</nuzzleMtbHours>
 			<gestationPeriodDays>5.661</gestationPeriodDays>
@@ -120,8 +121,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Deer</defName>
 		<label>deer</label>
 		<labelPlural>deer</labelPlural>
@@ -193,8 +195,9 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+ -->
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Ibex</defName>
 		<label>ibex</label>
 		<devNote>pig-1</devNote>
@@ -207,6 +210,7 @@
 			<MeleeDodgeChance>0.14</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
 			<FilthRate>12</FilthRate>
+			<Wildness>0.55</Wildness>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Milkable">
@@ -245,7 +249,7 @@
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
 				<armorPenetrationBlunt>1</armorPenetrationBlunt>
-				<armorPenetrationSharp>1.5</armorPenetrationSharp>		
+				<armorPenetrationSharp>1.5</armorPenetrationSharp>
 			</li>
 			<li Class="CombatExtended.ToolCE">
 				<label>head</label>
@@ -281,7 +285,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<leatherDef>Leather_Plain</leatherDef>
-			<wildness>0.55</wildness>
 			<roamMtbDays>2</roamMtbDays>
 			<gestationPeriodDays>5.661</gestationPeriodDays>
 			<lifeExpectancy>15</lifeExpectancy>
@@ -317,8 +320,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Ibex</defName>
 		<label>ibex</label>
 		<labelPlural>ibex</labelPlural>
@@ -390,8 +394,9 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+ -->
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Elk</defName>
 		<label>elk</label>
 		<devNote>cow-1</devNote>
@@ -407,6 +412,7 @@
 			<GermResistance>0.18</GermResistance>
 			<GermContainment>0.05</GermContainment>
 			<FilthRate>16</FilthRate>
+			<Wildness>0.7</Wildness>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Milkable">
@@ -417,7 +423,9 @@
 		</comps>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
+				-->
 				<!--<id>lefthoofblunt</id>-->
+				<!--
 				<label>left hoof</label>
 				<capacities>
 					<li>Blunt</li>
@@ -428,7 +436,9 @@
 				<armorPenetrationBlunt>4.7</armorPenetrationBlunt>
 			</li>
 			<li Class="CombatExtended.ToolCE">
+				-->
 				<!--<id>righthoofblunt</id>-->
+				<!--
 				<label>right hoof</label>
 				<capacities>
 					<li>Blunt</li>
@@ -483,7 +493,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<leatherDef>Leather_Plain</leatherDef>
-			<wildness>0.7</wildness>
 			<roamMtbDays>2</roamMtbDays>
 			<manhunterOnDamageChance>0.25</manhunterOnDamageChance>
 			<gestationPeriodDays>6.66</gestationPeriodDays>
@@ -521,8 +530,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Elk</defName>
 		<label>elk</label>
 		<labelPlural>elk</labelPlural>
@@ -598,8 +608,9 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+ -->
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Caribou</defName>
 		<label>caribou</label>
 		<devNote>cow-1</devNote>
@@ -615,6 +626,7 @@
 			<GermResistance>0.15</GermResistance>
 			<GermContainment>0.05</GermContainment>
 			<FilthRate>13</FilthRate>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Milkable">
@@ -686,7 +698,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<leatherDef>Leather_Plain</leatherDef>
-			<wildness>0.75</wildness>
 			<roamMtbDays>2</roamMtbDays>
 			<manhunterOnDamageChance>0.15</manhunterOnDamageChance>
 			<gestationPeriodDays>6.66</gestationPeriodDays>
@@ -724,8 +735,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Caribou</defName>
 		<label>caribou</label>
 		<labelPlural>caribou</labelPlural>
@@ -777,8 +789,9 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+ -->
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>WildBoar</defName>
 		<label>wild boar</label>
 		<devNote>pig-1</devNote>
@@ -794,6 +807,7 @@
 			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
 			<ArmorRating_Blunt>1</ArmorRating_Blunt>
 			<FilthRate>16</FilthRate>
+			<Wildness>0.45</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -827,7 +841,7 @@
 				<cooldownTime>1.6</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.6</chanceFactor>
-				<armorPenetrationSharp>1.75</armorPenetrationSharp>					
+				<armorPenetrationSharp>1.75</armorPenetrationSharp>
 				<armorPenetrationBlunt>1.5</armorPenetrationBlunt>
 			</li>
 			<li Class="CombatExtended.ToolCE">
@@ -852,7 +866,6 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<leatherDef>Leather_Pig</leatherDef>
-			<wildness>0.45</wildness>
 			<roamMtbDays>2</roamMtbDays>
 			<manhunterOnDamageChance>0.35</manhunterOnDamageChance>
 			<trainability>Intermediate</trainability>
@@ -908,8 +921,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>WildBoar</defName>
 		<label>wild boar</label>
 		<race>WildBoar</race>
@@ -960,8 +974,9 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_AnimalThingBase">
+ -->
+	<!-- DefOverwrite
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Tortoise</defName>
 		<label>tortoise</label>
 		<devNote>misc</devNote>
@@ -981,6 +996,7 @@
 			<GermResistance>0.3</GermResistance>
 			<GermContainment>0.15</GermContainment>
 			<FilthRate>2</FilthRate>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -1008,6 +1024,7 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>EggTortoiseUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>EggTortoiseFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>6.66</eggLayIntervalDays>
@@ -1023,7 +1040,6 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Lizard</leatherDef>
-			<wildness>0.75</wildness>
 			<gestationPeriodDays>22.5</gestationPeriodDays>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<litterSizeCurve>
@@ -1067,8 +1083,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	-->
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+<!-- 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Tortoise</defName>
 		<label>tortoise</label>
 		<race>Tortoise</race>
@@ -1112,5 +1129,5 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
+ -->
 </Defs>

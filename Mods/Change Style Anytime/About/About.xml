@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <packageId>Dra.StyleChangeAnytime</packageId>
+  <name>Style Change Anytime</name>
+  <supportedVersions>
+    <li>1.4</li>
+    <li>1.5</li>
+    <li>1.6</li>
+  </supportedVersions>
+  <author>Sokyran, Hush</author>
+  <modDependenciesByVersion>
+    <v1.4>
+      <li>
+        <packageId>Ludeon.RimWorld.Ideology</packageId>
+        <displayName>Ideology</displayName>
+      </li>
+    </v1.4>
+    <v1.5>
+      <li>
+        <packageId>Ludeon.RimWorld.Ideology</packageId>
+        <displayName>Ideology</displayName>
+      </li>
+    </v1.5>
+  </modDependenciesByVersion>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Ideology</li>
+    <li>brrainz.harmony</li>
+  </loadAfter>
+  <description>
+Do you like my mods? You can support me on Ko-Fi: https://ko-fi.com/sokyran
+
+This mod allows you to manually select a specific graphic for your buildings, items, production bills, or even plants. You're able to pick from any supported graphics, be it random graphic (like sculptures), Ideology styles, or random styles (like Royalty samurai helmet), or a mix of them (like Ideology styled sculptures).
+
+For Ideology styles, by default, only the styles of the primary ideology can be picked. This can be changed in the settings to allow for either any style, or alternatively allowing for non-primary colony ideologies alongside the main one.
+
+The option to change styles is applied by default to everything possible (except plants) - this can be changed to display them only for specific things depending on preferences.
+  </description>
+  <descriptionsByVersion>
+    <v1.4>
+Do you like my mods? You can support me on Ko-Fi: https://ko-fi.com/sokyran
+
+The 1.4 update brought us an option to pick the style of blueprints and recipes - however, this can only be used in classical mode/if the ideology system is inactive.
+
+This mod allows the style to be picked for the blueprints and recipes no matter what, as well as adding the same option for already constructed and crafted buildings and items.
+
+By default, only the styles of the primary ideology can be picked. This can be changed in the settings to allow for either any style, or alternatively allowing for non-primary colony ideologies alongside the main one.
+
+The option to change style is applied by default to all the mentioned things (buildings, items, blueprints, bills) - this can be changed to display them only for specific things depending on preferences.
+    </v1.4>
+    <v1.5>
+Do you like my mods? You can support me on Ko-Fi: https://ko-fi.com/sokyran
+
+The 1.4 update brought us an option to pick the style of blueprints and recipes - however, this can only be used in classical mode/if the ideology system is inactive.
+
+This mod allows the style to be picked for the blueprints and recipes no matter what, as well as adding the same option for already constructed and crafted buildings and items.
+
+By default, only the styles of the primary ideology can be picked. This can be changed in the settings to allow for either any style, or alternatively allowing for non-primary colony ideologies alongside the main one.
+
+The option to change style is applied by default to all the mentioned things (buildings, items, blueprints, bills) - this can be changed to display them only for specific things depending on preferences.
+    </v1.5>
+  </descriptionsByVersion>
+</ModMetaData>

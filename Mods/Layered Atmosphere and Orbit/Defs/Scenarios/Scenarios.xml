@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>LAO_StrandedAboveTribe</defName>
+		<label>Stranded Above Tribe</label>
+		<description>You were separated from your nomadic tribe by being raised high into the sky on a floating island. Now, it's time to survive in isolation and find your way back to the surface.\n\nNote: Since you'll start poor, lack technology and can't use caravans, but isolated from some surface threats, this is a scenario of moderate difficulty.</description>
+		<scenario>
+			<summary>Five tribespeople carried away into the sky. Moderately difficult.</summary>
+			<playerFaction>
+				<factionDef>PlayerTribe</factionDef>
+			</playerFaction>
+			<parts>
+        
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>After a long journey, your tribe and your herd of animals stumble upon a strange, glistening rock. As you touch it, the ground shakes violently and the world around you is consumed by clouds. You emerge moments later on a giant floating island high above the world, your herd grazing nervously. The gods have put you here, but why? Your people believe this to be a divine trial, and your first priority is to understand your new reality, and perhaps, find a way home.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+
+				<!-- Config pages -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>5</pawnCount>
+					<pawnChoiceCount>8</pawnChoiceCount>
+					<allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
+				</li>
+
+				<li Class="LayeredAtmosphereOrbit.ScenPart_StartWorldObjectMap">
+					<def>ForcedMap</def>
+					<worldObjectDef>LAO_FloatingIslandGiantFlat</worldObjectDef>
+					<layerDef>LAO_Troposphere</layerDef>
+				</li>
+
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+
+				<!-- Player starting things -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Pemmican</thingDef>
+					<count>600</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineHerbal</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Club</thingDef>
+					<stuff>WoodLog</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Ikwa</thingDef>
+					<stuff>Steel</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Bow_Short</thingDef>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Pila</thingDef>
+				</li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<count>6</count>
+					<bondToRandomPlayerPawnChance>0.5</bondToRandomPlayerPawnChance>
+				</li>
+
+				<!-- Scatter some things near player start -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>WoodLog</thingDef>
+					<count>500</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>350</count>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+</Defs>

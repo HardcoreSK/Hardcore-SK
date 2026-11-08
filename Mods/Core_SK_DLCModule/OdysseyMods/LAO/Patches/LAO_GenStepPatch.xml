@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/GenStepDef[
+            defName="LAO_FloatingIslandHill" or
+            defName="LAO_FloatingIslandCollapsing" or
+            defName="LAO_FloatingIslandDebug" or
+            defName="LAO_FloatingIslandFlat" or
+            defName="LAO_FloatingIslandGiantFlat"
+        ]/genStep/mineableCounts</xpath>
+		<value>
+			<mineableCounts>
+				<HewnOreGold>14~22</HewnOreGold>
+				<HewnOreSilver>50~70</HewnOreSilver>
+				<HewnOreSteel>80~110</HewnOreSteel>
+				<HewnOreUranium>15~25</HewnOreUranium>
+				<HewnOreTitanium>12~15</HewnOreTitanium>
+				<HewnOreTech>65~85</HewnOreTech>
+				<HewnOreJade>20~35</HewnOreJade>
+			</mineableCounts>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/GenStepDef[defName="LAO_FloatingIslandGiantMountain"]/genStep/mineableCounts</xpath>
+		<value>
+			<mineableCounts>
+				<HewnOreGold>28~44</HewnOreGold>
+				<HewnOreSilver>100~140</HewnOreSilver>
+				<HewnOreSteel>160~220</HewnOreSteel>
+				<HewnOreUranium>30~50</HewnOreUranium>
+				<HewnOreTitanium>24~30</HewnOreTitanium>
+				<HewnOreTech>130~170</HewnOreTech>
+				<HewnOreJade>40~70</HewnOreJade>
+			</mineableCounts>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/GenStepDef[defName="LAO_FloatingIslandGiantCrust"]/genStep/mineableCounts</xpath>
+		<value>
+			<mineableCounts>
+				<HewnOreGold>42~66</HewnOreGold>
+				<HewnOreSilver>150~210</HewnOreSilver>
+				<HewnOreSteel>240~330</HewnOreSteel>
+				<HewnOreUranium>45~75</HewnOreUranium>
+				<HewnOreTitanium>36~45</HewnOreTitanium>
+				<HewnOreTech>195~255</HewnOreTech>
+				<HewnOreJade>60~105</HewnOreJade>
+			</mineableCounts>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/GenStepDef[defName="LAO_AsteroidGiant"]/genStep/mineableCounts</xpath>
+		<value>
+			<mineableCounts>
+				<HewnOreGold>56~88</HewnOreGold>
+				<HewnOreSilver>200~280</HewnOreSilver>
+				<HewnOreSteel>320~440</HewnOreSteel>
+				<HewnOreUranium>60~100</HewnOreUranium>
+				<HewnOreTitanium>48~60</HewnOreTitanium>
+				<HewnOreTech>260~180</HewnOreTech>
+				<HewnOreJade>80~140</HewnOreJade>
+			</mineableCounts>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/GenStepDef[defName="LAO_AsteroidGiant_NoRuins"]/genStep/mineableCounts</xpath>
+		<value>
+			<mineableCounts>
+				<HewnOreGold>28~44</HewnOreGold>
+				<HewnOreSilver>100~140</HewnOreSilver>
+				<HewnOreSteel>160~220</HewnOreSteel>
+				<HewnOreUranium>30~50</HewnOreUranium>
+				<HewnOreTitanium>24~30</HewnOreTitanium>
+				<HewnOreTech>130~170</HewnOreTech>
+				<HewnOreJade>40~70</HewnOreJade>
+			</mineableCounts>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/GenStepDef[defName="LAO_AsteroidGiantMiningSite"]/genStep/mineableCounts</xpath>
+		<value>
+			<mineableCounts>
+				<HewnOreGold>130~165</HewnOreGold>
+				<HewnOreTitanium>200~260</HewnOreTitanium>
+				<HewnOreUranium>135~192</HewnOreUranium>
+			</mineableCounts>
+		</value>
+	</Operation>
+	
+</Patch>

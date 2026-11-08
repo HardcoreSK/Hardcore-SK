@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+    <!-- Use HSK values through Merge; remove only fields with no inherited value or list entries that must disappear. -->
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Fox_Fennec"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.SK_ThingFoxBaseDummy</value>
+    </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Fox_Fennec"]</xpath>
+        <value Merge="true">
+            <description>A small fox originally from the northern part of Earth's Africa continent. It hunts small creatures and has very large ears.</description>
+            <statBases>
+                <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+            </statBases>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="Fox_Fennec"]/race/meatLabel |
+            Defs/ThingDef[defName="Fox_Fennec"]/race/headPosPerRotation</xpath>
+    </Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Fox_Red"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.SK_ThingFoxBaseDummy</value>
+    </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Fox_Red"]</xpath>
+        <value Merge="true">
+            <race>
+                <useMeatFrom>Elephant</useMeatFrom>
+            </race>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Fox_Arctic"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>SK.SK_ThingFoxBaseDummy</value>
+    </Operation>
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/ThingDef[defName="Fox_Arctic"]</xpath>
+        <value Merge="true">
+            <race>
+                <useMeatFrom>Elephant</useMeatFrom>
+            </race>
+        </value>
+    </Operation>
+</Patch>

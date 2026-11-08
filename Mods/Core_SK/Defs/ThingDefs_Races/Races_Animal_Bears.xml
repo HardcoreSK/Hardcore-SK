@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef Abstract="True" ParentName="SK_AnimalThingBase" Name="SK_BearThingBase">
+	<ThingDef Abstract="True" ParentName="AnimalThingBase" Name="SK_BearThingBase">
 		<devNote>warg-1</devNote>
 		<statBases>
 			<Mass>150</Mass>
@@ -14,6 +14,7 @@
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 			<ArmorRating_Blunt>2</ArmorRating_Blunt>
 			<FilthRate>5</FilthRate>
+			<Wildness>0.80</Wildness>
 		</statBases>
 		<uiIconScale>1.15</uiIconScale>
 		<tools>
@@ -99,7 +100,6 @@
 			<leatherDef>Leather_Heavy</leatherDef>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<gestationPeriodDays>10</gestationPeriodDays>
-			<wildness>0.80</wildness>
 			<lifeExpectancy>22</lifeExpectancy>
 			<trainability>Advanced</trainability>
 			<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
@@ -140,23 +140,25 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
-	<PawnKindDef Abstract="True" ParentName="SK_AnimalKindBase" Name="SK_BearKindBase">
+<!-- DefOverwrite
+	<PawnKindDef Abstract="True" ParentName="AnimalKindBase" Name="BearBase">
 		<combatPower>290</combatPower>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 	</PawnKindDef>
 
-	<ThingDef ParentName="SK_BearThingBase">
+	<ThingDef ParentName="BaseBear">
 		<defName>Bear_Grizzly</defName>
 		<label>grizzly bear</label>
 		<description>Huge omnivorous mammals adapted for cold climates. Their thick blubber and fur keep them warm in winter.\n\nWhile their usual diet consists of fish, berries, honey, and scavenged meat, the grizzly is capable of using its massive strength and deadly claws to kill live prey. They are startlingly quick for such lumbering creatures.</description>
 		<race>
 			<packAnimal>true</packAnimal>
-			<wildness>0.80</wildness>
 		</race>
+		<statBases>
+			<Wildness>0.80</Wildness>
+		</statBases>
 	</ThingDef>
-
-	<PawnKindDef ParentName="SK_BearKindBase">
+-->
+	<!-- <PawnKindDef ParentName="BearBase">
 		<defName>Bear_Grizzly</defName>
 		<label>grizzly bear</label>
 		<race>Bear_Grizzly</race>
@@ -214,22 +216,18 @@
 			<li Class="SK.PawnGraphicExtension">
 				<colors>
 					<li>(140,110,65)</li>
-					<!-- Tan -->
 					<li>(140,90,35)</li>
-					<!-- Medium Brown -->
 					<li>(100,45,5)</li>
-					<!-- Dark Brown -->
 					<li>(80,50,40)</li>
-					<!-- Very Dark Brown -->
 					<li>(25,25,25)</li>
-					<!-- Near Black -->
 				</colors>
 				<shaderType>Cutout</shaderType>
-			</li>			
+			</li>
 		</modExtensions>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_BearThingBase">
+ -->
+	<!-- DefOverwrite
+	<ThingDef ParentName="BaseBear">
 		<defName>Bear_Polar</defName>
 		<label>polar bear</label>
 		<description>A great white bear that lives in the far north. Their thick blubber and fur keep them warm in winter.\n\nWhile their usual diet consists of fish and scavenged meat, the polar bear is more than capable of using its massive strength and deadly claws to kill live prey. They are startlingly quick for such lumbering creatures.</description>
@@ -239,14 +237,14 @@
 			<MeleeDodgeChance>0.09</MeleeDodgeChance>
 			<MeleeCritChance>0.18</MeleeCritChance>
 			<MoveSpeed>5.2</MoveSpeed>
+			<Wildness>0.85</Wildness>
 		</statBases>
 		<race>
 			<packAnimal>true</packAnimal>
-			<wildness>0.85</wildness>
 		</race>
 	</ThingDef>
-
-	<PawnKindDef ParentName="SK_BearKindBase">
+-->
+<!-- 	<PawnKindDef ParentName="BearBase">
 		<defName>Bear_Polar</defName>
 		<label>polar bear</label>
 		<race>Bear_Polar</race>
@@ -298,8 +296,8 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-	<ThingDef ParentName="SK_BearThingBase">
+ -->
+	<ThingDef ParentName="BaseBear">
 		<defName>PandaBear</defName>
 		<label>panda bear</label>
 		<description>The giant panda -black and white cat-foot, also known as panda bear or simply panda, is a bear. It is easily recognized by the large, distinctive black patches around its eyes, over the ears, and across its round body. Giant pandas in the wild will occasionally eat other grasses, wild tubers, or even meat in the form of birds, rodents or carrion.</description>
@@ -309,6 +307,7 @@
 			<MarketValue>500</MarketValue>
 			<MeleeDodgeChance>0.2</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
+			<Wildness>0.30</Wildness>
 		</statBases>
 		<race>
 			<predator>false</predator>
@@ -316,7 +315,6 @@
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<foodType>VegetarianRoughAnimal, OmnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>0.30</wildness>
 		</race>
 		<modExtensions>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
@@ -325,7 +323,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_BearKindBase">
+	<PawnKindDef ParentName="BearBase">
 		<defName>PandaBear</defName>
 		<label>panda</label>
 		<race>PandaBear</race>

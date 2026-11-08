@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- will ignore these items if true -->
+	<CombatExtended.ExtendedLoadout.LoadoutCompatibilityDef>
+		<defName>DBH_DrinkPacking</defName>
+
+		<conditionType>DubsBadHygiene.DubsBadHygieneMod</conditionType>
+		<conditionPath>Settings.AllowDrinkPacking</conditionPath>
+
+		<modExtensionType>DubsBadHygiene.WaterExt</modExtensionType>
+	</CombatExtended.ExtendedLoadout.LoadoutCompatibilityDef>
+
+	<CombatExtended.ExtendedLoadout.LoadoutCompatibilityDef>
+		<defName>SeedsPlease_SowingInterrupted</defName>
+
+		<noModSetttingConditions>true</noModSetttingConditions>
+
+		<thingCategories>
+			<li>SeedsCategory</li>
+		</thingCategories>
+	</CombatExtended.ExtendedLoadout.LoadoutCompatibilityDef>
+
+</Defs>
+  

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+	<WorldObjectDef ParentName="GeneratedAsteroid" Name="Generated_LAO_FloatingIsland" Abstract="True">
+		<worldObjectClass>LayeredAtmosphereOrbit.FloatingIslandMapParent</worldObjectClass>
+		<nameMaker>NamerWorldObject_LAO_FloatingIsland</nameMaker>
+		<fullyExpandedInSpace>false</fullyExpandedInSpace>
+		<modExtensions>
+			<li Class="LayeredAtmosphereOrbit.LayeredAtmosphereOrbitDefModExtension">
+				<isRockColored>true</isRockColored>
+				<availableBiomes>
+					<li>BorealForest</li>
+					<li>Tundra</li>
+					<li>ColdBog</li>
+					<li>IceSheet</li>
+					<li>SeaIce</li>
+					<li>TemperateForest</li>
+					<li>TemperateSwamp</li>
+					<li>TropicalRainforest</li>
+					<li>TropicalSwamp</li>
+					<li>AridShrubland</li>
+					<li>Desert</li>
+					<li>ExtremeDesert</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">GlacialPlain</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">Grasslands</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">Scarlands</li>
+				</availableBiomes>
+			</li>
+		</modExtensions>
+	</WorldObjectDef>
+	
+	
+	
+	<WorldObjectDef ParentName="SpaceBase">
+		<defName>LAO_Atmosphere</defName>
+		<label>atmosphere</label>
+		<worldObjectClass>LayeredAtmosphereOrbit.AtmosphereMapParent</worldObjectClass>
+		<canResizeToGravship>true</canResizeToGravship>
+	</WorldObjectDef>
+
+	<WorldObjectDef ParentName="Generated_LAO_FloatingIsland">
+		<defName>LAO_FloatingIslandGiantMountain</defName>
+		<label>giant floating island (mountain)</label>
+		<description>A giant landmass that was lifted off the planet's surface. Previously, it was the peak of a mountain in the region below it.</description>
+		<nameMaker>NamerWorldObject_LAO_FloatingIslandGiantMountain</nameMaker>
+		<expandingIconTexture>World/WorldObjects/Expanding/LAO_FloatingIslandMountain</expandingIconTexture>
+		<mapGenerator>LAO_FloatingIslandGiantMountain</mapGenerator>
+		<overrideMapSize>(350,1,350)</overrideMapSize>
+		<expandingIconDrawSize>1.6</expandingIconDrawSize>
+	</WorldObjectDef>
+
+	<WorldObjectDef ParentName="Generated_LAO_FloatingIsland">
+		<defName>LAO_FloatingIslandGiantCrust</defName>
+		<label>giant floating island (crust)</label>
+		<description>A giant landmass that was lifted off the planet's surface. Previously, it was a heavily infested section deep in the planet's crust.</description>
+		<nameMaker>NamerWorldObject_LAO_FloatingIslandGiantCrust</nameMaker>
+		<expandingIconTexture>World/WorldObjects/Expanding/LAO_FloatingIslandCrust</expandingIconTexture>
+		<mapGenerator>LAO_FloatingIslandGiantCrust</mapGenerator>
+		<overrideMapSize>(350,1,350)</overrideMapSize>
+		<expandingIconDrawSize>1.6</expandingIconDrawSize>
+	</WorldObjectDef>
+
+	<WorldObjectDef ParentName="Generated_LAO_FloatingIsland">
+		<defName>LAO_FloatingIslandGiantFlat</defName>
+		<label>giant floating island (plain)</label>
+		<description>A giant landmass that was lifted off the planet's surface. Previously, it was a section of an open plain on the planet's surface below it.</description>
+		<nameMaker>NamerWorldObject_LAO_FloatingIslandGiantFlat</nameMaker>
+		<expandingIconTexture>World/WorldObjects/Expanding/LAO_FloatingIslandFlat</expandingIconTexture>
+		<mapGenerator>LAO_FloatingIslandGiantFlat</mapGenerator>
+		<overrideMapSize>(350,1,350)</overrideMapSize>
+		<expandingIconDrawSize>1.6</expandingIconDrawSize>
+	</WorldObjectDef>
+	
+	
+
+	<WorldObjectDef ParentName="Generated_LAO_FloatingIsland">
+		<defName>LAO_FloatingIslandHill</defName>
+		<label>floating island (hill)</label>
+		<description>A landmass that was lifted off the planet's surface. Previously, it was the peak of a hill in the region below it.</description>
+		<nameMaker>NamerWorldObject_LAO_FloatingIslandHill</nameMaker>
+		<expandingIconTexture>World/WorldObjects/Expanding/LAO_FloatingIslandMountain</expandingIconTexture>
+		<mapGenerator>LAO_FloatingIslandHill</mapGenerator>
+	</WorldObjectDef>
+
+	<WorldObjectDef ParentName="Generated_LAO_FloatingIsland">
+		<defName>LAO_FloatingIslandFlat</defName>
+		<label>floating island (plain)</label>
+		<description>A landmass that was lifted off the planet's surface. Previously, it was a section of an open plain on the planet's surface below it.</description>
+		<nameMaker>NamerWorldObject_LAO_FloatingIslandFlat</nameMaker>
+		<expandingIconTexture>World/WorldObjects/Expanding/LAO_FloatingIslandFlat</expandingIconTexture>
+		<mapGenerator>LAO_FloatingIslandFlat</mapGenerator>
+	</WorldObjectDef>
+	
+	
+
+	<WorldObjectDef ParentName="Generated_LAO_FloatingIsland">
+		<defName>LAO_FloatingIslandCollapsing</defName>
+		<label>collapsing floating island</label>
+		<description>A landmass that was lifted off the planet's surface. Over time, it began to erode and fall apart, eventually revealing a hidden structure within.</description>
+		<nameMaker>NamerWorldObject_LAO_FloatingIslandCollapsing</nameMaker>
+		<expandingIconTexture>World/WorldObjects/Expanding/LAO_FloatingIslandCollapsing</expandingIconTexture>
+		<mapGenerator>LAO_FloatingIslandCollapsing</mapGenerator>
+	</WorldObjectDef>
+
+	<WorldObjectDef ParentName="Generated_LAO_FloatingIsland">
+		<defName>LAO_FloatingIslandDebug</defName>
+		<label>floating island debug</label>
+		<expandingIconTexture>World/WorldObjects/Expanding/LAO_FloatingIslandMountain</expandingIconTexture>
+		<mapGenerator>LAO_FloatingIslandDebug</mapGenerator>
+	</WorldObjectDef>
+
+</Defs>

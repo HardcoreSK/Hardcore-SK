@@ -2,7 +2,7 @@
 <Defs>
 
 
-	<ThingDef ParentName="SK_BuildingBase" Name="DoorBase2" Abstract="True">
+	<ThingDef ParentName="BuildingBase" Name="DoorBase2" Abstract="True">
 		<thingClass>Building_Door</thingClass>
 		<altitudeLayer>DoorMoveable</altitudeLayer>
 		<fillPercent>1</fillPercent>
@@ -51,7 +51,7 @@
 			<WorkToBuild>550</WorkToBuild>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Building/Doors/DoorTent_Mover</texPath>
+			<texPath>Things/Building/Doors/DoorTent/DoorTent_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<damageData>
 				<!--  no damage marks because they don't move with the door
@@ -64,7 +64,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>TentWall</defName>
 		<label>tent wall</label>
 		<description>A fragile yet practical wall.</description>
@@ -104,7 +104,7 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>1</fillPercent>
 		<coversFloor>true</coversFloor>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<drawStyleCategory>Default1D</drawStyleCategory>
 		<tickerType>Never</tickerType>
 		<rotatable>false</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>

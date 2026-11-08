@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Rimatomics++</name>
+    <packageId>NachoToast.RimatomicsPlusPlus</packageId>
+    <author>NachoToast</author>
+    <modVersion>1.3</modVersion>
+    <url>https://forge.elsie.cafe/NachoToast/RimatomicsPlusPlus</url>
+    <description>Late game upgrades, buildings, and patches for Rimatomics.</description>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+        </li>
+        <li>
+            <packageId>Dubwise.Rimatomics</packageId>
+            <displayName>Dubs Rimatomics</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/1127530465</steamWorkshopUrl>
+            <downloadUrl>https://github.com/Dubwise56/Rimatomics/releases/latest</downloadUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>brrainz.harmony</li>
+        <li>Ludeon.RimWorld</li>
+        <li>Ludeon.RimWorld.Odyssey</li>
+        <li>Dubwise.Rimatomics</li>
+        <li>rwmt.Multiplayer</li>
+    </loadAfter>
+    <incompatibleWith>
+        <li>NachoToast.DubsRimatomics.PunisherBuff</li>
+        <li>NachoToast.RimatomicsPunisherBuffs</li>
+        <li>NachoToast.PPHC</li>
+        <li>NachoToast.RimatomicsNukesGoBrrr</li>
+    </incompatibleWith>
+</ModMetaData>

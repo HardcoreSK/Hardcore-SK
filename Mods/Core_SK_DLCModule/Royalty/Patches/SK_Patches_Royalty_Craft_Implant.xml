@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!--===================================== Редакт. крафта имплантов ==============================================-->
+    <!--======================= Ядерный желудок (Royalty) ================================-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="NuclearStomach"]/costList</xpath>
+        <value>
+            <DepletedUranium>5</DepletedUranium>
+            <!--Уран-->
+        </value>
+    </Operation>
+    <!--======================= Ядовитые клыки (Royalty) ================================-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="VenomFangs"]/costList</xpath>
+        <value>
+            <PoisonGland>1</PoisonGland>
+            <!--Ядовитая железа-->
+        </value>
+    </Operation>
+    <!--======================= Ядовитые коготь (Royalty) ================================-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="VenomTalon"]/costList</xpath>
+        <value>
+            <PoisonGland>1</PoisonGland>
+            <!--Ядовитая железа-->
+        </value>
+    </Operation>
+    <!--======================= Исцелитель (Royalty) ================================-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="HealingEnhancer"]/costList</xpath>
+        <value>
+            <LivingFire>1</LivingFire>
+            <!--Сердце феникса-->
+        </value>
+    </Operation>
+    <!--======================= Стерелизующий желудок (Royalty) ================================-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="DetoxifierStomach"]/costList</xpath>
+        <value>
+            <SilverBar>5</SilverBar>
+            <!--Серебро-->
+        </value>
+    </Operation>
+</Patch>

@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+
 	<ThingDef Name="BasedRimefellerMom" Abstract="True">
 		<category>Building</category>
 		<thingClass>Building</thingClass>
@@ -19,6 +20,9 @@
 			<SellPriceFactor>0.70</SellPriceFactor>
 		</statBases>
 	</ThingDef>
+
+
+
 
 	<ThingDef Abstract="True" Name="BaseWellHead" ParentName="BuildingNaturalBase">
 		<defName>OilWellHead</defName>
@@ -49,7 +53,7 @@
 			<WorkToBuild>9000</WorkToBuild>
 			<Flammability>4.0</Flammability>
 		</statBases>
-		<tickerType>Normal</tickerType>
+    <tickerType>Rare</tickerType>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>    
 	</ThingDef>
 
@@ -126,7 +130,7 @@
 	<ThingDef ParentName="BasedWell">
 		<defName>OilWell</defName>
 		<label>Oil Well</label>
-		<description>Extracts oil from underground reservoirs, requires a resource console to view the oil grid!</description>
+    <description>Extracts oil from underground reservoirs, requires a resource console to view the oil fields, and miners to drill the well.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Pipe</ThingDef>
 			<RecipeDef>MakePipe</RecipeDef>
@@ -179,7 +183,7 @@
 			<drawSize>(4,7)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<description>Extracts oil from underground reservoirs, requires a ground radar to view the deep oil grid!</description>
+    <description>Extracts oil from underground reservoirs, requires a resource console and ground radar to view the deep oil fields, and miners to drill the well</description>
 		<descriptionHyperlinks>
 			<ThingDef>Pipe</ThingDef>
 			<RecipeDef>MakePipe</RecipeDef>
@@ -240,7 +244,6 @@
 		<rotatable>false</rotatable>
 		<pathCost>180</pathCost>
 		<comps>
-
 			<li Class="Rimefeller.CompProperties_StorageTank">
 				<StorageCap>10000</StorageCap>
 				<Contents>Oil</Contents>

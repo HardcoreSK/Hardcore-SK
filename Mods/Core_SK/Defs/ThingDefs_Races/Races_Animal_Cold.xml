@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Snork</defName>
 		<label>snork</label>
 		<description>There's a distinct resemblance between snorks and walruses but it's impossible to tell which came first as lot of the datalogs of Earthen fauna has been poorly kept and corrupted. Their tusks are a very high demand luxury item.</description>
@@ -17,6 +17,7 @@
 			<GermContainment>0.09</GermContainment>
 			<FilthRate>14</FilthRate>
 			<ToxicResistance>0.7</ToxicResistance>
+			<Wildness>0.55</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -52,7 +53,6 @@
 			<useMeatFrom>Elephant</useMeatFrom>
 			<leatherDef>Leather_Heavy</leatherDef>
 			<gestationPeriodDays>8</gestationPeriodDays>
-			<wildness>0.55</wildness>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<nuzzleMtbHours>60</nuzzleMtbHours>
 			<lifeExpectancy>15</lifeExpectancy>
@@ -92,7 +92,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Snork</defName>
 		<label>snork</label>
 		<race>Snork</race>
@@ -134,7 +134,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="SK_AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>Terramorph</defName>
 		<label>terramorph</label>
 		<description>Terramorphs are a type of large beetle with a pair of sharp tusks, thick chitin plating and a toxic bite. They are well adapted to survive in extreme temperatures, be it glacial environments or scorching deserts.</description>
@@ -155,6 +155,7 @@
 			<GermContainment>0.05</GermContainment>
 			<FilthRate>28</FilthRate>
 			<ToxicResistance>0.8</ToxicResistance>
+			<Wildness>0.92</Wildness>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -204,7 +205,6 @@
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<wildness>0.92</wildness>
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.8</manhunterOnDamageChance>
@@ -253,7 +253,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="SK_AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Terramorph</defName>
 		<label>Terramorph</label>
 		<race>Terramorph</race>

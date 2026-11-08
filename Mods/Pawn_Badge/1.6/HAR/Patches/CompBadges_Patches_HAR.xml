@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[race/intelligence="Humanlike" and not(comps)]</xpath>
+		<value>
+			<comps>
+			
+			</comps>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[race/intelligence="Humanlike"]/comps</xpath>
+		<value>
+			<li Class="RR_PawnBadge.CompProperties_Badge" />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[race/intelligence="Humanlike" and not(inspectorTabs)]</xpath>
+		<value>
+			<inspectorTabs>
+			
+			</inspectorTabs>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[race/intelligence="Humanlike"]/inspectorTabs</xpath>
+		<value>
+			<li>RR_PawnBadge.ITab_Pawn_Badge</li>
+		</value>
+	</Operation>
+	
+</Patch>

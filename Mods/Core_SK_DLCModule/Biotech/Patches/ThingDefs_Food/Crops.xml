@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="RawToxipotato"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>SK.SK_PlantFoodRawBaseDummy</value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/ThingDef[defName="RawToxipotato"]</xpath>
+    <value>
+      <thingCategories>
+        <li>BasicPlantFoodRaw</li>
+      </thingCategories>
+    </value>
+  </Operation>
+
+</Patch>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/GeneratedLocationDef[defName="Asteroids"]</xpath>
+		<value>
+			<preciousResources>
+				<li>SolidOreGold</li>
+				<li>SolidOreSilver</li>
+				<li>SolidOreSteel</li>
+				<li>SolidOreNickel</li>
+				<li>WeatheredOreTech</li>
+				<li>SolidOreUranium</li>
+				<li>SolidOreJade</li>
+				<li>SolidOreTungsten</li>
+				<li>SolidOreTitanium</li>
+				<li>SolidOreAluminum</li>
+				<li>SolidOreCopper</li>
+				<li>SolidOreTin</li>
+				<li>SolidOreCoal</li>
+				<li>SolidOreLead</li>
+				<li>SolidOreNitre</li>
+				<li>SolidOreSalt</li>
+				<li>SolidOreGlowstone</li>
+				<li>SolidOreColdstone</li>
+			</preciousResources>
+		</value>
+	</Operation>
+</Patch>

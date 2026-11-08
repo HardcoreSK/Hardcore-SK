@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FactionDef ParentName="SK_HumanFactionBase">
+	<FactionDef ParentName="FactionBase">
 		<defName>Predators</defName>
 		<label>Predators band</label>		
 		<pawnSingular>predators band</pawnSingular>
@@ -29,6 +29,8 @@
 				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.05</Dirtmole>
 				<Genie MayRequire="Ludeon.RimWorld.Biotech">0.025</Genie>
 				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.025</Neanderthal>
+				<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.03</Yttakin>
+				<Impid MayRequire="Ludeon.RimWorld.Biotech">0.04</Impid>
 			</xenotypeChances>
 		</xenotypeSet>
 		<techLevel>Industrial</techLevel>		
@@ -107,7 +109,7 @@
 				<li>WoolSheep</li>
 				<li>CopperBar</li>
 				<li>Bronze</li>
-				<li>Plasteel</li>
+				<li>Steel</li>
 			</thingDefs>
 		</apparelStuffFilter>
 		<pawnGroupMakers>
