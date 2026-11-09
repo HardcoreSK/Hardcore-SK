@@ -3,10 +3,36 @@
 
 	<!-- ========== MeleeWeapon_Axe ========== -->
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_Axe"]/tools</xpath>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Axe"]</xpath>
 		<value>
-			<tools>
+            <label>Double Headed Axe</label>
+            <description>An advanced form of one of mankind's oldest weapons. The simple, ancient design concentrates cutting power generated from strong overhand swings.</description>
+            <graphicData DeepReplace="True">
+                <texPath>Things/Weapons/Melee/DoubleAxe</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+            </graphicData>
+			<stuffCategories Inherit="False">
+				<li>SolidMetallic</li>
+			</stuffCategories>
+            <statBases Merge="True">
+                <Bulk>4</Bulk>
+                <MeleeCounterParryBonus>0.35</MeleeCounterParryBonus>
+            </statBases>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.30</MeleeCritChance>
+				<MeleeParryChance>0.15</MeleeParryChance>
+				<MeleeDodgeChance>0.20</MeleeDodgeChance>
+				<PlantWorkSpeed>0.15</PlantWorkSpeed>
+			</equippedStatOffsets>
+			<thingCategories Inherit="False">
+				<li>SharpMelee</li>
+			</thingCategories>
+            <weaponTags Merge="True">
+                <li>CE_OneHandedWeapon</li>
+            </weaponTags>
+			<tools DeepReplace="True">
 				<li Class="CombatExtended.ToolCE">
 					<label>handle</label>
 					<capacities>
@@ -34,42 +60,37 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_Axe"]/statBases</xpath>
-		<value>
-			<Bulk>4</Bulk>
-			<MeleeCounterParryBonus>0.35</MeleeCounterParryBonus>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_Axe"]</xpath>
-		<value>
-			<equippedStatOffsets>
-				<MeleeCritChance>0.30</MeleeCritChance>
-				<MeleeParryChance>0.15</MeleeParryChance>
-				<MeleeDodgeChance>0.20</MeleeDodgeChance>
-				<PlantWorkSpeed>0.15</PlantWorkSpeed>
-			</equippedStatOffsets>
-			<thingCategories Inherit="False">
-				<li>SharpMelee</li>
-			</thingCategories>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_Axe"]/weaponTags</xpath>
-		<value>
-			<li>CE_OneHandedWeapon</li>
-		</value>
-	</Operation>
-
 	<!-- ========== MeleeWeapon_Warhammer ========== -->
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_Warhammer"]/tools</xpath>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Warhammer"]</xpath>
 		<value>
-			<tools>
+            <graphicData DeepReplace="True">
+                <texPath>Things/Weapons/Melee/Warhammer</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+            </graphicData>
+            <equippedAngleOffset>-35</equippedAngleOffset>
+            <statBases Merge="True">
+                <Mass>2.5</Mass>
+                <Bulk>8</Bulk>
+                <MeleeCounterParryBonus>0.24</MeleeCounterParryBonus>
+            </statBases>
+			<stuffCategories Inherit="False">
+				<li>SolidMetallic</li>
+			</stuffCategories>
+			<equippedStatOffsets>
+				<MeleeCritChance>1.10</MeleeCritChance>
+				<MeleeParryChance>0.18</MeleeParryChance>
+				<MeleeDodgeChance>0.30</MeleeDodgeChance>
+				<ConstructionSpeed>0.40</ConstructionSpeed>
+			</equippedStatOffsets>
+			<thingCategories Inherit="False">
+				<li>HeavyMelee</li>
+				<li>BluntMelee</li>
+			</thingCategories>
+            <thingSetMakerTags IsNull="True" Inherit="False"/>
+			<tools DeepReplace="True">
 				<li Class="CombatExtended.ToolCE">
 					<label>handle</label>
 					<capacities>
@@ -93,50 +114,41 @@
 					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
 				</li>
 			</tools>
+			<modExtensions Merge="True">
+				<li Class="CombatExtended.GunDrawExtension">
+					<DrawSize>1.3,1.3</DrawSize>
+				</li>
+			</modExtensions>
 		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_Warhammer"]/statBases/Mass</xpath>
-		<value>
-			<Mass>2.5</Mass>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_Warhammer"]/statBases</xpath>
-		<value>
-			<Bulk>8</Bulk>
-			<MeleeCounterParryBonus>0.24</MeleeCounterParryBonus>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_Warhammer"]</xpath>
-		<value>
-			<equippedStatOffsets>
-				<MeleeCritChance>1.10</MeleeCritChance>
-				<MeleeParryChance>0.18</MeleeParryChance>
-				<MeleeDodgeChance>0.30</MeleeDodgeChance>
-				<ConstructionSpeed>0.40</ConstructionSpeed>
-			</equippedStatOffsets>
-			<thingCategories Inherit="False">
-				<li>HeavyMelee</li>
-				<li>BluntMelee</li>
-			</thingCategories>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_Warhammer"]/thingSetMakerTags</xpath>
 	</Operation>
 
 	<!-- ========== MeleeWeapon_PsyfocusStaff ========== -->
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_PsyfocusStaff"]/tools</xpath>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_PsyfocusStaff"]</xpath>
 		<value>
-			<tools>
+            <graphicData>
+                <texPath>Things/Weapons/Melee/PsyfocusStaff</texPath>
+                <graphicClass>SK.Graphic_SingleNoColor</graphicClass>
+            </graphicData>
+            <statBases Merge="True">
+                <Bulk>6</Bulk>
+                <MeleeCounterParryBonus>0.93</MeleeCounterParryBonus>
+            </statBases>
+			<stuffCategories>
+				<li>SolidMetallic</li>
+			</stuffCategories>
+            <equippedAngleOffset>-160</equippedAngleOffset>
+			<thingCategories Inherit="False">
+				<li>AdvancedMelee</li>
+				<li>BluntMelee</li>
+			</thingCategories>
+            <equippedStatOffsets Merge="True">
+                <MeleeCritChance>0.60</MeleeCritChance>
+                <MeleeParryChance>0.90</MeleeParryChance>
+                <MeleeDodgeChance>0.47</MeleeDodgeChance>
+            </equippedStatOffsets>
+			<tools DeepReplace="True">
 				<li Class="CombatExtended.ToolCE">
 					<label>head</label>
 					<capacities>
@@ -149,58 +161,75 @@
 					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
 				</li>
 			</tools>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_PsyfocusStaff"]/statBases</xpath>
-		<value>
-			<Bulk>6</Bulk>
-			<MeleeCounterParryBonus>0.93</MeleeCounterParryBonus>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_PsyfocusStaff"]</xpath>
-		<value>
-			<stuffCategories>
-				<li>SolidMetallic</li>
-			</stuffCategories>
-			<thingCategories Inherit="False">
-				<li>AdvancedMelee</li>
-				<li>BluntMelee</li>
-			</thingCategories>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_PsyfocusStaff"]/equippedStatOffsets</xpath>
-		<value>
-			<MeleeCritChance>0.60</MeleeCritChance>
-			<MeleeParryChance>0.90</MeleeParryChance>
-			<MeleeDodgeChance>0.47</MeleeDodgeChance>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_PsyfocusStaff"]</xpath>
-		<value>
-			<modExtensions>
+			<thingSetMakerTags Inherit="false" />
+			<modExtensions Merge="True">
 				<li Class="CombatExtended.GunDrawExtension">
-					<DrawSize>1.2,1.2</DrawSize>
+					<DrawSize>1.3,1.3</DrawSize>
+                    <DrawOffset>0.1,0.35</DrawOffset>
 				</li>
 			</modExtensions>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_PsyfocusStaff"]</xpath>
+	<!-- ========== MeleeWeapon_MonoSword ========== -->
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSword"]</xpath>
 		<value>
-			<thingSetMakerTags Inherit="false" />
+            <graphicData>
+                <texPath>Things/Weapons/Melee/Monosword</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+            </graphicData>
+			<statBases Merge="true">
+				<Bulk>4</Bulk>
+				<MeleeCounterParryBonus>0.40</MeleeCounterParryBonus>
+			</statBases>
+            <weaponTags Merge="true">
+				<li>CE_OneHandedWeapon</li>
+                <li>HitechPoweredMelee</li>
+            </weaponTags>
+			<stuffCategories DeepReplace="true">
+				<li>SolidMetallic</li>
+			</stuffCategories>
+			<techLevel>Spacer</techLevel>
+			<equippedStatOffsets Merge="true">
+				<MeleeCritChance>0.80</MeleeCritChance>
+				<MeleeParryChance>0.40</MeleeParryChance>
+				<MeleeDodgeChance>0.27</MeleeDodgeChance>
+			</equippedStatOffsets>
+			<thingCategories Inherit="False" DeepReplace="true">
+				<li>AdvancedMelee</li>
+				<li>SharpMelee</li>
+			</thingCategories>
+			<costStuffCount>120</costStuffCount>
+			<costList>
+				<ComponentSpacer>18</ComponentSpacer>
+				<AdvMechanism>4</AdvMechanism>
+				<BioMicrochips>1</BioMicrochips>
+				<MagneticMaterial>12</MagneticMaterial>
+				<Hexcell>2</Hexcell>
+			</costList>
+			<recipeMaker>
+				<!--<researchPrerequisite>Melee_D1</researchPrerequisite>-->
+				<workSpeedStat>SmithingSpeed</workSpeedStat>
+				<workSkill>Crafting</workSkill>
+				<effectWorking>Smith</effectWorking>
+				<soundWorking>Recipe_Machining</soundWorking>
+				<!-- <recipeUsers>
+					<li>MechWeaponCraftingWorkTable</li>
+				</recipeUsers> -->
+				<skillRequirements>
+					<Crafting>18</Crafting>
+				</skillRequirements>
+				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			</recipeMaker>
+            <modExtensions Merge="True">
+                <li Class="CombatExtended.GunDrawExtension">
+                    <DrawSize>1.15,1.15</DrawSize>
+                </li>
+            </modExtensions>
 		</value>
 	</Operation>
-
-	<!-- ========== MeleeWeapon_MonoSword ========== -->
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSword"]/tools</xpath>
@@ -245,33 +274,6 @@
 		</value>
 	</Operation>
 
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSword"]</xpath>
-		<value Merge="true">
-			<statBases Merge="true">
-				<Bulk>4</Bulk>
-				<MeleeCounterParryBonus>0.40</MeleeCounterParryBonus>
-			</statBases>
-            <weaponTags Merge="true">
-				<li>CE_OneHandedWeapon</li>
-                <li>HitechPoweredMelee</li>
-            </weaponTags>
-			<stuffCategories DeepReplace="true">
-				<li>SolidMetallic</li>
-			</stuffCategories>
-			<techLevel>Spacer</techLevel>
-			<equippedStatOffsets Merge="true">
-				<MeleeCritChance>0.80</MeleeCritChance>
-				<MeleeParryChance>0.40</MeleeParryChance>
-				<MeleeDodgeChance>0.27</MeleeDodgeChance>
-			</equippedStatOffsets>
-			<thingCategories Inherit="False" DeepReplace="true">
-				<li>AdvancedMelee</li>
-				<li>SharpMelee</li>
-			</thingCategories></value>
-	</Operation>
-
-
 	<!-- ========== MeleeWeapon_Zeushammer ========== -->
 
 	<Operation Class="PatchOperationReplace">
@@ -313,6 +315,10 @@
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="MeleeWeapon_Zeushammer"]</xpath>
 		<value Merge="true">
+            <graphicData>
+                <texPath>Things/Weapons/Melee/ZeusHammer</texPath>
+                <graphicClass>SK.Graphic_SingleNoColor</graphicClass>
+            </graphicData>
 			<statBases Merge="true">
 				<Bulk>8</Bulk>
 				<MeleeCounterParryBonus>0.60</MeleeCounterParryBonus>
@@ -333,11 +339,36 @@
 				<li>AdvancedMelee</li>
 				<li>HeavyMelee</li>
 				<li>BluntMelee</li>
-			</thingCategories></value>
+			</thingCategories>
+			<costStuffCount>120</costStuffCount>
+			<costList>
+				<ComponentSpacer>18</ComponentSpacer>
+				<AdvMechanism>4</AdvMechanism>
+				<BioMicrochips>1</BioMicrochips>
+				<MagneticMaterial>12</MagneticMaterial>
+				<Hexcell>2</Hexcell>
+			</costList>
+			<recipeMaker>
+				<!--<researchPrerequisite>Melee_D1</researchPrerequisite>-->
+				<workSpeedStat>SmithingSpeed</workSpeedStat>
+				<workSkill>Crafting</workSkill>
+				<effectWorking>Smith</effectWorking>
+				<soundWorking>Recipe_Machining</soundWorking>
+				<!-- <recipeUsers>
+					<li>MechWeaponCraftingWorkTable</li>
+				</recipeUsers> -->
+				<skillRequirements>
+					<Crafting>18</Crafting>
+				</skillRequirements>
+				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			</recipeMaker>
+            <modExtensions Merge="True">
+                <li Class="CombatExtended.GunDrawExtension">
+                    <DrawSize>1.5,1.5</DrawSize>
+                </li>
+            </modExtensions>
+        </value>
 	</Operation>
-
-
-
 
 	<!-- ========== MeleeWeapon_PlasmaSword ========== -->
 
@@ -400,6 +431,10 @@
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/ThingDef[defName="MeleeWeapon_PlasmaSword"]</xpath>
 		<value Merge="true">
+            <graphicData>
+                <texPath>Things/Weapons/Melee/PlasmaSword</texPath>
+                <graphicClass>SK.Graphic_SingleNoColor</graphicClass>
+            </graphicData>
 			<statBases Merge="true">
 				<Bulk>8.5</Bulk>
 				<MeleeCounterParryBonus>0.80</MeleeCounterParryBonus>
@@ -419,7 +454,35 @@
 			<thingCategories Inherit="False" DeepReplace="true">
 				<li>AdvancedMelee</li>
 				<li>SharpMelee</li>
-			</thingCategories></value>
+			</thingCategories>
+			<costStuffCount>120</costStuffCount>
+			<costList>
+				<ComponentSpacer>18</ComponentSpacer>
+				<AdvMechanism>4</AdvMechanism>
+				<BioMicrochips>1</BioMicrochips>
+				<MagneticMaterial>12</MagneticMaterial>
+				<Hexcell>2</Hexcell>
+			</costList>
+			<recipeMaker>
+				<!--<researchPrerequisite>Melee_D1</researchPrerequisite>-->
+				<workSpeedStat>SmithingSpeed</workSpeedStat>
+				<workSkill>Crafting</workSkill>
+				<effectWorking>Smith</effectWorking>
+				<soundWorking>Recipe_Machining</soundWorking>
+				<!-- <recipeUsers>
+					<li>MechWeaponCraftingWorkTable</li>
+				</recipeUsers> -->
+				<skillRequirements>
+					<Crafting>18</Crafting>
+				</skillRequirements>
+				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			</recipeMaker>
+            <modExtensions Merge="True">
+                <li Class="CombatExtended.GunDrawExtension">
+                    <DrawSize>1.15,1.15</DrawSize>
+                </li>
+            </modExtensions>
+        </value>
 	</Operation>
 
 	<Operation Class="PatchOperationRemove">
@@ -432,228 +495,6 @@
 								defName="MeleeWeapon_PlasmaSwordBladelink"]
 								/statBases/MarketValue</xpath>
 	</Operation>
-
-	<!-- ========== 单分子剑 (MonoSword) ========== -->
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSword"]</xpath>
-		<value>
-			<costStuffCount>120</costStuffCount>
-			<costList>
-				<ComponentSpacer>18</ComponentSpacer>
-				<AdvMechanism>4</AdvMechanism>
-				<BioMicrochips>1</BioMicrochips>
-				<MagneticMaterial>12</MagneticMaterial>
-				<Hexcell>2</Hexcell>
-			</costList>
-		</value>
-	</Operation>
-
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSword"]</xpath>
-		<value>
-			<recipeMaker>
-				<!--<researchPrerequisite>Melee_D1</researchPrerequisite>-->
-				<workSpeedStat>SmithingSpeed</workSpeedStat>
-				<workSkill>Crafting</workSkill>
-				<effectWorking>Smith</effectWorking>
-				<soundWorking>Recipe_Machining</soundWorking>
-				<!-- <recipeUsers>
-					<li>MechWeaponCraftingWorkTable</li>
-				</recipeUsers> -->
-				<skillRequirements>
-					<Crafting>18</Crafting>
-				</skillRequirements>
-				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
-			</recipeMaker>
-		</value>
-	</Operation>
-
-
-	<!-- ==========人格 单分子剑 ========== -->
-
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSwordBladelink"]</xpath>
-		<value>
-			<costStuffCount>120</costStuffCount>
-			<costList>
-				<ComponentSpacer>18</ComponentSpacer>
-				<AdvMechanism>4</AdvMechanism>
-				<BioMicrochips>2</BioMicrochips>
-				<MagneticMaterial>10</MagneticMaterial>
-				<Hexcell>4</Hexcell>
-				<GoldBar>50</GoldBar>
-				<AIPersonaCore>1</AIPersonaCore>
-			</costList>
-		</value>
-	</Operation>
-
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_MonoSwordBladelink"]</xpath>
-		<value>
-			<recipeMaker>
-				<!--<researchPrerequisite>Melee_D1</researchPrerequisite>-->
-				<workSpeedStat>SmithingSpeed</workSpeedStat>
-				<workSkill>Crafting</workSkill>
-				<effectWorking>Smith</effectWorking>
-				<soundWorking>Recipe_Machining</soundWorking>
-				<!-- <recipeUsers>
-					<li>MechWeaponCraftingWorkTable</li>
-				</recipeUsers> -->
-				<skillRequirements>
-					<Crafting>20</Crafting>
-				</skillRequirements>
-				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
-			</recipeMaker>
-		</value>
-	</Operation>
-
-	<!-- ========== 宙斯锤 ========== -->
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_Zeushammer"]</xpath>
-		<value>
-			<costStuffCount>120</costStuffCount>
-			<costList>
-				<ComponentSpacer>18</ComponentSpacer>
-				<AdvMechanism>4</AdvMechanism>
-				<BioMicrochips>1</BioMicrochips>
-				<MagneticMaterial>12</MagneticMaterial>
-				<Hexcell>2</Hexcell>
-			</costList>
-		</value>
-	</Operation>
-
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_Zeushammer"]</xpath>
-		<value>
-			<recipeMaker>
-				<!--<researchPrerequisite>Melee_D1</researchPrerequisite>-->
-				<workSpeedStat>SmithingSpeed</workSpeedStat>
-				<workSkill>Crafting</workSkill>
-				<effectWorking>Smith</effectWorking>
-				<soundWorking>Recipe_Machining</soundWorking>
-				<!-- <recipeUsers>
-					<li>MechWeaponCraftingWorkTable</li>
-				</recipeUsers> -->
-				<skillRequirements>
-					<Crafting>18</Crafting>
-				</skillRequirements>
-				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
-			</recipeMaker>
-		</value>
-	</Operation>
-
-
-	<!-- ==========人格 宙斯锤 ========== -->
-
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_ZeusHammerBladelink"]</xpath>
-		<value>
-			<costStuffCount>120</costStuffCount>
-			<costList>
-				<ComponentSpacer>18</ComponentSpacer>
-				<AdvMechanism>4</AdvMechanism>
-				<BioMicrochips>2</BioMicrochips>
-				<MagneticMaterial>10</MagneticMaterial>
-				<Hexcell>4</Hexcell>
-				<GoldBar>50</GoldBar>
-				<AIPersonaCore>1</AIPersonaCore>
-			</costList>
-		</value>
-	</Operation>
-
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_ZeusHammerBladelink"]</xpath>
-		<value>
-			<recipeMaker>
-				<!--<researchPrerequisite>Melee_D1</researchPrerequisite>-->
-				<workSpeedStat>SmithingSpeed</workSpeedStat>
-				<workSkill>Crafting</workSkill>
-				<effectWorking>Smith</effectWorking>
-				<soundWorking>Recipe_Machining</soundWorking>
-				<!-- <recipeUsers>
-					<li>MechWeaponCraftingWorkTable</li>
-				</recipeUsers> -->
-				<skillRequirements>
-					<Crafting>20</Crafting>
-				</skillRequirements>
-				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
-			</recipeMaker>
-		</value>
-	</Operation>
-
-	<!-- ========== 等离子剑 ========== -->
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_PlasmaSword"]</xpath>
-		<value>
-			<costStuffCount>120</costStuffCount>
-			<costList>
-				<ComponentSpacer>18</ComponentSpacer>
-				<AdvMechanism>4</AdvMechanism>
-				<BioMicrochips>1</BioMicrochips>
-				<MagneticMaterial>12</MagneticMaterial>
-				<Hexcell>2</Hexcell>
-			</costList>
-		</value>
-	</Operation>
-
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_PlasmaSword"]</xpath>
-		<value>
-			<recipeMaker>
-				<!--<researchPrerequisite>Melee_D1</researchPrerequisite>-->
-				<workSpeedStat>SmithingSpeed</workSpeedStat>
-				<workSkill>Crafting</workSkill>
-				<effectWorking>Smith</effectWorking>
-				<soundWorking>Recipe_Machining</soundWorking>
-				<!-- <recipeUsers>
-					<li>MechWeaponCraftingWorkTable</li>
-				</recipeUsers> -->
-				<skillRequirements>
-					<Crafting>18</Crafting>
-				</skillRequirements>
-				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
-			</recipeMaker>
-		</value>
-	</Operation>
-
-	<!-- ==========人格 等离子剑 ========== -->
-
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_PlasmaSwordBladelink"]</xpath>
-		<value>
-			<costStuffCount>120</costStuffCount>
-			<costList>
-				<ComponentSpacer>18</ComponentSpacer>
-				<AdvMechanism>4</AdvMechanism>
-				<BioMicrochips>2</BioMicrochips>
-				<MagneticMaterial>10</MagneticMaterial>
-				<Hexcell>4</Hexcell>
-				<GoldBar>50</GoldBar>
-				<AIPersonaCore>1</AIPersonaCore>
-			</costList>
-		</value>
-	</Operation>
-
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/ThingDef[defName="MeleeWeapon_PlasmaSwordBladelink"]</xpath>
-		<value>
-			<recipeMaker>
-				<!--<researchPrerequisite>Melee_D1</researchPrerequisite>-->
-				<workSpeedStat>SmithingSpeed</workSpeedStat>
-				<workSkill>Crafting</workSkill>
-				<effectWorking>Smith</effectWorking>
-				<soundWorking>Recipe_Machining</soundWorking>
-				<!-- <recipeUsers>
-					<li>MechWeaponCraftingWorkTable</li>
-				</recipeUsers> -->
-				<skillRequirements>
-					<Crafting>20</Crafting>
-				</skillRequirements>
-				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
-			</recipeMaker>
-		</value>
-	</Operation>
-
 
 	<!-- Add quality-based weapon art without replacing existing names, traits or CE components. -->
 	<Operation Class="PatchOperationConditional">

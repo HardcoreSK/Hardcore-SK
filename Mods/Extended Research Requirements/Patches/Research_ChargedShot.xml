@@ -5,10 +5,10 @@
     <match Class="PatchOperationAdd">
       <xpath>/Defs/ResearchProjectDef[defName="ChargedShot"]/modExtensions</xpath>
       <value>
-        <li Class="ExtendedResearchRequirements.RequiredBlueprintsExtension">
+        <li Class="ExtendedResearchRequirements.RequiredResearchItemsExtension">
           <requirements>
             <li>
-              <blueprint>TechnologyBlueprint_ChargedShot</blueprint>
+              <researchItem>TechnologyBlueprint_ChargedShot</researchItem>
               <count>1</count>
             </li>
           </requirements>
@@ -19,10 +19,10 @@
       <xpath>/Defs/ResearchProjectDef[defName="ChargedShot"]</xpath>
       <value>
         <modExtensions>
-          <li Class="ExtendedResearchRequirements.RequiredBlueprintsExtension">
+          <li Class="ExtendedResearchRequirements.RequiredResearchItemsExtension">
             <requirements>
               <li>
-                <blueprint>TechnologyBlueprint_ChargedShot</blueprint>
+                <researchItem>TechnologyBlueprint_ChargedShot</researchItem>
                 <count>1</count>
               </li>
             </requirements>

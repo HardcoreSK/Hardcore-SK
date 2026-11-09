@@ -10,10 +10,38 @@
 	<HediffDef ParentName="DN_ResistPainPassiveBase">
 		<defName>UndeadPassive</defName>
 		<label>Undead</label>
-		<description>Can't die twice...</description>
+		<description>One cannot die twice...</description>
 		<stages>
 			<li>
 				<painFactor>0.1</painFactor>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="DN_ResistPainPassiveBase">
+		<defName>DarkestNight_PassivePace</defName>
+		<label>shadow's tread</label>
+		<description>This shadow moves slowly in the darkness.</description>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<statFactors>
+					<MoveSpeed>0.5</MoveSpeed>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="DN_ResistPainPassiveBase">
+		<defName>DarkestNight_LoomingPace</defName>
+		<label>shadow's tread</label>
+		<description>This shadow moves in the darkness.</description>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<statFactors>
+					<MoveSpeed>0.7</MoveSpeed>
+				</statFactors>
 			</li>
 		</stages>
 	</HediffDef>

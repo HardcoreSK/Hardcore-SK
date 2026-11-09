@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="ERR_ArchotechResearchNotesBase" ParentName="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <graphicData>
+      <texPath>Things/Item/Book/Schematic/Schematic_Open_north</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.8,0.8)</drawSize>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <MarketValue>0</MarketValue>
+      <Mass>0.2</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Techprints</li>
+    </thingCategories>
+    <comps>
+      <li Class="ExtendedResearchRequirements.CompProperties_ResearchItem" />
+    </comps>
+  </ThingDef>
+
+  <!-- Reuse the generated techprint IDs so existing bills and saved items resolve to research notes. -->
+  <ThingDef ParentName="ERR_ArchotechResearchNotesBase">
+    <defName>Techprint_Bow_Archotech</defName>
+    <label>archotech bow research notes</label>
+    <description>Technical notes recovered by disassembling an archotech bow prototype. Study them to meet the item requirement for the corresponding research project.</description>
+  </ThingDef>
+
+  <ThingDef ParentName="ERR_ArchotechResearchNotesBase">
+    <defName>Techprint_Blaster_weapons_Archotech</defName>
+    <label>archotech blaster research notes</label>
+    <description>Technical notes recovered by disassembling an archotech blaster prototype. Study them to meet the item requirement for the corresponding research project.</description>
+  </ThingDef>
+
+  <ThingDef ParentName="ERR_ArchotechResearchNotesBase">
+    <defName>Techprint_SMG_Archotech</defName>
+    <label>archotech SMG research notes</label>
+    <description>Technical notes recovered by disassembling an archotech SMG prototype. Study them to meet the item requirement for the corresponding research project.</description>
+  </ThingDef>
+
+  <ThingDef ParentName="ERR_ArchotechResearchNotesBase">
+    <defName>Techprint_Melee_Archotech</defName>
+    <label>archotech sword research notes</label>
+    <description>Technical notes recovered by disassembling an archotech sword prototype. Study them to meet the item requirement for the corresponding research project.</description>
+  </ThingDef>
+</Defs>

@@ -51,18 +51,6 @@
 					<id>adaptive.storage.framework</id>
 					<HSKMod>true</HSKMod>
 				</li>
-				<li>
-					<id>zetrith.prepatcher</id>
-					<HSKMod>true</HSKMod>
-				</li>
-				<li>
-					<id>bs.fishery</id>
-					<HSKMod>true</HSKMod>
-				</li>
-				<li>
-					<id>bs.performance</id>
-					<HSKMod>true</HSKMod>
-				</li>
 			</DefaultFrameworkRequired>
 
 			<CompatibleFramework>
@@ -167,10 +155,6 @@
 					<HSKMod>true</HSKMod>
 				</li>
 				<li>
-					<id>lwm.deepstorage</id>
-					<HSKMod>true</HSKMod>
-				</li>
-				<li>
 					<id>jamaicancastle.rf.fertilefields</id>
 					<HSKMod>true</HSKMod>
 				</li>
@@ -199,30 +183,11 @@
 					<HSKMod>true</HSKMod>
 				</li>
 				<li>
-					<id>skyarkhangel.coretranslation</id>
-					<HSKMod>true</HSKMod>
-				</li>
-				<li>
-					<id>skyarkhangel.ideologytranslation</id>
-					<HSKMod>true</HSKMod>
-				</li>
-				<li>
-					<id>skyarkhangel.royaltytranslation</id>
-					<HSKMod>true</HSKMod>
-				</li>
-				<li>
-					<id>skyarkhangel.biotechtranslation</id>
-					<HSKMod>true</HSKMod>
-				</li>
-				<li>
-					<id>skyarkhangel.anomalytranslation</id>
-					<HSKMod>true</HSKMod>
-				</li>
-				<li>
 					<id>zacharyfoster.minerals</id>
 					<HSKMod>true</HSKMod>
 					<loadAfter>
 						<li>skyarkhangel.hsk</li>
+						<li>skyarkhangel.hsk.core</li>
 					</loadAfter>
 				</li>
 				<li>
@@ -262,10 +227,6 @@
 			<DefaultOptional>
 				<li>
 					<id>skyarkhangel.rimthemeslite</id>
-					<HSKMod>true</HSKMod>
-				</li>
-				<li>
-					<id>hatti.cleaningarea</id>
 					<HSKMod>true</HSKMod>
 				</li>
 				<li>
@@ -716,10 +677,6 @@
 					<HSKMod>true</HSKMod>
 				</li>
 				<li>
-					<id>spdskatr.projectrimfactory.industrialrollers</id>
-					<HSKMod>true</HSKMod>
-				</li>
-				<li>
 					<id>arpomo6.hmc.biomes</id>
 					<HSKMod>true</HSKMod>
 				</li>
@@ -766,6 +723,7 @@
 				<li>
 					<id>pirateby.vanillaoptimizations</id>
 					<HSKMod>true</HSKMod>
+					<link>https://discord.com/channels/272340793174392832/1064291210832912495</link>
 				</li>
 				<li>
 					<id>savestoragesettings.kv.rw.fishtmp</id>
@@ -876,6 +834,106 @@
 					<id>dimonsever000.ideologyvirtues</id>
 					<HSKMod>true</HSKMod>
 				</li>
+				<li>
+					<id>colossalfossil.animalsarefuncontinued</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>mlie.areaunlocker</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>kylemhb.betterpawncontrolforked</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>dra.stylechangeanytime</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>mlie.cleaningpriority</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>dubwise.dubsappareltweaks</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>mlie.enemyselfpreservation</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>hsk.extendedresearchrequirements</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>sr.modrimworld.factionalwarcontinued</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>mlie.flickablestorage</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>hmc.w.a.mr</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>hsk.inspiration</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>mrhydralisk.layeredatmosphereorbit</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>memegoddess.medicaltab</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>ninagoblin.nooneleftbehind</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>khamenman.outfitstandsplus</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>battlemage64.peoplecanchange</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>sr.modrimworld.raidextension</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>nachotoast.rimatomicsplusplus</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>alias.setupcamp</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>zuoyao.simplemonumentquest</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>pogo.ai</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>legodude17.htsb</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>wvc.sergkart.biotech.moremechanoidsworkmodes</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>owlchemist.perspectivedoors</id>
+					<HSKMod>true</HSKMod>
+				</li>
 			</DefaultOptional>
 
 			<DefaultOptionalTesting>
@@ -909,10 +967,6 @@
 				</li>
 				<li>
 					<id>andromeda.packablecontainers</id>
-					<HSKMod>true</HSKMod>
-				</li>
-				<li>
-					<id>noquiem.coordread</id>
 					<HSKMod>true</HSKMod>
 				</li>
 				<li>
@@ -959,6 +1013,18 @@
 					<id>name.krypt.rimworld.unifiedxmlexport</id>
 					<HSKMod>true</HSKMod>
 				</li>
+				<li>
+					<id>memegoddess.ctrlf</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>memegoddess.tdfindlib</id>
+					<HSKMod>true</HSKMod>
+				</li>
+				<li>
+					<id>memegoddess.tdsbugfixes</id>
+					<HSKMod>true</HSKMod>
+				</li>
 			</DefaultOptionalTesting>
 
 			<EndMod>
@@ -970,6 +1036,7 @@
 						<li>dimonsever000.wiki.specific</li>
 						<li>taranchuk.performanceoptimizer</li>
 						<li>krkr.rocketman</li>
+						<li>vr.missilegirl</li>
 					</loadBefore>
 				</li>
 				<li>
@@ -982,6 +1049,7 @@
 					<loadBefore>
 						<li>taranchuk.performanceoptimizer</li>
 						<li>krkr.rocketman</li>
+						<li>vr.missilegirl</li>
 					</loadBefore>
 				</li>
 				<li>
@@ -994,6 +1062,16 @@
 				</li>
 				<li>
 					<id>krkr.rocketman</id>
+					<HSKMod>true</HSKMod>
+					<loadAfter>
+						<li>dubwise.dubsperformanceanalyzer.steam</li>
+						<li>dimonsever000.wiki.specific</li>
+						<li>taranchuk.performanceoptimizer</li>
+						<li>trinity.runtimegcfixed</li>
+					</loadAfter>
+				</li>
+				<li>
+					<id>vr.missilegirl</id>
 					<HSKMod>true</HSKMod>
 					<loadAfter>
 						<li>dubwise.dubsperformanceanalyzer.steam</li>
@@ -1070,10 +1148,6 @@
 					<link>https://discord.com/channels/272340793174392832/1085811062772858950</link>
 				</li>
 				<li>
-					<id>pirateby.vanillaoptimizations</id>
-					<link>https://discord.com/channels/272340793174392832/1064291210832912495</link>
-				</li>
-				<li>
 					<id>xxnelsonxx.parabellum</id>
 					<link>https://discord.com/channels/272340793174392832/1068996072900399234</link>
 				</li>
@@ -1113,6 +1187,10 @@
 					<id>kebabebak.hsk.kebab.limits</id>
 					<link>https://github.com/kebabebak/HSK-kebab-limits</link>
 				</li>
+				<li>
+					<id>reiner.apparelstatpriorities</id>
+					<link>https://discord.com/channels/272340793174392832/1564289608953630841</link>
+				</li>				
 			</NativeAddon>
 
 			<ConversionAddon>
@@ -1415,9 +1493,6 @@
 					<id>madarauchiha.undraftaftertucking</id>
 				</li>
 				<li>
-					<id>mlie.customprisonerinteractions</id>
-				</li>
-				<li>
 					<id>kathanon.dropsome</id>
 				</li>
 				<li>
@@ -1453,9 +1528,6 @@
 				</li>
 				<li>
 					<id>orion.gastronomy</id>
-				</li>
-				<li>
-					<id>merthsoft.designatorshapes</id>
 				</li>
 				<li>
 					<id>devdesigner.rolesapparelunlocked</id>
@@ -1567,9 +1639,6 @@
 				</li>
 				<li>
 					<id>dubwise.dubspaintshop</id>
-				</li>
-				<li>
-					<id>owlchemist.doorclearance</id>
 				</li>
 				<li>
 					<id>dark.jobinbar</id>
@@ -1707,13 +1776,6 @@
 				</li>
 				<li>
 					<id>meltup.nopowercommssimplified</id>
-					<link>https://github.com/TheLoneTec/Tecs-Assorted-Patches</link>
-					<requiredMods>
-						<li>TheLoneTec.TSAP</li>
-					</requiredMods>
-				</li>
-				<li>
-					<id>owlchemist.perspectivedoors</id>
 					<link>https://github.com/TheLoneTec/Tecs-Assorted-Patches</link>
 					<requiredMods>
 						<li>TheLoneTec.TSAP</li>
