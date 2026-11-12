@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <PTF_SettingsCategory>Pawn Target Fix</PTF_SettingsCategory>
+
+    <PTF_PreferAccuracy_label>Prefer accuracy-based target scoring</PTF_PreferAccuracy_label>
+    <PTF_PreferAccuracy_desc>When enabled, pawns prefer targets with a higher estimated hit chance (cover, range, shooter ability) instead of just proximity.</PTF_PreferAccuracy_desc>
+
+    <PTF_NearRangeNudge_label>Keep near-range nudge</PTF_NearRangeNudge_label>
+    <PTF_NearRangeNudge_desc>Adds a small extra bias for targets within ~20 tiles, encouraging close-threat focus.</PTF_NearRangeNudge_desc>
+
+    <PTF_AccuracyWeight_label>Accuracy weight (score = hitChance × weight): {0}</PTF_AccuracyWeight_label>
+
+    <PTF_Downed_header>Downed targets:</PTF_Downed_header>
+    <PTF_Mode_button>Mode</PTF_Mode_button>
+    <PTF_Downed_mode_None>None</PTF_Downed_mode_None>
+    <PTF_Downed_mode_Deprioritize>Deprioritize</PTF_Downed_mode_Deprioritize>
+    <PTF_Downed_mode_Ignore>Ignore</PTF_Downed_mode_Ignore>
+    <PTF_DownedPenalty_label>Downed penalty (higher = ignore more): {0}</PTF_DownedPenalty_label>
+
+    <PTF_StickinessPercent_label>Stickiness (keep current target if within % of best): {0}%</PTF_StickinessPercent_label>
+    <PTF_RecentTargetWindow_label>Recent-target window (ticks): {0}</PTF_RecentTargetWindow_label>
+    <PTF_RecentTargetBonus_label>Recent-target bonus: {0}</PTF_RecentTargetBonus_label>
+</LanguageData>

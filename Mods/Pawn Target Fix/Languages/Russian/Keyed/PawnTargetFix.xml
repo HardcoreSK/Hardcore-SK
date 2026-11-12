@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <PTF_SettingsCategory>Улучшение выбора целей</PTF_SettingsCategory>
+
+    <PTF_PreferAccuracy_label>Предпочитать выбор по шансу попадания</PTF_PreferAccuracy_label>
+    <PTF_PreferAccuracy_desc>Если включено, пешки выбирают цель с более высокой оценочной вероятностью попадания (укрытие, дистанция, навык стрелка), а не просто ближайшую.</PTF_PreferAccuracy_desc>
+
+    <PTF_NearRangeNudge_label>Сохранять приоритет ближней дистанции</PTF_NearRangeNudge_label>
+    <PTF_NearRangeNudge_desc>Добавляет небольшой бонус целям в радиусе ~20 клеток, чтобы сосредоточиться на ближних угрозах.</PTF_NearRangeNudge_desc>
+
+    <PTF_AccuracyWeight_label>Вес точности (очки = шанс × вес): {0}</PTF_AccuracyWeight_label>
+
+    <PTF_Downed_header>Поверженные цели:</PTF_Downed_header>
+    <PTF_Mode_button>Режим</PTF_Mode_button>
+    <PTF_Downed_mode_None>Нет</PTF_Downed_mode_None>
+    <PTF_Downed_mode_Deprioritize>Понизить приоритет</PTF_Downed_mode_Deprioritize>
+    <PTF_Downed_mode_Ignore>Игнорировать</PTF_Downed_mode_Ignore>
+    <PTF_DownedPenalty_label>Штраф за поверженных (выше = больше игнорировать): {0}</PTF_DownedPenalty_label>
+
+    <PTF_StickinessPercent_label>Инерция (сохранять текущую цель, если в % от лучшей): {0}%</PTF_StickinessPercent_label>
+    <PTF_RecentTargetWindow_label>Окно последней цели (тики): {0}</PTF_RecentTargetWindow_label>
+    <PTF_RecentTargetBonus_label>Бонус к последней цели: {0}</PTF_RecentTargetBonus_label>
+</LanguageData>

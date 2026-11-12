@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <PTF_SettingsCategory>Amélioration du ciblage</PTF_SettingsCategory>
+
+    <PTF_PreferAccuracy_label>Privilégier la sélection par chance de toucher</PTF_PreferAccuracy_label>
+    <PTF_PreferAccuracy_desc>Si activé, les colons privilégient les cibles avec une chance estimée de toucher plus élevée (couvert, distance, capacité du tireur) plutôt que la simple proximité.</PTF_PreferAccuracy_desc>
+
+    <PTF_NearRangeNudge_label>Conserver l’avantage à courte portée</PTF_NearRangeNudge_label>
+    <PTF_NearRangeNudge_desc>Ajoute un léger bonus pour les cibles à ~20 cases, afin de prioriser les menaces proches.</PTF_NearRangeNudge_desc>
+
+    <PTF_AccuracyWeight_label>Poids de la précision (score = chance × poids) : {0}</PTF_AccuracyWeight_label>
+
+    <PTF_Downed_header>Cibles à terre :</PTF_Downed_header>
+    <PTF_Mode_button>Mode</PTF_Mode_button>
+    <PTF_Downed_mode_None>Aucun</PTF_Downed_mode_None>
+    <PTF_Downed_mode_Deprioritize>Déprioriser</PTF_Downed_mode_Deprioritize>
+    <PTF_Downed_mode_Ignore>Ignorer</PTF_Downed_mode_Ignore>
+    <PTF_DownedPenalty_label>Malus pour cibles à terre (plus élevé = plus ignoré) : {0}</PTF_DownedPenalty_label>
+
+    <PTF_StickinessPercent_label>Inertie (garder la cible actuelle si dans % du meilleur) : {0}%</PTF_StickinessPercent_label>
+    <PTF_RecentTargetWindow_label>Fenêtre de la dernière cible (ticks) : {0}</PTF_RecentTargetWindow_label>
+    <PTF_RecentTargetBonus_label>Bonus de la dernière cible : {0}</PTF_RecentTargetBonus_label>
+</LanguageData>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <PTF_SettingsCategory>目标选择优化</PTF_SettingsCategory>
+
+    <PTF_PreferAccuracy_label>优先基于命中率选择目标</PTF_PreferAccuracy_label>
+    <PTF_PreferAccuracy_desc>启用后，小人会更倾向于攻击命中率更高的目标（考虑掩体、距离、射手能力），而不只是最近的目标。</PTF_PreferAccuracy_desc>
+
+    <PTF_NearRangeNudge_label>保留近距离偏好</PTF_NearRangeNudge_label>
+    <PTF_NearRangeNudge_desc>对约 20 格内的目标给予少量额外权重，以优先处理近距离威胁。</PTF_NearRangeNudge_desc>
+
+    <PTF_AccuracyWeight_label>命中率权重（分数 = 命中率 × 权重）：{0}</PTF_AccuracyWeight_label>
+
+    <PTF_Downed_header>倒地目标：</PTF_Downed_header>
+    <PTF_Mode_button>模式</PTF_Mode_button>
+    <PTF_Downed_mode_None>无</PTF_Downed_mode_None>
+    <PTF_Downed_mode_Deprioritize>降低优先级</PTF_Downed_mode_Deprioritize>
+    <PTF_Downed_mode_Ignore>忽略</PTF_Downed_mode_Ignore>
+    <PTF_DownedPenalty_label>倒地惩罚（越高越忽略）：{0}</PTF_DownedPenalty_label>
+
+    <PTF_StickinessPercent_label>粘性（当当前目标分数在最佳的百分比范围内保持不变）：{0}%</PTF_StickinessPercent_label>
+    <PTF_RecentTargetWindow_label>最近目标时窗（刻）：{0}</PTF_RecentTargetWindow_label>
+    <PTF_RecentTargetBonus_label>最近目标加成：{0}</PTF_RecentTargetBonus_label>
+</LanguageData>

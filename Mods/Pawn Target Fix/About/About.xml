@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Pawn Target Fix</name>
+    <author>fed1sPlay</author>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <packageId>fed1sPlay.PawnTargetFix</packageId>
+    <modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>brrainz.harmony</li>
+    </loadAfter>
+    <description>
+    Improves how pawns automatically choose shooting targets.
+
+    • Toggle between accuracy-first or proximity-first targeting  
+    • Configurable weighting and near-range bias  
+    • Options for handling downed enemies (none, deprioritize, ignore)  
+    • Target “stickiness” to reduce rapid swapping  
+    • Recent-target bonus acts like a minimum retarget interval  
+    • Preserves friendly-fire awareness  
+    • Fully translatable (English, Chinese, Japanese, German, French, Russian)
+
+    Manual targeting is always respected. Compatible with most combat mods.
+  </description>
+    <url/>
+</ModMetaData>

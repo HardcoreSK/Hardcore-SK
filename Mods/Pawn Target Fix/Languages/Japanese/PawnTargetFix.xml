@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <PTF_SettingsCategory>ターゲット選択の調整</PTF_SettingsCategory>
+
+    <PTF_PreferAccuracy_label>命中率優先でターゲットを選ぶ</PTF_PreferAccuracy_label>
+    <PTF_PreferAccuracy_desc>有効にすると、近さだけでなく、掩体・距離・射手能力を考慮した推定命中率の高い敵を優先します。</PTF_PreferAccuracy_desc>
+
+    <PTF_NearRangeNudge_label>近距離優遇を維持する</PTF_NearRangeNudge_label>
+    <PTF_NearRangeNudge_desc>約20マス以内の目標にわずかな加点を与え、近距離の脅威に集中します。</PTF_NearRangeNudge_desc>
+
+    <PTF_AccuracyWeight_label>命中率の重み（スコア ＝ 命中率 × 重み）：{0}</PTF_AccuracyWeight_label>
+
+    <PTF_Downed_header>倒れている敵：</PTF_Downed_header>
+    <PTF_Mode_button>モード</PTF_Mode_button>
+    <PTF_Downed_mode_None>なし</PTF_Downed_mode_None>
+    <PTF_Downed_mode_Deprioritize>優先度を下げる</PTF_Downed_mode_Deprioritize>
+    <PTF_Downed_mode_Ignore>無視する</PTF_Downed_mode_Ignore>
+    <PTF_DownedPenalty_label>倒れた敵の減点（高いほど無視）：{0}</PTF_DownedPenalty_label>
+
+    <PTF_StickinessPercent_label>粘着度（最良スコアの{0}%以内なら現在の対象を維持）：{0}%</PTF_StickinessPercent_label>
+    <PTF_RecentTargetWindow_label>直近対象ウィンドウ（tick）：{0}</PTF_RecentTargetWindow_label>
+    <PTF_RecentTargetBonus_label>直近対象ボーナス：{0}</PTF_RecentTargetBonus_label>
+</LanguageData>

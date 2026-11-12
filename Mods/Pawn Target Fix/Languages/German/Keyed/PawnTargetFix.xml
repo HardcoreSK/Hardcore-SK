@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <PTF_SettingsCategory>Zielauswahl-Verbesserung</PTF_SettingsCategory>
+
+    <PTF_PreferAccuracy_label>Zielauswahl nach Trefferchance bevorzugen</PTF_PreferAccuracy_label>
+    <PTF_PreferAccuracy_desc>Wenn aktiviert, bevorzugen Kolonisten Ziele mit höherer geschätzter Trefferchance (Deckung, Entfernung, Schützenfähigkeit) statt nur der Nähe.</PTF_PreferAccuracy_desc>
+
+    <PTF_NearRangeNudge_label>Bevorzugung auf kurze Distanz beibehalten</PTF_NearRangeNudge_label>
+    <PTF_NearRangeNudge_desc>Gibt Zielen innerhalb von ~20 Feldern einen kleinen Bonus, um nahe Bedrohungen zu priorisieren.</PTF_NearRangeNudge_desc>
+
+    <PTF_AccuracyWeight_label>Gewichtung der Trefferchance (Punktzahl = Trefferchance × Gewicht): {0}</PTF_AccuracyWeight_label>
+
+    <PTF_Downed_header>Niedergestreckte Ziele:</PTF_Downed_header>
+    <PTF_Mode_button>Modus</PTF_Mode_button>
+    <PTF_Downed_mode_None>Keine</PTF_Downed_mode_None>
+    <PTF_Downed_mode_Deprioritize>Niedriger priorisieren</PTF_Downed_mode_Deprioritize>
+    <PTF_Downed_mode_Ignore>Ignorieren</PTF_Downed_mode_Ignore>
+    <PTF_DownedPenalty_label>Abzug für Niedergestreckte (höher = mehr ignorieren): {0}</PTF_DownedPenalty_label>
+
+    <PTF_StickinessPercent_label>Klebeeffekt (aktuelles Ziel beibehalten, wenn innerhalb % des besten): {0}%</PTF_StickinessPercent_label>
+    <PTF_RecentTargetWindow_label>Fenster für letztes Ziel (Ticks): {0}</PTF_RecentTargetWindow_label>
+    <PTF_RecentTargetBonus_label>Bonus für letztes Ziel: {0}</PTF_RecentTargetBonus_label>
+</LanguageData>
