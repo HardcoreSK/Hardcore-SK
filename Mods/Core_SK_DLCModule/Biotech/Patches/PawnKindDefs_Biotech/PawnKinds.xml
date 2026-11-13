@@ -54,11 +54,11 @@
 					<sidearms>
 					<li>
 						<sidearmMoney>
-						<min>80</min>
-						<max>240</max>
+                            <min>80</min>
+                            <max>240</max>
 						</sidearmMoney>
 						<weaponTags>
-						<li>CE_Sidearm_Tribal</li>
+                            <li>CE_Sidearm_Tribal</li>
 						</weaponTags>
 					</li>
 					</sidearms>					
@@ -106,35 +106,10 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="Mercenary_HeavyTox"]</xpath>
-		<value>
-			<li Class="CombatExtended.LoadoutPropertiesExtension">
-				<primaryMagazineCount>
-					<min>6</min>
-					<max>14</max>
-				</primaryMagazineCount>
-				<forcedAmmoCategory>Toxic</forcedAmmoCategory>
-			</li>
-		</value>
-	</Operation>
-
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/PawnKindDef[defName="Grenadier_Tox"]</xpath>
 		<value>
 			<combatPower>200</combatPower>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="Grenadier_Tox"]</xpath>
-		<value>
-			<li Class="CombatExtended.LoadoutPropertiesExtension">
-				<primaryMagazineCount>
-					<min>6</min>
-					<max>14</max>
-				</primaryMagazineCount>
-			</li>
 		</value>
 	</Operation>
 
@@ -223,101 +198,6 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="Town_Guard_Pig"]</xpath>
-		<value>
-			<li Class="CombatExtended.LoadoutPropertiesExtension">
-				<primaryMagazineCount>
-					<min>18</min>
-					<max>28</max>
-				</primaryMagazineCount>
-				<sidearms>
-				<li>
-					<generateChance>0.20</generateChance>
-					<sidearmMoney>
-						<min>80</min>
-						<max>160</max>
-					</sidearmMoney>
-					<weaponTags>
-						<li>GrenadeTierZero</li>
-						<li>GrenadeTierOne</li>
-					</weaponTags>
-				</li>
-				</sidearms>
-			</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="Town_Trader_Pig"]</xpath>
-		<value>
-			<li Class="CombatExtended.LoadoutPropertiesExtension">
-				<primaryMagazineCount>
-					<min>3</min>
-					<max>5</max>
-				</primaryMagazineCount>
-				<sidearms>
-				<li>
-					<generateChance>0.20</generateChance>
-					<sidearmMoney>
-						<min>80</min>
-						<max>240</max>
-					</sidearmMoney>
-					<weaponTags>
-						<li>GrenadeTierZero</li>
-						<li>GrenadeTierOne</li>
-						<li>CE_AI_Nonlethal</li>
-					</weaponTags>
-				</li>
-				</sidearms>
-			</li>
-		</value>
-	</Operation>
-
-    <!--<Operation Class="SK.PatchOperationReplaceExtended">
-        <xpath>Defs/PawnKindDef[defName="Mercenary_Gunner_Pig"]</xpath>
-        <value>
-			<weaponTags Inherit="False">
-				<li>RF1</li>
-				<li>PT1</li>
-				<li>PT2</li>
-				<li>SMG1</li>
-				<li>SMG2</li>
-			</weaponTags>
-			<apparelTags Inherit="False">
-			  <li>IndustrialBasic</li>
-			  <li>IndustrialMilitaryBasic</li>
-			  <li>Outlander</li>
-			  <li>BanditsLight</li>
-			</apparelTags>
-        </value>
-    </Operation>-->
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="Mercenary_Gunner_Pig"]</xpath>
-		<value>
-			<li Class="CombatExtended.LoadoutPropertiesExtension">
-				<primaryMagazineCount>
-					<min>5</min>
-					<max>7</max>
-				</primaryMagazineCount>
-				<sidearms>
-				<li>
-					<generateChance>0.20</generateChance>
-					<sidearmMoney>
-						<min>80</min>
-						<max>180</max>
-					</sidearmMoney>
-					<weaponTags>
-						<li>GrenadeTierOne</li>
-						<li>GrenadeTierTwo</li>
-					</weaponTags>
-				</li>
-				</sidearms>
-			</li>
-		</value>
-	</Operation>
-
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/PawnKindDef[defName="Mercenary_Elite_Pig"]</xpath>
         <value>
@@ -336,30 +216,5 @@
 			</apparelTags>
         </value>
     </Operation>
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="Mercenary_Elite_Pig"]</xpath>
-		<value>
-			<li Class="CombatExtended.LoadoutPropertiesExtension">
-				<primaryMagazineCount>
-					<min>6</min>
-					<max>9</max>
-				</primaryMagazineCount>
-				<sidearms>
-				<li>
-					<generateChance>0.25</generateChance>
-					<sidearmMoney>
-						<min>80</min>
-						<max>240</max>
-					</sidearmMoney>
-					<weaponTags>
-						<li>GrenadeTierOne</li>
-						<li>GrenadeTierTwo</li>
-					</weaponTags>
-				</li>
-				</sidearms>
-			</li>
-		</value>
-	</Operation>
 
 </Patch>
