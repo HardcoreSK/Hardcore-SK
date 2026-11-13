@@ -17,4 +17,18 @@
 		</match>
 	</Operation>
 
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="SK.PatchOperationReplaceExtended">
+			<xpath>Defs/RulePackDef[defName="DamageEvent_CookOff" or defName="DamageEvent_Shelling" or defName="DamageEvent_ShellingExplosion"]</xpath>
+			<value>
+				<include Merge="True">
+					<li>DamageEvent_KeywordAlias</li>
+				</include>
+			</value>
+		</match>
+	</Operation>
+
 </Patch>

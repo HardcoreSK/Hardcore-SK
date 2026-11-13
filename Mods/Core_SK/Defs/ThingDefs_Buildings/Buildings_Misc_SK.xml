@@ -341,7 +341,7 @@
 	<ThingDef ParentName="FacilitiesBase">
 		<defName>Small_ToolCabinet</defName>
 		<label>small tool cabinet</label>
-		<description>Increases work speed. Needs to be placed near workbench. One workbench can be simultaneously linked to only two tool cabinets.</description>
+		<description>Increases work speed. Needs to be placed near a workbench. One workbench can be simultaneously linked to only one cabinet of this type. Quality affects the work speed bonus.</description>
 		<graphicData>
 			<texPath>Things/Building/Furniture/Tools/SmallToolCabinet</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
