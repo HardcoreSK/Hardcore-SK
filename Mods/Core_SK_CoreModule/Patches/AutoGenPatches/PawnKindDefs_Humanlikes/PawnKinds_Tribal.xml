@@ -259,23 +259,25 @@
   </Operation>
 
   <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/PawnKindDef[@Name="TribalChiefBase"]</xpath>
+    <value>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>TribalChief</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/PawnKindDef[defName="Tribal_ChiefMelee"]</xpath>
     <value>
 		<race>Human</race>
 		<combatPower>170</combatPower>
 		<itemQuality>Good</itemQuality>
 		<backstoryCryptosleepCommonality>0.01</backstoryCryptosleepCommonality>
-		<backstoryFiltersOverride>
-			<li>
-				<categoriesChildhood>
-					<li>Tribal</li>
-				</categoriesChildhood>
-				<categoriesAdulthood>
-					<li>Tribal</li>
-					<li>TribalHunter</li>
-				</categoriesAdulthood>
-			</li>
-		</backstoryFiltersOverride>
 		<minGenerationAge>35</minGenerationAge>
 		<factionLeader>true</factionLeader>
 		<gearHealthRange>0.7~3.0</gearHealthRange>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<BackstoryDef Name="TribalChiefBackstoryBase" Abstract="True">
+		<spawnCategories>
+			<li>TribalChief</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="TribalChiefBackstoryBase">
+		<defName>TribalChief_Child_SpearBearer</defName>
+		<slot>Childhood</slot>
+		<title>spear bearer</title>
+		<titleShort>bearer</titleShort>
+		<description>[PAWN_nameDef] carried spears and water for the tribe's war band. [PAWN_pronoun] watched every fight from the edge of the field and practiced what [PAWN_pronoun] saw until the warriors let [PAWN_objective] stand in the line.</description>
+		<skillGains>
+			<Melee>2</Melee>
+			<Shooting>2</Shooting>
+			<Social>1</Social>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="TribalChiefBackstoryBase">
+		<defName>TribalChief_Child_WolfRunner</defName>
+		<slot>Childhood</slot>
+		<title>wolf runner</title>
+		<titleShort>runner</titleShort>
+		<description>[PAWN_nameDef] ran with the tribe's hunting pack as soon as [PAWN_pronoun] was old enough to keep up. [PAWN_pronoun] learned to read tracks, to stay downwind, and to put an arrow where it counted.</description>
+		<skillGains>
+			<Animals>3</Animals>
+			<Shooting>2</Shooting>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="TribalChiefBackstoryBase">
+		<defName>TribalChief_Child_RaidOrphan</defName>
+		<slot>Childhood</slot>
+		<title>raid orphan</title>
+		<titleShort>orphan</titleShort>
+		<description>Raiders burned [PAWN_nameDef]'s village and killed [PAWN_possessive] parents. The survivors raised [PAWN_objective] together, and [PAWN_pronoun] grew up watching families trade blame and blood over what had been lost.</description>
+		<skillGains>
+			<Melee>3</Melee>
+			<Social>1</Social>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="TribalChiefBackstoryBase">
+		<defName>TribalChief_Child_ChiefsHeir</defName>
+		<slot>Childhood</slot>
+		<title>chief's heir</title>
+		<titleShort>heir</titleShort>
+		<description>[PAWN_nameDef] was the eldest child of a chief. From the day [PAWN_pronoun] could walk, [PAWN_pronoun] sat at the council fire, listened to the elders argue, and trained with the warriors who would one day follow [PAWN_objective].</description>
+		<skillGains>
+			<Social>3</Social>
+			<Melee>2</Melee>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="TribalChiefBackstoryBase">
+		<defName>TribalChief_Adult_WarChief</defName>
+		<slot>Adulthood</slot>
+		<title>war chief</title>
+		<titleShort>chief</titleShort>
+		<description>[PAWN_nameDef] led the tribe's warriors through years of raids and feuds. [PAWN_pronoun] fought at the front of every battle, and the tribe chose [PAWN_objective] as chief because no one else had brought so many of them home alive.</description>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<skillGains>
+			<Melee>4</Melee>
+			<Social>4</Social>
+			<Shooting>2</Shooting>
+		</skillGains>
+		<workDisables>
+			<li>Cleaning</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="TribalChiefBackstoryBase">
+		<defName>TribalChief_Adult_HuntMaster</defName>
+		<slot>Adulthood</slot>
+		<title>hunt master</title>
+		<titleShort>hunter</titleShort>
+		<description>[PAWN_nameDef] fed the tribe through the hardest winters anyone could remember. [PAWN_pronoun] led the great hunts, chose where the tribe would camp, and became its chief when the old one could no longer keep pace.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Animals>3</Animals>
+			<Social>2</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="TribalChiefBackstoryBase">
+		<defName>TribalChief_Adult_OathKeeper</defName>
+		<slot>Adulthood</slot>
+		<title>oath keeper</title>
+		<titleShort>keeper</titleShort>
+		<description>[PAWN_nameDef] settled blood feuds between families and held each side to its word. When words failed, [PAWN_pronoun] settled the matter with a blade. The tribe trusted [PAWN_possessive] judgment enough to make [PAWN_objective] chief.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Social>5</Social>
+			<Melee>3</Melee>
+			<Medicine>1</Medicine>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="TribalChiefBackstoryBase">
+		<defName>TribalChief_Adult_ClanUnifier</defName>
+		<slot>Adulthood</slot>
+		<title>clan unifier</title>
+		<titleShort>unifier</titleShort>
+		<description>[PAWN_nameDef] brought several quarrelling clans under one banner through marriage pacts, gifts, and a few short wars. [PAWN_pronoun] rules them now and rides out with the war band whenever one of them is threatened.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Social>6</Social>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+		</skillGains>
+		<workDisables>
+			<li>Cleaning</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+</Defs>
