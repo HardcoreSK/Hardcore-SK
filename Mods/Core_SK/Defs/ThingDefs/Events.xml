@@ -68,16 +68,6 @@
 	</ThingDef>
 
 	<ThingDef ParentName="EventBase">
-		<defName>ACcounter</defName>
-		<thingClass>SK.Events.AnimalCorpsesGenerator</thingClass>
-	</ThingDef>
-
-	<ThingDef ParentName="EventBase">
-		<defName>VCcounter</defName>
-		<thingClass>SK.Events.VillagerCorpsesGenerator</thingClass>
-	</ThingDef>
-
-	<ThingDef ParentName="EventBase">
 		<defName>LCcounter</defName>
 		<thingClass>SK.Events.Ticker_LCcounter</thingClass>
 	</ThingDef>

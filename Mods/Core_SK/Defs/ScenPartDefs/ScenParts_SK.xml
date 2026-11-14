@@ -10,16 +10,16 @@
   </ScenPartDef>
   
   <ScenPartDef>
-    <defName>StartWithNF</defName>
+    <defName>StartWithNuclearFallout</defName>
     <label>Start with nuclear fallout</label>
     <category>Fixed</category>
-    <scenPartClass>SK.ScenPart_StartWithNF</scenPartClass>
+    <scenPartClass>SK.ScenPart_NuclearFallout</scenPartClass>
 	<selectionWeight>1.0</selectionWeight>
     <summaryPriority>430</summaryPriority>
   </ScenPartDef>
   
   <ScenPartDef>
-    <defName>StartwithCorpses</defName>
+    <defName>StartWithCorpses</defName>
     <label>Start with corpses</label>
     <category>Fixed</category>
     <scenPartClass>SK.Events.ScenPart_Corpses</scenPartClass>
