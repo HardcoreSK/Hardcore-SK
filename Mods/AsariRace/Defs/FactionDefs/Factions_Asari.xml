@@ -3,8 +3,8 @@
 
 	<FactionDef ParentName="FactionBase">
 		<defName>AsariHunters</defName>
-		<label>United Asari Republic</label>
-		<description>A fleet of asari ships.\n\nAfter finding themselves in this galaxy without any memory of where they came from, the asari are searching the galaxy to learn who they are and where they came from. Traveling like nomads, they usually don't settle down on planets. They are distrustful of humans, since their own technology seems to be far superior.</description>
+		<label>United Asari Fleet</label>
+		<description>The asari space fleet. They arrived here having lost all memory of their homeland — the galaxy in which they were born — and now try by every means to find their place. Traveling like nomads, they usually don't settle on planets. They are distrustful of humans, since their own technology and level of development are far superior.</description>
 		<pawnSingular>asari</pawnSingular>
 		<pawnsPlural>asari</pawnsPlural>
 		<listOrderPriority>49</listOrderPriority>
@@ -15,7 +15,7 @@
 		<canSiege>false</canSiege>
 		<autoFlee>true</autoFlee>
 		<canStageAttacks>true</canStageAttacks>
-		<leaderTitle>matriarch</leaderTitle>
+		<leaderTitle>supreme admiral</leaderTitle>
 		<earliestRaidDays>240</earliestRaidDays>
 		<melaninRange>0~1</melaninRange>
 		<xenotypeSet Inherit="False">
