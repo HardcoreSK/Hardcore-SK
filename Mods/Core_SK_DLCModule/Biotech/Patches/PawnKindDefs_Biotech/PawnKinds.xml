@@ -106,10 +106,35 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/PawnKindDef[defName="Mercenary_HeavyTox"]</xpath>
+		<value>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>6</min>
+					<max>14</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>Toxic</forcedAmmoCategory>
+			</li>
+		</value>
+	</Operation>
+
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/PawnKindDef[defName="Grenadier_Tox"]</xpath>
 		<value>
 			<combatPower>200</combatPower>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/PawnKindDef[defName="Grenadier_Tox"]</xpath>
+		<value>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>6</min>
+					<max>14</max>
+				</primaryMagazineCount>
+			</li>
 		</value>
 	</Operation>
 
@@ -153,28 +178,36 @@
 
 	<!-- ========== Yttakin ========== -->
 	
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/PawnKindDef[defName="Drifter_Yttakin"]</xpath>
 		<value>
 			<weaponMoney>100~500</weaponMoney>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/PawnKindDef[defName="Mercenary_Heavy_Yttakin"]</xpath>
 		<value>
 			<weaponMoney>1800~2200</weaponMoney>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/PawnKindDef[defName="Mercenary_Sniper_Yttakin"]</xpath>
 		<value>
 			<weaponMoney>1200~1800</weaponMoney>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/PawnKindDef[defName="Mercenary_Elite_Yttakin"]</xpath>
 		<value>
 			<weaponMoney>2300~3600</weaponMoney>
+            <apparelTags Inherit="False">
+              <li>IndustrialMilitaryBasic</li>
+              <li>IndustrialMilitaryAdvanced</li>
+              <li>BeltDefensePop</li>
+            </apparelTags>
+            <weaponTags Inherit="False">
+              <li>RF3</li>
+            </weaponTags>
 		</value>
 	</Operation>
 
@@ -197,6 +230,25 @@
 			</weaponTags>
 		</value>
 	</Operation>
+
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/PawnKindDef[defName="Mercenary_Gunner_Pig"]</xpath>
+        <value>
+			<weaponTags Inherit="False">
+				<li>RF1</li>
+				<li>PT1</li>
+				<li>PT2</li>
+				<li>SMG1</li>
+				<li>SMG2</li>
+			</weaponTags>
+			<apparelTags Inherit="False">
+			  <li>IndustrialBasic</li>
+			  <li>IndustrialMilitaryBasic</li>
+			  <li>Outlander</li>
+			  <li>BanditsLight</li>
+			</apparelTags>
+        </value>
+    </Operation>
 
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/PawnKindDef[defName="Mercenary_Elite_Pig"]</xpath>
