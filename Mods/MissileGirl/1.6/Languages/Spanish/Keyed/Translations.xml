@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
     <!-- General -->
     <MissileGirl.Settings>Configuración</MissileGirl.Settings>
@@ -24,9 +24,7 @@
         mensaje y seguir adelante!
     </MissileGirl.IncompatibilityWindow.Disclaimer>
     <MissileGirl.Alert_StatsLearning.Label>El modo adaptativo está encendido</MissileGirl.Alert_StatsLearning.Label>
-    <MissileGirl.Alert_StatsLearning.Explanation>El modo adaptativo lleva encendido {0} minutos! Se recomienda que lo
-        dejes encendido durante {1} minutos por cada nueva partida o cuando cambies algún mod.
-    </MissileGirl.Alert_StatsLearning.Explanation>
+    <MissileGirl.Alert_StatsLearning.Explanation>El modo adaptativo lleva encendido {0} minutos.\n\nMientras está encendido, MissileGirl mide con qué frecuencia cambia cada estadística y ajusta cuánto tiempo se puede conservar su valor en caché. De esto depende cuánto acelera la caché el juego y si muestra valores desactualizados.\n\nSe recomienda dejarlo encendido durante {1} minutos en cada nueva partida y después de cambiar tus mods.</MissileGirl.Alert_StatsLearning.Explanation>
     <MissileGirl.AdaptiveAlert.Label>Habilitar la alerta del modo adaptativo</MissileGirl.AdaptiveAlert.Label>
     <MissileGirl.AdaptiveAlert.Description>Deshabilita esto si no quieres la alerta del modo adaptativo en tu lista de
         alertas.
