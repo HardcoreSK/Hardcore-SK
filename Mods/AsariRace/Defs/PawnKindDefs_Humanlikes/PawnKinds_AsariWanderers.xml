@@ -10,7 +10,7 @@
 				</categories>
 			</li>
 		</backstoryFilters>		
-		<defaultFactionType>AsariHunters</defaultFactionType>
+		<defaultFactionDef>AsariHunters</defaultFactionDef>
 		<isFighter>true</isFighter>
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
@@ -48,6 +48,7 @@
 	<!-- Villager Base -->
 	<PawnKindDef Name="AsariVillager" ParentName="AsariVillagerBase">
 		<defName>AsariVillager</defName>
+		<label>villager</label>
 		<combatPower>180</combatPower>
 		<apparelRequired>
 			<li>Apparel_MundaneShirt</li>
@@ -82,9 +83,18 @@
 	<!-- Refugee -->
 	<PawnKindDef ParentName="AsariVillagerBase">
 		<defName>AsariRefugee</defName>
+		<label>refugee</label>
+		<backstoryFilters Inherit="False" IsNull="True" />
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Asaris</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<isFighter>false</isFighter>
 		<combatPower>160</combatPower>
-		<defaultFactionType />
+		<defaultFactionDef />
 		<apparelRequired>
 			<li>Apparel_MundaneShirt</li>
 		</apparelRequired>
@@ -205,7 +215,7 @@
 							<max>150</max>
 						</sidearmMoney>
 						<weaponTags>
-							<li>GrenadeFlashbang</li>
+							<li>CE_GrenadeFlashbang</li>
 						</weaponTags>
 						<magazineCount>
 							<min>1</min>
