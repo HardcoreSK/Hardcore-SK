@@ -6,7 +6,7 @@
     <value Merge="true">
       <label>Mechanoid hive</label>
       <description>A hive of ancient self-replicating machines.</description>
-      <raidCommonalityFromPointsCurve>
+      <raidCommonalityFromPointsCurve DeepReplace="true">
         <points>
           <li>(0, 0.1)</li>
           <li>(5000, 0.3)</li>
@@ -20,12 +20,12 @@
       <canSiege>false</canSiege>
       <canUseAvoidGrid>true</canUseAvoidGrid>
       <earliestRaidDays>160</earliestRaidDays>
-      <maxPawnCostPerTotalPointsCurve>
+      <maxPawnCostPerTotalPointsCurve DeepReplace="true">
         <points>
           <li>(100000,20000)</li>
         </points>
       </maxPawnCostPerTotalPointsCurve>
-      <pawnGroupMakers>
+      <pawnGroupMakers DeepReplace="true">
         <li>
 		  <!-- All types-->
           <kindDef>Combat</kindDef>
