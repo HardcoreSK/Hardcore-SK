@@ -36,8 +36,8 @@
         <xpath>Defs/StatDef[defName="PlantWorkSpeed"]/parts</xpath>
         <value>
             <li Class="SurvivalToolsLite.StatPart_SurvivalTool">
-                <noToolStatFactor>0.5</noToolStatFactor>
-                <noToolStatFactorHardcore>0.3</noToolStatFactorHardcore>
+                <noToolStatFactor>0.4</noToolStatFactor>
+                <noToolStatFactorHardcore>0.2</noToolStatFactorHardcore>
             </li>
         </value>
     </Operation>
@@ -70,8 +70,8 @@
         <xpath>Defs/StatDef[defName="ConstructionSpeed"]/parts</xpath>
         <value>
             <li Class="SurvivalToolsLite.StatPart_SurvivalTool">
-                <noToolStatFactor>0.8</noToolStatFactor>
-                <noToolStatFactorHardcore>0.6</noToolStatFactorHardcore>
+                <noToolStatFactor>0.5</noToolStatFactor>
+                <noToolStatFactorHardcore>0.3</noToolStatFactorHardcore>
             </li>
         </value>
     </Operation>
@@ -96,8 +96,8 @@
         <value>
             <parts>
                 <li Class="SurvivalToolsLite.StatPart_SurvivalTool">
-                    <noToolStatFactor>0.8</noToolStatFactor>
-                    <noToolStatFactorHardcore>0.5</noToolStatFactorHardcore>
+                    <noToolStatFactor>0.4</noToolStatFactor>
+                    <noToolStatFactorHardcore>0.25</noToolStatFactorHardcore>
                 </li>
             </parts>
             <postProcessCurve>
@@ -206,8 +206,8 @@
         <xpath>Defs/StatDef[defName="MedicalOperationSpeed"]/parts</xpath>
         <value>
             <li Class="SurvivalToolsLite.StatPart_SurvivalTool">
-                <noToolStatFactor>0.5</noToolStatFactor>
-                <noToolStatFactorHardcore>0</noToolStatFactorHardcore>
+                <noToolStatFactor>0.65</noToolStatFactor>
+                <noToolStatFactorHardcore>0.05</noToolStatFactorHardcore>
             </li>
         </value>
     </Operation>
@@ -263,8 +263,8 @@
                         <xpath>Defs/StatDef[defName="CookSpeed"]/parts</xpath>
                         <value>
                             <li Class="SurvivalToolsLite.StatPart_SurvivalTool">
-                                <noToolStatFactor>0.8</noToolStatFactor>
-                                <noToolStatFactorHardcore>0.6</noToolStatFactorHardcore>
+                                <noToolStatFactor>0.4</noToolStatFactor>
+                                <noToolStatFactorHardcore>0.3</noToolStatFactorHardcore>
                             </li>
                         </value>
                     </li>
@@ -288,8 +288,8 @@
                         <xpath>Defs/StatDef[defName="ButcheryFleshSpeed"]/parts</xpath>
                         <value>
                             <li Class="SurvivalToolsLite.StatPart_SurvivalTool">
-                                <noToolStatFactor>0.7</noToolStatFactor>
-                                <noToolStatFactorHardcore>0.6</noToolStatFactorHardcore>
+                                <noToolStatFactor>0.35</noToolStatFactor>
+                                <noToolStatFactorHardcore>0.3</noToolStatFactorHardcore>
                             </li>
                         </value>
                     </li>
