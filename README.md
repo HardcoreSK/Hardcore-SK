@@ -1,4 +1,4 @@
-# Rimworld Hardcore SK v.1.6 (WIP)
+# Rimworld Hardcore SK v.1.6
 
 [![Logo](https://i.imgur.com/WP7w2sM.png)](https://github.com/skyarkhangel/Hardcore-SK)
 <!-- you cant center markdown images -->
@@ -13,7 +13,8 @@ The idea for this project came to me after playing with mod packs. I discovered 
 
 The focus of Hardcore SK is to add a growing complexity to gameplay while immersing the player deep in the story. What awaits you is an improved and elaborate production chain, over 100 technologies to research, new events and challenges to face, impressive new foods, wardrobe and arsenal, enhanced AI features, quality of life options, and virtually everything retextured. As soon as you make landfall, you'll understand immediately that this is no longer just modded Rimworld - this is Hardcore SK. The campfire welcomes you.
 
-This project has language support for English, Russian, and partial support for Spanish and Korean. Chinese translation available via separate mods: [Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2469653495) & [Everything else](https://steamcommunity.com/sharedfiles/filedetails/?id=2469654237).
+This project has language support for English, Russian, and partial support for Spanish, Korean, Ukrainian and Portuguese.
+Outdated Chinese translation available via separate mods: [Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2469653495) & [Everything else](https://steamcommunity.com/sharedfiles/filedetails/?id=2469654237).
 
 ## DOWNLOADING
 

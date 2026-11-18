@@ -43,7 +43,7 @@
 		<settlementGenerationWeight>0.4</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<canMakeRandomly>true</canMakeRandomly>
-		<raidCommonalityFromPointsCurve>
+		<raidCommonalityFromPointsCurve Inherit="False">
 			<points>
 				<li>(40, 3)</li>
 				<li>(400, 1)</li>
@@ -97,7 +97,7 @@
 			<li>Base_Outlander_Standard</li>
 		</baseTraderKinds>
 		<allowedArrivalTemperatureRange>-100~100</allowedArrivalTemperatureRange>
-		<maxPawnCostPerTotalPointsCurve>
+		<maxPawnCostPerTotalPointsCurve Inherit="False">
 			<points>
 				<li>(0,35)</li>
 				<li>(70, 50)</li>

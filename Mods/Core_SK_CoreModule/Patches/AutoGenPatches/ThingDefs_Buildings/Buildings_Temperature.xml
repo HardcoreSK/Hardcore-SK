@@ -224,8 +224,6 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="Vent"]</xpath>
         <value>
-            <label>closable vent</label>
-            <thingClass>SK.Building_ClosableVent</thingClass>
             <graphicData>
                 <texPath>Things/Building/Temperature/Vent/ActiveVent</texPath>
                 <graphicClass>Graphic_Multi</graphicClass>
@@ -237,11 +235,7 @@
                 </damageData>
             </graphicData>
             <altitudeLayer>BuildingOnTop</altitudeLayer>
-            <passability>PassThroughOnly</passability>
             <clearBuildingArea>false</clearBuildingArea>
-            <blockLight>false</blockLight>
-            <castEdgeShadows>false</castEdgeShadows>
-            <fillPercent>1</fillPercent>
             <statBases Merge="true">
                 <WorkToBuild>700</WorkToBuild>
             </statBases>
@@ -255,24 +249,16 @@
                 <Mechanism>1</Mechanism>
             </costList>
             <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-            <placeWorkers>
-                <li>PlaceWorker_Vent</li>
+            <placeWorkers Merge="True">
                 <li>SK.PlaceWorker_OnlyOnWall</li>
             </placeWorkers>
             <modExtensions>
                 <li Class="SK.WallAttachmentExtension"/>
             </modExtensions>
-            <building>
-                <canPlaceOverWall>true</canPlaceOverWall>
-                <canExchangeVacuum>true</canExchangeVacuum>
+            <building Merge="True">
                 <isEdifice>true</isEdifice>
             </building>
-            <comps>
-                <li Class="CompProperties_Flickable">
-                    <commandTexture>UI/Commands/Vent</commandTexture>
-                    <commandLabelKey>CommandDesignateOpenCloseVentLabel</commandLabelKey>
-                    <commandDescKey>CommandDesignateOpenCloseVentDesc</commandDescKey>
-                </li>
+            <comps Merge="True">
                 <li Class="SK.CompProperties_RestrictedPlacement">
                     <compClass>SK.CompRestrictedPlacement</compClass>
                 </li>

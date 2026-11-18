@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<GeneDef>
+	<GeneDef ParentName="GeneHairStyleBase">
 		<defName>Hair_Asari</defName>
 		<label>asari scalp-crests</label>
 		<labelShortAdj>asari</labelShortAdj>
 		<description>In the place of head hair, asari possess semi-flexible, cartilage-based scalp-crests that grow into shape. These structures are rigid, and do not "flop around" as some believe.</description>
 		<iconPath>UI/Icons/Xenotypes/Asari</iconPath>
+		<iconColor>(1, 1, 1)</iconColor>
 		<forcedHair>Asari</forcedHair>
 		<displayOrderInCategory>97</displayOrderInCategory>
 		<symbolPack>

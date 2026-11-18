@@ -32,14 +32,14 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Asari"]/statBases/MoveSpeed</xpath>
 		<value>
-			<MoveSpeed>4.85</MoveSpeed>
+			<MoveSpeed>4.8</MoveSpeed>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Asari"]/statBases/ComfyTemperatureMin</xpath>
 		<value>
-			<ComfyTemperatureMin>12</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-2</ComfyTemperatureMin>
 		</value>
 	</Operation>
 
@@ -74,14 +74,14 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Asari"]/statBases/GermResistance</xpath>
 		<value>
-			<GermResistance>0.05</GermResistance>
+			<GermResistance>0.02</GermResistance>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Asari"]/statBases/GermContainment</xpath>
 		<value>
-			<GermContainment>0.05</GermContainment>
+			<GermContainment>0.03</GermContainment>
 		</value>
 	</Operation>
 

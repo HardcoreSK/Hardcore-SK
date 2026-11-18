@@ -19,8 +19,30 @@
             <closeSound>GameStartSting</closeSound>
           </li>
           <li Class="SK.Events.ScenPart_Corpses">
-            <def>StartwithCorpses</def>
+            <def>StartWithCorpses</def>
             <visible>false</visible>
+            <groups>
+              <li>
+                <pawnKinds>
+                  <li>Muffalo</li>
+                  <li>Caribou</li>
+                  <li>Deer</li>
+                </pawnKinds>
+                <count>3~6</count>
+                <rotDays>5~20</rotDays>
+              </li>
+              <li>
+                <pawnKinds>
+                  <li>Tribal_Warrior</li>
+                </pawnKinds>
+                <faction>TribeRough</faction>
+                <count>6</count>
+                <rotDays>20</rotDays>
+                <scatterRadius>2</scatterRadius>
+                <nearPlayerStart>true</nearPlayerStart>
+                <stripGear>true</stripGear>
+              </li>
+            </groups>
           </li>
           <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
             <def>ConfigPage_ConfigureStartingPawns</def>

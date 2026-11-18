@@ -27,7 +27,7 @@
 		  <Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.03</Starjack>
         </xenotypeChances>
       </xenotypeSet>
-      <raidCommonalityFromPointsCurve>
+      <raidCommonalityFromPointsCurve DeepReplace="true">
         <points>
           <li>(0, 0.01)</li>
           <li>(700, 1.0)</li>
@@ -37,7 +37,7 @@
           <li>(15000, 0.1)</li>
         </points>
       </raidCommonalityFromPointsCurve>
-      <maxPawnCostPerTotalPointsCurve>
+      <maxPawnCostPerTotalPointsCurve DeepReplace="true">
         <points>
           <li>(800, 125)</li>
           <li>(3000, 130)</li>

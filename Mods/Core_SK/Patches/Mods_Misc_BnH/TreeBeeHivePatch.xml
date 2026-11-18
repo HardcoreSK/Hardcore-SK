@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Misc. Bees'n'Honey</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+            <li Class="SK.PatchOperationReplaceExtended">
+                <xpath>Defs/ThingDef[defName="TreeBeeHive"]</xpath>
+                <value Merge="true">
+                    <thingCategories>
+                        <li>Plants</li>
+                    </thingCategories>
+                    <!-- Plant.Print scales the mesh with growth; RealtimeOnly bypasses that path. -->
+                    <drawerType>MapMeshOnly</drawerType>
+                    <graphicData>
+                        <drawSize>(1,1)</drawSize>
+                        <shaderType>CutoutPlant</shaderType>
+                    </graphicData>
+                    <!-- Explicit child overrides; range matches the resolved HSK oak in Unified.xml.
+                         Merge preserves queen-bee harvesting, graphics and all biome weights. -->
+                    <plant>
+                        <visualSizeRange>1.2~3.0</visualSizeRange>
+                        <topWindExposure>0.25</topWindExposure>
+                        <harvestTag>Wood</harvestTag>
+                    </plant>
+                </value>
+            </li>
+            <!-- RimWorld - Odyssey DLC -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs[BiomeDef[defName='Grasslands']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(Grasslands)]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs[BiomeDef[defName='Grasslands']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(Grasslands)]</xpath>
+                    <value>
+                        <Grasslands>0.006</Grasslands>
+                    </value>
+                </match>
+            </li>
+
+            <!-- Core SK - archipelagos -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs[BiomeDef[defName='BorealArchipelago']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(BorealArchipelago)]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs[BiomeDef[defName='BorealArchipelago']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(BorealArchipelago)]</xpath>
+                    <value>
+                        <BorealArchipelago>0.015</BorealArchipelago>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs[BiomeDef[defName='TundraArchipelago']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TundraArchipelago)]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs[BiomeDef[defName='TundraArchipelago']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TundraArchipelago)]</xpath>
+                    <value>
+                        <TundraArchipelago>0.009</TundraArchipelago>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs[BiomeDef[defName='ColdBogArchipelago']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(ColdBogArchipelago)]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs[BiomeDef[defName='ColdBogArchipelago']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(ColdBogArchipelago)]</xpath>
+                    <value>
+                        <ColdBogArchipelago>0.018</ColdBogArchipelago>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs[BiomeDef[defName='TemperateArchipelago']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TemperateArchipelago)]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs[BiomeDef[defName='TemperateArchipelago']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TemperateArchipelago)]</xpath>
+                    <value>
+                        <TemperateArchipelago>0.025</TemperateArchipelago>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs[BiomeDef[defName='TemperateSwampArchipelago']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TemperateSwampArchipelago)]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs[BiomeDef[defName='TemperateSwampArchipelago']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TemperateSwampArchipelago)]</xpath>
+                    <value>
+                        <TemperateSwampArchipelago>0.023</TemperateSwampArchipelago>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs[BiomeDef[defName='TropicalArchipelago']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TropicalArchipelago)]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs[BiomeDef[defName='TropicalArchipelago']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TropicalArchipelago)]</xpath>
+                    <value>
+                        <TropicalArchipelago>0.029</TropicalArchipelago>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs[BiomeDef[defName='TropicalSwampArchipelago']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TropicalSwampArchipelago)]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs[BiomeDef[defName='TropicalSwampArchipelago']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TropicalSwampArchipelago)]</xpath>
+                    <value>
+                        <TropicalSwampArchipelago>0.027</TropicalSwampArchipelago>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs[BiomeDef[defName='BorealArchipelago_Fresh']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(BorealArchipelago_Fresh)]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs[BiomeDef[defName='BorealArchipelago_Fresh']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(BorealArchipelago_Fresh)]</xpath>
+                    <value>
+                        <BorealArchipelago_Fresh>0.015</BorealArchipelago_Fresh>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs[BiomeDef[defName='TundraArchipelago_Fresh']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TundraArchipelago_Fresh)]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs[BiomeDef[defName='TundraArchipelago_Fresh']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TundraArchipelago_Fresh)]</xpath>
+                    <value>
+                        <TundraArchipelago_Fresh>0.009</TundraArchipelago_Fresh>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs[BiomeDef[defName='ColdBogArchipelago_Fresh']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(ColdBogArchipelago_Fresh)]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs[BiomeDef[defName='ColdBogArchipelago_Fresh']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(ColdBogArchipelago_Fresh)]</xpath>
+                    <value>
+                        <ColdBogArchipelago_Fresh>0.018</ColdBogArchipelago_Fresh>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs[BiomeDef[defName='TemperateArchipelago_Fresh']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TemperateArchipelago_Fresh)]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs[BiomeDef[defName='TemperateArchipelago_Fresh']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TemperateArchipelago_Fresh)]</xpath>
+                    <value>
+                        <TemperateArchipelago_Fresh>0.025</TemperateArchipelago_Fresh>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs[BiomeDef[defName='TemperateSwampArchipelago_Fresh']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TemperateSwampArchipelago_Fresh)]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs[BiomeDef[defName='TemperateSwampArchipelago_Fresh']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TemperateSwampArchipelago_Fresh)]</xpath>
+                    <value>
+                        <TemperateSwampArchipelago_Fresh>0.023</TemperateSwampArchipelago_Fresh>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs[BiomeDef[defName='TropicalArchipelago_Fresh']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TropicalArchipelago_Fresh)]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs[BiomeDef[defName='TropicalArchipelago_Fresh']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TropicalArchipelago_Fresh)]</xpath>
+                    <value>
+                        <TropicalArchipelago_Fresh>0.029</TropicalArchipelago_Fresh>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs[BiomeDef[defName='TropicalSwampArchipelago_Fresh']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TropicalSwampArchipelago_Fresh)]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs[BiomeDef[defName='TropicalSwampArchipelago_Fresh']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(TropicalSwampArchipelago_Fresh)]</xpath>
+                    <value>
+                        <TropicalSwampArchipelago_Fresh>0.027</TropicalSwampArchipelago_Fresh>
+                    </value>
+                </match>
+            </li>
+
+            <!-- HMC Biomes (arpomo6.hmc.biomes) -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs[BiomeDef[defName='HmcRedwoodForest']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(HmcRedwoodForest)]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs[BiomeDef[defName='HmcRedwoodForest']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(HmcRedwoodForest)]</xpath>
+                    <value>
+                        <HmcRedwoodForest>0.025</HmcRedwoodForest>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs[BiomeDef[defName='HmcIronWoodForest']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(HmcIronWoodForest)]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs[BiomeDef[defName='HmcIronWoodForest']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(HmcIronWoodForest)]</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.015</HmcIronWoodForest>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs[BiomeDef[defName='HmcSavanna']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(HmcSavanna)]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs[BiomeDef[defName='HmcSavanna']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(HmcSavanna)]</xpath>
+                    <value>
+                        <HmcSavanna>0.009</HmcSavanna>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs[BiomeDef[defName='HmcBambooGrove']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(HmcBambooGrove)]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs[BiomeDef[defName='HmcBambooGrove']]/ThingDef[defName='TreeBeeHive']/plant/wildBiomes[not(HmcBambooGrove)]</xpath>
+                    <value>
+                        <HmcBambooGrove>0.018</HmcBambooGrove>
+                    </value>
+                </match>
+            </li>
+        </operations>
+        </match>
+    </Operation>
+</Patch>

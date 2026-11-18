@@ -51,6 +51,7 @@
                 <thinkTreeMain>Mechanoid</thinkTreeMain>
                 <baseBodySize>1.1</baseBodySize>
                 <baseHealthScale>3.2</baseHealthScale>
+                <mechWeightClass>Medium</mechWeightClass>
                 <lifeStageAges DeepReplace="true">
                     <li>
                         <def>MechanoidFullyFormed</def>
@@ -94,6 +95,7 @@
                 <thinkTreeMain>Mechanoid</thinkTreeMain>
                 <baseBodySize>1.0</baseBodySize>
                 <baseHealthScale>2.8</baseHealthScale>
+                <mechWeightClass>Medium</mechWeightClass>
                 <soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
                 <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
                 <soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
@@ -113,6 +115,9 @@
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/ThingDef[defName="Mech_Termite"]</xpath>
         <value Merge="true">
+            <race>
+                <mechWeightClass>Medium</mechWeightClass>
+            </race>
             <butcherProducts DeepReplace="true">
                 <Plasteel>3</Plasteel>
                 <CarbonAlloy>2</CarbonAlloy>
@@ -123,8 +128,5 @@
                 </li>
             </modExtensions>
         </value>
-    </Operation>
-    <Operation Class="PatchOperationRemove">
-        <xpath>Defs/ThingDef[defName="Mech_Termite"]/race/mechWeightClass</xpath>
     </Operation>
 </Patch>

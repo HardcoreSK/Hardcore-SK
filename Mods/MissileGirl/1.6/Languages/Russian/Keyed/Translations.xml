@@ -1,59 +1,85 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-    <MissileGirl.Settings.PleaseUnpause>Снимите игру с паузы... MissileGirl готовится к старту!
-    </MissileGirl.Settings.PleaseUnpause>
-    <MissileGirl.Settings.PleaseWait>Пожалуйста подождите... MissileGirl готовится к старту!
-    </MissileGirl.Settings.PleaseWait>
-    <MissileGirl.IncompatibilityWindow.Description>Найдены моды несовместимые с MissileGirl. Эта проблема может
-        повредить вашу сохраненку. Отключите MissileGirl или продолжайте на свой страх и риск. К упомянутым модам
-        относятся:\n
-    </MissileGirl.IncompatibilityWindow.Description>
-    <MissileGirl.IUnderstand>Я понял! Продолжаем!</MissileGirl.IUnderstand>
-    <MissileGirl.ChangeBack>Вы всегда можете изменить свой модлист и выключить MissileGirl!</MissileGirl.ChangeBack>
-    <MissileGirl.OpenModList>Я понял! Открой мод менеджер!</MissileGirl.OpenModList>
-    <MissileGirl.Disclaimer>Разработчики MissileGirl не смогут Вам помочь если Вы проигнорируете данное
-        предупреждение!
-    </MissileGirl.Disclaimer>
+    <MissileGirl.ModNameShort>Missile Girl</MissileGirl.ModNameShort>
+    <MissileGirl.Settings>Настройки</MissileGirl.Settings>
+    <MissileGirl.Settings.Debugging>Настройки отладки</MissileGirl.Settings.Debugging>
+    <MissileGirl.Collapsible.Expand>[Развернуть]</MissileGirl.Collapsible.Expand>
+    <MissileGirl.Collapsible.Hide>[Свернуть]</MissileGirl.Collapsible.Hide>
+    <MissileGirl.Selection>Выбрано: {0}</MissileGirl.Selection>
+    <MissileGirl.ResetDefault>Сбросить по умолчанию</MissileGirl.ResetDefault>
+    <MissileGirl.Settings.PleaseUnpause>Снимите игру с паузы... MissileGirl готовится к старту!</MissileGirl.Settings.PleaseUnpause>
+    <MissileGirl.Settings.PleaseWait>Пожалуйста подождите... MissileGirl готовится к старту!</MissileGirl.Settings.PleaseWait>
+    <MissileGirl.IncompatibilityWindow.Title>У вас установлены несовместимые моды</MissileGirl.IncompatibilityWindow.Title>
+    <MissileGirl.IncompatibilityWindow.Continue>Да, я понимаю! Продолжить!</MissileGirl.IncompatibilityWindow.Continue>
+    <MissileGirl.IncompatibilityWindow.OpenModManager>Открыть менеджер модов</MissileGirl.IncompatibilityWindow.OpenModManager>
+    <MissileGirl.IncompatibilityWindow.Disclaimer>Команда MissileGirl не оказывает поддержку, если вы проигнорируете это сообщение или продолжите игру!</MissileGirl.IncompatibilityWindow.Disclaimer>
+    <MissileGirl.IncompatibilityWindow.Description>Найдены моды несовместимые с MissileGirl. Эта проблема может повредить ваше сохранение. Отключите MissileGirl или продолжайте на свой страх и риск. К упомянутым модам относятся:\n</MissileGirl.IncompatibilityWindow.Description>
+    <MissileGirl.Alert_StatsLearning.Label>Адаптивный режим</MissileGirl.Alert_StatsLearning.Label>
+    <MissileGirl.Alert_StatsLearning.Explanation>Адаптивный режим активен уже {0} мин.\n\nПока он включён, MissileGirl замеряет, как часто меняется каждая характеристика, и подбирает, как долго можно хранить её значение в кэше. От этого зависит, насколько кэш ускоряет игру и не показывает ли он устаревшие значения.\n\nРекомендуется оставлять режим включённым на {1} мин. в каждом новом сохранении и после изменения списка модов.</MissileGirl.Alert_StatsLearning.Explanation>
+    <MissileGirl.AdaptiveAlert.Label>Показывать уведомление об адаптивном режиме</MissileGirl.AdaptiveAlert.Label>
+    <MissileGirl.AdaptiveAlert.Description>Отключите, если не хотите видеть уведомление об адаптивном режиме в списке уведомлений.</MissileGirl.AdaptiveAlert.Description>
     <MissileGirl.Unpause>Пожалуйста снимите игру с паузы!</MissileGirl.Unpause>
     <MissileGirl.Warming>готовится к старту! Пожалуйста подождите...</MissileGirl.Warming>
     <MissileGirl.HideProgressBar>Вы можете спрятать\выключить в настройках MissileGirl</MissileGirl.HideProgressBar>
     <!-- MissileGirl MissileGirl.TabContent_Settings -->
     <MissileGirl.MissileGirl>MissileGirl</MissileGirl.MissileGirl>
     <MissileGirl.Tab>Главная</MissileGirl.Tab>
-    <MissileGirl.Enable>Главная</MissileGirl.Enable>
+    <MissileGirl.FixBeauty>Динамический радиус оценки красоты</MissileGirl.FixBeauty>
+    <MissileGirl.FixBeauty.Tip>Радиус оценки красоты будет меняться в зависимости от того, чем занят поселенец. Используйте на свой страх и риск.</MissileGirl.FixBeauty.Tip>
+    <MissileGirl.DeepDrillOptimize>Исправить лаги глубинного бура</MissileGirl.DeepDrillOptimize>
+    <MissileGirl.DeepDrillOptimize.Tip>Уменьшает лаги от глубинного бура, когда под ним нет ресурсов.</MissileGirl.DeepDrillOptimize.Tip>
+    <MissileGirl.TemperatureTickCheck>Кэшировать проверку температуры</MissileGirl.TemperatureTickCheck>
+    <MissileGirl.TemperatureTickCheck.Tip>Проверка температуры поселенца выполняется не чаще одного раза за тик.</MissileGirl.TemperatureTickCheck.Tip>
+    <MissileGirl.BuildingRepairCheck>Проверка возможности ремонта построек</MissileGirl.BuildingRepairCheck>
+    <MissileGirl.BuildingRepairCheck.Tip>Сразу прерывает проверку, если постройку нельзя отремонтировать или у неё нет прочности.</MissileGirl.BuildingRepairCheck.Tip>
+    <MissileGirl.NotifyPawnDamage>Оптимизация оповещений об уроне поселенцам</MissileGirl.NotifyPawnDamage>
+    <MissileGirl.NotifyPawnDamage.Tip>Уменьшает подтормаживания, отсекая поток оповещений об уроне, если поселенец участвует в штурме или подкопе.</MissileGirl.NotifyPawnDamage.Tip>
+    <MissileGirl.GenMapSize>Переопределение размера создаваемой карты</MissileGirl.GenMapSize>
+    <MissileGirl.GenMapSize.Text>Задайте размер и форму следующей создаваемой карты (после её создания настройка вернётся к значению по умолчанию).</MissileGirl.GenMapSize.Text>
+    <MissileGirl.GenMapSize.Note>Обратите внимание: ширина и высота новой карты будут кратны высоте региона (округление выполняется автоматически).</MissileGirl.GenMapSize.Note>
+    <MissileGirl.GenMapSize.Mode.Custom>Свой</MissileGirl.GenMapSize.Mode.Custom>
+    <MissileGirl.GenMapSize.Mode.Vanilla>Стандартный</MissileGirl.GenMapSize.Mode.Vanilla>
+    <MissileGirl.GenMapSize.Width>Ширина</MissileGirl.GenMapSize.Width>
+    <MissileGirl.GenMapSize.Height>Высота</MissileGirl.GenMapSize.Height>
+    <MissileGirl.Close>Закрыть</MissileGirl.Close>
+    <MissileGirl.Enable>Включить</MissileGirl.Enable>
+    <MissileGirl.TranslationCaching>Включить кэширование размеров текста</MissileGirl.TranslationCaching>
+    <MissileGirl.Experimental>Экспериментальные функции</MissileGirl.Experimental>
+    <MissileGirl.Experimental.Description>Здесь можно включить бета-функции MissileGirl.\nВнимание: не делайте этого, если не знаете, что делаете.</MissileGirl.Experimental.Description>
+    <MissileGirl.Experimental.OptInBeta>Включить бета-функции MissileGirl</MissileGirl.Experimental.OptInBeta>
+    <MissileGirl.EnableGagarin>Включить сокращение времени загрузки (игра загружается быстрее)</MissileGirl.EnableGagarin>
+    <MissileGirl.EnableGagarin.Tip>MissileGirl попытается сократить время загрузки, кэшируя операции XML-патчей. После включения этой настройки перезапустите игру дважды, чтобы MissileGirl создал кэш. В зависимости от количества и состава модов загрузка может ускориться на несколько минут. Рекомендуется при использовании модов с большим числом XML-патчей, например Combat Extended.</MissileGirl.EnableGagarin.Tip>
     <MissileGirl.ShowIcon>Показать кнопку MissileGirl</MissileGirl.ShowIcon>
-    <MissileGirl.ShowIcon.Description>В связи с техническими ограничениями игры некоторые опции недоступны из настроек
-        меню.
-    </MissileGirl.ShowIcon.Description>
+    <MissileGirl.ShowIcon.Description>В связи с техническими ограничениями игры некоторые опции недоступны из настроек меню.</MissileGirl.ShowIcon.Description>
     <MissileGirl.ProgressBar>Показать процесс подготовки к запуску при старте</MissileGirl.ProgressBar>
-    <MissileGirl.ProgressBar.Description>Показывает шкалу подготовки к запуску мода при загрузке новой карты\игры.
-    </MissileGirl.ProgressBar.Description>
+    <MissileGirl.ProgressBar.Pause>Ставить на паузу после подготовки</MissileGirl.ProgressBar.Pause>
+    <MissileGirl.ProgressBar.Description>Показывает шкалу подготовки к запуску мода при загрузке новой карты или игры.</MissileGirl.ProgressBar.Description>
     <MissileGirl.Junk>Мусор</MissileGirl.Junk>
     <MissileGirl.CorpseRemoval>Включить автоматическое удаление трупов.</MissileGirl.CorpseRemoval>
-    <MissileGirl.CorpseRemoval.Description>Постепенно удаляет трупы длительное время находящиеся за пределами экрана и
-        вдали от вашей базы (чтобы не нарушать игровой баланс).
-    </MissileGirl.CorpseRemoval.Description>
+    <MissileGirl.CorpseRemoval.Description>Постепенно удаляет трупы длительное время находящиеся за пределами экрана и вдали от вашей базы (чтобы не нарушать игровой баланс).</MissileGirl.CorpseRemoval.Description>
+    <MissileGirl.GameSpeed>Настройки скорости игры</MissileGirl.GameSpeed>
+    <MissileGirl.DisableForcedSlowdowns>Отключить принудительное замедление</MissileGirl.DisableForcedSlowdowns>
+    <MissileGirl.DisableForcedSlowdowns.Description>Отключает принудительное замедление игры при игровых событиях. Выключите эту настройку, если используете SmartSpeed.</MissileGirl.DisableForcedSlowdowns.Description>
     <MissileGirl.StatCacheSettings>Настройки кэширования статистик</MissileGirl.StatCacheSettings>
     <MissileGirl.Adaptive>Адаптивный режим</MissileGirl.Adaptive>
-    <MissileGirl.Adaptive.Description>Необходимо включить на 30 минут если: вы только добавили мод, изменили модлист или
-        начали новую игру.
-    </MissileGirl.Adaptive.Description>
-    <MissileGirl.EnableGearStatCaching>Включить кэширование статов снаряжения</MissileGirl.EnableGearStatCaching>
+    <MissileGirl.Adaptive.Description>Необходимо включить на 30 минут если: вы только что добавили мод, изменили список модов или начали новую игру.</MissileGirl.Adaptive.Description>
+    <MissileGirl.EnableGearStatCaching>Включить кэширование статистики снаряжения</MissileGirl.EnableGearStatCaching>
     <MissileGirl.DebuggingOption>Параметры отладки</MissileGirl.DebuggingOption>
-    <MissileGirl.Debugging>Включить дебаг режим</MissileGirl.Debugging>
-    <MissileGirl.Debugging.Description>Только для продвинутых пользователей и моддеров
-    </MissileGirl.Debugging.Description>
+    <MissileGirl.Debugging>Включить режим отладки</MissileGirl.Debugging>
+    <MissileGirl.Debugging.Description>Только для продвинутых пользователей и разработчиков</MissileGirl.Debugging.Description>
+    <MissileGirl.OptimizationSettings>Оптимизации игры</MissileGirl.OptimizationSettings>
 
     <!-- Soyuz Soyuz.TabContent_DilationSettings -->
     <Soyuz.Tab>Настройки замедления времени</Soyuz.Tab>
 
     <!-- Proton Proton.TabContent_Alerts -->
     <Proton.Tab>Настройки уведомлений</Proton.Tab>
-    <Proton.Colored.ActiveNow>Активна сейчас</Proton.Colored.ActiveNow>
-    <Proton.Colored.IgnoredAndBad>Проблемна, но игнорируется</Proton.Colored.IgnoredAndBad>
-    <Proton.Colored.DisabledOrBad>Отключена из-за плохой оптимизации</Proton.Colored.DisabledOrBad>
+    <Proton.Colored.ActiveNow>Активен сейчас</Proton.Colored.ActiveNow>
+    <Proton.Colored.IgnoredAndBad>Проблемный, но игнорируется</Proton.Colored.IgnoredAndBad>
+    <Proton.Colored.DisabledOrBad>Отключён из-за плохой оптимизации</Proton.Colored.DisabledOrBad>
     <Proton.Colored.Ignored>Игнорируется (для важных уведомлений)</Proton.Colored.Ignored>
     <Proton.Enable>Включить контроль уведомлений</Proton.Enable>
+    <Proton.DisalbeAllInfo>Переопределяет систему управления оповещениями, если включён Dub's Performance Analyzer.</Proton.DisalbeAllInfo>
     <Proton.DisableAll.P1>ОТКЛЮЧИТЬ</Proton.DisableAll.P1>
     <Proton.DisableAll.P2>все уведомления</Proton.DisableAll.P2>
     <Proton.Disabled>Контроль выключен</Proton.Disabled>

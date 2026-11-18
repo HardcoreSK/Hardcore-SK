@@ -3,10 +3,10 @@
 
 	<FactionDef ParentName="FactionBase">
 		<defName>AsariHunters</defName>
-		<label>United Asari Republic</label>
-		<description>A fleet of asari ships.\n\nAfter finding themselves in this galaxy without any memorie from where they came from, the asaris are searching the galaxy for who they are and where they came from. Traveling like nomads, they usually dont settle down on planets. They are untrusting of humans, since their technology seems to be far superior.</description>
+		<label>United Asari Fleet</label>
+		<description>The asari space fleet. They arrived here having lost all memory of their homeland — the galaxy in which they were born — and now try by every means to find their place. Traveling like nomads, they usually don't settle on planets. They are distrustful of humans, since their own technology and level of development are far superior.</description>
 		<pawnSingular>asari</pawnSingular>
-		<pawnsPlural>asaris</pawnsPlural>
+		<pawnsPlural>asari</pawnsPlural>
 		<listOrderPriority>49</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
@@ -15,9 +15,8 @@
 		<canSiege>false</canSiege>
 		<autoFlee>true</autoFlee>
 		<canStageAttacks>true</canStageAttacks>
-		<leaderTitle>matriarch</leaderTitle>
+		<leaderTitle>supreme admiral</leaderTitle>
 		<earliestRaidDays>240</earliestRaidDays>
-		<melaninRange>0~1</melaninRange>
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
 			<Baseline_Asari MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Asari>
@@ -122,7 +121,7 @@
 		<pawnGroupMakers>
 			<li>
 				<kindDef>Combat</kindDef>
-				<commonality>10</commonality>
+				<commonality>20</commonality>
 				<options>
 					<AsariEnslaver>25</AsariEnslaver>
 					<AsariHunter>20</AsariHunter>
@@ -133,8 +132,9 @@
 			</li>
 			<li>
 				<kindDef>Combat</kindDef>
-				<commonality>150</commonality>
+				<commonality>80</commonality>
 				<options>
+					<AsariEnslaver>1</AsariEnslaver>
 					<AsariCrewMember>25</AsariCrewMember>
 					<AsariCommando>20</AsariCommando>
 					<AsariInfiltrator>15</AsariInfiltrator>

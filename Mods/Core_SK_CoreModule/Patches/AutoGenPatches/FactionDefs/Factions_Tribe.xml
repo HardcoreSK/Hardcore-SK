@@ -8,7 +8,7 @@
 		<!-- <canMakeRandomly>true</canMakeRandomly> -->
 		<autoFlee>true</autoFlee>
 		<canSiege>false</canSiege>
-		<raidCommonalityFromPointsCurve>
+		<raidCommonalityFromPointsCurve DeepReplace="true">
 			<points>
 				<li>(0, 4)</li>
 				<li>(1000, 3)</li>
@@ -20,7 +20,7 @@
 				<li>(15000, 0.01)</li>
 			</points>
 		</raidCommonalityFromPointsCurve>
-		<maxPawnCostPerTotalPointsCurve>
+		<maxPawnCostPerTotalPointsCurve DeepReplace="true">
 			<points>
 				<li>(0,90)</li>
 				<li>(400, 110)</li> <!-- The player starts with an average of 350 points, ​​lower values are meaningless -->

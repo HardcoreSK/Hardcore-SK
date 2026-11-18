@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Misc. Bees'n'Honey</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAttributeSet">
+                    <xpath>Defs/ResearchProjectDef[defName="Beekeeping"]</xpath>
+                    <attribute>ParentName</attribute>
+                    <value>PrimitiveBase</value>
+                </li>
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ResearchProjectDef[defName="Beekeeping"]</xpath>
+                    <value>
+                        <baseCost>250</baseCost>
+                        <researchViewX>2.00</researchViewX>
+                        <researchViewY>45.00</researchViewY>
+                        <tab>Food_SK</tab>
+                        <prerequisites>
+                            <li>Food_00</li>
+                        </prerequisites>
+                        <tags Merge="True">
+                            <li>NorbalStart</li>
+                            <li>TribalStart</li>
+                        </tags>
+                    </value>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchTabDef[defName="Miscellaneous"]</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

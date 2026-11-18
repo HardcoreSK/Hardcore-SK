@@ -54,11 +54,11 @@
 					<sidearms>
 					<li>
 						<sidearmMoney>
-						<min>80</min>
-						<max>240</max>
+                            <min>80</min>
+                            <max>240</max>
 						</sidearmMoney>
 						<weaponTags>
-						<li>CE_Sidearm_Tribal</li>
+                            <li>CE_Sidearm_Tribal</li>
 						</weaponTags>
 					</li>
 					</sidearms>					
@@ -178,28 +178,36 @@
 
 	<!-- ========== Yttakin ========== -->
 	
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/PawnKindDef[defName="Drifter_Yttakin"]</xpath>
 		<value>
 			<weaponMoney>100~500</weaponMoney>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/PawnKindDef[defName="Mercenary_Heavy_Yttakin"]</xpath>
 		<value>
 			<weaponMoney>1800~2200</weaponMoney>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/PawnKindDef[defName="Mercenary_Sniper_Yttakin"]</xpath>
 		<value>
 			<weaponMoney>1200~1800</weaponMoney>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/PawnKindDef[defName="Mercenary_Elite_Yttakin"]</xpath>
 		<value>
 			<weaponMoney>2300~3600</weaponMoney>
+            <apparelTags Inherit="False">
+              <li>IndustrialMilitaryBasic</li>
+              <li>IndustrialMilitaryAdvanced</li>
+              <li>BeltDefensePop</li>
+            </apparelTags>
+            <weaponTags Inherit="False">
+              <li>RF3</li>
+            </weaponTags>
 		</value>
 	</Operation>
 
@@ -223,58 +231,7 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="Town_Guard_Pig"]</xpath>
-		<value>
-			<li Class="CombatExtended.LoadoutPropertiesExtension">
-				<primaryMagazineCount>
-					<min>18</min>
-					<max>28</max>
-				</primaryMagazineCount>
-				<sidearms>
-				<li>
-					<generateChance>0.20</generateChance>
-					<sidearmMoney>
-						<min>80</min>
-						<max>160</max>
-					</sidearmMoney>
-					<weaponTags>
-						<li>GrenadeTierZero</li>
-						<li>GrenadeTierOne</li>
-					</weaponTags>
-				</li>
-				</sidearms>
-			</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="Town_Trader_Pig"]</xpath>
-		<value>
-			<li Class="CombatExtended.LoadoutPropertiesExtension">
-				<primaryMagazineCount>
-					<min>3</min>
-					<max>5</max>
-				</primaryMagazineCount>
-				<sidearms>
-				<li>
-					<generateChance>0.20</generateChance>
-					<sidearmMoney>
-						<min>80</min>
-						<max>240</max>
-					</sidearmMoney>
-					<weaponTags>
-						<li>GrenadeTierZero</li>
-						<li>GrenadeTierOne</li>
-						<li>CE_AI_Nonlethal</li>
-					</weaponTags>
-				</li>
-				</sidearms>
-			</li>
-		</value>
-	</Operation>
-
-    <!--<Operation Class="SK.PatchOperationReplaceExtended">
+    <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/PawnKindDef[defName="Mercenary_Gunner_Pig"]</xpath>
         <value>
 			<weaponTags Inherit="False">
@@ -291,32 +248,7 @@
 			  <li>BanditsLight</li>
 			</apparelTags>
         </value>
-    </Operation>-->
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="Mercenary_Gunner_Pig"]</xpath>
-		<value>
-			<li Class="CombatExtended.LoadoutPropertiesExtension">
-				<primaryMagazineCount>
-					<min>5</min>
-					<max>7</max>
-				</primaryMagazineCount>
-				<sidearms>
-				<li>
-					<generateChance>0.20</generateChance>
-					<sidearmMoney>
-						<min>80</min>
-						<max>180</max>
-					</sidearmMoney>
-					<weaponTags>
-						<li>GrenadeTierOne</li>
-						<li>GrenadeTierTwo</li>
-					</weaponTags>
-				</li>
-				</sidearms>
-			</li>
-		</value>
-	</Operation>
+    </Operation>
 
     <Operation Class="SK.PatchOperationReplaceExtended">
         <xpath>Defs/PawnKindDef[defName="Mercenary_Elite_Pig"]</xpath>
@@ -336,30 +268,5 @@
 			</apparelTags>
         </value>
     </Operation>
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="Mercenary_Elite_Pig"]</xpath>
-		<value>
-			<li Class="CombatExtended.LoadoutPropertiesExtension">
-				<primaryMagazineCount>
-					<min>6</min>
-					<max>9</max>
-				</primaryMagazineCount>
-				<sidearms>
-				<li>
-					<generateChance>0.25</generateChance>
-					<sidearmMoney>
-						<min>80</min>
-						<max>240</max>
-					</sidearmMoney>
-					<weaponTags>
-						<li>GrenadeTierOne</li>
-						<li>GrenadeTierTwo</li>
-					</weaponTags>
-				</li>
-				</sidearms>
-			</li>
-		</value>
-	</Operation>
 
 </Patch>

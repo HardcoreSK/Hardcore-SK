@@ -510,6 +510,7 @@
         <xpath>Defs/ThingDef[defName="ToolCabinet"]</xpath>
         <value>
             <label>large tool cabinet</label>
+            <description>Increases work speed. Needs to be placed near a workbench. One workbench can be simultaneously linked to only one cabinet of this type. Quality affects the work speed bonus.</description>
             <graphicData>
                 <texPath>Things/Building/Furniture/Tools/ToolCabinet</texPath>
                 <graphicClass>Graphic_Multi</graphicClass>
