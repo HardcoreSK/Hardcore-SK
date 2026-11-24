@@ -11,6 +11,26 @@
     </value>
   </Operation>
 
+  <Operation Class="SK.PatchOperationReplaceExtended" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/TerrainDef[defName="GrasslandSoil"]</xpath>
+    <value>
+      <pathCost>6</pathCost>
+      <statBases Merge="true">
+        <Beauty>-2</Beauty>
+      </statBases>
+    </value>
+  </Operation>
+
+  <Operation Class="SK.PatchOperationReplaceExtended" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/TerrainDef[defName="GlowforestSoil"]</xpath>
+    <value>
+      <pathCost>6</pathCost>
+      <statBases Merge="true">
+        <Beauty>-2</Beauty>
+      </statBases>
+    </value>
+  </Operation>
+
   <Operation Class="SK.PatchOperationReplaceExtended">
     <xpath>Defs/TerrainDef[defName="MossyTerrain"]</xpath>
     <value>
