@@ -25,4 +25,16 @@
     </match>
   </Operation>
 
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="ProcessBlocklessChunks"]/jobString</xpath>
+      <value>
+        <jobString>crushing soft stone chunk</jobString>
+      </value>
+    </match>
+  </Operation>
+
 </Patch>
