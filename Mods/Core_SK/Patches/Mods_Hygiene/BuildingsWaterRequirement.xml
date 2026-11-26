@@ -6,6 +6,12 @@
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
+                <li Class="SK.PatchOperationReplaceExtended">
+                    <xpath>Defs/ThingDef[defName='HydroponicsBasin' or defName='NewHydroponicsBasin' or defName='ClutterAlloyHydroponicsBasinVS']</xpath>
+                    <value>
+                        <tickerType>Normal</tickerType>
+                    </value>
+                </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName='HydroponicsBasin']/comps</xpath>
                     <value>
